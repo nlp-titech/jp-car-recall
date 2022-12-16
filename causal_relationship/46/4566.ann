@@ -1,0 +1,13 @@
+T1	Argument 4 27	スロットルバルブの氷結防止用ヒーターに製造不良
+T2	Connective 33 34	、
+T3	Argument 40 51	当該ヒーター内部で短絡
+T4	Connective 52 53	、
+T5	Argument 53 58	配線が焼損
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 34 36	最悪
+T7	Connective 37 39	場合
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	

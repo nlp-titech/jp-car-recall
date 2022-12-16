@@ -1,0 +1,21 @@
+T1	Argument 0 20	燃料配管のガス漏れ点検の作業方法が不適切
+T2	Connective 21 23	ため
+T3	Argument 24 44	遮断弁結合部のオーリングのシール面を損傷
+T4	Connective 53 57	そのため
+T5	Argument 74 85	当該部のシール性が低下
+T6	Argument 93 99	燃料が漏れる
+T7	Connective 86 87	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	
+T8	Argument 58 72	そのままの状態で使用を続ける
+T9	Connective 72 73	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 87 89	最悪
+T11	Connective 90 92	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T6	

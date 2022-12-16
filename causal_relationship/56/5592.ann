@@ -1,0 +1,17 @@
+T1	Argument 0 25	インジェクタにおいて、トップキャップの材質が不適切
+T2	Argument 37 39	燃料
+T3	Argument 42 51	当該キャップが溶損
+T4	Argument 53 55	最悪
+T5	Argument 59 65	燃料が漏れる
+T6	Connective 32 36	そのため
+T7	Connective 39 42	により
+T8	Connective 52 53	、
+T9	Connective 56 58	場合
+R1	REASON Arg1:T6 Arg2:T1	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T5	
+R7	CONDITION Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+R2	RESULT Arg1:T6 Arg2:T3	

@@ -1,0 +1,17 @@
+T1	Argument 0 24	３分割式の突入防止装置において、取付作業が不適切
+T2	Connective 25 27	ため
+T3	Argument 28 51	外側突入防止装置のステーが誤った位置に取り付け
+T4	Connective 62 66	このため
+T5	Argument 82 97	当該装置の変位量が基準値を超え
+T6	Connective 97 98	、
+T7	Argument 98 115	道路運送車両の保安基準に適合しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 67 74	試験荷重を負荷
+T9	Connective 78 82	における
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

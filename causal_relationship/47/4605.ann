@@ -1,0 +1,13 @@
+T1	Argument 7 25	燃料ポンプと燃料タンクの密閉性が不足
+T2	Connective 29 31	ため
+T3	Argument 54 60	燃料が漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 32 46	そのままの状態で使用を続ける
+T5	Connective 46 47	と
+R3	CONDITION Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T3	
+T6	Argument 48 50	最悪
+T7	Connective 51 53	場合
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	

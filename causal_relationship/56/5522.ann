@@ -1,0 +1,25 @@
+T1	Argument 0 16	メインハーネスの取り回しが不適切
+T2	Argument 20 67	当該ハーネスが液圧式リアサスペンション調整装置のボルトの先端またはフレームの溶接部のバリと干渉
+T3	Argument 80 94	そのままの状態で使用を続ける
+T4	Argument 96 106	ハーネスの一部が損傷
+T5	Argument 107 109	短絡
+T6	Argument 111 113	最悪
+T7	Argument 117 124	エンジンが停止
+T8	Connective 17 19	ため
+T9	Connective 75 79	そのため
+T10	Connective 94 95	と
+T11	Connective 110 111	、
+T12	Connective 114 116	場合
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T2	
+R3	REASON Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T4	
+R5	CONDITION Arg1:T10 Arg2:T3	
+R6	RESULT Arg1:T10 Arg2:T4	
+R8	REASON Arg1:T11 Arg2:T5	
+R9	RESULT Arg1:T11 Arg2:T7	
+R10	CONDITION Arg1:T12 Arg2:T6	
+R11	RESULT Arg1:T12 Arg2:T7	
+R7	RESULT Arg1:T9 Arg2:T5	
+R12	REASON Arg1:T11 Arg2:T4	
+R13	RESULT Arg1:T10 Arg2:T5	

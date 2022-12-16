@@ -1,0 +1,30 @@
+T1	Argument 0 41	大型路線バスの後扉（引き扉）において、扉の開閉を制御するＥＣＵのプログラムが不適切
+T2	Connective 42 44	ため
+T3	Argument 45 75	運転者が扉を閉じる操作を行い、扉が閉まる直前に開く操作を行っ
+T4	Connective 76 78	場合
+T5	Argument 82 99	扉ウォーニングランプ（橙色）が点灯
+T7	Argument 102 124	ダブル電磁弁搭載車両は、扉が開いたままとなり
+T9	Argument 129 148	運転者が運転席で扉の開閉ができなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T12	Argument 153 191	扉が開いたまま発車することを防止するニュートラルシフトロック機能が作動しない
+T13	Argument 195 201	このまま発車
+T15	Argument 205 213	警報ブザーが吹鳴
+T16	Connective 203 204	と
+R14	CONDITION Arg1:T16 Arg2:T13	
+R15	RESULT Arg1:T16 Arg2:T15	
+T17	Argument 214 231	扉ウォーニングランプ（赤色）が点灯
+R5	RESULT Arg1:T2 Arg2:T7	
+T6	Connective 124 125	、
+R6	REASON Arg1:T6 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T9	
+R8	RESULT Arg1:T6 Arg2:T12	
+R9	RESULT Arg1:T4 Arg2:T7	
+T8	Connective 191 192	。
+R10	REASON Arg1:T8 Arg2:T12	
+R11	RESULT Arg1:T8 Arg2:T13	
+R12	RESULT Arg1:T16 Arg2:T17	
+R13	RESULT Arg1:T8 Arg2:T15	
+R16	RESULT Arg1:T8 Arg2:T17	

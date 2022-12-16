@@ -1,0 +1,42 @@
+T1	Argument 0 34	ブレーキ倍力装置において、バキュームポンプのスプロケットの強度が不足
+T2	Argument 41 55	スプロケットの歯が異常に磨耗
+T3	Argument 80 108	バキュームポンプチェーンが当該スプロケットの歯に乗り上げ
+T4	Argument 109 123	チェーンガイドとの間に挟まれ
+T5	Argument 124 141	リヤカムスプロケットの回転がロック
+T6	Argument 149 157	チェーンが切れる
+T7	Argument 160 176	リヤカムスプロケットボルトが折損
+T8	Argument 178 194	ブレーキ倍力装置が作動しなくなり
+T9	Argument 195 207	ブレーキの効きが悪くなる
+T10	Connective 194 195	、
+T11	Connective 177 178	、
+T12	Connective 142 143	、
+R1	REASON Arg1:T12 Arg2:T5	
+R2	RESULT Arg1:T12 Arg2:T6	
+R3	RESULT Arg1:T12 Arg2:T7	
+T13	Connective 157 158	、
+R4	REASON Arg1:T13 Arg2:T6	
+R5	RESULT Arg1:T13 Arg2:T8	
+R6	REASON Arg1:T11 Arg2:T7	
+R7	RESULT Arg1:T11 Arg2:T8	
+R8	REASON Arg1:T10 Arg2:T8	
+R9	RESULT Arg1:T10 Arg2:T9	
+T14	Connective 38 40	ため
+T15	Connective 63 67	そのため
+T16	Connective 108 109	、
+R10	REASON Arg1:T14 Arg2:T1	
+R11	RESULT Arg1:T14 Arg2:T2	
+R12	REASON Arg1:T15 Arg2:T2	
+R13	RESULT Arg1:T15 Arg2:T3	
+R14	REASON Arg1:T16 Arg2:T3	
+R15	RESULT Arg1:T16 Arg2:T4	
+T17	Connective 123 124	、
+R16	REASON Arg1:T17 Arg2:T4	
+R17	RESULT Arg1:T17 Arg2:T5	
+T18	Argument 68 78	そのまま使用を続ける
+T19	Connective 78 79	と
+R18	CONDITION Arg1:T19 Arg2:T18	
+R19	RESULT Arg1:T19 Arg2:T3	
+T20	Argument 143 145	最悪
+T21	Connective 146 148	場合
+R20	CONDITION Arg1:T21 Arg2:T20	
+R21	RESULT Arg1:T21 Arg2:T6	

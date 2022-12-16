@@ -1,0 +1,23 @@
+T1	Argument 0 85	エンジンを制御するコントロールユニット（エンジンＥＣＵ）とＰＨＥＶシステムを制御するコントロールユニット（ＰＨＥＶＥＣＵ）の制御プログラム、および点火プラグの仕様が不適切
+T2	Connective 86 88	ため
+T4	Connective 115 117	場合
+T5	Argument 118 131	点火プラグのくすぶりが発生
+T6	Connective 139 143	そのため
+T7	Argument 144 156	ＥＶシステム警告灯が点灯
+T9	Argument 158 193	エンジンによる充電を行わない駆動用電池残量の範囲でのＥＶ走行のみに制限
+T11	Connective 214 215	と
+T12	Argument 216 223	走行不能になる
+R1	RESULT Arg1:T11 Arg2:T12	
+T13	Connective 195 196	、
+R4	REASON Arg1:T13 Arg2:T9	
+R7	RESULT Arg1:T6 Arg2:T7	
+R8	REASON Arg1:T6 Arg2:T5	
+R9	RESULT Arg1:T4 Arg2:T5	
+R11	RESULT Arg1:T2 Arg2:T5	
+R12	REASON Arg1:T2 Arg2:T1	
+T14	Argument 89 114	エンジンが低温の状態で短時間の運転と停止を繰り返し
+R14	CONDITION Arg1:T4 Arg2:T14	
+R5	RESULT Arg1:T6 Arg2:T9	
+T8	Argument 196 214	そのまま走行を続け電池残量が無くなる
+R10	CONDITION Arg1:T11 Arg2:T8	
+R13	RESULT Arg1:T13 Arg2:T12	

@@ -1,0 +1,9 @@
+T1	Argument 44 73	異常展開に繋がるおそれがあるインフレータ容器内圧の異常出力
+T2	Connective 80 84	このため
+R6	REASON Arg1:T2 Arg2:T1	
+T3	Argument 97 130	一定の期間までに製造した同タイプのインフレータについて、予防的措置
+T4	Connective 130 133	として
+R1	REASON Arg1:T4 Arg2:T3	
+T5	Argument 133 147	当該インフレータを新品に交換
+R2	RESULT Arg1:T4 Arg2:T5	
+R3	RESULT Arg1:T2 Arg2:T3	

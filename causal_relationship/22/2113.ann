@@ -1,0 +1,9 @@
+T1	Argument 0 63	インテリジェントキー仕様の運転者席及び助手席の乗降口扉の外側ハンドルにおいて、ハンドルベースとハンドルカバーとの間に隙間が開い
+T2	Connective 66 68	ため
+T3	Argument 69 93	扉を開いた際に当該ハンドルが引っ掛かって戻らない
+R1	RESULT Arg1:T2 Arg2:T3	
+R2	REASON Arg1:T2 Arg2:T1	
+T4	Connective 99 103	そのため
+T5	Argument 104 119	確実に扉を閉じることができない
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

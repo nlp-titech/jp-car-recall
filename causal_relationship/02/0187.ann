@@ -1,0 +1,21 @@
+T1	Argument 0 32	変速機とシフトレバーを連結するシフトケーブルにおいて、強度が不足
+T2	Argument 56 72	シフトケーブルに過大な荷重が働き
+T3	Argument 73 90	当該シフトケーブル内部の芯線が折損
+T4	Argument 98 110	シフト操作ができなくなる
+T5	Argument 39 54	少々強引なシフト操作を繰り返す
+T6	Connective 36 38	ため
+T7	Connective 54 55	と
+T8	Connective 72 73	、
+T9	Connective 91 92	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	CONDITION Arg1:T7 Arg2:T5	
+R4	RESULT Arg1:T7 Arg2:T2	
+R5	REASON Arg1:T8 Arg2:T2	
+R6	RESULT Arg1:T8 Arg2:T3	
+R7	REASON Arg1:T9 Arg2:T3	
+R8	RESULT Arg1:T9 Arg2:T4	
+T10	Argument 92 94	最悪
+T11	Connective 95 97	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T4	

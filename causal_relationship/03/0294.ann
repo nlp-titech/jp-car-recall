@@ -1,0 +1,13 @@
+T1	Argument 0 21	前部座席の背もたれ調整機構のギヤに加工不良
+T2	Argument 52 64	乗車中に背もたれが倒れる
+T3	Connective 27 29	ため
+R1	REASON Arg1:T3 Arg2:T1	
+R2	RESULT Arg1:T3 Arg2:T2	
+T4	Argument 30 44	そのままの状態で使用を続ける
+T5	Connective 44 45	と
+T6	Argument 46 48	最悪
+T7	Connective 49 51	場合
+R3	CONDITION Arg1:T5 Arg2:T4	
+R4	CONDITION Arg1:T7 Arg2:T6	
+R5	RESULT Arg1:T5 Arg2:T2	
+R6	RESULT Arg1:T7 Arg2:T2	

@@ -1,0 +1,21 @@
+T1	Argument 0 105	動力伝達カット装置（乗降口の扉を閉じた後でなければ走行装置に動力を伝達することができない構造）を備えた路線バスにおいて、後扉の開閉状態を検知するための電気回路が動力伝達カット装置用と扉挟み込み防止装置用とで分離
+T2	Connective 109 111	ため
+T3	Argument 112 125	後扉に小さな異物等が挟まっ
+T4	Connective 126 128	場合
+T6	Connective 182 186	そのため
+T7	Argument 187 194	その状態で発進
+T8	Connective 196 197	と
+T9	Argument 219 223	扉が開く
+R1	RESULT Arg1:T8 Arg2:T9	
+R2	CONDITION Arg1:T8 Arg2:T7	
+R3	RESULT Arg1:T6 Arg2:T9	
+R6	CONDITION Arg1:T4 Arg2:T3	
+R7	RESULT Arg1:T2 Arg2:T10	
+R8	REASON Arg1:T2 Arg2:T1	
+T10	Argument 129 174	扉挟み込み防止装置が作動可能な状態で扉開き知らせ灯が点灯したまま、動力伝達カット装置が解除
+T12	Argument 198 216	走行中に乗客が検知器（光電管）を遮っ
+T13	Connective 217 218	際
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T9	
+R4	REASON Arg1:T6 Arg2:T10	
+R5	RESULT Arg1:T4 Arg2:T10	

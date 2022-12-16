@@ -1,0 +1,21 @@
+T1	Argument 22 63	電動ドアラッチモーター内部のギヤを固定しているロックナットが正しく加工されていない
+T2	Connective 69 73	そのため
+T4	Connective 94 95	み
+T5	Argument 95 100	ギヤが破損
+T6	Connective 101 102	、
+T7	Argument 108 121	後部ドアが開放できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 74 84	そのまま使用を続ける
+T9	Connective 84 85	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+T10	Argument 102 104	最悪
+T11	Connective 105 107	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T7	
+T3	Argument 86 94	ロックナットが緩
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T9 Arg2:T3	
+R8	RESULT Arg1:T2 Arg2:T3	

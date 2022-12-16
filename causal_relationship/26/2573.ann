@@ -1,0 +1,17 @@
+T1	Argument 2 57	プラグインハイブリッド仕様の加速装置において、ハイブリッドコントローラのフェイルセーフの制御プログラムが不適切
+T2	Connective 60 62	ため
+T3	Argument 63 94	エンジンコントローラとハイブリッドコントローラが通信不良となっ
+T4	Connective 95 97	場合
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+T5	Argument 98 123	アクセル開度制御のフェイルセーフが正常に作動しない
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 129 133	そのため
+R5	REASON Arg1:T6 Arg2:T5	
+T9	Argument 164 183	通信不良となる直前のアクセル開度を保持
+T10	Connective 188 189	、
+T11	Argument 189 208	当該装置の作動を自動的に解除しなくなる
+R6	RESULT Arg1:T6 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	

@@ -1,0 +1,29 @@
+T1	Argument 0 16	燃料タンクの燃料配管系統が詰まっ
+T2	Argument 20 38	使用条件により当該タンクの内圧が上昇
+T3	Argument 40 48	燃料タンクが変形
+T4	Argument 56 67	プロペラシャフトと接触
+T5	Argument 69 77	当該タンクが損傷
+T6	Argument 78 83	燃料が漏れ
+T7	Argument 84 89	火災に至る
+T8	Connective 17 19	場合
+T9	Connective 39 40	て
+T10	Connective 49 50	、
+T11	Connective 68 69	て
+T12	Connective 77 78	し
+T13	Connective 83 84	、
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T2	
+R3	REASON Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T3	
+R5	REASON Arg1:T10 Arg2:T3	
+R6	RESULT Arg1:T10 Arg2:T4	
+R7	REASON Arg1:T11 Arg2:T4	
+R8	RESULT Arg1:T11 Arg2:T5	
+R9	REASON Arg1:T12 Arg2:T5	
+R10	RESULT Arg1:T12 Arg2:T6	
+R11	REASON Arg1:T13 Arg2:T6	
+R12	RESULT Arg1:T13 Arg2:T7	
+T14	Argument 50 52	最悪
+T15	Connective 53 55	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T5	

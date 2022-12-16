@@ -1,0 +1,36 @@
+T1	Argument 20 58	シートリクライナーのアッパーボルトの取付方法及びロアボルトのネジ形状が不適切
+T2	Connective 59 61	ため
+T3	Argument 84 94	これらのボルトが変形
+T4	Connective 95 96	、
+T5	Argument 96 103	背もたれのガタ
+T6	Connective 114 118	そのため
+T7	Argument 137 147	これらのボルトが折損
+T8	Connective 148 149	て
+T9	Argument 149 158	背もたれが後方へ倒
+T10	Connective 158 159	れ
+T11	Argument 159 170	運転操作が出来なくなる
+R1	REASON Arg1:T8 Arg2:T7	
+R2	RESULT Arg1:T8 Arg2:T9	
+R3	REASON Arg1:T10 Arg2:T9	
+R4	RESULT Arg1:T10 Arg2:T11	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T12	Argument 119 129	そのまま使用を続ける
+T13	Connective 129 130	と
+R8	RESULT Arg1:T13 Arg2:T7	
+T14	Argument 131 133	最悪
+T15	Connective 134 136	場合
+R10	RESULT Arg1:T15 Arg2:T7	
+R11	REASON Arg1:T4 Arg2:T3	
+R12	RESULT Arg1:T4 Arg2:T5	
+R13	REASON Arg1:T2 Arg2:T1	
+R14	RESULT Arg1:T2 Arg2:T3	
+T16	Argument 62 80	背もたれへの高荷重が繰り返し与えられ
+T17	Connective 81 83	場合
+R16	RESULT Arg1:T17 Arg2:T3	
+R17	CONDITION Arg1:T13 Arg2:T12	
+R18	CONDITION Arg1:T15 Arg2:T14	
+R19	CONDITION Arg1:T17 Arg2:T16	
+T18	Argument 106 111	異音が発生
+R7	RESULT Arg1:T4 Arg2:T18	
+R9	REASON Arg1:T6 Arg2:T18	

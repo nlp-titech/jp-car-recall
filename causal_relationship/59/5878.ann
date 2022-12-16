@@ -1,0 +1,41 @@
+T1	Argument 0 31	パワーステアリング装置に使用されている高圧パイプの材質が不適切
+T2	Connective 32 34	ため
+T3	Argument 35 40	長期間使用
+T4	Connective 42 43	と
+T5	Argument 43 49	水による影響
+T6	Argument 60 81	パワーステアリングオイルの油温・油圧の影響
+T7	Connective 81 84	により
+T8	Argument 85 98	高圧パイプに小さな穴が開き
+T9	Connective 98 99	、
+T10	Argument 99 114	パワーステアリングオイルが漏れ
+T11	Connective 114 115	て
+T12	Argument 115 130	パワーステアリングの性能が低下
+T13	Connective 166 168	場合
+T14	Argument 138 166	オイル漏れの発生場所がエンジンの排気管等の高熱部品に近い
+T15	Argument 169 181	高熱部品に付着したオイル
+T16	Connective 181 184	により
+T17	Argument 184 186	発煙
+T18	Connective 187 188	、
+T19	Argument 188 190	最悪
+T20	Connective 191 193	場合
+T21	Argument 194 199	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T8	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T8	
+R5	REASON Arg1:T7 Arg2:T6	
+R6	REASON Arg1:T7 Arg2:T5	
+R7	RESULT Arg1:T7 Arg2:T8	
+R8	REASON Arg1:T9 Arg2:T8	
+R9	RESULT Arg1:T9 Arg2:T10	
+R10	REASON Arg1:T11 Arg2:T10	
+R11	RESULT Arg1:T11 Arg2:T12	
+R14	CONDITION Arg1:T13 Arg2:T14	
+R15	RESULT Arg1:T13 Arg2:T17	
+R16	REASON Arg1:T16 Arg2:T15	
+R17	RESULT Arg1:T16 Arg2:T17	
+R18	REASON Arg1:T18 Arg2:T17	
+R19	RESULT Arg1:T18 Arg2:T21	
+R20	CONDITION Arg1:T20 Arg2:T19	
+R21	RESULT Arg1:T20 Arg2:T21	
+R12	RESULT Arg1:T11 Arg2:T17	

@@ -1,0 +1,9 @@
+T2	Connective 30 32	ため
+T3	Argument 33 47	ハンドル操作力補正が出来ない
+T4	Connective 53 57	そのため
+T5	Argument 58 69	ハンドルの操作力が増大
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T1	Argument 0 29	電動式パワーステアリングの制御ユニットのプログラムが不適切
+R1	REASON Arg1:T2 Arg2:T1	

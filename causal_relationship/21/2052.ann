@@ -1,0 +1,13 @@
+T1	Argument 1 47	車体右側に備えられている、原動機冷却装置用防塵カバーにおいて、当該カバーのロック形状が不適切
+T2	Connective 48 50	ため
+T3	Argument 51 61	完全にロックできない
+T4	Connective 67 71	そのため
+T5	Argument 72 84	当該カバーが走行中に開放
+T6	Connective 85 86	、
+T7	Argument 86 94	他の交通を妨げる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

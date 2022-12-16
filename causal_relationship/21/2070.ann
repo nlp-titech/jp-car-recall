@@ -1,0 +1,39 @@
+T1	Argument 0 45	エンジンヘッドカバー内部の燃料低圧パイプにおいて、インジェクタとの接合面の精度管理が不十分
+T2	Connective 46 48	ため
+T3	Argument 49 67	当該パイプを締付けているボルトが緩む
+T4	Connective 73 77	そのため
+T5	Argument 78 83	燃料が漏れ
+T6	Connective 83 84	、
+T7	Argument 84 94	エンジンオイルに混入
+T8	Connective 95 96	、
+T9	Argument 96 110	そのままの状態で使用を続ける
+T12	Connective 145 146	れ
+T13	Argument 146 155	シリンダー内で燃焼
+T14	Connective 157 159	ため
+T15	Argument 160 169	エンジン回転が上昇
+T17	Argument 171 173	最悪
+T18	Connective 187 188	て
+T19	Argument 188 193	火災となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T21	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R18	RESULT Arg1:T18 Arg2:T19	
+T20	Connective 110 111	と
+T21	Argument 112 144	燃料の混入したオイルがブローバイガスの通路を経由して吸気管に吸入
+R9	CONDITION Arg1:T20 Arg2:T9	
+R19	RESULT Arg1:T20 Arg2:T21	
+T22	Connective 174 176	場合
+T23	Argument 177 186	エンジン内部が損傷
+R21	CONDITION Arg1:T22 Arg2:T17	
+R22	RESULT Arg1:T22 Arg2:T23	
+R23	REASON Arg1:T18 Arg2:T23	
+R10	REASON Arg1:T12 Arg2:T21	
+R11	RESULT Arg1:T14 Arg2:T23	

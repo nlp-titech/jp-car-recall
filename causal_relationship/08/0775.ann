@@ -1,0 +1,21 @@
+T1	Argument 0 46	圧縮天然ガス自動車（ＣＮＧ車）において、燃料を供給する高圧レギュレータのプラグの締付力が不足
+T2	Connective 50 52	ため
+T3	Argument 53 72	エンジンの始動時に発生するガス圧の衝撃
+T4	Connective 72 75	により
+T5	Argument 76 84	当該プラグが緩む
+T6	Connective 90 94	そのため
+T7	Argument 95 105	そのまま使用を続ける
+T8	Connective 105 106	と
+T9	Argument 107 127	プラグに取付けられているオーリングが損傷
+T10	Connective 128 129	、
+T11	Argument 129 135	燃料が漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T5	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	

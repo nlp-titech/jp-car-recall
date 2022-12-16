@@ -1,0 +1,13 @@
+T1	Argument 0 57	かじ取装置のユニバーサルジョイントとギヤボックスの連結部のボルト締め付け工程において、連結部がずれた状態で締め付け
+T2	Connective 64 68	そのため
+T3	Argument 69 75	連結部が緩み
+T4	Connective 75 76	、
+T5	Argument 76 90	ユニバーサルジョイントが損傷
+T6	Connective 91 92	、
+T7	Argument 92 105	かじ取り操作ができなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

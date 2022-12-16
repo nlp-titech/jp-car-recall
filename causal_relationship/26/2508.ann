@@ -1,0 +1,13 @@
+T1	Argument 0 47	粉粒体運搬セミトレーラのスプリングハンガを取り付けているプレートと内輪タイヤの隙間寸法が不適切
+T2	Connective 48 50	ため
+T3	Argument 61 84	当該プレートが内側タイヤのサイドウォールに接触
+T6	Connective 85 86	、
+T7	Argument 86 92	タイヤを損傷
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T6 Arg2:T3	
+R4	RESULT Arg1:T6 Arg2:T7	
+T4	Argument 51 57	段差乗り上げ
+T5	Connective 57 58	時
+R5	CONDITION Arg1:T5 Arg2:T4	
+R6	RESULT Arg1:T5 Arg2:T3	

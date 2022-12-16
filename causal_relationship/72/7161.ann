@@ -1,0 +1,13 @@
+T1	Argument 0 40	運転者席及び助手席のサイドエアバッグにおいて、展開制御ユニットの基板回路に不適切
+T2	Connective 46 48	ため
+T3	Argument 49 63	そのままの状態で使用を続ける
+T4	Connective 63 64	と
+T5	Argument 65 67	最悪
+T6	Connective 68 70	場合
+T7	Argument 71 88	走行中に当該エアバッグが誤って展開
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	CONDITION Arg1:T6 Arg2:T5	
+R4	RESULT Arg1:T6 Arg2:T7	
+R5	RESULT Arg1:T4 Arg2:T7	
+R6	RESULT Arg1:T2 Arg2:T7	

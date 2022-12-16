@@ -1,0 +1,25 @@
+T1	Argument 0 40	主制動装置において､空気式駐車制動装置のホイールシリンダ用ブーツの気密性が不充分
+T2	Argument 65 74	ブーツ内に水が浸入
+T3	Argument 76 91	ウエッジガイド摺動面が錆で固着
+T4	Argument 93 106	駐車ブレーキが解除されない
+T5	Argument 118 128	フェード現象を起こす
+T6	Connective 46 48	ため
+T7	Connective 75 76	､
+T8	Connective 92 93	､
+T9	Connective 111 112	､
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 49 63	そのままの状態で使用を続ける
+T11	Connective 63 64	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T2	
+T12	Argument 112 114	最悪
+T13	Connective 115 117	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T5	

@@ -1,0 +1,25 @@
+T1	Argument 0 46	大型路線バスのＨＥＶ車において、吸気ホースとターボチャージャーとの隙間が充分確保されていない
+T2	Connective 46 48	ため
+T3	Argument 66 77	吸気ホースのゴムが硬化
+T4	Connective 85 89	そのため
+T5	Argument 90 104	そのままの状態で使用を続ける
+T6	Connective 104 105	と
+T7	Argument 106 116	吸気ホースに穴があき
+T8	Connective 116 117	、
+T9	Argument 129 163	エアフローセンサーが検出した空気量よりも多い空気がエンジンに供給され
+T10	Connective 163 164	、
+T11	Argument 164 180	排出ガスが基準値を満足しなくなる
+R1	RESULT Arg1:T10 Arg2:T11	
+R2	REASON Arg1:T10 Arg2:T9	
+R3	RESULT Arg1:T8 Arg2:T9	
+R4	REASON Arg1:T8 Arg2:T7	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	CONDITION Arg1:T6 Arg2:T5	
+R7	RESULT Arg1:T4 Arg2:T7	
+R8	REASON Arg1:T4 Arg2:T3	
+R9	RESULT Arg1:T2 Arg2:T3	
+R10	REASON Arg1:T2 Arg2:T1	
+T12	Argument 49 61	ターボチャージャーの発熱
+T13	Connective 61 65	によって
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T3	

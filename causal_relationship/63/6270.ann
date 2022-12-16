@@ -1,0 +1,25 @@
+T1	Argument 17 38	モジュール内部の基板のコーティングが不適切
+T2	Connective 39 41	ため
+T3	Argument 42 61	湿度が高い環境下において電気回路が腐食
+T4	Connective 69 73	そのため
+T5	Argument 74 84	そのまま使用を続ける
+T6	Connective 84 85	と
+T7	Argument 86 93	回路がショート
+T8	Connective 108 109	、
+T9	Argument 109 111	最悪
+T10	Connective 112 114	場合
+T11	Argument 115 138	衝突時等において、全てのエアバッグが展開しない
+R1	RESULT Arg1:T10 Arg2:T11	
+R2	CONDITION Arg1:T10 Arg2:T9	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	CONDITION Arg1:T6 Arg2:T5	
+R7	RESULT Arg1:T4 Arg2:T7	
+R8	REASON Arg1:T4 Arg2:T3	
+R9	RESULT Arg1:T2 Arg2:T3	
+R10	REASON Arg1:T2 Arg2:T1	
+T14	Argument 96 107	エアバッグ警告灯が点灯
+T15	Connective 94 95	て
+R11	REASON Arg1:T15 Arg2:T7	
+R12	RESULT Arg1:T15 Arg2:T14	
+R3	REASON Arg1:T8 Arg2:T14	
+R4	RESULT Arg1:T8 Arg2:T11	

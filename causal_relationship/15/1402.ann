@@ -1,0 +1,25 @@
+T2	Connective 55 59	そのため
+T3	Argument 60 73	前後進切替操作を頻繁に行う
+T4	Connective 73 74	と
+T5	Argument 75 82	当該バネが破損
+T6	Connective 83 84	、
+T7	Argument 84 94	そのまま使用を続ける
+T8	Connective 94 95	と
+T10	Connective 122 123	、
+T11	Argument 123 125	最悪
+T12	Connective 126 128	場合
+T13	Argument 129 145	ニュートラル状態で車両が動き出す
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T5	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+T1	Argument 0 45	トルクコンバータ式変速機において、前後進切替操作時のショックを軽減させる皿バネの強度が不足
+R1	REASON Arg1:T2 Arg2:T1	
+T9	Argument 96 122	破損したバネ小片がクラッチギヤとドラムの間に噛み込み
+R7	RESULT Arg1:T6 Arg2:T9	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	

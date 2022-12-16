@@ -1,0 +1,21 @@
+T1	Argument 0 41	充電装置において、カレントリミッタ（整流器）内部の素子と基板を結合する構造が不適切
+T2	Connective 42 44	ため
+T3	Argument 45 67	温度上昇時にカレントリミッタ内部の樹脂が膨張
+T4	Connective 68 69	、
+T5	Argument 69 76	リード線が断線
+T6	Connective 84 88	そのため
+T7	Argument 89 104	リード線と素子の間で火花が発生
+T8	Connective 105 106	、
+T9	Argument 112 114	発火
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 106 108	最悪
+T11	Connective 109 111	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T9	

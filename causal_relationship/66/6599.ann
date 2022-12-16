@@ -1,0 +1,29 @@
+T1	Argument 17 42	ＥＳＰコントロールユニットの制御プログラムが不適切
+T2	Connective 43 45	ため
+T3	Argument 46 83	クルーズコントロール作動中に当該ユニットと運転者支援システムの通信が途絶え
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+T4	Connective 84 86	場合
+T5	Argument 87 118	エンジントルク信号をエンジンコントロールユニットに送信し続ける
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 124 128	そのため
+T7	Argument 129 137	車両が走行し続け
+T8	Connective 137 138	、
+T9	Argument 138 156	ブレーキオーバーライド機能が作動せず
+T10	Connective 156 157	、
+T11	Argument 157 171	ブレーキ操作時に操作力が増大
+T12	Connective 172 173	、
+T13	Argument 173 175	最悪
+T14	Connective 176 178	場合
+T15	Argument 179 189	制動停止距離が伸びる
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T15	
+R13	CONDITION Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	

@@ -1,0 +1,37 @@
+T1	Argument 17 28	タービン翼の強度が不足
+T2	Connective 32 34	ため
+T5	Argument 35 63	ターボが最高回転域で回転している時に急加速を繰り返し行う
+T6	Connective 63 64	と
+T7	Argument 65 73	タービン翼が共振
+T8	Connective 74 75	、
+T9	Argument 75 77	損傷
+T10	Connective 85 89	そのため
+T11	Argument 90 100	そのまま使用を続ける
+T12	Connective 100 101	と
+T13	Argument 102 117	エンジンの出力低下や異音が発生
+T14	Argument 119 121	最悪
+T15	Connective 118 119	、
+T16	Connective 122 124	場合
+T17	Argument 125 136	タービンシャフトが折損
+T18	Connective 137 138	て
+T19	Argument 138 143	白煙が発生
+T20	Connective 144 145	、
+T21	Argument 145 155	他の交通の妨げになる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T6 Arg2:T5	
+R4	RESULT Arg1:T6 Arg2:T7	
+R5	REASON Arg1:T8 Arg2:T7	
+R6	RESULT Arg1:T8 Arg2:T9	
+R7	REASON Arg1:T10 Arg2:T9	
+R8	CONDITION Arg1:T12 Arg2:T11	
+R9	RESULT Arg1:T12 Arg2:T13	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	REASON Arg1:T15 Arg2:T13	
+R12	CONDITION Arg1:T16 Arg2:T14	
+R13	RESULT Arg1:T16 Arg2:T17	
+R15	REASON Arg1:T18 Arg2:T17	
+R16	RESULT Arg1:T18 Arg2:T19	
+R17	REASON Arg1:T20 Arg2:T19	
+R18	RESULT Arg1:T20 Arg2:T21	
+R14	RESULT Arg1:T15 Arg2:T17	

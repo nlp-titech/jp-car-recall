@@ -1,0 +1,35 @@
+T1	Argument 13 40	ターボチャージャーの冷却水リターンホースの配索が不適切
+T2	Connective 41 43	ため
+T3	Argument 44 63	高温の冷却水がリザーブタンクに直接戻り
+T4	Connective 63 64	、
+T7	Argument 64 83	リザーブタンクが熱影響により早期に劣化
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+T8	Connective 84 85	、
+T9	Argument 85 91	亀裂が生じる
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Connective 97 101	そのため
+T11	Argument 102 114	亀裂部位から冷却水が漏れ
+T12	Connective 114 115	、
+T13	Argument 115 129	そのままの状態で使用を続ける
+T14	Connective 129 130	と
+T15	Argument 131 144	オーバーヒート警告灯が点灯
+T16	Connective 145 146	、
+T17	Argument 146 155	エンジン出力が制限
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T15	
+R13	CONDITION Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R15	REASON Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T17	
+T19	Argument 164 171	車両火災に至る
+T20	Argument 158 160	最悪
+T21	Connective 161 163	場合
+R19	CONDITION Arg1:T21 Arg2:T20	
+R20	RESULT Arg1:T21 Arg2:T19	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	RESULT Arg1:T14 Arg2:T19	

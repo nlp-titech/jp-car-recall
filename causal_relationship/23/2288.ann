@@ -1,0 +1,17 @@
+T1	Argument 0 32	かじ取り装置のリンク機構において、右旋回用アームを曲げて組み付け
+T2	Connective 33 35	ため
+T3	Argument 36 61	当該アームに取り付けられているローラの固定部が摩耗
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 69 73	そのため
+T5	Argument 90 96	ローラが脱落
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 97 98	、
+T7	Argument 98 111	車両の右旋回ができなくなる
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 74 88	そのままの状態で使用を続ける
+T9	Connective 88 89	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

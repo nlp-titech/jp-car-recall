@@ -1,0 +1,13 @@
+T1	Argument 0 30	大型トラックにおいて、排気管（フロントパイプ）の溶接が不適切
+T2	Connective 37 41	そのため
+T3	Argument 58 64	溶接部が亀裂
+T4	Argument 66 71	破断に至る
+T5	Connective 65 66	て
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T4	
+T6	Argument 42 56	そのままの状態で使用を続ける
+T7	Connective 56 57	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	

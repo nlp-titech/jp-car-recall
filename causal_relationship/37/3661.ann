@@ -1,0 +1,25 @@
+T1	Argument 13 50	２速－３速のギヤ・シフトフォーク及びスプリッタ・ピストンロッドの強度が不足
+T2	Connective 54 56	ため
+T3	Argument 57 74	当該フォーク及びロッドに亀裂が発生
+T4	Connective 82 86	そのため
+T5	Argument 87 101	そのままの状態で使用を続ける
+T6	Connective 101 102	と
+T7	Argument 102 107	亀裂が進行
+T8	Connective 108 109	、
+T9	Argument 109 123	当該フォーク又はロッドが折損
+T10	Argument 125 127	最悪
+T11	Connective 128 130	場合
+T12	Argument 131 138	走行不能に至る
+R1	RESULT Arg1:T11 Arg2:T12	
+R2	CONDITION Arg1:T11 Arg2:T10	
+T13	Connective 124 125	、
+R3	RESULT Arg1:T13 Arg2:T12	
+R4	REASON Arg1:T13 Arg2:T9	
+R5	RESULT Arg1:T8 Arg2:T9	
+R6	REASON Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T7	
+R8	CONDITION Arg1:T6 Arg2:T5	
+R9	RESULT Arg1:T4 Arg2:T7	
+R10	REASON Arg1:T4 Arg2:T3	
+R11	RESULT Arg1:T2 Arg2:T3	
+R12	REASON Arg1:T2 Arg2:T1	

@@ -1,0 +1,21 @@
+T1	Argument 0 44	作業装置（マスト）と車体を連結するティルトシリンダにおいて、取付けボルトの締付け力が不足
+T2	Connective 54 58	そのため
+T5	Argument 74 82	当該ボルトが緩み
+T6	Connective 82 83	、
+T9	Argument 88 94	連結部が外れ
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+T3	Argument 59 73	そのままの状態で使用を続ける
+T4	Connective 73 74	と
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T7	Argument 83 85	最悪
+T8	Connective 86 88	場合
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Connective 93 94	れ
+T11	Argument 94 103	走行に支障をきたす
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	

@@ -1,0 +1,29 @@
+T1	Argument 0 29	燃料タンクにおいて、燃料ポンプ取付部のシールの材質が不適切
+T2	Argument 33 38	オゾン劣化
+T3	Connective 38 41	により
+T4	Connective 30 32	ため
+T5	Argument 41 53	当該シールに亀裂が生じる
+T6	Connective 59 63	そのため
+T7	Argument 76 81	亀裂が進行
+T8	Connective 82 83	、
+T9	Argument 89 94	燃料満タン
+T10	Argument 96 110	ポンプ取付部から燃料が漏れる
+T11	Connective 94 95	時
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T5	
+R3	REASON Arg1:T3 Arg2:T2	
+R4	RESULT Arg1:T3 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T10	
+R9	CONDITION Arg1:T11 Arg2:T9	
+R10	RESULT Arg1:T11 Arg2:T10	
+T16	Argument 64 74	そのまま使用を続ける
+T17	Connective 74 75	と
+R11	CONDITION Arg1:T17 Arg2:T16	
+R12	RESULT Arg1:T17 Arg2:T7	
+T18	Argument 83 85	最悪
+T19	Connective 86 88	場合
+R13	CONDITION Arg1:T19 Arg2:T18	
+R14	RESULT Arg1:T19 Arg2:T10	

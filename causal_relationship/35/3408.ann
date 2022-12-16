@@ -1,0 +1,28 @@
+T1	Argument 0 58	運転者席用エアバッグのインフレータ（膨張装置）において、インフレータ製造時におけるガス発生剤充填後の吸湿管理が不適切
+T2	Connective 59 61	ため
+T3	Argument 68 75	外気温等の影響
+T4	Connective 75 78	により
+T5	Argument 78 86	ガス発生剤が膨張
+T6	Connective 87 88	、
+T7	Argument 88 93	密度が低下
+T8	Connective 101 105	そのため
+T10	Connective 129 130	、
+T11	Argument 130 141	インフレータ容器が破損
+T12	Argument 148 153	乗員が負傷
+T13	Connective 147 148	、
+T15	Argument 106 128	エアバッグ展開時にインフレータ内圧が異常上昇
+R1	RESULT Arg1:T13 Arg2:T12	
+R3	RESULT Arg1:T10 Arg2:T11	
+R4	REASON Arg1:T10 Arg2:T15	
+R7	RESULT Arg1:T8 Arg2:T15	
+R8	REASON Arg1:T8 Arg2:T7	
+R9	RESULT Arg1:T6 Arg2:T7	
+R10	REASON Arg1:T6 Arg2:T5	
+R11	RESULT Arg1:T4 Arg2:T5	
+R12	REASON Arg1:T4 Arg2:T3	
+R13	RESULT Arg1:T2 Arg2:T5	
+R14	REASON Arg1:T2 Arg2:T1	
+T16	Connective 142 143	て
+T17	Argument 143 147	飛び散り
+R2	REASON Arg1:T16 Arg2:T11	
+R15	RESULT Arg1:T16 Arg2:T17	

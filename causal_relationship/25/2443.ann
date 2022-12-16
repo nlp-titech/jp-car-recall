@@ -1,0 +1,10 @@
+T1	Argument 0 26	スピードメータなど計器盤照明の制御プログラムが不適切
+T2	Connective 27 29	ため
+T4	Connective 49 50	際
+R1	REASON Arg1:T2 Arg2:T1	
+T7	Argument 30 46	スイッチを操作して車幅灯等を点灯
+T8	Argument 51 66	計器盤照明が連動して点灯しない
+R2	RESULT Arg1:T2 Arg2:T8	
+R5	CONDITION Arg1:T4 Arg2:T7	
+R6	RESULT Arg1:T4 Arg2:T8	
+#1	AnnotatorNotes T8	「連動して点灯しない」＝「連動して点灯するはずなのに連動しない」

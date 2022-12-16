@@ -1,0 +1,27 @@
+T1	Argument 0 37	バスのブローバイガス還元装置において、当該装置のダイヤフラムの耐久性が不足
+T2	Argument 47 56	取付け位置が不適切
+T3	Connective 57 59	ため
+T4	Argument 67 80	ダイヤフラムに亀裂が生じる
+T5	Connective 80 81	と
+T8	Argument 82 114	エンジンオイルがブローバイガスの通路を経由して吸気管に吸入される
+R1	REASON Arg1:T3 Arg2:T1	
+R2	REASON Arg1:T3 Arg2:T2	
+R3	RESULT Arg1:T3 Arg2:T8	
+R4	CONDITION Arg1:T5 Arg2:T4	
+R5	RESULT Arg1:T5 Arg2:T8	
+T9	Connective 120 124	そのため
+T10	Argument 125 139	オイルがエンジン燃焼室に浸入
+R8	REASON Arg1:T9 Arg2:T8	
+R9	RESULT Arg1:T9 Arg2:T10	
+T11	Connective 139 140	し
+T12	Argument 147 156	エンジン内部が損傷
+R10	REASON Arg1:T11 Arg2:T10	
+R11	RESULT Arg1:T11 Arg2:T12	
+T13	Connective 157 158	、
+T14	Argument 158 165	走行不能に至る
+R12	REASON Arg1:T13 Arg2:T12	
+R13	RESULT Arg1:T13 Arg2:T14	
+T15	Argument 141 143	最悪
+T16	Connective 144 146	場合
+R14	CONDITION Arg1:T16 Arg2:T15	
+R15	RESULT Arg1:T16 Arg2:T12	

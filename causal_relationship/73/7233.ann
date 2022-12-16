@@ -1,0 +1,39 @@
+T1	Argument 0 21	燃料タンクのフューエルトレイの形状が不適切
+T2	Connective 22 24	ため
+T3	Argument 25 59	後ろ傾斜地で駐車中にフロアから入った雨水等がフューエルトレイに溜まり
+T4	Connective 59 60	、
+T5	Argument 60 69	燃料タンク内に侵入
+T6	Connective 77 81	そのため
+T7	Argument 82 94	燃料ポンプが水を吸い込む
+T8	Connective 94 95	と
+T9	Argument 95 106	エンジンが始動できない
+T10	Argument 116 124	侵入した水の影響
+T11	Connective 124 127	により
+T12	Argument 128 138	燃料タンク底部が錆び
+T13	Connective 138 139	、
+T14	Argument 139 153	そのままの状態で使用を続ける
+T15	Connective 153 154	と
+T16	Argument 154 158	錆が進行
+T17	Connective 159 160	、
+T18	Argument 160 162	最悪
+T19	Connective 163 165	場合
+T20	Argument 166 172	燃料が漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T12	
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T16	
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T16	
+R15	REASON Arg1:T17 Arg2:T16	
+R16	CONDITION Arg1:T19 Arg2:T18	
+R17	RESULT Arg1:T19 Arg2:T20	
+R18	RESULT Arg1:T17 Arg2:T20	
+R19	RESULT Arg1:T6 Arg2:T12	

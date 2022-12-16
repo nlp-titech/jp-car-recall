@@ -1,0 +1,16 @@
+T1	Argument 0 90	かじ取装置において、ステアリングコラムの自在継手部に、製造工程に於いてステアリングロック機構取付ボルトの一部（ボルト締結時のみに使用し、締結後は切断して破棄するもの。）が誤って混入
+T2	Argument 114 125	ハンドル操作が重くなる
+T3	Argument 137 150	ハンドル操作ができなくなる
+T5	Connective 98 99	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+T6	Argument 99 113	このままの状態で使用を続ける
+T7	Connective 113 114	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T2	
+T8	Argument 131 133	最悪
+T9	Connective 134 136	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+R3	RESULT Arg1:T7 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T3	

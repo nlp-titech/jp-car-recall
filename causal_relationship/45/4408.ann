@@ -1,0 +1,21 @@
+T1	Argument 6 43	ゴム製燃料ホース（供給側）と燃料配管の接続部にあるクランプを過度に締め付け
+T2	Connective 49 50	、
+T3	Argument 84 90	燃料が漏れる
+T4	Connective 96 97	、
+T5	Argument 103 108	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 50 64	このままの状態で使用を続ける
+T7	Connective 64 65	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 66 80	原動機の熱によりホースが変形
+T9	Connective 82 84	際に
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 97 99	最悪
+T11	Connective 100 102	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	

@@ -1,0 +1,13 @@
+T1	Argument 0 31	トレーラの車軸において、アクスルブラケットの取り付け位置を誤っ
+T2	Connective 32 34	ため
+T3	Argument 35 60	当該車軸および制動装置の向きが上下左右逆に取り付け
+T4	Connective 71 75	そのため
+T5	Argument 76 114	制動装置のブレーキシューに対するブレーキドラムの回転方向が正規回転に対し逆転
+T6	Connective 115 116	、
+T7	Argument 116 142	直進時の制動能力が道路運送車両の保安基準を満足しない
+R1	REASON Arg1:T4 Arg2:T3	
+R2	RESULT Arg1:T4 Arg2:T5	
+R3	REASON Arg1:T6 Arg2:T5	
+R4	RESULT Arg1:T6 Arg2:T7	
+R5	REASON Arg1:T2 Arg2:T1	
+R6	RESULT Arg1:T2 Arg2:T3	

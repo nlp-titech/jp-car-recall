@@ -1,0 +1,37 @@
+T1	Argument 0 31	油圧式パワーステアリングの配管（フィードホース）の長さが不適切
+T2	Connective 32 34	ため
+T3	Argument 35 55	ハンドルを最大に切った状態から素早く戻す
+T4	Connective 55 56	と
+T5	Argument 56 76	油路を切り替えるバルブで油圧が急激に変動
+T6	Connective 77 78	、
+T7	Argument 78 85	パイプ類が共振
+T8	Connective 86 87	て
+T9	Argument 87 92	異音が発生
+T10	Connective 100 104	そのため
+T11	Argument 105 115	そのまま使用を続ける
+T12	Connective 115 116	と
+T14	Connective 146 147	、
+T15	Argument 147 162	パワーステアリングオイルが漏れ
+T16	Connective 162 163	て
+T17	Argument 163 174	ハンドルの操作力が増大
+T13	Argument 117 125	共振した際の振動
+T18	Connective 125 126	で
+T19	Argument 126 146	ギヤボックスのフィードパイプに亀裂が生じ
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T7	
+R10	RESULT Arg1:T10 Arg2:T19	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T19	
+R13	REASON Arg1:T18 Arg2:T13	
+R14	RESULT Arg1:T18 Arg2:T19	
+R15	REASON Arg1:T14 Arg2:T19	
+R16	RESULT Arg1:T14 Arg2:T15	
+R17	REASON Arg1:T16 Arg2:T15	
+R18	RESULT Arg1:T16 Arg2:T17	
+R6	RESULT Arg1:T6 Arg2:T7	

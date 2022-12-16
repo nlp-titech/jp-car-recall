@@ -1,0 +1,27 @@
+T1	Argument 16 49	シートベルトフィーダ用コントロールユニットの制御プログラムが不適切
+T2	Connective 50 52	ため
+T3	Argument 53 72	シートベルトフィーダが正しく作動しない
+T4	Connective 78 82	そのため
+T5	Argument 83 104	シートベルトフィーダが適切な位置で停止せず
+T6	Connective 104 105	、
+T7	Argument 105 117	乗員の拘束が不十分となり
+T8	Connective 117 118	、
+T9	Argument 118 129	乗員が過度の傷害を負う
+T10	Argument 138 154	シートベルトプリテンショナが作動
+T11	Connective 156 157	と
+T12	Argument 157 170	シートベルトフィーダが破損
+T13	Connective 171 172	、
+T14	Argument 172 180	破片で乗員が負傷
+R1	REASON Arg1:T2 Arg2:T1	
+R2	REASON Arg1:T4 Arg2:T3	
+R3	REASON Arg1:T6 Arg2:T5	
+R4	REASON Arg1:T8 Arg2:T7	
+R5	CONDITION Arg1:T11 Arg2:T10	
+R6	REASON Arg1:T13 Arg2:T12	
+R7	RESULT Arg1:T13 Arg2:T14	
+R8	RESULT Arg1:T11 Arg2:T12	
+R9	RESULT Arg1:T8 Arg2:T9	
+R10	RESULT Arg1:T6 Arg2:T7	
+R11	RESULT Arg1:T4 Arg2:T5	
+R12	RESULT Arg1:T2 Arg2:T3	
+R13	RESULT Arg1:T2 Arg2:T10	

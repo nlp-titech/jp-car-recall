@@ -1,0 +1,17 @@
+T1	Argument 0 35	バスの非常口横の前転倒式座席において、転倒防止金具が取付けられていない
+T2	Connective 41 45	そのため
+T5	Argument 46 71	急ブレーキにより乗客が後方より当該座席に倒れかかる
+T6	Connective 71 72	と
+T7	Argument 72 81	ヒンジの固定が外れ
+T8	Connective 81 82	、
+T9	Argument 82 84	最悪
+T10	Connective 85 87	場合
+T11	Argument 88 93	座席が転倒
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T11	
+R9	CONDITION Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	

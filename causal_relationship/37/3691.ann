@@ -1,0 +1,9 @@
+T1	Argument 0 22	センターピラーのリインフォースの製造が不適切
+T2	Connective 23 25	ため
+T3	Argument 26 37	亀裂が生じた部材が混入
+T4	Connective 45 49	そのため
+T5	Argument 50 75	保安基準第１８条に規定する側面衝突基準に適合しない
+R1	RESULT Arg1:T4 Arg2:T5	
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T3	
+R4	REASON Arg1:T2 Arg2:T1	

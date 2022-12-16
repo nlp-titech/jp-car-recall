@@ -1,0 +1,29 @@
+T1	Argument 0 27	ショベル・ローダの排気管において、排気管の設計が不適切
+T2	Argument 31 36	強度が不足
+T3	Argument 51 65	そのままの状態で使用を続ける
+T4	Argument 67 73	原動機の振動
+T5	Argument 76 84	当該排気管が共振
+T6	Argument 86 91	亀裂が生じ
+T7	Argument 92 94	最悪
+T8	Argument 98 106	排気ガスが漏れる
+T9	Connective 28 30	ため
+T10	Connective 46 50	そのため
+T11	Connective 65 66	と
+T12	Connective 73 76	により
+T13	Connective 85 86	て
+T14	Connective 91 92	、
+T15	Connective 95 97	場合
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T2	
+R3	REASON Arg1:T10 Arg2:T2	
+R5	CONDITION Arg1:T11 Arg2:T3	
+R7	REASON Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T5	
+R9	REASON Arg1:T13 Arg2:T5	
+R10	RESULT Arg1:T13 Arg2:T6	
+R11	REASON Arg1:T14 Arg2:T6	
+R13	CONDITION Arg1:T15 Arg2:T7	
+R14	RESULT Arg1:T15 Arg2:T8	
+R4	RESULT Arg1:T10 Arg2:T5	
+R6	RESULT Arg1:T11 Arg2:T5	
+R12	RESULT Arg1:T14 Arg2:T8	

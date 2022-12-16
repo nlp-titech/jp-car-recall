@@ -1,0 +1,21 @@
+T2	Connective 46 48	ため
+T3	Argument 49 56	当該部品が変形
+T4	Connective 57 58	、
+R2	RESULT Arg1:T2 Arg2:T3	
+T5	Argument 58 80	ワイヤー自動巻き取り調整機構が作動しなくなる
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 86 90	そのため
+T7	Argument 91 106	繰返しの駐車ブレーキレバー操作
+T8	Connective 106 109	により
+T9	Argument 109 123	ワイヤーの伸び代が過大になり
+T10	Connective 123 124	、
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T11	Argument 127 135	駐車制動力が不足
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 10 45	ワイヤー自動巻き取り調整機構の製造工程において、不適切な固定加工を行っ
+R1	REASON Arg1:T2 Arg2:T12	

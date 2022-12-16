@@ -1,0 +1,13 @@
+T1	Argument 0 15	速度計の指針保持部の強度が不足
+T3	Argument 35 46	指針が保持できなくなり
+T4	Argument 47 59	速度が正しく指示されない
+T5	Connective 24 26	ため
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T3	
+T2	Connective 46 47	、
+R3	REASON Arg1:T2 Arg2:T3	
+R4	RESULT Arg1:T2 Arg2:T4	
+T6	Argument 27 31	使用過程
+T7	Connective 31 35	において
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	

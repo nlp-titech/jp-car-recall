@@ -1,0 +1,5 @@
+T1	Argument 0 43	塵芥車の塵芥回収装置を制御するための制御ボックスにおいて、制御プログラムの設計が不適切
+T2	Connective 44 46	ため
+T3	Argument 47 67	作業者が操作した内容とは異なる動作を行う
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

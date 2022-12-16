@@ -1,0 +1,40 @@
+T1	Argument 16 36	オイルサーモバルブの開弁温度設定が不適切
+T2	Connective 37 39	ため
+T3	Argument 40 52	ピストンの温度が高くなり
+T4	Connective 52 53	、
+T5	Argument 53 67	ピストンに過大な負荷がかかり
+T6	Connective 67 68	、
+T7	Argument 68 73	亀裂が生じ
+T8	Connective 80 84	そのため
+T9	Argument 85 95	そのまま使用を続ける
+T10	Connective 95 96	と
+T11	Argument 96 101	亀裂が進行
+T12	Connective 102 103	、
+T13	Argument 103 112	ピストンに穴が開き
+T14	Connective 112 113	、
+T16	Connective 130 131	、
+T17	Argument 131 133	最悪
+T18	Connective 134 136	場合
+T19	Argument 137 144	走行不能に至る
+R1	RESULT Arg1:T18 Arg2:T19	
+R2	CONDITION Arg1:T18 Arg2:T17	
+R3	RESULT Arg1:T16 Arg2:T19	
+R6	REASON Arg1:T14 Arg2:T13	
+R7	RESULT Arg1:T12 Arg2:T13	
+R8	REASON Arg1:T12 Arg2:T11	
+R9	RESULT Arg1:T10 Arg2:T11	
+R10	CONDITION Arg1:T10 Arg2:T9	
+R11	RESULT Arg1:T8 Arg2:T11	
+R12	REASON Arg1:T8 Arg2:T7	
+R13	RESULT Arg1:T6 Arg2:T7	
+R14	REASON Arg1:T6 Arg2:T5	
+R15	RESULT Arg1:T4 Arg2:T5	
+R16	REASON Arg1:T4 Arg2:T3	
+R17	RESULT Arg1:T2 Arg2:T3	
+R18	REASON Arg1:T2 Arg2:T1	
+T15	Argument 113 122	エンジン出力の低下
+T20	Argument 124 129	白煙を排出
+R4	RESULT Arg1:T14 Arg2:T15	
+R5	RESULT Arg1:T14 Arg2:T20	
+R19	REASON Arg1:T16 Arg2:T20	
+R20	REASON Arg1:T16 Arg2:T15	

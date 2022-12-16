@@ -1,0 +1,20 @@
+T1	Argument 0 46	訪問入浴車において、車両フロアパネルに補助座席を取り付ける穴をドリルであける作業工程が不適切
+T2	Connective 47 49	ため
+T3	Argument 50 82	当該取付穴の直下に通っている燃料蒸発ガス発散防止装置の配管を損傷
+T4	Argument 98 116	補助座席の取付ボルトと当該配管が干渉
+T5	Connective 126 130	このため
+T6	Argument 131 145	そのままの状態で使用を続ける
+T7	Connective 145 146	と
+T8	Argument 147 154	配管に穴があい
+R1	RESULT Arg1:T7 Arg2:T8	
+R2	CONDITION Arg1:T7 Arg2:T6	
+R3	RESULT Arg1:T5 Arg2:T8	
+R4	REASON Arg1:T5 Arg2:T4	
+R5	REASON Arg1:T5 Arg2:T3	
+R6	RESULT Arg1:T2 Arg2:T3	
+R7	REASON Arg1:T2 Arg2:T1	
+R8	RESULT Arg1:T2 Arg2:T4	
+T9	Connective 154 155	て
+T10	Argument 155 169	燃料蒸発ガスが大気中に漏れる
+R9	REASON Arg1:T9 Arg2:T8	
+R10	RESULT Arg1:T9 Arg2:T10	

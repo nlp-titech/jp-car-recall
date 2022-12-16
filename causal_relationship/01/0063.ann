@@ -1,0 +1,27 @@
+T1	Argument 0 41	４輪駆動車の前輪用差動装置（フロントディファレンシャル）の通気のための構造が不適切
+T2	Argument 54 66	通気弁から潤滑油が漏れる
+T3	Argument 72 78	潤滑油が減少
+T4	Argument 80 85	異音が発生
+T5	Argument 93 100	差動装置が損傷
+T6	Argument 102 109	走行不能に至る
+T7	Connective 42 44	ため
+T8	Connective 71 72	、
+T10	Connective 101 102	て
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+T11	Connective 79 80	て
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+R7	RESULT Arg1:T11 Arg2:T5	
+R8	REASON Arg1:T10 Arg2:T5	
+R9	RESULT Arg1:T10 Arg2:T6	
+T9	Argument 45 50	高速で走行
+T12	Connective 52 53	際
+R10	CONDITION Arg1:T12 Arg2:T9	
+R11	RESULT Arg1:T12 Arg2:T2	
+T13	Argument 87 89	最悪
+T14	Connective 90 92	場合
+R12	CONDITION Arg1:T14 Arg2:T13	
+R13	RESULT Arg1:T14 Arg2:T5	

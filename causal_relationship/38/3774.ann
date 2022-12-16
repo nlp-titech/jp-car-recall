@@ -1,0 +1,27 @@
+T1	Argument 0 23	後輪のブレーキにおいて、キャリパの製造が不適切
+T2	Argument 27 55	駐車ブレーキ用ピストンが収まる部分のシリンダ内径が大きい
+T3	Argument 66 80	キャリパ内部のシール性が低く
+T4	Argument 81 87	密閉が保てず
+T5	Argument 87 95	ブレーキ液が漏れ
+T6	Argument 96 102	警告灯が点灯
+T7	Argument 104 106	最悪
+T8	Argument 110 116	制動力が低下
+T9	Connective 24 26	ため
+T10	Connective 61 65	そのため
+T11	Connective 80 81	、
+T12	Connective 95 96	て
+T13	Connective 86 87	ず
+T15	Connective 107 109	場合
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T2	
+R3	REASON Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T3	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+R7	REASON Arg1:T13 Arg2:T4	
+R8	RESULT Arg1:T13 Arg2:T5	
+R9	REASON Arg1:T12 Arg2:T5	
+R10	RESULT Arg1:T12 Arg2:T6	
+R13	CONDITION Arg1:T15 Arg2:T7	
+R14	RESULT Arg1:T15 Arg2:T8	
+R11	RESULT Arg1:T12 Arg2:T8	

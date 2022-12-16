@@ -1,0 +1,5 @@
+T1	Argument 36 50	ブラケットの取り付けが不適切
+T2	Connective 51 53	ため
+T3	Argument 54 73	当該チャイルドシートを取り付けられない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

@@ -1,0 +1,39 @@
+T1	Argument 0 14	車室内電気配線の固定が不適切
+T2	Connective 15 16	為
+T3	Argument 17 27	組付け作業のバラツキ
+T4	Connective 27 30	により
+T5	Argument 31 57	フードロックリリースハンドルブラケットとの隙間が狭い
+T6	Connective 62 63	、
+T8	Connective 87 91	そのため
+T9	Argument 99 111	当該配線と固定ネジが干渉
+T10	Connective 112 113	、
+T11	Argument 92 98	走行中の振動
+T12	Connective 98 99	で
+T13	Argument 113 115	最悪
+T14	Connective 116 118	場合
+T15	Argument 119 126	配線がショート
+T16	Connective 127 128	て
+T17	Argument 128 135	ヒューズが切れ
+T18	Connective 135 136	、
+T19	Argument 136 143	方向指示器不灯
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T7	Argument 63 80	ブラケットの固定ネジで被覆を傷つけ
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T12 Arg2:T11	
+R10	RESULT Arg1:T12 Arg2:T9	
+R11	CONDITION Arg1:T14 Arg2:T13	
+R12	RESULT Arg1:T14 Arg2:T15	
+R13	RESULT Arg1:T10 Arg2:T15	
+R14	REASON Arg1:T16 Arg2:T15	
+R15	RESULT Arg1:T16 Arg2:T17	
+R16	REASON Arg1:T18 Arg2:T17	
+R17	RESULT Arg1:T18 Arg2:T19	
+R18	REASON Arg1:T10 Arg2:T9	
+T20	Argument 144 151	速度計作動不良
+R19	RESULT Arg1:T18 Arg2:T20	

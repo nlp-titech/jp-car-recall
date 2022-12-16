@@ -1,0 +1,5 @@
+T1	Argument 0 39	消防車のサイレン音量徐変機能付きサイレンアンプにおいて、制御プログラムが不適切
+T2	Connective 40 42	ため
+T3	Argument 43 63	サイレン吹鳴と連動して警光灯が点灯しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

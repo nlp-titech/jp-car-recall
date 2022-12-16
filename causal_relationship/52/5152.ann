@@ -1,0 +1,17 @@
+T1	Argument 19 46	ウィンドウウォッシャホースが正しく取り付けられていない
+T2	Connective 51 52	、
+T3	Argument 64 89	ワイパーアーム内のスプリングに当該ホースが挟まれる
+T4	Argument 101 111	洗浄液が噴射されない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T5	Argument 52 62	そのまま使用を続ける
+T6	Connective 62 63	と
+R3	CONDITION Arg1:T6 Arg2:T5	
+R4	RESULT Arg1:T6 Arg2:T3	
+T7	Connective 94 95	。
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 95 97	最悪
+T9	Connective 98 100	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T4	

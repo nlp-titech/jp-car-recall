@@ -1,0 +1,21 @@
+T1	Argument 0 31	ブレーキマスタシリンダの製造工程において、検査時の治具が不適切
+T2	Connective 32 34	ため
+T3	Argument 35 44	締結部に亀裂が発生
+T4	Connective 52 56	そのため
+T5	Argument 57 67	そのまま使用を続ける
+T6	Connective 67 68	と
+T7	Argument 69 74	亀裂が進展
+T8	Connective 79 80	、
+T9	Argument 80 89	制動距離が長くなる
+R1	RESULT Arg1:T8 Arg2:T9	
+R2	REASON Arg1:T8 Arg2:T11	
+R3	RESULT Arg1:T6 Arg2:T7	
+R4	CONDITION Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T7	
+R6	REASON Arg1:T4 Arg2:T3	
+R7	RESULT Arg1:T2 Arg2:T3	
+R8	REASON Arg1:T2 Arg2:T1	
+T10	Connective 75 76	て
+T11	Argument 76 78	破断
+R9	REASON Arg1:T10 Arg2:T7	
+R10	RESULT Arg1:T10 Arg2:T11	

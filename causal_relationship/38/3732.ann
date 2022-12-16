@@ -1,0 +1,5 @@
+T1	Argument 0 29	大型路線バスのＣＮＧ車において、電気配線の図面指示が不適切
+T2	Argument 33 67	前部霧灯の点灯操作状態を運転者に表示するための装置が装着されていない
+T3	Connective 30 32	ため
+R1	REASON Arg1:T3 Arg2:T1	
+R2	RESULT Arg1:T3 Arg2:T2	

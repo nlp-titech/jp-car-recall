@@ -1,0 +1,9 @@
+T1	Argument 36 54	ブレーキパイプを誤った位置に取り付け
+T2	Connective 61 65	そのため
+T3	Argument 66 86	ＡＢＳ作動時等にブレーキが適切に作動せず
+T4	Connective 86 87	、
+T5	Argument 87 96	走行安定性を損なう
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

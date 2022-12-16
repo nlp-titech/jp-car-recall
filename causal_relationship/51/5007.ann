@@ -1,0 +1,25 @@
+T1	Argument 3 45	ブレーキマスターシリンダーとブレーキペダルとを連結しているピンの留め金の形状が不適切
+T2	Connective 46 48	ため
+T3	Argument 55 80	留め金が隣接する部品（コントロールプレート）と干渉
+T4	Connective 91 95	そのため
+T5	Argument 112 117	ピンが脱落
+T6	Connective 118 119	て
+T7	Argument 119 134	後輪のブレーキが作動しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T16	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 96 110	そのままの状態で使用を続ける
+T9	Connective 110 111	と
+R8	RESULT Arg1:T9 Arg2:T5	
+T16	Argument 82 85	外れる
+T17	Connective 81 82	て
+R11	RESULT Arg1:T17 Arg2:T16	
+R12	REASON Arg1:T17 Arg2:T3	
+R9	CONDITION Arg1:T9 Arg2:T8	
+T10	Argument 49 54	制動操作時
+T11	Connective 54 55	に
+R7	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	

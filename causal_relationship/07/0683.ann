@@ -1,0 +1,23 @@
+T1	Argument 1 40	前輪緩衝装置において、不適切な鍛造工程により製作されたロアアームが組み付けられ
+T2	Argument 44 71	当該ロアアームのボールジョイントソケット部に亀裂が発生
+T3	Argument 84 100	サーキットでのコーナリング走行時
+T4	Argument 103 113	内輪が段差を乗り上げ
+T5	Argument 130 155	ボールジョイントソケット部からボールスタッドが外れ
+T6	Argument 156 163	走行不能となる
+T7	Connective 41 43	ため
+T8	Connective 79 83	そのため
+T9	Connective 101 102	に
+T10	Connective 127 129	場合
+T11	Connective 155 156	、
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T5	
+R5	CONDITION Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T5	
+R9	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	
+T12	Argument 116 126	急操舵、急制動を行っ
+R7	CONDITION Arg1:T10 Arg2:T12	
+R11	RESULT Arg1:T8 Arg2:T4	

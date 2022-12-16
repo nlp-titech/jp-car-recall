@@ -1,0 +1,29 @@
+T2	Connective 49 51	ため
+T3	Argument 63 72	信号線が損傷・断線
+T4	Connective 80 84	そのため
+T5	Argument 101 112	発電制御ができなくなり
+T6	Connective 112 113	、
+T10	Argument 146 153	走行不能になる
+T11	Argument 140 142	最悪
+T12	Connective 143 145	場合
+R4	CONDITION Arg1:T12 Arg2:T11	
+R5	RESULT Arg1:T12 Arg2:T10	
+R6	REASON Arg1:T6 Arg2:T5	
+R9	RESULT Arg1:T2 Arg2:T3	
+R10	REASON Arg1:T4 Arg2:T3	
+R11	RESULT Arg1:T4 Arg2:T5	
+T13	Argument 52 60	走行中の車体振動
+T14	Connective 60 63	により
+R12	REASON Arg1:T14 Arg2:T13	
+R13	RESULT Arg1:T14 Arg2:T3	
+T15	Argument 85 99	そのままの状態で使用を続ける
+T16	Connective 99 100	と
+R14	CONDITION Arg1:T16 Arg2:T15	
+R15	RESULT Arg1:T16 Arg2:T5	
+T7	Argument 113 138	発電機によるバッテリーの充電が行われず警告灯が点灯
+T8	Connective 139 140	、
+R1	RESULT Arg1:T8 Arg2:T10	
+R2	REASON Arg1:T8 Arg2:T7	
+R3	RESULT Arg1:T6 Arg2:T7	
+T1	Argument 29 48	電源ケーブルと信号線の固定方法が不適切
+R7	REASON Arg1:T2 Arg2:T1	

@@ -1,0 +1,21 @@
+T1	Argument 0 49	前輪緩衝装置のロアアームとナックルアームを連結しているロアボールジョイント内部の潤滑性に一部不適切
+T2	Argument 74 88	摺動部分が異常に摩耗して損傷
+T3	Argument 96 118	ロアボールジョイントがナックルアームから外れ
+T4	Argument 119 126	走行不能に至る
+T5	Connective 55 57	ため
+T6	Connective 89 90	、
+T7	Connective 118 119	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 58 72	このままの状態で使用を続ける
+T9	Connective 72 73	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T2	
+T10	Argument 90 92	最悪
+T11	Connective 93 95	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	

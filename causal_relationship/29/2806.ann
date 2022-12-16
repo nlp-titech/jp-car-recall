@@ -1,0 +1,21 @@
+T1	Argument 0 42	車いすに乗ったまま乗降できる福祉車両において、テールゲ－トヒンジ取付け部の強度が不足
+T2	Connective 46 48	ため
+T3	Argument 64 74	ヒンジ取付け部が変形
+T4	Connective 82 86	そのため
+T5	Argument 103 112	テールゲートに亀裂
+T6	Connective 115 116	、
+T7	Argument 116 130	テールゲートが閉まらなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 49 63	テールゲート開閉操作を繰返す
+T9	Connective 63 64	と
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 87 101	そのままの状態で使用を続ける
+T11	Connective 101 102	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	

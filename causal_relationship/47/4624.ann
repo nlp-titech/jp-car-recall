@@ -1,0 +1,13 @@
+T1	Argument 4 46	ラジエータ冷却用の電動ファンモータにおいて、当該ファンモータ用ヒューズの容量が不適切
+T2	Connective 52 53	、
+T3	Argument 69 78	当該ヒューズが溶断
+T4	Connective 79 80	、
+T5	Argument 80 90	オーバーヒートに至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 53 67	そのままの状態で使用を続ける
+T7	Connective 67 68	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	

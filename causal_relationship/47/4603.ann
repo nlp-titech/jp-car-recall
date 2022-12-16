@@ -1,0 +1,9 @@
+T1	Argument 20 47	中間ガイドにベルトを組み付けるための割溝の位置が不適切
+T2	Connective 48 50	ため
+T3	Argument 51 62	ベルトが割り溝に挟まり
+T4	Connective 62 63	、
+T5	Argument 63 77	当該ベルトの機能が損なわれる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

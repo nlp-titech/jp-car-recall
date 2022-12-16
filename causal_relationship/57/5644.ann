@@ -1,0 +1,25 @@
+T1	Argument 0 37	制動倍力装置のバキュームラインに装着されているチェックバルブの材質が不適切
+T2	Argument 41 49	密閉不良が起こり
+T3	Argument 49 80	バキュームポンプから霧化したエンジンオイルが制動倍力装置に浸入
+T4	Argument 82 93	内部ダイヤフラムが損傷
+T5	Argument 106 125	当該倍力装置の気密性が保持できなくなり
+T6	Argument 126 128	最悪
+T7	Argument 132 143	制動停止距離が長くなる
+T8	Connective 38 40	ため
+T9	Connective 81 82	、
+T10	Connective 101 105	そのため
+T11	Connective 125 126	、
+T12	Connective 129 131	場合
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T2	
+T13	Connective 48 49	り
+R3	REASON Arg1:T13 Arg2:T2	
+R4	RESULT Arg1:T13 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T5	
+R9	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T7	
+R11	CONDITION Arg1:T12 Arg2:T6	
+R12	RESULT Arg1:T12 Arg2:T7	

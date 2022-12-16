@@ -1,0 +1,25 @@
+T1	Argument 18 40	バルブマウントのコネクタ接続部の設計が不適切
+T2	Connective 41 43	ため
+T3	Argument 44 60	使用過程で当該部の接触抵抗が増加
+T4	Connective 61 62	て
+T5	Argument 62 64	発熱
+T6	Connective 72 76	そのため
+T7	Argument 77 100	リアシグナル検知制御モジュールが抵抗増加を検知
+T8	Connective 101 102	て
+T9	Argument 103 108	警告を表示
+T10	Argument 115 160	側方灯、尾灯、後部霧灯、駐車灯、制動灯、後退灯及び方向指示器の一部、または複数が不灯になる
+T11	Argument 164 166	発熱
+T12	Connective 166 169	により
+T13	Argument 169 179	コネクタ接続部が溶損
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	RESULT Arg1:T8 Arg2:T10	
+R10	RESULT Arg1:T8 Arg2:T13	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	

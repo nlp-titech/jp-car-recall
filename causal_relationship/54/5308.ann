@@ -1,0 +1,29 @@
+T1	Argument 9 30	ウォームギヤシャフトの軸受部の加工が不適切
+T2	Connective 31 33	ため
+T3	Argument 34 55	軸受け部とモータのセンターベアリングがずれ
+T4	Connective 55 56	、
+T5	Argument 56 72	ウォームギヤが傾いて取り付けられ
+T6	Connective 81 85	そのため
+T7	Argument 102 115	シャフトに過大な負荷が発生
+T8	Connective 116 117	、
+T9	Argument 123 132	当該シャフトが破損
+T10	Connective 133 134	、
+T11	Argument 134 145	ワイパが作動しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 86 100	そのままの状態で使用を続ける
+T13	Connective 100 101	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T7	
+T14	Argument 117 119	最悪
+T15	Connective 120 122	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T9	

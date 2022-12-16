@@ -1,0 +1,25 @@
+T1	Argument 0 44	過給器付原動機において、吸入空気冷却装置（インタークーラー）の取付ボルトに締付けが不適切
+T2	Argument 72 80	当該ボルトが弛み
+T3	Argument 81 83	脱落
+T4	Argument 97 133	脱落したボルトがエンジン回転を制御する装置（スロットルリンク）に噛み込み
+T5	Argument 134 160	アクセルペダルを戻してもエンジン回転が下がらなくなる
+T6	Connective 51 55	そのため
+T7	Connective 80 81	、
+T8	Connective 90 91	、
+T9	Connective 133 134	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 56 70	そのままの状態で使用を続ける
+T11	Connective 70 71	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T2	
+T12	Argument 91 93	最悪
+T13	Connective 94 96	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T4	

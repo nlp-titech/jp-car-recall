@@ -1,0 +1,13 @@
+T2	Connective 48 50	ため
+T3	Argument 51 60	ハンドルを右に操舵
+T4	Connective 62 64	場合
+T5	Argument 66 106	ピットマンアーム及びドラッグリンクブーツが前部潜り込み防止装置用ブラケットと干渉
+T6	Connective 113 114	、
+T7	Argument 114 121	保安基準不適合
+R1	RESULT Arg1:T6 Arg2:T7	
+R2	REASON Arg1:T6 Arg2:T5	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	CONDITION Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T2 Arg2:T5	
+T1	Argument 0 47	中型トラックのダンプ及びミキサー仕様車において、前部潜り込み防止装置用ブラケットの形状が不適切
+R6	REASON Arg1:T2 Arg2:T1	

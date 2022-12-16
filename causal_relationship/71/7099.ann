@@ -1,0 +1,9 @@
+T1	Argument 4 49	アイドル回転補正バルブ（アイドルスタビライゼーションバルブ）のリターンスプリングに材質不良
+T2	Connective 55 57	ため
+T3	Argument 58 71	当該バルブの作動が悪くなり
+T4	Connective 70 71	り
+T5	Argument 71 91	無負荷状態でのアイドル回転が不安定になる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

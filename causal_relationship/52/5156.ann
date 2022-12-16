@@ -1,0 +1,24 @@
+T1	Argument 40 67	当該カバーとフロントフェンダー（泥よけ）の隙間が少ない
+T2	Connective 67 69	ため
+T3	Argument 102 120	当該カバーにフロントフェンダーが接触
+T4	Connective 128 132	このため
+T5	Argument 133 149	当該カバーにフェンダーが噛み込む
+T6	Argument 161 168	操縦不能になる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T7	Connective 154 155	、
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	
+T8	Argument 155 157	最悪
+T9	Connective 158 160	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T6	
+T10	Argument 70 98	フロントサスペンションが最も縮むような特定の条件下で使用
+T11	Connective 100 101	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	
+T12	Argument 0 36	ボルテージ・レギュレーターにオプションのアクセサリー・カバーを取り付けた
+T13	Connective 36 38	場合
+R11	CONDITION Arg1:T13 Arg2:T12	

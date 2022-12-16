@@ -1,0 +1,5 @@
+T1	Argument 0 39	３列席仕様の車両において、第２列席の中央席用シートベルトバックルに異品を組付け
+T2	Connective 45 47	ため
+T3	Argument 48 69	当該席の座席ベルトを装着することができない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

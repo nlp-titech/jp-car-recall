@@ -1,0 +1,39 @@
+T1	Argument 12 36	パワーステアリング用油圧ホースの遮熱対策が不十分
+T2	Connective 37 39	ため
+T3	Argument 68 73	排気管の熱
+T4	Connective 73 77	によって
+T5	Argument 78 87	当該ホースが熱劣化
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T9	Connective 95 99	そのため
+T10	Argument 115 123	当該ホースが損傷
+T11	Connective 124 125	、
+T12	Argument 125 131	作動油が漏れ
+T13	Connective 131 132	て
+T14	Argument 132 143	ハンドルの操作力が増大
+T16	Argument 151 161	作動油が排気管に飛散
+T17	Connective 162 163	て
+T18	Argument 163 168	火災に至る
+R5	REASON Arg1:T9 Arg2:T5	
+R6	RESULT Arg1:T9 Arg2:T10	
+R7	REASON Arg1:T11 Arg2:T10	
+R8	RESULT Arg1:T11 Arg2:T12	
+R9	REASON Arg1:T13 Arg2:T12	
+R10	RESULT Arg1:T13 Arg2:T14	
+R13	REASON Arg1:T17 Arg2:T16	
+R14	RESULT Arg1:T17 Arg2:T18	
+T6	Argument 40 67	高温下での連続高速走行、登坂路走行等を繰り返しおこなう
+T7	Connective 67 68	と
+R15	CONDITION Arg1:T7 Arg2:T6	
+R16	RESULT Arg1:T7 Arg2:T5	
+T8	Argument 99 113	そのままの状態で使用を続ける
+T19	Connective 113 114	と
+R17	CONDITION Arg1:T19 Arg2:T8	
+R18	RESULT Arg1:T19 Arg2:T10	
+T20	Argument 145 147	最悪
+T21	Connective 148 150	場合
+R19	CONDITION Arg1:T21 Arg2:T20	
+R20	RESULT Arg1:T21 Arg2:T16	
+R11	RESULT Arg1:T13 Arg2:T16	

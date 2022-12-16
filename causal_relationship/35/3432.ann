@@ -1,0 +1,21 @@
+T1	Argument 3 40	農耕トラクタのエンジン制御用ワイヤハーネスにおいて、配線の取り回しが不適切
+T2	Connective 41 43	ため
+T3	Argument 44 57	ボンネット開閉リンクと接触
+T4	Connective 67 71	そのため
+T5	Argument 72 86	そのままの状態で使用を続ける
+T6	Connective 86 87	と
+T7	Argument 88 97	当該ハーネスが損傷
+T8	Connective 98 99	、
+T9	Argument 99 101	最悪
+T10	Connective 102 104	場合
+T11	Argument 105 112	エンジンが停止
+R1	RESULT Arg1:T10 Arg2:T11	
+R2	CONDITION Arg1:T10 Arg2:T9	
+R3	RESULT Arg1:T8 Arg2:T11	
+R4	REASON Arg1:T8 Arg2:T7	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	CONDITION Arg1:T6 Arg2:T5	
+R7	RESULT Arg1:T4 Arg2:T7	
+R8	REASON Arg1:T4 Arg2:T3	
+R9	RESULT Arg1:T2 Arg2:T3	
+R10	REASON Arg1:T2 Arg2:T1	

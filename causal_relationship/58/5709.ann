@@ -1,0 +1,13 @@
+T1	Argument 0 15	エアフィルタのシール剤が不適切
+T2	Connective 16 18	ため
+T3	Argument 19 31	当該シール部にひびが生じ
+T4	Argument 32 40	フィルタ部が剥離
+T5	Connective 31 32	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T4	
+T6	Connective 48 52	そのため
+T7	Argument 53 66	エアフィルタの機能が損なわ
+R5	REASON Arg1:T6 Arg2:T4	
+R6	RESULT Arg1:T6 Arg2:T7	

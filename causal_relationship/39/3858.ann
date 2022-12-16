@@ -1,0 +1,17 @@
+T1	Argument 0 21	警音器において、内部の電気接点材料が不適切
+T2	Argument 25 31	繰り返し被水
+T3	Argument 34 48	内部電気接点に酸化皮膜が生成
+T4	Argument 51 59	導通不良を起こす
+T5	Argument 70 80	警音器が鳴らなくなる
+T6	Connective 22 24	ため
+T7	Connective 33 34	と
+T8	Connective 50 51	、
+T9	Connective 65 69	そのため
+R1	REASON Arg1:T6 Arg2:T1	
+R3	CONDITION Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+R2	RESULT Arg1:T6 Arg2:T3	

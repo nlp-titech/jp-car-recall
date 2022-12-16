@@ -1,0 +1,13 @@
+T1	Argument 1 41	アンチロック・ブレーキ・システム（ＡＢＳ）の後輪ブレーキパイプを左右誤って取付け
+T2	Connective 48 52	そのため
+T3	Argument 72 86	後車輪の制動が左右逆にかかり
+T4	Connective 86 87	、
+T5	Argument 87 104	車両の挙動を正しく制御できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 53 67	ＡＢＳを作動させるような制動
+T7	Connective 70 71	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	

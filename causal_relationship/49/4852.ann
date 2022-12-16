@@ -1,0 +1,17 @@
+T1	Argument 9 49	非常点滅表示灯スイッチユニット内部の作動用リレーに加工不良により接点の間隔が狭い
+T2	Connective 54 56	ため
+T3	Argument 57 75	当該リレーの接点間でスパークを起こし
+T4	Connective 75 76	て
+T5	Argument 76 78	固着
+T6	Connective 85 86	、
+T7	Argument 86 108	非常点滅表示灯及び方向指示器が常時点灯となり
+R1	REASON Arg1:T2 Arg2:T1	
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	REASON Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 109 114	点滅しない
+T9	Connective 108 109	、
+R6	REASON Arg1:T9 Arg2:T7	
+R7	RESULT Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T2 Arg2:T3	

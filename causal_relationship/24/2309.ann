@@ -1,0 +1,9 @@
+T1	Argument 0 55	圧縮天然ガス自動車（ＣＮＧ車）において、②機械式自動変速機のトランスミッション制御ユニットのプログラムが不適切
+T2	Argument 59 71	ギヤが切り替わらなくなり
+T3	Argument 72 102	変速レバー位置及びギヤ段表示灯と実際のギヤ位置が不一致になる
+T4	Connective 56 58	ため
+T5	Connective 71 72	、
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	

@@ -1,0 +1,9 @@
+T1	Argument 0 24	エンジンコントロールユニットのプログラムが不適切
+T2	Connective 25 27	ため
+T3	Argument 28 44	触媒劣化診断が適正に実施されない
+T4	Connective 50 54	そのため
+T5	Argument 55 72	触媒が劣化しても警告灯が点灯しない
+R1	RESULT Arg1:T4 Arg2:T5	
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T3	
+R4	REASON Arg1:T2 Arg2:T1	

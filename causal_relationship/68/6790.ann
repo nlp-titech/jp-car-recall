@@ -1,0 +1,13 @@
+T2	Connective 70 72	ため
+T5	Argument 88 99	ブレーキアシストが作動
+T6	Connective 100 101	、
+T7	Argument 101 118	運転者の予期した以上の制動がかかる
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T6 Arg2:T5	
+R4	RESULT Arg1:T6 Arg2:T7	
+T3	Argument 73 85	通常のブレーキ操作を行っ
+T4	Connective 86 88	際に
+R5	CONDITION Arg1:T4 Arg2:T3	
+R6	RESULT Arg1:T4 Arg2:T5	
+T1	Argument 38 64	ブレーキペダルの踏込み状態を検知するセンサに製造不良
+R1	REASON Arg1:T2 Arg2:T1	

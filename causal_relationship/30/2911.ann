@@ -1,0 +1,13 @@
+T1	Argument 1 18	乗降扉の開閉制御プログラムが不適切
+T2	Connective 19 21	ため
+T3	Argument 38 97	乗客が扉近傍に設置された検知器（光電管）を遮っているにも関わらず、乗降中の乗客が扉に挟まれることを防止する機構が働かず
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T6	Connective 96 97	ず
+T7	Argument 97 102	扉が閉まる
+R5	REASON Arg1:T6 Arg2:T3	
+R6	RESULT Arg1:T6 Arg2:T7	
+T9	Connective 33 35	場合
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 104 239	乗客が検知器（光電管）を遮っている状態で、運転者が乗降扉を閉じる操作を行う（扉の閉動作を予告するブザーが鳴る）・次に、乗客が検知器を遮らない位置に移動する（ブザーが鳴り終わる）・その後、扉を閉める信号が出てから扉が閉まる動作を開始するまでの間において、乗客が検知器を遮る
+R4	CONDITION Arg1:T9 Arg2:T10	

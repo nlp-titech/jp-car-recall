@@ -1,0 +1,20 @@
+T1	Argument 0 16	ボンネット固定部の車体強度が不足
+T2	Connective 20 22	ため
+T3	Argument 23 45	ボンネット主ロックが解除された状態で高速走行
+T4	Connective 47 48	と
+T6	Connective 75 79	そのため
+T7	Argument 80 92	副ロックの噛み合いが外れ
+T8	Connective 92 93	て
+T9	Argument 93 105	走行中にボンネットが開く
+R1	RESULT Arg1:T8 Arg2:T9	
+R2	REASON Arg1:T8 Arg2:T7	
+R3	RESULT Arg1:T6 Arg2:T7	
+R6	CONDITION Arg1:T4 Arg2:T3	
+R7	RESULT Arg1:T2 Arg2:T3	
+R8	REASON Arg1:T2 Arg2:T1	
+T5	Argument 49 52	風圧等
+T10	Connective 52 55	により
+T11	Argument 55 67	副ロック装置取付部が変形
+R4	REASON Arg1:T10 Arg2:T5	
+R5	RESULT Arg1:T10 Arg2:T11	
+R9	RESULT Arg1:T4 Arg2:T11	

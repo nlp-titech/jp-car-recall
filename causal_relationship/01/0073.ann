@@ -1,0 +1,21 @@
+T1	Argument 2 24	前輪緩衝装置のコイルスプリングに防錆塗装不良
+T2	Argument 49 53	錆が発生
+T3	Argument 61 74	当該コイルスプリングが折損
+T4	Argument 76 85	走行安定性を損なう
+T5	Connective 30 32	ため
+T6	Connective 54 55	、
+T7	Connective 75 76	て
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 33 47	そのままの状態で使用を続ける
+T9	Connective 47 48	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T2	
+T10	Argument 55 57	最悪
+T11	Connective 58 60	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	

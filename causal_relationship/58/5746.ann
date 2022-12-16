@@ -1,0 +1,17 @@
+T1	Argument 0 35	原動機樹脂製カムカバー内側のオイルセパレータバッフルにおいて、溶着不良
+T2	Connective 41 42	、
+T5	Argument 42 73	当該溶着部よりエンジンオイルがオイルセパレータバッフル内に浸入
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+T6	Connective 84 88	そのため
+R5	REASON Arg1:T6 Arg2:T5	
+T7	Argument 89 120	浸入したエンジンオイルがブローバイガスと共にシリンダー内に吸入
+R6	RESULT Arg1:T6 Arg2:T7	
+T10	Connective 126 127	、
+R9	REASON Arg1:T10 Arg2:T4	
+T11	Argument 127 139	排出ガス基準を満たさない
+R10	RESULT Arg1:T10 Arg2:T11	
+T3	Connective 122 123	て
+T4	Argument 123 125	燃焼
+R3	REASON Arg1:T3 Arg2:T7	
+R4	RESULT Arg1:T3 Arg2:T4	

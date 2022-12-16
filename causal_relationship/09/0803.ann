@@ -1,0 +1,33 @@
+T1	Argument 0 23	エンジンオイルクーラーホースの組付作業が不適切
+T2	Argument 27 47	当該ホースとけん引フックとの隙間が不十分
+T3	Connective 24 26	ため
+R1	REASON Arg1:T3 Arg2:T1	
+R2	RESULT Arg1:T3 Arg2:T2	
+T4	Connective 54 58	そのため
+T5	Argument 59 71	急発進等のエンジンの挙動
+T6	Argument 75 90	当該ホースとけん引フックが干渉
+T7	Argument 92 106	そのままの状態で使用を続ける
+T8	Argument 108 116	当該ホースが損傷
+T9	Argument 118 128	エンジンオイルが漏れ
+T10	Argument 129 131	最悪
+T11	Connective 132 134	場合
+T12	Argument 135 144	エンジンが焼きつく
+R3	REASON Arg1:T4 Arg2:T2	
+R4	RESULT Arg1:T4 Arg2:T6	
+T13	Connective 71 74	により
+T14	Connective 91 92	、
+T15	Connective 106 107	と
+T16	Connective 117 118	、
+T17	Connective 128 129	、
+R5	REASON Arg1:T13 Arg2:T5	
+R6	RESULT Arg1:T13 Arg2:T6	
+R7	REASON Arg1:T14 Arg2:T6	
+R8	RESULT Arg1:T14 Arg2:T8	
+R9	CONDITION Arg1:T15 Arg2:T7	
+R10	RESULT Arg1:T15 Arg2:T8	
+R11	REASON Arg1:T16 Arg2:T8	
+R12	RESULT Arg1:T16 Arg2:T9	
+R13	REASON Arg1:T17 Arg2:T9	
+R14	RESULT Arg1:T17 Arg2:T12	
+R15	CONDITION Arg1:T11 Arg2:T10	
+R16	RESULT Arg1:T11 Arg2:T12	

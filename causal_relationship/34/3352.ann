@@ -1,0 +1,33 @@
+T1	Argument 0 41	ディーゼル車の燃料装置において、原動機に取り付けられている燃料フィルタの強度が不足
+T2	Connective 45 47	ため
+T4	Connective 63 64	と
+T5	Argument 64 71	燃料圧力の変動
+T6	Connective 71 74	により
+T7	Argument 75 91	燃料フィルタのケースに亀裂が入る
+T8	Connective 97 101	そのため
+T9	Argument 102 116	そのままの状態で使用を続ける
+T10	Connective 116 117	と
+T11	Argument 118 123	亀裂が進行
+T12	Connective 124 125	て
+T13	Argument 125 135	フィルタケースが破損
+T14	Connective 136 137	て
+T15	Argument 138 140	最悪
+T16	Connective 141 143	場合
+T17	Argument 144 150	燃料が漏れる
+R1	RESULT Arg1:T16 Arg2:T17	
+R2	CONDITION Arg1:T16 Arg2:T15	
+R3	RESULT Arg1:T14 Arg2:T17	
+R4	REASON Arg1:T14 Arg2:T13	
+R5	RESULT Arg1:T12 Arg2:T13	
+R6	REASON Arg1:T12 Arg2:T11	
+R7	RESULT Arg1:T10 Arg2:T11	
+R8	CONDITION Arg1:T10 Arg2:T9	
+R9	RESULT Arg1:T8 Arg2:T11	
+R10	REASON Arg1:T8 Arg2:T7	
+R11	RESULT Arg1:T6 Arg2:T7	
+R13	RESULT Arg1:T2 Arg2:T7	
+R14	REASON Arg1:T2 Arg2:T1	
+R16	REASON Arg1:T6 Arg2:T5	
+T18	Argument 48 63	頻繁に原動機の始動、停止を行う
+R17	CONDITION Arg1:T4 Arg2:T18	
+R12	RESULT Arg1:T4 Arg2:T7	

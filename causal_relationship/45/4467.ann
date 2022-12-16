@@ -1,0 +1,17 @@
+T1	Argument 0 42	燃料タンクなどから発生した蒸発ガスを原動機に吸入させるコンピュータプログラムが不適切
+T2	Connective 43 45	ため
+T3	Argument 73 91	必要以上の燃料蒸発ガスが原動機に入り
+T4	Connective 91 92	、
+T5	Argument 92 98	原動機が停止
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 46 52	外気温が高い
+T7	Connective 52 54	場合
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 55 70	減速のためアクセルペダルを離し
+T9	Connective 71 73	時に
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	

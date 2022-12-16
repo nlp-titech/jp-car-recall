@@ -1,0 +1,9 @@
+T1	Argument 0 36	燃料パイプと燃料ホースの継ぎ手部（クイックコネクター）の嵌合作業が不適切
+T2	Connective 37 39	ため
+T4	Connective 76 80	そのため
+T5	Argument 81 92	嵌合部より燃料が漏れる
+R1	RESULT Arg1:T4 Arg2:T5	
+R4	REASON Arg1:T2 Arg2:T1	
+T3	Argument 50 70	クイックコネクターが正しく嵌合していない
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	

@@ -1,0 +1,21 @@
+T1	Argument 0 22	燃料ポンプの制御コンピュータの耐水性が不十分
+T2	Connective 23 25	ため
+T3	Argument 26 42	当該コンピュータ内部に水分が浸入
+T4	Connective 43 44	、
+T5	Argument 44 46	腐食
+T6	Connective 54 58	そのため
+T7	Argument 59 71	燃料ポンプの吐出圧が低下
+T8	Connective 72 73	、
+T9	Argument 79 83	エンスト
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 73 75	最悪
+T11	Connective 76 78	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T9	

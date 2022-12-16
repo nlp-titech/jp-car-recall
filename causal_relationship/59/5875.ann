@@ -1,0 +1,31 @@
+T1	Argument 26 41	燃料ホースのゴムの材質が不適切
+T2	Argument 49 76	カシメ部品（ソケット）の設計時のバラツキの考慮が不十分
+T3	Connective 77 79	ため
+T4	Argument 79 105	燃料ホースとジョイント部が適切に組み付けられていない
+T5	Argument 116 124	ゴムの材質不適切
+T6	Connective 124 127	により
+T7	Argument 127 133	弾力性が低下
+T8	Connective 135 136	と
+T9	Argument 136 142	カシメが緩む
+T10	Connective 142 144	ため
+T11	Argument 145 150	燃料が漏れ
+T12	Connective 150 151	、
+T13	Argument 151 153	最悪
+T14	Connective 154 156	場合
+T15	Argument 157 164	車両火災に至る
+R1	REASON Arg1:T3 Arg2:T2	
+R2	REASON Arg1:T3 Arg2:T1	
+R3	RESULT Arg1:T3 Arg2:T4	
+T16	Connective 110 111	。
+R4	REASON Arg1:T16 Arg2:T4	
+R5	RESULT Arg1:T16 Arg2:T9	
+R6	REASON Arg1:T6 Arg2:T5	
+R7	RESULT Arg1:T6 Arg2:T7	
+R8	REASON Arg1:T8 Arg2:T7	
+R9	RESULT Arg1:T8 Arg2:T9	
+R10	REASON Arg1:T10 Arg2:T9	
+R11	RESULT Arg1:T10 Arg2:T11	
+R12	REASON Arg1:T12 Arg2:T11	
+R13	RESULT Arg1:T12 Arg2:T15	
+R14	CONDITION Arg1:T14 Arg2:T13	
+R15	RESULT Arg1:T14 Arg2:T15	

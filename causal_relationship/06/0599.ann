@@ -1,0 +1,23 @@
+T1	Argument 0 34	騒音防止装置の消音器（マフラ）において、当該マフラの内部構造が不適切
+T2	Argument 38 58	走行中の排出ガス温度および原動機の振動等
+T3	Argument 61 74	当該マフラの内部部品が損傷
+T4	Argument 76 81	異音が発生
+T5	Argument 99 118	排出ガス入口パイプの溶接部に亀裂が生じ
+T6	Argument 119 127	排出ガスが漏れる
+T7	Connective 35 37	ため
+T8	Connective 58 61	により
+T9	Connective 75 76	て
+T11	Connective 118 119	、
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T3	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R9	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	
+T12	Argument 83 97	そのままの状態で使用を続ける
+T13	Connective 97 98	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T5	
+R7	RESULT Arg1:T9 Arg2:T5	

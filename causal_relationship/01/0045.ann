@@ -1,0 +1,29 @@
+T1	Argument 0 47	エンジンスタータ（始動機）のスタータモータへの電流を通電・遮断するための開閉器の内部に水が侵入
+T2	Argument 49 54	接点が錆び
+T3	Argument 55 62	作動不良となる
+T4	Argument 84 89	接点の発熱
+T5	Argument 92 112	スタータモータへの電流が遮断できなくなり
+T6	Argument 119 126	スタータが焼損
+T7	Connective 48 49	、
+T8	Connective 54 55	て
+T9	Connective 89 92	により
+T10	Connective 112 113	、
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+T11	Connective 67 68	。
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+R9	REASON Arg1:T10 Arg2:T5	
+R10	RESULT Arg1:T10 Arg2:T6	
+T12	Connective 82 83	と
+T15	Argument 68 82	そのままの状態で使用を続ける
+R11	CONDITION Arg1:T12 Arg2:T15	
+R12	RESULT Arg1:T12 Arg2:T4	
+T19	Connective 116 118	場合
+T20	Argument 113 115	最悪
+R13	CONDITION Arg1:T19 Arg2:T20	
+R14	RESULT Arg1:T19 Arg2:T6	

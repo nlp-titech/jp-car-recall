@@ -1,0 +1,25 @@
+T1	Argument 9 32	燃料ポンプフィルターフランジの取付位置が不適切
+T2	Connective 33 35	ため
+T5	Argument 36 55	当該フランジ部が雨水等の被水により劣化
+T6	Connective 63 67	そのため
+T7	Argument 68 79	フランジ部の強度が低下
+T8	Connective 80 81	、
+T9	Argument 81 95	そのままの状態で使用を続ける
+T10	Connective 95 96	と
+T11	Argument 97 102	燃料の圧力
+T12	Connective 102 105	により
+T13	Argument 105 116	フランジ部に亀裂が生じ
+T14	Connective 116 117	、
+T15	Argument 117 129	亀裂部位から燃料が漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T13	
+R9	CONDITION Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R2	RESULT Arg1:T2 Arg2:T5	

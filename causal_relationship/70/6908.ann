@@ -1,0 +1,21 @@
+T1	Argument 0 18	揺動用センターシャフトの加工が不適切
+T2	Argument 22 51	シャフトを固定するエンドプレートとシャフトの間に隙間が生じ
+T3	Connective 19 21	ため
+T4	Connective 58 62	そのため
+T5	Argument 63 73	そのまま使用を続ける
+T6	Connective 73 74	と
+T7	Argument 75 85	締め付けボルトが緩み
+T8	Argument 86 88	最悪
+T9	Connective 85 86	、
+T10	Connective 89 91	場合
+T11	Argument 92 106	ボルトとエンドプレートが脱落
+R1	REASON Arg1:T3 Arg2:T1	
+R2	RESULT Arg1:T3 Arg2:T2	
+R3	REASON Arg1:T4 Arg2:T2	
+R4	CONDITION Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	RESULT Arg1:T4 Arg2:T7	
+R7	REASON Arg1:T9 Arg2:T7	
+R8	CONDITION Arg1:T10 Arg2:T8	
+R9	RESULT Arg1:T9 Arg2:T11	
+R10	RESULT Arg1:T10 Arg2:T11	

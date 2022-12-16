@@ -1,0 +1,11 @@
+T1	Argument 0 44	制動装置において、ブレーキ配管の左前輪用と後輪用ブレーキパイプの継手部の組み付けに不適切
+T2	Argument 53 83	ＡＢＳ（アンチロックブレーキシステム）が作動するような急制動
+T3	Argument 85 96	滑りやすい路面での制動
+T4	Argument 98 108	車両安定性が悪くなる
+T5	Connective 50 52	ため
+T6	Connective 96 97	時
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T4	
+R3	CONDITION Arg1:T6 Arg2:T2	
+R4	CONDITION Arg1:T6 Arg2:T3	
+R5	RESULT Arg1:T6 Arg2:T4	

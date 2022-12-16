@@ -1,0 +1,28 @@
+T1	Argument 0 17	窓ふき器において、電気回路が不適切
+T3	Argument 21 44	窓ふき器作動中に作動速度を停止位置付近で切替え
+T4	Argument 47 66	電気回路内のリレー接点間で電圧差が生じ
+T5	Argument 67 74	スパークが発生
+T6	Argument 87 98	電気回路に過電流が流れ
+T7	Argument 99 106	ヒューズが溶損
+T8	Argument 110 119	リレーの接点が溶着
+T9	Argument 121 131	窓ふき器が作動しない
+T10	Connective 18 20	ため
+T12	Connective 45 46	際
+T13	Connective 66 67	、
+T14	Connective 82 86	そのため
+T15	Connective 98 99	て
+T16	Connective 120 121	、
+R1	REASON Arg1:T10 Arg2:T1	
+R5	CONDITION Arg1:T12 Arg2:T3	
+R6	RESULT Arg1:T12 Arg2:T4	
+R7	REASON Arg1:T13 Arg2:T4	
+R8	RESULT Arg1:T13 Arg2:T5	
+R9	REASON Arg1:T14 Arg2:T5	
+R10	RESULT Arg1:T14 Arg2:T6	
+R11	REASON Arg1:T15 Arg2:T6	
+R12	RESULT Arg1:T15 Arg2:T7	
+R13	RESULT Arg1:T15 Arg2:T8	
+R14	REASON Arg1:T16 Arg2:T8	
+R15	RESULT Arg1:T16 Arg2:T9	
+R2	RESULT Arg1:T10 Arg2:T4	
+R16	REASON Arg1:T16 Arg2:T7	

@@ -1,0 +1,39 @@
+T1	Argument 0 56	後２軸トラックの後後軸（非駆動軸）ブレーキドラム裏側に装着されている泥水浸入防止板（ダストカバー）の形状が不適切
+T2	Connective 57 59	ため
+T3	Argument 60 79	雨天時等に泥水がブレーキドラム内に浸入
+T5	Connective 79 80	し
+T7	Argument 80 116	ブレーキのホイールシリンダを伝って内側のハブオイルシールリテーナ部へ滴下
+T8	Connective 119 123	そのため
+T9	Argument 124 138	そのままの状態で使用を続ける
+T10	Connective 138 139	と
+T11	Argument 139 148	リテーナに錆が発生
+T12	Connective 149 150	て
+T13	Argument 151 160	オイルシールが摩耗
+T14	Connective 161 162	、
+T15	Argument 162 170	ハブ内に水が浸入
+T16	Connective 171 172	て
+T17	Argument 173 175	最悪
+T18	Connective 176 178	場合
+T19	Argument 179 190	ハブベアリングが焼付い
+T20	Connective 190 191	て
+T21	Argument 192 196	車両火災
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T5 Arg2:T3	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T11	
+R9	CONDITION Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	REASON Arg1:T14 Arg2:T13	
+R13	RESULT Arg1:T12 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R15	REASON Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T19	
+R17	CONDITION Arg1:T18 Arg2:T17	
+R18	RESULT Arg1:T18 Arg2:T19	
+R19	REASON Arg1:T20 Arg2:T19	
+R20	RESULT Arg1:T20 Arg2:T21	
+R4	RESULT Arg1:T5 Arg2:T7	
+T4	Argument 201 206	脱輪に至る
+R5	RESULT Arg1:T20 Arg2:T4	

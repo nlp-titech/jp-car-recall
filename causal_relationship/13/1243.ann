@@ -1,0 +1,25 @@
+T1	Argument 0 34	コンビネーションメータ裏側にある発電機起動回路のプリント基板が不適切
+T4	Argument 57 67	プリント基板の熱膨張
+T5	Connective 67 70	により
+T6	Argument 71 84	パターンに過大な応力が発生
+T7	Connective 85 86	、
+T10	Argument 94 96	断線
+T11	Connective 104 108	そのため
+T14	Argument 109 124	始動時に発電機が起動しなくなり
+T15	Connective 124 125	、
+T16	Argument 125 127	最悪
+T17	Connective 128 130	場合
+T19	Argument 131 149	走行中エンストし再始動ができなくなる
+T20	Connective 35 37	ため
+R1	REASON Arg1:T20 Arg2:T1	
+R4	REASON Arg1:T5 Arg2:T4	
+R5	RESULT Arg1:T5 Arg2:T6	
+R6	RESULT Arg1:T20 Arg2:T4	
+R7	REASON Arg1:T7 Arg2:T6	
+R8	RESULT Arg1:T7 Arg2:T10	
+R11	REASON Arg1:T11 Arg2:T10	
+R14	RESULT Arg1:T11 Arg2:T14	
+R15	REASON Arg1:T15 Arg2:T14	
+R16	CONDITION Arg1:T17 Arg2:T16	
+R17	RESULT Arg1:T17 Arg2:T19	
+R18	RESULT Arg1:T15 Arg2:T19	

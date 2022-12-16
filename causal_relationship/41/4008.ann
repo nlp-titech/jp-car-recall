@@ -1,0 +1,21 @@
+T1	Argument 0 62	ディーゼル車の排出ガス発散防止装置において、フロントパイプに取り付けられている尿素水インジェクタ固定用フランジの材質が不適切
+T2	Argument 66 67	錆
+T3	Argument 70 77	フランジが亀裂
+T4	Argument 79 81	脱落
+T5	Argument 94 106	尿素水インジェクタも脱落
+T6	Argument 108 124	排出ガスが基準値を満足しなくなる
+T7	Connective 63 65	ため
+T8	Connective 67 70	により
+T9	Connective 78 79	て
+T10	Connective 89 93	そのため
+T11	Connective 107 108	、
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T5	
+R9	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	

@@ -1,0 +1,41 @@
+T1	Argument 20 44	トルクコンバータのスプライン部の設計評価が不適切
+T2	Connective 45 47	ため
+T3	Argument 48 54	長期間の走行
+T4	Connective 76 77	、
+T5	Connective 54 57	により
+T6	Argument 57 75	スペーサ及びフランジの合わせ面が摩耗
+T7	Argument 77 92	フランジ固定ボルトの軸力が低下
+T8	Connective 93 94	て
+T9	Argument 94 96	緩む
+T10	Connective 102 106	そのため
+T11	Argument 107 121	そのままの状態で使用を続ける
+T12	Connective 121 122	と
+T13	Argument 123 131	当該ボルトが脱落
+T14	Connective 132 133	て
+T15	Argument 134 136	最悪
+T16	Connective 137 139	場合
+T17	Argument 140 147	フランジが外れ
+R1	RESULT Arg1:T16 Arg2:T17	
+R2	CONDITION Arg1:T16 Arg2:T15	
+R3	RESULT Arg1:T14 Arg2:T17	
+R4	REASON Arg1:T14 Arg2:T13	
+R5	RESULT Arg1:T12 Arg2:T13	
+R6	CONDITION Arg1:T12 Arg2:T11	
+R7	RESULT Arg1:T10 Arg2:T13	
+R8	REASON Arg1:T10 Arg2:T9	
+R9	RESULT Arg1:T8 Arg2:T9	
+R10	REASON Arg1:T8 Arg2:T7	
+R11	RESULT Arg1:T4 Arg2:T7	
+R12	REASON Arg1:T4 Arg2:T6	
+R13	RESULT Arg1:T5 Arg2:T6	
+R14	REASON Arg1:T5 Arg2:T3	
+R15	RESULT Arg1:T2 Arg2:T6	
+R16	REASON Arg1:T2 Arg2:T1	
+T27	Argument 148 162	動力伝達することができなくな
+T28	Connective 147 148	、
+R17	REASON Arg1:T28 Arg2:T17	
+R18	RESULT Arg1:T28 Arg2:T27	
+T29	Argument 163 170	走行不能となる
+T30	Connective 162 163	り
+R19	REASON Arg1:T30 Arg2:T27	
+R20	RESULT Arg1:T30 Arg2:T29	

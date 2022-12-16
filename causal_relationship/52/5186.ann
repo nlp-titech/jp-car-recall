@@ -1,0 +1,29 @@
+T2	Connective 60 62	ため
+T3	Argument 63 91	ピストンを支えるガイド・ディスクが正しく圧入されておらず
+T4	Connective 91 92	、
+T5	Argument 92 100	正常な油圧を出力
+T6	Connective 110 114	そのため
+T7	Argument 115 130	圧力センサーが圧力の異常を感知
+T8	Connective 131 132	て
+T9	Argument 133 144	緊急対応用の機能が作動
+T10	Connective 145 146	、
+T11	Argument 146 166	倍力作用が得られない油圧回路に切り替わる
+T13	Connective 166 168	ため
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T13 Arg2:T11	
+T1	Argument 1 59	電子制御式油圧ブレーキ（ブレーキペダル操作量を検知して油圧の量を制御する制動装置）の油圧ポンプピストンの加工が不適切
+R1	REASON Arg1:T2 Arg2:T1	
+T15	Argument 176 188	ブレーキの効きが悪くなる
+R14	RESULT Arg1:T13 Arg2:T15	
+T12	Argument 169 174	通常の踏力
+T14	Connective 174 176	では
+R12	CONDITION Arg1:T14 Arg2:T12	
+R13	RESULT Arg1:T14 Arg2:T15	

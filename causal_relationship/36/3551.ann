@@ -1,0 +1,17 @@
+T1	Argument 18 54	操舵力を検出するトルクセンサーと電気配線の接続部の端子かしめ方法が不適切
+T2	Connective 55 57	ため
+T3	Argument 58 65	導通不良が発生
+T4	Connective 73 77	そのため
+T5	Argument 78 84	警告灯が点灯
+T6	Connective 106 107	、
+T7	Argument 107 120	ステアリングの操作力が増大
+R1	RESULT Arg1:T6 Arg2:T7	
+R2	REASON Arg1:T6 Arg2:T9	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	REASON Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T2 Arg2:T3	
+R6	REASON Arg1:T2 Arg2:T1	
+T8	Connective 85 86	て
+T9	Argument 86 105	パワーステアリングのアシスト機能が停止
+R7	REASON Arg1:T8 Arg2:T5	
+R8	RESULT Arg1:T8 Arg2:T9	

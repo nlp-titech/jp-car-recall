@@ -1,0 +1,21 @@
+T1	Argument 0 30	ホーンスイッチをステアリングに締結しているボルトの強度が不足
+T2	Connective 40 44	そのため
+T3	Argument 45 58	極低温下でエアバッグが展開
+T4	Connective 60 61	際
+T5	Argument 62 77	その圧力により当該ボルトが破断
+T6	Connective 78 79	、
+T7	Argument 79 99	ホーンスイッチがステアリングから飛び出し
+T8	Connective 99 100	、
+T9	Argument 100 102	最悪
+T10	Connective 103 105	場合
+T11	Argument 106 115	乗員に危害を与える
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T11	
+R9	CONDITION Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	

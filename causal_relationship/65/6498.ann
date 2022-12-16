@@ -1,0 +1,29 @@
+T1	Argument 33 86	蒸発ガスを燃料蒸発ガス発散抑止装置（キャニスター）から原動機に送るホース（パージエアホース）の配索が不適切
+T2	Connective 87 89	ため
+T3	Argument 90 105	当該ホースが電源ケーブルと干渉
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 113 117	そのため
+T5	Argument 118 125	走行時の振動等
+T6	Connective 125 128	により
+T7	Argument 128 134	ホースが損傷
+T8	Connective 135 136	て
+T9	Argument 136 149	損傷箇所から蒸発ガスが漏れ
+T10	Connective 149 150	、
+T11	Argument 150 170	漏れた蒸発ガスが触媒等の高温部位にかかる
+T12	Connective 170 171	と
+T13	Argument 172 174	最悪
+T14	Connective 175 177	場合
+T15	Argument 178 183	火災に至る
+R3	RESULT Arg1:T14 Arg2:T15	
+R4	CONDITION Arg1:T14 Arg2:T13	
+R5	RESULT Arg1:T12 Arg2:T15	
+R6	CONDITION Arg1:T12 Arg2:T11	
+R7	RESULT Arg1:T10 Arg2:T11	
+R8	REASON Arg1:T10 Arg2:T9	
+R9	RESULT Arg1:T8 Arg2:T9	
+R10	REASON Arg1:T8 Arg2:T7	
+R11	RESULT Arg1:T6 Arg2:T7	
+R12	REASON Arg1:T6 Arg2:T5	
+R13	RESULT Arg1:T4 Arg2:T7	
+R14	REASON Arg1:T4 Arg2:T3	

@@ -1,0 +1,27 @@
+T1	Argument 14 40	ベントバルブにおいて、組付け時の接着剤の塗布量が多い
+T2	Connective 45 46	、
+T3	Argument 46 62	当該バルブ内部の弁の機能が損なわ
+T4	Connective 63 64	て
+T5	Argument 64 82	燃料タンク内の圧力調整ができなくなり
+T6	Connective 82 83	、
+T7	Argument 83 90	内圧が低くなる
+T8	Connective 90 91	と
+T9	Argument 101 107	原動機の停止
+T10	Argument 112 119	内圧が高くなる
+T11	Connective 119 120	と
+T12	Argument 120 136	キャブレータから燃料漏れを起こす
+R1	RESULT Arg1:T6 Arg2:T7	
+R2	RESULT Arg1:T6 Arg2:T10	
+R3	CONDITION Arg1:T11 Arg2:T10	
+R4	RESULT Arg1:T11 Arg2:T12	
+R5	CONDITION Arg1:T8 Arg2:T7	
+R6	RESULT Arg1:T8 Arg2:T9	
+T13	Argument 91 98	燃料の供給不足
+T14	Connective 98 101	による
+R7	REASON Arg1:T14 Arg2:T13	
+R8	RESULT Arg1:T14 Arg2:T9	
+R9	REASON Arg1:T6 Arg2:T5	
+R10	REASON Arg1:T4 Arg2:T3	
+R11	RESULT Arg1:T4 Arg2:T5	
+R12	REASON Arg1:T2 Arg2:T1	
+R13	RESULT Arg1:T2 Arg2:T3	

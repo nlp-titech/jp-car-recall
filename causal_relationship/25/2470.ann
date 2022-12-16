@@ -1,0 +1,17 @@
+T1	Argument 0 46	セミトレーラ及びポールトレーラに使用している車軸において、使用環境に対する強度の余裕が少ない
+T2	Connective 46 48	ため
+T3	Argument 57 69	スピンドル部に亀裂が発生
+T4	Connective 77 81	そのため
+T5	Argument 104 109	車軸が折損
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T8	Argument 82 96	そのままの状態で使用を続ける
+T9	Connective 96 97	と
+T10	Argument 98 100	最悪
+T11	Connective 101 103	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	
+R8	RESULT Arg1:T9 Arg2:T5	

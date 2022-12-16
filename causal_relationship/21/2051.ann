@@ -1,0 +1,13 @@
+T1	Connective 47 49	ため
+T2	Argument 1 43	駐車ブレーキにおいて、ブレーキペダル及びケーブルを固定しているブラケットの強度が不足
+T3	Argument 58 68	当該ブラケットが変形
+T4	Connective 76 80	そのため
+T5	Argument 81 89	駐車制動力が低下
+R1	REASON Arg1:T1 Arg2:T2	
+R2	RESULT Arg1:T1 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 50 57	繰り返しの操作
+T7	Connective 57 58	で
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	

@@ -1,0 +1,15 @@
+T1	Argument 0 22	制動装置において、ブレーキホースの強度が不足
+T2	Argument 29 44	ホースかしめ部より油漏れが発生
+T3	Argument 52 67	ブレーキ油量・油圧警告灯が点灯
+T4	Argument 73 79	制動力が低下
+T5	Connective 26 28	ため
+T6	Connective 45 46	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	RESULT Arg1:T6 Arg2:T4	
+T7	Argument 46 48	最悪
+T8	Connective 49 51	場合
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T3	

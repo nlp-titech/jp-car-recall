@@ -1,0 +1,13 @@
+T1	Argument 0 36	後席左右の座席ベルトにおいて、車体に固定している取付ボルトに締め付け不足
+T2	Connective 42 44	ため
+T3	Argument 45 65	衝突時等極端に大きな荷重がベルトにかかっ
+T4	Connective 66 68	場合
+T5	Argument 69 82	当該ボルトが車体からはずれ
+T6	Connective 82 83	、
+T7	Argument 83 94	乗員を拘束できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

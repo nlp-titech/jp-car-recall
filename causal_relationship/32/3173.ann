@@ -1,0 +1,17 @@
+T1	Argument 0 55	７速ＤＣＴ型自動変速機を搭載した車両において、トランスミッションドライバユニット（ＴＤＵ）のプログラムが不適切
+T2	Connective 56 58	ため
+T3	Argument 59 108	車両起動時にギヤチェンジ用アクチュエータの出力を監視している２種類のＩＣ間でクロック精度に差があり
+T4	Connective 108 109	、
+T5	Argument 109 134	起動準備が完了しているにもかかわらず未完了と誤判断
+T6	Connective 142 146	そのため
+T7	Argument 147 172	メータディスプレイのトランスミッション警告灯が点滅
+T8	Argument 174 195	「トランスミッション点検」の表示が点灯する
+R3	RESULT Arg1:T6 Arg2:T7	
+R4	REASON Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T5	
+R6	REASON Arg1:T4 Arg2:T3	
+R7	RESULT Arg1:T2 Arg2:T3	
+R8	REASON Arg1:T2 Arg2:T1	
+T12	Argument 200 211	駐車状態から起動しなく
+R9	RESULT Arg1:T6 Arg2:T12	
+R1	RESULT Arg1:T6 Arg2:T8	

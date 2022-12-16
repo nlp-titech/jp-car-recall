@@ -1,0 +1,9 @@
+T2	Connective 27 29	ため
+T3	Argument 30 43	使用過程で当該ボルトが損傷
+T4	Connective 44 45	、
+T5	Argument 45 64	サイドスタンド使用中にオートバイが転倒
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T1	Argument 0 23	サイドスタンドにおいて、取付ボルトの強度が不足
+R1	REASON Arg1:T2 Arg2:T1	

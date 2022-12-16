@@ -1,0 +1,5 @@
+T1	Argument 0 37	大型バスにおいて、右側後写鏡横の車体に取り付けられた、導風板の形状が不適切
+T2	Connective 38 40	ため
+T3	Argument 41 55	全幅が２．５メートルを超える
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

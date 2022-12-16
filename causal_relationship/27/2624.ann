@@ -1,0 +1,37 @@
+T1	Argument 0 27	高所作業車の架装において、シャシスペーサの形状が不適切
+T2	Connective 28 30	ため
+T3	Argument 31 67	シャシフレームへ取り付ける栓溶接の位置がシャシフレームフランジ端面に近い
+R1	REASON Arg1:T2 Arg2:T1	
+T4	Connective 73 77	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T8	Connective 148 149	、
+T9	Argument 165 170	亀裂が進行
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Connective 171 172	、
+T11	Argument 178 188	シャシフレームが折損
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T6	Argument 78 97	高所作業をするためにアウトリガをセット
+T5	Connective 121 122	、
+T7	Argument 134 147	シャシフレームに亀裂が発生
+R6	RESULT Arg1:T5 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+T12	Connective 99 100	際
+T13	Argument 101 121	キャビン等の荷重がシャシフレームに加わり
+R4	CONDITION Arg1:T12 Arg2:T6	
+R5	RESULT Arg1:T12 Arg2:T13	
+R12	REASON Arg1:T5 Arg2:T13	
+R11	RESULT Arg1:T4 Arg2:T13	
+R2	RESULT Arg1:T2 Arg2:T3	
+T14	Argument 149 163	そのままの状態で使用を続ける
+T15	Connective 163 164	と
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T9	
+T16	Argument 172 174	最悪
+T17	Connective 175 177	場合
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T11	
+T18	Connective 131 134	により
+T19	Argument 122 131	当該作業の繰り返し
+R17	REASON Arg1:T18 Arg2:T19	
+R18	RESULT Arg1:T18 Arg2:T7	

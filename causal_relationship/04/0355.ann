@@ -1,0 +1,33 @@
+T1	Argument 0 50	原動機の始動装置において、スターターモータ指導用電磁スイッチのバッテリーからの電気端子の組立に不適切
+T2	Argument 75 93	当該端子部の絶縁用樹脂ブッシュが劣化
+T3	Argument 95 103	ひび割れを起こし
+T4	Argument 118 126	当該端子部で短絡
+T5	Argument 141 150	電磁スイッチが焼損
+T6	Argument 152 160	原動機室内が延焼
+T7	Connective 56 58	ため
+T8	Connective 94 95	て
+T9	Connective 103 104	、
+T10	Connective 134 135	、
+T11	Connective 151 152	、
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T5	
+R9	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	
+T20	Argument 104 117	塩分等を含んだ液体がかかる
+T21	Connective 117 118	と
+R11	CONDITION Arg1:T21 Arg2:T20	
+R12	RESULT Arg1:T21 Arg2:T4	
+T12	Argument 59 73	そのままの状態で使用を続ける
+T13	Connective 73 74	と
+R13	CONDITION Arg1:T13 Arg2:T12	
+R14	RESULT Arg1:T13 Arg2:T2	
+T14	Argument 135 137	最悪
+T15	Connective 138 140	場合
+R15	CONDITION Arg1:T15 Arg2:T14	
+R16	RESULT Arg1:T15 Arg2:T6	

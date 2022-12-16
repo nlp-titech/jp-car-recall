@@ -1,0 +1,30 @@
+T1	Argument 12 33	コンピューターの電気配線の固定方法が不適切
+T2	Connective 34 36	ため
+T3	Argument 37 70	当該配線がラジエータマウント部、ラジエータファンシュラウド部と干渉
+T4	Connective 78 82	そのため
+T5	Argument 106 119	電気配線の被服が損傷・短絡
+T6	Connective 120 121	て
+T7	Argument 121 128	ヒューズが溶断
+T8	Argument 136 151	原動機が停止し再始動不能となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T9	Connective 129 130	、
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+T10	Argument 83 93	そのまま使用を続ける
+T11	Connective 93 94	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	
+T12	Argument 95 102	走行時の振動等
+T13	Connective 102 105	により
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T5	
+T14	Argument 130 132	最悪
+T15	Connective 133 135	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T8	
+#1	AnnotatorNotes T5	誤字「被覆」

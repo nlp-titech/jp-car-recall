@@ -1,0 +1,29 @@
+T2	Connective 32 34	ため
+T3	Argument 47 70	当該ケーブルとガイドローラの摺動抵抗が高くなる
+T4	Connective 76 80	そのため
+T5	Argument 93 100	ケーブルが摩耗
+T6	Argument 108 110	切損
+T7	Argument 113 127	駐車ブレーキが作用しなくなる
+T8	Connective 101 102	、
+T9	Connective 111 112	て
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T8 Arg2:T5	
+R6	RESULT Arg1:T8 Arg2:T6	
+R7	REASON Arg1:T9 Arg2:T6	
+R8	RESULT Arg1:T9 Arg2:T7	
+T10	Argument 35 45	駐車ブレーキの操作時
+T11	Connective 45 46	に
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	
+T12	Argument 81 91	そのまま使用を続ける
+T13	Connective 91 92	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T5	
+T14	Argument 102 104	最悪
+T15	Connective 105 107	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T6	
+T1	Argument 0 31	駐車ブレーキ・ケーブルにおいて、ガイドローラの取付構造が不適切
+R1	REASON Arg1:T2 Arg2:T1	

@@ -1,0 +1,37 @@
+T1	Argument 0 28	ターボチャージャー内部のスラストベアリングの形状が不適切
+T2	Connective 29 31	ため
+T3	Argument 40 55	スラストベアリング部が潤滑不良
+T4	Argument 58 62	異常摩耗
+T5	Connective 57 58	り
+T6	Connective 70 74	そのため
+T7	Argument 75 95	ターボチャージャーのシャフトにガタが生じ
+T8	Connective 95 96	て
+T9	Argument 96 105	エンジン出力が低下
+T10	Argument 107 113	潤滑油が漏れ
+T11	Connective 113 114	て
+T12	Argument 114 119	油圧が低下
+T14	Argument 139 153	エンジンが再始動できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T15	Argument 32 38	エンジン始動
+T16	Connective 38 40	時に
+R3	CONDITION Arg1:T16 Arg2:T15	
+R4	RESULT Arg1:T16 Arg2:T3	
+R5	REASON Arg1:T5 Arg2:T3	
+R6	RESULT Arg1:T5 Arg2:T4	
+R7	REASON Arg1:T6 Arg2:T4	
+R8	RESULT Arg1:T6 Arg2:T7	
+R9	REASON Arg1:T8 Arg2:T7	
+R10	RESULT Arg1:T8 Arg2:T9	
+R11	RESULT Arg1:T8 Arg2:T10	
+R12	REASON Arg1:T11 Arg2:T10	
+R13	RESULT Arg1:T11 Arg2:T12	
+T17	Argument 127 136	フェールセーフ制御
+T18	Connective 136 139	により
+R16	REASON Arg1:T18 Arg2:T17	
+R17	RESULT Arg1:T18 Arg2:T14	
+T19	Argument 121 123	最悪
+T20	Connective 124 126	場合
+R18	CONDITION Arg1:T20 Arg2:T19	
+R19	RESULT Arg1:T20 Arg2:T14	
+R14	RESULT Arg1:T8 Arg2:T14	

@@ -1,0 +1,21 @@
+T1	Argument 0 31	動力伝達装置の電子制御式変速装置のシフトフォークの製造が不適切
+T2	Argument 57 69	当該シフトフォークが折損
+T3	Argument 77 115	変速操作スイッチでニュートラル位置にしていても変速ギヤが噛み合った状態のまま
+T4	Argument 118 125	車両が動き出す
+T5	Connective 32 34	ため
+T6	Connective 76 77	、
+T7	Connective 115 118	となり
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 35 49	そのままの状態で使用を続ける
+T9	Connective 49 50	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T2	
+T10	Argument 51 53	最悪
+T11	Connective 54 56	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T2	

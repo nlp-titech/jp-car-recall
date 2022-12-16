@@ -1,0 +1,29 @@
+T1	Argument 0 47	前輪緩衝装置のロアアームとナックルアームを連結しているボールジョイント内部の組付け工程が不適切
+T2	Connective 48 50	ため
+T3	Argument 51 64	ジョイント球面部に傷がつい
+T4	Connective 71 75	そのため
+T5	Argument 76 86	そのまま使用を続ける
+T6	Connective 86 87	と
+T7	Argument 88 105	ボールジョイントの摩耗が早期に進行
+T8	Connective 106 107	て
+T9	Argument 107 112	ガタが増大
+T10	Connective 113 114	、
+T11	Argument 114 116	最悪
+T12	Connective 117 119	場合
+T13	Argument 120 140	ボールジョイントがナックルアームから外れ
+T14	Connective 140 141	、
+T15	Argument 141 148	走行不能に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	CONDITION Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T7	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	CONDITION Arg1:T12 Arg2:T11	
+R10	RESULT Arg1:T12 Arg2:T13	
+R11	REASON Arg1:T10 Arg2:T9	
+R12	RESULT Arg1:T10 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	

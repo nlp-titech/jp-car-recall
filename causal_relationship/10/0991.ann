@@ -1,0 +1,32 @@
+T1	Argument 0 26	トランスミッションのステアポンプ駆動部の構造が不適切
+T2	Connective 27 29	ため
+T3	Argument 30 58	当該駆動部（ドライブスリーブ部）に潤滑油が供給されにくく
+T4	Argument 59 69	そのまま使用を続ける
+T5	Connective 69 70	と
+T7	Connective 96 100	そのため
+T8	Argument 101 103	最悪
+T9	Connective 104 106	場合
+T6	Argument 71 88	ドライブスリーブのスプラインが摩耗
+T10	Argument 107 134	ステアポンプとブレーキアシストポンプが駆動できなくなり
+T11	Argument 146 158	駐車ブレーキが解除されず
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T12	Connective 58 59	、
+R3	REASON Arg1:T12 Arg2:T3	
+R4	RESULT Arg1:T12 Arg2:T6	
+R5	CONDITION Arg1:T5 Arg2:T4	
+R6	RESULT Arg1:T5 Arg2:T6	
+R7	REASON Arg1:T7 Arg2:T6	
+R8	RESULT Arg1:T7 Arg2:T10	
+R9	RESULT Arg1:T7 Arg2:T11	
+R10	CONDITION Arg1:T9 Arg2:T8	
+R11	RESULT Arg1:T9 Arg2:T10	
+R12	RESULT Arg1:T9 Arg2:T11	
+T18	Argument 134 138	操舵不能
+T19	Argument 158 165	走行不能に至る
+T20	Connective 133 134	り
+T21	Connective 157 158	ず
+R13	REASON Arg1:T20 Arg2:T10	
+R14	RESULT Arg1:T20 Arg2:T18	
+R15	REASON Arg1:T21 Arg2:T11	
+R16	RESULT Arg1:T21 Arg2:T19	

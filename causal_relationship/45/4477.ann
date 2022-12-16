@@ -1,0 +1,17 @@
+T1	Argument 0 32	右ハンドル車において、ブレーキ倍力装置の負圧ホースの成形が不適切
+T2	Connective 33 35	ため
+T3	Argument 36 77	当該ホースの中間に取り付けられたチェックバルブ（逆流防止弁）の取付部に負荷がかかっ
+T4	Connective 77 78	て
+T5	Argument 78 80	折損
+T6	Connective 81 82	、
+T7	Argument 82 97	ブレーキ倍力装置が働かなくなり
+T8	Connective 97 98	、
+T9	Argument 98 117	通常の踏力ではブレーキの効きが悪くなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	

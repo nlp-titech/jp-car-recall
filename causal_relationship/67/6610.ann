@@ -1,0 +1,9 @@
+T1	Argument 8 33	すれ違い用前照灯の光軸調整機器のプログラムが不適切
+T2	Connective 34 36	ため
+T3	Argument 37 52	光軸調整が適切に行われていない
+T4	Connective 58 62	そのため
+T5	Argument 63 86	光軸の向きが保安基準第３２条の基準に適合しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

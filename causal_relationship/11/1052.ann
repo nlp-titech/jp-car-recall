@@ -1,0 +1,33 @@
+T1	Argument 0 18	車両中央部の電気配線の組付けが不適切
+T2	Connective 24 26	ため
+T3	Argument 27 36	配線が車体に挟まれ
+T4	Connective 45 49	そのため
+T5	Argument 50 64	そのままの状態で使用を続ける
+T6	Connective 64 65	と
+T7	Argument 66 75	走行中の車体の振動
+T8	Connective 75 78	により
+T9	Argument 79 89	当該配線の被覆が損傷
+T10	Connective 93 94	、
+T11	Argument 94 96	最悪
+T12	Connective 97 99	場合
+T13	Argument 100 105	配線が焼損
+T14	Connective 106 107	、
+T15	Argument 107 114	走行不能に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	CONDITION Arg1:T6 Arg2:T5	
+R5	REASON Arg1:T8 Arg2:T7	
+R6	RESULT Arg1:T4 Arg2:T9	
+R7	RESULT Arg1:T6 Arg2:T9	
+R8	RESULT Arg1:T8 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+T16	Connective 89 90	、
+T17	Argument 90 92	短絡
+R15	REASON Arg1:T16 Arg2:T9	
+R16	RESULT Arg1:T16 Arg2:T17	
+R9	REASON Arg1:T10 Arg2:T17	

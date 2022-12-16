@@ -1,0 +1,5 @@
+T1	Argument 0 36	後付カスタマイズパーツにおいて、装飾カバーを灯火器類やシートベルトに装着
+T2	Argument 40 47	保安基準に抵触
+T3	Connective 38 39	と
+R1	CONDITION Arg1:T3 Arg2:T1	
+R2	RESULT Arg1:T3 Arg2:T2	

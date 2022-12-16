@@ -1,0 +1,25 @@
+T1	Argument 0 53	走行装置において、後輪ロックスクリュー（ホイールベアリングナットの緩みを防止するためのネジ）の締付力が不足
+T2	Argument 75 86	ロックスクリューが緩む
+T3	Argument 107 122	ホイールベアリングナットが緩み
+T4	Argument 129 135	車輪が外れる
+T5	Connective 62 64	ため
+T6	Connective 91 92	、
+T7	Connective 122 123	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T10	Connective 72 75	により
+T11	Argument 65 72	走行時の振動等
+R7	REASON Arg1:T10 Arg2:T11	
+R8	RESULT Arg1:T10 Arg2:T2	
+T8	Argument 92 106	そのままの状態で使用を続ける
+T9	Connective 106 107	と
+R9	CONDITION Arg1:T9 Arg2:T8	
+R10	RESULT Arg1:T9 Arg2:T3	
+T12	Argument 123 125	最悪
+T13	Connective 126 128	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T4	

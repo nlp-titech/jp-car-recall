@@ -1,0 +1,5 @@
+T2	Connective 69 73	そのため
+T3	Argument 74 93	排出ガスの排出量が保安基準に適合しない
+R1	RESULT Arg1:T2 Arg2:T3	
+T1	Argument 20 63	一酸化炭素等発散防止装置の装置型式指定を受けた際に認められた排気圧力の範囲を超えている
+R2	REASON Arg1:T2 Arg2:T1	

@@ -1,0 +1,9 @@
+T1	Argument 15 32	エアバッグモジュールの製造が不適切
+T2	Connective 33 35	ため
+T3	Argument 36 52	衝突時にエアバッグの展開が不充分
+T4	Connective 55 56	、
+T5	Argument 56 66	乗員保護性能が損なう
+R1	RESULT Arg1:T4 Arg2:T5	
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T3	
+R4	REASON Arg1:T2 Arg2:T1	

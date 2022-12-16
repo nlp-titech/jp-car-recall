@@ -1,0 +1,33 @@
+T1	Argument 17 50	アフタークーラとエンジン間のホースを留めるバンドの組み付けが不適切
+T2	Connective 51 53	ため
+T3	Argument 54 90	バンドの締め付けボルトが燃料フィルタとサプライポンプ間の燃料ホースと接触
+T4	Connective 98 102	そのため
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 118 129	燃料ホースの被覆が損傷
+T6	Connective 130 131	、
+T7	Argument 147 157	燃料ホースに穴が開き
+T8	Connective 157 158	、
+T9	Argument 158 163	燃料が漏れ
+T10	Connective 163 164	、
+T11	Argument 170 175	火災に至る
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 103 114	エンジン稼働中の振動等
+T13	Connective 114 117	により
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T5	
+T14	Argument 131 145	そのままの状態で使用を続ける
+T15	Connective 145 146	と
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T7	
+T19	Argument 164 166	最悪
+T20	Connective 167 169	場合
+R15	CONDITION Arg1:T20 Arg2:T19	
+R16	RESULT Arg1:T20 Arg2:T11	

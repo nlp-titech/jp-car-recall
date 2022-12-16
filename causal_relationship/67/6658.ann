@@ -1,0 +1,21 @@
+T1	Argument 0 29	乗員保護装置制御モジュールにおいて、制御プログラムが不適切
+T2	Connective 30 32	ため
+T3	Argument 33 44	過大な電気負荷がかかっ
+T4	Connective 45 47	場合
+T5	Argument 48 69	アクティブ・ヘッドレスト用の電子回路が破損
+T6	Connective 77 81	そのため
+T7	Argument 96 114	アクティブ・ヘッドレストが作動しない
+T8	Argument 87 92	衝撃を受け
+T9	Connective 93 94	際
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T7	
+T10	Argument 82 84	追突
+T11	Connective 84 87	による
+R9	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T8	

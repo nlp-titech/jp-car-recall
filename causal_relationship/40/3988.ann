@@ -1,0 +1,25 @@
+T1	Argument 4 25	ドアラッチにおいて、構成部品の製造が不適切
+T2	Argument 29 40	部品の精度が規格を外れ
+T3	Argument 49 56	気温が高くなる
+T4	Argument 57 70	ロック機構の動きが悪くなる
+T5	Argument 81 94	乗降扉が確実にロックされず
+T6	Argument 95 97	最悪
+T8	Argument 101 111	運行中に乗降扉が開く
+T9	Connective 26 28	ため
+T10	Connective 48 49	、
+T11	Connective 56 57	と
+T12	Connective 76 80	そのため
+T13	Connective 94 95	、
+T14	Connective 98 100	場合
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T2	
+R3	REASON Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T4	
+R5	CONDITION Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+R7	REASON Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T5	
+R9	REASON Arg1:T13 Arg2:T5	
+R11	CONDITION Arg1:T14 Arg2:T6	
+R10	RESULT Arg1:T13 Arg2:T8	
+R12	RESULT Arg1:T14 Arg2:T8	

@@ -1,0 +1,21 @@
+T1	Argument 26 46	スプロケットボルトの締め付け作業が不適切
+T2	Connective 47 49	ため
+T3	Argument 50 62	仮締め状態で組みつけられ
+T4	Connective 68 69	、
+T5	Argument 81 93	走行中に当該ボルトが緩み
+T6	Connective 93 94	、
+T7	Argument 100 107	エンジンが破損
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 69 79	そのまま使用を続ける
+T9	Connective 79 80	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 94 96	最悪
+T11	Connective 97 99	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T7	

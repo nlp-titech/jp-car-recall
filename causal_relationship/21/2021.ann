@@ -1,0 +1,29 @@
+T1	Argument 0 54	アンチロックブレーキシステム（ＡＢＳ）の前輪の回転速度を検出するセンサ部において、前回のリコール対策が不十分
+T2	Connective 58 60	ため
+T3	Connective 82 86	そのため
+T4	Argument 61 70	飛び石などが当たり
+T5	Argument 87 99	車輪からの信号が得られず
+T6	Connective 107 108	、
+T7	Argument 108 110	最悪
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T4	
+R3	REASON Arg1:T3 Arg2:T11	
+R4	RESULT Arg1:T3 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T14	
+R6	RESULT Arg1:T6 Arg2:T9	
+T8	Connective 111 113	場合
+T9	Argument 124 130	制動力が低下
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T12	Argument 114 120	低速走行状態
+T13	Connective 120 124	において
+R9	CONDITION Arg1:T13 Arg2:T12	
+R10	RESULT Arg1:T13 Arg2:T9	
+T14	Argument 99 106	ＡＢＳが誤作動
+T15	Connective 98 99	ず
+R11	RESULT Arg1:T15 Arg2:T14	
+R12	REASON Arg1:T15 Arg2:T5	
+T10	Connective 69 70	り
+T11	Argument 70 72	変形
+R13	REASON Arg1:T10 Arg2:T4	
+R14	RESULT Arg1:T10 Arg2:T11	

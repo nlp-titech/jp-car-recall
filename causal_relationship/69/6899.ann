@@ -1,0 +1,9 @@
+T1	Connective 31 33	ため
+T2	Argument 0 30	エンジン制御コントロールユニットの速度制御プログラムが不適切
+T3	Connective 79 81	場合
+T4	Argument 34 78	運転者が速度の抑制を作動させるアクセルペダルスイッチに不正な改造及び意図的な操作を行なっ
+T5	Argument 82 107	速度抑制装置（スピードリミッタ）の作動が解除される
+R1	REASON Arg1:T1 Arg2:T2	
+R2	RESULT Arg1:T1 Arg2:T5	
+R3	CONDITION Arg1:T3 Arg2:T4	
+R4	RESULT Arg1:T3 Arg2:T5	

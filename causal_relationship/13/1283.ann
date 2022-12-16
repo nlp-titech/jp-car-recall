@@ -1,0 +1,21 @@
+T1	Argument 0 33	アクセルペダルに装着されているリターンスプリングの製造方法が不適切
+T2	Connective 34 36	ため
+T3	Argument 37 46	フック部に傷がつい
+T4	Connective 55 59	そのため
+T5	Argument 60 70	そのまま使用を続ける
+T6	Connective 70 71	と
+T7	Argument 72 82	当該スプリングが折損
+T8	Argument 83 104	アクセルペダルが踏込まれたまま戻らなくなり
+T9	Connective 104 105	、
+T10	Argument 105 119	エンジン回転が下がらなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	CONDITION Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	RESULT Arg1:T4 Arg2:T7	
+T11	Connective 82 83	し
+R7	REASON Arg1:T11 Arg2:T7	
+R8	RESULT Arg1:T11 Arg2:T8	
+R9	REASON Arg1:T9 Arg2:T8	
+R10	RESULT Arg1:T9 Arg2:T10	

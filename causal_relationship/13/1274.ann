@@ -1,0 +1,29 @@
+T1	Argument 0 33	大型観光バスにおいて、⑤原動機制御コンピュータのプログラムが不適切
+T2	Connective 34 36	ため
+T5	Argument 37 50	緩加速時に黒煙排出量が増加
+T6	Connective 58 62	そのため
+T7	Argument 63 77	そのままの状態で使用を続ける
+T8	Connective 77 78	と
+T9	Argument 79 101	粒子状物質除去装置のクリーナに煤が大量に堆積
+T10	Connective 102 103	、
+T11	Argument 103 105	最悪
+T12	Connective 106 108	場合
+T15	Argument 109 125	強制再生時にクリーナの温度が上昇
+T16	Argument 127 132	装置が損傷
+T17	Connective 126 127	、
+T18	Connective 133 134	て
+T19	Argument 134 146	排出ガス値が基準を超える
+R1	REASON Arg1:T2 Arg2:T1	
+R3	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T9	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	CONDITION Arg1:T12 Arg2:T11	
+R10	REASON Arg1:T10 Arg2:T9	
+R11	RESULT Arg1:T10 Arg2:T15	
+R12	RESULT Arg1:T12 Arg2:T15	
+R15	REASON Arg1:T17 Arg2:T15	
+R16	RESULT Arg1:T17 Arg2:T16	
+R17	REASON Arg1:T18 Arg2:T16	
+R18	RESULT Arg1:T18 Arg2:T19	

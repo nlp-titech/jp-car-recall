@@ -1,0 +1,33 @@
+T1	Argument 6 41	車両積込み作業用アンダーミラーにおいて、ミラーブラケットの形状が不適切
+T2	Argument 45 52	走行時の振動等
+T3	Argument 55 65	溶接部に亀裂が生じる
+T4	Argument 76 90	そのままの状態で使用を続ける
+T5	Argument 92 97	亀裂が進行
+T6	Argument 99 101	最悪
+T8	Argument 109 117	当該ミラーが脱落
+T9	Argument 119 127	他の交通を妨げる
+T10	Connective 42 44	ため
+T11	Connective 52 55	により
+T12	Connective 71 75	そのため
+T13	Connective 90 91	と
+T14	Connective 98 99	、
+T15	Connective 102 104	場合
+T17	Connective 118 119	て
+R1	REASON Arg1:T10 Arg2:T1	
+R3	REASON Arg1:T11 Arg2:T2	
+R4	REASON Arg1:T12 Arg2:T3	
+R5	RESULT Arg1:T11 Arg2:T3	
+R7	CONDITION Arg1:T13 Arg2:T4	
+R8	RESULT Arg1:T13 Arg2:T5	
+R9	REASON Arg1:T14 Arg2:T5	
+R11	CONDITION Arg1:T15 Arg2:T6	
+R15	REASON Arg1:T17 Arg2:T8	
+R16	RESULT Arg1:T17 Arg2:T9	
+R12	RESULT Arg1:T15 Arg2:T8	
+R2	RESULT Arg1:T10 Arg2:T3	
+R6	RESULT Arg1:T12 Arg2:T5	
+R10	RESULT Arg1:T14 Arg2:T8	
+T7	Argument 105 108	走行中
+T16	Connective 108 109	に
+R13	CONDITION Arg1:T16 Arg2:T7	
+R14	RESULT Arg1:T16 Arg2:T8	

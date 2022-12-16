@@ -1,0 +1,17 @@
+T1	Argument 0 45	道路維持作業用自動車に備える黄色点滅灯において、反射鏡を回転させるメインギアの製造バラツキ
+T2	Connective 45 48	により
+T3	Argument 49 55	低温時に収縮
+T4	Connective 56 57	て
+T5	Argument 57 82	メインギア内径と電球ソケットボスとの隙間が無くなる
+T6	Connective 88 92	その場合
+T7	Argument 93 111	メインギアおよび反射鏡が動かなくなる
+T8	Connective 111 113	ため
+T9	Argument 114 125	点滅灯が点滅しなくなる
+R1	RESULT Arg1:T8 Arg2:T9	
+R2	REASON Arg1:T8 Arg2:T7	
+R3	RESULT Arg1:T6 Arg2:T7	
+R4	CONDITION Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T5	
+R6	REASON Arg1:T4 Arg2:T3	
+R7	RESULT Arg1:T2 Arg2:T3	
+R8	REASON Arg1:T2 Arg2:T1	

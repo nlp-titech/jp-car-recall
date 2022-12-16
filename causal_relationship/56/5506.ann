@@ -1,0 +1,21 @@
+T1	Argument 0 38	製造工程において、前席座席ベルト巻き取り装置の取り付けボルトにシール剤が付着
+T3	Argument 59 67	当該ボルトが緩み
+T4	Argument 68 70	最悪
+T5	Argument 74 76	衝突
+T6	Argument 79 97	座席ベルトが正しく乗員を保護できない
+T7	Connective 46 50	そのため
+T9	Connective 67 68	、
+T10	Connective 71 73	場合
+T11	Connective 76 79	時等に
+R1	REASON Arg1:T7 Arg2:T1	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T6	
+R7	CONDITION Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T6	
+R9	CONDITION Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	
+R2	RESULT Arg1:T7 Arg2:T3	
+T2	Argument 51 55	使用過程
+T8	Connective 55 59	において
+R3	CONDITION Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	

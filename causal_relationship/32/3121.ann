@@ -1,0 +1,19 @@
+T1	Argument 0 36	無段変速機（ＣＶＴ）のセレクトレバーにおいて、表皮成形設備の治具が不適切
+T2	Connective 37 39	ため
+T3	Argument 40 55	セレクトボタンとの嵌合部が削れ
+T4	Connective 61 62	、
+T5	Argument 62 78	セレクトボタン操作時に嵌合が外れ
+T6	Connective 78 79	て
+T7	Argument 80 96	セレクトボタンが操作できなくなる
+T8	Connective 103 107	このため
+T9	Argument 108 123	Ｐレンジからシフトできなくなる
+R1	RESULT Arg1:T8 Arg2:T9	
+R2	REASON Arg1:T8 Arg2:T7	
+R3	RESULT Arg1:T6 Arg2:T7	
+R4	REASON Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T5	
+R6	REASON Arg1:T4 Arg2:T3	
+R7	RESULT Arg1:T2 Arg2:T3	
+R8	REASON Arg1:T2 Arg2:T1	
+T10	Argument 128 146	ＰおよびＲレンジにシフトできなくなる
+R9	RESULT Arg1:T8 Arg2:T10	

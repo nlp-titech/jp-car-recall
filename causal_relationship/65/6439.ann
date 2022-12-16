@@ -1,0 +1,21 @@
+T2	Connective 37 39	ため
+T3	Argument 40 57	使用過程において、当該ボルトが腐食
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 65 69	そのため
+T5	Argument 70 81	当該ボルトの強度が低下
+T6	Connective 82 83	て
+T7	Argument 83 85	破損
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Connective 90 91	、
+T9	Argument 91 108	ロアアームとホイールキャリアが分離
+T10	Connective 109 110	、
+T11	Argument 110 126	ハンドル操作が正常に行えなくなる
+R7	RESULT Arg1:T10 Arg2:T11	
+R8	REASON Arg1:T10 Arg2:T9	
+R9	RESULT Arg1:T8 Arg2:T9	
+R10	REASON Arg1:T8 Arg2:T7	
+T1	Argument 0 36	フロントロアアームにおいて、ボールジョイントのボルト部の防錆設計が不適切
+R1	REASON Arg1:T2 Arg2:T1	

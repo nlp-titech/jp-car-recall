@@ -1,0 +1,37 @@
+T1	Argument 7 41	油圧配管において、当該配管を固定しているブラケットの強度検討が不適切
+T2	Argument 53 57	疲労破壊
+T3	Argument 65 79	そのままの状態で使用を続ける
+T4	Argument 81 86	配管の振動
+T5	Argument 89 102	接続コネクタのナットが緩み
+T6	Argument 103 109	油が漏れ出し
+T7	Argument 110 112	最悪
+T8	Argument 116 125	当該コネクタが外れ
+T9	Argument 127 141	走行モータを駆動できなくなる
+T10	Connective 42 44	ため
+T11	Connective 79 80	と
+T12	Connective 86 89	により
+T13	Connective 102 103	、
+T14	Connective 109 110	、
+T15	Connective 113 115	場合
+T16	Connective 125 126	て
+R1	REASON Arg1:T10 Arg2:T1	
+R2	RESULT Arg1:T10 Arg2:T2	
+R3	CONDITION Arg1:T11 Arg2:T3	
+R5	RESULT Arg1:T11 Arg2:T5	
+R6	REASON Arg1:T12 Arg2:T4	
+R7	RESULT Arg1:T12 Arg2:T5	
+R8	REASON Arg1:T13 Arg2:T5	
+R9	RESULT Arg1:T13 Arg2:T6	
+R10	REASON Arg1:T14 Arg2:T6	
+R11	RESULT Arg1:T14 Arg2:T8	
+R12	CONDITION Arg1:T15 Arg2:T7	
+R13	RESULT Arg1:T15 Arg2:T8	
+R14	REASON Arg1:T16 Arg2:T8	
+R15	RESULT Arg1:T16 Arg2:T9	
+T17	Connective 50 53	により
+T18	Argument 45 50	走行振動等
+R16	REASON Arg1:T17 Arg2:T18	
+R17	RESULT Arg1:T17 Arg2:T2	
+T19	Connective 64 65	。
+R4	RESULT Arg1:T19 Arg2:T5	
+R18	REASON Arg1:T19 Arg2:T2	

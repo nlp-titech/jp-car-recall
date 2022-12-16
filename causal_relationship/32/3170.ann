@@ -1,0 +1,11 @@
+T1	Argument 0 36	動力伝達装置の変速部において、走行制御系コントローラのプログラムが不適切
+T2	Connective 37 39	ため
+T3	Argument 40 51	走行中に意図しない変速
+R1	RESULT Arg1:T2 Arg2:T3	
+R2	REASON Arg1:T2 Arg2:T1	
+T4	Argument 60 62	低下
+T5	Argument 53 58	速度が増加
+T6	Connective 52 53	し
+R3	REASON Arg1:T6 Arg2:T3	
+R4	RESULT Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T6 Arg2:T4	

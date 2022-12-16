@@ -1,0 +1,17 @@
+T1	Argument 0 48	排気管を縦型に改造した車両において、排気管出口に取付けている雨水浸入防止バルブの固定方法が不適切
+T2	Connective 49 51	ため
+T3	Argument 58 70	当該バルブ固定金具が抜け
+T4	Connective 79 83	そのため
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 84 98	そのままの状態で使用を続ける
+R4	RESULT Arg1:T4 Arg2:T7	
+T6	Connective 98 99	と
+T7	Argument 100 107	当該部品が落下
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 52 57	排気の圧力
+T9	Connective 57 58	で
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	

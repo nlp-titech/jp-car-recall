@@ -1,0 +1,9 @@
+T1	Argument 0 8	車両が低速で衝突
+T2	Connective 10 12	場合
+T3	Argument 33 52	オイルクーラーの上部パイプ取付部が損傷
+T4	Connective 53 54	、
+T5	Argument 54 61	潤滑油が漏れる
+R1	CONDITION Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

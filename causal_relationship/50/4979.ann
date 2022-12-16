@@ -1,0 +1,17 @@
+T1	Argument 11 19	保護回路が不適切
+T2	Connective 20 22	ため
+T3	Argument 37 63	配線に短絡等が発生した場合に保護ヒューズが溶断しない
+T4	Connective 68 69	、
+T5	Argument 69 75	配線部が発熱
+T6	Connective 76 77	、
+T7	Argument 83 88	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 77 79	最悪
+T9	Connective 80 82	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T7	

@@ -1,0 +1,21 @@
+T1	Argument 0 35	ステアリングのジョイントシャフトのパワステユニットへの挿入作業が不適切
+T2	Connective 36 38	ため
+T3	Argument 39 63	当該シャフトと当該ユニットとの噛み合い代が不十分
+T4	Connective 70 74	そのため
+T5	Argument 74 84	そのまま使用を続ける
+T6	Connective 84 85	と
+T7	Argument 86 95	当該シャフトが摩耗
+T8	Connective 96 97	て
+T9	Argument 97 105	噛み合わなくなり
+T10	Connective 105 106	、
+T11	Argument 106 119	ハンドル操作ができなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	CONDITION Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	RESULT Arg1:T4 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	

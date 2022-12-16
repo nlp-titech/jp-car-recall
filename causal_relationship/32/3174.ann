@@ -1,0 +1,9 @@
+T1	Argument 0 55	７速ＤＣＴ型自動変速機を搭載した車両において、トランスミッションドライバユニット（ＴＤＵ）のプログラムが不適切
+T2	Connective 56 58	ため
+T5	Argument 59 92	車両起動時にプログラムが立ち上がる際、起動に必要な一部データを消去
+T6	Connective 103 107	そのため
+R2	REASON Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T2 Arg2:T5	
+R6	REASON Arg1:T2 Arg2:T1	
+T8	Argument 108 133	パワースイッチを押しても駐車状態から起動しなくなる
+R1	RESULT Arg1:T6 Arg2:T8	

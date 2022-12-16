@@ -1,0 +1,13 @@
+T1	Argument 0 30	救急車の自動変速機において、オイルクーラホースの締結力が不足
+T2	Connective 39 41	ため
+T3	Argument 42 50	当該ホースが外れ
+T4	Connective 57 58	、
+T5	Argument 58 66	走行できなくなる
+R1	RESULT Arg1:T4 Arg2:T5	
+R2	REASON Arg1:T4 Arg2:T7	
+R3	RESULT Arg1:T2 Arg2:T3	
+R4	REASON Arg1:T2 Arg2:T1	
+T6	Connective 50 51	て
+T7	Argument 51 57	オイルが漏れ
+R5	REASON Arg1:T6 Arg2:T3	
+R6	RESULT Arg1:T6 Arg2:T7	

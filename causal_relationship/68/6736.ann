@@ -1,0 +1,9 @@
+T1	Argument 0 30	エンジンの燃料供給制御プログラムにおいて、仕様地設定が不適切
+T2	Connective 31 33	ため
+T3	Argument 34 48	誤った仕様地プログラムが設定
+T4	Connective 54 58	そのため
+T5	Argument 59 76	ＮＯｘの排出量が基準値を満たさない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

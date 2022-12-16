@@ -1,0 +1,5 @@
+T1	Argument 0 47	前後席一体型頭部エアバッグ装置を装着した車両において、後部側面衝突センサの配線組み付けが不適切
+T2	Connective 48 50	ため
+T5	Argument 51 75	当該エアバッグが作動する状況において作動が遅れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	

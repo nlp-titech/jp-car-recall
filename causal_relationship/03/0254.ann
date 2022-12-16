@@ -1,0 +1,21 @@
+T1	Argument 0 47	原動機において、タイミングベルトの張力を維持する部品（オートテンショナ）に振動吸収性能が不十分
+T2	Argument 72 90	当該オートテンショナの外部ばねが折損
+T3	Argument 92 103	タイミングベルトが緩み
+T4	Argument 110 116	原動機が停止
+T5	Connective 53 55	ため
+T6	Connective 91 92	て
+T7	Connective 103 104	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 56 70	そのままの状態で使用を続ける
+T9	Connective 70 71	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T2	
+T10	Argument 104 106	最悪
+T11	Connective 107 109	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T4	

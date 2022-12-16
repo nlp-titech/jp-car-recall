@@ -1,0 +1,27 @@
+T1	Argument 0 58	運転者席の上部にあるルーフにおいて、ルーフを取付けるルーフフレームと支柱を固定するボルトに平座金が取付けられていない
+T2	Connective 58 60	ため
+T4	Argument 61 73	締付けによる座面のへたり
+T3	Connective 92 93	、
+T5	Argument 99 105	ボルトの折損
+T6	Connective 114 117	により
+T7	Argument 118 124	ルーフが脱落
+R1	REASON Arg1:T2 Arg2:T1	
+T12	Argument 75 85	使用過程における振動
+T13	Connective 85 86	で
+T14	Argument 86 92	ボルトが緩み
+T15	Argument 108 114	ボルトの脱落
+T16	Argument 93 95	最悪
+T17	Connective 96 98	場合
+R5	REASON Arg1:T13 Arg2:T12	
+R6	RESULT Arg1:T13 Arg2:T14	
+R7	RESULT Arg1:T2 Arg2:T14	
+R8	REASON Arg1:T3 Arg2:T14	
+R10	RESULT Arg1:T3 Arg2:T5	
+R11	RESULT Arg1:T3 Arg2:T15	
+R12	CONDITION Arg1:T17 Arg2:T16	
+R13	RESULT Arg1:T17 Arg2:T5	
+R14	RESULT Arg1:T17 Arg2:T15	
+R15	REASON Arg1:T6 Arg2:T15	
+R16	REASON Arg1:T6 Arg2:T5	
+R17	RESULT Arg1:T6 Arg2:T7	
+R2	REASON Arg1:T13 Arg2:T4	

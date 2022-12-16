@@ -1,0 +1,17 @@
+T1	Argument 50 67	ガス発生剤の密度にばらつきが大きい
+T2	Connective 75 79	このため
+T3	Argument 101 109	正常に展開しない
+T4	Connective 119 120	、
+T5	Argument 128 142	当該インフレータを新品に交換
+R1	RESULT Arg1:T4 Arg2:T5	
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T3	
+R4	REASON Arg1:T2 Arg2:T1	
+T6	Argument 92 100	エアバッグ展開時
+T7	Connective 100 101	に
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 120 125	予防的措置
+T9	Connective 125 128	として
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

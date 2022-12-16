@@ -1,0 +1,37 @@
+T1	Argument 0 39	ＥＤＣトランスミッションのインプットシャフトシールにおいて、材質の選定が不適切
+T2	Connective 40 42	ため
+T3	Argument 43 56	トランスミッション内部の熱
+T4	Connective 56 59	により
+T5	Argument 59 67	当該シールが硬化
+T6	Connective 75 79	そのため
+T7	Argument 80 100	インプットシャフトとの接触面が早期に摩耗
+T8	Connective 101 102	、
+T9	Argument 102 108	気密性が低下
+T10	Connective 109 110	て
+T11	Argument 111 137	トランスミッションオイルがクラッチハウジング側に漏れ
+T12	Connective 137 138	、
+T13	Argument 138 140	最悪
+T14	Connective 141 143	場合
+T15	Argument 152 159	クラッチが滑り
+T16	Connective 159 160	、
+T17	Argument 160 168	走行が困難になる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T15	
+R13	CONDITION Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R15	REASON Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T17	
+T18	Argument 144 151	発進時や登坂時
+T19	Connective 151 152	に
+R17	CONDITION Arg1:T19 Arg2:T18	
+R18	RESULT Arg1:T19 Arg2:T15	

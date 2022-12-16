@@ -1,0 +1,13 @@
+T1	Argument 0 25	前席の背もたれ調整機構のギヤ（ロアー）が、強度不足
+T2	Argument 28 34	ギヤ部が損傷
+T3	Argument 42 50	背もたれが倒れる
+T4	Connective 26 28	ため
+T5	Connective 35 36	、
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	
+T6	Argument 36 38	最悪
+T7	Connective 39 41	場合
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	

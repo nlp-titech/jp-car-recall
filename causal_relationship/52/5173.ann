@@ -1,0 +1,41 @@
+T1	Argument 6 22	燃料供給ホースの取り回しが不適切
+T2	Connective 23 25	ため
+T3	Argument 36 54	当該ホースがアクセル・ケーブルと干渉
+T4	Connective 55 56	、
+T5	Argument 56 58	摩擦
+T6	Argument 61 63	損傷
+T7	Connective 58 61	により
+T8	Connective 71 75	そのため
+T9	Argument 92 103	当該ホースに亀裂が発生
+T10	Argument 105 110	燃料が漏れ
+T11	Connective 104 105	て
+T12	Argument 117 123	排気管に滴下
+T13	Connective 124 125	、
+T14	Argument 125 132	車両火災に至る
+T15	Connective 110 111	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	
+R7	REASON Arg1:T8 Arg2:T6	
+R8	RESULT Arg1:T8 Arg2:T9	
+T16	Argument 26 33	原動機の振動等
+T17	Connective 33 36	により
+R9	REASON Arg1:T17 Arg2:T16	
+R10	RESULT Arg1:T17 Arg2:T3	
+T18	Argument 76 90	そのままの状態で使用を続ける
+T19	Connective 90 91	と
+R11	CONDITION Arg1:T19 Arg2:T18	
+R12	RESULT Arg1:T19 Arg2:T9	
+R13	REASON Arg1:T11 Arg2:T9	
+R14	RESULT Arg1:T11 Arg2:T10	
+R15	REASON Arg1:T15 Arg2:T10	
+R16	RESULT Arg1:T15 Arg2:T12	
+R17	REASON Arg1:T13 Arg2:T12	
+R18	RESULT Arg1:T13 Arg2:T14	
+T20	Argument 111 113	最悪
+T21	Connective 114 116	場合
+R19	CONDITION Arg1:T21 Arg2:T20	
+R20	RESULT Arg1:T21 Arg2:T12	

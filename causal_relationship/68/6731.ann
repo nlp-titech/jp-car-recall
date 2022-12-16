@@ -1,0 +1,9 @@
+T1	Argument 0 36	排出ガス発散防止装置のＮＯｘセンサにおいて、車両への製造組付指示が不適切
+T2	Connective 37 39	ため
+T3	Argument 40 55	誤った仕様のＮＯｘセンサが装着
+T4	Connective 61 65	そのため
+T5	Argument 66 85	ＮＯｘの排出量が基準値を満足しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

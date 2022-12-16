@@ -1,0 +1,21 @@
+T2	Argument 60 78	当該継ぎ手部のクイックコネクタが抜け
+T3	Argument 79 84	燃料が漏れ
+T4	Argument 91 96	火災に至る
+T6	Connective 43 44	、
+T7	Connective 78 79	て
+T8	Connective 84 85	、
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+T1	Argument 0 37	原動機の各気筒に燃料を分配する燃料分配器の両端にある継ぎ手部の嵌合が不十分
+R1	REASON Arg1:T6 Arg2:T1	
+T5	Argument 44 58	そのままの状態で使用を続ける
+T9	Connective 58 59	と
+R7	CONDITION Arg1:T9 Arg2:T5	
+R8	RESULT Arg1:T9 Arg2:T2	
+T10	Argument 85 87	最悪
+T11	Connective 88 90	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T4	

@@ -1,0 +1,21 @@
+T2	Connective 63 65	ため
+T4	Connective 80 84	によって
+T5	Argument 84 92	当該ボルトが折損
+T6	Connective 100 104	そのため
+T7	Argument 105 123	車体よりキャブチルトシリンダがはずれ
+T8	Argument 124 126	最悪
+T9	Connective 127 129	場合
+T10	Connective 123 124	、
+T11	Argument 130 137	キャブが急降下
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	REASON Arg1:T10 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T7	
+R8	CONDITION Arg1:T9 Arg2:T8	
+R9	RESULT Arg1:T9 Arg2:T11	
+R10	RESULT Arg1:T10 Arg2:T11	
+T1	Argument 0 62	大型トラクタのキャブを上げ下げするチルトシリンダにおいて、ロア側取付けボルト及びフランジロックナットの締め付けトルクが不適切
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 66 80	キャブを上げ下げする際の応力
+R2	REASON Arg1:T4 Arg2:T3	

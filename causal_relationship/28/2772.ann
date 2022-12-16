@@ -1,0 +1,29 @@
+T1	Argument 0 57	エンジン制御用リレー等を装着するための電気ボックスの配線固定方法および切り欠き部に装着したエッジゴムの長さが不適切
+T2	Connective 58 60	ため
+T3	Argument 61 80	当該配線が電気ボックスの金属部分に接触
+T4	Connective 88 92	そのため
+T5	Argument 108 118	配線の被覆に傷がつい
+T6	Connective 118 119	て
+T7	Argument 119 130	電気ボックス配線が短絡
+T8	Connective 131 132	、
+T9	Argument 132 138	エンジン停止
+T10	Argument 139 153	ライト不点灯等の不具合が発生
+T12	Argument 161 167	火災にいたる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	RESULT Arg1:T8 Arg2:T10	
+T13	Argument 93 107	そのままの状態で使用を続ける
+T14	Connective 107 108	と
+R12	CONDITION Arg1:T14 Arg2:T13	
+R13	RESULT Arg1:T14 Arg2:T5	
+T15	Argument 155 157	最悪
+T16	Connective 158 160	場合
+R14	CONDITION Arg1:T16 Arg2:T15	
+R15	RESULT Arg1:T16 Arg2:T12	
+R10	RESULT Arg1:T8 Arg2:T12	

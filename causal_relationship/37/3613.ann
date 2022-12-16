@@ -1,0 +1,25 @@
+T1	Argument 0 20	ヒューズボックスの製造プログラムが不適切
+T2	Connective 21 23	ため
+T3	Argument 24 45	ブロアモータ配線の端子部を逆向きに組み付け
+T4	Connective 52 56	そのため
+T6	Connective 86 87	、
+T7	Argument 87 89	最悪
+T8	Connective 90 92	場合
+T9	Argument 93 106	デフロスタが作動しなくなる
+R1	RESULT Arg1:T8 Arg2:T9	
+R2	CONDITION Arg1:T8 Arg2:T7	
+R3	RESULT Arg1:T6 Arg2:T9	
+R6	REASON Arg1:T4 Arg2:T3	
+R7	RESULT Arg1:T2 Arg2:T3	
+R8	REASON Arg1:T2 Arg2:T1	
+T5	Argument 57 68	端子の固定が不十分にな
+T10	Connective 68 69	り
+T11	Argument 69 76	端子がこすられ
+T12	Connective 76 77	て
+T13	Argument 77 84	絶縁物質が生成
+R4	REASON Arg1:T6 Arg2:T13	
+R5	REASON Arg1:T12 Arg2:T11	
+R9	REASON Arg1:T10 Arg2:T5	
+R10	RESULT Arg1:T4 Arg2:T5	
+R11	RESULT Arg1:T10 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	

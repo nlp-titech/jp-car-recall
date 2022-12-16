@@ -1,0 +1,13 @@
+T1	Argument 0 52	制動装置の駐車ブレーキにおいて、左右のブレーキを連動して作動させるためのケーブルアウターウケの強度が不足
+T2	Connective 56 58	ため
+T3	Argument 59 76	繰り返し過大な操作力で使用を続ける
+T4	Connective 76 77	と
+T5	Argument 78 98	当該ケーブルアウターウケのガイド部が破損
+T6	Connective 106 110	そのため
+T7	Argument 111 141	駐車ブレーキペダルを操作しても、駐車ブレーキが作動しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T5	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

@@ -1,0 +1,48 @@
+T1	Argument 0 45	大型トラックにおいて、エンジン制御プログラムと排気ガス再循環（ＥＧＲ）バルブの設定が不適切
+T2	Connective 46 48	ため
+T3	Argument 49 73	ＤＰＲ（排出ガス浄化装置）の手動再生が頻繁に中断
+T4	Connective 76 78	場合
+T5	Argument 80 102	ポスト噴射による燃料がＥＧＲクーラに廻り込み
+T6	Connective 102 103	、
+T7	Argument 103 115	カーボンデポジットが生成
+T8	Connective 127 128	、
+T9	Argument 128 144	そのままの状態で長時間駐車される
+T10	Connective 144 145	と
+T11	Argument 145 160	カーボンデポジットの粘度が増加
+T12	Connective 168 172	そのため
+T13	Argument 173 179	エンジン始動
+T14	Connective 181 182	際
+T15	Argument 183 193	吸気バルブが摺動不良
+T16	Connective 193 196	となり
+T17	Argument 197 199	最悪
+T18	Connective 200 202	場合
+T19	Argument 203 209	バルブが折損
+T20	Connective 210 211	、
+T21	Argument 211 218	異音が発生する
+R1	RESULT Arg1:T20 Arg2:T21	
+R2	REASON Arg1:T20 Arg2:T19	
+R3	RESULT Arg1:T18 Arg2:T19	
+R4	CONDITION Arg1:T18 Arg2:T17	
+R5	RESULT Arg1:T16 Arg2:T21	
+R6	REASON Arg1:T16 Arg2:T15	
+R7	RESULT Arg1:T14 Arg2:T15	
+R8	REASON Arg1:T14 Arg2:T13	
+R9	RESULT Arg1:T12 Arg2:T15	
+R10	REASON Arg1:T12 Arg2:T11	
+R11	RESULT Arg1:T10 Arg2:T11	
+R12	CONDITION Arg1:T10 Arg2:T9	
+R13	RESULT Arg1:T8 Arg2:T11	
+R14	REASON Arg1:T8 Arg2:T23	
+R15	RESULT Arg1:T6 Arg2:T7	
+R16	REASON Arg1:T6 Arg2:T5	
+R18	CONDITION Arg1:T4 Arg2:T3	
+R19	RESULT Arg1:T2 Arg2:T5	
+R20	REASON Arg1:T2 Arg2:T1	
+T22	Argument 222 229	エンジンが停止
+R21	RESULT Arg1:T20 Arg2:T22	
+R24	RESULT Arg1:T16 Arg2:T22	
+R17	RESULT Arg1:T4 Arg2:T5	
+T23	Argument 118 126	吸気バルブに付着
+T24	Connective 117 118	て
+R22	REASON Arg1:T24 Arg2:T7	
+R23	RESULT Arg1:T24 Arg2:T23	

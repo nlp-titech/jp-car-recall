@@ -1,0 +1,13 @@
+T1	Argument 3 48	前照灯を自動的に点灯作動させる装置（オートライト）を装着した車両において、電気回路が不適切
+T2	Argument 52 103	オートライトからの点灯信号が前照灯の自動照射方向調整装置（ヘッドライトオートレベリング）に入力されない
+T3	Argument 135 170	自動照射方向調整装置（ヘッドライトオートレベリング）が正常に作動しない
+T6	Connective 104 108	そのため
+T4	Connective 49 51	ため
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+T5	Argument 109 132	ヘッドライトスイッチを「ＡＵＴＯ」で点灯させた
+T7	Connective 132 134	場合
+R5	CONDITION Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T3	

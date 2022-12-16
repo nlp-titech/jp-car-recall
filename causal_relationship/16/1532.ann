@@ -1,0 +1,25 @@
+T1	Argument 0 38	タンクローリにおいて、タンクとシャシフレームを結合する金具の取付位置が不適切
+T2	Argument 42 62	当該金具取付部付近のフレームに亀裂が発生
+T3	Argument 90 95	亀裂が進行
+T4	Argument 103 110	フレームが折損
+T5	Argument 112 119	走行不能となる
+T6	Connective 39 41	ため
+T7	Connective 70 74	そのため
+T8	Connective 96 97	、
+T9	Connective 111 112	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Connective 89 90	と
+R10	RESULT Arg1:T10 Arg2:T3	
+T11	Argument 97 99	最悪
+T12	Connective 100 102	場合
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T4	
+T13	Argument 75 89	そのままの状態で使用を続ける
+R9	CONDITION Arg1:T10 Arg2:T13	

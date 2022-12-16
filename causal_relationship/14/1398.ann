@@ -1,0 +1,37 @@
+T1	Argument 0 57	スプリング式駐車制動装置において、スプリング室とサービスブレーキ室とを連結する配管の一部（エルボ部）の材質が不適切
+T2	Connective 58 60	ため
+T3	Argument 61 65	経時劣化
+T4	Connective 65 68	により
+T5	Argument 68 73	亀裂が発生
+T6	Connective 74 75	、
+T7	Argument 75 86	スプリング室に水が浸入
+T8	Connective 87 88	、
+T9	Argument 88 97	スプリングが錆びる
+T10	Connective 103 107	そのため
+T11	Argument 108 116	スプリングが折損
+T12	Argument 118 127	ダイヤフラムが損傷
+T13	Connective 117 118	、
+T14	Connective 128 129	て
+T15	Argument 129 134	エアが漏れ
+T16	Connective 134 135	、
+T17	Argument 135 137	最悪
+T18	Connective 138 140	場合
+T19	Argument 141 153	走行中駐車ブレーキが作動
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T13 Arg2:T11	
+R12	RESULT Arg1:T13 Arg2:T12	
+R13	REASON Arg1:T14 Arg2:T12	
+R14	RESULT Arg1:T14 Arg2:T15	
+R15	REASON Arg1:T16 Arg2:T15	
+R16	CONDITION Arg1:T18 Arg2:T17	
+R17	RESULT Arg1:T18 Arg2:T19	
+R18	RESULT Arg1:T16 Arg2:T19	

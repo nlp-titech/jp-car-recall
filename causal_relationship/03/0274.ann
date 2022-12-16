@@ -1,0 +1,30 @@
+T1	Argument 0 37	燃料注入口の減圧弁付燃料フィラーキャップにおいて、減圧弁の構造に一部不適切
+T2	Argument 62 74	減圧弁の気密性が損なわれ
+T4	Argument 104 133	燃料注入口（フィラーネック）内ガイドの溶接位置に一部不適切
+T5	Argument 142 158	対策弁付のフィラーキャップを装着
+T6	Argument 162 182	フィラーネックとの気密が確保できなくなる
+T7	Argument 188 194	燃料が漏れる
+T8	Connective 187 188	、
+T9	Connective 160 161	と
+T10	Connective 139 141	ため
+R1	REASON Arg1:T10 Arg2:T4	
+R2	RESULT Arg1:T10 Arg2:T6	
+R3	CONDITION Arg1:T9 Arg2:T5	
+R4	RESULT Arg1:T9 Arg2:T6	
+R5	REASON Arg1:T8 Arg2:T6	
+R6	RESULT Arg1:T8 Arg2:T7	
+T11	Connective 43 45	ため
+T12	Connective 74 75	、
+R7	REASON Arg1:T11 Arg2:T1	
+R8	RESULT Arg1:T11 Arg2:T2	
+R9	REASON Arg1:T12 Arg2:T2	
+T3	Argument 46 60	そのままの状態で使用を続ける
+T13	Connective 60 61	と
+R11	CONDITION Arg1:T13 Arg2:T3	
+R12	RESULT Arg1:T13 Arg2:T2	
+T14	Argument 75 77	最悪
+T15	Connective 78 80	場合
+T16	Argument 81 94	当該減圧弁より燃料が漏れる
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T16	
+R15	RESULT Arg1:T12 Arg2:T16	

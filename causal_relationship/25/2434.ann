@@ -1,0 +1,11 @@
+T1	Argument 0 48	大型路線バスにおいて、オートマチックトランスミッションに装着されている車速センサーの構造が不適切
+T2	Connective 49 51	ため
+T3	Argument 52 65	当該センサー内の配線が断線
+T4	Connective 66 67	、
+T5	Argument 67 81	速度計が速度を指示しなくなる
+T6	Argument 86 102	運行記録計が速度を記録しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T6	

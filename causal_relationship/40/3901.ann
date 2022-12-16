@@ -1,0 +1,17 @@
+T7	Argument 106 112	加速できない
+T8	Connective 41 43	ため
+T10	Connective 66 68	場合
+T13	Connective 105 106	ず
+R12	RESULT Arg1:T13 Arg2:T7	
+T2	Argument 44 55	低速で減速している状態
+T3	Connective 55 56	で
+T9	Argument 56 65	一定速度以下になっ
+R3	CONDITION Arg1:T10 Arg2:T9	
+R4	CONDITION Arg1:T3 Arg2:T2	
+T1	Argument 18 40	ハイブリッドシステムの制御プログラムが不適切
+R1	REASON Arg1:T8 Arg2:T1	
+T4	Argument 69 106	エンスト防止機能が働きクラッチが切れるが、その後、モータ駆動に切り替わらず
+R2	REASON Arg1:T13 Arg2:T4	
+R5	RESULT Arg1:T10 Arg2:T4	
+R6	RESULT Arg1:T3 Arg2:T4	
+R7	RESULT Arg1:T8 Arg2:T4	

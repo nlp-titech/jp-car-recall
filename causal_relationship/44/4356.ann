@@ -1,0 +1,26 @@
+T1	Argument 0 66	ＡＢＳ（アンチロックブレーキシステム）を装着した車両の後車軸において、ホイールハブとハブベアリング（回転軸受）の嵌め合い寸法が不適切
+T2	Connective 67 69	ため
+T3	Argument 70 95	ホイールハブの車速検出用ロータ取付部に亀裂を生じる
+T4	Connective 100 101	。
+T5	Argument 117 128	当該ロータの位置がずれ
+T6	Connective 128 129	て
+T7	Argument 129 140	ＡＢＳが作動しなくなり
+T9	Argument 147 158	当該ホイールハブが破損
+T10	Connective 159 160	て
+T11	Argument 160 165	後輪が脱落
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 101 115	このままの状態で使用を続ける
+T13	Connective 115 116	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T9	
+T14	Argument 141 143	最悪
+T15	Connective 144 146	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T9	

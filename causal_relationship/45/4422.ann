@@ -1,0 +1,21 @@
+T1	Argument 16 30	バックプレートに強度が不十分
+T2	Connective 36 37	、
+T3	Argument 52 65	バックプレートに亀裂が発生
+T4	Connective 66 67	、
+T5	Argument 73 83	バックプレートが破損
+T6	Connective 84 85	て
+T7	Argument 85 91	制動力が低下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 37 51	このままの状態で使用を続ける
+T9	Connective 51 52	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 67 69	最悪
+T11	Connective 70 72	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	

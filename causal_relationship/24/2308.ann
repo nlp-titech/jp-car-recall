@@ -1,0 +1,17 @@
+T1	Argument 0 53	圧縮天然ガス自動車（ＣＮＧ車）において、①燃料タンク安全弁の材質に対して、組立て工場の燃料充填方法が不適切
+T2	Argument 57 69	安全弁内部に亀裂が生じる
+T4	Argument 96 101	亀裂が進行
+T5	Argument 103 109	燃料が漏れる
+T6	Connective 102 103	、
+T8	Connective 75 79	そのため
+T9	Connective 54 56	ため
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T4	
+R5	REASON Arg1:T6 Arg2:T4	
+R6	RESULT Arg1:T6 Arg2:T5	
+T3	Argument 80 94	そのままの状態で使用を続ける
+T7	Connective 94 95	と
+R7	CONDITION Arg1:T7 Arg2:T3	
+R8	RESULT Arg1:T7 Arg2:T4	

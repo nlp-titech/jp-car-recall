@@ -1,0 +1,31 @@
+T1	Argument 0 34	後輪用主ブレーキにおいて、ホイールシリンダのピストンの防錆性能が不足
+T2	Connective 38 40	ため
+T3	Argument 49 65	外気の水分が当該シリンダ内に侵入
+T4	Connective 67 68	と
+T5	Argument 68 77	ピストンに錆が発生
+T6	Connective 85 89	そのため
+T7	Argument 94 106	ピストンの動きが悪くなる
+T14	Argument 136 138	最悪
+T15	Connective 139 141	場合
+T16	Argument 142 148	制動力が低下
+R1	RESULT Arg1:T15 Arg2:T16	
+R2	CONDITION Arg1:T15 Arg2:T14	
+R3	RESULT Arg1:T6 Arg2:T7	
+R6	REASON Arg1:T6 Arg2:T5	
+R7	RESULT Arg1:T4 Arg2:T5	
+R8	REASON Arg1:T4 Arg2:T3	
+R9	RESULT Arg1:T2 Arg2:T5	
+R10	REASON Arg1:T2 Arg2:T1	
+T17	Connective 106 109	ことで
+T20	Argument 109 118	シールが傷つけられ
+T21	Argument 119 127	ブレーキ液が漏れ
+T22	Argument 128 134	警告灯が点灯
+R13	RESULT Arg1:T17 Arg2:T20	
+R16	REASON Arg1:T17 Arg2:T7	
+T9	Connective 118 119	、
+R11	REASON Arg1:T9 Arg2:T20	
+R12	RESULT Arg1:T9 Arg2:T21	
+T10	Connective 127 128	、
+R4	REASON Arg1:T10 Arg2:T21	
+R5	RESULT Arg1:T10 Arg2:T22	
+R14	RESULT Arg1:T10 Arg2:T16	

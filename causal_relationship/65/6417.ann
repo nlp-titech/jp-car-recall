@@ -1,0 +1,29 @@
+T1	Argument 12 42	ドライブプーリーを固定するナットの締付トルクの設定値が不適切
+T2	Connective 43 45	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T4	Connective 74 78	そのため
+T5	Argument 79 88	プーリーがガタつき
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 89 103	そのままの状態で使用を続ける
+T7	Connective 103 104	と
+T8	Argument 105 119	プーリーのスプライン部が摩耗
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T8	
+T9	Connective 120 121	、
+T10	Argument 121 123	最悪
+T11	Connective 124 126	場合
+R7	REASON Arg1:T9 Arg2:T8	
+R8	CONDITION Arg1:T11 Arg2:T10	
+T12	Argument 127 141	後輪へ動力を伝えられなくなる
+R9	RESULT Arg1:T11 Arg2:T12	
+R10	RESULT Arg1:T9 Arg2:T12	
+T3	Argument 46 49	走行中
+T13	Connective 49 50	、
+T14	Argument 50 68	駆動ベルトから受ける力でナットが緩む
+R2	RESULT Arg1:T13 Arg2:T14	
+R3	REASON Arg1:T4 Arg2:T14	
+R11	CONDITION Arg1:T13 Arg2:T3	
+R12	RESULT Arg1:T2 Arg2:T14	
+T15	Connective 88 89	、
+R13	REASON Arg1:T15 Arg2:T5	
+R14	RESULT Arg1:T15 Arg2:T8	

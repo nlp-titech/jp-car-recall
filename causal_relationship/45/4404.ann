@@ -1,0 +1,14 @@
+T1	Argument 17 30	ブレーキスイッチに製造不良
+T2	Argument 36 52	ブレーキスイッチの取付けに不適切
+T3	Connective 58 60	ため
+T4	Argument 77 98	ブレーキペダルを踏んでも制動灯が点灯しない
+T5	Argument 102 123	ブレーキペダルを離しても制動灯が消灯しない
+R1	REASON Arg1:T3 Arg2:T1	
+R2	REASON Arg1:T3 Arg2:T2	
+R3	RESULT Arg1:T3 Arg2:T4	
+R4	RESULT Arg1:T3 Arg2:T5	
+T6	Argument 61 75	このままの状態で使用を続ける
+T7	Connective 75 76	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T4	
+R7	RESULT Arg1:T7 Arg2:T5	

@@ -1,0 +1,21 @@
+T1	Argument 0 47	ショベルローダの油圧ポンプにおいて、ポンプ駆動軸を固定するスナップリングの組み付け作業が不適切
+T2	Connective 48 50	ため
+T3	Argument 51 68	使用過程において当該駆動軸が抜ける
+T4	Connective 74 78	そのため
+T5	Argument 94 100	作動油が漏れ
+T6	Connective 100 101	、
+T7	Argument 106 113	走行不能になる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 79 93	そのままの状態で使用を続ける
+T9	Connective 93 94	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 101 103	最悪
+T11	Connective 104 106	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T7	

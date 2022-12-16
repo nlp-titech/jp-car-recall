@@ -1,0 +1,33 @@
+T1	Argument 0 17	アクセルケーブルの固定方法が不適切
+T2	Argument 21 40	アクセルケーブルがフレーム上面から落ち
+T3	Argument 78 84	原動機の振動
+T4	Argument 87 99	当該ブレーキパイプが損傷
+T5	Argument 101 109	ブレーキ液が漏れ
+T6	Argument 116 122	制動力が低下
+T7	Connective 18 20	ため
+T8	Connective 61 62	、
+T9	Connective 84 87	により
+T10	Connective 100 101	て
+T11	Connective 109 110	、
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T18	
+R4	RESULT Arg1:T8 Arg2:T4	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T5	
+R9	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	
+T14	Connective 40 41	て
+T18	Argument 41 54	左前輪ブレーキパイプと接触
+R11	REASON Arg1:T14 Arg2:T2	
+R12	RESULT Arg1:T14 Arg2:T18	
+T12	Argument 62 76	そのままの状態で使用を続ける
+T13	Connective 76 77	と
+R13	CONDITION Arg1:T13 Arg2:T12	
+R14	RESULT Arg1:T13 Arg2:T4	
+T15	Argument 110 112	最悪
+T16	Connective 113 115	場合
+R15	CONDITION Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T6	

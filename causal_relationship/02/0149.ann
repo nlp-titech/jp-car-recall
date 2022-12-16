@@ -1,0 +1,13 @@
+T1	Argument 0 48	制動装置において、前後輪のブレーキ液の油圧を制御するプロポーショニングバルブ（ＰＣＶ）に製造不良
+T2	Argument 71 86	当該ＰＣＶからブレーキ液が漏れ
+T3	Argument 87 95	制動距離が伸びる
+T4	Connective 54 55	、
+T5	Connective 86 87	、
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	
+R1	REASON Arg1:T4 Arg2:T1	
+T6	Argument 55 69	そのままの状態で使用を続ける
+T7	Connective 69 70	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T2	

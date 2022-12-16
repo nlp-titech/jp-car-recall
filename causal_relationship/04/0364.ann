@@ -1,0 +1,25 @@
+T1	Argument 9 31	変速操作装置（コラムシフトレバー）に製造不良
+T2	Argument 56 72	当該装置内の樹脂製ホルダーが破損
+T3	Argument 80 92	レバーが作動不良を起こし
+T4	Argument 93 100	変速操作が不能
+T5	Argument 110 117	走行不能となる
+T6	Connective 37 39	ため
+T7	Connective 76 79	により
+T8	Connective 92 93	て
+T9	Connective 103 104	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 40 54	そのままの状態で使用を続ける
+T11	Connective 54 55	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T2	
+T12	Argument 104 106	最悪
+T13	Connective 107 109	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T5	

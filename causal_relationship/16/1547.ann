@@ -1,0 +1,33 @@
+T1	Argument 1 44	．変速装置において、クラッチピストンの回転を止めるピン（慣性止めピン）の突出量が小さい
+T2	Argument 52 71	当該ピストンと当該ピンの面取り部が接触
+T3	Argument 96 102	ピン穴が磨耗
+T4	Argument 103 114	ピストンがピンから外れ
+T5	Argument 115 126	クラッチが切れなくなり
+T6	Argument 133 142	クラッチが焼きつき
+T7	Argument 143 150	走行不能に至る
+T8	Connective 142 143	、
+T9	Connective 126 127	、
+T10	Connective 114 115	、
+T11	Connective 102 103	し
+T12	Connective 79 83	そのため
+T13	Connective 49 51	ため
+R1	REASON Arg1:T13 Arg2:T1	
+R2	RESULT Arg1:T13 Arg2:T2	
+R3	REASON Arg1:T12 Arg2:T2	
+R4	RESULT Arg1:T12 Arg2:T3	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T5	
+R9	REASON Arg1:T9 Arg2:T5	
+R10	RESULT Arg1:T9 Arg2:T6	
+R11	REASON Arg1:T8 Arg2:T6	
+R12	RESULT Arg1:T8 Arg2:T7	
+T14	Argument 84 94	そのまま使用を続ける
+T15	Connective 94 95	と
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T3	
+T16	Argument 127 129	最悪
+T17	Connective 130 132	場合
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T6	

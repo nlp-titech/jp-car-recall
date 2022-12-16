@@ -1,0 +1,29 @@
+T1	Argument 0 65	４輪駆動の消防自動車に自動変速機を搭載した車両において、前軸駆動用プロペラシャフトと自動変速機のオイル配管取付ボルトとの隙間が狭い
+T2	Argument 68 84	急制動等車両前部が大きく沈み込む
+T3	Argument 95 115	当該シャフトとオイル配管取付ボルトが干渉
+T4	Connective 93 94	際
+T5	Connective 65 67	ため
+R1	RESULT Arg1:T5 Arg2:T3	
+R2	RESULT Arg1:T4 Arg2:T3	
+R3	REASON Arg1:T5 Arg2:T1	
+R4	CONDITION Arg1:T4 Arg2:T2	
+T6	Connective 123 127	そのため
+T7	Argument 140 151	プロペラシャフトが損傷
+T8	Argument 159 168	当該シャフトが折損
+T9	Argument 170 177	走行不能に至る
+T10	Connective 169 170	、
+T11	Connective 152 153	、
+R5	REASON Arg1:T6 Arg2:T3	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T11 Arg2:T7	
+R8	RESULT Arg1:T11 Arg2:T8	
+R9	REASON Arg1:T10 Arg2:T8	
+R10	RESULT Arg1:T10 Arg2:T9	
+T12	Argument 128 138	そのまま使用を続ける
+T13	Connective 138 139	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T7	
+T14	Argument 153 155	最悪
+T15	Connective 156 158	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T8	

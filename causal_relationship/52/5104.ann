@@ -1,0 +1,39 @@
+T1	Argument 35 61	５速ロックアップ作動状態を持続して走行できる道路環境
+T2	Connective 62 64	場合
+T5	Argument 77 89	当該ギヤの歯面が異常発熱
+R3	CONDITION Arg1:T2 Arg2:T1	
+R4	RESULT Arg1:T2 Arg2:T5	
+T6	Connective 90 91	、
+T7	Argument 91 99	ギヤの硬度が低下
+T8	Connective 107 111	そのため
+T9	Argument 124 131	当該ギヤが破損
+T10	Connective 132 133	、
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+T12	Connective 154 155	み
+T13	Argument 155 162	走行不能となる
+T14	Argument 133 135	最悪
+T15	Connective 136 138	場合
+R10	CONDITION Arg1:T15 Arg2:T14	
+T16	Argument 112 122	そのまま使用を続ける
+T17	Connective 122 123	と
+R12	CONDITION Arg1:T17 Arg2:T16	
+R13	RESULT Arg1:T17 Arg2:T9	
+R15	RESULT Arg1:T12 Arg2:T13	
+T3	Argument 18 28	２速ギヤの潤滑が不足
+T4	Connective 32 34	ため
+R1	REASON Arg1:T4 Arg2:T3	
+T11	Argument 139 154	破損したギヤが他のギヤに噛みこ
+R11	REASON Arg1:T12 Arg2:T11	
+R14	RESULT Arg1:T10 Arg2:T11	
+R16	RESULT Arg1:T15 Arg2:T11	
+T18	Argument 0 17	自動変速機のロックアップ機構作動時
+T19	Connective 17 18	に
+R17	CONDITION Arg1:T19 Arg2:T18	
+T20	Argument 65 75	２速ギヤへの潤滑不足
+T21	Connective 75 77	から
+R19	REASON Arg1:T21 Arg2:T20	
+R20	RESULT Arg1:T21 Arg2:T5	

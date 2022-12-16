@@ -1,0 +1,13 @@
+T1	Argument 0 35	かじ取り装置のかじ取りハンドルにおいて、当該かじ取りハンドルに強度不足
+T2	Connective 41 42	、
+T3	Argument 42 56	そのままの状態で使用を続ける
+T4	Connective 56 57	と
+T5	Argument 58 77	当該かじ取りハンドルのハブに亀裂が入り
+T6	Connective 77 78	、
+T7	Argument 78 85	操作性が損なわ
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

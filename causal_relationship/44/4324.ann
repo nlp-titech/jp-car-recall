@@ -1,0 +1,25 @@
+T1	Argument 0 19	荷箱後面扉のアルミ製ヒンジの強度が不足
+T2	Connective 23 25	ため
+T3	Argument 43 55	当該ヒンジに亀裂が生じる
+T4	Connective 61 65	そのため
+T5	Argument 72 80	当該ヒンジが破断
+T6	Connective 81 82	て
+T7	Argument 88 99	荷箱から後面扉が外れる
+T8	Argument 83 86	扉解放
+T9	Connective 86 88	時に
+R1	CONDITION Arg1:T9 Arg2:T8	
+R2	RESULT Arg1:T9 Arg2:T7	
+R3	RESULT Arg1:T6 Arg2:T7	
+R4	REASON Arg1:T6 Arg2:T5	
+R5	REASON Arg1:T4 Arg2:T3	
+R6	RESULT Arg1:T4 Arg2:T5	
+T10	Argument 66 68	最悪
+T11	Connective 69 71	場合
+R7	CONDITION Arg1:T11 Arg2:T10	
+R8	RESULT Arg1:T11 Arg2:T5	
+R9	REASON Arg1:T2 Arg2:T1	
+R10	RESULT Arg1:T2 Arg2:T3	
+T12	Argument 26 41	後面扉の開放保持を繰り返し行う
+T13	Connective 41 42	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T3	

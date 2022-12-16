@@ -1,0 +1,29 @@
+T1	Argument 2 64	軌陸車（軌道兼用車等）に改造した車両において、油圧装置及び荷台を架装するためのフレームとブレーキ用エアホースとの隙間が不適切
+T2	Argument 68 75	走行時の振動等
+T3	Argument 78 80	干渉
+T4	Connective 88 92	そのため
+T5	Argument 105 113	当該ホースが損傷
+T6	Argument 115 120	エアが漏れ
+T7	Argument 127 133	制動力が低下
+T8	Connective 120 121	、
+T9	Connective 114 115	、
+T10	Connective 75 78	により
+T11	Connective 65 67	ため
+R1	REASON Arg1:T11 Arg2:T1	
+R2	RESULT Arg1:T11 Arg2:T3	
+R3	REASON Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T3	
+R5	REASON Arg1:T4 Arg2:T3	
+R6	RESULT Arg1:T4 Arg2:T5	
+R7	REASON Arg1:T9 Arg2:T5	
+R8	RESULT Arg1:T9 Arg2:T6	
+R9	REASON Arg1:T8 Arg2:T6	
+R10	RESULT Arg1:T8 Arg2:T7	
+T12	Argument 93 103	そのまま使用を続ける
+T13	Connective 103 104	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T5	
+T14	Argument 121 123	最悪
+T15	Connective 124 126	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T7	

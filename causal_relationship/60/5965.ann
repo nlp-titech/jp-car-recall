@@ -1,0 +1,20 @@
+T1	Argument 0 15	左右の警音器の取付位置が不適切
+T2	Connective 16 18	ため
+T3	Argument 19 32	警音器の開口部から水が浸入
+T4	Connective 36 37	で
+T5	Argument 38 43	音質が低下
+T7	Argument 47 54	電気回路が浸水
+T8	Connective 55 56	て
+T9	Argument 56 74	左右またはいずれかの警音器が作動せず
+T10	Connective 74 75	、
+T11	Argument 75 86	保安基準第４３条に抵触
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T7	
+R6	REASON Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	REASON Arg1:T10 Arg2:T9	
+R9	RESULT Arg1:T10 Arg2:T11	
+R10	REASON Arg1:T10 Arg2:T5	

@@ -1,0 +1,54 @@
+T1	Argument 2 15	電気配線の配索設計が不適切
+T2	Connective 16 18	ため
+T3	Argument 19 35	電気配線がフレームの突起部と干渉
+T4	Connective 45 49	そのため
+T5	Argument 50 64	そのままの状態で使用を続ける
+T6	Connective 64 65	と
+T7	Argument 66 76	電気配線の被覆が摩耗
+T8	Connective 77 78	て
+T9	Argument 78 88	芯線がフレームと短絡
+T10	Connective 89 90	、
+T11	Argument 90 92	最悪
+T12	Connective 93 95	場合
+R2	CONDITION Arg1:T12 Arg2:T11	
+R4	REASON Arg1:T10 Arg2:T9	
+R5	RESULT Arg1:T8 Arg2:T9	
+R6	REASON Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T7	
+R8	CONDITION Arg1:T6 Arg2:T5	
+R9	RESULT Arg1:T4 Arg2:T7	
+R10	REASON Arg1:T4 Arg2:T3	
+R11	RESULT Arg1:T2 Arg2:T3	
+R12	REASON Arg1:T2 Arg2:T1	
+T14	Argument 118 136	スロットルボディホルダの耐熱性が不足
+T15	Argument 143 156	エンジンからの熱により硬化
+T16	Argument 169 183	そのままの状態で使用を続ける
+T17	Argument 185 195	振動により亀裂が発生
+T18	Argument 197 210	亀裂部から空気を過剰に吸入
+T19	Argument 212 218	エンジン不調
+T20	Argument 222 224	最悪
+T22	Connective 140 142	ため
+T23	Connective 164 168	そのため
+T24	Connective 183 184	と
+T25	Connective 196 197	、
+T26	Connective 211 212	て
+T27	Connective 225 227	場合
+T28	Connective 218 221	となり
+R13	REASON Arg1:T22 Arg2:T14	
+R14	RESULT Arg1:T22 Arg2:T15	
+R15	REASON Arg1:T23 Arg2:T15	
+R16	RESULT Arg1:T23 Arg2:T17	
+R17	CONDITION Arg1:T24 Arg2:T16	
+R18	RESULT Arg1:T24 Arg2:T17	
+R19	REASON Arg1:T25 Arg2:T17	
+R20	RESULT Arg1:T25 Arg2:T18	
+R21	REASON Arg1:T26 Arg2:T18	
+R22	RESULT Arg1:T26 Arg2:T19	
+R23	REASON Arg1:T28 Arg2:T19	
+R25	CONDITION Arg1:T27 Arg2:T20	
+T13	Argument 96 107	走行中にエンジンが停止
+R1	RESULT Arg1:T12 Arg2:T13	
+R3	RESULT Arg1:T10 Arg2:T13	
+T21	Argument 228 239	走行中にエンジンが停止
+R24	RESULT Arg1:T27 Arg2:T21	
+R26	RESULT Arg1:T28 Arg2:T21	

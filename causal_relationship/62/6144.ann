@@ -1,0 +1,29 @@
+T1	Argument 29 44	内部基板構成部品の製造が不適切
+T2	Connective 45 47	ため
+T3	Argument 48 75	内部基板上にあるインジェクタ制御部品に過大な電流が流れ
+T4	Connective 75 76	て
+T5	Argument 77 84	当該部品が損傷
+T6	Connective 92 96	そのため
+T7	Argument 97 109	インジェクタを制御できず
+T8	Argument 110 131	イグニッションオンの場合に燃料を噴射し続け
+T9	Connective 131 132	、
+T10	Connective 109 110	、
+T11	Argument 132 143	燃焼に必要な空気が不足
+T12	Connective 144 145	て
+T13	Argument 146 148	最悪
+T14	Connective 149 151	場合
+T15	Argument 152 163	走行中にエンジンが停止
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T10 Arg2:T7	
+R8	RESULT Arg1:T10 Arg2:T8	
+R9	REASON Arg1:T9 Arg2:T8	
+R10	RESULT Arg1:T9 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T15	
+R13	CONDITION Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	

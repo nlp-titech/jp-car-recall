@@ -1,0 +1,33 @@
+T1	Argument 0 48	タンク車の車枠とタンクを接続するボルト（ハンガーボルト）において、締付けトルクの設計指示が不適切
+T2	Argument 52 63	当該ボルトの軸力が不足
+T4	Argument 78 84	走行時の振動
+T5	Argument 87 93	タンクが揺動
+T6	Argument 95 109	そのままの状態で使用を続ける
+T7	Argument 111 125	当該ボルトに過大の応力がかか
+T8	Argument 126 128	折損
+T9	Argument 130 132	最悪
+T11	Argument 136 147	走行時の安定性が損なわ
+T12	Connective 49 51	ため
+T13	Connective 73 77	そのため
+T14	Connective 84 87	により
+T15	Connective 94 95	、
+T16	Connective 109 110	と
+T17	Connective 129 130	、
+T18	Connective 133 135	場合
+R1	REASON Arg1:T12 Arg2:T1	
+R2	RESULT Arg1:T12 Arg2:T2	
+R3	REASON Arg1:T13 Arg2:T2	
+R7	REASON Arg1:T14 Arg2:T4	
+R8	RESULT Arg1:T14 Arg2:T5	
+R9	REASON Arg1:T15 Arg2:T5	
+R11	CONDITION Arg1:T16 Arg2:T6	
+R12	RESULT Arg1:T16 Arg2:T7	
+T21	Connective 125 126	り
+R13	REASON Arg1:T21 Arg2:T7	
+R14	RESULT Arg1:T21 Arg2:T8	
+R15	REASON Arg1:T17 Arg2:T8	
+R17	CONDITION Arg1:T18 Arg2:T9	
+R4	RESULT Arg1:T13 Arg2:T5	
+R10	RESULT Arg1:T15 Arg2:T7	
+R16	RESULT Arg1:T17 Arg2:T11	
+R18	RESULT Arg1:T18 Arg2:T11	

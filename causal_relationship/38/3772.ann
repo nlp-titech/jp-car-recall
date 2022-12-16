@@ -1,0 +1,37 @@
+T1	Argument 16 31	テールパイプの溶接指示が不適切
+T2	Argument 35 46	パイプの取付強度が不足
+T3	Argument 48 54	エンジン振動
+T4	Argument 58 67	溶接部に亀裂が発生
+T5	Argument 80 94	そのままの状態で使用を続ける
+T6	Argument 95 104	テールパイプが脱落
+T7	Argument 106 120	マフラーから排出される排気熱
+T9	Argument 123 149	エアクリーナケースや油圧ホース（走行兼荷役用）が溶損
+T10	Argument 151 157	作動油が漏れ
+T11	Argument 158 165	走行不能となる
+T12	Connective 32 34	ため
+T13	Connective 47 48	、
+T14	Connective 54 57	により
+T15	Connective 75 79	そのため
+T16	Connective 94 95	と
+T17	Connective 105 106	、
+T18	Connective 120 123	により
+T20	Connective 150 151	、
+T21	Connective 157 158	、
+R1	REASON Arg1:T12 Arg2:T1	
+R2	RESULT Arg1:T12 Arg2:T2	
+R3	REASON Arg1:T13 Arg2:T2	
+R4	RESULT Arg1:T13 Arg2:T4	
+R5	REASON Arg1:T14 Arg2:T3	
+R6	RESULT Arg1:T14 Arg2:T4	
+R7	REASON Arg1:T15 Arg2:T4	
+R8	RESULT Arg1:T15 Arg2:T6	
+R9	CONDITION Arg1:T16 Arg2:T5	
+R10	RESULT Arg1:T16 Arg2:T6	
+R11	REASON Arg1:T17 Arg2:T6	
+R12	RESULT Arg1:T17 Arg2:T9	
+R13	REASON Arg1:T18 Arg2:T7	
+R17	REASON Arg1:T20 Arg2:T9	
+R18	RESULT Arg1:T20 Arg2:T10	
+R19	REASON Arg1:T21 Arg2:T10	
+R20	RESULT Arg1:T21 Arg2:T11	
+R14	RESULT Arg1:T18 Arg2:T9	

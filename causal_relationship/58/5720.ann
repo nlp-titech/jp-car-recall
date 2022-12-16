@@ -1,0 +1,11 @@
+T1	Argument 31 59	整備時誤爆防止用短絡端子において、コネクタの成型が不適切
+T2	Connective 60 62	ため
+T3	Argument 63 91	整備時（車両側コネクタ取外し時）以外においても回路が短絡
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T5	Connective 107 109	場合
+T6	Argument 111 129	警告灯の点灯及び故障メッセージが表示
+R4	RESULT Arg1:T5 Arg2:T6	
+T8	Argument 132 145	エアバッグが展開しなくなる
+R3	CONDITION Arg1:T5 Arg2:T3	
+R5	RESULT Arg1:T5 Arg2:T8	

@@ -1,0 +1,29 @@
+T1	Argument 15 32	ドアロックラッチの製造工程が不適切
+T2	Connective 33 35	ため
+T3	Argument 36 47	当該ラッチの強度が不足
+T4	Connective 57 61	そのため
+T5	Argument 62 65	事故等
+T6	Connective 65 66	で
+T7	Argument 66 72	衝撃が加わる
+T8	Connective 72 73	と
+T9	Argument 74 82	当該ラッチが変形
+T10	Connective 83 84	、
+T11	Argument 84 86	最悪
+T12	Connective 87 89	場合
+T13	Argument 90 96	ロックが外れ
+T14	Connective 96 97	、
+T15	Argument 97 102	ドアが開放
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T9	
+R5	REASON Arg1:T10 Arg2:T9	
+R6	RESULT Arg1:T10 Arg2:T13	
+R7	REASON Arg1:T14 Arg2:T13	
+R8	RESULT Arg1:T14 Arg2:T15	
+R9	REASON Arg1:T6 Arg2:T5	
+R10	RESULT Arg1:T6 Arg2:T7	
+R11	CONDITION Arg1:T8 Arg2:T7	
+R12	RESULT Arg1:T8 Arg2:T9	
+R13	CONDITION Arg1:T12 Arg2:T11	
+R14	RESULT Arg1:T12 Arg2:T13	

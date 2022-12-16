@@ -1,0 +1,25 @@
+T1	Argument 0 33	原動機において、電子制御式燃料噴射ポンプ用の電気配線の配索が不適切
+T2	Argument 37 58	当該配線が燃料パイプ固定用ブラケットに接触
+T3	Argument 82 88	原動機の振動
+T4	Argument 91 100	配線の被覆が剥がれ
+T5	Argument 101 103	短絡
+T6	Argument 105 123	原動機が停止し、再始動ができなくなる
+T8	Connective 34 36	ため
+T9	Connective 65 66	、
+T10	Connective 88 91	により
+T11	Connective 100 101	て
+T12	Connective 104 105	て
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T2	
+R3	REASON Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T4	
+R5	REASON Arg1:T10 Arg2:T3	
+R6	RESULT Arg1:T10 Arg2:T4	
+R7	REASON Arg1:T11 Arg2:T4	
+R8	RESULT Arg1:T11 Arg2:T5	
+R9	REASON Arg1:T12 Arg2:T5	
+R10	RESULT Arg1:T12 Arg2:T6	
+T7	Argument 66 80	そのままの状態で使用を続ける
+T13	Connective 80 81	と
+R11	CONDITION Arg1:T13 Arg2:T7	
+R12	RESULT Arg1:T13 Arg2:T4	

@@ -1,0 +1,33 @@
+T1	Argument 26 74	ＩＳＧ（モーター機能付発電機）とウォーターポンプを駆動しているウォーターポンプベルトの強度が不足
+T2	Connective 78 80	ため
+T3	Argument 81 88	使用過程で破断
+T4	Connective 96 100	そのため
+T5	Argument 101 121	ＩＳＧとウォーターポンプが作動しなくなり
+T6	Connective 121 122	、
+T7	Argument 122 126	発電不良
+T8	Connective 126 129	により
+T9	Argument 129 137	充電警告灯が点灯
+T10	Argument 139 145	冷却水温上昇
+T11	Connective 145 148	により
+T12	Argument 148 156	水温警告灯が点灯
+T13	Argument 168 175	エンジンが停止
+R1	RESULT Arg1:T6 Arg2:T7	
+R2	RESULT Arg1:T6 Arg2:T10	
+R3	REASON Arg1:T11 Arg2:T10	
+R4	RESULT Arg1:T11 Arg2:T12	
+R5	RESULT Arg1:T6 Arg2:T13	
+T14	Argument 162 164	最悪
+T15	Connective 165 167	場合
+R6	CONDITION Arg1:T15 Arg2:T14	
+R7	RESULT Arg1:T15 Arg2:T13	
+R8	REASON Arg1:T8 Arg2:T7	
+R9	RESULT Arg1:T8 Arg2:T9	
+R10	REASON Arg1:T6 Arg2:T5	
+R11	REASON Arg1:T2 Arg2:T1	
+R12	RESULT Arg1:T2 Arg2:T3	
+R13	REASON Arg1:T4 Arg2:T3	
+R14	RESULT Arg1:T4 Arg2:T5	
+T16	Connective 176 177	て
+R15	REASON Arg1:T16 Arg2:T13	
+T17	Argument 177 186	再始動できなくなる
+R16	RESULT Arg1:T16 Arg2:T17	

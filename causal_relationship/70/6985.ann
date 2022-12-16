@@ -1,0 +1,21 @@
+T1	Argument 9 39	スイング式トランクリッドのステーダンパー取付金具の強度が不足
+T2	Connective 43 45	ため
+T3	Argument 46 58	トランクリッドの開閉操作
+T4	Argument 61 71	当該金具に亀裂が発生
+T5	Connective 58 61	により
+T6	Connective 79 83	そのため
+T7	Argument 84 98	そのままの状態で使用を続ける
+T8	Connective 98 99	と
+T9	Argument 100 107	当該金具が破損
+T10	Connective 108 109	て
+T11	Argument 109 125	トランクリッドを保持できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	REASON Arg1:T5 Arg2:T3	
+R3	RESULT Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T2 Arg2:T4	
+R5	REASON Arg1:T6 Arg2:T4	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	RESULT Arg1:T6 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	

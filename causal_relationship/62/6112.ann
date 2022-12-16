@@ -1,0 +1,17 @@
+T1	Argument 22 33	内部部品の製造が不適切
+T2	Connective 34 36	ため
+T3	Argument 37 49	電気信号の通信障害が発生
+T4	Connective 57 61	そのため
+T5	Argument 62 74	フェールセーフ機能が作動
+T6	Connective 75 76	て
+T7	Argument 77 87	パワーアシストが停止
+T8	Connective 91 92	で
+T9	Argument 92 105	ハンドル操作に支障をきたす
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	REASON Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	

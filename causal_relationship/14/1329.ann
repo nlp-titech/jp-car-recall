@@ -1,0 +1,33 @@
+T1	Argument 0 27	バン型車両に架装した車両において、補助方向指示器を増設
+T2	Connective 31 33	から
+T3	Argument 33 40	電気負荷が増大
+T4	Connective 42 44	ため
+T5	Argument 45 86	方向指示器とハザードランプ兼用のフラッシャーユニット内部のリレー端子の熱容量が不足
+T6	Connective 96 100	そのため
+T7	Argument 101 114	ハザードランプを長時間点灯
+T8	Connective 116 117	と
+T9	Argument 117 131	当該端子の半田部が高温になり
+T10	Connective 131 132	、
+T11	Argument 132 143	熱膨張と収縮の繰り返し
+T12	Connective 143 147	によって
+T13	Argument 147 160	当該端子半田部に亀裂が発生
+T14	Connective 161 162	、
+T15	Argument 162 164	最悪
+T16	Connective 165 167	場合
+T17	Argument 168 189	方向指示器とハザードランプが点灯しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T17	
+R15	CONDITION Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T17	

@@ -1,0 +1,13 @@
+T1	Argument 11 29	制御ユニット内部のプログラムが不適切
+T2	Connective 30 32	ため
+T3	Argument 33 47	制御信号が正常に発信されない
+T4	Connective 52 53	、
+T5	Argument 67 99	計器盤内の作動表示灯は点滅しているものの、方向指示器が点滅しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 53 61	方向指示器を作動
+T7	Connective 64 66	場合
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T5	

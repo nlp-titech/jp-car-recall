@@ -1,0 +1,29 @@
+T1	Argument 7 33	リンクロッドの両端にある支持部とロッドの溶接が不適切
+T2	Connective 34 36	ため
+T3	Argument 37 42	強度が不足
+T4	Connective 52 56	そのため
+T5	Argument 82 88	溶接がはがれ
+T6	Connective 88 89	、
+T7	Argument 95 103	当該ロッドが脱落
+T8	Connective 104 105	、
+T9	Argument 105 116	走行安定性が損なわれる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 57 71	そのままの状態で使用を続ける
+T11	Connective 71 72	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	
+T12	Argument 73 79	走行の振動等
+T13	Connective 79 82	により
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T5	
+T14	Argument 89 91	最悪
+T15	Connective 92 94	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T7	

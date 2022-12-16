@@ -1,0 +1,13 @@
+T3	Argument 93 105	原動機が始動できなくなる
+T4	Connective 63 64	、
+R1	REASON Arg1:T4 Arg2:T6	
+R2	RESULT Arg1:T4 Arg2:T1	
+T9	Connective 78 79	と
+T10	Argument 64 78	このままの状態で使用を続ける
+R5	CONDITION Arg1:T9 Arg2:T10	
+R6	RESULT Arg1:T9 Arg2:T1	
+T6	Argument 0 58	電子制御燃料噴射装置付車両に装着している点火制御器（イグナイタ）が、放電に伴うオゾン（Ｏ3）又は熱の影響で不良になる
+T1	Argument 80 93	当該制御器が作動しなくなり
+T2	Connective 92 93	り
+R3	REASON Arg1:T2 Arg2:T1	
+R4	RESULT Arg1:T2 Arg2:T3	

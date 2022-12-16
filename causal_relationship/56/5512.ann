@@ -1,0 +1,21 @@
+T1	Argument 0 49	改良された燃料フィルタが取り付けられた車両において、燃料フィルタの取付バンドの止め具の位置に不適切
+T2	Argument 58 70	フィルタの表面処理に損傷
+T3	Argument 74 81	道路凍結防止剤
+T4	Argument 84 89	腐食が発生
+T5	Argument 102 112	そのまま使用を続ける
+T6	Argument 113 118	燃料が漏れ
+T7	Connective 55 57	ため
+T8	Connective 73 74	、
+T9	Connective 81 84	による
+T10	Connective 97 101	そのため
+T11	Connective 112 113	と
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T4	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T6	
+R9	CONDITION Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	

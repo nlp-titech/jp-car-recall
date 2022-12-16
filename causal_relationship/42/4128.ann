@@ -1,0 +1,25 @@
+T1	Argument 26 58	ハイブリッドシステム保護用ヒューズ（ＥＶヒューズ）の容量が不適切
+T2	Connective 59 61	ため
+T3	Argument 73 84	当該ヒューズが疲労断線
+T4	Connective 92 96	そのため
+T5	Argument 97 103	警告灯が点灯
+T6	Argument 111 124	ハイブリッドシステムが停止
+T7	Connective 125 126	て
+T8	Argument 126 133	走行不能となる
+R1	REASON Arg1:T7 Arg2:T6	
+R2	RESULT Arg1:T7 Arg2:T8	
+R3	RESULT Arg1:T4 Arg2:T5	
+T9	Argument 105 107	最悪
+T10	Connective 108 110	場合
+R5	CONDITION Arg1:T10 Arg2:T9	
+R6	RESULT Arg1:T10 Arg2:T6	
+R7	REASON Arg1:T4 Arg2:T3	
+R8	REASON Arg1:T2 Arg2:T1	
+R9	RESULT Arg1:T2 Arg2:T3	
+T11	Argument 62 72	高負荷運転を繰り返す
+T12	Connective 72 73	と
+R10	CONDITION Arg1:T12 Arg2:T11	
+R11	RESULT Arg1:T12 Arg2:T3	
+T13	Connective 104 105	、
+R4	REASON Arg1:T13 Arg2:T5	
+R12	RESULT Arg1:T13 Arg2:T6	

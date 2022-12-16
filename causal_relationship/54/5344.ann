@@ -1,0 +1,33 @@
+T1	Argument 0 25	ウォータポンププーリとフランジ部との溶接強度が不足
+T2	Connective 29 31	ため
+T3	Argument 56 77	タイミングベルトと当該フランジ部が強く干渉
+T4	Connective 78 79	、
+T5	Argument 79 86	溶接が剥がれる
+T6	Connective 92 96	そのため
+T7	Argument 113 127	当該フランジがプーリから外れ
+T8	Connective 127 128	、
+T9	Argument 134 157	タイミングベルトがウォータポンププーリより外れ
+T10	Connective 157 158	、
+T11	Argument 158 165	エンジンが停止
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 97 111	そのままの状態で使用を続ける
+T13	Connective 111 112	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T7	
+T14	Argument 128 130	最悪
+T15	Connective 131 133	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T9	
+T16	Argument 32 49	タイミングベルトが偏心して取り付け
+T17	Connective 54 55	と
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T3	

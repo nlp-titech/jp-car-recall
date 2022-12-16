@@ -1,0 +1,21 @@
+T1	Argument 8 54	ヘッドカバー上部にある通常使用しないオイル給油口キャップのパッキンが、マフラー熱により熱劣化
+T2	Connective 55 56	、
+T3	Argument 56 63	キャップが緩む
+T4	Connective 69 73	そのため
+T5	Argument 74 88	そのままの状態で使用を続ける
+T6	Connective 88 89	と
+T7	Argument 90 102	当該キャップの緩みが進行
+T8	Connective 103 104	て
+T9	Argument 105 107	最悪
+T10	Connective 108 110	場合
+T11	Argument 111 130	キャップが脱落しエンジンオイルが漏れる
+R1	RESULT Arg1:T10 Arg2:T11	
+R2	CONDITION Arg1:T10 Arg2:T9	
+R3	RESULT Arg1:T8 Arg2:T11	
+R4	REASON Arg1:T8 Arg2:T7	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	CONDITION Arg1:T6 Arg2:T5	
+R7	RESULT Arg1:T4 Arg2:T7	
+R8	REASON Arg1:T4 Arg2:T3	
+R9	RESULT Arg1:T2 Arg2:T3	
+R10	REASON Arg1:T2 Arg2:T1	

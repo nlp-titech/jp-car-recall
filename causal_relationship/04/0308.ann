@@ -1,0 +1,17 @@
+T4	Argument 113 122	かじ取り性能を損う
+T5	Connective 112 113	て
+T6	Connective 74 76	ため
+T2	Argument 105 111	後輪がロック
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	RESULT Arg1:T5 Arg2:T4	
+R4	REASON Arg1:T5 Arg2:T2	
+T1	Argument 0 74	制動装置において、前後輪の制動力配分を行うロードセンシングプロポーショニングバルブ（ＬＳＰＶ）について工場出荷時における調整が適切に行なわれていない
+R1	REASON Arg1:T6 Arg2:T1	
+T3	Argument 77 91	そのままの状態で使用を続ける
+T7	Connective 91 92	と
+R6	RESULT Arg1:T7 Arg2:T2	
+T8	Argument 93 102	空車状態での急制動
+T9	Connective 102 103	時
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T2	
+R5	CONDITION Arg1:T7 Arg2:T3	

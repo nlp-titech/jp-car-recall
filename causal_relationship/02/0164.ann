@@ -1,0 +1,21 @@
+T1	Argument 0 30	ブレーキ倍力装置の負圧チューブにおいて、製造時の作業が不適切
+T2	Argument 34 56	当該チューブ内にある逆流防止弁に残留物が浸入
+T3	Argument 80 90	当該逆流防止弁を固着
+T4	Argument 99 118	ブレーキペダルの踏力が通常より重くなる
+T5	Connective 31 33	ため
+T6	Connective 63 64	、
+T7	Connective 92 93	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 64 78	そのままの状態で使用を続ける
+T9	Connective 78 79	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 93 95	最悪
+T11	Connective 96 98	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T4	

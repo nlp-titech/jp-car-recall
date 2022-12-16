@@ -1,0 +1,9 @@
+T1	Argument 0 39	かじ取装置の第２軸操舵用ステアリングレバー支点ピンにおいて、角部の加工が不適切
+T2	Argument 58 68	当該ピンの強度が低下
+T3	Argument 42 47	表面が粗い
+T4	Connective 40 42	ため
+T5	Connective 53 57	そのため
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T3	
+R3	REASON Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T2	

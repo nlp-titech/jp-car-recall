@@ -1,0 +1,25 @@
+T1	Argument 1 18	乗降扉の開閉制御プログラムが不適切
+T2	Connective 19 21	ため
+T6	Argument 25 97	乗降扉が閉まる直前で扉を車内に引き込みロックする機構（クローザ）を働かせるために備えられた、扉が閉まる直前の位置を検知するセンサーに製造バラツキ
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Connective 100 102	ため
+T7	Argument 103 120	当該センサーによる検知がなされない
+R3	REASON Arg1:T3 Arg2:T6	
+R4	RESULT Arg1:T3 Arg2:T9	
+T8	Connective 126 127	、
+T9	Argument 127 135	クローザが働かず
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Connective 146 147	、
+T13	Argument 147 174	走行中に乗客が扉近傍に設置された検知器（光電管）を遮っ
+T15	Argument 177 181	扉が開く
+R13	REASON Arg1:T10 Arg2:T5	
+R14	RESULT Arg1:T10 Arg2:T15	
+R2	RESULT Arg1:T2 Arg2:T7	
+T4	Connective 134 135	ず
+R5	REASON Arg1:T4 Arg2:T9	
+T5	Argument 135 146	確実に扉をロックできず
+R6	RESULT Arg1:T4 Arg2:T5	
+T11	Connective 175 176	際
+R9	CONDITION Arg1:T11 Arg2:T13	
+R10	RESULT Arg1:T11 Arg2:T15	

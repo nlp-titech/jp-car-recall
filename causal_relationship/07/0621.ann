@@ -1,0 +1,13 @@
+T1	Argument 0 26	バス用アルミホイールの強度を部分強化する工程が不適切
+T2	Argument 30 49	当該ホイールの飾り穴部に引張応力が発生
+T3	Connective 59 63	そのため
+T4	Argument 64 73	走行中に受ける負荷
+T5	Argument 76 83	ホイールが損傷
+T6	Connective 27 29	ため
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T3 Arg2:T2	
+R4	RESULT Arg1:T3 Arg2:T5	
+T7	Connective 73 76	により
+R5	REASON Arg1:T7 Arg2:T4	
+R6	RESULT Arg1:T7 Arg2:T5	

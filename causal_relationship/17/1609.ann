@@ -1,0 +1,33 @@
+T1	Argument 0 35	フロントアクスルとシャーシ間を連結するサスペンションリンクの強度が不足
+T2	Connective 39 41	ため
+T3	Argument 42 53	掘削作業時などの高負荷
+T4	Connective 53 56	により
+T5	Argument 56 62	リンクが破損
+T6	Connective 70 74	そのため
+T7	Argument 75 100	左右にあるサスペンションシリンダーのいずれかが破損
+T8	Argument 102 107	車体が傾き
+T9	Connective 101 102	て
+T10	Argument 108 136	ステアリングシリンダーがアクスルとシャーシとの間に挟まれ
+T11	Connective 136 137	、
+T12	Connective 107 108	、
+T13	Argument 143 157	ステアリングシリンダーが破損
+T14	Connective 158 159	、
+T15	Argument 159 174	ステアリング操作ができなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+R9	REASON Arg1:T12 Arg2:T8	
+R10	RESULT Arg1:T12 Arg2:T10	
+R11	REASON Arg1:T11 Arg2:T10	
+R12	RESULT Arg1:T11 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+T28	Argument 137 139	最悪
+T29	Connective 140 142	場合
+R15	CONDITION Arg1:T29 Arg2:T28	
+R16	RESULT Arg1:T29 Arg2:T13	

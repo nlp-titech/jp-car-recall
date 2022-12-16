@@ -1,0 +1,25 @@
+T1	Argument 32 54	燃料タンク（ガス容器）取付部の強度検討が不足
+T2	Argument 61 72	当該フロアパネルに亀裂
+T3	Connective 83 87	そのため
+T4	Argument 88 102	そのままの状態で使用を続ける
+T5	Connective 102 103	と
+T6	Argument 104 109	亀裂が進展
+T7	Connective 110 111	、
+T8	Argument 111 113	最悪
+T9	Connective 114 116	場合
+T10	Argument 117 126	フロアパネルが割れ
+T11	Connective 126 127	て
+T12	Argument 127 135	燃料タンクが脱落
+R1	RESULT Arg1:T11 Arg2:T12	
+R2	REASON Arg1:T11 Arg2:T10	
+R3	RESULT Arg1:T9 Arg2:T10	
+R4	CONDITION Arg1:T9 Arg2:T8	
+R5	RESULT Arg1:T7 Arg2:T10	
+R6	REASON Arg1:T7 Arg2:T6	
+R7	RESULT Arg1:T5 Arg2:T6	
+R8	CONDITION Arg1:T5 Arg2:T4	
+R9	RESULT Arg1:T3 Arg2:T6	
+R10	REASON Arg1:T3 Arg2:T2	
+T13	Connective 58 60	ため
+R11	RESULT Arg1:T13 Arg2:T2	
+R12	REASON Arg1:T13 Arg2:T1	

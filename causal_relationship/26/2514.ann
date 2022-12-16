@@ -1,0 +1,13 @@
+T1	Argument 0 44	冷却水不足による警告灯の点灯や、水温計の上昇に気づかずオーバーヒートの状態で走行を続ける
+T2	Connective 44 45	と
+T3	Argument 46 54	オイル漏れが発生
+T4	Connective 55 56	、
+T5	Argument 62 69	車両火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 56 58	最悪
+T7	Connective 59 61	場合
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T5	

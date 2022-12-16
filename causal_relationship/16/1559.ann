@@ -1,0 +1,17 @@
+T1	Argument 3 32	駐車ブレーキペダルのケーブルガイドブラケットの加工が不適切
+T3	Argument 44 66	ブレーキペダルを操作した際、ブラケットが変形
+T4	Connective 39 43	そのため
+T5	Argument 68 87	駐車ブレーキペダルの踏み代が大きくなり
+T6	Argument 94 100	制動力が低下
+T8	Connective 67 68	、
+T9	Connective 87 88	、
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T5	
+R7	REASON Arg1:T9 Arg2:T5	
+R8	RESULT Arg1:T9 Arg2:T6	
+T10	Argument 88 90	最悪
+T11	Connective 91 93	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T6	

@@ -1,0 +1,39 @@
+T1	Argument 0 39	自動変速機付車のストップランプスイッチにおいて、当該スイッチの製造方法が不適切
+T2	Argument 43 95	ペダルブラケットに塗布されたグリース及びリターンスプリングに塗布してある防錆油が、当該スイッチ内部に侵入
+T3	Connective 103 106	により
+T4	Argument 107 117	電気抵抗が大きくなる
+T5	Argument 145 147	発熱
+T6	Argument 150 157	シャフトが変形
+T7	Argument 159 171	スイッチが作動しなくなり
+T8	Argument 172 189	シフトロック機能が解除できなくなる
+T9	Argument 193 204	制動灯が点灯しなくなる
+T10	Connective 40 42	ため
+T11	Argument 97 99	炭化
+T12	Connective 96 97	て
+T13	Connective 122 123	、
+T14	Connective 147 150	により
+T15	Connective 158 159	て
+T16	Connective 171 172	、
+R1	REASON Arg1:T10 Arg2:T1	
+R2	RESULT Arg1:T10 Arg2:T2	
+R3	REASON Arg1:T12 Arg2:T2	
+R4	RESULT Arg1:T12 Arg2:T11	
+R5	REASON Arg1:T3 Arg2:T11	
+R6	RESULT Arg1:T3 Arg2:T4	
+R7	REASON Arg1:T13 Arg2:T4	
+R8	RESULT Arg1:T13 Arg2:T5	
+R9	REASON Arg1:T14 Arg2:T5	
+R10	RESULT Arg1:T14 Arg2:T6	
+R11	REASON Arg1:T15 Arg2:T6	
+R12	RESULT Arg1:T15 Arg2:T7	
+R13	REASON Arg1:T16 Arg2:T7	
+R14	RESULT Arg1:T16 Arg2:T8	
+R15	RESULT Arg1:T16 Arg2:T9	
+T17	Argument 123 137	そのままの状態で使用を続ける
+T18	Connective 137 138	と
+R16	CONDITION Arg1:T18 Arg2:T17	
+R17	RESULT Arg1:T18 Arg2:T5	
+T19	Argument 139 141	最悪
+T20	Connective 142 144	場合
+R18	CONDITION Arg1:T20 Arg2:T19	
+R19	RESULT Arg1:T20 Arg2:T5	

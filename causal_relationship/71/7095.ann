@@ -1,0 +1,33 @@
+T1	Argument 0 58	減速機の製造工程において、パーキングロック（Ｐレンジにした際に車輪を機械的に固定するもの）の作動確認検査方法が不適切
+T2	Connective 59 61	ため
+T3	Argument 62 78	パーキングポールのシャフトが変形
+T4	Connective 88 92	そのため
+T5	Argument 113 136	パーキングポールとシャフトの摺動抵抗が高くなり
+T6	Connective 136 137	、
+T7	Argument 137 150	パーキングロックが作動せず
+T8	Connective 150 151	、
+T9	Argument 151 153	最悪
+T10	Connective 154 156	場合
+T11	Argument 157 161	駐車条件
+T12	Connective 161 166	によっては
+T13	Argument 166 179	駐車ブレーキを掛けていない
+T14	Connective 179 180	と
+T15	Argument 181 186	車両が動く
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	CONDITION Arg1:T10 Arg2:T9	
+R9	CONDITION Arg1:T12 Arg2:T11	
+R10	CONDITION Arg1:T14 Arg2:T13	
+R11	RESULT Arg1:T14 Arg2:T15	
+R12	RESULT Arg1:T12 Arg2:T15	
+R13	RESULT Arg1:T10 Arg2:T15	
+R14	RESULT Arg1:T8 Arg2:T15	
+T16	Argument 93 109	Ｐレンジでパーキングロックが作動
+T17	Connective 111 112	際
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T5	

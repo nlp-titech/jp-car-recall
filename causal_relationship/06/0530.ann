@@ -1,0 +1,29 @@
+T1	Argument 0 63	制動装置において、前輪用ブレーキホースの構造及びブレーキホースを取り付けているブラケットとホイルシリンダーとの位置関係が不適切
+T2	Argument 91 109	フロントタイヤ側面と当該ホースが接触
+T3	Argument 133 143	当該ホースに穴があき
+T4	Argument 144 152	ブレーキ液が漏れ
+T5	Argument 158 164	制動力が低下
+T6	Connective 64 66	ため
+T7	Connective 116 117	、
+T8	Connective 143 144	、
+T9	Connective 152 153	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 67 84	ブレーキホースを捩じって取り付けた
+T11	Connective 84 86	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T2	
+T12	Argument 117 131	そのままの状態で使用を続ける
+T13	Connective 131 132	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T3	
+T14	Argument 153 155	最悪
+T15	Connective 156 158	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T5	

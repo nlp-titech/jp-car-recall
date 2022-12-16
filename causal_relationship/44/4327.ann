@@ -1,0 +1,29 @@
+T1	Argument 0 43	センタースタンドスプリングを保持するピンと左側センタースタンドブラケットの溶接が不適切
+T2	Connective 44 46	ため
+T3	Argument 47 54	当該ピンが折損
+T4	Connective 55 56	て
+T5	Argument 56 72	センタースタンドスプリングが脱落
+T6	Connective 80 84	そのため
+T7	Argument 85 106	センタースタンドが格納した状態で保持されず
+T8	Connective 106 107	、
+T9	Argument 107 120	走行中に当該スタンドが降下
+T10	Connective 121 122	て
+T11	Argument 122 127	路面と接触
+T13	Argument 135 144	バランスを失い転倒
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T14	Argument 129 131	最悪
+T15	Connective 132 134	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T13	
+T12	Connective 128 129	、
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	

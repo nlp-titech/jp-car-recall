@@ -1,0 +1,9 @@
+T1	Argument 0 13	灯火装置の電気回路が不適切
+T3	Argument 17 50	前部霧灯が点灯している場合に車幅灯が消灯できない構造となっておらず
+T4	Argument 51 67	車幅灯の保安基準を満足していない
+T5	Connective 14 16	ため
+T7	Connective 50 51	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	

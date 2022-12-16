@@ -1,0 +1,21 @@
+T1	Argument 0 44	圧縮天然ガス自動車（ＣＮＧ車）の路線バスにおいて、排気管に取り付けた遮熱板の溶接が不適切
+T2	Connective 45 47	ため
+T3	Argument 62 68	溶接部が破損
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 76 80	そのため
+T5	Argument 103 109	遮熱板が脱落
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 81 95	そのままの状態で使用を続ける
+T7	Connective 95 96	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T5	
+T8	Argument 97 99	最悪
+T9	Connective 100 102	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Connective 59 62	により
+T11	Argument 48 59	排気管の熱及び車両振動
+R9	REASON Arg1:T10 Arg2:T11	
+R10	RESULT Arg1:T10 Arg2:T3	

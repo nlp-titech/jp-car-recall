@@ -1,0 +1,25 @@
+T1	Argument 0 41	押しボタン式の駐車ブレーキスイッチにおいて、当該スイッチの製造工程での加工が不適切
+T2	Connective 42 44	ため
+T3	Argument 45 63	スイッチ内部の摺動部分の隙間が少ない
+T4	Connective 69 73	そのため
+T5	Argument 74 81	外気温度が低い
+T6	Connective 81 83	場合
+T8	Connective 104 107	ことで
+T9	Argument 107 117	摺動部分の抵抗が増加
+T10	Argument 119 121	最悪
+T11	Connective 122 124	場合
+R1	RESULT Arg1:T11 Arg2:T14	
+R2	CONDITION Arg1:T11 Arg2:T10	
+T13	Connective 118 119	、
+R4	REASON Arg1:T13 Arg2:T9	
+R5	RESULT Arg1:T8 Arg2:T9	
+R7	RESULT Arg1:T6 Arg2:T16	
+R8	CONDITION Arg1:T6 Arg2:T5	
+R10	REASON Arg1:T4 Arg2:T3	
+R11	RESULT Arg1:T2 Arg2:T3	
+R12	REASON Arg1:T2 Arg2:T1	
+T14	Argument 125 156	駐車ブレーキスイッチを押しても駐車ブレーキの解除が出来なくなる
+T16	Argument 84 102	当該スイッチ本体が温度低下により収縮
+R6	REASON Arg1:T8 Arg2:T16	
+R9	RESULT Arg1:T4 Arg2:T9	
+R3	RESULT Arg1:T13 Arg2:T14	

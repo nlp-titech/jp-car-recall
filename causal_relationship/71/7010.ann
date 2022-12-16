@@ -1,0 +1,17 @@
+T1	Argument 25 49	テールゲートリフタを格納させるための動作が不適切
+T2	Connective 50 52	ため
+T3	Argument 53 87	テールゲートをスライドレール下面へ押しつけた状態でスライド動作を行う
+T4	Connective 89 91	から
+T5	Argument 92 107	摺動グリースが切れた状態で使用
+T6	Connective 109 111	場合
+T7	Argument 112 137	テールゲートとスライドレールの摺動抵抗が大きくなり
+T8	Argument 138 152	スライド動作が著しく遅くなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	CONDITION Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	RESULT Arg1:T4 Arg2:T7	
+T9	Connective 137 138	、
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	

@@ -1,0 +1,17 @@
+T1	Argument 0 46	リヤハブベアリングの組み付け工程において、リヤハブベアリング固定ボルトの締め付けトルクが不足
+T2	Argument 61 71	そのまま使用を続ける
+T3	Argument 73 81	当該ボルトが緩み
+T4	Argument 82 84	最悪
+T5	Argument 88 99	走行安定性が損なわれる
+T6	Connective 56 60	そのため
+T7	Connective 71 72	と
+T8	Connective 81 82	、
+T9	Connective 85 87	場合
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T3	
+R3	CONDITION Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T5	
+R7	CONDITION Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	

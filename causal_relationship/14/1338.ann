@@ -1,0 +1,29 @@
+T1	Argument 0 41	機械式自動変速機の変速を制御している電子制御機器（ＥＣＵ）の制御プログラムが不適切
+T2	Connective 42 44	ため
+T3	Argument 45 79	ドライブレンジで走行後、そのままの状態でクラッチペダルを踏まずに停止
+T4	Connective 81 83	場合
+T5	Argument 84 100	クラッチが自動で切れた状態となっ
+T6	Connective 103 105	ため
+T7	Argument 119 137	下り坂等により極低速で車両が動き出す
+T8	Connective 142 143	、
+T9	Argument 143 164	その状態をＥＣＵが通常走行になったと誤認識
+T10	Connective 165 166	、
+T11	Argument 166 177	クラッチが自動的に接続
+T12	Connective 179 180	、
+T13	Argument 180 185	車両が発進
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+T14	Argument 106 118	ブレーキを操作していない
+T15	Connective 118 119	と
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T7	

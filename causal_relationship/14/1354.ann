@@ -1,0 +1,31 @@
+T1	Argument 0 26	リヤアクスルの製造工程において、組み付け作業が不適切
+T2	Connective 27 29	ため
+T3	Argument 30 62	ホイールハブとトレーリングリンクの組み付けボルトの締め付けが不足
+T4	Connective 72 76	そのため
+T5	Argument 77 91	そのままの状態で使用を続ける
+T6	Connective 91 92	と
+T7	Argument 93 101	当該ボルトが緩ん
+T8	Connective 101 102	で
+T9	Argument 102 107	異音が発生
+T11	Argument 109 111	最悪
+T12	Connective 112 114	場合
+T13	Argument 115 123	当該ボルトが折損
+T14	Connective 124 125	、
+T15	Argument 125 127	脱輪
+T16	Connective 128 129	て
+T17	Argument 129 136	走行不能に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	CONDITION Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T7	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	CONDITION Arg1:T12 Arg2:T11	
+R10	RESULT Arg1:T12 Arg2:T13	
+R11	RESULT Arg1:T8 Arg2:T13	
+R12	REASON Arg1:T14 Arg2:T13	
+R13	RESULT Arg1:T14 Arg2:T15	
+R14	REASON Arg1:T16 Arg2:T15	
+R15	RESULT Arg1:T16 Arg2:T17	

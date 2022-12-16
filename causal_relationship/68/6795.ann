@@ -1,0 +1,17 @@
+T1	Argument 0 29	原動機（モータ）を制御するコンピュータのプログラムが不適切
+T2	Connective 30 32	ため
+T4	Connective 85 87	場合
+T5	Argument 88 103	モータ制御システム警告灯が点灯
+T6	Connective 104 105	て
+T7	Argument 106 115	予期せぬ減速に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T3	Argument 33 44	バッテリ電圧が低い状態
+T8	Connective 44 48	において
+T9	Argument 49 85	中高速領域（時速８０km/h以上）で走行中に僅かにアクセルペダルを戻した
+R3	CONDITION Arg1:T4 Arg2:T9	
+R7	CONDITION Arg1:T8 Arg2:T3	
+R8	RESULT Arg1:T8 Arg2:T5	

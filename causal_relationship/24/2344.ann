@@ -1,0 +1,29 @@
+T1	Argument 0 33	無段変速機（ＣＶＴ）のオイルクーラーホースの製造過程の作業が不適切
+T2	Argument 37 49	ホースの内面にシワが発生
+T3	Connective 34 36	ため
+T4	Connective 57 61	そのため
+T5	Argument 78 84	ホースの内圧
+T6	Connective 84 87	により
+T7	Argument 88 106	シワを起点に亀裂が内面から外面に進展
+T8	Connective 107 108	、
+T9	Argument 108 114	オイルが漏れ
+T10	Connective 114 115	、
+T11	Argument 120 127	走行不能になる
+R1	REASON Arg1:T3 Arg2:T1	
+R2	RESULT Arg1:T3 Arg2:T2	
+R3	REASON Arg1:T4 Arg2:T2	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 62 76	そのままの状態で使用を続ける
+T13	Connective 76 77	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T7	
+T14	Argument 115 117	最悪
+T15	Connective 118 120	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T11	
+R4	RESULT Arg1:T4 Arg2:T7	

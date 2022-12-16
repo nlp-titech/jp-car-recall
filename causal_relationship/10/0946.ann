@@ -1,0 +1,32 @@
+T1	Argument 0 30	警察車の警光灯及びサイレンにおいて、ハーネス配線の容量が不足
+T2	Connective 34 36	ため
+T5	Argument 46 50	経年劣化
+T6	Connective 50 51	し
+T7	Argument 51 70	ハーネスコネクタの端子部に酸化物が発生
+T8	Connective 71 72	て
+T9	Argument 73 75	発熱
+T10	Connective 83 87	そのため
+T11	Argument 88 102	そのままの状態で使用を続ける
+T12	Connective 102 103	と
+T13	Argument 104 113	当該コネクタが熔損
+T14	Connective 114 115	、
+T15	Argument 115 117	最悪
+T16	Connective 118 120	場合
+T17	Argument 121 127	警光灯が不灯
+T18	Argument 129 140	サイレンが鳴らなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T7	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	CONDITION Arg1:T16 Arg2:T15	
+R14	RESULT Arg1:T16 Arg2:T17	
+R15	RESULT Arg1:T16 Arg2:T18	
+R16	REASON Arg1:T14 Arg2:T13	
+R17	RESULT Arg1:T14 Arg2:T17	
+R18	RESULT Arg1:T14 Arg2:T18	

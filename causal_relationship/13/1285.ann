@@ -1,0 +1,13 @@
+T1	Argument 0 35	車幅灯と方向指示器及び非常点滅表示灯を兼用する灯火の制御用回路が不適切
+T2	Connective 36 38	ため
+T5	Argument 39 64	車幅灯を点灯中に方向指示器又は非常点滅表示灯を作動
+T6	Connective 67 68	と
+T7	Argument 69 77	車幅灯が点滅状態
+T8	Connective 81 85	そのため
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+T9	Argument 86 105	車幅灯に係わる保安基準を満足していない
+R8	RESULT Arg1:T8 Arg2:T9	

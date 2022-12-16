@@ -1,0 +1,21 @@
+T2	Connective 59 61	ため
+T3	Argument 62 75	ピストンの作動時の摺動抵抗
+T4	Connective 75 79	によって
+T5	Argument 79 91	ピストンが正常に作動しな
+R1	RESULT Arg1:T4 Arg2:T5	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+T6	Connective 98 102	そのため
+R5	REASON Arg1:T6 Arg2:T5	
+T7	Argument 103 120	横滑り時の油圧制御が正しく行われず
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Connective 120 121	、
+T9	Argument 121 123	最悪
+T10	Connective 124 126	場合
+T11	Argument 127 138	走行安定性が損なわれる
+R7	RESULT Arg1:T10 Arg2:T11	
+R8	RESULT Arg1:T8 Arg2:T11	
+R9	CONDITION Arg1:T10 Arg2:T9	
+R11	REASON Arg1:T8 Arg2:T7	
+T1	Argument 20 58	ハイドロリックユニットにおいて、ユニット本体のピストン部の穴開け加工が不適切
+R4	REASON Arg1:T2 Arg2:T1	

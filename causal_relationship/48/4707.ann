@@ -1,0 +1,23 @@
+T1	Argument 0 16	後車軸の塗装後の作業行程が不適切
+T2	Connective 17 19	ため
+T3	Argument 20 58	後車軸の位置を固定するリンク及びショックアブソーバの車軸への取付ナットが緩み
+T4	Connective 57 58	み
+T5	Argument 58 63	異音が発生
+T7	Argument 87 96	ロア・リンクが外れ
+T8	Connective 95 96	れ
+T9	Argument 96 105	走行安定性を損なう
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 65 79	そのままの状態で使用を続ける
+T11	Connective 79 80	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T7	
+T12	Argument 81 83	最悪
+T13	Connective 84 86	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T7	
+R5	RESULT Arg1:T4 Arg2:T7	

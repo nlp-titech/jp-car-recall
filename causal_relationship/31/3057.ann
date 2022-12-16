@@ -1,0 +1,21 @@
+T1	Argument 0 26	一次減速機構付無段変速機の油圧制御プログラムが不適切
+T2	Connective 27 29	ため
+T5	Argument 30 62	変速レバーを前進又は後退位置へ操作後、すばやいアクセル操作を行う
+T6	Connective 62 63	と
+T7	Argument 64 90	無段変速機のドライブプーリシャフトに高い負荷が加わる
+T8	Connective 96 100	そのため
+T9	Argument 101 110	その状態を繰り返す
+T10	Connective 110 111	と
+T11	Argument 111 118	シャフトが折損
+R1	RESULT Arg1:T10 Arg2:T11	
+R2	CONDITION Arg1:T10 Arg2:T9	
+R3	RESULT Arg1:T8 Arg2:T11	
+R4	REASON Arg1:T8 Arg2:T7	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	CONDITION Arg1:T6 Arg2:T5	
+R9	RESULT Arg1:T2 Arg2:T7	
+R10	REASON Arg1:T2 Arg2:T1	
+T12	Connective 118 119	し
+T13	Argument 119 126	走行不能となる
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	

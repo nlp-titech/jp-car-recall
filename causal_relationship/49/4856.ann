@@ -1,0 +1,7 @@
+T1	Argument 15 37	座席ベルト非装着時警報装置の電気回路が不適切
+T2	Connective 38 40	ため
+T3	Argument 41 59	座席ベルト非装着時の警報音が鳴らない
+T4	Argument 61 74	警報音の鳴る時間が短くなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T4	

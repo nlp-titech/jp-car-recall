@@ -1,0 +1,19 @@
+T1	Argument 0 47	パワーステアリングポンプ駆動用ベルトの張力を調整するテンショナプーリの外周樹脂部の材質が不適切
+T2	Argument 51 59	当該樹脂部が破損
+T3	Connective 48 50	ため
+T4	Connective 67 71	そのため
+T5	Argument 72 77	異音が発生
+T7	Argument 85 110	当該ベルトがパワーステアリングポンププーリより外れ
+T8	Connective 110 111	て
+T9	Argument 111 122	ハンドルの操作力が増大
+R1	REASON Arg1:T3 Arg2:T1	
+R2	RESULT Arg1:T3 Arg2:T2	
+R3	REASON Arg1:T4 Arg2:T2	
+R4	RESULT Arg1:T4 Arg2:T5	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 79 81	最悪
+T11	Connective 82 84	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T7	
+R5	RESULT Arg1:T4 Arg2:T7	

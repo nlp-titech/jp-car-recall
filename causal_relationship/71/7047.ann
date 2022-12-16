@@ -1,0 +1,9 @@
+T2	Argument 0 59	本革仕様のステアリングホイールにおいて、操舵後に手を緩め、ステアリングホイールを滑らせて直進位置に復元させるような操作
+T3	Argument 64 93	当該ステアリングホイール裏側にあるコアカバー端部に手が触れ
+T4	Connective 93 94	、
+T5	Argument 94 96	切創
+T6	Connective 62 63	と
+R2	CONDITION Arg1:T6 Arg2:T2	
+R3	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T4 Arg2:T3	
+R6	RESULT Arg1:T4 Arg2:T5	

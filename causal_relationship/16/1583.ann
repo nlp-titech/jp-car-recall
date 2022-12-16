@@ -1,0 +1,21 @@
+T1	Argument 0 37	変速装置において、シフトレバー内部の後進用マイクロスイッチ接点容量が不適切
+T2	Connective 38 40	ため
+T4	Connective 67 70	により
+T5	Argument 71 80	一時的に接点が溶着
+T6	Connective 88 92	そのため
+T7	Argument 93 130	シフトレバーを前進位置に切替えても、変速機の変速位置がすぐに切り替わらない
+T8	Argument 142 166	ブレーキペダルを外し、前進しようとした場合に後進
+T9	Connective 135 136	、
+R1	RESULT Arg1:T9 Arg2:T8	
+R2	REASON Arg1:T9 Arg2:T7	
+R3	REASON Arg1:T2 Arg2:T1	
+R4	RESULT Arg1:T2 Arg2:T5	
+R6	RESULT Arg1:T4 Arg2:T5	
+R7	REASON Arg1:T6 Arg2:T5	
+R8	RESULT Arg1:T6 Arg2:T7	
+T11	Argument 41 67	当該レバーを後進位置に操作した際に瞬時発生する過電流
+R10	REASON Arg1:T4 Arg2:T11	
+T12	Argument 136 138	最悪
+T13	Connective 139 141	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T8	

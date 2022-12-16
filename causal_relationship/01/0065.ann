@@ -1,0 +1,25 @@
+T1	Argument 0 41	後輪用ブレーキパイプが車両の左前方フレーム上部において、アクセル等のケーブルに接触
+T2	Argument 69 75	運行中の振動
+T3	Argument 78 90	当該ブレーキパイプが損傷
+T4	Argument 98 106	ブレーキ液が漏れ
+T5	Argument 107 113	制動力が低下
+T6	Connective 50 52	ため
+T7	Connective 75 78	により
+T8	Connective 91 92	、
+T9	Connective 106 107	て
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T3	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 53 67	そのままの状態で使用を続ける
+T11	Connective 67 68	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	
+T12	Argument 92 94	最悪
+T13	Connective 95 97	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T4	

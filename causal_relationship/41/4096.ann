@@ -1,0 +1,53 @@
+T1	Argument 26 44	車高調整装置の最大車高設定値が不適切
+T2	Argument 48 63	荷役作業時等で最大車高まで上昇
+T3	Argument 70 94	後後軸のショックアブソーバーが最大可動範囲を超え
+T4	Argument 98 103	車高を下降
+T5	Argument 107 114	内部部品が変形
+T6	Argument 116 128	スムーズに下降しなくなる
+T7	Argument 139 153	そのままの状態で使用を続ける
+T8	Argument 155 178	当該ショックアブソーバーのピストンロッドが折損
+T9	Argument 181 191	エアスプリングと干渉
+T10	Argument 192 200	エア漏れを起こす
+T11	Argument 205 211	タイヤと干渉
+T12	Argument 219 221	最悪
+T13	Argument 225 227	発熱
+T14	Argument 230 232	発火
+T15	Connective 45 47	ため
+T16	Connective 66 69	場合に
+T17	Connective 94 95	、
+T18	Connective 105 107	際に
+R1	REASON Arg1:T15 Arg2:T1	
+R2	RESULT Arg1:T15 Arg2:T3	
+R3	CONDITION Arg1:T16 Arg2:T2	
+R4	RESULT Arg1:T16 Arg2:T3	
+R5	REASON Arg1:T17 Arg2:T3	
+R6	RESULT Arg1:T17 Arg2:T5	
+R7	CONDITION Arg1:T18 Arg2:T4	
+R8	RESULT Arg1:T18 Arg2:T5	
+T19	Connective 115 116	て
+R9	REASON Arg1:T19 Arg2:T5	
+R10	RESULT Arg1:T19 Arg2:T6	
+T20	Connective 134 138	そのため
+T21	Connective 153 154	と
+R11	REASON Arg1:T20 Arg2:T6	
+R12	RESULT Arg1:T20 Arg2:T8	
+R13	CONDITION Arg1:T21 Arg2:T7	
+R14	RESULT Arg1:T21 Arg2:T8	
+T22	Connective 179 180	て
+R15	REASON Arg1:T22 Arg2:T8	
+R16	RESULT Arg1:T22 Arg2:T9	
+T23	Connective 191 192	し
+T24	Argument 213 217	バースト
+T25	Connective 212 213	て
+T27	Connective 222 224	場合
+T28	Connective 227 230	により
+R17	REASON Arg1:T23 Arg2:T9	
+R18	RESULT Arg1:T23 Arg2:T10	
+R20	REASON Arg1:T25 Arg2:T11	
+R21	RESULT Arg1:T25 Arg2:T24	
+R24	CONDITION Arg1:T27 Arg2:T12	
+R25	RESULT Arg1:T27 Arg2:T13	
+R26	REASON Arg1:T28 Arg2:T13	
+R27	RESULT Arg1:T28 Arg2:T14	
+R19	RESULT Arg1:T22 Arg2:T11	
+R22	RESULT Arg1:T22 Arg2:T13	

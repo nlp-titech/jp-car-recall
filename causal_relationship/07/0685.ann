@@ -1,0 +1,29 @@
+T1	Argument 0 22	マフラーの排気テールパイプ取付部の強度が不足
+T2	Argument 29 35	走行中の振動
+T3	Argument 40 51	当該取付部に亀裂が発生
+T4	Argument 64 74	そのまま使用を続ける
+T5	Argument 75 83	当該取付部が破損
+T6	Argument 85 87	最悪
+T7	Argument 91 102	排気テールパイプが脱落
+T8	Argument 105 115	他の交通の妨げとなる
+T9	Connective 26 28	ため
+T10	Connective 36 39	により
+T11	Connective 59 63	そのため
+T12	Connective 74 75	と
+T13	Connective 84 85	、
+T14	Connective 88 90	場合
+T15	Connective 103 104	て
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T3	
+R3	REASON Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T3	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T5	
+R7	CONDITION Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T5	
+R9	REASON Arg1:T13 Arg2:T5	
+R10	RESULT Arg1:T13 Arg2:T7	
+R11	CONDITION Arg1:T14 Arg2:T6	
+R12	RESULT Arg1:T14 Arg2:T7	
+R13	REASON Arg1:T15 Arg2:T7	
+R14	RESULT Arg1:T15 Arg2:T8	

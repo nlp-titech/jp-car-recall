@@ -1,0 +1,25 @@
+T1	Argument 0 22	前車輪の組付工程において、組付け作業が不適切
+T2	Connective 23 25	ため
+T3	Argument 26 47	前輪ホイールの取付ボルトの締付トルクが不足
+T4	Connective 57 61	そのため
+T5	Argument 74 82	当該ボルトが緩ん
+T6	Connective 85 86	、
+T7	Argument 92 98	前車輪が脱落
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T17	
+R6	RESULT Arg1:T6 Arg2:T7	
+T13	Argument 62 72	そのまま使用を続ける
+T14	Connective 72 73	と
+R7	CONDITION Arg1:T14 Arg2:T13	
+R8	RESULT Arg1:T14 Arg2:T5	
+T15	Argument 86 88	最悪
+T16	Connective 89 91	場合
+R9	CONDITION Arg1:T16 Arg2:T15	
+R10	RESULT Arg1:T16 Arg2:T7	
+T17	Argument 83 85	外れ
+T18	Connective 82 83	で
+R11	RESULT Arg1:T18 Arg2:T17	
+R12	REASON Arg1:T18 Arg2:T5	

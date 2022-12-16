@@ -1,0 +1,25 @@
+T1	Argument 1 33	走行モータからの動力をドラムに伝えるドライブプレートの強度が不足
+T2	Connective 37 39	ため
+T3	Argument 48 63	当該プレートの一部に亀裂が発生
+T4	Connective 71 75	そのため
+T5	Argument 94 106	プレート全周に亀裂が進行
+T6	Connective 107 108	、
+T7	Argument 108 130	走行モータからの動力がドラムに伝わらなくなり
+T8	Connective 130 131	、
+T9	Argument 131 138	走行不能となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 76 86	そのまま使用を続ける
+T11	Connective 86 87	と
+T12	Argument 88 90	最悪
+T13	Connective 91 93	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	CONDITION Arg1:T13 Arg2:T12	
+R11	RESULT Arg1:T11 Arg2:T5	
+R12	RESULT Arg1:T13 Arg2:T5	

@@ -1,0 +1,23 @@
+T1	Argument 54 86	燃料ガス中に混入する油が当該ガスバルブ内部の燃料流量センサに付着
+T2	Argument 110 121	燃料流量の誤検知が発生
+T3	Argument 123 132	アイドリング不安定
+T4	Argument 142 148	原動機が停止
+T5	Connective 93 94	、
+T6	Connective 122 123	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+T8	Argument 94 108	そのままの状態で使用を続ける
+T9	Connective 108 109	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T2	
+T10	Argument 136 138	最悪
+T11	Connective 139 141	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T4	
+T12	Argument 0 50	圧縮天然ガス車（ＣＮＧ車）において、燃料ガスの流量を検知・制御しているガスバルブ内部に天然ガスを圧縮
+T13	Connective 52 53	際
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T1	
+R5	RESULT Arg1:T6 Arg2:T4	

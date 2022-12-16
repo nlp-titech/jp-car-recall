@@ -1,0 +1,17 @@
+T1	Argument 0 47	原動機の負圧で開く燃料コックの燃料側ダイヤフラム（ゴムを繊維で補強した薄膜）の製造方法が不適切
+T2	Connective 48 50	ため
+T3	Argument 51 62	表面に補強用繊維が露出
+T4	Connective 70 74	そのため
+T5	Argument 87 110	燃料側に露出した繊維を通じて燃料が大気側に浸透
+T6	Connective 111 112	、
+T7	Argument 112 122	通気孔から外に漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 75 85	そのまま使用を続ける
+T9	Connective 85 86	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

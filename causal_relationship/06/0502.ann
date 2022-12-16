@@ -1,0 +1,21 @@
+T1	Argument 0 27	走行装置において、後輪ホイールのスポーク部の強度が不足
+T2	Argument 70 75	亀裂が発生
+T5	Connective 82 83	、
+R3	REASON Arg1:T5 Arg2:T2	
+T4	Connective 102 103	て
+T6	Argument 103 110	走行不能となる
+R1	RESULT Arg1:T4 Arg2:T6	
+T7	Connective 31 33	ため
+R5	REASON Arg1:T7 Arg2:T1	
+R6	RESULT Arg1:T7 Arg2:T2	
+T8	Connective 69 70	、
+T9	Argument 34 68	凹みのある路面の走行時に当該スポーク部が高い衝撃荷重を繰り返し受ける
+R7	CONDITION Arg1:T8 Arg2:T9	
+T10	Argument 83 97	そのままの状態で使用を続ける
+T3	Argument 99 101	破損
+T11	Connective 98 99	、
+R2	CONDITION Arg1:T11 Arg2:T10	
+R4	REASON Arg1:T4 Arg2:T3	
+R8	RESULT Arg1:T8 Arg2:T2	
+R9	RESULT Arg1:T5 Arg2:T3	
+R10	RESULT Arg1:T11 Arg2:T3	

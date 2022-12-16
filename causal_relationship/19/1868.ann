@@ -1,0 +1,5 @@
+T1	Argument 0 41	高輝度放電式（ＨＩＤ）前照灯の自動式照射方向調節装置の制御ユニットのデータに不適切
+T2	Connective 48 52	そのため
+T3	Argument 53 68	前照灯の光軸が自動調整されない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

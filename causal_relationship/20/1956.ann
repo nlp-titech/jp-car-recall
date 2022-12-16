@@ -1,0 +1,23 @@
+T1	Argument 0 41	自動無段変速機（ＣＶＴ）のオイルクーラーホースの製造工程において、洗浄処理が不適切
+T2	Connective 48 52	そのため
+T3	Argument 53 62	エンジンの振動など
+T4	Connective 62 65	により
+T5	Argument 65 73	当該ホースが抜け
+T9	Argument 95 100	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T7	Connective 73 74	て
+T8	Argument 74 80	オイルが漏れ
+T10	Connective 80 81	、
+R5	REASON Arg1:T7 Arg2:T5	
+R7	RESULT Arg1:T7 Arg2:T8	
+R8	REASON Arg1:T10 Arg2:T8	
+T11	Argument 81 85	走行不能
+R9	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 89 91	最悪
+T13	Connective 92 94	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T9	
+R6	RESULT Arg1:T10 Arg2:T9	

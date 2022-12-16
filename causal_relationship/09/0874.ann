@@ -1,0 +1,25 @@
+T1	Argument 0 34	高輝度放電灯式前照灯のレンズとハウジングをシールするメルト材が不適切
+T2	Connective 35 37	ため
+T3	Argument 38 59	メルト材が走行時の繰り返し振動を吸収できず
+T4	Connective 59 60	、
+T5	Argument 60 72	シール部が部分的に剥がれ
+T6	Connective 72 73	て
+T8	Connective 100 104	そのため
+T9	Argument 109 143	水がヘッドランプ内下部に取り付けられているコントロールユニットに入る
+T10	Connective 143 144	と
+T11	Argument 144 153	電圧制御回路が短絡
+T12	Connective 154 155	て
+T13	Argument 156 167	前照灯が点灯しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T7	Argument 73 92	雨天走行時等にヘッドランプ内に水が浸入
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R8	RESULT Arg1:T8 Arg2:T11	

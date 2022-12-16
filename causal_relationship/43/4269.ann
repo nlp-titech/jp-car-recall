@@ -1,0 +1,39 @@
+T1	Argument 16 34	セカンダリカップの材質と形状が不適切
+T2	Connective 35 37	ため
+T3	Argument 72 74	膨潤
+T5	Argument 96 98	膨張
+T6	Connective 100 101	と
+T7	Argument 102 104	変形
+R1	REASON Arg1:T2 Arg2:T1	
+T8	Connective 112 116	そのため
+T9	Argument 117 125	シール性能が低下
+T10	Connective 126 127	て
+T11	Argument 143 157	シール部からブレーキ液が漏れ
+T12	Connective 157 158	、
+T13	Argument 164 173	制動距離が長くなる
+R3	REASON Arg1:T8 Arg2:T7	
+R4	RESULT Arg1:T8 Arg2:T9	
+R5	REASON Arg1:T10 Arg2:T9	
+R6	RESULT Arg1:T10 Arg2:T11	
+R7	REASON Arg1:T12 Arg2:T11	
+R8	RESULT Arg1:T12 Arg2:T13	
+R11	CONDITION Arg1:T6 Arg2:T5	
+R12	RESULT Arg1:T6 Arg2:T7	
+T14	Argument 128 142	ブレーキペダルをゆっくり踏む
+T15	Connective 142 143	と
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T11	
+T16	Argument 158 160	最悪
+T17	Connective 161 163	場合
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T13	
+R2	RESULT Arg1:T2 Arg2:T3	
+T18	Argument 38 69	カップがリザーバタンクホースからブレーキ液中に溶け出した可塑剤
+T19	Connective 69 72	により
+R17	REASON Arg1:T19 Arg2:T18	
+R18	RESULT Arg1:T19 Arg2:T3	
+R19	RESULT Arg1:T2 Arg2:T7	
+T4	Argument 79 93	走行中のエンジンからの熱影響
+T20	Connective 93 96	により
+R9	REASON Arg1:T20 Arg2:T4	
+R10	RESULT Arg1:T20 Arg2:T5	

@@ -1,0 +1,13 @@
+T1	Argument 0 37	教習車の教官用警音器スイッチを装着する際に、仕様の異なるコネクタを組み付け
+T2	Argument 41 48	走行時の振動等
+T3	Argument 51 67	当該コネクタ端子が接触不良となり
+T4	Argument 68 82	運転者用警音器が鳴らなくなる
+T5	Connective 38 40	ため
+T6	Connective 48 51	により
+T7	Connective 67 68	、
+R1	REASON Arg1:T5 Arg2:T1	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+R2	RESULT Arg1:T5 Arg2:T3	

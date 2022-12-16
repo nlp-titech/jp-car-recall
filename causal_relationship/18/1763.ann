@@ -1,0 +1,9 @@
+T1	Argument 0 47	フォークリフトおよびショベルローダの後車軸ハブへのボルト圧入工程において圧入装置の治具が不適切
+T2	Connective 48 50	ため
+T3	Argument 51 61	当該ハブに亀裂が生じ
+T4	Connective 69 70	、
+T5	Argument 70 81	堅ろう性が確保されない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

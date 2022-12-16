@@ -1,0 +1,39 @@
+T1	Argument 0 43	動力伝達装置において、３速自動変速機内部のトルクコンバーターとリングギヤの溶接に不適切
+T2	Argument 52 60	加減速の繰り返し
+T3	Argument 65 74	当該溶接部が剥れる
+T4	Argument 80 97	リングギヤがミッションケースと干渉
+T5	Argument 99 104	異音が発生
+T6	Argument 121 130	リングギヤ-が折損
+T7	Argument 132 144	オイルクーラー配管を破損
+T8	Argument 146 152	オイルが漏れ
+T9	Argument 159 164	火災に至る
+T10	Connective 49 51	ため
+T11	Connective 61 64	により
+T12	Connective 79 80	、
+T13	Connective 98 99	て
+T15	Connective 131 132	て
+T16	Connective 145 146	、
+T17	Connective 152 153	、
+R2	RESULT Arg1:T10 Arg2:T3	
+R4	RESULT Arg1:T11 Arg2:T3	
+R5	REASON Arg1:T12 Arg2:T3	
+R6	RESULT Arg1:T12 Arg2:T4	
+R7	REASON Arg1:T13 Arg2:T4	
+R8	RESULT Arg1:T13 Arg2:T5	
+R11	REASON Arg1:T15 Arg2:T6	
+R12	RESULT Arg1:T15 Arg2:T7	
+R13	REASON Arg1:T16 Arg2:T7	
+R14	RESULT Arg1:T16 Arg2:T8	
+R15	REASON Arg1:T17 Arg2:T8	
+R16	RESULT Arg1:T17 Arg2:T9	
+R1	REASON Arg1:T10 Arg2:T1	
+R9	REASON Arg1:T11 Arg2:T2	
+T14	Argument 106 119	そのままの状態で使用続ける
+T18	Connective 119 120	と
+R18	CONDITION Arg1:T18 Arg2:T14	
+R19	RESULT Arg1:T18 Arg2:T6	
+T20	Argument 153 155	最悪
+T21	Connective 156 158	場合
+R20	CONDITION Arg1:T21 Arg2:T20	
+R21	RESULT Arg1:T21 Arg2:T9	
+R3	RESULT Arg1:T13 Arg2:T6	

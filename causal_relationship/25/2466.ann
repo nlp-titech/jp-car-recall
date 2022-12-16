@@ -1,0 +1,13 @@
+T1	Argument 0 35	アクセルペダルに備えられているアクセル開度センサにおいて、静電気が帯電
+T2	Connective 36 37	、
+T3	Argument 37 48	センサ内部回路が誤作動
+T4	Connective 56 60	そのため
+T5	Argument 61 97	アクセルペダルを操作していない状態で切り替えレバーを前進又は後進に入れる
+T6	Connective 97 98	と
+T7	Argument 99 105	車両が急発進
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

@@ -1,0 +1,21 @@
+T1	Argument 0 47	かじ取装置の油圧ポンプにおいて、油の流量を制御するロッカカムの支点となるボールの耐摩耗性が不足
+T2	Argument 54 62	当該ボールが摩耗
+T3	Argument 87 107	ハンドル操作に対する油の流量が徐々に減少
+T4	Argument 115 127	かじ取操作ができなくなる
+T5	Connective 51 53	ため
+T6	Connective 70 74	そのため
+T7	Connective 108 109	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 75 85	そのまま使用を続ける
+T9	Connective 85 86	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 109 111	最悪
+T11	Connective 112 114	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T4	

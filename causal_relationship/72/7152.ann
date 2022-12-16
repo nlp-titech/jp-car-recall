@@ -1,0 +1,17 @@
+T1	Argument 0 9	外気温が高い条件下
+T2	Connective 9 13	において
+T3	Argument 14 34	空気圧不足の状態で高速での連続走行を行う
+T4	Connective 34 35	と
+T5	Argument 36 47	タイヤ表面のゴムが剥離
+T6	Connective 48 49	、
+T7	Argument 49 51	最悪
+T8	Connective 52 54	場合
+T9	Argument 55 67	バーストする等事故が発生
+R1	CONDITION Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	RESULT Arg1:T6 Arg2:T9	

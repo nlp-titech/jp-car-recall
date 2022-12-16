@@ -1,0 +1,21 @@
+T1	Argument 0 57	運転席側エアバッグのインフレータ（ガス発生装置）において、ガス発生剤が湿気のある状態で長期間の温度変化にさらされる
+T3	Argument 58 60	劣化
+T4	Argument 73 81	エアバッグ展開時
+T5	Argument 82 93	インフレータ容器が破損
+T6	Argument 95 102	構成部品が飛散
+T7	Argument 104 109	乗員が負傷
+T9	Connective 57 58	と
+T10	Connective 68 72	このため
+T11	Connective 81 82	に
+T12	Connective 94 95	て
+T13	Connective 103 104	、
+R4	RESULT Arg1:T9 Arg2:T3	
+R5	REASON Arg1:T10 Arg2:T3	
+R7	CONDITION Arg1:T11 Arg2:T4	
+R8	RESULT Arg1:T11 Arg2:T5	
+R9	REASON Arg1:T12 Arg2:T5	
+R10	RESULT Arg1:T12 Arg2:T6	
+R11	REASON Arg1:T13 Arg2:T6	
+R12	RESULT Arg1:T13 Arg2:T7	
+R1	CONDITION Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T10 Arg2:T5	

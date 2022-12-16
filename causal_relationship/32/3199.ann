@@ -1,0 +1,29 @@
+T1	Argument 0 24	ハイブリッドシステムにおいて、制御ソフトが不適切
+T2	Connective 25 27	ため
+T3	Argument 28 39	加速時などの高負荷走行
+T4	Connective 39 40	時
+T5	Argument 42 61	昇圧回路の素子に想定外の熱応力が加わる
+T6	Connective 67 71	そのため
+T7	Argument 77 84	当該素子が損傷
+T8	Argument 86 92	警告灯が点灯
+T10	Argument 95 111	フェールセーフのモータ走行となる
+T12	Argument 115 129	素子損傷時に電気ノイズが発生
+T13	Connective 133 134	、
+T14	Argument 134 147	ハイブリッドシステムが停止
+T15	Connective 148 149	、
+T16	Argument 149 156	走行不能となる
+R1	RESULT Arg1:T15 Arg2:T16	
+R2	REASON Arg1:T15 Arg2:T14	
+R3	RESULT Arg1:T13 Arg2:T14	
+R4	REASON Arg1:T13 Arg2:T12	
+T11	Connective 85 86	、
+R6	RESULT Arg1:T11 Arg2:T8	
+R8	REASON Arg1:T11 Arg2:T7	
+R9	RESULT Arg1:T6 Arg2:T7	
+R10	REASON Arg1:T6 Arg2:T5	
+R11	RESULT Arg1:T4 Arg2:T5	
+R12	CONDITION Arg1:T4 Arg2:T3	
+R13	RESULT Arg1:T2 Arg2:T5	
+R14	REASON Arg1:T2 Arg2:T1	
+R7	RESULT Arg1:T6 Arg2:T12	
+R5	RESULT Arg1:T11 Arg2:T10	

@@ -1,0 +1,31 @@
+T1	Argument 19 29	エンジン制御が不適切
+T2	Argument 33 41	気筒内圧力が低下
+T3	Argument 43 57	吸気バルブの閉じ力が低くなる
+T4	Argument 68 86	吸気バルブとバルブシート間に煤が挟ま
+T5	Argument 87 95	圧縮不良となって
+T6	Argument 96 109	エンジン回転が不安定になる
+T7	Argument 112 114	最悪
+T8	Argument 118 125	エンストに至る
+T9	Connective 30 32	ため
+T10	Connective 42 43	、
+T11	Connective 63 67	そのため
+T12	Connective 95 96	、
+T13	Connective 86 87	り
+T14	Connective 115 117	場合
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T2	
+R3	REASON Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T3	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+R7	REASON Arg1:T13 Arg2:T4	
+R8	RESULT Arg1:T13 Arg2:T5	
+R9	REASON Arg1:T12 Arg2:T5	
+R10	RESULT Arg1:T12 Arg2:T6	
+R11	RESULT Arg1:T12 Arg2:T8	
+R12	CONDITION Arg1:T14 Arg2:T7	
+R13	RESULT Arg1:T14 Arg2:T8	
+T15	Argument 15 18	減速時
+T16	Connective 18 19	の
+R14	CONDITION Arg1:T16 Arg2:T15	
+R15	RESULT Arg1:T16 Arg2:T1	

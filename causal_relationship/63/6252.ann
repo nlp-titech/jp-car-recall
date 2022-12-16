@@ -1,0 +1,9 @@
+T1	Argument 12 31	燃料圧力センサーにおいて、製造が不適切
+T2	Connective 32 34	ため
+T3	Argument 35 48	センサーの締め付けが不十分
+T4	Connective 55 59	そのため
+T5	Argument 60 80	燃料圧力センサー取付け部から燃料が漏れる
+R1	RESULT Arg1:T4 Arg2:T5	
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T3	
+R4	REASON Arg1:T2 Arg2:T1	

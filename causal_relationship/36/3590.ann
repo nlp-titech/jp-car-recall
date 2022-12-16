@@ -1,0 +1,29 @@
+T1	Argument 18 45	排気ガス再循環（ＥＧＲ）バルブの制御プログラムが不適切
+T2	Connective 46 48	ため
+T3	Argument 49 64	アクセルペダルの操作を繰り返す
+T4	Connective 64 65	と
+T5	Argument 66 85	制御指示に対しＥＧＲバルブの開度がずれ
+T6	Connective 98 102	そのため
+T7	Argument 103 112	排気ガスが常時循環
+T8	Argument 124 126	最悪
+T9	Connective 127 129	場合
+T10	Connective 123 124	、
+T11	Argument 130 141	走行中にエンジンが停止
+R1	RESULT Arg1:T9 Arg2:T11	
+R2	CONDITION Arg1:T9 Arg2:T8	
+R3	RESULT Arg1:T10 Arg2:T11	
+R4	REASON Arg1:T10 Arg2:T15	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	REASON Arg1:T6 Arg2:T13	
+R7	RESULT Arg1:T4 Arg2:T5	
+R8	CONDITION Arg1:T4 Arg2:T3	
+R9	RESULT Arg1:T2 Arg2:T5	
+R10	REASON Arg1:T2 Arg2:T1	
+T12	Connective 85 86	て
+T13	Argument 86 92	閉じなくなる
+R11	REASON Arg1:T12 Arg2:T5	
+R12	RESULT Arg1:T12 Arg2:T13	
+T14	Connective 113 114	て
+T15	Argument 114 120	エンジン不調
+R13	REASON Arg1:T14 Arg2:T7	
+R14	RESULT Arg1:T14 Arg2:T15	

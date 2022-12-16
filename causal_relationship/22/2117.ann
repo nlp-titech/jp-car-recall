@@ -1,0 +1,17 @@
+T1	Argument 0 22	消音器に備えられている水抜き穴の位置が不適切
+T2	Connective 23 25	ため
+T3	Argument 26 57	エンジン始動時に排出される高温の水分がアクセルケーブルにかかる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 63 67	そのため
+T5	Argument 68 80	当該ケーブルの被覆が熔損
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 90 92	ため
+T7	Argument 93 106	アクセル操作ができなくなる
+R5	REASON Arg1:T6 Arg2:T8	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 81 88	ケーブルが固着
+T9	Connective 80 81	し
+R7	REASON Arg1:T9 Arg2:T5	
+R8	RESULT Arg1:T9 Arg2:T8	

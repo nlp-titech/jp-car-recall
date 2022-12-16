@@ -1,0 +1,21 @@
+T1	Argument 23 103	ブレーキ操作と主変速レバーを中立位置に戻す機能を有する作業用駐車ブレーキレバーにおいて、主変速レバーとの連動部の主変速レバーを保持するための摩擦板の材質が不適切
+T2	Connective 110 114	そのため
+T3	Argument 115 125	そのまま使用を続ける
+T4	Connective 125 126	と
+T5	Argument 127 138	摩擦板の摩擦係数が増加
+T6	Connective 139 140	、
+T7	Argument 140 175	当該駐車ブレーキレバー操作を行っても主変速レバーが中立位置に戻りきらず
+T8	Connective 175 176	、
+T9	Argument 176 178	最悪
+T10	Connective 179 181	場合
+T11	Argument 182 190	車両が停止しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	CONDITION Arg1:T10 Arg2:T9	
+R9	RESULT Arg1:T10 Arg2:T11	
+R10	RESULT Arg1:T8 Arg2:T11	

@@ -1,0 +1,37 @@
+T1	Argument 0 43	インタークーラーの空気吸入口（フードエアインテークガーニッシュ）の取付部の形状が不適切
+T2	Connective 44 46	ため
+T3	Argument 47 59	エンジンルームからの熱等
+T4	Connective 59 62	により
+T5	Argument 62 68	取付部が変形
+T6	Connective 69 70	、
+T7	Argument 70 77	高い応力が発生
+T8	Connective 85 89	そのため
+T9	Argument 90 104	そのままの状態で使用を続ける
+T10	Connective 104 105	と
+T11	Argument 106 112	伸縮の繰返し
+T12	Connective 112 115	により
+T13	Argument 115 126	当該取付部に亀裂が発生
+T14	Connective 127 128	、
+T15	Argument 128 130	最悪
+T16	Connective 131 133	場合
+T17	Argument 134 157	走行中にフードエアインテークガーニッシュが脱落
+T18	Connective 158 159	、
+T19	Argument 159 169	他の交通の妨げとなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	CONDITION Arg1:T10 Arg2:T9	
+R9	REASON Arg1:T12 Arg2:T11	
+R10	RESULT Arg1:T8 Arg2:T13	
+R11	RESULT Arg1:T10 Arg2:T13	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T17	
+R15	CONDITION Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T17	
+R17	REASON Arg1:T18 Arg2:T17	
+R18	RESULT Arg1:T18 Arg2:T19	

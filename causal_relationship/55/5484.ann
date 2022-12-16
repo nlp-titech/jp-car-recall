@@ -1,0 +1,17 @@
+T2	Connective 51 53	ため
+T3	Argument 66 79	半田部が剥離して信号が遮断
+T4	Connective 81 82	、
+T5	Argument 88 113	前照灯、前面方向指示器、窓ふき器等が作動しなくなる
+T1	Argument 0 50	各種電装品の信号を制御するユニット（車両前部ＳＡＭユニット）内部の集積回路において、半田処理が不適切
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 54 64	そのまま使用を続ける
+T7	Connective 64 65	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 82 84	最悪
+T9	Connective 85 87	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

@@ -1,0 +1,17 @@
+T1	Argument 0 69	オートマチックトランスミッションを搭載した四輪駆動車において、トランスファ内インターナルギヤ端部に装着されているシールキャップの耐圧性不足
+T2	Connective 69 72	により
+T3	Argument 73 110	オートマチックトランスミッションフルードがトランスファを経由して外部に流出
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 118 122	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 145 152	走行不能に至る
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 123 137	そのままの状態で使用を続ける
+T7	Connective 137 138	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T5	
+T8	Argument 139 141	最悪
+T9	Connective 142 144	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

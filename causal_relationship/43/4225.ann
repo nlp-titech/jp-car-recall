@@ -1,0 +1,70 @@
+T1	Argument 2 35	ホイール・クレーンの排気管において、排気管接合部の溶接施工が不適切
+T2	Connective 36 38	ため
+T3	Argument 39 48	接合部の強度が不足
+T4	Connective 58 62	そのため
+T5	Argument 73 78	亀裂が生じ
+T6	Connective 78 79	、
+T7	Argument 95 100	亀裂が進行
+T8	Connective 101 102	、
+T9	Argument 102 108	接合部が破断
+T10	Connective 109 110	て
+T11	Argument 110 117	排気ガスが漏れ
+T12	Connective 117 118	、
+T13	Argument 124 142	騒音及び排出ガスの基準値を満足しない
+R1	RESULT Arg1:T12 Arg2:T13	
+T14	Argument 118 120	最悪
+T15	Connective 121 123	場合
+R2	CONDITION Arg1:T15 Arg2:T14	
+R3	RESULT Arg1:T15 Arg2:T13	
+R4	REASON Arg1:T10 Arg2:T9	
+R5	RESULT Arg1:T10 Arg2:T11	
+R6	REASON Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	RESULT Arg1:T6 Arg2:T7	
+R9	REASON Arg1:T6 Arg2:T5	
+T16	Argument 79 93	そのままの状態で使用を続ける
+T17	Connective 93 94	と
+R10	CONDITION Arg1:T17 Arg2:T16	
+R11	RESULT Arg1:T17 Arg2:T7	
+R12	REASON Arg1:T2 Arg2:T1	
+R13	RESULT Arg1:T2 Arg2:T3	
+R14	REASON Arg1:T4 Arg2:T3	
+R15	RESULT Arg1:T4 Arg2:T5	
+T18	Argument 63 70	原動機の振動等
+T19	Connective 70 73	により
+R16	REASON Arg1:T19 Arg2:T18	
+R17	RESULT Arg1:T19 Arg2:T5	
+T20	Argument 151 177	ホイール・クレーンの排気管において、固定方法が不適切
+T21	Connective 178 180	ため
+T22	Argument 202 213	フランジに亀裂が生じる
+T23	Connective 219 223	そのため
+T24	Argument 240 245	亀裂が進行
+T25	Connective 246 247	、
+T26	Argument 247 254	フランジが破断
+T27	Connective 255 256	て
+T28	Argument 256 263	排気ガスが漏れ
+T29	Connective 263 264	、
+T30	Argument 270 288	騒音及び排出ガスの基準値を満足しない
+R18	RESULT Arg1:T29 Arg2:T30	
+R19	REASON Arg1:T29 Arg2:T28	
+T31	Argument 264 266	最悪
+T32	Connective 267 269	場合
+R20	CONDITION Arg1:T32 Arg2:T31	
+R21	RESULT Arg1:T32 Arg2:T30	
+R22	REASON Arg1:T27 Arg2:T26	
+R23	RESULT Arg1:T27 Arg2:T28	
+R24	REASON Arg1:T25 Arg2:T24	
+R25	RESULT Arg1:T25 Arg2:T26	
+T33	Argument 224 238	そのままの状態で使用を続ける
+T34	Connective 238 239	と
+R26	RESULT Arg1:T23 Arg2:T24	
+R27	REASON Arg1:T23 Arg2:T22	
+R28	CONDITION Arg1:T34 Arg2:T33	
+R29	RESULT Arg1:T34 Arg2:T24	
+R30	REASON Arg1:T21 Arg2:T20	
+R31	RESULT Arg1:T21 Arg2:T22	
+T35	Argument 181 197	原動機の振動等により発生した応力
+T36	Connective 197 201	によって
+R32	REASON Arg1:T36 Arg2:T35	
+R33	RESULT Arg1:T36 Arg2:T22	
+R34	REASON Arg1:T12 Arg2:T11	

@@ -1,0 +1,41 @@
+T1	Argument 1 32	エンジン制御用コンピュータにおいて、排気ガス再循環制御が不適切
+T2	Argument 36 44	排気ガス中の水分
+T3	Argument 47 61	燃料噴射ノズル先端孔部が腐食
+T4	Argument 62 64	拡大
+T5	Argument 77 83	噴射量が増え
+T6	Argument 84 95	ＰＭが触媒に多量に堆積
+T7	Argument 97 107	エンジン警告灯が点灯
+T8	Argument 109 118	出力制限走行となる
+T9	Argument 119 121	最悪
+T10	Argument 125 130	触媒が損傷
+T11	Argument 131 136	黒煙を排出
+T12	Connective 33 35	ため
+T13	Connective 44 47	により
+T14	Connective 61 62	し
+T15	Connective 72 76	そのため
+T16	Connective 83 84	て
+T17	Connective 96 97	て
+T18	Connective 108 109	、
+T19	Connective 122 124	場合
+T20	Connective 130 131	し
+R1	REASON Arg1:T12 Arg2:T1	
+R2	RESULT Arg1:T12 Arg2:T3	
+R3	REASON Arg1:T13 Arg2:T2	
+R4	RESULT Arg1:T13 Arg2:T3	
+R5	REASON Arg1:T14 Arg2:T3	
+R6	RESULT Arg1:T14 Arg2:T4	
+R7	REASON Arg1:T15 Arg2:T4	
+R8	RESULT Arg1:T15 Arg2:T5	
+R9	REASON Arg1:T16 Arg2:T5	
+R10	RESULT Arg1:T16 Arg2:T6	
+R11	REASON Arg1:T17 Arg2:T6	
+R12	RESULT Arg1:T17 Arg2:T7	
+R13	REASON Arg1:T18 Arg2:T7	
+R14	RESULT Arg1:T18 Arg2:T8	
+R15	CONDITION Arg1:T19 Arg2:T9	
+R17	REASON Arg1:T20 Arg2:T10	
+R18	RESULT Arg1:T20 Arg2:T11	
+R16	RESULT Arg1:T19 Arg2:T10	
+T21	Connective 118 119	。
+R19	REASON Arg1:T21 Arg2:T8	
+R20	RESULT Arg1:T21 Arg2:T10	

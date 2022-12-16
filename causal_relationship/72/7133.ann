@@ -1,0 +1,11 @@
+T1	Argument 10 26	コンピュータのプログラムが不適切
+T2	Connective 27 29	ため
+T3	Argument 30 40	車体の下方からの衝撃
+T4	Argument 44 52	低し速度での衝突
+T5	Connective 52 53	で
+T6	Argument 53 61	エアバッグが開く
+R1	REASON Arg1:T2 Arg2:T1	
+R2	REASON Arg1:T5 Arg2:T3	
+R3	REASON Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T6	
+R5	RESULT Arg1:T2 Arg2:T6	

@@ -1,0 +1,17 @@
+T1	Argument 0 24	原動機において、エンジン回転センサの耐熱性が不足
+T2	Connective 28 30	ため
+T3	Argument 50 58	当該センサが断線
+T4	Connective 65 66	。
+R1	REASON Arg1:T4 Arg2:T3	
+T7	Argument 120 137	エンストして、再始動に時間がかかる
+T8	Argument 31 47	高負荷条件下での熱負荷の繰り返し
+T9	Connective 47 50	により
+R5	REASON Arg1:T2 Arg2:T1	
+R6	RESULT Arg1:T2 Arg2:T3	
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+R2	RESULT Arg1:T4 Arg2:T5	
+T5	Argument 74 119	フェールセーフにより、エンストしないように制御するが、走行条件によっては、制御が間に合わず
+T6	Connective 119 120	に
+R3	REASON Arg1:T6 Arg2:T5	
+R4	RESULT Arg1:T6 Arg2:T7	

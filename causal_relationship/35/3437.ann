@@ -1,0 +1,25 @@
+T1	Argument 1 31	原動機冷却装置において、ラジエーターホースの取り回しが不適切
+T2	Connective 32 34	ため
+T3	Argument 35 58	ホースをとめるクランプがホースに食い込んでいる
+T4	Connective 64 68	そのため
+T5	Argument 69 79	そのまま使用を続ける
+T6	Connective 79 80	と
+T7	Argument 88 97	ホースの亀裂が進行
+T8	Connective 98 99	、
+T9	Argument 99 101	最悪
+T10	Connective 102 104	場合
+T11	Argument 105 112	冷却水が漏れる
+R1	RESULT Arg1:T10 Arg2:T11	
+R2	CONDITION Arg1:T10 Arg2:T9	
+R3	RESULT Arg1:T8 Arg2:T11	
+R4	REASON Arg1:T8 Arg2:T7	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	CONDITION Arg1:T6 Arg2:T5	
+R7	RESULT Arg1:T4 Arg2:T7	
+R8	REASON Arg1:T4 Arg2:T3	
+R9	RESULT Arg1:T2 Arg2:T3	
+R10	REASON Arg1:T2 Arg2:T1	
+T12	Argument 81 85	機体振動
+T13	Connective 85 88	により
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T7	

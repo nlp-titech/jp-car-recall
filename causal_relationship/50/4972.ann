@@ -1,0 +1,13 @@
+T1	Argument 0 18	後写鏡において、取付支柱の強度が不足
+T2	Connective 22 24	ため
+T3	Argument 35 44	当該取付支柱が破損
+T4	Connective 45 46	て
+T5	Argument 46 52	後写鏡が脱落
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 25 31	走行中の振動
+T7	Connective 31 34	により
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	

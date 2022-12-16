@@ -1,0 +1,17 @@
+T1	Argument 1 31	前後進の操作用レバーのコントロールケーブルの取り回しが不適切
+T2	Connective 32 34	ため
+T3	Argument 35 55	右左折時に当該ケーブルが油圧ホースと干渉
+T4	Connective 63 67	そのため
+T5	Argument 80 94	当該ケーブルのかしめ部が破損
+T6	Connective 95 96	、
+T7	Argument 96 120	操作用レバーを操作しても、後進走行ができなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 68 78	そのまま使用を続ける
+T9	Connective 78 79	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

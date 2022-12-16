@@ -1,0 +1,16 @@
+T1	Argument 0 35	運転席及び助手席の座席ベルト巻取り装置に組込まれているセンサーに不適切
+T2	Connective 41 43	ため
+T4	Connective 67 71	そのため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 44 47	急減速
+T6	Connective 47 48	時
+R2	CONDITION Arg1:T6 Arg2:T3	
+T7	Argument 49 61	座席ベルトがロックしない
+R3	RESULT Arg1:T2 Arg2:T7	
+R5	RESULT Arg1:T6 Arg2:T7	
+T5	Argument 72 75	急減速
+T8	Connective 75 76	時
+R4	CONDITION Arg1:T8 Arg2:T5	
+T9	Argument 77 88	乗員を拘束できなくなる
+R6	RESULT Arg1:T4 Arg2:T9	
+R7	RESULT Arg1:T8 Arg2:T9	

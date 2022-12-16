@@ -1,0 +1,13 @@
+T1	Argument 0 30	ノンステップ路線バスのグライドスライド式扉の下部形状が不適切
+T2	Connective 31 33	ため
+T3	Argument 71 78	足にけがをする
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T6	
+T5	Connective 60 61	、
+T6	Argument 61 68	扉が足に当たっ
+T7	Connective 69 70	際
+R4	RESULT Arg1:T5 Arg2:T6	
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 37 58	扉動作範囲内に人が立ち入った状態で扉を作動
+R8	REASON Arg1:T5 Arg2:T8	

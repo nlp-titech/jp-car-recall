@@ -1,0 +1,33 @@
+T1	Argument 0 25	自動変速機のオイルフィルタ取付けブラケットが不適切
+T2	Argument 39 49	当該ブラケットが破損
+T3	Argument 57 70	オイルフィルタの位置がずれ
+T4	Argument 76 95	油圧ホースが電気配線の結束バンドと接触
+T5	Argument 107 113	オイルが漏れ
+T6	Argument 114 119	火災に至る
+T7	Connective 26 28	ため
+R2	RESULT Arg1:T7 Arg2:T2	
+T8	Connective 53 56	により
+R3	REASON Arg1:T8 Arg2:T2	
+T9	Connective 69 70	れ
+T10	Connective 100 101	、
+T11	Connective 113 114	、
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T20	
+R8	RESULT Arg1:T10 Arg2:T5	
+R9	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	
+T12	Argument 29 35	原動機の振動
+T14	Connective 35 39	によって
+R11	REASON Arg1:T14 Arg2:T12	
+T19	Connective 96 97	て
+T20	Argument 97 99	損傷
+R12	REASON Arg1:T19 Arg2:T4	
+R13	RESULT Arg1:T19 Arg2:T20	
+R14	RESULT Arg1:T14 Arg2:T2	
+R1	REASON Arg1:T7 Arg2:T1	
+R4	REASON Arg1:T9 Arg2:T3	
+R5	RESULT Arg1:T8 Arg2:T3	
+T13	Argument 101 103	最悪
+T15	Connective 104 106	場合
+R15	CONDITION Arg1:T15 Arg2:T13	
+R16	RESULT Arg1:T15 Arg2:T5	

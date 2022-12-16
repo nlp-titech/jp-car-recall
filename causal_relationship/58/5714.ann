@@ -1,0 +1,13 @@
+T1	Argument 0 44	ハンドルの組み付け工程において、ハンドルを取り付けるステアリングヘッドのネジに誤品を使用
+T2	Connective 52 56	そのため
+T3	Argument 57 59	振動
+T4	Connective 59 62	により
+T5	Argument 62 69	当該ネジが緩み
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 69 70	、
+T7	Argument 70 72	脱落
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

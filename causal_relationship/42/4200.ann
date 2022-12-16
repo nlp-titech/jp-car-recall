@@ -1,0 +1,25 @@
+T1	Argument 0 46	後部格納式テールゲートリフタのメインフレームにおいて、リヤバンパステー取付部の強度確認が不足
+T2	Connective 50 52	ため
+T3	Argument 63 69	亀裂が生じる
+T4	Argument 95 100	亀裂が進行
+T5	Connective 101 102	、
+T6	Argument 108 120	有効に突入を防止できない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T7	Connective 75 79	そのため
+R3	REASON Arg1:T7 Arg2:T3	
+R4	RESULT Arg1:T7 Arg2:T4	
+R5	REASON Arg1:T5 Arg2:T4	
+R6	RESULT Arg1:T5 Arg2:T6	
+T8	Argument 80 94	そのままの状態で使用を続ける
+T9	Connective 94 95	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T4	
+T10	Argument 102 104	最悪
+T11	Connective 105 107	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T6	
+T12	Argument 53 60	走行時の振動等
+T13	Connective 60 63	により
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T3	

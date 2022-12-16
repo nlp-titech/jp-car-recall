@@ -1,0 +1,17 @@
+T1	Argument 17 67	ブレーキペダルベアリングシャフトの外径がブレーキペダルシャフトベアリングの内径に対し、わずかに大きい
+T2	Connective 72 74	ため
+T3	Argument 75 90	ブレーキペダルの動きが悪くなる
+T4	Connective 96 100	そのため
+T5	Argument 101 116	ブレーキペダルを踏み込み、離し
+T6	Connective 117 118	際
+T7	Argument 119 133	ブレーキペダルが戻らなくなり
+T8	Connective 133 134	、
+T9	Argument 134 143	ブレーキが引きずる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	

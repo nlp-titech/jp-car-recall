@@ -1,0 +1,9 @@
+T1	Argument 0 52	運転席と助手席のサイドエアバック装置を制御しているコントロールユニット内部にある加速度センサーに製造不良
+T2	Connective 58 60	ため
+T3	Argument 61 63	最悪
+T4	Connective 64 66	場合
+T5	Argument 67 82	走行中に当該エアバックが誤展開
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	

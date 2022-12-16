@@ -1,0 +1,21 @@
+T1	Argument 0 32	電動式スライドドアのドアラッチ部の開閉スイッチの取付位置が不適切
+T2	Connective 38 40	ため
+T3	Argument 41 53	手動でドアを強めに閉める
+T4	Connective 53 54	と
+T5	Argument 55 76	スイッチスプリングとラチェットレバーが干渉
+T6	Connective 84 88	そのため
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+T7	Argument 89 102	ドアラッチが確実に作動せず
+T8	Connective 102 103	、
+T9	Argument 103 105	最悪
+T10	Connective 106 108	場合
+T11	Argument 109 117	ドアが閉まらない
+R6	REASON Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T11	
+R9	CONDITION Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	

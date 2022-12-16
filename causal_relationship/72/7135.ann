@@ -1,0 +1,9 @@
+T1	Argument 6 36	エアバッグコントロール装置にセンタコンソール及び防音材が干渉
+T2	Connective 45 47	ため
+T3	Argument 48 79	当該エアバッグコントロール装置内の衝撃波センサーに影響を及ぼす
+T4	Connective 84 85	、
+T5	Argument 85 120	衝突時のエアバッグが展開するまでの時間が設計上の所要の時間より遅くなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

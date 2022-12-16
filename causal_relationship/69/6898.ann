@@ -1,0 +1,17 @@
+T1	Argument 0 70	バスの非常口横の前転倒式座席において、転倒防止金具の衝突時または危険を回避するために急制動をかけた際に生じる想定以上の荷重に対する強度が不足
+T2	Connective 80 84	そのため
+T3	Argument 90 95	金具が変形
+T4	Connective 96 97	、
+T5	Argument 97 99	最悪
+T6	Connective 100 102	場合
+T7	Argument 103 115	座席の転倒を防止できない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 85 88	急制動
+T9	Connective 88 89	時
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	

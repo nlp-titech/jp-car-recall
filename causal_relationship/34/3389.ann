@@ -1,0 +1,25 @@
+T1	Argument 0 30	農耕トラクタの制動装置において、ブレーキバルブの構造が不適切
+T2	Connective 31 33	ため
+T3	Argument 35 50	イコライザバルブ内に圧力が残る
+T4	Connective 56 60	そのため
+T5	Argument 61 75	そのままの状態で使用を続ける
+T6	Connective 75 76	と
+T7	Argument 77 93	ブレーキバルブ内の油温上昇に伴い
+T8	Argument 115 117	最悪
+T9	Connective 118 120	場合
+T10	Argument 121 137	ブレーキペダルを踏み込めなくなる
+R1	RESULT Arg1:T9 Arg2:T10	
+R2	CONDITION Arg1:T9 Arg2:T8	
+T11	Connective 114 115	、
+R3	RESULT Arg1:T11 Arg2:T10	
+R4	REASON Arg1:T11 Arg2:T12	
+R5	RESULT Arg1:T6 Arg2:T12	
+R6	CONDITION Arg1:T6 Arg2:T5	
+R7	RESULT Arg1:T4 Arg2:T12	
+R8	REASON Arg1:T4 Arg2:T3	
+R9	RESULT Arg1:T2 Arg2:T3	
+R10	REASON Arg1:T2 Arg2:T1	
+T12	Argument 94 112	イコライザバルブ内に残った圧力が高く
+T13	Connective 93 94	、
+R11	REASON Arg1:T13 Arg2:T7	
+R12	RESULT Arg1:T13 Arg2:T12	

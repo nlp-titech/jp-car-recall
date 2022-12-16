@@ -1,0 +1,13 @@
+T1	Argument 0 19	エンジンＥＣＵの制御プログラムが不適切
+T2	Connective 20 22	ため
+T3	Argument 23 43	燃料ポンプの圧力調整弁が固着したと誤判定
+T4	Connective 51 55	その場合
+T5	Argument 56 66	エンジン警告灯が点灯
+T6	Argument 81 92	排出ガスが基準値を超過
+R1	RESULT Arg1:T4 Arg2:T5	
+R2	RESULT Arg1:T4 Arg2:T6	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T2 Arg2:T3	
+R5	REASON Arg1:T2 Arg2:T1	
+T7	Argument 68 73	出力が制限
+R6	RESULT Arg1:T4 Arg2:T7	

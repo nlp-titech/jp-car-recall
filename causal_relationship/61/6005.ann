@@ -1,0 +1,12 @@
+T1	Argument 11 35	ケーブルエンドへのインナワイヤ鋳込み位置が不適切
+T2	Connective 36 38	ため
+T3	Argument 53 71	パーキングレバーの操作を繰り返し行う
+T4	Connective 71 72	と
+T5	Argument 73 83	ケーブルエンドが破損
+T6	Argument 85 98	前輪ブレーキが利かなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	RESULT Arg1:T2 Arg2:T6	
+R4	CONDITION Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T4 Arg2:T5	
+R6	RESULT Arg1:T4 Arg2:T6	

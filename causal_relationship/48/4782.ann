@@ -1,0 +1,14 @@
+T2	Connective 59 60	、
+T3	Argument 60 79	クラッチ操作及びハンドル操作が重くなる
+T4	Argument 83 93	作動油が排気管に滴下
+T5	Connective 94 95	、
+T6	Argument 95 100	火災に至る
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T4	
+R4	REASON Arg1:T5 Arg2:T4	
+R5	RESULT Arg1:T5 Arg2:T6	
+T7	Connective 39 42	により
+T1	Argument 0 39	クラッチプレッシャパイプのクラッチレリーズシリンダ取付部において、走行中の振動
+T8	Argument 43 59	当該パイプ取付部より作動油が漏れ
+R6	REASON Arg1:T7 Arg2:T1	
+R7	RESULT Arg1:T7 Arg2:T8	

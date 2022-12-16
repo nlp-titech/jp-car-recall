@@ -1,0 +1,23 @@
+T1	Argument 19 54	締め付けボルトで電気配線（エンジンルームワイヤーハーネス）の被覆を損傷
+T2	Connective 63 67	そのため
+T3	Argument 68 74	走行中の振動
+T4	Connective 74 75	で
+T5	Argument 75 83	配線の被覆が破れ
+T6	Connective 89 90	、
+T8	Argument 113 119	警音器が不鳴
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	CONDITION Arg1:T6 Arg2:T9	
+R7	RESULT Arg1:T6 Arg2:T8	
+T11	Argument 90 111	右側前照灯、前部霧灯、車幅灯、制動灯の不灯
+R10	RESULT Arg1:T6 Arg2:T11	
+T7	Connective 83 84	て
+T9	Argument 84 86	短絡
+R6	REASON Arg1:T7 Arg2:T5	
+R8	RESULT Arg1:T7 Arg2:T9	
+T10	Argument 0 16	エンジンサイドマウント取付け作業
+T12	Connective 16 17	時
+R9	CONDITION Arg1:T12 Arg2:T10	
+R11	RESULT Arg1:T12 Arg2:T1	

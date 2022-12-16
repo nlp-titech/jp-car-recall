@@ -1,0 +1,17 @@
+T1	Argument 0 12	車枠において、強度が不足
+T2	Argument 19 66	右側車枠のクロスメンバー取付部付近とエンドクロスメンバーの左側車枠への取付部付近に亀裂が生じる
+T3	Argument 78 83	車枠が折損
+T4	Argument 85 92	走行不能となる
+T5	Connective 16 18	ため
+T6	Connective 71 72	、
+T7	Connective 84 85	て
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 72 74	最悪
+T9	Connective 75 77	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	

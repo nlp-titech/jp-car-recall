@@ -1,0 +1,33 @@
+T1	Argument 8 27	クランクシャフトの製造工程管理が不適切
+T2	Connective 28 30	ため
+T3	Argument 31 50	プーリーボルト取付ネジ部に残留物が付着
+T4	Connective 59 60	、
+T5	Argument 60 76	プーリー取付ボルトの締付力が不足
+T6	Connective 77 78	、
+T7	Argument 78 92	そのままの状態で使用を続ける
+T8	Connective 92 93	と
+T9	Argument 94 102	当該ボルトが弛み
+T10	Connective 102 103	、
+T11	Argument 103 108	異音が発生
+T13	Argument 110 112	最悪
+T14	Connective 113 115	場合
+T15	Argument 116 137	クランクプーリーから補助駆動用ベルトが外れ
+T16	Connective 137 138	、
+T17	Argument 138 146	充電警告灯が点灯
+T18	Argument 153 164	ハンドルの操作力が増大
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	RESULT Arg1:T6 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R12	CONDITION Arg1:T14 Arg2:T13	
+R13	RESULT Arg1:T14 Arg2:T15	
+R15	REASON Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T17	
+R17	RESULT Arg1:T16 Arg2:T18	
+R11	RESULT Arg1:T10 Arg2:T15	

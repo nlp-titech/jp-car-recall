@@ -1,0 +1,32 @@
+T1	Argument 0 27	エンジン制御コンピュータ（ＥＣＵ）のプログラムが不適切
+T2	Connective 28 30	ため
+T3	Argument 31 45	車輪速データを正しく記憶せず
+T4	Connective 45 46	、
+T5	Argument 46 63	滑り易い路面を走行していると誤判定
+T6	Connective 71 75	そのため
+T7	Argument 76 92	走行中にエンジン回転が僅かに上昇
+T8	Connective 119 120	、
+T9	Argument 120 134	そのままの状態で使用を続ける
+T10	Connective 134 135	と
+T11	Argument 136 138	最悪
+T12	Connective 139 141	場合
+T13	Argument 142 149	シャフトが折損
+R1	RESULT Arg1:T12 Arg2:T13	
+R2	CONDITION Arg1:T12 Arg2:T11	
+R3	RESULT Arg1:T10 Arg2:T13	
+R4	CONDITION Arg1:T10 Arg2:T9	
+R5	RESULT Arg1:T8 Arg2:T13	
+R6	REASON Arg1:T8 Arg2:T7	
+R8	REASON Arg1:T6 Arg2:T5	
+R9	RESULT Arg1:T4 Arg2:T5	
+R10	REASON Arg1:T4 Arg2:T3	
+R11	RESULT Arg1:T2 Arg2:T3	
+R12	REASON Arg1:T2 Arg2:T1	
+T14	Argument 150 157	走行不能となる
+T15	Connective 149 150	し
+R13	REASON Arg1:T15 Arg2:T13	
+R14	RESULT Arg1:T15 Arg2:T14	
+T16	Argument 99 119	ドライブプーリシャフトに高い負荷が加わり
+R15	RESULT Arg1:T6 Arg2:T16	
+R16	REASON Arg1:T8 Arg2:T16	
+R7	RESULT Arg1:T6 Arg2:T7	

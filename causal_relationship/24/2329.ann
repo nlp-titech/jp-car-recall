@@ -1,0 +1,17 @@
+T1	Argument 0 25	車両に備えられている配線ボックスの防水処理が不適切
+T2	Argument 29 49	雨水等が配線をつたい配線ボックス内に浸入
+T3	Argument 62 81	配線ボックス内の走行リレーボードが腐食
+T4	Argument 88 96	走行できなくなる
+T5	Connective 26 28	ため
+T6	Connective 57 61	そのため
+T7	Connective 82 83	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 83 85	最悪
+T9	Connective 86 88	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T4	

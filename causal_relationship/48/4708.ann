@@ -1,0 +1,13 @@
+T1	Argument 0 42	後車軸のスタビライザ・シャックルを車体に取り付けるナットの締結部付近の面が平滑でない
+T2	Connective 42 44	ため
+T3	Argument 45 58	取付けナットの締結力が減少
+T4	Connective 59 60	て
+T5	Argument 60 62	緩み
+T6	Argument 63 68	異音が発生
+T7	Connective 62 63	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	

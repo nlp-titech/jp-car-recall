@@ -1,0 +1,21 @@
+T1	Argument 0 45	後部ドアのパネル内部にあるパワーウインド用電気配線において、当該電気配線がパネル端部と干渉
+T2	Connective 54 55	、
+T3	Argument 55 69	そのままの状態で使用を続ける
+T4	Connective 69 70	と
+T5	Argument 71 80	当該電気配線が損傷
+T6	Connective 81 82	、
+T7	Argument 82 84	最悪
+T8	Connective 85 87	場合
+T9	Argument 88 90	短絡
+T10	Connective 91 92	て
+T11	Argument 92 97	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	

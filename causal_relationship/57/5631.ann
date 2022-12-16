@@ -1,0 +1,29 @@
+T1	Argument 0 36	燃料ポンプと燃料タンク左室を繋ぐ燃料ホースにおいて、当該ホースが長すぎる
+T2	Argument 39 54	当該ポンプを燃料タンクに組付け
+T3	Argument 58 64	ホースが折れ
+T4	Argument 76 94	燃料タンク右室に燃料が送られなくなり
+T5	Argument 95 111	燃料タンク右室内の燃料が無くなる
+T6	Argument 113 122	燃料の供給が出来ず
+T7	Argument 123 127	エンスト
+T9	Connective 36 38	ため
+T10	Connective 55 57	際に
+T11	Connective 71 75	そのため
+T12	Connective 94 95	、
+T13	Connective 111 112	と
+T14	Connective 122 123	、
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T3	
+R3	CONDITION Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+R7	REASON Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T6	
+R9	CONDITION Arg1:T13 Arg2:T5	
+R10	RESULT Arg1:T13 Arg2:T6	
+R11	REASON Arg1:T14 Arg2:T6	
+R12	RESULT Arg1:T14 Arg2:T7	
+R5	REASON Arg1:T11 Arg2:T3	
+T8	Connective 128 129	、
+T15	Argument 129 136	再始動できない
+R13	REASON Arg1:T8 Arg2:T7	
+R14	RESULT Arg1:T8 Arg2:T15	

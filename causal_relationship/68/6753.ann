@@ -1,0 +1,9 @@
+T1	Argument 0 19	ロックオフデバイス等構成部品を複数変更
+T2	Connective 21 23	ため
+T3	Argument 24 42	衝突時の幼児の頭部移動量が過大となり
+T4	Connective 42 43	、
+T5	Argument 43 53	保安基準に適合しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

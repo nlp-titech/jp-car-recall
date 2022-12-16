@@ -1,0 +1,19 @@
+T1	Argument 9 34	リヤバンパの近くにある排気管の開口部の位置が不適切
+T2	Connective 35 37	ため
+T3	Argument 38 59	排気管保持用のゴムリングが経年変化で伸びる
+T4	Connective 61 64	により
+T5	Argument 65 87	開口方向がずれてリヤバンパ内に排気ガスが流入
+T6	Connective 88 89	、
+T7	Argument 101 117	後面右側の灯器及び電気配線が溶損
+T8	Argument 125 149	尾灯、制動灯、方向指示器及び非常点滅表示灯が点灯
+T9	Connective 124 125	、
+R1	REASON Arg1:T4 Arg2:T3	
+R2	REASON Arg1:T2 Arg2:T1	
+R3	RESULT Arg1:T2 Arg2:T5	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+T10	Argument 151 158	作動しなくなる
+R9	RESULT Arg1:T9 Arg2:T10	

@@ -1,0 +1,21 @@
+T1	Argument 0 32	電子燃料噴射装置用燃料ポンプのモーター部の樹脂成形の一部に不適切
+T2	Argument 55 62	ブラシ部が摩耗
+T3	Argument 70 85	当該燃料ポンプが作動しなくなり
+T4	Argument 86 92	原動機が停止
+T5	Connective 38 39	、
+T6	Connective 63 64	、
+T7	Connective 85 86	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 39 53	そのままの状態で使用を続ける
+T9	Connective 53 54	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T2	
+T10	Argument 64 66	最悪
+T11	Connective 67 69	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	

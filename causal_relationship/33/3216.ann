@@ -1,0 +1,37 @@
+T1	Argument 0 94	トラックのインパネ下側に設置されているＡＢＳ、機械式自動変速機、ＡＴまたは四輪駆動制御ユニットにおいて、上方に設置されているヒータ内を循環する冷却液（不凍液）のメンテナンス（交換）が不適切
+T2	Connective 97 98	、
+T3	Argument 98 107	冷却回路に錆が発生
+T4	Connective 109 112	ことで
+T5	Argument 113 124	ヒータコアに亀裂が発生
+T6	Connective 125 126	、
+T7	Argument 126 132	冷却液が漏れ
+T8	Connective 150 154	そのため
+T9	Argument 155 165	そのまま使用を続ける
+T10	Connective 165 166	と
+T11	Argument 167 182	制御ユニット内部に冷却液が浸入
+T12	Connective 183 184	、
+T13	Argument 184 191	制御回路の短絡
+T14	Argument 202 210	制御に支障を来し
+R1	RESULT Arg1:T12 Arg2:T13	
+R3	REASON Arg1:T12 Arg2:T11	
+R4	RESULT Arg1:T10 Arg2:T11	
+R5	CONDITION Arg1:T10 Arg2:T9	
+R6	RESULT Arg1:T8 Arg2:T11	
+R7	REASON Arg1:T8 Arg2:T16	
+R8	RESULT Arg1:T6 Arg2:T7	
+R9	REASON Arg1:T6 Arg2:T5	
+R10	RESULT Arg1:T4 Arg2:T5	
+R11	REASON Arg1:T4 Arg2:T3	
+R12	RESULT Arg1:T2 Arg2:T3	
+R13	REASON Arg1:T2 Arg2:T1	
+T15	Connective 132 133	て
+T16	Argument 133 144	制御ユニットに滴下する
+R14	REASON Arg1:T15 Arg2:T7	
+R15	RESULT Arg1:T15 Arg2:T16	
+T17	Connective 191 194	により
+T18	Argument 194 200	警告灯が点灯
+R16	REASON Arg1:T17 Arg2:T13	
+R17	RESULT Arg1:T17 Arg2:T18	
+T20	Argument 215 220	火災に至る
+R2	RESULT Arg1:T17 Arg2:T14	
+R18	RESULT Arg1:T17 Arg2:T20	

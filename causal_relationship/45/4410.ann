@@ -1,0 +1,29 @@
+T1	Argument 8 24	電動ファンモーターの放熱性が不足
+T2	Connective 28 30	ため
+T3	Argument 46 48	劣化
+T4	Connective 48 49	、
+T5	Argument 49 51	損傷
+T6	Connective 52 53	、
+T7	Argument 53 66	電動ファンが作動不良となり
+T8	Connective 66 67	、
+T9	Argument 73 86	電動ファンの電気配線が過熱
+T10	Connective 87 88	、
+T11	Argument 88 93	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 67 69	最悪
+T13	Connective 70 72	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T9	
+T14	Argument 31 43	ファンモーターの軸受が熱
+T15	Connective 43 46	により
+R13	REASON Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	

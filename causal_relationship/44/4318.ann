@@ -1,0 +1,33 @@
+T1	Argument 0 47	農耕トラクタの油圧配管において、走行系バルブから作業機用バルブへの油圧パイプの取付構造が不適切
+T2	Connective 48 50	ため
+T3	Argument 69 77	過度の応力が発生
+T4	Connective 85 89	そのため
+T5	Argument 106 117	油圧パイプに亀裂が生じ
+T6	Connective 117 118	、
+T7	Argument 118 124	油漏れが発生
+T8	Connective 125 126	て
+T9	Argument 133 150	トランスミッションが作動不良となり
+T10	Connective 150 151	、
+T11	Argument 151 158	走行不能になる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 51 64	取付部付近に土や石が挟まる
+T13	Connective 66 69	により
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T3	
+T14	Argument 90 104	そのままの状態で使用を続ける
+T15	Connective 104 105	と
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T5	
+T16	Argument 127 129	最悪
+T17	Connective 130 132	場合
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T9	

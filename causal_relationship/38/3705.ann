@@ -1,0 +1,37 @@
+T1	Argument 22 54	補機ベルトからの圧力に対してプーリー内のベアリングの耐久性が不足
+T2	Argument 61 75	エンジンの回転変動の繰り返し
+T3	Argument 78 88	当該ベアリングが破損
+T4	Argument 101 111	そのまま使用を続ける
+T5	Argument 113 122	当該プーリーが脱落
+T6	Argument 124 132	充電警告灯が点灯
+T7	Argument 134 136	最悪
+T8	Argument 144 148	エンスト
+T10	Connective 58 60	ため
+T11	Connective 75 78	により
+T12	Connective 96 100	そのため
+T13	Connective 111 112	と
+T14	Connective 123 124	て
+T15	Connective 133 134	、
+T16	Connective 137 139	場合
+R1	REASON Arg1:T10 Arg2:T1	
+R2	RESULT Arg1:T10 Arg2:T3	
+R3	REASON Arg1:T11 Arg2:T2	
+R4	RESULT Arg1:T11 Arg2:T3	
+R5	REASON Arg1:T12 Arg2:T3	
+R6	RESULT Arg1:T12 Arg2:T5	
+R7	CONDITION Arg1:T13 Arg2:T4	
+R8	RESULT Arg1:T13 Arg2:T5	
+R9	REASON Arg1:T14 Arg2:T5	
+R10	RESULT Arg1:T14 Arg2:T6	
+R11	REASON Arg1:T15 Arg2:T5	
+R12	RESULT Arg1:T15 Arg2:T8	
+R13	CONDITION Arg1:T16 Arg2:T7	
+R14	RESULT Arg1:T16 Arg2:T8	
+T9	Argument 140 143	走行中
+T17	Connective 143 144	に
+R15	CONDITION Arg1:T17 Arg2:T9	
+R16	RESULT Arg1:T17 Arg2:T8	
+T18	Connective 148 149	し
+T19	Argument 149 158	再始動できなくなる
+R17	REASON Arg1:T18 Arg2:T8	
+R18	RESULT Arg1:T18 Arg2:T19	

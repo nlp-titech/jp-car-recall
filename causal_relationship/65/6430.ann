@@ -1,0 +1,21 @@
+T2	Connective 32 34	ため
+T3	Argument 35 52	誤った材料でドライブシャフトが製造
+R1	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 63 67	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 68 82	そのままの状態で使用を続ける
+T6	Connective 82 83	と
+R5	CONDITION Arg1:T6 Arg2:T5	
+T8	Connective 105 106	、
+T9	Argument 106 121	後輪へ駆動力が伝達できなくなる
+R7	RESULT Arg1:T8 Arg2:T9	
+T7	Argument 84 89	駆動トルク
+T10	Connective 89 93	によって
+T11	Argument 93 104	ドライブシャフトが破断
+R4	REASON Arg1:T8 Arg2:T11	
+R6	REASON Arg1:T10 Arg2:T7	
+R8	RESULT Arg1:T10 Arg2:T11	
+R9	RESULT Arg1:T6 Arg2:T11	
+R10	RESULT Arg1:T4 Arg2:T11	
+T1	Argument 23 31	資材管理が不適切
+R2	REASON Arg1:T2 Arg2:T1	

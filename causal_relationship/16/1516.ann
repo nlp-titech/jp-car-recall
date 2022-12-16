@@ -1,0 +1,29 @@
+T1	Argument 0 39	空気ばね緩衝装置付トラクタにおいて、燃料タンクを固定するバンドの締結力が不十分
+T2	Argument 43 63	悪路走行時等の過大な衝撃を繰り返し受ける
+T3	Argument 65 73	燃料タンクが動く
+T5	Argument 128 134	燃料が漏れる
+T4	Argument 96 116	燃料タンクが、燃料フィルタ取付金具と干渉
+T6	Argument 118 120	損傷
+T7	Connective 40 42	ため
+T8	Connective 63 64	と
+T9	Connective 79 83	そのため
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T3	
+R3	CONDITION Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+T10	Connective 117 118	て
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T6	
+T11	Connective 121 122	、
+R9	REASON Arg1:T11 Arg2:T6	
+R10	RESULT Arg1:T11 Arg2:T5	
+T12	Argument 84 94	そのまま使用を続ける
+T13	Connective 94 95	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T4	
+T14	Argument 122 124	最悪
+T15	Connective 125 127	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T5	

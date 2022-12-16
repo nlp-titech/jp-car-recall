@@ -1,0 +1,25 @@
+T1	Argument 13 41	アクセルケーブルをアクセルペダルに組み付ける作業が不適切
+T2	Connective 42 44	ため
+T3	Argument 44 62	アクセルケーブルの樹脂製留め具を破損
+T4	Connective 69 70	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 92 112	アクセルケーブルがアクセルペダルから外れ
+T6	Connective 112 113	て
+T7	Argument 113 122	原動機を操作できず
+T8	Connective 122 123	、
+T9	Argument 123 131	走行できなくなる
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 70 84	そのままの状態で使用を続ける
+T11	Connective 84 85	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	
+T12	Argument 86 88	最悪
+T13	Connective 89 91	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T5	

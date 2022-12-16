@@ -1,0 +1,17 @@
+T1	Argument 0 26	転倒時エンジン停止センサーにおいて、防振構造が不適切
+T2	Connective 27 29	ため
+T3	Argument 29 42	特定のエンジン回転数で共振
+T4	Connective 43 44	、
+T5	Argument 44 71	センサー内部の傾き検知用振り子が転倒検知位置までずれる
+T6	Connective 77 81	そのため
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+T7	Argument 82 95	当該センサーが転倒と誤検知
+T8	Connective 96 97	て
+T9	Argument 98 111	走行中に突然エンジンが停止
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	

@@ -1,0 +1,29 @@
+T1	Argument 23 43	前側マウントブラケットの鋳造方法が不適切
+T2	Connective 46 48	から
+T3	Argument 48 53	強度が不足
+T4	Connective 57 59	ため
+T5	Argument 72 85	当該ブラケットに亀裂が発生
+T6	Connective 92 93	、
+T7	Argument 109 117	ブラケットが破損
+T8	Connective 118 119	て
+T9	Argument 119 132	ショックアブソーバーが脱落
+T10	Connective 133 134	、
+T11	Argument 134 143	走行安定性が損なわ
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 60 69	走行中の振動や衝撃
+T13	Connective 69 72	により
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T5	
+T14	Argument 93 107	そのままの状態で使用を続ける
+T15	Connective 107 108	と
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T7	

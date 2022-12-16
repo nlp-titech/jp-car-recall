@@ -1,0 +1,21 @@
+T1	Argument 0 41	車室内の電気配線において、荷箱リヤゲート固定用電磁便の電気配線に保護ヒューズがない
+T2	Argument 58 70	当該電気配線が溶損・発煙
+T3	Argument 81 88	電気配線に損傷
+T4	Argument 93 106	灯火器類等が作動しなくなる
+T5	Connective 41 43	ため
+T6	Connective 71 72	、
+T7	Connective 92 93	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 44 53	当該電気配線が短絡
+T9	Connective 55 57	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+T10	Argument 72 74	最悪
+T11	Connective 75 77	場合
+R8	CONDITION Arg1:T11 Arg2:T10	
+R9	RESULT Arg1:T9 Arg2:T2	
+R10	RESULT Arg1:T11 Arg2:T3	

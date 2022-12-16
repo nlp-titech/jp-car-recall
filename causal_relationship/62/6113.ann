@@ -1,0 +1,37 @@
+T1	Argument 0 12	ハンドル位置やシート位置
+T2	Connective 12 16	によって
+T3	Argument 17 39	運転中に運転者の膝とイグニッションキーが接触
+T4	Connective 40 41	て
+T5	Argument 42 64	イグニッションキーが“ＲＵＮ”位置以外に動い
+T6	Connective 74 78	その場合
+T7	Argument 79 88	車両電源が断たれる
+T8	Connective 88 90	ため
+T9	Argument 91 98	エンジンが停止
+T10	Argument 105 127	ブレーキ補助やパワーステアリング等が機能せず
+T11	Argument 128 139	運転操作に困難をきたす
+T12	Connective 104 105	、
+T13	Connective 127 128	、
+T14	Connective 147 148	で
+T15	Argument 148 154	事故を起こし
+T16	Connective 155 157	場合
+T17	Argument 158 169	エアバッグが展開しない
+T18	Connective 174 175	、
+T19	Argument 175 180	被害が拡大
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R10	REASON Arg1:T12 Arg2:T9	
+R11	RESULT Arg1:T12 Arg2:T11	
+R12	REASON Arg1:T13 Arg2:T10	
+R13	RESULT Arg1:T13 Arg2:T11	
+R14	CONDITION Arg1:T14 Arg2:T11	
+R15	RESULT Arg1:T14 Arg2:T17	
+R16	CONDITION Arg1:T16 Arg2:T15	
+R17	RESULT Arg1:T16 Arg2:T17	
+R18	REASON Arg1:T18 Arg2:T17	
+R19	RESULT Arg1:T18 Arg2:T19	

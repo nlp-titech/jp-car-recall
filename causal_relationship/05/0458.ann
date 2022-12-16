@@ -1,0 +1,33 @@
+T1	Argument 0 19	電気装置において、整流器の放熱性が不足
+T2	Argument 26 40	内部の半田付け部に亀裂を生じ
+T3	Argument 41 54	定電圧機能が作動しなくなり
+T4	Argument 55 67	蓄電池が過充電状態となる
+T5	Argument 73 79	電解液が減少
+T6	Argument 81 93	蓄電池の機能が損なわれる
+T7	Argument 98 121	灯火装置及び点火装置の電気回路に過電圧がかかり
+T8	Argument 122 159	前照灯、制動灯、尾灯、番号灯、速度計照明及び方向指示器のフィラメントが溶損
+T9	Argument 161 172	点灯又は作動しなくなる
+T10	Argument 177 195	原動機が停止し、再始動が出来なくなる
+T26	Connective 23 25	ため
+T27	Connective 40 41	て
+T28	Connective 54 55	、
+T29	Connective 72 73	、
+T30	Connective 80 81	て
+T32	Connective 121 122	、
+T33	Connective 160 161	て
+R1	REASON Arg1:T26 Arg2:T1	
+R2	RESULT Arg1:T26 Arg2:T2	
+R3	REASON Arg1:T27 Arg2:T2	
+R4	RESULT Arg1:T27 Arg2:T3	
+R5	REASON Arg1:T28 Arg2:T3	
+R6	RESULT Arg1:T28 Arg2:T4	
+R7	REASON Arg1:T29 Arg2:T4	
+R8	RESULT Arg1:T29 Arg2:T5	
+R9	REASON Arg1:T30 Arg2:T5	
+R10	RESULT Arg1:T30 Arg2:T6	
+R13	REASON Arg1:T32 Arg2:T7	
+R14	RESULT Arg1:T32 Arg2:T8	
+R15	REASON Arg1:T33 Arg2:T8	
+R16	RESULT Arg1:T33 Arg2:T9	
+R11	RESULT Arg1:T30 Arg2:T7	
+R12	RESULT Arg1:T33 Arg2:T10	

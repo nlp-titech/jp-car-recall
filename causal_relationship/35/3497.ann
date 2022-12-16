@@ -1,0 +1,9 @@
+T1	Argument 0 24	デジタル式運行記録計組み付け時の作業指示が不適切
+T2	Connective 25 27	ため
+T3	Argument 28 38	初期設定をしていない
+T4	Connective 39 43	そのため
+T5	Argument 44 60	運行記録を記録することができない
+R1	RESULT Arg1:T4 Arg2:T5	
+R2	REASON Arg1:T4 Arg2:T3	
+R4	REASON Arg1:T2 Arg2:T1	
+R3	RESULT Arg1:T2 Arg2:T3	

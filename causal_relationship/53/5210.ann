@@ -1,0 +1,25 @@
+T1	Argument 10 31	燃料リターンパイプ取り付け部の成型が不適切
+T2	Connective 32 34	ため
+T3	Argument 44 61	当該パイプ取り付け部に亀裂を生じる
+T4	Connective 66 70	そのため
+T5	Argument 83 88	亀裂が拡大
+T6	Argument 96 102	燃料が漏れる
+T7	Connective 89 90	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	
+T8	Argument 35 41	車体の振動等
+T9	Connective 41 44	により
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 71 81	そのまま使用を続ける
+T11	Connective 81 82	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	
+T12	Argument 90 92	最悪
+T13	Connective 93 95	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T6	

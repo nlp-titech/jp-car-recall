@@ -1,0 +1,17 @@
+T1	Argument 24 45	燃料パイプ保護カバーの取り付け状態が不適切
+T2	Argument 57 59	最悪
+T3	Argument 63 69	走行中の振動
+T4	Argument 72 89	燃料パイプ保護カバーが車体から脱落
+T5	Argument 91 101	他の交通の妨げとなる
+T6	Connective 52 56	そのため
+T7	Connective 60 62	場合
+T8	Connective 69 72	により
+T9	Connective 90 91	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T4	
+R3	CONDITION Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T4	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	

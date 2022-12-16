@@ -1,0 +1,19 @@
+T1	Argument 13 31	ＦＣ昇圧コンバータの昇圧制御が不適切
+T3	Argument 45 70	ＦＣ昇圧コンバータの出力電圧が最大制御電圧を超える
+T4	Argument 81 89	警告灯が点灯する
+T5	Argument 93 104	燃料電池システムが停止
+T6	Argument 106 113	走行不能となる
+T7	Connective 32 34	ため
+T9	Connective 76 80	そのため
+T10	Connective 105 106	、
+R1	REASON Arg1:T7 Arg2:T1	
+R3	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	RESULT Arg1:T9 Arg2:T5	
+R8	REASON Arg1:T10 Arg2:T5	
+R9	RESULT Arg1:T10 Arg2:T6	
+T2	Argument 35 44	長い下り坂を走行中
+T8	Connective 44 45	に
+R2	CONDITION Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	

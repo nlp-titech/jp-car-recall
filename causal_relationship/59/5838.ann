@@ -1,0 +1,46 @@
+T1	Argument 18 61	バッテリープラスケーブルの絶縁固定体において、プラスチックロックの挿入が適切ではなかっ
+T2	Connective 62 64	ため
+T3	Argument 65 71	振動等の影響
+T4	Connective 71 74	により
+T5	Argument 75 90	絶縁固定体の車体への固定が緩む
+T6	Connective 97 101	その場合
+T7	Argument 102 106	接触不良
+T8	Connective 113 116	により
+T9	Argument 116 135	電装系システムに十分な電力が供給されず
+T10	Connective 135 136	、
+T11	Argument 136 143	エンジンが停止
+T12	Argument 214 216	最悪
+T13	Connective 217 219	場合
+T14	Argument 220 228	車両の火災に至る
+T15	Argument 163 170	接点間での放電
+T16	Connective 170 173	により
+T17	Argument 173 190	バッテリープラスケーブルが熱を持ち
+T18	Connective 189 190	ち
+T19	Argument 190 208	トランクルームのフロアパネルが焦げる
+T20	Connective 213 214	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T21	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T16 Arg2:T15	
+R12	RESULT Arg1:T16 Arg2:T17	
+R13	REASON Arg1:T18 Arg2:T17	
+R14	RESULT Arg1:T18 Arg2:T19	
+R15	REASON Arg1:T20 Arg2:T19	
+R16	RESULT Arg1:T20 Arg2:T14	
+R17	CONDITION Arg1:T13 Arg2:T12	
+R18	RESULT Arg1:T13 Arg2:T14	
+T21	Argument 109 113	絶縁不良
+R20	REASON Arg1:T8 Arg2:T21	
+R21	RESULT Arg1:T6 Arg2:T7	
+T22	Connective 143 144	し
+T23	Argument 144 153	再始動できなくなる
+R22	REASON Arg1:T22 Arg2:T11	
+R23	RESULT Arg1:T22 Arg2:T23	
+R19	RESULT Arg1:T6 Arg2:T15	

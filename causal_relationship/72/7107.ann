@@ -1,0 +1,17 @@
+T1	Argument 0 52	ＡＢＳ装置付教習車の主ブレーキにおいて、ＡＢＳが作動する強い制動を頻繁に繰り返すような特殊な使用を続ける
+T2	Connective 52 53	と
+T3	Argument 54 84	油圧ポンプの作動により油圧回路内に発生する高圧、大流量の液流
+T4	Connective 84 87	により
+T5	Argument 87 127	補助ブレーキ用シリンダー内のセンターバルブのゴム製バルブカップの一部が浮き上がり
+T6	Connective 127 128	、
+T7	Argument 128 139	バルブの気密性が損なわ
+T8	Connective 140 141	て
+T9	Argument 141 161	補助ブレーキの制動力に若干時間遅れが出る
+R1	CONDITION Arg1:T2 Arg2:T1	
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	

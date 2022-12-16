@@ -1,0 +1,25 @@
+T1	Argument 0 70	後軸差動装置の振動を低減するために装着されているダイナミックダンパーにおいて、ウエイト支持ゴムおよびウエイトの脱落を防止するピンの強度が不足
+T2	Argument 80 94	そのままの状態で使用を続ける
+T3	Argument 96 107	ウエイト支持ゴムが破損
+T4	Argument 113 118	ピンが折損
+T5	Argument 121 123	最悪
+T6	Argument 127 134	ウエイトが脱落
+T7	Argument 136 147	他の交通の安全を妨げる
+T8	Connective 75 79	そのため
+T9	Connective 94 95	と
+T10	Connective 108 109	、
+T11	Connective 119 120	て
+T12	Connective 124 126	場合
+T13	Connective 135 136	て
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T3	
+R3	CONDITION Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T3	
+R5	REASON Arg1:T10 Arg2:T3	
+R6	RESULT Arg1:T10 Arg2:T4	
+R7	REASON Arg1:T11 Arg2:T4	
+R8	RESULT Arg1:T11 Arg2:T6	
+R9	CONDITION Arg1:T12 Arg2:T5	
+R10	RESULT Arg1:T12 Arg2:T6	
+R11	REASON Arg1:T13 Arg2:T6	
+R12	RESULT Arg1:T13 Arg2:T7	

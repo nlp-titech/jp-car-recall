@@ -1,0 +1,9 @@
+T1	Argument 0 28	車両の前面に備えられたウインドシールドの取付方法が不適切
+T3	Argument 32 41	高速走行時の風圧等
+T4	Argument 44 57	当該ウインドシールドが脱落
+T5	Connective 29 31	ため
+T7	Connective 41 44	により
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T4	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	

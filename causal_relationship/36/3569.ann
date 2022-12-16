@@ -1,0 +1,17 @@
+T1	Argument 0 13	後部座席の製造指示が不適切
+T2	Connective 14 16	ため
+T3	Argument 17 44	座席を車体へ固定するためのラッチの内部部品の隙間が狭い
+T4	Connective 50 54	そのため
+T5	Argument 55 71	ロック解除レバーの動きが悪くなり
+T6	Argument 72 74	最悪
+T7	Connective 71 72	、
+T8	Connective 75 77	場合
+T9	Argument 78 99	後部座席が確実に固定することができなくなる
+R1	RESULT Arg1:T8 Arg2:T9	
+R2	CONDITION Arg1:T8 Arg2:T6	
+R3	RESULT Arg1:T7 Arg2:T9	
+R4	REASON Arg1:T7 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T5	
+R6	REASON Arg1:T4 Arg2:T3	
+R7	RESULT Arg1:T2 Arg2:T3	
+R8	REASON Arg1:T2 Arg2:T1	

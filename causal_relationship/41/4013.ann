@@ -1,0 +1,29 @@
+T1	Argument 15 35	運転者席下側配電箱内の配線の配索が不適切
+T2	Argument 39 47	側面パネル取付け
+T3	Argument 49 56	配線を挟み込ん
+T4	Argument 68 78	そのまま使用を続ける
+T5	Argument 80 88	配線の被覆が損傷
+T6	Argument 90 92	短絡
+T7	Argument 94 96	最悪
+T8	Argument 100 111	扉の開閉ができなくなる
+T9	Connective 36 38	ため
+T10	Connective 47 49	時に
+T11	Connective 63 67	そのため
+T12	Connective 78 79	と
+T13	Connective 89 90	て
+T14	Connective 93 94	、
+T15	Connective 97 99	場合
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T3	
+R3	CONDITION Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T3	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T5	
+R7	CONDITION Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T5	
+R9	REASON Arg1:T13 Arg2:T5	
+R10	RESULT Arg1:T13 Arg2:T6	
+R11	REASON Arg1:T14 Arg2:T6	
+R12	RESULT Arg1:T14 Arg2:T8	
+R13	CONDITION Arg1:T15 Arg2:T7	
+R14	RESULT Arg1:T15 Arg2:T8	

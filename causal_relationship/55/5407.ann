@@ -1,0 +1,13 @@
+T1	Argument 5 58	座席ベルトプリテンショナ（衝突時に座席ベルトの帯部を引き締める装置）を作動させる電子制御プログラムが不適切
+T2	Connective 59 61	ため
+T3	Argument 78 92	座席ベルトがバックルから外れ
+T4	Connective 92 93	、
+T5	Argument 93 104	乗員を拘束できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 62 76	衝突の際のプリテンショナ作動
+T7	Connective 76 78	時に
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	

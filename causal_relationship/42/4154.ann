@@ -1,0 +1,29 @@
+T1	Argument 10 38	サンルーフガラスの外枠部において、樹脂材料の選定が不適切
+T2	Connective 39 41	ため
+T3	Argument 53 69	サンルーフガラスとの接着力が低下
+T4	Connective 77 81	そのため
+T5	Argument 94 110	サンルーフガラスが外枠部から剥離
+T6	Argument 131 142	サンルーフガラスが脱落
+T7	Connective 111 112	、
+R1	REASON Arg1:T7 Arg2:T5	
+R2	RESULT Arg1:T7 Arg2:T6	
+T8	Argument 118 127	走行中の振動や風圧
+T9	Connective 127 131	によって
+R3	REASON Arg1:T9 Arg2:T8	
+R4	RESULT Arg1:T9 Arg2:T6	
+T10	Argument 112 114	最悪
+T11	Connective 115 117	場合
+R5	CONDITION Arg1:T11 Arg2:T10	
+R6	RESULT Arg1:T11 Arg2:T8	
+R7	REASON Arg1:T4 Arg2:T3	
+R8	RESULT Arg1:T4 Arg2:T5	
+R9	REASON Arg1:T2 Arg2:T1	
+R10	RESULT Arg1:T2 Arg2:T3	
+T18	Argument 82 92	そのまま使用を続ける
+T19	Connective 92 93	と
+R11	CONDITION Arg1:T19 Arg2:T18	
+R12	RESULT Arg1:T19 Arg2:T5	
+T20	Argument 42 50	温度・湿度の変化
+T21	Connective 50 53	により
+R13	REASON Arg1:T21 Arg2:T20	
+R14	RESULT Arg1:T21 Arg2:T3	

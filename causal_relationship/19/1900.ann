@@ -1,0 +1,13 @@
+T1	Argument 0 28	低床３軸バラ積み緩和トレーラにおいて、フレーム強度が不足
+T2	Connective 32 34	ため
+T3	Argument 35 57	第１軸前方のクロスメンバー取付部に亀裂が発生
+T4	Connective 65 66	。
+T5	Argument 66 68	最悪
+T6	Connective 69 71	場合
+T7	Argument 72 81	走行安定性を損なう
+R1	REASON Arg1:T4 Arg2:T3	
+R2	RESULT Arg1:T4 Arg2:T7	
+R3	CONDITION Arg1:T6 Arg2:T5	
+R4	RESULT Arg1:T6 Arg2:T7	
+R5	REASON Arg1:T2 Arg2:T1	
+R6	RESULT Arg1:T2 Arg2:T3	

@@ -1,0 +1,17 @@
+T1	Argument 1 20	燃料ポンプフランジの締付けトルクが不足
+T2	Connective 24 26	ため
+T3	Argument 41 55	当該フランジ部から燃料が漏れ
+T4	Connective 55 56	、
+T5	Argument 62 67	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 27 37	燃料タンク内圧の上昇
+T7	Connective 37 40	により
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 56 58	最悪
+T9	Connective 59 61	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

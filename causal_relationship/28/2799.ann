@@ -1,0 +1,9 @@
+T1	Argument 0 39	方向指示器用のフラッシャリレーユニットにおいて、故障時の点滅回数が不適切に調整
+T2	Connective 48 52	そのため
+T5	Argument 80 116	方向指示器が故障した場合に、運転者席の作動状態表示装置が適切に作動しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+T6	Argument 53 67	そのままの状態で使用を続ける
+T7	Connective 67 68	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T5	

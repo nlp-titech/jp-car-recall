@@ -1,0 +1,17 @@
+T1	Connective 63 65	ため
+T2	Argument 0 62	大型観光バスのスイング扉挟み込み防止機構用スイッチの防水性が不適切及び扉ロック位置を検出するスイッチ上部のカバー形状が不適切
+T3	Argument 82 95	扉の挟み込み防止機構が作動
+T4	Connective 103 107	そのため
+T5	Argument 108 110	最悪
+R1	REASON Arg1:T1 Arg2:T2	
+R2	RESULT Arg1:T1 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+T6	Connective 111 113	場合
+T7	Argument 114 122	走行中に扉が開く
+R5	CONDITION Arg1:T6 Arg2:T5	
+T8	Argument 66 76	その両スイッチが故障
+T9	Connective 78 80	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R6	RESULT Arg1:T6 Arg2:T7	

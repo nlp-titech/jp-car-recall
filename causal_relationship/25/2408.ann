@@ -1,0 +1,17 @@
+T1	Argument 0 33	リヤコンビネーションランプの方向指示器の橙色レンズの耐候性が不十分
+T2	Connective 34 36	ため
+T3	Argument 55 67	徐々にレンズの橙色が褪色
+T4	Connective 75 79	そのため
+T7	Argument 98 120	当該灯火の灯光の色が保安基準に適合しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+T5	Argument 37 54	長期間にわたり強い日射にさらされる
+T6	Connective 54 55	と
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T3	
+T8	Argument 80 96	そのまま白色バルブの使用を続ける
+T9	Connective 96 97	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T7	

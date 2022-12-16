@@ -1,0 +1,9 @@
+T1	Argument 0 30	エアバッグ作動用センサーに車体の下方からの衝撃に反応しやすい
+T2	Connective 35 37	ため
+T3	Argument 38 45	車体下面を強打
+T4	Connective 47 49	場合
+T5	Argument 50 58	エアバッグが開く
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	

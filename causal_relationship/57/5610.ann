@@ -1,0 +1,25 @@
+T1	Argument 1 29	タイロッドのアジャストスリーブの加工及び表面処理が不適切
+T2	Argument 33 39	ねじ山が損傷
+T3	Argument 41 49	嵌合がゆるくなる
+T4	Argument 61 71	そのまま使用を続ける
+T5	Argument 73 75	最悪
+T6	Argument 79 92	タイロッドエンドが抜け出し
+T7	Argument 93 100	操舵不能になる
+T8	Connective 30 32	ため
+T9	Connective 40 41	、
+T10	Connective 56 60	そのため
+T11	Connective 71 72	と
+T12	Connective 76 78	場合
+T13	Connective 92 93	、
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T2	
+R3	REASON Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T3	
+R5	REASON Arg1:T10 Arg2:T3	
+R6	RESULT Arg1:T10 Arg2:T6	
+R7	CONDITION Arg1:T11 Arg2:T4	
+R8	RESULT Arg1:T11 Arg2:T6	
+R9	CONDITION Arg1:T12 Arg2:T5	
+R10	RESULT Arg1:T12 Arg2:T6	
+R11	REASON Arg1:T13 Arg2:T6	
+R12	RESULT Arg1:T13 Arg2:T7	

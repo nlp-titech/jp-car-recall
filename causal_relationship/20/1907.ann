@@ -1,0 +1,29 @@
+T1	Argument 0 39	圧縮天然ガス自動車において、エンジンの電子制御コントローラのプログラムが不適切
+T2	Connective 43 45	ため
+T3	Argument 64 113	スロットルモーターと燃料噴射装置を駆動する電気駆動装置（ＥＤＵ）内のトランジスタに過大な電流が流れ
+T4	Connective 113 114	、
+T5	Argument 114 123	トランジスタが劣化
+T6	Connective 133 137	そのため
+T7	Argument 154 163	トランジスタが溶断
+T8	Argument 165 179	燃料噴射装置が作動しなくなり
+T9	Connective 164 165	、
+T10	Connective 179 180	、
+T11	Argument 186 205	走行中にエンストし、再始動できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+R9	REASON Arg1:T10 Arg2:T8	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 138 152	そのままの状態で使用を続ける
+T13	Connective 152 153	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T7	
+T14	Argument 180 182	最悪
+T15	Connective 183 185	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T11	

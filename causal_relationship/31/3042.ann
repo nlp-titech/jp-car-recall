@@ -1,0 +1,21 @@
+T1	Argument 0 50	サーキット走行向けにオイルクーラー等を架装した車両において、オイルホースを接続する継手の構造が不適切
+T2	Connective 51 53	ため
+T3	Argument 54 64	オイルのにじみが発生
+T4	Connective 72 76	そのため
+T5	Argument 77 91	そのままの状態で使用を続ける
+T6	Connective 91 92	と
+T7	Argument 93 106	継手よりオイル漏れを起こし
+T8	Connective 106 107	、
+T9	Argument 107 109	最悪
+T10	Connective 110 112	場合
+T11	Argument 113 120	エンジンが破損
+R1	RESULT Arg1:T10 Arg2:T11	
+R2	CONDITION Arg1:T10 Arg2:T9	
+R3	RESULT Arg1:T8 Arg2:T11	
+R4	REASON Arg1:T8 Arg2:T7	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	CONDITION Arg1:T6 Arg2:T5	
+R7	RESULT Arg1:T4 Arg2:T7	
+R8	REASON Arg1:T4 Arg2:T3	
+R10	RESULT Arg1:T2 Arg2:T3	
+R9	REASON Arg1:T2 Arg2:T1	

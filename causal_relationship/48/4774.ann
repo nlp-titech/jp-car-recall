@@ -1,0 +1,37 @@
+T1	Argument 9 27	冷却液循環用ゴムホースの材質が不適切
+T2	Connective 28 30	ため
+T3	Argument 47 60	当該ゴムホースに亀裂が生じ
+T4	Connective 60 61	、
+T5	Argument 61 70	冷却液が急激に漏れ
+T6	Connective 70 71	、
+T7	Argument 77 87	オーバーヒートに至り
+T8	Connective 87 88	、
+T9	Argument 88 94	原動機が停止
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 71 73	最悪
+T11	Connective 74 76	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T7	
+T12	Argument 31 45	そのままの状態で使用を続ける
+T13	Connective 45 46	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T3	
+T14	Argument 118 134	冷却液が排気管高温部分に滴下する
+T15	Connective 134 135	と
+R13	CONDITION Arg1:T15 Arg2:T14	
+T16	Argument 136 138	最悪
+T17	Connective 139 141	場合
+R14	CONDITION Arg1:T17 Arg2:T16	
+T18	Argument 142 146	発火する
+R15	RESULT Arg1:T17 Arg2:T18	
+T19	Argument 100 105	再始動不能
+R16	RESULT Arg1:T8 Arg2:T19	
+R17	RESULT Arg1:T15 Arg2:T18	
+R18	RESULT Arg1:T6 Arg2:T14	

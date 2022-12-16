@@ -1,0 +1,25 @@
+T1	Argument 0 47	原動機の制御コンピュータにおいて、コンピュータ内部の基盤取付け用ビスのねじ穴の加工形状が不適切
+T2	Argument 51 57	走行時の振動
+T3	Argument 60 65	ビスが外れ
+T4	Argument 66 94	当該ビスがコンピュータ内の電気回路でショートを引き起こし
+T5	Argument 95 104	エンジン不調となる
+T8	Connective 48 50	ため
+T9	Connective 57 60	により
+T10	Connective 65 66	、
+T11	Connective 94 95	て
+T12	Connective 109 110	、
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T3	
+R4	RESULT Arg1:T9 Arg2:T3	
+R5	REASON Arg1:T10 Arg2:T3	
+R6	RESULT Arg1:T10 Arg2:T4	
+R7	REASON Arg1:T11 Arg2:T4	
+R8	RESULT Arg1:T11 Arg2:T5	
+R9	REASON Arg1:T12 Arg2:T5	
+R10	RESULT Arg1:T12 Arg2:T14	
+R3	REASON Arg1:T9 Arg2:T2	
+T7	Argument 110 112	最悪
+T13	Connective 113 115	場合
+R11	CONDITION Arg1:T13 Arg2:T7	
+T14	Argument 116 131	エンストし、再始動できなくなる
+R12	RESULT Arg1:T13 Arg2:T14	

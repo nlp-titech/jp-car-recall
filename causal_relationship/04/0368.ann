@@ -1,0 +1,5 @@
+T1	Argument 0 19	非常点滅表示灯の電気回路が不適切な設計
+T2	Argument 26 44	前面の非常点滅表示が適切に点滅しない
+T3	Connective 23 25	ため
+R2	RESULT Arg1:T3 Arg2:T2	
+R1	REASON Arg1:T3 Arg2:T1	

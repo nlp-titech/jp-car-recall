@@ -1,0 +1,29 @@
+T1	Argument 10 42	インフレータ（膨張装置）において、ガス発生装剤の成型工程が不適切
+T2	Argument 44 58	成型後の吸湿防止措置が不適切
+T3	Connective 59 61	ため
+T4	Argument 62 80	密度が不足したガス発生剤が組み込まれ
+T5	Connective 87 91	そのため
+T6	Argument 92 99	エアバッグ展開
+T7	Connective 99 101	時に
+T8	Argument 101 114	インフレータ内圧が異常上昇
+T9	Connective 115 116	、
+T10	Argument 116 127	インフレータ容器が破損
+T11	Connective 128 129	て
+T12	Argument 129 133	飛び散り
+T13	Connective 133 134	、
+T14	Argument 134 136	出火
+T15	Argument 139 144	乗員が負傷
+R1	REASON Arg1:T3 Arg2:T1	
+R2	REASON Arg1:T3 Arg2:T2	
+R3	RESULT Arg1:T3 Arg2:T4	
+R4	REASON Arg1:T5 Arg2:T4	
+R5	RESULT Arg1:T5 Arg2:T8	
+R6	CONDITION Arg1:T7 Arg2:T6	
+R7	RESULT Arg1:T7 Arg2:T8	
+R8	REASON Arg1:T9 Arg2:T8	
+R9	RESULT Arg1:T9 Arg2:T10	
+R10	REASON Arg1:T11 Arg2:T10	
+R11	RESULT Arg1:T11 Arg2:T12	
+R12	REASON Arg1:T13 Arg2:T12	
+R13	RESULT Arg1:T13 Arg2:T14	
+R14	RESULT Arg1:T13 Arg2:T15	

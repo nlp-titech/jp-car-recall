@@ -1,0 +1,37 @@
+T1	Argument 0 10	原動機の製造が不適切
+T2	Connective 11 13	ため
+T3	Argument 17 40	タペットカバーの締め付けボルトの締め付けが不足
+T4	Connective 50 54	そのため
+T5	Argument 55 74	タペットカバーからエンジンオイルが漏れ
+T6	Connective 74 75	、
+T7	Argument 75 77	最悪
+T8	Connective 78 80	場合
+T9	Argument 81 89	原動機が焼き付き
+T10	Connective 89 90	、
+T11	Argument 90 97	走行不能となる
+T12	Argument 107 135	バルブアジャスティングスクリューのナットの締め付けが不足
+T13	Connective 145 149	そのため
+T14	Argument 150 169	バルブクリアランスを正常な状態で保てず
+T15	Connective 169 170	、
+T16	Argument 170 181	バルブが適切に開かない
+T17	Connective 181 183	ため
+T18	Argument 184 188	加速不良
+T19	Argument 191 196	異音が発生
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T12	
+R4	REASON Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T4 Arg2:T5	
+R6	REASON Arg1:T6 Arg2:T5	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	RESULT Arg1:T6 Arg2:T9	
+R10	REASON Arg1:T10 Arg2:T9	
+R11	RESULT Arg1:T10 Arg2:T11	
+R12	REASON Arg1:T13 Arg2:T12	
+R13	RESULT Arg1:T13 Arg2:T14	
+R14	REASON Arg1:T15 Arg2:T14	
+R15	RESULT Arg1:T15 Arg2:T16	
+R16	REASON Arg1:T17 Arg2:T16	
+R17	RESULT Arg1:T17 Arg2:T18	
+R18	RESULT Arg1:T17 Arg2:T19	

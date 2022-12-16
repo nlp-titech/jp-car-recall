@@ -1,0 +1,17 @@
+T1	Argument 0 46	ブレーキブースターのブレーキアシスト機構（※）を構成するスイッチスリーブの組付け工程が不適切
+T2	Connective 47 49	ため
+T3	Argument 50 60	当該部品に亀裂が発生
+T4	Connective 70 74	そのため
+T7	Argument 75 106	ブレーキアシスト機構が作動した際に、スイッチスリーブの爪が折損
+T8	Argument 108 119	ブレーキペダルが戻らず
+T9	Connective 107 108	、
+R1	RESULT Arg1:T9 Arg2:T8	
+R2	REASON Arg1:T9 Arg2:T7	
+R6	REASON Arg1:T4 Arg2:T3	
+R7	RESULT Arg1:T2 Arg2:T3	
+R8	REASON Arg1:T2 Arg2:T1	
+T10	Argument 119 127	発進できなくなる
+T11	Connective 118 119	ず
+R9	REASON Arg1:T11 Arg2:T8	
+R10	RESULT Arg1:T11 Arg2:T10	
+R3	RESULT Arg1:T4 Arg2:T7	

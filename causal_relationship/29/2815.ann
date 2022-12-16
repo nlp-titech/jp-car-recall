@@ -1,0 +1,9 @@
+T1	Argument 0 35	後部座席の背もたれを固定するストライカにおいて、溶接設備の調節が不適切
+T2	Connective 39 41	ため
+T3	Argument 42 48	溶接が不十分
+T4	Connective 54 55	、
+T5	Argument 55 66	衝突時に溶接がはがれる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

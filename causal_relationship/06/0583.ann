@@ -1,0 +1,21 @@
+T1	Argument 0 38	電気装置において、制動灯用スイッチにかかる電気負荷に対して、接点方式が不適切
+T2	Argument 47 53	酸化物が生成
+T3	Argument 56 67	接点部の接触抵抗が増大
+T4	Argument 81 92	接点部が導通不良となり
+T5	Argument 93 104	制動灯が点灯しなくなる
+T6	Connective 39 41	ため
+T7	Connective 55 56	、
+T8	Connective 74 75	、
+T9	Connective 92 93	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 75 77	最悪
+T11	Connective 78 80	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T4	

@@ -1,0 +1,17 @@
+T1	Argument 0 35	原動機からの動力を油圧ポンプに伝達するポンプカップリングの耐久性が不足
+T2	Argument 42 57	当該カップリングの嵌合部が摩耗
+T3	Argument 86 102	ポンプカップリングの嵌合部が摩滅
+T4	Argument 104 112	走行できなくなる
+T5	Connective 103 104	、
+T6	Connective 65 69	そのため
+T7	Connective 39 41	ため
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T5 Arg2:T3	
+R6	RESULT Arg1:T5 Arg2:T4	
+T8	Argument 70 84	そのままの状態で使用を続ける
+T9	Connective 84 85	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	

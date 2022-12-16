@@ -1,0 +1,13 @@
+T1	Argument 0 28	ドアロックシステムのコンピュータのプログラムが一部不適切
+T2	Connective 29 31	ため
+T3	Argument 119 167	鍵を持って乗車しているのにもかかわらず、エンジン始動、パワーウィンドウ等を作動させることができず
+T4	Connective 167 168	、
+T5	Argument 168 179	乗員が車室内に閉じ込め
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T6	Argument 32 49	特定の条件で盗難防止用ロックを作動
+T7	Connective 52 54	場合
+R3	CONDITION Arg1:T7 Arg2:T6	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T4 Arg2:T3	
+R6	RESULT Arg1:T4 Arg2:T5	

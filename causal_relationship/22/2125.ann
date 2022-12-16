@@ -1,0 +1,5 @@
+T1	Argument 0 43	運行記録計付き速度計（タコグラフ）において、販売店のオプション部品表の記載内容が不適切
+T2	Connective 44 46	ため
+T3	Argument 47 89	速度計の指示の範囲が車両の性能上の最高速度を表示できない速度計を取り付けた車両がある
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

@@ -1,0 +1,24 @@
+T1	Argument 0 45	小型トラックの駐車ブレーキにおいて、ケーブルをレバーに固定するダブルナットの締付けが不十分
+T2	Connective 46 48	ため
+T3	Argument 49 57	当該ナットが緩む
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 63 67	そのため
+T5	Argument 80 93	駐車ブレーキの制動力が不足
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 94 95	、
+T7	Argument 101 114	駐車ブレーキが効かなくなり
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 118 125	ケーブルが折損
+T10	Argument 68 78	そのまま使用を続ける
+T11	Connective 78 79	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	
+T12	Argument 95 97	最悪
+T13	Connective 98 100	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T8	
+R8	RESULT Arg1:T13 Arg2:T8	

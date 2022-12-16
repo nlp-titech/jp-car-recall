@@ -1,0 +1,25 @@
+T1	Argument 15 41	運転者席下側配電箱の側面スイッチの取付け位置が不適切
+T2	Argument 45 69	側面スイッチの端子及び配線が放送装置操作器と干渉
+T3	Argument 82 92	そのまま使用を続ける
+T4	Argument 94 102	配線の被覆が損傷
+T5	Argument 108 110	最悪
+T6	Argument 114 124	扉が開閉できなくなる
+T7	Connective 42 44	ため
+T8	Connective 77 81	そのため
+T9	Connective 92 93	と
+T10	Connective 107 108	、
+T11	Connective 111 113	場合
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T4	
+R5	CONDITION Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T12	
+R8	RESULT Arg1:T10 Arg2:T6	
+R9	CONDITION Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	
+T12	Argument 104 106	短絡
+T13	Connective 103 104	て
+R11	REASON Arg1:T13 Arg2:T4	
+R12	RESULT Arg1:T13 Arg2:T12	

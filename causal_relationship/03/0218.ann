@@ -1,0 +1,29 @@
+T1	Argument 0 31	電気装置において、バッテリーを充電する整流器の放熱性能が不適切
+T3	Argument 73 88	整流器回路に過大な電流が流れる
+T4	Argument 108 118	整流器の樹脂部が溶損
+T5	Connective 32 34	ため
+T6	Connective 72 73	、
+T7	Connective 101 102	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T13	
+R3	REASON Arg1:T6 Arg2:T13	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T15	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 35 49	そのままの状態で使用を続ける
+T9	Connective 49 50	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T13	
+T10	Argument 102 104	最悪
+T11	Connective 105 107	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T4	
+T13	Argument 50 71	当該整流器回路のダイオードが熱害により損傷
+T14	Connective 90 92	から
+R13	REASON Arg1:T14 Arg2:T3	
+T15	Argument 92 94	発熱
+R14	RESULT Arg1:T14 Arg2:T15	
+T16	Connective 118 119	し
+T17	Argument 119 121	発火
+R15	REASON Arg1:T16 Arg2:T4	
+R16	RESULT Arg1:T16 Arg2:T17	

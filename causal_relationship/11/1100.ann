@@ -1,0 +1,6 @@
+T1	Argument 0 23	補助制動装置（電磁リターダ）の電気回路が不適切
+T2	Connective 24 26	ため
+T5	Argument 27 46	電磁リターダ作動時に制動灯が点灯しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+#1	AnnotatorNotes T5	作動時でも点灯しない

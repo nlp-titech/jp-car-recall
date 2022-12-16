@@ -1,0 +1,13 @@
+T1	Argument 0 68	運転席及び助手席用エアバックの取付過程において、エアバック起爆装置とエアバック制御装置とを結ぶ配線のコネクターが完全にロックされていない
+T2	Connective 73 75	ため
+T3	Argument 76 90	このままの状態で使用を続ける
+T4	Connective 90 91	と
+T5	Argument 92 100	コネクターが緩み
+T6	Connective 100 101	、
+T7	Argument 101 112	エアバックが作動しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

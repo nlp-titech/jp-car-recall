@@ -1,0 +1,31 @@
+T1	Argument 21 49	インタクーラホースとインテークフランジの接続設計が不適切
+T2	Argument 53 63	接続部の締結力が不足
+T3	Argument 73 84	エンジンから受ける熱等
+T4	Argument 87 102	インタクーラホースの硬度が低下
+T5	Argument 109 128	繰り返しエンジン負荷が大きい作業を行う
+T6	Argument 130 142	インタクーラホースが抜け
+T7	Argument 143 153	エンジンの出力が低下
+T8	Argument 165 190	排気ガスが大型特殊自動車排出ガス規制の基準値を超え
+T9	Argument 191 203	保安基準に適合しなくなる
+T10	Connective 50 52	ため
+T11	Connective 68 72	そのため
+T12	Connective 84 87	により
+T13	Connective 104 108	状況下で
+T14	Connective 128 129	と
+T15	Connective 142 143	、
+T16	Connective 190 191	、
+R1	REASON Arg1:T10 Arg2:T1	
+R2	RESULT Arg1:T10 Arg2:T2	
+R3	REASON Arg1:T11 Arg2:T2	
+R4	RESULT Arg1:T11 Arg2:T6	
+R5	REASON Arg1:T12 Arg2:T3	
+R6	RESULT Arg1:T12 Arg2:T4	
+R7	CONDITION Arg1:T13 Arg2:T4	
+R8	RESULT Arg1:T13 Arg2:T5	
+R9	CONDITION Arg1:T14 Arg2:T5	
+R10	RESULT Arg1:T14 Arg2:T6	
+R11	REASON Arg1:T15 Arg2:T6	
+R12	RESULT Arg1:T15 Arg2:T7	
+R13	RESULT Arg1:T15 Arg2:T8	
+R14	REASON Arg1:T16 Arg2:T8	
+R15	RESULT Arg1:T16 Arg2:T9	

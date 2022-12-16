@@ -1,0 +1,13 @@
+T1	Argument 0 38	機械式自動変速機の変速を制御している電子制御機器（ＥＣＵ）の電気回路が不適切
+T2	Connective 39 41	ため
+T3	Argument 42 60	寒冷時にクラッチの断接ができなくなる
+T4	Connective 66 70	そのため
+T5	Argument 71 75	発進不能
+T6	Argument 76 84	走行時の変速不能
+T7	Argument 85 100	停止時にクラッチが切れなくなる
+R1	RESULT Arg1:T4 Arg2:T5	
+R2	RESULT Arg1:T4 Arg2:T6	
+R3	RESULT Arg1:T4 Arg2:T7	
+R4	REASON Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T2 Arg2:T3	
+R6	REASON Arg1:T2 Arg2:T1	

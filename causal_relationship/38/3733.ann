@@ -1,0 +1,17 @@
+T1	Argument 0 23	後部座席において、金属製フレームの形状が不適切
+T2	Argument 27 33	事故時の衝撃
+T3	Argument 36 52	当該フレームとシートベルトが干渉
+T4	Argument 65 74	シートベルトが損傷
+T5	Argument 76 87	乗員を拘束できなくなる
+T6	Connective 24 26	ため
+T7	Connective 33 36	により
+T8	Connective 60 64	そのため
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T3	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+T9	Connective 75 76	て
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	

@@ -1,0 +1,13 @@
+T1	Argument 0 35	ブローバイホース（クランクケースブリーザーホース）の取付け方法が不適切
+T2	Connective 36 38	ため
+T3	Argument 49 57	当該ホースが外れ
+T4	Argument 58 72	ブローバイガスが大気中に放出
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T5	Connective 57 58	、
+R3	REASON Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T4	
+T6	Argument 39 46	原動機の振動等
+T7	Connective 46 49	により
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	

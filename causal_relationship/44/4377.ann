@@ -1,0 +1,21 @@
+T1	Argument 0 54	燃料注入口からの給油管と燃料タンクの給油口とを接続しているゴム製ホース及び燃料タンクの換気用ホースに製造不良
+T2	Connective 60 62	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 79 101	当該ホースを固定している留金具部に亀裂が発生
+T4	Argument 109 113	燃料が漏
+T5	Connective 113 114	れ
+T6	Argument 114 120	火災にいたる
+R2	RESULT Arg1:T2 Arg2:T3	
+T13	Argument 63 77	このままの状態で使用を続ける
+T14	Connective 77 78	と
+R3	CONDITION Arg1:T14 Arg2:T13	
+R4	RESULT Arg1:T14 Arg2:T3	
+T8	Connective 102 103	、
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+T11	Argument 103 105	最悪
+T15	Connective 106 108	場合
+R7	CONDITION Arg1:T15 Arg2:T11	
+R8	RESULT Arg1:T15 Arg2:T4	
+R9	RESULT Arg1:T5 Arg2:T6	
+R10	REASON Arg1:T5 Arg2:T4	

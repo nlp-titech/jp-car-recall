@@ -1,0 +1,25 @@
+T1	Argument 1 49	ＤＰＦにおいて、ＤＰＦ内に捕集されたＰＭの自動除去機能を制御するコンピュータのプログラムが不適切
+T2	Argument 53 77	アクセルのオン・オフの操作を頻繁に行いながら走行
+T3	Argument 81 93	自動除去機能が作動しない
+T4	Argument 99 109	ＤＰＦ内にＰＭが堆積
+T5	Argument 122 132	そのまま使用を続ける
+T6	Argument 134 143	ＤＰＦ表示灯が点灯
+T8	Connective 50 52	ため
+T9	Connective 79 80	と
+T10	Connective 98 99	、
+T11	Connective 117 121	そのため
+T12	Connective 132 133	と
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T3	
+R3	CONDITION Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T3	
+R7	REASON Arg1:T11 Arg2:T4	
+R8	RESULT Arg1:T11 Arg2:T6	
+R9	CONDITION Arg1:T12 Arg2:T5	
+R10	RESULT Arg1:T12 Arg2:T6	
+R5	REASON Arg1:T10 Arg2:T3	
+R6	RESULT Arg1:T10 Arg2:T4	
+T13	Connective 143 144	し
+R11	REASON Arg1:T13 Arg2:T6	
+R12	RESULT Arg1:T13 Arg2:T14	
+T14	Argument 145 163	頻繁に手動操作によるＰＭの除去が必要

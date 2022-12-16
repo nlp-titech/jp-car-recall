@@ -1,0 +1,29 @@
+T1	Argument 7 51	パワーステアリング用油圧ポンプのプーリー取り付けナットの締付け力及びプーリーの強度が不足
+T2	Connective 55 57	ため
+T3	Argument 58 75	当該プーリーの取り付けナットが緩む
+T4	Argument 77 87	プーリーに亀裂が入る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T4	
+T5	Connective 93 97	そのため
+T6	Argument 98 112	そのままの状態で使用を続ける
+T7	Connective 112 113	と
+T8	Argument 114 119	異音が発生
+T10	Argument 121 123	最悪
+T11	Connective 124 126	場合
+T12	Argument 127 136	当該プーリーが破損
+T13	Argument 138 140	外れ
+T14	Connective 140 141	て
+T15	Argument 141 151	ハンドル操作力が増大
+R4	REASON Arg1:T5 Arg2:T4	
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T8	
+R7	RESULT Arg1:T5 Arg2:T8	
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T12	
+R12	RESULT Arg1:T11 Arg2:T13	
+R14	REASON Arg1:T14 Arg2:T13	
+R15	RESULT Arg1:T14 Arg2:T15	
+R16	REASON Arg1:T5 Arg2:T3	
+R8	RESULT Arg1:T7 Arg2:T12	
+R11	RESULT Arg1:T7 Arg2:T13	

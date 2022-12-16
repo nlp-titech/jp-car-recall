@@ -1,0 +1,29 @@
+T1	Argument 0 17	後輪ホイール・ハブ部の形状が不適切
+T2	Connective 18 20	ため
+T3	Argument 21 64	整備等の脱着作業において、後輪ホイールに位置決めピンを差し込む際に誤った位置に差し込む
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 70 74	そのため
+T5	Argument 75 91	位置決めピンに過大な応力がかかり
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 92 106	そのままの状態で使用を続ける
+T7	Connective 106 107	と
+T8	Argument 108 115	当該ピンが破損
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T8	
+T9	Connective 116 117	、
+T10	Argument 117 133	ホイールへ駆動力が伝わらなくなり
+T11	Connective 133 134	、
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T10	
+R9	REASON Arg1:T11 Arg2:T10	
+T12	Argument 140 142	転倒
+R10	RESULT Arg1:T11 Arg2:T12	
+T13	Argument 134 136	最悪
+T14	Connective 137 139	場合
+R11	CONDITION Arg1:T14 Arg2:T13	
+R12	RESULT Arg1:T14 Arg2:T12	
+T15	Connective 91 92	、
+R13	REASON Arg1:T15 Arg2:T5	
+R14	RESULT Arg1:T15 Arg2:T6	

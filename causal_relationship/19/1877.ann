@@ -1,0 +1,17 @@
+T1	Argument 0 53	ディーゼルエンジンの燃料噴射ポンプにおいて、燃料を燃料タンクへ戻すアイボルト（配管用ボルト）の締付力が不足
+T2	Connective 58 62	そのため
+T3	Argument 100 108	当該ボルトが緩む
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 113 114	、
+T5	Argument 126 132	燃料が漏れる
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T8	Argument 63 99	エンジンの揺動により、隣接するゴムホースの保護部材との干渉が繰り返される
+T9	Connective 99 100	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 114 124	そのまま使用を続ける
+T11	Connective 124 125	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	

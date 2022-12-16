@@ -1,0 +1,17 @@
+T1	Argument 0 34	原動機内部のコネクティングロッドにおいて、取付けボルトの材質が不適切
+T2	Connective 35 37	ため
+T3	Argument 38 49	当該ボルトに亀裂が発生
+T4	Connective 57 61	そのため
+T5	Argument 62 76	そのままの状態で使用を続ける
+T6	Connective 87 88	、
+T7	Argument 88 94	原動機が破損
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T9	
+T8	Connective 76 77	と
+T9	Argument 78 86	当該ボルトが折損
+R5	CONDITION Arg1:T8 Arg2:T5	
+R6	RESULT Arg1:T8 Arg2:T9	
+R7	REASON Arg1:T6 Arg2:T9	
+R8	RESULT Arg1:T6 Arg2:T7	

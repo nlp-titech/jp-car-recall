@@ -1,0 +1,21 @@
+T1	Argument 0 17	電気装置において、作業指示が不適切
+T2	Connective 18 20	ため
+T3	Argument 21 57	電気配線を束ねる固定バンド（インシュロック）の頭部と燃料ホースの隙が狭い
+T4	Connective 63 67	そのため
+T5	Argument 68 78	そのまま使用を続ける
+T6	Connective 78 79	と
+T7	Argument 80 90	燃料ホースに傷が付き
+T8	Connective 90 91	、
+T9	Argument 91 93	最悪
+T10	Connective 94 96	場合
+T11	Argument 97 103	燃料が漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	CONDITION Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	RESULT Arg1:T4 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T11	
+R9	CONDITION Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	

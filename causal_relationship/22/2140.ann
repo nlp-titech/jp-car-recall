@@ -1,0 +1,17 @@
+T1	Argument 0 18	後輪ブレーキホースの取付角度が不適切
+T2	Connective 24 26	ため
+T3	Argument 27 43	当該ブレーキホースがタイヤと接触
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 44 45	て
+T5	Argument 45 47	損傷
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 48 49	、
+T7	Argument 55 68	後輪ブレーキが効かなくなる
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 49 51	最悪
+T9	Connective 52 54	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T7	

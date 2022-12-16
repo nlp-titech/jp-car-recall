@@ -1,0 +1,21 @@
+T1	Argument 0 18	道路作業車において、製造工程が不適切
+T2	Connective 19 21	ため
+T3	Argument 22 45	防水タイプでない作業装置作動用スイッチを組付け
+T4	Connective 52 56	そのため
+T5	Argument 63 69	端子間で短絡
+T6	Connective 72 73	、
+T7	Argument 77 88	意図せず作業装置が作動
+R1	RESULT Arg1:T6 Arg2:T7	
+R2	REASON Arg1:T6 Arg2:T5	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	REASON Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T2 Arg2:T3	
+R6	REASON Arg1:T2 Arg2:T1	
+T8	Argument 57 60	雨水等
+T9	Connective 60 63	により
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 73 76	走行中
+T11	Connective 76 77	に
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T7	

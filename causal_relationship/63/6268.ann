@@ -1,0 +1,29 @@
+T1	Argument 0 23	横滑り防止装置の制御基板において、製造が不適切
+T2	Connective 24 26	ため
+T3	Argument 27 35	基板に異物が混入
+T4	Connective 45 49	そのため
+T5	Argument 50 60	通信時にノイズが発生
+T6	Connective 61 62	、
+T7	Argument 62 72	横滑り防止装置の作動
+T8	Connective 72 73	時
+T9	Argument 75 94	当該装置の制御プログラムが不具合と判断
+T10	Connective 95 96	て
+T11	Argument 97 99	最悪
+T12	Connective 100 102	場合
+T13	Argument 103 116	横滑り防止装置の機能が停止
+T14	Connective 117 118	て
+T15	Argument 119 130	走行安定性が損なわれる
+R1	RESULT Arg1:T14 Arg2:T15	
+R2	REASON Arg1:T14 Arg2:T13	
+R3	RESULT Arg1:T12 Arg2:T13	
+R4	CONDITION Arg1:T12 Arg2:T11	
+R5	RESULT Arg1:T10 Arg2:T13	
+R6	REASON Arg1:T10 Arg2:T9	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	CONDITION Arg1:T8 Arg2:T7	
+R9	RESULT Arg1:T6 Arg2:T9	
+R10	REASON Arg1:T6 Arg2:T5	
+R11	RESULT Arg1:T4 Arg2:T5	
+R12	REASON Arg1:T4 Arg2:T3	
+R13	RESULT Arg1:T2 Arg2:T3	
+R14	REASON Arg1:T2 Arg2:T1	

@@ -1,0 +1,13 @@
+T1	Argument 24 47	バックルとケーブルフックの組み付け作業が不適切
+T2	Connective 48 50	ため
+T3	Argument 51 63	完全にロックされていない
+T4	Connective 69 73	そのため
+T5	Argument 74 111	シートベルトアンカーに強い力がかかった際にケーブルフックからバックルが外れ
+T6	Connective 111 112	、
+T7	Argument 112 127	シートベルトが十分に機能しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

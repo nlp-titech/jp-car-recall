@@ -1,0 +1,21 @@
+T1	Argument 0 46	原動機において、排気ガス再循環装置に使用されているバキュームポンプのシャフトの熱処理が不適切
+T2	Argument 50 55	強度が不足
+T3	Argument 65 74	当該シャフトが折損
+T4	Argument 76 86	負圧が発生しなくなる
+T5	Argument 91 108	排出ガス再循環装置バルブが駆動せず
+T6	Argument 109 134	排出ガスに含まれる窒素酸化物の濃度が基準値を越える
+T7	Connective 47 49	ため
+T8	Connective 64 65	、
+T9	Connective 75 76	て
+T10	Connective 88 90	から
+T11	Connective 108 109	、
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T5	
+R9	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	

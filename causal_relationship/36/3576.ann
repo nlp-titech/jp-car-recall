@@ -1,0 +1,13 @@
+T1	Argument 16 35	油圧ステアリングシリンダの製造が不適切
+T2	Connective 36 38	ため
+T3	Argument 39 60	シリンダ内部のシールが逆向きに組み付けられ
+T4	Connective 67 71	そのため
+T5	Argument 72 89	シリンダ内部のシール性が確保できず
+T6	Argument 90 97	作動油が漏れる
+T7	Connective 89 90	、
+R1	RESULT Arg1:T7 Arg2:T6	
+R2	REASON Arg1:T7 Arg2:T5	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	REASON Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T2 Arg2:T3	
+R6	REASON Arg1:T2 Arg2:T1	

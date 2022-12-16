@@ -1,0 +1,28 @@
+T4	Argument 69 78	エンジン回転が上昇
+T5	Argument 91 101	エンジンの潤滑が不足
+T6	Argument 103 107	焼き付き
+T7	Argument 108 110	最悪
+T8	Argument 114 121	エンジンが破損
+T9	Connective 25 27	ため
+T11	Connective 68 69	、
+T12	Connective 86 90	そのため
+T13	Connective 102 103	て
+T14	Connective 107 108	、
+T15	Connective 111 113	場合
+R6	RESULT Arg1:T11 Arg2:T4	
+R7	REASON Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T5	
+R9	REASON Arg1:T13 Arg2:T5	
+R10	RESULT Arg1:T13 Arg2:T6	
+R11	REASON Arg1:T14 Arg2:T6	
+R12	RESULT Arg1:T14 Arg2:T8	
+R13	CONDITION Arg1:T15 Arg2:T7	
+R14	RESULT Arg1:T15 Arg2:T8	
+T2	Argument 28 35	アクセル全開等
+T3	Connective 36 37	際
+R2	CONDITION Arg1:T3 Arg2:T2	
+T1	Argument 15 24	過回転制御が不適切
+R1	REASON Arg1:T9 Arg2:T1	
+T10	Argument 38 67	吸気経路内のブローバイガスに含まれるオイルが燃焼室内で燃焼
+R3	RESULT Arg1:T3 Arg2:T10	
+R4	RESULT Arg1:T9 Arg2:T10	

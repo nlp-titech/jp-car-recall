@@ -1,0 +1,17 @@
+T1	Argument 8 35	インテークパイプの取り付けボルトの締め付けトルクが不足
+T2	Argument 45 53	当該ボルトが緩ん
+T3	Argument 54 79	インテークパイプ取り付け部の隙間から空気を吸い込む
+T4	Argument 90 104	意図せずエンジン回転数が上昇
+T6	Connective 44 45	、
+T7	Connective 81 85	によって
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+T9	Connective 53 54	で
+R3	REASON Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T5	Argument 86 89	走行中
+T8	Connective 89 90	に
+R7	CONDITION Arg1:T8 Arg2:T5	
+R8	RESULT Arg1:T8 Arg2:T4	

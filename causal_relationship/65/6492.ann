@@ -1,0 +1,13 @@
+T1	Argument 0 35	緩衝装置のリヤサスペンショントーリンクの溶接部が正しく溶接されていない
+T2	Connective 41 45	そのため
+T3	Argument 46 60	そのままの状態で使用を続ける
+T4	Connective 60 61	と
+T5	Argument 62 68	溶接部が破損
+T6	Connective 69 70	、
+T7	Argument 70 74	走行不能
+R1	RESULT Arg1:T6 Arg2:T7	
+R2	REASON Arg1:T6 Arg2:T5	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	CONDITION Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T2 Arg2:T5	
+R6	REASON Arg1:T2 Arg2:T1	

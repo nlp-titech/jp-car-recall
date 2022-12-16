@@ -1,0 +1,29 @@
+T1	Argument 0 24	リアサスペンションのドラッグリンクの材質が不適切
+T2	Argument 28 35	使用過程で腐食
+T3	Argument 38 50	当該リンクの強度が落ちる
+T4	Argument 61 68	路面からの衝撃
+T5	Argument 72 80	当該リンクが破損
+T6	Argument 82 93	車両姿勢が不安定となり
+T7	Argument 94 96	最悪
+T8	Argument 100 102	転倒
+T9	Connective 25 27	ため
+T10	Connective 35 38	により
+T11	Connective 56 60	そのため
+T12	Connective 68 71	により
+T13	Connective 81 82	て
+T14	Connective 93 94	、
+T15	Connective 97 99	場合
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T3	
+R3	REASON Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T3	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T5	
+R7	REASON Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T5	
+R9	REASON Arg1:T13 Arg2:T5	
+R10	RESULT Arg1:T13 Arg2:T6	
+R11	REASON Arg1:T14 Arg2:T6	
+R12	RESULT Arg1:T14 Arg2:T8	
+R13	CONDITION Arg1:T15 Arg2:T7	
+R14	RESULT Arg1:T15 Arg2:T8	

@@ -1,0 +1,21 @@
+T1	Argument 0 60	原動機からの動力を油圧ポンプに伝達するポンプカップリングにおいて、油圧ポンプを取り付けているポンプハウジングの強度が不足
+T2	Connective 64 66	ため
+T3	Argument 67 78	油圧ポンプに揺れが発生
+T4	Connective 79 80	、
+T5	Argument 80 97	当該カップリングのギヤの歯面が摩耗
+T6	Connective 105 109	そのため
+T7	Argument 110 124	そのままの状態で使用を続ける
+T8	Connective 135 136	、
+T9	Argument 136 144	走行できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T11	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Connective 124 125	と
+R7	CONDITION Arg1:T10 Arg2:T7	
+T11	Argument 126 134	ギヤの歯面が摩滅
+R9	RESULT Arg1:T10 Arg2:T11	
+R10	REASON Arg1:T8 Arg2:T11	

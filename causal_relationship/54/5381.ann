@@ -1,0 +1,21 @@
+T1	Argument 6 39	オイルクーラー用ゴムホースと金属パイプの接合部分の加工状態が不適切
+T2	Connective 46 50	そのため
+T3	Argument 51 63	接合部分からオイルが漏れ
+T4	Argument 64 71	変速不調となり
+T5	Connective 63 64	、
+T6	Argument 78 84	ホースが外れ
+T7	Connective 84 85	、
+T8	Argument 85 92	走行不能となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T4	
+T9	Connective 71 72	、
+R5	REASON Arg1:T9 Arg2:T4	
+R6	RESULT Arg1:T9 Arg2:T6	
+R7	REASON Arg1:T7 Arg2:T6	
+R8	RESULT Arg1:T7 Arg2:T8	
+T10	Argument 72 74	最悪
+T11	Connective 75 77	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T6	

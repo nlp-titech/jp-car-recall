@@ -1,0 +1,29 @@
+T1	Argument 14 33	エキスパンダのウェッジの熱処理が不適切
+T2	Argument 37 42	硬度が不足
+T3	Argument 57 64	制動を繰り返す
+T4	Argument 67 74	ウェッジが摩耗
+T5	Argument 75 81	制動力が変化
+T6	Argument 83 85	最悪
+T7	Argument 89 96	ウェッジが損傷
+T8	Argument 98 110	車輪の制動ができなくなる
+T9	Connective 34 36	ため
+T10	Connective 52 56	そのため
+T11	Connective 66 67	で
+T12	Connective 74 75	し
+T13	Connective 82 83	、
+T14	Connective 86 88	場合
+T15	Connective 97 98	、
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T2	
+R3	REASON Arg1:T10 Arg2:T2	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+R7	REASON Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T5	
+R9	REASON Arg1:T13 Arg2:T5	
+R11	CONDITION Arg1:T14 Arg2:T6	
+R12	RESULT Arg1:T14 Arg2:T7	
+R13	REASON Arg1:T15 Arg2:T7	
+R14	RESULT Arg1:T15 Arg2:T8	
+R4	RESULT Arg1:T10 Arg2:T4	
+R10	RESULT Arg1:T13 Arg2:T7	

@@ -1,0 +1,21 @@
+T1	Argument 0 32	運転席及び助手席の座席ベルト巻取装置のベルト巻取口の形状が不適切
+T2	Connective 33 35	ため
+T3	Argument 52 70	座席ベルトがねじれたまま巻き取られる
+T4	Connective 75 76	、
+T5	Argument 82 100	当該装置の出口部にベルトが引っかかり
+T6	Connective 100 101	、
+T7	Argument 101 113	ベルトを装着できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 36 50	そのままの状態で使用を続ける
+T9	Connective 50 51	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 76 78	最悪
+T11	Connective 79 81	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	

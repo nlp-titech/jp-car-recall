@@ -1,0 +1,9 @@
+T1	Argument 12 42	変速用ソレノイドバルブ制御用コンピュータのプログラムが不適切
+T2	Connective 43 45	ため
+T3	Argument 60 77	一瞬、１速または２速にシフトダウン
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 46 58	２速あるいは３速にて走行
+T5	Connective 58 59	中
+R3	CONDITION Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T3	

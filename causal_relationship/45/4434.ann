@@ -1,0 +1,9 @@
+T1	Argument 0 36	手動変速機とシフトレバーを連結するリンケージ（連接棒）の位置調整が不適切
+T2	Connective 42 43	、
+T3	Argument 43 71	シフトレバーを後退の位置にしても、ギヤが十分に噛み合わず
+T4	Connective 71 72	、
+T5	Argument 72 78	後退できない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

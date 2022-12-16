@@ -1,0 +1,25 @@
+T1	Argument 0 50	農業用薬剤散布車の原動機において、正規品とは形状が異なる誤品（旧部品）のラジエータロアホースを組付け
+T2	Connective 51 53	ため
+T3	Argument 54 73	当該ホースが作業機駆動用のベルトに接触
+T4	Connective 81 85	そのため
+T5	Argument 86 96	そのまま使用を続ける
+T6	Connective 96 97	と
+T7	Argument 97 103	ホースが破損
+T8	Connective 110 111	て
+T9	Argument 112 114	最悪
+T10	Connective 115 117	場合
+T11	Argument 118 129	原動機がオーバーヒート
+R1	RESULT Arg1:T10 Arg2:T11	
+R2	CONDITION Arg1:T10 Arg2:T9	
+R3	RESULT Arg1:T8 Arg2:T11	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	CONDITION Arg1:T6 Arg2:T5	
+R7	RESULT Arg1:T4 Arg2:T7	
+R8	REASON Arg1:T4 Arg2:T3	
+R9	RESULT Arg1:T2 Arg2:T3	
+R10	REASON Arg1:T2 Arg2:T1	
+T12	Argument 104 110	冷却水が漏れ
+T13	Connective 103 104	し
+R4	REASON Arg1:T13 Arg2:T7	
+R11	RESULT Arg1:T13 Arg2:T12	
+R12	REASON Arg1:T8 Arg2:T12	

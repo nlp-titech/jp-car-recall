@@ -1,0 +1,9 @@
+T1	Argument 0 79	ブレーキ・アシスト（急制動時におけるブレーキ・ペダルの踏力を軽減する装置）装備車において、ブレーキ・ペダルの踏み込み速度を検知しているセンサの検知機能が不適切
+T2	Connective 80 82	ため
+T3	Argument 83 114	低速走行における通常のブレーキ操作時のブレーキ・アシストが作動
+T4	Connective 115 116	て
+T5	Argument 117 134	運転者の予期した以上の制動がかかる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

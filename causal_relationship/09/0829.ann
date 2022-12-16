@@ -1,0 +1,21 @@
+T1	Argument 0 40	パワーステアリングギヤボックス内部のボール循環筒（サーキュレータ）の構造が不適切
+T2	Connective 41 43	ため
+T3	Argument 44 60	過大な操舵入力に対する強度が不足
+T4	Connective 65 69	そのため
+T5	Argument 70 97	タイヤが縁石に接触している状態でハンドル操作を繰り返す
+T6	Argument 99 111	当該サーキュレータが破損
+T7	Connective 97 98	と
+T8	Argument 113 115	最悪
+T9	Connective 116 118	場合
+T10	Argument 119 126	操舵不能となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	CONDITION Arg1:T7 Arg2:T5	
+R5	RESULT Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T4 Arg2:T6	
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T10	
+T11	Connective 112 113	、
+R9	REASON Arg1:T11 Arg2:T6	
+R10	RESULT Arg1:T11 Arg2:T10	

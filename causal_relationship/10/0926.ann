@@ -1,0 +1,38 @@
+T1	Argument 0 50	後２軸駆動車の前側駆動軸差動機（インターデフケース）において、①リコールによる改善措置の指示が不適切
+T2	Connective 51 53	ため
+T3	Argument 54 76	推進軸接手との嵌合いスプライン部に摩耗が残っ
+T4	Connective 85 86	、
+T5	Argument 86 102	キャッスルナットにゆるみが生じる
+T6	Argument 109 123	接手取付け部ねじ強度が不十分
+T7	Connective 124 126	ため
+T8	Argument 127 150	推進軸取付け角度が大きくねじ部への入力が大きい
+T9	Connective 150 152	場合
+T10	Argument 153 161	当該ねじ部が折損
+T11	Connective 169 173	そのため
+T12	Argument 174 188	そのままの状態で使用を続ける
+T13	Connective 188 189	と
+T14	Argument 189 196	接手が抜け出し
+T15	Connective 196 197	、
+T16	Argument 197 199	最悪
+T17	Connective 200 202	場合
+T18	Argument 203 209	推進軸が脱落
+T19	Connective 210 211	て
+T20	Argument 211 218	走行不能となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T10	
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T10	
+R9	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T14	
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T14	
+R13	CONDITION Arg1:T17 Arg2:T16	
+R14	RESULT Arg1:T17 Arg2:T18	
+R15	RESULT Arg1:T15 Arg2:T18	
+R16	REASON Arg1:T15 Arg2:T14	
+R17	REASON Arg1:T19 Arg2:T18	
+R18	RESULT Arg1:T19 Arg2:T20	

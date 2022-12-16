@@ -1,0 +1,25 @@
+T1	Argument 0 24	中型トラックの排気管において、溶接部の強度が不足
+T2	Connective 28 30	ため
+T3	Argument 31 51	排気管内圧により溶接部に過大な応力が発生
+T4	Connective 52 53	、
+T5	Argument 53 61	排気管内部に亀裂
+T6	Connective 71 75	そのため
+T7	Argument 76 86	そのまま使用を続ける
+T8	Connective 86 87	と
+T9	Argument 87 92	亀裂が進行
+T10	Connective 93 94	、
+T11	Argument 94 96	最悪
+T12	Connective 97 99	場合
+T13	Argument 100 108	排気ガスが漏れる
+R1	RESULT Arg1:T12 Arg2:T13	
+R2	CONDITION Arg1:T12 Arg2:T11	
+R3	RESULT Arg1:T10 Arg2:T13	
+R4	REASON Arg1:T10 Arg2:T9	
+R5	RESULT Arg1:T8 Arg2:T9	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T9	
+R8	REASON Arg1:T6 Arg2:T5	
+R9	RESULT Arg1:T4 Arg2:T5	
+R10	REASON Arg1:T4 Arg2:T3	
+R11	RESULT Arg1:T2 Arg2:T3	
+R12	REASON Arg1:T2 Arg2:T1	

@@ -1,0 +1,5 @@
+T1	Argument 0 29	後部反射器において、車両の最外側からの取り付け位置が不適切
+T2	Argument 33 52	道路運送車両の保安基準に適合していない
+T3	Connective 30 32	ため
+R1	REASON Arg1:T3 Arg2:T1	
+R2	RESULT Arg1:T3 Arg2:T2	

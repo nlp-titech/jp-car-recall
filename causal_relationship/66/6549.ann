@@ -1,0 +1,13 @@
+T1	Argument 0 44	平成２９年６月２３日付リコール届出番号「外２４９２」において、改善措置作業の指示が不適切
+T2	Connective 45 47	ため
+T3	Argument 48 78	ボディーコントロールモジュールのプログラムが変更されていない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 79 83	そのため
+T5	Argument 84 101	衝突時にドアロックが自動で解除せず
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 101 102	、
+T7	Argument 102 119	保安基準第１８条の基準に適合しない
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

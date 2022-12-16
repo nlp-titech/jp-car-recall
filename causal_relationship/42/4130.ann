@@ -1,0 +1,21 @@
+T1	Argument 0 29	制動倍力装置のバキュームホースにおいて、組付け作業が不適切
+T2	Connective 30 32	ため
+T3	Argument 33 44	ホース内面に異物が付着
+T4	Connective 54 58	そのため
+T5	Argument 75 98	当該ホースに挿入されているチェックバルブが固着
+T6	Connective 99 100	て
+T7	Argument 100 111	負圧が十分に供給されず
+T8	Connective 111 112	、
+T9	Argument 112 126	ブレーキペダルの操作力が増大
+R1	REASON Arg1:T6 Arg2:T5	
+R2	RESULT Arg1:T6 Arg2:T7	
+R3	REASON Arg1:T8 Arg2:T7	
+R4	RESULT Arg1:T8 Arg2:T9	
+R5	RESULT Arg1:T4 Arg2:T5	
+R6	REASON Arg1:T4 Arg2:T3	
+T10	Argument 59 73	そのままの状態で使用を続ける
+T11	Connective 73 74	と
+R7	CONDITION Arg1:T11 Arg2:T10	
+R8	RESULT Arg1:T11 Arg2:T5	
+R9	REASON Arg1:T2 Arg2:T1	
+R10	RESULT Arg1:T2 Arg2:T3	

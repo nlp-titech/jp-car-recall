@@ -1,0 +1,29 @@
+T1	Argument 0 31	施錠装置において、キーシリンダーキャップ固定ピンの圧入が不適切
+T2	Argument 40 45	ピンが抜け
+T3	Argument 46 54	キャップが外れる
+T4	Argument 77 94	キーシリンダー内部の部品が抜け出し
+T5	Argument 101 119	走行中にかじ取り装置の施錠装置が作動
+T6	Argument 122 130	操舵できなくなる
+T7	Connective 120 121	て
+T8	Connective 94 95	、
+T9	Connective 60 64	そのため
+T10	Connective 45 46	て
+T11	Connective 37 39	ため
+R1	REASON Arg1:T11 Arg2:T1	
+R2	RESULT Arg1:T11 Arg2:T2	
+R3	REASON Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T8 Arg2:T4	
+R8	RESULT Arg1:T8 Arg2:T5	
+R9	REASON Arg1:T7 Arg2:T5	
+R10	RESULT Arg1:T7 Arg2:T6	
+T12	Argument 65 75	そのまま使用を続ける
+T13	Connective 75 76	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T4	
+T14	Argument 95 97	最悪
+T15	Connective 98 100	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T5	

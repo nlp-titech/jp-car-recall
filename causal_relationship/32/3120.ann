@@ -1,0 +1,17 @@
+T1	Argument 0 38	リフトゲートのラッチにおいて、製造不良により当該ラッチ内部の部品寸法が不適切
+T2	Connective 39 41	ため
+T3	Argument 42 55	ロック機構が正常に作動せず
+T4	Argument 56 72	リフトゲートが完全にロックしない
+T5	Connective 78 82	そのため
+T6	Argument 83 85	最悪
+T7	Connective 86 88	場合
+T8	Argument 89 102	走行中にリフトゲートが開く
+R1	RESULT Arg1:T7 Arg2:T8	
+R2	CONDITION Arg1:T7 Arg2:T6	
+R4	REASON Arg1:T5 Arg2:T4	
+T9	Connective 55 56	、
+R3	RESULT Arg1:T5 Arg2:T8	
+R5	RESULT Arg1:T9 Arg2:T4	
+R6	REASON Arg1:T9 Arg2:T3	
+R7	RESULT Arg1:T2 Arg2:T3	
+R8	REASON Arg1:T2 Arg2:T1	

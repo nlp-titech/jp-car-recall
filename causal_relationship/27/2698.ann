@@ -1,0 +1,13 @@
+T1	Argument 0 51	ターレット式構内運搬自動車において、走行モータを動力伝達装置に取り付けるためのモータサポートの加工不良
+T2	Connective 51 54	により
+T3	Argument 55 90	走行モータの出力軸と動力伝達装置の入力軸の芯がずれた状態で組み付けられ
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 97 101	そのため
+T5	Argument 102 139	動力伝達装置の入力軸やカップリング、走行モータの出力軸のスプライン部が摩耗
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 140 141	、
+T7	Argument 141 148	走行不能となる
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R3	REASON Arg1:T4 Arg2:T3	

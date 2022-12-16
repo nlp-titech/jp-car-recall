@@ -1,0 +1,21 @@
+T1	Argument 0 42	ディーゼルエンジンの手動変速機を搭載している教習車において、前部排気管の構造が不適切
+T2	Connective 43 45	ため
+T3	Argument 46 58	エンスト時のエンジン振動
+T4	Connective 58 61	により
+T5	Argument 61 77	当該パイプ蛇腹部に高い応力が発生
+T6	Connective 85 89	そのため
+T7	Argument 90 99	エンストの繰り返し
+T8	Connective 99 102	により
+T9	Argument 102 113	当該蛇腹部に亀裂が入り
+T10	Connective 113 114	、
+T11	Argument 114 119	騒音が増大
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	

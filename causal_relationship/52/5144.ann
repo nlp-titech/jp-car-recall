@@ -1,0 +1,21 @@
+T1	Argument 0 37	ブレーキブースタと吸気マニホールド間のチェックバルブキャップの溶着が不適切
+T2	Connective 43 45	ため
+T3	Argument 57 75	当該チェックバルブキャップがはずれる
+T4	Argument 86 103	ブレーキブースタへの負圧がなくなり
+T5	Connective 81 85	そのため
+T6	Argument 110 116	制動力が低下
+T7	Connective 103 104	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T4	
+R5	REASON Arg1:T7 Arg2:T4	
+R6	RESULT Arg1:T7 Arg2:T6	
+T8	Argument 46 54	エンジンの振動等
+T9	Connective 54 57	により
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 104 106	最悪
+T11	Connective 107 109	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T6	

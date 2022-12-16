@@ -1,0 +1,33 @@
+T2	Connective 33 35	ため
+T3	Argument 50 61	当該はんだに亀裂が生じ
+T4	Connective 61 62	、
+T5	Argument 62 73	制御装置内の回路が短絡
+T6	Connective 74 75	て
+T7	Argument 75 81	過電流が発生
+T8	Connective 89 93	そのため
+T9	Argument 94 102	当該基盤部が過熱
+T10	Connective 103 104	て
+T11	Argument 104 106	溶損
+T12	Argument 114 119	火災に至る
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T13	Connective 107 108	、
+R11	REASON Arg1:T13 Arg2:T11	
+R12	RESULT Arg1:T13 Arg2:T12	
+T14	Argument 36 47	エンジンルーム内の熱等
+T15	Connective 47 50	により
+R13	REASON Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T3	
+T16	Argument 108 110	最悪
+T17	Connective 111 113	場合
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T12	
+T1	Argument 0 32	原動機冷却用電動ファンモーターの制御装置内の基盤のはんだが不適切
+R1	REASON Arg1:T2 Arg2:T1	

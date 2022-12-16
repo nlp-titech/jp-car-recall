@@ -1,0 +1,21 @@
+T1	Argument 33 56	防音パッド部の接着テープの貼り付け方法が不適切
+T2	Connective 57 59	ため
+T3	Argument 71 82	当該テープが剥がれ落ち
+T4	Connective 82 83	、
+T5	Argument 83 97	座席ベルト巻取装置に絡みつく
+T6	Connective 102 103	、
+T7	Argument 109 124	当該座席ベルトが機能しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 60 67	走行中の振動等
+T9	Connective 67 70	により
+T10	Argument 103 105	最悪
+T11	Connective 106 108	場合
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T7	

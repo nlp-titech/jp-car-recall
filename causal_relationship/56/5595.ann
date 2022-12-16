@@ -1,0 +1,27 @@
+T1	Argument 4 26	冷却ファン制御モジュールのプログラムが不適切
+T2	Argument 46 64	冷却ファン制御信号が正しく処理されず
+T3	Argument 65 76	冷却ファンが作動しない
+T4	Argument 87 95	原動機の水温異常
+T5	Argument 98 108	エンジン警告灯が点灯
+T6	Argument 110 120	そのまま使用を続ける
+T7	Argument 122 129	オーバーヒート
+T8	Argument 131 138	走行不能となる
+T9	Connective 27 29	ため
+T10	Connective 64 65	、
+T11	Connective 82 86	そのため
+T12	Connective 95 98	により
+T13	Connective 120 121	と
+T14	Connective 130 131	、
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T2	
+R3	REASON Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T3	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+R7	REASON Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T5	
+R9	RESULT Arg1:T12 Arg2:T7	
+R10	CONDITION Arg1:T13 Arg2:T6	
+R11	RESULT Arg1:T13 Arg2:T7	
+R12	REASON Arg1:T14 Arg2:T7	
+R13	RESULT Arg1:T14 Arg2:T8	

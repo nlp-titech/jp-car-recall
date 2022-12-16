@@ -1,0 +1,29 @@
+T1	Argument 24 37	作動油パイプの耐熱性が不足
+T2	Argument 44 49	排気管の熱
+T3	Argument 52 66	当該パイプに細い亀裂が生ずる
+T4	Argument 77 87	そのまま使用を続ける
+T5	Argument 88 96	当該パイプが破損
+T6	Argument 98 112	漏れた作動油が排気管にかかり
+T7	Argument 113 115	最悪
+T8	Argument 119 124	火災に至る
+T9	Connective 41 43	ため
+T10	Connective 49 52	により
+T11	Connective 72 76	そのため
+T12	Connective 87 88	と
+T13	Connective 97 98	、
+T14	Connective 112 113	、
+T15	Connective 116 118	場合
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T3	
+R3	REASON Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T3	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T5	
+R7	CONDITION Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T5	
+R9	REASON Arg1:T13 Arg2:T5	
+R10	RESULT Arg1:T13 Arg2:T6	
+R11	REASON Arg1:T14 Arg2:T6	
+R12	RESULT Arg1:T14 Arg2:T8	
+R13	CONDITION Arg1:T15 Arg2:T7	
+R14	RESULT Arg1:T15 Arg2:T8	

@@ -1,0 +1,21 @@
+T1	Argument 1 24	バッテリーケーブルにヒューズの装着されていない
+T2	Connective 29 30	、
+T3	Argument 40 55	電源回路に短絡等の故障を生じる
+T4	Connective 55 56	と
+T5	Argument 56 61	配線が発熱
+T6	Connective 62 63	、
+T7	Argument 69 74	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 30 36	走行時の振動
+T9	Connective 36 39	により
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 63 65	最悪
+T11	Connective 66 68	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T7	

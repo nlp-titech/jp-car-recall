@@ -1,0 +1,27 @@
+T1	Argument 10 33	灯火装置制御用コンピュータのプログラムが不適切
+T2	Connective 39 41	ため
+T3	Argument 63 77	制御装置への負荷が大きくなっ
+T4	Connective 77 78	て
+T5	Argument 78 80	過熱
+T6	Connective 87 88	、
+T7	Argument 88 95	制御装置が焼損
+T8	Connective 96 97	て
+T9	Argument 97 109	灯火装置が作動しなくなり
+T10	Argument 116 121	火災に至る
+R1	RESULT Arg1:T8 Arg2:T10	
+R2	RESULT Arg1:T8 Arg2:T9	
+T11	Argument 110 112	最悪
+T12	Connective 113 115	場合
+R3	CONDITION Arg1:T12 Arg2:T11	
+R4	RESULT Arg1:T12 Arg2:T10	
+R5	REASON Arg1:T8 Arg2:T7	
+R6	REASON Arg1:T2 Arg2:T1	
+R7	RESULT Arg1:T2 Arg2:T3	
+R8	REASON Arg1:T4 Arg2:T3	
+R9	RESULT Arg1:T4 Arg2:T5	
+R10	REASON Arg1:T6 Arg2:T5	
+R11	RESULT Arg1:T6 Arg2:T7	
+T13	Argument 42 59	前部霧灯やマーカーランプを取り付け
+T14	Connective 60 62	場合
+R12	CONDITION Arg1:T14 Arg2:T13	
+R13	RESULT Arg1:T14 Arg2:T3	

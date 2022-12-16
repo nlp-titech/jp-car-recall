@@ -1,0 +1,25 @@
+T2	Connective 28 30	ため
+T3	Argument 31 41	シートフレームに干渉
+T4	Connective 51 55	そのため
+T5	Argument 56 70	そのままの状態で使用を続ける
+T6	Connective 70 71	と
+T7	Argument 72 79	当該配線が損傷
+T8	Connective 80 81	、
+T9	Argument 81 83	最悪
+T10	Connective 84 86	場合
+T11	Argument 87 95	燃料ポンプが停止
+T12	Connective 96 97	て
+T13	Argument 97 101	エンスト
+R2	REASON Arg1:T4 Arg2:T3	
+R3	CONDITION Arg1:T6 Arg2:T5	
+R4	REASON Arg1:T8 Arg2:T7	
+R5	CONDITION Arg1:T10 Arg2:T9	
+R6	REASON Arg1:T12 Arg2:T11	
+R7	RESULT Arg1:T12 Arg2:T13	
+R8	RESULT Arg1:T10 Arg2:T11	
+R9	RESULT Arg1:T8 Arg2:T11	
+R10	RESULT Arg1:T6 Arg2:T7	
+R11	RESULT Arg1:T4 Arg2:T7	
+R12	RESULT Arg1:T2 Arg2:T3	
+T1	Argument 0 27	燃料系統の電気配線において、後席下部の配索設計が不適切
+R1	REASON Arg1:T2 Arg2:T1	

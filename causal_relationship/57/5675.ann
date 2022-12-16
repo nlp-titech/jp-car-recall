@@ -1,0 +1,33 @@
+T1	Argument 0 28	フロントブレーキホースに備えられたスリーブの形状が不適切
+T2	Argument 32 45	融雪剤等がスリーブ内に堆積
+T3	Argument 47 61	当該ホースの金属接続部が腐食
+T4	Argument 69 83	そのままの状態で使用を続ける
+T5	Argument 85 90	腐食が進行
+T6	Argument 100 108	ブレーキ液が漏れ
+T7	Argument 109 111	最悪
+T8	Argument 115 126	制動停止距離が長くなる
+T9	Connective 29 31	ため
+T10	Connective 46 47	、
+T11	Connective 83 84	と
+T12	Connective 91 92	、
+T13	Connective 108 109	、
+T14	Connective 112 114	場合
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T2	
+R3	REASON Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T3	
+R5	CONDITION Arg1:T11 Arg2:T4	
+R6	RESULT Arg1:T11 Arg2:T5	
+R7	REASON Arg1:T12 Arg2:T5	
+R8	RESULT Arg1:T12 Arg2:T6	
+R9	REASON Arg1:T13 Arg2:T6	
+R10	RESULT Arg1:T13 Arg2:T8	
+R11	CONDITION Arg1:T14 Arg2:T7	
+R12	RESULT Arg1:T14 Arg2:T8	
+T15	Connective 68 69	。
+R13	REASON Arg1:T15 Arg2:T3	
+R14	RESULT Arg1:T15 Arg2:T6	
+T16	Argument 92 98	ブレーキ操作
+T17	Connective 98 99	時
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T6	

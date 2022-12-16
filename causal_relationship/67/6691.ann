@@ -1,0 +1,9 @@
+T1	Argument 10 44	スピーカートリムのネームプレートについて、粘着テープの接着力が不十分
+T2	Connective 45 47	ため
+T3	Argument 48 58	ネームプレートが剥離
+T4	Connective 66 70	そのため
+T5	Argument 71 88	剥離した鋭利な先端部分で乗員が負傷
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

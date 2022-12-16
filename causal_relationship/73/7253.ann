@@ -1,0 +1,13 @@
+T1	Connective 29 31	ため
+T2	Argument 0 28	レーダーセンサー制御用コンピュータの装置登録作業が不適切
+T3	Argument 32 54	歩行者検知対応自動ブレーキが非作動状態で製作
+T4	Connective 60 64	そのため
+T5	Argument 65 80	レーダーセンサーが歩行者を検知
+T6	Connective 82 84	場合
+T7	Argument 101 115	自動ブレーキ機能が作動しない
+R1	REASON Arg1:T1 Arg2:T2	
+R2	RESULT Arg1:T1 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

@@ -1,0 +1,17 @@
+T1	Argument 0 24	方向指示器および車幅灯において、作業指示が不適切
+T3	Argument 28 46	塗装時に取り外したバルブを組み付ける
+T4	Argument 48 59	誤ったバルブが組み付け
+T5	Argument 73 85	方向指示器の明るさが不足
+T6	Argument 87 104	保安基準第４１条第２項に適合しない
+T7	Connective 25 27	ため
+T9	Connective 46 47	際
+T10	Connective 68 72	そのため
+T11	Connective 86 87	、
+R1	REASON Arg1:T7 Arg2:T1	
+R5	CONDITION Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T5	
+R9	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	
+R2	RESULT Arg1:T7 Arg2:T4	

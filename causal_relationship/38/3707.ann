@@ -1,0 +1,51 @@
+T1	Argument 0 36	ディーゼルターボエンジン搭載車において、過給機の負圧ホースの耐久性が不足
+T2	Argument 43 52	エンジンからの被熱
+T3	Argument 55 66	当該ホースに亀裂が発生
+T4	Argument 78 127	ＤＰＦ（ディーゼル粒子状物質除去装置）のＰＭ（黒煙等からなる粒子状物質）除去制御プログラムが不適切
+T6	Argument 151 160	ＤＰＦの再生を行う
+T7	Argument 171 181	そのまま使用を続ける
+T10	Argument 183 210	当該ホースの亀裂による負圧低下のために発生する異常燃焼
+T11	Argument 213 221	ＰＭが過度に堆積
+T12	Argument 226 233	ＤＰＦの再生時
+T13	Argument 234 246	ＤＰＦが過度に高温となっ
+T14	Argument 247 249	破損
+T15	Argument 251 253	最悪
+T16	Argument 257 267	アンダーカバーが焼損
+T17	Connective 40 42	ため
+T18	Connective 52 55	により
+T19	Connective 128 130	ため
+T21	Connective 166 170	そのため
+T22	Connective 181 182	と
+T25	Connective 210 213	により
+T26	Connective 223 224	、
+T27	Connective 233 234	に
+T28	Connective 250 251	、
+T29	Connective 254 256	場合
+R1	REASON Arg1:T17 Arg2:T1	
+R2	RESULT Arg1:T17 Arg2:T3	
+R3	REASON Arg1:T18 Arg2:T2	
+R5	RESULT Arg1:T18 Arg2:T3	
+R6	REASON Arg1:T19 Arg2:T4	
+R10	REASON Arg1:T21 Arg2:T6	
+R11	RESULT Arg1:T21 Arg2:T11	
+R12	CONDITION Arg1:T22 Arg2:T7	
+R18	REASON Arg1:T25 Arg2:T10	
+R19	RESULT Arg1:T25 Arg2:T11	
+R20	REASON Arg1:T26 Arg2:T11	
+R21	RESULT Arg1:T26 Arg2:T13	
+R22	CONDITION Arg1:T27 Arg2:T12	
+R23	RESULT Arg1:T27 Arg2:T13	
+T30	Connective 246 247	て
+R24	REASON Arg1:T30 Arg2:T13	
+R25	RESULT Arg1:T30 Arg2:T14	
+R26	REASON Arg1:T28 Arg2:T14	
+R27	RESULT Arg1:T28 Arg2:T16	
+R28	CONDITION Arg1:T29 Arg2:T15	
+R29	RESULT Arg1:T29 Arg2:T16	
+R4	REASON Arg1:T21 Arg2:T3	
+R7	RESULT Arg1:T19 Arg2:T6	
+R8	RESULT Arg1:T22 Arg2:T11	
+T5	Argument 131 142	ＰＭが過度に多量に堆積
+T8	Connective 144 146	場合
+R9	CONDITION Arg1:T8 Arg2:T5	
+R13	RESULT Arg1:T8 Arg2:T6	

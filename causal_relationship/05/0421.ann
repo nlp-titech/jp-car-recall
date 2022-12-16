@@ -1,0 +1,25 @@
+T1	Argument 0 22	制動装置において、倍力装置の製造工程が不適切
+T2	Argument 26 48	ダイヤフラムが倍力装置の本体容器に噛み込まれ
+T3	Argument 74 85	ブレーキ操作の繰り返し
+T4	Argument 88 97	ダイヤフラムが破損
+T5	Argument 105 110	負圧が漏れ
+T6	Argument 111 117	制動力が低下
+T7	Connective 23 25	ため
+T8	Connective 57 58	、
+T9	Connective 85 88	により
+T10	Connective 104 105	、
+T11	Connective 110 111	、
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T4	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T5	
+R9	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	
+T12	Argument 58 72	そのままの状態で使用を続ける
+T13	Connective 72 73	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T4	

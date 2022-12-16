@@ -1,0 +1,29 @@
+T1	Argument 0 42	プロペラ・シャフトを日本向けに短くした車両において、プロペラ・シャフトの溶接が不適切
+T2	Connective 43 45	ため
+T3	Argument 46 51	強度が不足
+T4	Connective 61 65	そのため
+T5	Argument 82 99	当該シャフトの溶接箇所に亀裂が発生
+T6	Connective 100 101	、
+T7	Argument 107 113	溶接部が破損
+T8	Connective 114 115	、
+T9	Argument 115 127	プロペラ・シャフトが脱落
+T10	Connective 128 129	て
+T11	Argument 129 136	走行不能となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 66 80	そのままの状態で使用を続ける
+T13	Connective 80 81	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T5	
+T14	Argument 101 103	最悪
+T15	Connective 104 106	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T7	

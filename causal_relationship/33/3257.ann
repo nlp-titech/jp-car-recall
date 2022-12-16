@@ -1,0 +1,10 @@
+T1	Argument 0 52	モータ・スイーパにおいて、オプション（キャビン）を取付けた状態での保安基準への適合性について確認が不十分
+T2	Connective 55 57	ため
+T3	Argument 58 76	保安基準に適合しない状態で車両を出荷
+T5	Argument 80 97	最大安定傾斜角度が３０°未満である
+T6	Connective 97 99	ため
+T7	Argument 100 110	保安基準第５条に抵触
+R1	RESULT Arg1:T6 Arg2:T7	
+R2	REASON Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T2 Arg2:T3	
+R6	REASON Arg1:T2 Arg2:T1	

@@ -1,0 +1,13 @@
+T1	Argument 0 25	スピードメータの照明用反射板に誤った部品を組み付け
+T2	Connective 26 28	ため
+T3	Argument 29 38	文字板の照度が低下
+T4	Connective 41 45	そのため
+T5	Argument 56 67	速度の判読が困難となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 46 50	夜間走行
+T7	Connective 50 51	時
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T5	

@@ -1,0 +1,17 @@
+T1	Argument 0 34	フロントワイパーモーターにおいて、フロントデッキ部の防水構造が不適切
+T2	Argument 38 81	フロントデッキガーニッシュとウインドシールドガラスの間から伝った水がモーター内部に浸入
+T3	Argument 83 93	モーターの内部が腐食
+T4	Argument 106 108	最悪
+T5	Argument 112 128	ワイパーモーターが作動しなくなる
+T6	Connective 35 37	ため
+T7	Connective 82 83	、
+T8	Connective 101 105	そのため
+T9	Connective 109 111	場合
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R7	CONDITION Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+R6	RESULT Arg1:T8 Arg2:T5	

@@ -1,0 +1,25 @@
+T1	Argument 11 29	ステアリングアームの製造工程が不適切
+T2	Connective 30 32	ため
+T3	Argument 33 50	タイロッドのロックナット部分が緩む
+T4	Connective 56 60	そのため
+T5	Argument 61 75	そのままの状態で使用を続ける
+T6	Connective 75 76	と
+T7	Argument 77 87	ハンドルにガタが生じ
+T8	Connective 87 88	、
+T9	Argument 88 90	最悪
+T10	Connective 91 93	場合
+T11	Argument 94 107	ステアリングアームが曲がり
+T12	Connective 107 108	、
+T13	Argument 108 121	かじ取り操作ができなくなる
+R1	RESULT Arg1:T12 Arg2:T13	
+R2	REASON Arg1:T12 Arg2:T11	
+R3	RESULT Arg1:T10 Arg2:T11	
+R4	CONDITION Arg1:T10 Arg2:T9	
+R5	RESULT Arg1:T8 Arg2:T11	
+R6	REASON Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T7	
+R8	CONDITION Arg1:T6 Arg2:T5	
+R9	RESULT Arg1:T4 Arg2:T7	
+R10	REASON Arg1:T4 Arg2:T3	
+R11	RESULT Arg1:T2 Arg2:T3	
+R12	REASON Arg1:T2 Arg2:T1	

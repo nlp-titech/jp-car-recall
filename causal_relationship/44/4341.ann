@@ -1,0 +1,52 @@
+T1	Argument 1 47	制動装置のブレーキ・マスタ・シリンダ（油圧発生部）に組み込まれている樹脂製シールが耐熱性不足
+T2	Connective 48 50	ため
+T3	Argument 66 68	変形
+T4	Connective 69 70	、
+T5	Argument 92 115	当該シール部分より圧力がリザーバ・タンクに漏れ
+T6	Connective 115 116	、
+T7	Argument 116 122	制動力が低下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 70 84	このままの状態で使用を続ける
+T9	Connective 84 85	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 86 88	最悪
+T11	Connective 89 91	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	
+T12	Argument 147 168	ピストン・リターン・スプリングが耐熱性不足
+T13	Connective 169 171	ため
+T14	Argument 187 193	弾性力が低下
+T15	Argument 172 183	エンジン・ルーム内の熱
+T16	Connective 183 187	によって
+T17	Argument 51 62	エンジン・ルーム内の熱
+T18	Connective 62 66	によって
+R11	REASON Arg1:T18 Arg2:T17	
+R12	RESULT Arg1:T18 Arg2:T3	
+R13	REASON Arg1:T13 Arg2:T12	
+R14	RESULT Arg1:T13 Arg2:T14	
+R15	REASON Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T14	
+T19	Connective 194 195	、
+T20	Argument 217 237	ブレーキ・ペダルが完全に戻りきらなくなる
+T21	Connective 242 243	、
+T22	Argument 243 256	ストップ・ランプが常時点灯
+T23	Argument 258 274	自動定速走行装置が作動しなくなる
+R17	REASON Arg1:T21 Arg2:T20	
+R18	RESULT Arg1:T21 Arg2:T22	
+R19	RESULT Arg1:T21 Arg2:T23	
+T24	Argument 195 209	このままの状態で使用を続ける
+T25	Connective 209 210	と
+R20	CONDITION Arg1:T25 Arg2:T24	
+R21	RESULT Arg1:T25 Arg2:T20	
+T26	Argument 211 213	最悪
+T27	Connective 214 216	場合
+R22	CONDITION Arg1:T27 Arg2:T26	
+R23	RESULT Arg1:T27 Arg2:T20	
+R24	REASON Arg1:T19 Arg2:T14	
+R25	RESULT Arg1:T19 Arg2:T20	

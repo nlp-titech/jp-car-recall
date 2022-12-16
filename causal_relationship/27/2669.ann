@@ -1,0 +1,5 @@
+T1	Argument 0 55	小型トラックのメータークラスターの交換等の作業時において、メータークラスターＥＣＵのデータが正しく入力されない
+T2	Connective 61 65	そのため
+T3	Argument 66 85	速度計の速度表示等が正しく表示されない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

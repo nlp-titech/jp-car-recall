@@ -1,0 +1,33 @@
+T1	Argument 0 65	トランスミッション内デフサイドギヤと左フロントドライブシャフトの嵌合部の抜け防止のために設けられているスナップリングの形状が不適切
+T2	Connective 66 68	ため
+T3	Argument 69 85	デフサイドギヤへの掛かり代が不足
+T4	Connective 95 99	そのため
+T5	Argument 100 110	そのまま使用を続ける
+T6	Connective 110 111	と
+T7	Argument 112 116	高速走行
+T8	Connective 116 117	時
+T9	Argument 118 142	スナップリングがドライブシャフトの中心方向に動き
+T10	Connective 142 143	、
+T11	Argument 143 150	当該嵌合が外れ
+T12	Connective 150 151	、
+T13	Argument 151 153	最悪
+T14	Connective 154 156	場合
+T15	Argument 157 172	タイヤに駆動力が伝わらなくなり
+T16	Connective 172 173	、
+T17	Argument 173 180	走行不能となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T9	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T9	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	CONDITION Arg1:T14 Arg2:T13	
+R13	RESULT Arg1:T14 Arg2:T15	
+R14	RESULT Arg1:T12 Arg2:T15	
+R15	REASON Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T17	

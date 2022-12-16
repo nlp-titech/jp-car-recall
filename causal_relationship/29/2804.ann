@@ -1,0 +1,9 @@
+T1	Argument 0 38	エンジンの燃料噴射ノズルにおいて、燃料パイプとの締結部の締付けトルクが不適切
+T2	Connective 39 41	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 42 53	当該ノズルに亀裂が発生
+T4	Connective 54 55	て
+T5	Argument 55 61	燃料が漏れる
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

@@ -1,0 +1,17 @@
+T1	Argument 9 42	ブレーキペダルとブレーキロッドを接続しているクランプの取付に不適切
+T2	Connective 48 49	、
+T3	Argument 71 80	当該クランプが外れ
+T4	Connective 80 81	、
+T5	Argument 81 105	ブレーキペダルを操作してもブレーキが効かなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 49 63	そのままの状態で使用を続ける
+T7	Connective 63 64	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 65 67	最悪
+T9	Connective 68 70	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	

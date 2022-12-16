@@ -1,0 +1,13 @@
+T1	Argument 0 25	計器パネル内にある機能選択画面のプログラムが不適切
+T2	Argument 29 41	停止中に運転者等が誤って
+T3	Argument 41 58	前照灯の照射光線を右側通行用に変更
+T4	Argument 72 89	前照灯に係わる保安基準に適合しない
+T5	Connective 26 28	ため
+T6	Connective 40 41	て
+T7	Connective 67 71	そのため
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	

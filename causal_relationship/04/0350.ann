@@ -1,0 +1,29 @@
+T1	Argument 0 65	制動装置において、ブレーキマスタシリンダ（油圧発生部）からアクチュエータ（油圧制御装置）までの間のブレーキパイプを組み付け時に変形
+T2	Argument 102 130	当該ブレーキパイプがパワーステアリング用油圧パイプと接触
+T3	Argument 142 150	ブレーキ液が漏れ
+T4	Connective 73 75	ため
+T5	Connective 135 136	、
+T6	Connective 99 102	により
+T7	Argument 92 98	原動機の振動
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T7	
+R4	RESULT Arg1:T6 Arg2:T2	
+R5	REASON Arg1:T5 Arg2:T9	
+R6	RESULT Arg1:T5 Arg2:T3	
+T8	Connective 131 132	て
+T9	Argument 132 134	損傷
+R7	REASON Arg1:T8 Arg2:T2	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Connective 150 151	て
+T11	Argument 151 157	制動力が低下
+R9	REASON Arg1:T10 Arg2:T3	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 76 90	そのままの状態で使用を続ける
+T13	Connective 90 91	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T2	
+T14	Argument 136 138	最悪
+T15	Connective 139 141	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T3	

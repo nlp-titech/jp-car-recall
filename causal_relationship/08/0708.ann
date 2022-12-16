@@ -1,0 +1,21 @@
+T1	Argument 0 19	制動装置の電気配線の取付け方法が不適切
+T2	Connective 20 22	ため
+T3	Argument 23 52	当該配線の束ね金具が走行時の振動によりブレーキパイプと接触
+T6	Connective 60 64	そのため
+T7	Argument 76 86	ブレーキパイプが損傷
+T8	Connective 87 88	、
+T9	Argument 88 96	ブレーキ液が漏れ
+T10	Connective 96 97	て
+T11	Argument 97 103	制動力が低下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T6 Arg2:T3	
+R4	RESULT Arg1:T6 Arg2:T7	
+R5	REASON Arg1:T8 Arg2:T7	
+R6	RESULT Arg1:T8 Arg2:T9	
+R7	REASON Arg1:T10 Arg2:T9	
+R8	RESULT Arg1:T10 Arg2:T11	
+T4	Argument 65 75	そのまま使用を続ける
+T5	Connective 75 76	と
+R9	CONDITION Arg1:T5 Arg2:T4	
+R10	RESULT Arg1:T5 Arg2:T7	

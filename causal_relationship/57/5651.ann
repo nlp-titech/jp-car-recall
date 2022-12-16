@@ -1,0 +1,25 @@
+T1	Argument 28 66	平成１５年２月１３日付け「届出番号外－９９９」の対策前のフライホイールを装着
+T2	Argument 71 86	高い変速ギア段で低速走行を行う
+T3	Argument 87 93	発生する振動
+T4	Argument 96 108	フライホイール内部が破損
+T5	Argument 110 112	最悪
+T6	Argument 116 124	動力が伝達されず
+T7	Argument 125 132	走行不能となる
+T8	Connective 68 70	ため
+T9	Connective 86 87	と
+T10	Connective 93 96	により
+T11	Connective 109 110	、
+T12	Connective 113 115	場合
+T13	Connective 124 125	、
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T4	
+R3	CONDITION Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T4	
+R5	REASON Arg1:T10 Arg2:T3	
+R6	RESULT Arg1:T10 Arg2:T4	
+R7	REASON Arg1:T11 Arg2:T4	
+R8	RESULT Arg1:T11 Arg2:T6	
+R9	CONDITION Arg1:T12 Arg2:T5	
+R10	RESULT Arg1:T12 Arg2:T6	
+R11	REASON Arg1:T13 Arg2:T6	
+R12	RESULT Arg1:T13 Arg2:T7	

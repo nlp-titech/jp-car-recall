@@ -1,0 +1,25 @@
+T1	Argument 0 26	フロントワイパーにおいて、モーターの防水構造が不適切
+T2	Argument 30 46	外部からの水がモーター内部に浸入
+T3	Argument 48 60	モーター内部の部品が腐食
+T4	Argument 73 83	そのまま使用を続ける
+T5	Argument 84 89	腐食が進行
+T6	Argument 91 93	最悪
+T7	Argument 97 109	ワイパーが作動しなくなる
+T8	Connective 27 29	ため
+T9	Connective 47 48	、
+T10	Connective 68 72	そのため
+T11	Connective 83 84	と
+T12	Connective 90 91	、
+T13	Connective 94 96	場合
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T2	
+R3	REASON Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T3	
+R5	REASON Arg1:T10 Arg2:T3	
+R7	CONDITION Arg1:T11 Arg2:T4	
+R8	REASON Arg1:T12 Arg2:T5	
+R9	RESULT Arg1:T12 Arg2:T7	
+R10	CONDITION Arg1:T13 Arg2:T6	
+R11	RESULT Arg1:T13 Arg2:T7	
+R12	RESULT Arg1:T11 Arg2:T5	
+R13	RESULT Arg1:T10 Arg2:T5	

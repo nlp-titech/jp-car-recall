@@ -1,0 +1,25 @@
+T1	Argument 0 29	動力伝達装置において、静油圧変速機の作動油タンク強度が不足
+T4	Connective 33 35	ため
+T5	Argument 36 55	高速走行時の車体振動による作動油の揺動
+T6	Connective 55 58	により
+T7	Argument 58 69	タンク底板に亀裂が発生
+T8	Connective 77 81	そのため
+T11	Argument 94 99	亀裂が進行
+T12	Connective 100 101	、
+T13	Argument 107 114	作動油が洩れる
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T7	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T11	
+R9	REASON Arg1:T12 Arg2:T11	
+R10	RESULT Arg1:T12 Arg2:T13	
+T14	Argument 82 92	そのまま使用を続ける
+T16	Argument 101 103	最悪
+T17	Connective 104 106	場合
+R13	CONDITION Arg1:T17 Arg2:T16	
+R14	RESULT Arg1:T17 Arg2:T13	
+T9	Connective 92 93	と
+R11	CONDITION Arg1:T9 Arg2:T14	
+R12	RESULT Arg1:T9 Arg2:T11	

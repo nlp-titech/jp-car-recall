@@ -1,0 +1,17 @@
+T1	Argument 0 24	排気管と消音器とを接続する取付金具の拘束力が不足
+T2	Connective 28 30	ため
+T3	Argument 31 46	当該接続部から排気ガスが漏れる
+T4	Connective 52 56	そのため
+T5	Argument 69 77	当該排気管が外れ
+T6	Connective 77 78	、
+T7	Argument 78 83	騒音が増大
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 57 67	そのまま使用を続ける
+T9	Connective 67 68	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

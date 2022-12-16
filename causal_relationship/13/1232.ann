@@ -1,0 +1,29 @@
+T1	Argument 1 20	前１軸車において、タイヤの切角が不適切
+T2	Connective 21 23	ため
+T3	Argument 24 60	スタッドレスタイヤを装着し、ハンドルを最大限度まで切った状態で段差を通過
+T4	Connective 62 64	場合
+T5	Argument 65 79	タイヤがドラッグリンクと接触
+T6	Connective 87 91	そのため
+T7	Argument 92 106	そのままの状態で使用を続ける
+T8	Connective 106 107	と
+T9	Argument 108 117	接触部分に錆が発生
+T10	Connective 118 119	、
+T11	Argument 119 121	最悪
+T12	Connective 122 124	場合
+T13	Argument 125 133	当該リンクが折損
+T14	Connective 134 135	て
+T15	Argument 136 145	操舵ができなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	CONDITION Arg1:T12 Arg2:T11	
+R11	RESULT Arg1:T12 Arg2:T13	
+R12	RESULT Arg1:T10 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	

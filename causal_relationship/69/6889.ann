@@ -1,0 +1,25 @@
+T1	Connective 27 29	ため
+T2	Argument 0 26	ブレーキ倍力装置用バキュームホースの内面洗浄が不十分
+T3	Argument 30 62	ホース内に挿入されているチェックバルブにホースの離型剤が多く付着
+T4	Connective 72 76	そのため
+T5	Argument 77 105	チェックバルブに付着した離型剤とホースからの析出物が混合
+T6	Connective 107 108	と
+T7	Argument 109 127	エンジン冷態時にチェックバルブが固着
+T8	Connective 128 129	、
+T9	Argument 140 149	アシスト不足となり
+T10	Connective 149 150	、
+T11	Argument 150 164	ブレーキペダルの操作力が増大
+R1	REASON Arg1:T1 Arg2:T2	
+R2	RESULT Arg1:T1 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R4	RESULT Arg1:T4 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 129 138	始動後の最初の制動
+T13	Connective 138 139	時
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T9	

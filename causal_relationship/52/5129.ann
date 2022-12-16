@@ -1,0 +1,13 @@
+T1	Argument 0 26	エアバッグコントロールユニットのソフトウェアが不適切
+T2	Connective 27 29	ため
+T3	Argument 30 55	前席シートの着座センサーが乗員の着座を感知できない
+T4	Connective 60 61	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 61 67	事故等の衝突
+T6	Connective 67 68	時
+T7	Argument 69 83	助手席エアバッグが作動しない
+R4	CONDITION Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	RESULT Arg1:T4 Arg2:T7	

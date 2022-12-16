@@ -1,0 +1,29 @@
+T1	Argument 0 28	ロータリ除雪車の変速機において、制御器の設置箇所が不適切
+T2	Connective 29 31	ため
+T3	Argument 45 60	車両走行制御用基板が高温となり
+T4	Connective 60 61	、
+T5	Argument 61 82	ＤＣ－ＤＣコンバータが正常に作動しなくなる
+T6	Connective 88 92	そのため
+T7	Argument 116 128	オペアンプの電源が断たれ
+T8	Connective 128 129	、
+T9	Argument 129 140	増減速制御が不能となり
+T10	Connective 140 141	、
+T11	Argument 147 157	意図しない速度で発進
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 32 41	暖房による熱の影響
+T13	Connective 41 44	により
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T3	
+T14	Argument 141 143	最悪
+T15	Connective 144 146	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T11	

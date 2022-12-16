@@ -1,0 +1,13 @@
+T1	Argument 0 16	燃料フィルターの防錆処理が不適切
+T2	Connective 17 19	ため
+T3	Argument 20 27	融雪剤等の影響
+T4	Connective 27 31	によって
+T5	Argument 31 33	腐食
+R1	RESULT Arg1:T4 Arg2:T5	
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T5	
+R4	REASON Arg1:T2 Arg2:T1	
+T6	Connective 41 45	そのため
+T7	Argument 46 61	燃料フィルターから燃料が漏れる
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	REASON Arg1:T6 Arg2:T5	

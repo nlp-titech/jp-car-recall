@@ -1,0 +1,15 @@
+T1	Argument 16 43	制御用コンピュータ電源回路の異常検出プログラムが不適切
+T2	Connective 44 46	ため
+T3	Argument 59 88	アイドリングストップから再始動する際の電圧低下を異常と判定
+T4	Connective 96 100	そのため
+T5	Argument 101 107	警告灯が点灯
+T6	Argument 110 127	電動パーキングブレーキが作動しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T8	Argument 47 54	バッテリが劣化
+T9	Connective 58 59	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+R5	RESULT Arg1:T4 Arg2:T6	

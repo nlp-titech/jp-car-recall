@@ -1,0 +1,29 @@
+T1	Argument 0 42	エンジン式フォークリフトのＬＰＧ仕様車において、ＬＰＧパイプ製造時の曲げ加工が不適切
+T2	Argument 46 57	当該曲げ部にシワが発生
+T3	Argument 86 93	エンジンの振動
+T4	Argument 96 105	ＬＰＧパイプが損傷
+T5	Argument 107 113	ＬＰＧがもれ
+T6	Argument 119 124	火災に至る
+T7	Connective 43 45	ため
+T8	Connective 65 69	そのため
+T9	Connective 93 96	により
+T10	Connective 106 107	、
+T11	Connective 113 114	、
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T4	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T5	
+R9	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	
+T12	Argument 70 84	そのままの状態で使用を続ける
+T13	Connective 84 85	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T4	
+T14	Argument 114 116	最悪
+T15	Connective 117 119	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T6	

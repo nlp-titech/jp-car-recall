@@ -1,0 +1,13 @@
+T1	Argument 0 56	ＬＥＤ式の前面灯火器装着車において、車幅灯の制御を行うオンボードサプライコントロールユニットのプログラムが不適切
+T2	Connective 57 59	ため
+T3	Argument 60 87	車幅灯が点灯状態で方向指示器および非常点滅表示灯を作動
+T4	Connective 90 91	際
+T5	Argument 92 98	車幅灯が点滅
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+T6	Connective 101 105	そのため
+T7	Argument 106 123	保安基準第３４条の基準に適合しない
+R3	CONDITION Arg1:T4 Arg2:T3	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R4	RESULT Arg1:T4 Arg2:T5	

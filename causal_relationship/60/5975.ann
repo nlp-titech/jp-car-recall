@@ -1,0 +1,13 @@
+T1	Argument 0 24	リアブレーキホースの取付位置及び取付方法が不適切
+T2	Connective 25 27	ため
+T3	Argument 28 40	リアブレーキホースが損傷
+T4	Connective 41 42	て
+T5	Argument 42 53	ブレーキフルードが漏れ
+T6	Connective 53 54	て
+T7	Argument 54 67	リアブレーキの制動力が低下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

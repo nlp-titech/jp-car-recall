@@ -1,0 +1,23 @@
+T1	Argument 0 55	小型トラックと大型バスの運転席または助手席用シートベルトにおいて、巻取装置内部のロック機構部の製造方法が不適切
+T2	Connective 56 58	ため
+T3	Argument 59 65	圧入部が緩み
+T4	Argument 96 106	そのまま使用を続ける
+T5	Connective 106 107	と
+T6	Argument 108 110	最悪
+T7	Connective 111 113	場合
+T8	Argument 114 121	圧入部品が外れ
+R1	RESULT Arg1:T7 Arg2:T8	
+R2	CONDITION Arg1:T7 Arg2:T6	
+R3	RESULT Arg1:T5 Arg2:T8	
+R4	CONDITION Arg1:T5 Arg2:T4	
+R5	RESULT Arg1:T2 Arg2:T3	
+R6	REASON Arg1:T2 Arg2:T1	
+T10	Connective 120 121	れ
+T11	Argument 122 144	衝突時にシートベルトのロックが作動しなくなる
+R9	REASON Arg1:T10 Arg2:T8	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 66 87	シートベルト脱着時に異音や引っ掛かりが発生
+T13	Connective 65 66	、
+R11	REASON Arg1:T13 Arg2:T3	
+R12	RESULT Arg1:T13 Arg2:T12	
+R7	RESULT Arg1:T13 Arg2:T8	

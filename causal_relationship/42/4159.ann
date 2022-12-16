@@ -1,0 +1,31 @@
+T1	Argument 17 48	オイルフィルターカートリッジの組付けの作業指示及び作業が不適切
+T2	Connective 49 51	ため
+T3	Argument 52 61	締付けトルクが低く
+T4	Connective 61 62	、
+T5	Argument 72 74	緩む
+T6	Connective 80 84	そのため
+T7	Argument 101 111	エンジンオイルが漏れ
+T8	Connective 111 112	、
+T9	Argument 112 118	警告灯が点灯
+T11	Argument 126 135	エンジンが焼きつく
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T12	Argument 62 69	走行時の振動等
+T13	Connective 69 72	により
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T5	
+T14	Argument 85 99	そのままの状態で使用を続ける
+T15	Connective 99 100	と
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T7	
+R9	RESULT Arg1:T8 Arg2:T11	
+T10	Argument 120 122	最悪
+T16	Connective 123 125	場合
+R10	CONDITION Arg1:T16 Arg2:T10	
+R15	RESULT Arg1:T16 Arg2:T11	

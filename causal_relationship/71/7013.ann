@@ -1,0 +1,13 @@
+T1	Argument 0 57	アイドリングストップ（ｉ－Ｓｔｏｐ）仕様車において、電動式パワーステアリング制御用コンピュータのプログラムが不適切
+T2	Connective 58 60	ため
+T3	Argument 94 106	パワステ機能が作動しない
+T4	Connective 111 112	、
+T5	Argument 112 122	ハンドル操作力が増大
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 61 88	アイドリングストップ状態からエンジンが自動で再始動した
+T7	Connective 88 89	後
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	

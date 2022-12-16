@@ -1,0 +1,13 @@
+T1	Argument 0 19	年少者用腰ベルトにおいて、縫製が不適切
+T2	Connective 20 22	ため
+T3	Argument 22 36	当該ベルト端末部の表面が固い
+T4	Connective 42 46	そのため
+T5	Argument 47 69	乳児をチャイルドシートに乗車させベルトを装着
+T6	Connective 71 73	場合
+T7	Argument 75 96	当該ベルト端末部で肌の露出部に擦過傷を負う
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

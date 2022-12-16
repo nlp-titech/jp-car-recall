@@ -1,0 +1,17 @@
+T1	Argument 0 29	自動変速機のセレクトレバーにおいて、溶接設備の設定が不適切
+T2	Argument 33 53	セレクトレバーとブラケットの溶接が不十分
+T3	Argument 65 74	セレクトレバー操作
+T4	Argument 77 83	溶接部が破断
+T5	Argument 85 93	操作できなくなる
+T6	Connective 30 32	ため
+T7	Connective 60 64	そのため
+T8	Connective 74 77	により
+T9	Connective 84 85	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T4	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	

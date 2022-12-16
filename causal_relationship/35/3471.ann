@@ -1,0 +1,33 @@
+T1	Argument 0 13	警音器のステーの強度が不足
+T2	Connective 17 19	ため
+T3	Argument 20 38	特定のエンジン回転領域で発生する振動
+T4	Connective 38 41	により
+T5	Argument 42 54	当該ステーに負荷がかかり
+T6	Connective 54 55	、
+T7	Argument 55 57	亀裂
+T8	Connective 67 71	そのため
+T9	Argument 72 82	そのまま使用を続ける
+T10	Connective 82 83	と
+T11	Argument 83 88	亀裂が進行
+T12	Connective 89 90	、
+T13	Argument 90 92	最悪
+T14	Connective 93 95	場合
+T15	Argument 96 104	当該ステーが折損
+T16	Connective 105 106	て
+T17	Argument 107 118	取付部から警音器が脱落
+R1	RESULT Arg1:T16 Arg2:T17	
+R2	REASON Arg1:T16 Arg2:T15	
+R3	RESULT Arg1:T14 Arg2:T15	
+R4	CONDITION Arg1:T14 Arg2:T13	
+R5	RESULT Arg1:T12 Arg2:T15	
+R6	REASON Arg1:T12 Arg2:T11	
+R7	RESULT Arg1:T10 Arg2:T11	
+R8	CONDITION Arg1:T10 Arg2:T9	
+R9	RESULT Arg1:T8 Arg2:T11	
+R10	REASON Arg1:T8 Arg2:T7	
+R11	RESULT Arg1:T6 Arg2:T7	
+R12	REASON Arg1:T6 Arg2:T5	
+R13	RESULT Arg1:T4 Arg2:T5	
+R14	REASON Arg1:T4 Arg2:T3	
+R15	RESULT Arg1:T2 Arg2:T3	
+R16	REASON Arg1:T2 Arg2:T1	

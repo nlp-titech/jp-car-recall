@@ -1,0 +1,25 @@
+T1	Argument 0 30	運転者席フロアマットにおいて、アクセルストッパ部の厚みが薄い
+T2	Connective 30 32	ため
+T3	Argument 54 71	ペダル下端部が当該ストッパ部と干渉
+T4	Connective 72 73	、
+T5	Argument 73 84	フロアマットに穴があく
+T6	Connective 90 94	そのため
+T7	Argument 101 116	アクセルペダルが穴に引っかかり
+T8	Connective 116 117	、
+T9	Argument 117 131	エンジン回転が下がらなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 33 52	アクセルペダルの全開操作を繰り返し行う
+T11	Connective 52 53	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	
+T12	Argument 95 97	最悪
+T13	Connective 98 100	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T7	

@@ -1,0 +1,13 @@
+T1	Argument 0 62	過給器付原動機の吸入空気冷却装置（インタークーラー）の配管において、インタークーラーホースとインテークパイプの締結力が不十分
+T2	Connective 69 73	そのため
+T3	Argument 74 88	吸入空気圧に耐えられなくなり
+T4	Connective 88 89	、
+T5	Argument 89 113	インタークーラーホースがインテークパイプから抜け
+T6	Connective 113 114	、
+T7	Argument 114 129	黒煙排出量が保安基準値を超える
+R1	RESULT Arg1:T6 Arg2:T7	
+R2	REASON Arg1:T6 Arg2:T5	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	REASON Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T2 Arg2:T3	
+R6	REASON Arg1:T2 Arg2:T1	

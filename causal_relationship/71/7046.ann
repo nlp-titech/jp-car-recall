@@ -1,0 +1,13 @@
+T1	Argument 20 45	乗降等のドア開閉時に当該ドアサッシュモール部に接触
+T2	Connective 47 48	と
+T3	Argument 49 82	モール端部の樹脂製プロテクターの角部または、当該プロテクターが外れ
+T4	Connective 81 82	れ
+T5	Argument 95 100	指等を切創
+R1	CONDITION Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 82 91	金属製モールの端部
+T7	Connective 91 94	により
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T5	

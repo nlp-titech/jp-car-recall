@@ -1,0 +1,9 @@
+T1	Argument 26 39	上部フェンダの形状が不適切
+T2	Argument 43 56	回転部分が当該部位から突出
+T3	Argument 66 83	保安基準第１８条の基準に適合しない
+T4	Connective 40 42	ため
+T5	Connective 61 65	そのため
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	

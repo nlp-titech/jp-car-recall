@@ -1,0 +1,5 @@
+T1	Argument 0 39	エンジン式フォークリフトのＬＰＧ仕様車において、燃料ホースの内層ゴムに融合不良
+T2	Connective 46 50	このため
+T3	Argument 51 58	ＬＰＧがもれる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

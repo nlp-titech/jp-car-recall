@@ -1,0 +1,13 @@
+T1	Argument 0 45	サイドカーテンエアバッグ装着車において、エアバッグコントロールユニットのプログラムが不適切
+T2	Connective 46 48	ため
+T3	Argument 49 64	三列席への側面からの衝撃を受け
+T4	Connective 65 66	際
+T5	Argument 68 81	エアバッグの展開信号が遅れ
+T6	Connective 81 82	、
+T7	Argument 82 103	当該席カーテンエアバッグが正常に機能しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

@@ -1,0 +1,25 @@
+T1	Argument 82 89	当該配線が損傷
+T2	Connective 79 81	場合
+T4	Connective 97 101	そのため
+T5	Argument 102 109	ショートが発生
+T6	Connective 110 111	て
+T7	Argument 111 126	バニティミラーランプが点灯せず
+T8	Argument 127 129	最悪
+T9	Connective 130 132	場合
+T10	Connective 126 127	、
+T11	Argument 133 138	火災に至る
+R2	RESULT Arg1:T2 Arg2:T1	
+R3	REASON Arg1:T4 Arg2:T1	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T10 Arg2:T7	
+R8	RESULT Arg1:T10 Arg2:T11	
+R9	CONDITION Arg1:T9 Arg2:T8	
+R10	RESULT Arg1:T9 Arg2:T11	
+T3	Argument 26 48	バニティミラーランプ配線を必要以上に引き出し
+T12	Connective 49 50	後
+T13	Argument 51 77	当該配線の位置を確認せずにサンバイザをスクリュで固定
+R1	CONDITION Arg1:T12 Arg2:T3	
+R11	RESULT Arg1:T12 Arg2:T13	
+R12	CONDITION Arg1:T2 Arg2:T13	

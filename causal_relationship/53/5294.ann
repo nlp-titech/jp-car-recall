@@ -1,0 +1,29 @@
+T2	Connective 44 46	ため
+T3	Argument 47 52	がたが発生
+T4	Connective 60 64	そのため
+T5	Argument 77 104	当該メンバーとリヤアクスルブラケットの取付ボルトが緩み
+T6	Connective 104 105	、
+T7	Argument 111 117	ボルトが外れ
+T8	Connective 117 118	て
+T9	Argument 118 132	当該ブラケットが車体から分離
+T10	Connective 133 134	、
+T11	Argument 134 145	走行安定性が損なわれる
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 65 75	そのまま使用を続ける
+T13	Connective 75 76	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T5	
+T14	Argument 105 107	最悪
+T15	Connective 108 110	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T7	
+T1	Argument 3 43	サイドメンバーにリヤアクスルを取り付けるための補強板と当該メンバーの溶接が不適切
+R1	REASON Arg1:T2 Arg2:T1	

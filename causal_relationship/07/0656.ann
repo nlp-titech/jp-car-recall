@@ -1,0 +1,50 @@
+T1	Argument 0 22	電気配線（信号用、電源用）の固定方法が不適切
+T2	Argument 26 33	走行中の振動等
+T3	Argument 36 66	当該配線がスイベル回り止め用ブラケット及び配管クランプと干渉
+T4	Argument 68 75	当該配線が損傷
+T5	Argument 88 96	信号用配線が損傷
+T6	Argument 101 114	原動機が停止して再始動不能
+T8	Argument 118 128	変速機がニュートラル
+T9	Argument 131 138	走行不能となる
+T10	Argument 141 151	灯火装置が不灯となる
+T11	Argument 158 166	電源用配線が損傷
+T13	Argument 171 187	原動機が停止して再始動不能となる
+T15	Argument 190 202	当該配線と車体の間が短絡
+T16	Argument 215 220	火災に至る
+T17	Connective 23 25	ため
+T18	Connective 33 36	により
+T19	Connective 67 68	、
+T21	Connective 98 100	場合
+T24	Connective 128 131	になり
+T25	Connective 168 170	場合
+T29	Connective 212 215	により
+R1	REASON Arg1:T17 Arg2:T1	
+R3	REASON Arg1:T18 Arg2:T2	
+R4	RESULT Arg1:T18 Arg2:T3	
+R5	REASON Arg1:T19 Arg2:T3	
+R6	RESULT Arg1:T19 Arg2:T4	
+R9	CONDITION Arg1:T21 Arg2:T5	
+R16	RESULT Arg1:T24 Arg2:T9	
+R18	CONDITION Arg1:T25 Arg2:T11	
+R27	RESULT Arg1:T29 Arg2:T16	
+R2	RESULT Arg1:T17 Arg2:T3	
+R10	RESULT Arg1:T21 Arg2:T6	
+R13	RESULT Arg1:T25 Arg2:T13	
+T7	Connective 83 87	そのため
+R7	REASON Arg1:T7 Arg2:T4	
+R11	RESULT Arg1:T7 Arg2:T6	
+R15	REASON Arg1:T24 Arg2:T8	
+R12	RESULT Arg1:T24 Arg2:T10	
+R22	RESULT Arg1:T7 Arg2:T15	
+R8	RESULT Arg1:T7 Arg2:T8	
+R14	RESULT Arg1:T21 Arg2:T8	
+R17	RESULT Arg1:T7 Arg2:T15	
+R19	RESULT Arg1:T25 Arg2:T15	
+R21	RESULT Arg1:T21 Arg2:T10	
+R23	RESULT Arg1:T7 Arg2:T13	
+T12	Argument 206 212	発生した火花
+T14	Connective 202 203	し
+R20	REASON Arg1:T14 Arg2:T15	
+R24	RESULT Arg1:T14 Arg2:T12	
+R25	REASON Arg1:T29 Arg2:T12	
+#1	AnnotatorNotes T14	短絡→火花発生

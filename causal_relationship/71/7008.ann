@@ -1,0 +1,25 @@
+T1	Argument 0 63	圧縮板式塵芥車（富士重工業㈱製、商標名：フジマイティー）において、テールゲート固縛フックを掛けるＵボルトの取付け部材に加工不良
+T2	Connective 70 74	そのため
+T3	Argument 75 89	そのままの状態で使用を続ける
+T4	Connective 89 90	と
+T5	Argument 91 101	当該取付け部材が破損
+T6	Connective 102 103	、
+T7	Argument 103 105	最悪
+T8	Connective 106 108	場合
+T9	Argument 109 121	テールゲートの固縛が外れ
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	RESULT Arg1:T6 Arg2:T9	
+T10	Connective 121 122	、
+T11	Argument 122 127	積荷の反力
+T12	Connective 127 130	により
+T13	Argument 130 139	テールゲートが開く
+R9	REASON Arg1:T12 Arg2:T11	
+R10	RESULT Arg1:T12 Arg2:T13	
+R11	RESULT Arg1:T10 Arg2:T13	
+R12	REASON Arg1:T10 Arg2:T9	

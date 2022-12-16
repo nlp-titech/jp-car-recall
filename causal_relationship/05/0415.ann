@@ -1,0 +1,25 @@
+T1	Argument 0 49	高規格救急車の電気装置において､灯火装置等回路ヒュージブルリンクの容量及び取付用端子の形状が不適切
+T2	Argument 53 68	負荷が高い状態で連続通電を行う
+T3	Argument 70 78	当該端子部が発熱
+T4	Argument 80 85	樹脂が溶融
+T5	Argument 87 98	端子間に樹脂が入り込ん
+T6	Argument 100 107	通電不良となる
+T7	Argument 113 154	前照灯・車幅灯・制動灯・非常点滅表示灯・警音器・デフロスタが点灯又は作動しなくなる
+T9	Connective 50 52	ため
+T10	Connective 68 69	と
+T11	Connective 79 80	て
+T12	Connective 86 87	､
+T13	Connective 98 99	で
+T14	Connective 112 113	、
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T3	
+R3	CONDITION Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T3	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+R7	REASON Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T5	
+R9	REASON Arg1:T13 Arg2:T5	
+R10	RESULT Arg1:T13 Arg2:T6	
+R11	REASON Arg1:T14 Arg2:T6	
+R12	RESULT Arg1:T14 Arg2:T7	

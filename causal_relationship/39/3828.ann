@@ -1,0 +1,24 @@
+T1	Argument 0 20	ショベルローダの前面ガラスの製造が不適切
+T2	Argument 23 34	端部に微細な亀裂が入っ
+T3	Argument 44 68	その前面ガラスをたわんだ状態で車体に組み付けられ
+T4	Argument 80 95	ガラスの温度変化や作業中の振動
+T5	Argument 98 103	亀裂が進行
+T6	Argument 105 111	ガラスが割れ
+T7	Argument 112 122	運転者の視野を妨げる
+T8	Connective 21 23	ため
+T10	Connective 75 79	そのため
+T11	Connective 95 98	により
+T12	Connective 104 105	、
+T13	Connective 111 112	、
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T2	
+R5	REASON Arg1:T10 Arg2:T3	
+R7	REASON Arg1:T11 Arg2:T4	
+R8	RESULT Arg1:T11 Arg2:T5	
+R9	REASON Arg1:T12 Arg2:T5	
+R10	RESULT Arg1:T12 Arg2:T6	
+R11	REASON Arg1:T13 Arg2:T6	
+R12	RESULT Arg1:T13 Arg2:T7	
+R3	REASON Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T10 Arg2:T5	

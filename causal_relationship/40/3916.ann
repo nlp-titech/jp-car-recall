@@ -1,0 +1,29 @@
+T1	Argument 7 44	右側燃料タンク取付ブラケットにおいて、当該ブラケット取付部の溶接強度が不足
+T2	Argument 51 57	走行時の振動
+T3	Argument 60 70	取付部に亀裂が生じる
+T4	Argument 81 95	そのままの状態で使用を続ける
+T5	Argument 97 102	亀裂が進展
+T6	Argument 104 112	燃料タンクが傾き
+T7	Argument 113 115	最悪
+T8	Argument 119 127	燃料タンクが脱落
+T9	Connective 48 50	ため
+T10	Connective 57 60	により
+T11	Connective 76 80	そのため
+T12	Connective 95 96	と
+T13	Connective 103 104	て
+T14	Connective 116 118	場合
+T15	Connective 112 113	、
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T3	
+R3	REASON Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T3	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T5	
+R7	CONDITION Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T5	
+R9	REASON Arg1:T13 Arg2:T5	
+R10	RESULT Arg1:T13 Arg2:T6	
+R11	REASON Arg1:T15 Arg2:T6	
+R12	RESULT Arg1:T15 Arg2:T8	
+R13	CONDITION Arg1:T14 Arg2:T7	
+R14	RESULT Arg1:T14 Arg2:T8	

@@ -1,0 +1,17 @@
+T1	Argument 0 40	後軸ホイールバブのエンドプレート（抜け止め板）を取り付けているボルトの強度が不足
+T2	Argument 63 71	当該ボルトが折損
+T3	Argument 79 84	車輪が脱落
+T4	Connective 44 46	ため
+T5	Connective 72 73	、
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	
+T6	Argument 47 61	そのままの状態で使用を続ける
+T7	Connective 61 62	と
+R5	RESULT Arg1:T7 Arg2:T2	
+T8	Argument 73 75	最悪
+T9	Connective 76 78	場合
+R6	CONDITION Arg1:T9 Arg2:T8	
+R7	RESULT Arg1:T9 Arg2:T3	
+R8	CONDITION Arg1:T7 Arg2:T6	

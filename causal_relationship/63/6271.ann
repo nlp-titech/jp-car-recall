@@ -1,0 +1,23 @@
+T1	Argument 29 52	当該エクスチェンジャーの構成部品の溶接が不適切
+T2	Connective 53 55	ため
+T3	Argument 56 61	隙間が生じ
+T4	Connective 70 74	そのため
+T5	Argument 75 89	隙間からエンジンオイルが漏れ
+T6	Connective 89 90	、
+T7	Argument 90 96	警告灯が点灯
+T8	Argument 98 108	そのまま使用を続ける
+T9	Connective 108 109	と
+T10	Argument 110 112	最悪
+T11	Connective 113 115	場合
+T12	Argument 116 123	エンジンが停止
+R1	RESULT Arg1:T11 Arg2:T12	
+R2	CONDITION Arg1:T11 Arg2:T10	
+R3	RESULT Arg1:T9 Arg2:T12	
+R4	CONDITION Arg1:T9 Arg2:T8	
+R5	RESULT Arg1:T6 Arg2:T12	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T6 Arg2:T5	
+R8	RESULT Arg1:T4 Arg2:T5	
+R9	REASON Arg1:T4 Arg2:T3	
+R10	RESULT Arg1:T2 Arg2:T3	
+R11	REASON Arg1:T2 Arg2:T1	

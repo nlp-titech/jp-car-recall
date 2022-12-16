@@ -1,0 +1,21 @@
+T1	Argument 0 52	ディーゼル・電気式ハイブリッド自動車の電気装置において、バッテリーケーブルのコネクタ端子間の接触が不十分
+T2	Argument 77 89	当該コネクタ端子間が発熱
+T3	Argument 97 110	コネクタの樹脂ケースが溶損
+T4	Argument 112 125	原動機の始動ができなくなる
+T5	Connective 58 60	ため
+T6	Connective 90 91	、
+T7	Connective 111 112	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 61 75	そのままの状態で使用を続ける
+T9	Connective 75 76	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T2	
+T10	Argument 91 93	最悪
+T11	Connective 94 96	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	

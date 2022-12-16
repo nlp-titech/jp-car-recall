@@ -1,0 +1,19 @@
+T1	Argument 33 59	アライメントの調整とテンションロッドの締付けが不適切
+T2	Argument 63 72	ベルトが早期に摩耗
+T3	Argument 73 81	プーリから外れる
+T4	Argument 92 97	水温が上昇
+T5	Argument 99 109	オーバーヒートとなる
+T6	Connective 60 62	ため
+T7	Connective 72 73	し
+T8	Connective 87 91	そのため
+T9	Connective 98 99	て
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 18 30	ファンベルトの耐久性不足
+R9	REASON Arg1:T6 Arg2:T10	

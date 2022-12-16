@@ -1,0 +1,41 @@
+T1	Argument 0 22	エンジン制御コンピュータのプログラムが不適切
+T2	Connective 23 25	ため
+T4	Argument 70 84	エンジンが空ぶかし状態となり
+T6	Argument 60 69	スロットルを開ける
+T7	Connective 69 70	と
+R1	REASON Arg1:T2 Arg2:T1	
+R7	CONDITION Arg1:T7 Arg2:T6	
+R8	RESULT Arg1:T7 Arg2:T4	
+T10	Argument 108 123	動力伝達装置に過大な力がかかる
+T11	Connective 84 85	、
+R9	REASON Arg1:T11 Arg2:T4	
+R10	RESULT Arg1:T11 Arg2:T10	
+T12	Argument 90 106	クラッチを切らずに２速に入れ直す
+T13	Connective 106 107	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T10	
+T14	Connective 124 128	そのため
+T15	Argument 129 143	ドライブチェーンが異常に伸び
+T16	Connective 143 144	、
+T17	Argument 150 153	外れる
+T18	Connective 159 160	て
+T19	Argument 160 167	走行不能となる
+R13	REASON Arg1:T14 Arg2:T10	
+R14	RESULT Arg1:T14 Arg2:T15	
+R15	REASON Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T17	
+R18	RESULT Arg1:T18 Arg2:T19	
+T20	Argument 144 146	最悪
+T21	Connective 147 149	場合
+R19	CONDITION Arg1:T21 Arg2:T20	
+R20	RESULT Arg1:T21 Arg2:T17	
+T22	Argument 157 159	切れ
+R17	REASON Arg1:T18 Arg2:T17	
+R21	REASON Arg1:T18 Arg2:T22	
+R22	RESULT Arg1:T21 Arg2:T22	
+R23	RESULT Arg1:T16 Arg2:T22	
+T3	Argument 26 58	１速から２速への変速時にギアが２速に入らずニュートラルになった時
+T5	Connective 58 59	に
+R2	CONDITION Arg1:T5 Arg2:T3	
+R3	RESULT Arg1:T5 Arg2:T6	
+R4	RESULT Arg1:T2 Arg2:T4	

@@ -1,0 +1,17 @@
+T1	Argument 0 32	サーキット走行等による過大な荷重に対するフロントハブの強度が不足
+T2	Connective 36 38	ため
+T3	Argument 39 52	サーキット走行等を繰り返す
+T4	Connective 52 53	と
+T5	Argument 54 61	当該ハブが破損
+T6	Connective 69 73	そのため
+T7	Argument 74 98	駆動力をフロントタイヤに伝えることができなくなり
+T8	Connective 98 99	、
+T9	Argument 99 114	一般公道走行時に走行不能に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R10	RESULT Arg1:T8 Arg2:T9	

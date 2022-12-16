@@ -1,0 +1,29 @@
+T1	Argument 0 15	ＡＢＳの制御プログラムが不適切
+T2	Connective 16 18	ため
+T3	Argument 42 52	ブレーキペダルを踏ん
+T4	Connective 53 55	場合
+T5	Argument 56 72	ＡＢＳ内の油圧制御バルブが誤作動
+T6	Connective 80 84	そのため
+T7	Connective 40 41	後
+T8	Argument 19 39	特定の加速状況で急にアクセルペダルを放し
+T9	Argument 85 101	ブレーキペダルが通常より重くなる
+T10	Connective 103 104	で
+T11	Argument 104 119	ユーザーの意図する制動ができず
+T12	Argument 120 122	最悪
+T13	Connective 123 125	場合
+T14	Connective 119 120	、
+T15	Argument 126 134	制動距離が伸びる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T7 Arg2:T8	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	CONDITION Arg1:T4 Arg2:T3	
+R6	RESULT Arg1:T4 Arg2:T5	
+R7	REASON Arg1:T6 Arg2:T5	
+R8	RESULT Arg1:T6 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T14 Arg2:T11	
+R12	RESULT Arg1:T14 Arg2:T15	
+R13	CONDITION Arg1:T13 Arg2:T12	
+R14	RESULT Arg1:T13 Arg2:T15	

@@ -1,0 +1,21 @@
+T1	Argument 5 52	サスペンションアームとハブキャリアを連結しているボールジョイント部取り付けナットに締め付け不足
+T2	Argument 59 69	そのままの状態で使用
+T3	Argument 72 80	当該ナットが緩み
+T4	Argument 81 83	最悪
+T5	Argument 87 101	当該ボールジョイント部が折損
+T6	Argument 104 111	走行不能に至る
+T7	Connective 58 59	、
+T8	Connective 71 72	と
+T9	Connective 80 81	、
+T10	Connective 84 86	場合
+T11	Connective 102 103	て
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T3	
+R3	CONDITION Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T5	
+R7	CONDITION Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T5	
+R9	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	

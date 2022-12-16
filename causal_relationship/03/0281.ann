@@ -1,0 +1,27 @@
+T1	Argument 0 31	原動機において、過給機の電子制御式可変ノズルの開度設定が不適切
+T2	Argument 35 52	圧縮圧開放式エンジンブレーキを作動
+T3	Argument 56 79	過給機のタービン翼にガス流による過大な力が作用
+T4	Argument 97 110	当該タービン翼の一部が損傷
+T5	Argument 112 117	異音が発生
+T6	Argument 125 130	黒煙を発生
+T7	Connective 32 34	ため
+T8	Connective 55 56	と
+T9	Connective 80 81	、
+T10	Connective 111 112	て
+R1	RESULT Arg1:T10 Arg2:T5	
+R2	RESULT Arg1:T10 Arg2:T6	
+R3	REASON Arg1:T10 Arg2:T4	
+R4	REASON Arg1:T7 Arg2:T1	
+R5	RESULT Arg1:T7 Arg2:T3	
+R6	CONDITION Arg1:T8 Arg2:T2	
+R7	RESULT Arg1:T8 Arg2:T3	
+R8	REASON Arg1:T9 Arg2:T3	
+R9	RESULT Arg1:T9 Arg2:T4	
+T11	Argument 81 95	そのままの状態で使用を続ける
+T12	Connective 95 96	と
+R12	CONDITION Arg1:T12 Arg2:T11	
+R13	RESULT Arg1:T12 Arg2:T4	
+T13	Argument 119 121	最悪
+T14	Connective 122 124	場合
+R14	CONDITION Arg1:T14 Arg2:T13	
+R15	RESULT Arg1:T14 Arg2:T6	

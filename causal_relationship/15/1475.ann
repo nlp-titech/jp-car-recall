@@ -1,0 +1,46 @@
+T2	Connective 30 32	ため
+T3	Argument 33 37	潤滑不良
+T4	Connective 47 51	そのため
+T5	Argument 52 62	そのまま使用を続ける
+T6	Connective 62 63	と
+T7	Argument 64 87	トランスファ内部のギヤ及びベアリングが焼き付き
+T8	Connective 87 88	、
+T9	Argument 88 90	最悪
+T10	Connective 91 93	場合
+T11	Argument 94 101	走行不能に至る
+T12	Argument 108 144	②変速装置において、油圧回路のオイルクーラ用リリーフバルブの形状が不適切
+T13	Connective 145 147	ため
+T14	Argument 148 186	リリーフバルブが作動不良を起こしトランスファ部へのオイル供給量が不十分となり
+T15	Connective 186 187	、
+T16	Argument 187 195	潤滑不良を起こす
+T17	Connective 201 205	そのため
+T18	Argument 206 216	そのまま使用を続ける
+T19	Connective 216 217	と
+T20	Argument 227 241	ギヤ及びベアリングが焼き付き
+T21	Connective 241 242	、
+T22	Argument 242 244	最悪
+T23	Connective 245 247	場合
+T24	Argument 248 255	走行不能に至る
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	CONDITION Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T7	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	CONDITION Arg1:T10 Arg2:T9	
+R9	RESULT Arg1:T10 Arg2:T11	
+R10	RESULT Arg1:T8 Arg2:T11	
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T14	
+R13	REASON Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T16	
+R15	REASON Arg1:T17 Arg2:T16	
+R16	CONDITION Arg1:T19 Arg2:T18	
+R17	RESULT Arg1:T19 Arg2:T20	
+R18	RESULT Arg1:T17 Arg2:T20	
+R19	REASON Arg1:T21 Arg2:T20	
+R20	CONDITION Arg1:T23 Arg2:T22	
+R21	RESULT Arg1:T23 Arg2:T24	
+R22	RESULT Arg1:T21 Arg2:T24	
+T1	Argument 0 29	①変速装置において、トランスファ部へのオイル供給量が不十分
+R1	REASON Arg1:T2 Arg2:T1	

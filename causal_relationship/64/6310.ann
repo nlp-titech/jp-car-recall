@@ -1,0 +1,17 @@
+T1	Argument 0 35	フロントシートベルトの巻取り装置において、製造時に左右の組み付けを誤っ
+T2	Connective 42 46	そのため
+T3	Argument 47 65	衝撃を感知するセンサが正しく作動せず
+T4	Connective 65 66	、
+T5	Argument 66 68	最悪
+T6	Connective 69 71	場合
+T7	Argument 72 90	衝突時等にシートベルトをロックできず
+T8	Connective 90 91	、
+T9	Argument 91 103	適切に乗員を拘束できない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	

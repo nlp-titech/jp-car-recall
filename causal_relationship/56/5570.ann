@@ -1,0 +1,21 @@
+T1	Argument 0 18	燃料フィルターの取り付け位置が不適切
+T2	Argument 27 58	燃料フィルターと燃料ポンプをつなぐ燃料パイプに過度の力が加わっ
+T3	Argument 72 82	そのまま使用を続ける
+T4	Argument 83 101	燃料ポンプの樹脂パイプ部に亀裂が発生
+T5	Argument 103 105	最悪
+T6	Argument 109 114	燃料が漏れ
+T7	Connective 24 26	ため
+T8	Connective 67 71	そのため
+T9	Connective 82 83	と
+T10	Connective 102 103	、
+T11	Connective 106 108	場合
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T4	
+R5	CONDITION Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T6	
+R9	CONDITION Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	

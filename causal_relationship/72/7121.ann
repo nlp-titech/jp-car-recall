@@ -1,0 +1,13 @@
+T1	Argument 0 78	かじ取りハンドルとエアバッグ用コンタクトリング（ハンドル操作時にもエアバッグへ電力を供給する装置）を一緒に回転させるための樹脂製留め具が、強度不足のため破損
+T2	Connective 85 86	、
+T3	Argument 86 92	ハンドル操作
+T4	Connective 92 96	に伴って
+T5	Argument 96 110	コンタクトリングの配線が断線
+T6	Connective 111 112	、
+T7	Argument 112 125	エアバッグが作動しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

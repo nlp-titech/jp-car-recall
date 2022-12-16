@@ -1,0 +1,31 @@
+T1	Argument 0 14	前照灯の灯火器の構造が不適切
+T2	Argument 18 29	放熱しにくい構造となっ
+T3	Argument 38 57	点灯時及び太陽光の熱により反射器が変形
+T4	Argument 59 68	バルブに傾きが生じ
+T5	Argument 69 74	光軸が変化
+T6	Argument 88 99	ソケット部の半田が溶け
+T7	Argument 100 107	リード線が抜け
+T8	Argument 108 117	前照灯が不灯となる
+T9	Connective 107 108	て
+T10	Connective 99 100	、
+T12	Connective 68 69	、
+T13	Connective 58 59	て
+T14	Connective 33 37	そのため
+T15	Connective 15 17	ため
+R1	REASON Arg1:T15 Arg2:T1	
+R2	RESULT Arg1:T15 Arg2:T2	
+R3	REASON Arg1:T14 Arg2:T2	
+R4	RESULT Arg1:T14 Arg2:T3	
+R5	REASON Arg1:T13 Arg2:T3	
+R6	RESULT Arg1:T13 Arg2:T4	
+R7	REASON Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T5	
+R11	REASON Arg1:T10 Arg2:T6	
+R12	RESULT Arg1:T10 Arg2:T7	
+R13	REASON Arg1:T9 Arg2:T7	
+R14	RESULT Arg1:T9 Arg2:T8	
+T16	Argument 82 84	最悪
+T17	Connective 85 87	場合
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T6	
+R9	RESULT Arg1:T14 Arg2:T6	

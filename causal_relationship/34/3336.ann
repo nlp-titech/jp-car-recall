@@ -1,0 +1,35 @@
+T1	Argument 0 33	ウォータポンプとウォータポンププーリを締結するボルトの締結力が不足
+T2	Connective 37 39	ため
+T3	Argument 40 48	当該ボルトが緩み
+T4	Connective 48 49	、
+T5	Argument 49 54	異音が発生
+T6	Connective 62 66	そのため
+T8	Argument 67 77	そのまま使用を続ける
+T9	Connective 77 78	と
+T10	Argument 79 87	当該ボルトが脱落
+T11	Argument 89 97	補機ベルトが外れ
+T12	Connective 88 89	て
+T13	Argument 98 108	発電不良及び冷却不良
+T15	Argument 119 121	最悪
+T16	Connective 122 124	場合
+T17	Argument 125 143	エンジンが停止して再始動できなくなる
+R1	RESULT Arg1:T16 Arg2:T17	
+R2	CONDITION Arg1:T16 Arg2:T15	
+T18	Connective 97 98	、
+R5	RESULT Arg1:T18 Arg2:T13	
+R6	REASON Arg1:T18 Arg2:T11	
+R7	RESULT Arg1:T12 Arg2:T11	
+R8	REASON Arg1:T12 Arg2:T10	
+R9	RESULT Arg1:T9 Arg2:T10	
+R10	CONDITION Arg1:T9 Arg2:T8	
+R13	RESULT Arg1:T4 Arg2:T5	
+R11	RESULT Arg1:T6 Arg2:T10	
+R12	REASON Arg1:T6 Arg2:T3	
+R14	REASON Arg1:T4 Arg2:T3	
+R15	RESULT Arg1:T2 Arg2:T3	
+R16	REASON Arg1:T2 Arg2:T1	
+T23	Connective 108 111	により
+R3	REASON Arg1:T23 Arg2:T13	
+T14	Argument 111 117	警告灯が点灯
+R4	RESULT Arg1:T23 Arg2:T14	
+R17	RESULT Arg1:T23 Arg2:T17	

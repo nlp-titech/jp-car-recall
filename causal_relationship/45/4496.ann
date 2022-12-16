@@ -1,0 +1,17 @@
+T1	Argument 18 36	燃料コックの負圧弁内部の形状が不適切
+T2	Connective 37 39	ため
+T3	Argument 51 64	当該負圧弁が機能しなくなっ
+T4	Connective 64 65	て
+T5	Argument 65 76	燃料が供給されなくなり
+T6	Connective 76 77	、
+T7	Argument 77 83	原動機が停止
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 40 46	繰り返し作動
+T9	Connective 48 51	うちに
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	

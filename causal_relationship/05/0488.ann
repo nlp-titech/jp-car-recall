@@ -1,0 +1,33 @@
+T1	Argument 0 73	標準車の床部及び緩衝装置を改造し、後部フロアを下げることにより車いすでの乗降に適した車両とした福祉車両の①燃料装置において、後部フロアの剛性が不足
+T2	Argument 105 111	フロアが変形
+T3	Argument 113 138	フロアに固定された燃料タンク取付部に過大応力が入り
+T4	Argument 154 165	燃料タンクに亀裂が入る
+T5	Argument 177 183	燃料が漏れる
+T6	Connective 77 79	ため
+T7	Connective 112 113	、
+T8	Connective 138 139	、
+T9	Connective 170 171	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+T13	Connective 151 154	により
+T14	Argument 139 149	フロア下降を繰り返す
+R9	REASON Arg1:T13 Arg2:T14	
+R10	RESULT Arg1:T13 Arg2:T4	
+T15	Connective 102 105	により
+T16	Argument 92 102	ストッパーにかかる力
+R11	REASON Arg1:T15 Arg2:T16	
+R12	RESULT Arg1:T15 Arg2:T2	
+T10	Argument 80 88	後部フロアを下げ
+T11	Connective 89 90	時
+R13	CONDITION Arg1:T11 Arg2:T10	
+R14	RESULT Arg1:T11 Arg2:T2	
+T12	Argument 171 173	最悪
+T17	Connective 174 176	場合
+R15	CONDITION Arg1:T17 Arg2:T12	
+R16	RESULT Arg1:T17 Arg2:T5	

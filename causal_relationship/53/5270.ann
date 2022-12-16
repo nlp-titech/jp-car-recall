@@ -1,0 +1,29 @@
+T1	Argument 18 43	スピードメータケーブルのエンドピースの成形が不適切
+T2	Connective 44 46	ため
+T3	Argument 47 63	エンドピース取付部にガタが生じる
+T4	Connective 69 73	そのため
+T5	Argument 96 109	エンドピース固定ネジが緩み
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 74 84	そのまま使用を続ける
+T7	Connective 84 85	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T5	
+T8	Argument 86 93	走行中の振動等
+T9	Connective 93 96	により
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 116 140	スピードメータギヤボックスのピニオン先端部が折損
+T11	Connective 141 142	、
+T12	Argument 142 153	速度計が作動しなくなる
+T13	Connective 109 110	、
+R9	REASON Arg1:T13 Arg2:T5	
+R10	RESULT Arg1:T13 Arg2:T10	
+R11	REASON Arg1:T11 Arg2:T10	
+R12	RESULT Arg1:T11 Arg2:T12	
+T14	Argument 110 112	最悪
+T15	Connective 113 115	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T10	

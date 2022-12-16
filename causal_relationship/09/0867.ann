@@ -1,0 +1,32 @@
+T1	Argument 0 48	車両前部の車枠と車体間の電気配線において、低温時の車体上下動に対する当該配線被覆材の耐久性が不足
+T2	Connective 52 54	ため
+T3	Argument 55 64	走行時の車両振動等
+T4	Connective 64 67	により
+T5	Argument 68 81	当該配線の被覆に亀裂が入る
+T6	Connective 87 91	そのため
+T7	Argument 92 106	そのままの状態で使用を続ける
+T8	Connective 106 107	と
+T9	Argument 108 113	被覆が損傷
+T10	Connective 114 115	て
+T11	Argument 115 122	芯線が腐食断線
+T12	Connective 123 124	、
+T13	Argument 124 126	最悪
+T14	Connective 127 129	場合
+T15	Argument 130 141	灯火類が点灯しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	RESULT Arg1:T6 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	CONDITION Arg1:T14 Arg2:T13	
+R12	RESULT Arg1:T14 Arg2:T15	
+R13	REASON Arg1:T12 Arg2:T11	
+R14	RESULT Arg1:T12 Arg2:T15	
+T16	Argument 145 162	エンジンが停止して再始動不能となる
+R15	RESULT Arg1:T14 Arg2:T16	
+R16	RESULT Arg1:T12 Arg2:T16	

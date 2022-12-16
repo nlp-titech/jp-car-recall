@@ -1,0 +1,33 @@
+T1	Argument 0 18	前輪ホイールのスポークの調整が不適切
+T2	Connective 22 24	ため
+T3	Argument 25 42	スポークの製作時の張力が均一でない
+T4	Argument 65 75	当該スポーク部が折損
+T5	Connective 47 48	、
+T6	Argument 104 123	折損したスポークがタイヤチューブを損傷
+T7	Connective 125 126	、
+T8	Argument 126 135	前輪タイヤがパンク
+T9	Connective 135 136	し
+T10	Argument 136 143	走行不能となる
+R1	REASON Arg1:T5 Arg2:T3	
+R2	RESULT Arg1:T5 Arg2:T4	
+T11	Argument 52 64	高い荷重を繰り返し受ける
+T12	Connective 64 65	と
+R3	CONDITION Arg1:T12 Arg2:T11	
+R4	RESULT Arg1:T12 Arg2:T4	
+T13	Connective 82 83	。
+R5	REASON Arg1:T13 Arg2:T4	
+R6	RESULT Arg1:T13 Arg2:T6	
+R7	REASON Arg1:T7 Arg2:T6	
+R8	RESULT Arg1:T7 Arg2:T8	
+R9	REASON Arg1:T9 Arg2:T8	
+R10	RESULT Arg1:T9 Arg2:T10	
+T14	Argument 83 97	そのままの状態で使用を続ける
+T15	Connective 97 98	と
+R11	CONDITION Arg1:T15 Arg2:T14	
+R12	RESULT Arg1:T15 Arg2:T6	
+T16	Argument 98 100	最悪
+T17	Connective 101 103	場合
+R13	CONDITION Arg1:T17 Arg2:T16	
+R14	RESULT Arg1:T17 Arg2:T6	
+R15	REASON Arg1:T2 Arg2:T1	
+R16	RESULT Arg1:T2 Arg2:T3	

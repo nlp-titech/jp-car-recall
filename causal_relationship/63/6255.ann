@@ -1,0 +1,21 @@
+T1	Argument 37 51	スナップリングの形状が不適切
+T2	Connective 52 54	ため
+T3	Argument 64 75	スナップリングが外れる
+T4	Connective 81 85	そのため
+T5	Argument 86 112	走行中にドライブ・シャフトがインナー・レースから抜け
+T6	Connective 112 113	て
+T7	Argument 114 126	タイヤに駆動力が伝わらず
+R1	RESULT Arg1:T6 Arg2:T7	
+R2	REASON Arg1:T6 Arg2:T5	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	REASON Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T2 Arg2:T3	
+R6	REASON Arg1:T2 Arg2:T1	
+T8	Argument 127 134	走行不能になる
+T9	Connective 126 127	、
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+T10	Argument 55 61	走行中の振動
+T11	Connective 61 64	により
+R9	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	

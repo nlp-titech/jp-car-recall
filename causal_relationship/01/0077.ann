@@ -1,0 +1,29 @@
+T1	Argument 0 36	二輪駆動のディーゼル車において、排気管のフロントパイプ取付金具に強度不足
+T2	Argument 46 69	自動変速機装着車の主消音器の取付金具に加工不良
+T3	Argument 92 99	原動機等の振動
+T4	Argument 102 111	当該取付金具が折損
+T5	Argument 119 125	排気管が破損
+T6	Argument 127 135	排気ガスが漏れる
+T7	Connective 42 43	、
+T8	Connective 75 76	、
+T9	Connective 99 102	により
+T10	Connective 112 113	、
+T11	Connective 126 127	て
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T4	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T4	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T5	
+R9	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	
+T12	Argument 76 90	そのままの状態で使用を続ける
+T13	Connective 90 91	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T4	
+T14	Argument 113 115	最悪
+T15	Connective 116 118	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T5	

@@ -1,0 +1,25 @@
+T1	Argument 5 48	アンチロールシステム（横揺れ防止機構）において、原動機室内の油圧配管の設計に一部不適切
+T2	Connective 54 55	、
+T3	Argument 76 95	当該配管と油圧ポンプの接続部付近が破損
+T4	Connective 96 97	、
+T5	Argument 97 103	オイルが漏れ
+T6	Connective 103 104	、
+T7	Argument 110 115	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 55 69	このままの状態で使用を続ける
+T9	Connective 69 70	と
+T10	Argument 71 73	振動
+T11	Connective 73 76	により
+R7	REASON Arg1:T11 Arg2:T10	
+R8	RESULT Arg1:T11 Arg2:T3	
+R9	CONDITION Arg1:T9 Arg2:T8	
+R10	RESULT Arg1:T9 Arg2:T3	
+T12	Argument 104 106	最悪
+T13	Connective 107 109	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T7	

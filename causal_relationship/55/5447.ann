@@ -1,0 +1,33 @@
+T1	Argument 27 57	クラッチ・レリーズベアリングにおいて、シールの耐久性に不十分
+T2	Connective 63 65	ため
+T4	Connective 71 72	れ
+T6	Connective 78 79	り
+T7	Argument 79 84	早期に摩耗
+T8	Connective 92 96	そのため
+R1	REASON Arg1:T2 Arg2:T1	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+T9	Argument 118 132	当該レリーズベアリングが破損
+T10	Connective 133 134	、
+T11	Argument 134 145	変速操作ができなくなり
+T12	Connective 145 146	、
+T13	Argument 146 153	走行不能となる
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+T14	Argument 97 107	そのまま使用を続ける
+T15	Connective 107 108	と
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T9	
+T16	Argument 109 115	クラッチ操作
+T17	Connective 115 118	により
+R15	REASON Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T9	
+T3	Argument 66 71	グリスが漏
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 72 78	潤滑不足とな
+R4	REASON Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T5	

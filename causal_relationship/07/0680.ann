@@ -1,0 +1,21 @@
+T1	Argument 0 43	４輪駆動車の後軸差動装置において、ドライブピニオンのロックナットに回り止め加工が不十分
+T2	Argument 50 58	発進等の繰り返し
+T3	Argument 61 72	当該ロックナットが緩む
+T4	Argument 83 108	ドライブピニオンとデファレンシャルギヤケースが干渉
+T5	Argument 110 112	損傷
+T6	Argument 114 122	走行できなくなる
+T7	Connective 49 50	、
+T8	Connective 58 61	により
+T9	Connective 78 82	そのため
+T10	Connective 109 110	て
+T11	Connective 113 114	、
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T3	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T5	
+R9	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	

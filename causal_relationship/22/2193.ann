@@ -1,0 +1,23 @@
+T1	Argument 0 28	無段変速機（ＣＶＴ）のリダクションギヤの製造工程が不適切
+T2	Connective 29 31	ため
+T3	Argument 32 50	当該ギヤのオイル通路に切削バリが残存
+T4	Connective 60 64	そのため
+T5	Argument 77 94	当該バリが変速制御バルブに噛み込み
+T6	Connective 94 95	、
+T7	Argument 95 108	油圧制御異常の警告灯が点灯
+T8	Connective 109 110	て
+T9	Argument 110 114	加速不良
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 65 75	そのまま使用を続ける
+T11	Connective 75 76	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	
+T12	Argument 118 139	ＲレンジからＮレンジにシフトした直後に後退
+R11	RESULT Arg1:T8 Arg2:T12	

@@ -1,0 +1,23 @@
+T1	Argument 8 46	ボディ・コントロール・ユニットにおいて、当該ユニットの制御プログラムが不適切
+T2	Connective 47 49	ため
+T3	Argument 50 71	すれ違い用前照灯の制御電圧のしきい値が低い
+T4	Connective 77 81	そのため
+T5	Argument 82 102	ヘッドライトスイッチの端子に錆び等が発生
+T6	Connective 103 104	、
+T7	Argument 104 114	電気抵抗が大きくなる
+T8	Connective 114 115	と
+T9	Argument 116 141	すれ違い用前照灯作動時の制御電圧のしきい値を超える
+T10	Connective 141 143	ため
+T11	Argument 144 158	すれ違い用前照灯が点灯しない
+T12	Argument 163 172	点灯中意図せず消灯
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	RESULT Arg1:T10 Arg2:T12	

@@ -1,0 +1,25 @@
+T1	Argument 0 26	フロントカムシャフトギヤ固定ボルトの表面加工が不適切
+T2	Connective 27 29	ため
+T3	Argument 30 39	当該ボルトがゆるむ
+T4	Connective 45 49	そのため
+T5	Argument 62 74	カムシャフトギヤがゆるみ
+T6	Argument 81 92	バルブタイミングがずれ
+T7	Connective 92 93	て
+T8	Argument 94 100	原動機が損傷
+T9	Argument 50 60	そのまま使用を続ける
+T10	Connective 60 61	と
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	CONDITION Arg1:T10 Arg2:T9	
+R6	RESULT Arg1:T10 Arg2:T5	
+T11	Connective 74 75	、
+R7	REASON Arg1:T11 Arg2:T5	
+R8	RESULT Arg1:T11 Arg2:T6	
+R9	REASON Arg1:T7 Arg2:T6	
+R10	RESULT Arg1:T7 Arg2:T8	
+T12	Argument 75 77	最悪
+T13	Connective 78 80	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T6	

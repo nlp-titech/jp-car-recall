@@ -1,0 +1,17 @@
+T1	Argument 34 49	エアバッグ装置のアースが不適切
+T2	Connective 55 56	、
+T3	Argument 56 62	運転者が乗降
+T4	Connective 64 65	際
+T5	Argument 73 79	静電気が放電
+T6	Connective 80 81	、
+T7	Argument 87 101	当該エアバッグが自動的に作動
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 81 83	最悪
+T9	Connective 84 86	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T7	

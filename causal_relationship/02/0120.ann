@@ -1,0 +1,17 @@
+T1	Argument 0 50	Ｖ２６Ｃ型（４８０馬力）の原動機を搭載した車両において、燃料噴射ポンプの電子ガバナ内部の構造が不適切
+T2	Argument 54 60	原動機の振動
+T3	Argument 70 94	当該電子ガバナ内部のハーネスと基板の接続部が折損
+T4	Argument 96 102	原動機が停止
+T5	Connective 51 53	ため
+T6	Connective 60 63	により
+T7	Connective 95 96	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T3	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 64 66	最悪
+T9	Connective 67 69	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	

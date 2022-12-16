@@ -1,0 +1,29 @@
+T2	Argument 0 74	エンジンフロントケースに装着しているクランクシャフトオイルシールにおいて、フロントケースの加工ばらつき、およびオイルシール圧入量ばらつき等の複合要因
+T3	Connective 74 77	により
+T4	Argument 78 93	当該オイルシールの保持力が低下
+T5	Connective 103 107	そのため
+T6	Argument 108 121	当該オイルシールが抜け出し
+T7	Argument 121 134	エンジンオイルが徐々に漏れ
+T8	Connective 120 121	し
+T9	Connective 134 135	、
+T10	Argument 135 143	油圧警告灯が点灯
+T12	Argument 161 173	エンジン内部部品が焼付き
+T13	Connective 173 174	、
+T14	Argument 174 181	走行不能となる
+R3	RESULT Arg1:T3 Arg2:T4	
+R4	REASON Arg1:T5 Arg2:T4	
+R5	RESULT Arg1:T5 Arg2:T6	
+R6	REASON Arg1:T8 Arg2:T6	
+R7	RESULT Arg1:T8 Arg2:T7	
+R8	REASON Arg1:T9 Arg2:T7	
+R9	RESULT Arg1:T9 Arg2:T10	
+R12	REASON Arg1:T13 Arg2:T12	
+R13	RESULT Arg1:T13 Arg2:T14	
+T11	Argument 145 159	そのままの状態で使用を続ける
+T15	Connective 159 160	と
+R11	CONDITION Arg1:T15 Arg2:T11	
+R14	RESULT Arg1:T15 Arg2:T12	
+T16	Connective 143 144	し
+R10	REASON Arg1:T16 Arg2:T10	
+R15	RESULT Arg1:T16 Arg2:T12	
+R1	REASON Arg1:T3 Arg2:T2	

@@ -1,0 +1,17 @@
+T1	Argument 7 35	ギヤボックスの車体取付け部において、補強板の溶接が不適切
+T2	Connective 36 38	ため
+T3	Argument 77 87	当該部位に亀裂が入り
+T4	Connective 87 88	、
+T5	Argument 94 106	ハンドル操作機能が損なわ
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 39 75	ハンドル操作時に縁石乗り上げ等ハンドル軸に過大な力が掛かる走行を繰り返す
+T7	Connective 75 76	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 88 90	最悪
+T9	Connective 91 93	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

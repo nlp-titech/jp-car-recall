@@ -1,0 +1,21 @@
+T1	Argument 0 13	排気管蛇腹部の長さが不適切
+T2	Connective 14 16	ため
+T3	Argument 17 23	原動機の振動
+T4	Connective 23 26	により
+T5	Argument 26 37	当該蛇腹部に亀裂が発生
+T6	Connective 45 49	そのため
+T7	Argument 62 69	排出ガスが漏れ
+T8	Argument 70 75	騒音が増大
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T9	Connective 69 70	、
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+T10	Argument 50 60	そのまま使用を続ける
+T11	Connective 60 61	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T7	

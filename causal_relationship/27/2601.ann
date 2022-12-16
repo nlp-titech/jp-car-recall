@@ -1,0 +1,9 @@
+T1	Argument 0 28	フロントワイパーモーターにおいて、アースターミナルが変形
+T2	Connective 38 42	そのため
+T3	Argument 43 62	アースターミナル接点部が導通不良に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 68 84	フロントワイパーが作動しなくなる
+T5	Connective 67 68	、
+R3	REASON Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T4	

@@ -1,0 +1,24 @@
+T1	Argument 0 36	電動ドアミラーからエンジンコントロールユニットへの電気配線の回路が不適切
+T2	Connective 37 39	ため
+T3	Argument 40 51	始動時に発生するノイズ
+T4	Connective 51 54	により
+T5	Argument 54 74	当該ユニット内部のＩＣ（集積回路）が破損
+T6	Connective 82 86	そのため
+T7	Argument 87 100	酸素センサヒータが制御不能
+T8	Argument 103 113	エンジン警告灯が点灯
+T10	Argument 119 130	インジェクタが作動不能
+T11	Argument 133 139	エンジン不調
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+T9	Connective 102 103	り
+T12	Connective 132 133	り
+T13	Argument 142 153	エンジン始動不能となる
+R6	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+R7	RESULT Arg1:T6 Arg2:T10	
+R9	REASON Arg1:T12 Arg2:T10	
+R10	RESULT Arg1:T12 Arg2:T11	
+R11	RESULT Arg1:T12 Arg2:T13	

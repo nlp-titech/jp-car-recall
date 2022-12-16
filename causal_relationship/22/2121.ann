@@ -1,0 +1,25 @@
+T1	Argument 0 30	原動機のクランクプーリに備えられている防振ゴムの特性が不適切
+T2	Connective 31 33	ため
+T3	Argument 34 53	原動機高回転時に燃料ポンプカム軸が振動
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 61 65	そのため
+T5	Argument 82 88	カム軸が折損
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	REASON Arg1:T4 Arg2:T3	
+T6	Connective 88 89	し
+T7	Argument 89 100	燃料を供給できなくなり
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	REASON Arg1:T6 Arg2:T5	
+T8	Connective 100 101	、
+T9	Argument 101 108	エンジンが停止
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Connective 108 109	し
+T11	Argument 109 116	走行不能となる
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 66 80	そのままの状態で使用を続ける
+T13	Connective 80 81	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T5	

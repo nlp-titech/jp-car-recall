@@ -1,0 +1,27 @@
+T1	Argument 9 16	エンジンの振動
+T2	Connective 16 19	により
+T3	Argument 19 38	イグニッションスイッチ内部の端子が摩耗
+T4	Argument 40 48	端子間が接触不良
+T5	Connective 39 40	、
+T6	Connective 57 61	そのため
+T7	Argument 62 98	イグニッションスイッチとボディーコントロールモジュール間の通信が遮断され
+T8	Connective 98 99	、
+T9	Argument 99 112	車体全体への電力供給が停止
+T10	Connective 113 114	、
+T11	Argument 114 126	前照灯などの灯火が消える
+T12	Argument 131 133	最悪
+T13	Connective 134 136	場合
+T14	Argument 137 148	走行中にエンジンが停止
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T4	
+R5	REASON Arg1:T6 Arg2:T4	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	RESULT Arg1:T10 Arg2:T14	
+R12	CONDITION Arg1:T13 Arg2:T12	
+R13	RESULT Arg1:T13 Arg2:T14	

@@ -1,0 +1,11 @@
+T1	Argument 0 25	後部霧灯の点灯操作状態表示装置及び電気回路が不適切
+T2	Connective 26 28	ため
+T3	Argument 29 42	点灯操作状態が表示されない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T5	Argument 46 73	前照灯又は前部霧灯が点灯していない状態で後部霧灯が点灯
+T4	Connective 74 75	、
+T6	Argument 75 92	道路運送車両の保安基準に適合しない
+R3	REASON Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T4 Arg2:T6	
+R5	RESULT Arg1:T2 Arg2:T5	

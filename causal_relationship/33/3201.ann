@@ -1,0 +1,35 @@
+T1	Argument 0 45	原動機において、ロッカーアームシャフトの回転を抑止するシーリングボルトに誤った防錆剤を塗布
+T2	Connective 47 49	ため
+T3	Argument 59 69	締め付けトルクが低下
+T4	Connective 70 71	て
+T5	Argument 72 80	当該ボルトが緩み
+T6	Connective 90 94	そのため
+T7	Argument 95 109	そのままの状態で使用を続ける
+T8	Connective 109 110	と
+T9	Argument 110 120	エンジンオイルが漏れ
+T11	Argument 121 123	最悪
+T12	Connective 124 126	場合
+T13	Argument 127 141	ロッカーアームシャフトが抜け
+T14	Connective 141 142	て
+T15	Argument 143 164	走行中にエンジンが停止し再始動できなくなる
+R2	REASON Arg1:T14 Arg2:T13	
+R3	RESULT Arg1:T12 Arg2:T13	
+R4	CONDITION Arg1:T12 Arg2:T11	
+R8	CONDITION Arg1:T8 Arg2:T7	
+R9	RESULT Arg1:T6 Arg2:T9	
+R10	REASON Arg1:T6 Arg2:T20	
+R11	RESULT Arg1:T4 Arg2:T5	
+R12	REASON Arg1:T4 Arg2:T3	
+R13	RESULT Arg1:T2 Arg2:T3	
+R14	REASON Arg1:T2 Arg2:T1	
+R7	RESULT Arg1:T8 Arg2:T9	
+R1	RESULT Arg1:T14 Arg2:T15	
+T17	Argument 50 56	エンジンの熱
+T18	Connective 56 59	により
+R16	REASON Arg1:T18 Arg2:T17	
+R17	RESULT Arg1:T18 Arg2:T3	
+T20	Argument 80 82	脱落
+T21	Connective 79 80	み
+R19	REASON Arg1:T21 Arg2:T5	
+R20	RESULT Arg1:T21 Arg2:T20	
+R5	RESULT Arg1:T6 Arg2:T13	

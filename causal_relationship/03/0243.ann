@@ -1,0 +1,29 @@
+T1	Argument 0 20	後輪緩衝装置のスタビライザの塗装が不適切
+T2	Argument 24 48	スタビライザとサポートビームの締結部に塗料が堆積
+T3	Argument 69 85	当該締結部の締め付けナットが弛み
+T4	Argument 92 98	ナットが脱落
+T5	Argument 100 106	締結部が外れ
+T6	Argument 106 110	走行不能
+T7	Connective 21 23	ため
+T8	Connective 52 53	、
+T9	Connective 85 86	、
+T10	Connective 99 100	て
+T11	Connective 105 106	れ
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T5	
+R9	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	
+T12	Argument 53 67	そのままの状態で使用を続ける
+T13	Connective 67 68	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T3	
+T14	Argument 86 88	最悪
+T15	Connective 89 91	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T4	

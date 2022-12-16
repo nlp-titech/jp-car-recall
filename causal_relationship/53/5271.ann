@@ -1,0 +1,25 @@
+T1	Argument 0 28	二輪車のドライブチェーンにおいて、製造時の熱処理が不適切
+T2	Connective 29 31	ため
+T3	Argument 32 47	当該チェーンの材質の強度が不足
+T4	Connective 57 61	そのため
+T5	Argument 76 81	亀裂が発生
+T6	Connective 82 83	、
+T7	Argument 89 100	ドライブチェーンが破断
+T8	Connective 101 102	て
+T9	Argument 102 109	走行不能になる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 62 73	発進又は減速時の駆動力
+T11	Connective 73 76	により
+R9	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	
+T12	Argument 83 85	最悪
+T13	Connective 86 88	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T7	

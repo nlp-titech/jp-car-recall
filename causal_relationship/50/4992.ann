@@ -1,0 +1,33 @@
+T1	Argument 25 49	シートヒーター機構への電気配線の取り廻しが不適切
+T2	Connective 50 52	ため
+T3	Argument 93 102	長期間使用を続ける
+T4	Connective 102 103	と
+T5	Argument 104 124	当該電気配線がシート部材の金属部分に干渉
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+T6	Argument 53 66	シートポジションが低い位置
+T7	Connective 66 67	で
+T8	Argument 71 92	シートクッション中央部に荷重が集中した状態
+T9	Connective 92 93	で
+R3	REASON Arg1:T9 Arg2:T8	
+R4	RESULT Arg1:T9 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+R7	CONDITION Arg1:T4 Arg2:T3	
+R8	RESULT Arg1:T4 Arg2:T5	
+T10	Argument 137 144	当該配線が損傷
+T11	Connective 132 136	そのため
+R9	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T10	
+T12	Argument 152 157	回路が短絡
+T13	Connective 158 159	て
+T14	Argument 159 164	火災に至る
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T14	
+T15	Connective 145 146	、
+R13	REASON Arg1:T15 Arg2:T10	
+R14	RESULT Arg1:T15 Arg2:T12	
+T16	Argument 146 148	最悪
+T17	Connective 149 151	場合
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T12	

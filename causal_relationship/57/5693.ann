@@ -1,0 +1,19 @@
+T1	Argument 0 23	ボルテージレギュレータの配線の取り回しが不適切
+T2	Argument 27 37	当該レギュレータの熱
+T3	Argument 40 50	ハーネスの被覆が溶損
+T4	Argument 52 58	原動機が停止
+T6	Argument 73 78	火災に至る
+T7	Connective 24 26	ため
+T8	Connective 37 40	により
+T9	Connective 51 52	、
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T3	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	RESULT Arg1:T9 Arg2:T6	
+T5	Connective 59 60	て
+T10	Argument 61 70	再始動できなくなる
+R8	REASON Arg1:T5 Arg2:T4	
+R9	RESULT Arg1:T5 Arg2:T10	

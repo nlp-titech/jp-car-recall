@@ -1,0 +1,21 @@
+T1	Argument 1 44	電動式幌装着の乗用車（オープンカー）において、幌収納時に使用する幌カバーの形状が不適切
+T2	Connective 45 47	ため
+T3	Argument 48 52	座席位置
+T4	Connective 52 57	によっては
+T5	Argument 57 81	シートベルトが当該カバーと座席の背もたれに挟まれ
+T6	Connective 81 82	、
+T7	Argument 82 84	最悪
+T8	Connective 85 87	場合
+T9	Argument 88 99	緊急時に巻き取りが遅れ
+T10	Connective 99 100	、
+T11	Argument 100 107	効に作用しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	RESULT Arg1:T6 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	

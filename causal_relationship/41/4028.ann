@@ -1,0 +1,37 @@
+T1	Argument 0 31	左側前輪のドライブシャフトにおいて、ダストブーツの設定が不適切
+T3	Argument 35 41	走行中の揺動
+T4	Argument 45 52	蛇腹同士が擦れ
+T5	Argument 54 66	ダストブーツが早期に摩耗
+T6	Argument 79 93	そのままの状態で使用を続ける
+T7	Argument 95 100	摩耗が進行
+T8	Argument 101 110	ダストブーツが破損
+T9	Argument 112 118	グリスが漏れ
+T10	Argument 119 121	最悪
+T11	Argument 125 133	走行できなくなる
+T12	Connective 32 34	ため
+T14	Connective 41 45	によって
+T15	Connective 52 53	て
+T16	Connective 74 78	そのため
+T17	Connective 93 94	と
+T18	Connective 100 101	し
+T19	Connective 111 112	て
+T20	Connective 122 124	場合
+R1	REASON Arg1:T12 Arg2:T1	
+R5	REASON Arg1:T14 Arg2:T3	
+R6	RESULT Arg1:T14 Arg2:T4	
+R7	REASON Arg1:T15 Arg2:T4	
+R8	RESULT Arg1:T15 Arg2:T5	
+R9	REASON Arg1:T16 Arg2:T5	
+R10	RESULT Arg1:T16 Arg2:T8	
+R11	CONDITION Arg1:T17 Arg2:T6	
+R12	RESULT Arg1:T17 Arg2:T7	
+R13	REASON Arg1:T18 Arg2:T7	
+R14	RESULT Arg1:T18 Arg2:T8	
+R15	REASON Arg1:T19 Arg2:T8	
+R16	RESULT Arg1:T19 Arg2:T9	
+T21	Connective 118 119	、
+R17	REASON Arg1:T21 Arg2:T9	
+R18	RESULT Arg1:T21 Arg2:T11	
+R19	CONDITION Arg1:T20 Arg2:T10	
+R20	RESULT Arg1:T20 Arg2:T11	
+R2	RESULT Arg1:T12 Arg2:T5	

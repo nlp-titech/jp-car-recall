@@ -1,0 +1,25 @@
+T1	Argument 0 14	メインハーネスの配索が不適切
+T2	Connective 15 17	ため
+T3	Argument 18 32	当該ハーネスがフレームと干渉
+R1	RESULT Arg1:T2 Arg2:T3	
+R2	REASON Arg1:T2 Arg2:T1	
+T9	Connective 40 44	そのため
+R7	REASON Arg1:T9 Arg2:T3	
+T4	Argument 61 67	走行中の振動
+T5	Connective 67 70	により
+T6	Argument 70 79	当該ハーネスが損傷
+R3	RESULT Arg1:T9 Arg2:T6	
+R4	REASON Arg1:T5 Arg2:T4	
+R5	RESULT Arg1:T5 Arg2:T6	
+T7	Connective 80 81	、
+T8	Argument 87 94	走行不能となる
+R6	REASON Arg1:T7 Arg2:T6	
+R8	RESULT Arg1:T7 Arg2:T8	
+T10	Connective 59 60	と
+T11	Argument 45 59	そのままの状態で使用を続ける
+R9	CONDITION Arg1:T10 Arg2:T11	
+R10	RESULT Arg1:T10 Arg2:T6	
+T12	Argument 81 83	最悪
+T13	Connective 84 86	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T8	

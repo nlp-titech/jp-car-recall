@@ -1,0 +1,36 @@
+T1	Argument 0 66	後２軸式リーフサスペンション仕様の大型トラックにおいて、トラニオンクロスメンバに装着されているラジアスロッドブラケットの形状が不適切
+T2	Argument 70 83	走行時のラジアスロッド入力
+T3	Argument 86 95	クロスメンバが変形
+T4	Argument 97 119	クロスメンバと補強板をとめているボルトが緩む
+T5	Argument 130 144	そのままの状態で使用を続ける
+T6	Argument 146 152	ボルトが折損
+T7	Argument 159 175	クロスメンバと補強板に亀裂が生じ
+T8	Argument 177 179	最悪
+T9	Argument 183 205	ラジアスロッド締結部品がクロスメンバから外れ
+T10	Argument 206 215	走行安定性が損なわ
+T11	Connective 67 69	ため
+T12	Connective 83 86	により
+T13	Connective 96 97	、
+T14	Connective 125 129	そのため
+T15	Connective 144 145	と
+T16	Connective 175 176	て
+T17	Connective 180 182	場合
+T18	Connective 205 206	、
+R1	REASON Arg1:T11 Arg2:T1	
+R3	REASON Arg1:T12 Arg2:T2	
+R4	RESULT Arg1:T12 Arg2:T3	
+R5	REASON Arg1:T13 Arg2:T3	
+R6	RESULT Arg1:T13 Arg2:T4	
+R7	REASON Arg1:T14 Arg2:T4	
+R9	CONDITION Arg1:T15 Arg2:T5	
+R10	RESULT Arg1:T15 Arg2:T6	
+R12	REASON Arg1:T16 Arg2:T7	
+R14	CONDITION Arg1:T17 Arg2:T8	
+R15	RESULT Arg1:T17 Arg2:T9	
+R16	REASON Arg1:T18 Arg2:T9	
+R17	RESULT Arg1:T18 Arg2:T10	
+R2	RESULT Arg1:T11 Arg2:T3	
+R8	RESULT Arg1:T14 Arg2:T6	
+R11	RESULT Arg1:T15 Arg2:T7	
+R18	RESULT Arg1:T14 Arg2:T7	
+R13	RESULT Arg1:T16 Arg2:T9	

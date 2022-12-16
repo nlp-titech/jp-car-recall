@@ -1,0 +1,25 @@
+T1	Argument 0 44	大型トラクタのブレーキリレーバルブにおいて、ブレーキ圧を計測する圧力センサの製造が不適切
+T2	Argument 48 69	圧力センサのＩＣチップがセンサ基板から剥離
+T3	Argument 82 92	そのまま使用を続ける
+T4	Argument 94 110	ブレーキエア圧を正しく計測できず
+T5	Argument 111 113	最悪
+T6	Argument 117 131	後軸左右の制動力に差異が生じ
+T7	Argument 132 143	走行安定性が損なわれる
+T8	Connective 45 47	ため
+T9	Connective 77 81	そのため
+T10	Connective 92 93	と
+T11	Connective 110 111	、
+T12	Connective 114 116	場合
+T13	Connective 131 132	、
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T2	
+R3	REASON Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T4	
+R5	CONDITION Arg1:T10 Arg2:T3	
+R6	RESULT Arg1:T10 Arg2:T4	
+R7	REASON Arg1:T11 Arg2:T4	
+R8	RESULT Arg1:T11 Arg2:T6	
+R9	CONDITION Arg1:T12 Arg2:T5	
+R10	RESULT Arg1:T12 Arg2:T6	
+R11	REASON Arg1:T13 Arg2:T6	
+R12	RESULT Arg1:T13 Arg2:T7	

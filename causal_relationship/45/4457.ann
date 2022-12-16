@@ -1,0 +1,13 @@
+T1	Argument 0 17	番号灯電球のワット数設定が高すぎる
+T2	Connective 17 19	ため
+T3	Argument 51 53	溶損
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 20 25	長時間点灯
+T5	Connective 27 28	と
+R3	CONDITION Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T3	
+T6	Argument 29 48	当該番号灯のレンズ及び電球ソケットが熱
+T7	Connective 48 51	により
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	

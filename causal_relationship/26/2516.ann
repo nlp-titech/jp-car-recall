@@ -1,0 +1,5 @@
+T1	Argument 0 33	燃料噴射コントロールユニットにおいて、車両の製造工程で誤品を組付け
+T2	Connective 40 44	そのため
+T3	Argument 45 62	加速時の騒音規制値を満足しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

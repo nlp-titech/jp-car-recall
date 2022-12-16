@@ -1,0 +1,17 @@
+T1	Argument 0 33	燃料タンク内に設置している燃料ポンプの密封用シール材の耐久性が不足
+T2	Argument 56 65	当該シール材が変形
+T3	Argument 73 79	燃料が漏れる
+T4	Connective 37 39	ため
+T5	Connective 66 67	、
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	
+T6	Argument 40 54	そのままの状態で使用を続ける
+T7	Connective 54 55	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T2	
+T8	Argument 67 69	最悪
+T9	Connective 70 72	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	

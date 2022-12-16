@@ -1,0 +1,35 @@
+T1	Argument 7 24	ステアリングナックルの形状が不適切
+T2	Connective 25 27	ため
+T3	Argument 28 61	当該ナックルとロアーアームのボールジョイント部のゴムブーツとが干渉
+T4	Connective 62 63	て
+T5	Argument 63 71	ゴムブーツが損傷
+T6	Connective 79 83	そのため
+T7	Argument 84 93	内部のグリスが飛散
+T8	Connective 94 95	、
+T9	Argument 106 116	当該ジョイントが摩耗
+T10	Connective 117 118	て
+T11	Argument 118 123	異音が発生
+T12	Argument 131 140	ジョイント部が破損
+T13	Connective 141 142	て
+T14	Argument 142 155	かじ取り操作が出来なくなる
+R1	REASON Arg1:T10 Arg2:T9	
+R2	RESULT Arg1:T10 Arg2:T11	
+R3	RESULT Arg1:T10 Arg2:T12	
+R4	REASON Arg1:T13 Arg2:T12	
+R5	RESULT Arg1:T13 Arg2:T14	
+T15	Argument 125 127	最悪
+T16	Connective 128 130	場合
+R6	CONDITION Arg1:T16 Arg2:T15	
+R7	RESULT Arg1:T16 Arg2:T12	
+T17	Argument 95 105	そのまま使用を続ける
+T18	Connective 105 106	と
+R8	CONDITION Arg1:T18 Arg2:T17	
+R9	RESULT Arg1:T18 Arg2:T9	
+R10	REASON Arg1:T8 Arg2:T7	
+R11	RESULT Arg1:T8 Arg2:T9	
+R12	REASON Arg1:T6 Arg2:T5	
+R13	RESULT Arg1:T6 Arg2:T7	
+R14	REASON Arg1:T4 Arg2:T3	
+R15	RESULT Arg1:T4 Arg2:T5	
+R16	REASON Arg1:T2 Arg2:T1	
+R17	RESULT Arg1:T2 Arg2:T3	

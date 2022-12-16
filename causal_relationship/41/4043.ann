@@ -1,0 +1,21 @@
+T2	Argument 46 64	燃料タンクのＲ部分が融合されていない
+T3	Argument 75 89	そのままの状態で使用を続ける
+T4	Argument 91 104	当該部位から燃料が滲み出る
+T5	Argument 110 112	最悪
+T6	Argument 116 118	滴下
+T7	Connective 43 45	ため
+T8	Connective 70 74	そのため
+T9	Connective 89 90	と
+T10	Connective 109 110	、
+T11	Connective 113 115	場合
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T4	
+R5	CONDITION Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T6	
+R9	CONDITION Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	
+T1	Argument 21 42	プレス成型後のシーム溶接の条件設定が不適切
+R1	REASON Arg1:T7 Arg2:T1	

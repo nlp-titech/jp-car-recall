@@ -1,0 +1,29 @@
+T1	Argument 0 45	スライド荷台式車両運搬車において、車両を積載するための道板を固定する金具取付板の強度が不足
+T2	Connective 49 51	ため
+T3	Argument 52 59	走行中の振動等
+T4	Connective 59 62	により
+T5	Argument 63 77	当該取付板溶接部に亀裂が発生
+T6	Connective 85 89	そのため
+T7	Argument 90 100	そのまま使用を続ける
+T8	Connective 100 101	と
+T9	Argument 102 107	亀裂が進行
+T10	Connective 108 109	、
+T11	Argument 109 111	最悪
+T12	Connective 112 114	場合
+T13	Argument 115 122	溶接部が剥がれ
+T14	Connective 122 123	て
+T15	Argument 124 139	道板が走行中に車両後方へ倒れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	RESULT Arg1:T6 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	

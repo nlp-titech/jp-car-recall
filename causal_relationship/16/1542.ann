@@ -1,0 +1,25 @@
+T1	Argument 0 67	電動スライドドアのリリースアクチュエータ（スライドドアの前側と後側のドアラッチを電動で開放させる装置）内のウォームギヤ部の構造が不適切
+T3	Argument 71 103	ドアを開ける際のアクチュエータ作動時にウォームギヤが大きくたわみ
+T4	Argument 104 121	ウォームホイールギヤに乗上げて固着
+T5	Argument 125 148	ドアラッチ開放レバーが開放位置から動かなくなる
+T6	Argument 159 175	スライドドアが確実にロックされず
+T7	Argument 182 195	スライドドアが走行中に開く
+T8	Connective 175 176	、
+T9	Connective 154 158	そのため
+R1	REASON Arg1:T8 Arg2:T6	
+R2	RESULT Arg1:T8 Arg2:T7	
+R3	REASON Arg1:T9 Arg2:T5	
+R4	RESULT Arg1:T9 Arg2:T6	
+T10	Connective 123 124	と
+T11	Connective 103 104	、
+R5	RESULT Arg1:T10 Arg2:T5	
+R6	REASON Arg1:T10 Arg2:T4	
+R7	RESULT Arg1:T11 Arg2:T4	
+R8	REASON Arg1:T11 Arg2:T3	
+T12	Connective 68 70	ため
+R9	REASON Arg1:T12 Arg2:T1	
+R10	RESULT Arg1:T12 Arg2:T3	
+T14	Argument 176 178	最悪
+T15	Connective 179 181	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T7	

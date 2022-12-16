@@ -1,0 +1,17 @@
+T1	Argument 0 26	駐車ブレーキ用ケーブルのカバー内部にゴミ等が入り込ん
+T2	Connective 27 29	場合
+T3	Argument 30 54	駐車ブレーキレバーを戻してもケーブルが戻り切らず
+T4	Connective 69 70	、
+T5	Argument 70 100	駐車ブレーキ本体を車体に取り付けるためのバックプレートが破損
+T6	Connective 101 102	て
+T7	Argument 103 116	駐車ブレーキの制動力が低下
+R1	CONDITION Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T11	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T10	Connective 54 55	に
+T11	Argument 55 63	ブレーキが掛かっ
+R7	REASON Arg1:T10 Arg2:T3	
+R8	RESULT Arg1:T10 Arg2:T11	

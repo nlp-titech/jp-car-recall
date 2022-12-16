@@ -1,0 +1,21 @@
+T1	Argument 31 33	不足
+T2	Connective 42 43	、
+T3	Argument 61 70	取り付け金具が破損
+T4	Connective 71 72	、
+T5	Argument 77 92	シートベルトの機能が損なわれる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 43 57	衝突事故等で過大な衝撃を受け
+T7	Connective 58 60	場合
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 72 74	最悪
+T9	Connective 75 77	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Connective 28 31	により
+T11	Argument 0 28	フロントシ－トベルトの上部取り付け部の金具強度が製造不良
+R9	REASON Arg1:T10 Arg2:T11	
+R10	RESULT Arg1:T10 Arg2:T1	

@@ -1,0 +1,31 @@
+T1	Argument 8 23	クランク・プーリの構造が不適切
+T2	Connective 24 26	ため
+T3	Argument 27 42	防振用のラバー・リング部が破断
+T4	Connective 49 50	、
+T5	Argument 50 64	そのままの状態で使用を続ける
+T6	Connective 64 65	と
+T7	Argument 66 75	当該リング部がずれ
+T8	Connective 82 83	、
+T9	Argument 83 85	最悪
+T10	Connective 86 88	場合
+T11	Argument 89 107	当該プーリから補助駆動用ベルトが外れ
+T12	Connective 107 108	、
+T13	Argument 108 116	充電警告灯が点灯
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	CONDITION Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	RESULT Arg1:T4 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	CONDITION Arg1:T10 Arg2:T9	
+R9	RESULT Arg1:T10 Arg2:T11	
+R10	RESULT Arg1:T8 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+T14	Connective 75 76	て
+T15	Argument 76 81	異音が発生
+R13	REASON Arg1:T14 Arg2:T7	
+R14	RESULT Arg1:T14 Arg2:T15	
+T16	Argument 123 134	ハンドルの操作力が増大
+R15	RESULT Arg1:T12 Arg2:T16	

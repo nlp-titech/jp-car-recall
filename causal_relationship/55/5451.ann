@@ -1,0 +1,5 @@
+T1	Argument 44 68	加速度センサーを補完する圧力センサーの結線を誤っ
+T2	Connective 75 79	そのため
+T3	Argument 80 101	側面衝突時にサイドエアバッグの展開が遅れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

@@ -1,0 +1,37 @@
+T3	Argument 98 112	バッテリケ－ブルの被覆が損傷
+T4	Argument 114 120	雨水等が侵入
+T5	Argument 127 140	当該バッテリケ－ブルが腐食
+T6	Argument 149 160	バッテリケ－ブルが断線
+T7	Argument 162 174	原動機が始動できなくなる
+T8	Argument 81 97	バッテリケ－ブルとクリップが擦れ
+T9	Connective 55 57	ため
+T11	Connective 97 98	、
+T12	Connective 113 114	、
+T13	Connective 124 127	により
+T14	Connective 141 142	て
+T15	Connective 161 162	、
+R1	REASON Arg1:T9 Arg2:T17	
+R2	RESULT Arg1:T9 Arg2:T8	
+R5	REASON Arg1:T11 Arg2:T8	
+R6	RESULT Arg1:T11 Arg2:T3	
+R7	REASON Arg1:T12 Arg2:T3	
+R8	RESULT Arg1:T12 Arg2:T4	
+R9	REASON Arg1:T13 Arg2:T4	
+R10	RESULT Arg1:T13 Arg2:T5	
+R11	REASON Arg1:T14 Arg2:T5	
+R12	RESULT Arg1:T14 Arg2:T6	
+R13	REASON Arg1:T15 Arg2:T6	
+R14	RESULT Arg1:T15 Arg2:T7	
+T2	Connective 80 81	で
+T10	Argument 74 80	走行中の振動
+R3	REASON Arg1:T2 Arg2:T10	
+R4	RESULT Arg1:T2 Arg2:T8	
+T16	Connective 146 148	場合
+T23	Argument 143 145	最悪
+R15	CONDITION Arg1:T16 Arg2:T23	
+R16	RESULT Arg1:T16 Arg2:T6	
+T24	Connective 72 73	と
+T25	Argument 58 72	このままの状態で使用を続ける
+R17	CONDITION Arg1:T24 Arg2:T25	
+R18	RESULT Arg1:T24 Arg2:T8	
+T17	Argument 0 54	バッテリからスタ－タモ－タ間の電気配線（バッテリケ－ブル）を固定している固定金具（クリップ）の取付けが不適切

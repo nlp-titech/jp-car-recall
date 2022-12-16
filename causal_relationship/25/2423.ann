@@ -1,0 +1,13 @@
+T1	Argument 0 47	トラクタのカプラ嵩上げ架台において、架台後部の補強クロスメンバと車両のＶロッドとの隙間が少ない
+T2	Connective 52 53	、
+T3	Argument 53 75	走行中Ｖロッドが動きフレーム上面より上に突出
+T4	Connective 77 79	場合
+T5	Argument 80 96	架台後部の補強クロスメンバに干渉
+T6	Connective 103 105	ため
+T7	Argument 106 123	補強クロスメンバ及びＶロッドが損傷
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

@@ -1,0 +1,29 @@
+T1	Argument 0 38	後２軸駆動の化学消防車において、後２軸のばねを固定するブラケットの強度が不足
+T2	Connective 42 44	ため
+T3	Argument 45 51	急旋回を行っ
+T4	Argument 55 65	固定ブラケットが破損
+T5	Connective 52 54	場合
+T6	Connective 73 77	そのため
+T7	Argument 90 99	ばねが車枠から外れ
+T8	Argument 100 105	車両が傾き
+T9	Connective 99 100	て
+T10	Connective 105 106	、
+T11	Argument 112 123	舵取り性能が損なわれる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T4	
+R3	CONDITION Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T4	
+R5	REASON Arg1:T6 Arg2:T4	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+R9	REASON Arg1:T10 Arg2:T8	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 78 88	そのまま使用を続ける
+T13	Connective 88 89	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T8	
+T14	Argument 106 108	最悪
+T15	Connective 109 111	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T11	

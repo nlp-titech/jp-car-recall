@@ -1,0 +1,41 @@
+T1	Argument 0 30	オイルポンプ駆動スプロケットを固定するボルトに誤品が組み付け
+T2	Connective 33 35	ため
+T3	Argument 55 77	当該ボルトの締め付け力を超えるトルクが加わる
+T4	Connective 83 87	そのため
+T5	Argument 88 97	ボルトに緩みが発生
+T6	Connective 98 99	、
+T7	Argument 111 117	ボルトが折損
+T8	Connective 118 119	、
+T9	Argument 119 128	オイルポンプが駆動
+T10	Connective 134 135	、
+T11	Argument 148 154	原動機が停止
+T12	Argument 141 145	潤滑不足
+R1	REASON Arg1:T4 Arg2:T3	
+R2	RESULT Arg1:T4 Arg2:T5	
+R3	REASON Arg1:T6 Arg2:T5	
+R4	RESULT Arg1:T6 Arg2:T7	
+R5	REASON Arg1:T8 Arg2:T7	
+R6	RESULT Arg1:T8 Arg2:T9	
+R7	REASON Arg1:T10 Arg2:T9	
+R8	RESULT Arg1:T10 Arg2:T12	
+T13	Connective 145 148	により
+R9	REASON Arg1:T13 Arg2:T12	
+R10	RESULT Arg1:T13 Arg2:T11	
+T14	Argument 135 137	最悪
+T15	Connective 138 140	場合
+R11	CONDITION Arg1:T15 Arg2:T14	
+R12	RESULT Arg1:T15 Arg2:T12	
+T16	Argument 99 109	そのまま使用を続ける
+T17	Connective 109 110	と
+R13	CONDITION Arg1:T17 Arg2:T16	
+R14	RESULT Arg1:T17 Arg2:T7	
+R15	REASON Arg1:T2 Arg2:T1	
+R16	RESULT Arg1:T2 Arg2:T3	
+T18	Argument 36 41	原動機冷間
+T19	Connective 41 43	時に
+T20	Argument 43 53	高回転で原動機を回す
+T21	Connective 53 54	と
+R17	CONDITION Arg1:T19 Arg2:T18	
+R18	RESULT Arg1:T19 Arg2:T3	
+R19	CONDITION Arg1:T21 Arg2:T20	
+R20	RESULT Arg1:T21 Arg2:T3	

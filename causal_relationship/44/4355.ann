@@ -1,0 +1,17 @@
+T1	Argument 0 29	燃料蒸発ガス抑止装置に使用されているゴム製ホースが材質不良
+T2	Connective 30 32	ため
+T3	Argument 49 62	当該ホースにひび割れが発生
+T4	Connective 63 64	、
+T5	Argument 70 83	燃料蒸発ガスが大気中に放出
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 33 47	このままの状態で使用を続ける
+T7	Connective 47 48	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 64 66	最悪
+T9	Connective 67 69	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

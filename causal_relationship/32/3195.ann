@@ -1,0 +1,17 @@
+T1	Argument 0 39	自動変速機において、シフトケーブルと変速機を締結するナットの締付け工程が不適切
+T2	Connective 40 42	ため
+T3	Argument 43 48	締付け不足
+T4	Connective 55 59	そのため
+T5	Argument 60 74	そのままの状態で使用を続ける
+T6	Connective 74 75	と
+T7	Argument 76 84	当該ナットが外れ
+R1	RESULT Arg1:T6 Arg2:T7	
+R2	CONDITION Arg1:T6 Arg2:T5	
+R3	RESULT Arg1:T4 Arg2:T7	
+R4	REASON Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T2 Arg2:T3	
+R6	REASON Arg1:T2 Arg2:T1	
+T8	Argument 85 94	シフト操作できなく
+T9	Connective 84 85	て
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	

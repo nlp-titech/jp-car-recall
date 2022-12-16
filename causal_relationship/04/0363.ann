@@ -1,0 +1,25 @@
+T1	Argument 0 34	燃料タンク上部に装着されている燃料チェックバルブと車体との隙間が不足
+T2	Argument 41 61	燃料タンク内の圧力増大時にタンクが膨らむ
+T3	Argument 67 78	当該バルブと車体が干渉
+T4	Argument 107 114	燃料漏れが発生
+T5	Connective 38 40	ため
+T6	Connective 63 66	により
+T7	Connective 91 92	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T3	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T15	
+R6	RESULT Arg1:T7 Arg2:T4	
+T14	Connective 79 80	て
+T15	Argument 80 86	亀裂を生じる
+R7	REASON Arg1:T14 Arg2:T3	
+R8	RESULT Arg1:T14 Arg2:T15	
+T16	Argument 98 105	燃料満タン給油
+T17	Connective 105 106	時
+R9	CONDITION Arg1:T17 Arg2:T16	
+R10	RESULT Arg1:T17 Arg2:T4	
+T8	Argument 92 94	最悪
+T9	Connective 95 97	場合
+R11	CONDITION Arg1:T9 Arg2:T8	
+R12	RESULT Arg1:T9 Arg2:T4	

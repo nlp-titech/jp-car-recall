@@ -1,0 +1,17 @@
+T1	Argument 0 68	ターボ付きエンジン搭載のオートクルーズ装置装着車において、スロットル本体に取り付けられているオートクルーズ用レバーのフックの形状が不適切
+T2	Argument 113 122	フックに乗り上げる
+T4	Argument 128 142	エンジンが高回転の状態となる
+T5	Argument 72 84	アクセルペダルを踏み込ん
+T6	Connective 69 71	ため
+T7	Connective 85 86	際
+T9	Connective 127 128	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T14	
+R3	CONDITION Arg1:T7 Arg2:T5	
+R5	RESULT Arg1:T7 Arg2:T14	
+R4	REASON Arg1:T9 Arg2:T2	
+R6	RESULT Arg1:T9 Arg2:T4	
+T14	Argument 88 112	当該レバーの溝からオートクルーズ用ケーブルが外れ
+T15	Connective 112 113	、
+R7	REASON Arg1:T15 Arg2:T14	
+R8	RESULT Arg1:T15 Arg2:T2	

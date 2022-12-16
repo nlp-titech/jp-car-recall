@@ -1,0 +1,17 @@
+T1	Argument 0 12	燃料パイプの形状が不適切
+T2	Argument 16 33	燃料ポンプの吐出口に押す力が加わっ
+T3	Argument 47 57	そのまま使用を続ける
+T4	Argument 58 76	燃料ポンプの樹脂パイプ部に亀裂が発生
+T5	Argument 78 84	燃料が漏れる
+T6	Connective 13 15	ため
+T7	Connective 42 46	そのため
+T8	Connective 57 58	と
+T9	Connective 77 78	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T4	
+R5	CONDITION Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	

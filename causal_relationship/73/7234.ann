@@ -1,0 +1,21 @@
+T1	Argument 31 36	使用を続け
+T2	Connective 37 39	場合
+T3	Argument 40 42	走行
+T4	Connective 42 43	中
+T5	Argument 44 58	リアトレーリングアームが破断
+T6	Connective 59 60	て
+T7	Argument 60 69	操舵に影響を及ぼす
+R1	CONDITION Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	REASON Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T6 Arg2:T7	
+T10	Connective 28 31	状態で
+T11	Argument 12 26	リアトレーリングアームが損傷
+T12	Connective 8 12	によって
+R11	CONDITION Arg1:T10 Arg2:T11	
+R12	RESULT Arg1:T10 Arg2:T5	
+R6	RESULT Arg1:T2 Arg2:T5	
+T8	Argument 0 8	事故等による衝撃
+R7	REASON Arg1:T12 Arg2:T8	
+R8	RESULT Arg1:T12 Arg2:T11	

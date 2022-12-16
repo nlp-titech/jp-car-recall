@@ -1,0 +1,25 @@
+T1	Argument 17 52	パワーステアリングオイルホースと当該ホースブラケットの固定位置が不適切
+T2	Argument 61 76	低圧側の当該ホースが引っ張られ
+T3	Argument 77 86	疲労し亀裂が生じる
+T4	Argument 92 106	そのままの状態で使用を続ける
+T5	Argument 108 110	最悪
+T6	Argument 114 129	パワーステアリングオイルが洩れ
+T7	Argument 130 141	ハンドルの操作力が増大
+T8	Connective 58 60	ため
+T9	Connective 76 77	、
+T10	Connective 106 107	と
+T11	Connective 111 113	場合
+T12	Connective 129 130	、
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T2	
+R3	REASON Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T3	
+R5	CONDITION Arg1:T10 Arg2:T4	
+R6	RESULT Arg1:T10 Arg2:T6	
+R7	CONDITION Arg1:T11 Arg2:T5	
+R8	RESULT Arg1:T11 Arg2:T6	
+R10	REASON Arg1:T12 Arg2:T6	
+R11	RESULT Arg1:T12 Arg2:T7	
+T13	Connective 91 92	。
+R9	REASON Arg1:T13 Arg2:T3	
+R12	RESULT Arg1:T13 Arg2:T6	

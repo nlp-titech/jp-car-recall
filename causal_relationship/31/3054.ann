@@ -1,0 +1,21 @@
+T1	Argument 0 32	大・中型トラックの差動機において、加工不良のピニオンギヤを組付け
+T2	Connective 39 43	そのため
+T3	Argument 44 58	そのままの状態で使用を続ける
+T4	Connective 58 59	と
+T5	Argument 60 73	ピニオンギヤの焼付きが発生
+T6	Connective 74 75	、
+T7	Argument 75 77	最悪
+T8	Connective 78 80	場合
+T9	Argument 81 87	差動機が破損
+R1	RESULT Arg1:T8 Arg2:T9	
+R2	CONDITION Arg1:T8 Arg2:T7	
+R3	RESULT Arg1:T6 Arg2:T9	
+R4	REASON Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T5	
+R6	CONDITION Arg1:T4 Arg2:T3	
+R8	REASON Arg1:T2 Arg2:T1	
+R7	RESULT Arg1:T2 Arg2:T5	
+T10	Connective 88 89	て
+T11	Argument 89 96	走行不能になる
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	

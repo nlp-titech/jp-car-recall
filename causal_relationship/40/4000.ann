@@ -1,0 +1,41 @@
+T1	Argument 18 38	エンジン制御ユニットのプログラムが不適切
+T2	Argument 52 74	排出ガス中に含まれる未燃燃料の濃度が高くなり
+T3	Argument 75 92	当該燃料がＥＧＲクーラーに廻り込み
+T4	Argument 93 105	カーボンデポジットが生成
+T5	Argument 107 116	ＥＧＲバルブに付着
+T6	Argument 129 143	そのままの状態で使用を続ける
+T7	Argument 145 162	付着したカーボンデポジットが剥がれ
+T8	Argument 163 174	ＥＧＲバルブに噛み込み
+T9	Argument 175 188	バルブが閉じることができず
+T10	Argument 189 208	バルブを駆動するモーターに負荷が掛かり
+T11	Argument 209 219	エンジンの出力が制限
+T12	Connective 39 41	ため
+T13	Connective 74 75	、
+T14	Connective 92 93	、
+T15	Connective 105 107	され
+T16	Connective 124 128	そのため
+T17	Connective 143 144	と
+T18	Connective 162 163	、
+T19	Connective 174 175	、
+T20	Connective 188 189	、
+T21	Connective 208 209	、
+R1	REASON Arg1:T12 Arg2:T1	
+R2	RESULT Arg1:T12 Arg2:T2	
+R3	REASON Arg1:T13 Arg2:T2	
+R4	RESULT Arg1:T13 Arg2:T3	
+R5	REASON Arg1:T14 Arg2:T3	
+R6	RESULT Arg1:T14 Arg2:T4	
+R7	REASON Arg1:T15 Arg2:T4	
+R8	RESULT Arg1:T15 Arg2:T5	
+R9	REASON Arg1:T16 Arg2:T5	
+R10	RESULT Arg1:T16 Arg2:T7	
+R11	CONDITION Arg1:T17 Arg2:T6	
+R12	RESULT Arg1:T17 Arg2:T7	
+R13	REASON Arg1:T18 Arg2:T7	
+R14	RESULT Arg1:T18 Arg2:T8	
+R15	REASON Arg1:T19 Arg2:T8	
+R16	RESULT Arg1:T19 Arg2:T9	
+R17	REASON Arg1:T20 Arg2:T9	
+R18	RESULT Arg1:T20 Arg2:T10	
+R19	REASON Arg1:T21 Arg2:T10	
+R20	RESULT Arg1:T21 Arg2:T11	

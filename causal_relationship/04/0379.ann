@@ -1,0 +1,17 @@
+T1	Argument 0 54	後席二列目の左右の座席ベルトにおいて、バックル取付側ベルトを固定するための座席フレーム部の取付穴が大きすぎる
+T2	Argument 57 72	座席ベルト取付装置の強度が不足
+T3	Argument 88 100	衝突時の荷重に耐えられず
+T4	Argument 101 107	取付部が破損
+T5	Connective 54 56	ため
+T6	Connective 81 82	、
+T7	Connective 100 101	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 82 84	最悪
+T9	Connective 85 87	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T4	

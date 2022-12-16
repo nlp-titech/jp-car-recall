@@ -1,0 +1,21 @@
+T1	Argument 6 42	ゴム製燃料ホース（供給側及び戻り側）の金属製継手部へのかしめ方法が不適切
+T2	Connective 43 45	ため
+T3	Argument 62 73	かしめ部より燃料が漏れ
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 46 60	そのままの状態で使用を続ける
+T5	Connective 60 61	と
+R3	CONDITION Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T3	
+T6	Argument 80 86	排気官に滴下
+T7	Connective 87 88	て
+T8	Argument 88 93	火災に至る
+T9	Connective 73 74	、
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T6	
+R7	REASON Arg1:T7 Arg2:T6	
+R8	RESULT Arg1:T7 Arg2:T8	
+T10	Argument 74 76	最悪
+T11	Connective 77 79	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T6	

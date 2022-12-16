@@ -1,0 +1,33 @@
+T1	Argument 0 29	後輪のブレーキキャリパにおいて、ブーツのシール構造が不適切
+T2	Argument 33 44	キャリパ内部に水が浸入
+T3	Argument 46 55	シャフトに錆が発生
+T4	Argument 56 58	腐食
+T5	Argument 71 85	そのままの状態で使用を続ける
+T6	Argument 87 98	シャフトの摺動性が悪化
+T7	Argument 100 113	駐車ブレーキの制動力が低下
+T8	Argument 115 117	最悪
+T9	Argument 121 128	車両が動き出す
+T10	Connective 30 32	ため
+T11	Connective 45 46	、
+T12	Connective 55 56	し
+T13	Connective 66 70	そのため
+T14	Connective 85 86	と
+T15	Connective 99 100	、
+T16	Connective 114 115	、
+T17	Connective 118 120	場合
+R1	REASON Arg1:T10 Arg2:T1	
+R2	RESULT Arg1:T10 Arg2:T2	
+R3	REASON Arg1:T11 Arg2:T2	
+R4	RESULT Arg1:T11 Arg2:T3	
+R5	REASON Arg1:T12 Arg2:T3	
+R6	RESULT Arg1:T12 Arg2:T4	
+R7	REASON Arg1:T13 Arg2:T4	
+R8	RESULT Arg1:T13 Arg2:T6	
+R9	CONDITION Arg1:T14 Arg2:T5	
+R10	RESULT Arg1:T14 Arg2:T6	
+R11	REASON Arg1:T15 Arg2:T6	
+R12	RESULT Arg1:T15 Arg2:T7	
+R13	REASON Arg1:T16 Arg2:T7	
+R14	RESULT Arg1:T16 Arg2:T9	
+R15	CONDITION Arg1:T17 Arg2:T8	
+R16	RESULT Arg1:T17 Arg2:T9	

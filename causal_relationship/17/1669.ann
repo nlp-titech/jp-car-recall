@@ -1,0 +1,5 @@
+T1	Argument 0 17	最大積載量の表示の作業指示が不適切
+T2	Argument 21 51	最大積載量が１２００ｋｇのところ１２５０ｋｇの表示をしている
+T3	Connective 18 20	ため
+R1	REASON Arg1:T3 Arg2:T1	
+R2	RESULT Arg1:T3 Arg2:T2	

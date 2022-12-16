@@ -1,0 +1,25 @@
+T1	Argument 0 36	前席用シートベルトにおいて、巻取装置内部のロック機構部の製造方法が不適切
+T2	Connective 37 39	ため
+T3	Argument 40 46	圧入部が緩み
+T4	Connective 46 47	、
+T5	Argument 47 68	シートベルト脱着時に異音や引っ掛かりが発生
+T6	Argument 77 87	そのまま使用を続ける
+T7	Connective 87 88	と
+T8	Argument 89 91	最悪
+T9	Connective 92 94	場合
+T10	Argument 95 102	圧入部品が外れ
+T11	Connective 102 103	、
+T12	Argument 103 125	衝突時にシートベルトのロックが作動しなくなる
+R1	RESULT Arg1:T11 Arg2:T12	
+R2	REASON Arg1:T11 Arg2:T10	
+R3	RESULT Arg1:T9 Arg2:T10	
+R4	CONDITION Arg1:T9 Arg2:T8	
+R5	RESULT Arg1:T7 Arg2:T10	
+R6	CONDITION Arg1:T7 Arg2:T6	
+R7	REASON Arg1:T2 Arg2:T1	
+R8	RESULT Arg1:T2 Arg2:T3	
+R9	REASON Arg1:T4 Arg2:T3	
+R10	RESULT Arg1:T4 Arg2:T5	
+T13	Connective 76 77	。
+R11	REASON Arg1:T13 Arg2:T5	
+R12	RESULT Arg1:T13 Arg2:T10	

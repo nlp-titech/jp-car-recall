@@ -1,0 +1,45 @@
+T2	Argument 30 44	冷却水の温度変化が大きくなり
+T3	Argument 45 66	シリンダーヘッドが熱膨張と熱収縮を繰り返す
+T4	Argument 70 90	シリンダーヘッドとガスケットに摩擦が生じ
+T5	Argument 91 102	シリンダーヘッドが摩耗
+T6	Argument 115 127	ガスケットの機能が失われ
+T7	Argument 128 140	燃焼ガスが冷却水路に浸入
+T8	Argument 142 161	燃焼ガスが冷却水リザーバータンクに到達
+T9	Argument 165 172	冷却水が吹き返
+T10	Argument 174 176	最悪
+T11	Argument 180 185	冷却水が無
+T12	Argument 188 198	オーバーヒートに至る
+T13	Connective 27 29	ため
+T14	Connective 44 45	、
+T15	Connective 69 70	、
+T16	Connective 90 91	、
+T17	Connective 110 114	そのため
+T18	Connective 127 128	、
+T19	Connective 141 142	、
+T20	Connective 163 164	と
+T21	Connective 173 174	、
+T22	Connective 177 179	場合
+R2	RESULT Arg1:T13 Arg2:T2	
+R3	REASON Arg1:T14 Arg2:T2	
+R4	RESULT Arg1:T14 Arg2:T3	
+R5	REASON Arg1:T15 Arg2:T3	
+R6	RESULT Arg1:T15 Arg2:T4	
+R7	REASON Arg1:T16 Arg2:T4	
+R8	RESULT Arg1:T16 Arg2:T5	
+R9	REASON Arg1:T17 Arg2:T5	
+R10	RESULT Arg1:T17 Arg2:T6	
+R11	REASON Arg1:T18 Arg2:T6	
+R12	RESULT Arg1:T18 Arg2:T7	
+R13	REASON Arg1:T19 Arg2:T7	
+R14	RESULT Arg1:T19 Arg2:T8	
+R15	CONDITION Arg1:T20 Arg2:T8	
+R16	RESULT Arg1:T20 Arg2:T9	
+R17	REASON Arg1:T21 Arg2:T9	
+R18	RESULT Arg1:T21 Arg2:T11	
+R19	CONDITION Arg1:T22 Arg2:T10	
+R20	RESULT Arg1:T22 Arg2:T11	
+T23	Connective 187 188	り
+R21	REASON Arg1:T23 Arg2:T11	
+R22	RESULT Arg1:T23 Arg2:T12	
+T1	Argument 18 26	冷却装置が不適切
+R1	REASON Arg1:T13 Arg2:T1	

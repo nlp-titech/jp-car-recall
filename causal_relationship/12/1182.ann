@@ -1,0 +1,29 @@
+T1	Argument 0 26	燃料タンクからエンジンへの燃料配管の取り回しが不適切
+T2	Connective 27 29	ため
+T3	Argument 30 48	燃料配管がエアコン用空気ダクトと干渉
+T4	Connective 56 60	そのため
+T5	Argument 61 75	そのままの状態で使用を続ける
+T6	Connective 75 76	と
+T7	Argument 77 84	燃料配管が摩耗
+T8	Argument 86 88	最悪
+T9	Connective 85 86	、
+T10	Connective 89 91	場合
+T11	Argument 92 96	孔があき
+T12	Connective 102 103	、
+T13	Argument 103 121	エンジンが停止して再始動できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	CONDITION Arg1:T6 Arg2:T5	
+R5	CONDITION Arg1:T10 Arg2:T8	
+R6	RESULT Arg1:T10 Arg2:T11	
+R7	RESULT Arg1:T6 Arg2:T7	
+R8	RESULT Arg1:T4 Arg2:T7	
+R9	REASON Arg1:T9 Arg2:T7	
+R10	RESULT Arg1:T9 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+T14	Connective 95 96	き
+R11	REASON Arg1:T14 Arg2:T11	
+T15	Argument 96 101	空気が混入
+R13	RESULT Arg1:T14 Arg2:T15	
+R14	REASON Arg1:T12 Arg2:T15	

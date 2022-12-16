@@ -1,0 +1,29 @@
+T1	Argument 8 25	カムシャフトの溶接部の形状が不適切
+T2	Argument 29 39	当該部分に応力が集中
+T3	Argument 46 51	強度が不足
+T4	Argument 69 79	当該部分に亀裂が生じ
+T5	Argument 86 95	カムシャフトが折損
+T6	Argument 97 103	原動機が停止
+T7	Connective 26 28	ため
+T8	Connective 43 45	から
+T9	Connective 79 80	、
+T10	Connective 96 97	て
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+T11	Connective 52 53	、
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+R9	REASON Arg1:T10 Arg2:T5	
+R10	RESULT Arg1:T10 Arg2:T6	
+T12	Argument 53 67	そのままの状態で使用を続ける
+T13	Connective 67 68	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T4	
+T14	Argument 80 82	最悪
+T15	Connective 83 85	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T5	

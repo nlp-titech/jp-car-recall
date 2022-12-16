@@ -1,0 +1,9 @@
+T1	Argument 15 27	溶接時の温度管理が不適切
+T2	Connective 28 30	ため
+T3	Argument 31 43	確実に溶接ができていない
+T4	Connective 49 53	そのため
+T5	Argument 54 68	溶接部の隙間から燃料が漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

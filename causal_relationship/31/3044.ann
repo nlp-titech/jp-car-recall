@@ -1,0 +1,71 @@
+T1	Argument 0 45	中型トラックと大・中型バスにおいて、エアコンプレッサの中央部ヘッドボルトの締付トルクが不足
+T2	Connective 49 51	ため
+T3	Argument 69 114	シートガスケット（エアコンプレッサ内の冷却水通路とエア通路の気密性を保つもの）に亀裂が発生
+T4	Connective 122 126	そのため
+T5	Argument 127 138	冷却水がエア通路に浸入
+T6	Connective 139 140	、
+T7	Argument 141 153	エア圧送時に配管を伝わり
+T8	Connective 186 187	、
+T9	Argument 187 193	冷却水が減少
+T10	Connective 195 198	ことで
+T11	Argument 198 204	警告灯が点灯
+T13	Argument 206 220	そのままの状態で使用を続ける
+T14	Connective 220 221	と
+T15	Argument 222 232	エンジンの出力が制限
+T17	Argument 255 278	結晶化して生成された固形物が吸排気バルブに付着
+T18	Connective 280 283	ことで
+T19	Argument 284 299	吸入または圧送されるエアが減少
+T20	Connective 301 303	ため
+T21	Argument 304 310	エア圧が低下
+T22	Connective 314 315	で
+T23	Argument 315 333	警報ブザーが鳴るとともに警告灯が点灯
+T25	Argument 335 349	そのままの状態で使用を続ける
+T26	Connective 349 350	と
+T27	Argument 351 366	充分なエア圧が確保できなくなり
+T28	Connective 379 380	、
+T29	Argument 380 387	路上故障に至る
+R1	RESULT Arg1:T28 Arg2:T29	
+R2	REASON Arg1:T28 Arg2:T39	
+R3	RESULT Arg1:T26 Arg2:T27	
+R4	CONDITION Arg1:T26 Arg2:T25	
+R7	RESULT Arg1:T22 Arg2:T23	
+R8	REASON Arg1:T22 Arg2:T21	
+R9	RESULT Arg1:T20 Arg2:T21	
+R10	REASON Arg1:T20 Arg2:T19	
+R11	RESULT Arg1:T18 Arg2:T19	
+R12	REASON Arg1:T18 Arg2:T17	
+R13	RESULT Arg1:T14 Arg2:T15	
+R14	CONDITION Arg1:T14 Arg2:T13	
+R17	RESULT Arg1:T10 Arg2:T11	
+R18	REASON Arg1:T10 Arg2:T9	
+R19	RESULT Arg1:T8 Arg2:T9	
+R20	RESULT Arg1:T6 Arg2:T7	
+R21	REASON Arg1:T6 Arg2:T5	
+R22	RESULT Arg1:T4 Arg2:T5	
+R23	REASON Arg1:T4 Arg2:T3	
+R24	RESULT Arg1:T2 Arg2:T3	
+R25	REASON Arg1:T2 Arg2:T1	
+T33	Connective 254 255	、
+T34	Argument 247 253	冷却水が乾燥
+R27	RESULT Arg1:T33 Arg2:T17	
+R28	REASON Arg1:T33 Arg2:T34	
+R29	RESULT Arg1:T6 Arg2:T34	
+T35	Argument 52 68	ピストンの往復運動による圧力振動
+T36	Connective 68 69	で
+R30	REASON Arg1:T36 Arg2:T35	
+R31	RESULT Arg1:T36 Arg2:T3	
+T37	Connective 244 247	により
+T38	Argument 237 244	エア圧縮時の熱
+R32	REASON Arg1:T37 Arg2:T38	
+R33	RESULT Arg1:T37 Arg2:T34	
+T39	Argument 366 379	ブレーキ機能に影響を及ぼし
+T40	Connective 365 366	り
+R34	RESULT Arg1:T40 Arg2:T39	
+R35	REASON Arg1:T40 Arg2:T27	
+T30	Connective 153 154	、
+T31	Argument 154 184	エアドライヤ（圧縮空気中の水分や油分を取り除くもの）から排出
+R38	RESULT Arg1:T30 Arg2:T31	
+R39	REASON Arg1:T30 Arg2:T7	
+R16	REASON Arg1:T8 Arg2:T31	
+R15	RESULT Arg1:T10 Arg2:T15	
+R5	RESULT Arg1:T22 Arg2:T27	

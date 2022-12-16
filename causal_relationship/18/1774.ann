@@ -1,0 +1,33 @@
+T1	Argument 0 36	後車輪内の走行モータ減速機において、駆動軸のロータリシールの耐熱性が不足
+T2	Connective 40 42	ため
+T3	Argument 43 64	高速で連続走行を行い減速機内部が高温となっ
+T4	Connective 65 67	場合
+T5	Argument 68 76	シール性能が低下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+T6	Connective 84 88	そのため
+R4	REASON Arg1:T6 Arg2:T5	
+T7	Argument 111 126	クラッチ作動油が減速機内に流入
+T8	Argument 105 109	高速走行
+T9	Connective 109 110	時
+R5	REASON Arg1:T9 Arg2:T8	
+R6	RESULT Arg1:T9 Arg2:T7	
+T10	Connective 127 128	、
+T11	Argument 128 139	減速機内部の圧力が上昇
+T12	Connective 140 141	て
+T13	Argument 142 159	低速及び高速の両クラッチが接続状態
+T14	Argument 163 174	走行中に後車輪がロック
+T15	Connective 162 163	、
+R7	RESULT Arg1:T6 Arg2:T7	
+R8	REASON Arg1:T10 Arg2:T7	
+R9	RESULT Arg1:T10 Arg2:T11	
+R10	REASON Arg1:T12 Arg2:T11	
+R11	RESULT Arg1:T12 Arg2:T13	
+R12	REASON Arg1:T15 Arg2:T13	
+R13	RESULT Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T4 Arg2:T5	
+T16	Argument 89 103	そのままの状態で使用を続ける
+T17	Connective 103 104	と
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T7	

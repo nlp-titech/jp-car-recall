@@ -1,0 +1,29 @@
+T2	Argument 43 67	ギヤシフトユニット内部のモータが故障したと誤診断
+T3	Argument 80 86	警告灯が点灯
+T4	Argument 88 101	フェールセーフモードとなり
+T5	Argument 102 111	変速ができなくなり
+T6	Argument 112 114	最悪
+T8	Argument 118 125	走行中エンスト
+T9	Argument 127 134	走行不能となる
+T10	Connective 40 42	ため
+T11	Connective 75 79	そのため
+T12	Connective 87 88	て
+T13	Connective 101 102	、
+T14	Connective 111 112	、
+T15	Connective 115 117	場合
+T17	Connective 126 127	て
+R2	RESULT Arg1:T10 Arg2:T2	
+R3	REASON Arg1:T11 Arg2:T2	
+R4	RESULT Arg1:T11 Arg2:T3	
+R5	REASON Arg1:T12 Arg2:T3	
+R6	RESULT Arg1:T12 Arg2:T4	
+R7	REASON Arg1:T13 Arg2:T4	
+R8	RESULT Arg1:T13 Arg2:T5	
+R9	REASON Arg1:T14 Arg2:T5	
+R10	RESULT Arg1:T14 Arg2:T8	
+R11	CONDITION Arg1:T15 Arg2:T6	
+R15	REASON Arg1:T17 Arg2:T8	
+R16	RESULT Arg1:T17 Arg2:T9	
+R12	RESULT Arg1:T15 Arg2:T8	
+T1	Argument 19 39	トランスミッション制御プログラムが不適切
+R1	REASON Arg1:T10 Arg2:T1	

@@ -1,0 +1,9 @@
+T1	Argument 10 38	座席をキャビンに固定しているブラケットのモールドが不十分
+T2	Connective 39 41	ため
+T3	Argument 42 52	当該モールドが剥れる
+T4	Connective 58 62	そのため
+T5	Argument 63 71	座席が後ろに傾く
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

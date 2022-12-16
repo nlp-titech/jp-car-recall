@@ -1,0 +1,62 @@
+T1	Argument 0 46	ロード・ローラーに搭載している電磁弁の構成部品であるコイルモールド及び配線の固定方法が不適切
+T2	Connective 47 49	ため
+T3	Argument 50 72	コイルモールドが走行中の機械振動によって磨耗
+T4	Argument 80 94	そのままの状態で使用を続ける
+T5	Connective 94 95	と
+T6	Argument 96 109	コイルモールドの磨耗が進行
+T7	Connective 124 126	ため
+T8	Argument 126 135	電源ヒューズが切れ
+T9	Argument 200 219	１．高低速切換え電磁弁が作動しなくなる
+T10	Connective 219 220	と
+T11	Argument 221 234	高低速切換えができなくなる
+T12	Argument 235 250	２．中立電磁弁が作動しなくなる
+T13	Connective 250 251	と
+T14	Argument 252 275	変速機を自動で中立状態にすることができなくなる
+T15	Argument 276 297	３．駐車ブレーキ解除電磁弁が作動しなくなる
+T16	Connective 297 298	と
+T17	Argument 299 326	走行中・停止中を問わず駐車ブレーキが作動したままとなる
+T19	Argument 341 350	電源ヒューズは共通
+T20	Connective 353 355	ため
+T21	Argument 355 364	１～３が同時に発生
+T22	Connective 365 366	、
+T23	Argument 366 378	３の駐車ブレーキ解除不能
+T24	Connective 379 382	よって
+T25	Argument 382 386	走行不能
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	CONDITION Arg1:T5 Arg2:T4	
+R5	RESULT Arg1:T5 Arg2:T6	
+R6	REASON Arg1:T7 Arg2:T28	
+R7	RESULT Arg1:T7 Arg2:T8	
+R8	CONDITION Arg1:T10 Arg2:T9	
+R9	RESULT Arg1:T10 Arg2:T11	
+R10	CONDITION Arg1:T13 Arg2:T12	
+R11	RESULT Arg1:T13 Arg2:T14	
+R12	CONDITION Arg1:T16 Arg2:T15	
+R13	RESULT Arg1:T16 Arg2:T17	
+R14	REASON Arg1:T20 Arg2:T19	
+R15	RESULT Arg1:T20 Arg2:T21	
+R16	REASON Arg1:T22 Arg2:T21	
+R17	RESULT Arg1:T22 Arg2:T25	
+R18	REASON Arg1:T24 Arg2:T23	
+R19	RESULT Arg1:T24 Arg2:T25	
+T34	Connective 79 80	。
+R4	REASON Arg1:T34 Arg2:T3	
+R20	RESULT Arg1:T34 Arg2:T6	
+T18	Connective 109 110	し
+T26	Argument 110 118	内部の配線が露出
+T27	Connective 119 120	て
+T28	Argument 120 122	短絡
+R21	REASON Arg1:T18 Arg2:T6	
+R22	RESULT Arg1:T18 Arg2:T26	
+R23	REASON Arg1:T27 Arg2:T26	
+R24	RESULT Arg1:T27 Arg2:T28	
+T29	Connective 135 136	て
+T30	Argument 136 147	電磁弁が作動しなくなる
+R25	REASON Arg1:T29 Arg2:T8	
+R26	RESULT Arg1:T29 Arg2:T30	
+T31	Argument 327 337	いずれの電磁弁が短絡
+T33	Connective 339 340	も
+R28	CONDITION Arg1:T33 Arg2:T31	
+R29	RESULT Arg1:T33 Arg2:T21	
+#1	AnnotatorNotes T31	「どれか１つの電磁弁が短絡すると」と読み換え

@@ -1,0 +1,35 @@
+T2	Connective 25 27	ため
+T3	Argument 28 42	エンジンが高回転から下がらず
+T4	Connective 42 43	、
+T5	Argument 43 61	車両を停止させてもエンジンを切らない
+T6	Connective 61 63	場合
+T7	Argument 66 76	そのまま高回転で維持
+T9	Connective 85 89	そのため
+T10	Argument 90 105	車体床面下部の温度が異常に上昇
+T11	Connective 106 107	て
+T12	Argument 107 138	樹脂製燃料タンク、電気配線、駐車ブレーキケーブルの被覆等が溶損
+T13	Connective 139 140	、
+T14	Argument 140 142	最悪
+T15	Connective 143 145	場合
+T16	Argument 146 150	燃料漏れ
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T10	
+R9	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T12	
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T16	
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T16	
+T1	Argument 1 24	エンジン制御用コンピュータのプログラムが不適切
+R1	REASON Arg1:T2 Arg2:T1	
+T8	Argument 151 155	エンスト
+T17	Argument 156 167	駐車ブレーキの作動不良
+R15	RESULT Arg1:T13 Arg2:T8	
+R16	RESULT Arg1:T15 Arg2:T8	
+R17	RESULT Arg1:T13 Arg2:T17	
+R18	RESULT Arg1:T15 Arg2:T17	

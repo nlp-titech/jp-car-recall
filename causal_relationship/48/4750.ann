@@ -1,0 +1,31 @@
+T1	Argument 7 49	振動吸収装置を取り付けているボルトとステアリング・ギヤボックス座面の表面処理に不適切
+T2	Connective 55 57	ため
+T3	Argument 58 89	規定トルクで締め付けているにもかかわらず、軸力（締付力）が不足
+T4	Connective 98 99	、
+T5	Argument 115 123	当該ボルトが緩み
+T6	Connective 123 124	、
+T7	Argument 124 140	パワーステアリング・オイルが漏れ
+T8	Connective 140 141	て
+T9	Argument 142 153	ハンドル操作が重くなる
+T10	Argument 158 171	漏れたオイルが排気管に飛散
+T11	Connective 172 173	、
+T12	Argument 179 184	発火に至る
+R1	RESULT Arg1:T8 Arg2:T9	
+R2	RESULT Arg1:T8 Arg2:T10	
+R3	REASON Arg1:T11 Arg2:T10	
+R4	RESULT Arg1:T11 Arg2:T12	
+T13	Argument 173 175	最悪
+T14	Connective 176 178	場合
+R5	CONDITION Arg1:T14 Arg2:T13	
+R6	RESULT Arg1:T14 Arg2:T12	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	REASON Arg1:T2 Arg2:T1	
+R9	RESULT Arg1:T2 Arg2:T3	
+R10	REASON Arg1:T4 Arg2:T3	
+R11	RESULT Arg1:T4 Arg2:T5	
+R12	REASON Arg1:T6 Arg2:T5	
+R13	RESULT Arg1:T6 Arg2:T7	
+T15	Argument 99 113	そのままの状態で使用を続ける
+T16	Connective 113 114	と
+R14	CONDITION Arg1:T16 Arg2:T15	
+R15	RESULT Arg1:T16 Arg2:T5	

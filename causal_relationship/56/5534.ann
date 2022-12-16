@@ -1,0 +1,29 @@
+T1	Argument 0 16	前輪用ブレーキ配管の形状が不適切
+T3	Argument 20 26	走行時の振動
+T4	Argument 29 40	配管両端部に応力が生じ
+T6	Argument 52 58	走行時の振動
+T7	Argument 61 70	当該部に亀裂が生じ
+T8	Argument 71 81	ブレーキオイルが漏れ
+T9	Argument 82 84	最悪
+T10	Argument 88 94	制動力が低下
+T11	Connective 17 19	ため
+T13	Connective 26 29	により
+T14	Connective 47 51	そのため
+T16	Connective 58 61	により
+T17	Connective 70 71	、
+T18	Connective 81 82	、
+T19	Connective 85 87	場合
+R1	REASON Arg1:T11 Arg2:T1	
+R5	REASON Arg1:T13 Arg2:T3	
+R6	RESULT Arg1:T13 Arg2:T4	
+R7	REASON Arg1:T14 Arg2:T4	
+R8	RESULT Arg1:T14 Arg2:T7	
+R11	REASON Arg1:T16 Arg2:T6	
+R12	RESULT Arg1:T16 Arg2:T7	
+R13	REASON Arg1:T17 Arg2:T7	
+R14	RESULT Arg1:T17 Arg2:T8	
+R15	REASON Arg1:T18 Arg2:T8	
+R16	RESULT Arg1:T18 Arg2:T10	
+R17	CONDITION Arg1:T19 Arg2:T9	
+R18	RESULT Arg1:T19 Arg2:T10	
+R2	RESULT Arg1:T11 Arg2:T4	

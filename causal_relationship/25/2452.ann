@@ -1,0 +1,16 @@
+T1	Argument 0 42	エンジン制御用電源リレーにおいて、リレーに内蔵されているダイオードの製造方法が不適切
+T2	Connective 43 45	ため
+T3	Argument 46 53	導通不良となる
+T4	Connective 60 64	そのため
+T5	Argument 81 89	エンジン始動不良
+T6	Argument 90 98	走行中にエンスト
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T6	
+T7	Argument 65 79	そのままの状態で使用を続ける
+T8	Connective 79 80	と
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T5	
+R8	RESULT Arg1:T8 Arg2:T6	

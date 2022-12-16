@@ -1,0 +1,21 @@
+T1	Argument 7 35	尿素水タンク取付け金具において、取付け作業の指示が不適切
+T2	Connective 36 38	ため
+T3	Argument 39 61	４本の締結ボルトのうち１本が装着されていない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 62 66	そのため
+T5	Argument 83 96	当該金具の締結ボルトが緩み
+T6	Argument 103 112	尿素水タンクが脱落
+T7	Connective 96 97	、
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	
+T8	Argument 67 81	そのままの状態で使用を続ける
+T9	Connective 81 82	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 97 99	最悪
+T11	Connective 100 102	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T6	

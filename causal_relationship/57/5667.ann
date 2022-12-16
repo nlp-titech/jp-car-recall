@@ -1,0 +1,25 @@
+T1	Argument 0 38	標準タイヤとして車両に装着したタイヤにおいて、サイドウォール部の構造が不適切
+T2	Argument 42 60	サイドウォール部に疲労が蓄積しやすい
+T3	Argument 79 84	亀裂が発生
+T4	Argument 92 102	そのまま使用を続ける
+T5	Argument 104 117	亀裂部から空気が徐々に漏れ
+T6	Argument 119 129	タイヤの空気圧が低下
+T7	Connective 39 41	ため
+T8	Connective 66 70	そのため
+T9	Connective 91 92	、
+T10	Connective 102 103	と
+T11	Connective 117 118	て
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T5	
+R7	CONDITION Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T5	
+R9	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	
+T12	Argument 71 75	使用過程
+T13	Connective 75 79	において
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T3	

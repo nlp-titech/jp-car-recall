@@ -1,0 +1,5 @@
+T1	Argument 23 59	前部サイドスカートに備えられた方向指示器の光源、投影面積及び光度が不適切
+T2	Connective 60 62	ため
+T3	Argument 63 87	保安基準第４１条（方向指示器の基準）を満たさない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

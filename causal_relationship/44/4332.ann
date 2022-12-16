@@ -1,0 +1,21 @@
+T1	Argument 0 45	冷蔵冷凍車の荷箱及びサブフレーム固定ブラケット締結ボルトにおいて、締結用工具の管理が不適切
+T2	Connective 46 47	為
+T3	Argument 48 56	締結トルクが不足
+T4	Connective 66 70	そのため
+T5	Argument 82 90	当該ボルトが緩み
+T6	Argument 97 106	各ブラケットが脱落
+T7	Connective 90 91	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	
+T8	Argument 71 78	走行時の振動等
+T9	Connective 78 81	により
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 91 93	最悪
+T11	Connective 94 96	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T6	

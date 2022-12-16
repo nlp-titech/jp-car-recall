@@ -1,0 +1,33 @@
+T1	Argument 0 54	フルエア式ブレーキ装着車の前輪用ブレーキチャンバにおいて、気密保持用シールを押さえるシールガイドの強度が不足
+T2	Connective 58 60	ため
+T3	Argument 61 67	制動時の振動
+T4	Connective 67 70	により
+T5	Argument 70 72	破損
+T6	Connective 80 84	そのため
+T7	Argument 85 109	破損したシールガイドの破片がエアバルブに噛み込み
+T8	Connective 109 110	、
+T9	Argument 110 120	そのままの状態で使用
+T10	Connective 122 123	と
+T11	Argument 124 126	最悪
+T12	Connective 127 129	場合
+T13	Argument 134 148	エアバルブからエア洩れが発生
+T14	Connective 149 150	、
+T15	Argument 150 167	運転者の予測より制動距離が長くなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	CONDITION Arg1:T10 Arg2:T9	
+R9	CONDITION Arg1:T12 Arg2:T11	
+R10	RESULT Arg1:T12 Arg2:T13	
+R11	RESULT Arg1:T10 Arg2:T13	
+R12	RESULT Arg1:T8 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+T16	Argument 130 132	制動
+T17	Connective 132 133	時
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T13	

@@ -1,0 +1,29 @@
+T1	Argument 0 40	後軸緩衝装置のスタビライザ（車体の横揺れを減少させる装置）の形状及び固定に不適切
+T2	Argument 74 96	当該スタビライザの取付部とタイヤの内側が干渉
+T3	Argument 98 107	タイヤの側面が摩耗
+T4	Argument 110 112	損傷
+T5	Argument 126 136	当該タイヤがバースト
+T6	Connective 119 120	、
+T7	Connective 108 109	て
+T8	Connective 97 98	、
+T9	Connective 46 48	ため
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+R7	REASON Arg1:T6 Arg2:T4	
+R8	RESULT Arg1:T6 Arg2:T5	
+T10	Argument 49 63	そのままの状態で使用を続ける
+T11	Connective 63 64	と
+T12	Argument 65 71	急旋回をした
+T13	Connective 71 72	時
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	CONDITION Arg1:T13 Arg2:T12	
+R11	RESULT Arg1:T11 Arg2:T2	
+R12	RESULT Arg1:T13 Arg2:T2	
+T14	Argument 120 122	最悪
+T15	Connective 123 125	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T5	

@@ -1,0 +1,19 @@
+T1	Argument 4 70	タイミングベルト（カムシャフト駆動用ベルト）のアイドル・プーリ（遊びベルト車）及びテンション・プーリ（張力調整用ベルト車）に強度不足
+T2	Connective 76 78	ため
+T3	Argument 95 107	当該プーリから異音が発生
+T5	Argument 115 117	破損
+T6	Connective 118 119	て
+T7	Argument 119 125	原動機が停止
+R1	REASON Arg1:T2 Arg2:T1	
+R3	RESULT Arg1:T2 Arg2:T5	
+R4	REASON Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T6 Arg2:T7	
+T4	Argument 79 93	そのままの状態で使用を続ける
+T8	Connective 93 94	と
+T9	Argument 109 111	最悪
+T10	Connective 112 114	場合
+R7	RESULT Arg1:T10 Arg2:T5	
+R9	RESULT Arg1:T8 Arg2:T3	
+R8	CONDITION Arg1:T8 Arg2:T4	
+R6	CONDITION Arg1:T10 Arg2:T9	
+R2	RESULT Arg1:T2 Arg2:T3	

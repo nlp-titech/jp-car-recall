@@ -1,0 +1,13 @@
+T1	Argument 0 36	消音器の前側排気管において、フランジ溶接部の強度が不足しているものがある
+T2	Connective 36 38	ため
+T3	Argument 39 49	そのまま使用を続ける
+T4	Connective 49 50	と
+T5	Argument 51 56	亀裂が発生
+T6	Connective 58 59	、
+T7	Argument 59 70	騒音規制値を満足しない
+R1	RESULT Arg1:T6 Arg2:T7	
+R2	REASON Arg1:T6 Arg2:T5	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	CONDITION Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T2 Arg2:T5	
+R6	REASON Arg1:T2 Arg2:T1	

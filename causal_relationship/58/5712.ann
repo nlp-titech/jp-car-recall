@@ -1,0 +1,13 @@
+T1	Argument 0 29	トレーラ・ヒッチ・コントロールユニットのプログラムが不適切
+T2	Connective 30 32	ため
+T3	Argument 33 51	トレーラ連結時に非常点滅表示灯を使用
+T4	Connective 53 54	と
+T5	Argument 60 80	トレーラの非常点滅表示灯が作動しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 55 58	約２分
+T7	Connective 58 59	後
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T5	

@@ -1,0 +1,21 @@
+T1	Argument 1 46	刈取脱穀作業車の刈取作業時に使用するスイッチパネルにおいて、ボリューム部の防水構造が不適切
+T2	Connective 47 49	ため
+T3	Argument 50 55	長時間被水
+T4	Connective 57 58	と
+T5	Argument 58 72	スイッチパネル内部に水が浸入
+T6	Connective 80 84	そのため
+T7	Argument 85 109	スイッチパネル内部の基板上の電子部品や回路が腐食
+T8	Connective 110 111	、
+T12	Argument 111 131	前照灯、制動灯、後退灯、方向指示器の不灯
+T13	Argument 132 138	警音器の不鳴
+T14	Argument 140 152	エンジンの始動不良となる
+R1	REASON Arg1:T8 Arg2:T7	
+R2	RESULT Arg1:T8 Arg2:T12	
+R3	RESULT Arg1:T8 Arg2:T13	
+R4	RESULT Arg1:T8 Arg2:T14	
+R5	REASON Arg1:T2 Arg2:T1	
+R7	CONDITION Arg1:T4 Arg2:T3	
+R8	RESULT Arg1:T4 Arg2:T5	
+R9	REASON Arg1:T6 Arg2:T5	
+R10	RESULT Arg1:T6 Arg2:T7	
+R6	RESULT Arg1:T2 Arg2:T5	

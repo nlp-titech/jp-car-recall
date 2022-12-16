@@ -1,0 +1,34 @@
+T1	Argument 0 58	無段式自動変速機付き車の動力伝達装置において、変速機内部のベアリングリテーナープレートを固定するボルトの締付力が不足
+T2	Argument 86 93	当該ボルトが緩
+T3	Argument 94 99	異音が発生
+T4	Argument 107 115	当該ボルトが脱落
+T5	Argument 117 130	リダクションギヤに噛み込む
+T6	Argument 133 144	ミッションケースが破損
+T7	Argument 146 155	オイル漏れを起こす
+T8	Argument 161 168	走行不能になる
+T9	Connective 67 69	ため
+T11	Connective 116 117	、
+T12	Connective 145 146	て
+T13	Connective 157 160	により
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T2	
+T14	Connective 93 94	み
+R3	REASON Arg1:T14 Arg2:T2	
+R4	RESULT Arg1:T14 Arg2:T3	
+R7	REASON Arg1:T11 Arg2:T4	
+R8	RESULT Arg1:T11 Arg2:T5	
+R9	RESULT Arg1:T11 Arg2:T6	
+R10	REASON Arg1:T12 Arg2:T6	
+R11	RESULT Arg1:T12 Arg2:T7	
+R12	REASON Arg1:T13 Arg2:T7	
+R13	RESULT Arg1:T13 Arg2:T8	
+T15	Argument 70 84	そのままの状態で使用を続ける
+T16	Connective 84 85	と
+R15	CONDITION Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T2	
+T17	Argument 101 103	最悪
+T18	Connective 104 106	場合
+R17	CONDITION Arg1:T18 Arg2:T17	
+R18	RESULT Arg1:T18 Arg2:T4	
+R14	REASON Arg1:T12 Arg2:T5	
+R5	RESULT Arg1:T14 Arg2:T4	

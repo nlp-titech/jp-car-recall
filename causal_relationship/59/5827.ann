@@ -1,0 +1,13 @@
+T1	Argument 0 33	スライド脱着式のヘッドライトにおいて、ヘッドライト固定構造が不適切
+T2	Connective 34 36	ため
+T3	Argument 37 48	固定状態が確認しにくく
+T4	Connective 48 49	、
+T5	Argument 49 69	完全に固定されていない状態で使用を続ける
+T6	Connective 69 70	と
+T7	Argument 71 80	ヘッドライトが脱落
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

@@ -1,0 +1,25 @@
+T1	Argument 0 56	フロントハブにおいて、ホイールナットの過大締付けトルクや過積載等の想定を超える使用環境に対する余裕が十分ではない
+T2	Connective 56 58	ため
+T3	Argument 59 75	ハブのフランジ隅部への応力が過大
+T4	Connective 78 79	、
+T5	Argument 79 90	当該部に微小亀裂が発生
+T7	Connective 98 102	そのため
+T8	Argument 103 113	そのまま使用を続ける
+T9	Connective 113 114	と
+T10	Argument 114 119	亀裂が進行
+T11	Connective 120 121	、
+T12	Argument 121 123	最悪
+T13	Connective 124 126	場合
+T14	Argument 127 129	破断
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T10	
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T10	
+R9	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T14	
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T14	

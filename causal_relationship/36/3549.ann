@@ -1,0 +1,29 @@
+T1	Argument 39 67	ドライブピニオンギヤの軸受を保持するケージの加工が不適切
+T2	Connective 68 70	ため
+T3	Argument 71 86	ケージとキャリアの嵌合部にガタ
+T4	Connective 89 90	、
+T5	Argument 90 105	ドライブピニオンギヤの軸がずれ
+T6	Connective 105 106	て
+T7	Argument 107 123	リングギヤとの噛み合いが浅くなる
+T8	Connective 124 128	そのため
+T9	Argument 129 143	そのままの状態で使用を続ける
+T10	Connective 143 144	と
+T11	Argument 145 153	リングギヤが欠損
+T12	Connective 154 155	、
+T13	Argument 155 157	最悪
+T14	Connective 158 160	場合
+T15	Argument 161 169	走行できなくなる
+R1	RESULT Arg1:T14 Arg2:T15	
+R2	CONDITION Arg1:T14 Arg2:T13	
+R3	RESULT Arg1:T12 Arg2:T15	
+R4	REASON Arg1:T12 Arg2:T11	
+R5	RESULT Arg1:T10 Arg2:T11	
+R6	CONDITION Arg1:T10 Arg2:T9	
+R7	RESULT Arg1:T8 Arg2:T11	
+R8	REASON Arg1:T8 Arg2:T7	
+R9	RESULT Arg1:T6 Arg2:T7	
+R10	REASON Arg1:T6 Arg2:T5	
+R11	RESULT Arg1:T4 Arg2:T5	
+R12	REASON Arg1:T4 Arg2:T3	
+R13	RESULT Arg1:T2 Arg2:T3	
+R14	REASON Arg1:T2 Arg2:T1	

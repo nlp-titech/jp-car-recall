@@ -1,0 +1,21 @@
+T1	Argument 0 56	運転者席に着座していない状態での走行・荷役作業を禁止する、離席時走行・荷役ロック機構のハーネスの取り回しが不適切
+T2	Connective 57 59	ため
+T3	Argument 60 79	雨水等が当該ハーネスのコネクタ部に浸入
+T4	Connective 87 91	そのため
+T5	Argument 108 112	通電不良
+T6	Connective 112 115	により
+T7	Argument 115 132	離席時走行・荷役ロック機構が誤作動
+T8	Connective 133 134	、
+T9	Argument 134 141	走行不能になる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 92 106	そのままの状態で使用を続ける
+T11	Connective 106 107	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	

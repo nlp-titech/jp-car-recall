@@ -1,0 +1,31 @@
+T1	Argument 0 47	ラジエタに備えるラジエタファンの風を整流するファンシュラウドの構成部品の溶接部分に強度が不十分
+T2	Connective 54 58	そのため
+T3	Argument 75 84	当該溶接部分が破損
+T5	Argument 114 141	ファンシュラウドから外れた構成部品によりラジエタが破損
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T6	Argument 59 73	そのままの状態で使用を続ける
+T7	Connective 73 74	と
+R3	CONDITION Arg1:T7 Arg2:T6	
+R5	RESULT Arg1:T7 Arg2:T3	
+T8	Connective 84 85	し
+T9	Argument 85 100	構成部品とラジエタファンが干渉
+R6	REASON Arg1:T8 Arg2:T3	
+R7	RESULT Arg1:T8 Arg2:T9	
+T10	Connective 100 101	し
+T11	Argument 101 106	異音が発生
+R8	REASON Arg1:T10 Arg2:T9	
+R9	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 108 110	最悪
+T13	Connective 111 113	場合
+R10	CONDITION Arg1:T13 Arg2:T12	
+R11	RESULT Arg1:T13 Arg2:T5	
+T16	Connective 141 142	し
+T17	Argument 142 153	著しい冷却水漏れが起き
+T18	Connective 153 154	て
+T19	Argument 154 161	走行困難になる
+R14	REASON Arg1:T16 Arg2:T5	
+R15	RESULT Arg1:T16 Arg2:T17	
+R16	REASON Arg1:T18 Arg2:T17	
+R17	RESULT Arg1:T18 Arg2:T19	
+R4	RESULT Arg1:T10 Arg2:T5	

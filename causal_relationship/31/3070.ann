@@ -1,0 +1,5 @@
+T1	Argument 0 23	大型トラクタにおいて、異品の燃料噴射装置を装着
+T2	Connective 31 35	そのため
+T3	Argument 36 50	排出ガスの規制値を満足しない
+R1	RESULT Arg1:T2 Arg2:T3	
+R2	REASON Arg1:T2 Arg2:T1	

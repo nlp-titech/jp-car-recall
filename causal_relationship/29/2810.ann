@@ -1,0 +1,33 @@
+T1	Argument 0 35	大型路線バスにおいて、クラッチブースタのボールジョイントの耐久性が不足
+T2	Connective 39 41	ため
+T3	Argument 56 74	ボールジョイントケース部に磨耗が発生
+T4	Argument 98 107	ケースの肉厚が減少
+T5	Connective 108 109	て
+T6	Argument 109 114	強度が低下
+T7	Connective 135 136	、
+T8	Argument 142 153	クラッチ操作不能となる
+R1	RESULT Arg1:T7 Arg2:T8	
+R3	RESULT Arg1:T5 Arg2:T6	
+R4	REASON Arg1:T5 Arg2:T4	
+T9	Connective 81 82	。
+R5	RESULT Arg1:T9 Arg2:T4	
+R6	REASON Arg1:T9 Arg2:T3	
+R7	RESULT Arg1:T2 Arg2:T3	
+R8	REASON Arg1:T2 Arg2:T1	
+T10	Argument 82 96	そのままの状態で使用を続ける
+T11	Connective 96 97	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T4	
+T12	Connective 118 121	により
+T13	Argument 121 134	当該ボールジョイントが破損
+R2	REASON Arg1:T12 Arg2:T6	
+R11	RESULT Arg1:T12 Arg2:T13	
+T14	Argument 136 138	最悪
+T15	Connective 139 141	場合
+R12	REASON Arg1:T7 Arg2:T13	
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T8	
+T16	Argument 42 53	クラッチ操作の繰り返し
+T17	Connective 53 56	により
+R15	REASON Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T3	

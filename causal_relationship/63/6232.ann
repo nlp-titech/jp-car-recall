@@ -1,0 +1,17 @@
+T1	Argument 8 14	警音器を作動
+T2	Connective 17 18	際
+T3	Argument 19 26	逆起電力が発生
+T4	Connective 27 28	、
+T5	Argument 28 42	カムポジションセンサーが損傷
+T6	Connective 50 54	そのため
+T7	Argument 55 68	点火信号が正しく出力されず
+T8	Connective 68 69	、
+T9	Argument 69 80	エンジンが始動できない
+R1	RESULT Arg1:T8 Arg2:T9	
+R2	REASON Arg1:T8 Arg2:T7	
+R3	RESULT Arg1:T6 Arg2:T7	
+R4	REASON Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T5	
+R6	REASON Arg1:T4 Arg2:T3	
+R7	RESULT Arg1:T2 Arg2:T3	
+R8	CONDITION Arg1:T2 Arg2:T1	

@@ -1,0 +1,25 @@
+T1	Argument 2 33	前照灯において、電球用電気配線及びメインハーネスの配索が不適切
+T2	Connective 34 36	ため
+T3	Argument 37 58	電球の端子とソケットの端子が接触不良となる
+T4	Connective 64 68	そのため
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 69 83	そのままの状態で使用を続ける
+T6	Connective 99 100	て
+T7	Argument 100 108	端子の温度が上昇
+T8	Connective 112 115	により
+T9	Argument 115 127	当該端子や電気配線が損傷
+T10	Connective 128 129	、
+R4	RESULT Arg1:T4 Arg2:T13	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+T11	Argument 129 158	すれ違い用前照灯または走行用前照灯若しくは両方が不灯となる
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Connective 83 84	と
+T13	Argument 85 98	当該端子間の電気抵抗が増大
+R5	CONDITION Arg1:T12 Arg2:T5	
+R11	RESULT Arg1:T12 Arg2:T13	
+R12	REASON Arg1:T6 Arg2:T13	

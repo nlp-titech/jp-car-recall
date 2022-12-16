@@ -1,0 +1,25 @@
+T1	Argument 5 55	前輪用制動力制御装置（アンチロックブレーキシステム）の電気配線と摩耗警報の電気配線の取り回しが不適切
+T4	Argument 123 126	液漏れ
+T3	Argument 110 122	ブレーキホースに穴があき
+T5	Connective 56 58	ため
+T6	Connective 122 123	、
+R1	REASON Arg1:T5 Arg2:T1	
+R3	REASON Arg1:T6 Arg2:T3	
+R4	RESULT Arg1:T6 Arg2:T4	
+T7	Connective 87 88	、
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 88 102	そのままの状態で使用を続ける
+T9	Connective 102 103	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 104 106	最悪
+T11	Connective 107 109	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	
+T2	Argument 59 76	当該電気配線がブレーキホースに干渉
+T12	Connective 77 78	て
+T13	Argument 78 80	摩耗
+R2	REASON Arg1:T12 Arg2:T2	
+R5	RESULT Arg1:T12 Arg2:T13	
+R11	RESULT Arg1:T5 Arg2:T2	
+R12	REASON Arg1:T7 Arg2:T13	

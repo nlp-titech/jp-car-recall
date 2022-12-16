@@ -1,0 +1,13 @@
+T1	Argument 0 30	車両に備えられている電気配線において、設計時の図面指示を誤っ
+T2	Connective 31 33	ため
+T3	Argument 34 55	当該配線の一部に保護被覆が装着されていない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 56 60	このため
+T5	Argument 61 74	使用過程において配線が損傷
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 75 76	、
+T7	Argument 76 100	車両前方に備えられている保安灯火が点灯しなくなる
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

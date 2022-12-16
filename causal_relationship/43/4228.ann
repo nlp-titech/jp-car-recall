@@ -1,0 +1,33 @@
+T1	Argument 17 29	保持機構のばね力が不適切
+T2	Connective 30 32	ため
+T3	Argument 81 88	つり合いが外れ
+T4	Argument 89 97	当該レバーが解除
+T5	Connective 88 89	、
+T6	Connective 106 110	そのため
+T7	Argument 111 119	駐車制動力が低下
+T8	Connective 120 121	、
+T9	Argument 127 139	駐車状態の車両が動き出す
+R1	RESULT Arg1:T2 Arg2:T3	
+R2	REASON Arg1:T5 Arg2:T3	
+R3	RESULT Arg1:T5 Arg2:T4	
+R4	REASON Arg1:T6 Arg2:T4	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	REASON Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 121 123	最悪
+T11	Connective 124 126	場合
+R8	CONDITION Arg1:T11 Arg2:T10	
+R9	RESULT Arg1:T11 Arg2:T9	
+T12	Argument 70 77	振動等が加わっ
+T13	Connective 78 80	場合
+R10	CONDITION Arg1:T13 Arg2:T12	
+R11	RESULT Arg1:T13 Arg2:T3	
+T16	Argument 44 65	保持用ギヤの歯先同士がつり合った状態で保持
+T17	Connective 68 69	と
+T18	Argument 33 42	レバーを引き上げた
+T19	Connective 42 44	際に
+R12	RESULT Arg1:T19 Arg2:T16	
+R13	CONDITION Arg1:T19 Arg2:T18	
+R14	CONDITION Arg1:T17 Arg2:T16	
+R15	RESULT Arg1:T17 Arg2:T3	
+R16	REASON Arg1:T2 Arg2:T1	

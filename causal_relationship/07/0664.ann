@@ -1,0 +1,31 @@
+T1	Argument 0 37	バッテリー位置を変更した塵芥車において、バッテリー配線の取りまわしが不適切
+T2	Argument 41 49	エンジンの振動等
+T3	Argument 53 73	プラス線がアース線もしくは車枠部品と干渉
+T4	Argument 86 100	そのままの状態で使用を続ける
+T5	Argument 102 115	当該プラス配線の被覆が損傷
+T6	Argument 116 118	短絡
+T7	Argument 119 125	発煙が起こり
+T8	Argument 126 128	最悪
+T9	Argument 132 137	火災に至る
+T10	Connective 38 40	ため
+T11	Connective 49 52	により
+T12	Connective 81 85	このため
+T13	Connective 100 101	と
+T14	Connective 115 116	し
+T15	Connective 118 119	、
+T17	Connective 129 131	場合
+R1	REASON Arg1:T10 Arg2:T1	
+R2	RESULT Arg1:T10 Arg2:T3	
+R3	REASON Arg1:T11 Arg2:T2	
+R4	RESULT Arg1:T11 Arg2:T3	
+R5	REASON Arg1:T12 Arg2:T3	
+R6	RESULT Arg1:T12 Arg2:T5	
+R7	CONDITION Arg1:T13 Arg2:T4	
+R8	RESULT Arg1:T13 Arg2:T5	
+R9	REASON Arg1:T14 Arg2:T5	
+R10	RESULT Arg1:T14 Arg2:T6	
+R11	REASON Arg1:T15 Arg2:T6	
+R12	RESULT Arg1:T15 Arg2:T7	
+R15	CONDITION Arg1:T17 Arg2:T8	
+R16	RESULT Arg1:T17 Arg2:T9	
+R13	RESULT Arg1:T15 Arg2:T9	

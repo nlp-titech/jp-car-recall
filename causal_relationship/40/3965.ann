@@ -1,0 +1,33 @@
+T1	Argument 21 34	バッテリ配線の配索が不適切
+T2	Argument 38 51	バッテリ固定用ボルトと接触
+T3	Argument 64 70	走行時の振動
+T4	Argument 74 79	配線が損傷
+T5	Argument 81 83	短絡
+T6	Argument 85 100	作業用エンジンが始動不能となり
+T7	Argument 101 103	最悪
+T8	Argument 107 112	配線が焼損
+T9	Argument 114 119	火災となる
+T10	Connective 35 37	ため
+T11	Connective 59 63	そのため
+T12	Connective 70 74	によって
+T13	Connective 80 81	て
+T14	Connective 84 85	、
+T15	Connective 100 101	、
+T16	Connective 104 106	場合
+T17	Connective 113 114	て
+R1	REASON Arg1:T10 Arg2:T1	
+R2	RESULT Arg1:T10 Arg2:T2	
+R3	REASON Arg1:T11 Arg2:T2	
+R4	RESULT Arg1:T11 Arg2:T4	
+R5	REASON Arg1:T12 Arg2:T3	
+R6	RESULT Arg1:T12 Arg2:T4	
+R7	REASON Arg1:T13 Arg2:T4	
+R8	RESULT Arg1:T13 Arg2:T5	
+R9	REASON Arg1:T14 Arg2:T5	
+R10	RESULT Arg1:T14 Arg2:T6	
+R11	REASON Arg1:T15 Arg2:T6	
+R12	RESULT Arg1:T15 Arg2:T8	
+R13	CONDITION Arg1:T16 Arg2:T7	
+R14	RESULT Arg1:T16 Arg2:T8	
+R15	REASON Arg1:T17 Arg2:T8	
+R16	RESULT Arg1:T17 Arg2:T9	

@@ -1,0 +1,43 @@
+T1	Argument 0 50	ホイール・クレーンの第３及び第４車軸ステアリング機構において、ステアリングストッパ位置の調整が不適切
+T2	Argument 54 64	ステアリング最大操舵
+T4	Argument 66 78	走行時のタイヤからの外力
+T5	Argument 81 89	第４車軸がたわみ
+T6	Argument 90 110	上側トルクロッド取付けボルトに緩みが生じ
+T7	Argument 111 113	折損
+T8	Argument 126 141	上側トルクロッドが車軸から外れ
+T9	Argument 142 147	異音が発生
+T10	Argument 149 163	そのままの状態で使用を続ける
+T11	Argument 165 183	サスペンションシリンダ取付け部が損傷
+T12	Argument 186 188	最悪
+T13	Argument 192 199	走行できなくな
+T14	Connective 51 53	ため
+T15	Connective 64 66	時に
+T17	Connective 78 81	により
+T18	Connective 89 90	、
+T19	Connective 110 111	、
+T20	Connective 121 125	そのため
+T21	Connective 141 142	て
+T23	Connective 163 164	と
+T24	Connective 184 185	て
+T25	Connective 189 191	場合
+R1	REASON Arg1:T14 Arg2:T1	
+R2	RESULT Arg1:T14 Arg2:T5	
+R3	CONDITION Arg1:T15 Arg2:T2	
+R7	REASON Arg1:T17 Arg2:T4	
+R8	RESULT Arg1:T17 Arg2:T5	
+R9	REASON Arg1:T18 Arg2:T5	
+R10	RESULT Arg1:T18 Arg2:T6	
+R11	REASON Arg1:T19 Arg2:T6	
+R12	RESULT Arg1:T19 Arg2:T7	
+R13	REASON Arg1:T20 Arg2:T7	
+R14	RESULT Arg1:T20 Arg2:T8	
+R15	REASON Arg1:T21 Arg2:T8	
+R16	RESULT Arg1:T21 Arg2:T9	
+R19	CONDITION Arg1:T23 Arg2:T10	
+R20	RESULT Arg1:T23 Arg2:T11	
+R21	REASON Arg1:T24 Arg2:T11	
+R22	RESULT Arg1:T24 Arg2:T13	
+R23	CONDITION Arg1:T25 Arg2:T12	
+R24	RESULT Arg1:T25 Arg2:T13	
+R4	RESULT Arg1:T15 Arg2:T5	
+R5	RESULT Arg1:T21 Arg2:T11	

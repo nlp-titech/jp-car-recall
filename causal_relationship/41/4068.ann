@@ -1,0 +1,25 @@
+T2	Argument 53 60	エアバッグ展開
+T3	Argument 62 78	エアバッグ組付けブラケットに亀裂
+T4	Argument 103 116	エアバッグが適正に展開せず
+T5	Argument 117 119	最悪
+T6	Argument 123 132	乗員保護性能が低下
+T7	Connective 50 52	ため
+T8	Connective 60 62	時に
+T9	Connective 98 102	そのため
+T10	Connective 116 117	、
+T11	Connective 120 122	場合
+R2	RESULT Arg1:T7 Arg2:T3	
+R3	CONDITION Arg1:T8 Arg2:T2	
+R4	REASON Arg1:T9 Arg2:T3	
+R5	RESULT Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T6	
+R9	CONDITION Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	
+T12	Argument 79 92	エアバッグ排気孔部が破れる
+R11	RESULT Arg1:T8 Arg2:T12	
+R12	RESULT Arg1:T7 Arg2:T12	
+R13	REASON Arg1:T9 Arg2:T12	
+T1	Argument 15 50	（膨張装置）を対策品に交換した車両において、エアバッグの排気孔が小さい
+R1	REASON Arg1:T7 Arg2:T1	

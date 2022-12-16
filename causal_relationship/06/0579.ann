@@ -1,0 +1,23 @@
+T1	Argument 0 33	走行装置において、後輪軸受の一部に潤滑用グリースが充填されていない
+T2	Argument 45 52	当該軸受が発熱
+T3	Argument 54 59	異音が発生
+T4	Argument 77 82	軸受が破損
+T5	Argument 90 97	走行不能に至る
+T6	Connective 38 40	ため
+T7	Connective 53 54	て
+T9	Connective 83 84	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+T12	Argument 61 75	そのままの状態で使用を続ける
+T13	Connective 75 76	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T4	
+T14	Argument 84 86	最悪
+T15	Connective 87 89	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T5	
+R5	RESULT Arg1:T7 Arg2:T4	

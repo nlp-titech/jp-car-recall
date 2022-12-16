@@ -1,0 +1,18 @@
+T1	Argument 16 34	ステアリングコラムの電気回路が不適切
+T2	Connective 35 37	ため
+T3	Argument 53 70	かじ取り装置の施錠装置が解除しない
+T4	Connective 75 76	、
+T5	Argument 91 102	かじ取り操作ができない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 76 86	そのままの状態で走行
+T7	Connective 88 90	場合
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T5	
+#1	AnnotatorNotes T3	「…作動させても…解除しない」譲歩；
+T8	Argument 38 47	始動スイッチを作動
+T9	Connective 50 52	とき
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	

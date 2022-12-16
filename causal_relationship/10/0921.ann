@@ -1,0 +1,19 @@
+T1	Argument 0 51	スプリング式駐車ブレーキ装着車において、ブレーキシューを拡張するウェッジ先端部のローラの熱処理が不適切
+T2	Argument 56 75	当該ウェッジの構成部品の組付けが不適切
+T3	Connective 76 78	ため
+T4	Argument 79 86	ウエッジが破損
+T5	Argument 89 91	最悪
+T6	Connective 92 94	場合
+T7	Connective 87 88	て
+T8	Argument 95 109	駐車ブレーキが作動不良となり
+T9	Connective 109 110	、
+T10	Argument 110 118	駐車制動力が低下
+R1	REASON Arg1:T3 Arg2:T1	
+R2	REASON Arg1:T3 Arg2:T2	
+R3	RESULT Arg1:T3 Arg2:T4	
+R4	REASON Arg1:T7 Arg2:T4	
+R5	RESULT Arg1:T7 Arg2:T8	
+R6	CONDITION Arg1:T6 Arg2:T5	
+R7	RESULT Arg1:T6 Arg2:T8	
+R8	REASON Arg1:T9 Arg2:T8	
+R9	RESULT Arg1:T9 Arg2:T10	

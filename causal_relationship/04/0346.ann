@@ -1,0 +1,21 @@
+T1	Argument 0 31	自動変速機用シフトレバー内部の切換スイッチの組付時の接着が不良
+T2	Argument 51 60	当該スイッチが外れ
+T3	Argument 61 71	シフトができなくなり
+T4	Argument 78 86	走行できなくなる
+T5	Connective 32 34	ため
+T6	Connective 60 61	、
+T7	Connective 71 72	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 35 49	そのままの状態で使用を続ける
+T9	Connective 49 50	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T2	
+T10	Argument 72 74	最悪
+T11	Connective 75 77	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T4	

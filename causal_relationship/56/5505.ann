@@ -1,0 +1,25 @@
+T1	Argument 0 27	エンジン・ルーム内の後輪ブレーキ配管の固定方法が不適切
+T2	Argument 31 66	当該配管がステアリング・シャフトのロア・ユニバーサル・ジョイントと接触
+T3	Argument 79 89	そのまま使用を続ける
+T4	Argument 90 97	当該配管が損傷
+T5	Argument 99 111	ブレーキ・フルードが漏れ
+T6	Argument 112 114	最悪
+T7	Argument 118 131	後輪ブレーキが効かなくなる
+T8	Connective 28 30	ため
+T9	Connective 74 78	そのため
+T10	Connective 89 90	と
+T11	Connective 98 99	、
+T12	Connective 111 112	、
+T13	Connective 115 117	場合
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T2	
+R3	REASON Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T4	
+R5	CONDITION Arg1:T10 Arg2:T3	
+R6	RESULT Arg1:T10 Arg2:T4	
+R7	REASON Arg1:T11 Arg2:T4	
+R8	RESULT Arg1:T11 Arg2:T5	
+R9	REASON Arg1:T12 Arg2:T5	
+R10	RESULT Arg1:T12 Arg2:T7	
+R11	CONDITION Arg1:T13 Arg2:T6	
+R12	RESULT Arg1:T13 Arg2:T7	

@@ -1,0 +1,13 @@
+T1	Argument 15 27	方向指示器の選定が不適切
+T2	Connective 28 30	ため
+T3	Argument 31 39	方向指示器が故障
+T4	Connective 41 43	場合
+T5	Argument 45 67	フラッシャリレー内部の異常検出回路が機能せず
+T6	Connective 67 68	、
+T7	Argument 68 87	運転者席の作動状態表示装置が作動しない
+R1	RESULT Arg1:T6 Arg2:T7	
+R2	REASON Arg1:T6 Arg2:T5	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	CONDITION Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T2 Arg2:T3	
+R6	REASON Arg1:T2 Arg2:T1	

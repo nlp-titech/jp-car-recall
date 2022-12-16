@@ -1,0 +1,9 @@
+T1	Argument 2 45	運転者席の座席ベルトの非装着時警報装置において、計器盤の警報音量設定プログラムが不適切
+T2	Argument 49 56	スピーカが損傷
+T3	Argument 58 69	警報音が発生しなくなる
+T4	Connective 46 48	ため
+T5	Connective 57 58	、
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	

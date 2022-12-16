@@ -1,0 +1,25 @@
+T1	Argument 0 20	ハイマウントストップランプの構造が不適切
+T3	Argument 24 43	温度変化による膨張・収縮を吸収しきれず
+T4	Argument 44 59	ランプの溶着部分に亀裂が生じる
+T5	Argument 70 84	そのままの状態で使用を続ける
+T6	Argument 86 98	ランプ内部に雨水等が浸入
+T7	Argument 100 102	最悪
+T8	Argument 106 119	当該ランプが点灯しなくなる
+T9	Connective 21 23	ため
+T11	Connective 43 44	、
+T12	Connective 65 69	そのため
+T13	Connective 84 85	と
+T14	Connective 99 100	、
+T15	Connective 103 105	場合
+R1	REASON Arg1:T9 Arg2:T1	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+R7	REASON Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T6	
+R9	CONDITION Arg1:T13 Arg2:T5	
+R10	RESULT Arg1:T13 Arg2:T6	
+R11	REASON Arg1:T14 Arg2:T6	
+R12	RESULT Arg1:T14 Arg2:T8	
+R13	CONDITION Arg1:T15 Arg2:T7	
+R14	RESULT Arg1:T15 Arg2:T8	
+R2	RESULT Arg1:T9 Arg2:T3	

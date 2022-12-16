@@ -1,0 +1,13 @@
+T1	Argument 0 55	後部座席用の３点式座席ベルトのバックル取付側ベルトおよび２点式座席ベルトをシートフレームに固定する工程が不適切
+T2	Connective 56 58	ため
+T3	Argument 59 75	固定ナットの取付けがされていない
+T4	Connective 81 85	そのため
+T5	Argument 86 94	当該ベルトが外れ
+T6	Connective 94 95	、
+T7	Argument 95 106	乗員を拘束できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

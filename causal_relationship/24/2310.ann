@@ -1,0 +1,25 @@
+T1	Argument 0 25	プロペラシャフトのスプラインヨークの熱処理が不適切
+T2	Argument 29 34	強度が不足
+T3	Argument 61 71	当該部位に亀裂が生じ
+T4	Argument 78 89	プロペラシャフトが破損
+T5	Argument 91 98	走行不能となる
+T6	Connective 26 28	ため
+T7	Connective 44 48	そのため
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+T8	Connective 71 72	、
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+T9	Connective 90 91	、
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 49 59	そのまま使用を続ける
+T11	Connective 59 60	と
+T12	Argument 72 74	最悪
+T13	Connective 75 77	場合
+R9	CONDITION Arg1:T13 Arg2:T12	
+R10	RESULT Arg1:T13 Arg2:T4	
+R11	CONDITION Arg1:T11 Arg2:T10	
+R12	RESULT Arg1:T11 Arg2:T3	

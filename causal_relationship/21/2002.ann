@@ -1,0 +1,21 @@
+T1	Connective 67 71	そのため
+T2	Argument 0 60	粉粒体運搬セミトレーラのブレーキにおいて、ＡＢＳモジュレータからエアチャンバーに接続するアダプタの取付けを逆向きに組付け
+R1	REASON Arg1:T1 Arg2:T2	
+T3	Argument 102 108	制動力が低下
+R2	RESULT Arg1:T1 Arg2:T6	
+T4	Argument 78 83	車両振動等
+T5	Connective 83 86	により
+T6	Argument 86 96	当該アダプタがゆるみ
+R3	REASON Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T6	
+T7	Connective 96 97	、
+R5	RESULT Arg1:T7 Arg2:T8	
+R6	REASON Arg1:T7 Arg2:T6	
+T8	Argument 97 102	エアが漏れ
+T9	Connective 101 102	れ
+R7	REASON Arg1:T9 Arg2:T8	
+T10	Argument 72 74	最悪
+T11	Connective 75 77	場合
+R8	CONDITION Arg1:T11 Arg2:T10	
+R9	RESULT Arg1:T11 Arg2:T6	
+R10	RESULT Arg1:T9 Arg2:T3	

@@ -1,0 +1,11 @@
+T1	Argument 0 37	エンジンのクランク角センサの製造工程において、コイルの巻き付け作業が不適切
+T2	Connective 38 40	ため
+T3	Argument 41 54	使用過程で当該コイルが断線
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 62 66	そのため
+T5	Argument 67 78	走行中にエンジンが停止
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 86 99	エンジンが始動できなくなる
+R5	RESULT Arg1:T4 Arg2:T6	

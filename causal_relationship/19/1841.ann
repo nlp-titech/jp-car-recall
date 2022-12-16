@@ -1,0 +1,25 @@
+T1	Argument 0 33	エンジン制御コンピュータのアイドリング回転数制御プログラムが不適切
+T2	Connective 34 36	ため
+T3	Argument 70 97	アクセルペダルを戻してもエンジン回転が下がりにくくなる
+T4	Connective 103 107	そのため
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+T7	Argument 37 65	高外気温下でエアコンを作動させ、一定車速で高速走行を継続
+T8	Connective 67 69	場合
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T3	
+T9	Argument 108 127	ブレーキ倍力装置に供給される負圧が不足
+T10	Connective 128 129	、
+T11	Argument 135 148	ブレーキ操作を繰り返し行う
+T12	Connective 148 149	と
+T13	Argument 150 156	制動力が低下
+R8	RESULT Arg1:T4 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+T14	Argument 129 131	最悪
+T15	Connective 132 134	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T11	

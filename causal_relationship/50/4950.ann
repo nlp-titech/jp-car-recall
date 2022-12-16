@@ -1,0 +1,23 @@
+T1	Argument 8 40	カムシャフトを駆動するタイミングベルトの寸法が不適切なものがある
+T2	Connective 40 42	ため
+T3	Argument 43 68	当該ベルトが原動機及びタイミングベルトカバーと干渉
+T4	Connective 69 70	て
+T5	Argument 70 75	異音が発生
+T6	Argument 93 103	当該ベルトの山が損傷
+T7	Connective 104 105	、
+T8	Argument 111 128	原動機が停止して再始動出来なくなる
+R1	REASON Arg1:T7 Arg2:T6	
+R2	RESULT Arg1:T7 Arg2:T8	
+T9	Argument 105 107	最悪
+T10	Connective 108 110	場合
+R3	CONDITION Arg1:T10 Arg2:T9	
+R4	RESULT Arg1:T10 Arg2:T8	
+R5	REASON Arg1:T2 Arg2:T1	
+R6	RESULT Arg1:T2 Arg2:T3	
+R7	REASON Arg1:T4 Arg2:T3	
+R8	RESULT Arg1:T4 Arg2:T5	
+T11	Argument 77 91	そのままの状態で使用を続ける
+T12	Connective 91 92	と
+R9	CONDITION Arg1:T12 Arg2:T11	
+R10	RESULT Arg1:T12 Arg2:T6	
+R11	RESULT Arg1:T4 Arg2:T6	

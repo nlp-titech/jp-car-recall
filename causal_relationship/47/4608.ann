@@ -1,0 +1,31 @@
+T1	Argument 0 26	警音器において、配線コネクター内部のシール材に不適切
+T2	Connective 32 33	、
+T3	Argument 49 60	雨天走行時等の水が浸入
+T4	Connective 61 62	、
+T5	Argument 62 69	内部基板が断線
+T6	Connective 70 71	て
+T7	Argument 72 84	当該警音器が鳴らなくなり
+T8	Argument 87 94	当該基板が短絡
+T9	Connective 95 96	て
+T10	Argument 96 106	当該警音器が鳴り続け
+T11	Argument 113 119	警音器が焼損
+T12	Connective 106 107	、
+R1	REASON Arg1:T12 Arg2:T10	
+R2	RESULT Arg1:T12 Arg2:T11	
+T13	Argument 107 109	最悪
+T14	Connective 110 112	場合
+R3	CONDITION Arg1:T14 Arg2:T13	
+R4	RESULT Arg1:T14 Arg2:T11	
+R5	REASON Arg1:T9 Arg2:T8	
+R6	RESULT Arg1:T9 Arg2:T10	
+R7	RESULT Arg1:T4 Arg2:T8	
+R8	RESULT Arg1:T4 Arg2:T5	
+R9	REASON Arg1:T6 Arg2:T5	
+R10	RESULT Arg1:T6 Arg2:T7	
+R11	REASON Arg1:T4 Arg2:T3	
+R12	RESULT Arg1:T2 Arg2:T3	
+R13	REASON Arg1:T2 Arg2:T1	
+T15	Argument 33 47	そのままの状態で使用を続ける
+T16	Connective 47 48	と
+R14	CONDITION Arg1:T16 Arg2:T15	
+R15	RESULT Arg1:T16 Arg2:T3	

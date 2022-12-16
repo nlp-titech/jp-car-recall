@@ -1,0 +1,9 @@
+T1	Argument 1 44	ＥＴＡＣＳＥＣＵ（方向指示器、非常点滅表示灯などを制御するＥＣＵ）のプログラムが不適切
+T2	Connective 45 47	ため
+T3	Argument 48 102	エレクトリックテールゲート作動時のハザードアンサーバック（非常点滅表示灯点滅による作動受付確認）が作動しない
+T4	Connective 108 112	このとき
+T5	Argument 113 142	方向指示器レバーの操作をおこなっても方向指示器が点灯しない
+R1	RESULT Arg1:T4 Arg2:T5	
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T3	
+R4	REASON Arg1:T2 Arg2:T1	

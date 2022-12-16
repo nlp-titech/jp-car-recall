@@ -1,0 +1,24 @@
+T1	Argument 0 55	エンジンコントロールユニット（ＥＣＵ）に接続するコネクタ部の製造工程において、コネクタ内部の防水シールを傷つけ
+T2	Connective 56 58	ため
+T3	Argument 65 76	コネクタ内部に水が浸水
+T4	Connective 84 88	そのため
+T5	Argument 89 101	端子間にリーク電流が生じ
+T6	Connective 110 111	、
+T7	Argument 117 135	エンジンが停止して再始動できなくなる
+T8	Argument 140 152	速度計が誤った表示をする
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T8	
+T11	Connective 101 102	て
+T12	Argument 102 109	ＥＣＵが誤作動
+R10	REASON Arg1:T11 Arg2:T5	
+R11	RESULT Arg1:T11 Arg2:T12	
+R5	REASON Arg1:T6 Arg2:T12	
+T13	Argument 111 113	最悪
+T14	Connective 114 116	場合
+R12	CONDITION Arg1:T14 Arg2:T13	
+R13	RESULT Arg1:T14 Arg2:T7	
+R14	RESULT Arg1:T14 Arg2:T8	

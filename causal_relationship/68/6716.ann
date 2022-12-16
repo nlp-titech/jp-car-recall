@@ -1,0 +1,13 @@
+T1	Argument 19 71	車載式故障診断装置（ＯＢＤ）において、燃料システムコントロールユニットの信号を認識するプログラムが不適切
+T2	Connective 72 74	ため
+T3	Argument 75 106	燃料圧力センサ、燃料温度センサ、または、燃料ポンプに異常が生じ
+T4	Connective 107 109	場合
+T5	Argument 110 137	メーターパネル内のエンジン警告灯（ＭＩＬ）が点灯しない
+T6	Connective 138 142	そのため
+T7	Argument 143 160	保安基準第３１条の基準に適合しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

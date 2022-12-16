@@ -1,0 +1,13 @@
+T1	Argument 0 37	特定の助手席エアバッグのインフレータ（膨張装置）において、製造管理が不適切
+T2	Connective 38 40	ため
+T3	Argument 41 58	点火剤が設計通りに調合されていない
+T4	Connective 64 68	そのため
+T5	Argument 69 86	衝突時に助手席エアバッグが展開せず
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 86 87	、
+T7	Argument 87 98	乗員が過度の傷害を負う
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

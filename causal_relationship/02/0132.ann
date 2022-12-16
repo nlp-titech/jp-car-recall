@@ -1,0 +1,17 @@
+T2	Argument 54 67	当該コネクタ部に水等が侵入
+T3	Argument 71 82	回転速度の検出が不安定
+T5	Connective 51 53	ため
+T6	Connective 69 71	際に
+T7	Connective 85 86	、
+R2	RESULT Arg1:T5 Arg2:T3	
+R3	CONDITION Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+T1	Argument 0 50	電子制御式燃料噴射方式の原動機において、クランクの回転速度を検出するセンサのコネクタ部の絶縁が不適切
+R1	REASON Arg1:T5 Arg2:T1	
+T8	Argument 86 88	最悪
+T9	Connective 89 91	場合
+T4	Argument 92 109	原動機が停止し、再始動できなくなる
+R6	CONDITION Arg1:T9 Arg2:T8	
+R7	RESULT Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T7 Arg2:T4	

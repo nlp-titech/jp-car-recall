@@ -1,0 +1,41 @@
+T1	Argument 0 41	リヤゲートのガス封入式ダンパーステーにおいて、外筒のエンドキャップ部の塗装が不適切
+T2	Argument 45 55	塩害地域の塩分の影響
+T3	Argument 56 58	腐食
+T4	Argument 71 85	そのままの状態で使用を続ける
+T5	Argument 87 92	腐食が進行
+T6	Argument 94 100	外筒が膨らみ
+T7	Argument 101 111	エンドキャップが割れ
+T8	Argument 112 121	リヤゲートを開く際
+T9	Argument 122 127	外筒が破裂
+T10	Argument 129 131	最悪
+T11	Argument 135 142	周囲の人が負傷
+T12	Connective 42 44	ため
+T14	Connective 66 70	そのため
+T15	Connective 85 86	と
+T16	Connective 93 94	、
+T17	Connective 100 101	、
+T18	Connective 111 112	、
+T19	Connective 121 122	に
+T20	Connective 128 129	、
+T21	Connective 132 134	場合
+R1	REASON Arg1:T12 Arg2:T1	
+R5	REASON Arg1:T14 Arg2:T3	
+R7	CONDITION Arg1:T15 Arg2:T4	
+R8	RESULT Arg1:T15 Arg2:T5	
+R9	REASON Arg1:T16 Arg2:T5	
+R10	RESULT Arg1:T16 Arg2:T6	
+R11	REASON Arg1:T17 Arg2:T6	
+R12	RESULT Arg1:T17 Arg2:T7	
+R13	REASON Arg1:T18 Arg2:T7	
+R15	CONDITION Arg1:T19 Arg2:T8	
+R16	RESULT Arg1:T19 Arg2:T9	
+R17	REASON Arg1:T20 Arg2:T9	
+R19	CONDITION Arg1:T21 Arg2:T10	
+R20	RESULT Arg1:T21 Arg2:T11	
+T13	Connective 55 56	で
+R2	REASON Arg1:T13 Arg2:T2	
+R3	RESULT Arg1:T13 Arg2:T3	
+R4	RESULT Arg1:T12 Arg2:T3	
+R6	RESULT Arg1:T14 Arg2:T5	
+R14	RESULT Arg1:T18 Arg2:T9	
+R18	RESULT Arg1:T20 Arg2:T11	

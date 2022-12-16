@@ -1,0 +1,13 @@
+T1	Argument 11 29	ブレーキマスターシリンダーに製造不良
+T2	Connective 35 37	ため
+T3	Argument 38 63	短時間にブレーキペダルを強く踏み込む操作を繰り返す
+T4	Connective 63 64	と
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+T5	Argument 65 85	一時的にブレーキペダルが踏みこめなくなり
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 85 86	、
+T7	Argument 86 97	ブレーキが利かなくなる
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

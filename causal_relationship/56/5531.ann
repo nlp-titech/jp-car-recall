@@ -1,0 +1,5 @@
+T1	Argument 17 32	前照灯洗浄器が装備されていない
+T2	Argument 38 55	道路運送車両の保安基準に適合しない
+T3	Connective 33 37	そのため
+R1	REASON Arg1:T3 Arg2:T1	
+R2	RESULT Arg1:T3 Arg2:T2	

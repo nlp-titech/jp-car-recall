@@ -1,0 +1,29 @@
+T1	Argument 0 25	原動機の調速機内フライウェイト支持ピンの強度が不足
+T2	Argument 32 42	高回転、高出力の使用
+T3	Argument 45 55	当該ピンに亀裂が発生
+T4	Argument 68 78	そのまま使用を続ける
+T5	Argument 79 86	当該ピンが破断
+T6	Argument 87 97	フライウェイトが脱落
+T7	Argument 99 109	調速機構成部品と干渉
+T8	Argument 111 128	原動機が停止し、再始動できなくなる
+T10	Connective 29 31	ため
+T11	Connective 42 45	により
+T12	Connective 63 67	そのため
+T13	Connective 78 79	と
+T14	Connective 86 87	、
+T15	Connective 98 99	、
+T16	Connective 110 111	て
+R1	REASON Arg1:T10 Arg2:T1	
+R2	RESULT Arg1:T10 Arg2:T3	
+R3	REASON Arg1:T11 Arg2:T2	
+R4	RESULT Arg1:T11 Arg2:T3	
+R5	REASON Arg1:T12 Arg2:T3	
+R6	RESULT Arg1:T12 Arg2:T5	
+R7	CONDITION Arg1:T13 Arg2:T4	
+R8	RESULT Arg1:T13 Arg2:T5	
+R9	REASON Arg1:T14 Arg2:T5	
+R10	RESULT Arg1:T14 Arg2:T6	
+R11	REASON Arg1:T15 Arg2:T6	
+R12	RESULT Arg1:T15 Arg2:T7	
+R13	REASON Arg1:T16 Arg2:T7	
+R14	RESULT Arg1:T16 Arg2:T8	

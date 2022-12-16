@@ -1,0 +1,25 @@
+T1	Argument 15 52	ＡＢＳ（アンチロック・ブレーキ・システム）ユニットの制御プログラムが不適切
+T2	Connective 53 55	ため
+T3	Argument 56 73	後輪ブレーキ力を正常に制御できない
+T4	Connective 79 83	そのため
+T5	Argument 109 121	後輪ブレーキが過剰に作動
+T6	Connective 122 123	、
+T7	Argument 129 135	後輪がロック
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 100 107	ＡＢＳ作動条件
+T9	Connective 108 109	で
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 84 98	そのままの状態で使用を続ける
+T11	Connective 98 99	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	
+T12	Argument 123 125	最悪
+T13	Connective 126 128	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T7	

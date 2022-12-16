@@ -1,0 +1,27 @@
+T1	Argument 0 51	ブレーキランプをコントロールしているボディーコントロールモジュールに使われている電子部品の製造が不適切
+T2	Connective 52 54	ため
+T3	Argument 55 61	ノイズが発生
+T4	Connective 65 66	で
+T5	Argument 67 96	ブレーキを踏んでいないにもかかわらず、ブレーキランプが点滅
+T6	Connective 104 108	この場合
+T7	Argument 109 136	クルーズコントロールを使用していると、勝手にキャンセル
+T10	Argument 140 166	ブレーキランプが点滅しても車両が減速しない状況が続い
+T11	Connective 167 169	場合
+T12	Argument 170 180	後続車の誤認識を招く
+T13	Argument 186 188	最悪
+T14	Connective 189 191	場合
+T15	Argument 192 194	追突
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	CONDITION Arg1:T11 Arg2:T10	
+R8	RESULT Arg1:T11 Arg2:T12	
+R9	RESULT Arg1:T6 Arg2:T12	
+R10	CONDITION Arg1:T14 Arg2:T13	
+R11	RESULT Arg1:T14 Arg2:T15	
+T8	Connective 185 186	、
+R12	REASON Arg1:T8 Arg2:T12	
+R13	RESULT Arg1:T8 Arg2:T15	

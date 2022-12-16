@@ -1,0 +1,25 @@
+T1	Argument 0 50	ブレーキマスターシリンダーにおいて、製造工程におけるロッキングピンとバルブタペットの組み付けが不適切
+T2	Argument 54 66	ブレーキの繰り返しの操作
+T3	Argument 70 80	バルブタペットが折損
+T4	Argument 82 92	ロッキングピンが脱落
+T5	Argument 111 122	シリンダーの摺動が阻害
+T6	Argument 125 127	最悪
+T7	Argument 130 141	ブレーキが効かなくなる
+T8	Connective 51 53	ため
+T9	Connective 66 69	により
+T10	Connective 81 82	て
+T11	Connective 106 110	このため
+T12	Connective 124 125	、
+T13	Connective 128 130	場合
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T3	
+R3	REASON Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T3	
+R5	REASON Arg1:T10 Arg2:T3	
+R6	RESULT Arg1:T10 Arg2:T4	
+R7	REASON Arg1:T11 Arg2:T4	
+R8	RESULT Arg1:T11 Arg2:T5	
+R9	REASON Arg1:T12 Arg2:T5	
+R10	RESULT Arg1:T12 Arg2:T7	
+R11	CONDITION Arg1:T13 Arg2:T6	
+R12	RESULT Arg1:T13 Arg2:T7	

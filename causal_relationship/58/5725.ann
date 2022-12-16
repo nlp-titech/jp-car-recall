@@ -1,0 +1,9 @@
+T1	Argument 12 59	ギヤボックス側油圧ホースにおいて、油圧ポンプ側ホースと連結するためのフランジの半田付けが不適切
+T2	Connective 66 70	そのため
+T3	Argument 71 83	当該部分よりオイルがもれ
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 83 84	、
+T5	Argument 84 95	ハンドル操作が重くなる
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

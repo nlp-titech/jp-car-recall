@@ -1,0 +1,17 @@
+T3	Argument 32 63	ブレーキペダルシャフト抜け止めのサークリップが装着されていない
+T4	Connective 69 73	そのため
+T5	Argument 74 88	そのままの状態で使用を続ける
+T6	Connective 88 89	と
+T1	Argument 90 118	ブレーキぺダルシャフトがブレーキペダルブラケットから抜け
+T2	Connective 118 119	、
+T7	Argument 119 121	最悪
+T8	Connective 122 124	場合
+T9	Argument 125 136	ブレーキが効かなくなる
+R1	REASON Arg1:T4 Arg2:T3	
+R2	RESULT Arg1:T4 Arg2:T1	
+R3	CONDITION Arg1:T6 Arg2:T5	
+R4	RESULT Arg1:T6 Arg2:T1	
+R5	REASON Arg1:T2 Arg2:T1	
+R6	RESULT Arg1:T2 Arg2:T9	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	

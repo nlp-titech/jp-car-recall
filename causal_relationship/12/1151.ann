@@ -1,0 +1,47 @@
+T1	Argument 0 23	クラッチレリーズフォークのキー溝の加工が不適切
+T2	Connective 24 26	ため
+T4	Connective 42 43	、
+T5	Argument 43 47	強度不足
+T6	Connective 54 58	そのため
+T7	Argument 59 70	クラッチ操作を繰り返す
+T8	Connective 70 71	と
+T9	Argument 71 83	当該フォークに亀裂が発生
+T10	Connective 84 85	、
+T11	Argument 85 99	そのままの状態で使用を続ける
+T12	Connective 99 100	と
+T13	Argument 101 103	最悪
+T14	Connective 104 106	場合
+T15	Argument 107 116	当該フォークが破損
+T16	Connective 117 118	、
+T17	Argument 118 132	クラッチを操作しても変速不能
+T3	Argument 27 39	応力が集中する構造となっ
+T18	Connective 135 136	、
+T19	Argument 136 143	走行不能となる
+T20	Argument 153 176	不適切なグリスを使用するなどの整備状況が重なる
+T21	Connective 176 177	と
+T22	Argument 178 183	亀裂が発生
+T23	Connective 183 184	し
+T24	Argument 184 193	同様の事象がおきる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T9	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T15	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	CONDITION Arg1:T14 Arg2:T13	
+R13	RESULT Arg1:T12 Arg2:T15	
+R14	RESULT Arg1:T14 Arg2:T15	
+R15	REASON Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T17	
+R18	RESULT Arg1:T18 Arg2:T19	
+R19	CONDITION Arg1:T21 Arg2:T20	
+R20	RESULT Arg1:T21 Arg2:T22	
+R21	REASON Arg1:T23 Arg2:T22	
+R22	RESULT Arg1:T23 Arg2:T24	
+R23	RESULT Arg1:T6 Arg2:T22	
+R17	REASON Arg1:T18 Arg2:T17	

@@ -1,0 +1,29 @@
+T1	Argument 25 48	使用過程において当該ポンプのハウジング部が摩耗
+T2	Argument 0 21	原動機のオイルポンプにおいて、構造が不適切
+T3	Connective 22 24	ため
+R1	REASON Arg1:T3 Arg2:T2	
+R2	RESULT Arg1:T3 Arg2:T1	
+T4	Connective 56 60	そのため
+T5	Argument 73 78	摩耗の進行
+R3	REASON Arg1:T4 Arg2:T1	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 81 105	当該ポンプのローターを駆動させるためのピンが外れ
+T8	Connective 105 106	、
+T9	Argument 106 123	エンジンに十分なオイルが供給されず
+R8	REASON Arg1:T8 Arg2:T6	
+R9	RESULT Arg1:T8 Arg2:T9	
+T10	Connective 123 124	、
+T11	Argument 130 137	走行不能となる
+R10	REASON Arg1:T10 Arg2:T9	
+R11	RESULT Arg1:T10 Arg2:T11	
+T7	Argument 61 71	そのまま使用を続ける
+T12	Connective 71 72	と
+R6	CONDITION Arg1:T12 Arg2:T7	
+R7	RESULT Arg1:T12 Arg2:T5	
+T13	Argument 124 126	最悪
+T14	Connective 127 129	場合
+R13	CONDITION Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T11	
+T15	Connective 78 81	と共に
+R5	REASON Arg1:T15 Arg2:T5	
+R12	RESULT Arg1:T15 Arg2:T6	

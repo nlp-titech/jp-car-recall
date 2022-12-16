@@ -1,0 +1,31 @@
+T1	Argument 0 57	かじ取り装置及び制動装置に装備されている倍力用の油圧系統のサブリターンホースにおいて、当該ホースが捩れて取付けられ
+T2	Argument 66 97	キャブチルト操作時にホースがヒータホースのクリッブに引っ掛かり
+T3	Argument 98 102	抜け気味
+T4	Argument 128 134	ホースが抜け
+T5	Argument 135 141	作動油が漏れ
+T6	Argument 142 150	操舵力が重くなる
+T7	Argument 154 160	制動力が低下
+T8	Connective 63 65	ため
+T9	Connective 97 98	、
+T10	Connective 105 106	、
+T11	Connective 134 135	て
+T12	Connective 141 142	、
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T2	
+R3	REASON Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T3	
+R5	REASON Arg1:T10 Arg2:T3	
+R6	RESULT Arg1:T10 Arg2:T4	
+R7	REASON Arg1:T11 Arg2:T4	
+R8	RESULT Arg1:T11 Arg2:T5	
+R9	REASON Arg1:T12 Arg2:T5	
+R10	RESULT Arg1:T12 Arg2:T6	
+R11	RESULT Arg1:T12 Arg2:T7	
+T15	Argument 106 120	そのままの状態で使用を続ける
+T16	Connective 120 121	と
+T17	Argument 122 124	最悪
+T18	Connective 125 127	場合
+R14	CONDITION Arg1:T16 Arg2:T15	
+R15	CONDITION Arg1:T18 Arg2:T17	
+R16	RESULT Arg1:T16 Arg2:T4	
+R17	RESULT Arg1:T18 Arg2:T4	

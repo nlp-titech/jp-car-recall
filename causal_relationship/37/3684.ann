@@ -1,0 +1,25 @@
+T1	Argument 33 104	バンクアングルセンサハーネスの固定方法、また、アンチロックブレーキシステム（ＡＢＳ）非装備車両にあっては、ジョイントコネクタの取付位置が不適切
+T2	Connective 105 107	ため
+T3	Argument 108 114	走行中の振動
+T4	Connective 114 117	により
+T5	Argument 117 130	当該ハーネス取出し部が屈曲
+T6	Connective 138 142	そのため
+T7	Argument 143 153	そのまま使用を続ける
+T8	Connective 153 154	と
+T9	Argument 155 164	当該ハーネスが断線
+T10	Connective 165 166	、
+T11	Argument 166 168	最悪
+T12	Connective 169 171	場合
+T13	Argument 172 190	エンジンが停止して再始動できなくなる
+R1	RESULT Arg1:T12 Arg2:T13	
+R2	CONDITION Arg1:T12 Arg2:T11	
+R3	RESULT Arg1:T10 Arg2:T13	
+R4	REASON Arg1:T10 Arg2:T9	
+R5	RESULT Arg1:T8 Arg2:T9	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T9	
+R8	REASON Arg1:T6 Arg2:T5	
+R9	RESULT Arg1:T4 Arg2:T5	
+R10	REASON Arg1:T4 Arg2:T3	
+R11	RESULT Arg1:T2 Arg2:T3	
+R12	REASON Arg1:T2 Arg2:T1	

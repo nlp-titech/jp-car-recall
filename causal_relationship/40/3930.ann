@@ -1,0 +1,21 @@
+T1	Argument 0 37	自動防眩ルームミラーにおいて、原因は特定できていないが、当該電子回路が短絡
+T2	Argument 39 44	樹脂材が溶
+T3	Argument 45 47	発煙
+T4	Argument 49 51	最悪
+T5	Argument 55 68	コントロールヒューズが溶断
+T6	Argument 70 83	エンジンが始動できなくなる
+T7	Connective 38 39	て
+T8	Connective 48 49	、
+T9	Connective 52 54	場合
+T10	Connective 69 70	て
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+T11	Connective 44 45	け
+R3	REASON Arg1:T11 Arg2:T2	
+R4	RESULT Arg1:T11 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T5	
+R7	CONDITION Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+R9	REASON Arg1:T10 Arg2:T5	
+R10	RESULT Arg1:T10 Arg2:T6	

@@ -1,0 +1,17 @@
+T1	Argument 0 35	ＤＣ－ＤＣコンバータにおいて、内部の電子基板上のコンデンサに亀裂が入っ
+T2	Connective 43 44	、
+T3	Argument 44 56	当該コンデンサがショート
+T4	Argument 70 83	ＤＣ－ＤＣコンバータが溶損
+T5	Argument 91 96	火災に至る
+T6	Connective 84 85	、
+T7	Connective 65 69	そのため
+R1	RESULT Arg1:T6 Arg2:T5	
+R2	REASON Arg1:T6 Arg2:T4	
+R3	RESULT Arg1:T7 Arg2:T4	
+R4	REASON Arg1:T7 Arg2:T3	
+R5	RESULT Arg1:T2 Arg2:T3	
+R6	REASON Arg1:T2 Arg2:T1	
+T8	Argument 85 87	最悪
+T9	Connective 88 90	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

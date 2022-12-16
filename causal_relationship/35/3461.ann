@@ -1,0 +1,25 @@
+T1	Argument 18 53	回転継手に取り付けている回り止め固定プレートの取付面の塗装指示が不適切
+T2	Connective 54 56	ため
+T3	Argument 57 88	固定用プレートの取付ボルトを規定トルクで締め付けても軸力が弱い
+T4	Connective 94 98	そのため
+T5	Argument 99 115	走行時の振動等によりボルトが緩み
+T6	Connective 115 116	、
+T7	Argument 116 152	固定プレートにガタが発生することで油圧配管ホースとキャリアフレームが干渉
+T8	Connective 153 154	、
+T9	Argument 154 168	そのままの状態で使用を続ける
+T10	Connective 168 169	と
+T11	Argument 170 172	最悪
+T12	Connective 173 175	場合
+T13	Argument 176 190	ホースが損傷して作動油が流出
+R1	RESULT Arg1:T12 Arg2:T13	
+R2	CONDITION Arg1:T12 Arg2:T11	
+R3	RESULT Arg1:T10 Arg2:T13	
+R4	CONDITION Arg1:T10 Arg2:T9	
+R5	RESULT Arg1:T8 Arg2:T13	
+R6	REASON Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T7	
+R8	REASON Arg1:T6 Arg2:T5	
+R9	RESULT Arg1:T4 Arg2:T5	
+R10	REASON Arg1:T4 Arg2:T3	
+R11	RESULT Arg1:T2 Arg2:T3	
+R12	REASON Arg1:T2 Arg2:T1	

@@ -1,0 +1,9 @@
+T1	Argument 0 51	過給機付車両のエンジンＥＣＵのプログラムにおいて、燃料噴射量、空気量及びプラグ点火時期の制御等が不適切
+T2	Connective 52 54	ため
+T3	Argument 55 72	エンジン回転速度が低速回転域で低下
+T4	Connective 73 74	、
+T5	Argument 74 81	エンストに至る
+R1	RESULT Arg1:T4 Arg2:T5	
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T3	
+R4	REASON Arg1:T2 Arg2:T1	

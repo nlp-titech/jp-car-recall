@@ -1,0 +1,37 @@
+T1	Argument 11 30	リヤドライブシャフトの製造工程が不適切
+T2	Connective 31 33	ため
+T3	Argument 34 61	溶接時にジョイント部を冷す冷却液が溶接の熱で蒸気となり
+T4	Connective 61 62	、
+T5	Argument 62 74	中空シャフトの内側に付着
+T6	Connective 75 76	、
+T7	Argument 76 94	シャフト両端部の溶接部内側に錆が発生
+T8	Connective 102 106	そのため
+T9	Argument 131 145	シャフトの溶接部に亀裂が発生
+T10	Connective 146 147	、
+T11	Argument 153 160	シャフトが折損
+T12	Connective 161 162	、
+T13	Argument 162 169	走行不能となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+T14	Argument 107 117	そのまま使用を続ける
+T15	Connective 117 118	と
+R8	CONDITION Arg1:T15 Arg2:T14	
+R9	RESULT Arg1:T15 Arg2:T9	
+T16	Argument 119 129	発進時の高トルク伝達
+T17	Connective 129 131	時に
+R10	CONDITION Arg1:T17 Arg2:T16	
+R11	RESULT Arg1:T17 Arg2:T9	
+R12	REASON Arg1:T10 Arg2:T9	
+R13	RESULT Arg1:T10 Arg2:T11	
+R14	REASON Arg1:T12 Arg2:T11	
+R15	RESULT Arg1:T12 Arg2:T13	
+T18	Argument 147 149	最悪
+T19	Connective 150 152	場合
+R16	CONDITION Arg1:T19 Arg2:T18	
+R17	RESULT Arg1:T19 Arg2:T11	
+R18	RESULT Arg1:T8 Arg2:T9	

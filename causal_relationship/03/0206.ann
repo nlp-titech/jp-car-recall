@@ -1,0 +1,25 @@
+T1	Argument 0 61	動力伝達装置のクラッチ部において、減速時に駆動車輪から加わる逆回転力を緩衝するスプリングを保持しているナットの寸法が不適切
+T2	Argument 81 94	当該スプリングの一部が折損
+T3	Argument 96 112	その破片がクラッチハブに噛み込み
+T4	Argument 119 132	クラッチ操作ができなくなり
+T5	Argument 133 140	走行不能に至る
+T6	Connective 132 133	、
+T7	Connective 112 113	、
+T8	Connective 95 96	、
+T9	Connective 62 64	ため
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+R7	REASON Arg1:T6 Arg2:T4	
+R8	RESULT Arg1:T6 Arg2:T5	
+T10	Argument 65 79	そのままの状態で使用を続ける
+T11	Connective 79 80	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T2	
+T12	Argument 113 115	最悪
+T13	Connective 116 118	場合
+R11	RESULT Arg1:T13 Arg2:T4	
+R12	CONDITION Arg1:T13 Arg2:T12	

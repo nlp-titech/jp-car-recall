@@ -1,0 +1,43 @@
+T1	Argument 0 22	エンジン制御コンピュータのプログラムが不適切
+T2	Connective 23 25	ため
+T3	Argument 26 63	エンジン高回転時からのアクセルオフによる減速時にエンジンの吸入空気量が不足
+T4	Connective 70 71	、
+T5	Argument 71 88	燃料がエンジン内で燃焼せず排出され
+T6	Connective 132 136	このため
+T7	Argument 149 154	異音が発生
+T8	Connective 175 176	、
+T9	Argument 176 178	最悪
+T10	Connective 179 181	場合
+T11	Argument 182 188	エンジン不調
+R1	RESULT Arg1:T10 Arg2:T11	
+R2	CONDITION Arg1:T10 Arg2:T9	
+R3	RESULT Arg1:T8 Arg2:T11	
+R5	RESULT Arg1:T6 Arg2:T19	
+R7	RESULT Arg1:T4 Arg2:T5	
+R8	REASON Arg1:T4 Arg2:T3	
+R9	RESULT Arg1:T2 Arg2:T3	
+R10	REASON Arg1:T2 Arg2:T1	
+T12	Argument 89 103	前側の排出ガス浄化触媒で燃焼
+T13	Argument 119 124	触媒が破損
+T14	Connective 88 89	、
+R6	REASON Arg1:T14 Arg2:T5	
+R11	RESULT Arg1:T14 Arg2:T12	
+T15	Connective 118 119	、
+R12	REASON Arg1:T15 Arg2:T23	
+R13	RESULT Arg1:T15 Arg2:T13	
+R14	REASON Arg1:T6 Arg2:T13	
+T16	Argument 159 172	後側触媒に詰まると加速不良
+R16	REASON Arg1:T8 Arg2:T16	
+T17	Connective 189 190	に
+T18	Argument 190 194	エンスト
+R17	REASON Arg1:T17 Arg2:T11	
+R18	RESULT Arg1:T17 Arg2:T18	
+T19	Argument 137 146	破損した触媒の破片
+T20	Connective 146 149	により
+R19	REASON Arg1:T20 Arg2:T19	
+R20	RESULT Arg1:T20 Arg2:T7	
+T22	Connective 105 108	ことで
+T23	Argument 108 115	触媒内部が高温
+R22	REASON Arg1:T22 Arg2:T12	
+R23	RESULT Arg1:T22 Arg2:T23	
+R4	RESULT Arg1:T20 Arg2:T16	

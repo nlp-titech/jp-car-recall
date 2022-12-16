@@ -1,0 +1,23 @@
+T1	Argument 0 97	４輪駆動車の動力伝達装置において、プロペラシャフトの中間に取り付けられたロータリ・ブレード･カップリング（路面状態や走行状況に応じて駆動力を後輪に伝達する装置）の取り付けボルトのねじ穴に加工不良
+T2	Argument 106 125	当該カップリングの取り付けボルトが弛ん
+T3	Argument 126 131	異音が発生
+T4	Argument 155 161	ボルトが脱落
+T5	Argument 163 188	当該カップリングとプロペラシャフトとの接合部が外れ
+T6	Argument 189 196	走行不能となる
+T7	Connective 103 105	ため
+T9	Connective 162 163	て
+T10	Connective 188 189	、
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+T11	Connective 125 126	で
+R3	REASON Arg1:T11 Arg2:T2	
+R4	RESULT Arg1:T11 Arg2:T3	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+R9	REASON Arg1:T10 Arg2:T5	
+R10	RESULT Arg1:T10 Arg2:T6	
+R5	RESULT Arg1:T11 Arg2:T4	
+T8	Argument 139 153	そのままの状態で使用を続ける
+T12	Connective 153 154	と
+R6	CONDITION Arg1:T12 Arg2:T8	
+R11	RESULT Arg1:T12 Arg2:T4	

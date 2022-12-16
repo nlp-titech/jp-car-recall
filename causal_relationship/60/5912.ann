@@ -1,0 +1,25 @@
+T1	Argument 0 56	電気自動車において、電気モーターの駆動トルクを伝達するトランスミッションのインプットシャフトのシーリングが不適切
+T2	Connective 57 59	ため
+T3	Argument 60 68	グリースが漏れる
+T4	Connective 77 79	場合
+T5	Argument 80 94	インプットシャフトの潤滑不足
+T6	Connective 94 97	により
+T7	Argument 97 105	スプラインが摩耗
+T8	Argument 107 129	電気モーターとトランスミッションの篏合が悪く
+T9	Connective 131 132	、
+T10	Argument 132 134	最悪
+T11	Connective 135 137	場合
+T12	Argument 138 145	走行不能となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T13	Connective 106 107	、
+R7	REASON Arg1:T13 Arg2:T7	
+R8	RESULT Arg1:T13 Arg2:T8	
+R9	REASON Arg1:T9 Arg2:T8	
+R10	RESULT Arg1:T9 Arg2:T12	
+R11	CONDITION Arg1:T11 Arg2:T10	
+R12	RESULT Arg1:T11 Arg2:T12	

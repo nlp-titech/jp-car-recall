@@ -1,0 +1,17 @@
+T1	Argument 0 54	動力伝達装置の走行用油圧モータに取り付けられるオーバーロードリリーフバルブにおいて、内部のバネに組み付け不良
+T2	Connective 61 65	そのため
+T3	Argument 82 89	当該バネが折損
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 90 91	、
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 91 110	オーバーロードリリーフバルブが作動不良
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 114 116	ため
+T7	Argument 117 124	走行不能になる
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 66 80	そのままの状態で使用を続ける
+T9	Connective 80 81	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	

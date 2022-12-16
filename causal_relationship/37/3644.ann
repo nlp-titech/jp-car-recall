@@ -1,0 +1,17 @@
+T1	Argument 29 44	環状シール部の寸法精度が不適切
+T2	Connective 45 47	ため
+T4	Connective 74 78	そのため
+T5	Argument 79 87	当該シールが損傷
+T6	Connective 98 101	となり
+T7	Argument 102 109	走行不能に至る
+R1	RESULT Arg1:T6 Arg2:T7	
+R3	RESULT Arg1:T4 Arg2:T5	
+R6	REASON Arg1:T2 Arg2:T1	
+T12	Argument 89 98	クラッチが作動不良
+T13	Connective 88 89	て
+R2	REASON Arg1:T13 Arg2:T5	
+R7	RESULT Arg1:T13 Arg2:T12	
+R8	REASON Arg1:T6 Arg2:T12	
+T3	Argument 48 63	シールが偏心した状態で組み付け
+R4	RESULT Arg1:T2 Arg2:T3	
+R5	REASON Arg1:T4 Arg2:T3	

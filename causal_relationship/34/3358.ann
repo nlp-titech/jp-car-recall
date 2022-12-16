@@ -1,0 +1,25 @@
+T1	Argument 0 17	ブロワモータのブラシの材質が不適切
+T2	Connective 18 20	ため
+T3	Argument 21 37	最大風量での長時間使用を繰り返す
+T4	Connective 37 38	と
+T5	Argument 39 48	ブラシが早期に摩耗
+T6	Connective 56 60	そのため
+T7	Argument 61 75	ブロワモータの回転が遅くなり
+T8	Connective 75 76	、
+T9	Argument 76 86	そのまま使用を続ける
+T10	Connective 86 87	と
+T11	Argument 87 92	作動が停止
+T12	Connective 93 94	、
+T13	Argument 94 123	前面ガラスに曇りが生じた場合に安全な視野を確保できなくなる
+R3	RESULT Arg1:T12 Arg2:T13	
+R4	REASON Arg1:T12 Arg2:T11	
+R5	RESULT Arg1:T10 Arg2:T11	
+R6	CONDITION Arg1:T10 Arg2:T9	
+R7	RESULT Arg1:T8 Arg2:T11	
+R8	REASON Arg1:T8 Arg2:T7	
+R9	RESULT Arg1:T6 Arg2:T7	
+R10	REASON Arg1:T6 Arg2:T5	
+R11	RESULT Arg1:T4 Arg2:T5	
+R12	CONDITION Arg1:T4 Arg2:T3	
+R13	RESULT Arg1:T2 Arg2:T5	
+R14	REASON Arg1:T2 Arg2:T1	

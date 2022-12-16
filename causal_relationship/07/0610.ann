@@ -1,0 +1,21 @@
+T1	Argument 0 46	ブローバイ・ガス還元装置の配管（ブリーザーチューブの長さ及びブリーザーパイプの形状）が不適切
+T2	Argument 83 95	ブリーザーパイプが抜ける
+T3	Argument 117 132	ブローバイ・ガスが大気中に放出
+T4	Connective 47 49	ため
+T5	Connective 101 105	そのため
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	
+T6	Connective 80 83	により
+T7	Argument 74 80	原動機の振れ
+R5	REASON Arg1:T6 Arg2:T7	
+R6	RESULT Arg1:T6 Arg2:T2	
+T8	Argument 50 72	外気温度が低い状態での急加速等を繰り返し行う
+T9	Connective 72 73	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T2	
+T10	Argument 106 115	原動機の高負荷運転
+T11	Connective 115 116	時
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	

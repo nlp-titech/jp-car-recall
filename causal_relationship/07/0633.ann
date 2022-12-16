@@ -1,0 +1,29 @@
+T1	Argument 0 45	駐車ブレーキ（ホイールパーキングブレーキ）用エア配管（ナイロンチューブ）の取り回しが不適切
+T2	Argument 53 69	配管等に付着した雪が凍結して氷塊
+T3	Argument 73 91	ナイロンチューブに大きな荷重がかかる
+T4	Connective 97 101	そのため
+T5	Argument 102 113	ナイロンチューブが折損
+T6	Argument 115 120	エアが漏れ
+T7	Argument 121 134	走行中に駐車ブレーキが作動
+T8	Argument 142 148	後輪がロック
+T9	Connective 72 73	、
+T10	Connective 114 115	て
+T11	Connective 120 121	、
+T12	Connective 135 136	、
+T13	Connective 46 48	ため
+R1	REASON Arg1:T13 Arg2:T1	
+R2	RESULT Arg1:T13 Arg2:T3	
+R4	RESULT Arg1:T9 Arg2:T3	
+R5	REASON Arg1:T4 Arg2:T3	
+R6	RESULT Arg1:T4 Arg2:T5	
+R7	REASON Arg1:T10 Arg2:T5	
+R8	RESULT Arg1:T10 Arg2:T6	
+R9	REASON Arg1:T11 Arg2:T6	
+R10	RESULT Arg1:T11 Arg2:T7	
+R11	REASON Arg1:T12 Arg2:T7	
+R12	RESULT Arg1:T12 Arg2:T8	
+T18	Argument 136 138	最悪
+T19	Connective 139 141	場合
+R17	CONDITION Arg1:T19 Arg2:T18	
+R18	RESULT Arg1:T19 Arg2:T8	
+R3	REASON Arg1:T9 Arg2:T2	

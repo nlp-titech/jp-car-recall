@@ -1,0 +1,13 @@
+T1	Argument 0 43	変速機のシフトレバーにおいて、シフトポジションを選択後に当該レバーは中央位置に戻る構造
+T2	Connective 44 46	ため
+T3	Argument 47 96	車両が停止する前にＰレンジにシフトしようとしてもできないが、運転者はＰレンジにシフトしたものと誤認
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 104 108	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 109 125	駐車ブレーキをかけずに車外に出る
+T6	Connective 125 126	と
+T7	Argument 126 133	車両が動き出す
+R4	CONDITION Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	RESULT Arg1:T4 Arg2:T7	

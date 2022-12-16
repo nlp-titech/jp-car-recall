@@ -1,0 +1,21 @@
+T1	Argument 0 29	前輪緩衝装置のストラットを固定しているマウント部に強度不足
+T2	Connective 35 36	、
+T3	Argument 52 69	当該マウント部のラバーに亀裂が発生
+T4	Connective 70 71	、
+T5	Argument 77 84	ストラットが抜
+T6	Connective 84 85	け
+T7	Argument 85 92	走行不能に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 36 50	そのままの状態で使用を続ける
+T9	Connective 50 51	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 71 73	最悪
+T11	Connective 74 76	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	

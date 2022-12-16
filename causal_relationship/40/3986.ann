@@ -1,0 +1,32 @@
+T1	Argument 47 70	抜け止め防止用プッシュナットの固定方法が不適切
+T2	Argument 74 86	リフタリンクに亀裂が入る
+T3	Argument 91 102	プッシュナットが外れる
+T4	Argument 113 123	そのまま使用を続ける
+T5	Argument 125 137	座席から異音やガタが発生
+T7	Argument 139 141	最悪
+T8	Argument 145 160	リフタリンクが破損もしくは外れ
+T9	Argument 161 166	座席が傾き
+T10	Argument 167 179	正しい姿勢が取れなくなる
+T11	Connective 71 73	ため
+T12	Connective 108 112	そのため
+T13	Connective 123 124	と
+T15	Connective 142 144	場合
+T16	Connective 166 167	、
+R1	REASON Arg1:T11 Arg2:T1	
+R2	RESULT Arg1:T11 Arg2:T2	
+R3	RESULT Arg1:T11 Arg2:T3	
+R4	REASON Arg1:T12 Arg2:T3	
+R5	RESULT Arg1:T12 Arg2:T5	
+R6	CONDITION Arg1:T13 Arg2:T4	
+R7	RESULT Arg1:T13 Arg2:T5	
+R11	CONDITION Arg1:T15 Arg2:T7	
+R13	RESULT Arg1:T15 Arg2:T8	
+R14	REASON Arg1:T16 Arg2:T9	
+R15	RESULT Arg1:T16 Arg2:T10	
+R16	REASON Arg1:T12 Arg2:T2	
+T6	Connective 160 161	て
+R9	REASON Arg1:T6 Arg2:T8	
+R12	RESULT Arg1:T6 Arg2:T9	
+R8	RESULT Arg1:T12 Arg2:T8	
+T14	Argument 21 33	リフタリンクの強度が不足
+R10	REASON Arg1:T12 Arg2:T14	

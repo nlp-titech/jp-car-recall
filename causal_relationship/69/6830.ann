@@ -1,0 +1,19 @@
+T1	Argument 8 51	発電機等の補機駆動用ベルトの張力を維持するベルトテンショナーの取付軸部のカシメが不充分
+T2	Connective 57 59	ため
+T3	Argument 60 79	当該ベルトテンショナーが取付部から脱落
+T4	Connective 86 87	、
+T5	Argument 87 98	補機駆動用ベルトが外れ
+T6	Connective 98 99	て
+T7	Argument 99 127	発電機及びパワーステアリング用油圧ポンプが作動しなくなり
+T8	Connective 127 128	、
+T9	Argument 128 136	充電警告灯が点灯
+T10	Argument 143 153	ハンドル操作力が増大
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	RESULT Arg1:T8 Arg2:T10	

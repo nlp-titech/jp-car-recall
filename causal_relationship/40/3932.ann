@@ -1,0 +1,21 @@
+T1	Argument 18 46	シーリングキャップとＯリングが損傷した状態で組み付けられ
+T2	Argument 58 71	雨水等がキャリパ内部に侵入
+T3	Argument 73 77	錆が発生
+T4	Argument 79 86	摺動部分が固着
+T5	Argument 88 90	最悪
+T6	Argument 94 100	制動力が低下
+T7	Connective 53 57	そのため
+T8	Connective 72 73	て
+T9	Connective 78 79	、
+T10	Connective 87 88	、
+T11	Connective 91 93	場合
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T6	
+R9	CONDITION Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	

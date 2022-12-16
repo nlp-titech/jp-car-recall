@@ -1,0 +1,25 @@
+T1	Argument 29 51	セルモニターユニットの制御プログラムが不適切
+T5	Argument 93 102	駆動力が発生しない
+T6	Argument 113 119	発進ができず
+T7	Argument 120 126	坂道を下がる
+T8	Connective 52 54	ため
+T11	Connective 92 93	と
+T12	Connective 108 112	そのため
+T13	Connective 119 120	、
+R1	REASON Arg1:T8 Arg2:T1	
+R9	REASON Arg1:T12 Arg2:T5	
+R10	RESULT Arg1:T12 Arg2:T6	
+R11	REASON Arg1:T13 Arg2:T6	
+R12	RESULT Arg1:T13 Arg2:T7	
+R2	RESULT Arg1:T8 Arg2:T5	
+R6	RESULT Arg1:T11 Arg2:T5	
+T2	Argument 55 63	上り坂での発進時
+T3	Argument 64 82	バッテリー電圧が一時的に変動した状態
+T4	Argument 83 92	車両が後方へ下がる
+T9	Connective 82 83	で
+T10	Connective 63 64	に
+R3	CONDITION Arg1:T10 Arg2:T2	
+R4	CONDITION Arg1:T9 Arg2:T3	
+R5	RESULT Arg1:T10 Arg2:T3	
+R7	RESULT Arg1:T9 Arg2:T4	
+R8	CONDITION Arg1:T11 Arg2:T4	

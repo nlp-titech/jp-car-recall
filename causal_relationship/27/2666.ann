@@ -1,0 +1,21 @@
+T3	Argument 0 48	大型観光バスのスイング扉において、スイングアームを扉に取付けるためのブラケットの締結構造が不適切
+T4	Connective 49 51	ため
+T5	Argument 78 84	ボルトが折損
+R3	REASON Arg1:T4 Arg2:T3	
+T8	Connective 88 91	により
+T9	Argument 91 108	扉を確実に閉じることができなくなり
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Connective 108 109	、
+T11	Argument 115 119	扉が脱落
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R5	REASON Arg1:T8 Arg2:T5	
+T6	Argument 52 78	スイングアームとブラケットを固定しているナットが緩み
+T7	Connective 77 78	み
+R6	REASON Arg1:T7 Arg2:T6	
+R7	RESULT Arg1:T7 Arg2:T5	
+R4	RESULT Arg1:T4 Arg2:T6	
+T12	Argument 109 111	最悪
+T13	Connective 112 114	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T11	

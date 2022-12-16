@@ -1,0 +1,29 @@
+T1	Argument 0 40	速度計において前輪の回転検知用センサーに接続されている電線の被覆材の材質が不適切
+T2	Argument 60 69	低温時において走行
+T3	Connective 71 73	とき
+R1	CONDITION Arg1:T3 Arg2:T2	
+T4	Connective 41 43	ため
+R2	REASON Arg1:T4 Arg2:T1	
+T5	Connective 85 89	によって
+T6	Argument 75 85	電線の屈曲の繰り返し
+R3	REASON Arg1:T5 Arg2:T6	
+T7	Argument 89 100	当該被覆材に亀裂を生じ
+R4	RESULT Arg1:T3 Arg2:T7	
+R5	RESULT Arg1:T5 Arg2:T7	
+T8	Argument 107 109	断線
+T9	Argument 111 120	速度計が作動しない
+T10	Connective 100 101	、
+R6	REASON Arg1:T10 Arg2:T7	
+R7	RESULT Arg1:T10 Arg2:T8	
+T11	Connective 110 111	、
+R8	REASON Arg1:T11 Arg2:T8	
+R9	RESULT Arg1:T11 Arg2:T9	
+R10	RESULT Arg1:T4 Arg2:T7	
+T12	Argument 44 58	そのままの状態で使用を続ける
+T13	Connective 58 59	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T6	
+T14	Argument 101 103	最悪
+T15	Connective 104 106	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T8	

@@ -1,0 +1,25 @@
+T1	Argument 0 43	通路灯及びステップ灯の電気配線コネクタ及び予備用コネクタに端子間隔の狭い非防水型を採用
+T2	Argument 89 94	発熱・焼損
+T3	Argument 102 111	電気回路がショート
+T4	Argument 113 127	エンジンが再始動できなくなる
+T5	Connective 47 49	ため
+T6	Connective 95 96	、
+T7	Connective 112 113	て
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T12	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 50 64	そのままの状態で使用を続ける
+T9	Connective 64 65	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T12	
+T10	Argument 96 98	最悪
+T11	Connective 99 101	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	
+T12	Argument 66 82	当該コネクタ内部に融雪剤等が侵入
+T13	Connective 86 89	により
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T2	

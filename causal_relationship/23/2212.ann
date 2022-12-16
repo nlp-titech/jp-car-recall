@@ -1,0 +1,17 @@
+T1	Argument 0 48	大型観光バスの車室内暖房用燃焼式ヒータにおいて、バーナヘッド（燃焼機）の燃料ポンプの構造が不適切
+T2	Connective 55 59	そのため
+T3	Argument 76 88	燃料ポンプから燃料が漏れ
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 88 89	、
+T5	Argument 95 111	漏れた燃料がヒータの熱により発火
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T8	Argument 89 91	最悪
+T9	Connective 92 94	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	
+T13	Argument 60 74	そのままの状態で使用を続ける
+T14	Connective 74 75	と
+R9	CONDITION Arg1:T14 Arg2:T13	
+R10	RESULT Arg1:T14 Arg2:T3	

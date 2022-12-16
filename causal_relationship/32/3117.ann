@@ -1,0 +1,37 @@
+T1	Argument 0 70	エンジンフライホイルとトランスミッションの接続部品であるアダプタにおいて、フライホイルとアダプタを接続しているボルトの取付部座面が平滑でない
+T2	Connective 70 72	ため
+T3	Argument 73 84	必要な締結力が得られず
+T5	Connective 99 100	、
+T6	Argument 100 112	ボルトに掛かる応力が増大
+T7	Connective 129 131	場合
+T8	Argument 132 138	ボルトが折損
+T9	Connective 162 164	ため
+T10	Argument 165 172	走行不能となる
+R1	RESULT Arg1:T9 Arg2:T10	
+R3	RESULT Arg1:T7 Arg2:T8	
+R6	REASON Arg1:T5 Arg2:T13	
+R7	RESULT Arg1:T2 Arg2:T3	
+R8	REASON Arg1:T2 Arg2:T1	
+T4	Connective 114 115	。
+T11	Argument 115 128	そのままの状態で使用を続け
+R4	RESULT Arg1:T5 Arg2:T6	
+R5	REASON Arg1:T4 Arg2:T6	
+R9	RESULT Arg1:T4 Arg2:T8	
+R10	CONDITION Arg1:T7 Arg2:T11	
+T12	Argument 84 90	走行時の振動
+T14	Connective 90 93	により
+T13	Argument 93 99	ボルトが緩み
+T15	Connective 83 84	ず
+R11	REASON Arg1:T15 Arg2:T3	
+R12	RESULT Arg1:T15 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T12	
+R14	RESULT Arg1:T14 Arg2:T13	
+T16	Connective 138 140	して
+T17	Argument 140 153	アダプタが固定できなくなり
+T18	Connective 152 153	り
+T19	Argument 153 159	動力伝達不能
+R2	REASON Arg1:T16 Arg2:T8	
+R15	RESULT Arg1:T16 Arg2:T17	
+R16	REASON Arg1:T18 Arg2:T17	
+R17	RESULT Arg1:T18 Arg2:T19	
+R18	REASON Arg1:T9 Arg2:T19	

@@ -1,0 +1,13 @@
+T1	Argument 0 36	リヤコンビネーションランプの尾灯と制動灯兼用の赤色レンズの耐候性が不十分
+T2	Connective 37 39	ため
+T3	Argument 40 57	長期間にわたり強い日射にさらされる
+T4	Connective 57 58	と
+T5	Argument 61 70	レンズの赤色が褪色
+T6	Connective 71 72	、
+T7	Argument 72 94	当該灯火の灯光の色が保安基準に適合しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

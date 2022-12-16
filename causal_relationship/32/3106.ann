@@ -1,0 +1,25 @@
+T1	Argument 0 57	路線バスの自動変速機において、変速ギヤ位置を制御しているバルブボデーのシフトバルブのリターンスプリングの強度が不足
+T2	Connective 58 59	て
+T3	Argument 62 76	そのままの状態で使用を続ける
+T4	Connective 76 77	と
+T5	Argument 78 88	当該スプリングが折損
+T6	Connective 96 100	このため
+T7	Argument 101 113	ギヤ段の変更に支障を生じ
+T8	Connective 113 114	、
+T9	Argument 114 116	最悪
+T10	Connective 117 119	場合
+T11	Argument 120 133	ギヤ段がニュートラルに固定
+R1	RESULT Arg1:T10 Arg2:T11	
+R2	CONDITION Arg1:T10 Arg2:T9	
+R3	RESULT Arg1:T8 Arg2:T11	
+R4	REASON Arg1:T8 Arg2:T7	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	REASON Arg1:T6 Arg2:T5	
+R7	RESULT Arg1:T4 Arg2:T5	
+R8	CONDITION Arg1:T4 Arg2:T3	
+R9	RESULT Arg1:T2 Arg2:T5	
+R10	REASON Arg1:T2 Arg2:T1	
+T12	Argument 136 144	発進できなくなる
+T13	Connective 135 136	て
+R11	REASON Arg1:T13 Arg2:T11	
+R12	RESULT Arg1:T13 Arg2:T12	

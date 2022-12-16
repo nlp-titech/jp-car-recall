@@ -1,0 +1,9 @@
+T1	Argument 1 43	工場装着のナビゲーションシステム装着車両において、ナビゲーションのプログラムが不適切
+T2	Connective 44 46	ため
+T3	Argument 47 90	カメラスイッチ操作を行ってもナビゲーション画面がサイドビューカメラ画像に切り替わらない
+T4	Connective 96 100	このとき
+T5	Argument 101 115	直前直左の状態を確認できない
+R1	RESULT Arg1:T4 Arg2:T5	
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T3	
+R4	REASON Arg1:T2 Arg2:T1	

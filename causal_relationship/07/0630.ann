@@ -1,0 +1,15 @@
+T1	Argument 0 31	電動パワーステアリングのトルクセンサー基盤のメッキ工程が不適切
+T2	Argument 35 44	当該メッキ部が欠損
+T3	Argument 46 58	基盤内部が導通不良となる
+T4	Argument 69 84	ハンドルの操作力の左右差が発生
+T5	Argument 96 107	ハンドルの操作力が増大
+T6	Connective 32 34	ため
+T7	Connective 45 46	、
+T8	Connective 64 68	そのため
+R1	REASON Arg1:T6 Arg2:T1	
+R2	REASON Arg1:T7 Arg2:T2	
+R3	RESULT Arg1:T7 Arg2:T3	
+R4	RESULT Arg1:T6 Arg2:T2	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	RESULT Arg1:T8 Arg2:T5	

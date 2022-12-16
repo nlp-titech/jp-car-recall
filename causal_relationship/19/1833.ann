@@ -1,0 +1,9 @@
+T1	Argument 19 42	大型ルーフエンドスポイラにおいて、形状が不適切
+T2	Connective 43 45	ため
+T3	Argument 46 71	自動車の最外側からウィング側端部までの寸法が小さく
+T4	Connective 71 72	、
+T5	Argument 72 94	エア・スポイラに係る保安基準を満足していない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

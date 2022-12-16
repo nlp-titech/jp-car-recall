@@ -1,0 +1,21 @@
+T1	Argument 0 27	中型消防自動車用原動機において、内部ギヤの洗浄が不適切
+T2	Connective 28 30	ため
+T3	Argument 31 50	異物がギヤシャフトのブッシュに入り込ん
+T4	Connective 57 61	そのため
+T5	Argument 62 70	消防用設備を駆動
+T6	Connective 72 73	と
+T7	Argument 73 83	当該ブッシュが焼付く
+T8	Connective 88 89	、
+T9	Argument 89 91	最悪
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T11	
+T10	Connective 92 94	場合
+T11	Argument 95 108	エンストし再始動不能になる
+R9	CONDITION Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	

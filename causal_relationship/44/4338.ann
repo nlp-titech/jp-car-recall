@@ -1,0 +1,21 @@
+T1	Argument 0 65	ブレーキ倍力装置のバキュームポンプ（真空倍力補正装置）内にある樹脂製の羽根（羽根を回転することにより負圧を発生させる。）が材質不良
+T2	Connective 66 68	ため
+T3	Argument 69 95	当該羽根とバキュームポンプ本体の内部側面が徐々に摩耗
+T4	Connective 96 97	て
+T5	Argument 98 105	気密性が損なわ
+T6	Connective 106 107	、
+T7	Argument 120 138	倍力装置に適正な負圧が得られなくなり
+T8	Connective 138 139	、
+T9	Argument 139 149	制動停止距離がのびる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 107 117	このままの状態で使用
+T11	Connective 119 120	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T7	

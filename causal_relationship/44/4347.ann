@@ -1,0 +1,17 @@
+T1	Argument 0 17	始動装置の継電器の防水性能が不十分
+T2	Connective 18 20	ため
+T3	Argument 37 50	当該継電器内部に水分が入り
+T4	Connective 50 51	、
+T5	Argument 51 58	電気回路が短絡
+T6	Connective 59 60	て
+T7	Argument 60 72	原動機が始動できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T8	Argument 21 35	このままの状態で使用を続ける
+T9	Connective 35 36	と
+R3	CONDITION Arg1:T9 Arg2:T8	
+R4	RESULT Arg1:T9 Arg2:T3	
+R5	REASON Arg1:T4 Arg2:T3	
+R6	RESULT Arg1:T4 Arg2:T5	
+R7	REASON Arg1:T6 Arg2:T5	
+R8	RESULT Arg1:T6 Arg2:T7	

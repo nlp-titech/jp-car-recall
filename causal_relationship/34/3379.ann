@@ -1,0 +1,29 @@
+T1	Argument 0 40	バッテリーのプラス端子に接続する電気配線の長さ及びシートブラケットの形状が不適切
+T2	Connective 41 43	ため
+T3	Argument 44 64	電気配線がシートブラケットの上に乗り上げ
+T4	Connective 64 65	、
+T5	Argument 65 83	シートとシートブラケットの間に挟まる
+T6	Connective 89 93	そのため
+T7	Argument 94 108	そのままの状態で使用を続ける
+T8	Connective 108 109	と
+T9	Argument 110 122	当該電気配線の被覆が損傷
+T10	Connective 126 127	て
+T11	Argument 128 130	最悪
+T12	Connective 131 133	場合
+T13	Argument 134 139	火災に至る
+R1	RESULT Arg1:T12 Arg2:T13	
+R2	CONDITION Arg1:T12 Arg2:T11	
+R3	RESULT Arg1:T10 Arg2:T13	
+R4	REASON Arg1:T10 Arg2:T15	
+R5	RESULT Arg1:T8 Arg2:T9	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T9	
+R8	REASON Arg1:T6 Arg2:T5	
+R9	RESULT Arg1:T4 Arg2:T5	
+R10	REASON Arg1:T4 Arg2:T3	
+R11	RESULT Arg1:T2 Arg2:T3	
+R12	REASON Arg1:T2 Arg2:T1	
+T14	Connective 122 123	し
+T15	Argument 123 125	短絡
+R13	REASON Arg1:T14 Arg2:T9	
+R14	RESULT Arg1:T14 Arg2:T15	

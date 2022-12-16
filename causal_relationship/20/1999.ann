@@ -1,0 +1,33 @@
+T1	Argument 1 17	燃料リターンパイプの成形が不適切
+T2	Connective 18 20	ため
+T3	Argument 21 36	当該パイプがヘッドカバーと接触
+T4	Connective 46 50	そのため
+T5	Argument 60 70	当該パイプに穴が開き
+T6	Connective 70 71	、
+T7	Argument 71 84	エンジンオイルに燃料が混入
+T8	Connective 85 86	、
+T11	Argument 92 100	エンジンが過回転
+T12	Connective 104 107	により
+T13	Argument 107 116	エンジン内部が損傷
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+T9	Argument 51 57	エンジン振動
+T10	Connective 57 60	により
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T5	
+T14	Argument 86 88	最悪
+T15	Connective 89 91	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T13	
+R8	RESULT Arg1:T8 Arg2:T11	
+T16	Connective 116 117	し
+T17	Argument 117 126	エンジン停止に至る
+R15	REASON Arg1:T16 Arg2:T13	
+R16	RESULT Arg1:T16 Arg2:T17	

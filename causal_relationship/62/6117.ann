@@ -1,0 +1,29 @@
+T2	Connective 33 35	ため
+T3	Argument 36 47	ボルトの締結力が失われ
+T4	Argument 48 54	ボルトが緩む
+T5	Connective 47 48	、
+T6	Connective 60 64	そのため
+T7	Argument 65 79	そのままの状態で使用を続ける
+T8	Connective 79 80	と
+T9	Argument 81 86	緩みが進行
+T10	Connective 86 87	し
+T11	Argument 87 93	ボルトが折損
+T12	Connective 94 95	て
+T13	Argument 96 98	最悪
+T14	Connective 99 101	場合
+T15	Argument 102 109	ホイールが脱落
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T4	
+R5	REASON Arg1:T6 Arg2:T4	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R6	RESULT Arg1:T8 Arg2:T9	
+R8	RESULT Arg1:T6 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T15	
+R13	CONDITION Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+T1	Argument 8 32	ホイールボルトにおいて、ボルトの表面処理が不適切
+R1	REASON Arg1:T2 Arg2:T1	

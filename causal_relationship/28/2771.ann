@@ -1,0 +1,13 @@
+T1	Argument 0 32	燃料フィラーホースにおいて、燃料フィラーパイプへの組付けが不適切
+T2	Connective 33 35	ため
+T3	Argument 36 61	当該ホースと燃料フィラーパイプとのシール性能が低下
+T4	Connective 69 73	そのため
+T5	Argument 74 114	燃料を給油ノズルの自動停止（オートストップ）機能が作動した後に継ぎ足し給油を行っ
+T6	Connective 115 117	場合
+T7	Argument 119 132	当該ホースから燃料が漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

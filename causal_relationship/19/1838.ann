@@ -1,0 +1,29 @@
+T1	Argument 0 30	油圧式パワーステアリングの低圧側油圧ホースの製造工程が不適切
+T2	Connective 31 33	ため
+T3	Argument 34 40	ホースが変形
+T4	Connective 50 54	そのため
+T5	Argument 72 77	亀裂が生じ
+T6	Connective 77 78	て
+T7	Argument 78 84	作動油が漏れ
+T8	Connective 84 85	、
+T9	Argument 91 97	排気管に付着
+T10	Connective 97 98	し
+T11	Argument 98 103	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 55 68	ハンドル操作による油圧変動
+T13	Connective 68 71	により
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T5	
+T14	Argument 85 87	最悪
+T15	Connective 88 90	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T9	

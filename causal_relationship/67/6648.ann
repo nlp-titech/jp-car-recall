@@ -1,0 +1,39 @@
+T1	Argument 5 41	ブローバイガス還元装置において、ブローバイガスヒーターの成形加工が不適切
+T2	Connective 42 44	ため
+T3	Argument 45 57	外装樹脂にクラックが発生
+T4	Connective 65 69	そのため
+T5	Argument 70 80	クラックに水分が浸入
+T6	Connective 82 83	と
+T7	Argument 84 91	クラックが拡大
+T8	Argument 92 112	樹脂内部にある電熱線ヒーターの回路が短絡
+T9	Connective 91 92	し
+T10	Connective 113 114	て
+T11	Argument 114 120	警告灯が点灯
+T13	Argument 122 132	そのまま使用を続ける
+T14	Connective 132 133	と
+T15	Argument 134 143	ヒーターが異常発熱
+T16	Connective 144 145	て
+T17	Argument 145 150	外装が溶け
+T18	Connective 150 151	、
+T19	Argument 151 153	最悪
+T20	Connective 154 156	場合
+T21	Argument 157 162	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+R9	REASON Arg1:T10 Arg2:T8	
+R10	RESULT Arg1:T10 Arg2:T11	
+R13	CONDITION Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R15	REASON Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T17	
+R17	REASON Arg1:T18 Arg2:T17	
+R18	RESULT Arg1:T18 Arg2:T21	
+R19	CONDITION Arg1:T20 Arg2:T19	
+R20	RESULT Arg1:T20 Arg2:T21	
+R4	RESULT Arg1:T4 Arg2:T7	
+R11	RESULT Arg1:T10 Arg2:T15	

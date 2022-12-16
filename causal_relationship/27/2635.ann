@@ -1,0 +1,21 @@
+T1	Argument 0 67	重心高が高い形状のセミトレーラにおいて、旋回時における車軸及びホイールハブに繰り返し作用する応力が大きくなることについての評価が不十分
+T2	Connective 71 73	ため
+T3	Argument 74 86	ホイールハブに亀裂が発生
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 94 98	そのため
+T5	Argument 122 131	ホイールハブが破損
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 132 133	、
+T7	Argument 139 144	車輪が脱落
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 99 120	ホイールハブに亀裂がある状態で使用を続ける
+T9	Connective 120 121	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 133 135	最悪
+T11	Connective 136 138	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T7	

@@ -1,0 +1,21 @@
+T1	Argument 0 33	原動機に燃料を供給する高圧燃料ポンプの燃料通路の加工仕上げに不適切
+T2	Argument 56 76	高圧燃料ポンプ内に異物（アルミ片）が付着
+T3	Argument 78 85	燃料圧力が低下
+T4	Argument 94 111	原動機が停止し、再始動できなくなる
+T5	Connective 39 40	、
+T6	Connective 77 78	、
+T7	Connective 86 87	て
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 40 54	そのままの状態で使用を続ける
+T9	Connective 54 55	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T2	
+T10	Argument 88 90	最悪
+T11	Connective 91 93	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T4	

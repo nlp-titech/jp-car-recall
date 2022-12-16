@@ -1,0 +1,25 @@
+T1	Argument 0 24	後写鏡において、鏡面の角度調整部の耐候性が不十分
+T2	Connective 25 27	ため
+T3	Argument 28 39	当該調整部に亀裂が発生
+T4	Connective 47 51	そのため
+T7	Argument 64 69	亀裂が進行
+T10	Connective 70 71	、
+T11	Argument 77 85	当該調整部が破損
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R7	REASON Arg1:T10 Arg2:T7	
+R8	RESULT Arg1:T10 Arg2:T11	
+T5	Argument 52 62	そのまま使用を続ける
+T6	Connective 62 63	と
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 71 73	最悪
+T9	Connective 74 76	場合
+T12	Connective 86 87	て
+T13	Argument 87 93	後写鏡が脱落
+R9	CONDITION Arg1:T9 Arg2:T8	
+R10	RESULT Arg1:T9 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	

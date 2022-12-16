@@ -1,0 +1,13 @@
+T1	Argument 0 54	トランクルームに搭載してあるジャッキのネジ部を支えているスラストベアリングワッシャの強度が製造不良により不足
+T2	Connective 63 64	、
+T3	Argument 64 78	このままの状態で使用を続ける
+T4	Connective 78 79	と
+T5	Argument 80 82	最悪
+T6	Connective 83 85	場合
+T7	Argument 86 97	使用中にジャッキが破損
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	CONDITION Arg1:T6 Arg2:T5	
+R4	RESULT Arg1:T6 Arg2:T7	
+R5	RESULT Arg1:T4 Arg2:T7	
+R6	RESULT Arg1:T2 Arg2:T7	

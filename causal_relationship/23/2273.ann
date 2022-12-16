@@ -1,0 +1,21 @@
+T1	Argument 0 31	エンジン製造時の検査工程において、検査用電気配線の端子部を変形
+T2	Connective 34 36	ため
+T3	Argument 37 53	エンジン側の電気配線の端子が変形
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 63 67	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 84 93	当該配線が接触不良
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 96 97	、
+T7	Argument 103 122	走行中にエンストして再始動出来なくなる
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T10	Argument 68 82	そのままの状態で使用を続ける
+T11	Connective 82 83	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	
+T12	Argument 97 99	最悪
+T13	Connective 100 102	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R7	RESULT Arg1:T13 Arg2:T7	

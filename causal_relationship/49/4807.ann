@@ -1,0 +1,17 @@
+T1	Argument 0 36	助手席の座席ベルトにおいて、座席ベルトを車体に固定する取付部の強度が不足
+T2	Connective 40 42	ため
+T3	Argument 82 96	ベルトが当該取付部からはずれ
+T4	Connective 96 97	、
+T5	Argument 97 108	乗員を拘束できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 59 78	衝突時等大きな荷重が当該ベルトにかかっ
+T7	Connective 79 81	場合
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 43 57	そのままの状態で使用を続ける
+T9	Connective 57 58	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	

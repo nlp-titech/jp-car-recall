@@ -1,0 +1,45 @@
+T1	Argument 16 39	ファンシャフトプーリーベアリングの選定が不適切
+T2	Argument 49 56	シャフトが傾き
+T3	Argument 57 75	プーリーベアリングの密閉性が低くなる
+T4	Argument 86 99	プーリー内のグリースが漏れ
+T5	Argument 100 104	潤滑不良
+T6	Argument 105 115	ベアリングが異常摩耗
+T7	Argument 118 128	ベアリングが焼き付き
+T8	Argument 129 131	最悪
+T9	Argument 135 147	ファンがラジエータに干渉
+T10	Argument 149 155	冷却水が漏れ
+T11	Argument 156 163	走行不能になる
+T12	Connective 40 42	ため
+T13	Connective 56 57	、
+T14	Connective 81 85	そのため
+T15	Connective 99 100	、
+T16	Connective 104 105	で
+T17	Connective 116 117	て
+T18	Connective 128 129	、
+T19	Connective 132 134	場合
+T20	Connective 148 149	て
+T21	Connective 155 156	、
+R1	REASON Arg1:T12 Arg2:T1	
+R2	RESULT Arg1:T12 Arg2:T2	
+R3	REASON Arg1:T13 Arg2:T2	
+R4	RESULT Arg1:T13 Arg2:T3	
+R5	REASON Arg1:T14 Arg2:T3	
+R6	RESULT Arg1:T14 Arg2:T4	
+R7	REASON Arg1:T15 Arg2:T4	
+R8	RESULT Arg1:T15 Arg2:T5	
+R9	REASON Arg1:T16 Arg2:T5	
+R10	RESULT Arg1:T16 Arg2:T6	
+R11	REASON Arg1:T17 Arg2:T6	
+R12	RESULT Arg1:T17 Arg2:T7	
+R13	REASON Arg1:T18 Arg2:T7	
+R15	CONDITION Arg1:T19 Arg2:T8	
+R16	RESULT Arg1:T19 Arg2:T9	
+R17	REASON Arg1:T20 Arg2:T9	
+R18	RESULT Arg1:T20 Arg2:T10	
+R19	REASON Arg1:T21 Arg2:T10	
+R20	RESULT Arg1:T21 Arg2:T11	
+R14	RESULT Arg1:T18 Arg2:T9	
+T22	Connective 48 49	に
+T23	Argument 43 48	高速走行時
+R21	CONDITION Arg1:T22 Arg2:T23	
+R22	RESULT Arg1:T22 Arg2:T2	

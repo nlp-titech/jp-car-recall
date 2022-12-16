@@ -1,0 +1,37 @@
+T1	Argument 0 18	燃料タンクの車体への固定方法が不適切
+T2	Argument 22 32	上面角部に応力が集中
+T3	Argument 37 63	当該タンクに熱影響などによる膨張や収縮が繰り返される
+T4	Argument 65 74	当該部に亀裂が発生
+T5	Argument 99 104	亀裂が進行
+T6	Argument 112 114	貫通
+T7	Argument 124 131	燃料が滲み出る
+T8	Argument 117 122	燃料満タン
+T9	Connective 122 123	時
+T10	Connective 115 116	て
+T11	Connective 105 106	、
+R1	RESULT Arg1:T9 Arg2:T7	
+R2	RESULT Arg1:T10 Arg2:T7	
+R3	CONDITION Arg1:T9 Arg2:T8	
+R4	REASON Arg1:T10 Arg2:T6	
+R5	RESULT Arg1:T11 Arg2:T6	
+R6	REASON Arg1:T11 Arg2:T5	
+T12	Connective 82 86	そのため
+R7	REASON Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T5	
+T13	Connective 63 64	と
+R9	RESULT Arg1:T13 Arg2:T4	
+R10	CONDITION Arg1:T13 Arg2:T3	
+T14	Connective 36 37	、
+R11	REASON Arg1:T14 Arg2:T2	
+R12	RESULT Arg1:T14 Arg2:T4	
+T15	Connective 19 21	ため
+R13	REASON Arg1:T15 Arg2:T1	
+R14	RESULT Arg1:T15 Arg2:T2	
+T16	Argument 87 97	そのまま使用を続ける
+T17	Connective 97 98	と
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T5	
+T18	Argument 106 108	最悪
+T19	Connective 109 111	場合
+R17	CONDITION Arg1:T19 Arg2:T18	
+R18	RESULT Arg1:T19 Arg2:T6	

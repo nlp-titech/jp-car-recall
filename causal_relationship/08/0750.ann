@@ -1,0 +1,9 @@
+T1	Argument 0 40	ディーラーオプション部品として販売されたホイール・キャップにおいて、形状が不適切
+T2	Connective 41 43	ため
+T3	Argument 44 64	ホイール・キャップが自動車の車体から突出
+T4	Connective 69 73	そのため
+T5	Argument 74 99	ホイール・キャップに係わる保安基準を満足していない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

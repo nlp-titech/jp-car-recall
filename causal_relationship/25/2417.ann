@@ -1,0 +1,23 @@
+T1	Argument 2 26	製造工程において、バックドアの建付け調整が不十分
+T3	Argument 33 60	ドアロックとドアストライカーの噛み合い角の設計も不適切
+T4	Connective 61 63	ため
+T5	Argument 64 75	ドアが確実に閉まらない
+T6	Connective 81 85	そのため
+T9	Argument 102 115	ドアロックの噛み合いが外れ
+T10	Connective 115 116	て
+T11	Argument 117 126	走行中にドアが開き
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T7	Argument 86 100	そのままの状態で使用を続ける
+T8	Connective 100 101	と
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T12	Connective 126 127	、
+T13	Argument 127 133	積載物が落下
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R1	REASON Arg1:T4 Arg2:T1	

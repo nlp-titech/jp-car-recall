@@ -1,0 +1,29 @@
+T1	Argument 0 30	動力伝達装置において、トルクコンバータホースの取回しが不適切
+T2	Connective 31 33	ため
+T3	Argument 34 47	当該ホースがフレームと干渉
+R1	RESULT Arg1:T2 Arg2:T3	
+R2	REASON Arg1:T2 Arg2:T1	
+T4	Connective 55 59	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 85 93	当該ホースが損傷
+T8	Argument 76 82	走行中の振動
+T9	Connective 82 85	により
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Connective 94 95	、
+R9	REASON Arg1:T10 Arg2:T5	
+T11	Argument 107 114	走行不能になる
+R4	RESULT Arg1:T4 Arg2:T5	
+T12	Argument 101 107	オイルが漏れ
+R10	RESULT Arg1:T10 Arg2:T12	
+T13	Connective 106 107	れ
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T11	
+T6	Connective 74 75	と
+T7	Argument 60 74	そのままの状態で使用を続ける
+R5	CONDITION Arg1:T6 Arg2:T7	
+R6	RESULT Arg1:T6 Arg2:T5	
+T14	Argument 95 97	最悪
+T15	Connective 98 100	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T12	

@@ -1,0 +1,33 @@
+T1	Argument 0 45	乗合バスの車椅子固定部に装着した折りたたみ式座席の背もたれ固定機構のロックピンの強度が不足
+T2	Connective 49 51	ため
+T3	Argument 52 86	背もたれが折りたたまれた状態から背もたれを起こす際に誤った操作を行う
+T4	Connective 86 87	と
+T5	Argument 88 96	ロックピンが変形
+T6	Connective 104 108	そのため
+T9	Argument 109 136	背もたれを起こした時に、当該ロックピンがロックされない
+T10	Connective 141 142	、
+T11	Argument 142 155	背もたれが確実に固定されず
+T12	Connective 155 156	、
+T13	Argument 156 158	最悪
+T14	Connective 159 161	場合
+T15	Argument 162 183	停車時等に乗客が背もたれを支えにするなどし
+T16	Connective 184 186	場合
+T17	Argument 187 194	背もたれが倒れ
+T18	Connective 194 195	、
+T19	Argument 195 201	乗客が転倒等
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R7	RESULT Arg1:T6 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	CONDITION Arg1:T14 Arg2:T13	
+R12	REASON Arg1:T12 Arg2:T11	
+R13	RESULT Arg1:T12 Arg2:T17	
+R14	RESULT Arg1:T14 Arg2:T17	
+R15	CONDITION Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T17	
+R17	REASON Arg1:T18 Arg2:T17	
+R18	RESULT Arg1:T18 Arg2:T19	

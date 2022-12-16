@@ -1,0 +1,29 @@
+T1	Argument 20 38	アクセルペダルのパッド部の強度が不足
+T2	Argument 45 63	アクセルペダルを長時間一定の力で踏む
+T3	Argument 64 74	パッド部に亀裂が生じ
+T4	Argument 86 100	そのままの状態で使用を続ける
+T5	Argument 102 109	パッド部が破損
+T6	Argument 111 113	最悪
+T7	Argument 117 139	破損したパッド部がアクセルリンクに引っかかり
+T8	Argument 140 154	エンジン回転が下がらなくなる
+T9	Connective 42 44	ため
+T10	Connective 63 64	と
+T11	Connective 81 85	そのため
+T12	Connective 100 101	と
+T13	Connective 110 111	、
+T14	Connective 114 116	場合
+T15	Connective 139 140	、
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T3	
+R3	CONDITION Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T3	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T5	
+R7	CONDITION Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T5	
+R9	REASON Arg1:T13 Arg2:T5	
+R10	RESULT Arg1:T13 Arg2:T7	
+R11	CONDITION Arg1:T14 Arg2:T6	
+R12	RESULT Arg1:T14 Arg2:T7	
+R13	REASON Arg1:T15 Arg2:T7	
+R14	RESULT Arg1:T15 Arg2:T8	

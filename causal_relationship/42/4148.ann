@@ -1,0 +1,9 @@
+T2	Connective 45 47	ため
+T3	Argument 48 76	後部反射器の反射特性、後退灯の配光特性が基準値を満足せず
+T4	Connective 76 77	、
+T5	Argument 77 99	保安基準第３８条及び４０条の規定に適合しない
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T1	Argument 23 44	後部反射器及び後退灯において、選定が不適切
+R1	REASON Arg1:T2 Arg2:T1	

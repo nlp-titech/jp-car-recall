@@ -1,0 +1,17 @@
+T1	Argument 8 25	トランスミッションギヤの強度が不足
+T2	Connective 29 31	ため
+T3	Argument 32 48	変速時にギヤに過度の衝撃が加わる
+T4	Connective 48 49	と
+T5	Argument 49 70	トランスミッションのアウトプットギヤが破損
+T6	Connective 78 82	そのため
+T7	Argument 83 94	ギヤが変速できなくなり
+T8	Connective 94 95	、
+T9	Argument 95 102	走行不能となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	

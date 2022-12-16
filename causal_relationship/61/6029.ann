@@ -1,0 +1,13 @@
+T1	Argument 0 51	純正アクセサリの運転席フロアマット（ラバーマット）において、誤って仕様の異なる車両のフロアマットを販売
+T2	Connective 53 55	ため
+T3	Argument 56 58	装着
+T4	Connective 60 61	と
+T6	Argument 61 77	形状が合わずアクセルペダルと干渉
+T5	Connective 78 79	て
+T7	Argument 80 98	スムーズなアクセル操作に支障をきたす
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T6	
+R4	RESULT Arg1:T2 Arg2:T6	
+R5	REASON Arg1:T5 Arg2:T6	
+R6	RESULT Arg1:T5 Arg2:T7	

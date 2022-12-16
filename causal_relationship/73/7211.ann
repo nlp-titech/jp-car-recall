@@ -1,0 +1,21 @@
+T2	Connective 34 36	ため
+T3	Argument 37 46	テールゲートを開け
+T4	Connective 72 76	そのため
+T5	Argument 77 79	最悪
+T6	Connective 80 82	場合
+T7	Argument 83 95	テールゲートに挟まれ負傷
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T1	Argument 0 33	電動テールゲートを制御しているドライブユニットのプログラムが不適切
+R1	REASON Arg1:T2 Arg2:T1	
+T8	Connective 47 48	後
+T9	Argument 49 59	その位置で保持されず
+T10	Connective 59 60	、
+T11	Argument 60 66	下がってくる
+R2	RESULT Arg1:T2 Arg2:T9	
+R3	CONDITION Arg1:T8 Arg2:T3	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	REASON Arg1:T10 Arg2:T9	
+R9	RESULT Arg1:T10 Arg2:T11	
+R10	REASON Arg1:T4 Arg2:T11	

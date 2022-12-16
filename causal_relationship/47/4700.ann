@@ -1,0 +1,17 @@
+T1	Argument 0 48	燃料タンクと燃料ポンプの間に取り付けられているアルミ製燃料フィルターの容器合わせ部の加工が不適切
+T2	Connective 49 51	ため
+T3	Argument 67 74	当該容器が腐食
+T4	Connective 75 76	、
+T5	Argument 82 88	燃料が漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 52 66	そのままの状態で使用を続ける
+T7	Connective 66 67	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 76 78	最悪
+T9	Connective 79 81	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

@@ -1,0 +1,17 @@
+T1	Argument 6 44	燃料ホース検査工程において、燃料ポンプの樹脂パイプ部に不適切な力をかけて検査
+T2	Connective 48 50	ため
+T3	Argument 51 66	当該パイプ部に微細な亀裂が発生
+T4	Connective 76 80	そのため
+T5	Argument 93 101	当該パイプが破損
+T6	Argument 103 109	燃料が漏れる
+T7	Connective 102 103	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	
+T8	Argument 81 91	そのまま使用を続ける
+T9	Connective 91 92	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

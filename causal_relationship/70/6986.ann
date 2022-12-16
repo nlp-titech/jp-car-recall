@@ -1,0 +1,17 @@
+T1	Argument 0 35	車両の制御コントローラにおいて、設定データの書き込みプログラムが不適切
+T2	Connective 36 38	ため
+T3	Argument 39 47	充電プラグ差込み
+T4	Connective 47 48	時
+T5	Argument 50 103	プラギング制動（ブレーキを操作せずに前進・後進の切り換え操作で減速を行う操作）時の減速力の設定値がリセット
+T6	Connective 112 116	そのため
+T7	Argument 126 143	運転者の意図する減速力が得られない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 117 124	プラギング制動
+T9	Connective 124 125	時
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T7	

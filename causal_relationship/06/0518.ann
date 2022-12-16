@@ -1,0 +1,15 @@
+T1	Argument 0 41	警察自動車において、手動変速機から車速信号を取り出すワイヤーケーブルの配索が不適切
+T2	Argument 45 62	当該ワイヤーケーブルの耐久性が不足
+T3	Argument 64 66	切損
+T4	Argument 68 82	速度取締装置が機能しなくなる
+T5	Argument 87 98	速度計が作動しなくなる
+T6	Connective 42 44	ため
+T7	Connective 63 64	て
+T8	Connective 67 68	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	RESULT Arg1:T8 Arg2:T5	

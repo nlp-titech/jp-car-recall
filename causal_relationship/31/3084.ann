@@ -1,0 +1,25 @@
+T1	Argument 0 45	排気ガス再循環（ＥＧＲ）バルブにおいて、バルブシャフト部にあるブッシュのシール構造が不適切
+T2	Connective 46 48	ため
+T3	Argument 49 67	バルブシャフト作動時にシール性が低下
+T4	Connective 68 69	、
+T5	Argument 69 81	排気ガスがモータ内に侵入
+T6	Argument 116 123	導通不良が発生
+T7	Argument 127 139	ＥＧＲバルブの機能が停止
+T8	Connective 125 126	と
+T9	Argument 141 151	エンジン警告灯が点灯
+T10	Connective 140 141	、
+R1	RESULT Arg1:T10 Arg2:T9	
+R2	REASON Arg1:T10 Arg2:T7	
+R3	RESULT Arg1:T8 Arg2:T7	
+R4	CONDITION Arg1:T8 Arg2:T6	
+R5	RESULT Arg1:T4 Arg2:T5	
+R6	REASON Arg1:T4 Arg2:T3	
+R7	RESULT Arg1:T2 Arg2:T3	
+R8	REASON Arg1:T2 Arg2:T1	
+T11	Connective 88 89	。
+R9	REASON Arg1:T11 Arg2:T5	
+T14	Argument 93 109	モータ内部にあるブラシが異常摩耗
+T15	Connective 113 116	により
+R13	REASON Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T6	
+R10	RESULT Arg1:T11 Arg2:T14	

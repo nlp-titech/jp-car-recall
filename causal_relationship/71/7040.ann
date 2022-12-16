@@ -1,0 +1,33 @@
+T1	Argument 0 66	中期ブレーキ規制以降のトレーラで車軸が１軸またはリフトアクスル仕様のものにおいて、エア制御バルブなどの関連部品が交換期限を超えて使用
+T2	Connective 71 75	によって
+T3	Argument 76 83	エア漏れが生じ
+T4	Connective 82 83	じ
+T5	Argument 83 96	ブレーキ系統のエア圧が低下
+T6	Connective 106 108	場合
+T7	Argument 109 128	駐車ブレーキが自動で作動する構造となっ
+T8	Connective 131 133	ため
+T9	Argument 134 147	駐車ブレーキを解除せず走行
+T10	Connective 149 150	と
+T11	Argument 151 163	ブレーキの引き摺りが発生
+T12	Connective 164 165	、
+T13	Argument 165 167	最悪
+T14	Connective 168 170	場合
+T15	Argument 171 181	ブレーキドラムが過熱
+T16	Connective 181 182	し
+T17	Argument 182 187	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	REASON Arg1:T8 Arg2:T7	
+R7	CONDITION Arg1:T10 Arg2:T9	
+R8	RESULT Arg1:T10 Arg2:T11	
+R9	RESULT Arg1:T8 Arg2:T11	
+R10	RESULT Arg1:T6 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	CONDITION Arg1:T14 Arg2:T13	
+R13	RESULT Arg1:T14 Arg2:T15	
+R14	RESULT Arg1:T12 Arg2:T15	
+R15	REASON Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T17	

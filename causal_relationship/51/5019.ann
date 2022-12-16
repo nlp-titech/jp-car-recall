@@ -1,0 +1,21 @@
+T1	Argument 8 32	コネクティングロッドの取付けボルトの材質が不適切
+T2	Connective 33 35	ため
+T3	Argument 55 63	当該ボルトが脱落
+T4	Connective 71 75	そのため
+T5	Argument 76 83	エンジンが破損
+T6	Connective 84 85	、
+T7	Argument 91 99	エンジンがロック
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 36 50	エンジンを高回転数で連続運転
+T9	Connective 52 54	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 85 87	最悪
+T11	Connective 88 90	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T7	

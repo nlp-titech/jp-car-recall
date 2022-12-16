@@ -1,0 +1,31 @@
+T1	Argument 2 33	触媒コンバータ内の触媒担体固定用ワイヤーメッシュの材質が不適切
+T2	Argument 37 45	連続して高速走行
+T3	Argument 51 73	当該ワイヤーメッシュが排気ガスの熱で酸化劣化
+T4	Argument 75 86	触媒担体がケースと干渉
+T5	Argument 87 92	異音を発生
+T6	Argument 105 115	そのまま使用を続ける
+T7	Argument 117 124	触媒担体が摩耗
+T8	Argument 126 128	損失
+T9	Argument 130 141	排出ガス基準値を超える
+T10	Connective 34 36	ため
+T11	Connective 48 50	場合
+T12	Connective 74 75	、
+T13	Connective 86 87	し
+T15	Connective 115 116	と
+T16	Connective 125 126	て
+T17	Connective 129 130	、
+R1	REASON Arg1:T10 Arg2:T1	
+R2	RESULT Arg1:T10 Arg2:T3	
+R3	CONDITION Arg1:T11 Arg2:T2	
+R4	RESULT Arg1:T11 Arg2:T3	
+R5	REASON Arg1:T12 Arg2:T3	
+R6	RESULT Arg1:T12 Arg2:T4	
+R7	REASON Arg1:T13 Arg2:T4	
+R8	RESULT Arg1:T13 Arg2:T5	
+R11	CONDITION Arg1:T15 Arg2:T6	
+R12	RESULT Arg1:T15 Arg2:T7	
+R13	REASON Arg1:T16 Arg2:T7	
+R14	RESULT Arg1:T16 Arg2:T8	
+R15	REASON Arg1:T17 Arg2:T8	
+R16	RESULT Arg1:T17 Arg2:T9	
+R9	RESULT Arg1:T13 Arg2:T7	

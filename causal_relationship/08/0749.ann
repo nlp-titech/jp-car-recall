@@ -1,0 +1,33 @@
+T1	Argument 11 38	パワーステアリング用油圧ポンプ・プーリーの加工が不適切
+T2	Connective 39 41	ため
+T3	Argument 42 58	プーリー取付ナットの締付力が低下
+T4	Connective 66 70	そのため
+T5	Argument 87 101	当該プーリー取付ナットが緩み
+T6	Connective 101 102	、
+T7	Argument 102 126	パワーステアリング用油圧ポンプからプーリーが外れ
+T8	Argument 127 135	充電警告灯が点灯
+T10	Argument 137 148	ハンドルの操作力が増大
+T11	Argument 154 170	ウオーターポンプが作動しなくなり
+T12	Connective 170 171	、
+T13	Argument 171 178	オーバーヒート
+T14	Connective 179 180	て
+T15	Argument 180 187	走行不能となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T16	Connective 126 127	、
+R7	REASON Arg1:T16 Arg2:T7	
+R8	RESULT Arg1:T16 Arg2:T8	
+R12	REASON Arg1:T12 Arg2:T11	
+R13	RESULT Arg1:T12 Arg2:T13	
+R14	REASON Arg1:T14 Arg2:T13	
+R15	RESULT Arg1:T14 Arg2:T15	
+T17	Argument 71 85	そのままの状態で使用を続ける
+T18	Connective 85 86	と
+R16	CONDITION Arg1:T18 Arg2:T17	
+R17	RESULT Arg1:T18 Arg2:T5	
+R9	RESULT Arg1:T16 Arg2:T10	
+R10	RESULT Arg1:T16 Arg2:T11	

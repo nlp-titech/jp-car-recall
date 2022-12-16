@@ -1,0 +1,9 @@
+T1	Argument 0 19	制動灯において、電気回路の設計が不適切
+T2	Connective 20 22	ため
+T3	Argument 23 46	リヤゲート部に取り付けられた制動灯が点灯しない
+T4	Connective 47 51	そのため
+T5	Argument 52 69	保安基準第３９条の基準に適合しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

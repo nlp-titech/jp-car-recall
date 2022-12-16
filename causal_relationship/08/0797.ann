@@ -1,0 +1,33 @@
+T1	Argument 1 45	燃料タンク内に取り付けている燃料ポンプのレギュレータバルブのキャップ組み付け構造が不適切
+T2	Connective 46 48	ため
+T3	Argument 49 56	ガソリンの浸漬
+T4	Connective 56 59	により
+T5	Argument 59 68	当該キャップが膨潤
+T6	Argument 70 94	キャップとケース組み付け部の噛み合わせが緩くなる
+T7	Connective 100 104	そのため
+T8	Argument 105 126	縁石等を乗り越した衝撃が燃料タンクに加わる
+T9	Connective 126 127	と
+T10	Argument 128 137	当該キャップが外れ
+T11	Connective 137 138	、
+T12	Argument 138 150	レギュレータバルブが脱落
+T13	Connective 151 152	て
+T14	Argument 152 163	燃料が供給されなくなり
+T15	Connective 163 164	、
+T16	Argument 164 182	エンジンが停止して再始動できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+T19	Connective 69 70	、
+R4	REASON Arg1:T19 Arg2:T5	
+R5	RESULT Arg1:T19 Arg2:T6	
+R6	REASON Arg1:T7 Arg2:T6	
+R8	CONDITION Arg1:T9 Arg2:T8	
+R9	RESULT Arg1:T9 Arg2:T10	
+R10	REASON Arg1:T11 Arg2:T10	
+R11	RESULT Arg1:T11 Arg2:T12	
+R12	REASON Arg1:T13 Arg2:T12	
+R13	RESULT Arg1:T13 Arg2:T14	
+R14	REASON Arg1:T15 Arg2:T14	
+R15	RESULT Arg1:T15 Arg2:T16	
+R18	RESULT Arg1:T4 Arg2:T5	
+R7	RESULT Arg1:T7 Arg2:T10	

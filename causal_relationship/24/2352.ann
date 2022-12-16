@@ -1,0 +1,25 @@
+T1	Argument 0 29	スピードメーターケーブルを保持するクリップの加締めが不十分
+T3	Connective 30 32	ため
+T4	Connective 63 67	そのため
+T5	Argument 68 81	ケーブルがクリップから外れ
+T6	Argument 82 100	駐車時にハンドルを左に止まるまで操作
+T7	Connective 102 103	と
+T2	Argument 33 43	サスペンションが伸縮
+T8	Connective 45 46	と
+T9	Argument 46 57	ケーブルを保持出来ない
+T10	Argument 104 121	ハンドルストッパー部に噛込んで折損
+T11	Connective 122 123	、
+T12	Argument 123 134	速度計が作動しなくなる
+R1	REASON Arg1:T3 Arg2:T1	
+R2	RESULT Arg1:T3 Arg2:T9	
+R3	CONDITION Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T9	
+R5	REASON Arg1:T4 Arg2:T9	
+R6	RESULT Arg1:T4 Arg2:T5	
+T13	Connective 81 82	、
+R7	REASON Arg1:T13 Arg2:T5	
+R8	RESULT Arg1:T13 Arg2:T10	
+R9	CONDITION Arg1:T7 Arg2:T6	
+R10	RESULT Arg1:T7 Arg2:T10	
+R11	REASON Arg1:T11 Arg2:T10	
+R12	RESULT Arg1:T11 Arg2:T12	

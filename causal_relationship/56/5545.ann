@@ -1,0 +1,29 @@
+T1	Argument 0 38	応急用スペアタイヤを車体下部に固定する装置において、ブラケットの設計が不適切
+T2	Argument 42 48	走行中の振動
+T3	Argument 51 68	ブラケットと巻き上げケーブルが接触
+T4	Argument 69 71	磨耗
+T5	Argument 84 94	そのまま使用を続ける
+T6	Argument 96 103	ケーブルが破断
+T7	Argument 105 119	当該装置のタイヤ固定具が外れ
+T8	Argument 120 132	応急用スペアタイヤが脱落
+T9	Connective 39 41	ため
+T10	Connective 48 51	により
+T11	Connective 68 69	し
+T12	Connective 79 83	そのため
+T13	Connective 94 95	と
+T14	Connective 104 105	て
+T15	Connective 119 120	、
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T3	
+R3	REASON Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T3	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+R7	REASON Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T6	
+R9	CONDITION Arg1:T13 Arg2:T5	
+R10	RESULT Arg1:T13 Arg2:T6	
+R11	REASON Arg1:T14 Arg2:T6	
+R12	RESULT Arg1:T14 Arg2:T7	
+R13	REASON Arg1:T15 Arg2:T7	
+R14	RESULT Arg1:T15 Arg2:T8	

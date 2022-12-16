@@ -1,0 +1,25 @@
+T1	Argument 0 33	ナンバープレートホルダブラケット（番号標板取付金具）の形状が不適切
+T2	Connective 34 36	ため
+T3	Argument 46 59	当該ブラケットに亀裂が発生
+T4	Connective 67 71	そのため
+T5	Argument 88 98	当該ブラケットが破損
+T6	Connective 99 100	て
+T7	Argument 107 134	後面方向指示器、後部反射器、番号灯および番号標板が脱落
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 37 43	走行時の振動
+T9	Connective 43 46	により
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 72 86	そのままの状態で使用を続ける
+T11	Connective 86 87	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	
+T12	Argument 101 103	最悪
+T13	Connective 104 106	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T7	

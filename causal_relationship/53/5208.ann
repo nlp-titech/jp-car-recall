@@ -1,0 +1,29 @@
+T1	Argument 24 38	ＬＣＭのブレーカ機能が不適切
+T2	Connective 41 43	ため
+T4	Connective 84 85	れ
+T5	Argument 85 87	過熱
+T6	Connective 95 99	そのため
+T7	Argument 100 110	ＬＣＭ内で短絡が発生
+T8	Connective 111 112	て
+T9	Argument 112 123	コンピュータ内部が溶損
+T10	Connective 124 125	、
+T11	Argument 131 136	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 44 67	灯火等を増設するなど容量以上の電気負荷がかかっ
+T13	Connective 68 70	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+T14	Argument 125 127	最悪
+T15	Connective 128 130	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T11	
+T3	Argument 71 84	ＬＣＭ本体に過大な電流が流
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T13 Arg2:T3	
+R12	RESULT Arg1:T2 Arg2:T3	

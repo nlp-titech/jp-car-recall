@@ -1,0 +1,31 @@
+T1	Argument 0 28	エンジンルーム内の自動変速機用電気配線の組付作業が不適切
+T2	Connective 29 31	ため
+T3	Argument 32 60	当該配線とサーモスタットフィッティング端部との隙間が不足
+T4	Connective 69 70	、
+T5	Argument 70 77	走行時の振動等
+T6	Connective 77 80	により
+T7	Argument 80 85	被覆が損傷
+T8	Connective 93 97	そのため
+T9	Argument 98 112	そのままの状態で使用を続ける
+T10	Connective 112 113	と
+T11	Argument 114 116	最悪
+T12	Connective 117 119	場合
+T13	Argument 120 129	当該配線がショート
+T14	Connective 130 131	て
+T15	Argument 131 148	自動変速機が３速に固定のままとなる
+T16	Argument 152 163	速度計が指示不良となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	REASON Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	RESULT Arg1:T4 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	CONDITION Arg1:T10 Arg2:T9	
+R9	CONDITION Arg1:T12 Arg2:T11	
+R10	RESULT Arg1:T12 Arg2:T13	
+R11	RESULT Arg1:T10 Arg2:T13	
+R12	RESULT Arg1:T8 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R15	RESULT Arg1:T14 Arg2:T16	

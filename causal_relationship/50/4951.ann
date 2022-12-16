@@ -1,0 +1,9 @@
+T1	Argument 21 47	シートベルトテンショナー内部のリングのかしめが不適切
+T2	Connective 48 50	ため
+T3	Argument 51 79	作動時にシートベルトのたわみを適切に吸収することができず
+T4	Connective 79 80	、
+T5	Argument 80 98	衝突時等に確実な人員の拘束ができない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

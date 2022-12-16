@@ -1,0 +1,25 @@
+T1	Argument 0 18	騒音防止装置の遮音板の耐熱性が不十分
+T2	Connective 19 21	ため
+T3	Argument 25 43	排気管のつなぎ部の締付け方法が不適切
+T4	Connective 44 46	ため
+T5	Argument 47 54	排気ガスが漏れ
+T6	Connective 54 55	て
+T7	Argument 55 66	当該遮音板にすすが付着
+T8	Connective 70 73	により
+T9	Argument 80 86	遮音板が焼損
+T10	Argument 88 95	車両火災に至る
+T11	Connective 87 88	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T11 Arg2:T9	
+R10	RESULT Arg1:T11 Arg2:T10	
+T12	Argument 74 76	最悪
+T13	Connective 77 79	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T9	

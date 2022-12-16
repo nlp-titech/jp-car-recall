@@ -1,0 +1,17 @@
+T1	Argument 0 52	ＶＤＣ（ビークルダイナミクスコントロール）ユニットにおいて、電動パーキングブレーキ制御プログラムが不適切
+T4	Argument 56 106	車両駐車時に電動パーキングブレーキを作動させ、一定時間後にイグニッションスイッチをオフからオンに操作
+T5	Argument 110 132	電動パーキングブレーキのモータが作動し続ける
+T6	Argument 143 151	当該モータが損傷
+T7	Argument 153 173	電動パーキングブレーキが解除できなくなる
+T8	Connective 53 55	ため
+T11	Connective 108 109	と
+T12	Connective 138 142	そのため
+T13	Connective 152 153	、
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T5	
+R7	CONDITION Arg1:T11 Arg2:T4	
+R8	RESULT Arg1:T11 Arg2:T5	
+R9	REASON Arg1:T12 Arg2:T5	
+R10	RESULT Arg1:T12 Arg2:T6	
+R11	REASON Arg1:T13 Arg2:T6	
+R12	RESULT Arg1:T13 Arg2:T7	

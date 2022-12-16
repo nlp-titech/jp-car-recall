@@ -1,0 +1,33 @@
+T1	Argument 0 24	後輪ブレーキ用エア配管取付ブラケットの強度が不足
+T2	Connective 28 30	ため
+T3	Argument 44 59	当該取付ブラケットに亀裂が発生
+T4	Connective 67 71	そのため
+T5	Argument 72 82	そのまま使用を続ける
+T6	Connective 97 98	、
+T7	Argument 104 115	ブレーキエア配管が損傷
+T8	Connective 116 117	て
+T9	Argument 117 122	エアが漏れ
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T14	Argument 122 128	制動力が低下
+T15	Connective 121 122	れ
+R9	REASON Arg1:T15 Arg2:T9	
+R10	RESULT Arg1:T15 Arg2:T14	
+T16	Connective 82 83	と
+T17	Argument 84 96	当該取付ブラケットが折損
+R5	CONDITION Arg1:T16 Arg2:T5	
+R11	RESULT Arg1:T16 Arg2:T17	
+R12	REASON Arg1:T6 Arg2:T17	
+T10	Argument 31 40	走行時の路面入力等
+T11	Connective 40 44	によって
+R13	RESULT Arg1:T11 Arg2:T3	
+R14	REASON Arg1:T11 Arg2:T10	
+T12	Argument 98 100	最悪
+T13	Connective 101 103	場合
+R15	CONDITION Arg1:T13 Arg2:T12	
+R16	RESULT Arg1:T13 Arg2:T7	

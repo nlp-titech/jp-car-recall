@@ -1,0 +1,37 @@
+T1	Argument 0 28	横滑り防止装置（ＥＳＰ）において、制御プログラムが不適切
+T2	Connective 29 31	ため
+T4	Argument 32 65	衝突被害軽減ブレーキまたは、車間制御付きクルーズコントロールが作動
+T5	Connective 65 66	中
+T6	Argument 68 86	道路状況の変化や運転者のハンドル操作
+T7	Connective 86 89	により
+T8	Argument 89 97	機能が解除となっ
+T9	Connective 98 99	際
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T10	
+R4	CONDITION Arg1:T5 Arg2:T4	
+R5	RESULT Arg1:T5 Arg2:T8	
+R6	REASON Arg1:T7 Arg2:T6	
+T10	Argument 100 117	ブレーキの油圧が完全に解放されない
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T10	
+T11	Connective 123 127	そのため
+T12	Argument 128 137	ブレーキが引きずり
+T13	Connective 137 138	、
+R9	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T12	
+T14	Argument 138 148	そのまま走行を続ける
+T15	Connective 148 149	と
+T16	Argument 150 157	ブレーキが過熱
+T17	Connective 158 159	て
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T16	
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T16	
+T18	Argument 166 171	火災に至る
+R15	REASON Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T18	
+T19	Argument 160 162	最悪
+T20	Connective 163 165	場合
+R17	CONDITION Arg1:T20 Arg2:T19	
+R18	RESULT Arg1:T20 Arg2:T18	
+R19	RESULT Arg1:T7 Arg2:T8	

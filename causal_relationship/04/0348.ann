@@ -1,0 +1,25 @@
+T1	Argument 0 55	二輪自動車の加速装置（スロットルグリップ）において、スロットルグリップのハンドルパイプへの挿入部の構造が不適切
+T2	Argument 59 68	当該部位に水が進入
+T3	Argument 70 83	ハンドルパイプに錆びが発生
+T4	Argument 84 105	スロットルグリップが滑らかに作動しなくなり
+T5	Argument 112 128	スロットルグリップが戻らなくなり
+T6	Argument 129 143	原動機の回転が下がらなくなる
+T7	Connective 56 58	ため
+T8	Connective 69 70	て
+T9	Connective 83 84	し
+T10	Connective 105 106	、
+T11	Connective 128 129	、
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T5	
+R9	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	
+T12	Argument 106 108	最悪
+T13	Connective 109 111	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T5	

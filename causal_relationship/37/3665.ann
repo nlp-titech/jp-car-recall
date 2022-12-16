@@ -1,0 +1,31 @@
+T1	Argument 23 61	ベアリング抜け防止のかしめ圧及びベアリングを保持するハウジングの形状が不適切
+T2	Connective 62 64	ため
+T3	Argument 65 80	走行時の摩擦による熱や高い負荷
+T4	Connective 80 83	により
+T5	Argument 83 93	ベアリング内部が摩耗
+T6	Connective 101 105	そのため
+T7	Argument 106 120	そのままの状態で使用を続ける
+T8	Connective 120 121	と
+T9	Argument 122 134	ヨークジョイント部が破損
+T10	Connective 135 136	て
+T11	Argument 137 139	最悪
+T12	Connective 140 142	場合
+R2	CONDITION Arg1:T12 Arg2:T11	
+R4	REASON Arg1:T10 Arg2:T9	
+R5	RESULT Arg1:T8 Arg2:T9	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T9	
+R8	REASON Arg1:T6 Arg2:T5	
+R9	RESULT Arg1:T4 Arg2:T5	
+R10	REASON Arg1:T4 Arg2:T3	
+R11	RESULT Arg1:T2 Arg2:T3	
+R12	REASON Arg1:T2 Arg2:T1	
+T20	Argument 153 172	プロペラシャフトがスイングアームと干渉
+T21	Argument 174 184	リヤホイールがロック
+T23	Connective 173 174	、
+R14	REASON Arg1:T23 Arg2:T20	
+R15	RESULT Arg1:T23 Arg2:T21	
+R16	RESULT Arg1:T12 Arg2:T20	
+T13	Argument 143 150	走行不能となっ
+R1	RESULT Arg1:T12 Arg2:T13	
+R3	RESULT Arg1:T10 Arg2:T13	

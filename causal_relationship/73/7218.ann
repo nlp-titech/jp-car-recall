@@ -1,0 +1,9 @@
+T1	Argument 0 26	エアバッグ・コントロールユニットのプログラムが不適切
+T2	Connective 27 29	ため
+T3	Argument 30 63	車両挙動を高度な操舵技術で制御しないと横転してしまうような運転状況
+T4	Connective 63 67	において
+T5	Argument 68 111	車両が転倒していないにも関わらず、カーテンエアバッグおよびシートベルトテンショナが作動
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	

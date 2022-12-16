@@ -1,0 +1,35 @@
+T1	Argument 11 31	エアコンカバーとルーフの締結構造が不適切
+T2	Argument 35 49	ルーフ後方から強い風を受ける
+T3	Argument 51 72	カバーを締結している樹脂製ファスナーが外れ
+T4	Argument 73 79	カバーが浮い
+T5	Argument 80 93	ルーフとの間に隙間が生じる
+T6	Argument 102 110	強い横風を受ける
+T7	Argument 112 114	最悪
+T8	Argument 118 124	カバーが破損
+T9	Argument 125 127	脱落
+T10	Argument 130 140	他の交通の妨げになる
+T11	Connective 32 34	ため
+T12	Connective 49 50	と
+T13	Connective 72 73	、
+T14	Connective 110 111	と
+T15	Connective 115 117	場合
+T16	Connective 124 125	し
+T17	Connective 128 129	て
+R1	REASON Arg1:T11 Arg2:T1	
+R2	RESULT Arg1:T11 Arg2:T3	
+R3	CONDITION Arg1:T12 Arg2:T2	
+R4	RESULT Arg1:T12 Arg2:T3	
+R5	REASON Arg1:T13 Arg2:T3	
+R6	RESULT Arg1:T13 Arg2:T4	
+T18	Connective 79 80	て
+R7	REASON Arg1:T18 Arg2:T4	
+R8	RESULT Arg1:T18 Arg2:T5	
+R10	CONDITION Arg1:T14 Arg2:T6	
+R12	CONDITION Arg1:T15 Arg2:T7	
+R13	RESULT Arg1:T15 Arg2:T8	
+R14	REASON Arg1:T16 Arg2:T8	
+R15	RESULT Arg1:T16 Arg2:T9	
+R16	REASON Arg1:T17 Arg2:T9	
+R17	RESULT Arg1:T17 Arg2:T10	
+R9	RESULT Arg1:T18 Arg2:T8	
+R11	RESULT Arg1:T14 Arg2:T8	

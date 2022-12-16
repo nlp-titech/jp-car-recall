@@ -1,0 +1,25 @@
+T1	Argument 6 48	油圧発生部（マスターシリンダ）の構成部品であるピストンカップ（ゴム製）の耐熱性が不足
+T2	Connective 52 54	ため
+T3	Argument 83 95	当該ピストンカップが損傷
+T4	Connective 96 97	、
+T5	Argument 103 115	油圧の保持が出来なくなり
+T6	Connective 115 116	、
+T7	Argument 116 122	制動力が低下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 71 76	原動機の熱
+T9	Connective 79 82	により
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 55 69	このままの状態で使用を続ける
+T11	Connective 69 70	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T8	
+T12	Argument 97 99	最悪
+T13	Connective 100 102	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T5	

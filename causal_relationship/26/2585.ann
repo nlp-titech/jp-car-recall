@@ -1,0 +1,13 @@
+T1	Argument 0 28	後写鏡において、製造工程で使用する治具の寸法に余裕がない
+T2	Connective 28 30	ため
+T3	Argument 31 49	反射鏡をカットした後の研磨のバラツキ
+T4	Connective 49 52	により
+T5	Argument 53 65	当該反射鏡の寸法が小さい
+T6	Connective 71 75	そのため
+T7	Argument 76 93	道路運送車両の保安基準に適合しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

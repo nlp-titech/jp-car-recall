@@ -1,0 +1,21 @@
+T1	Argument 0 39	動力伝達装置において、前･後進切換レバ－内部の切換スイッチ接点部の構造が不適切
+T2	Argument 43 59	当該接点部が滑らかに動かなくなる
+T3	Argument 81 101	当該レバーを切換えてもスイッチが入らない
+T4	Argument 113 120	走行不能となる
+T5	Connective 40 42	ため
+T6	Connective 64 65	、
+T7	Connective 106 107	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 65 79	そのままの状態で使用を続ける
+T9	Connective 79 80	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 107 109	最悪
+T11	Connective 110 112	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T4	

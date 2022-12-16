@@ -1,0 +1,17 @@
+T1	Argument 0 30	アクセルペダル角度検出センサの静電気に対する保護構造が不適切
+T2	Argument 34 49	フロアプレートに帯電した静電気
+T3	Argument 53 67	当該センサが作動不良をおこす
+T4	Argument 73 75	最悪
+T5	Argument 79 87	走行できなくなる
+T6	Connective 31 33	ため
+T7	Connective 49 52	により
+T8	Connective 72 73	、
+T9	Connective 76 78	場合
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T3	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T5	
+R7	CONDITION Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	

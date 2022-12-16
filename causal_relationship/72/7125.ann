@@ -1,0 +1,5 @@
+T1	Argument 0 40	助手席用エアバッグ装置において、エアバッグを展開させるためのガス発生装置に不具合
+T2	Connective 43 45	ため
+T3	Argument 46 71	衝突時のエアバッグ展開速度が本来の速度より遅くなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

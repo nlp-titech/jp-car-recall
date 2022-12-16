@@ -1,0 +1,25 @@
+T1	Argument 74 94	高圧側油圧ホースのかしめ部の形状が不適切
+T2	Connective 95 97	ため
+T3	Argument 98 124	当該油圧ホース内部の金属製メッシュが湿気等により腐食
+T4	Connective 132 136	そのため
+T5	Argument 149 161	かしめ部からオイルが漏れ
+T6	Connective 161 162	、
+T7	Argument 168 182	漏れたオイルが排気管にかかり
+T8	Connective 182 183	、
+T9	Argument 183 188	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 137 147	そのまま使用を続ける
+T11	Connective 147 148	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	
+T12	Argument 162 164	最悪
+T13	Connective 165 167	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T7	

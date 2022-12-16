@@ -1,0 +1,15 @@
+T1	Argument 0 41	油圧式制動装置において、ブレーキポンプに装着された油圧音低減用ホースの耐圧性が不足
+T2	Connective 45 47	ため
+T3	Argument 48 56	当該ホースが破損
+T4	Connective 64 68	そのため
+T5	Argument 69 79	ブレーキ作動油が漏れ
+T6	Connective 79 80	て
+T7	Argument 80 92	主ブレーキが効かなくなる
+T8	Argument 94 109	駐車ブレーキが効いたままになる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T8	

@@ -1,0 +1,21 @@
+T1	Argument 0 42	原動機において、プーリーをクランクシャフトへ固定するボルトの締め付け作業方法が不適切
+T2	Argument 62 70	当該ボルトが弛み
+T3	Argument 77 88	ボルトが脱落または折損
+T4	Argument 90 97	プーリーが脱落
+T5	Connective 43 45	ため
+T6	Connective 70 71	、
+T7	Connective 89 90	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 46 60	このままの状態で使用を続ける
+T9	Connective 60 61	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T2	
+T10	Argument 71 73	最悪
+T11	Connective 74 76	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	

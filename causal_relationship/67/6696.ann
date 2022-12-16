@@ -1,0 +1,41 @@
+T1	Argument 0 43	オートマチックトランスミッションにおいて、リードフレーム内の電気基板の半田付けが不適切
+T2	Connective 44 46	ため
+T3	Argument 47 50	熱影響
+T4	Connective 50 53	により
+T5	Argument 53 58	亀裂が生じ
+T6	Connective 58 59	、
+T7	Argument 63 98	車速信号がＰＣＭ（パワートレーンコントロールモジュール）に送信されない
+T8	Argument 106 122	ＰＣＭのプログラムが送信されない
+T9	Connective 122 124	場合
+T10	Argument 125 132	１速ギアに変速
+T11	Connective 135 139	そのため
+T12	Argument 162 170	ギアが１速に入り
+T13	Connective 170 171	、
+T14	Argument 171 177	車両が急減速
+T15	Connective 178 179	て
+T16	Argument 179 188	走行安定性を損なう
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T10	
+R9	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T12	
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T14	
+R13	REASON Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T16	
+T19	Connective 102 103	。
+R15	REASON Arg1:T19 Arg2:T7	
+R16	RESULT Arg1:T19 Arg2:T10	
+T20	Connective 161 162	と
+T21	Argument 140 161	高速走行中に車速信号がＰＣＭに送信されない
+R17	CONDITION Arg1:T20 Arg2:T21	
+R18	RESULT Arg1:T20 Arg2:T12	
+T17	Argument 59 61	走行
+T18	Connective 61 62	中
+R19	CONDITION Arg1:T18 Arg2:T17	
+R20	RESULT Arg1:T18 Arg2:T7	

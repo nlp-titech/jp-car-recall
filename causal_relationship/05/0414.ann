@@ -1,0 +1,39 @@
+T1	Argument 0 31	原動機において､コントローラによるエンジン回転数の制御が不適切
+T2	Argument 35 57	下り坂をアクセルペダルを全開にした状態で走行
+T3	Argument 62 80	走行用油圧モーターが過回転状態となり
+T4	Argument 81 90	作動油の供給が不足
+T5	Argument 92 101	作動油に気泡が発生
+T6	Argument 125 142	当該油圧モーター内部に摺動傷が発生
+T7	Argument 144 150	作動油が洩れ
+T8	Argument 157 172	モーターのピストンリングが破損
+T9	Argument 174 182	走行不能にいたる
+T10	Connective 32 34	ため
+T11	Connective 59 61	場合
+T12	Connective 80 81	､
+T13	Connective 91 92	て
+T14	Connective 108 109	､
+T15	Connective 143 144	､
+T17	Connective 173 174	､
+R1	REASON Arg1:T10 Arg2:T1	
+R2	RESULT Arg1:T10 Arg2:T3	
+R3	CONDITION Arg1:T11 Arg2:T2	
+R4	RESULT Arg1:T11 Arg2:T3	
+R5	REASON Arg1:T12 Arg2:T3	
+R6	RESULT Arg1:T12 Arg2:T4	
+R7	REASON Arg1:T13 Arg2:T4	
+R8	RESULT Arg1:T13 Arg2:T5	
+R9	REASON Arg1:T14 Arg2:T5	
+R10	RESULT Arg1:T14 Arg2:T6	
+R11	REASON Arg1:T15 Arg2:T6	
+R12	RESULT Arg1:T15 Arg2:T7	
+R15	REASON Arg1:T17 Arg2:T8	
+R16	RESULT Arg1:T17 Arg2:T9	
+T18	Argument 109 123	そのままの状態で使用を続ける
+T19	Connective 123 124	と
+R17	CONDITION Arg1:T19 Arg2:T18	
+R18	RESULT Arg1:T19 Arg2:T6	
+T20	Argument 151 153	最悪
+T21	Connective 154 156	場合
+R19	CONDITION Arg1:T21 Arg2:T20	
+R14	RESULT Arg1:T21 Arg2:T8	
+R13	RESULT Arg1:T15 Arg2:T8	

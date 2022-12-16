@@ -1,0 +1,33 @@
+T1	Argument 8 39	始動装置（スターター）において、エンジン制御プログラムが不適切
+T2	Argument 43 63	エンジンクランキング開始直後のシフト操作
+T3	Argument 67 97	スターターモーターピニオンギヤがエンジンのリングギヤに強嵌合
+T4	Argument 104 109	ギヤが破損
+T7	Argument 137 139	最悪
+T8	Argument 143 156	エンジンが始動できなくなる
+T9	Connective 40 42	ため
+T10	Connective 63 66	により
+T11	Connective 98 99	、
+T12	Connective 117 121	そのため
+T14	Connective 136 137	、
+T15	Connective 140 142	場合
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T3	
+R3	REASON Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T3	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+R7	REASON Arg1:T12 Arg2:T4	
+R12	RESULT Arg1:T14 Arg2:T8	
+R13	CONDITION Arg1:T15 Arg2:T7	
+R14	RESULT Arg1:T15 Arg2:T8	
+T21	Connective 103 104	で
+T22	Argument 101 103	衝撃
+R15	REASON Arg1:T21 Arg2:T22	
+R16	RESULT Arg1:T21 Arg2:T4	
+T5	Argument 122 129	エンジン始動時
+T6	Connective 129 130	に
+R8	CONDITION Arg1:T6 Arg2:T5	
+T13	Argument 130 135	異音が発生
+R9	RESULT Arg1:T6 Arg2:T13	
+R10	RESULT Arg1:T12 Arg2:T13	
+R11	REASON Arg1:T14 Arg2:T13	

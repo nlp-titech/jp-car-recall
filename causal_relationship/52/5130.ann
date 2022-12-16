@@ -1,0 +1,27 @@
+T1	Argument 28 59	ロールオーバーシャットオフバルブ（前側）のホースの長さが不適切
+T2	Connective 60 62	ため
+T3	Argument 75 94	当該ホースを取り付けた際に発生する応力
+T4	Connective 94 97	により
+T5	Argument 98 106	当該ホースが折損
+T6	Connective 114 118	そのため
+T7	Argument 119 129	エンジン警告等が点灯
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 136 147	燃料蒸発ガスが漏れ出し
+T9	Connective 147 148	、
+T10	Argument 154 159	火災に至る
+R7	RESULT Arg1:T6 Arg2:T8	
+R8	REASON Arg1:T9 Arg2:T8	
+R9	RESULT Arg1:T9 Arg2:T10	
+T11	Argument 63 73	そのまま使用を続ける
+T12	Connective 73 74	と
+R10	CONDITION Arg1:T12 Arg2:T11	
+R11	RESULT Arg1:T12 Arg2:T5	
+T13	Argument 148 150	最悪
+T14	Connective 151 153	場合
+R12	CONDITION Arg1:T14 Arg2:T13	
+R13	RESULT Arg1:T14 Arg2:T10	

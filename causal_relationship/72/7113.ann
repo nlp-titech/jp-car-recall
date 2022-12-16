@@ -1,0 +1,17 @@
+T1	Argument 0 33	後面扉を開けたときの支持棒を取り付けているブラケットの溶接に不適切
+T2	Connective 39 40	、
+T3	Argument 40 54	そのままの状態で使用を続ける
+T4	Connective 54 55	と
+T5	Argument 56 64	ブラケットが外れ
+T6	Connective 64 65	、
+T7	Argument 65 67	最悪
+T8	Connective 68 70	場合
+T9	Argument 71 81	後面扉が不用意に降下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	RESULT Arg1:T6 Arg2:T9	

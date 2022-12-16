@@ -1,0 +1,13 @@
+T1	Argument 0 47	小型トラックの車体（キャブ）の溶接工程において、アンダーボデー用自動溶接機のプログラムが不適切
+T2	Connective 48 50	ため
+T3	Argument 51 70	シートベルト取付部付近の溶接打点が不足
+T4	Connective 80 84	そのため
+T5	Argument 85 101	衝突時にシートベルト取付部が変形
+T6	Connective 102 103	、
+T7	Argument 103 114	乗員を拘束できなくなる
+R1	RESULT Arg1:T6 Arg2:T7	
+R2	REASON Arg1:T6 Arg2:T5	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	REASON Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T2 Arg2:T3	
+R6	REASON Arg1:T2 Arg2:T1	

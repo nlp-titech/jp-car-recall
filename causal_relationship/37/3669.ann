@@ -1,0 +1,37 @@
+T1	Argument 18 35	シリンダキャップの製造指示が不適切
+T2	Connective 36 38	ため
+T3	Argument 39 58	シリンダキャップの角部の面取りが大きい
+T4	Connective 64 68	そのため
+T5	Argument 69 78	ハンドル操作を行う
+T6	Connective 78 79	と
+T7	Argument 79 115	シリンダキャップが当該キャップの位置ずれを防止するための止め輪を噛み込み
+T8	Connective 115 116	、
+T9	Argument 116 130	そのままの状態で使用を続ける
+T10	Connective 130 131	と
+T11	Argument 132 138	止め輪が破損
+T12	Connective 139 140	、
+T13	Argument 140 151	シリンダキャップが外れ
+T14	Connective 151 152	て
+T15	Argument 153 159	オイルが漏れ
+T16	Connective 159 160	、
+T17	Argument 160 162	最悪
+T18	Connective 163 165	場合
+T19	Argument 166 179	ハンドル操作ができなくなる
+R1	RESULT Arg1:T18 Arg2:T19	
+R2	CONDITION Arg1:T18 Arg2:T17	
+R3	RESULT Arg1:T16 Arg2:T19	
+R4	REASON Arg1:T16 Arg2:T15	
+R5	RESULT Arg1:T14 Arg2:T15	
+R6	REASON Arg1:T14 Arg2:T13	
+R7	RESULT Arg1:T12 Arg2:T13	
+R8	REASON Arg1:T12 Arg2:T11	
+R9	RESULT Arg1:T10 Arg2:T11	
+R10	CONDITION Arg1:T10 Arg2:T9	
+R11	RESULT Arg1:T8 Arg2:T11	
+R12	REASON Arg1:T8 Arg2:T7	
+R13	RESULT Arg1:T6 Arg2:T7	
+R14	CONDITION Arg1:T6 Arg2:T5	
+R15	RESULT Arg1:T4 Arg2:T7	
+R16	REASON Arg1:T4 Arg2:T3	
+R17	RESULT Arg1:T2 Arg2:T3	
+R18	REASON Arg1:T2 Arg2:T1	

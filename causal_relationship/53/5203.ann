@@ -1,0 +1,25 @@
+T1	Argument 0 18	すれ違い用前照灯反射板の材質が不適切
+T2	Connective 19 21	ため
+T3	Argument 43 53	反射板表面が剥がれる
+T4	Connective 59 63	そのため
+T5	Argument 76 81	光度が低下
+T6	Connective 82 83	、
+T7	Argument 89 111	夜間に前方にある交通上の障害物を確認できない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 22 39	すれ違い用前照灯点灯時のバルブの熱
+T9	Connective 39 42	により
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 64 74	そのまま使用を続ける
+T11	Connective 74 75	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	
+T12	Argument 83 85	最悪
+T13	Connective 86 88	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T7	

@@ -1,0 +1,13 @@
+T1	Argument 0 37	フォークリフトの前車軸において、駐車ブレーキ取り付け部のシール構造が不適切
+T2	Connective 38 40	ため
+T3	Argument 41 49	潤滑油が漏れ出す
+T4	Connective 55 59	そのため
+T5	Argument 60 77	漏れた潤滑油が駐車ブレーキ内に浸入
+T6	Connective 78 79	、
+T7	Argument 79 92	駐車ブレーキの制動力が低下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

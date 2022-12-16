@@ -1,0 +1,21 @@
+T1	Argument 0 46	サイドスタンド取り付け部において、フレーム側、ブラケット側のねじ山及び接触部分の洗浄が不適切
+T2	Connective 47 49	ため
+T3	Argument 50 60	除去されなかった油分
+T4	Connective 63 66	により
+T5	Argument 66 76	取り付けボルトが緩む
+T6	Connective 82 86	そのため
+T7	Argument 87 101	そのままの状態で使用を続ける
+T8	Connective 101 102	と
+T9	Argument 114 120	車両が倒れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 103 112	サイドスタンド使用
+T11	Connective 112 113	時
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T9	

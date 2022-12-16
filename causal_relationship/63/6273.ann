@@ -1,0 +1,9 @@
+T1	Argument 20 43	シートベルトプリテンショナのロック機構が不適切
+T2	Connective 44 46	ため
+T3	Argument 47 73	衝突時等にシートベルトプリテンショナをロックできない
+T4	Connective 79 83	そのため
+T5	Argument 84 96	適切に乗員を拘束できない
+R1	RESULT Arg1:T4 Arg2:T5	
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T3	
+R4	REASON Arg1:T2 Arg2:T1	

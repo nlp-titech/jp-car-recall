@@ -1,0 +1,33 @@
+T1	Argument 2 62	燃料噴射用電子制御コントロールユニット（ＥＣＵ）及び転倒センサにおいて、ＥＣＵと転倒センサ間の電気配線の防水対策が不十分
+T2	Connective 63 65	ため
+T3	Argument 66 80	洗車時または雨天走行時の被水
+T4	Connective 80 83	により
+T5	Argument 83 96	水が当該電気配線内を伝わり
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+T6	Connective 96 97	、
+T7	Argument 97 119	ＥＣＵ及び転倒センサと電気配線の接続部に浸入
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Connective 127 131	そのため
+R7	REASON Arg1:T8 Arg2:T7	
+T9	Argument 148 159	当該接続部の端子が腐食
+T10	Connective 160 161	て
+T11	Argument 161 168	導通不良となり
+T12	Connective 168 169	、
+T13	Argument 175 182	エンジンが停止
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+T14	Argument 169 171	最悪
+T15	Connective 172 174	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T13	
+T16	Argument 132 146	そのままの状態で使用を続ける
+T17	Connective 146 147	と
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T9	

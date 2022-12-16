@@ -1,0 +1,25 @@
+T1	Argument 0 33	テールゲートドアにルーフスポイラーを取り付けるための接着剤が不適切
+T2	Connective 34 36	ため
+T3	Argument 44 55	ルーフスポイラーが変形
+T4	Connective 63 67	そのため
+T5	Argument 68 92	そのままの状態でテールゲートドアの開閉操作を行う
+T6	Connective 92 93	と
+T7	Argument 94 109	ルーフスポイラーがルーフに接触
+T8	Connective 110 111	、
+T9	Argument 111 124	テールゲートドアから剥がれ
+T10	Connective 124 125	て
+T11	Argument 125 127	脱落
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 37 39	高温
+T13	Connective 43 44	で
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T3	

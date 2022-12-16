@@ -1,0 +1,21 @@
+T1	Argument 1 22	運転席のフロアマットを固定しない状態で使用
+T2	Connective 24 25	と
+T3	Argument 26 53	当該マットを固定するピンが運転者の足等の接触により破損
+T4	Connective 61 65	そのため
+T5	Argument 66 78	フロアマットが前方にずれ
+T6	Connective 78 79	、
+T7	Argument 79 94	アクセルペダルを一杯に踏み込む
+T8	Connective 94 95	と
+T9	Argument 96 119	アクセルペダルの先端がフロアマットに引っかかり
+T10	Connective 119 120	、
+T11	Argument 120 135	エンジン回転数が下がらなくなる
+R1	CONDITION Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	

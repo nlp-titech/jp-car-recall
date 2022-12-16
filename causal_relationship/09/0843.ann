@@ -1,0 +1,27 @@
+T1	Argument 0 23	燃料噴射装置における燃料噴射時期の設定が不適切
+T2	Connective 24 26	ため
+T3	Argument 37 46	燃料噴射時期が遅れ
+T4	Connective 46 47	、
+T5	Argument 47 54	燃焼不良となる
+T6	Connective 60 64	そのため
+T7	Argument 65 70	異音が発生
+T9	Argument 72 74	最悪
+T10	Connective 75 77	場合
+T11	Argument 78 82	出力不足
+T12	Connective 82 85	により
+T13	Argument 85 92	走行中エンスト
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	CONDITION Arg1:T10 Arg2:T9	
+R8	RESULT Arg1:T10 Arg2:T11	
+R9	RESULT Arg1:T6 Arg2:T11	
+R10	REASON Arg1:T12 Arg2:T11	
+R11	RESULT Arg1:T12 Arg2:T13	
+T8	Argument 27 36	登坂等の高負荷運転
+T14	Connective 36 37	で
+R12	CONDITION Arg1:T14 Arg2:T8	
+R13	RESULT Arg1:T14 Arg2:T3	

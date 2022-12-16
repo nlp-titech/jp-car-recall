@@ -1,0 +1,21 @@
+T1	Argument 41 54	ケーブル外表面に亀裂が発生
+T2	Argument 78 90	当該ケーブルが折れ曲がり
+T3	Argument 94 105	インナーワイヤーが切損
+T4	Argument 107 121	駐車ブレーキが作動しなくなる
+T5	Connective 61 62	、
+T6	Connective 90 91	、
+T7	Connective 106 107	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 0 37	駐車制動装置において、駐車ブレーキケーブルの低温下における耐久性能が不適切
+T9	Connective 38 40	ため
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T1	
+T10	Argument 62 76	そのままの状態で使用を続ける
+T11	Connective 76 77	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T2	

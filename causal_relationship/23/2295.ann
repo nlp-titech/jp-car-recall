@@ -1,0 +1,13 @@
+T1	Argument 0 31	左右の後写鏡ステー内部の固定用ナット部へのロック剤塗布が不適切
+T2	Connective 37 39	ため
+T3	Argument 50 58	固定ナットが緩み
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 58 59	、
+T5	Argument 59 75	後方の交通状況を確認できなくなる
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 40 47	走行中の振動等
+T7	Connective 47 50	により
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	

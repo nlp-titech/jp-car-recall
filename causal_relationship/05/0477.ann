@@ -1,0 +1,13 @@
+T1	Argument 0 42	燃料装置において、燃料タンクの燃料ポンプ・ゲージユニット取付部のパッキン形状が不適切
+T2	Argument 46 53	シール性が不足
+T3	Argument 68 85	当該ユニット取付部から燃料が漏れる
+T4	Connective 43 45	ため
+T5	Connective 60 61	、
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	
+T6	Argument 61 66	燃料満タン
+T7	Connective 66 67	時
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	

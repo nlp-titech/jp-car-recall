@@ -1,0 +1,17 @@
+T1	Argument 0 42	燃料装置において、燃料タンクの燃料ポンプユニット締め付けナットのネジ部の製造が不適切
+T2	Argument 46 79	燃料ポンプユニット組付時に当該締め付けナットが充分締付されていない
+T3	Argument 108 126	当該ユニット取付け部から燃料が漏れる
+T4	Connective 43 45	ため
+T5	Connective 84 85	、
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	
+T8	Argument 85 99	そのままの状態で使用を続ける
+T9	Connective 99 100	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 101 106	燃料満タン
+T11	Connective 106 107	時
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	

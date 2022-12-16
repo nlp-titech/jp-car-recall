@@ -1,0 +1,25 @@
+T1	Argument 4 24	オルタネータ用電気配線の固定方法が不適切
+T2	Argument 28 48	当該電気配線と固定用クランプに隙間が発生
+T3	Argument 63 77	そのままの状態で使用を続ける
+T4	Argument 79 85	原動機の振動
+T5	Argument 89 98	当該電気配線が損傷
+T6	Argument 100 102	最悪
+T7	Argument 106 113	充電不良となる
+T8	Connective 25 27	ため
+T9	Connective 58 62	そのため
+T10	Connective 77 78	と
+T11	Connective 86 89	により
+T12	Connective 99 100	、
+T13	Connective 103 105	場合
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T2	
+R3	REASON Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T5	
+R5	CONDITION Arg1:T10 Arg2:T3	
+R6	RESULT Arg1:T10 Arg2:T5	
+R7	REASON Arg1:T11 Arg2:T4	
+R8	RESULT Arg1:T11 Arg2:T5	
+R9	REASON Arg1:T12 Arg2:T5	
+R10	RESULT Arg1:T12 Arg2:T7	
+R11	CONDITION Arg1:T13 Arg2:T6	
+R12	RESULT Arg1:T13 Arg2:T7	

@@ -1,0 +1,5 @@
+T1	Argument 0 40	後部突入防止装置の溶接取付部において、溶接の未施工箇所があるため溶接部強度が不足
+T2	Connective 41 42	、
+T3	Argument 42 54	保安基準に適合していない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

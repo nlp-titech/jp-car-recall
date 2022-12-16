@@ -1,0 +1,13 @@
+T1	Argument 10 42	シートベルトマウントとシートベルトアンカー固定ピンの隙間が大きい
+T3	Argument 45 68	シートを最後方に下げた状態でシートベルトを脱着
+T4	Argument 74 98	シートベルトマウントのロック機構が正常に機能せず
+T5	Argument 99 113	シートベルトマウントが外れる
+T6	Connective 42 44	ため
+T8	Connective 70 72	場合
+T9	Connective 98 99	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T4	
+R5	CONDITION Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	

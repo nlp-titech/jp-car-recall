@@ -1,0 +1,17 @@
+T1	Argument 0 58	２列目及び３列目座席のシートベルトにおいて、ピラー側の固定ボルトの締め付け及び下側端部のエンドマウントの接続が不適切
+T2	Connective 59 61	ため
+T3	Argument 62 67	強度が不足
+T4	Connective 77 81	そのため
+T5	Argument 88 109	当該ボルトまたはエンドマウント接続部が外れ
+T6	Connective 109 110	、
+T7	Argument 110 119	乗員を拘束出来ない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 82 85	衝突等
+T9	Connective 86 87	際
+R8	RESULT Arg1:T9 Arg2:T5	
+R7	CONDITION Arg1:T9 Arg2:T8	

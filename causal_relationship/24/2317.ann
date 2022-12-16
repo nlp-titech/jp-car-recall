@@ -1,0 +1,15 @@
+T1	Argument 0 29	圧縮天然ガス自動車の過給機において、タービン翼の強度が不足
+T2	Argument 35 37	破損
+T3	Argument 57 61	出力不足
+T4	Argument 65 73	運行できなくなる
+T5	Connective 33 35	ため
+T6	Connective 45 49	そのため
+T7	Connective 64 65	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 50 55	白煙の発生
+R7	RESULT Arg1:T6 Arg2:T8	
+R5	REASON Arg1:T7 Arg2:T3	

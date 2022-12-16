@@ -1,0 +1,17 @@
+T1	Argument 6 58	マスターシリンダーとアシスト用油圧ポンプを接続しているブレーキホースの一部にパイプ口金接合部のかしめ不良
+T2	Connective 64 65	、
+T3	Argument 80 88	ブレーキ液が漏れ
+T4	Connective 88 89	て
+T5	Argument 96 102	制動力が低下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 65 79	このままの状態で使用を続ける
+T7	Connective 79 80	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 90 92	最悪
+T9	Connective 93 95	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

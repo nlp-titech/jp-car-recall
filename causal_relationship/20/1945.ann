@@ -1,0 +1,25 @@
+T1	Argument 0 21	燃料ポンプのポンプカバーの鋳造加工が不適切
+T2	Connective 22 24	ため
+T3	Argument 25 41	ポンプカバー内部の表面がささくれ
+T4	Connective 50 54	そのため
+T5	Argument 61 71	当該ささくれが剥がれ
+T6	Connective 71 72	、
+T7	Argument 72 103	燃料を圧送するインペラ（羽根車）とポンプカバーとの間に噛み込み
+T8	Connective 103 104	、
+T9	Argument 104 117	燃料ポンプが作動しなくなり
+T10	Connective 117 118	、
+T11	Argument 118 125	エンジンが停止
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 55 58	振動等
+T13	Connective 58 61	により
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T5	

@@ -1,0 +1,21 @@
+T1	Argument 8 31	ゴム製燃料ホース（供給側及び戻り側）が材質不良
+T2	Connective 32 34	ため
+T3	Argument 51 64	当該ホースにひび割れが発生
+T4	Connective 65 66	、
+T5	Argument 72 77	燃料が漏れ
+T6	Connective 77 78	て
+T7	Argument 78 83	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 35 49	このままの状態で使用を続ける
+T9	Connective 49 50	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 66 68	最悪
+T11	Connective 69 71	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	

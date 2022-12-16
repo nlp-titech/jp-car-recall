@@ -1,0 +1,21 @@
+T1	Argument 0 61	特殊操舵モードを備える車両において、かじ取り方式を切り換えるステアリング切替バルブの油圧配管内の微小異物がバルブ内部に入り
+T2	Connective 61 62	、
+T3	Argument 62 81	バルブ内部のスプールの動きがしぶくなる
+T4	Argument 87 101	そのままの状態で使用を続ける
+T5	Connective 101 102	と
+T6	Argument 103 116	切替バルブが作動しなくなり
+T7	Connective 116 117	、
+T8	Argument 117 158	かじ取り方式を特殊操舵モードで使用した後にノーマル操舵モードに戻そうとしても戻らず
+T9	Connective 158 159	、
+T10	Argument 159 169	タイヤが切れなくなる
+R1	RESULT Arg1:T9 Arg2:T10	
+R2	REASON Arg1:T9 Arg2:T8	
+R3	RESULT Arg1:T7 Arg2:T8	
+R4	REASON Arg1:T7 Arg2:T6	
+R5	RESULT Arg1:T5 Arg2:T6	
+R6	CONDITION Arg1:T5 Arg2:T4	
+R7	REASON Arg1:T2 Arg2:T1	
+T11	Connective 86 87	。
+R8	RESULT Arg1:T2 Arg2:T3	
+R9	REASON Arg1:T11 Arg2:T3	
+R10	RESULT Arg1:T11 Arg2:T6	

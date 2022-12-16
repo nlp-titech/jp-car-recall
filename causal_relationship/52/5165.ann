@@ -1,0 +1,27 @@
+T1	Argument 0 53	後部ドアにおいて、ガラスハッチのヒンジの強度及びストラットボールスタッドブラケット取り付け部の構造が不適切
+T2	Connective 54 56	ため
+T3	Argument 75 90	当該ヒンジ車体取り付け部の亀裂
+T4	Argument 96 121	ストラットボールスタッドのガラス側取り付け部が緩む
+T5	Connective 127 131	そのため
+T6	Argument 132 150	ガラスハッチのヒンジ取り付け部が破損
+T7	Argument 156 176	ストラットボールスタッドブラケットの脱落
+T8	Argument 178 190	ストラットダンパーが外れ
+T9	Argument 191 200	ガラスハッチが脱落
+T10	Connective 190 191	、
+R2	RESULT Arg1:T5 Arg2:T7	
+R3	RESULT Arg1:T5 Arg2:T8	
+R4	REASON Arg1:T10 Arg2:T6	
+R5	REASON Arg1:T10 Arg2:T7	
+R6	REASON Arg1:T10 Arg2:T8	
+R7	RESULT Arg1:T10 Arg2:T9	
+R8	REASON Arg1:T5 Arg2:T4	
+R1	REASON Arg1:T5 Arg2:T3	
+R9	RESULT Arg1:T5 Arg2:T6	
+R10	REASON Arg1:T2 Arg2:T1	
+R11	RESULT Arg1:T2 Arg2:T3	
+T11	Argument 57 70	ガラスハッチを繰り返し使用
+T12	Connective 72 74	場合
+R12	CONDITION Arg1:T12 Arg2:T11	
+R13	RESULT Arg1:T12 Arg2:T3	
+R14	RESULT Arg1:T2 Arg2:T4	
+R15	RESULT Arg1:T12 Arg2:T4	

@@ -1,0 +1,13 @@
+T1	Argument 0 84	一般道路走行時には使用を禁止している補助ステアリングシステム（運転席を後方に向けて作業する際の操作性を確保するための装置）において、当該システムの誤操作防止機能が不十分
+T2	Connective 85 87	ため
+T3	Argument 88 129	当該システムの操作スイッチ（逆ステアリングスイッチ）を作動させた状態で一般道路走行
+T4	Connective 132 134	場合
+T5	Argument 135 155	ブーム後方位置検出スイッチに故障が生じる
+T6	Connective 155 156	と
+T7	Argument 157 177	操舵時に運転手の意思に反して逆方向に操舵
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T7	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

@@ -1,0 +1,21 @@
+T1	Argument 21 60	油圧ポンプに高圧油圧配管を取付けるためのバンジョボルトの締め付けトルクが不十分
+T2	Connective 61 63	ため
+T3	Argument 74 86	当該バンジョボルトが緩む
+T4	Connective 92 96	そのため
+T5	Argument 97 103	作動油が漏れ
+T6	Argument 110 115	火災に至る
+T7	Connective 103 104	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	
+T8	Argument 64 71	走行中の振動等
+T9	Connective 71 74	により
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 104 106	最悪
+T11	Connective 107 109	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T6	

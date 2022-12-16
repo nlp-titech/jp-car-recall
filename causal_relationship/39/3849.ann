@@ -1,0 +1,29 @@
+T2	Argument 62 69	エンジンの振動
+T3	Argument 70 76	排気管が振れ
+T4	Argument 77 106	ステー取付部および、排気管ブラケット取付部が過大な応力を受
+T5	Argument 107 109	損傷
+T6	Argument 111 113	最悪
+T7	Argument 117 126	排気管に亀裂が生じ
+T8	Argument 127 135	排気ガスが漏れる
+T9	Connective 57 61	そのため
+T10	Connective 69 70	で
+T11	Connective 76 77	て
+T12	Connective 110 111	、
+T13	Connective 114 116	場合
+T14	Connective 126 127	て
+R3	REASON Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T3	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+T15	Connective 106 107	け
+R7	REASON Arg1:T15 Arg2:T4	
+R8	RESULT Arg1:T15 Arg2:T5	
+R9	REASON Arg1:T12 Arg2:T5	
+R11	CONDITION Arg1:T13 Arg2:T6	
+R12	RESULT Arg1:T13 Arg2:T7	
+R13	REASON Arg1:T14 Arg2:T7	
+R14	RESULT Arg1:T14 Arg2:T8	
+R2	RESULT Arg1:T9 Arg2:T3	
+R10	RESULT Arg1:T12 Arg2:T7	
+T1	Argument 0 50	排気管をエンジンに固定する排気管ステーの取付穴が排気管ブラケット取付穴と合わない状態で無理に組み付け
+R1	REASON Arg1:T9 Arg2:T1	

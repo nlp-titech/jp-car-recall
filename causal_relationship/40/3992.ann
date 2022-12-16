@@ -1,0 +1,5 @@
+T1	Argument 11 16	側方照射灯
+T2	Connective 16 17	が
+T3	Argument 17 45	保安基準第３３条の２で定める技術的な要件を満足していない
+R1	CONDITION Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

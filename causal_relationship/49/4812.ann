@@ -1,0 +1,21 @@
+T1	Argument 11 41	ブレーキレバーの引きしろを自動的に調整する機構の設計が不適切
+T2	Connective 42 44	ため
+T3	Argument 45 63	調整機構の歯止め部の噛み合いが不十分
+T4	Connective 69 70	、
+T5	Argument 86 100	当該歯止め部の噛み合いが外れ
+T6	Connective 100 101	、
+T7	Argument 101 117	ブレーキワイヤーの引きしろが伸び
+T8	Connective 117 118	、
+T9	Argument 118 142	駐車ブレーキレバーを操作しても駐車制動力が不充分
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+T10	Argument 70 84	そのままの状態で使用を続ける
+T11	Connective 84 85	と
+R6	CONDITION Arg1:T11 Arg2:T10	
+R7	RESULT Arg1:T11 Arg2:T5	
+R8	RESULT Arg1:T6 Arg2:T7	
+R9	REASON Arg1:T8 Arg2:T7	
+R10	RESULT Arg1:T8 Arg2:T9	

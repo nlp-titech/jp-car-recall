@@ -1,0 +1,13 @@
+T1	Argument 0 22	運転者用ステップ（足掛け）金具の溶接に不適切
+T2	Connective 28 30	ため
+T3	Argument 31 45	そのままの状態で使用を続ける
+T4	Connective 45 46	と
+T5	Argument 47 60	乗車時にステップに足を掛け
+T6	Connective 61 63	際に
+T7	Argument 63 73	ステップが折れ曲がる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	CONDITION Arg1:T6 Arg2:T5	
+R4	RESULT Arg1:T6 Arg2:T7	
+R5	RESULT Arg1:T4 Arg2:T7	
+R6	RESULT Arg1:T2 Arg2:T7	

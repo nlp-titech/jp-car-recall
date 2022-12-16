@@ -1,0 +1,21 @@
+T1	Argument 0 29	原動機の吸入空気を加熱する装置の電気配線の取り回しが不適切
+T2	Argument 33 47	駐車ブレーキのケーブルと接触
+T3	Argument 67 69	短絡
+T4	Argument 77 83	火災にいたる
+T5	Connective 30 32	ため
+T6	Connective 54 55	、
+T7	Connective 70 71	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T10	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T9	Connective 66 67	て
+T10	Argument 55 65	電気配線の被覆が損傷
+R7	REASON Arg1:T9 Arg2:T10	
+R8	RESULT Arg1:T9 Arg2:T3	
+T8	Argument 71 73	最悪
+T11	Connective 74 76	場合
+R9	CONDITION Arg1:T11 Arg2:T8	
+R10	RESULT Arg1:T11 Arg2:T4	

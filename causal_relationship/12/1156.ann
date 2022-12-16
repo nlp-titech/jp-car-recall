@@ -1,0 +1,21 @@
+T1	Argument 0 34	変速機のシフト及びセレクトロッドの取付金具固定ボルトの締付けが不適切
+T2	Connective 35 37	ため
+T3	Argument 38 49	当該ボルトが弛んでいる
+T4	Connective 55 59	そのため
+T5	Argument 60 71	この状態で使用を続ける
+T6	Argument 73 81	当該ボルトが外れ
+T7	Connective 81 82	、
+T8	Argument 82 84	最悪
+T9	Connective 85 87	場合
+T10	Argument 88 95	変速不能となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T6	
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T10	
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T10	
+T11	Connective 71 72	と
+R9	CONDITION Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	

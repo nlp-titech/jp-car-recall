@@ -1,0 +1,25 @@
+T1	Argument 21 44	プレッシャ－スイッチの配線コネクタ－に水が入る
+T2	Connective 44 45	と
+T3	Argument 56 66	コネクタ－ピンが腐食
+T4	Connective 67 68	、
+T5	Argument 74 89	アシスト用油圧ポンプが作動せず
+T6	Connective 89 90	、
+T7	Argument 90 102	制動倍力装置が働かなくな
+T8	Argument 103 116	ブレーキペダルの踏力が増加
+T9	Connective 102 103	り
+R1	CONDITION Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T13	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+T13	Argument 46 54	水が溜まりやすい
+T14	Connective 54 56	ため
+R9	REASON Arg1:T14 Arg2:T13	
+R10	RESULT Arg1:T14 Arg2:T3	
+T15	Argument 68 70	最悪
+T16	Connective 71 73	場合
+R11	CONDITION Arg1:T16 Arg2:T15	
+R12	RESULT Arg1:T16 Arg2:T5	

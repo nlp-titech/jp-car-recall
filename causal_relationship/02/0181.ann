@@ -1,0 +1,25 @@
+T1	Argument 0 48	運転者席用エアバッグの一部であるインフレータモジュール（窒素ガス発生装置）のガス発生剤に製造不良
+T2	Argument 71 79	ガス発生剤が崩れ
+T3	Argument 80 99	エアバッグが開く時の展開圧力が高くなり
+T4	Argument 106 123	ガス発生剤を収納している容器が壊れ
+T5	Argument 124 136	エアバッグの機能を損なう
+T6	Connective 123 124	て
+T7	Connective 99 100	、
+T8	Connective 79 80	て
+T9	Connective 54 55	、
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+R7	REASON Arg1:T6 Arg2:T4	
+R8	RESULT Arg1:T6 Arg2:T5	
+T10	Argument 55 70	急激な温度変化を繰り返しうける
+T11	Connective 70 71	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T2	
+T12	Argument 100 102	最悪
+T13	Connective 103 105	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T4	

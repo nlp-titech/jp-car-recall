@@ -1,0 +1,21 @@
+T1	Argument 0 36	運転者席を前後調整するスライド機構において、固定用スプリングの強度が不足
+T2	Connective 40 42	ため
+T3	Argument 43 53	頻繁に前後調整を行う
+T4	Connective 53 54	と
+T5	Argument 55 65	当該スプリングが折損
+T6	Connective 73 77	そのため
+T7	Argument 78 86	座席が固定されず
+T8	Argument 87 89	最悪
+T9	Connective 90 92	場合
+T10	Argument 93 104	走行中に座席が動き出す
+R1	RESULT Arg1:T9 Arg2:T10	
+R2	CONDITION Arg1:T9 Arg2:T8	
+T11	Connective 86 87	、
+R3	RESULT Arg1:T11 Arg2:T10	
+R4	REASON Arg1:T11 Arg2:T7	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	REASON Arg1:T6 Arg2:T5	
+R7	RESULT Arg1:T4 Arg2:T5	
+R8	CONDITION Arg1:T4 Arg2:T3	
+R9	RESULT Arg1:T2 Arg2:T5	
+R10	REASON Arg1:T2 Arg2:T1	

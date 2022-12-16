@@ -1,0 +1,21 @@
+T2	Connective 30 32	ため
+T3	Argument 33 49	当該配管とベイパーパイプとが交差
+T4	Connective 59 63	そのため
+T5	Argument 64 75	走行中の振動で擦れ合い
+T6	Connective 75 76	、
+T7	Argument 85 100	当該配管とベイパーパイプが摩滅
+T8	Connective 102 103	と
+T9	Argument 103 110	燃料漏れに至る
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 76 82	長期間の使用
+T11	Connective 82 85	により
+R9	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T7	
+T1	Argument 1 29	タイミングベルトカバー回りの燃料供給配管の取付けが不適切
+R1	REASON Arg1:T2 Arg2:T1	

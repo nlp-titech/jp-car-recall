@@ -1,0 +1,35 @@
+T1	Argument 0 36	フロントアクスルを車台に固定する取付けボルトの締付けトルク設定値が不適切
+T2	Connective 39 41	ため
+T3	Argument 42 57	除雪等の作業時の負荷の繰り返し
+T4	Connective 57 60	により
+T5	Argument 60 69	当該ボルトがゆるむ
+T6	Argument 78 108	一部の車両において、当該フロントアクスル取付け面に塗装が残っ
+T7	Connective 111 113	ため
+T8	Argument 114 132	取付けボルトの初期締付けトルクが低下
+T9	Connective 140 144	そのため
+T10	Argument 145 155	そのまま使用を続ける
+T11	Connective 155 156	と
+T12	Argument 157 168	当該締付面にガタが生じ
+T13	Argument 169 171	最悪
+T14	Connective 172 174	場合
+T15	Argument 175 183	当該ボルトが折損
+T16	Argument 184 195	フロントアクスルが脱落
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T8	
+R7	REASON Arg1:T9 Arg2:T8	
+R8	CONDITION Arg1:T11 Arg2:T10	
+R9	CONDITION Arg1:T14 Arg2:T13	
+R10	RESULT Arg1:T11 Arg2:T12	
+R11	RESULT Arg1:T9 Arg2:T12	
+R12	RESULT Arg1:T14 Arg2:T15	
+T17	Connective 183 184	し
+R13	REASON Arg1:T17 Arg2:T15	
+R14	RESULT Arg1:T17 Arg2:T16	
+T18	Connective 168 169	、
+R15	REASON Arg1:T18 Arg2:T12	
+R16	RESULT Arg1:T18 Arg2:T15	
+R17	REASON Arg1:T9 Arg2:T5	

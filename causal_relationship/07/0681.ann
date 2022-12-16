@@ -1,0 +1,13 @@
+T1	Argument 0 25	エンジン制御コンピュータのプログラムの一部が不適切
+T2	Argument 29 48	走行中に運転者が意図的な操作をおこなっ
+T3	Argument 52 78	速度抑制装置（スピードリミッタ）の作動が継続的に解除
+T4	Argument 81 92	車速が設定速度を超える
+T5	Connective 26 28	ため
+T6	Connective 49 51	場合
+T7	Connective 80 81	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T3	
+R3	CONDITION Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	

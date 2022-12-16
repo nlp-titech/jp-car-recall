@@ -1,0 +1,21 @@
+T1	Argument 0 15	燃料タンクの支持部の強度が不足
+T2	Connective 19 21	ため
+T3	Argument 39 50	当該支持部に亀裂が発生
+T4	Connective 58 62	そのため
+T5	Argument 81 87	燃料が漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 22 35	走行中または作業中の振動等
+T7	Connective 35 38	により
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 63 73	そのまま使用を続ける
+T9	Connective 73 74	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 75 77	最悪
+T11	Connective 78 80	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	

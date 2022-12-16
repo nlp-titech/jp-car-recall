@@ -1,0 +1,25 @@
+T1	Argument 0 23	排気管に取り付けている遮熱板取付部の強度が不足
+T2	Connective 33 37	そのため
+T3	Argument 38 58	原動機の低速回転時に排気管と遮熱板が共振
+T4	Connective 59 60	、
+T5	Argument 60 69	取付部に亀裂が発生
+T6	Connective 70 71	、
+T7	Argument 93 103	走行中に遮熱板が脱落
+T8	Connective 104 105	、
+T9	Argument 105 115	他の交通の妨げとなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R4	REASON Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T4 Arg2:T5	
+R6	REASON Arg1:T6 Arg2:T5	
+R7	RESULT Arg1:T6 Arg2:T7	
+R8	REASON Arg1:T8 Arg2:T7	
+R9	RESULT Arg1:T8 Arg2:T9	
+T12	Argument 71 85	そのままの状態で使用を続ける
+T13	Connective 85 86	と
+T14	Argument 87 89	最悪
+T15	Connective 90 92	場合
+R11	RESULT Arg1:T13 Arg2:T7	
+R12	CONDITION Arg1:T13 Arg2:T12	
+R13	RESULT Arg1:T15 Arg2:T7	
+R14	CONDITION Arg1:T15 Arg2:T14	

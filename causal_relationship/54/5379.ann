@@ -1,0 +1,37 @@
+T2	Connective 52 54	ため
+T3	Argument 55 61	ブラシが固着
+T4	Connective 61 62	し
+T5	Argument 62 73	接点が接触不良を起こす
+T6	Connective 79 83	そのため
+T8	Connective 97 98	、
+T9	Argument 110 114	変速不能
+T10	Connective 117 118	、
+T12	Connective 147 148	、
+T13	Argument 148 166	エンジンが停止し、再始動できなくなる
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R12	RESULT Arg1:T12 Arg2:T13	
+T14	Argument 98 108	そのまま使用を続ける
+T15	Connective 108 109	と
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T9	
+T16	Argument 118 120	最悪
+T17	Connective 121 123	場合
+R15	CONDITION Arg1:T17 Arg2:T16	
+T11	Argument 124 129	車両を停止
+T18	Connective 131 132	際
+R10	CONDITION Arg1:T18 Arg2:T11	
+T19	Argument 133 147	クラッチの接続が切れなくなり
+R11	REASON Arg1:T12 Arg2:T19	
+R16	RESULT Arg1:T18 Arg2:T19	
+R17	RESULT Arg1:T17 Arg2:T19	
+R18	RESULT Arg1:T10 Arg2:T19	
+T1	Argument 11 51	電子制御油圧ユニットモーターにおいて、カーボンブラシとホルダー間との隙間が不十分
+R1	REASON Arg1:T2 Arg2:T1	
+T7	Argument 84 97	油圧ポンプが作動しなくなり
+R6	REASON Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T7	

@@ -1,0 +1,5 @@
+T1	Argument 13 32	正規品と異なるホイールベアリングが装着
+T2	Connective 43 47	そのため
+T3	Argument 48 82	正規品では発生し得ない当該ベアリングからの異音や損傷等の不具合が発生
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

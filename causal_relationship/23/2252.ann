@@ -1,0 +1,9 @@
+T1	Argument 0 31	速度計において、車速信号用アンプに使用している内部素子が不適切
+T2	Connective 32 34	ため
+T3	Argument 35 42	当該素子が焼損
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 43 44	、
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 44 55	速度表示が出来なくなる
+R4	RESULT Arg1:T4 Arg2:T5	

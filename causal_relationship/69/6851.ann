@@ -1,0 +1,21 @@
+T1	Argument 0 59	ハネ上げ式の荷台後部ドアとその開閉補助装置（ドアバランサ）のブラケットを固定しているボルトとナットの組み合わせが不適切
+T2	Connective 60 62	ため
+T4	Argument 69 71	脱落
+T3	Argument 63 68	ナットが緩
+T5	Connective 68 69	み
+T6	Connective 72 73	、
+T7	Argument 73 88	ブラケットが当該ドアから外れる
+T8	Connective 94 98	そのため
+T9	Argument 99 115	当該ドアが開き状態に保てなくなり
+T10	Argument 116 124	急に閉じてしまう
+T11	Connective 115 116	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T4	
+R5	REASON Arg1:T6 Arg2:T4	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T11 Arg2:T9	
+R10	RESULT Arg1:T11 Arg2:T10	

@@ -1,0 +1,21 @@
+T1	Argument 5 16	シートレールに強度不足
+T2	Connective 22 23	、
+T3	Argument 57 65	当該レールが破損
+T4	Connective 65 66	し
+T5	Argument 66 75	シートが後方に転倒
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 45 53	車両後部等に追突
+T7	Connective 56 57	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 23 37	このままの状態で使用を続ける
+T9	Connective 37 38	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 39 41	最悪
+T11	Connective 42 44	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	

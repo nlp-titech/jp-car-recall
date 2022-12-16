@@ -1,0 +1,21 @@
+T1	Argument 0 32	イグニッションキーシリンダー内部とイグニッションキーの摩耗が進行
+T2	Argument 34 69	イグニッションキーが”ＯＦＦ”以外の位置であっても抜くことが可能になる
+T3	Connective 33 34	、
+R1	REASON Arg1:T3 Arg2:T1	
+R2	RESULT Arg1:T3 Arg2:T2	
+T4	Connective 75 79	そのため
+T5	Connective 100 105	によっては
+T6	Argument 80 100	停車時のギヤ位置や駐車ブレーキの作動状態
+T7	Argument 106 108	最悪
+T8	Connective 109 111	場合
+T9	Argument 112 122	車両が勝手に動き出し
+T10	Connective 122 123	、
+T11	Argument 123 131	事故を引き起こす
+R3	RESULT Arg1:T10 Arg2:T11	
+R4	REASON Arg1:T10 Arg2:T9	
+R5	CONDITION Arg1:T8 Arg2:T7	
+R6	RESULT Arg1:T8 Arg2:T9	
+R7	RESULT Arg1:T5 Arg2:T9	
+R8	REASON Arg1:T5 Arg2:T6	
+R9	RESULT Arg1:T4 Arg2:T9	
+R10	REASON Arg1:T4 Arg2:T2	

@@ -1,0 +1,25 @@
+T1	Argument 0 26	アスファルトフィニッシャーの雨水等の対策評価が不十分
+T2	Argument 30 45	雨水等がリヤカバー上部から浸入
+T3	Argument 47 69	エンジンコントローラ電源リレーの端子部が被水
+T4	Argument 82 88	端子部が腐食
+T5	Argument 90 113	エンジンコントローラ電源リレーが作動不良となり
+T6	Argument 114 116	最悪
+T8	Argument 120 130	走行中エンジンが停止
+T9	Connective 27 29	ため
+T10	Connective 46 47	、
+T11	Connective 77 81	そのため
+T12	Connective 89 90	、
+T13	Connective 113 114	、
+T14	Connective 117 119	場合
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T2	
+R3	REASON Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T3	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+R7	REASON Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T5	
+R9	REASON Arg1:T13 Arg2:T5	
+R10	RESULT Arg1:T13 Arg2:T8	
+R11	CONDITION Arg1:T14 Arg2:T6	
+R12	RESULT Arg1:T14 Arg2:T8	

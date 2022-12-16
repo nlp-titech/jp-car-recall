@@ -1,0 +1,13 @@
+T1	Argument 0 36	洗浄液の凍結防止用ヒータを制御する電子回路において、製造工程で異物が付着
+T2	Argument 49 56	当該回路が短絡
+T3	Argument 58 60	最悪
+T4	Argument 64 69	火災が発生
+T5	Connective 44 48	そのため
+T6	Connective 57 58	、
+T7	Connective 61 63	場合
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T4	
+R6	RESULT Arg1:T7 Arg2:T4	
+R5	CONDITION Arg1:T7 Arg2:T3	

@@ -1,0 +1,23 @@
+T1	Argument 19 31	当該ホースの材質が不適切
+T2	Connective 32 34	ため
+T3	Argument 35 40	強度が不足
+T4	Argument 53 80	ホース外径に対して不適切なホースクランプが取り付けられ
+T5	Connective 89 93	そのため
+T6	Argument 94 108	そのままの状態で使用を続ける
+T7	Connective 108 109	と
+T8	Argument 110 126	ホース接続部が損傷し、燃料が漏れ
+T9	Connective 126 127	、
+T10	Argument 127 129	最悪
+T11	Connective 130 132	場合
+T12	Argument 133 140	車両火災に至る
+R1	RESULT Arg1:T11 Arg2:T12	
+R2	CONDITION Arg1:T11 Arg2:T10	
+R3	RESULT Arg1:T9 Arg2:T12	
+R4	REASON Arg1:T9 Arg2:T8	
+R5	RESULT Arg1:T7 Arg2:T8	
+R6	CONDITION Arg1:T7 Arg2:T6	
+R7	RESULT Arg1:T5 Arg2:T6	
+R8	REASON Arg1:T5 Arg2:T4	
+R9	RESULT Arg1:T2 Arg2:T3	
+R10	REASON Arg1:T2 Arg2:T1	
+R11	REASON Arg1:T5 Arg2:T3	

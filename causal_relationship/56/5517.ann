@@ -1,0 +1,13 @@
+T1	Argument 0 47	油圧制御式フロント・サスペンションの作動を検知する加速度センサにおいて、基板の半田処理が不適切
+T2	Argument 56 70	正確に車高変化を測定できない
+T3	Argument 81 95	制御装置に誤った信号が送られ
+T4	Argument 96 120	車高及びサスペンションの硬さが路面に関係なく変化
+T5	Connective 53 55	ため
+T6	Connective 76 80	そのため
+T7	Connective 95 96	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	

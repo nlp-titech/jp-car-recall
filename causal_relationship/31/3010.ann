@@ -1,0 +1,29 @@
+T1	Argument 68 94	シリンダヘッドプラグのシール材表面が吸水して加水分解
+T2	Argument 101 108	シール性が低下
+T3	Argument 110 120	エンジンオイルが滲む
+T4	Connective 126 130	そのため
+T5	Argument 147 166	滲み出たオイルが排気管カバー内に溜まり
+T6	Argument 167 172	発煙・発火
+T9	Argument 97 99	硬化
+T11	Argument 0 59	冷機時の長時間暖機運転や短距離走行の使用頻度が高い車両において、ブローバイガスの凝縮結露でエンジンオイルに水分が混ざり
+T13	Connective 96 97	と
+T14	Connective 109 110	て
+T15	Connective 166 167	、
+R1	RESULT Arg1:T15 Arg2:T6	
+R2	REASON Arg1:T15 Arg2:T5	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	REASON Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T14 Arg2:T3	
+R6	REASON Arg1:T14 Arg2:T2	
+T16	Connective 100 101	、
+R7	RESULT Arg1:T16 Arg2:T2	
+R8	REASON Arg1:T16 Arg2:T9	
+R9	RESULT Arg1:T13 Arg2:T9	
+T17	Connective 59 60	、
+R13	RESULT Arg1:T17 Arg2:T1	
+R14	REASON Arg1:T17 Arg2:T11	
+T18	Argument 131 145	そのままの状態で使用を続ける
+T19	Connective 145 146	と
+R17	CONDITION Arg1:T19 Arg2:T18	
+R18	RESULT Arg1:T19 Arg2:T5	
+R10	REASON Arg1:T13 Arg2:T1	

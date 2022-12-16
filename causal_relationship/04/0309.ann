@@ -1,0 +1,21 @@
+T2	Argument 100 111	燃料パイプに亀裂が発生
+T3	Argument 113 119	燃料が漏れる
+T6	Connective 65 67	ため
+R2	RESULT Arg1:T6 Arg2:T2	
+T9	Connective 112 113	、
+R3	REASON Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 90 96	原動機の振動
+T11	Connective 96 99	により
+R5	REASON Arg1:T11 Arg2:T10	
+R6	RESULT Arg1:T11 Arg2:T2	
+T1	Argument 0 64	燃料装置において、燃料供給ポンプと燃料フィルタ間の燃料パイプの固定クランプの位置、及び燃料噴射ポンプの取付金具の取付方法が不適切
+R1	REASON Arg1:T6 Arg2:T1	
+T4	Argument 68 82	そのままの状態で使用を続ける
+T5	Connective 82 83	と
+R8	RESULT Arg1:T5 Arg2:T2	
+T7	Argument 84 86	最悪
+T8	Connective 87 89	場合
+R9	CONDITION Arg1:T8 Arg2:T7	
+R10	RESULT Arg1:T8 Arg2:T2	
+R7	CONDITION Arg1:T5 Arg2:T4	

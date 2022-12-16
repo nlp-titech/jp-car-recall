@@ -1,0 +1,21 @@
+T1	Argument 0 60	緩衝装置の前輪トランスバースリンクのボールジョイントにおいて、当該ボールジョイント内部にボールシートが組み込まれていない
+T2	Argument 84 99	ボールジョイント内部が異常摩耗
+T3	Argument 107 118	ボールジョイントが外れ
+T4	Argument 119 126	走行不能になる
+T5	Connective 65 67	ため
+T6	Connective 100 101	、
+T7	Connective 118 119	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 68 82	そのままの状態で使用を続ける
+T9	Connective 82 83	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T2	
+T10	Argument 101 103	最悪
+T11	Connective 104 106	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	

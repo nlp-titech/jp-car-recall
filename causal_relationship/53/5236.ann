@@ -1,0 +1,37 @@
+T1	Argument 0 19	前照灯スイッチ内部の接点の形状が不適切
+T2	Connective 20 22	ため
+T3	Argument 23 33	接点の摩耗が早くなり
+T4	Connective 33 34	、
+T5	Argument 34 56	摩耗粉を伝わって摺動グリースが当該接点に付着
+T6	Connective 56 57	し
+T7	Argument 57 63	絶縁物が生成
+T8	Connective 72 76	そのため
+T9	Argument 77 90	前照灯が時々点灯しなくなり
+T10	Connective 90 91	、
+T11	Argument 103 115	当該接点の電気抵抗が増加
+T12	Argument 117 119	過熱
+T13	Connective 116 117	て
+T14	Argument 121 127	樹脂部が溶損
+T15	Connective 128 129	て
+T16	Argument 129 131	消灯
+R1	REASON Arg1:T4 Arg2:T3	
+R2	REASON Arg1:T2 Arg2:T1	
+R3	RESULT Arg1:T2 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R11	REASON Arg1:T13 Arg2:T11	
+R12	RESULT Arg1:T13 Arg2:T12	
+T17	Connective 120 121	、
+R13	REASON Arg1:T17 Arg2:T12	
+R14	RESULT Arg1:T17 Arg2:T14	
+R15	REASON Arg1:T15 Arg2:T14	
+R16	RESULT Arg1:T15 Arg2:T16	
+T18	Argument 91 101	そのまま使用を続ける
+T19	Connective 101 102	と
+R17	CONDITION Arg1:T19 Arg2:T18	
+R18	RESULT Arg1:T19 Arg2:T11	
+R19	RESULT Arg1:T10 Arg2:T11	

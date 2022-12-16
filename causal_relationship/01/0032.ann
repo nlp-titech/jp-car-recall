@@ -1,0 +1,29 @@
+T1	Argument 0 55	原動機の燃料噴射時期を制御する油圧式タイマーの油圧調整用電磁弁を取り付けている金具（ブラケット）の構造が不適切
+T2	Argument 59 103	電磁弁に接続されているオイルパイプ（エンジンオイル戻り側）が原動機の特定の高回転域で共振
+T3	Argument 120 134	当該オイルパイプに亀裂が発生
+T4	Argument 136 146	エンジンオイルが漏れ
+T5	Argument 153 161	原動機が焼き付き
+T6	Argument 162 169	走行不能となる
+T7	Connective 161 162	、
+T8	Connective 146 147	、
+T9	Connective 135 136	、
+T10	Connective 104 105	、
+T11	Connective 56 58	ため
+R1	REASON Arg1:T11 Arg2:T1	
+R2	RESULT Arg1:T11 Arg2:T2	
+R3	REASON Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T8 Arg2:T4	
+R8	RESULT Arg1:T8 Arg2:T5	
+R9	REASON Arg1:T7 Arg2:T5	
+R10	RESULT Arg1:T7 Arg2:T6	
+T12	Connective 150 152	場合
+T13	Argument 147 149	最悪
+R11	CONDITION Arg1:T12 Arg2:T13	
+R12	RESULT Arg1:T12 Arg2:T5	
+T14	Connective 119 120	と
+T16	Argument 105 119	このような状態を長時間続ける
+R13	CONDITION Arg1:T14 Arg2:T16	
+R14	RESULT Arg1:T14 Arg2:T3	

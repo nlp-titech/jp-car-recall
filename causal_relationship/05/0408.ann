@@ -1,0 +1,23 @@
+T1	Argument 0 92	制動装置の車両挙動制御機能（アクティブスタビリティコントロールシステム：ASC）において、ASC油圧ユニットに取り付けられているガス封入式アキュムレータ内部のダイヤフラムの耐久性が不足
+T2	Argument 120 143	アキュムレータ内の封入ガスがブレーキ液中に混入
+T3	Argument 162 175	操作力が伝わらない感じがし
+T4	Argument 182 188	制動力が低下
+T5	Connective 101 103	ため
+T6	Connective 150 151	､
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+T8	Argument 104 118	そのままの状態で使用を続ける
+T9	Connective 118 119	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T2	
+T10	Argument 151 160	ブレーキペダル操作
+T11	Connective 160 161	時
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	
+T12	Argument 176 178	最悪
+T13	Connective 179 181	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T4	
+R5	RESULT Arg1:T6 Arg2:T4	

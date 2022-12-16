@@ -1,0 +1,30 @@
+T1	Argument 0 28	大型トラックの車体構造部において、架装に係る設計が不適切
+T2	Connective 29 31	ため
+T3	Argument 32 69	縦根太と横根太を結合するブラケットと、電気配線またはエア配管の隙間が少ない
+T4	Connective 75 79	そのため
+T5	Argument 80 87	走行時の振動等
+T6	Connective 87 90	により
+T7	Argument 90 106	当該ブラケットと電気配線等が接触
+T8	Connective 107 108	、
+T9	Argument 108 119	そのままま使用を続ける
+T10	Connective 119 120	と
+T11	Argument 121 129	電気配線等が損傷
+T12	Connective 130 131	て
+T13	Argument 132 134	最悪
+T14	Connective 135 137	場合
+T15	Argument 138 150	意図せずにエンジンが停止
+R2	CONDITION Arg1:T14 Arg2:T13	
+R3	RESULT Arg1:T12 Arg2:T15	
+R4	REASON Arg1:T12 Arg2:T11	
+R5	RESULT Arg1:T10 Arg2:T11	
+R6	CONDITION Arg1:T10 Arg2:T9	
+R7	RESULT Arg1:T8 Arg2:T11	
+R8	REASON Arg1:T8 Arg2:T7	
+R9	RESULT Arg1:T6 Arg2:T7	
+R10	REASON Arg1:T6 Arg2:T5	
+R11	RESULT Arg1:T4 Arg2:T7	
+R12	REASON Arg1:T4 Arg2:T3	
+R13	RESULT Arg1:T2 Arg2:T3	
+R14	REASON Arg1:T2 Arg2:T1	
+T16	Argument 154 166	ブレーキが効きづらくなる
+R16	RESULT Arg1:T12 Arg2:T16	

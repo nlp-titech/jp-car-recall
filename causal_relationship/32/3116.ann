@@ -1,0 +1,21 @@
+T1	Argument 0 18	スタビライザ・アームの熱処理が不適切
+T2	Connective 19 21	ため
+T3	Argument 22 27	強度が不足
+T4	Connective 37 41	そのため
+T5	Argument 42 56	そのままの状態で使用を続ける
+T6	Connective 56 57	と
+T7	Argument 58 71	スタビライザ・アームが折損
+T8	Argument 73 83	走行安定性が損なわれ
+T9	Connective 83 84	、
+T10	Connective 72 73	、
+T11	Argument 84 92	走行できなくなる
+R1	RESULT Arg1:T9 Arg2:T11	
+R2	REASON Arg1:T9 Arg2:T8	
+R3	RESULT Arg1:T10 Arg2:T8	
+R4	REASON Arg1:T10 Arg2:T7	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	CONDITION Arg1:T6 Arg2:T5	
+R7	RESULT Arg1:T4 Arg2:T7	
+R8	REASON Arg1:T4 Arg2:T3	
+R9	RESULT Arg1:T2 Arg2:T3	
+R10	REASON Arg1:T2 Arg2:T1	

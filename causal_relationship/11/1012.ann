@@ -1,0 +1,17 @@
+T1	Argument 0 94	前後輪のブレーキが連動して作動する機能が付いた二輪車において、前後制動力配分をコントロールするプロポーショナルコントロールバルブ（ＰＣＶ）内のブレーキ液圧保持シールのリップ加工寸法が不適切
+T2	Connective 95 97	ため
+T3	Argument 98 107	リップの先端が潰れ
+T4	Connective 107 108	て
+T5	Argument 108 121	液圧保持のシール機能が低下
+T6	Connective 129 133	そのため
+T7	Argument 134 142	ブレーキ液が漏れ
+T8	Connective 142 143	て
+T9	Argument 143 156	後輪ブレーキが効かなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R3	REASON Arg1:T4 Arg2:T3	

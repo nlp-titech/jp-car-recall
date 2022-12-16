@@ -1,0 +1,5 @@
+T1	Argument 0 26	エアバッグ展開時にインフレータ容器が破損して飛び散り
+T2	Argument 27 37	出火したり乗員が負傷
+T3	Connective 26 27	、
+R1	REASON Arg1:T3 Arg2:T1	
+R2	RESULT Arg1:T3 Arg2:T2	

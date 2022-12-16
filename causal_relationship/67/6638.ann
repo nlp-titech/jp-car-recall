@@ -1,0 +1,13 @@
+T1	Argument 0 25	車幅灯において、灯器制御ユニットの電気回路が不適切
+T2	Connective 26 28	ため
+T3	Argument 29 61	車両制御ユニットからの車幅灯制御信号を適切に処理することが出来ず
+T4	Connective 61 62	、
+T5	Argument 62 77	車幅灯の最大光度が基準値を超え
+T6	Connective 77 78	、
+T7	Argument 78 92	保安基準第３４条に適合しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

@@ -1,0 +1,33 @@
+T1	Argument 8 25	電動ファン用電気配線の配索が不適切
+T2	Connective 26 28	ため
+T3	Argument 29 83	当該電気配線がファンモーターハウジングとファンモーターハウジングのエッジ部及びサイドメンバーのエッジ部と干渉
+T4	Connective 90 91	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 107 120	電動ファン用電気配線が損傷
+T6	Connective 121 122	、
+T7	Argument 128 130	短絡
+T8	Argument 132 134	焼損
+T9	Connective 131 132	て
+T10	Connective 135 136	、
+T11	Argument 136 149	電動ファンが作動しなくなり
+T12	Connective 149 150	、
+T13	Argument 150 161	原動機がオーバーヒート
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+R9	REASON Arg1:T10 Arg2:T8	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+T14	Argument 91 105	このままの状態で使用を続ける
+T15	Connective 105 106	と
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T5	
+T16	Argument 122 124	最悪
+T17	Connective 125 127	場合
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T7	

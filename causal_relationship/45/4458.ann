@@ -1,0 +1,26 @@
+T1	Argument 0 37	前輪用ブレーキホースをショックアブソーバの外筒に保持する部位の構造が不適切
+T2	Connective 38 40	ため
+T3	Argument 41 52	ブレーキホースが外れる
+T4	Argument 73 83	ブレーキホースが損傷
+T5	Connective 84 85	、
+T6	Argument 91 98	ブレーキ液が漏
+T7	Connective 98 99	れ
+T8	Argument 99 105	制動力が低下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T9	Connective 57 58	。
+R3	REASON Arg1:T9 Arg2:T3	
+R4	RESULT Arg1:T9 Arg2:T4	
+R5	REASON Arg1:T5 Arg2:T4	
+R6	RESULT Arg1:T5 Arg2:T6	
+R7	REASON Arg1:T7 Arg2:T6	
+R8	RESULT Arg1:T7 Arg2:T8	
+T10	Argument 58 72	そのままの状態で使用を続ける
+T11	Connective 72 73	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T4	
+T12	Argument 85 87	最悪
+T13	Connective 88 90	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T6	
+#1	AnnotatorNotes T1	「部位」だけでは意味をなさないので修飾節を入れた

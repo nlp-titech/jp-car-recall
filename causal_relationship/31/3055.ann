@@ -1,0 +1,13 @@
+T1	Argument 0 36	テールゲートに固定するハイマウントストップランプに塗布したすべり剤の影響
+T2	Connective 36 39	により
+T3	Argument 40 63	ハイマウントストップランプのツメ部に亀裂が発生
+T4	Argument 66 76	そのままの状態で使用
+T5	Connective 78 79	と
+T6	Argument 80 110	ハイマウントストップランプがテールゲートの取付位置からずれる
+R1	RESULT Arg1:T5 Arg2:T6	
+R2	CONDITION Arg1:T5 Arg2:T4	
+T10	Connective 65 66	。
+R3	REASON Arg1:T10 Arg2:T3	
+R4	RESULT Arg1:T10 Arg2:T6	
+R5	REASON Arg1:T2 Arg2:T1	
+R6	RESULT Arg1:T2 Arg2:T3	

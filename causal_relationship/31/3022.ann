@@ -1,0 +1,29 @@
+T1	Argument 0 33	中型消防車の燃料タンクにおいて、燃料タンクブラケットの構造が不適切
+T2	Argument 37 51	当該ブラケット内部に水が侵入
+T3	Argument 56 64	侵入した水が滞留
+T4	Argument 66 82	当該ブラケットの下端部に錆を発生
+T5	Argument 112 126	当該ブラケットの下端部が破損
+T6	Argument 134 142	燃料タンクが脱落
+T7	Connective 34 36	ため
+T9	Connective 65 66	、
+T10	Connective 91 95	そのため
+T11	Connective 127 128	、
+R1	RESULT Arg1:T11 Arg2:T6	
+R2	REASON Arg1:T11 Arg2:T5	
+R3	REASON Arg1:T10 Arg2:T4	
+R4	REASON Arg1:T9 Arg2:T3	
+R6	REASON Arg1:T7 Arg2:T1	
+R5	RESULT Arg1:T7 Arg2:T3	
+T8	Connective 53 55	場合
+R7	CONDITION Arg1:T8 Arg2:T2	
+R8	RESULT Arg1:T8 Arg2:T3	
+R9	RESULT Arg1:T9 Arg2:T4	
+R10	RESULT Arg1:T10 Arg2:T5	
+T12	Connective 110 111	と
+T13	Argument 96 110	そのままの状態で使用を続ける
+R11	CONDITION Arg1:T12 Arg2:T13	
+R12	RESULT Arg1:T12 Arg2:T5	
+T14	Connective 131 133	場合
+T15	Argument 128 130	最悪
+R13	CONDITION Arg1:T14 Arg2:T15	
+R14	RESULT Arg1:T14 Arg2:T6	

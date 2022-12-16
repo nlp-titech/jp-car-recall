@@ -1,0 +1,23 @@
+T1	Argument 21 40	適切にシフトケーブルが装着されていない
+T2	Connective 40 42	ため
+T3	Argument 43 58	使用過程で当該ケーブルが外れる
+T4	Connective 64 68	その場合
+T5	Argument 69 83	シフト操作が正しく行われない
+T6	Connective 83 85	ため
+T7	Argument 86 98	車両が意図しない動きをし
+T8	Argument 101 112	駐車ブレーキの作動状態
+T9	Connective 112 117	によっては
+T10	Argument 118 128	車両が勝手に動き出し
+T11	Connective 134 135	で
+T12	Argument 135 143	事故を引き起こす
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T10	
+R8	CONDITION Arg1:T9 Arg2:T8	
+R9	RESULT Arg1:T9 Arg2:T10	
+R10	REASON Arg1:T11 Arg2:T10	
+R11	RESULT Arg1:T11 Arg2:T12	

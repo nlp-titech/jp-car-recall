@@ -1,0 +1,13 @@
+T1	Argument 20 41	バックルを座席に固定する取付部の強度が不足
+T2	Connective 51 55	そのため
+T3	Argument 78 86	当該取付部が破損
+T4	Connective 87 88	、
+T5	Argument 88 106	乗員を十分拘束することができなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 61 74	大きな荷重がベルトにかかっ
+T7	Connective 75 77	場合
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	

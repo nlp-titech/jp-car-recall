@@ -1,0 +1,9 @@
+T1	Argument 14 43	エアバッグユニット固定用のビスの一部が取り付けられていない
+T2	Connective 48 50	ため
+T3	Argument 51 69	エアバッグ展開時に正規位置で展開せず
+T4	Connective 69 70	、
+T5	Argument 70 82	乗員に過度の傷害を与える
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

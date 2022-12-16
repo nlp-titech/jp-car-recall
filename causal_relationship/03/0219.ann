@@ -1,0 +1,17 @@
+T1	Argument 0 34	後輪緩衝装置のショックアブソーバ取付部材（ブラケット）の形状が不適切
+T2	Argument 54 58	車両振動
+T3	Argument 61 80	当該取付部材とアクスルハウジングが干渉
+T4	Argument 82 114	アクスルハウジングとリーフスプリングを締結しているＵボルトが弛む
+T5	Connective 35 37	ため
+T6	Connective 58 61	により
+T7	Connective 81 82	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T3	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 38 52	そのままの状態で使用を続ける
+T9	Connective 52 53	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T2	

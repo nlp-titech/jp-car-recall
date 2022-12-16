@@ -1,0 +1,37 @@
+T1	Argument 0 59	制動装置の後輪ドラムブレーキにおいて、ブレーキを解除する際にブレーキシューを定位置に引き戻すリンクプレートの強度が不足
+T2	Connective 63 65	ため
+T3	Argument 66 95	駐車ブレーキのみを使用して車両を停止する操作を繰り返し行う
+T4	Connective 95 96	と
+R1	REASON Arg1:T2 Arg2:T1	
+T5	Argument 96 105	想定外の荷重が入力
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 108 123	当該リンクプレートに亀裂が発生
+T7	Connective 107 108	、
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	
+T8	Connective 131 135	そのため
+T9	Argument 152 162	リンクプレートが折損
+T10	Argument 164 185	破片がブレーキシューとドラムの間に噛み込み
+T11	Connective 163 164	、
+T12	Connective 185 186	、
+T13	Argument 192 198	後輪がロック
+T14	Connective 199 200	て
+T15	Argument 200 209	走行安定性を損なう
+R7	REASON Arg1:T8 Arg2:T6	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T11 Arg2:T9	
+R10	RESULT Arg1:T11 Arg2:T10	
+R11	REASON Arg1:T12 Arg2:T10	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+T22	Argument 136 150	そのままの状態で使用を続ける
+T23	Connective 150 151	と
+R15	CONDITION Arg1:T23 Arg2:T22	
+R16	RESULT Arg1:T23 Arg2:T9	
+T24	Argument 186 188	最悪
+T25	Connective 189 191	場合
+R17	CONDITION Arg1:T25 Arg2:T24	
+R18	RESULT Arg1:T25 Arg2:T13	

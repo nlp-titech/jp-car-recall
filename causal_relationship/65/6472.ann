@@ -1,0 +1,13 @@
+T1	Argument 0 28	ワイパの電気配線において、車両組付け時の固定指示が不適切
+T2	Connective 29 31	ため
+T3	Argument 32 50	ワイパ作動時にワイパリンケージと干渉
+T4	Connective 58 62	そのため
+T5	Argument 63 68	配線が損傷
+T6	Connective 69 70	、
+T7	Argument 70 81	ワイパが作動しなくなる
+R1	RESULT Arg1:T2 Arg2:T3	
+R2	REASON Arg1:T2 Arg2:T1	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

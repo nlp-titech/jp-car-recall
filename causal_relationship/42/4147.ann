@@ -1,0 +1,9 @@
+T2	Connective 40 42	ため
+T3	Argument 43 56	反射特性が基準値を満足せず
+T4	Connective 56 57	、
+T5	Argument 57 74	保安基準第３８条の規定に適合しない
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T1	Argument 23 39	後部反射器において、選定が不適切
+R1	REASON Arg1:T2 Arg2:T1	

@@ -1,0 +1,13 @@
+T1	Argument 0 18	インストルメントパネルの材質が不適切
+T2	Connective 19 21	ため
+T3	Argument 74 79	ケガをする
+R1	RESULT Arg1:T2 Arg2:T3	
+R2	REASON Arg1:T2 Arg2:T1	
+T5	Connective 71 73	場合
+R3	RESULT Arg1:T5 Arg2:T3	
+T4	Argument 22 41	助手席の乗員がシートベルトをしていない
+T6	Connective 41 43	状態
+T7	Argument 45 70	事故等によいりインストルメントパネルに頭を打ち付け
+R4	CONDITION Arg1:T5 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T4	
+R6	RESULT Arg1:T6 Arg2:T7	

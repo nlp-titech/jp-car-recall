@@ -1,0 +1,37 @@
+T1	Argument 0 21	原動機制御コンピュータのプログラムが不適切
+T2	Connective 22 24	ため
+T3	Argument 76 82	熱負荷を与え
+T4	Connective 82 83	、
+T5	Argument 83 105	当該センサのセラミック部にヘアクラックが発生
+T6	Connective 108 112	そのため
+T7	Argument 113 131	当該センサが、誤った空燃比信号を発信
+T8	Connective 132 133	、
+T10	Connective 140 141	り
+T11	Argument 141 155	イグニッション失火状態が発生
+T12	Connective 156 157	て
+T13	Argument 164 174	異常な排気ガスを発生
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T14	Argument 25 38	外気温変化の大きな気象条件
+T15	Connective 39 40	で
+R5	CONDITION Arg1:T15 Arg2:T14	
+R6	RESULT Arg1:T15 Arg2:T3	
+R7	REASON Arg1:T6 Arg2:T5	
+R8	RESULT Arg1:T6 Arg2:T7	
+R9	REASON Arg1:T8 Arg2:T7	
+R12	RESULT Arg1:T10 Arg2:T11	
+R13	REASON Arg1:T12 Arg2:T11	
+R14	RESULT Arg1:T12 Arg2:T13	
+T16	Argument 158 160	最悪
+T17	Connective 161 163	場合
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T13	
+T9	Argument 133 140	空燃比が濃くな
+R10	RESULT Arg1:T8 Arg2:T9	
+R11	REASON Arg1:T10 Arg2:T9	
+T18	Argument 41 75	Ｏ２センサのセラミック部に付着した水分が、当該センサヒーターの作動時
+T19	Connective 75 76	に
+R17	CONDITION Arg1:T19 Arg2:T18	
+R18	RESULT Arg1:T19 Arg2:T3	

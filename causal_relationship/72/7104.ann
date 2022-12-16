@@ -1,0 +1,13 @@
+T1	Argument 0 65	二重アクセル・リターン・スプリング（プライマリとセカンダリの２本のスプリンクで構成され、いずれか一方のスプリングが折損等により失陥
+T2	Connective 67 69	場合
+T3	Argument 70 126	残る一方のスプリングによりアクセルを戻す機構）において、張力の不足しているセカンダリ・リターン・スプリングが使用
+T4	Connective 129 131	ため
+T5	Argument 132 151	プライマリ・リターン・スプリングが失陥
+T6	Connective 153 155	場合
+T7	Argument 156 180	エンジン回転のアイドル状態への戻りが若干遅くなる
+R1	CONDITION Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	CONDITION Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	RESULT Arg1:T4 Arg2:T7	

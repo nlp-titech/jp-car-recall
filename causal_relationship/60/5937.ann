@@ -1,0 +1,43 @@
+T1	Argument 0 48	７速Ｓトロニック型自動変速機を搭載した車両において、自動変速機制御コンピュータの基盤材質が不適切
+T2	Connective 51 53	ため
+T3	Argument 54 63	内部ショートが発生
+T4	Argument 64 74	電源用ヒューズが溶断
+T5	Connective 63 64	し
+T6	Argument 83 93	走行中に不具合が発生
+T7	Connective 95 97	場合
+T8	Argument 98 108	クラッチの締結が開放
+T9	Connective 113 117	によって
+T10	Argument 118 140	車両の運行を維持するための駆動力が伝達されず
+T11	Connective 149 150	、
+T12	Argument 156 161	再発進不能
+T13	Argument 211 221	駐車中に不具合が発生
+T14	Connective 223 225	場合
+T15	Argument 226 237	エンジンを始動できない
+T16	Argument 241 251	始動できても発進不能
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T4	
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T10	
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T10	
+R9	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T12	
+T17	Connective 82 83	。
+R11	REASON Arg1:T17 Arg2:T4	
+R12	RESULT Arg1:T17 Arg2:T10	
+R13	CONDITION Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R15	RESULT Arg1:T14 Arg2:T16	
+T18	Argument 140 149	惰性走行状態となり
+T19	Connective 139 140	ず
+R18	REASON Arg1:T19 Arg2:T10	
+R19	RESULT Arg1:T19 Arg2:T18	
+R20	REASON Arg1:T11 Arg2:T18	
+T20	Argument 150 154	車両停車
+T21	Connective 154 155	後
+R21	CONDITION Arg1:T21 Arg2:T20	
+R22	RESULT Arg1:T21 Arg2:T12	
+R16	RESULT Arg1:T17 Arg2:T15	
+R17	RESULT Arg1:T17 Arg2:T16	

@@ -1,0 +1,19 @@
+T1	Argument 1 60	電動パワーステアリングコントロールユニット（ＥＰＳＥＣＵ）内部のマイコン電源電圧を監視する回路の素子の製造工程が不適切
+T2	Connective 61 63	ため
+T3	Argument 64 74	素子が特性不良となっ
+T4	Connective 81 85	そのため
+T5	Argument 86 98	電源電圧監視回路が誤作動
+T6	Connective 99 100	、
+T7	Argument 100 132	インフォメーション画面に「パワーステアリングシステム点検」を表示
+T8	Argument 139 152	ＥＰＳのアシスト機能が停止
+T9	Argument 154 165	ハンドルの操舵力が増大
+R2	RESULT Arg1:T6 Arg2:T8	
+R3	RESULT Arg1:T6 Arg2:T7	
+R4	REASON Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T5	
+R6	REASON Arg1:T4 Arg2:T3	
+R7	RESULT Arg1:T2 Arg2:T3	
+R8	REASON Arg1:T2 Arg2:T1	
+T10	Connective 153 154	、
+R9	RESULT Arg1:T10 Arg2:T9	
+R10	REASON Arg1:T10 Arg2:T8	

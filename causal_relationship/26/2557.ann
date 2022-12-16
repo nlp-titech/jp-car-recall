@@ -1,0 +1,25 @@
+T1	Argument 0 41	ショベルローダの走行減速機において、油圧モータ取付側減速機ケースの加工精度が不適切
+T2	Connective 42 44	ため
+T3	Argument 45 69	油圧モータの駆動軸と当該減速機のギアの中心がずれ
+T4	Connective 78 82	そのため
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 83 97	そのままの状態で使用を続ける
+T6	Connective 120 121	、
+T7	Argument 127 133	駆動軸が摩滅
+T8	Connective 134 135	、
+T9	Argument 135 142	走行不能となる
+R4	RESULT Arg1:T4 Arg2:T11	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Connective 97 98	と
+T11	Argument 98 119	油圧モータの駆動軸（スプライン部分）が摩耗
+R5	CONDITION Arg1:T10 Arg2:T5	
+R9	RESULT Arg1:T10 Arg2:T11	
+R10	REASON Arg1:T6 Arg2:T11	
+T22	Connective 124 126	場合
+T23	Argument 121 123	最悪
+R11	REASON Arg1:T22 Arg2:T23	
+R12	RESULT Arg1:T22 Arg2:T7	

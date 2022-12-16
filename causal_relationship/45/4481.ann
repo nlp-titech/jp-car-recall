@@ -1,0 +1,9 @@
+T1	Argument 7 52	ステアリング・シャフトの上部ユニバーサル・ジョイント（自在継手）に製造不良のため亀裂が入っ
+T2	Connective 60 61	、
+T3	Argument 76 90	、ハンドル操作ができなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 61 75	そのままの状態で使用を続ける
+T5	Connective 75 76	と
+R3	CONDITION Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T3	

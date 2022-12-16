@@ -1,0 +1,21 @@
+T1	Argument 0 34	簡易保冷庫搭載車において、ハイマウントストップランプ配線経路が不適切
+T2	Connective 35 37	ため
+T3	Argument 38 57	保冷庫組立て時に当該配線の被覆を傷つけ
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 64 68	そのため
+T5	Argument 79 84	配線が短絡
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 92 93	て
+R5	REASON Arg1:T6 Arg2:T11	
+T7	Argument 94 115	ハイマウントストップランプが点灯しなくなる
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 69 78	車両走行時の振動等
+T9	Connective 78 79	で
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Connective 84 85	し
+R9	REASON Arg1:T10 Arg2:T5	
+T11	Argument 85 92	ヒューズが切れ
+R10	RESULT Arg1:T10 Arg2:T11	

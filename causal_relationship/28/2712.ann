@@ -1,0 +1,21 @@
+T1	Argument 2 46	電気装置において、変速機上部に配索されている駐車ブレーキ用電磁弁の電気配線が変速機と接近
+T2	Connective 56 60	そのため
+T3	Argument 68 81	当該電気配線が変速機と接触
+T4	Connective 82 83	、
+T5	Argument 83 90	電気配線が損傷
+T6	Connective 91 92	て
+T7	Argument 92 99	ヒューズが切れ
+T8	Connective 99 100	、
+T9	Argument 100 109	駐車ブレーキが作動
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Connective 67 68	で
+T11	Argument 61 67	車体振動など
+R9	REASON Arg1:T10 Arg2:T11	
+R10	RESULT Arg1:T10 Arg2:T3	

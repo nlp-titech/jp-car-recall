@@ -1,0 +1,32 @@
+T1	Argument 0 52	中型トラックに搭載された機械式自動変速機において、オイルホースの両端部をパイプに固定するクリップが不適切
+T2	Connective 53 55	ため
+T3	Argument 56 71	当該クリップの締め込みが強すぎ
+T4	Connective 71 72	、
+T5	Argument 72 88	オイルホースに過大な応力が生じる
+T6	Connective 94 98	そのため
+T7	Argument 99 111	オイルホースに亀裂が発生
+T8	Connective 111 112	し
+T9	Argument 129 135	オイルが漏れ
+T11	Argument 142 151	オイルホースが抜け
+R1	REASON Arg1:T2 Arg2:T1	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R2	RESULT Arg1:T2 Arg2:T3	
+T12	Argument 113 127	そのままの状態で使用を続ける
+T13	Connective 127 128	と
+T14	Argument 136 138	最悪
+T15	Connective 139 141	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T9	
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T11	
+T16	Connective 151 152	て
+R15	REASON Arg1:T16 Arg2:T11	
+T17	Argument 152 159	走行不能となる
+R16	RESULT Arg1:T16 Arg2:T17	
+R9	RESULT Arg1:T8 Arg2:T11	
+R10	RESULT Arg1:T13 Arg2:T11	

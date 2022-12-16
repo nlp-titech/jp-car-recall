@@ -1,0 +1,17 @@
+T1	Argument 0 51	前輪駆動車において、燃料タンクのブリーザホース（燃料注入時にエアを抜くためのホース）の組付工程が不適切
+T2	Argument 55 64	当該ホースを傷つけ
+T3	Argument 93 99	燃料が漏れる
+T4	Connective 52 54	ため
+T5	Connective 70 71	、
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	
+T6	Argument 71 85	そのままの状態で使用を続ける
+T7	Connective 85 86	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 87 89	最悪
+T9	Connective 90 92	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	

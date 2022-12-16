@@ -1,0 +1,9 @@
+T2	Argument 37 57	車両安定性制御装置（ＥＶＳＣ）が作動せず
+T3	Argument 58 68	保安基準に適合しない
+T4	Connective 34 36	ため
+T5	Connective 57 58	、
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	
+T1	Argument 0 33	大型トラックにおいて、ブレーキ制御ユニットの制御プログラムが不適切
+R1	REASON Arg1:T4 Arg2:T1	

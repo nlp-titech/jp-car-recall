@@ -1,0 +1,13 @@
+T1	Argument 0 37	車椅子乗降用スロープ装着車の後部座席において、格納用ストッパの設計が不適切
+T2	Connective 38 40	ため
+T3	Argument 41 49	後部座席間を移動
+T4	Connective 51 53	際等
+T5	Argument 55 74	当該格納用ストッパにふくらはぎが当たり
+T6	Connective 73 74	り
+T7	Argument 74 82	皮膚裂傷を起こす
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

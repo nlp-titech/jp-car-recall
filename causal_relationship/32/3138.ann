@@ -1,0 +1,31 @@
+T1	Argument 0 44	当社ショベルローダに搭載している走行用油圧ポンプにおいて、内部のピンが使用条件により磨耗
+T2	Connective 46 48	場合
+T3	Argument 52 66	そのままの状態で使用を続ける
+T4	Connective 66 67	と
+T5	Argument 67 74	当該ピンが折損
+T6	Connective 75 76	、
+T7	Argument 76 96	ベアリング保持器を正常に支えられなくなり
+T8	Connective 96 97	、
+T9	Argument 97 99	最悪
+T10	Connective 100 102	場合
+T11	Argument 103 111	ベアリングが破損
+T12	Connective 132 133	、
+T13	Argument 133 148	前後進レバーの位置と異なる挙動
+R1	RESULT Arg1:T12 Arg2:T13	
+R2	REASON Arg1:T12 Arg2:T15	
+R3	RESULT Arg1:T10 Arg2:T11	
+R4	CONDITION Arg1:T10 Arg2:T9	
+R5	RESULT Arg1:T8 Arg2:T11	
+R6	REASON Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T7	
+R8	REASON Arg1:T6 Arg2:T5	
+R9	RESULT Arg1:T4 Arg2:T5	
+R10	CONDITION Arg1:T4 Arg2:T3	
+R12	REASON Arg1:T2 Arg2:T1	
+R11	RESULT Arg1:T2 Arg2:T5	
+T14	Connective 115 116	で
+T15	Argument 116 132	油圧ポンプが正常に作動しなくなり
+R13	REASON Arg1:T14 Arg2:T11	
+R14	RESULT Arg1:T14 Arg2:T15	
+T16	Argument 154 158	走行不能
+R15	RESULT Arg1:T12 Arg2:T16	

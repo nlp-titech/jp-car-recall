@@ -1,0 +1,25 @@
+T1	Argument 7 38	ドラッグリンクの取付けナット部に割りピンが取り付けられていない
+T2	Connective 43 44	、
+T3	Argument 60 68	当該ナットが緩む
+T4	Connective 74 78	そのため
+T5	Argument 79 90	当該取付部にガタが発生
+T6	Connective 91 92	、
+T7	Argument 104 114	ドラッグリンクが脱落
+T8	Connective 115 116	て
+T9	Argument 116 129	かじ取り操作ができなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 92 102	そのまま使用を続ける
+T11	Connective 102 103	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T7	
+T12	Argument 44 57	ステアリング操作の繰り返し
+T13	Connective 57 60	により
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T3	

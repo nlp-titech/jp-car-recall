@@ -1,0 +1,31 @@
+T1	Argument 20 45	油圧パイプの取り付けボルトの締め付けトルクが不適切
+T2	Connective 46 48	ため
+T3	Argument 57 66	当該ボルトがゆるむ
+T4	Connective 71 72	、
+T5	Argument 88 104	パワーステアリングの作動油が漏れ
+T6	Connective 104 105	て
+T7	Argument 105 120	かじ取りハンドルの操舵力が増大
+T8	Argument 128 137	漏れた作動油が着火
+T9	Connective 138 139	て
+T10	Argument 139 144	火災に至る
+R1	RESULT Arg1:T6 Arg2:T8	
+R2	REASON Arg1:T9 Arg2:T8	
+R3	RESULT Arg1:T9 Arg2:T10	
+R4	REASON Arg1:T2 Arg2:T1	
+R5	RESULT Arg1:T2 Arg2:T3	
+R6	REASON Arg1:T4 Arg2:T3	
+R7	RESULT Arg1:T4 Arg2:T5	
+R8	REASON Arg1:T6 Arg2:T5	
+R9	RESULT Arg1:T6 Arg2:T7	
+T11	Argument 122 124	最悪
+T12	Connective 125 127	場合
+R10	CONDITION Arg1:T12 Arg2:T11	
+R11	RESULT Arg1:T12 Arg2:T8	
+T13	Argument 72 86	そのままの状態で使用を続ける
+T14	Connective 86 87	と
+R12	CONDITION Arg1:T14 Arg2:T13	
+R13	RESULT Arg1:T14 Arg2:T5	
+T15	Argument 49 56	走行時の振動等
+T16	Connective 56 57	で
+R14	REASON Arg1:T16 Arg2:T15	
+R15	RESULT Arg1:T16 Arg2:T3	

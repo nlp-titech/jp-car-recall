@@ -1,0 +1,35 @@
+T1	Argument 0 28	ドライブシャフトにおいて、プロテクトカバーの塗装が不適切
+T3	Argument 36 58	プロテクトカバーが正しく組み付けられておらず
+T4	Argument 59 90	ドライブシャフト連結ボルトの締め付けトルクが規定トルクを下回る
+T5	Argument 101 107	そのまま使用
+T6	Argument 111 119	当該ボルトが緩み
+T7	Argument 119 124	異音が発生
+T8	Argument 126 128	最悪
+T9	Argument 132 140	当該ボルトが脱落
+T10	Argument 142 149	走行不能になる
+T11	Connective 29 31	ため
+T13	Connective 58 59	、
+T14	Connective 96 100	そのため
+T15	Connective 109 110	と
+T16	Connective 118 119	み
+T18	Connective 129 131	場合
+T19	Connective 141 142	、
+R1	REASON Arg1:T11 Arg2:T1	
+R5	REASON Arg1:T13 Arg2:T3	
+R6	RESULT Arg1:T13 Arg2:T4	
+R7	REASON Arg1:T14 Arg2:T4	
+R8	RESULT Arg1:T14 Arg2:T6	
+R9	CONDITION Arg1:T15 Arg2:T5	
+R10	RESULT Arg1:T15 Arg2:T6	
+R11	REASON Arg1:T16 Arg2:T6	
+R12	RESULT Arg1:T16 Arg2:T7	
+R15	CONDITION Arg1:T18 Arg2:T8	
+R16	RESULT Arg1:T18 Arg2:T9	
+R17	REASON Arg1:T19 Arg2:T9	
+R18	RESULT Arg1:T19 Arg2:T10	
+R2	RESULT Arg1:T11 Arg2:T3	
+R3	RESULT Arg1:T16 Arg2:T9	
+T2	Argument 32 34	製造
+T12	Connective 34 35	時
+R4	CONDITION Arg1:T12 Arg2:T2	
+R13	RESULT Arg1:T12 Arg2:T3	

@@ -1,0 +1,31 @@
+T1	Argument 0 37	電気装置において、前照灯及び警音器の電気配線カプラー内の端子に寸法が不適切
+T2	Argument 62 72	当該端子結合部が発熱
+T3	Argument 74 85	樹脂製のカプラーが溶損
+T4	Argument 93 105	溶損した樹脂が端子に溶着
+T5	Argument 107 111	導通不良
+T6	Argument 115 121	前照灯の不灯
+T7	Connective 43 45	ため
+T8	Connective 73 74	て
+T9	Connective 86 87	、
+T10	Connective 106 107	て
+T11	Connective 111 114	となり
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T5	
+R9	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	
+T12	Argument 46 60	そのままの状態で使用を続ける
+T13	Connective 60 61	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T2	
+T14	Argument 87 89	最悪
+T15	Connective 90 92	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T4	
+T16	Argument 123 134	警音器の作動不良に至る
+R15	RESULT Arg1:T11 Arg2:T16	

@@ -1,0 +1,25 @@
+T1	Argument 0 21	シート位置記憶ユニットのプログラムが不適切
+T2	Argument 25 42	シートバック位置の検出センサー故障
+T3	Argument 44 61	シートバック位置が正しく検出されず
+T4	Argument 62 76	この状態でシートバックを調整
+T5	Argument 80 103	シートバックが操作者の意図と異なった方向に作動
+T6	Argument 106 117	元の位置に戻せなくなる
+T7	Argument 123 132	安全に着席できない
+T8	Connective 22 24	ため
+T9	Connective 42 44	時に
+T10	Connective 61 62	、
+T11	Connective 78 79	と
+T12	Connective 104 105	て
+T13	Connective 122 123	、
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T3	
+R3	CONDITION Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T3	
+R5	REASON Arg1:T10 Arg2:T3	
+R6	RESULT Arg1:T10 Arg2:T5	
+R7	CONDITION Arg1:T11 Arg2:T4	
+R8	RESULT Arg1:T11 Arg2:T5	
+R9	REASON Arg1:T12 Arg2:T5	
+R10	RESULT Arg1:T12 Arg2:T6	
+R11	REASON Arg1:T13 Arg2:T6	
+R12	RESULT Arg1:T13 Arg2:T7	

@@ -1,0 +1,9 @@
+T1	Argument 0 45	エアバッグコントロールユニットに、誤って乗用車用のＧセンサー（感度の高いもの）が組み込まれ
+T2	Connective 52 56	そのため
+T3	Argument 57 71	そのままの状態で使用を続ける
+T4	Connective 71 72	と
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T7	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+T7	Argument 73 97	エアバッグが走行時の強い路面振動により誤って作動

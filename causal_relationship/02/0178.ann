@@ -1,0 +1,29 @@
+T1	Argument 0 35	発電機の製造過程において、当該発電機の整流回路のダイオードに組付け不良
+T2	Argument 58 75	当該ダイオードが損傷して機能が低下
+T4	Argument 77 91	整流回路に過大な電流が流れる
+T5	Argument 96 98	発熱
+T6	Argument 109 121	整流回路の樹脂部品が溶損
+T7	Argument 123 125	発煙
+T3	Connective 41 42	、
+T8	Connective 76 77	、
+T9	Connective 93 96	により
+T10	Connective 100 102	ため
+T11	Connective 122 123	、
+R1	REASON Arg1:T3 Arg2:T1	
+R2	RESULT Arg1:T3 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T4	
+R5	REASON Arg1:T9 Arg2:T4	
+R6	RESULT Arg1:T9 Arg2:T5	
+R7	REASON Arg1:T10 Arg2:T5	
+R8	RESULT Arg1:T10 Arg2:T6	
+R9	REASON Arg1:T11 Arg2:T6	
+R10	RESULT Arg1:T11 Arg2:T7	
+T12	Argument 42 56	そのままの状態で使用を続ける
+T13	Connective 56 57	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T2	
+T14	Argument 103 105	最悪
+T15	Connective 106 108	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T6	

@@ -1,0 +1,33 @@
+T2	Connective 42 44	ため
+T4	Connective 76 80	そのため
+T6	Argument 100 102	最悪
+T7	Connective 103 105	場合
+T8	Connective 99 100	、
+T10	Connective 123 124	、
+T11	Argument 124 132	走行できなくなる
+R1	RESULT Arg1:T10 Arg2:T11	
+R4	CONDITION Arg1:T7 Arg2:T6	
+T9	Argument 106 113	ブラシが固着し
+T12	Connective 113 114	て
+T13	Argument 114 123	クラッチが作動せず
+R2	RESULT Arg1:T12 Arg2:T13	
+R3	REASON Arg1:T12 Arg2:T9	
+R5	RESULT Arg1:T7 Arg2:T9	
+R6	REASON Arg1:T10 Arg2:T13	
+T5	Argument 81 91	ブラシの摺動が悪くな
+T14	Connective 91 92	り
+T15	Argument 92 98	警告灯が点灯
+R7	RESULT Arg1:T14 Arg2:T15	
+R11	RESULT Arg1:T4 Arg2:T5	
+R12	REASON Arg1:T14 Arg2:T5	
+R13	REASON Arg1:T8 Arg2:T15	
+R14	RESULT Arg1:T8 Arg2:T9	
+T3	Argument 45 56	防水用グロメットが変更
+T16	Connective 57 58	て
+T17	Argument 58 68	モータ内部に水が浸入
+R8	RESULT Arg1:T16 Arg2:T17	
+R9	REASON Arg1:T16 Arg2:T3	
+R15	RESULT Arg1:T2 Arg2:T3	
+R16	REASON Arg1:T4 Arg2:T17	
+T1	Argument 11 41	自動クラッチ装置において、①作動用モータの配線の配索が不適切
+R10	REASON Arg1:T2 Arg2:T1	

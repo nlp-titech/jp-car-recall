@@ -1,0 +1,17 @@
+T1	Argument 0 58	後退警報ブザーの電気配線において、後退警報ブザーとパーキングブレーキ圧力スイッチの動作電源が同じハーネス内で束ねられ
+T2	Connective 61 63	ため
+T3	Argument 64 88	後退警報ブザーの鳴動時に発生する電気ノイズの影響
+T4	Connective 88 91	により
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 91 110	パーキングブレーキ圧力スイッチが誤作動
+T6	Connective 111 112	、
+R4	RESULT Arg1:T4 Arg2:T5	
+T9	Argument 137 150	後退灯点灯用リレーが誤作動
+T10	Connective 151 152	、
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+T11	Argument 152 158	後退灯が点滅
+R10	RESULT Arg1:T10 Arg2:T11	

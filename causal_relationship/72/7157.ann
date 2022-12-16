@@ -1,0 +1,5 @@
+T1	Argument 0 24	運転者席及び助手席のサイドエアバック装置に不適切
+T2	Connective 30 32	ため
+T3	Argument 33 65	衝撃がかかっていないにもかかわらず、当該サイドエアバッグが誤展開
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

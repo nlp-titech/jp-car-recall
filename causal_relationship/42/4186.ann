@@ -1,0 +1,37 @@
+T1	Argument 0 42	冷蔵冷凍車の冷蔵冷凍装置において、アンダーマウント冷凍ユニットの固定部の設計が不適切
+T2	Connective 43 45	ため
+T3	Argument 46 57	当該固定部の強度が不足
+T4	Connective 58 59	、
+T5	Argument 67 73	亀裂が生じる
+T6	Connective 79 83	そのため
+T7	Argument 99 104	亀裂が進行
+T8	Argument 112 118	固定部が破断
+T9	Connective 105 106	、
+T10	Connective 119 120	て
+T11	Argument 120 129	冷凍ユニットが脱落
+T12	Connective 130 131	て
+T13	Argument 132 142	他の交通の妨げとなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+T14	Argument 59 64	走行振動等
+T15	Connective 64 67	により
+R6	REASON Arg1:T15 Arg2:T14	
+R7	RESULT Arg1:T15 Arg2:T5	
+R8	RESULT Arg1:T6 Arg2:T7	
+R9	REASON Arg1:T9 Arg2:T7	
+T16	Argument 84 98	そのままの状態で使用を続ける
+T17	Connective 98 99	と
+R10	CONDITION Arg1:T17 Arg2:T16	
+R11	RESULT Arg1:T17 Arg2:T7	
+T18	Argument 106 108	最悪
+T19	Connective 109 111	場合
+R12	CONDITION Arg1:T19 Arg2:T18	
+R13	RESULT Arg1:T19 Arg2:T8	
+R14	RESULT Arg1:T9 Arg2:T8	
+R15	REASON Arg1:T10 Arg2:T8	
+R16	RESULT Arg1:T10 Arg2:T11	
+R17	REASON Arg1:T12 Arg2:T11	
+R18	RESULT Arg1:T12 Arg2:T13	

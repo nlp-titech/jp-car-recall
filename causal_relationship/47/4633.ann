@@ -1,0 +1,5 @@
+T1	Argument 0 33	一酸化炭素等発散防止装置の触媒において、日本仕様と異なる触媒が装着
+T2	Connective 41 43	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 44 62	排気ガス規制の基準値を満足していない
+R2	RESULT Arg1:T2 Arg2:T3	

@@ -1,0 +1,17 @@
+T1	Argument 0 37	自動定速走行装置（オートクルーズコントロールユニット）のプログラムが不適切
+T2	Connective 38 40	ため
+T3	Argument 131 175	これらのブレーキが解除された後もオートクルーズコントロールユニットがブレーキ作動中と判定
+T4	Connective 180 184	そのため
+T6	Argument 185 212	制動灯が点灯したままとなり車両が停止するまで消灯しない
+R1	RESULT Arg1:T4 Arg2:T6	
+R2	REASON Arg1:T4 Arg2:T3	
+R4	REASON Arg1:T2 Arg2:T1	
+T5	Argument 41 80	定速走行・車間距離制御装置の自動ブレーキが作動中に、運転者がブレーキ操作を行っ
+T7	Connective 81 83	場合
+T8	Argument 86 125	前方障害物衝突被害軽減制動制御装置（衝突被害軽減ブレーキ）の自動ブレーキが作動
+T9	Connective 127 129	場合
+R5	CONDITION Arg1:T7 Arg2:T5	
+R6	CONDITION Arg1:T9 Arg2:T8	
+R7	RESULT Arg1:T7 Arg2:T3	
+R8	RESULT Arg1:T9 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T3	

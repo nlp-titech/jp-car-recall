@@ -1,0 +1,25 @@
+T1	Argument 0 29	制動倍力装置において、高温が続く使用条件を想定していなかっ
+T2	Connective 30 32	ため
+T3	Argument 33 49	当該使用条件下で継続的に使用され
+T4	Connective 50 52	場合
+T5	Argument 53 71	制動倍力装置内のゴム膜が熱により劣化
+T6	Connective 79 83	そのため
+T7	Argument 96 107	当該ゴム膜に亀裂が発生
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 109 118	倍力作用が損なわれ
+T9	Connective 118 119	て
+T10	Connective 108 109	、
+T11	Argument 119 129	制動停止距離が伸びる
+R7	REASON Arg1:T10 Arg2:T7	
+R8	RESULT Arg1:T10 Arg2:T8	
+R9	REASON Arg1:T9 Arg2:T8	
+R10	RESULT Arg1:T9 Arg2:T11	
+T12	Argument 84 94	そのまま使用を続ける
+T13	Connective 94 95	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T7	

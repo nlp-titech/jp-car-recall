@@ -1,0 +1,33 @@
+T1	Argument 21 35	オイルポンプの製造のばらつき
+T2	Connective 35 38	により
+T3	Argument 39 52	ポンプのギヤシャフトが傾く
+T4	Connective 58 62	そのため
+T5	Argument 63 71	ギヤの歯面が摩耗
+T6	Connective 72 73	、
+T7	Argument 73 87	そのままの状態で使用を続ける
+T8	Connective 87 88	と
+T10	Connective 110 111	、
+T11	Argument 111 113	最悪
+T12	Connective 114 116	場合
+R2	CONDITION Arg1:T12 Arg2:T11	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R8	REASON Arg1:T6 Arg2:T5	
+R9	RESULT Arg1:T4 Arg2:T5	
+R10	REASON Arg1:T4 Arg2:T3	
+R11	RESULT Arg1:T2 Arg2:T3	
+R12	REASON Arg1:T2 Arg2:T1	
+T13	Argument 117 125	エンジンが焼き付
+T14	Connective 125 126	き
+T15	Argument 126 136	路上故障や火災に至る
+R1	RESULT Arg1:T14 Arg2:T15	
+R3	REASON Arg1:T14 Arg2:T13	
+R13	RESULT Arg1:T12 Arg2:T13	
+R14	RESULT Arg1:T10 Arg2:T13	
+T9	Argument 89 94	ギヤが破損
+T16	Connective 95 96	て
+T17	Argument 96 109	エンジンへの供給油圧が低下
+R4	REASON Arg1:T16 Arg2:T9	
+R5	RESULT Arg1:T16 Arg2:T17	
+R7	RESULT Arg1:T8 Arg2:T9	
+R15	REASON Arg1:T10 Arg2:T17	
+R16	RESULT Arg1:T6 Arg2:T9	

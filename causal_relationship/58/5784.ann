@@ -1,0 +1,31 @@
+T1	Argument 0 29	右ハンドル仕様車において、リターンホースの耐熱処理が不十分
+T2	Connective 30 32	ため
+T3	Argument 33 46	排気装置から熱の影響を受け
+T4	Connective 46 47	、
+T5	Argument 47 60	リターンホースが早期に劣化
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 68 82	そのままの状態で使用を続ける
+T7	Connective 82 83	と
+T8	Connective 67 68	。
+R5	REASON Arg1:T8 Arg2:T5	
+T9	Argument 84 99	パワーステアリングオイルが漏れ
+R6	RESULT Arg1:T8 Arg2:T9	
+R7	CONDITION Arg1:T7 Arg2:T6	
+R8	RESULT Arg1:T7 Arg2:T9	
+T10	Connective 99 100	、
+T11	Argument 100 111	ハンドルの操作力が増大
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T13	Argument 126 150	漏れたパワーステアリングオイルが排気系部品に付着
+T14	Argument 120 122	最悪
+T15	Connective 123 125	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T13	
+T16	Connective 154 157	により
+T17	Argument 157 164	車両火災に至る
+R15	REASON Arg1:T16 Arg2:T13	
+R16	RESULT Arg1:T16 Arg2:T17	
+R11	RESULT Arg1:T10 Arg2:T13	

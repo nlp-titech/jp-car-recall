@@ -1,0 +1,31 @@
+T1	Argument 0 42	電動パーキングブレーキのコントロールユニットにおいて、部品製造時の基板取扱いが不適切
+T2	Connective 43 45	ため
+T3	Argument 46 57	基板上素子の強度が不足
+T4	Argument 71 91	センサ部品の構造及び製造時の管理が不適切
+T5	Connective 92 94	ため
+T6	Argument 95 100	強度が不足
+T7	Connective 110 114	そのため
+T8	Argument 132 143	素子やセンサ部品が破損
+T9	Connective 144 145	、
+T10	Argument 145 151	警告灯を点灯
+T11	Argument 153 170	電動パーキングブレーキが作動しない
+T12	Argument 181 209	運転者が意図しない瞬間的なパーキングブレーキ作動が起きる
+T13	Argument 175 179	低速走行
+T14	Connective 179 181	時に
+R1	CONDITION Arg1:T14 Arg2:T13	
+R2	RESULT Arg1:T14 Arg2:T12	
+R3	RESULT Arg1:T7 Arg2:T8	
+R4	REASON Arg1:T9 Arg2:T8	
+R5	RESULT Arg1:T9 Arg2:T10	
+R6	RESULT Arg1:T9 Arg2:T11	
+R7	RESULT Arg1:T9 Arg2:T12	
+R8	REASON Arg1:T2 Arg2:T1	
+R9	RESULT Arg1:T2 Arg2:T3	
+R10	REASON Arg1:T5 Arg2:T4	
+R11	RESULT Arg1:T5 Arg2:T6	
+R12	REASON Arg1:T7 Arg2:T3	
+R13	REASON Arg1:T7 Arg2:T6	
+T15	Argument 115 131	これらが搭載された車両の使用過程
+T16	Connective 131 132	で
+R14	CONDITION Arg1:T16 Arg2:T15	
+R15	RESULT Arg1:T16 Arg2:T8	

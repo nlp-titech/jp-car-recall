@@ -1,0 +1,25 @@
+T1	Argument 1 28	右スライドドアの前側ラッチシャフトの加締め加工が不適切
+T2	Connective 29 31	ため
+T3	Argument 32 44	ラッチの作動に渋りがあり
+T4	Connective 44 45	、
+T6	Connective 59 60	と
+T7	Argument 61 81	ラッチを戻すスプリングの力で戻らなくなる
+T8	Connective 87 91	そのため
+T9	Argument 92 103	その状態でドアを閉める
+T10	Connective 103 104	と
+T11	Argument 104 118	ラッチがストライカーに当たり
+T12	Connective 118 119	、
+T13	Argument 119 130	ドアを閉められなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+T5	Argument 45 59	清掃等でラッチに触れて下がる
+R8	RESULT Arg1:T6 Arg2:T7	
+R9	REASON Arg1:T8 Arg2:T7	
+R10	CONDITION Arg1:T10 Arg2:T9	
+R11	RESULT Arg1:T10 Arg2:T11	
+R12	RESULT Arg1:T8 Arg2:T11	
+R13	REASON Arg1:T12 Arg2:T11	
+R14	RESULT Arg1:T12 Arg2:T13	
+R5	CONDITION Arg1:T6 Arg2:T5	

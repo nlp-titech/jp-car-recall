@@ -1,0 +1,15 @@
+T1	Argument 0 24	エンジンコントロールユニットのプログラムが不適切
+T2	Connective 25 27	ため
+T3	Argument 28 40	走行中に突然警告灯が点灯
+T4	Argument 47 60	エンジン回転の制御ができず
+T5	Connective 60 61	、
+T6	Argument 61 84	アクセル操作を行っても回転が上がらなくなったり
+T7	Argument 85 94	勝手に回転が上がる
+T8	Argument 96 107	エンジンが不安定となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T4	
+R4	REASON Arg1:T5 Arg2:T4	
+R5	RESULT Arg1:T5 Arg2:T6	
+R6	RESULT Arg1:T5 Arg2:T7	
+R7	RESULT Arg1:T5 Arg2:T8	

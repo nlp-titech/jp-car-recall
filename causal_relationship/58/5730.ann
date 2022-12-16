@@ -1,0 +1,13 @@
+T1	Argument 0 33	方向指示スイッチの操作ノブの位置を保持する部品に異なった材質を使用
+T2	Connective 35 37	ため
+T3	Argument 53 58	錆が生じる
+T4	Connective 64 68	そのため
+T5	Argument 69 86	方向指示スイッチが操作できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T10	Argument 38 52	スイッチ内部に浸入した雨水等
+T11	Connective 52 53	で
+R5	REASON Arg1:T11 Arg2:T10	
+R6	RESULT Arg1:T11 Arg2:T3	

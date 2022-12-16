@@ -1,0 +1,33 @@
+T1	Argument 0 18	過給機のタービンにおいて鋳造が不適切
+T2	Connective 19 21	ため
+T3	Argument 22 29	耐久性が不十分
+T4	Connective 37 41	そのため
+T5	Argument 42 56	そのままの状態で使用を続ける
+T6	Connective 56 57	と
+T7	Argument 58 65	タービンが破損
+T8	Argument 67 81	エンジン不調や出力不足が発生
+T9	Connective 66 67	、
+T11	Argument 83 85	最悪
+T12	Connective 86 88	場合
+T13	Argument 89 104	排気管内にエンジンオイルが浸入
+T14	Connective 105 106	、
+T15	Argument 106 111	白煙の排出
+T16	Argument 112 127	排気管内のエンジンオイルに引火
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R15	RESULT Arg1:T14 Arg2:T16	
+R9	RESULT Arg1:T9 Arg2:T13	
+T10	Argument 128 133	火災に至る
+T23	Connective 127 128	し
+R10	REASON Arg1:T23 Arg2:T16	
+R16	RESULT Arg1:T23 Arg2:T10	

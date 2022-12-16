@@ -1,0 +1,33 @@
+T1	Argument 0 17	リアワイパモータの電気回路が不適切
+T2	Connective 18 20	ため
+T3	Argument 21 44	ワイパプレードが凍結した状態でリアワイパを作動
+T4	Connective 47 48	と
+T5	Argument 49 64	ワイパモータに誘導起電力が発生
+T6	Connective 66 68	ため
+T7	Argument 69 83	電気回路内のコンデンサが損傷
+T8	Connective 83 84	し
+T9	Argument 84 86	短絡
+T10	Connective 94 98	そのため
+T11	Argument 99 109	そのまま使用を続ける
+T12	Connective 109 110	と
+T13	Argument 111 113	最悪
+T14	Connective 114 116	場合
+T15	Argument 117 125	コンデンサが発火
+T16	Connective 125 126	し
+T17	Argument 126 140	テールゲートの樹脂部品に延焼
+R1	REASON Arg1:T2 Arg2:T1	
+R3	RESULT Arg1:T2 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T5	
+R6	REASON Arg1:T6 Arg2:T5	
+R7	RESULT Arg1:T6 Arg2:T7	
+R8	REASON Arg1:T8 Arg2:T7	
+R9	RESULT Arg1:T8 Arg2:T9	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R4	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T15	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T15	
+R13	CONDITION Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R15	REASON Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T17	

@@ -1,0 +1,39 @@
+T1	Argument 0 35	オルタネータにおいて、製造時に発電容量の不十分なオルタネータを組み付け
+T2	Connective 42 46	そのため
+T3	Argument 47 77	電動油圧式パワーステアリングの操作を行うなど、電気を多く消費
+T4	Connective 79 80	と
+T5	Argument 81 96	オルタネータに電気負荷がかかり
+T6	Connective 96 97	、
+T7	Argument 97 114	オルタネータ内部のダイオードが発熱
+T8	Connective 115 116	、
+T9	Argument 134 147	ダイオードが熱疲労を起こし
+T10	Connective 147 148	、
+T11	Argument 148 155	通電しなくなる
+T12	Argument 159 166	充電不良となる
+T13	Connective 157 159	から
+T14	Argument 169 171	最悪
+T15	Connective 172 174	場合
+T16	Argument 175 184	ダイオードから出火
+T17	Connective 185 186	、
+T18	Argument 186 191	火災に至る
+R1	RESULT Arg1:T10 Arg2:T16	
+R2	REASON Arg1:T2 Arg2:T1	
+R3	RESULT Arg1:T2 Arg2:T5	
+R4	CONDITION Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T4 Arg2:T5	
+R6	REASON Arg1:T6 Arg2:T5	
+R7	RESULT Arg1:T6 Arg2:T7	
+R8	REASON Arg1:T8 Arg2:T7	
+R10	REASON Arg1:T10 Arg2:T9	
+R11	RESULT Arg1:T10 Arg2:T11	
+R12	REASON Arg1:T13 Arg2:T11	
+R13	RESULT Arg1:T13 Arg2:T12	
+R14	CONDITION Arg1:T15 Arg2:T14	
+R15	RESULT Arg1:T15 Arg2:T16	
+R16	REASON Arg1:T17 Arg2:T16	
+R17	RESULT Arg1:T17 Arg2:T18	
+T25	Connective 132 133	で
+T26	Argument 116 130	エンジンルームの高温と重なる
+R18	REASON Arg1:T25 Arg2:T26	
+R19	RESULT Arg1:T25 Arg2:T9	
+R9	RESULT Arg1:T8 Arg2:T9	

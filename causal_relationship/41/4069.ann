@@ -1,0 +1,27 @@
+T1	Argument 0 32	ブレーキマスターシリンダにおいて、ピストン部のシール形状が不適切
+T2	Argument 36 46	ブレーキペダルを踏ん
+T3	Argument 49 56	シールが捲れる
+T4	Argument 67 81	シール部からブレーキ液が漏れ
+T5	Argument 82 88	警告灯が点灯
+T6	Argument 90 92	最悪
+T7	Argument 96 102	制動力が低下
+T8	Argument 104 113	制動距離が長くなる
+T9	Connective 33 35	ため
+T10	Connective 47 48	際
+T11	Connective 62 66	そのため
+T12	Connective 81 82	て
+T14	Connective 93 95	場合
+T15	Connective 103 104	て
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T3	
+R3	CONDITION Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T3	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+R7	REASON Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T5	
+R11	CONDITION Arg1:T14 Arg2:T6	
+R12	RESULT Arg1:T14 Arg2:T7	
+R13	REASON Arg1:T15 Arg2:T7	
+R14	RESULT Arg1:T15 Arg2:T8	
+R9	RESULT Arg1:T12 Arg2:T7	

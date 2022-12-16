@@ -1,0 +1,25 @@
+T1	Argument 0 30	エンジンコントロールユニット内部の電子基板の半田付けが不適切
+T2	Connective 31 33	ため
+T3	Argument 34 40	半田部が剥離
+T4	Connective 41 42	て
+T6	Argument 46 55	トランジスタが破損
+T7	Connective 63 67	そのため
+T8	Argument 68 83	燃料噴射用電源のヒューズが溶断
+T9	Connective 84 85	て
+T10	Argument 85 93	燃料が噴射されず
+T11	Connective 93 94	、
+T12	Argument 94 113	エンジンが停止し、再始動ができなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T5	Argument 42 44	断線
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T13	Connective 45 46	、
+R5	REASON Arg1:T13 Arg2:T5	
+R6	RESULT Arg1:T13 Arg2:T6	
+R7	REASON Arg1:T7 Arg2:T6	
+R8	REASON Arg1:T9 Arg2:T8	
+R9	RESULT Arg1:T7 Arg2:T8	
+R10	RESULT Arg1:T9 Arg2:T10	
+R11	REASON Arg1:T11 Arg2:T10	
+R12	RESULT Arg1:T11 Arg2:T12	

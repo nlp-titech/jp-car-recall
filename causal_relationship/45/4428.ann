@@ -1,0 +1,27 @@
+T1	Argument 0 52	前席のパワーランバーサポート（腰部の調整機構）の配線が、座席クッションのスチールワイヤーにバンドで共締め
+T2	Connective 57 59	ため
+T3	Argument 60 75	そのワイヤーの先端に配線が接触
+T4	Argument 77 82	被覆が摩耗
+T5	Connective 83 84	て
+T6	Argument 84 91	配線がショート
+T7	Connective 91 92	、
+T8	Argument 92 94	発熱
+T9	Connective 95 96	、
+T10	Argument 96 102	座席を焦がす
+T12	Argument 114 119	火災になる
+R1	RESULT Arg1:T9 Arg2:T10	
+R2	RESULT Arg1:T9 Arg2:T12	
+T11	Argument 108 110	最悪
+T13	Connective 111 113	場合
+R3	CONDITION Arg1:T13 Arg2:T11	
+R4	RESULT Arg1:T13 Arg2:T12	
+R5	REASON Arg1:T2 Arg2:T1	
+R6	RESULT Arg1:T2 Arg2:T3	
+T14	Connective 76 77	、
+R7	REASON Arg1:T14 Arg2:T3	
+R8	RESULT Arg1:T14 Arg2:T4	
+R9	REASON Arg1:T5 Arg2:T4	
+R10	RESULT Arg1:T5 Arg2:T6	
+R11	REASON Arg1:T7 Arg2:T6	
+R12	RESULT Arg1:T7 Arg2:T8	
+R13	REASON Arg1:T9 Arg2:T8	

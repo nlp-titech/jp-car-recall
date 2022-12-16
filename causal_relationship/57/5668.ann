@@ -1,0 +1,29 @@
+T1	Argument 49 80	板金プレートのアッパーアームボールジョイント取付け穴位置がずれ
+T2	Argument 94 104	取付けボルトがかじり
+T3	Argument 105 112	締付け力が不足
+T4	Argument 125 131	ボルトが緩み
+T5	Argument 132 143	ボールジョイントが外れ
+T6	Argument 144 151	走行不能となる
+T7	Connective 89 93	そのため
+T8	Connective 104 105	、
+T9	Connective 119 120	、
+T10	Connective 131 132	、
+T11	Connective 143 144	、
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	REASON Arg1:T9 Arg2:T3	
+R5	RESULT Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T5	
+R9	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	
+T12	Argument 0 45	前輪用サスペンションのアッパーアームにおいて、２枚の板金プレートの溶接時の位置管理が不適切
+T13	Connective 46 48	ため
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T1	
+T14	Argument 120 124	使用過程
+T15	Connective 124 125	で
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T4	

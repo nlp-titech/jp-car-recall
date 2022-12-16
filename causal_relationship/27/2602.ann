@@ -1,0 +1,13 @@
+T1	Argument 2 42	騒音防止装置において、消音器のエンドプレートに配管を取り付ける部分の強度が不十分
+T2	Connective 43 45	ため
+T3	Argument 55 66	当該取付部に亀裂が入り
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 66 67	、
+T5	Argument 67 81	消音器のエンドプレートが破損
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 46 52	原動機の振動
+T7	Connective 52 55	により
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	

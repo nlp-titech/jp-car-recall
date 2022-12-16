@@ -1,0 +1,25 @@
+T1	Argument 0 44	ホイール・クレーンのシャシフレームにおいて、シャシフレームとクロスメンバーの溶接が不適切
+T2	Argument 48 56	溶接の溶込み不良
+T3	Argument 57 64	溶接強度が不足
+T4	Argument 74 77	走行等
+T5	Argument 80 90	溶接箇所に亀裂が生じ
+T6	Argument 91 105	そのままの状態で使用を続ける
+T7	Argument 107 113	溶接部が破断
+T8	Connective 45 47	ため
+T9	Connective 56 57	で
+T10	Connective 69 73	そのため
+T11	Connective 77 80	により
+T12	Connective 90 91	、
+T13	Connective 105 106	と
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T2	
+R3	REASON Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T3	
+R5	REASON Arg1:T10 Arg2:T3	
+R7	REASON Arg1:T11 Arg2:T4	
+R8	RESULT Arg1:T11 Arg2:T5	
+R9	REASON Arg1:T12 Arg2:T5	
+R11	CONDITION Arg1:T13 Arg2:T6	
+R12	RESULT Arg1:T13 Arg2:T7	
+R6	RESULT Arg1:T10 Arg2:T5	
+R10	RESULT Arg1:T12 Arg2:T7	

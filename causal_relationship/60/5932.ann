@@ -1,0 +1,29 @@
+T1	Argument 0 24	前後部の方向指示器の樹脂製取付部分の原料が不適切
+T2	Connective 27 29	ため
+T3	Argument 30 35	強度が不足
+T5	Argument 40 45	振動や衝撃
+T6	Connective 45 48	により
+T7	Argument 48 58	取付部分に亀裂が発生
+T8	Argument 67 81	そのままの状態で使用を続ける
+T9	Connective 81 82	と
+T10	Argument 83 88	亀裂が進行
+T11	Connective 97 98	て
+T12	Argument 98 109	方向指示器がぶら下がる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T13	Connective 39 40	、
+R3	REASON Arg1:T13 Arg2:T3	
+R4	RESULT Arg1:T13 Arg2:T7	
+R6	REASON Arg1:T6 Arg2:T5	
+R7	RESULT Arg1:T6 Arg2:T7	
+R8	CONDITION Arg1:T9 Arg2:T8	
+R9	RESULT Arg1:T9 Arg2:T10	
+T14	Connective 66 67	。
+R10	REASON Arg1:T14 Arg2:T7	
+R11	RESULT Arg1:T14 Arg2:T10	
+R13	RESULT Arg1:T11 Arg2:T12	
+T4	Connective 88 89	し
+T15	Argument 89 96	取付部分が破断
+R5	REASON Arg1:T4 Arg2:T10	
+R12	RESULT Arg1:T4 Arg2:T15	
+R14	REASON Arg1:T11 Arg2:T15	

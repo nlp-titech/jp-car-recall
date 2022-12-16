@@ -1,0 +1,25 @@
+T1	Argument 0 36	前面ガラスの窓拭き器において、運転者席側のワイパー･アームの設計が不適切
+T2	Connective 37 39	ため
+T3	Argument 40 61	法定速度を超える高速走行時に窓拭き器を使用
+T4	Connective 63 64	と
+T5	Argument 65 67	風圧
+T6	Connective 67 70	により
+T7	Argument 70 91	運転者席側ワイパーと助手席側ワイパーが干渉
+T8	Connective 92 93	て
+R1	REASON Arg1:T6 Arg2:T5	
+R2	RESULT Arg1:T6 Arg2:T7	
+R3	REASON Arg1:T8 Arg2:T7	
+T9	Argument 93 110	運転者席側ワイパー･ブレードが損傷
+T10	Connective 111 112	、
+T11	Argument 112 114	最悪
+T12	Connective 115 117	場合
+T13	Argument 118 141	運転者の直前の視野を確保することができなくなる
+R4	REASON Arg1:T2 Arg2:T1	
+R5	CONDITION Arg1:T4 Arg2:T3	
+R6	RESULT Arg1:T4 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	REASON Arg1:T10 Arg2:T9	
+R9	CONDITION Arg1:T12 Arg2:T11	
+R10	RESULT Arg1:T12 Arg2:T13	
+R11	RESULT Arg1:T10 Arg2:T13	
+R12	RESULT Arg1:T2 Arg2:T7	

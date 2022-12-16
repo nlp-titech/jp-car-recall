@@ -1,0 +1,9 @@
+T2	Connective 27 31	そのため
+T3	Argument 32 45	バッテリーの充電性能が低下
+T4	Connective 49 50	で
+T5	Argument 50 61	エンジンを始動できない
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T1	Argument 0 20	バッテリーにおいて、内部構成部品が不適切
+R1	REASON Arg1:T2 Arg2:T1	

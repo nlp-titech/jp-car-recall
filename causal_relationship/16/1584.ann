@@ -1,0 +1,17 @@
+T1	Argument 0 13	予備電源回路の設計が不適切
+T2	Argument 17 30	予備電源回路に過電流が発生
+T3	Argument 53 72	主電源を開閉する出力用ヒューズが切れる
+T4	Argument 83 115	エンジンを制御するコントロールユニットへの電源が供給されなくなり
+T5	Argument 116 122	原動機が停止
+T6	Connective 115 116	、
+T7	Connective 78 82	そのため
+T8	Connective 32 33	際
+T9	Connective 14 16	ため
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T3	
+R3	CONDITION Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+R7	REASON Arg1:T6 Arg2:T4	
+R8	RESULT Arg1:T6 Arg2:T5	

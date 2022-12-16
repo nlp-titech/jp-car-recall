@@ -1,0 +1,9 @@
+T1	Argument 0 60	ステアリングコラムスイッチクラスターに組み込まれた、方向指示器及びワイパーの信号を制御するプロセッサーの取り付けが不適切
+T2	Connective 61 63	ため
+T3	Argument 64 78	信号が時々断続することがあり
+T4	Connective 78 79	、
+T5	Argument 79 98	方向指示器及びワイパーが作動しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

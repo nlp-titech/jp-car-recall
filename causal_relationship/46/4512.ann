@@ -1,0 +1,9 @@
+T1	Argument 14 41	差動装置（デファレンシャルユニット）の組み付けに不適切
+T2	Connective 47 49	ため
+T3	Argument 50 72	ドライブシャフトとの取付部が差動装置から外れ
+T4	Connective 72 73	、
+T5	Argument 73 80	走行不能に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

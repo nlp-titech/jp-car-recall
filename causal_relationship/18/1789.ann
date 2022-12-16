@@ -1,0 +1,25 @@
+T1	Argument 0 40	エンジンリターダ（圧縮開放ブレーキ）において、エキゾーストバルブの作動範囲が過大
+T2	Connective 48 50	ため
+T3	Argument 51 64	当該バルブとピストンが干渉
+T4	Connective 65 66	、
+T5	Argument 66 82	原動機の異音または異常振動が発生
+T6	Connective 90 94	そのため
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T7	Argument 107 119	エキゾーストバルブが破損
+T8	Connective 120 121	て
+T9	Argument 128 145	原動機が停止し、再始動できなくなる
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 95 105	そのまま使用を続ける
+T11	Connective 105 106	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T7	
+T12	Argument 122 124	最悪
+T13	Connective 125 127	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T9	
+R5	REASON Arg1:T6 Arg2:T3	

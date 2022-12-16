@@ -1,0 +1,25 @@
+T1	Argument 0 38	大型トラックにおいて、後軸エアサスペンションのスタビライザアームの強度が不足
+T2	Argument 45 55	旋回を頻繁に繰り返す
+T3	Argument 57 68	当該アームに亀裂が発生
+T4	Argument 81 91	そのまま使用を続ける
+T5	Argument 93 95	最悪
+T6	Argument 99 105	アームが折損
+T7	Argument 107 115	走行できなくなる
+T8	Connective 42 44	ため
+T9	Connective 55 56	と
+T10	Connective 76 80	そのため
+T11	Connective 91 92	と
+T12	Connective 96 98	場合
+T13	Connective 106 107	、
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T3	
+R3	CONDITION Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T3	
+R5	REASON Arg1:T10 Arg2:T3	
+R6	RESULT Arg1:T10 Arg2:T6	
+R7	CONDITION Arg1:T11 Arg2:T4	
+R8	RESULT Arg1:T11 Arg2:T6	
+R9	CONDITION Arg1:T12 Arg2:T5	
+R10	RESULT Arg1:T12 Arg2:T6	
+R11	REASON Arg1:T13 Arg2:T6	
+R12	RESULT Arg1:T13 Arg2:T7	

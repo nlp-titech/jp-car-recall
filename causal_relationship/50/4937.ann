@@ -1,0 +1,25 @@
+T1	Argument 8 34	アイドリング時の空気流入量を制御する弁の構造が不適切
+T2	Connective 35 37	ため
+T3	Argument 54 69	当該弁の内部にカーボン等が付着
+T4	Connective 70 71	て
+T5	Argument 71 79	動きが緩慢になる
+T6	Connective 84 85	、
+T7	Argument 85 100	アイドリング回転が不安定となり
+T8	Connective 100 101	、
+T9	Argument 107 125	原動機が停止して再始動ができなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 101 103	最悪
+T11	Connective 104 106	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T9	
+T12	Argument 38 52	そのままの状態で使用を続ける
+T13	Connective 52 53	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T3	

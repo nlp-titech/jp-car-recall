@@ -1,0 +1,48 @@
+T1	Argument 25 47	通気用ベントプラグ取付け部の塗装処理が不適切
+T2	Argument 51 53	被水
+T3	Argument 56 65	当該取付け部が腐食
+T4	Argument 67 73	防水性が低下
+T5	Argument 75 85	ユニット内に水が浸入
+T6	Argument 98 109	ユニット内に浸入した水
+T7	Argument 112 119	制御回路が短絡
+T8	Argument 121 126	警告灯点灯
+T9	Argument 127 135	出力不足等が発生
+T10	Argument 137 139	最悪
+T12	Argument 146 150	エンスト
+T14	Connective 48 50	ため
+T15	Connective 53 56	により
+T16	Connective 66 67	て
+T17	Connective 74 75	、
+T18	Connective 93 97	そのため
+T19	Connective 109 112	により
+T20	Connective 120 121	て
+T22	Connective 136 137	、
+T23	Connective 140 142	場合
+R1	REASON Arg1:T14 Arg2:T1	
+R3	REASON Arg1:T15 Arg2:T2	
+R4	RESULT Arg1:T15 Arg2:T3	
+R5	REASON Arg1:T16 Arg2:T3	
+R6	RESULT Arg1:T16 Arg2:T4	
+R7	REASON Arg1:T17 Arg2:T4	
+R8	RESULT Arg1:T17 Arg2:T5	
+R9	REASON Arg1:T18 Arg2:T5	
+R11	REASON Arg1:T19 Arg2:T6	
+R12	RESULT Arg1:T19 Arg2:T7	
+R13	REASON Arg1:T20 Arg2:T7	
+R14	RESULT Arg1:T20 Arg2:T8	
+R17	REASON Arg1:T22 Arg2:T9	
+R19	CONDITION Arg1:T23 Arg2:T10	
+R20	RESULT Arg1:T23 Arg2:T12	
+T11	Connective 151 152	て
+T13	Argument 152 159	走行不能となる
+R21	REASON Arg1:T11 Arg2:T12	
+R22	RESULT Arg1:T11 Arg2:T13	
+R2	RESULT Arg1:T14 Arg2:T3	
+R10	RESULT Arg1:T18 Arg2:T7	
+R15	RESULT Arg1:T20 Arg2:T9	
+R16	REASON Arg1:T22 Arg2:T8	
+R18	RESULT Arg1:T22 Arg2:T12	
+T21	Argument 143 145	走行
+T24	Connective 145 146	中
+R23	CONDITION Arg1:T24 Arg2:T21	
+R24	RESULT Arg1:T24 Arg2:T12	

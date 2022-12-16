@@ -1,0 +1,25 @@
+T2	Argument 52 60	当該ボルトが弛み
+T3	Argument 67 73	ボルトが折損
+T4	Argument 91 97	原動機が停止
+T5	Connective 33 35	ため
+T6	Connective 60 61	、
+T7	Connective 90 91	、
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+T8	Argument 75 89	クランクシャフトプーリが脱落
+T9	Connective 74 75	て
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T8	
+R7	REASON Arg1:T7 Arg2:T8	
+R8	RESULT Arg1:T7 Arg2:T4	
+T1	Argument 0 29	原動機のクランクシャフトプーリを固定するボルトの強度が不足
+R1	REASON Arg1:T5 Arg2:T1	
+T10	Argument 36 50	このままの状態で使用を続ける
+T11	Connective 50 51	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T2	
+T12	Argument 61 63	最悪
+T13	Connective 64 66	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T3	

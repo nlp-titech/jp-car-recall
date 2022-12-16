@@ -1,0 +1,35 @@
+T1	Argument 0 51	空気ばね緩衝装置付大型トラクタにおいて、トレーラ切り離し時の高さ調整についての取扱説明書の説明が不十分
+T2	Connective 76 78	ため
+T3	Argument 79 108	カプラ高さ調整不十分な状態でトレーラをトラクタから切り離す
+T4	Connective 108 109	と
+T5	Argument 110 128	ショックアブソーバが伸びきってしまう
+T6	Connective 134 138	そのため
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+T7	Argument 139 165	ショックアブソーバ内部のピストン取付けナット部が緩み
+T8	Connective 165 166	、
+R6	RESULT Arg1:T6 Arg2:T7	
+T9	Argument 182 202	当該ショックアブソーバのロッドが抜け出し
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Connective 202 203	、
+T11	Argument 209 215	タイヤと干渉
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Connective 216 217	て
+T13	Argument 218 225	車両火災に至る
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+T14	Argument 166 180	そのままの状態で使用を続ける
+T15	Connective 180 181	と
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T9	
+T16	Connective 206 208	場合
+T17	Argument 203 205	最悪
+R15	CONDITION Arg1:T16 Arg2:T17	
+R16	RESULT Arg1:T16 Arg2:T11	
+T18	Argument 55 75	ショックアブソーバのストッパ構造が不適切
+R17	REASON Arg1:T2 Arg2:T18	

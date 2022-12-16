@@ -1,0 +1,5 @@
+T1	Argument 0 60	純正アクセサリとして販売した地上デジタル・チューナ用アンテナを、平成２１年以降登録の車両の後面ガラス左右両端に取り付けた
+T2	Argument 71 88	道路運送車両の保安基準に適合しない
+T3	Connective 66 70	そのため
+R1	REASON Arg1:T3 Arg2:T1	
+R2	RESULT Arg1:T3 Arg2:T2	

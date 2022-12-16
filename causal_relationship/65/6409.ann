@@ -1,0 +1,17 @@
+T1	Argument 0 12	右側排気管の材質が不適切
+T2	Connective 13 15	ため
+T3	Argument 16 34	排気管と消音器の溶接部の耐食性が不足
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 44 48	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 49 55	溶接部が腐食
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 56 57	、
+T7	Argument 57 72	走行振動等で溶接部に亀裂が入り
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Connective 72 73	、
+T9	Argument 73 81	排気ガスが漏れる
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	

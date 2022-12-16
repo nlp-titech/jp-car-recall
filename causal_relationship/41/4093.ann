@@ -1,0 +1,27 @@
+T1	Argument 0 37	電動パワーステアリングのコントローラに接続される電気配線の固定方法が不適切
+T3	Argument 41 50	走行時の車両振動等
+T4	Argument 53 76	コントローラと電気配線のコネクタ部の端子が摩耗
+T5	Argument 78 84	絶縁物が生成
+T6	Argument 87 94	導通不良に至る
+T7	Argument 105 111	警告灯が点灯
+T8	Argument 117 136	パワーステアリングのアシスト機能が停止
+T9	Argument 138 151	ステアリングの操作力が増大
+T10	Connective 38 40	ため
+T11	Connective 50 53	により
+T12	Connective 77 78	て
+T13	Connective 86 87	、
+T14	Connective 100 104	そのため
+T15	Connective 137 138	、
+R1	REASON Arg1:T10 Arg2:T1	
+R2	RESULT Arg1:T10 Arg2:T4	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+R7	REASON Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T5	
+R9	REASON Arg1:T13 Arg2:T5	
+R10	RESULT Arg1:T13 Arg2:T6	
+R11	REASON Arg1:T14 Arg2:T6	
+R12	RESULT Arg1:T14 Arg2:T7	
+R13	RESULT Arg1:T14 Arg2:T8	
+R14	REASON Arg1:T15 Arg2:T8	
+R15	RESULT Arg1:T15 Arg2:T9	

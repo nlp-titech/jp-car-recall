@@ -1,0 +1,17 @@
+T1	Argument 0 32	ブレーキホースを固定するブラケットのボルトの締付けトルクが不十分
+T2	Connective 39 43	そのため
+T3	Argument 44 50	ボルトが緩み
+T4	Connective 66 67	、
+T5	Argument 67 86	ブレーキホースが損傷しブレーキ液が漏れ
+T6	Connective 86 87	て
+T7	Argument 87 93	制動力が低下
+R1	RESULT Arg1:T6 Arg2:T7	
+R2	REASON Arg1:T6 Arg2:T5	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	REASON Arg1:T4 Arg2:T8	
+R5	RESULT Arg1:T2 Arg2:T3	
+R6	REASON Arg1:T2 Arg2:T1	
+T8	Argument 50 65	ブレーキホースブラケットが脱落
+T9	Connective 49 50	み
+R7	REASON Arg1:T9 Arg2:T3	
+R8	RESULT Arg1:T9 Arg2:T8	

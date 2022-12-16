@@ -1,0 +1,17 @@
+T1	Argument 0 57	トレーラの車軸において、エアサスペンションの伸び高さを制限する装置（キャッチストラップ）のワイヤー取付位置が不適切
+T2	Connective 58 60	ため
+T3	Argument 61 71	ワイヤーと車軸が干渉
+T4	Connective 79 83	そのため
+T5	Argument 84 98	このままの状態で使用を続ける
+T6	Connective 98 99	と
+T7	Argument 100 117	車軸のワイヤー干渉部位に摩耗が発生
+T8	Connective 118 119	、
+T9	Argument 119 129	車軸の堅牢性を損なう
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	

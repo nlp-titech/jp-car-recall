@@ -1,0 +1,25 @@
+T1	Argument 13 52	燃料ポンプと燃料タンクの間にあるゴム製のガスケットが、不均等なトルクで締め付け
+T2	Connective 62 64	ため
+T3	Argument 81 93	当該ガスケットに亀裂が生
+T4	Connective 93 94	じ
+T5	Argument 94 102	燃料漏れを起こす
+T6	Connective 108 109	、
+T7	Argument 115 117	引火
+T8	Connective 117 118	し
+T9	Argument 118 123	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 65 79	このままの状態で使用を続ける
+T11	Connective 79 80	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	
+T12	Argument 109 111	最悪
+T13	Connective 112 114	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T7	

@@ -1,0 +1,29 @@
+T2	Argument 51 59	締め付け力が不足
+T3	Argument 74 88	そのままの状態で使用を続ける
+T4	Argument 89 97	当該ボルトが緩み
+T5	Argument 98 100	最悪
+T6	Argument 104 110	ボルトが外れ
+T7	Argument 111 129	フロントアクスルもしくは推進軸が脱落
+T8	Argument 131 138	走行不能となる
+T9	Connective 48 50	ため
+T10	Connective 69 73	そのため
+T11	Connective 88 89	と
+T12	Connective 97 98	、
+T13	Connective 101 103	場合
+T14	Connective 110 111	て
+T15	Connective 130 131	、
+R2	REASON Arg1:T10 Arg2:T2	
+R3	RESULT Arg1:T10 Arg2:T4	
+R4	CONDITION Arg1:T11 Arg2:T3	
+R5	RESULT Arg1:T11 Arg2:T4	
+R6	REASON Arg1:T12 Arg2:T4	
+R7	RESULT Arg1:T12 Arg2:T6	
+R8	CONDITION Arg1:T13 Arg2:T5	
+R9	RESULT Arg1:T13 Arg2:T6	
+R10	REASON Arg1:T14 Arg2:T6	
+R11	RESULT Arg1:T14 Arg2:T7	
+R12	REASON Arg1:T15 Arg2:T7	
+R13	RESULT Arg1:T15 Arg2:T8	
+R14	RESULT Arg1:T9 Arg2:T2	
+T1	Argument 8 47	フロントアクスル及び推進軸ジョイントにおいて、固定ボルトの締め付け指示が不適切
+R1	REASON Arg1:T9 Arg2:T1	

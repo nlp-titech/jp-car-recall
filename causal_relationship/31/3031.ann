@@ -1,0 +1,21 @@
+T1	Argument 0 24	緊急車両のサイレンにおいて、水抜き用の穴がなかっ
+T2	Connective 25 27	ため
+T3	Argument 28 39	水溜り路の走行や洗車等
+T4	Connective 39 42	により
+T5	Argument 42 54	サイレン内部に水が溜まる
+T6	Connective 60 64	そのため
+T7	Argument 65 75	そのまま使用を続ける
+T8	Connective 75 76	と
+T9	Argument 77 87	サイレンの音圧が低下
+T10	Connective 88 89	て
+T11	Argument 90 102	保安基準を満たさなくなる
+R1	RESULT Arg1:T10 Arg2:T11	
+R2	REASON Arg1:T10 Arg2:T9	
+R3	RESULT Arg1:T8 Arg2:T9	
+R4	CONDITION Arg1:T8 Arg2:T7	
+R5	RESULT Arg1:T6 Arg2:T9	
+R6	REASON Arg1:T6 Arg2:T5	
+R7	RESULT Arg1:T4 Arg2:T5	
+R8	REASON Arg1:T4 Arg2:T3	
+R9	RESULT Arg1:T2 Arg2:T5	
+R10	REASON Arg1:T2 Arg2:T1	

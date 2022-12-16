@@ -1,0 +1,50 @@
+T1	Argument 1 60	前輪独立懸架方式の小型トラックのアッパーアームとロアアームのボールジョイントにおいて、ダストブーツのシール構造が不適切
+T2	Connective 61 63	ため
+T3	Argument 64 78	当該ジョイントへ泥水等が浸入
+T4	Connective 79 80	、
+T5	Argument 80 90	樹脂ベアリングが摩耗
+T6	Connective 91 92	て
+T7	Argument 92 97	ガタが発生
+T8	Argument 106 156	前輪独立懸架方式の小型トラックのアッパーアームのボールジョイントにおいて、補用部品の供給方法が不適切
+T9	Connective 157 159	ため
+T12	Argument 160 172	整備時に誤って組付けられ
+T13	Connective 178 179	、
+T14	Argument 179 193	当該ジョイントへ泥水等が浸入
+T15	Connective 194 195	、
+T16	Argument 195 205	樹脂ベアリングが摩耗
+T17	Connective 206 207	て
+T18	Argument 207 212	ガタが発生
+T19	Connective 220 224	そのため
+T20	Argument 225 239	そのままの状態で使用を続ける
+T21	Connective 239 240	と
+T22	Argument 240 245	ガタが増大
+T23	Argument 247 249	最悪
+T24	Connective 246 247	、
+T25	Connective 250 252	場合
+T26	Argument 253 276	ボールジョイントがサスペンションアームから外れ
+T27	Connective 276 277	、
+T28	Argument 277 284	走行不能になる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T9 Arg2:T8	
+R10	RESULT Arg1:T9 Arg2:T12	
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T14	
+R13	REASON Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T16	
+R15	REASON Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T18	
+R17	REASON Arg1:T19 Arg2:T18	
+R18	CONDITION Arg1:T21 Arg2:T20	
+R19	RESULT Arg1:T21 Arg2:T22	
+R20	RESULT Arg1:T19 Arg2:T22	
+R21	CONDITION Arg1:T25 Arg2:T23	
+R22	RESULT Arg1:T25 Arg2:T26	
+R23	REASON Arg1:T24 Arg2:T22	
+R24	RESULT Arg1:T24 Arg2:T26	
+R25	REASON Arg1:T27 Arg2:T26	
+R26	RESULT Arg1:T27 Arg2:T28	

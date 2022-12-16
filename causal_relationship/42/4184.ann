@@ -1,0 +1,33 @@
+T1	Argument 31 54	旋回時前輪増速制御用コントローラの設計が不適切
+T2	Connective 55 57	ため
+T3	Argument 58 75	基板にイオンマイグレーションが生じ
+T4	Connective 75 76	、
+T5	Argument 76 81	回路が短絡
+T6	Connective 89 93	そのため
+T7	Argument 110 118	短絡部が異常発熱
+T8	Connective 119 120	て
+T9	Argument 120 122	溶損
+T10	Argument 124 130	回路が断たれ
+T11	Connective 130 131	、
+T12	Argument 137 152	旋回時前輪増速機能が損なわれる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T13	Connective 123 124	、
+R9	REASON Arg1:T13 Arg2:T9	
+R10	RESULT Arg1:T13 Arg2:T10	
+R11	REASON Arg1:T11 Arg2:T10	
+R12	RESULT Arg1:T11 Arg2:T12	
+T14	Argument 94 108	そのままの状態で使用を続ける
+T15	Connective 108 109	と
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T7	
+T16	Argument 131 133	最悪
+T17	Connective 134 136	場合
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T12	

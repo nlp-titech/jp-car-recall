@@ -1,0 +1,25 @@
+T1	Argument 0 58	清掃車の作業用エンジン室への塵埃の巻き上げを防止するための防塵カバーにおいて、清掃作業中に防塵カバー上に土砂等が堆積
+T2	Connective 59 60	、
+T3	Argument 60 81	堆積物の重さで防塵カバー取り付け部分が破損
+T4	Connective 89 93	そのため
+T5	Argument 110 137	防塵カバーとその付近に配置されている走行用排気管が接触
+T6	Connective 138 139	、
+T7	Argument 145 153	防塵カバーが発火
+T8	Argument 154 159	火災に至る
+T9	Connective 153 154	し
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+T10	Argument 94 108	そのままの状態で使用を続ける
+T11	Connective 108 109	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	
+T12	Argument 139 141	最悪
+T13	Connective 142 144	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T7	

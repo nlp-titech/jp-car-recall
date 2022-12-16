@@ -1,0 +1,16 @@
+T1	Argument 0 42	アンチロックブレーキシステム（ＡＢＳ）の油圧調整装置において、構成部品の形状が不適切
+T2	Connective 43 45	ため
+T3	Argument 53 62	樹脂製の異物が発生
+T4	Connective 70 74	そのため
+T5	Argument 75 105	当該異物が油圧制御弁などに噛み込んでＡＢＳ作動時に調圧が遅れ
+T6	Connective 105 106	て
+T7	Argument 107 116	走行安定性を損なう
+R1	RESULT Arg1:T6 Arg2:T7	
+R2	REASON Arg1:T6 Arg2:T5	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	REASON Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T2 Arg2:T3	
+R6	REASON Arg1:T2 Arg2:T1	
+T8	Argument 46 52	圧入組付け時
+T9	Connective 52 53	に
+R7	CONDITION Arg1:T9 Arg2:T8	

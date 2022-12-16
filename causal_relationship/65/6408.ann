@@ -1,0 +1,33 @@
+T1	Argument 0 37	ＩＳＯＦＩＸチャイルドシートを固定する車両側の固定ブラケットの耐久性が不足
+T2	Connective 41 43	ため
+T3	Argument 92 105	固定ブラケットに亀裂が入る
+R1	RESULT Arg1:T2 Arg2:T3	
+R2	REASON Arg1:T2 Arg2:T1	
+T4	Argument 44 82	チャイルドシートを装着状態で走行した際の荷重が固定ブラケットに繰り返し加わる
+T5	Connective 82 83	と
+R3	CONDITION Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T3	
+T6	Argument 84 88	金属疲労
+T7	Connective 88 92	によって
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Connective 111 115	そのため
+T9	Argument 116 130	そのままの状態で使用を続ける
+T10	Connective 130 131	と
+T11	Argument 132 142	固定ブラケットが破損
+R7	CONDITION Arg1:T10 Arg2:T9	
+R8	RESULT Arg1:T10 Arg2:T11	
+R9	REASON Arg1:T8 Arg2:T3	
+R10	RESULT Arg1:T8 Arg2:T11	
+T12	Connective 143 144	、
+T13	Argument 144 158	チャイルドシートが固定できず
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+T14	Argument 159 161	最悪
+T15	Connective 162 164	場合
+T16	Argument 165 177	チャイルドシートが外れる
+T17	Connective 158 159	、
+R13	REASON Arg1:T17 Arg2:T13	
+R14	RESULT Arg1:T17 Arg2:T14	
+R15	CONDITION Arg1:T15 Arg2:T14	
+R16	RESULT Arg1:T15 Arg2:T16	

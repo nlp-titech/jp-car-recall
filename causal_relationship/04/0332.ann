@@ -1,0 +1,17 @@
+T2	Argument 65 75	当該エアバックが展開
+T3	Connective 29 31	ため
+R2	RESULT Arg1:T3 Arg2:T2	
+T4	Argument 46 57	ハンドルに衝撃が加わる
+T5	Connective 57 58	と
+R3	CONDITION Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T2	
+T6	Argument 59 61	最悪
+T7	Connective 62 64	場合
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T2	
+T8	Argument 32 45	エンジン始動直後及び走行中
+T9	Connective 45 46	、
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T4	
+T1	Argument 0 28	運転者席のエアバックにおいて、展開を制御する回路が不適切
+R1	REASON Arg1:T3 Arg2:T1	

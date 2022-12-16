@@ -1,0 +1,21 @@
+T1	Argument 37 51	ナットの締め付け工程が不適切
+T2	Connective 52 54	ため
+T3	Argument 55 63	締め付け力が不足
+T4	Connective 73 77	そのため
+T5	Argument 78 92	そのままの状態で使用を続ける
+T6	Connective 92 93	と
+T7	Argument 94 102	当該ナットが外れ
+T8	Connective 102 103	、
+T9	Argument 103 110	緩衝機能が低下
+T10	Connective 111 112	、
+T11	Argument 112 121	走行安定性を損なう
+R1	RESULT Arg1:T10 Arg2:T11	
+R2	REASON Arg1:T10 Arg2:T9	
+R3	RESULT Arg1:T8 Arg2:T9	
+R4	REASON Arg1:T8 Arg2:T7	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	CONDITION Arg1:T6 Arg2:T5	
+R7	RESULT Arg1:T4 Arg2:T7	
+R8	REASON Arg1:T4 Arg2:T3	
+R9	RESULT Arg1:T2 Arg2:T3	
+R10	REASON Arg1:T2 Arg2:T1	

@@ -1,0 +1,21 @@
+T1	Argument 0 102	かじ取り部分において、パワーステアリング用油圧シリンダの先端に取りつけられている部品（クレビスヘッド）及び、クレビスヘッドに繋がれて前後輪に繰舵力を配分するリンク部品（センターベルクランク）の形状が不適切
+T2	Argument 106 124	油圧シリンダロッドに曲げ加重が加わり
+T3	Argument 147 156	油圧シリンダが折損
+T4	Argument 158 171	かじ取り操作ができなくなる
+T5	Connective 103 105	ため
+T6	Connective 124 125	、
+T7	Connective 157 158	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 125 139	そのままの状態で使用を続ける
+T9	Connective 139 140	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 141 143	最悪
+T11	Connective 144 146	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	

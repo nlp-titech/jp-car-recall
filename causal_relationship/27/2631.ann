@@ -1,0 +1,29 @@
+T1	Argument 0 66	２０キロリットル石油運搬用アルミタンクを架装した後輪１軸のタンクセミトレーラにおいて、車両の使用環境における影響の評価が不十分な設計
+T2	Connective 67 69	ため
+T3	Argument 79 118	後輪車軸と懸架装置を固定しているＵボルトの取り付けナットが、想定よりも早く緩む
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 124 128	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T6	Connective 170 171	、
+T7	Argument 177 184	当該車軸がずれ
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Connective 184 185	、
+T9	Argument 185 192	走行不能となる
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T11	Argument 149 169	Ｕボルトが過大な繰り返し荷重を受けて折損
+R4	RESULT Arg1:T4 Arg2:T11	
+R5	REASON Arg1:T6 Arg2:T11	
+T5	Argument 70 76	走行時の振動
+T10	Connective 76 79	により
+R9	REASON Arg1:T10 Arg2:T5	
+R10	RESULT Arg1:T10 Arg2:T3	
+T12	Argument 129 147	当該ナットが緩んだ状態で使用を続ける
+T13	Connective 147 148	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T11	
+T14	Argument 171 173	最悪
+T15	Connective 174 176	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T7	

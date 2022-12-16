@@ -1,0 +1,33 @@
+T1	Argument 19 86	トルクコンバータ部バッキングプレートのトルクコンバータカバーへの取付けボルト締付け方法およびトルクコンバータカバーのねじ部加工が不適切
+T2	Argument 90 101	当該ボルトの軸力が不足
+T3	Argument 116 130	そのままの状態で使用を続ける
+T4	Argument 131 137	ボルトが折損
+T5	Argument 139 170	折損したボルトがトルクコンバータカバーとタービンとの間に挟まり
+T6	Argument 171 173	最悪
+T7	Argument 177 199	トルクコンバータがロックアップした状態となり
+T8	Argument 200 204	エンスト
+T9	Argument 206 214	走行できなくなる
+T10	Connective 87 89	ため
+T11	Connective 111 115	そのため
+T12	Connective 130 131	と
+T13	Connective 138 139	、
+T14	Connective 170 171	、
+T15	Connective 174 176	場合
+T16	Connective 199 200	、
+T17	Connective 205 206	て
+R1	REASON Arg1:T10 Arg2:T1	
+R2	RESULT Arg1:T10 Arg2:T2	
+R3	REASON Arg1:T11 Arg2:T2	
+R4	RESULT Arg1:T11 Arg2:T4	
+R5	CONDITION Arg1:T12 Arg2:T3	
+R6	RESULT Arg1:T12 Arg2:T4	
+R7	REASON Arg1:T13 Arg2:T4	
+R8	RESULT Arg1:T13 Arg2:T5	
+R9	REASON Arg1:T14 Arg2:T5	
+R10	RESULT Arg1:T14 Arg2:T7	
+R11	CONDITION Arg1:T15 Arg2:T6	
+R12	RESULT Arg1:T15 Arg2:T7	
+R13	REASON Arg1:T16 Arg2:T7	
+R14	RESULT Arg1:T16 Arg2:T8	
+R15	REASON Arg1:T17 Arg2:T8	
+R16	RESULT Arg1:T17 Arg2:T9	

@@ -1,0 +1,12 @@
+T2	Connective 34 36	ため
+T4	Connective 60 64	そのため
+T5	Argument 65 75	保安基準に適合しない
+R1	RESULT Arg1:T4 Arg2:T5	
+T1	Argument 0 33	高所作業車及び穴掘建柱車の突入防止装置において、車両の設計が不適切
+R4	REASON Arg1:T2 Arg2:T1	
+T3	Argument 37 45	当該装置が未装着
+T6	Argument 49 55	大きさが不足
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T6	
+R5	REASON Arg1:T4 Arg2:T3	
+R6	REASON Arg1:T4 Arg2:T6	

@@ -1,0 +1,33 @@
+T2	Connective 40 42	ため
+T3	Argument 43 51	取付ボルトが緩む
+T4	Connective 57 61	そのため
+T5	Argument 62 76	当該ユニットが適切に作動せず
+T6	Connective 76 77	、
+T7	Argument 77 87	エンジン警告灯が点灯
+T8	Argument 88 97	エンジン不調となり
+T9	Connective 87 88	し
+T10	Connective 97 98	、
+T11	Argument 98 100	最悪
+T12	Connective 101 103	場合
+T13	Argument 104 117	走行中に当該ユニットが破損
+T14	Connective 118 119	て
+T15	Argument 120 124	エンスト
+T16	Connective 125 126	て
+T17	Argument 126 134	再始動不能となる
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+R9	REASON Arg1:T10 Arg2:T8	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R15	REASON Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T17	
+T1	Argument 0 39	可変バルブタイミングユニットにおいて、構成部品のスプロケット表面の加工が不適切
+R1	REASON Arg1:T2 Arg2:T1	

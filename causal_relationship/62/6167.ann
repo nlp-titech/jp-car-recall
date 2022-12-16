@@ -1,0 +1,13 @@
+T2	Connective 64 68	そのため
+T3	Argument 69 80	接合部分より燃料が漏れ
+T4	Connective 80 81	て
+T5	Argument 82 84	最悪
+T6	Connective 85 87	場合
+T7	Argument 88 93	火災に至る
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T1	Argument 12 57	低圧回路フューエルホースにおいて、プラスチックホース部とプラスチックパイプ部の接合が不適切
+R1	REASON Arg1:T2 Arg2:T1	

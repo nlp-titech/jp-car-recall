@@ -1,0 +1,25 @@
+T1	Argument 0 38	ディーゼルエンジン搭載車のプライミングポンプにおいて、成形時の残留応力が高い
+T2	Connective 43 45	ため
+T3	Argument 62 67	亀裂が発生
+T4	Connective 75 79	そのため
+T5	Argument 80 90	そのまま使用を続ける
+T6	Connective 90 91	と
+T7	Argument 92 97	亀裂が貫通
+T8	Connective 99 100	、
+T9	Argument 100 109	駐車中に燃料が漏れ
+T10	Connective 109 110	、
+T11	Argument 110 123	エンジンの始動が困難になる
+R1	RESULT Arg1:T10 Arg2:T11	
+R2	REASON Arg1:T10 Arg2:T9	
+R3	RESULT Arg1:T8 Arg2:T9	
+R4	REASON Arg1:T8 Arg2:T7	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	CONDITION Arg1:T6 Arg2:T5	
+R7	RESULT Arg1:T4 Arg2:T7	
+R8	REASON Arg1:T4 Arg2:T3	
+R10	REASON Arg1:T2 Arg2:T1	
+T12	Connective 59 62	により
+T13	Argument 54 59	オゾン劣化
+R9	RESULT Arg1:T12 Arg2:T3	
+R11	REASON Arg1:T12 Arg2:T13	
+R12	RESULT Arg1:T2 Arg2:T13	

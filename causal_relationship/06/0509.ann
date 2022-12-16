@@ -1,0 +1,33 @@
+T1	Argument 0 26	制動装置において、後輪用ブレーキパイプの形状が不適切
+T2	Argument 58 80	ディスクホイール内側に多量に堆積した雪が氷結
+T3	Argument 82 90	当該パイプに干渉
+T4	Argument 120 128	当該パイプが損傷
+T5	Argument 130 136	制動液が漏れ
+T6	Argument 137 143	制動力が低下
+T7	Connective 27 29	ため
+T8	Connective 81 82	、
+T9	Connective 97 98	、
+T10	Connective 129 130	て
+T11	Connective 136 137	、
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T3	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T5	
+R9	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	
+T12	Argument 114 116	最悪
+T13	Connective 117 119	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T4	
+T14	Argument 30 54	厳寒時新雪路面を頻繁な発進と停止を繰り返して走行
+T15	Connective 56 57	と
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T2	
+T16	Argument 98 112	このような状態が繰り返される
+T17	Connective 112 113	と
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T4	

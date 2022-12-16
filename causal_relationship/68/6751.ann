@@ -1,0 +1,27 @@
+T1	Argument 0 27	ワイヤハーネスにおいて、フレームへの組付け手順が不適切
+T2	Connective 28 30	ため
+T3	Argument 36 46	当該ハーネスを傷つけ
+T4	Connective 53 57	そのため
+T5	Argument 58 72	ハンドル操作等を繰り返し行う
+T6	Connective 72 73	と
+T7	Argument 74 83	当該ハーネスが断線
+T8	Connective 84 85	、
+T9	Argument 85 111	前照灯、制動灯、方向指示器、速度計、警音器の作動不良
+T10	Argument 119 123	エンスト
+T11	Connective 124 125	て
+T12	Argument 125 134	再始動できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	RESULT Arg1:T8 Arg2:T10	
+R10	REASON Arg1:T11 Arg2:T10	
+R11	RESULT Arg1:T11 Arg2:T12	
+T13	Argument 31 34	組付け
+T14	Connective 34 35	時
+R12	CONDITION Arg1:T14 Arg2:T13	
+R13	RESULT Arg1:T14 Arg2:T3	

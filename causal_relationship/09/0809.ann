@@ -1,0 +1,23 @@
+T1	Argument 0 25	燃料タンク内部のリザーバーカップの溶接作業が不適切
+T2	Connective 26 28	ため
+T3	Argument 29 41	当該カップを前後逆に溶接
+T4	Connective 49 53	そのため
+T5	Argument 54 75	燃料残量が少ない時の上り坂走行時や発進加速
+T6	Connective 75 76	時
+T7	Argument 78 86	燃料供給量が不足
+T8	Argument 87 93	エンジン不調
+T10	Connective 86 87	し
+T11	Argument 97 99	最悪
+T12	Connective 100 102	場合
+T13	Argument 103 110	走行中エンスト
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T10 Arg2:T7	
+R8	RESULT Arg1:T10 Arg2:T8	
+R9	CONDITION Arg1:T12 Arg2:T11	
+R10	RESULT Arg1:T12 Arg2:T13	
+R11	RESULT Arg1:T10 Arg2:T13	

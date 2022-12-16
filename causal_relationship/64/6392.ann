@@ -1,0 +1,9 @@
+T1	Argument 0 11	後席の製造指示が不適切
+T2	Connective 12 14	ため
+T3	Argument 15 29	誤品の座席ベルトが組付けられ
+T4	Connective 38 42	そのため
+T5	Argument 43 62	保安基準第２２条の３の基準に適合しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

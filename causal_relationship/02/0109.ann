@@ -1,0 +1,25 @@
+T1	Argument 0 48	始動装置のスタータモータへの電源を通電･遮断するための電磁スイッチにおいて、端子の組付けに不適切
+T2	Argument 70 79	当該端子部内に侵入
+T5	Argument 113 123	当該端子部付近が焼損
+T6	Connective 54 56	ため
+T7	Connective 89 90	、
+T8	Connective 112 113	、
+R1	REASON Arg1:T6 Arg2:T1	
+T9	Connective 79 80	し
+R3	REASON Arg1:T9 Arg2:T2	
+R8	RESULT Arg1:T8 Arg2:T5	
+T10	Argument 57 69	導電性の高い液体がかかる
+R2	RESULT Arg1:T6 Arg2:T2	
+T11	Connective 69 70	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T2	
+T12	Argument 90 104	このままの状態で使用を続ける
+T13	Connective 104 105	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+T3	Argument 80 82	短絡
+R4	RESULT Arg1:T9 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+T4	Argument 105 109	作動不良
+R6	RESULT Arg1:T7 Arg2:T4	
+R7	RESULT Arg1:T13 Arg2:T4	
+R12	REASON Arg1:T8 Arg2:T4	

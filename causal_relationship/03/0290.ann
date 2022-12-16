@@ -1,0 +1,25 @@
+T1	Argument 0 39	後輪駆動用ギアボックスにおいて、締め付け用レンチ（オイルパルスレンチ）に不具合
+T2	Argument 46 82	潤滑油のドレインボルト（潤滑油抜き取り用のボルト）の締め付けトルクが不足
+T3	Argument 108 118	ドレインボルトが緩み
+T4	Argument 125 131	潤滑油が洩れ
+T5	Argument 131 146	当該ギアボックスのギアが焼付く
+T6	Connective 43 45	ため
+T7	Connective 91 92	、
+T8	Connective 118 119	、
+T9	Connective 130 131	れ
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 92 106	そのままの状態で使用を続ける
+T11	Connective 106 107	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	
+T12	Argument 119 121	最悪
+T13	Connective 122 124	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T4	

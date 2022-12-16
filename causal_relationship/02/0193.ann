@@ -1,0 +1,25 @@
+T1	Argument 0 24	制動装置において、ブレーキ配管の取り回しが不適切
+T2	Argument 44 57	走行時の車体のねじれや振動
+T3	Argument 60 70	当該配管に亀裂が生じ
+T4	Argument 77 85	エアー漏れが発生
+T5	Argument 87 93	制動力が低下
+T6	Connective 25 27	ため
+T7	Connective 57 60	により
+T8	Connective 86 87	て
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T3	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+T9	Connective 70 71	、
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T8 Arg2:T4	
+R8	RESULT Arg1:T8 Arg2:T5	
+T10	Argument 28 42	そのままの状態で使用を続ける
+T11	Connective 42 43	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	
+T12	Argument 71 73	最悪
+T13	Connective 74 76	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T4	

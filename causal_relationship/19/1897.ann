@@ -1,0 +1,29 @@
+T1	Argument 0 46	前車軸のデファレンシャル（差動装置）において、オイルシール（潤滑油用密封ゴム）の耐久性が不足
+T2	Connective 50 52	ため
+T3	Argument 53 58	摩耗が進行
+T4	Connective 59 60	、
+T5	Argument 60 67	潤滑油が漏れる
+T6	Connective 73 77	そのため
+T7	Argument 123 143	漏れた潤滑油が駐車制動装置の摩擦面に付着
+T8	Connective 144 145	、
+T9	Argument 151 159	駐車制動力が低下
+R1	REASON Arg1:T8 Arg2:T7	
+R2	RESULT Arg1:T8 Arg2:T9	
+R3	REASON Arg1:T6 Arg2:T5	
+R4	RESULT Arg1:T6 Arg2:T7	
+T10	Argument 94 119	デファレンシャルカバーのオイル抜き穴の形状が不適切
+T11	Connective 120 122	ため
+R5	REASON Arg1:T11 Arg2:T10	
+R6	RESULT Arg1:T11 Arg2:T7	
+T12	Argument 78 92	そのままの状態で使用を続ける
+T13	Connective 92 93	と
+R7	CONDITION Arg1:T13 Arg2:T12	
+R8	RESULT Arg1:T13 Arg2:T7	
+T16	Argument 145 147	最悪
+T17	Connective 148 150	場合
+R9	CONDITION Arg1:T17 Arg2:T16	
+R10	RESULT Arg1:T17 Arg2:T9	
+R11	REASON Arg1:T2 Arg2:T1	
+R12	RESULT Arg1:T2 Arg2:T3	
+R13	REASON Arg1:T4 Arg2:T3	
+R14	RESULT Arg1:T4 Arg2:T5	

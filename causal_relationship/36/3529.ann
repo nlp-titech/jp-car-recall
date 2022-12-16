@@ -1,0 +1,13 @@
+T1	Argument 47 71	インフレータ容器に気密不良のものがあることを確認
+T2	Connective 74 78	このため
+T3	Argument 91 108	エアバッグ展開時に正常に展開しない
+T4	Connective 114 116	ため
+R4	REASON Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T2 Arg2:T3	
+R6	REASON Arg1:T2 Arg2:T1	
+T5	Argument 117 122	予防的措置
+T6	Connective 122 125	として
+R1	REASON Arg1:T6 Arg2:T5	
+T7	Argument 125 139	当該インフレータを新品に交換
+R2	RESULT Arg1:T6 Arg2:T7	
+R3	RESULT Arg1:T4 Arg2:T7	

@@ -1,0 +1,21 @@
+T1	Argument 0 52	加速装置において、アクセルペダル踏み込み時の操作力を調節する装置内のディスクに、成形加工時の加工油が付着
+T2	Argument 57 81	使用過程において、プレートとの摩擦力が徐々に増加
+T3	Argument 110 122	開度センサーの戻りが遅く
+T6	Argument 131 166	アクセルペダルをはなしても、エンジン回転数がアイドル回転まで下がらない
+T4	Connective 54 56	ため
+T5	Connective 89 93	そのため
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	
+T13	Connective 124 125	、
+R5	REASON Arg1:T13 Arg2:T3	
+R6	RESULT Arg1:T13 Arg2:T6	
+T14	Argument 94 108	そのままの状態で使用を続ける
+T15	Connective 108 109	と
+R12	CONDITION Arg1:T15 Arg2:T14	
+R13	RESULT Arg1:T15 Arg2:T3	
+T16	Argument 125 127	最悪
+T17	Connective 128 130	場合
+R14	CONDITION Arg1:T17 Arg2:T16	
+R15	RESULT Arg1:T17 Arg2:T6	

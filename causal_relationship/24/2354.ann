@@ -1,0 +1,21 @@
+T1	Argument 0 32	前輪駆動用油圧モータに接続されている油圧ホースの固定方法が不適切
+T2	Connective 33 35	ため
+T3	Argument 36 56	使用過程において当該ホースの固定部が緩み
+T4	Connective 56 57	、
+T5	Argument 57 69	油圧ホースがタイヤと干渉
+T6	Connective 77 81	そのため
+T7	Argument 98 106	油圧ホースが損傷
+T8	Argument 108 115	作動油がもれる
+T9	Connective 107 108	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+T10	Argument 82 96	そのままの状態で使用を続ける
+T11	Connective 96 97	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T7	

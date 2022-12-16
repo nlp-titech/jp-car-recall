@@ -1,0 +1,27 @@
+T1	Argument 0 29	四輪駆動車用トランスファ（副変速機）の入力軸の加工が不適切
+T2	Argument 33 61	接続している手動変速機のオイルシール部にシール不良が発生
+T3	Connective 69 73	そのため
+T4	Argument 74 87	手動変速機から潤滑油が漏れ
+T5	Argument 88 98	そのまま使用を続ける
+T6	Connective 98 99	と
+T7	Argument 100 105	歯車が損傷
+T8	Argument 107 112	異音が発生
+T9	Argument 114 116	最悪
+T10	Argument 120 128	走行できなくなる
+T11	Connective 30 32	ため
+T12	Connective 87 88	、
+T13	Connective 106 107	て
+T15	Connective 117 119	場合
+R1	REASON Arg1:T11 Arg2:T1	
+R2	RESULT Arg1:T11 Arg2:T2	
+R3	REASON Arg1:T3 Arg2:T2	
+R4	RESULT Arg1:T3 Arg2:T4	
+R5	REASON Arg1:T12 Arg2:T4	
+R6	RESULT Arg1:T12 Arg2:T7	
+R7	CONDITION Arg1:T6 Arg2:T5	
+R8	RESULT Arg1:T6 Arg2:T7	
+R9	REASON Arg1:T13 Arg2:T7	
+R10	RESULT Arg1:T13 Arg2:T8	
+R13	CONDITION Arg1:T15 Arg2:T9	
+R14	RESULT Arg1:T15 Arg2:T10	
+R11	RESULT Arg1:T13 Arg2:T10	

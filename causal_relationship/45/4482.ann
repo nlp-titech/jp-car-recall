@@ -1,0 +1,21 @@
+T1	Argument 0 49	前輪緩衝装置のロアアームとナックルアームを連結しているボールジョイント部の取付ナットに締め付け不足
+T2	Connective 55 56	、
+T3	Argument 72 80	当該ナットが緩み
+T4	Argument 87 101	当該ボールジョイント部が外れ
+T5	Connective 101 102	て
+T6	Argument 103 110	走行不能に至る
+T7	Connective 80 81	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T7 Arg2:T3	
+R4	RESULT Arg1:T7 Arg2:T4	
+R5	REASON Arg1:T5 Arg2:T4	
+R6	RESULT Arg1:T5 Arg2:T6	
+T8	Argument 56 70	そのままの状態で使用を続ける
+T9	Connective 70 71	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 81 83	最悪
+T11	Connective 84 86	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T4	

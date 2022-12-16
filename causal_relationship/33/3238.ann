@@ -1,0 +1,9 @@
+T1	Argument 0 38	清掃車の車両下部にある塵埃掃寄せ用の補助側ブラシが適切に組み付けられていない
+T2	Connective 45 49	そのため
+T3	Argument 50 64	そのままの状態で使用を続ける
+T4	Connective 64 65	と
+T5	Argument 65 78	補助側ブラシが車体から脱落
+R1	RESULT Arg1:T4 Arg2:T5	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T5	
+R4	REASON Arg1:T2 Arg2:T1	

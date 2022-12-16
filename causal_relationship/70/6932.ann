@@ -1,0 +1,17 @@
+T1	Argument 0 65	テールゲートリフト付車に改造した福祉車両において、リフト使用時に車いすの乗車の有無を検知する重量検知スイッチの端子部が露出した構造
+T2	Connective 72 76	そのため
+T3	Argument 77 98	リフト装置の緩衝スプリングのフック部が折損
+T4	Connective 100 102	場合
+T5	Argument 103 124	緩衝スプリングが当該スイッチの端子部に接触
+T6	Connective 131 132	、
+T7	Argument 132 134	最悪
+T8	Connective 135 137	場合
+T9	Argument 138 160	作動スイッチの操作をしないのにリフトが誤作動
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	RESULT Arg1:T6 Arg2:T9	

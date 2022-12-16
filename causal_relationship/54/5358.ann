@@ -1,0 +1,28 @@
+T1	Argument 0 19	冷却ファンの制御基盤に不良品が組み付け
+T2	Connective 24 26	ため
+T3	Argument 27 55	冷却水温が上昇しても、冷却ファンのモーターに電流が流れず
+T4	Connective 55 56	、
+T5	Argument 56 67	冷却ファンが作動しない
+T6	Connective 73 77	そのため
+T7	Argument 90 102	エンジンがオーバーヒート
+T8	Argument 108 115	制御基盤が発熱
+T9	Connective 116 117	、
+T10	Argument 123 128	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T8	
+R8	REASON Arg1:T9 Arg2:T7	
+R9	REASON Arg1:T9 Arg2:T8	
+R10	RESULT Arg1:T9 Arg2:T10	
+T11	Argument 78 88	そのまま使用を続ける
+T12	Connective 88 89	と
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T7	
+T13	Argument 117 119	最悪
+T14	Connective 120 122	場合
+R13	CONDITION Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T10	

@@ -1,0 +1,29 @@
+T1	Argument 0 47	運転席用エアバッグのインフレータ（膨張装置）の補給用部品において、ガス発生剤の吸湿防止が不適切
+T2	Connective 54 58	そのため
+T3	Argument 59 77	車両の修理時に当該インフレータに交換
+T4	Connective 78 79	、
+T5	Argument 79 93	そのままの状態で使用を続ける
+T6	Connective 93 94	と
+T8	Connective 128 129	、
+R4	CONDITION Arg1:T6 Arg2:T5	
+R6	REASON Arg1:T4 Arg2:T3	
+R8	REASON Arg1:T2 Arg2:T1	
+T11	Connective 116 119	により
+T12	Argument 119 127	ガス発生剤が劣化
+R3	RESULT Arg1:T11 Arg2:T12	
+R5	RESULT Arg1:T6 Arg2:T12	
+R7	RESULT Arg1:T2 Arg2:T12	
+T7	Argument 95 103	高い湿度の環境下
+T10	Connective 103 104	で
+T13	Argument 104 116	大きな温度変化の繰り返し
+R2	REASON Arg1:T11 Arg2:T13	
+R9	CONDITION Arg1:T10 Arg2:T7	
+R10	RESULT Arg1:T10 Arg2:T12	
+T9	Argument 129 137	エアバッグ展開時
+T14	Connective 137 138	に
+T15	Argument 138 149	インフレータ容器が破損
+R1	RESULT Arg1:T14 Arg2:T15	
+R11	CONDITION Arg1:T14 Arg2:T9	
+R12	REASON Arg1:T8 Arg2:T12	
+R13	RESULT Arg1:T8 Arg2:T15	
+R14	RESULT Arg1:T4 Arg2:T5	

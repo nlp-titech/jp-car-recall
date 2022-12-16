@@ -1,0 +1,21 @@
+T1	Argument 0 37	エンジン始動／停止スイッチにおいて、表面に記載されている文字の字体が不適切
+T2	Connective 38 40	ため
+T3	Argument 41 53	手汗などの油脂成分が付着
+T4	Connective 55 56	と
+T5	Argument 57 81	表面に施されたクロームコーティングの接着性が低下
+T6	Connective 82 83	、
+T7	Argument 83 99	当該コーティングの一部が剥がれる
+T8	Connective 105 109	そのため
+T11	Argument 110 132	スイッチを操作する際に文字の鋭角部分に触れる
+T12	Connective 132 133	と
+T13	Argument 134 139	指先が負傷
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	

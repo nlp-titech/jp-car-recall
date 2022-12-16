@@ -1,0 +1,29 @@
+T2	Argument 11 38	パワーステアリングオイルパイプの製造時の組付けが不適切
+T3	Argument 42 58	パイプが変形して取付けられている
+T5	Argument 69 101	パイプと接続しているパワーステアリングオイルホースに引張力が作用
+T6	Argument 103 113	そのまま使用を続ける
+T7	Argument 115 140	当該ホースがパワーステアリングオイルタンクから抜け
+T8	Argument 141 147	オイルが漏れ
+T9	Argument 148 150	最悪
+T10	Argument 154 160	操舵力が増大
+T12	Connective 39 41	ため
+T14	Connective 64 68	そのため
+T15	Connective 102 103	、
+T16	Connective 113 114	と
+T17	Connective 140 141	て
+T18	Connective 147 148	、
+T19	Connective 151 153	場合
+R3	REASON Arg1:T12 Arg2:T2	
+R4	RESULT Arg1:T12 Arg2:T3	
+R7	REASON Arg1:T14 Arg2:T3	
+R8	RESULT Arg1:T14 Arg2:T5	
+R9	REASON Arg1:T15 Arg2:T5	
+R10	RESULT Arg1:T15 Arg2:T7	
+R11	CONDITION Arg1:T16 Arg2:T6	
+R12	RESULT Arg1:T16 Arg2:T7	
+R13	REASON Arg1:T17 Arg2:T7	
+R14	RESULT Arg1:T17 Arg2:T8	
+R15	REASON Arg1:T18 Arg2:T8	
+R16	RESULT Arg1:T18 Arg2:T10	
+R17	CONDITION Arg1:T19 Arg2:T9	
+R18	RESULT Arg1:T19 Arg2:T10	

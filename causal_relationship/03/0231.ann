@@ -1,0 +1,17 @@
+T1	Argument 0 43	原動機の噴射ポンプにおいて、アクセルレバーとアイドルアップレバーの作動時の間隔の少ない
+T2	Argument 51 69	作動状態によっては互いのレバーが干渉
+T3	Argument 99 113	原動機の回転が下がらなくなる
+T4	Connective 48 50	ため
+T5	Connective 76 77	、
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	
+T6	Argument 77 91	そのままの状態で使用を続ける
+T7	Connective 91 92	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+T8	Argument 93 95	最悪
+T9	Connective 96 98	場合
+R6	CONDITION Arg1:T9 Arg2:T8	
+R7	RESULT Arg1:T7 Arg2:T3	
+R8	RESULT Arg1:T9 Arg2:T3	

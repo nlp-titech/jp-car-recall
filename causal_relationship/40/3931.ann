@@ -1,0 +1,25 @@
+T2	Argument 0 36	フロントストラットにおいて、ストラット上端取付け部の締結緩み評価が不充分
+T3	Argument 40 51	縁石乗り上げなどの衝撃
+T4	Argument 52 61	取付けナットが弛む
+T5	Argument 72 82	そのまま使用を続ける
+T6	Argument 84 96	当該取付け部にガタが生じ
+T7	Argument 97 99	損傷
+T8	Argument 101 106	異音が発生
+T10	Connective 37 39	ため
+T11	Connective 51 52	で
+T12	Connective 67 71	そのため
+T13	Connective 82 83	と
+T14	Connective 96 97	て
+T15	Connective 100 101	、
+R3	REASON Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T4	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+R7	REASON Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T6	
+R9	CONDITION Arg1:T13 Arg2:T5	
+R10	RESULT Arg1:T13 Arg2:T6	
+R11	REASON Arg1:T14 Arg2:T6	
+R12	RESULT Arg1:T14 Arg2:T7	
+R13	REASON Arg1:T15 Arg2:T7	
+R14	RESULT Arg1:T15 Arg2:T8	

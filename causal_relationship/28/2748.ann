@@ -1,0 +1,17 @@
+T1	Argument 0 38	燃料フィラーホースにおいて、燃料タンクと固定しているクランプの締付けが不適切
+T2	Connective 39 41	ため
+T3	Argument 42 53	当該ホースに亀裂が発生
+T4	Connective 61 65	そのため
+T5	Argument 78 89	当該ホースの亀裂が進行
+T6	Argument 91 97	燃料が漏れる
+T7	Connective 90 91	て
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	
+T8	Argument 66 76	そのまま使用を続ける
+T9	Connective 76 77	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

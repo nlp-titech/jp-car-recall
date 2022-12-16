@@ -1,0 +1,25 @@
+T1	Argument 0 31	イグニッションスイッチにおいて、接点部に使用するグリスが不適切
+T2	Connective 32 34	ため
+T3	Argument 35 67	可動接点が固定接点から離れる際のアーク放電の熱によりグリスが炭化
+T6	Connective 75 79	そのため
+T7	Argument 80 90	そのまま使用を続ける
+T8	Connective 90 91	と
+T9	Argument 92 128	グリスの絶縁性の低下と可動接点の摩耗による金属粉の堆積により接点間が導通
+T10	Connective 129 130	、
+T11	Argument 130 143	発熱することでグリスが発煙
+T12	Connective 144 145	、
+T13	Argument 145 147	最悪
+T14	Connective 148 150	場合
+T15	Argument 151 156	火災に至る
+R1	RESULT Arg1:T14 Arg2:T15	
+R2	CONDITION Arg1:T14 Arg2:T13	
+R3	RESULT Arg1:T12 Arg2:T15	
+R4	REASON Arg1:T12 Arg2:T11	
+R5	RESULT Arg1:T10 Arg2:T11	
+R6	REASON Arg1:T10 Arg2:T9	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	CONDITION Arg1:T8 Arg2:T7	
+R9	RESULT Arg1:T6 Arg2:T9	
+R13	RESULT Arg1:T2 Arg2:T3	
+R14	REASON Arg1:T2 Arg2:T1	
+R10	REASON Arg1:T6 Arg2:T3	

@@ -1,0 +1,21 @@
+T1	Argument 0 31	原動機本体に取り付けられたラジエータキャップの加工処理に不適切
+T2	Argument 38 46	原動機からの振動
+T3	Argument 49 62	当該ジエータキャップが破損
+T4	Argument 77 87	オーバーヒートに至る
+T5	Connective 37 38	、
+T6	Connective 46 49	により
+T7	Argument 64 70	冷却水が漏れ
+T8	Connective 70 71	、
+T9	Connective 63 64	て
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T3	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T4	
+T10	Argument 71 73	最悪
+T11	Connective 74 76	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T4	

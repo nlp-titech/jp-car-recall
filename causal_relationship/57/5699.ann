@@ -1,0 +1,25 @@
+T1	Argument 0 29	エアクリーナカバーにおいて、固定クリップの引っ掛かりが浅い
+T2	Argument 32 38	走行中の振動
+T3	Argument 42 52	固定クリップが外れる
+T4	Argument 63 77	固定クリップが外れたまま使用
+T5	Argument 81 92	エアクリーナが密着せず
+T6	Argument 93 113	小石等の異物がスロットルバルブに噛み込み
+T7	Argument 114 129	スロットルバルブが戻らなくなる
+T8	Connective 29 31	ため
+T9	Connective 38 41	により
+T10	Connective 58 62	そのため
+T11	Connective 79 80	と
+T12	Connective 92 93	、
+T13	Connective 113 114	、
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T3	
+R3	REASON Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T3	
+R5	REASON Arg1:T10 Arg2:T3	
+R6	RESULT Arg1:T10 Arg2:T5	
+R7	CONDITION Arg1:T11 Arg2:T4	
+R8	RESULT Arg1:T11 Arg2:T5	
+R9	REASON Arg1:T12 Arg2:T5	
+R10	RESULT Arg1:T12 Arg2:T6	
+R11	REASON Arg1:T13 Arg2:T6	
+R12	RESULT Arg1:T13 Arg2:T7	

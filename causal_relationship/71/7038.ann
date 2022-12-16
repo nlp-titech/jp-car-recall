@@ -1,0 +1,15 @@
+T1	Argument 0 27	運転支援装置の一部において、故障検出プログラムが不適切
+T2	Connective 28 30	ため
+T3	Argument 31 45	ブレーキランプスイッチが故障
+T4	Connective 47 48	際
+T5	Argument 50 62	故障の検出に時間を要する
+T6	Connective 68 72	そのため
+T7	Argument 73 98	「アイサイトが利用できない」旨の警告が表示されない
+T8	Argument 103 121	衝突被害軽減等のブレーキがかからない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T8	

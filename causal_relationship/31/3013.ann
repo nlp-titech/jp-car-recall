@@ -1,0 +1,21 @@
+T1	Argument 0 38	緊急用自動車において、バッテリーケーブルを固定する樹脂製バンドの耐久性が不足
+T2	Argument 50 58	当該バンドが破損
+T3	Argument 61 77	バッテリーケーブルが排気管と接触
+T4	Argument 92 104	バッテリーケーブルが短絡
+T5	Argument 107 115	走行中にエンスト
+T6	Connective 106 107	、
+T7	Connective 85 86	、
+T8	Connective 59 60	て
+T9	Connective 47 49	ため
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+R7	REASON Arg1:T6 Arg2:T4	
+R8	RESULT Arg1:T6 Arg2:T5	
+T10	Argument 86 88	最悪
+T11	Connective 89 91	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T4	

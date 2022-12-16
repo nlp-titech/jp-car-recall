@@ -1,0 +1,17 @@
+T1	Argument 0 16	前照灯電気配線の取り回しが不適切
+T2	Connective 17 19	ため
+T5	Argument 20 43	ハンドルを左右に動かすことにより電気配線が屈曲
+T6	Connective 51 55	そのため
+T7	Argument 56 70	そのままの状態で使用を続ける
+T8	Connective 70 71	と
+T9	Argument 72 88	屈曲が繰り返された電気配線が断線
+T10	Argument 90 99	前照灯が不灯となる
+T11	Connective 89 90	、
+R1	RESULT Arg1:T11 Arg2:T10	
+R2	REASON Arg1:T11 Arg2:T9	
+R3	RESULT Arg1:T8 Arg2:T9	
+R4	CONDITION Arg1:T8 Arg2:T7	
+R5	RESULT Arg1:T6 Arg2:T9	
+R6	REASON Arg1:T6 Arg2:T5	
+R9	RESULT Arg1:T2 Arg2:T5	
+R10	REASON Arg1:T2 Arg2:T1	

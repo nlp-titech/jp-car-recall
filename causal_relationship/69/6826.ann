@@ -1,0 +1,33 @@
+T1	Argument 8 51	クランクプーリをクランクシャフトに固定するボルトにオイルの塗布が適切に行われていなかっ
+T2	Connective 52 54	ため
+T3	Argument 55 62	締付け力が不足
+T4	Connective 71 72	、
+T5	Argument 72 83	その状態で使用を続ける
+T6	Connective 83 84	と
+T7	Argument 85 93	当該ボルトが弛み
+T8	Connective 93 94	、
+T9	Argument 94 99	異音が発生
+T11	Argument 101 103	最悪
+T12	Connective 104 106	場合
+T13	Argument 107 122	補機駆動用クランクプーリが空転
+T14	Connective 123 124	、
+T15	Argument 124 152	発電機及びパワーステアリング用油圧ポンプが作動しなくなり
+T16	Connective 152 153	、
+T17	Argument 153 161	充電警告灯が点灯
+T18	Argument 168 179	ハンドルの操作力が増大
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	CONDITION Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	RESULT Arg1:T4 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R10	CONDITION Arg1:T12 Arg2:T11	
+R11	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R15	REASON Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T17	
+R17	RESULT Arg1:T16 Arg2:T18	
+R9	RESULT Arg1:T8 Arg2:T13	

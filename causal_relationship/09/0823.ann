@@ -1,0 +1,41 @@
+T1	Argument 0 23	エンジンマウントブラケットのプレス成型が不適切
+T2	Connective 24 26	ため
+T3	Argument 117 129	ファンとラジエータが干渉
+T4	Connective 48 49	、
+T5	Argument 62 67	亀裂が進行
+T6	Connective 75 80	そのために
+T7	Argument 81 91	そのまま使用を続ける
+T8	Connective 91 92	と
+T9	Argument 93 101	ブラケットが破損
+T10	Argument 103 105	最悪
+T11	Connective 106 108	場合
+T12	Argument 109 116	エンジンが傾き
+T14	Connective 134 135	、
+T15	Argument 135 143	走行できなくなる
+T16	Connective 116 117	、
+R1	REASON Arg1:T2 Arg2:T1	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T12	
+R11	REASON Arg1:T16 Arg2:T12	
+R14	RESULT Arg1:T14 Arg2:T15	
+T17	Connective 59 62	により
+T18	Argument 49 59	エンジンからの振動等
+R15	REASON Arg1:T17 Arg2:T18	
+R16	RESULT Arg1:T17 Arg2:T5	
+T19	Connective 102 103	、
+R17	REASON Arg1:T19 Arg2:T9	
+R18	RESULT Arg1:T19 Arg2:T12	
+T13	Connective 130 131	て
+T20	Argument 131 133	破損
+T21	Argument 27 41	ブラケットに微細な亀裂が発生
+R2	RESULT Arg1:T2 Arg2:T21	
+R12	REASON Arg1:T4 Arg2:T21	
+R3	RESULT Arg1:T16 Arg2:T3	
+R13	REASON Arg1:T13 Arg2:T3	
+R19	RESULT Arg1:T13 Arg2:T20	
+R20	REASON Arg1:T14 Arg2:T20	

@@ -1,0 +1,29 @@
+T2	Argument 43 53	当該レバーを引き上げ
+T3	Argument 57 72	保持機構の歯先どうしがつり合う
+T4	Argument 78 86	エンジン等の振動
+T5	Argument 87 94	つり合いが外れ
+T6	Argument 95 101	レバーが解除
+T7	Argument 114 116	最悪
+T8	Argument 120 127	車両が動き出す
+T9	Connective 40 42	ため
+T10	Connective 54 55	際
+T11	Connective 72 73	と
+T12	Connective 86 87	で
+T13	Connective 94 95	て
+T14	Connective 109 113	そのため
+T15	Connective 117 119	場合
+R2	RESULT Arg1:T9 Arg2:T5	
+R3	CONDITION Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T3	
+R5	CONDITION Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T5	
+R7	REASON Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T5	
+R9	REASON Arg1:T13 Arg2:T5	
+R10	RESULT Arg1:T13 Arg2:T6	
+R11	REASON Arg1:T14 Arg2:T6	
+R12	RESULT Arg1:T14 Arg2:T8	
+R13	CONDITION Arg1:T15 Arg2:T7	
+R14	RESULT Arg1:T15 Arg2:T8	
+T1	Argument 7 39	手動式パーキングブレーキにおいて、レバー保持機構のばね力が不適切
+R1	REASON Arg1:T9 Arg2:T1	

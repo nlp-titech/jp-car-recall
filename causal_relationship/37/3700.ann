@@ -1,0 +1,15 @@
+T1	Argument 10 26	前照灯において、防水設計が不適切
+T2	Connective 27 29	ため
+T3	Argument 30 41	灯火器内部に雨水が浸入
+T4	Connective 49 53	そのため
+T5	Argument 54 76	雨水が灯火器内部に溜まり灯火器の反射部が腐食
+T6	Connective 77 78	て
+T7	Argument 78 83	光度が低下
+T8	Argument 95 115	走行中、端子がショートして前照灯が消える
+R1	RESULT Arg1:T4 Arg2:T8	
+R2	RESULT Arg1:T6 Arg2:T7	
+R3	REASON Arg1:T6 Arg2:T5	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T4 Arg2:T3	
+R6	RESULT Arg1:T2 Arg2:T3	
+R7	REASON Arg1:T2 Arg2:T1	

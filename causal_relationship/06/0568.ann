@@ -1,0 +1,31 @@
+T1	Argument 0 32	ディーゼルエンジン搭載車両において、②手動変速機への導風が不十分
+T2	Argument 36 47	変速機内のオイルが高温
+T3	Argument 51 74	変速機内にある後退灯スイッチの接点部が化学変化
+T4	Argument 77 82	摩耗が進行
+T5	Argument 84 92	接触が不良となっ
+T6	Argument 93 104	後退灯が点灯しなくなる
+T7	Argument 109 119	導電性の化合物が堆積
+T8	Argument 121 128	電気回路が短絡
+T12	Argument 130 149	後退灯、計器及び警告灯が作動しなくなる
+T13	Connective 74 77	により
+T14	Connective 83 84	、
+T15	Connective 92 93	て
+T16	Connective 120 121	て
+T17	Connective 129 130	、
+R1	REASON Arg1:T13 Arg2:T3	
+T19	Connective 33 35	ため
+T20	Connective 50 51	、
+R2	REASON Arg1:T19 Arg2:T1	
+R3	RESULT Arg1:T19 Arg2:T2	
+R4	REASON Arg1:T20 Arg2:T2	
+R5	RESULT Arg1:T20 Arg2:T3	
+R6	RESULT Arg1:T13 Arg2:T4	
+R7	REASON Arg1:T14 Arg2:T4	
+R8	RESULT Arg1:T14 Arg2:T5	
+R9	REASON Arg1:T15 Arg2:T5	
+R10	RESULT Arg1:T15 Arg2:T6	
+R12	REASON Arg1:T16 Arg2:T7	
+R13	RESULT Arg1:T16 Arg2:T8	
+R14	REASON Arg1:T17 Arg2:T8	
+R15	RESULT Arg1:T17 Arg2:T12	
+R11	RESULT Arg1:T14 Arg2:T7	

@@ -1,0 +1,29 @@
+T1	Argument 0 70	ハイブリッドシステムの電力変換器（ＤＣ－ＡＣインバータ）において、モータを制御する回路上または発電機を制御する回路上の素子間にばらつきがある
+T2	Connective 70 71	と
+T3	Argument 72 94	素子温度が上昇して放熱用半田の許容温度を超え
+T4	Connective 94 95	、
+T5	Argument 95 108	放熱用半田および素子が損傷
+T6	Connective 116 120	そのため
+T7	Argument 121 127	警告表示が出
+T8	Argument 141 143	最悪
+T9	Connective 144 146	場合
+T10	Argument 147 164	高電圧系統の電流が制御系回路に流れ
+R1	RESULT Arg1:T9 Arg2:T10	
+R2	CONDITION Arg1:T9 Arg2:T8	
+R3	RESULT Arg1:T6 Arg2:T7	
+R4	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T4 Arg2:T5	
+R7	REASON Arg1:T4 Arg2:T3	
+R8	RESULT Arg1:T2 Arg2:T3	
+R9	REASON Arg1:T2 Arg2:T1	
+T11	Connective 163 164	れ
+T12	Argument 165 177	電源回路のヒューズが切れ
+R10	REASON Arg1:T11 Arg2:T10	
+R11	RESULT Arg1:T11 Arg2:T12	
+T14	Argument 178 193	警告表示が出ることなく走行不能
+T15	Connective 177 178	て
+R13	REASON Arg1:T15 Arg2:T12	
+R14	RESULT Arg1:T15 Arg2:T14	
+T16	Argument 128 135	走行不能となる
+R5	RESULT Arg1:T6 Arg2:T16	
+R12	RESULT Arg1:T2 Arg2:T10	

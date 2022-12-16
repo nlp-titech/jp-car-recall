@@ -1,0 +1,21 @@
+T1	Argument 0 35	原動機に取り付けられている燃料ろ過器が、原動機の特定の高速回転域で振動
+T2	Argument 53 65	燃料配管の保持金具が折損
+T3	Argument 68 82	燃料ろ過器に過大な応力が発生
+T4	Argument 103 128	燃料ろ過器上部の燃料配管との結合部付近に亀裂が入り
+T5	Argument 128 133	燃料が漏れ
+T6	Argument 140 145	火災に至る
+T7	Connective 36 37	、
+T8	Connective 66 67	て
+T9	Connective 84 85	。
+T10	Connective 127 128	り
+T11	Connective 133 134	、
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T5	
+R9	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	

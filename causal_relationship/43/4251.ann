@@ -1,0 +1,9 @@
+T1	Argument 17 40	尿素ＳＣＲ支持ブラケットの取付けボルトが不適切
+T2	Connective 41 43	ため
+T3	Argument 60 77	尿素ＳＣＲが取付けフレームより脱落
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T7	Argument 44 58	そのままの状態で使用を続ける
+T8	Connective 58 59	と
+R3	CONDITION Arg1:T8 Arg2:T7	
+R4	RESULT Arg1:T8 Arg2:T3	

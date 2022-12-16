@@ -1,0 +1,13 @@
+T1	Argument 0 34	乗車装置後部の防振支持部において、防振ゴムの押さえ座金の形状が不適切
+T2	Connective 35 37	ため
+T3	Argument 37 47	防振支持部が抜け出る
+T4	Connective 53 57	このため
+T5	Argument 58 61	急停止
+T6	Argument 66 76	キャビンが前方に傾く
+T7	Connective 63 65	場合
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T6	
+R5	CONDITION Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	

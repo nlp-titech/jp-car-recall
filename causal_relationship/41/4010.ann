@@ -1,0 +1,13 @@
+T1	Argument 0 40	サイドエアバッグの点火装置において、生産設備の異常処置対応プログラムの設定を誤っ
+T2	Argument 44 56	着火剤の混合割合が不適切
+T3	Argument 68 75	エアバッグ作動
+T4	Argument 77 85	正常に展開しない
+T5	Connective 41 43	ため
+T6	Connective 63 67	そのため
+T7	Connective 75 77	時に
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T4	
+R5	CONDITION Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	

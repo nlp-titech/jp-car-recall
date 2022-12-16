@@ -1,0 +1,21 @@
+T1	Argument 14 42	燃料を供給する高圧レギュレータの密閉プラグ締付け力が不足
+T2	Connective 46 48	ため
+T3	Connective 72 75	により
+T4	Connective 90 94	そのため
+T5	Argument 76 84	密閉プラグが緩む
+T6	Argument 49 72	エンジン始動時の当該密閉プラグに掛かる圧力変動
+T7	Argument 95 105	そのまま使用を続ける
+T8	Connective 105 106	と
+T9	Argument 107 130	密閉プラグに取付けられているオーリングが損傷し
+T10	Argument 131 137	燃料が漏れる
+T11	Connective 130 131	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T3 Arg2:T6	
+R4	RESULT Arg1:T3 Arg2:T5	
+R5	REASON Arg1:T4 Arg2:T5	
+R6	RESULT Arg1:T4 Arg2:T9	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T11 Arg2:T9	
+R10	RESULT Arg1:T11 Arg2:T10	

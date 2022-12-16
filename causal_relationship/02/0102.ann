@@ -1,0 +1,31 @@
+T1	Argument 0 41	原動機の充電発電機（オルタネータ）に取付けられている真空ポンプのホース形状が不適切
+T2	Argument 72 80	当該ホースが変形
+T3	Argument 45 66	オルタネータでファンベルトの張り調整をする
+T4	Argument 104 113	ホースに亀裂が生じ
+T7	Connective 42 44	ため
+T8	Connective 68 71	により
+T9	Connective 81 82	、
+T10	Connective 113 114	、
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T3	
+R4	RESULT Arg1:T8 Arg2:T2	
+R5	REASON Arg1:T9 Arg2:T2	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+T12	Argument 82 96	そのままの状態で使用を続ける
+T13	Connective 96 97	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T4	
+T14	Argument 98 100	最悪
+T15	Connective 101 103	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+T5	Argument 114 131	排出ガス再循環装置が機能しなくなり
+R8	RESULT Arg1:T15 Arg2:T4	
+R9	RESULT Arg1:T10 Arg2:T5	
+T6	Argument 154 160	制動力が低下
+R10	RESULT Arg1:T10 Arg2:T6	
+T11	Argument 135 145	制動装置が真空油圧式
+T16	Connective 152 153	は
+R14	CONDITION Arg1:T16 Arg2:T11	
+R15	RESULT Arg1:T16 Arg2:T6	

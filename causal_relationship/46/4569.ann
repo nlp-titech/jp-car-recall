@@ -1,0 +1,17 @@
+T1	Argument 9 21	点火スイッチの強度が不足
+T2	Connective 25 27	ため
+T3	Argument 44 56	当該スイッチに亀裂が発生
+T4	Connective 57 58	、
+T7	Argument 73 99	窓拭き機、前照灯及びエアコンディショナーが作動しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T4 Arg2:T7	
+T8	Argument 28 42	そのままの状態で使用を続ける
+T9	Connective 42 43	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T5	Argument 58 71	当該スイッチの操作をした後
+T6	Connective 71 72	に
+R4	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

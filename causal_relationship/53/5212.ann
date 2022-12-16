@@ -1,0 +1,17 @@
+T1	Argument 0 43	ブレーキペダルとプッシュロッドの接続部固定クリップが確実に取付けられていないものがある
+T2	Connective 43 45	ため
+T3	Argument 58 65	接続部が外れる
+T4	Connective 71 75	そのため
+T5	Argument 82 89	制動不能に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 46 57	ブレーキ操作を繰り返す
+T7	Connective 57 58	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 76 78	最悪
+T9	Connective 79 81	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

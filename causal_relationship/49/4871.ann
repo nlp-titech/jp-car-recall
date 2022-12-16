@@ -1,0 +1,35 @@
+T1	Argument 38 66	ケーブルホルダーのラバーグロメットの構造及び形状が不適切
+T2	Connective 67 69	ため
+T3	Argument 82 92	当該グロメットが削れ
+T4	Connective 92 93	、
+T5	Argument 93 109	当該ケーブルと当該パイプとが干渉
+T6	Connective 116 117	、
+T7	Argument 133 141	当該パイプが損傷
+T8	Connective 142 143	て
+T9	Argument 144 152	ブレーキ液が漏れ
+T10	Connective 152 153	て
+T11	Argument 153 159	制動力が低下
+T12	Argument 167 175	制動力が失われる
+R1	RESULT Arg1:T10 Arg2:T12	
+R2	RESULT Arg1:T10 Arg2:T11	
+T13	Argument 161 163	最悪
+T14	Connective 164 166	場合
+R3	CONDITION Arg1:T14 Arg2:T13	
+R4	RESULT Arg1:T14 Arg2:T12	
+R5	REASON Arg1:T2 Arg2:T1	
+R6	RESULT Arg1:T2 Arg2:T3	
+R7	REASON Arg1:T4 Arg2:T3	
+R8	RESULT Arg1:T4 Arg2:T5	
+R9	REASON Arg1:T6 Arg2:T5	
+R10	RESULT Arg1:T6 Arg2:T7	
+R11	REASON Arg1:T8 Arg2:T7	
+R12	RESULT Arg1:T8 Arg2:T9	
+R13	REASON Arg1:T10 Arg2:T9	
+T15	Argument 117 131	そのままの状態で使用を続ける
+T16	Connective 131 132	と
+R14	CONDITION Arg1:T16 Arg2:T15	
+R15	RESULT Arg1:T16 Arg2:T7	
+T17	Argument 70 79	当該ケーブルの振動
+T18	Connective 79 82	により
+R16	REASON Arg1:T18 Arg2:T17	
+R17	RESULT Arg1:T18 Arg2:T3	

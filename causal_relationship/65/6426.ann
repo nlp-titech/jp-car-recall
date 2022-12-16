@@ -1,0 +1,9 @@
+T1	Argument 29 62	ＥＳＰ（横滑り防止装置）のパラメータ設定（警告灯表示機能）が不適切
+T2	Connective 63 65	ため
+T3	Argument 77 115	ＥＳＰ作動時のＥＳＰランプ点滅及び故障時のＥＳＰランプ点灯の警告表示をしない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 121 125	そのため
+T5	Argument 126 169	警告表示が保安基準第１２条細目告示第１５条（協定規則第１３号第１１改訂版）に適合しない
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

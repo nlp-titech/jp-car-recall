@@ -1,0 +1,43 @@
+T1	Argument 0 13	原動機の冷却性能が高すぎる
+T2	Connective 13 15	ため
+T3	Argument 16 26	原動機が暖まりにくい
+T4	Connective 28 30	から
+T5	Argument 31 55	エンジンから発生するブローバイガス中の水分が結露
+T6	Argument 57 73	エンジンオイルに多量の水分が混入
+T7	Connective 56 57	、
+T8	Connective 76 80	そのため
+T9	Argument 81 98	エンジンオイル中の添加物が加水分解
+T10	Connective 99 100	、
+T11	Argument 100 108	硫黄イオンが発生
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	
+R7	REASON Arg1:T8 Arg2:T6	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Connective 109 110	て
+T13	Argument 111 142	原動機のコネクティングロッド大端部のベアリングの銅メッキが剥離
+T14	Argument 147 160	当該ベアリングが早期に摩耗
+T15	Argument 162 170	ベアリングが破損
+T16	Argument 172 177	異音が発生
+T17	Connective 144 146	ため
+T18	Connective 161 162	、
+T19	Connective 171 172	て
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T17 Arg2:T13	
+R14	RESULT Arg1:T17 Arg2:T14	
+R15	REASON Arg1:T18 Arg2:T14	
+R16	RESULT Arg1:T18 Arg2:T15	
+R17	REASON Arg1:T19 Arg2:T15	
+R18	RESULT Arg1:T19 Arg2:T16	
+T20	Argument 191 209	エンジンが停止して再始動できなくなる
+T24	Argument 185 187	最悪
+T25	Connective 188 190	場合
+R23	CONDITION Arg1:T25 Arg2:T24	
+R24	RESULT Arg1:T25 Arg2:T20	
+R19	RESULT Arg1:T19 Arg2:T20	

@@ -1,0 +1,25 @@
+T1	Argument 0 60	液化石油ガス（ＬＰＧ）自動車の手動変速機付車において、燃料装置のベーパライザ（ＬＰＧ気化装置）の燃料供給量の設定が不適切
+T2	Connective 61 63	ため
+T5	Argument 64 87	左急旋回時にアクセルを放しクラッチの接続を切っ
+T6	Connective 88 90	場合
+T7	Argument 91 99	燃料供給量が不足
+T8	Connective 107 111	そのため
+T9	Argument 112 114	最悪
+T10	Connective 115 117	場合
+T11	Argument 118 128	クラッチの接続を切っ
+T12	Connective 131 132	間
+T13	Argument 132 136	エンスト
+T14	Connective 137 138	、
+T15	Argument 138 149	ハンドルの操作力が増大
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T13	
+R9	CONDITION Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	

@@ -1,0 +1,13 @@
+T1	Argument 0 45	ディーゼルエンジン車用のオイルフィルターの使用において、使用者への周知が十分行われていない
+T2	Connective 45 47	ため
+T3	Argument 80 104	エンジン内部で発生する金属粉が十分に捕捉されない
+T4	Connective 110 114	そのため
+T5	Argument 115 126	①及び②の不具合が発生
+T6	Argument 48 75	リリーフバルブの開弁圧が不適切なオイルフィルターを使用
+T7	Connective 77 79	場合
+R1	RESULT Arg1:T2 Arg2:T6	
+R2	REASON Arg1:T2 Arg2:T1	
+R3	CONDITION Arg1:T7 Arg2:T6	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T4 Arg2:T3	
+R6	RESULT Arg1:T4 Arg2:T5	

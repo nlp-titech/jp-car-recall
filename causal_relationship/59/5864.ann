@@ -1,0 +1,5 @@
+T1	Argument 0 42	計器盤の前照灯及び方向指示器の操作スイッチが、ハンドルの中心から５００㎜を越えて配置
+T2	Connective 47 49	ため
+T3	Argument 50 62	保安基準に適合していない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

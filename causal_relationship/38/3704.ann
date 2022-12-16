@@ -1,0 +1,9 @@
+T1	Argument 2 46	小型ノンステップバスの扉において、③扉開閉用エアシリンダの電磁弁とエア配管の容量が不適切
+T2	Argument 50 63	扉の開閉中に反転操作を行っ
+T3	Argument 67 77	扉が通常より速く動く
+T4	Connective 47 49	ため
+T5	Connective 64 66	場合
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T3	
+R3	CONDITION Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	

@@ -1,0 +1,29 @@
+T2	Connective 36 38	ため
+T3	Argument 69 76	接触抵抗が増大
+T4	Connective 83 84	、
+T5	Argument 90 99	接続カプラーが溶け
+T6	Connective 99 100	て
+T7	Argument 100 107	導通不良となり
+T8	Connective 107 108	、
+T9	Argument 108 117	前照灯が不灯となる
+R2	RESULT Arg1:T2 Arg2:T12	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 39 49	前照灯の切り替え操作
+T11	Connective 52 53	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+T12	Argument 53 64	当該端子の嵌合部が動く
+R10	RESULT Arg1:T11 Arg2:T12	
+T13	Connective 66 69	により
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T3	
+T17	Argument 84 86	最悪
+T18	Connective 87 89	場合
+R13	CONDITION Arg1:T18 Arg2:T17	
+R14	RESULT Arg1:T18 Arg2:T5	
+T1	Argument 10 35	前照灯操作スイッチ部の配線用端子の表面処理が不適切
+R1	REASON Arg1:T2 Arg2:T1	

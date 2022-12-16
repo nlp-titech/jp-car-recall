@@ -1,0 +1,28 @@
+T1	Argument 0 43	点火装置の点火コイルに接続している一次側配線に一部配線抵抗の少ない材質のものが取り付け
+T2	Connective 46 48	ため
+T3	Argument 66 78	点火コイル内部が熱を持ち
+T4	Connective 78 79	、
+T5	Argument 79 93	一次コイルと二次コイルが短絡
+T6	Connective 93 94	し
+T7	Argument 94 110	二次側に高電圧か゛発生しなくなり
+T8	Connective 110 111	、
+T9	Argument 117 121	始動困難
+T10	Argument 123 133	走行中に原動機が停止
+R1	RESULT Arg1:T8 Arg2:T9	
+R2	RESULT Arg1:T8 Arg2:T10	
+T11	Argument 111 113	最悪
+T12	Connective 114 116	場合
+R3	CONDITION Arg1:T12 Arg2:T11	
+R4	RESULT Arg1:T12 Arg2:T9	
+R5	RESULT Arg1:T12 Arg2:T10	
+R6	REASON Arg1:T8 Arg2:T7	
+R7	REASON Arg1:T2 Arg2:T1	
+R8	RESULT Arg1:T2 Arg2:T3	
+R9	REASON Arg1:T4 Arg2:T3	
+R10	RESULT Arg1:T4 Arg2:T5	
+R11	REASON Arg1:T6 Arg2:T5	
+R12	RESULT Arg1:T6 Arg2:T7	
+T18	Argument 49 64	低速回転等で長時間使用を続ける
+T19	Connective 64 65	と
+R13	CONDITION Arg1:T19 Arg2:T18	
+R14	RESULT Arg1:T19 Arg2:T3	

@@ -1,0 +1,17 @@
+T1	Argument 15 39	排気ガス再循環（ＥＧＲ）パイプの製造工程が不適切
+T2	Connective 40 42	ため
+T3	Argument 43 62	当該パイプフランジの溶接部の強度が不足
+T4	Connective 72 76	そのため
+T5	Argument 88 107	当該パイプフランジの溶接部に亀裂が生じ
+T6	Connective 107 108	、
+T7	Argument 108 115	排気漏れが発生
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T11	Argument 77 84	原動機の振動等
+T12	Connective 84 87	により
+R7	REASON Arg1:T12 Arg2:T11	
+R8	RESULT Arg1:T12 Arg2:T5	

@@ -1,0 +1,36 @@
+T1	Argument 0 30	燃料噴射ポンプの噴射管を固定するゴム付金具の締付構造が不適切
+T2	Connective 31 33	ため
+T3	Argument 34 44	当該金具のゴムが劣化
+T4	Connective 46 47	と
+T5	Argument 47 59	取付ボルト、ナットが弛み
+T6	Connective 59 60	、
+T7	Argument 60 76	当該金具及びボルト、ナットが脱落
+T8	Connective 84 88	そのため
+T9	Argument 89 118	脱落したボルト、ナットがスタータモーターと端子の間に挟まる
+T10	Connective 118 119	と
+T12	Connective 124 125	、
+T13	Argument 125 127	最悪
+T14	Connective 128 130	場合
+T15	Argument 131 142	スタータハーネスが損傷
+T16	Connective 142 143	し
+T17	Argument 143 147	始動不能
+T18	Argument 153 158	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+T11	Argument 119 123	ショート
+R8	REASON Arg1:T10 Arg2:T9	
+R9	RESULT Arg1:T10 Arg2:T11	
+R10	RESULT Arg1:T8 Arg2:T9	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T15	
+R13	CONDITION Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R15	REASON Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T17	
+R17	RESULT Arg1:T12 Arg2:T18	
+R18	RESULT Arg1:T14 Arg2:T18	

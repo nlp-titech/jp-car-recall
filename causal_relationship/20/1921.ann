@@ -1,0 +1,21 @@
+T1	Argument 1 63	オートマチックスラックアジャスタ（主制動装置の回転部分のすき間を自動的に調整する部品）のコントロールアームの固定方法が不適切
+T2	Connective 64 66	ため
+T3	Argument 67 78	当該アームに亀裂が発生
+T4	Connective 86 90	そのため
+T5	Argument 103 111	当該アームが折損
+T6	Argument 143 154	当該車輪の制動力が低下
+T7	Connective 112 113	、
+R2	REASON Arg1:T7 Arg2:T5	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	REASON Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T2 Arg2:T3	
+R6	REASON Arg1:T2 Arg2:T1	
+T8	Argument 113 142	主制動装置の回転部分のすき間を自動的に調整する機能が失われ
+T9	Connective 142 143	、
+R1	RESULT Arg1:T7 Arg2:T8	
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T6	
+T10	Argument 91 101	そのまま使用を続ける
+T11	Connective 101 102	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	

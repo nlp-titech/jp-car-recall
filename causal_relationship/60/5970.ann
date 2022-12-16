@@ -1,0 +1,31 @@
+T1	Argument 0 35	１８インチホイール装着車において、ラグナットの再取り付け等をしていない
+T2	Connective 35 37	場合
+T3	Argument 38 68	ラグナットのコーティングによる緩み防止効果が十分に発揮されず
+T4	Connective 68 69	、
+T5	Argument 69 77	ラグナットが緩み
+T6	Argument 90 102	異音を無視して使用を続け
+T7	Connective 103 105	場合
+T8	Argument 106 118	ステアリングの振れが発生
+T9	Connective 119 120	、
+T10	Argument 120 122	最悪
+T11	Connective 123 125	場合
+T12	Argument 126 140	ホイールスタッドボルトが折れ
+T13	Connective 140 141	、
+T14	Argument 141 148	事故につながる
+R1	CONDITION Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T8	
+R8	REASON Arg1:T9 Arg2:T8	
+R9	RESULT Arg1:T9 Arg2:T12	
+R10	CONDITION Arg1:T11 Arg2:T10	
+R11	RESULT Arg1:T11 Arg2:T12	
+R12	REASON Arg1:T13 Arg2:T12	
+R13	RESULT Arg1:T13 Arg2:T14	
+T15	Argument 77 82	異音が発生
+T16	Connective 76 77	み
+R14	REASON Arg1:T16 Arg2:T5	
+R15	RESULT Arg1:T16 Arg2:T15	
+R7	RESULT Arg1:T16 Arg2:T8	

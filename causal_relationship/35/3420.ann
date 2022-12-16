@@ -1,0 +1,29 @@
+T1	Argument 0 20	ドアミラーにおいて、鏡面部の接着力が不足
+T2	Connective 24 26	ため
+T3	Argument 27 42	使用過程における紫外線の影響等
+T4	Connective 42 45	により
+T5	Argument 46 52	接着力が低下
+T6	Connective 68 72	そのため
+T7	Argument 73 87	そのままの状態で使用を続ける
+T8	Connective 87 88	と
+T9	Argument 89 91	最悪
+T10	Connective 92 94	場合
+T11	Argument 95 101	鏡面部が脱落
+T12	Connective 102 103	て
+T13	Argument 104 121	後方の交通状況等が確認できなくなる
+R1	RESULT Arg1:T12 Arg2:T13	
+R2	REASON Arg1:T12 Arg2:T11	
+R3	RESULT Arg1:T10 Arg2:T11	
+R4	CONDITION Arg1:T10 Arg2:T9	
+R5	RESULT Arg1:T8 Arg2:T11	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T11	
+R9	RESULT Arg1:T4 Arg2:T5	
+R10	REASON Arg1:T4 Arg2:T3	
+R11	RESULT Arg1:T2 Arg2:T5	
+R12	REASON Arg1:T2 Arg2:T1	
+T14	Connective 53 54	て
+T15	Argument 54 60	接着面が剥離
+R8	REASON Arg1:T14 Arg2:T5	
+R13	RESULT Arg1:T14 Arg2:T15	
+R14	REASON Arg1:T6 Arg2:T15	

@@ -1,0 +1,17 @@
+T2	Connective 41 43	ため
+T3	Argument 44 63	基準値を下回る締付けトルクで組付けられ
+T4	Connective 70 74	そのため
+T5	Argument 75 85	そのまま使用を続ける
+T6	Connective 85 86	と
+T7	Argument 87 95	当該ボルトが緩み
+T8	Connective 95 96	、
+T9	Argument 96 107	乗員を拘束できなくなる
+R1	RESULT Arg1:T8 Arg2:T9	
+R2	REASON Arg1:T8 Arg2:T7	
+R3	RESULT Arg1:T6 Arg2:T7	
+R4	CONDITION Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T7	
+R6	REASON Arg1:T4 Arg2:T3	
+R7	RESULT Arg1:T2 Arg2:T3	
+T1	Argument 0 40	３列目左右座席ベルトにおいて、上部アンカー取付けボルトの締付けトルク設定が不適切
+R8	REASON Arg1:T2 Arg2:T1	

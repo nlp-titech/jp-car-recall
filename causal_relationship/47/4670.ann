@@ -1,0 +1,13 @@
+T1	Argument 31 58	ＡＢＳのリターンポンプを作動させるリレーの構造が不適切
+T2	Connective 59 61	ため
+T3	Argument 62 82	ＡＢＳ作動終了後も当該ポンプが回転し続け
+T4	Connective 82 83	、
+T5	Argument 89 104	走行中にブレーキが作動し続ける
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 83 85	最悪
+T7	Connective 86 88	場合
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T5	

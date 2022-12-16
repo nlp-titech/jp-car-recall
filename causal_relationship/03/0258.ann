@@ -1,0 +1,21 @@
+T1	Argument 0 65	前輪ブレーキホースのうち、前輪のブレーキキャリパから懸架装置のアッパアームのブラケットまでの間に使用されているホースの耐久性が不足
+T2	Argument 86 97	当該ホースに亀裂が発生
+T3	Argument 105 113	ブレーキ液が漏れ
+T4	Argument 113 119	制動力が低下
+T5	Connective 112 113	れ
+T6	Connective 98 99	、
+T7	Connective 69 70	、
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T5 Arg2:T3	
+R6	RESULT Arg1:T5 Arg2:T4	
+T8	Argument 70 84	このままの状態で使用を続ける
+T9	Connective 84 85	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T2	
+T10	Argument 99 101	最悪
+T11	Connective 102 104	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	

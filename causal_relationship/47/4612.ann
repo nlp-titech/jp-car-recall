@@ -1,0 +1,17 @@
+T1	Argument 16 49	遮音材と原動機の回転数を制御するスロットルのドラム部の隙間が不適切
+T2	Connective 55 56	、
+T3	Argument 78 94	遮音材に当該ドラム部が引っかかり
+T4	Connective 94 95	、
+T5	Argument 95 110	原動機の回転数が下がらなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 56 70	そのままの状態で使用を続ける
+T7	Connective 70 71	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 72 74	最悪
+T9	Connective 75 77	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	

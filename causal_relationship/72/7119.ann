@@ -1,0 +1,17 @@
+T1	Argument 0 31	ハンドル部のエアバッグ用配線コネクタ－のガイドステ－に製造不良
+T2	Connective 37 39	ため
+T3	Argument 40 49	ガイドステ－が外れ
+T4	Connective 49 50	て
+T5	Argument 50 60	コネクタ－が接触不良
+T6	Connective 60 63	となり
+T7	Argument 70 81	エアバッグが作動しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 64 68	前面衝突
+T9	Connective 68 69	時
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T7	

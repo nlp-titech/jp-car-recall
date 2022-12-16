@@ -1,0 +1,33 @@
+T1	Argument 0 45	１２段式自動変速機搭載車において、変速を行う装置（シフトユニット）のシリンダの加工が不適切
+T2	Connective 46 48	ため
+T3	Argument 49 79	シフト位置検知用センサと連動するレバーシャフト部に異物が入り
+T4	Connective 79 80	、
+T5	Argument 84 107	レバーシャフトのシャフト部へのグリス塗布が不足
+T6	Connective 111 113	ため
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	REASON Arg1:T6 Arg2:T5	
+T7	Argument 114 129	レバーシャフトが摺動不良となり
+T8	Connective 129 130	、
+T9	Argument 130 162	レバーシャフトのレバー部とシャフト部を結合しているかしめ部が緩む
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Connective 168 172	そのため
+R9	REASON Arg1:T10 Arg2:T9	
+T11	Argument 173 193	当該センサが正常なシフト位置を検知できず
+T12	Connective 200 201	、
+R10	RESULT Arg1:T10 Arg2:T11	
+T13	Argument 201 203	最悪
+R11	REASON Arg1:T12 Arg2:T17	
+R12	RESULT Arg1:T12 Arg2:T15	
+T14	Connective 204 206	場合
+T15	Argument 207 214	走行不能となる
+R13	CONDITION Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+T16	Connective 192 193	ず
+T17	Argument 193 200	変速不能となり
+R15	REASON Arg1:T16 Arg2:T11	
+R16	RESULT Arg1:T16 Arg2:T17	

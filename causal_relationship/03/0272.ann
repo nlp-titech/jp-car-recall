@@ -1,0 +1,17 @@
+T1	Argument 0 52	スペアタイヤを固定するタイヤハンガーにおいて、当該ハンガーを車体に吊るして固定するホルダーの形状が不適切
+T3	Argument 88 104	車体後部の灯火類が点灯しなくなる
+T4	Connective 81 82	、
+T5	Connective 53 55	ため
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T10	
+R3	REASON Arg1:T4 Arg2:T10	
+R4	RESULT Arg1:T4 Arg2:T3	
+T6	Argument 82 84	最悪
+T7	Connective 85 87	場合
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 56 64	スペアタイヤ格納
+T9	Connective 64 66	時に
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T10	
+T10	Argument 66 80	電気配線がホルダーにより損傷

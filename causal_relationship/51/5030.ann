@@ -1,0 +1,25 @@
+T2	Connective 37 39	ため
+T3	Argument 50 58	当該ボルトが緩む
+T4	Connective 64 68	そのため
+T5	Argument 69 81	ジョイント部にガタが生じ
+T6	Argument 88 101	ステアリングシャフトが外れ
+T7	Connective 101 102	て
+T8	Argument 102 115	かじ取り操作が出来なくなる
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T9	Connective 81 82	、
+R5	REASON Arg1:T9 Arg2:T5	
+R6	RESULT Arg1:T9 Arg2:T6	
+R7	REASON Arg1:T7 Arg2:T6	
+R8	RESULT Arg1:T7 Arg2:T8	
+T10	Argument 82 84	最悪
+T11	Connective 85 87	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T6	
+T12	Argument 40 47	走行時の振動等
+T13	Connective 47 50	により
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T3	
+T1	Argument 0 36	ステアリングシャフトのユニバーサルジョイント取付ボルトの締め付けが不十分
+R1	REASON Arg1:T2 Arg2:T1	

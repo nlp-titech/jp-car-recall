@@ -1,0 +1,29 @@
+T1	Argument 0 40	冷凍装置を備える車両において、冷媒配管を燃料パイプを固定するボルトを利用して固定
+T2	Argument 45 57	当該ボルトのナットが緩ん
+T3	Argument 58 72	燃料パイプが固定されなくなっ
+T4	Argument 73 81	当該ボルトと干渉
+T5	Argument 108 116	燃料パイプが損傷
+T6	Argument 118 124	燃料が漏れる
+T7	Connective 42 44	ため
+T8	Connective 57 58	で
+T9	Connective 72 73	て
+T10	Connective 82 83	、
+T11	Connective 117 118	て
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T5	
+R9	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	
+T18	Argument 99 105	原動機の振動
+T19	Connective 105 108	により
+R11	REASON Arg1:T19 Arg2:T18	
+R12	RESULT Arg1:T19 Arg2:T5	
+T12	Argument 83 97	そのままの状態で使用を続ける
+T13	Connective 97 98	と
+R13	CONDITION Arg1:T13 Arg2:T12	
+R14	RESULT Arg1:T13 Arg2:T5	

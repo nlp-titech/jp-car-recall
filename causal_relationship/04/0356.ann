@@ -1,0 +1,9 @@
+T1	Argument 0 42	制動装置において、ブレーキ倍力装置のリレーバルブ部エア配管の組付けが正規の配管と相違
+T2	Argument 49 63	当該ブレーキ配管の一部が損傷
+T3	Argument 69 86	他の１系統についても制動不能となる
+T4	Connective 46 48	ため
+T5	Connective 65 67	場合
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T3	
+R3	CONDITION Arg1:T5 Arg2:T2	

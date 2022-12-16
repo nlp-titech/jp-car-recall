@@ -1,0 +1,33 @@
+T1	Argument 0 33	変速機に装着されている流体式補助制動装置の冷却ホースの耐久性が不足
+T2	Argument 40 47	走行時の振動等
+T3	Argument 50 55	亀裂が発生
+T4	Argument 60 67	ホースが抜ける
+T5	Argument 94 107	エンジン冷却水が大量に流出
+T6	Argument 115 123	エンジンが焼付き
+T7	Argument 124 131	走行不能となる
+T8	Connective 123 124	、
+T9	Connective 108 109	、
+T10	Connective 73 77	そのため
+R1	REASON Arg1:T9 Arg2:T5	
+R2	RESULT Arg1:T9 Arg2:T6	
+R3	REASON Arg1:T8 Arg2:T6	
+R4	RESULT Arg1:T8 Arg2:T7	
+R5	REASON Arg1:T10 Arg2:T4	
+R6	RESULT Arg1:T10 Arg2:T5	
+T12	Connective 47 50	により
+T13	Connective 37 39	ため
+R7	REASON Arg1:T13 Arg2:T1	
+R8	RESULT Arg1:T13 Arg2:T3	
+R9	REASON Arg1:T12 Arg2:T2	
+R10	RESULT Arg1:T12 Arg2:T3	
+R11	RESULT Arg1:T13 Arg2:T4	
+R13	REASON Arg1:T10 Arg2:T3	
+R12	RESULT Arg1:T12 Arg2:T4	
+T11	Argument 78 92	そのままの状態で使用を続ける
+T14	Connective 92 93	と
+R14	CONDITION Arg1:T14 Arg2:T11	
+R15	RESULT Arg1:T14 Arg2:T5	
+T15	Argument 109 111	最悪
+T16	Connective 112 114	場合
+R16	CONDITION Arg1:T16 Arg2:T15	
+R17	RESULT Arg1:T16 Arg2:T6	

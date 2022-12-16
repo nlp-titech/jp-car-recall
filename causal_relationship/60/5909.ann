@@ -1,0 +1,33 @@
+T1	Argument 0 44	リアブレーキキャリパマウンティングブラケットの固定ボルトにおいて、締め付けトルクが不十分
+T2	Connective 51 55	そのため
+T3	Argument 64 75	車両後方から異音が発生
+T4	Argument 77 89	異音を無視して走行を続け
+T5	Connective 90 92	場合
+T6	Argument 94 102	当該ボルトが脱落
+T7	Argument 103 114	ブレーキキャリパが外れ
+T8	Connective 114 115	て
+T9	Connective 102 103	し
+T10	Argument 115 121	制動力が低下
+T11	Argument 126 146	脱落したブレーキキャリパがホイールを損傷
+T12	Connective 148 149	、
+T13	Argument 149 161	タイヤの空気が急激に抜け
+T14	Connective 161 162	て
+T15	Argument 163 170	走行不能に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T6	
+R4	CONDITION Arg1:T5 Arg2:T4	
+R5	RESULT Arg1:T5 Arg2:T6	
+R6	REASON Arg1:T9 Arg2:T6	
+R7	RESULT Arg1:T9 Arg2:T7	
+R8	REASON Arg1:T8 Arg2:T7	
+R9	RESULT Arg1:T8 Arg2:T10	
+R10	RESULT Arg1:T8 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+T16	Argument 56 62	走行中や制動
+T17	Connective 62 63	時
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T3	

@@ -1,0 +1,21 @@
+T1	Argument 0 45	油圧式パワーステアリングギヤボックスをサブフレームに組み付けるボルトの締め付けトルクが不足
+T2	Connective 49 51	ため
+T3	Argument 52 72	ステアリングの据え切り操作を繰り返し行う
+T4	Connective 72 73	と
+T5	Argument 73 81	当該ボルトが弛む
+T6	Connective 87 91	そのため
+T7	Argument 92 102	そのまま使用を続ける
+T8	Connective 102 103	と
+T9	Argument 104 112	当該ボルトが折損
+T10	Connective 113 114	、
+T11	Argument 114 126	確実な操舵ができなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	

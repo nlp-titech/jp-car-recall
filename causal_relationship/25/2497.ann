@@ -1,0 +1,13 @@
+T1	Argument 0 73	かじ取り装置のステアリングシャフトと油圧ステアリングポンプの連結部において、連結部軸とベアリングを固定するリテーニングリングが取り付けられていない
+T2	Connective 79 83	そのため
+T3	Argument 97 106	当該連結部軸が外れ
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 106 107	、
+T5	Argument 107 120	かじ取り操作ができなくなる
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 84 93	ハンドル位置の調整
+T7	Connective 94 95	際
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	

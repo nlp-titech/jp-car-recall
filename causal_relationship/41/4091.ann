@@ -1,0 +1,35 @@
+T2	Argument 82 99	内部のコイル線との熱膨張差が大きく
+T3	Argument 100 118	コイル線に繰り返し過大な応力がかかる
+T4	Argument 129 139	そのまま使用を続ける
+T5	Argument 141 148	コイル線が断線
+T6	Argument 150 160	エンジン警告灯が点灯
+T7	Argument 167 174	フェールセーフ
+T8	Argument 177 185	ＥＧＲ制御が停止
+T9	Argument 187 189	最悪
+T10	Argument 193 205	窒素酸化物の排出量が増加
+T11	Connective 79 81	ため
+T12	Connective 99 100	、
+T13	Connective 124 128	そのため
+T14	Connective 139 140	と
+T15	Connective 149 150	、
+T16	Connective 174 177	により
+T17	Connective 186 187	、
+T18	Connective 190 192	場合
+R2	RESULT Arg1:T11 Arg2:T2	
+R3	REASON Arg1:T12 Arg2:T2	
+R4	RESULT Arg1:T12 Arg2:T3	
+R5	REASON Arg1:T13 Arg2:T3	
+R6	RESULT Arg1:T13 Arg2:T5	
+R7	CONDITION Arg1:T14 Arg2:T4	
+R8	RESULT Arg1:T14 Arg2:T5	
+R9	REASON Arg1:T15 Arg2:T5	
+R10	RESULT Arg1:T15 Arg2:T6	
+R11	RESULT Arg1:T15 Arg2:T8	
+R12	REASON Arg1:T16 Arg2:T7	
+R13	RESULT Arg1:T16 Arg2:T8	
+R14	REASON Arg1:T17 Arg2:T8	
+R15	RESULT Arg1:T17 Arg2:T10	
+R16	CONDITION Arg1:T18 Arg2:T9	
+R17	RESULT Arg1:T18 Arg2:T10	
+T1	Argument 18 78	（ＥＧＲ）クーラーバイパスバルブを制御するソレノイドバルブにおいて、当該バルブの使用環境に対する外装樹脂材の選定が不適切
+R1	REASON Arg1:T11 Arg2:T1	

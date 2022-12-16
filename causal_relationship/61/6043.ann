@@ -1,0 +1,5 @@
+T1	Argument 34 70	ブレーキ系統に使用しているエアチューブ（プラスチック配管）の直径が不適切
+T2	Argument 74 124	保安基準第１２条の第１項（別添１０「トラック及びバスの制動装置の技術基準」）に定める基準に適合しない
+T3	Connective 71 73	ため
+R1	REASON Arg1:T3 Arg2:T1	
+R2	RESULT Arg1:T3 Arg2:T2	

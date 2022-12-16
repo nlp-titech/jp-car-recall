@@ -1,0 +1,9 @@
+T1	Argument 0 30	配光可変型前照灯装着車において、前照灯の光軸調整方法が不適切
+T2	Argument 34 46	光軸が左方向にずれて調整
+T3	Argument 62 81	照射方向が保安基準第３２条に適合しない
+T4	Connective 31 33	ため
+T5	Connective 57 61	そのため
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	

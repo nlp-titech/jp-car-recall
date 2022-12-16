@@ -1,0 +1,21 @@
+T1	Argument 0 21	燃料噴射パイプの固定クリップの構造が不適切
+T2	Argument 25 32	エンジン振動等
+T3	Argument 35 45	当該クリップが外れる
+T4	Argument 68 98	燃料噴射パイプまたはフローダンパ（流量を制御する部品）が折損
+T5	Argument 100 106	燃料が漏れる
+T6	Connective 22 24	ため
+T7	Connective 51 55	そのため
+T8	Connective 99 100	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+T9	Connective 32 35	により
+R3	REASON Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+R7	REASON Arg1:T8 Arg2:T4	
+R8	RESULT Arg1:T8 Arg2:T5	
+T10	Argument 56 66	そのまま使用を続ける
+T11	Connective 66 67	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T4	

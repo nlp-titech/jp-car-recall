@@ -1,0 +1,25 @@
+T1	Argument 0 28	後軸エアサスペンションのスタビライザのアームの強度が不足
+T2	Connective 32 34	ため
+T3	Argument 35 65	車両重心が高い状態、または過積載の状態でローリングを繰り返す
+T4	Connective 65 66	と
+T5	Argument 67 78	当該アームに亀裂が発生
+T6	Connective 86 90	そのため
+T7	Argument 109 117	当該アームが折損
+T8	Connective 118 119	、
+T9	Argument 119 128	走行が不安定になる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T14	Argument 91 101	そのまま使用を続ける
+T15	Connective 101 102	と
+T16	Argument 103 105	最悪
+T17	Connective 106 108	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T7	
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T7	

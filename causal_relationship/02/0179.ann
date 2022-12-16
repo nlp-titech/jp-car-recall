@@ -1,0 +1,17 @@
+T1	Argument 0 54	天然ガスを燃料とする自動車において、天然ガス容器の開閉バルブ及びプラグのシール部にシーリングの組付けが不適切
+T2	Argument 76 84	シール性能が低下
+T3	Argument 92 100	天然ガスが洩れる
+T4	Connective 60 61	、
+T5	Connective 85 86	、
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	
+T6	Argument 61 75	そのままの状態で使用を続ける
+T7	Connective 75 76	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T2	
+T8	Argument 86 88	最悪
+T9	Connective 89 91	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	

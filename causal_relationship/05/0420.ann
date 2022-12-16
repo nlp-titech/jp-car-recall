@@ -1,0 +1,17 @@
+T1	Argument 0 49	原動機付自転車の方向指示器において、方向指示器本体と電球を保持するソケットとの接合部の溶接が不適切
+T2	Argument 53 60	走行中の振動等
+T3	Argument 64 73	当該接合部が剥がれ
+T4	Argument 74 81	導通不良となる
+T5	Argument 87 100	方向指示器が作動しなくなる
+T6	Connective 50 52	ため
+T7	Connective 60 63	により
+T8	Connective 73 74	て
+T9	Connective 86 87	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T3	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	

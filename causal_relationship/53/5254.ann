@@ -1,0 +1,37 @@
+T1	Argument 4 47	可変バルブタイミングシステム（ＶＡＮＯＳ）において、高圧油圧配管のホースの材質が不適切
+T2	Connective 48 50	ため
+T3	Argument 57 68	当該ホースに亀裂が生じ
+T4	Connective 68 69	、
+T5	Argument 69 76	潤滑油が漏れる
+T6	Connective 82 86	そのため
+T7	Argument 99 104	潤滑油不足
+T8	Connective 104 107	により
+T9	Argument 107 126	可変バルブタイミングシステムが作動不良
+T10	Connective 129 130	、
+T11	Argument 136 146	原動機の潤滑油が減少
+T12	Connective 147 148	、
+T13	Argument 148 154	原動機が損傷
+R1	RESULT Arg1:T2 Arg2:T3	
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	REASON Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	REASON Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	REASON Arg1:T10 Arg2:T9	
+R9	RESULT Arg1:T10 Arg2:T11	
+R10	REASON Arg1:T12 Arg2:T11	
+R11	RESULT Arg1:T12 Arg2:T13	
+T14	Argument 51 53	油圧
+T15	Connective 53 57	によって
+R12	REASON Arg1:T15 Arg2:T14	
+R13	RESULT Arg1:T15 Arg2:T3	
+T16	Argument 87 97	そのまま使用を続ける
+T17	Connective 97 98	と
+R14	CONDITION Arg1:T17 Arg2:T16	
+R15	RESULT Arg1:T17 Arg2:T7	
+T18	Argument 130 132	最悪
+T19	Connective 133 135	場合
+R16	CONDITION Arg1:T19 Arg2:T18	
+R17	RESULT Arg1:T19 Arg2:T11	
+R18	REASON Arg1:T2 Arg2:T1	

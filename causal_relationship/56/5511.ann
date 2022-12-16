@@ -1,0 +1,17 @@
+T1	Argument 0 15	燃料フィルタの防錆処理が不適切
+T2	Argument 19 26	道路凍結防止剤
+T3	Argument 29 38	当該フィルタが腐食
+T4	Argument 51 61	そのまま使用を続ける
+T5	Argument 62 67	燃料が漏れ
+T6	Connective 16 18	ため
+T7	Connective 26 29	により
+T8	Connective 46 50	そのため
+T9	Connective 61 62	と
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T3	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T5	
+R7	CONDITION Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	

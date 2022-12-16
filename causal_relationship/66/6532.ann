@@ -1,0 +1,17 @@
+T1	Argument 0 40	タイヤ空気圧監視装置の制御モジュールにおいて、当該モジュールのプログラムが不適切
+T2	Connective 41 43	ため
+T3	Argument 44 62	タイヤ空気圧の異常を検知する値が低い
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 68 72	そのため
+T5	Argument 87 93	警告灯が点灯
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 73 86	設計値より低いタイヤ空気圧
+T7	Connective 86 87	で
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T5	
+T8	Connective 94 95	、
+T9	Argument 95 120	協定規則第６４号第２改訂版で定める要件に適合しない
+R7	REASON Arg1:T8 Arg2:T5	
+R8	RESULT Arg1:T8 Arg2:T9	

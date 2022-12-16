@@ -1,0 +1,25 @@
+T1	Argument 0 40	緩衝装置（トランスバースリンク）のボールジョイント部ブラケットの加工形状に不適切
+T3	Argument 47 66	走行時に繰り返し路面からの入力を受ける
+T4	Argument 68 81	当該ブラケットに亀裂が発生
+T5	Argument 94 104	そのまま使用を続ける
+T6	Argument 106 116	当該ブラケットが切損
+T7	Argument 118 132	タイヤがホイールハウスと干渉
+T8	Argument 134 143	走行安定性を損なう
+T9	Connective 46 47	、
+T11	Connective 66 67	と
+T12	Connective 89 93	そのため
+T13	Connective 104 105	と
+T14	Connective 117 118	、
+T15	Connective 133 134	、
+R1	REASON Arg1:T9 Arg2:T1	
+R5	CONDITION Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+R7	REASON Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T6	
+R9	CONDITION Arg1:T13 Arg2:T5	
+R10	RESULT Arg1:T13 Arg2:T6	
+R11	REASON Arg1:T14 Arg2:T6	
+R12	RESULT Arg1:T14 Arg2:T7	
+R13	REASON Arg1:T15 Arg2:T7	
+R14	RESULT Arg1:T15 Arg2:T8	
+R2	RESULT Arg1:T9 Arg2:T4	

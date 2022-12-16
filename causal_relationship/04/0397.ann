@@ -1,0 +1,25 @@
+T1	Argument 0 45	制動装置に作動用の圧縮空気を供給するアルミ製空気タンクにおいて、当該タンクの熱処理が不適切
+T2	Argument 49 57	表面に亀裂が発生
+T3	Argument 81 90	亀裂が内部まで進行
+T4	Argument 93 101	圧縮空気が抜ける
+T5	Argument 122 128	制動力が不足
+T6	Connective 46 48	ため
+T7	Connective 64 65	、
+T8	Connective 91 92	て
+T9	Connective 106 107	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 65 79	そのままの状態で使用を続ける
+T11	Connective 79 80	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	
+T12	Argument 107 109	最悪
+T13	Connective 110 112	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T5	

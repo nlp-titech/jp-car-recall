@@ -1,0 +1,25 @@
+T1	Argument 0 63	二輪車のサイドスタンドにおいて、跳ね上げた際に当該スタンドのリターンスプリングを固定しているピンが指定された材質となっていない
+T2	Connective 63 65	ため
+T3	Argument 66 71	強度が不足
+T4	Connective 81 85	そのため
+T6	Connective 100 101	と
+T7	Argument 102 111	走行中にピンが破損
+T8	Connective 112 113	て
+T9	Argument 113 123	サイドスタンドが下り
+T10	Connective 123 124	、
+T11	Argument 124 126	最悪
+T12	Connective 127 129	場合
+T13	Argument 130 139	走行安定性が損なわ
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 86 100	サイドスタンド操作を繰り返す
+R4	CONDITION Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	RESULT Arg1:T4 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	CONDITION Arg1:T12 Arg2:T11	
+R11	RESULT Arg1:T12 Arg2:T13	
+R12	RESULT Arg1:T10 Arg2:T13	

@@ -1,0 +1,29 @@
+T1	Argument 0 24	ＣＶＴ（無段変速機）の油圧制御プログラムが不適切
+T2	Connective 25 27	ため
+T3	Argument 28 57	シフト操作とほぼ同時にアクセルを踏み込む急な発進操作を行っ
+T4	Connective 58 60	場合
+T5	Argument 74 101	高回転状態からイグニッションスイッチを切る操作を行った
+T6	Connective 101 103	場合
+T7	Argument 104 115	ＣＶＴ内に高油圧が発生
+T8	Connective 116 117	、
+T9	Argument 117 138	セカンダリシャフトに想定以上の負荷が加わる
+T10	Connective 144 148	そのため
+T11	Argument 149 160	そのような操作を繰返す
+T12	Connective 160 161	と
+T13	Argument 161 170	当該シャフトが破損
+T14	Connective 171 172	て
+T15	Argument 173 180	走行不能となる
+R1	RESULT Arg1:T14 Arg2:T15	
+R2	REASON Arg1:T14 Arg2:T13	
+R3	RESULT Arg1:T12 Arg2:T13	
+R4	CONDITION Arg1:T12 Arg2:T11	
+R5	RESULT Arg1:T10 Arg2:T13	
+R6	REASON Arg1:T10 Arg2:T9	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	REASON Arg1:T8 Arg2:T7	
+R9	RESULT Arg1:T6 Arg2:T7	
+R10	CONDITION Arg1:T6 Arg2:T5	
+R12	CONDITION Arg1:T4 Arg2:T3	
+R14	REASON Arg1:T2 Arg2:T1	
+R11	RESULT Arg1:T2 Arg2:T7	
+R13	RESULT Arg1:T4 Arg2:T7	

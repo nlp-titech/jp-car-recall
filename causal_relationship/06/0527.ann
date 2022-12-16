@@ -1,0 +1,23 @@
+T1	Argument 0 31	電気装置において、運転台を車台へ組み付ける際の作業方法が不適切
+T2	Argument 35 62	運転台下部の電気配線が油圧配管用ブロックと干渉して損傷
+T3	Argument 80 87	当該配線が断線
+T4	Argument 90 95	回路が短絡
+T5	Argument 97 109	灯火器類が作動しなくなる
+T6	Argument 111 129	原動機が停止して再始動ができなくなる
+T8	Connective 32 34	ため
+T9	Connective 69 70	、
+T10	Connective 96 97	、
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T2	
+R3	REASON Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T3	
+R5	RESULT Arg1:T9 Arg2:T4	
+R6	REASON Arg1:T10 Arg2:T4	
+R7	RESULT Arg1:T10 Arg2:T5	
+T7	Connective 77 80	により
+T12	Argument 70 77	走行中の振動等
+R10	REASON Arg1:T7 Arg2:T12	
+R11	RESULT Arg1:T7 Arg2:T3	
+R12	RESULT Arg1:T7 Arg2:T4	
+R13	REASON Arg1:T10 Arg2:T3	
+R8	RESULT Arg1:T10 Arg2:T6	

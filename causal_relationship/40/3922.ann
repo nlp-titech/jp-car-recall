@@ -1,0 +1,21 @@
+T1	Argument 9 30	バッテリとスタータ間のケーブルの長さが短い
+T2	Argument 33 40	エンジンの振動
+T3	Argument 44 67	スタータ側のケーブル端子部に過大な負荷がかかっ
+T4	Argument 81 95	そのままの状態で使用を続ける
+T5	Argument 97 112	当該ケーブルが端子部近傍で破断
+T6	Argument 114 123	再始動出来なくなる
+T7	Connective 30 32	ため
+T8	Connective 40 43	により
+T9	Connective 76 80	そのため
+T10	Connective 95 96	と
+T11	Connective 113 114	て
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T3	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T5	
+R7	CONDITION Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T5	
+R9	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	

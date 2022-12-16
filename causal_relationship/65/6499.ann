@@ -1,0 +1,17 @@
+T1	Argument 0 43	助手席の着座検知システム用コントロールユニットにおいて、当該ユニットの組付作業が不適切
+T2	Connective 44 46	ため
+T3	Argument 47 66	圧力ホースが正しく組み付けられていない
+R1	RESULT Arg1:T2 Arg2:T3	
+R2	REASON Arg1:T2 Arg2:T1	
+T4	Connective 72 76	そのため
+R4	REASON Arg1:T4 Arg2:T3	
+T6	Connective 115 116	、
+T7	Argument 116 128	乗員に過度の傷害を与える
+R5	RESULT Arg1:T6 Arg2:T7	
+T5	Argument 77 93	着座した乗員を正しく認識できない
+T8	Connective 95 97	から
+R3	REASON Arg1:T8 Arg2:T5	
+T9	Argument 98 115	衝突時にエアバッグが正常に作動せず
+R6	RESULT Arg1:T8 Arg2:T9	
+R7	RESULT Arg1:T4 Arg2:T5	
+R8	REASON Arg1:T6 Arg2:T9	

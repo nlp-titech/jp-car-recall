@@ -1,0 +1,9 @@
+T1	Argument 0 86	左後部ドアのチャイルドロック装置（乗車中の子供が誤って後部座席ドアを開けることを防止する装置）において、当該ロック装置とドアロックを解除するレバーとの間の隙間が基準値を外れ
+T2	Connective 95 99	そのため
+T3	Argument 139 144	ドアが開く
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 100 136	左後部ドアのチャイルドロックが施錠されていても、車内のドアハンドルを操作
+T5	Connective 138 139	と
+R3	CONDITION Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T3	

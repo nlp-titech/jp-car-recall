@@ -1,0 +1,17 @@
+T1	Argument 9 50	コントロールモジュール（セントラルエレクトロニックモジュール）のプログラムが不適切
+T2	Connective 51 53	ため
+T3	Argument 54 61	外気温度が低い
+T4	Connective 61 64	環境で
+T5	Argument 65 82	エンジン始動直後に方向指示器を操作
+T6	Connective 84 85	と
+T7	Argument 86 91	故障と診断
+T8	Connective 99 103	そのため
+T9	Argument 104 145	方向指示器が故障していないにもかかわらず、点滅回数が保安基準第４１条の規定を超える
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T7	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	

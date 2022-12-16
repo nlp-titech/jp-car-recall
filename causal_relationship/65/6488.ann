@@ -1,0 +1,28 @@
+T1	Argument 0 17	エンジンの点火コイルの製造が不適切
+T2	Connective 18 20	ため
+T3	Argument 21 51	点火制御をしている内部基板のはんだ付けが正しく行われていない
+T4	Connective 57 61	そのため
+T5	Argument 62 67	走行振動等
+T6	Connective 67 70	により
+T7	Argument 70 77	はんだが剥がれ
+T8	Connective 77 78	、
+T10	Connective 114 115	、
+T11	Argument 115 117	最悪
+T12	Connective 118 120	場合
+T13	Argument 121 133	排出ガスが基準値を超える
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+T9	Argument 78 92	点火制御が出来ず警告灯が点灯
+R8	RESULT Arg1:T8 Arg2:T9	
+T14	Argument 99 113	該当するシリンダの燃焼を休止
+R9	REASON Arg1:T10 Arg2:T14	
+R13	REASON Arg1:T10 Arg2:T9	
+R14	RESULT Arg1:T8 Arg2:T14	

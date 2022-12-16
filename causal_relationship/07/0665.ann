@@ -1,0 +1,25 @@
+T1	Argument 0 27	リリーフバルブが取付けられている座面高さの加工が不適切
+T2	Argument 31 54	リリーフバルブとクランクケースの隙間が狭くなっ
+T4	Argument 68 102	冷機時のエンジン始動直後に、リリーフバルブ内のオイルが抜けにくくなり
+T5	Argument 103 118	リリーフバルブが作動不良を生じ
+T6	Argument 119 130	一時的に高い油圧が発生
+T7	Argument 132 142	オイルフィルタが変形
+T8	Argument 144 159	オーリング部からオイルが漏れる
+T9	Connective 28 30	ため
+T10	Connective 63 67	そのため
+T12	Connective 102 103	、
+T13	Connective 118 119	、
+T14	Connective 131 132	て
+T15	Connective 143 144	、
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T2	
+R3	REASON Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T4	
+R7	REASON Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T5	
+R9	REASON Arg1:T13 Arg2:T5	
+R10	RESULT Arg1:T13 Arg2:T6	
+R11	REASON Arg1:T14 Arg2:T6	
+R12	RESULT Arg1:T14 Arg2:T7	
+R13	REASON Arg1:T15 Arg2:T7	
+R14	RESULT Arg1:T15 Arg2:T8	

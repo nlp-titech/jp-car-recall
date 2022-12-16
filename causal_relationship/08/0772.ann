@@ -1,0 +1,30 @@
+T1	Argument 0 25	フロントダブルタイヤのホイールナットの締付力が不足
+T2	Connective 34 35	、
+T3	Argument 35 49	走行中にホイールナットが緩む
+T4	Connective 55 59	そのため
+T5	Argument 78 88	ホイールナットが脱落
+T6	Argument 92 100	ハブボルトが折損
+T7	Connective 101 102	、
+T8	Argument 102 108	タイヤが脱落
+T9	Connective 109 110	て
+T10	Argument 110 117	走行不能に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T6	
+R6	REASON Arg1:T7 Arg2:T5	
+R7	REASON Arg1:T7 Arg2:T6	
+R8	RESULT Arg1:T7 Arg2:T8	
+R9	REASON Arg1:T9 Arg2:T8	
+R10	RESULT Arg1:T9 Arg2:T10	
+T11	Argument 60 70	そのまま使用を続ける
+T17	Connective 70 71	と
+T18	Argument 72 74	最悪
+T19	Connective 75 77	場合
+R11	CONDITION Arg1:T17 Arg2:T11	
+R12	CONDITION Arg1:T19 Arg2:T18	
+R13	RESULT Arg1:T19 Arg2:T5	
+R14	RESULT Arg1:T17 Arg2:T5	
+R15	RESULT Arg1:T19 Arg2:T6	
+R16	RESULT Arg1:T17 Arg2:T6	

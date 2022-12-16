@@ -1,0 +1,10 @@
+T1	Argument 0 36	幼児専用車の非常口において、ドアロック装置に不適切な構造のものを取り付け
+T2	Argument 64 83	かぎを用いないと、非常口が開けられない
+T3	Connective 42 44	ため
+R1	REASON Arg1:T3 Arg2:T1	
+R2	RESULT Arg1:T3 Arg2:T2	
+T4	Argument 45 51	非常口を施錠
+T5	Connective 55 57	場合
+R3	CONDITION Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T2	
+#1	AnnotatorNotes T2	「非常の際に」は条件といえないためargumentから外した

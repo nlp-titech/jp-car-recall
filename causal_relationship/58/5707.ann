@@ -1,0 +1,27 @@
+T1	Argument 0 29	駆動チェーン上部のガイドローラー固定ブラケットの強度が不足
+T2	Connective 33 35	ため
+T3	Argument 36 47	車体が最大に沈み込んだ
+T4	Connective 47 49	場合
+T5	Argument 50 60	当該ブラケットが破損
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 68 72	そのため
+T7	Argument 73 94	破損したブラケットおよび上部ローラーが脱落
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Connective 95 96	、
+T9	Argument 102 132	破損したブラケットの破片がチェーンとスプロケットの間に挟まり
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 96 98	最悪
+T11	Connective 99 101	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T9	
+T12	Argument 133 144	リアスプロケットが損傷
+T13	Connective 132 133	、
+R11	REASON Arg1:T13 Arg2:T9	
+R12	RESULT Arg1:T13 Arg2:T12	
+T14	Argument 149 159	リアホイールがロック
+R13	RESULT Arg1:T13 Arg2:T14	

@@ -1,0 +1,21 @@
+T1	Argument 8 28	変速装置（シフタードラム）の構造が不適切
+T2	Connective 29 31	ため
+T3	Argument 32 60	中立位置（ニュートラル）にした際にその状態を保持できない
+T4	Connective 66 70	そのため
+T5	Argument 90 106	中立位置から１速または２速に変速
+T6	Connective 108 109	、
+T7	Argument 109 116	車両が動き出す
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 75 83	エンジンの振動等
+T9	Connective 83 86	により
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 71 74	停車中
+T11	Connective 74 75	、
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	

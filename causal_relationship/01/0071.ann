@@ -1,0 +1,17 @@
+T1	Argument 0 50	かじ取りハンドル下部にある方向指示器等の操作スイッチユニットに正規の位置からずれた状態で取り付けられ
+T2	Argument 59 87	ハンドル操作時に当該操作スイッチユニットの電気配線が外れ
+T3	Argument 94 97	短絡し
+T4	Argument 98 103	火災に至る
+T5	Connective 56 58	ため
+T6	Connective 87 88	、
+T7	Connective 97 98	て
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T10	Argument 88 90	最悪
+T11	Connective 91 93	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	

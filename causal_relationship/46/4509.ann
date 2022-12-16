@@ -1,0 +1,13 @@
+T1	Argument 17 67	補機駆動用ベルトのオートテンショナ（張力を維持する部品）に組み込まれている渦巻きバネ部の構造が不適切
+T2	Connective 68 70	ため
+T3	Argument 71 82	オートテンショナが破損
+T4	Connective 83 84	て
+T5	Argument 91 97	原動機が停止
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 85 87	最悪
+T7	Connective 88 90	場合
+R6	RESULT Arg1:T7 Arg2:T5	
+R9	CONDITION Arg1:T7 Arg2:T6	

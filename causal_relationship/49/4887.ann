@@ -1,0 +1,9 @@
+T1	Argument 20 54	サンバイザサポート（サンバイザを車体に取り付ける部品）の形状が不適切
+T2	Connective 55 57	ため
+T3	Argument 63 76	乗員の頭部等に傷害を与える
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 58 62	衝突時等
+T5	Connective 62 63	に
+R3	CONDITION Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T3	

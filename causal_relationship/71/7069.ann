@@ -1,0 +1,32 @@
+T1	Argument 0 26	スロットルケーブルにおいて、防水ブーツの製造が不適切
+T2	Connective 27 29	ため
+T3	Argument 30 43	設計指示と異なる材料で製造
+T4	Connective 51 55	そのため
+T5	Argument 56 65	ブーツが早期に劣化
+T6	Argument 66 68	損傷
+T7	Connective 69 70	、
+T8	Argument 70 88	雨水等が損傷部からケーブル内部に浸入
+T9	Connective 89 90	、
+T10	Argument 90 92	最悪
+T11	Connective 93 95	場合
+T12	Argument 96 104	浸入した水が凍結
+T13	Connective 105 106	、
+T14	Argument 106 117	スロットルを操作できず
+T15	Connective 116 117	ず
+T16	Argument 117 129	エンジン回転が下がらない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T6	
+R6	REASON Arg1:T7 Arg2:T6	
+R7	REASON Arg1:T7 Arg2:T5	
+R8	RESULT Arg1:T7 Arg2:T8	
+R9	REASON Arg1:T9 Arg2:T8	
+R10	CONDITION Arg1:T11 Arg2:T10	
+R11	RESULT Arg1:T11 Arg2:T12	
+R12	RESULT Arg1:T9 Arg2:T12	
+R13	REASON Arg1:T13 Arg2:T12	
+R14	RESULT Arg1:T13 Arg2:T14	
+R15	REASON Arg1:T15 Arg2:T14	
+R16	RESULT Arg1:T15 Arg2:T16	

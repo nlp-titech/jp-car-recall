@@ -1,0 +1,17 @@
+T1	Argument 0 23	車体外後写鏡調整用スイッチに多量の雨滴等が浸入
+T2	Argument 29 44	当該スイッチ内の電気基盤が短絡
+T3	Argument 46 48	最悪
+T4	Argument 70 72	溶損
+T6	Connective 25 27	場合
+T7	Connective 45 46	、
+T8	Connective 49 51	場合
+R1	CONDITION Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R5	CONDITION Arg1:T8 Arg2:T3	
+R4	RESULT Arg1:T7 Arg2:T4	
+R6	RESULT Arg1:T8 Arg2:T4	
+T5	Argument 52 67	当該スイッチ及び周辺部品が発熱
+T9	Connective 67 70	により
+R7	REASON Arg1:T9 Arg2:T5	
+R8	RESULT Arg1:T9 Arg2:T4	

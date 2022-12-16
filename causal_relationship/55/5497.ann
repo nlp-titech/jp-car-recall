@@ -1,0 +1,5 @@
+T1	Argument 13 44	テールランプガード（後付アクセサリー部品）が灯火器の一部を遮る
+T2	Connective 44 46	ため
+T3	Argument 47 57	保安基準に適合しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

@@ -1,0 +1,27 @@
+T1	Argument 0 36	エンジン吸入空気予熱装置の配線において、エンジン上面への取付方法に不適切
+T2	Argument 45 53	付近の部品と接触
+T3	Argument 77 82	被覆が損傷
+T4	Argument 84 94	当該配線の芯線が発熱
+T5	Argument 96 102	被覆から発煙
+T6	Argument 110 116	被覆が燃える
+T7	Connective 42 44	ため
+T8	Connective 60 61	、
+T9	Connective 83 84	、
+T10	Connective 95 96	て
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T5	
+T12	Argument 61 75	そのままの状態で使用を続ける
+T13	Connective 75 76	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T3	
+T14	Argument 104 106	最悪
+T15	Connective 107 109	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T6	
+R9	RESULT Arg1:T10 Arg2:T6	

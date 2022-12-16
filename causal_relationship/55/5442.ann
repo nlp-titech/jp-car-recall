@@ -1,0 +1,13 @@
+T1	Argument 13 28	燃料タンク・バンドの強度が不足
+T2	Connective 32 34	ため
+T3	Argument 45 53	当該バンドが破損
+T4	Connective 61 65	そのため
+T5	Argument 66 78	走行中に燃料タンクが脱落
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 35 42	走行時等の振動
+T7	Connective 42 45	により
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	

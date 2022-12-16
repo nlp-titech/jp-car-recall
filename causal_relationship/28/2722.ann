@@ -1,0 +1,13 @@
+T1	Argument 1 46	刈取脱穀作業車の動力伝達装置において、走行ギヤボックスの注入オイル量と給油口の位置が不適切
+T2	Connective 47 49	ため
+T6	Connective 78 81	により
+T7	Argument 82 98	ギヤボックス内のオイル油面が上昇
+T8	Connective 99 100	、
+T9	Argument 100 125	給油口キャップ部のエアー抜き穴からから油が噴き出す
+R1	REASON Arg1:T2 Arg2:T1	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 50 78	ギヤボックス内ギヤの高回転によるオイルの泡立ちと跳ね上げ
+R10	REASON Arg1:T6 Arg2:T10	
+R2	RESULT Arg1:T2 Arg2:T9	

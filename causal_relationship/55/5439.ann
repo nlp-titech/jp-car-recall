@@ -1,0 +1,17 @@
+T1	Argument 18 42	ブレーキキャリパブリッジの取付部のねじ山に不適切
+T2	Connective 49 53	そのため
+T3	Argument 70 84	ボルトの締め付け力が弱くなり
+T4	Connective 84 85	、
+T5	Argument 91 102	ブレーキが効かなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 54 68	そのままの状態で使用を続ける
+T7	Connective 68 69	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 85 87	最悪
+T9	Connective 88 90	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

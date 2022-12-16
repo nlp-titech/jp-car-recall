@@ -1,0 +1,21 @@
+T1	Argument 0 47	ＬＰＧ運搬用タンクローリ架装車両の消火器箱の取付金具において、製造工程における曲げ加工が不適切
+T2	Connective 48 50	ため
+T3	Argument 62 79	当該曲げ加工部分に高い応力が発生し
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 91 95	そのため
+R3	REASON Arg1:T4 Arg2:T10	
+T5	Argument 112 129	当該取付金具とともに消火器箱が脱落
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 51 58	走行時の衝撃力
+T7	Connective 58 61	により
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 96 110	そのままの状態で使用を続ける
+T9	Connective 110 111	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 79 85	亀裂が生じる
+T11	Connective 78 79	し
+R9	REASON Arg1:T11 Arg2:T3	
+R10	RESULT Arg1:T11 Arg2:T10	

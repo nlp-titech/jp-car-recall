@@ -1,0 +1,21 @@
+T1	Argument 0 49	制動装置のリンク機構において、ブレーキアーム支点シャフトの取り付けボルトが適切に締付けられていない
+T2	Connective 55 59	そのため
+T3	Argument 76 85	当該ボルトがゆるみ
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 85 86	、
+T5	Argument 86 103	ブレーキアームの支点シャフトが外れ
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 103 104	、
+R5	REASON Arg1:T6 Arg2:T5	
+T7	Argument 110 121	ブレーキがきかなくなる
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 60 74	そのままの状態で使用を続ける
+T9	Connective 74 75	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 104 106	最悪
+T11	Connective 107 109	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T7	

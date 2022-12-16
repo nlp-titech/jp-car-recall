@@ -1,0 +1,25 @@
+T1	Argument 35 49	ドアロック機構の設計が不適切
+T2	Connective 50 52	ため
+T4	Connective 86 90	そのため
+T5	Argument 91 101	そのまま使用を続ける
+T6	Connective 101 102	と
+T7	Argument 103 110	当該部品が破損
+T8	Connective 111 112	、
+T9	Argument 112 114	最悪
+T10	Connective 115 117	場合
+T11	Argument 118 130	ドアの開閉ができなくなる
+R1	RESULT Arg1:T10 Arg2:T11	
+R2	CONDITION Arg1:T10 Arg2:T9	
+R3	RESULT Arg1:T8 Arg2:T11	
+R4	REASON Arg1:T8 Arg2:T7	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	CONDITION Arg1:T6 Arg2:T5	
+R7	RESULT Arg1:T4 Arg2:T7	
+R10	REASON Arg1:T2 Arg2:T1	
+T3	Argument 53 58	ドア閉扉時
+T12	Connective 58 59	に
+T13	Argument 59 80	ドアラッチ内の樹脂部品に過大な負荷がかかる
+R8	RESULT Arg1:T12 Arg2:T13	
+R9	RESULT Arg1:T2 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T3	
+R12	REASON Arg1:T4 Arg2:T13	

@@ -1,0 +1,9 @@
+T1	Argument 0 33	運転者席及び助手席のシートベルトにおいて、ラッチプレートの製造不良
+T2	Connective 33 36	により
+T3	Argument 37 57	バックルを解除するために、大きな力を必要
+T4	Connective 65 66	、
+T5	Argument 66 75	解除に時間のかかる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

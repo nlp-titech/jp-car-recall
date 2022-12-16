@@ -1,0 +1,5 @@
+T1	Argument 30 60	２個のＯ2センサーｩらコンピュータへの電気配線が左右逆に接続
+T2	Connective 70 71	、
+T3	Argument 71 85	適切に排出ガスのｻができない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

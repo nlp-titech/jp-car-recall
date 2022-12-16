@@ -1,0 +1,33 @@
+T1	Argument 0 24	フロントワイパーモータにおいて、製造工程が不適切
+T2	Connective 25 27	ため
+T3	Argument 28 43	内部気圧調整用の通気孔が塞がっ
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 51 52	、
+T5	Argument 52 72	外気と当該モータ内の気圧が均等にならない
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 78 82	そのため
+T11	Argument 83 112	作動により温度が上がっているモータが雨水等により急激に冷却
+T12	Connective 115 117	場合
+R5	REASON Arg1:T6 Arg2:T5	
+T13	Argument 131 143	内部に雨水等が吸い込まれ
+R6	RESULT Arg1:T6 Arg2:T20	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T20	
+T14	Connective 143 144	、
+T15	Argument 160 173	当該モータの内部回路が腐食
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+T16	Argument 144 158	そのままの状態で使用を続ける
+T17	Connective 158 159	と
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T15	
+T18	Connective 174 175	、
+T19	Argument 175 191	フロントワイパーが作動しなくなる
+R17	REASON Arg1:T18 Arg2:T15	
+R18	RESULT Arg1:T18 Arg2:T19	
+T20	Argument 118 130	当該モータ内が負圧となっ
+T21	Connective 130 131	て
+R19	REASON Arg1:T21 Arg2:T20	
+R20	RESULT Arg1:T21 Arg2:T13	

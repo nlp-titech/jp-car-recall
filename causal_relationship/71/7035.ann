@@ -1,0 +1,43 @@
+T1	Argument 0 34	交換期限を超えて使用されたスプリングチャンバ内のダイヤフラムの劣化等
+T2	Connective 34 37	により
+T3	Argument 38 46	エア漏れを生じる
+T4	Connective 52 56	そのため
+T5	Argument 57 70	ブレーキ系統のエア圧が低下
+T6	Connective 71 72	て
+T7	Argument 72 81	駐車ブレーキが作動
+T8	Connective 82 83	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T9	Argument 83 96	操作バルブがエア供給を停止
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 100 114	エア圧回復後もその状態を維持
+T11	Connective 116 118	ため
+T13	Connective 180 182	場合
+T14	Argument 183 188	火災に至る
+T15	Argument 177 179	最悪
+T16	Argument 157 167	そのまま走行を続ける
+T17	Connective 167 168	と
+T18	Argument 168 174	ドラムが過熱
+T19	Connective 175 176	て
+R9	CONDITION Arg1:T17 Arg2:T16	
+R10	REASON Arg1:T19 Arg2:T18	
+R11	CONDITION Arg1:T13 Arg2:T15	
+R12	RESULT Arg1:T17 Arg2:T18	
+R13	RESULT Arg1:T19 Arg2:T14	
+R14	RESULT Arg1:T13 Arg2:T14	
+T20	Argument 144 156	ブレーキの引きずりを生じ
+T21	Connective 156 157	、
+R15	REASON Arg1:T21 Arg2:T20	
+R16	RESULT Arg1:T21 Arg2:T18	
+T22	Connective 141 143	場合
+T23	Argument 119 141	ドライバーが走行前に駐車ブレーキを解除しない
+R17	RESULT Arg1:T22 Arg2:T20	
+R18	CONDITION Arg1:T22 Arg2:T23	
+R21	REASON Arg1:T11 Arg2:T10	
+R22	RESULT Arg1:T11 Arg2:T20	
+R19	RESULT Arg1:T4 Arg2:T10	

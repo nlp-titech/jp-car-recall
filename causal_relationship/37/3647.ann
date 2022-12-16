@@ -1,0 +1,62 @@
+T1	Argument 16 36	エンジン制御ユニットのプログラムが不適切
+T2	Connective 37 39	ため
+T4	Connective 64 66	場合
+T5	Argument 67 89	排気ガス中に含まれる未燃燃料の濃度が高くなり
+T6	Connective 89 90	、
+T7	Argument 90 106	当該燃料がＥＧＲクーラに廻り込み
+T8	Connective 106 107	、
+T9	Argument 107 121	カーボンデポジットが生成され
+T10	Connective 121 122	て
+T11	Argument 122 139	吸気バルブおよびＥＧＲバルブに付着
+T12	Connective 147 151	そのため
+T13	Argument 152 165	そのままの状態で長時間駐車
+T15	Connective 168 169	と
+T16	Argument 169 184	カーボンデポジットの粘度が増加
+T17	Connective 185 186	、
+T18	Argument 186 192	エンジン始動
+T19	Connective 194 195	際
+T20	Argument 199 209	吸気バルブが摺動不良
+T21	Connective 209 212	となり
+T22	Argument 213 231	プッシュロッドがロッカアームから外れ
+T23	Connective 231 232	、
+T25	Connective 285 286	、
+T26	Argument 286 296	エンジンの出力が制限
+R1	RESULT Arg1:T25 Arg2:T26	
+R4	REASON Arg1:T23 Arg2:T22	
+R5	RESULT Arg1:T21 Arg2:T22	
+R6	REASON Arg1:T21 Arg2:T20	
+R7	RESULT Arg1:T19 Arg2:T20	
+R8	CONDITION Arg1:T19 Arg2:T18	
+R9	RESULT Arg1:T17 Arg2:T20	
+R10	REASON Arg1:T17 Arg2:T16	
+R11	RESULT Arg1:T15 Arg2:T16	
+R12	CONDITION Arg1:T15 Arg2:T13	
+R13	RESULT Arg1:T12 Arg2:T16	
+R14	REASON Arg1:T12 Arg2:T11	
+R15	RESULT Arg1:T10 Arg2:T11	
+R16	REASON Arg1:T10 Arg2:T9	
+R17	RESULT Arg1:T8 Arg2:T9	
+R18	REASON Arg1:T8 Arg2:T7	
+R19	RESULT Arg1:T6 Arg2:T7	
+R20	REASON Arg1:T6 Arg2:T5	
+R21	RESULT Arg1:T4 Arg2:T5	
+R23	RESULT Arg1:T2 Arg2:T5	
+R24	REASON Arg1:T2 Arg2:T1	
+T24	Connective 245 246	り
+T27	Argument 246 263	未燃燃料がＤＯＣへ流れ込み異常燃焼
+T14	Argument 232 243	シリンダ内の燃焼が不良
+T28	Argument 270 282	ＥＧＲバルブの摺動も不良
+T29	Connective 269 270	、
+R2	REASON Arg1:T29 Arg2:T27	
+R3	REASON Arg1:T24 Arg2:T14	
+R25	REASON Arg1:T25 Arg2:T28	
+R26	RESULT Arg1:T23 Arg2:T14	
+R27	RESULT Arg1:T24 Arg2:T27	
+R28	RESULT Arg1:T24 Arg2:T28	
+T3	Argument 40 53	エンジンの出力回転数が高い
+T30	Connective 53 55	状態
+T31	Argument 56 64	出力トルクが低い
+R22	CONDITION Arg1:T4 Arg2:T31	
+R29	CONDITION Arg1:T30 Arg2:T3	
+R30	RESULT Arg1:T30 Arg2:T31	
+R31	RESULT Arg1:T30 Arg2:T5	

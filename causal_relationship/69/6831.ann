@@ -1,0 +1,13 @@
+T1	Argument 9 48	制動力制御装置（ＡＢＳ：アンチロックブレーキシステム）の制御プログラムが不適切
+T2	Connective 49 51	ため
+T3	Argument 52 84	ＡＢＳの作動終了直後に大きくハンドルを切りながらブレーキをかける
+T4	Connective 84 85	と
+T5	Argument 86 97	ＡＢＳが誤作動を起こし
+T6	Connective 97 98	、
+T7	Argument 98 115	運転者の予測より制動距離が長くなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

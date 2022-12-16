@@ -1,0 +1,31 @@
+T1	Argument 0 26	大型路線バスにおいて、原動機の制御プログラムが不適切
+T2	Connective 27 29	ため
+T3	Argument 30 42	アイドル回転で負荷が増大
+T4	Argument 47 54	燃焼不良となり
+R1	REASON Arg1:T2 Arg2:T1	
+T5	Connective 44 46	場合
+R3	CONDITION Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T4	
+T6	Argument 55 87	カーボンデポジットの堆積で排気ガス再循環（ＥＧＲ）クーラーが閉塞
+T7	Connective 54 55	、
+R8	RESULT Arg1:T7 Arg2:T6	
+R5	REASON Arg1:T7 Arg2:T4	
+T8	Connective 95 99	そのため
+R6	REASON Arg1:T8 Arg2:T6	
+T9	Argument 112 124	ターボのタービン翼が欠損
+R7	RESULT Arg1:T8 Arg2:T9	
+T10	Connective 125 126	、
+T11	Argument 126 140	エンジンチェックランプが点灯
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T13	Argument 146 153	出力不足となり
+T14	Connective 153 154	、
+T15	Argument 154 166	円滑な走行ができなくなる
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R11	RESULT Arg1:T10 Arg2:T13	
+T12	Argument 100 110	そのまま使用を続ける
+T16	Connective 110 111	と
+R12	CONDITION Arg1:T16 Arg2:T12	
+R15	RESULT Arg1:T16 Arg2:T9	
+R2	RESULT Arg1:T2 Arg2:T4	

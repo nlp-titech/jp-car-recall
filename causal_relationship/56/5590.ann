@@ -1,0 +1,15 @@
+T1	Argument 0 58	左側コンビネーションランプ（尾灯、制動灯及び方向指示器）のバルブホルダにおいて、電気配線の接続コネクタ部の端子が変形
+T2	Argument 73 89	当該端子の接点部に絶縁物質が生成
+T3	Argument 92 96	導通不良
+T4	Argument 100 113	当該ランプが点灯しなくなる
+T5	Argument 116 132	方向指示器が正常に作動しなくなる
+T6	Connective 68 72	そのため
+T7	Connective 91 92	て
+T8	Connective 96 99	となり
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	RESULT Arg1:T8 Arg2:T5	

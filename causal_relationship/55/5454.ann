@@ -1,0 +1,17 @@
+T1	Argument 0 48	クランクシャフトの位置を検出するセンサ（クランクシャフト・ポジション・センサ）内部に不純物が混入
+T2	Connective 56 60	そのため
+T3	Argument 73 99	当該センサがクランクシャフトの位置を適切に認識できず
+T4	Connective 99 100	、
+T5	Argument 106 123	エンジンが停止し再始動できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T6	Argument 61 71	そのまま使用を続ける
+T7	Connective 71 72	と
+R3	CONDITION Arg1:T7 Arg2:T6	
+R4	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 100 102	最悪
+T9	Connective 103 105	場合
+R5	REASON Arg1:T4 Arg2:T3	
+R6	RESULT Arg1:T4 Arg2:T5	
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

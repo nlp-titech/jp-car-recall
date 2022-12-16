@@ -1,0 +1,5 @@
+T1	Argument 0 40	オプション設定した消音器一体式縦型排気管の開口部が、車体の右側３０°を超えて傾い
+T2	Connective 43 45	ため
+T3	Argument 46 63	排気ガスが他の交通に悪影響を及ぼす
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

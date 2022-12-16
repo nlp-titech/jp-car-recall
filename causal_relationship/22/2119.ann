@@ -1,0 +1,9 @@
+T1	Argument 0 39	リヤシートバックのリクライニング角度調整用ギヤ（セクタギヤ）の加工寸法が大きい
+T2	Connective 39 41	ため
+T3	Argument 42 65	リクライニング位置を固定するカムの保持力が弱い
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 71 75	そのため
+T5	Argument 76 95	衝撃等によりシートバックが前方へ倒れる
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

@@ -1,0 +1,45 @@
+T1	Argument 0 26	エアコンの熱交換機冷却用ファンのヒューズ容量が不適切
+T2	Connective 27 29	ため
+T3	Argument 30 60	当該ファンが外的要因（泥の固着等）によりロック又は過負荷回転
+T6	Connective 62 64	場合
+T7	Argument 65 79	当該ファンのモータが異常発熱
+T8	Connective 87 91	そのため
+T9	Argument 92 106	そのままの状態で使用を続ける
+T11	Argument 108 126	発熱によりモータから可燃性ガスが発生
+T12	Argument 133 143	モータ取付け部の溶損
+T13	Connective 143 146	により
+T14	Argument 146 152	モータが脱落
+T15	Connective 153 154	、
+T17	Argument 154 166	エアコンの熱交換機と接触
+T18	Connective 168 169	と
+T19	Argument 169 174	火花が発生
+T20	Connective 176 178	ため
+T21	Argument 179 181	最悪
+T22	Connective 194 195	、
+T23	Argument 195 200	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T7	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R13	REASON Arg1:T13 Arg2:T12	
+R14	RESULT Arg1:T13 Arg2:T14	
+R15	REASON Arg1:T15 Arg2:T14	
+R16	RESULT Arg1:T15 Arg2:T17	
+R17	REASON Arg1:T18 Arg2:T17	
+R18	RESULT Arg1:T18 Arg2:T19	
+R19	REASON Arg1:T20 Arg2:T19	
+R22	RESULT Arg1:T22 Arg2:T23	
+T24	Connective 106 107	と
+R9	CONDITION Arg1:T24 Arg2:T9	
+T26	Connective 182 184	場合
+T27	Argument 185 193	可燃性ガスに引火
+R25	CONDITION Arg1:T26 Arg2:T21	
+R26	RESULT Arg1:T26 Arg2:T27	
+R27	REASON Arg1:T22 Arg2:T27	
+R12	RESULT Arg1:T20 Arg2:T27	
+R23	REASON Arg1:T13 Arg2:T11	
+R3	CONDITION Arg1:T6 Arg2:T3	
+R4	RESULT Arg1:T8 Arg2:T11	
+R5	RESULT Arg1:T24 Arg2:T11	
+R8	RESULT Arg1:T8 Arg2:T12	
+R10	RESULT Arg1:T24 Arg2:T12	

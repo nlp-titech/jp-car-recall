@@ -1,0 +1,46 @@
+T1	Argument 0 52	動力伝達装置の走行用油圧配管の固定ブラケットにおいて、①ブラケットを固定する取付ボルトの締め付け力が不足
+T2	Connective 61 65	そのため
+T3	Argument 66 80	そのままの状態で使用を続ける
+T4	Connective 80 81	と
+T5	Argument 82 89	走行時の振動等
+T6	Connective 89 92	により
+T7	Argument 93 101	取付ボルトが緩む
+T8	Connective 101 104	ことで
+T9	Argument 104 114	走行用油圧配管が損傷
+T10	Connective 115 116	て
+T11	Argument 116 123	作動油が漏れる
+T12	Argument 131 139	曲げ加工が不適切
+T13	Connective 146 150	そのため
+T14	Argument 151 158	走行時の振動等
+T15	Connective 158 161	により
+T16	Argument 162 173	曲げ加工部に亀裂が入り
+T17	Connective 173 174	、
+T18	Argument 174 184	そのまま使用を続ける
+T19	Connective 184 185	と
+T20	Argument 185 193	ブラケットが折損
+T21	Connective 193 194	、
+T22	Argument 194 204	走行用油圧配管が損傷
+T23	Connective 205 206	て
+T24	Argument 206 213	作動油が漏れる
+R1	RESULT Arg1:T23 Arg2:T24	
+R2	REASON Arg1:T23 Arg2:T22	
+R3	RESULT Arg1:T21 Arg2:T22	
+R4	REASON Arg1:T21 Arg2:T20	
+R5	RESULT Arg1:T19 Arg2:T20	
+R6	CONDITION Arg1:T19 Arg2:T18	
+R7	RESULT Arg1:T17 Arg2:T20	
+R8	REASON Arg1:T17 Arg2:T16	
+R9	RESULT Arg1:T15 Arg2:T16	
+R10	REASON Arg1:T15 Arg2:T14	
+R11	RESULT Arg1:T13 Arg2:T16	
+R12	REASON Arg1:T13 Arg2:T12	
+R13	RESULT Arg1:T10 Arg2:T11	
+R14	REASON Arg1:T10 Arg2:T9	
+R15	RESULT Arg1:T8 Arg2:T9	
+R16	REASON Arg1:T8 Arg2:T7	
+R17	RESULT Arg1:T6 Arg2:T7	
+R18	REASON Arg1:T6 Arg2:T5	
+R19	RESULT Arg1:T4 Arg2:T7	
+R20	CONDITION Arg1:T4 Arg2:T3	
+R21	RESULT Arg1:T2 Arg2:T7	
+R22	REASON Arg1:T2 Arg2:T1	

@@ -1,0 +1,20 @@
+T2	Connective 23 25	ため
+T3	Argument 26 40	燃料の残量が正しく表示されず
+T4	Argument 44 55	残量警告灯が作動しない
+T5	Connective 61 65	そのため
+T6	Argument 66 76	そのまま走行を続ける
+T7	Connective 76 77	と
+T8	Argument 78 80	最悪
+T9	Connective 81 83	場合
+T10	Argument 84 90	原動機が停止
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T4	
+R4	REASON Arg1:T5 Arg2:T4	
+R5	REASON Arg1:T5 Arg2:T3	
+R6	RESULT Arg1:T5 Arg2:T10	
+R7	CONDITION Arg1:T7 Arg2:T6	
+R8	CONDITION Arg1:T9 Arg2:T8	
+R9	RESULT Arg1:T7 Arg2:T10	
+R10	RESULT Arg1:T9 Arg2:T10	
+T11	Argument 0 22	燃料計の制御コンピュータのプログラムが不適切
+R11	REASON Arg1:T2 Arg2:T11	

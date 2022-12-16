@@ -1,0 +1,17 @@
+T1	Argument 0 29	運転者席及び助手席用座席ベルトの巻取装置内のギアに製造不良
+T2	Connective 36 40	そのため
+T3	Argument 50 57	当該ギアが破損
+T4	Connective 58 59	、
+T5	Argument 59 71	座席ベルトがロックされず
+T6	Argument 72 83	乗員が拘束できなくなる
+T7	Connective 71 72	、
+R1	REASON Arg1:T2 Arg2:T1	
+T8	Argument 41 47	衝突等の衝撃
+R2	RESULT Arg1:T2 Arg2:T3	
+T9	Connective 47 50	により
+R3	REASON Arg1:T9 Arg2:T8	
+R4	RESULT Arg1:T9 Arg2:T3	
+R5	REASON Arg1:T4 Arg2:T3	
+R6	RESULT Arg1:T4 Arg2:T5	
+R7	REASON Arg1:T7 Arg2:T5	
+R8	RESULT Arg1:T7 Arg2:T6	

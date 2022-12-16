@@ -1,0 +1,21 @@
+T1	Argument 11 49	可変ノズル付ターボ過給機において、ターボ過給機の吸気圧縮側の翼の形状が不適切
+T2	Connective 50 52	ため
+T3	Argument 53 73	ターボ過給機を最高回転付近で使用を続ける
+T4	Connective 73 74	と
+T5	Argument 74 83	当該翼の一部が破損
+T6	Connective 84 85	て
+T7	Argument 85 87	異音
+T9	Argument 95 97	最悪
+T10	Connective 98 100	場合
+T11	Argument 101 111	エンジンの出力が低下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R8	CONDITION Arg1:T10 Arg2:T9	
+R9	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 88 90	白煙
+R7	RESULT Arg1:T6 Arg2:T12	
+R10	RESULT Arg1:T6 Arg2:T11	

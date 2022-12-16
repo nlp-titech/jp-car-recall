@@ -1,0 +1,9 @@
+T3	Argument 38 62	異常展開に繋がるおそれがあるガス発生剤の密度低下
+T4	Connective 69 73	このため
+R1	REASON Arg1:T4 Arg2:T3	
+T1	Argument 86 119	一定の期間までに製造した同タイプのインフレータについて、予防的措置
+T2	Connective 119 122	として
+T5	Argument 122 136	当該インフレータを新品に交換
+R2	REASON Arg1:T2 Arg2:T1	
+R3	RESULT Arg1:T2 Arg2:T5	
+R4	RESULT Arg1:T4 Arg2:T5	

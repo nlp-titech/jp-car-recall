@@ -1,0 +1,43 @@
+T1	Argument 0 58	インタクーラから空気をエンジンに導く吸気カプラ内の慣性過給バルブにおいて、当該バルブの軸を支持する座金の形状が不適切
+T2	Connective 59 61	ため
+T3	Argument 62 70	エンジンの振動等
+T4	Connective 70 73	により
+T5	Argument 73 86	座金及び座金の接触面が摩耗
+T6	Connective 87 88	、
+T7	Argument 88 99	バルブの軸にがたが生じ
+T8	Connective 99 100	、
+T9	Argument 100 112	バルブが吸気カプラに干渉
+T10	Connective 120 124	そのため
+T11	Argument 125 135	そのまま使用を続ける
+T12	Argument 137 149	バルブの軸に高応力が発生
+T13	Connective 149 150	し
+T14	Argument 150 152	折損
+T15	Connective 153 154	て
+T16	Argument 155 167	破片が原動機内に吸込まれ
+T17	Connective 167 168	て
+T18	Argument 169 174	異音が発生
+T20	Argument 176 178	最悪
+T21	Connective 179 181	場合
+T22	Argument 182 188	原動機が破損
+R1	REASON Arg1:T2 Arg2:T1	
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T5	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+T23	Connective 135 136	と
+R10	CONDITION Arg1:T23 Arg2:T11	
+R11	RESULT Arg1:T23 Arg2:T12	
+R12	RESULT Arg1:T10 Arg2:T12	
+R13	REASON Arg1:T13 Arg2:T12	
+R14	RESULT Arg1:T13 Arg2:T14	
+R15	REASON Arg1:T15 Arg2:T14	
+R16	RESULT Arg1:T15 Arg2:T16	
+R17	REASON Arg1:T17 Arg2:T16	
+R19	CONDITION Arg1:T21 Arg2:T20	
+R20	RESULT Arg1:T21 Arg2:T22	
+R18	RESULT Arg1:T17 Arg2:T18	
+R21	RESULT Arg1:T17 Arg2:T22	

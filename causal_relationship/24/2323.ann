@@ -1,0 +1,33 @@
+T1	Argument 0 48	平成２０年４月１８日付届出番号「２１０１」のリコール届出において、リコール作業の作業指示が不適切
+T2	Argument 52 74	走行用油圧ホースに保護部材が追加されていない
+T4	Argument 116 128	旋回継手の配管継手と接触
+T6	Argument 145 151	作動油が漏れ
+T7	Argument 152 160	走行できなくなる
+T8	Connective 151 152	、
+T9	Connective 138 139	、
+T12	Connective 80 84	そのため
+T13	Connective 49 51	ため
+R1	REASON Arg1:T13 Arg2:T1	
+R2	RESULT Arg1:T13 Arg2:T2	
+R3	REASON Arg1:T12 Arg2:T2	
+R10	RESULT Arg1:T9 Arg2:T6	
+R11	REASON Arg1:T8 Arg2:T6	
+R12	RESULT Arg1:T8 Arg2:T7	
+T14	Argument 85 99	そのままの状態で使用を続ける
+T15	Connective 99 100	と
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T4	
+T16	Argument 139 141	最悪
+T17	Connective 142 144	場合
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T6	
+R4	RESULT Arg1:T12 Arg2:T4	
+T3	Argument 107 113	車体の振動等
+T5	Connective 113 116	により
+R6	REASON Arg1:T5 Arg2:T3	
+R7	RESULT Arg1:T5 Arg2:T4	
+T10	Connective 132 135	により
+R8	REASON Arg1:T10 Arg2:T4	
+T11	Argument 135 137	摩耗
+R9	RESULT Arg1:T10 Arg2:T11	
+R5	REASON Arg1:T9 Arg2:T11	

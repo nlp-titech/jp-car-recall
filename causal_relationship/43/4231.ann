@@ -1,0 +1,26 @@
+T1	Argument 40 44	軸が摩耗
+T2	Connective 52 56	そのため
+T3	Argument 57 63	加速力の低下
+T4	Connective 71 72	、
+T5	Argument 78 82	軸が折れ
+T6	Connective 82 83	て
+T7	Argument 83 90	排気経路が閉塞
+T8	Connective 91 92	、
+T9	Argument 92 99	エンジンが停止
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T13	Argument 72 74	最悪
+T14	Connective 75 77	場合
+R9	CONDITION Arg1:T14 Arg2:T13	
+R10	RESULT Arg1:T14 Arg2:T5	
+T10	Argument 11 39	ターボチャージャーにおいて、エンジン内部で発生する金属粉
+T11	Connective 39 40	で
+R11	REASON Arg1:T11 Arg2:T10	
+R12	RESULT Arg1:T11 Arg2:T1	
+T12	Argument 65 70	異音が発生
+R13	RESULT Arg1:T2 Arg2:T12	
+R3	RESULT Arg1:T2 Arg2:T5	

@@ -1,0 +1,17 @@
+T1	Argument 16 53	燃料流入量の制御弁（燃料室内の燃料を常に一定量に制御する弁）の形状が不適切
+T2	Connective 54 56	ため
+T3	Argument 57 79	燃料タンクからの燃料流入量を制御できなくなる
+T4	Connective 84 85	、
+T5	Argument 91 103	気化器本体から燃料が漏れ
+T6	Connective 103 104	、
+T7	Argument 104 109	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T11	Argument 85 87	最悪
+T12	Connective 88 90	場合
+R5	CONDITION Arg1:T12 Arg2:T11	
+R6	RESULT Arg1:T12 Arg2:T5	
+R7	REASON Arg1:T6 Arg2:T5	
+R8	RESULT Arg1:T6 Arg2:T7	

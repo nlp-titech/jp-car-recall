@@ -1,0 +1,17 @@
+T1	Argument 0 32	燃料装置において、エア抜きホース接続部のОリングの組付けに不適切
+T2	Connective 38 40	ため
+T3	Argument 41 85	取扱説明書および給油口に貼付されているコーションラベルに記載されている給油量を超えて給油
+T4	Connective 87 90	場合に
+T5	Argument 91 117	燃料タンク上部に接続されている当該ホースに燃料が流入
+T6	Connective 124 125	、
+T7	Argument 125 127	最悪
+T8	Connective 128 130	場合
+T9	Argument 131 145	当該接続部分から燃料がまれる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	RESULT Arg1:T6 Arg2:T9	

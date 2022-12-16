@@ -1,0 +1,9 @@
+T1	Argument 0 14	原動機の電気配線の接続を誤っ
+T2	Argument 18 34	燃料噴射時期制御が正常に行われず
+T3	Argument 35 66	走行中の排出ガス量が道路運送車両の保安基準の規制値を満足しない
+T4	Connective 15 17	ため
+T5	Connective 34 35	、
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	

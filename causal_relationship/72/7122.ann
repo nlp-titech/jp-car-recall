@@ -1,0 +1,9 @@
+T1	Argument 11 40	エアバッグコントロール装置のコンピュータプログラムが不適切
+T2	Connective 41 43	ため
+T3	Argument 44 64	ハンドルを強くたたく等過大な衝撃を加える
+T4	Connective 64 65	と
+T5	Argument 66 74	エアバッグが開く
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	

@@ -1,0 +1,32 @@
+T2	Connective 55 56	、
+T3	Argument 56 72	クーリングファンが回転しなくなる
+T4	Argument 79 101	クーリングファンが回転しないまま使用を続ける
+T5	Connective 101 102	と
+T6	Argument 103 112	冷却水の水温が上昇
+T7	Connective 116 119	により
+T8	Argument 120 142	警告灯（水温、エンジンチェックランプ）が点灯
+T10	Argument 144 159	エンジンが緊急制限モードに入り
+T11	Argument 170 182	冷媒が十分に冷却されない
+T12	Connective 184 187	により
+T13	Argument 188 197	エアコン性能が低下
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	CONDITION Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T6	
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T8	
+R9	REASON Arg1:T12 Arg2:T11	
+R10	RESULT Arg1:T12 Arg2:T13	
+T1	Argument 0 53	ラジエター及びエアコンコンデンサの冷却用電動クーリングファンにおいて、モーター内部の電気接点に摩耗粉が蓄積
+R1	REASON Arg1:T2 Arg2:T1	
+T17	Connective 78 79	。
+R11	REASON Arg1:T17 Arg2:T3	
+R12	RESULT Arg1:T17 Arg2:T6	
+T9	Connective 158 159	り
+T18	Argument 159 164	出力が低下
+R8	REASON Arg1:T9 Arg2:T10	
+R14	RESULT Arg1:T9 Arg2:T18	
+T14	Connective 143 144	て
+R7	REASON Arg1:T14 Arg2:T8	
+R15	RESULT Arg1:T14 Arg2:T10	
+R13	RESULT Arg1:T17 Arg2:T11	
+R16	RESULT Arg1:T5 Arg2:T11	

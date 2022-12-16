@@ -1,0 +1,25 @@
+T1	Argument 0 23	自動変速機のトルクコンバータのカバーに加工不良
+T2	Argument 47 65	トルクコンバータを支持する軸受が摩耗
+T3	Argument 66 73	シール性が低下
+T4	Argument 78 84	オイルが漏れ
+T5	Argument 92 99	走行不能に至る
+T6	Connective 29 31	ため
+T7	Connective 65 66	し
+T8	Connective 75 77	ため
+T9	Connective 84 85	て
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 32 46	そのままの状態で使用を続ける
+T11	Connective 46 47	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T2	
+T12	Argument 86 88	最悪
+T13	Connective 89 91	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T5	

@@ -1,0 +1,29 @@
+T1	Argument 0 42	運転者席及び助手席のシートヒーターにおいて、ヒータースイッチの電気配線の配索が不適切
+T2	Connective 43 45	ため
+T5	Argument 46 83	当該スイッチがオンの状態でエンジンを停止してもシートヒーターが作動し続ける
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+T6	Connective 89 93	そのため
+T7	Argument 94 119	ヒーターの制御を行うＥＣＵ（ヒーターＥＣＵ）が発熱
+T8	Connective 120 121	、
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+T9	Argument 137 147	ヒーターＥＣＵが溶損
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 121 135	そのままの状態で使用を続ける
+T11	Connective 135 136	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T9	
+T12	Argument 148 150	発火
+T13	Connective 151 152	、
+T14	Argument 158 163	火災に至る
+R12	REASON Arg1:T13 Arg2:T12	
+R13	RESULT Arg1:T13 Arg2:T14	
+T15	Argument 152 154	最悪
+T16	Connective 155 157	場合
+R14	CONDITION Arg1:T16 Arg2:T15	
+R15	RESULT Arg1:T16 Arg2:T14	
+R16	REASON Arg1:T13 Arg2:T9	
+R3	RESULT Arg1:T8 Arg2:T12	
+R4	RESULT Arg1:T11 Arg2:T12	

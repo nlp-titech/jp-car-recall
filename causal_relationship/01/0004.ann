@@ -1,0 +1,33 @@
+T2	Connective 72 74	ため
+T3	Argument 85 91	ステイが折損
+R1	REASON Arg1:T2 Arg2:T12	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 98 99	、
+T5	Argument 121 142	当該ステイがオイルタンク溶接部とともに剥離
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 144 146	ため
+R5	REASON Arg1:T6 Arg2:T5	
+T7	Argument 147 157	当該タンクに穴があき
+R6	RESULT Arg1:T6 Arg2:T7	
+T15	Connective 82 85	により
+T18	Argument 75 82	原動機の振動等
+R7	REASON Arg1:T15 Arg2:T18	
+R8	RESULT Arg1:T15 Arg2:T3	
+T8	Argument 99 113	このままの状態で使用を続ける
+T9	Connective 113 114	と
+R9	CONDITION Arg1:T9 Arg2:T8	
+T10	Argument 115 117	最悪
+T11	Connective 118 120	場合
+R10	CONDITION Arg1:T11 Arg2:T10	
+R11	RESULT Arg1:T9 Arg2:T5	
+R12	RESULT Arg1:T11 Arg2:T5	
+T19	Argument 158 164	オイルが漏れ
+T20	Argument 165 174	ハンドルが重くなる
+T21	Connective 157 158	、
+T22	Connective 164 165	、
+R13	RESULT Arg1:T22 Arg2:T20	
+R14	REASON Arg1:T22 Arg2:T19	
+R15	RESULT Arg1:T21 Arg2:T19	
+R16	REASON Arg1:T21 Arg2:T7	
+T12	Argument 0 68	ディーゼルエンジン搭載車の動力式かじ取り装置（パワーステアリング）用のオイルタンクに溶接している油圧パイプ支持金具（ステイ）の強度が不足

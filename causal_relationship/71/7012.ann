@@ -1,0 +1,29 @@
+T1	Argument 0 52	キャブレターの製造工程において、スロットルケーブルを取り付けるプーリーの材料に規格を超える鉛が誤って混入
+T2	Connective 60 64	そのため
+T3	Argument 74 90	当該プーリーが腐食して強度が低下
+T4	Connective 91 92	、
+T5	Argument 92 102	そのまま使用を続ける
+T6	Connective 102 103	と
+T7	Argument 104 111	プーリーが破損
+T8	Connective 112 113	て
+T9	Argument 114 123	アイドリング不安定
+T10	Argument 124 132	エンストを起こす
+T12	Argument 138 140	最悪
+T13	Connective 141 143	場合
+T14	Argument 144 168	スロットルを戻してもエンジン回転が下がらなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	CONDITION Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	REASON Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	RESULT Arg1:T8 Arg2:T10	
+R10	CONDITION Arg1:T13 Arg2:T12	
+R11	RESULT Arg1:T13 Arg2:T14	
+R13	RESULT Arg1:T4 Arg2:T7	
+T15	Argument 65 69	使用過程
+T16	Connective 69 73	において
+R14	CONDITION Arg1:T16 Arg2:T15	
+R15	RESULT Arg1:T16 Arg2:T3	
+R9	RESULT Arg1:T8 Arg2:T14	

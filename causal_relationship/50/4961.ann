@@ -1,0 +1,21 @@
+T1	Argument 9 48	燃料フィルターと燃料パイプとの接続部のリテーナ－（接続用の留具）の形状が不適切
+T2	Connective 54 56	ため
+T3	Argument 68 76	当該接続部が外れ
+T4	Connective 76 77	て
+T5	Argument 77 82	燃料が漏れ
+T6	Connective 82 83	、
+T7	Argument 89 94	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 57 64	走行中の振動等
+T9	Connective 64 67	により
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 83 85	最悪
+T11	Connective 86 88	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T7	

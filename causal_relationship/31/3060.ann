@@ -1,0 +1,17 @@
+T1	Argument 0 57	四輪駆動の横滑り防止装置付仕様車において、横滑り防止装置コントローラに二輪駆動仕様の制御プログラムを誤って書き込ん
+T2	Connective 58 60	ため
+T3	Argument 61 76	凍結した路面等でゆっくりと制動
+T4	Connective 78 80	とき
+T5	Argument 106 112	車輪がロック
+T6	Connective 113 114	、
+T7	Argument 114 125	車両安定性が損なわれる
+R1	RESULT Arg1:T6 Arg2:T7	
+R2	REASON Arg1:T6 Arg2:T5	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	CONDITION Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T2 Arg2:T8	
+R6	REASON Arg1:T2 Arg2:T1	
+T8	Argument 81 105	ＡＢＳ（アンチロックブレーキシステム）が作動せず
+T9	Connective 105 106	に
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

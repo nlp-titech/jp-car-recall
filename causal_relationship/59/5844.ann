@@ -1,0 +1,25 @@
+T1	Argument 17 48	電動補助クーラントポンプにおいて、ハウジングの製造工程が不適切
+T2	Connective 52 54	ため
+T3	Argument 55 67	ハウジングに亀裂が生じる
+T4	Connective 73 77	その場合
+T5	Argument 78 93	亀裂からクーラントや湿気が浸入
+T6	Connective 97 100	により
+T7	Argument 100 107	回路がショート
+T8	Connective 108 109	、
+T9	Argument 109 120	プラグ接続部が焦げ付き
+T10	Connective 120 121	、
+T11	Argument 121 123	最悪
+T12	Connective 124 126	場合
+T14	Argument 127 135	車両の火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T14	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T14	

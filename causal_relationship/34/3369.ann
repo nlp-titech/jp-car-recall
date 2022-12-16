@@ -1,0 +1,17 @@
+T1	Argument 0 34	ターボチャージャの可変ノズルベーンを駆動するリンク部の耐食性が不十分
+T2	Connective 35 37	ため
+T3	Argument 38 51	当該リンク部が発錆して固着
+T4	Connective 59 63	そのため
+T5	Argument 64 80	エンジンＥＣＵが過給圧異常を検出
+T6	Connective 81 82	て
+T7	Argument 82 92	エンジン警告灯が点灯
+T8	Argument 94 114	出力制限を伴うフェールセーフモードに入る
+T9	Argument 119 132	排気ガス濃度が基準値を超過
+R1	RESULT Arg1:T6 Arg2:T7	
+R2	RESULT Arg1:T6 Arg2:T8	
+R3	RESULT Arg1:T6 Arg2:T9	
+R4	REASON Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T5	
+R6	REASON Arg1:T4 Arg2:T3	
+R7	RESULT Arg1:T2 Arg2:T3	
+R8	REASON Arg1:T2 Arg2:T1	

@@ -1,0 +1,21 @@
+T1	Argument 0 61	燃料噴射装置（インジェクタ）において、燃料の噴射精度を制御する電子装置（インジェクタドライバ）の車体への取付け位置が不適切
+T3	Argument 123 133	走行中、原動機が停止
+T4	Argument 135 142	走行不能に至る
+T5	Connective 134 135	、
+T6	Connective 116 117	、
+T7	Connective 62 64	ため
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T11	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T5 Arg2:T3	
+R6	RESULT Arg1:T5 Arg2:T4	
+T8	Argument 65 83	そのままの状態で未舗装路走行を続ける
+T9	Connective 83 84	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+T11	Argument 85 115	当該装置内部の昇圧コンデンサ取り付け部の配線が振動により折損
+R10	RESULT Arg1:T9 Arg2:T11	
+T12	Argument 117 119	最悪
+T13	Connective 120 122	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T3	
+R3	REASON Arg1:T6 Arg2:T11	

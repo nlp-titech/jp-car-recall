@@ -1,0 +1,31 @@
+T3	Argument 27 64	ボールジョイントスタッドボルトの取付けナットが、使用過程において緩みが発生
+T4	Connective 72 76	そのため
+T5	Argument 77 91	そのままの状態で使用を続ける
+T6	Connective 91 92	と
+T7	Argument 93 101	当該ナットが緩ん
+T8	Argument 116 143	操舵時にボールジョイントのスタッドボルトに応力がかかっ
+T9	Argument 148 150	最悪
+T10	Connective 147 148	、
+T11	Connective 151 153	場合
+T12	Argument 154 171	ロアアームがナックルアームから外れ
+T13	Connective 171 172	て
+T14	Argument 172 179	操舵不能になる
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T8	
+R10	RESULT Arg1:T10 Arg2:T12	
+R11	CONDITION Arg1:T11 Arg2:T9	
+R12	RESULT Arg1:T11 Arg2:T12	
+R13	REASON Arg1:T13 Arg2:T12	
+R14	RESULT Arg1:T13 Arg2:T14	
+T21	Argument 144 146	破損
+T22	Connective 143 144	て
+R15	REASON Arg1:T10 Arg2:T21	
+R16	RESULT Arg1:T22 Arg2:T21	
+R17	REASON Arg1:T22 Arg2:T8	
+T1	Connective 101 102	で
+T2	Argument 102 108	ナットが脱落
+R1	REASON Arg1:T1 Arg2:T7	
+R2	RESULT Arg1:T1 Arg2:T2	

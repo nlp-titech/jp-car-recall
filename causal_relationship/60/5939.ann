@@ -1,0 +1,13 @@
+T1	Argument 0 24	ボディー電装品制御ユニットのソフトウェアが不適切
+T2	Connective 25 27	ため
+T3	Argument 28 41	エンジンを始動させようとし
+T4	Connective 42 43	際
+T7	Argument 45 87	ステアリングロック解除の信号を受けてもエンジン始動に必要な信号を当該ユニットが発せず
+T8	Connective 87 88	、
+T9	Argument 88 98	エンジンが始動しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T7	
+R3	REASON Arg1:T8 Arg2:T7	
+R4	RESULT Arg1:T8 Arg2:T9	
+R5	CONDITION Arg1:T4 Arg2:T3	
+R6	RESULT Arg1:T4 Arg2:T7	

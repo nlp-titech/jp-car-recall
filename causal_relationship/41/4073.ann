@@ -1,0 +1,5 @@
+T1	Argument 0 60	保安基準第５５条の規定に基づき、接地圧の基準緩和認定を受けた車両において、認定の条件として表示する接地圧の単位表示に誤り
+T2	Argument 67 82	接地圧が正しく表示されていない
+T3	Connective 64 66	ため
+R1	REASON Arg1:T3 Arg2:T1	
+R2	RESULT Arg1:T3 Arg2:T2	

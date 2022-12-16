@@ -1,0 +1,33 @@
+T1	Argument 0 22	乗降扉において、アウトハンドルの設計が不適切
+T2	Argument 26 36	アウトハンドルを引い
+T4	Argument 39 61	吸湿して膨張した可動部がハンドルケースと干渉
+T5	Argument 63 68	引っ掛かり
+T6	Argument 69 78	初期状態に戻らない
+T7	Argument 89 100	扉が確実にロックされず
+T8	Argument 101 103	最悪
+T10	Argument 111 115	扉が開く
+T11	Connective 23 25	ため
+T12	Connective 37 38	際
+T14	Connective 62 63	、
+T15	Connective 68 69	、
+T16	Connective 84 88	そのため
+T17	Connective 100 101	、
+T18	Connective 104 106	場合
+R1	REASON Arg1:T11 Arg2:T1	
+R3	CONDITION Arg1:T12 Arg2:T2	
+R7	REASON Arg1:T14 Arg2:T4	
+R8	RESULT Arg1:T14 Arg2:T5	
+R9	REASON Arg1:T15 Arg2:T5	
+R10	RESULT Arg1:T15 Arg2:T6	
+R11	REASON Arg1:T16 Arg2:T6	
+R12	RESULT Arg1:T16 Arg2:T7	
+R13	REASON Arg1:T17 Arg2:T7	
+R15	CONDITION Arg1:T18 Arg2:T8	
+R16	RESULT Arg1:T17 Arg2:T10	
+R17	RESULT Arg1:T18 Arg2:T10	
+R2	RESULT Arg1:T11 Arg2:T4	
+R4	RESULT Arg1:T12 Arg2:T4	
+T3	Argument 107 110	走行中
+T9	Connective 110 111	に
+R5	CONDITION Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T10	

@@ -1,0 +1,17 @@
+T1	Argument 0 37	空気式制動装置において、エアコンプレッサとエアドライヤの間のホースを誤装着
+T2	Connective 39 41	ため
+T3	Argument 42 67	乾燥されていない空気がパージチャンバ内に送り込まれ
+T4	Connective 67 68	、
+T7	Argument 68 95	冬季に空気中の水分がチェックバルブとオリフィス部で凍結
+T8	Connective 96 97	、
+T9	Argument 97 114	エアタンクに圧縮空気が送れなくなり
+T10	Connective 114 115	、
+T11	Argument 115 127	主ブレーキが効かなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R6	RESULT Arg1:T4 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	

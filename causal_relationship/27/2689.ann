@@ -1,0 +1,21 @@
+T1	Argument 0 16	樹脂製アクセルペダルの強度が不足
+T2	Connective 20 22	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T5	Argument 45 65	ペダルアームに横方向の大きな荷重が加わる
+T6	Connective 65 66	と
+T7	Argument 66 71	亀裂が入り
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Connective 71 72	、
+T9	Argument 78 87	ペダルアームが折損
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Connective 87 88	し
+T11	Argument 88 96	走行できなくなる
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R2	RESULT Arg1:T2 Arg2:T7	
+T12	Argument 72 74	最悪
+T13	Connective 75 77	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T9	

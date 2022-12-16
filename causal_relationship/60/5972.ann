@@ -1,0 +1,35 @@
+T1	Argument 0 35	ドライブスプロケットの整備時において、固定ボルトに過剰な増し締めを行う
+T2	Connective 37 38	で
+T3	Argument 38 48	ねじロック剤が剥がれ
+T4	Argument 51 85	固定ボルトにねじロック剤を塗布せずにドライブスプロケットを再組み付け
+T5	Connective 87 88	と
+T6	Argument 89 92	振動等
+T7	Connective 92 95	により
+T8	Argument 95 102	締め付けが緩み
+T9	Argument 120 122	最悪
+T10	Connective 123 125	場合
+T11	Argument 126 162	走行中に固定ボルトとともにドライブスプロケット及びドライブチェーンが外れ
+T12	Connective 162 163	て
+T13	Argument 163 172	回転部分に噛み混み
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	CONDITION Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T8	
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T8	
+R9	CONDITION Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+T16	Connective 102 103	、
+T17	Argument 103 113	駆動力を伝達できない
+R15	REASON Arg1:T16 Arg2:T8	
+R16	RESULT Arg1:T16 Arg2:T17	
+R13	RESULT Arg1:T16 Arg2:T11	
+T15	Connective 171 172	み
+T18	Argument 172 174	転倒
+R14	REASON Arg1:T15 Arg2:T13	
+R17	RESULT Arg1:T15 Arg2:T18	
+T14	Connective 50 51	、
+R7	REASON Arg1:T14 Arg2:T3	
+R8	RESULT Arg1:T14 Arg2:T8	

@@ -1,0 +1,21 @@
+T1	Argument 1 51	過給器付ディーゼルエンジン搭載車の発電機において、プーリーに設けたクラッチ内部の潤滑油の耐熱性が不足
+T2	Connective 55 57	ため
+T3	Argument 58 64	潤滑油が劣化
+T4	Connective 65 66	て
+T5	Argument 66 75	当該クラッチが破損
+T6	Connective 83 87	そのため
+T7	Argument 110 119	当該プーリーが脱落
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 88 102	そのままの状態で使用を続ける
+T9	Connective 102 103	と
+T10	Argument 104 106	最悪
+T11	Connective 107 109	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T7	
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T7	

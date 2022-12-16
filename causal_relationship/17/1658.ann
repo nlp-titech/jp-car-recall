@@ -1,0 +1,21 @@
+T1	Argument 0 39	左側スライドドアの車室内ハンドルの操作を伝達するリンク機構のプレス成型が不適切
+T2	Connective 40 42	ため
+T3	Argument 43 56	リンク機構が円滑に作動せず
+T4	Connective 56 57	、
+T5	Argument 57 87	車室内からスライドドアを開けた後、リンク機構の一部が戻らない
+T6	Connective 93 97	そのため
+T7	Argument 98 122	スライドドアを閉めてもドアラッチが開放状態のまま
+T8	Connective 125 126	、
+T9	Argument 132 147	走行中に左側スライドドアが開く
+R1	REASON Arg1:T8 Arg2:T7	
+R2	RESULT Arg1:T8 Arg2:T9	
+R3	REASON Arg1:T6 Arg2:T5	
+R4	RESULT Arg1:T6 Arg2:T7	
+R5	REASON Arg1:T4 Arg2:T3	
+R6	RESULT Arg1:T4 Arg2:T5	
+R7	REASON Arg1:T2 Arg2:T1	
+R8	RESULT Arg1:T2 Arg2:T3	
+T17	Argument 126 128	最悪
+T18	Connective 129 131	場合
+R9	CONDITION Arg1:T18 Arg2:T17	
+R10	RESULT Arg1:T18 Arg2:T9	

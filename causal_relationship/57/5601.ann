@@ -1,0 +1,33 @@
+T1	Argument 0 22	フロントブレーキキャリパのピストン寸法が短い
+T2	Argument 25 35	ブレーキパッドが消耗
+T3	Argument 39 49	ピストン突出量が増大
+T4	Argument 51 72	ピストンとピストンシールの掛かりが浅くなり
+T5	Argument 73 83	ブレーキ液が滲み出る
+T6	Argument 94 104	そのまま使用を続ける
+T7	Argument 106 115	ブレーキ液量が減少
+T8	Argument 117 119	最悪
+T9	Argument 123 129	制動力が低下
+T10	Connective 22 24	ため
+T11	Connective 37 39	時に
+T12	Connective 50 51	、
+T13	Connective 72 73	、
+T14	Connective 89 93	そのため
+T15	Connective 104 105	と
+T16	Connective 116 117	、
+T17	Connective 120 122	場合
+R1	REASON Arg1:T10 Arg2:T1	
+R2	RESULT Arg1:T10 Arg2:T3	
+R3	CONDITION Arg1:T11 Arg2:T2	
+R4	RESULT Arg1:T11 Arg2:T3	
+R5	REASON Arg1:T12 Arg2:T3	
+R6	RESULT Arg1:T12 Arg2:T4	
+R7	REASON Arg1:T13 Arg2:T4	
+R8	RESULT Arg1:T13 Arg2:T5	
+R9	REASON Arg1:T14 Arg2:T5	
+R10	RESULT Arg1:T14 Arg2:T7	
+R11	CONDITION Arg1:T15 Arg2:T6	
+R12	RESULT Arg1:T15 Arg2:T7	
+R13	REASON Arg1:T16 Arg2:T7	
+R14	RESULT Arg1:T16 Arg2:T9	
+R15	CONDITION Arg1:T17 Arg2:T8	
+R16	RESULT Arg1:T17 Arg2:T9	

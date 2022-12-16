@@ -1,0 +1,17 @@
+T1	Argument 0 19	フレームの製造不良時の処理方法が不適切
+T2	Argument 28 50	サイドスタンドブラケット取付け部の硬度が低下
+T3	Argument 65 84	サイドスタンドブラケット取付け部が損傷
+T4	Argument 86 96	サイドスタンド使用中
+T5	Argument 97 102	車両が転倒
+T6	Connective 20 22	ため
+T7	Connective 55 59	そのため
+T8	Connective 85 86	、
+T9	Connective 96 97	に
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T5	
+R7	CONDITION Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	

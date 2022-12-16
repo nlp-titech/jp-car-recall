@@ -1,0 +1,31 @@
+T1	Argument 0 40	ブレーキマスターシリンダにおいて、市場で使用されるブレーキ液での潤滑性評価が不足
+T2	Connective 44 46	ため
+T3	Argument 66 84	ポリマー成分の少ないブレーキ液を使用
+T4	Connective 86 87	と
+T5	Argument 88 110	シリンダ後端のゴム製シール部が潤滑不良となり
+T6	Connective 120 124	そのため
+T7	Argument 125 141	当該シール部よりブレーキ液が漏れ
+T9	Argument 168 174	制動力が低下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T10	Connective 109 110	り
+T11	Argument 110 114	めくれる
+R9	REASON Arg1:T10 Arg2:T5	
+R10	RESULT Arg1:T10 Arg2:T11	
+R5	REASON Arg1:T6 Arg2:T11	
+T12	Connective 141 142	て
+T13	Argument 142 148	警告灯が点灯
+R7	REASON Arg1:T12 Arg2:T7	
+R11	RESULT Arg1:T12 Arg2:T13	
+T14	Argument 150 160	そのまま使用を続ける
+T15	Connective 160 161	と
+T16	Argument 162 164	最悪
+T17	Connective 165 167	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T9	
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T9	
+R8	RESULT Arg1:T12 Arg2:T9	

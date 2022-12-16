@@ -1,0 +1,17 @@
+T1	Argument 0 51	坂道発進補助装置（ＨＳＡ：ヒル・スタート・エイド）の制御ユニットにおいて、不適切な電解コンデンサを装着
+T2	Connective 53 55	ため
+T3	Argument 56 77	当該ユニットの電子基板に過大な電流が流れる
+T4	Connective 83 87	そのため
+T5	Argument 88 102	そのままの状態で使用を続ける
+T6	Connective 102 103	と
+T7	Argument 104 111	電子基板が損傷
+T8	Connective 112 113	て
+T9	Argument 113 124	ＨＳＡが作動しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	

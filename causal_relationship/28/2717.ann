@@ -1,0 +1,9 @@
+T1	Argument 0 31	動力伝達装置において、走行コントローラの制御プログラムが不適切
+T2	Connective 32 34	ため
+T3	Argument 35 60	前後進切換レバーを操作した時に誤った車速指示を出す
+T4	Connective 66 70	そのため
+T5	Argument 71 88	前後進切換レバー位置と逆方向に走行
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

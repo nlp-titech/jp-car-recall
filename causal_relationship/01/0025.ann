@@ -1,0 +1,41 @@
+T1	Argument 48 85	当該ドアハンドルのレリーズロッド（ドア開閉装置のラッチ解除棒）連結部が破損
+T2	Argument 93 105	当該レリーズロッドが外れ
+T3	Argument 106 125	外側からドアを開けることができなくなる
+T4	Argument 147 155	ドアガラスを降下
+T5	Argument 182 201	ドアガラスの下部がレリーズロッドを押し
+T6	Argument 208 215	当該ドアが開く
+T7	Argument 10 44	強い力で運転者席及び助手席側のドアハンドル（樹脂製）の操作を繰り返し
+T8	Connective 45 47	場合
+T9	Connective 92 93	、
+T10	Connective 105 106	て
+T12	Connective 158 159	と
+T13	Connective 201 202	、
+R1	REASON Arg1:T8 Arg2:T7	
+R2	RESULT Arg1:T8 Arg2:T1	
+R3	REASON Arg1:T9 Arg2:T1	
+R4	RESULT Arg1:T9 Arg2:T2	
+R5	REASON Arg1:T10 Arg2:T2	
+R6	RESULT Arg1:T10 Arg2:T3	
+R8	REASON Arg1:T12 Arg2:T4	
+R9	RESULT Arg1:T12 Arg2:T5	
+T25	Connective 177 181	場合には
+T26	Argument 160 174	レリーズロッドが室内側に倒れ
+R10	CONDITION Arg1:T25 Arg2:T26	
+R11	RESULT Arg1:T25 Arg2:T5	
+T27	Argument 202 204	最悪
+T28	Connective 205 207	場合
+R12	RESULT Arg1:T28 Arg2:T6	
+R13	CONDITION Arg1:T28 Arg2:T27	
+R14	RESULT Arg1:T13 Arg2:T6	
+R15	REASON Arg1:T13 Arg2:T5	
+T11	Argument 0 5	高外気温下
+T14	Connective 8 9	て
+R17	CONDITION Arg1:T14 Arg2:T11	
+R18	RESULT Arg1:T14 Arg2:T7	
+T15	Connective 126 131	この場合に
+R7	CONDITION Arg1:T15 Arg2:T2	
+R16	RESULT Arg1:T15 Arg2:T5	
+T16	Connective 146 147	で
+T17	Argument 132 142	ドアロック装置を解除
+R19	CONDITION Arg1:T16 Arg2:T17	
+R20	RESULT Arg1:T16 Arg2:T4	

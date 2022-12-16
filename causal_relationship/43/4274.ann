@@ -1,0 +1,33 @@
+T1	Connective 41 43	ため
+T2	Argument 0 40	ロード・ローラの静油圧式無段変速機（ＨＳＴ）の走行用油圧ホースの取付指示が不適切
+R1	REASON Arg1:T1 Arg2:T2	
+T3	Argument 44 65	走行用油圧ホースがフレームの鋭角部分に接触
+T4	Connective 73 77	そのため
+T5	Argument 102 113	走行用油圧ホースが損傷
+T6	Argument 115 121	作動油が漏れ
+T7	Connective 121 122	、
+T8	Argument 128 133	油圧が低下
+T9	Connective 134 135	て
+T10	Argument 135 142	走行不能となる
+R2	RESULT Arg1:T4 Arg2:T5	
+T11	Connective 114 115	、
+R3	REASON Arg1:T11 Arg2:T5	
+R4	RESULT Arg1:T11 Arg2:T6	
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T8	
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T10	
+T12	Argument 94 99	走行振動等
+T13	Connective 99 102	により
+R9	REASON Arg1:T13 Arg2:T12	
+R10	RESULT Arg1:T13 Arg2:T5	
+T14	Argument 78 92	そのままの状態で使用を続ける
+T15	Connective 92 93	と
+R11	CONDITION Arg1:T15 Arg2:T14	
+R12	RESULT Arg1:T15 Arg2:T5	
+T16	Argument 122 124	最悪
+T17	Connective 125 127	場合
+R13	CONDITION Arg1:T17 Arg2:T16	
+R14	RESULT Arg1:T17 Arg2:T8	
+R15	RESULT Arg1:T1 Arg2:T3	
+R16	REASON Arg1:T4 Arg2:T3	

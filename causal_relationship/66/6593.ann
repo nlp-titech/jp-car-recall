@@ -1,0 +1,25 @@
+T1	Argument 8 21	番号灯ケースの材料が不適切
+T2	Connective 22 24	ため
+T3	Argument 25 37	ウォッシャー液等の洗浄剤
+T4	Connective 37 40	により
+T5	Argument 40 51	当該ケースが早期に劣化
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 59 63	そのため
+T7	Argument 64 78	そのままの状態で使用を続ける
+T8	Connective 78 79	と
+T9	Argument 80 93	番号灯ケースの固定部が破損
+T10	Connective 94 95	、
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T11	Argument 95 97	最悪
+T12	Connective 98 100	場合
+T13	Argument 101 107	番号灯が脱落
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	

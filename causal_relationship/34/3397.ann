@@ -1,0 +1,29 @@
+T1	Argument 0 76	前輪緩衝装置のロアアームとナックルアームを連結しているボールジョイントにおいて、ナックルアームとボールジョイントを締結した後の部品搬送工程の管理が不適切
+T2	Connective 77 79	ため
+T3	Argument 80 104	搬送設備がボールジョイントのゴム製ブーツ部と干渉
+T4	Connective 105 106	て
+T5	Argument 107 113	ブーツが損傷
+T6	Connective 121 125	そのため
+T7	Argument 126 141	ブーツ損傷部からグリースが漏れ
+T8	Argument 143 157	ボールジョイントが早期に摩耗
+T9	Connective 158 159	、
+T10	Argument 159 161	最悪
+T11	Connective 162 164	場合
+T12	Argument 165 185	ボールジョイントがナックルアームから外れ
+T13	Connective 185 186	、
+T14	Argument 186 193	走行不能になる
+R1	RESULT Arg1:T13 Arg2:T14	
+R2	REASON Arg1:T13 Arg2:T12	
+R3	RESULT Arg1:T11 Arg2:T12	
+R4	CONDITION Arg1:T11 Arg2:T10	
+R5	RESULT Arg1:T9 Arg2:T12	
+R6	REASON Arg1:T9 Arg2:T8	
+T15	Connective 141 142	て
+R7	RESULT Arg1:T15 Arg2:T8	
+R8	REASON Arg1:T15 Arg2:T7	
+R9	RESULT Arg1:T6 Arg2:T7	
+R10	REASON Arg1:T6 Arg2:T5	
+R11	RESULT Arg1:T4 Arg2:T5	
+R12	REASON Arg1:T4 Arg2:T3	
+R13	RESULT Arg1:T2 Arg2:T3	
+R14	REASON Arg1:T2 Arg2:T1	

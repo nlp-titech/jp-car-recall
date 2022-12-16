@@ -1,0 +1,14 @@
+T1	Argument 9 42	計器パネルの下側にある部分（ニーブロッカー）の組み付け状態が不適切
+T2	Connective 48 50	ため
+T3	Argument 60 78	ニーブロッカーが運転者の、足元に落下
+T4	Connective 85 86	、
+T5	Argument 86 93	運転操作を妨げ
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 51 58	走行中の振動等
+T7	Connective 58 60	によ
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+#1	AnnotatorNotes T7	脱字「により」

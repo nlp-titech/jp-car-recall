@@ -1,0 +1,39 @@
+T1	Argument 8 16	ダンパの容量不足
+T2	Connective 17 19	ため
+T3	Argument 19 34	エンジンに過大な捩り振動が発生
+T4	Connective 35 36	、
+T5	Argument 57 74	ダンパ一体形のクランクプーリが滑る
+T6	Connective 80 84	そのため
+T7	Argument 85 99	そのままの状態で使用を続ける
+T8	Connective 99 100	と
+T9	Argument 100 108	当該プーリが破損
+T10	Argument 111 129	クランクシャフトのプーリ取付部が折損
+T11	Connective 143 144	、
+T12	Argument 144 146	最悪
+T13	Connective 147 149	場合
+T14	Argument 150 154	充電不良
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	RESULT Arg1:T6 Arg2:T9	
+R9	RESULT Arg1:T8 Arg2:T10	
+R10	RESULT Arg1:T6 Arg2:T10	
+R11	REASON Arg1:T11 Arg2:T10	
+R12	CONDITION Arg1:T13 Arg2:T12	
+R13	RESULT Arg1:T13 Arg2:T14	
+T15	Argument 135 143	補機ベルトが外れ
+T16	Connective 132 135	ともに
+R15	REASON Arg1:T16 Arg2:T10	
+R16	REASON Arg1:T16 Arg2:T9	
+R17	RESULT Arg1:T16 Arg2:T15	
+R18	REASON Arg1:T11 Arg2:T15	
+T17	Argument 155 163	冷却水温度の上昇
+T18	Argument 165 177	ハンドルの操作が重くなる
+R19	RESULT Arg1:T13 Arg2:T17	
+R20	RESULT Arg1:T13 Arg2:T18	
+R22	RESULT Arg1:T11 Arg2:T17	
+R23	RESULT Arg1:T11 Arg2:T18	

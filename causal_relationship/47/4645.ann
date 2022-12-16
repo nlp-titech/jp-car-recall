@@ -1,0 +1,17 @@
+T1	Argument 17 54	ブレーキキャリパ固定用ロッドをブラケットに取り付けているボルトの寸法が短い
+T2	Connective 54 56	ため
+T3	Argument 90 99	当該ロッドが外れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T6	Argument 73 80	走行時の振動等
+T7	Connective 80 83	により
+R3	REASON Arg1:T7 Arg2:T6	
+R4	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 57 71	そのままの状態で使用を続ける
+T9	Connective 71 72	と
+R5	CONDITION Arg1:T9 Arg2:T8	
+R6	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 84 86	最悪
+T11	Connective 87 89	場合
+R7	CONDITION Arg1:T11 Arg2:T10	
+R8	RESULT Arg1:T11 Arg2:T3	

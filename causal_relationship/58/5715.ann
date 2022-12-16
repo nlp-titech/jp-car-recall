@@ -1,0 +1,21 @@
+T1	Argument 20 32	ブリーザーホースが不適切
+T2	Connective 33 35	ため
+T3	Argument 36 56	エンジンがかかった状態で車両が左側に転倒
+T4	Connective 58 59	際
+T5	Argument 60 82	エンジンオイルがエアクリーナボックス内に浸入
+R1	CONDITION Arg1:T4 Arg2:T3	
+R2	RESULT Arg1:T4 Arg2:T5	
+R3	REASON Arg1:T2 Arg2:T1	
+R4	RESULT Arg1:T2 Arg2:T5	
+T6	Connective 90 94	そのため
+T7	Argument 95 100	車両を起こ
+T8	Connective 102 104	とき
+T9	Argument 121 138	エンジンオイルが原動機内に流れ込み
+R5	REASON Arg1:T6 Arg2:T5	
+T10	Argument 139 146	エンジンが損傷
+R6	RESULT Arg1:T6 Arg2:T9	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T11	Connective 138 139	、
+R9	REASON Arg1:T11 Arg2:T9	
+R10	RESULT Arg1:T11 Arg2:T10	

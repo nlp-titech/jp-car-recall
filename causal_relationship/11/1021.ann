@@ -1,0 +1,17 @@
+T1	Argument 0 20	エキゾーストパイプの蛇管部分の強度が不足
+T2	Connective 24 26	ため
+T3	Argument 27 38	エンジンリターダを使用
+T4	Connective 40 42	場合
+T5	Argument 43 55	エキゾーストパイプが共振
+T6	Connective 56 57	、
+T7	Argument 57 69	当該蛇管部分に亀裂が発生
+T8	Connective 77 81	そのため
+T9	Argument 82 96	当該部分から排出ガスが漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T7	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	

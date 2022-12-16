@@ -1,0 +1,21 @@
+T1	Argument 1 46	ブレーキ倍力装置に負圧を供給するブレーキ負圧電動ポンプにおいて、内部のロータの加工が不適切
+T2	Connective 47 49	ため
+T3	Argument 50 61	先端が鋭利な形状となっ
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 70 74	そのため
+T5	Argument 87 96	ロータの先端が欠け
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 97 107	負圧ポンプが作動せず
+T7	Connective 96 97	、
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	
+T8	Connective 107 108	、
+T9	Argument 108 117	制動距離が長くなる
+R7	REASON Arg1:T8 Arg2:T6	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 75 85	そのまま使用を続ける
+T11	Connective 85 86	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	

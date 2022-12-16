@@ -1,0 +1,17 @@
+T1	Argument 0 54	大型ノンステップバスにおいて、前軸トルクロッド取付ブラケットとクロスメンバの溶接箇所の一部が溶接されていない
+T2	Connective 60 64	そのため
+T3	Argument 81 87	溶接が剥がれ
+T4	Connective 87 88	、
+T5	Argument 94 107	ハンドル操作が不安定になる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 65 79	そのままの状態で使用を続ける
+T7	Connective 79 80	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 88 90	最悪
+T9	Connective 91 93	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

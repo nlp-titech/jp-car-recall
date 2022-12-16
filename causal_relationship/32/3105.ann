@@ -1,0 +1,19 @@
+T1	Argument 0 22	クラッチマスターシリンダー溶着部の強度が不足
+T2	Connective 26 28	ため
+T3	Argument 29 45	クラッチマスターシリンダーが破損
+T4	Connective 46 47	、
+T5	Argument 47 55	フルードが漏れる
+T8	Argument 72 85	クラッチ操作ができなくなる
+T9	Connective 85 87	ため
+T10	Argument 88 101	変速ギヤのチェンジができず
+R1	RESULT Arg1:T9 Arg2:T10	
+R2	REASON Arg1:T9 Arg2:T8	
+R5	RESULT Arg1:T4 Arg2:T5	
+R6	REASON Arg1:T4 Arg2:T3	
+R7	RESULT Arg1:T2 Arg2:T3	
+R8	REASON Arg1:T2 Arg2:T1	
+T11	Connective 60 61	。
+R4	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T8	
+T12	Argument 105 115	停止後に発進できなく
+R11	RESULT Arg1:T9 Arg2:T12	

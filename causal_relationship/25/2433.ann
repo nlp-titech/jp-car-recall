@@ -1,0 +1,25 @@
+T1	Argument 10 36	ドアミラー本体とベースを締結するネジに緩み止めが無い
+T2	Connective 36 38	ため
+T3	Argument 62 69	当該ネジが緩み
+T4	Connective 69 70	、
+T5	Argument 92 107	ドアミラー本体がベースから外れ
+T6	Connective 107 108	、
+T7	Argument 108 125	後方の交通状況等が確認できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T10	Argument 47 61	振動や強めの外力によるへたり
+T11	Connective 61 62	で
+R9	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	
+T12	Argument 70 84	そのままの状態で使用を続ける
+T13	Connective 84 85	と
+T14	Argument 86 88	最悪
+T15	Connective 89 91	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T5	
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T5	

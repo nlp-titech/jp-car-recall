@@ -1,0 +1,22 @@
+T1	Argument 15 50	ＥＧＲクーラーおよびＥＧＲバルブハウジングにおいて、一部の材質が不適切
+T2	Connective 51 53	ため
+T3	Argument 53 65	排気ガス凝縮水により腐食
+T4	Connective 66 67	、
+T5	Argument 67 82	腐食片がＥＧＲバルブに噛み込ん
+T8	Connective 114 118	そのため
+T9	Argument 119 126	燃焼不良となり
+T10	Connective 126 127	、
+T11	Argument 127 131	エンスト
+R1	RESULT Arg1:T10 Arg2:T11	
+R2	REASON Arg1:T10 Arg2:T9	
+R3	RESULT Arg1:T8 Arg2:T9	
+R7	RESULT Arg1:T4 Arg2:T5	
+R8	REASON Arg1:T4 Arg2:T3	
+R9	RESULT Arg1:T2 Arg2:T3	
+R10	REASON Arg1:T2 Arg2:T1	
+R4	REASON Arg1:T8 Arg2:T5	
+T6	Argument 85 103	ＥＧＲバルブハウジングに穴あきが発生
+R5	REASON Arg1:T8 Arg2:T6	
+R6	RESULT Arg1:T4 Arg2:T6	
+T7	Argument 132 140	再始動不能に至る
+R11	RESULT Arg1:T10 Arg2:T7	

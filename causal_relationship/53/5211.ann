@@ -1,0 +1,37 @@
+T1	Argument 21 55	ブローバイガスの逆止弁の（バックプレッシャーバルブ）内面加工に不適切
+T2	Connective 61 63	ため
+T3	Argument 64 75	当該バルブが引っ掛かっ
+T4	Connective 75 76	て
+T5	Argument 76 78	固着
+T6	Connective 79 80	、
+T8	Connective 92 93	ず
+T9	Argument 93 95	上昇
+T10	Connective 103 107	そのため
+T11	Argument 108 128	シリンダーヘッドカバーのガスケットが抜け
+T12	Connective 128 129	て
+T13	Argument 129 135	オイルが漏れ
+T14	Connective 135 136	、
+T15	Argument 142 155	漏れたオイルがタイヤに付着
+T16	Connective 156 157	、
+T17	Argument 157 162	転倒に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	REASON Arg1:T6 Arg2:T5	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R15	REASON Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T17	
+T18	Argument 136 138	最悪
+T19	Connective 139 141	場合
+R17	CONDITION Arg1:T19 Arg2:T18	
+R18	RESULT Arg1:T19 Arg2:T15	
+T7	Argument 80 93	エンジン内圧が適切に抜けず
+R5	REASON Arg1:T8 Arg2:T7	
+R6	RESULT Arg1:T6 Arg2:T7	

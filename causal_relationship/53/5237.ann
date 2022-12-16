@@ -1,0 +1,9 @@
+T1	Argument 0 26	後写鏡の取り付け位置が正規位置と異なる位置に取り付け
+T2	Connective 34 35	、
+T3	Argument 35 54	ミラーの角度調整が規定どおりにできない
+T4	Connective 54 56	ため
+T5	Argument 57 70	後方視界の確保が困難になる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

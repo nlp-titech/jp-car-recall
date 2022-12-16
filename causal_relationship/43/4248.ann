@@ -1,0 +1,5 @@
+T1	Argument 0 46	トラクタのプラットホーム上部に架装した大型棚右側面のロープフックにおいて、取付け指示が不適切
+T2	Connective 47 49	ため
+T3	Argument 50 73	車両の全幅が道路運送車両の保安基準に適合しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

@@ -1,0 +1,25 @@
+T1	Argument 11 60	燃料タンク内部のバッフルプレート（燃料液面の揺動を抑止する仕切板）を燃料タンクに溶接する強度が不足
+T2	Connective 64 66	ため
+T3	Argument 67 86	燃料の揺動によりバッフルプレートが変動
+T4	Connective 87 88	て
+T5	Argument 89 99	スポット溶接部に亀裂
+T6	Connective 109 113	そのため
+T7	Argument 114 124	そのまま使用を続ける
+T8	Connective 124 125	と
+T9	Argument 126 138	亀裂が燃料タンクまで進行
+T10	Connective 139 140	、
+T11	Argument 140 142	最悪
+T12	Connective 143 145	場合
+T13	Argument 146 152	燃料が漏れる
+R1	RESULT Arg1:T12 Arg2:T13	
+R2	CONDITION Arg1:T12 Arg2:T11	
+R3	RESULT Arg1:T10 Arg2:T13	
+R4	REASON Arg1:T10 Arg2:T9	
+R5	RESULT Arg1:T8 Arg2:T9	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T9	
+R8	REASON Arg1:T6 Arg2:T5	
+R9	RESULT Arg1:T4 Arg2:T5	
+R10	REASON Arg1:T4 Arg2:T3	
+R11	RESULT Arg1:T2 Arg2:T3	
+R12	REASON Arg1:T2 Arg2:T1	

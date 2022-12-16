@@ -1,0 +1,21 @@
+T1	Argument 0 40	後輪駆動用チェーンの構成部品の製造工程に於いて不適切な熱処理が行われたものが混入
+T2	Argument 83 92	当該チェーンが破損
+T3	Argument 106 113	走行不能となる
+T4	Connective 42 44	ため
+T5	Connective 94 96	場合
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	
+T8	Connective 59 60	と
+T9	Argument 45 59	このままの状態で使用を続ける
+R5	CONDITION Arg1:T8 Arg2:T9	
+R6	RESULT Arg1:T8 Arg2:T2	
+T6	Connective 103 105	場合
+T7	Argument 100 102	最悪
+R7	CONDITION Arg1:T6 Arg2:T7	
+R8	RESULT Arg1:T6 Arg2:T3	
+T10	Argument 61 82	凍結防止剤が散布されている等の特定の環境下
+T11	Connective 82 83	で
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T2	

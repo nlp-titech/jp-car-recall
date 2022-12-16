@@ -1,0 +1,21 @@
+T1	Argument 0 39	電気式フォークリフトにおいて、電源コントローラ内の配線の組付け作業指示が不適切
+T2	Connective 40 42	ため
+T3	Argument 43 62	当該配線の接続部が他の配線接続部に接触
+T4	Connective 70 74	そのため
+T5	Argument 87 109	電源コントローラ内の制御基板の電子部品が破損
+T6	Connective 110 111	、
+T7	Argument 117 128	車両が走行できなくなる
+R1	REASON Arg1:T6 Arg2:T5	
+R2	RESULT Arg1:T6 Arg2:T7	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T2 Arg2:T1	
+R6	RESULT Arg1:T2 Arg2:T3	
+T12	Argument 75 85	そのまま使用を続ける
+T13	Connective 85 86	と
+R7	CONDITION Arg1:T13 Arg2:T12	
+R8	RESULT Arg1:T13 Arg2:T5	
+T14	Argument 111 113	最悪
+T15	Connective 114 116	場合
+R9	CONDITION Arg1:T15 Arg2:T14	
+R10	RESULT Arg1:T15 Arg2:T7	

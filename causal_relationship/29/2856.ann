@@ -1,0 +1,25 @@
+T1	Argument 0 27	大型トラクタにおいて、ブレーキバルブの製造工程が不適切
+T2	Connective 28 30	ため
+T3	Argument 31 65	ブレーキペダルにより作動するプランジャーが芯ずれにより摺動不良となる
+T4	Connective 71 75	そのため
+T5	Argument 92 105	ブレーキバルブの戻りが悪く
+T6	Argument 127 132	火災に至る
+T7	Connective 120 121	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T7 Arg2:T8	
+R6	RESULT Arg1:T7 Arg2:T6	
+T10	Argument 76 90	そのままの状態で使用を続ける
+T11	Connective 90 91	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	
+T12	Argument 121 123	最悪
+T13	Connective 124 126	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T6	
+T8	Argument 105 120	ブレーキが引きずった状態となり
+T9	Connective 104 105	く
+R7	REASON Arg1:T9 Arg2:T5	
+R8	RESULT Arg1:T9 Arg2:T8	

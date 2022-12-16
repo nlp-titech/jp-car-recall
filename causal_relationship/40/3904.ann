@@ -1,0 +1,23 @@
+T1	Argument 23 39	油路切替レバー支点部の強度が不足
+T2	Argument 46 63	想定外の素早いシフト操作を繰り返す
+T3	Argument 64 70	支点部が摩耗
+T4	Argument 72 78	ガタが生じる
+T5	Argument 89 111	シフト位置に応じた油路の切替えができなくなり
+T6	Argument 112 119	走行不能になっ
+T7	Argument 122 134	Ｐレンジ以外で前進や後退
+T8	Connective 43 45	ため
+T9	Connective 63 64	と
+T10	Connective 71 72	て
+T11	Connective 84 88	そのため
+T12	Connective 111 112	、
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T3	
+R3	CONDITION Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T3	
+R5	REASON Arg1:T10 Arg2:T3	
+R6	RESULT Arg1:T10 Arg2:T4	
+R7	REASON Arg1:T11 Arg2:T4	
+R8	RESULT Arg1:T11 Arg2:T5	
+R9	REASON Arg1:T12 Arg2:T5	
+R10	RESULT Arg1:T12 Arg2:T6	
+R11	RESULT Arg1:T12 Arg2:T7	

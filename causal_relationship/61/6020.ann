@@ -1,0 +1,17 @@
+T1	Argument 0 26	灯火装置用ヒューズの端子部のコーティング材質が不適切
+T2	Connective 27 29	ため
+T3	Connective 59 63	によって
+T4	Argument 42 57	端子部分の傷に熱の影響が加わる
+T5	Argument 64 78	非電導物質（酸化亜鉛）が生成
+T6	Connective 80 81	、
+T7	Argument 81 88	接触不良が発生
+T8	Connective 91 95	そのため
+T9	Argument 96 156	前照灯、前部霧灯、車幅灯、番号灯、尾灯、後部霧灯、制動灯、補助制動灯、後退灯及び方向指示器の一部、または複数が不灯になる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T4	
+R3	REASON Arg1:T3 Arg2:T4	
+R4	RESULT Arg1:T3 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	

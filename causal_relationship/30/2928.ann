@@ -1,0 +1,25 @@
+T1	Argument 0 32	メインハーネスから電気回路を分岐させるコネクタ部がテープで覆われ
+T2	Connective 35 37	ため
+T9	Connective 84 85	と
+T12	Argument 86 116	溜まった水が電線内の芯線を伝わって後輪用制動灯スイッチまで達
+T13	Connective 124 128	そのため
+T14	Argument 129 138	スイッチ接点が錆び
+T15	Connective 138 139	て
+T16	Argument 139 146	導通不良となり
+T19	Argument 147 164	後輪制動時に制動灯が点灯しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+T6	Argument 44 74	メインハーネス先端より浸入した雨水等が保護チューブ内を伝わり
+R13	REASON Arg1:T13 Arg2:T12	
+R14	RESULT Arg1:T13 Arg2:T14	
+R15	REASON Arg1:T15 Arg2:T14	
+R16	RESULT Arg1:T15 Arg2:T16	
+T21	Connective 146 147	、
+R17	REASON Arg1:T21 Arg2:T16	
+R18	RESULT Arg1:T21 Arg2:T19	
+R2	RESULT Arg1:T2 Arg2:T12	
+R3	RESULT Arg1:T9 Arg2:T12	
+T3	Argument 74 84	コネクタ部が浸水する
+R4	CONDITION Arg1:T9 Arg2:T3	
+T4	Connective 73 74	り
+R5	REASON Arg1:T4 Arg2:T6	
+R6	RESULT Arg1:T4 Arg2:T3	

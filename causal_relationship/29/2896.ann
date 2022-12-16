@@ -1,0 +1,15 @@
+T1	Argument 0 54	中小型トラック、小型バスに搭載された原動機において、燃料パイプ製造時に発生するコネクタ部内部のしわにばらつき
+T3	Argument 61 78	パイプコネクタ部の締付トルクが低い
+T4	Connective 84 88	このため
+T5	Argument 89 99	高い燃料圧力が加わる
+T6	Connective 101 104	により
+T7	Argument 105 121	当該しわ部を起点とした亀裂が発生
+T8	Connective 122 123	、
+T9	Argument 123 129	燃料が漏れる
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R1	REASON Arg1:T4 Arg2:T1	

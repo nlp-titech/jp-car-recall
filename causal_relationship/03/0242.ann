@@ -1,0 +1,17 @@
+T1	Argument 0 32	エアバックコントロールユニットの電気ノイズを除去する回路が不適切
+T2	Argument 36 53	原動機の始動時に発生する電源ノイズ
+T3	Argument 56 69	コントロールユニットが損傷
+T4	Argument 83 95	走行中にエアバックが展開
+T5	Connective 33 35	ため
+T6	Connective 53 56	により
+T7	Connective 76 77	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T3	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 77 79	最悪
+T9	Connective 80 82	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T4	

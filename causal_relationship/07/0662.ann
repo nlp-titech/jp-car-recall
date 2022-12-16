@@ -1,0 +1,21 @@
+T1	Argument 0 37	キャブレタの加速ポンプ室内のダイヤフラムに厚さ寸法が不適切なものを組み付け
+T3	Argument 61 70	ダイヤフラムが膨潤
+T4	Argument 75 89	ダイヤフラム内部の応力が過大
+T5	Argument 92 94	破損
+T6	Argument 107 117	そのまま使用を続ける
+T7	Argument 119 143	加速ポンプのロッド上部のブーツ部から燃料が漏れる
+T8	Connective 38 40	ため
+T10	Connective 72 74	場合
+T11	Connective 89 92	となり
+T12	Connective 102 106	そのため
+T13	Connective 117 118	と
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T4	
+R5	CONDITION Arg1:T10 Arg2:T3	
+R6	RESULT Arg1:T10 Arg2:T4	
+R7	REASON Arg1:T11 Arg2:T4	
+R8	RESULT Arg1:T11 Arg2:T5	
+R9	REASON Arg1:T12 Arg2:T5	
+R10	RESULT Arg1:T12 Arg2:T7	
+R11	CONDITION Arg1:T13 Arg2:T6	
+R12	RESULT Arg1:T13 Arg2:T7	

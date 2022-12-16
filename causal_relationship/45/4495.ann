@@ -1,0 +1,21 @@
+T1	Argument 0 24	原動機を制御するコンピュータのプログラムが不適切
+T2	Connective 25 27	ため
+T3	Argument 53 87	ＥＧＲバルブ（排出ガスを減少させるための排気ガス再循環装置）が誤作動
+T4	Connective 88 89	て
+T5	Argument 89 102	原動機の回転が不安定になり
+T6	Connective 102 103	、
+T7	Argument 109 115	原動機が停止
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 28 49	低速走行時に減速のためアクセルペダルを離し
+T9	Connective 50 52	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 103 105	最悪
+T11	Connective 106 108	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T7	

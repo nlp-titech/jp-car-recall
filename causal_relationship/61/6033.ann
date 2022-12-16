@@ -1,0 +1,13 @@
+T1	Argument 0 74	エンジンマネージメントシステムのＥＣＭ（エレクトリックコントロールモジュール）において、スロットルポジションセンサーからの信号の異常判定方法が不適切
+T2	Connective 75 77	ため
+T3	Argument 78 99	車両振動等により発生するノイズを異常と判定
+T4	Connective 107 111	その場合
+T5	Argument 112 124	フェールセーフ機能が作動
+T6	Connective 125 126	て
+T7	Argument 126 133	エンジンが停止
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

@@ -1,0 +1,5 @@
+T1	Argument 1 45	前面方向指示器の意匠を変更した車両の前面方向指示器において、ワット数の異なるバルブを使用
+T2	Connective 47 49	ため
+T3	Argument 50 78	前方方向１００ｍの位置から昼間において点灯を確認できない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

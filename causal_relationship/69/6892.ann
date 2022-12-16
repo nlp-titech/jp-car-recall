@@ -1,0 +1,21 @@
+T1	Argument 13 33	配管（フィードホース）の支持位置が不適切
+T2	Connective 34 36	ため
+T3	Argument 37 48	ホースが過度に曲げられ
+T4	Connective 48 49	て
+T5	Argument 49 61	当該部分に過大な力がかか
+T6	Connective 61 62	り
+T7	Argument 62 68	亀裂が生じる
+T8	Connective 74 78	そのため
+T9	Argument 79 94	パワーステアリングオイルが漏れ
+T10	Connective 94 95	て
+T11	Argument 96 110	かじ取ハンドルの操作力が増大
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	

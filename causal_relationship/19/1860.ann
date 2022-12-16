@@ -1,0 +1,25 @@
+T1	Argument 0 20	暖房用熱交換器の格納箱の防水構造が不適切
+T2	Connective 21 23	ため
+T3	Argument 24 36	融雪剤を含んだ水分が侵入
+T4	Connective 37 38	、
+T5	Argument 38 66	熱交換器の送風用モータのハーネスコネクタ部で漏電を起こす
+T6	Connective 72 76	そのため
+T7	Argument 89 99	当該コネクタ部が発熱
+T8	Connective 100 101	、
+T9	Argument 107 119	ハーネスコネクタ部が発火
+R1	REASON Arg1:T8 Arg2:T7	
+R2	RESULT Arg1:T8 Arg2:T9	
+R3	REASON Arg1:T6 Arg2:T5	
+R4	RESULT Arg1:T6 Arg2:T7	
+R5	REASON Arg1:T2 Arg2:T1	
+R6	RESULT Arg1:T2 Arg2:T5	
+R7	CONDITION Arg1:T4 Arg2:T3	
+R8	RESULT Arg1:T4 Arg2:T5	
+T15	Argument 77 87	そのまま使用を続ける
+T16	Connective 87 88	と
+R9	CONDITION Arg1:T16 Arg2:T15	
+R10	RESULT Arg1:T16 Arg2:T7	
+T18	Argument 101 103	最悪
+T19	Connective 104 106	場合
+R11	CONDITION Arg1:T19 Arg2:T18	
+R12	RESULT Arg1:T19 Arg2:T9	

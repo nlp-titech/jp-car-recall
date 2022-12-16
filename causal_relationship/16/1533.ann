@@ -1,0 +1,5 @@
+T1	Argument 19 69	後退警報装置を装着した車両において、車両側の電気配線に追加する割り込み用の端子の配線接続を誤って製造
+T3	Argument 82 100	制動操作時に右側の制動灯が点灯しない
+T4	Connective 77 81	そのため
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T3	

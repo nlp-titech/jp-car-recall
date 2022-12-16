@@ -1,0 +1,9 @@
+T1	Argument 0 42	座席ベルト巻取装置の内部部品（イナーシャマス）の製造工程において、不適切な材料を使用
+T2	Connective 44 46	ため
+T3	Argument 47 54	当該部品が変形
+T4	Connective 55 56	、
+T5	Argument 56 70	座席ベルトが引き出せなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

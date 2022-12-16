@@ -1,0 +1,21 @@
+T1	Argument 0 28	燃料装置において、エンジン運転検査時に変質した燃料を使用
+T2	Argument 33 58	キャブレターの加速ポンプ室内のダイヤフラムが侵され
+T3	Argument 58 60	膨潤
+T4	Argument 85 94	ダイヤフラムが破損
+T5	Argument 96 120	加速ポンプのロッド上部のブーツ部から燃料が漏れる
+T6	Connective 30 32	ため
+T8	Connective 69 70	、
+T9	Connective 95 96	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+T7	Connective 57 58	れ
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+T10	Argument 70 84	そのままの状態で使用を続ける
+T11	Connective 84 85	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T4	

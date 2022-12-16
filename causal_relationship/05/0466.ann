@@ -1,0 +1,27 @@
+T1	Argument 0 29	緩衝装置において、トランスバースリンクのピンの材質が不適切
+T2	Argument 51 58	当該ピンが折損
+T3	Argument 60 65	異音が発生
+T4	Argument 95 104	タイヤの位置がずれ
+T5	Argument 105 119	ホイールハウスインナーに干渉
+T6	Connective 30 32	ため
+T7	Connective 59 60	て
+T9	Connective 104 105	て
+T10	Connective 120 121	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+R9	REASON Arg1:T10 Arg2:T5	
+T11	Argument 121 132	走行安定性が損なわれる
+R10	RESULT Arg1:T10 Arg2:T11	
+T14	Argument 33 47	走行時における路面からの衝撃
+T15	Connective 47 50	により
+R11	REASON Arg1:T15 Arg2:T14	
+R12	RESULT Arg1:T15 Arg2:T2	
+T13	Argument 73 91	急制動、急旋回等の急激な操作を行なっ
+T16	Connective 92 94	場合
+R14	CONDITION Arg1:T16 Arg2:T13	
+R15	RESULT Arg1:T16 Arg2:T4	
+R5	RESULT Arg1:T7 Arg2:T4	

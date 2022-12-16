@@ -1,0 +1,17 @@
+T1	Argument 1 32	ＣＦＲＰ製の荷台において、ウイングの強風時等に対する強度が不足
+T2	Connective 36 38	ため
+T5	Argument 39 53	強風時等にウイング操作を行っ
+T6	Connective 54 56	場合
+T3	Argument 57 66	当該ウイングが破損
+T4	Connective 67 68	、
+T7	Argument 68 70	最悪
+T8	Connective 71 73	場合
+T9	Argument 74 93	当該ウイングのサイドパネルが分離、脱落
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	CONDITION Arg1:T6 Arg2:T5	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T4 Arg2:T3	
+R6	RESULT Arg1:T4 Arg2:T9	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	

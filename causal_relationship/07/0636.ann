@@ -1,0 +1,21 @@
+T1	Argument 0 49	パワステアリングロッドとブラケットを連結しているピンをブラケットに固定するための板部分の強度が不足
+T2	Argument 71 82	当該板部分に亀裂が発生
+T3	Argument 101 108	ピンが抜け出し
+T4	Argument 109 116	操舵不能になる
+T5	Connective 90 94	そのため
+T6	Connective 53 55	ため
+T7	Connective 108 109	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 56 69	ハンドル操作を繰り返し行う
+T9	Connective 69 70	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T2	
+T10	Argument 95 97	最悪
+T11	Connective 98 100	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	

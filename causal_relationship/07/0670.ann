@@ -1,0 +1,27 @@
+T1	Argument 0 18	前２軸車において、車枠の塗装が不適切
+T2	Argument 22 51	塗料の垂れが生じた状態でアイドラアームブラケットを取り付け
+T4	Argument 58 69	かじ取り操作の繰り返し
+T5	Argument 72 90	当該ブラケットの取り付けボルトが緩む
+T6	Argument 101 114	かじ取り操作時にガタが発生
+T7	Argument 116 118	最悪
+T8	Argument 122 132	当該ブラケットが外れ
+T9	Argument 133 145	かじ取り操作が不能となる
+T10	Connective 19 21	ため
+T12	Connective 57 58	、
+T13	Connective 69 72	により
+T14	Connective 96 100	そのため
+T16	Connective 119 121	場合
+T17	Connective 132 133	て
+R1	REASON Arg1:T10 Arg2:T1	
+R2	RESULT Arg1:T10 Arg2:T2	
+R6	RESULT Arg1:T12 Arg2:T5	
+R7	REASON Arg1:T13 Arg2:T4	
+R8	RESULT Arg1:T13 Arg2:T5	
+R9	REASON Arg1:T14 Arg2:T5	
+R10	RESULT Arg1:T14 Arg2:T6	
+R13	CONDITION Arg1:T16 Arg2:T7	
+R14	RESULT Arg1:T16 Arg2:T8	
+R15	REASON Arg1:T17 Arg2:T8	
+R16	RESULT Arg1:T17 Arg2:T9	
+R3	REASON Arg1:T12 Arg2:T2	
+R4	RESULT Arg1:T14 Arg2:T8	

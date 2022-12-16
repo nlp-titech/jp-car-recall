@@ -1,0 +1,23 @@
+T1	Argument 0 34	ワイパースイッチに取付けられている間欠作動用リレーの接点配置が不適切
+T2	Connective 35 37	ため
+T3	Argument 53 61	接点が摩耗・脱落
+T4	Connective 75 79	そのため
+T5	Argument 80 92	ワイパーが作動不良となり
+T7	Argument 99 108	リレーが発煙・焼損
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T8	Argument 38 50	間欠作動の使用頻度が高い
+T9	Connective 50 52	場合
+T10	Connective 62 63	て
+T11	Argument 63 67	ショート
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+R9	REASON Arg1:T10 Arg2:T3	
+R10	RESULT Arg1:T10 Arg2:T11	
+R3	REASON Arg1:T4 Arg2:T11	
+T12	Argument 93 95	最悪
+T13	Connective 96 98	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T7	
+R5	RESULT Arg1:T4 Arg2:T7	

@@ -1,0 +1,11 @@
+T3	Argument 15 54	洗浄液レベルセンサにおいて、ヘッドライト洗浄用ポンプにより生成される磁界の影響
+T4	Connective 54 57	により
+T5	Argument 58 72	当該センサが正常に機能しない
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 78 82	そのため
+T7	Argument 83 108	洗浄液の液量が低下しても警告メッセージが表示されず
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T9	Argument 109 124	洗浄液の液量低下を認知できない
+R1	RESULT Arg1:T6 Arg2:T9	

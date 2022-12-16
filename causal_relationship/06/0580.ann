@@ -1,0 +1,21 @@
+T1	Argument 0 55	かじ取り装置において、ギヤボックスをクロスメンバに固定するブラケット（２箇所のうち右側）の接合部の溶接に不適切
+T2	Argument 85 99	当該ブラケットの溶接部が損傷
+T3	Argument 101 117	異音やハンドルの遊びが大きくなり
+T4	Argument 124 136	確実な操舵ができなくなる
+T5	Connective 61 63	ため
+T6	Connective 100 101	、
+T7	Connective 117 118	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 64 83	ハンドル据え切り操作等を頻繁に繰り返す
+T9	Connective 83 84	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T2	
+T10	Argument 118 120	最悪
+T11	Connective 121 123	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T4	

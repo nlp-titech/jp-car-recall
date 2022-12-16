@@ -1,0 +1,17 @@
+T1	Argument 0 72	ブレーキペダルとブレーキマスターシリンダーへのプッシュロッドを留めているリテーナーのロックピン（ヘアピンクリップ）が、確実に取り付けられていない
+T2	Argument 80 88	ロックピンが欠損
+T3	Argument 93 110	プッシュロッドがペダルからはずれる
+T4	Argument 122 132	制動力が伝達されない
+T5	Connective 90 92	場合
+T6	Connective 115 116	、
+T7	Connective 77 78	。
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T3	
+R3	CONDITION Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	
+R5	REASON Arg1:T6 Arg2:T3	
+R6	RESULT Arg1:T6 Arg2:T4	
+T8	Argument 116 118	最悪
+T9	Connective 119 121	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T4	

@@ -1,0 +1,13 @@
+T1	Argument 0 41	衝突被害軽減ブレーキシステムにおいて、コントロールユニットの制御プログラムが不適切
+T2	Connective 42 44	ため
+T3	Argument 66 84	ブレーキ作動時間が必要以上に長くなる
+T4	Connective 90 94	そのため
+T5	Argument 95 115	運転者の不要な制動操作による急制動を誘発
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 45 62	前方に衝突可能性がある歩行者を検知
+T7	Connective 64 65	際
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	

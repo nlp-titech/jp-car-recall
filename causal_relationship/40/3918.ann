@@ -1,0 +1,29 @@
+T1	Argument 16 30	ヒーターホースの配索が不適切
+T2	Argument 34 55	燃料のリターンホースがヒーターホースと接触
+T3	Argument 57 60	曲がる
+T4	Argument 71 78	エンジンの振動
+T5	Argument 81 94	リターンホースに亀裂が生じ
+T6	Argument 95 109	そのままの状態で使用を続ける
+T7	Argument 111 116	亀裂が進展
+T8	Argument 118 133	リターンホースから燃料が漏れる
+T9	Connective 31 33	ため
+T10	Connective 56 57	て
+T11	Connective 66 70	そのため
+T12	Connective 78 81	により
+T13	Connective 94 95	、
+T14	Connective 109 110	と
+T15	Connective 117 118	、
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T2	
+R3	REASON Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T3	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T5	
+R7	REASON Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T5	
+R9	REASON Arg1:T13 Arg2:T5	
+R10	RESULT Arg1:T13 Arg2:T7	
+R11	CONDITION Arg1:T14 Arg2:T6	
+R12	RESULT Arg1:T14 Arg2:T7	
+R13	REASON Arg1:T15 Arg2:T7	
+R14	RESULT Arg1:T15 Arg2:T8	

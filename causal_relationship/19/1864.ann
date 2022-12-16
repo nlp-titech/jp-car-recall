@@ -1,0 +1,9 @@
+T1	Argument 0 45	高輝度放電式（ＨＩＤ）前照灯の自動式照射方向調節装置（レベラー）において、電気回路が不適切
+T2	Connective 46 48	ため
+T3	Argument 72 98	自動式照射方向調節装置（レベラー）が正常に作動しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 49 66	使用過程で回路接点に接触抵抗が発生
+T5	Connective 68 70	場合
+R3	CONDITION Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T3	

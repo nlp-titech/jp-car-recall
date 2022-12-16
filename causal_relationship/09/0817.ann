@@ -1,0 +1,9 @@
+T1	Argument 0 14	シフトフォークの加工が不適切
+T2	Argument 18 40	シフトレバーが２速の位置に十分に保持されない
+T3	Connective 15 17	ため
+T4	Connective 46 50	そのため
+R1	REASON Arg1:T3 Arg2:T1	
+R2	RESULT Arg1:T3 Arg2:T2	
+R3	REASON Arg1:T4 Arg2:T2	
+T7	Argument 51 97	シフトレバーを２速の位置に操作しているにもかかわらず、走行中にシフトレバーが中立の位置となる
+R4	RESULT Arg1:T4 Arg2:T7	

@@ -1,0 +1,34 @@
+T1	Argument 0 38	リアコンビネーションライトのバルブキャリアにおいて、コネクタ部の設計が不適切
+T2	Connective 39 41	ため
+T3	Argument 42 46	車両振動
+T4	Connective 46 49	により
+T5	Argument 49 56	接触不良が発生
+T6	Connective 57 58	、
+T7	Argument 58 69	その状態で灯火器が点灯
+T8	Connective 71 72	と
+T9	Argument 73 81	コネクタ部が発熱
+T10	Connective 107 108	と
+T11	Argument 90 107	長期間にわたって発熱が繰り返される
+T12	Argument 109 117	コネクタ部が溶損
+T13	Connective 118 119	、
+T14	Argument 119 123	導通不良
+T15	Connective 123 126	により
+T16	Argument 127 160	側方灯、尾灯、後部霧灯、制動灯、後退灯及び方向指示器が不点灯となり
+T17	Connective 160 161	、
+T18	Argument 161 167	警告灯が点灯
+R1	REASON Arg1:T2 Arg2:T1	
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T5	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	CONDITION Arg1:T10 Arg2:T11	
+R10	RESULT Arg1:T10 Arg2:T12	
+R11	REASON Arg1:T13 Arg2:T12	
+R12	REASON Arg1:T15 Arg2:T14	
+R13	RESULT Arg1:T13 Arg2:T16	
+R14	RESULT Arg1:T15 Arg2:T16	
+R15	REASON Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T18	

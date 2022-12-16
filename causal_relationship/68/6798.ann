@@ -1,0 +1,25 @@
+T1	Argument 0 28	燃料ポンプの作動装置において、サーキットリレーに組付不良
+T2	Connective 34 35	、
+T3	Argument 68 80	燃料ポンプが作動し続ける
+T4	Connective 80 82	ため
+T5	Argument 83 85	最悪
+T6	Connective 86 88	場合
+T8	Argument 89 93	衝突事故
+T9	Connective 93 96	により
+T11	Argument 111 119	燃料が漏れ続ける
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T11	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T11	
+R7	REASON Arg1:T9 Arg2:T8	
+T12	Argument 35 63	イグニッションスイッチがＯＮの状態でエンジンが停止した時
+T13	Connective 63 64	に
+R11	RESULT Arg1:T13 Arg2:T3	
+R12	CONDITION Arg1:T13 Arg2:T12	
+T7	Argument 96 108	燃料パイプ等が破損した時
+T10	Connective 108 109	に
+R8	CONDITION Arg1:T10 Arg2:T7	
+R9	RESULT Arg1:T10 Arg2:T11	
+R10	RESULT Arg1:T9 Arg2:T7	

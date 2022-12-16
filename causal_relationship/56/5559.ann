@@ -1,0 +1,23 @@
+T1	Argument 0 46	リヤ・ドライブ・シャフトをホイール・ハブに固定するリヤ・ハブ・ナットにおいて、誤品を組み付け
+T2	Argument 58 68	そのまま使用を続ける
+T3	Argument 70 78	当該ナットが緩み
+T4	Argument 78 83	異音が発生
+T5	Argument 85 87	最悪
+T6	Argument 91 106	リヤ・ドライブ・シャフトが破損
+T7	Argument 108 115	走行不能になる
+T8	Connective 53 57	そのため
+T9	Connective 68 69	と
+T11	Connective 77 78	み
+T12	Connective 88 90	場合
+T13	Connective 107 108	て
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T3	
+R3	CONDITION Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T3	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+R9	CONDITION Arg1:T12 Arg2:T5	
+R10	RESULT Arg1:T12 Arg2:T6	
+R11	REASON Arg1:T13 Arg2:T6	
+R12	RESULT Arg1:T13 Arg2:T7	
+R7	RESULT Arg1:T11 Arg2:T6	

@@ -1,0 +1,9 @@
+T1	Argument 0 64	４０フィート用３軸コンテナセミトレーラにおいて、フレーム形状が変化する段差部のクロスメンバとメインレールとの接合部の耐久性が不足
+T2	Connective 68 70	ため
+T3	Argument 90 111	メインレール及びクロスメンバーに亀裂が発生
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 71 86	走行時のねじれ荷重等の繰り返し
+T5	Connective 86 89	により
+R3	REASON Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T3	

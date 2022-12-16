@@ -1,0 +1,21 @@
+T1	Argument 0 43	前輪懸架装置のロア・アーム（下側腕）取付部に使用している偏芯カム・ボルトの材質に不適切
+T2	Connective 49 51	ため
+T3	Argument 74 82	当該ボルトが折損
+T4	Connective 83 84	、
+T5	Argument 84 94	懸架装置の一部が外れ
+T6	Connective 94 95	て
+T7	Argument 95 104	走行安定性を損なう
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T11	Argument 52 66	このままの状態で使用を続ける
+T12	Connective 66 67	と
+R7	CONDITION Arg1:T12 Arg2:T11	
+R8	RESULT Arg1:T12 Arg2:T3	
+T13	Argument 68 70	最悪
+T14	Connective 71 73	場合
+R9	CONDITION Arg1:T14 Arg2:T13	
+R10	RESULT Arg1:T14 Arg2:T3	

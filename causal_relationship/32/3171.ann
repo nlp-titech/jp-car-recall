@@ -1,0 +1,13 @@
+T1	Argument 0 43	動力伝達装置の前後進用油圧クラッチにおいて、走行制御系コントローラのプログラムが不適切
+T2	Connective 44 46	ため
+T3	Argument 47 63	エンジン始動直後に後進操作を行う
+T4	Connective 63 64	と
+T5	Argument 65 93	後進油圧クラッチが伝達する駆動力がブレーキ制動力を上回り
+R1	RESULT Arg1:T4 Arg2:T5	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T5	
+R4	REASON Arg1:T2 Arg2:T1	
+T6	Argument 93 99	停止できない
+T7	Connective 92 93	り
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	

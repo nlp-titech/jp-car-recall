@@ -1,0 +1,9 @@
+T1	Argument 0 37	ディーラーオプション部品として販売した後面方向指示器の取り付け指示が不適切
+T2	Connective 38 40	ため
+T3	Argument 41 62	当該方向指示器の照明部の最内縁の間隔が不足
+T4	Connective 62 63	し
+T5	Argument 64 74	保安基準に適合しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

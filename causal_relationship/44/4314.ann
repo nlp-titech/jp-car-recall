@@ -1,0 +1,21 @@
+T1	Argument 0 30	農業用薬剤散布車のラジエータホースにおいて、製造作業が不適切
+T2	Connective 31 33	ため
+T3	Argument 34 39	亀裂が入っ
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 48 52	そのため
+T5	Argument 53 65	当該亀裂から冷却水が漏れ
+T6	Connective 65 66	、
+T7	Argument 72 78	冷却水の不足
+T8	Connective 78 81	により
+T9	Argument 81 93	エンジンがオーバーヒート
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 66 68	最悪
+T11	Connective 69 71	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T7	

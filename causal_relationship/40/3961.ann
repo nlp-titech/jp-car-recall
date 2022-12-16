@@ -1,0 +1,28 @@
+T1	Argument 25 46	インターミディエイトシャフトの設計が不適切
+T2	Argument 50 71	右側ドライブシャフトが正しく嵌合していない
+T3	Argument 82 100	段差乗り越え等の大きな衝撃が加えられ
+T4	Argument 104 115	ドライブシャフトが抜け
+T5	Argument 116 127	異音、オイル漏れの発生
+T6	Argument 128 135	加速不良となり
+T7	Argument 136 138	最悪
+T8	Argument 142 146	走行不能
+T9	Argument 147 158	駐車中に車両が動き出す
+T10	Connective 47 49	ため
+T11	Connective 77 81	そのため
+T12	Connective 101 103	場合
+T13	Connective 115 116	、
+T15	Connective 139 141	場合
+R1	REASON Arg1:T10 Arg2:T1	
+R2	RESULT Arg1:T10 Arg2:T2	
+R3	REASON Arg1:T11 Arg2:T2	
+R4	RESULT Arg1:T11 Arg2:T4	
+R6	RESULT Arg1:T12 Arg2:T4	
+R7	REASON Arg1:T13 Arg2:T4	
+R8	RESULT Arg1:T13 Arg2:T5	
+R9	RESULT Arg1:T13 Arg2:T6	
+R12	CONDITION Arg1:T15 Arg2:T7	
+R13	RESULT Arg1:T15 Arg2:T8	
+R14	RESULT Arg1:T15 Arg2:T9	
+R10	RESULT Arg1:T13 Arg2:T8	
+R11	RESULT Arg1:T13 Arg2:T9	
+R5	CONDITION Arg1:T12 Arg2:T3	

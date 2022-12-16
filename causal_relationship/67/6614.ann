@@ -1,0 +1,25 @@
+T1	Argument 1 43	農耕トラクタの燃料装置において、燃料タンクに通気孔を固定するグロメットの製造が不適切
+T2	Connective 44 46	ため
+T3	Argument 47 60	当該グロメットが燃料と接触
+T4	Connective 62 63	と
+T5	Argument 64 66	変形
+T6	Connective 74 78	そのため
+T7	Argument 79 93	そのままの状態で使用を続ける
+T8	Connective 93 94	と
+T9	Argument 95 114	燃料タンクとグロメットの間に隙間が生じ
+T10	Connective 114 115	、
+T11	Argument 115 117	最悪
+T12	Connective 118 120	場合
+T13	Argument 121 127	燃料が漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	

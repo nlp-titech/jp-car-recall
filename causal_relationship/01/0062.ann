@@ -1,0 +1,9 @@
+T1	Argument 0 60	フロントアクスル（前車軸）内部のハブベアリングを固定するためのハブナットにワッシャ又はその固定用ネジが取付けられていない
+T2	Connective 66 70	そのため
+T3	Argument 70 80	ハブベアリングが弛み
+T4	Argument 81 88	走行不能に至る
+T5	Connective 80 81	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T4	

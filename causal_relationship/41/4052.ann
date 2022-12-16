@@ -1,0 +1,25 @@
+T1	Argument 0 26	燃料ポンプにおいて、バッテリから供給される電圧の変動
+T2	Argument 28 40	燃料ポンプの製造バラツキ
+T3	Argument 44 54	内部部品が早期に摩耗
+T4	Argument 67 81	そのままの状態で使用を続ける
+T5	Argument 83 88	摩耗が進行
+T6	Argument 90 103	燃料ポンプが作動不良となり
+T7	Argument 104 117	エンジンが始動できなくなる
+T8	Connective 26 27	と
+T9	Connective 40 43	により
+T10	Connective 62 66	そのため
+T11	Connective 81 82	と
+T12	Connective 89 90	、
+T13	Connective 103 104	、
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T3	
+R3	REASON Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T3	
+R5	REASON Arg1:T10 Arg2:T3	
+R6	RESULT Arg1:T10 Arg2:T6	
+R7	CONDITION Arg1:T11 Arg2:T4	
+R8	RESULT Arg1:T11 Arg2:T5	
+R9	REASON Arg1:T12 Arg2:T5	
+R10	RESULT Arg1:T12 Arg2:T6	
+R11	REASON Arg1:T13 Arg2:T6	
+R12	RESULT Arg1:T13 Arg2:T7	

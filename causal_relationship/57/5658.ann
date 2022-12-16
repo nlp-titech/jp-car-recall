@@ -1,0 +1,21 @@
+T1	Argument 11 60	パワーステアリングの油圧パイプをステアリングギヤボックスに固定するスクリューの組み付け工程が不適切
+T2	Argument 64 85	当該スクリューが正しく取り付けられていない
+T3	Argument 96 110	当該スクリューのねじ山が損傷
+T4	Argument 112 127	パワーステアリングオイルが漏れ
+T5	Argument 128 130	最悪
+T6	Argument 134 139	火災に至る
+T7	Connective 61 63	ため
+T8	Connective 91 95	そのため
+T9	Connective 111 112	、
+T10	Connective 127 128	、
+T11	Connective 131 133	場合
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T6	
+R9	CONDITION Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	

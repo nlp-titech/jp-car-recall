@@ -1,0 +1,27 @@
+T1	Argument 0 39	前輪独立懸架車の走行装置において、前輪ハブ内側軸受け部の水浸入防止構造が不適切
+T2	Connective 40 42	ため
+T3	Argument 43 56	当該軸受け内部に泥水が浸入
+T4	Connective 57 58	て
+T5	Argument 58 68	錆付き・摩耗が生じる
+T6	Connective 74 78	そのため
+T7	Argument 79 93	そのままの状態で使用を続ける
+T8	Connective 93 94	と
+T9	Argument 95 105	車体振動・異音が発生
+T11	Argument 107 109	最悪
+T12	Connective 110 112	場合
+T13	Argument 113 121	当該軸受けが破損
+T14	Connective 122 123	、
+T15	Argument 123 130	走行不能となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	CONDITION Arg1:T12 Arg2:T11	
+R10	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R11	RESULT Arg1:T6 Arg2:T13	

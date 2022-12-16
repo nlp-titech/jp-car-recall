@@ -1,0 +1,27 @@
+T1	Argument 0 24	ハイブリッドシステムにおいて、制御ソフトが不適切
+T2	Connective 25 27	ため
+T3	Argument 28 60	電力変換器（ＤＣ－ＡＣインバータ）の昇圧回路用素子が熱応力で損傷
+T4	Connective 68 72	そのため
+T5	Argument 73 79	警告灯が点灯
+T7	Argument 103 111	電気ノイズが発生
+T8	Connective 113 115	場合
+T9	Argument 118 131	ハイブリッドシステムが停止
+T10	Connective 132 133	、
+T11	Argument 133 140	走行不能となる
+R1	RESULT Arg1:T10 Arg2:T11	
+R2	REASON Arg1:T10 Arg2:T9	
+R3	RESULT Arg1:T8 Arg2:T9	
+R4	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T4 Arg2:T5	
+R8	REASON Arg1:T4 Arg2:T3	
+R9	RESULT Arg1:T2 Arg2:T3	
+R10	REASON Arg1:T2 Arg2:T1	
+T12	Connective 79 80	し
+T13	Argument 80 96	フェールセーフのモータ走行となり
+R6	REASON Arg1:T12 Arg2:T5	
+R11	RESULT Arg1:T12 Arg2:T13	
+R5	RESULT Arg1:T4 Arg2:T7	
+T6	Argument 97 102	素子損傷時
+T14	Connective 102 103	に
+R12	CONDITION Arg1:T14 Arg2:T6	
+R13	RESULT Arg1:T14 Arg2:T7	

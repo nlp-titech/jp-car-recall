@@ -1,0 +1,17 @@
+T1	Argument 0 36	トランクヒンジのガスステー取付け部のボールスタッドにおいて、製造が不適切
+T2	Connective 40 42	ため
+T3	Argument 42 47	亀裂が生じ
+T4	Connective 56 60	そのため
+T5	Argument 61 78	トランクリッドの開閉操作の繰り返し
+T6	Connective 78 82	によって
+T7	Argument 83 93	ボールスタッドが破損
+T8	Connective 94 95	、
+T9	Argument 95 111	トランクリッドを保持できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	REASON Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	RESULT Arg1:T4 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	

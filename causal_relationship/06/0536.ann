@@ -1,0 +1,15 @@
+T1	Argument 0 53	消音装置にオプション設定されている触媒内蔵消音器（マフラ）において、当該マフラの排出ガス入口の構造が不適切
+T2	Argument 56 96	原動機とマフラ間の排気管を支持している金具の剛性と当該金具の防振ゴムの容量が不足
+T3	Argument 103 125	当該マフラの排出ガス入口の溶接部に亀裂が発生
+T4	Argument 143 155	車外騒音が基準値を超える
+T5	Connective 100 102	ため
+T6	Connective 126 127	、
+R1	REASON Arg1:T5 Arg2:T2	
+R2	REASON Arg1:T5 Arg2:T1	
+R3	RESULT Arg1:T5 Arg2:T3	
+R4	REASON Arg1:T6 Arg2:T3	
+R5	RESULT Arg1:T6 Arg2:T4	
+T7	Argument 127 141	そのままの状態で使用を続ける
+T8	Connective 141 142	と
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T4	

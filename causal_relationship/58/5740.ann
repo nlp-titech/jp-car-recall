@@ -1,0 +1,21 @@
+T1	Argument 0 66	車軸が６軸あるクレーン用台車のステアリング装置において、後軸ステアリングの操舵を制御する４連ソレノイドバルブにおける防水対策が不十分
+T2	Connective 69 71	ため
+T3	Argument 72 83	雨水が浸入し錆びて腐食
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 91 95	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 96 110	そのままの状態で使用を続ける
+T6	Connective 110 111	と
+T7	Argument 112 125	当該バルブが作動しなくなり
+R4	RESULT Arg1:T4 Arg2:T7	
+T8	Argument 126 148	複数ある後軸の一部のステアリングの操舵が固定
+T9	Connective 125 126	、
+R5	REASON Arg1:T9 Arg2:T7	
+R6	RESULT Arg1:T9 Arg2:T8	
+R7	CONDITION Arg1:T6 Arg2:T5	
+R8	RESULT Arg1:T6 Arg2:T7	
+T10	Argument 151 165	最小回転半径が１２ｍを超える
+T11	Connective 150 151	、
+R9	REASON Arg1:T11 Arg2:T8	
+R10	RESULT Arg1:T11 Arg2:T10	

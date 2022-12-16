@@ -1,0 +1,17 @@
+T1	Argument 0 37	かじ取りハンドルに取り付けられているホーンコンタクトプレートの固定が不十分
+T2	Connective 43 44	、
+T4	Argument 44 57	ハンドル操作や走行時の振動
+T5	Connective 57 60	により
+R2	REASON Arg1:T5 Arg2:T4	
+T6	Argument 60 76	ホーンコンタクトプレートが外れる
+T7	Connective 82 86	そのため
+T8	Argument 87 89	最悪
+T9	Connective 90 92	場合
+T10	Argument 93 117	ホーンスイッチを操作しても、警音器が鳴らなくなる
+R3	REASON Arg1:T2 Arg2:T1	
+R4	RESULT Arg1:T2 Arg2:T6	
+R5	REASON Arg1:T7 Arg2:T6	
+R6	CONDITION Arg1:T9 Arg2:T8	
+R7	RESULT Arg1:T7 Arg2:T10	
+R8	RESULT Arg1:T9 Arg2:T10	
+R9	RESULT Arg1:T5 Arg2:T6	

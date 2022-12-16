@@ -1,0 +1,33 @@
+T1	Argument 0 43	揺動機構を持つ後軸取付部において、後軸を車体に固定するための取付用プレートの強度が不足
+T2	Argument 50 65	凹凸の激しい路面で使用を続ける
+T3	Argument 67 76	当該プレートが変形
+T4	Argument 78 86	取付ボルトが緩む
+T5	Argument 97 99	最悪
+T6	Argument 103 111	取付ボルトが脱落
+T7	Argument 113 125	抜出し防止プレートが外れ
+T8	Argument 126 135	後軸が車体から外れ
+T9	Argument 136 143	走行不能に至る
+T10	Connective 47 49	ため
+T11	Connective 65 66	と
+T12	Connective 77 78	、
+T13	Connective 92 96	このため
+T14	Connective 100 102	場合
+T15	Connective 112 113	、
+T16	Connective 125 126	、
+T17	Connective 135 136	て
+R1	REASON Arg1:T10 Arg2:T1	
+R2	RESULT Arg1:T10 Arg2:T3	
+R3	CONDITION Arg1:T11 Arg2:T2	
+R4	RESULT Arg1:T11 Arg2:T3	
+R5	REASON Arg1:T12 Arg2:T3	
+R6	RESULT Arg1:T12 Arg2:T4	
+R7	REASON Arg1:T13 Arg2:T4	
+R8	RESULT Arg1:T13 Arg2:T6	
+R9	CONDITION Arg1:T14 Arg2:T5	
+R10	RESULT Arg1:T14 Arg2:T6	
+R11	REASON Arg1:T15 Arg2:T6	
+R12	RESULT Arg1:T15 Arg2:T7	
+R13	REASON Arg1:T16 Arg2:T7	
+R14	RESULT Arg1:T16 Arg2:T8	
+R15	REASON Arg1:T17 Arg2:T8	
+R16	RESULT Arg1:T17 Arg2:T9	

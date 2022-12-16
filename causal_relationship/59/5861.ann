@@ -1,0 +1,21 @@
+T1	Argument 17 49	左右のベンチレーションラインをつなぐ接続ラインが、素材の強度不足
+T2	Connective 50 52	ため
+T3	Argument 53 55	損傷
+T4	Connective 67 69	場合
+T5	Argument 70 76	警告灯が点灯
+T6	Connective 77 78	、
+T7	Argument 78 91	アイドリングが不安定になり
+T8	Connective 91 92	、
+T9	Argument 92 94	最悪
+T10	Connective 95 97	場合
+T11	Argument 97 104	エンジンが停止
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T11	
+R9	CONDITION Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	

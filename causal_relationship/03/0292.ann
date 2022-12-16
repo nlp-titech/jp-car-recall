@@ -1,0 +1,21 @@
+T1	Argument 0 40	後輪駐車ブレーキにおいて、駐車ブレーキ用エアチャンバの通気口のシール方法が不適切
+T2	Argument 44 56	当該チャンバ内に水が侵入
+T3	Argument 57 65	内部のバネが錆び
+T4	Argument 72 77	バネが折損
+T5	Argument 79 90	駐車ブレーキ能力が低下
+T6	Connective 41 43	ため
+T7	Connective 56 57	し
+T8	Connective 65 66	、
+T9	Connective 78 79	て
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 66 68	最悪
+T11	Connective 69 71	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T4	

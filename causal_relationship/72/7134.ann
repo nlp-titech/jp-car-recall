@@ -1,0 +1,21 @@
+T1	Argument 8 24	コンピュータのプログラムが不適切
+T2	Connective 25 27	ため
+T3	Argument 28 49	渋滞路走行時等に軽くアクセルペダルを踏込ん
+T4	Connective 50 52	場合
+T5	Argument 57 72	原動機始動直後に降坂路等を走行
+T6	Connective 74 76	場合
+T7	Argument 77 90	原動機の回転が不安定になり
+T8	Connective 90 91	、
+T9	Argument 91 93	最悪
+T10	Connective 94 96	場合
+T11	Argument 97 103	原動機が停止
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	CONDITION Arg1:T6 Arg2:T5	
+R4	RESULT Arg1:T6 Arg2:T7	
+R5	RESULT Arg1:T4 Arg2:T7	
+R6	RESULT Arg1:T2 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	CONDITION Arg1:T10 Arg2:T9	
+R9	RESULT Arg1:T10 Arg2:T11	
+R10	RESULT Arg1:T8 Arg2:T11	

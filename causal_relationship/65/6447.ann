@@ -1,0 +1,33 @@
+T1	Argument 0 14	車両製造時の作業管理が不適切
+T2	Connective 15 17	ため
+T3	Argument 18 131	サイドエアバッグ、助手席エアバッグ、前席シートベルトバックル、前席シート背もたれ、後席シートベルト、ステアリングコラム、ウィンカー・ワイパー操作レバーユニット及びアクセルペダル等の取付ボルトが規定のトルクで締め付けられていない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 137 141	そのため
+T6	Connective 162 163	、
+T7	Argument 163 177	そのままの状態で使用を続ける
+T8	Connective 177 178	と
+T9	Argument 179 187	当該ボルトが外れ
+T10	Connective 187 188	て
+T11	Argument 189 218	ウィンカー、ワイパー、ハンドル、アクセルが操作できなくなっ
+R3	RESULT Arg1:T10 Arg2:T11	
+R4	REASON Arg1:T10 Arg2:T9	
+R5	RESULT Arg1:T8 Arg2:T11	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T9	
+R10	REASON Arg1:T4 Arg2:T3	
+T12	Argument 221 238	衝突時に乗員を正しく拘束できくなっ
+T13	Argument 241 259	エアバッグが展開時に正しく展開しない
+T14	Connective 220 221	、
+T15	Connective 240 241	、
+R11	REASON Arg1:T14 Arg2:T11	
+R12	RESULT Arg1:T14 Arg2:T13	
+R13	REASON Arg1:T15 Arg2:T12	
+R14	RESULT Arg1:T15 Arg2:T13	
+T5	Argument 142 147	走行振動等
+T16	Connective 147 151	によって
+T17	Argument 151 162	取付ボルトに緩みが生じ
+R8	REASON Arg1:T6 Arg2:T17	
+R9	REASON Arg1:T16 Arg2:T5	
+R15	RESULT Arg1:T16 Arg2:T17	
+R16	RESULT Arg1:T4 Arg2:T17	

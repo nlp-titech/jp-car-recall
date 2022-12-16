@@ -1,0 +1,9 @@
+T1	Argument 25 66	後席左右のチャイルドシート取付装置を組付ける工程で一部のボルトが取付けられていない
+T2	Argument 101 116	チャイルドシートを固定できない
+T3	Argument 74 98	衝突時等に大きな荷重がチャイルドシートにかかった
+T4	Connective 71 73	ため
+T5	Connective 98 100	場合
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	CONDITION Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T2	

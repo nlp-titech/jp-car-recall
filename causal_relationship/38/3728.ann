@@ -1,0 +1,25 @@
+T1	Argument 0 37	ホイール・クレーンの緩衝装置において、トルクロッド取付サポートの強度が不足
+T2	Argument 44 51	急制動をかける
+T3	Argument 53 78	当該サポートの取付部に疲労限度を超える応力がかかる
+T4	Argument 89 111	トルクロッド取付サポートの取付部に亀裂が入り
+T5	Argument 112 126	そのままの状態で使用を続ける
+T6	Argument 128 147	トルクロッド取付サポートの取付部が破損
+T7	Argument 150 160	トルクロッドが外れる
+T8	Connective 41 43	ため
+T9	Connective 51 52	と
+T10	Connective 84 88	そのため
+T11	Connective 111 112	、
+T12	Connective 126 127	と
+T13	Connective 148 149	て
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T3	
+R3	CONDITION Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T3	
+R5	REASON Arg1:T10 Arg2:T3	
+R6	RESULT Arg1:T10 Arg2:T4	
+R7	REASON Arg1:T11 Arg2:T4	
+R8	RESULT Arg1:T11 Arg2:T6	
+R9	CONDITION Arg1:T12 Arg2:T5	
+R10	RESULT Arg1:T12 Arg2:T6	
+R11	REASON Arg1:T13 Arg2:T6	
+R12	RESULT Arg1:T13 Arg2:T7	

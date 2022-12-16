@@ -1,0 +1,21 @@
+T1	Argument 29 39	油圧調整器に作動不良
+T2	Connective 45 46	、
+T3	Argument 68 81	当該油圧調整器の作動が遅れ
+T4	Connective 81 82	、
+T5	Argument 82 106	ブレーキペダルを離しても後輪がロックした状態にな
+T6	Connective 106 107	り
+T7	Argument 107 116	走行に支障をきたす
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 46 60	このままの状態で使用を続ける
+T9	Connective 60 61	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 62 64	最悪
+T11	Connective 65 67	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	

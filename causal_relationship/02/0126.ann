@@ -1,0 +1,17 @@
+T1	Argument 0 14	燃料タンクの支持構造が不適切
+T2	Argument 18 24	車体の振動等
+T3	Argument 28 60	燃料タンク内に設置している燃料ポンプの密封用シール材の変形が促進
+T4	Argument 69 75	燃料が漏れる
+T5	Connective 15 17	ため
+T6	Connective 24 27	により
+T7	Connective 62 63	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T3	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 63 65	最悪
+T9	Connective 66 68	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T4	

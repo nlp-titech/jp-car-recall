@@ -1,0 +1,29 @@
+T1	Argument 0 26	自動防眩ルームミラーにおいて、部品の製造工程が不適切
+T2	Argument 30 40	内部基板に異物が混入
+T3	Argument 55 62	電子回路が短絡
+T5	Argument 70 72	発煙
+T6	Argument 74 76	最悪
+T7	Argument 80 93	コントロールヒューズが溶断
+T8	Argument 95 108	エンジンが始動できなくなる
+T9	Connective 27 29	ため
+T10	Connective 50 54	そのため
+T11	Connective 63 64	て
+T12	Connective 69 70	け
+T13	Connective 73 74	、
+T14	Connective 77 79	場合
+T15	Connective 94 95	て
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T2	
+R3	REASON Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T3	
+R5	REASON Arg1:T11 Arg2:T3	
+R8	RESULT Arg1:T12 Arg2:T5	
+R9	REASON Arg1:T13 Arg2:T5	
+R10	RESULT Arg1:T13 Arg2:T7	
+R11	CONDITION Arg1:T14 Arg2:T6	
+R12	RESULT Arg1:T14 Arg2:T7	
+R13	REASON Arg1:T15 Arg2:T7	
+R14	RESULT Arg1:T15 Arg2:T8	
+T4	Argument 64 69	樹脂材が溶
+R6	REASON Arg1:T12 Arg2:T4	
+R7	RESULT Arg1:T11 Arg2:T4	

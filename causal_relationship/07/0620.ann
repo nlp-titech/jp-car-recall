@@ -1,0 +1,31 @@
+T1	Argument 0 35	チェーンとスプロケットの噛み合いが適切に維持される構造となされていない
+T2	Argument 60 93	チェーンとトランスミッション側のスプロケットの噛み合いにずれが生じ
+T3	Argument 94 109	チェーンがクランクケースと干渉
+T4	Argument 122 132	クランクケースが破損
+T5	Argument 133 144	エンジンオイルが漏れる
+T6	Argument 147 172	チェーンがスプロケットとクランクケースの間に挟まれ
+T7	Argument 173 179	後輪がロック
+T8	Argument 180 187	走行不能となる
+T9	Connective 35 37	ため
+T10	Connective 93 94	、
+T11	Connective 117 121	そのため
+T12	Connective 132 133	し
+T13	Connective 172 173	て
+T14	Connective 179 180	し
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T2	
+R3	REASON Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T3	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+R7	CONDITION Arg1:T12 Arg2:T4	
+R9	RESULT Arg1:T12 Arg2:T5	
+R10	REASON Arg1:T13 Arg2:T6	
+R11	RESULT Arg1:T13 Arg2:T7	
+R12	REASON Arg1:T14 Arg2:T7	
+R13	RESULT Arg1:T14 Arg2:T8	
+T15	Argument 38 55	チェーンが過大にたるんだ状態で減速
+T16	Connective 57 59	場合
+R14	CONDITION Arg1:T16 Arg2:T15	
+R15	RESULT Arg1:T16 Arg2:T2	
+R8	RESULT Arg1:T11 Arg2:T6	

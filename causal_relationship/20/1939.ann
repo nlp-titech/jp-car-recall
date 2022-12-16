@@ -1,0 +1,25 @@
+T1	Argument 0 36	後輪用制動装置油圧配管とトルクコンバータ（流体クラッチ）の隙間寸法が不足
+T2	Argument 103 119	油圧配管とトルクコンバータが干渉
+T3	Connective 127 131	そのため
+T4	Argument 147 154	配管に穴が開き
+T5	Connective 154 155	、
+T6	Argument 166 175	後輪の制動力が低下
+R1	RESULT Arg1:T5 Arg2:T6	
+R2	REASON Arg1:T5 Arg2:T4	
+R3	RESULT Arg1:T3 Arg2:T4	
+R4	REASON Arg1:T3 Arg2:T2	
+T7	Connective 43 45	あり
+R5	RESULT Arg1:T7 Arg2:T2	
+R6	REASON Arg1:T7 Arg2:T1	
+T8	Argument 46 100	サスペンションロック（クレーン作業時等に車両の安定性を向上させるため、サスペンションを強制的に収縮させ固定）
+T9	Connective 100 101	時
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T2	
+T10	Argument 132 146	そのままの状態で使用を続ける
+T11	Connective 146 147	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T4	
+T12	Argument 155 157	最悪
+T13	Connective 158 160	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T6	

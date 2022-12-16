@@ -1,0 +1,13 @@
+T1	Argument 1 27	前席の座席と背もたれのヒンジ（蝶番）部の構造が不適切
+T2	Connective 28 30	ため
+T3	Argument 31 50	ヒンジ部に手や指を入れて背もたれを倒す
+T4	Connective 50 51	と
+T5	Argument 52 64	ヒンジ部に手や指を挟まれ
+T6	Connective 64 65	て
+T7	Argument 65 70	怪我をする
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

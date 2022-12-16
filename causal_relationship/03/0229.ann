@@ -1,0 +1,21 @@
+T1	Argument 0 25	エンジンを制御するコンピュータのプログラムが不適切
+T2	Argument 72 84	エンジン回転数が高くなる
+T3	Argument 96 103	車両が動き出す
+T4	Argument 48 67	ハンドル操作とシフトレバーの操作を行う
+T5	Connective 26 28	ため
+T6	Connective 67 68	と
+T7	Connective 89 90	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	CONDITION Arg1:T6 Arg2:T4	
+R4	RESULT Arg1:T6 Arg2:T2	
+R5	REASON Arg1:T7 Arg2:T2	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 29 44	ヒータを作動させて停車している
+T9	Connective 44 46	とき
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T2	
+T10	Argument 90 92	最悪
+T11	Connective 93 95	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	

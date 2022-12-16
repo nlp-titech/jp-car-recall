@@ -1,0 +1,9 @@
+T1	Argument 0 39	平成２２年排出ガス規制対応の中型トラックにおいて、エンジン制御プログラムの影響
+T2	Connective 39 42	により
+T3	Argument 43 47	運転操作
+T4	Connective 47 52	によっては
+T5	Argument 53 70	窒素酸化物（ＮＯｘ）の排出値が悪化
+R1	CONDITION Arg1:T4 Arg2:T3	
+R2	REASON Arg1:T2 Arg2:T1	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	

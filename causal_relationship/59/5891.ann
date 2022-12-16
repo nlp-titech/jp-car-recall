@@ -1,0 +1,31 @@
+T1	Argument 0 51	後輪エアサス・レベルセンサにおいて、コネクティングロッドの接続部分の構造及びボールヘッドの材質が不適切
+T2	Connective 57 59	ため
+T3	Argument 60 70	接続部分が摩耗、破損
+T4	Connective 71 72	て
+T5	Argument 72 74	外れ
+T6	Connective 80 81	で
+T7	Argument 81 102	レベルセンサが車高を正しく認識できなくなる
+T8	Connective 103 108	これにより
+T9	Argument 108 119	車高が適切に調整されず
+T10	Argument 139 163	後輪エアサスのベローズのエア圧が最高圧のまま維持
+T11	Connective 165 166	、
+T12	Argument 166 169	振動等
+T13	Connective 169 172	により
+T14	Argument 172 179	ベローズが破損
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	RESULT Arg1:T8 Arg2:T10	
+R10	REASON Arg1:T11 Arg2:T10	
+R11	RESULT Arg1:T11 Arg2:T14	
+R12	REASON Arg1:T13 Arg2:T12	
+R13	RESULT Arg1:T13 Arg2:T14	
+T22	Connective 118 119	ず
+T23	Argument 119 127	操縦安定性を低下
+R14	REASON Arg1:T22 Arg2:T9	
+R15	RESULT Arg1:T22 Arg2:T23	

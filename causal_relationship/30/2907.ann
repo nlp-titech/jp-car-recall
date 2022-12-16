@@ -1,0 +1,29 @@
+T1	Argument 1 52	ハイブリッドシステムの電圧変換器（インバータ）用電動ウォータポンプにおいて、コイルの巻き線工程が不適切
+T2	Connective 53 55	ため
+T3	Argument 55 64	コイル線に傷がつい
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 71 75	そのため
+T5	Argument 76 85	コイル線の腐食断線
+T6	Connective 85 88	により
+T7	Argument 88 98	ウォータポンプが停止
+T8	Connective 99 100	て
+T9	Argument 100 105	警告灯点灯
+T10	Argument 106 115	出力制限走行となる
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	RESULT Arg1:T8 Arg2:T10	
+T12	Argument 119 125	線間ショート
+T11	Connective 131 132	、
+T13	Argument 132 141	電源ヒューズが切れ
+T14	Connective 141 142	て
+T15	Argument 142 149	走行不能となる
+R12	REASON Arg1:T11 Arg2:T12	
+R13	RESULT Arg1:T11 Arg2:T13	
+R14	REASON Arg1:T14 Arg2:T13	
+R15	RESULT Arg1:T14 Arg2:T15	
+R10	RESULT Arg1:T6 Arg2:T12	

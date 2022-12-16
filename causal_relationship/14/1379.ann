@@ -1,0 +1,25 @@
+T1	Argument 0 57	バン型車両において、物品積載設備の積み卸し口のドアに取り付けられている非常脱出機能付きドアロック装置の構造が不適切
+T2	Connective 58 60	ため
+T3	Argument 61 68	走行中の振動等
+T4	Connective 68 71	により
+T5	Argument 71 82	非常時の開錠機能が作動
+T6	Connective 83 84	、
+T7	Argument 84 93	ドアロックが外れる
+T8	Connective 99 103	そのため
+T9	Argument 104 113	走行中にドアが開き
+T10	Connective 113 114	、
+T11	Argument 114 116	最悪
+T12	Connective 117 119	場合
+T13	Argument 120 125	積荷が落下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	REASON Arg1:T10 Arg2:T9	
+R9	RESULT Arg1:T8 Arg2:T9	
+R10	CONDITION Arg1:T12 Arg2:T11	
+R11	RESULT Arg1:T12 Arg2:T13	
+R12	RESULT Arg1:T10 Arg2:T13	

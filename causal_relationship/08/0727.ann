@@ -1,0 +1,36 @@
+T1	Argument 0 59	燃料タンク取付金具の寸法精度並びに燃料タンクを取付金具にボルトで締結する部分の構造及び当該ボルトの締付けトルクが不適切
+T2	Connective 60 62	ため
+T3	Argument 73 103	当該ボルト又は取付金具をフレームに固定するボルトに緩みが発生
+T4	Connective 111 115	そのため
+T5	Argument 128 139	燃料タンクに亀裂が発生
+T6	Connective 140 141	、
+T7	Argument 141 148	燃料漏れが発生
+T8	Argument 159 169	取付金具に亀裂が発生
+R1	RESULT Arg1:T4 Arg2:T5	
+R2	RESULT Arg1:T4 Arg2:T8	
+T9	Connective 170 171	、
+T10	Argument 177 186	当該取付金具が破損
+T11	Connective 186 187	し
+T12	Argument 187 195	燃料タンクが脱落
+R3	REASON Arg1:T9 Arg2:T8	
+R4	RESULT Arg1:T9 Arg2:T10	
+R5	REASON Arg1:T11 Arg2:T10	
+R6	RESULT Arg1:T11 Arg2:T12	
+R7	REASON Arg1:T2 Arg2:T1	
+R8	RESULT Arg1:T2 Arg2:T3	
+T17	Argument 63 70	走行中の振動等
+T18	Connective 70 73	により
+R9	REASON Arg1:T18 Arg2:T17	
+R10	RESULT Arg1:T18 Arg2:T3	
+R11	REASON Arg1:T4 Arg2:T3	
+R12	REASON Arg1:T6 Arg2:T5	
+R13	RESULT Arg1:T6 Arg2:T7	
+T13	Argument 116 126	そのまま使用を続ける
+T14	Connective 126 127	と
+R14	CONDITION Arg1:T14 Arg2:T13	
+R15	RESULT Arg1:T14 Arg2:T5	
+T15	Argument 171 173	最悪
+T16	Connective 174 176	場合
+R16	CONDITION Arg1:T16 Arg2:T15	
+R17	RESULT Arg1:T16 Arg2:T10	
+R18	RESULT Arg1:T14 Arg2:T8	

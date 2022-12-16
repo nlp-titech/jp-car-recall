@@ -1,0 +1,9 @@
+T1	Argument 6 43	ルーフラック（平積みスキーアタッチメント）の上部アームヒンジ部の強度が不足
+T2	Connective 52 54	ため
+T3	Argument 55 62	当該部分が折損
+T4	Connective 63 64	、
+T5	Argument 64 78	積み荷のスキー板とともに脱落
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

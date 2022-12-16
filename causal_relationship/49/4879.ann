@@ -1,0 +1,13 @@
+T1	Argument 9 79	トラクションコントロールユニット（滑りやすい路面でのタイヤの空転を防止する機構）の圧力スイッチ部のゴム製仕切膜(ダイアフラム)の耐久性が不足
+T2	Connective 83 85	ため
+T3	Argument 102 119	当該スイッチ部からブレーキ液が漏れ
+T4	Argument 120 126	制動力が低下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T5	Argument 86 100	そのままの状態で使用を続ける
+T6	Connective 100 101	と
+R3	CONDITION Arg1:T6 Arg2:T5	
+R4	RESULT Arg1:T6 Arg2:T3	
+T7	Connective 119 120	、
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	

@@ -1,0 +1,13 @@
+T1	Argument 53 65	インフレーター容器が破損
+T2	Argument 87 99	当該インフレーターを交換
+T3	Connective 77 78	、
+R1	REASON Arg1:T3 Arg2:T1	
+R2	RESULT Arg1:T3 Arg2:T2	
+T4	Connective 52 53	に
+T5	Argument 44 52	エアバッグ展開時
+R3	CONDITION Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T4 Arg2:T1	
+T6	Argument 78 83	予防的措置
+T7	Connective 83 86	として
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T2	

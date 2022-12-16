@@ -1,0 +1,12 @@
+T2	Connective 26 28	ため
+T3	Argument 29 39	側面からの衝撃を受け
+T4	Connective 40 41	際
+T5	Argument 43 58	サイドエアバッグの展開が遅れる
+T6	Argument 61 66	展開しない
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	RESULT Arg1:T2 Arg2:T6	
+R4	CONDITION Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T4 Arg2:T5	
+R6	RESULT Arg1:T4 Arg2:T6	
+T1	Argument 0 25	エアバッグコントロールユニットのプログラムが不適切
+R1	REASON Arg1:T2 Arg2:T1	

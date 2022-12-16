@@ -1,0 +1,17 @@
+T1	Argument 0 37	リヤショックアブソーバ用台座の取付けボルトを締付ける際のトルク設定が不適切
+T2	Connective 38 40	ため
+T3	Argument 41 53	規定トルクを超えて締付け
+T4	Connective 60 64	そのため
+T5	Argument 65 76	当該取付けボルトが破損
+T6	Connective 77 78	、
+T7	Argument 84 100	ショックアブソーバの機能を損なう
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 78 80	最悪
+T9	Connective 81 83	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T7	

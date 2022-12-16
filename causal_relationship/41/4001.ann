@@ -1,0 +1,67 @@
+T2	Argument 41 54	エンジンの出力回転数が高い
+T3	Argument 57 65	出力トルクが低い
+T4	Argument 68 88	排気ガス中に含まれる未燃燃料の濃度が高く
+T5	Argument 91 107	当該燃料がＥＧＲクーラに廻り込み
+T6	Argument 108 120	カーボンデポジットが生成
+T7	Argument 123 140	吸気バルブおよびＥＧＲバルブに付着
+T8	Argument 153 166	そのままの状態で長時間駐車
+T9	Argument 170 185	カーボンデポジットの粘度が増加
+T10	Argument 187 193	エンジン始動
+T11	Argument 200 210	吸気バルブが摺動不良
+T12	Argument 214 232	プッシュロッドがロッカアームから外れ
+T13	Argument 233 244	シリンダ内の燃焼が不良
+T14	Argument 247 259	未燃燃料がＤＯＣへ流れ込
+T15	Argument 260 264	異常燃焼
+T16	Argument 271 283	ＥＧＲバルブの摺動も不良
+T17	Argument 287 297	エンジンの出力が制限
+T18	Connective 38 40	ため
+T19	Connective 54 57	状態で
+T20	Connective 65 67	場合
+T21	Connective 90 91	、
+T22	Connective 107 108	、
+T23	Connective 122 123	て
+T24	Connective 148 152	そのため
+T25	Connective 169 170	と
+T26	Connective 186 187	、
+T29	Connective 232 233	、
+T30	Connective 244 247	となり
+T31	Connective 283 286	となり
+R2	RESULT Arg1:T18 Arg2:T4	
+R3	CONDITION Arg1:T19 Arg2:T2	
+R5	CONDITION Arg1:T20 Arg2:T3	
+R6	RESULT Arg1:T20 Arg2:T4	
+R7	REASON Arg1:T21 Arg2:T4	
+R8	RESULT Arg1:T21 Arg2:T5	
+R9	REASON Arg1:T22 Arg2:T5	
+R10	RESULT Arg1:T22 Arg2:T6	
+R11	REASON Arg1:T23 Arg2:T6	
+R12	RESULT Arg1:T23 Arg2:T7	
+R13	REASON Arg1:T24 Arg2:T7	
+R14	RESULT Arg1:T24 Arg2:T9	
+R15	CONDITION Arg1:T25 Arg2:T8	
+R16	RESULT Arg1:T25 Arg2:T9	
+R17	REASON Arg1:T26 Arg2:T9	
+R18	RESULT Arg1:T26 Arg2:T11	
+R23	REASON Arg1:T29 Arg2:T12	
+R24	RESULT Arg1:T29 Arg2:T13	
+R25	REASON Arg1:T30 Arg2:T13	
+R26	RESULT Arg1:T30 Arg2:T14	
+T32	Connective 259 260	み
+R27	REASON Arg1:T32 Arg2:T14	
+R28	RESULT Arg1:T32 Arg2:T15	
+R30	REASON Arg1:T31 Arg2:T16	
+R31	RESULT Arg1:T31 Arg2:T17	
+R29	RESULT Arg1:T26 Arg2:T16	
+T44	Connective 270 271	、
+R32	REASON Arg1:T44 Arg2:T15	
+R34	RESULT Arg1:T19 Arg2:T3	
+T33	Argument 17 37	エンジン制御ユニットのプログラムが不適切
+R35	REASON Arg1:T18 Arg2:T33	
+T1	Connective 195 199	際などに
+R1	CONDITION Arg1:T1 Arg2:T10	
+R4	RESULT Arg1:T1 Arg2:T11	
+T27	Connective 213 214	、
+R19	REASON Arg1:T27 Arg2:T11	
+R20	RESULT Arg1:T27 Arg2:T12	
+R21	RESULT Arg1:T32 Arg2:T16	
+R22	RESULT Arg1:T44 Arg2:T16	

@@ -1,0 +1,17 @@
+T1	Argument 0 21	尾灯および制動灯の電球の端子の形状が不適切
+T2	Connective 22 24	ため
+T3	Argument 25 43	当該電球がソケットに固定されていない
+T4	Connective 49 53	そのため
+T5	Argument 64 71	当該電球が脱落
+T6	Connective 72 73	て
+T7	Argument 73 89	尾灯および制動灯が点灯しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 54 61	走行中の振動等
+T9	Connective 61 64	により
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

@@ -1,0 +1,19 @@
+T1	Argument 0 29	燃料タンク取り付け部において、固定ナットの緩み止めが不適切
+T2	Connective 30 32	ため
+T3	Argument 33 39	ナットが緩む
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 45 49	そのため
+T5	Argument 50 57	ハンドルを操作
+T6	Connective 59 60	際
+T7	Argument 61 78	固定ボルトがフロントフォークと接触
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Connective 79 80	、
+T9	Argument 80 91	ハンドルの可動域が制限
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 97 112	固定ナット及び当該ボルトが脱落
+R9	RESULT Arg1:T8 Arg2:T10	

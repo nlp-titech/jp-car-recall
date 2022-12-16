@@ -1,0 +1,33 @@
+T1	Argument 0 53	純正アクセサリー部品として、取り付けられたＬＥＤ式方向指示器のコントローラーにおいて、取り付け位置が不適切
+T2	Argument 57 82	当該コントローラーと原動機のオイルフィルターが接触
+T3	Argument 95 109	そのままの状態で使用を続ける
+T4	Argument 111 117	原動機の振動
+T5	Argument 120 131	オイルフィルターが損傷
+T6	Argument 132 138	オイルが漏れ
+T7	Argument 139 141	最悪
+T8	Argument 145 158	漏れたオイルがタイヤに付着
+T9	Argument 160 162	転倒
+T10	Connective 54 56	ため
+T11	Connective 90 94	そのため
+T12	Connective 109 110	と
+T13	Connective 117 120	により
+T14	Connective 131 132	し
+T15	Connective 138 139	、
+T16	Connective 142 144	場合
+T17	Connective 159 160	、
+R1	REASON Arg1:T10 Arg2:T1	
+R2	RESULT Arg1:T10 Arg2:T2	
+R3	REASON Arg1:T11 Arg2:T2	
+R4	RESULT Arg1:T11 Arg2:T5	
+R5	CONDITION Arg1:T12 Arg2:T3	
+R6	RESULT Arg1:T12 Arg2:T5	
+R7	REASON Arg1:T13 Arg2:T4	
+R8	RESULT Arg1:T13 Arg2:T5	
+R9	REASON Arg1:T14 Arg2:T5	
+R10	RESULT Arg1:T14 Arg2:T6	
+R11	REASON Arg1:T15 Arg2:T6	
+R12	RESULT Arg1:T15 Arg2:T8	
+R13	CONDITION Arg1:T16 Arg2:T7	
+R14	RESULT Arg1:T16 Arg2:T8	
+R15	REASON Arg1:T17 Arg2:T8	
+R16	RESULT Arg1:T17 Arg2:T9	

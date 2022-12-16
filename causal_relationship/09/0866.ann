@@ -1,0 +1,25 @@
+T1	Argument 0 39	中型トラックの手動式キャブチルトにおいて、キャブフックと周辺部品の隙間が不適切
+T2	Connective 40 42	ため
+T3	Argument 43 67	キャブを降ろした際にキャブフックが周辺部品と干渉
+T4	Connective 68 69	、
+T5	Argument 69 81	キャブフック取付部が損傷
+T6	Connective 89 93	そのため
+T7	Argument 94 110	そのままの状態でロック操作を実施
+T8	Connective 112 113	と
+T9	Argument 113 125	キャブが正しくロックされ
+T10	Connective 126 127	、
+T11	Argument 127 129	最悪
+T12	Connective 130 132	場合
+T13	Argument 133 144	走行中にキャブがチルト
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	

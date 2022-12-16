@@ -1,0 +1,41 @@
+T1	Argument 0 71	駐車制動装置において、駐車ブレーキケーブルを車両側に固定するブラケットのガイドパイプと当該ブレーキケーブルを保護するプロテクタの間に隙間がある
+T2	Connective 71 73	ため
+T3	Argument 74 90	砂や砂利等がガイドパイプ内に侵入
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 91 92	、
+T5	Argument 92 109	当該ケーブルのアウターコートが摩耗
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 117 121	そのため
+T7	Argument 152 164	アウターケーシングが腐食
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 170 180	インナーワイヤと干渉
+T9	Connective 169 170	、
+R7	REASON Arg1:T9 Arg2:T21	
+R8	RESULT Arg1:T9 Arg2:T8	
+T10	Connective 187 188	、
+R9	REASON Arg1:T10 Arg2:T8	
+T11	Argument 194 204	インナーワイヤが折損
+R10	RESULT Arg1:T10 Arg2:T11	
+T13	Argument 206 220	駐車ブレーキが作動しなくなる
+T14	Argument 122 136	そのままの状態で使用を続ける
+T15	Connective 136 137	と
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T7	
+T16	Connective 205 206	、
+T17	Argument 188 190	最悪
+T18	Connective 191 193	場合
+R15	CONDITION Arg1:T18 Arg2:T17	
+R16	RESULT Arg1:T18 Arg2:T11	
+R11	RESULT Arg1:T16 Arg2:T13	
+R12	REASON Arg1:T16 Arg2:T11	
+T12	Argument 138 150	ケーブル内に浸入した水等
+T19	Connective 150 152	より
+R17	REASON Arg1:T19 Arg2:T12	
+R18	RESULT Arg1:T19 Arg2:T7	
+T20	Connective 165 166	て
+R19	REASON Arg1:T20 Arg2:T7	
+T21	Argument 166 168	折損
+R20	RESULT Arg1:T20 Arg2:T21	

@@ -1,0 +1,29 @@
+T1	Argument 4 19	クランク角センサの耐久性が不足
+T2	Argument 37 51	内部の半田付け部に亀裂が生じ
+T3	Connective 51 52	、
+T4	Argument 52 64	正常な信号が発信されない
+T5	Connective 70 74	そのため
+T6	Argument 75 88	原動機の回転が不安定となり
+T7	Connective 88 89	、
+T8	Argument 95 101	原動機が停止
+R1	REASON Arg1:T7 Arg2:T6	
+R2	RESULT Arg1:T7 Arg2:T8	
+R3	REASON Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T6	
+R5	REASON Arg1:T3 Arg2:T2	
+R6	RESULT Arg1:T3 Arg2:T4	
+T9	Argument 89 91	最悪
+T10	Connective 92 94	場合
+R8	RESULT Arg1:T10 Arg2:T8	
+T11	Argument 26 33	原動機の振動等
+T12	Connective 33 36	により
+R9	REASON Arg1:T12 Arg2:T11	
+R10	RESULT Arg1:T12 Arg2:T2	
+T13	Connective 23 25	ため
+R11	REASON Arg1:T13 Arg2:T1	
+R12	RESULT Arg1:T13 Arg2:T2	
+R7	CONDITION Arg1:T10 Arg2:T9	
+T14	Connective 102 103	て
+T15	Argument 103 113	再始動が出来なくなる
+R13	REASON Arg1:T14 Arg2:T8	
+R14	RESULT Arg1:T14 Arg2:T15	

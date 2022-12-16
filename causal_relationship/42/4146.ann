@@ -1,0 +1,29 @@
+T1	Argument 12 43	前２軸車の前前軸タイロッドエンドのクランプ部の組付作業が不適切
+T2	Connective 44 46	ため
+T3	Argument 47 63	取付ボルトの締め付けトルクが不足
+T4	Connective 73 77	そのため
+T5	Argument 94 101	取付ボルトが緩
+T6	Connective 101 102	み
+T7	Argument 102 117	タイロッドエンド部にガタが生じ
+T8	Connective 117 118	、
+T9	Argument 124 143	タイロッドからタイロッドエンド部が抜け
+T10	Connective 143 144	て
+T11	Argument 145 152	操舵不能になる
+R1	REASON Arg1:T10 Arg2:T9	
+R2	RESULT Arg1:T10 Arg2:T11	
+R3	REASON Arg1:T8 Arg2:T7	
+R4	RESULT Arg1:T8 Arg2:T9	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T4 Arg2:T3	
+R8	RESULT Arg1:T4 Arg2:T5	
+R9	REASON Arg1:T2 Arg2:T1	
+R10	RESULT Arg1:T2 Arg2:T3	
+T12	Argument 78 92	そのままの状態で使用を続ける
+T13	Connective 92 93	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T5	
+T20	Argument 118 120	最悪
+T21	Connective 121 123	場合
+R13	CONDITION Arg1:T21 Arg2:T20	
+R14	RESULT Arg1:T21 Arg2:T9	

@@ -1,0 +1,19 @@
+T1	Argument 18 43	スイッチ内部基板の熱膨張と収縮に対する設計が不適切
+T2	Connective 44 46	ため
+T3	Argument 47 57	当該基板の配線が断線
+T4	Connective 65 69	そのため
+T5	Argument 70 81	操作スイッチが作動せず
+T6	Connective 81 82	、
+T7	Argument 82 93	エンジンが始動できない
+T8	Argument 94 107	前照灯の切り替えができない
+T9	Argument 108 119	方向指示器が作動しない
+T10	Argument 122 130	警音器が鳴らない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T8	
+R8	RESULT Arg1:T6 Arg2:T9	
+R9	RESULT Arg1:T6 Arg2:T10	

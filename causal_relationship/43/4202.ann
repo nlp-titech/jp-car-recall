@@ -1,0 +1,23 @@
+T1	Argument 0 39	ハイブリッド車の機械式自動変速機において、コントローラの制御プログラムが不適切
+T2	Connective 40 42	ため
+T3	Argument 43 60	走行中に制御と異なるギヤに噛み合う
+T4	Connective 66 70	そのため
+T5	Argument 71 77	警告灯が点灯
+T6	Argument 83 93	フェールセーフが働き
+T7	Connective 93 94	、
+T8	Argument 94 101	クラッチを切断
+T9	Connective 102 103	て
+T10	Argument 104 115	駆動力が伝わらなくなり
+T11	Connective 115 116	、
+T12	Argument 116 123	走行不能となる
+R1	REASON Arg1:T11 Arg2:T10	
+R2	RESULT Arg1:T11 Arg2:T12	
+R3	REASON Arg1:T9 Arg2:T8	
+R4	RESULT Arg1:T9 Arg2:T10	
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T8	
+R7	RESULT Arg1:T4 Arg2:T6	
+R8	RESULT Arg1:T4 Arg2:T5	
+R9	REASON Arg1:T4 Arg2:T3	
+R10	RESULT Arg1:T2 Arg2:T3	
+R11	REASON Arg1:T2 Arg2:T1	

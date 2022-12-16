@@ -1,0 +1,5 @@
+T1	Argument 0 22	ボディコントロールモジュールの初期設定が誤っ
+T2	Connective 25 27	ため
+T3	Argument 28 58	ブレーキをかけた際に、制動灯の他に橙色の後面方向指示器が点灯
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

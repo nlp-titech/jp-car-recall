@@ -1,0 +1,39 @@
+T1	Argument 0 26	制動灯スイッチ内部の接点の電気負荷に対する容量が不足
+T2	Connective 30 32	ため
+T3	Argument 41 48	接点が焼き付き
+T4	Connective 48 49	、
+T5	Argument 50 66	制動灯が点灯したままの状態となる
+T6	Connective 67 71	そのため
+T7	Argument 88 98	制動灯スイッチが発熱
+T8	Connective 99 100	、
+T9	Argument 100 105	配線が溶損
+T10	Connective 106 107	て
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T11	Argument 33 39	制動装置作動
+T12	Connective 39 41	時に
+R5	CONDITION Arg1:T12 Arg2:T11	
+R6	RESULT Arg1:T12 Arg2:T3	
+R7	REASON Arg1:T6 Arg2:T5	
+R8	RESULT Arg1:T6 Arg2:T7	
+R9	REASON Arg1:T8 Arg2:T7	
+R10	RESULT Arg1:T8 Arg2:T9	
+T13	Argument 114 122	発煙・火災に至る
+R11	REASON Arg1:T10 Arg2:T9	
+R12	RESULT Arg1:T10 Arg2:T13	
+T14	Argument 130 141	制動灯が点灯しなくなり
+T15	Connective 141 142	、
+R13	RESULT Arg1:T4 Arg2:T14	
+T16	Argument 72 86	そのままの状態で使用を続ける
+T17	Connective 86 87	と
+R14	CONDITION Arg1:T17 Arg2:T16	
+R15	RESULT Arg1:T17 Arg2:T7	
+T18	Argument 142 164	シフトレバーがパーキング位置から動かなくなる
+R16	REASON Arg1:T15 Arg2:T14	
+R17	RESULT Arg1:T15 Arg2:T18	
+T19	Argument 108 110	最悪
+T20	Connective 111 113	場合
+R18	CONDITION Arg1:T20 Arg2:T19	
+R19	RESULT Arg1:T20 Arg2:T13	

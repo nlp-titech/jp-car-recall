@@ -1,0 +1,13 @@
+T1	Argument 0 41	乗降用スロープ装着車において、スロープを車体に固定するヒンジブラケットの強度が不足
+T2	Connective 45 47	ため
+T3	Argument 48 78	スロープ収納時に車椅子固定ベルトがスロープと車体の間に噛込む
+T4	Connective 78 79	と
+T5	Argument 80 91	ヒンジブラケットが変形
+T6	Connective 99 103	そのため
+T7	Argument 104 129	スロープ引き出し時または使用時に、スロープが外れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

@@ -1,0 +1,29 @@
+T1	Argument 0 14	燃料パイプ接続部の強度が不足
+T2	Argument 21 40	規定トルク以上で当該接続部を締め付ける
+T3	Argument 42 47	亀裂が発生
+T4	Argument 60 71	燃料パイプ接続部が損傷
+T5	Argument 73 75	最悪
+T6	Argument 79 84	燃料が漏れ
+T7	Argument 85 93	排気管等にかかり
+T8	Argument 93 98	火災に至る
+T9	Connective 18 20	ため
+T10	Connective 40 41	と
+T11	Connective 55 59	そのため
+T12	Connective 72 73	、
+T13	Connective 76 78	場合
+T14	Connective 84 85	、
+T15	Connective 92 93	り
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T2	
+R3	CONDITION Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T3	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+R7	REASON Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T6	
+R9	CONDITION Arg1:T13 Arg2:T5	
+R10	RESULT Arg1:T13 Arg2:T6	
+R11	REASON Arg1:T14 Arg2:T6	
+R12	RESULT Arg1:T14 Arg2:T7	
+R13	REASON Arg1:T15 Arg2:T7	
+R14	RESULT Arg1:T15 Arg2:T8	

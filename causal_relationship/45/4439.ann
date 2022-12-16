@@ -1,0 +1,25 @@
+T1	Argument 34 49	アイドラ・プーリーに強度が不足
+T2	Connective 58 59	、
+T3	Argument 59 77	アイドラ・プーリーの表面に亀裂が発生
+T4	Connective 79 80	。
+T5	Argument 96 102	ベルトが損傷
+T6	Connective 103 104	、
+T7	Argument 110 112	切損
+T8	Argument 119 126	エンジンが停止
+T9	Connective 116 119	により
+R1	REASON Arg1:T9 Arg2:T7	
+R2	RESULT Arg1:T9 Arg2:T8	
+R3	REASON Arg1:T6 Arg2:T5	
+R4	RESULT Arg1:T6 Arg2:T7	
+R5	REASON Arg1:T4 Arg2:T3	
+R6	RESULT Arg1:T4 Arg2:T5	
+R7	REASON Arg1:T2 Arg2:T1	
+R8	RESULT Arg1:T2 Arg2:T3	
+T10	Argument 80 94	このままの状態で使用を続ける
+T11	Connective 94 95	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	
+T12	Argument 104 106	最悪
+T13	Connective 107 109	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T7	

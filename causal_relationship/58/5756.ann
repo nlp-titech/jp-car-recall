@@ -1,0 +1,33 @@
+T1	Argument 0 29	クラッチマスターシリンダー用固定ボルトにおいて、誤品を使用
+T2	Connective 35 37	ため
+T3	Argument 38 55	ペダルユニットに対する固定が不十分
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 62 66	そのため
+T5	Argument 67 76	クラッチペダル操作
+T6	Connective 76 77	時
+T7	Argument 79 91	当該ボルトに負荷がかかり
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Connective 91 92	、
+T9	Argument 92 102	そのまま使用を続ける
+T10	Connective 102 103	と
+T11	Argument 104 106	最悪
+T12	Connective 107 109	場合
+T13	Argument 110 118	当該ボルトが破断
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T13	
+T14	Argument 119 138	ペダルを操作しても油圧が発生しなくなり
+T15	Connective 118 119	し
+R9	CONDITION Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T15 Arg2:T13	
+R14	RESULT Arg1:T15 Arg2:T14	
+T16	Connective 138 139	、
+T17	Argument 139 152	クラッチ操作が出来なくなる
+R15	REASON Arg1:T16 Arg2:T14	
+R16	RESULT Arg1:T16 Arg2:T17	

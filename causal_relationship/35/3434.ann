@@ -1,0 +1,25 @@
+T1	Argument 1 58	動力伝達装置において、ＨＳＴ（静油圧式無段変速機）へ作動油を供給する回路内のオイルフィルターの接続方向を誤って指示
+T2	Connective 60 62	ため
+T3	Argument 63 79	フィルターが逆向きに組み付けられ
+T4	Connective 86 90	そのため
+T5	Argument 91 106	フィルター詰まり等で圧力が上昇
+T6	Connective 108 110	場合
+T7	Argument 111 122	エレメントの一部が剥が
+T8	Connective 132 133	、
+T9	Argument 133 135	最悪
+T10	Connective 136 138	場合
+T11	Argument 139 147	走行が不能となる
+R1	RESULT Arg1:T10 Arg2:T11	
+R2	CONDITION Arg1:T10 Arg2:T9	
+R3	RESULT Arg1:T8 Arg2:T11	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	CONDITION Arg1:T6 Arg2:T5	
+R7	RESULT Arg1:T4 Arg2:T7	
+R8	REASON Arg1:T4 Arg2:T3	
+R9	RESULT Arg1:T2 Arg2:T3	
+R10	REASON Arg1:T2 Arg2:T1	
+T12	Argument 123 132	オイルの流路を塞ぎ
+T13	Connective 122 123	れ
+R4	REASON Arg1:T13 Arg2:T7	
+R11	RESULT Arg1:T13 Arg2:T12	
+R12	REASON Arg1:T8 Arg2:T12	

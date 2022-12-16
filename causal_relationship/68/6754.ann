@@ -1,0 +1,9 @@
+T1	Argument 0 23	チャイルドシートを前向き状態で車両へ取り付ける
+T2	Connective 23 25	場合
+T3	Argument 27 77	装置の取付方法を説明する「取扱説明書」、本体に表示される「表示シール」及び「取付説明ビデオ」が不適切
+T4	Connective 78 80	ため
+T5	Argument 81 114	一部の車両において適切にチャイルドシートを取り付けることが出来ない
+R1	CONDITION Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

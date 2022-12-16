@@ -1,0 +1,13 @@
+T1	Argument 0 58	燃料タンクの製造工程において、ブリーザホースおよび燃料蒸発ガス排出抑止装置への接続ホースの締付金具の取付位置が不適切
+T2	Connective 59 61	ため
+T3	Argument 78 84	燃料が漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T9	
+T4	Argument 62 68	事故等の衝撃
+T5	Connective 68 71	により
+R3	REASON Arg1:T5 Arg2:T4	
+T9	Argument 71 77	ホースが抜け
+T10	Connective 77 78	て
+R5	RESULT Arg1:T5 Arg2:T9	
+R6	REASON Arg1:T10 Arg2:T9	
+R7	RESULT Arg1:T10 Arg2:T3	

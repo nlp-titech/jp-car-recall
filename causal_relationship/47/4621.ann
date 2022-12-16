@@ -1,0 +1,21 @@
+T1	Argument 28 57	ブレーキペダルの踏み込み量を検出するセンサに気密性が不十分
+T2	Connective 63 64	、
+T3	Argument 80 94	当該センサ内部に雨水等が浸入
+T4	Connective 95 96	、
+T5	Argument 102 110	浸入した水が凍結
+T6	Connective 111 112	て
+T7	Argument 113 124	ブレーキが効かなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 64 78	そのままの状態で使用を続ける
+T9	Connective 78 79	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 96 98	最悪
+T11	Connective 99 101	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	

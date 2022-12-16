@@ -1,0 +1,13 @@
+T1	Argument 20 49	リアコンビネーションライト内部のクッション材の材質が不適切
+T2	Connective 50 52	ため
+T3	Argument 53 101	クッション材に含まれる気化成分が後面方向指示器用ＬＥＤ（発光ダイオード）の電気基板の接続部を腐食
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 110 114	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 115 125	当該接続部が接触不良
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 128 129	、
+T7	Argument 129 142	後面方向指示器が点灯しない
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

@@ -1,0 +1,17 @@
+T1	Argument 0 47	かじ取り装置において、ハンドルバーに組み付けられたグリップ（滑り止め付の握り手）の接着が不適切
+T2	Connective 54 58	そのため
+T3	Argument 59 76	当該グリップがハンドルバーから抜け
+T4	Connective 76 77	、
+T5	Argument 83 90	バランスを失い
+T6	Argument 90 94	転倒する
+T7	Connective 89 90	い
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	
+T8	Argument 77 79	最悪
+T9	Connective 80 82	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

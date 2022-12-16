@@ -1,0 +1,17 @@
+T1	Argument 0 21	後席乗員用左足かけの取付金具の溶接に不適切
+T2	Argument 46 54	当該足かけが脱落
+T3	Argument 62 67	乗員が転落
+T4	Connective 27 29	ため
+T5	Connective 55 56	、
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	
+T6	Argument 30 44	そのままの状態で使用を続ける
+T7	Connective 44 45	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T2	
+T8	Argument 56 58	最悪
+T9	Connective 59 61	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	

@@ -1,0 +1,25 @@
+T1	Argument 0 31	原動機の始動補助装置において、グローリレーのコイル仕様が不適切
+T2	Connective 32 34	ため
+T3	Argument 35 51	グロープラグ作動時にコイルが高温
+T4	Connective 60 64	そのため
+T5	Argument 79 93	当該リレーのコイルがショート
+T6	Connective 93 94	し
+T7	Argument 94 101	ヒューズが溶断
+T8	Connective 102 103	て
+T9	Argument 104 131	電源を共有しているデフロスタのブロアモータ等が作動不良
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R6	RESULT Arg1:T4 Arg2:T5	
+R7	REASON Arg1:T6 Arg2:T5	
+R8	RESULT Arg1:T6 Arg2:T7	
+R9	REASON Arg1:T8 Arg2:T7	
+R10	RESULT Arg1:T8 Arg2:T9	
+T12	Argument 64 71	長時間使用する
+T13	Connective 71 72	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T5	
+T14	Argument 73 75	最悪
+T15	Connective 76 78	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T5	

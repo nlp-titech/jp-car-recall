@@ -1,0 +1,17 @@
+T1	Argument 9 31	メーカー指定と異なるクラッチボスが組み込まれ
+T2	Connective 32 34	ため
+T3	Argument 35 50	メインアクスルとの嵌合が不十分
+T4	Connective 57 61	そのため
+T5	Argument 62 75	トルクがかかると嵌合が外れ
+T6	Connective 75 76	て
+T7	Argument 76 84	動力を伝達できず
+T8	Connective 84 85	、
+T9	Argument 85 92	走行不能になる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	

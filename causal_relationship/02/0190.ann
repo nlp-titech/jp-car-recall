@@ -1,0 +1,25 @@
+T1	Argument 0 31	過給機付原動機の電子制御装置において、電気配線の取回しが不適切
+T2	Argument 34 49	過給機のカバー取付ボルトと接触
+T3	Argument 73 85	当該電気配線の被覆が損傷
+T4	Argument 86 92	原動機が不調
+T5	Argument 102 108	原動機が停止
+T6	Connective 92 95	となり
+T7	Connective 85 86	し
+T8	Connective 56 57	、
+T9	Connective 32 34	ため
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+R7	REASON Arg1:T6 Arg2:T4	
+R8	RESULT Arg1:T6 Arg2:T5	
+T10	Argument 57 71	そのままの状態で使用を続ける
+T11	Connective 71 72	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	
+T12	Argument 96 98	最悪
+T13	Connective 99 101	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T5	

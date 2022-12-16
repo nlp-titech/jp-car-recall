@@ -1,0 +1,25 @@
+T1	Argument 0 28	電動調整式運転者席の下部にある電気配線の取付方法が不適切
+T2	Connective 29 31	ため
+T3	Argument 32 54	当該配線が座席のバネとシートメモリ装置に挟ま
+T4	Connective 61 62	、
+T5	Argument 78 86	配線の被覆が損傷
+T6	Connective 87 88	、
+T7	Argument 94 96	短絡
+T8	Connective 97 98	て
+T9	Argument 98 103	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 62 76	そのままの状態で使用を続ける
+T11	Connective 76 77	と
+T12	Argument 88 90	最悪
+T13	Connective 91 93	場合
+R10	RESULT Arg1:T11 Arg2:T5	
+R12	RESULT Arg1:T13 Arg2:T7	
+R13	CONDITION Arg1:T11 Arg2:T10	
+R14	CONDITION Arg1:T13 Arg2:T12	

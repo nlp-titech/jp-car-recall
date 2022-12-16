@@ -1,0 +1,13 @@
+T1	Argument 16 74	ＳＣＣＭ（ステアリング・コラム・コントロール・モジュール）と運転席エアバッグ・モジュールをつなぐ配線の組み付けを誤っ
+T2	Argument 83 103	運転席エアバッグが設計どおりに展開しない
+T3	Argument 78 80	衝突
+T4	Argument 114 123	乗員保護性能が低下
+T5	Connective 75 77	ため
+T6	Connective 81 83	際に
+T7	Connective 109 113	そのため
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	CONDITION Arg1:T6 Arg2:T3	
+R4	RESULT Arg1:T6 Arg2:T2	
+R5	REASON Arg1:T7 Arg2:T2	
+R6	RESULT Arg1:T7 Arg2:T4	

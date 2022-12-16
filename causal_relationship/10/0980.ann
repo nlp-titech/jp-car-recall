@@ -1,0 +1,37 @@
+T1	Argument 0 43	左前輪用ブレーキパイプとパワーステアリングホース固定用樹脂クリップとの隙間設定が不適切
+T2	Connective 44 46	ため
+T3	Argument 47 56	組付け時のばらつき
+T4	Connective 56 59	により
+T5	Argument 59 65	隙間が小さい
+T6	Connective 65 67	場合
+T7	Argument 76 95	ブレーキパイプと当該樹脂クリップが干渉
+T8	Connective 103 107	そのため
+T9	Argument 108 122	そのままの状態で使用を続ける
+T10	Connective 122 123	と
+T11	Argument 124 126	最悪
+T12	Connective 127 129	場合
+T13	Argument 130 140	ブレーキパイプが損傷
+T14	Connective 141 142	、
+T15	Argument 142 150	ブレーキ液が漏れ
+T16	Connective 150 151	、
+T17	Argument 151 157	制動力が低下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T13	
+R9	CONDITION Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R15	REASON Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T17	
+T18	Connective 75 76	で
+T19	Argument 68 75	走行中の振動等
+R17	RESULT Arg1:T18 Arg2:T7	
+R18	REASON Arg1:T18 Arg2:T19	

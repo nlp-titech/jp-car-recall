@@ -1,0 +1,15 @@
+T1	Argument 0 48	サイドエアバッグ／シートベルトプリテンショナー用配線において、コネクター端子と配線の圧着が不適切
+T2	Argument 52 68	当該端子と配線が十分に接触しない
+T3	Argument 80 87	接触不良が発生
+T4	Argument 92 103	エアバッグ警告灯が点灯
+T5	Argument 105 136	サイドエアバッグおよびシートベルトプリテンショナーが作動しない
+T6	Connective 49 51	ため
+T7	Connective 75 79	そのため
+T8	Connective 89 91	場合
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T5	
+R5	CONDITION Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	RESULT Arg1:T8 Arg2:T5	

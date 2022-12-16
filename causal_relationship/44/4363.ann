@@ -1,0 +1,17 @@
+T1	Argument 4 52	スロットルバルブ・レバーとアクセルペダルを連結しているアクセルケーブルの金属パイプ部が過度に曲げ
+T2	Connective 57 59	ため
+T3	Argument 82 111	当該ケーブル内のインナーワイヤ（内部鋼索）が疲労により折損
+T4	Connective 111 112	し
+T5	Argument 112 132	アクセルペダルを踏んでも加速できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 60 74	このままの状態で使用を続ける
+T7	Connective 74 75	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 76 78	最悪
+T9	Connective 79 81	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	

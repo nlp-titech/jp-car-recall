@@ -1,0 +1,25 @@
+T1	Argument 0 35	エンジンとトランスミッションの結合部（クラッチハウジング）の強度が不足
+T2	Connective 39 41	ため
+T3	Argument 42 57	高速走行時に駆動系の振動が増加
+T4	Connective 59 61	場合
+T5	Argument 62 78	クラッチハウジングに亀裂が生じる
+T6	Connective 84 88	そのため
+T7	Argument 104 109	亀裂が進行
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Connective 110 111	、
+T9	Argument 117 129	クラッチハウジングが破断
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 89 103	そのままの状態で使用を続ける
+T11	Connective 103 104	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T7	
+T12	Argument 111 113	最悪
+T13	Connective 114 116	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T9	

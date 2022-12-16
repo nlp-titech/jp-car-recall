@@ -1,0 +1,17 @@
+T1	Argument 4 31	シリンダーヘッドにおいて、生産設備変更時の検証が不適切
+T2	Connective 32 34	ため
+T3	Argument 35 67	オイル通路の加工穴に穴を塞ぐためのスチールボールを誤って２個圧入
+T4	Connective 71 72	で
+T5	Argument 72 80	オイル通路が閉塞
+T6	Connective 90 94	そのため
+T7	Argument 95 102	オイル供給不足
+T8	Connective 102 105	により
+T9	Argument 105 123	カムシャフトのジャーナル部が焼き付く
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	

@@ -1,0 +1,17 @@
+T1	Argument 0 56	乗車装置において、運転者席の座席の背もたれ内部の骨組みと背もたれ調整装置を固定する取付ボルトに、締付トルクが不足
+T2	Argument 68 80	使用中に当該ボルトが緩み
+T3	Argument 87 99	運転中に当該ボルトが脱落
+T4	Argument 101 109	背もたれが倒れる
+T5	Connective 65 67	ため
+T6	Connective 80 81	、
+T7	Connective 100 101	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T10	Argument 81 83	最悪
+T11	Connective 84 86	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R11	RESULT Arg1:T11 Arg2:T3	

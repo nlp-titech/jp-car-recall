@@ -1,0 +1,17 @@
+T1	Argument 0 67	ディーラー・オプション部品として販売した光源が放電灯の前照灯において、インバータ（直流を交流に変換する装置）内部のトランジスタが不適切
+T2	Argument 71 80	前照灯の繰返し操作
+T3	Argument 84 95	当該トランジスタが加熱
+T4	Argument 97 99	短絡
+T5	Argument 101 110	前照灯が点灯しない
+T6	Connective 68 70	ため
+R1	REASON Arg1:T6 Arg2:T1	
+T7	Connective 80 83	により
+R2	RESULT Arg1:T6 Arg2:T3	
+R3	REASON Arg1:T7 Arg2:T2	
+T8	Connective 96 97	て
+T9	Connective 100 101	、
+R4	REASON Arg1:T8 Arg2:T3	
+R5	RESULT Arg1:T8 Arg2:T4	
+R6	REASON Arg1:T9 Arg2:T4	
+R7	RESULT Arg1:T9 Arg2:T5	
+R8	RESULT Arg1:T7 Arg2:T3	

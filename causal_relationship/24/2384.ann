@@ -1,0 +1,9 @@
+T1	Argument 0 47	かじ取装置（パワーステアリングシリンダ）において、シリンダロッドとロッドエンドとの溶接が不適切
+T2	Connective 53 55	ため
+T3	Argument 56 71	かじ取操作時に当該溶接部が破損
+T4	Connective 72 73	、
+T5	Argument 73 85	かじ取操作が出来なくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

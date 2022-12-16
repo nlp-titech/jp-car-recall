@@ -1,0 +1,33 @@
+T1	Argument 20 35	センターメンバーの製造が不適切
+T2	Argument 39 62	センターメンバー内部に融雪剤等を含んだ水が浸入
+T3	Argument 64 77	ロアアーム取付部付近が腐食
+T4	Argument 90 104	そのままの状態で使用を続ける
+T5	Argument 106 111	腐食が進行
+T6	Argument 113 124	センターメンバーが破損
+T7	Argument 127 129	最悪
+T8	Argument 133 141	ロアアームが脱落
+T9	Argument 143 150	操舵不能となる
+T10	Connective 36 38	ため
+T11	Connective 63 64	、
+T12	Connective 85 89	そのため
+T13	Connective 104 105	と
+T14	Connective 112 113	、
+T15	Connective 125 126	て
+T16	Connective 130 132	場合
+T17	Connective 142 143	て
+R1	REASON Arg1:T10 Arg2:T1	
+R2	RESULT Arg1:T10 Arg2:T2	
+R3	REASON Arg1:T11 Arg2:T2	
+R4	RESULT Arg1:T11 Arg2:T3	
+R5	REASON Arg1:T12 Arg2:T3	
+R6	RESULT Arg1:T12 Arg2:T5	
+R7	CONDITION Arg1:T13 Arg2:T4	
+R8	RESULT Arg1:T13 Arg2:T5	
+R9	REASON Arg1:T14 Arg2:T5	
+R10	RESULT Arg1:T14 Arg2:T6	
+R11	REASON Arg1:T15 Arg2:T6	
+R12	RESULT Arg1:T15 Arg2:T8	
+R13	CONDITION Arg1:T16 Arg2:T7	
+R14	RESULT Arg1:T16 Arg2:T8	
+R15	REASON Arg1:T17 Arg2:T8	
+R16	RESULT Arg1:T17 Arg2:T9	

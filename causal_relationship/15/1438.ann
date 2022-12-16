@@ -1,0 +1,21 @@
+T1	Argument 0 42	動力伝達装置において、走行モータに油圧供給パイプを取り付ける際の組み付け方法が不適切
+T2	Connective 43 45	ため
+T3	Argument 46 57	連結部でオイルが洩れる
+T4	Connective 63 67	そのため
+T5	Argument 68 78	そのまま使用を続ける
+T6	Connective 78 79	と
+T7	Argument 80 86	オイルが減少
+T8	Argument 88 90	最悪
+T9	Connective 91 93	場合
+T10	Argument 93 101	走行できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	CONDITION Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	RESULT Arg1:T4 Arg2:T7	
+T11	Connective 87 88	、
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T10	
+R9	REASON Arg1:T11 Arg2:T7	
+R10	RESULT Arg1:T11 Arg2:T10	

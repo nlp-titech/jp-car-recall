@@ -1,0 +1,25 @@
+T1	Argument 0 42	フロントロアアームとタイロッドエンドをハブキャリアに固定するナットの締め付けが不十分
+T2	Connective 43 45	ため
+T3	Argument 46 63	走行等の振動により当該ナットが緩む
+T4	Connective 69 73	そのため
+T5	Argument 90 96	ナットが外れ
+T6	Connective 96 97	、
+T7	Argument 103 129	ロアアーム又はタイロッドエンドがハブキャリアから外れ
+T8	Connective 129 130	、
+T9	Argument 130 137	走行不能となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 74 88	そのままの状態で使用を続ける
+T11	Connective 88 89	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	
+T12	Argument 97 99	最悪
+T13	Connective 100 102	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T7	

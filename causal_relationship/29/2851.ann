@@ -1,0 +1,11 @@
+T1	Argument 0 35	電動式パワーステアリングにおいて、制御コントローラのプログラムが不適切
+T2	Connective 36 38	ため
+T3	Argument 39 69	ステアリング操作時にパワーステアリングモータに過電流が流れる
+T4	Connective 75 79	そのため
+T5	Argument 79 95	操作画面にエラーメッセージが表示
+T7	Argument 97 115	パワ－ステアリング機能が効かなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T7	

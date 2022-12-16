@@ -1,0 +1,17 @@
+T1	Argument 0 44	跳ね上げ式リヤゲートに取り付けられているリヤゲートステー取付用ボルトの締付けトルクが不足
+T2	Connective 54 58	そのため
+T3	Argument 59 73	リヤゲート開閉操作の繰り返し
+T4	Connective 73 77	によって
+T5	Argument 78 92	リヤゲートステー取付部が破損
+T6	Connective 93 94	て
+T7	Argument 95 103	リヤゲートが降下
+T8	Connective 103 104	し
+T9	Argument 104 113	身体の一部に当たる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	

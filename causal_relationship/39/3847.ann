@@ -1,0 +1,49 @@
+T1	Argument 14 38	エンジン制御コンピュータの吸入空気量制御が不適切
+T2	Argument 42 59	気筒内の燃料濃度が部分的に濃くなり
+T3	Argument 60 62	燃焼
+T4	Argument 64 70	多く煤が発生
+T5	Argument 83 91	排気バルブが開い
+T6	Argument 94 109	煤が排気側バルブガイド周辺に入
+T7	Argument 110 112	堆積
+T8	Argument 115 126	バルブが動きにくくなり
+T9	Argument 127 131	圧縮不良
+T10	Argument 134 138	加速不良
+T11	Argument 139 146	車体振動が発生
+T12	Argument 148 150	最悪
+T14	Argument 154 165	走行中にエンジンが停止
+T15	Connective 39 41	ため
+T16	Connective 59 60	、
+T17	Connective 62 64	時に
+T18	Connective 78 82	そのため
+T19	Connective 92 94	際に
+T20	Connective 113 114	て
+T21	Connective 109 110	り
+T22	Connective 126 127	、
+T23	Connective 131 134	による
+T24	Connective 147 148	、
+T25	Connective 151 153	場合
+R1	REASON Arg1:T15 Arg2:T1	
+R2	RESULT Arg1:T15 Arg2:T2	
+R3	REASON Arg1:T16 Arg2:T2	
+R5	CONDITION Arg1:T17 Arg2:T3	
+R6	RESULT Arg1:T17 Arg2:T4	
+R7	REASON Arg1:T18 Arg2:T4	
+R9	CONDITION Arg1:T19 Arg2:T5	
+R10	RESULT Arg1:T19 Arg2:T6	
+R11	REASON Arg1:T21 Arg2:T6	
+R12	RESULT Arg1:T21 Arg2:T7	
+R13	REASON Arg1:T20 Arg2:T7	
+R14	RESULT Arg1:T20 Arg2:T8	
+R15	REASON Arg1:T22 Arg2:T8	
+R17	REASON Arg1:T23 Arg2:T9	
+R18	RESULT Arg1:T23 Arg2:T10	
+R19	RESULT Arg1:T23 Arg2:T11	
+R20	REASON Arg1:T24 Arg2:T11	
+R22	CONDITION Arg1:T25 Arg2:T12	
+R23	RESULT Arg1:T25 Arg2:T14	
+R4	RESULT Arg1:T16 Arg2:T4	
+R8	RESULT Arg1:T18 Arg2:T6	
+R16	RESULT Arg1:T22 Arg2:T10	
+R24	RESULT Arg1:T22 Arg2:T11	
+R21	REASON Arg1:T24 Arg2:T10	
+R25	RESULT Arg1:T24 Arg2:T14	

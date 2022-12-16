@@ -1,0 +1,13 @@
+T1	Argument 0 40	ハイドロリックブースタの増圧シリンダ内部のバルブとピストンを連結する構造が不適切
+T2	Connective 41 43	ため
+T3	Argument 44 63	ブレーキペダルを踏んだ際に発生する液圧
+T4	Connective 63 66	により
+T5	Argument 66 79	バルブとピストンとが外れる
+T6	Connective 85 89	そのため
+T7	Argument 90 113	ブレーキペダルを戻した後も制動力が解除されない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T5	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

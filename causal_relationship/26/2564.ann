@@ -1,0 +1,17 @@
+T1	Argument 0 30	制動装置において、マスタシリンダ内の部品に異品が組み付けられ
+T2	Connective 31 33	ため
+T3	Argument 34 58	駐車ブレーキ作動中にブレーキペダルを数回踏み込む
+T4	Connective 58 59	と
+T5	Argument 60 66	踏み代が増大
+T6	Connective 74 78	そのため
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T7	Argument 79 81	最悪
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+T8	Connective 82 84	場合
+T9	Argument 85 97	主ブレーキの制動力が低下
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	

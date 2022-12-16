@@ -1,0 +1,20 @@
+T1	Argument 1 52	フロント・コンビネーション・ランプの前面方向指示器において、ハウジングの端子取付け部の内径寸法が不適切
+T2	Connective 53 55	ため
+T3	Argument 56 83	ハウジング側端子とバルブソケット側端子の接触圧力が不足
+T4	Connective 91 95	そのため
+T5	Argument 96 106	当該端子間が通電不良
+T6	Connective 106 109	となり
+T7	Argument 110 118	方向指示器を作動
+T8	Connective 121 122	際
+R1	CONDITION Arg1:T8 Arg2:T7	
+T9	Argument 123 138	前面方向指示器が点滅しなくなる
+T10	Argument 143 158	方向指示表示灯の点滅が速くなる
+R2	RESULT Arg1:T8 Arg2:T9	
+R4	RESULT Arg1:T6 Arg2:T9	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T4 Arg2:T5	
+R7	REASON Arg1:T4 Arg2:T3	
+R8	RESULT Arg1:T2 Arg2:T3	
+R9	REASON Arg1:T2 Arg2:T1	
+R3	RESULT Arg1:T6 Arg2:T10	
+R10	RESULT Arg1:T8 Arg2:T10	

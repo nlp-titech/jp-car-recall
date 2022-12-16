@@ -1,0 +1,21 @@
+T1	Argument 0 53	分割可能貨物基準緩和仕様の粉粒体運搬セミトレーラ（３軸車）において、車体（サブフレーム）強度の評価が不適切
+T2	Connective 54 56	ため
+T3	Argument 57 77	走行中に発生する応力がサブフレームに集中
+T4	Connective 85 89	そのため
+T5	Argument 90 104	そのままの状態で使用を続ける
+T6	Connective 104 105	と
+T7	Argument 106 130	走行中に発生する繰り返し応力がサブフレームに作用
+T8	Connective 132 135	ことで
+T9	Argument 135 140	亀裂が発生
+T10	Connective 141 142	、
+T11	Argument 142 153	車体の堅ろう性を損なう
+R1	RESULT Arg1:T10 Arg2:T11	
+R2	REASON Arg1:T10 Arg2:T9	
+R3	RESULT Arg1:T8 Arg2:T9	
+R4	REASON Arg1:T8 Arg2:T7	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	CONDITION Arg1:T6 Arg2:T5	
+R7	RESULT Arg1:T4 Arg2:T7	
+R8	REASON Arg1:T4 Arg2:T3	
+R9	RESULT Arg1:T2 Arg2:T3	
+R10	REASON Arg1:T2 Arg2:T1	

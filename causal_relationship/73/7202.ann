@@ -1,0 +1,27 @@
+T1	Argument 0 35	テールゲートダンパーをボディ側に取り付けるボルトの締め付けトルクが不足
+T2	Connective 39 41	ため
+T3	Argument 42 49	走行中の振動等
+T4	Connective 49 52	により
+T5	Argument 52 60	当該取付部が緩む
+T6	Connective 66 70	そのため
+T7	Argument 71 81	そのまま使用を続ける
+T8	Connective 81 82	と
+T9	Argument 82 87	異音が発生
+T11	Argument 89 91	最悪
+T12	Connective 92 94	場合
+T13	Argument 95 109	当該ダンパーがボディから外れ
+T14	Connective 109 110	て
+T15	Argument 110 119	テールゲートが降下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T5	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	RESULT Arg1:T6 Arg2:T9	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R9	RESULT Arg1:T6 Arg2:T13	

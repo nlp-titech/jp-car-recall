@@ -1,0 +1,9 @@
+T1	Argument 0 41	車両製造工程において、誤って仕様の異なる車両のボディー電装品制御ユニットを組み付け
+T2	Connective 48 52	そのため
+T3	Argument 53 85	当該ユニットからイモビライザを解除するための制御信号が出力されず
+T4	Connective 85 86	、
+T5	Argument 86 97	エンジンを始動できない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

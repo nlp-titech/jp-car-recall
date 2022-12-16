@@ -1,0 +1,9 @@
+T2	Connective 37 39	ため
+T3	Argument 40 58	当該方向指示器の点灯状態を認識しない
+T4	Connective 64 68	そのため
+T7	Argument 69 105	当該方向指示器が故障した場合、運転者に作動状態を表示する装置が作動しない
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+T1	Argument 0 36	前面方向指示器の作動を制御するコントロール・ユニットのプログラムが不適切
+R1	REASON Arg1:T2 Arg2:T1	

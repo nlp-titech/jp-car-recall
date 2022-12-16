@@ -1,0 +1,13 @@
+T1	Argument 19 48	油圧制御装置と畜圧器とを接続するパイプの先端の形状が不適切
+T2	Connective 54 56	ため
+T3	Argument 73 86	当該接続部より作動油が漏れ
+T4	Connective 86 87	、
+T5	Argument 87 93	制動力が低下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 57 71	そのままの状態で使用を続ける
+T7	Connective 71 72	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	

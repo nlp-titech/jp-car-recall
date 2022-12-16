@@ -1,0 +1,13 @@
+T1	Argument 0 52	燃料ポンプにおいて、燃料ポンプの吐出ニップルと燃料チューブ継ぎ手部（クイックコネクタ）の組付作業が不適切
+T2	Connective 53 55	ため
+T3	Argument 56 75	クイックコネクタが正規に嵌合していない
+T4	Connective 81 85	そのため
+T5	Argument 86 105	クイックコネクタが当該ニップルから外れ
+T6	Connective 105 106	、
+T7	Argument 106 112	燃料が漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

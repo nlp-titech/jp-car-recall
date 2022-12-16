@@ -1,0 +1,17 @@
+T1	Argument 0 18	前輪緩衝装置の車体取付部の強度が不足
+T2	Connective 22 24	ため
+T3	Argument 41 51	当該部位に亀裂が入る
+T4	Connective 56 57	、
+T5	Argument 73 80	走行不能に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 25 39	高速走行時に急制動を繰り返す
+T7	Connective 39 40	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 57 71	そのままの状態で使用を続ける
+T9	Connective 71 72	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

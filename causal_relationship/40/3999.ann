@@ -1,0 +1,9 @@
+T1	Argument 6 45	ＬＥＤ前部霧灯を取り付けた車両において、取り付ける際に使用するハーネスが不適切
+T2	Argument 49 70	右側前照灯もしくは右側車幅灯に電気が流れず
+T3	Argument 71 76	不灯となる
+T4	Connective 46 48	ため
+T5	Connective 70 71	、
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	

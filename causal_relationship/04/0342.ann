@@ -1,0 +1,25 @@
+T1	Argument 5 80	制動制御装置（ＡＢＳ：アンチロックブレーキシステム）の油圧制御装置（ＨＵ：ハイドロリックユニット）と後輪制動装置のマスターシリンダの組み合わせが不適切
+T2	Argument 97 130	後輪制動装置のマスターシリンダ内のピストンのストロークが大きくなる
+T3	Argument 136 154	制動解除後にピストンが十分に戻らない
+T4	Argument 159 172	ブレーキ配管内に気泡が発生
+T5	Argument 180 186	制動力が低下
+T6	Connective 81 83	ため
+T7	Connective 135 136	、
+T8	Connective 156 159	により
+T9	Connective 173 174	、
+R1	REASON Arg1:T6 Arg2:T1	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 84 95	ＡＢＳを作動させた制動
+T20	Connective 95 96	時
+R9	REASON Arg1:T20 Arg2:T10	
+T12	Argument 174 176	最悪
+T13	Connective 177 179	場合
+R12	CONDITION Arg1:T13 Arg2:T12	
+R13	RESULT Arg1:T13 Arg2:T5	
+R2	RESULT Arg1:T6 Arg2:T2	
+R10	RESULT Arg1:T20 Arg2:T2	

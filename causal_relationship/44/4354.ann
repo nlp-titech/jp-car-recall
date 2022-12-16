@@ -1,0 +1,25 @@
+T1	Argument 19 55	動力式かじ取り装置（パワーステアリング）のゴム製油圧ホースの配索が不適切
+T2	Connective 61 63	ため
+T3	Argument 80 104	原動機の熱や振動により当該油圧ホースに亀裂が発生
+T4	Connective 105 106	、
+T5	Argument 112 127	当該油圧ホースからオイルが漏れ
+T6	Connective 127 128	て
+T7	Argument 128 134	排気管に付着
+T8	Connective 134 135	し
+T9	Argument 135 141	火災にいたる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 64 78	このままの状態で使用を続ける
+T11	Connective 78 79	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	
+T12	Argument 106 108	最悪
+T13	Connective 109 111	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T5	

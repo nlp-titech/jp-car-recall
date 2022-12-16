@@ -1,0 +1,25 @@
+T1	Argument 0 21	コントロールバルブ取付パイプの溶接が不適切
+T2	Connective 22 24	ため
+T3	Argument 25 31	エンジン振動
+T4	Connective 31 34	により
+T5	Argument 34 45	当該パイプに亀裂が発生
+T6	Connective 53 57	そのため
+T7	Argument 58 72	そのままの状態で使用を続ける
+T8	Argument 92 105	かじ取り操作ができなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T11	
+T9	Connective 85 86	、
+R8	RESULT Arg1:T9 Arg2:T8	
+T10	Connective 72 73	と
+T11	Argument 73 84	亀裂部から油漏れが発生
+R7	CONDITION Arg1:T10 Arg2:T7	
+R9	RESULT Arg1:T10 Arg2:T11	
+R10	REASON Arg1:T9 Arg2:T11	
+T12	Argument 86 88	最悪
+T13	Connective 89 91	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T8	

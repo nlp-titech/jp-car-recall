@@ -1,0 +1,21 @@
+T1	Argument 17 28	燃料配管の設計が不適切
+T2	Connective 29 31	ため
+T3	Argument 32 43	燃料配管内で気泡が発生
+T4	Connective 51 55	そのため
+T5	Argument 56 72	エンジン停止中に気泡どうしが結合
+T6	Connective 73 74	て
+T7	Argument 74 82	エア溜まりができ
+T8	Argument 83 103	始動直後にエア溜まりがエンジン内部に入り
+T9	Connective 103 104	、
+T10	Argument 104 108	エンスト
+R1	RESULT Arg1:T9 Arg2:T10	
+R2	REASON Arg1:T9 Arg2:T8	
+T11	Connective 82 83	、
+R3	RESULT Arg1:T11 Arg2:T8	
+R4	REASON Arg1:T11 Arg2:T7	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	REASON Arg1:T6 Arg2:T5	
+R7	RESULT Arg1:T4 Arg2:T5	
+R8	REASON Arg1:T4 Arg2:T3	
+R9	RESULT Arg1:T2 Arg2:T3	
+R10	REASON Arg1:T2 Arg2:T1	

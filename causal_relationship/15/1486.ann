@@ -1,0 +1,21 @@
+T1	Argument 0 50	ステアリングのノブ位置と車輪回転角度のずれを補正するステアリング旋回角度の検出センサに異品を組み付け
+T2	Connective 51 53	ため
+T3	Argument 54 76	フレームからのノイズをパルス信号として誤認識
+T4	Connective 84 88	そのため
+T5	Argument 89 120	ノブ位置と車輪の回転角度がずれていないのにずれているものと判断
+T6	Connective 121 122	、
+T7	Argument 122 129	操舵輪を動かす
+T8	Connective 134 135	、
+T9	Argument 135 137	最悪
+T10	Connective 138 140	場合
+T11	Argument 141 159	確実なステアリング操作ができなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T11	
+R9	CONDITION Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	

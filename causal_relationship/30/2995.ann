@@ -1,0 +1,27 @@
+T1	Argument 0 21	中型トラックにおいて、排気管の構造が不適切
+T2	Connective 22 24	ため
+T3	Argument 25 36	エンジン回転による共振
+T4	Argument 40 47	冷熱の繰り返し
+T5	Connective 47 50	により
+T6	Argument 50 62	排気管に過大な入力が発生
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T6	
+R3	REASON Arg1:T5 Arg2:T3	
+R4	REASON Arg1:T5 Arg2:T4	
+R5	RESULT Arg1:T5 Arg2:T6	
+T7	Connective 63 64	、
+T8	Argument 64 89	排気管、排気管ブラケット、クランプ等に亀裂が生じる
+R6	REASON Arg1:T7 Arg2:T6	
+R7	RESULT Arg1:T7 Arg2:T8	
+T9	Connective 95 99	そのため
+T10	Argument 122 127	騒音が増大
+R8	REASON Arg1:T9 Arg2:T8	
+R9	RESULT Arg1:T9 Arg2:T10	
+T11	Argument 100 114	そのままの状態で使用を続ける
+T12	Connective 114 115	と
+R10	CONDITION Arg1:T12 Arg2:T11	
+R11	RESULT Arg1:T12 Arg2:T10	
+T13	Argument 116 118	最悪
+T14	Connective 119 121	場合
+R12	CONDITION Arg1:T14 Arg2:T13	
+R13	RESULT Arg1:T14 Arg2:T10	

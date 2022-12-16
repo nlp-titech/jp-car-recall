@@ -1,0 +1,33 @@
+T1	Argument 0 30	車枠に取付けられているヒートプロテクタ取付金具の形状が不適切
+T2	Connective 31 33	ため
+T3	Argument 34 39	強度が不足
+T4	Connective 43 44	、
+T5	Argument 44 51	走行中の振動等
+T6	Connective 51 54	により
+T7	Argument 54 59	金具が折損
+T8	Connective 60 61	て
+T9	Argument 62 81	ヒートプロテクタがブレーキパイプと接触
+T10	Connective 89 93	そのため
+T11	Argument 94 104	そのまま使用を続ける
+T12	Connective 104 105	と
+T13	Argument 105 115	ブレーキパイプが損傷
+T14	Connective 116 117	、
+T15	Argument 117 125	ブレーキ液が漏れ
+T16	Connective 125 126	て
+T17	Argument 126 132	制動力が低下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	REASON Arg1:T8 Arg2:T7	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R15	REASON Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T17	

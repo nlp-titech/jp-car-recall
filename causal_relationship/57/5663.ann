@@ -1,0 +1,25 @@
+T1	Argument 23 52	電熱フィルム（シート・ヒータ・エレメント）の耐久性が不十分
+T2	Argument 56 64	長期間の使用過程
+T3	Argument 68 82	当該電熱フィルムに亀裂が発生
+T4	Argument 95 109	亀裂発生箇所の電気抵抗が変化
+T5	Argument 111 130	当該電熱フィルムが異常過熱をひき起こす
+T6	Argument 136 138	最悪
+T7	Argument 142 149	車両火災に至る
+T8	Connective 53 55	ため
+T9	Connective 64 68	において
+T10	Connective 90 94	そのため
+T11	Connective 110 111	、
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T3	
+R3	CONDITION Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T3	
+R5	REASON Arg1:T10 Arg2:T3	
+R6	RESULT Arg1:T10 Arg2:T4	
+R7	REASON Arg1:T11 Arg2:T4	
+R8	RESULT Arg1:T11 Arg2:T5	
+T12	Connective 135 136	、
+T13	Connective 139 141	場合
+R9	REASON Arg1:T12 Arg2:T5	
+R10	CONDITION Arg1:T13 Arg2:T6	
+R11	RESULT Arg1:T13 Arg2:T7	
+R12	RESULT Arg1:T12 Arg2:T7	

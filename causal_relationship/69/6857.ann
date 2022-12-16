@@ -1,0 +1,35 @@
+T1	Argument 0 44	ＰＴＯ装置（動力取り出し装置）とアウトリガ等の作動用油圧ポンプの接合部の防水構造が不適切
+T3	Argument 50 92	当該ＰＴＯ装置からの動力を当該油圧ポンプへ伝えるスプラインに塗布するグリース量が不足
+T4	Connective 96 98	ため
+T2	Argument 99 109	スプラインに錆が発生
+T5	Connective 110 111	、
+T6	Argument 111 121	そのまま使用を続ける
+T7	Connective 121 122	と
+T8	Argument 123 133	当該スプラインが摩滅
+T9	Connective 141 145	そのため
+T10	Argument 146 178	当該油圧ポンプ及びパワーステアリング用油圧ポンプが作動しなくなり
+T11	Connective 178 179	、
+T12	Argument 179 211	アウトリガの作動及びサスペンションのオイル量の調整ができなくなる
+T13	Argument 216 240	トランスミッション用オイルの冷却ファンが作動せず
+T14	Argument 241 250	オイルの温度が上昇
+T15	Connective 240 241	、
+T16	Connective 251 252	て
+T17	Argument 252 258	警告灯が点灯
+T18	Argument 270 280	ハンドル操作力が増大
+R1	REASON Arg1:T4 Arg2:T3	
+R2	REASON Arg1:T4 Arg2:T1	
+R3	RESULT Arg1:T4 Arg2:T2	
+R4	REASON Arg1:T5 Arg2:T2	
+R5	RESULT Arg1:T5 Arg2:T8	
+R6	CONDITION Arg1:T7 Arg2:T6	
+R7	RESULT Arg1:T7 Arg2:T8	
+R8	REASON Arg1:T9 Arg2:T8	
+R9	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T12	
+R11	RESULT Arg1:T9 Arg2:T10	
+R12	RESULT Arg1:T9 Arg2:T13	
+R13	REASON Arg1:T15 Arg2:T13	
+R14	RESULT Arg1:T15 Arg2:T14	
+R15	REASON Arg1:T16 Arg2:T14	
+R16	RESULT Arg1:T16 Arg2:T17	
+R17	RESULT Arg1:T16 Arg2:T18	

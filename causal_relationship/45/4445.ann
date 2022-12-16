@@ -1,0 +1,17 @@
+T1	Argument 0 35	後席三点式シートベルトの腰部アンカープレートの取付ボルトの形状が不適切
+T2	Connective 36 38	ため
+T3	Argument 55 75	アンカープレートが当該取付ボルトから外れ
+T4	Connective 75 76	、
+T5	Argument 76 90	シートベルトが機能しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 39 45	衝突等の衝撃
+T7	Connective 45 48	により
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 49 51	最悪
+T9	Connective 52 54	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	

@@ -1,0 +1,18 @@
+T1	Argument 0 52	助手席用エアバッグのインフレータ（膨張装置）において、他社製車両解体作業時にインフレータ容器の破損が発生
+T2	Connective 69 73	このため
+T5	Argument 111 128	インフレータ容器が破損して飛び散り
+T6	Connective 149 151	から
+T7	Argument 165 192	エアバッグモジュール、もしくはインフレータを良品に交換
+R1	RESULT Arg1:T6 Arg2:T7	
+R6	REASON Arg1:T2 Arg2:T1	
+T3	Argument 129 131	出火
+T4	Argument 134 139	乗員が負傷
+T8	Argument 102 109	エアバッグ展開
+T9	Connective 109 111	時に
+R2	CONDITION Arg1:T9 Arg2:T8	
+R3	RESULT Arg1:T9 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+T10	Connective 128 129	、
+R5	REASON Arg1:T10 Arg2:T5	
+R7	RESULT Arg1:T10 Arg2:T3	
+R8	RESULT Arg1:T10 Arg2:T4	

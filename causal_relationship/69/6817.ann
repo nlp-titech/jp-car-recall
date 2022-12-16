@@ -1,0 +1,25 @@
+T1	Argument 0 51	屋根部（ルーフ）を跳ね上げ式に改造した車両において、当該ルーフの全部に装着するカバーの接着方法が不適切
+T2	Connective 52 54	ため
+T3	Argument 55 69	そのままの状態で使用を続ける
+T4	Connective 69 70	と
+T5	Argument 71 81	カバーが徐々に剥がれ
+T6	Connective 81 82	、
+T7	Argument 82 84	最悪
+T8	Connective 85 87	場合
+T9	Argument 92 98	カバーが外れ
+T10	Connective 98 99	、
+T11	Argument 99 107	他の交通を妨げる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	RESULT Arg1:T6 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 88 90	走行
+T13	Connective 90 91	中
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T9	

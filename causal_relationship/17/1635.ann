@@ -1,0 +1,37 @@
+T1	Argument 0 26	原動機の燃料供給ポンプを固定するサポートの剛性が不足
+T2	Argument 33 39	原動機の振動
+T3	Connective 39 40	で
+T4	Connective 30 32	ため
+T5	Argument 40 46	ポンプが共振
+T6	Connective 54 58	そのため
+T7	Argument 71 88	ブラシと回転子間でアーク放電が発生
+T8	Argument 90 103	ポンプ内部のブラシ部が損傷
+T9	Connective 89 90	、
+T10	Connective 110 111	、
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T5	
+R3	REASON Arg1:T3 Arg2:T2	
+R4	RESULT Arg1:T3 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+T11	Argument 117 123	ポンプが停止
+T12	Connective 124 125	て
+T13	Argument 125 136	燃料供給ができなくなり
+T14	Connective 136 137	、
+T15	Argument 137 154	原動機が停止し、再始動できなくなる
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+T29	Argument 111 113	最悪
+T30	Connective 114 116	場合
+R15	CONDITION Arg1:T30 Arg2:T29	
+R16	RESULT Arg1:T30 Arg2:T11	
+T31	Argument 59 69	そのまま使用を続ける
+T32	Connective 69 70	と
+R17	CONDITION Arg1:T32 Arg2:T31	
+R18	RESULT Arg1:T32 Arg2:T7	
+R9	REASON Arg1:T10 Arg2:T8	

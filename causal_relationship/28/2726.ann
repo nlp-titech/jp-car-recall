@@ -1,0 +1,32 @@
+T1	Argument 0 79	バッテリーフォークリフトの走行用モーターと作業機用の油圧モーターを制御する制御器において、当該制御器の内部にある電流を伝える金属棒（リードバー）の材質が不適切
+T2	Connective 80 82	ため
+T3	Argument 83 91	リードバーが電食
+T4	Connective 92 93	、
+T5	Argument 93 105	締め付け部のナットが緩む
+T6	Connective 111 115	そのため
+T7	Argument 132 140	リードバーが過熱
+T8	Argument 142 144	損傷
+T9	Connective 141 142	て
+T10	Argument 151 164	締め付けナットの緩みが促進
+T11	Argument 167 174	導通不良となり
+T12	Connective 166 167	、
+T13	Argument 175 182	走行不能となる
+T14	Connective 174 175	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+R10	REASON Arg1:T12 Arg2:T10	
+R11	RESULT Arg1:T12 Arg2:T11	
+R12	REASON Arg1:T14 Arg2:T11	
+R13	RESULT Arg1:T14 Arg2:T13	
+T15	Argument 116 130	そのままの状態で使用を続ける
+T16	Connective 130 131	と
+R14	CONDITION Arg1:T16 Arg2:T15	
+R15	RESULT Arg1:T16 Arg2:T7	
+R9	RESULT Arg1:T6 Arg2:T10	
+R16	RESULT Arg1:T16 Arg2:T10	

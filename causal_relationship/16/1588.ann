@@ -1,0 +1,25 @@
+T1	Argument 0 38	変速装置のコントロールバルブの走行用スプールのスペーサボルトに誤品を組み付け
+T2	Connective 39 41	ため
+T3	Argument 42 58	当該スプールのストロークが不適切
+T4	Argument 70 81	シフトレバーが中立位置
+T5	Argument 86 104	当該バルブの前進用ポートに圧油が流入
+T6	Argument 112 122	ブレーキペダルを外し
+T7	Connective 105 106	、
+T8	Connective 84 85	時
+T9	Argument 125 132	ゆるやかに前進
+T10	Connective 123 124	際
+R1	CONDITION Arg1:T10 Arg2:T6	
+R2	RESULT Arg1:T10 Arg2:T9	
+R3	REASON Arg1:T7 Arg2:T5	
+R4	RESULT Arg1:T7 Arg2:T9	
+R5	CONDITION Arg1:T8 Arg2:T4	
+R6	RESULT Arg1:T8 Arg2:T5	
+T11	Connective 65 69	そのため
+R7	REASON Arg1:T11 Arg2:T3	
+R8	RESULT Arg1:T11 Arg2:T5	
+R9	REASON Arg1:T2 Arg2:T1	
+R10	RESULT Arg1:T2 Arg2:T3	
+T12	Argument 106 108	最悪
+T13	Connective 109 111	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T9	

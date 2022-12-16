@@ -1,0 +1,29 @@
+T1	Argument 0 42	エンジン冷却装置において、左側のエンジンオイルクーラーホース（送り側）の製造が不適切
+T2	Connective 43 45	ため
+T3	Argument 46 66	耐熱性が不足したクーラーホースが組み付け
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 75 79	そのため
+T5	Argument 80 91	エンジンオイルの熱影響
+T6	Connective 91 94	により
+T7	Argument 95 105	クーラーホースが破損
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Connective 106 107	て
+T9	Argument 107 113	オイルが漏れ
+T10	Connective 113 114	、
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T11	Argument 120 142	漏れたオイルがフロントブレーキディスクに付着
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 114 116	最悪
+T13	Connective 117 119	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T11	
+T14	Connective 143 144	、
+T15	Argument 144 159	フロントブレーキの制動力が低下
+R13	REASON Arg1:T14 Arg2:T11	
+R14	RESULT Arg1:T14 Arg2:T15	

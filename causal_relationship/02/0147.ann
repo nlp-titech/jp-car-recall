@@ -1,0 +1,25 @@
+T1	Argument 0 17	燃料タンクの後方底部の形状が不適切
+T2	Argument 37 43	走行中の振動
+T3	Argument 47 68	当該タンクの後方溶接部分に過大な力がかかり
+T4	Argument 75 87	当該溶接部分に亀裂が生じ
+T5	Argument 88 94	燃料が漏れる
+T6	Connective 18 20	ため
+T7	Connective 43 46	により
+T8	Connective 68 69	、
+T9	Connective 87 88	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T3	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 21 35	そのままの状態で使用を続ける
+T11	Connective 35 36	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T2	
+T12	Argument 69 71	最悪
+T13	Connective 72 74	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T4	

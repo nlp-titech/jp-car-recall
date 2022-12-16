@@ -1,0 +1,13 @@
+T1	Argument 0 29	運転者席用ドア内部のガラスガイド用フレームの取り付けが不良
+T2	Connective 29 32	により
+T3	Argument 33 50	ドアのロック装置の噛み合わせが悪い
+T4	Connective 55 56	、
+T5	Argument 62 71	走行中にドアが開く
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 56 58	最悪
+T7	Connective 59 61	場合
+R6	RESULT Arg1:T7 Arg2:T5	
+R7	CONDITION Arg1:T7 Arg2:T6	

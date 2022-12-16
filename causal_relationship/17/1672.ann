@@ -1,0 +1,21 @@
+T1	Argument 0 33	原動機の回転を発電機（オルタネータ）に伝達するプーリの構造が不適切
+T2	Connective 34 36	ため
+T3	Argument 37 56	ファンベルトやプーリに多量の水がかかる
+T4	Connective 56 57	と
+T5	Argument 58 73	ベルトとプーリの間で滑りが発生
+T6	Connective 81 85	そのため
+T8	Argument 86 99	発電機が駆動されず充電不良
+T10	Connective 102 103	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R9	REASON Arg1:T10 Arg2:T8	
+T11	Argument 109 126	原動機が停止し、再始動できなくなる
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 103 105	最悪
+T13	Connective 106 108	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T11	
+R6	RESULT Arg1:T6 Arg2:T8	

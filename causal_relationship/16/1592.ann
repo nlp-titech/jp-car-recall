@@ -1,0 +1,33 @@
+T1	Argument 0 55	流体式リターダ（補助制動装置）を装着した大型バスにおいて、プロペラシャフト接続部（エンドヨーク）の構造が不適切
+T2	Argument 71 115	十字継手（スパイダ）のベアリング抜け出し防止用のストッパーが発進停止の繰り返しにより摩耗
+T3	Argument 120 135	プロペラシャフト組立て時に損傷
+T4	Connective 168 172	そのため
+T5	Argument 189 200	ベアリングにガタを生じ
+T6	Argument 201 215	プロペラシャフトが過大に振動
+T7	Argument 223 242	ベアリング固定金具又は取付ボルトが折損
+T8	Argument 245 256	プロペラシャフトが脱落
+T9	Connective 243 244	て
+R1	REASON Arg1:T9 Arg2:T7	
+R2	RESULT Arg1:T9 Arg2:T8	
+T10	Connective 216 217	、
+R3	REASON Arg1:T10 Arg2:T6	
+R4	RESULT Arg1:T10 Arg2:T7	
+T11	Connective 200 201	て
+R5	REASON Arg1:T11 Arg2:T5	
+R6	RESULT Arg1:T11 Arg2:T6	
+R7	REASON Arg1:T4 Arg2:T3	
+R8	RESULT Arg1:T4 Arg2:T5	
+R9	REASON Arg1:T4 Arg2:T2	
+T12	Connective 56 58	ため
+R10	REASON Arg1:T12 Arg2:T1	
+R11	RESULT Arg1:T12 Arg2:T2	
+R12	RESULT Arg1:T12 Arg2:T3	
+T17	Argument 173 187	そのままの状態で使用を続ける
+T18	Connective 187 188	と
+R17	CONDITION Arg1:T18 Arg2:T17	
+R18	RESULT Arg1:T18 Arg2:T5	
+T19	Argument 217 219	最悪
+T20	Connective 220 222	場合
+R19	CONDITION Arg1:T20 Arg2:T19	
+R20	RESULT Arg1:T20 Arg2:T7	
+#1	AnnotatorNotes T3	次の部分と重複

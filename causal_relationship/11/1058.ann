@@ -1,0 +1,25 @@
+T1	Argument 0 46	車両の前後進切替操作を行う電気式シフトレバーのスイッチ部において、前進側接点のギャップが狭い
+T2	Connective 51 53	ため
+T3	Argument 54 72	夏場等外気温が高い状態でそのまま使用
+T4	Connective 74 76	場合
+T5	Argument 77 92	スイッチケース部の僅かな熱歪み
+T6	Connective 92 95	により
+T7	Argument 96 115	前進側接点が閉じた（ＯＮの）ままとなる
+T8	Connective 121 125	そのため
+T9	Argument 150 161	運転者がアクセルを踏む
+T10	Connective 161 162	と
+T11	Argument 163 178	運転者の意図と異なり車両が前進
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T7	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	REASON Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	RESULT Arg1:T4 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	CONDITION Arg1:T10 Arg2:T9	
+R9	RESULT Arg1:T10 Arg2:T11	
+R10	RESULT Arg1:T8 Arg2:T11	
+T12	Argument 126 149	シフトスイッチをニュートラル（Ｎ）に入れた状態
+T13	Connective 149 150	で
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T9	

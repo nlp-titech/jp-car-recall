@@ -1,0 +1,25 @@
+T1	Argument 1 68	発電機（ジェネレータ）及び原動機（駆動用フロントモータ）の冷却と潤滑のためのオイルを循環させる電動オイルポンプの制御プログラムが不適切
+T2	Connective 69 71	ため
+T3	Argument 72 83	ポンプが作動不能となる
+T4	Connective 89 93	そのため
+T5	Argument 94 118	警告音とともにメータ内のＥＶシステム警告灯が点灯
+T6	Argument 144 191	フェールセーフ状態（発電不可となり出力制限し、最高速度を５０ｋｍ／ｈに制限する走行状態）になり
+T7	Argument 192 220	バッテリー残量の範囲での駆動用リアモータのみの走行となり
+T8	Argument 221 231	そのまま走行を続ける
+T9	Connective 231 232	と
+T10	Argument 232 239	走行不能になる
+T11	Connective 220 221	、
+T12	Connective 191 192	、
+R1	RESULT Arg1:T9 Arg2:T10	
+R2	CONDITION Arg1:T9 Arg2:T8	
+R3	RESULT Arg1:T11 Arg2:T10	
+R4	REASON Arg1:T11 Arg2:T7	
+R5	RESULT Arg1:T12 Arg2:T7	
+R6	REASON Arg1:T12 Arg2:T6	
+R7	RESULT Arg1:T4 Arg2:T5	
+R8	RESULT Arg1:T4 Arg2:T15	
+R9	REASON Arg1:T4 Arg2:T3	
+R10	RESULT Arg1:T2 Arg2:T3	
+R11	REASON Arg1:T2 Arg2:T1	
+T15	Argument 119 142	インフォメーション画面にＥＶシステム異常と表示
+R12	RESULT Arg1:T4 Arg2:T6	

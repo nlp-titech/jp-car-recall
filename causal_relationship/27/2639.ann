@@ -1,0 +1,17 @@
+T1	Argument 0 33	ハイブリッド車の補助動力モータを制御するＥＣＵのプログラムが不適切
+T2	Connective 34 36	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T4	Connective 90 92	場合
+T5	Argument 93 116	エンスト後もＥＣＵはモータに発電を要求し続ける
+T6	Connective 118 120	から
+T7	Argument 121 127	モータが逆転
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Connective 135 139	そのため
+T9	Argument 140 152	進行方向と逆に微速で走行
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R2	RESULT Arg1:T2 Arg2:T5	
+R10	RESULT Arg1:T4 Arg2:T5	
+T11	Argument 37 88	補助動力用バッテリが低温や高温になることにより供給可能電力が低下した状態で、発進時や停止直前にエンスト
+R12	CONDITION Arg1:T4 Arg2:T11	

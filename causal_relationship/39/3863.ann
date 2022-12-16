@@ -1,0 +1,45 @@
+T1	Argument 5 66	電気エア切り替え式トランスミッションのシフトユニットにおいて、偶数段と奇数段を切り替えるアウターピストンの端面形状が不適切
+T2	Argument 70 82	エア圧を受ける面積が不足
+T3	Argument 84 89	切り替え時
+T4	Argument 90 107	アウターピストンの作動開始が遅れる
+T5	Argument 118 131	アウターピストンが急速に動
+T6	Argument 132 159	アウターピストンとインナーピストンのカップシールが摩耗
+T7	Argument 161 171	エアの気密が保たれず
+T8	Argument 171 180	変速時間が長くなり
+T9	Argument 181 191	そのまま使用を続ける
+T10	Argument 193 195	最悪
+T11	Argument 199 205	変速ができず
+T12	Argument 205 212	走行不能になる
+T13	Connective 67 69	ため
+T14	Connective 83 84	、
+T15	Connective 89 90	に
+T16	Connective 113 117	そのため
+T17	Connective 160 161	て
+T18	Connective 180 181	、
+T19	Connective 170 171	ず
+T20	Connective 131 132	き
+T21	Connective 191 192	と
+T22	Connective 196 198	場合
+T23	Connective 204 205	ず
+R1	REASON Arg1:T13 Arg2:T1	
+R2	RESULT Arg1:T13 Arg2:T2	
+R3	REASON Arg1:T14 Arg2:T2	
+R5	CONDITION Arg1:T15 Arg2:T3	
+R6	RESULT Arg1:T15 Arg2:T4	
+R7	REASON Arg1:T16 Arg2:T4	
+R8	RESULT Arg1:T16 Arg2:T5	
+R9	REASON Arg1:T20 Arg2:T5	
+R10	RESULT Arg1:T20 Arg2:T6	
+R11	REASON Arg1:T17 Arg2:T6	
+R12	RESULT Arg1:T17 Arg2:T7	
+R13	REASON Arg1:T19 Arg2:T7	
+R14	RESULT Arg1:T19 Arg2:T8	
+R15	REASON Arg1:T18 Arg2:T8	
+R17	CONDITION Arg1:T21 Arg2:T9	
+R19	CONDITION Arg1:T22 Arg2:T10	
+R20	RESULT Arg1:T22 Arg2:T11	
+R21	REASON Arg1:T23 Arg2:T11	
+R22	RESULT Arg1:T23 Arg2:T12	
+R4	RESULT Arg1:T14 Arg2:T4	
+R16	RESULT Arg1:T21 Arg2:T11	
+R18	RESULT Arg1:T18 Arg2:T11	

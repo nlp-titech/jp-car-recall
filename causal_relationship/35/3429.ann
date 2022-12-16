@@ -1,0 +1,13 @@
+T1	Argument 0 49	アンチロックブレーキシステム（ＡＢＳ）の油圧調整装置において、調圧用電磁弁のばらつき補正値が不適切
+T2	Connective 50 52	ため
+T3	Argument 53 71	制動時意図どおりに油圧を調整できない
+T4	Connective 77 81	そのため
+T5	Argument 89 98	走行安定性を損なう
+R1	RESULT Arg1:T4 Arg2:T5	
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T3	
+R4	REASON Arg1:T2 Arg2:T1	
+T6	Argument 82 87	ＡＢＳ作動
+T7	Connective 87 89	時に
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T5	

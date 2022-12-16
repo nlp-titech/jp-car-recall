@@ -1,0 +1,25 @@
+T1	Argument 0 52	前輪用ブレーキホースをショックアブソーバの外筒に保持する金具部において、ブレーキホースの取付角度が不適切
+T2	Argument 56 70	ブレーキホースにねじれが生じ
+T3	Argument 95 110	当該ブレーキホースに亀裂が発生
+T4	Argument 118 126	ブレーキ液が漏れ
+T5	Argument 126 132	制動力が低下
+T6	Connective 53 55	ため
+T7	Connective 78 79	、
+T8	Connective 111 112	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+T9	Connective 125 126	れ
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Connective 93 94	と
+T11	Argument 79 93	このままの状態で使用を続ける
+R9	CONDITION Arg1:T10 Arg2:T11	
+R10	RESULT Arg1:T10 Arg2:T3	
+T12	Connective 115 117	場合
+T13	Argument 112 114	最悪
+R11	CONDITION Arg1:T12 Arg2:T13	
+R12	RESULT Arg1:T12 Arg2:T4	

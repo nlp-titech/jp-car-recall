@@ -1,0 +1,29 @@
+T1	Argument 0 19	除雪車において、車枠の強度検討が不適切
+T2	Connective 20 22	ため
+T3	Argument 23 43	走行時または作業時に車枠の一部に応力集中
+T4	Connective 45 46	と
+T5	Argument 47 63	当該応力が車枠の許容限度を超える
+T6	Connective 69 73	そのため
+T7	Argument 74 88	そのままの状態で使用を続ける
+T8	Connective 88 89	と
+T9	Argument 90 95	車枠に亀裂
+T10	Connective 98 99	、
+T11	Argument 99 101	最悪
+T12	Connective 102 104	場合
+T13	Argument 105 110	車枠が折損
+R1	RESULT Arg1:T12 Arg2:T13	
+R2	CONDITION Arg1:T12 Arg2:T11	
+R3	RESULT Arg1:T10 Arg2:T13	
+R4	REASON Arg1:T10 Arg2:T9	
+R5	RESULT Arg1:T8 Arg2:T9	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T9	
+R8	REASON Arg1:T6 Arg2:T5	
+R9	RESULT Arg1:T4 Arg2:T5	
+R10	CONDITION Arg1:T4 Arg2:T3	
+R11	RESULT Arg1:T2 Arg2:T5	
+R12	REASON Arg1:T2 Arg2:T1	
+T14	Connective 110 111	し
+T15	Argument 111 118	走行不能となる
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	

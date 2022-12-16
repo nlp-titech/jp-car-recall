@@ -1,0 +1,9 @@
+T1	Argument 18 36	使用過程で当該部の補強板に亀裂が発生
+T2	Argument 0 14	排気管の補強部の構造が不適切
+T3	Connective 15 17	ため
+R1	REASON Arg1:T3 Arg2:T2	
+R2	RESULT Arg1:T3 Arg2:T1	
+T4	Connective 37 38	、
+T5	Argument 38 44	排気管が折損
+R3	REASON Arg1:T4 Arg2:T1	
+R4	RESULT Arg1:T4 Arg2:T5	

@@ -1,0 +1,25 @@
+T1	Argument 0 54	原動機の冷却措置において、原動機から自動変速機用オイルクーラ間で配管されているウォーターホースの強度が不十分
+T2	Argument 69 77	当該ホースが変形
+T3	Argument 95 103	当該ホースが破損
+T4	Argument 105 119	急激かつ多量の水漏れを起こし
+T5	Argument 120 130	オーバーヒートに至る
+T6	Connective 55 57	ため
+T7	Connective 78 79	、
+T8	Connective 104 105	、
+T9	Connective 119 120	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 58 66	内圧変化の繰返し
+T11	Connective 66 69	により
+R9	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T2	
+T12	Argument 79 93	そのままの状態で使用を続ける
+T13	Connective 93 94	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T3	

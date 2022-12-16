@@ -1,0 +1,21 @@
+T1	Argument 0 40	ホイールハブボルトにおいて、取扱説明書の締付けトルクの記載が誤って過大な値となっ
+T2	Connective 43 45	ため
+T3	Argument 46 63	当該トルクで締付けると降伏点を超え
+T4	Connective 63 64	、
+T5	Argument 64 70	ボルトが伸び
+T6	Argument 91 93	最悪
+T7	Connective 94 96	場合
+T8	Argument 97 102	車輪が脱落
+T9	Connective 90 91	。
+R1	RESULT Arg1:T7 Arg2:T8	
+R2	CONDITION Arg1:T7 Arg2:T6	
+R3	RESULT Arg1:T9 Arg2:T8	
+R4	REASON Arg1:T9 Arg2:T10	
+R5	RESULT Arg1:T4 Arg2:T5	
+R6	REASON Arg1:T4 Arg2:T3	
+R7	RESULT Arg1:T2 Arg2:T3	
+R8	REASON Arg1:T2 Arg2:T1	
+T10	Argument 71 85	ホイールを適切に固定出来ない
+T11	Connective 70 71	て
+R9	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T10	

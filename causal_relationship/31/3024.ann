@@ -1,0 +1,15 @@
+T1	Argument 13 81	フロントパワードライブユニット（ＦＰＤＵ）及びリヤモーターを制御するリヤモーターコントロールユニット（ＲＭＣＵ）の制御プログラムが不適切
+T2	Connective 82 84	ため
+T3	Argument 85 113	車両起動時にＦＰＤＵ及びＲＭＣＵがモーターの位相を誤認識
+T4	Argument 115 126	起動後に発進不能となる
+T5	Connective 114 115	、
+T6	Argument 135 156	この状態で一定以上アクセルペダルを踏み込む
+T7	Connective 156 157	と
+T8	Argument 158 167	車両が急に動き出す
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T4	
+R5	RESULT Arg1:T7 Arg2:T8	
+R6	CONDITION Arg1:T7 Arg2:T6	
+R7	REASON Arg1:T7 Arg2:T3	

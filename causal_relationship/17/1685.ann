@@ -1,0 +1,9 @@
+T1	Argument 0 28	後部右側ドアのドアロック装置において、構成部品に成形不良
+T2	Connective 34 36	ため
+T3	Argument 37 63	ドアを閉めようとしても、ドアロックが開錠位置で止まる
+T4	Connective 69 73	そのため
+T5	Argument 74 84	ドアが閉まらなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

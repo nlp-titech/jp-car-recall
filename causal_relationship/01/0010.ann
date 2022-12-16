@@ -1,0 +1,21 @@
+T2	Connective 131 132	と
+T3	Argument 133 141	当該ホースが損傷
+R2	RESULT Arg1:T2 Arg2:T3	
+T7	Connective 142 143	、
+T8	Argument 149 166	パワー・ステアリング用オイルが漏れ
+T9	Connective 166 167	、
+T10	Argument 167 179	ハンドルが著しく重くなる
+R3	REASON Arg1:T7 Arg2:T3	
+R4	RESULT Arg1:T7 Arg2:T8	
+R5	REASON Arg1:T9 Arg2:T8	
+R6	RESULT Arg1:T9 Arg2:T10	
+T4	Argument 103 131	このままの状態で一杯にハンドルを切るような操作を繰り返す
+T5	Connective 102 103	、
+R1	REASON Arg1:T5 Arg2:T12	
+R7	CONDITION Arg1:T2 Arg2:T4	
+R8	RESULT Arg1:T5 Arg2:T3	
+T6	Argument 143 145	最悪
+T11	Connective 146 148	場合
+R9	CONDITION Arg1:T11 Arg2:T6	
+R10	RESULT Arg1:T11 Arg2:T8	
+T12	Argument 0 96	前輪２軸車用の動力式かじ取り装置（パワー・ステアリング）において、前後輪（前から２軸目の車輪）の操舵力を軽減させるための補助用倍力装置（サブ・ブースタ）の油圧ホースを過度に曲げた状態で取り付け

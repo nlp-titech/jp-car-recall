@@ -1,0 +1,13 @@
+T1	Argument 0 27	速度計等を制御しているコンピュータのプログラムが不適切
+T2	Connective 28 30	ため
+T3	Argument 31 73	イグニッションスイッチをオフにした後、特定の時間でイグニッションスイッチをオンにする
+T4	Connective 73 74	と
+T5	Argument 75 89	速度計の駆動処理が行われない
+T6	Connective 95 99	そのため
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+T7	Argument 100 112	速度計等が作動しなくなる
+R6	RESULT Arg1:T6 Arg2:T7	

@@ -1,0 +1,25 @@
+T1	Argument 0 37	前輪懸架装置において、ストラットとナックルを締結するボルトの締付け力が不足
+T2	Argument 91 105	ストラットがナックルから抜け
+T3	Argument 106 114	ハンドルが取られ
+T4	Argument 115 122	走行不能に至る
+T5	Connective 46 48	ため
+T6	Connective 105 106	、
+T7	Connective 114 115	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 49 63	そのままの状態で使用を続ける
+T9	Connective 63 64	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+T10	Argument 85 87	最悪
+T11	Connective 88 90	場合
+R8	CONDITION Arg1:T11 Arg2:T10	
+R9	RESULT Arg1:T11 Arg2:T2	
+T12	Argument 65 80	段差乗り越え等の突起路面を走行
+T13	Connective 82 83	際
+R10	CONDITION Arg1:T13 Arg2:T12	
+R11	RESULT Arg1:T13 Arg2:T2	
+R12	RESULT Arg1:T9 Arg2:T2	

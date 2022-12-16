@@ -1,0 +1,11 @@
+T1	Argument 9 31	原動機制御用コンピュータのプログラムが不適切
+T2	Connective 37 39	ため
+T3	Argument 40 51	制御信号の発信が遅れる
+T4	Connective 56 57	、
+T5	Argument 57 79	アクセル操作に対して原動機回転の反応が遅れる
+T6	Argument 83 112	一時的にクルーズコントロールの設定速度と異なった速度となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T6	

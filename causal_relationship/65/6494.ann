@@ -1,0 +1,13 @@
+T1	Argument 0 43	カーテンエアバッグにおいて、当該カーテンエアバッグを車体に取り付けるボルトの強度が不足
+T2	Argument 50 63	締め付け負荷でボルトが破損
+T3	Connective 47 49	ため
+R1	RESULT Arg1:T3 Arg2:T2	
+R2	REASON Arg1:T3 Arg2:T1	
+T4	Connective 71 75	そのため
+T5	Argument 76 97	衝突時にカーテンエアバッグが適正に展開せず
+T6	Connective 97 98	、
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	REASON Arg1:T4 Arg2:T2	
+T7	Argument 98 110	乗員に過度の傷害を与える
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	REASON Arg1:T6 Arg2:T5	

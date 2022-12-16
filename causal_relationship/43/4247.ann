@@ -1,0 +1,29 @@
+T1	Argument 0 31	冷蔵冷凍車において、荷箱側面のリベットカバーの取付指示が不適切
+T2	Connective 32 34	ため
+T3	Argument 35 41	密着が不十分
+T4	Connective 48 52	そのため
+T5	Argument 70 87	リベットカバーが荷箱より浮き上がり
+T6	Connective 87 88	、
+T7	Argument 94 96	脱落
+T8	Connective 97 98	て
+T9	Argument 98 108	他の交通の妨げになる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 63 65	変形
+T11	Connective 67 69	際に
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	
+T12	Argument 88 90	最悪
+T13	Connective 91 93	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T7	
+T14	Connective 60 63	により
+T15	Argument 53 60	荷箱が温度変化
+R13	REASON Arg1:T14 Arg2:T15	
+R14	RESULT Arg1:T14 Arg2:T10	

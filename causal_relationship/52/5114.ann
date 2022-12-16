@@ -1,0 +1,41 @@
+T1	Argument 0 29	ホイールキャップ外径がスチールホイールの外径より若干大きい
+T2	Connective 29 31	ため
+T3	Argument 32 67	タイヤビード部に厚みがあるタイヤ（リムプロテクション付きタイヤ）を装着
+T4	Connective 69 70	と
+T5	Argument 71 95	ホイールキャップの円周端部がタイヤビード部に接触
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 140 151	ホイールキャップがずれ
+T7	Connective 103 107	そのため
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	
+T8	Argument 108 113	前輪に装着
+T9	Connective 115 117	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T6	
+T10	Argument 152 172	ホイールキャップがタイヤエアバルブを倒し
+T11	Argument 179 194	エアバルブの付け根に亀裂が生じ
+T12	Argument 195 206	短時間でエア漏れを起し
+T13	Connective 206 207	て
+T14	Argument 208 211	パンク
+T15	Connective 151 152	、
+R9	REASON Arg1:T15 Arg2:T6	
+T16	Argument 118 137	ハンドル操作によるタイヤビード部の捩れ
+T17	Connective 137 140	により
+R10	REASON Arg1:T17 Arg2:T16	
+R11	RESULT Arg1:T17 Arg2:T6	
+T18	Connective 172 173	、
+R12	REASON Arg1:T18 Arg2:T10	
+R13	RESULT Arg1:T18 Arg2:T11	
+T19	Connective 194 195	、
+R14	REASON Arg1:T19 Arg2:T11	
+R15	RESULT Arg1:T19 Arg2:T12	
+R16	REASON Arg1:T13 Arg2:T12	
+R17	RESULT Arg1:T13 Arg2:T14	
+T20	Argument 173 175	最悪
+T21	Connective 176 178	場合
+R18	CONDITION Arg1:T21 Arg2:T20	
+R19	RESULT Arg1:T21 Arg2:T11	
+R20	RESULT Arg1:T15 Arg2:T10	

@@ -1,0 +1,21 @@
+T1	Argument 0 44	ブレーキ倍力装置に負圧を供給するブレーキ負圧電動ポンプの制御用リレーのカシメ管理が不適切
+T2	Connective 45 47	ため
+T3	Argument 48 62	リレー接点がオンの状態で固着
+T4	Connective 70 74	そのため
+T5	Argument 75 85	ブレーキ警告灯が点灯
+T7	Argument 98 112	ブレーキ負圧電動ポンプが停止
+T8	Connective 113 114	、
+T9	Argument 114 124	そのままの状態で使用
+T10	Connective 126 127	と
+T11	Argument 127 136	制動距離が長くなる
+R1	RESULT Arg1:T10 Arg2:T11	
+R2	CONDITION Arg1:T10 Arg2:T9	
+R3	RESULT Arg1:T8 Arg2:T11	
+R4	REASON Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T4 Arg2:T5	
+R9	RESULT Arg1:T2 Arg2:T3	
+R10	REASON Arg1:T2 Arg2:T1	
+R5	REASON Arg1:T4 Arg2:T3	
+T12	Argument 91 97	警告音が鳴り
+R11	RESULT Arg1:T4 Arg2:T12	
+R6	RESULT Arg1:T4 Arg2:T7	

@@ -1,0 +1,21 @@
+T1	Connective 58 60	ため
+T2	Argument 0 57	コンクリートミキサー車に備えられている電動式ホッパーカバーにおいて、当該カバーを開閉するコントローラの設定が不適切
+T3	Argument 61 82	ホッパーカバーシャフトに過大なトルクが発生
+T4	Connective 90 94	そのため
+T5	Argument 95 109	そのままの状態で使用を続ける
+T6	Connective 119 120	し
+T7	Argument 121 123	最悪
+R1	REASON Arg1:T1 Arg2:T2	
+R2	RESULT Arg1:T1 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T9	
+T8	Connective 109 110	と
+T9	Argument 110 119	当該シャフトが折損
+T10	Connective 124 126	場合
+T11	Argument 127 137	ホッパーカバーが脱落
+R6	CONDITION Arg1:T8 Arg2:T5	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	REASON Arg1:T6 Arg2:T9	
+R9	RESULT Arg1:T6 Arg2:T11	
+R10	CONDITION Arg1:T10 Arg2:T7	
+R11	RESULT Arg1:T10 Arg2:T11	

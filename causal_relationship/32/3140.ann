@@ -1,0 +1,13 @@
+T1	Argument 0 34	差動装置において、ドライブピニオンのベアリングの内輪軌道面に加工不良
+T2	Connective 41 45	そのため
+T3	Argument 46 56	そのまま使用を続ける
+T4	Connective 56 57	と
+T5	Argument 58 66	ベアリングが損傷
+R1	RESULT Arg1:T4 Arg2:T5	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T5	
+R6	REASON Arg1:T2 Arg2:T1	
+T6	Connective 67 68	て
+T7	Argument 68 74	油漏れが発生
+R4	REASON Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T6 Arg2:T7	

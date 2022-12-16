@@ -1,0 +1,9 @@
+T1	Argument 0 39	年少者用補助乗車装置（チャイルドシート）のノンスリップパッドのベルト強度が不足
+T2	Connective 48 50	ため
+T3	Argument 51 69	衝突時に幼児の頭部移動量が過大となり
+T4	Connective 69 70	、
+T5	Argument 70 80	保安基準不適合となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

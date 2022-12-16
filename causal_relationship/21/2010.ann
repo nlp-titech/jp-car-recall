@@ -1,0 +1,25 @@
+T1	Argument 0 44	ＤＰＦ（ディーゼル粒子状物質除去装置）内部の粒子状物質堆積量を計算するプログラムが不適切
+T2	Connective 45 47	ため
+T3	Argument 48 70	高負荷でエンジン回転の低い状態で使用を続ける
+T4	Connective 70 71	と
+T5	Argument 72 104	ＤＰＦの自動再生（捕集した粒子状物質の燃焼除去）が適切に行われず
+T6	Connective 104 105	、
+T7	Argument 105 116	多量の粒子状物質が堆積
+T8	Connective 117 118	て
+T9	Argument 118 125	エンジンが不調
+T10	Connective 128 129	、
+T11	Argument 129 131	最悪
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+T12	Connective 132 134	場合
+R11	CONDITION Arg1:T12 Arg2:T11	
+R10	RESULT Arg1:T10 Arg2:T14	
+R12	RESULT Arg1:T12 Arg2:T14	
+T14	Argument 135 149	エンストして再始動不能となる

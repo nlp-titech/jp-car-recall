@@ -1,0 +1,45 @@
+T1	Argument 1 35	四輪駆動車の動力伝達装置において、前軸差動装置のギヤ比の設定が不適切
+T2	Connective 36 38	ため
+T6	Argument 60 67	四輪駆動で走行
+T7	Connective 69 70	と
+T8	Argument 71 103	前後輪のタイヤ回転数差に比例して動力伝達装置にねじりトルクが発生
+T9	Connective 104 105	、
+T10	Argument 105 147	四輪駆動から二輪駆動への切り換え操作をしているにもかかわらず、二輪駆動になっていない
+T11	Connective 153 157	そのため
+T12	Argument 158 165	高速走行を行う
+T13	Connective 165 166	と
+T14	Argument 167 179	前軸差動装置が異常に発熱
+T15	Connective 180 181	、
+T16	Argument 181 190	オイルシールが損傷
+T17	Connective 191 192	て
+T18	Argument 192 198	オイルが漏れ
+T19	Connective 198 199	、
+T20	Argument 199 211	ベアリングやギヤが焼付き
+T21	Connective 211 212	、
+T22	Argument 212 214	最悪
+T23	Connective 215 217	場合
+T24	Argument 218 224	前輪がロック
+T25	Connective 225 226	て
+T26	Argument 226 233	走行不能に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T8	
+R3	CONDITION Arg1:T7 Arg2:T6	
+R4	RESULT Arg1:T7 Arg2:T8	
+R5	REASON Arg1:T9 Arg2:T8	
+R6	RESULT Arg1:T9 Arg2:T10	
+R7	REASON Arg1:T11 Arg2:T10	
+R8	RESULT Arg1:T11 Arg2:T14	
+R9	CONDITION Arg1:T13 Arg2:T12	
+R10	RESULT Arg1:T13 Arg2:T14	
+R11	REASON Arg1:T15 Arg2:T14	
+R12	RESULT Arg1:T15 Arg2:T16	
+R13	REASON Arg1:T17 Arg2:T16	
+R14	RESULT Arg1:T17 Arg2:T18	
+R15	REASON Arg1:T19 Arg2:T18	
+R16	RESULT Arg1:T19 Arg2:T20	
+R17	REASON Arg1:T21 Arg2:T20	
+R18	RESULT Arg1:T21 Arg2:T24	
+R19	CONDITION Arg1:T23 Arg2:T22	
+R20	RESULT Arg1:T23 Arg2:T24	
+R21	REASON Arg1:T25 Arg2:T24	
+R22	RESULT Arg1:T25 Arg2:T26	

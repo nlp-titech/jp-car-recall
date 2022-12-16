@@ -1,0 +1,21 @@
+T1	Argument 0 57	かじ取り装置のステアリングシャフトとステアリングバルブシャフトの締結部において、締付ボルトの締付トルク指示が不適切
+T2	Connective 58 60	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 61 75	締付ボルトの締付トルクが不足
+T4	Connective 79 80	、
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 80 94	そのままの状態で使用を続ける
+T6	Connective 104 105	、
+R4	RESULT Arg1:T4 Arg2:T11	
+T7	Argument 105 119	締結部の締結部シャフトが外れ
+T8	Connective 119 120	、
+T9	Argument 120 133	かじ取り操作ができなくなる
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Connective 94 95	と
+T11	Argument 96 104	締付ボルトが緩み
+R5	CONDITION Arg1:T10 Arg2:T5	
+R9	RESULT Arg1:T10 Arg2:T11	
+R10	REASON Arg1:T6 Arg2:T11	

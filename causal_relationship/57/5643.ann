@@ -1,0 +1,33 @@
+T1	Argument 0 20	燃料タンクのフロントマウントの強度が不足
+T2	Argument 27 40	正面からの過大な衝撃を受け
+T3	Argument 43 54	フロントマウントが変形
+T4	Argument 56 73	当該タンクとの溶接部分に亀裂が入り
+T5	Argument 73 79	燃料が漏れる
+T6	Argument 90 92	最悪
+T7	Argument 96 109	漏れた燃料が付近の点火装置
+T8	Argument 112 114	引火
+T9	Argument 116 121	火災に至る
+T10	Connective 24 26	ため
+T11	Connective 41 42	際
+T12	Connective 55 56	、
+T13	Connective 72 73	り
+R1	REASON Arg1:T10 Arg2:T1	
+R2	RESULT Arg1:T10 Arg2:T3	
+R3	CONDITION Arg1:T11 Arg2:T2	
+R4	RESULT Arg1:T11 Arg2:T3	
+R5	REASON Arg1:T12 Arg2:T3	
+R6	RESULT Arg1:T12 Arg2:T4	
+R7	REASON Arg1:T13 Arg2:T4	
+R8	RESULT Arg1:T13 Arg2:T5	
+T14	Connective 85 89	そのため
+T15	Connective 93 95	場合
+T16	Connective 109 112	により
+T17	Connective 115 116	、
+R9	REASON Arg1:T14 Arg2:T5	
+R10	RESULT Arg1:T14 Arg2:T8	
+R11	CONDITION Arg1:T15 Arg2:T6	
+R12	RESULT Arg1:T15 Arg2:T8	
+R13	REASON Arg1:T16 Arg2:T7	
+R14	RESULT Arg1:T16 Arg2:T8	
+R15	REASON Arg1:T17 Arg2:T8	
+R16	RESULT Arg1:T17 Arg2:T9	

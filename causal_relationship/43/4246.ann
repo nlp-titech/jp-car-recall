@@ -1,0 +1,21 @@
+T1	Argument 0 34	コンテナセミトレーラの走行装置において、タイヤの組付作業指示が不適切
+T2	Connective 35 37	ため
+T3	Argument 38 60	タイヤ内部に水が入った状態でホイールに組付け
+T4	Connective 67 71	そのため
+T5	Argument 87 103	ホイール及びエアバルブに錆が発生
+T6	Connective 104 105	、
+T7	Argument 111 124	エアバルブから空気が漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 72 86	そのままの状態で使用を続ける
+T9	Connective 86 87	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 105 107	最悪
+T11	Connective 108 110	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T7	

@@ -1,0 +1,25 @@
+T1	Argument 11 34	副変速機制御コンピューターのプログラムが不適切
+T2	Connective 35 37	ため
+T3	Argument 38 56	副変速機内部のギヤの噛み合いが不十分
+T4	Connective 64 65	、
+T5	Argument 65 71	原動機を停止
+T6	Connective 73 75	場合
+T7	Argument 76 88	当該ギヤの噛み合いが外れ
+T8	Connective 88 89	、
+T9	Argument 89 99	駐車機構が作動しない
+T10	Argument 107 127	シフトレバーをパーキングレンジにした状態
+T11	Connective 127 131	において
+T12	Argument 131 138	車両が動き出す
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	CONDITION Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	RESULT Arg1:T4 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T13	Connective 104 106	ため
+R9	REASON Arg1:T13 Arg2:T9	
+R10	CONDITION Arg1:T11 Arg2:T10	
+R11	RESULT Arg1:T11 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T12	

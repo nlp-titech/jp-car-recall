@@ -1,0 +1,17 @@
+T1	Argument 0 48	かじ取装置のパワーステアリングシリンダ固定ピンにおいて、固定ピン取り付けボルトの締め付け力が不足
+T2	Connective 58 62	そのため
+T3	Argument 78 86	当該ボルトが緩み
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 86 87	、
+T5	Argument 87 94	固定ピンが脱落
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 96 98	ため
+T7	Argument 99 111	かじ取操作ができなくなる
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 63 77	そのままの状態で使用を続ける
+T9	Connective 77 78	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	

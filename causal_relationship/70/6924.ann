@@ -1,0 +1,5 @@
+T1	Argument 0 42	前軸と後軸の間に乗車口のあるワンマンバスにおいて、後輪巻込防止装置が装着されていない
+T2	Connective 42 44	ため
+T3	Argument 45 78	ボデー下端の地上高が「ワンマンバス構造要件」の基準を満たしていない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

@@ -1,0 +1,5 @@
+T1	Argument 0 29	原動機において、ブローバイ・ガス還元装置が装着されていない
+T2	Connective 29 31	ため
+T3	Argument 32 49	道路運送車両の保安基準に適合しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

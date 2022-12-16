@@ -1,0 +1,33 @@
+T1	Argument 0 64	軸重緩和をうけたバラ積み緩和２軸トレーラにおいて、装着しているホイールの疲労限界軸重が、車両の設計上の軸重に対して、余裕が少ない
+T2	Connective 70 74	そのため
+T3	Argument 118 135	軸重がホイールの疲労限界軸重を超え
+T4	Connective 135 136	、
+T5	Argument 136 148	ホイールに疲労亀裂が発生
+T6	Connective 149 150	、
+T7	Argument 168 175	ホイールが破損
+T8	Connective 175 176	し
+T9	Argument 176 181	車輪が脱落
+R1	REASON Arg1:T8 Arg2:T7	
+R2	RESULT Arg1:T8 Arg2:T9	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T2 Arg2:T1	
+R8	RESULT Arg1:T2 Arg2:T3	
+T10	Argument 75 96	積荷の積載位置が荷台中心から後軸寄りになっ
+T11	Connective 97 99	場合
+T12	Argument 100 114	シビアコンディションでの使用
+T13	Connective 114 118	において
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T3	
+T14	Argument 150 160	そのまま使用を続ける
+T15	Connective 160 161	と
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T7	
+T16	Argument 162 164	最悪
+T17	Connective 165 167	場合
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T7	

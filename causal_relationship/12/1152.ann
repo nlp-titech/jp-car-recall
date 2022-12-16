@@ -1,0 +1,43 @@
+T2	Connective 30 32	ため
+T5	Argument 33 57	車両旋回時等にキングピンボス部に過大な応力が発生
+T6	Connective 59 61	場合
+T1	Argument 0 26	フロントアクスルのナックルストッパ部付近の強度が不足
+T7	Argument 62 75	当該ストッパ部に亀裂が発生
+T8	Argument 86 100	キングピンのガタが大きくなる
+T9	Connective 100 101	と
+T10	Argument 102 109	この亀裂が促進
+T11	Connective 119 123	そのため
+T12	Argument 124 134	そのまま使用を続ける
+T13	Connective 134 135	と
+T14	Argument 136 141	亀裂が進行
+T15	Connective 142 143	て
+T16	Argument 143 149	ボス部が破断
+T17	Connective 150 151	、
+T18	Argument 151 153	最悪
+T19	Connective 154 156	場合
+T20	Argument 157 169	ボスからキングピンが外れ
+T21	Connective 169 170	、
+T22	Argument 170 176	タイヤが傾き
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T7	
+R4	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T10	
+R9	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T14	
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T14	
+R13	RESULT Arg1:T15 Arg2:T16	
+R14	REASON Arg1:T17 Arg2:T16	
+R15	RESULT Arg1:T17 Arg2:T20	
+R16	CONDITION Arg1:T19 Arg2:T18	
+R17	RESULT Arg1:T19 Arg2:T20	
+R18	REASON Arg1:T21 Arg2:T20	
+R19	RESULT Arg1:T21 Arg2:T22	
+R20	REASON Arg1:T15 Arg2:T14	
+R3	RESULT Arg1:T2 Arg2:T10	
+T3	Connective 175 176	き
+T4	Argument 176 183	走行不能となる
+R5	REASON Arg1:T3 Arg2:T22	
+R21	RESULT Arg1:T3 Arg2:T4	

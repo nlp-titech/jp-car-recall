@@ -1,0 +1,17 @@
+T1	Argument 14 43	連動機構（イコライザー）内のケーブルブラケットに強度の不足
+T2	Connective 52 54	ため
+T3	Argument 82 94	ケーブルブラケットが変形
+T4	Connective 95 96	て
+T5	Argument 96 115	ブレーキケーブルがブラケットから外れる
+T6	Connective 121 125	そのため
+T7	Argument 126 152	左側ブレーキレバーを操作してもブレーキが効かなくなる
+R1	REASON Arg1:T6 Arg2:T5	
+R2	RESULT Arg1:T6 Arg2:T7	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T2 Arg2:T1	
+R6	RESULT Arg1:T2 Arg2:T3	
+T8	Argument 55 75	左側ブレーキレバーを強い力で繰り返し操作
+T9	Connective 80 81	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	

@@ -1,0 +1,9 @@
+T1	Argument 0 20	助手席用サンバイザにおいて、図面処置不備
+T2	Connective 20 23	により
+T3	Argument 24 50	助手席エアバッグ用コーションラベルが貼付されていない
+T4	Connective 50 52	ため
+T5	Argument 53 70	道路運送車両の保安基準に適合しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

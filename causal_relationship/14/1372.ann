@@ -1,0 +1,9 @@
+T2	Connective 54 56	ため
+T3	Argument 57 94	イグニッションキーの役割をする携帯機との電波交信範囲外において施錠されない
+T4	Connective 100 104	そのため
+T9	Argument 110 147	運転者以外の者が、イグニッションスイッチを操作すると、エンジンを始動できる
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T9	
+T1	Argument 0 53	イグニッションスイッチのキーレススタートシステムにおいて、スタートコントロールユニットのプログラムが不適切
+R1	REASON Arg1:T2 Arg2:T1	

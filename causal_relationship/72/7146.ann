@@ -1,0 +1,28 @@
+T1	Argument 0 12	法定速度を超えた高速走行
+T2	Connective 12 13	時
+T3	Argument 15 19	路面状況
+T4	Connective 19 23	によって
+T5	Argument 24 36	急激なハンドル操作を行っ
+T6	Connective 37 39	場合
+T7	Argument 40 61	ステアリングの応答が予期しない挙動を起こし
+T8	Connective 63 64	、
+T9	Argument 64 76	コントロールが難しくなる
+T10	Connective 81 82	、
+T11	Argument 82 84	最悪
+T12	Connective 85 87	場合
+T13	Argument 88 95	操縦不能となる
+R1	CONDITION Arg1:T2 Arg2:T1	
+R2	REASON Arg1:T4 Arg2:T3	
+R3	CONDITION Arg1:T6 Arg2:T5	
+R4	RESULT Arg1:T6 Arg2:T7	
+R5	RESULT Arg1:T4 Arg2:T7	
+R6	RESULT Arg1:T2 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T9	
+R8	RESULT Arg1:T4 Arg2:T9	
+R9	RESULT Arg1:T2 Arg2:T9	
+R10	REASON Arg1:T8 Arg2:T7	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	RESULT Arg1:T10 Arg2:T13	
+R15	REASON Arg1:T10 Arg2:T9	
+R14	REASON Arg1:T10 Arg2:T7	

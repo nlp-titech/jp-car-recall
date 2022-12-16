@@ -1,0 +1,21 @@
+T1	Argument 7 39	横吊り式スペアタイヤキャリアにおいて②巻き取り機構の溶接が不適切
+T2	Connective 40 42	ため
+T3	Argument 43 56	溶接強度のばらつきが大きく
+T4	Connective 56 57	、
+T5	Argument 57 72	十分な安全率を確保できていない
+T6	Connective 78 82	そのため
+T7	Argument 114 121	溶接部が剥がれ
+T8	Connective 121 122	て
+T9	Argument 123 132	スペアタイヤが脱落
+T10	Argument 83 113	タイヤ固定時に正規の締付方法によらず過大なトルクで締め付ける
+T11	Connective 113 114	と
+R1	CONDITION Arg1:T11 Arg2:T10	
+R2	RESULT Arg1:T11 Arg2:T7	
+R3	REASON Arg1:T8 Arg2:T7	
+R4	RESULT Arg1:T8 Arg2:T9	
+R5	REASON Arg1:T2 Arg2:T1	
+R6	RESULT Arg1:T2 Arg2:T3	
+R7	REASON Arg1:T4 Arg2:T3	
+R8	RESULT Arg1:T4 Arg2:T5	
+R9	REASON Arg1:T6 Arg2:T5	
+R10	RESULT Arg1:T6 Arg2:T10	

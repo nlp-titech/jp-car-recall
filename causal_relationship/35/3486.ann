@@ -1,0 +1,17 @@
+T1	Argument 22 44	電源ヒューズに誤った配線端子固定ボルトを使用
+T2	Connective 52 56	そのため
+T3	Argument 57 76	固定ボルトがヒューズホルダの隔壁に干渉
+T4	Connective 77 78	て
+T5	Argument 79 102	配線端子の締付けが不十分となり電源が供給されず
+T6	Connective 102 103	、
+T7	Argument 103 105	最悪
+T8	Connective 106 108	場合
+T9	Argument 109 120	走行中にエンジンが停止
+R1	RESULT Arg1:T8 Arg2:T9	
+R2	CONDITION Arg1:T8 Arg2:T7	
+R3	RESULT Arg1:T6 Arg2:T9	
+R4	REASON Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T5	
+R6	REASON Arg1:T4 Arg2:T3	
+R7	RESULT Arg1:T2 Arg2:T3	
+R8	REASON Arg1:T2 Arg2:T1	

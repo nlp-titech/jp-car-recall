@@ -1,0 +1,29 @@
+T1	Connective 49 53	そのため
+T2	Argument 20 41	当該ハーネスとトルクコンバータホースが接触
+R1	REASON Arg1:T1 Arg2:T2	
+T3	Argument 71 85	トルクコンバータホースが損傷
+R2	RESULT Arg1:T1 Arg2:T3	
+T4	Connective 86 87	、
+T5	Argument 92 98	オイルが漏れ
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 0 16	メインハーネスの取り回しが不適切
+T7	Connective 17 19	ため
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T2	
+T8	Connective 98 99	、
+T9	Argument 99 106	走行不能になる
+R7	REASON Arg1:T8 Arg2:T5	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 54 64	そのまま使用を続ける
+T11	Connective 64 65	と
+T12	Argument 66 68	振動
+T13	Connective 68 71	により
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T3	
+T14	Argument 87 89	最悪
+T15	Connective 90 92	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T5	

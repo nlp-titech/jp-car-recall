@@ -1,0 +1,21 @@
+T1	Argument 0 29	原動機の潤滑装置において、左側潤滑油ホースの組付けが不適切
+T2	Argument 33 39	排気管と接触
+T3	Argument 68 76	当該ホースが損傷
+T4	Argument 77 84	オイルが漏れる
+T5	Connective 30 32	ため
+T6	Connective 46 47	、
+T7	Connective 76 77	し
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 47 61	そのままの状態で使用を続ける
+T9	Connective 61 62	と
+T10	Argument 62 64	最悪
+T11	Connective 65 67	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	CONDITION Arg1:T11 Arg2:T10	
+R9	RESULT Arg1:T9 Arg2:T3	
+R10	RESULT Arg1:T11 Arg2:T3	

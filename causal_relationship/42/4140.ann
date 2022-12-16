@@ -1,0 +1,21 @@
+T1	Argument 0 33	四輪駆動車のリヤ車輪速センサーにおいて、センサーの樹脂材質が不適切
+T2	Connective 34 36	ため
+T3	Argument 37 42	樹脂が吸水
+T4	Connective 50 54	そのため
+T5	Argument 55 71	センサー内部の電子部品がショート
+T6	Connective 72 73	、
+T7	Argument 73 86	センサーが異常な信号を出力
+T8	Connective 87 88	て
+T9	Argument 89 98	ＡＢＳ警告灯が点灯
+T10	Argument 100 105	機能が停止
+T11	Argument 109 120	速度計が作動しなくなる
+R1	RESULT Arg1:T8 Arg2:T10	
+R2	RESULT Arg1:T8 Arg2:T11	
+R3	RESULT Arg1:T8 Arg2:T9	
+R4	REASON Arg1:T2 Arg2:T1	
+R5	RESULT Arg1:T2 Arg2:T3	
+R6	REASON Arg1:T4 Arg2:T3	
+R7	RESULT Arg1:T4 Arg2:T5	
+R8	REASON Arg1:T6 Arg2:T5	
+R9	RESULT Arg1:T6 Arg2:T7	
+R10	REASON Arg1:T8 Arg2:T7	

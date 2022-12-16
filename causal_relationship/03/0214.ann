@@ -1,0 +1,29 @@
+T1	Argument 1 49	前輪緩衝装置の下側アームを支持する部材（サポートメンバー）において、内部の防錆処理がされていない
+T2	Argument 70 80	融雪材等が内部に侵入
+T3	Argument 87 94	錆が発生・進行
+T4	Argument 99 113	サポートメンバーの強度が低下
+T5	Argument 124 132	当該アームが脱落
+T6	Argument 134 141	走行不能に至る
+T7	Connective 51 53	から
+T8	Connective 84 87	により
+T9	Connective 96 98	ため
+T10	Connective 114 115	、
+T11	Connective 133 134	て
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T3	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T5	
+R9	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	
+T12	Argument 54 68	そのままの状態で使用を続ける
+T13	Connective 68 69	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T3	
+T14	Argument 115 117	最悪
+T15	Connective 121 123	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T5	

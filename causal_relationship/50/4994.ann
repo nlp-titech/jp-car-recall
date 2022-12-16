@@ -1,0 +1,13 @@
+T1	Argument 3 37	ブレーキキャリパを構成しているボルトのネジ穴の一部に加工方法が不適切
+T2	Connective 43 45	ため
+T3	Argument 60 67	当該部分が破損
+T4	Connective 75 79	そのため
+T5	Argument 80 86	制動力が不足
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 46 57	ブレーキ操作の繰り返し
+T7	Connective 57 60	により
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	

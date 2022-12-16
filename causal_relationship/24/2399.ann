@@ -1,0 +1,21 @@
+T1	Argument 0 39	側面方向指示器を備えた車両の非常点滅表示灯スイッチにおいて、接点の耐久性が不足
+T2	Connective 43 45	ため
+T3	Argument 46 58	当該スイッチ操作時の通電
+T4	Connective 58 61	により
+T5	Argument 61 69	アーク放電が発生
+T6	Connective 70 71	、
+T7	Argument 71 76	接点が摩耗
+T8	Connective 83 84	、
+T9	Argument 90 103	非常点滅表示灯が点灯しない
+R1	REASON Arg1:T2 Arg2:T1	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 84 86	最悪
+T11	Connective 87 89	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T9	
+R2	RESULT Arg1:T2 Arg2:T5	
