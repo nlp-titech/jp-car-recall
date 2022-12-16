@@ -1,0 +1,21 @@
+T1	Argument 0 40	ロータリ除雪車のエンジンにおいて、②ラジエタ―冷却ファンのブレードの設計が不適切
+T2	Connective 41 43	ため
+T3	Argument 44 50	ファンが共振
+T4	Connective 58 62	そのため
+T5	Argument 63 74	そのままの状態で使用し
+T6	Connective 77 78	と
+T7	Argument 79 90	共振によりファンが破損
+T8	Argument 92 96	冷却不良
+T9	Connective 91 92	、
+R1	RESULT Arg1:T9 Arg2:T8	
+R2	REASON Arg1:T9 Arg2:T7	
+R3	RESULT Arg1:T6 Arg2:T7	
+R4	CONDITION Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T7	
+R6	REASON Arg1:T4 Arg2:T3	
+R7	RESULT Arg1:T2 Arg2:T3	
+R8	REASON Arg1:T2 Arg2:T1	
+T14	Argument 97 106	エンジンが破損に至
+T15	Connective 96 97	で
+R9	REASON Arg1:T15 Arg2:T8	
+R10	RESULT Arg1:T15 Arg2:T14	

@@ -1,0 +1,37 @@
+T1	Argument 0 25	インタークーラの配管において、ホースの設計が不適切
+T2	Argument 29 38	ホースの曲げがきつ
+T3	Argument 39 48	内層部にしわが生じ
+T4	Argument 62 69	エンジンの振動
+T5	Argument 73 84	しわを起点に亀裂が生じ
+T6	Argument 85 90	亀裂が進展
+T7	Argument 94 100	内層部が剥離
+T8	Argument 102 116	インタークーラ入口部が詰まり
+T9	Argument 117 119	最悪
+T10	Argument 123 134	有害なガスの排出が増大
+T11	Connective 26 28	ため
+T12	Connective 57 61	そのため
+T13	Connective 69 72	により
+T14	Connective 92 93	と
+T15	Connective 101 102	て
+T16	Connective 116 117	、
+T17	Connective 120 122	場合
+R1	REASON Arg1:T11 Arg2:T1	
+R2	RESULT Arg1:T11 Arg2:T2	
+T18	Connective 38 39	く
+R3	REASON Arg1:T18 Arg2:T2	
+R4	RESULT Arg1:T18 Arg2:T3	
+R5	REASON Arg1:T12 Arg2:T3	
+R7	REASON Arg1:T13 Arg2:T4	
+R8	RESULT Arg1:T13 Arg2:T5	
+T19	Connective 84 85	、
+R9	REASON Arg1:T19 Arg2:T5	
+R10	RESULT Arg1:T19 Arg2:T7	
+R11	CONDITION Arg1:T14 Arg2:T6	
+R12	RESULT Arg1:T14 Arg2:T7	
+R13	REASON Arg1:T15 Arg2:T7	
+R14	RESULT Arg1:T15 Arg2:T8	
+R15	REASON Arg1:T16 Arg2:T8	
+R17	CONDITION Arg1:T17 Arg2:T9	
+R18	RESULT Arg1:T17 Arg2:T10	
+R6	RESULT Arg1:T12 Arg2:T5	
+R16	RESULT Arg1:T16 Arg2:T10	

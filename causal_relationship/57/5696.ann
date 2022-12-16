@@ -1,0 +1,9 @@
+T1	Argument 37 68	フロント・シート・サイド・エアバッグ用配線の組み付け位置を誤っ
+T2	Argument 72 111	側面からの衝突状態において左右のフロント・シート・サイド・エアバッグが逆に作動
+T3	Argument 119 128	乗員保護性能が低下
+T4	Connective 69 71	ため
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+T5	Connective 114 118	そのため
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	

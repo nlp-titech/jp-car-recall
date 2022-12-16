@@ -1,0 +1,25 @@
+T1	Argument 0 43	除雪用自動車等において、オルタネータからの電気配線（ジャンクションコード）の容量が不足
+T2	Connective 47 49	ため
+T3	Argument 50 66	スノウプラウ等作業機使用時の電流
+T4	Connective 66 69	により
+T5	Argument 70 77	当該配線が溶断
+T6	Connective 85 89	そのため
+T7	Argument 90 100	そのまま使用を続ける
+T8	Connective 100 101	と
+T9	Argument 101 109	充電できなくなり
+T10	Connective 109 110	、
+T11	Argument 110 112	最悪
+T12	Connective 113 115	場合
+T13	Argument 116 133	原動機が停止し、再始動できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	RESULT Arg1:T6 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	

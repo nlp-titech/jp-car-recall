@@ -1,0 +1,29 @@
+T1	Argument 9 24	フューエルパイプの製造が不適切
+T2	Connective 25 27	ため
+T3	Argument 28 38	誤った材質が使用され
+T4	Connective 47 51	そのため
+T5	Argument 52 58	耐久性が不足
+T6	Connective 59 60	、
+T7	Argument 60 65	燃料の脈動
+T8	Connective 65 69	によって
+T9	Argument 69 73	亀裂が入
+T10	Connective 73 74	り
+T11	Argument 74 79	燃料が漏れ
+T12	Connective 79 80	、
+T13	Argument 80 82	最悪
+T14	Connective 83 85	場合
+T15	Argument 86 93	車両火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T15	
+R13	CONDITION Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	

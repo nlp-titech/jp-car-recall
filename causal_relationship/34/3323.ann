@@ -1,0 +1,9 @@
+T1	Argument 0 40	ホイール・クレーンの走行装置において、ホイールを取り付けるハブボルトの強度が不足
+T5	Argument 47 71	ホイールナットを締め付ける際に当該ボルトが伸びる
+T6	Connective 77 81	そのため
+T7	Argument 82 109	ホイールナットを規定のトルクで締め付けることができない
+R1	RESULT Arg1:T6 Arg2:T7	
+R2	REASON Arg1:T6 Arg2:T5	
+T2	Connective 44 46	ため
+R6	REASON Arg1:T2 Arg2:T1	
+R3	RESULT Arg1:T2 Arg2:T5	

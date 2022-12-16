@@ -1,0 +1,25 @@
+T1	Argument 20 42	変速機制御コンピューターのプログラムが不適切
+T2	Connective 43 45	ため
+T3	Argument 55 85	電子制御ユニット内部の油圧調整機又は電子制御油圧バルブが停止
+T4	Connective 86 87	て
+T5	Argument 87 94	内部油圧が低下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 102 106	そのため
+T7	Argument 107 113	警告灯が点灯
+T9	Argument 115 127	変速機のギヤが３速に固定
+T8	Argument 134 145	停車時に後退ギヤが選択
+T10	Connective 147 148	て
+T11	Argument 148 153	車両が後退
+T12	Argument 46 53	Ｄレンジの状態
+T13	Connective 53 54	で
+R5	CONDITION Arg1:T13 Arg2:T12	
+R6	RESULT Arg1:T13 Arg2:T3	
+R7	REASON Arg1:T6 Arg2:T5	
+R8	RESULT Arg1:T6 Arg2:T7	
+R9	RESULT Arg1:T6 Arg2:T9	
+R10	RESULT Arg1:T6 Arg2:T8	
+R11	REASON Arg1:T10 Arg2:T8	
+R12	RESULT Arg1:T10 Arg2:T11	

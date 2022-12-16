@@ -1,0 +1,29 @@
+T1	Argument 13 17	凍結など
+T2	Connective 17 20	により
+T3	Argument 20 32	ワイパーの動きが制限され
+T4	Connective 33 36	状態で
+T5	Argument 37 67	ワイパーのスイッチを”ＯＮ”にしたままジャンプスタートを行う
+T6	Connective 67 68	と
+T7	Argument 69 75	大電流が流れ
+T8	Connective 75 76	て
+T9	Argument 76 88	ワイパーモジュールが損傷
+T10	Connective 96 100	そのため
+T11	Argument 101 103	最悪
+T12	Connective 104 106	場合
+T13	Argument 107 118	ワイパーが作動しなくな
+T14	Connective 118 119	り
+T15	Argument 119 128	視界を確保できない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	

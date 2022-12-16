@@ -1,0 +1,9 @@
+T1	Argument 0 30	燃料タンクに取付けているフューエルユニットの製造方法が不適切
+T2	Connective 31 33	ため
+T3	Argument 34 58	配線部密閉用モールド樹脂が確実に充填されていない
+T4	Connective 64 68	そのため
+T5	Argument 69 94	燃料満タン時に当該ユニットの配線部より燃料が漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R6	RESULT Arg1:T4 Arg2:T5	

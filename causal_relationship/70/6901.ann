@@ -1,0 +1,25 @@
+T1	Argument 11 42	コイルスプリングを押さえているサークリップの組付け作業が不適切
+T2	Connective 43 45	ため
+T3	Argument 46 55	サークリップが外れ
+T4	Connective 64 68	そのため
+T5	Argument 69 83	そのままの状態で使用を続ける
+T6	Connective 83 84	と
+T7	Argument 85 101	当該緩衝装置のダストシールが外れ
+T8	Connective 101 102	て
+T9	Argument 103 113	スプリングが抜け出し
+T10	Connective 113 114	、
+T11	Argument 114 116	最悪
+T12	Connective 117 119	場合
+T13	Argument 120 131	走行安定性が損なわれる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	CONDITION Arg1:T12 Arg2:T11	
+R11	RESULT Arg1:T10 Arg2:T13	
+R12	RESULT Arg1:T12 Arg2:T13	

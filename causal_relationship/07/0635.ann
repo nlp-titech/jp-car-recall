@@ -1,0 +1,13 @@
+T1	Argument 0 13	オイルクーラの塗装が不適切
+T2	Argument 17 41	オイルクーラとオイルパイプを締結するボルトが緩む
+T3	Argument 64 83	オイルパイプの取付部からオイルが漏れる
+T4	Connective 14 16	ため
+T5	Connective 47 51	そのため
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	
+T8	Argument 52 62	そのまま使用を続ける
+T9	Connective 62 63	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	

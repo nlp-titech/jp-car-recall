@@ -1,0 +1,28 @@
+T1	Argument 7 36	旋回用静油圧変速機において、緊急操作レバー部の構造が不適切
+T2	Argument 40 51	レバーの根元に水が溜ま
+T3	Argument 52 56	錆が発生
+T4	Argument 69 81	緊急操作レバーが錆で固着
+T5	Argument 83 99	旋回用静油圧変速機の操作ができず
+T6	Argument 100 102	最悪
+T7	Argument 106 110	操舵不能
+T8	Argument 116 123	エンストに至る
+T9	Connective 37 39	ため
+T10	Connective 64 68	そのため
+T11	Connective 82 83	、
+T12	Connective 99 100	、
+T13	Connective 103 105	場合
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T2	
+T14	Connective 51 52	り
+R3	REASON Arg1:T14 Arg2:T2	
+R4	RESULT Arg1:T14 Arg2:T3	
+R5	REASON Arg1:T10 Arg2:T3	
+R6	RESULT Arg1:T10 Arg2:T4	
+R7	REASON Arg1:T11 Arg2:T4	
+R8	RESULT Arg1:T11 Arg2:T5	
+R9	REASON Arg1:T12 Arg2:T5	
+R10	RESULT Arg1:T12 Arg2:T7	
+R11	CONDITION Arg1:T13 Arg2:T6	
+R12	RESULT Arg1:T13 Arg2:T7	
+R13	RESULT Arg1:T13 Arg2:T8	
+R14	RESULT Arg1:T12 Arg2:T8	

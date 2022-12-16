@@ -1,0 +1,31 @@
+T1	Argument 0 36	発電機の製造過程において、当該発電機の整流回路のダイオード内部に歪を生じ
+T2	Argument 45 59	当該ダイオードの熱劣化が促進
+T3	Argument 62 64	損傷
+T4	Argument 66 80	整流回路に過大な電流が流れる
+T5	Argument 85 87	発熱
+T6	Argument 89 96	樹脂部分が溶損
+T7	Argument 97 99	発煙
+T8	Argument 107 112	火災に至る
+T9	Connective 42 44	ため
+T10	Connective 61 62	て
+T11	Connective 65 66	、
+T12	Connective 82 85	により
+T13	Connective 88 89	て
+T14	Connective 96 97	、
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T2	
+R3	REASON Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T3	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+R7	REASON Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T5	
+R9	REASON Arg1:T13 Arg2:T5	
+R10	RESULT Arg1:T13 Arg2:T6	
+R11	REASON Arg1:T14 Arg2:T6	
+R12	RESULT Arg1:T14 Arg2:T7	
+T16	Argument 101 103	最悪
+T17	Connective 104 106	場合
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T8	
+R13	RESULT Arg1:T14 Arg2:T8	

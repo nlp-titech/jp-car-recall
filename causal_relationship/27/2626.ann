@@ -1,0 +1,44 @@
+T1	Argument 0 38	粒子状物質除去装置（ＤＰＤ）を装着したトラクタにおいて、遮熱板の形状が不適切
+T2	Connective 39 41	ため
+T3	Argument 42 62	ＤＰＤ再生中に車両右後方から強風を受ける
+R1	REASON Arg1:T2 Arg2:T1	
+T8	Connective 105 109	そのため
+T9	Argument 126 141	リレーボックス内に雨水等が入り
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 142 157	当該ボックス内の電気部品が腐食
+T11	Connective 141 142	、
+R9	REASON Arg1:T11 Arg2:T9	
+R10	RESULT Arg1:T11 Arg2:T10	
+T12	Connective 167 168	、
+T13	Argument 174 181	エンジンが停止
+R12	RESULT Arg1:T12 Arg2:T13	
+T14	Argument 185 195	灯火器等が不灯に至る
+T4	Argument 63 79	排気ガスがリレーボックスにかかり
+T5	Argument 87 97	リレーボックスが溶損
+R2	RESULT Arg1:T2 Arg2:T4	
+T6	Connective 62 63	と
+R3	CONDITION Arg1:T6 Arg2:T3	
+R4	RESULT Arg1:T6 Arg2:T4	
+T7	Connective 79 80	、
+R5	REASON Arg1:T7 Arg2:T4	
+R6	RESULT Arg1:T7 Arg2:T22	
+T16	Connective 158 159	て
+T17	Argument 159 167	通電不良を起こし
+R7	REASON Arg1:T16 Arg2:T10	
+R15	RESULT Arg1:T16 Arg2:T17	
+R13	RESULT Arg1:T12 Arg2:T14	
+T15	Argument 110 124	そのままの状態で使用を続ける
+T18	Connective 124 125	と
+R14	CONDITION Arg1:T18 Arg2:T15	
+R16	RESULT Arg1:T18 Arg2:T9	
+T19	Argument 168 170	最悪
+T20	Connective 171 173	場合
+R17	CONDITION Arg1:T20 Arg2:T19	
+R18	RESULT Arg1:T20 Arg2:T13	
+T21	Connective 86 87	で
+T22	Argument 80 86	排気ガスの熱
+R19	REASON Arg1:T21 Arg2:T22	
+R20	RESULT Arg1:T21 Arg2:T5	
+R21	REASON Arg1:T8 Arg2:T5	
+R22	RESULT Arg1:T20 Arg2:T14	
+R11	REASON Arg1:T12 Arg2:T17	

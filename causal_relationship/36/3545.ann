@@ -1,0 +1,9 @@
+T1	Argument 11 52	スプリングブレーキ解除用のリリースボルト一式がブレーキチャンバーに装着されていない
+T2	Connective 58 62	そのため
+T3	Argument 63 101	スプリングブレーキ装置のエア系統が故障しスプリングブレーキが利いた状態になっ
+T4	Connective 102 104	場合
+T5	Argument 106 123	スプリングブレーキの解除ができない
+R1	RESULT Arg1:T4 Arg2:T5	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T5	
+R4	REASON Arg1:T2 Arg2:T1	

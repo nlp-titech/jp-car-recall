@@ -1,0 +1,29 @@
+T1	Argument 0 36	樹脂製燃料タンクの内圧調整用チェックバルブ（調整弁）において、異品が装着
+T2	Argument 44 56	圧力調整が適切に行われず
+T3	Argument 56 64	燃料タンクが膨張
+T4	Argument 66 72	タイヤと接触
+T5	Argument 85 99	そのままの状態で使用を続ける
+T6	Argument 101 109	燃料タンクが損傷
+T7	Argument 111 113	最悪
+T8	Argument 116 122	燃料が漏れる
+T9	Connective 41 43	ため
+T10	Connective 55 56	ず
+T11	Connective 65 66	、
+T12	Connective 80 84	そのため
+T13	Connective 99 100	と
+T14	Connective 110 111	、
+T15	Connective 114 116	場合
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T2	
+R3	REASON Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T3	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+R7	REASON Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T6	
+R9	CONDITION Arg1:T13 Arg2:T5	
+R10	RESULT Arg1:T13 Arg2:T6	
+R11	REASON Arg1:T14 Arg2:T6	
+R12	RESULT Arg1:T14 Arg2:T8	
+R13	CONDITION Arg1:T15 Arg2:T7	
+R14	RESULT Arg1:T15 Arg2:T8	

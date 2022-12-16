@@ -1,0 +1,21 @@
+T1	Argument 0 45	ダブルキャブ仕様に改造した車両において、キャブフロアに装着した遮音材の取り付け方法が不適切
+T2	Connective 46 48	ため
+T3	Argument 59 70	当該遮音材が垂れ下がり
+T4	Connective 70 71	、
+T5	Argument 71 81	ＥＧＲクーラーと接触
+T6	Connective 89 93	そのため
+T7	Argument 94 107	接触した遮音材が高熱となり
+R1	RESULT Arg1:T6 Arg2:T7	
+R2	REASON Arg1:T6 Arg2:T5	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	REASON Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T2 Arg2:T3	
+R6	REASON Arg1:T2 Arg2:T1	
+T8	Argument 49 56	走行中の冷却風
+T9	Connective 57 59	より
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 107 109	焼損
+T11	Connective 106 107	り
+R9	REASON Arg1:T11 Arg2:T7	
+R10	RESULT Arg1:T11 Arg2:T10	

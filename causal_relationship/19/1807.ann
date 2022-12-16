@@ -1,0 +1,25 @@
+T1	Argument 0 30	後軸エアスプリングのリーフスプリングとの取付部の構造が不適切
+T2	Connective 31 33	ため
+T3	Argument 45 57	取付けボルトに緩みが発生
+T4	Connective 65 69	そのため
+T5	Argument 85 96	取付ボルトが変形、折損
+T6	Connective 97 98	、
+T7	Argument 104 114	エアスプリングが破損
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 34 43	悪路、段差等の走行
+T9	Connective 43 45	時に
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 70 84	そのままの状態で使用を続ける
+T11	Connective 84 85	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	
+T12	Argument 98 100	最悪
+T13	Connective 101 103	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T7	

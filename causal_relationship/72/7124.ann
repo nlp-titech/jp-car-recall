@@ -1,0 +1,9 @@
+T1	Argument 0 24	ブレーキ液漏れ警告灯の球切れ確認回路が誤って配線
+T2	Connective 29 30	、
+T3	Argument 47 52	点灯しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 30 44	イグニッションスイッチを入れ
+T5	Connective 45 46	際
+R3	CONDITION Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T3	

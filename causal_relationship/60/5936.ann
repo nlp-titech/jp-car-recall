@@ -1,0 +1,42 @@
+T1	Argument 0 45	７速ＤＳＧ型自動変速機を搭載した車両において、自動変速機制御コンピュータの基盤材質が不適切
+T2	Connective 48 50	ため
+T3	Argument 51 60	内部ショートが発生
+T4	Argument 61 71	電源用ヒューズが溶断
+T5	Connective 60 61	し
+T6	Argument 80 90	走行中に不具合が発生
+T7	Connective 92 94	場合
+T8	Argument 95 105	クラッチの締結が開放
+T9	Connective 110 114	によって
+T10	Argument 115 137	車両の運行を維持するための駆動力が伝達されず
+T11	Connective 146 147	、
+T12	Argument 153 158	再発進不能
+T14	Argument 208 218	駐車中に不具合が発生
+T15	Connective 220 222	場合
+T16	Argument 223 234	エンジンを始動できない
+T17	Argument 238 248	始動できても発進不能
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T4	
+R5	CONDITION Arg1:T7 Arg2:T6	
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T10	
+T18	Connective 79 80	。
+R11	REASON Arg1:T18 Arg2:T4	
+R12	RESULT Arg1:T18 Arg2:T10	
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T16	
+R15	RESULT Arg1:T15 Arg2:T17	
+R6	RESULT Arg1:T7 Arg2:T10	
+T13	Connective 136 137	ず
+R18	REASON Arg1:T13 Arg2:T10	
+T19	Argument 137 146	惰性走行状態となり
+R19	RESULT Arg1:T13 Arg2:T19	
+T20	Argument 147 151	車両停止
+T21	Connective 151 152	後
+R21	CONDITION Arg1:T21 Arg2:T20	
+R22	RESULT Arg1:T21 Arg2:T12	
+R16	RESULT Arg1:T18 Arg2:T16	
+R17	RESULT Arg1:T18 Arg2:T17	
+R9	REASON Arg1:T11 Arg2:T19	
+R10	RESULT Arg1:T11 Arg2:T12	

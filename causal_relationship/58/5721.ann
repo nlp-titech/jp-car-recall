@@ -1,0 +1,13 @@
+T1	Argument 0 43	慣性ブレーキシステムのブレーキラインにおいて、組み立て工程におけるエア抜き手順が不適切
+T2	Connective 46 47	、
+T3	Argument 47 57	当該部分にエアが混入
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 67 71	そのため
+T5	Argument 72 78	ブレーキ作動
+T6	Connective 78 80	時に
+T7	Argument 80 86	制動力が低下
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

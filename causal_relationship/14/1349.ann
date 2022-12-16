@@ -1,0 +1,33 @@
+T1	Argument 0 28	エンジン制御用電気配線において、配線被覆の耐摩耗性が不足
+T2	Connective 32 34	ため
+T3	Argument 35 42	エンジン振動等
+T4	Connective 42 45	により
+T5	Argument 46 81	電気配線の屈曲部の配線被覆が電気配線保護管（コルゲートチューブ）と擦れ
+T6	Connective 81 82	て
+T7	Argument 82 86	摩耗損傷
+T8	Connective 94 98	そのため
+T9	Argument 99 113	そのままの状態で使用を続ける
+T10	Connective 113 114	と
+T11	Argument 115 129	電気配線がショートまたは断線
+T12	Connective 130 131	て
+T13	Argument 131 138	エンジンが停止
+T14	Connective 139 140	、
+T15	Argument 140 142	最悪
+T16	Connective 143 145	場合
+T17	Argument 146 155	再始動できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	CONDITION Arg1:T10 Arg2:T9	
+R9	RESULT Arg1:T8 Arg2:T11	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	REASON Arg1:T14 Arg2:T13	
+R13	RESULT Arg1:T12 Arg2:T13	
+R14	CONDITION Arg1:T16 Arg2:T15	
+R15	RESULT Arg1:T16 Arg2:T17	
+R16	RESULT Arg1:T14 Arg2:T17	

@@ -1,0 +1,17 @@
+T1	Argument 0 41	アクセルペダルの製造工程において、アクセルペダルロッドとブラケットとの溶接が不十分
+T2	Connective 48 52	そのため
+T3	Argument 64 70	溶接が剥がれ
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 70 71	て
+T5	Argument 71 81	アクセルペダルが外れ
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 81 82	、
+T7	Argument 82 90	走行できなくなる
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 53 63	そのまま使用を続ける
+T9	Connective 63 64	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	

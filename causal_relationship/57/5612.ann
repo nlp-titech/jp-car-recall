@@ -1,0 +1,29 @@
+T1	Argument 0 46	フロントブレーキのリザーバータンクにおいて、原動機の最高回転付近における車両振動評価が不十分
+T2	Argument 50 71	原動機の最高回転付近において長時間連続走行
+T3	Argument 77 81	車両振動
+T4	Argument 84 102	当該タンク内のブレーキ液に気泡が発生
+T5	Argument 115 129	そのままの状態で使用を続ける
+T6	Argument 131 143	ブレーキ配管に気泡が混入
+T7	Argument 145 147	最悪
+T8	Argument 151 166	フロントブレーキの制動力が低下
+T9	Connective 47 49	ため
+T10	Connective 73 75	場合
+T11	Connective 81 84	により
+T12	Connective 110 114	そのため
+T13	Connective 129 130	と
+T14	Connective 144 145	、
+T15	Connective 148 150	場合
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T4	
+R3	CONDITION Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T4	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+R7	REASON Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T6	
+R9	CONDITION Arg1:T13 Arg2:T5	
+R10	RESULT Arg1:T13 Arg2:T6	
+R11	REASON Arg1:T14 Arg2:T6	
+R12	RESULT Arg1:T14 Arg2:T8	
+R13	CONDITION Arg1:T15 Arg2:T7	
+R14	RESULT Arg1:T15 Arg2:T8	

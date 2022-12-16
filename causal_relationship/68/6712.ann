@@ -1,0 +1,25 @@
+T1	Argument 0 38	リヤスタビライザリンクにおいて、ボールジョイントブーツ生産時に原材料が不適切
+T2	Connective 39 41	ため
+T3	Argument 42 47	亀裂が生じ
+T4	Connective 56 60	そのため
+T5	Argument 61 80	ボールジョイント内部に砂等の異物が侵入
+T6	Argument 82 95	ボールジョイントが異常摩耗
+T7	Connective 81 82	、
+T8	Connective 96 97	て
+T9	Argument 98 100	最悪
+T10	Connective 101 103	場合
+T11	Argument 104 115	ボールジョイントが外れ
+T12	Connective 115 116	、
+T13	Argument 116 124	走行安定性が低下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	
+R7	REASON Arg1:T8 Arg2:T6	
+R8	RESULT Arg1:T8 Arg2:T11	
+R9	REASON Arg1:T12 Arg2:T11	
+R10	RESULT Arg1:T12 Arg2:T13	
+R11	CONDITION Arg1:T10 Arg2:T9	
+R12	RESULT Arg1:T10 Arg2:T11	

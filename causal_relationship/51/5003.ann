@@ -1,0 +1,9 @@
+T1	Argument 0 12	後退灯の電気回路が不適切
+T2	Connective 13 15	ため
+T3	Argument 49 58	後退灯が点灯しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 16 48	前後進切換レバーを後進位置へ切換えても、走行ペダルを踏み込まない
+T5	Connective 48 49	と
+R3	CONDITION Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T3	

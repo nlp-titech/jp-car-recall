@@ -1,0 +1,13 @@
+T2	Connective 50 52	ため
+T4	Argument 53 64	助手席に同乗者がいない
+T5	Connective 64 66	場合
+R3	CONDITION Arg1:T5 Arg2:T4	
+T1	Argument 0 44	右ハンドル車両のエアバッグ制御コンピュータにおいて、製造時に左ハンドル用のプログラム設定
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 67 81	右側（運転者席側）の側面衝突
+T6	Connective 81 83	時に
+T7	Argument 83 103	運転者席側サイドエアバッグが展開しない。
+R2	CONDITION Arg1:T6 Arg2:T3	
+R4	RESULT Arg1:T6 Arg2:T7	
+R5	RESULT Arg1:T5 Arg2:T7	
+R6	RESULT Arg1:T2 Arg2:T7	

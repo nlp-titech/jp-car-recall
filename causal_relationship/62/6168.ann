@@ -1,0 +1,13 @@
+T1	Argument 15 33	配管接続部のコーティング加工が不適切
+T2	Connective 34 36	ため
+T3	Argument 37 49	使用過程で当該部分が腐食
+T4	Connective 50 51	て
+T5	Argument 51 55	穴が開き
+T6	Connective 55 56	、
+T7	Argument 56 66	燃料蒸発ガスが漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

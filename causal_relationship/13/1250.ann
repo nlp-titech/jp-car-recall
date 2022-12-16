@@ -1,0 +1,25 @@
+T1	Argument 0 35	変速機のコントロールバルブにおいて、上部バルブにフィルタを設けていない
+T2	Connective 35 37	ため
+T3	Argument 38 54	内部に混入した異物を除去できない
+T4	Connective 60 64	そのため
+T5	Argument 65 79	そのままの状態で使用を続ける
+T6	Connective 79 80	と
+T7	Argument 81 104	クラッチ油圧を制御するスプールに異物を噛み込み
+T8	Connective 104 105	、
+T9	Argument 105 117	変速機が作動不良を起こし
+T10	Connective 117 118	、
+T11	Argument 118 120	最悪
+T12	Connective 121 123	場合
+T13	Argument 124 140	変速レバーが中立位置で車両が前進
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	

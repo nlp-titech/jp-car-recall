@@ -1,0 +1,17 @@
+T1	Argument 0 43	後部側面外開き式ガラスにおいて、ガラスを車体へ固定するブラケットの防錆剤の塗布が不適切
+T2	Argument 47 53	接着が不十分
+T3	Argument 65 72	走行中の振動等
+T4	Argument 76 86	車体からガラスが脱落
+T5	Argument 88 95	他の交通を妨げ
+T6	Connective 44 46	ため
+T7	Connective 60 64	そのため
+T8	Connective 72 75	により
+T9	Connective 87 88	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T4	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	

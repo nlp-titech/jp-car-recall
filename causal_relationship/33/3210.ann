@@ -1,0 +1,13 @@
+T1	Argument 20 70	寒冷地用前輪ブレーキケーブルを装着した車両において、ケーブルエンドへのインナワイヤ鋳込み位置が不適切
+T2	Connective 71 73	ため
+T3	Argument 74 105	坂道などの駐停車時に使用するパーキングレバーの操作を繰返し行う
+T4	Connective 105 106	と
+T5	Argument 107 117	ケーブルエンドが破損
+T6	Connective 118 119	、
+T7	Argument 119 132	前輪ブレーキが利かなくなる
+R1	RESULT Arg1:T6 Arg2:T7	
+R2	REASON Arg1:T6 Arg2:T5	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	CONDITION Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T2 Arg2:T5	
+R6	REASON Arg1:T2 Arg2:T1	

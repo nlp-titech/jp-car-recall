@@ -1,0 +1,13 @@
+T1	Argument 10 25	スロットルボディの加工が不適切
+T2	Connective 26 28	ため
+T3	Argument 29 56	内部に取り付けられたスロットルバルブが円滑に作動しない
+T4	Connective 61 62	、
+T5	Argument 68 95	アクセルペダルを離しても、原動機の回転が下がらなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 62 64	最悪
+T7	Connective 65 67	場合
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T5	

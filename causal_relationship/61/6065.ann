@@ -1,0 +1,17 @@
+T1	Argument 29 39	レバーの成形が不適切
+T2	Connective 40 42	ため
+T3	Argument 43 70	チャイルドセーフティロック作動時に車室内からドアを開け
+T4	Connective 75 76	と
+T5	Argument 77 93	チャイルドセーフティロックが解除
+T6	Connective 102 106	そのため
+T7	Argument 107 109	最悪
+T8	Connective 110 112	場合
+T9	Argument 113 120	リアドアが開く
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	

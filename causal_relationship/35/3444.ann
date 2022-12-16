@@ -1,0 +1,27 @@
+T1	Argument 2 34	動力伝達装置において、主変速レバー取り付け部のフレーム剛性が不足
+T2	Connective 38 40	ため
+T3	Argument 41 48	フレームがたわ
+T5	Argument 75 93	トランスミッションの固定方法が不適切
+T6	Argument 105 127	トランスミッションケースに回転トルクがかかり
+T7	Connective 127 128	、
+T8	Argument 128 152	ＨＳＴ（静油圧式無段変速機）トラニオン位置が変化
+T9	Connective 160 164	そのため
+T10	Argument 165 189	主変速レバーを中立位置にしても、機体が停止しない
+R1	RESULT Arg1:T9 Arg2:T10	
+R2	REASON Arg1:T9 Arg2:T8	
+R3	RESULT Arg1:T7 Arg2:T8	
+R4	REASON Arg1:T7 Arg2:T6	
+T11	Connective 94 96	ため
+R5	RESULT Arg1:T11 Arg2:T6	
+R6	REASON Arg1:T11 Arg2:T5	
+R7	REASON Arg1:T2 Arg2:T1	
+R8	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 49 64	主変速レバー支点部の位置が移動
+T12	Connective 48 49	み
+R9	REASON Arg1:T12 Arg2:T3	
+R10	RESULT Arg1:T12 Arg2:T4	
+T13	Argument 97 104	車軸からの負荷
+T14	Connective 104 105	で
+R11	REASON Arg1:T14 Arg2:T13	
+R12	RESULT Arg1:T14 Arg2:T6	
+R13	REASON Arg1:T9 Arg2:T4	

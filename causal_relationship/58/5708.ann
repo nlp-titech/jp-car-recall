@@ -1,0 +1,27 @@
+T1	Argument 0 47	セカンドシートにおいて、シートベルトバックルの向きを定常位置に戻すためのスプリングのバネ力不足
+T2	Argument 50 69	シートサイドトリムカバーの形状が不適切
+T3	Connective 70 72	ため
+T4	Argument 100 129	シートベルトバックルがシートサイドトリムカバーに引っ掛かる
+R1	REASON Arg1:T3 Arg2:T1	
+R2	REASON Arg1:T3 Arg2:T2	
+R3	RESULT Arg1:T3 Arg2:T4	
+T7	Argument 73 98	シートの背もたれを前方に倒した後、背もたれを起こす
+T8	Connective 98 99	際
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T4	
+T5	Connective 135 139	そのため
+T10	Argument 140 160	そのままの状態で、無理に背もたれを起こす
+T11	Connective 160 161	と
+R4	REASON Arg1:T5 Arg2:T4	
+T12	Argument 162 190	シートベルトバックルがシート座面のフレームに圧迫され損傷
+R5	RESULT Arg1:T5 Arg2:T12	
+R8	CONDITION Arg1:T11 Arg2:T10	
+R9	RESULT Arg1:T11 Arg2:T12	
+T6	Argument 198 200	最悪
+T9	Connective 201 203	場合
+T13	Connective 197 198	、
+T14	Argument 204 217	シートベルトを装着できなく
+R10	REASON Arg1:T13 Arg2:T12	
+R11	RESULT Arg1:T13 Arg2:T14	
+R12	CONDITION Arg1:T9 Arg2:T6	
+R13	RESULT Arg1:T9 Arg2:T14	

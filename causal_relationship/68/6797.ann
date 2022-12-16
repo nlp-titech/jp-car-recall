@@ -1,0 +1,17 @@
+T1	Argument 0 66	制動力制御装置（アンチロックブレーキシステム：ＡＢＳ）付き制動装置において、作動ポイントを制御するプログラムの中に不適切な箇所があっ
+T2	Connective 67 69	ため
+T5	Argument 108 114	ＡＢＳが作動
+T6	Argument 122 138	運転者の予測より制動距離が延びる
+T7	Connective 121 122	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T7 Arg2:T5	
+R4	RESULT Arg1:T7 Arg2:T6	
+T11	Connective 106 107	際
+R10	RESULT Arg1:T11 Arg2:T5	
+T3	Argument 70 81	低速走行を行っている時
+T4	Connective 81 82	に
+T8	Argument 82 106	軽くブレーキペダルを踏んだ状態で段差を乗り越えた
+R5	CONDITION Arg1:T11 Arg2:T8	
+R6	CONDITION Arg1:T4 Arg2:T3	
+R7	RESULT Arg1:T4 Arg2:T5	

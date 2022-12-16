@@ -1,0 +1,21 @@
+T1	Argument 0 30	緩衝装置の前輪用ナックルのロアアーム取付部の剛性に余裕がない
+T3	Argument 56 74	ロアアーム取付部に過大な荷重が加わる
+T4	Argument 79 97	当該ロアアーム取付部が疲労により破損
+T5	Argument 105 112	走行不能に至る
+T2	Connective 30 32	ため
+T6	Connective 76 78	から
+T7	Connective 98 99	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T4	
+R3	REASON Arg1:T6 Arg2:T3	
+R4	RESULT Arg1:T6 Arg2:T4	
+R5	REASON Arg1:T7 Arg2:T4	
+R6	RESULT Arg1:T7 Arg2:T5	
+T8	Argument 33 54	サーキット走行等の過酷な走行を繰り返し行う
+T9	Connective 54 55	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 99 101	最悪
+T11	Connective 102 104	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	

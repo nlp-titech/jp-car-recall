@@ -1,0 +1,5 @@
+T1	Argument 0 36	前部霧灯用ハーネスにおいて、設計過程における配線方法が、走行用前照灯点灯
+T2	Connective 36 37	時
+R1	CONDITION Arg1:T2 Arg2:T1	
+T3	Argument 38 49	前部霧灯を点灯できない
+R2	RESULT Arg1:T2 Arg2:T3	

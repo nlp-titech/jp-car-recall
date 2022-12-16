@@ -1,0 +1,9 @@
+T2	Argument 38 51	ヒンジ部に大きな力がかかる
+T3	Argument 62 69	ヒンジ部が破損
+T4	Connective 35 37	ため
+T5	Connective 57 61	そのため
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	
+T1	Argument 7 34	アクセルペダルにおいて、②ヒールスタンドの形状が不適切
+R1	REASON Arg1:T4 Arg2:T1	

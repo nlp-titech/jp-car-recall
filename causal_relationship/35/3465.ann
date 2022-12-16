@@ -1,0 +1,9 @@
+T1	Argument 24 62	エンジン制御ユニットと排出ガス後処理装置制御ユニットの制御プログラムが不適切
+T2	Connective 63 65	ため
+T3	Argument 66 77	尿素水の噴射量が少なく
+T4	Connective 77 78	、
+T5	Argument 78 106	排出ガス中の窒素酸化物（ＮＯｘ）の排出値が基準値を超える
+R1	RESULT Arg1:T4 Arg2:T5	
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T3	
+R4	REASON Arg1:T2 Arg2:T1	

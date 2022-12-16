@@ -1,0 +1,29 @@
+T1	Argument 0 17	掘削作業装置用ホースの配置が不適切
+T2	Connective 18 20	ため
+T3	Argument 21 34	ブレーキ用エアホースと接触
+T4	Connective 42 46	そのため
+T5	Argument 72 80	エアホースが磨耗
+T6	Connective 81 82	、
+T7	Argument 82 87	エアが漏れ
+T8	Connective 87 88	、
+T9	Argument 94 100	制動力が低下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 47 61	そのままの状態で使用を続ける
+T11	Connective 61 62	と
+T12	Argument 63 69	車体の振動等
+T13	Connective 69 72	により
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T5	
+T14	Argument 88 90	最悪
+T15	Connective 91 93	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T9	

@@ -1,0 +1,9 @@
+T1	Argument 0 14	速度計のソフトウェアが不適切
+T2	Argument 18 43	速度計の配線、又はバッテリーの配線を外す作業を行っ
+T3	Argument 47 68	速度計の表示が実際の速度より速い数値が表示
+T4	Connective 15 17	ため
+T5	Connective 44 46	場合
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T3	
+R3	CONDITION Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	

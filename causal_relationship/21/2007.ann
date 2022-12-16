@@ -1,0 +1,17 @@
+T1	Connective 60 62	ため
+T2	Argument 0 56	動力伝達装置において、前後進を切り替える操作レバーとトランスミッションの変速アームとを連結するロッドの強度が不足
+R1	REASON Arg1:T1 Arg2:T2	
+T3	Argument 63 75	レバー操作を繰り返し行う
+T4	Argument 77 83	ロッドが折損
+T5	Connective 75 76	と
+R2	RESULT Arg1:T1 Arg2:T4	
+R3	CONDITION Arg1:T5 Arg2:T3	
+T6	Connective 91 95	そのため
+T7	Argument 96 108	前後進の切り替えができず
+R6	REASON Arg1:T6 Arg2:T4	
+R4	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 108 115	走行不能になる
+T9	Connective 107 108	ず
+R5	REASON Arg1:T9 Arg2:T7	
+R7	RESULT Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T5 Arg2:T4	

@@ -1,0 +1,9 @@
+T1	Argument 0 31	かじ取り装置の連結部の構造が、警音器用アース回路としては不適切
+T2	Connective 32 34	ため
+T3	Argument 35 43	接触不良を起こす
+T4	Connective 48 49	、
+T5	Argument 49 59	警音器が鳴らなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

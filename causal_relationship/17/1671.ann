@@ -1,0 +1,29 @@
+T1	Argument 0 34	制動倍力装置付車において、ブレーキホースの長さが異なるものを組み付け
+T2	Connective 35 37	ため
+T3	Argument 38 59	当該ホースがトランスミッションケースに干渉
+T4	Connective 67 71	そのため
+T5	Argument 84 93	走行時等の車両振動
+T6	Argument 96 104	当該ホースが損傷
+T7	Connective 93 96	により
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T6	
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	
+T8	Argument 112 120	ブレーキ液が漏れ
+T9	Connective 120 121	、
+T10	Argument 121 133	ブレーキが作動しなくなる
+T11	Connective 105 106	、
+R7	REASON Arg1:T11 Arg2:T6	
+R8	RESULT Arg1:T11 Arg2:T8	
+R9	REASON Arg1:T9 Arg2:T8	
+R10	RESULT Arg1:T9 Arg2:T10	
+T12	Argument 72 82	そのまま使用を続ける
+T13	Connective 82 83	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T6	
+T14	Argument 106 108	最悪
+T15	Connective 109 111	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T8	

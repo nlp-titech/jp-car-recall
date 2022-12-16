@@ -1,0 +1,38 @@
+T1	Argument 19 38	エアコンプレッサ配管の固定方法が不適切
+T2	Connective 39 41	ため
+T3	Argument 42 58	原動機の振動で配管継ぎ手部に亀裂
+T4	Connective 68 72	そのため
+T5	Argument 73 87	そのままの状態で使用を続ける
+T6	Connective 87 88	と
+T7	Argument 89 101	亀裂が進行してエアが漏れ
+T8	Connective 101 102	、
+T9	Argument 102 104	最悪
+T10	Connective 105 107	場合
+T11	Argument 108 126	主ブレーキが利かなくなるおそれがある
+T12	Argument 139 155	舵角センサの取り付け指示が不適切
+T13	Connective 156 158	ため
+T14	Argument 159 169	舵角センサ同士が干渉
+T15	Connective 177 181	そのため
+T16	Argument 182 193	センサが正常に機能せず
+T17	Connective 193 194	、
+T18	Argument 194 196	最悪
+T19	Connective 197 199	場合
+T20	Argument 200 212	運転者の意思に反した操舵
+R1	RESULT Arg1:T19 Arg2:T20	
+R2	CONDITION Arg1:T19 Arg2:T18	
+R3	RESULT Arg1:T17 Arg2:T20	
+R4	REASON Arg1:T17 Arg2:T16	
+R5	RESULT Arg1:T15 Arg2:T16	
+R6	REASON Arg1:T15 Arg2:T14	
+R7	RESULT Arg1:T13 Arg2:T14	
+R8	REASON Arg1:T13 Arg2:T12	
+R9	RESULT Arg1:T10 Arg2:T11	
+R10	CONDITION Arg1:T10 Arg2:T9	
+R11	RESULT Arg1:T8 Arg2:T11	
+R12	REASON Arg1:T8 Arg2:T7	
+R13	RESULT Arg1:T6 Arg2:T7	
+R14	CONDITION Arg1:T6 Arg2:T5	
+R15	RESULT Arg1:T4 Arg2:T7	
+R16	REASON Arg1:T4 Arg2:T3	
+R17	RESULT Arg1:T2 Arg2:T3	
+R18	REASON Arg1:T2 Arg2:T1	

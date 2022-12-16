@@ -1,0 +1,25 @@
+T1	Argument 2 43	自動変速機付きディーゼルエンジン車の発電機を取り付けるためのブラケットの強度が不足
+T2	Argument 50 57	エンジンの振動
+T3	Argument 60 65	亀裂が発生
+T4	Argument 78 80	最悪
+T5	Argument 84 99	発電機がエンジンルーム内に脱落
+T6	Argument 101 110	充電機能が損なわれ
+T7	Argument 111 129	エンジンが停止し再始動ができなくなる
+T9	Connective 47 49	ため
+T10	Connective 57 60	により
+T11	Connective 73 77	そのため
+T12	Connective 81 83	場合
+T13	Connective 100 101	、
+T14	Connective 110 111	、
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T3	
+R3	REASON Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T3	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T5	
+R7	CONDITION Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T5	
+R9	REASON Arg1:T13 Arg2:T5	
+R10	RESULT Arg1:T13 Arg2:T6	
+R11	REASON Arg1:T14 Arg2:T6	
+R12	RESULT Arg1:T14 Arg2:T7	

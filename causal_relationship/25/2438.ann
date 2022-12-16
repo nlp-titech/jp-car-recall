@@ -1,0 +1,42 @@
+T1	Argument 2 30	エキゾーストパイプのフレキシブルチューブ部の構造が不適切
+T2	Argument 43 53	当該部に亀裂を生じる
+T3	Connective 58 59	、
+T4	Connective 31 33	ため
+T5	Argument 65 75	亀裂部からの排気漏れ
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T3 Arg2:T2	
+T6	Argument 100 133	動力伝達装置の前車輪用油圧配管において、配管クランプの位置が不適切
+T7	Connective 134 136	ため
+T8	Argument 144 155	当該配管に亀裂が生じる
+T9	Connective 160 161	、
+T10	Argument 167 181	亀裂部から作動油漏れを起こし
+T11	Connective 181 182	、
+T12	Argument 182 189	走行不能となる
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T8	
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T10	
+R9	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T12	
+T13	Argument 34 40	原動機の振動
+T14	Connective 40 43	により
+R11	REASON Arg1:T14 Arg2:T13	
+R12	RESULT Arg1:T14 Arg2:T2	
+T15	Argument 59 61	最悪
+T16	Connective 62 64	場合
+R13	CONDITION Arg1:T16 Arg2:T15	
+T17	Connective 75 78	により
+T18	Argument 79 89	近傍の電気配線を焼損
+R15	REASON Arg1:T17 Arg2:T5	
+R16	RESULT Arg1:T17 Arg2:T18	
+T19	Argument 137 141	油圧脈動
+T20	Connective 141 144	により
+R17	REASON Arg1:T20 Arg2:T19	
+R18	RESULT Arg1:T20 Arg2:T8	
+T21	Argument 161 163	最悪
+T22	Connective 164 166	場合
+R19	CONDITION Arg1:T22 Arg2:T21	
+R20	RESULT Arg1:T22 Arg2:T10	
+R4	RESULT Arg1:T16 Arg2:T5	
+R14	RESULT Arg1:T3 Arg2:T5	

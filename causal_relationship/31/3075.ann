@@ -1,0 +1,29 @@
+T1	Argument 1 80	大型トラック・バスのエアブレーキにおいて、セーフティバルブ（エアラインの保護を目的にエアラインが高圧になった場合に弁が開き圧力をさげるもの）のエア排出量が不足
+T2	Connective 84 86	ため
+T3	Argument 87 98	エアラインが高圧になる
+T4	Argument 150 163	ブレーキの引き摺りを起こす
+T5	Connective 169 173	そのため
+T6	Argument 174 188	そのままの状態で使用を続ける
+T7	Connective 188 189	と
+T8	Argument 189 196	ブレーキが過熱
+T9	Connective 197 198	、
+T10	Argument 198 200	最悪
+T11	Connective 201 203	場合
+T12	Argument 204 209	火災に至る
+R1	RESULT Arg1:T11 Arg2:T12	
+R2	CONDITION Arg1:T11 Arg2:T10	
+R3	RESULT Arg1:T9 Arg2:T12	
+R4	REASON Arg1:T9 Arg2:T8	
+R5	RESULT Arg1:T7 Arg2:T8	
+R6	CONDITION Arg1:T7 Arg2:T6	
+R7	RESULT Arg1:T5 Arg2:T8	
+R8	REASON Arg1:T5 Arg2:T4	
+T13	Connective 149 150	、
+R9	RESULT Arg1:T13 Arg2:T4	
+R10	REASON Arg1:T13 Arg2:T15	
+R12	REASON Arg1:T2 Arg2:T1	
+R11	RESULT Arg1:T2 Arg2:T3	
+T14	Connective 98 101	ことで
+T15	Argument 101 148	ＡＳＲバルブ（滑りやすい路面等でタイヤの空転を抑えるために一時的に制動をかける電磁弁）が誤作動
+R13	REASON Arg1:T14 Arg2:T3	
+R14	RESULT Arg1:T14 Arg2:T15	

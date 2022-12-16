@@ -1,0 +1,9 @@
+T1	Argument 28 50	サイドエアバッグセンサの衝突検出方向が不適切
+T2	Connective 51 53	ため
+T3	Argument 54 68	側面衝突の際の衝突検出が遅れ
+T4	Connective 68 69	て
+T5	Argument 69 83	乗員保護機能が正常に働かない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

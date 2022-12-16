@@ -1,0 +1,25 @@
+T1	Argument 0 65	発電機（ジェネレータ）及び原動機（駆動用フロントモータ）のエアリーク検査システムにプログラムミスがあり、検査判定不良品が市場に流出
+T2	Connective 68 72	そのため
+T3	Argument 73 81	オイル漏れが発生
+T4	Argument 83 109	発電機（ジェネレータ）内のベアリングが潤滑不良となり
+T5	Argument 113 115	最悪
+T6	Connective 116 118	場合
+T7	Connective 112 113	、
+T8	Argument 119 166	フェールセーフ状態（発電不可となり出力制限し、最高速度を５０ｋｍ／ｈに制限する走行状態）となり
+T9	Connective 166 167	、
+T10	Argument 167 175	再始動不可となる
+R1	RESULT Arg1:T9 Arg2:T10	
+R2	REASON Arg1:T9 Arg2:T8	
+R3	RESULT Arg1:T6 Arg2:T8	
+R4	CONDITION Arg1:T6 Arg2:T5	
+R5	REASON Arg1:T7 Arg2:T13	
+R6	RESULT Arg1:T7 Arg2:T8	
+T11	Connective 82 83	、
+R7	RESULT Arg1:T11 Arg2:T4	
+R8	REASON Arg1:T11 Arg2:T3	
+R9	RESULT Arg1:T2 Arg2:T3	
+R10	REASON Arg1:T2 Arg2:T1	
+T12	Connective 108 109	り
+T13	Argument 109 111	破損
+R11	REASON Arg1:T12 Arg2:T4	
+R12	RESULT Arg1:T12 Arg2:T13	

@@ -1,0 +1,5 @@
+T1	Argument 0 18	警音器の保安基準改正への対応が不適切
+T2	Connective 19 21	ため
+T3	Argument 22 38	基準に適合していない警音器が装着
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

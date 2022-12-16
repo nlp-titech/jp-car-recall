@@ -1,0 +1,9 @@
+T1	Argument 0 70	大型バスの客席シート配列が３列席およびリフト装着の仕様車において、室内のカーテンレールに取り付けてあるカーテン用のストッパ金具の形状が不適切
+T2	Connective 71 73	ため
+T3	Argument 74 87	乗客が座席移動や立ち上がっ
+T4	Connective 88 91	際等に
+T5	Argument 92 100	頭部をぶつけ怪我
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	

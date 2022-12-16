@@ -1,0 +1,29 @@
+T2	Argument 44 60	当該ブラケットに過大な応力が発生
+T4	Argument 90 124	燃料ろ過器に接続している燃料パイプ（噴射ノズル余剰燃料戻し用）が折損
+T5	Argument 126 131	燃料が漏れ
+T6	Argument 138 143	火災に至る
+T7	Connective 41 43	ため
+T9	Connective 88 89	と
+T10	Connective 125 126	、
+T11	Connective 131 132	、
+R1	REASON Arg1:T7 Arg2:T3	
+R2	RESULT Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T4	
+R5	REASON Arg1:T10 Arg2:T4	
+R6	RESULT Arg1:T10 Arg2:T5	
+R7	REASON Arg1:T11 Arg2:T5	
+R8	RESULT Arg1:T11 Arg2:T6	
+T16	Connective 71 72	。
+T17	Argument 62 64	折損
+T18	Connective 61 62	、
+R3	REASON Arg1:T16 Arg2:T17	
+R9	RESULT Arg1:T18 Arg2:T17	
+R10	REASON Arg1:T18 Arg2:T2	
+R11	RESULT Arg1:T16 Arg2:T4	
+T19	Argument 74 88	このままの状態で使用を続ける
+R12	CONDITION Arg1:T9 Arg2:T19	
+T3	Argument 0 36	原動機に燃料ろ過器を取り付けているブラケット（取付金具）の加工精度に低い
+T1	Argument 132 134	最悪
+T8	Connective 135 137	場合
+R13	CONDITION Arg1:T8 Arg2:T1	
+R14	RESULT Arg1:T8 Arg2:T6	

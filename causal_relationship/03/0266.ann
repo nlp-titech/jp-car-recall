@@ -1,0 +1,21 @@
+T1	Argument 0 36	原動機のスタータ（始動機）の電流開閉器において、配線の端子部の強度が不足
+T2	Argument 59 65	走行中の振動
+T3	Argument 68 82	当該端子部に過大な力が加わり
+T4	Argument 83 85	折損
+T5	Argument 87 99	原動機が始動できなくなる
+T6	Connective 40 42	ため
+T7	Connective 65 68	により
+T8	Connective 82 83	、
+T9	Connective 86 87	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T3	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 43 57	そのままの状態で使用を続ける
+T11	Connective 57 58	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	

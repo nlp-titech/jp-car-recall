@@ -1,0 +1,17 @@
+T1	Argument 7 35	手動変速機において、二重かみ合い防止機構部の寸法が不適切
+T3	Argument 81 92	変速操作ができなくなる
+T4	Argument 104 112	発進できなくなる
+T5	Connective 36 38	ため
+T6	Connective 79 80	て
+T7	Connective 97 98	、
+R1	REASON Arg1:T5 Arg2:T1	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 98 100	最悪
+T9	Connective 101 103	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T4	
+T10	Argument 39 79	車両停止時に変速レバーの位置がニュートラルであるにもかかわらず変速ギヤがかみ合っ
+R2	RESULT Arg1:T5 Arg2:T3	
+R10	REASON Arg1:T6 Arg2:T10	
+R4	RESULT Arg1:T6 Arg2:T3	

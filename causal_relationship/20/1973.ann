@@ -1,0 +1,25 @@
+T1	Argument 0 26	後部左側電動式スライドドアの挟み込み防止制御が不適切
+T2	Connective 27 29	ため
+T3	Argument 30 50	ドアロックの位置を検出するスイッチが故障
+T4	Connective 52 54	場合
+T5	Argument 66 81	ドアに異物を挟み込んだと誤判定
+T6	Connective 82 83	て
+T7	Argument 83 91	ドアロックを解除
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Connective 99 103	そのため
+T9	Argument 104 106	最悪
+T10	Connective 107 109	場合
+T11	Argument 110 119	走行中にドアが開く
+R7	REASON Arg1:T8 Arg2:T7	
+R9	CONDITION Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R8	RESULT Arg1:T8 Arg2:T11	
+T12	Argument 56 65	電動でドアを閉める
+T13	Connective 65 66	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T5	

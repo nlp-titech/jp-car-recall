@@ -1,0 +1,17 @@
+T1	Argument 0 31	燃料ホース端部に内径の大きいクランプ（止め具）を誤って取り付け
+T2	Connective 32 34	ため
+T3	Argument 47 60	当該クランプの圧着力が低下
+T4	Connective 61 62	、
+T5	Argument 68 81	ホース端部より燃料が漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 35 45	そのまま使用を続ける
+T7	Connective 45 46	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 62 64	最悪
+T9	Connective 65 67	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

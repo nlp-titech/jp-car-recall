@@ -1,0 +1,17 @@
+T1	Argument 4 34	スロットルボディにおいて、空気量を調整する部品の加工が不適切
+T2	Argument 46 59	空気量を調整する弁が閉じず
+T3	Argument 60 73	空気がエンジンへ過剰に供給
+T4	Argument 87 128	走行中にスロットルを全閉にしてもエンジン回転がアイドリング回転数まで下がらなくなる
+T5	Connective 35 37	ため
+T6	Connective 59 60	、
+T7	Connective 82 86	そのため
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Connective 45 46	に
+T9	Argument 38 45	冷却水が高温時
+R7	CONDITION Arg1:T8 Arg2:T9	
+R8	RESULT Arg1:T8 Arg2:T2	

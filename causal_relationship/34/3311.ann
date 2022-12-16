@@ -1,0 +1,25 @@
+T2	Connective 72 74	ため
+T4	Connective 133 137	そのため
+T5	Argument 138 152	そのままの状態で使用を続ける
+T6	Connective 152 153	と
+T7	Argument 154 177	シフトシリンダからのエア漏れや作動不良等が生じ
+T8	Connective 177 178	、
+T9	Argument 178 180	最悪
+T10	Connective 181 183	場合
+T11	Argument 184 193	変速が出来なくなり
+R1	RESULT Arg1:T10 Arg2:T11	
+R2	CONDITION Arg1:T10 Arg2:T9	
+R3	RESULT Arg1:T8 Arg2:T11	
+R4	REASON Arg1:T8 Arg2:T7	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	CONDITION Arg1:T6 Arg2:T5	
+R7	RESULT Arg1:T4 Arg2:T7	
+R8	REASON Arg1:T4 Arg2:T16	
+R9	RESULT Arg1:T2 Arg2:T16	
+T17	Argument 193 200	走行不能になる
+T18	Connective 192 193	り
+R11	REASON Arg1:T18 Arg2:T11	
+R12	RESULT Arg1:T18 Arg2:T17	
+T16	Argument 75 125	エアドライヤのエアプレッシャーガバナ摺動部やシフトシリンダのメインバルブ摺動部が黒色粘着物により固着
+T12	Argument 0 72	１２段機械式自動変速機を搭載した大型トラックにおいて、エアコンプレッサから供給される圧縮空気中に含まれる油分が酸化劣化して黒色粘着物が生成される
+R10	REASON Arg1:T2 Arg2:T12	

@@ -1,0 +1,39 @@
+T1	Argument 0 54	アクセルペダルの踏み込み量を検知するアクセルセンサにおいて、アクセルペダルを横方向に押す力が働くような踏み方
+T2	Connective 57 59	場合
+T3	Argument 61 78	当該センサ内部の接点の接触力が不足
+T4	Connective 94 98	このため
+T5	Argument 99 114	当該センサ信号が出力不良となる
+T6	Connective 114 117	ことで
+T7	Argument 118 130	フェールセーフ制御が作動
+T8	Argument 164 186	フェールセーフ制御時の吸入空気量設定が不適切
+T9	Connective 187 189	ため
+T10	Argument 190 205	スロットルバルブに汚れが堆積し
+T11	Connective 208 210	場合
+T12	Argument 212 228	アイドル回転付近での空気量が不足
+T13	Connective 229 230	て
+T14	Argument 231 238	エンストに至る
+R1	RESULT Arg1:T13 Arg2:T14	
+R2	REASON Arg1:T13 Arg2:T12	
+R3	RESULT Arg1:T11 Arg2:T12	
+R4	CONDITION Arg1:T11 Arg2:T10	
+R5	RESULT Arg1:T9 Arg2:T12	
+R6	REASON Arg1:T9 Arg2:T8	
+R7	CONDITION Arg1:T2 Arg2:T1	
+R8	RESULT Arg1:T2 Arg2:T3	
+R9	REASON Arg1:T4 Arg2:T16	
+R10	RESULT Arg1:T4 Arg2:T5	
+R11	REASON Arg1:T6 Arg2:T5	
+R12	RESULT Arg1:T6 Arg2:T7	
+T15	Connective 79 80	て
+T16	Argument 80 88	接触不良を起こす
+R13	REASON Arg1:T15 Arg2:T3	
+R14	RESULT Arg1:T15 Arg2:T16	
+T17	Connective 131 132	て
+T18	Argument 132 145	スロットルバルブ開度を制限
+R15	REASON Arg1:T17 Arg2:T7	
+R16	RESULT Arg1:T17 Arg2:T18	
+T19	Connective 145 146	し
+T20	Argument 147 151	加速不良
+R17	REASON Arg1:T19 Arg2:T18	
+R18	RESULT Arg1:T19 Arg2:T20	
+R19	RESULT Arg1:T17 Arg2:T12	

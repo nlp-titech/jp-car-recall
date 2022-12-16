@@ -1,0 +1,17 @@
+T1	Argument 0 43	助手席側エアバッグのインフレータ（膨張装置）において、環境温度および湿度変化の繰り返し
+T2	Argument 46 54	ガス発生剤が劣化
+T3	Argument 67 75	エアバッグ展開時
+T4	Argument 76 89	インフレータ内圧が異常上昇
+T5	Argument 92 103	インフレータ容器が破損
+T6	Connective 43 46	により
+T7	Connective 62 66	そのため
+T8	Connective 75 76	に
+T9	Connective 90 91	て
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T4	
+R5	CONDITION Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	

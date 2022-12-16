@@ -1,0 +1,19 @@
+T1	Argument 3 40	農耕トラクタの前後進制御用電磁バルブにおいて、アウターケースの形状が不適切
+T3	Argument 44 68	トランスミッション内の微小異物がバルブ内部に入り
+T4	Connective 68 69	、
+T5	Argument 69 82	当該バルブが作動しなくなる
+T6	Connective 88 92	そのため
+T7	Argument 93 98	走行が停止
+T8	Connective 112 114	時に
+T9	Argument 115 129	切り替えた向きと逆向きに動く
+R1	RESULT Arg1:T8 Arg2:T9	
+R2	CONDITION Arg1:T8 Arg2:T2	
+R3	RESULT Arg1:T6 Arg2:T7	
+R4	REASON Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T5	
+R6	REASON Arg1:T4 Arg2:T3	
+T10	Connective 41 43	ため
+R7	RESULT Arg1:T10 Arg2:T3	
+R8	REASON Arg1:T10 Arg2:T1	
+T2	Argument 102 111	前後進の切替を行っ
+R9	RESULT Arg1:T6 Arg2:T9	

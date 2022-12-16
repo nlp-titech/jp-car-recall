@@ -1,0 +1,21 @@
+T1	Argument 1 35	スライドドアのラッチを開錠する前側ラッチクランクレバーの組立が不適切
+T3	Argument 39 56	レバー摺動部へのグリス塗布量が不足
+T4	Connective 64 68	そのため
+T7	Argument 69 92	雨天走行等により当該レバー部に浸入した水が凍結
+T8	Connective 93 94	、
+T9	Argument 94 109	この状態でスライドドアを開ける
+T10	Connective 109 110	と
+T11	Argument 110 128	当該レバーが開錠位置から戻らなくなり
+T12	Connective 128 129	、
+T13	Argument 129 140	ドアを閉められなくなる
+R4	REASON Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T4 Arg2:T7	
+R8	REASON Arg1:T8 Arg2:T7	
+R9	RESULT Arg1:T8 Arg2:T11	
+R10	CONDITION Arg1:T10 Arg2:T9	
+R11	RESULT Arg1:T10 Arg2:T11	
+R12	REASON Arg1:T12 Arg2:T11	
+R13	RESULT Arg1:T12 Arg2:T13	
+T2	Connective 36 38	ため
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

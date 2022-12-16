@@ -1,0 +1,33 @@
+T1	Argument 24 44	ゴム製シールリングへのグリス塗布が不十分
+T2	Connective 50 52	ため
+T3	Argument 53 64	シールリングが摺動不足
+T4	Connective 73 77	そのため
+T5	Argument 99 107	当該リングが変形
+T6	Connective 108 109	、
+T7	Argument 109 120	気密が保持できなくなり
+T8	Connective 120 121	、
+T9	Argument 127 134	倍力機能が低下
+T10	Connective 135 136	て
+T11	Argument 137 144	制動能力が低下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 78 88	そのまま使用を続ける
+T13	Connective 88 89	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T5	
+T14	Argument 90 96	ブレーキ操作
+T15	Connective 96 98	時に
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T5	
+T16	Argument 121 123	最悪
+T17	Connective 124 126	場合
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T9	

@@ -1,0 +1,17 @@
+T1	Argument 0 33	燃料フィルターにおいて、ドレンプラグ取付部の平面が確保できていない
+T3	Argument 36 62	定期点検時にドレンプラグを緩め、再締め付け作業を行う
+T4	Argument 64 71	シール性が低下
+T5	Argument 84 94	そのまま使用を続ける
+T6	Argument 96 102	燃料が漏れる
+T7	Connective 33 35	ため
+T9	Connective 62 63	と
+T10	Connective 79 83	そのため
+T11	Connective 94 95	と
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T4	
+R5	CONDITION Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T6	
+R9	CONDITION Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	

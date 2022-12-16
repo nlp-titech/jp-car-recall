@@ -1,0 +1,21 @@
+T1	Argument 16 51	可変バルブタイミングシステムの調整ユニットにおいて、ボルトの強度が不足
+T2	Connective 55 57	ため
+T3	Argument 58 66	当該ボルトが破損
+T4	Connective 74 78	そのため
+T5	Argument 79 91	システムが適切に作動せず
+T6	Argument 92 102	エンジン警告灯が点灯
+T8	Argument 103 112	エンジン不調となり
+T9	Argument 113 115	最悪
+T10	Connective 116 118	場合
+T11	Connective 91 92	、
+T12	Argument 119 130	走行中にエンジンが停止
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T11 Arg2:T5	
+R6	RESULT Arg1:T11 Arg2:T6	
+R11	CONDITION Arg1:T10 Arg2:T9	
+R12	RESULT Arg1:T10 Arg2:T12	
+R7	RESULT Arg1:T11 Arg2:T8	
+R8	RESULT Arg1:T11 Arg2:T12	

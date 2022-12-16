@@ -1,0 +1,27 @@
+T1	Argument 0 29	制動灯スイッチ内部への異物侵入時の接点障害防止対策が不十分
+T2	Argument 33 64	絶縁性グリースが付着した作業用手袋で当該スイッチの外側に触れる
+T3	Argument 66 90	微量なグリース成分がスイッチ接点部まで徐々に拡散
+T4	Argument 98 108	スイッチ接点部の発熱
+T5	Argument 111 123	当該接点部に絶縁物が生成
+T6	Argument 126 130	導通不良
+T7	Connective 139 143	そのため
+T8	Argument 144 155	制動灯が点灯しなくなり
+T9	Argument 156 178	シフトレバーがパーキング位置から動かなくなる
+R3	REASON Arg1:T7 Arg2:T6	
+R4	RESULT Arg1:T7 Arg2:T8	
+T11	Connective 125 126	て
+R5	REASON Arg1:T11 Arg2:T5	
+R6	RESULT Arg1:T11 Arg2:T6	
+T12	Connective 108 111	により
+R7	REASON Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T5	
+T13	Connective 97 98	、
+R9	REASON Arg1:T13 Arg2:T3	
+R10	RESULT Arg1:T13 Arg2:T5	
+T14	Connective 64 65	と
+R11	CONDITION Arg1:T14 Arg2:T2	
+R12	RESULT Arg1:T14 Arg2:T3	
+T15	Connective 30 32	ため
+R13	REASON Arg1:T15 Arg2:T1	
+R14	RESULT Arg1:T15 Arg2:T3	
+R1	RESULT Arg1:T7 Arg2:T9	

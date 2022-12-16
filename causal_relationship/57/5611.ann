@@ -1,0 +1,13 @@
+T1	Argument 5 20	過給機の制御プログラムが不適切
+T3	Argument 36 48	排気圧力が高い状態で変速
+T4	Argument 53 58	黒煙が発生
+T5	Connective 21 23	ため
+T7	Connective 50 52	際に
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T4	
+R5	CONDITION Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 24 31	自動変速モード
+T9	Connective 31 35	において
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T4	

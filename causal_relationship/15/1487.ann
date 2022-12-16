@@ -1,0 +1,21 @@
+T1	Argument 0 54	大型路線バス（ノンステップ車）の緩衝装置において、後軸のロアラジアスロッドのボールスタッドねじ部の強度が不足
+T2	Connective 64 68	そのため
+T5	Argument 75 88	当該ボルトの脱着を繰り返す
+T6	Connective 88 89	と
+T7	Argument 90 96	ねじ部が損傷
+T8	Connective 97 98	て
+T9	Argument 98 100	破損
+T10	Connective 101 102	、
+T11	Argument 102 104	最悪
+T12	Argument 108 119	走行安定性が損なわれる
+T13	Connective 105 107	場合
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T7	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T12	
+R11	CONDITION Arg1:T13 Arg2:T11	
+R12	RESULT Arg1:T13 Arg2:T12	

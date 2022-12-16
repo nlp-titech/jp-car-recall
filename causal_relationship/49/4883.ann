@@ -1,0 +1,21 @@
+T1	Argument 10 42	トランスミッションと車体との間のアースケーブルの製造方法が不適切
+T2	Connective 43 45	ため
+T3	Argument 54 69	当該ケーブルが端子部から抜ける
+T4	Connective 74 75	、
+T5	Argument 75 87	点火装置が正常に作動せず
+T6	Connective 87 88	、
+T7	Argument 88 94	原動機が停止
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 46 51	車両の振動
+T9	Connective 51 54	により
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Connective 95 96	、
+T11	Argument 96 106	再始動ができなくなる
+R9	REASON Arg1:T10 Arg2:T7	
+R10	RESULT Arg1:T10 Arg2:T11	

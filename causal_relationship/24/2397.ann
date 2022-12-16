@@ -1,0 +1,17 @@
+T1	Argument 0 17	スタビライザーアームの材質が不適切
+T2	Connective 18 20	ため
+T3	Argument 21 26	強度が不足
+T4	Connective 36 40	そのため
+T5	Argument 47 55	当該アームが折損
+T6	Argument 56 64	走行できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T7	Connective 55 56	し
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	
+T8	Argument 41 43	最悪
+T9	Connective 44 46	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

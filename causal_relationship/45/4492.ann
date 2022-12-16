@@ -1,0 +1,13 @@
+T1	Argument 4 25	スロットルバルブ内部の留めネジの洗浄が不足
+T2	Connective 29 31	ため
+T3	Argument 32 38	使用中に弛む
+T4	Connective 43 44	、
+T5	Argument 60 85	アクセルペダルを離しても、原動機の回転が下がらない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 44 58	そのままの状態で使用を続ける
+T7	Connective 58 59	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T5	

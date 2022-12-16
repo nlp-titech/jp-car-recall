@@ -1,0 +1,47 @@
+T1	Argument 0 41	ステアリング用油圧ポンプにおいて、スプリットフランジを取付けるボルトの選定が不適切
+T2	Argument 45 64	当該フランジが正しく取付けられていない
+T3	Argument 75 89	そのままの状態で使用を続ける
+T4	Argument 91 98	走行時の振動等
+T5	Argument 101 116	当該油圧ポンプ側のねじ山が損傷
+T6	Argument 118 127	締結部に緩みが生じ
+T7	Argument 128 135	オイルが漏れる
+T8	Argument 147 152	油圧が減少
+T9	Argument 157 171	ステアリングが作動不能となる
+T10	Argument 176 186	オイルは走行用も兼ね
+T11	Argument 192 194	最悪
+T12	Argument 198 208	走行用ポンプが焼きつ
+T13	Argument 209 216	走行不能となる
+T14	Connective 42 44	ため
+T15	Connective 70 74	そのため
+T16	Connective 89 90	と
+T17	Connective 98 101	により
+T18	Connective 117 118	、
+T19	Connective 127 128	、
+T20	Connective 154 156	ため
+T21	Connective 189 191	ため
+T22	Connective 195 197	場合
+R1	REASON Arg1:T14 Arg2:T1	
+R2	RESULT Arg1:T14 Arg2:T2	
+R3	REASON Arg1:T15 Arg2:T2	
+R4	RESULT Arg1:T15 Arg2:T5	
+R5	CONDITION Arg1:T16 Arg2:T3	
+R6	REASON Arg1:T17 Arg2:T4	
+R7	RESULT Arg1:T17 Arg2:T5	
+R8	REASON Arg1:T18 Arg2:T5	
+R9	RESULT Arg1:T18 Arg2:T6	
+R10	REASON Arg1:T19 Arg2:T6	
+R11	RESULT Arg1:T19 Arg2:T7	
+R12	REASON Arg1:T20 Arg2:T8	
+R13	RESULT Arg1:T20 Arg2:T9	
+R14	RESULT Arg1:T20 Arg2:T12	
+R15	REASON Arg1:T21 Arg2:T10	
+R16	RESULT Arg1:T21 Arg2:T12	
+R17	CONDITION Arg1:T22 Arg2:T11	
+R18	RESULT Arg1:T22 Arg2:T12	
+T23	Connective 208 209	き
+R19	REASON Arg1:T23 Arg2:T12	
+R20	RESULT Arg1:T23 Arg2:T13	
+R21	RESULT Arg1:T16 Arg2:T5	
+T24	Connective 142 146	その結果
+R22	REASON Arg1:T24 Arg2:T7	
+R23	RESULT Arg1:T24 Arg2:T8	

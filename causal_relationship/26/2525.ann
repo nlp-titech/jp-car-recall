@@ -1,0 +1,5 @@
+T1	Argument 0 56	圧縮天然ガス自動車（ＣＮＧ車）の小型トラックにおいて、エンジン制御ユニット（ＥＣＭ）の速度演算プログラムが不適切
+T2	Connective 57 59	ため
+T3	Argument 60 80	速度計の表示が実際の車体速度より低く表示
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

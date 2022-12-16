@@ -1,0 +1,13 @@
+T1	Argument 0 39	制動灯の制御回路において、電気開閉器（コントロールユニット）の回路設定が不適切
+T2	Argument 43 65	コントロールユニット内部の半導体リレーが短絡
+T3	Argument 79 92	制動灯が点灯したままになる
+T4	Connective 40 42	ため
+T5	Connective 67 69	場合
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	
+T7	Argument 73 75	最悪
+T8	Connective 76 78	場合
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T3	

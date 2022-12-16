@@ -1,0 +1,13 @@
+T1	Argument 0 23	前照灯の配線コネクタが確実に取付けられていない
+T2	Connective 28 30	ため
+T3	Argument 40 47	コネクタが外れ
+T4	Connective 47 48	、
+T5	Argument 48 57	前照灯が点灯しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 31 37	走行等の振動
+T7	Connective 37 40	により
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	

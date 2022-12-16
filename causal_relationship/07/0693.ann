@@ -1,0 +1,17 @@
+T1	Argument 0 37	オートクルーズ装着車において、作動用ケーブルの外れ防止用フックに隙間がある
+T2	Argument 40 52	アクセルペダルを踏み込ん
+T3	Argument 56 81	オートクルーズレバーの溝から作動用ケーブルが外れる
+T4	Argument 92 113	外れた作動用ケーブルが当該フックに乗り上げ
+T5	Argument 117 143	アクセルペダルを戻してもエンジン回転が下がらなくなる
+T6	Connective 37 39	ため
+T7	Connective 53 54	際
+T8	Connective 87 91	そのため
+T9	Connective 116 117	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T3	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R9	RESULT Arg1:T9 Arg2:T5	

@@ -1,0 +1,25 @@
+T1	Argument 0 29	制動装置において、左前輪用ブレーキパイプの取り廻しに不適切
+T2	Argument 38 55	独立懸架装置のアッパーアームと干渉
+T3	Argument 79 91	当該ブレーキパイプが損傷
+T4	Argument 99 107	ブレーキ液が漏れ
+T5	Argument 108 114	制動力が低下
+T6	Connective 35 37	ため
+T7	Connective 62 63	、
+T8	Connective 92 93	、
+T9	Connective 107 108	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 63 77	そのままの状態で使用を続ける
+T11	Connective 77 78	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	
+T12	Argument 93 95	最悪
+T13	Connective 96 98	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T4	

@@ -1,0 +1,9 @@
+T1	Argument 0 31	スクリードステップ前縁にある足乗り越え防止用蹴込板の高さが不足
+T2	Connective 35 37	ため
+T5	Argument 38 70	足先を当該ステップより前方に出した状態で、右スクリードを伸び操作
+T6	Connective 72 74	場合
+T7	Argument 75 110	右スクリードのイグナイタカバーとスクリードカバー支柱との間に足先を挟む
+R1	REASON Arg1:T2 Arg2:T1	
+R3	CONDITION Arg1:T6 Arg2:T5	
+R4	RESULT Arg1:T6 Arg2:T7	
+R6	RESULT Arg1:T2 Arg2:T7	

@@ -1,0 +1,27 @@
+T1	Argument 0 35	スペアタイヤの取付装置において、下側のスペアタイヤキャリアの強度が不足
+T2	Argument 44 70	スペアタイヤ固定用ロックボルトの締め付け指示が不適切
+T3	Argument 90 96	走行中の振動
+T4	Argument 99 110	当該ロックボルトが弛み
+T5	Argument 117 133	下側のスペアタイヤキャリアが折損
+T6	Argument 135 144	スペアタイヤが脱落
+T8	Connective 71 73	ため
+T9	Connective 96 99	により
+T10	Connective 110 111	、
+T11	Connective 134 135	て
+R1	REASON Arg1:T8 Arg2:T1	
+R2	REASON Arg1:T8 Arg2:T2	
+R3	RESULT Arg1:T8 Arg2:T3	
+R4	REASON Arg1:T9 Arg2:T3	
+R5	RESULT Arg1:T9 Arg2:T4	
+R6	REASON Arg1:T10 Arg2:T4	
+R7	RESULT Arg1:T10 Arg2:T5	
+R8	REASON Arg1:T11 Arg2:T5	
+R9	RESULT Arg1:T11 Arg2:T6	
+T7	Argument 74 88	そのままの状態で使用を続ける
+T12	Connective 88 89	と
+R10	CONDITION Arg1:T12 Arg2:T7	
+R11	RESULT Arg1:T12 Arg2:T4	
+T13	Argument 111 113	最悪
+T14	Connective 114 116	場合
+R12	CONDITION Arg1:T14 Arg2:T13	
+R13	RESULT Arg1:T14 Arg2:T5	

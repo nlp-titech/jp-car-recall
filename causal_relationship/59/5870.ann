@@ -1,0 +1,19 @@
+T1	Argument 0 70	原動機と動力伝達装置を連結するトーションダンパーにおいて、当該トーションダンパーとエンジンを締結している取付ボルトが適切に締付けられていない
+T2	Connective 76 80	そのため
+T3	Argument 81 95	そのままの状態で使用を続ける
+T4	Connective 95 96	と
+T5	Argument 97 107	当該取付ボルトが脱落
+T7	Argument 113 115	最悪
+T8	Connective 116 118	場合
+T9	Argument 118 126	走行できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R4	CONDITION Arg1:T4 Arg2:T3	
+T6	Connective 112 113	、
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 109 111	折損
+R9	REASON Arg1:T6 Arg2:T10	

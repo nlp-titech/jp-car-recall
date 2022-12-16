@@ -1,0 +1,17 @@
+T1	Argument 0 32	電動パワーステアリングにおいて、制御信号用コネクタの製造が不適切
+T2	Connective 33 35	ため
+T3	Argument 36 52	水分がコントロールユニットに浸入
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 60 64	そのため
+T5	Argument 65 75	電気信号に影響を与え
+T6	Connective 75 76	、
+T7	Argument 76 82	警告灯が点灯
+T8	Connective 83 84	て
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T9	Argument 85 101	ステアリングのアシスト機能を失う
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	

@@ -1,0 +1,13 @@
+T1	Argument 17 33	エンジン制御用配線の配索が不適切
+T2	Connective 34 36	ため
+T3	Argument 37 51	原動機の振動により配線が損傷
+T4	Connective 59 63	そのため
+T5	Argument 64 78	そのままの状態で使用を続ける
+T6	Connective 78 79	と
+T7	Argument 80 92	配線が短絡し原動機が停止
+R1	RESULT Arg1:T6 Arg2:T7	
+R2	CONDITION Arg1:T6 Arg2:T5	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	REASON Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T2 Arg2:T3	
+R6	REASON Arg1:T2 Arg2:T1	

@@ -1,0 +1,37 @@
+T1	Argument 0 14	燃料噴射パイプの形状が不適切
+T2	Connective 15 17	ため
+T3	Argument 18 38	中速回転域において噴射パイプに共振が発生
+T4	Connective 39 40	、
+T5	Argument 40 49	パイプに亀裂が発生
+T6	Connective 57 61	そのため
+T7	Argument 74 79	燃料が漏れ
+T8	Argument 80 90	エンジンオイルに混入
+T9	Connective 79 80	て
+T10	Connective 91 92	、
+T11	Argument 92 120	混合したオイルがブローバイガスに混じってシリンダ内で燃焼
+T12	Connective 122 124	ため
+T13	Argument 125 129	出力不足
+T14	Argument 134 139	振動が発生
+R1	RESULT Arg1:T12 Arg2:T13	
+R2	RESULT Arg1:T12 Arg2:T14	
+T16	Argument 147 161	エンストし再始動できなくなる
+R6	REASON Arg1:T12 Arg2:T11	
+R7	REASON Arg1:T2 Arg2:T1	
+R8	RESULT Arg1:T2 Arg2:T3	
+R9	REASON Arg1:T4 Arg2:T3	
+R10	RESULT Arg1:T4 Arg2:T5	
+R11	REASON Arg1:T6 Arg2:T5	
+R12	RESULT Arg1:T6 Arg2:T7	
+R13	REASON Arg1:T9 Arg2:T7	
+R14	RESULT Arg1:T9 Arg2:T8	
+R15	REASON Arg1:T10 Arg2:T8	
+R16	RESULT Arg1:T10 Arg2:T11	
+T17	Argument 62 72	そのまま使用を続ける
+T18	Connective 72 73	と
+R17	CONDITION Arg1:T18 Arg2:T17	
+R18	RESULT Arg1:T18 Arg2:T7	
+T19	Argument 141 143	最悪
+T20	Connective 144 146	場合
+R19	CONDITION Arg1:T20 Arg2:T19	
+R20	RESULT Arg1:T20 Arg2:T16	
+R3	RESULT Arg1:T12 Arg2:T16	

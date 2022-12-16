@@ -1,0 +1,38 @@
+T1	Argument 0 73	エンジンの回転数を検出するクランクシャフト・タイミングホイールにおいて、エンジン製造時にタイミングホイール取付ボルトの締め付けトルクの管理が不十分
+T2	Connective 77 79	ため
+T3	Argument 88 109	タイミングホイールの固定状態が不安定になり
+T4	Connective 109 110	、
+T5	Argument 110 129	正確なエンジン回転数を検出できなくなる
+T6	Connective 130 134	そのため
+T7	Argument 135 149	そのままの状態で使用を続ける
+T8	Connective 149 150	と
+T9	Argument 166 174	出力制限がかかり
+T11	Argument 183 185	最悪
+T12	Connective 186 188	場合
+T13	Argument 189 196	エンジンが停止
+R1	RESULT Arg1:T12 Arg2:T13	
+R2	CONDITION Arg1:T12 Arg2:T11	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T9	
+R8	REASON Arg1:T6 Arg2:T5	
+R9	RESULT Arg1:T4 Arg2:T5	
+R10	REASON Arg1:T4 Arg2:T3	
+R11	RESULT Arg1:T2 Arg2:T17	
+R12	REASON Arg1:T2 Arg2:T1	
+T14	Argument 151 163	コンピューターの故障診断
+T15	Connective 164 166	より
+R13	REASON Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T9	
+R15	RESULT Arg1:T8 Arg2:T14	
+T16	Argument 200 213	エンジンの始動が困難な状態
+R5	RESULT Arg1:T12 Arg2:T16	
+T17	Argument 80 88	当該ボルトが緩み
+T18	Connective 87 88	み
+R17	REASON Arg1:T18 Arg2:T17	
+R18	RESULT Arg1:T18 Arg2:T3	
+T19	Argument 174 181	走行性能が低下
+T20	Connective 173 174	り
+R3	REASON Arg1:T20 Arg2:T9	
+R4	RESULT Arg1:T20 Arg2:T19	
+R16	RESULT Arg1:T15 Arg2:T13	
+R19	RESULT Arg1:T15 Arg2:T16	

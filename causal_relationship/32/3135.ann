@@ -1,0 +1,35 @@
+T1	Argument 0 45	大型トラックにおいて、エンジン制御プログラムと排気ガス再循環（ＥＧＲ）パイプの構造が不適切
+T2	Connective 46 48	ため
+T3	Argument 49 82	停車中のＤＰＲ（排出ガス浄化装置）の自動再生と手動再生が頻繁に中断
+T4	Connective 85 87	場合
+T5	Argument 89 120	ＥＧＲクーラ内でカーボンデポジットが生成されて吸気バルブに付着
+T6	Argument 122 136	外気温が低い状態で長時間駐車
+T7	Connective 139 140	と
+T8	Argument 140 155	カーボンデポジットの粘度が増加
+T9	Connective 163 167	そのため
+T12	Argument 168 191	エンジン始動した際、吸気バルブが摺動不良となり
+T13	Connective 191 192	、
+T14	Argument 192 194	最悪
+T15	Connective 195 197	場合
+T16	Argument 198 204	バルブが折損
+T17	Connective 205 206	、
+T18	Argument 206 213	異音が発生する
+R1	RESULT Arg1:T17 Arg2:T18	
+R2	REASON Arg1:T17 Arg2:T16	
+R3	RESULT Arg1:T15 Arg2:T16	
+R4	CONDITION Arg1:T15 Arg2:T14	
+R5	RESULT Arg1:T13 Arg2:T16	
+R6	REASON Arg1:T13 Arg2:T12	
+R10	REASON Arg1:T9 Arg2:T8	
+R11	RESULT Arg1:T7 Arg2:T8	
+R12	CONDITION Arg1:T7 Arg2:T6	
+T19	Connective 121 122	、
+R13	RESULT Arg1:T19 Arg2:T8	
+R14	REASON Arg1:T19 Arg2:T5	
+R15	RESULT Arg1:T4 Arg2:T5	
+R16	CONDITION Arg1:T4 Arg2:T3	
+R18	REASON Arg1:T2 Arg2:T1	
+T20	Argument 216 224	にエンジンが停止
+R19	RESULT Arg1:T17 Arg2:T20	
+R17	RESULT Arg1:T2 Arg2:T5	
+R7	RESULT Arg1:T9 Arg2:T12	

@@ -1,0 +1,17 @@
+T1	Argument 0 44	燃料タンクの燃料ポンプユニットの取付け部周辺に製造過程で生じたバリが残っているものがあり
+T2	Argument 45 55	そのまま使用を続ける
+T3	Argument 57 67	パッキンに亀裂が発生
+T4	Argument 80 85	燃料満タン
+T5	Argument 87 101	当該パッキンから燃料が漏れる
+T6	Connective 44 45	、
+T7	Connective 55 56	と
+T8	Connective 75 79	そのため
+T9	Connective 85 86	時
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T3	
+R3	CONDITION Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T5	
+R7	CONDITION Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	

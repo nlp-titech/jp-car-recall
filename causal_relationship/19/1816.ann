@@ -1,0 +1,25 @@
+T1	Argument 0 16	ブレーキホースの組立指示が不適切
+T2	Connective 17 19	ため
+T3	Argument 26 60	前輪ブレーキホースとステアリングストッパブラケットとの間に隙間がなく
+T4	Connective 60 61	、
+T5	Argument 61 63	干渉
+T6	Connective 71 75	そのため
+T7	Argument 88 94	ホースが破損
+T8	Connective 94 95	し
+T9	Argument 95 101	制動力が低下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 20 24	車体屈折
+T11	Connective 24 25	時
+R10	RESULT Arg1:T11 Arg2:T3	
+T12	Argument 76 86	そのまま使用を続ける
+T13	Connective 86 87	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T7	
+R9	CONDITION Arg1:T11 Arg2:T10	

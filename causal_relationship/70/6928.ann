@@ -1,0 +1,25 @@
+T1	Argument 15 32	樹脂製の車体側取付部の構造が不適切
+T2	Connective 33 35	ため
+T3	Argument 36 68	ガスステーと車体側スタッドボールを固定するクリップに弛みが生じる
+T4	Connective 74 78	そのため
+T5	Argument 79 92	バックドアの開閉の繰り返し
+T6	Connective 92 95	により
+T7	Argument 95 111	ガスステーとスタッドボールが分離
+T8	Argument 113 115	最悪
+T9	Connective 112 113	、
+T10	Connective 116 118	場合
+T11	Argument 119 131	ガスステーが車体から外れ
+T12	Connective 131 132	、
+T13	Argument 132 140	バックドアが降下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	REASON Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	RESULT Arg1:T4 Arg2:T7	
+R7	REASON Arg1:T9 Arg2:T7	
+R8	CONDITION Arg1:T10 Arg2:T8	
+R9	RESULT Arg1:T10 Arg2:T11	
+R10	RESULT Arg1:T9 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	

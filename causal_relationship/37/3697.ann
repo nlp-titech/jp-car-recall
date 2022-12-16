@@ -1,0 +1,33 @@
+T1	Argument 8 33	プライマリチェーンとオイルノズルの隙間に余裕がない
+T2	Connective 33 35	ため
+T3	Argument 36 53	使用課程でプライマリチェーンが伸び
+T4	Connective 53 54	て
+T5	Argument 54 63	オイルノズルと接触
+T6	Connective 71 75	そのため
+T7	Argument 76 86	そのまま使用を続ける
+T8	Connective 86 87	と
+T9	Argument 88 102	オイルノズルが原動機内に脱落
+T10	Connective 103 104	て
+T11	Argument 105 129	クランクケースとクランクシャフトの間等にかみ込む
+T12	Connective 129 130	と
+T13	Argument 131 133	最悪
+T14	Connective 134 136	場合
+T15	Argument 137 149	走行中にエンジンがロック
+T16	Connective 150 151	て
+T17	Argument 151 160	再始動出来なくなる
+R1	RESULT Arg1:T16 Arg2:T17	
+R2	REASON Arg1:T16 Arg2:T15	
+R3	RESULT Arg1:T14 Arg2:T15	
+R4	CONDITION Arg1:T14 Arg2:T13	
+R5	RESULT Arg1:T12 Arg2:T15	
+R6	CONDITION Arg1:T12 Arg2:T11	
+R7	RESULT Arg1:T10 Arg2:T11	
+R8	REASON Arg1:T10 Arg2:T9	
+R9	RESULT Arg1:T8 Arg2:T9	
+R10	CONDITION Arg1:T8 Arg2:T7	
+R11	RESULT Arg1:T6 Arg2:T9	
+R12	REASON Arg1:T6 Arg2:T5	
+R13	RESULT Arg1:T4 Arg2:T5	
+R14	REASON Arg1:T4 Arg2:T3	
+R15	RESULT Arg1:T2 Arg2:T5	
+R16	REASON Arg1:T2 Arg2:T1	

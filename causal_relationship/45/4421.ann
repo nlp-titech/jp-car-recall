@@ -1,0 +1,25 @@
+T1	Argument 16 55	バックプレ－ト及びアダプタ－を取り付けているボルト・ナットの締め付けトルク不足
+T2	Connective 56 58	ため
+T3	Argument 59 69	ボルト・ナットが緩み
+T4	Connective 69 70	、
+T5	Argument 70 73	外れる
+T6	Connective 78 79	。
+T7	Argument 95 106	ブレーキ構成部品が損傷
+T8	Connective 107 108	、
+T9	Argument 114 120	制動力が低下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T13	Argument 79 93	このままの状態で使用を続ける
+T14	Connective 93 94	と
+R9	CONDITION Arg1:T14 Arg2:T13	
+R10	RESULT Arg1:T14 Arg2:T7	
+T15	Argument 108 110	最悪
+T16	Connective 111 113	場合
+R11	CONDITION Arg1:T16 Arg2:T15	
+R12	RESULT Arg1:T16 Arg2:T9	

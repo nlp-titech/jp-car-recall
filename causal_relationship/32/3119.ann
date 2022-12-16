@@ -1,0 +1,13 @@
+T1	Argument 0 48	小型バスの自動変速機において、クラッチ構成部品を固定するスナップリングの装着部の機械加工が不適切
+T2	Connective 49 51	ため
+T3	Argument 52 62	スナップリングが外れ
+T4	Connective 62 63	、
+T5	Argument 63 81	クラッチでのトルク伝達ができなくなり
+T6	Connective 81 82	、
+T7	Argument 82 89	走行不能となる
+R1	RESULT Arg1:T6 Arg2:T7	
+R2	REASON Arg1:T6 Arg2:T5	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	REASON Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T2 Arg2:T3	
+R6	REASON Arg1:T2 Arg2:T1	

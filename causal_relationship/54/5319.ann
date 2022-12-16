@@ -1,0 +1,29 @@
+T1	Argument 1 24	フライホイール取付ナットの締め付けトルクが不足
+T2	Connective 33 34	、
+T3	Argument 34 42	当該ナットが緩む
+T4	Connective 48 52	そのため
+T5	Argument 65 71	ナットが外れ
+T6	Connective 71 72	、
+T7	Argument 72 90	フライホイールがステータコイルに干渉
+T8	Connective 91 92	て
+T9	Argument 92 102	フライホイールが割れ
+T10	Connective 102 103	、
+T11	Argument 109 118	走行中原動機が停止
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 53 63	そのまま使用を続ける
+T13	Connective 63 64	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T5	
+T14	Argument 103 105	最悪
+T15	Connective 106 108	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T11	

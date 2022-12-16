@@ -1,0 +1,17 @@
+T1	Argument 22 48	クラッチ位置を検出するセンサーにおいて、耐熱性が不足
+T2	Argument 55 69	当該センサー付近の温度が上昇
+T3	Argument 72 88	クラッチの位置検出が出来なくなる
+T4	Argument 99 111	クラッチが作動しなくなり
+T5	Argument 112 119	変速不能となる
+T6	Connective 52 54	ため
+T7	Connective 71 72	と
+T8	Connective 94 98	そのため
+T9	Connective 111 112	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T3	
+R3	CONDITION Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	

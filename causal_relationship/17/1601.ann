@@ -1,0 +1,55 @@
+T1	Argument 0 34	四輪駆動の貨物自動車において、リヤプロペラシャフト軸受の材質が不適切
+T2	Argument 38 49	長時間の高速走行を行っ
+T3	Connective 50 52	場合
+T4	Connective 35 37	ため
+T5	Argument 53 62	潤滑油が高温になり
+T6	Argument 63 87	潤滑油中の硫黄成分と当該軸受の銅の化学反応が促進
+T7	Argument 90 99	硫化銅が多量に生成
+T8	Argument 125 136	当該軸受に硫化銅が堆積
+T9	Argument 139 146	摺動抵抗が増大
+T10	Argument 153 160	更に高温となり
+T11	Argument 161 177	軸受がトランスファケースから抜け
+T12	Argument 178 183	異音が発生
+T13	Argument 191 215	トランスファケース及びアウトプットシャフトが破損
+T14	Argument 217 230	リヤプロペラシャフトが脱落
+T15	Argument 232 239	走行不能となる
+T16	Connective 231 232	、
+T17	Connective 216 217	て
+T19	Connective 177 178	て
+T20	Connective 160 161	、
+T21	Connective 150 153	により
+T22	Connective 137 138	て
+T23	Connective 108 112	そのため
+T24	Connective 89 90	、
+T25	Connective 62 63	、
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T6	
+R3	CONDITION Arg1:T3 Arg2:T2	
+R4	RESULT Arg1:T3 Arg2:T5	
+R5	REASON Arg1:T25 Arg2:T5	
+R6	RESULT Arg1:T25 Arg2:T6	
+R7	REASON Arg1:T24 Arg2:T6	
+R8	RESULT Arg1:T24 Arg2:T7	
+R9	REASON Arg1:T23 Arg2:T7	
+R10	RESULT Arg1:T23 Arg2:T8	
+R11	REASON Arg1:T22 Arg2:T8	
+R12	RESULT Arg1:T22 Arg2:T9	
+R13	REASON Arg1:T21 Arg2:T9	
+R14	RESULT Arg1:T21 Arg2:T10	
+R15	REASON Arg1:T20 Arg2:T10	
+R16	RESULT Arg1:T20 Arg2:T11	
+R17	REASON Arg1:T19 Arg2:T11	
+R18	RESULT Arg1:T19 Arg2:T12	
+R19	RESULT Arg1:T19 Arg2:T13	
+R20	REASON Arg1:T17 Arg2:T13	
+R21	RESULT Arg1:T17 Arg2:T14	
+R22	REASON Arg1:T16 Arg2:T14	
+R23	RESULT Arg1:T16 Arg2:T15	
+T29	Argument 113 123	そのまま使用を続ける
+T31	Argument 185 187	最悪
+T32	Connective 188 190	場合
+R26	CONDITION Arg1:T32 Arg2:T31	
+R27	RESULT Arg1:T32 Arg2:T13	
+T18	Connective 123 124	と
+R24	CONDITION Arg1:T18 Arg2:T29	
+R25	RESULT Arg1:T18 Arg2:T8	

@@ -1,0 +1,35 @@
+T1	Argument 8 44	クランクポジションセンサー内部のはんだ付け部を覆う、保護材の材質が不適切
+T2	Argument 48 65	エンジンオイルがセンサー内部へ浸入
+T3	Argument 67 72	銅線に付着
+T4	Argument 85 91	渋滞路走行等
+T5	Argument 94 104	センサーが高温になる
+T6	Argument 106 121	エンジンオイル成分で銅線が腐食
+T7	Argument 123 125	最悪
+T8	Argument 129 134	銅線が断線
+T10	Argument 136 144	走行中にエンスト
+T12	Connective 45 47	ため
+T13	Connective 66 67	、
+T14	Connective 80 84	そのため
+T15	Connective 91 94	により
+T16	Connective 104 105	と
+T17	Connective 122 123	、
+T18	Connective 126 128	場合
+T19	Connective 135 136	て
+R1	REASON Arg1:T12 Arg2:T1	
+R2	RESULT Arg1:T12 Arg2:T2	
+R3	REASON Arg1:T13 Arg2:T2	
+R4	RESULT Arg1:T13 Arg2:T3	
+R5	REASON Arg1:T14 Arg2:T3	
+R6	RESULT Arg1:T14 Arg2:T6	
+R7	REASON Arg1:T15 Arg2:T4	
+R8	RESULT Arg1:T15 Arg2:T5	
+R9	CONDITION Arg1:T16 Arg2:T5	
+R10	RESULT Arg1:T16 Arg2:T6	
+R11	REASON Arg1:T17 Arg2:T6	
+R12	RESULT Arg1:T17 Arg2:T8	
+R13	CONDITION Arg1:T18 Arg2:T7	
+R14	RESULT Arg1:T18 Arg2:T8	
+R15	REASON Arg1:T19 Arg2:T8	
+R16	RESULT Arg1:T19 Arg2:T10	
+T9	Argument 145 154	エンジンが始動不能
+R17	RESULT Arg1:T19 Arg2:T9	

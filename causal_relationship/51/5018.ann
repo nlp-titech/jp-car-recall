@@ -1,0 +1,26 @@
+T1	Argument 11 54	Ｏ２センサの配線と原動機右側シリンダーの二次点火プラグ用高圧ケーブルの取り回しが不適切
+T2	Connective 55 57	ため
+T3	Argument 72 89	Ｏ２センサの出力信号にノイズが混入
+T4	Connective 97 101	そのため
+T6	Connective 108 109	れ
+T7	Argument 109 111	失火
+T8	Connective 112 113	、
+T9	Argument 119 125	原動機が停止
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 113 115	最悪
+T11	Connective 116 118	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T9	
+T12	Argument 58 69	当該ケーブルの電磁干渉
+T13	Connective 69 72	により
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T3	
+#1	AnnotatorNotes T1	「配線とケーブルの取り回し」
+T14	Argument 102 108	点火時期がず
+R13	RESULT Arg1:T4 Arg2:T14	
+R14	REASON Arg1:T6 Arg2:T14	

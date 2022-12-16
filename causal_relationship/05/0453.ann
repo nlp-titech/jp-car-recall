@@ -1,0 +1,25 @@
+T1	Argument 0 35	動力伝達装置において、自動変速機内の減速ギヤ用シャフトの組付けが不適切
+T2	Argument 39 58	当該シャフトのローラーベアリングが摩耗
+T3	Argument 60 65	異音が発生
+T4	Argument 95 105	当該ベアリングが損傷
+T5	Argument 107 115	車両が急激に減速
+T7	Connective 36 38	ため
+T8	Connective 59 60	て
+T10	Connective 106 107	て
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T5	
+R5	RESULT Arg1:T8 Arg2:T4	
+T9	Argument 73 87	そのままの状態で使用を続ける
+T11	Connective 87 88	と
+T12	Argument 89 91	最悪
+T13	Connective 92 94	場合
+R6	CONDITION Arg1:T11 Arg2:T9	
+R10	CONDITION Arg1:T13 Arg2:T12	
+R11	RESULT Arg1:T11 Arg2:T4	
+R12	RESULT Arg1:T13 Arg2:T4	
+T6	Argument 120 122	停止
+R9	RESULT Arg1:T10 Arg2:T6	

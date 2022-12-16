@@ -1,0 +1,18 @@
+T1	Argument 10 61	手動式キャブチルトにおいて、キャブのロック状態を検知するゴム部品（リバウンドクッション）の材料が不適切
+T2	Connective 62 64	ため
+T3	Argument 65 89	リバウンドクッションがフックヒンジ取付金具に固着
+T4	Connective 90 91	、
+T5	Argument 91 118	ロックが外れてもキャブロック位置検知スイッチが作動せず
+T6	Connective 117 118	ず
+T7	Argument 118 129	警告灯が点灯しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 178 196	対象車両の選定に誤りがあることが判明
+T9	Connective 198 200	ため
+R7	REASON Arg1:T9 Arg2:T8	
+T10	Argument 201 217	対象車両を追加し、新たに届け出る
+R8	RESULT Arg1:T9 Arg2:T10	

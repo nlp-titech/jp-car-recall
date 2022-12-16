@@ -1,0 +1,15 @@
+T1	Argument 18 53	小型トラックにおいて、製造工程および車両検査項目データの指示値が不適切
+T2	Connective 54 56	ため
+T3	Argument 57 84	エアバッグコントロールユニットの仕様確認を行っていない
+T4	Connective 90 94	そのため
+T5	Argument 95 114	誤った仕様のコントロールユニットが装着
+T6	Connective 117 119	場合
+T7	Argument 120 134	助手席エアバッグが機能しない
+T8	Argument 144 179	当該コントロールユニットに記録されたダイアグコードが初期化されていない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	RESULT Arg1:T2 Arg2:T8	

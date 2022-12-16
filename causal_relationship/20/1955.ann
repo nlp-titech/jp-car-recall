@@ -1,0 +1,9 @@
+T1	Argument 0 38	ブレーキのマスターシリンダー内のピストンカップの製造工程において、異物が混入
+T2	Connective 48 52	そのため
+T3	Argument 53 66	ピストンカップに亀裂が生じ
+T4	Connective 66 67	、
+T5	Argument 67 73	制動力が低下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

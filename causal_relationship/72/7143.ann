@@ -1,0 +1,13 @@
+T1	Argument 0 52	使用者の要望により助手席エアバッグの展開機能をソフトウエア上で停止させた車両において、衝突事故の発生状況
+T2	Connective 52 57	によっては
+T3	Argument 57 73	ソフトウエアのみでは停止出来ない
+T4	Connective 79 81	ため
+T5	Argument 82 84	最悪
+T6	Connective 85 87	場合
+T7	Argument 88 99	当該エアバッグが誤展開
+R1	CONDITION Arg1:T2 Arg2:T1	
+R2	REASON Arg1:T4 Arg2:T3	
+R3	CONDITION Arg1:T6 Arg2:T5	
+R4	RESULT Arg1:T6 Arg2:T7	
+R5	RESULT Arg1:T4 Arg2:T7	
+R6	RESULT Arg1:T2 Arg2:T3	

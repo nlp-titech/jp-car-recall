@@ -1,0 +1,21 @@
+T1	Argument 11 34	フロントブレーキ用エアチューブの組付けが不適切
+T2	Connective 35 37	ため
+T3	Argument 38 50	排気遮熱板との位置がずれ
+T4	Connective 53 54	、
+T5	Argument 54 68	排気熱を直接受ける状態となっ
+T6	Connective 77 81	そのため
+T7	Argument 82 97	当該チューブが排気熱により溶損
+T8	Connective 98 99	て
+T9	Argument 99 104	エアが漏れ
+T10	Connective 104 105	、
+T11	Argument 105 111	制動力が低下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	

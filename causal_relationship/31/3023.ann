@@ -1,0 +1,41 @@
+T1	Argument 0 62	大型トラックの原動機において、ＥＧＲ（排気ガス再循環装置）を制御するための吸気絞り弁のバタフライシャフトのシール機能が不適切
+T2	Argument 68 88	吸入空気中の結露水が吸気絞り弁内部に浸入
+T3	Argument 117 127	エンジン警告灯が点灯
+T4	Argument 134 147	吸気絞り弁の作動不良が発生
+T5	Argument 156 179	ＥＧＲ制御による排出ガス浄化作用に支障をきたす
+T6	Argument 189 218	吸気絞り弁内部に浸入した結露水が吸気絞り弁の配線内を伝わり
+T7	Argument 219 238	エンジンコントロールユニット内部に浸入
+T8	Argument 243 250	エンジンの不調
+T9	Argument 251 266	ＤＰＦの手動再生ができなくなる
+T10	Argument 268 296	エンジンコントロールユニットによる各種制御ができなくなり
+T11	Argument 303 326	走行中にエンジンストールし、再始動できなくなる
+T13	Connective 65 67	ため
+T14	Connective 96 100	そのため
+R1	REASON Arg1:T13 Arg2:T1	
+R2	RESULT Arg1:T13 Arg2:T2	
+R3	REASON Arg1:T14 Arg2:T2	
+R4	RESULT Arg1:T14 Arg2:T3	
+R5	RESULT Arg1:T14 Arg2:T4	
+T15	Connective 240 242	ため
+R9	REASON Arg1:T15 Arg2:T7	
+R11	RESULT Arg1:T15 Arg2:T8	
+R12	RESULT Arg1:T15 Arg2:T9	
+T16	Connective 296 297	、
+R14	REASON Arg1:T16 Arg2:T10	
+R15	RESULT Arg1:T16 Arg2:T11	
+T12	Connective 115 116	と
+T25	Argument 101 115	そのままの状態で使用を続ける
+R16	CONDITION Arg1:T12 Arg2:T25	
+R17	RESULT Arg1:T12 Arg2:T3	
+T29	Connective 300 302	場合
+T30	Argument 297 299	最悪
+R18	CONDITION Arg1:T29 Arg2:T30	
+R19	RESULT Arg1:T29 Arg2:T11	
+T17	Connective 155 156	、
+R6	REASON Arg1:T17 Arg2:T4	
+R7	RESULT Arg1:T17 Arg2:T5	
+R8	RESULT Arg1:T14 Arg2:T6	
+T18	Connective 218 219	、
+R20	REASON Arg1:T18 Arg2:T6	
+R10	RESULT Arg1:T18 Arg2:T7	
+R13	RESULT Arg1:T15 Arg2:T10	

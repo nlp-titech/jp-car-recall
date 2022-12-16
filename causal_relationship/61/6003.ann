@@ -1,0 +1,21 @@
+T1	Argument 0 23	制動灯スイッチ内部の接点の材質及び形状が不適切
+T2	Connective 24 26	ため
+T3	Argument 27 38	異物の発生や接点の摩耗
+T4	Connective 38 41	により
+T5	Argument 41 55	接点の接触時に接触不良が発生
+T6	Connective 63 67	そのため
+T7	Argument 68 77	スイッチ信号が遅延
+T8	Connective 81 84	により
+T9	Argument 85 94	ＥＳＣ警告灯の点灯
+T10	Argument 95 103	ＥＳＣの作動停止
+T11	Argument 105 116	制動灯の点灯遅延が発生
+R1	REASON Arg1:T2 Arg2:T1	
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	RESULT Arg1:T8 Arg2:T10	
+R10	RESULT Arg1:T8 Arg2:T11	

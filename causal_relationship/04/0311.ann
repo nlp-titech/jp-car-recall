@@ -1,0 +1,37 @@
+T1	Argument 0 17	消音器の遮熱板取付部の構造が不適切
+T4	Argument 103 116	ブレーキ系統のエア圧が不足
+T5	Argument 118 127	非常ブレーキが作動
+T6	Connective 18 20	ため
+T7	Connective 49 50	で
+T2	Argument 37 49	排気ガスの排圧による振動
+T8	Argument 51 57	当該部が破損
+T3	Argument 67 70	排気熱
+T9	Argument 73 95	駐車ブレーキ解放エア用ナイロンチューブが溶損
+T10	Connective 70 73	により
+R1	REASON Arg1:T7 Arg2:T2	
+R2	RESULT Arg1:T7 Arg2:T8	
+R3	REASON Arg1:T10 Arg2:T3	
+R4	RESULT Arg1:T10 Arg2:T9	
+R5	REASON Arg1:T6 Arg2:T1	
+T11	Connective 117 118	、
+R6	REASON Arg1:T11 Arg2:T4	
+R7	RESULT Arg1:T11 Arg2:T5	
+R8	RESULT Arg1:T6 Arg2:T8	
+T12	Connective 96 97	、
+R9	REASON Arg1:T12 Arg2:T9	
+R10	RESULT Arg1:T12 Arg2:T4	
+T13	Connective 66 67	、
+R11	REASON Arg1:T13 Arg2:T19	
+R12	RESULT Arg1:T13 Arg2:T3	
+T14	Argument 21 35	そのままの状態で使用を続ける
+T15	Connective 35 36	と
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T8	
+T16	Argument 97 99	最悪
+T17	Connective 100 102	場合
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T4	
+T18	Connective 58 59	て
+T19	Argument 59 66	排気ガスが漏れ
+R17	REASON Arg1:T18 Arg2:T8	
+R18	RESULT Arg1:T18 Arg2:T19	

@@ -1,0 +1,45 @@
+T1	Argument 1 45	農耕トラクタの静油圧式無段変速機（ＨＳＴ）において、非常ブレーキの油圧配管の形状が不適切
+T2	Connective 46 48	ため
+T3	Argument 49 56	エンジン振動等
+T4	Connective 56 59	により
+T5	Argument 59 64	配管が振れ
+T6	Connective 64 65	、
+T7	Argument 65 73	過大な応力を受け
+T8	Connective 73 74	て
+T9	Argument 74 80	亀裂が生じる
+T10	Connective 86 90	そのため
+T11	Argument 91 105	そのままの状態で使用を続ける
+T12	Connective 105 106	と
+T13	Argument 107 112	亀裂が進行
+T14	Connective 113 114	て
+T15	Argument 114 120	作動油が漏れ
+T16	Connective 120 121	、
+T17	Argument 121 123	最悪
+T18	Connective 124 126	場合
+T19	Argument 127 133	警告等が点灯
+T20	Connective 134 135	、
+T21	Argument 135 147	フェールセーフ制御となり
+T22	Connective 147 148	、
+T23	Argument 148 155	走行不能となる
+R1	REASON Arg1:T2 Arg2:T1	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R15	REASON Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T19	
+R17	CONDITION Arg1:T18 Arg2:T17	
+R18	RESULT Arg1:T18 Arg2:T19	
+R19	REASON Arg1:T20 Arg2:T19	
+R20	RESULT Arg1:T20 Arg2:T21	
+R21	REASON Arg1:T22 Arg2:T21	
+R22	RESULT Arg1:T22 Arg2:T23	
+R2	RESULT Arg1:T2 Arg2:T5	
+R10	RESULT Arg1:T10 Arg2:T15	

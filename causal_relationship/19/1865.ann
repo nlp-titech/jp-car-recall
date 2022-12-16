@@ -1,0 +1,5 @@
+T1	Argument 0 52	地上デジタルテレビ受信機を装着した特別仕様車において、当該受信機用リモコンの受光装置が前面ガラスに貼付け
+T2	Connective 57 59	ため
+T3	Argument 60 77	道路運送車両の保安基準に適合しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

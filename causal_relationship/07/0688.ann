@@ -1,0 +1,47 @@
+T1	Argument 0 46	バッテリから電源リレー及び方向指示器等への配線に使用しているコネクタが防水構造となっていない
+T2	Argument 49 63	コネクタ内部に融雪剤等が浸入
+T3	Argument 65 71	端子部が腐食
+T4	Argument 84 100	当該端子部の電気抵抗が大きくなり
+T5	Argument 101 115	電源リレーへの供給電圧が低下
+T6	Argument 117 127	方向指示器を作動させ
+T7	Argument 131 146	当該電源リレーが作動しなくなり
+T8	Argument 146 153	エンジンが停止
+T9	Argument 165 175	そのまま使用を続ける
+T10	Argument 177 179	最悪
+T11	Argument 183 191	当該端子部が断線
+T12	Argument 193 206	電源リレーが作動しなくなり
+T13	Argument 207 225	エンジンが停止し再始動ができなくなる
+T15	Connective 46 48	ため
+T16	Connective 64 65	、
+T17	Connective 79 83	そのため
+T18	Connective 100 101	、
+T20	Connective 128 129	際
+T21	Connective 145 146	り
+T22	Connective 175 176	と
+T23	Connective 180 182	場合
+T24	Connective 192 193	て
+T25	Connective 206 207	、
+R1	REASON Arg1:T15 Arg2:T1	
+R2	RESULT Arg1:T15 Arg2:T2	
+R3	REASON Arg1:T16 Arg2:T2	
+R4	RESULT Arg1:T16 Arg2:T3	
+R5	REASON Arg1:T17 Arg2:T3	
+R6	RESULT Arg1:T17 Arg2:T4	
+R7	REASON Arg1:T18 Arg2:T4	
+R8	RESULT Arg1:T18 Arg2:T5	
+R11	CONDITION Arg1:T20 Arg2:T6	
+R12	RESULT Arg1:T20 Arg2:T7	
+R13	REASON Arg1:T21 Arg2:T7	
+R14	RESULT Arg1:T21 Arg2:T8	
+R15	CONDITION Arg1:T22 Arg2:T9	
+R17	CONDITION Arg1:T23 Arg2:T10	
+R18	RESULT Arg1:T23 Arg2:T11	
+R19	RESULT Arg1:T22 Arg2:T11	
+R20	REASON Arg1:T24 Arg2:T11	
+R21	RESULT Arg1:T24 Arg2:T12	
+R22	REASON Arg1:T25 Arg2:T12	
+R23	RESULT Arg1:T25 Arg2:T13	
+R16	RESULT Arg1:T17 Arg2:T11	
+T19	Connective 116 117	、
+R9	REASON Arg1:T19 Arg2:T5	
+R10	RESULT Arg1:T19 Arg2:T7	

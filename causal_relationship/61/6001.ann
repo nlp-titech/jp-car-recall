@@ -1,0 +1,15 @@
+T1	Argument 0 29	セントラルエレクトロニックモジュールのソフトウェアが不適切
+T2	Connective 30 32	ため
+T3	Argument 33 50	駐車中に大きな待機電流が流れ続ける
+T4	Connective 51 52	で
+T5	Argument 53 65	バッテリー上がりを起こし
+T6	Connective 65 66	、
+T7	Argument 66 77	エンジンが始動出来ない
+T8	Argument 79 104	リモートコントロールでドアロックを解除できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T8	

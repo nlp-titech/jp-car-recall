@@ -1,0 +1,19 @@
+T1	Argument 0 55	大・中型バスにおいて、駐車ブレーキを作動させるハンドコントロールバルブに正規組立状態にないピストンが組み込まれ
+T2	Connective 63 67	そのため
+T3	Argument 68 82	そのままの状態で使用を続ける
+T4	Connective 82 83	と
+T5	Argument 84 98	駐車ブレーキに作動遅れが生じ
+T6	Argument 102 112	駐車ブレーキが効かず
+T7	Connective 112 113	、
+T8	Argument 113 115	最悪
+T9	Connective 116 118	場合
+T10	Argument 119 126	車両が動き出す
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T6	
+R6	REASON Arg1:T7 Arg2:T6	
+R7	RESULT Arg1:T7 Arg2:T10	
+R8	CONDITION Arg1:T9 Arg2:T8	
+R9	RESULT Arg1:T9 Arg2:T10	

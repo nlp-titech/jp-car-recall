@@ -1,0 +1,28 @@
+T2	Argument 32 48	フィルターが逆向きに組み付けられ
+T6	Argument 88 96	フィルターが破損
+T7	Argument 98 104	作動油が漏れ
+T8	Argument 105 107	最悪
+T9	Argument 111 118	走行不能となる
+T10	Connective 29 31	ため
+T11	Connective 52 56	そのため
+T14	Connective 85 87	場合
+T15	Connective 97 98	て
+T16	Connective 104 105	、
+T17	Connective 108 110	場合
+R2	RESULT Arg1:T10 Arg2:T2	
+R3	REASON Arg1:T11 Arg2:T2	
+R4	RESULT Arg1:T11 Arg2:T6	
+R10	RESULT Arg1:T14 Arg2:T6	
+R11	REASON Arg1:T15 Arg2:T6	
+R12	RESULT Arg1:T15 Arg2:T7	
+R13	REASON Arg1:T16 Arg2:T7	
+R14	RESULT Arg1:T16 Arg2:T9	
+R15	CONDITION Arg1:T17 Arg2:T8	
+R16	RESULT Arg1:T17 Arg2:T9	
+T3	Argument 57 70	低温時の作動油が固い状態等
+T4	Argument 71 83	フィルター内の圧力が上昇
+R5	CONDITION Arg1:T14 Arg2:T4	
+T5	Connective 70 71	で
+R6	CONDITION Arg1:T5 Arg2:T3	
+T1	Argument 0 28	ショベルローダーの作動油フィルターにおいて、製造が不適切
+R1	REASON Arg1:T10 Arg2:T1	

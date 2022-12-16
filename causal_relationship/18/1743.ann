@@ -1,0 +1,23 @@
+T1	Argument 0 50	トランスミッションの内部にある、スピードセンサ駆動ギヤにおいて、表面硬度の異なったギヤを誤って組合せ
+T2	Connective 57 61	そのため
+T3	Argument 74 81	歯面が異常摩耗
+T4	Connective 82 83	、
+T5	Argument 83 96	スピードセンサが駆動されず
+T6	Connective 96 97	、
+T7	Argument 97 108	速度計が作動しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T10	Argument 118 132	車両速度の検出ができなくなる
+T11	Argument 135 158	シフト位置がＤレンジでの自動変速ができなくなる
+T12	Connective 132 134	ため
+R7	REASON Arg1:T12 Arg2:T10	
+R8	RESULT Arg1:T12 Arg2:T11	
+R9	RESULT Arg1:T6 Arg2:T10	
+T8	Argument 62 72	そのまま使用を続ける
+T9	Connective 72 73	と
+R10	CONDITION Arg1:T9 Arg2:T8	
+R11	RESULT Arg1:T9 Arg2:T3	

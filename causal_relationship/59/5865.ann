@@ -1,0 +1,5 @@
+T1	Argument 0 26	排気管の開口部の向きが、車両中心線に対し３０°を超え
+T2	Connective 29 31	ため
+T3	Argument 32 44	保安基準に適合していない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

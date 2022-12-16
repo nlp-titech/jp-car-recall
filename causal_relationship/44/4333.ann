@@ -1,0 +1,29 @@
+T1	Argument 0 26	冷蔵冷凍車の燃料タンクにおいて、取付金具の強度が不足
+T2	Connective 30 32	ため
+T3	Argument 43 55	当該取付金具に亀裂が発生
+T4	Connective 63 67	そのため
+T5	Argument 68 76	燃料タンクが傾き
+T6	Connective 76 77	、
+T7	Argument 99 106	取付金具が破損
+T8	Connective 107 108	て
+T9	Argument 108 116	燃料タンクが脱落
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T13	Argument 33 40	走行時の振動等
+T14	Connective 40 43	により
+R9	REASON Arg1:T14 Arg2:T13	
+R10	RESULT Arg1:T14 Arg2:T3	
+T15	Argument 77 91	そのままの状態で使用を続ける
+T16	Connective 91 92	と
+R11	CONDITION Arg1:T16 Arg2:T15	
+R12	RESULT Arg1:T16 Arg2:T7	
+T17	Argument 93 95	最悪
+T18	Connective 96 98	場合
+R13	CONDITION Arg1:T18 Arg2:T17	
+R14	RESULT Arg1:T18 Arg2:T7	

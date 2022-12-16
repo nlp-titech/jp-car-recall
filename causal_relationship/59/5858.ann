@@ -1,0 +1,17 @@
+T1	Argument 0 50	交換修理用として販売したリアプロペラシャフトカップリングにおいて、設計上の仕様を満足しないものが製造
+T2	Connective 53 55	ため
+T3	Argument 56 70	早期に当該カップリングが破損
+T4	Connective 71 72	、
+T5	Argument 72 81	走行中に振動が発生
+T6	Argument 87 99	振動を無視して走行を続け
+T7	Connective 100 102	場合
+T8	Argument 103 116	リアプロペラシャフトが脱落
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R7	CONDITION Arg1:T7 Arg2:T6	
+R8	RESULT Arg1:T7 Arg2:T8	
+T9	Connective 83 84	。
+R5	REASON Arg1:T9 Arg2:T5	
+R6	RESULT Arg1:T9 Arg2:T8	

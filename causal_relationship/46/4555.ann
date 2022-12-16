@@ -1,0 +1,17 @@
+T1	Argument 11 32	アクセルワイヤ調整ナットの取付方法が不適切
+T2	Connective 33 35	ため
+T3	Argument 36 42	アクセル操作
+T4	Connective 42 45	により
+T5	Argument 52 71	当該調整ナットが取付ブラケットから外れ
+T6	Connective 71 72	、
+T7	Argument 72 86	原動機の回転が上がらなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 46 48	最悪
+T9	Connective 49 51	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

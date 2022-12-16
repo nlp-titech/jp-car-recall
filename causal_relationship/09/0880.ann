@@ -1,0 +1,29 @@
+T1	Argument 0 60	大型路線バスの始動装置において、フライホイールリングギヤの硬度及びスタータマグネチックスイッチ起動回路の配線長さが不適切
+T2	Connective 61 63	ため
+T3	Argument 64 96	始動操作時にスタータピニオンがフライホイールリングギヤに衝突干渉
+T4	Connective 97 98	、
+T5	Argument 98 103	噛合い不良
+T6	Connective 103 105	から
+T7	Argument 105 115	ギヤ端部が欠損、損傷
+T8	Connective 123 127	そのため
+T9	Argument 128 147	エンジンの始動が困難あるいは不能となり
+T10	Connective 147 148	、
+T11	Argument 148 159	始動操作を繰返し行なう
+T12	Connective 159 160	と
+T13	Argument 161 163	最悪
+T14	Connective 164 166	場合
+T15	Argument 167 172	火災になる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T15	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T15	
+R13	CONDITION Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	

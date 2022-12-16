@@ -1,0 +1,39 @@
+T2	Argument 36 47	ポンプ内部に異物が残留
+T3	Argument 62 64	異物
+T4	Argument 67 77	潤滑用油路が塞がれる
+T6	Argument 86 94	ポンプ内部が破損
+T7	Argument 96 106	負圧補助機能が失われ
+T11	Connective 33 35	ため
+T12	Connective 57 61	そのため
+T13	Connective 64 67	により
+T14	Connective 77 78	と
+T15	Connective 95 96	、
+T16	Connective 106 107	、
+T19	Argument 150 172	ポンプ内部で破損した部品がエンジン内部に入り
+T20	Argument 173 180	エンジンが損傷
+T21	Connective 172 173	、
+R2	RESULT Arg1:T11 Arg2:T2	
+R3	REASON Arg1:T12 Arg2:T2	
+R5	REASON Arg1:T13 Arg2:T3	
+R6	RESULT Arg1:T13 Arg2:T4	
+R7	CONDITION Arg1:T14 Arg2:T4	
+T22	Connective 85 86	り
+R10	RESULT Arg1:T22 Arg2:T6	
+R11	REASON Arg1:T15 Arg2:T6	
+R12	RESULT Arg1:T15 Arg2:T7	
+R13	REASON Arg1:T16 Arg2:T7	
+R20	REASON Arg1:T21 Arg2:T19	
+R21	RESULT Arg1:T21 Arg2:T20	
+R15	RESULT Arg1:T15 Arg2:T19	
+T5	Argument 79 85	潤滑不良とな
+R4	REASON Arg1:T22 Arg2:T5	
+R8	RESULT Arg1:T14 Arg2:T5	
+R9	RESULT Arg1:T13 Arg2:T5	
+T8	Argument 107 120	高地等でブレーキを掛ける際
+T9	Connective 120 121	、
+R14	CONDITION Arg1:T9 Arg2:T8	
+T10	Argument 121 140	通常の踏力ではブレーキの効きが悪くなる
+R16	RESULT Arg1:T9 Arg2:T10	
+R17	RESULT Arg1:T16 Arg2:T10	
+T1	Argument 0 32	制動倍力装置のバキュームポンプにおいて、当該ポンプの製造が不適切
+R1	REASON Arg1:T11 Arg2:T1	

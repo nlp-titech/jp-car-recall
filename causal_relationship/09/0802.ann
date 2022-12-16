@@ -1,0 +1,33 @@
+T1	Argument 0 20	テールゲートストッパ取付け部の強度が不足
+T2	Connective 24 26	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 47 59	当該取付け部に亀裂が入る
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 27 43	テールゲート全開時に発生する衝撃
+T5	Connective 43 46	により
+R3	REASON Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T3	
+T6	Connective 65 69	そのため
+T7	Argument 88 93	亀裂が進行
+R5	REASON Arg1:T6 Arg2:T3	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 70 86	テールゲートの開閉を繰り返し行う
+T9	Connective 86 87	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T7	
+T10	Argument 95 97	最悪
+T11	Connective 98 100	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+T12	Argument 101 110	当該取付け部が破損
+T13	Argument 111 118	ストッパが外れ
+T14	Argument 119 139	テールゲート全開端からテールゲートが降下
+R10	RESULT Arg1:T11 Arg2:T12	
+T15	Connective 110 111	し
+R11	REASON Arg1:T15 Arg2:T12	
+R12	RESULT Arg1:T15 Arg2:T13	
+T16	Connective 118 119	、
+R13	REASON Arg1:T16 Arg2:T13	
+R14	RESULT Arg1:T16 Arg2:T14	
+T23	Connective 94 95	、
+R15	REASON Arg1:T23 Arg2:T7	
+R16	RESULT Arg1:T23 Arg2:T12	

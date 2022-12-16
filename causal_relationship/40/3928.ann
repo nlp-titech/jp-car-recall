@@ -1,0 +1,13 @@
+T1	Argument 0 26	ブレーキ制御コンピュータにおいて、制御ソフトが不適切
+T2	Argument 30 60	ブレーキホールド状態から駐車ブレーキ作動状態に切替えできない
+T4	Argument 71 97	ブレーキホールドで停車中、シートベルトを外す等の操作
+T5	Argument 101 112	意図せず車両が動き出す
+T6	Connective 27 29	ため
+T7	Connective 66 70	このため
+T9	Connective 100 101	と
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T5	
+R7	CONDITION Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	

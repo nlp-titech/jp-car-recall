@@ -1,0 +1,13 @@
+T1	Argument 0 29	エアバッグコントロールユニット内部のセンサーの加工が不適切
+T2	Connective 35 37	ため
+T3	Argument 38 45	電気回路が短絡
+T4	Connective 53 57	そのため
+T5	Argument 58 72	イグニッションスイッチを操作
+T6	Connective 74 75	際
+T7	Argument 76 86	突然エアバッグが展開
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	CONDITION Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	RESULT Arg1:T4 Arg2:T7	

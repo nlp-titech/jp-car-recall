@@ -1,0 +1,21 @@
+T1	Argument 0 70	制動装置の制御を行うコントロールモジュール（ＶＤＤＭ）と車両のシステム管理を行うコントロールモジュール（ＣＥＭ）において、プログラムが不適切
+T2	Connective 71 73	ため
+R2	REASON Arg1:T2 Arg2:T1	
+T4	Connective 112 116	そのため
+T6	Connective 150 151	、
+T7	Argument 151 164	エンジンが始動できなくなる
+R5	RESULT Arg1:T6 Arg2:T7	
+T3	Argument 74 88	駐車状態からのエンジン始動時
+T8	Connective 88 89	に
+T9	Argument 89 106	ＣＥＭとＶＤＤＭ間で通信ができない
+R1	CONDITION Arg1:T8 Arg2:T3	
+R4	RESULT Arg1:T2 Arg2:T9	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	REASON Arg1:T4 Arg2:T9	
+T5	Argument 117 132	ＣＥＭがＶＤＤＭの不具合と検知
+T10	Connective 132 133	し
+T11	Argument 133 148	パーキングブレーキ警告灯を点灯
+R3	REASON Arg1:T6 Arg2:T11	
+R6	REASON Arg1:T10 Arg2:T5	
+R9	RESULT Arg1:T10 Arg2:T11	
+R10	RESULT Arg1:T4 Arg2:T5	

@@ -1,0 +1,21 @@
+T1	Argument 10 29	作動レバーに材質の異なるものを組み付け
+T2	Connective 35 36	、
+T3	Argument 36 41	強度が不足
+T4	Connective 51 55	そのため
+T5	Argument 74 82	当該レバーが折損
+T6	Connective 83 84	、
+T7	Argument 84 96	ブレーキが作動しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 56 66	繰り返し使用を続ける
+T9	Connective 66 67	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 68 70	最悪
+T11	Connective 71 73	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	

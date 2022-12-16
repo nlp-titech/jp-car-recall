@@ -1,0 +1,25 @@
+T1	Argument 0 17	ブレーキパイプのメッキ処理が不適切
+T2	Connective 18 20	ため
+T3	Argument 21 31	パイプ表面に錆が発生
+T4	Connective 39 43	そのため
+T5	Argument 56 66	当該パイプに穴があき
+T6	Connective 66 67	、
+T7	Argument 73 83	ブレーキオイルが洩れ
+T8	Connective 83 84	て
+T9	Argument 85 91	制動力が低下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 44 54	そのまま使用を続ける
+T11	Connective 54 55	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	
+T12	Argument 67 69	最悪
+T13	Connective 70 72	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T7	

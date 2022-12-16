@@ -1,0 +1,9 @@
+T1	Argument 0 24	走行装置（アルミホイール）のスポーク形状が不適切
+T2	Argument 28 39	前輪側の回転部分が突出
+T3	Argument 41 51	保安基準に適合しない
+T4	Connective 25 27	ため
+T5	Connective 40 41	、
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	

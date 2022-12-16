@@ -1,0 +1,13 @@
+T1	Argument 0 43	クラッチレリーズフォークシャフト（クラッチを断続するための部品）とレバーとの溶接が不良
+T2	Connective 44 46	ため
+T3	Argument 47 57	当該溶接部が剥がれる
+T4	Connective 63 67	そのため
+T5	Argument 68 78	クラッチ操作ができず
+T6	Argument 79 86	走行不能となる
+T7	Connective 78 79	に
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	

@@ -1,0 +1,27 @@
+T1	Argument 0 34	ディーゼル車の過給機において、回転軸シール部のパッキンの構造が不適切
+T2	Argument 72 87	過給機の潤滑油が吸気管へ溜まる
+T3	Argument 94 109	加速時などに燃焼室へ吸い込まれ
+T4	Argument 110 120	排気管より白煙が発生
+T5	Argument 129 144	一時的に車速が下がりにくくなる
+T8	Connective 35 37	ため
+T9	Connective 93 94	、
+T10	Connective 109 110	、
+R1	REASON Arg1:T8 Arg2:T1	
+R5	REASON Arg1:T9 Arg2:T2	
+R6	RESULT Arg1:T9 Arg2:T3	
+R7	REASON Arg1:T10 Arg2:T3	
+R8	RESULT Arg1:T10 Arg2:T4	
+R9	RESULT Arg1:T10 Arg2:T5	
+R2	RESULT Arg1:T8 Arg2:T2	
+T6	Argument 38 52	このままの状態で使用を続ける
+T7	Connective 52 53	と
+R3	CONDITION Arg1:T7 Arg2:T6	
+R4	RESULT Arg1:T7 Arg2:T2	
+T13	Argument 123 125	最悪
+T14	Connective 126 128	場合
+R12	CONDITION Arg1:T14 Arg2:T13	
+R13	RESULT Arg1:T14 Arg2:T5	
+T15	Argument 54 68	アイドリング状態が長時間続い
+T16	Connective 69 71	場合
+R14	CONDITION Arg1:T16 Arg2:T15	
+R15	RESULT Arg1:T16 Arg2:T2	

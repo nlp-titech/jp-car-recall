@@ -1,0 +1,33 @@
+T1	Argument 0 27	トルクコンバータの潤滑用ホースの組付け作業指示が不適切
+T2	Argument 31 54	オイルフィルター接続部のホース口金部付近が変形
+T3	Argument 81 89	潤滑油の圧力変動
+T4	Argument 92 110	当該ホースのゴム部分と口金部分が干渉
+T5	Argument 112 118	ホースが損傷
+T6	Argument 120 126	潤滑油が漏れ
+T7	Argument 133 138	火災に至る
+T8	Connective 126 127	、
+T9	Connective 119 120	て
+T10	Connective 111 112	、
+T11	Connective 89 92	により
+T12	Connective 64 68	そのため
+T13	Connective 28 30	ため
+R1	REASON Arg1:T13 Arg2:T1	
+R2	RESULT Arg1:T13 Arg2:T2	
+R3	REASON Arg1:T12 Arg2:T2	
+R4	RESULT Arg1:T12 Arg2:T4	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T5	
+R9	REASON Arg1:T9 Arg2:T5	
+R10	RESULT Arg1:T9 Arg2:T6	
+R11	REASON Arg1:T8 Arg2:T6	
+R12	RESULT Arg1:T8 Arg2:T7	
+T14	Argument 69 79	そのまま使用を続ける
+T15	Connective 79 80	と
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T4	
+T16	Argument 127 129	最悪
+T17	Connective 130 132	場合
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T7	

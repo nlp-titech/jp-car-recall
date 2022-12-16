@@ -1,0 +1,29 @@
+T2	Connective 40 42	ため
+T3	Argument 43 81	雨水が当該端子部からアース配線内部を伝わりＡＢＳモジュールのコネクタ部に浸入
+T4	Connective 89 93	そのため
+T5	Argument 94 107	当該コネクタ部の電極が腐食
+T6	Connective 108 109	て
+T7	Argument 109 111	短絡
+T8	Connective 112 113	、
+T9	Argument 113 122	ＡＢＳ警告灯が点灯
+T10	Argument 128 137	ＡＢＳの機能が停止
+T11	Argument 146 153	短絡箇所が発熱
+T12	Connective 154 155	て
+T13	Argument 155 160	火災となる
+R1	REASON Arg1:T4 Arg2:T3	
+R2	RESULT Arg1:T4 Arg2:T5	
+R3	REASON Arg1:T6 Arg2:T5	
+R4	RESULT Arg1:T6 Arg2:T7	
+R5	REASON Arg1:T8 Arg2:T7	
+R6	RESULT Arg1:T8 Arg2:T9	
+R7	RESULT Arg1:T8 Arg2:T10	
+R8	RESULT Arg1:T8 Arg2:T11	
+R9	REASON Arg1:T12 Arg2:T11	
+R10	RESULT Arg1:T12 Arg2:T13	
+T14	Argument 140 142	最悪
+T15	Connective 143 145	場合
+R11	CONDITION Arg1:T15 Arg2:T14	
+R12	RESULT Arg1:T15 Arg2:T11	
+R14	RESULT Arg1:T2 Arg2:T3	
+T1	Argument 0 39	ＡＢＳ（アンチロック・ブレーキ・システム）のアース配線端子部の防水構造が不適切
+R13	REASON Arg1:T2 Arg2:T1	

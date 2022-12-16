@@ -1,0 +1,17 @@
+T1	Argument 0 43	フォークリフトにおいて、かじ取り車輪の後輪タイヤ及びリム側面とリヤアクスルの隙間が不足
+T2	Connective 47 49	ため
+T3	Argument 68 89	後輪タイヤ及びリム側面とリヤアクスルが接触
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 66 67	と
+T5	Argument 50 64	ハンドルを最大切れ角まで操作
+R3	CONDITION Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T4 Arg2:T3	
+T6	Connective 97 101	そのため
+T7	Argument 118 130	後輪タイヤ及びリムが損傷
+R5	REASON Arg1:T6 Arg2:T3	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 102 116	そのままの状態で使用を続ける
+T9	Connective 116 117	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T7	

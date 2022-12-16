@@ -1,0 +1,22 @@
+T1	Argument 0 34	方向指示器の操作スイッチ内部にある接点ブレード支持基板の位置が不適切
+T2	Connective 35 37	ため
+T3	Argument 38 44	接点部が磨耗
+T4	Connective 44 45	し
+T5	Argument 45 51	腐食が生じる
+T6	Connective 57 61	そのため
+T7	Argument 62 71	当該スイッチを操作
+T8	Connective 73 75	とき
+T9	Argument 80 87	接点の接触不良
+T10	Argument 90 101	方向指示器が作動しない
+T11	Connective 87 90	により
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T10	
+R6	RESULT Arg1:T6 Arg2:T10	
+R9	REASON Arg1:T11 Arg2:T9	
+R10	RESULT Arg1:T11 Arg2:T10	
+#1	AnnotatorNotes R6	係り受けの交差を避けるため後ろにかけた

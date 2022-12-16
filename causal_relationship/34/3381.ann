@@ -1,0 +1,29 @@
+T1	Argument 0 17	ブレーキホースの取付け角度が不適切
+T2	Connective 18 20	ため
+T3	Argument 21 55	車体屈折時に前輪ブレーキホースとステアリングストッパブラケットが干渉
+T4	Connective 63 67	そのため
+T5	Argument 68 78	ブレーキホースが摩耗
+T6	Connective 79 80	、
+T7	Argument 80 90	そのまま使用を続ける
+T8	Connective 90 91	と
+T9	Argument 92 98	ホースが破損
+T10	Argument 100 110	ブレーキオイルが漏れ
+T11	Argument 112 114	最悪
+T12	Connective 115 117	場合
+T13	Argument 118 124	制動力が低下
+R1	RESULT Arg1:T12 Arg2:T13	
+R2	CONDITION Arg1:T12 Arg2:T11	
+R3	RESULT Arg1:T8 Arg2:T9	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T9	
+T14	Connective 99 100	、
+R4	RESULT Arg1:T14 Arg2:T10	
+R5	REASON Arg1:T14 Arg2:T9	
+T15	Connective 110 111	て
+R8	RESULT Arg1:T15 Arg2:T13	
+R9	REASON Arg1:T6 Arg2:T5	
+R10	REASON Arg1:T15 Arg2:T10	
+R11	RESULT Arg1:T4 Arg2:T5	
+R12	REASON Arg1:T4 Arg2:T3	
+R13	RESULT Arg1:T2 Arg2:T3	
+R14	REASON Arg1:T2 Arg2:T1	

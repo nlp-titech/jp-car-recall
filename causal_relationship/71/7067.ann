@@ -1,0 +1,17 @@
+T1	Argument 0 34	自動無段変速機（ＣＶＴ）において、コントロールユニットの制御が不適切
+T2	Connective 35 37	ため
+T3	Argument 38 54	ＣＶＴ内部のクラッチの結合が遅れ
+T4	Connective 54 55	、
+T5	Argument 55 68	発進時に駆動力が伝わらない
+T6	Connective 74 78	そのため
+T7	Argument 79 97	坂道での発進時にブレーキペダルを放し
+T8	Connective 98 99	際
+T9	Argument 100 116	一時的に車両の自重で坂道を下がる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	RESULT Arg1:T6 Arg2:T9	

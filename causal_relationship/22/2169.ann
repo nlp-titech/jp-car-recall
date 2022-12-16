@@ -1,0 +1,21 @@
+T1	Argument 0 35	オルタネータに接続されているバッテリハーネスにおいて、接続方法が不適切
+T2	Connective 36 38	ため
+T3	Argument 39 47	当該接続部が緩む
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 53 57	そのため
+T5	Argument 74 87	バッテリが充電されなくなり
+T6	Connective 87 88	、
+T7	Argument 94 111	原動機が停止し、再始動できなくなる
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T10	Argument 58 72	そのままの状態で使用を続ける
+T11	Connective 72 73	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	
+T12	Argument 88 90	最悪
+T13	Connective 91 93	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T7	

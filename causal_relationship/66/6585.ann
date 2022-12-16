@@ -1,0 +1,13 @@
+T1	Argument 0 46	車両式故障診断装置において、燃料システム制御モジュールからの信号を認識するプログラムが不適切
+T2	Connective 47 49	ため
+T5	Argument 50 81	燃料圧力センサ、燃料温度センサ、または、燃料ポンプに異常が生じ
+T6	Connective 82 84	場合
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 85 107	メーターパネル内のエンジン警告灯が点灯しない
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	CONDITION Arg1:T6 Arg2:T5	
+R4	RESULT Arg1:T6 Arg2:T3	
+T4	Connective 108 112	そのため
+T7	Argument 113 130	保安基準第３１条の基準に適合しない
+R5	REASON Arg1:T4 Arg2:T3	
+R6	RESULT Arg1:T4 Arg2:T7	

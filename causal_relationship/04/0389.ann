@@ -1,0 +1,29 @@
+T1	Argument 11 50	駐車ブレーキケーブルのアウターコート溶着工程において、異物が混入したものがある
+T2	Argument 53 68	当該アウターコートに亀裂が発生
+T3	Argument 92 107	アウターケーシングが折れ曲がり
+T4	Argument 108 119	インナーワイヤーと干渉
+T5	Argument 133 144	インナーワイヤーが切損
+T6	Argument 146 160	駐車ブレーキが作動しなくなる
+T7	Connective 50 52	ため
+T8	Connective 75 76	、
+T9	Connective 107 108	、
+T10	Connective 126 127	、
+T11	Connective 145 146	、
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T5	
+R9	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	
+T12	Argument 76 90	そのままの状態で使用を続ける
+T13	Connective 90 91	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T3	
+T14	Argument 127 129	最悪
+T15	Connective 130 132	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T5	

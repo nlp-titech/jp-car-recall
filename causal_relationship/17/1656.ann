@@ -1,0 +1,21 @@
+T1	Argument 0 43	製造工程において、手動式変速機のオイルクーラーホース接続部のクランプの取付位置が不適切
+T2	Connective 50 54	そのため
+T3	Argument 67 80	当該接続部よりホースが外れ
+T4	Argument 81 87	オイルが漏れ
+T5	Connective 80 81	て
+T6	Argument 94 101	走行不能に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T4	
+T7	Connective 87 88	、
+R5	REASON Arg1:T7 Arg2:T4	
+R6	RESULT Arg1:T7 Arg2:T6	
+T8	Argument 55 65	そのまま使用を続ける
+T9	Connective 65 66	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 88 90	最悪
+T11	Connective 91 93	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T6	

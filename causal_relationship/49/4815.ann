@@ -1,0 +1,21 @@
+T1	Argument 20 37	ベルトバックル部の金具の強度が不足
+T2	Connective 41 43	ため
+T3	Argument 67 74	当該金具が変形
+T4	Connective 75 76	、
+T5	Argument 82 88	ベルトが外れ
+T6	Connective 88 89	て
+T7	Argument 89 100	乗員を拘束できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 44 63	衝突時等大きな荷重が当該ベルトにかかっ
+T9	Connective 64 66	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 76 78	最悪
+T11	Connective 79 81	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	

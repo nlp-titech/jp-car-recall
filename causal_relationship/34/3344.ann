@@ -1,0 +1,25 @@
+T1	Argument 0 42	ロータリ除雪車のエンジンにおいて、①エンジンオイルフィルタに繋がる配管の製造が不適切
+T2	Connective 43 45	ため
+T3	Argument 46 56	配管内部に亀裂が発生
+T4	Connective 66 70	そのため
+T5	Argument 71 82	そのままの状態で使用し
+T6	Connective 85 86	と
+T7	Argument 87 92	亀裂が進行
+T8	Connective 103 104	、
+T9	Argument 104 108	潤滑不良
+R1	RESULT Arg1:T8 Arg2:T9	
+R2	REASON Arg1:T8 Arg2:T13	
+R3	RESULT Arg1:T6 Arg2:T7	
+R4	CONDITION Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T7	
+R6	REASON Arg1:T4 Arg2:T3	
+R7	RESULT Arg1:T2 Arg2:T3	
+R8	REASON Arg1:T2 Arg2:T1	
+T10	Argument 109 119	エンジンが破損に至る
+T11	Connective 108 109	で
+R9	REASON Arg1:T11 Arg2:T9	
+R10	RESULT Arg1:T11 Arg2:T10	
+T12	Connective 92 93	し
+T13	Argument 93 103	エンジンオイルが漏れ
+R11	REASON Arg1:T12 Arg2:T7	
+R12	RESULT Arg1:T12 Arg2:T13	

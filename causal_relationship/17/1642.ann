@@ -1,0 +1,41 @@
+T1	Argument 0 55	自動変速機のシフトコントロールレバーにトランスミッションコントロールケーブルを締結するボルトの加工工程が不適切
+T2	Connective 56 58	ため
+T3	Argument 59 68	ボルトの強度が不足
+T4	Connective 78 82	そのため
+T5	Argument 83 99	締付け時に当該ボルトに亀裂が発生
+T6	Connective 100 101	、
+T7	Argument 113 125	ケーブルの取付位置がずれ
+T8	Connective 125 126	て
+T9	Argument 126 148	シフトの表示位置とシフトレバーの位置が異なり
+T10	Connective 148 149	、
+T11	Argument 155 161	ボルトが折損
+T12	Connective 162 163	、
+T13	Argument 163 170	ケーブルが外れ
+T14	Connective 170 171	て
+T15	Argument 171 179	変速できなくなり
+T16	Connective 179 180	、
+T17	Argument 180 187	走行不能となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R15	REASON Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T17	
+T18	Argument 101 111	そのまま使用を続ける
+T19	Connective 111 112	と
+R17	CONDITION Arg1:T19 Arg2:T18	
+R18	RESULT Arg1:T19 Arg2:T7	
+T20	Argument 149 151	最悪
+T21	Connective 152 154	場合
+R19	CONDITION Arg1:T21 Arg2:T20	
+R20	RESULT Arg1:T21 Arg2:T11	

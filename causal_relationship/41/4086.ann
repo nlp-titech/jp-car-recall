@@ -1,0 +1,31 @@
+T1	Argument 10 30	荷室架装時の車台側締結位置の指示が不適切
+T2	Argument 34 57	荷室前側の車台締結を設計意図と異なる位置で締結
+T5	Argument 70 106	走行中の荷室揺動による前輪サスペンションのアンカーボルトへの入力が大きく
+T6	Argument 107 117	そのまま使用を続ける
+T7	Argument 119 127	当該ボルトが折損
+T8	Argument 129 136	車両姿勢が変化
+T9	Argument 141 157	折損したボルトが燃料タンクを損傷
+T10	Argument 160 162	最悪
+T12	Connective 31 33	ため
+T13	Connective 65 69	そのため
+T16	Connective 106 107	、
+T17	Connective 117 118	と
+T18	Connective 128 129	て
+T20	Connective 159 160	、
+T21	Connective 163 165	場合
+R1	REASON Arg1:T12 Arg2:T1	
+R2	RESULT Arg1:T12 Arg2:T2	
+R3	REASON Arg1:T13 Arg2:T2	
+R9	REASON Arg1:T16 Arg2:T5	
+R10	RESULT Arg1:T16 Arg2:T7	
+R11	CONDITION Arg1:T17 Arg2:T6	
+R12	RESULT Arg1:T17 Arg2:T7	
+R13	REASON Arg1:T18 Arg2:T7	
+R14	RESULT Arg1:T18 Arg2:T8	
+R17	REASON Arg1:T20 Arg2:T9	
+R19	CONDITION Arg1:T21 Arg2:T10	
+R4	RESULT Arg1:T13 Arg2:T5	
+R5	RESULT Arg1:T18 Arg2:T9	
+T3	Argument 166 172	燃料が漏れる
+R6	RESULT Arg1:T21 Arg2:T3	
+R7	RESULT Arg1:T20 Arg2:T3	

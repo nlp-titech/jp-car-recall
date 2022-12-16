@@ -1,0 +1,31 @@
+T1	Argument 0 39	ナックルとコントロールアームを締結しているボールジョイントナットの材質が不適切
+T2	Connective 40 42	ため
+T3	Argument 53 65	当該ナットに緩みが生じる
+T4	Connective 71 75	そのため
+T5	Argument 76 81	異音が発生
+T6	Argument 95 103	当該ナットが脱落
+T7	Connective 104 105	、
+T8	Argument 111 122	ボールジョイントが外れ
+T9	Connective 122 123	、
+T10	Argument 123 130	走行不能となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T6	
+R6	REASON Arg1:T7 Arg2:T6	
+R7	RESULT Arg1:T7 Arg2:T8	
+R8	REASON Arg1:T9 Arg2:T8	
+R9	RESULT Arg1:T9 Arg2:T10	
+T11	Argument 83 93	そのまま使用を続ける
+T12	Connective 93 94	と
+R10	CONDITION Arg1:T12 Arg2:T11	
+R11	RESULT Arg1:T12 Arg2:T6	
+T13	Argument 105 107	最悪
+T14	Connective 108 110	場合
+R12	CONDITION Arg1:T14 Arg2:T13	
+R13	RESULT Arg1:T14 Arg2:T8	
+T15	Argument 43 50	走行中の振動等
+T16	Connective 50 53	により
+R14	REASON Arg1:T16 Arg2:T15	
+R15	RESULT Arg1:T16 Arg2:T3	

@@ -1,0 +1,25 @@
+T1	Connective 49 51	ため
+T2	Argument 0 48	整流器の製造工程において、冷却フィン付きケースとパワーモジュール（電力用複合素子）の接着が不十分
+T5	Argument 52 73	パワーモジュール内部の整流素子が冷却されず
+T6	Connective 73 74	に
+T7	Argument 74 79	温度が上昇
+T8	Connective 80 81	、
+T9	Argument 81 95	発電電流の制御ができなくなる
+R1	REASON Arg1:T1 Arg2:T2	
+R2	RESULT Arg1:T1 Arg2:T5	
+R3	REASON Arg1:T6 Arg2:T5	
+R4	RESULT Arg1:T6 Arg2:T7	
+R5	REASON Arg1:T8 Arg2:T7	
+R6	RESULT Arg1:T8 Arg2:T9	
+T3	Connective 101 105	そのため
+T4	Argument 106 118	バッテリが充電不足となり
+T10	Connective 118 119	、
+T11	Argument 119 121	最悪
+T12	Connective 122 124	場合
+T13	Argument 125 147	走行中にエンジンが停止して再始動できなくなる
+R7	REASON Arg1:T3 Arg2:T9	
+R8	RESULT Arg1:T3 Arg2:T4	
+R9	REASON Arg1:T10 Arg2:T4	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	

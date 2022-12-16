@@ -1,0 +1,17 @@
+T1	Argument 8 37	クランク・プーリに組み込まれている振動吸収材の嵌合が不適切
+T2	Connective 43 44	、
+T3	Argument 66 76	当該振動吸収材が外れ
+T4	Connective 76 77	、
+T5	Argument 77 84	周辺部品を損傷
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 44 58	そのままの状態で使用を続ける
+T7	Connective 58 59	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 60 62	最悪
+T9	Connective 63 65	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	

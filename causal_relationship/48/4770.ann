@@ -1,0 +1,21 @@
+T1	Argument 0 64	運転者席及び助手席の座席ベルトプリテンショナ（衝突時に座席ベルトの帯部を引き締める装置）において、電気ハーネスのコネクタに不具合
+T2	Connective 67 69	ため
+T3	Argument 86 100	当該コネクタに接触不良が発生
+T4	Connective 101 102	、
+T5	Argument 108 124	衝突時にプリテンショナが作動せず
+T6	Connective 124 125	、
+T7	Argument 125 139	乗員を確実に拘束できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 70 84	そのままの状態で使用を続ける
+T9	Connective 84 85	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 102 104	最悪
+T11	Connective 105 107	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	

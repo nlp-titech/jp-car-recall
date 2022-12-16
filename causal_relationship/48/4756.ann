@@ -1,0 +1,9 @@
+T1	Argument 0 34	半自動変速機において、変速を行う油圧式制御装置に油圧保持能力が不十分
+T2	Connective 40 42	ため
+T3	Argument 59 68	変速ができなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 43 57	そのままの状態で使用を続ける
+T5	Connective 57 58	と
+R3	CONDITION Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T3	

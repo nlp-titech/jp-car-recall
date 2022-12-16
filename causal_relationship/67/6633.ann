@@ -1,0 +1,17 @@
+T1	Argument 0 26	エンジンコントロールユニットの制御プログラムが不適切
+T2	Connective 27 29	ため
+T3	Argument 71 75	エンスト
+T4	Connective 83 87	そのため
+T5	Argument 88 114	運転者が走行を開始しようとしても速やかに発進できない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 30 39	ブレーキによる減速
+T7	Connective 39 40	時
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 45 70	車両が停止する直前や、エコストップからの再始動直後
+T9	Connective 70 71	に
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	

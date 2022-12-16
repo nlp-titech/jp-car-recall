@@ -1,0 +1,41 @@
+T1	Argument 21 40	エンジンオイルの交換時期の設定が不適切
+T2	Connective 41 43	ため
+T3	Argument 44 52	使用条件が厳しい
+T4	Connective 52 54	場合
+T5	Argument 55 73	設定期間より早くエンジンオイルが劣化
+T6	Connective 81 85	そのため
+T7	Argument 86 100	そのままの状態で使用を続ける
+T8	Connective 100 101	と
+T9	Argument 102 140	オイルミストセパレータにスラッジ（燃焼で発生する煤やオイル中の劣化物）が堆積
+T10	Connective 141 142	て
+T12	Connective 181 182	て
+T13	Argument 183 185	最悪
+T14	Connective 186 188	場合
+T15	Argument 189 202	意図せずエンジン回転が上昇
+T16	Connective 203 204	、
+T17	Argument 204 211	エンジンが破損
+R1	RESULT Arg1:T16 Arg2:T17	
+R2	REASON Arg1:T16 Arg2:T15	
+R3	RESULT Arg1:T14 Arg2:T15	
+R4	CONDITION Arg1:T14 Arg2:T13	
+R5	RESULT Arg1:T12 Arg2:T15	
+R8	REASON Arg1:T10 Arg2:T9	
+R9	RESULT Arg1:T8 Arg2:T9	
+R10	CONDITION Arg1:T8 Arg2:T7	
+R11	RESULT Arg1:T6 Arg2:T9	
+R12	REASON Arg1:T6 Arg2:T5	
+R13	RESULT Arg1:T4 Arg2:T5	
+R14	CONDITION Arg1:T4 Arg2:T3	
+R15	RESULT Arg1:T2 Arg2:T3	
+R16	REASON Arg1:T2 Arg2:T1	
+T11	Argument 143 150	目詰まりを起こ
+T18	Connective 151 152	、
+T19	Argument 152 165	クランクケースの内圧が上昇
+T20	Connective 165 166	、
+T21	Argument 166 180	エンジンオイルが吸気系に流入
+R6	REASON Arg1:T12 Arg2:T21	
+R7	REASON Arg1:T20 Arg2:T19	
+R17	REASON Arg1:T18 Arg2:T11	
+R18	RESULT Arg1:T10 Arg2:T11	
+R19	RESULT Arg1:T18 Arg2:T19	
+R20	RESULT Arg1:T20 Arg2:T21	

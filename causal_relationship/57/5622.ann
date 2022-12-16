@@ -1,0 +1,29 @@
+T1	Argument 19 46	ホイール側ジョイント部のインナー・レースの加工が不適切
+T2	Argument 50 56	耐久性が不足
+T3	Argument 71 81	そのまま使用を続ける
+T4	Argument 83 91	繰り返しの加速等
+T5	Argument 94 107	インナー・レースの歯が摩滅
+T6	Argument 109 111	最悪
+T7	Argument 115 130	タイヤに駆動力が伝わらなくなり
+T8	Argument 131 138	走行不能となる
+T9	Connective 47 49	ため
+T10	Connective 66 70	そのため
+T11	Connective 81 82	と
+T12	Connective 91 94	により
+T13	Connective 108 109	、
+T14	Connective 112 114	場合
+T15	Connective 130 131	、
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T2	
+R3	REASON Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T5	
+R5	CONDITION Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T5	
+R7	REASON Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T5	
+R9	REASON Arg1:T13 Arg2:T5	
+R10	RESULT Arg1:T13 Arg2:T7	
+R11	CONDITION Arg1:T14 Arg2:T6	
+R12	RESULT Arg1:T14 Arg2:T7	
+R13	REASON Arg1:T15 Arg2:T7	
+R14	RESULT Arg1:T15 Arg2:T8	

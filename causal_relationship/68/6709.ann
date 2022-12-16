@@ -1,0 +1,21 @@
+T1	Argument 0 46	右側フロント及び右側リヤシートベルト下側を車体に固定するボルトにおいて、締め付け作業が不適切
+T2	Connective 47 49	ため
+T3	Argument 50 60	締め付けトルクが不足
+T4	Connective 70 74	そのため
+T5	Argument 75 80	走行振動等
+T6	Connective 80 83	により
+T7	Argument 83 91	当該ボルトが緩み
+T8	Connective 103 104	際
+T9	Argument 106 118	適切に乗員を拘束できない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Connective 91 92	、
+T11	Argument 92 102	事故などの衝撃を受け
+R7	REASON Arg1:T10 Arg2:T7	
+R9	RESULT Arg1:T10 Arg2:T9	
+R10	CONDITION Arg1:T8 Arg2:T11	

@@ -1,0 +1,21 @@
+T1	Argument 0 34	制動装置の空気配管用ナイロンチューブと排気管の遮熱板との隙間に不適切
+T2	Argument 59 72	当該チューブが熱により溶損
+T3	Argument 86 99	ブレーキ系統の空気圧が不足
+T4	Argument 101 110	非常ブレーキが作動
+T5	Connective 40 42	ため
+T6	Connective 79 80	、
+T7	Connective 100 101	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 43 57	そのままの状態で使用を続ける
+T9	Connective 57 58	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T2	
+T10	Argument 80 82	最悪
+T11	Connective 83 85	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	

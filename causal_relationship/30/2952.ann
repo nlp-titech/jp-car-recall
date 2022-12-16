@@ -1,0 +1,16 @@
+T1	Argument 0 39	自動変速機を搭載した大型路線バスにおいて、自動変速機用ＥＣＵ内部のハンダが亀裂
+T2	Connective 40 41	て
+T3	Argument 51 60	ギヤ段の固定が生じ
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 60 61	、
+T5	Argument 67 80	エンジンが再始動不能となる
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 61 63	最悪
+T7	Connective 64 66	場合
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T5	
+T8	Argument 41 50	変速ショックの増大
+R7	RESULT Arg1:T2 Arg2:T8	
+R8	REASON Arg1:T4 Arg2:T8	

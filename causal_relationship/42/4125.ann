@@ -1,0 +1,5 @@
+T1	Argument 16 50	完成検査員に任命されていない検査員が合否判定を行ったものが認められた
+T2	Connective 50 52	ため
+T3	Argument 53 82	道路運送車両の保安基準に関する検査が適切に行われていなかっ
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

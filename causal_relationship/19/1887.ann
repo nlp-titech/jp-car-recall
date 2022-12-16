@@ -1,0 +1,21 @@
+T1	Argument 0 37	作業装置固定用ピン操作レバーの操作位置を表示する操作銘板において異品が貼付
+T2	Connective 40 42	ため
+T3	Argument 43 63	表示の施錠位置にしても実際には解除になっ
+T4	Connective 72 76	そのため
+T5	Argument 97 104	作業装置が脱落
+T6	Connective 104 105	し
+T7	Argument 105 114	走行に支障をきたす
+R1	REASON Arg1:T6 Arg2:T5	
+R2	RESULT Arg1:T6 Arg2:T7	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T2 Arg2:T1	
+R6	RESULT Arg1:T2 Arg2:T3	
+T8	Argument 77 87	そのままの状態で使用
+T9	Connective 89 90	と
+T10	Argument 91 93	最悪
+T11	Connective 94 96	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	

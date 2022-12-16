@@ -1,0 +1,41 @@
+T1	Argument 0 35	大型トラックの手動変速機において、オイルクーラホースの固定方法が不適切
+T2	Connective 36 38	ため
+T3	Argument 39 70	走行中に車両に巻き上げられた異物が、オイルクーラホースに当たる
+T4	Connective 72 76	によって
+T5	Argument 76 84	当該ホースが変形
+T6	Argument 86 109	リターダドラム（補助制動装置の回転部分）に干渉
+T7	Connective 117 121	そのため
+T8	Argument 138 146	当該ホースが損傷
+T9	Connective 147 148	、
+T10	Argument 148 154	オイルが漏れ
+T11	Connective 154 155	て
+T12	Argument 155 168	変速機内部が潤滑不良となり
+T13	Connective 168 169	、
+T14	Argument 175 184	変速ができなくなり
+T15	Argument 184 191	走行不能となる
+R1	REASON Arg1:T2 Arg2:T1	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T16	Connective 85 86	、
+R5	REASON Arg1:T16 Arg2:T5	
+R6	RESULT Arg1:T16 Arg2:T6	
+R7	REASON Arg1:T7 Arg2:T6	
+R8	RESULT Arg1:T7 Arg2:T8	
+T17	Connective 183 184	り
+R9	REASON Arg1:T9 Arg2:T8	
+R10	RESULT Arg1:T9 Arg2:T10	
+R11	REASON Arg1:T11 Arg2:T10	
+R12	RESULT Arg1:T11 Arg2:T12	
+R13	REASON Arg1:T13 Arg2:T12	
+R14	RESULT Arg1:T13 Arg2:T14	
+R15	REASON Arg1:T17 Arg2:T14	
+R16	RESULT Arg1:T17 Arg2:T15	
+T18	Argument 122 136	そのままの状態で使用を続ける
+T19	Connective 136 137	と
+R17	CONDITION Arg1:T19 Arg2:T18	
+R18	RESULT Arg1:T19 Arg2:T8	
+T20	Argument 169 171	最悪
+T21	Connective 172 174	場合
+R19	CONDITION Arg1:T21 Arg2:T20	
+R20	RESULT Arg1:T21 Arg2:T14	
+R2	RESULT Arg1:T2 Arg2:T6	

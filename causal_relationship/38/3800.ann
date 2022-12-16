@@ -1,0 +1,38 @@
+T1	Argument 9 34	フューエルインジェクターにおいて、製造管理が不適切
+T2	Argument 56 72	フィルターのメッシュ部に穴が開い
+T3	Argument 86 112	燃料配管内の異物がフューエルインジェクター内部に侵入
+T4	Argument 116 130	当該インジェクターが作動不良
+T5	Argument 133 144	適切に燃料が供給されず
+T6	Argument 145 147	失火
+T7	Argument 150 159	エンジン不調となる
+T8	Argument 162 164	最悪
+T10	Argument 172 179	エンストに至る
+T11	Connective 35 37	ため
+T12	Connective 81 85	そのため
+T13	Connective 114 115	と
+T14	Connective 132 133	り
+T15	Connective 144 145	、
+T16	Connective 147 150	により
+T17	Connective 165 167	場合
+R1	REASON Arg1:T11 Arg2:T1	
+R2	RESULT Arg1:T11 Arg2:T2	
+R3	REASON Arg1:T12 Arg2:T2	
+R4	RESULT Arg1:T12 Arg2:T4	
+R5	CONDITION Arg1:T13 Arg2:T3	
+R6	RESULT Arg1:T13 Arg2:T4	
+R7	REASON Arg1:T14 Arg2:T4	
+R8	RESULT Arg1:T14 Arg2:T5	
+R9	REASON Arg1:T15 Arg2:T5	
+R10	RESULT Arg1:T15 Arg2:T6	
+R11	REASON Arg1:T16 Arg2:T6	
+R12	RESULT Arg1:T16 Arg2:T7	
+R13	RESULT Arg1:T16 Arg2:T10	
+R14	CONDITION Arg1:T17 Arg2:T8	
+R16	RESULT Arg1:T17 Arg2:T10	
+T18	Connective 161 162	、
+R15	REASON Arg1:T18 Arg2:T7	
+R17	RESULT Arg1:T18 Arg2:T10	
+T9	Argument 168 171	走行中
+T19	Connective 171 172	に
+R18	CONDITION Arg1:T19 Arg2:T9	
+R19	RESULT Arg1:T19 Arg2:T10	

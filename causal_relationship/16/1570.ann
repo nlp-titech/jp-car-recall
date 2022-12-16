@@ -1,0 +1,31 @@
+T1	Argument 0 30	ＥＣＵ（エンジン制御コンピュータ）電極部のメッキ処理が不適切
+T2	Argument 34 40	電極部が酸化
+T3	Argument 41 55	電極を接合している半田が剥離
+T4	Argument 80 88	電極部が接触不良
+T5	Argument 105 114	アイドリングが不調
+T6	Argument 124 139	エンストし、再始動できなくなる
+T7	Connective 117 118	、
+T8	Argument 92 98	警告灯が点灯
+T9	Connective 91 92	、
+R1	REASON Arg1:T9 Arg2:T4	
+R2	RESULT Arg1:T9 Arg2:T8	
+R3	RESULT Arg1:T9 Arg2:T5	
+R4	REASON Arg1:T7 Arg2:T5	
+R5	RESULT Arg1:T7 Arg2:T6	
+T10	Connective 63 67	そのため
+R6	REASON Arg1:T10 Arg2:T3	
+R7	RESULT Arg1:T10 Arg2:T4	
+T11	Connective 40 41	し
+R8	REASON Arg1:T11 Arg2:T2	
+R9	RESULT Arg1:T11 Arg2:T3	
+T12	Connective 31 33	ため
+R10	REASON Arg1:T12 Arg2:T1	
+R11	RESULT Arg1:T12 Arg2:T2	
+T15	Argument 68 78	そのまま使用を続ける
+T16	Connective 78 79	と
+R14	CONDITION Arg1:T16 Arg2:T15	
+R15	RESULT Arg1:T16 Arg2:T4	
+T17	Argument 118 120	最悪
+T18	Connective 121 123	場合
+R16	CONDITION Arg1:T18 Arg2:T17	
+R17	RESULT Arg1:T18 Arg2:T6	

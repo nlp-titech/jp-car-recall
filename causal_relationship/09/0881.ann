@@ -1,0 +1,27 @@
+T1	Argument 0 26	消音器（マフラ）において、排気圧力に対する剛性が不足
+T3	Argument 34 46	マフラ内部の溶接が不十分
+T4	Connective 47 49	ため
+T5	Argument 50 64	そのままの状態で使用を続ける
+T6	Connective 64 65	と
+T7	Argument 66 72	溶接部が破損
+T8	Connective 73 74	て
+T9	Argument 74 81	排気ガスが漏れ
+T10	Connective 81 82	、
+T13	Argument 82 96	排気熱により周辺の部品が溶損
+T14	Argument 98 100	最悪
+T15	Connective 101 103	場合
+T16	Connective 97 98	、
+T17	Argument 104 109	火災に至る
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R13	REASON Arg1:T16 Arg2:T13	
+R14	RESULT Arg1:T16 Arg2:T17	
+R15	CONDITION Arg1:T15 Arg2:T14	
+R16	RESULT Arg1:T15 Arg2:T17	
+R10	RESULT Arg1:T10 Arg2:T13	
+R1	REASON Arg1:T4 Arg2:T1	

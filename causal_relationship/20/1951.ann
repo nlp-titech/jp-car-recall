@@ -1,0 +1,13 @@
+T1	Argument 0 26	燃料タンクの給油口において、製造時の成型加工が不適切
+T2	Connective 27 29	ため
+T3	Argument 30 49	タンクキャップとの合わせ面に隙間の開い
+T4	Connective 58 62	そのため
+T5	Argument 63 76	ブレーキ時などの車体の傾斜
+T6	Connective 76 79	により
+T7	Argument 80 94	当該合わせ面から燃料が漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

@@ -1,0 +1,9 @@
+T1	Argument 0 38	運転者席の右側面ガラスにオプションに関する銘板（注意銘板、操作銘板等）を貼付
+T2	Connective 40 42	ため
+T3	Argument 43 60	道路運送車両の保安基準に適合しない
+T4	Connective 66 70	そのため
+T5	Argument 71 81	運転者の視野を妨げる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

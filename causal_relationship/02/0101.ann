@@ -1,0 +1,17 @@
+T1	Argument 0 21	動力伝達装置の変速機の入力側ギヤに製造不良
+T2	Argument 50 66	当該ギヤとかみ合う２速ギヤが破損
+T3	Argument 68 74	原動機が停止
+T4	Connective 27 28	、
+T5	Connective 67 68	、
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	
+T6	Connective 47 49	場合
+T7	Argument 28 42	そのままの状態で使用を続ける
+R5	CONDITION Arg1:T6 Arg2:T8	
+T8	Argument 44 46	最悪
+R6	RESULT Arg1:T6 Arg2:T2	
+T9	Connective 42 43	と
+R7	CONDITION Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T2	

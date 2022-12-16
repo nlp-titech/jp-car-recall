@@ -1,0 +1,17 @@
+T1	Argument 15 78	ホーンスイッチ信号、エアバック作動信号等を中継するモジュール（二分割で構成）において、当該モジュール本体の接合箇所に隙間があり
+T2	Connective 78 79	、
+T3	Argument 79 86	走行時の振動等
+T4	Connective 86 89	により
+T5	Argument 89 99	接合箇所が微少に動く
+T6	Connective 99 101	ため
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T7	Argument 102 131	当該モジュール内のホーンスイッチ用コネクタの接点が接触不良
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Connective 135 136	、
+T9	Argument 136 146	ホーンがならなくなる
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	

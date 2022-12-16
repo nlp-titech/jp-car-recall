@@ -1,0 +1,17 @@
+T1	Argument 0 42	電子制御式自動変速機とコンピュータを接続している電気配線の一部に配線を誤って組み付け
+T2	Connective 48 49	、
+T3	Argument 64 71	配線がショート
+T4	Connective 72 73	、
+T5	Argument 79 84	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 49 63	このままの状態で使用を続ける
+T7	Connective 63 64	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 73 75	最悪
+T9	Connective 76 78	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

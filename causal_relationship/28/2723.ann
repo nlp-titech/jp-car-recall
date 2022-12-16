@@ -1,0 +1,13 @@
+T1	Argument 1 24	刈取脱穀作業車において、警音器が防塵構造でない
+T2	Connective 24 26	ため
+T3	Argument 27 51	通気孔から浸入した塵埃が警音器内部の接点部に付着
+T4	Connective 52 53	て
+T5	Argument 53 57	導通不良
+T6	Connective 60 61	、
+T7	Argument 61 71	警音器が鳴らなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

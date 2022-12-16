@@ -1,0 +1,29 @@
+T1	Argument 0 37	主制動装置のブレーキシューを拡張するエキスパンダのウェッジ部の構造が不適切
+T2	Connective 38 40	ため
+T3	Argument 41 89	当該シューのブレーキライニングが使用限度を超えて摩耗した状態又はシューギャップが大きい状態で使用
+T4	Connective 91 93	場合
+T5	Argument 94 119	当該ウェッジ部のローラがタペットを乗り越して外れる
+T6	Connective 125 129	そのため
+T7	Argument 130 142	当該ウェッジの作動が不能
+T8	Connective 145 146	、
+T9	Argument 146 160	ブレーキシューの拡張ができず
+T10	Connective 167 168	、
+T11	Argument 168 170	最悪
+T12	Connective 171 173	場合
+T13	Argument 174 181	制動不能になる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	REASON Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	RESULT Arg1:T6 Arg2:T7	
+R9	REASON Arg1:T10 Arg2:T14	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+T14	Argument 160 166	制動力が低下
+T15	Connective 159 160	ず
+R13	REASON Arg1:T15 Arg2:T9	
+R14	RESULT Arg1:T15 Arg2:T14	

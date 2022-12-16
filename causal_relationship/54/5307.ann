@@ -1,0 +1,33 @@
+T1	Argument 18 43	シフト・コントロール・レバーの固定ピンの強度が不足
+T2	Connective 47 49	ため
+T3	Argument 62 73	当該ピンに亀裂が生じる
+T4	Connective 79 83	そのため
+T5	Argument 100 107	当該ピンが折損
+T6	Connective 108 109	、
+T7	Argument 109 131	シフト・コントロール・レバーが作動しなくなり
+T8	Connective 131 132	、
+T9	Argument 138 146	ギヤが変速できず
+T10	Connective 146 147	、
+T11	Argument 147 154	走行不能となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 50 59	シフト操作繰り返し
+T13	Connective 59 62	により
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T3	
+T14	Argument 84 98	そのままの状態で使用を続ける
+T15	Connective 98 99	と
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T5	
+T16	Argument 132 134	最悪
+T17	Connective 135 137	場合
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T9	

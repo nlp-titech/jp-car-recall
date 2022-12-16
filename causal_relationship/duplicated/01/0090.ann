@@ -1,0 +1,9 @@
+T1	Argument 0 25	手動変速機付車のスピードメータギヤの材質等に不適切
+T2	Argument 32 39	当該ギヤが摩耗
+T3	Argument 47 58	速度計が機能しなくなる
+T4	Connective 31 32	、
+T5	Connective 40 41	、
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	

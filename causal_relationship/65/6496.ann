@@ -1,0 +1,25 @@
+T1	Argument 0 56	大型トラックのブレーキペダルにおいて、当該ペダルのシャフト部を固定するスプリットピン（割りピン）の組付けが不適切
+T2	Connective 57 59	ため
+R2	REASON Arg1:T2 Arg2:T1	
+T4	Connective 98 102	そのため
+T5	Argument 103 117	そのままの状態で使用を続ける
+T6	Connective 117 118	と
+T7	Argument 119 144	ブレーキペダルとプレートの結合部からシャフトがずれ
+T8	Connective 145 146	、
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T9	Argument 146 148	最悪
+T10	Connective 149 151	場合
+R7	REASON Arg1:T8 Arg2:T7	
+T11	Argument 152 158	制動力が低下
+R8	RESULT Arg1:T10 Arg2:T11	
+R9	CONDITION Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T8 Arg2:T11	
+T3	Argument 60 69	フットブレーキ操作
+T12	Connective 69 73	によって
+T13	Argument 73 90	シャフト部からスプリットピンが脱落
+R1	REASON Arg1:T4 Arg2:T13	
+R3	REASON Arg1:T12 Arg2:T3	
+R11	RESULT Arg1:T12 Arg2:T13	
+R12	RESULT Arg1:T2 Arg2:T13	

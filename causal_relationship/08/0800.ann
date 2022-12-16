@@ -1,0 +1,29 @@
+T1	Argument 1 35	灯火装置の灯火スイッチにおいて、可動接点部に塗布したグリスの量が多い
+T2	Connective 40 42	ため
+T3	Argument 43 56	当該グリスが電線内部に侵入
+T4	Connective 57 58	て
+T5	Argument 58 63	被覆が硬化
+T6	Connective 71 75	そのため
+T7	Argument 76 93	方向指示器のスイッチ操作を繰り返す
+T8	Connective 93 94	と
+T9	Argument 95 103	電線の被覆に亀裂
+T10	Connective 106 107	、
+T11	Argument 107 109	最悪
+T12	Connective 110 112	場合
+T13	Argument 113 118	芯線が断線
+T14	Connective 119 120	て
+T15	Argument 121 148	前照灯、車幅灯、尾灯および計器盤照明灯が点灯しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	RESULT Arg1:T6 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	

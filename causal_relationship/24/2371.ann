@@ -1,0 +1,5 @@
+T1	Argument 0 20	前面及び側面ガラスに完成検査合格証を貼付
+T2	Connective 22 24	ため
+T3	Argument 25 44	道路運送車両の保安基準に適合していない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

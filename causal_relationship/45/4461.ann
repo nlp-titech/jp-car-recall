@@ -1,0 +1,30 @@
+T1	Argument 2 37	フロントサスペンションのアッパーアームを取付けているボルトの強度が不足
+T2	Connective 41 43	ため
+T3	Argument 44 53	ボルトに亀裂が入る
+T4	Connective 58 59	、
+T5	Argument 74 80	ボルトが破損
+T6	Connective 81 82	、
+T7	Argument 82 90	走行不能にいたる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 59 73	そのままの状態で使用を続ける
+T9	Connective 73 74	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	
+T14	Argument 99 132	リアサスペンションの板ばねを取付けているボルトの締付けトルクが不足
+T15	Connective 141 142	、
+T16	Argument 157 163	板ばねが外れ
+T17	Connective 163 164	、
+T18	Argument 164 172	走行不能にいたる
+R9	REASON Arg1:T15 Arg2:T14	
+R10	RESULT Arg1:T15 Arg2:T16	
+R11	REASON Arg1:T17 Arg2:T16	
+R12	RESULT Arg1:T17 Arg2:T18	
+T19	Argument 142 156	そのままの状態で使用を続ける
+T20	Connective 156 157	と
+R13	CONDITION Arg1:T20 Arg2:T19	
+R14	RESULT Arg1:T20 Arg2:T16	

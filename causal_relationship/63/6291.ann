@@ -1,0 +1,5 @@
+T1	Argument 19 49	ＥＵ排出ガス規制（ＥＵ６）用のソフトウエアが誤って書き込まれ
+T2	Connective 50 52	ため
+T3	Argument 53 72	排出ガスのＮＯｘ規制値を満足していない
+R1	RESULT Arg1:T2 Arg2:T3	
+R2	REASON Arg1:T2 Arg2:T1	

@@ -1,0 +1,9 @@
+T1	Argument 0 50	塵芥車において、荷台をシャシフレームに固定するマウンティングブラケットと後輪タイヤの隙間確保が不適切
+T2	Connective 51 53	ため
+T3	Argument 54 76	段差乗り上げ時などに、後輪内側のタイヤが接触
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 77 79	損傷
+T5	Connective 76 77	し
+R3	REASON Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T4	

@@ -1,0 +1,21 @@
+T1	Argument 16 43	左右ベルトライントリムにおいて、接着の作業指示が不適切
+T2	Connective 44 46	ため
+T3	Argument 47 53	接着が不十分
+T4	Connective 60 64	そのため
+T5	Argument 65 72	走行時の風圧等
+T6	Connective 72 76	によって
+T7	Argument 76 88	ベルトライントリムが脱落
+T8	Connective 89 90	、
+T9	Argument 90 92	最悪
+T10	Connective 93 95	場合
+T11	Argument 96 104	他の交通を妨げる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T11	
+R9	CONDITION Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	

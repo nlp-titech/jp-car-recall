@@ -1,0 +1,45 @@
+T1	Argument 0 45	車椅子用油圧式リフトを架装した福祉車両において、車両床面位置検知用スイッチの防塵性が不十分
+T2	Argument 49 66	砂塵等の異物がスイッチ周辺部へ付着
+T4	Argument 138 153	当該スイッチ部にオイルが垂れる
+T6	Argument 174 194	当該スイッチ周辺部に砂塵等の異物が噛込み
+T7	Argument 195 202	作動不良となる
+T8	Argument 213 223	リフトが床面まで上昇
+T9	Argument 226 239	自動停止する機能が機能せず
+T10	Argument 240 247	収納動作に移行
+T11	Argument 249 255	リフトが傾き
+T12	Argument 256 266	車室内へ車椅子が転倒
+T13	Connective 255 256	、
+T14	Connective 248 249	、
+T15	Connective 239 240	、
+T16	Connective 225 226	と
+T17	Connective 208 212	そのため
+T18	Connective 194 195	、
+T20	Connective 159 160	、
+T21	Connective 137 138	、
+T22	Connective 46 48	ため
+R1	REASON Arg1:T22 Arg2:T1	
+R2	RESULT Arg1:T22 Arg2:T2	
+R5	REASON Arg1:T20 Arg2:T4	
+R9	REASON Arg1:T18 Arg2:T6	
+R10	RESULT Arg1:T18 Arg2:T7	
+R11	REASON Arg1:T17 Arg2:T7	
+R12	RESULT Arg1:T17 Arg2:T9	
+R13	CONDITION Arg1:T16 Arg2:T8	
+R14	RESULT Arg1:T16 Arg2:T9	
+R15	REASON Arg1:T15 Arg2:T9	
+R16	RESULT Arg1:T15 Arg2:T10	
+R17	REASON Arg1:T14 Arg2:T10	
+R18	RESULT Arg1:T14 Arg2:T11	
+R19	REASON Arg1:T13 Arg2:T11	
+R20	RESULT Arg1:T13 Arg2:T12	
+T24	Argument 108 136	リターンホースが、リフト使用時の屈曲の繰り返しにより損傷
+R21	REASON Arg1:T21 Arg2:T24	
+R22	RESULT Arg1:T21 Arg2:T4	
+R6	RESULT Arg1:T20 Arg2:T5	
+T5	Argument 160 171	垂れたオイルが助長要因
+T19	Connective 173 174	り
+R7	REASON Arg1:T19 Arg2:T5	
+R8	RESULT Arg1:T19 Arg2:T6	
+T3	Connective 73 74	。
+R3	REASON Arg1:T3 Arg2:T2	
+R4	RESULT Arg1:T3 Arg2:T6	

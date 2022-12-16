@@ -1,0 +1,17 @@
+T1	Argument 2 38	発電機のダイオード（半導体）及びＩＣレギュレータ（電圧調整器）に製造不良
+T2	Connective 44 45	、
+T3	Argument 61 74	当該部品が接触不良を起こし
+T4	Argument 75 88	バッテリに充電できなくなり
+T5	Argument 89 95	原動機が停止
+T6	Connective 74 75	て
+T7	Connective 88 89	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T6 Arg2:T3	
+R4	RESULT Arg1:T6 Arg2:T4	
+R5	REASON Arg1:T7 Arg2:T4	
+R6	RESULT Arg1:T7 Arg2:T5	
+T8	Argument 45 59	そのままの状態で使用を続ける
+T9	Connective 59 60	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	

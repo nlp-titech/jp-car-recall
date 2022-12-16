@@ -1,0 +1,25 @@
+T1	Argument 8 49	セカンダリ・ロック用ストライカの取付けボルトにおいて、製造時の締付けトルクが不適切
+T2	Connective 58 60	ため
+T3	Argument 61 71	当該ストライカが外れ
+T4	Connective 75 76	、
+T5	Argument 76 93	セカンダリ・ロックが機能しなくなる
+T6	Connective 102 104	結果
+T7	Argument 105 107	最悪
+T8	Connective 108 110	場合
+T9	Argument 111 136	走行中に何らかの理由でプライマリ・ロックが解除され
+T10	Connective 137 140	場合に
+T11	Argument 153 155	開く
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T11	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T11	
+R9	CONDITION Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T19	Argument 141 152	エンジンフードが走行風
+T20	Connective 152 153	で
+R11	REASON Arg1:T20 Arg2:T19	
+R12	RESULT Arg1:T20 Arg2:T11	

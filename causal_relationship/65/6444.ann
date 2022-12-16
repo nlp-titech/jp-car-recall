@@ -1,0 +1,77 @@
+T1	Argument 2 27	エンジン冷却装置において、冷却水の温度制御が不適切
+T2	Connective 28 30	ため
+T4	Connective 54 55	と
+T5	Argument 56 66	冷却水の温度が急上昇
+R1	RESULT Arg1:T4 Arg2:T5	
+R3	RESULT Arg1:T2 Arg2:T5	
+R4	REASON Arg1:T2 Arg2:T1	
+T6	Connective 74 78	そのため
+T7	Argument 79 88	冷却水の温度の影響
+T8	Connective 88 91	により
+T9	Argument 91 107	シリンダーヘッド部に熱応力が発生
+T10	Connective 108 109	て
+T11	Argument 109 114	亀裂が生じ
+T12	Connective 114 115	、
+T13	Argument 115 131	亀裂部位からエンジンオイルが漏れ
+T14	Connective 131 132	、
+T15	Argument 132 150	漏れたオイルが高温の排気管等にかかり
+T16	Connective 150 151	、
+T17	Argument 151 153	最悪
+T18	Connective 154 156	場合
+T19	Argument 157 162	火災に至る
+R5	RESULT Arg1:T18 Arg2:T19	
+R6	CONDITION Arg1:T18 Arg2:T17	
+R7	RESULT Arg1:T16 Arg2:T19	
+R8	REASON Arg1:T16 Arg2:T15	
+R9	RESULT Arg1:T14 Arg2:T15	
+R10	REASON Arg1:T14 Arg2:T13	
+R11	RESULT Arg1:T12 Arg2:T13	
+R12	REASON Arg1:T12 Arg2:T11	
+R13	RESULT Arg1:T10 Arg2:T11	
+R14	REASON Arg1:T10 Arg2:T9	
+R15	RESULT Arg1:T8 Arg2:T9	
+R16	REASON Arg1:T8 Arg2:T7	
+R17	RESULT Arg1:T6 Arg2:T9	
+R18	REASON Arg1:T6 Arg2:T5	
+T20	Argument 184 224	エキスパンションタンクとエンジンをつなぐホース（ブリーダーホース）の耐熱性が不足
+T21	Connective 228 230	ため
+T23	Connective 261 264	により
+T24	Argument 265 273	当該ホースが劣化
+T25	Connective 274 275	、
+T26	Argument 275 281	亀裂が生じる
+R19	REASON Arg1:T21 Arg2:T20	
+R20	RESULT Arg1:T21 Arg2:T24	
+R22	RESULT Arg1:T23 Arg2:T24	
+R23	REASON Arg1:T25 Arg2:T24	
+R24	RESULT Arg1:T25 Arg2:T26	
+T27	Connective 287 291	そのため
+T28	Argument 292 306	そのままの状態で使用を続ける
+T29	Connective 306 307	と
+T30	Argument 308 320	亀裂部位から冷却水が漏れ
+T31	Connective 320 321	、
+T32	Argument 321 327	警告灯が点灯
+T33	Connective 327 328	、
+T34	Argument 328 330	最悪
+T35	Connective 331 333	場合
+T36	Argument 334 344	オーバーヒートに至る
+R25	REASON Arg1:T27 Arg2:T26	
+R26	RESULT Arg1:T27 Arg2:T30	
+R27	CONDITION Arg1:T29 Arg2:T28	
+R28	RESULT Arg1:T29 Arg2:T30	
+R29	REASON Arg1:T31 Arg2:T30	
+R30	RESULT Arg1:T31 Arg2:T32	
+R31	REASON Arg1:T33 Arg2:T32	
+R32	RESULT Arg1:T33 Arg2:T36	
+R33	CONDITION Arg1:T35 Arg2:T34	
+R34	RESULT Arg1:T35 Arg2:T36	
+T3	Argument 31 37	特定の外気温
+T37	Connective 37 38	で
+T38	Argument 38 54	エンジンを始動後、急発進等を行う
+R2	CONDITION Arg1:T4 Arg2:T38	
+R35	CONDITION Arg1:T37 Arg2:T3	
+R36	RESULT Arg1:T37 Arg2:T5	
+T22	Argument 231 252	特定の条件下（長期間のアイドリング状態等）
+T39	Connective 252 253	の
+R21	CONDITION Arg1:T39 Arg2:T22	
+T40	Argument 253 261	エンジン熱の影響
+R37	RESULT Arg1:T39 Arg2:T40	

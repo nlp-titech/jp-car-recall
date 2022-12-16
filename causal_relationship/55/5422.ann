@@ -1,0 +1,17 @@
+T1	Argument 30 44	遮熱板が取り付けられていない
+T2	Connective 50 54	そのため
+T3	Argument 68 79	隔壁部防音材が熱せられ
+T4	Connective 79 80	、
+T5	Argument 86 91	火災になる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 55 65	エンジンルームの過熱
+T7	Connective 65 68	により
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 80 82	最悪
+T9	Connective 83 85	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

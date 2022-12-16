@@ -1,0 +1,39 @@
+T1	Argument 0 21	エンジンルーム内集合配線の配線経路が不適切
+T2	Connective 22 24	ため
+T3	Argument 25 40	サイドフレームのエッジ部と干渉
+T4	Connective 40 41	し
+T5	Argument 41 49	配線の被覆が損傷
+T6	Connective 57 61	そのため
+T7	Argument 84 91	配線がショート
+T8	Argument 93 100	ヒューズが切れ
+T9	Connective 92 93	、
+T10	Argument 101 109	エンジン始動不能
+T11	Connective 100 101	、
+T12	Argument 110 117	速度計指示不良
+T13	Argument 118 127	後退灯不灯等となる
+T14	Argument 136 145	一部配線がショート
+T15	Connective 147 149	場合
+T16	Argument 151 156	火災となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+R9	REASON Arg1:T11 Arg2:T8	
+R10	RESULT Arg1:T11 Arg2:T10	
+R11	RESULT Arg1:T11 Arg2:T12	
+R12	RESULT Arg1:T11 Arg2:T13	
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T16	
+T17	Argument 62 76	そのままの状態で使用を続ける
+T18	Connective 76 77	と
+T19	Argument 78 80	最悪
+T20	Connective 81 83	場合
+R16	CONDITION Arg1:T18 Arg2:T17	
+R17	CONDITION Arg1:T20 Arg2:T19	
+R18	RESULT Arg1:T18 Arg2:T7	
+R19	RESULT Arg1:T20 Arg2:T7	
+R15	RESULT Arg1:T9 Arg2:T16	

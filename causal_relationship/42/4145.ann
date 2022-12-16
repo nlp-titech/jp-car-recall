@@ -1,0 +1,31 @@
+T1	Argument 12 34	駆動力取出し装置（ＰＴＯ）の組付作業が不適切
+T2	Connective 35 37	ため
+T3	Argument 38 81	シャフト部の表面に防錆対策用テープの接着成分が残ったままベルト駆動用プーリーが組み付け
+T4	Connective 90 94	そのため
+T5	Argument 95 119	ベルト駆動用プーリーの取付ボルトの締付け力が不足
+T6	Connective 120 121	、
+T7	Argument 137 144	取付ボルトが緩
+T8	Connective 144 145	み
+T9	Argument 145 150	異音が発生
+T10	Argument 158 168	駆動用プーリーが脱落
+T11	Connective 169 170	て
+T12	Argument 171 181	他の交通の妨げになる
+R1	REASON Arg1:T8 Arg2:T7	
+R2	RESULT Arg1:T8 Arg2:T9	
+R3	RESULT Arg1:T8 Arg2:T10	
+R4	REASON Arg1:T11 Arg2:T10	
+R5	RESULT Arg1:T11 Arg2:T12	
+T13	Argument 152 154	最悪
+T14	Connective 155 157	場合
+R6	CONDITION Arg1:T14 Arg2:T13	
+R7	RESULT Arg1:T14 Arg2:T10	
+R8	REASON Arg1:T4 Arg2:T3	
+R9	RESULT Arg1:T4 Arg2:T5	
+R10	REASON Arg1:T6 Arg2:T5	
+R11	RESULT Arg1:T6 Arg2:T7	
+R12	REASON Arg1:T2 Arg2:T1	
+R13	RESULT Arg1:T2 Arg2:T3	
+T22	Argument 121 135	そのままの状態で使用を続ける
+T23	Connective 135 136	と
+R14	CONDITION Arg1:T23 Arg2:T22	
+R15	RESULT Arg1:T23 Arg2:T7	

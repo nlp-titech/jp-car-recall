@@ -1,0 +1,19 @@
+T1	Argument 1 37	かじ取装置のドラッグアームシャフトの前と後の取付部のボルトの締付力の不足
+T2	Argument 40 51	ネジロック液の塗布不良
+T3	Connective 57 59	ため
+R1	REASON Arg1:T3 Arg2:T1	
+R2	REASON Arg1:T3 Arg2:T2	
+T4	Argument 60 70	取付部のボルトが緩む
+T5	Connective 76 80	そのため
+T6	Argument 81 91	そのまま使用を続ける
+T7	Connective 91 92	と
+R3	CONDITION Arg1:T7 Arg2:T6	
+T8	Argument 93 103	取付部のボルトが外れ
+T9	Connective 103 104	、
+T10	Argument 104 117	ハンドル操作ができなくなる
+R4	RESULT Arg1:T3 Arg2:T4	
+R5	REASON Arg1:T5 Arg2:T4	
+R6	RESULT Arg1:T5 Arg2:T8	
+R7	RESULT Arg1:T7 Arg2:T8	
+R8	REASON Arg1:T9 Arg2:T8	
+R9	RESULT Arg1:T9 Arg2:T10	

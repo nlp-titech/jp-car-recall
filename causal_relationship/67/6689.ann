@@ -1,0 +1,9 @@
+T1	Argument 0 52	グローブボックス内に非常信号用具を取り付けた車両において、コーションラベルの記載内容に関する確認が不十分
+T2	Connective 53 55	ため
+T3	Argument 56 80	非常信号用具の格納場所に係わる記載がされておらず
+T4	Connective 80 81	、
+T5	Argument 81 99	道路運送車両法の保安基準に適合しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

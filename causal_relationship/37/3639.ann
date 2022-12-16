@@ -1,0 +1,19 @@
+T1	Argument 22 37	燃圧センサの締結用工具が不適切
+T2	Connective 38 40	ため
+T4	Connective 76 80	そのため
+T5	Argument 81 90	締結部がシール不良
+R1	RESULT Arg1:T4 Arg2:T5	
+R4	REASON Arg1:T2 Arg2:T1	
+T7	Argument 101 107	燃料が漏れる
+T8	Connective 90 93	となり
+R5	REASON Arg1:T8 Arg2:T5	
+R7	RESULT Arg1:T8 Arg2:T7	
+T6	Argument 93 98	燃料臭がし
+R6	RESULT Arg1:T8 Arg2:T6	
+T3	Argument 47 59	当該工具が周辺部品と干渉
+T9	Connective 59 60	し
+T10	Argument 60 66	締結力が不足
+R2	RESULT Arg1:T9 Arg2:T10	
+R3	REASON Arg1:T9 Arg2:T3	
+R8	RESULT Arg1:T2 Arg2:T3	
+R9	REASON Arg1:T4 Arg2:T10	

@@ -1,0 +1,39 @@
+T1	Argument 0 29	前輪のブレーキにおいて、ブレーキホースのレイアウトが不適切
+T2	Argument 33 43	ハンドルを一杯に切っ
+T3	Argument 46 55	曲げＲが小さくなり
+T4	Argument 58 62	繰り返し
+T5	Argument 63 79	ブレーキホースの内部に亀裂が発生
+T6	Argument 92 106	そのままの状態で使用を続ける
+T7	Argument 107 113	亀裂が広がり
+T8	Argument 114 122	ブレーキ液が漏れ
+T9	Argument 123 129	警告灯が点灯
+T10	Argument 131 133	最悪
+T11	Argument 137 143	制動力が低下
+T12	Connective 30 32	ため
+T13	Connective 44 45	際
+T14	Connective 55 56	、
+T15	Connective 62 63	で
+T16	Connective 87 91	そのため
+T17	Connective 106 107	と
+T18	Connective 113 114	、
+T19	Connective 122 123	て
+T21	Connective 134 136	場合
+R1	REASON Arg1:T12 Arg2:T1	
+R2	RESULT Arg1:T12 Arg2:T3	
+R3	CONDITION Arg1:T13 Arg2:T2	
+R4	RESULT Arg1:T13 Arg2:T3	
+R5	REASON Arg1:T14 Arg2:T3	
+R6	RESULT Arg1:T14 Arg2:T5	
+R7	REASON Arg1:T15 Arg2:T4	
+R8	RESULT Arg1:T15 Arg2:T5	
+R9	REASON Arg1:T16 Arg2:T5	
+R10	RESULT Arg1:T16 Arg2:T7	
+R11	CONDITION Arg1:T17 Arg2:T6	
+R12	RESULT Arg1:T17 Arg2:T7	
+R13	REASON Arg1:T18 Arg2:T7	
+R14	RESULT Arg1:T18 Arg2:T8	
+R15	REASON Arg1:T19 Arg2:T8	
+R16	RESULT Arg1:T19 Arg2:T9	
+R19	CONDITION Arg1:T21 Arg2:T10	
+R20	RESULT Arg1:T21 Arg2:T11	
+R17	RESULT Arg1:T19 Arg2:T11	

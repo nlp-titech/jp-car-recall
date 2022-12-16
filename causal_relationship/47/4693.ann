@@ -1,0 +1,21 @@
+T1	Argument 5 43	ブレーキブースターにおいて、バキュームホースを接続するコネクタの強度が不適切
+T2	Connective 44 46	ため
+T3	Argument 63 75	当該コネクタに亀裂が発生
+T4	Connective 76 77	、
+T5	Argument 83 88	負圧が漏れ
+T6	Connective 88 89	て
+T7	Argument 89 95	制動力が低下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 47 61	そのままの状態で使用を続ける
+T9	Connective 61 62	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 77 79	最悪
+T11	Connective 80 82	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	

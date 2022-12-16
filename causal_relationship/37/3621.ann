@@ -1,0 +1,29 @@
+T2	Connective 45 47	ため
+T3	Argument 48 57	グリース量が不足し
+T4	Connective 66 70	そのため
+T5	Argument 71 90	端子摺動部から出る摩耗粉と水分等の浸入
+T6	Connective 90 93	により
+T7	Argument 93 102	短絡回路が形成され
+T8	Connective 102 103	、
+T9	Argument 103 108	端子が発熱
+T10	Connective 130 131	、
+T11	Argument 131 133	最悪
+T12	Connective 134 136	場合
+T13	Argument 137 142	火災に至る
+R1	RESULT Arg1:T12 Arg2:T13	
+R2	CONDITION Arg1:T12 Arg2:T11	
+R3	RESULT Arg1:T10 Arg2:T13	
+R5	RESULT Arg1:T8 Arg2:T9	
+R6	REASON Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T7	
+R8	REASON Arg1:T6 Arg2:T5	
+R9	RESULT Arg1:T4 Arg2:T5	
+R10	REASON Arg1:T4 Arg2:T3	
+R11	RESULT Arg1:T2 Arg2:T3	
+T18	Argument 110 129	当該スイッチおよび周辺の樹脂部品が焼損
+T19	Connective 109 110	て
+R13	REASON Arg1:T19 Arg2:T9	
+R14	RESULT Arg1:T19 Arg2:T18	
+R4	REASON Arg1:T10 Arg2:T18	
+T1	Argument 7 44	パワーウィンドウスイッチにおいて、スイッチ潤滑用グリースの塗布方法が不適切
+R12	REASON Arg1:T2 Arg2:T1	

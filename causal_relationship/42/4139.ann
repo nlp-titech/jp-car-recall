@@ -1,0 +1,21 @@
+T1	Argument 0 26	樹脂製燃料タンクにおいて、溶着設備の条件設定が不適切
+T2	Connective 27 29	ため
+T3	Argument 30 56	燃料タンクに対してインレットパイプが傾いた状態で溶着
+T4	Connective 58 59	、
+T5	Argument 59 73	接合面が部分的に溶け込み不足
+T6	Connective 85 89	そのため
+T7	Argument 90 99	当該接合面がはがれ
+T8	Argument 110 116	燃料が漏れる
+T9	Connective 100 101	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+T10	Argument 101 108	給油時や満タン
+T11	Connective 108 110	時に
+R9	RESULT Arg1:T11 Arg2:T8	
+R10	CONDITION Arg1:T11 Arg2:T10	

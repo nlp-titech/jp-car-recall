@@ -1,0 +1,21 @@
+T1	Argument 0 31	駐車ブレーキと変速機を締結しているナットの取り付け工程が不適切
+T2	Connective 32 34	ため
+T3	Argument 35 47	ナットの締め付けが不十分
+T4	Connective 54 58	そのため
+T5	Argument 59 67	当該ナットが緩ん
+T6	Connective 67 68	で
+T7	Argument 68 82	変速機の出力軸部に引っ掛かり
+T8	Connective 82 83	、
+T9	Argument 89 96	走行不能に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 83 85	最悪
+T11	Connective 86 88	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T9	

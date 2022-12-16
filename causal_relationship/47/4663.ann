@@ -1,0 +1,18 @@
+T1	Argument 5 34	リヤショックアブソーバにおいて、車体への取付部の強度が不足
+T2	Connective 38 40	ため
+T3	Argument 57 68	当該取付部に亀裂が生じ
+T4	Argument 69 71	破損
+T6	Argument 73 82	走行安定性を損なう
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+T7	Argument 41 55	そのままの状態で使用を続ける
+T8	Connective 55 56	と
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T3	
+T9	Connective 72 73	て
+R4	REASON Arg1:T9 Arg2:T4	
+R5	RESULT Arg1:T9 Arg2:T6	
+T5	Connective 68 69	、
+R8	RESULT Arg1:T5 Arg2:T4	
+R9	REASON Arg1:T5 Arg2:T3	

@@ -1,0 +1,39 @@
+T2	Connective 110 112	ため
+T3	Argument 113 151	アキュームレーター内の油圧が上昇した場合においても当該バルブが円滑に作動せず
+T4	Connective 151 152	、
+T5	Argument 152 164	油圧が適切に制御されない
+T6	Connective 170 174	そのため
+T7	Argument 212 224	アキュームレーターが外れ
+T8	Connective 224 225	て
+T9	Argument 225 233	油圧の制御が不能
+T10	Connective 236 237	、
+T11	Argument 243 249	制動力が低下
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+T12	Argument 191 207	アキュームレーター内の油圧が上昇
+T13	Connective 209 211	場合
+R10	CONDITION Arg1:T13 Arg2:T12	
+R11	RESULT Arg1:T13 Arg2:T7	
+T14	Argument 175 189	そのままの状態で使用を続ける
+T15	Connective 189 190	と
+R12	CONDITION Arg1:T15 Arg2:T14	
+R13	RESULT Arg1:T15 Arg2:T7	
+R14	RESULT Arg1:T10 Arg2:T11	
+T16	Argument 237 239	最悪
+T17	Connective 240 242	場合
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T11	
+T18	Argument 261 286	油圧は制動装置の他にパワーステアリング装置にも供給
+T19	Connective 291 293	ため
+R17	REASON Arg1:T19 Arg2:T18	
+T20	Argument 294 305	ハンドルの操舵力が増大
+R18	RESULT Arg1:T19 Arg2:T20	
+R19	RESULT Arg1:T10 Arg2:T20	
+T1	Argument 84 109	油圧制御バルブにおいて、当該バルブ表面の加工が不良
+R1	REASON Arg1:T2 Arg2:T1	

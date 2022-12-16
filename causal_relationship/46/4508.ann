@@ -1,0 +1,15 @@
+T1	Argument 10 28	副消音器後部の排気管接合部に溶接不良
+T2	Connective 34 36	ため
+T3	Argument 53 65	当該溶接部位に亀裂が発生
+T4	Connective 66 67	、
+T5	Argument 67 79	そこから排気ガスが漏れる
+T6	Argument 84 89	騒音が増大
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T6	
+T7	Argument 37 51	そのままの状態で使用を続ける
+T8	Connective 51 52	と
+R7	RESULT Arg1:T8 Arg2:T3	
+R9	CONDITION Arg1:T8 Arg2:T7	

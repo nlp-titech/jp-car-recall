@@ -1,0 +1,21 @@
+T1	Argument 0 56	フロントワイパーにおいて、ワイパーモーターの駆動力を左右のワイパーアームに伝達するリンケージロッドの設計が不適切
+T2	Connective 57 59	ため
+T3	Argument 60 65	強度が不足
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 92 103	リンケージロッドが変形
+T5	Connective 104 105	、
+T6	Connective 75 79	そのため
+T7	Argument 105 117	ワイパーモーターから外れ
+T8	Connective 117 118	、
+R3	REASON Arg1:T6 Arg2:T3	
+R4	RESULT Arg1:T6 Arg2:T4	
+R5	REASON Arg1:T5 Arg2:T4	
+R6	RESULT Arg1:T5 Arg2:T7	
+T9	Argument 118 134	フロントワイパーが作動しなくなる
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 80 90	フロントワイパー使用
+T11	Connective 90 91	中
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T4	

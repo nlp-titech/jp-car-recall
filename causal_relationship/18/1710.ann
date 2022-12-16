@@ -1,0 +1,5 @@
+T1	Argument 0 23	自動車の前面または後面に備える方向指示器が故障
+T2	Connective 25 27	場合
+T3	Argument 29 48	運転者席の作動状態表示装置が作動しない
+R1	CONDITION Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

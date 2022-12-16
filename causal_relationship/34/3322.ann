@@ -1,0 +1,25 @@
+T1	Argument 0 25	スペアタイヤキャリアを固定するフックの溶接が不適切
+T2	Connective 26 28	ため
+T3	Argument 29 38	当該溶接部が剥がれ
+T4	Connective 38 39	、
+T5	Argument 39 45	フックが脱落
+T6	Connective 53 57	そのため
+T7	Argument 58 71	スペアタイヤキャリアが傾き
+T8	Connective 71 72	、
+T9	Argument 72 74	最悪
+T10	Connective 75 77	場合
+T11	Argument 78 91	走行中にスペアタイヤが脱落
+T12	Connective 92 93	、
+T13	Argument 93 103	他の交通の妨げとなる
+R1	RESULT Arg1:T12 Arg2:T13	
+R2	REASON Arg1:T12 Arg2:T11	
+R3	RESULT Arg1:T10 Arg2:T11	
+R4	CONDITION Arg1:T10 Arg2:T9	
+R5	RESULT Arg1:T8 Arg2:T11	
+R7	RESULT Arg1:T6 Arg2:T7	
+R8	REASON Arg1:T6 Arg2:T5	
+R9	RESULT Arg1:T4 Arg2:T5	
+R10	REASON Arg1:T4 Arg2:T3	
+R11	RESULT Arg1:T2 Arg2:T3	
+R12	REASON Arg1:T2 Arg2:T1	
+R6	REASON Arg1:T8 Arg2:T7	

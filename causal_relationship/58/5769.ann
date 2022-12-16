@@ -1,0 +1,33 @@
+T1	Argument 0 38	フロントフェンダー固定用ボルトにおいて、当該ボルトのねじ部の表面処理が不適切
+T2	Connective 39 41	ため
+T3	Argument 42 58	定期点検整備等で取り外し再度使用
+T4	Connective 60 61	と
+T5	Argument 61 66	走行振動等
+T6	Connective 66 69	により
+T7	Argument 69 74	緩んでくる
+T8	Connective 80 84	そのため
+T9	Argument 85 99	そのままの状態で使用を続ける
+T10	Connective 99 100	と
+T11	Argument 101 126	当該ボルトの上端が前輪タイヤのサイドウォールに接触
+T12	Connective 127 128	、
+T13	Argument 128 145	前輪タイヤを損傷させ空気漏れを起こ
+T14	Connective 146 147	、
+T15	Argument 147 149	最悪
+T16	Connective 150 152	場合
+T17	Argument 153 162	バランスを失い転倒
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T7	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T11	
+R9	CONDITION Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T17	
+R15	CONDITION Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T17	

@@ -1,0 +1,27 @@
+T1	Argument 0 64	動力伝達装置において、前輪差動機のベベルピニオンのベアリングを締め付けているロックナットの締め付け力及び回り止めのカシメに不適切
+T2	Argument 87 96	ロックナットが緩み
+T3	Argument 96 101	異音が発生
+T4	Argument 109 119	ベベルピニオンが破損
+T5	Argument 121 136	前輪側に制動力が伝わらなくなり
+T6	Argument 137 143	制動力が低下
+T7	Connective 70 71	、
+T8	Connective 95 96	み
+T10	Connective 120 121	て
+T11	Connective 136 137	、
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T5	
+R9	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	
+T12	Argument 71 85	そのままの状態で使用を続ける
+T13	Connective 85 86	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T2	
+T14	Argument 103 105	最悪
+T15	Connective 106 108	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T4	
+R5	RESULT Arg1:T8 Arg2:T4	

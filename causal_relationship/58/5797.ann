@@ -1,0 +1,13 @@
+T1	Argument 0 25	左右の燃料タンク接続部において、製造時に異物が混入
+T2	Connective 33 37	そのため
+T3	Argument 38 52	そのままの状態で使用を続ける
+T4	Connective 52 53	と
+R1	REASON Arg1:T2 Arg2:T1	
+T5	Argument 54 63	接続部に亀裂が発生
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 64 65	、
+T7	Argument 65 71	燃料が漏れる
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

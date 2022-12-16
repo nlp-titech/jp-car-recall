@@ -1,0 +1,56 @@
+T1	Argument 12 42	ベルト駆動用プーリの固定ナットの締付方法とトルク設定が不適切
+T2	Connective 43 45	ため
+T3	Argument 46 58	必要な締結力が得られない
+T4	Connective 64 68	そのため
+T5	Argument 69 79	走行中にナットが緩み
+T6	Connective 79 80	、
+T7	Argument 80 85	異音が発生
+T9	Argument 87 101	そのままの状態で使用を続ける
+T10	Connective 101 102	と
+T11	Argument 103 105	最悪
+T12	Connective 106 108	場合
+T13	Argument 109 122	駆動力を伝えることができず
+T14	Connective 121 122	ず
+T15	Argument 122 129	走行不能に至る
+T16	Argument 137 165	イグニッションスイッチにおいて、接点板の製造工程が不適切
+T17	Connective 166 168	ため
+T18	Argument 169 177	通電時の温度上昇
+T19	Connective 177 180	により
+T20	Argument 181 192	はんだフラックスが軟化
+T21	Connective 193 194	て
+T22	Argument 194 202	接点表面に広がる
+T23	Connective 208 212	そのため
+T24	Argument 213 223	そのまま使用を続ける
+T25	Connective 223 224	と
+T26	Argument 224 243	イグニッションスイッチが接触不良となり
+T27	Connective 243 244	、
+T28	Argument 244 246	最悪
+T29	Connective 247 249	場合
+T30	Argument 250 261	走行中にエンジンが停止
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R8	CONDITION Arg1:T10 Arg2:T9	
+R9	CONDITION Arg1:T12 Arg2:T11	
+R10	RESULT Arg1:T12 Arg2:T13	
+R11	RESULT Arg1:T10 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R15	REASON Arg1:T17 Arg2:T16	
+R16	REASON Arg1:T19 Arg2:T18	
+R17	RESULT Arg1:T19 Arg2:T20	
+R18	RESULT Arg1:T17 Arg2:T20	
+R19	REASON Arg1:T21 Arg2:T20	
+R20	RESULT Arg1:T21 Arg2:T22	
+R21	REASON Arg1:T23 Arg2:T22	
+R22	CONDITION Arg1:T25 Arg2:T24	
+R23	RESULT Arg1:T25 Arg2:T26	
+R24	RESULT Arg1:T23 Arg2:T26	
+R25	REASON Arg1:T27 Arg2:T26	
+R26	CONDITION Arg1:T29 Arg2:T28	
+R27	RESULT Arg1:T29 Arg2:T30	
+R28	RESULT Arg1:T27 Arg2:T30	
+R7	RESULT Arg1:T6 Arg2:T13	

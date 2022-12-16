@@ -1,0 +1,33 @@
+T1	Argument 0 28	パワステアリングユニットへの油圧供給ホースの固定が不適切
+T2	Connective 29 31	ため
+T3	Argument 32 39	走行中の振動等
+T4	Connective 39 42	により
+T5	Argument 43 54	当該ホースが車体と干渉
+T6	Connective 62 66	そのため
+T7	Argument 67 77	そのまま使用を続ける
+T8	Connective 77 78	と
+T9	Argument 79 87	当該ホースが擦れ
+T10	Connective 87 88	て
+T12	Connective 98 99	、
+T13	Argument 99 101	最悪
+T14	Connective 102 104	場合
+T15	Argument 105 118	ハンドル操作ができなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	RESULT Arg1:T6 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R11	CONDITION Arg1:T14 Arg2:T13	
+R12	RESULT Arg1:T14 Arg2:T15	
+R14	RESULT Arg1:T12 Arg2:T15	
+T17	Argument 88 92	穴が開き
+R10	RESULT Arg1:T10 Arg2:T17	
+R13	REASON Arg1:T12 Arg2:T11	
+T11	Argument 92 98	オイルが洩れ
+T16	Connective 91 92	き
+R15	REASON Arg1:T16 Arg2:T17	
+R16	RESULT Arg1:T16 Arg2:T11	

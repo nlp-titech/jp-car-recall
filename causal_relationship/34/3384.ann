@@ -1,0 +1,29 @@
+T1	Argument 0 30	制動装置の空圧回路において、ホース取付接手の工程管理が不適切
+T2	Connective 31 33	ため
+T3	Argument 34 50	不良品を取付けた車両を誤って出荷
+T4	Connective 57 61	そのため
+T5	Argument 62 76	そのままの状態で使用を続ける
+T6	Connective 76 77	と
+T7	Argument 85 93	接手に錆等が発生
+T8	Connective 94 95	、
+T9	Argument 95 107	空圧回路上のバルブに付着
+T10	Connective 114 115	、
+T11	Argument 115 117	最悪
+T12	Connective 118 120	場合
+T13	Argument 121 128	エア漏れが発生
+R1	RESULT Arg1:T12 Arg2:T13	
+R2	CONDITION Arg1:T12 Arg2:T11	
+R3	RESULT Arg1:T10 Arg2:T13	
+R4	REASON Arg1:T10 Arg2:T9	
+R5	RESULT Arg1:T8 Arg2:T9	
+R6	REASON Arg1:T8 Arg2:T7	
+R8	CONDITION Arg1:T6 Arg2:T5	
+R9	RESULT Arg1:T4 Arg2:T7	
+R10	REASON Arg1:T4 Arg2:T3	
+R11	RESULT Arg1:T2 Arg2:T3	
+R12	REASON Arg1:T2 Arg2:T1	
+T14	Argument 129 135	制動力が低下
+T15	Connective 128 129	し
+R13	REASON Arg1:T15 Arg2:T13	
+R14	RESULT Arg1:T15 Arg2:T14	
+R7	RESULT Arg1:T6 Arg2:T7	

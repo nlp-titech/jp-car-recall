@@ -1,0 +1,21 @@
+T1	Argument 0 32	排気ガスの差圧センサ製作時において、センサ出力の公差設定が不適切
+T2	Connective 33 35	ため
+T3	Argument 44 64	エンジンコントロールユニットが故障を検出
+T4	Connective 72 76	そのため
+T5	Argument 77 92	エンジン警告灯（ＭＩＬ）が点灯
+T6	Connective 93 94	、
+T7	Argument 94 126	排気ガス浄化装置（ＤＰＦ）及び排気ガス再循環装置（ＥＧＲ）が停止
+T8	Connective 127 128	て
+T9	Argument 129 148	保安基準第３１条の基準に適合しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 36 40	使用過程
+T11	Connective 40 44	において
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	

@@ -1,0 +1,37 @@
+T1	Argument 0 44	ハイブリッド車において、電圧変換装置（ＤＣ－ＤＣコンバータ）の金属製の保護蓋の強度が不足
+T2	Argument 51 71	後部シートの背もたれに乗員の荷重がかかる
+T3	Argument 72 79	保護蓋がたわみ
+T4	Argument 80 102	保護蓋と電気配線端子の絶縁ゴムキャップが干渉
+T5	Argument 127 138	絶縁ゴムキャップが損傷
+T6	Argument 146 159	電気配線端子と保護蓋が短絡
+T7	Argument 167 177	メインヒューズが切れ
+T8	Argument 178 196	エンジンが停止し、再始動できなくなる
+T9	Connective 48 50	ため
+T10	Connective 71 72	と
+T11	Connective 79 80	、
+T12	Connective 110 114	そのため
+T13	Connective 139 140	、
+T14	Connective 177 178	て
+R1	REASON Arg1:T14 Arg2:T7	
+R2	RESULT Arg1:T14 Arg2:T8	
+T15	Connective 166 167	、
+R3	REASON Arg1:T15 Arg2:T6	
+R4	RESULT Arg1:T15 Arg2:T7	
+R5	REASON Arg1:T13 Arg2:T5	
+R6	RESULT Arg1:T13 Arg2:T6	
+R7	RESULT Arg1:T12 Arg2:T5	
+R8	REASON Arg1:T12 Arg2:T4	
+R9	REASON Arg1:T11 Arg2:T3	
+R10	RESULT Arg1:T11 Arg2:T4	
+R11	CONDITION Arg1:T10 Arg2:T2	
+R12	RESULT Arg1:T10 Arg2:T3	
+R13	REASON Arg1:T9 Arg2:T1	
+R14	RESULT Arg1:T9 Arg2:T2	
+T16	Argument 116 125	のまま使用を続ける
+T17	Connective 125 126	と
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T5	
+T18	Argument 140 142	最悪
+T19	Connective 143 145	場合
+R17	CONDITION Arg1:T19 Arg2:T18	
+R18	RESULT Arg1:T19 Arg2:T6	

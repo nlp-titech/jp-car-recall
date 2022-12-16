@@ -1,0 +1,24 @@
+T1	Argument 0 37	排気管の一部（運転者用左側フットレスト上方）に遮熱板が取り付けられていない
+T2	Connective 37 39	ため
+T3	Argument 56 69	運転者の足が排気管に触れる
+T4	Connective 75 79	そのため
+T5	Argument 88 93	衣服が焦げ
+T7	Argument 100 106	運転者が火傷
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T7	
+T6	Argument 80 85	排気管の熱
+T8	Connective 85 88	により
+R6	REASON Arg1:T8 Arg2:T6	
+R7	RESULT Arg1:T8 Arg2:T5	
+R8	RESULT Arg1:T8 Arg2:T7	
+T9	Argument 40 51	運転者が後方へ体重移動
+T10	Connective 53 55	場合
+R9	CONDITION Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T3	
+T11	Argument 94 96	最悪
+T12	Connective 97 99	場合
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T7	

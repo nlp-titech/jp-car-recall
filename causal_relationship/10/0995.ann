@@ -1,0 +1,42 @@
+T1	Argument 0 22	リヤハブのフランジ付け根部の強度が十分でない
+T2	Connective 22 24	ため
+T3	Argument 25 39	旋回頻度の高い走行を繰り返し
+T4	Connective 40 42	場合
+T5	Argument 45 55	当該部分に亀裂が発生
+T7	Connective 100 101	と
+T8	Argument 101 106	応力が集中
+T9	Connective 107 108	、
+T10	Argument 108 119	この亀裂の発生が早まる
+T11	Connective 126 130	そのため
+T12	Argument 131 145	そのままの状態で使用を続ける
+T13	Connective 145 146	と
+T14	Argument 146 151	亀裂が進行
+T15	Argument 153 155	最悪
+T16	Connective 156 158	場合
+T17	Argument 159 166	当該部分が破断
+T18	Connective 167 168	て
+T19	Argument 169 176	走行不能となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T8	
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T10	
+R9	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T14	
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T14	
+T20	Connective 152 153	、
+R13	REASON Arg1:T20 Arg2:T14	
+R14	RESULT Arg1:T20 Arg2:T17	
+R15	CONDITION Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T17	
+R17	REASON Arg1:T18 Arg2:T17	
+R18	RESULT Arg1:T18 Arg2:T19	
+R19	REASON Arg1:T11 Arg2:T5	
+T6	Argument 66 100	初期の車両において、フランジ付け根部付近の加工不良などの要因が重なる
+R5	REASON Arg1:T7 Arg2:T6	
+T21	Connective 62 63	。
+R20	REASON Arg1:T21 Arg2:T5	
+R21	RESULT Arg1:T21 Arg2:T10	

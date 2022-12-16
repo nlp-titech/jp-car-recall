@@ -1,0 +1,25 @@
+T1	Argument 0 58	小型トラックの手動変速機において、変速機がバックギヤに入っていることを検知する後退灯スイッチのハーネスの配索が不適切
+T2	Connective 59 61	ため
+T3	Argument 62 77	ハーネスの固定ブラケットの振動
+T4	Connective 77 80	により
+T5	Argument 80 90	ハーネスが折れ曲がり
+T6	Connective 90 91	、
+T7	Argument 91 96	被覆が損傷
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Connective 104 108	そのため
+T9	Argument 109 124	そのまままの状態で使用を続ける
+T10	Connective 134 135	、
+T11	Argument 135 166	バックギヤに入っているのにもかかわらず、後退灯が点灯しなくなる
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T13	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Connective 124 125	と
+T13	Argument 126 133	ハーネスが断線
+R9	CONDITION Arg1:T12 Arg2:T9	
+R11	RESULT Arg1:T12 Arg2:T13	
+R12	REASON Arg1:T10 Arg2:T13	

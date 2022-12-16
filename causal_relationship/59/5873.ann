@@ -1,0 +1,29 @@
+T1	Argument 13 42	ボルテージレギュレータ（電圧調整器）において、冷却が不十分
+T2	Connective 43 45	場合
+T3	Argument 66 69	熱影響
+T4	Connective 69 72	により
+T5	Argument 74 84	性能が低下または喪失
+T7	Connective 92 96	そのため
+T8	Argument 97 111	バッテリーに充電されなくなり
+T9	Connective 111 112	、
+T10	Argument 112 114	最悪
+T11	Connective 115 117	場合
+T12	Argument 118 127	走行中原動機が停止
+R1	CONDITION Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R4	REASON Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T4 Arg2:T5	
+R8	REASON Arg1:T7 Arg2:T5	
+R9	RESULT Arg1:T7 Arg2:T8	
+R10	REASON Arg1:T9 Arg2:T8	
+R11	RESULT Arg1:T9 Arg2:T12	
+R12	CONDITION Arg1:T11 Arg2:T10	
+R13	RESULT Arg1:T11 Arg2:T12	
+T6	Argument 46 61	外気温が高く、低速走行している
+T13	Connective 61 64	場合等
+R3	CONDITION Arg1:T13 Arg2:T6	
+R6	RESULT Arg1:T13 Arg2:T5	
+T14	Connective 128 129	、
+R7	REASON Arg1:T14 Arg2:T12	
+T15	Argument 129 136	再始動できない
+R14	RESULT Arg1:T14 Arg2:T15	

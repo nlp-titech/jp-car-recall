@@ -1,0 +1,21 @@
+T1	Argument 0 27	かじ取装置のリンケージ中間アームブラケットの強度が不足
+T2	Connective 37 41	そのため
+T3	Argument 53 66	当該ブラケットに亀裂が発生
+T4	Argument 74 82	ブラケットが破損
+T5	Argument 84 97	ハンドル操作ができなくなる
+T6	Connective 83 84	て
+T7	Connective 67 68	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T7 Arg2:T3	
+R4	RESULT Arg1:T7 Arg2:T4	
+R5	REASON Arg1:T6 Arg2:T4	
+R6	RESULT Arg1:T6 Arg2:T5	
+T8	Argument 42 52	そのまま使用を続ける
+T9	Connective 52 53	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 68 70	最悪
+T11	Connective 71 73	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T4	

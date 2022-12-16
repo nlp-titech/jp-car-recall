@@ -1,0 +1,25 @@
+T1	Argument 23 40	ファイナルドライブの組付けが不適切
+T2	Connective 41 43	ため
+T3	Argument 44 69	ファイナルドライブ固定用ボルトが取付けられていない
+T4	Connective 75 79	そのため
+T5	Argument 88 108	アクスルとファイナルドライブの嵌合が緩み
+T6	Connective 108 109	、
+T7	Argument 115 139	ファイナルドライブ及びホイールがアクスルから脱落
+T8	Connective 140 141	、
+T9	Argument 141 148	走行不能となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 80 85	走行振動等
+T11	Connective 85 88	により
+R9	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	
+T12	Argument 109 111	最悪
+T13	Connective 112 114	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T7	

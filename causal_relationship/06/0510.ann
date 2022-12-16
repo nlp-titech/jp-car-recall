@@ -1,0 +1,25 @@
+T1	Argument 0 51	燃料装置において、サプライポンプとコモンレール間の燃料チューブを固定するチューブサポートの形状が不適切
+T2	Argument 55 70	前側燃料チューブの固定が不充分
+T3	Argument 86 103	前側燃料チューブ根元部に応力が発生
+T4	Argument 121 130	当該部に亀裂が発生
+T5	Argument 132 138	燃料が漏れる
+T6	Connective 52 54	ため
+T7	Connective 76 77	、
+T8	Connective 104 105	、
+T9	Connective 131 132	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Connective 83 86	により
+T11	Argument 77 83	原動機の振動
+R9	REASON Arg1:T10 Arg2:T11	
+R10	RESULT Arg1:T10 Arg2:T3	
+T12	Argument 105 119	そのままの状態で使用を続ける
+T13	Connective 119 120	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T4	

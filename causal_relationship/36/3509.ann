@@ -1,0 +1,17 @@
+T1	Argument 0 30	走行用前照灯において、バルブの固定用スプリングの形状が不適切
+T2	Connective 31 33	ため
+T3	Argument 45 62	当該スプリングがバックカバーに干渉
+T4	Connective 65 69	そのため
+T5	Argument 70 82	バルブが正常に固定されず
+T6	Connective 82 83	、
+T7	Argument 83 110	走行用前照灯の照射方向が、保安基準第３２条に適合しない
+R1	RESULT Arg1:T6 Arg2:T7	
+R2	REASON Arg1:T6 Arg2:T5	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	REASON Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T2 Arg2:T3	
+R6	REASON Arg1:T2 Arg2:T1	
+T8	Argument 34 43	走行用前照灯の製造
+T9	Connective 43 44	時
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	

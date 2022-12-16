@@ -1,0 +1,13 @@
+T1	Argument 0 25	左右の後写鏡において、ミラーの取り付け状態が不適切
+T2	Connective 32 36	そのため
+T3	Argument 37 51	そのままの状態で使用を続ける
+T4	Connective 51 52	と
+T5	Argument 53 64	後写鏡からミラーが脱落
+T6	Connective 65 66	、
+T7	Argument 66 82	後方の交通状況を確認できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

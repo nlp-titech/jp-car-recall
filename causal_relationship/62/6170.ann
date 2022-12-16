@@ -1,0 +1,15 @@
+T1	Argument 18 32	加速度センサーの製造が不適切
+T2	Connective 33 35	ため
+T3	Argument 36 40	自己診断
+T4	Connective 40 43	により
+T5	Argument 43 55	当該センサーの異常を検知
+T6	Connective 63 67	そのため
+T7	Argument 68 79	エアバッグ警告灯が点灯
+T8	Argument 86 121	フロントエアバッグ、サイドエアバッグ及びカーテンエアバッグが作動しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T8	

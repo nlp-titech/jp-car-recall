@@ -1,0 +1,13 @@
+T1	Argument 0 56	前方障害物衝突軽減装置（プリクラッシュセーフティシステム）において、ミリ波レーダーによる障害物検知ソフトが不適切
+T2	Connective 57 59	ため
+T3	Argument 60 82	乱反射したミリ波情報を稀に前方障害物と誤認識
+T4	Connective 83 84	、
+T5	Argument 84 104	衝突の可能性がないのに自動ブレーキが作動
+T6	Connective 105 106	て
+T7	Argument 107 118	予期せぬ急制動がかかる
+R1	RESULT Arg1:T6 Arg2:T7	
+R2	REASON Arg1:T6 Arg2:T5	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	REASON Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T2 Arg2:T3	
+R6	REASON Arg1:T2 Arg2:T1	

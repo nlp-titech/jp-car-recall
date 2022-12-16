@@ -1,0 +1,21 @@
+T1	Argument 14 48	不適切な工程にて製造されたサンルーフガラス（フロント）が取り付けられ
+T2	Connective 52 56	そのため
+T3	Argument 70 78	当該ガラスが破損
+T4	Argument 87 89	最悪
+T5	Connective 90 92	場合
+T6	Argument 93 100	破損したガラス
+T7	Connective 100 103	により
+T8	Argument 104 109	乗員が負傷
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T9	Connective 86 87	。
+R3	REASON Arg1:T9 Arg2:T3	
+R4	RESULT Arg1:T9 Arg2:T8	
+R5	CONDITION Arg1:T5 Arg2:T4	
+R6	RESULT Arg1:T5 Arg2:T8	
+R7	REASON Arg1:T7 Arg2:T6	
+R8	RESULT Arg1:T7 Arg2:T8	
+T10	Connective 68 70	下で
+T11	Argument 57 68	極低温（－２０℃以下）
+R9	CONDITION Arg1:T10 Arg2:T11	
+R10	RESULT Arg1:T10 Arg2:T3	

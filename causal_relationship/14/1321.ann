@@ -1,0 +1,20 @@
+T1	Argument 0 17	番号灯のアース回路の接続先が不適切
+T2	Connective 18 20	ため
+T3	Argument 21 48	その経路となっているエンジンフードのヒンジ部ピンのガタ
+T4	Connective 48 51	により
+T6	Connective 67 71	そのため
+T7	Argument 72 79	走行中の振動等
+T8	Connective 79 82	により
+T9	Argument 82 93	番号灯が点灯しなくなる
+T10	Argument 97 99	点滅
+R1	REASON Arg1:T2 Arg2:T1	
+R2	REASON Arg1:T4 Arg2:T3	
+R6	REASON Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	RESULT Arg1:T8 Arg2:T10	
+R9	RESULT Arg1:T6 Arg2:T9	
+R10	RESULT Arg1:T6 Arg2:T10	
+T11	Argument 52 61	アース不良を起こす
+R11	RESULT Arg1:T4 Arg2:T11	
+R3	RESULT Arg1:T2 Arg2:T11	
+R4	REASON Arg1:T6 Arg2:T11	

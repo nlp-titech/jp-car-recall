@@ -1,0 +1,14 @@
+T1	Argument 0 32	アクセルペダルにおいて、アクセル開度センサ内部部品の構造が不適切
+T2	Connective 33 35	ため
+T3	Argument 36 75	アクセルペダルを踏み込んでも、踏み込み量に応じたアクセル開度信号が出力されない
+R1	REASON Arg1:T2 Arg2:T1	
+T5	Argument 79 103	アイドリング位置検出スイッチがアイドル位置を検出
+T6	Connective 114 118	そのため
+T7	Argument 119 144	アクセルペダルの踏み込み量に応じた加速が得られない
+R7	RESULT Arg1:T6 Arg2:T7	
+T9	Argument 149 157	車両が走行しない
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T5	
+R4	REASON Arg1:T6 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T3	
+R6	RESULT Arg1:T6 Arg2:T9	

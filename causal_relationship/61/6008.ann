@@ -1,0 +1,17 @@
+T1	Argument 56 66	ボルトの材質が不適切
+T2	Connective 67 69	ため
+T3	Argument 70 83	塩分濃度が高い環境下で使用
+T4	Connective 86 89	場合に
+T5	Argument 90 98	当該ボルトが腐食
+T6	Connective 102 103	、
+T7	Argument 103 116	走行中に異音及び振動が発生
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Connective 98 99	、
+T9	Argument 99 101	破断
+R5	REASON Arg1:T8 Arg2:T5	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	REASON Arg1:T6 Arg2:T9	

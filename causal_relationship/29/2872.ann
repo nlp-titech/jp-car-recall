@@ -1,0 +1,39 @@
+T1	Argument 0 75	ディーゼルエンジン搭載車のＤＰＦ（ディーゼル粒子状物質除去装置）のエンジン制御コンピュータにおいて、ＰＭ（黒煙等からなる粒子状物質）除去の制御が不適切
+T2	Connective 76 78	ため
+T3	Argument 79 90	短時間の走行を繰り返し
+T4	Connective 91 93	場合
+T5	Argument 94 102	ＰＭが多量に堆積
+T8	Argument 113 147	ＰＭが多量に堆積して再生禁止領域に達しているにも関わらず制御が不適切
+T9	Connective 148 150	ため
+T10	Argument 151 177	自動再生（捕集した粒子状物質の燃焼除去）が行なわれる
+T11	Connective 178 182	そのため
+T12	Argument 183 197	そのままの状態で使用を続ける
+T13	Connective 197 198	と
+T14	Argument 199 221	ＰＭが多量に堆積した状態で自動再生が行なわれ
+T15	Connective 221 222	て
+T16	Argument 222 231	ＤＰＦが高温となり
+T17	Connective 231 232	、
+T18	Argument 232 234	最悪
+T19	Connective 235 237	場合
+T20	Argument 238 244	ＤＰＦが破損
+T21	Connective 245 246	て
+T22	Argument 246 251	黒煙が排出
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R8	REASON Arg1:T9 Arg2:T8	
+R9	RESULT Arg1:T9 Arg2:T10	
+R10	REASON Arg1:T11 Arg2:T10	
+R11	RESULT Arg1:T11 Arg2:T16	
+R12	CONDITION Arg1:T13 Arg2:T12	
+R13	RESULT Arg1:T13 Arg2:T14	
+R14	REASON Arg1:T15 Arg2:T14	
+R15	RESULT Arg1:T15 Arg2:T16	
+R16	REASON Arg1:T17 Arg2:T16	
+R17	RESULT Arg1:T17 Arg2:T20	
+R18	CONDITION Arg1:T19 Arg2:T18	
+R19	RESULT Arg1:T19 Arg2:T20	
+R20	REASON Arg1:T21 Arg2:T20	
+R21	RESULT Arg1:T21 Arg2:T22	
+R5	REASON Arg1:T11 Arg2:T5	

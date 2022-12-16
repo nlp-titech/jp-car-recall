@@ -1,0 +1,21 @@
+T1	Argument 13 40	バッテリ電圧が低い状態でセルスタートボタンを押し続ける
+T2	Connective 40 41	と
+T3	Argument 42 64	定格より大きな電流がスターターモータに流れる
+T4	Connective 70 74	そのため
+T5	Argument 75 91	スターターリレーのヒューズが切れ
+T6	Connective 91 92	、
+T7	Argument 92 110	スターターモータからの逆起電力が発生
+T8	Connective 111 112	、
+T9	Argument 112 126	カムポジションセンサーが損傷
+T10	Connective 127 128	て
+T11	Argument 129 140	エンジンが始動できない
+R1	RESULT Arg1:T10 Arg2:T11	
+R2	REASON Arg1:T10 Arg2:T9	
+R3	RESULT Arg1:T8 Arg2:T9	
+R4	REASON Arg1:T8 Arg2:T7	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	REASON Arg1:T6 Arg2:T5	
+R7	RESULT Arg1:T4 Arg2:T5	
+R8	REASON Arg1:T4 Arg2:T3	
+R9	RESULT Arg1:T2 Arg2:T3	
+R10	CONDITION Arg1:T2 Arg2:T1	

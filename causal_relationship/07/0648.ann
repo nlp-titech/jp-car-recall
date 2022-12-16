@@ -1,0 +1,25 @@
+T1	Argument 0 48	油圧式パワーステアリングのギアボックスにタイロッドを取り付けるブラケットのボルト締め付け力が不足
+T2	Argument 61 75	極低速時に据え切り操作を行う
+T3	Argument 76 84	当該ボルトが弛み
+T4	Argument 85 95	そのまま使用を続ける
+T5	Argument 96 102	ボルトが折損
+T6	Argument 104 121	ギアボックスからブラケットが外れる
+T7	Connective 52 54	ため
+T8	Connective 75 76	と
+T9	Connective 84 85	、
+T10	Connective 95 96	と
+T11	Connective 103 104	、
+T12	Connective 127 131	そのため
+T13	Argument 132 145	ハンドル操作ができなくなる
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T3	
+R3	CONDITION Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T5	
+R7	CONDITION Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T5	
+R9	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	
+R11	REASON Arg1:T12 Arg2:T6	
+R12	RESULT Arg1:T12 Arg2:T13	

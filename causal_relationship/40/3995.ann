@@ -1,0 +1,21 @@
+T1	Argument 48 63	ブレーキ制御プログラムが不適切
+T4	Argument 86 101	意図どおりの制動力が得られない
+T6	Argument 112 130	雪道等でタイヤ空転中にブレーキを踏む
+T7	Argument 131 142	制動停止距離が長くなる
+T8	Connective 64 66	ため
+T10	Connective 85 86	、
+T11	Connective 107 111	このため
+T13	Connective 130 131	と
+R1	REASON Arg1:T8 Arg2:T1	
+R6	RESULT Arg1:T10 Arg2:T4	
+R7	REASON Arg1:T11 Arg2:T4	
+R8	RESULT Arg1:T11 Arg2:T7	
+R11	CONDITION Arg1:T13 Arg2:T6	
+R12	RESULT Arg1:T13 Arg2:T7	
+T2	Argument 67 73	タイヤ空転時
+T3	Connective 73 74	に
+T5	Argument 74 85	車速を正確に演算できず
+R2	REASON Arg1:T10 Arg2:T5	
+R3	RESULT Arg1:T3 Arg2:T5	
+R4	CONDITION Arg1:T3 Arg2:T2	
+R5	RESULT Arg1:T8 Arg2:T5	

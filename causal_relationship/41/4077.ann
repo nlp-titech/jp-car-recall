@@ -1,0 +1,25 @@
+T1	Argument 15 35	エンジン制御ユニットのプログラムが不適切
+T2	Argument 39 63	排気ガスに含まれるＨＣ（炭化水素）濃度が濃くなり
+T3	Argument 64 83	当該排気ガスがＥＧＲクーラーに回り込み
+T4	Argument 84 108	カーボンデポジットが生成されてＥＧＲバルブに付着
+T5	Argument 121 133	カーボンデポジットの堆積
+T6	Argument 152 162	エンジンの出力が制限
+T7	Connective 36 38	ため
+T8	Connective 63 64	、
+T9	Connective 83 84	、
+T10	Connective 116 120	このため
+T11	Connective 148 151	となり
+T12	Argument 136 148	ＥＧＲバルブの摺動が不良
+T13	Connective 133 136	により
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T12	
+R9	REASON Arg1:T13 Arg2:T5	
+R10	RESULT Arg1:T13 Arg2:T12	
+R11	REASON Arg1:T11 Arg2:T12	
+R12	RESULT Arg1:T11 Arg2:T6	

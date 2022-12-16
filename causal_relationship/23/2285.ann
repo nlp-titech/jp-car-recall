@@ -1,0 +1,17 @@
+T1	Argument 0 45	電気式フォークリフトの電源制御コントローラにおいて、当該コントローラ内部の電気回路が不適切
+T2	Connective 46 48	ため
+T3	Argument 49 61	回路内に過大な電圧が発生
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 69 73	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 74 92	電源制御コントローラの内部部品が焼損
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 93 94	、
+T7	Argument 100 108	走行できなくなる
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 94 96	最悪
+T9	Connective 97 99	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T7	

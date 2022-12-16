@@ -1,0 +1,46 @@
+T1	Argument 2 52	手動変速機付車において、ギヤシフトコントロールジョイントとアーム結合部の樹脂製ブッシュの構造が不適切
+T2	Argument 56 70	固定ナットの締付トルクが不足
+T3	Argument 97 105	当該ナットが脱落
+T4	Argument 113 128	シャフトがシフトレバーから外れ
+T5	Argument 129 139	シフトができなくなる
+T6	Argument 148 193	手動変速機付車において、ギヤシフトコントロールジョイントの固定ナットが締め付けられていない
+T7	Argument 216 224	当該ナットが脱落
+T8	Argument 232 247	シャフトがシフトレバーから外れ
+T9	Argument 248 258	シフトができなくなる
+T10	Connective 247 248	、
+R1	REASON Arg1:T10 Arg2:T8	
+R2	RESULT Arg1:T10 Arg2:T9	
+T11	Connective 225 226	、
+R3	REASON Arg1:T11 Arg2:T7	
+R4	RESULT Arg1:T11 Arg2:T8	
+T12	Connective 199 203	そのため
+R5	REASON Arg1:T12 Arg2:T6	
+R6	RESULT Arg1:T12 Arg2:T7	
+T13	Connective 128 129	、
+R7	REASON Arg1:T13 Arg2:T4	
+R8	RESULT Arg1:T13 Arg2:T5	
+T14	Connective 106 107	、
+R9	REASON Arg1:T14 Arg2:T3	
+R10	RESULT Arg1:T14 Arg2:T4	
+T15	Connective 80 84	そのため
+R11	REASON Arg1:T15 Arg2:T2	
+R12	RESULT Arg1:T15 Arg2:T3	
+T16	Connective 53 55	ため
+R13	REASON Arg1:T16 Arg2:T1	
+R14	RESULT Arg1:T16 Arg2:T2	
+T17	Argument 85 95	そのまま使用を続ける
+T18	Connective 95 96	と
+R15	CONDITION Arg1:T18 Arg2:T17	
+R16	RESULT Arg1:T18 Arg2:T3	
+T19	Argument 107 109	最悪
+T20	Connective 110 112	場合
+R17	CONDITION Arg1:T20 Arg2:T19	
+R18	RESULT Arg1:T20 Arg2:T4	
+T21	Argument 204 214	そのまま使用を続ける
+T22	Connective 214 215	と
+R19	CONDITION Arg1:T22 Arg2:T21	
+R20	RESULT Arg1:T22 Arg2:T7	
+T23	Argument 226 228	最悪
+T24	Connective 229 231	場合
+R21	CONDITION Arg1:T24 Arg2:T23	
+R22	RESULT Arg1:T24 Arg2:T8	

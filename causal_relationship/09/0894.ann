@@ -1,0 +1,9 @@
+T1	Argument 0 27	警報音発生装置において、正規の部品と異なった部品を装着
+T2	Argument 32 44	音の大きさが基準値を超え
+T3	Connective 47 48	、
+T4	Argument 48 66	警報音発生装置の技術基準を満足しない
+T5	Connective 29 31	ため
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T3 Arg2:T2	
+R4	RESULT Arg1:T3 Arg2:T4	

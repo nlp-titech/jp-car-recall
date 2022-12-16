@@ -1,0 +1,29 @@
+T2	Connective 35 37	ため
+T3	Argument 38 57	設計公差を超えた金属フレームが使用され
+T4	Connective 64 68	そのため
+T5	Argument 69 93	金属フレームに取り付けられたガラスに負荷がかかり
+T6	Connective 93 94	、
+T7	Argument 99 107	走行振動が加わる
+T8	Connective 107 108	と
+T9	Argument 109 115	ガラスが破損
+T10	Connective 116 117	、
+T11	Argument 117 119	最悪
+T12	Connective 120 122	場合
+T13	Argument 123 135	室内に落下したガラス破片
+T14	Connective 135 138	により
+T15	Argument 138 146	乗員が怪我をする
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+T1	Argument 0 34	電動パノラマサンルーフにおいて、構成部品の金属フレームの検査が不適切
+R1	REASON Arg1:T2 Arg2:T1	

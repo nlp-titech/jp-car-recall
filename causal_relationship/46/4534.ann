@@ -1,0 +1,13 @@
+T1	Argument 23 39	ブレーキ解除ボタンの隙間が少ない
+T2	Connective 39 41	ため
+T3	Argument 42 54	駐車ブレーキレバーを操作
+T4	Connective 56 58	とき
+T5	Argument 59 72	ブレーキ解除ボタンが戻らず
+T6	Connective 72 73	、
+T7	Argument 73 87	駐車ブレーキが作用しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

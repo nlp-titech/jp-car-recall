@@ -1,0 +1,19 @@
+T1	Argument 0 25	かじ取りハンドルにおいて、製造時の曲げ工程に不適切
+T2	Connective 31 32	、
+T3	Argument 54 75	当該ハンドルの曲げ部分に微小なクラックが生
+T4	Connective 75 76	じ
+T5	Argument 76 84	ハンドルが曲がる
+T6	Argument 87 89	折損
+R1	RESULT Arg1:T4 Arg2:T5	
+R2	RESULT Arg1:T4 Arg2:T6	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T2 Arg2:T3	
+R5	REASON Arg1:T2 Arg2:T1	
+T7	Argument 32 46	そのままの状態で使用を続ける
+T8	Connective 46 47	と
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T3	
+T9	Argument 48 50	最悪
+T10	Connective 51 53	場合
+R8	CONDITION Arg1:T10 Arg2:T9	
+R9	RESULT Arg1:T10 Arg2:T3	

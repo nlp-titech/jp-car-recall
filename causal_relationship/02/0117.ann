@@ -1,0 +1,21 @@
+T1	Argument 7 34	教官用ブレーキの制動倍力装置において、遮水構造が不適切
+T2	Argument 37 58	当該制動倍力装置の大気バルブ内部に水が浸入
+T3	Argument 72 80	侵入した水が凍結
+T4	Argument 82 96	制動倍力装置の機能が損なわれ
+T5	Argument 97 115	制動時のブレーキペダルの操作力が増大
+T6	Connective 35 37	ため
+T7	Connective 65 66	、
+T8	Connective 81 82	、
+T9	Connective 96 97	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 66 68	最悪
+T11	Connective 69 71	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	

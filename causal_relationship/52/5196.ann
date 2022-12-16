@@ -1,0 +1,25 @@
+T2	Connective 41 43	ため
+T3	Argument 55 62	袋ナットが緩む
+T4	Connective 68 72	そのため
+T6	Connective 77 78	れ
+T7	Argument 78 84	エア圧が低下
+T8	Connective 86 87	と
+T9	Argument 88 106	パーキングブレーキが効いた状態となり
+T10	Connective 106 107	、
+T11	Argument 107 115	走行出来なくなる
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 44 52	エンジンの振動等
+T13	Connective 52 55	により
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T3	
+T1	Argument 1 40	エアコンプレッサ出口部の配管ジョイントに使用しているシールリングの材質が不適切
+R1	REASON Arg1:T2 Arg2:T1	
+T5	Argument 73 77	エアが漏
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	

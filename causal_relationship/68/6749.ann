@@ -1,0 +1,9 @@
+T1	Argument 0 42	エンジンコントロールユニットの制御プログラムにおいて、車両へ搭載する仕様指示が不適切
+T2	Connective 43 45	ため
+T3	Argument 46 62	誤った仕様の制御プログラムが搭載
+T4	Connective 68 72	そのため
+T5	Argument 73 87	騒音が基準値を満足しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

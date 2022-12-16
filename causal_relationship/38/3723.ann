@@ -1,0 +1,25 @@
+T1	Argument 18 40	泥除けマット固定用ホルダーの溶接施工が不適切
+T2	Argument 44 62	当該ホルダーの接合部の溶接強度が不足
+T3	Argument 77 91	そのままの状態で使用を続ける
+T4	Connective 41 43	ため
+T5	Connective 72 76	そのため
+T6	Argument 93 100	走行時の振動等
+T7	Argument 103 112	接合部に亀裂が入り
+T8	Argument 113 115	最悪
+T9	Argument 119 130	泥除け装置が路上に落下
+T10	Connective 91 92	と
+T11	Connective 100 103	により
+T12	Connective 112 113	、
+T13	Connective 116 118	場合
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T7	
+R5	CONDITION Arg1:T10 Arg2:T3	
+R6	RESULT Arg1:T10 Arg2:T7	
+R7	REASON Arg1:T11 Arg2:T6	
+R8	RESULT Arg1:T11 Arg2:T7	
+R9	REASON Arg1:T12 Arg2:T7	
+R10	RESULT Arg1:T12 Arg2:T9	
+R11	CONDITION Arg1:T13 Arg2:T8	
+R12	RESULT Arg1:T13 Arg2:T9	

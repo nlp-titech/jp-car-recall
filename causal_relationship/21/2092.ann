@@ -1,0 +1,21 @@
+T1	Argument 0 18	前輪用ブレーキケーブルの長さが不適切
+T2	Connective 19 21	ため
+T3	Argument 22 37	走行中のフロントフォークの伸縮
+T4	Connective 37 40	により
+T5	Argument 41 63	ケーブル留め金具部で当該ケーブルが折れ曲がる
+T6	Connective 69 73	そのため
+T7	Argument 74 84	そのまま使用を続ける
+T8	Connective 102 103	、
+T9	Argument 103 118	前輪ブレーキが操作できなくなる
+R1	RESULT Arg1:T8 Arg2:T9	
+R3	RESULT Arg1:T6 Arg2:T11	
+R4	REASON Arg1:T6 Arg2:T5	
+R5	REASON Arg1:T2 Arg2:T1	
+R6	RESULT Arg1:T2 Arg2:T5	
+R7	REASON Arg1:T4 Arg2:T3	
+R8	RESULT Arg1:T4 Arg2:T5	
+T10	Connective 84 85	と
+T11	Argument 86 101	ケーブル内のインナワイヤが切損
+R2	CONDITION Arg1:T10 Arg2:T7	
+R9	RESULT Arg1:T10 Arg2:T11	
+R10	REASON Arg1:T8 Arg2:T11	

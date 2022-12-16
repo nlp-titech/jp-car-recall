@@ -1,0 +1,25 @@
+T1	Argument 16 64	マグネチックスイッチ（スタータモータのギヤをエンジンにかみ合わせる装置）内部に可燃性のガスが発生
+T2	Argument 66 68	滞留
+T3	Connective 76 80	そのため
+T4	Argument 81 91	当該ガスに火花が着火
+T5	Argument 93 95	焼損
+T6	Connective 92 93	て
+T7	Argument 103 108	火災に至る
+T8	Connective 65 66	、
+T9	Argument 0 11	始動装置を繰り返し操作
+T10	Connective 13 15	場合
+R1	CONDITION Arg1:T10 Arg2:T9	
+R2	RESULT Arg1:T10 Arg2:T1	
+R3	REASON Arg1:T8 Arg2:T1	
+R4	RESULT Arg1:T8 Arg2:T2	
+R5	REASON Arg1:T3 Arg2:T2	
+R6	RESULT Arg1:T3 Arg2:T4	
+R7	REASON Arg1:T6 Arg2:T4	
+R8	RESULT Arg1:T6 Arg2:T5	
+T11	Connective 96 97	、
+R9	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T7	
+T14	Argument 97 99	最悪
+T15	Connective 100 102	場合
+R11	CONDITION Arg1:T15 Arg2:T14	
+R12	RESULT Arg1:T15 Arg2:T7	

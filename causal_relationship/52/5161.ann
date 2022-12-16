@@ -1,0 +1,27 @@
+T1	Argument 17 85	クロック・スプリング（運転席エアバッグ、ホーン、オート・スピード・コントロール機能を作動させるためのリボン状電気配線）の組み付けに不適切
+T2	Connective 91 93	ため
+T3	Argument 106 125	クロック・スプリングの配線に損傷が生じ
+T4	Connective 125 126	て
+T5	Argument 126 128	断線
+T6	Connective 136 140	そのため
+T7	Argument 147 169	ホーン・スイッチを操作してもホーンが鳴らない
+T8	Argument 173 184	エアバッグ警告灯が点灯
+T9	Argument 186 225	運転席エアバッグが作動する条件下で衝撃を受けても、運転席エアバッグが展開しない
+R1	RESULT Arg1:T6 Arg2:T7	
+R2	RESULT Arg1:T6 Arg2:T8	
+R3	RESULT Arg1:T6 Arg2:T9	
+T10	Argument 141 143	最悪
+T11	Connective 144 146	場合
+R4	CONDITION Arg1:T11 Arg2:T10	
+R5	RESULT Arg1:T11 Arg2:T7	
+R6	RESULT Arg1:T11 Arg2:T8	
+R7	RESULT Arg1:T11 Arg2:T9	
+R8	REASON Arg1:T6 Arg2:T5	
+R9	REASON Arg1:T4 Arg2:T3	
+R10	RESULT Arg1:T4 Arg2:T5	
+R11	RESULT Arg1:T2 Arg2:T3	
+R12	REASON Arg1:T2 Arg2:T1	
+T12	Argument 94 103	ステアリングの操作
+T13	Connective 103 106	により
+R13	REASON Arg1:T13 Arg2:T12	
+R14	RESULT Arg1:T13 Arg2:T3	

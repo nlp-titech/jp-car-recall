@@ -1,0 +1,29 @@
+T1	Argument 33 42	ノイズ対策が不適切
+T2	Argument 15 30	インジェクタ制御回路の電圧変化
+T3	Argument 46 63	当該回路に許容を超える電流が流れる
+T4	Argument 74 79	回路が損傷
+T5	Argument 80 82	短絡
+T6	Argument 87 94	ヒューズが切れ
+T7	Argument 95 102	燃料噴射が停止
+T8	Argument 103 110	エンストに至る
+T9	Connective 30 33	による
+T10	Connective 43 45	ため
+T11	Connective 69 73	そのため
+T12	Connective 79 80	し
+T13	Connective 86 87	で
+T14	Connective 94 95	、
+T15	Connective 102 103	し
+R1	REASON Arg1:T9 Arg2:T2	
+R2	RESULT Arg1:T9 Arg2:T1	
+R3	REASON Arg1:T10 Arg2:T1	
+R4	RESULT Arg1:T10 Arg2:T3	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+R7	REASON Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T5	
+R9	REASON Arg1:T13 Arg2:T5	
+R10	RESULT Arg1:T13 Arg2:T6	
+R11	REASON Arg1:T14 Arg2:T6	
+R12	RESULT Arg1:T14 Arg2:T7	
+R13	REASON Arg1:T15 Arg2:T7	
+R14	RESULT Arg1:T15 Arg2:T8	

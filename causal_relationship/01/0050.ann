@@ -1,0 +1,17 @@
+T1	Argument 0 31	原動機上部にある後席ヒータ用ゴムプラグ（止水栓）の材質が不適切
+T2	Argument 35 46	当該プラグに亀裂が生じ
+T3	Argument 47 54	冷却水の漏れる
+T4	Argument 75 85	オーバーヒートに至る
+T5	Connective 32 34	ため
+T6	Connective 46 47	て
+T7	Connective 59 60	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 60 74	そのままの状態で使用を続ける
+T9	Connective 74 75	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T4	

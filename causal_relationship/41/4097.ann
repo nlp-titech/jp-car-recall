@@ -1,0 +1,31 @@
+T1	Argument 0 36	中型トラックの自動変速機において、アウトプットフランジの端面の硬度が不足
+T3	Argument 43 53	走行時のエンジン共振
+T4	Argument 56 65	フランジ端面が摩耗
+T5	Argument 67 81	フランジ締め付けボルトが緩む
+T6	Argument 92 110	自動変速機から異音やオイル漏れが発生
+T7	Argument 112 114	最悪
+T8	Argument 118 126	当該ボルトが折損
+T9	Argument 128 139	プロペラシャフトが脱落
+T10	Argument 141 149	走行できなくなる
+T11	Connective 40 42	ため
+T13	Connective 53 56	により
+T14	Connective 66 67	、
+T15	Connective 87 91	そのため
+T17	Connective 115 117	場合
+T18	Connective 127 128	て
+T19	Connective 140 141	、
+R1	REASON Arg1:T11 Arg2:T1	
+R2	RESULT Arg1:T11 Arg2:T4	
+R5	REASON Arg1:T13 Arg2:T3	
+R6	RESULT Arg1:T13 Arg2:T4	
+R7	REASON Arg1:T14 Arg2:T4	
+R8	RESULT Arg1:T14 Arg2:T5	
+R9	REASON Arg1:T15 Arg2:T5	
+R10	RESULT Arg1:T15 Arg2:T6	
+R13	CONDITION Arg1:T17 Arg2:T7	
+R14	RESULT Arg1:T17 Arg2:T8	
+R15	REASON Arg1:T18 Arg2:T8	
+R16	RESULT Arg1:T18 Arg2:T9	
+R17	REASON Arg1:T19 Arg2:T9	
+R18	RESULT Arg1:T19 Arg2:T10	
+R3	RESULT Arg1:T15 Arg2:T8	

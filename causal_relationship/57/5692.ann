@@ -1,0 +1,25 @@
+T1	Argument 0 41	吸気ダクトに取り付けられたヒューズボックスとリレーサポートの配線の取り回しが不適切
+T2	Argument 45 56	吸気ダクトの端部に干渉
+T3	Argument 69 76	走行中の振動等
+T4	Argument 79 89	当該配線の被覆が損傷
+T5	Argument 91 102	速度計が表示しなくなる
+T6	Argument 103 127	前照灯、制動灯若しくは方向指示器が作動しなくなる
+T7	Argument 130 136	原動機が停止
+T9	Connective 42 44	ため
+T10	Connective 64 68	そのため
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T2	
+R3	REASON Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T4	
+T11	Connective 76 79	により
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+T12	Connective 90 91	、
+R7	REASON Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T5	
+R9	RESULT Arg1:T12 Arg2:T6	
+R10	RESULT Arg1:T12 Arg2:T7	
+T8	Connective 138 139	、
+R11	REASON Arg1:T8 Arg2:T7	
+T13	Argument 139 148	再始動できなくなる
+R12	RESULT Arg1:T8 Arg2:T13	

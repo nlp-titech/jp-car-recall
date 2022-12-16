@@ -1,0 +1,23 @@
+T1	Argument 0 24	プロペラシャフトにおいて、重量のバランスが不適切
+T2	Argument 49 71	走行中にプロペラシャフト後端部に曲がりが発生
+T3	Argument 76 86	スプライン部から外れ
+T4	Argument 87 91	走行不能
+T5	Argument 110 118	燃料タンクを破損
+T6	Connective 30 32	ため
+T7	Connective 73 75	ため
+T8	Connective 86 87	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	RESULT Arg1:T8 Arg2:T5	
+T9	Argument 33 47	そのままの状態で使用を続ける
+T10	Connective 47 48	と
+R8	CONDITION Arg1:T10 Arg2:T9	
+R9	RESULT Arg1:T10 Arg2:T2	
+T11	Argument 104 106	最悪
+T12	Connective 107 109	場合
+R10	CONDITION Arg1:T12 Arg2:T11	
+R11	RESULT Arg1:T12 Arg2:T5	

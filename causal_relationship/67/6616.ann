@@ -1,0 +1,25 @@
+T1	Argument 1 46	農耕トラクタの車速制御装置において、速度調節レバー等を配置するコマンドアームの構造が不適切
+T2	Connective 47 49	ため
+T3	Argument 50 85	コマンドアームのハウジングに帯電した静電気が車速調節レバーセンサに流れ
+T4	Connective 85 86	、
+T5	Argument 86 100	当該センサの出力信号が乱れる
+T6	Connective 106 110	そのため
+T7	Argument 111 125	コントローラが異常信号と判断
+T8	Connective 126 127	て
+T9	Argument 128 130	最悪
+T10	Connective 131 133	場合
+T11	Argument 134 140	警告灯が点灯
+T12	Argument 142 147	走行を停止
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T11	
+R10	CONDITION Arg1:T10 Arg2:T9	
+R11	RESULT Arg1:T10 Arg2:T11	
+T13	Connective 141 142	、
+R9	REASON Arg1:T13 Arg2:T11	
+R12	RESULT Arg1:T13 Arg2:T12	

@@ -1,0 +1,35 @@
+T1	Argument 0 46	定期交換用の補修部品として指定されているオイルフィルタエレメントにおいて、ケースの強度が不足
+T2	Argument 53 66	原動機型式６ＨＫ１型に使用
+T3	Argument 71 76	亀裂が発生
+T4	Argument 101 116	亀裂部からエンジンオイルが漏れ
+T5	Argument 123 131	原動機が焼き付き
+T6	Argument 131 139	走行できなくなる
+T7	Argument 144 153	オイルが路面に飛散
+T8	Argument 155 163	他の交通を妨げる
+T9	Connective 154 155	て
+T10	Connective 130 131	き
+T11	Connective 116 117	、
+T12	Connective 84 88	そのため
+T13	Connective 68 70	場合
+T14	Connective 50 52	ため
+R1	REASON Arg1:T14 Arg2:T1	
+R2	RESULT Arg1:T14 Arg2:T3	
+R3	CONDITION Arg1:T13 Arg2:T2	
+R4	RESULT Arg1:T13 Arg2:T3	
+R5	REASON Arg1:T12 Arg2:T3	
+R6	RESULT Arg1:T12 Arg2:T4	
+R7	REASON Arg1:T11 Arg2:T4	
+R8	RESULT Arg1:T11 Arg2:T5	
+R9	REASON Arg1:T10 Arg2:T5	
+R10	RESULT Arg1:T10 Arg2:T6	
+R11	RESULT Arg1:T11 Arg2:T7	
+R12	REASON Arg1:T9 Arg2:T7	
+R13	RESULT Arg1:T9 Arg2:T8	
+T15	Argument 89 99	そのまま使用を続ける
+T16	Connective 99 100	と
+R14	CONDITION Arg1:T16 Arg2:T15	
+R15	RESULT Arg1:T16 Arg2:T4	
+T17	Argument 117 119	最悪
+T18	Connective 120 122	場合
+R16	CONDITION Arg1:T18 Arg2:T17	
+R17	RESULT Arg1:T18 Arg2:T5	

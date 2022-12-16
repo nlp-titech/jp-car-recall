@@ -1,0 +1,21 @@
+T1	Argument 0 42	刈取脱穀作業車の走行装置において、ドライブスプロケット取付けボルトの締付トルクが不足
+T2	Connective 52 56	そのため
+T3	Argument 72 80	当該ボルトが折損
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 81 82	、
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 88 101	ドライブスプロケットが脱落
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 57 71	そのままの状態で使用を続ける
+T7	Connective 71 72	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 82 84	最悪
+T9	Connective 85 87	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Connective 103 105	ため
+T11	Argument 105 112	走行不能となる
+R9	REASON Arg1:T10 Arg2:T5	
+R10	RESULT Arg1:T10 Arg2:T11	

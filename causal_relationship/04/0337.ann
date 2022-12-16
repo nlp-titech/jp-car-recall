@@ -1,0 +1,17 @@
+T2	Argument 59 78	当該バルブの開閉が円滑に作動しなくなり
+T3	Argument 95 104	バルブが閉じたまま
+T5	Argument 108 136	信号待ち等により原動機を停止した後の再始動ができなくなる
+T6	Connective 56 58	ため
+T7	Connective 78 79	、
+T8	Connective 107 108	、
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T5	
+T1	Argument 0 50	アイドリングストップ・アンド・スタートシステム装着者において、吸気遮断バルブのケースの内径に加工不良
+R1	REASON Arg1:T6 Arg2:T1	
+T4	Argument 79 93	そのままの状態で使用を続ける
+T9	Connective 93 94	と
+R7	CONDITION Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T3	

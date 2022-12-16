@@ -1,0 +1,37 @@
+T1	Argument 7 40	ガス封入式スプリングにおいて、外筒のエンドキャップ部の塗装が不適切
+T2	Argument 44 50	外筒が錆びる
+T3	Argument 61 75	そのままの状態で使用を続ける
+T4	Argument 77 81	錆が進行
+T5	Argument 83 88	外筒が膨ら
+T6	Argument 89 99	エンドキャップが割れ
+T7	Argument 100 102	最悪
+T8	Argument 106 115	テールゲートを開く
+T9	Argument 117 122	外筒が破裂
+T10	Argument 124 131	周囲の人が負傷
+T11	Connective 41 43	ため
+T12	Connective 56 60	そのため
+T13	Connective 75 76	と
+T14	Connective 82 83	、
+T15	Connective 88 89	み
+T16	Connective 99 100	、
+T17	Connective 103 105	場合
+T18	Connective 115 117	際に
+T19	Connective 123 124	、
+R1	REASON Arg1:T11 Arg2:T1	
+R2	RESULT Arg1:T11 Arg2:T2	
+R3	REASON Arg1:T12 Arg2:T2	
+R5	CONDITION Arg1:T13 Arg2:T3	
+R6	RESULT Arg1:T13 Arg2:T4	
+R7	REASON Arg1:T14 Arg2:T4	
+R8	RESULT Arg1:T14 Arg2:T5	
+R9	RESULT Arg1:T15 Arg2:T6	
+R10	REASON Arg1:T15 Arg2:T5	
+R11	REASON Arg1:T16 Arg2:T6	
+R13	CONDITION Arg1:T17 Arg2:T7	
+R15	CONDITION Arg1:T18 Arg2:T8	
+R16	RESULT Arg1:T18 Arg2:T9	
+R17	REASON Arg1:T19 Arg2:T9	
+R18	RESULT Arg1:T19 Arg2:T10	
+R4	RESULT Arg1:T12 Arg2:T4	
+R12	RESULT Arg1:T17 Arg2:T9	
+R14	RESULT Arg1:T16 Arg2:T9	

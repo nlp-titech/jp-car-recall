@@ -1,0 +1,17 @@
+T1	Argument 0 34	チューブ付きタイヤ用ディスクホイールとブレーキドラムの組合せが不適切
+T2	Connective 35 37	ため
+T3	Argument 38 57	ディスクホイールとブレーキドラムが干渉
+T4	Connective 67 71	そのため
+T5	Argument 72 83	ディスクホイールが変形
+T6	Connective 93 94	、
+T7	Argument 94 108	そのままの状態で使用を続ける
+T8	Connective 108 109	と
+T9	Argument 109 119	ホイールナットが緩む
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	REASON Arg1:T6 Arg2:T5	
+R5	CONDITION Arg1:T8 Arg2:T7	
+R6	RESULT Arg1:T8 Arg2:T9	
+R7	RESULT Arg1:T6 Arg2:T9	
+R8	RESULT Arg1:T4 Arg2:T5	

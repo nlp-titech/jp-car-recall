@@ -1,0 +1,21 @@
+T1	Argument 20 37	ベアリングのローラーの形状が不適切
+T2	Connective 43 45	ため
+T3	Argument 46 68	走行時に当該ベアリングに掛かる力が分散されず
+T4	Connective 68 69	に
+T5	Argument 69 79	ローラーが早期に摩耗
+T6	Connective 80 81	、
+T7	Argument 97 107	当該ベアリングが破損
+T8	Connective 108 109	て
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+T9	Argument 109 120	走行安定性が損なわれる
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 81 95	そのままの状態で使用を続ける
+T11	Connective 95 96	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T7	

@@ -1,0 +1,5 @@
+T1	Argument 0 15	前照灯用電気配線の設計が不適切
+T2	Connective 16 18	ため
+T3	Argument 19 41	走行用前照灯が点灯せず、すれ違用前照灯が点灯
+R3	RESULT Arg1:T2 Arg2:T3	
+R4	REASON Arg1:T2 Arg2:T1	

@@ -1,0 +1,32 @@
+T1	Argument 0 18	スロットルペダルレバーの材質が不適切
+T2	Connective 19 21	ため
+T3	Argument 22 28	繰り返し操作
+T4	Connective 30 33	ことで
+T5	Argument 33 47	スロットルペダルレバーが破損
+T6	Connective 48 49	て
+T7	Argument 49 51	脱落
+T8	Connective 76 77	と
+T9	Argument 78 92	スロットルペダルを踏み込めず
+T10	Argument 93 101	加速できなくなる
+T11	Connective 92 93	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T11 Arg2:T9	
+R10	RESULT Arg1:T11 Arg2:T10	
+T12	Argument 117 124	取付位置のずれ
+T13	Connective 124 127	により
+T14	Argument 127 152	足元スカッフプレートがスロットルペダルレバーと接触
+T15	Connective 159 161	ため
+T16	Argument 162 184	スロットルペダルレバーがより破損しやすくなる
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T14	
+R13	REASON Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T16	
+T17	Argument 60 74	スロットルペダルレバーが脱落
+R15	CONDITION Arg1:T8 Arg2:T17	

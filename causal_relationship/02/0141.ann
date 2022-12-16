@@ -1,0 +1,13 @@
+T1	Argument 0 50	制動装置の制動力制御装置（ＡＢＳ：アンチロックブレーキシステム）のコントロールユニットに一部製造不良
+T2	Argument 57 75	ＡＢＳの作動が不要な時にＡＢＳが作動
+T3	Argument 83 91	制動距離が伸びる
+T4	Connective 56 57	、
+T5	Connective 76 77	、
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	
+T6	Argument 77 79	最悪
+T7	Connective 80 82	場合
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	

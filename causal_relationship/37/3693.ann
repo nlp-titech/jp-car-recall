@@ -1,0 +1,9 @@
+T1	Argument 17 41	エンジンオイルレベル警報装置のプログラムが不適切
+T2	Connective 42 44	ため
+T3	Argument 45 72	イグニッションスイッチをＯＮにした直後にエンジンを始動
+T4	Connective 74 75	と
+T5	Argument 76 103	エンジンオイルが規定値を超えていても警告灯が点灯しない
+R1	RESULT Arg1:T4 Arg2:T5	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T3	
+R4	REASON Arg1:T2 Arg2:T1	

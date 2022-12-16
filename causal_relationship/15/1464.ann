@@ -1,0 +1,45 @@
+T1	Argument 0 25	電動機の駆動用バッテリーにおいて、製造工程が不適切
+T2	Connective 26 28	ため
+T3	Argument 39 52	正極の端子部分にバリを生じ
+T4	Connective 58 59	、
+T7	Argument 59 70	充電時等に負極板が膨張
+T8	Connective 71 72	、
+T9	Argument 72 83	バリがセパレータを破り
+T10	Argument 84 90	両極板が接触
+T11	Connective 91 92	て
+T12	Argument 92 94	短絡
+T13	Connective 102 106	そのため
+T14	Argument 107 113	短絡部の発熱
+T15	Connective 113 116	により
+T16	Argument 117 124	電解液等が気化
+T17	Argument 125 135	内部の圧力が高くなり
+T18	Connective 124 125	し
+T19	Connective 135 136	、
+T20	Argument 136 153	高温の白煙とともに電解液が噴き出し
+T21	Connective 153 154	、
+T22	Argument 154 156	最悪
+T23	Connective 157 159	場合
+T24	Argument 160 165	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R6	RESULT Arg1:T4 Arg2:T9	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T25	Connective 83 84	、
+R9	REASON Arg1:T25 Arg2:T9	
+R10	RESULT Arg1:T25 Arg2:T10	
+R11	REASON Arg1:T11 Arg2:T10	
+R12	RESULT Arg1:T11 Arg2:T12	
+R13	REASON Arg1:T13 Arg2:T12	
+R14	REASON Arg1:T15 Arg2:T14	
+R15	RESULT Arg1:T15 Arg2:T16	
+R16	RESULT Arg1:T13 Arg2:T14	
+R17	REASON Arg1:T18 Arg2:T16	
+R18	RESULT Arg1:T18 Arg2:T17	
+R19	REASON Arg1:T19 Arg2:T17	
+R20	RESULT Arg1:T19 Arg2:T20	
+R21	REASON Arg1:T21 Arg2:T20	
+R22	RESULT Arg1:T21 Arg2:T24	
+R23	CONDITION Arg1:T23 Arg2:T22	
+R24	RESULT Arg1:T23 Arg2:T24	

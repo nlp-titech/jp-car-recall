@@ -1,0 +1,37 @@
+T1	Argument 9 42	フロントワイパーモータのボトムカバー（電気回路内蔵）の製造が不適切
+T2	Argument 46 72	電気接点付きリレージョイントとウォームホイールが干渉
+T4	Argument 87 114	カウルパネルに雪が積もった状態で窓ふき器を作動後に停止
+T5	Argument 118 137	ワイパーアームが本来の停止位置に戻れず
+T6	Argument 137 146	アームに反力が発生
+T7	Argument 148 159	ウォームホイールを介し
+T8	Argument 185 197	接点部にアーク放電が発生
+T9	Argument 200 202	最悪
+T10	Argument 206 211	火災に至る
+T11	Connective 43 45	ため
+T12	Connective 82 86	そのため
+T14	Connective 116 117	と
+T15	Connective 147 148	、
+T16	Connective 184 185	で
+T17	Connective 198 199	て
+T18	Connective 203 205	場合
+R1	REASON Arg1:T11 Arg2:T1	
+R2	RESULT Arg1:T11 Arg2:T2	
+R3	REASON Arg1:T12 Arg2:T2	
+R7	CONDITION Arg1:T14 Arg2:T4	
+R8	RESULT Arg1:T14 Arg2:T5	
+T19	Connective 136 137	ず
+R9	REASON Arg1:T19 Arg2:T5	
+R10	RESULT Arg1:T19 Arg2:T6	
+R11	REASON Arg1:T15 Arg2:T6	
+R14	RESULT Arg1:T16 Arg2:T8	
+R15	REASON Arg1:T17 Arg2:T8	
+R17	CONDITION Arg1:T18 Arg2:T9	
+R18	RESULT Arg1:T18 Arg2:T10	
+R4	RESULT Arg1:T12 Arg2:T5	
+T20	Connective 159 160	て
+T21	Argument 160 182	リレージョイントの接点部がオンオフを繰り返す
+R12	RESULT Arg1:T15 Arg2:T21	
+R13	REASON Arg1:T20 Arg2:T7	
+R19	RESULT Arg1:T20 Arg2:T21	
+R20	REASON Arg1:T16 Arg2:T21	
+R16	RESULT Arg1:T17 Arg2:T10	

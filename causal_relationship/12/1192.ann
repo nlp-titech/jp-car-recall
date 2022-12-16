@@ -1,0 +1,29 @@
+T1	Argument 1 30	原動機の冷却ファンを駆動するファンシャフトギヤの強度が不足
+T2	Connective 34 36	ため
+T3	Argument 37 53	当該ギヤが低回転時に共振を起こし
+T4	Connective 63 67	そのため
+T5	Argument 68 78	そのまま使用を続ける
+T6	Connective 78 79	と
+T7	Argument 80 85	ギヤが損傷
+T8	Connective 86 87	、
+T9	Argument 87 89	最悪
+T10	Connective 90 92	場合
+T11	Argument 93 100	ギヤの歯が欠損
+T12	Connective 101 102	て
+T13	Argument 102 118	エンジンが停止し再始動不能となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T14	
+R4	CONDITION Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T7	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	CONDITION Arg1:T10 Arg2:T9	
+R8	RESULT Arg1:T8 Arg2:T11	
+R9	RESULT Arg1:T10 Arg2:T11	
+R10	REASON Arg1:T12 Arg2:T11	
+R11	RESULT Arg1:T12 Arg2:T13	
+R12	REASON Arg1:T8 Arg2:T7	
+T14	Argument 53 55	摩耗
+T15	Connective 52 53	し
+R13	REASON Arg1:T15 Arg2:T3	
+R14	RESULT Arg1:T15 Arg2:T14	

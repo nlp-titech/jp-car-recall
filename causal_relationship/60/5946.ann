@@ -1,0 +1,27 @@
+T1	Argument 0 41	助手席エアバッグのインフレーター（膨張装置）において、ガス発生剤の成型工程が不適切
+T2	Argument 43 57	成型後の吸湿防止措置が不適切
+T3	Connective 58 60	ため
+T4	Argument 61 79	密度が不足したガス発生剤が組み込まれ
+T5	Connective 86 90	そのため
+T6	Argument 100 114	インフレーター内圧が異常上昇
+T7	Connective 115 116	、
+T8	Argument 116 128	インフレーター容器が破損
+T9	Connective 129 130	て
+T10	Argument 130 134	飛び散り
+T11	Connective 134 135	、
+T12	Argument 135 137	出火
+R1	REASON Arg1:T3 Arg2:T2	
+R2	REASON Arg1:T3 Arg2:T1	
+R3	RESULT Arg1:T3 Arg2:T4	
+R4	REASON Arg1:T5 Arg2:T4	
+R5	RESULT Arg1:T5 Arg2:T6	
+R6	REASON Arg1:T7 Arg2:T6	
+R7	RESULT Arg1:T7 Arg2:T8	
+R8	REASON Arg1:T9 Arg2:T8	
+R9	RESULT Arg1:T9 Arg2:T10	
+R10	REASON Arg1:T11 Arg2:T10	
+R11	RESULT Arg1:T11 Arg2:T12	
+T14	Argument 91 98	エアバッグ展開
+T17	Connective 98 99	時
+R12	CONDITION Arg1:T17 Arg2:T14	
+R13	RESULT Arg1:T17 Arg2:T6	

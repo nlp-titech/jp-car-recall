@@ -1,0 +1,13 @@
+T1	Argument 17 40	メーターパネル制御ユニットのプログラムが不適切
+T2	Connective 41 43	ため
+T3	Argument 44 58	シートベルト非装着状態で走行
+T4	Connective 58 59	中
+T5	Argument 60 89	協定規則第１６号の技術的な要件に定められた警報が行われない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 90 94	そのため
+T7	Argument 95 114	保安基準第２２条の３の基準に適合しない
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

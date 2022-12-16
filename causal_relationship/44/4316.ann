@@ -1,0 +1,33 @@
+T1	Argument 0 32	農耕トラクタの水平制御用バルブにおいて、油圧絞り弁の構造が不適切
+T2	Connective 33 35	ため
+T3	Argument 52 67	油圧ポンプに過大な圧力がかかる
+T4	Connective 73 77	そのため
+T5	Argument 94 109	油圧ポンプのオイルシールが破損
+T6	Connective 110 111	、
+T7	Argument 111 123	エンジン内に作動油が流入
+T8	Connective 125 126	、
+T9	Argument 132 149	トランスミッションが作動不良となり
+T10	Connective 149 150	、
+T11	Argument 150 157	走行不能になる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T14	Argument 36 47	重作業機を装着して作業
+T15	Connective 49 51	場合
+R11	CONDITION Arg1:T15 Arg2:T14	
+R12	RESULT Arg1:T15 Arg2:T3	
+T16	Argument 78 92	そのままの状態で使用を続ける
+T17	Connective 92 93	と
+R13	CONDITION Arg1:T17 Arg2:T16	
+R14	RESULT Arg1:T17 Arg2:T5	
+T18	Argument 126 128	最悪
+T19	Connective 129 131	場合
+R15	CONDITION Arg1:T19 Arg2:T18	
+R16	RESULT Arg1:T19 Arg2:T9	

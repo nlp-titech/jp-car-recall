@@ -1,0 +1,31 @@
+T1	Argument 0 34	冷却ファン用サーモスイッチにおいて、設計不良により防水シールが不適切
+T3	Argument 38 45	内部に水が侵入
+T4	Argument 47 51	ショート
+T5	Argument 64 76	冷却ファンが作動し続ける
+T6	Argument 79 84	作動しない
+T8	Argument 104 111	オーバーヒート
+T9	Argument 113 121	エンジン出力不足
+T10	Argument 125 127	最悪
+T11	Argument 131 142	エンジンが走行中に停止
+T13	Connective 35 37	ため
+T14	Connective 46 47	、
+T15	Connective 59 63	そのため
+T16	Connective 101 103	場合
+T17	Connective 112 113	、
+T18	Connective 124 125	、
+T19	Connective 128 130	場合
+R3	REASON Arg1:T13 Arg2:T1	
+R4	RESULT Arg1:T13 Arg2:T3	
+R5	REASON Arg1:T14 Arg2:T3	
+R6	RESULT Arg1:T14 Arg2:T4	
+R7	REASON Arg1:T15 Arg2:T4	
+R8	RESULT Arg1:T15 Arg2:T5	
+R9	RESULT Arg1:T15 Arg2:T6	
+R11	RESULT Arg1:T16 Arg2:T8	
+R12	REASON Arg1:T17 Arg2:T8	
+R13	RESULT Arg1:T17 Arg2:T9	
+R14	REASON Arg1:T18 Arg2:T9	
+R15	RESULT Arg1:T18 Arg2:T11	
+R16	CONDITION Arg1:T19 Arg2:T10	
+R17	RESULT Arg1:T19 Arg2:T11	
+R10	CONDITION Arg1:T16 Arg2:T6	

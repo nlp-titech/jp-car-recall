@@ -1,0 +1,17 @@
+T1	Argument 18 50	燃料ポンプを保護するフィルタ（プレフィルタ）の取付け角度が不適切
+T4	Argument 54 73	温度変化により発生する水分が冬期に凍結
+T5	Argument 75 86	燃料吸い込み口をふさぐ
+T6	Argument 97 108	燃料供給ができなくなり
+T7	Argument 109 116	エンジンが停止
+T8	Connective 51 53	ため
+T10	Connective 74 75	、
+T11	Connective 92 96	そのため
+T12	Connective 108 109	、
+R1	REASON Arg1:T8 Arg2:T1	
+R5	REASON Arg1:T10 Arg2:T4	
+R6	RESULT Arg1:T10 Arg2:T5	
+R8	REASON Arg1:T11 Arg2:T5	
+R9	RESULT Arg1:T11 Arg2:T6	
+R10	REASON Arg1:T12 Arg2:T6	
+R11	RESULT Arg1:T12 Arg2:T7	
+R2	RESULT Arg1:T8 Arg2:T4	

@@ -1,0 +1,21 @@
+T1	Argument 0 29	ステアリングギヤボックスにおいて、ラックギヤの製造が不適切
+T2	Argument 33 38	強度が不足
+T3	Argument 62 64	損傷
+T4	Argument 66 68	最悪
+T5	Argument 72 85	ハンドル操作ができなくなる
+T6	Connective 30 32	ため
+T7	Connective 48 52	そのため
+T8	Connective 65 66	、
+T9	Connective 69 71	場合
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R7	REASON Arg1:T8 Arg2:T3	
+R9	CONDITION Arg1:T9 Arg2:T4	
+R10	RESULT Arg1:T9 Arg2:T5	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	RESULT Arg1:T8 Arg2:T5	
+T10	Argument 53 57	使用過程
+T11	Connective 57 61	において
+R6	CONDITION Arg1:T11 Arg2:T10	
+R8	RESULT Arg1:T11 Arg2:T3	

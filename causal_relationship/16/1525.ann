@@ -1,0 +1,9 @@
+T1	Argument 0 16	かじ取装置のタイロッドの製作誤差
+T2	Argument 20 28	最大かじ取り操作
+T3	Argument 30 52	タイロッドエンドが車枠のアクスル取付座に干渉
+T4	Connective 16 19	により
+T5	Connective 28 29	時
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T3	
+R3	CONDITION Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	

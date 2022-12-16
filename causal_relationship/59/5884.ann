@@ -1,0 +1,64 @@
+T3	Argument 2 44	燃料タンクのポンプモーター配線端子において、当該端子接続部が電気発熱と冷却の繰り返し
+T4	Connective 44 47	により
+T5	Argument 47 49	緩み
+T6	Connective 49 50	、
+T7	Argument 50 57	接触不良となっ
+T8	Connective 57 58	て
+T9	Argument 58 66	発熱と放電が発生
+T10	Connective 69 73	このため
+T11	Argument 74 84	端子接続部が熱で溶け
+T12	Connective 91 92	で
+T13	Argument 92 107	燃料供給が止まりエンジンが停止
+T14	Argument 111 122	端子接続部の周囲が熔損
+T15	Connective 126 129	により
+T16	Argument 129 133	穴が開き
+T17	Connective 133 134	、
+T18	Argument 138 144	燃料が漏れる
+T19	Connective 146 147	、
+T20	Argument 147 149	最悪
+T21	Connective 150 152	場合
+T22	Argument 153 166	漏れた燃料が火花により着火
+T23	Connective 166 167	し
+T24	Argument 167 172	火災に至る
+T25	Argument 201 217	燃料フィラーホースの材質が不適切
+T26	Connective 218 220	ため
+T27	Argument 227 229	腐食
+T28	Connective 230 231	て
+T29	Argument 231 236	亀裂が発生
+T30	Connective 236 237	し
+T31	Argument 237 243	燃料が漏れる
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T2	
+R12	RESULT Arg1:T12 Arg2:T13	
+R14	REASON Arg1:T15 Arg2:T14	
+R15	RESULT Arg1:T15 Arg2:T16	
+R16	REASON Arg1:T17 Arg2:T16	
+R17	RESULT Arg1:T17 Arg2:T18	
+R18	REASON Arg1:T19 Arg2:T18	
+R20	RESULT Arg1:T19 Arg2:T22	
+R21	CONDITION Arg1:T21 Arg2:T20	
+R22	RESULT Arg1:T21 Arg2:T22	
+R23	REASON Arg1:T23 Arg2:T22	
+R24	RESULT Arg1:T23 Arg2:T24	
+R25	REASON Arg1:T26 Arg2:T25	
+R26	RESULT Arg1:T26 Arg2:T27	
+R27	REASON Arg1:T28 Arg2:T27	
+R28	RESULT Arg1:T28 Arg2:T29	
+R29	REASON Arg1:T30 Arg2:T29	
+R30	RESULT Arg1:T30 Arg2:T31	
+T1	Connective 84 85	て
+T2	Argument 85 87	断線
+R1	REASON Arg1:T1 Arg2:T11	
+R2	RESULT Arg1:T1 Arg2:T2	
+R13	RESULT Arg1:T10 Arg2:T14	
+T32	Connective 223 227	によって
+T33	Argument 221 223	燃料
+R19	REASON Arg1:T32 Arg2:T33	
+R31	RESULT Arg1:T32 Arg2:T27	

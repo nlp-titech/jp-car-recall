@@ -1,0 +1,33 @@
+T1	Argument 10 45	燃料蒸発ガス排出抑止装置（キャニスター）につながるパイプの形状が不適切
+T2	Connective 46 48	ため
+T5	Argument 49 84	燃料満タン時にサイドスタンドで停車をする等、タンク内で燃料の液面が揺れ
+T6	Connective 85 87	際に
+T3	Argument 88 107	当該パイプからキャニスターに燃料が流入
+T4	Connective 115 119	そのため
+T7	Argument 120 130	そのまま使用を続ける
+T8	Connective 130 131	と
+T9	Argument 132 145	キャニスターに燃料が溜まり
+T10	Connective 145 146	、
+T11	Argument 146 158	エンジンに濃い燃料が供給
+T12	Connective 160 161	て
+T13	Argument 161 170	エンジン不調となり
+T14	Connective 170 171	、
+T15	Argument 171 173	最悪
+T16	Connective 174 176	場合
+T17	Argument 177 185	走行中にエンスト
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T6 Arg2:T5	
+R3	RESULT Arg1:T6 Arg2:T3	
+R4	RESULT Arg1:T2 Arg2:T3	
+R5	REASON Arg1:T4 Arg2:T3	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	RESULT Arg1:T4 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	CONDITION Arg1:T16 Arg2:T15	
+R15	RESULT Arg1:T16 Arg2:T17	
+R16	RESULT Arg1:T14 Arg2:T17	

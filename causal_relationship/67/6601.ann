@@ -1,0 +1,9 @@
+T1	Argument 0 37	連節バスにおいて、①ワンマンバス構造要件に適合させるための改善措置が不適切
+T2	Connective 38 40	ため
+T3	Argument 41 78	中扉及び後扉付近に乗客がいる場合であっても、運転者の操作により当該扉が開く
+T6	Connective 84 88	そのため
+T7	Argument 89 108	ワンマンバスの構造要件に適合しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R6	RESULT Arg1:T6 Arg2:T7	
+R3	REASON Arg1:T6 Arg2:T3	

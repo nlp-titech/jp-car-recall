@@ -1,0 +1,25 @@
+T1	Argument 83 108	留金具（燃料ホースを固定する金具）を過度に締めつけ
+T2	Connective 114 115	、
+T3	Argument 139 153	当該燃料ホースが変形又は損傷
+T4	Connective 154 155	て
+T5	Argument 155 160	燃料が漏れ
+T6	Connective 160 161	、
+T7	Argument 167 172	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 130 135	原動機の熱
+T9	Connective 135 138	により
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 115 129	このままの状態で使用を続ける
+T11	Connective 129 130	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T8	
+T12	Argument 161 163	最悪
+T13	Connective 164 166	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T7	

@@ -1,0 +1,21 @@
+T1	Argument 0 43	大型貨物車の原動機のＶＧＳ（可変翼式）ターボチャージャにおいて、タービン翼の強度が不足
+T2	Connective 47 49	ため
+T3	Argument 50 58	高回転域での共振
+T4	Connective 58 61	により
+T5	Argument 62 70	タービン翼が破損
+T6	Connective 78 82	そのため
+T7	Argument 83 93	そのまま使用を続ける
+T8	Connective 106 109	により
+T9	Argument 110 118	運行できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T11	
+R7	REASON Arg1:T8 Arg2:T11	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Connective 93 94	と
+T11	Argument 95 106	白煙の発生及び出力不足
+R9	CONDITION Arg1:T10 Arg2:T7	
+R10	RESULT Arg1:T10 Arg2:T11	

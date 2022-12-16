@@ -1,0 +1,49 @@
+T2	Argument 50 55	強度が不足
+T3	Argument 65 80	規定トルクでナットを締め付ける
+T4	Argument 81 89	当該ボルトが伸び
+T5	Argument 90 95	軸力が低下
+T6	Argument 97 111	そのままの状態で使用を続ける
+T7	Argument 113 121	エンジンの振動等
+T8	Argument 124 130	ナットが緩み
+T9	Argument 131 133	最悪
+T10	Argument 137 142	ナットが外
+T11	Argument 144 151	エンジンが傾き
+T12	Argument 152 163	プロペラシャフトが破損
+T13	Argument 165 172	走行不能となる
+T14	Connective 47 49	ため
+T15	Connective 60 64	そのため
+T16	Connective 80 81	と
+T17	Connective 89 90	て
+T18	Connective 96 97	、
+T19	Connective 111 112	と
+T20	Connective 121 124	により
+T21	Connective 134 136	場合
+T22	Connective 143 144	て
+T23	Connective 151 152	、
+T24	Connective 164 165	て
+R2	RESULT Arg1:T14 Arg2:T2	
+R3	REASON Arg1:T15 Arg2:T2	
+R4	RESULT Arg1:T15 Arg2:T4	
+R5	REASON Arg1:T16 Arg2:T3	
+R6	RESULT Arg1:T16 Arg2:T4	
+R7	REASON Arg1:T17 Arg2:T4	
+R8	RESULT Arg1:T17 Arg2:T5	
+R9	REASON Arg1:T18 Arg2:T5	
+R10	RESULT Arg1:T18 Arg2:T8	
+R11	CONDITION Arg1:T19 Arg2:T6	
+R12	RESULT Arg1:T19 Arg2:T8	
+R13	REASON Arg1:T20 Arg2:T7	
+R14	RESULT Arg1:T20 Arg2:T8	
+T25	Connective 130 131	、
+R15	REASON Arg1:T25 Arg2:T8	
+R16	RESULT Arg1:T25 Arg2:T10	
+R17	CONDITION Arg1:T21 Arg2:T9	
+R18	RESULT Arg1:T21 Arg2:T10	
+R19	REASON Arg1:T22 Arg2:T10	
+R20	RESULT Arg1:T22 Arg2:T11	
+R21	REASON Arg1:T23 Arg2:T11	
+R22	RESULT Arg1:T23 Arg2:T12	
+R23	REASON Arg1:T24 Arg2:T12	
+R24	RESULT Arg1:T24 Arg2:T13	
+T1	Argument 8 47	エンジンマウントインシュレータにおいて、スタッドボルトの熱処理が行われていない
+R1	REASON Arg1:T14 Arg2:T1	

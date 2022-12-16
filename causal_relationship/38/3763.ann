@@ -1,0 +1,33 @@
+T1	Argument 0 45	オーディオアンプにおいて、冷却用開口部の近くにあるスピーカー駆動用素子に保護する回路がない
+T2	Argument 48 51	異物等
+T3	Argument 54 61	当該素子が短絡
+T4	Argument 65 71	過電流が流れ
+T5	Argument 72 77	素子が損傷
+T6	Argument 90 95	基板が焼損
+T7	Argument 97 99	最悪
+T9	Argument 103 117	基板焼損時の可燃性ガスが発火
+T10	Argument 119 124	火災に至る
+T11	Connective 45 47	ため
+T12	Connective 51 54	により
+T13	Connective 63 64	と
+T14	Connective 71 72	、
+T15	Connective 85 89	そのため
+T16	Connective 96 97	、
+T17	Connective 100 102	場合
+T19	Connective 118 119	、
+R1	REASON Arg1:T11 Arg2:T1	
+R2	RESULT Arg1:T11 Arg2:T4	
+R3	REASON Arg1:T12 Arg2:T2	
+R4	RESULT Arg1:T12 Arg2:T3	
+R5	CONDITION Arg1:T13 Arg2:T3	
+R6	RESULT Arg1:T13 Arg2:T4	
+R7	REASON Arg1:T14 Arg2:T4	
+R8	RESULT Arg1:T14 Arg2:T5	
+R9	REASON Arg1:T15 Arg2:T5	
+R10	RESULT Arg1:T15 Arg2:T6	
+R11	REASON Arg1:T16 Arg2:T6	
+R12	RESULT Arg1:T16 Arg2:T9	
+R13	CONDITION Arg1:T17 Arg2:T7	
+R14	RESULT Arg1:T17 Arg2:T9	
+R17	REASON Arg1:T19 Arg2:T9	
+R18	RESULT Arg1:T19 Arg2:T10	

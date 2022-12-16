@@ -1,0 +1,33 @@
+T1	Argument 10 54	前前軸右側タイロッドエンドの固定クランプ締付けボルトのメッキ前処理（酸洗い）工程が不適切
+T2	Connective 55 57	ため
+T3	Argument 65 74	ボルトの強度が低下
+T4	Argument 58 62	水素脆化
+T5	Connective 62 65	により
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T4	
+R3	REASON Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T3	
+T6	Connective 84 88	そのため
+T7	Argument 105 111	ボルトが破断
+T8	Connective 112 113	て
+T9	Argument 113 128	タイロッドエンド部にガタが生じ
+T10	Connective 128 129	、
+T11	Argument 135 147	タイロッドチューブが破損
+T12	Connective 148 149	て
+T13	Argument 150 157	操舵不能になる
+R5	REASON Arg1:T6 Arg2:T3	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+T18	Argument 89 103	そのままの状態で使用を続ける
+T19	Connective 103 104	と
+R13	CONDITION Arg1:T19 Arg2:T18	
+R14	RESULT Arg1:T19 Arg2:T7	
+T20	Argument 129 131	最悪
+T21	Connective 132 134	場合
+R15	CONDITION Arg1:T21 Arg2:T20	
+R16	RESULT Arg1:T21 Arg2:T11	
+R10	RESULT Arg1:T10 Arg2:T11	

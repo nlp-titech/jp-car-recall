@@ -1,0 +1,25 @@
+T1	Argument 15 47	燃料分配器の先端にある密封栓（シールプラグ）の取付け方法が不適切
+T2	Connective 48 50	ため
+T3	Argument 79 91	当該密封栓の密着性が低下
+T4	Connective 92 93	て
+T5	Argument 93 101	燃料漏れを起こし
+T6	Argument 108 113	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T7	Connective 101 102	、
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	
+T8	Argument 67 72	原動機の熱
+T9	Connective 75 78	により
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 51 65	このままの状態で使用を続ける
+T11	Connective 65 66	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	
+T12	Argument 102 104	最悪
+T13	Connective 105 107	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T6	

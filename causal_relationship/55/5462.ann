@@ -1,0 +1,37 @@
+T1	Argument 0 25	燃料タンク内圧調整用ゴム製ホースが固定されていない
+T2	Connective 25 27	ため
+T3	Argument 28 41	当該ホースがシートに挟まれ
+T4	Connective 41 42	、
+T5	Argument 42 45	潰れる
+T6	Connective 51 55	そのため
+T7	Argument 61 69	外気温が高くなる
+T8	Connective 69 70	と
+T9	Argument 70 81	燃料タンクの内圧が上昇
+T10	Connective 82 83	、
+T11	Argument 83 91	燃料タンクが膨張
+T12	Connective 95 98	により
+T13	Argument 99 113	燃料タンク底部が後車輪と干渉
+T14	Connective 114 115	、
+T15	Argument 121 129	燃料タンクが破損
+T16	Connective 130 131	、
+T17	Argument 131 137	燃料が漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R15	REASON Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T17	
+T18	Argument 115 117	最悪
+T19	Connective 118 120	場合
+R17	CONDITION Arg1:T19 Arg2:T18	
+R18	RESULT Arg1:T19 Arg2:T15	

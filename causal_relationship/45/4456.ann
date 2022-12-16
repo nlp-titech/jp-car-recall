@@ -1,0 +1,9 @@
+T1	Argument 0 25	ボンネットの補助ロック装置に正しく調整されていない
+T2	Connective 30 31	、
+T3	Argument 54 76	ボンネットが補助ロックの位置で止まらずに開く
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 31 49	主ロック装置が何らかの要因により解除
+T5	Connective 52 53	時
+R3	CONDITION Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T3	

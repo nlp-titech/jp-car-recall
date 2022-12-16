@@ -1,0 +1,9 @@
+T1	Argument 17 36	燃料タンクのブリーザの取り回しが不適切
+T2	Connective 37 39	ため
+T3	Argument 40 68	ブリーザの開口部の位置が露出端子から２００ｍｍ未満にあり
+T4	Connective 68 69	、
+T5	Argument 69 79	保安基準に適合しない
+R1	RESULT Arg1:T4 Arg2:T5	
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T3	
+R4	REASON Arg1:T2 Arg2:T1	

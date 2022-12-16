@@ -1,0 +1,60 @@
+T1	Argument 0 68	４バック式空気ばね緩衝装置付車両の後車軸を車枠に固定するＶロッド中央部のボールジョイント部において、ナットが十分に締め付けられていなかっ
+T2	Connective 74 75	、
+T3	Argument 75 89	そのままの状態で使用を続ける
+T4	Connective 89 90	と
+T5	Argument 101 109	当該ナットが緩み
+T6	Argument 123 141	当該ボールジョイント部の防水性が不足
+T7	Connective 145 147	ため
+T8	Argument 148 155	水が内部に浸入
+T9	Connective 156 157	て
+T10	Argument 157 161	錆が発生
+T11	Connective 162 163	、
+T12	Argument 163 177	そのままの状態で使用を続ける
+T13	Connective 177 178	と
+T14	Argument 179 189	樹脂ベアリングが摩耗
+T15	Connective 190 191	て
+T16	Argument 191 196	がたが発生
+T17	Connective 204 208	そのため
+T18	Argument 209 220	Ｖロッドから車軸が離脱
+T19	Connective 221 222	、
+T20	Argument 222 232	後車軸が横方向にずれ
+T21	Connective 232 233	て
+T22	Argument 233 243	操縦安定性が損なわれ
+T24	Argument 246 259	タイヤホイールが車体と接触
+T25	Connective 260 261	、
+T26	Argument 261 263	最悪
+T27	Connective 264 266	場合
+T28	Argument 267 272	火災が発生
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T8	
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T10	
+R9	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T14	
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T14	
+R13	REASON Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T16	
+R15	REASON Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T18	
+R17	REASON Arg1:T19 Arg2:T18	
+R18	RESULT Arg1:T19 Arg2:T20	
+R19	REASON Arg1:T21 Arg2:T20	
+R20	RESULT Arg1:T21 Arg2:T22	
+R22	REASON Arg1:T25 Arg2:T24	
+R23	RESULT Arg1:T25 Arg2:T28	
+R24	CONDITION Arg1:T27 Arg2:T26	
+R25	RESULT Arg1:T27 Arg2:T28	
+T35	Argument 91 100	走行中の振動、荷重
+T36	Connective 100 101	で
+R26	REASON Arg1:T36 Arg2:T35	
+R27	RESULT Arg1:T36 Arg2:T5	
+T37	Connective 109 110	、
+T38	Argument 110 112	脱落
+R28	REASON Arg1:T37 Arg2:T5	
+R29	RESULT Arg1:T37 Arg2:T38	
+R21	RESULT Arg1:T17 Arg2:T24	

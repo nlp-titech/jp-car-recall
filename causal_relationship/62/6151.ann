@@ -1,0 +1,5 @@
+T1	Argument 13 45	前照灯照射方向調節装置コントロールモジュールのプログラムが不適切
+T2	Connective 46 48	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 49 89	当該装置による自動車の乗車又は積載の状態に応じた照射方向が保安基準第３２条に抵触
+R2	RESULT Arg1:T2 Arg2:T3	

@@ -1,0 +1,17 @@
+T1	Argument 4 30	空気吸入間の取付位置及び吸入管カバーの排水口が不適切
+T2	Connective 31 33	ため
+T3	Argument 38 51	水が当該空気吸入口より入り
+T4	Connective 51 52	、
+T5	Argument 58 64	原動機が停止
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 34 37	豪雨時
+T7	Connective 37 38	に
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 52 54	最悪
+T9	Connective 55 57	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

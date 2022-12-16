@@ -1,0 +1,25 @@
+T1	Argument 0 37	トランスミッションの変速操作を行う変速ユニット内のレバーの製造工程が不適切
+T2	Connective 38 40	ため
+T3	Argument 41 55	当該レバーに微細な亀裂が生じ
+T4	Connective 64 68	そのため
+T5	Argument 81 89	当該レバーが折損
+T6	Connective 90 91	、
+T7	Argument 91 95	変速不能
+T8	Connective 98 99	、
+T9	Argument 105 112	走行不能となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 69 79	そのまま使用を続ける
+T11	Connective 79 80	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	
+T12	Argument 99 101	最悪
+T13	Connective 102 104	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T9	

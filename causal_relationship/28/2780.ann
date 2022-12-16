@@ -1,0 +1,17 @@
+T1	Argument 1 57	ディーゼルエンジン車の手動変速機搭載車において、クラッチペダルブラケットのマスターシリンダ取り付け部の強度が不足
+T2	Connective 61 63	ため
+T4	Argument 64 88	クラッチ作動時の抵抗が増大した状態で使用を続ける
+T5	Connective 88 89	と
+T6	Argument 90 100	当該ブラケットが破損
+T7	Connective 101 102	、
+T8	Argument 108 119	クラッチが切れなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T6	
+R3	CONDITION Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T6	
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T8	
+T3	Argument 102 104	最悪
+T9	Connective 105 107	場合
+R7	CONDITION Arg1:T9 Arg2:T3	
+R8	RESULT Arg1:T9 Arg2:T8	

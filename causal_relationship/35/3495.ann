@@ -1,0 +1,13 @@
+T1	Argument 24 32	装着指示が不適切
+T2	Connective 33 35	ため
+T3	Argument 36 48	切れ角の大きい仕様を装着
+T4	Connective 56 60	そのため
+T5	Argument 61 81	ハンドルを最大限度まで切った状態で急制動
+T6	Connective 84 86	場合
+T7	Argument 87 98	タイヤが他の部品と接触
+R1	RESULT Arg1:T6 Arg2:T7	
+R2	CONDITION Arg1:T6 Arg2:T5	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	REASON Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T2 Arg2:T3	
+R6	REASON Arg1:T2 Arg2:T1	

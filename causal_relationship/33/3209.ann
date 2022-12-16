@@ -1,0 +1,25 @@
+T1	Argument 0 51	ハイブリッド車の７速ＤＣＴ型自動変速機において、変速機内の１速ギヤのハブ上をスリーブが滑らかに動かない
+T2	Connective 57 61	そのため
+T3	Argument 62 73	１速ギヤがかみ合わない
+T4	Connective 73 75	ため
+T5	Argument 77 101	発進不良（発進までに時間がかかる、発進しない等）
+T6	Argument 148 156	意図しない急発進
+T8	Argument 169 191	メータディスプレイのシフトポジションが全点灯
+R3	RESULT Arg1:T4 Arg2:T5	
+R2	RESULT Arg1:T2 Arg2:T3	
+R4	REASON Arg1:T4 Arg2:T3	
+R1	RESULT Arg1:T2 Arg2:T8	
+R6	REASON Arg1:T2 Arg2:T1	
+T7	Argument 135 144	急に１速がかみ合う
+T9	Connective 144 146	ため
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T6	
+T11	Argument 196 211	トランスミッション警告灯が点滅
+T12	Argument 213 243	メータディスプレイに「トランスミッション点検」の表示がされる
+R11	RESULT Arg1:T2 Arg2:T11	
+R5	RESULT Arg1:T2 Arg2:T7	
+R9	RESULT Arg1:T2 Arg2:T12	
+T10	Argument 102 111	坂道でのずり下がり
+T13	Argument 112 128	加速不良（エンジンの吹け上がり）
+R10	RESULT Arg1:T4 Arg2:T10	
+R12	RESULT Arg1:T4 Arg2:T13	

@@ -1,0 +1,17 @@
+T1	Argument 0 23	電動パワーステアリングの制御プログラムが不適切
+T2	Connective 24 26	ため
+T3	Argument 27 30	冷間時
+T4	Connective 31 34	おいて
+T5	Argument 35 79	電動パワーステアリングに不具合が発生していないにもかかわらず、当該プログラムが故障と判断
+T6	Connective 87 91	そのため
+T7	Argument 92 119	警告灯が点灯してパワーステアリングのアシスト機能が停止
+T8	Connective 120 121	、
+T9	Argument 121 134	ステアリングの操作力が増大
+R1	RESULT Arg1:T8 Arg2:T9	
+R2	REASON Arg1:T8 Arg2:T7	
+R3	RESULT Arg1:T6 Arg2:T7	
+R4	REASON Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T5	
+R6	CONDITION Arg1:T4 Arg2:T3	
+R7	RESULT Arg1:T2 Arg2:T5	
+R8	REASON Arg1:T2 Arg2:T1	

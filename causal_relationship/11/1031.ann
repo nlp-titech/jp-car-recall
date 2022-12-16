@@ -1,0 +1,9 @@
+T1	Argument 0 25	駐車ブレーキケーブルの取り廻し及び固定方法が不適切
+T2	Connective 31 33	ため
+T5	Argument 34 72	駐車ブレーキ操作時にレバー側ケーブル端部のクリップから当該ケーブルが抜け出し
+T6	Connective 72 73	、
+T7	Argument 73 86	駐車ブレーキが効かなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

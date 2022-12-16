@@ -1,0 +1,13 @@
+T1	Argument 2 49	アクセルペダルに備えられているアクセル開度センサにおいて、ハーネスクランプの締付けトルクが不足
+T2	Connective 58 60	ため
+T3	Argument 61 75	そのままの状態で使用を続ける
+T4	Connective 75 76	と
+T5	Argument 76 85	当該クランプが外れ
+T6	Connective 85 86	、
+T7	Argument 86 110	アクセル開度センサハーネスとアクセルペダルが干渉
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

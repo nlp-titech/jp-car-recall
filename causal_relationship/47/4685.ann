@@ -1,0 +1,21 @@
+T1	Argument 1 103	コンバーチブル車両のイージーエントリーシステム（後部座席の乗員が乗り降りしやすくするため、前部座席の背もたれが前方に倒れると同時に座席が前方に移動する装置）において、当該システムのロック機構の材質が不適切
+T2	Connective 104 106	ため
+T3	Argument 123 133	当該ロック機構が破損
+T4	Connective 134 135	、
+T5	Argument 135 146	座席が固定できなくなり
+T6	Connective 146 147	、
+T7	Argument 152 162	前部座席が前後に移動
+T8	Argument 147 151	加減速時
+T9	Connective 151 152	に
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T7	
+T10	Argument 107 121	そのままの状態で使用を続ける
+T11	Connective 121 122	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	

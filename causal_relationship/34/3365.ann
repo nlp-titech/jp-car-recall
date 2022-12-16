@@ -1,0 +1,13 @@
+T1	Argument 0 33	エアバッグコントロールユニットにおいて、加速度センサＩＣが製造不良
+T2	Connective 34 36	ため
+T3	Argument 37 50	エアバッグが作動不良となる
+T4	Connective 56 60	そのため
+T5	Argument 61 67	警告灯が点灯
+T7	Argument 69 84	衝突時にエアバッグが展開しない
+T8	Argument 88 97	走行中などに誤展開
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T4 Arg2:T3	
+R6	RESULT Arg1:T2 Arg2:T3	
+R7	REASON Arg1:T2 Arg2:T1	
+R1	RESULT Arg1:T4 Arg2:T7	
+R2	RESULT Arg1:T4 Arg2:T8	

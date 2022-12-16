@@ -1,0 +1,21 @@
+T1	Argument 21 50	Ｖ型ステーロッドのジョイント部のダストカバーの気密性が不足
+T2	Connective 54 56	ため
+T3	Argument 57 71	当該ジョイント内部に水が浸入
+T4	Connective 72 73	、
+T5	Argument 73 89	内部のボールジョイントに錆が発生
+T6	Connective 97 101	そのため
+T7	Argument 114 131	ボールジョイントの取付ボルトが折損
+T8	Connective 132 133	て
+T9	Argument 133 144	走行安定性が損なわれる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 102 112	そのまま使用を続ける
+T11	Connective 112 113	と
+R10	RESULT Arg1:T11 Arg2:T7	
+R11	CONDITION Arg1:T11 Arg2:T10	

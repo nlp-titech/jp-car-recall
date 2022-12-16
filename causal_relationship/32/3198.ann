@@ -1,0 +1,9 @@
+T1	Argument 0 42	動力伝達装置の前後進用油圧クラッチのコントローラにおいて、走行制御プログラムが不適切
+T2	Connective 43 45	ため
+T3	Argument 46 57	右操舵後、すぐに左操舵
+T4	Connective 59 60	と
+T5	Argument 61 69	意図しない急旋回
+R1	RESULT Arg1:T4 Arg2:T5	
+R3	RESULT Arg1:T2 Arg2:T3	
+R4	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	

@@ -1,0 +1,13 @@
+T1	Argument 10 36	燃料タンクと給油口を接続しているホースの材質が不適切
+T2	Connective 42 44	ため
+T3	Argument 61 72	当該ホースに亀裂が発生
+T4	Connective 73 74	て
+T5	Argument 74 80	燃料が漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 45 59	そのままの状態で使用を続ける
+T7	Connective 59 60	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	

@@ -1,0 +1,31 @@
+T2	Argument 41 48	転舵の繰り返し
+T3	Argument 51 57	油圧が掛かる
+T4	Argument 59 68	当該ホースが外れる
+T5	Argument 79 85	オイルが漏れ
+T6	Argument 86 94	操舵力が重くなり
+T7	Argument 95 97	最悪
+T8	Argument 101 115	飛散したオイルが排気管に付着
+T9	Argument 117 122	火災に至る
+T10	Connective 38 40	ため
+T11	Connective 48 51	により
+T12	Connective 57 58	と
+T13	Connective 74 78	そのため
+T14	Connective 85 86	て
+T16	Connective 98 100	場合
+T17	Connective 116 117	、
+R2	RESULT Arg1:T10 Arg2:T4	
+R3	REASON Arg1:T11 Arg2:T2	
+R4	RESULT Arg1:T11 Arg2:T3	
+R5	CONDITION Arg1:T12 Arg2:T3	
+R6	RESULT Arg1:T12 Arg2:T4	
+R7	REASON Arg1:T13 Arg2:T4	
+R8	RESULT Arg1:T13 Arg2:T5	
+R9	REASON Arg1:T14 Arg2:T5	
+R10	RESULT Arg1:T14 Arg2:T6	
+R13	CONDITION Arg1:T16 Arg2:T7	
+R14	RESULT Arg1:T16 Arg2:T8	
+R15	REASON Arg1:T17 Arg2:T8	
+R16	RESULT Arg1:T17 Arg2:T9	
+R11	RESULT Arg1:T14 Arg2:T8	
+T1	Argument 10 37	油圧ホースにおいて、ゴムホースと口金具の加締めが不適切
+R1	REASON Arg1:T10 Arg2:T1	

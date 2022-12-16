@@ -1,0 +1,29 @@
+T1	Argument 0 48	後軸のディファレンシャル（作動装置）のボルトが、ジョンディア社の生産工場で適切に締結されていない
+T2	Connective 48 50	ため
+T3	Argument 51 57	走行中に緩む
+T4	Connective 63 67	そのため
+T5	Argument 68 82	そのままの状態で使用を続ける
+T6	Connective 82 83	と
+T7	Argument 84 93	緩んだボルトが脱落
+T8	Connective 101 102	、
+T9	Argument 102 104	最悪
+T10	Connective 105 107	場合
+T11	Argument 150 159	走行ができなくなる
+T12	Connective 146 150	によって
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R9	CONDITION Arg1:T10 Arg2:T9	
+R12	RESULT Arg1:T12 Arg2:T11	
+T14	Argument 126 142	デファレンシャルハウジングが破損
+T13	Argument 108 125	ディファレンシャル内のギアが噛みこ
+T15	Connective 125 126	み
+R8	RESULT Arg1:T10 Arg2:T13	
+R10	REASON Arg1:T12 Arg2:T14	
+R11	REASON Arg1:T15 Arg2:T13	
+R13	RESULT Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T10 Arg2:T14	

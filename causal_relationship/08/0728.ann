@@ -1,0 +1,23 @@
+T1	Argument 0 44	自動変速機付ガソリンエンジン搭載車において、制動倍力装置（マスターバック）の容量が不適切
+T2	Argument 76 100	制動力がトルクコンバータのクリープ力に対して不足
+T3	Connective 74 75	と
+T4	Argument 48 72	自動暖機運転でエンジンのアイドリング回転数が上昇
+R2	CONDITION Arg1:T3 Arg2:T4	
+T5	Connective 45 47	ため
+T6	Argument 111 133	自動暖気運転時に冷凍機コンプレッサー等を作動
+T7	Connective 135 136	際
+T8	Argument 140 146	制動力が低下
+T9	Connective 154 158	そのため
+T10	Argument 159 187	エンジンが充分に暖気できていない状態で走行レンジに入れる
+R3	RESULT Arg1:T3 Arg2:T2	
+R4	CONDITION Arg1:T7 Arg2:T6	
+R5	RESULT Arg1:T7 Arg2:T8	
+R6	REASON Arg1:T9 Arg2:T8	
+R7	RESULT Arg1:T9 Arg2:T12	
+T11	Connective 187 188	と
+T12	Argument 189 211	ブレーキペダルを踏んでいても、車両が動き出す
+R8	CONDITION Arg1:T11 Arg2:T10	
+R9	RESULT Arg1:T11 Arg2:T12	
+R1	REASON Arg1:T5 Arg2:T1	
+R10	RESULT Arg1:T5 Arg2:T2	
+R12	REASON Arg1:T9 Arg2:T2	

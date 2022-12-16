@@ -1,0 +1,13 @@
+T1	Argument 0 21	衝撃吸収式座席ベルトの衝撃吸収機能が不適切
+T2	Connective 22 24	ため
+T3	Argument 54 67	乗員の胸に受ける負担が増大
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 25 39	そのままの状態で使用を続ける
+T5	Connective 39 40	と
+T7	Argument 41 50	衝突等の衝撃を受け
+T8	Connective 51 53	場合
+R3	CONDITION Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T3	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T3	

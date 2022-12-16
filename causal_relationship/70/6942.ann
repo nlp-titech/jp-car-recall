@@ -1,0 +1,25 @@
+T1	Argument 0 13	サイドスタンドの強度が不足
+T2	Connective 17 19	ため
+T3	Argument 20 32	サイドスタンドを跳ね上げ
+T4	Connective 33 35	際に
+T5	Argument 36 52	当該サイドスタンドに亀裂が生じる
+T6	Connective 58 62	そのため
+T7	Argument 63 77	そのままの状態で使用を続ける
+T8	Connective 77 78	と
+T9	Argument 78 83	亀裂が進行
+T10	Argument 85 87	最悪
+T11	Connective 88 90	場合
+T12	Argument 91 103	当該サイドスタンドが脱落
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	RESULT Arg1:T6 Arg2:T9	
+R9	CONDITION Arg1:T11 Arg2:T10	
+T13	Connective 84 85	、
+R10	REASON Arg1:T13 Arg2:T9	
+R11	RESULT Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T11 Arg2:T12	

@@ -1,0 +1,21 @@
+T1	Argument 39 69	減衰機構（ショック・アブソーバ）のリンク取付け部の強度が不足
+T2	Connective 73 75	ため
+T3	Argument 76 90	そのままの状態で使用を続ける
+T4	Connective 90 91	と
+T5	Argument 92 104	当該取付け部に亀裂が入り
+T6	Connective 104 105	、
+T7	Argument 105 107	最悪
+T8	Connective 108 110	場合
+T9	Argument 111 116	車体が下が
+T10	Connective 116 117	り
+T11	Argument 117 126	走行に支障をきたす
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	RESULT Arg1:T6 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	

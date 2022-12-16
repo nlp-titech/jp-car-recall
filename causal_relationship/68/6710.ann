@@ -1,0 +1,31 @@
+T1	Argument 0 41	フロントサブフレームの溶接工程において、溶接機に溶接材料を補充した際の手順が不適切
+T2	Connective 42 44	ため
+T3	Argument 45 69	当該フレームの接合部の溶接が十分に行われていない
+T4	Connective 75 79	そのため
+T5	Argument 80 86	走行中の振動
+T6	Connective 86 89	により
+T7	Argument 89 99	当該接合部に亀裂が生
+T8	Argument 108 122	そのままの状態で走行を続ける
+T10	Connective 122 123	と
+T11	Argument 123 128	亀裂が進行
+T12	Connective 129 130	、
+T13	Argument 130 132	最悪
+T14	Connective 133 135	場合
+T15	Argument 136 144	走行安定性が低下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T16	Connective 99 100	じ
+T17	Argument 100 105	異音が発生
+R7	REASON Arg1:T16 Arg2:T7	
+R8	RESULT Arg1:T16 Arg2:T17	
+R11	CONDITION Arg1:T10 Arg2:T8	
+R12	RESULT Arg1:T10 Arg2:T11	
+R13	REASON Arg1:T12 Arg2:T11	
+R14	RESULT Arg1:T12 Arg2:T15	
+R15	CONDITION Arg1:T14 Arg2:T13	
+R16	RESULT Arg1:T14 Arg2:T15	
+R9	RESULT Arg1:T16 Arg2:T11	

@@ -1,0 +1,24 @@
+T1	Argument 0 27	方向指示器及び非常点滅表示灯用リレーの接点材質が不適切
+T2	Connective 28 30	ため
+T3	Argument 31 46	当該リレーの接点にアークが発生
+T4	Connective 47 48	、
+T5	Argument 48 59	表面に電極の一部が溶け
+T6	Connective 59 60	て
+T7	Argument 60 62	固着
+T8	Connective 70 74	そのため
+T9	Argument 89 99	非常点滅表示灯が点灯
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 75 83	方向指示器を作動
+T11	Connective 86 88	時に
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T9	
+T12	Argument 102 104	点滅
+R11	RESULT Arg1:T11 Arg2:T12	
+R12	RESULT Arg1:T8 Arg2:T12	

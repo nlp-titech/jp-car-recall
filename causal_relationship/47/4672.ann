@@ -1,0 +1,13 @@
+T1	Argument 32 63	肩用ベルトガイド部を車体に固定しているボルトの締め付けが不充分
+T2	Connective 64 66	ため
+T3	Argument 93 106	当該ガイド部が車体から外れ
+T4	Connective 106 107	、
+T5	Argument 107 119	座席ベルトの機能が損なわ
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 67 89	事故等によって座席ベルトに大きな荷重がかかっ
+T7	Connective 90 92	場合
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	

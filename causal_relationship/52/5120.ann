@@ -1,0 +1,13 @@
+T1	Argument 16 43	ビルトインシステムインターフェースのプログラムが不適切
+T2	Connective 44 46	ため
+T3	Argument 72 78	ホーンが作動
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 47 68	リモートコントロールキーでドアロックを作動
+T5	Connective 71 72	と
+R3	CONDITION Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T3	
+T6	Connective 79 80	、
+T7	Argument 80 87	止まらなくなる
+R5	REASON Arg1:T6 Arg2:T3	
+R6	RESULT Arg1:T6 Arg2:T7	

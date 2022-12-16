@@ -1,0 +1,55 @@
+T1	Argument 42 63	始動用電磁スイッチの固定接点の形状が不適切
+T2	Argument 79 90	当該接点の摩耗が早まり
+T3	Argument 91 112	摩耗による接点の段差に可動接点が引っかかっ
+T4	Argument 113 129	絶縁用ブッシュに過大な力がかかり
+T5	Argument 130 139	当該ブッシュが破損
+T6	Argument 141 146	回路が短絡
+T7	Argument 148 160	スタータモータが廻り続け
+T8	Argument 161 163	過熱
+T9	Argument 164 166	発火
+T10	Argument 174 182	原動機室内に延焼
+T11	Argument 184 189	火災に至る
+T12	Connective 64 66	ため
+T13	Connective 90 91	、
+T14	Connective 112 113	て
+T15	Connective 129 130	、
+T16	Connective 140 141	て
+T17	Connective 147 148	、
+T18	Connective 160 161	て
+T19	Connective 163 164	、
+T20	Connective 167 168	、
+T21	Connective 183 184	て
+R1	REASON Arg1:T12 Arg2:T1	
+R2	RESULT Arg1:T12 Arg2:T2	
+R3	REASON Arg1:T13 Arg2:T2	
+R4	RESULT Arg1:T13 Arg2:T3	
+R5	REASON Arg1:T14 Arg2:T3	
+R6	RESULT Arg1:T14 Arg2:T4	
+R7	REASON Arg1:T15 Arg2:T4	
+R8	RESULT Arg1:T15 Arg2:T5	
+R9	REASON Arg1:T16 Arg2:T5	
+R10	RESULT Arg1:T16 Arg2:T6	
+R11	REASON Arg1:T17 Arg2:T6	
+R12	RESULT Arg1:T17 Arg2:T7	
+R13	REASON Arg1:T18 Arg2:T7	
+R14	RESULT Arg1:T18 Arg2:T8	
+R15	REASON Arg1:T19 Arg2:T8	
+R16	RESULT Arg1:T19 Arg2:T9	
+R17	REASON Arg1:T20 Arg2:T9	
+R18	RESULT Arg1:T20 Arg2:T10	
+R19	REASON Arg1:T21 Arg2:T10	
+R20	RESULT Arg1:T21 Arg2:T11	
+T26	Argument 21 38	スタータモータ付近の温度が高くなる
+R21	REASON Arg1:T12 Arg2:T26	
+T27	Argument 0 18	原動機の始動装置において、原動機の熱
+T28	Connective 18 21	により
+R22	REASON Arg1:T28 Arg2:T27	
+R23	RESULT Arg1:T28 Arg2:T26	
+T23	Argument 168 170	最悪
+T24	Connective 171 173	場合
+R25	RESULT Arg1:T24 Arg2:T10	
+R26	CONDITION Arg1:T24 Arg2:T23	
+T22	Argument 67 76	始動操作の繰り返し
+T25	Connective 76 79	により
+R24	REASON Arg1:T25 Arg2:T22	
+R27	RESULT Arg1:T25 Arg2:T2	

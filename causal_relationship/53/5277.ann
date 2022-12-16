@@ -1,0 +1,21 @@
+T1	Argument 0 59	原動機制御コンピュータのプログラムが、始動直後等の冷機時に、Ｏ２センサのセラミック部の温度を急激に上昇させる制御となっ
+T2	Connective 62 64	ため
+T3	Argument 96 107	セラミックに亀裂が発生
+R1	RESULT Arg1:T2 Arg2:T3	
+R2	REASON Arg1:T2 Arg2:T1	
+T6	Argument 65 89	外気温が低い気象条件下で、セラミック部に水が付着
+T7	Connective 93 95	場合
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Connective 115 119	そのため
+T9	Argument 120 132	適切な空燃比制御ができず
+T10	Connective 132 133	、
+T11	Argument 133 135	最悪
+T12	Connective 136 138	場合
+T13	Argument 139 151	排出ガス値が基準を超える
+R7	RESULT Arg1:T12 Arg2:T13	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T8 Arg2:T3	
+R10	REASON Arg1:T10 Arg2:T9	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T10 Arg2:T13	

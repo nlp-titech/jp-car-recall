@@ -1,0 +1,13 @@
+T1	Argument 0 25	バン型車の突入防止装置のリヤバンパーの選定が不適切
+T2	Connective 26 28	ため
+T3	Argument 29 40	リヤバンパーの幅が長い
+T4	Connective 46 50	そのため
+T5	Argument 51 79	突入防止装置の最外側縁が、後軸車輪の最外側より外側にある
+T6	Connective 81 83	から
+T7	Argument 84 118	道路運送車両の保安基準第１８条の２で定める巻込防止装置等の基準に抵触
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

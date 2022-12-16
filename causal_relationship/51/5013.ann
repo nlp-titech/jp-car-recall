@@ -1,0 +1,33 @@
+T1	Argument 0 16	ブレーキパイプの固定方法が不適切
+T2	Connective 17 19	ため
+T3	Argument 30 59	当該パイプとステアリングギアボックス固定ブラケットとが干渉
+T4	Connective 67 71	そのため
+T5	Argument 72 86	当該パイプの防錆皮膜が剥がれ
+T6	Connective 86 87	て
+T7	Argument 87 89	腐食
+T8	Connective 90 91	、
+T9	Argument 97 105	当該パイプが損傷
+T10	Connective 106 107	て
+T11	Argument 107 115	ブレーキ液が漏れ
+T12	Connective 115 116	、
+T13	Argument 116 122	制動力が不足
+R1	REASON Arg1:T4 Arg2:T3	
+R2	RESULT Arg1:T4 Arg2:T5	
+R3	REASON Arg1:T6 Arg2:T5	
+R4	RESULT Arg1:T6 Arg2:T7	
+R5	REASON Arg1:T8 Arg2:T7	
+R6	RESULT Arg1:T8 Arg2:T9	
+R7	REASON Arg1:T10 Arg2:T9	
+R8	RESULT Arg1:T10 Arg2:T11	
+R9	REASON Arg1:T12 Arg2:T11	
+R10	RESULT Arg1:T12 Arg2:T13	
+T14	Argument 91 93	最悪
+T15	Connective 94 96	場合
+R12	RESULT Arg1:T15 Arg2:T9	
+R13	REASON Arg1:T2 Arg2:T1	
+R14	RESULT Arg1:T2 Arg2:T3	
+T16	Argument 20 27	走行時の振動等
+T17	Connective 27 30	により
+R15	REASON Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T3	
+R11	CONDITION Arg1:T15 Arg2:T14	

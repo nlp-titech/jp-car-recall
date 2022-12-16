@@ -1,0 +1,13 @@
+T1	Argument 0 41	トランスミッションのシフト切替用電磁弁の押しピン用ガイド穴に、加工不良のものがある
+T2	Connective 42 46	そのため
+T3	Argument 51 85	暖機運転完了前に、一旦前進操作をした直後シフトレバーを後進に切り替え
+T4	Connective 86 88	場合
+T5	Argument 89 107	シフト切替用電磁弁が戻り不良を起こし
+T7	Connective 107 108	て
+T8	Argument 108 115	前進状態となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R8	RESULT Arg1:T7 Arg2:T8	
+R5	REASON Arg1:T7 Arg2:T5	

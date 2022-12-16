@@ -1,0 +1,23 @@
+T1	Argument 0 30	タイヤ組み付け工程において、ホイールナットの締め付けが不適切
+T2	Connective 31 33	ため
+T3	Argument 34 42	締付トルクが不足
+T4	Connective 52 56	そのため
+T7	Argument 69 77	当該ナットが緩ん
+T11	Argument 91 93	脱輪
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+T5	Argument 57 67	そのまま使用を続ける
+T6	Connective 67 68	と
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T9	Argument 85 87	最悪
+T10	Connective 88 90	場合
+R9	CONDITION Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Connective 77 78	で
+T13	Argument 78 83	異音が発生
+R11	REASON Arg1:T12 Arg2:T7	
+R12	RESULT Arg1:T12 Arg2:T13	
+R7	RESULT Arg1:T12 Arg2:T11	

@@ -1,0 +1,31 @@
+T1	Argument 0 52	動力伝達装置において、自動変速機のパーキング機構のギヤをロックさせるパーキングロッドの組付け作業が不適切
+T2	Connective 56 58	ため
+T3	Argument 59 71	ロッドの抜け止め部が損傷
+T4	Connective 81 85	そのため
+T5	Argument 86 108	パーキングロッドがマニュアルプレートから外れ
+T6	Connective 108 109	、
+T7	Argument 109 143	パーキングポジションへシフト操作してもパーキング機構が作動しなくなり
+T8	Connective 143 144	、
+T9	Argument 153 160	車両が動き出す
+T10	Argument 170 201	パーキング機構のギヤがロックしている時にパーキングロッドが外れ
+T11	Connective 202 204	場合
+T12	Argument 205 229	稀にギヤのロック状態を解除することができなくなり
+T13	Connective 229 230	、
+T14	Argument 230 232	最悪
+T15	Connective 233 235	場合
+T16	Argument 236 244	走行できなくなる
+R1	RESULT Arg1:T15 Arg2:T16	
+R2	CONDITION Arg1:T15 Arg2:T14	
+R3	RESULT Arg1:T13 Arg2:T16	
+R4	REASON Arg1:T13 Arg2:T12	
+R5	RESULT Arg1:T11 Arg2:T12	
+R6	CONDITION Arg1:T11 Arg2:T10	
+R7	REASON Arg1:T2 Arg2:T1	
+R8	RESULT Arg1:T2 Arg2:T3	
+R9	REASON Arg1:T4 Arg2:T3	
+R10	RESULT Arg1:T4 Arg2:T5	
+R11	REASON Arg1:T6 Arg2:T5	
+R12	RESULT Arg1:T6 Arg2:T7	
+R13	REASON Arg1:T8 Arg2:T7	
+R14	RESULT Arg1:T8 Arg2:T9	
+R15	RESULT Arg1:T4 Arg2:T10	

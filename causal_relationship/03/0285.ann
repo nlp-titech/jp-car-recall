@@ -1,0 +1,21 @@
+T1	Argument 0 52	動力伝達装置において、プロペラシャフトの中間軸受け保持金具を支える取付部材の取付角度及び取付位置に不適切
+T2	Argument 77 89	偏芯回転による過度な応力
+T3	Argument 93 102	当該保持金具が破断
+T4	Argument 116 123	走行不能に至る
+T5	Connective 89 92	により
+T6	Connective 58 60	ため
+T7	Connective 109 110	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 61 75	そのままの状態で使用を続ける
+T9	Connective 75 76	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T2	
+T10	Argument 110 112	最悪
+T11	Connective 113 115	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T4	

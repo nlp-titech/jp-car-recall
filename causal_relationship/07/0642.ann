@@ -1,0 +1,33 @@
+T1	Argument 0 49	前輪緩衝装置のロアアームとナックルを連結しているボールジョイントにおいて、保持金具のかしめに不十分
+T2	Argument 74 85	当該部分からの水の侵入
+T3	Argument 88 93	ボールの錆
+T4	Argument 94 106	樹脂ベアリングが異常摩耗
+T5	Argument 114 125	ボールジョイントが破損
+T6	Argument 127 134	アームから外れ
+T7	Argument 135 142	走行不能となる
+T8	Connective 55 57	ため
+T9	Connective 85 88	による
+T10	Connective 93 94	で
+T11	Connective 107 108	、
+T12	Connective 126 127	て
+T13	Connective 134 135	、
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T2	
+R3	REASON Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T3	
+R5	REASON Arg1:T10 Arg2:T3	
+R6	RESULT Arg1:T10 Arg2:T4	
+R7	REASON Arg1:T11 Arg2:T4	
+R8	RESULT Arg1:T11 Arg2:T5	
+R9	REASON Arg1:T12 Arg2:T5	
+R10	RESULT Arg1:T12 Arg2:T6	
+R11	REASON Arg1:T13 Arg2:T6	
+R12	RESULT Arg1:T13 Arg2:T7	
+T18	Argument 108 110	最悪
+T19	Connective 111 113	場合
+R13	CONDITION Arg1:T19 Arg2:T18	
+R14	RESULT Arg1:T19 Arg2:T5	
+T22	Argument 58 72	このままの状態で使用を続ける
+T23	Connective 72 73	と
+R15	CONDITION Arg1:T23 Arg2:T22	
+R16	RESULT Arg1:T23 Arg2:T2	

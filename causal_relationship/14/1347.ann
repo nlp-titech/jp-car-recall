@@ -1,0 +1,29 @@
+T1	Argument 0 41	電動式フォークリフトの車両走行速度を制御するアクセレータにおいて、電気回路が不適切
+T2	Connective 42 44	ため
+T5	Argument 45 58	ハンドル操作時の電気ノイズ
+T6	Connective 64 65	、
+T7	Argument 65 68	誤動作
+T8	Connective 76 80	そのため
+T9	Argument 81 106	前後進切換えレバーが入った状態でハンドル操作を行う
+T10	Connective 106 107	と
+T11	Argument 108 115	当該電気ノイズ
+T12	Connective 115 118	により
+T13	Argument 118 129	モーターの回転が上がり
+T14	Connective 129 130	、
+T15	Argument 130 132	最悪
+T16	Connective 133 135	場合
+T17	Argument 136 141	車両が走行
+R1	REASON Arg1:T2 Arg2:T1	
+R4	RESULT Arg1:T2 Arg2:T7	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	CONDITION Arg1:T10 Arg2:T9	
+R9	REASON Arg1:T12 Arg2:T11	
+R10	RESULT Arg1:T8 Arg2:T13	
+R11	RESULT Arg1:T10 Arg2:T13	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	CONDITION Arg1:T16 Arg2:T15	
+R15	RESULT Arg1:T16 Arg2:T17	
+R16	RESULT Arg1:T14 Arg2:T17	

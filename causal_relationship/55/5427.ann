@@ -1,0 +1,9 @@
+T1	Argument 0 31	エンジンコントロールユニットのソフトウェアのプログラムが不適切
+T2	Connective 38 42	そのため
+T3	Argument 49 64	ＮＯｘの排出量が規制値を上回る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 43 45	最悪
+T5	Connective 46 48	場合
+R3	CONDITION Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T3	

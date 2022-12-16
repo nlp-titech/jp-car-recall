@@ -1,0 +1,21 @@
+T1	Argument 12 41	オイルクーラー配管とオイルクーラーホースの製造工程が不適切
+T2	Argument 45 75	当該配管の加工が不適切なもの及び当該ホースの洗浄処理が不十分
+T3	Argument 87 93	走行中の振動
+T4	Argument 98 111	オイルクーラーホースが抜け
+T5	Argument 112 118	オイルが漏れ
+T6	Argument 119 126	走行不能になる
+T7	Connective 42 44	ため
+T8	Connective 82 86	そのため
+T9	Connective 95 98	により
+T10	Connective 111 112	て
+T11	Connective 118 119	、
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T4	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	REASON Arg1:T10 Arg2:T4	
+R7	RESULT Arg1:T10 Arg2:T5	
+R8	REASON Arg1:T11 Arg2:T5	
+R9	RESULT Arg1:T11 Arg2:T6	
+R10	RESULT Arg1:T9 Arg2:T4	

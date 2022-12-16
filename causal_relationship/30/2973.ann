@@ -1,0 +1,17 @@
+T1	Argument 0 51	電気自動車のブレーキ倍力装置に負圧を供給する電動負圧ポンプにおいて、製造工程で内部のベーンに亀裂が入っ
+T2	Connective 58 62	そのため
+T3	Argument 79 85	ベーンが破損
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 86 87	、
+T5	Argument 87 103	ブレーキ倍力装置の機能が損なわれ
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 103 104	、
+T7	Argument 104 113	制動距離が長くなる
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 63 77	そのままの状態で使用を続ける
+T9	Connective 77 78	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	

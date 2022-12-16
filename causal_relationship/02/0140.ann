@@ -1,0 +1,17 @@
+T1	Argument 0 54	制動装置の駐車ブレーキのケーブルを変速機に取り付け固定する金具（ブラケット）において当該ブラケットが強度不足
+T2	Argument 80 90	当該ブラケットが折損
+T3	Argument 92 106	駐車ブレーキが作動不能に至る
+T4	Connective 55 57	ため
+T5	Connective 91 92	、
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	
+T6	Argument 58 72	そのままの状態で使用を続ける
+T7	Connective 72 73	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T2	
+T8	Argument 74 76	最悪
+T9	Connective 77 79	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T2	

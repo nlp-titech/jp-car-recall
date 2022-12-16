@@ -1,0 +1,27 @@
+T1	Argument 0 24	ワイパーモータにおいて、防水シール材の塗布が不足
+T2	Connective 28 30	ため
+T3	Argument 31 45	雨水等が当該モータ内部に浸入
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 47 49	短絡
+T5	Connective 46 47	て
+R3	REASON Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T4	
+T6	Argument 54 65	電気回路の溶接が不適切
+T7	Connective 71 73	ため
+T8	Argument 74 85	電気回路の溶接が剥がれ
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T8	
+T9	Connective 85 86	て
+T10	Argument 86 90	導通不良
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T10	
+T11	Connective 94 98	そのため
+T12	Argument 105 117	ワイパーが作動しなくなる
+R9	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T12	
+T13	Argument 99 101	最悪
+T14	Connective 102 104	場合
+R11	CONDITION Arg1:T14 Arg2:T13	
+R12	RESULT Arg1:T14 Arg2:T12	
+R13	REASON Arg1:T11 Arg2:T4	

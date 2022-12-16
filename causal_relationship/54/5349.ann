@@ -1,0 +1,25 @@
+T1	Argument 0 19	リアサスペンション連結部の構造が不適切
+T2	Connective 20 22	ため
+T3	Argument 23 37	固定ボルトに直接負荷がかかる
+T4	Connective 46 50	そのため
+T5	Argument 66 81	当該ボルトに過大な負荷がかかり
+T6	Connective 81 82	、
+T7	Argument 88 94	ボルトが折損
+T8	Connective 95 96	、
+T9	Argument 96 101	車両が転倒
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 51 62	悪路等の走行を繰り返し
+T11	Connective 63 65	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	
+T12	Argument 82 84	最悪
+T13	Connective 85 87	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T7	

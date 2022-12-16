@@ -1,0 +1,21 @@
+T1	Argument 0 33	運転席側ドアにおいて、ドアロック装置の固定用ネジの締め付け力が不足
+T2	Argument 45 52	当該ネジが緩ん
+T3	Argument 53 55	脱落
+T4	Argument 57 71	ドアラッチの噛み合いが不完全
+T5	Argument 86 95	走行中にドアが開く
+T13	Connective 42 44	ため
+T14	Connective 56 57	、
+T15	Connective 79 80	、
+R1	REASON Arg1:T13 Arg2:T1	
+R2	RESULT Arg1:T13 Arg2:T2	
+T16	Connective 52 53	で
+R3	REASON Arg1:T16 Arg2:T2	
+R4	RESULT Arg1:T16 Arg2:T3	
+R5	REASON Arg1:T14 Arg2:T3	
+R6	RESULT Arg1:T14 Arg2:T4	
+R7	REASON Arg1:T15 Arg2:T4	
+R8	RESULT Arg1:T15 Arg2:T5	
+T6	Argument 80 82	最悪
+T7	Connective 83 85	場合
+R9	CONDITION Arg1:T7 Arg2:T6	
+R10	RESULT Arg1:T7 Arg2:T5	

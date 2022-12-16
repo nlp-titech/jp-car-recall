@@ -1,0 +1,22 @@
+T1	Argument 0 30	ハイブリッド自動車の電動機（モータ）の制御プログラムが不適切
+T2	Connective 30 32	ため
+T5	Argument 33 58	電動機の回転センサーが断線した場合に断線を検知せず
+T6	Connective 58 59	、
+T7	Argument 59 69	電動機の回転が不安定
+T8	Connective 78 82	そのため
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+T9	Argument 105 115	電動機が加速し続ける
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 83 97	そのままの状態で使用を続ける
+T11	Connective 97 98	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T9	
+T12	Argument 99 101	最悪
+T13	Connective 102 104	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T9	
+#1	AnnotatorNotes T5	「断線しても検知せず」

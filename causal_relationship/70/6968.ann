@@ -1,0 +1,25 @@
+T1	Argument 0 53	キーインタロック機構（ＡＴのＰポジション以外でキーが抜けない機構）を制御する統合ユニットの電気回路が不適切
+T2	Connective 54 56	ため
+T3	Argument 57 83	Ｐポジション以外でイグニッションのオフ操作を繰り返す
+T4	Connective 83 84	と
+T5	Argument 84 91	当該回路が損傷
+T6	Connective 99 103	そのため
+T7	Argument 104 122	キーインタロック機構が作動しなくなり
+T8	Argument 123 151	ＡＴセレクトレバーがＰポジション以外であってもキーが抜け
+T9	Connective 122 123	、
+T10	Connective 151 152	、
+T11	Argument 152 163	駐車ブレーキをかけ忘れ
+T12	Connective 166 168	場合
+T13	Argument 169 180	駐車中に車両が動き出す
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+R9	REASON Arg1:T10 Arg2:T8	
+R10	CONDITION Arg1:T12 Arg2:T11	
+R11	RESULT Arg1:T12 Arg2:T13	
+R12	RESULT Arg1:T10 Arg2:T13	

@@ -1,0 +1,21 @@
+T1	Argument 0 37	燃料ホース（継手金具付き）と燃料フィルターとを接続する継手金具の強度が不足
+T2	Connective 41 43	ため
+T3	Argument 68 75	継手金具が変形
+T4	Connective 76 77	、
+T5	Argument 83 88	燃料が漏れ
+T6	Connective 88 89	、
+T7	Argument 89 94	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 44 67	当該燃料ホースの継手金具を過剰な力で締め付ける
+T9	Connective 67 68	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 77 79	最悪
+T11	Connective 80 82	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	

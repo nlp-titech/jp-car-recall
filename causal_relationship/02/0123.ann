@@ -1,0 +1,17 @@
+T1	Argument 0 24	エンジンを制御するコンピュータのプログラム不適切
+T2	Argument 35 42	点火装置が停止
+T3	Argument 44 53	一時的に車速が減速
+T4	Argument 67 94	エキゾーストマニホールド直後の触媒コンバータ内部が損傷
+T5	Connective 25 27	ため
+T6	Connective 43 44	て
+T7	Connective 60 61	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T10	Argument 61 63	最悪
+T11	Connective 64 66	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T4	

@@ -1,0 +1,15 @@
+T1	Argument 16 52	コントロールモジュール（制御装置）の回路基板の一部構成部品の製造が不適切
+T2	Connective 53 55	ため
+T3	Argument 56 66	回路に不具合を生じる
+T4	Connective 67 71	この場合
+T5	Argument 72 89	警告灯（パワーアシスト低下）が点灯
+T6	Argument 96 119	パワーステアリングのパワーアシストが急に失われ
+T7	Connective 119 120	、
+T8	Argument 120 129	ハンドルが重くなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T6	
+R6	REASON Arg1:T7 Arg2:T6	
+R7	RESULT Arg1:T7 Arg2:T8	

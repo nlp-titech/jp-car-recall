@@ -1,0 +1,51 @@
+T1	Argument 43 60	当該オイルシール部のシール性が不足
+T2	Argument 68 81	シール部からオイルが漏れる
+T3	Argument 108 123	スリーブヨークへの潤滑が不十分
+T4	Argument 150 179	トランスファのアウトプットシャフト又はスリーブヨークが折損
+T5	Argument 199 212	リヤプロペラシャフトが外れ
+T6	Argument 213 221	燃料タンクを損傷
+T7	Argument 223 228	燃料が漏れ
+T8	Argument 235 240	火災に至る
+T9	Connective 67 68	、
+T10	Connective 87 91	そのため
+T11	Connective 123 126	となり
+T12	Connective 180 181	、
+T13	Connective 212 213	、
+T14	Connective 228 229	、
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T2	
+R3	REASON Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T3	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T20	
+R7	REASON Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T5	
+R9	REASON Arg1:T13 Arg2:T5	
+R10	RESULT Arg1:T13 Arg2:T6	
+R11	REASON Arg1:T14 Arg2:T7	
+R12	RESULT Arg1:T14 Arg2:T8	
+T20	Argument 138 147	当該シャフトの共振
+T21	Connective 147 150	により
+R14	REASON Arg1:T21 Arg2:T20	
+R15	RESULT Arg1:T21 Arg2:T4	
+T22	Argument 181 189	走行できなくなる
+R16	RESULT Arg1:T12 Arg2:T22	
+T23	Connective 222 223	せ
+R13	REASON Arg1:T23 Arg2:T6	
+R17	RESULT Arg1:T23 Arg2:T7	
+T15	Argument 0 40	リヤプロペラシャフトにおけるトランスファ接合部スリーブヨークの加工精度のバラツキ
+T16	Connective 40 43	により
+R18	REASON Arg1:T16 Arg2:T15	
+R19	RESULT Arg1:T16 Arg2:T1	
+T17	Argument 92 106	そのままの状態で使用を続ける
+T18	Connective 106 107	と
+R20	CONDITION Arg1:T18 Arg2:T17	
+R21	RESULT Arg1:T18 Arg2:T3	
+T19	Argument 127 132	高速で走行
+T24	Connective 135 137	場合
+R22	CONDITION Arg1:T24 Arg2:T19	
+R23	RESULT Arg1:T24 Arg2:T20	
+T25	Argument 229 231	最悪
+T26	Connective 232 234	場合
+R24	CONDITION Arg1:T26 Arg2:T25	
+R25	RESULT Arg1:T26 Arg2:T8	

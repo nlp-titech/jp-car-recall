@@ -1,0 +1,25 @@
+T1	Argument 12 33	運転者席側壁パネル内部の配線の配策が不適切
+T2	Argument 37 56	配線が側壁パネルブラケットの端部と干渉
+T3	Argument 69 79	そのまま使用を続ける
+T4	Argument 81 89	配線の被覆が損傷
+T5	Argument 91 93	短絡
+T6	Argument 95 97	最悪
+T7	Argument 101 110	扉が開閉できなくな
+T8	Connective 34 36	ため
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T2	
+T9	Connective 64 68	そのため
+T10	Connective 79 80	と
+T11	Connective 90 91	て
+T12	Connective 94 95	、
+T13	Connective 98 100	場合
+R3	REASON Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T4	
+R5	CONDITION Arg1:T10 Arg2:T3	
+R6	RESULT Arg1:T10 Arg2:T4	
+R7	REASON Arg1:T11 Arg2:T4	
+R8	RESULT Arg1:T11 Arg2:T5	
+R9	REASON Arg1:T12 Arg2:T5	
+R10	RESULT Arg1:T12 Arg2:T7	
+R11	CONDITION Arg1:T13 Arg2:T6	
+R12	RESULT Arg1:T13 Arg2:T7	

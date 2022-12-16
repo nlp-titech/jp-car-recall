@@ -1,0 +1,21 @@
+T2	Argument 61 72	全ての座席に乗員が着席
+T3	Argument 78 86	車両が後ろに傾い
+T4	Argument 90 102	光軸が正しく調整できない
+T5	Argument 113 122	光軸が上方向にずれ
+T6	Argument 124 133	対向の運転者が眩惑
+T7	Connective 58 60	ため
+T8	Connective 75 78	により
+T9	Connective 87 89	際に
+T10	Connective 108 112	そのため
+T11	Connective 122 123	て
+R2	RESULT Arg1:T7 Arg2:T4	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	CONDITION Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T5	
+R9	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	
+T1	Argument 0 57	前照灯において、車両姿勢が変化しても前照灯の光軸を自動調整するオートレべリング制御コンピュータのプログラムが不適切
+R1	REASON Arg1:T7 Arg2:T1	

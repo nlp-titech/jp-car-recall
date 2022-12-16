@@ -1,0 +1,32 @@
+T1	Argument 1 44	アスファルトフィニッシャにおいて、車両を制御するコントローラの製造又は部品管理が不適切
+T2	Connective 45 47	ため
+T3	Argument 48 56	基板に亀裂が生じ
+T4	Argument 63 74	ＩＣチップの回路が短絡
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T4	
+T5	Connective 84 88	そのため
+T6	Argument 101 124	コントローラが制御している装置の誤作動等が生じ
+T7	Argument 131 143	駐車ブレーキが作動しない
+T8	Connective 124 125	、
+R4	REASON Arg1:T5 Arg2:T4	
+R5	RESULT Arg1:T5 Arg2:T6	
+R6	REASON Arg1:T8 Arg2:T6	
+R7	RESULT Arg1:T8 Arg2:T7	
+T9	Argument 89 99	そのまま使用を続ける
+T10	Connective 99 100	と
+R8	CONDITION Arg1:T10 Arg2:T9	
+R9	RESULT Arg1:T10 Arg2:T6	
+T11	Argument 151 200	アスファルトフィニッシャにおいて、車両を制御するコントローラ及びメインモニターのプログラムが不適切
+T12	Connective 201 203	ため
+T13	Argument 204 227	軽作業中に尿素ＳＣＲシステムの再生が完了しない
+T14	Argument 231 248	メインモニターの表示に誤りが生じる
+R10	REASON Arg1:T12 Arg2:T11	
+T15	Argument 251 277	コントローラを介して制御される装置が正しく作動しない
+R11	RESULT Arg1:T12 Arg2:T13	
+R12	RESULT Arg1:T12 Arg2:T14	
+R13	RESULT Arg1:T12 Arg2:T15	
+T16	Argument 125 127	最悪
+T17	Connective 128 130	場合
+R14	CONDITION Arg1:T17 Arg2:T16	
+R15	RESULT Arg1:T17 Arg2:T7	

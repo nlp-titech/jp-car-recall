@@ -1,0 +1,9 @@
+T1	Argument 0 42	１軸２０ｋＬ石油運搬用アルミタンクセミトレーラにおいて、ボギーフレームの耐久性が不足
+T2	Connective 46 48	ため
+T3	Argument 49 55	走行時の振動
+T4	Connective 55 58	により
+T5	Argument 59 72	ボギーフレームに亀裂が発生
+R1	RESULT Arg1:T4 Arg2:T5	
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T3	
+R4	REASON Arg1:T2 Arg2:T1	

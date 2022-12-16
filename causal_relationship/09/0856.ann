@@ -1,0 +1,53 @@
+T2	Connective 39 41	ため
+T3	Argument 42 62	圧入した際に当該パネルからアルミ片が発生
+T4	Argument 70 77	走行中の振動等
+T5	Connective 77 80	により
+T6	Argument 80 120	当該アルミ片が当該パネルとホイールの間にあるＡＢＳセンサの部屋内に脱落して留まっ
+T9	Connective 129 133	そのため
+T13	Connective 183 185	場合
+T14	Argument 186 205	当該アルミ片が当該隙間部で一時的に固着
+T15	Connective 206 207	、
+T16	Argument 207 222	ホイールが円滑に回転しなくなり
+T18	Argument 223 225	最悪
+T19	Connective 226 228	場合
+T20	Argument 229 242	当該パネルがホイールと固着
+T21	Connective 243 244	て
+T22	Argument 244 250	パネルが回転
+T23	Connective 251 252	、
+T24	Argument 252 266	ＡＢＳセンサが周辺部品と接触
+T25	Connective 267 268	て
+T26	Argument 268 270	破損
+T27	Connective 271 272	、
+T28	Argument 272 278	警告灯が点灯
+T30	Argument 280 291	ＡＢＳが機能しなくなる
+T1	Argument 0 38	前後輪において、アルミ製スピードセンサパネルにスペーサを圧入する作業が不適切
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T6	
+R8	RESULT Arg1:T9 Arg2:T12	
+T12	Argument 161 182	アルミ片が当該パネルとホイールの間に挟まっ
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T14	
+R13	REASON Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T16	
+R15	CONDITION Arg1:T19 Arg2:T18	
+R16	RESULT Arg1:T19 Arg2:T20	
+R19	REASON Arg1:T21 Arg2:T20	
+R20	RESULT Arg1:T21 Arg2:T22	
+R21	REASON Arg1:T23 Arg2:T22	
+R22	RESULT Arg1:T23 Arg2:T24	
+R23	REASON Arg1:T25 Arg2:T24	
+R24	RESULT Arg1:T25 Arg2:T26	
+R25	REASON Arg1:T27 Arg2:T26	
+R26	RESULT Arg1:T27 Arg2:T28	
+T35	Connective 69 70	、
+R29	REASON Arg1:T35 Arg2:T3	
+R30	RESULT Arg1:T35 Arg2:T6	
+T39	Argument 146 156	ホイールの温度が上昇
+T40	Connective 158 161	状態で
+R9	CONDITION Arg1:T40 Arg2:T39	
+R10	RESULT Arg1:T40 Arg2:T12	
+R18	RESULT Arg1:T27 Arg2:T30	
+R5	REASON Arg1:T9 Arg2:T6	
+R6	RESULT Arg1:T15 Arg2:T20	

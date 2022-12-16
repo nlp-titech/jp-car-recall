@@ -1,0 +1,17 @@
+T1	Argument 0 40	四輪車の走行装置の車輪取り付けホイールボルトにおいて、当該ボルトの熱処理に不適切
+T2	Argument 65 73	当該ボルトが折損
+T3	Argument 81 86	車輪が脱落
+T4	Connective 46 48	ため
+T5	Connective 74 75	、
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	
+T6	Argument 49 63	そのままの状態で使用を続ける
+T7	Connective 63 64	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T2	
+T8	Argument 75 77	最悪
+T9	Connective 78 80	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	

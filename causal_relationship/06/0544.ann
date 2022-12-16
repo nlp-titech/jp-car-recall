@@ -1,0 +1,37 @@
+T1	Argument 0 44	低床式後２軸駆動車の動力伝達装置において、後前軸と後後軸間の推進軸の接手の締付けが不適切
+T2	Argument 48 76	後後軸の終減速機との取付部（コンパニオンフランジ）が摩耗
+T3	Argument 78 103	当該フランジを締付けているキャッスルナットがゆるみ
+T4	Argument 121 141	キャッスルナットの回り止めの割ピンが折損
+T5	Argument 143 151	当該ナットが脱落
+T6	Argument 152 167	コンパニオンフランジが抜け出し
+T7	Argument 174 182	当該推進軸が脱落
+T8	Argument 184 191	走行不能となる
+T9	Connective 45 47	ため
+T10	Connective 77 78	、
+T11	Connective 103 104	、
+T12	Connective 142 143	て
+T13	Connective 151 152	、
+T14	Connective 167 168	、
+T15	Connective 183 184	て
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T2	
+R3	REASON Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T3	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+R7	REASON Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T5	
+R9	REASON Arg1:T13 Arg2:T5	
+R10	RESULT Arg1:T13 Arg2:T6	
+R11	REASON Arg1:T14 Arg2:T6	
+R12	RESULT Arg1:T14 Arg2:T7	
+R13	REASON Arg1:T15 Arg2:T7	
+R14	RESULT Arg1:T15 Arg2:T8	
+T16	Argument 104 119	そのままの状態で使用をつづける
+T17	Connective 119 120	と
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T4	
+T18	Argument 168 170	最悪
+T19	Connective 171 173	場合
+R17	CONDITION Arg1:T19 Arg2:T18	
+R18	RESULT Arg1:T19 Arg2:T7	

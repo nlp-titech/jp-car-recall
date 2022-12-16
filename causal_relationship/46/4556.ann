@@ -1,0 +1,17 @@
+T1	Argument 0 25	運転者席及び助手席のエアバッグ装置のアースに不適切
+T2	Connective 31 32	、
+T5	Argument 49 55	静電気が放電
+T6	Connective 56 57	、
+T7	Argument 63 77	当該エアバッグが自動的に作動
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T3	Argument 57 59	最悪
+T4	Connective 60 62	場合
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+T8	Argument 32 41	乗員が乗降する際等
+T9	Connective 41 42	に
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

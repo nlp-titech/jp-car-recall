@@ -1,0 +1,29 @@
+T1	Argument 0 26	ホイールハブにおいて、アウタベアリングの保持力が不足
+T2	Connective 30 32	ため
+T3	Argument 43 52	ホイールハブが摩耗
+T4	Connective 60 64	そのため
+T5	Argument 125 132	走行不能となる
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T6	
+R4	REASON Arg1:T2 Arg2:T1	
+T10	Argument 81 103	ホイールハブとアウタベアリングの隙間が大きく
+T11	Connective 105 106	、
+R9	REASON Arg1:T11 Arg2:T10	
+T12	Argument 112 123	アウタベアリングが破損
+T13	Connective 124 125	、
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T5	
+R1	RESULT Arg1:T4 Arg2:T10	
+R5	RESULT Arg1:T11 Arg2:T12	
+T6	Argument 33 42	圧入面で滑りが生じ
+T7	Connective 42 43	、
+R6	REASON Arg1:T7 Arg2:T6	
+R7	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 65 79	そのままの状態で走行を続ける
+T9	Connective 79 80	と
+R8	CONDITION Arg1:T9 Arg2:T8	
+R10	RESULT Arg1:T9 Arg2:T10	
+T14	Argument 106 108	最悪
+T15	Connective 109 111	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T12	

@@ -1,0 +1,24 @@
+T2	Argument 53 64	一方の後車輪のみが上昇
+T3	Argument 66 79	車軸が地面と並行にならない
+T4	Argument 82 87	急激な旋回
+T5	Argument 89 105	後輪タイヤと対向ブラケットが接触
+T6	Argument 118 120	最悪
+T7	Argument 124 132	後輪タイヤが損傷
+T8	Connective 50 52	ため
+T9	Connective 65 66	て
+T11	Connective 87 89	時に
+T12	Connective 113 117	そのため
+T13	Connective 121 123	場合
+R2	RESULT Arg1:T8 Arg2:T5	
+R3	REASON Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T3	
+R7	CONDITION Arg1:T11 Arg2:T4	
+R8	RESULT Arg1:T11 Arg2:T5	
+R9	REASON Arg1:T12 Arg2:T5	
+R10	RESULT Arg1:T12 Arg2:T7	
+R11	CONDITION Arg1:T13 Arg2:T6	
+R12	RESULT Arg1:T13 Arg2:T7	
+R5	CONDITION Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T5	
+T1	Argument 14 49	シャシフレームとタンクまたは荷箱を締結する対向ブラケットの位置が不適切
+R1	REASON Arg1:T8 Arg2:T1	

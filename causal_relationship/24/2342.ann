@@ -1,0 +1,21 @@
+T1	Argument 0 52	フォークリフトのかじ取り装置において、ステアリングシリンダ内部に備えられているピストンシールの強度が不足
+T2	Connective 56 58	ため
+T3	Argument 59 70	当該シールが早期に摩耗
+T4	Connective 78 82	そのため
+T5	Argument 99 118	ステアリングシリンダ内部でオイルが漏れ
+T6	Connective 118 119	、
+T7	Argument 124 136	かじ取操作ができなくなる
+R1	RESULT Arg1:T6 Arg2:T7	
+R2	REASON Arg1:T6 Arg2:T5	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	REASON Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T2 Arg2:T3	
+R6	REASON Arg1:T2 Arg2:T1	
+T8	Argument 83 97	そのままの状態で使用を続ける
+T9	Connective 97 98	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 119 121	最悪
+T11	Connective 122 124	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T7	

@@ -1,0 +1,13 @@
+T1	Argument 0 29	バン型荷台の荷室ドア施錠装置の施錠確認ランプの灯色が不適切
+T2	Connective 30 32	ため
+T3	Argument 85 117	道路運送車両の保安基準第４２条で定めるその他の灯火等の制限に抵触
+R1	REASON Arg1:T2 Arg2:T1	
+T4	Argument 33 48	リモコンキーにて施錠装置を開錠
+T5	Connective 50 52	場合
+T6	Argument 53 77	当該赤色ランプが点灯した状態で走行することが可能
+T7	Connective 82 84	から
+R2	CONDITION Arg1:T5 Arg2:T4	
+R3	REASON Arg1:T7 Arg2:T6	
+R4	RESULT Arg1:T5 Arg2:T6	
+R5	RESULT Arg1:T2 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	

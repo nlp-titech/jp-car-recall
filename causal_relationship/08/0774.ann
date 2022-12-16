@@ -1,0 +1,17 @@
+T1	Argument 1 26	電気装置のバッテリーアース線の取り付け方法が不適切
+T2	Argument 30 42	バッテリの充電が行われず
+T3	Connective 27 29	ため
+T4	Argument 43 50	バッテリ上がり
+T5	Connective 42 43	、
+T6	Connective 59 63	そのため
+T7	Argument 64 81	走行中にエンジンコンピュータが停止
+T8	Argument 83 87	エンスト
+T9	Connective 82 83	、
+R1	REASON Arg1:T3 Arg2:T1	
+R2	RESULT Arg1:T3 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T4	
+R5	REASON Arg1:T6 Arg2:T4	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	

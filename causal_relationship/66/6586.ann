@@ -1,0 +1,31 @@
+T1	Argument 0 29	電動パワーステアリングにおいて、制御ユニットの製造が不適切
+T2	Connective 30 32	ため
+T3	Argument 33 58	ユニット内の基板の端子部が、適切に溶接されていない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 64 68	そのため
+T5	Argument 69 83	そのままの状態で使用を続ける
+T6	Connective 83 84	と
+T7	Argument 85 89	走行振動
+T8	Connective 89 92	により
+T9	Argument 92 102	端子部の溶接が剥がれ
+T10	Connective 102 103	、
+T11	Argument 103 109	警告等が点灯
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T9	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T13	Argument 111 113	最悪
+T14	Connective 114 116	場合
+T15	Argument 117 137	パワーステアリングのアシスト機能が失われ
+T16	Argument 138 144	操舵力が増大
+R13	CONDITION Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+T17	Connective 137 138	、
+R15	REASON Arg1:T17 Arg2:T15	
+R16	RESULT Arg1:T17 Arg2:T16	
+R11	RESULT Arg1:T10 Arg2:T15	

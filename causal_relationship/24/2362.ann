@@ -1,0 +1,17 @@
+T1	Argument 0 50	エンジンの燃料装置において、パルセーションダンパ（燃料圧脈動減衰器）の製造工程でダイヤフラムを傷付け
+T2	Connective 57 61	そのため
+T3	Argument 96 113	当該ダイヤフラムの傷から亀裂が生じ
+T4	Argument 114 120	燃料が漏れる
+T5	Connective 113 114	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T4	
+T6	Argument 62 76	そのままの状態で使用を続ける
+T7	Connective 76 77	と
+T8	Argument 89 95	燃料圧の脈動
+T9	Connective 95 96	で
+R5	REASON Arg1:T9 Arg2:T8	
+R6	RESULT Arg1:T9 Arg2:T3	
+R7	CONDITION Arg1:T7 Arg2:T6	
+R8	RESULT Arg1:T7 Arg2:T3	

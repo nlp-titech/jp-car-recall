@@ -1,0 +1,13 @@
+T1	Argument 0 55	12段手動変速機搭載車において、変速機のシフト用電磁弁の作動時に発生する瞬間的な電圧増加を抑制する機能が不十分
+T2	Argument 59 113	当該電磁弁から発生したノイズが車速整合器（車速センサからの信号を変換して速度計等に伝達する装置）に影響を与え
+T3	Argument 114 130	当該整合器の変換値が異常値を示す
+T4	Argument 136 169	速度計、運行記録計、速度表示装置および速度制限装置が作動しなくなる
+T5	Connective 56 58	ため
+T6	Connective 113 114	、
+T7	Connective 135 136	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	

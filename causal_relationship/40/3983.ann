@@ -1,0 +1,39 @@
+T2	Argument 44 53	摺動面に凹凸があり
+T4	Argument 64 76	当該ベアリングが異常摩耗
+T5	Argument 78 80	破損
+T6	Argument 93 115	ベアリングの破片がトルクコンバータ内部に飛散
+T7	Argument 117 122	異音が発生
+T8	Argument 124 138	そのままの状態で使用を続ける
+T9	Argument 140 142	最悪
+T10	Argument 146 164	破片がトルクコンバータ内部に噛み込み
+T12	Argument 165 184	停車時等にエンストして発進できなくなる
+T14	Connective 41 43	ため
+T15	Connective 53 54	、
+T17	Connective 77 78	て
+T18	Connective 88 92	そのため
+T19	Connective 116 117	、
+T21	Connective 138 139	と
+T22	Connective 143 145	場合
+T23	Connective 164 165	、
+R2	RESULT Arg1:T14 Arg2:T2	
+R3	REASON Arg1:T15 Arg2:T2	
+R7	REASON Arg1:T17 Arg2:T4	
+R8	RESULT Arg1:T17 Arg2:T5	
+R9	REASON Arg1:T18 Arg2:T5	
+R10	RESULT Arg1:T18 Arg2:T6	
+R11	REASON Arg1:T19 Arg2:T6	
+R12	RESULT Arg1:T19 Arg2:T7	
+R15	CONDITION Arg1:T21 Arg2:T8	
+R18	RESULT Arg1:T22 Arg2:T10	
+R19	REASON Arg1:T23 Arg2:T10	
+R4	RESULT Arg1:T15 Arg2:T4	
+R5	RESULT Arg1:T19 Arg2:T10	
+R6	RESULT Arg1:T21 Arg2:T10	
+R13	CONDITION Arg1:T22 Arg2:T9	
+R14	RESULT Arg1:T23 Arg2:T12	
+T3	Argument 59 61	凹凸
+T11	Connective 61 64	により
+R16	REASON Arg1:T11 Arg2:T3	
+R17	RESULT Arg1:T11 Arg2:T4	
+T1	Argument 13 40	トルクコンバータにおいて、内部ベアリングの製造が不適切
+R1	REASON Arg1:T14 Arg2:T1	

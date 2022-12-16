@@ -1,0 +1,29 @@
+T1	Argument 1 75	車体後面に設けている観音開き扉のロックシステムにおいて、キャッチと噛み合うロックをもどすばねの押しもどし力の設定及びウェザーストリップの反力が不適切
+T2	Connective 76 78	ため
+T3	Argument 79 87	扉をゆっくり閉め
+T4	Connective 88 90	場合
+T5	Argument 91 111	当該ロックとキャッチの噛み合い代が不十分
+T6	Connective 120 124	そのため
+T7	Argument 141 143	最悪
+T8	Connective 144 146	場合
+T9	Argument 125 139	そのままの状態で使用を続ける
+T10	Connective 139 140	と
+T11	Argument 147 155	走行時の振動など
+T12	Connective 155 156	で
+T13	Argument 156 163	噛み合いが外れ
+T14	Connective 163 164	、
+T15	Argument 164 172	観音開き扉が開放
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	CONDITION Arg1:T10 Arg2:T9	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T6 Arg2:T13	
+R9	RESULT Arg1:T10 Arg2:T13	
+R10	RESULT Arg1:T8 Arg2:T13	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	

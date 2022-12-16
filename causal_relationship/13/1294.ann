@@ -1,0 +1,9 @@
+T1	Argument 0 26	最大積載量の表示ラベルの貼付に関する作業指示が不適切
+T2	Connective 27 29	ため
+T3	Argument 30 60	最大積載量が３５０ｋｇのところに２００ｋｇの表示がされており
+T4	Connective 60 61	、
+T5	Argument 61 85	最大積載量の表示に係わる保安基準を満足していない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

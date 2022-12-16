@@ -1,0 +1,29 @@
+T1	Argument 32 49	ブリーザパイプの先端の形状が不適切
+T2	Connective 50 52	ため
+T3	Argument 69 90	当該パイプ先端に付着した雨水等の水滴が凍結
+T4	Connective 91 92	て
+T5	Argument 92 95	詰まり
+T6	Argument 113 136	自動変速機のオイル計量用パイプからオイルが漏れ
+T7	Connective 136 137	、
+T8	Argument 143 148	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T9	Connective 95 96	、
+R5	REASON Arg1:T9 Arg2:T5	
+R6	RESULT Arg1:T9 Arg2:T6	
+R7	REASON Arg1:T7 Arg2:T6	
+R8	RESULT Arg1:T7 Arg2:T8	
+T10	Argument 96 110	自動変速機内部の圧力が上昇し
+T11	Connective 111 113	際に
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T6	
+T12	Argument 53 67	そのままの状態で使用を続ける
+T13	Connective 67 68	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T3	
+T14	Argument 137 139	最悪
+T15	Connective 140 142	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T8	

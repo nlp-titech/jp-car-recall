@@ -1,0 +1,25 @@
+T1	Argument 0 35	灯火装置のすれ違い用前照灯において、本体背面にある整備穴の寸法が不適切
+T2	Argument 39 56	蓋を取付ける際にシールの位置がずれ
+T3	Argument 57 67	気密性が確保できない
+T4	Argument 73 83	水が電気基板部に浸入
+T5	Argument 91 100	電圧制御回路が短絡
+T6	Argument 102 118	すれ違い用前照灯が点灯しなくなる
+T7	Connective 36 38	ため
+T8	Connective 56 57	て
+T9	Connective 72 73	、
+T10	Connective 84 85	、
+T11	Connective 101 102	て
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T5	
+R9	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	
+T14	Argument 85 87	最悪
+T15	Connective 88 90	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T5	

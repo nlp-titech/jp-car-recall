@@ -1,0 +1,13 @@
+T2	Argument 2 36	後部座席シートベルトのガイド金具において、製造時の仕上げ加工が不適切
+T3	Argument 40 52	当該金具が正常に動かない
+T4	Argument 63 65	衝突
+T5	Argument 67 79	乗員を十分に拘束できない
+T7	Connective 37 39	ため
+T8	Connective 58 62	そのため
+T9	Connective 65 67	時に
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T5	
+R7	CONDITION Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	

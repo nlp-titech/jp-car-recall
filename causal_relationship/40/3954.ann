@@ -1,0 +1,29 @@
+T1	Argument 19 42	プロペラシャフトにおいて、開発時の設計が不適切
+T2	Argument 46 77	プロペラシャフトの取付角が改造基準の設計値を超えて組み付けられ
+T4	Argument 89 102	走行時に過大な負荷がかかり
+T5	Argument 103 117	そのままの状態で使用を続ける
+T6	Argument 119 124	亀裂が生じ
+T7	Argument 125 127	折損
+T8	Argument 129 131	最悪
+T9	Argument 135 142	走行不能となる
+T10	Connective 43 45	ため
+T11	Connective 84 88	そのため
+T13	Connective 102 103	、
+T14	Connective 117 118	と
+T15	Connective 124 125	て
+T16	Connective 128 129	、
+T17	Connective 132 134	場合
+R1	REASON Arg1:T10 Arg2:T1	
+R2	RESULT Arg1:T10 Arg2:T2	
+R3	REASON Arg1:T11 Arg2:T2	
+R7	REASON Arg1:T13 Arg2:T4	
+R8	RESULT Arg1:T13 Arg2:T6	
+R9	CONDITION Arg1:T14 Arg2:T5	
+R10	RESULT Arg1:T14 Arg2:T6	
+R11	REASON Arg1:T15 Arg2:T6	
+R12	RESULT Arg1:T15 Arg2:T7	
+R13	REASON Arg1:T16 Arg2:T7	
+R14	RESULT Arg1:T16 Arg2:T9	
+R15	CONDITION Arg1:T17 Arg2:T8	
+R16	RESULT Arg1:T17 Arg2:T9	
+R4	RESULT Arg1:T11 Arg2:T4	

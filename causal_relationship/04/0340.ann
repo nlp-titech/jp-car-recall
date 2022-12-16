@@ -1,0 +1,15 @@
+T2	Argument 30 43	当該バルブスプリングが折損
+T3	Argument 45 50	黒煙を排出
+T4	Argument 58 75	原動機が停止し、再始動できなくなる
+T6	Connective 27 29	ため
+T7	Connective 44 45	、
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	RESULT Arg1:T7 Arg2:T4	
+T1	Argument 0 18	原動機の吸排気バルブスプリングに損傷
+R1	REASON Arg1:T6 Arg2:T1	
+T5	Argument 52 54	最悪
+T8	Connective 55 57	場合
+R6	CONDITION Arg1:T8 Arg2:T5	
+R7	RESULT Arg1:T8 Arg2:T4	

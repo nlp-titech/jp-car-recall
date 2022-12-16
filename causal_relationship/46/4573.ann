@@ -1,0 +1,21 @@
+T1	Argument 4 28	吸入空気質量計の整流ネットの取り付け構造が不適切
+T2	Connective 29 31	ため
+T3	Argument 32 41	バック・ファイア等
+T4	Connective 41 44	により
+T5	Argument 45 47	脱落
+T6	Argument 49 51	最悪
+T7	Connective 52 54	場合
+T8	Connective 48 49	、
+T9	Argument 72 86	原動機の回転が下がらなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	CONDITION Arg1:T7 Arg2:T6	
+R8	REASON Arg1:T8 Arg2:T5	
+T10	Argument 55 71	スロットル・バルブ部に引っかかり
+T11	Connective 71 72	、
+R6	RESULT Arg1:T8 Arg2:T10	
+R7	RESULT Arg1:T7 Arg2:T10	
+R9	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T9	

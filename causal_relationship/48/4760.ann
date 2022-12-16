@@ -1,0 +1,9 @@
+T1	Argument 0 43	車体後方ラウンジ部の座席に装着されている２点式シートベルトにおいて、バックルに製造不良
+T2	Connective 49 50	、
+T3	Argument 64 80	当該バックルからベルトがはずれる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 50 59	衝突等の衝撃が発生
+T5	Connective 61 63	場合
+R3	CONDITION Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T3	

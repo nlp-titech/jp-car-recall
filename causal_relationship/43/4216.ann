@@ -1,0 +1,13 @@
+T1	Argument 0 39	大型トラックの灯火装置において、前照灯操作スイッチの配線用端子のかしめが不適切
+T2	Connective 40 42	ため
+T3	Argument 43 56	当該端子部の接触抵抗が増大
+T4	Connective 64 68	そのため
+T5	Argument 69 83	当該端子部が導通不良を起こし
+T6	Connective 83 84	、
+T7	Argument 84 93	前照灯が不灯となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

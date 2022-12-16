@@ -1,0 +1,31 @@
+T1	Argument 0 82	ターボチャージャ付車両において、ターボチャージャからオイルパンにオイルを戻すターボオイルリターンパイプとターボチャージャとの間に装着しているガスケットの材質が不適切
+T2	Connective 83 85	ため
+T3	Argument 86 95	排気管の熱膨張収縮
+T5	Argument 98 108	高負荷運転による振動
+T6	Connective 114 117	により
+T7	Argument 118 130	当該締結部のボルトが緩む
+T8	Connective 136 140	そのため
+T9	Argument 152 163	当該ボルトの緩みが進行
+T10	Connective 164 165	、
+T11	Argument 165 175	エンジンオイルが漏れ
+T12	Connective 175 176	、
+T13	Argument 182 187	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R7	REASON Arg1:T6 Arg2:T5	
+R8	RESULT Arg1:T6 Arg2:T7	
+R9	REASON Arg1:T8 Arg2:T7	
+T15	Argument 141 151	そのまま使用を続ける
+T16	Connective 151 152	と
+R10	CONDITION Arg1:T16 Arg2:T15	
+R11	RESULT Arg1:T16 Arg2:T9	
+R12	RESULT Arg1:T8 Arg2:T9	
+R13	REASON Arg1:T10 Arg2:T9	
+R14	RESULT Arg1:T10 Arg2:T11	
+R15	REASON Arg1:T12 Arg2:T11	
+R16	RESULT Arg1:T12 Arg2:T13	
+T17	Argument 176 178	最悪
+T18	Connective 179 181	場合
+R17	CONDITION Arg1:T18 Arg2:T17	
+R18	RESULT Arg1:T18 Arg2:T13	
+R2	REASON Arg1:T6 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T7	

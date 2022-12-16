@@ -1,0 +1,33 @@
+T1	Argument 22 64	高規格救急車等の発電機において、当該発電機に用いられているダイオードの定格電流が過小
+T2	Argument 84 92	ダイオードが加熱
+T3	Argument 98 107	過大な電流が流れる
+T4	Argument 112 114	発熱
+T5	Argument 116 123	樹脂部品が溶損
+T6	Argument 131 136	火災に至る
+T7	Connective 67 69	ため
+R1	REASON Arg1:T7 Arg2:T1	
+T8	Connective 97 98	、
+R4	RESULT Arg1:T8 Arg2:T3	
+T9	Connective 109 112	により
+T10	Connective 115 116	て
+T11	Connective 124 125	、
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T5	
+R9	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	
+T12	Connective 93 94	て
+T13	Argument 94 96	損傷
+T14	Argument 70 83	アイドルでの使用時間が長い
+T18	Connective 83 84	と
+R2	CONDITION Arg1:T18 Arg2:T14	
+R11	RESULT Arg1:T18 Arg2:T2	
+R12	REASON Arg1:T12 Arg2:T2	
+R13	RESULT Arg1:T12 Arg2:T13	
+R3	REASON Arg1:T8 Arg2:T13	
+R14	RESULT Arg1:T7 Arg2:T2	
+T15	Argument 125 127	最悪
+T16	Connective 128 130	場合
+R15	CONDITION Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T6	

@@ -1,0 +1,13 @@
+T1	Argument 15 28	ラックバーの熱処理が不適切
+T2	Connective 34 36	ため
+T3	Argument 51 69	ラックギアの歯部が早期摩耗または損傷
+T4	Connective 77 81	そのため
+T5	Argument 82 95	かじ取り操作ができなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 37 48	ハンドル操作の繰り返し
+T7	Connective 48 51	により
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	

@@ -1,0 +1,21 @@
+T1	Argument 9 37	燃料ポンプフィルターフランジの燃料圧力に対する強度が不足
+T2	Connective 38 40	ため
+T3	Argument 41 52	フランジ部に亀裂が発生
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 60 64	そのため
+T5	Argument 65 75	亀裂部から燃料が漏れ
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 75 76	、
+T11	Argument 76 97	漏れて気化した燃料が高温の排気管により着火
+T12	Connective 98 99	、
+R5	REASON Arg1:T6 Arg2:T5	
+T13	Argument 99 101	最悪
+T14	Connective 102 104	場合
+T15	Argument 105 110	火災に至る
+R12	RESULT Arg1:T12 Arg2:T15	
+R13	CONDITION Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R6	RESULT Arg1:T6 Arg2:T11	
+R7	REASON Arg1:T12 Arg2:T11	

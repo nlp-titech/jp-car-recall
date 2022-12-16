@@ -1,0 +1,9 @@
+T1	Argument 11 49	可変ノズル付ターボ過給機において、製造工程におけるノズル開度調整値にばらつき
+T2	Connective 52 54	ため
+T3	Argument 55 93	１３００～１５００rpmでの走行時にＥＧＲ（排気ガス循環装置）の循環量が過多
+T4	Connective 93 96	となり
+T5	Argument 97 102	黒煙を吐出
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

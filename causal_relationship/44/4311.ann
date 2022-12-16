@@ -1,0 +1,25 @@
+T1	Argument 0 71	消防車、塵芥車及びタンクローリ仕様の四輪駆動式中型トラックにおいて、トランスファのアウトプットシャフト抜け出し防止用スナップリングの強度が不足
+T2	Connective 75 77	ため
+T3	Argument 87 95	当該リングが折損
+T4	Connective 103 107	そのため
+T5	Argument 108 131	アウトプットシャフトがトランスファから抜け出し
+T6	Argument 132 142	スプラインの嵌合が外
+T7	Connective 142 143	れ
+T8	Argument 143 158	前輪に駆動力を伝達できなくなり
+T9	Connective 131 132	、
+T10	Connective 158 159	、
+T11	Argument 159 166	走行不能となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T9 Arg2:T5	
+R6	RESULT Arg1:T9 Arg2:T6	
+R7	REASON Arg1:T7 Arg2:T6	
+R8	RESULT Arg1:T7 Arg2:T8	
+R9	REASON Arg1:T10 Arg2:T8	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 78 86	急発進を繰り返す
+T13	Connective 86 87	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T3	

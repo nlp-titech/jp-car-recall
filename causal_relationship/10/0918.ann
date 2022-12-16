@@ -1,0 +1,49 @@
+T1	Argument 0 55	低床式後２軸駆動車の後前軸と後後軸間の推進軸の接手（コンパニオンフランジ）において、噛み合い部分の隙間が不適切
+T2	Connective 56 58	ため
+T3	Argument 59 82	後後軸ピニオンギヤシャフトのスプライン部が摩耗
+T4	Connective 82 83	し
+T5	Argument 83 98	キャッスルナットに緩みが生じる
+T6	Argument 107 123	キャッスルナットの締付けが不適切
+T7	Connective 124 126	ため
+T8	Argument 127 148	当該シャフトの軸受け間カラー部に摩耗が生じ
+T9	Argument 149 155	軸受けが損傷
+T10	Connective 155 156	し
+T11	Argument 156 171	キャッスルナットに緩みが生じる
+T12	Connective 177 181	そのため
+T13	Argument 182 196	そのままの状態で使用を続ける
+T14	Connective 196 197	と
+T15	Argument 198 218	キャッスルナットの回り止めの割ピンが折損
+T16	Connective 219 220	て
+T17	Argument 220 235	コンパニオンフランジが抜け出し
+T18	Argument 239 250	ピニオンシャフトが折損
+T19	Connective 251 252	、
+T20	Argument 252 254	最悪
+T21	Connective 255 257	場合
+T22	Argument 258 266	当該推進軸が脱落
+T23	Connective 267 268	て
+T24	Argument 268 275	走行不能となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T8	
+T25	Connective 148 149	、
+R7	REASON Arg1:T25 Arg2:T8	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	REASON Arg1:T12 Arg2:T5	
+R13	RESULT Arg1:T12 Arg2:T15	
+R14	CONDITION Arg1:T14 Arg2:T13	
+R15	RESULT Arg1:T14 Arg2:T15	
+R16	REASON Arg1:T16 Arg2:T15	
+R17	RESULT Arg1:T16 Arg2:T17	
+R18	RESULT Arg1:T16 Arg2:T18	
+R19	CONDITION Arg1:T21 Arg2:T20	
+R20	RESULT Arg1:T21 Arg2:T22	
+R21	REASON Arg1:T19 Arg2:T18	
+R22	REASON Arg1:T19 Arg2:T17	
+R23	RESULT Arg1:T19 Arg2:T22	
+R24	REASON Arg1:T23 Arg2:T22	
+R25	RESULT Arg1:T23 Arg2:T24	

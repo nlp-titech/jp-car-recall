@@ -1,0 +1,21 @@
+T1	Argument 0 18	外的要因によりターボチャージャが破損
+T2	Connective 20 22	場合
+T3	Argument 24 48	マフラ・サポート・ブラケットに発生する振動が増大
+T4	Connective 50 52	ため
+T5	Argument 53 63	当該ブラケットが折損
+T6	Connective 70 71	。
+T9	Argument 78 88	オイルの飛散量が増大
+R3	RESULT Arg1:T6 Arg2:T9	
+R4	REASON Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T5	
+R6	REASON Arg1:T4 Arg2:T3	
+R7	RESULT Arg1:T2 Arg2:T3	
+R8	CONDITION Arg1:T2 Arg2:T1	
+T13	Argument 89 91	最悪
+T14	Argument 94 99	火災が発生
+T15	Connective 92 94	場合
+T16	Connective 88 89	し
+R9	REASON Arg1:T16 Arg2:T9	
+R10	RESULT Arg1:T16 Arg2:T14	
+R11	CONDITION Arg1:T15 Arg2:T13	
+R12	RESULT Arg1:T15 Arg2:T14	

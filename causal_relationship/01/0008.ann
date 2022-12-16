@@ -1,0 +1,29 @@
+T2	Connective 72 74	ため
+T3	Argument 100 122	チャコールキャニスターの逆流防止弁に錆の発生
+R1	REASON Arg1:T2 Arg2:T8	
+R2	RESULT Arg1:T2 Arg2:T3	
+T5	Connective 129 130	、
+R3	REASON Arg1:T5 Arg2:T3	
+T4	Argument 152 172	チャコールキャニスターの逆流防止弁が固着
+T6	Argument 174 193	燃料蒸発ガスが原動機へ吸引されなくなる
+R4	RESULT Arg1:T5 Arg2:T4	
+T7	Connective 173 174	、
+T10	Connective 193 195	ため
+T11	Argument 196 214	大気開放口から燃料蒸発ガスが漏れ出す
+R5	RESULT Arg1:T10 Arg2:T11	
+R6	REASON Arg1:T10 Arg2:T6	
+T18	Argument 75 96	雨天走行時にタイヤが跳ね上げた水を吸い込ん
+T19	Connective 97 99	場合
+R7	CONDITION Arg1:T19 Arg2:T18	
+R8	RESULT Arg1:T19 Arg2:T3	
+T20	Argument 130 144	このままの状態で使用を続ける
+T21	Connective 144 145	と
+R9	CONDITION Arg1:T21 Arg2:T20	
+T22	Argument 146 148	最悪
+T23	Connective 149 151	場合
+R10	RESULT Arg1:T21 Arg2:T4	
+R11	CONDITION Arg1:T23 Arg2:T22	
+R12	RESULT Arg1:T23 Arg2:T4	
+R13	REASON Arg1:T7 Arg2:T4	
+R14	RESULT Arg1:T7 Arg2:T6	
+T8	Argument 0 71	燃料蒸発ガス排出抑止装置のチャコールキャニスター（燃料蒸発ガスを貯蔵する装置）において、防水空気槽の大気開放口部にある保護カバーの構造が不適切

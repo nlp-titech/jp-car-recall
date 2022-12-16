@@ -1,0 +1,17 @@
+T1	Argument 0 20	速度計において、電気配線の防水性が不適切
+T2	Argument 24 49	電気配線に入った水が車速センサーのコネクタ部に浸水
+T3	Argument 51 56	端子が発錆
+T4	Argument 58 71	速度計への車速信号が不安定
+T5	Argument 75 87	速度計が誤った表示をする
+T6	Connective 21 23	ため
+T7	Connective 50 51	て
+T8	Connective 57 58	、
+T9	Connective 74 75	て
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	

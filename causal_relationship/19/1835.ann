@@ -1,0 +1,17 @@
+T1	Argument 0 40	ステアリングシャフトとギヤボックスを連結している締結ボルトの締め付け方法が不適切
+T2	Connective 41 43	ため
+T3	Argument 44 50	ボルトが損傷
+T4	Connective 60 64	そのため
+T5	Argument 65 75	締結力が不十分となり
+T6	Connective 75 76	、
+T7	Argument 82 95	かじ取り操作ができなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 76 78	最悪
+T9	Connective 79 81	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T7	

@@ -1,0 +1,23 @@
+T1	Argument 0 59	ディーゼルエンジンにおいて、原動機のカム軸駆動用タイミングチェーンの張力を調整する部品（テンションガイド）の強度が不足
+T2	Argument 76 84	当該ガイドが破損
+T3	Argument 99 119	当該ガイドの破片がスプロケットにかみ込ん
+T4	Argument 120 137	原動機が停止し、再始動できなくなる
+T6	Connective 63 65	ため
+T8	Connective 119 120	で
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+T5	Connective 85 86	て
+T9	Argument 86 91	異音が発生
+T10	Argument 66 73	チェーンの共振
+T11	Connective 73 76	により
+R3	REASON Arg1:T11 Arg2:T10	
+R4	RESULT Arg1:T11 Arg2:T2	
+R7	REASON Arg1:T5 Arg2:T2	
+R8	RESULT Arg1:T5 Arg2:T9	
+R9	RESULT Arg1:T5 Arg2:T3	
+T7	Argument 93 95	最悪
+T12	Connective 96 98	場合
+R10	CONDITION Arg1:T12 Arg2:T7	
+R11	RESULT Arg1:T12 Arg2:T3	

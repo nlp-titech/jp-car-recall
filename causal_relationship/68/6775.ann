@@ -1,0 +1,22 @@
+T2	Connective 109 111	ため
+T3	Argument 112 126	このままの状態で使用を続ける
+T4	Connective 126 127	と
+T5	Argument 128 135	封入ガスが減少
+T6	Connective 136 137	、
+T7	Argument 137 165	ポンプによるブレーキ液加圧時の圧力変動を吸収できなくなり
+T8	Connective 165 166	、
+T11	Argument 166 175	車室内に異音が発生
+T12	Argument 189 231	ブレーキ液圧低下警報ブザーの圧力スイッチにおいて、当該スイッチの作動圧の設定に不適切
+T13	Connective 237 239	ため
+T14	Argument 240 271	ブレーキ液圧が低下していない状態にもかかわらず警報ブザーが鳴る
+R1	REASON Arg1:T13 Arg2:T12	
+R2	RESULT Arg1:T13 Arg2:T14	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	CONDITION Arg1:T4 Arg2:T3	
+R6	RESULT Arg1:T4 Arg2:T5	
+R7	REASON Arg1:T6 Arg2:T5	
+R8	RESULT Arg1:T6 Arg2:T7	
+R11	REASON Arg1:T8 Arg2:T7	
+R12	RESULT Arg1:T8 Arg2:T11	
+T18	Argument 1 109	油圧式制動倍力装置において、エンジンルーム内に取り付けられているピストン式アキュームレータ（ブレーキ液の供給圧確保用蓄圧器）に封入されたガス（液圧変動吸収用）がピストンのシール部からブレーキ液を介してわずかずつ洩れる
+R3	REASON Arg1:T2 Arg2:T18	

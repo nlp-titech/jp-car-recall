@@ -1,0 +1,21 @@
+T1	Argument 0 32	前輪緩衝装置のストラットを車体に固定している取付部の構造が不適切
+T2	Argument 52 76	当該取付部のストラットサポートの取付ボルトが破損
+T3	Argument 84 92	ストラットが外れ
+T4	Argument 93 100	走行不能となる
+T5	Connective 33 35	ため
+T6	Connective 77 78	、
+T7	Connective 92 93	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 36 50	このままの状態で使用を続ける
+T9	Connective 50 51	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T2	
+T10	Argument 78 80	最悪
+T11	Connective 81 83	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	

@@ -1,0 +1,29 @@
+T2	Connective 15 18	により
+T3	Argument 18 27	タンクの強度が不足
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 0 15	燃料タンクの底板形状の成形不良
+T5	Connective 36 38	ため
+T6	Argument 64 74	当該底板に亀裂が入り
+R4	RESULT Arg1:T5 Arg2:T6	
+R1	REASON Arg1:T2 Arg2:T4	
+R3	REASON Arg1:T5 Arg2:T3	
+T1	Argument 81 86	燃料が漏れ
+T7	Connective 61 64	により
+T8	Argument 55 61	走行時の振動
+R5	REASON Arg1:T7 Arg2:T8	
+R6	RESULT Arg1:T7 Arg2:T6	
+T9	Connective 74 75	、
+R7	REASON Arg1:T9 Arg2:T6	
+R8	RESULT Arg1:T9 Arg2:T1	
+T14	Argument 39 53	このままの状態で使用を続ける
+T15	Connective 53 54	と
+R9	CONDITION Arg1:T15 Arg2:T14	
+R10	RESULT Arg1:T15 Arg2:T6	
+T16	Argument 75 77	最悪
+T17	Connective 78 80	場合
+R11	CONDITION Arg1:T17 Arg2:T16	
+R12	RESULT Arg1:T17 Arg2:T1	
+T18	Connective 86 87	て
+T19	Argument 87 92	火災に至る
+R13	RESULT Arg1:T18 Arg2:T19	
+R14	REASON Arg1:T18 Arg2:T1	

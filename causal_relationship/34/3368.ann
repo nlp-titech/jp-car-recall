@@ -1,0 +1,21 @@
+T1	Argument 0 21	エンジンＥＣＵの燃料噴射プログラムが不適切
+T2	Connective 22 24	ため
+T3	Argument 25 43	燃料噴射の学習機能が正常に機能しない
+T4	Connective 49 53	そのため
+T5	Argument 54 81	ＤＰＦ（ディーゼル粒子状物質除去装置）に過剰に煤が堆積
+T6	Connective 82 83	、
+T7	Argument 83 97	そのままの状態で使用を続ける
+T8	Connective 97 98	と
+T9	Argument 99 101	最悪
+T10	Connective 102 104	場合
+T11	Argument 105 120	エンストして再始動できなくなる
+R1	RESULT Arg1:T10 Arg2:T11	
+R2	CONDITION Arg1:T10 Arg2:T9	
+R3	RESULT Arg1:T8 Arg2:T11	
+R4	CONDITION Arg1:T8 Arg2:T7	
+R5	RESULT Arg1:T6 Arg2:T11	
+R6	REASON Arg1:T6 Arg2:T5	
+R7	RESULT Arg1:T4 Arg2:T5	
+R8	REASON Arg1:T4 Arg2:T3	
+R9	RESULT Arg1:T2 Arg2:T3	
+R10	REASON Arg1:T2 Arg2:T1	

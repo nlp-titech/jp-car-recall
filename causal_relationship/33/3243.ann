@@ -1,0 +1,21 @@
+T1	Argument 0 27	ターボ潤滑油戻りパイプにおいて、取付け部の構造が不適切
+T2	Connective 28 30	ため
+T3	Argument 30 39	取付けボルトが緩み
+T4	Connective 39 40	、
+T5	Argument 40 53	取付け部に微少な隙間が発生
+T6	Connective 61 65	そのため
+T7	Argument 66 80	そのままの状態で使用を続ける
+T8	Connective 80 81	と
+T9	Argument 82 104	隙間から漏れた潤滑油が排気マニホールドに落ち
+T10	Connective 104 105	て
+T11	Argument 106 108	発煙
+R1	RESULT Arg1:T10 Arg2:T11	
+R2	REASON Arg1:T10 Arg2:T9	
+R3	RESULT Arg1:T8 Arg2:T9	
+R4	CONDITION Arg1:T8 Arg2:T7	
+R5	RESULT Arg1:T6 Arg2:T9	
+R6	REASON Arg1:T6 Arg2:T5	
+R7	RESULT Arg1:T4 Arg2:T5	
+R8	REASON Arg1:T4 Arg2:T3	
+R9	RESULT Arg1:T2 Arg2:T3	
+R10	REASON Arg1:T2 Arg2:T1	

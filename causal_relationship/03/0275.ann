@@ -1,0 +1,21 @@
+T1	Argument 0 66	後軸差動装置において、後輪左右の駆動力制御機構（アクティブヨーコントロールシステム）を制御するコンピュータープログラムの一部に不適切
+T2	Argument 90 109	駆動力移動機構のクラッチが連続して作動
+T3	Argument 144 153	後軸差動装置が破損
+T4	Connective 72 74	ため
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+T5	Connective 121 122	、
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	
+T6	Argument 122 136	そのままの状態で使用を続ける
+T7	Connective 136 137	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+T8	Argument 138 140	最悪
+T9	Connective 141 143	場合
+R6	CONDITION Arg1:T9 Arg2:T8	
+R7	RESULT Arg1:T7 Arg2:T3	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 75 86	原動機の始動タイミング
+T11	Connective 86 90	によって
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T2	

@@ -1,0 +1,9 @@
+T1	Argument 0 42	大型トラクタにおいて、アルミ製の燃料タンクを固定するストラップの締付けトルクが不適切
+T2	Connective 43 45	ため
+T3	Argument 46 60	燃料タンクの側面に亀裂が生じ
+T4	Connective 60 61	て
+T5	Argument 61 67	燃料が漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

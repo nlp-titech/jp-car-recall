@@ -1,0 +1,13 @@
+T1	Argument 0 46	ランプ類の点灯を制御するリレーユニット内のリレー駆動電源回路にあるトランジスタが放熱性能不足
+T2	Connective 47 49	ため
+T3	Argument 61 73	当該部品が発熱により損傷
+T6	Connective 74 75	て
+T7	Argument 75 88	ランプ類が点灯できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 50 60	そのまま使用を続ける
+T9	Connective 60 61	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+R3	REASON Arg1:T6 Arg2:T3	

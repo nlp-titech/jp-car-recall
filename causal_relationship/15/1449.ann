@@ -1,0 +1,33 @@
+T1	Argument 0 16	燃料タンクにおいて、設計図の誤記
+T2	Connective 16 19	により
+T3	Argument 20 40	燃料の戻りホースと供給ホースが逆に取付け
+T4	Argument 49 65	燃料の戻り配管の固定方法が不適切
+T5	Connective 66 68	ため
+T6	Argument 69 74	車両の振動
+T7	Connective 74 77	により
+T8	Argument 78 88	取付け部に亀裂が発生
+T9	Connective 96 100	そのため
+T10	Argument 101 115	そのままの状態で使用を続ける
+T11	Connective 115 116	と
+T12	Argument 117 141	亀裂部位から空気を吸込み原動機に燃料が供給されず
+T13	Connective 141 142	、
+T14	Argument 142 144	最悪
+T15	Connective 145 147	場合
+T16	Argument 148 154	原動機が停止
+T17	Argument 161 169	始動できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T5 Arg2:T4	
+R4	REASON Arg1:T7 Arg2:T6	
+R5	RESULT Arg1:T5 Arg2:T8	
+R6	RESULT Arg1:T7 Arg2:T8	
+R7	REASON Arg1:T9 Arg2:T8	
+R8	CONDITION Arg1:T11 Arg2:T10	
+R9	RESULT Arg1:T9 Arg2:T12	
+R10	RESULT Arg1:T11 Arg2:T12	
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T16	
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T16	
+R15	RESULT Arg1:T13 Arg2:T17	
+R16	RESULT Arg1:T15 Arg2:T17	

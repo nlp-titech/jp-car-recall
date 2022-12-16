@@ -1,0 +1,29 @@
+T1	Argument 0 30	対象車両設計時に開発した故障診断ツール用のプログラムが不適切
+T2	Connective 31 33	ため
+T5	Argument 34 71	当該ツールを使用した際に、車両の共通駆動系制御コンピュータのデータが初期化
+T6	Connective 73 74	、
+T7	Argument 74 96	オートクルーズやエンジン補助ブレーキの不作動
+T9	Argument 131 153	低速ギヤ段でのトルクカット機能が不作動となる
+T10	Connective 157 158	、
+T11	Argument 158 172	そのままの状態で使用を続ける
+T12	Connective 204 205	、
+T13	Argument 205 212	走行不能となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R9	REASON Arg1:T10 Arg2:T9	
+R12	RESULT Arg1:T12 Arg2:T13	
+T14	Connective 172 173	と
+T15	Argument 174 176	最悪
+T16	Connective 177 179	場合
+T17	Argument 180 203	トランスミッションやデファレンシャルギヤが破損
+R11	CONDITION Arg1:T14 Arg2:T11	
+R13	RESULT Arg1:T14 Arg2:T17	
+R14	CONDITION Arg1:T16 Arg2:T15	
+R15	RESULT Arg1:T16 Arg2:T17	
+R16	REASON Arg1:T12 Arg2:T17	
+T18	Argument 97 112	坂道発進補助装置が解除されない
+R17	RESULT Arg1:T6 Arg2:T18	
+R7	RESULT Arg1:T6 Arg2:T9	
+R8	RESULT Arg1:T10 Arg2:T17	

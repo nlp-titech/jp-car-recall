@@ -1,0 +1,9 @@
+T1	Argument 0 59	ディーラーオプション部品として販売された前部霧灯を装着した車両において、前部霧灯装着時に誤ったライトスイッチを組み付け
+T2	Connective 60 62	ため
+T3	Argument 63 95	すれ違い用前照灯と前部霧灯を点灯させた状態で右側方向指示器を作動
+T4	Connective 98 99	と
+T5	Argument 100 128	走行用前照灯が点灯するとともに左側方向指示器が同時に点滅
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R4	CONDITION Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T4 Arg2:T5	

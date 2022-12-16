@@ -1,0 +1,23 @@
+T1	Argument 0 22	車枠において、フレーム構成部品の溶接が不十分
+T2	Argument 25 36	当該溶接部に亀裂が生じ
+T3	Argument 39 55	緩衝装置取付金具回りに亀裂が生じ
+T4	Argument 57 66	走行中に異音が発生
+T5	Argument 74 86	当該金具が車枠から剥がれ
+T6	Argument 87 99	走行安定性がそこなわれる
+T7	Connective 23 24	為
+T8	Connective 36 37	、
+T9	Connective 55 56	て
+T11	Connective 86 87	、
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R9	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	
+T13	Argument 68 70	最悪
+T14	Connective 71 73	場合
+R14	CONDITION Arg1:T14 Arg2:T13	
+R15	RESULT Arg1:T14 Arg2:T5	
+R7	RESULT Arg1:T9 Arg2:T5	

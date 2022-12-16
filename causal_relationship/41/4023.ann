@@ -1,0 +1,5 @@
+T1	Argument 0 40	小型トラックにおいて、車体の後面に貼付した最大積載量ラベルを正しく表示していない
+T2	Argument 43 68	保安基準第１８条第８項で定める要件を満足していない
+T3	Connective 40 42	ため
+R1	REASON Arg1:T3 Arg2:T1	
+R2	RESULT Arg1:T3 Arg2:T2	

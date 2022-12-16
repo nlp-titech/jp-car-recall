@@ -1,0 +1,9 @@
+T1	Argument 14 45	ハンズフリーユニットにおいて、関連する構成部品の誤差の積み重ね
+T2	Connective 45 48	により
+T3	Argument 49 91	ハンドルをハンドルロック位置に操作しても、それを検出するためのスイッチを押し切れない
+T4	Connective 91 93	ため
+T5	Argument 94 108	ステアリングロックができない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

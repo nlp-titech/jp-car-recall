@@ -1,0 +1,13 @@
+T1	Argument 57 82	折れ込み機構のロックプレートが取り付けられていない
+T2	Connective 88 92	このため
+T3	Argument 93 115	ブレーキペダルが正規位置と異なる状態で取付け
+T4	Connective 125 126	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 126 128	制動
+T6	Connective 128 129	時
+T7	Argument 130 145	適正な制動効果が得られなくなる
+R4	RESULT Arg1:T6 Arg2:T7	
+R5	RESULT Arg1:T4 Arg2:T7	
+R6	CONDITION Arg1:T6 Arg2:T5	

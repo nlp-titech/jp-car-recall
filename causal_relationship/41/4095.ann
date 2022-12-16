@@ -1,0 +1,31 @@
+T1	Argument 0 19	メインハーネスにおいて、配索のバラツキ
+T2	Argument 23 48	洗車等の水が整流器に接続するカプラカバー内に溜まり
+T3	Argument 49 56	電気配線が腐食
+T4	Argument 69 79	そのまま使用を続ける
+T5	Argument 80 85	腐食が進行
+T6	Argument 87 94	電気配線が断線
+T7	Argument 96 101	充電できず
+T8	Argument 102 128	警音器や方向指示器等の灯火器類が正しく作動しなくなる
+T10	Argument 138 160	走行中にエンジンが停止して再始動できなくなる
+T12	Connective 19 22	により
+T13	Connective 48 49	、
+T14	Connective 64 68	そのため
+T15	Connective 79 80	と
+T16	Connective 86 87	、
+T17	Connective 95 96	て
+T18	Connective 101 102	、
+R1	REASON Arg1:T12 Arg2:T1	
+R2	RESULT Arg1:T12 Arg2:T2	
+R3	REASON Arg1:T13 Arg2:T2	
+R4	RESULT Arg1:T13 Arg2:T3	
+R5	REASON Arg1:T14 Arg2:T3	
+R6	RESULT Arg1:T14 Arg2:T6	
+R7	CONDITION Arg1:T15 Arg2:T4	
+R8	RESULT Arg1:T15 Arg2:T5	
+R9	REASON Arg1:T16 Arg2:T5	
+R10	RESULT Arg1:T16 Arg2:T6	
+R11	REASON Arg1:T17 Arg2:T6	
+R12	RESULT Arg1:T17 Arg2:T7	
+R13	REASON Arg1:T18 Arg2:T7	
+R14	RESULT Arg1:T18 Arg2:T8	
+R15	RESULT Arg1:T18 Arg2:T10	

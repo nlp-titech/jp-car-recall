@@ -1,0 +1,21 @@
+T1	Argument 0 38	かじ取り装置において、ハンドル軸取付ブラケットのフレームへの取付方法が不適切
+T2	Connective 39 41	ため
+T3	Argument 42 53	ハンドルに荷重がかかる
+T4	Connective 53 54	と
+T5	Argument 54 63	ゴムマウントが破損
+T6	Connective 64 65	、
+T7	Argument 65 74	ブラケットが外れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Connective 80 84	そのため
+T9	Argument 85 100	ハンドル軸の固定が不十分となり
+T10	Connective 100 101	、
+T11	Argument 101 117	容易にかじ取り操作ができなくなる
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	

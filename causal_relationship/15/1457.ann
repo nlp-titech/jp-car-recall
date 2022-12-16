@@ -1,0 +1,21 @@
+T1	Argument 0 60	ポールトレーラ等を牽引するピントルフック付きトラクタにおいて、トレーラの連結状態を判断する制動灯回路のプログラムが不適切
+T2	Connective 61 63	ため
+T3	Argument 64 85	ＡＢＳ装置が装備されていないトレーラと連結
+T4	Connective 87 89	場合
+T5	Argument 90 104	速度１５ｋｍ／ｈ以下での走行
+T6	Connective 104 105	時
+T7	Argument 106 122	トレーラが連結されてないと誤判断
+T8	Connective 129 133	そのため
+T9	Argument 134 152	その状態の時にトレーラブレーキを作動
+T10	Connective 155 157	場合
+T11	Argument 158 164	制動灯が点滅
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T7	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	CONDITION Arg1:T10 Arg2:T9	
+R9	RESULT Arg1:T8 Arg2:T11	
+R10	RESULT Arg1:T10 Arg2:T11	

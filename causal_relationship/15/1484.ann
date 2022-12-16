@@ -1,0 +1,13 @@
+T1	Argument 0 41	操縦装置において、方向指示器キャンセルピンが、正確にハンドルに組み付けられていない
+T2	Connective 47 51	そのため
+T3	Argument 52 78	方向指示器レバーを作動させ、同一方向にハンドルを回し
+T4	Connective 79 81	場合
+T5	Argument 82 88	レバーが干渉
+T6	Connective 89 90	、
+T7	Argument 90 104	方向指示器が解除されてしまう
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

@@ -1,0 +1,29 @@
+T1	Argument 0 27	運転席座席ベルトにおいて、バックル取付部の形状が不適切
+T2	Connective 28 30	ため
+T3	Argument 31 47	左右方向の荷重に対する強度が不足
+T4	Connective 52 56	そのため
+T5	Argument 57 62	悪路走行等
+T6	Connective 62 65	により
+T7	Argument 65 91	当該バックルに左右方向への過大な荷重が繰り返しかかる
+T8	Connective 91 92	と
+T9	Argument 93 104	当該取付部に亀裂が発生
+T10	Connective 105 106	、
+T11	Argument 106 108	最悪
+T12	Connective 109 111	場合
+T13	Argument 112 114	破損
+T14	Connective 115 116	て
+T15	Argument 116 128	乗員の拘束が出来なくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	REASON Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	RESULT Arg1:T4 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	

@@ -1,0 +1,22 @@
+T3	Argument 0 31	車軸組立の際、前輪ハブ外側軸受け部のロックナット締付けが不適切
+T4	Argument 36 64	前輪ハブ外側軸受け部と前輪ハブ胴部のグリース充填量が不足
+T5	Connective 74 78	そのため
+T8	Connective 97 100	により
+T6	Argument 79 97	当該軸受けが締付不足または、潤滑不良
+T7	Argument 100 105	発熱、破損
+T9	Argument 107 109	最悪
+T10	Connective 110 112	場合
+T11	Argument 113 117	走行不能
+R4	REASON Arg1:T5 Arg2:T3	
+R5	REASON Arg1:T5 Arg2:T4	
+R6	RESULT Arg1:T5 Arg2:T6	
+R7	REASON Arg1:T8 Arg2:T6	
+R8	RESULT Arg1:T8 Arg2:T7	
+R9	CONDITION Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Connective 106 107	、
+R11	REASON Arg1:T12 Arg2:T7	
+R12	RESULT Arg1:T12 Arg2:T11	
+T1	Argument 121 126	火災に至る
+R1	RESULT Arg1:T12 Arg2:T1	
+R2	RESULT Arg1:T10 Arg2:T1	

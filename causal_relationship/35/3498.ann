@@ -1,0 +1,29 @@
+T1	Argument 19 57	油圧ポンプを駆動するための駆動軸のスプライン形状と接続フランジの形状が不適切
+T2	Connective 58 60	ため
+T3	Argument 61 89	経年で駆動軸スプラインと接続用フランジのガタが大きくなる
+T4	Connective 95 99	そのため
+T5	Argument 100 114	そのままの状態で使用を続ける
+T6	Connective 114 115	と
+T7	Argument 116 139	ガタにより接続用フランジを固定するボルトが緩み
+T8	Connective 139 140	、
+T9	Argument 140 142	最悪
+T10	Connective 143 145	場合
+T11	Argument 146 171	ボルトが外れてスプライン軸から接続用フランジが抜け
+T12	Connective 171 172	、
+T13	Argument 172 186	油圧ポンプ駆動用推進軸が脱落
+T14	Connective 187 188	て
+T15	Argument 188 196	他の交通を妨げる
+R1	RESULT Arg1:T14 Arg2:T15	
+R2	REASON Arg1:T14 Arg2:T13	
+R3	RESULT Arg1:T12 Arg2:T13	
+R4	REASON Arg1:T12 Arg2:T11	
+R5	RESULT Arg1:T10 Arg2:T11	
+R6	CONDITION Arg1:T10 Arg2:T9	
+R7	RESULT Arg1:T8 Arg2:T11	
+R8	REASON Arg1:T8 Arg2:T7	
+R9	RESULT Arg1:T6 Arg2:T7	
+R10	CONDITION Arg1:T6 Arg2:T5	
+R11	RESULT Arg1:T4 Arg2:T5	
+R12	REASON Arg1:T4 Arg2:T3	
+R13	RESULT Arg1:T2 Arg2:T3	
+R14	REASON Arg1:T2 Arg2:T1	

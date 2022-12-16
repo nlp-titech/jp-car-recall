@@ -1,0 +1,29 @@
+T2	Connective 32 34	ため
+T3	Argument 35 55	ペダル取り付け部が融雪剤等により腐食磨耗
+T4	Connective 57 59	場合
+T5	Argument 60 78	取り付けボルト周辺の強度が極度に低下
+T6	Connective 86 90	そのため
+T7	Argument 91 101	そのまま使用を続ける
+T8	Connective 101 102	と
+T9	Argument 103 114	ペダル取り付け部が破損
+T10	Connective 115 116	、
+T11	Argument 116 118	最悪
+T12	Connective 119 121	場合
+T13	Argument 122 133	ペダルがフロアから外れ
+T14	Connective 133 134	、
+T15	Argument 134 147	ブレーキ操作ができなくなる
+T1	Argument 0 32	主制動装置において、ブレーキペダルの取り付け部の強度に余裕がない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T9	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	CONDITION Arg1:T12 Arg2:T11	
+R11	RESULT Arg1:T10 Arg2:T13	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	

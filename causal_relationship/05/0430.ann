@@ -1,0 +1,21 @@
+T1	Argument 1 46	運転者席用座席ベルトにおいて、当該ベルトバックル（タング受け部）内の台座の製造方法が不適切
+T2	Argument 50 70	ベルト締結時にタングが正しく装着されない
+T3	Argument 76 89	ロック機構が正常に作動せず
+T4	Argument 107 113	ベルトが外れ
+T5	Argument 114 125	乗員を拘束できなくなる
+T6	Argument 90 104	衝突時等において荷重がかかっ
+T7	Connective 47 49	ため
+T8	Connective 75 76	、
+T9	Connective 89 90	、
+T10	Connective 105 106	時
+T11	Connective 113 114	て
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	CONDITION Arg1:T10 Arg2:T6	
+R8	RESULT Arg1:T10 Arg2:T4	
+R9	REASON Arg1:T11 Arg2:T4	
+R10	RESULT Arg1:T11 Arg2:T5	

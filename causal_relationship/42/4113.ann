@@ -1,0 +1,31 @@
+T1	Argument 9 27	ブレーキ用エアチューブの配策が不適切
+T2	Connective 28 30	ため
+T3	Argument 47 65	当該チューブがプロペラシャフトと接触
+T4	Connective 73 77	そのため
+T5	Argument 94 103	当該チューブが損傷
+T6	Argument 105 109	エア漏れ
+T7	Connective 104 105	て
+T8	Argument 112 122	ブレーキ警告灯が点灯
+T10	Argument 130 136	制動力が低下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	
+T11	Connective 109 112	による
+R7	REASON Arg1:T11 Arg2:T6	
+R8	RESULT Arg1:T11 Arg2:T8	
+R9	RESULT Arg1:T11 Arg2:T10	
+T9	Argument 124 126	最悪
+T12	Connective 127 129	場合
+R10	CONDITION Arg1:T12 Arg2:T9	
+R11	RESULT Arg1:T12 Arg2:T10	
+T13	Argument 78 92	そのままの状態で使用を続ける
+T14	Connective 92 93	と
+R12	CONDITION Arg1:T14 Arg2:T13	
+R13	RESULT Arg1:T14 Arg2:T5	
+T15	Argument 31 43	起伏の大きい悪路を走行し
+T16	Connective 44 46	際に
+R14	CONDITION Arg1:T16 Arg2:T15	
+R15	RESULT Arg1:T16 Arg2:T3	

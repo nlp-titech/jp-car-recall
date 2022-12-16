@@ -1,0 +1,33 @@
+T1	Argument 0 32	制動装置において､アンカーブラケットのボルト取付部の加工が不適切
+T2	Argument 36 52	当該ブラケットの取付に緩みが生じ
+T3	Argument 69 77	当該ボルトが折損
+T4	Argument 85 92	折損したボルト
+T5	Argument 95 106	ホイールシリンダが損傷
+T6	Argument 108 116	ブレーキ液が洩れ
+T7	Argument 117 129	ブレーキが作動しなくなる
+T8	Connective 33 35	ため
+T9	Connective 52 53	､
+T10	Connective 78 79	､
+T11	Connective 92 95	により
+T12	Connective 107 108	､
+T13	Connective 116 117	､
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T2	
+R3	REASON Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T3	
+R5	REASON Arg1:T10 Arg2:T3	
+R6	RESULT Arg1:T10 Arg2:T5	
+R7	REASON Arg1:T11 Arg2:T4	
+R8	RESULT Arg1:T11 Arg2:T5	
+R9	REASON Arg1:T12 Arg2:T5	
+R10	RESULT Arg1:T12 Arg2:T6	
+R11	REASON Arg1:T13 Arg2:T6	
+R12	RESULT Arg1:T13 Arg2:T7	
+T14	Argument 53 67	そのままの状態で使用を続ける
+T15	Connective 67 68	と
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T3	
+T16	Argument 79 81	最悪
+T17	Connective 82 84	場合
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T5	

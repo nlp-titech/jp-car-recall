@@ -1,0 +1,17 @@
+T1	Argument 0 63	駐車制動装置のイコライザ（駐車ブレーキの操作力を左右の車輪に均等に振り分ける装置）において、ブレーキケーブル組付部の隙間が広い
+T2	Connective 69 73	そのため
+T3	Argument 74 92	ブレーキケーブルが当該隙間に入り込み
+T4	Connective 92 93	、
+T5	Argument 99 127	駐車ブレーキ操作時にブレーキケーブルがイコライザから外れ
+T6	Connective 127 128	、
+T7	Argument 128 137	駐車制動能力が低下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T15	Argument 93 95	最悪
+T16	Connective 96 98	場合
+R9	CONDITION Arg1:T16 Arg2:T15	
+R10	RESULT Arg1:T16 Arg2:T5	

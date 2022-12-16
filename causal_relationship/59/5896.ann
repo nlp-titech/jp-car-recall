@@ -1,0 +1,21 @@
+T1	Argument 10 49	セレーション・レールにおいて、エアバッグ・カバーパネルとのスポット溶接が不適切
+T2	Connective 55 57	ため
+T3	Argument 58 82	助手席側のエアバッグシステムが衝突を検知して作動
+T4	Connective 84 86	場合
+T5	Argument 98 119	当該部品がエアバッグ・カバーパネルから外れ
+T6	Argument 130 132	最悪
+T7	Connective 133 135	場合
+T8	Argument 136 150	外れた当該部品が乗員に当たる
+T9	Connective 129 130	。
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T9 Arg2:T5	
+R6	RESULT Arg1:T9 Arg2:T8	
+R7	CONDITION Arg1:T7 Arg2:T6	
+R8	RESULT Arg1:T7 Arg2:T8	
+T10	Argument 87 97	エアバッグの膨張過程
+T11	Connective 97 98	で
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	

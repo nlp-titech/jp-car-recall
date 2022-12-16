@@ -1,0 +1,13 @@
+T1	Argument 0 95	首都圏（埼玉県、千葉県、東京都、神奈川県）で実施されているディーゼル車の排出ガス規制対応のために触媒を追加した車両において、エンジンからの振動に対し、メインマフラーの前側の排気管の強度が不足
+T2	Connective 100 104	そのため
+T3	Argument 117 125	当該排気管が切損
+T4	Connective 126 127	、
+T5	Argument 127 132	騒音が増大
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 105 115	そのまま使用を続ける
+T7	Connective 115 116	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	

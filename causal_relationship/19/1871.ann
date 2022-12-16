@@ -1,0 +1,13 @@
+T1	Argument 0 41	燃料噴射装置の燃料供給ポンプ（サプライポンプ）に接続するパイプのナット締結力が不足
+T2	Connective 45 47	ため
+T3	Argument 48 57	気密の確保が不十分
+T4	Connective 64 68	そのため
+T5	Argument 84 98	パイプ締結部から燃料が漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T8	Argument 69 83	そのままの状態で使用を続ける
+T9	Connective 83 84	と
+R5	CONDITION Arg1:T9 Arg2:T8	
+R6	RESULT Arg1:T9 Arg2:T5	

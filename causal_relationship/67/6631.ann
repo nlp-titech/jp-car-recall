@@ -1,0 +1,13 @@
+T1	Argument 0 29	フロントフェンダにおいて、ハウジングライナーの形状が不適切
+T2	Connective 30 32	ため
+T3	Argument 33 47	ハンドルを最大切れ角まで操舵
+T4	Connective 49 51	場合
+T5	Argument 52 72	フロントタイヤがハウジングライナーに接触
+T6	Connective 75 79	そのため
+T7	Argument 80 97	保安基準第１１条の基準に適合しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

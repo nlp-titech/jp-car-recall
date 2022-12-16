@@ -1,0 +1,37 @@
+T1	Argument 0 27	室内用クーラーの水滴飛散防止用フィルタ取付時のバラツキ
+T2	Connective 27 30	により
+T3	Argument 31 47	フィルタとレジスタの隙間が少ない
+T4	Argument 64 75	当該フィルタの目詰まり
+T5	Connective 75 78	により
+T6	Argument 79 97	風量によるフィルタ変形量が大きくなり
+T7	Connective 97 98	、
+T8	Argument 98 114	更にレジスタとの隙間が少なくなる
+T9	Connective 120 124	そのため
+T12	Argument 137 162	風量不足により高温となったレジスタとフィルタが接触
+T13	Connective 163 164	て
+T14	Argument 164 166	焼損
+T15	Connective 167 168	、
+T16	Argument 174 180	火災にいたる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R4	REASON Arg1:T5 Arg2:T4	
+R5	RESULT Arg1:T5 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T8	
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T12	
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T14	
+R13	REASON Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T16	
+R15	REASON Arg1:T7 Arg2:T6	
+T17	Argument 125 135	そのまま使用を続ける
+T18	Connective 135 136	と
+R16	CONDITION Arg1:T18 Arg2:T17	
+T19	Argument 168 170	最悪
+T20	Connective 171 173	場合
+R18	CONDITION Arg1:T20 Arg2:T19	
+R19	RESULT Arg1:T20 Arg2:T16	
+T21	Connective 52 53	。
+R3	REASON Arg1:T21 Arg2:T3	
+R20	RESULT Arg1:T21 Arg2:T8	
+R9	RESULT Arg1:T18 Arg2:T12	

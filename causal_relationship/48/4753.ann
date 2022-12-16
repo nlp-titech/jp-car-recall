@@ -1,0 +1,21 @@
+T1	Argument 8 34	バランサーシャフトのオイルシールの組付け指示が不適切
+T2	Connective 35 37	ため
+T3	Argument 54 64	シールの保持力が低下
+T4	Connective 65 66	、
+T5	Argument 72 82	当該シールが抜け出し
+T6	Connective 82 83	、
+T7	Argument 83 94	エンジンオイルが漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 38 52	そのままの状態で使用を続ける
+T9	Connective 52 53	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 66 68	最悪
+T11	Connective 69 71	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	

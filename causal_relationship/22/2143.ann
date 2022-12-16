@@ -1,0 +1,25 @@
+T1	Argument 0 20	ヒータホース固定ブラケットの形状が不適切
+T2	Connective 21 23	ため
+T3	Argument 24 26	振動
+T4	Connective 26 29	により
+T5	Argument 29 47	メインハーネスが当該ブラケットと干渉
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 55 59	そのため
+T7	Argument 76 86	メインハーネスが損傷
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Connective 87 88	、
+T9	Argument 94 101	走行不能になる
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 60 74	そのままの状態で使用を続ける
+T11	Connective 74 75	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T7	
+T12	Argument 88 90	最悪
+T13	Connective 91 93	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T9	

@@ -1,0 +1,9 @@
+T1	Argument 0 42	フォークリフトの駐車ブレーキにおいて、ブレーキケーブル調整用スクリューの調整が不適切
+T2	Argument 46 59	駐車ブレーキの制動力が不足
+T3	Argument 74 91	保安基準第１２条の基準に適合しない
+T4	Connective 43 45	ため
+T5	Connective 69 73	そのため
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	

@@ -1,0 +1,25 @@
+T1	Argument 0 57	標準車の床部を改造し、車いすを収納可能とした福祉車両の制動装置において、左側ブレーキホースブラケットの形状が不適切
+T2	Argument 69 87	ラテラルロッドが当該ブラケットと干渉
+T3	Argument 101 124	ブレーキホースとブレーキチューブの接続部が変形
+T4	Argument 126 134	ブレーキ液が漏れ
+T5	Argument 135 141	制動力が低下
+T7	Connective 58 60	ため
+T8	Connective 94 95	、
+T9	Connective 125 126	、
+T10	Connective 134 135	て
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T5	
+T13	Connective 66 69	により
+T14	Argument 61 66	車両の振動
+R9	REASON Arg1:T13 Arg2:T14	
+R10	RESULT Arg1:T13 Arg2:T2	
+T6	Argument 95 97	最悪
+T11	Connective 98 100	場合
+R11	CONDITION Arg1:T11 Arg2:T6	
+R12	RESULT Arg1:T11 Arg2:T3	

@@ -1,0 +1,29 @@
+T1	Argument 0 19	かじ取り装置のリレーロッドの強度が不足
+T2	Connective 23 25	ため
+T3	Argument 26 59	ハンドルの据え切り操作等の操舵力が高くなる使用を頻繁に長期間続ける
+T4	Connective 59 60	と
+T5	Argument 60 66	亀裂が生じる
+T6	Connective 72 76	そのため
+T7	Argument 77 87	そのまま使用を続ける
+T8	Connective 87 88	と
+T9	Argument 88 93	亀裂が進行
+T10	Connective 94 95	、
+T11	Argument 95 97	最悪
+T12	Connective 98 100	場合
+T13	Argument 101 110	リレーロッドが折損
+T14	Connective 110 111	し
+T15	Argument 111 120	操舵ができなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	CONDITION Arg1:T12 Arg2:T11	
+R10	RESULT Arg1:T12 Arg2:T13	
+R11	REASON Arg1:T10 Arg2:T9	
+R12	RESULT Arg1:T10 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	

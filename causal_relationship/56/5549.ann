@@ -1,0 +1,25 @@
+T1	Argument 10 42	サイドスタンドスプリングのアンカープレートにおいて、溶接が不適切
+T2	Argument 51 68	サイドスタンドが正しく格納されない
+T3	Argument 79 93	そのままの状態で使用を続ける
+T4	Argument 95 108	サイドスタンドが路面と接触
+T5	Argument 110 112	最悪
+T6	Argument 116 125	車両の安定性を失い
+T7	Argument 125 127	転倒
+T8	Connective 48 50	ため
+T9	Connective 74 78	そのため
+T10	Connective 93 94	と
+T11	Connective 109 110	、
+T12	Connective 113 115	場合
+T13	Connective 124 125	い
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T2	
+R3	REASON Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T4	
+R5	CONDITION Arg1:T10 Arg2:T3	
+R6	RESULT Arg1:T10 Arg2:T4	
+R7	REASON Arg1:T11 Arg2:T4	
+R8	RESULT Arg1:T11 Arg2:T6	
+R9	CONDITION Arg1:T12 Arg2:T5	
+R10	RESULT Arg1:T12 Arg2:T6	
+R11	REASON Arg1:T13 Arg2:T6	
+R12	RESULT Arg1:T13 Arg2:T7	

@@ -1,0 +1,21 @@
+T1	Argument 0 46	フロントアクスルの外側ベアリングにおいて、インナー側のベアリングに仕様が異なるものを組み付け
+T2	Connective 53 57	そのため
+T3	Argument 58 82	整備作業等の際に異物が混入した状態で使用を続ける
+T4	Connective 82 83	と
+T5	Argument 84 92	ベアリングが損傷
+T6	Connective 93 94	、
+T7	Argument 94 96	最悪
+T8	Connective 97 99	場合
+T9	Argument 100 107	ブレーキが加熱
+T10	Connective 108 109	て
+T11	Argument 109 111	発火
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	RESULT Arg1:T6 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	

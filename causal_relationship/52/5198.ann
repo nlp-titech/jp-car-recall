@@ -1,0 +1,17 @@
+T1	Argument 1 27	ステアリングレバー支点部サポートの取付部の強度が不足
+T2	Argument 77 86	当該部に亀裂が生じ
+T3	Connective 86 87	、
+T4	Argument 101 109	追従性が悪くなる
+T5	Connective 31 33	ため
+T6	Argument 42 75	クレーン作業装置の旋回体のみを取付けた状態でステアリング操作を行う
+T7	Connective 75 76	と
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	CONDITION Arg1:T7 Arg2:T6	
+R4	RESULT Arg1:T7 Arg2:T2	
+R5	REASON Arg1:T3 Arg2:T2	
+R6	RESULT Arg1:T3 Arg2:T4	
+T8	Argument 87 100	その後のステアリング操作時
+T9	Connective 100 101	に
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T4	

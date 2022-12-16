@@ -1,0 +1,21 @@
+T1	Argument 0 43	農耕トラクタのリヤ・アクスル（後車軸）において、アクスルシャフトのねじ部の加工が不適切
+T2	Connective 44 46	ため
+T3	Argument 47 88	ファイナルドライブユニットとアクスルシャフトを固定するボルトが十分締結されていない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 94 98	このため
+T5	Argument 99 112	大きな負荷（側圧）が掛かっ
+T6	Connective 113 115	場合
+T7	Argument 116 142	アクスルシャフトからファイナルドライブユニットが外れ
+T8	Connective 142 143	、
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+T9	Argument 149 156	走行不能になる
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 143 145	最悪
+T11	Connective 146 148	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T9	

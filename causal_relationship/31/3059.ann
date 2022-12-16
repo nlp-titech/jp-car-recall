@@ -1,0 +1,21 @@
+T1	Argument 0 57	パノラマルーフ付き車両において、パノラマルーフガラスへの接着強化用下塗り剤（プライマー）が未塗布のまま組み付けられ
+T2	Connective 57 58	、
+T3	Argument 58 73	ガラスと接着剤との接着力が低い
+T4	Connective 79 83	そのため
+T5	Argument 84 98	そのままの状態で使用を続ける
+T6	Connective 98 99	と
+T7	Argument 99 110	ガラスが接着剤から剥離
+T8	Connective 110 111	し
+T9	Argument 112 114	最悪
+T10	Connective 115 117	場合
+T11	Argument 118 131	パノラマルーフガラスが脱落
+R1	RESULT Arg1:T10 Arg2:T11	
+R2	CONDITION Arg1:T10 Arg2:T9	
+R3	RESULT Arg1:T8 Arg2:T11	
+R4	REASON Arg1:T8 Arg2:T7	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	CONDITION Arg1:T6 Arg2:T5	
+R7	RESULT Arg1:T4 Arg2:T7	
+R8	REASON Arg1:T4 Arg2:T3	
+R9	RESULT Arg1:T2 Arg2:T3	
+R10	REASON Arg1:T2 Arg2:T1	

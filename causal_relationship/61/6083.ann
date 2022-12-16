@@ -1,0 +1,5 @@
+T1	Argument 0 29	エンジンコントロールユニットにおいて、ソフトウェアが不適切
+T2	Connective 30 32	ため
+T3	Argument 33 49	排出ガスの規制値を満足していない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

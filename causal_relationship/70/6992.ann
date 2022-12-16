@@ -1,0 +1,9 @@
+T1	Argument 16 47	ステップ下のスライドドアロアローラ用開口部のパネル形状が不適切
+T2	Connective 48 50	ため
+T3	Argument 51 69	清掃時等に当該開口部に手を入れるなど
+T4	Connective 71 72	と
+T5	Argument 73 86	パネル端部のバリにより切創
+R1	RESULT Arg1:T4 Arg2:T5	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	REASON Arg1:T2 Arg2:T1	
+R4	RESULT Arg1:T2 Arg2:T5	

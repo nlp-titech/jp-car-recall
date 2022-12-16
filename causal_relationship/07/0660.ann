@@ -1,0 +1,23 @@
+T1	Argument 0 24	エンジンの燃料噴射ポンプ制御用の電気配線が不適切
+T2	Argument 28 38	そのまま使用を続ける
+T3	Argument 39 50	エンジン停止時等の振動
+T4	Argument 54 61	当該配線が断線
+T5	Argument 74 80	警告灯が点滅
+T6	Argument 87 97	燃料噴射時期が遅れる
+T7	Argument 103 118	排出ガスが基準を満足しなくなる
+T8	Connective 25 27	ため
+T9	Connective 38 39	と
+T10	Connective 50 53	により
+T11	Connective 69 73	そのため
+T12	Connective 99 102	により
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T4	
+R3	CONDITION Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T4	
+R5	REASON Arg1:T10 Arg2:T3	
+R6	RESULT Arg1:T10 Arg2:T4	
+R7	REASON Arg1:T11 Arg2:T4	
+R8	RESULT Arg1:T11 Arg2:T5	
+R9	RESULT Arg1:T11 Arg2:T6	
+R10	REASON Arg1:T12 Arg2:T6	
+R11	RESULT Arg1:T12 Arg2:T7	

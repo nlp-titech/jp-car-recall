@@ -1,0 +1,9 @@
+T1	Argument 16 36	室内灯間及び端部カバーの固定方法が不適切
+T2	Connective 37 39	ため
+T3	Argument 40 50	走行中の車体振動など
+T4	Connective 50 53	により
+T5	Argument 54 62	当該カバーが脱落
+R1	REASON Arg1:T2 Arg2:T1	
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	

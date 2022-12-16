@@ -1,0 +1,13 @@
+T1	Argument 0 29	トランスミッションコントロールモジュールの製造管理が不適切
+T2	Connective 30 32	ため
+T3	Argument 33 52	仕様の異なる制御プログラムが書き込まれ
+R1	RESULT Arg1:T2 Arg2:T3	
+R2	REASON Arg1:T2 Arg2:T1	
+T4	Connective 59 63	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 64 88	診断器で故障診断を行おうとしても車両を認識できず
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 89 98	故障診断ができない
+T7	Connective 88 89	、
+R5	RESULT Arg1:T7 Arg2:T6	
+R6	REASON Arg1:T7 Arg2:T5	

@@ -1,0 +1,29 @@
+T1	Argument 0 37	手動変速機コントロールケーブルをフレームに固定しているクリップの強度が不足
+T2	Argument 60 67	クリップが折損
+T3	Argument 70 95	クリップの一部が発電機（オルタネータ）の配線と接触
+T4	Argument 102 112	当該配線の被覆が損傷
+T5	Argument 124 129	火災に至る
+T6	Connective 117 118	、
+T7	Connective 98 101	により
+T8	Connective 68 69	て
+T9	Connective 41 43	ため
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+R8	RESULT Arg1:T6 Arg2:T5	
+T10	Argument 44 59	当該手動変速機の作動の繰り返し
+T11	Connective 59 60	で
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T2	
+T12	Argument 118 120	最悪
+T13	Connective 121 123	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T5	
+T14	Argument 114 116	短絡
+T15	Connective 113 114	て
+R7	REASON Arg1:T6 Arg2:T14	
+R13	REASON Arg1:T15 Arg2:T4	
+R14	RESULT Arg1:T15 Arg2:T14	

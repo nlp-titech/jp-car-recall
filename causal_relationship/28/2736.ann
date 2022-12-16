@@ -1,0 +1,29 @@
+T1	Argument 0 46	リヤステップ（後部座席用足かけ装置）において、取付けピンの抜け止め用サークリップの強度が不足
+T2	Argument 53 67	組み付け時にひび割れを生じる
+T3	Connective 50 52	ため
+T4	Connective 73 77	そのため
+T5	Argument 94 102	走行中の振動など
+T6	Connective 102 105	により
+T7	Argument 105 114	サークリップが破損
+T8	Connective 115 116	、
+T9	Argument 122 132	取付けピンが抜け出し
+T10	Connective 132 133	て
+T11	Argument 133 142	リヤステップが脱落
+R1	REASON Arg1:T3 Arg2:T1	
+R2	RESULT Arg1:T3 Arg2:T2	
+R3	REASON Arg1:T4 Arg2:T2	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 78 92	そのままの状態で使用を続ける
+T13	Connective 92 93	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T7	
+T14	Argument 116 118	最悪
+T15	Connective 119 121	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T9	

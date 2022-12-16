@@ -1,0 +1,27 @@
+T1	Argument 9 37	ＡＢＳ／ＥＳＣコントロールユニットの耐久性の評価が不十分
+T2	Connective 38 40	ため
+T3	Argument 41 47	エンジン熱等
+T4	Connective 47 50	により
+T5	Argument 51 88	基盤に組み付けられたＩＣチップ（パワーコントロールユニット）に亀裂が生じる
+T6	Connective 94 98	そのため
+T7	Argument 99 113	そのままの状態で使用を続ける
+T8	Argument 115 120	亀裂が進展
+T9	Connective 113 114	と
+T10	Connective 121 122	、
+T11	Argument 122 137	ＩＣチップへの電源供給が断たれ
+T12	Connective 137 138	、
+T13	Argument 138 144	警告灯が点灯
+T14	Argument 151 176	ＡＢＳおよび、ＥＳＣ（横滑り防止装置）が作動しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T11	
+R7	CONDITION Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+R9	REASON Arg1:T10 Arg2:T8	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	RESULT Arg1:T12 Arg2:T14	

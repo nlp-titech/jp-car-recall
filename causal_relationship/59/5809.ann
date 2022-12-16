@@ -1,0 +1,25 @@
+T1	Argument 9 57	イコライザ（駐車ブレーキの操作力を左右の車輪に均等に振り分ける装置）において、製造上の誤差が生じ
+T2	Connective 66 70	そのため
+T3	Argument 71 85	そのままの状態で使用を続ける
+T4	Connective 85 86	と
+T5	Argument 87 93	車両の振動等
+T6	Connective 93 96	により
+T7	Argument 97 119	ブレーキケーブルを固定しているクリップが脱落
+T8	Connective 120 121	、
+T9	Argument 121 123	最悪
+T10	Connective 124 126	場合
+T11	Argument 127 138	ブレーキケーブルが脱落
+T12	Connective 139 140	、
+T13	Argument 140 154	駐車ブレーキが片利きを起こす
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T7	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T11	
+R9	CONDITION Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	

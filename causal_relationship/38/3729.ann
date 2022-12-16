@@ -1,0 +1,9 @@
+T1	Argument 0 26	高所作業車の突入防止装置において、車両の設計が不適切
+T2	Argument 30 52	車両後面の構造物の下縁高さが５５０ｍｍを超え
+T3	Argument 53 63	保安基準に適合しない
+T4	Connective 27 29	ため
+T5	Connective 52 53	、
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	

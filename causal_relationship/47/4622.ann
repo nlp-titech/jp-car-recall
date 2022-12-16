@@ -1,0 +1,25 @@
+T1	Argument 13 58	左右排気マニホールド内に装備されている触媒において、触媒を支持しているマットの材質が不適切
+T2	Connective 59 61	ため
+T3	Argument 78 86	当該マットが腐食
+T4	Connective 87 88	て
+T5	Argument 88 90	剥離
+T6	Argument 92 102	触媒を目詰まりさせる
+T7	Connective 107 108	、
+T8	Argument 114 125	有害な排出ガス量が増加
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T9	Connective 91 92	、
+R5	REASON Arg1:T9 Arg2:T5	
+R6	RESULT Arg1:T9 Arg2:T6	
+R7	REASON Arg1:T7 Arg2:T6	
+R8	RESULT Arg1:T7 Arg2:T8	
+T10	Argument 62 76	そのままの状態で使用を続ける
+T11	Connective 76 77	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	
+T12	Argument 108 110	最悪
+T13	Connective 111 113	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T8	

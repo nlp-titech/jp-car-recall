@@ -1,0 +1,9 @@
+T1	Argument 12 40	プリテンショナーとシートベルトアンカーの取り付けが不適切
+T2	Connective 41 43	ため
+T3	Argument 44 46	最悪
+T4	Connective 47 49	場合
+T5	Argument 50 69	座席ベルトが外れ乗員を拘束できなくなる
+R1	RESULT Arg1:T4 Arg2:T5	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T5	
+R4	REASON Arg1:T2 Arg2:T1	

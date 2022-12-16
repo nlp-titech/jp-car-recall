@@ -1,0 +1,29 @@
+T1	Argument 0 23	バキュームポンプにおいて、組み付け作業が不適切
+T2	Argument 27 45	ポンプのオイル給油穴にシール剤が浸入
+T3	Argument 58 74	バキュームポンプ内のオイルが不足
+T5	Argument 89 96	負圧不足となり
+T6	Argument 97 99	最悪
+T7	Argument 103 117	ブレーキペダルの操作力が増大
+T8	Argument 119 128	制動距離が長くなる
+T9	Connective 24 26	ため
+T10	Connective 53 57	そのため
+T11	Connective 75 76	、
+T13	Connective 96 97	、
+T14	Connective 100 102	場合
+T15	Connective 118 119	、
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T2	
+R3	REASON Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T3	
+R5	REASON Arg1:T11 Arg2:T3	
+R9	REASON Arg1:T13 Arg2:T5	
+R10	RESULT Arg1:T13 Arg2:T7	
+R11	CONDITION Arg1:T14 Arg2:T6	
+R12	RESULT Arg1:T14 Arg2:T7	
+R13	REASON Arg1:T15 Arg2:T7	
+R14	RESULT Arg1:T15 Arg2:T8	
+T4	Connective 87 89	から
+T12	Argument 76 87	油膜によるシール性低下
+R6	REASON Arg1:T4 Arg2:T12	
+R7	RESULT Arg1:T4 Arg2:T5	
+R8	RESULT Arg1:T11 Arg2:T12	

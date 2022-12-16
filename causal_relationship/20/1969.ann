@@ -1,0 +1,13 @@
+T1	Argument 0 50	緩衝装置のリーフスプリング端部を支えるスライドプレートにおいて、固定ボルトのネジロック剤塗布量が不足
+T2	Connective 60 64	そのため
+T3	Argument 65 73	当該ボルトが緩み
+T4	Connective 73 74	、
+T7	Argument 79 90	スライドプレートが脱落
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+T5	Argument 74 76	最悪
+T6	Connective 77 79	場合
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

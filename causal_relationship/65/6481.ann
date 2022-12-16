@@ -1,0 +1,18 @@
+T1	Argument 0 18	エンジンのアース線の取り回しが不適切
+T2	Connective 19 21	ため
+T3	Argument 22 33	ドライブシャフトに接触
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 43 47	そのため
+T5	Argument 48 62	そのままの状態で使用を続ける
+T6	Connective 62 63	と
+T7	Argument 64 75	走行中にアース線が損傷
+T8	Argument 77 79	最悪
+T9	Connective 80 82	場合
+T10	Argument 83 96	エンジンが始動できなくなる
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T10	

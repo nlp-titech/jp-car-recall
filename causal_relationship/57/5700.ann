@@ -1,0 +1,27 @@
+T1	Argument 16 28	ロックバーの鋳造が不適切
+T2	Argument 32 43	表面に微小な亀裂が生じ
+T3	Argument 57 73	施錠・開錠を繰り返すと亀裂が進行
+T4	Argument 75 77	折損
+T5	Argument 79 87	開錠できなくなり
+T6	Argument 88 90	最悪
+T7	Argument 94 113	操舵中に折損したロックバーが引っかかり
+T8	Argument 113 126	かじ取り操作ができなくなる
+T9	Connective 29 31	ため
+T10	Connective 52 56	そのため
+T11	Connective 74 75	て
+T12	Connective 78 79	、
+T14	Connective 91 93	場合
+T15	Connective 112 113	り
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T2	
+R3	REASON Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T3	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+R7	REASON Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T5	
+R11	CONDITION Arg1:T14 Arg2:T6	
+R12	RESULT Arg1:T14 Arg2:T7	
+R13	REASON Arg1:T15 Arg2:T7	
+R14	RESULT Arg1:T15 Arg2:T8	
+R9	RESULT Arg1:T12 Arg2:T7	

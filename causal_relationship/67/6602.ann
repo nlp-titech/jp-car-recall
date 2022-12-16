@@ -1,0 +1,33 @@
+T1	Argument 0 40	連節バスにおいて、②運転者席後方配電箱内の配線固定用ブラケットの端部処理が不適切
+T2	Connective 41 43	ため
+T3	Argument 44 60	配線が当該ブラケットの端部と干渉
+T4	Connective 68 72	そのため
+T5	Argument 73 87	そのままの状態で使用を続ける
+T6	Connective 87 88	と
+T7	Argument 89 97	配線の被覆が損傷
+T8	Connective 98 99	て
+T9	Argument 99 101	短絡
+T10	Connective 102 103	、
+T11	Argument 103 105	最悪
+T12	Connective 106 108	場合
+T13	Argument 113 120	エンジンが停止
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+T14	Connective 121 122	て
+T15	Argument 122 131	再始動できなくなる
+T16	Argument 109 111	走行
+T17	Connective 111 112	中
+R13	CONDITION Arg1:T17 Arg2:T16	
+R14	RESULT Arg1:T17 Arg2:T13	
+R15	REASON Arg1:T14 Arg2:T13	
+R16	RESULT Arg1:T14 Arg2:T15	

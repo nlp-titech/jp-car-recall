@@ -1,0 +1,5 @@
+T1	Argument 0 36	警音器において、警音器の警報音発生装置の技術基準に適合しない警音器を装着
+T2	Connective 38 40	ため
+T3	Argument 41 63	警音器の警報音発生装置の技術基準に適合しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

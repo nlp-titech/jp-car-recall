@@ -1,0 +1,25 @@
+T2	Argument 76 89	ブラケットに亀裂のが生じる
+T3	Argument 101 111	当該ブラケットが破損
+T4	Argument 131 137	制動力が低下
+T5	Connective 54 56	ため
+T6	Connective 94 95	、
+T7	Connective 130 131	、
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T8	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 117 129	後輪ブレーキパイプを損傷
+T9	Connective 113 117	とともに
+R7	REASON Arg1:T9 Arg2:T3	
+R8	RESULT Arg1:T9 Arg2:T8	
+T10	Argument 57 75	山間部の屈曲路走行等を頻繁に繰り返す
+T11	Connective 75 76	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T2	
+T1	Argument 0 50	後輪緩衝装置において、スタビライザブラケット（車体の横揺れを減少させる装置の保持用金具）の強度が不足
+R1	REASON Arg1:T5 Arg2:T1	
+T12	Argument 95 97	最悪
+T13	Connective 98 100	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T3	

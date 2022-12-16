@@ -1,0 +1,21 @@
+T1	Argument 0 31	かじ取ハンドルにおいて、配線保持用具の取付け穴周辺の強度が不足
+T2	Connective 35 37	ため
+T3	Argument 38 50	当該ハンドルに亀裂が生じ
+T4	Connective 50 51	、
+T5	Argument 73 82	当該ハンドルが折れ
+T6	Connective 82 83	て
+T7	Argument 83 90	操縦不能になる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 51 65	そのままの状態で使用を続ける
+T9	Connective 65 66	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 67 69	最悪
+T11	Connective 70 72	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	

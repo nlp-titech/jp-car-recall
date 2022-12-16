@@ -1,0 +1,24 @@
+T1	Argument 4 29	点火系統において、点火用高圧配線の取り回しに不適切
+T2	Connective 35 36	、
+T3	Argument 36 55	当該点火用高圧配線と金属製の配管が干渉
+T4	Connective 56 57	、
+T5	Argument 57 69	当該点火用高圧配線が損傷
+T6	Connective 70 71	、
+T7	Argument 71 85	円滑な原動機の回転が得られず
+T8	Argument 86 88	最悪
+T9	Connective 85 86	、
+T10	Connective 89 91	場合
+T11	Argument 92 102	触媒コンバータが損傷
+T13	Argument 109 123	原動機の再始動ができなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T11	
+R9	CONDITION Arg1:T10 Arg2:T8	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	RESULT Arg1:T10 Arg2:T13	
+R12	RESULT Arg1:T9 Arg2:T13	

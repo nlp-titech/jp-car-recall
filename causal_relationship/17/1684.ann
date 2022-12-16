@@ -1,0 +1,29 @@
+T1	Argument 0 30	原動機において、カムシャフト駆動用のカムチェーンの強度が不足
+T2	Connective 34 36	ため
+T3	Argument 37 50	早期にカムチェーンが伸びる
+T4	Connective 56 60	そのため
+T5	Argument 73 106	カムチェーンテンショナー内部のスプリングがカムチェーンの振れに共振
+T6	Argument 108 110	折損
+T7	Connective 107 108	て
+T8	Argument 118 127	カムチェーンが外れ
+T9	Connective 127 128	、
+T10	Argument 128 145	原動機が停止して再始動できなくなる
+T11	Connective 111 112	、
+R1	REASON Arg1:T9 Arg2:T8	
+R2	RESULT Arg1:T9 Arg2:T10	
+R3	REASON Arg1:T11 Arg2:T6	
+R4	RESULT Arg1:T11 Arg2:T8	
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	
+R7	RESULT Arg1:T4 Arg2:T5	
+R8	REASON Arg1:T4 Arg2:T3	
+R9	REASON Arg1:T2 Arg2:T1	
+R10	RESULT Arg1:T2 Arg2:T3	
+T20	Argument 61 71	そのまま使用を続ける
+T21	Connective 71 72	と
+R13	CONDITION Arg1:T21 Arg2:T20	
+R14	RESULT Arg1:T21 Arg2:T5	
+T22	Argument 112 114	最悪
+T23	Connective 115 117	場合
+R15	CONDITION Arg1:T23 Arg2:T22	
+R16	RESULT Arg1:T23 Arg2:T8	

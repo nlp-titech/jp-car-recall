@@ -1,0 +1,25 @@
+T1	Argument 0 43	原動機出力を減速機を介して車輪に伝達するスピンドルにおいて、段差部を不適切な形状に加工
+T2	Connective 45 47	ため
+T3	Argument 48 69	使用過程で発生する応力に対して耐久力が不足
+T4	Connective 74 78	そのため
+T5	Argument 79 90	そのままの使用を続ける
+T6	Connective 90 91	と
+T7	Argument 91 102	スピンドルに亀裂を生じ
+T8	Argument 103 105	最悪
+T9	Connective 102 103	、
+T10	Connective 106 108	場合
+T11	Argument 109 119	当該スピンドルが破断
+R1	RESULT Arg1:T10 Arg2:T11	
+R2	CONDITION Arg1:T10 Arg2:T8	
+R3	RESULT Arg1:T9 Arg2:T11	
+R4	REASON Arg1:T9 Arg2:T7	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	CONDITION Arg1:T6 Arg2:T5	
+R7	RESULT Arg1:T4 Arg2:T7	
+R8	REASON Arg1:T4 Arg2:T3	
+R9	RESULT Arg1:T2 Arg2:T3	
+R10	REASON Arg1:T2 Arg2:T1	
+T12	Argument 121 126	車輪が脱落
+T13	Connective 120 121	て
+R11	REASON Arg1:T13 Arg2:T11	
+R12	RESULT Arg1:T13 Arg2:T12	

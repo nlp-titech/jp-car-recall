@@ -1,0 +1,40 @@
+T2	Connective 50 52	ため
+T3	Argument 53 67	ベアリングの予圧が過大に設定
+T4	Argument 129 137	ころの表面が剥離
+T5	Connective 145 149	そのため
+T6	Argument 150 165	アウターベアリングにガタが生じ
+T7	Connective 165 166	、
+T8	Argument 182 191	ブレーキが引き摺り
+T9	Connective 191 192	、
+T10	Argument 198 206	火災や脱輪に至る
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T6	
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T8	
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T10	
+T11	Argument 166 180	そのままの状態で使用を続ける
+T12	Connective 180 181	と
+R9	CONDITION Arg1:T12 Arg2:T11	
+R10	RESULT Arg1:T12 Arg2:T8	
+T13	Argument 192 194	最悪
+T14	Connective 195 197	場合
+R11	CONDITION Arg1:T14 Arg2:T13	
+R12	RESULT Arg1:T14 Arg2:T10	
+T15	Argument 99 113	ベアリングのころ等を傷つける
+T16	Connective 113 114	と
+R13	CONDITION Arg1:T16 Arg2:T15	
+R14	RESULT Arg1:T16 Arg2:T4	
+T17	Argument 115 125	過大に設定された予圧
+T18	Connective 125 128	により
+R15	REASON Arg1:T18 Arg2:T17	
+R16	RESULT Arg1:T18 Arg2:T4	
+T19	Argument 79 95	整備時にアウターベアリングを挿入
+T20	Connective 97 98	際
+R17	CONDITION Arg1:T20 Arg2:T19	
+R18	RESULT Arg1:T20 Arg2:T15	
+R19	REASON Arg1:T18 Arg2:T3	
+#1	AnnotatorNotes T17	前文の「ベアリングの与圧が過大に設定」を再度述べている
+T1	Argument 17 49	整備解説書で指示したフロントハブベアリングの予圧の設定値が不適切
+R1	REASON Arg1:T2 Arg2:T1	

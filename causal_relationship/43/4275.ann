@@ -1,0 +1,29 @@
+T1	Argument 14 29	エンジン制御プログラムが不適切
+T2	Connective 30 32	ため
+T3	Argument 45 60	僅かなエンジン回転を異常と判定
+T4	Connective 61 62	、
+T5	Connective 89 93	そのため
+T6	Argument 62 88	エンジン制御コンピュータへの電源供給が停止しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T6	
+R5	REASON Arg1:T5 Arg2:T6	
+T7	Argument 94 121	スタート・ストップ・ユニットがスタータ回路の短絡と判定
+T8	Connective 122 123	、
+T9	Argument 140 157	電源ポジションがＯＮに切り替わらず
+T10	Connective 157 158	、
+T11	Argument 158 171	エンジンが始動できなくなる
+R6	RESULT Arg1:T5 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 33 40	エンジンを停止
+T13	Connective 43 44	際
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T3	
+T14	Argument 123 137	プッシュボタンスタートを押し
+T15	Connective 138 139	も
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T9	

@@ -1,0 +1,29 @@
+T2	Argument 49 67	圃場作業中に剪定した枝等に乗り上げる
+T4	Argument 69 81	抜け止めピンが枝等に接触
+T5	Argument 83 86	抜ける
+T6	Argument 97 103	ロッドが外れ
+T7	Argument 104 115	クラッチが切れなくなり
+T8	Argument 116 118	最悪
+T9	Argument 122 129	走行不能となる
+T10	Connective 46 48	ため
+T12	Connective 67 68	と
+T13	Connective 82 83	て
+T14	Connective 92 96	そのため
+T15	Connective 103 104	て
+T16	Connective 115 116	、
+T17	Connective 119 121	場合
+R5	CONDITION Arg1:T12 Arg2:T2	
+R6	RESULT Arg1:T12 Arg2:T4	
+R7	REASON Arg1:T13 Arg2:T4	
+R8	RESULT Arg1:T13 Arg2:T5	
+R9	REASON Arg1:T14 Arg2:T5	
+R10	RESULT Arg1:T14 Arg2:T6	
+R11	REASON Arg1:T15 Arg2:T6	
+R12	RESULT Arg1:T15 Arg2:T7	
+R13	REASON Arg1:T16 Arg2:T7	
+R14	RESULT Arg1:T16 Arg2:T9	
+R15	CONDITION Arg1:T17 Arg2:T8	
+R16	RESULT Arg1:T17 Arg2:T9	
+R2	RESULT Arg1:T10 Arg2:T4	
+T1	Argument 0 45	農耕トラクタにおいて、クラッチペダルとクラッチを連結するロッドの抜け止めピンの形状が不適切
+R1	REASON Arg1:T10 Arg2:T1	

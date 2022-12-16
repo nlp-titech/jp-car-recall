@@ -1,0 +1,21 @@
+T1	Argument 0 34	燃料タンクを増設した観光バスにおいて、当該タンクの敷板の形状が不適切
+T2	Connective 35 37	ため
+T3	Argument 38 54	タンク底面と敷板の間に水が溜まり
+T4	Connective 54 55	、
+T5	Argument 55 57	腐食
+T6	Connective 65 69	そのため
+T7	Argument 70 84	そのままの状態で使用を続ける
+T8	Connective 96 97	、
+T9	Argument 97 103	燃料が漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T11	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Connective 84 85	と
+T11	Argument 86 96	当該タンクに穴が開き
+R7	CONDITION Arg1:T10 Arg2:T7	
+R9	RESULT Arg1:T10 Arg2:T11	
+R10	REASON Arg1:T8 Arg2:T11	

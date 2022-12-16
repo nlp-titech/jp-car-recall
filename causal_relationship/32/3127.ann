@@ -1,0 +1,21 @@
+T1	Argument 0 31	前照灯の電気配線において、電源プラス側が前照灯のボディ側になっ
+T2	Connective 34 36	ため
+T3	Argument 37 50	前照灯ボディの塗装が剥がれ
+T4	Connective 50 51	て
+T5	Argument 64 69	短絡が発生
+T6	Connective 78 79	、
+T7	Argument 79 89	前照灯が点かなくなる
+R5	RESULT Arg1:T2 Arg2:T3	
+R6	REASON Arg1:T2 Arg2:T1	
+T8	Argument 71 78	ヒューズが切れ
+T9	Connective 70 71	て
+T10	Argument 52 59	車両本体と導通
+T11	Connective 59 60	し
+R2	REASON Arg1:T11 Arg2:T10	
+R7	RESULT Arg1:T11 Arg2:T5	
+R8	REASON Arg1:T9 Arg2:T5	
+R9	RESULT Arg1:T9 Arg2:T8	
+R10	REASON Arg1:T6 Arg2:T8	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T10	
+R1	RESULT Arg1:T6 Arg2:T7	

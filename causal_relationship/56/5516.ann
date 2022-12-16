@@ -1,0 +1,25 @@
+T1	Argument 0 43	デフロスタ（前面ガラスの水滴等の曇りを除去するための装置）の電気配線の取り回しが不適切
+T2	Argument 47 79	当該配線がセンターコンソールのサイドカバー（金属プレート）と接触
+T3	Argument 92 106	そのままの状態で使用を続ける
+T4	Argument 107 114	当該配線が損傷
+T5	Argument 115 117	短絡
+T6	Argument 119 121	最悪
+T7	Argument 125 138	デフロスタが作動しなくなる
+T8	Connective 44 46	ため
+T9	Connective 87 91	そのため
+T10	Connective 106 107	と
+T11	Connective 118 119	、
+T12	Connective 122 124	場合
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T2	
+R3	REASON Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T4	
+R5	CONDITION Arg1:T10 Arg2:T3	
+R6	RESULT Arg1:T10 Arg2:T4	
+R8	REASON Arg1:T11 Arg2:T5	
+R9	RESULT Arg1:T11 Arg2:T7	
+R10	CONDITION Arg1:T12 Arg2:T6	
+R11	RESULT Arg1:T12 Arg2:T7	
+R7	RESULT Arg1:T10 Arg2:T5	
+R12	REASON Arg1:T11 Arg2:T4	
+R13	RESULT Arg1:T9 Arg2:T5	

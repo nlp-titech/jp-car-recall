@@ -1,0 +1,9 @@
+T1	Argument 15 47	バックアップバッテリにおいて、不具合を検出するプログラムが不適切
+T2	Connective 48 50	ため
+T3	Argument 51 75	不具合が無いにもかかわらず不具合があるものと判断
+T4	Connective 76 77	、
+T5	Argument 77 83	警告灯が点灯
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

@@ -1,0 +1,31 @@
+T1	Argument 0 44	農業用薬剤散布車の動力伝達装置及び始動装置において、セーフティスイッチの防塵設計が不適切
+T2	Argument 48 60	スイッチ内部に砂粒が入り
+T3	Argument 60 67	スイッチが固着
+T4	Argument 98 115	バイパスバルブの制御ができなくなり
+T5	Argument 116 143	ブレーキをかけようとしても走行モータにオイルが流れ続け
+T6	Argument 144 152	車両が停止しない
+T7	Argument 162 168	エンジン始動
+T8	Argument 172 183	始動安全装置が作動せず
+T9	Argument 184 200	エンジンを始動することができない
+T10	Connective 45 47	ため
+T11	Connective 75 79	そのため
+T12	Connective 59 60	り
+T13	Connective 115 116	、
+T14	Connective 143 144	、
+T15	Connective 170 172	際に
+T16	Connective 183 184	に
+R1	REASON Arg1:T10 Arg2:T1	
+R2	RESULT Arg1:T10 Arg2:T2	
+R3	REASON Arg1:T12 Arg2:T2	
+R4	RESULT Arg1:T12 Arg2:T3	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+R7	REASON Arg1:T13 Arg2:T4	
+R8	RESULT Arg1:T13 Arg2:T5	
+R9	REASON Arg1:T14 Arg2:T5	
+R10	RESULT Arg1:T14 Arg2:T6	
+R11	RESULT Arg1:T14 Arg2:T8	
+R12	CONDITION Arg1:T15 Arg2:T7	
+R13	RESULT Arg1:T15 Arg2:T8	
+R14	REASON Arg1:T16 Arg2:T8	
+R15	RESULT Arg1:T16 Arg2:T9	

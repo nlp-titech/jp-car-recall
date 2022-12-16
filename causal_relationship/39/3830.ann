@@ -1,0 +1,41 @@
+T1	Argument 11 34	デフオイルを密封するオイルシールの形状が不適切
+T2	Argument 38 59	アクスルケースとオイルシールの密封性が低い
+T3	Argument 70 80	アクスル内の圧力変化
+T4	Argument 81 89	デフオイルが漏れ
+T5	Argument 90 100	そのまま使用を続ける
+T6	Argument 102 116	後輪ドラムブレーキ内部に浸入
+T7	Argument 118 134	ブレーキシューにデフオイルが付着
+T8	Argument 138 147	後輪の制動力が低下
+T9	Argument 149 151	最悪
+T10	Argument 161 174	駐車ブレーキが効かなくなる
+T11	Connective 35 37	ため
+T12	Connective 65 69	そのため
+T13	Connective 80 81	で
+T14	Connective 89 90	、
+T15	Connective 100 101	と
+T16	Connective 117 118	、
+T17	Connective 136 137	と
+T18	Connective 148 149	、
+T19	Connective 152 154	場合
+R1	REASON Arg1:T11 Arg2:T1	
+R2	RESULT Arg1:T11 Arg2:T2	
+R3	REASON Arg1:T12 Arg2:T2	
+R5	REASON Arg1:T13 Arg2:T3	
+R6	RESULT Arg1:T13 Arg2:T4	
+R7	REASON Arg1:T14 Arg2:T4	
+R9	CONDITION Arg1:T15 Arg2:T5	
+R10	RESULT Arg1:T15 Arg2:T6	
+R11	REASON Arg1:T16 Arg2:T6	
+R12	RESULT Arg1:T16 Arg2:T7	
+R13	CONDITION Arg1:T17 Arg2:T7	
+R14	RESULT Arg1:T17 Arg2:T8	
+R15	REASON Arg1:T18 Arg2:T8	
+R17	CONDITION Arg1:T19 Arg2:T9	
+R18	RESULT Arg1:T19 Arg2:T10	
+R4	RESULT Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T14 Arg2:T6	
+R16	RESULT Arg1:T18 Arg2:T10	
+T20	Argument 155 157	坂路
+T21	Connective 157 161	において
+R19	CONDITION Arg1:T21 Arg2:T20	
+R20	RESULT Arg1:T21 Arg2:T10	

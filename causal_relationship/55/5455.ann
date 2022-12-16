@@ -1,0 +1,31 @@
+T1	Argument 13 31	サンルーフガイドレールの構造が不適切
+T2	Connective 32 34	ため
+T3	Argument 35 53	当該ガイドレールに過度の応力がかかる
+T4	Connective 53 54	と
+T5	Argument 55 60	亀裂が発生
+T6	Connective 68 72	そのため
+T7	Argument 73 88	サンルーフにねじれや固着が生じ
+T8	Connective 88 89	、
+T9	Argument 132 146	サンルーフが作動機構から外れ
+T10	Connective 146 147	、
+T11	Argument 153 155	脱落
+R1	REASON Arg1:T10 Arg2:T9	
+R2	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 147 149	最悪
+T13	Connective 150 152	場合
+R3	CONDITION Arg1:T13 Arg2:T12	
+R4	RESULT Arg1:T13 Arg2:T11	
+R5	REASON Arg1:T2 Arg2:T1	
+R6	RESULT Arg1:T2 Arg2:T3	
+R7	CONDITION Arg1:T4 Arg2:T3	
+R8	RESULT Arg1:T4 Arg2:T5	
+R9	REASON Arg1:T6 Arg2:T5	
+R10	RESULT Arg1:T6 Arg2:T7	
+R11	REASON Arg1:T8 Arg2:T7	
+R12	RESULT Arg1:T8 Arg2:T9	
+T14	Argument 94 109	乗員がサンルーフに外力を加える
+T15	Argument 113 130	走行風圧でサンルーフに外力が加わる
+T16	Connective 130 131	と
+R13	CONDITION Arg1:T16 Arg2:T14	
+R14	CONDITION Arg1:T16 Arg2:T15	
+R15	RESULT Arg1:T16 Arg2:T9	

@@ -1,0 +1,17 @@
+T1	Argument 15 54	ゴム製燃料ホースと金属製燃料パイプ（供給側及び戻り側）の接合部のシールに不適切
+T2	Connective 60 61	、
+T3	Argument 76 88	当該接合部から燃料が漏れ
+T4	Connective 88 89	、
+T5	Argument 95 100	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 61 75	このままの状態で使用を続ける
+T7	Connective 75 76	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 89 91	最悪
+T9	Connective 92 94	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

@@ -1,0 +1,21 @@
+T1	Argument 0 18	原動機のシリンダーブロックに鋳造不良
+T2	Argument 47 62	シリンダーブロックに亀裂が発生
+T3	Argument 65 89	燃焼ガスがシリンダーブロック内の冷却水通路に侵入
+T4	Argument 91 102	冷却水が循環不良となっ
+T5	Argument 103 113	オーバーヒートに至る
+T6	Connective 24 26	ため
+T7	Connective 63 64	て
+T8	Connective 90 91	、
+T9	Connective 102 103	て
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 27 46	原動機に大きな負荷のかかる運転を続ける
+T11	Connective 46 47	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T2	

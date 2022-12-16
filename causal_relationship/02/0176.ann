@@ -1,0 +1,21 @@
+T1	Argument 0 37	連結装置において、トレーラ連結装置を保持する金具（ブラケット）の強度が不足
+T2	Argument 62 75	当該ブラケットに亀裂が生じ
+T3	Argument 82 92	当該ブラケットが折損
+T4	Argument 94 107	トレーラがトラクタから離脱
+T5	Connective 46 47	、
+T6	Connective 75 76	、
+T7	Connective 93 94	て
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 47 61	そのままの状態で使用を続ける
+T9	Connective 61 62	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T2	
+T10	Argument 76 78	最悪
+T11	Connective 79 81	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	

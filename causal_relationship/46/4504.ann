@@ -1,0 +1,9 @@
+T1	Argument 54 61	一定時間で消灯
+T2	Argument 66 77	警告灯の機能を有しない
+T3	Connective 63 65	ため
+R1	REASON Arg1:T3 Arg2:T1	
+R2	RESULT Arg1:T3 Arg2:T2	
+T4	Argument 14 53	シートベルトの警告灯が、運転者のシートベルト装着・非装着に関係なく原動機始動後
+T5	Connective 53 54	、
+R3	CONDITION Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T1	

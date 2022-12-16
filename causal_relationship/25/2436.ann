@@ -1,0 +1,17 @@
+T1	Argument 0 42	主制動装置のブレーキシューを拡張するエキスパンダのウェッジ部タペットの熱処理が不適切
+T2	Connective 43 45	ため
+T3	Argument 46 63	タペットのローラ転動面が早期に摩耗
+T4	Connective 71 75	そのため
+T5	Argument 76 88	ローラ転動面に凹みが発生
+T6	Connective 89 90	、
+T7	Argument 90 104	ブレーキシューの拡張ができず
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T14	Connective 103 104	ず
+T15	Argument 104 110	制動力が低下
+R7	REASON Arg1:T14 Arg2:T7	
+R8	RESULT Arg1:T14 Arg2:T15	

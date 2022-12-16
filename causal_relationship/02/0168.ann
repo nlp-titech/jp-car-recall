@@ -1,0 +1,27 @@
+T1	Argument 0 32	方向指示器の灯火スイッチ部において、前照灯スイッチの構造が不適切
+T2	Argument 52 68	当該前照灯スイッチの電極盤の摩耗
+T3	Argument 71 78	接触抵抗が増加
+T4	Argument 80 90	当該スイッチ部が溶損
+T5	Argument 92 94	発煙
+T6	Argument 102 107	火災に至る
+T7	Connective 33 35	ため
+T8	Connective 68 71	により
+T9	Connective 79 80	、
+T11	Connective 91 92	て
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T11 Arg2:T4	
+R8	RESULT Arg1:T11 Arg2:T5	
+T10	Argument 36 50	そのままの状態で使用を続ける
+T12	Connective 50 51	と
+R10	CONDITION Arg1:T12 Arg2:T10	
+T13	Argument 96 98	最悪
+T14	Connective 99 101	場合
+R12	CONDITION Arg1:T14 Arg2:T13	
+R13	RESULT Arg1:T14 Arg2:T6	
+R15	RESULT Arg1:T12 Arg2:T2	
+R9	RESULT Arg1:T11 Arg2:T6	

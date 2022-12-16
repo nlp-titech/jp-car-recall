@@ -1,0 +1,9 @@
+T1	Argument 0 83	前照灯のオートハイトコントロール（自動光軸調整機能）を制御する電装品電源供給コントロールユニットにおいて、車高の変化を検出するハイトセンサーの初期設定が行われていない
+T2	Connective 83 85	ため
+T3	Argument 86 109	当該コントロールユニットが車高の変化を認識せず
+T4	Connective 109 110	、
+T5	Argument 110 128	車両姿勢に応じた光軸調整が行われない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

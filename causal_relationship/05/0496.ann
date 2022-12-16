@@ -1,0 +1,27 @@
+T1	Argument 0 57	駐車制動装置において、空気式駐車制動装置のホイールシリンダの防水及び防塵用ゴム製ブーツ装着時に不適切な潤滑材を使用
+T2	Argument 63 71	当該ブーツが膨潤
+T3	Argument 73 79	気密性が低下
+T4	Argument 97 108	当該ブーツ内に水が浸入
+T5	Argument 110 128	ホイールシリンダ内の摺動部が錆で固着
+T6	Argument 130 143	駐車ブレーキの制動力の低下
+T7	Argument 147 163	主制動装置がフェード現象をおこす
+T8	Connective 61 63	ため
+T9	Connective 72 73	て
+T10	Connective 80 81	、
+T11	Connective 109 110	て
+T12	Connective 129 130	､
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T2	
+R3	REASON Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T3	
+R5	REASON Arg1:T10 Arg2:T3	
+R6	RESULT Arg1:T10 Arg2:T4	
+R7	REASON Arg1:T11 Arg2:T4	
+R8	RESULT Arg1:T11 Arg2:T5	
+R9	REASON Arg1:T12 Arg2:T5	
+R10	RESULT Arg1:T12 Arg2:T6	
+R12	RESULT Arg1:T12 Arg2:T7	
+T13	Argument 81 95	そのままの状態で使用を続ける
+T14	Connective 95 96	と
+R11	CONDITION Arg1:T14 Arg2:T13	
+R13	RESULT Arg1:T14 Arg2:T4	

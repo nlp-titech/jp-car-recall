@@ -1,0 +1,25 @@
+T1	Argument 0 17	ワイパーモーターの防水構造が不適切
+T2	Connective 18 20	ため
+T3	Argument 21 32	モーター内部に水が浸入
+T4	Connective 40 44	そのため
+T5	Argument 57 70	モーター内の電気回路が錆び
+T6	Connective 70 71	て
+T7	Argument 71 78	導通不良となり
+T8	Argument 85 97	ワイパーが作動しなくなる
+T9	Connective 78 79	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+T10	Argument 45 55	そのまま使用を続ける
+T11	Connective 55 56	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	
+T12	Argument 79 81	最悪
+T13	Connective 82 84	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T8	

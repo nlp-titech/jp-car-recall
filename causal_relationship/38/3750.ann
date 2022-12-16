@@ -1,0 +1,21 @@
+T1	Argument 0 27	足踏み式駐車ブレーキにおいて、ブラケットの製造が不適切
+T2	Argument 31 47	ブラケットとポールとの隙間が狭い
+T3	Argument 68 86	ブラケットとポールの抵抗が大きくなり
+T4	Argument 87 89	最悪
+T5	Argument 93 113	駐車ブレーキを保持することが出来なくなる
+T6	Connective 28 30	ため
+T7	Connective 53 57	そのため
+T8	Connective 86 87	、
+T9	Connective 90 92	場合
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T5	
+R7	CONDITION Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+T15	Connective 67 68	に
+T16	Argument 58 67	駐車ブレーキ操作時
+R9	CONDITION Arg1:T15 Arg2:T16	
+R10	RESULT Arg1:T15 Arg2:T3	

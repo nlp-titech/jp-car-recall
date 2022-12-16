@@ -1,0 +1,33 @@
+T1	Argument 0 28	尾灯と制動灯の兼用灯火において、ソケット部の製造が不適切
+T2	Argument 32 45	バルブ固定金具の圧入が不足
+T4	Argument 60 66	走行時の振動
+T5	Argument 67 74	金具が抜け出し
+T6	Argument 75 89	そのままの状態で使用を続ける
+T7	Argument 91 96	金具が外れ
+T8	Argument 97 103	バルブが脱落
+T9	Argument 105 107	最悪
+T10	Argument 111 120	尾灯と制動灯が不灯
+T11	Connective 29 31	ため
+T12	Connective 55 59	そのため
+T14	Connective 66 67	で
+T15	Connective 74 75	、
+T16	Connective 89 90	と
+T17	Connective 96 97	て
+T18	Connective 104 105	、
+T19	Connective 108 110	場合
+R1	REASON Arg1:T11 Arg2:T1	
+R2	RESULT Arg1:T11 Arg2:T2	
+R3	REASON Arg1:T12 Arg2:T2	
+R4	RESULT Arg1:T12 Arg2:T5	
+R7	REASON Arg1:T14 Arg2:T4	
+R8	RESULT Arg1:T14 Arg2:T5	
+R9	REASON Arg1:T15 Arg2:T5	
+R10	RESULT Arg1:T15 Arg2:T7	
+R11	CONDITION Arg1:T16 Arg2:T6	
+R12	RESULT Arg1:T16 Arg2:T7	
+R13	REASON Arg1:T17 Arg2:T7	
+R14	RESULT Arg1:T17 Arg2:T8	
+R15	REASON Arg1:T18 Arg2:T8	
+R16	RESULT Arg1:T18 Arg2:T10	
+R17	CONDITION Arg1:T19 Arg2:T9	
+R18	RESULT Arg1:T19 Arg2:T10	

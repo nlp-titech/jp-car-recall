@@ -1,0 +1,13 @@
+T1	Argument 0 33	駐車ブレーキ操作レバー内部において、ワイヤーとボルトの溶接が不適切
+T2	Connective 34 36	ため
+T3	Argument 37 50	駐車ブレーキ操作を繰り返す
+T4	Connective 50 51	と
+T5	Argument 51 57	溶接が剥がれ
+T6	Connective 57 58	て
+T7	Argument 58 70	駐車ブレーキが作動しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

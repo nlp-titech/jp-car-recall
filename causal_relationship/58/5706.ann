@@ -1,0 +1,9 @@
+T1	Argument 0 41	駐車ブレーキ（電気式）の電気配線において、当該配線接続部の圧着端子のカシメが不適切
+T2	Connective 42 44	ため
+T3	Argument 45 49	接触不良
+T4	Connective 49 52	により
+T5	Argument 52 66	駐車ブレーキが作動しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

@@ -1,0 +1,32 @@
+T1	Argument 0 12	フロントハブの強度が不足
+T2	Connective 16 18	ため
+T3	Argument 19 33	旋回頻度の高い走行を繰り返し
+T4	Connective 34 36	場合
+T5	Argument 40 60	ハブのフランジ部の付け根付近に亀裂が発生
+T7	Connective 89 90	と
+T8	Argument 91 102	この亀裂の発生が早まる
+T9	Connective 109 113	このため
+T10	Argument 114 128	そのままの状態で使用を続ける
+T11	Connective 128 129	と
+T12	Argument 129 134	亀裂が進行
+T13	Argument 136 138	最悪
+T14	Connective 139 141	場合
+T15	Argument 142 149	当該部分が破断
+T16	Connective 150 151	て
+T17	Argument 151 156	車輪が脱落
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T8	
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T12	
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T12	
+R11	CONDITION Arg1:T14 Arg2:T13	
+R12	RESULT Arg1:T14 Arg2:T15	
+R13	REASON Arg1:T16 Arg2:T15	
+R14	RESULT Arg1:T16 Arg2:T17	
+R15	REASON Arg1:T9 Arg2:T5	
+T6	Argument 71 89	整備状況、積載条件などの要因が重なる
+R5	CONDITION Arg1:T7 Arg2:T6	

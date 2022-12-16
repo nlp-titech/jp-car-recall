@@ -1,0 +1,36 @@
+T1	Argument 1 33	空気式駐車制動装置において、エアチャンバの空気逃がし機構が不適切
+T2	Argument 37 49	チャンバ内に泥水等が侵入
+T3	Argument 57 65	通気孔がふさがる
+T4	Argument 69 82	ピストン部のＯリングが捩れ
+T5	Argument 83 95	スプリング室に空気が漏れ
+T6	Argument 96 111	スプリング室内部の圧力が上がり
+T7	Argument 112 126	ピストンの戻りが不十分となっ
+T8	Argument 127 144	駐車ブレーキが十分解除されなくなり
+T9	Argument 151 161	フェード現象を起こす
+T10	Connective 34 36	ため
+T11	Connective 56 57	、
+T13	Connective 82 83	て
+T14	Connective 95 96	、
+T15	Connective 111 112	、
+T16	Connective 126 127	て
+R1	REASON Arg1:T10 Arg2:T1	
+R2	RESULT Arg1:T10 Arg2:T2	
+R3	REASON Arg1:T11 Arg2:T2	
+R4	RESULT Arg1:T11 Arg2:T3	
+R7	REASON Arg1:T13 Arg2:T4	
+R8	RESULT Arg1:T13 Arg2:T5	
+R9	REASON Arg1:T14 Arg2:T5	
+R10	RESULT Arg1:T14 Arg2:T6	
+R11	REASON Arg1:T15 Arg2:T6	
+R12	RESULT Arg1:T15 Arg2:T7	
+R13	REASON Arg1:T16 Arg2:T7	
+R14	RESULT Arg1:T16 Arg2:T8	
+T17	Connective 144 145	、
+R15	REASON Arg1:T17 Arg2:T8	
+R16	RESULT Arg1:T17 Arg2:T9	
+T18	Argument 145 147	最悪
+T19	Connective 148 150	場合
+R17	CONDITION Arg1:T19 Arg2:T18	
+R18	RESULT Arg1:T19 Arg2:T9	
+R5	RESULT Arg1:T11 Arg2:T4	
+R6	REASON Arg1:T13 Arg2:T3	

@@ -1,0 +1,29 @@
+T1	Argument 38 76	統合ユニット（ＩＣＵ：インテグレーテッドコントロールユニット）の回路が不適切
+T2	Connective 77 79	ため
+T3	Argument 80 90	イグニッションをオフ
+T4	Connective 93 94	際
+T5	Argument 95 117	回路が燃料ポンプからの誘導起電圧の影響を受け
+T6	Connective 117 118	、
+T7	Argument 118 140	キーインタロックソレノイドの作動開始が遅れる
+T8	Connective 146 150	そのため
+T11	Argument 151 187	ＡＴセレクトレバーがＰポジション以外の時に、短時間にキーを抜く操作を行う
+T12	Connective 187 188	と
+T13	Argument 188 193	キーが抜け
+T14	Argument 198 209	駐車ブレーキをかけ忘れ
+T15	Connective 212 214	場合
+T16	Argument 215 226	駐車中に車両が動き出す
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	REASON Arg1:T6 Arg2:T5	
+R4	RESULT Arg1:T6 Arg2:T7	
+R5	RESULT Arg1:T4 Arg2:T7	
+R6	RESULT Arg1:T2 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R9	CONDITION Arg1:T12 Arg2:T11	
+R10	RESULT Arg1:T12 Arg2:T13	
+R12	RESULT Arg1:T8 Arg2:T13	
+T17	Connective 197 198	、
+R13	REASON Arg1:T17 Arg2:T13	
+R14	CONDITION Arg1:T15 Arg2:T14	
+R15	RESULT Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T15 Arg2:T16	

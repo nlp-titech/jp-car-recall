@@ -1,0 +1,17 @@
+T1	Argument 14 55	トーコントロールリンクロッドをリヤサブフレームに取り付けるためのナットの強度が不足
+T2	Connective 59 61	ため
+T3	Argument 62 76	サーキット走行等の過酷な使用
+T4	Connective 79 81	場合
+T5	Argument 82 88	ナットが破損
+T6	Connective 89 90	て
+T7	Argument 90 107	トーコントロールリンクロッドが外れ
+T8	Argument 108 119	走行安定性が損なわれる
+T9	Connective 107 108	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	

@@ -1,0 +1,27 @@
+T1	Argument 15 34	中扉の光電管配線端子の接続作業が不適切
+T3	Argument 38 44	走行時の振動
+T4	Argument 45 50	配線が断線
+T5	Argument 61 74	当該端子の防水処理が不適切
+T6	Argument 82 87	配線が短絡
+T7	Argument 100 102	最悪
+T8	Argument 106 117	中扉が開閉できなくなる
+T9	Connective 35 37	ため
+T11	Connective 44 45	で
+T12	Connective 75 77	ため
+T13	Connective 95 99	そのため
+T14	Connective 103 105	場合
+R1	REASON Arg1:T9 Arg2:T1	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+R8	REASON Arg1:T12 Arg2:T5	
+R9	RESULT Arg1:T12 Arg2:T2	
+R10	REASON Arg1:T13 Arg2:T6	
+R11	RESULT Arg1:T13 Arg2:T8	
+R12	CONDITION Arg1:T14 Arg2:T7	
+R13	RESULT Arg1:T14 Arg2:T8	
+R2	RESULT Arg1:T9 Arg2:T4	
+T2	Argument 78 81	水浸入
+T10	Connective 81 82	で
+R3	REASON Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T6	
+R7	REASON Arg1:T13 Arg2:T4	

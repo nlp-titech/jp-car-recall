@@ -1,0 +1,27 @@
+T1	Argument 0 39	大型トラック用エンジンにおいて、ブローバイガス還元装置のガス取出し位置が不適切
+T2	Connective 40 42	ため
+T3	Argument 43 52	急傾斜の坂道で使用
+T4	Argument 57 86	エンジンオイルがブローバイガスの通路を経由して吸気管に吸入
+T5	Connective 88 89	、
+T6	Connective 54 56	場合
+T7	Argument 89 97	シリンダ内で燃焼
+T8	Connective 99 101	ため
+T9	Argument 102 111	エンジン回転が上昇
+T10	Argument 118 127	エンジン内部が損傷
+T11	Connective 128 129	、
+T12	Argument 129 139	再始動ができなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T4	
+R3	CONDITION Arg1:T6 Arg2:T3	
+R4	RESULT Arg1:T6 Arg2:T4	
+R6	RESULT Arg1:T5 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R11	REASON Arg1:T11 Arg2:T10	
+R12	RESULT Arg1:T11 Arg2:T12	
+T16	Argument 112 114	最悪
+T17	Connective 115 117	場合
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T10	
+R5	REASON Arg1:T5 Arg2:T4	
+R9	RESULT Arg1:T8 Arg2:T10	

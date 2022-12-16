@@ -1,0 +1,33 @@
+T1	Argument 0 33	電気装置において、前照灯バルブに接続するコネクタの差し込みが不適切
+T2	Argument 46 65	バルブ端子とコネクタ間で接触不良が発生
+T3	Argument 89 91	発熱
+T4	Argument 94 104	コネクタの変形や溶損
+T6	Argument 114 126	バルブからコネクタが脱落
+T7	Argument 128 139	前照灯が点灯しなくなる
+T8	Connective 34 36	ため
+T9	Connective 72 73	、
+T10	Connective 91 94	により
+T12	Connective 107 108	、
+T13	Connective 127 128	て
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T2	
+R3	REASON Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T3	
+R5	REASON Arg1:T10 Arg2:T3	
+R6	RESULT Arg1:T10 Arg2:T4	
+R10	RESULT Arg1:T12 Arg2:T6	
+R11	REASON Arg1:T13 Arg2:T6	
+R12	RESULT Arg1:T13 Arg2:T7	
+T14	Connective 43 46	により
+T15	Argument 37 43	走行時の振動
+R13	REASON Arg1:T14 Arg2:T15	
+R14	RESULT Arg1:T14 Arg2:T2	
+R7	REASON Arg1:T12 Arg2:T4	
+T11	Argument 73 87	そのままの状態で使用を続ける
+T16	Connective 87 88	と
+R15	CONDITION Arg1:T16 Arg2:T11	
+R16	RESULT Arg1:T16 Arg2:T4	
+T17	Argument 108 110	最悪
+T18	Connective 111 113	場合
+R17	CONDITION Arg1:T18 Arg2:T17	
+R18	RESULT Arg1:T18 Arg2:T6	

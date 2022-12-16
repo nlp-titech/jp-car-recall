@@ -1,0 +1,21 @@
+T1	Argument 0 35	電動式車いす固定装置において、固定ベルト解除時のモータ停止方法が不適切
+T2	Connective 36 38	ため
+T4	Connective 58 59	、
+T5	Argument 75 85	当該モータが作動せず
+T6	Connective 85 86	、
+T7	Argument 86 98	車いすを固定できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 59 71	当該車いす固定装置を使用
+T9	Connective 73 74	際
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	
+T3	Argument 39 45	モータ停止時
+T10	Connective 45 46	に
+T11	Argument 46 51	ギヤが固着
+R2	REASON Arg1:T4 Arg2:T11	
+R3	CONDITION Arg1:T10 Arg2:T3	
+R9	RESULT Arg1:T2 Arg2:T11	
+R10	RESULT Arg1:T10 Arg2:T11	

@@ -1,0 +1,25 @@
+T1	Argument 0 45	２輪駆動車（過給機付車を除く。）の制動装置において、左後輪ブレーキパイプの固定方法が不適切
+T2	Argument 55 61	共振を起こす
+T3	Argument 67 69	振動
+T4	Argument 72 87	当該ブレーキパイプに亀裂が発生
+T5	Argument 89 97	ブレーキ液が漏れ
+T6	Argument 98 104	制動力が低下
+T7	Connective 46 48	ため
+T8	Connective 66 67	、
+T9	Connective 69 72	により
+T10	Connective 88 89	、
+T11	Connective 97 98	て
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T5	
+R9	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	
+T12	Argument 49 53	高速走行
+T13	Connective 53 54	時
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T2	

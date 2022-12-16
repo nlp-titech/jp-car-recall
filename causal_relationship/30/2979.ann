@@ -1,0 +1,29 @@
+T1	Argument 0 28	ドラム式の制動装置において、ブレーキシューの製造が不適切
+T2	Connective 29 31	ため
+T3	Argument 32 52	ブレーキシューとライニングの接着が不十分
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 59 63	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 76 85	ライニングが剥がれ
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 85 86	、
+T8	Argument 86 105	制動時にドラムとシューの隙間に噛み込み
+T10	Connective 105 106	、
+R9	REASON Arg1:T10 Arg2:T8	
+T11	Argument 106 120	意図した以上の制動力が加わる
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Connective 125 127	ため
+T13	Argument 132 141	走行安定性を損なう
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T6 Arg2:T5	
+R14	RESULT Arg1:T6 Arg2:T8	
+T14	Argument 64 75	ブレーキ操作を繰り返す
+T15	Connective 75 76	と
+R15	CONDITION Arg1:T15 Arg2:T14	
+R16	RESULT Arg1:T15 Arg2:T5	
+T16	Argument 128 130	低速
+T17	Connective 130 131	時
+R7	CONDITION Arg1:T17 Arg2:T16	
+R8	RESULT Arg1:T17 Arg2:T13	

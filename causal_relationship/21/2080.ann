@@ -1,0 +1,17 @@
+T1	Argument 0 38	大型バスにおいて、アクセルセンサーレバーのアクセルワイヤ取付穴の加工が不適切
+T2	Connective 39 41	ため
+T3	Argument 42 58	当該レバーとアクセルワイヤが固着
+T4	Connective 68 72	そのため
+T5	Argument 73 87	そのままの状態で使用を続ける
+T6	Connective 99 100	し
+T7	Argument 100 107	走行不能となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T9	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Connective 87 88	と
+T9	Argument 89 99	アクセルワイヤが切損
+R5	CONDITION Arg1:T8 Arg2:T5	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	REASON Arg1:T6 Arg2:T9	

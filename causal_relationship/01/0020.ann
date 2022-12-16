@@ -1,0 +1,25 @@
+T7	Argument 88 101	当該ホースの内面ゴムが剥離
+T8	Connective 69 71	ため
+R1	REASON Arg1:T8 Arg2:T12	
+R2	RESULT Arg1:T8 Arg2:T7	
+T2	Argument 111 122	剥離片が油圧経路を閉塞
+T6	Argument 127 132	油圧が低下
+T9	Argument 135 144	ハンドルが重くなる
+T3	Connective 102 103	、
+T4	Connective 124 126	ため
+T5	Connective 133 134	て
+R3	REASON Arg1:T3 Arg2:T7	
+R4	RESULT Arg1:T3 Arg2:T2	
+R5	REASON Arg1:T4 Arg2:T2	
+R6	RESULT Arg1:T4 Arg2:T6	
+R7	REASON Arg1:T5 Arg2:T6	
+R8	RESULT Arg1:T5 Arg2:T9	
+T10	Argument 72 86	このままの状態で使用を続ける
+T11	Connective 86 87	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T7	
+T14	Argument 103 105	最悪
+T15	Connective 106 108	場合
+R11	CONDITION Arg1:T15 Arg2:T14	
+R12	RESULT Arg1:T15 Arg2:T2	
+T12	Argument 0 60	動力式かじ取り装置（パワーステアリング）の油圧配管に使用しているゴムホース（戻り側）の一部に、製造不良により耐久性の不足

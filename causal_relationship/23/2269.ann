@@ -1,0 +1,21 @@
+T1	Argument 0 31	ＡＢＳ（アンチロックブレーキシステム）の制御プログラムが不適切
+T2	Connective 32 34	ため
+T3	Argument 35 60	ＡＢＳ作動完了後の制動力が作動直前の制動力より低下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 68 72	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 108 123	顕著な空走感や制動遅れを生じる
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 128 129	、
+R5	REASON Arg1:T6 Arg2:T5	
+T7	Argument 157 175	運転者の予測より制動停止距離が伸びる
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 73 105	ブレーキをかけている途中に凍結や凹凸路面等を通過してＡＢＳが作動
+T9	Connective 107 108	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 129 149	そのまま一定の踏力でブレーキペダルを保持
+T11	Connective 153 155	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T7	

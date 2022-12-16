@@ -1,0 +1,17 @@
+T1	Argument 5 24	コンピュータのプログラムの一部が不適切
+T2	Connective 25 27	ため
+T3	Argument 61 67	ＡＢＳが作動
+T4	Argument 75 83	制動距離が伸びる
+T5	Connective 68 69	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T4	
+T8	Argument 69 71	最悪
+T9	Connective 72 74	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T4	
+T6	Argument 28 60	ＡＢＳ（アンチロックブレーキシステム）の作動が不要な通常の制動時
+T7	Connective 60 61	に
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	

@@ -1,0 +1,13 @@
+T1	Argument 0 28	後部座席用シートベルトの中間ガイドのリベット部に強度不足
+T2	Connective 34 35	、
+T3	Argument 44 54	当該中間ガイドが外れ
+T4	Connective 54 55	、
+T5	Argument 55 64	シートベルトが緩む
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T10	Argument 35 41	衝突時の衝撃
+T11	Connective 41 44	により
+R5	REASON Arg1:T11 Arg2:T10	
+R6	RESULT Arg1:T11 Arg2:T3	

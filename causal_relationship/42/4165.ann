@@ -1,0 +1,29 @@
+T2	Connective 38 40	ため
+T3	Argument 41 57	リベットで適切に固定されていない
+T4	Connective 63 67	そのため
+T5	Argument 84 92	ライニングが外れ
+T6	Connective 92 93	、
+T7	Argument 93 132	外れたライニングが、ドラムとブレーキカム、または、他のライニングとの間に挟まり
+T8	Connective 132 133	、
+T9	Argument 133 148	ブレーキが引きずった状態となり
+T10	Connective 148 149	、
+T11	Argument 155 160	火災に至る
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T12	Argument 68 82	そのままの状態で使用を続ける
+T13	Connective 82 83	と
+R5	CONDITION Arg1:T13 Arg2:T12	
+R6	RESULT Arg1:T13 Arg2:T5	
+R7	REASON Arg1:T6 Arg2:T5	
+R8	RESULT Arg1:T6 Arg2:T7	
+R9	REASON Arg1:T8 Arg2:T7	
+R10	RESULT Arg1:T8 Arg2:T9	
+R11	REASON Arg1:T10 Arg2:T9	
+R12	RESULT Arg1:T10 Arg2:T11	
+T14	Argument 149 151	最悪
+T15	Connective 152 154	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T11	
+T1	Argument 16 37	ブレーキシューとライニングの組付けが不適切
+R1	REASON Arg1:T2 Arg2:T1	

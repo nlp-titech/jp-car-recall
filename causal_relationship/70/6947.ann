@@ -1,0 +1,28 @@
+T1	Argument 0 24	パワーステアリング用油圧ポンプの取付構造が不適切
+T2	Connective 25 27	ため
+T3	Argument 28 39	補機駆動用ベルトの張力
+T4	Connective 39 42	により
+T5	Argument 43 60	ポンプ締付けボルトの締付け力が低下
+T6	Connective 68 72	そのため
+T7	Argument 73 83	そのまま使用を続ける
+T8	Connective 83 84	と
+T9	Argument 85 94	締付けボルトが折損
+T10	Connective 95 96	、
+T11	Argument 96 98	最悪
+T12	Connective 99 101	場合
+T13	Argument 102 123	油圧ポンププーリから補機駆動用ベルトが外れ
+T14	Connective 123 124	、
+T15	Argument 124 135	ハンドルの操作力が増大
+R1	REASON Arg1:T2 Arg2:T1	
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	RESULT Arg1:T6 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T10 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	

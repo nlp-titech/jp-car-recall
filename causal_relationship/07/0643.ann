@@ -1,0 +1,29 @@
+T1	Argument 42 58	多量の水がフロントデッキ内に流入
+T2	Connective 60 61	と
+T3	Argument 0 17	ワイパーモータの空気穴位置が不適切
+T5	Argument 62 74	当該モータの空気穴が水没
+T6	Argument 76 86	モータ内部に水が浸入
+T7	Connective 94 98	そのため
+T8	Argument 99 109	モータ内部に錆が発生
+T9	Argument 117 121	導通不良
+T10	Connective 124 125	、
+T11	Argument 125 137	ワイパーが作動しなくなる
+T12	Connective 18 20	ため
+T14	Connective 75 76	、
+T15	Connective 110 111	、
+R1	REASON Arg1:T12 Arg2:T3	
+R2	RESULT Arg1:T12 Arg2:T5	
+R5	CONDITION Arg1:T2 Arg2:T1	
+R6	RESULT Arg1:T2 Arg2:T5	
+R7	REASON Arg1:T14 Arg2:T5	
+R8	RESULT Arg1:T14 Arg2:T6	
+R9	REASON Arg1:T7 Arg2:T6	
+R10	RESULT Arg1:T7 Arg2:T8	
+R11	REASON Arg1:T15 Arg2:T8	
+R12	RESULT Arg1:T15 Arg2:T9	
+R13	REASON Arg1:T10 Arg2:T9	
+R14	RESULT Arg1:T10 Arg2:T11	
+T16	Argument 111 113	最悪
+T17	Connective 114 116	場合
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T9	

@@ -1,0 +1,14 @@
+T1	Argument 0 17	アクペダル取り付け部の構造が不適切
+T2	Connective 18 20	ため
+T3	Argument 21 27	摺動性が悪い
+T4	Connective 32 33	、
+T5	Argument 46 58	エンジン回転の降下が遅れ
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+#1	AnnotatorNotes T1	脱字「アクセルペダル」
+T6	Argument 33 43	アクセルペダルを放し
+T7	Connective 44 45	後
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T5	

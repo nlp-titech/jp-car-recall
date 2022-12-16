@@ -1,0 +1,5 @@
+T1	Argument 0 43	後付け用品のオートライトが装着された車両において、オートライト側と車両側の回路の不整合
+T2	Connective 43 46	により
+T3	Argument 47 81	オートライト作動時に車室内のメーター等のイルミネーションが点灯しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

@@ -1,0 +1,13 @@
+T1	Argument 0 38	原動機の燃料配管（デリバリパイプ）において、燃圧センサ締結面の平滑度が不適切
+T2	Connective 39 41	ため
+T3	Argument 42 66	燃圧センサを規定トルクで締め付けても締結力が不足
+T4	Connective 76 80	そのため
+T5	Argument 81 93	燃圧センサ締結部がゆるみ
+T6	Connective 93 94	、
+T7	Argument 94 100	燃料が漏れる
+R1	RESULT Arg1:T6 Arg2:T7	
+R2	REASON Arg1:T6 Arg2:T5	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	REASON Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T2 Arg2:T3	
+R6	REASON Arg1:T2 Arg2:T1	

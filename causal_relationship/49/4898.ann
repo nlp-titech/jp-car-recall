@@ -1,0 +1,48 @@
+T1	Argument 12 44	ギヤボックス側のスプロケットを固定しているナットの締付けが不十分
+T2	Connective 45 47	ため
+T3	Argument 48 77	当該スプロケットとギヤボックス出力軸との取付部にがたが生じ
+T4	Connective 77 78	て
+T5	Argument 78 83	異音が発生
+T6	Argument 107 115	当該取付部が破損
+T7	Connective 116 117	て
+T8	Argument 117 128	当該スプロケットが空転
+T9	Connective 129 130	、
+T10	Argument 130 137	走行不能となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T6	
+R6	REASON Arg1:T7 Arg2:T6	
+R7	RESULT Arg1:T7 Arg2:T8	
+R8	REASON Arg1:T9 Arg2:T8	
+R9	RESULT Arg1:T9 Arg2:T10	
+T11	Argument 91 105	そのままの状態で使用を続ける
+T12	Connective 105 106	と
+R10	CONDITION Arg1:T12 Arg2:T11	
+R11	RESULT Arg1:T12 Arg2:T6	
+T13	Argument 156 175	後輪側のスプロケットの加工方法が不適切
+T14	Connective 176 178	ため
+T15	Argument 179 193	当該スプロケットに亀裂が発生
+T16	Connective 200 201	、
+T17	Argument 217 228	当該スプロケットが変形
+T18	Connective 229 230	て
+T19	Argument 230 244	駆動力が十分伝達できなくなり
+T20	Connective 244 245	、
+T21	Argument 251 258	走行不能となる
+R12	REASON Arg1:T14 Arg2:T13	
+R13	RESULT Arg1:T14 Arg2:T15	
+R14	REASON Arg1:T16 Arg2:T15	
+R15	RESULT Arg1:T16 Arg2:T17	
+R16	REASON Arg1:T18 Arg2:T17	
+R17	RESULT Arg1:T18 Arg2:T19	
+R18	REASON Arg1:T20 Arg2:T19	
+R19	RESULT Arg1:T20 Arg2:T21	
+T22	Argument 201 215	そのままの状態で使用を続ける
+T23	Connective 215 216	と
+R20	CONDITION Arg1:T23 Arg2:T22	
+R21	RESULT Arg1:T23 Arg2:T17	
+T24	Argument 245 247	最悪
+T25	Connective 248 250	場合
+R22	CONDITION Arg1:T25 Arg2:T24	
+R23	RESULT Arg1:T25 Arg2:T21	

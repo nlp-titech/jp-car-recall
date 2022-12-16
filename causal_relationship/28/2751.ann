@@ -1,0 +1,9 @@
+T1	Argument 0 51	ＨＩＤヘッドランプ装備車において、後付け用品のハロゲンヘッドランプ用フォグランプキットを誤って適用設定
+T2	Argument 75 117	走行用前照灯（ハイビーム）が点灯しているときに、すれ違い用前照灯（ロービーム）が消灯
+T3	Connective 53 55	ため
+T4	Argument 56 70	当該フォグランプキットを装着
+R1	REASON Arg1:T3 Arg2:T1	
+R2	RESULT Arg1:T3 Arg2:T2	
+T5	Connective 72 74	場合
+R3	CONDITION Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T2	

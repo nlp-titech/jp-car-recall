@@ -1,0 +1,21 @@
+T1	Argument 0 24	動力伝達装置のプロペラシャフトの加工処理が不適切
+T2	Argument 28 33	強度の不足
+T3	Argument 65 78	当該プロペラシャフトが折損
+T4	Argument 80 87	走行不能に至る
+T5	Connective 25 27	ため
+T6	Connective 42 43	、
+T7	Connective 79 80	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 43 57	そのままの状態で使用を続ける
+T9	Connective 57 58	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T4	
+T10	Argument 59 61	最悪
+T11	Connective 62 64	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	

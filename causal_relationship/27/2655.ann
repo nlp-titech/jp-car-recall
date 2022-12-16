@@ -1,0 +1,35 @@
+T1	Argument 0 87	低床式後２軸駆動の１２段変速機を搭載した大型トラックにおいて、後前軸と後後軸間のプロペラシャフトを接続する後後軸のフランジカップリングとドライブピニオンとの締結部の強度が不足
+T2	Connective 91 93	ため
+T3	Argument 94 108	キャッスルナットの座面が摩耗
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 115 129	キャッスルナットに緩みが生じ
+T5	Connective 112 115	により
+R3	REASON Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T4	
+T6	Argument 130 165	フランジカップリングのスプライン部またはキャッスルナットのネジ部が摩滅
+T7	Connective 129 130	、
+R5	REASON Arg1:T7 Arg2:T4	
+R6	RESULT Arg1:T7 Arg2:T6	
+T8	Connective 173 177	そのため
+T9	Argument 194 207	フランジカップリングが空転
+R7	REASON Arg1:T8 Arg2:T6	
+R8	RESULT Arg1:T8 Arg2:T9	
+T11	Argument 211 226	フランジカップリングが抜け出し
+T12	Connective 248 249	、
+T13	Argument 256 264	走行できなくなる
+R13	REASON Arg1:T12 Arg2:T16	
+R14	RESULT Arg1:T12 Arg2:T13	
+T10	Connective 207 208	、
+R11	REASON Arg1:T10 Arg2:T9	
+R9	RESULT Arg1:T8 Arg2:T11	
+R10	RESULT Arg1:T10 Arg2:T13	
+T14	Argument 178 192	そのままの状態で使用を続ける
+T15	Connective 192 193	と
+R12	CONDITION Arg1:T15 Arg2:T14	
+R15	RESULT Arg1:T15 Arg2:T9	
+R16	RESULT Arg1:T15 Arg2:T11	
+T16	Argument 227 247	後前軸と後後軸間のプロペラシャフトが脱落
+T17	Connective 226 227	て
+R17	REASON Arg1:T17 Arg2:T11	
+R18	RESULT Arg1:T17 Arg2:T16	

@@ -1,0 +1,17 @@
+T1	Argument 0 67	原動機に燃料を供給する混合器（ミキサー）において、スロットル開度をオートマチックトランスミッションに伝達するシャフトの軸受部に加工不良
+T2	Argument 92 109	当該シャフトを保持する軸受部が摩耗
+T3	Argument 117 134	ミキサーのスロットルが戻らなくなる
+T4	Argument 74 90	繰り返しアクセルペダル操作を行う
+T5	Connective 73 74	、
+T6	Connective 90 91	と
+T7	Connective 110 111	、
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	CONDITION Arg1:T6 Arg2:T4	
+R4	RESULT Arg1:T6 Arg2:T2	
+R5	REASON Arg1:T7 Arg2:T2	
+R6	RESULT Arg1:T7 Arg2:T3	
+R1	REASON Arg1:T5 Arg2:T1	
+T8	Argument 111 113	最悪
+T9	Connective 114 116	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	

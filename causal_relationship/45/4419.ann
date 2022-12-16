@@ -1,0 +1,9 @@
+T1	Argument 10 65	シートバックフレーム（座席の背もたれの内部にある鉄製の骨組み）とリクライニング装置の取付け部に溶接されていない
+T2	Connective 70 72	ため
+T3	Argument 88 101	当該座席の背もたれが倒れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 73 86	取付け部に過大な力が加わる
+T5	Connective 86 87	と
+R3	CONDITION Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T3	

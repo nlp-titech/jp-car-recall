@@ -1,0 +1,25 @@
+T1	Argument 0 23	ステアリングギヤボックス取り付け部の強度が不足
+T2	Connective 27 29	ため
+T3	Argument 30 44	車体との溶接部に亀裂が生じる
+T4	Connective 50 54	そのため
+T5	Argument 79 87	当該溶接部が破断
+T6	Connective 88 89	、
+T7	Argument 95 110	ステアリング操作ができなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 55 69	そのままの状態で使用を続ける
+T9	Connective 69 70	と
+T10	Argument 71 76	亀裂の進行
+T11	Connective 76 79	により
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T10	
+R9	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	
+T12	Argument 89 91	最悪
+T13	Connective 92 94	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T7	
+R4	RESULT Arg1:T4 Arg2:T10	

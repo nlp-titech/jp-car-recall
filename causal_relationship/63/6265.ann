@@ -1,0 +1,17 @@
+T1	Argument 17 33	当該ポンプの吸い口の気密性が低い
+T2	Connective 39 43	そのため
+T3	Argument 44 65	燃料ポンプからエンジンへの燃料供給が不安定
+T4	Connective 68 69	、
+T5	Argument 69 87	加速時にエンジン回転が円滑に上昇せず
+T6	Connective 87 88	、
+T7	Argument 88 90	最悪
+T8	Connective 91 93	場合
+T9	Argument 94 105	走行中にエンジンが停止
+R1	RESULT Arg1:T8 Arg2:T9	
+R2	CONDITION Arg1:T8 Arg2:T7	
+R3	RESULT Arg1:T6 Arg2:T9	
+R4	REASON Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T5	
+R6	REASON Arg1:T4 Arg2:T3	
+R7	RESULT Arg1:T2 Arg2:T3	
+R8	REASON Arg1:T2 Arg2:T1	

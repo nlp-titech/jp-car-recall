@@ -1,0 +1,17 @@
+T1	Argument 0 35	エンジンマウントのブラケットにおいて、当該ブラケットの溶接指示が不適切
+T2	Argument 39 66	溶接ビード（盛り上がった溶接痕）に固定ボルトが乗り上げ
+T3	Argument 80 94	そのままの状態で使用を続ける
+T4	Argument 96 102	エンジン振動
+T5	Argument 106 114	当該ボルトが緩む
+T6	Connective 36 38	ため
+T7	Connective 75 79	そのため
+T8	Connective 94 95	と
+T9	Connective 102 105	により
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R5	CONDITION Arg1:T8 Arg2:T3	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+R4	RESULT Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T8 Arg2:T5	

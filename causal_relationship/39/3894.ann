@@ -1,0 +1,41 @@
+T1	Argument 8 22	ステータコイルの耐熱性が不足
+T2	Argument 29 40	当該コイルが高温になる
+T3	Argument 41 50	コイル線被膜が損傷
+T4	Argument 51 60	コイルの一部が短絡
+T5	Argument 73 82	発電量が少なくなり
+T6	Argument 83 93	そのまま使用を続ける
+T7	Argument 95 107	バッテリが充電不足となり
+T8	Argument 108 110	最悪
+T10	Argument 118 125	エンジンが停止
+T12	Connective 26 28	ため
+T13	Connective 40 41	と
+T14	Connective 50 51	し
+T15	Connective 68 72	そのため
+T16	Connective 82 83	、
+T17	Connective 93 94	と
+T18	Connective 107 108	、
+T19	Connective 111 113	場合
+R1	REASON Arg1:T12 Arg2:T1	
+R3	CONDITION Arg1:T13 Arg2:T2	
+R4	RESULT Arg1:T13 Arg2:T3	
+R5	REASON Arg1:T14 Arg2:T3	
+R6	RESULT Arg1:T14 Arg2:T4	
+R7	REASON Arg1:T15 Arg2:T4	
+R8	RESULT Arg1:T15 Arg2:T5	
+R9	REASON Arg1:T16 Arg2:T5	
+R11	CONDITION Arg1:T17 Arg2:T6	
+R12	RESULT Arg1:T17 Arg2:T7	
+R13	REASON Arg1:T18 Arg2:T7	
+R15	CONDITION Arg1:T19 Arg2:T8	
+R16	RESULT Arg1:T19 Arg2:T10	
+R2	RESULT Arg1:T12 Arg2:T3	
+R10	RESULT Arg1:T16 Arg2:T7	
+R14	RESULT Arg1:T18 Arg2:T10	
+T9	Connective 126 127	て
+T11	Argument 127 137	再始動ができなくなる
+R17	REASON Arg1:T9 Arg2:T10	
+R18	RESULT Arg1:T9 Arg2:T11	
+T20	Argument 114 117	走行中
+T21	Connective 117 118	に
+R19	CONDITION Arg1:T21 Arg2:T20	
+R20	RESULT Arg1:T21 Arg2:T10	

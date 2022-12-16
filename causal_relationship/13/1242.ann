@@ -1,0 +1,25 @@
+T1	Argument 0 31	動力伝達装置において、前後進切り替え用電磁弁の配線固定が不適切
+T2	Connective 32 34	ため
+T3	Argument 35 47	トランスミッションの振動
+T4	Connective 47 50	により
+T5	Argument 50 55	配線が共振
+T6	Connective 55 56	し
+T7	Argument 56 58	断線
+T8	Connective 66 70	そのため
+T9	Argument 71 89	電磁弁の前後進切り替えができなくなり
+T10	Connective 89 90	、
+T11	Argument 90 92	最悪
+T12	Connective 93 95	場合
+T13	Argument 96 103	走行不能となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	

@@ -1,0 +1,27 @@
+T1	Argument 1 29	ＣＦＲＰ製の荷台において、フロア内部のリブの形状が不適切
+T2	Connective 30 32	ため
+T3	Argument 33 44	当該フロアの強度が不足
+T4	Connective 53 54	、
+T5	Argument 54 60	荷物の積載等
+T6	Connective 60 63	により
+T7	Argument 64 88	当該フロアの裏面のスキン板（表面板）に亀裂が発生
+T8	Connective 96 100	そのため
+T9	Argument 101 112	フロア面に荷物等を積載
+T10	Connective 114 116	場合
+T11	Argument 117 125	当該フロアが変形
+T12	Connective 126 127	、
+T13	Argument 127 145	荷物等がフロア面に対し直立しなくなる
+T14	Argument 149 163	あおりの開閉作業が困難となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T11	
+R9	CONDITION Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	RESULT Arg1:T12 Arg2:T14	

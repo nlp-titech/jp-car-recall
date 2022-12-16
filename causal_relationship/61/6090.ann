@@ -1,0 +1,17 @@
+T1	Argument 0 35	フロントブレーキホースが燃料タンクとフレームの間に挟まって組み付けられ
+T2	Connective 42 46	そのため
+T3	Argument 47 61	そのままの状態で使用を続ける
+T4	Connective 61 62	と
+T5	Argument 63 83	走行中にフロントブレーキの引きずりが発生
+T6	Argument 85 87	最悪
+T7	Connective 88 90	場合
+T8	Argument 91 103	フロントホイールがロック
+T9	Connective 84 85	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T9 Arg2:T5	
+R6	RESULT Arg1:T9 Arg2:T8	
+R7	CONDITION Arg1:T7 Arg2:T6	
+R8	RESULT Arg1:T7 Arg2:T8	

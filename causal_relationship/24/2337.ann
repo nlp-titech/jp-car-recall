@@ -1,0 +1,17 @@
+T1	Argument 0 39	大容量オルタネータ装着車の充電回路において、装着されているヒューズの容量が不足
+T2	Argument 46 55	当該ヒューズが切れ
+T3	Argument 56 69	バッテリが充電できなくなる
+T4	Argument 92 108	原動機が停止し再始動できなくなる
+T6	Connective 43 45	ため
+T7	Connective 55 56	、
+T8	Connective 75 79	そのため
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+T10	Argument 80 90	そのまま使用を続ける
+T11	Connective 90 91	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T4	

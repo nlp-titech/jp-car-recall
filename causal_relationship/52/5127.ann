@@ -1,0 +1,33 @@
+T1	Argument 6 28	パワーステアリング用油圧配管の組付けが不適切
+T2	Connective 29 31	ため
+T3	Argument 43 50	配管同士が接触
+T4	Connective 51 52	て
+T5	Argument 52 54	損傷
+T6	Argument 67 83	パワーステアリングの作動油が漏れ
+T7	Connective 83 84	て
+T8	Argument 84 95	ハンドルの操作力が増大
+T9	Connective 95 96	し
+T10	Connective 62 66	そのため
+T11	Argument 103 116	漏れた作動油が排気管に付着
+T12	Connective 117 118	て
+T13	Argument 118 123	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T10 Arg2:T5	
+R6	RESULT Arg1:T10 Arg2:T6	
+R7	REASON Arg1:T7 Arg2:T6	
+R8	RESULT Arg1:T7 Arg2:T8	
+R9	REASON Arg1:T9 Arg2:T8	
+R10	RESULT Arg1:T9 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+T14	Argument 97 99	最悪
+T15	Connective 100 102	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T11	
+T16	Argument 32 40	エンジンの振動等
+T17	Connective 40 43	により
+R15	REASON Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T3	

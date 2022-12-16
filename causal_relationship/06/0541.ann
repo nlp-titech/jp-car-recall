@@ -1,0 +1,21 @@
+T1	Argument 0 39	自動変速機付車の制動灯用スイッチの電気配線において、当該電気配線の回路が不適切
+T2	Argument 43 56	当該スイッチの接点部が発熱
+T3	Argument 57 63	樹脂部が溶損
+T4	Argument 77 91	当該スイッチが作動しなくなり
+T5	Argument 92 103	制動灯が点灯しなくなる
+T6	Connective 40 42	ため
+T7	Connective 56 57	し
+T8	Connective 70 71	、
+T9	Connective 91 92	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 71 73	最悪
+T11	Connective 74 76	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T4	

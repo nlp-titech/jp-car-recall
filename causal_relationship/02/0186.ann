@@ -1,0 +1,27 @@
+T1	Argument 0 41	３速自動変速機において、当該変速機内部のリングギヤ取り付けボルトのねじ穴に加工不良
+T2	Argument 63 75	当該取り付けボルトが緩み
+T3	Argument 76 87	ミッションケースと干渉
+T4	Argument 89 94	異音が発生
+T5	Argument 102 110	当該変速機が破損
+T6	Argument 112 119	走行不能に至る
+T7	Connective 47 48	、
+T8	Connective 75 76	、
+T9	Connective 88 89	て
+T11	Connective 111 112	て
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R9	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	
+T12	Argument 48 62	そのままの状態で使用を続ける
+T13	Connective 62 63	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T2	
+T14	Argument 96 98	最悪
+T15	Connective 99 101	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T5	
+R7	RESULT Arg1:T9 Arg2:T5	

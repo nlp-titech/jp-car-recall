@@ -1,0 +1,17 @@
+T1	Argument 0 27	原動機の左側面にあるゴムプラグ（止水栓）の耐熱性が不足
+T2	Argument 34 47	当該ゴムプラグに亀裂が発生
+T3	Argument 49 55	冷却水が漏れ
+T4	Argument 63 73	オーバーヒートに至る
+T5	Connective 31 33	ため
+T6	Connective 48 49	、
+T7	Connective 55 56	て
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 57 59	最悪
+T9	Connective 60 62	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T4	

@@ -1,0 +1,9 @@
+T1	Argument 8 44	助手席乗員検知システムにおいて、助手席の乗員を検知するプログラムが不適切
+T2	Argument 48 59	当該乗員を検知できない
+T3	Argument 70 106	助手席に乗車しているにもかかわらず、衝突時に助手席エアバッグが展開しない
+T4	Connective 45 47	ため
+T5	Connective 65 69	そのため
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	

@@ -1,0 +1,21 @@
+T3	Argument 98 108	ホイール・ハブが破損
+T4	Argument 110 118	走行できなくなる
+T5	Connective 25 27	ため
+T6	Connective 91 92	、
+T7	Connective 109 110	、
+R1	REASON Arg1:T5 Arg2:T9	
+R2	REASON Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T2	
+R5	RESULT Arg1:T6 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 28 68	下り坂の悪路において、ハンドルを切りながらブレーキを多用するような走行を繰り返す
+T13	Connective 68 69	と
+R7	CONDITION Arg1:T13 Arg2:T8	
+R8	RESULT Arg1:T13 Arg2:T2	
+T14	Argument 92 94	最悪
+T15	Connective 95 97	場合
+R9	CONDITION Arg1:T15 Arg2:T14	
+R10	RESULT Arg1:T15 Arg2:T3	
+T9	Argument 0 21	４輪駆動車の前輪ホイール・ハブの強度が不足
+T2	Argument 70 91	当該ホイール・ハブのフランジ部に亀裂が生じ

@@ -1,0 +1,21 @@
+T1	Argument 0 49	原動機の冷間時に燃焼室内の空気を加熱するヒータ用の回路において、ヒータリレーのケーブル結線を間違え
+T2	Connective 50 52	ため
+T3	Argument 53 67	ヒューズを介さない結線となっ
+T4	Connective 74 78	そのため
+T5	Argument 86 103	ヒータ用ケーブルに過電流が流れ続け
+T6	Connective 103 104	、
+T7	Argument 120 129	当該ケーブルが焼損
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 104 118	そのままの状態で使用を続ける
+T9	Connective 118 119	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T7	
+T10	Argument 79 83	短絡した
+T11	Connective 83 84	際
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	

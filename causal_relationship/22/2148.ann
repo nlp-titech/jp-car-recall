@@ -1,0 +1,25 @@
+T1	Argument 0 16	アクセルケーブル取り回しが不適切
+T2	Connective 17 19	ため
+T3	Argument 20 22	振動
+T4	Connective 22 25	により
+T5	Argument 25 47	当該ケーブルと変速機油圧ホース継ぎ手部が干渉
+T6	Connective 55 59	そのため
+T7	Argument 76 87	アクセルケーブルが損傷
+T8	Connective 88 89	、
+T9	Argument 95 99	走行不能
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 60 74	そのままの状態で使用を続ける
+T11	Connective 74 75	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T7	
+T12	Argument 89 91	最悪
+T13	Connective 92 94	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T9	

@@ -1,0 +1,25 @@
+T1	Argument 0 67	左右後部座席ベルト巻き取り装置のプリテンショナ（衝突時に座席ベルトの弛みを瞬時に巻き取る装置（火薬式））において、遮音材の材質に不適切
+T2	Connective 73 74	、
+T3	Argument 90 113	同装置から発生する高温の粒子が遮音材内部に入り
+T4	Argument 113 115	発熱
+T5	Connective 112 113	り
+T6	Argument 123 131	当該遮音材が焼損
+T7	Connective 132 133	て
+T8	Argument 133 138	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T4	
+T9	Connective 116 117	、
+R5	REASON Arg1:T9 Arg2:T4	
+R6	RESULT Arg1:T9 Arg2:T6	
+R7	REASON Arg1:T7 Arg2:T6	
+R8	RESULT Arg1:T7 Arg2:T8	
+T10	Argument 74 86	当該プリテンショナが作動
+T11	Connective 88 90	際に
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	
+T12	Argument 117 119	最悪
+T13	Connective 120 122	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T6	

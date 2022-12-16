@@ -1,0 +1,21 @@
+T1	Argument 0 65	圧縮天然ガス（ＣＮＧ）エンジン搭載の自動変速機仕様の路線バスにおいて、エンジン制御ユニットのアイドリング回転制御プログラムが不適切
+T2	Argument 69 82	アイドリング時の負荷が変動
+T3	Connective 84 85	と
+T4	Argument 86 105	アイドリング回転が高くなったままとなる
+T5	Connective 66 68	ため
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T4	
+R3	CONDITION Arg1:T3 Arg2:T2	
+R4	RESULT Arg1:T3 Arg2:T4	
+T6	Connective 111 115	そのため
+T7	Argument 116 137	自動変速機がニュートラルから変速しなくなり
+R5	REASON Arg1:T6 Arg2:T4	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 144 152	発進できなくなる
+T9	Connective 137 138	、
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+T10	Argument 138 140	最悪
+T11	Connective 141 143	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T8	

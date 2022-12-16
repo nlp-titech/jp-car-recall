@@ -1,0 +1,29 @@
+T1	Argument 0 51	発電機を増設した車両の原動機おいて、発電機駆動ベルト用のアイドルプーリ取付ブラケットの取付強度が不十分
+T2	Argument 55 69	ベルト張力及び発電機駆動力等
+T3	Argument 73 97	当該ブラケットと発電機ブラケットの合わせ面が摩耗
+T4	Argument 125 140	当該ブラケット取付ボルトが折損
+T5	Argument 148 161	プーリ及びブラケットが脱落
+T6	Argument 163 173	他の交通の妨げとなる
+T7	Connective 162 163	、
+T8	Connective 141 142	、
+T9	Connective 105 109	そのため
+T10	Connective 69 72	により
+T11	Connective 52 54	ため
+R1	REASON Arg1:T11 Arg2:T1	
+R3	REASON Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T8 Arg2:T4	
+R8	RESULT Arg1:T8 Arg2:T5	
+R9	REASON Arg1:T7 Arg2:T5	
+R10	RESULT Arg1:T7 Arg2:T6	
+T12	Argument 110 123	そのままの状態で使い続ける
+T13	Connective 123 124	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T4	
+T14	Argument 142 144	最悪
+T15	Connective 145 147	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T5	
+R2	RESULT Arg1:T11 Arg2:T3	

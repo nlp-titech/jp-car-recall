@@ -1,0 +1,9 @@
+T1	Argument 0 73	側方照射灯付車において、オプション品として設定したオートライトシステム（車外の明るさに応じて前照灯を自動的に点灯、消灯する装置）の電気回路が不適切
+T2	Connective 74 76	ため
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+T5	Argument 77 99	前照灯が点灯していない場合に側方照射灯が点灯
+T6	Connective 100 101	、
+T7	Argument 101 118	道路運送車両の保安基準に適合しない
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

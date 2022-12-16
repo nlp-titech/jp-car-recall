@@ -1,0 +1,17 @@
+T1	Argument 4 54	シリンダーヘッドにおいて、ウオタージャケット加工穴に圧入されているシールプラグの取り付け方法が不適切
+T2	Connective 55 57	ため
+T3	Argument 74 88	シールプラグから冷却水が漏れ
+T4	Connective 88 89	、
+T5	Argument 95 105	オーバーヒートに至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 58 72	そのままの状態で使用を続ける
+T7	Connective 72 73	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 89 91	最悪
+T9	Connective 92 94	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

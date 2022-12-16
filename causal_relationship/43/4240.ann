@@ -1,0 +1,33 @@
+T1	Argument 9 33	駐車ブレーキレバー用コンソールの固定方法が不適切
+T2	Connective 34 36	ため
+T3	Argument 60 70	当該コンソールがずれ
+T4	Connective 70 71	て
+T5	Argument 72 84	駐車ブレーキレバーと干渉
+T6	Connective 92 96	そのため
+T7	Argument 97 124	駐車ブレーキレバーを引き上げるとロック位置の手前で保持
+T8	Argument 144 150	レバーが解除
+T9	Connective 151 152	れ
+T10	Argument 152 159	車両が動き出す
+T11	Connective 126 127	、
+R1	REASON Arg1:T11 Arg2:T7	
+R2	RESULT Arg1:T11 Arg2:T8	
+R3	REASON Arg1:T9 Arg2:T8	
+R4	RESULT Arg1:T9 Arg2:T10	
+T12	Argument 133 141	エンジンの振動等
+T13	Connective 141 144	により
+R5	REASON Arg1:T13 Arg2:T12	
+R6	RESULT Arg1:T13 Arg2:T8	
+T14	Argument 127 129	最悪
+T15	Connective 130 132	場合
+R7	CONDITION Arg1:T15 Arg2:T14	
+R9	RESULT Arg1:T6 Arg2:T7	
+R10	REASON Arg1:T6 Arg2:T5	
+R11	RESULT Arg1:T4 Arg2:T5	
+R12	REASON Arg1:T4 Arg2:T3	
+R13	REASON Arg1:T2 Arg2:T1	
+R14	RESULT Arg1:T2 Arg2:T3	
+T16	Argument 37 59	当該コンソールと運転席仕切りの間に物をはさむ
+T17	Connective 59 60	と
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T3	
+R17	RESULT Arg1:T15 Arg2:T8	

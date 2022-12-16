@@ -1,0 +1,21 @@
+T1	Argument 0 26	運転者席の座席底板部とバッテリ端子部との隙間が少ない
+T2	Argument 29 39	乗車時に座席がたわむ
+T3	Argument 44 56	当該底板部が端子部を押し
+T4	Argument 64 74	バッテリ端子部が破損
+T5	Argument 77 84	エンジンが停止
+T6	Connective 26 28	ため
+T7	Connective 41 44	により
+T8	Connective 56 57	て
+T9	Connective 75 76	て
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T3	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 58 60	最悪
+T11	Connective 61 63	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T4	

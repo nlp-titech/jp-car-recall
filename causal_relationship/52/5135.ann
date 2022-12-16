@@ -1,0 +1,35 @@
+T1	Argument 0 56	シリンダヘッドとインテークマニホールドの間にあるクランクケースブリーザーホース（ブローバイホース）の材質が不適切
+T2	Connective 57 59	ため
+T3	Argument 69 82	当該ホースが膨張および軟化
+T4	Connective 83 84	、
+T5	Argument 94 104	シリンダヘッドと干渉
+T6	Connective 105 106	、
+T7	Argument 106 111	異音が発生
+T8	Argument 134 145	当該ホースに亀裂を生じ
+T9	Connective 145 146	、
+T10	Argument 152 166	ブローバイガスが大気中に放出
+R1	REASON Arg1:T4 Arg2:T3	
+R2	RESULT Arg1:T4 Arg2:T5	
+R3	REASON Arg1:T6 Arg2:T5	
+R4	RESULT Arg1:T6 Arg2:T7	
+R5	RESULT Arg1:T6 Arg2:T8	
+R6	REASON Arg1:T9 Arg2:T8	
+R7	RESULT Arg1:T9 Arg2:T10	
+T11	Argument 146 148	最悪
+T12	Connective 149 151	場合
+R8	CONDITION Arg1:T12 Arg2:T11	
+R9	RESULT Arg1:T12 Arg2:T10	
+T13	Argument 119 133	そのままの状態で使用を続ける
+T14	Connective 133 134	と
+R10	CONDITION Arg1:T14 Arg2:T13	
+R11	RESULT Arg1:T14 Arg2:T8	
+T15	Argument 84 91	エンジンの振動
+T16	Connective 91 94	により
+R12	REASON Arg1:T16 Arg2:T15	
+R13	RESULT Arg1:T16 Arg2:T5	
+R14	REASON Arg1:T2 Arg2:T1	
+R15	RESULT Arg1:T2 Arg2:T3	
+T17	Argument 60 64	使用過程
+T18	Connective 64 68	において
+R16	CONDITION Arg1:T18 Arg2:T17	
+R17	RESULT Arg1:T18 Arg2:T3	

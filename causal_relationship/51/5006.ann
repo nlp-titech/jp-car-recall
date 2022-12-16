@@ -1,0 +1,9 @@
+T1	Argument 4 19	エンドパイプの設計角度が不適切
+T2	Connective 20 22	ため
+T3	Argument 23 34	開口方向が左向きとなっ
+T4	Connective 38 42	そのため
+T5	Argument 43 62	発散するガスが他の交通に悪影響を及ぼす
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

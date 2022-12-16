@@ -1,0 +1,43 @@
+T1	Argument 0 34	原動機のカムシャフト駆動用ヘッドアイドラギヤのブッシュの材質に不適切
+T2	Argument 43 53	ブッシュが早期に摩耗
+T3	Argument 55 75	ブッシュと固定シャフトの間にガタが生じる
+T4	Argument 98 118	シャフトつば部の付け根に過大な応力が発生
+T5	Argument 126 132	つば部が破損
+T6	Argument 134 144	ギヤが周辺部品と干渉
+T7	Argument 146 151	異音が発生
+T8	Argument 156 166	エンジンオイルが漏れ
+T9	Argument 173 185	当該ギヤの噛み合いが外れ
+T10	Argument 187 203	エンジンが停止し再始動不能となる
+T11	Connective 145 146	、
+T12	Connective 133 134	て
+T13	Connective 125 126	、
+T14	Connective 166 167	、
+T15	Connective 185 186	て
+R1	REASON Arg1:T15 Arg2:T9	
+R2	RESULT Arg1:T15 Arg2:T10	
+R3	RESULT Arg1:T12 Arg2:T6	
+R4	REASON Arg1:T12 Arg2:T5	
+R5	REASON Arg1:T14 Arg2:T8	
+R6	RESULT Arg1:T14 Arg2:T9	
+R8	REASON Arg1:T11 Arg2:T6	
+R9	RESULT Arg1:T11 Arg2:T7	
+R10	REASON Arg1:T13 Arg2:T4	
+R11	RESULT Arg1:T13 Arg2:T5	
+T16	Connective 81 85	そのため
+R12	REASON Arg1:T16 Arg2:T3	
+R13	RESULT Arg1:T16 Arg2:T4	
+T17	Connective 54 55	て
+T18	Connective 40 42	ため
+R14	REASON Arg1:T17 Arg2:T2	
+R15	RESULT Arg1:T17 Arg2:T3	
+R16	REASON Arg1:T18 Arg2:T1	
+R17	RESULT Arg1:T18 Arg2:T2	
+T19	Argument 167 169	最悪
+T20	Connective 170 172	場合
+R18	CONDITION Arg1:T20 Arg2:T19	
+R19	RESULT Arg1:T20 Arg2:T9	
+T23	Argument 86 96	そのまま使用を続ける
+T24	Connective 96 97	と
+R22	CONDITION Arg1:T24 Arg2:T23	
+R23	RESULT Arg1:T24 Arg2:T4	
+R7	RESULT Arg1:T12 Arg2:T8	

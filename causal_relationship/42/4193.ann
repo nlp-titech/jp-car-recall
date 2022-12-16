@@ -1,0 +1,11 @@
+T1	Argument 0 55	型式指定を受けた突入防止装置において、構成部品の一部の材質及びステーの取付位置が、型式指定を受けたものと異なっ
+T2	Argument 86 101	記録表の一部に、記載内容の不備
+T3	Connective 108 112	このため
+T4	Argument 113 128	装置の型式指定の要件を満足せず
+T5	Connective 128 129	、
+T6	Argument 129 147	道路運送車両法の保安基準に適合しない
+R1	REASON Arg1:T5 Arg2:T4	
+R2	RESULT Arg1:T5 Arg2:T6	
+R3	RESULT Arg1:T3 Arg2:T4	
+R4	REASON Arg1:T3 Arg2:T1	
+R5	REASON Arg1:T3 Arg2:T2	

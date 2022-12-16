@@ -1,0 +1,33 @@
+T1	Argument 0 31	インタークーラの空気吸入口の材料および取り付け部の形状が不適切
+T2	Connective 32 34	ため
+T5	Argument 35 54	エンジンルームからの熱等による経年劣化
+T6	Connective 54 57	により
+T7	Argument 57 68	取り付け部の強度が不足
+T8	Connective 78 82	そのため
+T9	Argument 83 96	高温環境下での伸縮の繰返し
+T10	Connective 96 99	により
+T11	Argument 99 112	当該取り付け部に亀裂が発生
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T7	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T11	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Connective 113 114	、
+T13	Argument 136 150	走行中に当該空気吸入口が脱落
+T14	Connective 151 152	、
+T15	Argument 152 162	他の交通の妨げとなる
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+T16	Argument 114 128	そのままの状態で使用を続ける
+T17	Connective 128 129	と
+T18	Argument 130 132	最悪
+T19	Connective 133 135	場合
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T13	
+R17	CONDITION Arg1:T19 Arg2:T18	
+R18	RESULT Arg1:T19 Arg2:T13	

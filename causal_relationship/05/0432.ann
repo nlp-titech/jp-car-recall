@@ -1,0 +1,29 @@
+T1	Argument 0 36	自動変速機付車の制動灯用スイッチにおいて、当該スイッチの接点材質が不適切
+T2	Argument 40 46	接点間の放電
+T3	Argument 49 51	発熱
+T4	Argument 65 72	シャフトが変形
+T5	Argument 74 86	スイッチが作動しなくなり
+T6	Argument 87 104	シフトロック機能が解除できなくなる
+T7	Argument 108 119	制動灯が点灯しなくなる
+T8	Argument 120 129	点灯したままになる
+T9	Connective 37 39	ため
+T10	Connective 46 49	により
+T11	Connective 58 59	、
+T12	Connective 73 74	て
+T13	Connective 86 87	、
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T3	
+R3	REASON Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T3	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+R7	REASON Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T5	
+R9	REASON Arg1:T13 Arg2:T5	
+R10	RESULT Arg1:T13 Arg2:T6	
+R11	RESULT Arg1:T13 Arg2:T7	
+R12	RESULT Arg1:T13 Arg2:T8	
+T14	Argument 59 61	最悪
+T15	Connective 62 64	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T4	

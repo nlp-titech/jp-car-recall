@@ -1,0 +1,29 @@
+T1	Argument 0 19	後輪用制動灯スイッチの防水構造が不適切
+T2	Argument 23 35	触媒コンバータからの被熱
+T3	Argument 38 48	スイッチが高温となり
+T4	Argument 49 58	被水して冷やされる
+T5	Argument 59 71	スイッチカバー部から吸水
+T6	Argument 73 78	接点が錆び
+T7	Argument 79 86	導通不良となる
+T8	Argument 97 114	後輪制動時に制動灯が点灯しなくなる
+T9	Connective 92 96	そのため
+T10	Connective 78 79	て
+T11	Connective 72 73	、
+T12	Connective 58 59	と
+T13	Connective 48 49	、
+T14	Connective 35 38	により
+T15	Connective 20 22	ため
+R1	REASON Arg1:T15 Arg2:T1	
+R3	REASON Arg1:T14 Arg2:T2	
+R4	RESULT Arg1:T14 Arg2:T3	
+R5	REASON Arg1:T13 Arg2:T3	
+R7	REASON Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T5	
+R9	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	
+R11	REASON Arg1:T10 Arg2:T6	
+R12	RESULT Arg1:T10 Arg2:T7	
+R13	REASON Arg1:T9 Arg2:T7	
+R14	RESULT Arg1:T9 Arg2:T8	
+R2	RESULT Arg1:T15 Arg2:T3	
+R6	RESULT Arg1:T13 Arg2:T5	

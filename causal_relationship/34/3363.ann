@@ -1,0 +1,23 @@
+T1	Argument 0 60	減速エネルギー回生システムを搭載したガソリン車において、フューエルポンプコントローラーのノイズフィルターの特性のばらつき
+T2	Connective 60 63	により
+T3	Argument 64 84	アイドリングストップからのエンジン再始動
+T5	Argument 87 112	燃料ポンプに流れる電流のノイズ成分を過電流と誤検知
+T6	Connective 113 114	、
+T7	Argument 114 119	故障と判定
+T8	Connective 127 131	そのため
+T9	Argument 132 142	エンジン警告灯が点灯
+T11	Argument 144 155	燃料ポンプの作動が停止
+R1	RESULT Arg1:T8 Arg2:T9	
+R2	RESULT Arg1:T8 Arg2:T11	
+R3	REASON Arg1:T8 Arg2:T7	
+R4	REASON Arg1:T6 Arg2:T5	
+T4	Connective 84 85	時
+R5	RESULT Arg1:T4 Arg2:T5	
+R6	CONDITION Arg1:T4 Arg2:T3	
+R7	RESULT Arg1:T2 Arg2:T5	
+R8	REASON Arg1:T2 Arg2:T1	
+R9	RESULT Arg1:T6 Arg2:T7	
+T14	Argument 157 161	エンスト
+T15	Connective 156 157	て
+R11	REASON Arg1:T15 Arg2:T11	
+R12	RESULT Arg1:T15 Arg2:T14	

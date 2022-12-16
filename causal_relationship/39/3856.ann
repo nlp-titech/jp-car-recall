@@ -1,0 +1,33 @@
+T1	Argument 0 41	アイドリングストップ付き車のスターター機能付き発電機において、電気回路の耐性が不足
+T3	Argument 72 79	内部部品が損傷
+T4	Argument 92 99	回路がショート
+T5	Argument 101 122	アイドリングストップから再始動できなくなり
+T6	Argument 123 125	最悪
+T7	Argument 137 139	発熱
+T8	Argument 141 147	発電機が焼損
+T9	Connective 45 47	ため
+T11	Connective 87 91	そのため
+T12	Connective 100 101	、
+T13	Connective 122 123	、
+T14	Connective 126 128	場合
+T15	Connective 140 141	、
+R1	REASON Arg1:T9 Arg2:T1	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+R7	REASON Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T5	
+R9	REASON Arg1:T13 Arg2:T5	
+R11	CONDITION Arg1:T14 Arg2:T6	
+R12	RESULT Arg1:T14 Arg2:T7	
+R13	REASON Arg1:T15 Arg2:T7	
+R14	RESULT Arg1:T15 Arg2:T8	
+R2	RESULT Arg1:T9 Arg2:T3	
+T18	Connective 71 72	で
+T19	Argument 48 71	アイドリングストップから再始動する際の高い電流
+R15	REASON Arg1:T18 Arg2:T19	
+R16	RESULT Arg1:T18 Arg2:T3	
+R10	RESULT Arg1:T13 Arg2:T7	
+T20	Connective 136 137	で
+T21	Argument 129 136	回路のショート
+R17	REASON Arg1:T20 Arg2:T21	
+R18	RESULT Arg1:T20 Arg2:T7	

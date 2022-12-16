@@ -1,0 +1,33 @@
+T1	Argument 0 51	ベルト式無段変速機（ＣＶＴ）の金属ベルトを構成している駒（エレメント）のプレス加工後の切り離しが不適切
+T2	Connective 52 54	ため
+T3	Argument 55 68	エレメントのボディ部を変形
+T4	Connective 77 81	そのため
+T6	Connective 100 101	し
+T7	Argument 101 106	亀裂を生じ
+T5	Argument 82 100	走行時の負荷がエレメント根元部に集中
+T8	Argument 107 109	最悪
+T9	Connective 110 112	場合
+T10	Argument 113 115	破断
+T11	Connective 116 117	て
+T12	Argument 117 138	破断片が金属ベルトとプーリーの間に噛み込み
+T13	Connective 138 139	、
+T14	Argument 139 147	金属ベルトが破断
+T15	Connective 148 149	て
+T16	Argument 149 156	走行不能となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T10	
+T17	Connective 106 107	、
+R9	REASON Arg1:T17 Arg2:T7	
+R10	RESULT Arg1:T17 Arg2:T10	
+R11	REASON Arg1:T11 Arg2:T10	
+R12	RESULT Arg1:T11 Arg2:T12	
+R13	REASON Arg1:T13 Arg2:T12	
+R14	RESULT Arg1:T13 Arg2:T14	
+R15	REASON Arg1:T15 Arg2:T14	
+R16	RESULT Arg1:T15 Arg2:T16	

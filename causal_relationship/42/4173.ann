@@ -1,0 +1,19 @@
+T1	Argument 0 47	燃料電池制御コンピュータ（ＦＣ‐ＥＣＵ）において、燃料電池スタックの故障検知プログラムが不適切
+T2	Connective 48 50	ため
+T3	Argument 51 94	高電圧バッテリが満充電時の燃料電池スタックのセル電圧低下を燃料電池スタック劣化と誤検知
+T4	Connective 102 106	そのため
+T5	Argument 107 118	警告灯、警告表示が点灯
+T6	Argument 120 131	燃料電池システムが停止
+T7	Argument 140 147	走行不能となる
+T8	Connective 132 133	て
+R1	REASON Arg1:T8 Arg2:T6	
+R2	RESULT Arg1:T8 Arg2:T7	
+T9	Argument 134 136	最悪
+T10	Connective 137 139	場合
+R3	CONDITION Arg1:T10 Arg2:T9	
+R4	RESULT Arg1:T10 Arg2:T7	
+R5	RESULT Arg1:T4 Arg2:T5	
+R7	REASON Arg1:T4 Arg2:T3	
+R8	REASON Arg1:T2 Arg2:T1	
+R9	RESULT Arg1:T2 Arg2:T3	
+R6	RESULT Arg1:T4 Arg2:T6	

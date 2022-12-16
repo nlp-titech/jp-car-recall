@@ -1,0 +1,19 @@
+T1	Argument 12 27	コイルスプリングの塗装が不十分
+T2	Connective 28 30	ため
+T3	Argument 31 45	コイルスプリングの表面が腐食
+T4	Connective 46 47	、
+T5	Argument 63 74	コイルスプリングが折損
+T6	Connective 75 76	て
+T7	Argument 76 85	走行安定性を損なう
+T8	Argument 89 107	折損したスプリングによりタイヤが損傷
+R1	RESULT Arg1:T6 Arg2:T7	
+R2	RESULT Arg1:T6 Arg2:T8	
+R3	REASON Arg1:T2 Arg2:T1	
+R4	RESULT Arg1:T2 Arg2:T3	
+R5	REASON Arg1:T4 Arg2:T3	
+R6	RESULT Arg1:T4 Arg2:T5	
+R7	REASON Arg1:T6 Arg2:T5	
+T9	Argument 47 61	そのままの状態で使用を続ける
+T10	Connective 61 62	と
+R8	CONDITION Arg1:T10 Arg2:T9	
+R9	RESULT Arg1:T10 Arg2:T5	

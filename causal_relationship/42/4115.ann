@@ -1,0 +1,29 @@
+T1	Argument 25 63	Ｕボルト（以下、「縦根太固定用Ｕボルト」という。）において、取付位置が不適切
+T2	Connective 64 66	ため
+T3	Argument 94 122	Ｕボルト（以下、「リーフ固定用Ｕボルト」という。）が干渉
+T4	Connective 130 134	そのため
+T5	Argument 151 175	縦根太固定用Ｕボルトとリーフ固定用Ｕボルトが破損
+T6	Connective 176 177	、
+T7	Argument 177 188	リーフスプリングがずれ
+T8	Connective 188 189	て
+T9	Argument 196 207	走行安定性が損なわれる
+R1	REASON Arg1:T8 Arg2:T7	
+R2	RESULT Arg1:T8 Arg2:T9	
+R3	REASON Arg1:T6 Arg2:T5	
+R4	RESULT Arg1:T6 Arg2:T7	
+R5	REASON Arg1:T4 Arg2:T3	
+R6	RESULT Arg1:T4 Arg2:T5	
+R7	REASON Arg1:T2 Arg2:T1	
+R8	RESULT Arg1:T2 Arg2:T3	
+T10	Argument 67 71	悪路走行
+T11	Connective 71 73	時に
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	
+T12	Argument 135 149	そのままの状態で使用を続ける
+T13	Connective 149 150	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T5	
+T14	Argument 190 192	最悪
+T15	Connective 193 195	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T9	

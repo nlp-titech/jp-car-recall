@@ -1,0 +1,43 @@
+T2	Connective 44 46	ため
+T3	Argument 47 70	オートテンショナーのベアリングが経年変化で摩耗
+T4	Connective 70 71	し
+T5	Argument 71 78	摺動抵抗が増大
+T6	Argument 97 108	フランジ部に亀裂が発生
+R1	RESULT Arg1:T2 Arg2:T6	
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+T7	Connective 82 83	で
+R4	CONDITION Arg1:T7 Arg2:T5	
+R5	RESULT Arg1:T7 Arg2:T6	
+T8	Argument 83 93	高負荷運転を繰り返し
+T9	Connective 94 96	場合
+R6	CONDITION Arg1:T9 Arg2:T8	
+R7	RESULT Arg1:T9 Arg2:T6	
+T10	Connective 116 120	そのため
+T11	Argument 132 140	フランジ部が破損
+T12	Connective 141 142	、
+T13	Argument 148 156	当該ベルトが外れ
+T14	Connective 156 157	、
+T15	Argument 157 163	警告灯が点灯
+T16	Argument 165 177	ステアリング操舵力が増大
+T17	Argument 184 192	バッテリー上がり
+R8	RESULT Arg1:T14 Arg2:T15	
+R9	RESULT Arg1:T14 Arg2:T16	
+R10	RESULT Arg1:T14 Arg2:T17	
+R11	REASON Arg1:T14 Arg2:T13	
+R12	REASON Arg1:T12 Arg2:T11	
+R13	RESULT Arg1:T12 Arg2:T13	
+R14	REASON Arg1:T10 Arg2:T6	
+R15	RESULT Arg1:T10 Arg2:T11	
+T18	Argument 142 144	最悪
+T19	Connective 145 147	場合
+R16	CONDITION Arg1:T19 Arg2:T18	
+R17	RESULT Arg1:T19 Arg2:T13	
+T20	Argument 121 131	そのまま使用を続ける
+T21	Connective 131 132	と
+R18	CONDITION Arg1:T21 Arg2:T20	
+R19	RESULT Arg1:T21 Arg2:T11	
+T22	Argument 193 200	オーバーヒート
+R21	RESULT Arg1:T14 Arg2:T22	
+T1	Argument 5 43	補機駆動ベルト用オートテンショナーにおいて、取り付けフランジ部の形状が不適切
+R20	REASON Arg1:T2 Arg2:T1	

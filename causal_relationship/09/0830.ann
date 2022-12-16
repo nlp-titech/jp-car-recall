@@ -1,0 +1,29 @@
+T1	Argument 0 19	マフラー取付けブラケットの形状が不適切
+T2	Connective 20 22	ため
+T3	Argument 23 44	当該ブラケットがエンジンの燃料パイプと接触
+T4	Connective 54 58	そのため
+T5	Argument 59 69	そのまま使用を続ける
+T6	Connective 69 70	と
+T7	Argument 80 86	パイプが損傷
+T8	Argument 71 77	車両の振動等
+T9	Connective 77 80	により
+T10	Connective 87 88	て
+T11	Argument 89 91	最悪
+T12	Connective 92 94	場合
+T13	Argument 95 100	燃料が洩れ
+T14	Connective 100 101	て
+T15	Argument 102 107	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T7	
+R9	CONDITION Arg1:T12 Arg2:T11	
+R10	RESULT Arg1:T12 Arg2:T13	
+R11	REASON Arg1:T10 Arg2:T7	
+R12	RESULT Arg1:T10 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	

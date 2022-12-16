@@ -1,0 +1,23 @@
+T1	Argument 0 33	ブレーキマスターバックにおいて、内部部品のダイヤフラムの強度が不足
+T2	Connective 43 47	そのため
+T3	Argument 48 58	そのまま使用を続ける
+T4	Connective 58 59	と
+T5	Argument 59 68	ダイヤフラムが変形
+T6	Connective 69 70	、
+T7	Argument 83 104	ブレーキペダルが規定の位置まで戻らなくなり
+T8	Connective 104 105	、
+T9	Argument 105 114	ブレーキの引き摺り
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T12	Argument 115 135	ブレーキランプが点灯したままの状態となる
+R9	RESULT Arg1:T8 Arg2:T12	
+T10	Argument 70 81	ブレーキペダルを放した
+T11	Connective 81 82	際
+R10	CONDITION Arg1:T11 Arg2:T10	
+R11	RESULT Arg1:T11 Arg2:T7	

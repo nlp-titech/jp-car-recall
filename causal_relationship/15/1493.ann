@@ -1,0 +1,29 @@
+T1	Argument 0 30	ステアリングシリンダーの潤滑用グリス注入口の取付位置が不適切
+T2	Connective 31 33	ため
+T3	Argument 34 56	プロペラシャフトと当該注入口の隙間が狭くなり
+T4	Connective 56 57	、
+T5	Argument 57 65	雪が付着しやすく
+T6	Connective 65 66	、
+T7	Argument 66 74	付着した雪が氷結
+T8	Connective 82 86	そのため
+T11	Argument 87 97	作業時等に車体を屈折
+T12	Connective 100 101	際
+T13	Argument 106 120	雪がプロペラシャフトを曲げる
+T14	Argument 126 128	最悪
+T15	Connective 129 131	場合
+T16	Connective 125 126	、
+T17	Argument 132 143	プロペラシャフトが折損
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R10	CONDITION Arg1:T12 Arg2:T11	
+R11	RESULT Arg1:T8 Arg2:T13	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T16 Arg2:T13	
+R14	RESULT Arg1:T16 Arg2:T17	
+R15	CONDITION Arg1:T15 Arg2:T14	
+R16	RESULT Arg1:T15 Arg2:T17	

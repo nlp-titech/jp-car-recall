@@ -1,0 +1,25 @@
+T2	Connective 58 59	、
+T3	Argument 75 90	当該車軸の端部下面に亀裂が入り
+T4	Connective 41 43	ため
+T8	Argument 44 49	強度の不足
+T9	Argument 97 103	前車軸が折損
+T10	Argument 105 113	走行できなくなる
+T11	Connective 104 105	て
+R1	REASON Arg1:T4 Arg2:T6	
+R3	RESULT Arg1:T4 Arg2:T8	
+R4	REASON Arg1:T2 Arg2:T8	
+R2	RESULT Arg1:T2 Arg2:T3	
+T12	Connective 90 91	、
+R5	REASON Arg1:T12 Arg2:T3	
+R6	RESULT Arg1:T12 Arg2:T9	
+R7	REASON Arg1:T11 Arg2:T9	
+R8	RESULT Arg1:T11 Arg2:T10	
+T5	Argument 59 73	このままの状態で使用を続ける
+T13	Connective 73 74	と
+R9	CONDITION Arg1:T13 Arg2:T5	
+R10	RESULT Arg1:T13 Arg2:T3	
+T14	Argument 91 93	最悪
+T15	Connective 94 96	場合
+R11	CONDITION Arg1:T15 Arg2:T14	
+R12	RESULT Arg1:T15 Arg2:T9	
+T6	Argument 0 39	前車軸を製造する過程において、一部の鋼材内部にヘアクラック（微細なひび）が発生

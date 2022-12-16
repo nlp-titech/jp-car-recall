@@ -1,0 +1,25 @@
+T1	Argument 1 48	圧縮天然ガス車（ＣＮＧ車）の燃料装置において、燃料タンク固定金具（バンド）の溶接部の強度が不足
+T2	Argument 71 81	当該溶接部分が 破損
+T3	Argument 83 92	燃料タンクがずれる
+T4	Argument 103 111	燃料パイプが損傷
+T5	Argument 114 120	燃料が漏れる
+T6	Connective 52 54	ため
+T7	Connective 82 83	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+T8	Connective 94 96	から
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+T9	Connective 112 113	て
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 55 69	そのままの状態で使用を続ける
+T11	Connective 69 70	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T2	
+T12	Argument 97 99	最悪
+T13	Connective 100 102	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T4	

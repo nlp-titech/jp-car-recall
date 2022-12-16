@@ -1,0 +1,21 @@
+T1	Argument 0 31	路線バスのグライドスライド扉において、扉シャフトの回転軸が偏心
+T2	Connective 41 45	そのため
+T3	Argument 46 63	そのままの状態で扉の開閉を繰り返す
+T4	Connective 63 64	と
+T5	Argument 65 90	扉アームのボールジョイント内部の潤滑が不十分となり
+T6	Connective 90 91	、
+T7	Argument 91 103	ボールジョイントが焼付き
+T8	Connective 103 104	、
+T9	Argument 110 121	扉の開閉ができなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 104 106	最悪
+T11	Connective 107 109	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T9	

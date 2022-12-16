@@ -1,0 +1,14 @@
+T1	Argument 12 26	燃料計量器が傾斜して取り付け
+T2	Connective 34 35	、
+T3	Argument 35 79	当該計量器のフロート先端がタンク底部と接触し最下位（燃料計が０を示す位置）まで下がらない
+T4	Connective 79 81	ため
+T5	Argument 82 110	タンク内の燃料がない状態でも燃料計は残量があるように表示
+T6	Argument 121 162	燃料の残量から走行可能距離等を演算するＩＣ（集積回路）のプログラミングが一部不適切
+T7	Connective 163 165	ため
+T8	Argument 165 192	、デジタルで表示される走行可能距離が実際よりも多く表示
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T8	

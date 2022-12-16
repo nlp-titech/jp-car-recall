@@ -1,0 +1,19 @@
+T1	Argument 13 38	スピードメーターモジュールの制御プログラムが不適切
+T2	Connective 39 41	ため
+T3	Argument 42 64	イグニションキーＯＦＦ後すぐにエンジンを始動
+T4	Connective 66 67	際
+T5	Argument 68 83	当該モジュールの電源が瞬断され
+T6	Connective 83 84	、
+R1	REASON Arg1:T2 Arg2:T1	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T7	Argument 84 97	制御機能が再起動状態になる
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T9	Connective 103 107	そのため
+T8	Argument 108 144	制御機能が正常に戻るまでメンテナンス情報等がメーターパネルに表示されない
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+T10	Argument 149 166	当該情報のデータが消えた状態になる
+R9	RESULT Arg1:T9 Arg2:T10	
+R2	RESULT Arg1:T2 Arg2:T5	

@@ -1,0 +1,21 @@
+T1	Argument 0 21	運転席側のサンバイザ取付金具の溶接が不適切
+T2	Connective 22 24	ため
+T3	Argument 25 33	溶接部がはがれる
+T4	Connective 39 43	そのため
+T5	Argument 56 61	車両振動等
+T6	Connective 61 64	により
+T7	Argument 64 75	サンバイザが垂れ下がり
+T8	Connective 75 76	、
+T9	Argument 76 86	運転者の視界を妨げる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 44 54	そのまま使用を続ける
+T11	Connective 54 55	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T7	

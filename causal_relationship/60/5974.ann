@@ -1,0 +1,9 @@
+T1	Argument 0 33	バンクアングルセンサーにより転倒判定を行うＥＣＵプログラムが不適切
+T2	Connective 34 36	ため
+T3	Argument 37 49	走行中に転倒したと誤判定
+T4	Connective 50 51	、
+T5	Argument 51 58	エンジンが停止
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

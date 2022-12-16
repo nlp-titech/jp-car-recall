@@ -1,0 +1,21 @@
+T1	Argument 22 42	後退灯および後退ブザーの電気回路が不適切
+T3	Argument 130 145	変速機の後退リレーに電流が流れ
+T4	Argument 146 151	車両が後退
+T5	Connective 43 45	ため
+T6	Connective 145 146	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	REASON Arg1:T6 Arg2:T3	
+R3	RESULT Arg1:T6 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T3	
+T9	Connective 128 129	と
+R8	RESULT Arg1:T9 Arg2:T3	
+T2	Argument 46 65	変速機の前後進レバーが中立の位置にある
+T7	Connective 65 67	場合
+R5	CONDITION Arg1:T7 Arg2:T2	
+R6	RESULT Arg1:T7 Arg2:T3	
+T10	Argument 113 128	方向指示器スイッチを作動させる
+T8	Argument 69 111	方向指示器と後退灯および後退ブザーの電気回路を兼用しているヒューズが切れた状態のまま
+T11	Connective 111 112	で
+R7	CONDITION Arg1:T11 Arg2:T8	
+R9	RESULT Arg1:T11 Arg2:T3	
+R10	CONDITION Arg1:T9 Arg2:T10	

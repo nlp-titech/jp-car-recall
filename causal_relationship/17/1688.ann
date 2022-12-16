@@ -1,0 +1,21 @@
+T1	Argument 0 14	燃料タンクの成形行程が不適切
+T2	Connective 15 17	ため
+T3	Argument 18 33	燃料ポンプ取付け部の形状が悪い
+T4	Connective 39 43	そのため
+T5	Argument 60 80	燃料ポンプを固定するナットの締付力が低下
+T6	Connective 81 82	、
+T7	Argument 89 95	燃料が漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T11	Argument 44 58	そのままの状態で使用を続ける
+T12	Connective 58 59	と
+R7	CONDITION Arg1:T12 Arg2:T11	
+R8	RESULT Arg1:T12 Arg2:T5	
+T8	Argument 82 87	燃料満タン
+T9	Connective 87 88	時
+R9	CONDITION Arg1:T9 Arg2:T8	
+R10	RESULT Arg1:T9 Arg2:T7	

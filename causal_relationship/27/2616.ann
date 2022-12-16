@@ -1,0 +1,27 @@
+T1	Argument 0 31	トランスミッションシフトレバー内部構成品のダイオードに製造不良
+T2	Connective 37 39	ため
+T3	Argument 40 86	当該シフトレバー操作時に電気信号がトランスミッション電子コントロールモジュールへ出力されない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 92 96	そのため
+T5	Argument 97 108	変速信号が出力されない
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T11	
+T7	Argument 121 135	前後進切替信号が出力されない
+T8	Connective 135 137	場合
+T9	Argument 150 163	ニュートラルにシフトされる
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Connective 108 110	場合
+T11	Argument 111 120	変速ができなくなり
+R5	CONDITION Arg1:T10 Arg2:T5	
+R9	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 138 147	フェールセーフ機能
+T13	Connective 147 150	により
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T9	
+T14	Connective 163 165	ため
+T15	Argument 165 172	走行不能となる
+R13	REASON Arg1:T14 Arg2:T9	
+R14	RESULT Arg1:T14 Arg2:T15	
+R6	RESULT Arg1:T4 Arg2:T9	

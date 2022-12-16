@@ -1,0 +1,9 @@
+T1	Argument 6 30	取付ボルトにおいて、補修部品カタログの記載が誤っ
+T2	Connective 33 35	ため
+T3	Argument 36 48	異なるボルトで取付けられ
+T4	Connective 57 61	そのため
+T5	Argument 62 83	保安基準第２２条の３の基準に適合しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

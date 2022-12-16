@@ -1,0 +1,23 @@
+T1	Argument 31 41	キャブの構造が不適切
+T2	Connective 42 44	ため
+T3	Argument 45 76	梯子等の取付け穴から導電性の液体（塩水や洗剤）がキャブ内に浸入
+T4	Connective 77 78	、
+T5	Argument 78 138	運転席シートベルトリトラクタのテンションリデューサー（シートベルト装着時の圧迫感を緩和する装置）の配線用コネクタにかかる
+T6	Argument 148 163	液体の付着と乾燥が繰り返される
+T7	Connective 163 164	と
+T8	Argument 165 187	コネクタの端子の腐食とともに樹脂の炭化が進行
+T9	Connective 188 189	、
+T10	Argument 189 191	最悪
+T11	Connective 192 194	場合
+T12	Argument 195 211	トラッキング現象により火災に至る
+R1	RESULT Arg1:T11 Arg2:T12	
+R2	CONDITION Arg1:T11 Arg2:T10	
+R3	RESULT Arg1:T9 Arg2:T12	
+R4	REASON Arg1:T9 Arg2:T8	
+R5	RESULT Arg1:T7 Arg2:T8	
+R6	CONDITION Arg1:T7 Arg2:T6	
+R7	RESULT Arg1:T4 Arg2:T6	
+R8	RESULT Arg1:T4 Arg2:T5	
+R9	REASON Arg1:T4 Arg2:T3	
+R10	RESULT Arg1:T2 Arg2:T3	
+R11	REASON Arg1:T2 Arg2:T1	

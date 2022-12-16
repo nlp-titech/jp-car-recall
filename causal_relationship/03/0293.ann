@@ -1,0 +1,21 @@
+T1	Argument 0 31	原動機の燃料供給装置において、製造工程における作業に適切でない
+T2	Argument 39 69	シーリングワッシャーと燃料パイプの間に印付け用インクが挟まり
+T4	Argument 83 97	当該ワッシャーが部分的に窪み
+T5	Argument 104 118	燃料パイプ部より燃料が漏れる
+T6	Connective 36 38	ため
+T7	Connective 69 70	、
+T8	Connective 82 83	け
+T9	Connective 97 98	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R5	REASON Arg1:T8 Arg2:T13	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 98 100	最悪
+T11	Connective 101 103	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	
+T13	Argument 70 83	このインクが燃料により溶け
+R4	RESULT Arg1:T7 Arg2:T13	

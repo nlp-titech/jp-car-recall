@@ -1,0 +1,17 @@
+T1	Argument 0 41	運転者席のエアバッグ装置において、コントロールユニット内部の衝撃波センサに半田不良
+T2	Connective 47 49	ため
+T3	Argument 50 61	半田部にクラックが入り
+T4	Connective 60 61	り
+T5	Argument 61 72	エアバッグ警告灯が点灯
+T7	Argument 93 125	ホーンを非常に強く叩く又は深いくぼみを通過するなどの衝撃が加わっ
+T8	Connective 126 128	場合
+T9	Argument 130 138	エアバッグが展開
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T6	Connective 80 84	そのため
+R9	RESULT Arg1:T6 Arg2:T9	
+R5	REASON Arg1:T6 Arg2:T3	

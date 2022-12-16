@@ -1,0 +1,13 @@
+T1	Argument 0 11	燃料ホースに強度が不足
+T2	Connective 20 22	ため
+T3	Argument 23 38	当該ホースが燃料圧力により変形
+T4	Connective 39 40	、
+T5	Argument 46 59	ホース端部より燃料が漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 40 42	最悪
+T7	Connective 43 45	場合
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T5	

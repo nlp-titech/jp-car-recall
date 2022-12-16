@@ -1,0 +1,27 @@
+T1	Argument 2 33	走行装置の前輪ハブベアリングシールの組付け位置にばらつきがある
+T2	Argument 36 52	走行時にベアリングへ荷重がかかっ
+T3	Argument 56 64	シール性能が低下
+T4	Argument 66 78	当該ベアリングに水が浸入
+T5	Argument 81 86	異音が発生
+T6	Argument 99 109	そのまま使用を続ける
+T7	Argument 111 121	当該ベアリングが損傷
+T8	Argument 123 134	走行安定性が損なわれる
+T9	Connective 33 35	ため
+T10	Connective 53 55	場合
+T11	Connective 65 66	、
+T12	Connective 79 80	て
+T14	Connective 109 110	と
+T15	Connective 122 123	、
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T3	
+R3	CONDITION Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T3	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+R7	REASON Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T5	
+R11	CONDITION Arg1:T14 Arg2:T6	
+R12	RESULT Arg1:T14 Arg2:T7	
+R13	REASON Arg1:T15 Arg2:T7	
+R14	RESULT Arg1:T15 Arg2:T8	
+R9	RESULT Arg1:T12 Arg2:T7	

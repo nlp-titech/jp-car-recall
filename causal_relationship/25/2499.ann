@@ -1,0 +1,25 @@
+T1	Argument 0 56	２名用キャブが装着されている車両において、駐車ブレーキレバーのスイッチ配線とリヤデフロスタホースとのすき間が狭い
+T2	Connective 56 58	ため
+T3	Argument 59 81	当該スイッチ配線がリヤデフロスタホースと干渉
+T4	Connective 89 93	そのため
+T5	Argument 119 128	スイッチ配線が損傷
+T6	Connective 129 130	、
+T7	Argument 136 143	走行不能となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 94 108	そのままの状態で使用を続ける
+T9	Connective 108 109	と
+T10	Argument 110 116	走行中の振動
+T11	Connective 116 119	により
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	
+R9	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	
+T12	Argument 130 132	最悪
+T13	Connective 133 135	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T7	

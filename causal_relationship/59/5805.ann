@@ -1,0 +1,28 @@
+T1	Argument 0 36	リアストップランプスイッチにおいて、排気管からの熱に対する耐久性が不十分
+T2	Connective 37 39	ため
+T3	Argument 58 60	変形
+T4	Connective 61 62	、
+T5	Argument 62 73	ブレーキフルードが漏れ
+T6	Connective 73 74	、
+T7	Argument 74 87	リアブレーキの制動力の低下
+T8	Argument 89 103	ブレーキランプの不点灯が発生
+T9	Connective 111 115	そのため
+T10	Argument 116 130	そのままの状態で使用を続ける
+T11	Connective 130 131	と
+T12	Argument 132 145	リアブレーキが効かなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T8	
+R8	REASON Arg1:T9 Arg2:T8	
+R9	REASON Arg1:T9 Arg2:T7	
+R10	RESULT Arg1:T9 Arg2:T12	
+R11	CONDITION Arg1:T11 Arg2:T10	
+R12	RESULT Arg1:T11 Arg2:T12	
+T13	Argument 40 57	当該装置の樹脂部分が熱の影響を受け
+T14	Connective 57 58	て
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T3	

@@ -1,0 +1,29 @@
+T1	Argument 38 50	方向指示器用回路が不適切
+T2	Connective 51 53	ため
+T3	Argument 54 68	ヘッドランプに帯電した静電気
+T4	Connective 68 71	により
+T5	Argument 71 85	方向指示器制御用の素子が破損
+T6	Connective 86 87	、
+T7	Argument 87 102	方向指示器が点灯したままになる
+T8	Connective 108 112	そのため
+T9	Argument 113 124	そのまま点灯させておく
+T10	Connective 124 125	と
+T11	Argument 125 136	当該素子が発熱して焼損
+T12	Connective 137 138	、
+T13	Argument 138 140	最悪
+T14	Connective 141 143	場合
+T15	Argument 144 149	火災に至る
+R1	RESULT Arg1:T14 Arg2:T15	
+R2	CONDITION Arg1:T14 Arg2:T13	
+R3	RESULT Arg1:T12 Arg2:T15	
+R4	REASON Arg1:T12 Arg2:T11	
+R5	RESULT Arg1:T10 Arg2:T11	
+R6	CONDITION Arg1:T10 Arg2:T9	
+R7	RESULT Arg1:T8 Arg2:T11	
+R8	REASON Arg1:T8 Arg2:T7	
+R9	RESULT Arg1:T6 Arg2:T7	
+R10	REASON Arg1:T6 Arg2:T5	
+R11	RESULT Arg1:T4 Arg2:T5	
+R12	REASON Arg1:T4 Arg2:T3	
+R13	RESULT Arg1:T2 Arg2:T5	
+R14	REASON Arg1:T2 Arg2:T1	

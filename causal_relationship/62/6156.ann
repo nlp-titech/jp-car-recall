@@ -1,0 +1,17 @@
+T1	Argument 0 29	フロントシートバックレストの角度調整機構の調整作業が不適切
+T2	Connective 30 32	ため
+T3	Argument 33 56	リクライニング角度調整用ギヤが十分に噛み合わず
+T4	Connective 56 57	、
+T5	Argument 57 75	リクライニング位置を固定する力が不足
+T6	Connective 85 89	そのため
+T7	Argument 90 93	衝撃等
+T8	Connective 93 96	により
+T9	Argument 96 116	フロントシートバックレストが後方へ倒れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	

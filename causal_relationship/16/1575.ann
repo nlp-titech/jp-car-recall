@@ -1,0 +1,29 @@
+T1	Argument 0 28	フューエルポンプリレーケースのシール部の製造方法が不適切
+T2	Argument 32 42	シール剤が配線に付着
+T3	Argument 44 46	固着
+T4	Argument 71 79	リレー内の熱変化
+T5	Argument 82 89	内部配線が断線
+T6	Argument 90 98	燃料ポンプが停止
+T7	Argument 100 118	エンジンが止まり、再始動できなくなる
+T8	Connective 99 100	、
+R1	REASON Arg1:T8 Arg2:T6	
+R2	RESULT Arg1:T8 Arg2:T7	
+T9	Connective 89 90	、
+R3	REASON Arg1:T9 Arg2:T5	
+R4	RESULT Arg1:T9 Arg2:T6	
+T10	Connective 54 58	そのため
+R5	RESULT Arg1:T10 Arg2:T5	
+T11	Connective 79 82	により
+R6	REASON Arg1:T11 Arg2:T4	
+R7	RESULT Arg1:T11 Arg2:T5	
+T12	Connective 43 44	、
+R8	REASON Arg1:T12 Arg2:T2	
+R9	RESULT Arg1:T12 Arg2:T3	
+R10	REASON Arg1:T10 Arg2:T3	
+T13	Connective 29 31	ため
+R11	REASON Arg1:T13 Arg2:T1	
+R12	RESULT Arg1:T13 Arg2:T2	
+T14	Argument 59 69	そのまま使用を続ける
+T15	Connective 69 70	と
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T5	

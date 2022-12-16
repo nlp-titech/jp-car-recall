@@ -1,0 +1,17 @@
+T1	Argument 0 71	前席の座席ベルトのベルトテンショナ（衝突時にベルトを瞬時に引き込んで乗員をシートに拘束する装置）において、金属性容器のねじ山の加工方法が不適切
+T2	Connective 77 79	ため
+T3	Argument 80 97	ベルトテンショナが作動した際の圧力
+T4	Connective 97 100	により
+T5	Argument 100 120	当該容器キャップが内張りを破って飛び出す
+T6	Connective 125 126	、
+T7	Argument 126 128	最悪
+T8	Connective 129 131	場合
+T9	Argument 132 146	外れたキャップが乗員に当たる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	RESULT Arg1:T6 Arg2:T9	

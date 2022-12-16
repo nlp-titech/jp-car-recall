@@ -1,0 +1,17 @@
+T1	Argument 6 21	燃料パイプ及び継手部に加工不良
+T2	Connective 27 28	、
+T3	Argument 43 48	燃料が漏れ
+T4	Connective 48 49	、
+T5	Argument 55 60	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 28 42	そのままの状態で使用を続ける
+T7	Connective 42 43	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 49 51	最悪
+T9	Connective 52 54	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

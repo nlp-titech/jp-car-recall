@@ -1,0 +1,29 @@
+T1	Argument 0 37	バッテリーリレーとスタータモータ間の原動機始動用ケーブルの配索方法が不適切
+T2	Argument 41 56	副変速機固定用ブラケットと接触
+T3	Argument 74 80	原動機の振動
+T4	Argument 85 97	当該ケーブルの被覆が破損
+T5	Argument 109 118	再始動できなくなる
+T6	Connective 38 40	ため
+T7	Connective 57 58	、
+T8	Connective 81 84	により
+T9	Connective 102 103	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T4	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Connective 98 99	て
+T11	Argument 99 101	短絡
+R9	REASON Arg1:T10 Arg2:T4	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 58 72	そのままの状態で使用を続ける
+T13	Connective 72 73	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T4	
+T14	Argument 103 105	最悪
+T15	Connective 106 108	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T5	

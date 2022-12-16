@@ -1,0 +1,35 @@
+T1	Argument 0 18	ブローバイガス還元装置の構造が不適切
+T2	Connective 19 21	ため
+T3	Argument 30 60	ブローバイガス中の水分がジョイント（ブリーザ）の絞り部で凍結
+T4	Argument 62 67	経路を閉鎖
+T5	Connective 61 62	て
+T6	Connective 68 69	、
+T7	Argument 69 87	シリンダーヘッドカバー内の圧力が上昇
+T8	Connective 95 99	そのため
+T9	Argument 100 125	ターボチャージャの潤滑油が当該圧力により押し出され
+T10	Connective 125 126	て
+T11	Argument 126 139	排気経路及び吸気経路に流入
+T12	Connective 140 141	、
+T13	Argument 149 160	排気管からオイルが噴出
+T14	Argument 164 180	排出ガス値が基準を満足しなくなる
+R1	RESULT Arg1:T12 Arg2:T13	
+R2	RESULT Arg1:T12 Arg2:T14	
+T15	Argument 141 147	エンジン始動
+T16	Connective 147 149	時に
+R3	CONDITION Arg1:T16 Arg2:T15	
+R4	RESULT Arg1:T16 Arg2:T13	
+R5	REASON Arg1:T12 Arg2:T11	
+R6	RESULT Arg1:T10 Arg2:T11	
+R7	REASON Arg1:T10 Arg2:T9	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T8 Arg2:T7	
+R10	REASON Arg1:T2 Arg2:T1	
+R11	RESULT Arg1:T2 Arg2:T3	
+R12	REASON Arg1:T5 Arg2:T3	
+R13	RESULT Arg1:T5 Arg2:T4	
+R14	REASON Arg1:T6 Arg2:T4	
+R15	RESULT Arg1:T6 Arg2:T7	
+T17	Argument 22 28	低温での運転
+T18	Connective 28 30	時に
+R16	CONDITION Arg1:T18 Arg2:T17	
+R17	RESULT Arg1:T18 Arg2:T3	

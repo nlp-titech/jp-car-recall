@@ -1,0 +1,27 @@
+T1	Argument 0 19	制動灯用スイッチの組み付け方法が不適切
+T2	Connective 20 22	ため
+T3	Argument 23 39	制動灯用スイッチの取付け部が損傷
+T4	Connective 40 41	、
+T5	Argument 41 65	スイッチ内部の接点を可動させるロッドの位置がずれ
+T7	Connective 74 78	そのため
+T8	Argument 91 99	当該ロッドが摩耗
+T9	Connective 100 101	て
+T10	Argument 101 109	制動灯が常時点灯
+T11	Argument 115 125	接点上に摩耗粉が堆積
+T12	Connective 126 127	て
+T13	Argument 127 138	制動灯が点灯しなくなる
+R1	RESULT Arg1:T9 Arg2:T11	
+R2	REASON Arg1:T12 Arg2:T11	
+R3	RESULT Arg1:T12 Arg2:T13	
+R4	RESULT Arg1:T9 Arg2:T10	
+R5	REASON Arg1:T9 Arg2:T8	
+R6	REASON Arg1:T2 Arg2:T1	
+R7	RESULT Arg1:T2 Arg2:T3	
+R8	REASON Arg1:T4 Arg2:T3	
+R9	RESULT Arg1:T4 Arg2:T5	
+R10	REASON Arg1:T7 Arg2:T5	
+R11	RESULT Arg1:T7 Arg2:T8	
+T6	Argument 79 89	そのまま使用を続ける
+T14	Connective 89 90	と
+R12	CONDITION Arg1:T14 Arg2:T6	
+R13	RESULT Arg1:T14 Arg2:T8	

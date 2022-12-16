@@ -1,0 +1,21 @@
+T1	Argument 0 19	ステアリングシャフトの組立工程が不適切
+T2	Argument 23 60	シャフトのセレーション部と油圧ステアリングポンプシャフトの連結部に嵌合不良
+T3	Argument 84 92	当該連結部が外れ
+T4	Argument 99 113	ステアリング操作が不能となる
+T5	Connective 92 93	、
+T6	Connective 67 71	そのため
+T7	Connective 20 22	ため
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T5 Arg2:T3	
+R6	RESULT Arg1:T5 Arg2:T4	
+T8	Argument 72 82	そのまま使用を続ける
+T9	Connective 82 83	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 93 95	最悪
+T11	Connective 96 98	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T4	

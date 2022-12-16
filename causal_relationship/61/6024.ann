@@ -1,0 +1,30 @@
+T1	Argument 19 41	バッテリーケーブル内部の配線のかしめが不適切
+T2	Connective 42 44	ため
+T3	Argument 45 52	当該配線が短絡
+T4	Connective 53 54	、
+T5	Argument 54 59	徐々に焼損
+T6	Connective 60 61	て
+T7	Argument 61 65	煙が発生
+T8	Argument 68 80	バッテリーケーブルが断線
+T9	Connective 103 104	と
+T10	Argument 105 129	オルタネーターによるバッテリーの充電が行われない
+T11	Connective 129 131	ため
+T12	Argument 132 138	警告灯が点灯
+T13	Argument 140 154	そのままの状態で使用を続ける
+T14	Connective 154 155	と
+T16	Argument 156 173	原動機が停止し再始動ができなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T8	
+R9	RESULT Arg1:T9 Arg2:T10	
+R10	REASON Arg1:T11 Arg2:T10	
+R11	RESULT Arg1:T11 Arg2:T12	
+R14	CONDITION Arg1:T14 Arg2:T13	
+R15	RESULT Arg1:T14 Arg2:T16	
+R12	RESULT Arg1:T11 Arg2:T16	
+T15	Argument 89 103	バッテリーケーブルが断線する
+R8	CONDITION Arg1:T9 Arg2:T15	

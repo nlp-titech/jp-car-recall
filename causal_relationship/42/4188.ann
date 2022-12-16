@@ -1,0 +1,13 @@
+T1	Argument 0 50	中型トラックの空気油圧複合式ブレーキにおいて、後輪用ホイールシリンダのピストンカップ溝の加工が不適切
+T2	Connective 57 61	そのため
+T3	Argument 78 125	ピストンカップの定期交換時期より早く、ピストンカップ溝とピストンカップ内径間のシール性能が低下
+T4	Connective 126 127	、
+T5	Argument 127 149	後輪用ホイールシリンダよりブレーキ液が漏れる
+R1	REASON Arg1:T4 Arg2:T3	
+R2	RESULT Arg1:T4 Arg2:T5	
+R3	REASON Arg1:T2 Arg2:T1	
+R4	RESULT Arg1:T2 Arg2:T3	
+T6	Argument 62 76	そのままの状態で使用を続ける
+T7	Connective 76 77	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	

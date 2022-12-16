@@ -1,0 +1,13 @@
+T1	Argument 0 33	運転者席横のカバー取付作業が不適切なため、電動シートの配線を傷つけ
+T2	Connective 40 44	そのため
+T3	Argument 61 66	配線が短絡
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 67 68	て
+T5	Argument 69 79	走行中にシートが動く
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 45 59	そのままの状態で使用を続ける
+T7	Connective 59 60	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	

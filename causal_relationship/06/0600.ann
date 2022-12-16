@@ -1,0 +1,23 @@
+T1	Argument 2 39	過給機付き車の排気管において、排気管を支持している金具の取付け構造が不適切
+T2	Argument 48 69	当該金具の溶接部において排気管に亀裂が発生
+T3	Argument 71 78	排気ガスが漏れ
+T4	Argument 95 101	排気管が折損
+T5	Argument 102 107	騒音が増大
+T6	Connective 40 42	ため
+T7	Connective 70 71	、
+T9	Connective 101 102	し
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 43 45	振動
+T11	Connective 45 48	により
+R9	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T2	
+T12	Argument 79 93	そのままの状態で使用を続ける
+T13	Connective 93 94	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T4	
+R5	RESULT Arg1:T7 Arg2:T4	

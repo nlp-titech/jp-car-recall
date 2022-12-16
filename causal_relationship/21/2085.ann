@@ -1,0 +1,5 @@
+T1	Argument 0 40	入浴車において、入浴設備の架装時に、燃料タンク上面に穴をあけてしまったものがある
+T2	Connective 40 42	ため
+T3	Argument 43 49	燃料が漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

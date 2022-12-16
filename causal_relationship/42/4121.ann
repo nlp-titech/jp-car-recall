@@ -1,0 +1,25 @@
+T1	Argument 0 45	刈取脱穀作業車の主変速レバーにおいて、レバー位置の検出を行うポテンショセンサの設計が不適切
+T2	Connective 46 48	ため
+T3	Argument 58 72	センサ内部の接点摺動部が磨耗
+T4	Connective 73 74	、
+T5	Argument 74 86	磨耗粉が接点摺動部に付着
+T6	Connective 94 98	そのため
+T7	Argument 99 117	適切な信号が当該センサから出力されず
+T8	Connective 117 118	、
+T10	Connective 128 129	り
+T11	Argument 129 137	走行できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T14	Connective 55 58	により
+T15	Argument 49 55	長時間の使用
+R5	REASON Arg1:T14 Arg2:T15	
+R6	RESULT Arg1:T14 Arg2:T3	
+R7	REASON Arg1:T6 Arg2:T5	
+R8	RESULT Arg1:T6 Arg2:T7	
+R9	REASON Arg1:T8 Arg2:T7	
+R12	RESULT Arg1:T10 Arg2:T11	
+T9	Argument 118 128	フェイルセーフがかか
+R10	RESULT Arg1:T8 Arg2:T9	
+R11	REASON Arg1:T10 Arg2:T9	

@@ -1,0 +1,15 @@
+T1	Argument 0 19	インジェクターコネクターの材質が不適切
+T2	Argument 23 35	整備時に過度な負担をかけ
+T3	Argument 38 50	適切に取り付けしていない
+T4	Connective 50 52	場合
+T5	Connective 20 22	ため
+T6	Argument 53 55	損傷
+T7	Connective 56 57	て
+T8	Argument 57 63	燃料が漏れる
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T6	
+R3	CONDITION Arg1:T4 Arg2:T2	
+R4	CONDITION Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T4 Arg2:T6	
+R6	REASON Arg1:T7 Arg2:T6	
+R7	RESULT Arg1:T7 Arg2:T8	

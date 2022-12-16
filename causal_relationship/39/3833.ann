@@ -1,0 +1,29 @@
+T1	Argument 9 27	計器パネルにおいて、防水対策が不適切
+T2	Argument 31 48	雨水等がヒューズボックス内部に浸入
+T3	Argument 61 75	そのままの状態で使用を続ける
+T4	Argument 77 86	ヒューズ内部が腐食
+T5	Argument 87 89	断線
+T6	Argument 91 93	最悪
+T7	Argument 97 115	ブレーキをかけても駆動力が遮断されず
+T8	Argument 116 124	車両が停止しない
+T9	Connective 28 30	ため
+T10	Connective 56 60	そのため
+T11	Connective 75 76	と
+T12	Connective 86 87	、
+T13	Connective 90 91	、
+T14	Connective 94 96	場合
+T15	Connective 115 116	、
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T2	
+R3	REASON Arg1:T10 Arg2:T2	
+R6	RESULT Arg1:T11 Arg2:T4	
+R7	REASON Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T5	
+R9	REASON Arg1:T13 Arg2:T5	
+R11	CONDITION Arg1:T14 Arg2:T6	
+R12	RESULT Arg1:T14 Arg2:T7	
+R13	REASON Arg1:T15 Arg2:T7	
+R14	RESULT Arg1:T15 Arg2:T8	
+R4	CONDITION Arg1:T11 Arg2:T3	
+R5	RESULT Arg1:T10 Arg2:T4	
+R10	RESULT Arg1:T13 Arg2:T7	

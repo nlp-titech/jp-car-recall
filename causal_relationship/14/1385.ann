@@ -1,0 +1,9 @@
+T1	Argument 0 43	製造工程において、前輪内側前部に装着する泥跳ね防止装置に形状の異なるものを誤って取付け
+T2	Connective 44 46	ため
+T5	Argument 47 81	雪路走行時に巻き上げた雪がＡＢＳコントロールバルブのエア排気口を閉塞
+T6	Connective 88 89	、
+T7	Argument 89 100	ＡＢＳが機能しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

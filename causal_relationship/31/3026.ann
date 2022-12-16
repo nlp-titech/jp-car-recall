@@ -1,0 +1,29 @@
+T1	Argument 52 65	検査判定不良品が市場に流出
+T2	Connective 68 72	そのため
+T3	Argument 73 81	オイル漏れが発生
+T4	Argument 83 113	原動機（駆動用フロントモータ）内のベアリングが潤滑不良となり
+T5	Connective 116 117	、
+T7	Argument 117 119	最悪
+T6	Connective 120 122	場合
+T8	Argument 123 170	フェールセーフ状態（発電不可となり出力制限し、最高速度を５０ｋｍ／ｈに制限する走行状態）となり
+T9	Connective 170 171	、
+T10	Argument 171 179	再始動不可となる
+R1	RESULT Arg1:T9 Arg2:T10	
+R2	REASON Arg1:T9 Arg2:T8	
+R3	RESULT Arg1:T6 Arg2:T8	
+R4	CONDITION Arg1:T6 Arg2:T7	
+R5	RESULT Arg1:T5 Arg2:T8	
+R6	REASON Arg1:T5 Arg2:T15	
+T11	Connective 82 83	、
+R7	RESULT Arg1:T11 Arg2:T4	
+R8	REASON Arg1:T11 Arg2:T3	
+R9	RESULT Arg1:T2 Arg2:T3	
+R10	REASON Arg1:T2 Arg2:T1	
+T12	Argument 0 51	発電機（ジェネレータ）及び原動機（駆動用フロントモータ）のエアリーク検査システムにプログラムミスがあり
+T13	Connective 51 52	、
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T1	
+T14	Connective 112 113	り
+T15	Argument 113 115	破損
+R13	REASON Arg1:T14 Arg2:T4	
+R14	RESULT Arg1:T14 Arg2:T15	

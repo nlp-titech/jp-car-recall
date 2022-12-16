@@ -1,0 +1,41 @@
+T1	Argument 0 42	テールゲートのガス封入式オープンステーにおいて、外筒のエンドキャップ部の塗装が不適切
+T2	Argument 46 53	沿岸地域の塩分
+T3	Argument 57 59	腐食
+T4	Argument 72 86	そのままの状態で使用を続ける
+T5	Argument 88 93	腐食が進行
+T6	Argument 95 100	外筒が膨ら
+T7	Argument 101 111	エンドキャップが割れ
+T8	Argument 112 121	テールゲートを開く
+T9	Argument 123 128	外筒が破損
+T10	Argument 130 132	最悪
+T11	Argument 136 143	周囲の人が負傷
+T12	Connective 43 45	ため
+T13	Connective 56 57	で
+T14	Connective 67 71	そのため
+T15	Connective 86 87	と
+T16	Connective 94 95	、
+T17	Connective 111 112	、
+T18	Connective 121 123	際に
+T19	Connective 129 130	、
+T20	Connective 133 135	場合
+R1	REASON Arg1:T12 Arg2:T1	
+R2	RESULT Arg1:T12 Arg2:T3	
+R3	REASON Arg1:T13 Arg2:T2	
+R4	RESULT Arg1:T13 Arg2:T3	
+R5	REASON Arg1:T14 Arg2:T3	
+R6	RESULT Arg1:T14 Arg2:T7	
+R7	CONDITION Arg1:T15 Arg2:T4	
+R8	RESULT Arg1:T15 Arg2:T5	
+R9	REASON Arg1:T16 Arg2:T5	
+R10	RESULT Arg1:T16 Arg2:T7	
+T21	Connective 100 101	み
+R11	REASON Arg1:T21 Arg2:T6	
+R12	RESULT Arg1:T21 Arg2:T7	
+R13	REASON Arg1:T17 Arg2:T7	
+R14	RESULT Arg1:T17 Arg2:T9	
+R15	CONDITION Arg1:T18 Arg2:T8	
+R16	RESULT Arg1:T18 Arg2:T9	
+R17	REASON Arg1:T19 Arg2:T9	
+R18	RESULT Arg1:T19 Arg2:T11	
+R19	CONDITION Arg1:T20 Arg2:T10	
+R20	RESULT Arg1:T20 Arg2:T11	

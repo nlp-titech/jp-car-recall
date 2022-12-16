@@ -1,0 +1,13 @@
+T1	Argument 0 31	音響機器の後部スピーカー用出力増幅器において、回路設計が不適切
+T2	Argument 35 54	当該出力増幅器内部に過大な電流が流れる
+T3	Argument 66 71	火災に至る
+T4	Connective 32 34	ため
+T5	Connective 59 60	、
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	
+T6	Argument 60 62	最悪
+T7	Connective 63 65	場合
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	

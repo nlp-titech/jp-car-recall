@@ -1,0 +1,21 @@
+T1	Argument 0 43	後輪用制動装置（ドラム式）のブレーキライニング（摩擦材）とブレーキシューの接着に不十分
+T2	Connective 49 50	、
+T3	Argument 65 75	当該接着部に錆が発生
+T4	Connective 76 77	、
+T5	Argument 83 100	ブレーキライニングがシューから剥離
+T6	Connective 101 102	て
+T7	Argument 103 109	制動力が低下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 50 63	このままの状態で使用続ける
+T9	Connective 63 64	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 77 79	最悪
+T11	Connective 80 82	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	

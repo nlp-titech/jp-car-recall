@@ -1,0 +1,13 @@
+T1	Argument 20 46	肩用ベルトガイド部を固定しているナットの溶接が不適切
+T2	Connective 47 49	ため
+T3	Argument 76 85	当該ナット部が外れ
+T4	Connective 85 86	、
+T5	Argument 86 100	座席ベルトの機能が損なわれる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 50 72	事故等によって座席ベルトに大きな荷重がかかっ
+T7	Connective 73 75	場合
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	

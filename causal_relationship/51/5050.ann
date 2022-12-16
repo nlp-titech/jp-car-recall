@@ -1,0 +1,31 @@
+T1	Argument 1 37	ステアリング・ラックのスプールバルブ側の取り付けボルトの締め付け力が不足
+T2	Connective 41 43	ため
+T3	Argument 68 76	当該ボルトが緩む
+T4	Connective 82 86	そのため
+T5	Argument 105 113	ボルトが抜け落ち
+T6	Connective 113 114	て
+T7	Argument 115 130	ステアリング・ラックががたつき
+T8	Connective 130 131	、
+T9	Argument 131 140	走行安定性が損なわ
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 44 55	かじ取り操作の繰り返し
+T11	Connective 64 67	により
+R9	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	
+T12	Argument 56 62	走行中の振動
+R11	REASON Arg1:T11 Arg2:T12	
+T13	Argument 87 97	そのまま使用を続ける
+T14	Connective 97 98	と
+R12	CONDITION Arg1:T14 Arg2:T13	
+R13	RESULT Arg1:T14 Arg2:T5	
+T15	Argument 99 101	最悪
+T16	Connective 102 104	場合
+R14	CONDITION Arg1:T16 Arg2:T15	
+R15	RESULT Arg1:T16 Arg2:T5	

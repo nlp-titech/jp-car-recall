@@ -1,0 +1,21 @@
+T1	Argument 0 43	かじ取り装置において、油圧作動式パワーステアリング用シリンダの取付ボルトの寸法が不適切
+T2	Argument 47 58	かじ取り操作の繰り返し
+T3	Argument 61 69	当該ボルトが折損
+T4	Argument 77 107	当該シリンダーのヘッド部とチューブとの嵌合部から作動油が漏れ
+T5	Argument 114 127	かじ取り操作が出来なくなる
+T6	Connective 44 46	ため
+T7	Connective 58 61	により
+T8	Connective 76 77	、
+T9	Connective 107 108	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T3	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 108 110	最悪
+T11	Connective 111 113	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	

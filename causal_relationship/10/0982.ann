@@ -1,0 +1,13 @@
+T1	Argument 0 21	警音器において、特殊アタッチメント等を装着
+T2	Connective 23 25	場合
+T3	Argument 26 41	正規の取付位置に装着していない
+T4	Argument 44 57	音の大きさが基準値を下回り
+T5	Connective 41 43	ため
+T6	Argument 58 74	警音器の技術基準に適合しなくなる
+R1	CONDITION Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T4	
+T7	Connective 57 58	、
+R5	REASON Arg1:T7 Arg2:T4	
+R6	RESULT Arg1:T7 Arg2:T6	

@@ -1,0 +1,29 @@
+T1	Connective 30 32	ため
+T2	Argument 11 29	上部はね上げドアの取付部構造が不適切
+T3	Argument 59 61	劣化
+T4	Connective 72 76	そのため
+T5	Argument 83 87	ドアが外
+T6	Connective 87 88	れ
+T7	Argument 88 90	落下
+T8	Connective 91 92	、
+T9	Argument 92 102	作業者に危害を加える
+R1	REASON Arg1:T1 Arg2:T2	
+R2	RESULT Arg1:T1 Arg2:T5	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 33 56	ドア上縁の樹脂製ヒンジが大気のオゾン、紫外線等
+T11	Connective 56 59	により
+R9	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	
+T12	Connective 61 62	し
+T13	Argument 62 64	破断
+R11	REASON Arg1:T12 Arg2:T3	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T4 Arg2:T13	
+T14	Argument 77 81	ドア開放
+T15	Connective 81 82	時
+R3	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T5	

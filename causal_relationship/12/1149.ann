@@ -1,0 +1,21 @@
+T1	Argument 1 39	前軸のロワーラジアスロッドにおいて、想定を超える長期の使用に対する強度が不足
+T2	Connective 43 45	ため
+T3	Argument 46 57	当該ロッドに亀裂が入る
+T4	Connective 63 67	そのため
+T5	Argument 68 82	そのままの状態で使用を続ける
+T6	Connective 82 83	と
+T7	Argument 84 86	最悪
+T8	Connective 87 89	場合
+T9	Argument 90 98	当該ロッドが折損
+T10	Connective 99 100	、
+T11	Argument 100 111	走行安定性が損なわれる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T9	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T9	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	

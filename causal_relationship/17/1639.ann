@@ -1,0 +1,29 @@
+T1	Argument 0 28	動力伝達装置において、クラッチレリーズレバーの強度が不足
+T2	Connective 32 34	ため
+T3	Argument 35 41	クラッチ操作
+T4	Argument 44 54	レバーに亀裂が生じる
+T5	Connective 60 64	そのため
+T6	Argument 77 85	当該レバーが変形
+T7	Connective 86 87	、
+T8	Argument 87 98	クラッチが切れなくなり
+T9	Connective 98 99	、
+T10	Argument 105 112	走行不能となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T4	
+T11	Connective 41 44	により
+R3	REASON Arg1:T11 Arg2:T3	
+R4	RESULT Arg1:T11 Arg2:T4	
+R5	REASON Arg1:T5 Arg2:T4	
+R6	RESULT Arg1:T5 Arg2:T6	
+R7	REASON Arg1:T7 Arg2:T6	
+R8	RESULT Arg1:T7 Arg2:T8	
+R9	REASON Arg1:T9 Arg2:T8	
+R10	RESULT Arg1:T9 Arg2:T10	
+T12	Argument 65 75	そのまま使用を続ける
+T13	Connective 75 76	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T6	
+T14	Argument 99 101	最悪
+T15	Connective 102 104	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T10	

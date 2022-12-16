@@ -1,0 +1,45 @@
+T1	Argument 18 37	エンジン制御のプログラムの設定が不適切
+T2	Argument 41 66	繰り返しエンジン高回転・高負荷域から減速操作を行う
+T3	Argument 68 94	ターボチャージャのスラストベアリングに高い負荷が発生
+T4	Argument 95 120	スラストベアリングおよびスラストリングに摩耗を生じ
+T5	Argument 132 153	ターボチャージャのシャフトにガタつきが生じ
+T6	Argument 154 168	そのままの状態で使用を続ける
+T7	Argument 170 188	ターボチャージャのシールリングが損傷
+T8	Argument 190 202	エンジンオイルが漏れ出し
+T9	Argument 203 224	当該オイルがエンジン内部、排気系に入り込み
+T10	Argument 225 249	白煙、異音、エンジン回転数の上昇等の不具合が発生
+T11	Argument 251 253	最悪
+T12	Argument 257 264	エンジンが破損
+T13	Connective 38 40	ため
+T14	Connective 66 67	と
+T15	Connective 94 95	し
+T16	Connective 127 131	そのため
+T17	Connective 153 154	、
+T18	Connective 168 169	と
+T19	Connective 189 190	て
+T20	Connective 202 203	、
+T21	Connective 224 225	、
+T22	Connective 250 251	、
+T23	Connective 254 256	場合
+R1	REASON Arg1:T13 Arg2:T1	
+R2	RESULT Arg1:T13 Arg2:T3	
+R3	CONDITION Arg1:T14 Arg2:T2	
+R4	RESULT Arg1:T14 Arg2:T3	
+R5	REASON Arg1:T15 Arg2:T3	
+R6	RESULT Arg1:T15 Arg2:T4	
+R7	REASON Arg1:T16 Arg2:T4	
+R8	RESULT Arg1:T16 Arg2:T5	
+R9	REASON Arg1:T17 Arg2:T5	
+R10	RESULT Arg1:T17 Arg2:T7	
+R11	CONDITION Arg1:T18 Arg2:T6	
+R12	RESULT Arg1:T18 Arg2:T7	
+R13	REASON Arg1:T19 Arg2:T7	
+R14	RESULT Arg1:T19 Arg2:T8	
+R15	REASON Arg1:T20 Arg2:T8	
+R16	RESULT Arg1:T20 Arg2:T9	
+R17	REASON Arg1:T21 Arg2:T9	
+R18	RESULT Arg1:T21 Arg2:T10	
+R19	REASON Arg1:T22 Arg2:T10	
+R20	RESULT Arg1:T22 Arg2:T11	
+R21	CONDITION Arg1:T23 Arg2:T11	
+R22	RESULT Arg1:T23 Arg2:T12	

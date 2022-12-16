@@ -1,0 +1,11 @@
+T1	Argument 0 38	無段変速機（ＣＶＴ）において、②動力伝達経路を切替えるクラッチの構造が不適切
+T2	Connective 39 41	ため
+T3	Argument 51 60	当該クラッチが固着
+T4	Connective 61 62	て
+T5	Argument 63 67	加速不良
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T8	Argument 68 75	変速不良となる
+R7	RESULT Arg1:T4 Arg2:T8	

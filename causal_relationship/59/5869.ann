@@ -1,0 +1,13 @@
+T1	Argument 9 26	リヤアクスルハウジングの強度が不足
+T2	Connective 35 39	そのため
+T3	Argument 40 54	そのままの状態で使用を続ける
+T4	Connective 54 55	と
+T5	Argument 56 70	リヤアクスルハウジングが破損
+T6	Connective 71 72	、
+T7	Argument 72 81	走行が出来なくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

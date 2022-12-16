@@ -1,0 +1,9 @@
+T1	Argument 16 46	ボディコントロールモジュールへの設定値の書き込み処理が不適切
+T2	Connective 47 49	ため
+T3	Argument 50 66	車両仕様に合致しない値を書き込ん
+T4	Connective 73 77	そのため
+T5	Argument 78 110	制動灯制御機能、エアコンコンプレッサー制御機能が正しく作動しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

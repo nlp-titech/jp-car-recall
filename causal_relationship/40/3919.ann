@@ -1,0 +1,43 @@
+T1	Argument 11 26	エンジン制御プログラムが不適切
+T2	Argument 30 54	ＤＰＲ（排出ガス浄化装置）の手動再生を頻繁に中断
+T3	Argument 59 81	ポスト噴射による燃料がＥＧＲクーラに廻り込み
+T4	Argument 82 94	カーボンデポジットが生成
+T5	Argument 97 105	吸気バルブに付着
+T6	Argument 107 120	そのままの状態で長時間駐車
+T7	Argument 123 138	カーボンデポジットの粘度が増加
+T8	Argument 151 164	吸気バルブが摺動不良となり
+T9	Argument 165 167	最悪
+T10	Argument 171 177	バルブが折損
+T11	Argument 179 184	異音が発生
+T12	Argument 190 197	エンジンが破損
+T13	Connective 27 29	ため
+T14	Connective 56 58	場合
+T15	Connective 81 82	、
+T16	Connective 96 97	て
+T17	Connective 106 107	、
+T18	Connective 122 123	と
+T19	Connective 146 150	そのため
+T20	Connective 164 165	、
+T21	Connective 168 170	場合
+T22	Connective 178 179	、
+R1	REASON Arg1:T13 Arg2:T1	
+R2	RESULT Arg1:T13 Arg2:T3	
+R3	CONDITION Arg1:T14 Arg2:T2	
+R4	RESULT Arg1:T14 Arg2:T3	
+R5	REASON Arg1:T15 Arg2:T3	
+R6	RESULT Arg1:T15 Arg2:T4	
+R7	REASON Arg1:T16 Arg2:T4	
+R8	RESULT Arg1:T16 Arg2:T5	
+R9	REASON Arg1:T17 Arg2:T5	
+R10	RESULT Arg1:T17 Arg2:T7	
+R11	CONDITION Arg1:T18 Arg2:T6	
+R12	RESULT Arg1:T18 Arg2:T7	
+R13	REASON Arg1:T19 Arg2:T7	
+R14	RESULT Arg1:T19 Arg2:T8	
+R15	REASON Arg1:T20 Arg2:T8	
+R16	RESULT Arg1:T20 Arg2:T10	
+R17	CONDITION Arg1:T21 Arg2:T9	
+R18	RESULT Arg1:T21 Arg2:T10	
+R19	REASON Arg1:T22 Arg2:T10	
+R20	RESULT Arg1:T22 Arg2:T11	
+R21	RESULT Arg1:T22 Arg2:T12	

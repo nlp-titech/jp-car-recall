@@ -1,0 +1,9 @@
+T1	Argument 18 40	オートランプシステムの電子回路に不具合がある
+T2	Connective 40 42	ため
+T3	Argument 43 51	当該装置が誤作動
+T4	Connective 52 53	、
+T5	Argument 53 63	自動点灯時に突然消灯
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

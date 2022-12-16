@@ -1,0 +1,13 @@
+T1	Argument 0 41	シフトレバーから自動変速装置までの連結部の一部である摺動軸（ピン）が円滑に動かない
+T2	Connective 46 47	、
+T3	Argument 69 83	駐車用ギヤにツメが噛み合わず
+T4	Connective 83 84	、
+T5	Argument 84 98	車両を停止状態に保持できない
+T6	Argument 47 65	シフトレバーをパーキング位置に操作し
+T7	Connective 66 68	場合
+R1	CONDITION Arg1:T7 Arg2:T6	
+R2	RESULT Arg1:T7 Arg2:T3	
+R3	REASON Arg1:T2 Arg2:T1	
+R4	RESULT Arg1:T2 Arg2:T3	
+R5	REASON Arg1:T4 Arg2:T3	
+R6	RESULT Arg1:T4 Arg2:T5	

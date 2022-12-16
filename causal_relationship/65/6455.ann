@@ -1,0 +1,13 @@
+T1	Argument 0 34	サイドエアバッグのインフレータ（膨張装置）において、製造管理が不適切
+T2	Connective 35 37	ため
+T3	Argument 38 54	点火剤が設計通り調合されていない
+T4	Connective 60 64	そのため
+T5	Argument 65 82	衝突時にサイドエアバックが展開せず
+T6	Connective 82 83	、
+T7	Argument 83 94	乗員が過度の傷害を負う
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

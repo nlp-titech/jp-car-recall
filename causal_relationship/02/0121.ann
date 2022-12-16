@@ -1,0 +1,21 @@
+T2	Argument 48 62	高負荷走行等の運転を繰り返す
+T3	Argument 63 87	当該ガスケットから燃焼ガスが冷却水通路に漏れ出す
+T4	Argument 99 110	冷却水が循環不良となっ
+T5	Argument 111 121	オーバーヒートに至る
+T6	Connective 45 47	ため
+T7	Connective 62 63	と
+T8	Connective 92 93	、
+T9	Connective 110 111	て
+R2	RESULT Arg1:T6 Arg2:T3	
+R3	CONDITION Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+T12	Argument 93 95	最悪
+T13	Connective 96 98	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T4	
+T1	Argument 0 44	過給機付き原動機を搭載した車両において、原動機のシリンダヘッドガスケットの気密性が不十分
+R1	REASON Arg1:T6 Arg2:T1	

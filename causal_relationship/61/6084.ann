@@ -1,0 +1,21 @@
+T1	Connective 51 52	で
+T2	Argument 28 49	シートベルトスリーブに繰り返し負荷がかかる
+T3	Argument 21 23	乗降
+T4	Connective 25 28	たびに
+T5	Argument 52 62	内部のケーブルが破断
+T6	Argument 75 80	事故が発生
+T7	Connective 82 84	場合
+T8	Argument 85 99	シートベルトが適切に作動せず
+T9	Connective 99 100	、
+T10	Argument 100 105	被害が拡大
+R1	REASON Arg1:T4 Arg2:T3	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T1 Arg2:T2	
+R4	RESULT Arg1:T1 Arg2:T5	
+R5	CONDITION Arg1:T7 Arg2:T6	
+T11	Connective 69 70	。
+R6	REASON Arg1:T11 Arg2:T5	
+R7	RESULT Arg1:T11 Arg2:T8	
+R8	RESULT Arg1:T7 Arg2:T8	
+R9	REASON Arg1:T9 Arg2:T8	
+R10	RESULT Arg1:T9 Arg2:T10	

@@ -1,0 +1,13 @@
+T1	Argument 0 48	エンジンＥＣＵの制御プログラムにおいて、アイドリング時の空気量を補正する学習上限値の設定が不適切
+T2	Connective 49 51	ため
+T3	Argument 52 68	カーボンがスロットルバルブに堆積
+T4	Connective 70 72	場合
+T5	Argument 74 88	アイドリング時の空気量が不足
+T6	Connective 96 100	そのため
+T7	Argument 101 119	アイドリング回転付近でエンストに至る
+R1	RESULT Arg1:T6 Arg2:T7	
+R2	REASON Arg1:T6 Arg2:T5	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	CONDITION Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T2 Arg2:T5	
+R6	REASON Arg1:T2 Arg2:T1	

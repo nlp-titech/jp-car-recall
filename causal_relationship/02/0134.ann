@@ -1,0 +1,13 @@
+T2	Argument 77 89	エンジン回転が過度に上昇
+T3	Argument 91 110	保安基準の加速走行騒音が規制値を超える
+T4	Connective 59 61	ため
+R2	RESULT Arg1:T4 Arg2:T2	
+T5	Connective 90 91	、
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	
+T1	Argument 0 58	可変バルブタイミング付き原動機搭載車において、自動変速機の制御用コンピュータのキックダウン制御プログラミングが不適切
+R1	REASON Arg1:T4 Arg2:T1	
+T6	Argument 62 72	アクセルを全開で加速
+T7	Connective 74 76	場合
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T2	

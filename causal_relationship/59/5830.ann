@@ -1,0 +1,39 @@
+T1	Argument 0 21	燃料供給配管において、組み付け方法が不適切
+T2	Connective 25 27	ため
+T3	Argument 28 49	接続コネクタ部とヒータパイプの隙間が小さい
+T4	Connective 55 59	そのため
+T5	Argument 60 74	そのままの状態で使用を続ける
+T6	Connective 74 75	と
+T7	Argument 76 85	運転時の車体振動等
+T8	Connective 85 88	により
+T9	Argument 88 104	接続コネクタとヒータパイプが干渉
+T10	Connective 105 106	、
+T11	Argument 106 118	コネクタ部のロックが解除
+T12	Connective 120 121	て
+T13	Argument 121 128	燃料漏れが発生
+T14	Connective 129 130	、
+T15	Argument 130 134	エンスト
+T16	Argument 138 140	最悪
+T17	Connective 141 143	場合
+T18	Argument 144 152	漏れた燃料に引火
+T19	Connective 153 154	、
+T20	Argument 154 159	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T9	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R15	RESULT Arg1:T14 Arg2:T18	
+R16	CONDITION Arg1:T17 Arg2:T16	
+R17	RESULT Arg1:T17 Arg2:T18	
+R18	REASON Arg1:T19 Arg2:T18	
+R19	RESULT Arg1:T19 Arg2:T20	

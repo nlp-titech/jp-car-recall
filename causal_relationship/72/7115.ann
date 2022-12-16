@@ -1,0 +1,15 @@
+T1	Argument 0 15	車室内温度が－１８度以下の極寒
+T2	Connective 15 16	時
+T3	Argument 18 41	アクセル・ペダル・ロッドの樹脂製の軸受部が収縮
+T4	Connective 42 43	て
+T5	Argument 43 50	摩擦抵抗が生じ
+T7	Argument 51 89	同時に二重アクセル・リターン・スプリングのいずれか一方に折損等の不具合が生じ
+T8	Connective 90 92	場合
+T9	Argument 95 119	エンジン回転のアイドル状態への戻りが若干遅くなる
+R1	CONDITION Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T9	
+R5	CONDITION Arg1:T8 Arg2:T5	

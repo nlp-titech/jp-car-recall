@@ -1,0 +1,33 @@
+T1	Argument 0 21	ＡＢＳセンサーの電気配線の取り回しが不適切
+T2	Argument 25 43	電気配線とブレーキ用エア配管とが干渉
+T3	Argument 72 79	走行中の振動等
+T4	Argument 82 89	エア配管が損傷
+T5	Argument 103 125	走行中にホイールパーク（駐車ブレーキ）が作動
+T6	Argument 127 139	走行不能又は制動力が低下
+T7	Connective 126 127	て
+T8	Connective 90 91	て
+T9	Argument 91 96	エアが漏れ
+T10	Connective 79 82	により
+R1	REASON Arg1:T7 Arg2:T5	
+R2	RESULT Arg1:T7 Arg2:T6	
+T11	Connective 96 97	、
+R3	REASON Arg1:T11 Arg2:T9	
+R4	RESULT Arg1:T11 Arg2:T5	
+R5	REASON Arg1:T8 Arg2:T4	
+R6	RESULT Arg1:T8 Arg2:T9	
+R7	REASON Arg1:T10 Arg2:T3	
+R8	RESULT Arg1:T10 Arg2:T4	
+T12	Connective 51 55	そのため
+R9	REASON Arg1:T12 Arg2:T2	
+R10	RESULT Arg1:T12 Arg2:T4	
+T13	Connective 22 24	ため
+R11	REASON Arg1:T13 Arg2:T1	
+R12	RESULT Arg1:T13 Arg2:T2	
+T14	Argument 56 70	そのままの状態で使用を続ける
+T15	Connective 70 71	と
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T4	
+T16	Argument 97 99	最悪
+T17	Connective 100 102	場合
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T5	

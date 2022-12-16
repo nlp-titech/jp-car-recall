@@ -1,0 +1,37 @@
+T1	Argument 30 52	フロア自動開閉用油圧シリンダーの強度が不十分
+T2	Connective 53 55	ため
+T3	Argument 62 73	油圧シリンダーが曲がり
+T4	Connective 73 74	、
+T5	Argument 74 88	そのままの状態で使用を続ける
+T6	Connective 88 89	と
+T7	Argument 90 100	当該シリンダーが損傷
+T8	Argument 113 122	ロアーアームも損傷
+T9	Connective 123 124	て
+T10	Argument 124 132	昇降フロアが傾き
+T11	Connective 132 133	、
+T12	Argument 133 135	最悪
+T13	Connective 136 138	場合
+T14	Argument 139 152	昇降フロア上の積み荷が落下
+T15	Connective 153 154	、
+T16	Argument 154 169	作業者又は第３者に危害を及ぼす
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	CONDITION Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	RESULT Arg1:T4 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T8	
+R8	RESULT Arg1:T4 Arg2:T8	
+R9	REASON Arg1:T9 Arg2:T8	
+R10	RESULT Arg1:T9 Arg2:T10	
+R11	REASON Arg1:T11 Arg2:T10	
+R12	CONDITION Arg1:T13 Arg2:T12	
+R13	RESULT Arg1:T13 Arg2:T14	
+R14	RESULT Arg1:T11 Arg2:T14	
+R15	REASON Arg1:T15 Arg2:T14	
+R16	RESULT Arg1:T15 Arg2:T16	
+T17	Argument 56 60	荷役作業
+T18	Connective 60 61	時
+R17	CONDITION Arg1:T18 Arg2:T17	
+R18	RESULT Arg1:T18 Arg2:T3	
+R19	REASON Arg1:T9 Arg2:T7	

@@ -1,0 +1,33 @@
+T2	Connective 48 50	ため
+T3	Argument 51 62	使用過程で塗装が薄くな
+T4	Connective 62 63	り
+T5	Argument 63 75	取付ボルトの締結力が低下
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+T6	Connective 83 87	そのため
+T7	Argument 88 96	取付ボルトが緩み
+T8	Connective 96 97	、
+T9	Argument 97 111	そのままの状態で使用を続ける
+T10	Connective 111 112	と
+T11	Argument 113 121	取付ボルトが破断
+T12	Connective 122 123	、
+T13	Argument 123 130	プーリーが脱落
+T14	Connective 131 132	て
+T15	Argument 132 151	パワーステアリングのアシスト力が失われ
+T16	Connective 151 152	、
+T17	Argument 152 163	ハンドルの操作力が増大
+R5	REASON Arg1:T6 Arg2:T5	
+R6	REASON Arg1:T8 Arg2:T7	
+R7	CONDITION Arg1:T10 Arg2:T9	
+R8	REASON Arg1:T12 Arg2:T11	
+R9	REASON Arg1:T14 Arg2:T13	
+R10	REASON Arg1:T16 Arg2:T15	
+R11	RESULT Arg1:T6 Arg2:T7	
+R12	RESULT Arg1:T8 Arg2:T11	
+R13	RESULT Arg1:T10 Arg2:T11	
+R14	RESULT Arg1:T12 Arg2:T13	
+R15	RESULT Arg1:T14 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T17	
+T1	Argument 4 48	補機駆動ベルトのアイドラープーリーにおいて、製造時に設計で指示されていない塗装をしている
+R1	REASON Arg1:T2 Arg2:T1	

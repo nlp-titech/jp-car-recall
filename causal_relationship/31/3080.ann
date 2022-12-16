@@ -1,0 +1,36 @@
+T1	Argument 0 39	大型トラックのエアブレーキにおいて、ＤＰＦ装置上部のエアチューブの耐熱性が不足
+T2	Connective 43 45	ため
+T3	Argument 60 72	エアチューブの一部が溶損
+T4	Connective 86 90	そのため
+T5	Argument 91 97	制動力の低下
+T6	Argument 124 168	標準車と排気管の取付構造が異なる冷蔵冷凍車において、排気管ステーのゴム部品の耐熱性が不足
+T7	Connective 172 174	ため
+T8	Argument 188 193	ゴムが劣化
+R1	RESULT Arg1:T7 Arg2:T8	
+R2	REASON Arg1:T7 Arg2:T6	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	REASON Arg1:T4 Arg2:T13	
+R5	RESULT Arg1:T2 Arg2:T3	
+R6	REASON Arg1:T2 Arg2:T1	
+T9	Connective 195 196	と
+T10	Argument 197 209	取付部のガタが大きくなり
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T10	
+T11	Argument 46 56	ＤＰＦ装置の熱の影響
+T12	Connective 56 59	により
+R9	REASON Arg1:T12 Arg2:T11	
+R10	RESULT Arg1:T12 Arg2:T3	
+T13	Argument 74 80	エアが漏れる
+T14	Connective 73 74	て
+R11	REASON Arg1:T14 Arg2:T3	
+R12	RESULT Arg1:T14 Arg2:T13	
+T15	Argument 100 114	駐車ブレーキが解除不能になる
+R13	RESULT Arg1:T4 Arg2:T15	
+T16	Argument 175 185	ＤＰＦ装置の熱の影響
+T17	Connective 185 188	により
+R14	REASON Arg1:T17 Arg2:T16	
+R15	RESULT Arg1:T17 Arg2:T8	
+T18	Connective 208 209	り
+T19	Argument 209 214	異音が発生
+R16	REASON Arg1:T18 Arg2:T10	
+R17	RESULT Arg1:T18 Arg2:T19	

@@ -1,0 +1,25 @@
+T1	Argument 0 36	手動変速機のトランスファケースにおいて、製造工程の加工プログラムが不適切
+T2	Argument 40 55	オイル潤滑穴が加工されていない
+T3	Connective 37 39	ため
+T4	Connective 61 65	そのため
+T5	Argument 82 89	オイル潤滑不良
+T6	Connective 89 93	によって
+T7	Argument 93 99	ギヤ等が破損
+T8	Connective 100 101	、
+T9	Argument 107 114	走行不能になる
+R1	REASON Arg1:T3 Arg2:T1	
+R2	RESULT Arg1:T3 Arg2:T2	
+R3	REASON Arg1:T4 Arg2:T2	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 66 80	そのままの状態で使用を続ける
+T11	Connective 80 81	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	
+T12	Argument 101 103	最悪
+T13	Connective 104 106	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T9	

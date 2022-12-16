@@ -1,0 +1,29 @@
+T1	Argument 0 38	二階建ての大型バスにおいて、エアコンユニット用配線のコネクタの防水性が不十分
+T2	Connective 39 41	ため
+T3	Argument 54 74	冬季の融雪剤を含む塩水等がコネクタに浸入
+T4	Connective 82 86	そのため
+T5	Argument 96 106	被水と乾燥を繰り返す
+T6	Connective 106 107	と
+T7	Argument 108 121	当該コネクタ内でのショート
+T8	Argument 122 136	コネクタ付近でのアークが発生
+T9	Connective 138 141	ことで
+T10	Argument 142 157	当該コネクタや配線の焼損が生じ
+T11	Argument 164 169	火災に至る
+T12	Connective 157 158	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	RESULT Arg1:T4 Arg2:T8	
+R8	RESULT Arg1:T6 Arg2:T8	
+R9	REASON Arg1:T9 Arg2:T7	
+R10	REASON Arg1:T9 Arg2:T8	
+R11	RESULT Arg1:T9 Arg2:T10	
+R12	REASON Arg1:T12 Arg2:T10	
+R13	RESULT Arg1:T12 Arg2:T11	
+T15	Argument 158 160	最悪
+T16	Connective 161 163	場合
+R16	CONDITION Arg1:T16 Arg2:T15	
+R17	RESULT Arg1:T16 Arg2:T11	

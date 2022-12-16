@@ -1,0 +1,33 @@
+T1	Argument 10 32	ファンシュラウド（ファンの囲い）の強度が不足
+T2	Connective 36 38	ため
+T5	Connective 64 67	により
+T6	Argument 67 74	当該部品が破損
+T7	Argument 39 64	エンジンの振動・冷却ファンの風圧により発生する応力
+T8	Connective 77 81	そのため
+T9	Argument 82 92	そのまま使用を続ける
+T10	Connective 92 93	と
+T11	Argument 93 105	ファンシュラウドの破損片
+T12	Connective 105 108	により
+T13	Argument 108 117	ラジエーターが損傷
+T14	Connective 117 118	し
+T15	Argument 118 127	冷却水が著しく漏れ
+T16	Connective 127 128	、
+T17	Argument 128 130	最悪
+T18	Connective 131 133	場合
+T19	Argument 134 149	エンジンがオーバーヒートに至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T6	
+R5	REASON Arg1:T5 Arg2:T7	
+R6	RESULT Arg1:T5 Arg2:T6	
+R7	REASON Arg1:T8 Arg2:T6	
+R8	RESULT Arg1:T8 Arg2:T13	
+R9	CONDITION Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R15	REASON Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T19	
+R17	CONDITION Arg1:T18 Arg2:T17	
+R18	RESULT Arg1:T18 Arg2:T19	

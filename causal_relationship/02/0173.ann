@@ -1,0 +1,25 @@
+T1	Argument 0 9	車枠の強度が不十分
+T2	Argument 13 44	左側車枠とアクスルをつないでいるラジアスロットのブッシュが損傷
+T3	Argument 50 68	車枠の当該取付部分にかかる荷重が増大
+T4	Argument 76 84	車枠に亀裂が入り
+T5	Argument 91 96	車枠が折損
+T6	Argument 98 105	走行不能となる
+T7	Connective 10 12	ため
+T8	Connective 46 48	場合
+T9	Connective 72 75	により
+T10	Connective 84 85	、
+T11	Connective 97 98	て
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T4	
+R3	CONDITION Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T5	
+R9	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	
+T12	Argument 85 87	最悪
+T13	Connective 88 90	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T5	

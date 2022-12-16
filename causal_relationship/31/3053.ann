@@ -1,0 +1,62 @@
+T1	Argument 37 65	スクリーニング工程において、作業者が誤って電池セルを落下
+T2	Connective 67 68	、
+T3	Argument 106 133	移動したエレメントと集電体の隙間が減少した不良品を流出
+T4	Connective 136 138	ため
+T5	Argument 144 160	充電中に電池セルの内部短絡が発生
+T6	Connective 168 172	そのため
+T7	Argument 173 178	電圧が低下
+T8	Argument 200 202	最悪
+T9	Connective 203 205	場合
+T10	Argument 206 223	電池セルおよび周辺部品の一部が溶損
+T11	Argument 227 258	スクリーニング工程の不活性化工程において、衝撃値の設定が不適切
+T12	Connective 261 262	、
+T13	Argument 262 292	電池セル内部部品（エレメント）の一部から剥離した銅異物が発生
+T14	Connective 293 294	、
+T15	Argument 315 325	軽微な内部短絡が発生
+T16	Connective 333 337	そのため
+T17	Argument 338 343	電圧が低下
+T18	Connective 344 345	、
+T19	Argument 345 357	ＥＶシステム警告灯が点灯
+R1	RESULT Arg1:T18 Arg2:T19	
+R2	REASON Arg1:T18 Arg2:T17	
+R3	RESULT Arg1:T16 Arg2:T17	
+R4	REASON Arg1:T16 Arg2:T15	
+R6	REASON Arg1:T14 Arg2:T13	
+R7	RESULT Arg1:T12 Arg2:T13	
+R8	REASON Arg1:T12 Arg2:T11	
+R9	REASON Arg1:T2 Arg2:T1	
+R10	RESULT Arg1:T2 Arg2:T25	
+R11	REASON Arg1:T4 Arg2:T3	
+R12	RESULT Arg1:T4 Arg2:T5	
+R13	REASON Arg1:T6 Arg2:T5	
+R14	RESULT Arg1:T6 Arg2:T7	
+R17	CONDITION Arg1:T9 Arg2:T8	
+R18	RESULT Arg1:T9 Arg2:T10	
+T21	Connective 306 309	ことで
+T22	Argument 294 306	同工程中に正極に運ばれる
+R19	RESULT Arg1:T21 Arg2:T15	
+R20	REASON Arg1:T21 Arg2:T22	
+R5	RESULT Arg1:T14 Arg2:T15	
+T23	Argument 3 14	電気自動車の駆動用電池
+T25	Argument 68 85	電池セル内部部品のエレメントが移動
+T26	Connective 104 105	で
+R23	RESULT Arg1:T26 Arg2:T3	
+T27	Connective 178 179	、
+T28	Argument 179 191	ＥＶシステム警告灯が点灯
+T29	Connective 191 192	し
+T30	Argument 192 196	走行不能
+R15	REASON Arg1:T27 Arg2:T7	
+R24	RESULT Arg1:T27 Arg2:T28	
+R25	REASON Arg1:T29 Arg2:T28	
+R26	RESULT Arg1:T29 Arg2:T30	
+T32	Argument 358 362	走行不能
+R27	RESULT Arg1:T18 Arg2:T32	
+T31	Connective 14 18	において
+R21	CONDITION Arg1:T31 Arg2:T23	
+T24	Argument 86 100	エレメントのセパレータが損傷
+R22	RESULT Arg1:T2 Arg2:T24	
+R28	REASON Arg1:T26 Arg2:T25	
+R29	REASON Arg1:T26 Arg2:T24	
+R16	RESULT Arg1:T6 Arg2:T10	
+R30	RESULT Arg1:T31 Arg2:T1	
+R31	RESULT Arg1:T31 Arg2:T11	

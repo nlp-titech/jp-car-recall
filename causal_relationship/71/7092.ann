@@ -1,0 +1,13 @@
+T1	Argument 0 24	シフトロック装置において、制御プログラムが不適切
+T2	Connective 25 27	ため
+T3	Argument 28 65	停車中ハイブリッド用エンジンが始動時または停止時にシフトロックが作動しない
+T4	Connective 71 75	そのため
+T5	Argument 76 107	ブレーキを踏まずにＰレンジからＤまたはＲレンジにシフト操作可能
+T6	Argument 111 121	意図せず車が動き出す
+T7	Connective 107 110	となり
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	

@@ -1,0 +1,25 @@
+T1	Argument 7 33	後輪制動装置において、ブレーキチャンバーの強度が不足
+T3	Argument 40 87	高速道路における路側帯との区分線（バイブラライン）上を時速８０ｋｍ／ｈで走行した際の振動周波数
+T4	Argument 91 107	ブレーキチャンバーに亀裂が生じる
+T5	Argument 118 132	そのままの状態で使用を続ける
+T6	Argument 133 138	亀裂が進行
+T7	Argument 140 142	最悪
+T8	Argument 146 156	当該チャンバーが分離
+T9	Connective 37 39	ため
+T11	Connective 87 91	によって
+T12	Connective 113 117	そのため
+T13	Connective 132 133	と
+T14	Connective 139 140	、
+T15	Connective 143 145	場合
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T4	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+R7	REASON Arg1:T12 Arg2:T4	
+R9	CONDITION Arg1:T13 Arg2:T5	
+R10	RESULT Arg1:T13 Arg2:T6	
+R11	REASON Arg1:T14 Arg2:T6	
+R13	CONDITION Arg1:T15 Arg2:T7	
+R14	RESULT Arg1:T15 Arg2:T8	
+R3	RESULT Arg1:T12 Arg2:T6	
+R4	RESULT Arg1:T14 Arg2:T8	

@@ -1,0 +1,10 @@
+T1	Argument 3 29	エンジンコントロールユニットの制御プログラムが不適切
+T2	Connective 30 32	ため
+T3	Argument 33 82	排出ガスに含まれる窒素酸化物（ＮＯｘ）排出量が、平成１７年基準排出ガス７５％低減レベルを満たさない
+T4	Argument 119 145	車載式故障診断装置（ＯＢＤ）の制御プログラムが不適切
+T5	Connective 146 148	ため
+T6	Argument 149 162	適切な故障診断が行われない
+R1	REASON Arg1:T5 Arg2:T4	
+R2	RESULT Arg1:T5 Arg2:T6	
+R3	REASON Arg1:T2 Arg2:T1	
+R4	RESULT Arg1:T2 Arg2:T3	

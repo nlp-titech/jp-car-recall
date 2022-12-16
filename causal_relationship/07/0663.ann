@@ -1,0 +1,25 @@
+T1	Argument 0 22	前軸油圧サスペンションブラケットの強度が不足
+T2	Argument 29 39	走行時の振動及び衝撃
+T3	Argument 42 47	亀裂が発生
+T4	Argument 60 70	そのまま使用を続ける
+T5	Argument 71 76	亀裂が進行
+T6	Argument 78 85	車両姿勢が変化
+T7	Argument 93 101	走行安定性が低下
+T8	Connective 26 28	ため
+T9	Connective 39 42	により
+T10	Connective 55 59	そのため
+T11	Connective 70 71	と
+T12	Connective 77 78	、
+T13	Connective 89 92	により
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T3	
+R3	REASON Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T3	
+R5	REASON Arg1:T10 Arg2:T3	
+R6	RESULT Arg1:T10 Arg2:T5	
+R7	CONDITION Arg1:T11 Arg2:T4	
+R8	RESULT Arg1:T11 Arg2:T5	
+R9	REASON Arg1:T12 Arg2:T5	
+R10	RESULT Arg1:T12 Arg2:T6	
+R11	REASON Arg1:T13 Arg2:T6	
+R12	RESULT Arg1:T13 Arg2:T7	

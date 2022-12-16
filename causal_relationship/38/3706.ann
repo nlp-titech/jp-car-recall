@@ -1,0 +1,17 @@
+T1	Argument 14 70	ＤＰＦ（ディーゼル粒子状物質除去装置）において、高速走行などの高負荷運転後の再生（捕集した粒子状物質の燃焼除去）
+T2	Argument 73 82	排気ガス温度が高い
+T3	Argument 93 144	高速走行などの高負荷運転後に、排気管出口付近が草などで覆われるような場所に停車してＤＰＦの再生を行なっ
+T4	Argument 148 160	排気管後方の草などが発火
+T5	Argument 162 169	車体などを焼損
+T6	Connective 70 72	時に
+T8	Connective 88 92	そのため
+T9	Connective 145 147	場合
+T10	Connective 161 162	、
+R1	CONDITION Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R5	RESULT Arg1:T8 Arg2:T4	
+R6	CONDITION Arg1:T9 Arg2:T3	
+R7	RESULT Arg1:T9 Arg2:T4	
+R8	REASON Arg1:T10 Arg2:T4	
+R9	RESULT Arg1:T10 Arg2:T5	
+R4	REASON Arg1:T8 Arg2:T2	

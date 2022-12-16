@@ -1,0 +1,24 @@
+T1	Argument 0 43	過給器のインタークーラーにおいて、インタークーラーホースを繋ぐ中間パイプの設計が不適切
+T2	Argument 47 50	過給圧
+T3	Argument 53 62	当該ホースが抜ける
+T4	Argument 73 94	ホースが抜けた箇所からエンジンオイルが飛散
+T5	Argument 106 108	最悪
+T6	Argument 112 117	火災となる
+T7	Connective 44 46	ため
+T8	Connective 50 53	により
+T9	Connective 68 72	そのため
+T10	Argument 100 104	出力低下
+T11	Connective 105 106	、
+T12	Connective 109 111	場合
+R1	REASON Arg1:T7 Arg2:T1	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	RESULT Arg1:T9 Arg2:T10	
+R8	REASON Arg1:T11 Arg2:T10	
+R10	CONDITION Arg1:T12 Arg2:T5	
+R11	RESULT Arg1:T12 Arg2:T6	
+R2	RESULT Arg1:T7 Arg2:T3	
+R9	RESULT Arg1:T11 Arg2:T6	
+R12	REASON Arg1:T11 Arg2:T4	

@@ -1,0 +1,29 @@
+T1	Argument 0 32	刈取脱穀作業車の変速装置において、副変速切換アームの設計が不適切
+T2	Argument 36 46	ギヤが切り換えにくい
+T3	Argument 49 55	変速操作を行
+T4	Argument 60 71	副変速切換アームが変形
+T6	Argument 100 111	副変速切換アームが損傷
+T7	Argument 113 115	最悪
+T8	Argument 119 126	走行不能に至る
+T9	Connective 33 35	ため
+T10	Connective 48 49	で
+T11	Connective 57 59	場合
+T12	Connective 79 83	そのため
+T13	Connective 98 99	と
+T14	Connective 112 113	、
+T15	Connective 116 118	場合
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T4	
+R3	CONDITION Arg1:T10 Arg2:T2	
+R5	CONDITION Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+R7	REASON Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T6	
+R10	RESULT Arg1:T13 Arg2:T6	
+R11	REASON Arg1:T14 Arg2:T6	
+R12	RESULT Arg1:T14 Arg2:T8	
+R13	CONDITION Arg1:T15 Arg2:T7	
+R14	RESULT Arg1:T15 Arg2:T8	
+R4	RESULT Arg1:T10 Arg2:T3	
+T16	Argument 84 98	そのままの状態で使用を続ける
+R15	CONDITION Arg1:T13 Arg2:T16	

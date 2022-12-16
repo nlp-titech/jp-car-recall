@@ -1,0 +1,9 @@
+T1	Argument 0 33	幼児拘束装置（チャイルドシート）の「取扱説明書」の内容が一部不適切
+T2	Connective 34 36	ため
+T3	Argument 37 44	誤った使用方法
+T4	Connective 44 47	により
+T5	Argument 48 58	保安基準不適合となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

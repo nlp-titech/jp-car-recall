@@ -1,0 +1,17 @@
+T1	Argument 0 81	樹脂製燃料タンクに溶着されているベントリング（走行中に液体の燃料が燃料蒸発ガス吸着キャニスタに吸い込まれないためのベントバルブが接続されているもの）の成型が不適切
+T2	Connective 84 85	、
+T3	Argument 106 120	当該ベントリングに亀裂が入る
+T4	Connective 126 130	そのため
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 142 158	当該ベントリングから燃料が漏れる
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 85 102	当該燃料タンクの膨張収縮の繰り返し
+T7	Connective 102 105	により
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 131 139	燃料の残量が多い
+T9	Connective 139 141	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

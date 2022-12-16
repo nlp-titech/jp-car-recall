@@ -1,0 +1,17 @@
+T1	Argument 0 31	交換修理用の排気管において、標準より肉厚の薄い管を使用して製造
+T2	Connective 33 35	ため
+T3	Argument 36 45	排気管の強度が不足
+T4	Connective 55 59	そのため
+T5	Argument 72 78	排気管が損傷
+T6	Connective 79 80	、
+T7	Argument 80 85	騒音が増大
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 60 70	そのまま使用を続ける
+T9	Connective 70 71	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

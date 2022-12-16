@@ -1,0 +1,29 @@
+T1	Argument 0 28	エンジンの防振ゴム付クランクプーリにおいて、構造が不適切
+T3	Argument 40 62	クランクプーリ本体と防振ゴム部の接着面が剥離
+T4	Argument 75 92	当該クランクプーリのリング部が空転
+T5	Argument 97 108	発電機が作動しなくなり
+T6	Argument 109 116	エンジンが停止
+T7	Argument 128 130	最悪
+T8	Argument 134 150	外れたリング部が他の交通への妨げ
+T9	Connective 29 31	ため
+T11	Connective 70 74	そのため
+T12	Connective 96 97	、
+T13	Connective 108 109	、
+T14	Connective 131 133	場合
+R1	REASON Arg1:T9 Arg2:T1	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+R7	REASON Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T5	
+R9	REASON Arg1:T13 Arg2:T5	
+R10	RESULT Arg1:T13 Arg2:T6	
+R12	CONDITION Arg1:T14 Arg2:T7	
+R13	RESULT Arg1:T14 Arg2:T8	
+R2	RESULT Arg1:T9 Arg2:T3	
+T2	Argument 32 36	使用過程
+T10	Connective 36 40	において
+R4	CONDITION Arg1:T10 Arg2:T2	
+R11	RESULT Arg1:T10 Arg2:T3	
+T15	Argument 94 96	外れ
+R14	RESULT Arg1:T11 Arg2:T15	
+R15	RESULT Arg1:T12 Arg2:T15	

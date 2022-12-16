@@ -1,0 +1,21 @@
+T1	Argument 0 19	制動用エアタンクブラケットの強度が不足
+T2	Connective 23 25	ため
+T3	Argument 26 39	当該ブラケットに亀裂が発生
+R1	RESULT Arg1:T2 Arg2:T3	
+R2	REASON Arg1:T2 Arg2:T1	
+T5	Argument 53 63	当該ブラケットが折損
+T6	Connective 64 65	、
+T7	Argument 65 79	ブレーキ用エアチュ－ブが損傷
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	REASON Arg1:T6 Arg2:T5	
+T8	Connective 80 81	て
+T9	Argument 82 88	制動力が低下
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T4	Argument 47 49	最悪
+T10	Connective 50 52	場合
+R3	CONDITION Arg1:T10 Arg2:T4	
+R4	RESULT Arg1:T10 Arg2:T5	
+T11	Connective 46 47	。
+R9	REASON Arg1:T11 Arg2:T3	
+R10	RESULT Arg1:T11 Arg2:T5	

@@ -1,0 +1,17 @@
+T1	Argument 45 53	ガス発生剤が劣化
+T2	Argument 0 42	運転者席側エアバッグのインフレータ（膨張装置）において、高温多湿の環境下での長期使用
+T3	Argument 66 74	エアバッグ展開時
+T4	Argument 75 88	インフレータ内圧が異常上昇
+T5	Argument 91 102	インフレータ容器が破損
+T6	Connective 42 45	により
+T7	Connective 61 65	そのため
+T8	Connective 74 75	に
+T9	Connective 89 90	て
+R1	REASON Arg1:T6 Arg2:T2	
+R2	RESULT Arg1:T6 Arg2:T1	
+R3	REASON Arg1:T7 Arg2:T1	
+R5	CONDITION Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+R4	RESULT Arg1:T7 Arg2:T4	

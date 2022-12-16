@@ -1,0 +1,13 @@
+T1	Argument 39 55	バルブ（逆止弁）の組付けに不適切
+T2	Connective 61 63	ため
+T5	Argument 64 83	高温時等でタンクの内圧が非常に高くなっ
+T6	Connective 84 85	時
+T7	Argument 86 96	キャップを急に開ける
+T8	Connective 96 97	と
+T9	Argument 97 113	注入口から燃料の一部がこぼれ出る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T9	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R3	RESULT Arg1:T6 Arg2:T9	

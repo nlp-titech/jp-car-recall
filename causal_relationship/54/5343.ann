@@ -1,0 +1,25 @@
+T1	Argument 18 47	定速走行装置解除スイッチにおいて、内部のシール構造が不適切
+T2	Connective 48 50	ため
+T3	Argument 51 59	ブレーキ液が漏れ
+T4	Connective 59 60	て
+T5	Argument 60 65	接点が腐食
+T6	Connective 73 77	そのため
+T7	Argument 78 85	スイッチが過熱
+T8	Argument 88 90	溶解
+T9	Connective 87 88	て
+T10	Argument 98 103	火災に至る
+T11	Connective 91 92	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+R9	REASON Arg1:T11 Arg2:T8	
+R10	RESULT Arg1:T11 Arg2:T10	
+T12	Argument 92 94	最悪
+T13	Connective 95 97	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T10	

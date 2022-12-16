@@ -1,0 +1,5 @@
+T1	Argument 11 53	ブレーキ液圧低下警報ブザーの圧力スイッチにおいて、当該スイッチの作動圧の設定に不適切
+T2	Connective 59 61	ため
+T3	Argument 62 93	ブレーキ液圧が低下していない状態にもかかわらず警報ブザーが鳴る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

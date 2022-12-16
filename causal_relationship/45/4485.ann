@@ -1,0 +1,17 @@
+T1	Argument 0 46	後面方向指示器を取り付けているステーの組付作業時に、当該ステー又はラバーに過大な荷重が加わっ
+T2	Connective 52 53	、
+T3	Argument 79 92	当該ステー又はラバーが損傷
+T4	Connective 93 94	て
+T5	Argument 95 105	後面方向指示器が脱落
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 53 67	そのままの状態で使用を続ける
+T7	Connective 67 68	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 69 76	走行中の振動等
+T9	Connective 76 79	により
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	

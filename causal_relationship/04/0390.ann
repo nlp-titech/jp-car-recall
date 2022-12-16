@@ -1,0 +1,29 @@
+T1	Argument 0 46	手動変速機付車の動力伝達装置において、シフトレバーの固定作業の際のグリースの除去作業が不適切
+T2	Argument 50 61	ネジ穴にグリースが付着
+T3	Argument 63 75	ゆるみ防止剤の効果を失っ
+T4	Argument 106 112	ボルトが緩ん
+T5	Argument 113 115	脱落
+T6	Argument 117 129	シフト操作ができなくなる
+T7	Connective 47 49	ため
+T8	Connective 62 63	、
+T9	Connective 83 84	、
+T10	Connective 112 113	で
+T11	Connective 116 117	、
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T5	
+R9	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	
+T12	Argument 84 98	そのままの状態で使用を続ける
+T13	Connective 98 99	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T4	
+T14	Argument 100 102	最悪
+T15	Connective 103 105	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T4	

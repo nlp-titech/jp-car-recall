@@ -1,0 +1,25 @@
+T1	Argument 32 60	第３車軸（スピンドル）部に材料の疲労限を超える応力が発生
+T2	Connective 68 72	そのため
+T3	Argument 0 27	クレーン用台車にクレーン部を装着したままで現場内を移動
+T4	Connective 29 31	場合
+R1	CONDITION Arg1:T4 Arg2:T3	
+R2	RESULT Arg1:T4 Arg2:T1	
+R3	REASON Arg1:T2 Arg2:T1	
+T5	Argument 85 98	当該スピンドルに亀裂が入り
+T6	Argument 119 131	一般路走行時に車輪が脱落
+R4	RESULT Arg1:T2 Arg2:T5	
+T7	Connective 98 99	、
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	
+T8	Argument 73 83	そのまま使用を続ける
+T9	Connective 83 84	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 99 101	最悪
+T11	Connective 102 104	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T6	
+T12	Argument 105 116	クレーン部を装着しない
+T13	Connective 116 119	状態で
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T6	

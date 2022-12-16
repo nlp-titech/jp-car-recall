@@ -1,0 +1,13 @@
+T1	Argument 0 26	燃料配管（デリバリパイプ）の取付ボルトの耐食性が不足
+T2	Connective 30 32	ため
+T3	Argument 33 49	取付ボルトが応力腐食によって折損
+R1	RESULT Arg1:T2 Arg2:T3	
+R2	REASON Arg1:T2 Arg2:T1	
+T4	Connective 57 61	そのため
+T5	Argument 62 83	燃料配管と燃料噴射装置の接続部に隙間が生じ
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	REASON Arg1:T4 Arg2:T3	
+T6	Connective 83 84	、
+T7	Argument 84 90	燃料が漏れる
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	REASON Arg1:T6 Arg2:T5	

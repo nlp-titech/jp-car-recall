@@ -1,0 +1,25 @@
+T1	Argument 0 44	リアショックアブソーバ下側取付部のブッシュの外周の金属プレートとゴムとの接合加工が不適切
+T2	Connective 45 47	ため
+T3	Argument 48 57	金属プレートが剥離
+T4	Connective 65 69	そのため
+T5	Argument 82 99	ショックアブソーバとブッシュが分離
+T6	Connective 100 101	、
+T7	Argument 107 124	ショックアブソーバが取付部から外れ
+T8	Connective 124 125	、
+T9	Argument 125 134	走行安定性を損なう
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 70 80	そのまま使用を続ける
+T11	Connective 80 81	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	
+T12	Argument 101 103	最悪
+T13	Connective 104 106	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T7	

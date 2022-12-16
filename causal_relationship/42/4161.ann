@@ -1,0 +1,43 @@
+T1	Argument 32 46	燃焼時に発生する煤の量が増え
+T2	Connective 46 47	、
+T3	Argument 47 59	インジェクタ噴孔部に堆積
+T4	Connective 60 61	、
+T5	Argument 61 71	燃料の噴霧状態が悪化
+T6	Connective 75 76	で
+T7	Argument 77 86	さらに煤の量が増え
+T8	Connective 86 87	、
+T9	Argument 87 101	排気側バルブガイド周辺に堆積
+T10	Argument 14 30	低車速で加減速する走行を繰り返す
+T11	Connective 30 31	と
+R1	CONDITION Arg1:T11 Arg2:T10	
+R2	RESULT Arg1:T11 Arg2:T1	
+R3	REASON Arg1:T2 Arg2:T1	
+R4	RESULT Arg1:T2 Arg2:T3	
+R5	REASON Arg1:T4 Arg2:T3	
+R6	RESULT Arg1:T4 Arg2:T5	
+R7	REASON Arg1:T6 Arg2:T5	
+R8	RESULT Arg1:T6 Arg2:T7	
+R9	REASON Arg1:T8 Arg2:T7	
+R10	RESULT Arg1:T8 Arg2:T9	
+T12	Connective 109 113	そのため
+T13	Argument 114 127	排気バルブが動きにくくなり
+T14	Connective 127 128	、
+T15	Argument 128 132	圧縮低下
+T16	Connective 132 135	による
+T17	Argument 135 147	加速不良や車体振動が発生
+T19	Argument 154 164	エンジン警告灯が点灯
+T20	Argument 168 177	グローランプが点滅
+T21	Argument 185 192	エンジンが停止
+R11	REASON Arg1:T12 Arg2:T9	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R15	REASON Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T17	
+R17	RESULT Arg1:T16 Arg2:T19	
+R18	RESULT Arg1:T16 Arg2:T20	
+R19	RESULT Arg1:T16 Arg2:T21	
+T18	Argument 179 181	最悪
+T22	Connective 182 184	場合
+R20	CONDITION Arg1:T22 Arg2:T18	
+R21	RESULT Arg1:T22 Arg2:T21	

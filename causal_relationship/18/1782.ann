@@ -1,0 +1,9 @@
+T1	Argument 0 17	後輪タイヤとフェンダーの隙間が不足
+T2	Connective 21 23	ため
+T3	Argument 24 33	悪路、段差等を走行
+T4	Connective 35 36	と
+T5	Argument 36 48	タイヤがフェンダーに接触
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

@@ -1,0 +1,21 @@
+T1	Argument 0 41	農業用薬剤散布車の後退灯スイッチにおいて、当該スイッチのハーネスの配索指示が不適切
+T2	Argument 45 60	前後進操作レバーを繰り返し操作
+T3	Argument 63 70	ハーネスが断線
+T4	Argument 83 97	そのままの状態で使用を続ける
+T6	Argument 99 101	後進
+T7	Connective 42 44	ため
+T8	Connective 62 63	と
+T9	Connective 78 82	そのため
+T10	Connective 97 98	と
+R1	REASON Arg1:T7 Arg2:T1	
+R3	CONDITION Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R7	CONDITION Arg1:T10 Arg2:T4	
+R2	RESULT Arg1:T7 Arg2:T3	
+T13	Connective 103 105	際に
+T14	Argument 105 114	後退灯が点灯しない
+R9	RESULT Arg1:T13 Arg2:T14	
+R10	CONDITION Arg1:T13 Arg2:T6	
+R8	RESULT Arg1:T9 Arg2:T14	
+R6	RESULT Arg1:T10 Arg2:T14	

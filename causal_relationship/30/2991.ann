@@ -1,0 +1,17 @@
+T1	Argument 0 31	動力伝達装置においてトランスミッションの副変速ギアに異品が混入
+T2	Connective 33 35	ため
+T3	Argument 36 44	熱処理硬度が不足
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 52 56	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 68 75	当該ギアが破損
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 76 77	、
+T7	Argument 77 84	走行不能となる
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 57 67	そのまま使用を続ける
+T9	Connective 67 68	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

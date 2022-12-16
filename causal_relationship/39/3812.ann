@@ -1,0 +1,13 @@
+T1	Argument 40 59	側方照射灯の電気配線の配索指示が不適切
+T2	Argument 63 83	側方照射灯の電気回路に電源が供給されない
+T3	Argument 106 111	点灯しない
+T4	Connective 60 62	ため
+T5	Connective 84 88	そのため
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	
+T6	Argument 89 104	側方照射灯の点灯する操作を行っ
+T7	Connective 105 106	も
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	

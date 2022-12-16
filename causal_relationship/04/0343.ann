@@ -1,0 +1,25 @@
+T1	Argument 0 28	前輪制動装置のマスターシリンダのゴムカバーに気密性が不良
+T2	Argument 53 65	シリンダー内に水分が侵入
+T3	Argument 86 93	ピストンが固着
+T4	Connective 34 36	ため
+T5	Connective 79 80	、
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T12	
+R4	RESULT Arg1:T5 Arg2:T3	
+T6	Connective 69 72	により
+T12	Argument 72 79	ピストンが錆び
+R5	REASON Arg1:T6 Arg2:T2	
+R6	RESULT Arg1:T6 Arg2:T12	
+T13	Connective 93 94	し
+T14	Argument 94 105	制動を解除できなくなる
+R7	REASON Arg1:T13 Arg2:T3	
+R8	RESULT Arg1:T13 Arg2:T14	
+T7	Argument 37 51	そのままの状態で使用を続ける
+T8	Connective 51 52	と
+R9	CONDITION Arg1:T8 Arg2:T7	
+R10	RESULT Arg1:T8 Arg2:T2	
+T9	Argument 80 82	最悪
+T10	Connective 83 85	場合
+R11	CONDITION Arg1:T10 Arg2:T9	
+R12	RESULT Arg1:T10 Arg2:T3	

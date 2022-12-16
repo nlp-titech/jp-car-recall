@@ -1,0 +1,17 @@
+T1	Argument 0 29	燃料ポンプと燃料タンクとの間のシール（気密材）に亀裂が生じ
+T2	Connective 37 39	ため
+T3	Argument 56 73	当該燃料ポンプ取付部より燃料が漏れ
+T4	Connective 73 74	、
+T5	Argument 80 85	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 40 54	そのままの状態で使用を続ける
+T7	Connective 54 55	と
+T8	Argument 74 76	最悪
+T9	Connective 77 79	場合
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

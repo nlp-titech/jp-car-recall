@@ -1,0 +1,15 @@
+T1	Argument 32 45	スパークプラグの先端が損傷
+T2	Connective 55 59	そのため
+T3	Argument 60 80	スパークプラグによる点火が正しく行われず
+T4	Connective 80 81	、
+T5	Argument 81 91	エンジンが不調となる
+T6	Argument 94 108	排出ガス値が基準を満たさない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T6	
+T7	Argument 15 28	取り付け工具の不適切な使用
+T8	Connective 29 31	より
+R6	REASON Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T1	

@@ -1,0 +1,26 @@
+T1	Argument 0 37	放電式すれ違い用前照灯の電子制御ユニット（ＥＣＵ）内部のプログラムが不適切
+T2	Connective 38 40	ため
+T5	Argument 45 69	点灯直後の電圧低下を前照灯回路のショートと誤判定
+T6	Argument 80 107	当該ＥＣＵ内部のインバータ回路のトランスに不良品が混入
+T7	Connective 109 111	ため
+T8	Argument 112 119	ショートが発生
+T9	Connective 120 121	、
+T10	Argument 121 127	コイルが損傷
+T11	Connective 128 129	て
+T12	Argument 129 140	ＥＣＵが電力供給を停止
+T13	Connective 148 152	そのため
+T14	Argument 153 167	すれ違い用前照灯が不灯となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T8	
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T10	
+R9	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T12	
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T14	
+T3	Argument 41 43	低温
+T4	Connective 43 44	時
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

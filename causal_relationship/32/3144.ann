@@ -1,0 +1,31 @@
+T1	Argument 0 62	ショベルローダのワイヤーハーネスにおいて、当該ハーネスを保護するコルゲートチューブ内部に水が溜った状態で冷熱サイクルを繰返す
+T2	Connective 62 63	と
+T3	Argument 72 94	水がハーネスジョイント部から電気配線を伝わり
+T4	Connective 113 117	そのため
+T5	Argument 118 132	そのままの状態で使用を続ける
+T6	Connective 132 133	と
+T7	Argument 134 148	集合カプラー内部の端子が腐食
+T8	Connective 157 160	ことで
+R2	REASON Arg1:T8 Arg2:T13	
+R3	RESULT Arg1:T6 Arg2:T7	
+R4	CONDITION Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T7	
+R6	REASON Arg1:T4 Arg2:T9	
+R7	RESULT Arg1:T2 Arg2:T3	
+R8	CONDITION Arg1:T2 Arg2:T1	
+T10	Argument 64 69	毛細菅現象
+T11	Connective 69 72	により
+R9	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	
+T12	Connective 149 150	て
+T13	Argument 150 157	通電しなくなる
+R11	REASON Arg1:T12 Arg2:T7	
+R12	RESULT Arg1:T12 Arg2:T13	
+T14	Argument 180 189	エンジンの始動不良
+R13	RESULT Arg1:T8 Arg2:T14	
+T16	Argument 161 179	警音器、方向指示器、前照灯の作動不良
+R1	RESULT Arg1:T8 Arg2:T16	
+T9	Argument 94 105	集合カプラー内部に浸入
+T15	Connective 93 94	り
+R14	REASON Arg1:T15 Arg2:T3	
+R15	RESULT Arg1:T15 Arg2:T9	

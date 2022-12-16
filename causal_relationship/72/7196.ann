@@ -1,0 +1,13 @@
+T1	Argument 0 33	アクセルペダルの二重リターンスプリングにおいて、－１０℃以下の寒冷
+T2	Connective 33 34	時
+T3	Argument 39 54	リターンスプリングの１つが破損
+T4	Connective 56 59	場合に
+T5	Argument 60 90	アクセルペダルから足を離してもアクセルペダルの戻りが遅くなる
+T6	Connective 96 100	そのため
+T7	Argument 101 117	エンジン回転の下がり方が遅くなる
+R1	CONDITION Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

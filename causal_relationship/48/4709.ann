@@ -1,0 +1,25 @@
+T1	Argument 0 37	ブレーキ倍力装置の負圧逆流防止弁において、当該逆流防止弁の材質に一部不適切
+T2	Connective 43 44	、
+T3	Argument 44 57	当該逆流防止弁の内部が破損
+T4	Connective 58 59	、
+T5	Argument 59 71	その破片が負圧回路を塞ぎ
+T6	Connective 70 71	ぎ
+T7	Argument 71 85	ブレーキ倍力装置の機能を低下
+T8	Connective 87 88	、
+T9	Argument 116 122	制動力が低下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 88 90	最悪
+T11	Connective 91 93	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T9	
+T12	Argument 94 112	ブレーキペダルを短時間に繰り返し操作
+T13	Connective 114 115	際
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T9	

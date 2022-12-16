@@ -1,0 +1,25 @@
+T1	Argument 0 46	かじ取り装置において、ハンドルコラムシャフトを車体に固定している支持ブラケットの強度が不十分
+T2	Argument 69 84	当該支持ブラケットに亀裂が発生
+T3	Argument 86 97	ハンドルの固定が不安定
+T4	Argument 128 135	操舵不能になる
+T5	Connective 47 49	ため
+T6	Connective 85 86	て
+T7	Connective 105 106	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 50 67	ハンドルの急激な操作を繰り返し行う
+T9	Connective 67 68	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T2	
+T10	Argument 106 120	そのままの状態で使用を続ける
+T11	Connective 120 121	と
+T12	Argument 122 124	最悪
+T13	Connective 125 127	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	CONDITION Arg1:T13 Arg2:T12	
+R11	RESULT Arg1:T11 Arg2:T4	
+R12	RESULT Arg1:T13 Arg2:T4	

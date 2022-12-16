@@ -1,0 +1,17 @@
+T1	Argument 0 17	テールレンズのシーリング材が不適切
+T2	Argument 21 32	シーリング材の気化成分
+T3	Argument 35 59	発光ダイオード（ＬＥＤ）の電気基板の接続部が腐食
+T4	Argument 62 66	接触不良
+T5	Argument 80 94	尾灯および駐車灯が点灯しない
+T6	Connective 18 20	ため
+T7	Connective 32 35	により
+T8	Connective 60 61	て
+T9	Connective 76 80	そのため
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T3	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	

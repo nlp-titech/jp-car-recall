@@ -1,0 +1,21 @@
+T1	Argument 0 22	ＡＢＳコントロール・ユニットの防水性が不適切
+T2	Argument 26 48	当該ユニット端子部に融雪剤を含んだ水分が浸入
+T3	Argument 52 65	当該ユニットの端子間で短絡
+T4	Argument 67 77	ＡＢＳ機能が作動せず
+T5	Argument 78 80	最悪
+T6	Argument 84 89	火災に至る
+T7	Connective 23 25	ため
+T8	Connective 50 51	と
+T9	Connective 66 67	、
+T10	Connective 77 78	、
+T11	Connective 81 83	場合
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	CONDITION Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+R9	CONDITION Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	
+R8	RESULT Arg1:T9 Arg2:T6	

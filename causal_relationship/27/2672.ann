@@ -1,0 +1,25 @@
+T1	Argument 0 17	エアインテークダクトの構造が不適切
+T2	Connective 18 20	ため
+T3	Argument 21 43	当該ダクトの金属コネクタ部と燃料パイプが接触
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 51 55	そのため
+T5	Argument 56 64	燃料パイプが磨耗
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 64 65	し
+T7	Argument 72 82	当該パイプに穴が開き
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Connective 82 83	、
+T9	Argument 83 89	燃料が漏れる
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Connective 91 92	で
+T11	Argument 92 97	火災に至る
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 66 68	最悪
+T13	Connective 69 71	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T7	

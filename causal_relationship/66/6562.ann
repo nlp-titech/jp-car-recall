@@ -1,0 +1,9 @@
+T1	Argument 0 22	車両の外装において、ボディ形状の設計が不適切
+T2	Connective 23 25	ため
+T3	Argument 26 56	リアランプユニット端部の一部（曲率半径２．５ｍｍ未満）が露出
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 61 65	そのため
+T5	Argument 66 83	保安基準第１８条の基準に適合しない
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

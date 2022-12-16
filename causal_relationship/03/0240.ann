@@ -1,0 +1,17 @@
+T1	Argument 0 31	二輪自動車の加速装置において、スロットルケーブルの長さが不適切
+T2	Argument 44 79	スロットルグリップの当該ケーブル取付部がキルスイッチケースに引っかかり
+T3	Argument 86 100	原動機の回転が下がらなくなる
+T4	Connective 32 34	ため
+T5	Connective 79 80	、
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	
+T6	Argument 80 82	最悪
+T7	Connective 83 85	場合
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 35 42	スロットル全開
+T9	Connective 42 43	時
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T2	

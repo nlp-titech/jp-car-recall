@@ -1,0 +1,34 @@
+T1	Argument 0 81	ターボチャージャー付手動変速機車両において、エンジン吸気バルブ開閉タイミングを油圧で制御するためのオイルコントロールバルブ（ＯＣＶ）のカバー締付ボルトの軸力が低い
+T2	Connective 81 83	ため
+T3	Argument 84 97	高負荷高回転を継続して使用
+T4	Connective 99 101	場合
+T5	Argument 102 114	エンジン内部の負圧が増大
+T6	Connective 115 116	、
+T7	Argument 116 128	ＯＣＶのガスケットの変形
+T8	Connective 128 131	により
+T9	Argument 131 144	当該ボルトの軸力が更に低下
+T10	Connective 152 156	そのため
+T11	Argument 165 175	エンジンオイルが漏れ
+T12	Connective 175 176	、
+T13	Argument 176 178	最悪
+T14	Connective 179 181	場合
+T15	Argument 182 187	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T15	
+R13	CONDITION Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+T17	Argument 157 165	当該ボルトが緩み
+T23	Connective 164 165	み
+R10	RESULT Arg1:T23 Arg2:T11	
+R15	REASON Arg1:T23 Arg2:T17	
+R16	RESULT Arg1:T10 Arg2:T17	
+#1	AnnotatorNotes T11	「み、エ」

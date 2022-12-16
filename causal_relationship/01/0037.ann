@@ -1,0 +1,37 @@
+T1	Argument 0 31	自動変速機の油圧を制御する電子制御装置のプログラムに一部不適切
+T2	Argument 83 91	当該装置が誤作動
+T3	Argument 93 100	制御油圧が低下
+T4	Argument 124 138	自動変速機の内部摩擦材が摩耗
+T5	Argument 141 158	摩耗粉により自動変速機の性能が低下
+T6	Argument 166 174	走行不能にいたる
+T7	Argument 38 46	バッテリーが劣化
+T8	Argument 52 77	医療用機器の高い電気負荷をかけたままエンジンを始動
+T9	Connective 37 38	、
+T10	Connective 50 51	で
+T11	Connective 80 82	場合
+T12	Connective 92 93	て
+T13	Connective 103 107	このため
+T14	Connective 139 140	て
+T15	Connective 159 160	、
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T2	
+R3	CONDITION Arg1:T10 Arg2:T7	
+R4	RESULT Arg1:T10 Arg2:T8	
+R5	CONDITION Arg1:T11 Arg2:T8	
+R6	RESULT Arg1:T11 Arg2:T2	
+R7	REASON Arg1:T12 Arg2:T2	
+R8	RESULT Arg1:T12 Arg2:T3	
+R9	REASON Arg1:T13 Arg2:T3	
+R10	RESULT Arg1:T13 Arg2:T4	
+R11	REASON Arg1:T14 Arg2:T4	
+R12	RESULT Arg1:T14 Arg2:T5	
+R13	REASON Arg1:T15 Arg2:T5	
+R14	RESULT Arg1:T15 Arg2:T6	
+T16	Connective 122 123	と
+T23	Argument 108 122	このままの状態で走行を続ける
+R15	CONDITION Arg1:T16 Arg2:T23	
+R16	RESULT Arg1:T16 Arg2:T4	
+T24	Connective 163 165	場合
+T25	Argument 160 162	最悪
+R17	CONDITION Arg1:T24 Arg2:T25	
+R18	RESULT Arg1:T24 Arg2:T6	

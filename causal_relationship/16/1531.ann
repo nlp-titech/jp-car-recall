@@ -1,0 +1,29 @@
+T1	Argument 0 49	ブレーキ倍力装置に負圧を供給するバキュームポンプを潤滑するオイル油路のユニオンボルトの設定が不適切
+T2	Argument 53 70	バキュームポンプへの潤滑油量が不足
+T3	Argument 97 114	バキュームポンプ内部のベーンが摩耗
+T4	Argument 116 122	ポンプが破損
+T5	Argument 124 134	負圧が発生しなくなり
+T6	Argument 141 150	制動距離が長くなる
+T7	Connective 134 135	、
+T8	Connective 123 124	て
+T9	Connective 115 116	、
+T10	Connective 50 52	ため
+T11	Connective 80 84	そのため
+R1	REASON Arg1:T10 Arg2:T1	
+R2	RESULT Arg1:T10 Arg2:T2	
+R3	REASON Arg1:T11 Arg2:T2	
+R4	RESULT Arg1:T11 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T8 Arg2:T4	
+R8	RESULT Arg1:T8 Arg2:T5	
+R9	REASON Arg1:T7 Arg2:T5	
+R10	RESULT Arg1:T7 Arg2:T6	
+T12	Argument 85 95	そのまま使用を続ける
+T13	Connective 95 96	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T3	
+T14	Argument 135 137	最悪
+T15	Connective 138 140	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T6	

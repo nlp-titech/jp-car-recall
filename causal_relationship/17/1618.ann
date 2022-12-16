@@ -1,0 +1,13 @@
+T1	Argument 0 48	除雪専用車にオプションとして設定されている二人乗りキャブ車両において、助手席の取付け位置が不適切
+T2	Connective 49 51	ため
+T3	Argument 52 70	当該座席が運転操作に必要な装置と重複
+T4	Connective 80 84	そのため
+T5	Argument 96 117	乗車人員が運転者の駐車ブレーキ操作を妨げる
+T6	Argument 85 91	助手席に乗車
+T7	Connective 93 95	場合
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T5	

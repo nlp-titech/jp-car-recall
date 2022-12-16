@@ -1,0 +1,17 @@
+T1	Argument 0 26	エンジンル－ム内の金属製燃料パイプの端部形状が不適切
+T2	Connective 27 29	ため
+T3	Argument 39 60	当該パイプに接続するゴム製燃料ホースが損傷
+T4	Connective 61 62	、
+T5	Argument 77 83	燃料が漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 30 36	車両の振動等
+T7	Connective 36 39	により
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 62 76	そのままの状態で使用を続ける
+T9	Connective 76 77	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

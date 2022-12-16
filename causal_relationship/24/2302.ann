@@ -1,0 +1,21 @@
+T1	Argument 0 33	クラッチマスターシリンダーに油圧配管を固定するクリップの強度が不足
+T2	Argument 40 51	クラッチ操作による油圧
+T4	Argument 54 63	当該クリップが損傷
+T5	Argument 76 83	当該配管が抜け
+T6	Argument 84 92	フルードが漏れる
+T7	Argument 97 110	クラッチ操作ができなくなる
+T8	Connective 94 97	により
+T9	Connective 71 75	そのため
+T10	Connective 51 54	により
+T12	Connective 37 39	ため
+R1	REASON Arg1:T12 Arg2:T1	
+R2	RESULT Arg1:T12 Arg2:T4	
+R5	REASON Arg1:T10 Arg2:T2	
+R6	RESULT Arg1:T10 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+T13	Connective 83 84	、
+R9	REASON Arg1:T13 Arg2:T5	
+R10	RESULT Arg1:T13 Arg2:T6	
+R11	REASON Arg1:T8 Arg2:T6	
+R12	RESULT Arg1:T8 Arg2:T7	

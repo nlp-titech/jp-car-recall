@@ -1,0 +1,17 @@
+T1	Argument 0 26	制動灯スイッチ内部の接点の電気負荷に対する容量が不足
+T2	Argument 33 44	ブレーキの繰り返し操作
+T3	Argument 47 52	接点が消耗
+T4	Argument 54 65	制動灯が点灯しなくなり
+T5	Argument 66 88	シフトレバーがパーキング位置から動かなくなる
+T6	Argument 92 99	再始動できない
+T7	Connective 30 32	ため
+T8	Connective 44 47	により
+T9	Connective 53 54	、
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T3	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	RESULT Arg1:T9 Arg2:T5	
+R8	RESULT Arg1:T9 Arg2:T6	

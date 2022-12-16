@@ -1,0 +1,21 @@
+T2	Connective 91 93	ため
+T3	Argument 138 162	出力軸を支えているベアリングが潤滑不良により破損
+R1	REASON Arg1:T2 Arg2:T7	
+R2	RESULT Arg1:T2 Arg2:T10	
+T10	Argument 94 110	当該トランスファの潤滑油が漏れる
+T11	Connective 115 116	、
+R3	REASON Arg1:T11 Arg2:T10	
+R4	RESULT Arg1:T11 Arg2:T3	
+T13	Connective 163 164	、
+T14	Argument 164 172	走行できなくなる
+R6	RESULT Arg1:T13 Arg2:T14	
+T4	Argument 116 130	このままの状態で使用を続ける
+T5	Connective 130 131	と
+T6	Argument 132 134	最悪
+T8	Connective 135 137	場合
+R7	CONDITION Arg1:T5 Arg2:T4	
+R8	CONDITION Arg1:T8 Arg2:T6	
+R9	RESULT Arg1:T5 Arg2:T3	
+R10	RESULT Arg1:T8 Arg2:T3	
+T7	Argument 0 85	４輪駆動車における後輪に動力を伝達するためのギヤボックス（トランスファ）において、入力軸ケースと出力軸ケースの合わせ面に使用している液状漏れ止め剤（シーラント）に塗布不良
+R5	REASON Arg1:T13 Arg2:T3	

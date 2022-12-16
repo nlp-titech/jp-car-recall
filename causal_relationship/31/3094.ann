@@ -1,0 +1,21 @@
+T1	Argument 0 50	坂道発進補助装置（ＨＳＡ：ヒル・スタート・エイド）を移設した車両において、移設時の取付け位置が不適切
+T2	Connective 51 53	ため
+T3	Argument 54 70	ＨＳＡの排気ホースがボルトと干渉
+T4	Argument 72 82	当該排気ホースが変形
+T5	Connective 90 94	そのため
+T6	Argument 95 109	そのままの状態で使用を続ける
+T7	Connective 109 110	と
+T8	Argument 111 132	ＨＳＡ解除時に排出するエアが抜けにくくなり
+T9	Connective 132 133	、
+T10	Argument 149 161	ブレーキの引き摺りが発生
+R1	RESULT Arg1:T9 Arg2:T10	
+R2	REASON Arg1:T9 Arg2:T8	
+R3	RESULT Arg1:T7 Arg2:T8	
+R4	CONDITION Arg1:T7 Arg2:T6	
+R5	RESULT Arg1:T5 Arg2:T8	
+R6	REASON Arg1:T5 Arg2:T4	
+R7	REASON Arg1:T2 Arg2:T1	
+R8	RESULT Arg1:T2 Arg2:T3	
+T11	Connective 71 72	、
+R9	REASON Arg1:T11 Arg2:T3	
+R10	RESULT Arg1:T11 Arg2:T4	

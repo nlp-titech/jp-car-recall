@@ -1,0 +1,30 @@
+T1	Argument 0 33	制動装置の前輪用ブレーキ配管とかじ取り装置の油圧配管の隙間が少ない
+T2	Connective 38 39	、
+T3	Argument 76 87	当該ブレーキ配管が損傷
+T4	Connective 88 89	て
+T5	Argument 89 99	ブレーキオイルが漏れ
+T6	Connective 99 100	、
+T7	Argument 100 106	制動力が低下
+T8	Argument 66 68	干渉
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T8	
+T9	Connective 69 70	、
+R3	REASON Arg1:T9 Arg2:T8	
+R4	RESULT Arg1:T9 Arg2:T3	
+R5	REASON Arg1:T4 Arg2:T3	
+R6	RESULT Arg1:T4 Arg2:T5	
+R7	REASON Arg1:T6 Arg2:T5	
+R8	RESULT Arg1:T6 Arg2:T7	
+T15	Connective 65 66	で
+T16	Argument 55 65	作業時等の車体の振動
+R9	REASON Arg1:T15 Arg2:T16	
+R10	RESULT Arg1:T15 Arg2:T8	
+#1	AnnotatorNotes T8	主語「ブレーキ配管」「油圧配管」
+T10	Argument 39 53	そのままの状態で使用を続ける
+T11	Connective 53 54	と
+R11	CONDITION Arg1:T11 Arg2:T10	
+R12	RESULT Arg1:T11 Arg2:T8	
+T12	Argument 70 72	最悪
+T13	Connective 73 75	場合
+R13	CONDITION Arg1:T13 Arg2:T12	
+R14	RESULT Arg1:T13 Arg2:T3	

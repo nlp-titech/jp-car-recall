@@ -1,0 +1,17 @@
+T1	Argument 0 28	ブレーキ倍力装置用バキュームホースをねじれた状態で組付け
+T2	Connective 34 35	、
+T3	Argument 35 45	連続してブレーキ操作
+T4	Connective 48 49	と
+T5	Argument 49 67	倍力装置に作用する負圧が一時的に不足
+T6	Connective 77 80	により
+T7	Argument 91 103	ブレーキの効きが悪くなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 81 89	２回目以降の制動
+T9	Connective 89 90	時
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T7	

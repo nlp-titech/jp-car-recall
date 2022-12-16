@@ -1,0 +1,21 @@
+T1	Argument 30 47	主変速ロッドの組付けの指示が不適切
+T2	Argument 51 65	主変速レバーを最後進位置にし
+T3	Argument 69 89	当該ロッドがキャビンフレームに引っ掛かる
+T5	Argument 116 129	変速レバーが前進側に戻せず
+T6	Argument 130 139	車両が後退し続ける
+T7	Connective 48 50	ため
+T8	Connective 66 68	場合
+T9	Connective 95 99	そのため
+T10	Connective 114 115	と
+T11	Connective 129 130	、
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T3	
+R3	CONDITION Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T5	
+R8	RESULT Arg1:T10 Arg2:T5	
+R9	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	
+T12	Argument 100 114	そのままの状態で使用を続ける
+R11	CONDITION Arg1:T10 Arg2:T12	

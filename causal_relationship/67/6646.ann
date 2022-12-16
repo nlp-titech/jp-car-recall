@@ -1,0 +1,25 @@
+T1	Argument 0 30	二列目の後部座席において、シートフレームの組付け指示が不適切
+T2	Connective 31 33	ため
+T3	Argument 34 56	リクライニング機構が正しく組み付けられてない
+T4	Connective 62 66	そのため
+T5	Argument 67 80	座席の背もたれが固定されず
+T6	Argument 89 99	背もたれが前方に倒れ
+T7	Connective 80 81	、
+T8	Connective 99 100	、
+T9	Argument 100 102	最悪
+T10	Connective 103 105	場合
+T11	Argument 106 117	乗員が過度の傷害を負う
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	
+R7	REASON Arg1:T8 Arg2:T6	
+R8	RESULT Arg1:T8 Arg2:T11	
+R9	CONDITION Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 81 86	急ブレーキ
+T13	Connective 86 88	時等
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T6	

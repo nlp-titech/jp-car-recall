@@ -1,0 +1,13 @@
+T1	Argument 0 27	制動装置において、ブレーキ弁押付けボルトの強度が不十分
+T2	Argument 47 55	当該ボルトが折損
+T3	Argument 57 70	ブレーキ操作ができなくなる
+T4	Connective 28 30	ため
+T5	Connective 56 57	、
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	
+T6	Argument 31 45	強い制動操作力で使用を続ける
+T7	Connective 45 46	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T2	

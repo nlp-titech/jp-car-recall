@@ -1,0 +1,13 @@
+T1	Argument 0 34	運転者席用または助手席用エアバッグにおいて、車両工場での作業が不適切
+T2	Argument 38 49	異なる仕様の部品を搭載
+T4	Argument 71 79	正常に展開しない
+T5	Connective 35 37	ため
+T6	Connective 57 61	このため
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T4	
+T3	Argument 62 69	エアバッグ作動
+T7	Connective 69 70	時
+R5	CONDITION Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	

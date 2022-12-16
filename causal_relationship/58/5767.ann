@@ -1,0 +1,5 @@
+T1	Argument 36 64	第１軸用圧力計の目盛に最低有効作動圧力が表示されていない
+T2	Connective 64 66	ため
+T3	Argument 67 86	道路運送車両の保安基準に適合していない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

@@ -1,0 +1,27 @@
+T1	Argument 0 40	ディーゼルエンジン搭載車両において、①バキュームポンプの内部構造及び強度が不適切
+T2	Argument 44 66	ポンプ内部のベーン（羽根）およびケースが破損
+T3	Argument 68 78	負圧が発生しなくなり
+T4	Argument 79 95	ブレーキ倍力装置が作動しなくなっ
+T5	Argument 97 116	通常の踏力ではブレーキの効きが悪くなり
+T6	Argument 120 145	バキュームポンプを潤滑しているエンジンオイルが漏れ
+T7	Argument 146 159	原動機の潤滑が不十分となり
+T8	Argument 160 178	原動機が停止して再始動が出来なくなる
+T10	Connective 41 43	ため
+T11	Connective 67 68	て
+T12	Connective 78 79	、
+T13	Connective 95 96	て
+T15	Connective 145 146	て
+T16	Connective 159 160	、
+R1	REASON Arg1:T10 Arg2:T1	
+R2	RESULT Arg1:T10 Arg2:T2	
+R3	REASON Arg1:T11 Arg2:T2	
+R4	RESULT Arg1:T11 Arg2:T3	
+R5	REASON Arg1:T12 Arg2:T3	
+R6	RESULT Arg1:T12 Arg2:T4	
+R7	REASON Arg1:T13 Arg2:T4	
+R8	RESULT Arg1:T13 Arg2:T5	
+R11	REASON Arg1:T15 Arg2:T6	
+R12	RESULT Arg1:T15 Arg2:T7	
+R13	REASON Arg1:T16 Arg2:T7	
+R14	RESULT Arg1:T16 Arg2:T8	
+R9	RESULT Arg1:T11 Arg2:T6	

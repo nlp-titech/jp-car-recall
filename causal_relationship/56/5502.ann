@@ -1,0 +1,17 @@
+T1	Argument 0 72	後輪ブレーキペダル一体型フットレスト（右側）および変速機一体型フットレスト（左側）（後付けオプションパーツ）において、車体との取付部の強度が不足
+T2	Argument 79 85	取付部が破損
+T3	Argument 98 108	そのまま使用を続ける
+T4	Argument 110 121	当該フットレストが脱落
+T5	Argument 123 146	後輪のブレーキ操作および変速操作ができなくなる
+T6	Connective 76 78	ため
+T7	Connective 93 97	そのため
+T8	Connective 108 109	と
+T9	Connective 122 123	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T4	
+R5	CONDITION Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	

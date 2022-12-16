@@ -1,0 +1,25 @@
+T1	Argument 0 19	タイヤ側面とリヤアクスルとの隙間が不足
+T2	Argument 26 41	かじ取装置を最大切れ角まで操作
+T3	Argument 46 55	リヤアクスルが干渉
+T4	Argument 80 86	タイヤが損傷
+T5	Argument 94 98	バースト
+T6	Connective 87 88	、
+T7	Connective 63 67	そのため
+T8	Connective 43 45	場合
+T9	Connective 23 25	ため
+R1	RESULT Arg1:T9 Arg2:T3	
+R2	RESULT Arg1:T8 Arg2:T3	
+R3	CONDITION Arg1:T8 Arg2:T2	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+R7	REASON Arg1:T6 Arg2:T4	
+R8	RESULT Arg1:T6 Arg2:T5	
+R9	REASON Arg1:T9 Arg2:T1	
+T10	Argument 68 78	そのまま使用を続ける
+T11	Connective 78 79	と
+R4	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T4	
+T12	Argument 88 90	最悪
+T13	Connective 91 93	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T5	

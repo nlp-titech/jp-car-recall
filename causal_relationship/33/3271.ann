@@ -1,0 +1,17 @@
+T1	Argument 0 50	教習車の助手席補助ブレーキにおいて、ブレーキペダルのクレビスピン抜け防止用スナップピンの構造が不適切
+T2	Connective 51 53	ため
+T3	Argument 54 73	使用条件によってはスナップピンが外れる
+T4	Connective 79 83	そのため
+T5	Argument 84 98	そのままの状態で使用を続ける
+T6	Argument 100 120	クレビスピンがペダルアーム部より抜け落ち
+T7	Connective 120 121	、
+T8	Argument 121 137	助手席補助ブレーキが効かなくなる
+R1	RESULT Arg1:T7 Arg2:T8	
+R2	REASON Arg1:T7 Arg2:T6	
+T9	Connective 98 99	と
+R3	RESULT Arg1:T9 Arg2:T6	
+R4	CONDITION Arg1:T9 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T6	
+R6	REASON Arg1:T4 Arg2:T3	
+R7	RESULT Arg1:T2 Arg2:T3	
+R8	REASON Arg1:T2 Arg2:T1	

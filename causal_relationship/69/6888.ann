@@ -1,0 +1,25 @@
+T1	Argument 45 83	ボルト（バンクセンサーボルト）に誤って長さの短いボルトを取り付けたものがある
+T2	Connective 84 88	そのため
+T3	Argument 94 105	当該ボルトが路面に接地
+T4	Connective 130 132	から
+T5	Argument 133 143	走行安定性が損なわれ
+T6	Connective 143 144	、
+T7	Argument 144 146	最悪
+T8	Connective 147 149	場合
+T9	Argument 150 152	転倒
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 114 126	マフラボディが路面に接地
+T11	Argument 89 92	右旋回
+T12	Connective 92 93	時
+R9	RESULT Arg1:T2 Arg2:T10	
+R10	REASON Arg1:T4 Arg2:T10	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T3	
+R13	RESULT Arg1:T12 Arg2:T10	

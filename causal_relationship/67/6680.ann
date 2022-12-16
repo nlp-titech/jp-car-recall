@@ -1,0 +1,40 @@
+T1	Argument 1 46	燃料タンクの右側と左側の残量差を調整する燃料ポンプの製造工程において、燃料供給バルブを損傷
+T2	Connective 49 51	ため
+T3	Argument 52 60	作動不良を起こす
+T4	Connective 66 70	そのため
+T5	Argument 71 100	燃料タンク内に燃料が残っていても燃料をエンジンに供給できず
+T6	Argument 101 103	最悪
+T7	Connective 104 106	場合
+T8	Connective 100 101	、
+T9	Argument 107 111	エンスト
+T10	Argument 121 139	リアスポイラーの製造工程管理が不適切
+T11	Connective 140 142	ため
+T12	Argument 143 165	リアスポイラー取付けボルトが装着されていない
+T13	Connective 171 175	そのため
+T14	Argument 179 199	リアスポイラーから異音（風きり音）が発生
+T16	Argument 201 203	最悪
+T17	Connective 204 206	場合
+T18	Argument 207 213	高速度で走行
+T19	Connective 215 216	と
+T20	Argument 216 226	リアスポイラーが脱落
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T8 Arg2:T5	
+R6	RESULT Arg1:T8 Arg2:T9	
+R7	CONDITION Arg1:T7 Arg2:T6	
+R8	RESULT Arg1:T7 Arg2:T9	
+R9	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T12	
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T14	
+R13	RESULT Arg1:T13 Arg2:T20	
+R14	CONDITION Arg1:T17 Arg2:T16	
+R15	RESULT Arg1:T17 Arg2:T20	
+R16	CONDITION Arg1:T19 Arg2:T18	
+R17	RESULT Arg1:T19 Arg2:T20	
+T15	Argument 176 178	走行
+T21	Connective 178 179	中
+R18	CONDITION Arg1:T21 Arg2:T15	
+R19	RESULT Arg1:T21 Arg2:T14	

@@ -1,0 +1,36 @@
+T2	Argument 48 59	当該カバーの強度が不足
+T3	Argument 74 80	走行時の油圧
+T4	Argument 83 88	亀裂が生じ
+T5	Argument 89 103	そのままの状態で使用を続ける
+T6	Argument 105 110	亀裂が進展
+T7	Argument 112 126	トルクコンバータオイルが漏れ
+T8	Argument 127 133	警告灯が点灯
+T9	Argument 135 137	最悪
+T10	Argument 141 148	走行不能となる
+T11	Connective 45 47	ため
+T12	Connective 69 73	そのため
+T13	Connective 80 83	により
+T14	Connective 88 89	、
+T15	Connective 103 104	と
+T16	Connective 111 112	て
+T17	Connective 126 127	て
+T18	Connective 134 135	、
+T19	Connective 138 140	場合
+R2	RESULT Arg1:T11 Arg2:T2	
+R3	REASON Arg1:T12 Arg2:T2	
+R4	RESULT Arg1:T12 Arg2:T4	
+R5	REASON Arg1:T13 Arg2:T3	
+R6	RESULT Arg1:T13 Arg2:T4	
+R7	REASON Arg1:T14 Arg2:T4	
+R8	RESULT Arg1:T14 Arg2:T6	
+R9	CONDITION Arg1:T15 Arg2:T5	
+R10	RESULT Arg1:T15 Arg2:T6	
+R11	REASON Arg1:T16 Arg2:T6	
+R12	RESULT Arg1:T16 Arg2:T7	
+R13	REASON Arg1:T17 Arg2:T7	
+R14	RESULT Arg1:T17 Arg2:T8	
+R16	CONDITION Arg1:T18 Arg2:T9	
+R17	CONDITION Arg1:T19 Arg2:T9	
+R18	RESULT Arg1:T19 Arg2:T10	
+T1	Argument 21 44	トルクコンバータのフロントカバーの製造が不適切
+R1	REASON Arg1:T11 Arg2:T1	

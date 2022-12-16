@@ -1,0 +1,25 @@
+T1	Argument 0 89	トラックの車両後部に架装した荷役装置（テールゲートリフタ）を作動させるための電動油圧発生装置（パワーユニット）において、走行中の飛び石等で当該パワーユニットのユニットカバーが破損
+T2	Connective 93 96	により
+T3	Argument 97 122	融雪剤、汚泥及び雨水等がマグネットスイッチ部に堆積
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 122 123	し
+T5	Argument 169 186	当該マグネットスイッチの内部に侵入
+R3	REASON Arg1:T4 Arg2:T3	
+T6	Argument 127 143	マグネットスイッチカバーに割れ等
+T7	Connective 147 149	場合
+T8	Argument 150 168	融雪剤が雨水等により溶けて塩水となり
+R5	CONDITION Arg1:T7 Arg2:T6	
+T9	Connective 168 169	、
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Connective 194 198	そのため
+T11	Argument 199 213	マグネットスイッチがショート
+R9	REASON Arg1:T10 Arg2:T5	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Connective 214 215	、
+T13	Argument 215 220	火災に至る
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R4	RESULT Arg1:T4 Arg2:T8	
+R6	RESULT Arg1:T7 Arg2:T5	

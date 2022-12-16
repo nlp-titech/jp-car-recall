@@ -1,0 +1,38 @@
+T1	Argument 0 25	無段式変速機のオイルポンプ用モーターの軸強度が不足
+T2	Argument 48 58	当該モーター軸が折損
+T3	Argument 60 67	走行不能に至る
+T4	Argument 77 134	オイルポンプとオイルポンプ用モーターの軸勘合部の組付け角度及び当該モーターの作動トルクを制御するプログラムが不適切
+T5	Argument 138 151	軸勘合部に過大な応力が発生
+T6	Argument 175 182	軸勘合部が摩耗
+T7	Argument 199 206	走行不能に至る
+T8	Connective 29 31	ため
+T9	Connective 59 60	、
+T10	Connective 135 137	ため
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T2	
+R3	REASON Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T3	
+R5	REASON Arg1:T10 Arg2:T4	
+R6	RESULT Arg1:T10 Arg2:T5	
+T11	Connective 196 198	ため
+R7	REASON Arg1:T11 Arg2:T21	
+R8	RESULT Arg1:T11 Arg2:T7	
+T18	Connective 152 153	、
+R9	REASON Arg1:T18 Arg2:T5	
+R10	RESULT Arg1:T18 Arg2:T6	
+T20	Connective 183 184	て
+T21	Argument 184 196	オイルポンプが作動しない
+R11	REASON Arg1:T20 Arg2:T6	
+R12	RESULT Arg1:T20 Arg2:T21	
+T12	Argument 32 46	そのままの状態で使用を続ける
+T13	Connective 46 47	と
+R13	CONDITION Arg1:T13 Arg2:T12	
+R14	RESULT Arg1:T13 Arg2:T2	
+T14	Argument 153 167	そのままの状態で使用を続ける
+T15	Connective 167 168	と
+R15	CONDITION Arg1:T15 Arg2:T14	
+R16	RESULT Arg1:T15 Arg2:T6	
+T16	Argument 169 171	最悪
+T17	Connective 172 174	場合
+R17	CONDITION Arg1:T17 Arg2:T16	
+R18	RESULT Arg1:T17 Arg2:T6	

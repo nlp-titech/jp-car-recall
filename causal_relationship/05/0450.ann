@@ -1,0 +1,17 @@
+T1	Argument 0 69	交換修理用に製造したステアリングシャフトにおいて、ハンドルとギアボックスをつなぐ連結軸（インタミディエイトシャフト）の接合部の溶接に不適切
+T2	Argument 119 127	当該接合部が破損
+T3	Argument 129 142	かじ取り操作ができなくなる
+T4	Connective 75 77	ため
+T5	Connective 128 129	、
+R1	REASON Arg1:T4 Arg2:T1	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	
+T6	Argument 78 98	交換修理によって当該部品を取り付けた車両
+R6	RESULT Arg1:T4 Arg2:T6	
+T9	Argument 103 117	そのままの状態で使用を続ける
+T10	Connective 117 118	と
+R7	CONDITION Arg1:T10 Arg2:T9	
+R9	RESULT Arg1:T10 Arg2:T2	
+T7	Connective 98 102	について
+R2	CONDITION Arg1:T7 Arg2:T6	
+R5	RESULT Arg1:T7 Arg2:T2	

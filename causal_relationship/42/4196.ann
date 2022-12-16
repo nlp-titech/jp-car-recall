@@ -1,0 +1,24 @@
+T1	Argument 0 29	コンビネーション・メータにおいて、通信用プログラムが不適切
+T2	Connective 30 32	ため
+T3	Argument 33 47	通信信号が送受信できなくなり
+T4	Connective 47 48	、
+T5	Argument 48 105	マルチ・インフォメーション・ディスプレイにアドバンスト・スマート・シティ・ブレーキ・サポート等のシステム異常が表示
+T7	Argument 108 118	当該装置が機能しない
+T8	Argument 151 176	センター・ディスプレイにカメラの画像が表示されない
+T9	Connective 176 178	ため
+R3	REASON Arg1:T9 Arg2:T8	
+R5	RESULT Arg1:T4 Arg2:T7	
+R6	RESULT Arg1:T4 Arg2:T5	
+R7	RESULT Arg1:T4 Arg2:T8	
+R8	REASON Arg1:T4 Arg2:T3	
+R9	REASON Arg1:T2 Arg2:T1	
+R10	RESULT Arg1:T2 Arg2:T3	
+T6	Argument 127 146	カメラの画像表示に切り替える操作をした
+T13	Connective 146 148	場合
+R11	CONDITION Arg1:T13 Arg2:T6	
+R12	RESULT Arg1:T13 Arg2:T8	
+T14	Connective 107 108	、
+R13	REASON Arg1:T14 Arg2:T5	
+R14	RESULT Arg1:T14 Arg2:T7	
+T10	Argument 179 212	車両の直前および直左等、周囲の状況が確認できず保安基準に適合しない
+R1	RESULT Arg1:T9 Arg2:T10	

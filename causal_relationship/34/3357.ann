@@ -1,0 +1,34 @@
+T1	Argument 0 17	エアコンの外気導入口の構造が不適切
+T2	Connective 18 20	ため
+T3	Argument 21 37	雨水がブロアファンモータ部に浸入
+T4	Connective 38 39	、
+T5	Argument 39 55	当該モータの軸受け部が錆びて固着
+T6	Connective 63 67	そのため
+T7	Argument 68 80	ブロアファンモータが停止
+T8	Argument 82 95	デフロスタが作動しなくなる
+T9	Connective 81 82	て
+T12	Argument 99 155	マニュアルエアコン仕様車においては、ブロアファンモータの回転を制御する抵抗ユニット内の温度ヒューズの仕様が不適切
+T13	Connective 156 158	ため
+T14	Argument 158 162	溶断せず
+T15	Connective 162 163	、
+T16	Argument 163 165	最悪
+T17	Connective 166 168	場合
+T18	Argument 176 181	火災に至る
+R1	RESULT Arg1:T17 Arg2:T10	
+R2	CONDITION Arg1:T17 Arg2:T16	
+R3	RESULT Arg1:T15 Arg2:T10	
+R4	REASON Arg1:T15 Arg2:T14	
+R5	RESULT Arg1:T13 Arg2:T14	
+R6	REASON Arg1:T13 Arg2:T12	
+R9	RESULT Arg1:T9 Arg2:T8	
+R10	REASON Arg1:T9 Arg2:T7	
+R11	RESULT Arg1:T6 Arg2:T7	
+R12	REASON Arg1:T6 Arg2:T5	
+R13	RESULT Arg1:T4 Arg2:T5	
+R14	REASON Arg1:T4 Arg2:T3	
+R15	RESULT Arg1:T2 Arg2:T3	
+R16	REASON Arg1:T2 Arg2:T1	
+T10	Argument 169 174	抵抗が過熱
+T11	Connective 175 176	て
+R8	REASON Arg1:T11 Arg2:T10	
+R17	RESULT Arg1:T11 Arg2:T18	

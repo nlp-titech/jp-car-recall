@@ -1,0 +1,21 @@
+T1	Argument 18 36	電気式燃料遮断弁のシール構造が不適切
+T2	Connective 37 39	ため
+T3	Argument 40 64	防水用キャップと遮断弁本体の合わせ面から水が浸入
+T4	Connective 72 76	そのため
+T5	Argument 77 95	遮断弁内部のコイル線が短絡または断線
+T6	Connective 96 97	て
+T7	Argument 98 128	警告灯が点灯するとともに、コイル線の発熱により樹脂部品が損傷
+T8	Connective 129 130	て
+T9	Argument 131 133	最悪
+T10	Connective 134 136	場合
+T11	Argument 137 143	燃料が漏れる
+R1	RESULT Arg1:T10 Arg2:T11	
+R2	CONDITION Arg1:T10 Arg2:T9	
+R3	RESULT Arg1:T8 Arg2:T11	
+R4	REASON Arg1:T8 Arg2:T7	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	REASON Arg1:T6 Arg2:T5	
+R7	RESULT Arg1:T4 Arg2:T5	
+R8	REASON Arg1:T4 Arg2:T3	
+R9	RESULT Arg1:T2 Arg2:T3	
+R10	REASON Arg1:T2 Arg2:T1	

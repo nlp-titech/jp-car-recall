@@ -1,0 +1,21 @@
+T1	Argument 0 21	無段変速機の前進用クラッチハブの強度が不足
+T2	Connective 31 35	そのため
+T3	Argument 48 58	当該ハブに亀裂が発生
+T4	Connective 59 60	、
+T5	Argument 66 71	ハブが破断
+T6	Connective 72 73	て
+T7	Argument 74 82	前進できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 36 46	そのまま使用を続ける
+T9	Connective 46 47	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 60 62	最悪
+T11	Connective 63 65	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	

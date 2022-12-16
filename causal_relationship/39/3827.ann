@@ -1,0 +1,17 @@
+T1	Argument 0 31	大型トラック・バスにおいて、出力が小さいオルタネーターを誤装着
+T2	Argument 44 56	オルタネーターの発電不足
+T3	Argument 60 70	バッテリー電圧が低下
+T4	Argument 72 81	変速ができなくなり
+T5	Argument 82 89	路上故障に至る
+T6	Connective 39 43	そのため
+T7	Connective 56 60	によって
+T8	Connective 71 72	て
+T9	Connective 81 82	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	

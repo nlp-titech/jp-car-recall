@@ -1,0 +1,26 @@
+T1	Argument 1 32	トランスミッションの上側にあるチェンジシフトアームの強度が不足
+T2	Connective 41 43	ため
+T5	Argument 44 71	シフトレバーを操作した際にチェンジシフトアームが折れる
+T6	Connective 77 81	そのため
+T7	Argument 82 102	シフトレバーを操作しても変速できなくなり
+T8	Argument 103 105	最悪
+T9	Connective 102 103	、
+T10	Connective 106 108	場合
+T11	Argument 109 123	折れた先端部がギヤにかみ込み
+T12	Connective 123 124	、
+T13	Argument 124 136	トランスミッションが破損
+T14	Argument 137 145	走行できなくなる
+T15	Connective 136 137	し
+R2	REASON Arg1:T2 Arg2:T1	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T9 Arg2:T7	
+R8	CONDITION Arg1:T10 Arg2:T8	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T15 Arg2:T13	
+R14	RESULT Arg1:T15 Arg2:T14	
+R9	RESULT Arg1:T6 Arg2:T11	
+R15	RESULT Arg1:T9 Arg2:T11	

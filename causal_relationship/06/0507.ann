@@ -1,0 +1,25 @@
+T1	Argument 0 32	動力伝達装置において、前後進切換レバー内部の電気接点の容量が不足
+T2	Argument 51 59	接点が早期に磨耗
+T3	Argument 68 78	磨耗粉が接点間に堆積
+T4	Argument 80 85	回路が短絡
+T5	Argument 93 114	当該レバーを操作しても変速機が中立にならず
+T6	Argument 115 120	不意に走行
+T7	Connective 36 38	ため
+T8	Connective 60 61	、
+T9	Connective 79 80	て
+T10	Connective 92 93	、
+T11	Connective 114 115	、
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T5	
+R9	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	
+T12	Argument 39 47	切換操作の繰返し
+T13	Connective 47 51	によって
+R13	RESULT Arg1:T13 Arg2:T2	
+R11	REASON Arg1:T13 Arg2:T12	

@@ -1,0 +1,9 @@
+T1	Argument 0 48	救急車のストレッチャー横に格納されている機材の異音防止用バンドの取付金具の位置および形状が不適切
+T2	Connective 49 51	ため
+T3	Argument 52 65	ストレッチャーを車両に搬入
+T4	Connective 67 68	際
+T5	Argument 69 91	患者や救急隊員の腕や指が当該金具にあたり受傷
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	

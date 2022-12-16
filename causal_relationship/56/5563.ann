@@ -1,0 +1,9 @@
+T1	Argument 0 51	フロントパーキングセンサー装着車両において、メーターパネル内のコントロールユニットのプログラムが不適切
+T2	Argument 55 73	運転者がシートベルトを装着せずに走行
+T3	Argument 79 95	警告するためのブザーが作動しない
+T4	Connective 52 54	ため
+T5	Connective 75 77	場合
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T3	
+R3	CONDITION Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	

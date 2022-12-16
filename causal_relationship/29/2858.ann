@@ -1,0 +1,25 @@
+T1	Argument 0 31	放送中継車のサイレンサ用ヒートプロテクタ取付部の溶接強度が不足
+T2	Connective 35 37	ため
+T3	Argument 51 63	当該溶接部に亀裂が生じる
+T4	Connective 69 73	そのため
+T5	Argument 90 95	亀裂が進行
+T6	Connective 96 97	、
+T7	Argument 103 116	当該ヒートプロテクタが脱落
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 38 47	走行時の車両振動等
+T9	Connective 47 50	により
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 74 88	そのままの状態で使用を続ける
+T11	Connective 88 89	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	
+T12	Argument 97 99	最悪
+T13	Connective 100 102	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T7	

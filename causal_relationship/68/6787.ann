@@ -1,0 +1,13 @@
+T2	Connective 44 46	ため
+T3	Argument 47 53	ＡＢＳ作動時
+T4	Connective 53 54	、
+T5	Argument 54 56	最悪
+T6	Connective 57 59	場合
+T7	Argument 60 72	ブレーキの効きが悪くなる
+R2	RESULT Arg1:T2 Arg2:T7	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T1	Argument 5 39	制動力制御装置（ＡＢＳ）付車において、リヤブレーキ配管が左右逆に接続
+R1	REASON Arg1:T2 Arg2:T1	

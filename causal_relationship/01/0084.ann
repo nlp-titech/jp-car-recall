@@ -1,0 +1,13 @@
+T1	Argument 0 27	電子制御式燃料噴射方式の原動機において、点火系のノイズ
+T2	Argument 30 39	原動機が不調となる
+T3	Argument 51 57	原動機が停止
+T4	Connective 27 30	により
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+T5	Connective 44 45	、
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	
+T6	Argument 45 47	最悪
+T7	Connective 48 50	場合
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	

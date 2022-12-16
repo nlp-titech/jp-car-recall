@@ -1,0 +1,29 @@
+T1	Argument 0 19	制動灯スイッチの電気端子の形状が不適切
+T2	Argument 23 46	電気配線側コネクタとの端子結合部の接触が不十分
+T3	Argument 70 77	走行時の振動等
+T4	Argument 78 92	制動灯スイッチの接触面が摩耗
+T5	Argument 94 101	導通不良となり
+T6	Argument 108 126	制動灯及び補助制動灯が点灯しなくなる
+T7	Connective 20 22	ため
+T8	Connective 53 57	そのため
+T9	Connective 77 78	で
+T10	Connective 93 94	、
+T11	Connective 101 102	、
+R1	REASON Arg1:T11 Arg2:T5	
+R2	RESULT Arg1:T11 Arg2:T6	
+R3	REASON Arg1:T10 Arg2:T4	
+R4	RESULT Arg1:T10 Arg2:T5	
+R7	REASON Arg1:T8 Arg2:T2	
+R8	RESULT Arg1:T8 Arg2:T4	
+R9	REASON Arg1:T7 Arg2:T1	
+R10	RESULT Arg1:T7 Arg2:T2	
+T12	Argument 58 68	そのまま使用を続ける
+T13	Connective 68 69	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T4	
+R6	RESULT Arg1:T9 Arg2:T4	
+T14	Argument 102 104	最悪
+T15	Connective 105 107	場合
+R14	CONDITION Arg1:T15 Arg2:T14	
+R15	RESULT Arg1:T15 Arg2:T6	
+R5	CONDITION Arg1:T9 Arg2:T3	

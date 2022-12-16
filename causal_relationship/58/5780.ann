@@ -1,0 +1,25 @@
+T1	Argument 18 37	フェンダ・インナ・パネルの形状が不適切
+T2	Connective 38 40	ため
+T3	Argument 41 54	隣接するブレーキ配管に干渉
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 62 66	そのため
+T5	Argument 67 77	そのまま使用を続ける
+T6	Connective 77 78	と
+T7	Argument 78 89	ブレーキ配管に穴が開き
+T8	Connective 101 102	、
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+T9	Connective 88 89	き
+T10	Argument 89 101	ブレーキ・フルードが漏れ
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T10	
+T11	Argument 102 104	最悪
+T12	Connective 105 107	場合
+T13	Argument 108 119	ブレーキが利かなくなる
+R9	REASON Arg1:T8 Arg2:T10	
+R10	RESULT Arg1:T8 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	

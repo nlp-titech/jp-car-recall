@@ -1,0 +1,17 @@
+T1	Argument 11 58	ステアリングギアボックスとステアリングナックルアームを接続するアルミニウム製の継手部に強度不足
+T2	Connective 64 66	ため
+T3	Argument 83 91	当該継手部が外れ
+T4	Connective 91 92	、
+T5	Argument 98 107	操舵ができなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 67 81	そのままの状態で使用を続ける
+T7	Connective 81 82	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 92 94	最悪
+T9	Connective 95 97	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

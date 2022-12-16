@@ -1,0 +1,17 @@
+T1	Argument 0 44	ブレーキ用油圧配管を三方継手部に取り付ける部分において、当該配管の先端部分の形状が不適切
+T2	Argument 66 80	継手部から当該配管が抜け出す
+T3	Argument 90 98	ブレーキ液が漏れ
+T4	Argument 99 112	制動することができなくなる
+T5	Connective 55 57	ため
+T6	Connective 98 99	て
+T7	Connective 86 90	そのため
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T6 Arg2:T3	
+R6	RESULT Arg1:T6 Arg2:T4	
+T8	Argument 58 65	制動操作を行う
+T9	Connective 65 66	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T2	

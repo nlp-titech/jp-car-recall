@@ -1,0 +1,21 @@
+T1	Argument 0 32	燃料タンク製造時の溶接のカス（微粒子）が完全に取り除かれていない
+T2	Connective 32 34	ため
+T3	Argument 35 51	当該カスが燃料ポンプに吸い込まれ
+T4	Connective 51 52	、
+T5	Argument 52 64	燃料ポンプの摺動部を磨耗
+T6	Argument 73 83	燃料フィルターに付着
+T7	Connective 91 95	この場合
+T8	Argument 96 110	原動機への燃料の供給量が不足
+T9	Connective 112 114	ため
+T10	Argument 115 123	原動機の出力低下
+T11	Argument 126 137	急加速時の息つきが発生
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	RESULT Arg1:T2 Arg2:T6	
+R6	CONDITION Arg1:T7 Arg2:T6	
+R7	RESULT Arg1:T7 Arg2:T8	
+R8	REASON Arg1:T9 Arg2:T8	
+R9	RESULT Arg1:T9 Arg2:T10	
+R10	RESULT Arg1:T9 Arg2:T11	

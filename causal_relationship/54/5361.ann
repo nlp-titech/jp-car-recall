@@ -1,0 +1,37 @@
+T1	Argument 0 17	原動機のオイルタンクの構造が不適切
+T2	Connective 18 20	ため
+T3	Argument 68 97	ブローバーガスに含まれる水分がブリーザーパイプ開口部で凍結
+T4	Connective 105 109	そのため
+T5	Argument 122 134	オイルタンクの内圧が上昇
+T6	Connective 135 136	て
+T7	Argument 136 142	タンクが破損
+T8	Connective 143 144	、
+T9	Argument 150 162	漏れたオイルが後輪に付着
+T10	Connective 163 164	、
+T11	Argument 164 169	車両が転倒
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+T12	Argument 21 30	外気温が氷点下以下
+T13	Connective 36 37	で
+R4	CONDITION Arg1:T13 Arg2:T12	
+T14	Argument 37 64	エンジンの始動・停止を伴う短距離・低速の運転を繰り返し
+T15	Connective 65 67	場合
+R5	CONDITION Arg1:T15 Arg2:T14	
+R6	RESULT Arg1:T15 Arg2:T3	
+R7	RESULT Arg1:T13 Arg2:T3	
+T16	Argument 110 120	そのまま使用を続ける
+T17	Connective 120 121	と
+R8	CONDITION Arg1:T17 Arg2:T16	
+R9	RESULT Arg1:T17 Arg2:T5	
+R10	REASON Arg1:T6 Arg2:T5	
+R11	RESULT Arg1:T6 Arg2:T7	
+R12	REASON Arg1:T8 Arg2:T7	
+R13	RESULT Arg1:T8 Arg2:T9	
+R14	REASON Arg1:T10 Arg2:T9	
+R15	RESULT Arg1:T10 Arg2:T11	
+T18	Argument 144 146	最悪
+T19	Connective 147 149	場合
+R16	CONDITION Arg1:T19 Arg2:T18	
+R17	RESULT Arg1:T19 Arg2:T9	
+R18	RESULT Arg1:T4 Arg2:T5	

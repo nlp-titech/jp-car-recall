@@ -1,0 +1,25 @@
+T1	Argument 50 68	ブレーキケーブルの組付け作業が不適切
+T2	Argument 75 94	ブレーキレバーの遊びが早期に大きくなる
+T3	Argument 105 137	ブレーキレバーを深く握らないとパーキングスタンドが下ろせなくなり
+T4	Argument 138 155	ブレーキケーブルが過度に引っ張られ
+T5	Argument 156 158	最悪
+T6	Argument 162 171	当該ケーブルが切れ
+T7	Argument 172 185	後輪ブレーキが利かなくなる
+T8	Connective 74 75	、
+T9	Connective 100 104	そのため
+T10	Connective 137 138	、
+T11	Connective 155 156	、
+T12	Connective 159 161	場合
+T13	Connective 171 172	て
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T2	
+R3	REASON Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T3	
+R5	REASON Arg1:T10 Arg2:T3	
+R6	RESULT Arg1:T10 Arg2:T4	
+R7	REASON Arg1:T11 Arg2:T4	
+R8	RESULT Arg1:T11 Arg2:T6	
+R9	CONDITION Arg1:T12 Arg2:T5	
+R10	RESULT Arg1:T12 Arg2:T6	
+R11	REASON Arg1:T13 Arg2:T6	
+R12	RESULT Arg1:T13 Arg2:T7	

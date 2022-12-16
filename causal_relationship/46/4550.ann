@@ -1,0 +1,17 @@
+T1	Argument 5 27	後輪用ブレーキ･ペダルの支点部の溶接が不適切
+T2	Connective 28 30	ため
+T3	Argument 41 50	当該溶接部分が分離
+T4	Connective 51 52	て
+T5	Argument 53 66	後輪ブレーキが利かなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 31 33	最悪
+T7	Connective 34 36	場合
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 37 40	制動時
+T9	Connective 40 41	に
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	

@@ -1,0 +1,25 @@
+T1	Argument 0 19	オイルクーラーの配管の固定位置が不適切
+T2	Connective 20 22	ため
+T3	Argument 23 43	スターターモーターの配線と当該配管が干渉
+T4	Connective 53 57	そのため
+T5	Argument 68 75	当該配線が損傷
+T6	Connective 76 77	て
+T7	Argument 77 79	短絡
+T8	Argument 87 92	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T9	Connective 80 81	、
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+T10	Argument 58 65	走行中の振動等
+T11	Connective 65 68	により
+R9	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	
+T12	Argument 81 83	最悪
+T13	Connective 84 86	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T8	

@@ -1,0 +1,33 @@
+T1	Argument 0 25	静油圧変速機の走行モータにおいて、油圧制御が不適切
+T2	Argument 29 47	走行中にアクセルペダルをゆっくり戻し
+T3	Argument 50 70	惰性運転からアクセルペダルを少し踏み込ん
+T4	Connective 71 73	場合
+T5	Argument 75 93	走行モータへの供給油量が一時的に不足
+T6	Argument 106 122	モータ内でキャビテーションが発生
+T7	Argument 124 130	異音を生じる
+T8	Argument 148 156	走行モータが破損
+T9	Argument 164 172	走行出来なくなる
+T10	Connective 157 158	、
+T12	Connective 123 124	、
+T13	Connective 101 105	そのため
+T14	Connective 26 28	ため
+R1	REASON Arg1:T14 Arg2:T1	
+R2	RESULT Arg1:T14 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T2	
+R4	CONDITION Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T4 Arg2:T5	
+R6	REASON Arg1:T13 Arg2:T5	
+R7	RESULT Arg1:T13 Arg2:T6	
+R8	REASON Arg1:T12 Arg2:T6	
+R9	RESULT Arg1:T12 Arg2:T7	
+R10	RESULT Arg1:T12 Arg2:T8	
+R11	REASON Arg1:T10 Arg2:T8	
+R12	RESULT Arg1:T10 Arg2:T9	
+T11	Argument 136 146	そのまま使用を続ける
+T15	Connective 146 147	と
+R13	CONDITION Arg1:T15 Arg2:T11	
+R14	RESULT Arg1:T15 Arg2:T8	
+T16	Argument 158 160	最悪
+T17	Connective 161 163	場合
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T9	

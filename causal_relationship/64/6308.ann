@@ -1,0 +1,9 @@
+T1	Argument 28 49	エアバッグ展開時にインフレーター容器が破損
+T2	Connective 50 51	て
+T3	Argument 51 58	構成部品が飛散
+T4	Connective 59 60	、
+T5	Argument 60 65	乗員が負傷
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

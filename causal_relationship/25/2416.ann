@@ -1,0 +1,25 @@
+T1	Argument 0 42	踏込み式駐車ブレーキの構成部品であるラチェットポールとブラケットとの隙間設定が不適切
+T2	Argument 46 76	樹脂成型されたラチェットポールに塗布したグリースで樹脂が膨潤
+T3	Connective 43 45	ため
+T4	Argument 78 90	炎天下の駐車時に更に膨張
+T5	Connective 92 93	と
+T6	Connective 77 78	、
+T7	Argument 114 121	摺動抵抗が増加
+T8	Connective 129 133	そのため
+T9	Argument 134 162	駐車ブレーキペダルを踏んでもラチェットポールの動きが渋り
+T10	Connective 162 163	、
+T11	Argument 163 178	駐車ブレーキが保持出来なくなる
+R1	REASON Arg1:T3 Arg2:T1	
+R2	RESULT Arg1:T3 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T14	
+R5	CONDITION Arg1:T5 Arg2:T4	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T14	Argument 93 112	ラチェットポール端部とブラケットが干渉
+T15	Connective 113 114	て
+R13	REASON Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T7	
+R6	RESULT Arg1:T5 Arg2:T14	

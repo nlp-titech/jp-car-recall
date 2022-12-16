@@ -1,0 +1,9 @@
+T1	Argument 0 43	前照灯および方向指示器の操作装置において、走行用前照灯用スイッチの接点部の形状に不適切
+T2	Connective 49 51	ため
+T3	Argument 77 86	走行用前照灯が消灯
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T8	Argument 52 72	走行用前照灯点灯時に左の方向指示器を作動
+T9	Connective 75 76	と
+R5	CONDITION Arg1:T9 Arg2:T8	
+R6	RESULT Arg1:T9 Arg2:T3	

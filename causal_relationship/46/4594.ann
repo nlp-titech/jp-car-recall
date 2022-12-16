@@ -1,0 +1,13 @@
+T1	Argument 9 29	後輪用ブレーキパイプの継ぎ手部に製造不良
+T2	Connective 35 36	、
+T3	Argument 36 50	そのままの状態で使用を続ける
+T4	Connective 50 51	と
+T5	Argument 52 68	当該継ぎ手部からブレーキ液が漏れ
+T6	Connective 68 69	、
+T7	Argument 69 75	制動力が低下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

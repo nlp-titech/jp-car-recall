@@ -1,0 +1,13 @@
+T1	Argument 0 46	大型バスの運転者席において、座席ベルトの巻取り器を格納するカバーのスリット端部の加工が不適切
+T2	Connective 53 57	そのため
+T3	Argument 58 72	そのままの状態で使用を続ける
+T4	Connective 72 73	と
+T5	Argument 74 94	座席ベルトが当該スリット端部に引っ掛かり
+T6	Connective 94 95	、
+T7	Argument 95 97	損傷
+R1	RESULT Arg1:T6 Arg2:T7	
+R2	REASON Arg1:T6 Arg2:T5	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	CONDITION Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T2 Arg2:T5	
+R6	REASON Arg1:T2 Arg2:T1	

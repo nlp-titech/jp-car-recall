@@ -1,0 +1,13 @@
+T1	Argument 9 33	駐車ブレーキケーブルの末端固定部のかしめが不適切
+T2	Connective 34 36	ため
+T3	Argument 50 64	当該ケーブルが固定部から外れ
+T4	Connective 64 65	、
+T5	Argument 65 79	駐車ブレーキが作動しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 36 45	駐車ブレーキを作動
+T7	Connective 48 49	際
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	

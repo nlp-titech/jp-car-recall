@@ -1,0 +1,37 @@
+T2	Connective 52 54	ため
+T3	Argument 80 88	潤滑剤成分が硬化
+T4	Connective 89 90	、
+T5	Argument 97 103	接点部が破損
+T6	Connective 111 115	そのため
+T7	Argument 128 139	破損部位でアークが発生
+T8	Connective 140 141	、
+T9	Argument 141 143	発熱
+T10	Argument 157 162	火災に至る
+R1	REASON Arg1:T4 Arg2:T3	
+R2	RESULT Arg1:T4 Arg2:T5	
+R3	REASON Arg1:T6 Arg2:T5	
+R4	RESULT Arg1:T6 Arg2:T7	
+R5	REASON Arg1:T8 Arg2:T7	
+R6	RESULT Arg1:T8 Arg2:T9	
+T11	Connective 150 151	、
+R7	REASON Arg1:T11 Arg2:T9	
+R8	RESULT Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T2 Arg2:T3	
+T12	Argument 65 76	当該部が高温にさらされ
+T13	Connective 77 79	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T3	
+T14	Argument 90 94	角度調節
+T15	Connective 95 97	際に
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T5	
+T16	Argument 116 126	そのまま使用を続ける
+T17	Connective 126 127	と
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T7	
+T18	Argument 151 153	最悪
+T19	Connective 154 156	場合
+R17	CONDITION Arg1:T19 Arg2:T18	
+R18	RESULT Arg1:T19 Arg2:T10	
+T1	Argument 17 45	後写鏡の角度調節用スイッチの接点部に不適切な潤滑剤を塗布
+R9	REASON Arg1:T2 Arg2:T1	

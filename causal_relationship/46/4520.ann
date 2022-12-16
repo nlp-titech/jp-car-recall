@@ -1,0 +1,17 @@
+T1	Argument 0 14	警音器内部の防水加工に不十分
+T2	Connective 20 22	ため
+T3	Argument 23 31	警音器に水が入る
+T4	Connective 31 32	と
+T5	Argument 32 43	内部にある振動板が腐食
+T6	Connective 44 45	て
+T7	Argument 52 62	警音器が鳴らなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 46 48	最悪
+T9	Connective 49 51	場合
+R8	RESULT Arg1:T9 Arg2:T7	
+R9	CONDITION Arg1:T9 Arg2:T8	

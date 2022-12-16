@@ -1,0 +1,21 @@
+T1	Argument 0 44	農耕トラクタのかじ取り装置において、油圧シリンダキャップの止め輪の回り止めの設計が不適切
+T2	Argument 48 57	当該止め輪が外れる
+T3	Argument 68 82	そのままの状態で使用を続ける
+T4	Argument 84 90	オイルが漏れ
+T5	Argument 91 93	最悪
+T6	Argument 97 109	操舵および走行不能となる
+T7	Connective 45 47	ため
+T8	Connective 63 67	そのため
+T9	Connective 82 83	と
+T10	Connective 90 91	、
+T11	Connective 94 96	場合
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R5	CONDITION Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+R9	CONDITION Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	
+R4	RESULT Arg1:T10 Arg2:T6	
+R8	RESULT Arg1:T8 Arg2:T4	

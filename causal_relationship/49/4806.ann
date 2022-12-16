@@ -1,0 +1,25 @@
+T1	Argument 0 38	オイルネーターの電気配線において、エンジンルーム内の配線の取りまわしが不適切
+T2	Connective 39 41	ため
+T3	Argument 58 79	配線とパワーステアリングのオイル配管が接触
+T4	Connective 80 81	て
+T5	Argument 81 89	配線の被覆が損傷
+T6	Connective 90 91	、
+T7	Argument 97 99	短絡
+T8	Connective 100 101	て
+T9	Argument 101 109	当該被覆から発火
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 42 56	そのままの状態で使用を続ける
+T11	Connective 56 57	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	
+T12	Argument 91 93	最悪
+T13	Connective 94 96	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T7	

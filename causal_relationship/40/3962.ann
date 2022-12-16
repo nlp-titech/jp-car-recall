@@ -1,0 +1,29 @@
+T2	Argument 56 81	洗浄剤や雨水などに含まれる酸でコーティング剤が浸食
+T3	Argument 84 94	そのまま使用を続ける
+T4	Argument 96 104	レンズ本体も浸食
+T5	Argument 106 109	白濁化
+T6	Argument 111 133	サイドカメラの映像が徐々に鮮明に映らなくなり
+T7	Argument 134 136	最悪
+T8	Argument 140 164	車両の直前および直左の周辺状況を確認できなくなる
+T9	Connective 51 55	そのため
+T10	Connective 83 84	、
+T11	Connective 94 95	と
+T12	Connective 105 106	て
+T13	Connective 110 111	、
+T14	Connective 133 134	、
+T15	Connective 137 139	場合
+R2	RESULT Arg1:T9 Arg2:T2	
+R3	REASON Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T4	
+R5	CONDITION Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+R7	REASON Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T5	
+R9	REASON Arg1:T13 Arg2:T5	
+R10	RESULT Arg1:T13 Arg2:T6	
+R11	REASON Arg1:T14 Arg2:T6	
+R12	RESULT Arg1:T14 Arg2:T8	
+R13	CONDITION Arg1:T15 Arg2:T7	
+R14	RESULT Arg1:T15 Arg2:T8	
+T1	Argument 20 44	カメラにおいて、レンズ表面のコーティングが不適切
+R1	REASON Arg1:T9 Arg2:T1	

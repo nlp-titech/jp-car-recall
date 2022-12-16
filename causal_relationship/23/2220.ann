@@ -1,0 +1,25 @@
+T1	Argument 0 23	バッテリプラス端子に接続する配線の配索が不適切
+T2	Connective 24 26	ため
+T3	Argument 27 42	バッテリ収納箱の保持金具に干渉
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 50 54	そのため
+T5	Argument 55 60	走行振動等
+R3	REASON Arg1:T4 Arg2:T3	
+T6	Connective 76 77	、
+T7	Argument 83 88	火災に至る
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Connective 60 61	で
+T9	Argument 61 71	当該配線の被覆が摩耗
+T10	Connective 72 73	て
+R4	RESULT Arg1:T4 Arg2:T9	
+T11	Argument 73 75	短絡
+R8	REASON Arg1:T8 Arg2:T5	
+R9	RESULT Arg1:T8 Arg2:T9	
+R10	REASON Arg1:T10 Arg2:T9	
+R11	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 77 79	最悪
+T13	Connective 80 82	場合
+R12	CONDITION Arg1:T13 Arg2:T12	
+R13	RESULT Arg1:T13 Arg2:T7	

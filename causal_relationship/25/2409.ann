@@ -1,0 +1,21 @@
+T1	Argument 0 40	ハイブリッドモータの軸受け部において、加工機の管理不良による製造時の寸法ばらつき
+T2	Connective 40 43	により
+T3	Argument 43 56	軸受けに過大な荷重がかかっ
+T4	Connective 62 63	、
+T5	Argument 70 82	当該軸受けのグリスが劣化
+T6	Connective 90 94	そのため
+T9	Argument 111 118	エンジンが停止
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+T7	Argument 95 109	そのままの状態で使用を続ける
+T8	Connective 109 110	と
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T14	Argument 63 69	軸受けの発熱
+T15	Connective 69 70	で
+R9	REASON Arg1:T15 Arg2:T14	
+R10	RESULT Arg1:T15 Arg2:T5	

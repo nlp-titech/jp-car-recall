@@ -1,0 +1,17 @@
+T2	Connective 40 41	為
+T4	Connective 76 77	じ
+T5	Argument 83 97	当該タイミングチェーンが破損
+T6	Argument 42 56	そのままの状態で使用を続ける
+T7	Connective 56 57	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+T8	Argument 77 79	最悪
+T9	Connective 80 82	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 58 76	当該タイミングチェーンの潤滑不良が生
+R2	RESULT Arg1:T7 Arg2:T10	
+R3	RESULT Arg1:T2 Arg2:T10	
+R4	REASON Arg1:T4 Arg2:T10	
+R6	RESULT Arg1:T4 Arg2:T5	
+T1	Argument 8 39	タイミングチェーン潤滑装置のエンジンオイル噴出口の形状が不適切
+R1	REASON Arg1:T2 Arg2:T1	

@@ -1,0 +1,23 @@
+T1	Argument 0 21	原動機の回転センサ内部の樹脂材充填が不適切
+T2	Argument 39 48	基盤部の半田が変形
+T3	Argument 50 57	回路がショート
+T4	Argument 59 71	正常な信号が発信されない
+T5	Connective 77 81	そのため
+T6	Argument 82 94	原動機が始動できなくなる
+T7	Argument 98 118	走行中に原動機が停止し再始動できなくなる
+T9	Connective 27 29	ため
+T10	Connective 49 50	、
+T11	Connective 58 59	て
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T2	
+R3	REASON Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T3	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+R7	REASON Arg1:T5 Arg2:T4	
+R8	RESULT Arg1:T5 Arg2:T6	
+R10	RESULT Arg1:T5 Arg2:T7	
+T8	Connective 36 39	により
+T13	Argument 30 35	原動機の熱
+R11	REASON Arg1:T8 Arg2:T13	
+R12	RESULT Arg1:T8 Arg2:T2	

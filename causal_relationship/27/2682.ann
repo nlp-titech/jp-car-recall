@@ -1,0 +1,29 @@
+T1	Argument 0 33	小型トラックにおいて、ナックルアダプタのナックル嵌合穴加工が不適切
+T2	Connective 34 36	ため
+T3	Argument 37 56	当該アダプタの取付けボルトの軸力が不足
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 66 70	そのため
+T5	Argument 87 102	取付けボルトの脱落や折損が生じ
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T9	Argument 109 118	当該アダプタが回転
+T6	Connective 102 103	、
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+T7	Connective 134 135	、
+T8	Argument 135 149	前輪のブレーキが利かなくなる
+R8	RESULT Arg1:T7 Arg2:T8	
+T10	Connective 119 120	て
+T11	Argument 120 133	前輪のブレーキホースが損傷
+R7	REASON Arg1:T10 Arg2:T9	
+R9	RESULT Arg1:T10 Arg2:T11	
+R10	REASON Arg1:T7 Arg2:T11	
+T12	Argument 71 85	そのままの状態で使用を続ける
+T13	Connective 85 86	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T5	
+T14	Argument 103 105	最悪
+T15	Connective 106 108	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T9	

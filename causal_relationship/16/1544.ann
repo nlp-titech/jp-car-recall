@@ -1,0 +1,35 @@
+T1	Argument 45 63	ソケットバルブの接点が接触不良となる
+T2	Argument 74 88	当該接点部にアーク放電が発生
+T3	Argument 90 100	配線被覆の一部が損傷
+T4	Argument 120 124	ショート
+T5	Argument 126 135	前照灯が不灯となり
+T6	Argument 142 147	火災に至る
+T8	Connective 125 126	、
+T9	Connective 107 108	、
+T10	Connective 89 90	、
+T11	Connective 69 73	そのため
+R1	REASON Arg1:T11 Arg2:T1	
+R2	RESULT Arg1:T11 Arg2:T2	
+R3	REASON Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T8 Arg2:T4	
+R8	RESULT Arg1:T8 Arg2:T5	
+T12	Argument 0 20	前照灯ソケットにおいて、配線方法が不適切
+T13	Connective 21 23	ため
+T14	Argument 24 42	前照灯バルブ交換後の配線を再収納した
+T15	Connective 42 43	際
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T1	
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T1	
+T16	Argument 108 118	そのまま使用を続ける
+T17	Connective 118 119	と
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T4	
+T18	Argument 136 138	最悪
+T19	Connective 139 141	場合
+R17	CONDITION Arg1:T19 Arg2:T18	
+R18	RESULT Arg1:T19 Arg2:T6	
+R9	RESULT Arg1:T8 Arg2:T6	

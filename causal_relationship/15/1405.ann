@@ -1,0 +1,29 @@
+T2	Connective 50 52	ため
+T3	Argument 53 59	原動機の振動
+T4	Connective 59 62	により
+T5	Argument 62 70	ブラケットが共振
+T6	Connective 70 71	し
+T7	Argument 71 76	亀裂が発生
+T8	Connective 84 88	そのため
+T9	Argument 89 99	そのまま使用を続ける
+T10	Connective 99 100	と
+T11	Argument 101 111	当該ブラケットが折損
+T12	Connective 112 113	て
+T13	Argument 113 124	アース機能が不良となり
+T14	Connective 124 125	、
+T15	Argument 125 139	エンストし再始動できなくなる
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	CONDITION Arg1:T10 Arg2:T9	
+R9	RESULT Arg1:T8 Arg2:T11	
+R10	REASON Arg1:T12 Arg2:T11	
+R11	RESULT Arg1:T10 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+T1	Argument 0 46	原動機用電子制御装置等のアース線を接続するブラケット（エンジンアースブラケット）の強度が不足
+R1	REASON Arg1:T2 Arg2:T1	

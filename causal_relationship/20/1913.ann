@@ -1,0 +1,33 @@
+T1	Argument 0 48	動力伝達装置において、前後進切替えレバーのリンク機構に使用しているベアリング保持金具の強度が不足
+T2	Connective 52 54	ため
+T3	Argument 70 86	保持金具取付ボルトに緩みが生じる
+T4	Connective 92 96	そのため
+T5	Argument 113 125	当該保持金具に亀裂が生じ
+T6	Connective 125 126	、
+T7	Argument 132 139	保持金具が破損
+T8	Connective 154 155	、
+T9	Argument 155 162	走行不能となる
+R1	RESULT Arg1:T8 Arg2:T9	
+R3	RESULT Arg1:T6 Arg2:T7	
+R4	REASON Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T5	
+R6	REASON Arg1:T4 Arg2:T3	
+R7	RESULT Arg1:T2 Arg2:T3	
+R8	REASON Arg1:T2 Arg2:T1	
+T14	Argument 55 68	レバー操作を繰り返し行なう
+T15	Connective 68 69	と
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T3	
+T10	Argument 97 111	そのままの状態で使用を続ける
+T11	Connective 111 112	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	
+T16	Connective 139 140	し
+T17	Argument 140 154	前後進の切替えが出来なくなり
+R15	REASON Arg1:T8 Arg2:T17	
+R2	REASON Arg1:T16 Arg2:T7	
+R16	RESULT Arg1:T16 Arg2:T17	
+T12	Argument 126 128	最悪
+T13	Connective 129 131	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T7	

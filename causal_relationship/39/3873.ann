@@ -1,0 +1,33 @@
+T1	Argument 0 47	後２軸式の大型トラクタにおいて、ディファレンシャルのリングギヤを固定するボルトの締付作業を行う
+T2	Argument 49 66	ボルト締付機のソケット形状が不適切
+T3	Argument 70 78	締付トルクが不足
+T4	Argument 93 107	そのままの状態で使用を続ける
+T5	Argument 109 115	ボルトが緩み
+T6	Argument 116 118	最悪
+T7	Argument 122 128	ボルトが抜け
+T8	Argument 129 141	ディファレンシャルが破損
+T9	Argument 143 150	走行不能になる
+T10	Connective 47 48	際
+T11	Connective 67 69	ため
+T12	Connective 88 92	そのため
+T13	Connective 107 108	と
+T14	Connective 115 116	、
+T15	Connective 119 121	場合
+T16	Connective 128 129	、
+T17	Connective 142 143	て
+R1	CONDITION Arg1:T10 Arg2:T1	
+R3	REASON Arg1:T11 Arg2:T2	
+R4	RESULT Arg1:T11 Arg2:T3	
+R5	REASON Arg1:T12 Arg2:T3	
+R7	CONDITION Arg1:T13 Arg2:T4	
+R8	RESULT Arg1:T13 Arg2:T5	
+R9	REASON Arg1:T14 Arg2:T5	
+R11	CONDITION Arg1:T15 Arg2:T6	
+R12	RESULT Arg1:T15 Arg2:T7	
+R13	REASON Arg1:T16 Arg2:T7	
+R14	RESULT Arg1:T16 Arg2:T8	
+R15	REASON Arg1:T17 Arg2:T8	
+R16	RESULT Arg1:T17 Arg2:T9	
+R2	RESULT Arg1:T10 Arg2:T3	
+R6	RESULT Arg1:T12 Arg2:T5	
+R10	RESULT Arg1:T14 Arg2:T7	

@@ -1,0 +1,33 @@
+T1	Argument 0 61	静油圧変速機を作動させる油圧ポンプにおいて、油圧ポンプ組立時にリヤポンプの締結ボルトを過大トルクで締結したためメネジが変形
+T2	Connective 74 76	場合
+T3	Argument 77 87	ボルトの締結力が低下
+T4	Connective 91 93	ため
+T5	Argument 93 109	当該ボルトが使用過程において緩み
+T6	Argument 114 128	そのままの状態で使用を続ける
+T7	Connective 128 129	と
+T8	Argument 130 144	ポンプ締結部より作動油が漏れ
+T9	Connective 144 145	、
+T10	Argument 145 147	最悪
+T11	Connective 148 150	場合
+T12	Argument 151 157	作動油が不足
+R1	RESULT Arg1:T11 Arg2:T12	
+R2	CONDITION Arg1:T11 Arg2:T10	
+R3	RESULT Arg1:T9 Arg2:T12	
+R4	REASON Arg1:T9 Arg2:T8	
+R5	RESULT Arg1:T7 Arg2:T8	
+R6	CONDITION Arg1:T7 Arg2:T6	
+R7	REASON Arg1:T2 Arg2:T1	
+R8	RESULT Arg1:T2 Arg2:T3	
+R9	REASON Arg1:T4 Arg2:T3	
+T13	Connective 113 114	。
+R10	RESULT Arg1:T4 Arg2:T5	
+R11	REASON Arg1:T13 Arg2:T16	
+R12	RESULT Arg1:T13 Arg2:T8	
+T14	Connective 158 159	て
+T15	Argument 159 171	静油圧変速機が作動しなく
+R13	REASON Arg1:T14 Arg2:T12	
+R14	RESULT Arg1:T14 Arg2:T15	
+T16	Argument 109 111	脱落
+T17	Connective 108 109	み
+R15	REASON Arg1:T17 Arg2:T5	
+R16	RESULT Arg1:T17 Arg2:T16	

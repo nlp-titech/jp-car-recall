@@ -1,0 +1,29 @@
+T1	Argument 0 29	刈取脱穀作業車の排気管において、排気管接続部の設計が不適切
+T2	Argument 33 45	湿田で刈取脱穀作業を行う
+T3	Argument 46 59	泥が排気管の接続部に詰まる
+T4	Argument 70 89	排気管内に外気を取り入れることができず
+T5	Argument 90 102	排気ガスの温度が低下せず
+T6	Argument 103 115	排気管表面温度が高くなり
+T7	Argument 122 138	排気管の表面に堆積したワラが発火
+T8	Connective 30 32	ため
+T9	Connective 45 46	と
+T10	Connective 65 69	そのため
+T11	Connective 89 90	、
+T12	Connective 102 103	、
+T13	Connective 115 116	、
+T14	Connective 119 121	場合
+T15	Argument 116 118	最悪
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T3	
+R3	CONDITION Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T3	
+R5	REASON Arg1:T10 Arg2:T3	
+R6	RESULT Arg1:T10 Arg2:T4	
+R7	REASON Arg1:T11 Arg2:T4	
+R8	RESULT Arg1:T11 Arg2:T5	
+R9	REASON Arg1:T12 Arg2:T5	
+R10	RESULT Arg1:T12 Arg2:T6	
+R11	REASON Arg1:T13 Arg2:T6	
+R12	RESULT Arg1:T13 Arg2:T7	
+R13	CONDITION Arg1:T14 Arg2:T15	
+R14	RESULT Arg1:T14 Arg2:T7	

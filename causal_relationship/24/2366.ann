@@ -1,0 +1,5 @@
+T1	Argument 0 43	クレーン用台車の加速装置において、アクセルリターンスプリングが１つしか装備されていない
+T2	Connective 43 45	ため
+T3	Argument 46 65	道路運送車両の保安基準に適合していない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

@@ -1,0 +1,25 @@
+T1	Argument 0 49	スロットルプーリー（スロットルワイヤの動きをスロットルバルブへ伝えるもの）ハウジングの構造が不適切
+T2	Connective 50 52	ため
+T3	Argument 53 67	当該ハウジング内に異物が混入
+T4	Connective 75 79	そのため
+T5	Argument 80 98	スロットルプーリーに異物が引っかかっ
+T6	Connective 98 99	て
+T7	Argument 99 106	戻りが悪くなり
+T8	Argument 113 139	アクセルグリップを戻してもスロットルバルブが閉まらず
+T9	Connective 106 107	、
+T10	Argument 140 154	エンジン回転が下がらなくなる
+T11	Connective 139 140	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+R9	REASON Arg1:T11 Arg2:T8	
+R10	RESULT Arg1:T11 Arg2:T10	
+T12	Argument 107 109	最悪
+T13	Connective 110 112	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T8	

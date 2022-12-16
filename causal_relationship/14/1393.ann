@@ -1,0 +1,32 @@
+T1	Argument 0 26	大型バスのエンジンルーム内電気配線の取り回しが不適切
+T2	Connective 27 29	ため
+T3	Argument 30 49	当該配線が消音器を固定するボルトに干渉
+T4	Connective 57 61	そのため
+T5	Argument 62 76	そのままの状態で使用を続ける
+T6	Connective 76 77	と
+T7	Argument 78 87	走行中の車体の振動
+T8	Connective 87 90	により
+T9	Argument 90 100	当該配線の被覆が損傷
+T10	Connective 104 105	、
+T11	Argument 105 107	最悪
+T12	Connective 108 110	場合
+T13	Argument 111 128	制動灯等後面の灯火器類が点灯しない
+T14	Argument 130 142	エンストし、再始動しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	CONDITION Arg1:T6 Arg2:T5	
+R5	REASON Arg1:T8 Arg2:T7	
+R6	RESULT Arg1:T4 Arg2:T9	
+R7	RESULT Arg1:T6 Arg2:T9	
+R8	RESULT Arg1:T8 Arg2:T9	
+R10	CONDITION Arg1:T12 Arg2:T11	
+R11	RESULT Arg1:T10 Arg2:T13	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	RESULT Arg1:T12 Arg2:T14	
+R14	RESULT Arg1:T10 Arg2:T14	
+T17	Argument 101 103	短絡
+T18	Connective 100 101	、
+R9	REASON Arg1:T18 Arg2:T9	
+R17	RESULT Arg1:T18 Arg2:T17	
+R18	REASON Arg1:T10 Arg2:T17	

@@ -1,0 +1,25 @@
+T1	Argument 0 33	前輪に空気ばねを装着した車両において、ラテラルメンバーの強度が不足
+T2	Argument 40 49	当該メンバーが切損
+T3	Argument 57 69	車両の横ずれが大きくなる
+T4	Argument 75 92	空気ばねがステアリングアームと干渉
+T5	Argument 94 96	破損
+T6	Argument 98 106	操縦安定性が低下
+T7	Connective 37 39	ため
+T8	Connective 50 51	、
+T9	Connective 71 74	により
+T10	Connective 93 94	て
+T11	Connective 97 98	、
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T5	
+R9	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	
+T12	Argument 51 53	最悪
+T13	Connective 54 56	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T3	

@@ -1,0 +1,29 @@
+T1	Argument 0 32	大型ダブルキャブ車において、パワーステアリング配管の形状が不適切
+T2	Connective 33 35	ため
+T3	Argument 66 77	タイヤが当該配管と接触
+T4	Connective 85 89	そのため
+T5	Argument 106 113	接触部分が損傷
+T6	Connective 114 115	、
+T7	Argument 121 127	オイルが漏れ
+T8	Connective 127 128	、
+T9	Argument 128 141	ステアリングの操舵力が過大
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 36 61	ステアリングを最大限度まで切った状態で段差等を通過
+T11	Connective 63 65	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	
+T12	Argument 90 104	そのままの状態で使用を続ける
+T13	Connective 104 105	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T5	
+T14	Argument 115 117	最悪
+T15	Connective 118 120	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T7	

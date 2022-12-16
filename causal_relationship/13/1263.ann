@@ -1,0 +1,29 @@
+T1	Argument 0 31	空気ばね仕様車において、後軸スタビライザ取付金具の形状が不適切
+T2	Connective 32 34	ため
+T5	Argument 35 65	旋回時に当該取付金具を組付けているフレームに過大な応力が生じ
+T6	Connective 65 66	、
+T7	Argument 66 71	亀裂が発生
+T8	Connective 79 83	そのため
+T9	Argument 84 94	そのまま使用を続ける
+T10	Connective 94 95	と
+T11	Argument 96 101	亀裂が進行
+T12	Connective 102 103	て
+T13	Argument 104 106	最悪
+T14	Connective 107 109	場合
+T15	Argument 110 117	当該金具が外れ
+R1	REASON Arg1:T2 Arg2:T1	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	CONDITION Arg1:T10 Arg2:T9	
+R9	REASON Arg1:T12 Arg2:T11	
+R10	CONDITION Arg1:T14 Arg2:T13	
+R11	RESULT Arg1:T8 Arg2:T11	
+R12	RESULT Arg1:T10 Arg2:T11	
+R13	RESULT Arg1:T12 Arg2:T15	
+R14	RESULT Arg1:T14 Arg2:T15	
+T16	Connective 116 117	れ
+T17	Argument 117 127	走行安定性が損われる
+R15	REASON Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T17	

@@ -1,0 +1,25 @@
+T1	Argument 11 38	ブレーキワイヤの組付け及び固定ナットの締め付けが不適切
+T2	Argument 42 57	駐車ブレーキ操作を繰り返し行う
+T3	Argument 58 72	使用過程中に固定ナットが緩む
+T4	Argument 83 97	そのままの状態で使用を続ける
+T5	Argument 99 107	固定ナットが外れ
+T6	Argument 108 110	最悪
+T7	Argument 114 128	駐車ブレーキが作動しなくなる
+T8	Connective 39 41	ため
+T9	Connective 57 58	と
+T10	Connective 78 82	そのため
+T11	Connective 97 98	と
+T12	Connective 107 108	、
+T13	Connective 111 113	場合
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T3	
+R3	CONDITION Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T3	
+R5	REASON Arg1:T10 Arg2:T3	
+R6	RESULT Arg1:T10 Arg2:T5	
+R7	CONDITION Arg1:T11 Arg2:T4	
+R8	RESULT Arg1:T11 Arg2:T5	
+R9	REASON Arg1:T12 Arg2:T5	
+R10	RESULT Arg1:T12 Arg2:T7	
+R11	CONDITION Arg1:T13 Arg2:T6	
+R12	RESULT Arg1:T13 Arg2:T7	

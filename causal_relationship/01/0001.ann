@@ -1,0 +1,23 @@
+T1	Argument 131 153	前照灯、方向指示器等の灯火類が作動しなくなっ
+T2	Argument 113 120	当該配線が短絡
+T4	Connective 58 60	ため
+T5	Argument 61 88	当該電気配線の組付け工程において、一部の配線被覆を損傷
+R2	RESULT Arg1:T4 Arg2:T5	
+T7	Connective 96 97	、
+R4	RESULT Arg1:T7 Arg2:T2	
+T9	Connective 130 131	、
+R3	REASON Arg1:T7 Arg2:T5	
+R5	RESULT Arg1:T9 Arg2:T1	
+T6	Connective 121 122	て
+T8	Argument 123 130	ヒューズが切れ
+R6	REASON Arg1:T6 Arg2:T2	
+R7	RESULT Arg1:T6 Arg2:T8	
+R8	REASON Arg1:T9 Arg2:T8	
+T10	Argument 156 168	原動機が始動できなくなっ
+R9	RESULT Arg1:T9 Arg2:T10	
+T11	Argument 97 111	このままの状態で使用を続ける
+T12	Connective 111 112	と
+R11	RESULT Arg1:T12 Arg2:T2	
+T13	Argument 0 52	原動機室内の前端にある車わく（コ型形状）内に束ねて配索した電気配線を保護する樹脂製シートの取付けに不適切
+R1	REASON Arg1:T4 Arg2:T13	
+R10	CONDITION Arg1:T12 Arg2:T11	

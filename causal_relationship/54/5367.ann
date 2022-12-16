@@ -1,0 +1,29 @@
+T1	Argument 22 44	センサー（傾斜角センサー）の取付位置が不適切
+T2	Connective 45 47	ため
+T3	Argument 59 67	内部の部品が変形
+T4	Connective 75 79	そのため
+T5	Argument 92 102	センサーが過剰に反応
+T6	Connective 103 104	、
+T7	Argument 104 122	カーブ路を走行中に転倒したものと判断
+T8	Connective 129 130	、
+T9	Argument 136 143	エンジンが停止
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T10	Argument 48 56	エンジンの熱影響
+T11	Connective 56 59	により
+R7	REASON Arg1:T11 Arg2:T10	
+R8	RESULT Arg1:T11 Arg2:T3	
+T12	Argument 80 90	そのまま使用を続ける
+T13	Connective 90 91	と
+R9	CONDITION Arg1:T13 Arg2:T12	
+R10	RESULT Arg1:T13 Arg2:T5	
+T14	Argument 130 132	最悪
+T15	Connective 133 135	場合
+R11	REASON Arg1:T8 Arg2:T7	
+R12	RESULT Arg1:T8 Arg2:T9	
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T9	

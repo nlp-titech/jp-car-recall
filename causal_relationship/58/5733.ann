@@ -1,0 +1,9 @@
+T1	Argument 0 29	ワイパーアーム取付けナットにおいて、取付時の締付けが不十分
+T2	Connective 36 40	そのため
+T3	Argument 41 51	そのまま使用を続ける
+T4	Connective 51 52	と
+T5	Argument 53 64	ワイパーアームが外れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

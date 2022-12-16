@@ -1,0 +1,39 @@
+T1	Argument 0 34	後輪ブレーキ行きエアホースの固定具（ゴムクリップ）の支持位置が不適切
+T2	Argument 38 53	駐車ブレーキ用エアホースと干渉
+T3	Connective 35 37	ため
+T4	Connective 61 65	そのため
+T5	Argument 90 101	当該ホース同士がこすれ
+T6	Connective 105 106	、
+T7	Argument 112 120	ホースに穴が開い
+T8	Connective 126 127	、
+T9	Argument 127 133	制動力が不足
+T10	Argument 138 153	駐車ブレーキが解除できなくなる
+R1	RESULT Arg1:T8 Arg2:T9	
+R2	RESULT Arg1:T8 Arg2:T10	
+R3	REASON Arg1:T3 Arg2:T1	
+R4	RESULT Arg1:T3 Arg2:T2	
+R5	REASON Arg1:T4 Arg2:T2	
+R8	RESULT Arg1:T6 Arg2:T7	
+T11	Argument 82 89	走行時の振動等
+T12	Connective 89 90	で
+R6	RESULT Arg1:T4 Arg2:T5	
+R7	REASON Arg1:T12 Arg2:T11	
+R10	RESULT Arg1:T12 Arg2:T5	
+T13	Argument 66 80	そのままの状態で使用を続ける
+T14	Connective 80 81	と
+R12	CONDITION Arg1:T14 Arg2:T13	
+R13	RESULT Arg1:T14 Arg2:T5	
+T17	Argument 106 108	最悪
+T18	Connective 109 111	場合
+R16	CONDITION Arg1:T18 Arg2:T17	
+R17	RESULT Arg1:T18 Arg2:T7	
+T15	Connective 101 102	て
+R14	REASON Arg1:T15 Arg2:T5	
+T16	Argument 102 104	摩耗
+R15	REASON Arg1:T6 Arg2:T16	
+R18	RESULT Arg1:T15 Arg2:T16	
+T19	Connective 120 121	て
+R19	REASON Arg1:T19 Arg2:T7	
+T20	Argument 121 126	エアが洩れ
+R9	REASON Arg1:T8 Arg2:T20	
+R20	RESULT Arg1:T19 Arg2:T20	

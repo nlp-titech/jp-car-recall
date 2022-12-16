@@ -1,0 +1,15 @@
+T1	Argument 14 39	吸気マニホールド側バキューム・ホースの材質が不適切
+T2	Connective 40 42	ため
+T3	Argument 43 92	当該ホースが吸気マニホールド内のブローバイ・ガス中に含まれる気化したエンジンオイルの浸透により膨潤
+T4	Connective 93 94	て
+T5	Argument 94 102	接続部から外れる
+T6	Connective 107 108	、
+T7	Argument 108 119	エンジンの回転数が上昇
+T8	Argument 125 131	制動力が低下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T8	

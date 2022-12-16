@@ -1,0 +1,42 @@
+T1	Argument 0 81	ガソリン燃料装置に圧縮天然ガス（ＣＮＧ）を併用で使用できるように改造した車両において、ＣＮＧの圧力及び流量を制御する低圧レギュレータの内部にある弁のゴム硬度が高く
+T2	Argument 84 94	弁座の加工精度が悪い
+T3	Connective 94 96	ため
+T4	Argument 97 109	当該弁のシール性が不十分
+T5	Connective 116 120	そのため
+T6	Argument 121 132	当該弁からＣＮＧが漏れ
+T7	Connective 132 133	、
+T8	Argument 133 149	アイドル運転中に燃料濃度が濃くな
+T9	Argument 166 186	駐車中に内部で漏れたＣＮＧが吸気管に滞留
+T10	Connective 187 188	、
+T11	Argument 188 203	エンジン停止直後に再始動を行う
+T12	Connective 203 204	と
+T13	Argument 204 214	バックファイアが発生
+T14	Connective 221 222	、
+T15	Argument 222 224	最悪
+T16	Connective 225 227	場合
+T17	Argument 228 239	ブローバイホースが抜け
+T18	Connective 239 240	、
+T19	Argument 240 254	ブローバイガスが大気中に放出
+R1	REASON Arg1:T3 Arg2:T1	
+R2	REASON Arg1:T3 Arg2:T2	
+R3	RESULT Arg1:T3 Arg2:T4	
+R4	REASON Arg1:T5 Arg2:T4	
+R5	RESULT Arg1:T5 Arg2:T6	
+R6	REASON Arg1:T7 Arg2:T6	
+R7	RESULT Arg1:T7 Arg2:T8	
+R8	RESULT Arg1:T7 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T17	
+R15	CONDITION Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T17	
+R17	REASON Arg1:T18 Arg2:T17	
+R18	RESULT Arg1:T18 Arg2:T19	
+T24	Argument 150 158	エンジン回転不調
+T25	Connective 149 150	り
+R19	RESULT Arg1:T25 Arg2:T24	
+R20	REASON Arg1:T25 Arg2:T8	
+#1	AnnotatorNotes T9	駐車中に」は修飾節内とみなす

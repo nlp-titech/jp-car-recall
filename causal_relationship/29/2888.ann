@@ -1,0 +1,25 @@
+T1	Argument 0 51	補給品として出荷した前軸用ホイールベアリングに不良品（ベアリングの「ころ」の製造不良があるもの）が混入
+T2	Connective 53 55	ため
+T3	Argument 56 98	前軸のホイールベアリングを交換したトラック、バスにおいて、これらの不良品が組み込まれ
+T4	Connective 105 109	そのため
+T5	Argument 110 120	そのまま使用を続ける
+T6	Connective 120 121	と
+T7	Argument 122 127	がたが発生
+T8	Connective 128 129	、
+T9	Argument 129 131	最悪
+T10	Connective 132 134	場合
+T11	Argument 135 148	ブレーキが引き摺りを起こし
+T12	Connective 148 149	、
+T13	Argument 149 154	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T11	
+R9	CONDITION Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	

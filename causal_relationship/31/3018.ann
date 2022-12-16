@@ -1,0 +1,21 @@
+T1	Argument 0 64	１６段式変速機を搭載した大型トラクタにおいて、変速機のアウトプットシャフトとフランジカップリングのスプラインの嵌合部にガタがある
+T2	Connective 64 66	ため
+T3	Argument 67 100	加減速時にフランジカップリング締結ボルトのねじ部に過大な力がかかる
+T4	Connective 101 105	そのため
+T5	Argument 122 130	当該ボルトが折損
+T6	Argument 138 149	プロペラシャフトが脱落
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T7	Connective 131 132	、
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	
+T10	Argument 106 120	そのままの状態で使用を続ける
+T11	Connective 120 121	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	
+T12	Argument 132 134	最悪
+T13	Connective 135 137	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T6	

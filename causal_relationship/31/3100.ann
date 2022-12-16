@@ -1,0 +1,17 @@
+T1	Argument 0 48	農耕トラクタのアクセルペダルワイヤーのフックエンドにおいて、フックエンドの曲げ角度の製造バラツキ
+T2	Connective 48 51	により
+T3	Argument 52 78	ハンドアクセルレバー使用時にアクセルペダルを踏み込む
+T4	Connective 78 79	と
+T5	Argument 115 134	アクセルワイヤが引っ張られた状態となる
+T6	Connective 141 145	そのため
+T9	Argument 154 202	アクセルペダル及びハンドアクセルレバーを戻してもエンジン回転数がアイドリング回転数まで下がらない
+R3	RESULT Arg1:T6 Arg2:T9	
+R4	REASON Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T10	
+R6	CONDITION Arg1:T4 Arg2:T3	
+R7	RESULT Arg1:T2 Arg2:T10	
+R8	REASON Arg1:T2 Arg2:T1	
+T10	Argument 80 112	アクセルペダルのワイヤーフックエンドがペダルリンクの穴に入り込む
+T11	Connective 112 115	ことで
+R9	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	

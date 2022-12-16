@@ -1,0 +1,39 @@
+T1	Argument 0 50	ゲート昇降用又はボデースライド用リモコンスイッチ（ケーブル付）において、使用環境に対する設計が不十分
+T2	Connective 51 53	ため
+T3	Argument 54 67	リモコンケースの強度が不足
+T4	Argument 68 73	亀裂が発生
+T5	Argument 75 85	配線の防水ゴムが脱落
+T6	Connective 67 68	し
+T7	Connective 94 98	そのため
+T8	Argument 99 109	そのまま使用を続ける
+T9	Connective 109 110	と
+T10	Argument 111 122	スイッチ内部に水が浸入
+T11	Connective 123 124	、
+T12	Argument 124 132	作動不良を起こし
+T13	Connective 132 133	、
+T14	Argument 133 147	ゲート又ボデーが動かなくなる
+T15	Argument 149 156	止まらなくなる
+T16	Connective 161 162	、
+T17	Argument 162 164	最悪
+T18	Connective 165 167	場合
+T19	Argument 168 178	作業者に危害を加える
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T6 Arg2:T3	
+R4	RESULT Arg1:T6 Arg2:T4	
+R5	RESULT Arg1:T6 Arg2:T5	
+R6	REASON Arg1:T7 Arg2:T4	
+R7	REASON Arg1:T7 Arg2:T5	
+R8	CONDITION Arg1:T9 Arg2:T8	
+R9	RESULT Arg1:T9 Arg2:T10	
+R10	RESULT Arg1:T7 Arg2:T10	
+R11	REASON Arg1:T11 Arg2:T10	
+R12	RESULT Arg1:T11 Arg2:T12	
+R13	REASON Arg1:T13 Arg2:T12	
+R14	RESULT Arg1:T13 Arg2:T14	
+R15	RESULT Arg1:T13 Arg2:T15	
+R16	REASON Arg1:T16 Arg2:T15	
+R17	CONDITION Arg1:T18 Arg2:T17	
+R18	RESULT Arg1:T18 Arg2:T19	
+R19	RESULT Arg1:T16 Arg2:T19	
+R20	REASON Arg1:T16 Arg2:T14	

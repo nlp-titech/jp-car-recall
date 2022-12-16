@@ -1,0 +1,33 @@
+T1	Argument 0 22	フロントサスペンションフレームの製造が不適切
+T2	Connective 23 25	ため
+T3	Argument 40 67	サスペンションフレームのロアアーム取付ブラケットが腐食
+T4	Connective 75 79	そのため
+T5	Argument 96 101	腐食が進行
+T6	Connective 102 103	、
+T7	Argument 103 118	ロアアーム取付ブラケットが破損
+T8	Connective 119 120	て
+T9	Argument 127 135	ロアアームが脱落
+T10	Connective 136 137	て
+T11	Argument 137 144	走行不能となる
+R1	REASON Arg1:T10 Arg2:T9	
+R2	RESULT Arg1:T10 Arg2:T11	
+R3	REASON Arg1:T8 Arg2:T7	
+R4	RESULT Arg1:T8 Arg2:T9	
+T12	Argument 121 123	最悪
+T13	Connective 124 126	場合
+R5	CONDITION Arg1:T13 Arg2:T12	
+R6	RESULT Arg1:T13 Arg2:T9	
+R7	REASON Arg1:T6 Arg2:T5	
+R8	RESULT Arg1:T6 Arg2:T7	
+R9	RESULT Arg1:T4 Arg2:T7	
+R10	REASON Arg1:T4 Arg2:T3	
+T14	Argument 80 94	そのままの状態で使用を続ける
+T15	Connective 94 95	と
+R11	CONDITION Arg1:T15 Arg2:T14	
+R12	RESULT Arg1:T15 Arg2:T5	
+R13	RESULT Arg1:T2 Arg2:T3	
+R14	REASON Arg1:T2 Arg2:T1	
+T16	Argument 26 36	塩水等の腐食促進物質
+T17	Connective 36 40	によって
+R15	REASON Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T3	

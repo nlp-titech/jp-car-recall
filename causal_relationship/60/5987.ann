@@ -1,0 +1,9 @@
+T1	Argument 0 25	エンジンコントロールユニットのソフトウェアが不適切
+T2	Argument 29 54	排気ガス再循環装置（ＥＧＲ）バルブが適切に開かない
+T3	Connective 26 28	ため
+T4	Connective 55 59	その結果
+T5	Argument 60 76	窒素酸化物の排出量が基準値を超え
+R1	REASON Arg1:T3 Arg2:T1	
+R2	RESULT Arg1:T3 Arg2:T2	
+R3	REASON Arg1:T4 Arg2:T2	
+R4	RESULT Arg1:T4 Arg2:T5	

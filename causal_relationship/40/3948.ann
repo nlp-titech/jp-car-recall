@@ -1,0 +1,29 @@
+T1	Argument 51 69	レバー保持機構の歯先どうしがつり合っ
+T2	Argument 12 32	手動式パーキングブレーキレバーを引き上げ
+T3	Argument 71 83	レバーが確実に固定できず
+T4	Argument 88 95	つり合いが外れ
+T5	Argument 96 103	レバーが下がる
+T6	Argument 114 120	制動力が低下
+T7	Argument 122 124	最悪
+T8	Argument 128 135	車両が動き出す
+T9	Connective 69 70	て
+T10	Connective 33 35	際に
+T11	Connective 83 84	、
+T12	Connective 95 96	て
+T13	Connective 109 113	そのため
+T14	Connective 121 122	、
+T15	Connective 125 127	場合
+R1	CONDITION Arg1:T10 Arg2:T2	
+R2	RESULT Arg1:T10 Arg2:T1	
+R3	REASON Arg1:T9 Arg2:T1	
+R4	RESULT Arg1:T9 Arg2:T3	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+R7	REASON Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T5	
+R9	REASON Arg1:T13 Arg2:T5	
+R10	RESULT Arg1:T13 Arg2:T6	
+R11	REASON Arg1:T14 Arg2:T6	
+R12	RESULT Arg1:T14 Arg2:T8	
+R13	CONDITION Arg1:T15 Arg2:T7	
+R14	RESULT Arg1:T15 Arg2:T8	

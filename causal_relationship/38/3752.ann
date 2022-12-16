@@ -1,0 +1,29 @@
+T1	Argument 9 44	エンジンＥＣＵの制御プログラムにおいて、ノッキングの制御データが不適切
+T2	Argument 48 57	ノッキングを誤検知
+T3	Argument 59 66	点火時期が遅れ
+T4	Argument 67 81	排気ガス温度が著しく高くなる
+T5	Argument 92 102	そのまま使用を続ける
+T6	Argument 103 106	熱疲労
+T7	Argument 109 123	排気マニホールドに亀裂が生じ
+T8	Argument 124 130	排気ガス漏れ
+T9	Connective 45 47	ため
+T10	Connective 58 59	、
+T11	Connective 66 67	、
+T12	Connective 87 91	そのため
+T13	Connective 102 103	と
+T14	Connective 106 109	により
+T15	Connective 123 124	、
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T2	
+R3	REASON Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T3	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+R7	REASON Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T7	
+R9	CONDITION Arg1:T13 Arg2:T5	
+R10	RESULT Arg1:T13 Arg2:T7	
+R11	REASON Arg1:T14 Arg2:T6	
+R12	RESULT Arg1:T14 Arg2:T7	
+R13	REASON Arg1:T15 Arg2:T7	
+R14	RESULT Arg1:T15 Arg2:T8	

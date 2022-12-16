@@ -1,0 +1,21 @@
+T1	Argument 29 40	ヒュ－ズの容量が不適切
+T2	Connective 41 43	ため
+T3	Argument 60 67	ヒュ－ズが溶断
+T4	Connective 68 69	、
+T5	Argument 69 85	バッテリ－への充電がされなくなり
+T6	Connective 85 86	、
+T7	Argument 92 106	原動機の再始動ができなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 86 88	最悪
+T9	Connective 89 91	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T7	
+T10	Argument 44 55	高負荷電流が頻繁に流れ
+T11	Connective 56 58	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	

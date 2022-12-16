@@ -1,0 +1,5 @@
+T2	Argument 0 55	運転者席用の座席ベルト装着警報装置及びエアバッグ警報装置において、座席ベルトバックル内の警報スイッチに加工不良
+T1	Connective 61 63	ため
+T3	Argument 64 93	座席ベルトを正しく装着した場合にあっても警報が解除されない
+R1	REASON Arg1:T1 Arg2:T2	
+R2	RESULT Arg1:T1 Arg2:T3	

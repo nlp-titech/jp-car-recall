@@ -1,0 +1,13 @@
+T1	Argument 36 83	給気冷却器（インタークーラー）により過剰に冷やされた吸気中の水分が、スロットルバルブ付近で氷結
+T2	Connective 91 92	、
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 108 134	アクセルペダルを離してもエンジン回転が下がらなくなる
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 92 106	このままの状態で使用を続ける
+T5	Connective 106 107	と
+R3	CONDITION Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T3	
+T6	Argument 22 34	氷点下、高湿度の気象条件
+T7	Connective 35 36	で
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T1	

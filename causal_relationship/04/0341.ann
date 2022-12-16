@@ -1,0 +1,25 @@
+T2	Argument 57 84	マフラーを車体に取り付けているステーに掛かる応力が増大
+T3	Argument 111 119	当該ステーが折損
+T4	Argument 121 128	マフラーが脱落
+T5	Connective 47 48	、
+T6	Connective 86 88	ため
+T7	Connective 120 121	、
+R2	RESULT Arg1:T5 Arg2:T8	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T1	Argument 0 42	騒音防止装置（マフラー）において、排気管とマフラーの結合部のガスケットに緩みが生ずる
+R1	REASON Arg1:T5 Arg2:T1	
+T10	Argument 89 103	そのままの状態で使用を続ける
+T11	Connective 103 104	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	
+T12	Argument 105 107	最悪
+T13	Connective 108 110	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T3	
+T8	Argument 48 56	当該結合部が緩む
+T9	Connective 56 57	と
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T2	

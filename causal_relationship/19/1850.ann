@@ -1,0 +1,13 @@
+T1	Argument 0 23	左後車輪の取付けボルト・ナットの締付け力が不足
+T2	Connective 33 37	そのため
+T3	Argument 56 63	左後車輪が脱落
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T6	Argument 38 48	そのまま使用し続ける
+T7	Connective 48 49	と
+T8	Argument 50 52	最悪
+T9	Connective 53 55	場合
+R3	CONDITION Arg1:T7 Arg2:T6	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	CONDITION Arg1:T9 Arg2:T8	
+R6	RESULT Arg1:T9 Arg2:T3	

@@ -1,0 +1,13 @@
+T1	Argument 0 42	燃料タンクの上部に取り付けられている樹脂製のロールオーバーバルブ取付用部品に成形不良
+T2	Argument 65 83	当該部品と燃料タンクの間に隙間が発生
+T3	Argument 85 91	燃料が漏れる
+T4	Connective 48 49	、
+T5	Connective 84 85	、
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	
+T6	Argument 49 63	このままの状態で使用を続ける
+T7	Connective 63 64	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T2	

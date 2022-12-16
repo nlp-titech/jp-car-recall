@@ -1,0 +1,13 @@
+T1	Argument 0 54	前面ガラスに熱線ガラスが装着されたロータリ除雪自動車において、熱線ガラス用の電気配線コネクタの電気容量が不足
+T2	Connective 58 60	ため
+T3	Argument 61 68	電気接点が発熱
+T4	Connective 76 80	そのため
+T5	Argument 81 91	そのまま使用を続ける
+T6	Connective 91 92	と
+T7	Argument 93 104	電気配線コネクタが焼損
+R1	RESULT Arg1:T6 Arg2:T7	
+R2	CONDITION Arg1:T6 Arg2:T5	
+R3	RESULT Arg1:T4 Arg2:T7	
+R4	REASON Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T2 Arg2:T3	
+R6	REASON Arg1:T2 Arg2:T1	

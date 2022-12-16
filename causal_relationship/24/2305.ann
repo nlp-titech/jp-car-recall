@@ -1,0 +1,13 @@
+T1	Argument 0 44	高規格救急車のアイドル保持装置付車において、アイドル保持装置用電気配線の接続方法が不適切
+T2	Argument 48 65	当該配線の接合部が接触不良を起こす
+T3	Argument 82 102	走行中にエンストして、再始動出来なくなる
+T5	Connective 71 75	そのため
+T7	Connective 45 47	ため
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	
+T8	Argument 76 78	最悪
+T9	Connective 79 81	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	

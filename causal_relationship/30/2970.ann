@@ -1,0 +1,19 @@
+T1	Argument 0 62	自動６速マニュアルモードトランスミッションにおいて、②セレクト用シャフトとセレクトモータを連結する部品のボルト締付けが不適切
+T2	Connective 63 65	ため
+T3	Argument 66 80	当該ボルトが緩んでガタが発生
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 87 88	、
+T5	Argument 88 117	シフトコントロールユニットの指示とシフト位置にずれが生じる
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 117 119	ため
+T7	Argument 120 126	警告灯が点灯
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T9	Argument 132 144	保護制御によりギヤを固定
+T10	Connective 145 146	て
+T11	Argument 147 155	変速できなくなる
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R7	RESULT Arg1:T6 Arg2:T9	

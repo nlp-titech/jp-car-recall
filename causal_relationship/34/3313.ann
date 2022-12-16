@@ -1,0 +1,32 @@
+T1	Argument 0 58	ワイヤーハーネスにおいて、前照灯のハーネス接続部、方向指示器のハーネス接続部、警音器のハーネス接続部の防水性能が不足
+T2	Connective 62 64	ため
+T3	Argument 65 78	それぞれの接続部に水が浸入
+T4	Connective 79 80	、
+T5	Argument 80 100	浸入した水がワイヤーハーネス内部を伝わり
+T6	Connective 119 123	そのため
+T7	Argument 124 135	集合カプラー内部が腐食
+T8	Connective 144 145	、
+T9	Argument 145 147	最悪
+T10	Connective 148 150	場合
+T11	Argument 151 169	前照灯、方向指示器、警音器の作動不良
+R1	RESULT Arg1:T10 Arg2:T11	
+R2	CONDITION Arg1:T10 Arg2:T9	
+R3	RESULT Arg1:T8 Arg2:T11	
+R4	REASON Arg1:T8 Arg2:T24	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	REASON Arg1:T6 Arg2:T27	
+R7	RESULT Arg1:T4 Arg2:T5	
+R8	REASON Arg1:T4 Arg2:T3	
+R9	RESULT Arg1:T2 Arg2:T3	
+R10	REASON Arg1:T2 Arg2:T1	
+T24	Argument 136 144	通電できなくなり
+T25	Connective 135 136	し
+R11	RESULT Arg1:T25 Arg2:T24	
+R12	REASON Arg1:T25 Arg2:T7	
+T26	Argument 170 183	エンジンを始動できなくなる
+R14	RESULT Arg1:T8 Arg2:T26	
+T27	Argument 100 111	集合カプラー内部に浸入
+T28	Connective 99 100	り
+R15	REASON Arg1:T28 Arg2:T5	
+R16	RESULT Arg1:T28 Arg2:T27	
+R13	RESULT Arg1:T10 Arg2:T26	

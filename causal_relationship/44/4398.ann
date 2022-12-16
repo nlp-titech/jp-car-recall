@@ -1,0 +1,5 @@
+T1	Argument 0 11	一部の車両の補助前照灯
+T2	Connective 11 15	において
+R1	CONDITION Arg1:T2 Arg2:T1	
+T3	Argument 15 27	、誤った仕様の電球が装着
+R2	RESULT Arg1:T2 Arg2:T3	

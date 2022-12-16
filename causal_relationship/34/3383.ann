@@ -1,0 +1,25 @@
+T1	Argument 0 27	原動機支持用ブラケットにおいて、座面の塗装指示が不適切
+T2	Connective 28 30	ため
+T3	Argument 31 50	塗装膜が潰れて締結ボルトの締結力が低下
+T4	Connective 58 62	そのため
+T5	Argument 63 77	そのままの状態で使用を続ける
+T6	Connective 77 78	と
+T7	Argument 79 90	当該ボルトの緩みが進行
+T8	Connective 91 92	て
+T9	Argument 93 95	最悪
+T10	Connective 96 98	場合
+T11	Argument 99 105	ボルトが脱落
+R1	RESULT Arg1:T10 Arg2:T11	
+R2	CONDITION Arg1:T10 Arg2:T9	
+R3	RESULT Arg1:T8 Arg2:T11	
+R4	REASON Arg1:T8 Arg2:T7	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	CONDITION Arg1:T6 Arg2:T5	
+R7	RESULT Arg1:T4 Arg2:T7	
+R8	REASON Arg1:T4 Arg2:T3	
+R9	RESULT Arg1:T2 Arg2:T3	
+R10	REASON Arg1:T2 Arg2:T1	
+T16	Argument 106 118	原動機を支持できなくなる
+T17	Connective 105 106	し
+R11	REASON Arg1:T17 Arg2:T11	
+R12	RESULT Arg1:T17 Arg2:T16	

@@ -1,0 +1,21 @@
+T1	Argument 0 27	前車軸にタイヤを装着するベアリングナットに締め付け不良
+T2	Argument 36 75	前車軸に装着されている3個の車輪のうち左右の外側車軸のベアリング部にガタが発生
+T3	Argument 102 112	当該ベアリングが破損
+T4	Argument 114 119	車輪が脱落
+T5	Connective 33 35	ため
+T6	Connective 82 83	、
+T7	Connective 113 114	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 83 94	そのままの走行を続ける
+T9	Connective 94 95	と
+R7	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 96 98	最悪
+T11	Connective 99 101	場合
+R8	RESULT Arg1:T11 Arg2:T3	
+R9	CONDITION Arg1:T9 Arg2:T8	
+R10	CONDITION Arg1:T11 Arg2:T10	

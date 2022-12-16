@@ -1,0 +1,17 @@
+T1	Argument 0 37	動力伝達装置において、プロペラシャフトのフランジヨークの製造方法が 不適切
+T2	Argument 40 45	亀裂の発生
+T3	Argument 72 84	当該フランジヨークが破損
+T4	Argument 86 94	走行不能にいたる
+T5	Connective 38 40	ため
+T6	Connective 54 55	、
+T7	Connective 85 86	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 55 70	そのままの状態で使用を続け る
+T9	Connective 70 71	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	

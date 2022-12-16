@@ -1,0 +1,16 @@
+T1	Argument 22 53	シートベルト巻取り機構を作動させる着火剤の配合量の設定が不適切
+T5	Argument 93 106	シートベルトを引き込まない
+T6	Connective 60 64	そのため
+T8	Connective 80 81	、
+T9	Connective 92 93	ず
+R1	REASON Arg1:T6 Arg2:T1	
+R8	RESULT Arg1:T9 Arg2:T5	
+T2	Argument 81 92	プリテンショナが作動せ
+R3	REASON Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T2	
+T3	Argument 65 68	衝突時
+T4	Connective 68 69	に
+R2	CONDITION Arg1:T4 Arg2:T3	
+T7	Argument 69 80	正常に着火剤が着火せず
+R5	RESULT Arg1:T4 Arg2:T7	
+R6	RESULT Arg1:T6 Arg2:T7	

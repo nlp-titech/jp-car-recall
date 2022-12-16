@@ -1,0 +1,17 @@
+T1	Argument 4 20	点火コイルにおいて、材質が不適切
+T2	Argument 23 35	コイルボディに亀裂が発生
+T3	Argument 48 69	当該コイルの電圧が必要な点火電圧に到達せず
+T4	Argument 70 78	点火プラグが失火
+T5	Connective 21 23	ため
+T6	Connective 43 47	そのため
+T7	Connective 69 70	、
+T8	Connective 78 79	し
+T9	Argument 79 91	排出ガスの基準値を超える
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+R7	REASON Arg1:T8 Arg2:T4	
+R8	RESULT Arg1:T8 Arg2:T9	

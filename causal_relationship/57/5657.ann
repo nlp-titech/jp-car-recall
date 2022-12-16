@@ -1,0 +1,25 @@
+T1	Argument 0 38	車両後部に取り付けられているエアスポイラにおいて、後部取り付け部の強度が不足
+T2	Argument 45 59	荷室扉の開閉時や走行中の振動
+T3	Argument 63 75	当該取付け部に亀裂が発生
+T4	Argument 88 98	そのまま使用を続ける
+T5	Argument 100 110	当該取り付け部が破損
+T6	Argument 113 115	最悪
+T7	Argument 119 128	エアスポイラが脱落
+T8	Connective 42 44	ため
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T3	
+T9	Connective 62 63	、
+T10	Connective 83 87	そのため
+T11	Connective 98 99	と
+T12	Connective 111 112	て
+T13	Connective 116 118	場合
+R3	REASON Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T3	
+R5	REASON Arg1:T10 Arg2:T3	
+R6	RESULT Arg1:T10 Arg2:T5	
+R7	CONDITION Arg1:T11 Arg2:T4	
+R8	RESULT Arg1:T11 Arg2:T5	
+R9	REASON Arg1:T12 Arg2:T5	
+R10	RESULT Arg1:T12 Arg2:T7	
+R11	CONDITION Arg1:T13 Arg2:T6	
+R12	RESULT Arg1:T13 Arg2:T7	

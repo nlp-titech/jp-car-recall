@@ -1,0 +1,13 @@
+T1	Argument 11 36	ブレーキディスクの直径が小さいものを誤って組み付け
+T2	Connective 37 39	ため
+T3	Argument 45 75	ブレーキパッドの一部がブレーキディスクの外周面より外れて作動
+T4	Connective 82 83	、
+T5	Argument 83 89	制動力が不足
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 40 42	制動
+T7	Connective 43 44	際
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	

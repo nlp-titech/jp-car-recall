@@ -1,0 +1,25 @@
+T2	Argument 112 126	当該溶接部に過大な力が加わり
+T4	Argument 89 108	燃料温度の変化に伴うタンク内圧力の変動
+T5	Argument 149 158	溶接部に亀裂が発生
+T6	Argument 160 166	燃料が漏れる
+T7	Connective 86 88	ため
+T9	Connective 108 111	により
+T10	Connective 126 127	、
+T11	Connective 159 160	、
+R1	REASON Arg1:T7 Arg2:T12	
+R4	REASON Arg1:T9 Arg2:T4	
+R5	RESULT Arg1:T9 Arg2:T2	
+R6	RESULT Arg1:T7 Arg2:T5	
+R7	REASON Arg1:T10 Arg2:T2	
+R8	RESULT Arg1:T10 Arg2:T5	
+R9	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	
+T21	Connective 146 148	場合
+T22	Argument 143 145	最悪
+T23	Argument 127 141	このままの状態で使用を続ける
+T24	Connective 141 142	と
+R11	CONDITION Arg1:T24 Arg2:T23	
+R12	RESULT Arg1:T24 Arg2:T5	
+R13	CONDITION Arg1:T21 Arg2:T22	
+R14	RESULT Arg1:T21 Arg2:T5	
+T12	Argument 0 85	ガソリンエンジン車に搭載されている燃料タンクにおいて、タンク上板とタンク内にあるバッフルプレート（走行時の振動等による燃料の揺動を防止する板）とのスポット溶接箇所が不適切

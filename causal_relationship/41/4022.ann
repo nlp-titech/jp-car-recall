@@ -1,0 +1,33 @@
+T1	Argument 0 43	エンジン制御プログラムとＰＨＥＶシステム制御プログラム、および点火プラグの仕様が不適切
+T3	Argument 47 82	エンジンの始動時間が短い状態でモーターのみで走行するＥＶ走行を繰り返す
+T4	Argument 84 97	点火プラグのくすぶりが発生
+T7	Argument 143 152	エンジンが始動せず
+T8	Argument 153 168	ＥＶバッテリーの充電が行われず
+T9	Argument 169 181	そのままＥＶ走行を続ける
+T10	Argument 183 195	バッテリー残量が無くなり
+T11	Argument 196 203	走行不能となる
+T12	Connective 44 46	ため
+T14	Connective 82 83	と
+T15	Connective 105 109	そのため
+T18	Connective 152 153	、
+T19	Connective 168 169	、
+T20	Connective 181 182	と
+T21	Connective 195 196	、
+R1	REASON Arg1:T12 Arg2:T1	
+R2	RESULT Arg1:T12 Arg2:T4	
+R5	CONDITION Arg1:T14 Arg2:T3	
+R6	RESULT Arg1:T14 Arg2:T4	
+R7	REASON Arg1:T15 Arg2:T4	
+R8	RESULT Arg1:T15 Arg2:T7	
+R13	REASON Arg1:T18 Arg2:T7	
+R14	RESULT Arg1:T18 Arg2:T8	
+R15	REASON Arg1:T19 Arg2:T8	
+R16	RESULT Arg1:T19 Arg2:T10	
+R17	CONDITION Arg1:T20 Arg2:T9	
+R18	RESULT Arg1:T20 Arg2:T10	
+R19	REASON Arg1:T21 Arg2:T10	
+R20	RESULT Arg1:T21 Arg2:T11	
+T2	Argument 110 139	エンジンの始動が必要となった際、点火プラグがくすぶっている
+T5	Connective 141 143	から
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T7	

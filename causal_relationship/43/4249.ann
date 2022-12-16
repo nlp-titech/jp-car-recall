@@ -1,0 +1,39 @@
+T1	Argument 0 30	発電機等の配線において、コネクタ取付ブラケットの加工が不適切
+T2	Connective 31 33	ため
+T3	Argument 34 41	コネクタが破損
+T4	Connective 42 43	て
+T5	Argument 43 49	防振性が低下
+T6	Connective 59 63	そのため
+T7	Argument 88 104	コネクタの端子部に接触不良が生じ
+T8	Argument 112 118	警告灯が点灯
+T9	Connective 104 105	、
+T10	Argument 105 109	発電不良
+T11	Connective 109 112	により
+T12	Argument 126 133	エンジンが停止
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T10	
+R9	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T8	
+R11	RESULT Arg1:T11 Arg2:T12	
+T13	Argument 80 85	走行振動等
+T14	Connective 85 88	により
+R12	REASON Arg1:T14 Arg2:T13	
+R13	RESULT Arg1:T14 Arg2:T7	
+T15	Argument 64 78	そのままの状態で使用を続ける
+T16	Connective 78 79	と
+R14	CONDITION Arg1:T16 Arg2:T15	
+R15	RESULT Arg1:T16 Arg2:T7	
+T17	Argument 120 122	最悪
+T18	Connective 123 125	場合
+R16	CONDITION Arg1:T18 Arg2:T17	
+R17	RESULT Arg1:T18 Arg2:T12	
+T19	Connective 134 135	て
+R18	REASON Arg1:T19 Arg2:T12	
+T20	Argument 135 144	再始動できなくなる
+R19	RESULT Arg1:T19 Arg2:T20	

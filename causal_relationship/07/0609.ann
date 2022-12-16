@@ -1,0 +1,24 @@
+T1	Argument 0 37	走行装置において、車軸組立の際、前輪ハブ外側軸受けのグリース充填量が少ない
+T2	Argument 58 68	当該軸受けが潤滑不良
+T3	Argument 71 73	破損
+T4	Argument 81 85	走行不能
+T5	Argument 89 94	火災に至る
+T6	Connective 42 43	、
+T7	Connective 68 71	により
+T8	Connective 74 75	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	RESULT Arg1:T8 Arg2:T5	
+T9	Argument 43 57	そのままの状態で使用を続ける
+T10	Connective 57 58	と
+R8	CONDITION Arg1:T10 Arg2:T9	
+R9	RESULT Arg1:T10 Arg2:T2	
+T11	Argument 75 77	最悪
+T12	Connective 78 80	場合
+R10	CONDITION Arg1:T12 Arg2:T11	
+R11	RESULT Arg1:T12 Arg2:T4	
+R12	RESULT Arg1:T12 Arg2:T5	

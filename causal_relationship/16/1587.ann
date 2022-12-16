@@ -1,0 +1,13 @@
+T1	Argument 0 34	駐車制動装置において、製造時に駐車用ブレーキケーブルの組付けが不適切
+T2	Argument 38 51	後輪用ブレーキパイプと干渉
+T3	Argument 80 87	干渉部位が摩耗
+T4	Connective 59 63	そのため
+T5	Connective 35 37	ため
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T4 Arg2:T2	
+R4	RESULT Arg1:T4 Arg2:T3	
+T6	Argument 64 78	そのままの状態で使用を続ける
+T7	Connective 78 79	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	

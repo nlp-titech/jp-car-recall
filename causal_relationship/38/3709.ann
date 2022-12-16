@@ -1,0 +1,27 @@
+T1	Argument 0 56	路線バスのグライドスライド扉において、扉開閉用エアシリンダーのブラケットと扉を開閉させる回転軸の固定方法が不適切
+T2	Argument 66 79	スプリングピンに亀裂が発生
+T3	Argument 92 106	そのままの状態で使用を続ける
+T4	Argument 108 118	スプリングピンが折損
+T5	Argument 126 141	スプリングピンが２本ともに折損
+T6	Argument 120 122	最悪
+T7	Argument 147 155	走行中に扉が開く
+T8	Argument 160 180	運転者席からの扉の開閉操作ができなくなる
+T9	Connective 57 59	ため
+T10	Connective 87 91	そのため
+T11	Connective 106 107	と
+T12	Connective 119 120	、
+T13	Connective 123 125	場合
+T14	Connective 146 147	、
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T2	
+R3	REASON Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T4	
+R5	CONDITION Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+R7	REASON Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T5	
+R9	CONDITION Arg1:T13 Arg2:T6	
+R10	RESULT Arg1:T13 Arg2:T5	
+R11	REASON Arg1:T14 Arg2:T5	
+R12	RESULT Arg1:T14 Arg2:T7	
+R13	RESULT Arg1:T14 Arg2:T8	

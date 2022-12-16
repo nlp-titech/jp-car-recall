@@ -1,0 +1,13 @@
+T1	Argument 9 23	高圧燃料ポンプの設計が不適切
+T2	Connective 24 26	ため
+T3	Argument 27 51	ポンプハウジングと燃料調圧バルブ間の密閉性が不足
+T4	Connective 61 65	そのため
+T5	Argument 66 87	高速走行時等に当該ポンプ内の燃料圧力が高い
+T6	Connective 87 88	際
+T7	Argument 89 107	燃料調圧バルブ取付部から燃料が漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

@@ -1,0 +1,21 @@
+T1	Argument 5 29	コネクティングロッドの製造時の熱処理方法が不適切
+T2	Connective 30 32	ため
+T3	Argument 33 51	当該コネクティングロッドの強度が不足
+T4	Connective 61 65	そのため
+T5	Argument 66 76	そのまま使用を続ける
+T6	Connective 76 77	と
+T7	Argument 78 91	コネクティングロッドが破損
+T8	Connective 92 93	、
+T9	Argument 93 100	エンジンが停止
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	CONDITION Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	RESULT Arg1:T4 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Connective 101 102	て
+T11	Argument 102 111	再始動できなくなる
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	

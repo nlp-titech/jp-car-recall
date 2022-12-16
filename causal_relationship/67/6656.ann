@@ -1,0 +1,83 @@
+T1	Argument 0 16	制御プログラム管理サーバの不具合
+T2	Connective 16 19	により
+T3	Argument 50 70	書き込まれた制御プログラムの内容に不適切
+T4	Connective 77 81	そのため
+T5	Argument 85 100	前後輪の周長が異なった値で設定
+T6	Connective 102 103	、
+T7	Argument 103 115	車速が正しく表示されない
+T8	Argument 125 144	カーブライトとライトレンジ調整が誤作動
+T9	Connective 145 146	、
+T10	Argument 146 152	対向車を眩惑
+T12	Connective 192 194	ため
+T13	Argument 195 206	障害物に気付かずに接触
+T14	Argument 218 238	シートベルトの装着状態が正しく検知できず
+T15	Connective 238 239	、
+T16	Argument 239 251	警告音が正しく作動しない
+T17	Argument 261 272	雨量が正しく検知されず
+T18	Connective 272 273	、
+T19	Argument 273 287	オートワイパの作動速度が低下
+T20	Argument 299 319	オートクルーズの速度調整が正しく行われず
+T21	Connective 319 320	、
+T22	Argument 320 327	設定速度を超過
+T23	Argument 339 356	リヤビューカメラが正しく表示されず
+T24	Connective 356 357	、
+T25	Argument 357 373	後退する際障害物に気付かずに接触
+T26	Argument 385 402	車室内からの施錠・開錠等ができない
+T27	Argument 412 430	スマートエントリーが正しく検知されず
+T28	Connective 430 431	、
+T29	Argument 431 443	エンストや始動不可が発生
+T30	Argument 456 475	車両に合わせた適切な制動力が設定されず
+T31	Connective 475 476	、
+T32	Argument 476 484	制動距離が伸びる
+T33	Argument 487 498	駐車ブレーキ性能が低下
+T34	Argument 511 526	後部扉の位置が正しく検知できず
+T35	Connective 526 527	、
+T36	Argument 527 537	扉が確実に閉まらない
+T37	Argument 548 563	エコスタート・ストップの不作動
+T38	Argument 566 577	非常点滅灯が点灯しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	RESULT Arg1:T4 Arg2:T8	
+R9	RESULT Arg1:T4 Arg2:T14	
+R10	RESULT Arg1:T4 Arg2:T17	
+R11	RESULT Arg1:T4 Arg2:T20	
+R12	RESULT Arg1:T4 Arg2:T23	
+R13	RESULT Arg1:T4 Arg2:T26	
+R14	RESULT Arg1:T4 Arg2:T27	
+R15	RESULT Arg1:T4 Arg2:T30	
+R16	RESULT Arg1:T4 Arg2:T34	
+R17	RESULT Arg1:T4 Arg2:T37	
+R18	RESULT Arg1:T4 Arg2:T38	
+R19	REASON Arg1:T9 Arg2:T8	
+R20	RESULT Arg1:T9 Arg2:T10	
+R22	RESULT Arg1:T12 Arg2:T13	
+R23	REASON Arg1:T15 Arg2:T14	
+R24	RESULT Arg1:T15 Arg2:T16	
+R25	REASON Arg1:T18 Arg2:T17	
+R26	RESULT Arg1:T18 Arg2:T19	
+R27	REASON Arg1:T21 Arg2:T20	
+R28	RESULT Arg1:T21 Arg2:T22	
+R29	REASON Arg1:T24 Arg2:T23	
+R30	RESULT Arg1:T24 Arg2:T25	
+R31	REASON Arg1:T28 Arg2:T27	
+R32	RESULT Arg1:T28 Arg2:T29	
+R33	REASON Arg1:T31 Arg2:T30	
+R34	RESULT Arg1:T31 Arg2:T32	
+R35	RESULT Arg1:T31 Arg2:T33	
+R36	REASON Arg1:T35 Arg2:T34	
+R37	RESULT Arg1:T35 Arg2:T36	
+T39	Connective 177 178	ず
+T40	Argument 178 192	一部の範囲で警告が作動しない
+R39	RESULT Arg1:T39 Arg2:T40	
+R21	REASON Arg1:T12 Arg2:T40	
+T41	Argument 20 45	特定の日に整備作業等を行ったコントロールユニット等
+T42	Connective 45 49	において
+R40	CONDITION Arg1:T42 Arg2:T41	
+R41	RESULT Arg1:T42 Arg2:T3	
+T11	Argument 165 178	車両寸法が正しく設定されず
+R8	REASON Arg1:T39 Arg2:T11	
+R38	RESULT Arg1:T4 Arg2:T11	

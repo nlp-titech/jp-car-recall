@@ -1,0 +1,21 @@
+T1	Argument 17 58	プロペラシャフトとプロテクタ（プロペラシャフトサポートブラケット）との隙間が不適切
+T2	Connective 59 61	ため
+T3	Argument 62 79	リヤサスペンションが縮んだ際に干渉
+T4	Connective 87 91	そのため
+T5	Argument 92 106	そのままの状態で使用を続ける
+T6	Connective 120 121	、
+T7	Argument 127 134	走行不能に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T9	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Connective 106 107	と
+T9	Argument 108 119	プロペラシャフトが破損
+R5	CONDITION Arg1:T8 Arg2:T5	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	REASON Arg1:T6 Arg2:T9	
+T10	Connective 124 126	場合
+T11	Argument 121 123	最悪
+R9	CONDITION Arg1:T10 Arg2:T11	
+R10	RESULT Arg1:T10 Arg2:T7	

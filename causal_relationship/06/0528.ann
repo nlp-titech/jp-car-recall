@@ -1,0 +1,21 @@
+T1	Argument 0 44	自動変速機の油圧系統のオイルホースにおいて、当該ホースの加硫工程が不適切でゴム硬度の低い
+T2	Argument 52 71	当該ホースのクリップによる締付力が低下
+T3	Argument 79 85	ホースが抜け
+T4	Argument 86 92	オイルが漏れ
+T5	Argument 93 101	走行できなくなる
+T6	Connective 49 51	ため
+T7	Connective 72 73	、
+T8	Connective 85 86	て
+T9	Connective 92 93	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 73 75	最悪
+T11	Connective 76 78	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	

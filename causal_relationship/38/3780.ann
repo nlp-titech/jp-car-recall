@@ -1,0 +1,21 @@
+T1	Argument 0 27	エアバッグコントローラにおいて、制御プログラムが不適切
+T3	Argument 31 75	イグニッションスイッチをオフにした後、特定のタイミングで再度イグニッションスイッチをオン
+T4	Argument 80 90	制御プログラムが消去
+T5	Argument 107 118	エアバッグ警告灯が点灯
+T6	Argument 124 135	エアバッグが展開しない
+T7	Connective 28 30	ため
+T9	Connective 77 79	場合
+T10	Connective 102 106	そのため
+T11	Connective 119 120	、
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T4	
+R5	CONDITION Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T5	
+R9	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	
+T2	Argument 120 123	衝突時
+T8	Connective 123 124	に
+R3	CONDITION Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T6	

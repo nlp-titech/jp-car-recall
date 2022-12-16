@@ -1,0 +1,13 @@
+T1	Argument 0 31	フロント電動調節式座席のスライド機構に前側停止部品が装着されず
+T2	Connective 44 45	、
+T3	Argument 45 64	座席の固定位置が設計より前側で固定され
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 74 78	そのため
+T5	Argument 79 91	当該状態で車両が前面衝突
+T6	Connective 93 95	場合
+R3	REASON Arg1:T4 Arg2:T3	
+T7	Argument 96 105	乗員に危害を及ぼす
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

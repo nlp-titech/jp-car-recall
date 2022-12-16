@@ -1,0 +1,9 @@
+T1	Argument 0 43	交換修理用のチェンジレバーを装着した大・中型バスにおいて、チェンジレバーの製造が不適切
+T2	Connective 44 46	ため
+T3	Argument 47 61	そのままの状態で使用を続ける
+T4	Connective 61 62	と
+T5	Argument 63 73	チェンジレバーが折損
+R1	RESULT Arg1:T4 Arg2:T5	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T5	
+R4	REASON Arg1:T2 Arg2:T1	

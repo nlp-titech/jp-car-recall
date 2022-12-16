@@ -1,0 +1,31 @@
+T1	Argument 0 22	手動変速機のインプットシャフトの加工が不適切
+T2	Connective 23 25	ため
+T3	Argument 26 42	オイル供給穴の加工がされていない
+T4	Connective 48 52	そのため
+T5	Argument 53 87	インプットシャフトに装着しているギヤのベアリングにオイルが供給されず
+T6	Connective 87 88	、
+T7	Argument 88 98	そのまま使用を続ける
+T8	Connective 98 99	と
+T9	Argument 99 103	潤滑不良
+T10	Connective 103 106	による
+T11	Argument 106 111	異音が発生
+T13	Argument 113 115	最悪
+T14	Connective 116 118	場合
+T15	Argument 119 128	ベアリングが焼付き
+T16	Argument 129 137	走行できなくなる
+T17	Connective 128 129	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R12	CONDITION Arg1:T14 Arg2:T13	
+R13	RESULT Arg1:T14 Arg2:T15	
+R14	REASON Arg1:T17 Arg2:T15	
+R15	RESULT Arg1:T17 Arg2:T16	
+R11	RESULT Arg1:T10 Arg2:T15	

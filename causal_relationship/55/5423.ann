@@ -1,0 +1,21 @@
+T1	Argument 0 16	制動灯スイッチ内部の接点が不適切
+T2	Connective 17 19	ため
+T3	Argument 20 35	制動装置作動時に接点が焼き付き
+T4	Connective 35 36	、
+T5	Argument 36 44	焼損または熱変形
+T6	Connective 52 56	そのため
+T7	Argument 69 79	制動灯が点灯したまま
+T8	Argument 87 98	制動灯が点灯しなくなる
+T10	Argument 104 117	シフトレバーが操作できない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T8	
+T11	Argument 57 67	そのまま使用を続ける
+T12	Connective 67 68	と
+R8	CONDITION Arg1:T12 Arg2:T11	
+R9	RESULT Arg1:T12 Arg2:T7	
+R10	RESULT Arg1:T6 Arg2:T10	

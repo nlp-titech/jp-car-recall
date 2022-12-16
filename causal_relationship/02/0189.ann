@@ -1,0 +1,29 @@
+T1	Argument 0 37	作業用装置を架装した車両の加速装置において、走行用アクセルを全開付近にする
+T2	Argument 39 131	スロトルケーブルが作業用アクセル装着車に後付けされたガイドピン（作業用アクセルを操作した時に発生するスロットルケーブルの弛みを防止するため、スロットルレバーに後付けされたもの）に押され
+T3	Argument 137 147	燃料装置の配管に接触
+T4	Argument 170 177	当該配管が損傷
+T5	Argument 185 190	燃料が漏れ
+T6	Argument 191 196	火災に至る
+T7	Connective 190 191	、
+R1	REASON Arg1:T7 Arg2:T5	
+R2	RESULT Arg1:T7 Arg2:T6	
+T8	Connective 178 179	、
+R3	REASON Arg1:T8 Arg2:T4	
+R4	RESULT Arg1:T8 Arg2:T5	
+T9	Connective 154 155	、
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+T10	Connective 134 137	により
+R7	REASON Arg1:T10 Arg2:T2	
+R8	RESULT Arg1:T10 Arg2:T3	
+T20	Connective 37 38	と
+R9	CONDITION Arg1:T20 Arg2:T1	
+R10	RESULT Arg1:T20 Arg2:T2	
+T11	Argument 155 169	そのままの状態で使用を続ける
+T12	Connective 169 170	と
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T4	
+T13	Argument 179 181	最悪
+T14	Connective 182 184	場合
+R13	CONDITION Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T5	

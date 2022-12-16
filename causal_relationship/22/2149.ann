@@ -1,0 +1,35 @@
+T1	Argument 0 57	リコール届出番号２２２９及び２２９４のリコール作業において、燃料低圧パイプ交換作業要領書の締付トルク指示値が不適切
+T2	Connective 58 60	ため
+T3	Argument 61 82	当該部のパッキンの締め付け力が不十分になる
+T4	Connective 88 92	そのため
+T5	Argument 93 105	エンジン内部に燃料が漏れ
+T6	Connective 105 106	、
+T7	Argument 122 154	燃料の混入したオイルがブローバイガスの通路を経由して吸気管に吸入
+T8	Connective 156 157	、
+T9	Argument 157 166	シリンダー内で燃焼
+T10	Connective 168 170	ため
+T11	Argument 171 180	エンジン回転が上昇
+T13	Argument 188 197	エンジン内部が損傷
+T14	Connective 198 199	て
+T15	Argument 199 204	火災となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+T16	Argument 106 120	そのままの状態で走行を続ける
+T17	Connective 120 121	と
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T7	
+T18	Argument 182 184	最悪
+T19	Connective 185 187	場合
+R17	CONDITION Arg1:T19 Arg2:T18	
+R18	RESULT Arg1:T19 Arg2:T13	
+R11	RESULT Arg1:T10 Arg2:T13	

@@ -1,0 +1,9 @@
+T1	Argument 0 46	１軸２０ｋＬ石油運搬用アルミタンクセミトレーラにおいて、スプリングハンガ取付部の耐久性が不足
+T2	Connective 50 52	ため
+T3	Argument 53 68	走行時及び制動時の荷重の繰返し
+T4	Connective 68 71	により
+T5	Argument 72 85	ボギーフレームに亀裂が発生
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

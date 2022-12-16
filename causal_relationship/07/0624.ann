@@ -1,0 +1,15 @@
+T1	Argument 0 32	制動灯の作動スイッチ内部の可動接点である板ばねの組み付けが不適切
+T2	Argument 48 56	当該板ばねが折損
+T3	Connective 64 68	そのため
+T4	Argument 69 95	制動灯が折損した破片によって点灯したままの状態になる
+T5	Argument 97 104	点灯しなくなる
+T6	Connective 33 35	ため
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T3 Arg2:T2	
+R4	RESULT Arg1:T3 Arg2:T4	
+R5	RESULT Arg1:T3 Arg2:T5	
+T7	Argument 36 47	制動操作を繰り返し行う
+T8	Connective 47 48	と
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T2	

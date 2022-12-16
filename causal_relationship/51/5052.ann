@@ -1,0 +1,17 @@
+T1	Argument 10 28	側面衝突センサーの耐電磁気性能が不足
+T2	Connective 32 34	ため
+T3	Argument 50 79	当該センサーが誤信号をエアバッグコントロールユニットへ送信
+T4	Connective 87 91	そのため
+T5	Argument 98 142	エアバッグコントロールユニットがサイドエアバッグ及びサイドカーテンエアバッグを誤って展開
+R1	REASON Arg1:T4 Arg2:T3	
+R2	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 92 94	最悪
+T7	Connective 95 97	場合
+R3	CONDITION Arg1:T7 Arg2:T6	
+R4	RESULT Arg1:T7 Arg2:T5	
+R5	REASON Arg1:T2 Arg2:T1	
+R6	RESULT Arg1:T2 Arg2:T3	
+T8	Argument 35 46	車外からの電磁波の影響
+T9	Connective 46 49	により
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	

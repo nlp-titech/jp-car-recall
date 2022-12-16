@@ -1,0 +1,9 @@
+T3	Argument 0 45	ボートトレーラ等をけん引し、長時間高速走行するなどエンジンに高負荷を与えるような過酷な運転
+T4	Connective 48 50	場合
+T5	Argument 51 84	排気ガス中の酸素濃度を検出する酸素センサー内部の電線が一時的に断線
+T6	Connective 85 86	、
+T7	Argument 86 98	エンジン点検警告灯が点灯
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

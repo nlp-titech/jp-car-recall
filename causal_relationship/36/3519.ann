@@ -1,0 +1,20 @@
+T1	Argument 0 59	前方障害物衝突軽減制御装置（衝突軽減ブレーキシステム）装着車において、ミリ波レーダーによる障害物検知プログラムが不適切
+T2	Connective 60 62	ため
+T3	Argument 63 91	路肩や中央分離帯に防護柵があり、先行車との車間距離が離れ
+T4	Connective 92 93	際
+T5	Argument 95 116	受信したミリ波情報を稀に前方障害物と誤認識
+T6	Connective 124 128	そのため
+T7	Argument 129 164	衝突の可能性がないのに、マルチインフォメーションディスプレイに警告表示
+T8	Connective 178 179	、
+T9	Argument 179 190	予期せぬ急制動がかかる
+R1	RESULT Arg1:T8 Arg2:T9	
+R2	REASON Arg1:T8 Arg2:T7	
+R3	RESULT Arg1:T6 Arg2:T7	
+R4	REASON Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T5	
+R6	CONDITION Arg1:T4 Arg2:T3	
+R7	RESULT Arg1:T2 Arg2:T5	
+R8	REASON Arg1:T2 Arg2:T1	
+T10	Argument 172 178	警告音を発し
+R9	RESULT Arg1:T6 Arg2:T10	
+R10	REASON Arg1:T8 Arg2:T10	

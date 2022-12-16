@@ -1,0 +1,21 @@
+T1	Argument 0 33	最後部座席のシートベルトの金具を固定するフロアボードの穴径が不適切
+T2	Connective 34 36	ため
+T3	Argument 37 51	金具が傾いた状態で無理に取付
+T4	Connective 56 58	ため
+T5	Argument 59 73	そのままの状態で使用を続ける
+T6	Connective 73 74	と
+T7	Argument 75 83	当該ボルトが緩み
+T8	Argument 84 86	最悪
+T9	Connective 83 84	、
+T10	Connective 87 89	場合
+T11	Argument 90 118	衝突時等の際に乗客が前方に移動することを防止できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T9 Arg2:T7	
+R8	CONDITION Arg1:T10 Arg2:T8	
+R9	RESULT Arg1:T10 Arg2:T11	
+R10	RESULT Arg1:T9 Arg2:T11	

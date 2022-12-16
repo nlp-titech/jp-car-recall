@@ -1,0 +1,21 @@
+T1	Argument 0 24	制動灯及び尾灯のソケットアース端子の構造が不適切
+T2	Connective 25 27	ため
+T3	Argument 28 41	ソケット部の温度が高くなり
+T4	Connective 41 42	、
+T5	Argument 42 49	ソケットが変形
+T6	Connective 57 61	そのため
+T7	Argument 62 76	そのままの状態で使用を続ける
+T8	Connective 76 77	と
+T9	Argument 85 98	当該灯火器が点灯しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T14	
+T14	Argument 77 81	導通不良
+T15	Connective 84 85	、
+R9	REASON Arg1:T15 Arg2:T14	
+R10	RESULT Arg1:T15 Arg2:T9	
+R6	RESULT Arg1:T6 Arg2:T14	

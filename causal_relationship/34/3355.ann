@@ -1,0 +1,43 @@
+T1	Argument 0 47	小型トラック・バスに搭載した機械式自動変速機において、変速機のオイルクーラーホースの強度が不足
+T2	Connective 51 53	ため
+T3	Argument 54 63	ホース内の圧力変動
+T4	Connective 63 66	により
+T5	Argument 66 78	ホースの内側に亀裂が発生
+T6	Connective 86 90	そのため
+T7	Argument 91 105	そのままの状態で使用を続ける
+T8	Connective 105 106	と
+T9	Argument 107 118	ホース内側の亀裂が進行
+T10	Connective 119 120	て
+T11	Argument 120 128	圧力に耐えきれず
+T12	Connective 128 129	、
+T13	Argument 129 135	ホースが破損
+T14	Connective 143 144	、
+T15	Argument 144 146	最悪
+T16	Connective 147 149	場合
+T17	Argument 150 157	走行不能となる
+T18	Argument 167 173	漏れたオイル
+T19	Connective 173 176	により
+T20	Argument 177 189	他車の安全な走行を妨げる
+R1	RESULT Arg1:T19 Arg2:T20	
+R2	REASON Arg1:T19 Arg2:T18	
+R3	RESULT Arg1:T16 Arg2:T17	
+R4	CONDITION Arg1:T16 Arg2:T15	
+R7	REASON Arg1:T14 Arg2:T21	
+R9	RESULT Arg1:T12 Arg2:T13	
+R10	REASON Arg1:T12 Arg2:T11	
+R11	RESULT Arg1:T10 Arg2:T11	
+R12	REASON Arg1:T10 Arg2:T9	
+R13	RESULT Arg1:T8 Arg2:T9	
+R14	CONDITION Arg1:T8 Arg2:T7	
+R15	RESULT Arg1:T6 Arg2:T9	
+R16	REASON Arg1:T6 Arg2:T5	
+R17	RESULT Arg1:T4 Arg2:T5	
+R18	REASON Arg1:T4 Arg2:T3	
+R19	RESULT Arg1:T2 Arg2:T5	
+R20	REASON Arg1:T2 Arg2:T1	
+R6	RESULT Arg1:T14 Arg2:T17	
+T21	Argument 137 143	オイルが漏れ
+T22	Connective 136 137	て
+R21	REASON Arg1:T22 Arg2:T13	
+R22	RESULT Arg1:T22 Arg2:T21	
+R5	RESULT Arg1:T14 Arg2:T18	

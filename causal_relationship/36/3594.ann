@@ -1,0 +1,18 @@
+T1	Argument 0 48	１２段機械式自動変速機を搭載した大型トラックにおいて、③トランスミッション制御プログラムが不適切
+T2	Connective 49 51	ため
+T3	Argument 52 70	トランスミッション制御の警告灯が点灯
+R5	RESULT Arg1:T2 Arg2:T3	
+R6	REASON Arg1:T2 Arg2:T1	
+T4	Connective 71 72	て
+T10	Argument 72 81	シフト不良が生じる
+R7	REASON Arg1:T4 Arg2:T3	
+R8	RESULT Arg1:T4 Arg2:T10	
+T5	Argument 101 119	リセット操作によってシフト不良は解消
+T6	Argument 124 134	路上故障には至らない
+T7	Connective 121 123	ため
+R1	REASON Arg1:T7 Arg2:T5	
+R2	RESULT Arg1:T7 Arg2:T6	
+T8	Argument 91 99	シフト不良が生じ
+T9	Connective 100 101	も
+R3	CONDITION Arg1:T9 Arg2:T8	
+R4	RESULT Arg1:T9 Arg2:T5	

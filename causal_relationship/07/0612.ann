@@ -1,0 +1,33 @@
+T1	Argument 1 45	かじ取装置のアイドラアームブラケットをフレームに取り付けるボルトを過大なトルクで締め付け
+T2	Argument 49 63	当該ボルトの長さが僅かに伸び
+T3	Argument 63 72	ボルトの軸力が低下
+T4	Argument 78 99	アイドラアームブラケットに過大な応力が生じ
+T5	Argument 100 121	当該アイドラアームブラケットに亀裂が生じる
+T6	Connective 127 131	そのため
+T7	Argument 147 162	アイドラアームブラケットが折損
+T8	Argument 170 182	かじ取操作ができなくなる
+T9	Connective 46 48	ため
+T10	Connective 73 74	、
+T11	Connective 62 63	び
+T12	Connective 99 100	、
+T13	Connective 163 164	、
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T2	
+R3	REASON Arg1:T11 Arg2:T2	
+R4	RESULT Arg1:T11 Arg2:T3	
+R5	REASON Arg1:T10 Arg2:T3	
+R6	RESULT Arg1:T10 Arg2:T4	
+R7	REASON Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T5	
+R9	REASON Arg1:T6 Arg2:T5	
+R10	RESULT Arg1:T6 Arg2:T7	
+R11	REASON Arg1:T13 Arg2:T7	
+R12	RESULT Arg1:T13 Arg2:T8	
+T14	Argument 132 146	そのままの状態で使用を続ける
+T15	Connective 146 147	と
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T7	
+T16	Argument 164 166	最悪
+T17	Connective 167 169	場合
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T8	

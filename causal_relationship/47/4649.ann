@@ -1,0 +1,21 @@
+T1	Argument 13 39	発電機内部の整流器取付ボルトの締め付けトルクに不適切
+T2	Connective 45 47	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 64 79	当該整流器の絶縁材に亀裂が生じ
+T4	Connective 79 80	、
+T5	Argument 86 94	発電機内部で短絡
+T6	Connective 95 96	、
+T7	Argument 96 101	火災に至る
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 48 62	そのままの状態で使用を続ける
+T9	Connective 62 63	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 80 82	最悪
+T11	Connective 83 85	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	

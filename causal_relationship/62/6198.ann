@@ -1,0 +1,15 @@
+T1	Argument 14 42	パーキングギヤをロックするアクチュエーターの設計が不適切
+T2	Connective 43 45	ため
+T6	Connective 81 82	、
+T7	Argument 82 96	パーキングギヤをロックしない
+T8	Argument 101 117	パーキングギヤが解除できなくなり
+T9	Connective 117 118	、
+T10	Argument 118 130	Ｐレンジから発進できない
+R1	RESULT Arg1:T2 Arg2:T8	
+R2	REASON Arg1:T2 Arg2:T1	
+R7	RESULT Arg1:T6 Arg2:T7	
+R8	REASON Arg1:T9 Arg2:T8	
+R9	RESULT Arg1:T9 Arg2:T10	
+T3	Argument 46 81	ギヤセレクタースイッチを操作しても、Ｐレンジ（駐車位置）に切り替わらず
+R3	REASON Arg1:T6 Arg2:T3	
+R4	RESULT Arg1:T2 Arg2:T3	

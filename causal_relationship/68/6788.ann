@@ -1,0 +1,13 @@
+T1	Argument 0 55	車両安定性制御機能（ビークル・スタビリティ・コントロールシステム：ＶＳＣ）において、機能制御用センサに製造不良
+T2	Connective 61 63	ため
+T6	Argument 64 87	車室内で携帯電話等を使用した際に発生する電磁波
+T8	Connective 88 91	影響で
+T9	Argument 92 102	ＶＳＣが走行中に作動
+T10	Connective 109 110	、
+T11	Argument 110 121	断続的に制動装置を作動
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T9	
+R3	REASON Arg1:T8 Arg2:T6	
+R4	RESULT Arg1:T8 Arg2:T9	
+R5	REASON Arg1:T10 Arg2:T9	
+R6	RESULT Arg1:T10 Arg2:T11	

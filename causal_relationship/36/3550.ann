@@ -1,0 +1,33 @@
+T1	Argument 0 42	タンクセミトレーラにおいて、サスペンションブラケット取付部の補強リブの溶接強度が不足
+T2	Connective 46 48	ため
+T3	Argument 62 68	溶接部に亀裂
+T4	Connective 78 82	そのため
+T5	Argument 83 97	そのままの状態で使用を続ける
+T6	Connective 97 98	と
+T7	Argument 99 104	亀裂が進行
+T8	Connective 105 106	て
+T9	Argument 106 113	補強リブが破損
+T10	Connective 114 115	、
+T11	Argument 115 117	最悪
+T12	Connective 118 120	場合
+T13	Argument 121 144	サスペンションブラケットがサブフレームから外れ
+T14	Connective 144 145	て
+T15	Argument 146 153	走行不能となる
+R1	RESULT Arg1:T14 Arg2:T15	
+R2	REASON Arg1:T14 Arg2:T13	
+R3	RESULT Arg1:T12 Arg2:T13	
+R4	CONDITION Arg1:T12 Arg2:T11	
+R5	RESULT Arg1:T10 Arg2:T13	
+R6	REASON Arg1:T10 Arg2:T9	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	REASON Arg1:T8 Arg2:T7	
+R9	RESULT Arg1:T6 Arg2:T7	
+R10	CONDITION Arg1:T6 Arg2:T5	
+R11	RESULT Arg1:T4 Arg2:T7	
+R12	REASON Arg1:T4 Arg2:T3	
+R13	RESULT Arg1:T2 Arg2:T3	
+R14	REASON Arg1:T2 Arg2:T1	
+T16	Argument 49 59	制動時に発生する応力
+T17	Connective 59 62	により
+R15	REASON Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T3	

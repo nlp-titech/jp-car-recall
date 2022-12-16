@@ -1,0 +1,24 @@
+T1	Argument 0 48	大型トラック・バスにおいて、燃料ホースから溶け出した亜鉛が軽油中の成分と反応して生成された化合物
+T2	Connective 75 79	そのため
+T3	Argument 80 87	エンジンの異音
+T5	Argument 134 136	最悪
+T6	Connective 137 139	場合
+T7	Argument 140 149	エンジンの始動不良
+R1	RESULT Arg1:T6 Arg2:T7	
+R2	CONDITION Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T2 Arg2:T3	
+R6	REASON Arg1:T2 Arg2:T12	
+T8	Argument 88 93	白煙の発生
+T9	Argument 94 112	エンジン制御システム異常の警告灯点灯
+T10	Argument 113 128	マフラー内に溜まった燃料の発火
+R4	RESULT Arg1:T2 Arg2:T8	
+R7	RESULT Arg1:T2 Arg2:T9	
+R8	RESULT Arg1:T2 Arg2:T10	
+T11	Argument 150 155	吹け上がり
+R14	RESULT Arg1:T6 Arg2:T11	
+T12	Argument 52 67	燃料噴射装置の内部バルブが固着
+T13	Connective 48 52	によって
+R15	REASON Arg1:T13 Arg2:T1	
+R16	RESULT Arg1:T13 Arg2:T12	
+R3	RESULT Arg1:T2 Arg2:T7	
+R9	RESULT Arg1:T2 Arg2:T11	

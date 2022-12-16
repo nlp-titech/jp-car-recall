@@ -1,0 +1,29 @@
+T1	Argument 0 55	ショベル・ローダのかじ取り用シリンダ操作ポンプにおいて、当該ポンプに接続している油圧ホースがねじられて取り付け
+T2	Argument 63 69	油圧が掛かる
+T3	Argument 70 80	ホースに戻る力が働き
+T4	Argument 81 87	接続部が緩む
+T5	Argument 98 112	そのままの状態で使用を続ける
+T6	Argument 114 120	作動油が漏れ
+T7	Argument 121 123	最悪
+T8	Argument 127 134	操舵不能となる
+T9	Connective 60 62	ため
+T10	Connective 69 70	と
+T11	Connective 80 81	、
+T12	Connective 93 97	そのため
+T13	Connective 112 113	と
+T14	Connective 120 121	、
+T15	Connective 124 126	場合
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T4	
+R3	CONDITION Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T3	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+R7	REASON Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T6	
+R9	CONDITION Arg1:T13 Arg2:T5	
+R10	RESULT Arg1:T13 Arg2:T6	
+R11	REASON Arg1:T14 Arg2:T6	
+R12	RESULT Arg1:T14 Arg2:T8	
+R13	CONDITION Arg1:T15 Arg2:T7	
+R14	RESULT Arg1:T15 Arg2:T8	

@@ -1,0 +1,54 @@
+T1	Argument 3 27	燃料ポンプにおいて、樹脂製パイプ部の耐久性が不足
+T3	Argument 34 66	パイプ内を流れる燃料の圧力と、エンジンや排気管からの熱影響を受け
+T4	Argument 67 75	当該パイプが劣化
+T5	Argument 88 98	そのまま使用を続ける
+T6	Argument 99 104	劣化が進行
+T7	Argument 107 115	パイプに亀裂が入
+T8	Argument 122 124	最悪
+T9	Argument 128 133	火災に至る
+T10	Argument 143 182	フロントサスペンションにおいて、ロアアームのボールジョイントの製造工程が不適切
+T11	Argument 186 205	ボールジョイントソケット部に亀裂が発生
+T13	Argument 220 233	走行中に大きな衝撃が加わる
+T14	Argument 235 261	ボールジョイントソケット部からボールジョイントが外れ
+T15	Argument 262 264	最悪
+T16	Argument 268 275	走行不能になる
+T17	Connective 31 33	ため
+T19	Connective 66 67	て
+T20	Connective 83 87	そのため
+T21	Connective 98 99	と
+T22	Connective 105 106	て
+T23	Connective 121 122	、
+T24	Connective 125 127	場合
+T25	Connective 183 185	ため
+T27	Connective 233 234	と
+T28	Connective 261 262	、
+T29	Connective 265 267	場合
+R1	REASON Arg1:T17 Arg2:T1	
+R2	RESULT Arg1:T17 Arg2:T4	
+R5	REASON Arg1:T19 Arg2:T3	
+R6	RESULT Arg1:T19 Arg2:T4	
+R7	REASON Arg1:T20 Arg2:T4	
+R8	RESULT Arg1:T20 Arg2:T7	
+R9	CONDITION Arg1:T21 Arg2:T5	
+R10	RESULT Arg1:T21 Arg2:T6	
+R11	REASON Arg1:T22 Arg2:T6	
+R12	RESULT Arg1:T22 Arg2:T7	
+R13	REASON Arg1:T23 Arg2:T18	
+R14	RESULT Arg1:T23 Arg2:T9	
+R15	CONDITION Arg1:T24 Arg2:T8	
+R16	RESULT Arg1:T24 Arg2:T9	
+R17	REASON Arg1:T25 Arg2:T10	
+R18	RESULT Arg1:T25 Arg2:T11	
+T30	Connective 215 219	そのため
+R19	REASON Arg1:T30 Arg2:T11	
+R20	RESULT Arg1:T30 Arg2:T14	
+R23	CONDITION Arg1:T27 Arg2:T13	
+R24	RESULT Arg1:T27 Arg2:T14	
+R25	REASON Arg1:T28 Arg2:T14	
+R26	RESULT Arg1:T28 Arg2:T16	
+R27	CONDITION Arg1:T29 Arg2:T15	
+R28	RESULT Arg1:T29 Arg2:T16	
+T2	Connective 115 116	り
+T18	Argument 116 121	燃料が漏れ
+R3	REASON Arg1:T2 Arg2:T7	
+R4	RESULT Arg1:T2 Arg2:T18	

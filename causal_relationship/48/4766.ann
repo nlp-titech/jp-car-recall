@@ -1,0 +1,29 @@
+T1	Argument 9 42	マスターシリンダとリザーバタンク間とのブレーキホースの材質が不適切
+T2	Connective 43 45	ため
+T3	Argument 62 80	当該ホース内部がブレーキ液により浸食
+T4	Connective 82 83	、
+T5	Argument 83 90	ゴム成分が溶け
+T6	Connective 90 91	て
+T7	Argument 91 108	ＡＢＳユニット内の液圧が異常に上昇
+T8	Connective 115 116	、
+T9	Argument 122 144	ＡＢＳユニットの液圧回路からブレーキ液が漏れ
+T10	Connective 144 145	、
+T11	Argument 145 151	制動力が低下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 46 60	そのままの状態で使用を続ける
+T13	Connective 60 61	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T3	
+T14	Argument 116 118	最悪
+T15	Connective 119 121	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T9	

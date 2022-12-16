@@ -1,0 +1,29 @@
+T1	Argument 0 31	スペアタイヤキャリアブラケットを移設した際の取付け方法が不適切
+T2	Connective 32 34	ため
+T3	Argument 35 41	走行中の振動
+T4	Connective 41 44	により
+T5	Argument 44 58	当該ブラケットに亀裂が生じる
+T6	Connective 64 68	そのため
+T7	Argument 91 101	当該ブラケットが折損
+T8	Connective 102 103	て
+T9	Argument 103 115	スペアタイヤとともに脱落
+T10	Connective 116 117	、
+T11	Argument 117 128	他の交通の安全を妨げる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T5	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 69 83	そのままの状態で使用を続ける
+T13	Connective 83 84	と
+T14	Argument 85 87	最悪
+T15	Connective 88 90	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	CONDITION Arg1:T15 Arg2:T14	
+R13	RESULT Arg1:T13 Arg2:T7	
+R14	RESULT Arg1:T15 Arg2:T7	

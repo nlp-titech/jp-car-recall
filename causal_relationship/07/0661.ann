@@ -1,0 +1,23 @@
+T1	Argument 0 39	運転席及び助手席の座席ベルトにおいて、ベルトバックルのカバー内側の構造が不適切
+T2	Argument 43 70	ベルトバックルとケーブルガイドの間を繰り返し折り曲げる
+T3	Argument 72 108	当該カバー内側にある突起（ベルト装着時の異音を防止するためのもの）が破損
+T4	Argument 110 125	その破片がロック機構に噛み込む
+T5	Argument 136 152	ロック機構が正常に作動しなくなり
+T6	Argument 152 162	ベルトが装着できない
+T7	Argument 166 191	装着したベルトが体を動かすなどわずかな負荷で外れる
+T9	Connective 40 42	ため
+T10	Connective 70 71	と
+T11	Connective 109 110	、
+T12	Connective 131 135	そのため
+R1	RESULT Arg1:T12 Arg2:T5	
+T13	Connective 151 152	り
+R2	REASON Arg1:T13 Arg2:T5	
+R3	RESULT Arg1:T13 Arg2:T6	
+R6	REASON Arg1:T9 Arg2:T1	
+R7	RESULT Arg1:T9 Arg2:T3	
+R8	CONDITION Arg1:T10 Arg2:T2	
+R9	RESULT Arg1:T10 Arg2:T3	
+R10	REASON Arg1:T11 Arg2:T3	
+R11	RESULT Arg1:T11 Arg2:T4	
+R12	REASON Arg1:T12 Arg2:T4	
+R4	RESULT Arg1:T13 Arg2:T7	

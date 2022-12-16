@@ -1,0 +1,15 @@
+T1	Argument 0 35	エンジンコントロールユニットにおいて、失火を検出するプログラムが不適切
+T2	Connective 36 38	ため
+T3	Argument 39 57	失火が発生していない状況で失火と判断
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 65 69	そのため
+T5	Argument 70 85	フェイルセーフモード制御となり
+T6	Connective 85 86	、
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T7	Argument 86 101	ＭＩＬ（エンジン警告灯）が点灯
+T9	Argument 103 121	排出ガス値が保安基準に適合しなくなる
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T9	

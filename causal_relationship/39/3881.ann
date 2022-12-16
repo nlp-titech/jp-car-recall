@@ -1,0 +1,47 @@
+T1	Argument 0 33	フロントフォークにおいて、ピボットアームブッシュの表面処理が不適切
+T2	Argument 37 62	ブッシュホルダとブッシュ間のオーリングが早期に摩耗
+T3	Argument 64 71	グリースが流出
+T4	Argument 75 104	フロントピボットアームとブッシュ側面の摺動抵抗が大きくなる
+T5	Argument 115 129	そのままの状態で使用を続ける
+T6	Argument 131 153	右側フロントピボットアームへ過大な応力が加わ
+T7	Argument 154 156	折損
+T8	Argument 158 160	最悪
+T9	Argument 164 173	前輪ブレーキ操作時
+T10	Argument 174 192	フロントブレーキケーブルが引っ張られ
+T11	Argument 193 199	前輪がロック
+T12	Argument 201 203	転倒
+T13	Argument 204 211	走行不能となる
+T14	Connective 34 36	ため
+T15	Connective 63 64	て
+T16	Connective 73 74	と
+T17	Connective 110 114	そのため
+T18	Connective 129 130	と
+T19	Connective 161 163	場合
+T20	Connective 173 174	に
+T21	Connective 192 193	、
+T22	Connective 200 201	て
+T23	Connective 153 154	り
+R1	REASON Arg1:T14 Arg2:T1	
+R2	RESULT Arg1:T14 Arg2:T2	
+R3	REASON Arg1:T15 Arg2:T2	
+R4	RESULT Arg1:T15 Arg2:T3	
+R5	CONDITION Arg1:T16 Arg2:T3	
+R6	RESULT Arg1:T16 Arg2:T4	
+R7	REASON Arg1:T17 Arg2:T4	
+R9	CONDITION Arg1:T18 Arg2:T5	
+R10	RESULT Arg1:T18 Arg2:T6	
+R11	REASON Arg1:T23 Arg2:T6	
+R12	RESULT Arg1:T23 Arg2:T7	
+T24	Connective 157 158	、
+R13	REASON Arg1:T24 Arg2:T7	
+R15	CONDITION Arg1:T19 Arg2:T8	
+R16	RESULT Arg1:T19 Arg2:T10	
+R17	CONDITION Arg1:T20 Arg2:T9	
+R18	RESULT Arg1:T20 Arg2:T10	
+R19	REASON Arg1:T21 Arg2:T10	
+R20	RESULT Arg1:T21 Arg2:T11	
+R21	REASON Arg1:T22 Arg2:T11	
+R22	RESULT Arg1:T22 Arg2:T12	
+R23	RESULT Arg1:T22 Arg2:T13	
+R8	RESULT Arg1:T17 Arg2:T6	
+R14	RESULT Arg1:T24 Arg2:T10	

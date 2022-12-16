@@ -1,0 +1,33 @@
+T1	Argument 13 32	エアコンハウジングの組付け位置が不適切
+T2	Connective 33 35	ため
+T5	Argument 36 66	エアコンハウジングとエアコン排水ダクトとの接続部に隙間が発生
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+T6	Connective 76 80	そのため
+R5	REASON Arg1:T6 Arg2:T5	
+T7	Argument 93 113	エアコンシステムからの排水が車室内に漏れ
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 81 91	そのまま使用を続ける
+T9	Connective 91 92	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T7	
+T10	Connective 113 114	、
+T11	Argument 114 132	隣接するエアバッグ制御ユニットが浸水
+R9	REASON Arg1:T10 Arg2:T7	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Connective 133 134	、
+T13	Argument 134 143	内部ショートが発生
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+T14	Connective 147 150	により
+T15	Argument 157 166	エアバッグが誤作動
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+T16	Argument 151 153	最悪
+T17	Connective 154 156	場合
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T15	
+T18	Connective 166 167	し
+T19	Argument 167 172	乗員が負傷
+R17	REASON Arg1:T18 Arg2:T15	
+R18	RESULT Arg1:T18 Arg2:T19	

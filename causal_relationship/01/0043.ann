@@ -1,0 +1,24 @@
+T1	Argument 0 35	ホイールベースが２８１０ｍｍの車両において、動力伝達装置の構造が不適切
+T2	Argument 39 65	最高車速域においてプロペラシャフトが異常振動を起こし
+T3	Argument 72 85	当該プロペラシャフトが切損
+T4	Argument 87 91	走行不能
+T5	Argument 133 147	プロペラシャフトを新品と交換
+T6	Argument 149 159	燃料噴射ポンプを調整
+T7	Argument 166 174	最高車速を抑える
+T8	Connective 36 38	ため
+T9	Connective 65 66	、
+T10	Connective 86 87	て
+T12	Connective 163 166	により
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T2	
+R3	REASON Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T3	
+R5	REASON Arg1:T10 Arg2:T3	
+R6	RESULT Arg1:T10 Arg2:T4	
+R9	REASON Arg1:T12 Arg2:T6	
+R10	RESULT Arg1:T12 Arg2:T7	
+T18	Connective 69 71	場合
+T19	Argument 66 68	最悪
+R11	CONDITION Arg1:T18 Arg2:T19	
+R12	RESULT Arg1:T18 Arg2:T3	
+R7	REASON Arg1:T12 Arg2:T5	

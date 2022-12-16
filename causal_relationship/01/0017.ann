@@ -1,0 +1,25 @@
+T2	Argument 57 64	当該端子が緩む
+T3	Argument 67 74	電気抵抗が増加
+T4	Argument 76 78	発熱
+T5	Argument 86 91	火災に至る
+T6	Connective 64 66	ため
+T7	Connective 46 47	、
+T8	Connective 75 76	て
+T9	Connective 79 80	、
+R1	REASON Arg1:T7 Arg2:T11	
+R2	REASON Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T3	
+R4	REASON Arg1:T9 Arg2:T4	
+R5	RESULT Arg1:T7 Arg2:T2	
+R6	RESULT Arg1:T6 Arg2:T3	
+R7	RESULT Arg1:T8 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 47 54	走行中の振動等
+T13	Connective 54 57	により
+R9	REASON Arg1:T13 Arg2:T10	
+R10	RESULT Arg1:T13 Arg2:T2	
+T14	Argument 80 82	最悪
+T15	Connective 83 85	場合
+R11	CONDITION Arg1:T15 Arg2:T14	
+R12	RESULT Arg1:T15 Arg2:T5	
+T11	Argument 0 40	車載用無線機への雑音を防止する装置（ノイズフィルター）の電気配線端子にかしめ不良

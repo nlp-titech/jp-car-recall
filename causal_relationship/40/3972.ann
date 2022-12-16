@@ -1,0 +1,21 @@
+T1	Argument 17 36	車載式故障診断装置のプログラムが不適切
+T6	Argument 96 106	保安基準に適合しない
+T7	Connective 37 39	ため
+T9	Connective 74 78	そのため
+R1	REASON Arg1:T7 Arg2:T1	
+T11	Connective 95 96	、
+R10	RESULT Arg1:T11 Arg2:T6	
+T2	Argument 40 50	吸気温度センサが故障
+T3	Connective 52 53	際
+T4	Argument 55 73	故障検知することができない場合がある
+R2	CONDITION Arg1:T3 Arg2:T2	
+R3	RESULT Arg1:T7 Arg2:T4	
+R4	RESULT Arg1:T3 Arg2:T4	
+T5	Argument 79 82	故障時
+T8	Connective 82 83	に
+T10	Argument 83 95	原動機の警告灯が点灯せず
+R5	REASON Arg1:T11 Arg2:T10	
+R6	RESULT Arg1:T8 Arg2:T10	
+R7	CONDITION Arg1:T8 Arg2:T5	
+R8	REASON Arg1:T9 Arg2:T4	
+R9	RESULT Arg1:T9 Arg2:T10	

@@ -1,0 +1,45 @@
+T1	Argument 0 39	原動機の可変ノズル付過給機において、可変ノズルリンク固定ピンの耐摩耗性が不適切
+T2	Argument 42 49	当該ピンが摩耗
+T3	Argument 53 71	可変ノズル制御用電磁弁の応答性が悪い
+T4	Argument 73 83	可変ノズル位置が変化
+T5	Argument 85 94	排出ガス流速が増大
+T6	Argument 99 107	タービンが過回転
+T7	Argument 128 139	タービン翼の一部が損傷
+T8	Argument 141 152	異音及び出力不足が発生
+T9	Argument 160 173	原動機への流入空気量が不足
+T10	Argument 174 184	黒煙が基準値を超える
+T11	Connective 40 42	ため
+T12	Connective 50 51	、
+T13	Connective 71 73	ため
+T14	Connective 84 85	，
+T15	Connective 98 99	で
+T16	Connective 110 111	、
+T17	Connective 140 141	て
+T19	Connective 173 174	し
+R1	REASON Arg1:T11 Arg2:T1	
+R2	RESULT Arg1:T11 Arg2:T2	
+R3	REASON Arg1:T12 Arg2:T2	
+R4	RESULT Arg1:T12 Arg2:T4	
+R5	REASON Arg1:T13 Arg2:T3	
+R6	RESULT Arg1:T13 Arg2:T4	
+R7	REASON Arg1:T14 Arg2:T4	
+R8	RESULT Arg1:T14 Arg2:T5	
+R9	REASON Arg1:T15 Arg2:T5	
+R10	RESULT Arg1:T15 Arg2:T6	
+R11	REASON Arg1:T16 Arg2:T6	
+R12	RESULT Arg1:T16 Arg2:T7	
+R13	REASON Arg1:T17 Arg2:T7	
+R14	RESULT Arg1:T17 Arg2:T8	
+R17	REASON Arg1:T19 Arg2:T9	
+R18	RESULT Arg1:T19 Arg2:T10	
+T20	Argument 111 126	そのままの状態で使用をつづける
+T21	Connective 126 127	と
+R19	CONDITION Arg1:T21 Arg2:T20	
+R20	RESULT Arg1:T21 Arg2:T7	
+T22	Argument 154 156	最悪
+T23	Connective 157 159	場合
+R21	CONDITION Arg1:T23 Arg2:T22	
+R22	RESULT Arg1:T23 Arg2:T9	
+T18	Connective 153 154	、
+R15	REASON Arg1:T18 Arg2:T8	
+R16	RESULT Arg1:T18 Arg2:T9	

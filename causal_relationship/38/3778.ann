@@ -1,0 +1,36 @@
+T1	Argument 0 52	大型トラックのＥ１３Ｃ型エンジンにおいて、エンジン制御プログラムと吸気バルブ用ロッカアームの形状が不適切
+T2	Argument 56 74	吸気バルブにカーボンデポジットが付着
+T3	Argument 75 84	バルブガイドが摩耗
+T4	Argument 97 107	そのまま使用を続ける
+T5	Argument 109 123	バルブとシリンダライナが干渉
+T6	Argument 131 136	振動が発生
+T7	Argument 138 140	最悪
+T8	Argument 144 150	バルブが折損
+T9	Argument 153 160	エンジンが停止
+T10	Connective 53 55	ため
+T11	Connective 74 75	し
+T12	Connective 92 96	そのため
+T13	Connective 107 108	と
+T14	Connective 127 128	で
+T15	Connective 141 143	場合
+T16	Connective 151 152	て
+T17	Connective 137 138	、
+R1	REASON Arg1:T10 Arg2:T1	
+R2	RESULT Arg1:T10 Arg2:T2	
+R3	REASON Arg1:T11 Arg2:T2	
+R4	RESULT Arg1:T11 Arg2:T3	
+R5	REASON Arg1:T12 Arg2:T3	
+R6	RESULT Arg1:T12 Arg2:T5	
+R7	CONDITION Arg1:T13 Arg2:T4	
+R8	RESULT Arg1:T13 Arg2:T5	
+R9	REASON Arg1:T14 Arg2:T5	
+R10	RESULT Arg1:T14 Arg2:T6	
+R13	CONDITION Arg1:T15 Arg2:T7	
+R14	RESULT Arg1:T15 Arg2:T8	
+R15	REASON Arg1:T16 Arg2:T8	
+R16	RESULT Arg1:T16 Arg2:T9	
+R11	REASON Arg1:T17 Arg2:T6	
+R12	RESULT Arg1:T17 Arg2:T8	
+T18	Argument 128 130	異音
+R17	RESULT Arg1:T14 Arg2:T18	
+R18	REASON Arg1:T17 Arg2:T18	

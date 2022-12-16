@@ -1,0 +1,21 @@
+T1	Argument 0 21	電動スライド式後部ドアのロック装置に不適切
+T2	Connective 27 29	ため
+T3	Argument 40 55	ドア・ラッチのかみ合いが不完全
+T4	Connective 63 64	、
+T5	Argument 74 79	ドアが開く
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 30 37	当該ドアを閉め
+T7	Connective 38 40	際に
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 64 66	最悪
+T9	Connective 67 69	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 70 73	走行中
+T11	Connective 73 74	に
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	

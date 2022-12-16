@@ -1,0 +1,33 @@
+T1	Argument 12 37	エンジンタイミングセンサーリングの取付指示が不適切
+T2	Connective 38 40	ため
+T3	Argument 41 59	取付ボルトの緩み防止剤の塗布量が不足
+T4	Connective 69 73	そのため
+T5	Argument 74 80	走行中の振動
+T6	Connective 80 83	により
+T7	Argument 83 91	取付ボルトが緩み
+T8	Argument 92 106	そのままの状態で使用を続ける
+T9	Connective 106 107	と
+T10	Argument 108 116	取付ボルトが脱落
+T11	Connective 117 118	、
+T12	Argument 118 137	エンジンタイミングセンサーリングが外れ
+T13	Connective 137 138	、
+T14	Argument 138 140	最悪
+T15	Connective 141 143	場合
+T16	Argument 144 163	走行中エンジンが停止し、再始動できない
+R3	RESULT Arg1:T15 Arg2:T16	
+R4	CONDITION Arg1:T15 Arg2:T14	
+R5	RESULT Arg1:T13 Arg2:T16	
+R6	REASON Arg1:T13 Arg2:T12	
+R7	RESULT Arg1:T11 Arg2:T12	
+R8	REASON Arg1:T11 Arg2:T10	
+R9	RESULT Arg1:T9 Arg2:T10	
+R10	CONDITION Arg1:T9 Arg2:T8	
+T19	Connective 91 92	、
+R11	RESULT Arg1:T19 Arg2:T10	
+R12	REASON Arg1:T19 Arg2:T7	
+R13	RESULT Arg1:T6 Arg2:T7	
+R14	REASON Arg1:T6 Arg2:T5	
+R15	RESULT Arg1:T4 Arg2:T7	
+R16	REASON Arg1:T4 Arg2:T3	
+R17	RESULT Arg1:T2 Arg2:T3	
+R18	REASON Arg1:T2 Arg2:T1	

@@ -1,0 +1,29 @@
+T1	Argument 0 33	アイドリングストップ付車の発電機において、プーリーの締付けが不適切
+T2	Argument 37 46	当該プーリーが緩む
+T3	Argument 49 54	異音が発生
+T4	Argument 56 65	当該プーリーが脱落
+T5	Argument 78 91	当該発電機が発電しなくなり
+T6	Argument 91 97	警告灯が点灯
+T7	Argument 117 132	エンストして再始動できなくなる
+T10	Connective 73 77	そのため
+T12	Connective 46 49	ことで
+T13	Connective 34 36	ため
+R1	REASON Arg1:T13 Arg2:T1	
+R2	RESULT Arg1:T13 Arg2:T2	
+R3	REASON Arg1:T12 Arg2:T2	
+R4	RESULT Arg1:T12 Arg2:T3	
+R5	RESULT Arg1:T12 Arg2:T4	
+R6	REASON Arg1:T10 Arg2:T4	
+R7	RESULT Arg1:T10 Arg2:T5	
+T8	Connective 114 116	場合
+T11	Argument 111 113	最悪
+T18	Argument 99 109	そのまま使用を続ける
+T19	Connective 109 110	と
+R11	CONDITION Arg1:T19 Arg2:T18	
+R12	RESULT Arg1:T19 Arg2:T7	
+R13	CONDITION Arg1:T8 Arg2:T11	
+R14	RESULT Arg1:T8 Arg2:T7	
+T14	Connective 90 91	り
+R15	REASON Arg1:T14 Arg2:T5	
+R16	RESULT Arg1:T14 Arg2:T6	
+R8	RESULT Arg1:T14 Arg2:T7	

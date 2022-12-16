@@ -1,0 +1,16 @@
+T1	Argument 0 33	前照灯において、灯火器本体を接着固定している樹脂部材の材質が不適切
+T2	Argument 37 52	灯火器本体の樹脂部材からの脱落
+T3	Argument 53 61	光軸調整部の破損
+T4	Argument 77 81	夜間走行
+T5	Argument 83 99	交通上の障害物を確認できなくなる
+T6	Connective 34 36	ため
+T7	Connective 72 76	そのため
+T8	Connective 81 82	時
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	RESULT Arg1:T6 Arg2:T3	
+R4	REASON Arg1:T7 Arg2:T3	
+R5	RESULT Arg1:T7 Arg2:T5	
+R6	CONDITION Arg1:T8 Arg2:T4	
+R7	RESULT Arg1:T8 Arg2:T5	
+R8	REASON Arg1:T7 Arg2:T2	

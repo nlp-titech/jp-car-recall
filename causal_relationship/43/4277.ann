@@ -1,0 +1,43 @@
+T1	Argument 44 60	電解コンデンサの製造工程が不適切
+T2	Connective 61 63	ため
+T3	Argument 64 69	内部が損傷
+T4	Connective 79 83	そのため
+T5	Argument 95 100	損傷が進み
+T6	Connective 100 101	、
+T7	Argument 101 108	エンジンが停止
+T8	Argument 153 176	インジェクタや高圧燃料ポンプ内部の駆動部が過熱
+T9	Connective 177 178	、
+T10	Argument 178 184	樹脂部が溶け
+T11	Connective 184 185	て
+T12	Argument 185 192	燃料が漏れ出し
+T13	Connective 192 193	、
+T14	Argument 199 204	火災に至る
+R1	REASON Arg1:T9 Arg2:T8	
+R2	RESULT Arg1:T9 Arg2:T10	
+R3	REASON Arg1:T11 Arg2:T10	
+R4	RESULT Arg1:T11 Arg2:T12	
+R5	REASON Arg1:T13 Arg2:T12	
+R6	RESULT Arg1:T13 Arg2:T14	
+T15	Argument 193 195	最悪
+T16	Connective 196 198	場合
+R7	CONDITION Arg1:T16 Arg2:T15	
+R8	RESULT Arg1:T16 Arg2:T14	
+T17	Argument 130 148	エンジンスイッチをオンの状態で維持し
+T18	Connective 151 152	と
+R10	CONDITION Arg1:T18 Arg2:T17	
+R11	RESULT Arg1:T18 Arg2:T8	
+R12	RESULT Arg1:T6 Arg2:T7	
+R13	REASON Arg1:T6 Arg2:T5	
+R14	RESULT Arg1:T4 Arg2:T5	
+T19	Argument 84 94	そのまま使用を続ける
+T20	Connective 94 95	と
+R15	CONDITION Arg1:T20 Arg2:T19	
+R16	RESULT Arg1:T20 Arg2:T5	
+R17	REASON Arg1:T2 Arg2:T1	
+R18	RESULT Arg1:T2 Arg2:T3	
+R19	REASON Arg1:T4 Arg2:T3	
+T21	Connective 109 110	、
+T22	Argument 110 119	再始動できなくなる
+R20	REASON Arg1:T21 Arg2:T7	
+R21	RESULT Arg1:T21 Arg2:T22	
+R9	RESULT Arg1:T4 Arg2:T8	

@@ -1,0 +1,17 @@
+T1	Argument 0 41	ショベルローダのコモンレール式燃料噴射装置のコモンレールにおいて、材質及び加工不良
+T2	Connective 41 44	により
+T3	Argument 45 57	コモンレールの強度が低下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 67 71	そのため
+T5	Argument 90 102	コモンレールに亀裂が生じ
+R3	REASON Arg1:T4 Arg2:T3	
+T6	Connective 102 103	、
+T7	Argument 103 109	燃料が漏れる
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 72 87	燃料供給時の圧力変動の繰り返し
+T9	Connective 87 90	により
+R7	REASON Arg1:T9 Arg2:T8	
+R4	RESULT Arg1:T4 Arg2:T5	
+R8	RESULT Arg1:T9 Arg2:T5	

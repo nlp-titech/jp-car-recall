@@ -1,0 +1,38 @@
+T1	Argument 0 36	空気式駐車制動装置において、ホイールシリンダ用ブーツの取付け作業が不適切
+T2	Argument 40 47	気密性が不十分
+T3	Argument 54 63	ブーツ内に水が浸入
+T4	Argument 65 82	ドローロッドやウエッジロッドが錆び
+T5	Argument 84 100	ドローロッド摺動部の動きが悪くな
+T6	Argument 101 109	駐車制動力が低下
+T7	Argument 123 133	ウエッジロッドが折損
+T8	Argument 141 160	当該車輪の駐車ブレーキが作動しなくなり
+T9	Argument 161 173	著しく駐車制動能力が低下
+T10	Connective 37 39	ため
+T11	Connective 53 54	、
+T12	Connective 64 65	て
+T13	Connective 82 83	て
+T15	Connective 137 140	により
+T16	Connective 160 161	、
+R1	REASON Arg1:T10 Arg2:T1	
+R2	RESULT Arg1:T10 Arg2:T2	
+R3	REASON Arg1:T11 Arg2:T2	
+R4	RESULT Arg1:T11 Arg2:T3	
+R5	REASON Arg1:T12 Arg2:T3	
+R6	RESULT Arg1:T12 Arg2:T4	
+R7	REASON Arg1:T13 Arg2:T4	
+T17	Connective 100 101	り
+R9	REASON Arg1:T17 Arg2:T5	
+R10	RESULT Arg1:T17 Arg2:T6	
+R13	REASON Arg1:T15 Arg2:T7	
+R14	RESULT Arg1:T15 Arg2:T8	
+R15	REASON Arg1:T16 Arg2:T8	
+R16	RESULT Arg1:T16 Arg2:T9	
+T14	Argument 117 119	最悪
+T18	Connective 120 122	場合
+R12	CONDITION Arg1:T18 Arg2:T14	
+R8	RESULT Arg1:T13 Arg2:T5	
+T19	Connective 116 117	、
+R11	REASON Arg1:T19 Arg2:T6	
+R17	RESULT Arg1:T19 Arg2:T8	
+R18	RESULT Arg1:T18 Arg2:T7	
+R19	RESULT Arg1:T13 Arg2:T7	

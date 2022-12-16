@@ -1,0 +1,9 @@
+T1	Argument 0 33	走行中に使用しない灯火（作業灯）において、電気回路の図面指示を誤っ
+T2	Connective 34 36	ため
+T3	Argument 44 53	作業灯が同時に点灯
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 37 42	前照灯点灯
+T5	Connective 42 43	時
+R3	CONDITION Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T3	

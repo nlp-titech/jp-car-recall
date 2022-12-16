@@ -1,0 +1,29 @@
+T2	Connective 40 41	、
+T3	Argument 60 71	当該取付穴に亀裂が発生
+T4	Connective 79 83	そのため
+T5	Argument 100 104	水が浸入
+T6	Argument 111 123	当該スイッチが短絡・発熱
+T7	Connective 124 125	、
+T8	Argument 131 136	火災に至る
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T9	Connective 108 111	により
+R5	REASON Arg1:T9 Arg2:T5	
+R6	RESULT Arg1:T9 Arg2:T6	
+R7	REASON Arg1:T7 Arg2:T6	
+R8	RESULT Arg1:T7 Arg2:T8	
+T10	Argument 41 51	打ち込み雌ねじを挿入
+T11	Connective 53 54	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	
+T12	Argument 84 98	そのままの状態で使用を続ける
+T13	Connective 98 99	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T5	
+T14	Argument 125 127	最悪
+T15	Connective 128 130	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T8	
+T1	Argument 0 35	バッテリーメインスイッチの取付部の打ち込み雌ねじの取付穴の寸法に小さい
+R1	REASON Arg1:T2 Arg2:T1	

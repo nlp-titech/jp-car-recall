@@ -1,0 +1,29 @@
+T1	Argument 13 36	燃料ポンプ用電気配線のコネクタのかしめが不適切
+T2	Connective 37 39	ため
+T3	Argument 56 68	コネクタの接触抵抗が上昇
+T4	Connective 69 70	、
+T5	Argument 70 81	燃料ポンプの出力が低下
+T6	Connective 83 85	ため
+T7	Argument 86 99	原動機の回転が不安定になり
+T8	Argument 106 112	原動機が停止
+T9	Connective 99 100	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+T10	Argument 40 54	そのままの状態で使用を続ける
+T11	Connective 54 55	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	
+T12	Argument 100 102	最悪
+T13	Connective 103 105	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T8	
+T14	Connective 113 114	、
+T15	Argument 114 124	再始動ができなくなる
+R13	REASON Arg1:T14 Arg2:T8	
+R14	RESULT Arg1:T14 Arg2:T15	

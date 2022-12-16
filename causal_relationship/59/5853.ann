@@ -1,0 +1,28 @@
+T1	Argument 0 34	後２軸駆動の大型トラックにおいて、プロペラシャフトの仕様設定が不適切
+T2	Connective 35 37	ため
+T3	Argument 38 54	ユニバーサル・ジョイント部の損傷
+T4	Argument 57 81	パイプとスプラインシャフトの溶接部分に亀裂が発生
+T5	Connective 89 93	そのため
+T6	Argument 94 104	そのまま使用を続ける
+T7	Connective 104 105	と
+T11	Argument 106 129	当該ジョイント部の損傷または溶接部の亀裂が進展
+T12	Connective 130 131	、
+T13	Argument 131 133	最悪
+T14	Connective 134 136	場合
+T15	Argument 137 151	プロペラシャフトが折損・脱落
+T16	Connective 152 153	、
+T17	Argument 153 160	走行不能となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T4	
+R4	REASON Arg1:T5 Arg2:T4	
+R5	REASON Arg1:T5 Arg2:T3	
+R7	RESULT Arg1:T5 Arg2:T11	
+R8	CONDITION Arg1:T7 Arg2:T6	
+R9	RESULT Arg1:T7 Arg2:T11	
+R13	REASON Arg1:T12 Arg2:T11	
+R14	RESULT Arg1:T12 Arg2:T15	
+R15	CONDITION Arg1:T14 Arg2:T13	
+R16	RESULT Arg1:T14 Arg2:T15	
+R17	REASON Arg1:T16 Arg2:T15	
+R18	RESULT Arg1:T16 Arg2:T17	

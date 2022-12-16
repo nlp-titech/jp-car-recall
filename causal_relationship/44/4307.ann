@@ -1,0 +1,17 @@
+T1	Argument 7 41	フルタイム４ＷＤ車において、機械式自動変速機の制御プログラムが不適切
+T2	Connective 42 44	ため
+T3	Argument 63 73	エンジン回転数が上昇
+T4	Connective 74 75	、
+T5	Argument 81 87	意図せぬ加速
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 45 61	発進時に後輪のスリップ状態が続く
+T7	Connective 61 62	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 75 77	最悪
+T9	Connective 78 80	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

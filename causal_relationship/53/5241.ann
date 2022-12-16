@@ -1,0 +1,29 @@
+T1	Argument 21 42	４回路保護バルブ内の樹脂部品の材質が不適切
+T2	Connective 43 45	ため
+T3	Argument 54 62	当該バルブが変形
+T4	Connective 70 74	そのため
+T5	Argument 91 113	フロント及びリヤブレーキ回路でエア洩れが発生
+T6	Connective 115 117	場合
+T7	Argument 118 134	エア洩れ回路の遮断ができなくなり
+T8	Connective 134 135	、
+T9	Argument 135 161	ブレーキ回路の保護機能（エア圧力保持）が働かなくなる
+T10	Connective 161 163	ため
+T11	Argument 164 170	制動力が低下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	REASON Arg1:T8 Arg2:T7	
+R6	RESULT Arg1:T8 Arg2:T9	
+R7	REASON Arg1:T10 Arg2:T9	
+R8	RESULT Arg1:T10 Arg2:T11	
+R9	CONDITION Arg1:T6 Arg2:T5	
+R10	RESULT Arg1:T6 Arg2:T7	
+T12	Argument 75 89	そのままの状態で使用を続ける
+T13	Connective 89 90	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T7	
+T14	Argument 46 50	圧力と熱
+T15	Connective 50 54	によって
+R13	REASON Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T3	

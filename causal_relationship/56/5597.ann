@@ -1,0 +1,21 @@
+T1	Argument 0 22	燃料ポンプのリターンパイプ取付部の強度が不足
+T2	Argument 37 42	亀裂が発生
+T3	Argument 55 65	そのまま使用を続ける
+T4	Argument 67 72	亀裂が進行
+T5	Argument 74 80	燃料が漏れる
+T6	Connective 26 28	ため
+T7	Connective 50 54	そのため
+T8	Connective 65 66	と
+T9	Connective 73 74	て
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T4	
+R5	CONDITION Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 29 33	使用過程
+T11	Connective 33 37	において
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T2	

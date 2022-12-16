@@ -1,0 +1,17 @@
+T1	Argument 0 34	大型トラックの１２段機械式自動変速機において、制御プログラムが不適切
+T2	Connective 35 37	ため
+T3	Argument 38 54	ギヤのセレクト位置を検出できない
+T4	Connective 60 64	そのため
+T5	Argument 65 78	ギヤが誤った位置に自動変速
+T6	Connective 80 81	、
+T7	Argument 81 83	最悪
+T8	Connective 84 86	場合
+T9	Argument 87 115	運転者が後退位置に操作しているにもかかわらず、車両が前進
+R1	RESULT Arg1:T8 Arg2:T9	
+R2	CONDITION Arg1:T8 Arg2:T7	
+R3	RESULT Arg1:T6 Arg2:T9	
+R4	REASON Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T5	
+R6	REASON Arg1:T4 Arg2:T3	
+R7	RESULT Arg1:T2 Arg2:T3	
+R8	REASON Arg1:T2 Arg2:T1	

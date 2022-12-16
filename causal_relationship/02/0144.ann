@@ -1,0 +1,25 @@
+T1	Argument 0 31	駐車ブレーキの取付金具（ブラケット）のフレームへの溶接が不適切
+T2	Argument 35 40	強度が不足
+T3	Argument 66 74	ブラケットが変形
+T4	Argument 82 94	駐車ブレーキの機構が外れ
+T5	Argument 95 109	駐車ブレーキが作動しなくなる
+T6	Connective 32 34	ため
+T7	Connective 49 50	、
+T8	Connective 75 76	、
+T9	Connective 94 95	て
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 50 64	そのままの状態で使用を続ける
+T11	Connective 64 65	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	
+T12	Argument 76 78	最悪
+T13	Connective 79 81	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T4	

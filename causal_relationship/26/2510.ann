@@ -1,0 +1,26 @@
+T1	Argument 0 28	４輪駆動のダブルキャブ消防車において、車枠の強度が不適切
+T2	Connective 29 31	ため
+T3	Argument 32 37	亀裂が発生
+T4	Connective 45 49	そのため
+T5	Argument 50 64	そのままの状態で使用を続ける
+T6	Connective 72 73	て
+T7	Argument 73 78	車枠が折損
+T8	Connective 79 80	、
+T9	Argument 80 82	最悪
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T11	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+T10	Connective 64 65	と
+R5	CONDITION Arg1:T10 Arg2:T5	
+T11	Argument 66 71	亀裂が進行
+R9	RESULT Arg1:T10 Arg2:T11	
+R10	REASON Arg1:T6 Arg2:T11	
+T12	Argument 86 93	走行不能となる
+T13	Connective 83 85	場合
+R8	CONDITION Arg1:T13 Arg2:T9	
+R11	RESULT Arg1:T8 Arg2:T12	
+R12	RESULT Arg1:T8 Arg2:T9	
+R13	RESULT Arg1:T13 Arg2:T12	

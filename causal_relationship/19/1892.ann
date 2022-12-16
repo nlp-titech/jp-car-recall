@@ -1,0 +1,17 @@
+T1	Argument 0 63	４輪駆動車の副変速機用電子制御装置において、速度抑制装置（スピードリミッター）を後付けした際の信号変換器の電源供給回路が不適切
+T2	Connective 70 74	そのため
+T3	Argument 75 107	キースイッチ操作時に副変速機用電子制御装置に瞬間的な過電流が流れ
+T4	Connective 113 117	によって
+T5	Argument 117 124	内部回路が損傷
+T6	Connective 125 126	、
+T7	Argument 126 149	副変速機、速度抑制装置及び速度計が不作動となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R7	REASON Arg1:T6 Arg2:T5	
+R8	RESULT Arg1:T6 Arg2:T7	
+T10	Connective 107 108	、
+R5	REASON Arg1:T10 Arg2:T3	
+R9	RESULT Arg1:T10 Arg2:T5	
+T11	Argument 108 113	その繰返し
+R10	REASON Arg1:T4 Arg2:T11	
+R6	RESULT Arg1:T4 Arg2:T5	

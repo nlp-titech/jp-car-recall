@@ -1,0 +1,29 @@
+T1	Argument 0 41	緩衝装置において、後車軸を車枠に固定するＶロッド端部の締付ボルトの締付トルクが不足
+T2	Argument 74 84	当該ボルトが疲労折損
+T3	Argument 92 103	Ｖロッドが車枠から離脱
+T4	Argument 105 115	後車軸が横方向にずれ
+T5	Argument 115 127	走行安定性がそこなわれる
+T6	Connective 45 47	ため
+T7	Connective 85 86	、
+T8	Connective 104 105	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+T9	Connective 114 115	れ
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Connective 73 74	で
+T11	Argument 64 73	走行中の振動、荷重
+R9	REASON Arg1:T10 Arg2:T11	
+R10	RESULT Arg1:T10 Arg2:T2	
+T12	Argument 48 62	そのままの状態で使用を続ける
+T13	Connective 62 63	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T2	
+T14	Argument 86 88	最悪
+T15	Connective 89 91	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T3	

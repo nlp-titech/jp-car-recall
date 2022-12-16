@@ -1,0 +1,33 @@
+T1	Argument 0 30	電気式フォークリフトの充電プラグにおいて、端子の形状が不適切
+T2	Connective 31 33	ため
+T3	Argument 42 47	端子が変形
+T4	Connective 55 59	そのため
+T5	Argument 60 70	そのまま使用を続ける
+T6	Connective 70 71	と
+T7	Argument 71 89	当該プラグを十分差し込むことが出来ず
+T8	Connective 89 90	、
+T9	Argument 90 101	端子が接触不良を起こし
+T10	Connective 101 102	、
+T11	Argument 102 104	最悪
+T12	Connective 105 107	場合
+T13	Argument 108 110	溶損
+T14	Connective 110 111	し
+T15	Argument 111 116	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	CONDITION Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	RESULT Arg1:T4 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	CONDITION Arg1:T12 Arg2:T11	
+R11	RESULT Arg1:T12 Arg2:T13	
+R12	RESULT Arg1:T10 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+T16	Argument 34 38	使用過程
+T17	Connective 38 42	において
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T3	

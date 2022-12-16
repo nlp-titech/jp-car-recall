@@ -1,0 +1,25 @@
+T1	Argument 0 48	動力伝達装置において、油圧ポンプ内部のベアリングを保持するためのＬ型ピンの取付け部の加工が不適切
+T2	Argument 52 64	当該ピンの動きが妨げられ
+T3	Argument 65 86	前後進切換時にピンに過大な力が加わって折損
+T4	Argument 110 120	当該ベアリングが脱落
+T5	Argument 122 146	前後進切換レバーを操作しても変速機が中立にならず
+T6	Argument 147 152	不意に走行
+T7	Connective 49 51	ため
+T8	Connective 64 65	、
+T9	Connective 93 94	、
+T10	Connective 121 122	、
+T11	Connective 146 147	、
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T5	
+R9	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	
+T12	Argument 94 108	そのままの状態で使用を続ける
+T13	Connective 108 109	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T4	

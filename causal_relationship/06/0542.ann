@@ -1,0 +1,5 @@
+T1	Argument 0 30	架装メーカーで設定しているエアスポイラにおいて、形状が不適切
+T2	Argument 34 53	エアスポイラの構造基準を満足していない
+T5	Connective 31 33	ため
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	

@@ -1,0 +1,36 @@
+T1	Argument 0 26	燃料ホースとパイプを接続するコネクターの構造が不適切
+T2	Connective 27 29	ため
+T4	Connective 48 49	れ
+T5	Argument 49 60	当該コネクターが外れる
+T6	Argument 69 77	整備時等に再接続
+T7	Connective 79 80	際
+R1	REASON Arg1:T2 Arg2:T1	
+R4	RESULT Arg1:T4 Arg2:T5	
+T8	Argument 81 101	燃料ホースとパイプが正しく接続されにくく
+T9	Connective 101 102	、
+R5	RESULT Arg1:T2 Arg2:T8	
+T10	Argument 102 112	確実に接続がされない
+T11	Connective 118 122	そのため
+T12	Argument 134 139	燃料が漏れ
+T13	Connective 139 140	て
+T14	Argument 147 152	火災に至る
+R6	REASON Arg1:T9 Arg2:T8	
+R7	RESULT Arg1:T9 Arg2:T10	
+R8	REASON Arg1:T11 Arg2:T10	
+R9	RESULT Arg1:T11 Arg2:T12	
+R10	REASON Arg1:T13 Arg2:T12	
+R11	RESULT Arg1:T13 Arg2:T14	
+T15	Argument 123 133	そのまま走行を続ける
+T16	Connective 133 134	と
+R12	CONDITION Arg1:T16 Arg2:T15	
+R13	RESULT Arg1:T16 Arg2:T12	
+T17	Argument 141 143	最悪
+T18	Connective 144 146	場合
+R14	CONDITION Arg1:T18 Arg2:T17	
+R15	RESULT Arg1:T18 Arg2:T14	
+R16	CONDITION Arg1:T7 Arg2:T6	
+R17	RESULT Arg1:T7 Arg2:T8	
+R18	REASON Arg1:T11 Arg2:T5	
+T3	Argument 30 48	リリースリングが整備中に不用意に押さ
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	

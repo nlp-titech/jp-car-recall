@@ -1,0 +1,11 @@
+T1	Argument 0 28	リヤショックアブソーバーにおいて、取付部分の溶接が不適切
+T2	Connective 29 31	ため
+T3	Argument 32 39	当該部分が破損
+T4	Connective 47 51	そのため
+T5	Argument 52 57	異音が発生
+T7	Argument 59 71	走行安定性に支障をきたす
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T4 Arg2:T7	

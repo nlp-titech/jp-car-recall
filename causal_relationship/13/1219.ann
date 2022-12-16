@@ -1,0 +1,33 @@
+T1	Argument 0 21	エンジン左前部の電気配線の取り回しが不適切
+T2	Connective 22 24	ため
+T3	Argument 25 42	エンジン用吸気ダクト取付金具と干渉
+T4	Connective 50 54	そのため
+T5	Argument 55 68	当該配線の周囲の温度が上昇
+T6	Connective 70 71	と
+T7	Argument 72 80	配線の被覆が軟化
+T8	Connective 81 82	て
+T9	Argument 82 87	亀裂が発生
+T10	Argument 89 91	最悪
+T11	Connective 92 94	場合
+T12	Connective 88 89	、
+T13	Argument 95 102	配線がショート
+T14	Connective 103 104	て
+T15	Argument 104 122	燃料噴射制御装置のトランジスタが破損
+T16	Connective 123 124	、
+T17	Argument 124 141	エンジンが停止、再始動できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	CONDITION Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	RESULT Arg1:T4 Arg2:T9	
+R7	CONDITION Arg1:T11 Arg2:T10	
+R8	RESULT Arg1:T11 Arg2:T13	
+R9	REASON Arg1:T8 Arg2:T7	
+R10	RESULT Arg1:T8 Arg2:T9	
+R11	REASON Arg1:T12 Arg2:T9	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R15	REASON Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T17	

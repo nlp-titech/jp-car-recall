@@ -1,0 +1,21 @@
+T2	Connective 48 50	ため
+T3	Argument 66 78	デフレクターの破片が飛散
+T4	Connective 79 80	、
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+T6	Argument 51 61	当該エアバッグが作動
+T7	Connective 63 65	場合
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 80 82	最悪
+T9	Connective 83 85	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+T1	Argument 0 42	助手席エアバッグ装置において、デフレクター（保護カバーの樹脂成型部品）の材質に不適切
+R1	REASON Arg1:T2 Arg2:T1	
+T5	Argument 86 90	前面衝突
+T10	Connective 90 92	時に
+T11	Argument 92 104	乗員に過度の傷害を与える
+R4	RESULT Arg1:T10 Arg2:T11	
+R8	RESULT Arg1:T9 Arg2:T11	
+R9	RESULT Arg1:T4 Arg2:T11	
+R10	CONDITION Arg1:T10 Arg2:T5	

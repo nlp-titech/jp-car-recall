@@ -1,0 +1,28 @@
+T1	Argument 0 43	燃料ポンプにおいて、燃料を圧送するインペラ（羽根車）に外径寸法の大きいものが組み込まれ
+T2	Connective 44 46	ため
+T3	Argument 47 77	インペラが燃料による膨潤及び燃料温度が高くなることによる膨張
+T4	Connective 77 81	によって
+T5	Argument 82 92	インペラケースと干渉
+T6	Connective 100 104	そのため
+T7	Argument 105 115	そのまま使用を続ける
+T8	Connective 115 116	と
+T9	Argument 117 129	燃料の吐出量が少なくなり
+T14	Argument 157 177	エンジン始動時にインペラが回転しなくなり
+T15	Connective 177 178	、
+T16	Argument 178 191	エンジンが始動できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T5	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	RESULT Arg1:T6 Arg2:T9	
+R11	RESULT Arg1:T8 Arg2:T14	
+R12	RESULT Arg1:T6 Arg2:T14	
+R15	REASON Arg1:T15 Arg2:T14	
+R16	RESULT Arg1:T15 Arg2:T16	
+T10	Connective 128 129	り
+T11	Argument 129 147	エンジンが停止し、再始動できなくなる
+R7	REASON Arg1:T10 Arg2:T9	
+R17	RESULT Arg1:T10 Arg2:T11	

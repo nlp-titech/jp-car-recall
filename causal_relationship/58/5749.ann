@@ -1,0 +1,29 @@
+T1	Argument 18 23	走行振動等
+T2	Connective 23 26	により
+T3	Argument 57 59	擦れ
+R1	REASON Arg1:T2 Arg2:T1	
+T4	Argument 26 55	フル―ドのリターンパイプがステアリングギヤボックス等に接触
+T5	Connective 56 57	て
+R3	REASON Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T3	
+T6	Connective 59 60	、
+R5	REASON Arg1:T6 Arg2:T3	
+T8	Connective 74 75	り
+T9	Argument 75 83	フル―ドが漏れる
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Connective 89 93	そのため
+T11	Argument 94 104	そのまま使用を続ける
+T12	Connective 104 105	と
+T13	Argument 106 120	パワーステアリング機能が失陥
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+T14	Connective 120 121	し
+T15	Argument 121 127	操舵力が増大
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R2	RESULT Arg1:T2 Arg2:T4	
+T7	Argument 60 74	当該リターンパイプに亀裂が入
+R6	REASON Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T7	

@@ -1,0 +1,25 @@
+T2	Connective 60 64	そのため
+T3	Argument 81 94	取付けボルトの締結部が緩ん
+T4	Connective 94 95	で
+T5	Argument 95 108	サプライポンプの振動が増大
+T6	Connective 109 110	、
+T7	Argument 116 127	燃料パイプに亀裂が発生
+T8	Connective 128 129	、
+T9	Argument 129 135	燃料が漏れる
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 65 79	そのままの状態で使用を続ける
+T11	Connective 79 80	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	
+T12	Argument 110 112	最悪
+T13	Connective 113 115	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T7	
+T1	Argument 7 50	燃料噴射装置において、サプライポンプをエンジンに締結する取付けボルトの締付トルクが不足
+R1	REASON Arg1:T2 Arg2:T1	

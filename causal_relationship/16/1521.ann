@@ -1,0 +1,25 @@
+T1	Argument 0 23	プロペラシャフトのプラグ溶接位置の指示が不適切
+T2	Argument 27 36	溶接部の強度が不足
+T3	Argument 63 75	プラグ溶接部に亀裂が生じ
+T4	Argument 82 93	プロペラシャフトが破損
+T5	Connective 24 26	ため
+T6	Connective 46 50	そのため
+T7	Connective 75 76	、
+T8	Argument 95 102	走行不能となる
+T9	Connective 94 95	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T8	
+T10	Argument 51 61	そのまま使用を続ける
+T11	Connective 61 62	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	
+T12	Argument 76 78	最悪
+T13	Connective 79 81	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T4	

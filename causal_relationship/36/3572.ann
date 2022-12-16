@@ -1,0 +1,29 @@
+T1	Argument 15 41	後輪走行モータの取付部のボルト座面の塗装指示が不適切
+T2	Connective 42 44	ため
+T3	Argument 45 61	塗膜が潰れてボルトの締結力が低下
+T4	Connective 69 73	そのため
+T5	Argument 74 91	走行時の振動により当該ボルトが緩み
+T6	Argument 92 106	そのままの状態で使用を続ける
+T7	Connective 106 107	と
+T8	Connective 91 92	、
+T9	Argument 108 114	ボルトが脱落
+T10	Connective 115 116	、
+T11	Argument 116 118	最悪
+T12	Connective 119 121	場合
+T13	Argument 122 130	走行モータが外れ
+R1	RESULT Arg1:T12 Arg2:T13	
+R2	CONDITION Arg1:T12 Arg2:T11	
+R3	RESULT Arg1:T10 Arg2:T13	
+R4	REASON Arg1:T10 Arg2:T9	
+R5	RESULT Arg1:T7 Arg2:T9	
+R6	CONDITION Arg1:T7 Arg2:T6	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	REASON Arg1:T8 Arg2:T5	
+R9	RESULT Arg1:T4 Arg2:T5	
+R10	REASON Arg1:T4 Arg2:T3	
+R11	RESULT Arg1:T2 Arg2:T3	
+R12	REASON Arg1:T2 Arg2:T1	
+T14	Connective 130 131	て
+T15	Argument 131 138	走行不能となる
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	

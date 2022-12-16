@@ -1,0 +1,29 @@
+T1	Argument 0 30	燃料タンクにおいて、燃料ポンプに至る電気配線の防水性が不適切
+T2	Connective 31 33	ため
+T3	Argument 34 57	電気配線に入った水が当該ポンプのカプラ内に浸入
+T4	Connective 65 69	そのため
+T5	Argument 86 91	端子が腐食
+T6	Connective 92 93	て
+T7	Argument 93 95	折損
+T8	Connective 96 97	、
+T9	Argument 97 110	燃料ポンプが作動しなくなり
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Connective 110 111	、
+T11	Argument 117 135	エンジンが停止し、再始動できなくなる
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T18	Argument 70 84	そのままの状態で使用を続ける
+T19	Connective 84 85	と
+R13	CONDITION Arg1:T19 Arg2:T18	
+R14	RESULT Arg1:T19 Arg2:T5	
+T20	Argument 111 113	最悪
+T21	Connective 114 116	場合
+R15	CONDITION Arg1:T21 Arg2:T20	
+R16	RESULT Arg1:T21 Arg2:T11	

@@ -1,0 +1,29 @@
+T1	Argument 14 68	氷結防止用ヒータープレート（冷却水還流式）の製造工程において、当該ヒータープレートの流路内に接着剤がはみ出し
+T2	Connective 74 75	、
+T3	Argument 91 102	はみ出した接着剤が剥離
+T4	Connective 103 104	て
+T5	Argument 104 109	流路を塞ぎ
+T6	Connective 109 110	、
+T7	Argument 110 124	ヒータープレートの機能が低下
+T8	Connective 126 128	ため
+T9	Argument 157 186	ブローバイガスに含まれている水分がスロットルバルブ内で氷結
+T10	Connective 187 188	、
+T11	Argument 188 214	アクセルペダルを離してもエンジン回転が下がらなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 129 152	外気温度が極めて低い気象条件下でエンジンを始動
+T13	Connective 154 156	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T9	
+T14	Argument 75 89	このままの状態で使用を続ける
+T15	Connective 89 90	と
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T3	

@@ -1,0 +1,25 @@
+T1	Argument 0 22	ブレーキスイッチの構成部品の成形加工が不適切
+T2	Connective 23 25	ため
+T3	Argument 26 39	ブレーキ操作を繰り返し行う
+T4	Connective 39 40	と
+T5	Argument 41 57	ブレーキスイッチがオン状態を保持
+T6	Connective 65 69	そのため
+T7	Argument 70 94	ブレーキペダルを踏まなくても、制動灯が点灯し続け
+T8	Connective 94 95	、
+T9	Argument 102 129	ＰレンジからＤレンジ又はＲレンジにシフト操作可能となり
+T10	Connective 129 130	、
+T11	Argument 130 142	意図せずに車両が動き出す
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 95 98	停車時
+T13	Connective 98 102	において
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T9	

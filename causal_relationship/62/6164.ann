@@ -1,0 +1,7 @@
+T1	Argument 0 43	サイド及びカーテン・エアバッグ制御モジュールの車両側コネクタにおいて、端子を誤って配列
+T2	Connective 53 57	そのため
+T3	Argument 58 102	衝突した際に本来作動しなければならない箇所と反対側のシートベルト・プリテンショナーが作動
+T5	Argument 104 125	サイド及びカーテン・エアバッグが作動しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T5	

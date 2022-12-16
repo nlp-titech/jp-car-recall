@@ -1,0 +1,21 @@
+T1	Argument 15 31	燃料供給ホースの取り回しが不適切
+T2	Connective 32 34	ため
+T3	Argument 43 61	エアクリーナーケースのエッジ部に干渉
+T4	Connective 68 69	、
+T5	Argument 85 93	当該ホースが損傷
+T6	Connective 94 95	て
+T7	Argument 95 101	燃料が漏れる
+R1	REASON Arg1:T4 Arg2:T3	
+R2	RESULT Arg1:T4 Arg2:T5	
+R3	REASON Arg1:T6 Arg2:T5	
+R4	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 69 83	そのままの状態で使用を続ける
+T9	Connective 83 84	と
+R5	CONDITION Arg1:T9 Arg2:T8	
+R6	RESULT Arg1:T9 Arg2:T5	
+R7	REASON Arg1:T2 Arg2:T1	
+R8	RESULT Arg1:T2 Arg2:T3	
+T10	Argument 35 40	車体の振動
+T11	Connective 40 43	により
+R9	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	

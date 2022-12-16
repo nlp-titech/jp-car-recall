@@ -1,0 +1,25 @@
+T1	Argument 5 47	カムシャフト駆動用タイミングチェーンの張力を調整するテンショナーのストロークが不十分
+T2	Argument 51 70	タイミングチェーンの張力を維持できない
+T3	Argument 81 98	タイミングチェーンの張力が弱くなり
+T4	Argument 99 126	チェーンがカムシャフト駆動用スプロケットの歯を飛び越え
+T5	Argument 127 139	エンジン不調を引き起こし
+T6	Argument 140 142	最悪
+T7	Argument 146 153	走行不能となる
+T8	Connective 48 50	ため
+T9	Connective 76 80	その結果
+T10	Connective 98 99	、
+T11	Connective 126 127	て
+T12	Connective 139 140	、
+T13	Connective 143 145	場合
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T2	
+R3	REASON Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T3	
+R5	REASON Arg1:T10 Arg2:T3	
+R6	RESULT Arg1:T10 Arg2:T4	
+R7	REASON Arg1:T11 Arg2:T4	
+R8	RESULT Arg1:T11 Arg2:T5	
+R9	REASON Arg1:T12 Arg2:T5	
+R10	RESULT Arg1:T12 Arg2:T7	
+R11	CONDITION Arg1:T13 Arg2:T6	
+R12	RESULT Arg1:T13 Arg2:T7	

@@ -1,0 +1,5 @@
+T1	Argument 0 29	メーカーオプション仕様の速度計において、仕様の設定が不適切
+T2	Connective 30 32	ため
+T3	Argument 33 60	速度計の指示範囲が車両の性能上の最高速度を表示できない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

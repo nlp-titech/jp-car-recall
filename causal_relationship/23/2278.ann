@@ -1,0 +1,5 @@
+T1	Argument 0 46	寒冷地オプションの強化型ヒータ装着車において、デフロスタの操作スイッチの取り付け位置が不適切
+T2	Connective 47 49	ため
+T3	Argument 50 69	道路運送車両の保安基準に適合していない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

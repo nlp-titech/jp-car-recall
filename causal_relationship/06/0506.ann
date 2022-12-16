@@ -1,0 +1,22 @@
+T1	Argument 0 78	手動変速機付車（除く過給機付車）において②２輪駆動車の車速検出用センサーロータを固定しているスナップリング装着部の形状、およびスナップリングの組付けが不適切
+T2	Argument 91 102	スナップリングが外れる
+T3	Argument 108 118	センサーロータがずれ
+T4	Argument 118 126	車速が検出できず
+T5	Argument 127 138	速度計が作動しなくなる
+T6	Connective 84 85	、
+T7	Connective 107 108	、
+T8	Connective 117 118	れ
+T9	Connective 126 127	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+T12	Argument 85 87	最悪
+T13	Connective 88 90	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T2	
+R13	RESULT Arg1:T6 Arg2:T12	

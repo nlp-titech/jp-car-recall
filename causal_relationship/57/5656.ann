@@ -1,0 +1,11 @@
+T1	Argument 13 37	前照灯スイッチの位置を識別するプログラムが不適切
+T2	Argument 41 63	前照灯スイッチの操作位置を正しく認識できない
+T3	Argument 74 94	前照灯スイッチがＯＦＦの時に前照灯が点灯
+T4	Argument 99 118	前照灯スイッチがＯＮの時に前照灯が消灯
+T5	Connective 38 40	ため
+T6	Connective 69 73	そのため
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	RESULT Arg1:T6 Arg2:T4	

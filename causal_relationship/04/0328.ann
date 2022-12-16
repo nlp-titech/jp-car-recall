@@ -1,0 +1,27 @@
+T2	Argument 44 54	当該端止結合部が発熱
+T3	Argument 74 86	溶損した樹脂が端子に溶着
+T4	Argument 96 102	前照灯の不灯
+T5	Connective 41 43	ため
+T6	Connective 67 68	、
+R2	RESULT Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+T14	Connective 55 56	て
+T15	Argument 56 66	樹脂製のカプラが溶損
+R3	REASON Arg1:T14 Arg2:T2	
+R5	RESULT Arg1:T14 Arg2:T15	
+R6	REASON Arg1:T6 Arg2:T15	
+T16	Connective 87 88	て
+T17	Argument 88 92	導通不良
+R7	REASON Arg1:T16 Arg2:T3	
+R8	RESULT Arg1:T16 Arg2:T17	
+T18	Connective 95 96	、
+R9	REASON Arg1:T18 Arg2:T17	
+R10	RESULT Arg1:T18 Arg2:T4	
+T1	Argument 0 35	電気装置において、前照灯及び警音器の電気配線カプラ内の端子の位置がずれ
+R1	REASON Arg1:T5 Arg2:T1	
+T7	Argument 68 70	最悪
+T8	Connective 71 73	場合
+R11	CONDITION Arg1:T8 Arg2:T7	
+R12	RESULT Arg1:T8 Arg2:T3	
+T9	Argument 104 112	警音器の作動不良
+R13	RESULT Arg1:T18 Arg2:T9	

@@ -1,0 +1,37 @@
+T1	Argument 21 52	コンバーチブルトップロック用モータ内のドライブギアの強度が不足
+T2	Connective 56 57	為
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 66 76	当該ギアに亀裂が入る
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 104 119	ロック機構が確実にロックされず
+T5	Connective 119 120	、
+T6	Argument 124 128	突然開く
+T7	Argument 140 153	コンバーチブルトップが脱落
+T8	Connective 154 155	、
+T9	Argument 155 166	他の交通の安全を妨げる
+T10	Connective 82 86	そのため
+R3	REASON Arg1:T10 Arg2:T3	
+R4	RESULT Arg1:T10 Arg2:T4	
+R5	REASON Arg1:T5 Arg2:T4	
+R6	RESULT Arg1:T5 Arg2:T6	
+T11	Connective 133 134	、
+R7	REASON Arg1:T11 Arg2:T6	
+R8	RESULT Arg1:T11 Arg2:T7	
+R9	REASON Arg1:T8 Arg2:T7	
+R10	RESULT Arg1:T8 Arg2:T9	
+T12	Argument 134 136	最悪
+T13	Connective 137 139	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T7	
+T14	Argument 58 65	開閉を繰り返す
+T15	Connective 65 66	と
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T3	
+T16	Argument 87 102	コンバーチブルトップを閉じた際
+T17	Connective 102 103	に
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T4	
+T18	Argument 120 123	走行中
+T19	Connective 123 124	、
+R17	CONDITION Arg1:T19 Arg2:T18	
+R18	RESULT Arg1:T19 Arg2:T6	

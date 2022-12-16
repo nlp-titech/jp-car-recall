@@ -1,0 +1,9 @@
+T1	Argument 9 25	デリバリパイプの製造方法が不適切
+T2	Connective 26 28	ため
+T3	Argument 29 49	インジェクタが正しく取り付けられていない
+T4	Connective 54 55	、
+T5	Argument 55 82	デリバリパイプとインジェクタの接続部分より燃料が漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

@@ -1,0 +1,29 @@
+T1	Argument 0 32	揺動機構を持つ後軸取付部において、揺動ストッパの取付位置が不適切
+T2	Argument 36 51	凹凸の激しい路面で使用を続ける
+T3	Argument 53 83	後軸を車体に固定するための取付用プレートに過大な荷重が加わり
+T4	Argument 84 94	取付用プレートが変形
+T5	Argument 96 107	後軸取付部にガタが生じ
+T6	Argument 108 117	揺動角が大きくなる
+T7	Argument 128 130	最悪
+T8	Argument 146 160	左右安定度が確保できなくなる
+T9	Connective 33 35	ため
+T10	Connective 51 52	と
+T11	Connective 83 84	、
+T12	Connective 95 96	て
+T13	Connective 107 108	、
+T14	Connective 123 127	このため
+T15	Connective 131 133	場合
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T3	
+R3	CONDITION Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T3	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+R7	REASON Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T5	
+R9	REASON Arg1:T13 Arg2:T5	
+R10	RESULT Arg1:T13 Arg2:T6	
+R11	REASON Arg1:T14 Arg2:T6	
+R12	RESULT Arg1:T14 Arg2:T8	
+R13	CONDITION Arg1:T15 Arg2:T7	
+R14	RESULT Arg1:T15 Arg2:T8	

@@ -1,0 +1,29 @@
+T1	Argument 0 28	電気装置において、メーター用電気配線の取りまわしが不適切
+T2	Argument 48 57	ハンドルを左にきっ
+T3	Argument 60 77	当該電気配線が固定用クランプと擦れ
+T4	Argument 78 80	損傷
+T5	Argument 94 96	短絡
+T6	Argument 98 122	前照灯、方向指示器、速度計の照明が点灯しなくなる
+T7	Connective 29 31	ため
+T8	Connective 58 59	際
+T9	Connective 77 78	て
+T10	Connective 87 88	、
+T11	Connective 97 98	、
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T3	
+R3	CONDITION Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	RESULT Arg1:T9 Arg2:T4	
+R6	REASON Arg1:T9 Arg2:T3	
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T5	
+R9	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	
+T12	Argument 32 46	そのままの状態で使用を続ける
+T13	Connective 46 47	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T3	
+T14	Argument 88 90	最悪
+T15	Connective 91 93	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T5	

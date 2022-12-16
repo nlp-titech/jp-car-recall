@@ -1,0 +1,17 @@
+T1	Argument 0 40	原動機の燃料装置において、燃料パイプと燃料フィルターの組合せによる強度評価が不足
+T2	Connective 44 46	ため
+T3	Argument 47 53	共振を起こし
+T4	Connective 52 53	し
+T5	Argument 53 65	許容値を超える応力が発生
+T6	Connective 73 77	そのため
+T7	Argument 78 91	当該燃料パイプに亀裂が生じ
+T8	Argument 92 98	燃料が漏れる
+T9	Connective 91 92	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	

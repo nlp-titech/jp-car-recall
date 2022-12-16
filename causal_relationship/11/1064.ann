@@ -1,0 +1,31 @@
+T1	Argument 0 19	ブレーキ用エアパイプの取り回しが不適切
+T2	Connective 20 22	ため
+T5	Argument 23 41	悪路等の走行による大きな振動を受ける
+T6	Connective 41 42	と
+T7	Argument 43 55	当該パイプに高応力が発生
+T8	Connective 63 67	そのため
+T9	Argument 68 83	そのままの状態で使用をつづける
+T10	Connective 83 84	と
+T11	Argument 85 96	当該パイプに亀裂が発生
+T12	Connective 97 98	て
+T13	Argument 98 103	エアが漏れ
+T15	Argument 104 106	最悪
+T16	Connective 107 109	場合
+T17	Argument 110 115	亀裂が拡大
+T18	Connective 116 117	、
+T19	Argument 117 123	制動力が低下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	CONDITION Arg1:T10 Arg2:T9	
+R9	REASON Arg1:T12 Arg2:T11	
+R10	RESULT Arg1:T12 Arg2:T13	
+R11	RESULT Arg1:T10 Arg2:T11	
+R12	RESULT Arg1:T8 Arg2:T11	
+R14	CONDITION Arg1:T16 Arg2:T15	
+R15	RESULT Arg1:T16 Arg2:T17	
+R17	REASON Arg1:T18 Arg2:T17	
+R18	RESULT Arg1:T18 Arg2:T19	
+R3	RESULT Arg1:T12 Arg2:T17	

@@ -1,0 +1,5 @@
+T1	Argument 13 45	シートベルトプリテンショナーを作動させるための配線を左右逆に配列
+T2	Connective 47 49	ため
+T3	Argument 50 85	作動時に本来作動しなければならない箇所と反対側のプリテンショナーが作動
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

@@ -1,0 +1,27 @@
+T1	Argument 12 37	過大な負荷の伝達を防止するための部品の設計が不適切
+T2	Connective 38 40	ため
+T3	Argument 41 71	除雪装置からの過大な負荷が、原動機のクランクシャフトに伝わる
+T4	Connective 77 81	そのため
+T5	Argument 82 102	当該シャフトに過大な負荷が繰り返し加わる
+T6	Connective 102 103	と
+T7	Argument 104 118	クランクシャフトに亀裂が生じ
+T8	Connective 118 119	、
+T9	Argument 119 133	そのままの状態で使用を続ける
+T10	Connective 133 134	と
+T11	Argument 135 137	折損
+R1	RESULT Arg1:T10 Arg2:T11	
+R2	CONDITION Arg1:T10 Arg2:T9	
+R3	RESULT Arg1:T8 Arg2:T11	
+R4	REASON Arg1:T8 Arg2:T7	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	CONDITION Arg1:T6 Arg2:T5	
+R7	RESULT Arg1:T4 Arg2:T5	
+R8	REASON Arg1:T4 Arg2:T3	
+R9	RESULT Arg1:T2 Arg2:T3	
+R10	REASON Arg1:T2 Arg2:T1	
+T12	Connective 138 139	て
+T13	Argument 140 145	異音が生じ
+T14	Argument 146 155	回転が不安定となる
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	RESULT Arg1:T12 Arg2:T14	

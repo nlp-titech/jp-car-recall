@@ -1,0 +1,13 @@
+T1	Argument 0 25	エンジンの電子制御コントローラのプログラムが不適切
+T2	Connective 26 28	ため
+T3	Argument 29 45	短時間で過剰なアクセル操作を行う
+T4	Connective 45 46	と
+T5	Argument 47 59	エンジン回転数制御が不能
+T6	Connective 62 63	、
+T7	Argument 63 83	キースイッチでエンジン停止が出来なくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

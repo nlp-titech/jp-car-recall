@@ -1,0 +1,17 @@
+T1	Argument 0 54	制動装置のブレーキ倍力機構において、冷間始動時の原動機回転を制御するコンピュータ(ＥＣＵ)プログラムが不適切
+T2	Connective 57 58	、
+T3	Argument 58 80	始動直後には当該機構に十分な負圧が発生しない
+T4	Connective 80 82	ので
+T5	Argument 82 95	ブレーキのアシスト力が不足
+T6	Connective 97 99	ため
+T7	Argument 100 110	ブレーキペダルを踏ん
+T8	Connective 111 113	場合
+T9	Argument 114 120	制動力が不足
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	RESULT Arg1:T6 Arg2:T9	

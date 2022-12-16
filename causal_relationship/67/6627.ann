@@ -1,0 +1,17 @@
+T1	Argument 6 33	シートベルトプリテンショナーにおいて、製造管理が不適切
+T2	Connective 34 36	ため
+T3	Argument 37 53	点火剤が設計通り調合されていない
+T4	Connective 59 63	そのため
+T5	Argument 68 88	シートベルトの弛みを巻きとることができず
+T6	Connective 88 89	、
+T7	Argument 89 100	乗員が過度の傷害を負う
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 64 66	衝突
+T9	Connective 66 67	時
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

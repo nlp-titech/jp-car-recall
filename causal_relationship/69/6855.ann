@@ -1,0 +1,23 @@
+T1	Connective 83 87	このため
+T2	Argument 63 75	車輪をロック状態と誤認識
+T3	Argument 88 104	ＡＢＳコントロールバルブが誤作動
+T4	Connective 105 106	て
+T5	Argument 106 111	異音が発生
+T7	Argument 115 117	最悪
+T8	Connective 118 120	場合
+T9	Argument 121 133	ブレーキの効きが悪くなる
+R1	REASON Arg1:T1 Arg2:T2	
+R2	RESULT Arg1:T1 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 0 15	想定外の不正な高出力電波を受け
+T11	Connective 16 17	際
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T2	
+T12	Argument 18 60	ＡＢＳを制御するコントロールユニット（ＥＣＵ）が、車輪速センサー信号に混入したノイズ
+T13	Connective 60 63	により
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T2	
+R5	RESULT Arg1:T4 Arg2:T9	

@@ -1,0 +1,5 @@
+T1	Argument 15 30	エアバッグの警告ラベルが不適切
+T2	Connective 31 33	ため
+T3	Argument 34 70	保安基準第１８条細目告示第２２条９に定める警告表示の要件を満足していない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

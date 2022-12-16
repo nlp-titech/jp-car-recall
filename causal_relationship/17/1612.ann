@@ -1,0 +1,5 @@
+T1	Argument 0 54	ディーラーオプション部品として設定したフロントフォグランプを装着した車両において、メーター仕様の設定が不適切
+T3	Argument 58 90	当該ランプの点灯操作状態を運転者に表示する装置が備えられていない
+T2	Connective 55 57	ため
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

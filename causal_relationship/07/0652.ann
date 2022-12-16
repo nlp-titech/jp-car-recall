@@ -1,0 +1,36 @@
+T1	Argument 0 38	気温が低い時にキャブレターを温めるための装置（キャブウォーマ）の配線が不適切
+T2	Argument 42 52	キャブウォーマが作動
+T3	Argument 55 73	キャブレターと車体の間に電位差が発生
+T4	Argument 88 102	キャブレターと車体の間が短絡
+T5	Argument 107 123	キャブウォーマ用のヒューズが溶断
+T6	Connective 124 125	、
+T7	Connective 106 107	、
+T8	Argument 125 140	キャブウォーマが作動しなくなる
+T9	Argument 141 154	周囲に引火性の可燃物がある
+T10	Connective 154 155	と
+T11	Argument 156 158	最悪
+T12	Connective 159 161	場合
+T13	Argument 162 174	短絡した際に発生する火花
+T14	Argument 177 182	火災に至る
+T15	Connective 39 41	ため
+T16	Connective 54 55	と
+T17	Connective 76 80	そのため
+T18	Connective 174 177	により
+R1	REASON Arg1:T15 Arg2:T1	
+R2	RESULT Arg1:T15 Arg2:T3	
+R3	CONDITION Arg1:T16 Arg2:T2	
+R4	RESULT Arg1:T16 Arg2:T3	
+R5	REASON Arg1:T17 Arg2:T3	
+R6	RESULT Arg1:T17 Arg2:T5	
+R7	REASON Arg1:T7 Arg2:T4	
+R8	RESULT Arg1:T7 Arg2:T5	
+R9	REASON Arg1:T6 Arg2:T5	
+R10	RESULT Arg1:T6 Arg2:T8	
+R11	CONDITION Arg1:T10 Arg2:T9	
+R13	CONDITION Arg1:T12 Arg2:T11	
+R14	RESULT Arg1:T12 Arg2:T14	
+R15	REASON Arg1:T18 Arg2:T13	
+R16	RESULT Arg1:T18 Arg2:T14	
+R12	RESULT Arg1:T10 Arg2:T14	
+R17	RESULT Arg1:T7 Arg2:T13	
+#1	AnnotatorNotes T4	「場合」とあるがconditionではない。電位差発生→短絡→溶断

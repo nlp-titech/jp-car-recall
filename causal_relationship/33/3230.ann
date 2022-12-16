@@ -1,0 +1,5 @@
+T1	Argument 0 33	サイドブラシ（作業装置）を装着した状態で車両全幅が１．７ｍを超える
+T2	Connective 33 35	ため
+T3	Argument 36 49	小型特殊自動車の範囲を逸脱
+R1	RESULT Arg1:T2 Arg2:T3	
+R2	REASON Arg1:T2 Arg2:T1	

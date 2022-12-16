@@ -1,0 +1,14 @@
+T1	Argument 11 35	リヤコンビネーションランプの左右が誤って取り付け
+T2	Connective 43 44	、
+T3	Argument 44 55	水抜きが適切に行われず
+T4	Connective 55 56	、
+T5	Argument 56 66	ランプが不点灯となる
+T6	Argument 76 92	尾灯の照明部が設計の状態と異なる
+T7	Connective 92 94	ため
+T8	Argument 95 105	保安基準に適合しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T8	

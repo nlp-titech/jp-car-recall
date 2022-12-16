@@ -1,0 +1,9 @@
+T1	Argument 0 54	制動装置において、ロードセンシングプロポーショニングバルブ（ＬＳＰＶ）へのブレーキ配管の一部に組付けが不適切
+T2	Argument 75 88	ブレーキの制動距離が伸びる
+T3	Connective 60 62	ため
+R1	REASON Arg1:T3 Arg2:T1	
+R2	RESULT Arg1:T3 Arg2:T2	
+T4	Argument 63 73	積車状態での急制動時
+T5	Connective 73 74	に
+R3	CONDITION Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T2	

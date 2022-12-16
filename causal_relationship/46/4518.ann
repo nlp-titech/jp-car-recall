@@ -1,0 +1,19 @@
+T1	Argument 0 22	前照灯のレンズを固定するための接着剤が不適切
+T2	Connective 23 25	ため
+T3	Argument 26 31	点灯時の熱
+T4	Argument 32 38	車両の振動等
+T5	Connective 38 41	により
+T6	Argument 41 49	当該レンズが脱落
+T7	Connective 50 51	、
+T8	Argument 51 62	点灯時の焦点が定まらず
+T9	Connective 62 63	、
+T10	Argument 63 70	視野範囲が低下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T6	
+R3	REASON Arg1:T5 Arg2:T3	
+R4	REASON Arg1:T5 Arg2:T4	
+R5	RESULT Arg1:T5 Arg2:T6	
+R6	REASON Arg1:T7 Arg2:T6	
+R7	RESULT Arg1:T7 Arg2:T8	
+R8	REASON Arg1:T9 Arg2:T8	
+R9	RESULT Arg1:T9 Arg2:T10	

@@ -1,0 +1,9 @@
+T1	Argument 0 41	塵芥車において、塵芥収集装置を制御する電気制御コントローラの電子素子の配線に不適切
+T2	Connective 48 52	そのため
+T3	Argument 52 66	塵芥収集装置に作動不良が発生
+T4	Connective 67 68	、
+T5	Argument 68 82	作業者の意図しない作動が発生
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

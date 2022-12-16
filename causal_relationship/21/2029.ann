@@ -1,0 +1,27 @@
+T1	Argument 0 23	燃料タンク内の燃料ポンプ電気配線の配索が不適切
+T2	Connective 24 26	ため
+T3	Argument 27 45	マイナス配線がプラス配線の端子と干渉
+T4	Connective 53 57	そのため
+T5	Argument 58 64	エンジン振動
+T6	Connective 64 67	により
+T7	Argument 67 80	マイナス配線の被膜が剥がれ
+T8	Connective 84 85	、
+T9	Argument 85 92	ヒューズが切れ
+T10	Connective 92 93	て
+T11	Argument 93 100	エンジンが停止
+T12	Argument 107 135	制動灯、方向指示器及び速度計照明の不灯並びに警音器が不鳴
+R1	REASON Arg1:T10 Arg2:T9	
+R2	RESULT Arg1:T10 Arg2:T11	
+R3	RESULT Arg1:T10 Arg2:T12	
+R4	REASON Arg1:T2 Arg2:T1	
+R5	RESULT Arg1:T2 Arg2:T3	
+R6	REASON Arg1:T4 Arg2:T3	
+R7	RESULT Arg1:T4 Arg2:T5	
+R8	REASON Arg1:T6 Arg2:T5	
+R9	RESULT Arg1:T6 Arg2:T7	
+R11	RESULT Arg1:T8 Arg2:T9	
+T13	Connective 80 81	て
+T14	Argument 81 83	短絡
+R10	REASON Arg1:T13 Arg2:T7	
+R12	RESULT Arg1:T13 Arg2:T14	
+R13	REASON Arg1:T8 Arg2:T14	

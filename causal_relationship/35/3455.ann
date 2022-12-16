@@ -1,0 +1,5 @@
+T1	Argument 13 47	バッテリリレー回路の電源ヒューズ固定ボルトの１本が取付けられていない
+T2	Connective 48 52	そのため
+T3	Argument 53 74	バッテリリレーが作動せずにエンジン始動不能
+R1	RESULT Arg1:T2 Arg2:T3	
+R2	REASON Arg1:T2 Arg2:T1	

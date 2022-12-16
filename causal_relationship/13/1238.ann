@@ -1,0 +1,29 @@
+T2	Connective 39 41	ため
+T4	Connective 69 70	、
+T5	Argument 70 98	トランスミッションコントロール用配線コネクタ内部に達する
+T6	Connective 104 108	そのため
+T7	Argument 109 123	そのままの状態で使用を続ける
+T8	Connective 123 124	と
+T9	Argument 125 134	コネクタ内部で漏電
+T10	Connective 135 136	て
+T11	Argument 136 140	変速不良
+T12	Connective 144 145	、
+T13	Argument 145 147	最悪
+T14	Connective 148 150	場合
+T15	Argument 151 158	走行不能に至る
+R3	REASON Arg1:T4 Arg2:T16	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T9	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T15	
+R13	CONDITION Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+T1	Argument 0 34	メインハーネス（電気配線）の保護材にビニールテープを隙間なく巻き付け
+R1	REASON Arg1:T2 Arg2:T1	
+T16	Argument 42 69	当該ハーネス端部より侵入した雨水がハーネス内部に溜まり
+R2	RESULT Arg1:T2 Arg2:T16	

@@ -1,0 +1,17 @@
+T1	Argument 0 43	燃料噴射ポンプの回転数コントロールレバー軸の軸受け材質及び当該軸と軸受けの隙間が不適切
+T2	Connective 44 46	ため
+T3	Argument 47 58	アクセル操作を繰り返す
+T4	Connective 58 59	と
+T5	Argument 59 70	当該軸と軸受け部が膠着
+T6	Connective 71 72	、
+T7	Argument 72 97	アクセルペダルを戻してもレバーの戻りが不十分となる
+T8	Connective 103 107	そのため
+T9	Argument 108 123	原動機の回転数が下がらなくなる
+R1	RESULT Arg1:T8 Arg2:T9	
+R2	REASON Arg1:T8 Arg2:T7	
+R3	RESULT Arg1:T6 Arg2:T7	
+R4	REASON Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T5	
+R6	CONDITION Arg1:T4 Arg2:T3	
+R7	RESULT Arg1:T2 Arg2:T5	
+R8	REASON Arg1:T2 Arg2:T1	

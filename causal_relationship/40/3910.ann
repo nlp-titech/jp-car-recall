@@ -1,0 +1,29 @@
+T1	Argument 17 38	燃料ポンプおよび燃料噴射ノズルの強度が不足
+T2	Argument 45 56	燃料通路部に亀裂が発生
+T3	Argument 69 74	燃料が漏れ
+T4	Argument 75 82	燃料圧力が低下
+T5	Argument 85 95	エンジン警告灯が点灯
+T6	Argument 97 106	出力制限走行となり
+T7	Argument 107 109	最悪
+T8	Argument 113 120	エンジンが停止
+T9	Connective 42 44	ため
+T10	Connective 64 68	そのため
+T11	Connective 74 75	、
+T12	Connective 84 85	と
+T13	Connective 96 97	て
+T14	Connective 106 107	、
+T15	Connective 110 112	場合
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T2	
+R3	REASON Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T3	
+R5	RESULT Arg1:T11 Arg2:T4	
+R6	CONDITION Arg1:T12 Arg2:T4	
+R7	RESULT Arg1:T12 Arg2:T5	
+R8	REASON Arg1:T13 Arg2:T5	
+R9	RESULT Arg1:T13 Arg2:T6	
+R10	REASON Arg1:T14 Arg2:T6	
+R11	RESULT Arg1:T14 Arg2:T8	
+R12	CONDITION Arg1:T15 Arg2:T7	
+R13	RESULT Arg1:T15 Arg2:T8	
+R14	REASON Arg1:T11 Arg2:T3	

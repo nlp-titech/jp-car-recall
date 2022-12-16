@@ -1,0 +1,39 @@
+T2	Connective 67 69	ため
+T3	Argument 70 78	洗浄が行われない
+T4	Connective 78 79	と
+T5	Argument 89 99	燃料中に化合物が生成
+T6	Connective 101 102	、
+T7	Argument 102 117	燃料噴射装置内部のバルブが固着
+T8	Connective 125 129	そのため
+T9	Argument 130 147	エンジンの燃料噴射が適正に行われず
+T10	Connective 147 148	、
+T11	Argument 148 157	エンジンの始動不良
+T12	Argument 158 163	白煙の発生
+T13	Argument 164 186	エンジン制御システム異常の警告灯点灯等が発生
+T14	Argument 194 207	排気管に溜まった燃料が発火
+T15	Connective 208 209	て
+T16	Argument 210 215	火災に至る
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T17	Argument 80 87	燃料の温度変化
+T18	Connective 88 89	で
+R5	REASON Arg1:T18 Arg2:T17	
+R6	RESULT Arg1:T18 Arg2:T5	
+R7	REASON Arg1:T6 Arg2:T5	
+R8	RESULT Arg1:T6 Arg2:T7	
+R9	REASON Arg1:T8 Arg2:T7	
+R10	RESULT Arg1:T8 Arg2:T9	
+R11	REASON Arg1:T10 Arg2:T9	
+R12	RESULT Arg1:T10 Arg2:T11	
+R13	RESULT Arg1:T10 Arg2:T12	
+R14	RESULT Arg1:T10 Arg2:T13	
+R15	RESULT Arg1:T10 Arg2:T14	
+T20	Connective 191 193	場合
+R17	RESULT Arg1:T20 Arg2:T14	
+R18	REASON Arg1:T15 Arg2:T14	
+R19	RESULT Arg1:T15 Arg2:T16	
+T19	Argument 188 190	最悪
+R16	CONDITION Arg1:T20 Arg2:T19	
+T1	Argument 19 66	使用者ならびに自動車整備事業者に対して、燃料噴射装置を定期的に洗浄するよう情報提供していなかっ
+R1	REASON Arg1:T2 Arg2:T1	

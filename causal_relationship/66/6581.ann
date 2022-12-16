@@ -1,0 +1,33 @@
+T1	Argument 9 43	電動燃料ポンプの作動電流を制御する抵抗器（レジスター）の選定が不適切
+T2	Connective 44 46	ため
+T3	Argument 47 51	作動電流
+T4	Connective 51 54	により
+T5	Argument 54 65	レジスターが早期に劣化
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 73 77	そのため
+T7	Argument 78 92	そのままの状態で使用を続ける
+T8	Connective 92 93	と
+T9	Argument 94 102	レジスターが損傷
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+T10	Connective 103 104	て
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T11	Argument 104 116	燃料ポンプの電源が断たれ
+T12	Connective 116 117	、
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T13	Argument 117 119	最悪
+T14	Connective 120 122	場合
+T15	Argument 123 134	走行中にエンジンが停止
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T15	
+R13	CONDITION Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+T16	Argument 136 145	再始動できなくなる
+T17	Connective 135 136	、
+R15	REASON Arg1:T17 Arg2:T15	
+R16	RESULT Arg1:T17 Arg2:T16	

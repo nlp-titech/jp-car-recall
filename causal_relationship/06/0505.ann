@@ -1,0 +1,23 @@
+T1	Argument 67 85	フロントベアリングの強度余裕が少ない
+T2	Argument 88 103	走行中フロントベアリングが損傷
+T3	Argument 131 142	カウンタシャフトが折損
+T4	Argument 144 159	４速以外では走行ができなくなる
+T5	Connective 85 87	ため
+T6	Connective 110 111	、
+T7	Connective 143 144	て
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T10	Argument 0 63	手動変速機付車（除く過給機付車）において①変速機のカウンタシャフトを支持するフロントベアリング装着部のケース加工精度のバラツキ
+T9	Argument 125 127	最悪
+T11	Connective 128 130	場合
+R7	CONDITION Arg1:T11 Arg2:T9	
+R9	RESULT Arg1:T11 Arg2:T3	
+T12	Argument 111 121	そのままの状態で使用
+T13	Connective 123 124	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T9	
+R8	REASON Arg1:T5 Arg2:T10	

@@ -1,0 +1,46 @@
+T1	Argument 0 26	制動装置において、リザーバタンクの通気穴が小さすぎる
+T2	Connective 26 28	ため
+T3	Argument 33 60	ブレーキマスターシリンダのリザーバータンク内が負圧状態
+T4	Connective 67 68	、
+T5	Argument 68 82	この状態でブレーキ操作を行う
+T6	Connective 82 83	と
+T7	Argument 84 108	当該シリンダ内のゴム製シールから微量の空気が侵入
+T8	Connective 115 116	、
+T9	Argument 116 130	そのままの状態で使用を続ける
+T10	Connective 130 131	と
+T11	Argument 143 154	操作力が伝わらない感じ
+T12	Argument 161 163	異音
+T13	Connective 165 166	、
+T14	Argument 166 168	最悪
+T15	Connective 169 171	場合
+T16	Argument 172 182	ブレーキ警告灯が点灯
+T17	Connective 183 184	、
+T18	Argument 184 200	ブレーキペダルの踏み込み量が増大
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	CONDITION Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	RESULT Arg1:T4 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	CONDITION Arg1:T10 Arg2:T9	
+R9	RESULT Arg1:T10 Arg2:T11	
+R10	RESULT Arg1:T10 Arg2:T12	
+R11	RESULT Arg1:T8 Arg2:T11	
+R12	RESULT Arg1:T8 Arg2:T12	
+R13	REASON Arg1:T13 Arg2:T12	
+R14	CONDITION Arg1:T15 Arg2:T14	
+R15	RESULT Arg1:T15 Arg2:T16	
+R16	RESULT Arg1:T13 Arg2:T16	
+R17	REASON Arg1:T17 Arg2:T16	
+R18	RESULT Arg1:T17 Arg2:T18	
+T19	Argument 29 31	冷間
+T20	Connective 31 32	時
+R19	CONDITION Arg1:T20 Arg2:T19	
+R20	RESULT Arg1:T20 Arg2:T3	
+T21	Argument 132 141	ブレーキペダル操作
+T22	Connective 141 142	時
+R21	CONDITION Arg1:T22 Arg2:T21	
+R22	RESULT Arg1:T22 Arg2:T11	
+R23	REASON Arg1:T13 Arg2:T11	
+R24	RESULT Arg1:T22 Arg2:T12	

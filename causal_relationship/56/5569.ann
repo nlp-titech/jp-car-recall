@@ -1,0 +1,17 @@
+T1	Argument 0 57	油圧自動ギヤ式変速機の上部にあるブリーザーバルブにおいて、当該バルブ内にある横転時オイル漏れ防止機構の設計が不適切
+T2	Argument 61 76	当該変速機の内部圧力が異常上昇
+T3	Argument 78 98	当該変速機のオイルシールからオイルが漏れ
+T4	Argument 99 101	最悪
+T5	Argument 105 109	走行不能
+T6	Connective 58 60	ため
+T7	Connective 77 78	、
+T8	Connective 98 99	、
+T9	Connective 102 104	場合
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T5	
+R7	CONDITION Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	

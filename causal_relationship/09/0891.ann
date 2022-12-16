@@ -1,0 +1,25 @@
+T1	Argument 1 33	駐車ブレーキソレノイドバルブ用電気配線の保護及び固定方法が不適切
+T2	Connective 34 36	ため
+T3	Argument 37 44	走行中の振動等
+T4	Connective 44 47	により
+T5	Argument 47 70	当該電気配線が、フィルタ取付用ブラケットと干渉
+T6	Connective 71 72	、
+T7	Argument 72 79	電気配線が損傷
+T8	Connective 80 81	、
+T9	Argument 81 83	短絡
+T10	Connective 91 95	そのため
+T11	Argument 95 97	最悪
+T12	Connective 98 100	場合
+T13	Argument 101 114	走行中に駐車ブレーキが作動
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	

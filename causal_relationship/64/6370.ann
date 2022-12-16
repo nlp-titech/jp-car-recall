@@ -1,0 +1,13 @@
+T1	Argument 10 50	インフレーター（膨張装置）において、高温多湿な状態で長期間の温度変化にさらされる
+T2	Connective 50 51	と
+T3	Argument 52 57	火薬が劣化
+T4	Connective 58 59	、
+T5	Argument 59 80	エアバッグ展開時にインフレーター容器が破損
+T6	Connective 81 82	て
+T7	Argument 83 88	乗員が負傷
+R1	CONDITION Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

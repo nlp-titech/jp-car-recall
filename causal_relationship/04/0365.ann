@@ -1,0 +1,13 @@
+T1	Argument 59 78	当該リンク部が正規の位置に戻らなくなる
+T2	Argument 90 119	アクセルペダルから足を離しても原動機の回転が下がらなくなる
+T3	Connective 57 58	て
+T4	Connective 83 84	、
+T6	Argument 0 57	加速装置において、アクセルペダルを全開状態で走行中に、同装置に装着されているEGR装置制御用リンク部に足がぶつかっ
+R3	REASON Arg1:T3 Arg2:T6	
+R4	RESULT Arg1:T3 Arg2:T1	
+R5	REASON Arg1:T4 Arg2:T1	
+R6	RESULT Arg1:T4 Arg2:T2	
+T8	Argument 84 86	最悪
+T9	Connective 87 89	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T2	

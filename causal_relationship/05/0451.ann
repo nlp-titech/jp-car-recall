@@ -1,0 +1,13 @@
+T1	Argument 0 25	速度計において、車速センサーの電気配線の長さが不足
+T2	Argument 37 43	走行時の振動
+T3	Argument 47 56	当該電気配線が断線
+T4	Argument 64 75	速度計が作動しなくなる
+T5	Connective 34 36	ため
+T6	Connective 43 46	により
+T7	Connective 63 64	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T3	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	

@@ -1,0 +1,9 @@
+T1	Argument 25 46	電子スロットルを制御するプログラムが不適切
+T2	Connective 47 49	ため
+T3	Argument 50 63	当該スロットルの不具合発生
+T4	Connective 63 64	時
+T5	Argument 66 79	エンジン警告灯が点灯しない
+R1	RESULT Arg1:T4 Arg2:T5	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T5	
+R4	REASON Arg1:T2 Arg2:T1	

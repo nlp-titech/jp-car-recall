@@ -1,0 +1,41 @@
+T1	Argument 0 29	大型トラック用エンジンにおいて、ピストン燃焼室の強度が不足
+T2	Connective 33 35	ため
+T3	Argument 61 73	ピストンの温度が高くなり
+T4	Connective 73 74	、
+T5	Argument 74 83	過大な負荷がかかる
+T6	Connective 83 86	ことで
+T7	Argument 86 92	亀裂が生じる
+T8	Connective 98 102	そのため
+T9	Argument 119 132	ピストン燃焼室の亀裂が進行
+T10	Connective 133 134	て
+T11	Argument 134 138	穴が開き
+T12	Connective 138 139	、
+T13	Argument 145 160	エンジンの出力低下及び白煙排出
+T14	Connective 160 163	により
+T15	Argument 164 171	走行不能に至る
+R1	REASON Arg1:T14 Arg2:T13	
+R2	RESULT Arg1:T14 Arg2:T15	
+R3	REASON Arg1:T10 Arg2:T9	
+R4	RESULT Arg1:T10 Arg2:T11	
+R5	REASON Arg1:T12 Arg2:T11	
+R6	RESULT Arg1:T12 Arg2:T13	
+T17	Argument 139 141	最悪
+T18	Connective 142 144	場合
+R7	CONDITION Arg1:T18 Arg2:T17	
+R8	RESULT Arg1:T18 Arg2:T13	
+R9	REASON Arg1:T8 Arg2:T7	
+R10	RESULT Arg1:T8 Arg2:T9	
+T19	Argument 103 117	そのままの状態で使用を続ける
+T20	Connective 117 118	と
+R11	CONDITION Arg1:T20 Arg2:T19	
+R12	RESULT Arg1:T20 Arg2:T9	
+R13	REASON Arg1:T6 Arg2:T5	
+R14	RESULT Arg1:T6 Arg2:T7	
+R15	REASON Arg1:T4 Arg2:T3	
+R16	RESULT Arg1:T4 Arg2:T5	
+R17	RESULT Arg1:T2 Arg2:T7	
+R20	REASON Arg1:T2 Arg2:T1	
+T16	Argument 36 60	高負荷走行時やＤＰＤ（粒子状物質除去装置）再生時
+T21	Connective 60 61	に
+R18	CONDITION Arg1:T21 Arg2:T16	
+R19	RESULT Arg1:T21 Arg2:T3	

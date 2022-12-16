@@ -1,0 +1,13 @@
+T1	Argument 0 44	運転者席及び助手席の座席ベルトにおいて、ベルトバックル内の噛み合い金具の加工形状に不適切
+T2	Argument 72 78	ベルトが外れ
+T3	Argument 79 90	乗員を拘束できなくなる
+T4	Connective 50 52	ため
+T5	Connective 78 79	て
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	
+T6	Argument 53 69	衝突等で極端に大きな荷重を受けた
+T7	Connective 69 71	場合
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T2	

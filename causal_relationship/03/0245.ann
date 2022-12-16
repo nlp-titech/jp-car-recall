@@ -1,0 +1,21 @@
+T1	Argument 0 18	電気配線の車体への取付け方法が不適切
+T2	Argument 22 44	当該電気配線がヒューズボックス取付金具と干渉
+T3	Argument 68 78	電気配線の被覆が損傷
+T4	Argument 80 82	短絡
+T5	Argument 84 97	原動機の始動ができなくなる
+T6	Connective 19 21	ため
+T7	Connective 51 52	、
+T8	Connective 79 80	て
+T9	Connective 83 84	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 52 66	そのままの状態で使用を続ける
+T11	Connective 66 67	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	

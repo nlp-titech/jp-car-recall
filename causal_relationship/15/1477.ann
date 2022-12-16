@@ -1,0 +1,29 @@
+T1	Argument 0 39	変速機において、被駆動側４速歯車に設けられたドッグクラッチのドッグの強度が不足
+T2	Connective 43 45	ため
+T3	Argument 46 53	変速時等の衝撃
+T4	Connective 53 56	により
+T5	Argument 56 64	当該ドッグが破損
+T6	Connective 72 76	そのため
+T7	Argument 77 87	そのまま使用を続ける
+T8	Connective 87 88	と
+T9	Argument 89 99	破片が歯車に噛み込み
+T10	Connective 99 100	、
+T11	Argument 100 102	最悪
+T12	Connective 103 105	場合
+T13	Argument 106 113	変速機がロック
+T14	Connective 114 115	て
+T15	Argument 115 123	走行できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T9	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	

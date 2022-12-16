@@ -1,0 +1,5 @@
+T1	Argument 0 36	フォークリフトにおいて、オプション設定した排気管の開口部が、右向きとなっ
+T2	Connective 40 44	そのため
+T3	Argument 45 62	排気ガスが他の交通に悪影響を及ぼす
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

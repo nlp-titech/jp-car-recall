@@ -1,0 +1,17 @@
+T1	Argument 0 45	原動機ＥＣＵ用ヒューズにおいて、当該ヒューズとブレーキ倍力装置の負圧ポンプ用ヒューズを共用
+T2	Argument 50 65	当該ポンプが作動し過電流が生じ
+T3	Argument 70 79	当該ヒューズが切れ
+T4	Argument 91 109	原動機ＥＣＵに電源が供給されなくなり
+T5	Argument 110 122	原動機が始動できなくなる
+T6	Connective 47 49	ため
+T7	Connective 66 68	場合
+T8	Connective 86 90	そのため
+T9	Connective 109 110	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T3	
+R3	CONDITION Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	

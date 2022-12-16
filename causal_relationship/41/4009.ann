@@ -1,0 +1,33 @@
+T2	Argument 33 47	ルーフレールを車体に組付ける
+T3	Argument 50 67	フロントカバーの固定爪の一部が損傷
+T4	Argument 80 94	そのままの状態で使用を続ける
+T5	Argument 96 105	固定爪の損傷が拡大
+T6	Argument 107 112	ガタが発生
+T7	Argument 114 116	最悪
+T9	Argument 120 134	走行中にフロントカバーが脱落
+T10	Argument 136 143	他の交通の妨げ
+T11	Connective 30 32	ため
+T12	Connective 47 48	際
+T13	Connective 75 79	そのため
+T14	Connective 94 95	と
+T15	Connective 106 107	て
+T16	Connective 113 114	、
+T17	Connective 117 119	場合
+R2	RESULT Arg1:T11 Arg2:T3	
+R3	CONDITION Arg1:T12 Arg2:T2	
+R4	RESULT Arg1:T12 Arg2:T3	
+R5	REASON Arg1:T13 Arg2:T3	
+R6	RESULT Arg1:T13 Arg2:T5	
+R7	CONDITION Arg1:T14 Arg2:T4	
+R8	RESULT Arg1:T14 Arg2:T5	
+R9	REASON Arg1:T15 Arg2:T5	
+R10	RESULT Arg1:T15 Arg2:T6	
+R11	REASON Arg1:T16 Arg2:T6	
+R12	RESULT Arg1:T16 Arg2:T9	
+R13	CONDITION Arg1:T17 Arg2:T7	
+R14	RESULT Arg1:T17 Arg2:T9	
+T19	Connective 135 136	、
+R17	REASON Arg1:T19 Arg2:T9	
+R18	RESULT Arg1:T19 Arg2:T10	
+T1	Argument 11 29	フロントカバー取付け部の設定が不適切
+R1	REASON Arg1:T11 Arg2:T1	

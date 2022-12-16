@@ -1,0 +1,21 @@
+T1	Argument 32 64	フューエルポンプ内の燃料を供給するフィンの回転数が高くなり過ぎる
+T2	Argument 0 26	気圧が低い標高の高い所で、原動機の回転が高くなる走行
+T4	Connective 29 31	場合
+R2	CONDITION Arg1:T4 Arg2:T2	
+R3	RESULT Arg1:T4 Arg2:T1	
+T5	Connective 64 66	ため
+T6	Argument 67 82	当該ポンプ内で燃料が過剰に攪拌
+T7	Connective 84 85	、
+T8	Argument 85 94	燃料内に気泡が発生
+T9	Connective 102 106	そのため
+R4	REASON Arg1:T5 Arg2:T1	
+R5	RESULT Arg1:T5 Arg2:T6	
+R6	REASON Arg1:T7 Arg2:T6	
+R7	RESULT Arg1:T7 Arg2:T8	
+R8	REASON Arg1:T9 Arg2:T8	
+T10	Argument 107 122	燃料供給が適切に行われなくなり
+T11	Connective 122 123	、
+T12	Argument 123 129	原動機が停止
+R9	RESULT Arg1:T9 Arg2:T10	
+R10	REASON Arg1:T11 Arg2:T10	
+R11	RESULT Arg1:T11 Arg2:T12	

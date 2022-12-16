@@ -1,0 +1,20 @@
+T1	Argument 11 37	クラッチレリーズシリンダー内部のシールの材質が不適切
+T2	Connective 43 45	ため
+T3	Argument 46 63	当該シール部からクラッチ液が漏れる
+T4	Connective 68 69	、
+T5	Argument 69 91	漏れたクラッチ液によりクラッチ操作が妨げられ
+T6	Connective 91 92	、
+T9	Argument 108 115	走行不能となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+T10	Argument 92 94	最悪
+T11	Connective 95 97	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+T7	Argument 98 107	クラッチ操作が行え
+T8	Connective 107 108	ず
+R6	RESULT Arg1:T8 Arg2:T9	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T11 Arg2:T7	

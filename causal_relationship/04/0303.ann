@@ -1,0 +1,17 @@
+T2	Argument 86 98	駐車ブレーキの制動力低下
+T6	Connective 52 54	ため
+R2	RESULT Arg1:T6 Arg2:T5	
+T5	Argument 77 84	当該部品が折損
+T7	Connective 85 86	、
+R3	REASON Arg1:T7 Arg2:T5	
+R4	RESULT Arg1:T7 Arg2:T2	
+T1	Argument 0 46	駐車ブレーキ機構において、ホイールシリンダーピストンを作動する部品（ウエッジ金具）に鋳造不良
+R1	REASON Arg1:T6 Arg2:T1	
+T3	Argument 55 69	そのままの状態で使用を続ける
+T4	Connective 69 70	と
+R6	RESULT Arg1:T4 Arg2:T5	
+T8	Argument 71 73	最悪
+T9	Connective 74 76	場合
+R8	RESULT Arg1:T9 Arg2:T5	
+R7	CONDITION Arg1:T9 Arg2:T8	
+R5	CONDITION Arg1:T4 Arg2:T3	

@@ -1,0 +1,29 @@
+T1	Argument 2 17	原動機が加熱（オーバーヒート）
+T2	Connective 18 19	、
+T3	Argument 19 33	そのままの状態で使用を続ける
+T4	Connective 33 34	と
+T7	Argument 58 60	膨張
+T8	Connective 61 62	、
+T9	Argument 62 117	当該サブタンクと泥除けとの間に配管されている余剰冷却水を排出するパイプ（オーバーフローパイプ）が押し潰され閉塞
+T10	Connective 118 119	、
+T11	Argument 119 121	最悪
+T12	Connective 122 124	場合
+T13	Argument 125 141	サブタンクの蓋（キャップ）が外れ
+T14	Connective 141 142	て
+T15	Argument 142 148	冷却水が噴出
+R1	REASON Arg1:T2 Arg2:T1	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R2	RESULT Arg1:T2 Arg2:T7	
+T5	Argument 35 55	冷却水補助タンク（サブタンク）が蒸気圧力
+T6	Connective 55 58	により
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

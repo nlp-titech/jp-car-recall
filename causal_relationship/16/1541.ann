@@ -1,0 +1,13 @@
+T1	Argument 0 27	ＡＢＳ装置の故障時警報灯用の電気回路の設計指示が不適切
+T2	Argument 31 36	誤った結線
+T4	Argument 64 73	警報灯が点灯しない
+T6	Connective 43 47	そのため
+T7	Connective 28 30	ため
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T4	
+T3	Argument 48 60	ＡＢＳの電源供給が断たれ
+T5	Connective 61 63	場合
+R5	CONDITION Arg1:T5 Arg2:T3	
+R6	RESULT Arg1:T5 Arg2:T4	

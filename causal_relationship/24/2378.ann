@@ -1,0 +1,21 @@
+T1	Argument 0 34	原動機の動弁機構部において、バルブスプリングの材料中に微小異物がある
+T2	Connective 34 35	と
+T3	Argument 35 46	スプリングの強度が低下
+T4	Argument 48 50	折損
+T5	Connective 47 48	て
+T6	Connective 58 62	そのため
+T7	Argument 63 76	異音が発生してエンジン不調
+T10	Connective 79 80	、
+T11	Argument 86 97	走行中にエンジンが停止
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T4	
+R5	REASON Arg1:T6 Arg2:T4	
+R6	RESULT Arg1:T6 Arg2:T7	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 80 82	最悪
+T13	Connective 83 85	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T11	
+R7	REASON Arg1:T10 Arg2:T7	

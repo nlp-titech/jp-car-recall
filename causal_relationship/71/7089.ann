@@ -1,0 +1,21 @@
+T1	Argument 30 52	油圧ポンプモータの回転制御プログラムが不適切
+T2	Connective 53 55	ため
+T5	Argument 56 88	荷役レバーを微操作し、油圧ポンプモータが特定の回転数の範囲にあり
+T6	Connective 88 89	、
+T7	Argument 92 123	油圧が最大の状態から、すばやく荷役レバーを中立位置へ戻した直後
+T8	Connective 123 124	に
+R1	REASON Arg1:T2 Arg2:T1	
+R4	CONDITION Arg1:T8 Arg2:T7	
+T9	Argument 125 148	一時的に操舵のパワーアシストに必要な油圧が不足
+R5	RESULT Arg1:T8 Arg2:T9	
+R8	RESULT Arg1:T2 Arg2:T9	
+T10	Connective 156 160	そのため
+T11	Argument 161 176	この間にステアリング操作を行う
+T12	Connective 176 177	と
+T13	Argument 178 190	一時的に操舵力が重くなる
+R9	REASON Arg1:T10 Arg2:T9	
+R10	CONDITION Arg1:T12 Arg2:T11	
+R11	RESULT Arg1:T12 Arg2:T13	
+R12	RESULT Arg1:T10 Arg2:T13	
+R2	CONDITION Arg1:T6 Arg2:T5	
+R3	RESULT Arg1:T6 Arg2:T9	

@@ -1,0 +1,43 @@
+T1	Argument 0 29	ロード・ローラの電気回路において、電源リレーの選定が不適切
+T2	Argument 33 50	リレーとリレーホルダの嵌合力が不足
+T3	Argument 60 67	走行時等の振動
+T4	Argument 70 88	リレーとリレーホルダの嵌合が甘くなり
+T5	Argument 89 101	一時的に電源供給がたたれ
+T6	Argument 102 112	フェールセーフが働き
+T7	Argument 113 124	エンジン出力が制限され
+T8	Argument 125 127	最悪
+T9	Argument 131 142	リレーがホルダから外れ
+T10	Argument 143 151	電源が供給されず
+T11	Argument 152 159	エンジンが停止
+T13	Connective 30 32	ため
+T14	Connective 55 59	そのため
+T15	Connective 67 70	により
+T16	Connective 88 89	、
+T17	Connective 101 102	て
+T18	Connective 112 113	、
+T20	Connective 128 130	場合
+T21	Connective 142 143	て
+T22	Connective 151 152	、
+R1	REASON Arg1:T13 Arg2:T1	
+R2	RESULT Arg1:T13 Arg2:T2	
+R3	REASON Arg1:T14 Arg2:T2	
+R5	REASON Arg1:T15 Arg2:T3	
+R6	RESULT Arg1:T15 Arg2:T4	
+R7	REASON Arg1:T16 Arg2:T4	
+R8	RESULT Arg1:T16 Arg2:T5	
+R9	REASON Arg1:T17 Arg2:T5	
+R10	RESULT Arg1:T17 Arg2:T6	
+R11	REASON Arg1:T18 Arg2:T6	
+R12	RESULT Arg1:T18 Arg2:T7	
+R15	CONDITION Arg1:T20 Arg2:T8	
+R16	RESULT Arg1:T20 Arg2:T9	
+R17	REASON Arg1:T21 Arg2:T9	
+R18	RESULT Arg1:T21 Arg2:T10	
+R19	REASON Arg1:T22 Arg2:T10	
+R20	RESULT Arg1:T22 Arg2:T11	
+R4	RESULT Arg1:T14 Arg2:T4	
+T12	Connective 160 161	て
+T23	Argument 161 170	再始動出来なくなる
+R21	REASON Arg1:T12 Arg2:T11	
+R22	RESULT Arg1:T12 Arg2:T23	
+R13	RESULT Arg1:T16 Arg2:T9	

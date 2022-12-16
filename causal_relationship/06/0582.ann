@@ -1,0 +1,5 @@
+T1	Argument 1 56	制動液漏れ警報装置において、ブレーキ液をリザーバタンクへ注入する際に液面低下検出用フロートがガイドに引っ掛かっ
+T2	Argument 63 85	ブレーキ液が少なくなっても警告灯が点灯しない
+T3	Connective 62 63	、
+R1	REASON Arg1:T3 Arg2:T1	
+R2	RESULT Arg1:T3 Arg2:T2	

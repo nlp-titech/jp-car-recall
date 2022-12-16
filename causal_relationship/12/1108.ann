@@ -1,0 +1,25 @@
+T1	Argument 0 52	フライホイールＰＴＯ付車において、フライホイールハウジングのクラッチレリーズシリンダ取付面の成形が不適切
+T2	Connective 53 55	ため
+T3	Argument 56 87	クラッチレリーズシリンダを取り付ける際に当該ハウジング部に干渉
+T4	Argument 89 122	クラッチレリーズシリンダの取付ステーが密着しない状態で締め付けられ
+T5	Connective 129 133	そのため
+T6	Argument 134 152	当該シリンダの取付ステーに亀裂が生じ
+T7	Argument 153 155	最悪
+T8	Connective 156 158	場合
+T9	Argument 159 168	当該シリンダが脱落
+T10	Connective 169 170	て
+T11	Argument 170 181	クラッチが切れなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T12	Connective 88 89	、
+R3	REASON Arg1:T12 Arg2:T3	
+R4	RESULT Arg1:T12 Arg2:T4	
+R5	REASON Arg1:T5 Arg2:T4	
+R6	RESULT Arg1:T5 Arg2:T6	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T15	Connective 152 153	、
+R13	REASON Arg1:T15 Arg2:T6	
+R14	RESULT Arg1:T15 Arg2:T9	

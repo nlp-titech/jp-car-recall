@@ -1,0 +1,21 @@
+T1	Argument 0 34	原動機において、走行中に左側カムシャフトで駆動しているチェーンが共振
+T2	Argument 36 51	異常な負荷がカムシャフトに作用
+T3	Argument 72 83	当該カムシャフトが破損
+T4	Argument 85 102	原動機が停止し、再始動出来なくなる
+T5	Connective 84 85	て
+T6	Connective 52 53	、
+T7	Connective 35 36	て
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T5 Arg2:T3	
+R6	RESULT Arg1:T5 Arg2:T4	
+T8	Argument 53 64	この状態で使用を続ける
+T9	Connective 64 65	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 66 68	最悪
+T11	Connective 69 71	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	

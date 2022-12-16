@@ -1,0 +1,14 @@
+T1	Argument 0 31	パノラミックガラスルーフ装着車のルーフ板において、接着が不充分
+T2	Argument 43 53	そのまま使用を続ける
+T3	Argument 55 62	ルーフ板が脱落
+T4	Argument 64 72	他の交通を妨げる
+T5	Connective 38 42	そのため
+T6	Connective 53 54	と
+T7	Connective 63 64	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T3	
+R3	CONDITION Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+R7	RESULT Arg1:T5 Arg2:T4	

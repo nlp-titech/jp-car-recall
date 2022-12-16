@@ -1,0 +1,25 @@
+T2	Argument 81 94	洗浄液がハブグリ－スに混入
+T3	Argument 101 108	グリ－スが劣化
+T4	Argument 116 134	ハブベアリング（回転軸受）が焼き付き
+T5	Argument 135 143	走行できなくなる
+T6	Connective 64 65	、
+T7	Connective 98 101	により
+T8	Connective 134 135	、
+T9	Connective 109 110	、
+R1	REASON Arg1:T6 Arg2:T10	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T8 Arg2:T4	
+R8	RESULT Arg1:T8 Arg2:T5	
+T13	Argument 65 79	このままの状態で使用を続ける
+T14	Connective 79 80	と
+R9	CONDITION Arg1:T14 Arg2:T13	
+R10	RESULT Arg1:T14 Arg2:T2	
+T15	Argument 110 112	最悪
+T16	Connective 113 115	場合
+R11	CONDITION Arg1:T16 Arg2:T15	
+R12	RESULT Arg1:T16 Arg2:T4	
+T10	Argument 0 58	トレ－ラの車軸（中空形状）の機械加工後の洗浄工程において、車軸内部に誤って洗浄液を侵入させたままで当該車軸を組み付け

@@ -1,0 +1,29 @@
+T1	Argument 0 72	助手席用エアバッグにおいて、インフレータ（膨張装置）内のディフューザー（放散装置）とガスジェネレータボディー（ガス発生器）の接合部の溶接が不適切
+T2	Argument 93 102	当該接合部が剥がれ
+T3	Argument 114 128	膨張ガスをバッグに供給できず
+T4	Argument 129 141	当該エアバッグが展開せず
+T5	Argument 148 160	乗員に過度の傷害を与える
+T6	Connective 78 80	ため
+T7	Connective 113 114	、
+T8	Connective 128 129	に
+T9	Connective 141 142	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T17	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+T16	Connective 102 103	て
+T17	Argument 103 113	ディフューザーが外れ
+R9	RESULT Arg1:T16 Arg2:T17	
+R10	REASON Arg1:T16 Arg2:T2	
+T10	Argument 81 89	エアバッグが作動
+T11	Connective 91 92	際
+R11	CONDITION Arg1:T11 Arg2:T10	
+R12	RESULT Arg1:T11 Arg2:T2	
+T12	Argument 142 146	前面衝突
+T13	Connective 146 147	時
+R13	CONDITION Arg1:T13 Arg2:T12	
+R14	RESULT Arg1:T13 Arg2:T5	

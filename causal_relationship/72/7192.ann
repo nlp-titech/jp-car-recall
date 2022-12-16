@@ -1,0 +1,13 @@
+T1	Argument 0 22	左後部ドアにおいて、ドアラッチの加工が不適切
+T2	Connective 23 25	ため
+T3	Argument 26 101	当該ドアラッチのチャイルドプルーフロック機構（子供が誤って後部座席ドアを、車内の後部ドアハンドルで開けることを防止する装置）のレバーが円滑に作動しない
+T4	Connective 107 111	そのため
+T5	Argument 112 149	左後部座席のチャイルドプルーフロックを施錠しても、車内のドアハンドルを操作
+T6	Connective 151 152	と
+T7	Argument 152 157	ドアが開く
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	CONDITION Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	RESULT Arg1:T4 Arg2:T7	

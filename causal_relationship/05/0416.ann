@@ -1,0 +1,25 @@
+T1	Argument 0 73	動力伝達装置において､原動機のフライホイールとトルクコンバータのインプットプレートを連結しているボルトの抜け止め用として取り付けた針金の強度が不足
+T2	Argument 80 86	原動機の振動
+T3	Argument 90 95	擦り切れる
+T4	Argument 101 136	切れた針金の端部がフライホイールハウジング内壁と接触することにより赤熱
+T6	Argument 139 166	切れた針金の一部がフライホイールハウジングから飛び出し
+T7	Argument 167 178	原動機室の吸音材に着火
+T8	Argument 180 185	火災に至る
+T9	Connective 77 79	ため
+T10	Connective 86 90	によって
+T11	Connective 100 101	､
+T13	Connective 138 139	､
+T14	Connective 166 167	､
+T15	Connective 179 180	､
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T3	
+R3	REASON Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T3	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+R10	RESULT Arg1:T13 Arg2:T6	
+R11	REASON Arg1:T14 Arg2:T6	
+R12	RESULT Arg1:T14 Arg2:T7	
+R13	REASON Arg1:T15 Arg2:T7	
+R14	RESULT Arg1:T15 Arg2:T8	
+R7	REASON Arg1:T13 Arg2:T4	

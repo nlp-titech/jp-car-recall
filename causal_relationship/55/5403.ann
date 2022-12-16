@@ -1,0 +1,26 @@
+T1	Argument 0 29	後部側面窓の固定ガラスと車体の間の取り付け部の高さが不均一
+T2	Connective 30 32	ため
+T3	Argument 33 56	ガラスが車体に密着し確実に取り付けられていない
+T4	Connective 62 66	そのため
+T5	Argument 78 92	過大な力でナットを締め付ける
+T6	Connective 92 93	と
+T7	Argument 94 106	取り付けボルトが抜け出し
+T8	Connective 106 107	、
+T9	Argument 113 123	車体からガラスが脱落
+T10	Connective 124 125	、
+T11	Argument 125 134	交通の安全を妨げる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 107 109	最悪
+T13	Connective 110 112	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T9	
+#1	AnnotatorNotes T3	図解から「密着するように確実に取り付けられていない」と思われる

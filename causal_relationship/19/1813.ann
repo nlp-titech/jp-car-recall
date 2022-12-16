@@ -1,0 +1,13 @@
+T1	Argument 0 21	燃料ホースの燃料パイプとの組み付けが不適切
+T2	Connective 27 29	ため
+T3	Argument 36 48	走行中に燃料ホースが外れ
+T4	Connective 48 49	、
+T5	Argument 49 55	燃料が漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 30 32	最悪
+T7	Connective 33 35	場合
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	

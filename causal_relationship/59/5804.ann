@@ -1,0 +1,17 @@
+T1	Argument 18 66	リヤ・ドライブシャフトのホイール側ジョイント部のインナ・レースにおいて、製造時の温度管理が不適切
+T2	Connective 70 72	ため
+T3	Argument 73 78	強度が不足
+T4	Connective 88 92	そのため
+T5	Argument 93 102	急激な発進等を行っ
+T6	Connective 103 105	場合
+T7	Argument 107 119	当該インナ・レースが破損
+T8	Connective 120 121	、
+T9	Argument 121 136	ホイールへの動力伝達が行えない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	

@@ -1,0 +1,28 @@
+T1	Argument 0 54	フロアパネルの構成部品であるプロペラシャフト固定用ブラケットのプレス製造工程において、プレス圧力を誤って設定
+T2	Connective 56 58	ため
+T3	Argument 59 75	亀裂または部分的な板厚減少が発生
+T4	Connective 85 89	そのため
+T5	Argument 90 100	そのまま使用を続ける
+T6	Connective 129 132	により
+T7	Argument 133 143	当該ブラケットが破損
+T8	Connective 144 145	、
+T9	Argument 145 152	走行不能となる
+T11	Argument 162 178	前輪駆動車においては、錆等が発生
+T12	Connective 179 180	、
+T13	Argument 180 197	当該ブラケットの強度に影響を及ぼす
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+T10	Connective 100 101	と
+T14	Argument 104 128	四輪駆動車においては、プロペラシャフトの回転振動
+R5	CONDITION Arg1:T10 Arg2:T5	
+R10	RESULT Arg1:T10 Arg2:T7	
+R13	REASON Arg1:T6 Arg2:T14	
+R9	RESULT Arg1:T10 Arg2:T11	
+R14	RESULT Arg1:T4 Arg2:T13	

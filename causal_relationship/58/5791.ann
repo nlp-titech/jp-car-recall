@@ -1,0 +1,32 @@
+T1	Argument 0 24	燃料供給装置のインジェクションプログラムが不適切
+T2	Connective 25 27	ため
+T3	Argument 28 31	減速時
+T4	Connective 31 32	に
+T5	Argument 33 47	急激にエンジン回転数が下がる
+T6	Argument 51 55	エンスト
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	RESULT Arg1:T2 Arg2:T6	
+R4	CONDITION Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T4 Arg2:T5	
+T7	Connective 62 63	、
+T8	Argument 63 79	それに伴う急激なエンジンブレーキ
+R8	REASON Arg1:T7 Arg2:T6	
+T11	Connective 95 98	により
+T12	Argument 105 112	バランスを失い
+R10	REASON Arg1:T11 Arg2:T8	
+R12	RESULT Arg1:T11 Arg2:T12	
+T13	Argument 99 101	最悪
+T14	Connective 102 104	場合
+R13	CONDITION Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T12	
+R16	REASON Arg1:T7 Arg2:T5	
+R17	RESULT Arg1:T4 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T8	
+T10	Argument 112 114	転倒
+T15	Connective 111 112	い
+R9	REASON Arg1:T15 Arg2:T12	
+R15	RESULT Arg1:T15 Arg2:T10	
+T9	Argument 80 91	予期せぬエンストが発生
+R7	RESULT Arg1:T7 Arg2:T9	
+R11	REASON Arg1:T11 Arg2:T9	

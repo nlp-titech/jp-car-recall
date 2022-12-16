@@ -1,0 +1,33 @@
+T1	Argument 0 17	アクセルケーブルの取り回しが不適切
+T2	Connective 18 20	ため
+T3	Argument 21 50	当該ケーブルを車体に固定するケーシングキャップに応力が集中
+T4	Connective 50 51	し
+T5	Argument 51 53	破損
+T6	Connective 61 65	そのため
+T7	Argument 66 76	そのまま使用を続ける
+T8	Connective 76 77	と
+T9	Argument 78 101	破損したキャップの端部とインナーケーブルが干渉
+T10	Connective 102 103	、
+T11	Argument 103 105	摩耗
+T12	Connective 109 111	から
+T13	Argument 112 114	最悪
+T14	Connective 115 117	場合
+T15	Argument 118 129	インナーケーブルが切損
+T16	Connective 130 131	、
+T17	Argument 131 142	アクセル操作不能になる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	RESULT Arg1:T6 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T15	
+R13	CONDITION Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R15	REASON Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T17	

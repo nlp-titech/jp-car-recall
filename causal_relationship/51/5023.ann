@@ -1,0 +1,22 @@
+T1	Argument 0 16	制動灯用リレー接点の材質が不適切
+T2	Connective 22 24	ため
+T3	Argument 25 34	制動操作の繰り返し
+T4	Connective 34 37	により
+T5	Argument 37 44	当該接点が摩耗
+T6	Connective 45 46	、
+T7	Argument 46 48	溶着
+R1	RESULT Arg1:T2 Arg2:T5	
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	REASON Arg1:T2 Arg2:T1	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Connective 64 68	そのため
+T9	Argument 69 82	制動灯が点灯したままになる
+T10	Argument 87 98	制動灯が点灯しなくなる
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	RESULT Arg1:T8 Arg2:T10	
+T11	Argument 51 55	接触不良
+R10	REASON Arg1:T8 Arg2:T11	
+R11	RESULT Arg1:T6 Arg2:T11	

@@ -1,0 +1,33 @@
+T1	Argument 7 27	消音器において、熱疲労に対する強度が不足
+T2	Argument 34 45	原動機の排気熱及び振動
+T3	Argument 48 58	消音器に亀裂が生じる
+T4	Argument 69 82	亀裂部位から排出ガスが漏れ
+T5	Argument 83 97	そのままの状態で使用を続ける
+T6	Argument 99 104	亀裂が進展
+T7	Argument 106 112	消音器が破損
+T8	Argument 114 116	最悪
+T9	Argument 120 130	消音器の周辺部が溶損
+T10	Connective 31 33	ため
+T11	Connective 45 48	により
+T12	Connective 64 68	そのため
+T13	Connective 82 83	、
+T14	Connective 97 98	と
+T15	Connective 105 106	て
+T16	Connective 113 114	、
+T17	Connective 117 119	場合
+R1	REASON Arg1:T10 Arg2:T1	
+R2	RESULT Arg1:T10 Arg2:T3	
+R3	REASON Arg1:T11 Arg2:T2	
+R4	RESULT Arg1:T11 Arg2:T3	
+R5	REASON Arg1:T12 Arg2:T3	
+R6	RESULT Arg1:T12 Arg2:T4	
+R7	REASON Arg1:T13 Arg2:T4	
+R8	RESULT Arg1:T13 Arg2:T6	
+R9	CONDITION Arg1:T14 Arg2:T5	
+R10	RESULT Arg1:T14 Arg2:T6	
+R11	REASON Arg1:T15 Arg2:T6	
+R12	RESULT Arg1:T15 Arg2:T7	
+R13	REASON Arg1:T16 Arg2:T7	
+R14	RESULT Arg1:T16 Arg2:T9	
+R15	CONDITION Arg1:T17 Arg2:T8	
+R16	RESULT Arg1:T17 Arg2:T9	

@@ -1,0 +1,23 @@
+T1	Argument 0 26	横滑り防止装置のコントローラの制御プログラムが不適切
+T2	Connective 27 29	ため
+T4	Connective 60 61	で
+T5	Argument 62 97	コントローラに内蔵されているヨーレートセンサの出力信号を異常値と誤判断
+T6	Connective 105 109	そのため
+T7	Argument 110 135	横滑り防止装置作動中にも関わらずブレーキ制御を停止
+T8	Connective 136 137	て
+T9	Argument 138 149	走行安定性が損なわれる
+T10	Argument 159 176	衝突被害軽減ブレーキが作動中に停止
+R1	RESULT Arg1:T8 Arg2:T9	
+R2	RESULT Arg1:T8 Arg2:T10	
+R3	REASON Arg1:T8 Arg2:T7	
+R4	RESULT Arg1:T6 Arg2:T7	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T4 Arg2:T5	
+R9	REASON Arg1:T2 Arg2:T1	
+T3	Argument 30 39	横滑り防止装置作動
+T11	Connective 39 40	中
+T12	Argument 41 60	ブレーキ制御に使用する駆動モータの影響
+R7	CONDITION Arg1:T11 Arg2:T3	
+R10	RESULT Arg1:T2 Arg2:T5	
+R8	RESULT Arg1:T11 Arg2:T5	
+R11	REASON Arg1:T4 Arg2:T12	

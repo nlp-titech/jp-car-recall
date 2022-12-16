@@ -1,0 +1,9 @@
+T1	Argument 0 40	ショベル・ローダの方向指示器において、方向指示器の点滅速度を制御する部品が不適切
+T2	Argument 44 70	点滅回数が保安基準第４１条で定める点滅回数より少ない
+T3	Argument 81 91	当該基準に適合しない
+T4	Connective 41 43	ため
+T5	Connective 76 80	そのため
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	

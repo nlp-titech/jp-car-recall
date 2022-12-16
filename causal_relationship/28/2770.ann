@@ -1,0 +1,13 @@
+T1	Argument 0 46	ウイングトラックの荷台あおりを固定するための回転式中柱において、荷台内側から強い横荷重を受け
+T2	Connective 47 49	場合
+T3	Argument 50 69	当該中柱固定用ロック装置の頑健性が不足
+T4	Connective 73 75	ため
+T5	Argument 76 90	当該ロック装置のラッチが外れ
+T6	Connective 90 91	、
+T7	Argument 91 114	車両の全幅が道路運送車両の保安基準を満足しない
+R1	CONDITION Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

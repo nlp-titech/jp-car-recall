@@ -1,0 +1,18 @@
+T1	Argument 4 35	始動装置の点火スイッチにおいて、アクセサリー回路の構造が不適切
+T2	Connective 36 38	ため
+T3	Argument 55 75	当該スイッチ内部のプラスチック部分が溶損
+T4	Connective 76 77	て
+T5	Argument 78 90	接点に電流が流れなくなり
+T6	Connective 90 91	、
+T7	Argument 91 117	原動機の始動及び各種灯火を点灯することができなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T12	Argument 39 53	そのままの状態で使用を続ける
+T13	Connective 53 54	と
+R7	CONDITION Arg1:T13 Arg2:T12	
+R8	RESULT Arg1:T13 Arg2:T3	
+#1	AnnotatorNotes T7	否定があるので分割不可

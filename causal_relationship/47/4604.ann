@@ -1,0 +1,21 @@
+T1	Argument 17 37	排気ガス再循環装置の作動弁の材質が不適切
+T2	Connective 43 44	、
+T3	Argument 60 68	当該作動弁が腐食
+T4	Connective 69 70	て
+T5	Argument 70 77	作動不良となり
+T6	Connective 77 78	、
+T7	Argument 84 95	有害な排出ガス量が増加
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 44 58	そのままの状態で使用を続ける
+T9	Connective 58 59	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 78 80	最悪
+T11	Connective 81 83	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T7	

@@ -1,0 +1,17 @@
+T1	Argument 12 28	エアバッグ装置の電気配線が不適切
+T2	Connective 29 31	ため
+T3	Argument 54 61	当該配線が短絡
+T4	Connective 65 68	により
+T5	Argument 69 77	エアバッグが作動
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 32 46	そのままの状態で使用を続ける
+T7	Connective 46 47	と
+T8	Argument 48 50	最悪
+T9	Connective 51 53	場合
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	

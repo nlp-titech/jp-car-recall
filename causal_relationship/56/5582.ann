@@ -1,0 +1,13 @@
+T1	Argument 0 24	メイン制御モジュールにおいて、プログラムが不適切
+T2	Argument 28 46	盗難発生警報装置のサイレン基盤が損傷
+T3	Argument 51 63	発生することがある誤信号
+T4	Argument 67 77	窓ふき器が作動しない
+T5	Connective 25 27	ため
+T7	Connective 63 66	により
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T4	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T6	Connective 48 50	場合
+R3	CONDITION Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	

@@ -1,0 +1,13 @@
+T1	Argument 0 25	大型観光バスの①エアコン用抵抗器の取付位置が不適切
+T2	Connective 26 28	ため
+T3	Argument 29 40	当該抵抗器カバーと接触
+T4	Connective 50 54	そのため
+T5	Argument 55 61	カバーと短絡
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T9	Connective 61 62	し
+T10	Argument 62 64	発火
+R5	REASON Arg1:T9 Arg2:T5	
+R6	RESULT Arg1:T9 Arg2:T10	

@@ -1,0 +1,25 @@
+T1	Argument 0 29	速度計において、後輪のホイールカバーホルダーの形状が不適切
+T2	Connective 30 32	ため
+T3	Argument 33 50	当該ホルダーと車速センサーとが干渉
+T4	Connective 51 52	、
+T5	Argument 52 66	センサーが押されて徐々に変形
+T6	Connective 73 74	、
+T7	Argument 80 87	センサーが破損
+T8	Connective 88 89	て
+T9	Argument 89 99	速度信号が発信されず
+T10	Connective 99 100	、
+T11	Argument 100 111	速度計が作動しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 74 76	最悪
+T13	Connective 77 79	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T7	

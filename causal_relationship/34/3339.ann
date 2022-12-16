@@ -1,0 +1,5 @@
+T1	Argument 0 46	音声合成式扉開閉予告装置を装着した大・中型路線バスにおいて、当該装置の制御プログラムが不適切
+T2	Connective 47 49	ため
+T5	Argument 54 92	運転者が中扉スイッチを「開」にした際、扉が開くことを知らせる警報が作動しない
+R3	RESULT Arg1:T2 Arg2:T5	
+R4	REASON Arg1:T2 Arg2:T1	

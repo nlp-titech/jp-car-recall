@@ -1,0 +1,21 @@
+T1	Argument 0 35	ステアリングギアボックスの右側を車体に固定するボルトの締付トルクが不足
+T2	Connective 44 45	、
+T3	Argument 60 66	ボルトが緩み
+T4	Connective 66 67	、
+T5	Argument 73 89	ギアボックスの右側が車体から外れ
+T6	Connective 89 90	て
+T7	Argument 91 100	ハンドル操作が妨げ
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T11	Argument 45 59	そのままの状態で使用を続ける
+T12	Connective 59 60	と
+R7	CONDITION Arg1:T12 Arg2:T11	
+R8	RESULT Arg1:T12 Arg2:T3	
+T13	Argument 67 69	最悪
+T14	Connective 70 72	場合
+R9	CONDITION Arg1:T14 Arg2:T13	
+R10	RESULT Arg1:T14 Arg2:T5	

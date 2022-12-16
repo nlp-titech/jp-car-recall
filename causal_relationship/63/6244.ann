@@ -1,0 +1,5 @@
+T1	Argument 13 43	車外より開放したことを警告する警報スイッチが備えられていない
+T2	Connective 43 45	ため
+T3	Argument 46 67	非常口扉を開放した際、警報装置が作動しない
+R1	RESULT Arg1:T2 Arg2:T3	
+R2	REASON Arg1:T2 Arg2:T1	

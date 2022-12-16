@@ -1,0 +1,17 @@
+T1	Argument 31 78	軽合金製ブラケット（オイル・ポンプ取付金具）とピットマンアーム（連結腕）との間隔が極めて少ない
+T2	Connective 78 80	ため
+T3	Argument 92 94	接触
+T4	Connective 101 102	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 118 136	当該軽合金製ブラケットに損傷を与える
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 81 88	ハンドルを切っ
+T7	Connective 89 92	ときに
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 102 116	このままの状態で使用を続ける
+T9	Connective 116 117	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

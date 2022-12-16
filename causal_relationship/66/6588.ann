@@ -1,0 +1,21 @@
+T1	Argument 0 33	二列目のシートベルト付二人掛け座席において、当該座席の製造が不適切
+T2	Connective 34 36	ため
+T3	Argument 37 64	リクライニング機構のケーブル調整が正しく行われていない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 70 74	そのため
+T5	Argument 75 91	座席の背もたれが確実に固定されず
+T6	Connective 91 92	、
+T7	Argument 92 116	衝突時にシートベルトとともに背もたれが前方に倒れ
+T8	Connective 116 117	、
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T9	Argument 117 119	最悪
+T10	Connective 120 122	場合
+R7	REASON Arg1:T8 Arg2:T7	
+T11	Argument 123 134	乗員が過度の傷害を負う
+R8	RESULT Arg1:T8 Arg2:T11	
+R9	CONDITION Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	

@@ -1,0 +1,17 @@
+T1	Argument 10 24	燃料ポンプ取付部の強度が不足
+T2	Argument 31 41	当該ポンプを取り付け
+T3	Argument 44 49	締め付け力
+T4	Argument 54 68	当該ポンプ取付部に亀裂が生じ
+T5	Argument 80 86	燃料が漏れる
+T6	Connective 28 30	ため
+T7	Connective 42 43	際
+T8	Connective 50 53	により
+T9	Connective 75 79	そのため
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	CONDITION Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T4	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	

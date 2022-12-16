@@ -1,0 +1,13 @@
+T1	Argument 10 32	ハンドルバーを固定するための穴の加工が不適切
+T2	Connective 33 35	ため
+T3	Argument 36 45	正規の位置からずれ
+T4	Connective 54 58	そのため
+T5	Argument 59 74	ハンドルバーが確実に固定されず
+T6	Connective 74 75	、
+T7	Argument 75 89	当該ハンドルバーが前後に動く
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

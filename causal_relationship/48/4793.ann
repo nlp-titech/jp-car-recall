@@ -1,0 +1,33 @@
+T1	Argument 26 47	ゴムホース（ブリーザホース）の材質に不適切
+T2	Connective 53 55	ため
+T3	Argument 71 82	当該ホースに亀裂が発生
+T4	Connective 83 84	、
+T5	Argument 97 102	燃料が漏れ
+T6	Connective 102 103	、
+T7	Argument 109 115	排気管に滴下
+T8	Connective 116 117	て
+T9	Argument 117 122	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 56 70	そのままの状態で使用を続ける
+T11	Connective 70 71	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	
+T12	Argument 84 86	給油
+T13	Argument 88 95	コーナーリング
+T14	Connective 86 88	時や
+R11	CONDITION Arg1:T14 Arg2:T12	
+R12	RESULT Arg1:T14 Arg2:T5	
+T15	Connective 95 97	時に
+R13	CONDITION Arg1:T15 Arg2:T13	
+R14	RESULT Arg1:T15 Arg2:T5	
+T16	Argument 103 105	最悪
+T17	Connective 106 108	場合
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T7	

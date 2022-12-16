@@ -1,0 +1,9 @@
+T1	Argument 12 33	助手席エアバッグの扉に誤った補修部品が供給
+T2	Connective 36 38	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 39 41	展開
+T4	Connective 41 43	時に
+R2	CONDITION Arg1:T4 Arg2:T3	
+T5	Argument 43 54	エアバッグの性能が低下
+R3	RESULT Arg1:T2 Arg2:T5	
+R4	RESULT Arg1:T4 Arg2:T5	

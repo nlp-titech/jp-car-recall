@@ -1,0 +1,21 @@
+T1	Argument 0 62	圧縮天然ガス車（ＣＮＧ車）および液化石油ガス車（ＬＰＧ車）において、ガス遮断弁を作動させるリレーの接点部に炭化物の被膜が形成
+T2	Connective 64 65	、
+T3	Argument 65 72	電気抵抗が増加
+T4	Connective 80 84	そのため
+T5	Argument 101 110	ガス遮断弁が開かず
+T6	Argument 117 137	走行中原動機が停止し、再始動できなくなる
+T7	Connective 110 111	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	
+T10	Argument 111 113	最悪
+T11	Connective 114 116	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T6	
+T8	Argument 85 99	そのままの状態で使用を続ける
+T9	Connective 99 100	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

@@ -1,0 +1,26 @@
+T2	Connective 48 50	ため
+T3	Argument 68 83	減速センサーの信号処理が遅れる
+T4	Connective 89 93	そのため
+T5	Argument 98 109	エアバッグの展開が遅れ
+T6	Connective 109 110	、
+T7	Argument 116 128	乗員が過度の障害を受ける
+R2	RESULT Arg1:T2 Arg2:T3	
+T8	Argument 51 65	前面オフセット衝突時の状態等
+T9	Connective 65 68	により
+R3	REASON Arg1:T9 Arg2:T8	
+R4	RESULT Arg1:T9 Arg2:T3	
+R5	REASON Arg1:T4 Arg2:T3	
+R6	RESULT Arg1:T4 Arg2:T5	
+R7	REASON Arg1:T6 Arg2:T5	
+R8	RESULT Arg1:T6 Arg2:T7	
+T10	Argument 110 112	最悪
+T11	Connective 113 115	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T7	
+#1	AnnotatorNotes T8	「オフセット前面衝突」のこと？
+T1	Argument 8 44	エアバッグコントロールユニットにおいて、当該ユニットのプログラムが不適切
+R1	REASON Arg1:T2 Arg2:T1	
+T12	Argument 94 97	衝突時
+T13	Connective 97 98	に
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T5	

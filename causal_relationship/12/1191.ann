@@ -1,0 +1,35 @@
+T1	Argument 1 40	原動機のカムシャフトを駆動するヘッドアイドラギヤを固定するボルトの締付けが不足
+T2	Connective 44 46	ため
+T3	Argument 47 57	当該ギヤにがたが発生
+T4	Connective 65 69	そのため
+T5	Argument 70 80	そのまま使用を続ける
+T6	Connective 80 81	と
+T7	Argument 82 91	ボルトに弛みが発生
+T8	Connective 92 93	て
+T9	Argument 94 104	ギヤの噛み合いが不良
+T11	Argument 114 116	最悪
+T12	Connective 117 119	場合
+T13	Argument 120 128	当該ボルトが折損
+T14	Connective 129 130	て
+T15	Argument 130 140	ギヤの噛み合いが外れ
+T16	Connective 140 141	て
+T17	Argument 141 158	エンジンが停止し、再始動不能となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	CONDITION Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T7	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R15	REASON Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T17	
+T10	Connective 106 107	り
+T25	Argument 107 112	異音が発生
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T25	
+R17	RESULT Arg1:T10 Arg2:T13	

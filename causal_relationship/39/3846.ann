@@ -1,0 +1,25 @@
+T1	Argument 0 52	エンジンの組立工程において、シリンダと冷却水配管の接続部に使用しているゴム製のＯリングの組み付けが不適切
+T2	Argument 56 74	Ｏリングが適切に組み付けられていない
+T3	Argument 85 99	そのままの状態で使用を続ける
+T4	Argument 101 108	Ｏリングが損傷
+T5	Argument 109 128	冷却水配管接続部より冷却水が多量に流出
+T6	Argument 130 132	最悪
+T7	Argument 136 143	オーバーヒート
+T8	Connective 53 55	ため
+T9	Connective 80 84	そのため
+T10	Connective 99 100	と
+T11	Connective 108 109	し
+T12	Connective 129 130	、
+T13	Connective 133 135	場合
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T2	
+R3	REASON Arg1:T9 Arg2:T2	
+R5	CONDITION Arg1:T10 Arg2:T3	
+R6	RESULT Arg1:T10 Arg2:T4	
+R7	REASON Arg1:T11 Arg2:T4	
+R8	RESULT Arg1:T11 Arg2:T5	
+R9	REASON Arg1:T12 Arg2:T5	
+R11	CONDITION Arg1:T13 Arg2:T6	
+R12	RESULT Arg1:T13 Arg2:T7	
+R4	RESULT Arg1:T9 Arg2:T4	
+R10	RESULT Arg1:T12 Arg2:T7	

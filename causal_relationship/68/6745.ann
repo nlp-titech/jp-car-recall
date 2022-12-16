@@ -1,0 +1,32 @@
+T1	Argument 9 42	プレフューズボックスにおいて、ナット取付け装置のプログラムが不適切
+T2	Connective 43 45	ため
+T3	Argument 46 71	通電用金属プレートの固定ナットが組付けられていない
+T4	Connective 77 81	そのため
+T5	Argument 82 89	走行中の振動等
+T6	Connective 89 92	により
+T7	Argument 92 99	導通不良が発生
+T8	Connective 100 101	、
+T9	Argument 101 109	エンスト等が発生
+T10	Connective 110 111	て
+T11	Argument 112 114	最悪
+T12	Connective 115 117	場合
+T13	Argument 118 128	増加した電気接触抵抗
+T14	Connective 128 131	により
+T15	Argument 131 133	発熱
+T16	Connective 134 135	、
+T17	Argument 135 140	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T15	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R15	REASON Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T17	
+R9	RESULT Arg1:T8 Arg2:T15	

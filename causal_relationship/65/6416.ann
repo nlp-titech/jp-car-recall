@@ -1,0 +1,29 @@
+T1	Argument 0 21	アクセルペダルにおいて、組付け作業が不適切
+T2	Connective 22 24	ため
+T3	Argument 25 50	組付け時にアクセルペダルの位置決めを行うピンが折れ
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 50 51	、
+T5	Argument 51 77	アクセルを組付けるマウントとの結合部に噛み込んでいる
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 83 87	そのため
+R5	REASON Arg1:T6 Arg2:T5	
+T7	Argument 88 97	アクセル操作を行う
+T8	Connective 97 98	と
+T9	Argument 99 119	アクセルのピストンロッドとブッシュが干渉
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	RESULT Arg1:T6 Arg2:T9	
+T10	Argument 121 123	最悪
+T11	Connective 124 126	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+T12	Argument 127 141	アクセルペダルが戻らなくなり
+R10	RESULT Arg1:T11 Arg2:T12	
+T13	Connective 141 142	、
+T14	Argument 142 158	エンジンの回転数が下がらなくなる
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T14	
+T15	Connective 119 120	し
+R13	REASON Arg1:T15 Arg2:T9	
+R14	RESULT Arg1:T15 Arg2:T12	

@@ -1,0 +1,13 @@
+T1	Argument 17 38	樹脂製燃料ポンプ取付ナットの熱処理が不適切
+T2	Connective 44 46	ため
+T3	Argument 59 70	当該ナットに亀裂が生じ
+T4	Connective 70 71	、
+T5	Argument 71 77	燃料が漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 47 56	温度変化の繰り返し
+T7	Connective 56 59	により
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	

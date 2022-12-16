@@ -1,0 +1,21 @@
+T1	Argument 0 72	ＡＢＳ（アンチロックブレーキシステム）及び坂道発進補助装置（ＥＺＧＯ：イージーゴー）装着車両において、油圧制御装置内部の加工に不適切なものがある
+T2	Connective 72 74	ため
+T3	Argument 75 89	そのままの状態で使用を続ける
+T4	Connective 89 90	と
+T5	Argument 91 119	ＡＢＳ作動後の制動時にブレーキペダルの踏み込みが深くなり
+T6	Connective 119 120	、
+T7	Argument 120 122	最悪
+T8	Connective 123 125	場合
+T9	Argument 126 138	後輪の制動が効かなくなり
+T10	Connective 138 139	、
+T11	Argument 139 145	制動力が低下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	

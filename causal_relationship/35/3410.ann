@@ -1,0 +1,13 @@
+T1	Argument 0 35	エンジンの燃料供給レールに取り付けている燃料圧力センサの締付けが不適切
+T2	Connective 36 38	ため
+T3	Argument 50 56	締付けが緩む
+T4	Connective 62 66	そのため
+T5	Argument 67 92	燃料圧力センサの取付け部のねじを伝って燃料が漏れる
+R1	RESULT Arg1:T4 Arg2:T5	
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T3	
+R4	REASON Arg1:T2 Arg2:T1	
+T6	Argument 39 47	エンジンの振動等
+T7	Connective 47 50	により
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	

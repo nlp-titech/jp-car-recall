@@ -1,0 +1,17 @@
+T1	Argument 0 41	作業機（ブレード）の制御装置において、制御装置（コントローラ）のプログラムが不適切
+T2	Argument 45 68	コントローラ用の配線が接触不良、断線等を起こし
+T3	Argument 73 91	格納されているブレードが突然動き出す
+T4	Argument 103 121	走行中に車幅が2.5メートルを超える
+T5	Connective 42 44	ため
+T6	Connective 69 71	場合
+T7	Connective 96 97	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T3	
+R3	CONDITION Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 97 99	最悪
+T9	Connective 100 102	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T4	

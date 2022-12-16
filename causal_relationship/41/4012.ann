@@ -1,0 +1,25 @@
+T1	Argument 19 47	回転検出センサーにおいて、当該センサーの信号処理が不適切
+T3	Argument 51 60	原動機始動時の振動
+T4	Argument 61 69	回転検出歯が振動
+T5	Argument 73 82	不適切な信号を出力
+T6	Argument 95 100	制御エラー
+T7	Argument 103 110	フェールセーフ
+T8	Argument 113 118	走行を停止
+T9	Connective 48 50	ため
+T11	Connective 60 61	で
+T12	Connective 71 72	と
+T13	Connective 90 94	そのため
+T14	Connective 100 103	となり
+T15	Connective 110 113	により
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T5	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+R7	CONDITION Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T5	
+R9	REASON Arg1:T13 Arg2:T5	
+R10	RESULT Arg1:T13 Arg2:T6	
+R11	REASON Arg1:T14 Arg2:T6	
+R12	RESULT Arg1:T14 Arg2:T8	
+R13	REASON Arg1:T15 Arg2:T7	
+R14	RESULT Arg1:T15 Arg2:T8	

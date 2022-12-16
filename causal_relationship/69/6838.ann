@@ -1,0 +1,21 @@
+T1	Argument 0 63	液化石油ガス（ＬＰＧ）を燃料にする塵芥車において、燃料ガスの噴射量を制御している電子制御機能（ＥＣＵ）の制御プログラムが不適切
+T2	Connective 64 66	ため
+T3	Argument 67 74	塵芥積込み作業
+T4	Connective 74 76	時等
+T5	Argument 77 102	塵芥圧縮機の作動時に燃料噴射量が一時的に過大となる
+T6	Connective 107 108	、
+T7	Argument 108 137	排出ガス中の一酸化炭素（ＣＯ）、炭化水素（ＨＣ）の量が増加
+T8	Connective 138 139	、
+T9	Argument 139 151	塵芥圧縮機を連続して作動
+T10	Connective 154 156	場合
+T11	Argument 157 172	作業者がＣＯ、ＨＣを多量に吸入
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	CONDITION Arg1:T10 Arg2:T9	
+R9	RESULT Arg1:T10 Arg2:T11	
+R10	RESULT Arg1:T8 Arg2:T11	

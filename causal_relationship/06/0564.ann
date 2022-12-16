@@ -1,0 +1,13 @@
+T1	Argument 2 28	制動装置において、制動操作用ペダルの戻しバネが不適切
+T2	Argument 43 50	当該バネが折損
+T3	Argument 65 81	制動操作をしない時に制動灯が点灯
+T4	Connective 29 31	ため
+T5	Connective 57 58	、
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	
+T6	Argument 32 40	制動操作の繰返し
+T7	Connective 40 43	により
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T2	

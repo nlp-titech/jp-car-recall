@@ -1,0 +1,13 @@
+T1	Argument 0 48	負圧式ブレーキ倍力装置（マスタパワー）において、製造工程でのマスタパワーの筐体加締め位置が不適切
+T2	Connective 49 51	ため
+T5	Argument 52 84	ブレーキペダルを踏むとマスタパワー内の負圧を保持するシールがずれ
+T6	Connective 84 85	、
+T7	Argument 85 96	負圧が保持できなくなる
+T8	Connective 102 106	そのため
+T11	Argument 107 136	ブレーキを踏んだ際に、運転者の予測より制動停止距離が伸びる
+R3	RESULT Arg1:T8 Arg2:T11	
+R4	REASON Arg1:T8 Arg2:T7	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	REASON Arg1:T6 Arg2:T5	
+R9	RESULT Arg1:T2 Arg2:T5	
+R10	REASON Arg1:T2 Arg2:T1	

@@ -1,0 +1,23 @@
+T1	Argument 0 55	横滑り防止装置（ＥＳＰ）コントロールユニットにおいて、サービス工場での修理等の際に誤ったプログラムが書き込まれ
+T2	Connective 56 58	ため
+T3	Argument 59 85	ＥＳＰの機能及び前走車追従走行装置が適切に作動しない
+T4	Connective 91 95	そのため
+T5	Argument 96 112	ＥＳＰ故障時に警告灯が点灯しない
+T6	Argument 114 140	前走車追従走行装置作動時の車両停止保持機能が作動せず
+T7	Connective 140 141	、
+T8	Argument 141 154	前車停車時に車両が動き出し
+T9	Connective 154 155	、
+T10	Argument 155 157	最悪
+T11	Connective 158 160	場合
+T12	Argument 161 163	追突
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T6	
+R6	REASON Arg1:T7 Arg2:T6	
+R7	RESULT Arg1:T7 Arg2:T8	
+R8	REASON Arg1:T9 Arg2:T8	
+R9	RESULT Arg1:T9 Arg2:T12	
+R10	CONDITION Arg1:T11 Arg2:T10	
+R11	RESULT Arg1:T11 Arg2:T12	

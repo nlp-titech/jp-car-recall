@@ -1,0 +1,5 @@
+T1	Argument 9 31	窓ガラス製造元の商標ステッカーが貼り付けられ
+T2	Connective 34 36	ため
+T3	Argument 37 60	道路運送車両の保安基準第２９条に適合していない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

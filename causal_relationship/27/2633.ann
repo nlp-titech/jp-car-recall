@@ -1,0 +1,9 @@
+T1	Argument 0 45	燃料タンクと原動機の間に配置されている燃料フィルタにおいて、フィルタケースのカシメが不十分
+T2	Connective 52 56	そのため
+T3	Argument 73 87	当該カシメ部から燃料が漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 57 71	そのままの状態で使用を続ける
+T5	Connective 71 72	と
+R3	CONDITION Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T3	

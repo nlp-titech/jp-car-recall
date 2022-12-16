@@ -1,0 +1,25 @@
+T1	Argument 0 42	天然ガス／ガソリン併用仕様に改造した車両において、③ＣＮＧ燃料制御プログラムが不適切
+T6	Argument 46 94	停車中のアイドリング時に、エアコン作動状態で電動パワーステアリング操作を行うなど、電気を多く消費
+T7	Argument 98 110	ＣＮＧ燃料補正ができない
+T8	Argument 116 124	その状態から発進
+T9	Argument 128 142	適切なＣＮＧ燃料制御ができず
+T10	Argument 143 145	最悪
+T11	Argument 149 153	エンスト
+T12	Connective 43 45	ため
+T16	Connective 111 115	そのため
+T17	Connective 126 127	と
+T18	Connective 142 143	、
+T19	Connective 146 148	場合
+R1	REASON Arg1:T12 Arg2:T1	
+T21	Connective 96 97	と
+R11	CONDITION Arg1:T21 Arg2:T6	
+R12	RESULT Arg1:T21 Arg2:T7	
+R13	REASON Arg1:T16 Arg2:T7	
+R14	RESULT Arg1:T16 Arg2:T9	
+R15	CONDITION Arg1:T17 Arg2:T8	
+R16	RESULT Arg1:T17 Arg2:T9	
+R17	REASON Arg1:T18 Arg2:T9	
+R18	RESULT Arg1:T18 Arg2:T11	
+R19	CONDITION Arg1:T19 Arg2:T10	
+R20	RESULT Arg1:T19 Arg2:T11	
+R2	RESULT Arg1:T12 Arg2:T7	

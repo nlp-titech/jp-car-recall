@@ -1,0 +1,5 @@
+T1	Argument 0 57	窓ガラスにおいて、盗難防止警報装置の装着を示すラベルが、運転者席と助手席の側面ガラスの運転者席より前方の部分に貼付
+T2	Argument 65 75	運転者の視野を妨げる
+T4	Connective 62 64	ため
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	

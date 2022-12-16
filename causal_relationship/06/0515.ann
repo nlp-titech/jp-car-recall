@@ -1,0 +1,13 @@
+T1	Argument 0 57	電気自動車の動力伝達装置において、リヤアスクルシャフトとドライブシャフトフランジを結合するスプライン部の強度が不足
+T2	Argument 64 75	当該スプライン部が磨滅
+T3	Argument 83 110	駆動力をリヤアスクルシャフトに伝えることができなくなり
+T4	Argument 111 119	走行不能にいたる
+T5	Connective 61 63	ため
+T6	Connective 82 83	、
+T7	Connective 110 111	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	

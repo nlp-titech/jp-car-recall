@@ -1,0 +1,5 @@
+T1	Argument 0 16	バン型車両において、設計が不適切
+T2	Argument 20 61	側面扉のロック機構部品及び後方扉開放固定金具部分の車両幅が、２．５メートルを超える
+T3	Connective 17 19	ため
+R1	REASON Arg1:T3 Arg2:T1	
+R2	RESULT Arg1:T3 Arg2:T2	

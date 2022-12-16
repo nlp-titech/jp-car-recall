@@ -1,0 +1,17 @@
+T1	Argument 0 20	前輪緩衝装置の空気バネの取付位置が不適切
+T2	Argument 40 57	当該空気バネの上部が取付部材と接触
+T3	Argument 71 78	空気バネが損傷
+T4	Connective 21 23	ため
+T5	Connective 64 65	、
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	
+T6	Argument 24 38	そのままの状態で使用を続ける
+T7	Connective 38 39	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T2	
+T8	Argument 65 67	最悪
+T9	Connective 68 70	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	

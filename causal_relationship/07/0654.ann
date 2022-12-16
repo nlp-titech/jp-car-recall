@@ -1,0 +1,23 @@
+T1	Argument 0 73	デジタル式速度計の制御基板に組み付けられた２種類のコンデンサー（電気ノイズの除去用、速度表示用ＣＰＵ（中央演算処理装置）の動作監視回路用）が不適切
+T2	Argument 78 91	速度計付近の温度が高くなる
+T3	Argument 92 114	速度信号の電気ノイズを速度信号としてカウント
+T4	Argument 127 143	速度表示が実際の速度より高く表示
+T5	Argument 167 187	速度表示用ＣＰＵからの表示信号をリセット
+T6	Argument 200 213	デジタル表示の一部が消える
+T7	Connective 74 76	ため
+T8	Connective 91 92	と
+T9	Connective 122 126	そのため
+T10	Argument 153 166	速度計付近の温度が高くなる
+T11	Connective 166 167	と
+T12	Connective 197 199	ため
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T3	
+R3	CONDITION Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	CONDITION Arg1:T11 Arg2:T10	
+R8	RESULT Arg1:T11 Arg2:T5	
+R10	REASON Arg1:T12 Arg2:T5	
+R11	RESULT Arg1:T12 Arg2:T6	
+R9	RESULT Arg1:T7 Arg2:T5	

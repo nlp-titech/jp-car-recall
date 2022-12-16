@@ -1,0 +1,41 @@
+T1	Argument 49 65	スラストベアリングの耐久性が不足
+T2	Connective 69 71	ため
+T3	Argument 72 102	当該状況下で繰り返しエンジンに高負荷を加えたり高回転域で使用
+T4	Connective 104 105	と
+T5	Argument 106 128	スラストベアリングおよびスラストリングに摩耗
+T6	Connective 138 142	そのため
+T7	Argument 143 161	ターボチャージャのシャフトにガタつき
+T8	Connective 164 165	、
+T9	Argument 165 179	そのままの状態で使用を続ける
+T10	Connective 179 180	と
+T11	Argument 181 199	ターボチャージャのシールリングが損傷
+T12	Connective 200 201	て
+T13	Argument 201 213	エンジンオイルが漏れ出し
+T14	Connective 213 214	、
+T15	Argument 214 235	当該オイルがエンジン内部、排気系に入り込み
+T16	Connective 235 236	、
+T17	Argument 236 260	白煙、異音、エンジン回転数の上昇等の不具合が発生
+T18	Argument 262 264	最悪
+T19	Connective 265 267	場合
+T20	Connective 261 262	、
+T21	Argument 268 275	エンジンが破損
+R1	RESULT Arg1:T19 Arg2:T21	
+R2	CONDITION Arg1:T19 Arg2:T18	
+R3	RESULT Arg1:T20 Arg2:T21	
+R4	REASON Arg1:T20 Arg2:T17	
+R5	RESULT Arg1:T16 Arg2:T17	
+R6	REASON Arg1:T16 Arg2:T15	
+R7	RESULT Arg1:T14 Arg2:T15	
+R8	REASON Arg1:T14 Arg2:T13	
+R9	RESULT Arg1:T12 Arg2:T13	
+R10	REASON Arg1:T12 Arg2:T11	
+R11	RESULT Arg1:T10 Arg2:T11	
+R12	CONDITION Arg1:T10 Arg2:T9	
+R13	RESULT Arg1:T8 Arg2:T11	
+R14	REASON Arg1:T8 Arg2:T7	
+R15	RESULT Arg1:T6 Arg2:T7	
+R16	REASON Arg1:T6 Arg2:T5	
+R17	RESULT Arg1:T4 Arg2:T5	
+R18	CONDITION Arg1:T4 Arg2:T3	
+R19	RESULT Arg1:T2 Arg2:T5	
+R20	REASON Arg1:T2 Arg2:T1	

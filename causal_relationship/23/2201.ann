@@ -1,0 +1,25 @@
+T1	Argument 0 41	変速機用油圧ポンプと作動油タンクの接続配管において、配管接続部のホースの長さが不足
+T2	Connective 45 47	ため
+T3	Argument 48 56	振動を吸収出来ず
+T4	Argument 57 67	当該配管に亀裂が発生
+T5	Connective 56 57	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T4	
+T6	Connective 75 79	そのため
+T7	Argument 92 98	作動油が漏れ
+T8	Argument 105 112	走行不能になる
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T6 Arg2:T4	
+T9	Connective 98 99	、
+R5	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+T10	Argument 99 101	最悪
+T11	Connective 102 104	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T8	
+T12	Argument 80 90	そのまま使用を続ける
+T13	Connective 90 91	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T7	

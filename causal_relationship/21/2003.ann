@@ -1,0 +1,13 @@
+T1	Argument 0 45	助手席に介護用回転シートが架装された福祉車両において、回転シート取付装置の製造工程が不適切
+T2	Connective 46 48	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 49 80	当該取付装置と車体側の台座を接続する回転軸受部の溶接強度が不足
+T5	Connective 90 94	そのため
+T6	Argument 95 105	そのまま使用を続ける
+T7	Argument 107 124	回転シートごと当該軸受部から外れる
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 105 106	と
+R3	RESULT Arg1:T4 Arg2:T7	
+R5	REASON Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T7	
+R6	CONDITION Arg1:T4 Arg2:T6	

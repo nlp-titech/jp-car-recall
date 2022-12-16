@@ -1,0 +1,11 @@
+T1	Argument 0 30	第２列目右側の座席において、誤った仕様の座席ベルトが取り付け
+T2	Connective 33 35	ため
+T3	Argument 36 56	ベルトをバックルに装着することができない
+T4	Argument 65 104	福祉車両については、座席ベルトを装着しても、衝突等の衝撃により座席ベルトが外れ
+T5	Connective 104 105	て
+T6	Argument 105 116	乗員を拘束できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T4	
+R4	REASON Arg1:T5 Arg2:T4	
+R5	RESULT Arg1:T5 Arg2:T6	

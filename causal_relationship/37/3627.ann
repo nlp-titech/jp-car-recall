@@ -1,0 +1,9 @@
+T1	Argument 11 36	自動クラッチ装置において、③制御プログラムが不適切
+T2	Connective 37 39	ため
+T3	Argument 40 54	車両の発進、停止を頻繁に行う
+T4	Connective 54 55	と
+T5	Argument 56 72	作動用モータのブラシが早期に摩耗
+R1	RESULT Arg1:T4 Arg2:T5	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T5	
+R4	REASON Arg1:T2 Arg2:T1	

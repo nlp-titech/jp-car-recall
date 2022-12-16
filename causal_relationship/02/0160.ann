@@ -1,0 +1,13 @@
+T1	Argument 0 44	燃料装置において、燃料タンクに取り付けられている燃料コックの密封用シール材の形状が不適切
+T2	Connective 45 47	ため
+T3	Argument 70 84	燃料コック部から燃料がもれる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 48 62	そのままの状態で使用を続ける
+T5	Connective 62 63	と
+R3	CONDITION Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T3	
+T6	Argument 64 66	最悪
+T7	Connective 67 69	場合
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	

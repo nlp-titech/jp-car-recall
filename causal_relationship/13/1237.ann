@@ -1,0 +1,29 @@
+T1	Argument 0 38	原動機内部のコネクティングロッドの組付け時に使用している洗浄液の除去が不適切
+T2	Connective 39 41	ため
+T3	Argument 42 71	コネクティングロッドのボルトと取付け穴の隙間に洗浄液が残留
+T4	Connective 71 72	し
+T5	Argument 72 81	ボルトの表面が腐食
+T6	Connective 89 93	そのため
+T7	Argument 94 104	そのまま使用を続ける
+T8	Connective 104 105	と
+T9	Argument 106 118	ボルトに微小な亀裂が発生
+T10	Argument 126 128	最悪
+T11	Connective 125 126	、
+T12	Connective 129 131	場合
+T13	Argument 132 138	ボルトが折損
+T14	Connective 139 140	て
+T15	Argument 140 147	走行不能に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	RESULT Arg1:T6 Arg2:T9	
+R9	REASON Arg1:T11 Arg2:T9	
+R10	RESULT Arg1:T11 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T10	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	

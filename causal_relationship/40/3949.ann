@@ -1,0 +1,28 @@
+T2	Argument 53 63	ワイヤハーネスが干渉
+T3	Argument 78 84	走行時の振動
+T4	Argument 85 90	被覆が損傷
+T5	Argument 92 107	ワイヤハーネスと金具がショート
+T6	Argument 110 112	最悪
+T7	Argument 116 131	ワイパー等の機器類の機能が停止
+T9	Argument 135 153	走行中エンストして再始動できなくなる
+T11	Connective 42 44	ため
+T12	Connective 73 77	そのため
+T13	Connective 84 85	で
+T14	Connective 91 92	、
+T15	Connective 108 109	て
+T16	Connective 113 115	場合
+R2	RESULT Arg1:T11 Arg2:T2	
+R3	REASON Arg1:T12 Arg2:T2	
+R4	RESULT Arg1:T12 Arg2:T4	
+R5	REASON Arg1:T13 Arg2:T3	
+R6	RESULT Arg1:T13 Arg2:T4	
+R7	REASON Arg1:T14 Arg2:T4	
+R8	RESULT Arg1:T14 Arg2:T5	
+R9	REASON Arg1:T15 Arg2:T5	
+R10	RESULT Arg1:T15 Arg2:T7	
+R11	CONDITION Arg1:T16 Arg2:T6	
+R12	RESULT Arg1:T16 Arg2:T7	
+R13	RESULT Arg1:T16 Arg2:T9	
+R14	RESULT Arg1:T15 Arg2:T9	
+T1	Argument 12 41	インストルメントパネルを固定している金具の端部処理が不適切
+R1	REASON Arg1:T11 Arg2:T1	

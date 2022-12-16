@@ -1,0 +1,41 @@
+T1	Argument 0 48	危険物（灯油・軽油）配送用のタンク車において、極低温時のベーンポンプ内軸シールの性能評価が不十分
+T2	Connective 52 54	ため
+T3	Argument 55 60	極低温状態
+T4	Connective 60 61	で
+T5	Argument 62 75	軸シールの追従性が悪くなり
+T6	Connective 75 76	、
+T7	Argument 76 84	シール性能が低下
+T8	Connective 92 96	そのため
+T12	Connective 117 118	と
+T13	Argument 119 159	ベーンポンプにより加圧された危険物が軸シールからベーンポンプのベアリング部に浸入
+T14	Connective 160 161	、
+T15	Argument 161 186	ベーンポンプのリリーフフィッティング部から漏れだし
+T16	Connective 186 187	、
+T17	Argument 187 189	最悪
+T18	Connective 190 192	場合
+T19	Argument 193 212	漏れた危険物が、排気管等の高温部に付着
+T20	Connective 214 217	ことで
+T21	Argument 217 219	発火
+T22	Argument 221 228	車両火災に至る
+T23	Connective 220 221	、
+R1	RESULT Arg1:T23 Arg2:T22	
+R2	REASON Arg1:T23 Arg2:T21	
+R3	RESULT Arg1:T20 Arg2:T21	
+R4	REASON Arg1:T20 Arg2:T19	
+R5	RESULT Arg1:T18 Arg2:T19	
+R6	CONDITION Arg1:T18 Arg2:T17	
+R7	RESULT Arg1:T16 Arg2:T19	
+R8	REASON Arg1:T16 Arg2:T15	
+R9	RESULT Arg1:T14 Arg2:T15	
+R10	REASON Arg1:T14 Arg2:T13	
+R11	RESULT Arg1:T12 Arg2:T13	
+T9	Argument 97 117	極低温の環境下で、危険物の排出操作を行う
+R12	CONDITION Arg1:T12 Arg2:T9	
+R13	RESULT Arg1:T8 Arg2:T13	
+R14	REASON Arg1:T8 Arg2:T7	
+R15	RESULT Arg1:T6 Arg2:T7	
+R16	REASON Arg1:T6 Arg2:T5	
+R17	RESULT Arg1:T4 Arg2:T5	
+R18	CONDITION Arg1:T4 Arg2:T3	
+R20	REASON Arg1:T2 Arg2:T1	
+R19	RESULT Arg1:T2 Arg2:T5	

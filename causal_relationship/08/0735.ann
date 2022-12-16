@@ -1,0 +1,15 @@
+T1	Argument 0 27	デジタル式速度計の演算コンピュータのプログラムが不適切
+T2	Connective 28 30	ため
+T3	Argument 31 63	イグニッションスイッチをオフにした後、直ちにオン・オフを繰り返す
+T4	Argument 67 138	イグニッションスイッチをオフにした後、直ちに再度オンにしてトリップ表示切り替えボタン（区間距離や時計表示等の表示切り替えボタン）の操作を行なう
+T5	Connective 138 139	と
+T6	Argument 140 159	プログラムの車速演算用基礎データが変更
+T7	Connective 168 172	そのため
+T8	Argument 173 192	速度計の指示が実速度より大幅に低く指示
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T6	
+R3	CONDITION Arg1:T5 Arg2:T3	
+R4	CONDITION Arg1:T5 Arg2:T4	
+R5	RESULT Arg1:T5 Arg2:T6	
+R6	REASON Arg1:T7 Arg2:T6	
+R7	RESULT Arg1:T7 Arg2:T8	

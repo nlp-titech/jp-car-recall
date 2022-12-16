@@ -1,0 +1,13 @@
+T1	Argument 0 22	後部反射器において、当該反射器の製造が不適切
+T2	Connective 23 25	ため
+T3	Argument 26 51	反射器の表面部（レンズ部）が正しく成型されていない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 57 61	そのため
+T5	Argument 62 69	反射照度が不足
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 70 71	、
+T7	Argument 71 88	保安基準第３８条の基準に適合しない
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

@@ -1,0 +1,6 @@
+T1	Argument 0 52	原動機室内に燃料パイププロテクタが装着されていない車両について、衝突時の燃料漏れのおそれをより少なくする
+T2	Connective 52 54	ため
+T3	Argument 55 68	燃料パイププロテクタを追加
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+#1	AnnotatorNotes R1	目的はreasonになるか？

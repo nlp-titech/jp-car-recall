@@ -1,0 +1,21 @@
+T1	Argument 21 42	ラチェットを噛み合わせるバネの張力が不十分
+T2	Connective 43 45	ため
+T3	Argument 96 125	バネの力で十分にラチェットを噛み合わせることができなくなり
+T4	Connective 125 126	、
+T5	Argument 132 144	駐車ブレーキが解除される
+R1	REASON Arg1:T4 Arg2:T3	
+R2	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 126 128	最悪
+T7	Connective 129 131	場合
+R3	CONDITION Arg1:T7 Arg2:T6	
+R4	RESULT Arg1:T7 Arg2:T5	
+R5	RESULT Arg1:T2 Arg2:T3	
+T8	Argument 46 52	長期間の使用
+T9	Connective 52 55	により
+T10	Argument 56 90	ラチェットに塗布されたグリスが異物（埃）により硬化する等の抵抗が発生
+T11	Connective 92 94	場合
+R6	REASON Arg1:T9 Arg2:T8	
+R7	RESULT Arg1:T9 Arg2:T10	
+R8	CONDITION Arg1:T11 Arg2:T10	
+R9	RESULT Arg1:T11 Arg2:T3	
+R10	REASON Arg1:T2 Arg2:T1	

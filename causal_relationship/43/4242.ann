@@ -1,0 +1,5 @@
+T1	Argument 9 39	ＶＳＣ（車両安定制御システム）オフスイッチの識別表示が不適切
+T2	Connective 40 42	ため
+T3	Argument 43 58	協定規則第１２１号に適合しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

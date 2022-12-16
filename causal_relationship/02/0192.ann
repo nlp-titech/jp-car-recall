@@ -1,0 +1,21 @@
+T1	Argument 0 38	自動変速機において、変速ギヤ用シャフトのシーリングボルトのシール方法が不適切
+T2	Argument 42 65	高速走行時に減速ギヤとシャフトの連結部がたわむ
+T3	Argument 71 100	当該シーリングボルトのシール剤が繰り返し衝撃を受けてゆるみ
+T4	Argument 107 119	減速ギヤ用シャフトが抜け
+T5	Argument 119 126	走行不能となる
+T6	Connective 39 41	ため
+T7	Connective 67 70	により
+T8	Connective 100 101	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T3	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+T10	Argument 101 103	最悪
+T11	Connective 104 106	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T4	
+T9	Connective 118 119	け
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	

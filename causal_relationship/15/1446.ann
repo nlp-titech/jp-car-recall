@@ -1,0 +1,21 @@
+T1	Argument 5 50	変速機支持用メンバーを車枠に固定する締結ボルトが規定の締め付けトルクで締め付けられていない
+T2	Connective 56 60	そのため
+T3	Argument 61 71	そのまま使用を続ける
+T4	Connective 71 72	と
+T5	Argument 73 76	振動等
+T6	Connective 76 79	により
+T7	Argument 79 88	ボルトに緩みが生じ
+T8	Connective 88 89	、
+T9	Argument 89 91	最悪
+T10	Connective 92 94	場合
+T11	Argument 95 108	締結されているナットが脱落
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	REASON Arg1:T6 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T7	
+R5	RESULT Arg1:T4 Arg2:T7	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	CONDITION Arg1:T10 Arg2:T9	
+R9	RESULT Arg1:T10 Arg2:T11	
+R10	RESULT Arg1:T8 Arg2:T11	

@@ -1,0 +1,13 @@
+T1	Argument 13 40	二次空気供給ポンプ圧力センサの密封シールを誤って剥がし
+T2	Connective 47 51	そのため
+T3	Argument 52 71	当該ポンプの吐出圧力が正確に測定できず
+T4	Connective 71 72	、
+T5	Argument 72 91	排気管に送られる二次空気が不安定となり
+T6	Connective 91 92	、
+T7	Argument 92 110	排出ガス値が保安基準に適合しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

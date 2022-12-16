@@ -1,0 +1,26 @@
+T1	Argument 0 47	原動機（ディーゼル）の機械式燃料噴射ポンプにおいて、部品メーカーでの組付け作業時の指示が不適切
+T2	Connective 48 50	ため
+T3	Argument 51 70	燃料供給バルブのスプリングに異品が装着
+T4	Connective 75 76	、
+T5	Argument 76 92	燃料の供給開始タイミングが異なる
+T6	Connective 98 102	そのため
+T7	Argument 113 121	黒煙排出量が増大
+T8	Argument 133 155	販売会社への当該車両に対する整備指示が不適切
+T9	Connective 156 158	ため
+T10	Argument 159 173	販売会社において不適切な整備
+T11	Connective 176 177	、
+T12	Argument 177 198	排気ガス再循環装置が正規な状態と異なる車両
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T10	
+R9	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T12	
+T13	Argument 102 109	一部の走行領域
+T14	Connective 109 113	において
+R11	CONDITION Arg1:T14 Arg2:T13	
+R12	RESULT Arg1:T14 Arg2:T7	

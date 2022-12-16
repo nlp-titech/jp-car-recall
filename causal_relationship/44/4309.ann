@@ -1,0 +1,43 @@
+T1	Argument 15 49	ブローバイガス還元装置の遠心分離フィルターのメンテナンス設定が不適切
+T2	Connective 50 52	ため
+T3	Argument 95 117	当該フィルターにエンジンオイル中の汚れが堆積
+T4	Connective 118 119	て
+T5	Argument 119 123	目詰まり
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 53 68	長時間アイドリングを頻繁に行っ
+T7	Argument 71 93	エンジンオイルのメンテナンスを適切に行わない
+T8	Connective 93 94	と
+R5	CONDITION Arg1:T8 Arg2:T6	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T3	
+T9	Connective 131 135	そのため
+T10	Argument 136 150	そのままの状態で使用を続ける
+T11	Connective 150 151	と
+R8	REASON Arg1:T9 Arg2:T5	
+T12	Argument 152 164	クランクケース内圧の上昇
+T13	Connective 164 168	によって
+T14	Argument 168 183	エンジンオイルが吸排気系に流入
+R9	REASON Arg1:T13 Arg2:T12	
+R10	RESULT Arg1:T13 Arg2:T14	
+R11	CONDITION Arg1:T11 Arg2:T10	
+R12	RESULT Arg1:T11 Arg2:T12	
+R13	RESULT Arg1:T9 Arg2:T12	
+T15	Argument 193 195	最悪
+T16	Connective 196 198	場合
+R14	CONDITION Arg1:T16 Arg2:T15	
+T17	Argument 199 217	意図せぬエンジン回転数の上昇等が生じ
+T18	Connective 217 218	て
+T19	Argument 218 225	エンジンが破損
+T20	Argument 232 237	火災に至る
+R15	REASON Arg1:T18 Arg2:T17	
+R16	RESULT Arg1:T18 Arg2:T19	
+R19	RESULT Arg1:T18 Arg2:T20	
+T21	Connective 184 185	て
+R20	REASON Arg1:T21 Arg2:T14	
+T22	Argument 185 191	白煙等が発生
+R21	RESULT Arg1:T21 Arg2:T22	
+R22	RESULT Arg1:T13 Arg2:T17	
+R23	RESULT Arg1:T16 Arg2:T17	

@@ -1,0 +1,53 @@
+T1	Argument 13 39	イグニッションスイッチの接点部に流れる電流値が大きい
+T2	Connective 39 41	ため
+T3	Argument 42 63	主電源を入れる瞬間に大きなアーク放電が生じ
+T4	Connective 63 64	、
+T5	Argument 76 84	接点が過度に摩耗
+T6	Connective 85 86	て
+T7	Argument 86 93	接触圧力が低下
+T8	Connective 95 97	ため
+T9	Argument 106 111	接点が動き
+T10	Connective 111 112	、
+T11	Argument 112 120	炭化物に乗り上げ
+T12	Connective 119 120	げ
+T13	Argument 120 124	導通不良
+T14	Connective 132 133	、
+T15	Argument 139 147	突然原動機が停止
+T16	Argument 159 163	始動操作
+T17	Connective 163 164	で
+T18	Argument 165 170	接点が摺動
+T19	Connective 170 171	し
+T20	Argument 171 177	炭化物を除去
+T21	Connective 179 181	ため
+T22	Argument 182 188	再始動は可能
+R1	REASON Arg1:T17 Arg2:T16	
+R2	RESULT Arg1:T17 Arg2:T18	
+R3	REASON Arg1:T19 Arg2:T18	
+R4	RESULT Arg1:T19 Arg2:T20	
+R5	REASON Arg1:T21 Arg2:T20	
+R6	RESULT Arg1:T21 Arg2:T22	
+R7	REASON Arg1:T2 Arg2:T1	
+R8	RESULT Arg1:T2 Arg2:T3	
+R9	REASON Arg1:T4 Arg2:T3	
+R10	RESULT Arg1:T4 Arg2:T5	
+R11	REASON Arg1:T6 Arg2:T5	
+R12	RESULT Arg1:T6 Arg2:T7	
+R13	REASON Arg1:T8 Arg2:T7	
+R14	RESULT Arg1:T8 Arg2:T9	
+R15	REASON Arg1:T10 Arg2:T9	
+R16	RESULT Arg1:T10 Arg2:T11	
+R17	REASON Arg1:T12 Arg2:T11	
+R18	RESULT Arg1:T12 Arg2:T13	
+R19	REASON Arg1:T14 Arg2:T13	
+R20	RESULT Arg1:T14 Arg2:T15	
+T23	Argument 98 105	走行時の振動等
+T24	Connective 105 106	で
+R21	REASON Arg1:T24 Arg2:T23	
+R22	RESULT Arg1:T24 Arg2:T9	
+T25	Argument 64 73	始動操作の繰り返し
+T26	Connective 73 76	により
+R23	REASON Arg1:T26 Arg2:T25	
+R24	RESULT Arg1:T26 Arg2:T5	
+T27	Argument 133 135	最悪
+T28	Connective 136 138	場合
+R25	CONDITION Arg1:T28 Arg2:T27	

@@ -1,0 +1,25 @@
+T1	Argument 0 27	除雪車において、原動機を始動させる電気配線設計が不適切
+T2	Connective 28 30	ため
+T3	Argument 31 38	走行時の振動等
+T4	Connective 38 41	により
+T5	Argument 41 48	電気配線が揺れ
+T6	Connective 48 49	、
+T7	Argument 49 66	電気配線と端子の接続部に力が加わる
+T8	Connective 72 76	そのため
+T9	Argument 77 90	当該部に繰り返し力が加わる
+T10	Connective 90 91	と
+T11	Argument 92 99	電気配線が切断
+T12	Connective 100 101	、
+T13	Argument 101 113	原動機が始動できなくなる
+R1	RESULT Arg1:T12 Arg2:T13	
+R2	REASON Arg1:T12 Arg2:T11	
+R3	RESULT Arg1:T10 Arg2:T11	
+R4	CONDITION Arg1:T10 Arg2:T9	
+R5	RESULT Arg1:T8 Arg2:T11	
+R6	REASON Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T7	
+R8	REASON Arg1:T6 Arg2:T5	
+R9	RESULT Arg1:T4 Arg2:T5	
+R10	REASON Arg1:T4 Arg2:T3	
+R11	RESULT Arg1:T2 Arg2:T5	
+R12	REASON Arg1:T2 Arg2:T1	

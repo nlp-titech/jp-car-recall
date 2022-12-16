@@ -1,0 +1,13 @@
+T1	Argument 0 49	小型トラック用の抜取検査エンジンにおいて、排出ガス検査設備とエキゾーストパイプ部の固定方法が不適切
+T2	Connective 50 52	ため
+T4	Argument 53 78	当該パイプに車載状態では発生しない曲げ応力が加わり
+T3	Connective 78 79	、
+T5	Argument 79 94	当該パイプの溶接部に亀裂が入る
+T6	Connective 100 104	そのため
+T7	Argument 105 142	亀裂部から排気ガスやＤＰＲ（ディーゼル微粒子除去装置）再生用の燃料が漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T4	
+R3	REASON Arg1:T3 Arg2:T4	
+R4	RESULT Arg1:T3 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

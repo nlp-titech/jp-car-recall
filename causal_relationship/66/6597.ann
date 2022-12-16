@@ -1,0 +1,41 @@
+T1	Argument 17 42	ＥＳＰコントロールユニットの制御プログラムが不適切
+T2	Connective 43 45	ため
+T3	Argument 46 71	濡れた路面等での急発進時にタイヤの空転を制御できず
+T6	Connective 71 72	、
+T7	Argument 72 84	駆動系に激しい振動が生じ
+T8	Connective 84 85	、
+T9	Argument 85 105	ディファレンシャルの取付け部に亀裂が入る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R5	REASON Arg1:T6 Arg2:T3	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Connective 111 115	そのため
+T11	Argument 116 130	そのままの状態で使用を続ける
+T12	Connective 130 131	と
+T13	Argument 132 137	亀裂が進展
+T14	Connective 138 139	て
+T15	Argument 139 148	当該取付け部が破損
+T16	Connective 149 150	、
+T17	Argument 150 162	ディファレンシャルが傾き
+T18	Connective 162 163	、
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R15	REASON Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T17	
+R17	REASON Arg1:T18 Arg2:T17	
+T19	Argument 169 180	ドライブシャフトが損傷
+R18	RESULT Arg1:T18 Arg2:T19	
+T20	Argument 163 165	最悪
+T21	Connective 166 168	場合
+R19	CONDITION Arg1:T21 Arg2:T20	
+R20	RESULT Arg1:T21 Arg2:T19	
+T22	Connective 181 182	て
+T23	Argument 182 189	走行不能になる
+R21	REASON Arg1:T22 Arg2:T19	
+R22	RESULT Arg1:T22 Arg2:T23	

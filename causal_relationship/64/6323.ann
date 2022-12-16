@@ -1,0 +1,25 @@
+T1	Argument 9 31	燃料ホースにおいて、当該ホースの長さが不適切
+T2	Connective 32 34	ため
+T3	Argument 35 41	走行中の振動
+T4	Connective 41 44	により
+T5	Argument 44 61	燃料ホースとエンジンマウントが干渉
+T6	Connective 69 73	そのため
+T7	Argument 74 88	そのままの状態で使用を続ける
+T8	Connective 88 89	と
+T9	Argument 90 98	燃料ホースが摩耗
+T10	Connective 99 100	、
+T11	Argument 100 102	最悪
+T12	Connective 103 105	場合
+T13	Argument 106 112	燃料が漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	CONDITION Arg1:T8 Arg2:T7	
+R6	RESULT Arg1:T8 Arg2:T9	
+R7	REASON Arg1:T6 Arg2:T5	
+R8	RESULT Arg1:T6 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	

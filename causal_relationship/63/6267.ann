@@ -1,0 +1,9 @@
+T1	Argument 0 22	エアバッグ制御モジュールのプログラムが不適切
+T2	Connective 23 25	ため
+T3	Argument 26 41	走行中に車両が大きく左右に傾斜
+T4	Connective 43 44	と
+T5	Argument 45 76	誤ってサイド・カーテン・エアバッグ及びサイド・エアバッグが展開
+R1	RESULT Arg1:T4 Arg2:T5	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T3	
+R4	REASON Arg1:T2 Arg2:T1	

@@ -1,0 +1,25 @@
+T1	Argument 1 14	燃料ホースコネクターを脱着
+T2	Connective 16 17	際
+T3	Argument 18 27	オーリングがずれる
+T4	Connective 32 34	ため
+T5	Argument 53 61	オーリングが損傷
+T6	Connective 62 63	、
+T7	Argument 63 68	燃料が漏れ
+T8	Connective 68 69	、
+T9	Argument 75 80	火災に至る
+R1	CONDITION Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 35 52	当該コネクターの脱着を繰り返し行う
+T11	Connective 52 53	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	
+T12	Argument 69 71	最悪
+T13	Connective 72 74	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T9	

@@ -1,0 +1,33 @@
+T1	Argument 0 31	エアコンコンプレッサのプーリとボスとの勘合部の圧入指示が不適切
+T2	Connective 32 34	ため
+T5	Argument 35 47	プーリ回転時に歪みが生じ
+T6	Connective 47 48	、
+T7	Argument 48 55	溶接部が剥がれ
+T8	Connective 55 56	て
+T9	Argument 56 62	プーリが空転
+T10	Connective 70 74	そのため
+T11	Argument 75 85	そのまま使用を続ける
+T12	Connective 85 86	と
+T13	Argument 87 104	プーリからエンジン補機ベルトが外れ
+T14	Connective 104 105	、
+T15	Argument 105 116	発電機が作動しなくなり
+T16	Connective 116 117	、
+T17	Argument 117 119	最悪
+T18	Connective 120 122	場合
+T19	Argument 123 139	エンジンが停止して再始動できなく
+R1	REASON Arg1:T2 Arg2:T1	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	CONDITION Arg1:T12 Arg2:T11	
+R11	RESULT Arg1:T10 Arg2:T13	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R15	REASON Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T19	
+R17	CONDITION Arg1:T18 Arg2:T17	
+R18	RESULT Arg1:T18 Arg2:T19	
+R4	RESULT Arg1:T2 Arg2:T5	

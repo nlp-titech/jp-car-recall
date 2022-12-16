@@ -1,0 +1,13 @@
+T1	Argument 0 55	クラッチペダルとクラッチマスターシリンダープッシュロッドの接続部において、車両製造工程で確実に固定されていない
+T2	Connective 60 61	、
+T3	Argument 61 71	クラッチペダルを操作
+T4	Connective 73 74	際
+T5	Argument 75 80	接続が外れ
+T7	Argument 85 94	変速が出来なくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T8	Connective 84 85	、
+R5	REASON Arg1:T8 Arg2:T5	
+R6	RESULT Arg1:T8 Arg2:T7	

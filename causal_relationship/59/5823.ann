@@ -1,0 +1,17 @@
+T1	Argument 7 44	座席ベルトの取り付けボルトにおいて、製造時に緩み防止剤が塗布されていなかっ
+T2	Connective 45 46	為
+T3	Argument 47 66	使用過程において当該ボルトに緩みが発生
+T4	Connective 67 68	、
+T5	Argument 68 70	最悪
+T6	Connective 71 73	場合
+T7	Argument 79 94	座席ベルトが乗員を拘束できない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 74 76	衝突
+T9	Connective 76 79	時等に
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T7	

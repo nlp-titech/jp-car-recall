@@ -1,0 +1,17 @@
+T2	Connective 36 38	ため
+T1	Argument 0 35	燃料タンクのブリーザホース継ぎ手部（クイックジョイント）の嵌合が不十分
+T3	Argument 39 76	クイックジョイントのシール（オーリング）がジョイントパイプと密着していない
+T4	Connective 82 86	そのため
+T5	Argument 87 105	ジョイント嵌合部のシール性が損なわれ
+T6	Connective 105 106	て
+T7	Argument 106 111	燃料満タン
+T8	Connective 111 112	時
+T9	Argument 113 129	ジョイント嵌合部から燃料が漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	REASON Arg1:T6 Arg2:T5	
+R5	CONDITION Arg1:T8 Arg2:T7	
+R6	RESULT Arg1:T8 Arg2:T9	
+R7	RESULT Arg1:T6 Arg2:T9	
+R8	RESULT Arg1:T4 Arg2:T9	

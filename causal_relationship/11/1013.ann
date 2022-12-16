@@ -1,0 +1,32 @@
+T1	Argument 1 22	原動機制御コンピュータのプログラムが不適切
+T2	Connective 23 25	ため
+T3	Argument 36 42	空気量が不足
+T4	Connective 43 44	て
+T5	Argument 26 34	高速走行中の減速
+T6	Connective 34 35	時
+T7	Argument 44 59	失火した燃料が前側触媒部で燃焼
+T8	Argument 66 91	エキゾーストマニホールド内部の排気流れに偏りがある
+T9	Connective 91 93	ため
+T10	Argument 94 107	前側触媒内部が部分的に高温
+T11	Connective 111 115	そのため
+T12	Argument 116 136	当該触媒内部が高温の熱負荷を繰り返し受け
+T13	Connective 136 137	て
+T14	Argument 137 140	熱劣化
+T15	Connective 141 142	、
+T16	Argument 142 144	損傷
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T6 Arg2:T5	
+R3	RESULT Arg1:T6 Arg2:T3	
+R4	REASON Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T4 Arg2:T7	
+R6	RESULT Arg1:T2 Arg2:T3	
+R7	REASON Arg1:T11 Arg2:T7	
+R8	REASON Arg1:T9 Arg2:T8	
+R9	RESULT Arg1:T9 Arg2:T10	
+R10	REASON Arg1:T11 Arg2:T10	
+R11	RESULT Arg1:T11 Arg2:T12	
+R12	REASON Arg1:T13 Arg2:T12	
+R13	RESULT Arg1:T13 Arg2:T14	
+R14	REASON Arg1:T15 Arg2:T14	
+R15	RESULT Arg1:T15 Arg2:T16	
+R16	RESULT Arg1:T2 Arg2:T8	

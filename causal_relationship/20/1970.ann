@@ -1,0 +1,13 @@
+T1	Argument 0 34	ルーフレール付ワゴン車において、左ルーフレールの取付部の溶接が不十分
+T2	Connective 35 37	ため
+T3	Argument 38 55	当該取付部付近の防水シール材が剥離
+T4	Connective 63 67	そのため
+T5	Argument 68 90	雨水等が車室内のボディ制御コンピュータに浸入
+T6	Connective 91 92	、
+T7	Argument 92 114	電動ドアロックや方向指示器等が作動しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

@@ -1,0 +1,25 @@
+T1	Argument 0 21	燃料パイプの配策時において、取付手順を誤っ
+T2	Connective 22 24	ため
+T3	Argument 25 49	燃料パイプが燃料リターンパイプのコネクターと接触
+T4	Connective 57 61	そのため
+T5	Argument 62 69	エンジンの振動
+T6	Connective 69 72	により
+T7	Argument 72 83	燃料パイプの被覆が損傷
+T8	Argument 85 87	最悪
+T9	Connective 88 90	場合
+T10	Argument 91 100	燃料パイプに穴があ
+T11	Argument 101 107	燃料が漏れる
+T12	Connective 100 101	き
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T10	
+T13	Connective 84 85	、
+R9	REASON Arg1:T13 Arg2:T7	
+R10	RESULT Arg1:T13 Arg2:T10	
+R11	REASON Arg1:T12 Arg2:T10	
+R12	RESULT Arg1:T12 Arg2:T11	

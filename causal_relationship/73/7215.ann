@@ -1,0 +1,21 @@
+T1	Argument 0 19	バッテリ収納箱の水抜き穴の位置が不適切
+T2	Connective 20 22	ため
+T3	Argument 23 64	収納箱に浸入した雨水等が、バッテリ製造時にバッテリの排気口に付着した酸性分を洗い流
+T4	Connective 65 66	、
+T5	Argument 66 85	水抜き穴から燃料ポンプの吐出配管に滴下
+T6	Connective 85 86	し
+T7	Argument 86 95	配管に亀裂を生じる
+T8	Connective 101 105	そのため
+T9	Argument 106 116	そのまま使用を続ける
+T10	Connective 116 117	と
+T11	Argument 117 128	亀裂部から燃料が漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	CONDITION Arg1:T10 Arg2:T9	
+R9	RESULT Arg1:T10 Arg2:T11	
+R10	RESULT Arg1:T8 Arg2:T11	

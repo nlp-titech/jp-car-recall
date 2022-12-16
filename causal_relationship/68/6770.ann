@@ -1,0 +1,21 @@
+T1	Argument 0 44	年少者用補助乗車装置（チャイルドシート）に取付けられているバックルの内部部品の強度が不足
+T2	Connective 48 50	ため
+T3	Argument 51 55	使用過程
+T4	Connective 55 58	により
+T5	Argument 59 66	当該部品が破損
+T6	Connective 74 78	そのため
+T7	Argument 79 97	バックルのロック機構が正常に作動せず
+T8	Connective 97 98	、
+T9	Argument 98 100	最悪
+T10	Connective 101 103	場合
+T11	Argument 104 113	ロックがかからない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T11	
+R9	CONDITION Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	

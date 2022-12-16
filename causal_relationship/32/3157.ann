@@ -1,0 +1,19 @@
+T1	Argument 0 61	エアコンコンプレッサにおいて、プーリ部のアーマチュア（エアコンコンプレッサとプーリを断続する円盤）を成形する際の型が不適切
+T2	Connective 62 64	ため
+T3	Argument 65 70	強度が不足
+T4	Connective 80 84	そのため
+T5	Argument 90 101	当該アーマチュアが脱落
+T7	Argument 115 117	最悪
+T8	Connective 118 120	場合
+T9	Argument 121 135	当該アーマチュアが路上に落下
+R1	RESULT Arg1:T8 Arg2:T9	
+R5	RESULT Arg1:T4 Arg2:T5	
+R6	REASON Arg1:T4 Arg2:T3	
+R7	RESULT Arg1:T2 Arg2:T3	
+R8	REASON Arg1:T2 Arg2:T1	
+T10	Argument 103 114	エアコンが効かなくなり
+T13	Connective 102 103	て
+R11	REASON Arg1:T13 Arg2:T5	
+R12	RESULT Arg1:T13 Arg2:T10	
+R2	CONDITION Arg1:T8 Arg2:T7	
+R3	RESULT Arg1:T13 Arg2:T9	

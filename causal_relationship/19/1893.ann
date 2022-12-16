@@ -1,0 +1,24 @@
+T1	Argument 0 56	ツインクラッチ式自動変速機において、シフトレバーをＲレンジ（後退位置）に操作した場合に、後退用ギヤが噛み合わない
+T4	Argument 71 89	シフト位置表示がＲ（後退位置）と表示
+T5	Connective 92 94	ため
+T6	Argument 95 109	運転者はこの状態を認識できず
+T7	Connective 109 110	、
+T8	Argument 110 128	前下がりの坂道において車両が前進する
+T9	Argument 166 172	急に後退する
+R3	RESULT Arg1:T7 Arg2:T8	
+T11	Connective 164 165	と
+R6	RESULT Arg1:T11 Arg2:T9	
+T12	Connective 70 71	、
+R7	REASON Arg1:T12 Arg2:T1	
+R10	REASON Arg1:T5 Arg2:T4	
+R11	RESULT Arg1:T5 Arg2:T6	
+R9	CONDITION Arg1:T7 Arg2:T6	
+R8	RESULT Arg1:T12 Arg2:T8	
+T14	Argument 150 164	後退用ギヤが自動的に噛み合う
+R12	CONDITION Arg1:T11 Arg2:T14	
+T2	Argument 133 145	アクセルペダルを踏み続け
+R1	RESULT Arg1:T12 Arg2:T2	
+T3	Connective 149 150	に
+R2	REASON Arg1:T3 Arg2:T2	
+R4	RESULT Arg1:T3 Arg2:T9	
+R5	RESULT Arg1:T12 Arg2:T4	

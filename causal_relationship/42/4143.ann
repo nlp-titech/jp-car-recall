@@ -1,0 +1,33 @@
+T1	Argument 12 30	バッテリー固定プレートの形状が不適切
+T2	Connective 31 33	ため
+T3	Argument 56 75	電源ケーブルが固定プレートの端部と干渉
+T4	Connective 83 87	そのため
+T5	Argument 104 116	電源ケーブルの被覆が損傷
+T6	Argument 118 120	短絡
+T7	Connective 117 118	て
+T8	Connective 121 122	、
+T9	Argument 128 139	走行中にエンジンが停止
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	
+R7	REASON Arg1:T8 Arg2:T6	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 34 53	バッテリー端子に電源ケーブルを取り付け
+T11	Connective 54 55	際
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	
+T12	Argument 88 102	そのままの状態で使用を続ける
+T13	Connective 102 103	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T5	
+T14	Argument 122 124	最悪
+T15	Connective 125 127	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T9	
+T16	Connective 140 141	、
+R15	REASON Arg1:T16 Arg2:T9	
+T17	Argument 141 150	再始動できなくなる
+R16	RESULT Arg1:T16 Arg2:T17	

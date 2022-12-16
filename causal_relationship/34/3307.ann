@@ -1,0 +1,21 @@
+T1	Argument 0 27	エンジン制御コンピュータ（ＥＣＵ）のプログラムが不適切
+T2	Connective 28 30	ため
+T7	Argument 122 135	アクセルペダルを強く踏込ん
+T8	Connective 138 139	と
+T9	Argument 140 154	モータから過大な駆動力が発生
+T10	Connective 162 166	そのため
+T11	Argument 167 173	車両が急発進
+R1	RESULT Arg1:T10 Arg2:T11	
+R2	REASON Arg1:T10 Arg2:T9	
+R3	RESULT Arg1:T8 Arg2:T9	
+R4	CONDITION Arg1:T8 Arg2:T7	
+R9	REASON Arg1:T2 Arg2:T1	
+R10	RESULT Arg1:T2 Arg2:T9	
+T3	Argument 82 118	ＥＶ走行モードで急勾配の坂道にゆっくり進入し、一時停止してエンジンが始動
+T4	Connective 120 121	時
+T12	Argument 31 78	エンジン走行モードでの停車中にシフトレバーをＤまたはＲに操作して発進する際のギヤの噛み合い動作
+R8	CONDITION Arg1:T4 Arg2:T3	
+T5	Connective 79 80	間
+R5	CONDITION Arg1:T5 Arg2:T12	
+R6	RESULT Arg1:T4 Arg2:T9	
+R7	RESULT Arg1:T5 Arg2:T9	

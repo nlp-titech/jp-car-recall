@@ -1,0 +1,44 @@
+T1	Argument 16 34	プラネタリシャフトの固定方法が不適切
+T4	Argument 55 71	当該シャフトに過大な負荷がかかり
+T5	Argument 72 77	亀裂が生じ
+T6	Argument 89 103	そのままの状態で使用を続ける
+T7	Argument 105 110	亀裂が進展
+T8	Argument 112 114	折損
+T9	Argument 116 118	最悪
+T10	Argument 122 129	シャフトが脱落
+T11	Argument 131 139	ギヤ等に噛み混み
+T12	Argument 140 147	走行不能となる
+T13	Connective 35 37	ため
+T15	Connective 54 55	、
+T16	Connective 71 72	、
+T17	Connective 84 88	そのため
+T18	Connective 103 104	と
+T19	Connective 111 112	て
+T20	Connective 115 116	、
+T21	Connective 119 121	場合
+T22	Connective 130 131	て
+T23	Connective 139 140	、
+R1	REASON Arg1:T13 Arg2:T1	
+R6	RESULT Arg1:T15 Arg2:T4	
+R7	REASON Arg1:T16 Arg2:T4	
+R8	RESULT Arg1:T16 Arg2:T5	
+R9	REASON Arg1:T17 Arg2:T5	
+R10	RESULT Arg1:T17 Arg2:T7	
+R11	CONDITION Arg1:T18 Arg2:T6	
+R12	RESULT Arg1:T18 Arg2:T7	
+R13	REASON Arg1:T19 Arg2:T7	
+R14	RESULT Arg1:T19 Arg2:T8	
+R15	REASON Arg1:T20 Arg2:T8	
+R16	RESULT Arg1:T20 Arg2:T10	
+R17	CONDITION Arg1:T21 Arg2:T9	
+R18	RESULT Arg1:T21 Arg2:T10	
+R19	REASON Arg1:T22 Arg2:T10	
+R20	RESULT Arg1:T22 Arg2:T11	
+R21	REASON Arg1:T23 Arg2:T11	
+R22	RESULT Arg1:T23 Arg2:T12	
+T2	Argument 38 43	圃場旋回時
+T3	Connective 43 44	に
+T14	Argument 44 54	スプリングピンが抜け
+R2	CONDITION Arg1:T3 Arg2:T2	
+R3	RESULT Arg1:T3 Arg2:T14	
+R4	RESULT Arg1:T13 Arg2:T14	

@@ -1,0 +1,34 @@
+T2	Connective 28 30	ため
+T3	Argument 36 46	当該遮断弁が直接被水
+T4	Connective 48 50	場合
+T5	Argument 51 58	内部に水が浸入
+T6	Connective 66 70	そのため
+T1	Argument 0 27	液化石油ガス（ＬＰＧ）車の燃料遮断弁の防水構造が不適切
+T7	Argument 71 85	当該遮断弁の内部コイルが腐食
+T8	Argument 89 91	短絡
+T9	Connective 92 93	て
+T10	Argument 93 95	溶損
+T11	Connective 96 97	、
+T12	Argument 97 99	最悪
+T13	Connective 100 102	場合
+T14	Argument 103 115	原動機への燃料供給を遮断
+T15	Connective 117 119	ため
+T16	Argument 120 137	原動機が停止し、再始動できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+T17	Connective 86 87	、
+R7	REASON Arg1:T17 Arg2:T7	
+R8	REASON Arg1:T9 Arg2:T8	
+R10	RESULT Arg1:T6 Arg2:T8	
+R12	RESULT Arg1:T9 Arg2:T10	
+R13	CONDITION Arg1:T13 Arg2:T12	
+R14	REASON Arg1:T11 Arg2:T10	
+R15	RESULT Arg1:T11 Arg2:T14	
+R16	RESULT Arg1:T13 Arg2:T14	
+R17	REASON Arg1:T15 Arg2:T14	
+R18	RESULT Arg1:T15 Arg2:T16	
+R6	RESULT Arg1:T6 Arg2:T7	
+R9	RESULT Arg1:T17 Arg2:T14	

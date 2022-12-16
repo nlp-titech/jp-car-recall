@@ -1,0 +1,29 @@
+T1	Argument 0 52	点火コイルからの配電器（ディストリビュータ）に接続している高圧電線（ハイテンションコード）の配索に不適切
+T2	Connective 58 60	ため
+T3	Argument 98 109	ゴム製燃料ホースと接触
+T4	Connective 118 119	、
+T5	Argument 158 165	ひび割れが発生
+T6	Connective 166 167	、
+T7	Argument 173 178	燃料が漏れ
+T8	Connective 178 179	て
+T9	Argument 179 184	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 167 169	最悪
+T11	Connective 170 172	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T7	
+T12	Argument 119 133	このままの状態で使用を続ける
+T13	Connective 133 134	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T5	
+T14	Argument 134 157	当該燃料ホースが高圧電線からの放電の影響を受け
+T15	Connective 157 158	て
+R13	REASON Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T5	

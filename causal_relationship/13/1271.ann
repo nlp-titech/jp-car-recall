@@ -1,0 +1,21 @@
+T1	Argument 0 39	大型観光バスにおいて、②左側後写鏡を取り付けるステーのブラケットの形状が不適切
+T2	Connective 40 42	ため
+T3	Argument 43 61	車体側のブラケットとの間に隙間が生じ
+T4	Connective 61 62	て
+T7	Argument 63 90	ボルトを締め付けた際にステー側のブラケットに亀裂が発生
+T8	Connective 98 102	そのため
+T9	Argument 103 117	そのままの状態で使用を続ける
+T10	Connective 117 118	と
+T11	Argument 119 121	最悪
+T12	Connective 122 124	場合
+T13	Argument 125 133	当該後写鏡が脱落
+R1	REASON Arg1:T2 Arg2:T1	
+R2	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T2 Arg2:T3	
+R5	RESULT Arg1:T4 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	CONDITION Arg1:T12 Arg2:T11	
+R9	CONDITION Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T8 Arg2:T13	
+R11	RESULT Arg1:T12 Arg2:T13	
+R12	RESULT Arg1:T10 Arg2:T13	

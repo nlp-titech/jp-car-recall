@@ -1,0 +1,25 @@
+T1	Argument 16 42	ブレーキ制御コンピュータの断線検出プログラムが不適切
+T2	Connective 43 45	ため
+T3	Argument 94 101	接触抵抗が増加
+T4	Connective 102 103	て
+T5	Argument 104 109	断線と判定
+R1	RESULT Arg1:T2 Arg2:T5	
+T6	Connective 117 121	そのため
+T7	Argument 122 128	警告灯が点灯
+T8	Argument 131 148	電動パーキングブレーキが作動しない
+R2	RESULT Arg1:T6 Arg2:T7	
+R4	REASON Arg1:T6 Arg2:T5	
+T9	Argument 64 91	当該パーキングブレーキ用モータ接点に生成された酸化皮膜
+T10	Connective 91 94	により
+R5	REASON Arg1:T10 Arg2:T9	
+R6	RESULT Arg1:T10 Arg2:T3	
+R7	REASON Arg1:T4 Arg2:T3	
+R8	RESULT Arg1:T4 Arg2:T5	
+T11	Argument 46 63	作動または解除操作を長期間行わない
+T12	Connective 63 64	と
+R9	CONDITION Arg1:T12 Arg2:T11	
+R10	RESULT Arg1:T12 Arg2:T9	
+R11	REASON Arg1:T2 Arg2:T1	
+T13	Connective 129 130	て
+R3	REASON Arg1:T13 Arg2:T7	
+R12	RESULT Arg1:T13 Arg2:T8	

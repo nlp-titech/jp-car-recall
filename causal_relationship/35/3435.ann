@@ -1,0 +1,29 @@
+T1	Argument 1 43	動力伝達装置において、ＨＳＴ（静油圧式無段変速機）ホースの取り付け角度の設計が不適切
+T2	Connective 44 46	ため
+T3	Argument 47 68	ホース又はクランプがカウンターケースと接触
+T4	Connective 76 80	そのため
+T5	Argument 81 91	そのまま使用を続ける
+T6	Connective 91 92	と
+T7	Argument 100 109	ホースに亀裂が発生
+T8	Connective 116 117	、
+T9	Argument 117 119	最悪
+T10	Connective 120 122	場合
+T11	Argument 123 128	走行が不能
+R1	RESULT Arg1:T10 Arg2:T11	
+R2	CONDITION Arg1:T10 Arg2:T9	
+R3	RESULT Arg1:T8 Arg2:T11	
+R4	REASON Arg1:T8 Arg2:T12	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	CONDITION Arg1:T6 Arg2:T5	
+R7	RESULT Arg1:T4 Arg2:T7	
+R8	REASON Arg1:T4 Arg2:T3	
+R9	RESULT Arg1:T2 Arg2:T3	
+R10	REASON Arg1:T2 Arg2:T1	
+T12	Argument 110 116	作動油が漏れ
+T13	Argument 93 97	機体振動
+T14	Connective 97 100	により
+T15	Connective 109 110	し
+R11	REASON Arg1:T14 Arg2:T13	
+R12	RESULT Arg1:T14 Arg2:T7	
+R13	REASON Arg1:T15 Arg2:T7	
+R14	RESULT Arg1:T15 Arg2:T12	

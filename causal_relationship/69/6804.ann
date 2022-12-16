@@ -1,0 +1,9 @@
+T1	Argument 6 67	ブリーザパイプ（燃料注入時にエアを抜くためのパイプ）取付部において、車体の変形量が大きくなるような側面からの強い衝突を受け
+T2	Connective 68 70	場合
+T3	Argument 71 87	当該取付部のシールの密封性が低下
+T4	Connective 88 89	、
+T5	Argument 89 95	燃料が漏れる
+R1	CONDITION Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

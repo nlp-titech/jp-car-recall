@@ -1,0 +1,25 @@
+T1	Argument 0 37	手動変速機付車において、ギヤシフトケーブル抜け止め用クリップの形状が不適切
+T2	Connective 38 40	ため
+T4	Argument 41 78	シフト操作時にギヤシフトコントロールレバーのハウジングに当該クリップが干渉
+T5	Connective 86 90	そのため
+T6	Argument 103 112	当該クリップが折損
+T7	Argument 120 148	ギヤシフトケーブルがギヤシフトコントロールレバーから外れ
+T8	Argument 149 157	変速できなくなる
+T9	Connective 148 149	、
+T10	Connective 113 114	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T4	
+R5	REASON Arg1:T5 Arg2:T4	
+R6	RESULT Arg1:T5 Arg2:T6	
+R7	REASON Arg1:T10 Arg2:T6	
+R8	RESULT Arg1:T10 Arg2:T7	
+R9	REASON Arg1:T9 Arg2:T7	
+R10	RESULT Arg1:T9 Arg2:T8	
+T23	Argument 114 116	最悪
+T24	Connective 117 119	場合
+R11	CONDITION Arg1:T24 Arg2:T23	
+R12	RESULT Arg1:T24 Arg2:T7	
+T25	Argument 91 101	そのまま使用を続ける
+T26	Connective 101 102	と
+R13	CONDITION Arg1:T26 Arg2:T25	
+R14	RESULT Arg1:T26 Arg2:T6	

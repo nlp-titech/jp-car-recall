@@ -1,0 +1,25 @@
+T2	Argument 84 108	ＣＤＩユニットの電子素子に瞬間的に高電圧がかかり
+T3	Argument 109 116	電子素子が損傷
+T4	Argument 124 144	メインスイッチを切っても原動機が停止せず
+T5	Argument 145 157	安全な運行ができなくなる
+T6	Connective 31 33	ため
+T7	Connective 108 109	、
+T8	Connective 123 124	、
+T9	Connective 144 145	、
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 74 78	変速操作
+T11	Argument 0 30	原動機において、ＣＤＩユニット（点火制御装置）の回路が不適切
+R1	REASON Arg1:T6 Arg2:T11	
+T1	Argument 34 72	始動安全機構が作動した状態（サイドスタンドを出した状態）でセルモーターを操作
+T13	Connective 81 83	場合
+R12	RESULT Arg1:T13 Arg2:T2	
+T12	Connective 72 73	中
+R10	CONDITION Arg1:T12 Arg2:T1	
+R9	RESULT Arg1:T12 Arg2:T10	
+R11	CONDITION Arg1:T13 Arg2:T10	

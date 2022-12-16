@@ -1,0 +1,13 @@
+T1	Argument 0 61	圧縮天然ガス自動車において、燃料タンクが加熱され圧力が高くなった時に燃料を放出して、タンク内圧を下げる安全部の構造が不適切
+T2	Argument 94 110	規定の温度以下で当該安全弁が作動
+T3	Argument 115 120	燃料を放出
+T4	Connective 111 112	て
+T5	Connective 62 64	ため
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T4 Arg2:T2	
+R4	RESULT Arg1:T4 Arg2:T3	
+T6	Argument 78 90	当該部分が高温にさらされ
+T7	Connective 91 93	場合
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T2	

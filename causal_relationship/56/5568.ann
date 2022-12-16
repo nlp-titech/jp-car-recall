@@ -1,0 +1,25 @@
+T1	Argument 0 33	フロントフォークのインナーチューブにおいて、製造時の熱処理が不適切
+T2	Argument 37 42	強度が不足
+T3	Argument 57 67	そのまま使用を続ける
+T5	Argument 69 75	走行時の振動
+T6	Argument 78 92	インナーチューブに亀裂が生じ
+T7	Argument 93 104	インナーチューブが折損
+T8	Argument 105 112	走行不能になる
+T9	Connective 34 36	ため
+T10	Connective 52 56	そのため
+T11	Connective 67 68	と
+T13	Connective 75 78	により
+T14	Connective 92 93	、
+T15	Connective 104 105	し
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T2	
+R3	REASON Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T6	
+R5	CONDITION Arg1:T11 Arg2:T3	
+R9	REASON Arg1:T13 Arg2:T5	
+R10	RESULT Arg1:T13 Arg2:T6	
+R11	REASON Arg1:T14 Arg2:T6	
+R12	RESULT Arg1:T14 Arg2:T7	
+R13	REASON Arg1:T15 Arg2:T7	
+R14	RESULT Arg1:T15 Arg2:T8	
+R6	RESULT Arg1:T11 Arg2:T6	

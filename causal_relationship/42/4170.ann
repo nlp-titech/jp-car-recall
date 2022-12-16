@@ -1,0 +1,33 @@
+T1	Argument 0 42	大型トラック用エンジンにおいて、ピストン燃焼室壁部に燃焼による熱と圧力が繰り返し作用
+T2	Connective 43 44	、
+T3	Argument 46 53	ダメージが蓄積
+T4	Connective 54 55	て
+T5	Argument 55 60	亀裂に至る
+T6	Connective 66 70	そのため
+T7	Argument 87 102	ピストン燃焼室壁部の亀裂が進行
+T8	Connective 103 104	て
+T9	Argument 104 108	穴が開き
+T10	Connective 108 109	、
+T11	Argument 115 130	エンジンの出力低下及び白煙排出
+T12	Connective 130 133	により
+T13	Argument 134 141	走行不能に至る
+R1	REASON Arg1:T12 Arg2:T11	
+R2	RESULT Arg1:T10 Arg2:T11	
+R3	REASON Arg1:T10 Arg2:T9	
+R4	REASON Arg1:T8 Arg2:T7	
+R5	RESULT Arg1:T8 Arg2:T9	
+T14	Argument 109 111	最悪
+T15	Connective 112 114	場合
+R6	CONDITION Arg1:T15 Arg2:T14	
+R7	RESULT Arg1:T15 Arg2:T11	
+R8	REASON Arg1:T6 Arg2:T5	
+R9	RESULT Arg1:T6 Arg2:T7	
+T16	Argument 71 85	そのままの状態で使用を続ける
+T17	Connective 85 86	と
+R10	CONDITION Arg1:T17 Arg2:T16	
+R11	RESULT Arg1:T17 Arg2:T7	
+R12	REASON Arg1:T4 Arg2:T3	
+R13	RESULT Arg1:T4 Arg2:T5	
+R14	REASON Arg1:T2 Arg2:T1	
+R15	RESULT Arg1:T2 Arg2:T3	
+R16	RESULT Arg1:T12 Arg2:T13	

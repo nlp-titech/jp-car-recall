@@ -1,0 +1,22 @@
+T1	Argument 0 52	１２段機械式自動変速機を搭載した大型トラックにおいて、①エアの供給を制御するサプライバルブの耐久性が不足
+T2	Connective 56 58	ため
+T3	Argument 59 70	制御圧の基準値を外れる
+T4	Connective 76 80	そのため
+T5	Argument 81 112	トランスミッションの制御系に十分なエアが供給されずにシフト不良
+T6	Connective 121 122	、
+T7	Argument 122 124	最悪
+T8	Connective 125 127	場合
+T9	Argument 128 135	路上故障に至る
+R1	RESULT Arg1:T8 Arg2:T9	
+R2	CONDITION Arg1:T8 Arg2:T7	
+R3	RESULT Arg1:T6 Arg2:T9	
+R4	REASON Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T5	
+R6	REASON Arg1:T4 Arg2:T3	
+R7	RESULT Arg1:T2 Arg2:T3	
+R8	REASON Arg1:T2 Arg2:T1	
+T10	Argument 145 161	エア圧が十分な状態で運行を始めれ
+T11	Argument 163 173	シフト不良は生じない
+T12	Connective 161 162	ば
+R9	CONDITION Arg1:T12 Arg2:T10	
+R10	RESULT Arg1:T12 Arg2:T11	

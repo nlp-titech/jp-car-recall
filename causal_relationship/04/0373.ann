@@ -1,0 +1,17 @@
+T1	Argument 0 42	二輪警察車の走行装置の後輪取り付けホイールボルトにおいて、当該ボルトの熱処理に不適切
+T2	Argument 67 75	当該ボルトが折損
+T3	Argument 83 88	車輪が脱落
+T5	Connective 48 50	ため
+T6	Connective 76 77	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+T4	Argument 51 65	そのままの状態で使用を続ける
+T7	Connective 65 66	と
+R5	CONDITION Arg1:T7 Arg2:T4	
+R6	RESULT Arg1:T7 Arg2:T2	
+T8	Argument 77 79	最悪
+T9	Connective 80 82	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	

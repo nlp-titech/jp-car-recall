@@ -1,0 +1,25 @@
+T1	Argument 0 52	アクセルペダルモジュールの取り付けブラケットにおいて、当該モジュールを組み付けるためのフックの強度が不足
+T2	Argument 59 73	アクセルペダルを強く踏み込む
+T3	Argument 74 82	当該フックが変形
+T4	Argument 95 105	そのまま使用を続ける
+T5	Argument 106 126	当該モジュールのペダル部分に捻じれが生じ
+T6	Argument 127 143	アクセルペダルを最大まで踏み込ん
+T7	Argument 147 161	アクセルペダルが戻らなくなる
+T8	Connective 56 58	ため
+T9	Connective 73 74	と
+T10	Connective 90 94	そのため
+T11	Connective 105 106	と
+T12	Connective 126 127	、
+T13	Connective 144 146	場合
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T3	
+R3	CONDITION Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T3	
+R5	REASON Arg1:T10 Arg2:T3	
+R6	RESULT Arg1:T10 Arg2:T5	
+R7	CONDITION Arg1:T11 Arg2:T4	
+R8	RESULT Arg1:T11 Arg2:T5	
+R9	REASON Arg1:T12 Arg2:T5	
+R10	RESULT Arg1:T12 Arg2:T7	
+R11	CONDITION Arg1:T13 Arg2:T6	
+R12	RESULT Arg1:T13 Arg2:T7	

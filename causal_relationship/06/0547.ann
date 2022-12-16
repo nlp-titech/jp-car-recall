@@ -1,0 +1,43 @@
+T1	Argument 0 35	電気装置において、右サイドフレーム内のバッテリー配線の取り回しが不適切
+T2	Argument 48 82	当該配線がブレーキ制御用ナイロンチューブを固定しているクリップと干渉
+T3	Argument 106 119	当該配線の被覆が損傷・短絡
+T4	Argument 121 138	当該配線及びナイロンチューブが焼損
+T5	Argument 146 162	ナイロンチューブからエアーが漏れ
+T6	Argument 163 173	エアー漏れ警報が作動
+T7	Argument 175 179	制動不能
+T8	Argument 186 202	スプリングブレーキ安全装置が作動
+T9	Argument 204 211	走行不能となる
+T10	Connective 36 38	ため
+T11	Connective 89 90	、
+T12	Connective 120 121	て
+T13	Connective 139 140	、
+T14	Connective 162 163	、
+T15	Connective 174 175	て
+T16	Connective 203 204	て
+T20	Connective 45 48	により
+T21	Argument 39 45	走行時の振動
+R1	REASON Arg1:T10 Arg2:T1	
+R2	RESULT Arg1:T10 Arg2:T2	
+R3	REASON Arg1:T20 Arg2:T21	
+R4	RESULT Arg1:T20 Arg2:T2	
+R5	REASON Arg1:T11 Arg2:T2	
+R6	RESULT Arg1:T11 Arg2:T3	
+R7	REASON Arg1:T12 Arg2:T3	
+R8	RESULT Arg1:T12 Arg2:T4	
+R9	REASON Arg1:T13 Arg2:T4	
+R10	RESULT Arg1:T13 Arg2:T5	
+R11	REASON Arg1:T14 Arg2:T5	
+R12	RESULT Arg1:T14 Arg2:T6	
+R13	REASON Arg1:T15 Arg2:T6	
+R14	RESULT Arg1:T15 Arg2:T7	
+R15	RESULT Arg1:T14 Arg2:T8	
+R16	REASON Arg1:T16 Arg2:T8	
+R17	RESULT Arg1:T16 Arg2:T9	
+T17	Argument 90 104	そのままの状態で使用を続ける
+T18	Connective 104 105	と
+R18	CONDITION Arg1:T18 Arg2:T17	
+R19	RESULT Arg1:T18 Arg2:T3	
+T19	Argument 140 142	最悪
+T22	Connective 143 145	場合
+R20	CONDITION Arg1:T22 Arg2:T19	
+R21	RESULT Arg1:T22 Arg2:T5	

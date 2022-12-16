@@ -1,0 +1,17 @@
+T1	Argument 0 23	原動機の吸排気バルブスプリングの熱処理が不適切
+T2	Argument 43 53	当該スプリングが折損
+T9	Connective 24 26	ため
+T10	Connective 54 55	、
+R1	REASON Arg1:T9 Arg2:T1	
+R4	RESULT Arg1:T9 Arg2:T2	
+T4	Argument 27 41	そのままの状態で使用を続ける
+T5	Connective 41 42	と
+R6	RESULT Arg1:T5 Arg2:T2	
+T6	Argument 55 57	最悪
+T7	Connective 58 60	場合
+R7	CONDITION Arg1:T7 Arg2:T6	
+T3	Argument 61 79	原動機が停止し、再始動ができなくなる
+R5	RESULT Arg1:T7 Arg2:T3	
+R3	CONDITION Arg1:T5 Arg2:T4	
+R2	REASON Arg1:T10 Arg2:T2	
+R8	RESULT Arg1:T10 Arg2:T3	

@@ -1,0 +1,27 @@
+T1	Argument 0 37	電気装置において、燃料ポンプ用電気配線の固定クランプの取り付け位置が不適切
+T2	Argument 41 58	メインハーネスが当該クランプと干渉
+T3	Argument 92 102	メインハーネスが損傷
+T4	Argument 110 118	内部の配線が短絡
+T5	Argument 121 169	灯火装置において、前照灯、制動灯、尾灯、番号灯、速度計照明及び方向指示器が点灯又は作動しなくなる
+T6	Argument 173 191	原動機が停止して再始動が出来なくなる
+T7	Connective 38 40	ため
+T8	Connective 67 68	、
+T9	Connective 109 110	、
+T10	Connective 119 120	て
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T5	
+R9	RESULT Arg1:T10 Arg2:T6	
+T11	Argument 84 89	車両の振動
+T17	Connective 89 92	により
+R10	RESULT Arg1:T17 Arg2:T3	
+R11	REASON Arg1:T17 Arg2:T11	
+T12	Argument 68 82	そのままの状態で使用を続ける
+T13	Connective 82 83	と
+R12	CONDITION Arg1:T13 Arg2:T12	
+R13	RESULT Arg1:T13 Arg2:T3	

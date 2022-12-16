@@ -1,0 +1,23 @@
+T1	Argument 7 59	フルタイム式四輪駆動車のフロントハブフランジにおいて、ドライブシャフトを接合するスプライン部の硬度が不足
+T2	Argument 66 77	当該スプライン部が摩耗
+T3	Argument 90 95	異音が発生
+T4	Argument 102 116	そのままの状態で使用を続ける
+T5	Argument 118 129	ドライブシャフトが空転
+T6	Argument 132 134	最悪
+T7	Argument 138 145	走行不能となる
+T8	Connective 63 65	ため
+T9	Connective 85 89	そのため
+T10	Connective 116 117	と
+T11	Connective 130 131	て
+T12	Connective 135 137	場合
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T2	
+R3	REASON Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T3	
+R6	CONDITION Arg1:T10 Arg2:T4	
+R7	RESULT Arg1:T10 Arg2:T5	
+R8	REASON Arg1:T11 Arg2:T5	
+R10	CONDITION Arg1:T12 Arg2:T6	
+R11	RESULT Arg1:T12 Arg2:T7	
+R5	RESULT Arg1:T9 Arg2:T5	
+R9	RESULT Arg1:T11 Arg2:T7	

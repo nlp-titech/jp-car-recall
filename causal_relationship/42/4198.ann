@@ -1,0 +1,43 @@
+T1	Argument 0 45	刈取脱穀作業車のディーゼルエンジンにおいて、エンジン制御コンピュータの燃料噴射制御が不適切
+T2	Connective 46 48	ため
+T3	Argument 49 60	燃料のプレ噴射量が不足
+T4	Connective 60 61	し
+T6	Connective 80 84	そのため
+T7	Argument 107 122	未燃物質がバルブガイド周辺に入
+T8	Connective 122 123	り
+T9	Argument 123 125	堆積
+T10	Connective 125 126	、
+T11	Argument 126 128	硬化
+T12	Connective 129 130	て
+T13	Argument 131 143	当該バルブが動きにくくな
+T14	Connective 143 144	り
+T15	Argument 144 149	異音が発生
+T16	Argument 157 176	エンジンが停止して、再始動できなくなる
+R1	RESULT Arg1:T14 Arg2:T16	
+R2	RESULT Arg1:T14 Arg2:T15	
+T17	Argument 151 153	最悪
+T18	Connective 154 156	場合
+R3	CONDITION Arg1:T18 Arg2:T17	
+R4	RESULT Arg1:T18 Arg2:T16	
+R5	REASON Arg1:T8 Arg2:T7	
+R6	RESULT Arg1:T8 Arg2:T9	
+R7	REASON Arg1:T10 Arg2:T9	
+R8	RESULT Arg1:T10 Arg2:T11	
+R9	REASON Arg1:T12 Arg2:T11	
+R10	RESULT Arg1:T12 Arg2:T13	
+R11	REASON Arg1:T14 Arg2:T13	
+R13	RESULT Arg1:T6 Arg2:T7	
+T19	Argument 85 104	インレット及びエキゾーストバルブが開い
+T20	Connective 105 107	際に
+R14	CONDITION Arg1:T20 Arg2:T19	
+R15	RESULT Arg1:T20 Arg2:T7	
+R16	REASON Arg1:T2 Arg2:T1	
+R17	RESULT Arg1:T2 Arg2:T3	
+R18	REASON Arg1:T4 Arg2:T3	
+T5	Argument 61 64	燃焼時
+T21	Connective 64 65	に
+R12	CONDITION Arg1:T21 Arg2:T5	
+T22	Argument 65 72	未燃物質が発生
+R19	REASON Arg1:T6 Arg2:T22	
+R20	RESULT Arg1:T21 Arg2:T22	
+R21	RESULT Arg1:T4 Arg2:T22	

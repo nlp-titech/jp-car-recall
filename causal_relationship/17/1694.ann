@@ -1,0 +1,33 @@
+T1	Argument 0 40	前輪ドラムブレーキのバックプレートを車軸に取り付けるボルトの締め付けトルクが不足
+T2	Connective 44 46	ため
+T3	Argument 47 53	ブレーキ操作
+T4	Argument 55 61	ボルトが緩む
+T5	Connective 53 54	時
+T6	Argument 88 94	ボルトが脱落
+T7	Connective 95 96	、
+T8	Argument 102 109	脱落したボルト
+T9	Connective 109 112	により
+T10	Argument 112 134	ブレーキ構成部品であるホイールシリンダが破損
+T11	Connective 135 136	、
+T12	Argument 136 147	ブレーキが効かなくなる
+R1	REASON Arg1:T11 Arg2:T10	
+R2	RESULT Arg1:T11 Arg2:T12	
+R3	REASON Arg1:T9 Arg2:T8	
+R4	RESULT Arg1:T9 Arg2:T10	
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T8	
+T13	Connective 67 71	そのため
+R7	REASON Arg1:T13 Arg2:T4	
+R8	RESULT Arg1:T13 Arg2:T6	
+R9	RESULT Arg1:T5 Arg2:T4	
+R10	CONDITION Arg1:T5 Arg2:T3	
+R11	RESULT Arg1:T2 Arg2:T4	
+R12	REASON Arg1:T2 Arg2:T1	
+T18	Argument 72 86	そのままの状態で使用を続ける
+T19	Connective 86 87	と
+R13	CONDITION Arg1:T19 Arg2:T18	
+R14	RESULT Arg1:T19 Arg2:T6	
+T20	Argument 96 98	最悪
+T21	Connective 99 101	場合
+R15	CONDITION Arg1:T21 Arg2:T20	
+R16	RESULT Arg1:T21 Arg2:T10	

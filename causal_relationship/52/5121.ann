@@ -1,0 +1,25 @@
+T1	Argument 6 31	リヤスポイラー取り付けボルト及びワッシャーが不適切
+T2	Connective 32 34	ため
+T3	Argument 45 51	ボルトが緩み
+T4	Connective 51 52	、
+T5	Argument 52 68	当該スポイラーがばたつく音が発生
+T6	Connective 76 80	そのため
+T7	Argument 99 109	当該スポイラーが脱落
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T3	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 81 91	そのまま走行を続ける
+T9	Connective 91 92	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T7	
+T10	Argument 93 95	最悪
+T11	Connective 96 98	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T7	
+T12	Argument 35 42	走行中の振動に
+T13	Connective 42 45	よって
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T3	

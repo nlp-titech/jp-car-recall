@@ -1,0 +1,33 @@
+T1	Argument 0 18	リコールによる改善措置の指示が不適切
+T2	Connective 19 21	ため
+T3	Argument 22 49	変向機のピニオンギヤシャフトのスプライン部に摩耗が残っ
+T4	Connective 58 59	、
+T5	Argument 59 73	そのままの状態で使用を続ける
+T6	Connective 73 74	と
+T7	Argument 75 102	変速機と変向機との間のドライブシャフトに偏芯回転が発生
+T8	Connective 106 110	によって
+T9	Argument 110 140	フライホイールハウジングの変向機取り付け部に過大な力が加わり
+T10	Connective 140 141	、
+T11	Argument 141 143	最悪
+T12	Connective 144 146	場合
+T13	Argument 147 157	当該取り付け部が破損
+T14	Connective 157 158	、
+T15	Argument 158 164	変向機が脱落
+T16	Connective 165 166	て
+T17	Argument 166 173	走行不能となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	CONDITION Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T7	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R15	REASON Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T17	

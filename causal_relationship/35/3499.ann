@@ -1,0 +1,55 @@
+T1	Argument 18 72	エアコンプレッサのシートガスケット（エアコンプレッサ内の冷却水通路とエア通路の気密性を保つもの）の強度が不足
+T2	Connective 76 78	ため
+T3	Argument 79 109	ピストンの往復運動による圧力振動で当該ガスケットに亀裂が発生
+T4	Connective 117 121	そのため
+T5	Argument 122 133	冷却水がエア通路に浸入
+T6	Argument 136 181	エア圧送時に配管を伝わり、エアドライヤ（圧縮空気中の水分や油分を取り除くもの）から排出され
+T7	Connective 181 182	、
+T8	Argument 182 188	冷却水が減少
+T9	Connective 190 193	ことで
+T10	Argument 193 199	警告灯が点灯
+T12	Argument 201 215	そのままの状態で使用を続ける
+T13	Connective 215 216	と
+T14	Argument 217 230	エンジンの出力が制限される
+T15	Argument 232 248	エア圧縮時の熱により冷却水が乾燥
+T16	Connective 249 250	、
+T17	Argument 250 273	結晶化して生成された固形物が吸排気バルブに付着
+T18	Connective 275 278	ことで
+T19	Argument 279 294	吸入または圧送されるエアが減少
+T20	Connective 296 298	ため
+T21	Argument 299 305	エア圧が低下
+T22	Connective 307 310	ことで
+T23	Argument 310 328	警報ブザーが鳴るとともに警告灯が点灯
+T25	Argument 330 344	そのままの状態で使用を続ける
+T26	Connective 344 345	と
+T27	Argument 346 374	充分なエア圧が確保できなくなりブレーキ機能に影響を及ぼし
+T28	Connective 374 375	、
+T29	Argument 375 382	路上故障に至る
+R1	RESULT Arg1:T28 Arg2:T29	
+R2	REASON Arg1:T28 Arg2:T27	
+R3	RESULT Arg1:T26 Arg2:T27	
+R4	CONDITION Arg1:T26 Arg2:T25	
+R7	RESULT Arg1:T22 Arg2:T23	
+R8	REASON Arg1:T22 Arg2:T21	
+R9	RESULT Arg1:T20 Arg2:T21	
+R10	REASON Arg1:T20 Arg2:T19	
+R11	RESULT Arg1:T18 Arg2:T19	
+R12	REASON Arg1:T18 Arg2:T17	
+R13	RESULT Arg1:T16 Arg2:T17	
+R14	REASON Arg1:T16 Arg2:T15	
+R15	RESULT Arg1:T13 Arg2:T14	
+R16	CONDITION Arg1:T13 Arg2:T12	
+R19	RESULT Arg1:T9 Arg2:T10	
+R20	REASON Arg1:T9 Arg2:T8	
+R21	RESULT Arg1:T7 Arg2:T8	
+R22	REASON Arg1:T7 Arg2:T6	
+T30	Connective 134 135	、
+R23	RESULT Arg1:T30 Arg2:T6	
+R24	REASON Arg1:T30 Arg2:T5	
+R25	RESULT Arg1:T4 Arg2:T5	
+R26	REASON Arg1:T4 Arg2:T3	
+R27	RESULT Arg1:T2 Arg2:T3	
+R28	REASON Arg1:T2 Arg2:T1	
+R29	RESULT Arg1:T30 Arg2:T15	
+R5	RESULT Arg1:T22 Arg2:T27	
+R6	RESULT Arg1:T9 Arg2:T14	

@@ -1,0 +1,11 @@
+T1	Argument 0 27	助手席のエアバッグにおいて、制御装置の電気回路が不適切
+T2	Connective 33 35	ため
+T3	Argument 36 52	衝突時等に正常な信号が発信されず
+T4	Connective 52 53	、
+T5	Argument 53 64	エアバッグが展開しない
+T6	Argument 66 75	展開が不十分となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T6	

@@ -1,0 +1,9 @@
+T1	Connective 24 26	ため
+T2	Argument 0 23	前面方向指示器バルブ切れ検知プログラムが不適切
+T3	Argument 27 37	当該バルブ切れが発生
+T4	Connective 39 42	場合に
+T5	Argument 43 131	運転者に対するバルブ切れ警告機能（側面方向指示器、後面方向指示器及びインストルメントクラスター内の方向指示表示灯の点滅回数変化並びに方向指示器作動音の発生周期変化）が作動しない
+R1	REASON Arg1:T1 Arg2:T2	
+R2	RESULT Arg1:T1 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

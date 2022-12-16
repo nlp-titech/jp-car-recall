@@ -1,0 +1,9 @@
+T1	Argument 18 67	エアバッグコントロールユニットに電源を供給しているロータリースイッチの内部接点が摩耗により接触不良
+T2	Connective 67 70	となり
+T3	Argument 71 79	事故等の前面衝突
+T4	Connective 79 80	時
+T5	Argument 82 93	エアバッグが作動しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	

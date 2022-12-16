@@ -1,0 +1,19 @@
+T1	Argument 0 59	高所作業車の架装において、シャシの車外リレーボックスを移設した際に、当該リレーボックスの配線と架装物の油圧ホースが干渉
+T2	Connective 69 73	そのため
+T3	Argument 86 91	走行振動等
+T4	Connective 91 94	により
+T5	Argument 94 103	当該配線がショート
+T6	Argument 112 119	エンジンが停止
+T7	Connective 104 105	、
+R3	REASON Arg1:T2 Arg2:T1	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T4 Arg2:T3	
+R6	RESULT Arg1:T4 Arg2:T5	
+R7	REASON Arg1:T7 Arg2:T5	
+R8	RESULT Arg1:T7 Arg2:T6	
+T10	Argument 74 84	そのまま使用を続ける
+T11	Connective 84 85	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	
+T12	Argument 105 111	灯火類の不灯
+R11	RESULT Arg1:T7 Arg2:T12	

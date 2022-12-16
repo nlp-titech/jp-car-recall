@@ -1,0 +1,29 @@
+T1	Argument 0 43	車いす乗降用スロープ装着車において、スロープヒンジ及び車体取付ブラケットの設計が不適切
+T2	Connective 44 46	ため
+T3	Argument 66 76	ヒンジに亀裂が生じる
+T4	Connective 82 86	そのため
+T5	Argument 103 109	ヒンジが破断
+T6	Connective 110 111	て
+T7	Argument 111 118	スロープが傾き
+T8	Argument 125 139	車いす利用者及び介助者が転倒
+T9	Connective 118 119	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+T10	Argument 119 121	最悪
+T11	Connective 122 124	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T8	
+T12	Argument 87 101	そのままの状態で使用を続ける
+T13	Connective 101 102	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T5	
+T14	Argument 47 64	スロープ開閉と車いす乗降を繰り返す
+T15	Connective 64 65	と
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T3	

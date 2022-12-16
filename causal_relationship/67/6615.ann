@@ -1,0 +1,43 @@
+T1	Argument 1 37	農耕トラクタの原動機において、テンションプーリブラケットの組付けが不適切
+T2	Connective 38 40	ため
+T3	Argument 41 52	固定ボルトの軸力が不足
+T4	Connective 62 66	そのため
+T5	Argument 67 81	そのままの状態で使用を続ける
+T6	Connective 81 82	と
+T7	Argument 83 90	エンジン振動等
+T8	Connective 90 93	により
+T9	Argument 103 122	テンションションプーリブラケットが傾き
+T10	Connective 122 123	、
+T11	Argument 94 102	固定ボルトが緩み
+T12	Connective 102 103	、
+T13	Argument 123 135	エンジン補機ベルトが外れ
+T14	Connective 135 136	て
+T15	Argument 137 163	オルタネータ、ラジエタファン、エアコンプレッサが停止
+T16	Connective 164 165	て
+T17	Argument 166 172	警告灯が点灯
+T19	Argument 174 176	最悪
+T20	Connective 177 179	場合
+T21	Argument 180 187	エンジンが停止
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T11	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T11	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T11	
+R9	REASON Arg1:T12 Arg2:T11	
+R10	RESULT Arg1:T12 Arg2:T9	
+R11	REASON Arg1:T10 Arg2:T9	
+R12	RESULT Arg1:T10 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R15	REASON Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T17	
+R17	RESULT Arg1:T16 Arg2:T21	
+R20	CONDITION Arg1:T20 Arg2:T19	
+R21	RESULT Arg1:T20 Arg2:T21	
+T18	Connective 188 189	、
+T22	Argument 189 198	再始動できなくなる
+R18	REASON Arg1:T18 Arg2:T21	
+R19	RESULT Arg1:T18 Arg2:T22	

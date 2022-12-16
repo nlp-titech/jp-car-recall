@@ -1,0 +1,5 @@
+T1	Argument 0 68	電動駐車ブレーキのイコライザ（駐車ブレーキの操作力を左右の車輪に均等に振り分ける装置）において、ケーブルの固定クリップが装着されていない
+T2	Argument 79 93	駐車ブレーキが片効きを起こす
+T3	Connective 74 78	そのため
+R1	REASON Arg1:T3 Arg2:T1	
+R2	RESULT Arg1:T3 Arg2:T2	

@@ -1,0 +1,33 @@
+T1	Argument 9 28	発電機の出力電源配線の耐熱措置が不適切
+T2	Connective 29 31	ため
+T3	Argument 61 71	当該配線の被膜が溶損
+T4	Connective 78 79	、
+T5	Argument 85 102	露出した出力電源線が発電機等に接触
+T6	Connective 103 104	て
+T7	Argument 104 106	短絡
+T8	Connective 107 108	、
+T9	Argument 108 113	火花が発生
+T10	Connective 114 115	て
+T11	Argument 115 122	車両火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 32 46	そのままの状態で使用を続ける
+T13	Connective 46 47	と
+T14	Argument 48 58	触媒装置からの輻射熱
+T15	Connective 58 61	により
+R11	REASON Arg1:T15 Arg2:T14	
+R12	RESULT Arg1:T15 Arg2:T3	
+T16	Argument 79 81	最悪
+T17	Connective 82 84	場合
+R13	CONDITION Arg1:T17 Arg2:T16	
+R14	RESULT Arg1:T17 Arg2:T5	
+R15	CONDITION Arg1:T13 Arg2:T12	
+R16	RESULT Arg1:T13 Arg2:T3	

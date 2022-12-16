@@ -1,0 +1,25 @@
+T1	Argument 0 16	前照灯の電球の仕様の設定が不適切
+T2	Connective 17 19	ため
+T5	Argument 20 39	前照灯を点灯した時に、電球の温度が高温
+T6	Connective 42 43	、
+T7	Argument 43 65	導入線のガラス封着部の表面の劣化が早期に進行
+T8	Connective 73 77	そのため
+T9	Argument 78 88	外気が電球内部に侵入
+T10	Argument 90 101	フィラメントが異常燃焼
+T11	Connective 102 103	て
+T12	Connective 89 90	、
+T13	Argument 103 105	断線
+T14	Connective 106 107	、
+T15	Argument 107 116	前照灯が不灯となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T12 Arg2:T9	
+R10	RESULT Arg1:T12 Arg2:T10	
+R11	REASON Arg1:T11 Arg2:T10	
+R12	RESULT Arg1:T11 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	

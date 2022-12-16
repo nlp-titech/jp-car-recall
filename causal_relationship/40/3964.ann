@@ -1,0 +1,13 @@
+T1	Argument 21 34	フィルタケースの強度が不足
+T2	Argument 41 57	燃料圧力の変動およびエンジン振動
+T3	Argument 60 73	フィルタケースに亀裂が入る
+T4	Argument 79 85	燃料が漏れる
+T5	Connective 38 40	ため
+T6	Connective 57 60	により
+T7	Connective 78 79	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T3	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	

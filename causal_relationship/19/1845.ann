@@ -1,0 +1,23 @@
+T1	Argument 0 27	エアコンコンプレッサの電磁クラッチ面の接触面積が小さく
+T2	Connective 27 28	、
+T3	Argument 28 34	余裕度が不足
+T4	Connective 43 45	ため
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 85 95	クラッチ部が異常発熱
+T6	Connective 96 97	、
+T7	Argument 103 108	火災に至る
+R4	RESULT Arg1:T4 Arg2:T8	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 46 67	コンプレッサ駆動用ベルトの張力が過大に調整
+T10	Argument 72 80	高回転で連続走行
+T11	Connective 83 84	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	
+T15	Argument 97 99	最悪
+T16	Connective 100 102	場合
+R11	CONDITION Arg1:T16 Arg2:T15	
+R12	RESULT Arg1:T16 Arg2:T7	
+R7	CONDITION Arg1:T11 Arg2:T8	

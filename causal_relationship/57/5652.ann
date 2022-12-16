@@ -1,0 +1,21 @@
+T1	Argument 4 33	コネクティングロッドにおいて、製造時に誤って歪み矯正を行っ
+T2	Argument 37 42	強度が低下
+T3	Argument 65 78	コネクティングロッドが破損
+T4	Argument 80 86	原動機が停止
+T5	Argument 88 95	走行不能になる
+T6	Connective 34 36	ため
+T7	Connective 52 56	そのため
+T8	Connective 79 80	、
+T9	Connective 87 88	て
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 57 61	使用過程
+T11	Connective 61 65	において
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	

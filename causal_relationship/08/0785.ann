@@ -1,0 +1,29 @@
+T1	Argument 0 20	クランク角センサ用配線の固定方法が不適切
+T2	Connective 21 23	ため
+T3	Argument 24 31	取付けバラツキ
+T4	Connective 31 34	により
+T5	Argument 35 55	当該配線がパワーステアリングベルトと接触
+T6	Connective 56 57	、
+T7	Argument 57 62	被覆が損傷
+T8	Connective 70 74	そのため
+T9	Argument 75 89	そのままの状態で使用を続ける
+T10	Connective 89 90	と
+T11	Argument 91 93	最悪
+T12	Connective 94 96	場合
+T13	Argument 97 105	配線が断線に至り
+T14	Connective 105 106	、
+T15	Argument 106 121	エンストし、再始動できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T5	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	CONDITION Arg1:T10 Arg2:T9	
+R9	CONDITION Arg1:T12 Arg2:T11	
+R10	RESULT Arg1:T12 Arg2:T13	
+R11	RESULT Arg1:T10 Arg2:T13	
+R12	RESULT Arg1:T8 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	

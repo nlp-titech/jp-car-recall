@@ -1,0 +1,41 @@
+T1	Argument 37 56	油圧ポンプのオイルシールの構造が不適切
+T2	Connective 57 59	ため
+T4	Connective 90 94	そのため
+T5	Argument 95 101	シールが摩耗
+T6	Connective 103 106	ことで
+T7	Argument 106 115	シール性が損なわれ
+T8	Connective 115 116	、
+T9	Argument 116 137	オイルがフライホイールハウジングに漏れ出し
+T10	Connective 137 138	、
+T11	Argument 138 152	そのままの状態で使用を続ける
+T12	Connective 152 153	と
+T13	Argument 154 188	漏れ出したオイルがフライホイールハウジング内でオイルの温度が高くなり
+T14	Connective 188 189	、
+T15	Argument 189 191	最悪
+T16	Connective 192 194	場合
+T17	Argument 195 208	フライホイールダンパが溶損
+T18	Connective 209 210	、
+T19	Argument 210 217	走行不能となる
+R1	RESULT Arg1:T18 Arg2:T19	
+R2	REASON Arg1:T18 Arg2:T17	
+R3	RESULT Arg1:T16 Arg2:T17	
+R4	CONDITION Arg1:T16 Arg2:T15	
+R5	RESULT Arg1:T14 Arg2:T17	
+R6	REASON Arg1:T14 Arg2:T13	
+R7	RESULT Arg1:T12 Arg2:T13	
+R8	CONDITION Arg1:T12 Arg2:T11	
+R9	RESULT Arg1:T10 Arg2:T13	
+R10	REASON Arg1:T10 Arg2:T9	
+R11	RESULT Arg1:T8 Arg2:T9	
+R12	REASON Arg1:T8 Arg2:T7	
+R13	RESULT Arg1:T6 Arg2:T7	
+R14	REASON Arg1:T6 Arg2:T5	
+R15	RESULT Arg1:T4 Arg2:T5	
+R18	REASON Arg1:T2 Arg2:T1	
+T3	Argument 60 73	始動直後ポンプ内圧が高くな
+T20	Connective 73 74	り
+R16	RESULT Arg1:T2 Arg2:T3	
+T21	Argument 74 82	当該シールが変形
+R17	REASON Arg1:T4 Arg2:T21	
+R19	RESULT Arg1:T20 Arg2:T21	
+R20	REASON Arg1:T20 Arg2:T3	

@@ -1,0 +1,17 @@
+T1	Argument 0 55	バン架装を行った大型トラックにおいて、荷台床下に装着されてるフェンダー天井板を取付する為のリベット選定が不適切
+T2	Connective 56 58	ため
+T5	Argument 59 61	電蝕
+T6	Connective 81 85	そのため
+T7	Argument 102 125	当該取付リベットとともにフェンダー天井板が脱落
+R1	REASON Arg1:T2 Arg2:T1	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 86 100	そのままの状態で使用を続ける
+T9	Connective 100 101	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T7	
+R2	RESULT Arg1:T2 Arg2:T5	
+T3	Connective 61 64	により
+T4	Argument 64 73	当該リベットが腐食
+R3	REASON Arg1:T3 Arg2:T5	
+R4	RESULT Arg1:T3 Arg2:T4	
+R5	REASON Arg1:T6 Arg2:T4	

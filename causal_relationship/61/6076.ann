@@ -1,0 +1,17 @@
+T1	Argument 9 30	ブレーキレバーにおいて、メッキ加工が不適切
+T2	Connective 37 41	そのため
+T3	Argument 42 69	ブレーキレバーがマスターシリンダピストンの動作を妨げる
+T4	Connective 69 72	ことで
+T5	Argument 72 86	前輪ブレーキの引きずりが発生
+T6	Argument 88 90	最悪
+T7	Connective 91 93	場合
+T8	Argument 94 100	前輪がロック
+T9	Connective 87 88	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T9 Arg2:T5	
+R6	RESULT Arg1:T9 Arg2:T8	
+R7	CONDITION Arg1:T7 Arg2:T6	
+R8	RESULT Arg1:T7 Arg2:T8	

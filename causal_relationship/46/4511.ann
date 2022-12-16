@@ -1,0 +1,25 @@
+T1	Argument 0 16	燃料タンクの保護板の形状が不適切
+T2	Connective 17 19	ため
+T3	Argument 20 23	衝突等
+T5	Argument 35 55	プロペラシャフトが燃料タンクを押しつぶし
+T6	Connective 55 56	、
+T7	Argument 62 69	燃料漏れを生じ
+T8	Connective 69 70	て
+T9	Argument 70 75	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Connective 23 26	による
+T11	Argument 26 31	衝撃を受け
+T12	Connective 32 34	場合
+R3	REASON Arg1:T10 Arg2:T3	
+R4	RESULT Arg1:T10 Arg2:T11	
+R10	RESULT Arg1:T12 Arg2:T5	
+T4	Argument 56 58	最悪
+T13	Connective 59 61	場合
+R12	RESULT Arg1:T13 Arg2:T7	
+R15	CONDITION Arg1:T13 Arg2:T4	
+R16	CONDITION Arg1:T12 Arg2:T11	
+R14	CONDITION Arg1:T8 Arg2:T7	

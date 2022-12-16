@@ -1,0 +1,21 @@
+T1	Argument 0 59	パーキングスタンド（後輪を接地させたまま車体を保持するためのスタンド）を上げ下ろしするための構造において、設計が不適切
+T2	Connective 60 62	ため
+T3	Argument 63 112	後輪のブレーキレバーを強い力で最大引き量またはその近くまで握らないとパーキングスタンドが下ろせない
+T4	Connective 113 117	そのため
+T5	Argument 118 130	パーキングスタンドを使用
+T6	Connective 132 135	たびに
+T7	Argument 136 156	後輪のブレーキケーブルが過度に引っ張られ
+T8	Connective 176 177	、
+T9	Argument 177 190	後輪ブレーキが利かなくなる
+R1	RESULT Arg1:T8 Arg2:T9	
+R4	CONDITION Arg1:T6 Arg2:T5	
+R6	REASON Arg1:T4 Arg2:T3	
+R7	RESULT Arg1:T2 Arg2:T3	
+R8	REASON Arg1:T2 Arg2:T1	
+T15	Argument 166 175	当該ケーブルが切損
+R2	RESULT Arg1:T6 Arg2:T7	
+T16	Connective 156 157	、
+R3	RESULT Arg1:T16 Arg2:T15	
+R10	REASON Arg1:T16 Arg2:T7	
+R11	RESULT Arg1:T4 Arg2:T7	
+R12	REASON Arg1:T8 Arg2:T15	

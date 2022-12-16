@@ -1,0 +1,13 @@
+T1	Argument 0 54	自動変速装置のコントロールケーブルと変速操作レバーのロッドを連結している金具に保持力の不足しているものが混入
+T2	Connective 56 58	ため
+T3	Argument 59 68	変速操作の繰り返し
+T4	Connective 68 71	により
+T5	Argument 71 78	当該金具が外れ
+T6	Connective 78 79	、
+T7	Argument 79 100	変速操作レバーを操作しても変速できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

@@ -1,0 +1,33 @@
+T1	Argument 11 36	スイングアームのブレーキキャリパ取付部の強度が不足
+T2	Connective 40 42	ため
+T3	Argument 43 57	後輪制動時に当該取付部が変形
+T4	Connective 58 59	、
+T5	Argument 75 86	ブレーキキャリパがずれ
+T6	Connective 86 87	て
+T7	Argument 87 97	スイングアームと接触
+T8	Connective 98 99	、
+T9	Argument 99 112	ブレーキ配管の取付部が緩み
+T10	Connective 112 113	、
+T11	Argument 119 127	ブレーキ液が漏れ
+T12	Connective 127 128	て
+T13	Argument 128 142	後輪ブレーキが効きかなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T14	Argument 59 73	そのままの状態で使用を続ける
+T15	Connective 73 74	と
+R9	CONDITION Arg1:T15 Arg2:T14	
+R10	RESULT Arg1:T15 Arg2:T5	
+R11	REASON Arg1:T10 Arg2:T9	
+R12	RESULT Arg1:T10 Arg2:T11	
+R13	REASON Arg1:T12 Arg2:T11	
+R14	RESULT Arg1:T12 Arg2:T13	
+T16	Argument 113 115	最悪
+T17	Connective 116 118	場合
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T11	

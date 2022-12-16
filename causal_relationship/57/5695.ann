@@ -1,0 +1,21 @@
+T1	Argument 23 60	フロント・ワイパ制御モジュール内にある間欠作動モード用リレーの耐久性が不足
+T2	Argument 67 89	フロント・ワイパの間欠作動モードを頻繁に使用
+T3	Argument 92 100	当該リレーが固着
+T4	Argument 113 128	フロント・ワイパが動かなくなり
+T5	Argument 129 131	最悪
+T6	Argument 135 153	雨天時における前方視界を確保出来ない
+T7	Connective 64 66	ため
+T8	Connective 91 92	と
+T9	Connective 108 112	そのため
+T10	Connective 128 129	、
+T11	Connective 132 134	場合
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T3	
+R3	CONDITION Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T6	
+R9	CONDITION Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	

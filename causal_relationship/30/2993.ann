@@ -1,0 +1,13 @@
+T7	Argument 0 75	エンジン制御コンピュータにおいて、エンジン低回転時に、エアコンのコンプレッサ内部が破損するなどしてエンジン回転数が急激に低下した場合の復帰制御が不適切
+T8	Connective 76 78	ため
+T9	Argument 79 90	復帰制御が間に合わない
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Connective 95 96	、
+T13	Argument 102 112	低速走行中にエンスト
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+T14	Argument 96 98	最悪
+T15	Connective 99 101	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T13	

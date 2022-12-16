@@ -1,0 +1,21 @@
+T1	Argument 7 36	横吊り式スペアタイヤキャリアにおいて①吊り板の形状が不適切
+T2	Connective 37 39	ため
+T3	Argument 72 81	スペアタイヤが回転
+T4	Connective 89 93	そのため
+T5	Argument 94 111	当該キャリアのチェーン部が捩じ切れ
+T6	Connective 111 112	て
+T7	Argument 113 122	スペアタイヤが脱落
+R1	REASON Arg1:T4 Arg2:T3	
+R2	RESULT Arg1:T4 Arg2:T5	
+R3	REASON Arg1:T6 Arg2:T5	
+R4	RESULT Arg1:T6 Arg2:T7	
+R5	REASON Arg1:T2 Arg2:T1	
+T8	Argument 40 61	当該キャリアにアルミホイール付タイヤを固定
+T9	Connective 63 64	と
+T10	Argument 65 71	走行中の振動
+T11	Connective 71 72	で
+R6	REASON Arg1:T11 Arg2:T10	
+R7	RESULT Arg1:T11 Arg2:T3	
+R8	CONDITION Arg1:T9 Arg2:T8	
+R9	RESULT Arg1:T9 Arg2:T3	
+R10	RESULT Arg1:T2 Arg2:T3	

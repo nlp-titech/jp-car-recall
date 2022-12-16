@@ -1,0 +1,37 @@
+T1	Argument 0 32	教習車において、クラッチホースを束ねているクリップの形状が不適切
+T2	Argument 36 52	クラッチ操作時のホースの膨張収縮
+T3	Argument 56 63	クリップが変形
+T4	Argument 92 103	ホースが周辺部品と干渉
+T5	Argument 105 107	損傷
+T6	Argument 109 115	液漏れが発生
+T7	Argument 129 140	クラッチが切れなくなり
+T8	Argument 141 148	走行不能となる
+T9	Connective 140 141	、
+T10	Connective 122 123	、
+T11	Connective 107 109	して
+T12	Connective 103 104	し
+T13	Connective 71 75	そのため
+T14	Connective 52 55	により
+T15	Connective 33 35	ため
+R1	REASON Arg1:T15 Arg2:T1	
+R3	REASON Arg1:T14 Arg2:T2	
+R4	RESULT Arg1:T14 Arg2:T3	
+R5	REASON Arg1:T13 Arg2:T3	
+R6	RESULT Arg1:T13 Arg2:T4	
+R7	REASON Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T5	
+R9	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	
+R11	REASON Arg1:T10 Arg2:T6	
+R12	RESULT Arg1:T10 Arg2:T7	
+R13	REASON Arg1:T9 Arg2:T7	
+R14	RESULT Arg1:T9 Arg2:T8	
+T16	Argument 76 90	そのままの状態で使用を続ける
+T17	Connective 90 91	と
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T4	
+T18	Argument 123 125	最悪
+T19	Connective 126 128	場合
+R17	CONDITION Arg1:T19 Arg2:T18	
+R18	RESULT Arg1:T19 Arg2:T7	
+R2	RESULT Arg1:T15 Arg2:T3	

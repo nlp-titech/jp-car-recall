@@ -1,0 +1,40 @@
+T1	Argument 16 47	クローズドベンチレータ（ブローバイガス還元装置）の構造が不適切
+T2	Argument 51 76	ベンチレータエレメントが定期交換時期より前に目詰り
+T3	Argument 89 102	クランクケースの内圧が上昇
+T4	Argument 103 117	エンジンオイルが吸気系に流入
+T5	Argument 119 121	白煙
+T6	Argument 133 135	最悪
+T7	Argument 139 152	意図せずエンジン回転の上昇
+T8	Argument 154 165	エンジンオイル量が減少
+T9	Argument 168 175	エンジンが破損
+T10	Argument 176 181	火災に至る
+T11	Connective 48 50	ため
+T12	Connective 84 88	そのため
+T13	Connective 102 103	し
+T14	Connective 118 119	、
+T15	Connective 132 133	、
+T16	Connective 136 138	場合
+T17	Connective 166 167	て
+T18	Connective 175 176	し
+R1	REASON Arg1:T11 Arg2:T1	
+R2	RESULT Arg1:T11 Arg2:T2	
+R3	REASON Arg1:T12 Arg2:T2	
+R4	RESULT Arg1:T12 Arg2:T3	
+R5	REASON Arg1:T13 Arg2:T3	
+R6	RESULT Arg1:T13 Arg2:T4	
+R7	REASON Arg1:T14 Arg2:T4	
+R8	RESULT Arg1:T14 Arg2:T5	
+R9	REASON Arg1:T15 Arg2:T5	
+R11	CONDITION Arg1:T16 Arg2:T6	
+R12	RESULT Arg1:T16 Arg2:T7	
+R13	RESULT Arg1:T16 Arg2:T8	
+R14	REASON Arg1:T17 Arg2:T8	
+R15	RESULT Arg1:T17 Arg2:T9	
+R16	REASON Arg1:T18 Arg2:T9	
+R17	RESULT Arg1:T18 Arg2:T10	
+T19	Argument 125 132	出力不足となり
+R18	REASON Arg1:T15 Arg2:T19	
+R19	RESULT Arg1:T14 Arg2:T19	
+R10	RESULT Arg1:T15 Arg2:T7	
+R20	RESULT Arg1:T15 Arg2:T8	
+R21	REASON Arg1:T17 Arg2:T7	

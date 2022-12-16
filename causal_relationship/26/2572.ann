@@ -1,0 +1,21 @@
+T1	Argument 0 42	大型トラックにおいて、クラッチの断・接状態を検知するストロークセンサーの製造が不適切
+T2	Connective 43 45	ため
+T3	Argument 46 62	ストロークセンサー内部に水が浸入
+T4	Connective 63 64	て
+T5	Argument 64 71	コイル間が短絡
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 79 83	そのため
+R5	REASON Arg1:T6 Arg2:T5	
+T7	Argument 84 91	安全制御が働き
+T8	Connective 91 92	、
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+T9	Argument 92 108	クラッチが切れたままの状態となり
+T10	Connective 108 109	、
+T11	Argument 109 116	走行不能となる
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	

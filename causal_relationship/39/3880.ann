@@ -1,0 +1,33 @@
+T1	Argument 0 35	燃料タンクにおいて、タンク上面にある樹脂製ポンプリング部の遮熱性が不足
+T2	Argument 42 59	エンジンや排気管からの熱影響を受け
+T3	Argument 60 69	ポンプリングが劣化
+T4	Argument 82 92	そのまま使用を続ける
+T5	Argument 93 98	劣化が進行
+T6	Argument 101 112	ポンプリングに亀裂が入
+T7	Argument 113 118	燃料が漏れ
+T8	Argument 119 121	最悪
+T9	Argument 125 130	火災に至る
+T10	Connective 39 41	ため
+T11	Connective 59 60	て
+T12	Connective 77 81	そのため
+T13	Connective 92 93	と
+T14	Connective 99 100	て
+T15	Connective 118 119	、
+T16	Connective 112 113	り
+T17	Connective 122 124	場合
+R1	REASON Arg1:T10 Arg2:T1	
+R3	REASON Arg1:T11 Arg2:T2	
+R4	RESULT Arg1:T11 Arg2:T3	
+R5	REASON Arg1:T12 Arg2:T3	
+R7	CONDITION Arg1:T13 Arg2:T4	
+R8	RESULT Arg1:T13 Arg2:T5	
+R9	REASON Arg1:T14 Arg2:T5	
+R10	RESULT Arg1:T14 Arg2:T6	
+R11	REASON Arg1:T16 Arg2:T6	
+R12	RESULT Arg1:T16 Arg2:T7	
+R13	REASON Arg1:T15 Arg2:T7	
+R15	CONDITION Arg1:T17 Arg2:T8	
+R16	RESULT Arg1:T17 Arg2:T9	
+R2	RESULT Arg1:T10 Arg2:T3	
+R6	RESULT Arg1:T12 Arg2:T6	
+R14	RESULT Arg1:T15 Arg2:T9	

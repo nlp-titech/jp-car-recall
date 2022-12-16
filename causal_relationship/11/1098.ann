@@ -1,0 +1,35 @@
+T1	Argument 0 22	メータクラスタ内の電気配線の取り回しが不適切
+T2	Connective 23 25	ため
+T3	Argument 26 51	ステアリングホイールの位置を最前方へスライドさせる
+T4	Connective 51 52	と
+T5	Argument 53 72	当該配線が運行記録計の取付け金具と干渉
+T6	Argument 74 81	当該配線が損傷
+T7	Connective 89 93	そのため
+T8	Argument 94 104	そのままの状態で使用
+T9	Connective 106 107	と
+T10	Argument 108 117	当該配線がショート
+T11	Argument 125 127	最悪
+T12	Connective 128 130	場合
+T13	Connective 123 124	て
+T14	Argument 131 140	前照灯が不灯になる
+T15	Argument 143 155	エンジンが始動不能となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T5	
+R4	RESULT Arg1:T4 Arg2:T5	
+T16	Connective 73 74	、
+R5	REASON Arg1:T16 Arg2:T5	
+R6	RESULT Arg1:T16 Arg2:T6	
+R7	REASON Arg1:T7 Arg2:T6	
+R8	CONDITION Arg1:T9 Arg2:T8	
+R9	RESULT Arg1:T7 Arg2:T10	
+R10	RESULT Arg1:T9 Arg2:T10	
+R11	REASON Arg1:T13 Arg2:T10	
+R12	RESULT Arg1:T13 Arg2:T14	
+R13	RESULT Arg1:T13 Arg2:T15	
+R14	CONDITION Arg1:T12 Arg2:T11	
+R15	RESULT Arg1:T12 Arg2:T14	
+R16	RESULT Arg1:T12 Arg2:T15	
+T17	Argument 120 122	切断
+R18	RESULT Arg1:T9 Arg2:T17	
+R19	REASON Arg1:T13 Arg2:T17	

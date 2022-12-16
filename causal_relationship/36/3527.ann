@@ -1,0 +1,21 @@
+T1	Argument 40 64	インフレータ容器に気密不良のものがあることを確認
+T2	Connective 67 71	そのため
+T3	Argument 82 100	大気中の水分がインフレータ内部に浸入
+T4	Connective 101 102	、
+T5	Argument 102 110	ガス発生剤が吸湿
+T6	Connective 111 112	て
+T7	Argument 121 129	正常に展開しない
+R1	RESULT Arg1:T6 Arg2:T7	
+R2	REASON Arg1:T6 Arg2:T5	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	REASON Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T2 Arg2:T3	
+R6	REASON Arg1:T2 Arg2:T1	
+T10	Argument 72 77	長期間使用
+T11	Connective 81 82	で
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	
+T12	Argument 112 120	エアバッグ展開時
+T13	Connective 120 121	に
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T7	

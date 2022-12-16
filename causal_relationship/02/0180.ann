@@ -1,0 +1,33 @@
+T1	Argument 48 54	当該部が損傷
+T2	Argument 0 33	動力伝達装置の変向機において、入力軸側ロックナット部の構造が不適切
+T3	Argument 72 102	変速機と変向機の間のドライブシャフトの偏芯回転による異常振動
+T4	Argument 107 138	フライホイールハウジングの変向機取り付け部に過大な応力が加わり
+T5	Argument 156 163	走行不能に至る
+T6	Argument 145 155	当該取り付け部が折損
+T7	Connective 155 156	し
+T8	Connective 138 139	、
+T9	Connective 102 106	によって
+T10	Connective 55 56	、
+T11	Connective 34 36	ため
+R1	REASON Arg1:T11 Arg2:T2	
+R2	RESULT Arg1:T11 Arg2:T1	
+R3	REASON Arg1:T10 Arg2:T1	
+R4	RESULT Arg1:T10 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T8 Arg2:T4	
+R8	RESULT Arg1:T8 Arg2:T6	
+R9	REASON Arg1:T7 Arg2:T6	
+R10	RESULT Arg1:T7 Arg2:T5	
+T12	Argument 37 46	高速走行を繰り返す
+T13	Connective 46 47	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T1	
+T14	Argument 56 70	そのままの状態で使用を続ける
+T15	Connective 70 71	と
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T4	
+T16	Argument 139 141	最悪
+T17	Connective 142 144	場合
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T6	

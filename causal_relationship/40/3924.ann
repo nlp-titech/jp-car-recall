@@ -1,0 +1,49 @@
+T1	Argument 23 41	オイルシール成形時の温度管理が不適切
+T2	Argument 45 59	オイルシールの硬度が低くなっ
+T3	Argument 73 88	オイルシールにブレーキ液が浸透
+T4	Argument 90 98	シール性能が低下
+T5	Argument 100 110	そのまま使用を続ける
+T6	Argument 112 130	ブレーキ液がアクチュエータ内部に漏れ
+T7	Argument 131 138	電気基板に浸入
+T9	Argument 151 166	ＡＢＳおよびＶＤＣ警告灯が点灯
+T10	Argument 168 173	機能が停止
+T11	Argument 175 177	最悪
+T12	Argument 181 190	電気回路がショート
+T13	Argument 192 197	火災に至る
+T14	Connective 42 44	ため
+T15	Connective 68 72	そのため
+T16	Connective 89 90	て
+T17	Connective 99 100	、
+T18	Connective 110 111	と
+T19	Connective 130 131	、
+T20	Connective 140 141	と
+T21	Connective 150 151	り
+T22	Connective 167 168	て
+T23	Connective 174 175	、
+T24	Connective 178 180	場合
+T25	Connective 191 192	て
+R1	REASON Arg1:T14 Arg2:T1	
+R2	RESULT Arg1:T14 Arg2:T2	
+R3	REASON Arg1:T15 Arg2:T2	
+R4	RESULT Arg1:T15 Arg2:T3	
+R5	REASON Arg1:T16 Arg2:T3	
+R6	RESULT Arg1:T16 Arg2:T4	
+R7	REASON Arg1:T17 Arg2:T4	
+R8	RESULT Arg1:T17 Arg2:T6	
+R9	CONDITION Arg1:T18 Arg2:T5	
+R10	RESULT Arg1:T18 Arg2:T6	
+R11	REASON Arg1:T19 Arg2:T6	
+R13	CONDITION Arg1:T20 Arg2:T7	
+R16	RESULT Arg1:T21 Arg2:T9	
+R17	REASON Arg1:T22 Arg2:T9	
+R18	RESULT Arg1:T22 Arg2:T10	
+R19	REASON Arg1:T23 Arg2:T10	
+R20	RESULT Arg1:T23 Arg2:T12	
+R21	CONDITION Arg1:T24 Arg2:T11	
+R22	RESULT Arg1:T24 Arg2:T12	
+R23	REASON Arg1:T25 Arg2:T12	
+R24	RESULT Arg1:T25 Arg2:T13	
+T8	Argument 142 150	システム異常とな
+R12	REASON Arg1:T21 Arg2:T8	
+R14	RESULT Arg1:T20 Arg2:T8	
+R15	RESULT Arg1:T19 Arg2:T8	

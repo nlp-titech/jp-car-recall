@@ -1,0 +1,9 @@
+T1	Argument 0 54	アイドリングストップ装置付き原動機において、吸気絞り弁のバタフライバルブ先端とバルブケースの隙間設定が不適切
+T2	Connective 55 57	ため
+T3	Argument 58 69	バルブが円滑に開かない
+T4	Connective 74 75	、
+T5	Argument 75 87	原動機がかかりにくくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

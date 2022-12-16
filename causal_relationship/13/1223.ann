@@ -1,0 +1,33 @@
+T1	Argument 0 82	後輪緩衝装置を板ばね式から空気ばね式に改造した車両において、後車軸と車枠を連結しているスタビリンカ（トルクロッドとスタビライザーの機能を兼ね備えたもの）の強度が不足
+T2	Connective 86 88	ため
+T3	Argument 89 98	急旋回走行を行なう
+T4	Connective 98 99	と
+T5	Argument 99 110	アーム部に亀裂が生じる
+T6	Connective 116 120	そのため
+T7	Argument 121 131	そのまま使用を続ける
+T8	Connective 131 132	と
+T9	Argument 133 138	亀裂が進行
+T10	Connective 139 140	、
+T11	Argument 140 142	最悪
+T12	Connective 143 145	場合
+T13	Argument 146 155	当該アーム部が破損
+T14	Connective 156 157	、
+T15	Argument 157 163	後車軸がずれ
+T16	Connective 163 164	て
+T17	Argument 164 171	走行不能となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	CONDITION Arg1:T12 Arg2:T11	
+R9	RESULT Arg1:T12 Arg2:T13	
+R10	RESULT Arg1:T6 Arg2:T9	
+R11	RESULT Arg1:T8 Arg2:T9	
+R13	RESULT Arg1:T10 Arg2:T13	
+R14	REASON Arg1:T14 Arg2:T13	
+R15	RESULT Arg1:T14 Arg2:T15	
+R16	REASON Arg1:T16 Arg2:T15	
+R17	RESULT Arg1:T16 Arg2:T17	
+R8	REASON Arg1:T10 Arg2:T9	

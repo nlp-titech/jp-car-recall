@@ -1,0 +1,25 @@
+T1	Argument 4 25	イグニッション・スイッチの組み付けに不適切
+T2	Connective 31 33	ため
+T3	Argument 34 58	原動機始動後も当該スイッチが始動位置から戻らない
+T4	Connective 63 64	、
+T5	Argument 80 87	スタータが破損
+T6	Connective 88 89	て
+T7	Argument 89 94	配線が短絡
+T8	Connective 95 96	、
+T9	Argument 102 109	車両火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 64 78	そのままの状態で使用を続ける
+T11	Connective 78 79	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	
+T12	Argument 96 98	最悪
+T13	Connective 99 101	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T9	

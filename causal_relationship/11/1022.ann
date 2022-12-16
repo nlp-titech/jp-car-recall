@@ -1,0 +1,21 @@
+T1	Argument 0 26	スペアタイヤキャリヤの取り付けブラケットの強度が不足
+T2	Connective 30 32	ため
+T3	Argument 33 46	当該ブラケットに亀裂が発生
+T4	Connective 47 48	、
+T5	Argument 48 50	最悪
+T6	Connective 51 53	場合
+T7	Argument 54 62	ブラケットが折損
+T8	Connective 63 64	て
+T9	Argument 64 73	スペアタイヤが脱落
+T10	Connective 74 75	、
+T11	Argument 75 86	他の交通の安全を妨げる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	

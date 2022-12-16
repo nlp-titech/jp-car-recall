@@ -1,0 +1,5 @@
+T1	Argument 1 41	改善措置を行ったイグニッションキーシリンダにおいて、＂ＯＮ＂位置の節度が強すぎる
+T2	Connective 47 51	そのため
+T3	Argument 52 68	イグニッションキーの操作性が悪い
+R1	RESULT Arg1:T2 Arg2:T3	
+R2	REASON Arg1:T2 Arg2:T1	

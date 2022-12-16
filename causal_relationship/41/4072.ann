@@ -1,0 +1,22 @@
+T1	Argument 0 54	ホイールクレーンのエンジン制御装置（ＥＣＭ）が、エンジン圧縮開放ブレーキを作動させる信号回路へ誤信号を発する
+T2	Argument 57 78	エンジン圧縮開放ブレーキが正常に作動しない
+T3	Argument 89 103	そのままの状態で使用を続ける
+T4	Argument 105 114	エンジン出力の低下
+T5	Argument 125 127	最悪
+T6	Argument 131 138	エンジンが停止
+T7	Connective 54 56	ため
+T8	Connective 84 88	そのため
+T9	Connective 103 104	と
+T11	Connective 128 130	場合
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T4	
+R5	CONDITION Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R9	CONDITION Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	
+T10	Argument 118 123	白煙を排出
+R7	RESULT Arg1:T9 Arg2:T10	
+R8	RESULT Arg1:T8 Arg2:T10	
+R11	RESULT Arg1:T8 Arg2:T6	

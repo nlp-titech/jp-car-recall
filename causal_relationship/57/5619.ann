@@ -1,0 +1,23 @@
+T1	Argument 6 35	クラッチ温度センサーにおいて、製造時の配線のかしめが不十分
+T2	Argument 44 70	エレクトロニックコントロールユニットに誤信号が送られ
+T4	Argument 71 89	当該変速機が油温異状していると誤診断
+T5	Argument 102 115	メーター内シフト表示が点滅
+T6	Argument 117 119	最悪
+T7	Argument 123 135	フェールセーフ機能が働き
+T8	Argument 136 143	走行不能になる
+T9	Connective 41 43	ため
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T2	
+T10	Connective 70 71	、
+T12	Connective 97 101	そのため
+T13	Connective 120 122	場合
+T14	Connective 135 136	、
+R3	REASON Arg1:T10 Arg2:T2	
+R7	REASON Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T5	
+R9	RESULT Arg1:T12 Arg2:T7	
+R10	CONDITION Arg1:T13 Arg2:T6	
+R11	RESULT Arg1:T13 Arg2:T7	
+R12	REASON Arg1:T14 Arg2:T7	
+R13	RESULT Arg1:T14 Arg2:T8	
+R4	RESULT Arg1:T10 Arg2:T4	

@@ -1,0 +1,9 @@
+T1	Argument 14 34	摩擦材とバックプレートの接着の強度が不足
+T2	Connective 38 40	ため
+T3	Argument 41 48	摩擦材がはがれ
+T4	Connective 48 49	、
+T5	Argument 49 63	十分な制動力が得られなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

@@ -1,0 +1,29 @@
+T1	Argument 0 31	スタビライザを車台に固定するリンク機構のブッシュの寸法が不適切
+T2	Connective 31 33	ため
+T3	Argument 34 48	フロントサスペンションが上下
+T4	Connective 50 52	際に
+T5	Argument 52 63	ブッシュ部の摺動が悪い
+T6	Connective 69 73	そのため
+T7	Argument 74 90	当該リンク機構に過大な応力が発生
+T8	Connective 91 92	て
+T9	Argument 92 94	折損
+T10	Connective 101 102	、
+T11	Argument 102 104	最悪
+T12	Connective 105 107	場合
+T13	Argument 108 120	二カ所のリンク機構が折損
+T14	Connective 121 122	て
+T15	Argument 122 131	スタビライザが落下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	

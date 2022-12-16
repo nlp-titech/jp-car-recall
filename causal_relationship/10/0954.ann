@@ -1,0 +1,25 @@
+T1	Argument 0 45	駐車ブレーキ（ホイールパーキングブレーキ）用エア配管（ナイロンチューブ）の取り回しが不適切
+T2	Connective 46 48	ため
+T3	Argument 49 57	エンジンからの熱
+T4	Connective 57 60	により
+T5	Argument 60 71	ナイロンチューブが軟化
+T6	Connective 79 83	そのため
+T7	Argument 84 95	ナイロンチューブが損傷
+T8	Connective 96 97	て
+T9	Argument 97 102	エアが漏れ
+T10	Argument 103 116	走行中に駐車ブレーキが作動
+T11	Connective 117 118	て
+T12	Argument 119 126	走行不能となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T13	Connective 102 103	、
+R9	REASON Arg1:T13 Arg2:T9	
+R10	RESULT Arg1:T13 Arg2:T10	
+R11	REASON Arg1:T11 Arg2:T10	
+R12	RESULT Arg1:T11 Arg2:T12	

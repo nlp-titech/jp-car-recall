@@ -1,0 +1,29 @@
+T1	Argument 0 38	転倒時にエンジンを停止させる装置（キルセンサー）のボデーケースの材質が不適切
+T2	Argument 52 73	ケース内に封入しているダンパーオイルが減少
+T3	Argument 75 88	当該装置が正常に作動しなく
+T4	Argument 114 121	エンジンが停止
+T5	Argument 123 130	走行不能に至る
+T7	Connective 39 41	ため
+T8	Connective 74 75	て
+T9	Connective 90 91	、
+T10	Connective 122 123	、
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T5	
+T6	Argument 42 47	長期間経過
+T11	Connective 49 51	場合
+R9	CONDITION Arg1:T11 Arg2:T6	
+R10	RESULT Arg1:T11 Arg2:T2	
+T12	Argument 91 93	最悪
+T13	Connective 94 96	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T4	
+T14	Argument 97 111	路面からの過度の衝撃等を受け
+T15	Connective 112 114	際に
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T4	

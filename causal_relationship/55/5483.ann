@@ -1,0 +1,5 @@
+T1	Argument 0 20	電装品の制御ユニットのプログラムが不適切
+T2	Connective 21 23	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 30 46	メーターパネルの照明が点灯しない
+R2	RESULT Arg1:T2 Arg2:T3	

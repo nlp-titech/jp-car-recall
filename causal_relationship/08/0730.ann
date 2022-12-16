@@ -1,0 +1,25 @@
+T1	Argument 1 23	無段変速機用電子制御装置のプログラムが不適切
+T2	Connective 24 26	ため
+T3	Argument 61 90	無段変速機のドライブプーリーと金属ベルトとの間で滑りが起き
+T4	Connective 90 91	、
+T5	Argument 91 111	金属ベルトの駒（エレメント）が過度に発熱
+T6	Connective 119 123	そのため
+T7	Argument 124 130	当該駒が破損
+T8	Connective 140 141	て
+T9	Argument 141 148	走行不能となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T12	Argument 27 59	変速レバーを前進又は後退位置へ操作後、すばやいアクセル操作を行う
+T13	Connective 59 60	と
+R10	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T3	
+T10	Argument 131 139	金属ベルトが破断
+T11	Connective 130 131	し
+R7	REASON Arg1:T11 Arg2:T7	
+R9	RESULT Arg1:T11 Arg2:T10	
+R11	REASON Arg1:T8 Arg2:T10	

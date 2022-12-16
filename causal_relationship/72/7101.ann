@@ -1,0 +1,13 @@
+T1	Argument 82 132	ＡＢＳの制御部（コントロール・ユニット）において、車速センサー用の電気配線の電気干渉遮断効果が不完全
+T2	Connective 133 135	ため
+T3	Argument 136 150	このままの状態で使用を続ける
+T4	Connective 150 151	と
+T5	Argument 152 154	最悪
+T6	Connective 155 157	場合
+T7	Argument 158 193	ＡＢＳを作動状態にしても、正常に作用しなくなる（ＡＢＳを解除した状態）
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	CONDITION Arg1:T6 Arg2:T5	
+R4	RESULT Arg1:T6 Arg2:T7	
+R5	RESULT Arg1:T4 Arg2:T7	
+R6	RESULT Arg1:T2 Arg2:T7	

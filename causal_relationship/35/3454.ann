@@ -1,0 +1,17 @@
+T1	Argument 13 66	タンデム式前車軸のハブフランジとドラムシャフトを固定するフランジ取付ナットの廻り止めのためのカシメが不十分
+T2	Connective 73 77	そのため
+T3	Argument 78 92	そのままの状態で使用を続ける
+T4	Connective 92 93	と
+T5	Argument 94 116	走行振動によりフランジ取付ナットが緩んで外れ
+T6	Connective 116 117	、
+T7	Argument 117 119	最悪
+T8	Connective 120 122	場合
+T9	Argument 123 130	タイヤが外れる
+R1	RESULT Arg1:T8 Arg2:T9	
+R2	CONDITION Arg1:T8 Arg2:T7	
+R3	RESULT Arg1:T6 Arg2:T9	
+R4	REASON Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T5	
+R6	CONDITION Arg1:T4 Arg2:T3	
+R7	RESULT Arg1:T2 Arg2:T3	
+R8	REASON Arg1:T2 Arg2:T1	

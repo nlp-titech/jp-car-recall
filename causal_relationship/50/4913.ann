@@ -1,0 +1,25 @@
+T1	Argument 9 47	ブレーキペダルの支点となるシャフトと軽合金製シャフトホルダーとの勘合が不適切
+T2	Connective 48 50	ため
+T3	Argument 68 78	シャフトが徐々に抜け
+T4	Connective 78 79	、
+T5	Argument 79 97	ブレーキペダル取り付け部にガタが生じ
+T6	Connective 97 98	、
+T7	Argument 104 111	当該部位が抜け
+T8	Connective 111 112	て
+T9	Argument 112 125	ブレーキ操作ができなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	RESULT Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 51 66	そのままブレーキ操作を繰り返す
+T11	Connective 66 67	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	
+T12	Argument 98 100	最悪
+T13	Connective 101 103	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T7	

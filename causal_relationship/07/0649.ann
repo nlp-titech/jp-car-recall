@@ -1,0 +1,9 @@
+T1	Argument 0 39	ディーラーオプション部品として販売された、エア・スポイラにおいて、形状が不適切
+T2	Argument 43 61	エア・スポイラが自動車の最後端となる
+T3	Argument 67 89	エア・スポイラに係る保安基準を満足していない
+T4	Connective 40 42	ため
+T5	Connective 66 67	、
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	

@@ -1,0 +1,17 @@
+T1	Argument 0 37	ウォッシャーノズルに装着されている凍結防止機能用のヒータ部の密閉性が不十分
+T2	Connective 38 40	ため
+T3	Argument 41 49	内部に湿気が浸入
+T4	Connective 56 57	、
+T5	Argument 57 66	電熱線が漏電・発熱
+T6	Connective 67 68	、
+T7	Argument 74 79	火災が発生
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 68 70	最悪
+T9	Connective 71 73	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T7	

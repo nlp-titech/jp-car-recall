@@ -1,0 +1,21 @@
+T1	Argument 0 18	緩衝装置のリレーレバーの取付が不適切
+T2	Connective 19 21	ため
+T3	Argument 22 54	取付部の固定ボルト及びナットが規定のトルクで締め付けられていない
+T4	Connective 60 64	そのため
+T5	Argument 65 79	固定ボルトおよびナットが緩み
+T6	Connective 79 80	、
+T7	Argument 80 82	最悪
+T8	Connective 83 85	場合
+T9	Argument 86 99	固定ボルト及びナットが外れ
+T10	Connective 99 100	て
+T11	Argument 100 104	走行不能
+R1	RESULT Arg1:T10 Arg2:T11	
+R2	REASON Arg1:T10 Arg2:T9	
+R3	RESULT Arg1:T8 Arg2:T9	
+R4	CONDITION Arg1:T8 Arg2:T7	
+R5	RESULT Arg1:T6 Arg2:T9	
+R6	REASON Arg1:T6 Arg2:T5	
+R7	RESULT Arg1:T4 Arg2:T5	
+R8	REASON Arg1:T4 Arg2:T3	
+R9	RESULT Arg1:T2 Arg2:T3	
+R10	REASON Arg1:T2 Arg2:T1	

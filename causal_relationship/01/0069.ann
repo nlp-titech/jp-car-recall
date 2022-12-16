@@ -1,0 +1,17 @@
+T1	Argument 14 35	路面からかじ取りハンドルに伝わる衝撃が過大
+T2	Connective 38 40	ため
+T3	Argument 47 55	ハンドルを取られ
+T4	Argument 56 58	転倒
+T5	Connective 55 56	て
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T4	
+T6	Argument 0 8	凹凸路面等を走行
+T7	Connective 10 12	場合
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T1	
+T8	Argument 41 43	最悪
+T9	Connective 44 46	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	

@@ -1,0 +1,13 @@
+T1	Argument 11 52	自動変速機のパーキング機構のギヤをロックさせるロッドのスプリングの止め位置に不適切
+T2	Connective 58 59	、
+T3	Argument 59 95	パーキングポジションへシフト操作してもパーキング機構が稀に作動しなくなり
+T4	Connective 95 96	、
+T5	Argument 96 98	最悪
+T6	Connective 99 101	場合
+T7	Argument 102 109	車両が動き出す
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	CONDITION Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	RESULT Arg1:T4 Arg2:T7	

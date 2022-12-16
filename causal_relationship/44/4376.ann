@@ -1,0 +1,21 @@
+T1	Argument 26 46	原動機が冷却されない状態で原動機を再始動
+T2	Connective 48 50	場合
+T3	Argument 64 107	チャコールキャニスタ（燃料蒸発ガスを貯蔵する装置）の大気開放口部から燃料蒸発ガスが排出
+T4	Argument 172 195	排出された燃料蒸発ガスが抵抗器の熱によって着火
+T5	Connective 196 197	、
+T6	Argument 203 208	火災に至る
+T7	Argument 120 170	当該大気開放口部の近傍にある電動式補助冷却ファンの回転速度を制御する抵抗器が通電されて加熱状態にある
+T8	Connective 170 171	と
+R1	RESULT Arg1:T5 Arg2:T6	
+R2	REASON Arg1:T5 Arg2:T4	
+R3	RESULT Arg1:T8 Arg2:T4	
+R4	CONDITION Arg1:T8 Arg2:T7	
+T9	Connective 116 119	この時
+R5	CONDITION Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+T10	Argument 197 199	最悪
+T11	Connective 200 202	場合
+R7	CONDITION Arg1:T11 Arg2:T10	
+R8	RESULT Arg1:T11 Arg2:T6	
+R9	CONDITION Arg1:T2 Arg2:T1	
+R10	RESULT Arg1:T2 Arg2:T3	

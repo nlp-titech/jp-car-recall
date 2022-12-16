@@ -1,0 +1,25 @@
+T1	Argument 0 30	リアサスペンション下部のリレーレバー取付部の腐食対策が不適切
+T2	Connective 31 33	ため
+T3	Argument 34 50	当該取付部のブッシュに腐食が生じ
+T4	Connective 50 51	、
+T5	Argument 51 65	リレーレバーの動きが悪くなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 71 75	そのため
+T7	Argument 76 88	当該レバーに負荷がかかり
+T8	Connective 88 89	、
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T9	Argument 89 91	最悪
+T10	Connective 92 94	場合
+T11	Argument 95 104	リレーレバーが折損
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T11	
+R9	CONDITION Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Connective 105 106	、
+T13	Argument 106 115	走行安定性を損なう
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	

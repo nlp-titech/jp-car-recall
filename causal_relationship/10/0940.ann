@@ -1,0 +1,31 @@
+T1	Argument 1 23	エンジンのターボ翼のバランス取り加工が不適切
+T2	Connective 24 26	ため
+T3	Argument 27 36	当該翼の強度が低下
+T4	Connective 46 50	そのため
+T5	Argument 51 60	当該翼の一部が欠損
+T6	Connective 61 62	て
+T7	Argument 62 66	出力低下
+T9	Argument 68 82	そのままの状態で使用を続ける
+T10	Connective 82 83	と
+T11	Argument 84 86	最悪
+T12	Connective 87 89	場合
+T13	Argument 90 96	当該翼が破損
+T14	Connective 97 98	て
+T15	Argument 98 120	エンジンオイルが吸気管からエンジンに流れ込み
+T16	Connective 120 121	、
+T17	Argument 121 131	エンジンの回転が上昇
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R9	CONDITION Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R15	REASON Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T17	
+R7	RESULT Arg1:T6 Arg2:T13	

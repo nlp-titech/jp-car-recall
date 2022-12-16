@@ -1,0 +1,41 @@
+T1	Argument 0 23	リヤハブのフランジ付け根の肉厚が薄く強度が不足
+T2	Connective 27 29	ため
+T3	Argument 51 61	当該部分に亀裂が発生
+T4	Argument 95 100	応力が集中
+T5	Argument 104 113	亀裂の発生が早まる
+T6	Connective 120 124	このため
+T7	Argument 140 145	亀裂が進行
+T8	Argument 153 160	当該部分が破断
+T9	Connective 146 147	、
+T10	Connective 101 102	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T10 Arg2:T4	
+R4	RESULT Arg1:T10 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+T11	Argument 30 44	旋回頻度の高い走行を繰り返し
+T12	Connective 45 47	場合
+R9	CONDITION Arg1:T12 Arg2:T11	
+R10	RESULT Arg1:T12 Arg2:T3	
+T13	Argument 125 139	そのままの状態で使用を続ける
+T14	Connective 139 140	と
+R11	CONDITION Arg1:T14 Arg2:T13	
+R12	RESULT Arg1:T14 Arg2:T7	
+T15	Argument 147 149	最悪
+T16	Connective 150 152	場合
+R13	CONDITION Arg1:T16 Arg2:T15	
+R14	RESULT Arg1:T16 Arg2:T8	
+T17	Connective 161 162	て
+R15	REASON Arg1:T17 Arg2:T8	
+T18	Argument 162 169	走行不能となる
+R16	RESULT Arg1:T17 Arg2:T18	
+T19	Argument 71 94	フランジ付け根付近の加工不良などの要因が重なる
+T20	Connective 94 95	と
+R17	CONDITION Arg1:T20 Arg2:T19	
+R18	RESULT Arg1:T20 Arg2:T4	
+T21	Connective 68 69	。
+R19	REASON Arg1:T21 Arg2:T3	
+R20	RESULT Arg1:T21 Arg2:T5	

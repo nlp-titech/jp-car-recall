@@ -1,0 +1,17 @@
+T1	Argument 0 34	前輪駆動車用の自動変速機において、当該自動変速機内部の部品に加工不良
+T2	Argument 57 72	後退用の制御回路から油圧がもれ
+T3	Argument 80 91	後退走行ができなくなる
+T4	Connective 40 41	、
+T5	Connective 72 73	て
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	
+T6	Argument 41 55	そのままの状態で使用を続ける
+T7	Connective 55 56	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T2	
+T8	Argument 74 76	最悪
+T9	Connective 77 79	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	

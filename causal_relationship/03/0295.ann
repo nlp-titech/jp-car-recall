@@ -1,0 +1,21 @@
+T1	Argument 0 54	クラッチ・ペダルを踏まずに原動機の始動ができる機構の手動変速機付車において、始動装置内部の構成部品に加工不良
+T2	Argument 63 80	原動機始動後のキーの戻りが悪くなる
+T3	Argument 101 108	ヒューズが切れ
+T4	Argument 115 132	原動機が停止し、再始動できなくなる
+T10	Connective 60 62	ため
+T11	Connective 85 86	、
+T12	Connective 108 109	、
+R1	REASON Arg1:T10 Arg2:T1	
+R2	RESULT Arg1:T10 Arg2:T2	
+R3	REASON Arg1:T11 Arg2:T2	
+R4	RESULT Arg1:T11 Arg2:T3	
+R5	REASON Arg1:T12 Arg2:T3	
+R6	RESULT Arg1:T12 Arg2:T4	
+T5	Argument 86 100	そのままの状態で使用を続ける
+T6	Connective 100 101	と
+R7	CONDITION Arg1:T6 Arg2:T5	
+R8	RESULT Arg1:T6 Arg2:T3	
+T7	Argument 109 111	最悪
+T8	Connective 112 114	場合
+R9	CONDITION Arg1:T8 Arg2:T7	
+R12	RESULT Arg1:T8 Arg2:T4	

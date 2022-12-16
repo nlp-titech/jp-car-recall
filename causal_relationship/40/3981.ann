@@ -1,0 +1,27 @@
+T2	Argument 54 71	当該ホルダー座面の塗装指示が不適切
+T6	Argument 124 138	そのままの状態で使用を続ける
+T7	Argument 140 153	スタッドボルトの軸力が低下
+T8	Argument 155 165	スタッドボルトが抜け
+T9	Argument 166 179	ハンドル操作ができなくなる
+T10	Argument 103 113	座面の塗装が剥がれる
+T5	Connective 72 74	ため
+T12	Connective 101 102	と
+T13	Connective 119 123	そのため
+T14	Connective 138 139	と
+T15	Connective 154 155	、
+T16	Connective 165 166	て
+R1	REASON Arg1:T5 Arg2:T2	
+R3	RESULT Arg1:T5 Arg2:T10	
+R7	RESULT Arg1:T12 Arg2:T10	
+R8	REASON Arg1:T13 Arg2:T10	
+R9	RESULT Arg1:T13 Arg2:T7	
+R10	CONDITION Arg1:T14 Arg2:T6	
+R11	RESULT Arg1:T14 Arg2:T7	
+R12	REASON Arg1:T15 Arg2:T7	
+R13	RESULT Arg1:T15 Arg2:T8	
+R14	REASON Arg1:T16 Arg2:T8	
+R15	RESULT Arg1:T16 Arg2:T9	
+T3	Argument 75 101	高速で段差を乗り越える等して繰り返し大きな力が加わる
+R4	CONDITION Arg1:T12 Arg2:T3	
+T1	Argument 0 41	かじ取装置の下側ハンドルホルダーにおいて、スタッドボルトの緩み防止剤の塗布量が不足
+R2	REASON Arg1:T13 Arg2:T1	

@@ -1,0 +1,9 @@
+T1	Argument 12 25	灯器の取り付け方法が不適切
+T2	Connective 26 28	ため
+T3	Argument 40 55	当該方向指示器が車体から外れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 29 36	走行時の振動等
+T5	Connective 36 39	により
+R3	REASON Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T3	

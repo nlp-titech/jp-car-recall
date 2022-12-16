@@ -1,0 +1,33 @@
+T1	Argument 8 37	パワーモジュール（電力用複合素子）製造時の吸湿管理が不適切
+T2	Connective 38 40	ため
+T3	Argument 41 64	長時間のアイドリング後にエンジンを高回転で持続
+T4	Connective 66 68	場合
+T5	Argument 69 95	冷却フィン付きケースとパワーモジュールの接着が剥がれ
+T6	Connective 95 96	、
+T7	Argument 96 125	パワーモジュール内部の整流素子の温度が、耐熱温度以上に上昇
+T8	Connective 126 127	、
+T9	Argument 127 141	発電電流の制御ができなくなる
+T10	Connective 147 151	そのため
+T11	Argument 152 162	そのまま使用を続ける
+T12	Connective 162 163	と
+T13	Argument 164 176	バッテリが充電不足となり
+T14	Connective 176 177	、
+T15	Argument 177 179	最悪
+T16	Connective 180 182	場合
+T17	Argument 183 205	走行中にエンジンが停止して再始動できなくなる
+R1	RESULT Arg1:T16 Arg2:T17	
+R2	CONDITION Arg1:T16 Arg2:T15	
+R3	RESULT Arg1:T14 Arg2:T17	
+R4	REASON Arg1:T14 Arg2:T13	
+R5	RESULT Arg1:T12 Arg2:T13	
+R6	CONDITION Arg1:T12 Arg2:T11	
+R7	RESULT Arg1:T10 Arg2:T13	
+R8	REASON Arg1:T10 Arg2:T9	
+R9	RESULT Arg1:T8 Arg2:T9	
+R10	REASON Arg1:T8 Arg2:T7	
+R11	RESULT Arg1:T6 Arg2:T7	
+R12	REASON Arg1:T6 Arg2:T5	
+R13	RESULT Arg1:T4 Arg2:T5	
+R14	CONDITION Arg1:T4 Arg2:T3	
+R15	RESULT Arg1:T2 Arg2:T3	
+R16	REASON Arg1:T2 Arg2:T1	

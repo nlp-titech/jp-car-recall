@@ -1,0 +1,45 @@
+T1	Argument 8 27	ボールジョイント・ブーツの形状に不適切
+T2	Connective 33 34	、
+T3	Argument 34 50	ボールジョイントの気密性が不十分
+T4	Argument 60 80	ボールジョイント・ブーツの耐熱性が不十分
+T5	Connective 81 83	ため
+T6	Argument 84 93	当該ブーツが熱劣化
+T7	Connective 93 94	し
+T8	Argument 94 96	損傷
+T9	Connective 104 108	そのため
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T6	
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T8	
+R7	REASON Arg1:T9 Arg2:T8	
+T10	Argument 109 123	ボールジョイント内に水が浸入
+T11	Connective 124 125	て
+T13	Connective 130 131	れ
+T14	Argument 131 138	潤滑不足となり
+T15	Connective 138 139	、
+T16	Argument 139 159	ボールジョイントの腐食や摩耗が早期に進行
+T17	Connective 160 161	て
+T18	Argument 161 166	異音が発生
+R8	RESULT Arg1:T9 Arg2:T10	
+R9	REASON Arg1:T11 Arg2:T10	
+R12	RESULT Arg1:T13 Arg2:T14	
+R13	REASON Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T16	
+R15	REASON Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T18	
+T19	Argument 180 204	ボールジョイントがステアリング・ナックルから脱落
+T20	Connective 205 206	て
+T21	Argument 206 213	走行不能となる
+R17	RESULT Arg1:T17 Arg2:T19	
+R18	REASON Arg1:T20 Arg2:T19	
+R19	RESULT Arg1:T20 Arg2:T21	
+T22	Argument 168 178	そのまま使用を続ける
+T23	Connective 178 179	と
+R20	CONDITION Arg1:T23 Arg2:T22	
+R21	RESULT Arg1:T23 Arg2:T19	
+R22	REASON Arg1:T9 Arg2:T3	
+T12	Argument 125 130	グリスが漏
+R10	RESULT Arg1:T11 Arg2:T12	
+R11	REASON Arg1:T13 Arg2:T12	

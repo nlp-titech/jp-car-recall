@@ -1,0 +1,61 @@
+T1	Argument 8 34	原動機と点火プラグのガスケットとの組み合わせが不適切
+T2	Argument 49 59	当該ガスケットが変形
+T3	Argument 61 69	締め付け力が低下
+T4	Argument 85 93	点火プラグが弛み
+T5	Argument 100 113	点火プラグ取付ネジ部が損傷
+T6	Argument 123 132	原動機が不調となり
+T7	Argument 133 148	原動機制御システム警告灯が点灯
+T8	Argument 166 174	点火コイルが溶損
+T9	Argument 176 178	短絡
+T10	Argument 185 195	点火系ヒューズが溶断
+T11	Argument 197 212	原動機が停止して再始動できない
+T12	Connective 35 37	ため
+T13	Connective 60 61	て
+T14	Connective 76 77	、
+T17	Connective 132 133	、
+T19	Connective 175 176	て
+T20	Connective 182 185	により
+T21	Connective 196 197	、
+R1	REASON Arg1:T12 Arg2:T1	
+R2	RESULT Arg1:T12 Arg2:T2	
+R3	REASON Arg1:T13 Arg2:T2	
+R4	RESULT Arg1:T13 Arg2:T3	
+R5	REASON Arg1:T14 Arg2:T3	
+R6	RESULT Arg1:T14 Arg2:T4	
+R11	REASON Arg1:T17 Arg2:T6	
+R12	RESULT Arg1:T17 Arg2:T7	
+R15	REASON Arg1:T19 Arg2:T8	
+R16	RESULT Arg1:T19 Arg2:T9	
+R17	REASON Arg1:T20 Arg2:T9	
+R18	RESULT Arg1:T20 Arg2:T10	
+R19	REASON Arg1:T21 Arg2:T10	
+R20	RESULT Arg1:T21 Arg2:T11	
+T30	Argument 38 46	高回転時の熱負荷
+T31	Connective 46 49	により
+R21	REASON Arg1:T31 Arg2:T30	
+R22	RESULT Arg1:T31 Arg2:T2	
+T32	Argument 77 84	高回転時の振動
+T33	Connective 84 85	で
+R23	REASON Arg1:T33 Arg2:T32	
+R24	RESULT Arg1:T33 Arg2:T4	
+T34	Argument 93 98	異音が発生
+T35	Connective 92 93	み
+R25	REASON Arg1:T35 Arg2:T4	
+R26	RESULT Arg1:T35 Arg2:T34	
+T36	Connective 122 123	て
+T37	Argument 119 121	失火
+R10	REASON Arg1:T36 Arg2:T37	
+R27	REASON Arg1:T36 Arg2:T5	
+R28	RESULT Arg1:T36 Arg2:T6	
+T24	Argument 150 152	最悪
+T25	Connective 153 155	場合
+R32	CONDITION Arg1:T25 Arg2:T24	
+R33	RESULT Arg1:T25 Arg2:T15	
+R7	RESULT Arg1:T35 Arg2:T5	
+R8	RESULT Arg1:T35 Arg2:T37	
+T15	Argument 156 165	吹き抜けた燃焼ガス
+T22	Connective 165 166	で
+R9	REASON Arg1:T22 Arg2:T15	
+R30	RESULT Arg1:T22 Arg2:T8	
+R13	RESULT Arg1:T14 Arg2:T15	
+#1	AnnotatorNotes T15	ガスケットの緩みから燃焼ガスが漏れる

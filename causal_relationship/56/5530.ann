@@ -1,0 +1,9 @@
+T1	Argument 0 18	エアバッグＥＣＵのプログラムが不適切
+T2	Argument 22 28	駐車ブレ－キ
+T3	Argument 35 46	前席エアバッグが誤展開
+T4	Connective 19 21	ため
+T5	Connective 32 34	際に
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T3	
+R3	CONDITION Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	

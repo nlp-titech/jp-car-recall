@@ -1,0 +1,31 @@
+T1	Argument 57 71	燃圧変動が想定外に大きくなり
+T2	Connective 71 72	、
+T3	Argument 72 98	パルセーションダンパ（燃圧変動減衰器）の固定部が摺動
+T4	Connective 99 100	て
+T5	Argument 100 102	摩耗
+T6	Connective 110 114	そのため
+T7	Argument 115 123	当該ダンパが損傷
+T8	Connective 124 125	て
+T9	Argument 125 133	異音や振動が発生
+T10	Argument 157 164	燃料漏れに至る
+R1	RESULT Arg1:T8 Arg2:T10	
+R2	RESULT Arg1:T8 Arg2:T9	
+T11	Argument 135 149	そのままの状態で使用を続ける
+T12	Connective 149 150	と
+R3	CONDITION Arg1:T12 Arg2:T11	
+R4	RESULT Arg1:T12 Arg2:T10	
+T13	Argument 151 153	最悪
+T14	Connective 154 156	場合
+R5	CONDITION Arg1:T14 Arg2:T13	
+R6	RESULT Arg1:T14 Arg2:T10	
+R7	REASON Arg1:T2 Arg2:T1	
+T15	Connective 53 56	により
+T16	Argument 0 53	Ｖ型エンジンの左右シリンダバンクに配置された高圧燃料ポンプにおいて、ポンプが交互に噴射する際に発生する共振
+R8	REASON Arg1:T15 Arg2:T16	
+R9	RESULT Arg1:T15 Arg2:T1	
+R10	RESULT Arg1:T2 Arg2:T3	
+R11	REASON Arg1:T4 Arg2:T3	
+R12	RESULT Arg1:T4 Arg2:T5	
+R13	REASON Arg1:T6 Arg2:T5	
+R14	RESULT Arg1:T6 Arg2:T7	
+R15	REASON Arg1:T8 Arg2:T7	

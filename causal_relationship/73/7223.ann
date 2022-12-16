@@ -1,0 +1,43 @@
+T1	Argument 0 39	燃料ポンプ内の樹脂製ブラケットが、燃料ポンプ製造時に使用した試験油に長期間浸漬
+T2	Connective 42 43	と
+T3	Argument 47 54	ガソリンを給油
+T4	Connective 56 57	際
+T5	Argument 59 70	ガラス繊維の配向の影響
+T6	Connective 70 73	により
+T7	Argument 73 82	不均一な膨潤となり
+T8	Connective 82 83	、
+T9	Argument 83 90	インペラと干渉
+T10	Connective 98 102	そのため
+T13	Argument 103 125	停車中に膨潤が進んで干渉部の抵抗が大きくなる
+T14	Connective 125 126	と
+T15	Argument 126 134	始動できなくなる
+T16	Argument 144 161	使用に伴い干渉部分から摩耗粉が生じ
+T17	Connective 161 162	、
+T20	Argument 162 186	走行中に摩耗粉がブラケットとインペラ間に噛み込む
+T21	Connective 186 187	と
+T22	Argument 187 195	燃料ポンプが停止
+T23	Connective 196 197	て
+T24	Argument 197 201	エンスト
+R1	CONDITION Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T7	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T15	
+R13	CONDITION Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R15	RESULT Arg1:T10 Arg2:T16	
+R16	REASON Arg1:T17 Arg2:T16	
+R19	CONDITION Arg1:T21 Arg2:T20	
+R20	RESULT Arg1:T17 Arg2:T20	
+R21	RESULT Arg1:T21 Arg2:T22	
+R22	REASON Arg1:T23 Arg2:T22	
+R23	RESULT Arg1:T23 Arg2:T24	
+T11	Connective 202 203	、
+R11	REASON Arg1:T11 Arg2:T24	
+T12	Argument 203 212	再始動できなくなる
+R12	RESULT Arg1:T11 Arg2:T12	

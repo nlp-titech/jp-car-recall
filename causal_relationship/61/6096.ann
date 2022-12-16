@@ -1,0 +1,13 @@
+T1	Argument 15 46	インターミディエイトシャフトのピニオンボルトの締めつけが不適切
+T2	Connective 53 57	そのため
+T3	Argument 58 60	最悪
+T4	Connective 61 63	場合
+T5	Argument 64 72	当該ボルトが外れ
+T6	Connective 72 73	、
+T7	Argument 73 88	ステアリング操作に支障をきたす
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

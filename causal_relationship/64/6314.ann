@@ -1,0 +1,9 @@
+T1	Argument 16 43	クレーンブーム内のシリンダの格納位置が明記されていない
+T2	Argument 46 55	シリンダの格納位置
+T3	Connective 43 45	ため
+T4	Connective 55 60	によっては
+T5	Argument 61 89	保安基準第５５条の規定に基づく基準緩和を受けた軸重を超え
+R1	REASON Arg1:T3 Arg2:T1	
+R2	RESULT Arg1:T3 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T2	
+R4	RESULT Arg1:T4 Arg2:T5	

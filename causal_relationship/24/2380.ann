@@ -1,0 +1,9 @@
+T1	Argument 0 53	駆動輪の空転を防止するＡＳＲ（アンチスピンレギュレータ）を装着した大型トラックにおいて、ダンプ作業時の振動
+T2	Connective 53 57	によって
+T3	Argument 57 64	ＡＳＲが誤作動
+T4	Argument 66 79	駐車ブレーキの制動力が低下
+T5	Connective 65 66	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T4	

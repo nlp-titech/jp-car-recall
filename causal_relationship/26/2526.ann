@@ -1,0 +1,13 @@
+T1	Argument 0 40	道路清掃車において、排気管出口に取付けている雨水浸入防止バルブの固定方法が不適切
+T2	Connective 41 43	ため
+T3	Argument 44 62	排気の圧力で当該バルブ固定金具が抜け
+T4	Connective 71 75	そのため
+T5	Argument 76 90	そのままの状態で使用を続ける
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+T6	Connective 90 91	と
+T7	Argument 92 99	当該部品が落下
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

@@ -1,0 +1,25 @@
+T1	Argument 61 81	デリバリパイプ側の取付部の摩擦抵抗が過大
+T2	Argument 85 98	燃料パイプにねじれ力が発生
+T3	Argument 100 122	チェックバルブと燃料パイプの位置関係がずれる
+T4	Argument 143 161	当該バルブ取付部の気密性が徐々に低下
+T5	Argument 163 169	燃料が漏れる
+T6	Connective 82 84	ため
+T7	Connective 99 100	て
+T8	Connective 127 128	、
+T9	Connective 162 163	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+T15	Connective 140 143	により
+T16	Argument 128 140	燃料ポンプ作動時の振動等
+R9	REASON Arg1:T15 Arg2:T16	
+R10	RESULT Arg1:T15 Arg2:T4	
+T10	Connective 59 60	際
+T11	Argument 0 59	燃料装置において、原動機に取り付けられている燃料ポンプのチェックバルブ（逆止弁）に配管されている燃料パイプを組み付ける
+R11	CONDITION Arg1:T10 Arg2:T11	
+R12	RESULT Arg1:T10 Arg2:T2	

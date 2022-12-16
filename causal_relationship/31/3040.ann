@@ -1,0 +1,31 @@
+T1	Argument 0 24	エアコンのエバポレータにおいて、製造方法が不適切
+T2	Connective 25 27	ため
+T3	Argument 28 58	一部のコンプレッサとの組み合わせにより当該部品の内部から腐食
+T4	Connective 59 60	て
+T5	Argument 60 64	穴があき
+T6	Connective 64 65	、
+T7	Argument 65 77	冷媒および潤滑油が漏れる
+T8	Connective 83 87	そのため
+T9	Argument 88 100	エアコンの効きが悪くなり
+T11	Argument 101 103	最悪
+T12	Connective 104 106	場合
+T13	Argument 107 118	コンプレッサが潤滑不足
+T14	Connective 123 124	、
+T15	Argument 124 134	低速走行中にエンスト
+R1	RESULT Arg1:T14 Arg2:T15	
+R2	REASON Arg1:T14 Arg2:T16	
+R3	RESULT Arg1:T12 Arg2:T13	
+R4	CONDITION Arg1:T12 Arg2:T11	
+R5	RESULT Arg1:T8 Arg2:T9	
+R6	RESULT Arg1:T8 Arg2:T13	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T6 Arg2:T7	
+R9	REASON Arg1:T6 Arg2:T5	
+R10	RESULT Arg1:T4 Arg2:T5	
+R11	REASON Arg1:T4 Arg2:T3	
+R12	RESULT Arg1:T2 Arg2:T3	
+R13	REASON Arg1:T2 Arg2:T1	
+T10	Connective 118 119	で
+T16	Argument 119 122	ロック
+R14	REASON Arg1:T10 Arg2:T13	
+R15	RESULT Arg1:T10 Arg2:T16	

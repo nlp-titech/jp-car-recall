@@ -1,0 +1,29 @@
+T1	Argument 0 30	サイドメンバとフロントエンドクロスメンバとの隙間設定が不適切
+T2	Connective 31 33	ため
+T3	Argument 34 50	アクセルケーブルが当該隙間に配索
+T6	Argument 60 89	アクセルケーブルが当該隙間に配索された状態で車両前部を衝突
+T7	Connective 92 93	と
+T8	Argument 104 115	アクセルケーブルが損傷
+T9	Connective 122 123	、
+T10	Argument 123 133	そのまま使用を続ける
+T11	Connective 133 134	と
+T12	Argument 135 151	アクセルケーブルの摺動荷重が増大
+T13	Connective 152 153	、
+T14	Argument 153 155	最悪
+T15	Connective 156 158	場合
+T16	Argument 159 173	アクセルペダルが戻らなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R4	CONDITION Arg1:T7 Arg2:T6	
+R5	RESULT Arg1:T7 Arg2:T8	
+R7	REASON Arg1:T9 Arg2:T8	
+R8	CONDITION Arg1:T11 Arg2:T10	
+R9	RESULT Arg1:T11 Arg2:T12	
+R10	RESULT Arg1:T9 Arg2:T12	
+R11	REASON Arg1:T13 Arg2:T12	
+R12	CONDITION Arg1:T15 Arg2:T14	
+R13	RESULT Arg1:T15 Arg2:T16	
+R14	RESULT Arg1:T13 Arg2:T16	
+T17	Connective 59 60	。
+R15	RESULT Arg1:T17 Arg2:T8	
+R16	REASON Arg1:T17 Arg2:T3	

@@ -1,0 +1,25 @@
+T1	Argument 4 41	スロットルボディ－において、スロットル開度を調整するモーターの設計が不適切
+T2	Connective 42 44	ため
+T3	Argument 45 56	モーターブラシの磨耗粉
+T4	Connective 56 59	により
+T5	Argument 60 66	通電性が低下
+T6	Connective 67 68	、
+T7	Argument 68 78	モーターの動作が低下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Connective 86 90	そのため
+T9	Argument 91 110	スロットルの開閉が正しく行われなくなり
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Connective 110 111	、
+T11	Argument 111 117	警告灯が点灯
+T12	Connective 118 119	、
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T13	Argument 119 128	エンジン出力が低下
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	

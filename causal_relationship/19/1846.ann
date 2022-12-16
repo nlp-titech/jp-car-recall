@@ -1,0 +1,9 @@
+T1	Argument 0 49	インテリジェントキー仕様の運転者席及び助手席の乗降口の扉において、外側のハンドルの寸法が大き過ぎる
+T2	Connective 54 56	ため
+T3	Argument 57 81	扉を開いた際に当該ハンドルが引っ掛かって戻らない
+T4	Connective 87 91	そのため
+T5	Argument 92 107	確実に扉を閉じることができない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

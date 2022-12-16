@@ -1,0 +1,21 @@
+T1	Argument 0 35	制動装置において、ブレーキブースタのピストンロッドのねじ部の長さが不足
+T2	Argument 42 69	エアピストンと当該ピストンロッドの締結部に緩みを起こす
+T3	Argument 91 114	ブレーキを開放してもブレーキが一時的に戻り不良
+T4	Argument 124 130	制動力が低下
+T5	Connective 114 117	となり
+T6	Connective 74 75	、
+T7	Connective 39 41	ため
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T5 Arg2:T3	
+R6	RESULT Arg1:T5 Arg2:T4	
+T8	Argument 75 89	そのままの状態で使用を続ける
+T9	Connective 89 90	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 118 120	最悪
+T11	Connective 121 123	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T4	

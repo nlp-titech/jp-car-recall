@@ -1,0 +1,29 @@
+T1	Argument 22 60	ストラットをスプリング・リンクに取り付けるボール・ジョイントの耐久性が不十分
+T2	Argument 69 81	長距離の悪路走行等の負荷
+T3	Argument 84 101	当該ボール・ジョイントに亀裂が発生
+T4	Argument 114 124	そのまま使用を続ける
+T5	Argument 126 140	当該ボール・ジョイントが破損
+T6	Argument 142 150	ストラットが外れ
+T7	Argument 151 153	最悪
+T8	Argument 157 165	走行できなくなる
+T9	Connective 66 68	ため
+T10	Connective 81 84	により
+T11	Connective 109 113	そのため
+T12	Connective 124 125	と
+T13	Connective 141 142	て
+T14	Connective 150 151	、
+T15	Connective 154 156	場合
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T3	
+R3	REASON Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T3	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T5	
+R7	CONDITION Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T5	
+R9	REASON Arg1:T13 Arg2:T5	
+R10	RESULT Arg1:T13 Arg2:T6	
+R11	REASON Arg1:T14 Arg2:T6	
+R12	RESULT Arg1:T14 Arg2:T8	
+R13	CONDITION Arg1:T15 Arg2:T7	
+R14	RESULT Arg1:T15 Arg2:T8	

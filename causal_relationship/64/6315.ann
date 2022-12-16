@@ -1,0 +1,9 @@
+T1	Argument 18 46	走行時における作業装置の取り外しに関する記載内容が不適切
+T2	Connective 47 49	ため
+T3	Argument 50 66	取扱説明書の記載された状態で走行
+T4	Connective 68 69	と
+T5	Argument 70 103	保安基準第５５条の規定に基づく基準緩和認定を受けた車両総重量を超え
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

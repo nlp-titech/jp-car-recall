@@ -1,0 +1,25 @@
+T1	Argument 0 31	燃料ポンプ制御ユニットにおいて、コネクター部の防水処理が不十分
+T2	Argument 35 40	水分の浸入
+T3	Argument 43 53	内部基盤に腐食が発生
+T4	Argument 55 60	基盤が短絡
+T5	Argument 73 83	燃料ポンプが作動せず
+T6	Argument 84 86	最悪
+T7	Argument 90 97	エンジンが停止
+T8	Connective 32 34	ため
+T9	Connective 40 43	により
+T10	Connective 54 55	、
+T11	Connective 68 72	そのため
+T12	Connective 83 84	、
+T13	Connective 87 89	場合
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T2	
+R3	REASON Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T3	
+R5	REASON Arg1:T10 Arg2:T3	
+R6	RESULT Arg1:T10 Arg2:T4	
+R7	REASON Arg1:T11 Arg2:T4	
+R8	RESULT Arg1:T11 Arg2:T5	
+R9	REASON Arg1:T12 Arg2:T5	
+R10	RESULT Arg1:T12 Arg2:T7	
+R11	CONDITION Arg1:T13 Arg2:T6	
+R12	RESULT Arg1:T13 Arg2:T7	

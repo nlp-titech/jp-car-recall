@@ -1,0 +1,33 @@
+T1	Argument 0 51	ターボ付エンジン搭載車両において、変速機のマウントとブラケットを締結するボルトのトルクの規定値が不適切
+T2	Connective 52 54	ため
+T3	Argument 55 72	急発進又は急加速走行を繰り返し行っ
+T4	Connective 73 75	場合
+T5	Argument 76 84	当該ボルトが緩む
+T6	Connective 90 94	そのため
+T7	Argument 107 119	当該ボルトの抜け又は破損
+T8	Connective 119 122	により
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+T9	Argument 122 134	エンジン及び変速機が傾き
+T10	Argument 141 152	ドライブシャフトが抜け
+T11	Connective 134 135	、
+T12	Argument 153 160	走行不能に至る
+T13	Connective 152 153	、
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T11 Arg2:T9	
+R10	RESULT Arg1:T11 Arg2:T10	
+R11	REASON Arg1:T13 Arg2:T10	
+R12	RESULT Arg1:T13 Arg2:T12	
+T14	Argument 95 105	そのまま使用を続ける
+T15	Connective 105 106	と
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T9	
+T16	Argument 135 137	最悪
+T17	Connective 138 140	場合
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T10	

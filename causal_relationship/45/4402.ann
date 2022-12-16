@@ -1,0 +1,25 @@
+T1	Argument 0 34	助手席側のドア取付付近にある電磁式ドア・ロック・リレーの取付に不適切
+T2	Connective 40 42	ため
+T3	Argument 59 71	当該リレー内に水分が入り
+T4	Argument 72 74	短絡
+T5	Connective 71 72	、
+T6	Connective 75 76	、
+T7	Argument 76 78	加熱
+T8	Connective 79 80	て
+T9	Argument 87 92	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T4	
+R5	REASON Arg1:T6 Arg2:T4	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 43 57	このままの状態で使用を続ける
+T11	Connective 57 58	と
+T12	Argument 81 83	最悪
+T13	Connective 84 86	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T9	

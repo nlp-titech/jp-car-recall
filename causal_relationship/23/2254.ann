@@ -1,0 +1,25 @@
+T1	Argument 0 60	塵芥車及び糞尿車の車外に搭載された消火器において、架装時の取り付け向き（固定バンドが横向きに取り付けられたもの）が不適切
+T2	Connective 61 63	ため
+T3	Argument 84 100	消火器の保持装置の防振ゴムが脱落
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 108 112	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 113 135	当該装置の消火器固定バンドの締め付け力が低下
+T6	Argument 167 173	消火器が脱落
+T7	Connective 136 137	、
+T8	Connective 174 175	て
+T9	Argument 176 184	他の交通を妨げる
+R7	REASON Arg1:T8 Arg2:T6	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 64 80	発進、停止の繰り返しによる振動等
+T11	Connective 80 83	により
+R9	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T12	Argument 145 165	段差乗り上げ等の過大な振動、衝撃が加わる
+T13	Connective 165 166	と
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T6	

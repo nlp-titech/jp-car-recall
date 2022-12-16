@@ -1,0 +1,9 @@
+T1	Argument 9 30	車椅子乗降時に用いる手動式スロープ板を使用
+T2	Connective 32 33	際
+T3	Argument 34 50	スロープ板の中央にある取手が突出
+T4	Connective 58 62	そのため
+T5	Argument 63 78	乗客が当該取手につまずいて転倒
+R1	CONDITION Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

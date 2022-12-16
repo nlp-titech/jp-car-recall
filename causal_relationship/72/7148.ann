@@ -1,0 +1,13 @@
+T1	Argument 0 63	自動変速装置（オートマチックトランスミッション）及びＡＢＳ（アンロックブレーキ装置）を制御するための電気配線の取り回しに不適切
+T2	Connective 69 71	ため
+T3	Argument 72 86	そのままの状態で使用を続ける
+T4	Connective 86 87	と
+T5	Argument 88 114	当該電気配線とかじ取り装置の振動吸収装置取付枠と接触
+T6	Argument 116 134	変速装置及びＡＢＳが適切に作動しない
+T7	Connective 115 116	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	

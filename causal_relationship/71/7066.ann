@@ -1,0 +1,43 @@
+T1	Argument 8 27	点火コイルの電気配線の配索設計が不適切
+T2	Connective 28 30	ため
+T3	Argument 31 58	電気配線がホルダとメインハーネスのクランプの間に挟まる
+T4	Argument 67 82	点火コイルの端子の製造が不適切
+T5	Connective 83 85	ため
+T6	Argument 86 94	端子の強度が不足
+T7	Connective 104 108	そのため
+T8	Argument 109 123	低温時に電気配線の被覆が硬化
+T9	Connective 125 127	際に
+T10	Argument 128 144	車両の走行振動で電気配線が振れる
+T11	Connective 144 145	と
+T12	Argument 145 164	点火コイルの端子に繰り返し応力が加わり
+T13	Connective 163 164	り
+T14	Argument 164 169	亀裂が発生
+T15	Connective 170 171	、
+T16	Argument 171 173	最悪
+T17	Connective 174 176	場合
+T18	Argument 177 187	点火コイル端子が折損
+T19	Connective 188 189	て
+T20	Argument 189 200	走行中にエンジンが停止
+T21	Argument 202 209	走行不能となる
+T22	Connective 201 202	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T6	
+R5	REASON Arg1:T7 Arg2:T6	
+R6	CONDITION Arg1:T9 Arg2:T8	
+R7	CONDITION Arg1:T11 Arg2:T10	
+R8	RESULT Arg1:T11 Arg2:T12	
+R9	RESULT Arg1:T9 Arg2:T12	
+R10	RESULT Arg1:T7 Arg2:T12	
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T14	
+R13	REASON Arg1:T15 Arg2:T14	
+R14	CONDITION Arg1:T17 Arg2:T16	
+R15	RESULT Arg1:T17 Arg2:T18	
+R16	RESULT Arg1:T15 Arg2:T18	
+R17	REASON Arg1:T19 Arg2:T18	
+R18	RESULT Arg1:T19 Arg2:T20	
+R19	REASON Arg1:T22 Arg2:T20	
+R20	RESULT Arg1:T22 Arg2:T21	
+R21	REASON Arg1:T7 Arg2:T3	

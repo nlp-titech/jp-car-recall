@@ -1,0 +1,31 @@
+T1	Argument 12 38	ブレーキキャリパを固定しているボルトの締付けが不十分
+T2	Connective 44 46	ため
+T3	Argument 55 63	当該ボルトが緩ん
+T4	Connective 63 64	で
+T5	Argument 68 73	異音が発生
+T7	Argument 103 114	ブレーキキャリパが脱落
+T8	Connective 115 116	て
+T9	Argument 116 127	後輪の制動力が失われる
+R1	RESULT Arg1:T4 Arg2:T7	
+R2	REASON Arg1:T8 Arg2:T7	
+R3	RESULT Arg1:T8 Arg2:T9	
+R6	REASON Arg1:T2 Arg2:T1	
+R7	RESULT Arg1:T2 Arg2:T3	
+R8	REASON Arg1:T4 Arg2:T3	
+R9	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 47 52	車両の振動
+T10	Connective 52 55	により
+R4	REASON Arg1:T10 Arg2:T6	
+R5	RESULT Arg1:T10 Arg2:T3	
+T11	Argument 64 67	制動時
+T12	Connective 67 68	に
+R10	CONDITION Arg1:T12 Arg2:T11	
+R11	RESULT Arg1:T12 Arg2:T5	
+T13	Argument 81 95	そのままの状態で使用を続ける
+T14	Connective 95 96	と
+R12	CONDITION Arg1:T14 Arg2:T13	
+R13	RESULT Arg1:T14 Arg2:T7	
+T15	Argument 97 99	最悪
+T16	Connective 100 102	場合
+R14	CONDITION Arg1:T16 Arg2:T15	
+R15	RESULT Arg1:T16 Arg2:T7	

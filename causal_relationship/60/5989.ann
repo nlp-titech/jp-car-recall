@@ -1,0 +1,15 @@
+T1	Argument 0 51	サイドスタンドを車体及びサイドスタンドスイッチと固定しているサイドスタンド固定ボルトが、振動により緩む
+T2	Connective 57 61	そのため
+T3	Argument 62 96	サイドスタンドスイッチがサイドスタンドの位置を正しく検知できなくなる
+T4	Connective 98 99	で
+T5	Argument 100 126	サイドスタンドを格納してもエンジンが始動できなくなる
+T6	Argument 136 149	サイドスタンドが地面と擦れ
+T7	Connective 149 150	、
+T8	Argument 150 159	走行に支障をきたす
+R1	REASON Arg1:T4 Arg2:T3	
+R2	REASON Arg1:T2 Arg2:T1	
+R3	RESULT Arg1:T2 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R6	REASON Arg1:T7 Arg2:T6	
+R7	RESULT Arg1:T7 Arg2:T8	
+R5	RESULT Arg1:T2 Arg2:T6	

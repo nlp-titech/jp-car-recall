@@ -1,0 +1,5 @@
+T1	Argument 7 27	左右のフロント・フェンダーの取付に不適切
+T2	Connective 33 34	、
+T3	Argument 34 51	前輪タイヤが当該フェンダーから突出
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

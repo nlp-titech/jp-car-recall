@@ -1,0 +1,21 @@
+T1	Argument 0 41	路線バスのグライドスライド扉において、扉エンジンブラケット製造時の曲げ加工が不適切
+T2	Connective 48 52	そのため
+T3	Argument 53 66	ブラケット端部に亀裂が発生
+T4	Argument 84 92	ブラケットが破損
+T5	Argument 100 111	扉の開閉ができなくなる
+T6	Connective 93 94	、
+R1	RESULT Arg1:T6 Arg2:T5	
+R2	REASON Arg1:T6 Arg2:T4	
+T7	Connective 67 68	、
+R3	RESULT Arg1:T7 Arg2:T4	
+R4	REASON Arg1:T7 Arg2:T3	
+R5	RESULT Arg1:T2 Arg2:T3	
+R6	REASON Arg1:T2 Arg2:T1	
+T8	Argument 68 82	そのままの状態で使用を続ける
+T9	Connective 82 83	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T4	
+T10	Argument 94 96	最悪
+T11	Connective 97 99	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	

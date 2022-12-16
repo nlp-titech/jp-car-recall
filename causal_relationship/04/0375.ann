@@ -1,0 +1,17 @@
+T1	Argument 0 20	大型観光バスの荷物室の防水シールが不十分
+T2	Argument 26 89	荷物室内に設置されているエンジン制御用コンピューターが、リヤタイヤによって巻き上げられた雨水及び高圧洗車時の洗浄水によって被水
+T3	Argument 97 112	コンピューターが誤作動を起こす
+T4	Argument 118 137	エンジンが停止し、再始動が出来なくなる
+T6	Connective 23 25	ため
+T7	Connective 90 91	、
+T8	Connective 114 117	により
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+T5	Argument 91 93	最悪
+T9	Connective 94 96	場合
+R7	CONDITION Arg1:T9 Arg2:T5	
+R8	RESULT Arg1:T9 Arg2:T3	

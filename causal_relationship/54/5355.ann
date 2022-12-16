@@ -1,0 +1,25 @@
+T1	Argument 14 63	ボルテージレギュレーター（電圧調整器）とフロントフェンダー（泥よけ）の隙間が十分に確保されていない
+T2	Connective 63 65	ため
+T3	Argument 87 107	レギュレーターとフロントフェンダーが干渉
+T4	Connective 115 119	そのため
+T5	Argument 132 154	フロントフェンダーがレギュレーターに噛み込む
+T6	Connective 159 160	、
+T7	Argument 166 173	操縦不能になる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T8	Argument 66 82	フロントサスペンションが最も収縮
+T9	Connective 84 86	場合
+R5	CONDITION Arg1:T9 Arg2:T8	
+R6	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 120 130	そのまま使用を続ける
+T11	Connective 130 131	と
+R7	CONDITION Arg1:T11 Arg2:T10	
+R8	RESULT Arg1:T11 Arg2:T5	
+R9	REASON Arg1:T6 Arg2:T5	
+R10	RESULT Arg1:T6 Arg2:T7	
+T12	Argument 160 162	最悪
+T13	Connective 163 165	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T7	

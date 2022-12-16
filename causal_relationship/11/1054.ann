@@ -1,0 +1,33 @@
+T1	Argument 0 53	手動変速機付きの四輪駆動車において、トランスミッションケースとトランスファケースのクリアランス設定が不適切
+T2	Connective 54 56	ため
+T3	Argument 57 69	組付け状態によっては干渉
+T4	Connective 73 74	、
+T5	Argument 74 98	デファレンシャルサイドベアリングに過荷重が加わっ
+T6	Connective 98 99	て
+T7	Argument 100 110	当該ベアリングが破損
+T8	Connective 118 122	そのため
+T9	Argument 123 133	そのまま使用を続ける
+T10	Connective 133 134	と
+T11	Argument 135 156	当該ベアリングの破損片でオイルシールが損傷
+T12	Connective 157 158	て
+T13	Argument 158 164	オイルが漏れ
+T14	Connective 164 165	、
+T15	Argument 165 167	最悪
+T16	Connective 168 170	場合
+T17	Argument 171 178	走行不能になる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	CONDITION Arg1:T10 Arg2:T9	
+R9	RESULT Arg1:T8 Arg2:T11	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T17	
+R15	CONDITION Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T17	

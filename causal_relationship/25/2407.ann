@@ -1,0 +1,17 @@
+T1	Argument 0 50	大型高速路線バスにおいて、左右ピラー部のバックミラーヒーターハーネス貫通穴部へのシール剤塗布が不適切
+T2	Connective 51 53	ため
+T3	Argument 65 75	当該穴部から水が浸入
+T4	Connective 83 87	そのため
+T7	Argument 104 111	電装品が誤作動
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+T5	Argument 54 62	雨天走行や洗車等
+T6	Connective 62 65	により
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T3	
+T8	Argument 88 102	そのままの状態で走行を続ける
+T9	Connective 102 103	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T7	

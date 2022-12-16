@@ -1,0 +1,29 @@
+T1	Argument 0 36	後輪を駆動するスプロケットを支えるベアリングにグリースが封入されていない
+T2	Connective 42 46	そのため
+T3	Argument 47 57	そのまま使用を続ける
+T4	Connective 57 58	と
+T5	Argument 59 72	ベアリングの潤滑ができない
+T6	Connective 72 74	ため
+T7	Argument 74 79	異音が発生
+T9	Argument 81 83	最悪
+T10	Connective 84 86	場合
+T11	Argument 87 95	ベアリングが破損
+T12	Connective 96 97	て
+T13	Argument 97 99	固着
+T14	Argument 101 108	走行不能となる
+T15	Connective 100 101	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R8	CONDITION Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T15 Arg2:T13	
+R14	RESULT Arg1:T15 Arg2:T14	
+T8	Connective 80 81	、
+R7	RESULT Arg1:T8 Arg2:T11	
+R9	REASON Arg1:T8 Arg2:T7	

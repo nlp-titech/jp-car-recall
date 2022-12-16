@@ -1,0 +1,29 @@
+T1	Argument 0 74	アスファルトフィニッシャに備える駐車ブレーキにおいて、駐車ブレーキキャリパ取付のボルト・ナット及び当該キャリパ取付ブラケットのボルトの締付けが不適切
+T2	Connective 75 77	ため
+T3	Argument 78 86	ボルトなどが緩む
+T4	Connective 92 96	そのため
+T5	Argument 97 111	そのままの状態で使用を続ける
+T6	Connective 111 112	と
+T7	Argument 113 121	当該ボルトが脱落
+T8	Connective 133 136	により
+T9	Argument 137 150	駐車ブレーキの制動力が不足
+T10	Argument 152 154	最悪
+T11	Connective 155 157	場合
+T12	Argument 158 171	駐車ブレーキが効かなくなる
+R1	RESULT Arg1:T11 Arg2:T12	
+R2	CONDITION Arg1:T11 Arg2:T10	
+T13	Connective 151 152	、
+R3	RESULT Arg1:T13 Arg2:T12	
+R4	REASON Arg1:T13 Arg2:T9	
+R5	RESULT Arg1:T8 Arg2:T9	
+R6	REASON Arg1:T8 Arg2:T14	
+R7	RESULT Arg1:T6 Arg2:T7	
+R8	CONDITION Arg1:T6 Arg2:T5	
+R9	RESULT Arg1:T4 Arg2:T7	
+R10	REASON Arg1:T4 Arg2:T3	
+R11	RESULT Arg1:T2 Arg2:T3	
+R12	REASON Arg1:T2 Arg2:T1	
+T14	Argument 123 131	キャリパがずれる
+T15	Connective 121 123	して
+R13	REASON Arg1:T15 Arg2:T7	
+R14	RESULT Arg1:T15 Arg2:T14	

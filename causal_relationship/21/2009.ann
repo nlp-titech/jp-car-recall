@@ -1,0 +1,13 @@
+T1	Argument 0 26	かじ取り装置の左側ナックルアームにおいて、強度が不足
+T2	Connective 30 32	ため
+T3	Argument 33 58	旋回時のタイヤ反力、およびパワーステアリングの推力
+T5	Connective 58 61	により
+T6	Argument 61 71	ナックルアームが破損
+T8	Argument 73 82	操舵ができなくなる
+T9	Connective 72 73	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T8	
+R3	REASON Arg1:T9 Arg2:T6	
+R4	RESULT Arg1:T5 Arg2:T6	
+R6	RESULT Arg1:T2 Arg2:T6	
+R7	REASON Arg1:T5 Arg2:T3	

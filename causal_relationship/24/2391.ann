@@ -1,0 +1,13 @@
+T1	Argument 3 36	手動変速機搭載車において、燃料フィルタ取付ブラケットの形状が不適切
+T2	Connective 37 39	ため
+T3	Argument 40 60	シフトリンケージと燃料ホースの隙間が狭い
+T4	Connective 65 66	、
+T5	Argument 72 96	シフト操作時にシフトリンケージが燃料ホースに干渉
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 66 68	最悪
+T7	Connective 69 71	場合
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T5	

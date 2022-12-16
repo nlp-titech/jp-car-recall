@@ -1,0 +1,29 @@
+T3	Argument 0 58	後輪２軸駆動トラックにおいて、後前軸と後後軸間のプロペラシャフトスプラインヨークを製造する際、熱処理後の検査が不適切
+T4	Connective 59 61	ため
+T5	Argument 62 82	スプラインヨークのスリーブ部に亀裂が生じ
+T6	Connective 91 95	そのため
+T7	Argument 96 110	そのままの状態で使用を続ける
+T8	Connective 110 111	と
+T9	Argument 112 123	スリーブ部の亀裂が進行
+T10	Connective 124 125	、
+T11	Argument 125 127	最悪
+T12	Connective 128 130	場合
+T13	Argument 131 142	プロペラシャフトが破損
+T14	Connective 146 147	て
+T15	Argument 148 155	走行不能となる
+R1	RESULT Arg1:T14 Arg2:T15	
+R3	RESULT Arg1:T12 Arg2:T13	
+R4	CONDITION Arg1:T12 Arg2:T11	
+R5	RESULT Arg1:T10 Arg2:T13	
+R6	REASON Arg1:T10 Arg2:T9	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	CONDITION Arg1:T8 Arg2:T7	
+R9	RESULT Arg1:T6 Arg2:T9	
+R10	REASON Arg1:T6 Arg2:T5	
+R11	RESULT Arg1:T4 Arg2:T5	
+R12	REASON Arg1:T4 Arg2:T3	
+T2	Connective 142 143	・
+T16	Argument 143 146	脱落し
+R2	REASON Arg1:T2 Arg2:T13	
+R13	RESULT Arg1:T2 Arg2:T16	
+R14	REASON Arg1:T14 Arg2:T16	

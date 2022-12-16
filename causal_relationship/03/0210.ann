@@ -1,0 +1,25 @@
+T1	Argument 1 60	走行装置において、前車軸に取付けられている上側トルクロッド及びラジアスロッドの取付金具（ブラケット）の溶接作業が不適切
+T2	Argument 64 69	強度が不足
+T3	Argument 95 105	当該ブラケットが破損
+T4	Argument 113 119	ロッドが外れ
+T5	Argument 119 126	走行不能に至る
+T6	Connective 118 119	れ
+T7	Connective 106 107	、
+T8	Connective 61 63	ため
+T9	Connective 78 79	、
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T2	
+R3	REASON Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+R7	REASON Arg1:T6 Arg2:T4	
+R8	RESULT Arg1:T6 Arg2:T5	
+T10	Argument 79 93	そのままの状態で使用を続ける
+T11	Connective 93 94	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	
+T12	Argument 107 109	最悪
+T13	Connective 110 112	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T4	

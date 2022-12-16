@@ -1,0 +1,21 @@
+T1	Argument 0 69	平成２１年１１月１２日付け届出番号２４１２のリコール作業にて使用する、対策品のエンジンオイルクーラーホースにおいて、ホースの抜け圧力が低い
+T2	Connective 75 79	そのため
+T3	Argument 92 115	当該オイルクーラーホース接続部よりホースが抜け
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 115 116	、
+T5	Argument 122 136	漏れたオイルが排気管にかかり
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 136 137	、
+R5	REASON Arg1:T6 Arg2:T5	
+T7	Argument 137 142	火災に至る
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 80 90	そのまま使用を続ける
+T9	Connective 90 91	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 116 118	最悪
+T11	Connective 119 121	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T7	

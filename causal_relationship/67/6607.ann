@@ -1,0 +1,13 @@
+T1	Argument 0 27	メーターパネルコントロールユニットのプログラムが不適切
+T2	Connective 28 30	ため
+T3	Argument 39 54	メーターパネルに画像が映らない
+T4	Connective 60 64	そのため
+T5	Argument 65 81	速度計及び警告灯等が表示されない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 31 37	エンジン始動
+T7	Connective 37 38	後
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	

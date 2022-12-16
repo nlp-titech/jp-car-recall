@@ -1,0 +1,13 @@
+T1	Argument 0 45	コンクリート作業車において、ポンプユニットのデッキ部と後軸左舷内側タイヤの隙間寸法が不適切
+T2	Connective 46 48	ため
+T3	Argument 49 57	不整地等での走行
+T4	Connective 57 58	時
+T5	Argument 59 72	内側タイヤがデッキ部に接触
+T6	Connective 73 74	、
+T7	Argument 74 92	タイヤのショルダー部に擦過痕が生じる
+R1	RESULT Arg1:T6 Arg2:T7	
+R2	REASON Arg1:T6 Arg2:T5	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	CONDITION Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T2 Arg2:T5	
+R6	REASON Arg1:T2 Arg2:T1	

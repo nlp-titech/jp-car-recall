@@ -1,0 +1,29 @@
+T1	Argument 0 44	手動変速機付車の動力伝達装置において、ギヤシフトコントロールケーブルの組付け作業が不適切
+T2	Argument 48 59	インナーケーブルが変形
+T3	Argument 92 109	当該ケーブルの変形部分に応力が集中
+T4	Argument 117 126	当該ケーブルが折損
+T5	Argument 128 140	シフト操作が出来なくなる
+T6	Connective 45 47	ため
+T7	Connective 66 67	、
+T8	Connective 110 111	、
+T9	Connective 127 128	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 67 81	そのままの状態で使用を続ける
+T11	Connective 81 82	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	
+T12	Argument 83 90	ギヤシフト操作
+T13	Connective 90 91	時
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T3	
+T14	Argument 111 113	最悪
+T15	Connective 114 116	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T4	

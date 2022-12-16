@@ -1,0 +1,29 @@
+T1	Argument 0 33	後部座席バックレストにおいて、角度調節機構の構成部品の溶接が不適切
+T2	Connective 40 44	そのため
+T3	Argument 45 56	事故等で強い力がかかっ
+T4	Connective 57 58	際
+T5	Argument 59 65	溶接が剥がれ
+T6	Connective 65 66	て
+T7	Argument 67 80	バックレストのロックが緩ん
+T8	Connective 92 93	、
+T9	Argument 93 95	最悪
+T10	Connective 96 98	場合
+T11	Argument 99 108	倒れたバックレスト
+T12	Connective 108 111	により
+T13	Argument 111 119	乗員が怪我を負う
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T18	
+R8	RESULT Arg1:T8 Arg2:T13	
+R9	CONDITION Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+T17	Connective 80 81	で
+T18	Argument 81 87	前方へ倒れる
+R13	REASON Arg1:T17 Arg2:T7	
+R14	RESULT Arg1:T17 Arg2:T18	

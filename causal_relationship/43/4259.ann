@@ -1,0 +1,11 @@
+T1	Argument 16 37	加速度センサ内ＩＣチップの製造条件が不適切
+T2	Connective 38 40	ため
+T3	Argument 41 48	ＩＣ内部で断線
+T4	Connective 56 60	そのため
+T5	Argument 61 72	エアバッグ警告灯が点灯
+T6	Argument 74 89	エアバッグが正常に作動できない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T6	

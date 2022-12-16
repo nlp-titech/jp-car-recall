@@ -1,0 +1,13 @@
+T1	Argument 0 33	エアコンプレッサの補用品において、誤品のクランクシャフトを払い出し
+T2	Connective 40 44	そのため
+T3	Argument 45 61	エアコンプレッサが潤滑不良になり
+T4	Connective 61 62	、
+T5	Argument 68 85	エンジンが停止して再始動不能となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T8	Argument 62 64	最悪
+T9	Connective 65 67	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

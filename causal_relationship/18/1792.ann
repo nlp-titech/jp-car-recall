@@ -1,0 +1,29 @@
+T1	Argument 0 50	かじ取り装置において、ステアリングギヤボックスから前車輪に操舵力を伝えるドラッグリンクの形状が不適切
+T2	Connective 51 53	ため
+T3	Argument 54 69	大きな凹凸がある不整地での走行
+T4	Connective 69 70	時
+T5	Argument 72 82	ネジ部に高応力が発生
+T6	Connective 90 94	そのため
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+T7	Argument 111 116	亀裂が発生
+T8	Connective 117 118	、
+T9	Argument 124 134	ドラッグリンクが折損
+T10	Connective 135 136	、
+T11	Argument 136 145	操舵ができなくなる
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T15	Argument 95 109	そのままの状態で使用を続ける
+T16	Connective 109 110	と
+R11	CONDITION Arg1:T16 Arg2:T15	
+R12	RESULT Arg1:T16 Arg2:T7	
+T17	Argument 118 120	最悪
+T18	Connective 121 123	場合
+R13	CONDITION Arg1:T18 Arg2:T17	
+R14	RESULT Arg1:T18 Arg2:T9	

@@ -1,0 +1,21 @@
+T1	Argument 0 27	農耕トラクタの騒音防止装置において、排気管の強度が不足
+T2	Argument 34 44	排気管とフードが干渉
+T3	Argument 53 67	排気管クランプの締付力が不足
+T4	Argument 98 107	排気管に亀裂が生じ
+T5	Argument 114 120	排気管が折損
+T6	Connective 107 108	、
+T7	Connective 77 81	そのため
+R1	REASON Arg1:T7 Arg2:T1	
+R2	REASON Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T3	
+R4	RESULT Arg1:T7 Arg2:T4	
+R5	REASON Arg1:T6 Arg2:T4	
+R6	RESULT Arg1:T6 Arg2:T5	
+T8	Argument 82 96	そのままの状態で使用を続ける
+T9	Connective 96 97	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T4	
+T10	Argument 108 110	最悪
+T11	Connective 111 113	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	

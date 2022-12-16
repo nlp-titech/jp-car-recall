@@ -1,0 +1,38 @@
+T1	Argument 11 39	オイルフィルターにおいて、リリーフバルブの開弁圧が不適切
+T2	Connective 40 42	ため
+T3	Argument 43 73	エンジン内部で発生する金属粉がオイルフィルターで捕捉されない
+T4	Connective 79 83	そのため
+T5	Argument 84 99	バキュームポンプに金属粉が侵入
+T6	Connective 99 100	し
+T7	Argument 100 104	軸が摩耗
+T8	Connective 106 108	場合
+T9	Argument 109 118	負圧生成能力が低下
+T10	Connective 119 120	、
+T13	Argument 120 146	エンジン低回転時にブレーキペダルを短時間に複数回踏む
+T14	Connective 146 147	と
+T15	Argument 148 164	一時的にブレーキアシスト力が低下
+T16	Argument 176 192	ターボチャージャーに金属粉が侵入
+T17	Connective 192 193	し
+T18	Argument 193 197	軸が摩耗
+T19	Connective 199 201	場合
+T20	Argument 202 208	加速力の低下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	CONDITION Arg1:T14 Arg2:T13	
+R11	RESULT Arg1:T14 Arg2:T15	
+R12	RESULT Arg1:T10 Arg2:T15	
+R13	RESULT Arg1:T4 Arg2:T16	
+R14	REASON Arg1:T17 Arg2:T16	
+R15	RESULT Arg1:T17 Arg2:T20	
+R16	CONDITION Arg1:T19 Arg2:T18	
+R17	RESULT Arg1:T19 Arg2:T20	
+T11	Argument 210 215	異音が発生
+R18	RESULT Arg1:T19 Arg2:T11	
+R19	RESULT Arg1:T17 Arg2:T11	

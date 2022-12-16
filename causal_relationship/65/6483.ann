@@ -1,0 +1,29 @@
+T1	Argument 17 30	防水カバーの取付けが不適切
+T2	Connective 31 33	ため
+T3	Argument 34 53	ブロアモーターハウジング部に雨水が浸入
+T4	Connective 61 65	そのため
+T5	Argument 66 79	ブロアモーター軸部分が腐食
+T6	Connective 80 81	て
+T7	Argument 81 93	モーターの動きが重くなり
+T8	Connective 93 94	、
+T10	Connective 124 125	、
+T11	Argument 125 127	最悪
+T12	Connective 128 130	場合
+T13	Argument 131 136	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+T9	Argument 94 104	回路内の電流値が上昇
+T14	Connective 108 109	で
+T15	Argument 109 124	ブロアモーターハウジングが溶け
+R8	RESULT Arg1:T14 Arg2:T15	
+R9	REASON Arg1:T14 Arg2:T9	
+R13	RESULT Arg1:T8 Arg2:T9	
+R14	REASON Arg1:T10 Arg2:T15	

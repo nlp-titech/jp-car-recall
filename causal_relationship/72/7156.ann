@@ -1,0 +1,13 @@
+T1	Argument 5 65	制動力制御装置（ＡＢＳ：アンチロックブレーキシステム）において、走行状態（４輪駆動と２輪駆動）を検知するスイッチが不適切
+T2	Connective 66 68	ため
+T3	Argument 69 99	２輪駆動での走行時に４輪駆動状態であるとコンピュータが誤認識
+T4	Connective 100 101	、
+T5	Argument 101 107	制動力を制御
+T6	Connective 114 116	から
+T7	Argument 117 133	本来の作動より制動距離が長くなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

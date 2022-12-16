@@ -1,0 +1,25 @@
+T1	Argument 2 34	小型ノンステップバスのスタータリレーにおいて、接点の構造が不適切
+T3	Argument 38 63	始動時にスタータが噛み合わなかった場合に流れる電流
+T4	Argument 67 75	当該接点が荒れる
+T5	Argument 86 96	そのまま使用を続ける
+T6	Argument 98 105	当該接点が溶着
+T7	Argument 107 109	最悪
+T8	Argument 113 120	スタータが焼損
+T9	Connective 35 37	ため
+T11	Connective 63 66	により
+T12	Connective 81 85	そのため
+T13	Connective 96 97	と
+T14	Connective 106 107	、
+T15	Connective 110 112	場合
+R1	REASON Arg1:T9 Arg2:T1	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+R7	REASON Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T6	
+R9	CONDITION Arg1:T13 Arg2:T5	
+R10	RESULT Arg1:T13 Arg2:T6	
+R11	REASON Arg1:T14 Arg2:T6	
+R13	CONDITION Arg1:T15 Arg2:T7	
+R15	RESULT Arg1:T15 Arg2:T8	
+R3	RESULT Arg1:T14 Arg2:T8	
+R2	RESULT Arg1:T9 Arg2:T4	

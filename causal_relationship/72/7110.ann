@@ -1,0 +1,9 @@
+T1	Argument 0 33	エアバッグ内部の構成部品である作動制御レバ－が取り付けられていない
+T2	Connective 38 40	ため
+T3	Argument 41 49	事故等の前面衝突
+T4	Connective 49 50	時
+T5	Argument 51 62	エアバッグが展開しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	

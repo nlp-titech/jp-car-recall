@@ -1,0 +1,22 @@
+T1	Argument 0 38	原動機の排気ガス再循環装置において、排気ガスの吸気側への戻し口の位置が不適切
+T2	Argument 42 57	吸気絞り弁内部に温度差が生じる
+T3	Argument 63 81	バタフライバルブとバルブケースが干渉
+T4	Argument 83 112	バタフライバルブの開閉が円滑でなくなり原動機の回転が不安定
+T5	Connective 39 41	ため
+T6	Connective 59 62	により
+T7	Connective 82 83	、
+T9	Argument 122 131	バルブが閉じたまま
+T10	Argument 139 157	原動機が停止し、再始動ができなくなる
+T12	Connective 136 138	から
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T3	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R9	REASON Arg1:T12 Arg2:T9	
+R10	RESULT Arg1:T12 Arg2:T10	
+T8	Argument 116 118	最悪
+T14	Connective 119 121	場合
+R12	CONDITION Arg1:T14 Arg2:T8	
+R13	RESULT Arg1:T14 Arg2:T9	
+R6	RESULT Arg1:T7 Arg2:T4	

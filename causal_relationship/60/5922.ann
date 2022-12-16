@@ -1,0 +1,5 @@
+T1	Connective 24 26	ため
+T2	Argument 26 37	保安基準第３０条に抵触
+T3	Argument 0 21	消音器の騒音低減機構を容易に除去できる構造
+R1	REASON Arg1:T1 Arg2:T3	
+R2	RESULT Arg1:T1 Arg2:T2	

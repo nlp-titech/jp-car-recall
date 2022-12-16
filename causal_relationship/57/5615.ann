@@ -1,0 +1,13 @@
+T1	Argument 0 25	排気管の装飾品（エキゾーストトリム）の寸法が不適切
+T2	Argument 29 33	製造公差
+T3	Argument 37 45	当該装飾品が突出
+T4	Argument 58 78	道路運送車両法の保安基準に適合していない
+T5	Connective 26 28	ため
+T6	Connective 33 36	により
+T7	Connective 53 57	そのため
+R1	REASON Arg1:T5 Arg2:T1	
+R2	REASON Arg1:T6 Arg2:T2	
+R3	RESULT Arg1:T6 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	

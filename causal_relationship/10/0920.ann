@@ -1,0 +1,39 @@
+T1	Argument 0 64	スプリング式駐車ブレーキ装着車において、スプリングを格納している容器（チャンバー）内部の寸法ならびにスプリングの台座形状が不適切
+T2	Connective 65 67	ため
+T3	Argument 68 112	スプリング圧縮（駐車ブレーキ開放）時にスプリング同士又はスプリングとチャンバー本体が干渉
+T4	Connective 113 114	、
+T5	Argument 114 126	スプリングの塗装が剥がれ
+T6	Connective 126 127	、
+T7	Argument 127 132	錆びが発生
+T8	Connective 140 144	そのため
+T9	Argument 145 159	そのままの状態で使用を続ける
+T10	Connective 159 160	と
+T11	Argument 161 163	最悪
+T12	Connective 164 166	場合
+T13	Argument 167 180	当該部分でスプリングが折損
+T14	Connective 181 182	、
+T15	Argument 182 196	駐車ブレーキの効きが悪くなる
+T16	Argument 199 220	折損したスプリング端部でダイアフラムが損傷
+T17	Connective 222 223	と
+T18	Argument 224 231	エア洩れが発生
+T19	Connective 232 233	、
+T20	Argument 233 248	駐車ブレーキが解除できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	CONDITION Arg1:T10 Arg2:T9	
+R9	CONDITION Arg1:T12 Arg2:T11	
+R10	RESULT Arg1:T8 Arg2:T13	
+R11	RESULT Arg1:T12 Arg2:T13	
+R12	RESULT Arg1:T10 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R15	RESULT Arg1:T14 Arg2:T16	
+R16	REASON Arg1:T17 Arg2:T16	
+R17	RESULT Arg1:T17 Arg2:T18	
+R18	REASON Arg1:T19 Arg2:T18	
+R19	RESULT Arg1:T19 Arg2:T20	

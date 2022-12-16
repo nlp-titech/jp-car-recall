@@ -1,0 +1,29 @@
+T1	Argument 0 17	ワイヤーハーネスの配索設計が不適切
+T2	Connective 18 20	ため
+T3	Argument 21 31	燃料タンク裏面と干渉
+T4	Connective 41 45	そのため
+T5	Argument 46 56	そのまま使用を続ける
+T6	Connective 56 57	と
+T7	Argument 58 64	走行中の振動
+T8	Connective 64 67	により
+T9	Argument 67 85	ワイヤーハーネスの被覆が摩耗して短絡
+T10	Connective 86 87	、
+T11	Argument 87 93	エンジン不調
+T12	Connective 93 96	となり
+T13	Argument 97 99	最悪
+T14	Connective 100 102	場合
+T15	Argument 103 114	走行中にエンジンが停止
+R1	RESULT Arg1:T14 Arg2:T15	
+R2	CONDITION Arg1:T14 Arg2:T13	
+R3	RESULT Arg1:T12 Arg2:T15	
+R4	REASON Arg1:T12 Arg2:T11	
+R5	RESULT Arg1:T10 Arg2:T11	
+R6	REASON Arg1:T10 Arg2:T9	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	REASON Arg1:T8 Arg2:T7	
+R9	RESULT Arg1:T6 Arg2:T9	
+R10	CONDITION Arg1:T6 Arg2:T5	
+R11	RESULT Arg1:T4 Arg2:T9	
+R12	REASON Arg1:T4 Arg2:T3	
+R13	RESULT Arg1:T2 Arg2:T3	
+R14	REASON Arg1:T2 Arg2:T1	

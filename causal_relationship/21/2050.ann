@@ -1,0 +1,21 @@
+T1	Connective 46 48	ため
+T2	Argument 0 45	機械式自動変速機付き小型商用車の速度計において、メータ基板材質及び回路抵抗体の仕様が不適切
+T3	Argument 49 67	抵抗の自己発熱によるメータ基板の膨張
+T4	Connective 67 70	により
+T5	Argument 71 92	抵抗体を取り付けているはんだに亀裂が生じる
+T6	Connective 98 102	そのため
+T7	Argument 103 114	そのままの使用を続ける
+T8	Connective 128 129	、
+T9	Argument 129 140	速度計が作動しなくなる
+R1	REASON Arg1:T1 Arg2:T2	
+R2	RESULT Arg1:T1 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T11	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Connective 114 115	と
+T11	Argument 116 128	メータ回路の電源が絶たれ
+R7	CONDITION Arg1:T10 Arg2:T7	
+R9	RESULT Arg1:T10 Arg2:T11	
+R10	REASON Arg1:T8 Arg2:T11	

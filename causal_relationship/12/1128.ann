@@ -1,0 +1,33 @@
+T1	Argument 0 52	前輪独立懸架方式のアッパーアームとロアアームのボールジョイントにおいて、ダストブーツのシール構造が不適切
+T2	Connective 53 55	ため
+T3	Argument 56 70	当該ジョイントへ泥水等が浸入
+T4	Connective 71 72	、
+T5	Argument 72 82	樹脂ベアリングが摩耗
+T6	Connective 83 84	て
+T7	Argument 84 89	ガタが発生
+T8	Connective 97 101	そのため
+T9	Argument 102 116	そのままの状態で使用を続ける
+T10	Connective 116 117	と
+T11	Argument 117 122	ガタが増大
+T12	Connective 123 124	、
+T13	Argument 124 126	最悪
+T14	Connective 127 129	場合
+T15	Argument 130 153	ボールジョイントがサスペンションアームから外れ
+T16	Connective 153 154	、
+T17	Argument 154 161	走行不能になる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	CONDITION Arg1:T10 Arg2:T9	
+R9	CONDITION Arg1:T14 Arg2:T13	
+R10	RESULT Arg1:T8 Arg2:T11	
+R11	RESULT Arg1:T10 Arg2:T11	
+R12	RESULT Arg1:T14 Arg2:T15	
+R13	RESULT Arg1:T12 Arg2:T15	
+R14	REASON Arg1:T16 Arg2:T15	
+R15	RESULT Arg1:T16 Arg2:T17	
+R16	REASON Arg1:T12 Arg2:T11	

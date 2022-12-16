@@ -1,0 +1,13 @@
+T1	Argument 0 32	イグニッション・キー・シリンダにおいて、”ＯＮ”位置の節度が弱い
+T2	Connective 38 42	そのため
+T3	Argument 43 61	走行中にイグニッション・キーに触れる
+T4	Connective 61 62	と
+T5	Argument 62 84	キーポジションが”ＯＮ”から”ＡＣＣ”へ動き
+T6	Connective 84 85	、
+T7	Argument 85 92	エンジンが停止
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

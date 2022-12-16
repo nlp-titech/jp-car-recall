@@ -1,0 +1,17 @@
+T1	Argument 8 50	樹脂製空気調整弁（ベンチレーション・バルブ）に応力が生じるようにホースが組み付けられ
+T2	Connective 57 61	そのため
+T3	Argument 74 85	当該調整弁に亀裂が発生
+T4	Connective 86 87	、
+T5	Argument 93 99	燃料が漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 62 72	そのまま使用を続ける
+T7	Connective 72 73	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 87 89	最悪
+T9	Connective 90 92	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

@@ -1,0 +1,17 @@
+T1	Argument 0 54	動力伝達装置の走行用油圧モータに取り付けられる、オーバーロードリリーフバルブにおいて、製造工程での異物が混入
+T2	Connective 64 68	そのため
+T3	Argument 85 95	内部のシール部が損傷
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 96 97	、
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 97 108	油圧が保持できなくなる
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 108 110	ため
+T7	Argument 111 118	走行不能になる
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 69 83	そのままの状態で使用を続ける
+T9	Connective 83 84	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	

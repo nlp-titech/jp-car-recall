@@ -1,0 +1,17 @@
+T1	Argument 0 33	左後部側面パネル下部の水抜き孔がシーラ（車体隙間の充填剤）で塞がっ
+T2	Argument 44 58	雨水等が当該パネル内に溜まり
+T3	Argument 59 88	当該部にある燃料ポンプ用の電気配線のコネクタ端子に錆が発生
+T4	Argument 90 103	燃料ポンプが作動しなくなり
+T5	Argument 104 111	走行不能に至る
+T6	Connective 41 43	ため
+T7	Connective 58 59	、
+T8	Connective 89 90	、
+T9	Connective 103 104	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	

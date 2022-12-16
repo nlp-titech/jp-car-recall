@@ -1,0 +1,17 @@
+T1	Argument 0 35	ターボチャージャ付車両において、エキゾーストマニホールドの材質が不適切
+T2	Connective 36 38	ため
+T3	Argument 39 54	登坂路走行を頻繁に繰り返し行う
+T4	Argument 56 65	熱による膨張・収縮
+T5	Connective 54 55	と
+T6	Connective 71 72	、
+T7	Argument 72 80	排出ガスが漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T4	
+R3	REASON Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T4	
+R5	REASON Arg1:T6 Arg2:T4	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 66 71	亀裂が生じ
+T9	Connective 65 66	で
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T8	

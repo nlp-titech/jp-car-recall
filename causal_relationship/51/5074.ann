@@ -1,0 +1,25 @@
+T1	Argument 17 33	ストラットプレートの強度が不十分
+T2	Connective 34 36	ため
+T3	Argument 60 72	当該プレートに亀裂を生じ
+T4	Connective 72 73	て
+T5	Argument 73 78	異音が発生
+T6	Connective 86 90	そのため
+T7	Argument 107 116	当該プレートが脱落
+T8	Connective 117 118	、
+T9	Argument 118 127	走行安定性が損なわ
+R1	REASON Arg1:T4 Arg2:T3	
+R2	RESULT Arg1:T4 Arg2:T5	
+R3	REASON Arg1:T6 Arg2:T3	
+R4	RESULT Arg1:T6 Arg2:T7	
+T10	Argument 91 105	そのままの状態で使用を続ける
+T11	Connective 105 106	と
+R5	CONDITION Arg1:T11 Arg2:T10	
+R6	RESULT Arg1:T11 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T2 Arg2:T1	
+R10	RESULT Arg1:T2 Arg2:T3	
+T13	Argument 37 58	高温多湿の環境下で渋滞走行を繰り返し行なう
+T14	Connective 58 59	と
+R12	CONDITION Arg1:T14 Arg2:T13	
+R13	RESULT Arg1:T14 Arg2:T3	

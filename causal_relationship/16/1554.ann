@@ -1,0 +1,29 @@
+T1	Argument 0 47	高輝度放電灯式ヘッドランプ装着車において、ヘッドランプのレンズとハウジング結合部の構造が不適切
+T2	Argument 51 72	ボンネットラバーシールによりレンズが押され
+T3	Argument 73 99	レンズとハウジング結合部のシール材が部分的に剥がれる
+T4	Argument 115 127	ヘッドランプ内に水が浸入
+T5	Argument 135 157	ヘッドランプのコントロールユニットに水が浸入
+T6	Argument 160 169	電圧制御回路が短絡
+T7	Argument 171 184	ヘッドランプが不点灯となる
+T8	Connective 170 171	、
+T9	Connective 158 159	て
+T10	Connective 128 129	、
+T11	Connective 105 109	そのため
+T12	Connective 72 73	、
+T13	Connective 48 50	ため
+R1	REASON Arg1:T13 Arg2:T1	
+R2	RESULT Arg1:T13 Arg2:T2	
+R3	REASON Arg1:T12 Arg2:T2	
+R4	RESULT Arg1:T12 Arg2:T3	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T5	
+R9	REASON Arg1:T9 Arg2:T5	
+R10	RESULT Arg1:T9 Arg2:T6	
+R11	REASON Arg1:T8 Arg2:T6	
+R12	RESULT Arg1:T8 Arg2:T7	
+T16	Argument 129 131	最悪
+T17	Connective 132 134	場合
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T5	

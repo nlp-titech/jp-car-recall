@@ -1,0 +1,21 @@
+T1	Argument 0 44	ステンレス製粉粒体運搬セミトレーラにおいて、タンク体補強フレームの構造強度の評価が不適切
+T2	Argument 48 68	タンク体補強フレームの溶接部の強度が不足
+T3	Argument 83 101	走行時（旋回や段差乗り換え等）の衝撃
+T4	Argument 105 114	溶接部に亀裂が発生
+T5	Argument 116 126	そのまま使用を続ける
+T6	Argument 128 134	溶接部が破断
+T7	Connective 45 47	ため
+T8	Connective 78 82	そのため
+T9	Connective 115 116	、
+T10	Connective 101 104	により
+T11	Connective 126 127	と
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T4	
+R5	REASON Arg1:T10 Arg2:T3	
+R6	RESULT Arg1:T10 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T6	
+R9	CONDITION Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	

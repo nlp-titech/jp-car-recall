@@ -1,0 +1,21 @@
+T1	Argument 0 53	制動装置において、リヤアクスルハウジングに溶接されているリヤサスペンションアームの支持ブラケットに溶接不良
+T2	Argument 62 78	当該ブラケットが溶接部分で外れる
+T4	Argument 84 121	当該ブラケットに固定されているブレーキチューブが走行時の振動等により、揺動
+T5	Argument 123 141	リヤホイルシリンダーとの結合部が弛ん
+T6	Argument 142 150	ブレーキ液が漏れ
+T7	Argument 151 157	制動力が低下
+T8	Connective 59 61	ため
+T9	Connective 83 84	、
+T11	Connective 122 123	、
+T12	Connective 150 151	、
+T13	Connective 141 142	で
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T2	
+R3	REASON Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T11 Arg2:T5	
+R9	REASON Arg1:T13 Arg2:T5	
+R10	RESULT Arg1:T13 Arg2:T6	
+R11	REASON Arg1:T12 Arg2:T6	
+R12	RESULT Arg1:T12 Arg2:T7	
+R5	REASON Arg1:T11 Arg2:T4	

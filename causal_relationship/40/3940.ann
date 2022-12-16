@@ -1,0 +1,16 @@
+T2	Argument 59 65	走行時の振動
+T3	Argument 69 77	操作レバーの操作
+T4	Argument 79 85	溶接部が破断
+T5	Argument 98 117	コンテナの固定および解除ができなくなる
+T6	Connective 56 58	ため
+T7	Connective 77 79	時に
+T8	Connective 93 97	そのため
+R2	RESULT Arg1:T6 Arg2:T4	
+R3	RESULT Arg1:T6 Arg2:T3	
+R4	CONDITION Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T2	
+R6	RESULT Arg1:T7 Arg2:T4	
+R7	REASON Arg1:T8 Arg2:T4	
+R8	RESULT Arg1:T8 Arg2:T5	
+T1	Argument 20 55	左右のツイストロックを連結するロッドを接続するブラケットの溶接が不適切
+R1	REASON Arg1:T6 Arg2:T1	

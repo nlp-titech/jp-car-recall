@@ -1,0 +1,17 @@
+T1	Argument 20 36	クランクシャフトプーリに強度不足
+T2	Connective 42 43	、
+T3	Argument 58 78	当該プーリのダンパーラバー部に亀裂が生じ
+T4	Connective 78 79	、
+T5	Argument 85 91	原動機が停止
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 43 57	そのままの状態で使用を続ける
+T7	Connective 57 58	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 79 81	最悪
+T9	Connective 82 84	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

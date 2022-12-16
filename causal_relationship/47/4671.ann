@@ -1,0 +1,13 @@
+T1	Argument 4 49	ファンベルトの張力を調整・維持する装置（自動テンショナー）において、張力の調整機構に不具合
+T2	Connective 52 53	、
+T3	Argument 73 84	オーバーヒートをおこす
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 53 63	そのままの状態で使用
+T5	Connective 65 66	と
+R3	CONDITION Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T3	
+T6	Argument 67 69	最悪
+T7	Connective 70 72	場合
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	

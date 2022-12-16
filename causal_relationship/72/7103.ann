@@ -1,0 +1,13 @@
+T1	Argument 0 59	前輪のショックアブソーバ保持具において、保持具本体と本体内部に取付けられているゴムブッシュとの接合部分に、一部製造不良
+T2	Connective 65 67	ため
+T3	Argument 68 82	このままの状態で使用を続ける
+T4	Connective 82 83	と
+T5	Argument 83 104	当該保持具本体とゴムブッシュが部分的に剥離
+T6	Connective 105 106	、
+T7	Argument 106 114	走行中異音が発生
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

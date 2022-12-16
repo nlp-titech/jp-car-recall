@@ -1,0 +1,31 @@
+T1	Argument 0 42	かじ取り装置において、パワーステアリング用油圧ポンプの駆動用ベルト組付時の張力に過大
+T2	Argument 51 63	当該ポンプの軸受部が損傷
+T3	Argument 64 70	作動油が漏れ
+T4	Argument 86 97	ハンドルの操作力が増大
+T5	Argument 105 115	当該ポンプが潤滑不良
+T6	Argument 118 120	過熱
+T7	Argument 122 127	火災に至る
+T8	Connective 48 50	ため
+T9	Connective 63 64	し
+T10	Connective 70 71	、
+T12	Connective 115 118	により
+T13	Connective 121 122	て
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T2	
+R3	REASON Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T3	
+R5	REASON Arg1:T10 Arg2:T3	
+R6	RESULT Arg1:T10 Arg2:T4	
+R9	REASON Arg1:T12 Arg2:T5	
+R10	RESULT Arg1:T12 Arg2:T6	
+R11	REASON Arg1:T13 Arg2:T6	
+R12	RESULT Arg1:T13 Arg2:T7	
+T14	Argument 71 85	そのままの状態で使用を続ける
+T15	Connective 85 86	と
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T4	
+T16	Argument 99 101	最悪
+T17	Connective 102 104	場合
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T5	
+R7	RESULT Arg1:T10 Arg2:T5	

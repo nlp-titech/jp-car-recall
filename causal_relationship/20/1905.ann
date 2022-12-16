@@ -1,0 +1,13 @@
+T1	Argument 0 29	エンジンの防振ゴム付クランクプーリの防振ゴムの接着面が剥離
+T2	Connective 37 41	そのため
+T3	Argument 42 62	当該クランクプーリのリング（外輪）が脱落
+T4	Connective 63 64	、
+T5	Argument 76 83	エンジンが停止
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+T11	Argument 64 75	発電機が作動しなくなり
+T12	Connective 75 76	、
+R4	RESULT Arg1:T4 Arg2:T11	
+R5	REASON Arg1:T12 Arg2:T11	
+R6	RESULT Arg1:T12 Arg2:T5	

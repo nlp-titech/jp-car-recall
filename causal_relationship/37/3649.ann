@@ -1,0 +1,25 @@
+T2	Connective 71 73	ため
+T3	Argument 74 80	エンジン共振
+T4	Connective 80 83	により
+T5	Argument 84 115	当該２部品を取付けたケーブル取付ブラケットに過大な負荷がかかる
+T6	Connective 121 125	そのため
+T7	Argument 126 136	そのまま使用を続ける
+T8	Connective 136 137	と
+T9	Argument 138 151	当該ブラケットに亀裂が生じ
+T10	Connective 151 152	、
+T11	Argument 152 154	最悪
+T12	Connective 155 157	場合
+T13	Argument 158 160	折損
+R1	RESULT Arg1:T12 Arg2:T13	
+R2	CONDITION Arg1:T12 Arg2:T11	
+R3	RESULT Arg1:T10 Arg2:T13	
+R4	REASON Arg1:T10 Arg2:T9	
+R5	RESULT Arg1:T8 Arg2:T9	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T9	
+R8	REASON Arg1:T6 Arg2:T5	
+R9	RESULT Arg1:T4 Arg2:T5	
+R10	REASON Arg1:T4 Arg2:T3	
+R11	RESULT Arg1:T2 Arg2:T5	
+T1	Argument 0 70	天然ガス／ガソリン併用仕様に改造した車両において、ＣＮＧインジェクターＡｓｓｙブラケット及びフューエルフィルターブラケットの固定方法が不適切
+R12	REASON Arg1:T2 Arg2:T1	

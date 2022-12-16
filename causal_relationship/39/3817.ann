@@ -1,0 +1,21 @@
+T1	Argument 0 52	車椅子乗降用スロープ装着車の後部座席において、後部座席を折り畳んだ際に固定させるバンドの取付構造が不適切
+T2	Argument 56 67	取付部よりバンドが外れ
+T3	Argument 68 76	後部座席が倒れる
+T4	Argument 87 108	車椅子利用者の膝や手などに後部座席が当たり
+T5	Argument 109 111	最悪
+T6	Argument 115 127	車椅子利用者が負傷をする
+T7	Connective 53 55	ため
+T8	Connective 67 68	、
+T9	Connective 82 86	そのため
+T10	Connective 108 109	、
+T11	Connective 112 114	場合
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+R9	CONDITION Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	
+R8	RESULT Arg1:T10 Arg2:T6	

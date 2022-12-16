@@ -1,0 +1,13 @@
+T1	Argument 13 50	故障診断装置（ＯｎＢｏａｒｄＤｉａｇｎｏｓｉｓＳｙｓｔｅｍ）の配線に未結線
+T2	Connective 57 61	そのため
+T3	Argument 93 113	故障診断作業並びに修理作業に支障を来たす
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 71 87	故障診断機により故障診断修理作業
+T5	Connective 90 92	場合
+R3	CONDITION Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T3	
+T6	Argument 62 69	当該装置の故障
+T7	Connective 69 71	時に
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T4	

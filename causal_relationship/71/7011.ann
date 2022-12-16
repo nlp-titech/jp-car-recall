@@ -1,0 +1,17 @@
+T1	Argument 0 47	アスファルトフィニッシャに備える作業装置の作動状態を切り替えるトグルスイッチの防水構造が不適切
+T2	Connective 48 50	ため
+T3	Argument 51 68	当該スイッチ内部の接点部に水が侵入
+T4	Argument 70 77	接点不良が発生
+T5	Connective 69 70	、
+T6	Connective 85 89	そのため
+T7	Argument 90 104	そのままの状態で使用を続ける
+T8	Connective 104 105	と
+T9	Argument 106 130	作業装置が誤作動を起こすなど正常な操作ができなく
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T4	
+R5	REASON Arg1:T6 Arg2:T4	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	RESULT Arg1:T6 Arg2:T9	

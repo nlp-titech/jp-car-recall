@@ -1,0 +1,27 @@
+T1	Argument 0 46	自動６速マニュアルモードトランスミッションにおいて、③クラッチディスクのブッシュの強度が不足
+T2	Connective 50 52	ため
+T3	Argument 53 64	クラッチ操作の繰り返し
+T4	Connective 64 67	により
+T5	Argument 67 76	当該ブッシュが破損
+T6	Connective 77 78	、
+T7	Argument 78 104	破損片がクラッチカバーとクラッチディスク間に噛みこん
+T8	Connective 104 105	で
+T9	Argument 105 116	クラッチが切れなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Connective 121 122	、
+T11	Argument 122 128	警告灯が点灯
+T13	Argument 134 146	保護制御によりギヤを固定
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T14	Connective 147 148	て
+T15	Argument 149 157	変速できなくなる
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R11	RESULT Arg1:T10 Arg2:T13	

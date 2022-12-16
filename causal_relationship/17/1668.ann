@@ -1,0 +1,25 @@
+T1	Argument 0 26	クラッチ液を蓄えるリザーバタンクの配管の構造が不適切
+T3	Argument 30 51	クラッチ液交換の際、当該配管内に空気が残留
+T5	Connective 27 29	ため
+T6	Connective 59 63	そのため
+T7	Argument 76 93	クラッチ液の圧力配管内に空気が混入
+T8	Connective 94 95	、
+T9	Argument 95 107	クラッチの切れ不良となり
+T10	Connective 107 108	、
+T11	Argument 114 125	変速操作ができなくなる
+R1	RESULT Arg1:T10 Arg2:T11	
+R2	REASON Arg1:T10 Arg2:T9	
+R3	RESULT Arg1:T8 Arg2:T9	
+R4	REASON Arg1:T8 Arg2:T7	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	REASON Arg1:T6 Arg2:T3	
+R7	RESULT Arg1:T5 Arg2:T3	
+R8	REASON Arg1:T5 Arg2:T1	
+T12	Argument 64 74	そのまま使用を続ける
+T13	Connective 74 75	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T7	
+T14	Argument 108 110	最悪
+T15	Connective 111 113	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T11	

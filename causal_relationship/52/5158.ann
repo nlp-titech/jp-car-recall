@@ -1,0 +1,17 @@
+T1	Argument 0 20	灯火装置の前照灯スイッチの外枠に製造不良
+T2	Argument 43 55	当該スイッチの外枠が破損
+T3	Connective 56 57	、
+T4	Argument 63 75	前照灯等が点灯しなくなる
+T5	Connective 26 27	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T3 Arg2:T2	
+R4	RESULT Arg1:T3 Arg2:T4	
+T6	Argument 27 41	そのままの状態で使用を続ける
+T7	Connective 41 42	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T2	
+T8	Argument 57 59	最悪
+T9	Connective 60 62	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T4	

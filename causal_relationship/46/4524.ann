@@ -1,0 +1,17 @@
+T1	Argument 8 29	電動ファンモータの軸受取付部の寸法に不適切
+T2	Connective 35 37	ため
+T3	Argument 54 66	軸受部のベアリングが固着
+T4	Connective 67 68	て
+T5	Argument 68 81	当該モータが作動しなくなり
+T6	Connective 81 82	、
+T7	Argument 82 92	オーバーヒートに至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 38 52	そのままの状態で使用を続ける
+T9	Connective 52 53	と
+R8	RESULT Arg1:T9 Arg2:T3	
+R9	CONDITION Arg1:T9 Arg2:T8	

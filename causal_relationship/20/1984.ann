@@ -1,0 +1,37 @@
+T1	Argument 0 58	消防車両に装備されているエンジンブロックヒータ（冷寒時始動性向上装置）において、端子部の絶縁用キャップの耐熱性が不足
+T2	Connective 62 64	ため
+T5	Argument 83 92	当該キャップが劣化
+T6	Connective 93 94	、
+T7	Argument 94 101	絶縁性能が低下
+T8	Connective 109 113	そのため
+T9	Argument 123 134	融雪剤等が端子部に浸入
+T10	Connective 136 137	と
+T11	Argument 138 150	腐食により接触抵抗が増加
+T12	Connective 151 152	て
+T13	Argument 153 159	端子部が発熱
+T14	Connective 160 161	、
+T15	Argument 161 163	断線
+T18	Argument 182 187	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T11	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+T3	Argument 65 82	長期間にわたり長時間通電を繰り返す
+T4	Connective 82 83	と
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T16	Argument 166 168	焼損
+R17	RESULT Arg1:T14 Arg2:T16	
+T17	Argument 176 178	最悪
+T20	Connective 179 181	場合
+R19	CONDITION Arg1:T20 Arg2:T17	
+R20	RESULT Arg1:T20 Arg2:T18	
+R15	RESULT Arg1:T14 Arg2:T18	

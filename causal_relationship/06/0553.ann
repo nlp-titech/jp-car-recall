@@ -1,0 +1,43 @@
+T1	Argument 0 29	①動力伝達装置において、自動変速機の制御プログラムが不適切
+T2	Argument 33 51	変速用インプットクラッチの油圧が低い
+T3	Argument 67 76	当該クラッチが滑り
+T4	Argument 77 85	エンジンが空吹き
+T5	Argument 110 117	車体振動が発生
+T6	Argument 131 136	滑りが発生
+T7	Argument 143 161	アクセル操作に応じた加速が困難になり
+T8	Argument 168 180	中高速で走行出来なくなる
+T9	Connective 30 32	ため
+T10	Connective 56 57	、
+T11	Connective 76 77	、
+T12	Connective 118 119	、
+T13	Connective 139 142	により
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T2	
+R3	REASON Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T3	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+R8	REASON Arg1:T12 Arg2:T5	
+R9	RESULT Arg1:T12 Arg2:T6	
+R10	REASON Arg1:T13 Arg2:T6	
+R11	RESULT Arg1:T13 Arg2:T7	
+T14	Connective 161 162	、
+R12	REASON Arg1:T14 Arg2:T7	
+R13	RESULT Arg1:T14 Arg2:T8	
+R7	RESULT Arg1:T10 Arg2:T6	
+T15	Argument 57 65	５速での高速走行
+T16	Connective 65 66	時
+R14	CONDITION Arg1:T16 Arg2:T15	
+R15	RESULT Arg1:T16 Arg2:T3	
+T17	Argument 94 108	そのままの状態で使用を続ける
+T18	Connective 108 109	と
+R16	CONDITION Arg1:T18 Arg2:T17	
+R17	RESULT Arg1:T18 Arg2:T5	
+T19	Argument 119 126	より低速のギア
+T20	Connective 130 131	も
+R18	CONDITION Arg1:T20 Arg2:T19	
+R19	RESULT Arg1:T20 Arg2:T6	
+T21	Argument 162 164	最悪
+T22	Connective 165 167	場合
+R20	CONDITION Arg1:T22 Arg2:T21	
+R21	RESULT Arg1:T22 Arg2:T8	

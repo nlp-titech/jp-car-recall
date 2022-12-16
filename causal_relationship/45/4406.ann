@@ -1,0 +1,17 @@
+T1	Argument 0 70	車室内（助手席側）にある、冷却水循環ホースと接続している空調用熱交換器（ヒーター・コア）のパイプが過剰な冷却水温の上昇に耐えられず亀裂が生じ
+T2	Connective 79 80	、
+T3	Argument 86 99	車室内に冷却水や蒸気が侵入
+T4	Connective 100 101	て
+T5	Argument 101 110	前面ガラスを曇らせ
+T6	Connective 110 111	、
+T7	Argument 111 122	運転者の視認性を損なう
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 80 82	最悪
+T9	Connective 83 85	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	

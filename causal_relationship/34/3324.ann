@@ -1,0 +1,21 @@
+T1	Argument 0 35	ホイール・クレーンの制動装置において、ブレーキホースの取り回しが不適切
+T2	Connective 36 38	ため
+T5	Argument 39 71	ハンドル操作をした際にハンドルのリンク機構がブレーキホースに接触
+T6	Connective 79 83	そのため
+T7	Argument 84 98	そのままの状態で使用を続ける
+T8	Connective 98 99	と
+T9	Argument 100 110	ブレーキホースが損傷
+T10	Connective 111 112	、
+T11	Argument 112 120	ブレーキ液が漏れ
+R1	RESULT Arg1:T10 Arg2:T11	
+R2	REASON Arg1:T10 Arg2:T9	
+R3	RESULT Arg1:T8 Arg2:T9	
+R4	CONDITION Arg1:T8 Arg2:T7	
+R5	RESULT Arg1:T6 Arg2:T9	
+R6	REASON Arg1:T6 Arg2:T5	
+R9	RESULT Arg1:T2 Arg2:T5	
+R10	REASON Arg1:T2 Arg2:T1	
+T12	Connective 120 121	て
+T13	Argument 121 127	制動力が低下
+R11	RESULT Arg1:T12 Arg2:T13	
+R12	REASON Arg1:T12 Arg2:T11	

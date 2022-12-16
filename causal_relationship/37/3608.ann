@@ -1,0 +1,13 @@
+T1	Argument 14 26	燃料タンクの製造が不適切
+T2	Connective 27 29	ため
+T3	Argument 30 57	当該タンクのタンクボディーとエンドプレート溶接部に隙間
+T4	Connective 69 73	そのため
+T5	Argument 74 81	走行時の振動等
+R1	RESULT Arg1:T4 Arg2:T10	
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T3	
+R4	REASON Arg1:T2 Arg2:T1	
+T10	Argument 84 94	隙間から燃料が漏れる
+T11	Connective 81 84	により
+R5	REASON Arg1:T11 Arg2:T5	
+R6	RESULT Arg1:T11 Arg2:T10	

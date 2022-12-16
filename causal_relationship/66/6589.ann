@@ -1,0 +1,39 @@
+T1	Argument 9 30	イグニッションキーモジュールの設計が不適切
+T2	Connective 31 33	ため
+T3	Argument 34 39	シート位置
+T4	Connective 39 42	により
+T5	Argument 43 62	運転者の膝等がイグニッションキーと接触
+T6	Connective 64 66	場合
+T7	Argument 67 97	イグニッションキーシリンダーが＂ＯＮ＂から＂ＡＣＣ＂側に動く
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T7	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Connective 103 107	そのため
+T9	Argument 108 116	車両の電源が遮断
+T10	Connective 118 119	、
+T11	Argument 125 136	走行中にエンジンが停止
+R7	REASON Arg1:T8 Arg2:T7	
+R10	REASON Arg1:T10 Arg2:T9	
+R8	RESULT Arg1:T8 Arg2:T9	
+T13	Argument 119 121	最悪
+T14	Connective 122 124	場合
+R12	CONDITION Arg1:T14 Arg2:T13	
+R13	RESULT Arg1:T14 Arg2:T11	
+T15	Connective 157 158	、
+T16	Argument 158 169	運転操作に支障をきたす
+R16	REASON Arg1:T15 Arg2:T11	
+R17	RESULT Arg1:T15 Arg2:T16	
+T17	Argument 179 199	車両の電源が遮断された状態で事故を起こし
+T18	Connective 200 202	場合
+T21	Argument 203 214	エアバッグが展開しない
+R21	CONDITION Arg1:T18 Arg2:T17	
+R22	RESULT Arg1:T18 Arg2:T21	
+R9	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 142 157	パワーステアリング等が機能せず
+R14	REASON Arg1:T15 Arg2:T12	
+R15	RESULT Arg1:T14 Arg2:T12	
+R20	RESULT Arg1:T10 Arg2:T12	
+R11	RESULT Arg1:T10 Arg2:T21	

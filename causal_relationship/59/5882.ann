@@ -1,0 +1,23 @@
+T1	Argument 7 45	クラッチ油圧配管において、金属製パイプとゴムホースの接続部分にカシメの不十分
+T2	Connective 52 56	そのため
+T3	Argument 57 76	当該箇所からクラッチオイル漏れをおこし
+T4	Connective 76 77	て
+T5	Argument 78 90	オイルレベル警告灯が点灯
+T6	Argument 93 107	そのままの状態で使用を続ける
+T7	Connective 107 108	と
+T8	Argument 109 111	最悪
+T9	Connective 112 114	場合
+T10	Argument 115 129	クラッチの操作ができなくなり
+T11	Connective 128 129	り
+T12	Argument 129 137	変速できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R7	CONDITION Arg1:T7 Arg2:T6	
+R8	RESULT Arg1:T7 Arg2:T10	
+R9	CONDITION Arg1:T9 Arg2:T8	
+R10	RESULT Arg1:T9 Arg2:T10	
+R11	REASON Arg1:T11 Arg2:T10	
+R12	RESULT Arg1:T11 Arg2:T12	
+R5	RESULT Arg1:T4 Arg2:T10	

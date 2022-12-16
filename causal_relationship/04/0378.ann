@@ -1,0 +1,41 @@
+T1	Argument 71 77	原動機の振動
+T2	Argument 0 58	軽油を燃料とする原動機を搭載し、湿式タイプのフライホイールを装着した車両において、アイドル回転数以下の低速走行を多用
+T3	Argument 80 106	燃料噴射ポンプの燃料噴射量制御用レバー等が早期に摩耗
+T4	Argument 108 126	原動機の低回転域における噴射量が減少
+T5	Argument 157 166	回転数がさらに低下
+T6	Argument 173 191	原動機のフライホイールが共振を起こし
+T7	Argument 198 210	フライホイール内部が破損
+T8	Argument 212 220	動力が伝達されず
+T9	Argument 221 228	走行不能となる
+T10	Connective 67 69	場合
+T11	Connective 77 80	により
+T12	Connective 107 108	、
+T13	Connective 128 130	ため
+T14	Connective 170 172	から
+T15	Connective 191 192	、
+T16	Connective 211 212	、
+T17	Connective 220 221	、
+R1	CONDITION Arg1:T10 Arg2:T2	
+R2	RESULT Arg1:T10 Arg2:T3	
+R3	REASON Arg1:T11 Arg2:T1	
+R4	RESULT Arg1:T11 Arg2:T3	
+R5	REASON Arg1:T12 Arg2:T3	
+R6	RESULT Arg1:T12 Arg2:T4	
+R7	REASON Arg1:T13 Arg2:T4	
+R8	RESULT Arg1:T13 Arg2:T5	
+R9	REASON Arg1:T14 Arg2:T5	
+R10	RESULT Arg1:T14 Arg2:T6	
+R11	REASON Arg1:T15 Arg2:T6	
+R12	RESULT Arg1:T15 Arg2:T7	
+R13	REASON Arg1:T16 Arg2:T7	
+R14	RESULT Arg1:T16 Arg2:T8	
+R15	REASON Arg1:T17 Arg2:T8	
+R16	RESULT Arg1:T17 Arg2:T9	
+T18	Argument 131 155	そのままの状態でさらに極低速による走行をくり返す
+T19	Connective 155 156	と
+R17	CONDITION Arg1:T19 Arg2:T18	
+R18	RESULT Arg1:T19 Arg2:T5	
+T22	Argument 192 194	最悪
+T23	Connective 195 197	場合
+R21	CONDITION Arg1:T23 Arg2:T22	
+R22	RESULT Arg1:T23 Arg2:T7	

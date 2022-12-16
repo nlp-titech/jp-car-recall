@@ -1,0 +1,14 @@
+T1	Argument 0 22	エンジン制御コンピュータのプログラムが不適切
+T2	Connective 23 25	ため
+T11	Argument 91 130	スロットルポジションセンサからの信号が正常に戻った場合、スロットルが徐々に開く
+T12	Connective 136 140	そのため
+T13	Argument 141 153	エンジン回転が徐々に上昇
+T14	Connective 154 155	、
+T15	Argument 155 178	アクセルペダルを踏んでいないにもかかわらず加速
+R1	RESULT Arg1:T14 Arg2:T15	
+R2	REASON Arg1:T14 Arg2:T13	
+R3	RESULT Arg1:T12 Arg2:T13	
+R4	REASON Arg1:T12 Arg2:T11	
+R14	REASON Arg1:T2 Arg2:T1	
+R5	RESULT Arg1:T2 Arg2:T11	
+#1	AnnotatorNotes T11	この前の節は因果関係がつけられない

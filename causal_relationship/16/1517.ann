@@ -1,0 +1,25 @@
+T1	Argument 0 67	脱着装置付コンテナ専用車用コンテナのテールゲートにおいて、ゲートをコンテナに固定するためのヒンジピンに取り付けている割ピンの強度が不足
+T2	Argument 94 98	走行振動
+T3	Argument 101 107	割ピンが破断
+T4	Argument 109 117	ヒンジピンが抜け
+T5	Argument 118 131	テールゲートが道路上に落下
+T6	Argument 133 142	交通の安全を妨げる
+T7	Connective 77 81	そのため
+T8	Connective 98 101	により
+R1	RESULT Arg1:T7 Arg2:T3	
+R2	RESULT Arg1:T8 Arg2:T3	
+R3	REASON Arg1:T7 Arg2:T1	
+R4	REASON Arg1:T8 Arg2:T2	
+T9	Connective 108 109	、
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+T10	Connective 117 118	、
+T11	Connective 132 133	、
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T5	
+R9	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	
+T12	Argument 82 92	そのまま使用を続ける
+T13	Connective 92 93	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T3	

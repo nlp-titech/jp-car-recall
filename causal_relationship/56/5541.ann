@@ -1,0 +1,17 @@
+T1	Argument 0 43	フューエルタンク内にあるドレンホース及びブリーザーホースのホースバンドの組み付けを誤っ
+T2	Argument 55 69	そのままの状態で使用を続ける
+T3	Argument 71 79	当該ホースが損傷
+T4	Argument 81 83	最悪
+T5	Argument 87 114	フューエルタンク外側にあるドレンホースから燃料が漏れる
+T6	Connective 50 54	そのため
+T7	Connective 69 70	と
+T8	Connective 80 81	、
+T9	Connective 84 86	場合
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T3	
+R3	CONDITION Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T5	
+R7	CONDITION Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	

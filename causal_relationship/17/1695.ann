@@ -1,0 +1,28 @@
+T1	Argument 0 49	ステアリングシャフトとギヤボックスを連結しているユニバーサルジョイントの締結ボルトに締め付けが不足
+T2	Connective 59 63	そのため
+T3	Argument 64 73	据え切り操作を行う
+T4	Connective 73 74	と
+T5	Argument 74 83	連結部に緩みが生じ
+T6	Connective 83 84	、
+T7	Argument 99 104	異音が発生
+T8	Argument 112 118	連結部が外れ
+T9	Connective 118 119	て
+T10	Argument 119 132	かじ取り操作ができなくなる
+R1	REASON Arg1:T9 Arg2:T8	
+R2	RESULT Arg1:T9 Arg2:T10	
+R3	RESULT Arg1:T6 Arg2:T8	
+R4	REASON Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	CONDITION Arg1:T4 Arg2:T3	
+R7	RESULT Arg1:T4 Arg2:T5	
+R8	REASON Arg1:T2 Arg2:T1	
+R9	RESULT Arg1:T2 Arg2:T5	
+T11	Argument 106 108	最悪
+T12	Connective 109 111	場合
+R10	CONDITION Arg1:T12 Arg2:T11	
+R11	RESULT Arg1:T12 Arg2:T8	
+T13	Argument 84 98	そのままの状態で使用を続ける
+T14	Connective 98 99	と
+R12	CONDITION Arg1:T14 Arg2:T13	
+R13	RESULT Arg1:T14 Arg2:T7	
+R14	RESULT Arg1:T14 Arg2:T8	

@@ -1,0 +1,25 @@
+T2	Connective 27 29	ため
+T3	Argument 30 53	排水された水がアウタハンドルケーブル下端に付着
+T4	Connective 54 55	、
+T7	Argument 55 81	アウタハンドル操作時に水滴がケーブル内に引き込まれる
+T8	Connective 87 91	そのため
+T11	Argument 92 101	低温時に水滴が凍結
+T12	Connective 102 103	、
+T13	Argument 103 116	アウタハンドルでドアを開け
+T14	Connective 117 119	場合
+T15	Argument 120 138	ケーブルの摺動抵抗でハンドルが戻らず
+T16	Connective 138 139	、
+T17	Argument 139 150	ドアを閉められなくなる
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R6	RESULT Arg1:T4 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R10	RESULT Arg1:T8 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T15	
+R13	CONDITION Arg1:T14 Arg2:T13	
+R14	REASON Arg1:T16 Arg2:T15	
+R15	RESULT Arg1:T16 Arg2:T17	
+R16	RESULT Arg1:T14 Arg2:T15	
+T18	Argument 0 26	スライドドアのフロントラッチカバーの排水位置が不適切
+R17	REASON Arg1:T2 Arg2:T18	

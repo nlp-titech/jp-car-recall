@@ -1,0 +1,21 @@
+T1	Argument 0 25	燃料ポンプにおいて、製造時の燃料流量の管理が不適切
+T2	Connective 26 28	ため
+T3	Argument 29 37	燃料流量が少ない
+T4	Argument 46 86	エンジンを制御するコントロールユニット（エンジンＥＣＵ）の制御プログラムが不適切
+T5	Connective 87 89	ため
+T6	Argument 90 101	燃料噴射量が過剰となる
+T7	Argument 115 127	点火プラグの仕様が不適切
+T8	Connective 128 130	ため
+T9	Argument 131 144	点火プラグのくすぶりが発生
+T10	Connective 145 146	、
+T11	Argument 146 155	始動時間が長くなっ
+R1	RESULT Arg1:T10 Arg2:T11	
+R2	REASON Arg1:T10 Arg2:T9	
+R3	RESULT Arg1:T8 Arg2:T9	
+R4	REASON Arg1:T8 Arg2:T7	
+R5	RESULT Arg1:T5 Arg2:T6	
+R6	REASON Arg1:T5 Arg2:T4	
+R7	RESULT Arg1:T2 Arg2:T3	
+R8	REASON Arg1:T2 Arg2:T1	
+T12	Argument 158 165	始動不能に至っ
+R9	RESULT Arg1:T10 Arg2:T12	

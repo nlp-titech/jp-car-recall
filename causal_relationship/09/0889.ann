@@ -1,0 +1,19 @@
+T2	Argument 39 63	転倒防止金具の取付けバラツキにより掛かり代が不足
+T5	Connective 73 77	そのため
+T8	Argument 78 103	急ブレーキにより乗客が後方より当該座席に倒れかかる
+T9	Connective 103 104	と
+T10	Argument 104 113	ヒンジの固定が外れ
+T11	Connective 113 114	、
+T12	Argument 114 116	最悪
+T13	Connective 117 119	場合
+T14	Argument 120 125	座席が転倒
+R5	REASON Arg1:T5 Arg2:T2	
+R6	RESULT Arg1:T5 Arg2:T10	
+R9	CONDITION Arg1:T9 Arg2:T8	
+R10	RESULT Arg1:T9 Arg2:T10	
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T14	
+R13	REASON Arg1:T11 Arg2:T10	
+R14	RESULT Arg1:T11 Arg2:T14	
+T1	Argument 0 35	バスの非常口横の前転倒式座席において、座席を固定するピンの保持力が弱い
+R1	REASON Arg1:T5 Arg2:T1	

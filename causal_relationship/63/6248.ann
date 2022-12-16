@@ -1,0 +1,9 @@
+T1	Argument 0 35	特定の座席のヘッドレストにおいて、設計時における安全基準の検討が不十分
+T2	Connective 39 41	ため
+T3	Argument 42 58	事故の際に十分な衝撃を吸収できず
+T4	Connective 58 59	、
+T5	Argument 59 71	乗員を適切に保護できない
+R1	RESULT Arg1:T4 Arg2:T5	
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T3	
+R4	REASON Arg1:T2 Arg2:T1	

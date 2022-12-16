@@ -1,0 +1,25 @@
+T1	Argument 10 45	ステアリングナックルのアッパーアームの取り付けボルトの締め付けに不適切
+T2	Connective 51 53	ため
+T3	Argument 70 81	当該ボルトに亀裂が生じ
+T4	Connective 81 82	、
+T5	Argument 88 94	ボルトが脱落
+T6	Argument 95 105	アッパーアームが外れ
+T7	Connective 94 95	し
+T8	Connective 105 106	て
+T9	Argument 106 113	操縦不能になる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	
+R7	REASON Arg1:T8 Arg2:T6	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 54 68	そのままの状態で使用を続ける
+T11	Connective 68 69	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	
+T12	Argument 82 84	最悪
+T13	Connective 85 87	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T5	

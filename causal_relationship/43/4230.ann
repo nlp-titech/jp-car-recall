@@ -1,0 +1,21 @@
+T1	Argument 11 32	バキュームポンプにおいて、耐摩耗性が不十分
+T2	Connective 33 35	ため
+T3	Argument 51 58	ポンプ軸が摩耗
+T4	Connective 66 70	そのため
+T5	Argument 71 80	負圧生成能力が低下
+T6	Connective 81 82	、
+T7	Argument 110 126	一時的にブレーキアシスト力が低下
+R1	RESULT Arg1:T6 Arg2:T7	
+R2	REASON Arg1:T6 Arg2:T5	
+T10	Argument 82 108	エンジン低回転時にブレーキペダルを短時間に複数回踏む
+T11	Connective 108 109	と
+R3	CONDITION Arg1:T11 Arg2:T10	
+R4	RESULT Arg1:T11 Arg2:T7	
+R7	REASON Arg1:T4 Arg2:T3	
+R8	RESULT Arg1:T4 Arg2:T5	
+R9	REASON Arg1:T2 Arg2:T1	
+R10	RESULT Arg1:T2 Arg2:T3	
+T14	Argument 36 50	エンジン内部で発生する金属粉
+T15	Connective 50 51	で
+R11	REASON Arg1:T15 Arg2:T14	
+R12	RESULT Arg1:T15 Arg2:T3	

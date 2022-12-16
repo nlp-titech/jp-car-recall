@@ -1,0 +1,26 @@
+T1	Argument 0 48	全油圧形パワーステアリング用ポンプのロータを押さえているバネにバネ力の弱いものが組み込まれており
+T2	Argument 52 72	バルブプレートの形状が不適切なものがある
+T3	Connective 73 77	そのため
+T4	Argument 78 95	連続的にステアリング操作を繰り返す
+T5	Connective 95 96	と
+T6	Argument 97 109	作動油がポンプ内部で漏れ
+T7	Connective 109 110	て
+T8	Argument 110 116	吐出量が低下
+T9	Connective 117 118	、
+T10	Argument 118 131	ステアリング用の油圧が不足
+T11	Connective 138 139	、
+T12	Argument 139 141	最悪
+T13	Connective 142 144	場合
+T14	Argument 145 158	ハンドル操作ができなくなる
+R1	REASON Arg1:T3 Arg2:T1	
+R2	REASON Arg1:T3 Arg2:T2	
+R3	RESULT Arg1:T3 Arg2:T6	
+R4	CONDITION Arg1:T5 Arg2:T4	
+R5	RESULT Arg1:T5 Arg2:T6	
+R6	REASON Arg1:T7 Arg2:T6	
+R7	RESULT Arg1:T7 Arg2:T8	
+R8	REASON Arg1:T9 Arg2:T8	
+R9	RESULT Arg1:T9 Arg2:T10	
+R10	REASON Arg1:T11 Arg2:T10	
+R11	RESULT Arg1:T11 Arg2:T14	
+R12	CONDITION Arg1:T13 Arg2:T12	

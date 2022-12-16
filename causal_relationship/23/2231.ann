@@ -1,0 +1,9 @@
+T1	Argument 0 27	運転者席エアバッグにおいて、部品の切り替え指示が不適切
+T2	Connective 28 30	ため
+T3	Argument 31 46	仕様の異なる部品が組みつけられ
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 50 79	オフセット衝突時の乗車人員の保護性能が保安基準を満足しない
+T5	Connective 49 50	、
+R3	REASON Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T4	

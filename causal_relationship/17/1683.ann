@@ -1,0 +1,27 @@
+T1	Argument 0 24	リコール届出番号１５６４の改善措置の内容が不適切
+T2	Connective 25 27	ため
+T3	Argument 28 71	無段変速機のオイルポンプベーン（羽根）摺動部が摩耗していても無段変速機が交換されなかっ
+T4	Connective 78 82	そのため
+T5	Argument 95 106	ベーンが早期に異常摩耗
+T6	Connective 107 108	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+T7	Argument 108 122	適切な油圧が確保できなくなり
+T9	Argument 129 138	オイルポンプが破損
+T10	Connective 139 140	て
+T11	Argument 140 147	走行不能となる
+R6	RESULT Arg1:T6 Arg2:T7	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T16	Argument 83 93	そのまま使用を続ける
+T17	Connective 93 94	と
+R11	CONDITION Arg1:T17 Arg2:T16	
+R12	RESULT Arg1:T17 Arg2:T5	
+T18	Argument 123 125	最悪
+T19	Connective 126 128	場合
+R13	CONDITION Arg1:T19 Arg2:T18	
+R14	RESULT Arg1:T19 Arg2:T9	
+R7	RESULT Arg1:T6 Arg2:T9	

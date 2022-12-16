@@ -1,0 +1,17 @@
+T1	Argument 36 91	ロア・シャフトとアッパ・シャフトの連結部に取り付けられているプラスチック製ピンに亀裂の生じているものが組み付け
+T2	Argument 117 124	当該ピンが折損
+T3	Connective 100 101	、
+T4	Connective 125 126	、
+T5	Argument 132 145	ハンドル操縦ができなくなる
+R1	REASON Arg1:T3 Arg2:T1	
+R2	RESULT Arg1:T3 Arg2:T2	
+R3	REASON Arg1:T4 Arg2:T2	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 101 115	このままの状態で使用を続ける
+T7	Connective 115 116	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T2	
+T8	Argument 126 128	最悪
+T9	Connective 129 131	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

@@ -1,0 +1,25 @@
+T1	Argument 0 43	油圧スタビライザ制御装置のオイルリサーバにおいて、シーリングキャップの消泡機構が不適切
+T2	Connective 44 46	ため
+T3	Argument 47 60	姿勢変化が大きい運転を継続
+T4	Argument 64 80	ベントホールからオイルが噴き出す
+T5	Connective 62 63	と
+T6	Connective 86 90	そのため
+T7	Argument 91 107	噴き出したオイルが排気管等に接触
+T8	Connective 108 109	、
+T9	Argument 109 111	発煙
+T10	Connective 112 113	て
+T11	Argument 114 116	最悪
+T12	Connective 117 119	場合
+T13	Argument 120 125	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T4	
+R3	CONDITION Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T4	
+R5	REASON Arg1:T6 Arg2:T4	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	

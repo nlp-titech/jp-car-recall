@@ -1,0 +1,37 @@
+T1	Argument 26 42	燃料リターンパイプの長さが不適切
+T2	Connective 43 45	ため
+T3	Argument 46 60	ポンプケースとの隙間が不十分
+T4	Connective 63 64	、
+T5	Argument 102 120	当該パイプの先端がポンプケースと干渉
+T6	Connective 121 122	、
+T7	Argument 136 152	燃料リターン配管内の圧力が上がり
+T8	Connective 152 153	、
+T9	Argument 153 168	当該配管の接続部から燃料が漏れ
+T10	Connective 168 169	、
+T11	Argument 175 180	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 169 171	最悪
+T13	Connective 172 174	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T11	
+T14	Argument 127 133	原動機を始動
+T15	Connective 135 136	と
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T7	
+T16	Argument 64 90	燃料残量が少なく蒸発量の多い状態で原動機を停止させる
+T17	Connective 90 91	と
+T18	Argument 92 100	燃料タンクが収縮
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T18	
+T19	Connective 101 102	て
+R17	REASON Arg1:T19 Arg2:T18	
+R18	RESULT Arg1:T19 Arg2:T5	

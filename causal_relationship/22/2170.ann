@@ -1,0 +1,21 @@
+T1	Argument 0 27	プロペラシャフト保護カバーにおいて、取付部の強度が不足
+T2	Connective 31 33	ため
+T3	Argument 44 55	当該取付部に亀裂が発生
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 63 67	そのため
+T5	Argument 90 106	プロペラシャフト保護カバーが脱落
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 34 41	原動機の振動等
+T7	Connective 41 44	により
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Argument 68 82	そのままの状態で使用を続ける
+T9	Connective 82 83	と
+T10	Argument 84 86	最悪
+T11	Connective 87 89	場合
+R7	RESULT Arg1:T11 Arg2:T5	
+R8	CONDITION Arg1:T11 Arg2:T10	
+R9	RESULT Arg1:T9 Arg2:T5	
+R10	CONDITION Arg1:T9 Arg2:T8	

@@ -1,0 +1,27 @@
+T1	Argument 0 38	低床ダンプ仕様の荷台において、荷台を支持するヒンジピンを固定する構造が不適切
+T2	Connective 39 41	ため
+T3	Argument 51 59	固定ボルトが緩む
+T4	Connective 65 69	そのため
+T5	Argument 70 75	異音が発生
+T6	Argument 99 109	当該ヒンジピンが脱落
+T7	Connective 110 111	、
+T8	Argument 111 121	他の交通の妨げとなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T6	
+T9	Argument 77 91	そのままの状態で使用を続ける
+T10	Connective 91 92	と
+T11	Argument 93 95	最悪
+T12	Connective 96 98	場合
+R6	CONDITION Arg1:T10 Arg2:T9	
+R7	RESULT Arg1:T10 Arg2:T6	
+R8	CONDITION Arg1:T12 Arg2:T11	
+R9	RESULT Arg1:T12 Arg2:T6	
+T16	Argument 42 47	ダンプ操作
+T17	Connective 47 51	によって
+R10	REASON Arg1:T17 Arg2:T16	
+R11	RESULT Arg1:T17 Arg2:T3	
+R12	REASON Arg1:T7 Arg2:T6	
+R13	RESULT Arg1:T7 Arg2:T8	

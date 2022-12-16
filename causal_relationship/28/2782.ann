@@ -1,0 +1,17 @@
+T1	Argument 1 65	ＤＰＦ（ディーゼル粒子状物質除去装置）付き車において、手動変速機搭載の後輪駆動車ではＤＰＦおよび車体組付けブラケットの強度が不足
+T3	Argument 70 92	全輪駆動車では排気管の車体への組付けが不適切
+T4	Connective 99 103	そのため
+T5	Argument 120 134	ＤＰＦフランジ部に亀裂が発生
+T6	Argument 136 141	騒音が増大
+T7	Connective 135 136	て
+T9	Argument 143 151	排気ガスが漏れる
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T7 Arg2:T5	
+T8	Argument 104 118	そのままの状態で使用を続ける
+T10	Connective 118 119	と
+R8	CONDITION Arg1:T10 Arg2:T8	
+R9	RESULT Arg1:T10 Arg2:T5	
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T9	

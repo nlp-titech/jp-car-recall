@@ -1,0 +1,41 @@
+T1	Argument 0 39	緩衝装置の前輪用コイルスプリングを保持するスプリングロアーシートの形状が不適切
+T2	Connective 40 42	ため
+T3	Argument 43 65	当該スプリングとロアーシートの間に入った砂等
+T4	Connective 65 68	により
+T5	Argument 68 79	スプリングの塗装が剥れ
+T6	Connective 92 96	そのため
+T9	Argument 116 120	錆が進行
+T10	Connective 131 132	、
+T13	Argument 138 146	タイヤがバースト
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+T7	Connective 79 80	て
+T8	Argument 80 84	錆が発生
+R5	REASON Arg1:T7 Arg2:T5	
+R7	RESULT Arg1:T7 Arg2:T8	
+R8	REASON Arg1:T6 Arg2:T8	
+T11	Connective 121 122	て
+T12	Argument 122 130	スプリングが折損
+T14	Argument 97 107	そのまま使用を続ける
+T15	Connective 107 108	と
+T16	Argument 109 113	融雪剤等
+T17	Connective 113 116	により
+T18	Connective 147 148	て
+T19	Argument 148 155	走行不能となる
+T20	Argument 132 134	最悪
+T21	Connective 135 137	場合
+R9	CONDITION Arg1:T15 Arg2:T14	
+R11	RESULT Arg1:T15 Arg2:T9	
+R12	REASON Arg1:T17 Arg2:T16	
+R13	RESULT Arg1:T17 Arg2:T9	
+R14	REASON Arg1:T11 Arg2:T9	
+R15	RESULT Arg1:T11 Arg2:T12	
+R16	REASON Arg1:T10 Arg2:T12	
+R17	CONDITION Arg1:T21 Arg2:T20	
+R18	RESULT Arg1:T21 Arg2:T13	
+R19	REASON Arg1:T18 Arg2:T13	
+R20	RESULT Arg1:T18 Arg2:T19	

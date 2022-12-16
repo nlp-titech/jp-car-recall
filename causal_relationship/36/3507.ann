@@ -1,0 +1,29 @@
+T1	Argument 0 50	フロントフォークにおいて、ブッシュホルダ端部の面取り加工及びピボットアームブッシュの表面処理が不適切
+T2	Connective 51 53	ため
+T3	Argument 54 75	ブッシュホルダとブッシュ間のグリースが流出
+T4	Connective 77 78	と
+T5	Argument 79 108	フロントピボットアームとブッシュ側面の摺動抵抗が大きくなる
+T6	Connective 114 118	そのため
+T7	Argument 119 133	そのままの状態で使用を続ける
+T8	Connective 133 134	と
+T9	Argument 135 160	右側フロントピボットアームへ過大な応力が加わり折損
+T10	Connective 161 162	、
+T11	Argument 162 164	最悪
+T12	Connective 165 167	場合
+T13	Argument 168 196	前輪ブレーキ操作時にフロントブレーキケーブルが引っ張られ
+T14	Connective 196 197	、
+T15	Argument 197 215	前輪がロックして転倒や走行不能となる
+R1	RESULT Arg1:T14 Arg2:T15	
+R2	REASON Arg1:T14 Arg2:T13	
+R3	RESULT Arg1:T12 Arg2:T13	
+R4	CONDITION Arg1:T12 Arg2:T11	
+R5	RESULT Arg1:T10 Arg2:T13	
+R6	REASON Arg1:T10 Arg2:T9	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	CONDITION Arg1:T8 Arg2:T7	
+R9	RESULT Arg1:T6 Arg2:T9	
+R10	REASON Arg1:T6 Arg2:T5	
+R11	RESULT Arg1:T4 Arg2:T5	
+R12	CONDITION Arg1:T4 Arg2:T3	
+R13	RESULT Arg1:T2 Arg2:T5	
+R14	REASON Arg1:T2 Arg2:T1	

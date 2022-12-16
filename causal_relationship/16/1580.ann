@@ -1,0 +1,29 @@
+T1	Argument 0 40	燃料装置において、樹脂製プレフィルタとメインフィルタ間のホースの取り回しが不適切
+T2	Argument 44 51	エンジンの振動
+T3	Argument 55 74	プレフィルタの出入口パイプに亀裂が発生
+T4	Argument 99 109	亀裂部より燃料が漏れ
+T5	Argument 116 128	燃料の供給がされなくなり
+T6	Argument 129 138	エンジン停止に至る
+T7	Connective 128 129	、
+T8	Connective 109 110	、
+T9	Connective 82 86	そのため
+T10	Connective 41 43	ため
+T11	Connective 51 54	により
+R1	REASON Arg1:T10 Arg2:T1	
+R2	RESULT Arg1:T10 Arg2:T3	
+R3	RESULT Arg1:T11 Arg2:T3	
+R4	REASON Arg1:T11 Arg2:T2	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T8 Arg2:T4	
+R8	RESULT Arg1:T8 Arg2:T5	
+R9	REASON Arg1:T7 Arg2:T5	
+R10	RESULT Arg1:T7 Arg2:T6	
+T12	Argument 87 97	そのまま使用を続ける
+T13	Connective 97 98	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T4	
+T14	Argument 110 112	最悪
+T15	Connective 113 115	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T5	

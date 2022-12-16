@@ -1,0 +1,33 @@
+T1	Argument 0 65	オートクルーズ・コントロール装置装着車において、オートクルーズ・コントロール・ケーブルの取り付け部に曲げ応力に対する耐久性が不十分
+T2	Connective 71 72	、
+T3	Argument 88 119	当該取り付け部（ケーブルブラケットに固定する部分）に亀裂が生じ
+T4	Connective 119 120	て
+T5	Argument 120 122	破損
+T6	Connective 130 134	そのため
+T7	Argument 135 173	オートクルーズ・コントロール・ケーブルがケーブルブラケットに保持されなくなり
+T8	Connective 173 174	、
+T9	Argument 180 214	オートクルーズ・コントロール・ケーブルがアクセルケーブルに引っ掛かり
+T10	Connective 214 215	、
+T11	Argument 215 250	オートクルーズ・コントロール・ケーブルのインナーワイヤーが引かれた状態
+T12	Connective 253 254	、
+T13	Argument 254 268	エンジン回転が下がらなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+T14	Argument 72 86	そのままの状態で使用を続ける
+T15	Connective 86 87	と
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T3	
+T16	Argument 174 176	最悪
+T17	Connective 177 179	場合
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T9	

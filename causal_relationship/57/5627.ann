@@ -1,0 +1,13 @@
+T1	Argument 0 33	ブレーキマスターシリンダにおいて、インナーシールを逆向きに組み付け
+T2	Argument 37 44	シール性が不足
+T3	Argument 59 69	ブレーキの油圧が低下
+T4	Argument 71 82	制動停止距離が長くなる
+T5	Connective 34 36	ため
+T6	Connective 54 58	そのため
+T7	Connective 70 71	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	

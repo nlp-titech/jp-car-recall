@@ -1,0 +1,17 @@
+T1	Argument 0 38	フロントブレーキディスク固定ボルトとホイール回転センサーの配線との隙間が狭い
+T2	Connective 38 40	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 41 68	当該配線がフロントブレーキディスク固定ボルト頭部に接触
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 76 80	そのため
+T5	Argument 97 104	当該配線が損傷
+T6	Argument 106 115	ＡＢＳ警告灯が点灯
+T7	Connective 105 106	、
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	
+T8	Argument 81 95	そのままの状態で使用を続ける
+T9	Connective 95 96	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

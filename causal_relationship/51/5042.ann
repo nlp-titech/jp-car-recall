@@ -1,0 +1,17 @@
+T1	Argument 10 29	背もたれのロック機構の取付位置が不適切
+T2	Connective 30 32	ため
+T3	Argument 33 47	ロック機構が正常に作動しない
+T4	Connective 53 57	そのため
+T5	Argument 81 92	背もたれが前方に倒れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T7	Connective 78 80	場合
+R6	RESULT Arg1:T7 Arg2:T5	
+T8	Argument 57 60	衝突等
+T9	Connective 60 63	により
+R7	REASON Arg1:T9 Arg2:T8	
+T6	Argument 63 78	背もたれに大きな荷重がかかった
+R5	CONDITION Arg1:T7 Arg2:T6	
+R8	RESULT Arg1:T9 Arg2:T6	

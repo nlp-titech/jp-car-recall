@@ -1,0 +1,25 @@
+T1	Argument 2 32	動力伝達装置において、油圧ポンプ吐出側アダプタの形状が不適切
+T2	Connective 33 35	ため
+T3	Argument 44 51	アダプタが緩む
+T4	Connective 57 61	そのため
+T5	Argument 62 72	そのまま使用を続ける
+T6	Connective 72 73	と
+T7	Argument 74 86	アダプタから作動油が漏れ
+T8	Argument 87 89	最悪
+T9	Connective 86 87	、
+T10	Connective 90 92	場合
+T11	Argument 93 101	走行が不能となる
+R1	RESULT Arg1:T10 Arg2:T11	
+R2	CONDITION Arg1:T10 Arg2:T8	
+R3	RESULT Arg1:T9 Arg2:T11	
+R4	REASON Arg1:T9 Arg2:T7	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	CONDITION Arg1:T6 Arg2:T5	
+R7	RESULT Arg1:T4 Arg2:T7	
+R8	REASON Arg1:T4 Arg2:T3	
+R9	RESULT Arg1:T2 Arg2:T3	
+R10	REASON Arg1:T2 Arg2:T1	
+T12	Argument 36 40	機体振動
+T13	Connective 40 44	によって
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T3	

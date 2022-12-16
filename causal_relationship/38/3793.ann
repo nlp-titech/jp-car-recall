@@ -1,0 +1,25 @@
+T1	Argument 19 39	ロック解除用キーパッドの製造指示が不適切
+T2	Argument 43 57	コーキング剤が電気回路に流入
+T3	Argument 70 83	キーパッドの操作を繰り返す
+T4	Argument 84 93	コーキング剤が変形
+T5	Argument 94 107	電気回路の接点不良を起こし
+T6	Argument 108 117	ロックが解除できず
+T7	Argument 118 134	エンジンを始動することができない
+T8	Connective 40 42	ため
+T9	Connective 65 69	そのため
+T10	Connective 83 84	と
+T11	Connective 93 94	し
+T12	Connective 107 108	、
+T13	Connective 117 118	、
+R1	REASON Arg1:T8 Arg2:T1	
+R2	RESULT Arg1:T8 Arg2:T2	
+R3	REASON Arg1:T9 Arg2:T2	
+R4	RESULT Arg1:T9 Arg2:T4	
+R5	CONDITION Arg1:T10 Arg2:T3	
+R6	RESULT Arg1:T10 Arg2:T4	
+R7	REASON Arg1:T11 Arg2:T4	
+R8	RESULT Arg1:T11 Arg2:T5	
+R9	REASON Arg1:T12 Arg2:T5	
+R10	RESULT Arg1:T12 Arg2:T6	
+R11	REASON Arg1:T13 Arg2:T6	
+R12	RESULT Arg1:T13 Arg2:T7	

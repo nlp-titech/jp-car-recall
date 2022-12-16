@@ -1,0 +1,5 @@
+T1	Argument 0 30	計器盤内部に使用しているコンデンサに仕様の異なるものを組付け
+T2	Connective 36 38	ため
+T3	Argument 39 50	速度計が作動しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

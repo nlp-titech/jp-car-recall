@@ -1,0 +1,31 @@
+T1	Argument 20 46	エンジンコントロールユニットの制御プログラムが不適切
+T4	Argument 50 90	エンジン始動時のイグニッションスイッチ操作と同時に、シフトをＰからＮレンジに操作
+T5	Argument 94 123	スタータピニオンギヤがトルクコンバータのリングギヤに強勘合
+T6	Argument 136 142	勘合時の衝撃
+T7	Argument 145 156	当該ピニオンギヤが損傷
+T8	Argument 159 166	エンジン始動時
+T9	Argument 167 172	異音が発生
+T10	Argument 174 176	最悪
+T11	Connective 131 135	そのため
+T12	Connective 142 145	により
+T13	Connective 157 158	て
+T14	Argument 180 193	エンジンが始動できなくなる
+T15	Connective 166 167	に
+T17	Connective 177 179	場合
+T18	Connective 47 49	ため
+T19	Connective 92 93	と
+R1	REASON Arg1:T18 Arg2:T1	
+R2	RESULT Arg1:T18 Arg2:T5	
+R5	CONDITION Arg1:T19 Arg2:T4	
+R6	RESULT Arg1:T19 Arg2:T5	
+R7	REASON Arg1:T11 Arg2:T5	
+R8	RESULT Arg1:T11 Arg2:T7	
+R9	REASON Arg1:T12 Arg2:T6	
+R10	RESULT Arg1:T12 Arg2:T7	
+R11	REASON Arg1:T13 Arg2:T7	
+R12	RESULT Arg1:T13 Arg2:T9	
+R13	CONDITION Arg1:T15 Arg2:T8	
+R14	RESULT Arg1:T15 Arg2:T9	
+R17	CONDITION Arg1:T17 Arg2:T10	
+R18	RESULT Arg1:T17 Arg2:T14	
+R15	RESULT Arg1:T13 Arg2:T14	

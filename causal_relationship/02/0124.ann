@@ -1,0 +1,23 @@
+T1	Argument 0 33	一酸化炭素等発散防止装置のＯ２センサの排気管への取付け方法が不適切
+T2	Argument 53 67	当該取付部の溶接に亀裂が入り
+T3	Argument 68 76	Ｏ２センサが外れ
+T4	Argument 77 84	排気ガスが漏れ
+T5	Argument 85 96	有害なガスを多量に発散
+T6	Argument 102 116	原動機の再始動ができなくなる
+T7	Connective 34 36	ため
+T8	Connective 67 68	、
+T9	Connective 76 77	て
+T10	Connective 84 85	、
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T2	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T5	
+R9	RESULT Arg1:T10 Arg2:T6	
+T11	Argument 37 51	そのままの状態で使用を続ける
+T12	Connective 51 52	と
+R10	CONDITION Arg1:T12 Arg2:T11	
+R11	RESULT Arg1:T12 Arg2:T2	

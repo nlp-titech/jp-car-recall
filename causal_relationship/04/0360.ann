@@ -1,0 +1,25 @@
+T1	Argument 0 28	制御装置において、ブレーキブースターのシリンダに製造不良
+T2	Argument 37 60	主ブレーキを開放しても、ピストンが戻りきらない
+T3	Argument 82 105	ブレーキライニングとドラムが接触したままとなり
+T4	Argument 112 122	ブレーキドラムが過熱
+T5	Argument 123 125	発炎
+T6	Connective 34 36	ため
+T7	Connective 65 66	、
+T8	Connective 105 106	、
+T9	Connective 122 123	、
+R1	REASON Arg1:T6 Arg2:T1	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 66 80	そのままの状態で使用を続ける
+T11	Connective 80 81	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	
+T12	Argument 106 108	最悪
+T13	Connective 109 111	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T4	

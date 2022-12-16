@@ -1,0 +1,31 @@
+T1	Argument 9 22	電気配線の保護方法が不適切
+T2	Argument 26 68	電気配線組み付け作業時に車体溶接部の端面（パイプフレーム加工端面）で配線の被覆を損傷
+T3	Argument 98 103	車体と接触
+T4	Argument 105 112	電気回路が短絡
+T5	Argument 116 123	ヒューズが切れ
+T6	Connective 23 25	ため
+T7	Connective 76 77	、
+T8	Connective 104 105	て
+T9	Connective 114 115	と
+T10	Connective 123 124	て
+T11	Argument 124 132	原動機が突然停止
+T13	Argument 135 162	制動灯が点灯しなくなる等電気系統の一部が作動しなくなる
+R2	REASON Arg1:T6 Arg2:T1	
+R3	RESULT Arg1:T6 Arg2:T2	
+R4	REASON Arg1:T7 Arg2:T2	
+R5	RESULT Arg1:T7 Arg2:T4	
+R6	REASON Arg1:T8 Arg2:T3	
+R7	RESULT Arg1:T8 Arg2:T4	
+R8	REASON Arg1:T9 Arg2:T4	
+R9	RESULT Arg1:T9 Arg2:T5	
+R11	RESULT Arg1:T10 Arg2:T11	
+R13	RESULT Arg1:T10 Arg2:T13	
+R1	REASON Arg1:T10 Arg2:T5	
+T12	Argument 90 97	走行時の振動等
+T14	Connective 97 98	で
+R10	REASON Arg1:T14 Arg2:T12	
+R12	RESULT Arg1:T14 Arg2:T3	
+T17	Argument 77 88	その状態で使用を続ける
+T18	Connective 88 89	と
+R16	CONDITION Arg1:T18 Arg2:T17	
+R17	RESULT Arg1:T18 Arg2:T5	

@@ -1,0 +1,33 @@
+T2	Argument 36 52	ＥＧＲパイプステーに負荷が掛かり
+T3	Argument 53 60	エンジンの振動
+T4	Argument 63 75	当該ステーに亀裂が生じる
+T5	Argument 86 100	そのままの状態で使用を続ける
+T6	Argument 102 117	ＥＧＲクーラーブラケットが破損
+T7	Argument 119 121	最悪
+T8	Argument 125 135	フランジ部に亀裂が入
+T9	Argument 136 144	排気ガスが漏れる
+T10	Connective 33 35	ため
+T11	Connective 52 53	、
+T12	Connective 60 63	により
+T13	Connective 81 85	そのため
+T14	Connective 100 101	と
+T15	Connective 118 119	、
+T16	Connective 122 124	場合
+T17	Connective 135 136	り
+R2	RESULT Arg1:T10 Arg2:T2	
+R3	REASON Arg1:T11 Arg2:T2	
+R4	RESULT Arg1:T11 Arg2:T4	
+R5	REASON Arg1:T12 Arg2:T3	
+R6	RESULT Arg1:T12 Arg2:T4	
+R7	REASON Arg1:T13 Arg2:T4	
+R8	RESULT Arg1:T13 Arg2:T6	
+R9	CONDITION Arg1:T14 Arg2:T5	
+R10	RESULT Arg1:T14 Arg2:T6	
+R11	REASON Arg1:T15 Arg2:T6	
+R12	RESULT Arg1:T15 Arg2:T8	
+R13	CONDITION Arg1:T16 Arg2:T7	
+R14	RESULT Arg1:T16 Arg2:T8	
+R15	REASON Arg1:T17 Arg2:T8	
+R16	RESULT Arg1:T17 Arg2:T9	
+T1	Argument 18 32	ＥＧＲパイプの取付けが不適切
+R1	REASON Arg1:T10 Arg2:T1	

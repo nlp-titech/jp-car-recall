@@ -1,0 +1,39 @@
+T1	Argument 0 38	４輪駆動車の前輪駆動用プロペラシャフトにおいて、リヤ側自在継手の耐久性が不足
+T2	Argument 45 59	当該自在継手からグリスが漏れ
+T3	Argument 60 66	潤滑不足とな
+T4	Argument 67 72	異音が発生
+T5	Argument 96 103	自在継手が破損
+T6	Argument 105 116	プロペラシャフトが外れ
+T7	Argument 117 123	変速機を破損
+T8	Argument 125 131	オイルが漏れ
+T9	Argument 138 143	火災に至る
+T10	Connective 42 44	ため
+T11	Connective 59 60	て
+T12	Connective 66 67	り
+T14	Connective 104 105	て
+T15	Connective 116 117	、
+T16	Connective 124 125	て
+T17	Connective 131 132	、
+R1	REASON Arg1:T10 Arg2:T1	
+R2	RESULT Arg1:T10 Arg2:T2	
+R3	REASON Arg1:T11 Arg2:T2	
+R4	RESULT Arg1:T11 Arg2:T3	
+R5	REASON Arg1:T12 Arg2:T3	
+R6	RESULT Arg1:T12 Arg2:T4	
+R9	REASON Arg1:T14 Arg2:T5	
+R10	RESULT Arg1:T14 Arg2:T6	
+R11	REASON Arg1:T15 Arg2:T6	
+R12	RESULT Arg1:T15 Arg2:T7	
+R13	REASON Arg1:T16 Arg2:T7	
+R14	RESULT Arg1:T16 Arg2:T8	
+R15	REASON Arg1:T17 Arg2:T8	
+R16	RESULT Arg1:T17 Arg2:T9	
+T18	Argument 80 94	そのままの状態で使用を続ける
+T19	Connective 94 95	と
+R17	CONDITION Arg1:T19 Arg2:T18	
+R18	RESULT Arg1:T19 Arg2:T5	
+T20	Argument 132 134	最悪
+T21	Connective 135 137	場合
+R19	CONDITION Arg1:T21 Arg2:T20	
+R20	RESULT Arg1:T21 Arg2:T9	
+R7	RESULT Arg1:T12 Arg2:T5	

@@ -1,0 +1,35 @@
+T1	Argument 0 19	ホイールベアリングの補用品を誤って配送
+T2	Argument 24 36	誤品を装着した車両がある
+T3	Argument 42 56	そのままの状態で使用を続ける
+T4	Argument 58 74	ベアリング（セパレーター）が磨耗
+T5	Argument 76 81	鉄粉が発生
+T6	Argument 82 95	ベアリンググリスが早期劣化
+T7	Argument 97 99	最悪
+T8	Argument 103 112	ベアリングが焼付き
+T9	Argument 113 115	火災
+T10	Argument 117 119	脱輪
+T11	Connective 21 23	ため
+T12	Connective 37 41	そのため
+T13	Connective 56 57	と
+T14	Connective 75 76	て
+T15	Connective 81 82	、
+T16	Connective 96 97	、
+T17	Connective 100 102	場合
+T18	Connective 112 113	、
+R1	REASON Arg1:T11 Arg2:T1	
+R2	RESULT Arg1:T11 Arg2:T2	
+R3	REASON Arg1:T12 Arg2:T2	
+R4	RESULT Arg1:T12 Arg2:T4	
+R5	CONDITION Arg1:T13 Arg2:T3	
+R6	RESULT Arg1:T13 Arg2:T4	
+R7	REASON Arg1:T14 Arg2:T4	
+R8	RESULT Arg1:T14 Arg2:T5	
+R9	REASON Arg1:T15 Arg2:T5	
+R10	RESULT Arg1:T15 Arg2:T6	
+R11	REASON Arg1:T16 Arg2:T6	
+R13	CONDITION Arg1:T17 Arg2:T7	
+R14	RESULT Arg1:T17 Arg2:T8	
+R15	REASON Arg1:T18 Arg2:T8	
+R16	RESULT Arg1:T18 Arg2:T9	
+R17	RESULT Arg1:T18 Arg2:T10	
+R12	RESULT Arg1:T16 Arg2:T8	

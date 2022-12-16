@@ -1,0 +1,58 @@
+T2	Connective 50 52	ため
+T3	Argument 53 63	シャフト部に水が浸入
+T4	Connective 64 65	、
+T5	Argument 65 74	シャフトに錆が発生
+T6	Connective 82 86	そのため
+T7	Argument 103 121	シャフトの錆がキャリパー内部まで進行
+T8	Connective 121 122	し
+T9	Argument 122 132	シャフトの回転が阻害
+T10	Connective 134 135	、
+T11	Argument 135 148	駐車ブレーキの制動力が低下
+T12	Connective 149 150	、
+T13	Argument 156 167	駐車中の車両が動き出す
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+T20	Argument 87 101	そのままの状態で使用を続ける
+T21	Connective 101 102	と
+R13	CONDITION Arg1:T21 Arg2:T20	
+R14	RESULT Arg1:T21 Arg2:T7	
+T22	Argument 150 152	最悪
+T23	Connective 153 155	場合
+R15	CONDITION Arg1:T23 Arg2:T22	
+R16	RESULT Arg1:T23 Arg2:T13	
+T25	Connective 222 224	ため
+T26	Argument 225 262	ブレーキパッドとブレーキディスクとの隙間を自動調整する機構が作動しなくなる
+T27	Connective 268 272	そのため
+T28	Argument 290 317	ブレーキパッドとブレーキディスクの隙間が自動調整されず
+T29	Connective 317 318	、
+T30	Argument 318 331	駐車ブレーキの制動力が低下
+T31	Argument 339 350	駐車中の車両が動き出す
+R17	REASON Arg1:T27 Arg2:T26	
+R18	RESULT Arg1:T27 Arg2:T28	
+R19	REASON Arg1:T29 Arg2:T28	
+R20	RESULT Arg1:T29 Arg2:T30	
+T32	Connective 332 333	、
+R21	REASON Arg1:T32 Arg2:T30	
+R22	RESULT Arg1:T32 Arg2:T31	
+R24	RESULT Arg1:T25 Arg2:T26	
+T33	Argument 333 335	最悪
+T34	Connective 336 338	場合
+R25	CONDITION Arg1:T34 Arg2:T33	
+R26	RESULT Arg1:T34 Arg2:T31	
+T14	Argument 273 286	ブレーキパッドの摩耗が進行
+T15	Connective 288 289	も
+R27	CONDITION Arg1:T15 Arg2:T14	
+R28	RESULT Arg1:T15 Arg2:T28	
+T16	Argument 180 220	ブレーキキャリパーにおいて、製造工程での検査不良により検査規格を外れる部品が流出
+R23	REASON Arg1:T25 Arg2:T16	
+T1	Argument 6 46	ブレーキキャリパーにおいて、駐車ブレーキ駆動用シャフトのブーツのシール性能が不足
+R1	REASON Arg1:T2 Arg2:T1	

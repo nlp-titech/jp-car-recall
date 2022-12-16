@@ -1,0 +1,25 @@
+T1	Argument 0 46	ステアリングコラムを車室内（インストルメントパネル下）に取付ける固定用ブラケットの強度が不足
+T2	Connective 50 52	ため
+T3	Argument 53 75	ハンドルを端まで強く一杯に切る操作を繰り返す
+T4	Connective 75 76	と
+T5	Argument 76 82	亀裂が生じる
+T6	Connective 88 92	そのため
+T7	Argument 93 103	そのまま使用を続ける
+T8	Connective 103 104	と
+T9	Argument 104 109	亀裂が進行
+T10	Connective 110 111	、
+T11	Argument 111 113	最悪
+T12	Connective 114 116	場合
+T13	Argument 117 135	ステアリングコラムを固定できなくなる
+R1	RESULT Arg1:T12 Arg2:T13	
+R2	CONDITION Arg1:T12 Arg2:T11	
+R3	RESULT Arg1:T10 Arg2:T13	
+R4	REASON Arg1:T10 Arg2:T9	
+R5	RESULT Arg1:T8 Arg2:T9	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T9	
+R8	REASON Arg1:T6 Arg2:T5	
+R9	RESULT Arg1:T4 Arg2:T5	
+R11	RESULT Arg1:T2 Arg2:T5	
+R12	REASON Arg1:T2 Arg2:T1	
+R10	CONDITION Arg1:T4 Arg2:T3	

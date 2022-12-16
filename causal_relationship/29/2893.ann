@@ -1,0 +1,25 @@
+T1	Argument 0 38	小型トラックの燃料タンクにおいて、燃料タンクバンドを過大な締付けトルクで固定
+T2	Connective 40 42	ため
+T3	Argument 43 90	当該タンク内部のバッフル板（燃料液面の揺動を抑止する仕切板）のスポット溶接部に過大な力が加わっ
+T4	Connective 99 103	そのため
+T5	Argument 104 112	車両走行時の振動
+T6	Connective 112 115	により
+T7	Argument 116 127	当該溶接部に亀裂が入り
+T8	Connective 127 128	、
+T9	Argument 128 142	そのままの状態で使用を続ける
+T10	Connective 142 143	と
+T11	Argument 144 146	最悪
+T12	Connective 147 149	場合
+T13	Argument 150 156	燃料が漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T13	
+R9	CONDITION Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	

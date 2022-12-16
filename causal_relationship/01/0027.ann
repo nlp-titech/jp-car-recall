@@ -1,0 +1,25 @@
+T2	Argument 80 98	当該スイッチ内部に砂塵等の異物が侵入
+T3	Argument 100 113	押しボタンが戻り不良となる
+T4	Argument 125 156	非常点滅表示灯と同一回路上にある方向指示器に電気が流れなくなり
+T5	Argument 157 170	方向指示器が作動しなくなる
+T6	Connective 62 64	ため
+T7	Connective 99 100	て
+T8	Connective 118 119	、
+T9	Connective 156 157	、
+R1	REASON Arg1:T6 Arg2:T13	
+R2	RESULT Arg1:T6 Arg2:T2	
+R3	REASON Arg1:T7 Arg2:T2	
+R4	RESULT Arg1:T7 Arg2:T3	
+R5	REASON Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T8 Arg2:T4	
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Connective 79 80	と
+T11	Argument 65 79	このままの状態で使用を続ける
+R9	CONDITION Arg1:T10 Arg2:T11	
+R10	RESULT Arg1:T10 Arg2:T2	
+T12	Connective 122 124	場合
+T16	Argument 119 121	最悪
+R11	CONDITION Arg1:T12 Arg2:T16	
+R12	RESULT Arg1:T12 Arg2:T4	
+T13	Argument 0 61	かじ取りハンドル軸に取り付けられているコンビネーションスイッチのうち、押しボタン式非常点滅表示灯スイッチの防塵方法が不適切

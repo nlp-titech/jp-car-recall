@@ -1,0 +1,17 @@
+T1	Argument 0 29	動力伝達装置の前車軸用推進軸において、接続継手の強度が不足
+T2	Argument 36 51	当該継手の溶接部に亀裂が生じる
+T3	Argument 57 71	そのままの状態で使用を続ける
+T4	Argument 79 89	前車軸用推進軸が折損
+T5	Connective 33 35	ため
+T6	Connective 71 72	と
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	CONDITION Arg1:T6 Arg2:T3	
+R4	RESULT Arg1:T6 Arg2:T4	
+T7	Connective 56 57	、
+R5	REASON Arg1:T7 Arg2:T2	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 73 75	最悪
+T9	Connective 76 78	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T4	

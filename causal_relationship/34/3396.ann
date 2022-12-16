@@ -1,0 +1,21 @@
+T1	Argument 0 34	後部左右席の座席ベルトにおいて、リトラクタ構成部品の図面指示が不適切
+T2	Connective 35 37	ため
+T3	Argument 38 60	ロック機構の樹脂レバーとホイールの隙間が不足
+T4	Connective 70 74	そのため
+T5	Argument 91 104	樹脂レバーがホイールに干渉
+T6	Connective 115 116	、
+T7	Argument 116 127	乗員を拘束できなくなる
+R1	RESULT Arg1:T6 Arg2:T7	
+R2	REASON Arg1:T6 Arg2:T8	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	REASON Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T2 Arg2:T3	
+R6	REASON Arg1:T2 Arg2:T1	
+T8	Argument 106 115	ベルトが引き出せず
+T9	Connective 105 106	て
+R7	REASON Arg1:T9 Arg2:T5	
+R8	RESULT Arg1:T9 Arg2:T8	
+T10	Argument 75 90	シートベルトを引き出そうとする
+T11	Connective 90 91	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	

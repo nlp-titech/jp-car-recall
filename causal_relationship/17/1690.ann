@@ -1,0 +1,21 @@
+T1	Argument 0 42	前輪ブレーキ用のマスターシリンダにおいて、セカンダリピストンシールの組み付けが不適切
+T2	Connective 43 45	ため
+T3	Argument 46 61	正規位置に組み付けられていない
+T4	Connective 67 71	そのため
+T5	Argument 72 82	ブレーキ操作を続ける
+T6	Connective 82 83	と
+T7	Argument 83 91	ブレーキ液が漏れ
+T8	Connective 91 92	て
+T9	Argument 99 105	制動力が低下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 93 95	最悪
+T13	Connective 96 98	場合
+R9	CONDITION Arg1:T13 Arg2:T10	
+R10	RESULT Arg1:T13 Arg2:T9	

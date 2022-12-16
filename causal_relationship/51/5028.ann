@@ -1,0 +1,17 @@
+T2	Connective 31 33	ため
+T3	Argument 51 64	内部ワイヤーにたるみが生じ
+T4	Connective 64 65	て
+T5	Argument 65 77	ケーブルガイドから外れる
+T6	Connective 83 87	そのため
+T7	Argument 88 115	アクセルグリップを戻してもエンジン回転が下がらなくなる
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 34 47	当該ケーブルの調整が不充分
+T9	Connective 48 50	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 0 30	スロットルケーブルを保持しているケーブルガイドの構造が不適切
+R1	REASON Arg1:T2 Arg2:T10	

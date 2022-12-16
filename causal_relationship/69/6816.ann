@@ -1,0 +1,13 @@
+T1	Argument 0 26	助手席のエアバックにおいて、バック縫製部の強度が不足
+T2	Connective 30 32	ため
+T3	Argument 33 41	エアバックが展開
+T4	Connective 43 44	際
+T5	Argument 46 53	当該部より破損
+T6	Argument 55 68	バックの機能が不充分となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+T7	Connective 54 55	、
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	

@@ -1,0 +1,39 @@
+T1	Argument 0 45	イグニッションスイッチのポジション保持用スプリングにおいて、成形設備のメンテナンスが不適切
+T2	Argument 49 57	成形時に傷がつい
+T3	Argument 89 99	当該スプリングが破損
+T4	Connective 46 48	ため
+T5	Connective 64 68	そのため
+T6	Connective 100 101	、
+T7	Argument 144 163	イグニッションキーがＯＮ位置以外に回転
+T8	Connective 164 165	、
+T9	Argument 165 173	車両電源が断たれ
+T10	Argument 174 181	エンジンが停止
+T11	Connective 173 174	て
+T12	Argument 208 219	エアバッグが展開しない
+R1	RESULT Arg1:T8 Arg2:T12	
+T13	Argument 193 204	この状態で事故を起こし
+T14	Connective 205 207	場合
+R2	CONDITION Arg1:T14 Arg2:T13	
+R3	RESULT Arg1:T14 Arg2:T12	
+R4	REASON Arg1:T11 Arg2:T9	
+R5	RESULT Arg1:T11 Arg2:T10	
+R6	REASON Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	REASON Arg1:T4 Arg2:T1	
+R9	RESULT Arg1:T4 Arg2:T2	
+R10	REASON Arg1:T5 Arg2:T2	
+R11	RESULT Arg1:T5 Arg2:T3	
+T15	Argument 69 85	イグニッションキー操作の繰り返し
+T16	Connective 85 89	によって
+R12	REASON Arg1:T16 Arg2:T15	
+R13	RESULT Arg1:T16 Arg2:T3	
+R14	REASON Arg1:T6 Arg2:T3	
+R15	RESULT Arg1:T6 Arg2:T7	
+T17	Argument 101 128	イグニッションキーに多数のキーホルダー等の重量物を装着
+T18	Connective 132 133	と
+R16	CONDITION Arg1:T18 Arg2:T17	
+R17	RESULT Arg1:T18 Arg2:T7	
+T19	Argument 134 141	走行中の振動等
+T20	Connective 141 144	により
+R18	REASON Arg1:T20 Arg2:T19	
+R19	RESULT Arg1:T20 Arg2:T7	

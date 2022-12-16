@@ -1,0 +1,15 @@
+T2	Connective 34 36	ため
+T3	Argument 36 41	強度が不足
+T4	Connective 51 55	そのため
+T5	Argument 88 96	当該ボルトが折損
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 56 69	車輪を取り付ける際の締付力
+T7	Argument 73 84	走行中の路面からの衝撃
+T8	Connective 84 87	により
+R5	REASON Arg1:T8 Arg2:T6	
+R6	REASON Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T5	
+T1	Argument 0 31	ホイール取付ボルトを生産する際に、当該ボルトが誤った材質で作製
+R1	REASON Arg1:T2 Arg2:T1	

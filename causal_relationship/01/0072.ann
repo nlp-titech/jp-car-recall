@@ -1,0 +1,25 @@
+T1	Argument 0 28	原動機の補機駆動用クランクプーリの取付ボルトに締付け不足
+T2	Argument 36 41	異音が発生
+T3	Argument 59 67	当該ボルトが脱落
+T4	Argument 69 79	クランクプーリが外れ
+T5	Argument 80 98	パワーステアリングの機能が損なわれる
+T6	Argument 109 115	原動機が停止
+T7	Connective 34 36	ため
+T8	Connective 68 69	て
+T9	Connective 79 80	、
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	RESULT Arg1:T7 Arg2:T3	
+R4	REASON Arg1:T8 Arg2:T3	
+R5	RESULT Arg1:T8 Arg2:T4	
+R6	REASON Arg1:T9 Arg2:T4	
+R7	RESULT Arg1:T9 Arg2:T5	
+R8	RESULT Arg1:T9 Arg2:T6	
+T10	Argument 43 57	そのままの状態で使用を続ける
+T11	Connective 57 58	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	
+T12	Argument 103 105	最悪
+T13	Connective 106 108	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T6	

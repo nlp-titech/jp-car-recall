@@ -1,0 +1,27 @@
+T1	Argument 0 57	エアバッグ等（乗員補助拘束装置）を制御するＳＲＳコントロールユニットにおいて、当該ユニットの集積回路の製造が不適切
+T2	Connective 58 60	ため
+T3	Argument 61 71	回路内の半導体が腐食
+T4	Connective 79 83	そのため
+T5	Argument 84 98	そのままの状態で使用を続ける
+T6	Connective 98 99	と
+T7	Argument 100 106	半導体が膨張
+T8	Connective 107 108	、
+T9	Argument 108 117	電気回路が遮断され
+T10	Connective 117 118	、
+T11	Argument 118 137	衝突時等に乗員補助拘束装置が作動しない
+T12	Argument 146 159	特定の電気回路が遮断される
+T13	Connective 159 160	と
+T14	Argument 161 175	突然、乗員補助拘束装置が作動
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	RESULT Arg1:T8 Arg2:T12	
+R10	REASON Arg1:T10 Arg2:T9	
+R11	RESULT Arg1:T10 Arg2:T11	
+R12	CONDITION Arg1:T13 Arg2:T12	
+R13	RESULT Arg1:T13 Arg2:T14	

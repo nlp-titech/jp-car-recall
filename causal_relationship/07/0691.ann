@@ -1,0 +1,27 @@
+T1	Argument 1 74	ＤＰＦ（ディーゼル微粒子除去装置）において、ＤＰＦ内に捕集されたＰＭ（粒子状物質）の自動除去機能を制御するコンピュータに誤ったプログラムを組み込ん
+T2	Argument 78 113	手動操作によるＰＭの除去が必要であるにもかかわらず、自動除去機能が作動
+T3	Argument 126 138	ＤＰＦの温度が異常に上昇
+T4	Argument 140 151	排気温度センサーが損傷
+T5	Argument 153 163	エンジン警告灯が点灯
+T6	Argument 165 167	最悪
+T7	Argument 171 177	ＤＰＦが損傷
+T8	Argument 179 193	ＰＭの排出量が基準値を超える
+T9	Connective 75 77	ため
+T10	Connective 121 125	そのため
+T11	Connective 139 140	、
+T12	Connective 152 153	て
+T14	Connective 168 170	場合
+T15	Connective 178 179	て
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T2	
+R3	REASON Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T3	
+R5	REASON Arg1:T11 Arg2:T3	
+R6	RESULT Arg1:T11 Arg2:T4	
+R7	REASON Arg1:T12 Arg2:T4	
+R8	RESULT Arg1:T12 Arg2:T5	
+R11	CONDITION Arg1:T14 Arg2:T6	
+R12	RESULT Arg1:T14 Arg2:T7	
+R13	REASON Arg1:T15 Arg2:T7	
+R14	RESULT Arg1:T15 Arg2:T8	
+R9	RESULT Arg1:T11 Arg2:T7	

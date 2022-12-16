@@ -1,0 +1,17 @@
+T1	Argument 0 48	チャイルドシートのロッキングバー（ＩＳＯ－ＦＩＸ固定システム用）において、ロック部の加工が不適切
+T2	Connective 49 51	ため
+T3	Argument 52 57	強度が不足
+T4	Connective 67 71	そのため
+T5	Argument 72 106	当該シートをＩＳＯ－ＦＩＸシステムで固定した状態で衝突等の負荷を受け
+T6	Connective 107 108	際
+T7	Argument 109 128	当該ロックが車両側の固定フックから外れ
+T8	Connective 128 129	、
+T9	Argument 129 138	乗員を拘束出来ない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	

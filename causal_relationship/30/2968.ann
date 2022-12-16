@@ -1,0 +1,25 @@
+T1	Argument 0 21	シートをボンネットの補強板が無い穴に取付け
+T2	Connective 24 26	ため
+T3	Argument 27 40	シート取付け部に亀裂が発生
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 48 52	そのため
+T5	Argument 68 73	亀裂が拡大
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 74 75	て
+T7	Argument 75 86	シートにがたつきが発生
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Connective 87 88	、
+T9	Argument 94 101	シートが外れる
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 53 67	そのままの状態で使用を続ける
+T11	Connective 67 68	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	
+T12	Argument 88 90	最悪
+T13	Connective 91 93	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T9	

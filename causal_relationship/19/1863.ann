@@ -1,0 +1,25 @@
+T1	Argument 0 59	４輪駆動車の燃料タンク組付け時にブリーザホース（給油時に燃料タンク内の空気を逃がすホース）の固定用金具を過度に締め付け
+T2	Connective 65 67	ため
+T3	Argument 68 79	当該ホースに亀裂が発生
+T4	Connective 87 91	そのため
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 108 113	亀裂が進行
+T6	Connective 114 115	、
+T7	Argument 121 129	当該ホースが破断
+T8	Connective 129 130	し
+T9	Argument 130 136	燃料が漏れる
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 92 106	そのままの状態で使用を続ける
+T11	Connective 106 107	と
+T12	Argument 115 117	最悪
+T13	Connective 118 120	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T7	

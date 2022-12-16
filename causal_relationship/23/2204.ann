@@ -1,0 +1,29 @@
+T1	Argument 0 24	後輪ブレーキワイヤの取付ブラケットの溶接が不適切
+T2	Connective 25 27	ため
+T3	Argument 49 59	当該ブラケットが変形
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 67 71	そのため
+T5	Argument 105 107	折損
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T22	
+T6	Connective 108 109	、
+T7	Argument 115 128	後輪ブレーキが効かなくなる
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 28 48	足踏み式後輪ブレーキを過大な力で踏み込む
+T9	Connective 48 49	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 109 111	最悪
+T11	Connective 112 114	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T7	
+T20	Argument 72 82	そのまま使用を続ける
+T21	Connective 82 83	と
+T22	Argument 84 104	インナーワイヤがアウターワイヤ端部と擦れ
+T23	Connective 104 105	て
+R11	CONDITION Arg1:T21 Arg2:T20	
+R12	RESULT Arg1:T21 Arg2:T22	
+R13	REASON Arg1:T23 Arg2:T22	
+R14	RESULT Arg1:T23 Arg2:T5	

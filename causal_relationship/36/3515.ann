@@ -1,0 +1,17 @@
+T1	Argument 0 27	散水車の水ポンプ用エンジンにおいて、カムの形状が不適切
+T2	Connective 28 30	ため
+T3	Argument 31 63	エンジンを停止寸前の状態からアクセルを急激に最高回転状態まで作動
+T4	Connective 66 67	際
+T5	Argument 69 77	エンジンが逆回転
+T6	Connective 85 89	そのため
+T7	Argument 90 104	排気ガスが吸気側へ吐き出され
+T8	Connective 104 105	、
+T9	Argument 105 131	エアクリーナ内のエレメント、エアクリーナカバーを焼損
+R1	RESULT Arg1:T8 Arg2:T9	
+R2	REASON Arg1:T8 Arg2:T7	
+R3	RESULT Arg1:T6 Arg2:T7	
+R4	REASON Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T5	
+R6	CONDITION Arg1:T4 Arg2:T3	
+R7	RESULT Arg1:T2 Arg2:T5	
+R8	REASON Arg1:T2 Arg2:T1	

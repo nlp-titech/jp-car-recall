@@ -1,0 +1,17 @@
+T1	Argument 0 41	かじとり装置のステアリングギヤボックスにおいて、ステアリングラックの熱処理が不適切
+T2	Argument 66 82	当該ステアリングラックの歯が破損
+T3	Argument 90 103	ハンドル操作ができなくなる
+T4	Connective 47 49	ため
+T5	Connective 83 84	、
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	
+T6	Argument 50 64	そのままの状態で使用を続ける
+T7	Connective 64 65	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T2	
+T8	Argument 84 86	最悪
+T9	Connective 87 89	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	

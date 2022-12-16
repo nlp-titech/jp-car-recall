@@ -1,0 +1,47 @@
+T1	Argument 11 36	ディファレンシャル内のスパイダーピンの形状が不適切
+T2	Argument 47 61	スパイダーピンの油膜が切れる
+T3	Argument 72 84	当該スパイダーピンが磨耗
+T4	Argument 86 92	磨耗粉が生じ
+T5	Argument 93 121	磨耗粉がブレーキピストンとブレーキハウジング間に噛み込み
+T6	Argument 122 132	ピストンシールが損傷
+T7	Argument 134 142	ブレーキ液が漏れ
+T8	Argument 143 149	警告灯が点灯
+T9	Argument 151 161	そのまま使用を続ける
+T10	Argument 163 165	最悪
+T11	Argument 169 177	ブレーキ液が不足
+T12	Argument 179 190	ブレーキが効かなくなる
+T13	Connective 37 39	ため
+T14	Connective 67 71	そのため
+T15	Connective 85 86	て
+T16	Connective 92 93	、
+T17	Connective 121 122	、
+T18	Connective 133 134	て
+T19	Connective 142 143	て
+T21	Connective 161 162	と
+T22	Connective 166 168	場合
+T23	Connective 178 179	て
+R1	REASON Arg1:T13 Arg2:T1	
+R2	RESULT Arg1:T13 Arg2:T2	
+R3	REASON Arg1:T14 Arg2:T2	
+R4	RESULT Arg1:T14 Arg2:T3	
+R5	REASON Arg1:T15 Arg2:T3	
+R6	RESULT Arg1:T15 Arg2:T4	
+R7	REASON Arg1:T16 Arg2:T4	
+R8	RESULT Arg1:T16 Arg2:T5	
+R9	REASON Arg1:T17 Arg2:T5	
+R10	RESULT Arg1:T17 Arg2:T6	
+R11	REASON Arg1:T18 Arg2:T6	
+R12	RESULT Arg1:T18 Arg2:T7	
+R13	REASON Arg1:T19 Arg2:T7	
+R14	RESULT Arg1:T19 Arg2:T8	
+R17	CONDITION Arg1:T21 Arg2:T9	
+R19	CONDITION Arg1:T22 Arg2:T10	
+R20	RESULT Arg1:T22 Arg2:T11	
+R21	REASON Arg1:T23 Arg2:T11	
+R22	RESULT Arg1:T23 Arg2:T12	
+R16	RESULT Arg1:T21 Arg2:T11	
+T24	Argument 40 46	高負荷作業時
+T25	Connective 46 47	に
+R23	CONDITION Arg1:T25 Arg2:T24	
+R24	RESULT Arg1:T25 Arg2:T2	
+R15	RESULT Arg1:T19 Arg2:T11	

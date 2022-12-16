@@ -1,0 +1,31 @@
+T1	Argument 16 37	コンロッドブッシュ挿入時の製造条件が不適切
+T2	Argument 41 52	ブッシュの保持力が不足
+T3	Argument 67 77	そのまま使用を続ける
+T4	Argument 79 88	当該ブッシュが摩耗
+T5	Argument 89 91	損傷
+T6	Argument 96 101	異音が発生
+T7	Argument 103 105	最悪
+T8	Argument 109 116	エンジンが破損
+T9	Argument 118 126	走行できなくなる
+T10	Connective 38 40	ため
+T11	Connective 62 66	そのため
+T12	Connective 77 78	と
+T13	Connective 88 89	、
+T14	Connective 95 96	で
+T16	Connective 106 108	場合
+T17	Connective 117 118	て
+R1	REASON Arg1:T10 Arg2:T1	
+R2	RESULT Arg1:T10 Arg2:T2	
+R3	REASON Arg1:T11 Arg2:T2	
+R4	RESULT Arg1:T11 Arg2:T4	
+R5	CONDITION Arg1:T12 Arg2:T3	
+R6	RESULT Arg1:T12 Arg2:T4	
+R7	REASON Arg1:T13 Arg2:T4	
+R8	RESULT Arg1:T13 Arg2:T5	
+R9	REASON Arg1:T14 Arg2:T5	
+R13	CONDITION Arg1:T16 Arg2:T7	
+R14	RESULT Arg1:T16 Arg2:T8	
+R15	REASON Arg1:T17 Arg2:T8	
+R16	RESULT Arg1:T17 Arg2:T9	
+R10	RESULT Arg1:T14 Arg2:T6	
+R11	RESULT Arg1:T14 Arg2:T8	

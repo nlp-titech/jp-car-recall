@@ -1,0 +1,17 @@
+T1	Argument 25 63	ヘッドランプをブラケットに固定するスクリュウ及び光軸調整部ナットの締付が不足
+T2	Connective 73 77	そのため
+T3	Argument 105 124	照射方向が保安基準第３２条に適合しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T7	
+T4	Argument 78 92	そのままの状態で使用を続ける
+T5	Connective 92 93	と
+T6	Argument 94 99	走行振動等
+T7	Argument 102 104	緩み
+R3	CONDITION Arg1:T5 Arg2:T4	
+T8	Connective 104 105	、
+R4	REASON Arg1:T8 Arg2:T7	
+R5	RESULT Arg1:T8 Arg2:T3	
+R6	RESULT Arg1:T5 Arg2:T7	
+T9	Connective 99 102	により
+R7	REASON Arg1:T9 Arg2:T6	
+R8	RESULT Arg1:T9 Arg2:T7	

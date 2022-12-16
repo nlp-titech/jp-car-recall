@@ -1,0 +1,21 @@
+T2	Argument 61 63	振動
+T3	Connective 58 60	ため
+T4	Connective 63 66	により
+T5	Argument 66 74	当該ネジのゆるみ
+T6	Argument 77 88	スプリングヒンジの破損
+T7	Connective 97 98	、
+T8	Argument 104 112	側面ガラスが脱落
+R3	REASON Arg1:T4 Arg2:T2	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T6	
+R6	REASON Arg1:T7 Arg2:T6	
+R7	REASON Arg1:T7 Arg2:T5	
+R8	RESULT Arg1:T7 Arg2:T8	
+T9	Argument 0 57	ショベルローダの側面ガラスにおいて、スプリングヒンジ締付けネジの締付け力不足及びスプリングヒンジの曲げ加工が不適切
+R9	REASON Arg1:T3 Arg2:T9	
+R2	RESULT Arg1:T3 Arg2:T5	
+R10	RESULT Arg1:T3 Arg2:T6	
+T10	Argument 98 100	最悪
+T11	Connective 101 103	場合
+R11	CONDITION Arg1:T11 Arg2:T10	
+R12	RESULT Arg1:T11 Arg2:T8	

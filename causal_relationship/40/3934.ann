@@ -1,0 +1,13 @@
+T1	Argument 0 16	ブレーキ配管防護板の形状が不適切
+T2	Argument 20 30	ハンドルを最大に操舵
+T3	Argument 34 48	ドラッグリンクが防護板と接触
+T4	Argument 61 81	保安基準第１１条第１項の基準に適合しない
+T5	Connective 17 19	ため
+T6	Connective 32 33	際
+T7	Connective 56 60	そのため
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T3	
+R3	CONDITION Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	

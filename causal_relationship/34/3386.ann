@@ -1,0 +1,13 @@
+T1	Argument 0 57	運転席用エアバッグのインフレータ（膨張装置）において、エアバッグ膨張ガス流路を形成している仕切り板に異品を組み付け
+T2	Connective 64 68	そのため
+T3	Argument 69 91	エアバッグ展開時にインフレータ内圧が異常上昇
+T4	Connective 92 93	、
+T5	Argument 93 110	インフレータ容器が破損して飛び散り
+T6	Connective 110 111	、
+T7	Argument 111 116	乗員が負傷
+R1	RESULT Arg1:T6 Arg2:T7	
+R2	REASON Arg1:T6 Arg2:T5	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	REASON Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T2 Arg2:T3	
+R6	REASON Arg1:T2 Arg2:T1	

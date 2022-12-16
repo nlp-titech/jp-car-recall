@@ -1,0 +1,9 @@
+T1	Argument 0 49	かじ取り装置において、左右の車輪の動力を断続するためのミッション内部のクラッチの部品同士が噛み込み
+T2	Connective 49 50	、
+T3	Argument 50 61	クラッチが切れなくなり
+T4	Connective 61 62	、
+T5	Argument 62 74	かじ取り操作が困難となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

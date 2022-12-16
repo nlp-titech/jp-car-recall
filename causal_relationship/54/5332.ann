@@ -1,0 +1,25 @@
+T1	Argument 22 45	トップカバー及びファンハウジングの耐熱性が不足
+T2	Connective 49 51	ため
+T3	Argument 63 85	当該トップカバー及びファンハウジングが溶ける
+T4	Connective 91 95	そのため
+T5	Argument 108 127	装置を格納する木製のパネルや床材が焼け
+T6	Connective 127 128	、
+T7	Argument 134 139	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T8	Argument 52 59	装置が異常加熱
+T9	Connective 61 63	際に
+R3	CONDITION Arg1:T9 Arg2:T8	
+R4	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 96 106	そのまま使用を続ける
+R5	REASON Arg1:T4 Arg2:T3	
+R6	RESULT Arg1:T4 Arg2:T5	
+T11	Connective 106 107	と
+R7	CONDITION Arg1:T11 Arg2:T10	
+R8	RESULT Arg1:T11 Arg2:T5	
+R9	REASON Arg1:T6 Arg2:T5	
+R10	RESULT Arg1:T6 Arg2:T7	
+T12	Argument 128 130	最悪
+T13	Connective 131 133	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T7	

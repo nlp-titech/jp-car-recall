@@ -1,0 +1,13 @@
+T1	Argument 0 49	補助制動灯（１８Ｗ×３個）を装着した車両において、電気装置の制動灯回路のヒューズ容量の設定が不適切
+T2	Argument 71 80	当該ヒューズが溶断
+T3	Argument 82 93	制動灯が点灯しなくなる
+T4	Connective 50 52	ため
+T5	Connective 81 82	、
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	
+R1	REASON Arg1:T4 Arg2:T1	
+T6	Argument 53 69	そのままの状態で使用を続けている
+T7	Connective 69 70	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T2	

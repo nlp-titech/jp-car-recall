@@ -1,0 +1,29 @@
+T1	Argument 11 42	駐車ブレーキ用キャリパ取付ボルトに緩み止め防止剤の塗布が不十分
+T2	Connective 43 45	ため
+T3	Argument 46 54	当該ボルトが緩む
+T4	Connective 60 64	そのため
+T5	Argument 65 79	そのままの状態で使用を続ける
+T6	Connective 79 80	と
+T7	Argument 81 92	走行中にキャリパにガタ
+T8	Connective 95 96	て
+T9	Argument 96 101	異音が発生
+T10	Connective 102 103	、
+T11	Argument 103 105	最悪
+T12	Connective 106 108	場合
+T13	Argument 109 117	当該ボルトが脱落
+T14	Connective 118 119	て
+T15	Argument 120 133	駐車ブレーキの制動力が不足
+R1	RESULT Arg1:T14 Arg2:T15	
+R2	REASON Arg1:T14 Arg2:T13	
+R3	RESULT Arg1:T12 Arg2:T13	
+R4	CONDITION Arg1:T12 Arg2:T11	
+R5	RESULT Arg1:T10 Arg2:T13	
+R6	REASON Arg1:T10 Arg2:T9	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	REASON Arg1:T8 Arg2:T7	
+R9	RESULT Arg1:T6 Arg2:T7	
+R10	CONDITION Arg1:T6 Arg2:T5	
+R11	RESULT Arg1:T4 Arg2:T7	
+R12	REASON Arg1:T4 Arg2:T3	
+R13	RESULT Arg1:T2 Arg2:T3	
+R14	REASON Arg1:T2 Arg2:T1	

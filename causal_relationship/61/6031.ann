@@ -1,0 +1,19 @@
+T1	Argument 0 27	ダッシュボードにおいて、表装の加工作業が行われていない
+T2	Connective 27 29	ため
+T3	Argument 30 43	助手席エアバッグ展開が必要
+T4	Connective 44 47	場合に
+T5	Argument 48 56	適切に展開しない
+T6	Argument 66 91	エアバッグ展開時に想定外のダッシュボード破損が起き
+T7	Connective 91 92	、
+T8	Argument 92 94	最悪
+T9	Connective 95 97	場合
+T10	Argument 98 120	破損したダッシュボードにより乗員が怪我を負う
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	RESULT Arg1:T2 Arg2:T6	
+R6	REASON Arg1:T7 Arg2:T6	
+R7	RESULT Arg1:T7 Arg2:T10	
+R8	CONDITION Arg1:T9 Arg2:T8	
+R9	RESULT Arg1:T9 Arg2:T10	

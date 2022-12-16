@@ -1,0 +1,21 @@
+T1	Argument 0 43	樹脂製燃料パイプとデリバリパイプ（インジェクションレール）の継ぎ手部の締結構造が不適切
+T2	Connective 44 46	ため
+T3	Argument 47 58	当該継ぎ手の嵌合が緩む
+T4	Connective 64 68	そのため
+T5	Argument 92 100	当該継ぎ手が外れ
+T6	Connective 100 101	、
+T7	Argument 101 107	燃料が漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 81 87	原動機の振動
+T9	Connective 88 91	により
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Argument 69 79	そのまま使用を続ける
+T11	Connective 79 80	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	

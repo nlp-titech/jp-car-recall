@@ -1,0 +1,28 @@
+T1	Argument 10 27	油圧畜圧器内部の隔壁の材質が不適切
+T2	Argument 43 48	隔壁が劣化
+T3	Connective 49 50	て
+T4	Argument 50 57	畜圧能力が低下
+T5	Connective 58 59	、
+T6	Argument 59 70	クラッチの断続が不十分
+T7	Connective 79 83	このため
+T8	Argument 84 93	変速時に異音が発生
+T10	Argument 101 110	変速ができなくなる
+T11	Connective 28 30	ため
+R1	REASON Arg1:T11 Arg2:T1	
+R2	RESULT Arg1:T11 Arg2:T2	
+R3	REASON Arg1:T3 Arg2:T2	
+R4	RESULT Arg1:T3 Arg2:T4	
+R5	REASON Arg1:T5 Arg2:T4	
+R6	RESULT Arg1:T5 Arg2:T6	
+R7	REASON Arg1:T7 Arg2:T6	
+R8	RESULT Arg1:T7 Arg2:T8	
+R9	RESULT Arg1:T7 Arg2:T10	
+T9	Argument 95 97	最悪
+T12	Connective 98 100	場合
+R10	CONDITION Arg1:T12 Arg2:T9	
+R11	RESULT Arg1:T12 Arg2:T10	
+T13	Argument 31 41	そのまま使用を続ける
+T14	Connective 41 42	と
+R12	CONDITION Arg1:T14 Arg2:T13	
+R13	RESULT Arg1:T14 Arg2:T2	
+#1	AnnotatorNotes T1	おそらく誤字「蓄圧」

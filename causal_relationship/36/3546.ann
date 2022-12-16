@@ -1,0 +1,35 @@
+T1	Argument 5 37	タイミングチェーンにおいて、プレートを連結するピンの耐久性が不足
+T2	Connective 41 43	ため
+T3	Argument 44 51	表面処理が摩耗
+T4	Argument 59 69	そのまま使用を続ける
+T5	Connective 69 70	と
+T6	Connective 58 59	。
+T7	Argument 71 84	プレートのピン挿入穴が摩耗
+T8	Connective 85 86	て
+T9	Argument 86 100	タイミングチェーン全長が伸び
+T10	Connective 100 101	、
+T11	Argument 101 111	チェーンガイドと干渉
+T12	Connective 112 113	て
+T13	Argument 120 122	最悪
+T14	Connective 123 125	場合
+T15	Argument 126 138	タイミングチェーンが破損
+T16	Connective 139 140	て
+T17	Argument 140 147	エンストに至る
+R1	RESULT Arg1:T16 Arg2:T17	
+R2	REASON Arg1:T16 Arg2:T15	
+R3	RESULT Arg1:T14 Arg2:T15	
+R4	CONDITION Arg1:T14 Arg2:T13	
+R5	RESULT Arg1:T12 Arg2:T15	
+R6	REASON Arg1:T12 Arg2:T11	
+R7	RESULT Arg1:T10 Arg2:T11	
+R8	REASON Arg1:T10 Arg2:T9	
+R9	RESULT Arg1:T8 Arg2:T9	
+R10	REASON Arg1:T8 Arg2:T7	
+R11	RESULT Arg1:T5 Arg2:T7	
+R12	CONDITION Arg1:T5 Arg2:T4	
+R13	RESULT Arg1:T6 Arg2:T7	
+R14	REASON Arg1:T6 Arg2:T3	
+R15	RESULT Arg1:T2 Arg2:T3	
+R16	REASON Arg1:T2 Arg2:T1	
+T18	Argument 113 118	異音が発生
+R17	RESULT Arg1:T12 Arg2:T18	

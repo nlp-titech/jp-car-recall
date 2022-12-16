@@ -1,0 +1,21 @@
+T1	Argument 9 31	エンジン制御コンピュータのプログラムが不適切
+T2	Connective 32 34	ため
+T3	Argument 39 61	一酸化炭素の排出量が保安基準の基準値を超える
+T4	Argument 66 74	黒煙排出量が増加
+T5	Connective 82 86	そのため
+T6	Argument 87 117	ＤＰＲ（ディーゼル微粒子除去装置）にＰＭ（粒子状物質）が詰ま
+T7	Connective 117 118	り
+T8	Argument 118 128	エンジン警告灯が点灯
+T10	Argument 130 136	ＤＰＲが損傷
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T4	
+R4	REASON Arg1:T5 Arg2:T4	
+R5	RESULT Arg1:T5 Arg2:T6	
+R6	REASON Arg1:T7 Arg2:T6	
+R7	RESULT Arg1:T7 Arg2:T8	
+R8	RESULT Arg1:T7 Arg2:T10	
+T9	Argument 35 37	加速
+T11	Connective 37 39	時に
+R9	CONDITION Arg1:T11 Arg2:T9	
+R10	RESULT Arg1:T11 Arg2:T3	

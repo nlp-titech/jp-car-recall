@@ -1,0 +1,21 @@
+T1	Argument 0 75	キャブチルト(運転台を前方に傾ける)機構のない車両のかじ取装置において、ステアリングシャフトとステアリングギアボックスの継ぎ手部の組み付け作業が不適切
+T2	Argument 79 94	継ぎ手が確実に固定されていない
+T3	Argument 122 131	当該継ぎ手部が外れ
+T4	Argument 132 141	操舵ができなくなる
+T5	Connective 76 78	ため
+T6	Connective 99 100	、
+T7	Connective 131 132	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 100 114	そのままの状態で使用を続ける
+T9	Connective 114 115	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 116 118	最悪
+T11	Connective 119 121	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	

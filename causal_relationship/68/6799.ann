@@ -1,0 +1,17 @@
+T1	Argument 0 47	原動機の点火装置に使用している高圧電線（ハイテンションコード）のプラグキャップ部の材質が不適切
+T2	Connective 48 50	ため
+T4	Connective 69 70	と
+T5	Argument 71 75	絶縁劣化
+T6	Connective 82 83	、
+T7	Argument 83 92	原動機が不調となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T3	Argument 51 58	高温多湿の状態
+T8	Argument 59 69	運転を長期間繰り返す
+T9	Connective 58 59	で
+R3	CONDITION Arg1:T9 Arg2:T3	
+R7	CONDITION Arg1:T4 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

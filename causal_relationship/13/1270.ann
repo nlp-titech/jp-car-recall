@@ -1,0 +1,25 @@
+T1	Argument 0 41	大型観光バスにおいて、①エアコン駆動用ベルトを保持するアイドルプーリの構造が不適切
+T2	Connective 42 44	ため
+T3	Argument 45 67	当該プーリのベアリングを潤滑するグリスが飛散
+T4	Connective 75 79	そのため
+T5	Argument 80 94	そのままの状態で使用を続ける
+T6	Connective 94 95	と
+T7	Argument 96 108	当該ベアリングが焼き付き
+T8	Connective 108 109	、
+T9	Argument 109 111	最悪
+T10	Connective 112 114	場合
+T11	Argument 115 125	プーリとベルトが擦れ
+T12	Connective 125 126	て
+T13	Argument 126 128	発火
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	CONDITION Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T7	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T11	
+R9	CONDITION Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	

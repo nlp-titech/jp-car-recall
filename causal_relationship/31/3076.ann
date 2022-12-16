@@ -1,0 +1,41 @@
+T1	Argument 1 169	大型トラックのエアブレーキにおいて、マルチプロテクションバルブ（ブレーキのエアラインが失陥した際に失陥したエアライン以外の経路を遮断し他のエアラインのエア圧を確保するもの）内にあるレジューシングバルブ（後２軸車に装着された４バックエアサスペンション用のエアタンクとブレーキのエアタンクの圧力を切り替えるための減圧弁）のゴム部材質が不適切
+T2	Connective 170 172	ため
+T3	Argument 189 195	ゴム部が劣化
+T4	Connective 203 207	そのため
+T5	Argument 208 221	エアラインの減圧不良が生じ
+T6	Connective 240 241	、
+T7	Argument 241 254	ブレーキの引き摺りを起こす
+T8	Connective 260 264	そのため
+T9	Argument 265 279	そのままの状態で使用を続ける
+T10	Connective 279 280	と
+T11	Argument 280 287	ブレーキが過熱
+T12	Connective 288 289	、
+T13	Argument 289 291	最悪
+T14	Connective 292 294	場合
+T15	Argument 295 300	火災に至る
+R1	RESULT Arg1:T14 Arg2:T15	
+R2	CONDITION Arg1:T14 Arg2:T13	
+R3	RESULT Arg1:T12 Arg2:T15	
+R4	REASON Arg1:T12 Arg2:T11	
+R5	RESULT Arg1:T10 Arg2:T11	
+R6	CONDITION Arg1:T10 Arg2:T9	
+R7	RESULT Arg1:T8 Arg2:T11	
+R8	REASON Arg1:T8 Arg2:T7	
+R9	RESULT Arg1:T6 Arg2:T7	
+R10	REASON Arg1:T6 Arg2:T21	
+R11	RESULT Arg1:T4 Arg2:T5	
+R12	REASON Arg1:T4 Arg2:T3	
+R13	RESULT Arg1:T2 Arg2:T3	
+R14	REASON Arg1:T2 Arg2:T1	
+T16	Argument 173 185	圧縮空気中に含まれる油分
+T17	Connective 185 189	によって
+R15	REASON Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T3	
+T18	Connective 220 221	じ
+T19	Argument 221 226	高圧になる
+T20	Connective 226 229	ことで
+T21	Argument 229 239	ＡＳＲバルブが誤作動
+R17	REASON Arg1:T18 Arg2:T5	
+R18	RESULT Arg1:T18 Arg2:T19	
+R19	REASON Arg1:T20 Arg2:T19	
+R20	RESULT Arg1:T20 Arg2:T21	

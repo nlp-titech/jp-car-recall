@@ -1,0 +1,25 @@
+T1	Argument 24 40	ブラケットの取付穴の位置が不適切
+T2	Argument 44 61	燃料タンクが正しい位置に取付けられ
+T3	Argument 100 112	燃料タンクとステーが共振
+T4	Argument 113 132	ステーと燃料タンクの溶接部に亀裂が生じ
+T5	Argument 133 135	最悪
+T6	Argument 139 145	燃料が漏れる
+T7	Connective 41 43	ため
+T8	Connective 95 99	そのため
+T9	Connective 112 113	し
+T10	Connective 132 133	、
+T11	Connective 136 138	場合
+R1	REASON Arg1:T7 Arg2:T1	
+R2	RESULT Arg1:T7 Arg2:T2	
+R3	REASON Arg1:T8 Arg2:T18	
+R4	RESULT Arg1:T8 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T4	
+R7	REASON Arg1:T10 Arg2:T4	
+R8	RESULT Arg1:T10 Arg2:T6	
+R9	CONDITION Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	
+T18	Argument 62 89	エンジンからの振動がブラケットを介し燃料タンクに伝わる
+T19	Connective 61 62	ず
+R11	REASON Arg1:T19 Arg2:T2	
+R12	RESULT Arg1:T19 Arg2:T18	

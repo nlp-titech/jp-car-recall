@@ -1,0 +1,25 @@
+T1	Argument 15 30	エアホース組付工程でのばらつき
+T2	Argument 34 61	エアホースがステアリングのギヤボックスサポートにが接触
+T3	Connective 30 33	により
+T4	Connective 69 73	そのため
+T5	Argument 83 91	当該ホースが摩耗
+T6	Connective 92 93	、
+T7	Argument 93 98	エアが漏れ
+T8	Connective 98 99	、
+T9	Argument 105 111	制動力が低下
+R1	REASON Arg1:T3 Arg2:T1	
+R2	RESULT Arg1:T3 Arg2:T2	
+R3	REASON Arg1:T4 Arg2:T2	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 74 80	走行等の振動
+T11	Connective 80 83	により
+R9	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	
+T12	Argument 99 101	最悪
+T13	Connective 102 104	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T9	

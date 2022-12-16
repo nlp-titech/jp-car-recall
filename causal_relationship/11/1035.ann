@@ -1,0 +1,29 @@
+T1	Argument 0 64	リーフ・エア混合式サスペンションにおいて、リーフスプリングとフロントアクスルを固定するＵボルトの取付構造及び締付けトルクが不適切
+T2	Connective 65 67	ため
+T3	Argument 68 90	旋回時等に当該Ｕボルトに過大なこじり力が発生
+T4	Connective 91 92	、
+T5	Argument 92 97	亀裂が発生
+T6	Connective 105 109	そのため
+T7	Argument 110 124	そのままの状態で使用を続ける
+T8	Connective 124 125	と
+T9	Argument 126 133	Ｕボルトが折損
+T10	Argument 135 137	最悪
+T11	Connective 138 140	場合
+T12	Connective 134 135	、
+T13	Argument 141 163	当該サスペンションがフロントアクスルからずれ
+T14	Connective 163 164	て
+T15	Argument 165 176	走行安定性が損なわれる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T13	
+R11	REASON Arg1:T12 Arg2:T9	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	

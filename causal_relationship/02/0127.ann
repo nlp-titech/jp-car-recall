@@ -1,0 +1,17 @@
+T1	Argument 0 40	原動機（Ｖ型６気筒ガソリンエンジン）のシリンダヘッドガスケットの密封性能に不十分
+T2	Argument 65 80	当該ガスケットから冷却水が漏れ
+T3	Argument 87 97	オーバーヒートに至る
+T4	Connective 46 48	ため
+T5	Connective 80 81	、
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T3	
+T6	Argument 49 63	そのままの状態で使用を続ける
+T7	Connective 63 64	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T2	
+T8	Argument 81 83	最悪
+T9	Connective 84 86	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	

@@ -1,0 +1,23 @@
+T1	Argument 0 39	４輪駆動車の後軸用動力伝達装置において、リヤアクスルシャフトの加工寸法が不適切
+T2	Argument 48 83	当該シャフトにリヤブレーキドラムを固定するロックナットの締付けが不十分
+T3	Argument 108 119	当該ロックナットが緩む
+T4	Argument 136 147	当該ロックナットが外れ
+T5	Connective 147 148	、
+T6	Argument 148 153	車輪が脱落
+R1	REASON Arg1:T5 Arg2:T4	
+R2	RESULT Arg1:T5 Arg2:T6	
+T7	Connective 125 129	そのため
+R3	RESULT Arg1:T7 Arg2:T4	
+R4	REASON Arg1:T7 Arg2:T3	
+T9	Connective 89 91	ため
+R6	REASON Arg1:T9 Arg2:T2	
+R7	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 130 132	最悪
+T11	Connective 133 135	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T4	
+T12	Argument 92 105	発進および旋回等の繰り返し
+T13	Connective 105 108	により
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T3	
+R5	REASON Arg1:T9 Arg2:T1	

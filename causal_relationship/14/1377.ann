@@ -1,0 +1,29 @@
+T2	Connective 46 50	によって
+T3	Argument 51 61	フレームの強度が不足
+T4	Connective 68 69	、
+T5	Argument 69 83	山間の屈曲路等を繰り返し走行
+T6	Connective 85 86	と
+T7	Argument 87 99	当該フレームに亀裂が発生
+T8	Connective 107 111	そのため
+T9	Argument 112 122	そのまま使用を続ける
+T10	Connective 122 123	と
+T11	Argument 124 129	亀裂が進行
+T12	Argument 131 133	最悪
+T13	Connective 134 136	場合
+T14	Argument 137 146	当該フレームが破損
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	CONDITION Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T7	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	CONDITION Arg1:T10 Arg2:T9	
+R9	RESULT Arg1:T8 Arg2:T11	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T14	
+T15	Connective 130 131	、
+R13	REASON Arg1:T15 Arg2:T11	
+R14	RESULT Arg1:T15 Arg2:T14	
+T1	Argument 0 42	大型低床ＣＮＧ路線バスに改造した車両において、車体下部のフレームにＣＮＧボンベを装着
+R1	REASON Arg1:T2 Arg2:T1	

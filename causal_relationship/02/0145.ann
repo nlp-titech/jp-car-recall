@@ -1,0 +1,25 @@
+T1	Argument 0 31	エンジンルーム内のバッテリケーブルの電気配線の取り回しが不適切
+T2	Argument 35 56	燃料ホースまたはパイプと当該ケーブルが接触
+T3	Argument 80 92	当該ケーブルの被覆が損傷
+T4	Argument 104 109	火災に至る
+T5	Connective 32 34	ため
+T6	Connective 63 64	、
+T7	Connective 97 98	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 64 78	そのままの状態で使用を続ける
+T9	Connective 78 79	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	
+T10	Argument 98 100	最悪
+T11	Connective 101 103	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T4	
+T12	Connective 93 94	て
+T13	Argument 94 96	短絡
+R5	REASON Arg1:T12 Arg2:T3	
+R11	RESULT Arg1:T12 Arg2:T13	
+R12	REASON Arg1:T7 Arg2:T13	

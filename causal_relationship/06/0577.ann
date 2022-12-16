@@ -1,0 +1,17 @@
+T1	Argument 0 45	運転者席と助手席において、ヘッドレストガイドブラケットとシートバックフレームの溶接が不適切
+T2	Argument 49 56	溶接強度が不足
+T3	Argument 79 87	当該溶接部が破損
+T4	Argument 89 100	乗車人員に傷害を与える
+T5	Connective 46 48	ため
+T6	Connective 65 66	、
+T7	Connective 88 89	、
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 66 76	追突等の衝撃を受けた
+T9	Connective 76 78	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	

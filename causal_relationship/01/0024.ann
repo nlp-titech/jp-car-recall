@@ -1,0 +1,49 @@
+T2	Argument 78 89	整流器の樹脂部品が収縮
+T4	Argument 107 114	スパークが発生
+T5	Argument 137 146	当該電気回路が溶損
+T7	Argument 168 173	発電が停止
+T8	Argument 181 188	走行不能に至る
+T9	Argument 26 35	長時間の渋滞走行等
+T10	Argument 36 47	原動機室内の温度が上昇
+T11	Argument 48 77	整流器の樹脂部品が高温になるような条件が長時間繰り返される
+T12	Connective 23 25	ため
+T13	Connective 35 36	で
+T14	Connective 47 48	し
+T15	Connective 77 78	と
+T16	Connective 90 91	、
+T17	Connective 106 107	り
+T18	Connective 136 137	と
+T19	Connective 167 168	て
+T20	Connective 174 175	、
+R1	REASON Arg1:T12 Arg2:T23	
+R2	RESULT Arg1:T12 Arg2:T2	
+R3	REASON Arg1:T13 Arg2:T9	
+R4	RESULT Arg1:T13 Arg2:T10	
+R5	REASON Arg1:T14 Arg2:T10	
+R6	RESULT Arg1:T14 Arg2:T11	
+R7	CONDITION Arg1:T15 Arg2:T11	
+R8	RESULT Arg1:T15 Arg2:T2	
+R9	REASON Arg1:T16 Arg2:T2	
+R10	RESULT Arg1:T16 Arg2:T1	
+R11	REASON Arg1:T17 Arg2:T1	
+R12	RESULT Arg1:T17 Arg2:T4	
+R14	RESULT Arg1:T18 Arg2:T5	
+R15	RESULT Arg1:T18 Arg2:T3	
+R17	REASON Arg1:T19 Arg2:T3	
+R18	RESULT Arg1:T19 Arg2:T7	
+R19	REASON Arg1:T20 Arg2:T7	
+R20	RESULT Arg1:T20 Arg2:T8	
+T21	Argument 122 136	このままの状態で使用を続ける
+R21	CONDITION Arg1:T18 Arg2:T21	
+T22	Connective 121 122	。
+R13	REASON Arg1:T22 Arg2:T4	
+R22	RESULT Arg1:T22 Arg2:T5	
+R23	RESULT Arg1:T22 Arg2:T3	
+T23	Argument 0 17	交流発電機内にある整流器に製造不良
+T1	Argument 91 104	整流器の電気回路が導通不良
+T3	Argument 150 166	溶損のうえ整流器の樹脂部品が発煙
+R16	REASON Arg1:T19 Arg2:T5	
+T6	Argument 175 177	最悪
+T24	Connective 178 180	場合
+R24	CONDITION Arg1:T24 Arg2:T6	
+R25	RESULT Arg1:T24 Arg2:T8	

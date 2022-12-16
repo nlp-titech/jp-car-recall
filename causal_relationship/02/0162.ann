@@ -1,0 +1,13 @@
+T1	Argument 0 32	燃料装置の燃料カット装置において、内部の電磁石の防水性能が不十分
+T2	Argument 55 64	内部のコイルが断線
+T3	Argument 66 79	エンジンが始動できなくなる
+T9	Connective 38 39	、
+T10	Connective 65 66	、
+R1	REASON Arg1:T9 Arg2:T1	
+R2	RESULT Arg1:T9 Arg2:T2	
+R3	REASON Arg1:T10 Arg2:T2	
+R4	RESULT Arg1:T10 Arg2:T3	
+T4	Argument 39 53	そのままの状態で使用を続ける
+T5	Connective 53 54	と
+R5	CONDITION Arg1:T5 Arg2:T4	
+R6	RESULT Arg1:T5 Arg2:T2	

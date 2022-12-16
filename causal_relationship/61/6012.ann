@@ -1,0 +1,25 @@
+T1	Argument 0 20	エンジン制御ユニットのプログラムが不適切
+T2	Connective 21 23	ため
+T3	Argument 24 40	誤ったスロットル開度の指示を出す
+T4	Connective 45 46	、
+T5	Argument 98 107	エンジン出力が低下
+T6	Argument 82 97	アクセル操作に対する反応が遅れ
+T7	Connective 97 98	、
+T8	Argument 46 60	走行時にエンジン警告灯が点灯
+T9	Argument 66 79	非常時作動プログラムに移行
+T10	Connective 80 81	て
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T8	
+R5	RESULT Arg1:T4 Arg2:T9	
+R6	REASON Arg1:T10 Arg2:T9	
+R7	REASON Arg1:T10 Arg2:T8	
+R8	RESULT Arg1:T10 Arg2:T6	
+R9	REASON Arg1:T7 Arg2:T6	
+R10	RESULT Arg1:T7 Arg2:T5	
+T11	Argument 116 118	最悪
+T12	Connective 119 121	場合
+T13	Argument 122 141	エンジンが停止して再始動ができなくなる
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	

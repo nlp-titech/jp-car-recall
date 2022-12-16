@@ -1,0 +1,19 @@
+T1	Argument 0 74	ＡＢＳ（アンチロックブレーキングシステム）を搭載した中型トラック（消防車）において、放水用ポンプの流量調整ロッドと燃料配管及びエア配管との隙間が不足
+T2	Connective 78 80	ため
+T3	Argument 81 83	干渉
+R1	RESULT Arg1:T2 Arg2:T3	
+R2	REASON Arg1:T2 Arg2:T1	
+T4	Connective 91 95	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 111 118	当該配管が損傷
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 96 110	そのままの状態で使用を続ける
+T7	Connective 110 111	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T5	
+T8	Connective 119 120	て
+R7	REASON Arg1:T8 Arg2:T5	
+T9	Argument 120 124	燃料漏れ
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 125 131	エア供給不足
+R9	RESULT Arg1:T8 Arg2:T10	

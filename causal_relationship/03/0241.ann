@@ -1,0 +1,21 @@
+T1	Argument 0 28	制動装置において、ブレーキ倍力用負圧の取出し位置が不適切
+T2	Argument 32 53	パイプ内部に原動機の燃焼生成物が付着・堆積
+T3	Argument 77 95	ブレーキペダルを短時間に繰り返し操作
+T4	Argument 99 105	制度力が低下
+T5	Connective 29 31	ため
+T6	Connective 54 55	、
+T7	Connective 97 98	際
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T4	
+R5	CONDITION Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 56 69	のままの状態で使用を続ける
+T9	Connective 69 70	と
+T10	Argument 71 73	最悪
+T11	Connective 74 76	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	CONDITION Arg1:T11 Arg2:T10	
+R9	RESULT Arg1:T9 Arg2:T4	
+R10	RESULT Arg1:T11 Arg2:T4	

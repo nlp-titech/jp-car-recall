@@ -1,0 +1,17 @@
+T1	Argument 0 36	ホイールベースが２，１８０ｍｍの車両において、動力伝達装置の構造が不適切
+T2	Argument 40 66	最高車速域においてプロペラシャフトが異常振動を起こし
+T3	Argument 73 86	当該プロペラシャフトが折損
+T4	Argument 88 95	走行不能に至る
+T5	Connective 37 39	ため
+T6	Connective 66 67	、
+T7	Connective 87 88	て
+R1	REASON Arg1:T5 Arg2:T1	
+R2	RESULT Arg1:T5 Arg2:T2	
+R3	REASON Arg1:T6 Arg2:T2	
+R4	RESULT Arg1:T6 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T4	
+T11	Connective 70 72	場合
+T12	Argument 67 69	最悪
+R7	CONDITION Arg1:T11 Arg2:T12	
+R8	RESULT Arg1:T11 Arg2:T3	

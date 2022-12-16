@@ -1,0 +1,13 @@
+T1	Argument 0 23	アクセルワイヤ固定用の樹脂製部品の耐熱性が不足
+T2	Connective 27 29	ため
+T3	Argument 30 37	当該部品が破損
+T4	Connective 45 46	、
+T5	Argument 51 64	ワイヤが引かれた状態になり
+T6	Connective 64 65	、
+T7	Argument 65 79	原動機の回転が下がらなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

@@ -1,0 +1,25 @@
+T1	Argument 0 41	前２軸の大型トラックにおいて、パワーステアリングパイプと泥除けカバーの隙間が少ない
+T2	Connective 47 51	そのため
+T3	Argument 77 99	パワーステアリングパイプが泥除けカバーと干渉
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 104 105	、
+T5	Argument 105 120	パワーステアリングオイルが漏れ
+R3	REASON Arg1:T4 Arg2:T12	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 68 74	走行中の振動
+T7	Connective 74 77	により
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T3	
+T8	Connective 120 121	て
+T9	Argument 121 127	操舵力が増大
+R7	REASON Arg1:T8 Arg2:T5	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 52 66	そのままの状態で使用を続ける
+T11	Connective 66 67	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	
+T12	Argument 101 103	損傷
+T13	Connective 100 101	て
+R11	REASON Arg1:T13 Arg2:T3	
+R12	RESULT Arg1:T13 Arg2:T12	

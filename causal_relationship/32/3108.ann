@@ -1,0 +1,19 @@
+T1	Argument 0 30	エンジンのクランク角センサにおいて、内部コイルの耐久性が不足
+T2	Connective 34 36	ため
+T4	Connective 71 72	と
+T5	Argument 73 91	クランク角センサに過大な振動が加わり
+T6	Connective 107 111	そのため
+T7	Argument 112 125	走行中にエンジンが停止する
+R1	RESULT Arg1:T6 Arg2:T7	
+R3	RESULT Arg1:T4 Arg2:T5	
+R5	RESULT Arg1:T2 Arg2:T13	
+R6	REASON Arg1:T2 Arg2:T1	
+T8	Argument 131 142	エンジンが始動できなく
+R7	RESULT Arg1:T6 Arg2:T8	
+T9	Argument 37 71	低速ギア使用による全開加速走行など、エンジン回転数が高い運転を繰返す
+R12	CONDITION Arg1:T4 Arg2:T9	
+T13	Argument 91 99	当該コイルが断線
+T14	Connective 90 91	り
+R4	REASON Arg1:T14 Arg2:T5	
+R13	RESULT Arg1:T14 Arg2:T13	
+R14	REASON Arg1:T6 Arg2:T13	

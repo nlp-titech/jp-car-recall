@@ -1,0 +1,41 @@
+T1	Argument 0 30	エンジンに備えられている、オイルクーラーホースの材質が不適切
+T2	Connective 31 33	ため
+T3	Argument 34 56	使用過程でエンジンオイル内に蓄積する酸及び熱
+R1	REASON Arg1:T2 Arg2:T1	
+T4	Argument 62 71	ホースが硬化、劣化
+R2	RESULT Arg1:T2 Arg2:T4	
+T5	Connective 59 62	により
+T6	Connective 72 73	、
+T7	Argument 73 86	ホース内面に微細亀裂が発生
+R6	RESULT Arg1:T6 Arg2:T7	
+R3	REASON Arg1:T6 Arg2:T4	
+R4	REASON Arg1:T5 Arg2:T3	
+R5	RESULT Arg1:T5 Arg2:T4	
+T8	Connective 94 98	そのため
+T9	Argument 115 125	ホースの内圧及び振動
+R7	REASON Arg1:T8 Arg2:T7	
+T10	Connective 135 136	し
+T11	Argument 152 158	オイルが漏れ
+T12	Connective 158 159	、
+R11	REASON Arg1:T12 Arg2:T11	
+T13	Argument 164 171	エンジンが破損
+R12	RESULT Arg1:T12 Arg2:T13	
+T14	Connective 125 128	により
+T15	Argument 128 135	微細亀裂が進行
+R8	RESULT Arg1:T8 Arg2:T15	
+R9	REASON Arg1:T14 Arg2:T9	
+R13	RESULT Arg1:T14 Arg2:T15	
+T16	Argument 99 113	そのままの状態で使用を続ける
+T17	Connective 113 114	と
+R14	CONDITION Arg1:T17 Arg2:T16	
+R15	RESULT Arg1:T17 Arg2:T15	
+T18	Argument 159 161	最悪
+T19	Connective 162 164	場合
+R16	CONDITION Arg1:T19 Arg2:T18	
+R17	RESULT Arg1:T19 Arg2:T13	
+T27	Argument 137 145	ホース外面に貫通
+T28	Connective 149 152	により
+R19	RESULT Arg1:T10 Arg2:T27	
+R10	REASON Arg1:T28 Arg2:T27	
+R20	RESULT Arg1:T28 Arg2:T11	
+R21	REASON Arg1:T10 Arg2:T15	

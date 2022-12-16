@@ -1,0 +1,32 @@
+T1	Argument 33 60	アイドラプーリー（ベルトの張力調整用滑車）の強度が不足
+T2	Connective 64 66	ため
+T3	Argument 83 92	当該プーリーが破損
+T4	Connective 93 94	、
+T5	Argument 94 110	冷却水ポンプ等の駆動ベルトが滑り
+T6	Connective 110 111	、
+T7	Argument 117 128	冷却水ポンプが作動せず
+T8	Connective 127 128	ず
+T9	Argument 128 138	オーバーヒートに至る
+T10	Argument 149 165	パワーステアリングの機能が損なわ
+T11	Connective 166 167	、
+T12	Argument 167 176	ハンドルが重くなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	RESULT Arg1:T6 Arg2:T10	
+R10	REASON Arg1:T11 Arg2:T10	
+R11	RESULT Arg1:T11 Arg2:T12	
+T13	Argument 111 113	最悪
+T14	Connective 114 116	場合
+R12	CONDITION Arg1:T14 Arg2:T13	
+R13	RESULT Arg1:T14 Arg2:T7	
+T15	Argument 67 81	そのままの状態で使用を続ける
+T16	Connective 81 82	と
+R14	CONDITION Arg1:T16 Arg2:T15	
+R15	RESULT Arg1:T16 Arg2:T3	
+R16	RESULT Arg1:T14 Arg2:T10	

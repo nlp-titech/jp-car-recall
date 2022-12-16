@@ -1,0 +1,29 @@
+T1	Argument 0 17	燃料タンクのキャップの材質が不適切
+T2	Connective 18 20	ため
+T3	Argument 21 35	当該キャップが燃料により膨潤
+T4	Connective 36 37	、
+T5	Argument 37 55	燃料タンクとキャップの間に隙間が生じ
+T6	Connective 55 56	、
+T7	Argument 56 62	気密性が劣る
+T8	Connective 68 72	そのため
+T9	Argument 85 90	燃料が漏れ
+T10	Connective 90 91	て
+T11	Argument 98 103	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 73 83	そのまま使用を続ける
+T13	Connective 83 84	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T9	
+T14	Argument 92 94	最悪
+T15	Connective 95 97	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T11	

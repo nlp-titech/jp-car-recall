@@ -1,0 +1,21 @@
+T1	Argument 16 30	ブレーキロッドの形状が不適切
+T2	Connective 31 33	ため
+T3	Argument 34 72	当該ロッドとクラッチハウジングケース及びパワーステアリング配管との隙間が狭い
+T4	Connective 78 82	そのため
+T5	Argument 83 98	ブレーキペダルの遊び調整を行う
+T6	Connective 98 99	と
+T7	Argument 100 110	隙間がさらに狭くなり
+T8	Connective 110 111	、
+T9	Argument 111 121	制動装置を作動させる
+T10	Connective 121 122	と
+T11	Argument 123 159	ブレーキロッドとクラッチハウジングケース及びパワーステアリング配管が接触
+R1	RESULT Arg1:T10 Arg2:T11	
+R2	CONDITION Arg1:T10 Arg2:T9	
+R3	RESULT Arg1:T8 Arg2:T11	
+R4	REASON Arg1:T8 Arg2:T7	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	CONDITION Arg1:T6 Arg2:T5	
+R7	RESULT Arg1:T4 Arg2:T7	
+R8	REASON Arg1:T4 Arg2:T3	
+R9	REASON Arg1:T2 Arg2:T1	
+R10	RESULT Arg1:T2 Arg2:T3	

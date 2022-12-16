@@ -1,0 +1,17 @@
+T1	Argument 12 46	ワイパーの作動を制御する車両マスター制御ユニットのプログラムが不適切
+T2	Connective 47 49	ため
+T3	Argument 68 86	ワイパーの制御がフェイルセーフになる
+T4	Connective 92 96	そのため
+T5	Argument 97 108	ワイパーが一定時間停止
+T6	Connective 109 110	、
+T7	Argument 110 129	必要な視野を確保することができなくなる
+R1	REASON Arg1:T6 Arg2:T5	
+R2	RESULT Arg1:T6 Arg2:T7	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T2 Arg2:T1	
+R6	RESULT Arg1:T2 Arg2:T3	
+T8	Argument 50 66	ワイパー作動中に特定の操作を行う
+T9	Connective 66 67	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T3	

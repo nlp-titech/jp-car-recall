@@ -1,0 +1,5 @@
+T1	Argument 0 12	前面ガラスに遮光板を貼付
+T2	Connective 14 16	ため
+T3	Argument 17 36	道路運送車両の保安基準に適合していない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
