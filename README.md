@@ -1,21 +1,23 @@
 # Japanese Car Recall Corpus
-<<<<<<< HEAD
+
 [![en](https://img.shields.io/badge/lang-en-red)](https://github.com/nlp-titech/jp-car-recall#readme)
 [![jp](https://img.shields.io/badge/lang-jp-blue)](https://github.com/nlp-titech/jp-car-recall/blob/main/README.jp.md)
-
-=======
->>>>>>> main
 
 Japanese Car Recall Corpus is car recall report text data annotated with types of annotation: 1) car parts and 2) causality. This is the first corpus annotating both these two information on the car recall text. As a malfunction of a vehicle is related to corresponding parts, we annotate both information to explore how the domain knowledge of vehicle parts can help causality extraction.
 
 
-## Two types of annoation
+## Data and two types of annoation 
+
+### Data
+We collect recall text data from [MILT site](https://www.mlit.go.jp/jidosha/carinf/rcl/index.html).
 
 ### Car part annotation
+
 ![alt text](images/part_ann_example.jpg)
 For car part annoation, we annoate vehicle parts as entities and the relations between parts as relations.
 
 ### Causality annotation
+
 ![alt text](images/causal_ann_example.jpg)
 
 For car part annoation, we annoate malfunctions and their causes.
