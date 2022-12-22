@@ -1,4 +1,6 @@
 # Japanese Car Recall Corpus
+[![en](https://img.shields.io/badge/lang-en-red)](https://github.com/nlp-titech/jp-car-recall#readme)
+[![jp](https://img.shields.io/badge/lang-jp-blue)](https://github.com/nlp-titech/jp-car-recall/blob/main/README.jp.md)
 
 自動車リコールコーパスは、自動車リコール報告書のテキストデータにアノテーションを付与したものである。1)車の部品、2)因果関係。このコーパスは、車のリコール報告テキストにこの2つの情報を両方アノテーションした初めてのコーパスである。車の故障は部品と関連しているため、部品に関する知識が因果関係の抽出にどのように役立つかを調べるために、両方の情報をアノテーションしています。
 
