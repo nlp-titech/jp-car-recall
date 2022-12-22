@@ -6,8 +6,6 @@
 自動車リコールコーパスは、自動車リコール報告書のテキストデータにアノテーションを付与したものである。1)車の部品、2)因果関係。このコーパスは、車のリコール報告テキストにこの2つの情報を両方アノテーションした初めてのコーパスである。車の故障は部品と関連しているため、部品に関する知識が因果関係の抽出にどのように役立つかを調べるために、両方の情報をアノテーションしている。
 
 ## データと2種類のアノテーション
---- 
-
 
 [国土交通省のサイト](https://www.mlit.go.jp/jidosha/carinf/rcl/index.html)からリコールテキストデータを収集した。
 
@@ -23,7 +21,6 @@
 因果関係アノテーションでは、不具合とその原因をアノテーションしている。
 
 ## データフォーマット
----
 
 データには[brat](https://brat.nlplab.org/)でアノテーションをつける。アノテーション文書はfoo.txtファイルとfoo.annファイルから構成される。以下は `foo.txt` と `foo.ann` の例である。
 
@@ -50,7 +47,6 @@ R6	RESULT Arg1:T7 Arg2:T3
 
 
 ## コーパスの説明と引用
----
 
 コーパスの詳細については、このレポにある `paper.pdf` を参照してください。
 このコーパスをあなたのプロジェクトで使用する場合は、以下のように引用してください。
@@ -70,7 +66,7 @@ Or
 }
 ```
 
-## ライセンス [![CC BY 4.0](http://mirrors.creativecommons.org/presskit/buttons/80x15/svg/by.svg)](http://creativecommons.org/licenses/by/4.0/)
 ---
+## ライセンス [![CC BY 4.0](http://mirrors.creativecommons.org/presskit/buttons/80x15/svg/by.svg)](http://creativecommons.org/licenses/by/4.0/)
 
 このレポジトリのすべてのコンテンツが [Creative Commons - Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/) でライセンスしている.
