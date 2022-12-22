@@ -1,4 +1,5 @@
-# Japanese Car Recall Corpus
+# 自動車リコールコーパス
+
 [![en](https://img.shields.io/badge/lang-en-red)](https://github.com/nlp-titech/jp-car-recall#readme)
 [![jp](https://img.shields.io/badge/lang-jp-blue)](https://github.com/nlp-titech/jp-car-recall/blob/main/README.jp.md)
 
@@ -6,7 +7,7 @@
 
 ## データと2種類のアノテーション
 
-[MILTサイト](https://www.mlit.go.jp/jidosha/carinf/rcl/index.html)からリコールテキストデータを収集します。
+[国土交通省のサイト](https://www.mlit.go.jp/jidosha/carinf/rcl/index.html)からリコールテキストデータを収集します。
 
 ### 自動車部品アノテーション
 
