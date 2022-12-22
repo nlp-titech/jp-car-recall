@@ -20,7 +20,7 @@ For car part annoation, we annoate vehicle parts as entities and the relations b
 
 ![alt text](images/causal_ann_example.jpg)
 
-For car part annoation, we annoate malfunctions and their causes.
+For causality annoation, we annoate malfunctions and their causes.
 
 ## Data Format
 
