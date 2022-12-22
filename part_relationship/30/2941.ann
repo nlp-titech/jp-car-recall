@@ -1,0 +1,11 @@
+T1	Parts 8 12	ステップ
+T2	Parts 21 27	ダブルキャブ
+T3	Parts 32 36	トラック
+T4	Parts 41 46	吸気ダクト
+T7	Parts 106 110	エンジン
+T8	Parts 125 129	エンジン
+R2	Coreference Arg1:T8 Arg2:T7	
+R3	Part-Whole Arg1:T1 Arg2:T2	
+R4	Part-Whole Arg1:T2 Arg2:T3	
+R5	Part-Whole Arg1:T4 Arg2:T3	
+R7	Part-Whole Arg1:T7 Arg2:T3	

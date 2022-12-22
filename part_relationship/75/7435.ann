@@ -1,0 +1,19 @@
+T1	Parts 0 14	パノラマスライディングルーフ
+T2	Parts 15 19	室内照明
+T3	Parts 24 28	電気回路
+T4	Parts 29 33	ヒューズ
+T5	Parts 44 54	スライディングルーフ
+T6	Parts 76 80	室内照明
+T7	Parts 81 88	モジュール回路
+T8	Parts 95 99	電気回路
+T9	Parts 131 133	配線
+R1	Coreference Arg1:T2 Arg2:T6	
+R2	Coreference Arg1:T3 Arg2:T8	
+R3	Contact Arg1:T1 Arg2:T2	
+R4	Coreference Arg1:T1 Arg2:T5	
+R5	Connect Arg1:T2 Arg2:T3	
+R6	Connect Arg1:T3 Arg2:T4	
+R7	Connect Arg1:T6 Arg2:T7	
+R8	Oneway-Coreference Arg1:T9 Arg2:T8	
+R9	Connect Arg1:T7 Arg2:T8	
+R10	Oneway-Coreference Arg1:T9 Arg2:T7	

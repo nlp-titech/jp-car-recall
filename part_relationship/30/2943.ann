@@ -1,0 +1,9 @@
+T1	Parts 1 9	ブレーキ倍力装置
+T2	Parts 17 28	ブレーキ負圧電動ポンプ
+T3	Parts 36 39	ロータ
+T4	Parts 87 90	ロータ
+R1	Coreference Arg1:T4 Arg2:T3	
+T7	Parts 97 102	負圧ポンプ
+R3	Coreference Arg1:T7 Arg2:T2	
+R4	Connect Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T3 Arg2:T2	

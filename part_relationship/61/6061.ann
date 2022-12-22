@@ -1,0 +1,11 @@
+T1	Parts 0 14	イグニッションキーシリンダー
+T2	Parts 17 26	イグニッションキー
+T3	Parts 34 43	イグニッションキー
+T4	Parts 89 95	駐車ブレーキ
+T5	Parts 84 86	ギヤ
+T6	Parts 112 114	車両
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Contact Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T5 Arg2:T6	
+R4	Part-Whole Arg1:T4 Arg2:T6	
+R5	Part-Whole Arg1:T1 Arg2:T6	

@@ -1,0 +1,15 @@
+T1	Parts 0 10	センターピラートリム
+T2	Parts 13 21	インシュレーター
+T3	Parts 34 42	インシュレーター
+T4	Parts 43 57	前席シートベルトテンショナー
+T5	Parts 79 91	シートベルトテンショナー
+T6	Parts 98 104	ガス発生装置
+T7	Parts 118 126	インシュレーター
+T8	Parts 137 139	車両
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Coreference Arg1:T4 Arg2:T5	
+R3	Coreference Arg1:T3 Arg2:T7	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T1 Arg2:T8	
+R6	Part-Whole Arg1:T5 Arg2:T8	
+R7	Part-Whole Arg1:T6 Arg2:T8	

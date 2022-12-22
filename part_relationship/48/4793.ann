@@ -1,0 +1,10 @@
+T1	Parts 26 40	ゴムホース（ブリーザホース）
+T3	Parts 0 5	燃料タンク
+T4	Parts 14 17	タンク
+T5	Parts 73 76	ホース
+T6	Parts 109 112	排気管
+T8	Parts 97 99	燃料
+R1	Coreference Arg1:T3 Arg2:T4	
+R2	Coreference Arg1:T1 Arg2:T5	
+R3	Part-Whole Arg1:T8 Arg2:T4	
+R4	Contact Arg1:T4 Arg2:T1	

@@ -1,0 +1,27 @@
+T16	Parts 35 49	アイドルプーリ取付ブラケット
+T17	Parts 62 65	ベルト
+T18	Parts 85 90	ブラケット
+T19	Parts 144 154	ブラケット取付ボルト
+T20	Parts 69 75	コンプレッサ
+T21	Parts 91 105	冷凍機コンプレッサブラケット
+T22	Parts 170 175	ブラケット
+T23	Parts 165 168	プーリ
+T1	Parts 0 3	冷凍車
+T2	Parts 8 10	車両
+T3	Parts 11 14	原動機
+T4	Parts 19 33	冷凍機コンプレッサ駆動ベルト
+R1	Coreference Arg1:T18 Arg2:T16	
+R2	Coreference Arg1:T22 Arg2:T18	
+R3	Coreference Arg1:T17 Arg2:T4	
+R4	Contact Arg1:T21 Arg2:T18	
+R5	Contact Arg1:T23 Arg2:T16	
+R6	Contact Arg1:T23 Arg2:T4	
+R7	Contact Arg1:T19 Arg2:T21	
+R8	Contact Arg1:T19 Arg2:T18	
+R9	Part-Whole Arg1:T4 Arg2:T1	
+R10	Part-Whole Arg1:T20 Arg2:T1	
+R12	Contact Arg1:T4 Arg2:T3	
+R13	Part-Whole Arg1:T3 Arg2:T2	
+R14	Coreference Arg1:T1 Arg2:T2	
+R15	Contact Arg1:T16 Arg2:T4	
+R16	Part-Whole Arg1:T4 Arg2:T20	

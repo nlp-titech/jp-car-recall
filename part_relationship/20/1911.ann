@@ -1,0 +1,11 @@
+T13	Parts 18 23	可変ノズル
+T14	Parts 109 112	原動機
+T15	Parts 31 36	タービン翼
+T16	Parts 86 91	タービン翼
+T1	Parts 0 3	原動機
+R2	Coreference Arg1:T16 Arg2:T15	
+R3	Coreference Arg1:T14 Arg2:T1	
+T2	Parts 4 13	可変ノズル付過給機
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T13 Arg2:T2	
+R5	Part-Whole Arg1:T15 Arg2:T2	

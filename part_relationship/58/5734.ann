@@ -1,0 +1,13 @@
+T1	Parts 23 29	シールリング
+T2	Parts 48 54	シールリング
+T3	Parts 84 90	シールリング
+T4	Parts 0 6	燃料フィルタ
+T5	Parts 98 104	燃料フィルタ
+T7	Parts 30 33	グリス
+T8	Parts 106 108	燃料
+R1	Coreference Arg1:T4 Arg2:T5	
+R2	Coreference Arg1:T1 Arg2:T2	
+R3	Contact Arg1:T5 Arg2:T8	
+R4	Part-Whole Arg1:T1 Arg2:T4	
+R5	Contact Arg1:T1 Arg2:T7	
+R6	Coreference Arg1:T2 Arg2:T3	

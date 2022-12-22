@@ -1,0 +1,17 @@
+T1	Parts 11 23	ステアリングギヤボックス
+T2	Parts 141 153	ステアリングギヤボックス
+T3	Parts 0 10	ステアリングシャフト
+T4	Parts 26 44	継手部品（ステアリングカップリング）
+T6	Parts 134 138	ハンドル
+T10	Parts 54 57	ナット
+R1	Contact Arg1:T1 Arg2:T4	
+R2	Contact Arg1:T3 Arg2:T4	
+R6	Connect Arg1:T6 Arg2:T2	
+R7	Coreference Arg1:T1 Arg2:T2	
+R3	Connect Arg1:T1 Arg2:T3	
+T5	Parts 49 53	継手部品
+T7	Parts 91 95	継手部品
+R5	Coreference Arg1:T4 Arg2:T5	
+R8	Coreference Arg1:T5 Arg2:T7	
+R4	Contact Arg1:T5 Arg2:T10	
+R9	Contact Arg1:T3 Arg2:T6	

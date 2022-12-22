@@ -1,0 +1,38 @@
+T1	Parts 0 4	トラック
+T2	Parts 5 9	インパネ
+T3	Parts 19 22	ＡＢＳ
+T4	Parts 23 31	機械式自動変速機
+T5	Parts 32 34	ＡＴ
+T7	Parts 62 65	ヒータ
+T8	Parts 71 79	冷却液（不凍液）
+T9	Parts 98 102	冷却回路
+T10	Parts 113 118	ヒータコア
+T11	Parts 133 139	制御ユニット
+T12	Parts 126 129	冷却液
+R1	Coreference Arg1:T8 Arg2:T12	
+T13	Parts 167 173	制御ユニット
+R3	Coreference Arg1:T11 Arg2:T13	
+T14	Parts 184 188	制御回路
+T15	Parts 194 197	警告灯
+T16	Parts 37 47	四輪駆動制御ユニット
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R4	Oneway-Coreference Arg1:T11 Arg2:T16	
+R5	Part-Whole Arg1:T3 Arg2:T1	
+R6	Part-Whole Arg1:T4 Arg2:T1	
+R7	Part-Whole Arg1:T5 Arg2:T1	
+R9	Part-Whole Arg1:T16 Arg2:T1	
+R14	Part-Whole Arg1:T7 Arg2:T1	
+R15	Contact Arg1:T8 Arg2:T9	
+R16	Part-Whole Arg1:T9 Arg2:T7	
+R17	Part-Whole Arg1:T10 Arg2:T7	
+R18	Part-Whole Arg1:T14 Arg2:T13	
+T17	Parts 176 179	冷却液
+R19	Coreference Arg1:T12 Arg2:T17	
+R20	Connect Arg1:T13 Arg2:T15	
+R21	Part-Whole Arg1:T15 Arg2:T1	
+#1	AnnotatorNotes T3	「ＡＢＳ制御ユニット」と考える
+#2	AnnotatorNotes T4	「機械式自動変速機制御ユニット」と考える
+R8	Oneway-Coreference Arg1:T11 Arg2:T3	
+R10	Oneway-Coreference Arg1:T11 Arg2:T4	
+R11	Oneway-Coreference Arg1:T11 Arg2:T5	
+#3	AnnotatorNotes T5	AT制御ユニット

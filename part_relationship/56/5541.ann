@@ -1,0 +1,17 @@
+T1	Parts 29 35	ホースバンド
+T3	Parts 0 8	フューエルタンク
+T4	Parts 87 95	フューエルタンク
+T5	Parts 12 18	ドレンホース
+T6	Parts 20 28	ブリーザーホース
+T7	Parts 73 76	ホース
+T8	Parts 100 106	ドレンホース
+T9	Parts 108 110	燃料
+R1	Coreference Arg1:T8 Arg2:T5	
+R2	Oneway-Coreference Arg1:T7 Arg2:T6	
+R3	Oneway-Coreference Arg1:T7 Arg2:T5	
+R4	Contact Arg1:T1 Arg2:T6	
+R5	Contact Arg1:T1 Arg2:T5	
+R6	Part-Whole Arg1:T5 Arg2:T3	
+R7	Part-Whole Arg1:T6 Arg2:T3	
+R8	Coreference Arg1:T4 Arg2:T3	
+R9	Part-Whole Arg1:T9 Arg2:T4	

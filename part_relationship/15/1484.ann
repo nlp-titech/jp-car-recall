@@ -1,0 +1,15 @@
+T8	Parts 26 30	ハンドル
+T9	Parts 71 75	ハンドル
+T10	Parts 52 60	方向指示器レバー
+T11	Parts 82 85	レバー
+T13	Parts 9 21	方向指示器キャンセルピン
+T12	Parts 90 95	方向指示器
+T1	Parts 0 4	操縦装置
+R1	Coreference Arg1:T9 Arg2:T8	
+R2	Coreference Arg1:T11 Arg2:T10	
+R3	Part-Whole Arg1:T13 Arg2:T1	
+R4	Contact Arg1:T8 Arg2:T13	
+R7	Part-Whole Arg1:T8 Arg2:T1	
+R8	Connect Arg1:T13 Arg2:T10	
+R5	Connect Arg1:T11 Arg2:T12	
+R6	Part-Whole Arg1:T10 Arg2:T1	

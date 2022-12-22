@@ -1,0 +1,11 @@
+T1	Parts 22 34	ステアリングギアボックス
+T2	Parts 11 21	ステアリングシャフト
+T3	Parts 0 6	かじ取り装置
+T4	Parts 42 45	継ぎ手
+T5	Parts 85 88	継ぎ手
+R1	Coreference Arg1:T4 Arg2:T5	
+R2	Part-Whole Arg1:T2 Arg2:T3	
+R3	Part-Whole Arg1:T1 Arg2:T3	
+R4	Contact Arg1:T2 Arg2:T4	
+R5	Contact Arg1:T1 Arg2:T4	
+R6	Connect Arg1:T2 Arg2:T1	

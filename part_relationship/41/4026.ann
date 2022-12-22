@@ -1,0 +1,13 @@
+T1	Parts 8 17	ディーゼルエンジン
+T2	Parts 0 7	フォークリフト
+T3	Parts 30 35	ブラケット
+T4	Parts 46 50	エンジン
+T6	Parts 22 25	排気管
+T7	Parts 54 57	排気管
+T8	Parts 104 107	排気管
+R1	Coreference Arg1:T6 Arg2:T7	
+R2	Coreference Arg1:T1 Arg2:T4	
+R3	Coreference Arg1:T7 Arg2:T8	
+R4	Part-Whole Arg1:T1 Arg2:T2	
+R5	Contact Arg1:T6 Arg2:T1	
+R6	Contact Arg1:T6 Arg2:T3	

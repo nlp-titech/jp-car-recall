@@ -1,0 +1,7 @@
+T15	Parts 15 24	フレキシブルパイプ
+T1	Parts 0 6	大型トラック
+T3	Parts 11 14	排気管
+T4	Parts 44 53	フレキシブルパイプ
+R1	Coreference Arg1:T15 Arg2:T4	
+R3	Part-Whole Arg1:T3 Arg2:T1	
+R4	Part-Whole Arg1:T15 Arg2:T3	

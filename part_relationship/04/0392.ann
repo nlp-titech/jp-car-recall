@@ -1,0 +1,11 @@
+T10	Parts 19 34	ギヤシフトコントロールケーブル
+T11	Parts 48 56	インナーケーブル
+T12	Parts 94 98	ケーブル
+T14	Parts 119 123	ケーブル
+T2	Parts 8 14	動力伝達装置
+R1	Coreference Arg1:T11 Arg2:T12	
+R2	Coreference Arg1:T14 Arg2:T12	
+T1	Parts 0 7	手動変速機付車
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T10 Arg2:T2	
+R5	Part-Whole Arg1:T11 Arg2:T10	

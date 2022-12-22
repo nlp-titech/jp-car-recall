@@ -1,0 +1,8 @@
+T1	Parts 19 44	リアホイールアーチライナー（ホイールハウスカバー）
+T2	Parts 54 71	リアブレーキパッド装着位置センサー
+T3	Parts 72 76	ケーブル
+T4	Parts 92 96	ケーブル
+T5	Parts 100 112	ブレーキワーニングランプ
+R1	Part-Whole Arg1:T3 Arg2:T2	
+R2	Coreference Arg1:T4 Arg2:T3	
+R3	Connect Arg1:T5 Arg2:T2	

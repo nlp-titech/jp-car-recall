@@ -1,0 +1,13 @@
+T7	Parts 25 29	電気装置
+T8	Parts 30 35	制動灯回路
+T9	Parts 36 40	ヒューズ
+T10	Parts 73 77	ヒューズ
+T11	Parts 82 85	制動灯
+T1	Parts 0 13	補助制動灯（１８Ｗ×３個）
+R1	Coreference Arg1:T9 Arg2:T10	
+R2	Part-Whole Arg1:T7 Arg2:T2	
+R3	Part-Whole Arg1:T8 Arg2:T7	
+R4	Part-Whole Arg1:T9 Arg2:T8	
+R5	Coreference Arg1:T1 Arg2:T11	
+T2	Parts 18 20	車両
+R6	Part-Whole Arg1:T1 Arg2:T2	

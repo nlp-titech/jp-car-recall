@@ -1,0 +1,9 @@
+T12	Parts 70 76	スライドドア
+T13	Parts 48 53	ドアロック
+T14	Parts 3 12	スライドドアロック
+T15	Parts 106 112	スライドドア
+T16	Parts 82 87	ドアロック
+R1	Coreference Arg1:T13 Arg2:T14	
+R2	Coreference Arg1:T16 Arg2:T13	
+R3	Coreference Arg1:T15 Arg2:T12	
+R4	Part-Whole Arg1:T13 Arg2:T12	

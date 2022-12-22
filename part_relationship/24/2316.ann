@@ -1,0 +1,9 @@
+T10	Parts 79 86	前車軸用推進軸
+T11	Parts 19 23	接続継手
+T12	Parts 38 40	継手
+T1	Parts 0 6	動力伝達装置
+T2	Parts 7 14	前車軸用推進軸
+R1	Coreference Arg1:T12 Arg2:T11	
+R2	Coreference Arg1:T10 Arg2:T2	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T11 Arg2:T2	

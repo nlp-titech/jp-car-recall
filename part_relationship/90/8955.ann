@@ -1,0 +1,7 @@
+T1	Parts 11 18	アルミホイール
+T2	Parts 52 59	ホイールナット
+T3	Parts 86 88	車輪
+T4	Parts 23 27	ホイール
+R1	Coreference Arg1:T1 Arg2:T4	
+R2	Contact Arg1:T4 Arg2:T2	
+R3	Part-Whole Arg1:T1 Arg2:T3	

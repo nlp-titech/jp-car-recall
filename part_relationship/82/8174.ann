@@ -1,0 +1,15 @@
+T1	Parts 0 5	燃料ポンプ
+T2	Parts 6 15	インタンクユニット
+T3	Parts 20 27	樹脂製インペラ
+T4	Parts 28 31	カバー
+T5	Parts 48 50	燃料
+T6	Parts 59 66	樹脂製インペラ
+T7	Parts 82 85	カバー
+T8	Parts 90 99	燃料ポンプモーター
+R1	Part-Whole Arg1:T3 Arg2:T2	
+R2	Part-Whole Arg1:T4 Arg2:T2	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T5 Arg2:T1	
+R5	Coreference Arg1:T6 Arg2:T3	
+R6	Coreference Arg1:T7 Arg2:T4	
+R7	Part-Whole Arg1:T8 Arg2:T2	

@@ -1,0 +1,17 @@
+T13	Parts 102 106	ブレーキ
+T15	Parts 41 56	ブレーキハイドロリックユニット
+T16	Parts 79 86	ブレーキペダル
+T2	Parts 18 25	ブレーキライン
+T1	Parts 0 5	ブレーキ液
+T4	Parts 124 141	ＡＳＣ（横滑り防止システム）付き車
+R2	Part-Whole Arg1:T16 Arg2:T13	
+R3	Part-Whole Arg1:T1 Arg2:T13	
+R4	Contact Arg1:T2 Arg2:T1	
+R5	Connect Arg1:T15 Arg2:T2	
+R6	Part-Whole Arg1:T2 Arg2:T13	
+R7	Part-Whole Arg1:T15 Arg2:T13	
+R8	Connect Arg1:T16 Arg2:T15	
+R9	Part-Whole Arg1:T13 Arg2:T4	
+T5	Parts 58 61	エアー
+T6	Parts 26 29	エアー
+R10	Coreference Arg1:T5 Arg2:T6	

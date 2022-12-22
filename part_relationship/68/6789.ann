@@ -1,0 +1,17 @@
+T1	Parts 72 84	リターダ取付けブラケット
+T2	Parts 103 108	ブラケット
+T3	Parts 38 47	オーバラン警報装置
+T4	Parts 0 6	補助制動装置
+T5	Parts 26 29	原動機
+T6	Parts 65 68	推進軸
+T7	Parts 9 17	リターダ取付け車
+T8	Parts 117 121	リターダ
+R1	Coreference Arg1:T4 Arg2:T8	
+R2	Part-Whole Arg1:T4 Arg2:T7	
+R3	Part-Whole Arg1:T5 Arg2:T7	
+R4	Part-Whole Arg1:T3 Arg2:T7	
+R5	Coreference Arg1:T1 Arg2:T2	
+R6	Part-Whole Arg1:T6 Arg2:T7	
+R7	Contact Arg1:T6 Arg2:T1	
+R8	Contact Arg1:T2 Arg2:T8	
+R9	Connect Arg1:T6 Arg2:T8	

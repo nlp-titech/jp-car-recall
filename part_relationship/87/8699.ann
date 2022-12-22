@@ -1,0 +1,12 @@
+T1	Parts 0 2	バス
+T2	Parts 3 9	乗降開閉機構
+T3	Parts 10 19	検知器（光電装置）
+T4	Parts 24 27	光電管
+T5	Parts 62 66	光電装置
+T6	Parts 75 76	扉
+R1	Coreference Arg1:T3 Arg2:T5	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T6 Arg2:T1	
+R4	Part-Whole Arg1:T3 Arg2:T2	
+R5	Connect Arg1:T5 Arg2:T6	
+R6	Part-Whole Arg1:T4 Arg2:T3	

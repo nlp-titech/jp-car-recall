@@ -1,0 +1,19 @@
+T13	Parts 114 120	駐車ブレーキ
+T14	Parts 96 102	駐車ブレーキ
+T15	Parts 85 92	バックプレート
+T16	Parts 28 34	取付けボルト
+T17	Parts 66 69	ボルト
+T18	Parts 130 137	ブレーキシュー
+T1	Parts 0 6	駐車ブレーキ
+T2	Parts 11 18	エアチャンバー
+T3	Parts 20 27	バックプレート
+R1	Coreference Arg1:T1 Arg2:T14	
+R2	Coreference Arg1:T14 Arg2:T13	
+R3	Coreference Arg1:T16 Arg2:T17	
+R4	Coreference Arg1:T3 Arg2:T15	
+R5	Part-Whole Arg1:T2 Arg2:T1	
+R6	Part-Whole Arg1:T3 Arg2:T1	
+R8	Contact Arg1:T2 Arg2:T3	
+R9	Part-Whole Arg1:T18 Arg2:T13	
+R7	Contact Arg1:T2 Arg2:T16	
+R10	Contact Arg1:T3 Arg2:T16	

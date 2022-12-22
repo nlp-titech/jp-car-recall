@@ -1,0 +1,5 @@
+T1	Parts 12 28	リアプロペラシャフトカップリング
+T2	Parts 103 113	リアプロペラシャフト
+T4	Parts 61 67	カップリング
+R1	Coreference Arg1:T1 Arg2:T4	
+R2	Part-Whole Arg1:T4 Arg2:T2	

@@ -1,0 +1,9 @@
+T2	Parts 9 16	ブレーキレバー
+T3	Parts 42 49	ブレーキレバー
+T4	Parts 72 78	前輪ブレーキ
+T5	Parts 50 62	マスターシリンダピストン
+T8	Parts 94 96	前輪
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Connect Arg1:T5 Arg2:T4	
+R3	Connect Arg1:T4 Arg2:T8	
+R4	Connect Arg1:T3 Arg2:T4	

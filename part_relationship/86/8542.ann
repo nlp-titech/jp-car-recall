@@ -1,0 +1,15 @@
+T1	Parts 0 8	クランクシャフト
+T2	Parts 9 15	発電機ロータ
+T3	Parts 34 42	クランクシャフト
+T4	Parts 43 49	発電機ロータ
+T5	Parts 71 75	エンジン
+T6	Parts 79 87	クランクシャフト
+T7	Parts 88 94	発電機ロータ
+T8	Parts 118 126	クランクシャフト
+R1	Contact Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T3 Arg2:T1	
+R3	Coreference Arg1:T4 Arg2:T2	
+R4	Coreference Arg1:T6 Arg2:T3	
+R5	Coreference Arg1:T7 Arg2:T4	
+R6	Coreference Arg1:T8 Arg2:T6	
+R7	Connect Arg1:T7 Arg2:T5	

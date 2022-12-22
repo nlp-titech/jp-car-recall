@@ -1,0 +1,15 @@
+T9	Parts 7 11	ソケット
+T11	Parts 36 38	電球
+T12	Parts 39 43	ソケット
+T14	Parts 105 108	前照灯
+T1	Parts 0 3	前照灯
+T2	Parts 4 6	電球
+T3	Parts 22 27	ゴムカバー
+R1	Coreference Arg1:T11 Arg2:T2	
+R2	Coreference Arg1:T12 Arg2:T9	
+T6	Parts 109 117	すれ違い用ビーム
+R4	Coreference Arg1:T14 Arg2:T1	
+R5	Part-Whole Arg1:T2 Arg2:T1	
+R7	Contact Arg1:T9 Arg2:T3	
+R10	Part-Whole Arg1:T6 Arg2:T14	
+R6	Contact Arg1:T9 Arg2:T2	

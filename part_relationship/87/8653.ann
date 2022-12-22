@@ -1,0 +1,11 @@
+T1	Parts 0 14	エンジンコントロールユニット
+T3	Parts 73 78	バッテリー
+T4	Parts 42 49	オルタネーター
+T5	Parts 87 95	バッテリー警告灯
+T6	Parts 106 112	ＡＢＳ警告灯
+T7	Parts 117 120	ＡＢＳ
+R1	Connect Arg1:T1 Arg2:T4	
+R2	Connect Arg1:T4 Arg2:T3	
+R3	Connect Arg1:T1 Arg2:T5	
+R4	Connect Arg1:T1 Arg2:T6	
+R5	Connect Arg1:T1 Arg2:T7	

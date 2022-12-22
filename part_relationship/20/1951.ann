@@ -1,0 +1,8 @@
+T8	Parts 0 5	燃料タンク
+T9	Parts 30 37	タンクキャップ
+T2	Parts 71 73	車体
+T4	Parts 88 90	燃料
+R5	Part-Whole Arg1:T8 Arg2:T2	
+R2	Part-Whole Arg1:T9 Arg2:T2	
+R3	Part-Whole Arg1:T4 Arg2:T8	
+R1	Contact Arg1:T9 Arg2:T8	

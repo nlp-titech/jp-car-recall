@@ -1,0 +1,13 @@
+T1	Parts 8 26	樹脂製燃料パイプ（供給側及び戻り側）
+T2	Parts 37 42	燃料パイプ
+T3	Parts 43 51	金属製燃料パイプ
+T4	Parts 0 3	原動機
+T8	Parts 96 98	燃料
+R1	Part-Whole Arg1:T1 Arg2:T4	
+R6	Contact Arg1:T8 Arg2:T2	
+R7	Contact Arg1:T8 Arg2:T3	
+R2	Coreference Arg1:T1 Arg2:T2	
+T5	Parts 27 29	継手
+T6	Parts 91 93	継手
+R3	Coreference Arg1:T5 Arg2:T6	
+R4	Contact Arg1:T1 Arg2:T5	

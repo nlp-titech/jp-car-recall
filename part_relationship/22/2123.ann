@@ -1,0 +1,14 @@
+T16	Parts 122 126	クラッチ
+T17	Parts 95 99	クラッチ
+T18	Parts 67 74	スナップリング
+T19	Parts 31 38	スナップリング
+T1	Parts 0 5	無段変速機
+T2	Parts 6 15	前進用クラッチ機構
+T3	Parts 20 24	クラッチ
+R1	Coreference Arg1:T18 Arg2:T19	
+R3	Coreference Arg1:T17 Arg2:T3	
+R4	Coreference Arg1:T16 Arg2:T17	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T3 Arg2:T2	
+R6	Part-Whole Arg1:T19 Arg2:T2	
+R7	Contact Arg1:T19 Arg2:T3	

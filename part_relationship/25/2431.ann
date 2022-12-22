@@ -1,0 +1,16 @@
+T14	Parts 31 35	Ｖロッド
+T15	Parts 36 40	ブッシュ
+T16	Parts 78 82	ブッシュ
+T17	Parts 116 120	Ｖロッド
+T1	Parts 0 15	空気ばね緩衝装置付大型トラック
+T2	Parts 20 23	後軸車
+R1	Coreference Arg1:T16 Arg2:T15	
+R2	Coreference Arg1:T17 Arg2:T14	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+T3	Parts 24 26	車枠
+R4	Connect Arg1:T2 Arg2:T3	
+R5	Contact Arg1:T2 Arg2:T14	
+R6	Contact Arg1:T3 Arg2:T14	
+R7	Part-Whole Arg1:T15 Arg2:T14	
+R8	Part-Whole Arg1:T3 Arg2:T1	
+R9	Part-Whole Arg1:T14 Arg2:T1	

@@ -1,0 +1,7 @@
+T12	Parts 0 6	リヤアクスル
+T13	Parts 24 29	ベアリング
+T14	Parts 72 77	ベアリング
+T1	Parts 7 12	ベアリング
+R1	Coreference Arg1:T13 Arg2:T1	
+R2	Coreference Arg1:T14 Arg2:T13	
+R3	Part-Whole Arg1:T1 Arg2:T12	

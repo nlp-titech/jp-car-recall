@@ -1,0 +1,13 @@
+T20	Parts 126 130	エンジン
+T22	Parts 53 57	ピストン
+T23	Parts 66 70	ピストン
+T24	Parts 116 120	ピストン
+T1	Parts 0 11	大型トラック用エンジン
+T2	Parts 16 30	ＤＰＤ（粒子状物質除去装置）
+T3	Parts 34 45	エンジン制御プログラム
+R1	Coreference Arg1:T22 Arg2:T23	
+R2	Coreference Arg1:T23 Arg2:T24	
+R3	Coreference Arg1:T1 Arg2:T20	
+R4	Connect Arg1:T1 Arg2:T3	
+R5	Part-Whole Arg1:T22 Arg2:T1	
+R6	Part-Whole Arg1:T2 Arg2:T1	

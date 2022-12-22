@@ -1,0 +1,15 @@
+T18	Parts 81 86	エアタンク
+T21	Parts 47 51	取付金具
+T22	Parts 32 36	取付金具
+T25	Parts 1 10	エアタンク取付金具
+T1	Parts 21 23	車両
+T2	Parts 94 99	エアパイプ
+T3	Parts 110 112	エア
+R1	Coreference Arg1:T25 Arg2:T22	
+R2	Coreference Arg1:T22 Arg2:T21	
+R3	Contact Arg1:T25 Arg2:T18	
+R4	Part-Whole Arg1:T25 Arg2:T1	
+R5	Contact Arg1:T2 Arg2:T18	
+R6	Contact Arg1:T3 Arg2:T2	
+R7	Part-Whole Arg1:T18 Arg2:T1	
+R8	Part-Whole Arg1:T2 Arg2:T1	

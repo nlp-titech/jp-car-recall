@@ -1,0 +1,3 @@
+T1	Parts 25 31	スライドドア
+T5	Parts 18 20	車両
+R2	Part-Whole Arg1:T1 Arg2:T5	

@@ -1,0 +1,15 @@
+T1	Parts 111 115	エンジン
+T2	Parts 0 4	ハンドル
+T3	Parts 97 101	ハンドル
+T4	Parts 13 17	モーター
+T5	Parts 28 32	モーター
+T6	Parts 84 88	モーター
+T7	Parts 35 38	コイル
+T8	Parts 76 79	コイル
+R1	Connect Arg1:T4 Arg2:T2	
+R2	Coreference Arg1:T4 Arg2:T5	
+R3	Part-Whole Arg1:T7 Arg2:T5	
+R4	Coreference Arg1:T7 Arg2:T8	
+R5	Coreference Arg1:T5 Arg2:T6	
+R6	Coreference Arg1:T2 Arg2:T3	
+R7	Connect Arg1:T3 Arg2:T1	

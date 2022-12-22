@@ -1,0 +1,13 @@
+T18	Parts 135 138	原動機
+T19	Parts 0 3	原動機
+T24	Parts 44 47	原動機
+T25	Parts 68 82	カムシャフトドライブチェーン
+T26	Parts 127 131	チェーン
+R1	Coreference Arg1:T24 Arg2:T19	
+T1	Parts 53 56	潤滑油
+R2	Coreference Arg1:T26 Arg2:T25	
+R3	Coreference Arg1:T18 Arg2:T24	
+T2	Parts 32 39	ブローバイガス
+R4	Part-Whole Arg1:T25 Arg2:T24	
+R5	Contact Arg1:T1 Arg2:T24	
+R6	Contact Arg1:T24 Arg2:T2	

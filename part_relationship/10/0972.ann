@@ -1,0 +1,14 @@
+T2	Parts 18 24	ロックナット
+T14	Parts 81 84	軸受け
+T3	Parts 0 2	車軸
+T5	Parts 54 58	グリース
+T6	Parts 36 45	前輪ハブ外側軸受け
+T1	Parts 7 16	前輪ハブ外側軸受け
+R1	Coreference Arg1:T1 Arg2:T6	
+R2	Coreference Arg1:T6 Arg2:T14	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+T4	Parts 47 51	前輪ハブ
+R7	Contact Arg1:T5 Arg2:T4	
+R3	Contact Arg1:T3 Arg2:T4	
+R5	Contact Arg1:T6 Arg2:T4	
+R6	Contact Arg1:T6 Arg2:T5	

@@ -1,0 +1,15 @@
+T14	Parts 127 142	クラッチダイヤフラムスプリング
+T15	Parts 25 40	クラッチダイヤフラムスプリング
+T16	Parts 63 70	クラッチペダル
+T17	Parts 80 95	クラッチダイヤフラムスプリング
+T1	Parts 0 8	クラッチディスク
+T2	Parts 9 16	フライホイール
+T3	Parts 147 151	クラッチ
+R1	Coreference Arg1:T14 Arg2:T17	
+R2	Coreference Arg1:T17 Arg2:T15	
+R3	Contact Arg1:T2 Arg2:T1	
+R4	Connect Arg1:T16 Arg2:T15	
+R5	Contact Arg1:T15 Arg2:T1	
+R6	Part-Whole Arg1:T1 Arg2:T3	
+R7	Part-Whole Arg1:T15 Arg2:T3	
+R8	Connect Arg1:T16 Arg2:T3	

@@ -1,0 +1,15 @@
+T1	Parts 13 19	車速センサー
+T2	Parts 34 38	ローター
+T4	Parts 80 84	ローター
+R1	Coreference Arg1:T2 Arg2:T4	
+T5	Parts 101 105	ローター
+T6	Parts 136 140	ローター
+T7	Parts 147 150	速度計
+T8	Parts 0 4	前輪車軸
+T9	Parts 52 58	潤滑用グリス
+R2	Coreference Arg1:T4 Arg2:T5	
+R3	Coreference Arg1:T5 Arg2:T6	
+R4	Contact Arg1:T8 Arg2:T1	
+R5	Part-Whole Arg1:T2 Arg2:T1	
+R6	Contact Arg1:T9 Arg2:T2	
+R7	Connect Arg1:T1 Arg2:T7	

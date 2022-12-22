@@ -1,0 +1,16 @@
+T12	Parts 0 2	車枠
+T14	Parts 18 22	アクスル
+T15	Parts 29 36	ラジアスロット
+T16	Parts 37 41	ブッシュ
+T20	Parts 91 93	車枠
+T1	Parts 15 17	車枠
+T2	Parts 76 78	車枠
+T3	Parts 50 52	車枠
+R1	Coreference Arg1:T20 Arg2:T2	
+R2	Coreference Arg1:T2 Arg2:T3	
+R3	Coreference Arg1:T3 Arg2:T1	
+R4	Coreference Arg1:T1 Arg2:T12	
+R5	Contact Arg1:T1 Arg2:T14	
+R8	Part-Whole Arg1:T16 Arg2:T15	
+R6	Contact Arg1:T15 Arg2:T14	
+R7	Contact Arg1:T15 Arg2:T1	

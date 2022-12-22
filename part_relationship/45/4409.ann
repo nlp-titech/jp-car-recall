@@ -1,0 +1,10 @@
+T2	Parts 70 78	スロットルバルブ
+T4	Parts 108 115	アクセルペダル
+T5	Parts 120 124	エンジン
+T7	Parts 0 17	過給機（ターボチャージャ）付き車両
+R1	Connect Arg1:T4 Arg2:T5	
+T1	Parts 36 51	給気冷却器（インタークーラー）
+R2	Part-Whole Arg1:T2 Arg2:T5	
+R3	Part-Whole Arg1:T5 Arg2:T7	
+R4	Part-Whole Arg1:T4 Arg2:T7	
+R5	Part-Whole Arg1:T1 Arg2:T5	

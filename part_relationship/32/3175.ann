@@ -1,0 +1,25 @@
+T10	Parts 23 49	ハイドロスタティッククラッチアクチュエータ（ＨＣＡ）
+T11	Parts 89 92	センサ
+T12	Parts 63 67	クラッチ
+T13	Parts 76 80	ピストン
+T14	Parts 113 116	ＨＣＡ
+T15	Parts 125 134	メータディスプレイ
+T16	Parts 135 147	トランスミッション警告灯
+T1	Parts 0 11	７速ＤＣＴ型自動変速機
+T2	Parts 16 18	車両
+T3	Parts 50 55	プログラム
+R1	Coreference Arg1:T10 Arg2:T14	
+T4	Parts 153 162	トランスミッション
+R2	Part-Whole Arg1:T1 Arg2:T2	
+R3	Part-Whole Arg1:T3 Arg2:T10	
+R4	Connect Arg1:T12 Arg2:T10	
+R5	Connect Arg1:T11 Arg2:T3	
+R6	Part-Whole Arg1:T16 Arg2:T15	
+R7	Connect Arg1:T15 Arg2:T14	
+R8	Connect Arg1:T13 Arg2:T12	
+R9	Connect Arg1:T11 Arg2:T13	
+R10	Coreference Arg1:T4 Arg2:T1	
+R11	Part-Whole Arg1:T10 Arg2:T2	
+R12	Part-Whole Arg1:T12 Arg2:T2	
+R13	Connect Arg1:T13 Arg2:T10	
+R14	Part-Whole Arg1:T15 Arg2:T2	

@@ -1,0 +1,12 @@
+T1	Parts 36 42	プリント基板
+T2	Parts 4 12	凍結防止用ヒータ
+T3	Parts 60 63	ヒータ
+T4	Parts 17 21	電子回路
+T5	Parts 65 70	洗浄液配管
+R1	Connect Arg1:T4 Arg2:T2	
+R2	Part-Whole Arg1:T1 Arg2:T4	
+R3	Coreference Arg1:T3 Arg2:T2	
+R4	Part-Whole Arg1:T5 Arg2:T3	
+T6	Parts 0 3	洗浄液
+#1	AnnotatorNotes T6	ワイパー用に補充されている液
+R5	Contact Arg1:T6 Arg2:T5	

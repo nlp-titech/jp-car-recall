@@ -1,0 +1,6 @@
+T1	Parts 79 87	タイロッドエンド
+T2	Parts 1 6	タイロッド
+T3	Parts 7 16	アジャストスリーブ
+R1	Contact Arg1:T3 Arg2:T2	
+R2	Contact Arg1:T1 Arg2:T3	
+R3	Part-Whole Arg1:T1 Arg2:T2	

@@ -1,0 +1,13 @@
+T1	Parts 37 41	ハーネス
+T2	Parts 6 13	ＬＥＤ前部霧灯
+T3	Parts 58 63	右側車幅灯
+T4	Parts 49 54	右側前照灯
+T5	Parts 19 21	車両
+R1	Connect Arg1:T1 Arg2:T2	
+R2	Connect Arg1:T4 Arg2:T1	
+R3	Connect Arg1:T3 Arg2:T1	
+R4	Contact Arg1:T3 Arg2:T4	
+R5	Part-Whole Arg1:T1 Arg2:T5	
+R6	Part-Whole Arg1:T2 Arg2:T5	
+R7	Part-Whole Arg1:T4 Arg2:T5	
+R8	Part-Whole Arg1:T3 Arg2:T5	

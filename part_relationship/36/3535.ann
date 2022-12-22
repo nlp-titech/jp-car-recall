@@ -1,0 +1,22 @@
+T1	Parts 27 35	パーキングレバー
+T2	Parts 1 9	パーキングロッド
+T3	Parts 18 26	パーキングロッド
+T4	Parts 40 43	ナット
+T5	Parts 80 83	ナット
+T6	Parts 114 117	ナット
+T7	Parts 136 139	ナット
+T10	Parts 65 68	変速機
+T11	Parts 133 135	ギヤ
+T12	Parts 145 147	車輪
+R1	Coreference Arg1:T3 Arg2:T2	
+T9	Parts 48 54	ゆるみ止め剤
+R2	Coreference Arg1:T5 Arg2:T4	
+R3	Contact Arg1:T4 Arg2:T1	
+R4	Contact Arg1:T1 Arg2:T3	
+R5	Contact Arg1:T4 Arg2:T3	
+R6	Coreference Arg1:T6 Arg2:T5	
+R7	Contact Arg1:T9 Arg2:T4	
+R8	Coreference Arg1:T7 Arg2:T6	
+R9	Connect Arg1:T12 Arg2:T11	
+R10	Connect Arg1:T11 Arg2:T10	
+R11	Connect Arg1:T10 Arg2:T2	

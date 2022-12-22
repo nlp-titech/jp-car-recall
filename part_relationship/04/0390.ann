@@ -1,0 +1,13 @@
+T12	Parts 19 25	シフトレバー
+T13	Parts 106 109	ボルト
+T2	Parts 8 14	動力伝達装置
+T3	Parts 33 37	グリース
+T5	Parts 54 58	グリース
+R1	Coreference Arg1:T3 Arg2:T5	
+T6	Parts 63 69	ゆるみ防止剤
+T1	Parts 0 7	手動変速機付車
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T12 Arg2:T2	
+R5	Part-Whole Arg1:T6 Arg2:T12	
+R4	Part-Whole Arg1:T13 Arg2:T12	
+R6	Contact Arg1:T3 Arg2:T12	

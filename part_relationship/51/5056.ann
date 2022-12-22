@@ -1,0 +1,9 @@
+T1	Parts 14 19	ガスケット
+T2	Parts 32 36	エンジン
+T3	Parts 1 13	燃料レベルセンサマウント
+T4	Parts 45 49	マウント
+T7	Parts 52 54	燃料
+R1	Coreference Arg1:T4 Arg2:T3	
+R2	Contact Arg1:T1 Arg2:T3	
+R3	Contact Arg1:T7 Arg2:T4	
+R4	Contact Arg1:T7 Arg2:T2	

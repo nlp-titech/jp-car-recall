@@ -1,0 +1,14 @@
+T1	Parts 11 26	スプリングメンバー（ばね台座）
+T2	Parts 34 38	Ｕボルト
+T3	Parts 61 65	Ｕボルト
+T4	Parts 84 88	Ｕボルト
+T6	Parts 4 7	後々軸
+T8	Parts 0 2	後軸
+T9	Parts 8 10	車軸
+R1	Coreference Arg1:T3 Arg2:T2	
+R2	Coreference Arg1:T4 Arg2:T3	
+R3	Oneway-Coreference Arg1:T9 Arg2:T6	
+R4	Oneway-Coreference Arg1:T9 Arg2:T8	
+R5	Contact Arg1:T2 Arg2:T1	
+R6	Contact Arg1:T2 Arg2:T9	
+R7	Connect Arg1:T1 Arg2:T9	

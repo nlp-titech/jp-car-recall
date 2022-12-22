@@ -1,0 +1,13 @@
+T15	Parts 147 153	油圧シリンダ
+T8	Parts 106 115	油圧シリンダロッド
+T3	Parts 28 51	先端に取りつけられている部品（クレビスヘッド）
+T6	Parts 54 95	クレビスヘッドに繋がれて前後輪に繰舵力を配分するリンク部品（センターベルクランク）
+T2	Parts 11 27	パワーステアリング用油圧シリンダ
+T1	Parts 0 6	かじ取り部分
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T3 Arg2:T2	
+R5	Part-Whole Arg1:T6 Arg2:T2	
+R7	Part-Whole Arg1:T8 Arg2:T1	
+R8	Contact Arg1:T2 Arg2:T8	
+R9	Coreference Arg1:T2 Arg2:T15	
+R1	Contact Arg1:T3 Arg2:T6	

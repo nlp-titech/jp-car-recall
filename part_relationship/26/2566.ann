@@ -1,0 +1,10 @@
+T1	Parts 0 3	後前軸
+T2	Parts 10 17	ラジアスロッド
+T3	Parts 18 25	車体側取付金具
+T4	Parts 38 40	金具
+R1	Coreference Arg1:T4 Arg2:T3	
+T5	Parts 89 91	金具
+R2	Coreference Arg1:T5 Arg2:T4	
+R3	Contact Arg1:T1 Arg2:T2	
+R4	Contact Arg1:T3 Arg2:T2	
+R5	Part-Whole Arg1:T3 Arg2:T1	

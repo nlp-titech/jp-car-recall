@@ -1,0 +1,12 @@
+T9	Parts 61 68	アクセルペダル
+T10	Parts 15 24	アクセル開度センサ
+T11	Parts 37 44	センサ内部回路
+T12	Parts 79 86	切り替えレバー
+T13	Parts 99 101	車両
+T1	Parts 0 7	アクセルペダル
+R1	Coreference Arg1:T9 Arg2:T1	
+R4	Part-Whole Arg1:T12 Arg2:T13	
+R5	Part-Whole Arg1:T9 Arg2:T13	
+R2	Part-Whole Arg1:T11 Arg2:T10	
+R3	Connect Arg1:T10 Arg2:T1	
+#1	AnnotatorNotes R3	センサーはペダルに直結しているものではないと考える

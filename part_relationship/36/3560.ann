@@ -1,0 +1,6 @@
+T1	Parts 30 41	作業装置作動用スイッチ
+T3	Parts 81 85	作業装置
+T6	Parts 0 5	道路作業車
+R2	Connect Arg1:T3 Arg2:T1	
+R3	Part-Whole Arg1:T3 Arg2:T6	
+R4	Part-Whole Arg1:T1 Arg2:T6	

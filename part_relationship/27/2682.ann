@@ -1,0 +1,24 @@
+T18	Parts 111 115	アダプタ
+T20	Parts 11 19	ナックルアダプタ
+T21	Parts 39 43	アダプタ
+T22	Parts 44 50	取付けボルト
+T23	Parts 87 93	取付けボルト
+T1	Parts 0 6	小型トラック
+R1	Coreference Arg1:T21 Arg2:T20	
+R2	Coreference Arg1:T23 Arg2:T22	
+R3	Coreference Arg1:T18 Arg2:T21	
+T2	Parts 120 122	前輪
+T3	Parts 123 130	ブレーキホース
+T4	Parts 135 137	前輪
+R4	Coreference Arg1:T4 Arg2:T2	
+T5	Parts 138 142	ブレーキ
+R5	Part-Whole Arg1:T20 Arg2:T1	
+R6	Contact Arg1:T22 Arg2:T21	
+R8	Part-Whole Arg1:T2 Arg2:T1	
+T6	Parts 20 24	ナックル
+R12	Contact Arg1:T20 Arg2:T6	
+R13	Part-Whole Arg1:T6 Arg2:T1	
+R7	Part-Whole Arg1:T3 Arg2:T5	
+R9	Connect Arg1:T4 Arg2:T5	
+R10	Part-Whole Arg1:T5 Arg2:T1	
+R11	Contact Arg1:T6 Arg2:T22	

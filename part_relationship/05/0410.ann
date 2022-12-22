@@ -1,0 +1,19 @@
+T16	Parts 12 18	動力伝達装置
+T17	Parts 23 26	変速機
+T19	Parts 29 43	ベアリングリテーナープレート
+T21	Parts 88 91	ボルト
+T22	Parts 109 112	ボルト
+T20	Parts 48 51	ボルト
+R1	Coreference Arg1:T21 Arg2:T20	
+R2	Coreference Arg1:T22 Arg2:T21	
+T1	Parts 117 125	リダクションギヤ
+T2	Parts 133 141	ミッションケース
+T3	Parts 146 149	オイル
+T4	Parts 0 11	無段式自動変速機付き車
+R3	Part-Whole Arg1:T16 Arg2:T4	
+R4	Part-Whole Arg1:T17 Arg2:T16	
+R5	Part-Whole Arg1:T19 Arg2:T17	
+R6	Contact Arg1:T19 Arg2:T20	
+R7	Part-Whole Arg1:T1 Arg2:T17	
+R8	Part-Whole Arg1:T2 Arg2:T17	
+R9	Contact Arg1:T3 Arg2:T2	

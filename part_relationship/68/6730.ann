@@ -1,0 +1,9 @@
+T1	Parts 10 21	ロアコントロールアーム
+T2	Parts 37 48	ロアコントロールアーム
+T3	Parts 96 107	ロアコントロールアーム
+T4	Parts 0 9	リヤサスペンション
+T5	Parts 79 82	アーム
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Coreference Arg1:T2 Arg2:T5	
+R3	Coreference Arg1:T5 Arg2:T3	
+R4	Part-Whole Arg1:T1 Arg2:T4	

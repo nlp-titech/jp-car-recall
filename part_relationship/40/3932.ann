@@ -1,0 +1,10 @@
+T1	Parts 28 32	Ｏリング
+T2	Parts 18 27	シーリングキャップ
+T3	Parts 5 13	ディスクキャリパ
+T4	Parts 62 66	キャリパ
+T6	Parts 0 4	制動装置
+R1	Coreference Arg1:T4 Arg2:T3	
+R2	Contact Arg1:T1 Arg2:T2	
+R3	Part-Whole Arg1:T2 Arg2:T3	
+R4	Part-Whole Arg1:T1 Arg2:T3	
+R5	Part-Whole Arg1:T3 Arg2:T6	

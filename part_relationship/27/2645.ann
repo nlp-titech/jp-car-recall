@@ -1,0 +1,16 @@
+T1	Parts 0 11	前照灯消し忘れ防止装置
+T2	Parts 16 20	路線バス
+T4	Parts 30 34	電気回路
+T5	Parts 42 49	前照灯スイッチ
+T6	Parts 69 73	スイッチ
+R2	Coreference Arg1:T6 Arg2:T5	
+T7	Parts 99 103	スイッチ
+R3	Coreference Arg1:T7 Arg2:T6	
+T10	Parts 111 114	前照灯
+R5	Part-Whole Arg1:T1 Arg2:T2	
+R6	Part-Whole Arg1:T4 Arg2:T1	
+R7	Contact Arg1:T4 Arg2:T5	
+R1	Connect Arg1:T10 Arg2:T7	
+R4	Part-Whole Arg1:T5 Arg2:T2	
+R8	Connect Arg1:T4 Arg2:T10	
+R9	Part-Whole Arg1:T10 Arg2:T2	

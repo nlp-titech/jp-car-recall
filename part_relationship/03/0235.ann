@@ -1,0 +1,17 @@
+T11	Parts 68 72	コネクタ
+T12	Parts 113 117	エンジン
+T1	Parts 11 19	電気配線コネクタ
+T2	Parts 21 28	予備用コネクタ
+T3	Parts 102 106	電気回路
+T4	Parts 0 3	通路灯
+T5	Parts 5 10	ステップ灯
+R3	Part-Whole Arg1:T1 Arg2:T4	
+R4	Part-Whole Arg1:T1 Arg2:T5	
+R5	Part-Whole Arg1:T2 Arg2:T4	
+R6	Part-Whole Arg1:T2 Arg2:T5	
+R8	Contact Arg1:T3 Arg2:T12	
+R1	Oneway-Coreference Arg1:T11 Arg2:T1	
+R2	Oneway-Coreference Arg1:T11 Arg2:T2	
+R7	Contact Arg1:T11 Arg2:T3	
+R9	Connect Arg1:T4 Arg2:T3	
+R10	Connect Arg1:T5 Arg2:T3	

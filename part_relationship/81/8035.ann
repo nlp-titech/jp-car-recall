@@ -1,0 +1,10 @@
+T3	Parts 17 20	排気管
+T4	Parts 24 27	排気管
+T5	Parts 76 80	エンジン
+T6	Parts 123 125	配線
+R1	Coreference Arg1:T3 Arg2:T4	
+R2	Connect Arg1:T5 Arg2:T4	
+T1	Parts 0 12	大型トラクタ及びトラック
+R3	Part-Whole Arg1:T3 Arg2:T1	
+R4	Part-Whole Arg1:T5 Arg2:T1	
+R5	Part-Whole Arg1:T6 Arg2:T1	

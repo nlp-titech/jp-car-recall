@@ -1,0 +1,13 @@
+T1	Parts 7 14	シャシフレーム
+T2	Parts 16 22	サブフレーム
+T5	Parts 42 45	ナット
+T4	Parts 0 6	中型ダンプ車
+R1	Part-Whole Arg1:T1 Arg2:T4	
+R2	Part-Whole Arg1:T2 Arg2:T4	
+T3	Parts 27 40	対向ブラケット固定用ボルト
+R3	Contact Arg1:T3 Arg2:T5	
+R4	Contact Arg1:T1 Arg2:T2	
+R5	Contact Arg1:T2 Arg2:T3	
+R6	Contact Arg1:T1 Arg2:T3	
+R7	Contact Arg1:T2 Arg2:T5	
+R8	Contact Arg1:T1 Arg2:T5	

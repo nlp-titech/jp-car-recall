@@ -1,0 +1,12 @@
+T12	Parts 0 5	燃料タンク
+T13	Parts 21 24	タンク
+T14	Parts 28 30	鉄板
+T16	Parts 58 60	鉄板
+T17	Parts 92 94	鉄板
+R1	Coreference Arg1:T13 Arg2:T12	
+T1	Parts 46 49	原動機
+R2	Coreference Arg1:T16 Arg2:T14	
+R3	Coreference Arg1:T17 Arg2:T16	
+T2	Parts 107 109	燃料
+R4	Part-Whole Arg1:T14 Arg2:T13	
+R5	Part-Whole Arg1:T2 Arg2:T13	

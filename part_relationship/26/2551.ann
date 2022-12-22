@@ -1,0 +1,8 @@
+T12	Parts 81 85	遊星歯車
+T13	Parts 74 75	軸
+T14	Parts 13 19	遊星歯車用軸
+T1	Parts 0 8	フロントアクスル
+R1	Coreference Arg1:T13 Arg2:T14	
+R2	Part-Whole Arg1:T14 Arg2:T1	
+R3	Part-Whole Arg1:T12 Arg2:T1	
+R4	Contact Arg1:T13 Arg2:T12	

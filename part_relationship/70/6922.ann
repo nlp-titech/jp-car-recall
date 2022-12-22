@@ -1,0 +1,17 @@
+T1	Parts 7 22	パワーステアリング用油圧ポンプ
+T2	Parts 23 34	プーリー取り付けナット
+T3	Parts 65 72	取り付けナット
+T4	Parts 0 6	かじ取り装置
+T5	Parts 141 145	ハンドル
+T7	Parts 41 45	プーリー
+T8	Parts 60 64	プーリー
+T9	Parts 77 81	プーリー
+T10	Parts 129 133	プーリー
+R1	Part-Whole Arg1:T1 Arg2:T4	
+R6	Coreference Arg1:T2 Arg2:T3	
+R9	Connect Arg1:T4 Arg2:T5	
+R2	Contact Arg1:T7 Arg2:T2	
+R3	Part-Whole Arg1:T7 Arg2:T1	
+R4	Coreference Arg1:T8 Arg2:T7	
+R5	Coreference Arg1:T9 Arg2:T8	
+R7	Coreference Arg1:T10 Arg2:T9	

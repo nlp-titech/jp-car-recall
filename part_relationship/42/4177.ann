@@ -1,0 +1,13 @@
+T1	Parts 0 12	エンジン制御コンピュータ
+T2	Parts 129 137	ドライブチェーン
+T3	Parts 108 114	動力伝達装置
+T4	Parts 60 65	スロットル
+T6	Parts 70 74	エンジン
+T7	Parts 90 94	クラッチ
+T12	Parts 38 40	ギア
+R2	Connect Arg1:T12 Arg2:T7	
+R3	Connect Arg1:T4 Arg2:T6	
+R4	Part-Whole Arg1:T12 Arg2:T3	
+R5	Part-Whole Arg1:T2 Arg2:T3	
+R6	Connect Arg1:T1 Arg2:T6	
+R7	Connect Arg1:T6 Arg2:T3	

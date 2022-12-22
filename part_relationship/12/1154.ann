@@ -1,0 +1,16 @@
+T13	Parts 110 113	制動灯
+T15	Parts 0 4	灯火装置
+T16	Parts 35 38	制動灯
+T1	Parts 5 9	電気回路
+T2	Parts 17 31	補助制動装置（電磁リターダ）
+T3	Parts 59 71	電磁リターダ電子制御機器
+T4	Parts 73 83	制動灯点灯用電気回路
+T5	Parts 100 106	電磁リターダ
+R1	Coreference Arg1:T2 Arg2:T5	
+R2	Coreference Arg1:T16 Arg2:T13	
+R4	Connect Arg1:T2 Arg2:T1	
+R6	Part-Whole Arg1:T4 Arg2:T3	
+R3	Connect Arg1:T15 Arg2:T1	
+R8	Part-Whole Arg1:T16 Arg2:T15	
+R7	Connect Arg1:T2 Arg2:T3	
+R5	Connect Arg1:T2 Arg2:T16	

@@ -1,0 +1,10 @@
+T6	Parts 0 8	後軸ホイールバブ
+T7	Parts 9 23	エンドプレート（抜け止め板）
+T8	Parts 31 34	ボルト
+T9	Parts 65 68	ボルト
+T10	Parts 79 81	車輪
+R1	Coreference Arg1:T9 Arg2:T8	
+R3	Contact Arg1:T8 Arg2:T7	
+R5	Contact Arg1:T6 Arg2:T7	
+R6	Contact Arg1:T6 Arg2:T8	
+R2	Contact Arg1:T6 Arg2:T10	

@@ -1,0 +1,25 @@
+T14	Parts 62 69	メインマフラー
+T15	Parts 72 75	排気管
+T16	Parts 144 147	排気管
+T17	Parts 98 101	排気管
+T1	Parts 0 9	粒子状物質減少装置
+T2	Parts 12 14	触媒
+T3	Parts 29 31	触媒
+T4	Parts 33 36	排気管
+T5	Parts 37 39	触媒
+T6	Parts 44 47	継ぎ手
+R1	Coreference Arg1:T15 Arg2:T4	
+R2	Coreference Arg1:T17 Arg2:T15	
+R3	Coreference Arg1:T16 Arg2:T17	
+R4	Coreference Arg1:T5 Arg2:T3	
+R5	Coreference Arg1:T3 Arg2:T2	
+T7	Parts 88 92	エンジン
+R6	Coreference Arg1:T2 Arg2:T1	
+T8	Parts 22 24	車両
+R11	Part-Whole Arg1:T4 Arg2:T8	
+R14	Part-Whole Arg1:T7 Arg2:T8	
+R7	Part-Whole Arg1:T5 Arg2:T4	
+R8	Part-Whole Arg1:T6 Arg2:T4	
+R9	Contact Arg1:T5 Arg2:T6	
+R10	Part-Whole Arg1:T14 Arg2:T15	
+R12	Contact Arg1:T7 Arg2:T17	

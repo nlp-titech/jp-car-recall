@@ -1,0 +1,11 @@
+T1	Parts 0 12	エンジン制御コンピュータ
+T2	Parts 34 40	オイルポンプ
+T3	Parts 48 55	エンジンオイル
+T4	Parts 80 85	油圧警告灯
+T6	Parts 126 130	エンジン
+R1	Connect Arg1:T3 Arg2:T2	
+R2	Connect Arg1:T4 Arg2:T1	
+R3	Connect Arg1:T2 Arg2:T4	
+T5	Parts 105 107	軸受
+R4	Connect Arg1:T6 Arg2:T1	
+R5	Part-Whole Arg1:T5 Arg2:T2	

@@ -1,0 +1,8 @@
+T2	Parts 28 31	ボルト
+T3	Parts 85 88	ボルト
+T4	Parts 21 23	車体
+R1	Coreference Arg1:T2 Arg2:T3	
+R3	Contact Arg1:T4 Arg2:T2	
+T5	Parts 0 18	右側フロント及び右側リヤシートベルト
+R5	Contact Arg1:T5 Arg2:T4	
+R6	Contact Arg1:T5 Arg2:T2	

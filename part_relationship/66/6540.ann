@@ -1,0 +1,16 @@
+T1	Parts 94 109	カーテンエアバッグインフレータ
+T3	Parts 190 199	カーテンエアバッグ
+T4	Parts 116 137	内装材位置決め用スポンジ（インシュレータ）
+T5	Parts 158 164	インフレータ
+T6	Parts 175 181	インフレータ
+T7	Parts 0 10	サンルーフ・フレーム
+T8	Parts 21 26	サンルーフ
+T11	Parts 52 57	排水ホース
+T16	Parts 32 37	排水ホース
+R7	Contact Arg1:T16 Arg2:T8	
+R8	Coreference Arg1:T16 Arg2:T11	
+R9	Contact Arg1:T1 Arg2:T4	
+R10	Coreference Arg1:T1 Arg2:T5	
+R11	Coreference Arg1:T5 Arg2:T6	
+R12	Part-Whole Arg1:T6 Arg2:T3	
+R1	Part-Whole Arg1:T7 Arg2:T8	

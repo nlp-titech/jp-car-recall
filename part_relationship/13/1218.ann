@@ -1,0 +1,10 @@
+T1	Parts 0 10	エアコン用コンデンサ
+T2	Parts 12 19	シャシ電気配線
+T3	Parts 32 40	エアコン冷媒配管
+T4	Parts 43 45	配線
+T5	Parts 75 77	配線
+T6	Parts 88 92	エンジン
+R1	Coreference Arg1:T2 Arg2:T4	
+R2	Coreference Arg1:T4 Arg2:T5	
+R4	Contact Arg1:T1 Arg2:T3	
+R5	Connect Arg1:T5 Arg2:T6	

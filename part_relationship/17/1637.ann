@@ -1,0 +1,13 @@
+T16	Parts 118 123	座席ベルト
+T17	Parts 91 94	カバー
+T18	Parts 79 82	カバー
+T19	Parts 71 76	座席ベルト
+T20	Parts 34 37	カバー
+T21	Parts 16 21	樹脂カバー
+T1	Parts 0 5	前席の座席
+T2	Parts 10 13	シート
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Coreference Arg1:T21 Arg2:T20	
+R3	Coreference Arg1:T20 Arg2:T18	
+R4	Coreference Arg1:T18 Arg2:T17	
+R5	Coreference Arg1:T19 Arg2:T16	

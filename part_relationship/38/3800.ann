@@ -1,0 +1,17 @@
+T1	Parts 0 8	ガソリンエンジン
+T2	Parts 9 21	フューエルインジェクター
+T3	Parts 40 47	インジェクター
+T4	Parts 95 107	フューエルインジェクター
+T5	Parts 118 125	インジェクター
+T6	Parts 56 61	フィルター
+T7	Parts 150 154	エンジン
+T8	Parts 86 90	燃料配管
+T9	Parts 136 138	燃料
+R1	Coreference Arg1:T3 Arg2:T2	
+R2	Part-Whole Arg1:T6 Arg2:T3	
+R3	Coreference Arg1:T4 Arg2:T3	
+R4	Contact Arg1:T9 Arg2:T5	
+R5	Coreference Arg1:T7 Arg2:T1	
+R6	Connect Arg1:T4 Arg2:T8	
+R7	Part-Whole Arg1:T2 Arg2:T1	
+R8	Coreference Arg1:T5 Arg2:T4	

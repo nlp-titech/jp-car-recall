@@ -1,0 +1,7 @@
+T1	Parts 0 9	リアドアロック機構
+T2	Parts 80 93	チャイルドセーフティロック
+T3	Parts 103 110	車内ドアレバー
+T4	Parts 118 120	ドア
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Connect Arg1:T4 Arg2:T2	
+R3	Connect Arg1:T3 Arg2:T4	

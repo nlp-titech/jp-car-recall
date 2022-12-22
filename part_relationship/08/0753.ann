@@ -1,0 +1,18 @@
+T13	Parts 59 63	ピストン
+T14	Parts 12 25	クラッチ断続用油圧シリンダ
+T15	Parts 68 73	受圧カップ
+T16	Parts 91 97	油圧シリンダ
+T2	Parts 26 30	ピストン
+R1	Coreference Arg1:T13 Arg2:T2	
+R2	Coreference Arg1:T16 Arg2:T14	
+T3	Parts 40 44	クラッチ
+T4	Parts 106 110	クラッチ
+R3	Coreference Arg1:T4 Arg2:T3	
+T1	Parts 0 7	手動変速機付車
+R4	Part-Whole Arg1:T14 Arg2:T1	
+R5	Part-Whole Arg1:T2 Arg2:T14	
+R6	Contact Arg1:T3 Arg2:T14	
+R7	Part-Whole Arg1:T15 Arg2:T14	
+T5	Parts 99 102	作動油
+R8	Contact Arg1:T5 Arg2:T16	
+R9	Part-Whole Arg1:T3 Arg2:T1	

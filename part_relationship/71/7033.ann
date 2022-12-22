@@ -1,0 +1,10 @@
+T1	Parts 35 42	制御プログラム
+T4	Parts 50 54	サイレン
+T5	Parts 4 30	サイレン音量徐変機能付きサイレンアンプ（オプション）
+T6	Parts 0 3	救急車
+T7	Parts 61 64	警光灯
+R1	Part-Whole Arg1:T5 Arg2:T6	
+R2	Part-Whole Arg1:T1 Arg2:T5	
+R7	Connect Arg1:T1 Arg2:T7	
+R4	Part-Whole Arg1:T7 Arg2:T6	
+R3	Connect Arg1:T5 Arg2:T4	

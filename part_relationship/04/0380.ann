@@ -1,0 +1,13 @@
+T1	Parts 6 9	非常口
+T2	Parts 14 21	ドアロック装置
+T3	Parts 45 48	非常口
+T4	Parts 64 66	かぎ
+T6	Parts 0 5	幼児専用車
+R3	Part-Whole Arg1:T1 Arg2:T6	
+R4	Connect Arg1:T2 Arg2:T1	
+T5	Parts 73 76	非常口
+R1	Coreference Arg1:T5 Arg2:T3	
+R2	Coreference Arg1:T3 Arg2:T1	
+R5	Part-Whole Arg1:T2 Arg2:T6	
+T7	Parts 37 39	車両
+R6	Coreference Arg1:T7 Arg2:T6	

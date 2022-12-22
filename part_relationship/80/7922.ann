@@ -1,0 +1,10 @@
+T1	Parts 0 10	リアアクスルキャリア
+T2	Parts 13 27	スラストアーム用サブフレーム
+T3	Parts 70 76	サブフレーム
+T4	Parts 84 91	スラストアーム
+T5	Parts 104 106	車両
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Contact Arg1:T3 Arg2:T4	
+R4	Part-Whole Arg1:T1 Arg2:T5	
+R5	Part-Whole Arg1:T3 Arg2:T5	
+R3	Part-Whole Arg1:T4 Arg2:T1	

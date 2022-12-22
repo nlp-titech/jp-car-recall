@@ -1,0 +1,9 @@
+T8	Parts 19 27	ホイールディスク
+T9	Parts 38 45	ホイールナット
+T10	Parts 87 90	ナット
+T1	Parts 0 9	ホイール・クレーン
+T2	Parts 10 14	走行装置
+R1	Coreference Arg1:T9 Arg2:T10	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T8 Arg2:T2	
+R5	Contact Arg1:T8 Arg2:T9	

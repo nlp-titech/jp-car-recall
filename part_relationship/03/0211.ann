@@ -1,0 +1,14 @@
+T10	Parts 24 38	燃料タンク固定金具（バンド）
+T13	Parts 83 88	燃料タンク
+T14	Parts 103 108	燃料パイプ
+T1	Parts 1 14	圧縮天然ガス車（ＣＮＧ車）
+T2	Parts 15 19	燃料装置
+T5	Parts 114 116	燃料
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R6	Contact Arg1:T5 Arg2:T14	
+R1	Part-Whole Arg1:T5 Arg2:T13	
+R2	Part-Whole Arg1:T10 Arg2:T2	
+R4	Part-Whole Arg1:T13 Arg2:T2	
+R5	Part-Whole Arg1:T14 Arg2:T2	
+R7	Contact Arg1:T10 Arg2:T13	
+R8	Contact Arg1:T13 Arg2:T14	

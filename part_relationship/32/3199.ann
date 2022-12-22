@@ -1,0 +1,17 @@
+T1	Parts 0 10	ハイブリッドシステム
+T2	Parts 15 20	制御ソフト
+T3	Parts 42 46	昇圧回路
+T4	Parts 47 49	素子
+T5	Parts 79 81	素子
+R1	Coreference Arg1:T4 Arg2:T5	
+T6	Parts 86 89	警告灯
+T8	Parts 103 106	モータ
+T9	Parts 115 117	素子
+R2	Coreference Arg1:T5 Arg2:T9	
+T10	Parts 134 144	ハイブリッドシステム
+R3	Coreference Arg1:T1 Arg2:T10	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T4 Arg2:T3	
+R6	Part-Whole Arg1:T3 Arg2:T1	
+R7	Connect Arg1:T6 Arg2:T1	
+R8	Connect Arg1:T8 Arg2:T1	

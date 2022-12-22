@@ -1,0 +1,13 @@
+T1	Parts 0 7	制動灯スイッチ
+T2	Parts 89 96	制動灯スイッチ
+T3	Parts 144 150	シフトレバー
+T4	Parts 33 37	制動装置
+T5	Parts 51 54	制動灯
+T6	Parts 132 135	制動灯
+T10	Parts 101 103	配線
+R2	Connect Arg1:T1 Arg2:T5	
+R4	Coreference Arg1:T1 Arg2:T2	
+R6	Contact Arg1:T2 Arg2:T10	
+R7	Coreference Arg1:T5 Arg2:T6	
+R1	Connect Arg1:T1 Arg2:T4	
+R3	Connect Arg1:T4 Arg2:T3	

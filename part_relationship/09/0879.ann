@@ -1,0 +1,11 @@
+T1	Parts 8 12	走行装置
+T3	Parts 45 48	軸受け
+T5	Parts 95 97	車体
+T6	Parts 115 118	軸受け
+R1	Coreference Arg1:T6 Arg2:T3	
+T7	Parts 0 7	前輪独立懸架車
+T8	Parts 17 26	前輪ハブ内側軸受け
+R2	Coreference Arg1:T8 Arg2:T3	
+R4	Part-Whole Arg1:T5 Arg2:T7	
+R5	Part-Whole Arg1:T8 Arg2:T1	
+R3	Part-Whole Arg1:T1 Arg2:T7	

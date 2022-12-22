@@ -1,0 +1,15 @@
+T15	Parts 24 35	密封栓（シールプラグ）
+T16	Parts 70 73	密封栓
+T17	Parts 89 93	エンジン
+T1	Parts 0 8	ガソリンエンジン
+T2	Parts 9 17	シリンダーヘッド
+T3	Parts 78 85	エンジンオイル
+T4	Parts 117 124	エンジンオイル
+T5	Parts 125 128	排気管
+R1	Coreference Arg1:T16 Arg2:T15	
+R2	Coreference Arg1:T17 Arg2:T1	
+R3	Coreference Arg1:T4 Arg2:T3	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T15 Arg2:T2	
+R7	Part-Whole Arg1:T5 Arg2:T1	
+R6	Contact Arg1:T3 Arg2:T2	

@@ -1,0 +1,5 @@
+T1	Parts 0 9	圧縮天然ガス自動車
+T2	Parts 10 13	過給機
+T3	Parts 18 23	タービン翼
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T2	

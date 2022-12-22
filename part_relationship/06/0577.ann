@@ -1,0 +1,9 @@
+T1	Parts 0 4	運転者席
+T2	Parts 5 8	助手席
+T3	Parts 13 27	ヘッドレストガイドブラケット
+T4	Parts 28 38	シートバックフレーム
+R1	Contact Arg1:T3 Arg2:T1	
+R2	Part-Whole Arg1:T4 Arg2:T1	
+R3	Contact Arg1:T3 Arg2:T2	
+R4	Part-Whole Arg1:T4 Arg2:T2	
+R5	Contact Arg1:T3 Arg2:T4	

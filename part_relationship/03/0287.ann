@@ -1,0 +1,14 @@
+T13	Parts 37 41	配線基板
+T14	Parts 66 71	コンデンサ
+T15	Parts 90 94	スピーカ
+T18	Parts 24 26	基板
+T19	Parts 13 17	配線基板
+T20	Parts 5 10	オーディオ
+T1	Parts 0 4	音響機器
+R1	Coreference Arg1:T13 Arg2:T18	
+R2	Coreference Arg1:T18 Arg2:T19	
+R3	Part-Whole Arg1:T20 Arg2:T1	
+R4	Part-Whole Arg1:T19 Arg2:T20	
+R5	Part-Whole Arg1:T14 Arg2:T13	
+R7	Part-Whole Arg1:T15 Arg2:T1	
+R6	Connect Arg1:T20 Arg2:T15	

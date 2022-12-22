@@ -1,0 +1,9 @@
+T2	Parts 114 121	ブレーキペダル
+T3	Parts 22 28	ダイアフラム
+T4	Parts 39 45	ダイアフラム
+T5	Parts 68 74	ダイアフラム
+T1	Parts 0 17	制動倍力装置（ブレーキブースター）
+R1	Part-Whole Arg1:T3 Arg2:T1	
+R2	Coreference Arg1:T3 Arg2:T4	
+R3	Coreference Arg1:T4 Arg2:T5	
+R4	Connect Arg1:T1 Arg2:T2	

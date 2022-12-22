@@ -1,0 +1,15 @@
+T1	Parts 0 9	運転席用エアバック
+T2	Parts 19 28	エアバッグ起爆装置
+T4	Parts 96 101	エアバッグ
+T5	Parts 45 50	コネクター
+T6	Parts 87 92	コネクター
+T7	Parts 29 38	エアバッグ制御装置
+T11	Parts 42 44	配線
+R2	Coreference Arg1:T1 Arg2:T4	
+R3	Contact Arg1:T7 Arg2:T11	
+R4	Contact Arg1:T2 Arg2:T11	
+R5	Contact Arg1:T5 Arg2:T11	
+R6	Part-Whole Arg1:T2 Arg2:T1	
+R7	Part-Whole Arg1:T7 Arg2:T1	
+R8	Coreference Arg1:T5 Arg2:T6	
+R1	Connect Arg1:T7 Arg2:T2	

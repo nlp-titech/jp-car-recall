@@ -1,0 +1,9 @@
+T1	Parts 0 17	油圧制御式フロント・サスペンション
+T2	Parts 100 107	サスペンション
+T3	Parts 25 31	加速度センサ
+T4	Parts 81 85	制御装置
+T5	Parts 36 38	基板
+R1	Coreference Arg1:T2 Arg2:T1	
+R2	Connect Arg1:T4 Arg2:T3	
+R4	Part-Whole Arg1:T5 Arg2:T3	
+R5	Connect Arg1:T3 Arg2:T1	

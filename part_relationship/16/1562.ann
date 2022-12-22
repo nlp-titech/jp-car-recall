@@ -1,0 +1,22 @@
+T1	Parts 0 4	警察車両
+T2	Parts 9 18	バッテリーケーブル
+T3	Parts 23 28	樹脂バンド
+T4	Parts 42 46	原動機室
+T5	Parts 57 60	バンド
+R1	Coreference Arg1:T5 Arg2:T3	
+T6	Parts 76 85	バッテリーケーブル
+R2	Coreference Arg1:T6 Arg2:T2	
+T7	Parts 92 100	排気マニホールド
+T8	Parts 117 121	ケーブル
+R3	Coreference Arg1:T8 Arg2:T6	
+T9	Parts 122 124	被覆
+R4	Part-Whole Arg1:T9 Arg2:T8	
+R5	Contact Arg1:T3 Arg2:T2	
+R6	Part-Whole Arg1:T7 Arg2:T4	
+T10	Parts 101 104	遮熱板
+R7	Contact Arg1:T10 Arg2:T7	
+R8	Part-Whole Arg1:T2 Arg2:T1	
+R9	Part-Whole Arg1:T3 Arg2:T4	
+R10	Part-Whole Arg1:T4 Arg2:T1	
+R12	Part-Whole Arg1:T10 Arg2:T4	
+#1	AnnotatorNotes T4	エンジンルームと解釈

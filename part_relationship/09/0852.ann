@@ -1,0 +1,30 @@
+T19	Parts 27 41	ピロボールジョイントホルダー
+T20	Parts 71 80	ジョイントホルダー
+T21	Parts 93 98	ピロボール
+T22	Parts 129 138	ジョイントホルダー
+T23	Parts 139 144	ピロボール
+T1	Parts 0 6	後輪ブレーキ
+T2	Parts 7 16	マスターシリンダー
+T3	Parts 17 24	ブレーキペダル
+R1	Coreference Arg1:T20 Arg2:T19	
+R2	Coreference Arg1:T22 Arg2:T20	
+R3	Coreference Arg1:T23 Arg2:T21	
+T4	Parts 149 156	ブレーキペダル
+T5	Parts 176 185	ジョイントホルダー
+T6	Parts 186 191	ピロボール
+T7	Parts 199 206	ブレーキペダル
+T8	Parts 215 224	ジョイントホルダー
+T9	Parts 229 233	ブレーキ
+R4	Coreference Arg1:T8 Arg2:T5	
+R5	Coreference Arg1:T7 Arg2:T4	
+R6	Coreference Arg1:T6 Arg2:T23	
+R7	Coreference Arg1:T5 Arg2:T22	
+R8	Coreference Arg1:T4 Arg2:T3	
+R9	Part-Whole Arg1:T2 Arg2:T1	
+R10	Part-Whole Arg1:T3 Arg2:T1	
+R11	Connect Arg1:T2 Arg2:T3	
+R12	Contact Arg1:T2 Arg2:T19	
+R13	Contact Arg1:T3 Arg2:T19	
+R15	Part-Whole Arg1:T21 Arg2:T20	
+R16	Part-Whole Arg1:T1 Arg2:T9	
+R17	Connect Arg1:T7 Arg2:T9	

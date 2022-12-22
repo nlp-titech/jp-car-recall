@@ -1,0 +1,13 @@
+T4	Parts 36 43	タンクサポート
+T5	Parts 89 96	タンクサポート
+R2	Coreference Arg1:T4 Arg2:T5	
+T6	Parts 110 115	燃料タンク
+T1	Parts 10 21	金具（タンクサポート）
+R1	Coreference Arg1:T4 Arg2:T1	
+T2	Parts 0 5	燃料タンク
+R5	Contact Arg1:T1 Arg2:T2	
+R4	Coreference Arg1:T6 Arg2:T2	
+T3	Parts 22 26	補強部材
+T7	Parts 78 80	車両
+R6	Part-Whole Arg1:T6 Arg2:T7	
+R3	Part-Whole Arg1:T3 Arg2:T1	

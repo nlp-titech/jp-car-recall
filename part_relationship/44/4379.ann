@@ -1,0 +1,11 @@
+T1	Parts 11 17	サブフレーム
+T2	Parts 0 6	前輪懸架装置
+T4	Parts 32 36	取付金具
+T5	Parts 74 78	取付金具
+T6	Parts 20 31	ロア・アーム（下側腕）
+T7	Parts 94 96	前輪
+R2	Contact Arg1:T4 Arg2:T6	
+R4	Coreference Arg1:T4 Arg2:T5	
+R5	Contact Arg1:T2 Arg2:T7	
+R1	Contact Arg1:T1 Arg2:T6	
+R3	Part-Whole Arg1:T6 Arg2:T2	

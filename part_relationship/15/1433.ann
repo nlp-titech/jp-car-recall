@@ -1,0 +1,19 @@
+T16	Parts 98 106	ブレーキキャリパ
+T17	Parts 9 20	フロントブレーキホース
+T20	Parts 129 133	ブレーキ
+T1	Parts 0 4	制動装置
+T3	Parts 32 35	ホース
+T4	Parts 36 44	ブレーキキャリパ
+T5	Parts 49 51	口金
+R1	Coreference Arg1:T17 Arg2:T3	
+R2	Coreference Arg1:T4 Arg2:T16	
+R3	Part-Whole Arg1:T17 Arg2:T1	
+R4	Contact Arg1:T4 Arg2:T3	
+R5	Contact Arg1:T3 Arg2:T5	
+R6	Contact Arg1:T4 Arg2:T5	
+T2	Parts 65 70	ブレーキ液
+R10	Part-Whole Arg1:T20 Arg2:T1	
+R7	Contact Arg1:T2 Arg2:T3	
+R8	Part-Whole Arg1:T4 Arg2:T1	
+R9	Part-Whole Arg1:T5 Arg2:T1	
+R11	Contact Arg1:T2 Arg2:T4	

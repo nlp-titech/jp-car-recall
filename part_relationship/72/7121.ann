@@ -1,0 +1,14 @@
+T1	Parts 0 8	かじ取りハンドル
+T4	Parts 112 117	エアバッグ
+T6	Parts 86 90	ハンドル
+T10	Parts 105 107	配線
+T11	Parts 9 49	エアバッグ用コンタクトリング（ハンドル操作時にもエアバッグへ電力を供給する装置）
+T7	Parts 96 104	コンタクトリング
+R7	Coreference Arg1:T11 Arg2:T7	
+T2	Parts 61 67	樹脂製留め具
+R1	Contact Arg1:T11 Arg2:T2	
+R8	Contact Arg1:T1 Arg2:T2	
+R2	Coreference Arg1:T1 Arg2:T6	
+R4	Connect Arg1:T1 Arg2:T11	
+R5	Contact Arg1:T7 Arg2:T10	
+R3	Connect Arg1:T7 Arg2:T4	

@@ -1,0 +1,11 @@
+T1	Parts 12 27	手動式パーキングブレーキレバー
+T2	Parts 0 6	小型トラック
+T3	Parts 51 58	レバー保持機構
+T4	Parts 71 74	レバー
+T5	Parts 96 99	レバー
+T6	Parts 128 130	車両
+R1	Coreference Arg1:T6 Arg2:T2	
+R3	Contact Arg1:T4 Arg2:T3	
+R4	Coreference Arg1:T5 Arg2:T4	
+R5	Part-Whole Arg1:T1 Arg2:T2	
+R2	Coreference Arg1:T1 Arg2:T4	

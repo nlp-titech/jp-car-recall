@@ -1,0 +1,7 @@
+T2	Parts 19 29	フロントフォグランプ
+T1	Parts 34 36	車両
+T3	Parts 41 45	メーター
+T4	Parts 60 63	ランプ
+R1	Coreference Arg1:T2 Arg2:T4	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T3 Arg2:T1	

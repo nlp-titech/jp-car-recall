@@ -1,0 +1,25 @@
+T8	Parts 19 26	ベルトバックル
+T14	Parts 115 120	ロック機構
+T15	Parts 43 50	ベルトバックル
+T16	Parts 136 141	ロック機構
+T17	Parts 152 155	ベルト
+T18	Parts 170 173	ベルト
+T1	Parts 0 3	運転席
+T2	Parts 5 8	助手席
+T3	Parts 9 14	座席ベルト
+T4	Parts 27 30	カバー
+T5	Parts 51 58	ケーブルガイド
+T6	Parts 74 77	カバー
+R1	Coreference Arg1:T18 Arg2:T17	
+R2	Coreference Arg1:T16 Arg2:T14	
+R3	Coreference Arg1:T6 Arg2:T4	
+R4	Coreference Arg1:T15 Arg2:T8	
+R5	Coreference Arg1:T17 Arg2:T7	
+R6	Part-Whole Arg1:T3 Arg2:T2	
+R7	Part-Whole Arg1:T3 Arg2:T1	
+R8	Part-Whole Arg1:T8 Arg2:T3	
+R9	Part-Whole Arg1:T4 Arg2:T8	
+R10	Part-Whole Arg1:T5 Arg2:T3	
+R11	Contact Arg1:T16 Arg2:T17	
+T7	Parts 85 88	ベルト
+R12	Coreference Arg1:T3 Arg2:T7	

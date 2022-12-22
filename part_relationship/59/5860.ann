@@ -1,0 +1,12 @@
+T1	Parts 0 12	フロントドライブシャフト
+T2	Parts 13 25	外側等速ジョイントブーツ
+T3	Parts 88 95	等速ジョイント
+T5	Parts 73 84	ジョイント潤滑用グリス
+T6	Parts 137 142	ジョイント
+T8	Parts 51 54	ブーツ
+R1	Coreference Arg1:T2 Arg2:T8	
+R2	Contact Arg1:T8 Arg2:T3	
+R3	Coreference Arg1:T3 Arg2:T6	
+R4	Contact Arg1:T5 Arg2:T3	
+R5	Part-Whole Arg1:T2 Arg2:T1	
+R6	Part-Whole Arg1:T3 Arg2:T1	

@@ -1,0 +1,18 @@
+T1	Parts 0 8	スロットルボデー
+T2	Parts 33 39	ロックナット
+T3	Parts 63 69	ロックナット
+T6	Parts 148 153	スロットル
+T7	Parts 102 106	エンジン
+T8	Parts 160 164	エンジン
+T9	Parts 18 32	スロットルアジャストスクリュ
+T10	Parts 127 141	スロットルアジャストスクリュ
+T11	Parts 113 116	ナット
+R1	Contact Arg1:T9 Arg2:T2	
+R2	Part-Whole Arg1:T9 Arg2:T1	
+R3	Coreference Arg1:T2 Arg2:T3	
+R4	Coreference Arg1:T3 Arg2:T11	
+R5	Coreference Arg1:T9 Arg2:T10	
+R6	Coreference Arg1:T7 Arg2:T8	
+R7	Part-Whole Arg1:T6 Arg2:T1	
+R8	Connect Arg1:T1 Arg2:T7	
+R9	Contact Arg1:T10 Arg2:T6	

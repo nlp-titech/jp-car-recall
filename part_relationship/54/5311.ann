@@ -1,0 +1,7 @@
+T1	Parts 0 10	シートベルトバックル
+T2	Parts 74 80	シートベルト
+T3	Parts 27 31	バックル
+T4	Parts 11 14	カバー
+R1	Coreference Arg1:T1 Arg2:T3	
+R2	Part-Whole Arg1:T4 Arg2:T1	
+R3	Part-Whole Arg1:T3 Arg2:T2	

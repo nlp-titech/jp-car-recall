@@ -1,0 +1,8 @@
+T2	Parts 84 99	シートベルト・プリテンショナー
+T3	Parts 0 22	サイド及びカーテン・エアバッグ制御モジュール
+T4	Parts 104 119	サイド及びカーテン・エアバッグ
+T5	Parts 23 30	車両側コネクタ
+R1	Connect Arg1:T3 Arg2:T4	
+R2	Connect Arg1:T2 Arg2:T4	
+R4	Contact Arg1:T5 Arg2:T3	
+R3	Connect Arg1:T3 Arg2:T2	

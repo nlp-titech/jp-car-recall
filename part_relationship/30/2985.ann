@@ -1,0 +1,21 @@
+T21	Parts 48 52	電子基板
+T22	Parts 40 46	制御ユニット
+T23	Parts 53 58	コンデンサ
+T24	Parts 66 71	コンデンサ
+T1	Parts 0 35	車両挙動安定化制御システム（ビークル・スタビリティ・アシスト：ＶＳＡ）
+R1	Coreference Arg1:T24 Arg2:T23	
+T5	Parts 149 156	ブレーキペダル
+T6	Parts 167 170	センサ
+T7	Parts 184 192	ブレーキアシスト
+T8	Parts 203 206	制動灯
+T9	Parts 215 219	ブレーキ
+R2	Part-Whole Arg1:T22 Arg2:T1	
+R3	Part-Whole Arg1:T21 Arg2:T22	
+R4	Part-Whole Arg1:T23 Arg2:T22	
+R5	Contact Arg1:T21 Arg2:T23	
+R7	Connect Arg1:T6 Arg2:T7	
+R8	Connect Arg1:T5 Arg2:T6	
+R9	Connect Arg1:T7 Arg2:T9	
+R6	Connect Arg1:T5 Arg2:T8	
+R11	Connect Arg1:T5 Arg2:T9	
+R12	Part-Whole Arg1:T7 Arg2:T1	

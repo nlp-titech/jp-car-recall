@@ -1,0 +1,25 @@
+T18	Parts 158 161	原動機
+T19	Parts 136 143	エンジンＥＣＵ
+T1	Parts 0 11	インストルメントパネル
+T2	Parts 17 24	パネル固定金具
+T3	Parts 29 33	電気配線
+T4	Parts 35 43	干渉防止用保護材
+T5	Parts 56 58	金具
+T6	Parts 62 64	配線
+T7	Parts 108 110	配線
+T8	Parts 111 113	被覆
+T9	Parts 122 125	前照灯
+T10	Parts 130 134	窓ふき器
+R1	Coreference Arg1:T2 Arg2:T5	
+R2	Coreference Arg1:T3 Arg2:T6	
+R3	Coreference Arg1:T6 Arg2:T7	
+R4	Contact Arg1:T2 Arg2:T1	
+R5	Contact Arg1:T4 Arg2:T2	
+R6	Contact Arg1:T4 Arg2:T3	
+R7	Part-Whole Arg1:T8 Arg2:T7	
+R8	Contact Arg1:T7 Arg2:T9	
+R9	Contact Arg1:T7 Arg2:T10	
+R10	Contact Arg1:T7 Arg2:T19	
+R12	Connect Arg1:T19 Arg2:T18	
+T11	Parts 126 129	灯火類
+R11	Oneway-Coreference Arg1:T11 Arg2:T9	

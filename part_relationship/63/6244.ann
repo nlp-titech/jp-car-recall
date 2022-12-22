@@ -1,0 +1,8 @@
+T1	Parts 28 34	警報スイッチ
+T2	Parts 57 61	警報装置
+T3	Parts 0 4	大型バス
+T4	Parts 46 50	非常口扉
+R2	Part-Whole Arg1:T1 Arg2:T3	
+R3	Connect Arg1:T1 Arg2:T2	
+R4	Connect Arg1:T4 Arg2:T2	
+R5	Part-Whole Arg1:T4 Arg2:T3	

@@ -1,0 +1,8 @@
+T1	Parts 10 16	ブレーキ配管
+T2	Parts 55 61	ブレーキ配管
+T3	Parts 29 34	バッテリー
+T4	Parts 1 5	制動装置
+T5	Parts 66 69	制動液
+R1	Coreference Arg1:T2 Arg2:T1	
+R2	Contact Arg1:T5 Arg2:T2	
+R3	Part-Whole Arg1:T1 Arg2:T4	

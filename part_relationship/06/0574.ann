@@ -1,0 +1,19 @@
+T1	Parts 0 4	電気装置
+T2	Parts 9 15	前照灯バルブ
+T3	Parts 20 24	コネクタ
+T4	Parts 46 49	バルブ
+T5	Parts 52 56	コネクタ
+R1	Coreference Arg1:T5 Arg2:T3	
+T6	Parts 94 98	コネクタ
+R2	Coreference Arg1:T6 Arg2:T5	
+T7	Parts 119 123	コネクタ
+T8	Parts 128 131	前照灯
+T9	Parts 114 117	バルブ
+R3	Coreference Arg1:T7 Arg2:T6	
+R6	Contact Arg1:T3 Arg2:T2	
+R7	Coreference Arg1:T4 Arg2:T2	
+R4	Coreference Arg1:T4 Arg2:T9	
+R8	Part-Whole Arg1:T8 Arg2:T1	
+R9	Part-Whole Arg1:T3 Arg2:T1	
+R10	Part-Whole Arg1:T2 Arg2:T1	
+R5	Contact Arg1:T9 Arg2:T8	

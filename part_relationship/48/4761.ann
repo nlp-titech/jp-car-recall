@@ -1,0 +1,20 @@
+T1	Parts 22 27	燃料パイプ
+T2	Parts 78 83	燃料パイプ
+T3	Parts 9 14	燃料ポンプ
+T4	Parts 15 20	燃料ろ過器
+T6	Parts 0 4	燃料装置
+T7	Parts 62 65	原動機
+T8	Parts 91 93	燃料
+T9	Parts 28 34	配管サポート
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Contact Arg1:T2 Arg2:T8	
+R3	Contact Arg1:T3 Arg2:T8	
+R4	Contact Arg1:T4 Arg2:T8	
+R5	Part-Whole Arg1:T3 Arg2:T6	
+R6	Part-Whole Arg1:T4 Arg2:T6	
+R7	Part-Whole Arg1:T1 Arg2:T6	
+R8	Contact Arg1:T1 Arg2:T9	
+R9	Contact Arg1:T3 Arg2:T1	
+R10	Contact Arg1:T4 Arg2:T1	
+R11	Connect Arg1:T3 Arg2:T4	
+R12	Connect Arg1:T6 Arg2:T7	

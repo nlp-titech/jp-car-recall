@@ -1,0 +1,8 @@
+T1	Parts 0 6	静油圧変速機
+T2	Parts 7 12	走行モ－タ
+T3	Parts 13 18	切替バルブ
+T4	Parts 26 29	ボルト
+T5	Parts 49 52	ボルト
+T6	Parts 82 87	オーリング
+T7	Parts 92 95	作動油
+R1	Coreference Arg1:T4 Arg2:T5	

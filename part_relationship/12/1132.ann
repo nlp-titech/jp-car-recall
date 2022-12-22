@@ -1,0 +1,9 @@
+T18	Parts 132 138	駐車ブレーキ
+T19	Parts 85 87	配管
+T20	Parts 23 25	配管
+T21	Parts 0 8	ブレーキエア配管
+T2	Parts 27 42	運転席側乗降ステップ取付け金具
+T4	Parts 104 107	警音器
+R1	Coreference Arg1:T21 Arg2:T20	
+R2	Coreference Arg1:T20 Arg2:T19	
+R4	Connect Arg1:T18 Arg2:T19	

@@ -1,0 +1,11 @@
+T1	Parts 0 12	パワーステアリングポンプ
+T2	Parts 13 18	圧力ホース
+T3	Parts 58 62	ハンドル
+T4	Parts 40 43	作動油
+T5	Parts 80 83	作動油
+T7	Parts 84 87	排気管
+R1	Coreference Arg1:T5 Arg2:T4	
+R2	Contact Arg1:T2 Arg2:T1	
+R3	Contact Arg1:T4 Arg2:T2	
+R4	Contact Arg1:T4 Arg2:T1	
+R5	Connect Arg1:T3 Arg2:T1	

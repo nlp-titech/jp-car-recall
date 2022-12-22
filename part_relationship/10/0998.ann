@@ -1,0 +1,8 @@
+T1	Parts 18 61	補助ステアリングシステム（運転席を後方に向けて作業する際の操作性を確保するための装置）
+T2	Parts 68 72	システム
+T3	Parts 90 94	システム
+T4	Parts 95 114	操作スイッチ（逆ステアリングスイッチ）
+T5	Parts 135 148	ブーム後方位置検出スイッチ
+R1	Coreference Arg1:T3 Arg2:T2	
+R2	Coreference Arg1:T2 Arg2:T1	
+R4	Connect Arg1:T3 Arg2:T4	

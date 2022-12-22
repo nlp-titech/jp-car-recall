@@ -1,0 +1,11 @@
+T16	Parts 11 14	遮熱板
+T17	Parts 48 51	排気管
+T18	Parts 52 55	遮熱板
+T19	Parts 97 100	遮熱板
+T1	Parts 0 3	排気管
+T2	Parts 38 41	原動機
+R1	Coreference Arg1:T1 Arg2:T17	
+R3	Coreference Arg1:T18 Arg2:T19	
+R4	Contact Arg1:T16 Arg2:T1	
+R5	Coreference Arg1:T18 Arg2:T16	
+R2	Contact Arg1:T2 Arg2:T17	

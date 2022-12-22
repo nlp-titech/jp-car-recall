@@ -1,0 +1,15 @@
+T1	Parts 52 61	スロットルケーブル
+T2	Parts 95 104	スロットルケーブル
+T3	Parts 106 112	インナワイヤ
+T5	Parts 116 121	スロットル
+T6	Parts 9 19	スロットルハウジング
+T7	Parts 39 44	ハウジング
+T8	Parts 135 139	エンジン
+T9	Parts 0 4	ハンドル
+R1	Contact Arg1:T6 Arg2:T9	
+R2	Coreference Arg1:T6 Arg2:T7	
+R3	Contact Arg1:T1 Arg2:T6	
+R4	Coreference Arg1:T1 Arg2:T2	
+R5	Part-Whole Arg1:T3 Arg2:T2	
+R6	Connect Arg1:T1 Arg2:T5	
+R7	Connect Arg1:T5 Arg2:T8	

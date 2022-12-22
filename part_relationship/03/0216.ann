@@ -1,0 +1,17 @@
+T14	Parts 99 107	チルト用シリンダ
+T15	Parts 108 111	ロッド
+T16	Parts 116 121	ハンドル軸
+T1	Parts 0 5	かじ取装置
+T3	Parts 28 35	チルトハンドル
+T5	Parts 37 46	角度調整用シリンダ
+R4	Part-Whole Arg1:T5 Arg2:T3	
+R5	Part-Whole Arg1:T15 Arg2:T14	
+R7	Contact Arg1:T16 Arg2:T15	
+R2	Part-Whole Arg1:T3 Arg2:T1	
+R1	Part-Whole Arg1:T16 Arg2:T1	
+T2	Parts 50 52	ピン
+R3	Contact Arg1:T2 Arg2:T5	
+R6	Coreference Arg1:T5 Arg2:T14	
+T4	Parts 10 17	かじ取ハンドル
+R8	Connect Arg1:T3 Arg2:T4	
+R9	Part-Whole Arg1:T4 Arg2:T1	

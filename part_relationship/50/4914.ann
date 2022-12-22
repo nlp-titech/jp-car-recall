@@ -1,0 +1,17 @@
+T1	Parts 12 31	トランスミッション制御用コンピューター
+T4	Parts 1 7	動力伝達装置
+T5	Parts 52 57	コネクター
+T7	Parts 42 51	クラッチ信号用配線
+T11	Parts 103 105	ギア
+T12	Parts 135 139	後進ギア
+T13	Parts 143 145	車両
+T15	Parts 38 40	配線
+R3	Contact Arg1:T15 Arg2:T1	
+R4	Contact Arg1:T5 Arg2:T7	
+R5	Part-Whole Arg1:T1 Arg2:T4	
+R7	Part-Whole Arg1:T11 Arg2:T4	
+R8	Part-Whole Arg1:T4 Arg2:T13	
+R1	Oneway-Coreference Arg1:T11 Arg2:T12	
+R2	Contact Arg1:T5 Arg2:T15	
+R6	Part-Whole Arg1:T15 Arg2:T4	
+R10	Part-Whole Arg1:T7 Arg2:T4	

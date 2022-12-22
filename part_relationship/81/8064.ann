@@ -1,0 +1,10 @@
+T1	Parts 0 10	統合ブレーキシステム
+T2	Parts 11 21	油圧回路制御ユニット
+T3	Parts 41 51	油圧ソレノイドバルブ
+T4	Parts 79 83	油圧回路
+T5	Parts 90 97	ブレーキ警告灯
+R1	Connect Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T4 Arg2:T1	
+R2	Connect Arg1:T3 Arg2:T4	
+R4	Part-Whole Arg1:T3 Arg2:T1	
+R5	Connect Arg1:T5 Arg2:T1	

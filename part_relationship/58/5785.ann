@@ -1,0 +1,13 @@
+T1	Parts 69 81	パワーステアリングオイル
+T2	Parts 0 12	油圧式パワーステアリング
+T3	Parts 37 46	クイックコネクター
+T7	Parts 107 111	ハンドル
+T8	Parts 13 20	リターンパイプ
+T9	Parts 25 36	アッパーリターンパイプ
+R1	Connect Arg1:T2 Arg2:T7	
+R2	Part-Whole Arg1:T8 Arg2:T2	
+R3	Part-Whole Arg1:T9 Arg2:T8	
+R4	Contact Arg1:T9 Arg2:T3	
+R6	Contact Arg1:T8 Arg2:T1	
+T4	Parts 47 55	ロックスプリング
+R5	Part-Whole Arg1:T4 Arg2:T3	

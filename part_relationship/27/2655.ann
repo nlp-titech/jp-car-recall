@@ -1,0 +1,42 @@
+T16	Parts 130 140	フランジカップリング
+T17	Parts 141 146	スプライン
+T18	Parts 150 158	キャッスルナット
+T19	Parts 159 161	ネジ
+T20	Parts 194 204	フランジカップリング
+T21	Parts 211 221	フランジカップリング
+T22	Parts 57 67	フランジカップリング
+T23	Parts 94 102	キャッスルナット
+T24	Parts 115 123	キャッスルナット
+T27	Parts 53 56	後後軸
+T28	Parts 35 38	後後軸
+T30	Parts 231 234	後後軸
+T1	Parts 9 15	１２段変速機
+T2	Parts 20 26	大型トラック
+R1	Coreference Arg1:T27 Arg2:T28	
+T3	Parts 31 34	後前軸
+T4	Parts 40 48	プロペラシャフト
+T5	Parts 68 76	ドライブピニオン
+R2	Coreference Arg1:T24 Arg2:T23	
+R3	Coreference Arg1:T16 Arg2:T22	
+R4	Coreference Arg1:T18 Arg2:T24	
+R5	Coreference Arg1:T21 Arg2:T20	
+R6	Coreference Arg1:T20 Arg2:T16	
+T7	Parts 227 230	後前軸
+R7	Coreference Arg1:T7 Arg2:T3	
+R8	Coreference Arg1:T30 Arg2:T28	
+T8	Parts 236 244	プロペラシャフト
+R9	Coreference Arg1:T8 Arg2:T4	
+R11	Part-Whole Arg1:T3 Arg2:T2	
+R12	Part-Whole Arg1:T28 Arg2:T2	
+R13	Connect Arg1:T3 Arg2:T28	
+R14	Connect Arg1:T3 Arg2:T4	
+R15	Connect Arg1:T28 Arg2:T4	
+R16	Part-Whole Arg1:T22 Arg2:T27	
+R17	Part-Whole Arg1:T5 Arg2:T27	
+R18	Contact Arg1:T22 Arg2:T5	
+R19	Contact Arg1:T23 Arg2:T5	
+R20	Part-Whole Arg1:T17 Arg2:T16	
+R21	Part-Whole Arg1:T19 Arg2:T18	
+R10	Part-Whole Arg1:T1 Arg2:T2	
+R22	Part-Whole Arg1:T23 Arg2:T27	
+R23	Part-Whole Arg1:T4 Arg2:T2	

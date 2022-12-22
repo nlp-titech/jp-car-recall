@@ -1,0 +1,11 @@
+T13	Parts 67 69	車軸
+T14	Parts 14 16	車軸
+T1	Parts 0 6	農耕トラクタ
+T2	Parts 7 9	後輪
+R1	Coreference Arg1:T14 Arg2:T13	
+T3	Parts 70 73	タイヤ
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T14 Arg2:T1	
+R4	Contact Arg1:T2 Arg2:T14	
+R5	Contact Arg1:T13 Arg2:T3	
+R6	Part-Whole Arg1:T3 Arg2:T1	

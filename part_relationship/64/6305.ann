@@ -1,0 +1,14 @@
+T2	Parts 35 41	ステアリング
+T4	Parts 92 98	ステアリング
+T6	Parts 5 10	かじ取装置
+T8	Parts 0 4	連節バス
+T1	Parts 15 24	ステアリングカラム
+#1	AnnotatorNotes T1	ステアリングコラム？
+T3	Parts 55 64	ステアリングカラム
+R1	Part-Whole Arg1:T6 Arg2:T8	
+R2	Coreference Arg1:T6 Arg2:T2	
+R3	Part-Whole Arg1:T1 Arg2:T6	
+R4	Coreference Arg1:T1 Arg2:T3	
+R5	Coreference Arg1:T2 Arg2:T4	
+T5	Parts 130 139	ステアリングカラム
+R6	Coreference Arg1:T3 Arg2:T5	

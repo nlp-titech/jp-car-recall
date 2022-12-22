@@ -1,0 +1,11 @@
+T6	Parts 11 21	後部プロペラシャフト
+T7	Parts 99 102	分配機
+T8	Parts 103 107	シャフト
+T1	Parts 0 6	動力伝達装置
+T2	Parts 52 60	プロペラシャフト
+R1	Coreference Arg1:T2 Arg2:T6	
+R3	Part-Whole Arg1:T6 Arg2:T1	
+R5	Part-Whole Arg1:T8 Arg2:T7	
+R6	Part-Whole Arg1:T7 Arg2:T1	
+T3	Parts 80 97	プロペラシャフト取付センターボルト
+R2	Contact Arg1:T2 Arg2:T3	

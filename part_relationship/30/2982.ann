@@ -1,0 +1,16 @@
+T2	Parts 0 19	ホイールパーキングブレーキ用エアタンク
+T3	Parts 24 26	車両
+T4	Parts 33 38	エアタンク
+R1	Coreference Arg1:T4 Arg2:T2	
+T5	Parts 39 49	排水用ドレーンコック
+T6	Parts 50 58	プロペラシャフト
+T7	Parts 92 97	エアタンク
+R2	Coreference Arg1:T7 Arg2:T4	
+T8	Parts 98 105	ドレーンコック
+R3	Coreference Arg1:T8 Arg2:T5	
+T10	Parts 121 134	ホイールパーキングブレーキ
+R7	Part-Whole Arg1:T5 Arg2:T4	
+R8	Part-Whole Arg1:T6 Arg2:T3	
+R4	Part-Whole Arg1:T2 Arg2:T3	
+R5	Connect Arg1:T7 Arg2:T10	
+R6	Part-Whole Arg1:T10 Arg2:T3	

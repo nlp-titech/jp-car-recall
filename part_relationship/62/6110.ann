@@ -1,0 +1,8 @@
+T1	Parts 0 9	運転者席エアバッグ
+T2	Parts 51 59	エアバッグ警告灯
+T3	Parts 68 73	エアバッグ
+T4	Parts 14 21	内部コネクター
+R1	Part-Whole Arg1:T4 Arg2:T1	
+R2	Oneway-Coreference Arg1:T1 Arg2:T3	
+R3	Connect Arg1:T1 Arg2:T2	
+R4	Connect Arg1:T2 Arg2:T3	

@@ -1,0 +1,18 @@
+T1	Parts 80 87	エンジンＥＣＵ
+T3	Parts 148 153	バッテリー
+T4	Parts 133 140	電動燃料ポンプ
+T5	Parts 0 14	エンジン電装用配電モジュール
+T6	Parts 100 104	エンジン
+T7	Parts 159 163	エンジン
+T10	Parts 33 34	蓋
+T12	Parts 27 32	モジュール
+T13	Parts 51 56	モジュール
+R1	Coreference Arg1:T12 Arg2:T5	
+R2	Coreference Arg1:T13 Arg2:T12	
+R4	Connect Arg1:T1 Arg2:T13	
+R5	Connect Arg1:T6 Arg2:T1	
+R6	Coreference Arg1:T7 Arg2:T6	
+R10	Connect Arg1:T3 Arg2:T4	
+R7	Part-Whole Arg1:T10 Arg2:T12	
+R3	Connect Arg1:T13 Arg2:T4	
+R8	Connect Arg1:T3 Arg2:T7	

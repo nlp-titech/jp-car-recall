@@ -1,0 +1,5 @@
+T1	Parts 0 6	駐車制動装置
+T2	Parts 15 26	駐車用ブレーキケーブル
+T3	Parts 38 48	後輪用ブレーキパイプ
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T1	

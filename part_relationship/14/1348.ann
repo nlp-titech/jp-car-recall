@@ -1,0 +1,14 @@
+T12	Parts 113 117	ケーブル
+T13	Parts 11 57	センターブレーキ側ケーブルエンド（センターブレーキレバーとの接続固定用ケーブル先端部の金具）
+T14	Parts 68 75	ケーブルエンド
+T1	Parts 0 10	駐車ブレーキケーブル
+T2	Parts 76 79	レバー
+T4	Parts 201 205	対象車両
+T5	Parts 220 224	対象車両
+R1	Coreference Arg1:T13 Arg2:T14	
+R2	Coreference Arg1:T4 Arg2:T5	
+R3	Part-Whole Arg1:T13 Arg2:T1	
+R5	Coreference Arg1:T12 Arg2:T1	
+R6	Part-Whole Arg1:T12 Arg2:T4	
+R7	Part-Whole Arg1:T2 Arg2:T4	
+R4	Contact Arg1:T14 Arg2:T2	

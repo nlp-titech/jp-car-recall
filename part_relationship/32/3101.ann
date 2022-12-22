@@ -1,0 +1,31 @@
+T11	Parts 47 50	発電機
+T12	Parts 33 36	モータ
+T14	Parts 170 174	ヒューズ
+T1	Parts 0 10	ハイブリッドシステム
+T2	Parts 11 28	電力変換器（ＤＣ－ＡＣインバータ）
+T3	Parts 41 43	回路
+T4	Parts 55 57	回路
+T5	Parts 59 61	素子
+T7	Parts 81 86	放熱用半田
+T8	Parts 95 100	放熱用半田
+R2	Coreference Arg1:T7 Arg2:T8	
+T9	Parts 103 105	素子
+R1	Coreference Arg1:T5 Arg2:T13	
+T6	Parts 156 161	制御系回路
+T10	Parts 165 169	電源回路
+T13	Parts 72 74	素子
+R5	Coreference Arg1:T13 Arg2:T9	
+R6	Part-Whole Arg1:T14 Arg2:T10	
+R3	Oneway-Coreference Arg1:T4 Arg2:T6	
+R4	Oneway-Coreference Arg1:T3 Arg2:T6	
+R7	Connect Arg1:T3 Arg2:T12	
+R8	Connect Arg1:T4 Arg2:T11	
+R9	Part-Whole Arg1:T5 Arg2:T4	
+R10	Part-Whole Arg1:T5 Arg2:T3	
+R11	Contact Arg1:T7 Arg2:T13	
+R12	Part-Whole Arg1:T7 Arg2:T4	
+R13	Part-Whole Arg1:T7 Arg2:T3	
+R14	Connect Arg1:T10 Arg2:T6	
+R15	Part-Whole Arg1:T3 Arg2:T2	
+R16	Part-Whole Arg1:T4 Arg2:T2	
+R17	Part-Whole Arg1:T2 Arg2:T1	

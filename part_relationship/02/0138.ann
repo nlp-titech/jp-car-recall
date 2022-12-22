@@ -1,0 +1,13 @@
+T10	Parts 0 2	車枠
+T11	Parts 3 5	車体
+T12	Parts 20 32	フロントブレーキチューブ
+T14	Parts 53 58	グロメット
+T15	Parts 88 96	ブレーキチューブ
+R1	Coreference Arg1:T12 Arg2:T15	
+T1	Parts 107 112	ブレーキ液
+R2	Contact Arg1:T11 Arg2:T10	
+R5	Contact Arg1:T1 Arg2:T15	
+R7	Contact Arg1:T12 Arg2:T10	
+T2	Parts 38 48	ホイールハウスパネル
+R3	Part-Whole Arg1:T2 Arg2:T10	
+R4	Part-Whole Arg1:T14 Arg2:T2	

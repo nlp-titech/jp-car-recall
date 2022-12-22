@@ -1,0 +1,11 @@
+T1	Parts 0 6	駐車ブレーキ
+T3	Parts 120 126	駐車ブレーキ
+T6	Parts 85 89	キャリパ
+T7	Parts 48 51	ボルト
+T8	Parts 111 114	ボルト
+T2	Parts 11 27	駐車ブレーキ用キャリパ取付ボルト
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R3	Coreference Arg1:T2 Arg2:T7	
+R4	Contact Arg1:T7 Arg2:T6	
+R5	Coreference Arg1:T7 Arg2:T8	
+R6	Coreference Arg1:T1 Arg2:T3	

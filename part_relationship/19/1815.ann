@@ -1,0 +1,15 @@
+T1	Parts 13 41	車両（運転者席の前面、側面及び後面が開放されているもの）
+T2	Parts 46 55	駐車ブレーキレバー
+T3	Parts 63 67	スイッチ
+T4	Parts 79 83	スイッチ
+R1	Coreference Arg1:T3 Arg2:T4	
+T5	Parts 93 97	スイッチ
+R2	Coreference Arg1:T4 Arg2:T5	
+T6	Parts 133 139	駐車ブレーキ
+R3	Connect Arg1:T3 Arg2:T2	
+R4	Connect Arg1:T2 Arg2:T6	
+R5	Part-Whole Arg1:T6 Arg2:T1	
+R6	Part-Whole Arg1:T3 Arg2:T1	
+R7	Part-Whole Arg1:T2 Arg2:T1	
+T7	Parts 0 5	キャノピー
+R8	Part-Whole Arg1:T7 Arg2:T1	

@@ -1,0 +1,5 @@
+T8	Parts 2 8	前輪緩衝装置
+T9	Parts 9 17	コイルスプリング
+T10	Parts 63 71	コイルスプリング
+R1	Coreference Arg1:T9 Arg2:T10	
+R2	Part-Whole Arg1:T9 Arg2:T8	

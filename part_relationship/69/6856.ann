@@ -1,0 +1,18 @@
+T1	Parts 43 48	スプリング
+T2	Parts 58 63	スプリング
+T4	Parts 23 28	操作レバー
+T5	Parts 79 84	操作レバー
+T7	Parts 110 113	レバー
+T11	Parts 117 119	荷台
+T3	Parts 0 10	荷台ダンプ操作レバー
+R1	Coreference Arg1:T3 Arg2:T4	
+R2	Part-Whole Arg1:T1 Arg2:T4	
+R3	Coreference Arg1:T1 Arg2:T2	
+R4	Coreference Arg1:T4 Arg2:T5	
+R5	Coreference Arg1:T5 Arg2:T7	
+R6	Connect Arg1:T7 Arg2:T11	
+T6	Parts 29 37	ロック解除ボタン
+R7	Part-Whole Arg1:T6 Arg2:T4	
+T8	Parts 85 93	ロック解除ボタン
+R8	Coreference Arg1:T6 Arg2:T8	
+R9	Contact Arg1:T1 Arg2:T6	

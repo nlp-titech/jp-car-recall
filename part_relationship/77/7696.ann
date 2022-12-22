@@ -1,0 +1,11 @@
+T1	Parts 0 4	トレーラ
+T2	Parts 5 9	制動装置
+T3	Parts 14 27	スプリングブレーキチャンバ
+T4	Parts 28 35	プッシュロッド
+T5	Parts 46 53	ジョイントピン
+T6	Parts 69 76	プッシュロッド
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T4 Arg2:T6	
+R3	Part-Whole Arg1:T3 Arg2:T2	
+R4	Contact Arg1:T4 Arg2:T3	
+R5	Contact Arg1:T5 Arg2:T3	

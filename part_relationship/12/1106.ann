@@ -1,0 +1,13 @@
+T16	Parts 29 34	ブラケット
+T17	Parts 58 63	ブラケット
+T18	Parts 93 98	ブラケット
+T19	Parts 103 109	スペアタイヤ
+T1	Parts 0 10	スペアタイヤキャリア
+T2	Parts 11 13	車両
+R1	Coreference Arg1:T16 Arg2:T17	
+R2	Coreference Arg1:T17 Arg2:T18	
+R3	Part-Whole Arg1:T1 Arg2:T2	
+R4	Contact Arg1:T16 Arg2:T1	
+R5	Contact Arg1:T19 Arg2:T18	
+R6	Part-Whole Arg1:T16 Arg2:T2	
+R7	Part-Whole Arg1:T19 Arg2:T2	

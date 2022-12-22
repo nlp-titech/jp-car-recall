@@ -1,0 +1,10 @@
+T7	Parts 127 132	ロアアーム
+T1	Parts 0 15	フロントサスペンションフレーム
+T2	Parts 40 51	サスペンションフレーム
+T3	Parts 52 64	ロアアーム取付ブラケット
+T4	Parts 103 115	ロアアーム取付ブラケット
+R1	Coreference Arg1:T3 Arg2:T4	
+R2	Contact Arg1:T4 Arg2:T7	
+R3	Connect Arg1:T3 Arg2:T2	
+R4	Coreference Arg1:T1 Arg2:T2	
+R5	Contact Arg1:T2 Arg2:T7	

@@ -1,0 +1,20 @@
+T1	Parts 0 9	スロットルケーブル
+T2	Parts 123 132	スロットルケーブル
+T3	Parts 23 31	スロットルボディ
+T4	Parts 93 101	スロットルボディ
+T5	Parts 73 78	スロットル
+T6	Parts 137 141	エンジン
+T7	Parts 102 106	ケーブル
+T8	Parts 33 37	固定金具
+T10	Parts 89 92	ブーツ
+T11	Parts 45 50	防水ブーツ
+R2	Contact Arg1:T8 Arg2:T3	
+R3	Contact Arg1:T11 Arg2:T8	
+R5	Coreference Arg1:T11 Arg2:T10	
+R6	Coreference Arg1:T3 Arg2:T4	
+R7	Coreference Arg1:T1 Arg2:T7	
+R8	Coreference Arg1:T7 Arg2:T2	
+R1	Connect Arg1:T5 Arg2:T6	
+R9	Contact Arg1:T1 Arg2:T8	
+R10	Part-Whole Arg1:T3 Arg2:T5	
+R4	Contact Arg1:T1 Arg2:T3	

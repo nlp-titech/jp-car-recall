@@ -1,0 +1,8 @@
+T1	Parts 0 24	エンジンユニット（エンジン、ミッション及び後輪）
+T2	Parts 34 47	エンジンハンガーブラケット
+T4	Parts 93 97	ユニット
+R1	Coreference Arg1:T4 Arg2:T1	
+T5	Parts 25 27	車体
+R2	Contact Arg1:T1 Arg2:T5	
+R3	Contact Arg1:T1 Arg2:T2	
+R4	Contact Arg1:T5 Arg2:T2	

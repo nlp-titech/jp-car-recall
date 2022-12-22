@@ -1,0 +1,17 @@
+T14	Parts 123 128	補助制動灯
+T15	Parts 118 121	制動灯
+T16	Parts 105 109	スイッチ
+T1	Parts 7 14	制動灯スイッチ
+T3	Parts 23 26	潤滑剤
+T5	Parts 50 55	潤滑剤成分
+T10	Parts 189 191	車両
+T11	Parts 0 2	車両
+R1	Coreference Arg1:T11 Arg2:T10	
+R5	Coreference Arg1:T1 Arg2:T16	
+R6	Part-Whole Arg1:T1 Arg2:T11	
+R2	Part-Whole Arg1:T5 Arg2:T3	
+R3	Part-Whole Arg1:T3 Arg2:T11	
+R7	Connect Arg1:T1 Arg2:T15	
+R8	Connect Arg1:T1 Arg2:T14	
+R4	Part-Whole Arg1:T15 Arg2:T11	
+R9	Part-Whole Arg1:T14 Arg2:T11	

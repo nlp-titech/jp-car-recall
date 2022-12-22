@@ -1,0 +1,9 @@
+T1	Parts 0 16	エアバッグコントロールモジュール
+T2	Parts 36 45	フロントエアバッグ
+T3	Parts 71 80	フロントエアバッグ
+T4	Parts 47 54	プリテンショナ
+T5	Parts 82 89	プリテンショナ
+R2	Coreference Arg1:T2 Arg2:T3	
+R3	Coreference Arg1:T4 Arg2:T5	
+R4	Connect Arg1:T1 Arg2:T2	
+R5	Connect Arg1:T1 Arg2:T4	

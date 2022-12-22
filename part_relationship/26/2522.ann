@@ -1,0 +1,32 @@
+T24	Parts 15 23	補機類駆動ベルト
+T25	Parts 32 37	スプリング
+T26	Parts 50 55	スプリング
+T1	Parts 0 6	オルタネータ
+T2	Parts 7 10	補機類
+R1	Coreference Arg1:T26 Arg2:T25	
+T3	Parts 60 68	補機類駆動ベルト
+T4	Parts 24 29	テンショナ
+R2	Coreference Arg1:T3 Arg2:T24	
+T5	Parts 93 96	ベルト
+R3	Coreference Arg1:T5 Arg2:T3	
+T6	Parts 125 128	ベルト
+R4	Coreference Arg1:T6 Arg2:T5	
+T7	Parts 132 141	オルタネータプーリ
+T8	Parts 142 152	ウォータポンププーリ
+T9	Parts 154 169	パワーステアリングポンププーリ
+T10	Parts 193 196	警告灯
+T12	Parts 216 220	ハンドル
+R7	Contact Arg1:T4 Arg2:T24	
+R8	Part-Whole Arg1:T25 Arg2:T4	
+R9	Contact Arg1:T6 Arg2:T7	
+R10	Contact Arg1:T6 Arg2:T8	
+R11	Contact Arg1:T6 Arg2:T9	
+R12	Part-Whole Arg1:T7 Arg2:T1	
+R13	Part-Whole Arg1:T8 Arg2:T2	
+R14	Part-Whole Arg1:T9 Arg2:T2	
+T11	Parts 206 210	パワステ
+R5	Oneway-Coreference Arg1:T2 Arg2:T1	
+R6	Connect Arg1:T2 Arg2:T24	
+R16	Connect Arg1:T9 Arg2:T11	
+R15	Connect Arg1:T11 Arg2:T12	
+R17	Connect Arg1:T2 Arg2:T10	

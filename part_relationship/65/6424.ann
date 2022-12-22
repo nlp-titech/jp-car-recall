@@ -1,0 +1,13 @@
+T1	Parts 93 101	ブレーキフルード
+T2	Parts 5 12	ブレーキパイプ
+T3	Parts 40 47	ブレーキパイプ
+T4	Parts 75 82	ブレーキパイプ
+T5	Parts 17 26	ＡＢＳ油圧調整装置
+T6	Parts 66 70	エンジン
+T7	Parts 0 4	制動装置
+R1	Part-Whole Arg1:T2 Arg2:T7	
+R2	Coreference Arg1:T2 Arg2:T3	
+R3	Contact Arg1:T2 Arg2:T5	
+R4	Contact Arg1:T1 Arg2:T4	
+R5	Part-Whole Arg1:T5 Arg2:T7	
+R6	Coreference Arg1:T3 Arg2:T4	

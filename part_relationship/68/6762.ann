@@ -1,0 +1,13 @@
+T2	Parts 39 46	金属製プレート
+T3	Parts 61 65	プレート
+T4	Parts 0 19	年少者補助乗車装置（チャイルドシート）
+T5	Parts 24 35	股ベルトアッセンブリー
+T6	Parts 72 76	股ベルト
+T7	Parts 118 121	ベルト
+R2	Coreference Arg1:T6 Arg2:T7	
+R3	Coreference Arg1:T2 Arg2:T3	
+R4	Part-Whole Arg1:T5 Arg2:T4	
+R5	Part-Whole Arg1:T2 Arg2:T4	
+R6	Contact Arg1:T5 Arg2:T2	
+R1	Part-Whole Arg1:T6 Arg2:T5	
+R7	Contact Arg1:T3 Arg2:T6	

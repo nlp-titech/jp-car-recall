@@ -1,0 +1,5 @@
+T10	Parts 61 63	車輪
+T11	Parts 45 51	取付けボルト
+T12	Parts 0 8	車輪取付けボルト
+R1	Coreference Arg1:T11 Arg2:T12	
+R2	Contact Arg1:T11 Arg2:T10	

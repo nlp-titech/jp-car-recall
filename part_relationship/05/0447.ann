@@ -1,0 +1,11 @@
+T8	Parts 19 31	制御装置（コントローラ）
+T9	Parts 45 51	コントローラ
+T10	Parts 80 84	ブレード
+T1	Parts 0 9	作業機（ブレード）
+T2	Parts 10 14	制御装置
+R1	Coreference Arg1:T9 Arg2:T8	
+R2	Coreference Arg1:T1 Arg2:T10	
+T3	Parts 53 55	配線
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Coreference Arg1:T2 Arg2:T8	
+R6	Contact Arg1:T3 Arg2:T9	

@@ -1,0 +1,10 @@
+T12	Parts 73 77	コネクタ
+T1	Parts 0 37	集中アース・ジョイントコネクタ（前照灯等の灯火器類及び警音器等のアース用）
+R1	Coreference Arg1:T12 Arg2:T1	
+T2	Parts 115 118	前照灯
+T3	Parts 120 123	灯火器
+T4	Parts 126 129	警音器
+R3	Connect Arg1:T1 Arg2:T2	
+R4	Part-Whole Arg1:T2 Arg2:T3	
+R5	Connect Arg1:T1 Arg2:T4	
+R6	Connect Arg1:T1 Arg2:T3	

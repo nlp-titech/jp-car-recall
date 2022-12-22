@@ -1,0 +1,24 @@
+T14	Parts 159 165	静油圧変速機
+T15	Parts 22 27	油圧ポンプ
+T16	Parts 31 36	リヤポンプ
+T17	Parts 37 42	締結ボルト
+T18	Parts 77 80	ボルト
+T19	Parts 95 98	ボルト
+T1	Parts 0 6	静油圧変速機
+T2	Parts 12 17	油圧ポンプ
+R1	Coreference Arg1:T2 Arg2:T15	
+T4	Parts 55 58	メネジ
+R2	Coreference Arg1:T17 Arg2:T18	
+R3	Coreference Arg1:T18 Arg2:T19	
+T5	Parts 130 133	ポンプ
+T6	Parts 138 141	作動油
+T7	Parts 151 154	作動油
+R4	Coreference Arg1:T6 Arg2:T7	
+R5	Coreference Arg1:T1 Arg2:T14	
+R6	Contact Arg1:T17 Arg2:T16	
+R8	Contact Arg1:T4 Arg2:T17	
+R9	Connect Arg1:T2 Arg2:T1	
+R10	Part-Whole Arg1:T16 Arg2:T15	
+R11	Coreference Arg1:T5 Arg2:T16	
+R12	Contact Arg1:T6 Arg2:T5	
+R7	Contact Arg1:T16 Arg2:T4	

@@ -1,0 +1,11 @@
+T12	Parts 22 30	気筒判別用ロータ
+T13	Parts 88 91	原動機
+T1	Parts 0 3	原動機
+T2	Parts 8 14	カムシャフト
+T3	Parts 65 67	燃料
+T4	Parts 106 108	触媒
+R1	Coreference Arg1:T13 Arg2:T1	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Contact Arg1:T12 Arg2:T2	
+R4	Contact Arg1:T3 Arg2:T1	
+R5	Contact Arg1:T4 Arg2:T13	

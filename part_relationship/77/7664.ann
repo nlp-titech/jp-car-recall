@@ -1,0 +1,12 @@
+T1	Parts 0 9	燃料デリバリパイプ
+T2	Parts 10 16	インジェクタ
+T3	Parts 32 38	インジェクタ
+T4	Parts 39 45	シールリング
+T5	Parts 48 51	パイプ
+T6	Parts 84 90	シールリング
+T7	Parts 98 100	燃料
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Coreference Arg1:T1 Arg2:T5	
+R3	Contact Arg1:T4 Arg2:T3	
+R4	Coreference Arg1:T4 Arg2:T6	
+R5	Contact Arg1:T7 Arg2:T1	

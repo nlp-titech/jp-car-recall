@@ -1,0 +1,9 @@
+T1	Parts 0 10	ノンステップ路線バス
+T2	Parts 11 21	グライドスライド式扉
+T3	Parts 54 55	扉
+T4	Parts 37 38	扉
+R1	Coreference Arg1:T2 Arg2:T4	
+R2	Coreference Arg1:T4 Arg2:T3	
+T5	Parts 61 62	扉
+R3	Coreference Arg1:T3 Arg2:T5	
+R4	Part-Whole Arg1:T2 Arg2:T1	

@@ -1,0 +1,17 @@
+T1	Parts 1 23	フロント及びインターアクスルプロペラシャフト
+T2	Parts 28 39	ユニバーサルジョイント
+T3	Parts 52 60	ベアリングカップ
+T4	Parts 62 71	スラストワッシャー
+T5	Parts 92 100	ベアリングカップ
+T6	Parts 104 107	シール
+T7	Parts 117 122	ベアリング
+T8	Parts 127 138	ユニバーサルジョイント
+T9	Parts 151 159	プロペラシャフト
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T4 Arg2:T3	
+R5	Coreference Arg1:T3 Arg2:T5	
+R6	Contact Arg1:T6 Arg2:T5	
+R2	Part-Whole Arg1:T5 Arg2:T7	
+R7	Part-Whole Arg1:T7 Arg2:T8	
+R8	Oneway-Coreference Arg1:T1 Arg2:T9	
+R4	Coreference Arg1:T2 Arg2:T8	

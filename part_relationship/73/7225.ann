@@ -1,0 +1,16 @@
+T1	Parts 107 115	エアバッグ警告灯
+T3	Parts 120 128	サイドエアバッグ
+T4	Parts 31 43	サイドエアバッグコネクタ
+T5	Parts 70 74	コネクタ
+T6	Parts 85 89	コネクタ
+T7	Parts 0 4	運転者席
+T9	Parts 23 30	シートフォーム
+T11	Parts 6 9	助手席
+T2	Parts 57 64	シートフォーム
+R1	Coreference Arg1:T9 Arg2:T2	
+R2	Coreference Arg1:T4 Arg2:T5	
+R3	Coreference Arg1:T5 Arg2:T6	
+R5	Connect Arg1:T3 Arg2:T4	
+R6	Part-Whole Arg1:T9 Arg2:T11	
+R7	Part-Whole Arg1:T9 Arg2:T7	
+R10	Connect Arg1:T1 Arg2:T6	

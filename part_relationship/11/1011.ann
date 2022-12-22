@@ -1,0 +1,15 @@
+T12	Parts 88 90	座席
+T13	Parts 63 65	座席
+T14	Parts 72 75	ヒンジ
+T15	Parts 19 25	転倒防止金具
+T1	Parts 0 2	バス
+T2	Parts 8 14	前転倒式座席
+T3	Parts 152 155	対象車
+R1	Coreference Arg1:T2 Arg2:T13	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T15 Arg2:T1	
+R4	Contact Arg1:T14 Arg2:T13	
+R5	Coreference Arg1:T12 Arg2:T13	
+R6	Coreference Arg1:T3 Arg2:T1	
+R7	Contact Arg1:T15 Arg2:T2	
+R8	Part-Whole Arg1:T14 Arg2:T1	

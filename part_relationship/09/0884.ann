@@ -1,0 +1,13 @@
+T15	Parts 35 41	ゴム製シール
+T16	Parts 0 12	ブレーキマスターシリンダ
+T17	Parts 13 17	内部金具
+T1	Parts 28 32	シリンダ
+R1	Coreference Arg1:T1 Arg2:T16	
+T2	Parts 92 95	制動液
+T3	Parts 109 112	制動液
+R3	Coreference Arg1:T3 Arg2:T2	
+T4	Parts 86 89	シール
+R2	Coreference Arg1:T15 Arg2:T4	
+R4	Part-Whole Arg1:T17 Arg2:T16	
+R5	Part-Whole Arg1:T15 Arg2:T1	
+R6	Contact Arg1:T1 Arg2:T2	

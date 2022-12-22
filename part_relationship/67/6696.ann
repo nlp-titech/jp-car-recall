@@ -1,0 +1,20 @@
+T1	Parts 0 16	オートマチックトランスミッション
+T2	Parts 110 115	プログラム
+T3	Parts 21 28	リードフレーム
+T4	Parts 30 34	電気基板
+T8	Parts 125 129	１速ギア
+T9	Parts 162 164	ギア
+T10	Parts 171 173	車両
+T5	Parts 68 91	ＰＣＭ（パワートレーンコントロールモジュール）
+T6	Parts 106 109	ＰＣＭ
+T11	Parts 151 154	ＰＣＭ
+R1	Part-Whole Arg1:T4 Arg2:T3	
+R3	Coreference Arg1:T6 Arg2:T5	
+R4	Coreference Arg1:T11 Arg2:T6	
+R5	Part-Whole Arg1:T2 Arg2:T6	
+R6	Connect Arg1:T5 Arg2:T3	
+R7	Part-Whole Arg1:T3 Arg2:T1	
+R8	Part-Whole Arg1:T8 Arg2:T9	
+R10	Part-Whole Arg1:T1 Arg2:T10	
+R9	Part-Whole Arg1:T9 Arg2:T1	
+R11	Part-Whole Arg1:T5 Arg2:T10	

@@ -1,0 +1,21 @@
+T1	Parts 0 11	前照灯照射方向調節装置
+T2	Parts 141 151	コントロールユニット
+T3	Parts 90 99	リヤサスペンション
+T4	Parts 157 165	すれ違い用前照灯
+T5	Parts 37 55	アングルセンサ用リンケージブラケット
+T7	Parts 16 28	左リヤトレーリングアーム
+T9	Parts 114 121	アングルセンサ
+T11	Parts 73 75	車両
+R1	Contact Arg1:T5 Arg2:T7	
+R2	Connect Arg1:T2 Arg2:T9	
+R4	Contact Arg1:T9 Arg2:T5	
+R5	Connect Arg1:T2 Arg2:T1	
+R6	Part-Whole Arg1:T1 Arg2:T11	
+R8	Part-Whole Arg1:T5 Arg2:T1	
+R9	Part-Whole Arg1:T9 Arg2:T1	
+R10	Part-Whole Arg1:T2 Arg2:T1	
+R11	Part-Whole Arg1:T4 Arg2:T11	
+R13	Part-Whole Arg1:T3 Arg2:T11	
+R14	Connect Arg1:T2 Arg2:T4	
+R12	Part-Whole Arg1:T7 Arg2:T3	
+R7	Contact Arg1:T7 Arg2:T9	

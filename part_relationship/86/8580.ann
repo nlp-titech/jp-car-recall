@@ -1,0 +1,15 @@
+T1	Parts 0 4	灯火装置
+T2	Parts 9 15	走行用前照灯
+T3	Parts 16 24	すれ違い用前照灯
+T4	Parts 24 31	切換えスイッチ
+T5	Parts 85 92	切換えスイッチ
+T6	Parts 107 113	走行用前照灯
+T7	Parts 44 52	はんだフラックス
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T1	
+R3	Part-Whole Arg1:T4 Arg2:T1	
+R4	Connect Arg1:T4 Arg2:T3	
+R5	Connect Arg1:T4 Arg2:T2	
+R6	Contact Arg1:T7 Arg2:T4	
+R7	Coreference Arg1:T5 Arg2:T4	
+R8	Coreference Arg1:T6 Arg2:T2	

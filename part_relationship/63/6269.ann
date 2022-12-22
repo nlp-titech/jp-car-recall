@@ -1,0 +1,17 @@
+T3	Parts 0 6	オルタネータ
+T4	Parts 24 30	オルタネータ
+T5	Parts 81 87	オルタネータ
+T6	Parts 97 103	オルタネータ
+T7	Parts 106 111	ダイオード
+T8	Parts 134 139	ダイオード
+T9	Parts 175 180	ダイオード
+R1	Coreference Arg1:T3 Arg2:T4	
+T1	Parts 47 61	電動油圧式パワーステアリング
+R2	Coreference Arg1:T4 Arg2:T5	
+R3	Coreference Arg1:T5 Arg2:T6	
+R4	Part-Whole Arg1:T7 Arg2:T6	
+T2	Parts 116 120	エンジン
+R5	Part-Whole Arg1:T6 Arg2:T2	
+R6	Coreference Arg1:T7 Arg2:T8	
+R7	Coreference Arg1:T8 Arg2:T9	
+R8	Connect Arg1:T4 Arg2:T1	

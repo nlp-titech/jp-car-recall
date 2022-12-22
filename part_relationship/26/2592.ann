@@ -1,0 +1,9 @@
+T1	Parts 0 6	車載トレーラ
+T2	Parts 7 9	車軸
+T3	Parts 14 27	車軸伸縮用シリンダ取付ボス
+T5	Parts 102 104	車軸
+R1	Coreference Arg1:T5 Arg2:T2	
+T4	Parts 84 86	ボス
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T3 Arg2:T2	
+R4	Coreference Arg1:T4 Arg2:T3	

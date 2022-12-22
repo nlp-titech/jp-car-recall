@@ -1,0 +1,7 @@
+T1	Parts 0 11	キャブチルトシリンダー
+T2	Parts 20 23	ナット
+T3	Parts 69 72	キャブ
+T4	Parts 89 92	キャブ
+R1	Contact Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T3 Arg2:T4	
+R3	Connect Arg1:T3 Arg2:T1	

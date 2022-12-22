@@ -1,0 +1,16 @@
+T1	Parts 0 9	大型トラック・バス
+T2	Parts 14 28	駐車ブレーキ警告灯用スイッチ
+T3	Parts 55 59	スイッチ
+T4	Parts 36 40	エア配管
+T5	Parts 80 86	駐車ブレーキ
+T6	Parts 93 99	駐車ブレーキ
+T7	Parts 156 170	ＥＺＧＯ（坂道発進補助装置）
+T8	Parts 171 176	ヒルホルダ
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T2 Arg2:T3	
+R3	Part-Whole Arg1:T4 Arg2:T1	
+R4	Part-Whole Arg1:T5 Arg2:T1	
+R5	Connect Arg1:T3 Arg2:T5	
+R6	Coreference Arg1:T5 Arg2:T6	
+R7	Part-Whole Arg1:T7 Arg2:T1	
+R8	Part-Whole Arg1:T8 Arg2:T1	

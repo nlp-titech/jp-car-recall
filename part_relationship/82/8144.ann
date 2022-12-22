@@ -1,0 +1,7 @@
+T1	Parts 0 12	四輪駆動車用トランスファ
+T2	Parts 13 18	リングギヤ
+T3	Parts 34 36	ギヤ
+T4	Parts 72 74	ギヤ
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T3 Arg2:T2	
+R3	Coreference Arg1:T4 Arg2:T3	

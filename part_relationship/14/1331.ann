@@ -1,0 +1,22 @@
+T17	Parts 157 161	エンジン
+T18	Parts 178 182	エンジン
+T19	Parts 129 133	エンジン
+T20	Parts 82 89	インペラケース
+T21	Parts 165 169	インペラ
+T22	Parts 47 51	インペラ
+T23	Parts 17 26	インペラ（羽根車）
+T1	Parts 0 5	燃料ポンプ
+T2	Parts 10 12	燃料
+T3	Parts 52 54	燃料
+T4	Parts 61 63	燃料
+T5	Parts 117 119	燃料
+R1	Coreference Arg1:T23 Arg2:T22	
+R2	Coreference Arg1:T2 Arg2:T3	
+R3	Coreference Arg1:T3 Arg2:T4	
+R4	Coreference Arg1:T4 Arg2:T5	
+R5	Coreference Arg1:T19 Arg2:T17	
+R6	Coreference Arg1:T17 Arg2:T18	
+R7	Coreference Arg1:T22 Arg2:T21	
+R9	Contact Arg1:T23 Arg2:T2	
+R8	Part-Whole Arg1:T22 Arg2:T20	
+R10	Part-Whole Arg1:T20 Arg2:T1	

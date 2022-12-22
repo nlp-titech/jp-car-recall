@@ -1,0 +1,24 @@
+T26	Parts 46 49	ベルト
+T28	Parts 97 102	変速プーリ
+T29	Parts 84 87	変速機
+T30	Parts 142 150	テンションローラ
+T31	Parts 151 153	軸受
+T32	Parts 169 172	ベルト
+T34	Parts 7 17	無段変速機（ＣＶＴ）
+T39	Parts 114 120	主変速レバー
+T1	Parts 0 6	動力伝達装置
+R1	Coreference Arg1:T34 Arg2:T29	
+T3	Parts 132 135	ベルト
+R3	Coreference Arg1:T26 Arg2:T3	
+R4	Part-Whole Arg1:T34 Arg2:T1	
+R5	Coreference Arg1:T3 Arg2:T32	
+R6	Part-Whole Arg1:T31 Arg2:T30	
+R7	Contact Arg1:T30 Arg2:T3	
+R8	Part-Whole Arg1:T28 Arg2:T29	
+R10	Connect Arg1:T39 Arg2:T29	
+R11	Part-Whole Arg1:T26 Arg2:T34	
+T2	Parts 103 104	油
+R2	Contact Arg1:T28 Arg2:T2	
+T4	Parts 154 155	油
+R9	Coreference Arg1:T2 Arg2:T4	
+R12	Contact Arg1:T31 Arg2:T4	

@@ -1,0 +1,9 @@
+T1	Parts 66 73	エンジン警告灯
+T3	Parts 52 57	スロットル
+T5	Parts 0 4	エンジン
+T6	Parts 9 20	コントロールモジュール
+T2	Parts 25 32	電子スロットル
+R3	Coreference Arg1:T2 Arg2:T3	
+R4	Part-Whole Arg1:T2 Arg2:T5	
+R1	Connect Arg1:T5 Arg2:T6	
+R5	Connect Arg1:T6 Arg2:T1	

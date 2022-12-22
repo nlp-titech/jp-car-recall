@@ -1,0 +1,12 @@
+T1	Parts 0 5	全輪駆動車
+T3	Parts 6 12	前輪用推進軸
+T4	Parts 17 22	後ろ側継手
+T5	Parts 49 51	継手
+R1	Coreference Arg1:T5 Arg2:T4	
+T6	Parts 112 114	継手
+R2	Coreference Arg1:T6 Arg2:T5	
+T7	Parts 119 121	前輪
+R4	Part-Whole Arg1:T3 Arg2:T1	
+R5	Part-Whole Arg1:T7 Arg2:T1	
+R3	Connect Arg1:T3 Arg2:T7	
+R6	Part-Whole Arg1:T4 Arg2:T3	

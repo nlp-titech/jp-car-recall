@@ -1,0 +1,16 @@
+T23	Parts 113 117	ピストン
+T24	Parts 77 81	ピストン
+T25	Parts 48 51	バルブ
+T27	Parts 23 30	チェックバルブ
+T1	Parts 0 3	原動機
+T2	Parts 8 22	ピストン冷却用オイル噴射装置
+T3	Parts 67 70	オイル
+T4	Parts 144 147	オイル
+R2	Coreference Arg1:T24 Arg2:T23	
+R3	Coreference Arg1:T3 Arg2:T4	
+R5	Part-Whole Arg1:T27 Arg2:T2	
+R9	Contact Arg1:T24 Arg2:T3	
+R10	Part-Whole Arg1:T2 Arg2:T1	
+R11	Part-Whole Arg1:T24 Arg2:T1	
+R1	Coreference Arg1:T27 Arg2:T25	
+R4	Contact Arg1:T2 Arg2:T3	

@@ -1,0 +1,18 @@
+T1	Parts 0 4	トラック
+T2	Parts 6 8	バス
+T3	Parts 9 19	エンジン制御ユニット
+T4	Parts 33 40	制御プログラム
+T5	Parts 76 83	エンジン警告灯
+T6	Parts 94 98	エンジン
+T7	Parts 24 32	データ保存メモリ
+R1	Part-Whole Arg1:T3 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T2	
+R3	Part-Whole Arg1:T6 Arg2:T1	
+R4	Part-Whole Arg1:T6 Arg2:T2	
+R5	Connect Arg1:T3 Arg2:T6	
+R6	Part-Whole Arg1:T7 Arg2:T3	
+R7	Connect Arg1:T7 Arg2:T4	
+R8	Part-Whole Arg1:T4 Arg2:T3	
+R9	Connect Arg1:T3 Arg2:T5	
+R10	Part-Whole Arg1:T5 Arg2:T2	
+R11	Part-Whole Arg1:T5 Arg2:T1	

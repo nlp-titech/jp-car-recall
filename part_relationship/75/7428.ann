@@ -1,0 +1,17 @@
+T1	Parts 0 13	機械式自動変速機（ＡＧＳ）
+T2	Parts 14 42	トランスミッションフロントケース（以下、フロントケース）
+T3	Parts 54 67	クラッチレリーズベアリング
+T4	Parts 96 103	フロントケース
+T5	Parts 115 120	ベアリング
+T6	Parts 123 126	グリス
+T7	Parts 139 143	クラッチ
+T8	Parts 164 169	ベアリング
+T9	Parts 174 178	クラッチ
+R1	Coreference Arg1:T2 Arg2:T4	
+R2	Coreference Arg1:T3 Arg2:T5	
+R3	Coreference Arg1:T5 Arg2:T8	
+R4	Coreference Arg1:T7 Arg2:T9	
+R5	Part-Whole Arg1:T2 Arg2:T1	
+R6	Part-Whole Arg1:T3 Arg2:T7	
+R7	Contact Arg1:T5 Arg2:T6	
+R8	Connect Arg1:T1 Arg2:T7	

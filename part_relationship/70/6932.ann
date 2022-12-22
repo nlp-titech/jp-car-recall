@@ -1,0 +1,21 @@
+T1	Parts 0 11	テールゲートリフト付車
+T2	Parts 138 144	作動スイッチ
+T3	Parts 83 90	緩衝スプリング
+T4	Parts 103 110	緩衝スプリング
+T5	Parts 46 54	重量検知スイッチ
+T6	Parts 113 117	スイッチ
+T8	Parts 16 20	福祉車両
+T10	Parts 25 28	リフト
+T11	Parts 77 82	リフト装置
+T12	Parts 153 156	リフト
+R6	Part-Whole Arg1:T3 Arg2:T11	
+R8	Coreference Arg1:T3 Arg2:T4	
+R9	Coreference Arg1:T5 Arg2:T6	
+R10	Connect Arg1:T2 Arg2:T12	
+R12	Part-Whole Arg1:T2 Arg2:T8	
+R1	Coreference Arg1:T1 Arg2:T8	
+R2	Coreference Arg1:T10 Arg2:T11	
+R3	Coreference Arg1:T11 Arg2:T12	
+R5	Part-Whole Arg1:T10 Arg2:T8	
+R4	Connect Arg1:T10 Arg2:T5	
+R7	Part-Whole Arg1:T5 Arg2:T8	

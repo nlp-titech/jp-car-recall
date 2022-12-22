@@ -1,0 +1,16 @@
+T1	Parts 68 75	後面方向指示器
+T3	Parts 60 67	側面方向指示器
+T4	Parts 92 99	方向指示表示灯
+T6	Parts 109 114	方向指示器
+T8	Parts 29 32	バルブ
+T2	Parts 0 19	前面方向指示器バルブ切れ検知プログラム
+T5	Parts 50 59	バルブ切れ警告機能
+T7	Parts 77 90	インストルメントクラスター
+R1	Part-Whole Arg1:T2 Arg2:T5	
+R2	Part-Whole Arg1:T8 Arg2:T3	
+R3	Part-Whole Arg1:T8 Arg2:T1	
+R4	Oneway-Coreference Arg1:T6 Arg2:T3	
+R5	Oneway-Coreference Arg1:T6 Arg2:T1	
+R6	Connect Arg1:T5 Arg2:T7	
+R8	Part-Whole Arg1:T4 Arg2:T7	
+R7	Connect Arg1:T2 Arg2:T8	

@@ -1,0 +1,20 @@
+T14	Parts 14 18	フレーム
+T15	Parts 25 29	クランプ
+T16	Parts 77 81	フレーム
+T1	Parts 0 4	電気装置
+T2	Parts 9 13	電気配線
+T3	Parts 69 73	電気配線
+R1	Coreference Arg1:T3 Arg2:T2	
+R2	Coreference Arg1:T16 Arg2:T14	
+T4	Parts 90 94	電気配線
+T5	Parts 95 97	被覆
+T6	Parts 112 116	電気配線
+T7	Parts 117 119	被覆
+R3	Coreference Arg1:T7 Arg2:T5	
+R4	Coreference Arg1:T6 Arg2:T4	
+R5	Coreference Arg1:T4 Arg2:T3	
+R6	Part-Whole Arg1:T2 Arg2:T1	
+R7	Contact Arg1:T14 Arg2:T2	
+R8	Contact Arg1:T2 Arg2:T15	
+R9	Contact Arg1:T14 Arg2:T15	
+R10	Part-Whole Arg1:T5 Arg2:T4	

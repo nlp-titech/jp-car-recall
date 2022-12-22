@@ -1,0 +1,13 @@
+T1	Parts 0 19	トランスミッションコントロールユニット
+T3	Parts 100 104	エンジン
+T4	Parts 168 172	エンジン
+T2	Parts 33 62	アクティブクルーズコントロール（以下、「ＡＣＣ」という。）
+T5	Parts 87 97	アイドリングストップ
+T6	Parts 111 114	ＡＣＣ
+T7	Parts 139 142	ＡＣＣ
+R1	Coreference Arg1:T2 Arg2:T6	
+R2	Coreference Arg1:T6 Arg2:T7	
+R3	Coreference Arg1:T3 Arg2:T4	
+R5	Connect Arg1:T5 Arg2:T3	
+R4	Connect Arg1:T2 Arg2:T1	
+R6	Connect Arg1:T2 Arg2:T5	

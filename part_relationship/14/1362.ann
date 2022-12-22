@@ -1,0 +1,13 @@
+T14	Parts 134 138	エンジン
+T15	Parts 61 65	エンジン
+T16	Parts 102 109	燃料噴射ポンプ
+T17	Parts 17 24	過電圧保護装置
+T18	Parts 25 32	内部コンデンサ
+T19	Parts 81 86	コンデンサ
+T1	Parts 0 12	電子制御式燃料噴射ポンプ
+R1	Coreference Arg1:T1 Arg2:T16	
+R2	Coreference Arg1:T18 Arg2:T19	
+R3	Coreference Arg1:T15 Arg2:T14	
+R4	Part-Whole Arg1:T18 Arg2:T17	
+R5	Part-Whole Arg1:T17 Arg2:T1	
+R7	Part-Whole Arg1:T1 Arg2:T15	

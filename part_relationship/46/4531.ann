@@ -1,0 +1,7 @@
+T1	Parts 28 47	ＡＢＳ（アンチロックブレーキシステム）
+T2	Parts 5 11	コンピュータ
+T4	Parts 0 4	制動装置
+T5	Parts 61 64	ＡＢＳ
+R1	Coreference Arg1:T1 Arg2:T5	
+R4	Connect Arg1:T4 Arg2:T1	
+R2	Connect Arg1:T4 Arg2:T2	

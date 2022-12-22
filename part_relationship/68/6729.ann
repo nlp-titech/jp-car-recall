@@ -1,0 +1,15 @@
+T1	Parts 15 20	方向指示器
+T2	Parts 87 92	方向指示器
+T3	Parts 0 10	左側スイッチボックス
+T4	Parts 59 69	左側スイッチボックス
+T7	Parts 38 40	基板
+T8	Parts 21 23	配線
+T9	Parts 35 37	配線
+T10	Parts 80 82	配線
+R1	Coreference Arg1:T3 Arg2:T4	
+R2	Coreference Arg1:T1 Arg2:T2	
+R3	Coreference Arg1:T8 Arg2:T9	
+R4	Coreference Arg1:T9 Arg2:T10	
+R5	Connect Arg1:T1 Arg2:T8	
+R6	Part-Whole Arg1:T8 Arg2:T3	
+R7	Part-Whole Arg1:T7 Arg2:T3	

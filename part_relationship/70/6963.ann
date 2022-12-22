@@ -1,0 +1,16 @@
+T2	Parts 103 110	アキュムレータ
+T4	Parts 88 94	ダイヤフラム
+T5	Parts 0 22	液圧式制動倍力装置用蓄圧器（アキュムレータ）
+T6	Parts 163 167	エンジン
+T7	Parts 136 140	ブレーキ
+T8	Parts 172 176	ブレーキ
+T9	Parts 184 188	ブレーキ
+T10	Parts 112 116	窒素ガス
+T11	Parts 44 55	樹脂膜（ダイヤフラム）
+R1	Part-Whole Arg1:T11 Arg2:T5	
+R2	Coreference Arg1:T11 Arg2:T4	
+R3	Coreference Arg1:T5 Arg2:T2	
+R4	Part-Whole Arg1:T10 Arg2:T5	
+R5	Coreference Arg1:T7 Arg2:T8	
+R6	Coreference Arg1:T7 Arg2:T9	
+R7	Connect Arg1:T5 Arg2:T7	

@@ -1,0 +1,17 @@
+T1	Parts 0 7	前照灯制御基板
+T4	Parts 59 62	前照灯
+T6	Parts 80 83	前照灯
+T7	Parts 96 99	灯火器
+T8	Parts 100 104	ヒューズ
+T9	Parts 111 113	灯火
+T2	Parts 13 15	素子
+T3	Parts 35 37	素子
+T5	Parts 73 75	素子
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T3 Arg2:T2	
+R3	Coreference Arg1:T5 Arg2:T3	
+R4	Coreference Arg1:T6 Arg2:T4	
+R5	Part-Whole Arg1:T8 Arg2:T7	
+R6	Part-Whole Arg1:T1 Arg2:T4	
+R7	Part-Whole Arg1:T7 Arg2:T4	
+R8	Part-Whole Arg1:T7 Arg2:T9	

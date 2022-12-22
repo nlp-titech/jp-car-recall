@@ -1,0 +1,20 @@
+T1	Parts 0 11	コンクリートミキサー車
+T2	Parts 20 30	コントロールケーブル
+T3	Parts 64 74	コントロールケーブル
+T4	Parts 81 87	エアチューブ
+T5	Parts 129 135	エアチューブ
+T6	Parts 53 59	固定クリップ
+T7	Parts 75 79	ブレーキ
+T8	Parts 146 150	ブレーキ
+T10	Parts 12 15	ドラム
+T11	Parts 126 128	車両
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Coreference Arg1:T7 Arg2:T8	
+R3	Coreference Arg1:T4 Arg2:T5	
+R4	Coreference Arg1:T1 Arg2:T11	
+R5	Part-Whole Arg1:T10 Arg2:T1	
+R6	Part-Whole Arg1:T2 Arg2:T1	
+R7	Contact Arg1:T10 Arg2:T2	
+R8	Contact Arg1:T6 Arg2:T3	
+R13	Part-Whole Arg1:T7 Arg2:T1	
+R9	Part-Whole Arg1:T4 Arg2:T7	

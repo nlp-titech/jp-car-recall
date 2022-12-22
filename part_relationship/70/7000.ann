@@ -1,0 +1,14 @@
+T1	Parts 0 25	坂道発進補助装置（ＨＳＡ：ヒル・スタート・エイド）
+T2	Parts 26 32	制御ユニット
+T3	Parts 41 48	電解コンデンサ
+T4	Parts 58 62	ユニット
+T5	Parts 63 67	電子基板
+T6	Parts 104 108	電子基板
+T7	Parts 113 116	ＨＳＡ
+R1	Connect Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T2 Arg2:T4	
+R3	Part-Whole Arg1:T3 Arg2:T2	
+R4	Part-Whole Arg1:T5 Arg2:T4	
+R5	Coreference Arg1:T5 Arg2:T6	
+R6	Coreference Arg1:T1 Arg2:T7	
+R7	Contact Arg1:T5 Arg2:T3	

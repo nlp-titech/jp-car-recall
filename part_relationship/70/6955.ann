@@ -1,0 +1,9 @@
+T1	Parts 62 70	後輪巻込防止装置
+T2	Parts 14 20	ワンマンバス
+T3	Parts 3 5	後軸
+T5	Parts 35 37	車体
+T6	Parts 0 2	前軸
+R1	Coreference Arg1:T2 Arg2:T5	
+R2	Part-Whole Arg1:T6 Arg2:T2	
+R3	Part-Whole Arg1:T3 Arg2:T2	
+R4	Part-Whole Arg1:T1 Arg2:T2	

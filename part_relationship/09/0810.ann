@@ -1,0 +1,14 @@
+T1	Parts 0 7	鞍型燃料タンク
+T2	Parts 9 20	左右燃料切り替えバルブ
+T3	Parts 31 33	燃料
+T4	Parts 49 52	バルブ
+T5	Parts 83 87	燃料系統
+T7	Parts 94 98	エンジン
+R1	Coreference Arg1:T4 Arg2:T2	
+T8	Parts 53 55	車体
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T3 Arg2:T1	
+R5	Part-Whole Arg1:T1 Arg2:T5	
+R4	Contact Arg1:T5 Arg2:T7	
+R6	Part-Whole Arg1:T5 Arg2:T8	
+R7	Part-Whole Arg1:T7 Arg2:T8	

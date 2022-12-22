@@ -1,0 +1,14 @@
+T1	Parts 23 31	ブレーキ倍力装置
+T3	Parts 0 11	原動機ＥＣＵ用ヒューズ
+T4	Parts 18 22	ヒューズ
+T5	Parts 32 42	負圧ポンプ用ヒューズ
+T6	Parts 72 76	ヒューズ
+T8	Parts 91 97	原動機ＥＣＵ
+T9	Parts 52 55	ポンプ
+T12	Parts 110 113	原動機
+R1	Coreference Arg1:T6 Arg2:T4	
+R3	Coreference Arg1:T4 Arg2:T3	
+R4	Part-Whole Arg1:T9 Arg2:T1	
+R5	Connect Arg1:T9 Arg2:T5	
+R6	Connect Arg1:T8 Arg2:T6	
+R7	Connect Arg1:T8 Arg2:T12	

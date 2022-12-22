@@ -1,0 +1,14 @@
+T1	Parts 0 12	フロント・サスペンション
+T2	Parts 36 41	ロアアーム
+T3	Parts 42 55	ロアアームボールジョイント
+T4	Parts 60 63	ボルト
+T5	Parts 105 108	ボルト
+R1	Coreference Arg1:T5 Arg2:T4	
+T6	Parts 120 123	ボルト
+R2	Coreference Arg1:T6 Arg2:T5	
+R4	Contact Arg1:T3 Arg2:T2	
+R5	Contact Arg1:T4 Arg2:T3	
+R6	Contact Arg1:T4 Arg2:T2	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R7	Part-Whole Arg1:T3 Arg2:T1	
+R8	Part-Whole Arg1:T4 Arg2:T1	

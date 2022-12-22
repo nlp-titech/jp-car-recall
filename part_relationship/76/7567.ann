@@ -1,0 +1,7 @@
+T1	Parts 0 5	冷蔵冷凍車
+T2	Parts 6 29	エアサスペンションリモコンＢＯＸ固定ブラケット
+T3	Parts 63 68	ブラケット
+T4	Parts 108 124	エアサスペンションリモコンＢＯＸ
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Part-Whole Arg1:T4 Arg2:T1	
+R3	Contact Arg1:T3 Arg2:T4	

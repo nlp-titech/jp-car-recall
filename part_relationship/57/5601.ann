@@ -1,0 +1,17 @@
+T1	Parts 0 12	フロントブレーキキャリパ
+T2	Parts 56 63	ピストンシール
+T3	Parts 73 78	ブレーキ液
+T4	Parts 106 111	ブレーキ液
+T5	Parts 13 17	ピストン
+T6	Parts 39 43	ピストン
+T7	Parts 51 55	ピストン
+T8	Parts 25 32	ブレーキパッド
+R1	Coreference Arg1:T6 Arg2:T5	
+R2	Coreference Arg1:T7 Arg2:T6	
+R3	Coreference Arg1:T4 Arg2:T3	
+R4	Part-Whole Arg1:T5 Arg2:T1	
+R6	Contact Arg1:T2 Arg2:T7	
+R7	Contact Arg1:T3 Arg2:T7	
+R8	Contact Arg1:T3 Arg2:T2	
+R9	Part-Whole Arg1:T2 Arg2:T1	
+R5	Contact Arg1:T1 Arg2:T8	

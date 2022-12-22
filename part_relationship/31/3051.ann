@@ -1,0 +1,31 @@
+T5	Parts 71 81	ＡＣＣ／ＦＣＭＥＣＵ
+T6	Parts 113 116	ＡＣＣ
+T7	Parts 154 160	自動ブレーキ
+T8	Parts 165 167	車両
+T9	Parts 188 191	ＥＣＵ
+T3	Parts 225 228	メータ
+T4	Parts 283 286	ＡＣＣ
+T10	Parts 288 291	ＦＣＭ
+T11	Parts 230 241	インフォメーション画面
+R3	Coreference Arg1:T4 Arg2:T1	
+T12	Parts 32 66	ＦＣＭ（自動でブレーキをかけて衝突の被害を軽減するシステム）装着車両
+T1	Parts 243 246	ＡＣＣ
+T13	Parts 250 253	ＦＣＭ
+T14	Parts 257 275	ＡＳＣ（横滑り防止システム）システム
+R2	Coreference Arg1:T1 Arg2:T6	
+R4	Coreference Arg1:T10 Arg2:T13	
+R5	Coreference Arg1:T9 Arg2:T5	
+R9	Coreference Arg1:T8 Arg2:T12	
+R12	Part-Whole Arg1:T11 Arg2:T3	
+R8	Part-Whole Arg1:T5 Arg2:T12	
+R13	Part-Whole Arg1:T3 Arg2:T8	
+R14	Connect Arg1:T9 Arg2:T13	
+R15	Part-Whole Arg1:T13 Arg2:T8	
+R16	Part-Whole Arg1:T14 Arg2:T8	
+R17	Connect Arg1:T9 Arg2:T3	
+#1	AnnotatorNotes T5	ECU:エンジンコントロールユニット
+T2	Parts 1 30	ＡＣＣ（自動で車間距離を維持して先行車に追従するシステム）
+R7	Coreference Arg1:T2 Arg2:T6	
+R11	Part-Whole Arg1:T2 Arg2:T12	
+R1	Part-Whole Arg1:T7 Arg2:T13	
+R10	Connect Arg1:T2 Arg2:T5	

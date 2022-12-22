@@ -1,0 +1,5 @@
+T1	Parts 0 22	フロントサスペンション下部コントロールアーム
+T3	Parts 27 32	取付ボルト
+T4	Parts 69 72	ボルト
+R1	Coreference Arg1:T3 Arg2:T4	
+R2	Contact Arg1:T1 Arg2:T3	

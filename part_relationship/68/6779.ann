@@ -1,0 +1,12 @@
+T1	Parts 8 15	エンジンケース
+T2	Parts 0 7	センタスタンド
+T3	Parts 52 56	スタンド
+T4	Parts 143 150	センタスタンド
+T6	Parts 25 28	ボルト
+T7	Parts 104 111	締め付けボルト
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Coreference Arg1:T3 Arg2:T4	
+R3	Coreference Arg1:T6 Arg2:T7	
+R4	Contact Arg1:T2 Arg2:T6	
+R5	Contact Arg1:T1 Arg2:T6	
+R6	Contact Arg1:T2 Arg2:T1	

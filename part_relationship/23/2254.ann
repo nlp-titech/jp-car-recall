@@ -1,0 +1,20 @@
+T14	Parts 17 20	消火器
+T15	Parts 84 87	消火器
+T16	Parts 88 92	保持装置
+T17	Parts 93 97	防振ゴム
+T21	Parts 118 126	消火器固定バンド
+T22	Parts 167 170	消火器
+T23	Parts 36 41	固定バンド
+R1	Coreference Arg1:T15 Arg2:T14	
+R3	Coreference Arg1:T22 Arg2:T15	
+T1	Parts 0 3	塵芥車
+T3	Parts 5 8	糞尿車
+R6	Contact Arg1:T14 Arg2:T1	
+R9	Contact Arg1:T16 Arg2:T15	
+R10	Part-Whole Arg1:T17 Arg2:T16	
+R15	Part-Whole Arg1:T16 Arg2:T3	
+R16	Part-Whole Arg1:T16 Arg2:T1	
+R4	Contact Arg1:T14 Arg2:T3	
+R5	Contact Arg1:T14 Arg2:T23	
+R2	Coreference Arg1:T23 Arg2:T21	
+R7	Part-Whole Arg1:T21 Arg2:T16	

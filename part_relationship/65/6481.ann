@@ -1,0 +1,8 @@
+T1	Parts 22 30	ドライブシャフト
+T2	Parts 5 9	アース線
+T3	Parts 68 72	アース線
+T4	Parts 0 4	エンジン
+T5	Parts 83 87	エンジン
+R2	Coreference Arg1:T2 Arg2:T3	
+R3	Coreference Arg1:T4 Arg2:T5	
+R1	Contact Arg1:T4 Arg2:T2	

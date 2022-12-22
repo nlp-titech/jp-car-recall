@@ -1,0 +1,10 @@
+T1	Parts 0 6	かじ取り装置
+T2	Parts 11 17	ギヤボックス
+T3	Parts 27 30	ボルト
+T4	Parts 68 71	ボルト
+T5	Parts 18 20	車体
+R1	Coreference Arg1:T3 Arg2:T4	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Contact Arg1:T2 Arg2:T3	
+R4	Contact Arg1:T5 Arg2:T3	
+R5	Connect Arg1:T2 Arg2:T5	

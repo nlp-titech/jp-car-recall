@@ -1,0 +1,9 @@
+T1	Parts 0 11	イグニッションスイッチ
+T2	Parts 36 47	イグニッションスイッチ
+T3	Parts 87 98	イグニッションスイッチ
+T4	Parts 117 120	原動機
+T5	Parts 16 19	接点板
+R1	Coreference Arg1:T3 Arg2:T2	
+R2	Coreference Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T5 Arg2:T1	
+R4	Connect Arg1:T4 Arg2:T3	

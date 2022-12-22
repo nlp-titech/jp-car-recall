@@ -1,0 +1,23 @@
+T1	Parts 125 130	補助制動灯
+T2	Parts 136 141	方向指示器
+T4	Parts 116 120	後部霧灯
+T5	Parts 100 104	前部霧灯
+T7	Parts 131 134	後退灯
+T8	Parts 105 108	車幅灯
+T9	Parts 121 124	制動灯
+T10	Parts 96 99	前照灯
+T13	Parts 109 112	番号灯
+T15	Parts 30 32	車体
+T16	Parts 113 115	尾灯
+T6	Parts 0 9	灯火装置用ヒューズ
+R2	Part-Whole Arg1:T6 Arg2:T15	
+R3	Connect Arg1:T6 Arg2:T10	
+R4	Connect Arg1:T6 Arg2:T5	
+R5	Connect Arg1:T6 Arg2:T8	
+R6	Connect Arg1:T6 Arg2:T13	
+R7	Connect Arg1:T6 Arg2:T16	
+R8	Connect Arg1:T6 Arg2:T4	
+R9	Connect Arg1:T6 Arg2:T9	
+R10	Connect Arg1:T6 Arg2:T1	
+R11	Connect Arg1:T6 Arg2:T7	
+R12	Connect Arg1:T6 Arg2:T2	

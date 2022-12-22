@@ -1,0 +1,16 @@
+T3	Parts 66 69	ヒンジ
+T4	Parts 103 106	ヒンジ
+T5	Parts 0 13	車いす乗降用スロープ装着車
+T2	Parts 18 25	スロープヒンジ
+T1	Parts 27 36	車体取付ブラケット
+T8	Parts 47 51	スロープ
+R1	Part-Whole Arg1:T8 Arg2:T5	
+R2	Part-Whole Arg1:T2 Arg2:T5	
+R3	Part-Whole Arg1:T1 Arg2:T5	
+R4	Contact Arg1:T2 Arg2:T1	
+R5	Contact Arg1:T1 Arg2:T8	
+R6	Contact Arg1:T2 Arg2:T8	
+R7	Coreference Arg1:T2 Arg2:T3	
+R8	Coreference Arg1:T3 Arg2:T4	
+T6	Parts 111 115	スロープ
+R9	Coreference Arg1:T8 Arg2:T6	

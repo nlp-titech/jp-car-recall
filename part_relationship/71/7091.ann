@@ -1,0 +1,15 @@
+T1	Parts 27 33	ダイヤフラム
+T2	Parts 60 66	ブレーキ系統
+T3	Parts 75 81	駐車ブレーキ
+T4	Parts 132 138	駐車ブレーキ
+T5	Parts 16 25	スプリングチャンバ
+T7	Parts 147 151	ブレーキ
+T8	Parts 171 174	ドラム
+T9	Parts 86 91	操作バルブ
+R1	Part-Whole Arg1:T1 Arg2:T5	
+R2	Connect Arg1:T5 Arg2:T2	
+R3	Part-Whole Arg1:T3 Arg2:T2	
+R4	Connect Arg1:T9 Arg2:T2	
+R5	Coreference Arg1:T3 Arg2:T4	
+R6	Part-Whole Arg1:T7 Arg2:T2	
+R7	Part-Whole Arg1:T8 Arg2:T7	

@@ -1,0 +1,31 @@
+T1	Parts 155 170	パワーステアリング用油圧ポンプ
+T3	Parts 189 196	サスペンション
+T4	Parts 74 79	スプライン
+T5	Parts 99 104	スプライン
+T6	Parts 125 130	スプライン
+T8	Parts 65 70	油圧ポンプ
+T9	Parts 148 153	油圧ポンプ
+T10	Parts 230 235	冷却ファン
+T11	Parts 84 88	グリース
+T12	Parts 270 274	ハンドル
+T15	Parts 197 200	オイル
+T17	Parts 241 244	オイル
+T18	Parts 252 255	警告灯
+T13	Parts 0 15	ＰＴＯ装置（動力取り出し装置）
+T7	Parts 23 31	作動用油圧ポンプ
+T19	Parts 16 21	アウトリガ
+T14	Parts 52 57	ＰＴＯ装置
+R1	Coreference Arg1:T13 Arg2:T14	
+R2	Coreference Arg1:T7 Arg2:T8	
+R3	Coreference Arg1:T4 Arg2:T5	
+R4	Coreference Arg1:T5 Arg2:T6	
+R5	Coreference Arg1:T8 Arg2:T9	
+T20	Parts 179 184	アウトリガ
+R6	Coreference Arg1:T19 Arg2:T20	
+T2	Parts 216 229	トランスミッション用オイル
+R7	Contact Arg1:T13 Arg2:T7	
+R8	Contact Arg1:T8 Arg2:T4	
+R9	Contact Arg1:T4 Arg2:T11	
+R10	Contact Arg1:T9 Arg2:T1	
+R11	Coreference Arg1:T15 Arg2:T2	
+R12	Coreference Arg1:T2 Arg2:T17	

@@ -1,0 +1,19 @@
+T20	Parts 11 14	プーリ
+T21	Parts 35 38	プーリ
+T22	Parts 56 59	プーリ
+T23	Parts 87 90	プーリ
+T24	Parts 92 101	エンジン補機ベルト
+T25	Parts 123 127	エンジン
+T1	Parts 0 10	エアコンコンプレッサ
+T2	Parts 15 17	ボス
+T6	Parts 105 108	発電機
+R1	Coreference Arg1:T20 Arg2:T21	
+R3	Coreference Arg1:T21 Arg2:T22	
+R2	Coreference Arg1:T22 Arg2:T23	
+R4	Part-Whole Arg1:T20 Arg2:T1	
+R5	Part-Whole Arg1:T2 Arg2:T1	
+R6	Contact Arg1:T20 Arg2:T2	
+R7	Contact Arg1:T24 Arg2:T23	
+R8	Contact Arg1:T24 Arg2:T6	
+R9	Connect Arg1:T6 Arg2:T25	
+R10	Contact Arg1:T24 Arg2:T25	

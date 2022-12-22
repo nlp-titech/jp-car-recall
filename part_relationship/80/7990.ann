@@ -1,0 +1,32 @@
+T1	Parts 2 8	セルモーター
+T2	Parts 9 13	エンジン
+T3	Parts 34 40	セルモーター
+T4	Parts 48 51	原動機
+T5	Parts 52 60	再始動用モーター
+T6	Parts 70 78	再始動用モーター
+T7	Parts 83 97	ベルト（アクセサリーベルト）
+T8	Parts 107 110	ベルト
+T9	Parts 151 154	警告灯
+T10	Parts 159 164	バッテリー
+T11	Parts 169 173	燃料装置
+T12	Parts 174 178	点火装置
+T13	Parts 191 194	原動機
+R1	Coreference Arg1:T2 Arg2:T4	
+R2	Coreference Arg1:T4 Arg2:T13	
+R3	Coreference Arg1:T1 Arg2:T3	
+R4	Coreference Arg1:T5 Arg2:T6	
+R5	Coreference Arg1:T7 Arg2:T8	
+R6	Connect Arg1:T1 Arg2:T2	
+R7	Connect Arg1:T4 Arg2:T5	
+R8	Connect Arg1:T6 Arg2:T7	
+R9	Part-Whole Arg1:T7 Arg2:T4	
+R10	Connect Arg1:T3 Arg2:T10	
+R11	Connect Arg1:T6 Arg2:T10	
+R12	Connect Arg1:T9 Arg2:T10	
+T14	Parts 180 183	電装品
+R13	Oneway-Coreference Arg1:T14 Arg2:T12	
+R14	Oneway-Coreference Arg1:T14 Arg2:T11	
+R15	Oneway-Coreference Arg1:T14 Arg2:T10	
+R16	Connect Arg1:T9 Arg2:T14	
+R17	Connect Arg1:T12 Arg2:T13	
+R18	Connect Arg1:T11 Arg2:T13	

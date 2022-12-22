@@ -1,0 +1,5 @@
+T4	Parts 0 4	エンジン
+T9	Parts 64 77	エンジン・クランク・ケース
+T10	Parts 13 43	ＰＣＶ（ポジティブ・クランクケース・ベンチレーション）バルブ
+R1	Part-Whole Arg1:T10 Arg2:T4	
+R2	Part-Whole Arg1:T9 Arg2:T4	

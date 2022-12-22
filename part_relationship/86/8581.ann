@@ -1,0 +1,7 @@
+T1	Parts 0 4	後席窓枠
+T2	Parts 9 15	ガラスモール
+T3	Parts 26 31	トリムバー
+T4	Parts 58 62	後席窓枠
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T1	
+R3	Coreference Arg1:T4 Arg2:T1	

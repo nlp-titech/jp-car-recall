@@ -1,0 +1,17 @@
+T16	Parts 4 14	前輪ブレーキケーブル
+T17	Parts 17 20	被覆材
+T19	Parts 71 75	ケーブル
+T1	Parts 28 32	ケーブル
+T2	Parts 58 63	外側被覆材
+R1	Coreference Arg1:T2 Arg2:T17	
+T3	Parts 88 102	アウターケーシングスプリング
+T4	Parts 135 143	インナーケーブル
+T5	Parts 148 154	前輪ブレーキ
+T6	Parts 0 3	二輪車
+R4	Part-Whole Arg1:T5 Arg2:T6	
+R5	Part-Whole Arg1:T17 Arg2:T16	
+R6	Coreference Arg1:T16 Arg2:T1	
+R2	Coreference Arg1:T1 Arg2:T19	
+R8	Part-Whole Arg1:T4 Arg2:T19	
+R3	Part-Whole Arg1:T19 Arg2:T5	
+R7	Part-Whole Arg1:T3 Arg2:T19	

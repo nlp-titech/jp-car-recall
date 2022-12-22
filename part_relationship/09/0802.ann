@@ -1,0 +1,11 @@
+T17	Parts 27 33	テールゲート
+T18	Parts 70 76	テールゲート
+T19	Parts 111 115	ストッパ
+T20	Parts 130 136	テールゲート
+T21	Parts 119 125	テールゲート
+R2	Coreference Arg1:T18 Arg2:T17	
+R5	Coreference Arg1:T20 Arg2:T21	
+R4	Coreference Arg1:T21 Arg2:T18	
+T1	Parts 0 10	テールゲートストッパ
+R1	Coreference Arg1:T1 Arg2:T19	
+R3	Contact Arg1:T1 Arg2:T17	

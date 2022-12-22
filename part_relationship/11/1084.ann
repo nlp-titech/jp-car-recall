@@ -1,0 +1,7 @@
+T1	Parts 0 9	後輪ハブ内側軸受け
+T5	Parts 74 76	車体
+T6	Parts 94 97	軸受け
+T3	Parts 25 28	軸受け
+R1	Coreference Arg1:T1 Arg2:T3	
+R2	Coreference Arg1:T3 Arg2:T6	
+R5	Part-Whole Arg1:T1 Arg2:T5	

@@ -1,0 +1,19 @@
+T14	Parts 76 84	ベアリング保持器
+T16	Parts 103 108	ベアリング
+T15	Parts 69 71	ピン
+T17	Parts 32 34	ピン
+T18	Parts 116 121	油圧ポンプ
+T1	Parts 2 9	ショベルローダ
+T2	Parts 16 24	走行用油圧ポンプ
+R1	Coreference Arg1:T15 Arg2:T17	
+R2	Coreference Arg1:T2 Arg2:T18	
+T3	Parts 133 139	前後進レバー
+R3	Part-Whole Arg1:T17 Arg2:T2	
+R4	Contact Arg1:T14 Arg2:T15	
+R5	Contact Arg1:T16 Arg2:T14	
+R6	Part-Whole Arg1:T14 Arg2:T2	
+R7	Part-Whole Arg1:T16 Arg2:T2	
+R8	Part-Whole Arg1:T2 Arg2:T1	
+R9	Part-Whole Arg1:T3 Arg2:T1	
+R10	Contact Arg1:T16 Arg2:T18	
+R11	Connect Arg1:T18 Arg2:T3	

@@ -1,0 +1,7 @@
+T1	Parts 12 20	助手席エアバッグ
+T2	Parts 0 7	エアバッグ装置
+T3	Parts 43 48	エアバッグ
+T4	Parts 21 22	扉
+R2	Part-Whole Arg1:T4 Arg2:T1	
+R3	Coreference Arg1:T1 Arg2:T3	
+R1	Oneway-Coreference Arg1:T2 Arg2:T1	

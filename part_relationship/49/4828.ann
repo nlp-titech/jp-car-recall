@@ -1,0 +1,14 @@
+T1	Parts 19 26	ベルトバックル
+T2	Parts 9 14	座席ベルト
+T3	Parts 0 3	運転席
+T4	Parts 63 69	ベルトタング
+T5	Parts 38 46	ベルト解除ボタン
+T7	Parts 105 108	ベルト
+T8	Parts 5 8	助手席
+R1	Contact Arg1:T2 Arg2:T3	
+R2	Contact Arg1:T2 Arg2:T8	
+R3	Part-Whole Arg1:T1 Arg2:T2	
+R4	Part-Whole Arg1:T5 Arg2:T1	
+R5	Coreference Arg1:T2 Arg2:T7	
+R6	Contact Arg1:T4 Arg2:T1	
+R7	Part-Whole Arg1:T4 Arg2:T2	

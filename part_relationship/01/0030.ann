@@ -1,0 +1,22 @@
+T17	Parts 36 46	固定金具（クリップ）
+T18	Parts 81 89	バッテリケ－ブル
+T19	Parts 90 94	クリップ
+T20	Parts 98 106	バッテリケ－ブル
+T21	Parts 129 137	バッテリケ－ブル
+T22	Parts 149 157	バッテリケ－ブル
+#1	AnnotatorNotes T17	ケーブルの下位でよいか？
+T1	Parts 0 4	バッテリ
+T2	Parts 6 13	スタ－タモ－タ
+T3	Parts 15 29	電気配線（バッテリケ－ブル）
+R1	Coreference Arg1:T18 Arg2:T3	
+R2	Coreference Arg1:T19 Arg2:T17	
+R3	Coreference Arg1:T20 Arg2:T18	
+R4	Coreference Arg1:T21 Arg2:T20	
+R5	Coreference Arg1:T22 Arg2:T21	
+T4	Parts 162 165	原動機
+R6	Connect Arg1:T1 Arg2:T2	
+R7	Contact Arg1:T1 Arg2:T3	
+R8	Contact Arg1:T2 Arg2:T3	
+R9	Contact Arg1:T17 Arg2:T3	
+T5	Parts 107 109	被覆
+R10	Part-Whole Arg1:T5 Arg2:T20	

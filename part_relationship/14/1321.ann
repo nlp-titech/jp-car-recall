@@ -1,0 +1,8 @@
+T11	Parts 82 85	番号灯
+T1	Parts 0 3	番号灯
+T2	Parts 4 9	アース回路
+T3	Parts 31 38	エンジンフード
+T4	Parts 39 45	ヒンジ部ピン
+R1	Coreference Arg1:T1 Arg2:T11	
+R3	Connect Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T4 Arg2:T3	

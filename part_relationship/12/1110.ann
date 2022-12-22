@@ -1,0 +1,9 @@
+T14	Parts 0 4	前後車輪
+T15	Parts 76 79	タイヤ
+T16	Parts 5 10	ハブナット
+T17	Parts 30 35	ハブナット
+T18	Parts 66 71	ハブナット
+R1	Coreference Arg1:T16 Arg2:T17	
+R2	Coreference Arg1:T17 Arg2:T18	
+R3	Part-Whole Arg1:T16 Arg2:T14	
+R5	Contact Arg1:T18 Arg2:T15	

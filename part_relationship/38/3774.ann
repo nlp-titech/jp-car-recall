@@ -1,0 +1,16 @@
+T2	Parts 87 92	ブレーキ液
+T3	Parts 12 16	キャリパ
+T4	Parts 66 70	キャリパ
+T5	Parts 45 49	シリンダ
+T6	Parts 27 38	駐車ブレーキ用ピストン
+T7	Parts 3 7	ブレーキ
+T9	Parts 96 99	警告灯
+T10	Parts 0 2	後輪
+R1	Part-Whole Arg1:T3 Arg2:T7	
+R2	Coreference Arg1:T4 Arg2:T3	
+R3	Part-Whole Arg1:T6 Arg2:T5	
+R4	Part-Whole Arg1:T5 Arg2:T3	
+R5	Contact Arg1:T2 Arg2:T4	
+R6	Connect Arg1:T9 Arg2:T7	
+R7	Contact Arg1:T7 Arg2:T10	
+R8	Part-Whole Arg1:T2 Arg2:T7	

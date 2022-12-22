@@ -1,0 +1,18 @@
+T6	Parts 17 21	クラッチ
+T8	Parts 112 116	クラッチ
+T1	Parts 0 16	機械式自動変速トランスミッション
+R1	Part-Whole Arg1:T6 Arg2:T1	
+T4	Parts 27 41	クラッチ・レリーズベアリング
+R2	Part-Whole Arg1:T4 Arg2:T6	
+T2	Parts 42 54	ダイヤフラム・スプリング
+T3	Parts 59 66	ホルダ・リング
+R3	Contact Arg1:T4 Arg2:T2	
+R4	Contact Arg1:T2 Arg2:T3	
+R5	Contact Arg1:T4 Arg2:T3	
+R6	Coreference Arg1:T6 Arg2:T8	
+T7	Parts 121 128	ホルダ・リング
+T5	Parts 129 138	レリーズベアリング
+R7	Coreference Arg1:T3 Arg2:T7	
+R8	Coreference Arg1:T4 Arg2:T5	
+R9	Part-Whole Arg1:T2 Arg2:T6	
+R10	Part-Whole Arg1:T3 Arg2:T6	

@@ -1,0 +1,18 @@
+T1	Parts 0 6	動力伝達装置
+T2	Parts 11 18	ベベルピニオン
+T5	Parts 42 45	ボルト
+T7	Parts 72 80	プロペラシャフト
+T8	Parts 92 95	ボルト
+T9	Parts 107 110	ヨーク
+T10	Parts 112 120	プロペラシャフト
+R1	Coreference Arg1:T10 Arg2:T7	
+R5	Part-Whole Arg1:T2 Arg2:T1	
+T3	Parts 19 33	プロペラシャフト取付用ヨーク
+R2	Coreference Arg1:T3 Arg2:T9	
+R3	Contact Arg1:T3 Arg2:T7	
+R6	Contact Arg1:T2 Arg2:T3	
+R7	Contact Arg1:T2 Arg2:T5	
+R8	Contact Arg1:T3 Arg2:T5	
+R10	Part-Whole Arg1:T3 Arg2:T1	
+R11	Part-Whole Arg1:T7 Arg2:T1	
+R4	Coreference Arg1:T5 Arg2:T8	

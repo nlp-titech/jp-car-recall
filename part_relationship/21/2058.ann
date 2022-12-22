@@ -1,0 +1,12 @@
+T16	Parts 86 90	エンジン
+T17	Parts 128 137	排気ブレーキホース
+T18	Parts 0 3	排気管
+T1	Parts 17 20	排気管
+T2	Parts 21 40	ＤＰＦ（ディーゼル粒子状物質除去装置）
+T4	Parts 71 74	排気管
+T6	Parts 121 125	排気ガス
+R2	Coreference Arg1:T1 Arg2:T18	
+R3	Part-Whole Arg1:T4 Arg2:T1	
+R4	Contact Arg1:T2 Arg2:T1	
+R7	Contact Arg1:T16 Arg2:T1	
+R8	Contact Arg1:T6 Arg2:T18	

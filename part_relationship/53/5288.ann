@@ -1,0 +1,6 @@
+T1	Parts 33 40	アクセルペダル
+T3	Parts 46 50	エンジン
+T2	Parts 0 5	アクペダル
+R1	Coreference Arg1:T2 Arg2:T1	
+R2	Connect Arg1:T1 Arg2:T3	
+#1	AnnotatorNotes T2	「アクセルペダル」の脱字

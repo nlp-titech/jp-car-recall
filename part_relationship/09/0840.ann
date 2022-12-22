@@ -1,0 +1,15 @@
+T10	Parts 72 77	車速センサ
+T11	Parts 11 16	車速センサ
+T12	Parts 43 46	センサ
+T13	Parts 49 56	抵抗器リード線
+T1	Parts 0 9	トランスミッション
+R1	Coreference Arg1:T12 Arg2:T11	
+R2	Coreference Arg1:T10 Arg2:T12	
+T2	Parts 94 97	速度計
+T3	Parts 98 103	運行記録計
+T4	Parts 109 124	トランスミッション自動変速機構
+R4	Part-Whole Arg1:T13 Arg2:T12	
+R5	Contact Arg1:T1 Arg2:T11	
+R6	Connect Arg1:T10 Arg2:T2	
+R7	Connect Arg1:T10 Arg2:T3	
+R3	Coreference Arg1:T1 Arg2:T4	

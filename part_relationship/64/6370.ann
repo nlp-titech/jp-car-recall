@@ -1,0 +1,9 @@
+T4	Parts 59 64	エアバッグ
+T3	Parts 0 9	助手席側エアバッグ
+T1	Parts 10 23	インフレーター（膨張装置）
+T5	Parts 52 54	火薬
+T2	Parts 68 77	インフレーター容器
+R1	Part-Whole Arg1:T1 Arg2:T3	
+R2	Coreference Arg1:T3 Arg2:T4	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Contact Arg1:T1 Arg2:T5	

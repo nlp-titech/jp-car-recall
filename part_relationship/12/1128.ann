@@ -1,0 +1,26 @@
+T18	Parts 58 63	ジョイント
+T20	Parts 36 42	ダストブーツ
+T23	Parts 130 138	ボールジョイント
+T25	Parts 139 149	サスペンションアーム
+T2	Parts 9 16	アッパーアーム
+T3	Parts 17 22	ロアアーム
+T4	Parts 23 31	ボールジョイント
+T6	Parts 72 79	樹脂ベアリング
+R1	Coreference Arg1:T4 Arg2:T18	
+R2	Coreference Arg1:T18 Arg2:T23	
+T1	Parts 0 2	前輪
+R3	Part-Whole Arg1:T4 Arg2:T2	
+R4	Part-Whole Arg1:T4 Arg2:T3	
+R7	Part-Whole Arg1:T2 Arg2:T25	
+R8	Part-Whole Arg1:T3 Arg2:T25	
+T5	Parts 217 220	対象車
+T7	Parts 235 238	対象車
+R9	Coreference Arg1:T5 Arg2:T7	
+R10	Part-Whole Arg1:T1 Arg2:T5	
+R11	Part-Whole Arg1:T25 Arg2:T5	
+R5	Contact Arg1:T4 Arg2:T20	
+R12	Part-Whole Arg1:T20 Arg2:T2	
+R13	Part-Whole Arg1:T20 Arg2:T3	
+R6	Contact Arg1:T18 Arg2:T6	
+R14	Part-Whole Arg1:T6 Arg2:T2	
+R15	Part-Whole Arg1:T6 Arg2:T3	

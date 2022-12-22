@@ -1,0 +1,7 @@
+T1	Parts 0 15	パワーステアリングギヤボックス
+T2	Parts 18 33	ボール循環筒（サーキュレータ）
+T3	Parts 70 73	タイヤ
+T4	Parts 86 90	ハンドル
+T5	Parts 101 108	サーキュレータ
+R1	Coreference Arg1:T5 Arg2:T2	
+R2	Part-Whole Arg1:T2 Arg2:T1	

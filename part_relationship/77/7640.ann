@@ -1,0 +1,15 @@
+T1	Parts 0 7	農耕用トラクタ
+T2	Parts 19 26	主変速１速ギヤ
+T3	Parts 27 31	シャフト
+T4	Parts 38 41	潤滑油
+T5	Parts 81 83	ギヤ
+T6	Parts 84 88	シャフト
+T7	Parts 8 14	動力伝達装置
+R1	Part-Whole Arg1:T7 Arg2:T1	
+R2	Coreference Arg1:T2 Arg2:T5	
+R3	Coreference Arg1:T3 Arg2:T6	
+R4	Part-Whole Arg1:T2 Arg2:T7	
+R5	Coreference Arg1:T3 Arg2:T7	
+R6	Contact Arg1:T3 Arg2:T2	
+R7	Contact Arg1:T4 Arg2:T2	
+R8	Contact Arg1:T4 Arg2:T3	

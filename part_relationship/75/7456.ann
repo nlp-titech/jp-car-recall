@@ -1,0 +1,17 @@
+T1	Parts 0 25	ＡＢＳ（アンチロックブレーキシステム）モジュレータ
+T2	Parts 48 56	リザーバピストン
+T3	Parts 57 61	Ｏリング
+T4	Parts 65 68	グリス
+T5	Parts 86 90	ブレーキ
+T6	Parts 100 106	アウトバルブ
+T7	Parts 111 114	グリス
+T8	Parts 122 125	逆止弁
+T9	Parts 30 33	グリス
+R1	Coreference Arg1:T9 Arg2:T4	
+R2	Coreference Arg1:T4 Arg2:T7	
+R3	Connect Arg1:T1 Arg2:T5	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T3 Arg2:T2	
+R6	Contact Arg1:T3 Arg2:T4	
+R7	Part-Whole Arg1:T6 Arg2:T1	
+R8	Part-Whole Arg1:T8 Arg2:T1	

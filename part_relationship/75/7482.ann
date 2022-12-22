@@ -1,0 +1,10 @@
+T1	Parts 0 13	直列３気筒ガソリンエンジン
+T2	Parts 33 44	オイルフィラーキャップ
+T3	Parts 71 79	フィラーキャップ
+T4	Parts 81 91	エンジンヘッドカバー
+T5	Parts 94 97	オイル
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T4 Arg2:T1	
+R4	Contact Arg1:T3 Arg2:T4	
+R5	Contact Arg1:T1 Arg2:T5	

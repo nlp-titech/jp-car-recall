@@ -1,0 +1,12 @@
+T2	Parts 13 18	プログラム
+T3	Parts 53 60	アクセルペダル
+T4	Parts 82 89	エンジン警告灯
+T5	Parts 94 98	エンジン
+T6	Parts 70 75	スロットル
+T1	Parts 0 12	エンジン制御コンピュータ
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Connect Arg1:T1 Arg2:T5	
+R3	Connect Arg1:T3 Arg2:T6	
+R4	Connect Arg1:T1 Arg2:T4	
+R5	Connect Arg1:T3 Arg2:T2	
+R6	Connect Arg1:T4 Arg2:T5	

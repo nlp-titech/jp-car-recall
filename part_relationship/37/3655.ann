@@ -1,0 +1,5 @@
+T1	Parts 154 172	マルチインフォメーションディスプレイ
+T2	Parts 30 49	車間機能付クルーズコントロールユニット
+T3	Parts 0 25	前方障害物衝突軽減装置（衝突軽減ブレーキシステム）
+R1	Connect Arg1:T1 Arg2:T2	
+R2	Part-Whole Arg1:T2 Arg2:T3	

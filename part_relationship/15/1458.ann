@@ -1,0 +1,16 @@
+T1	Parts 0 2	後軸
+T2	Parts 3 12	エアサスペンション
+T3	Parts 17 19	車両
+T4	Parts 24 31	ラテラルロッド
+T5	Parts 53 55	車枠
+T6	Parts 56 62	クロスメンバ
+T7	Parts 121 123	車枠
+R1	Coreference Arg1:T5 Arg2:T7	
+R2	Part-Whole Arg1:T1 Arg2:T3	
+R3	Part-Whole Arg1:T2 Arg2:T3	
+R4	Contact Arg1:T4 Arg2:T1	
+R5	Part-Whole Arg1:T5 Arg2:T3	
+R6	Contact Arg1:T6 Arg2:T5	
+R7	Part-Whole Arg1:T6 Arg2:T3	
+R8	Connect Arg1:T2 Arg2:T1	
+R9	Part-Whole Arg1:T4 Arg2:T3	

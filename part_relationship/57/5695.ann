@@ -1,0 +1,12 @@
+T1	Parts 0 18	フロント・ウィンド・ワイパ・システム
+T4	Parts 42 53	間欠作動モード用リレー
+T5	Parts 94 97	リレー
+T7	Parts 23 38	フロント・ワイパ制御モジュール
+T8	Parts 67 75	フロント・ワイパ
+T9	Parts 113 121	フロント・ワイパ
+R1	Coreference Arg1:T5 Arg2:T4	
+R2	Coreference Arg1:T9 Arg2:T8	
+R3	Part-Whole Arg1:T4 Arg2:T7	
+R4	Part-Whole Arg1:T7 Arg2:T1	
+R5	Connect Arg1:T8 Arg2:T7	
+R6	Part-Whole Arg1:T8 Arg2:T1	

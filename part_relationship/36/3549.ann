@@ -1,0 +1,27 @@
+T4	Parts 39 49	ドライブピニオンギヤ
+T5	Parts 90 100	ドライブピニオンギヤ
+T6	Parts 9 15	大型トラック
+T7	Parts 107 112	リングギヤ
+T8	Parts 145 150	リングギヤ
+T9	Parts 16 34	後後軸ディファレンシャル（差動装置）
+T12	Parts 50 52	軸受
+T13	Parts 101 102	軸
+T1	Parts 57 60	ケージ
+T2	Parts 71 74	ケージ
+T11	Parts 75 79	キャリア
+R1	Coreference Arg1:T8 Arg2:T7	
+R2	Contact Arg1:T11 Arg2:T2	
+R3	Coreference Arg1:T2 Arg2:T1	
+R4	Coreference Arg1:T5 Arg2:T4	
+R5	Contact Arg1:T12 Arg2:T4	
+R6	Contact Arg1:T1 Arg2:T12	
+R7	Part-Whole Arg1:T13 Arg2:T5	
+R8	Contact Arg1:T7 Arg2:T5	
+R9	Part-Whole Arg1:T4 Arg2:T9	
+R10	Part-Whole Arg1:T12 Arg2:T9	
+R11	Part-Whole Arg1:T1 Arg2:T9	
+R12	Part-Whole Arg1:T11 Arg2:T9	
+R13	Part-Whole Arg1:T7 Arg2:T9	
+R14	Part-Whole Arg1:T9 Arg2:T6	
+R15	Contact Arg1:T12 Arg2:T13	
+R16	Contact Arg1:T2 Arg2:T13	

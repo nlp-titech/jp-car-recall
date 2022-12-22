@@ -1,0 +1,17 @@
+T12	Parts 57 61	クローラ
+T13	Parts 95 106	エンドレスゴムクローラ
+T14	Parts 73 78	ベアリング
+T15	Parts 28 35	遊輪ベアリング
+T16	Parts 47 49	遊輪
+T1	Parts 0 6	農耕トラクタ
+T2	Parts 7 11	走行装置
+T3	Parts 16 27	エンドレスゴムクローラ
+R1	Coreference Arg1:T14 Arg2:T15	
+R2	Coreference Arg1:T13 Arg2:T12	
+R3	Coreference Arg1:T12 Arg2:T3	
+R4	Part-Whole Arg1:T15 Arg2:T16	
+R5	Contact Arg1:T12 Arg2:T16	
+R6	Part-Whole Arg1:T3 Arg2:T2	
+R7	Part-Whole Arg1:T16 Arg2:T2	
+R8	Part-Whole Arg1:T2 Arg2:T1	
+R9	Part-Whole Arg1:T15 Arg2:T3	

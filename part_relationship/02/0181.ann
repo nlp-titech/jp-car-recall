@@ -1,0 +1,16 @@
+T10	Parts 0 10	運転者席用エアバッグ
+T11	Parts 16 37	インフレータモジュール（窒素ガス発生装置）
+T12	Parts 80 85	エアバッグ
+T13	Parts 124 129	エアバッグ
+T1	Parts 38 43	ガス発生剤
+T2	Parts 71 76	ガス発生剤
+R1	Coreference Arg1:T1 Arg2:T2	
+T3	Parts 106 111	ガス発生剤
+R2	Coreference Arg1:T3 Arg2:T2	
+T4	Parts 118 120	容器
+R3	Coreference Arg1:T13 Arg2:T12	
+R4	Part-Whole Arg1:T11 Arg2:T10	
+R5	Part-Whole Arg1:T1 Arg2:T11	
+R6	Coreference Arg1:T10 Arg2:T12	
+R7	Part-Whole Arg1:T3 Arg2:T4	
+R8	Part-Whole Arg1:T4 Arg2:T13	

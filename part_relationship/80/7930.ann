@@ -1,0 +1,18 @@
+T1	Parts 0 11	コンビネーションメータ
+T2	Parts 16 21	燃料計回路
+T4	Parts 33 37	抵抗素子
+T5	Parts 41 43	計器
+T6	Parts 45 47	照明
+T7	Parts 55 58	メータ
+T8	Parts 60 62	基板
+T10	Parts 90 93	燃料計
+T11	Parts 103 105	燃料
+R1	Coreference Arg1:T1 Arg2:T7	
+R3	Part-Whole Arg1:T4 Arg2:T2	
+R4	Part-Whole Arg1:T5 Arg2:T7	
+R5	Part-Whole Arg1:T6 Arg2:T5	
+R2	Part-Whole Arg1:T2 Arg2:T8	
+R6	Part-Whole Arg1:T8 Arg2:T7	
+R7	Connect Arg1:T2 Arg2:T10	
+R8	Connect Arg1:T10 Arg2:T11	
+R9	Oneway-Coreference Arg1:T5 Arg2:T10	

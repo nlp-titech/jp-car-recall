@@ -1,0 +1,13 @@
+T1	Parts 5 14	マスターシリンダー
+T3	Parts 64 69	ブレーキ液
+T5	Parts 42 48	解除スイッチ
+T6	Parts 103 107	スイッチ
+T7	Parts 119 123	スイッチ
+T8	Parts 0 4	ブレーキ
+T4	Parts 23 35	定速走行装置解除スイッチ
+R1	Coreference Arg1:T4 Arg2:T5	
+R2	Coreference Arg1:T5 Arg2:T6	
+R4	Coreference Arg1:T6 Arg2:T7	
+R6	Part-Whole Arg1:T1 Arg2:T8	
+R7	Contact Arg1:T1 Arg2:T4	
+R3	Contact Arg1:T3 Arg2:T1	

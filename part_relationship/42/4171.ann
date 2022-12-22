@@ -1,0 +1,11 @@
+T1	Parts 43 57	ＤＰＤ（粒子状物質除去装置）
+T2	Parts 0 11	大型トラック用エンジン
+T3	Parts 145 149	エンジン
+T5	Parts 61 65	ピストン
+T6	Parts 119 123	ピストン
+T4	Parts 16 20	ピストン
+R1	Coreference Arg1:T4 Arg2:T5	
+R2	Coreference Arg1:T5 Arg2:T6	
+R3	Part-Whole Arg1:T4 Arg2:T2	
+R4	Coreference Arg1:T2 Arg2:T3	
+R5	Connect Arg1:T2 Arg2:T1	

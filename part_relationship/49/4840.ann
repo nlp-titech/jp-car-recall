@@ -1,0 +1,16 @@
+T1	Parts 0 12	エアサスペンション装着車
+T2	Parts 37 44	ピストンリング
+T3	Parts 125 132	エアドライヤー
+T4	Parts 31 36	空気圧縮機
+T5	Parts 114 119	空気圧縮機
+T11	Parts 13 17	制動装置
+T12	Parts 55 58	潤滑油
+T13	Parts 85 88	潤滑油
+R1	Part-Whole Arg1:T11 Arg2:T1	
+R2	Part-Whole Arg1:T2 Arg2:T4	
+R3	Part-Whole Arg1:T4 Arg2:T11	
+R4	Contact Arg1:T12 Arg2:T4	
+R5	Coreference Arg1:T12 Arg2:T13	
+R6	Coreference Arg1:T4 Arg2:T5	
+R7	Contact Arg1:T4 Arg2:T3	
+R8	Part-Whole Arg1:T3 Arg2:T1	

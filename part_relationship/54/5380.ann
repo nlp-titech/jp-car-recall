@@ -1,0 +1,4 @@
+T2	Parts 21 25	スイッチ
+T3	Parts 37 40	グリス
+T9	Parts 0 11	ストップランプスイッチ
+R2	Coreference Arg1:T9 Arg2:T2	

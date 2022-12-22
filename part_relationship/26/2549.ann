@@ -1,0 +1,11 @@
+T1	Parts 5 7	車両
+T2	Parts 12 23	後軸エアサスペンション
+T3	Parts 24 30	スタビライザ
+T4	Parts 31 34	アーム
+T5	Parts 61 64	アーム
+R1	Coreference Arg1:T5 Arg2:T4	
+T6	Parts 103 106	アーム
+R2	Coreference Arg1:T6 Arg2:T5	
+R3	Part-Whole Arg1:T4 Arg2:T3	
+R4	Part-Whole Arg1:T3 Arg2:T2	
+R5	Part-Whole Arg1:T2 Arg2:T1	

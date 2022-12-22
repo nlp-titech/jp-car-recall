@@ -1,0 +1,11 @@
+T10	Parts 28 37	中間軸受け保持金具
+T11	Parts 93 97	保持金具
+T2	Parts 8 14	動力伝達装置
+T3	Parts 19 27	プロペラシャフト
+R1	Coreference Arg1:T11 Arg2:T10	
+T1	Parts 0 7	手動変速機付車
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T3 Arg2:T2	
+R4	Part-Whole Arg1:T10 Arg2:T3	
+T4	Parts 102 107	中間軸受け
+R5	Contact Arg1:T11 Arg2:T4	

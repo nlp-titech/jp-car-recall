@@ -1,0 +1,16 @@
+T13	Parts 25 27	素子
+T14	Parts 51 59	カレントリミッタ
+T16	Parts 28 30	基板
+T17	Parts 94 96	素子
+T18	Parts 9 22	カレントリミッタ（整流器）
+T19	Parts 69 73	リード線
+T20	Parts 89 93	リード線
+T1	Parts 0 4	充電装置
+R1	Coreference Arg1:T14 Arg2:T18	
+R2	Coreference Arg1:T20 Arg2:T19	
+R3	Coreference Arg1:T17 Arg2:T13	
+R4	Part-Whole Arg1:T18 Arg2:T1	
+R5	Part-Whole Arg1:T13 Arg2:T18	
+R6	Part-Whole Arg1:T16 Arg2:T18	
+R7	Contact Arg1:T13 Arg2:T16	
+R9	Part-Whole Arg1:T19 Arg2:T14	

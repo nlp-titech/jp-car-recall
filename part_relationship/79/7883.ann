@@ -1,0 +1,7 @@
+T1	Parts 6 22	ヘッドランプ（すれ違い用前照灯）
+T2	Parts 36 39	バルブ
+T4	Parts 57 60	バルブ
+T3	Parts 144 147	前照灯
+R1	Coreference Arg1:T3 Arg2:T1	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Coreference Arg1:T4 Arg2:T2	

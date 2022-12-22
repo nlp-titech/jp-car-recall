@@ -1,0 +1,15 @@
+T12	Parts 112 116	プーリー
+T13	Parts 34 38	クラッチ
+T14	Parts 68 72	クラッチ
+T3	Parts 18 21	発電機
+T4	Parts 26 30	プーリー
+T5	Parts 41 44	潤滑油
+T6	Parts 58 61	潤滑油
+R1	Coreference Arg1:T6 Arg2:T5	
+R2	Coreference Arg1:T14 Arg2:T13	
+R3	Coreference Arg1:T12 Arg2:T4	
+R6	Part-Whole Arg1:T4 Arg2:T3	
+R7	Part-Whole Arg1:T13 Arg2:T4	
+R8	Part-Whole Arg1:T5 Arg2:T13	
+T1	Parts 1 17	過給器付ディーゼルエンジン搭載車
+R4	Part-Whole Arg1:T3 Arg2:T1	

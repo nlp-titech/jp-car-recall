@@ -1,0 +1,9 @@
+T1	Parts 0 11	電動パワーステアリング
+T2	Parts 39 49	コントロールユニット
+T3	Parts 85 91	ステアリング
+T4	Parts 16 25	制御信号用コネクタ
+T5	Parts 76 79	警告灯
+R1	Coreference Arg1:T1 Arg2:T3	
+R2	Connect Arg1:T2 Arg2:T5	
+R3	Part-Whole Arg1:T4 Arg2:T1	
+R4	Connect Arg1:T2 Arg2:T4	

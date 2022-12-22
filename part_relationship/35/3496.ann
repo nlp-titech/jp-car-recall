@@ -1,0 +1,14 @@
+T1	Parts 0 8	ホイールクレーン
+T3	Parts 9 12	原動機
+T4	Parts 37 40	原動機
+T5	Parts 86 89	原動機
+T6	Parts 17 26	エンジン制御用配線
+T7	Parts 46 48	配線
+T8	Parts 80 82	配線
+R1	Coreference Arg1:T4 Arg2:T3	
+R2	Coreference Arg1:T7 Arg2:T6	
+R3	Coreference Arg1:T8 Arg2:T7	
+R4	Coreference Arg1:T5 Arg2:T4	
+R5	Connect Arg1:T6 Arg2:T3	
+R6	Part-Whole Arg1:T3 Arg2:T1	
+R7	Part-Whole Arg1:T6 Arg2:T1	

@@ -1,0 +1,12 @@
+T1	Parts 4 11	スイングアーム
+T3	Parts 71 74	アーム
+T4	Parts 118 121	アーム
+T5	Parts 0 3	二輪車
+T6	Parts 36 38	車両
+R1	Coreference Arg1:T5 Arg2:T6	
+T2	Parts 55 62	チェーンガード
+R2	Coreference Arg1:T3 Arg2:T4	
+R3	Part-Whole Arg1:T1 Arg2:T5	
+R4	Coreference Arg1:T1 Arg2:T3	
+R5	Contact Arg1:T2 Arg2:T3	
+R6	Part-Whole Arg1:T2 Arg2:T5	

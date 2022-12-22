@@ -1,0 +1,12 @@
+T1	Parts 74 79	バッテリー
+T2	Parts 64 69	充電警告灯
+T3	Parts 0 3	原動機
+T4	Parts 95 98	原動機
+T5	Parts 16 19	整流器
+T6	Parts 4 7	発電機
+R1	Part-Whole Arg1:T6 Arg2:T3	
+R2	Connect Arg1:T2 Arg2:T1	
+R3	Connect Arg1:T1 Arg2:T4	
+R4	Coreference Arg1:T3 Arg2:T4	
+R5	Part-Whole Arg1:T5 Arg2:T6	
+R6	Connect Arg1:T6 Arg2:T2	

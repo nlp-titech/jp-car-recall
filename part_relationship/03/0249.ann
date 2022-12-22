@@ -1,0 +1,8 @@
+T8	Parts 0 7	ブレーキパイプ
+T9	Parts 25 32	ブレーキパイプ
+T10	Parts 62 69	ブレーキパイプ
+T11	Parts 88 95	ブレーキパイプ
+T12	Parts 33 35	車体
+R1	Coreference Arg1:T9 Arg2:T8	
+R2	Coreference Arg1:T11 Arg2:T10	
+R3	Coreference Arg1:T10 Arg2:T9	

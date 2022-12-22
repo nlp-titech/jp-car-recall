@@ -1,0 +1,15 @@
+T10	Parts 28 34	ＥＧＲパイプ
+T1	Parts 0 4	燃料装置
+T2	Parts 5 7	軽油
+T3	Parts 9 12	ＣＮＧ
+T4	Parts 17 23	大型トラック
+T5	Parts 58 64	ＥＧＲパイプ
+T6	Parts 102 108	ＥＧＲパイプ
+R1	Coreference Arg1:T5 Arg2:T6	
+T7	Parts 51 53	車体
+R3	Contact Arg1:T2 Arg2:T1	
+R4	Contact Arg1:T3 Arg2:T1	
+R5	Part-Whole Arg1:T10 Arg2:T1	
+R2	Part-Whole Arg1:T1 Arg2:T7	
+R6	Part-Whole Arg1:T7 Arg2:T4	
+R7	Coreference Arg1:T10 Arg2:T5	

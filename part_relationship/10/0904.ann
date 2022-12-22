@@ -1,0 +1,4 @@
+T1	Parts 0 17	後軸アッパートルクロッドブラケット
+T2	Parts 18 22	フレーム
+T5	Parts 105 113	プロペラシャフト
+R2	Contact Arg1:T1 Arg2:T2	

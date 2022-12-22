@@ -1,0 +1,12 @@
+T14	Parts 9 23	ＬＰＧタンク装着用ブラケット
+T15	Parts 121 127	ＬＰＧタンク
+T16	Parts 36 42	ＬＰＧタンク
+T17	Parts 44 49	ブラケット
+T1	Parts 0 4	ＬＰＧ車
+T3	Parts 50 58	カウンタウエイト
+R1	Coreference Arg1:T16 Arg2:T15	
+R2	Part-Whole Arg1:T14 Arg2:T1	
+R3	Contact Arg1:T16 Arg2:T14	
+R4	Coreference Arg1:T17 Arg2:T14	
+R5	Part-Whole Arg1:T3 Arg2:T1	
+R6	Part-Whole Arg1:T16 Arg2:T1	

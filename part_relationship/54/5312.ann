@@ -1,0 +1,14 @@
+T1	Parts 17 25	ボールジョイント
+T2	Parts 114 122	ボールジョイント
+T3	Parts 30 36	ダストブーツ
+T4	Parts 92 97	ベアリング
+T5	Parts 0 7	前側ロアアーム
+T6	Parts 8 12	ナックル
+T7	Parts 47 50	ブーツ
+R1	Contact Arg1:T6 Arg2:T1	
+R2	Contact Arg1:T5 Arg2:T1	
+R3	Contact Arg1:T6 Arg2:T5	
+R4	Coreference Arg1:T3 Arg2:T7	
+R5	Coreference Arg1:T1 Arg2:T2	
+R6	Contact Arg1:T3 Arg2:T1	
+R7	Contact Arg1:T4 Arg2:T2	

@@ -1,0 +1,17 @@
+T1	Parts 9 15	油圧制御装置
+T2	Parts 45 50	油圧ホース
+T3	Parts 67 72	油圧ホース
+T4	Parts 121 124	オイル
+T5	Parts 137 140	オイル
+T6	Parts 1 8	油圧式緩衝装置
+T8	Parts 16 40	クロス・ブロック（オイルを前後輪に分配する回路）
+T9	Parts 75 82	スチールワイヤ
+T11	Parts 141 144	排気管
+R1	Coreference Arg1:T3 Arg2:T2	
+R2	Coreference Arg1:T5 Arg2:T4	
+R3	Part-Whole Arg1:T9 Arg2:T3	
+R4	Contact Arg1:T2 Arg2:T8	
+R5	Contact Arg1:T2 Arg2:T1	
+R7	Connect Arg1:T1 Arg2:T8	
+R6	Part-Whole Arg1:T1 Arg2:T6	
+R8	Contact Arg1:T3 Arg2:T4	

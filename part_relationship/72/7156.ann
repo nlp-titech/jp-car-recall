@@ -1,0 +1,7 @@
+T1	Parts 5 32	制動力制御装置（ＡＢＳ：アンチロックブレーキシステム）
+T2	Parts 89 95	コンピュータ
+T3	Parts 57 61	スイッチ
+T4	Parts 0 4	制動装置
+R1	Part-Whole Arg1:T1 Arg2:T4	
+R2	Part-Whole Arg1:T3 Arg2:T1	
+R3	Part-Whole Arg1:T2 Arg2:T1	

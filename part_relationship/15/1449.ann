@@ -1,0 +1,23 @@
+T18	Parts 69 71	車両
+T19	Parts 23 28	戻りホース
+T20	Parts 29 34	供給ホース
+T22	Parts 129 132	原動機
+T24	Parts 148 151	原動機
+T25	Parts 0 5	燃料タンク
+T2	Parts 49 51	燃料
+T3	Parts 52 56	戻り配管
+T5	Parts 123 125	空気
+T6	Parts 133 135	燃料
+T7	Parts 20 22	燃料
+R2	Part-Whole Arg1:T7 Arg2:T25	
+R3	Connect Arg1:T19 Arg2:T25	
+R4	Connect Arg1:T20 Arg2:T25	
+R5	Coreference Arg1:T2 Arg2:T7	
+R6	Part-Whole Arg1:T19 Arg2:T3	
+R7	Part-Whole Arg1:T25 Arg2:T18	
+R8	Coreference Arg1:T6 Arg2:T2	
+R9	Contact Arg1:T6 Arg2:T22	
+R10	Coreference Arg1:T22 Arg2:T24	
+R1	Part-Whole Arg1:T3 Arg2:T18	
+R11	Connect Arg1:T22 Arg2:T25	
+R12	Part-Whole Arg1:T20 Arg2:T18	

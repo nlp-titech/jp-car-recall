@@ -1,0 +1,16 @@
+T1	Parts 0 2	前輪
+T2	Parts 3 5	後輪
+T3	Parts 6 15	ブレーキキャリパー
+T4	Parts 22 27	キャリパー
+T5	Parts 28 34	取付用ボルト
+T6	Parts 84 87	ボルト
+T7	Parts 97 106	ブレーキキャリパー
+T8	Parts 107 111	ホイール
+R1	Connect Arg1:T1 Arg2:T3	
+R2	Connect Arg1:T2 Arg2:T3	
+R3	Coreference Arg1:T4 Arg2:T3	
+R4	Contact Arg1:T5 Arg2:T4	
+R5	Coreference Arg1:T6 Arg2:T5	
+R6	Coreference Arg1:T7 Arg2:T4	
+R7	Part-Whole Arg1:T8 Arg2:T2	
+R8	Part-Whole Arg1:T8 Arg2:T1	

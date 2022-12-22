@@ -1,0 +1,10 @@
+T14	Parts 39 41	車両
+T15	Parts 99 104	燃料タンク
+T16	Parts 13 22	燃料タンクサポート
+T17	Parts 49 53	サポート
+T1	Parts 0 5	燃料タンク
+R1	Coreference Arg1:T17 Arg2:T16	
+R2	Coreference Arg1:T15 Arg2:T1	
+R3	Contact Arg1:T16 Arg2:T1	
+R4	Part-Whole Arg1:T1 Arg2:T14	
+R5	Part-Whole Arg1:T16 Arg2:T14	

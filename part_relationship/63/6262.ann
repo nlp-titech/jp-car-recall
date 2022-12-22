@@ -1,0 +1,16 @@
+T1	Parts 0 6	大型トラクタ
+T6	Parts 10 14	緩衝装置
+T10	Parts 7 9	前輪
+R1	Part-Whole Arg1:T10 Arg2:T1	
+R2	Part-Whole Arg1:T6 Arg2:T10	
+T8	Parts 22 28	エアベローズ
+T2	Parts 33 39	アンカレッジ
+T4	Parts 40 49	フランジスクリュー
+T3	Parts 81 90	フランジスクリュー
+T5	Parts 114 120	エアベローズ
+R3	Part-Whole Arg1:T8 Arg2:T6	
+R4	Contact Arg1:T8 Arg2:T2	
+R5	Contact Arg1:T2 Arg2:T4	
+R6	Contact Arg1:T8 Arg2:T4	
+R7	Coreference Arg1:T4 Arg2:T3	
+R8	Coreference Arg1:T8 Arg2:T5	

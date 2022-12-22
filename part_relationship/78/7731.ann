@@ -1,0 +1,11 @@
+T1	Parts 0 6	大型トラック
+T2	Parts 7 21	横吊り式スペアタイヤキャリヤ
+T3	Parts 22 27	ブラケット
+T4	Parts 44 49	ブラケット
+T5	Parts 68 73	ブラケット
+T6	Parts 116 122	スペアタイヤ
+R1	Coreference Arg1:T3 Arg2:T4	
+R2	Coreference Arg1:T4 Arg2:T5	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T3 Arg2:T2	
+R5	Part-Whole Arg1:T6 Arg2:T2	

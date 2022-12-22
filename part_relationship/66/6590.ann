@@ -1,0 +1,22 @@
+T1	Parts 9 23	イグニッションキーモジュール
+T2	Parts 65 74	イグニッションキー
+T3	Parts 164 173	パワーステアリング
+T4	Parts 225 230	エアバック
+T5	Parts 150 154	エンジン
+T6	Parts 106 112	キーシャフト
+T9	Parts 0 4	始動装置
+T12	Parts 75 81	キーホルダー
+T13	Parts 93 99	キーホルダー
+T15	Parts 129 131	車両
+T16	Parts 201 203	車両
+R1	Part-Whole Arg1:T1 Arg2:T9	
+R2	Contact Arg1:T12 Arg2:T2	
+R3	Coreference Arg1:T12 Arg2:T13	
+R4	Contact Arg1:T2 Arg2:T6	
+R8	Contact Arg1:T2 Arg2:T1	
+R12	Coreference Arg1:T15 Arg2:T16	
+R13	Part-Whole Arg1:T9 Arg2:T15	
+R5	Part-Whole Arg1:T5 Arg2:T15	
+R6	Part-Whole Arg1:T3 Arg2:T15	
+R7	Part-Whole Arg1:T4 Arg2:T16	
+R9	Connect Arg1:T9 Arg2:T5	

@@ -1,0 +1,10 @@
+T1	Parts 0 10	ハイブリッドシステム
+T2	Parts 21 28	制御プログラム
+T3	Parts 57 61	昇圧回路
+T4	Parts 62 64	素子
+T5	Parts 100 103	警告灯
+T6	Parts 108 118	ハイブリッドシステム
+R1	Connect Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T1	
+R3	Part-Whole Arg1:T4 Arg2:T1	
+R4	Connect Arg1:T5 Arg2:T6	

@@ -1,0 +1,5 @@
+T1	Parts 5 14	室内側ドアハンドル
+T2	Parts 115 121	ドアハンドル
+T3	Parts 0 4	乗車装置
+R1	Part-Whole Arg1:T1 Arg2:T3	
+R2	Coreference Arg1:T1 Arg2:T2	

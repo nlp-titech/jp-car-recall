@@ -1,0 +1,5 @@
+T1	Parts 5 19	尿素ＳＣＲ制御用コントローラ
+T3	Parts 37 40	尿素水
+T4	Parts 0 4	グレーダ
+R1	Part-Whole Arg1:T1 Arg2:T4	
+R3	Connect Arg1:T1 Arg2:T3	

@@ -1,0 +1,9 @@
+T1	Parts 14 22	サンルーフガラス
+T2	Parts 0 9	サンルーフ付き車両
+T3	Parts 64 67	ガラス
+T4	Parts 89 92	ガラス
+T5	Parts 45 47	ドア
+R1	Coreference Arg1:T1 Arg2:T3	
+R2	Coreference Arg1:T3 Arg2:T4	
+R3	Part-Whole Arg1:T1 Arg2:T2	
+R4	Part-Whole Arg1:T5 Arg2:T2	

@@ -1,0 +1,15 @@
+T1	Parts 10 23	ＳＲＳコントロールユニット
+T2	Parts 37 45	助手席エアバッグ
+T3	Parts 97 105	助手席エアバッグ
+T4	Parts 0 5	エアバッグ
+T6	Parts 128 133	エアバッグ
+T7	Parts 24 29	プログラム
+T8	Parts 71 80	助手席側エアバッグ
+T5	Parts 48 54	インジケータ
+R1	Coreference Arg1:T2 Arg2:T8	
+R2	Coreference Arg1:T8 Arg2:T3	
+R3	Connect Arg1:T4 Arg2:T1	
+R4	Part-Whole Arg1:T7 Arg2:T1	
+R5	Connect Arg1:T1 Arg2:T5	
+R6	Oneway-Coreference Arg1:T4 Arg2:T2	
+R7	Coreference Arg1:T3 Arg2:T6	

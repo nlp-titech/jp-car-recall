@@ -1,0 +1,9 @@
+T6	Parts 24 33	ステアリングラック
+T7	Parts 68 77	ステアリングラック
+T8	Parts 90 94	ハンドル
+T9	Parts 0 6	かじとり装置
+T10	Parts 7 19	ステアリングギヤボックス
+R1	Coreference Arg1:T7 Arg2:T6	
+R2	Part-Whole Arg1:T10 Arg2:T9	
+R3	Part-Whole Arg1:T6 Arg2:T10	
+R4	Connect Arg1:T9 Arg2:T8	

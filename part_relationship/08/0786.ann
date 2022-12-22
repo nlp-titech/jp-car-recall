@@ -1,0 +1,6 @@
+T18	Parts 50 54	エンジン
+T20	Parts 0 13	過給圧制御用ブーストホース
+T21	Parts 34 37	ホース
+T22	Parts 128 132	エンジン
+R1	Coreference Arg1:T21 Arg2:T20	
+R2	Coreference Arg1:T22 Arg2:T18	

@@ -1,0 +1,20 @@
+T14	Parts 63 65	歯車
+T15	Parts 25 45	ベアリング（ニードルローラーベアリング）
+T16	Parts 46 49	保持器
+T17	Parts 78 81	保持器
+T18	Parts 139 144	ベアリング
+T1	Parts 0 14	変速機（トランスミッション）
+T2	Parts 17 21	３速歯車
+T4	Parts 211 215	対象車両
+T5	Parts 230 234	対象車両
+R1	Coreference Arg1:T16 Arg2:T17	
+R2	Coreference Arg1:T15 Arg2:T18	
+R3	Coreference Arg1:T4 Arg2:T5	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Contact Arg1:T15 Arg2:T2	
+R7	Coreference Arg1:T14 Arg2:T2	
+R14	Part-Whole Arg1:T1 Arg2:T4	
+R13	Part-Whole Arg1:T15 Arg2:T1	
+T3	Parts 116 119	シフト
+R8	Connect Arg1:T1 Arg2:T3	
+R6	Part-Whole Arg1:T16 Arg2:T15	

@@ -1,0 +1,15 @@
+T1	Parts 17 28	燃料蒸発ガス排出バルブ
+T2	Parts 0 5	燃料タンク
+T3	Parts 77 82	燃料タンク
+T5	Parts 63 66	バルブ
+T6	Parts 92 95	バルブ
+T7	Parts 48 50	燃料
+T8	Parts 68 70	燃料
+T9	Parts 99 101	燃料
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Coreference Arg1:T1 Arg2:T5	
+R3	Coreference Arg1:T5 Arg2:T6	
+R4	Coreference Arg1:T7 Arg2:T8	
+R5	Coreference Arg1:T8 Arg2:T9	
+R6	Part-Whole Arg1:T8 Arg2:T3	
+R7	Part-Whole Arg1:T1 Arg2:T2	

@@ -1,0 +1,8 @@
+T1	Parts 0 15	エアバッグコントロールユニット
+T2	Parts 100 105	エアバッグ
+T4	Parts 47 52	電動シート
+T5	Parts 74 78	ユニット
+T6	Parts 80 85	ＩＣチップ
+R2	Coreference Arg1:T1 Arg2:T5	
+R1	Part-Whole Arg1:T6 Arg2:T5	
+R3	Connect Arg1:T5 Arg2:T2	

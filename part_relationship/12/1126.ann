@@ -1,0 +1,26 @@
+T17	Parts 189 195	ステアリング
+T18	Parts 124 136	パワーステアリングホース
+T19	Parts 52 64	パワーステアリングホース
+T1	Parts 1 14	ガスバルブ式ＣＮＧエンジン
+T2	Parts 19 23	大型バス
+T3	Parts 24 32	アクセルケーブル
+T5	Parts 45 50	燃料ホース
+T6	Parts 67 71	ケーブル
+T7	Parts 117 122	燃料ホース
+T8	Parts 147 151	燃料ガス
+T9	Parts 154 157	原動機
+T10	Parts 174 186	パワーステアリングオイル
+R1	Coreference Arg1:T3 Arg2:T6	
+R2	Coreference Arg1:T5 Arg2:T7	
+R3	Coreference Arg1:T19 Arg2:T18	
+R4	Part-Whole Arg1:T1 Arg2:T2	
+R5	Contact Arg1:T8 Arg2:T7	
+R6	Contact Arg1:T10 Arg2:T18	
+R7	Coreference Arg1:T9 Arg2:T1	
+R9	Part-Whole Arg1:T17 Arg2:T2	
+R10	Part-Whole Arg1:T3 Arg2:T2	
+R11	Connect Arg1:T7 Arg2:T9	
+R8	Part-Whole Arg1:T8 Arg2:T2	
+R12	Part-Whole Arg1:T5 Arg2:T2	
+R13	Part-Whole Arg1:T19 Arg2:T2	
+R14	Connect Arg1:T18 Arg2:T17	

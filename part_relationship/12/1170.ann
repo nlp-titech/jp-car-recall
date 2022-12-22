@@ -1,0 +1,15 @@
+T1	Parts 0 9	トランスミッション
+T2	Parts 10 17	デフサイドギヤ
+T3	Parts 18 31	左フロントドライブシャフト
+T4	Parts 51 58	スナップリング
+T5	Parts 69 76	デフサイドギヤ
+T6	Parts 118 125	スナップリング
+T7	Parts 126 134	ドライブシャフト
+T8	Parts 157 160	タイヤ
+R1	Coreference Arg1:T2 Arg2:T5	
+R2	Coreference Arg1:T4 Arg2:T6	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R7	Contact Arg1:T3 Arg2:T2	
+R8	Contact Arg1:T4 Arg2:T2	
+R9	Coreference Arg1:T7 Arg2:T3	
+R10	Connect Arg1:T8 Arg2:T7	

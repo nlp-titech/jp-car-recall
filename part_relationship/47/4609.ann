@@ -1,0 +1,7 @@
+T1	Parts 30 35	エアバッグ
+T2	Parts 61 71	運転者席側エアバッグ
+T4	Parts 0 4	電気装置
+T5	Parts 17 20	リレー
+R1	Oneway-Coreference Arg1:T1 Arg2:T2	
+R6	Connect Arg1:T5 Arg2:T1	
+R2	Connect Arg1:T4 Arg2:T5	

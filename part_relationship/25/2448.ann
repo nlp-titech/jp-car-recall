@@ -1,0 +1,8 @@
+T14	Parts 73 83	電源制御コントローラ
+T16	Parts 15 19	電源基板
+T17	Parts 20 24	リード板
+T1	Parts 0 10	電源制御コントローラ
+R1	Coreference Arg1:T14 Arg2:T1	
+R2	Part-Whole Arg1:T16 Arg2:T1	
+R3	Part-Whole Arg1:T17 Arg2:T1	
+R4	Contact Arg1:T16 Arg2:T17	

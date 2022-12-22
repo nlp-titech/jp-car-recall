@@ -1,0 +1,18 @@
+T11	Parts 126 128	ドア
+T13	Parts 100 102	ドア
+T14	Parts 32 36	ケーブル
+T15	Parts 54 58	ハンドル
+T16	Parts 73 77	ケーブル
+T1	Parts 0 4	後席ドア
+T2	Parts 9 19	アウトサイドハンドル
+T3	Parts 20 27	ドアロック装置
+R1	Coreference Arg1:T2 Arg2:T15	
+R2	Coreference Arg1:T14 Arg2:T16	
+R4	Coreference Arg1:T1 Arg2:T13	
+R5	Coreference Arg1:T13 Arg2:T11	
+R6	Part-Whole Arg1:T2 Arg2:T1	
+R7	Part-Whole Arg1:T3 Arg2:T1	
+R8	Part-Whole Arg1:T14 Arg2:T1	
+R9	Contact Arg1:T14 Arg2:T3	
+R10	Contact Arg1:T14 Arg2:T2	
+R11	Connect Arg1:T3 Arg2:T2	

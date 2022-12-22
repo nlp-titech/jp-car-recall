@@ -1,0 +1,20 @@
+T1	Parts 0 6	大型トラック
+T2	Parts 7 12	手動変速機
+T3	Parts 17 26	オイルクーラホース
+T4	Parts 43 45	車両
+T5	Parts 57 66	オイルクーラホース
+R1	Coreference Arg1:T5 Arg2:T3	
+T6	Parts 78 81	ホース
+R2	Coreference Arg1:T6 Arg2:T5	
+T7	Parts 86 106	リターダドラム（補助制動装置の回転部分）
+T8	Parts 140 143	ホース
+R3	Coreference Arg1:T8 Arg2:T6	
+T9	Parts 148 151	オイル
+T10	Parts 155 158	変速機
+R4	Coreference Arg1:T10 Arg2:T2	
+R5	Coreference Arg1:T1 Arg2:T4	
+R6	Contact Arg1:T8 Arg2:T9	
+R7	Part-Whole Arg1:T2 Arg2:T1	
+R8	Part-Whole Arg1:T7 Arg2:T1	
+R9	Contact Arg1:T2 Arg2:T3	
+R10	Part-Whole Arg1:T3 Arg2:T1	

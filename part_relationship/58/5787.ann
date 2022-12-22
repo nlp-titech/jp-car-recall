@@ -1,0 +1,14 @@
+T3	Parts 0 7	フロントシート
+T4	Parts 8 17	シート・リクライナ
+T5	Parts 58 61	自動車
+T6	Parts 31 39	リクライナ・ギヤ
+T7	Parts 93 101	リクライナ・ギヤ
+T1	Parts 77 80	シート
+T2	Parts 110 113	シート
+#1	AnnotatorNotes T1	エンジンルームと同様に処理
+R1	Part-Whole Arg1:T4 Arg2:T3	
+R2	Coreference Arg1:T3 Arg2:T1	
+R3	Coreference Arg1:T1 Arg2:T2	
+R4	Contact Arg1:T4 Arg2:T6	
+R5	Part-Whole Arg1:T3 Arg2:T5	
+R6	Coreference Arg1:T6 Arg2:T7	

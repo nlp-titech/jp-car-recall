@@ -1,0 +1,11 @@
+T14	Parts 121 123	ドア
+T15	Parts 64 66	ドア
+T17	Parts 102 107	ドアロック
+T18	Parts 33 38	ドアロック
+T21	Parts 39 47	ドアストライカー
+T22	Parts 11 16	バックドア
+R1	Coreference Arg1:T17 Arg2:T18	
+R2	Coreference Arg1:T14 Arg2:T15	
+R3	Coreference Arg1:T15 Arg2:T22	
+R5	Part-Whole Arg1:T18 Arg2:T22	
+R6	Part-Whole Arg1:T21 Arg2:T22	

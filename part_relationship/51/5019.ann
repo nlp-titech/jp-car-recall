@@ -1,0 +1,13 @@
+T1	Parts 8 18	コネクティングロッド
+T2	Parts 19 25	取付けボルト
+T3	Parts 1 5	エンジン
+T4	Parts 36 40	エンジン
+T5	Parts 76 80	エンジン
+T6	Parts 91 95	エンジン
+T7	Parts 57 60	ボルト
+R1	Coreference Arg1:T4 Arg2:T3	
+R2	Coreference Arg1:T7 Arg2:T2	
+R3	Part-Whole Arg1:T1 Arg2:T3	
+R4	Contact Arg1:T2 Arg2:T1	
+R5	Coreference Arg1:T6 Arg2:T5	
+R6	Coreference Arg1:T5 Arg2:T4	

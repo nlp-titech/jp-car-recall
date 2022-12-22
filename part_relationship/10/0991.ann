@@ -1,0 +1,15 @@
+T13	Parts 107 113	ステアポンプ
+T14	Parts 10 16	ステアポンプ
+T15	Parts 36 44	ドライブスリーブ
+T16	Parts 71 79	ドライブスリーブ
+T1	Parts 0 9	トランスミッション
+T2	Parts 47 50	潤滑油
+T3	Parts 114 125	ブレーキアシストポンプ
+T4	Parts 146 152	駐車ブレーキ
+R2	Coreference Arg1:T16 Arg2:T15	
+R3	Part-Whole Arg1:T14 Arg2:T1	
+R4	Contact Arg1:T15 Arg2:T2	
+R7	Connect Arg1:T13 Arg2:T3	
+R8	Connect Arg1:T3 Arg2:T4	
+R1	Coreference Arg1:T13 Arg2:T14	
+R9	Part-Whole Arg1:T15 Arg2:T14	

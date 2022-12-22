@@ -1,0 +1,11 @@
+T1	Parts 35 54	流量調整弁（フローコントロールバルブ）
+T3	Parts 25 32	パワーユニット
+T4	Parts 79 86	プラットホーム
+T6	Parts 99 102	作動油
+T8	Parts 91 96	流量調整弁
+T9	Parts 0 20	床下スライド格納型テールゲートリフタ装置
+R1	Part-Whole Arg1:T1 Arg2:T3	
+R5	Contact Arg1:T6 Arg2:T8	
+R6	Contact Arg1:T9 Arg2:T4	
+R7	Part-Whole Arg1:T3 Arg2:T9	
+R2	Coreference Arg1:T1 Arg2:T8	

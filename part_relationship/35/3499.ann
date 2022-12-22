@@ -1,0 +1,41 @@
+T1	Parts 27 66	シートガスケット（エアコンプレッサ内の冷却水通路とエア通路の気密性を保つもの）
+T2	Parts 149 175	エアドライヤ（圧縮空気中の水分や油分を取り除くもの）
+T3	Parts 18 26	エアコンプレッサ
+T4	Parts 264 270	吸排気バルブ
+T5	Parts 7 13	大・中型バス
+T6	Parts 0 6	中型トラック
+T7	Parts 98 103	ガスケット
+T8	Parts 310 315	警報ブザー
+T9	Parts 217 221	エンジン
+T10	Parts 79 83	ピストン
+T11	Parts 361 365	ブレーキ
+T12	Parts 193 196	警告灯
+T13	Parts 322 325	警告灯
+T14	Parts 122 125	冷却水
+T15	Parts 182 185	冷却水
+T16	Parts 242 245	冷却水
+T23	Parts 142 144	配管
+R1	Part-Whole Arg1:T1 Arg2:T3	
+R2	Coreference Arg1:T7 Arg2:T1	
+R3	Coreference Arg1:T15 Arg2:T14	
+R4	Coreference Arg1:T16 Arg2:T15	
+R5	Part-Whole Arg1:T9 Arg2:T5	
+R6	Part-Whole Arg1:T9 Arg2:T6	
+R7	Connect Arg1:T23 Arg2:T3	
+R8	Contact Arg1:T2 Arg2:T23	
+R9	Connect Arg1:T12 Arg2:T3	
+R10	Part-Whole Arg1:T12 Arg2:T5	
+R11	Part-Whole Arg1:T12 Arg2:T6	
+R12	Part-Whole Arg1:T3 Arg2:T6	
+R13	Part-Whole Arg1:T3 Arg2:T5	
+R14	Part-Whole Arg1:T10 Arg2:T3	
+R17	Part-Whole Arg1:T23 Arg2:T5	
+R18	Part-Whole Arg1:T23 Arg2:T6	
+R19	Connect Arg1:T4 Arg2:T23	
+R20	Coreference Arg1:T13 Arg2:T12	
+R21	Connect Arg1:T8 Arg2:T3	
+R22	Part-Whole Arg1:T8 Arg2:T5	
+R23	Part-Whole Arg1:T8 Arg2:T6	
+R24	Connect Arg1:T11 Arg2:T3	
+R25	Part-Whole Arg1:T11 Arg2:T5	
+R26	Part-Whole Arg1:T11 Arg2:T6	

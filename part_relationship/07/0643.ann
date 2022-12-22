@@ -1,0 +1,10 @@
+T18	Parts 125 129	ワイパー
+T19	Parts 99 102	モータ
+T20	Parts 76 79	モータ
+T21	Parts 64 67	モータ
+T22	Parts 0 7	ワイパーモータ
+T2	Parts 47 54	フロントデッキ
+R2	Coreference Arg1:T21 Arg2:T22	
+R3	Coreference Arg1:T20 Arg2:T21	
+R4	Coreference Arg1:T19 Arg2:T20	
+R6	Contact Arg1:T22 Arg2:T18	

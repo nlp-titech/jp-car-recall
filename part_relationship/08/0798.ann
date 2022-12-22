@@ -1,0 +1,27 @@
+T20	Parts 33 36	ナット
+T21	Parts 37 42	ブラケット
+T23	Parts 71 74	ナット
+T25	Parts 122 128	締付けボルト
+T27	Parts 144 149	ブラケット
+T28	Parts 139 143	スタンド
+T29	Parts 24 28	スタンド
+T30	Parts 57 61	スタンド
+T31	Parts 117 121	スタンド
+T33	Parts 184 188	スタンド
+T1	Parts 0 7	メインスタンド
+T2	Parts 12 17	ブラケット
+R1	Coreference Arg1:T29 Arg2:T1	
+R2	Coreference Arg1:T30 Arg2:T29	
+R3	Coreference Arg1:T21 Arg2:T2	
+R4	Coreference Arg1:T23 Arg2:T20	
+R6	Coreference Arg1:T31 Arg2:T30	
+R7	Coreference Arg1:T28 Arg2:T31	
+R8	Coreference Arg1:T27 Arg2:T21	
+T5	Parts 154 157	タイヤ
+T6	Parts 162 165	タイヤ
+R9	Coreference Arg1:T33 Arg2:T28	
+R10	Coreference Arg1:T6 Arg2:T5	
+R11	Contact Arg1:T2 Arg2:T1	
+R12	Contact Arg1:T20 Arg2:T29	
+R13	Contact Arg1:T21 Arg2:T29	
+R5	Contact Arg1:T25 Arg2:T31	

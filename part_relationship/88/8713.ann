@@ -1,0 +1,12 @@
+T1	Parts 0 6	動力伝達装置
+T2	Parts 24 30	ギアボックス
+T3	Parts 32 35	オイル
+T4	Parts 54 58	クラッチ
+T5	Parts 119 122	オイル
+T6	Parts 129 137	ブリーザーバルブ
+R1	Coreference Arg1:T3 Arg2:T5	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Contact Arg1:T2 Arg2:T3	
+R4	Connect Arg1:T4 Arg2:T2	
+R6	Part-Whole Arg1:T6 Arg2:T1	
+R5	Part-Whole Arg1:T4 Arg2:T1	

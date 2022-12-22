@@ -1,0 +1,6 @@
+T1	Parts 42 54	リヤサスペンションアーム
+T2	Parts 59 62	ナット
+T3	Parts 93 96	タイヤ
+T4	Parts 117 120	タイヤ
+R1	Contact Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T4 Arg2:T3	

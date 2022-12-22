@@ -1,0 +1,18 @@
+T14	Parts 91 96	ロック機構
+T15	Parts 97 101	ヒューズ
+T1	Parts 0 13	離席時走行・荷役ロック機構
+T2	Parts 18 30	作業機操作弁用電磁バルブ
+T3	Parts 31 35	電気配線
+T4	Parts 50 54	電気配線
+R1	Coreference Arg1:T4 Arg2:T3	
+T5	Parts 55 59	電気配線
+R2	Coreference Arg1:T5 Arg2:T4	
+T6	Parts 60 63	保護板
+R3	Coreference Arg1:T14 Arg2:T1	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Contact Arg1:T3 Arg2:T2	
+R6	Contact Arg1:T6 Arg2:T5	
+R7	Part-Whole Arg1:T15 Arg2:T14	
+R8	Part-Whole Arg1:T3 Arg2:T1	
+R9	Connect Arg1:T5 Arg2:T15	
+R10	Part-Whole Arg1:T6 Arg2:T1	

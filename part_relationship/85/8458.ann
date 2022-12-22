@@ -1,0 +1,7 @@
+T1	Parts 0 28	衝突回避支援システム（プリクラッシュセーフティシステム）
+T2	Parts 33 55	プリクラッシュブレーキアシスト制御プログラム
+T3	Parts 107 111	ブレーキ
+T4	Parts 118 126	ブレーキアシスト
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Connect Arg1:T4 Arg2:T2	
+R3	Connect Arg1:T2 Arg2:T3	

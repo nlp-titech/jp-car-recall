@@ -1,0 +1,13 @@
+T2	Parts 9 12	排気管
+T3	Parts 17 20	排気管
+T4	Parts 27 29	金具
+T5	Parts 50 52	金具
+T7	Parts 60 63	排気管
+T9	Parts 95 98	排気管
+R1	Coreference Arg1:T9 Arg2:T7	
+R2	Coreference Arg1:T5 Arg2:T4	
+R3	Coreference Arg1:T7 Arg2:T3	
+R4	Coreference Arg1:T3 Arg2:T2	
+T1	Parts 2 8	過給機付き車
+R5	Part-Whole Arg1:T2 Arg2:T1	
+R6	Contact Arg1:T4 Arg2:T3	

@@ -1,0 +1,10 @@
+T1	Parts 0 5	燃料タンク
+T3	Parts 70 75	燃料タンク
+T5	Parts 47 50	バンド
+T6	Parts 6 8	車体
+T2	Parts 13 22	燃料タンク・バンド
+R1	Contact Arg1:T1 Arg2:T6	
+R2	Contact Arg1:T1 Arg2:T2	
+R3	Coreference Arg1:T2 Arg2:T5	
+R4	Coreference Arg1:T1 Arg2:T3	
+R5	Contact Arg1:T6 Arg2:T2	

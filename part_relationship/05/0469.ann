@@ -1,0 +1,13 @@
+T1	Parts 0 8	運転席エアバッグ
+T2	Parts 13 18	エアバッグ
+T3	Parts 21 35	インフレータ（ガス発生装置）
+T4	Parts 36 40	点火装置
+T6	Parts 60 63	点火剤
+T7	Parts 82 87	エアバッグ
+R1	Coreference Arg1:T7 Arg2:T2	
+R2	Coreference Arg1:T2 Arg2:T1	
+T5	Parts 53 57	点火装置
+R3	Coreference Arg1:T5 Arg2:T4	
+R4	Part-Whole Arg1:T3 Arg2:T2	
+R6	Part-Whole Arg1:T6 Arg2:T5	
+R5	Part-Whole Arg1:T4 Arg2:T3	

@@ -1,0 +1,13 @@
+T12	Parts 36 43	ドラッグリンク
+T13	Parts 72 74	ネジ
+T14	Parts 124 131	ドラッグリンク
+T1	Parts 0 6	かじ取り装置
+T2	Parts 11 23	ステアリングギヤボックス
+T3	Parts 25 28	前車輪
+R1	Coreference Arg1:T12 Arg2:T14	
+R2	Connect Arg1:T3 Arg2:T2	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T12 Arg2:T1	
+R6	Contact Arg1:T2 Arg2:T12	
+R7	Contact Arg1:T12 Arg2:T13	
+R8	Part-Whole Arg1:T13 Arg2:T1	

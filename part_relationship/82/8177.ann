@@ -1,0 +1,37 @@
+T1	Parts 0 27	ＥＢＳ（電子制御ブレーキシステム）コントロールユニット
+T2	Parts 29 41	トレーラー接続用ソケット
+T3	Parts 44 46	配線
+T4	Parts 51 54	ＥＢＳ
+T5	Parts 58 61	ＡＢＳ
+T6	Parts 68 70	配線
+T7	Parts 80 82	車両
+T9	Parts 112 118	ＥＢＳ警告灯
+T8	Parts 183 186	警告灯
+T10	Parts 227 229	車両
+T11	Parts 91 94	ＥＢＳ
+T12	Parts 122 125	ＥＢＳ
+T13	Parts 136 139	ＡＢＳ
+T15	Parts 143 148	トレーラー
+T16	Parts 156 161	トレーラー
+R1	Part-Whole Arg1:T1 Arg2:T4	
+T17	Parts 99 104	トレーラー
+R2	Coreference Arg1:T4 Arg2:T11	
+R3	Coreference Arg1:T11 Arg2:T12	
+R4	Connect Arg1:T1 Arg2:T2	
+R5	Connect Arg1:T3 Arg2:T2	
+R6	Connect Arg1:T3 Arg2:T1	
+R7	Connect Arg1:T6 Arg2:T5	
+R8	Coreference Arg1:T6 Arg2:T3	
+R9	Part-Whole Arg1:T4 Arg2:T7	
+R10	Part-Whole Arg1:T5 Arg2:T7	
+R11	Part-Whole Arg1:T6 Arg2:T7	
+R12	Part-Whole Arg1:T2 Arg2:T7	
+R13	Part-Whole Arg1:T9 Arg2:T7	
+R14	Contact Arg1:T17 Arg2:T7	
+R15	Coreference Arg1:T13 Arg2:T5	
+R16	Coreference Arg1:T15 Arg2:T17	
+R17	Coreference Arg1:T16 Arg2:T15	
+T14	Parts 163 166	ＡＢＳ
+R18	Coreference Arg1:T14 Arg2:T13	
+R19	Part-Whole Arg1:T8 Arg2:T7	
+R20	Coreference Arg1:T10 Arg2:T7	

@@ -1,0 +1,12 @@
+T1	Parts 5 16	横滑り防止装置付仕様車
+T2	Parts 21 34	横滑り防止装置コントローラ
+T3	Parts 42 49	制御プログラム
+T4	Parts 81 100	ＡＢＳ（アンチロックブレーキシステム）
+T5	Parts 106 108	車輪
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T2	
+R3	Part-Whole Arg1:T5 Arg2:T6	
+R4	Part-Whole Arg1:T4 Arg2:T6	
+T6	Parts 114 116	車両
+R5	Coreference Arg1:T1 Arg2:T6	
+R7	Connect Arg1:T4 Arg2:T5	

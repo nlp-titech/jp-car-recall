@@ -1,0 +1,6 @@
+T10	Parts 0 22	プロペラシャフトセンターベアリングブラケット
+T11	Parts 45 50	ブラケット
+T12	Parts 95 100	ブラケット
+T13	Parts 106 114	プロペラシャフト
+R1	Coreference Arg1:T11 Arg2:T10	
+R2	Coreference Arg1:T12 Arg2:T11	

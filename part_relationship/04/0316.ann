@@ -1,0 +1,20 @@
+T9	Parts 18 25	キーシリンダー
+T10	Parts 26 30	キャップ
+T11	Parts 35 37	ピン
+T13	Parts 86 88	ピン
+T14	Parts 102 108	かじ取り装置
+T15	Parts 109 113	施錠装置
+T18	Parts 94 98	キャップ
+T2	Parts 9 13	施錠装置
+T3	Parts 69 78	イグニッションキー
+R1	Coreference Arg1:T13 Arg2:T11	
+R2	Coreference Arg1:T18 Arg2:T10	
+R3	Coreference Arg1:T15 Arg2:T2	
+T4	Parts 128 131	原動機
+R5	Part-Whole Arg1:T9 Arg2:T2	
+R6	Part-Whole Arg1:T10 Arg2:T9	
+R7	Contact Arg1:T10 Arg2:T11	
+T1	Parts 0 8	自動変速機付車両
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R8	Contact Arg1:T11 Arg2:T3	
+R9	Part-Whole Arg1:T4 Arg2:T2	

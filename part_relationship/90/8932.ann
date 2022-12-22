@@ -1,0 +1,7 @@
+T1	Parts 0 9	ブレーキキャリパー
+T2	Parts 70 79	キャリパーピストン
+T3	Parts 94 98	ブレーキ
+T4	Parts 14 18	ピストン
+R1	Part-Whole Arg1:T4 Arg2:T1	
+R2	Coreference Arg1:T4 Arg2:T2	
+R3	Part-Whole Arg1:T1 Arg2:T3	

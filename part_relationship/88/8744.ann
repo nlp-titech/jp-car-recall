@@ -1,0 +1,9 @@
+T1	Parts 0 6	排気ブレーキ
+T2	Parts 11 24	エンジン制御用コンピュータ
+T3	Parts 26 33	制御プログラム
+T4	Parts 49 55	排気ブレーキ
+T5	Parts 93 97	制動装置
+R1	Coreference Arg1:T1 Arg2:T4	
+R2	Oneway-Coreference Arg1:T5 Arg2:T4	
+R3	Connect Arg1:T1 Arg2:T2	
+R4	Part-Whole Arg1:T3 Arg2:T2	

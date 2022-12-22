@@ -1,0 +1,17 @@
+T1	Parts 14 22	ボールジョイント
+T2	Parts 0 9	フロントロアアーム
+T3	Parts 91 96	ロアアーム
+T4	Parts 110 114	ハンドル
+T5	Parts 97 105	ホイールキャリア
+T6	Parts 23 26	ボルト
+T7	Parts 51 54	ボルト
+T8	Parts 72 75	ボルト
+R2	Part-Whole Arg1:T1 Arg2:T2	
+R3	Coreference Arg1:T6 Arg2:T7	
+R4	Coreference Arg1:T7 Arg2:T8	
+R5	Connect Arg1:T3 Arg2:T5	
+R6	Contact Arg1:T5 Arg2:T8	
+R7	Connect Arg1:T3 Arg2:T4	
+R8	Connect Arg1:T5 Arg2:T4	
+R9	Coreference Arg1:T2 Arg2:T3	
+R1	Part-Whole Arg1:T6 Arg2:T1	

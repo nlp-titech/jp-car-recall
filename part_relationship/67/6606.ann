@@ -1,0 +1,12 @@
+T1	Parts 0 13	リヤコンビネーションランプ
+T2	Parts 27 34	バルブホルダー
+T4	Parts 18 21	バルブ
+T5	Parts 73 76	警告灯
+T6	Parts 87 90	制動灯
+T7	Parts 93 95	尾灯
+R1	Part-Whole Arg1:T6 Arg2:T1	
+R2	Part-Whole Arg1:T7 Arg2:T1	
+R5	Part-Whole Arg1:T2 Arg2:T1	
+R6	Contact Arg1:T2 Arg2:T4	
+R3	Part-Whole Arg1:T4 Arg2:T1	
+R4	Connect Arg1:T1 Arg2:T5	

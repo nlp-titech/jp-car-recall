@@ -1,0 +1,23 @@
+T18	Parts 217 227	リヤプロペラシャフト
+T26	Parts 161 163	軸受
+T27	Parts 127 129	軸受
+T28	Parts 15 27	リヤプロペラシャフト軸受
+T2	Parts 53 56	潤滑油
+T3	Parts 63 66	潤滑油
+R1	Coreference Arg1:T3 Arg2:T2	
+T4	Parts 75 77	軸受
+R2	Coreference Arg1:T28 Arg2:T4	
+R3	Coreference Arg1:T4 Arg2:T27	
+R5	Coreference Arg1:T27 Arg2:T26	
+T9	Parts 164 173	トランスファケース
+T10	Parts 191 200	トランスファケース
+R6	Coreference Arg1:T9 Arg2:T10	
+T11	Parts 202 212	アウトプットシャフト
+R9	Contact Arg1:T2 Arg2:T28	
+R11	Contact Arg1:T26 Arg2:T18	
+R12	Connect Arg1:T18 Arg2:T11	
+T1	Parts 5 10	貨物自動車
+R4	Part-Whole Arg1:T9 Arg2:T1	
+R8	Part-Whole Arg1:T11 Arg2:T1	
+R13	Part-Whole Arg1:T18 Arg2:T1	
+R7	Part-Whole Arg1:T26 Arg2:T9	

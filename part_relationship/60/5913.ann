@@ -1,0 +1,18 @@
+T1	Parts 9 20	オイルリザーバータンク
+T2	Parts 84 95	オイルリザーバータンク
+T3	Parts 137 143	ブレーキ配管
+T4	Parts 97 102	ブレーキ液
+T5	Parts 0 8	フロントブレーキ
+T6	Parts 151 159	フロントブレーキ
+T7	Parts 51 54	原動機
+T8	Parts 75 77	車両
+T9	Parts 21 31	スクリーンインサート
+R1	Coreference Arg1:T5 Arg2:T6	
+R2	Coreference Arg1:T1 Arg2:T2	
+R3	Contact Arg1:T4 Arg2:T3	
+R4	Part-Whole Arg1:T4 Arg2:T2	
+R5	Part-Whole Arg1:T7 Arg2:T8	
+R6	Part-Whole Arg1:T3 Arg2:T6	
+R7	Part-Whole Arg1:T1 Arg2:T5	
+R8	Part-Whole Arg1:T9 Arg2:T1	
+R9	Part-Whole Arg1:T5 Arg2:T8	

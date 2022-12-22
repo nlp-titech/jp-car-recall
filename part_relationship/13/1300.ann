@@ -1,0 +1,9 @@
+T18	Parts 18 22	自在継手
+T19	Parts 64 66	継手
+T20	Parts 117 121	自在継手
+T1	Parts 0 2	車軸
+T2	Parts 10 13	推進軸
+R1	Coreference Arg1:T18 Arg2:T19	
+R2	Coreference Arg1:T19 Arg2:T20	
+R3	Connect Arg1:T1 Arg2:T2	
+R4	Part-Whole Arg1:T18 Arg2:T2	

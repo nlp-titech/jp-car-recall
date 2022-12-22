@@ -1,0 +1,21 @@
+T21	Parts 170 174	エンジン
+T23	Parts 158 160	ギヤ
+T26	Parts 116 118	ギヤ
+T27	Parts 40 42	ギヤ
+T29	Parts 43 49	固定シャフト
+T30	Parts 23 27	ブッシュ
+T31	Parts 50 54	ブッシュ
+T1	Parts 0 3	原動機
+T2	Parts 4 22	カムシャフト駆動用ヘッドアイドラギヤ
+T3	Parts 63 67	シャフト
+T7	Parts 139 146	エンジンオイル
+R1	Coreference Arg1:T2 Arg2:T27	
+R2	Coreference Arg1:T30 Arg2:T31	
+R4	Coreference Arg1:T27 Arg2:T26	
+R5	Coreference Arg1:T26 Arg2:T23	
+R6	Part-Whole Arg1:T2 Arg2:T1	
+R7	Part-Whole Arg1:T30 Arg2:T2	
+R8	Contact Arg1:T29 Arg2:T27	
+R9	Coreference Arg1:T3 Arg2:T29	
+R11	Contact Arg1:T21 Arg2:T7	
+R12	Coreference Arg1:T21 Arg2:T1	

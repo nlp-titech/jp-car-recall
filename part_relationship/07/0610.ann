@@ -1,0 +1,11 @@
+T1	Parts 0 12	ブローバイ・ガス還元装置
+T2	Parts 16 25	ブリーザーチューブ
+T3	Parts 74 77	原動機
+T4	Parts 83 91	ブリーザーパイプ
+T5	Parts 106 109	原動機
+R1	Coreference Arg1:T5 Arg2:T3	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Coreference Arg1:T4 Arg2:T7	
+T7	Parts 30 38	ブリーザーパイプ
+R4	Part-Whole Arg1:T7 Arg2:T1	
+R5	Contact Arg1:T1 Arg2:T3	

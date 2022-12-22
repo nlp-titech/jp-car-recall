@@ -1,0 +1,19 @@
+T16	Parts 163 169	駐車ブレーキ
+T17	Parts 134 143	駐車ブレーキペダル
+T19	Parts 148 156	ラチェットポール
+T20	Parts 93 101	ラチェットポール
+T21	Parts 53 61	ラチェットポール
+T22	Parts 18 26	ラチェットポール
+T23	Parts 27 32	ブラケット
+T24	Parts 104 109	ブラケット
+T1	Parts 0 10	踏込み式駐車ブレーキ
+T3	Parts 66 70	グリース
+R1	Coreference Arg1:T21 Arg2:T22	
+R2	Coreference Arg1:T20 Arg2:T21	
+R3	Coreference Arg1:T24 Arg2:T23	
+R4	Coreference Arg1:T19 Arg2:T20	
+R5	Coreference Arg1:T16 Arg2:T1	
+R6	Part-Whole Arg1:T22 Arg2:T1	
+R8	Contact Arg1:T3 Arg2:T21	
+R9	Connect Arg1:T17 Arg2:T19	
+R7	Part-Whole Arg1:T23 Arg2:T1	

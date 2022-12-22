@@ -1,0 +1,11 @@
+T14	Parts 18 38	チェックバルブ（逆止弁）締結部ガスケット
+T16	Parts 70 75	ガスケット
+T17	Parts 83 90	チェックバルブ
+T1	Parts 1 5	エンジン
+T2	Parts 6 13	高圧燃料ポンプ
+R1	Coreference Arg1:T16 Arg2:T14	
+T5	Parts 130 132	燃料
+R4	Contact Arg1:T2 Arg2:T5	
+R8	Part-Whole Arg1:T14 Arg2:T2	
+R2	Contact Arg1:T2 Arg2:T1	
+R3	Contact Arg1:T17 Arg2:T16	

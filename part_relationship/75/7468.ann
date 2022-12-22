@@ -1,0 +1,11 @@
+T1	Parts 0 20	ポップアップフードシステム対応ボンネット
+T2	Parts 37 42	ボンネット
+T3	Parts 25 35	左右ボンネットヒンジ
+T4	Parts 63 71	ボンネットヒンジ
+T5	Parts 73 78	ボンネット
+T6	Parts 102 107	ボンネット
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Coreference Arg1:T2 Arg2:T5	
+R3	Coreference Arg1:T5 Arg2:T6	
+R4	Coreference Arg1:T3 Arg2:T4	
+R5	Contact Arg1:T1 Arg2:T3	

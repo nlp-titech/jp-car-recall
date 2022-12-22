@@ -1,0 +1,5 @@
+T1	Parts 15 27	上部アンカー取付けボルト
+T2	Parts 0 10	３列目左右座席ベルト
+T4	Parts 89 92	ボルト
+R1	Coreference Arg1:T4 Arg2:T1	
+R2	Contact Arg1:T1 Arg2:T2	

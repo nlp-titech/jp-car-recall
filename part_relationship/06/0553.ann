@@ -1,0 +1,20 @@
+T15	Parts 33 45	変速用インプットクラッチ
+T16	Parts 69 73	クラッチ
+T1	Parts 1 7	動力伝達装置
+T2	Parts 12 17	自動変速機
+T3	Parts 18 25	制御プログラム
+T4	Parts 77 81	エンジン
+T5	Parts 124 126	ギア
+T6	Parts 143 147	アクセル
+R1	Coreference Arg1:T16 Arg2:T15	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T3 Arg2:T2	
+R4	Part-Whole Arg1:T15 Arg2:T1	
+R7	Connect Arg1:T3 Arg2:T15	
+R5	Connect Arg1:T1 Arg2:T4	
+T7	Parts 110 112	車体
+R6	Part-Whole Arg1:T5 Arg2:T2	
+R8	Part-Whole Arg1:T1 Arg2:T7	
+R9	Part-Whole Arg1:T4 Arg2:T7	
+R10	Part-Whole Arg1:T6 Arg2:T7	
+R11	Connect Arg1:T2 Arg2:T6	

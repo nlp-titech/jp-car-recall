@@ -1,0 +1,9 @@
+T1	Parts 0 4	燃料配管
+T2	Parts 5 19	継ぎ手部（クイックコネクタ）
+T3	Parts 34 42	クイックコネクタ
+T4	Parts 78 86	クイックコネクタ
+T5	Parts 100 102	燃料
+R1	Coreference Arg1:T4 Arg2:T3	
+R2	Coreference Arg1:T3 Arg2:T2	
+R3	Contact Arg1:T1 Arg2:T5	
+R4	Part-Whole Arg1:T2 Arg2:T1	

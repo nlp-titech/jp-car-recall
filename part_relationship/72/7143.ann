@@ -1,0 +1,5 @@
+T1	Parts 9 17	助手席エアバッグ
+T2	Parts 90 95	エアバッグ
+T5	Parts 36 38	車両
+R1	Part-Whole Arg1:T1 Arg2:T5	
+R2	Coreference Arg1:T1 Arg2:T2	

@@ -1,0 +1,15 @@
+T12	Parts 39 44	スプリング
+T13	Parts 51 54	ナット
+T14	Parts 83 88	スプリング
+T15	Parts 101 107	クラッチハブ
+T17	Parts 7 11	クラッチ
+T18	Parts 0 6	動力伝達装置
+T1	Parts 21 25	駆動車輪
+R1	Coreference Arg1:T14 Arg2:T12	
+R2	Part-Whole Arg1:T17 Arg2:T18	
+R3	Connect Arg1:T1 Arg2:T17	
+R4	Part-Whole Arg1:T12 Arg2:T17	
+R6	Part-Whole Arg1:T15 Arg2:T17	
+T2	Parts 119 123	クラッチ
+R7	Coreference Arg1:T17 Arg2:T2	
+R5	Contact Arg1:T12 Arg2:T13	

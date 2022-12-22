@@ -1,0 +1,9 @@
+T1	Parts 4 9	エアバック
+T2	Parts 33 38	エアバック
+T3	Parts 0 3	助手席
+R1	Part-Whole Arg1:T1 Arg2:T3	
+T4	Parts 14 17	バック
+T5	Parts 55 58	バック
+R4	Coreference Arg1:T4 Arg2:T2	
+R3	Coreference Arg1:T4 Arg2:T1	
+R2	Coreference Arg1:T2 Arg2:T5	

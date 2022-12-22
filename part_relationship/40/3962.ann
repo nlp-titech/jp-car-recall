@@ -1,0 +1,11 @@
+T1	Parts 28 31	レンズ
+T2	Parts 96 99	レンズ
+T4	Parts 0 2	車両
+T5	Parts 140 142	車両
+T3	Parts 20 23	カメラ
+T6	Parts 111 117	サイドカメラ
+R2	Coreference Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T1 Arg2:T3	
+R4	Coreference Arg1:T5 Arg2:T4	
+R5	Part-Whole Arg1:T3 Arg2:T4	
+R1	Oneway-Coreference Arg1:T3 Arg2:T6	

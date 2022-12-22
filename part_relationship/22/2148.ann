@@ -1,0 +1,7 @@
+T1	Parts 0 8	アクセルケーブル
+T2	Parts 27 31	ケーブル
+T3	Parts 32 40	変速機油圧ホース
+R1	Coreference Arg1:T2 Arg2:T1	
+T4	Parts 76 84	アクセルケーブル
+R2	Coreference Arg1:T4 Arg2:T2	
+R3	Contact Arg1:T3 Arg2:T2	

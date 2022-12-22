@@ -1,0 +1,14 @@
+T15	Parts 44 49	自動変速機
+T16	Parts 19 27	ソレノイドバルブ
+T17	Parts 28 32	コイル線
+T18	Parts 73 77	コイル線
+T1	Parts 1 6	自動変速機
+R1	Coreference Arg1:T15 Arg2:T1	
+R2	Coreference Arg1:T18 Arg2:T17	
+T2	Parts 108 112	クラッチ
+R3	Part-Whole Arg1:T16 Arg2:T1	
+R4	Part-Whole Arg1:T17 Arg2:T16	
+T3	Parts 144 146	車両
+R5	Part-Whole Arg1:T2 Arg2:T3	
+R6	Part-Whole Arg1:T1 Arg2:T3	
+R7	Connect Arg1:T2 Arg2:T15	

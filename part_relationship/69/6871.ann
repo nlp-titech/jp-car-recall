@@ -1,0 +1,12 @@
+T1	Parts 66 78	パワーステアリングオイル
+T2	Parts 0 12	パワーステアリングポンプ
+T4	Parts 148 152	ハンドル
+T6	Parts 96 99	バルブ
+T7	Parts 127 130	ポンプ
+T3	Parts 41 48	スプールバルブ
+R1	Part-Whole Arg1:T3 Arg2:T2	
+R2	Contact Arg1:T2 Arg2:T1	
+R3	Coreference Arg1:T3 Arg2:T6	
+R4	Coreference Arg1:T2 Arg2:T7	
+R5	Contact Arg1:T1 Arg2:T3	
+R6	Connect Arg1:T7 Arg2:T4	

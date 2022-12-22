@@ -1,0 +1,10 @@
+T9	Parts 111 113	車輪
+T11	Parts 78 87	ナックルスピンドル
+T12	Parts 16 25	ナックルスピンドル
+T1	Parts 0 11	５トン系フォークリフト
+R1	Coreference Arg1:T12 Arg2:T11	
+T2	Parts 102 107	スピンドル
+R2	Coreference Arg1:T11 Arg2:T2	
+R3	Part-Whole Arg1:T12 Arg2:T1	
+R4	Contact Arg1:T9 Arg2:T2	
+R5	Part-Whole Arg1:T9 Arg2:T1	

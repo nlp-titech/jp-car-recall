@@ -1,0 +1,14 @@
+T1	Parts 13 23	燃料ポンプ用電気配線
+T2	Parts 0 5	燃料タンク
+T3	Parts 70 75	燃料ポンプ
+T6	Parts 86 89	原動機
+T7	Parts 106 109	原動機
+R1	Coreference Arg1:T6 Arg2:T7	
+R2	Part-Whole Arg1:T1 Arg2:T2	
+R4	Contact Arg1:T2 Arg2:T3	
+T4	Parts 24 28	コネクタ
+R5	Contact Arg1:T4 Arg2:T1	
+T5	Parts 56 60	コネクタ
+R3	Coreference Arg1:T4 Arg2:T5	
+R6	Contact Arg1:T5 Arg2:T3	
+R7	Connect Arg1:T3 Arg2:T6	

@@ -1,0 +1,14 @@
+T1	Parts 5 17	防振ゴム付クランクプーリ
+T2	Parts 40 47	クランクプーリ
+T3	Parts 77 84	クランクプーリ
+T4	Parts 0 4	エンジン
+T5	Parts 109 113	エンジン
+T6	Parts 50 54	防振ゴム
+T7	Parts 97 100	発電機
+R1	Coreference Arg1:T4 Arg2:T5	
+R2	Connect Arg1:T7 Arg2:T5	
+R3	Part-Whole Arg1:T1 Arg2:T4	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T6 Arg2:T1	
+R7	Coreference Arg1:T2 Arg2:T3	
+R6	Contact Arg1:T6 Arg2:T2	

@@ -1,0 +1,9 @@
+T1	Parts 0 7	電動燃料ポンプ
+T2	Parts 51 56	燃料ポンプ
+T3	Parts 8 12	モーター
+T4	Parts 65 68	原動機
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Part-Whole Arg1:T3 Arg2:T1	
+T5	Parts 34 37	整流子
+R3	Part-Whole Arg1:T5 Arg2:T3	
+R4	Connect Arg1:T2 Arg2:T4	

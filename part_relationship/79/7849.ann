@@ -1,0 +1,11 @@
+T1	Parts 0 10	年少者用補助乗車装置
+T2	Parts 15 32	後部中央座席用シートベルトバックル
+T3	Parts 33 35	配線
+T4	Parts 47 62	ＩＳＯＦＩＸ取り付け金具フック
+T5	Parts 63 65	配線
+T6	Parts 81 91	年少者用補助乗車装置
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T2	
+R3	Coreference Arg1:T5 Arg2:T3	
+R4	Coreference Arg1:T6 Arg2:T1	
+R5	Part-Whole Arg1:T4 Arg2:T1	

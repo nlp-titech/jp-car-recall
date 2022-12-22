@@ -1,0 +1,10 @@
+T1	Parts 0 13	フロントシートバックレスト
+T2	Parts 96 109	フロントシートバックレスト
+T3	Parts 33 47	リクライニング角度調整用ギヤ
+T5	Parts 14 20	角度調整機構
+R1	Part-Whole Arg1:T5 Arg2:T1	
+R3	Coreference Arg1:T1 Arg2:T2	
+R2	Part-Whole Arg1:T3 Arg2:T5	
+T4	Parts 57 64	リクライニング
+R4	Part-Whole Arg1:T4 Arg2:T2	
+R5	Contact Arg1:T5 Arg2:T4	

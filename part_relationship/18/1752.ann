@@ -1,0 +1,11 @@
+T10	Parts 64 69	燃料タンク
+T11	Parts 6 32	エアベントパイプ（タンク内の圧力を一定に保つパイプ）
+T12	Parts 56 59	パイプ
+T1	Parts 0 5	燃料タンク
+T2	Parts 46 50	エンジン
+R1	Coreference Arg1:T11 Arg2:T12	
+R2	Coreference Arg1:T1 Arg2:T10	
+T4	Parts 118 120	燃料
+R3	Part-Whole Arg1:T11 Arg2:T1	
+R4	Connect Arg1:T2 Arg2:T1	
+R8	Part-Whole Arg1:T4 Arg2:T10	

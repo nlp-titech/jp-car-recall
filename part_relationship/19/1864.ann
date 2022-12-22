@@ -1,0 +1,7 @@
+T1	Parts 0 14	高輝度放電式（ＨＩＤ）前照灯
+T2	Parts 15 32	自動式照射方向調節装置（レベラー）
+T3	Parts 37 41	電気回路
+T5	Parts 72 89	自動式照射方向調節装置（レベラー）
+R1	Coreference Arg1:T5 Arg2:T2	
+R3	Connect Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T3 Arg2:T2	

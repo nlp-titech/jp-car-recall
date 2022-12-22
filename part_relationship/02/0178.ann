@@ -1,0 +1,15 @@
+T12	Parts 15 18	発電機
+T14	Parts 24 29	ダイオード
+T15	Parts 60 65	ダイオード
+T18	Parts 114 118	樹脂部品
+T19	Parts 109 113	整流回路
+T20	Parts 77 81	整流回路
+T21	Parts 19 23	整流回路
+T1	Parts 0 3	発電機
+R1	Coreference Arg1:T12 Arg2:T1	
+R2	Coreference Arg1:T14 Arg2:T15	
+R3	Coreference Arg1:T19 Arg2:T20	
+R4	Coreference Arg1:T20 Arg2:T21	
+R5	Part-Whole Arg1:T21 Arg2:T12	
+R6	Part-Whole Arg1:T21 Arg2:T14	
+R7	Part-Whole Arg1:T18 Arg2:T19	

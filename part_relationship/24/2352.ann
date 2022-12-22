@@ -1,0 +1,15 @@
+T14	Parts 46 50	ケーブル
+T15	Parts 68 72	ケーブル
+T16	Parts 73 77	クリップ
+T17	Parts 17 21	クリップ
+T18	Parts 123 126	速度計
+T19	Parts 86 90	ハンドル
+T20	Parts 104 113	ハンドルストッパー
+T1	Parts 0 12	スピードメーターケーブル
+R1	Coreference Arg1:T14 Arg2:T1	
+T2	Parts 33 40	サスペンション
+R2	Coreference Arg1:T15 Arg2:T14	
+R3	Coreference Arg1:T16 Arg2:T17	
+R4	Contact Arg1:T17 Arg2:T1	
+R5	Contact Arg1:T2 Arg2:T17	
+R7	Contact Arg1:T18 Arg2:T15	

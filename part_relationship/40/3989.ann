@@ -1,0 +1,11 @@
+T1	Parts 11 23	インフレータ（膨張装置）
+T2	Parts 0 10	運転者席用エアバッグ
+T3	Parts 93 101	インフレータ容器
+T4	Parts 84 89	エアバッグ
+T5	Parts 28 33	ガス発生剤
+T6	Parts 63 68	ガス発生剤
+R1	Coreference Arg1:T6 Arg2:T5	
+R2	Part-Whole Arg1:T5 Arg2:T1	
+R4	Coreference Arg1:T4 Arg2:T2	
+R3	Part-Whole Arg1:T3 Arg2:T1	
+R6	Part-Whole Arg1:T1 Arg2:T2	

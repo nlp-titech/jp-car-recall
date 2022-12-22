@@ -1,0 +1,14 @@
+T1	Parts 56 62	オイルクーラ
+T2	Parts 13 18	冷却ファン
+T3	Parts 35 40	冷却ファン
+T5	Parts 23 27	油圧回路
+T6	Parts 0 3	原動機
+T7	Parts 4 8	冷却装置
+T4	Parts 73 76	作動油
+R1	Part-Whole Arg1:T7 Arg2:T6	
+R2	Part-Whole Arg1:T2 Arg2:T7	
+R3	Part-Whole Arg1:T5 Arg2:T2	
+R4	Coreference Arg1:T2 Arg2:T3	
+R5	Coreference Arg1:T7 Arg2:T1	
+R6	Contact Arg1:T1 Arg2:T4	
+R7	Contact Arg1:T4 Arg2:T5	

@@ -1,0 +1,10 @@
+T1	Parts 2 10	ブレーキ冷却回路
+T4	Parts 39 45	オイルクーラ
+T5	Parts 77 83	オイルクーラ
+R2	Coreference Arg1:T5 Arg2:T4	
+T6	Parts 85 88	オイル
+T7	Parts 98 101	オイル
+R3	Coreference Arg1:T7 Arg2:T6	
+R1	Contact Arg1:T1 Arg2:T4	
+R4	Contact Arg1:T1 Arg2:T6	
+R5	Contact Arg1:T5 Arg2:T6	

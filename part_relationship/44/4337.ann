@@ -1,0 +1,11 @@
+T1	Parts 0 20	動力式かじ取り装置（パワーステアリング）
+T2	Parts 94 97	オイル
+T3	Parts 115 119	ハンドル
+T4	Parts 21 42	ロータリーバルブ（油圧経路を切り換える弁）
+T6	Parts 62 68	樹脂製リング
+R1	Part-Whole Arg1:T4 Arg2:T1	
+R3	Connect Arg1:T3 Arg2:T1	
+T5	Parts 86 89	リング
+R5	Coreference Arg1:T6 Arg2:T5	
+R6	Contact Arg1:T2 Arg2:T5	
+R2	Contact Arg1:T4 Arg2:T6	

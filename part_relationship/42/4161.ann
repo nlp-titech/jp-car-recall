@@ -1,0 +1,17 @@
+T1	Parts 0 9	ディーゼルエンジン
+T2	Parts 154 161	エンジン警告灯
+T3	Parts 47 53	インジェクタ
+T4	Parts 114 119	排気バルブ
+T5	Parts 185 189	エンジン
+T11	Parts 61 63	燃料
+T6	Parts 87 96	排気側バルブガイド
+T7	Parts 168 174	グローランプ
+R1	Part-Whole Arg1:T3 Arg2:T1	
+R2	Contact Arg1:T11 Arg2:T1	
+R3	Part-Whole Arg1:T6 Arg2:T1	
+R5	Coreference Arg1:T1 Arg2:T5	
+R6	Contact Arg1:T11 Arg2:T3	
+R7	Connect Arg1:T5 Arg2:T2	
+R8	Connect Arg1:T5 Arg2:T7	
+R9	Part-Whole Arg1:T4 Arg2:T5	
+R4	Contact Arg1:T6 Arg2:T4	

@@ -1,0 +1,48 @@
+T2	Parts 15 19	エンジン
+T3	Parts 331 337	圧力スイッチ
+T8	Parts 92 97	ブレーキ液
+T11	Parts 317 330	ブレーキ液圧低下警報ブザー
+T13	Parts 291 296	警報ブザー
+T15	Parts 391 396	警報ブザー
+T16	Parts 246 251	自動変速機
+T17	Parts 179 183	エンジン
+T18	Parts 230 234	エンジン
+T19	Parts 344 348	スイッチ
+T20	Parts 33 63	ピストン式アキュームレータ（ブレーキ液の供給圧確保用蓄圧器）
+T21	Parts 81 85	ピストン
+T22	Parts 186 190	ブレーキ
+T23	Parts 267 271	倍力装置
+T24	Parts 128 132	封入ガス
+T25	Parts 208 212	油圧配管
+T27	Parts 137 140	ポンプ
+T28	Parts 69 80	ガス（液圧変動吸収用）
+T31	Parts 1 10	油圧式制動倍力装置
+T32	Parts 198 207	油圧式制動倍力装置
+T33	Parts 307 316	油圧式制動倍力装置
+T4	Parts 143 148	ブレーキ液
+R1	Coreference Arg1:T31 Arg2:T32	
+R2	Coreference Arg1:T32 Arg2:T23	
+R3	Coreference Arg1:T2 Arg2:T17	
+R4	Coreference Arg1:T17 Arg2:T18	
+R5	Coreference Arg1:T28 Arg2:T24	
+R6	Coreference Arg1:T8 Arg2:T4	
+R7	Coreference Arg1:T23 Arg2:T33	
+R8	Coreference Arg1:T11 Arg2:T15	
+R9	Coreference Arg1:T3 Arg2:T19	
+R10	Part-Whole Arg1:T20 Arg2:T31	
+R11	Part-Whole Arg1:T28 Arg2:T20	
+R12	Part-Whole Arg1:T21 Arg2:T20	
+R15	Part-Whole Arg1:T27 Arg2:T20	
+R17	Connect Arg1:T22 Arg2:T32	
+R18	Connect Arg1:T18 Arg2:T16	
+R19	Part-Whole Arg1:T25 Arg2:T32	
+R20	Contact Arg1:T4 Arg2:T25	
+R22	Coreference Arg1:T13 Arg2:T11	
+R23	Part-Whole Arg1:T3 Arg2:T33	
+R24	Connect Arg1:T11 Arg2:T3	
+R16	Contact Arg1:T28 Arg2:T21	
+T1	Parts 214 219	ブレーキ液
+R13	Coreference Arg1:T4 Arg2:T1	
+T5	Parts 368 373	ブレーキ液
+R14	Coreference Arg1:T1 Arg2:T5	
+R21	Connect Arg1:T23 Arg2:T13	

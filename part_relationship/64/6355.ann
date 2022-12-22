@@ -1,0 +1,15 @@
+T1	Parts 0 15	エアバッグコントロールユニット
+T2	Parts 108 113	エアバッグ
+T3	Parts 126 131	エアバッグ
+T4	Parts 149 154	エアバッグ
+T5	Parts 34 38	ユニット
+T6	Parts 78 82	ユニット
+T7	Parts 83 87	電子基板
+T8	Parts 114 117	警告灯
+R1	Coreference Arg1:T1 Arg2:T5	
+R2	Coreference Arg1:T5 Arg2:T6	
+R3	Part-Whole Arg1:T7 Arg2:T6	
+R6	Connect Arg1:T1 Arg2:T2	
+R7	Coreference Arg1:T2 Arg2:T3	
+R8	Coreference Arg1:T3 Arg2:T4	
+R9	Connect Arg1:T1 Arg2:T8	

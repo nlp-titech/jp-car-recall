@@ -1,0 +1,21 @@
+T1	Parts 15 22	スイッチケース
+T2	Parts 51 58	スイッチケース
+T3	Parts 124 129	方向指示器
+T4	Parts 4 10	始動スイッチ
+T5	Parts 87 93	始動スイッチ
+T6	Parts 69 73	スタータ
+T7	Parts 130 134	窓拭き器
+T8	Parts 110 114	電気系統
+T9	Parts 0 3	原動機
+T10	Parts 77 80	原動機
+T11	Parts 120 123	前照灯
+R1	Connect Arg1:T4 Arg2:T9	
+R2	Part-Whole Arg1:T1 Arg2:T4	
+R3	Coreference Arg1:T1 Arg2:T2	
+R4	Contact Arg1:T6 Arg2:T4	
+R5	Coreference Arg1:T9 Arg2:T10	
+R6	Coreference Arg1:T4 Arg2:T5	
+R7	Connect Arg1:T4 Arg2:T8	
+R8	Part-Whole Arg1:T11 Arg2:T8	
+R9	Part-Whole Arg1:T3 Arg2:T8	
+R10	Part-Whole Arg1:T7 Arg2:T8	

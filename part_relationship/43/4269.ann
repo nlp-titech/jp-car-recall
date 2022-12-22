@@ -1,0 +1,15 @@
+T1	Parts 0 11	ブレーキマスタシリンダ
+T2	Parts 128 135	ブレーキペダル
+T3	Parts 42 52	リザーバタンクホース
+T4	Parts 54 59	ブレーキ液
+T5	Parts 149 154	ブレーキ液
+T6	Parts 83 87	エンジン
+T7	Parts 16 24	セカンダリカップ
+T8	Parts 38 41	カップ
+R1	Part-Whole Arg1:T7 Arg2:T1	
+R2	Coreference Arg1:T7 Arg2:T8	
+R5	Contact Arg1:T3 Arg2:T4	
+R9	Coreference Arg1:T4 Arg2:T5	
+R10	Connect Arg1:T2 Arg2:T5	
+R3	Contact Arg1:T1 Arg2:T3	
+R4	Connect Arg1:T1 Arg2:T2	

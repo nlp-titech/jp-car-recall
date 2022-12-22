@@ -1,0 +1,14 @@
+T9	Parts 34 42	バキュームポンプ
+T10	Parts 43 46	ロータ
+T12	Parts 88 97	カーボン製ブレード
+T1	Parts 18 26	ブレーキ倍力装置
+T2	Parts 0 13	ディーゼルエンジン搭載車両
+R2	Part-Whole Arg1:T1 Arg2:T2	
+R3	Part-Whole Arg1:T9 Arg2:T1	
+R4	Part-Whole Arg1:T10 Arg2:T9	
+T3	Parts 47 55	ブレード（羽根）
+R1	Part-Whole Arg1:T3 Arg2:T10	
+R5	Part-Whole Arg1:T12 Arg2:T3	
+T4	Parts 130 134	ブレーキ
+R6	Connect Arg1:T1 Arg2:T4	
+R7	Part-Whole Arg1:T4 Arg2:T2	

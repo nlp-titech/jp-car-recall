@@ -1,0 +1,12 @@
+T1	Parts 13 23	ステアリングシャフト
+T2	Parts 0 8	フロントフォーク
+T5	Parts 30 40	フォークボトムヨーク
+T6	Parts 53 56	ヨーク
+T7	Parts 99 109	フォークボトムヨーク
+T8	Parts 113 115	車両
+R1	Coreference Arg1:T5 Arg2:T6	
+R2	Contact Arg1:T1 Arg2:T5	
+R3	Part-Whole Arg1:T5 Arg2:T2	
+R4	Coreference Arg1:T6 Arg2:T7	
+R5	Part-Whole Arg1:T1 Arg2:T2	
+R6	Part-Whole Arg1:T2 Arg2:T8	

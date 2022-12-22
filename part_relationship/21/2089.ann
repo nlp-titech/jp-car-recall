@@ -1,0 +1,5 @@
+T14	Parts 97 100	制動灯
+T15	Parts 0 7	制動灯スイッチ
+T3	Parts 15 18	グリス
+R5	Connect Arg1:T15 Arg2:T14	
+R1	Contact Arg1:T15 Arg2:T3	

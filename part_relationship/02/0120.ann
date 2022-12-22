@@ -1,0 +1,20 @@
+T8	Parts 13 16	原動機
+T9	Parts 54 57	原動機
+T10	Parts 28 35	燃料噴射ポンプ
+T11	Parts 36 41	電子ガバナ
+T12	Parts 72 77	電子ガバナ
+T14	Parts 96 99	原動機
+T13	Parts 80 84	ハーネス
+R1	Coreference Arg1:T9 Arg2:T8	
+R2	Coreference Arg1:T12 Arg2:T11	
+T1	Parts 85 87	基板
+R3	Coreference Arg1:T14 Arg2:T9	
+R5	Part-Whole Arg1:T11 Arg2:T10	
+R6	Part-Whole Arg1:T13 Arg2:T12	
+R7	Part-Whole Arg1:T1 Arg2:T12	
+R8	Contact Arg1:T13 Arg2:T1	
+T3	Parts 21 23	車両
+R12	Part-Whole Arg1:T8 Arg2:T3	
+R4	Part-Whole Arg1:T10 Arg2:T8	
+T2	Parts 0 12	Ｖ２６Ｃ型（４８０馬力）
+R9	Coreference Arg1:T8 Arg2:T2	

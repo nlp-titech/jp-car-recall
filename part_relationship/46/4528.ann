@@ -1,0 +1,9 @@
+T1	Parts 46 52	シートベルト
+T2	Parts 63 69	シートベルト
+T3	Parts 9 13	フレーム
+T5	Parts 4 8	右側座席
+T6	Parts 39 45	座席フレーム
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Coreference Arg1:T3 Arg2:T6	
+R3	Part-Whole Arg1:T3 Arg2:T5	
+R4	Contact Arg1:T5 Arg2:T1	

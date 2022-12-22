@@ -1,0 +1,5 @@
+T8	Parts 0 4	制動装置
+T9	Parts 5 12	ブレーキホース
+T10	Parts 25 38	エンジン非常停止用ケーブル
+R1	Contact Arg1:T9 Arg2:T8	
+R3	Contact Arg1:T10 Arg2:T9	

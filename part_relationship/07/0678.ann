@@ -1,0 +1,19 @@
+T10	Parts 38 53	アクセルロックソレノイドレバー
+T11	Parts 54 57	ローラ
+T12	Parts 100 103	ローラ
+T1	Parts 20 33	アクセルインターロック装置
+T2	Parts 64 71	アクセルペダル
+T3	Parts 90 97	アクセルペダル
+T4	Parts 121 128	アクセルペダル
+T5	Parts 142 149	アクセルペダル
+T6	Parts 157 160	原動機
+R1	Coreference Arg1:T5 Arg2:T4	
+R2	Coreference Arg1:T4 Arg2:T3	
+R3	Coreference Arg1:T3 Arg2:T2	
+R4	Coreference Arg1:T12 Arg2:T11	
+T7	Parts 0 10	ＬＰＧバルクローリ車
+R5	Part-Whole Arg1:T1 Arg2:T7	
+R6	Part-Whole Arg1:T10 Arg2:T1	
+R7	Part-Whole Arg1:T11 Arg2:T10	
+R8	Contact Arg1:T1 Arg2:T2	
+R9	Part-Whole Arg1:T6 Arg2:T7	

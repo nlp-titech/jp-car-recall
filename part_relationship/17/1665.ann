@@ -1,0 +1,9 @@
+T1	Parts 0 9	トランスミッション
+T2	Parts 17 23	変速ユニット
+T3	Parts 25 28	レバー
+T4	Parts 43 46	レバー
+R1	Coreference Arg1:T3 Arg2:T4	
+T5	Parts 83 86	レバー
+R2	Coreference Arg1:T4 Arg2:T5	
+R3	Part-Whole Arg1:T3 Arg2:T2	
+R4	Connect Arg1:T2 Arg2:T1	

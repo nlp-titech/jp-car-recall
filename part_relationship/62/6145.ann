@@ -1,0 +1,9 @@
+T1	Parts 0 10	左右フロントフォーク
+T2	Parts 115 123	フロントフォーク
+T3	Parts 18 24	ロックナット
+T4	Parts 45 51	ロックナット
+T5	Parts 99 105	ロックナット
+R1	Part-Whole Arg1:T3 Arg2:T1	
+R2	Coreference Arg1:T3 Arg2:T4	
+R4	Coreference Arg1:T1 Arg2:T2	
+R3	Coreference Arg1:T4 Arg2:T5	

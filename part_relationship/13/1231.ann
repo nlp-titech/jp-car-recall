@@ -1,0 +1,9 @@
+T1	Parts 1 16	パワーステアリング用油圧パイプ
+T2	Parts 29 33	エンジン
+T3	Parts 58 63	油圧パイプ
+T4	Parts 73 80	ブレーキパイプ
+T5	Parts 97 104	ブレーキパイプ
+T6	Parts 109 114	ブレーキ液
+R1	Coreference Arg1:T1 Arg2:T3	
+R2	Coreference Arg1:T4 Arg2:T5	
+R3	Contact Arg1:T5 Arg2:T6	

@@ -1,0 +1,11 @@
+T13	Parts 0 6	フロントハブ
+T14	Parts 40 42	ハブ
+T17	Parts 151 153	車輪
+R1	Coreference Arg1:T14 Arg2:T13	
+R4	Part-Whole Arg1:T14 Arg2:T17	
+T1	Parts 216 218	車両
+T2	Parts 234 241	リコール対象車
+R2	Coreference Arg1:T1 Arg2:T2	
+R3	Part-Whole Arg1:T17 Arg2:T1	
+T3	Parts 43 47	フランジ
+R5	Part-Whole Arg1:T3 Arg2:T14	

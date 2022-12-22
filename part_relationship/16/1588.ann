@@ -1,0 +1,16 @@
+T12	Parts 44 48	スプール
+T13	Parts 23 30	スペーサボルト
+T14	Parts 88 91	バルブ
+T1	Parts 0 4	変速装置
+T2	Parts 5 14	コントロールバルブ
+T3	Parts 15 22	走行用スプール
+R1	Coreference Arg1:T3 Arg2:T12	
+T5	Parts 70 76	シフトレバー
+R2	Coreference Arg1:T2 Arg2:T14	
+T7	Parts 112 119	ブレーキペダル
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R6	Part-Whole Arg1:T3 Arg2:T2	
+R7	Connect Arg1:T5 Arg2:T1	
+T4	Parts 99 101	圧油
+R4	Contact Arg1:T3 Arg2:T13	
+R5	Contact Arg1:T14 Arg2:T4	

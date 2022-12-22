@@ -1,0 +1,19 @@
+T15	Parts 136 139	原動機
+T16	Parts 81 89	シリンダーヘッド
+T17	Parts 10 17	燃料噴射ノズル
+T18	Parts 73 76	ノズル
+T1	Parts 2 5	原動機
+T2	Parts 60 62	燃料
+R1	Coreference Arg1:T18 Arg2:T17	
+T3	Parts 97 99	燃料
+T4	Parts 100 103	冷却水
+T5	Parts 114 116	燃料
+T6	Parts 117 120	潤滑油
+R2	Coreference Arg1:T5 Arg2:T3	
+R3	Coreference Arg1:T15 Arg2:T1	
+R4	Coreference Arg1:T3 Arg2:T2	
+R5	Part-Whole Arg1:T17 Arg2:T1	
+R6	Contact Arg1:T2 Arg2:T17	
+R9	Part-Whole Arg1:T16 Arg2:T1	
+R7	Contact Arg1:T4 Arg2:T16	
+R8	Contact Arg1:T6 Arg2:T16	

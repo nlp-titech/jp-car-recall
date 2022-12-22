@@ -1,0 +1,9 @@
+T10	Parts 81 84	差動機
+T11	Parts 60 66	ピニオンギヤ
+T12	Parts 22 28	ピニオンギヤ
+T1	Parts 0 8	大・中型トラック
+T2	Parts 9 12	差動機
+R1	Coreference Arg1:T12 Arg2:T11	
+R2	Coreference Arg1:T2 Arg2:T10	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T12 Arg2:T2	

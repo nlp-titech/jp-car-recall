@@ -1,0 +1,20 @@
+T3	Parts 0 11	エンジンサイドマウント
+T5	Parts 96 100	前部霧灯
+T6	Parts 27 48	電気配線（エンジンルームワイヤーハーネス）
+T7	Parts 19 26	締め付けボルト
+T8	Parts 113 116	警音器
+T9	Parts 101 104	車幅灯
+T10	Parts 105 108	制動灯
+T11	Parts 90 95	右側前照灯
+T12	Parts 75 77	配線
+T13	Parts 49 51	被覆
+T14	Parts 78 80	被覆
+R1	Part-Whole Arg1:T13 Arg2:T6	
+R2	Coreference Arg1:T6 Arg2:T12	
+R3	Coreference Arg1:T13 Arg2:T14	
+R4	Connect Arg1:T12 Arg2:T11	
+R5	Connect Arg1:T12 Arg2:T5	
+R6	Connect Arg1:T12 Arg2:T9	
+R7	Connect Arg1:T12 Arg2:T10	
+R8	Connect Arg1:T12 Arg2:T8	
+R9	Contact Arg1:T3 Arg2:T7	

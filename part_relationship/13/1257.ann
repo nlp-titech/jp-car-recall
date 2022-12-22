@@ -1,0 +1,9 @@
+T14	Parts 24 30	騒音防止装置
+T15	Parts 35 38	排気管
+T16	Parts 109 112	排気管
+T1	Parts 0 23	特別仕様車（メーカー呼称：ライダーステージ２）
+T2	Parts 99 102	原動機
+R1	Coreference Arg1:T15 Arg2:T16	
+R2	Part-Whole Arg1:T14 Arg2:T1	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T15 Arg2:T14	

@@ -1,0 +1,18 @@
+T1	Parts 0 6	大型トラクタ
+T2	Parts 7 23	リーフ・エア併用式サスペンション
+T3	Parts 28 36	リーフ用ストッパ
+T4	Parts 60 64	ストッパ
+T5	Parts 56 59	リーフ
+T6	Parts 71 75	ストッパ
+T7	Parts 87 98	ストッパ固定用シャフト
+T8	Parts 126 130	シャフト
+T9	Parts 137 141	ストッパ
+T10	Parts 144 148	シャフト
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Contact Arg1:T3 Arg2:T5	
+R3	Coreference Arg1:T4 Arg2:T6	
+R4	Contact Arg1:T7 Arg2:T6	
+R5	Coreference Arg1:T7 Arg2:T8	
+R6	Part-Whole Arg1:T3 Arg2:T2	
+R7	Coreference Arg1:T6 Arg2:T9	
+R8	Coreference Arg1:T8 Arg2:T10	

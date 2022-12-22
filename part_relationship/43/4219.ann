@@ -1,0 +1,5 @@
+T1	Parts 0 9	ディーゼルエンジン
+T5	Parts 109 112	原動機
+T7	Parts 10 25	排気管（尿素水ミキシング配管）
+R2	Coreference Arg1:T1 Arg2:T5	
+R1	Contact Arg1:T1 Arg2:T7	

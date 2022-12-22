@@ -1,0 +1,10 @@
+T2	Parts 24 32	リヤブレーキ配管
+T3	Parts 60 64	ブレーキ
+T5	Parts 5 19	制動力制御装置（ＡＢＳ）付車
+T7	Parts 47 50	ＡＢＳ
+R2	Part-Whole Arg1:T2 Arg2:T3	
+R4	Connect Arg1:T7 Arg2:T3	
+R3	Part-Whole Arg1:T7 Arg2:T5	
+T1	Parts 0 4	制動装置
+R5	Part-Whole Arg1:T1 Arg2:T5	
+R1	Coreference Arg1:T1 Arg2:T3	

@@ -1,0 +1,13 @@
+T1	Parts 19 24	取付け金具
+T2	Parts 0 4	大型バス
+T3	Parts 9 18	液晶テレビモニター
+T4	Parts 101 110	液晶テレビモニター
+T5	Parts 46 48	金具
+T6	Parts 94 96	金具
+T7	Parts 37 39	車両
+R1	Contact Arg1:T3 Arg2:T1	
+R2	Coreference Arg1:T2 Arg2:T7	
+R3	Part-Whole Arg1:T3 Arg2:T2	
+R4	Coreference Arg1:T1 Arg2:T5	
+R5	Coreference Arg1:T5 Arg2:T6	
+R6	Coreference Arg1:T3 Arg2:T4	

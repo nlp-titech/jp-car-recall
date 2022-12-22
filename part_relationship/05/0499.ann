@@ -1,0 +1,19 @@
+T1	Parts 0 4	灯火装置
+T2	Parts 9 13	ブレーキ
+T3	Parts 14 17	ペダル
+T4	Parts 18 23	ブラケット
+T5	Parts 37 40	オイル
+T6	Parts 43 48	ブラケット
+T7	Parts 83 86	オイル
+T8	Parts 87 94	制動灯スイッチ
+T11	Parts 124 127	制動灯
+T12	Parts 139 144	自動変速機
+R1	Coreference Arg1:T6 Arg2:T4	
+R2	Coreference Arg1:T7 Arg2:T5	
+T13	Parts 145 153	シフトロック機能
+R3	Connect Arg1:T2 Arg2:T1	
+R4	Connect Arg1:T3 Arg2:T1	
+R5	Connect Arg1:T4 Arg2:T1	
+R7	Connect Arg1:T8 Arg2:T11	
+R9	Part-Whole Arg1:T11 Arg2:T1	
+R10	Part-Whole Arg1:T13 Arg2:T12	

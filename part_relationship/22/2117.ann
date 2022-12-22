@@ -1,0 +1,13 @@
+T8	Parts 26 30	エンジン
+T9	Parts 0 3	消音器
+T2	Parts 45 53	アクセルケーブル
+T3	Parts 70 74	ケーブル
+T4	Parts 81 85	ケーブル
+R1	Coreference Arg1:T3 Arg2:T2	
+R2	Coreference Arg1:T4 Arg2:T3	
+T1	Parts 75 77	被覆
+R3	Part-Whole Arg1:T1 Arg2:T3	
+T5	Parts 93 97	アクセル
+R4	Connect Arg1:T5 Arg2:T4	
+R6	Connect Arg1:T9 Arg2:T8	
+R5	Connect Arg1:T8 Arg2:T5	

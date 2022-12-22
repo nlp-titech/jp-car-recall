@@ -1,0 +1,11 @@
+T6	Parts 0 3	制動灯
+T7	Parts 13 30	電気開閉器（コントロールユニット）
+T8	Parts 43 53	コントロールユニット
+T9	Parts 56 62	半導体リレー
+T10	Parts 79 82	制動灯
+R1	Coreference Arg1:T7 Arg2:T8	
+R2	Coreference Arg1:T10 Arg2:T6	
+R4	Part-Whole Arg1:T9 Arg2:T8	
+T1	Parts 4 8	制御回路
+R5	Part-Whole Arg1:T1 Arg2:T6	
+R3	Part-Whole Arg1:T7 Arg2:T1	

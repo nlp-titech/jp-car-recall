@@ -1,0 +1,18 @@
+T12	Parts 45 50	ヒンジピン
+T13	Parts 58 61	割ピン
+T14	Parts 29 32	ゲート
+T15	Parts 101 104	割ピン
+T16	Parts 109 114	ヒンジピン
+T17	Parts 118 124	テールゲート
+T3	Parts 0 17	脱着装置付コンテナ専用車用コンテナ
+T4	Parts 18 24	テールゲート
+R1	Coreference Arg1:T14 Arg2:T4	
+T5	Parts 33 37	コンテナ
+R2	Coreference Arg1:T5 Arg2:T3	
+R3	Coreference Arg1:T15 Arg2:T13	
+R4	Coreference Arg1:T16 Arg2:T12	
+R5	Coreference Arg1:T17 Arg2:T14	
+R7	Contact Arg1:T13 Arg2:T12	
+R8	Contact Arg1:T12 Arg2:T5	
+R9	Contact Arg1:T12 Arg2:T14	
+R12	Part-Whole Arg1:T4 Arg2:T3	

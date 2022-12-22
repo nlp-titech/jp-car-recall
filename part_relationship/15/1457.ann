@@ -1,0 +1,20 @@
+T12	Parts 78 82	トレーラ
+T13	Parts 64 69	ＡＢＳ装置
+T15	Parts 106 110	トレーラ
+T16	Parts 141 149	トレーラブレーキ
+T17	Parts 31 35	トレーラ
+T1	Parts 0 7	ポールトレーラ
+T2	Parts 13 26	ピントルフック付きトラクタ
+T3	Parts 45 50	制動灯回路
+T4	Parts 51 56	プログラム
+T5	Parts 158 161	制動灯
+R2	Coreference Arg1:T2 Arg2:T17	
+R1	Coreference Arg1:T17 Arg2:T12	
+R3	Coreference Arg1:T12 Arg2:T15	
+R4	Part-Whole Arg1:T1 Arg2:T2	
+R5	Part-Whole Arg1:T3 Arg2:T17	
+R6	Part-Whole Arg1:T4 Arg2:T3	
+R7	Part-Whole Arg1:T13 Arg2:T12	
+R8	Part-Whole Arg1:T16 Arg2:T15	
+R9	Connect Arg1:T16 Arg2:T5	
+R10	Part-Whole Arg1:T5 Arg2:T15	

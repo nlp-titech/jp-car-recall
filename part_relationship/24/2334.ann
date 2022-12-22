@@ -1,0 +1,9 @@
+T6	Parts 110 113	原動機
+T11	Parts 90 94	バッテリ
+T16	Parts 29 33	ハーネス
+T1	Parts 0 6	オルタネータ
+T2	Parts 14 22	バッテリハーネス
+R1	Coreference Arg1:T16 Arg2:T2	
+R4	Contact Arg1:T11 Arg2:T16	
+R5	Contact Arg1:T2 Arg2:T1	
+R6	Connect Arg1:T6 Arg2:T11	

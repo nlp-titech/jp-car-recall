@@ -1,0 +1,14 @@
+T8	Parts 0 4	エンジン
+T9	Parts 29 32	ヒータ
+T10	Parts 48 52	ハンドル
+T11	Parts 55 61	シフトレバー
+T12	Parts 72 76	エンジン
+T1	Parts 9 15	コンピュータ
+R2	Coreference Arg1:T8 Arg2:T12	
+R1	Connect Arg1:T8 Arg2:T1	
+T2	Parts 96 98	車両
+R3	Part-Whole Arg1:T12 Arg2:T2	
+R4	Part-Whole Arg1:T11 Arg2:T2	
+R5	Part-Whole Arg1:T10 Arg2:T2	
+R6	Part-Whole Arg1:T9 Arg2:T2	
+R7	Part-Whole Arg1:T1 Arg2:T2	

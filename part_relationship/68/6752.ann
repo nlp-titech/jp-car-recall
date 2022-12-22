@@ -1,0 +1,9 @@
+T1	Parts 26 35	ロックピン駆動機構
+T2	Parts 115 119	エンジン
+T3	Parts 101 105	ハンドル
+T4	Parts 0 4	施錠装置
+T5	Parts 5 18	エレクトリックコラムロック
+R1	Part-Whole Arg1:T5 Arg2:T4	
+R2	Part-Whole Arg1:T1 Arg2:T5	
+R3	Connect Arg1:T5 Arg2:T3	
+R4	Connect Arg1:T5 Arg2:T2	

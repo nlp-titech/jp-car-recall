@@ -1,0 +1,18 @@
+T10	Parts 0 4	制動装置
+T12	Parts 85 88	パイプ
+T11	Parts 9 14	エアタンク
+T14	Parts 22 37	パイプ（エアーチャージパイプ）
+T1	Parts 74 76	車体
+T2	Parts 38 42	取付金具
+R1	Coreference Arg1:T12 Arg2:T14	
+T3	Parts 102 104	エア
+R2	Part-Whole Arg1:T11 Arg2:T10	
+T4	Parts 15 17	エア
+R6	Coreference Arg1:T4 Arg2:T3	
+R8	Contact Arg1:T14 Arg2:T4	
+R7	Part-Whole Arg1:T4 Arg2:T11	
+R3	Part-Whole Arg1:T14 Arg2:T10	
+R9	Contact Arg1:T11 Arg2:T14	
+R4	Contact Arg1:T14 Arg2:T2	
+R10	Part-Whole Arg1:T2 Arg2:T10	
+R5	Part-Whole Arg1:T10 Arg2:T1	

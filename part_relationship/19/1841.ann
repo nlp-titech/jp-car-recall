@@ -1,0 +1,12 @@
+T3	Parts 13 29	アイドリング回転数制御プログラム
+T4	Parts 43 47	エアコン
+T5	Parts 70 77	アクセルペダル
+T6	Parts 82 86	エンジン
+T7	Parts 108 116	ブレーキ倍力装置
+T1	Parts 0 12	エンジン制御コンピュータ
+R1	Part-Whole Arg1:T3 Arg2:T1	
+R2	Connect Arg1:T1 Arg2:T6	
+R5	Connect Arg1:T5 Arg2:T6	
+R6	Connect Arg1:T4 Arg2:T3	
+T2	Parts 135 139	ブレーキ
+R7	Connect Arg1:T7 Arg2:T2	

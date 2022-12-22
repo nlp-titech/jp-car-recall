@@ -1,0 +1,23 @@
+T1	Parts 0 11	６速ＤＣＴ型自動変速機
+T2	Parts 16 18	車両
+T3	Parts 23 35	エンジン制御コンピュータ
+T4	Parts 36 47	燃料噴射制御プログラム
+T5	Parts 55 60	スロットル
+T6	Parts 72 78	インジェクタ
+T7	Parts 81 83	燃料
+T8	Parts 105 118	自動変速機制御コンピュータ
+T9	Parts 119 135	発進時クラッチ油圧制御プログラム
+T10	Parts 147 151	クラッチ
+T11	Parts 173 175	燃料
+R1	Part-Whole Arg1:T1 Arg2:T2	
+R2	Part-Whole Arg1:T3 Arg2:T2	
+R3	Part-Whole Arg1:T4 Arg2:T3	
+R4	Part-Whole Arg1:T9 Arg2:T8	
+R5	Part-Whole Arg1:T8 Arg2:T2	
+R6	Connect Arg1:T3 Arg2:T5	
+R7	Connect Arg1:T3 Arg2:T6	
+R8	Contact Arg1:T6 Arg2:T7	
+R9	Coreference Arg1:T7 Arg2:T11	
+R10	Part-Whole Arg1:T10 Arg2:T1	
+R11	Part-Whole Arg1:T5 Arg2:T2	
+R12	Part-Whole Arg1:T6 Arg2:T2	

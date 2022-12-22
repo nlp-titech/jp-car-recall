@@ -1,0 +1,9 @@
+T6	Parts 0 19	車両挙動安定化制御装置（VSA）装備車
+T7	Parts 20 35	原動機用電子制御装置（ECU）
+T1	Parts 63 67	アクセル
+T2	Parts 46 55	比率制御プログラム
+R1	Part-Whole Arg1:T7 Arg2:T6	
+R2	Part-Whole Arg1:T2 Arg2:T7	
+R4	Connect Arg1:T1 Arg2:T7	
+T4	Parts 43 45	燃料
+R3	Connect Arg1:T2 Arg2:T4	

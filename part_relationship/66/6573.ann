@@ -1,0 +1,13 @@
+T2	Parts 92 106	シートベルトプリテンショナー
+T3	Parts 76 85	フロントエアバッグ
+T4	Parts 11 23	フロントインパクトセンサ
+T5	Parts 0 6	乗員保護装置
+T6	Parts 24 26	配線
+T7	Parts 54 56	配線
+R1	Part-Whole Arg1:T6 Arg2:T4	
+R2	Part-Whole Arg1:T4 Arg2:T5	
+R3	Coreference Arg1:T6 Arg2:T7	
+R4	Part-Whole Arg1:T3 Arg2:T5	
+R5	Part-Whole Arg1:T2 Arg2:T5	
+R6	Connect Arg1:T3 Arg2:T7	
+R7	Connect Arg1:T2 Arg2:T7	

@@ -1,0 +1,6 @@
+T4	Parts 17 23	道路運送車両
+T5	Parts 0 5	前面ガラス
+T6	Parts 6 9	遮光板
+R1	Contact Arg1:T6 Arg2:T5	
+R2	Part-Whole Arg1:T6 Arg2:T4	
+R3	Part-Whole Arg1:T5 Arg2:T4	

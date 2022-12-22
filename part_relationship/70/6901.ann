@@ -1,0 +1,14 @@
+T1	Parts 11 19	コイルスプリング
+T2	Parts 26 32	サークリップ
+T3	Parts 46 52	サークリップ
+T4	Parts 0 6	前輪緩衝装置
+T5	Parts 103 108	スプリング
+T6	Parts 87 91	緩衝装置
+T7	Parts 92 98	ダストシール
+R1	Part-Whole Arg1:T1 Arg2:T4	
+R2	Contact Arg1:T2 Arg2:T1	
+R3	Coreference Arg1:T2 Arg2:T3	
+R4	Coreference Arg1:T4 Arg2:T6	
+R5	Coreference Arg1:T1 Arg2:T5	
+R6	Contact Arg1:T7 Arg2:T3	
+R7	Part-Whole Arg1:T7 Arg2:T6	

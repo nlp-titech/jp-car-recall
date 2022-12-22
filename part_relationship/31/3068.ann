@@ -1,0 +1,11 @@
+T10	Parts 27 36	モータ駆動用リレー
+T12	Parts 45 49	コイル線
+T13	Parts 67 71	コイル線
+T1	Parts 0 18	電動式パワーステアリングコンピュータ
+R1	Coreference Arg1:T12 Arg2:T13	
+T2	Parts 115 121	コンピュータ
+R3	Coreference Arg1:T1 Arg2:T2	
+T3	Parts 129 133	ハンドル
+R5	Part-Whole Arg1:T12 Arg2:T10	
+R6	Part-Whole Arg1:T10 Arg2:T1	
+R7	Connect Arg1:T3 Arg2:T2	

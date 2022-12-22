@@ -1,0 +1,15 @@
+T12	Parts 18 21	ケース
+T15	Parts 67 72	ベアリング
+T1	Parts 0 3	前車軸
+T2	Parts 4 11	左側ギヤケース
+T3	Parts 40 43	タイヤ
+T4	Parts 88 90	車輪
+T5	Parts 97 102	車軸ケース
+R1	Coreference Arg1:T12 Arg2:T2	
+R2	Part-Whole Arg1:T15 Arg2:T12	
+R3	Contact Arg1:T4 Arg2:T3	
+R6	Part-Whole Arg1:T2 Arg2:T1	
+R7	Part-Whole Arg1:T5 Arg2:T1	
+T6	Parts 48 57	パワーステアリング
+R8	Connect Arg1:T1 Arg2:T3	
+R4	Contact Arg1:T12 Arg2:T5	

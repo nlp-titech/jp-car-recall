@@ -1,0 +1,15 @@
+T1	Parts 131 139	エアバッグ警告灯
+T3	Parts 166 174	サイドエアバッグ
+T7	Parts 106 122	エアバッグコントロールモジュール
+T9	Parts 33 38	コネクター
+T10	Parts 0 4	運転者席
+T11	Parts 6 9	助手席
+T2	Parts 11 28	サイドエアバッグハーネスコネクター
+T4	Parts 176 190	シートベルトプリテンショナー
+R3	Coreference Arg1:T2 Arg2:T9	
+R5	Connect Arg1:T7 Arg2:T1	
+R1	Contact Arg1:T10 Arg2:T2	
+R2	Contact Arg1:T11 Arg2:T2	
+R4	Connect Arg1:T9 Arg2:T7	
+R6	Connect Arg1:T7 Arg2:T3	
+R7	Connect Arg1:T7 Arg2:T4	

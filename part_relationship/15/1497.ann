@@ -1,0 +1,7 @@
+T12	Parts 14 21	ガス注入バルブ
+T3	Parts 36 38	ガス
+T4	Parts 65 67	ガス
+R1	Coreference Arg1:T4 Arg2:T3	
+T1	Parts 0 13	ブレーキ用アキュームレータ
+R2	Part-Whole Arg1:T12 Arg2:T1	
+R4	Contact Arg1:T3 Arg2:T12	

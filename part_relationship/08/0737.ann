@@ -1,0 +1,16 @@
+T2	Parts 16 19	駆動軸
+T3	Parts 20 57	オイルシール（エンジンオイルとパワステアリングオイルを分離するためのもの）
+T5	Parts 85 91	オイルシール
+R1	Coreference Arg1:T5 Arg2:T3	
+T6	Parts 120 127	エンジンオイル
+T7	Parts 128 139	パワステアリングオイル
+T9	Parts 160 163	オイル
+T10	Parts 173 176	排気管
+T8	Parts 144 158	パワステアリングオイルタンク
+R2	Part-Whole Arg1:T9 Arg2:T8	
+T1	Parts 1 15	パワステアリングオイルポンプ
+R4	Contact Arg1:T7 Arg2:T1	
+R6	Part-Whole Arg1:T2 Arg2:T1	
+R7	Contact Arg1:T3 Arg2:T2	
+R8	Contact Arg1:T6 Arg2:T5	
+R3	Coreference Arg1:T9 Arg2:T7	

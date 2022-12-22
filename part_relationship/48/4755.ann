@@ -1,0 +1,7 @@
+T1	Parts 19 25	コンピュータ
+T3	Parts 0 3	原動機
+T4	Parts 74 77	原動機
+T5	Parts 8 10	燃料
+R1	Coreference Arg1:T3 Arg2:T4	
+R2	Contact Arg1:T3 Arg2:T5	
+R3	Connect Arg1:T3 Arg2:T1	

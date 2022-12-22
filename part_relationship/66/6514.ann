@@ -1,0 +1,3 @@
+T4	Parts 0 15	ボディーコントロールモジュール
+T1	Parts 63 68	ドアロック
+R1	Connect Arg1:T1 Arg2:T4	

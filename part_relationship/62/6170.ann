@@ -1,0 +1,13 @@
+T1	Parts 0 13	エアバッグ制御コンピュータ
+T2	Parts 106 115	カーテンエアバッグ
+T3	Parts 68 76	エアバッグ警告灯
+T4	Parts 96 104	サイドエアバッグ
+T5	Parts 18 25	加速度センサー
+T6	Parts 86 95	フロントエアバッグ
+T8	Parts 45 49	センサー
+R1	Coreference Arg1:T5 Arg2:T8	
+R2	Connect Arg1:T1 Arg2:T3	
+R6	Connect Arg1:T1 Arg2:T5	
+R3	Connect Arg1:T1 Arg2:T6	
+R4	Connect Arg1:T1 Arg2:T4	
+R5	Connect Arg1:T1 Arg2:T2	

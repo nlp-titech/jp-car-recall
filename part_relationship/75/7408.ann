@@ -1,0 +1,17 @@
+T1	Parts 0 7	バン型トラック
+T2	Parts 26 37	垂直ゲート（昇降装置）
+T3	Parts 38 46	安全装置スイッチ
+T4	Parts 76 81	垂直ゲート
+T5	Parts 94 96	車体
+T6	Parts 97 102	垂直ゲート
+T7	Parts 85 89	安全装置
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Connect Arg1:T3 Arg2:T2	
+R3	Coreference Arg1:T2 Arg2:T4	
+R5	Coreference Arg1:T4 Arg2:T6	
+R6	Part-Whole Arg1:T7 Arg2:T1	
+R7	Connect Arg1:T3 Arg2:T7	
+R4	Part-Whole Arg1:T5 Arg2:T1	
+T8	Parts 63 69	庫内スイッチ
+R8	Connect Arg1:T8 Arg2:T4	
+R9	Part-Whole Arg1:T8 Arg2:T1	

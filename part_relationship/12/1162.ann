@@ -1,0 +1,9 @@
+T14	Parts 114 117	推進軸
+T16	Parts 15 18	パイプ
+T17	Parts 19 28	スプラインシャフト
+T1	Parts 0 6	動力伝達装置
+T2	Parts 11 14	推進軸
+R2	Coreference Arg1:T2 Arg2:T14	
+R5	Part-Whole Arg1:T16 Arg2:T2	
+R6	Part-Whole Arg1:T17 Arg2:T2	
+R7	Part-Whole Arg1:T2 Arg2:T1	

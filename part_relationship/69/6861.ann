@@ -1,0 +1,9 @@
+T3	Parts 94 98	エアコン
+T4	Parts 62 66	エンジン
+T7	Parts 55 58	パイプ
+T1	Parts 0 25	チャコールキャニスタ（燃料蒸発ガスを貯蔵する装置）
+T2	Parts 32 40	大気開放用パイプ
+R1	Contact Arg1:T1 Arg2:T2	
+R3	Coreference Arg1:T2 Arg2:T7	
+R2	Connect Arg1:T7 Arg2:T4	
+R4	Connect Arg1:T4 Arg2:T3	

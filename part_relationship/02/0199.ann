@@ -1,0 +1,14 @@
+T15	Parts 78 82	カプラー
+T18	Parts 123 126	警音器
+T19	Parts 14 17	警音器
+T20	Parts 18 26	電気配線カプラー
+T1	Parts 0 4	電気装置
+T2	Parts 9 12	前照灯
+T4	Parts 115 118	前照灯
+R1	Coreference Arg1:T18 Arg2:T19	
+R2	Coreference Arg1:T4 Arg2:T2	
+R3	Coreference Arg1:T15 Arg2:T20	
+R5	Part-Whole Arg1:T2 Arg2:T1	
+R6	Part-Whole Arg1:T19 Arg2:T1	
+R7	Part-Whole Arg1:T20 Arg2:T19	
+R8	Part-Whole Arg1:T20 Arg2:T2	

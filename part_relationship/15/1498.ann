@@ -1,0 +1,7 @@
+T20	Parts 0 8	インタークーラー
+T21	Parts 9 32	空気吸入口（フードエアインテークガーニッシュ）
+T22	Parts 138 154	フードエアインテークガーニッシュ
+T1	Parts 47 54	エンジンルーム
+R3	Coreference Arg1:T22 Arg2:T21	
+R4	Connect Arg1:T21 Arg2:T20	
+R1	Connect Arg1:T20 Arg2:T1	

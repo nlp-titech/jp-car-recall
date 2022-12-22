@@ -1,0 +1,5 @@
+T1	Parts 0 31	ＬＰＧ圧力スイッチ（ＬＰＧボンベのガス残量を警告するスイッチ）
+T2	Parts 73 77	ＬＰガス
+T3	Parts 78 82	スイッチ
+R1	Coreference Arg1:T1 Arg2:T3	
+R2	Contact Arg1:T2 Arg2:T3	

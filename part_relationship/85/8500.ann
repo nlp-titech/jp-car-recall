@@ -1,0 +1,12 @@
+T1	Parts 0 8	ハイブリット車両
+T2	Parts 9 14	高電圧配線
+T3	Parts 45 50	電気モータ
+T4	Parts 120 129	電気モータ制御装置
+T5	Parts 157 161	エンジン
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Connect Arg1:T3 Arg2:T2	
+R3	Connect Arg1:T4 Arg2:T3	
+R4	Connect Arg1:T4 Arg2:T5	
+R5	Part-Whole Arg1:T5 Arg2:T1	
+R6	Part-Whole Arg1:T3 Arg2:T1	
+R7	Part-Whole Arg1:T4 Arg2:T1	

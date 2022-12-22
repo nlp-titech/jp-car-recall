@@ -1,0 +1,12 @@
+T2	Parts 0 5	燃料タンク
+T5	Parts 74 82	インサートナット
+T6	Parts 16 31	ドレンプラグ用インサートナット
+T8	Parts 55 61	ドレンプラグ
+T10	Parts 131 133	燃料
+T1	Parts 37 40	プラグ
+R1	Coreference Arg1:T6 Arg2:T5	
+R2	Coreference Arg1:T1 Arg2:T8	
+R3	Part-Whole Arg1:T1 Arg2:T2	
+R4	Part-Whole Arg1:T10 Arg2:T2	
+R5	Contact Arg1:T6 Arg2:T1	
+R6	Contact Arg1:T6 Arg2:T2	

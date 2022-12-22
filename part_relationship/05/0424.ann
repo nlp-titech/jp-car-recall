@@ -1,0 +1,15 @@
+T10	Parts 16 33	手動変速機内部オイルポンプシャフト
+T11	Parts 61 65	シャフト
+T12	Parts 70 78	ミッションケース
+T13	Parts 79 83	内部ギヤ
+T14	Parts 97 105	ミッションケース
+T1	Parts 0 6	動力伝達装置
+R1	Coreference Arg1:T10 Arg2:T11	
+R2	Coreference Arg1:T14 Arg2:T12	
+T2	Parts 110 113	オイル
+T3	Parts 11 15	前進６段
+R3	Part-Whole Arg1:T3 Arg2:T1	
+R4	Part-Whole Arg1:T10 Arg2:T3	
+R5	Part-Whole Arg1:T12 Arg2:T1	
+R6	Part-Whole Arg1:T13 Arg2:T11	
+R7	Contact Arg1:T14 Arg2:T2	

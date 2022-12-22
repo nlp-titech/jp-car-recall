@@ -1,0 +1,15 @@
+T1	Parts 7 18	１２段機械式自動変速機
+T2	Parts 23 32	プラネタリキャリア
+T3	Parts 55 63	ピニオンシャフト
+T4	Parts 81 88	スプリングピン
+T5	Parts 0 6	大型トラック
+T6	Parts 70 74	シャフト
+T7	Parts 93 97	シャフト
+T8	Parts 98 106	変速機本体ケース
+R1	Part-Whole Arg1:T1 Arg2:T5	
+R2	Coreference Arg1:T6 Arg2:T3	
+R3	Coreference Arg1:T7 Arg2:T6	
+R4	Contact Arg1:T3 Arg2:T2	
+R5	Contact Arg1:T4 Arg2:T6	
+R6	Part-Whole Arg1:T8 Arg2:T1	
+R7	Part-Whole Arg1:T2 Arg2:T1	

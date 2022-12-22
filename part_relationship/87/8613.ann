@@ -1,0 +1,7 @@
+T1	Parts 0 13	ＳＲＳコントロールユニット
+T2	Parts 33 38	固定ボルト
+T3	Parts 69 73	ユニット
+T4	Parts 97 105	乗員補助拘束装置
+R1	Coreference Arg1:T1 Arg2:T3	
+R2	Contact Arg1:T1 Arg2:T2	
+R3	Connect Arg1:T3 Arg2:T4	

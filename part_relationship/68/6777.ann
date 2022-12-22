@@ -1,0 +1,16 @@
+T4	Parts 64 69	サブタンク
+T5	Parts 125 130	サブタンク
+T6	Parts 94 109	パイプ（オーバーフローパイプ）
+T8	Parts 2 5	原動機
+T9	Parts 35 50	冷却水補助タンク（サブタンク）
+T10	Parts 86 89	冷却水
+T11	Parts 142 145	冷却水
+T13	Parts 131 138	蓋（キャップ）
+T2	Parts 70 73	泥除け
+R1	Coreference Arg1:T9 Arg2:T4	
+R2	Coreference Arg1:T4 Arg2:T5	
+R3	Coreference Arg1:T10 Arg2:T11	
+R4	Part-Whole Arg1:T10 Arg2:T4	
+R5	Contact Arg1:T10 Arg2:T6	
+R6	Contact Arg1:T4 Arg2:T6	
+R7	Part-Whole Arg1:T13 Arg2:T5	

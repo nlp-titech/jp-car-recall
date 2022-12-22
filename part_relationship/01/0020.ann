@@ -1,0 +1,9 @@
+T1	Parts 0 20	動力式かじ取り装置（パワーステアリング）
+T2	Parts 21 25	油圧配管
+T3	Parts 32 42	ゴムホース（戻り側）
+T4	Parts 90 93	ホース
+T6	Parts 135 139	ハンドル
+R1	Coreference Arg1:T3 Arg2:T4	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T3 Arg2:T2	
+R5	Contact Arg1:T1 Arg2:T6	

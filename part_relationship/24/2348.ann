@@ -1,0 +1,13 @@
+T12	Parts 91 94	バルブ
+T13	Parts 11 24	バルブクリアランス調整ネジ
+T1	Parts 0 3	原動機
+T2	Parts 4 10	吸排気バルブ
+T4	Parts 44 51	プッシュロッド
+R1	Coreference Arg1:T12 Arg2:T2	
+T5	Parts 112 116	排出ガス
+R2	Contact Arg1:T4 Arg2:T13	
+R3	Contact Arg1:T13 Arg2:T2	
+R4	Contact Arg1:T5 Arg2:T2	
+R5	Part-Whole Arg1:T2 Arg2:T1	
+R6	Part-Whole Arg1:T13 Arg2:T1	
+R7	Part-Whole Arg1:T4 Arg2:T1	

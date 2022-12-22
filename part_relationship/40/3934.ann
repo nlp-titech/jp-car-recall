@@ -1,0 +1,6 @@
+T1	Parts 34 41	ドラッグリンク
+T3	Parts 20 24	ハンドル
+T4	Parts 0 9	ブレーキ配管防護板
+T5	Parts 42 45	防護板
+R1	Coreference Arg1:T5 Arg2:T4	
+R2	Connect Arg1:T1 Arg2:T3	

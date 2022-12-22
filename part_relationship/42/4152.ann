@@ -1,0 +1,10 @@
+T1	Parts 13 17	回路基板
+T3	Parts 6 8	基板
+T4	Parts 149 151	車両
+T7	Parts 0 5	電源分配器
+R1	Part-Whole Arg1:T3 Arg2:T7	
+R2	Coreference Arg1:T3 Arg2:T1	
+R6	Part-Whole Arg1:T7 Arg2:T4	
+T2	Parts 25 27	半田
+T8	Parts 35 38	防湿材
+R3	Contact Arg1:T1 Arg2:T8	

@@ -1,0 +1,21 @@
+T1	Parts 0 7	アクセルペダル
+T2	Parts 30 37	アクセルペダル
+T3	Parts 127 134	アクセルペダル
+T4	Parts 104 111	ピストンロッド
+T5	Parts 51 55	アクセル
+T7	Parts 99 103	アクセル
+T8	Parts 142 146	エンジン
+T9	Parts 112 116	ブッシュ
+T10	Parts 60 64	マウント
+T12	Parts 45 47	ピン
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Part-Whole Arg1:T4 Arg2:T7	
+R3	Part-Whole Arg1:T9 Arg2:T7	
+R5	Contact Arg1:T5 Arg2:T10	
+R7	Coreference Arg1:T2 Arg2:T5	
+R8	Connect Arg1:T3 Arg2:T8	
+T6	Parts 88 92	アクセル
+R9	Coreference Arg1:T5 Arg2:T6	
+R10	Coreference Arg1:T6 Arg2:T7	
+R4	Coreference Arg1:T7 Arg2:T3	
+R6	Part-Whole Arg1:T12 Arg2:T2	

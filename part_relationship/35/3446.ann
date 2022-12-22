@@ -1,0 +1,25 @@
+T1	Parts 0 12	エンジン補機駆動用ベルト
+T2	Parts 93 100	ウォータポンプ
+T3	Parts 86 92	オルタネータ
+T4	Parts 13 18	テンショナ
+T5	Parts 36 41	テンショナ
+T7	Parts 59 63	エンジン
+T8	Parts 119 123	エンジン
+T9	Parts 42 45	プーリ
+T10	Parts 29 32	ベルト
+T11	Parts 67 70	ベルト
+T12	Parts 79 82	ベルト
+T13	Parts 105 108	警告灯
+R1	Coreference Arg1:T10 Arg2:T1	
+R2	Coreference Arg1:T5 Arg2:T4	
+R3	Part-Whole Arg1:T9 Arg2:T5	
+R7	Coreference Arg1:T12 Arg2:T11	
+R8	Coreference Arg1:T11 Arg2:T10	
+R9	Contact Arg1:T3 Arg2:T12	
+R10	Contact Arg1:T2 Arg2:T12	
+R11	Connect Arg1:T13 Arg2:T2	
+R12	Connect Arg1:T13 Arg2:T3	
+R13	Coreference Arg1:T8 Arg2:T7	
+R14	Contact Arg1:T1 Arg2:T4	
+R4	Connect Arg1:T3 Arg2:T8	
+R5	Part-Whole Arg1:T2 Arg2:T8	

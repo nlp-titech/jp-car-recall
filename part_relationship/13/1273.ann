@@ -1,0 +1,11 @@
+T12	Parts 31 36	ブラケット
+T13	Parts 61 64	パイプ
+T1	Parts 0 6	大型観光バス
+T2	Parts 12 26	電気エア式変速機用エアパイプ
+T3	Parts 49 53	エンジン
+T4	Parts 83 85	エア
+R1	Coreference Arg1:T2 Arg2:T13	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T3 Arg2:T1	
+R4	Contact Arg1:T13 Arg2:T4	
+R5	Part-Whole Arg1:T12 Arg2:T2	

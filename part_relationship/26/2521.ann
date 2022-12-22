@@ -1,0 +1,11 @@
+T1	Parts 0 5	エアタンク
+T2	Parts 10 12	車両
+T3	Parts 17 25	プロペラシャフト
+T4	Parts 26 50	プロテクタ（プロペラシャフトサポートブラケット）
+T5	Parts 62 71	リヤサスペンション
+T6	Parts 108 116	プロペラシャフト
+R1	Coreference Arg1:T6 Arg2:T3	
+R2	Part-Whole Arg1:T1 Arg2:T2	
+R3	Part-Whole Arg1:T3 Arg2:T2	
+R4	Part-Whole Arg1:T4 Arg2:T2	
+R5	Part-Whole Arg1:T5 Arg2:T2	

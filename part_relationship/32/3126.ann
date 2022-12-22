@@ -1,0 +1,17 @@
+T14	Parts 155 161	駐車ブレーキ
+T15	Parts 125 133	ナイロンチューブ
+T16	Parts 96 104	ナイロンチューブ
+T17	Parts 20 56	駐車ブレーキ（ホイールパーキングブレーキ）用エア配管（ナイロンチューブ）
+T18	Parts 77 79	配管
+T1	Parts 10 12	車両
+T2	Parts 17 19	後軸
+R2	Coreference Arg1:T16 Arg2:T15	
+R3	Coreference Arg1:T18 Arg2:T16	
+R5	Contact Arg1:T14 Arg2:T15	
+T4	Parts 139 141	エア
+R6	Contact Arg1:T4 Arg2:T15	
+R7	Part-Whole Arg1:T2 Arg2:T1	
+R8	Contact Arg1:T17 Arg2:T2	
+R1	Coreference Arg1:T18 Arg2:T17	
+R11	Part-Whole Arg1:T17 Arg2:T1	
+R4	Part-Whole Arg1:T14 Arg2:T1	

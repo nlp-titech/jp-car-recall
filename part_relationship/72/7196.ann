@@ -1,0 +1,11 @@
+T1	Parts 8 19	二重リターンスプリング
+T2	Parts 39 48	リターンスプリング
+T3	Parts 0 7	アクセルペダル
+T4	Parts 60 67	アクセルペダル
+T5	Parts 75 82	アクセルペダル
+T6	Parts 101 105	エンジン
+R1	Part-Whole Arg1:T1 Arg2:T3	
+R2	Oneway-Coreference Arg1:T1 Arg2:T2	
+R3	Coreference Arg1:T3 Arg2:T4	
+R4	Coreference Arg1:T4 Arg2:T5	
+R5	Connect Arg1:T5 Arg2:T6	

@@ -1,0 +1,17 @@
+T1	Parts 13 22	マスターシリンダー
+T2	Parts 33 38	シリンダー
+T3	Parts 73 78	ブレーキ液
+T4	Parts 40 44	ピストン
+T5	Parts 85 89	ピストン
+T6	Parts 119 123	ピストン
+T7	Parts 0 8	フロントブレーキ
+T8	Parts 65 69	ブレーキ
+T9	Parts 134 142	フロントブレーキ
+R1	Coreference Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T5 Arg2:T4	
+R3	Coreference Arg1:T9 Arg2:T8	
+R4	Coreference Arg1:T8 Arg2:T7	
+R5	Part-Whole Arg1:T1 Arg2:T7	
+R6	Part-Whole Arg1:T4 Arg2:T2	
+R8	Coreference Arg1:T6 Arg2:T5	
+R7	Contact Arg1:T2 Arg2:T3	

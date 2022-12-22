@@ -1,0 +1,15 @@
+T1	Parts 3 9	パワーゲート
+T2	Parts 21 31	スペアタイヤハンガー
+T3	Parts 32 41	リヤブレーキパイプ
+T4	Parts 80 84	ハンガー
+R1	Coreference Arg1:T2 Arg2:T4	
+T5	Parts 85 88	パイプ
+R2	Coreference Arg1:T3 Arg2:T5	
+T6	Parts 93 96	パイプ
+R3	Coreference Arg1:T5 Arg2:T6	
+T7	Parts 113 118	ブレーキ液
+R4	Contact Arg1:T6 Arg2:T7	
+T8	Parts 14 16	車両
+R5	Part-Whole Arg1:T1 Arg2:T8	
+R6	Part-Whole Arg1:T2 Arg2:T8	
+R8	Part-Whole Arg1:T3 Arg2:T8	

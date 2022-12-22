@@ -1,0 +1,9 @@
+T1	Parts 0 12	車両走行制御コントローラ
+T2	Parts 17 25	パワーモジュール
+T3	Parts 26 32	トランジスタ
+T4	Parts 46 52	トランジスタ
+T6	Parts 90 96	トランジスタ
+R1	Coreference Arg1:T3 Arg2:T4	
+R2	Coreference Arg1:T4 Arg2:T6	
+R3	Part-Whole Arg1:T3 Arg2:T2	
+R4	Part-Whole Arg1:T2 Arg2:T1	

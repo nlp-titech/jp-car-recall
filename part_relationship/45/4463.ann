@@ -1,0 +1,7 @@
+T1	Parts 0 10	ステアリングハンドル
+T3	Parts 39 43	ハンドル
+T4	Parts 81 85	ハンドル
+R1	Coreference Arg1:T1 Arg2:T3	
+R2	Coreference Arg1:T3 Arg2:T4	
+T2	Parts 14 22	コンタクトリング
+R3	Contact Arg1:T1 Arg2:T2	

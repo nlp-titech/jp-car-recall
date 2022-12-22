@@ -1,0 +1,15 @@
+T1	Parts 14 28	アイドリングストップシステム
+T3	Parts 33 38	キャパシタ
+T4	Parts 49 64	昇降圧充放電コンバータ内部素子
+T5	Parts 115 119	内部素子
+T7	Parts 150 152	素子
+T8	Parts 157 159	素子
+T9	Parts 0 7	キャパシタ電源
+T2	Parts 106 111	コンバータ
+R1	Coreference Arg1:T5 Arg2:T4	
+R2	Coreference Arg1:T7 Arg2:T5	
+R3	Part-Whole Arg1:T5 Arg2:T2	
+R4	Connect Arg1:T4 Arg2:T3	
+R5	Part-Whole Arg1:T3 Arg2:T9	
+R6	Part-Whole Arg1:T9 Arg2:T1	
+R7	Coreference Arg1:T8 Arg2:T7	

@@ -1,0 +1,4 @@
+T1	Parts 0 14	コントロールバルブ取付パイプ
+T2	Parts 25 29	エンジン
+T3	Parts 36 39	パイプ
+R1	Coreference Arg1:T3 Arg2:T1	

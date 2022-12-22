@@ -1,0 +1,13 @@
+T8	Parts 21 31	圧力設定用スクリュー
+T9	Parts 46 51	スクリュー
+T10	Parts 58 61	ナット
+T1	Parts 0 10	ブレーキ用油圧ポンプ
+T2	Parts 15 20	制御バルブ
+R1	Coreference Arg1:T9 Arg2:T8	
+T3	Parts 98 102	ブレーキ
+T4	Parts 87 91	ブレーキ
+R2	Coreference Arg1:T3 Arg2:T4	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T8 Arg2:T2	
+R6	Connect Arg1:T1 Arg2:T4	
+R5	Contact Arg1:T9 Arg2:T10	

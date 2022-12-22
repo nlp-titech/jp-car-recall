@@ -1,0 +1,5 @@
+T2	Parts 15 23	クラッチプレート
+T3	Parts 37 41	クラッチ
+T5	Parts 0 7	油圧式クラッチ
+R1	Coreference Arg1:T5 Arg2:T3	
+R2	Contact Arg1:T2 Arg2:T5	

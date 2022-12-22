@@ -1,0 +1,12 @@
+T1	Parts 0 8	ラジエータホース
+T2	Parts 9 16	ウォータパイプ
+T3	Parts 23 30	ホースクランプ
+T4	Parts 45 48	ホース
+T5	Parts 49 56	ウォータパイプ
+T6	Parts 65 68	冷却水
+R1	Coreference Arg1:T5 Arg2:T2	
+R2	Coreference Arg1:T4 Arg2:T1	
+R3	Connect Arg1:T1 Arg2:T2	
+R4	Contact Arg1:T1 Arg2:T3	
+R5	Contact Arg1:T5 Arg2:T6	
+#1	AnnotatorNotes R4	解説画像では、ホースクランプはラジエータホース側とだけ繋がっているように見える

@@ -1,0 +1,18 @@
+T1	Parts 0 9	キャビン内電気配線
+T2	Parts 22 30	クラッチ倍力装置
+T4	Parts 37 44	クラッチペダル
+T5	Parts 45 52	プッシュロッド
+T7	Parts 59 61	配線
+R1	Coreference Arg1:T1 Arg2:T7	
+T8	Parts 90 92	配線
+R2	Coreference Arg1:T7 Arg2:T8	
+T9	Parts 97 101	灯火器類
+T10	Parts 102 105	警音器
+T11	Parts 106 109	警告灯
+T12	Parts 110 113	速度計
+R3	Connect Arg1:T9 Arg2:T8	
+R4	Connect Arg1:T10 Arg2:T8	
+R5	Connect Arg1:T11 Arg2:T8	
+R6	Connect Arg1:T12 Arg2:T8	
+R7	Connect Arg1:T4 Arg2:T2	
+R8	Contact Arg1:T5 Arg2:T4	

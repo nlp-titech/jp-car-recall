@@ -1,0 +1,11 @@
+T10	Parts 27 34	アクセルペダル
+T11	Parts 110 117	アクセルペダル
+T12	Parts 55 59	プレート
+T13	Parts 93 97	プレート
+T1	Parts 0 22	加速装置（電子制御式アクセルペダルユニット）
+T2	Parts 39 42	ペダル
+R1	Coreference Arg1:T13 Arg2:T12	
+R2	Coreference Arg1:T11 Arg2:T10	
+R4	Coreference Arg1:T2 Arg2:T10	
+R5	Part-Whole Arg1:T12 Arg2:T1	
+R3	Connect Arg1:T1 Arg2:T10	

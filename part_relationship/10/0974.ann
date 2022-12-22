@@ -1,0 +1,13 @@
+T10	Parts 0 8	アクスルシャフト
+T11	Parts 9 14	スプライン
+T12	Parts 25 33	アクスルシャフト
+T13	Parts 34 39	スプライン
+T14	Parts 40 42	デフ
+T15	Parts 43 48	サイドギヤ
+T16	Parts 84 89	サイドギヤ
+R1	Coreference Arg1:T12 Arg2:T10	
+R2	Coreference Arg1:T13 Arg2:T11	
+R3	Coreference Arg1:T16 Arg2:T15	
+R4	Part-Whole Arg1:T11 Arg2:T10	
+R5	Contact Arg1:T12 Arg2:T14	
+R6	Part-Whole Arg1:T15 Arg2:T14	

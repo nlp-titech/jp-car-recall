@@ -1,0 +1,33 @@
+T19	Parts 16 21	ゴム付金具
+T20	Parts 36 38	金具
+T21	Parts 39 41	ゴム
+T22	Parts 62 64	金具
+T25	Parts 47 52	取付ボルト
+T26	Parts 53 56	ナット
+T29	Parts 66 69	ボルト
+T30	Parts 70 73	ナット
+T31	Parts 93 96	ボルト
+T32	Parts 97 100	ナット
+T1	Parts 0 7	燃料噴射ポンプ
+T2	Parts 8 11	噴射管
+T3	Parts 101 109	スタータモーター
+T5	Parts 131 139	スタータハーネス
+T6	Parts 234 238	対象車両
+T7	Parts 253 257	対象車両
+R1	Coreference Arg1:T19 Arg2:T20	
+R2	Coreference Arg1:T25 Arg2:T29	
+R3	Coreference Arg1:T26 Arg2:T30	
+R4	Coreference Arg1:T20 Arg2:T22	
+R5	Coreference Arg1:T29 Arg2:T31	
+R6	Coreference Arg1:T30 Arg2:T32	
+R7	Coreference Arg1:T6 Arg2:T7	
+R8	Part-Whole Arg1:T2 Arg2:T1	
+R9	Contact Arg1:T19 Arg2:T2	
+R14	Connect Arg1:T5 Arg2:T3	
+R15	Part-Whole Arg1:T5 Arg2:T6	
+R17	Part-Whole Arg1:T3 Arg2:T6	
+R13	Part-Whole Arg1:T1 Arg2:T6	
+R10	Part-Whole Arg1:T21 Arg2:T20	
+R18	Contact Arg1:T25 Arg2:T20	
+R11	Contact Arg1:T26 Arg2:T20	
+R12	Contact Arg1:T25 Arg2:T26	

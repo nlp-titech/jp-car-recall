@@ -1,0 +1,12 @@
+T1	Parts 9 22	ステアリングコラムシャフト
+T2	Parts 48 61	ステアリングコラムシャフト
+T3	Parts 25 35	原動機制御用電気配線
+T5	Parts 0 4	電気装置
+T6	Parts 85 89	電気配線
+T7	Parts 112 115	原動機
+R2	Coreference Arg1:T1 Arg2:T2	
+R4	Coreference Arg1:T3 Arg2:T6	
+R7	Connect Arg1:T5 Arg2:T7	
+T4	Parts 103 107	電気回路
+R1	Part-Whole Arg1:T6 Arg2:T4	
+R3	Part-Whole Arg1:T4 Arg2:T5	

@@ -1,0 +1,9 @@
+T10	Parts 44 51	ブレーキペダル
+T11	Parts 13 25	ケーブルガイドブラケット
+T12	Parts 58 63	ブラケット
+T13	Parts 68 77	駐車ブレーキペダル
+T1	Parts 3 12	駐車ブレーキペダル
+R1	Coreference Arg1:T10 Arg2:T1	
+R2	Coreference Arg1:T12 Arg2:T11	
+R3	Coreference Arg1:T13 Arg2:T10	
+R4	Part-Whole Arg1:T11 Arg2:T1	

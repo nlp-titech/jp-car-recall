@@ -1,0 +1,7 @@
+T11	Parts 15 26	エアブレーキ用エア配管
+T12	Parts 96 100	エア配管
+T1	Parts 0 10	エア式制動装置装着車
+T2	Parts 38 52	変速機用コントロールケーブル
+R1	Coreference Arg1:T11 Arg2:T12	
+R2	Part-Whole Arg1:T11 Arg2:T1	
+R3	Part-Whole Arg1:T2 Arg2:T1	

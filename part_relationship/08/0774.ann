@@ -1,0 +1,8 @@
+T10	Parts 30 34	バッテリ
+T11	Parts 6 15	バッテリーアース線
+T12	Parts 43 47	バッテリ
+T1	Parts 1 5	電気装置
+R1	Coreference Arg1:T12 Arg2:T10	
+T2	Parts 68 78	エンジンコンピュータ
+R2	Part-Whole Arg1:T11 Arg2:T1	
+R3	Connect Arg1:T11 Arg2:T10	

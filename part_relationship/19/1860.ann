@@ -1,0 +1,13 @@
+T11	Parts 38 42	熱交換器
+T12	Parts 43 49	送風用モータ
+T1	Parts 0 7	暖房用熱交換器
+T2	Parts 8 11	格納箱
+R3	Part-Whole Arg1:T1 Arg2:T2	
+R4	Coreference Arg1:T1 Arg2:T11	
+R5	Part-Whole Arg1:T12 Arg2:T11	
+T3	Parts 50 58	ハーネスコネクタ
+T4	Parts 91 95	コネクタ
+T5	Parts 107 115	ハーネスコネクタ
+R1	Part-Whole Arg1:T3 Arg2:T12	
+R2	Coreference Arg1:T3 Arg2:T4	
+R6	Coreference Arg1:T4 Arg2:T5	

@@ -1,0 +1,16 @@
+T14	Parts 61 65	シャフト
+T15	Parts 91 93	ビス
+T16	Parts 132 134	ビス
+T17	Parts 147 151	シャフト
+T1	Parts 0 7	かじ取ハンドル
+T2	Parts 12 23	ステアリングコンソール
+T3	Parts 38 45	かじ取ハンドル
+T5	Parts 80 84	シャフト
+T6	Parts 157 164	ブレーキペダル
+R1	Coreference Arg1:T1 Arg2:T3	
+R2	Coreference Arg1:T14 Arg2:T5	
+R3	Coreference Arg1:T15 Arg2:T16	
+R4	Coreference Arg1:T5 Arg2:T17	
+R5	Contact Arg1:T1 Arg2:T2	
+R6	Part-Whole Arg1:T14 Arg2:T2	
+R7	Part-Whole Arg1:T15 Arg2:T5	

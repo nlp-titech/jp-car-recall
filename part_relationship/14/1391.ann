@@ -1,0 +1,9 @@
+T1	Parts 1 7	静油圧変速機
+T2	Parts 8 13	油圧ホース
+T3	Parts 50 53	作動油
+T4	Parts 70 75	油圧ホース
+T5	Parts 110 113	ホース
+T6	Parts 118 121	作動油
+R1	Coreference Arg1:T2 Arg2:T4	
+R2	Coreference Arg1:T4 Arg2:T5	
+R3	Coreference Arg1:T3 Arg2:T6	

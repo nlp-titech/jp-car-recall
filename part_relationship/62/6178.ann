@@ -1,0 +1,13 @@
+T1	Parts 0 6	農耕トラクタ
+T2	Parts 39 43	エンジン
+T3	Parts 7 14	燃料高圧パイプ
+T4	Parts 19 24	高圧パイプ
+T5	Parts 51 56	高圧パイプ
+T6	Parts 95 100	高圧パイプ
+T9	Parts 114 116	燃料
+R1	Part-Whole Arg1:T3 Arg2:T1	
+R2	Part-Whole Arg1:T4 Arg2:T3	
+R3	Coreference Arg1:T4 Arg2:T5	
+R6	Part-Whole Arg1:T2 Arg2:T1	
+R4	Coreference Arg1:T5 Arg2:T6	
+R5	Contact Arg1:T9 Arg2:T6	

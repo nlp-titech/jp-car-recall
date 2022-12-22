@@ -1,0 +1,11 @@
+T2	Parts 0 7	メインハーネス
+T3	Parts 117 121	エンジン
+T4	Parts 22 26	ハーネス
+T5	Parts 96 100	ハーネス
+T6	Parts 53 57	フレーム
+T7	Parts 44 47	ボルト
+T8	Parts 27 43	液圧式リアサスペンション調整装置
+R1	Coreference Arg1:T4 Arg2:T2	
+R2	Coreference Arg1:T5 Arg2:T4	
+R3	Connect Arg1:T3 Arg2:T5	
+R4	Contact Arg1:T7 Arg2:T8	

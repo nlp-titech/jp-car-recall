@@ -1,0 +1,24 @@
+T1	Parts 47 54	サプライポンプ
+T2	Parts 71 78	サプライポンプ
+T3	Parts 131 138	サプライポンプ
+T4	Parts 26 39	ハイブリッド制御プログラム
+T5	Parts 18 22	エンジン
+T6	Parts 0 12	大型ハイブリッド路線バス
+T7	Parts 83 86	シュー
+T8	Parts 123 126	シュー
+T9	Parts 79 82	ローラ
+T10	Parts 119 122	ローラ
+T11	Parts 60 62	燃料
+R1	Part-Whole Arg1:T5 Arg2:T6	
+R2	Connect Arg1:T4 Arg2:T5	
+R3	Coreference Arg1:T1 Arg2:T2	
+R4	Contact Arg1:T11 Arg2:T1	
+R5	Coreference Arg1:T9 Arg2:T10	
+R6	Coreference Arg1:T7 Arg2:T8	
+R8	Connect Arg1:T4 Arg2:T1	
+R9	Part-Whole Arg1:T9 Arg2:T2	
+R10	Part-Whole Arg1:T7 Arg2:T2	
+R11	Part-Whole Arg1:T4 Arg2:T6	
+R12	Contact Arg1:T9 Arg2:T7	
+R7	Coreference Arg1:T2 Arg2:T3	
+R13	Part-Whole Arg1:T1 Arg2:T6	

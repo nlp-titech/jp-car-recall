@@ -1,0 +1,7 @@
+T2	Parts 45 54	イグニッションキー
+T3	Parts 82 86	エンジン
+T4	Parts 1 14	イグニッションキーシリンダ
+R1	Connect Arg1:T2 Arg2:T3	
+R2	Contact Arg1:T4 Arg2:T2	
+T1	Parts 59 61	キー
+R4	Coreference Arg1:T2 Arg2:T1	

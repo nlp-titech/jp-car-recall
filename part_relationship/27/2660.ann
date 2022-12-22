@@ -1,0 +1,8 @@
+T10	Parts 13 23	モータ用コントローラ
+T14	Parts 72 78	コントローラ
+T1	Parts 0 12	バッテリーフォークリフト
+R2	Coreference Arg1:T14 Arg2:T10	
+T3	Parts 118 122	変速装置
+R3	Part-Whole Arg1:T10 Arg2:T1	
+R6	Connect Arg1:T14 Arg2:T3	
+R1	Part-Whole Arg1:T3 Arg2:T1	

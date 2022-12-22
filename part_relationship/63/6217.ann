@@ -1,0 +1,12 @@
+T1	Parts 107 118	エンジン制御プログラム
+T2	Parts 92 102	エンジン制御ユニット
+T3	Parts 3 9	大型トラック
+T4	Parts 85 91	大型トラック
+T5	Parts 38 44	サインボード
+R1	Part-Whole Arg1:T5 Arg2:T7	
+R2	Coreference Arg1:T3 Arg2:T4	
+R3	Part-Whole Arg1:T2 Arg2:T4	
+R4	Part-Whole Arg1:T1 Arg2:T2	
+T6	Parts 23 29	前部上側端灯
+T7	Parts 10 18	ハイルーフモデル
+R5	Part-Whole Arg1:T6 Arg2:T7	

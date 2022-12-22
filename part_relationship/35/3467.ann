@@ -1,0 +1,27 @@
+T1	Parts 54 62	テンションアーム
+T2	Parts 80 89	テンションプーリー
+T4	Parts 0 7	刈取脱穀作業車
+T5	Parts 8 34	エンジン冷却ファン駆動用ＨＳＴ（静油圧式無段変速機）
+T6	Parts 104 118	ＨＳＴ（静油圧式無段変速機）
+T8	Parts 185 190	冷却ファン
+T10	Parts 203 207	エンジン
+T12	Parts 155 164	テンションプーリー
+T13	Parts 63 67	支点ピン
+T14	Parts 39 44	伝達ベルト
+T15	Parts 124 127	ベルト
+T16	Parts 149 154	伝達ベルト
+R1	Part-Whole Arg1:T5 Arg2:T4	
+R3	Coreference Arg1:T6 Arg2:T5	
+R4	Part-Whole Arg1:T13 Arg2:T1	
+R5	Contact Arg1:T2 Arg2:T1	
+R6	Contact Arg1:T2 Arg2:T14	
+R7	Part-Whole Arg1:T14 Arg2:T5	
+R8	Part-Whole Arg1:T1 Arg2:T5	
+R9	Part-Whole Arg1:T2 Arg2:T5	
+R10	Coreference Arg1:T12 Arg2:T2	
+R12	Coreference Arg1:T15 Arg2:T14	
+R13	Coreference Arg1:T16 Arg2:T15	
+R14	Connect Arg1:T8 Arg2:T16	
+R15	Connect Arg1:T10 Arg2:T8	
+R2	Part-Whole Arg1:T8 Arg2:T4	
+R11	Part-Whole Arg1:T10 Arg2:T4	

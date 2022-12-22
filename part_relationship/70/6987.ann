@@ -1,0 +1,28 @@
+T1	Parts 0 9	リヤサスペンション
+T2	Parts 121 130	リヤサスペンション
+T3	Parts 148 155	サスペンション
+T4	Parts 159 164	燃料ポンプ
+T5	Parts 10 14	フレーム
+T7	Parts 21 24	ボルト
+T8	Parts 71 74	ボルト
+T9	Parts 88 91	ボルト
+T12	Parts 137 139	車体
+T13	Parts 45 47	車両
+T14	Parts 170 172	燃料
+R1	Contact Arg1:T1 Arg2:T5	
+R2	Contact Arg1:T7 Arg2:T5	
+R4	Coreference Arg1:T7 Arg2:T8	
+R6	Coreference Arg1:T1 Arg2:T2	
+R9	Part-Whole Arg1:T4 Arg2:T13	
+R11	Contact Arg1:T7 Arg2:T1	
+R12	Part-Whole Arg1:T5 Arg2:T13	
+T6	Parts 48 50	荷台
+T10	Parts 112 114	荷台
+R14	Coreference Arg1:T6 Arg2:T10	
+R8	Coreference Arg1:T2 Arg2:T3	
+R5	Coreference Arg1:T8 Arg2:T9	
+R3	Part-Whole Arg1:T1 Arg2:T13	
+R7	Part-Whole Arg1:T12 Arg2:T13	
+R10	Contact Arg1:T4 Arg2:T14	
+R13	Part-Whole Arg1:T6 Arg2:T13	
+R15	Contact Arg1:T2 Arg2:T12	

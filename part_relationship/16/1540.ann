@@ -1,0 +1,18 @@
+T16	Parts 4 7	灯火器
+T17	Parts 51 54	反射器
+T18	Parts 59 62	バルブ
+T19	Parts 88 92	ソケット
+T20	Parts 108 111	前照灯
+T1	Parts 0 3	前照灯
+T3	Parts 100 104	リード線
+R5	Contact Arg1:T19 Arg2:T18	
+R9	Contact Arg1:T18 Arg2:T17	
+T2	Parts 94 96	半田
+R10	Contact Arg1:T19 Arg2:T2	
+R6	Contact Arg1:T2 Arg2:T3	
+R2	Coreference Arg1:T1 Arg2:T16	
+R1	Coreference Arg1:T16 Arg2:T20	
+R3	Part-Whole Arg1:T18 Arg2:T20	
+R4	Part-Whole Arg1:T17 Arg2:T20	
+R7	Part-Whole Arg1:T19 Arg2:T20	
+R8	Part-Whole Arg1:T3 Arg2:T19	

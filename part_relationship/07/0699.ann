@@ -1,0 +1,20 @@
+T16	Parts 96 98	後軸
+T17	Parts 84 91	取付用プレート
+T18	Parts 66 73	取付用プレート
+T19	Parts 56 58	車体
+T20	Parts 53 55	後軸
+T1	Parts 0 4	揺動機構
+T2	Parts 7 9	後軸
+T3	Parts 17 23	揺動ストッパ
+R1	Coreference Arg1:T17 Arg2:T18	
+R2	Coreference Arg1:T16 Arg2:T2	
+R3	Part-Whole Arg1:T1 Arg2:T2	
+R4	Part-Whole Arg1:T3 Arg2:T1	
+R5	Coreference Arg1:T2 Arg2:T20	
+R6	Connect Arg1:T20 Arg2:T19	
+R7	Contact Arg1:T20 Arg2:T18	
+R8	Contact Arg1:T19 Arg2:T18	
+T4	Parts 140 142	車両
+R9	Part-Whole Arg1:T16 Arg2:T4	
+R10	Part-Whole Arg1:T19 Arg2:T4	
+R11	Part-Whole Arg1:T1 Arg2:T4	

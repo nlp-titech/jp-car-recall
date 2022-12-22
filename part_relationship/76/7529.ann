@@ -1,0 +1,10 @@
+T1	Parts 28 30	車両
+T2	Parts 31 44	オンボード診断ソフトウェア
+T3	Parts 67 71	センサー
+T4	Parts 94 98	エンジン
+T5	Parts 110 114	エンジン
+R1	Coreference Arg1:T4 Arg2:T5	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T4 Arg2:T1	
+R4	Part-Whole Arg1:T3 Arg2:T1	
+R5	Connect Arg1:T3 Arg2:T4	

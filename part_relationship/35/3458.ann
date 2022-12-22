@@ -1,0 +1,16 @@
+T1	Parts 19 44	バッフルプレート（燃料液面の揺動を抑止する仕切板）
+T2	Parts 75 83	バッフルプレート
+T3	Parts 0 6	小型トラック
+T4	Parts 11 16	燃料タンク
+T5	Parts 45 50	燃料タンク
+T6	Parts 129 134	燃料タンク
+T8	Parts 67 69	燃料
+T9	Parts 146 148	燃料
+R1	Coreference Arg1:T5 Arg2:T4	
+R3	Coreference Arg1:T2 Arg2:T1	
+R4	Coreference Arg1:T6 Arg2:T5	
+R5	Coreference Arg1:T9 Arg2:T8	
+R6	Part-Whole Arg1:T4 Arg2:T3	
+R8	Part-Whole Arg1:T1 Arg2:T4	
+R2	Part-Whole Arg1:T8 Arg2:T4	
+R7	Contact Arg1:T8 Arg2:T2	

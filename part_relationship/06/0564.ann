@@ -1,0 +1,9 @@
+T6	Parts 20 24	戻しバネ
+T7	Parts 45 47	バネ
+T1	Parts 2 6	制動装置
+T2	Parts 11 19	制動操作用ペダル
+R1	Coreference Arg1:T7 Arg2:T6	
+T3	Parts 75 78	制動灯
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T6 Arg2:T2	
+R4	Connect Arg1:T1 Arg2:T3	

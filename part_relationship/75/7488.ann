@@ -1,0 +1,12 @@
+T1	Parts 0 6	大型トラクタ
+T2	Parts 7 16	運転者支援システム
+T3	Parts 37 48	運転者支援制御ユニット
+T5	Parts 64 74	ＡＢＳ無しトレーラー
+T6	Parts 79 89	衝突被害軽減ブレーキ
+T7	Parts 124 134	衝突被害軽減ブレーキ
+R1	Coreference Arg1:T6 Arg2:T7	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T3 Arg2:T2	
+R5	Contact Arg1:T1 Arg2:T5	
+R6	Part-Whole Arg1:T6 Arg2:T2	
+R7	Connect Arg1:T3 Arg2:T6	

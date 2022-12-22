@@ -1,0 +1,16 @@
+T1	Parts 0 8	フォーク・リフト
+T2	Parts 13 24	静油圧変速機（ＨＳＴ）
+T3	Parts 25 30	油圧モータ
+T4	Parts 36 44	作業機用油圧配管
+T5	Parts 52 57	ブラケット
+T6	Parts 74 77	モータ
+T7	Parts 84 89	ブラケット
+T8	Parts 126 131	ブラケット
+R1	Coreference Arg1:T3 Arg2:T6	
+R2	Coreference Arg1:T5 Arg2:T7	
+R3	Coreference Arg1:T7 Arg2:T8	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T3 Arg2:T2	
+R6	Contact Arg1:T3 Arg2:T4	
+R7	Contact Arg1:T4 Arg2:T5	
+R8	Contact Arg1:T3 Arg2:T5	

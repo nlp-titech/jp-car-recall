@@ -1,0 +1,26 @@
+T1	Parts 13 17	燃料装置
+T2	Parts 22 31	燃料リターンパイプ
+T3	Parts 54 58	エンジン
+T4	Parts 70 73	パイプ
+T5	Parts 74 79	アダプター
+T6	Parts 127 129	燃料
+T7	Parts 132 139	エンジンオイル
+T8	Parts 145 150	油圧警告灯
+T9	Parts 174 177	オイル
+T10	Parts 199 203	エンジン
+T11	Parts 155 160	警報ブザー
+T12	Parts 117 125	シリンダーヘッド
+T13	Parts 3 12	原動機型式ＧＨ１１
+R2	Coreference Arg1:T3 Arg2:T10	
+R3	Part-Whole Arg1:T1 Arg2:T13	
+R5	Part-Whole Arg1:T2 Arg2:T1	
+R6	Coreference Arg1:T7 Arg2:T9	
+R7	Coreference Arg1:T2 Arg2:T4	
+R8	Contact Arg1:T4 Arg2:T5	
+R1	Coreference Arg1:T13 Arg2:T3	
+R4	Part-Whole Arg1:T12 Arg2:T1	
+R9	Contact Arg1:T4 Arg2:T12	
+R10	Contact Arg1:T4 Arg2:T6	
+R11	Contact Arg1:T12 Arg2:T7	
+R12	Connect Arg1:T7 Arg2:T8	
+R13	Connect Arg1:T7 Arg2:T11	

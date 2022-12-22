@@ -1,0 +1,7 @@
+T1	Parts 0 3	後写鏡
+T2	Parts 31 34	反射鏡
+T3	Parts 55 58	反射鏡
+R1	Coreference Arg1:T3 Arg2:T2	
+T4	Parts 76 82	道路運送車両
+R2	Coreference Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T1 Arg2:T4	

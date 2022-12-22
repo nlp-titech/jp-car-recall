@@ -1,0 +1,8 @@
+T1	Parts 0 20	年少者用補助乗車装置（チャイルドシート）
+T4	Parts 42 55	ハーネスベルトアジャスター
+T5	Parts 30 34	肩ベルト
+T7	Parts 81 85	肩ベルト
+R1	Coreference Arg1:T5 Arg2:T7	
+R2	Part-Whole Arg1:T5 Arg2:T1	
+R3	Part-Whole Arg1:T4 Arg2:T1	
+R4	Contact Arg1:T5 Arg2:T4	

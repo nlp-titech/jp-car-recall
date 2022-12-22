@@ -1,0 +1,10 @@
+T8	Parts 0 6	車載専用荷台
+T9	Parts 7 12	上段後部床
+T10	Parts 93 98	上段後部床
+T14	Parts 82 84	継手
+R1	Part-Whole Arg1:T9 Arg2:T8	
+T2	Parts 24 35	摺動装置中央部連結継手
+R5	Coreference Arg1:T9 Arg2:T10	
+R2	Coreference Arg1:T14 Arg2:T2	
+R3	Contact Arg1:T2 Arg2:T9	
+R4	Part-Whole Arg1:T2 Arg2:T8	

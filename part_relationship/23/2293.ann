@@ -1,0 +1,7 @@
+T12	Parts 14 17	板ばね
+T13	Parts 32 34	ばね
+T14	Parts 80 82	ばね
+T1	Parts 0 9	タンクセミトレーラ
+R2	Part-Whole Arg1:T12 Arg2:T1	
+R3	Coreference Arg1:T13 Arg2:T12	
+R1	Coreference Arg1:T13 Arg2:T14	

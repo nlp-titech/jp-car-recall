@@ -1,0 +1,13 @@
+T1	Parts 0 7	ホーンスイッチ
+T2	Parts 79 86	ホーンスイッチ
+T3	Parts 8 14	ステアリング
+T4	Parts 87 93	ステアリング
+T5	Parts 50 55	エアバッグ
+T6	Parts 21 24	ボルト
+T7	Parts 71 74	ボルト
+R2	Contact Arg1:T6 Arg2:T3	
+R3	Contact Arg1:T6 Arg2:T1	
+R4	Coreference Arg1:T6 Arg2:T7	
+R5	Part-Whole Arg1:T2 Arg2:T4	
+R6	Coreference Arg1:T3 Arg2:T4	
+R1	Part-Whole Arg1:T5 Arg2:T3	

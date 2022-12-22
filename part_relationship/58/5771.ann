@@ -1,0 +1,12 @@
+T1	Parts 42 49	ブレーキパイプ
+T2	Parts 79 86	ブレーキパイプ
+T3	Parts 119 126	ブレーキパイプ
+T4	Parts 0 10	右フロントフェンダー
+T5	Parts 131 136	ブレーキ液
+T6	Parts 16 24	クーラントホース
+T8	Parts 38 41	ホース
+R1	Coreference Arg1:T6 Arg2:T8	
+R2	Coreference Arg1:T1 Arg2:T2	
+R3	Coreference Arg1:T2 Arg2:T3	
+R4	Contact Arg1:T3 Arg2:T5	
+R5	Part-Whole Arg1:T6 Arg2:T4	

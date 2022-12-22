@@ -1,0 +1,10 @@
+T10	Parts 8 18	クラッチ圧力センサー
+T11	Parts 43 45	ピン
+T1	Parts 0 3	変速機
+T2	Parts 33 37	センサー
+R1	Coreference Arg1:T2 Arg2:T10	
+T4	Parts 74 78	クラッチ
+R4	Part-Whole Arg1:T10 Arg2:T1	
+R5	Part-Whole Arg1:T11 Arg2:T2	
+R3	Connect Arg1:T1 Arg2:T4	
+R2	Connect Arg1:T2 Arg2:T4	

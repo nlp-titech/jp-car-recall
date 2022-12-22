@@ -1,0 +1,11 @@
+T14	Parts 110 114	モーター
+T10	Parts 61 68	モーターブラシ
+T15	Parts 5 9	モーター
+T1	Parts 0 4	窓拭き器
+T2	Parts 116 119	コイル
+T3	Parts 130 134	窓拭き器
+R1	Coreference Arg1:T1 Arg2:T3	
+R2	Coreference Arg1:T14 Arg2:T15	
+R3	Part-Whole Arg1:T15 Arg2:T1	
+R5	Part-Whole Arg1:T10 Arg2:T15	
+R6	Part-Whole Arg1:T2 Arg2:T14	

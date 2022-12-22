@@ -1,0 +1,25 @@
+T4	Parts 100 105	油圧ホース
+T5	Parts 155 158	オイル
+T8	Parts 54 57	オイル
+T11	Parts 50 53	前後輪
+T12	Parts 175 178	排気管
+T1	Parts 0 7	油圧式緩衝装置
+T7	Parts 8 32	油圧制御装置（アクティブ・ボディ・コントロール）
+T9	Parts 44 49	供給バルブ
+T2	Parts 62 69	分配ジョイント
+T3	Parts 74 82	高圧側油圧ホース
+T6	Parts 108 115	金属製メッシュ
+T10	Parts 171 174	オイル
+R1	Part-Whole Arg1:T7 Arg2:T1	
+R2	Coreference Arg1:T3 Arg2:T4	
+R3	Part-Whole Arg1:T6 Arg2:T4	
+R4	Part-Whole Arg1:T9 Arg2:T7	
+R5	Contact Arg1:T2 Arg2:T3	
+R6	Coreference Arg1:T8 Arg2:T5	
+R7	Coreference Arg1:T5 Arg2:T10	
+R8	Contact Arg1:T8 Arg2:T3	
+R9	Connect Arg1:T9 Arg2:T2	
+R10	Contact Arg1:T11 Arg2:T8	
+R11	Contact Arg1:T8 Arg2:T2	
+R12	Contact Arg1:T9 Arg2:T3	
+R13	Part-Whole Arg1:T2 Arg2:T7	

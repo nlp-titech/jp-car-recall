@@ -1,0 +1,12 @@
+T1	Parts 26 41	コントロールユニット（ＥＣＵ）
+T2	Parts 88 100	ＡＢＳコントロールバルブ
+T4	Parts 121 125	ブレーキ
+T5	Parts 18 21	ＡＢＳ
+T8	Parts 63 65	車輪
+T3	Parts 43 50	車輪速センサー
+R2	Connect Arg1:T1 Arg2:T3	
+R3	Part-Whole Arg1:T2 Arg2:T5	
+R5	Connect Arg1:T3 Arg2:T8	
+R1	Connect Arg1:T5 Arg2:T1	
+R6	Connect Arg1:T1 Arg2:T8	
+R4	Connect Arg1:T1 Arg2:T4	

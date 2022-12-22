@@ -1,0 +1,17 @@
+T18	Parts 31 40	トランスファケース
+T19	Parts 74 90	デファレンシャルサイドベアリング
+T20	Parts 102 107	ベアリング
+T21	Parts 137 142	ベアリング
+T22	Parts 147 153	オイルシール
+T3	Parts 18 30	トランスミッションケース
+T5	Parts 158 161	オイル
+R1	Coreference Arg1:T19 Arg2:T20	
+R2	Coreference Arg1:T20 Arg2:T21	
+T1	Parts 8 13	四輪駆動車
+R3	Part-Whole Arg1:T3 Arg2:T2	
+R4	Part-Whole Arg1:T18 Arg2:T1	
+R9	Contact Arg1:T22 Arg2:T21	
+R10	Contact Arg1:T5 Arg2:T22	
+T2	Parts 0 5	手動変速機
+R5	Part-Whole Arg1:T2 Arg2:T1	
+R6	Connect Arg1:T19 Arg2:T2	

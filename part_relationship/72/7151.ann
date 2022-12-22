@@ -1,0 +1,9 @@
+T1	Parts 105 110	エアバック
+T2	Parts 0 32	エアバッグ・コントロール・モジュール（エアバッグの展開制御装置）
+T5	Parts 86 90	電気回路
+T6	Parts 33 36	助手席
+R3	Part-Whole Arg1:T2 Arg2:T6	
+T7	Parts 78 83	モジュール
+R5	Part-Whole Arg1:T5 Arg2:T7	
+R1	Coreference Arg1:T2 Arg2:T7	
+R2	Connect Arg1:T7 Arg2:T1	

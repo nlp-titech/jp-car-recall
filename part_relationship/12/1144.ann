@@ -1,0 +1,26 @@
+T16	Parts 17 27	ストッパーリヤボデー
+T17	Parts 51 56	取付ボルト
+T18	Parts 107 112	取付ボルト
+T19	Parts 147 151	ブレーキ
+T20	Parts 125 132	ブレーキパイプ
+T21	Parts 57 66	リヤブレーキパイプ
+T22	Parts 113 120	ブレーキパイプ
+T1	Parts 0 5	リヤボデー
+T2	Parts 10 12	車両
+T3	Parts 40 50	ストッパーリヤボデー
+T4	Parts 73 75	車両
+T5	Parts 138 143	ブレーキ液
+R1	Coreference Arg1:T16 Arg2:T3	
+R2	Coreference Arg1:T2 Arg2:T4	
+R3	Coreference Arg1:T17 Arg2:T18	
+R5	Coreference Arg1:T22 Arg2:T20	
+R4	Coreference Arg1:T21 Arg2:T22	
+R6	Part-Whole Arg1:T1 Arg2:T2	
+R7	Contact Arg1:T16 Arg2:T1	
+R8	Contact Arg1:T17 Arg2:T3	
+R9	Contact Arg1:T21 Arg2:T1	
+R10	Contact Arg1:T5 Arg2:T20	
+R11	Connect Arg1:T19 Arg2:T20	
+R12	Part-Whole Arg1:T19 Arg2:T2	
+R13	Part-Whole Arg1:T21 Arg2:T4	
+R15	Part-Whole Arg1:T3 Arg2:T4	

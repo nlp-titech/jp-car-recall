@@ -1,0 +1,13 @@
+T1	Parts 9 16	電動燃料ポンプ
+T2	Parts 104 109	燃料ポンプ
+T3	Parts 127 131	エンジン
+T4	Parts 26 36	抵抗器（レジスター）
+T5	Parts 54 59	レジスター
+T6	Parts 94 99	レジスター
+T7	Parts 0 4	燃料装置
+R1	Part-Whole Arg1:T1 Arg2:T7	
+R2	Coreference Arg1:T4 Arg2:T5	
+R3	Contact Arg1:T4 Arg2:T1	
+R4	Coreference Arg1:T5 Arg2:T6	
+R5	Coreference Arg1:T1 Arg2:T2	
+R6	Connect Arg1:T7 Arg2:T3	

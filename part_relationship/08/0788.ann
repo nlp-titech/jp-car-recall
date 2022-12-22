@@ -1,0 +1,9 @@
+T1	Parts 8 14	前輪緩衝装置
+T2	Parts 15 20	ロアアーム
+T3	Parts 28 31	パイプ
+T4	Parts 77 80	パイプ
+R1	Coreference Arg1:T4 Arg2:T3	
+T5	Parts 0 4	警察車両
+R2	Part-Whole Arg1:T1 Arg2:T5	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T3 Arg2:T2	

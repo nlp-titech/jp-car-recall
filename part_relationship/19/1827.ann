@@ -1,0 +1,5 @@
+T2	Parts 31 34	とびら
+T4	Parts 10 22	旅客自動車運送事業用車両
+T1	Parts 27 30	乗降口
+R1	Part-Whole Arg1:T1 Arg2:T4	
+R2	Part-Whole Arg1:T2 Arg2:T1	

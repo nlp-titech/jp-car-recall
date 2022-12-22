@@ -1,0 +1,15 @@
+T3	Parts 70 75	燃料タンク
+T4	Parts 83 88	燃料タンク
+T5	Parts 99 104	燃料タンク
+T6	Parts 121 126	燃料タンク
+T7	Parts 34 37	シート
+T8	Parts 30 33	ホース
+T9	Parts 107 110	後車輪
+T10	Parts 131 133	燃料
+T1	Parts 0 16	燃料タンク内圧調整用ゴム製ホース
+R1	Coreference Arg1:T1 Arg2:T8	
+R2	Contact Arg1:T8 Arg2:T3	
+R3	Coreference Arg1:T3 Arg2:T4	
+R4	Coreference Arg1:T4 Arg2:T5	
+R5	Coreference Arg1:T5 Arg2:T6	
+R6	Part-Whole Arg1:T10 Arg2:T6	

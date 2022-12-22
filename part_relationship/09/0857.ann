@@ -1,0 +1,22 @@
+T1	Parts 0 22	プレッシャーレギュレータ（燃料圧力調整装置）
+T2	Parts 24 29	負圧ホース
+T3	Parts 46 57	インテークマニホールド
+T4	Parts 66 71	負圧ホース
+T5	Parts 73 85	プレッシャーレギュレータ
+R1	Coreference Arg1:T4 Arg2:T2	
+T6	Parts 107 111	エンジン
+T7	Parts 130 142	プレッシャーレギュレータ
+T8	Parts 157 161	エンジン
+T9	Parts 167 175	フューエルホース
+T10	Parts 176 184	フューエルパイプ
+T12	Parts 190 192	燃料
+R2	Coreference Arg1:T7 Arg2:T5	
+R3	Coreference Arg1:T5 Arg2:T1	
+R4	Coreference Arg1:T8 Arg2:T6	
+R5	Contact Arg1:T1 Arg2:T2	
+R6	Connect Arg1:T1 Arg2:T3	
+R7	Contact Arg1:T2 Arg2:T3	
+R8	Contact Arg1:T9 Arg2:T10	
+R9	Contact Arg1:T8 Arg2:T9	
+R10	Contact Arg1:T10 Arg2:T12	
+R11	Contact Arg1:T9 Arg2:T12	

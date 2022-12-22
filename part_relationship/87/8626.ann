@@ -1,0 +1,7 @@
+T1	Parts 0 5	中型教習車
+T2	Parts 10 17	大型後部反射器
+T3	Parts 34 37	反射器
+T4	Parts 65 72	大型後部反射器
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T2 Arg2:T3	
+R3	Coreference Arg1:T3 Arg2:T4	

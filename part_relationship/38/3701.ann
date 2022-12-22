@@ -1,0 +1,10 @@
+T1	Parts 2 12	小型ノンステップバス
+T2	Parts 13 20	スタータリレー
+T3	Parts 42 46	スタータ
+T4	Parts 113 117	スタータ
+R3	Part-Whole Arg1:T3 Arg2:T1	
+R6	Coreference Arg1:T4 Arg2:T3	
+#1	AnnotatorNotes T2	スタータリレー（スターターリレー）
+#2	AnnotatorNotes T3	スタータ（スターター）
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Connect Arg1:T2 Arg2:T3	

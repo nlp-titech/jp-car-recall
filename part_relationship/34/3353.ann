@@ -1,0 +1,17 @@
+T18	Parts 134 142	プロペラシャフト
+T19	Parts 125 129	フレーム
+T20	Parts 73 76	ボルト
+T21	Parts 34 37	ボルト
+T22	Parts 120 124	固定金具
+T1	Parts 0 6	動力伝達装置
+T2	Parts 11 24	センターベアリング固定金具
+T3	Parts 25 29	フレーム
+R1	Coreference Arg1:T21 Arg2:T20	
+R2	Coreference Arg1:T2 Arg2:T22	
+R3	Coreference Arg1:T3 Arg2:T19	
+R4	Part-Whole Arg1:T18 Arg2:T1	
+R5	Contact Arg1:T2 Arg2:T3	
+R6	Contact Arg1:T2 Arg2:T21	
+R7	Contact Arg1:T3 Arg2:T21	
+R10	Contact Arg1:T19 Arg2:T18	
+R8	Contact Arg1:T22 Arg2:T18	

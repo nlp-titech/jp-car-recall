@@ -1,0 +1,17 @@
+T1	Parts 84 96	パワーステアリングオイル
+T2	Parts 129 141	パワーステアリングオイル
+T3	Parts 13 20	リターンホース
+T4	Parts 47 54	リターンホース
+T7	Parts 0 8	右ハンドル仕様車
+T8	Parts 100 104	ハンドル
+T9	Parts 33 37	排気装置
+T10	Parts 157 159	車両
+T11	Parts 142 147	排気系部品
+R1	Coreference Arg1:T3 Arg2:T4	
+R2	Coreference Arg1:T1 Arg2:T2	
+R3	Coreference Arg1:T7 Arg2:T10	
+R4	Part-Whole Arg1:T3 Arg2:T7	
+R5	Part-Whole Arg1:T9 Arg2:T7	
+R6	Contact Arg1:T4 Arg2:T1	
+R7	Part-Whole Arg1:T8 Arg2:T7	
+R8	Part-Whole Arg1:T11 Arg2:T9	

@@ -1,0 +1,8 @@
+T4	Parts 38 44	道路運送車両
+T5	Parts 29 35	突入防止装置
+T6	Parts 10 16	突入防止装置
+T1	Parts 0 2	車体
+R1	Coreference Arg1:T6 Arg2:T5	
+R2	Contact Arg1:T1 Arg2:T6	
+R3	Part-Whole Arg1:T1 Arg2:T4	
+R4	Part-Whole Arg1:T5 Arg2:T4	

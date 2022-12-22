@@ -1,0 +1,17 @@
+T1	Parts 35 40	取付ボルト
+T3	Parts 9 13	運転者席
+T4	Parts 0 4	乗車装置
+T5	Parts 14 18	背もたれ
+T7	Parts 111 115	背もたれ
+T8	Parts 79 82	ボルト
+T9	Parts 103 106	ボルト
+T10	Parts 19 29	背もたれ角度調整装置
+R1	Coreference Arg1:T8 Arg2:T1	
+R2	Coreference Arg1:T9 Arg2:T8	
+R3	Coreference Arg1:T7 Arg2:T5	
+R4	Contact Arg1:T1 Arg2:T10	
+R5	Contact Arg1:T1 Arg2:T5	
+R6	Contact Arg1:T10 Arg2:T5	
+R7	Part-Whole Arg1:T5 Arg2:T3	
+R8	Part-Whole Arg1:T10 Arg2:T3	
+R9	Part-Whole Arg1:T3 Arg2:T4	

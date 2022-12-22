@@ -1,0 +1,13 @@
+T1	Parts 9 22	ブレーキマスターシリンダー
+T2	Parts 76 83	ブレーキペダル
+T3	Parts 62 68	後輪ブレーキ
+T4	Parts 90 96	前輪ブレーキ
+T5	Parts 0 4	制動装置
+T6	Parts 38 45	ストップボルト
+R1	Part-Whole Arg1:T1 Arg2:T5	
+R4	Contact Arg1:T1 Arg2:T6	
+R5	Part-Whole Arg1:T3 Arg2:T5	
+R6	Part-Whole Arg1:T4 Arg2:T5	
+R2	Connect Arg1:T1 Arg2:T2	
+R3	Connect Arg1:T1 Arg2:T3	
+R7	Connect Arg1:T1 Arg2:T4	

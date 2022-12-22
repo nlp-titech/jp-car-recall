@@ -1,0 +1,11 @@
+T1	Parts 0 17	メーターパネルコントロールユニット
+T3	Parts 39 46	メーターパネル
+T4	Parts 18 23	プログラム
+T5	Parts 31 35	エンジン
+T6	Parts 70 73	警告灯
+T7	Parts 65 68	速度計
+R1	Part-Whole Arg1:T4 Arg2:T1	
+R2	Connect Arg1:T3 Arg2:T1	
+R3	Part-Whole Arg1:T7 Arg2:T3	
+R4	Part-Whole Arg1:T6 Arg2:T3	
+R5	Connect Arg1:T3 Arg2:T5	

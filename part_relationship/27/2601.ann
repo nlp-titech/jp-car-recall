@@ -1,0 +1,7 @@
+T1	Parts 0 12	フロントワイパーモーター
+T2	Parts 17 25	アースターミナル
+T3	Parts 43 51	アースターミナル
+T4	Parts 68 76	フロントワイパー
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T2 Arg2:T3	
+R3	Connect Arg1:T1 Arg2:T4	

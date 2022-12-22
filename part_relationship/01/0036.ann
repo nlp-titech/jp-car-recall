@@ -1,0 +1,18 @@
+T1	Parts 0 2	前輪
+T2	Parts 3 8	ロアア－ム
+T3	Parts 9 16	ナックルア－ム
+T5	Parts 75 85	ロアボ－ルジョイント
+T6	Parts 86 92	樹脂製シ－ト
+T7	Parts 106 116	ロアボ－ルジョイント
+T8	Parts 117 124	ナックルア－ム
+R1	Coreference Arg1:T7 Arg2:T5	
+R3	Coreference Arg1:T3 Arg2:T8	
+T4	Parts 23 37	継手（ロアボ－ルジョイント）
+R2	Coreference Arg1:T4 Arg2:T5	
+R4	Connect Arg1:T2 Arg2:T1	
+R5	Connect Arg1:T3 Arg2:T1	
+R6	Contact Arg1:T2 Arg2:T3	
+R7	Contact Arg1:T2 Arg2:T4	
+R8	Contact Arg1:T4 Arg2:T3	
+R9	Part-Whole Arg1:T6 Arg2:T5	
+R10	Connect Arg1:T4 Arg2:T1	

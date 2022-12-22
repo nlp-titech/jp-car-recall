@@ -1,0 +1,11 @@
+T1	Parts 1 4	原動機
+T2	Parts 17 25	吸入空気予熱装置
+T3	Parts 30 38	プレヒータリレー
+T4	Parts 63 67	回路基板
+T5	Parts 120 125	リレー回路
+T6	Parts 154 162	プレヒータリレー
+R1	Coreference Arg1:T3 Arg2:T6	
+R2	Coreference Arg1:T4 Arg2:T5	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T3 Arg2:T2	
+R5	Part-Whole Arg1:T4 Arg2:T3	

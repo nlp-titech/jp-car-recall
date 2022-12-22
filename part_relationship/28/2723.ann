@@ -1,0 +1,9 @@
+T1	Parts 1 8	刈取脱穀作業車
+T2	Parts 13 16	警音器
+T4	Parts 39 42	警音器
+T6	Parts 61 64	警音器
+R1	Coreference Arg1:T2 Arg2:T4	
+R2	Coreference Arg1:T4 Arg2:T6	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+T3	Parts 27 30	通気孔
+R4	Part-Whole Arg1:T3 Arg2:T2	

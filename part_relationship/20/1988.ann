@@ -1,0 +1,11 @@
+T10	Parts 32 56	インナースリーブ取付け部（トランスファーカバー）
+T11	Parts 65 73	インナースリーブ
+T12	Parts 14 20	制動油圧回路
+T1	Parts 0 6	動力伝達装置
+T2	Parts 25 27	回路
+R1	Coreference Arg1:T2 Arg2:T12	
+T3	Parts 98 101	制動液
+R2	Part-Whole Arg1:T12 Arg2:T1	
+R3	Part-Whole Arg1:T10 Arg2:T2	
+R4	Contact Arg1:T10 Arg2:T11	
+R5	Contact Arg1:T3 Arg2:T2	

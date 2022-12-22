@@ -1,0 +1,3 @@
+T3	Parts 0 4	エンジン
+T4	Parts 5 16	燃料供給制御プログラム
+R1	Connect Arg1:T3 Arg2:T4	

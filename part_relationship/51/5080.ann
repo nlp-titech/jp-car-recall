@@ -1,0 +1,7 @@
+T1	Parts 1 10	リヤサスペンション
+T2	Parts 11 16	ロアアーム
+T3	Parts 62 67	ロアアーム
+T4	Parts 17 20	補強材
+R1	Coreference Arg1:T3 Arg2:T2	
+R2	Contact Arg1:T4 Arg2:T2	
+R3	Part-Whole Arg1:T2 Arg2:T1	

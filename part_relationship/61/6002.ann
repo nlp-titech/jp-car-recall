@@ -1,0 +1,4 @@
+T1	Parts 15 20	エアバッグ
+T2	Parts 0 8	助手席サンバイザ
+T3	Parts 21 26	警告ラベル
+R1	Contact Arg1:T2 Arg2:T3	

@@ -1,0 +1,15 @@
+T1	Parts 0 7	走行用油圧配管
+T2	Parts 12 18	配管固定金具
+T3	Parts 19 22	ボルト
+T4	Parts 41 45	配管継手
+T5	Parts 63 65	車体
+T6	Parts 74 77	ボルト
+T7	Parts 81 85	配管継手
+T8	Parts 120 123	作動油
+R1	Coreference Arg1:T7 Arg2:T4	
+R2	Coreference Arg1:T6 Arg2:T3	
+R3	Contact Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T3 Arg2:T2	
+R5	Contact Arg1:T4 Arg2:T1	
+R6	Contact Arg1:T1 Arg2:T5	
+R7	Contact Arg1:T1 Arg2:T8	

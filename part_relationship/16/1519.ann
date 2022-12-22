@@ -1,0 +1,10 @@
+T1	Parts 0 2	前輪
+T2	Parts 5 7	後輪
+T3	Parts 9 17	ホイールキャップ
+T4	Parts 30 38	ホイールキャップ
+R1	Coreference Arg1:T4 Arg2:T3	
+T5	Parts 46 48	車体
+T6	Parts 49 54	フェンダー
+R2	Part-Whole Arg1:T3 Arg2:T2	
+R3	Part-Whole Arg1:T3 Arg2:T1	
+R6	Part-Whole Arg1:T6 Arg2:T5	

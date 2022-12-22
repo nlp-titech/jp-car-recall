@@ -1,0 +1,13 @@
+T8	Parts 96 99	ＡＢＳ
+T9	Parts 33 43	コントロールユニット
+T10	Parts 46 50	素子電極
+T11	Parts 79 81	電極
+T12	Parts 110 113	ＡＢＳ
+T1	Parts 0 4	制動装置
+T2	Parts 5 32	制動力制御装置（ＡＢＳ：アンチロックブレーキシステム）
+R1	Coreference Arg1:T11 Arg2:T10	
+R2	Coreference Arg1:T8 Arg2:T2	
+R3	Coreference Arg1:T12 Arg2:T8	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T9 Arg2:T2	
+R6	Part-Whole Arg1:T10 Arg2:T9	

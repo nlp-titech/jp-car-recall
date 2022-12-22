@@ -1,0 +1,9 @@
+T1	Parts 6 12	操作スイッチ
+T2	Parts 0 5	方向指示器
+T3	Parts 90 95	方向指示器
+T4	Parts 64 68	スイッチ
+T7	Parts 17 27	接点ブレード支持基板
+R1	Coreference Arg1:T4 Arg2:T1	
+R3	Coreference Arg1:T3 Arg2:T2	
+R4	Connect Arg1:T1 Arg2:T2	
+R5	Part-Whole Arg1:T7 Arg2:T1	

@@ -1,0 +1,19 @@
+T1	Parts 173 181	エアバッグ警告灯
+T3	Parts 186 194	運転席エアバッグ
+T4	Parts 211 219	運転席エアバッグ
+T6	Parts 94 100	ステアリング
+T13	Parts 161 164	ホーン
+T16	Parts 117 119	配線
+T5	Parts 0 10	ステアリング・コラム
+T2	Parts 17 76	クロック・スプリング（運転席エアバッグ、ホーン、オート・スピード・コントロール機能を作動させるためのリボン状電気配線）
+T7	Parts 106 116	クロック・スプリング
+T8	Parts 147 155	ホーン・スイッチ
+R1	Contact Arg1:T5 Arg2:T2	
+R2	Coreference Arg1:T2 Arg2:T7	
+R3	Part-Whole Arg1:T16 Arg2:T7	
+R4	Connect Arg1:T8 Arg2:T13	
+R5	Coreference Arg1:T3 Arg2:T4	
+R7	Connect Arg1:T16 Arg2:T8	
+R9	Connect Arg1:T16 Arg2:T3	
+R6	Contact Arg1:T5 Arg2:T6	
+R8	Connect Arg1:T1 Arg2:T3	

@@ -1,0 +1,6 @@
+T1	Parts 6 11	燃料パイプ
+T3	Parts 0 3	原動機
+T4	Parts 43 45	燃料
+R1	Contact Arg1:T1 Arg2:T4	
+T2	Parts 13 15	継手
+R2	Contact Arg1:T1 Arg2:T2	

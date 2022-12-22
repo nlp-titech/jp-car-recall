@@ -1,0 +1,19 @@
+T1	Parts 0 4	エンジン
+T2	Parts 8 14	キースイッチ
+T3	Parts 15 17	配線
+T4	Parts 23 29	キースイッチ
+T5	Parts 37 40	ボルト
+T6	Parts 41 45	ワッシャ
+T7	Parts 75 78	ボルト
+T8	Parts 96 100	エンジン
+T9	Parts 108 112	エンジン
+R1	Coreference Arg1:T9 Arg2:T8	
+R2	Coreference Arg1:T7 Arg2:T5	
+R3	Coreference Arg1:T4 Arg2:T2	
+R4	Coreference Arg1:T1 Arg2:T8	
+R5	Connect Arg1:T1 Arg2:T2	
+R9	Contact Arg1:T3 Arg2:T5	
+R10	Contact Arg1:T5 Arg2:T6	
+R7	Contact Arg1:T4 Arg2:T5	
+R8	Contact Arg1:T4 Arg2:T6	
+R6	Contact Arg1:T2 Arg2:T3	

@@ -1,0 +1,11 @@
+T1	Parts 0 7	ワイパーモータ
+T2	Parts 12 18	防水シール材
+T3	Parts 37 40	モータ
+R1	Coreference Arg1:T3 Arg2:T1	
+T4	Parts 54 58	電気回路
+T5	Parts 74 78	電気回路
+R2	Coreference Arg1:T5 Arg2:T4	
+T6	Parts 105 109	ワイパー
+R4	Connect Arg1:T6 Arg2:T3	
+R5	Contact Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T4 Arg2:T3	

@@ -1,0 +1,8 @@
+T2	Parts 91 95	スイッチ
+T3	Parts 0 12	ブレーキランプ・スイッチ
+T4	Parts 125 136	フットブレーキ・ペダル
+T7	Parts 107 110	制動灯
+T1	Parts 142 152	クルーズコントロール
+R1	Coreference Arg1:T3 Arg2:T2	
+R2	Connect Arg1:T2 Arg2:T7	
+R3	Connect Arg1:T4 Arg2:T1	

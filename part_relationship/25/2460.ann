@@ -1,0 +1,14 @@
+T14	Parts 0 10	尾灯（テールランプ）
+T22	Parts 62 65	リレー
+T23	Parts 41 50	テールランプリレー
+T25	Parts 129 131	尾灯
+T1	Parts 11 23	前部霧灯（フォグランプ）
+T2	Parts 25 28	路肩灯
+T3	Parts 29 33	電気回路
+R1	Coreference Arg1:T25 Arg2:T14	
+R2	Coreference Arg1:T22 Arg2:T23	
+R3	Connect Arg1:T14 Arg2:T23	
+R4	Contact Arg1:T14 Arg2:T3	
+R5	Contact Arg1:T1 Arg2:T3	
+R6	Contact Arg1:T2 Arg2:T3	
+R7	Contact Arg1:T3 Arg2:T23	

@@ -1,0 +1,22 @@
+T15	Parts 57 62	チャンバー
+T16	Parts 20 25	チャンバー
+T17	Parts 28 36	ホイールシリンダ
+T18	Parts 64 72	ホイールシリンダ
+T19	Parts 107 115	ホイールシリンダ
+T21	Parts 145 151	駐車ブレーキ
+T22	Parts 119 123	ウェッジ
+T1	Parts 0 15	スプリング式駐車ブレーキ装着車
+T3	Parts 42 46	シール材
+R1	Coreference Arg1:T19 Arg2:T18	
+R2	Coreference Arg1:T15 Arg2:T16	
+R3	Coreference Arg1:T18 Arg2:T17	
+R4	Contact Arg1:T16 Arg2:T17	
+R5	Contact Arg1:T16 Arg2:T3	
+R6	Contact Arg1:T17 Arg2:T3	
+R7	Part-Whole Arg1:T15 Arg2:T22	
+R9	Part-Whole Arg1:T19 Arg2:T21	
+R10	Part-Whole Arg1:T21 Arg2:T1	
+R11	Part-Whole Arg1:T16 Arg2:T1	
+R12	Part-Whole Arg1:T17 Arg2:T1	
+#1	AnnotatorNotes T15	ウェッジチャンバーのことと推測
+R13	Part-Whole Arg1:T22 Arg2:T21	

@@ -1,0 +1,20 @@
+T1	Parts 0 12	バッテリ式フォークリフト
+T2	Parts 13 20	アクセルペダル
+T3	Parts 25 34	アクセル開度センサ
+T4	Parts 37 39	磁石
+T5	Parts 40 43	センサ
+T6	Parts 69 76	アクセルペダル
+T7	Parts 87 89	磁石
+T8	Parts 122 124	磁石
+T9	Parts 128 135	アクセルペダル
+T10	Parts 147 149	車両
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Connect Arg1:T3 Arg2:T2	
+R3	Part-Whole Arg1:T3 Arg2:T1	
+R4	Part-Whole Arg1:T4 Arg2:T3	
+R5	Coreference Arg1:T5 Arg2:T3	
+R6	Coreference Arg1:T6 Arg2:T2	
+R7	Coreference Arg1:T7 Arg2:T4	
+R8	Coreference Arg1:T8 Arg2:T7	
+R9	Coreference Arg1:T9 Arg2:T6	
+R10	Coreference Arg1:T1 Arg2:T10	

@@ -1,0 +1,6 @@
+T1	Parts 0 4	緩衝装置
+T2	Parts 9 20	右側フロントロアアーム
+T3	Parts 55 60	ロアアーム
+T4	Parts 75 79	ハンドル
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Part-Whole Arg1:T2 Arg2:T1	

@@ -1,0 +1,20 @@
+T1	Parts 9 18	ステアリングコラム
+T2	Parts 33 42	ステアリングコラム
+T3	Parts 67 76	ステアリングコラム
+T4	Parts 93 101	エアバッグ警告灯
+T5	Parts 123 128	エアバッグ
+T6	Parts 59 63	ハンドル
+T7	Parts 117 121	運転者席
+T8	Parts 0 4	電気装置
+T9	Parts 145 148	警音器
+T10	Parts 154 157	警音器
+T11	Parts 78 80	配線
+R2	Coreference Arg1:T1 Arg2:T2	
+R3	Coreference Arg1:T2 Arg2:T3	
+R4	Part-Whole Arg1:T11 Arg2:T3	
+R6	Connect Arg1:T4 Arg2:T5	
+R8	Connect Arg1:T3 Arg2:T6	
+R9	Coreference Arg1:T9 Arg2:T10	
+R5	Connect Arg1:T4 Arg2:T11	
+R7	Connect Arg1:T9 Arg2:T11	
+R1	Part-Whole Arg1:T11 Arg2:T8	

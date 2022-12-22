@@ -1,0 +1,17 @@
+T6	Parts 107 110	警告灯
+T1	Parts 0 20	燃料電池制御コンピュータ（ＦＣ‐ＥＣＵ）
+T5	Parts 25 33	燃料電池スタック
+T4	Parts 51 58	高電圧バッテリ
+T7	Parts 64 72	燃料電池スタック
+T8	Parts 80 88	燃料電池スタック
+T3	Parts 120 128	燃料電池システム
+T2	Parts 34 43	故障検知プログラム
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T5 Arg2:T7	
+R3	Coreference Arg1:T7 Arg2:T8	
+R4	Part-Whole Arg1:T1 Arg2:T3	
+R5	Connect Arg1:T2 Arg2:T5	
+R6	Connect Arg1:T5 Arg2:T1	
+R7	Connect Arg1:T1 Arg2:T6	
+R9	Connect Arg1:T4 Arg2:T7	
+R8	Part-Whole Arg1:T7 Arg2:T3	

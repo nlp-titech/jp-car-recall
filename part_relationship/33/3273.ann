@@ -1,0 +1,13 @@
+T1	Parts 0 2	バス
+T2	Parts 3 9	かじ取り装置
+T3	Parts 14 21	ドラッグリンク
+T4	Parts 22 35	タイロッドアーム固定ボルト
+T5	Parts 45 49	ハンドル
+T6	Parts 61 68	ドラッグリンク
+T7	Parts 71 74	ボルト
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T4 Arg2:T7	
+R3	Coreference Arg1:T3 Arg2:T6	
+R4	Connect Arg1:T5 Arg2:T2	
+R5	Part-Whole Arg1:T3 Arg2:T2	
+R7	Part-Whole Arg1:T5 Arg2:T1	

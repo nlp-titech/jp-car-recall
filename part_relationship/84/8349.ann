@@ -1,0 +1,11 @@
+T1	Parts 0 14	エンジンコントロールユニット
+T2	Parts 15 22	制御プログラム
+T3	Parts 27 29	車両
+T5	Parts 89 96	メーターパネル
+T6	Parts 98 110	エンジン警告灯（ＭＩＬ）
+T7	Parts 120 124	シリンダ
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T1 Arg2:T3	
+R4	Part-Whole Arg1:T5 Arg2:T3	
+R5	Part-Whole Arg1:T6 Arg2:T5	
+R6	Part-Whole Arg1:T7 Arg2:T3	

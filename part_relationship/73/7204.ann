@@ -1,0 +1,13 @@
+T2	Parts 50 58	リードスクリュー
+T3	Parts 15 23	リードスクリュー
+T5	Parts 0 2	車両
+T6	Parts 108 110	車両
+T7	Parts 10 14	ジャッキ
+R1	Part-Whole Arg1:T7 Arg2:T5	
+T1	Parts 36 40	ジャッキ
+R2	Part-Whole Arg1:T3 Arg2:T7	
+R3	Coreference Arg1:T7 Arg2:T1	
+R4	Coreference Arg1:T3 Arg2:T2	
+R5	Coreference Arg1:T5 Arg2:T6	
+T4	Parts 92 96	ジャッキ
+R6	Coreference Arg1:T1 Arg2:T4	

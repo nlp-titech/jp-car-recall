@@ -1,0 +1,11 @@
+T1	Parts 0 7	ショベルローダ
+T2	Parts 77 83	燃料噴射装置
+T3	Parts 8 15	低圧燃料パイプ
+T4	Parts 106 110	エンジン
+T5	Parts 94 96	燃料
+R1	Part-Whole Arg1:T4 Arg2:T1	
+R2	Contact Arg1:T3 Arg2:T5	
+R3	Contact Arg1:T2 Arg2:T5	
+R5	Part-Whole Arg1:T3 Arg2:T1	
+R6	Contact Arg1:T3 Arg2:T2	
+R4	Part-Whole Arg1:T2 Arg2:T4	

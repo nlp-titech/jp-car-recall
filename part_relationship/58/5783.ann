@@ -1,0 +1,18 @@
+T1	Parts 85 97	パワーステアリングオイル
+T2	Parts 130 142	パワーステアリングオイル
+T3	Parts 0 13	パワーステアリング油圧配管
+T4	Parts 51 58	リターンホース
+T7	Parts 101 105	ハンドル
+T9	Parts 18 21	ホース
+T10	Parts 158 160	車両
+T12	Parts 37 39	配管
+R2	Coreference Arg1:T1 Arg2:T2	
+R1	Coreference Arg1:T3 Arg2:T12	
+R3	Oneway-Coreference Arg1:T9 Arg2:T4	
+#1	AnnotatorNotes R3	Oneway-CoreferensかPart-Wholeのほうがいいか
+R4	Part-Whole Arg1:T9 Arg2:T3	
+R5	Contact Arg1:T4 Arg2:T1	
+R6	Part-Whole Arg1:T12 Arg2:T10	
+R7	Part-Whole Arg1:T7 Arg2:T10	
+T5	Parts 143 148	排気系部品
+R8	Part-Whole Arg1:T5 Arg2:T10	

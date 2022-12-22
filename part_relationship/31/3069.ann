@@ -1,0 +1,8 @@
+T1	Parts 0 29	前方障害物衝突軽減装置（プリクラッシュセーフティシステム）
+T3	Parts 44 52	障害物検知ソフト
+T4	Parts 95 101	自動ブレーキ
+R3	Part-Whole Arg1:T3 Arg2:T1	
+R4	Connect Arg1:T4 Arg2:T1	
+T2	Parts 34 41	ミリ波レーダー
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Connect Arg1:T2 Arg2:T3	

@@ -1,0 +1,14 @@
+T1	Parts 11 17	シートベルト
+T2	Parts 27 32	固定ボルト
+T3	Parts 44 51	エンドマウント
+T4	Parts 96 103	エンドマウント
+T5	Parts 90 93	ボルト
+T7	Parts 0 10	２列目及び３列目座席
+T8	Parts 22 25	ピラー
+R1	Coreference Arg1:T4 Arg2:T3	
+R2	Coreference Arg1:T5 Arg2:T2	
+R3	Contact Arg1:T2 Arg2:T8	
+R4	Contact Arg1:T8 Arg2:T1	
+R5	Contact Arg1:T3 Arg2:T1	
+R6	Contact Arg1:T3 Arg2:T7	
+R7	Contact Arg1:T1 Arg2:T7	

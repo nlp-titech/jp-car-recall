@@ -1,0 +1,9 @@
+T1	Parts 13 23	リヤアクスルシャフト
+T2	Parts 46 50	フランジ
+T3	Parts 86 90	シャフト
+R1	Coreference Arg1:T3 Arg2:T1	
+R3	Contact Arg1:T1 Arg2:T2	
+T4	Parts 6 12	大型トラック
+R2	Part-Whole Arg1:T1 Arg2:T4	
+T5	Parts 0 5	後１軸駆動
+R4	Part-Whole Arg1:T5 Arg2:T4	

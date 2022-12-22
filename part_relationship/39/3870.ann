@@ -1,0 +1,7 @@
+T1	Parts 11 22	フロントブレーキホース
+T2	Parts 36 39	ホース
+T3	Parts 65 68	ホース
+T4	Parts 0 6	大型トラクタ
+R1	Coreference Arg1:T3 Arg2:T2	
+R2	Coreference Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T1 Arg2:T4	

@@ -1,0 +1,10 @@
+T14	Parts 112 116	エンジン
+T15	Parts 80 86	ファンベルト
+T16	Parts 93 101	テンションプーリ
+T17	Parts 32 40	テンションアーム
+T1	Parts 0 15	ラジエーター冷却用ファンベルト
+R1	Coreference Arg1:T1 Arg2:T15	
+R3	Contact Arg1:T1 Arg2:T17	
+R4	Contact Arg1:T15 Arg2:T16	
+R2	Connect Arg1:T15 Arg2:T14	
+R5	Part-Whole Arg1:T16 Arg2:T14	

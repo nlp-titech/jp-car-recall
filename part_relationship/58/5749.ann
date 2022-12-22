@@ -1,0 +1,14 @@
+T1	Parts 0 13	パワーステアリングシステム
+T2	Parts 39 51	ステアリングギヤボックス
+T3	Parts 106 115	パワーステアリング
+T4	Parts 31 38	リターンパイプ
+T5	Parts 62 69	リターンパイプ
+T6	Parts 26 30	フル―ド
+R1	Coreference Arg1:T4 Arg2:T5	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R4	Contact Arg1:T6 Arg2:T4	
+T7	Parts 75 79	フル―ド
+R5	Coreference Arg1:T6 Arg2:T7	
+R6	Part-Whole Arg1:T4 Arg2:T1	
+R3	Part-Whole Arg1:T3 Arg2:T1	
+R7	Part-Whole Arg1:T6 Arg2:T1	

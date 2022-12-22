@@ -1,0 +1,31 @@
+T16	Parts 29 34	ブラケット
+T17	Parts 62 67	ブラケット
+T18	Parts 93 98	ブラケット
+T19	Parts 138 145	ブレーキパイプ
+T1	Parts 0 4	緩衝装置
+T2	Parts 9 21	リヤーショックアブソーバ
+T3	Parts 22 24	車枠
+R1	Coreference Arg1:T17 Arg2:T16	
+R2	Coreference Arg1:T18 Arg2:T17	
+T4	Parts 103 105	車枠
+R3	Coreference Arg1:T4 Arg2:T3	
+T5	Parts 125 130	ブラケット
+R4	Coreference Arg1:T5 Arg2:T18	
+T6	Parts 150 155	ブレーキ液
+T7	Parts 159 163	警報装置
+R5	Part-Whole Arg1:T2 Arg2:T1	
+R6	Contact Arg1:T3 Arg2:T2	
+R7	Contact Arg1:T2 Arg2:T16	
+R8	Contact Arg1:T3 Arg2:T16	
+R9	Contact Arg1:T19 Arg2:T5	
+R10	Contact Arg1:T6 Arg2:T19	
+T8	Parts 191 202	ＦＲ型２５トントラック
+T9	Parts 203 212	リーフスプリング車
+R12	Part-Whole Arg1:T9 Arg2:T8	
+R13	Part-Whole Arg1:T1 Arg2:T9	
+R14	Part-Whole Arg1:T3 Arg2:T9	
+R15	Part-Whole Arg1:T16 Arg2:T9	
+R16	Part-Whole Arg1:T19 Arg2:T9	
+R17	Part-Whole Arg1:T6 Arg2:T9	
+R18	Part-Whole Arg1:T7 Arg2:T9	
+R11	Connect Arg1:T6 Arg2:T7	

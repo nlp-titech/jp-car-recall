@@ -1,0 +1,8 @@
+T1	Parts 0 21	ギヤ比可変ステアリングシステム（ＶＧＲＳ）
+T2	Parts 26 33	制御プログラム
+T3	Parts 41 45	ハンドル
+T4	Parts 63 67	ハンドル
+T6	Parts 76 79	前照灯
+R1	Coreference Arg1:T4 Arg2:T3	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Connect Arg1:T1 Arg2:T3	

@@ -1,0 +1,7 @@
+T6	Parts 8 16	車速信号用アンプ
+T7	Parts 23 27	内部素子
+T8	Parts 37 39	素子
+T1	Parts 0 3	速度計
+R1	Coreference Arg1:T8 Arg2:T7	
+R2	Part-Whole Arg1:T6 Arg2:T1	
+R3	Part-Whole Arg1:T7 Arg2:T6	

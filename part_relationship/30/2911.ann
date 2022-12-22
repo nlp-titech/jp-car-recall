@@ -1,0 +1,29 @@
+T1	Parts 1 4	乗降扉
+T3	Parts 41 42	扉
+T4	Parts 50 58	検知器（光電管）
+T5	Parts 78 79	扉
+R1	Coreference Arg1:T5 Arg2:T3	
+T6	Parts 97 98	扉
+R2	Coreference Arg1:T6 Arg2:T5	
+T8	Parts 107 115	検知器（光電管）
+R3	Coreference Arg1:T8 Arg2:T4	
+T9	Parts 129 132	乗降扉
+R4	Coreference Arg1:T9 Arg2:T6	
+T10	Parts 142 143	扉
+R5	Coreference Arg1:T10 Arg2:T9	
+T11	Parts 152 155	ブザー
+T12	Parts 166 169	検知器
+T13	Parts 182 185	ブザー
+T14	Parts 197 198	扉
+T15	Parts 209 210	扉
+T16	Parts 233 236	検知器
+T17	Parts 244 245	扉
+R6	Coreference Arg1:T12 Arg2:T8	
+R7	Coreference Arg1:T13 Arg2:T11	
+R8	Coreference Arg1:T14 Arg2:T10	
+R9	Coreference Arg1:T15 Arg2:T14	
+R10	Coreference Arg1:T16 Arg2:T12	
+R11	Coreference Arg1:T17 Arg2:T15	
+R12	Coreference Arg1:T3 Arg2:T1	
+T2	Parts 5 14	開閉制御プログラム
+R13	Part-Whole Arg1:T2 Arg2:T1	

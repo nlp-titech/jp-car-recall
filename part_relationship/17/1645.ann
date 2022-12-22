@@ -1,0 +1,12 @@
+T12	Parts 52 58	制御ユニット
+T13	Parts 60 65	コンデンサ
+T16	Parts 178 182	ブレーキ
+T17	Parts 104 111	ブレーキペダル
+T18	Parts 0 35	車両挙動安定化制御システム（ビークル・スタビリティ・アシスト：ＶＳＡ）
+T20	Parts 122 125	センサ
+T2	Parts 143 151	ブレーキアシスト
+T3	Parts 166 169	制動灯
+R1	Part-Whole Arg1:T13 Arg2:T12	
+R2	Connect Arg1:T16 Arg2:T17	
+R3	Connect Arg1:T20 Arg2:T17	
+R4	Connect Arg1:T20 Arg2:T13	

@@ -1,0 +1,14 @@
+T1	Parts 0 8	車体後方フレーム
+T2	Parts 13 23	エンジン始動用モータ
+T3	Parts 24 28	バッテリ
+T4	Parts 32 38	電気ハーネス
+T5	Parts 95 101	電気ハーネス
+R1	Coreference Arg1:T4 Arg2:T5	
+T6	Parts 102 106	フレーム
+R2	Coreference Arg1:T1 Arg2:T6	
+R3	Contact Arg1:T2 Arg2:T1	
+R4	Contact Arg1:T3 Arg2:T1	
+R5	Contact Arg1:T4 Arg2:T1	
+R6	Contact Arg1:T4 Arg2:T3	
+R7	Contact Arg1:T4 Arg2:T2	
+R8	Connect Arg1:T3 Arg2:T2	

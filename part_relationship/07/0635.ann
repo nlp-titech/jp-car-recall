@@ -1,0 +1,12 @@
+T1	Parts 0 6	オイルクーラ
+T2	Parts 17 23	オイルクーラ
+T3	Parts 24 30	オイルパイプ
+T4	Parts 35 38	ボルト
+T5	Parts 64 70	オイルパイプ
+T6	Parts 76 79	オイル
+R1	Coreference Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T5 Arg2:T3	
+R3	Contact Arg1:T2 Arg2:T4	
+R4	Contact Arg1:T3 Arg2:T4	
+R5	Connect Arg1:T2 Arg2:T3	
+R7	Contact Arg1:T6 Arg2:T5	

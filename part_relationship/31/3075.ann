@@ -1,0 +1,15 @@
+T1	Parts 1 10	大型トラック・バス
+T2	Parts 11 17	エアブレーキ
+T3	Parts 22 71	セーフティバルブ（エアラインの保護を目的にエアラインが高圧になった場合に弁が開き圧力をさげるもの）
+T4	Parts 87 92	エアライン
+T5	Parts 101 144	ＡＳＲバルブ（滑りやすい路面等でタイヤの空転を抑えるために一時的に制動をかける電磁弁）
+T6	Parts 150 154	ブレーキ
+T7	Parts 189 193	ブレーキ
+R1	Coreference Arg1:T6 Arg2:T7	
+R2	Coreference Arg1:T6 Arg2:T2	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T3 Arg2:T2	
+R5	Connect Arg1:T4 Arg2:T3	
+R8	Part-Whole Arg1:T4 Arg2:T2	
+R9	Part-Whole Arg1:T5 Arg2:T1	
+R7	Connect Arg1:T2 Arg2:T5	

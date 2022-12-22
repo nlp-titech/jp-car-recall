@@ -1,0 +1,19 @@
+T12	Parts 82 86	フランジ
+T13	Parts 63 70	フランジナット
+T14	Parts 43 50	フランジナット
+T15	Parts 24 42	差動装置（デファレンシャルユニット）
+T2	Parts 5 12	ノンステップ車
+T3	Parts 13 19	動力伝達装置
+R1	Coreference Arg1:T13 Arg2:T14	
+T4	Parts 96 107	デファレンシャルオイル
+T5	Parts 132 140	プロペラシャフト
+T6	Parts 141 145	差動装置
+R2	Coreference Arg1:T6 Arg2:T15	
+R3	Part-Whole Arg1:T3 Arg2:T2	
+R4	Part-Whole Arg1:T14 Arg2:T15	
+R5	Part-Whole Arg1:T4 Arg2:T15	
+R7	Contact Arg1:T12 Arg2:T15	
+R8	Contact Arg1:T12 Arg2:T13	
+R9	Contact Arg1:T6 Arg2:T5	
+R10	Part-Whole Arg1:T15 Arg2:T3	
+R11	Part-Whole Arg1:T5 Arg2:T3	

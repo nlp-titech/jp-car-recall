@@ -1,0 +1,5 @@
+T1	Parts 0 8	フォーク・リフト
+T2	Parts 9 11	銘板
+T3	Parts 14 17	荷重表
+R1	Contact Arg1:T2 Arg2:T1	
+R2	Contact Arg1:T3 Arg2:T1	

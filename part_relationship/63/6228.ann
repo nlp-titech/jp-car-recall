@@ -1,0 +1,16 @@
+T1	Parts 0 5	冷却ファン
+T2	Parts 38 43	冷却ファン
+T3	Parts 56 61	冷却ファン
+T4	Parts 90 94	エンジン
+T5	Parts 44 48	モーター
+T6	Parts 6 10	制御基板
+T7	Parts 108 112	制御基板
+T8	Parts 27 30	冷却水
+R1	Part-Whole Arg1:T6 Arg2:T1	
+R2	Coreference Arg1:T1 Arg2:T2	
+R3	Part-Whole Arg1:T5 Arg2:T2	
+R4	Coreference Arg1:T2 Arg2:T3	
+R5	Coreference Arg1:T6 Arg2:T7	
+R6	Connect Arg1:T8 Arg2:T2	
+R7	Connect Arg1:T3 Arg2:T4	
+R8	Contact Arg1:T8 Arg2:T4	

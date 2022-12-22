@@ -1,0 +1,21 @@
+T18	Parts 65 72	クラッチペダル
+T19	Parts 84 88	クラッチ
+T20	Parts 166 170	クラッチ
+T1	Parts 0 8	機械式自動変速機
+T2	Parts 18 29	電子制御機器（ＥＣＵ）
+T3	Parts 30 37	制御プログラム
+T4	Parts 106 110	ブレーキ
+T5	Parts 148 151	ＥＣＵ
+R1	Coreference Arg1:T20 Arg2:T19	
+R2	Coreference Arg1:T5 Arg2:T2	
+T6	Parts 130 132	車両
+T7	Parts 180 182	車両
+R3	Coreference Arg1:T6 Arg2:T7	
+R4	Connect Arg1:T1 Arg2:T2	
+R5	Part-Whole Arg1:T3 Arg2:T2	
+R6	Connect Arg1:T18 Arg2:T19	
+R7	Connect Arg1:T19 Arg2:T1	
+R8	Part-Whole Arg1:T1 Arg2:T6	
+R9	Part-Whole Arg1:T4 Arg2:T6	
+R10	Part-Whole Arg1:T18 Arg2:T6	
+R11	Part-Whole Arg1:T2 Arg2:T6	

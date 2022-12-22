@@ -1,0 +1,9 @@
+T12	Parts 60 63	キャブ
+T13	Parts 44 49	Ｕ字フック
+T14	Parts 115 118	フック
+T1	Parts 1 15	後方キャブマウントブラケット
+T2	Parts 33 36	キャブ
+R1	Coreference Arg1:T12 Arg2:T2	
+R2	Coreference Arg1:T14 Arg2:T13	
+R4	Contact Arg1:T13 Arg2:T1	
+R3	Contact Arg1:T2 Arg2:T1	

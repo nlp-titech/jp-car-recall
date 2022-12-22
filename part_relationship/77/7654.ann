@@ -1,0 +1,11 @@
+T1	Parts 1 6	燃料タンク
+T2	Parts 11 14	タンク
+T3	Parts 19 28	樹脂製ポンプリング
+T4	Parts 47 53	ポンプリング
+T5	Parts 83 89	ポンプリング
+T6	Parts 95 97	燃料
+R1	Coreference Arg1:T2 Arg2:T1	
+R2	Contact Arg1:T3 Arg2:T2	
+R3	Coreference Arg1:T3 Arg2:T4	
+R4	Coreference Arg1:T4 Arg2:T5	
+R5	Part-Whole Arg1:T6 Arg2:T1	

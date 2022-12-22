@@ -1,0 +1,9 @@
+T2	Parts 38 45	エンジンオイル
+T3	Parts 74 81	エンジンオイル
+T4	Parts 5 15	オイルクーラーホース
+T5	Parts 0 4	エンジン
+T6	Parts 60 64	エンジン
+R1	Contact Arg1:T4 Arg2:T5	
+R3	Coreference Arg1:T5 Arg2:T6	
+R4	Coreference Arg1:T2 Arg2:T3	
+R2	Contact Arg1:T4 Arg2:T2	

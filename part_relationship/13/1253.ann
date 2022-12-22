@@ -1,0 +1,12 @@
+T14	Parts 107 109	車両
+T15	Parts 24 31	左側ベアリング
+T16	Parts 46 51	ベアリング
+T17	Parts 98 103	ベアリング
+T1	Parts 0 5	自動変速機
+T2	Parts 7 16	減速ギヤ用シャフト
+R1	Coreference Arg1:T15 Arg2:T16	
+R2	Coreference Arg1:T16 Arg2:T17	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T15 Arg2:T1	
+R5	Contact Arg1:T2 Arg2:T15	
+R6	Part-Whole Arg1:T1 Arg2:T14	

@@ -1,0 +1,21 @@
+T1	Parts 0 8	農業用薬剤散布車
+T2	Parts 33 37	エンジン
+T3	Parts 69 73	マフラー
+T4	Parts 135 139	マフラー
+T5	Parts 58 64	取付けステー
+T6	Parts 9 12	排気管
+T7	Parts 17 20	排気管
+T8	Parts 54 57	排気管
+T9	Parts 65 68	排気管
+T10	Parts 130 133	排気管
+R1	Coreference Arg1:T10 Arg2:T9	
+R2	Coreference Arg1:T9 Arg2:T8	
+R3	Coreference Arg1:T8 Arg2:T7	
+R4	Coreference Arg1:T7 Arg2:T6	
+R5	Contact Arg1:T3 Arg2:T9	
+R6	Contact Arg1:T5 Arg2:T8	
+R7	Part-Whole Arg1:T6 Arg2:T1	
+R8	Part-Whole Arg1:T2 Arg2:T1	
+R9	Contact Arg1:T2 Arg2:T7	
+R11	Part-Whole Arg1:T3 Arg2:T1	
+R12	Coreference Arg1:T4 Arg2:T3	

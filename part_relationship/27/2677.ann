@@ -1,0 +1,12 @@
+T9	Parts 29 35	コントローラ
+T13	Parts 116 126	デジタル式運行記録計
+T1	Parts 0 8	運行情報システム
+T2	Parts 15 17	車両
+R4	Part-Whole Arg1:T1 Arg2:T2	
+T3	Parts 36 43	制御プログラム
+R6	Part-Whole Arg1:T3 Arg2:T9	
+T5	Parts 79 86	記録プログラム
+R7	Part-Whole Arg1:T5 Arg2:T9	
+R1	Part-Whole Arg1:T13 Arg2:T1	
+R2	Part-Whole Arg1:T9 Arg2:T1	
+R3	Connect Arg1:T5 Arg2:T13	

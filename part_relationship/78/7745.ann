@@ -1,0 +1,13 @@
+T1	Parts 0 11	メインワイヤーハーネス
+T2	Parts 12 20	クラッチケーブル
+T3	Parts 25 35	メインハーネスガイド
+T4	Parts 46 50	ハンドル
+T5	Parts 61 65	ハーネス
+T6	Parts 83 87	ハーネス
+T7	Parts 89 91	配線
+R1	Coreference Arg1:T1 Arg2:T5	
+R2	Coreference Arg1:T5 Arg2:T6	
+R3	Part-Whole Arg1:T7 Arg2:T6	
+R4	Contact Arg1:T3 Arg2:T1	
+R5	Contact Arg1:T3 Arg2:T2	
+R6	Connect Arg1:T4 Arg2:T5	

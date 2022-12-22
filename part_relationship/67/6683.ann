@@ -1,0 +1,17 @@
+T1	Parts 0 14	ステアリングコラムモジュール
+T2	Parts 75 89	ステアリングコラムモジュール
+T3	Parts 139 144	エアバッグ
+T4	Parts 176 181	エアバッグ
+T5	Parts 37 41	ハンドル
+T6	Parts 90 93	カバー
+T7	Parts 145 148	警告灯
+T11	Parts 16 24	静電気放電用配線
+T12	Parts 59 61	配線
+T13	Parts 115 123	静電気放電用配線
+R1	Coreference Arg1:T12 Arg2:T11	
+R2	Coreference Arg1:T13 Arg2:T12	
+R3	Coreference Arg1:T4 Arg2:T3	
+R4	Coreference Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T11 Arg2:T1	
+R6	Part-Whole Arg1:T1 Arg2:T5	
+R7	Contact Arg1:T6 Arg2:T2	

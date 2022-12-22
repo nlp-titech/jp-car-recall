@@ -1,0 +1,6 @@
+T1	Parts 0 3	過給機
+T2	Parts 8 13	ハウジング
+T3	Parts 17 23	シールリング
+R1	Contact Arg1:T2 Arg2:T3	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T3 Arg2:T1	

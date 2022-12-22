@@ -1,0 +1,9 @@
+T1	Parts 0 6	農耕トラクタ
+T2	Parts 7 13	動力伝達装置
+T3	Parts 18 27	走行制御プログラム
+T4	Parts 51 59	クラッチディスク
+T5	Parts 95 103	クラッチディスク
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R3	Coreference Arg1:T4 Arg2:T5	
+R2	Part-Whole Arg1:T4 Arg2:T2	
+R4	Part-Whole Arg1:T3 Arg2:T1	

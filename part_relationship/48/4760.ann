@@ -1,0 +1,11 @@
+T1	Parts 20 29	２点式シートベルト
+T2	Parts 34 38	バックル
+T3	Parts 66 70	バックル
+T4	Parts 72 75	ベルト
+T5	Parts 10 12	座席
+T6	Parts 0 2	車体
+R1	Coreference Arg1:T1 Arg2:T4	
+R2	Coreference Arg1:T2 Arg2:T3	
+R4	Contact Arg1:T6 Arg2:T5	
+R5	Part-Whole Arg1:T1 Arg2:T5	
+R3	Contact Arg1:T1 Arg2:T2	

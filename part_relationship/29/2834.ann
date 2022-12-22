@@ -1,0 +1,14 @@
+T1	Parts 0 5	冷蔵冷凍車
+T2	Parts 6 14	荷室ドア施錠装置
+T3	Parts 15 22	施錠確認ランプ
+T4	Parts 33 39	リモコンキー
+T5	Parts 41 45	施錠装置
+R1	Coreference Arg1:T5 Arg2:T2	
+T6	Parts 55 60	赤色ランプ
+R2	Coreference Arg1:T6 Arg2:T3	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T3 Arg2:T2	
+R5	Connect Arg1:T4 Arg2:T5	
+T8	Parts 108 110	灯火
+R7	Part-Whole Arg1:T6 Arg2:T8	
+R8	Part-Whole Arg1:T8 Arg2:T1	

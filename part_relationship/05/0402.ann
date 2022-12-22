@@ -1,0 +1,11 @@
+T6	Parts 0 6	運転席側ドア
+T8	Parts 19 24	固定用ネジ
+T9	Parts 47 49	ネジ
+T10	Parts 57 62	ドアラッチ
+T11	Parts 11 18	ドアロック装置
+T12	Parts 90 92	ドア
+R1	Coreference Arg1:T8 Arg2:T9	
+R2	Coreference Arg1:T12 Arg2:T6	
+R3	Part-Whole Arg1:T11 Arg2:T6	
+R4	Contact Arg1:T8 Arg2:T11	
+R5	Part-Whole Arg1:T10 Arg2:T12	

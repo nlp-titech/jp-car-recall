@@ -1,0 +1,18 @@
+T14	Parts 39 45	テールパイプ
+T15	Parts 85 91	テールパイプ
+T16	Parts 121 127	テールパイプ
+T17	Parts 132 139	ブレーキパイプ
+T18	Parts 150 157	ブレーキパイプ
+T1	Parts 13 16	排気管
+T2	Parts 21 36	主消音器（メインサイレンサー）
+R1	Coreference Arg1:T15 Arg2:T14	
+R2	Coreference Arg1:T16 Arg2:T15	
+R3	Coreference Arg1:T18 Arg2:T17	
+T3	Parts 163 168	ブレーキ液
+T4	Parts 8 12	福祉車両
+R4	Part-Whole Arg1:T1 Arg2:T4	
+R5	Part-Whole Arg1:T2 Arg2:T1	
+R6	Part-Whole Arg1:T14 Arg2:T1	
+R8	Part-Whole Arg1:T17 Arg2:T4	
+R9	Contact Arg1:T3 Arg2:T18	
+R10	Contact Arg1:T2 Arg2:T14	

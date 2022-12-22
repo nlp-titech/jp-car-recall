@@ -1,0 +1,11 @@
+T14	Parts 39 44	下側カバー
+T1	Parts 0 2	車両
+T2	Parts 7 15	警光灯（社外品）
+T3	Parts 16 21	上下カバー
+T6	Parts 136 141	上側カバー
+R2	Contact Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T3 Arg2:T2	
+R6	Oneway-Coreference Arg1:T3 Arg2:T14	
+R7	Oneway-Coreference Arg1:T3 Arg2:T6	
+T4	Parts 45 50	埋込ナット
+R1	Part-Whole Arg1:T4 Arg2:T14	

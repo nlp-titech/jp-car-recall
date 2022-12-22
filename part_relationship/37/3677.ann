@@ -1,0 +1,9 @@
+T2	Parts 38 42	Ｏリング
+T3	Parts 70 74	Ｏリング
+T4	Parts 82 85	オイル
+T6	Parts 18 29	クラッチリザーブホース
+T8	Parts 0 17	マニュアルトランスミッション仕様車
+R1	Contact Arg1:T4 Arg2:T3	
+R2	Coreference Arg1:T3 Arg2:T2	
+R3	Part-Whole Arg1:T2 Arg2:T6	
+R4	Part-Whole Arg1:T6 Arg2:T8	

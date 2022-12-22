@@ -1,0 +1,24 @@
+T1	Parts 8 14	フロアパネル
+T2	Parts 198 204	フロアパネル
+T3	Parts 18 30	バッテリープラスケーブル
+T4	Parts 173 185	バッテリープラスケーブル
+T5	Parts 136 140	エンジン
+T8	Parts 116 123	電装系システム
+T11	Parts 41 50	プラスチックロック
+T12	Parts 81 83	車体
+T13	Parts 220 222	車両
+T6	Parts 31 36	絶縁固定体
+T9	Parts 75 80	絶縁固定体
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Part-Whole Arg1:T12 Arg2:T13	
+R3	Coreference Arg1:T3 Arg2:T4	
+R4	Coreference Arg1:T6 Arg2:T9	
+R5	Part-Whole Arg1:T5 Arg2:T13	
+R6	Part-Whole Arg1:T8 Arg2:T13	
+R7	Part-Whole Arg1:T2 Arg2:T13	
+R8	Contact Arg1:T3 Arg2:T6	
+R9	Contact Arg1:T6 Arg2:T11	
+R10	Connect Arg1:T9 Arg2:T12	
+R11	Contact Arg1:T11 Arg2:T12	
+R12	Connect Arg1:T8 Arg2:T4	
+R13	Connect Arg1:T8 Arg2:T5	

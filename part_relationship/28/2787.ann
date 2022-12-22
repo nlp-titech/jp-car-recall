@@ -1,0 +1,5 @@
+T1	Parts 9 20	消音器一体式縦型排気管
+T3	Parts 26 28	車体
+T4	Parts 46 50	排気ガス
+R1	Contact Arg1:T1 Arg2:T4	
+R2	Part-Whole Arg1:T1 Arg2:T3	

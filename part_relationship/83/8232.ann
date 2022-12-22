@@ -1,0 +1,18 @@
+T1	Parts 0 6	大型トラック
+T2	Parts 17 24	シャシフレーム
+T3	Parts 32 42	スペアタイヤ取付装置
+T4	Parts 47 52	ブラケット
+T5	Parts 64 68	取付装置
+T6	Parts 99 103	取付装置
+T7	Parts 123 133	スペアタイヤ取付装置
+T8	Parts 135 141	スペアタイヤ
+R1	Coreference Arg1:T3 Arg2:T5	
+R2	Coreference Arg1:T5 Arg2:T6	
+R3	Coreference Arg1:T6 Arg2:T7	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T3 Arg2:T1	
+R6	Contact Arg1:T3 Arg2:T4	
+R7	Contact Arg1:T2 Arg2:T4	
+R8	Connect Arg1:T2 Arg2:T3	
+R9	Contact Arg1:T7 Arg2:T8	
+R10	Part-Whole Arg1:T8 Arg2:T1	

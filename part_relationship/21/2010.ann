@@ -1,0 +1,9 @@
+T14	Parts 0 19	ＤＰＦ（ディーゼル粒子状物質除去装置）
+T15	Parts 72 75	ＤＰＦ
+T16	Parts 52 56	エンジン
+T17	Parts 118 122	エンジン
+T1	Parts 35 40	プログラム
+R1	Coreference Arg1:T14 Arg2:T15	
+R3	Coreference Arg1:T16 Arg2:T17	
+R2	Connect Arg1:T1 Arg2:T14	
+R5	Connect Arg1:T16 Arg2:T14	

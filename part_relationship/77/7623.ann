@@ -1,0 +1,12 @@
+T1	Parts 0 8	プロペラシャフト
+T2	Parts 13 17	エンジン
+T3	Parts 18 26	プロペラシャフト
+T4	Parts 57 65	プロペラシャフト
+T5	Parts 66 69	パイプ
+T6	Parts 70 79	スプラインシャフト
+T7	Parts 123 131	プロペラシャフト
+R1	Coreference Arg1:T1 Arg2:T3	
+R2	Coreference Arg1:T3 Arg2:T4	
+R3	Coreference Arg1:T4 Arg2:T7	
+R4	Part-Whole Arg1:T5 Arg2:T4	
+R5	Contact Arg1:T6 Arg2:T5	

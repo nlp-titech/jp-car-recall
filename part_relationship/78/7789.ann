@@ -1,0 +1,9 @@
+T1	Parts 0 12	アスファルトフィニッシャ
+T2	Parts 13 25	ブローバイ・ガス還元装置
+T3	Parts 30 40	エアインレットホース
+T4	Parts 53 56	ホース
+T5	Parts 66 69	ホース
+R1	Coreference Arg1:T3 Arg2:T4	
+R2	Coreference Arg1:T5 Arg2:T4	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T3 Arg2:T2	

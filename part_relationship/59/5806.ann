@@ -1,0 +1,10 @@
+T2	Parts 53 58	エアバッグ
+T3	Parts 27 36	後部側面衝突センサ
+T4	Parts 0 15	前後席一体型頭部エアバッグ装置
+T5	Parts 20 22	車両
+T6	Parts 37 39	配線
+R1	Coreference Arg1:T4 Arg2:T2	
+R2	Part-Whole Arg1:T4 Arg2:T5	
+R3	Contact Arg1:T3 Arg2:T6	
+R4	Connect Arg1:T4 Arg2:T3	
+R5	Part-Whole Arg1:T3 Arg2:T5	

@@ -1,0 +1,7 @@
+T1	Parts 17 25	固定用スプリング
+T2	Parts 8 16	センタースタンド
+T3	Parts 60 68	センタースタンド
+T4	Parts 122 130	センタースタンド
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Coreference Arg1:T3 Arg2:T4	
+R3	Part-Whole Arg1:T1 Arg2:T2	

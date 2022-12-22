@@ -1,0 +1,14 @@
+T1	Parts 0 13	ステアリングアッパシャフト
+T2	Parts 14 26	ステアリングロアシャフト
+T3	Parts 31 42	ステアリングジョイント
+T4	Parts 59 64	ジョイント
+T5	Parts 65 72	アッパシャフト
+T6	Parts 109 114	ジョイント
+T7	Parts 115 122	アッパシャフト
+R1	Coreference Arg1:T3 Arg2:T4	
+R2	Coreference Arg1:T1 Arg2:T5	
+R3	Coreference Arg1:T4 Arg2:T6	
+R4	Coreference Arg1:T5 Arg2:T7	
+R5	Connect Arg1:T1 Arg2:T2	
+R6	Contact Arg1:T1 Arg2:T3	
+R7	Contact Arg1:T2 Arg2:T3	

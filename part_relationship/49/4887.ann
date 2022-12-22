@@ -1,0 +1,5 @@
+T1	Parts 10 15	サンバイザ
+T4	Parts 20 47	サンバイザサポート（サンバイザを車体に取り付ける部品）
+T5	Parts 0 4	運転者席
+T6	Parts 6 9	助手席
+R3	Contact Arg1:T4 Arg2:T1	

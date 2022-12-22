@@ -1,0 +1,18 @@
+T20	Parts 21 28	ピストンロッド
+T21	Parts 29 31	ネジ
+T22	Parts 70 72	ネジ
+T23	Parts 85 87	ネジ
+T24	Parts 117 120	ナット
+T25	Parts 130 133	ナット
+T1	Parts 0 7	かじ取シリンダ
+T2	Parts 12 16	ピストン
+T3	Parts 50 54	作業装置
+R1	Coreference Arg1:T21 Arg2:T22	
+R2	Coreference Arg1:T22 Arg2:T23	
+R3	Coreference Arg1:T24 Arg2:T25	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T20 Arg2:T1	
+R6	Part-Whole Arg1:T21 Arg2:T20	
+R7	Contact Arg1:T2 Arg2:T20	
+R8	Part-Whole Arg1:T24 Arg2:T20	
+R9	Contact Arg1:T23 Arg2:T24	

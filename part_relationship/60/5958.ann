@@ -1,0 +1,10 @@
+T1	Parts 78 86	フロントフォーク
+T2	Parts 3 18	メインハーネスガイド固定ボルト
+T4	Parts 61 65	ハンドル
+T5	Parts 91 95	ハンドル
+T7	Parts 36 39	ボルト
+T8	Parts 74 77	ボルト
+R1	Coreference Arg1:T2 Arg2:T7	
+R2	Coreference Arg1:T7 Arg2:T8	
+R3	Coreference Arg1:T4 Arg2:T5	
+R4	Connect Arg1:T1 Arg2:T5	

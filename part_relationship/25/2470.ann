@@ -1,0 +1,7 @@
+T14	Parts 104 106	車軸
+T15	Parts 0 6	セミトレーラ
+T16	Parts 8 15	ポールトレーラ
+T17	Parts 22 24	車軸
+R1	Coreference Arg1:T14 Arg2:T17	
+R2	Part-Whole Arg1:T17 Arg2:T15	
+R3	Part-Whole Arg1:T17 Arg2:T16	

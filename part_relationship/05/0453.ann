@@ -1,0 +1,13 @@
+T12	Parts 11 16	自動変速機
+T13	Parts 18 27	減速ギヤ用シャフト
+T14	Parts 41 45	シャフト
+T15	Parts 46 55	ローラーベアリング
+T16	Parts 97 102	ベアリング
+T1	Parts 0 6	動力伝達装置
+R1	Coreference Arg1:T13 Arg2:T14	
+R2	Coreference Arg1:T16 Arg2:T15	
+R3	Part-Whole Arg1:T12 Arg2:T1	
+R4	Part-Whole Arg1:T13 Arg2:T12	
+R5	Part-Whole Arg1:T15 Arg2:T14	
+T2	Parts 107 109	車両
+R6	Part-Whole Arg1:T1 Arg2:T2	

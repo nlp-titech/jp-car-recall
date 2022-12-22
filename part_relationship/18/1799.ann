@@ -1,0 +1,8 @@
+T1	Parts 0 4	前輪ハブ
+T2	Parts 5 13	油圧走行モーター
+T6	Parts 63 68	締結ボルト
+T7	Parts 78 80	車輪
+R1	Contact Arg1:T2 Arg2:T1	
+R7	Contact Arg1:T7 Arg2:T1	
+R2	Contact Arg1:T1 Arg2:T6	
+R3	Contact Arg1:T2 Arg2:T6	

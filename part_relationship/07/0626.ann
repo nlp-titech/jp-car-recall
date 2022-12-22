@@ -1,0 +1,20 @@
+T17	Parts 14 20	エアチャンバ
+T18	Parts 36 40	チャンバ
+T19	Parts 68 72	ピストン
+T20	Parts 74 78	Ｏリング
+T21	Parts 111 115	ピストン
+T1	Parts 0 9	空気式駐車制動装置
+T2	Parts 21 28	空気逃がし機構
+R1	Coreference Arg1:T18 Arg2:T17	
+T4	Parts 82 87	スプリング
+T5	Parts 95 100	スプリング
+R2	Coreference Arg1:T5 Arg2:T4	
+R3	Coreference Arg1:T21 Arg2:T19	
+T6	Parts 126 132	駐車ブレーキ
+R4	Part-Whole Arg1:T17 Arg2:T1	
+R5	Part-Whole Arg1:T2 Arg2:T17	
+R7	Part-Whole Arg1:T19 Arg2:T18	
+R8	Part-Whole Arg1:T20 Arg2:T19	
+R9	Contact Arg1:T19 Arg2:T4	
+R10	Connect Arg1:T21 Arg2:T6	
+R11	Part-Whole Arg1:T6 Arg2:T1	

@@ -1,0 +1,13 @@
+T1	Parts 0 8	ブレーキ倍力装置
+T3	Parts 16 27	ブレーキ負圧電動ポンプ
+T4	Parts 32 37	ＥＶＥＣＵ
+T5	Parts 38 45	制御プログラム
+T6	Parts 53 56	リレー
+T7	Parts 80 87	ブレーキ警告灯
+T9	Parts 103 114	ブレーキ負圧電動ポンプ
+R1	Coreference Arg1:T3 Arg2:T9	
+R2	Connect Arg1:T1 Arg2:T3	
+R3	Connect Arg1:T3 Arg2:T4	
+R4	Part-Whole Arg1:T5 Arg2:T4	
+R5	Part-Whole Arg1:T6 Arg2:T3	
+R6	Connect Arg1:T4 Arg2:T7	

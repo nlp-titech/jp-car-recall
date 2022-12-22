@@ -1,0 +1,9 @@
+T1	Parts 17 30	樹脂製燃料ポンプ取付ナット
+T2	Parts 9 14	燃料タンク
+T4	Parts 0 4	燃料装置
+T5	Parts 61 64	ナット
+T7	Parts 71 73	燃料
+R1	Coreference Arg1:T5 Arg2:T1	
+R2	Part-Whole Arg1:T2 Arg2:T4	
+R3	Contact Arg1:T1 Arg2:T2	
+R4	Part-Whole Arg1:T7 Arg2:T2	

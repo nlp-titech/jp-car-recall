@@ -1,0 +1,16 @@
+T1	Parts 12 20	ドライブプーリー
+T2	Parts 1 7	動力伝達装置
+T5	Parts 79 83	プーリー
+T6	Parts 105 109	プーリー
+T7	Parts 25 28	ナット
+T8	Parts 62 65	ナット
+T9	Parts 50 55	駆動ベルト
+T10	Parts 127 129	後輪
+R1	Contact Arg1:T1 Arg2:T7	
+R2	Coreference Arg1:T7 Arg2:T8	
+R3	Part-Whole Arg1:T1 Arg2:T2	
+R4	Contact Arg1:T1 Arg2:T9	
+R5	Coreference Arg1:T1 Arg2:T5	
+R6	Coreference Arg1:T5 Arg2:T6	
+R7	Connect Arg1:T2 Arg2:T10	
+R8	Part-Whole Arg1:T9 Arg2:T2	

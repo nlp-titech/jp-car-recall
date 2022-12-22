@@ -1,0 +1,16 @@
+T1	Parts 0 9	トランスミッション
+T2	Parts 36 46	ニュートラルスイッチ
+T3	Parts 57 61	スイッチ
+T4	Parts 10 16	シフトドラム
+T5	Parts 29 35	シフトドラム
+T8	Parts 91 100	ニュートラルランプ
+T9	Parts 79 81	ギヤ
+T10	Parts 122 124	ギヤ
+R1	Coreference Arg1:T4 Arg2:T5	
+R2	Part-Whole Arg1:T4 Arg2:T1	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Coreference Arg1:T2 Arg2:T3	
+R5	Connect Arg1:T3 Arg2:T8	
+R6	Coreference Arg1:T9 Arg2:T10	
+R7	Part-Whole Arg1:T9 Arg2:T1	
+R8	Contact Arg1:T5 Arg2:T2	

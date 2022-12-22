@@ -1,0 +1,3 @@
+T3	Parts 0 11	燃料ポンプ上部フランジ
+T5	Parts 75 77	燃料
+R2	Contact Arg1:T5 Arg2:T3	

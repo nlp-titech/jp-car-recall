@@ -1,0 +1,13 @@
+T12	Parts 0 7	前輪用制動装置
+T13	Parts 8 18	ブラケット締付ボルト
+T14	Parts 35 38	ボルト
+T15	Parts 71 74	ボルト
+T16	Parts 89 93	制動装置
+T17	Parts 96 101	ブラケット
+T18	Parts 106 113	ブレーキホース
+R1	Coreference Arg1:T14 Arg2:T13	
+R2	Coreference Arg1:T15 Arg2:T14	
+R3	Coreference Arg1:T16 Arg2:T12	
+R4	Contact Arg1:T13 Arg2:T12	
+R5	Part-Whole Arg1:T17 Arg2:T13	
+R7	Part-Whole Arg1:T18 Arg2:T12	

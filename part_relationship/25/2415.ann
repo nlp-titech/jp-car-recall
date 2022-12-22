@@ -1,0 +1,12 @@
+T1	Parts 0 4	バッテリ
+T2	Parts 6 13	スタータモータ
+T3	Parts 15 19	電気配線
+T4	Parts 35 39	エンジン
+T5	Parts 47 49	配線
+R1	Coreference Arg1:T5 Arg2:T3	
+T7	Parts 58 62	エンジン
+R2	Coreference Arg1:T7 Arg2:T4	
+R3	Connect Arg1:T2 Arg2:T1	
+R4	Contact Arg1:T1 Arg2:T3	
+R5	Contact Arg1:T2 Arg2:T3	
+R6	Connect Arg1:T2 Arg2:T4	

@@ -1,0 +1,31 @@
+T1	Parts 137 155	マルチインフォメーションディスプレイ
+T2	Parts 0 5	補助制動灯
+T3	Parts 161 166	補助制動灯
+T4	Parts 182 186	エンジン
+T5	Parts 116 120	ヒューズ
+T6	Parts 97 101	ブレーキ
+T7	Parts 107 111	電源回路
+T8	Parts 126 133	メータ内警告灯
+T10	Parts 168 171	制動灯
+T11	Parts 52 54	ねじ
+T12	Parts 10 14	内部基板
+T13	Parts 45 47	基板
+T14	Parts 15 21	プリント配線
+T15	Parts 55 61	プリント配線
+T16	Parts 77 83	プリント配線
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Coreference Arg1:T12 Arg2:T13	
+R3	Coreference Arg1:T14 Arg2:T15	
+R4	Contact Arg1:T15 Arg2:T16	
+R5	Connect Arg1:T7 Arg2:T5	
+R6	Connect Arg1:T6 Arg2:T3	
+R7	Connect Arg1:T6 Arg2:T10	
+R8	Part-Whole Arg1:T12 Arg2:T2	
+R9	Part-Whole Arg1:T14 Arg2:T12	
+R10	Contact Arg1:T13 Arg2:T11	
+R11	Connect Arg1:T5 Arg2:T8	
+R12	Connect Arg1:T16 Arg2:T7	
+R13	Connect Arg1:T5 Arg2:T1	
+R14	Connect Arg1:T5 Arg2:T3	
+R15	Connect Arg1:T5 Arg2:T10	
+R16	Connect Arg1:T5 Arg2:T4	

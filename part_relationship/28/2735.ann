@@ -1,0 +1,16 @@
+T1	Parts 0 3	キャブ
+T2	Parts 6 13	ショベルローダ
+T5	Parts 29 37	ワイパー・アーム
+T6	Parts 38 49	駆動用モータ・シャフト
+T7	Parts 55 58	ナット
+T8	Parts 96 104	ワイパー・アーム
+R1	Coreference Arg1:T8 Arg2:T5	
+R2	Part-Whole Arg1:T1 Arg2:T2	
+T3	Parts 18 28	前面ガラス用窓ふき器
+R3	Part-Whole Arg1:T3 Arg2:T2	
+R4	Part-Whole Arg1:T5 Arg2:T3	
+R5	Part-Whole Arg1:T6 Arg2:T3	
+R6	Contact Arg1:T5 Arg2:T6	
+R7	Contact Arg1:T5 Arg2:T7	
+R8	Contact Arg1:T6 Arg2:T7	
+R9	Part-Whole Arg1:T7 Arg2:T3	

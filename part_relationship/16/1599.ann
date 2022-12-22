@@ -1,0 +1,19 @@
+T18	Parts 38 43	自動変速機
+T19	Parts 87 93	ピニオンギヤ
+T20	Parts 94 103	ニードルベアリング
+T21	Parts 110 115	ベアリング
+T1	Parts 0 5	自動変速機
+T2	Parts 10 20	コントロールユニット
+T3	Parts 21 30	油圧制御プログラム
+R1	Coreference Arg1:T1 Arg2:T18	
+T4	Parts 46 54	ミッションオイル
+R2	Coreference Arg1:T20 Arg2:T21	
+T5	Parts 138 147	オイルストレーナー
+R3	Part-Whole Arg1:T3 Arg2:T2	
+R4	Connect Arg1:T2 Arg2:T1	
+R6	Part-Whole Arg1:T5 Arg2:T18	
+R7	Part-Whole Arg1:T20 Arg2:T18	
+R8	Part-Whole Arg1:T19 Arg2:T18	
+R9	Part-Whole Arg1:T20 Arg2:T19	
+R10	Contact Arg1:T4 Arg2:T5	
+R5	Contact Arg1:T18 Arg2:T4	

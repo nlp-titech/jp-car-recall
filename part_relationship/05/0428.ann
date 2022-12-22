@@ -1,0 +1,11 @@
+T12	Parts 8 17	排気ガス再循環装置
+T13	Parts 25 33	バキュームポンプ
+T14	Parts 34 38	シャフト
+T15	Parts 67 71	シャフト
+T16	Parts 91 103	排出ガス再循環装置バルブ
+T1	Parts 0 3	原動機
+R1	Coreference Arg1:T14 Arg2:T15	
+R2	Part-Whole Arg1:T12 Arg2:T1	
+R3	Part-Whole Arg1:T13 Arg2:T12	
+R4	Part-Whole Arg1:T14 Arg2:T13	
+R5	Contact Arg1:T16 Arg2:T15	

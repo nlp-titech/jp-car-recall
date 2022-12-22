@@ -1,0 +1,9 @@
+T2	Parts 109 115	テールゲート
+T3	Parts 130 136	テールゲート
+T6	Parts 48 52	Ｕボルト
+T7	Parts 33 44	テールゲート固縛フック
+T8	Parts 0 28	圧縮板式塵芥車（富士重工業㈱製、商標名：フジマイティー）
+R1	Contact Arg1:T7 Arg2:T6	
+R5	Contact Arg1:T7 Arg2:T2	
+R6	Coreference Arg1:T2 Arg2:T3	
+R7	Part-Whole Arg1:T2 Arg2:T8	

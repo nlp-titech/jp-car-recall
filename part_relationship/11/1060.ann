@@ -1,0 +1,11 @@
+T10	Parts 0 18	チューブ付きタイヤ用ディスクホイール
+T11	Parts 38 46	ディスクホイール
+T12	Parts 72 80	ディスクホイール
+T13	Parts 109 116	ホイールナット
+T1	Parts 19 26	ブレーキドラム
+T2	Parts 47 54	ブレーキドラム
+R1	Coreference Arg1:T10 Arg2:T11	
+R2	Coreference Arg1:T1 Arg2:T2	
+R3	Coreference Arg1:T11 Arg2:T12	
+R4	Contact Arg1:T10 Arg2:T1	
+R5	Contact Arg1:T13 Arg2:T12	

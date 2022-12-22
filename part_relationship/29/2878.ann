@@ -1,0 +1,11 @@
+T1	Parts 0 8	機械式自動変速機
+T2	Parts 9 15	制御ユニット
+T4	Parts 29 36	アクセルペダル
+T7	Parts 93 97	エンジン
+T8	Parts 110 114	エンジン
+R2	Coreference Arg1:T8 Arg2:T7	
+R1	Connect Arg1:T1 Arg2:T2	
+R3	Connect Arg1:T1 Arg2:T7	
+T5	Parts 59 62	シフト
+R4	Connect Arg1:T1 Arg2:T4	
+R5	Connect Arg1:T2 Arg2:T5	

@@ -1,0 +1,12 @@
+T10	Parts 116 120	エンジン
+T12	Parts 42 54	リレー（バッテリリレー）
+T13	Parts 91 94	リレー
+T14	Parts 98 102	ヒューズ
+T1	Parts 0 13	アスファルト・フィニッシャ
+T2	Parts 15 26	エンジン制御用電気回路
+R3	Coreference Arg1:T13 Arg2:T12	
+R4	Part-Whole Arg1:T12 Arg2:T2	
+R6	Part-Whole Arg1:T2 Arg2:T1	
+R8	Part-Whole Arg1:T10 Arg2:T1	
+R2	Connect Arg1:T2 Arg2:T10	
+R1	Connect Arg1:T2 Arg2:T14	

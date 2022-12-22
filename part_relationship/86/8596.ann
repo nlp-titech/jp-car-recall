@@ -1,0 +1,17 @@
+T1	Parts 0 3	ＬＥＤ
+T2	Parts 6 14	右側ヘッドランプ
+T3	Parts 28 34	光源ユニット
+T4	Parts 39 42	コード
+T5	Parts 52 58	光源ユニット
+T6	Parts 59 62	コード
+T7	Parts 70 76	光源ユニット
+T8	Parts 124 127	前照灯
+R1	Part-Whole Arg1:T1 Arg2:T2	
+R2	Part-Whole Arg1:T3 Arg2:T2	
+R3	Connect Arg1:T4 Arg2:T3	
+R4	Part-Whole Arg1:T4 Arg2:T2	
+R5	Connect Arg1:T3 Arg2:T1	
+R6	Coreference Arg1:T5 Arg2:T3	
+R7	Coreference Arg1:T6 Arg2:T4	
+R8	Coreference Arg1:T7 Arg2:T5	
+R9	Oneway-Coreference Arg1:T2 Arg2:T8	

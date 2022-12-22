@@ -1,0 +1,10 @@
+T1	Parts 9 12	排気管
+T2	Parts 37 40	排気管
+T3	Parts 28 32	エンジン
+T5	Parts 100 104	排気ガス
+T6	Parts 0 4	路線バス
+R1	Coreference Arg1:T2 Arg2:T1	
+R2	Contact Arg1:T5 Arg2:T2	
+R3	Part-Whole Arg1:T3 Arg2:T6	
+R4	Part-Whole Arg1:T1 Arg2:T6	
+R5	Contact Arg1:T3 Arg2:T1	

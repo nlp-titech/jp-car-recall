@@ -1,0 +1,19 @@
+T1	Parts 0 10	前輪用ブレーキホース
+T3	Parts 23 25	前輪
+T4	Parts 26 30	ブレーキ
+T5	Parts 37 39	車体
+T6	Parts 45 50	前輪タイヤ
+T7	Parts 51 58	ブレーキホース
+R1	Coreference Arg1:T1 Arg2:T7	
+T8	Parts 86 93	ブレーキホース
+R2	Coreference Arg1:T7 Arg2:T8	
+T9	Parts 104 109	ブレーキ液
+R3	Connect Arg1:T4 Arg2:T3	
+R4	Contact Arg1:T4 Arg2:T1	
+R5	Contact Arg1:T6 Arg2:T3	
+R6	Contact Arg1:T9 Arg2:T8	
+R7	Part-Whole Arg1:T1 Arg2:T5	
+R8	Part-Whole Arg1:T3 Arg2:T5	
+R9	Part-Whole Arg1:T4 Arg2:T5	
+R10	Part-Whole Arg1:T9 Arg2:T4	
+R11	Part-Whole Arg1:T6 Arg2:T5	

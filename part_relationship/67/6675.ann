@@ -1,0 +1,9 @@
+T2	Parts 0 4	エンジン
+T3	Parts 59 63	エンジン
+T4	Parts 95 99	エンジン
+T7	Parts 78 81	警告灯
+T10	Parts 5 22	クランク／カムシャフトセンサー配線
+R2	Coreference Arg1:T3 Arg2:T2	
+R4	Connect Arg1:T10 Arg2:T2	
+R5	Connect Arg1:T7 Arg2:T10	
+R6	Coreference Arg1:T4 Arg2:T3	

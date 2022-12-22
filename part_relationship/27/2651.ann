@@ -1,0 +1,10 @@
+T1	Parts 0 6	タンクローリ
+T2	Parts 10 14	トラック
+T3	Parts 19 30	アルミ合金製クロス配管
+T4	Parts 43 50	荷下ろしポンプ
+T5	Parts 63 74	アルミ合金製クロス配管
+R1	Coreference Arg1:T5 Arg2:T3	
+R2	Part-Whole Arg1:T1 Arg2:T2	
+R3	Part-Whole Arg1:T3 Arg2:T1	
+R4	Part-Whole Arg1:T4 Arg2:T1	
+R5	Connect Arg1:T4 Arg2:T3	

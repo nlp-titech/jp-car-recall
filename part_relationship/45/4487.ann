@@ -1,0 +1,7 @@
+T2	Parts 53 57	ヒューズ
+T4	Parts 41 43	配線
+T1	Parts 5 17	パワーウィンド用ヒューズ
+R2	Connect Arg1:T4 Arg2:T2	
+T5	Parts 0 3	前照灯
+R1	Oneway-Coreference Arg1:T2 Arg2:T1	
+R3	Connect Arg1:T5 Arg2:T2	

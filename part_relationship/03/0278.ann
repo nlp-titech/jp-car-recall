@@ -1,0 +1,10 @@
+T10	Parts 0 6	後軸緩衝装置
+T12	Parts 76 82	スタビライザ
+T14	Parts 87 90	タイヤ
+T15	Parts 98 101	タイヤ
+T16	Parts 128 131	タイヤ
+T1	Parts 7 29	スタビライザ（車体の横揺れを減少させる装置）
+R1	Coreference Arg1:T12 Arg2:T1	
+R2	Coreference Arg1:T15 Arg2:T14	
+R3	Coreference Arg1:T16 Arg2:T15	
+R4	Part-Whole Arg1:T1 Arg2:T10	

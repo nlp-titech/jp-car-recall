@@ -1,0 +1,20 @@
+T20	Parts 24 33	クラッチハウジング
+T26	Parts 80 95	継ぎ手（アウトプットフランジ）
+T4	Parts 149 158	クラッチハウジング
+R1	Coreference Arg1:T4 Arg2:T20	
+T5	Parts 174 183	クラッチハウジング
+T6	Parts 248 257	クラッチハウジング
+T7	Parts 262 271	トランスミッション
+T8	Parts 273 281	プロペラシャフト
+R2	Coreference Arg1:T6 Arg2:T5	
+R3	Coreference Arg1:T5 Arg2:T4	
+R4	Coreference Arg1:T7 Arg2:T2	
+T10	Parts 53 70	トランスミッション・メーンシャフト
+R10	Contact Arg1:T26 Arg2:T1	
+R12	Contact Arg1:T8 Arg2:T6	
+T1	Parts 73 78	スプライン
+T2	Parts 5 19	変速機（トランスミッション）
+T3	Parts 0 4	エンジン
+R5	Contact Arg1:T2 Arg2:T3	
+R6	Part-Whole Arg1:T20 Arg2:T2	
+R7	Part-Whole Arg1:T1 Arg2:T10	

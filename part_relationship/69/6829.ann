@@ -1,0 +1,15 @@
+T2	Parts 100 110	ステアリングホイール
+T5	Parts 53 58	エアバッグ
+T7	Parts 21 24	バッグ
+T4	Parts 34 42	エアバッグカバー
+T1	Parts 62 75	ステアリングホイールパッド
+T6	Parts 92 95	パッド
+T8	Parts 130 133	パッド
+R3	Contact Arg1:T7 Arg2:T4	
+R4	Coreference Arg1:T1 Arg2:T6	
+R5	Coreference Arg1:T6 Arg2:T8	
+R2	Coreference Arg1:T7 Arg2:T5	
+R6	Part-Whole Arg1:T6 Arg2:T2	
+R7	Part-Whole Arg1:T5 Arg2:T2	
+T3	Parts 0 4	運転車席
+#1	AnnotatorNotes T3	「エアバック」は誤字

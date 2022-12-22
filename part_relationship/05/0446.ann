@@ -1,0 +1,13 @@
+T13	Parts 17 32	ベルトバックル（タング受け部）
+T14	Parts 34 36	台座
+T15	Parts 0 10	運転者席用座席ベルト
+T16	Parts 75 80	ロック機構
+T18	Parts 107 110	ベルト
+T1	Parts 49 52	ベルト
+R1	Coreference Arg1:T1 Arg2:T15	
+T2	Parts 56 59	タング
+R2	Coreference Arg1:T1 Arg2:T18	
+R3	Part-Whole Arg1:T13 Arg2:T15	
+R4	Part-Whole Arg1:T14 Arg2:T13	
+R5	Contact Arg1:T2 Arg2:T1	
+R6	Connect Arg1:T16 Arg2:T2	

@@ -1,0 +1,11 @@
+T10	Parts 31 38	吸気遮断バルブ
+T11	Parts 39 42	ケース
+T12	Parts 61 64	バルブ
+T13	Parts 95 98	バルブ
+T4	Parts 116 119	原動機
+T1	Parts 0 23	アイドリングストップ・アンド・スタートシステム
+R1	Coreference Arg1:T12 Arg2:T10	
+R2	Coreference Arg1:T13 Arg2:T12	
+R3	Part-Whole Arg1:T10 Arg2:T1	
+R4	Part-Whole Arg1:T11 Arg2:T10	
+R5	Part-Whole Arg1:T4 Arg2:T1	

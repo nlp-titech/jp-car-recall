@@ -1,0 +1,24 @@
+T16	Parts 40 43	ポンプ
+T17	Parts 71 74	ブラシ
+T18	Parts 90 93	ポンプ
+T19	Parts 96 99	ブラシ
+T20	Parts 75 78	回転子
+T23	Parts 117 120	ポンプ
+T25	Parts 33 36	原動機
+T27	Parts 137 140	原動機
+T1	Parts 0 3	原動機
+T2	Parts 4 11	燃料供給ポンプ
+T3	Parts 16 20	サポート
+R1	Coreference Arg1:T1 Arg2:T25	
+R2	Coreference Arg1:T2 Arg2:T16	
+R3	Coreference Arg1:T16 Arg2:T18	
+R4	Coreference Arg1:T17 Arg2:T19	
+R5	Coreference Arg1:T18 Arg2:T23	
+R6	Coreference Arg1:T25 Arg2:T27	
+R7	Contact Arg1:T3 Arg2:T2	
+R8	Connect Arg1:T2 Arg2:T1	
+R9	Part-Whole Arg1:T19 Arg2:T18	
+R10	Part-Whole Arg1:T20 Arg2:T18	
+T4	Parts 125 127	燃料
+R11	Contact Arg1:T4 Arg2:T27	
+R12	Contact Arg1:T4 Arg2:T23	

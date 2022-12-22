@@ -1,0 +1,12 @@
+T1	Parts 0 4	エンジン
+T2	Parts 9 19	エアコンコンデンサー
+T3	Parts 28 39	遮風用インシュレーター
+T4	Parts 60 68	インシュレーター
+R1	Coreference Arg1:T3 Arg2:T4	
+T5	Parts 96 104	インシュレーター
+R2	Coreference Arg1:T4 Arg2:T5	
+T6	Parts 105 108	排気管
+T7	Parts 119 127	インシュレーター
+R3	Coreference Arg1:T5 Arg2:T7	
+R5	Contact Arg1:T3 Arg2:T2	
+R4	Contact Arg1:T1 Arg2:T6	

@@ -1,0 +1,9 @@
+T2	Parts 22 33	ギヤシフトリヤシャフト
+T3	Parts 66 77	ギヤシフトリヤシャフト
+T4	Parts 95 106	ギヤシフトリヤシャフト
+T6	Parts 54 57	シフト
+T12	Parts 0 17	マニュアルトランスミッション仕様車
+R1	Coreference Arg1:T4 Arg2:T3	
+R2	Coreference Arg1:T3 Arg2:T2	
+R4	Part-Whole Arg1:T3 Arg2:T6	
+R3	Part-Whole Arg1:T6 Arg2:T12	

@@ -1,0 +1,5 @@
+T1	Parts 0 4	マフラー
+T2	Parts 5 13	排気テールパイプ
+T5	Parts 91 99	排気テールパイプ
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R1	Coreference Arg1:T2 Arg2:T5	

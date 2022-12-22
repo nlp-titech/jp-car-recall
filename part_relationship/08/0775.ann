@@ -1,0 +1,19 @@
+T12	Parts 36 39	プラグ
+T13	Parts 78 81	プラグ
+T14	Parts 107 110	プラグ
+T15	Parts 119 124	オーリング
+T16	Parts 27 35	高圧レギュレータ
+T1	Parts 20 22	燃料
+T2	Parts 53 57	エンジン
+T3	Parts 66 68	ガス
+R1	Coreference Arg1:T13 Arg2:T12	
+R2	Coreference Arg1:T14 Arg2:T13	
+T4	Parts 129 131	燃料
+R3	Coreference Arg1:T4 Arg2:T1	
+T5	Parts 0 15	圧縮天然ガス自動車（ＣＮＧ車）
+R4	Contact Arg1:T1 Arg2:T16	
+R5	Part-Whole Arg1:T16 Arg2:T5	
+R6	Part-Whole Arg1:T12 Arg2:T16	
+R7	Part-Whole Arg1:T2 Arg2:T5	
+R8	Contact Arg1:T3 Arg2:T2	
+R9	Contact Arg1:T15 Arg2:T14	

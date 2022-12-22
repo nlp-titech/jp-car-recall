@@ -1,0 +1,16 @@
+T18	Parts 50 54	エンジン
+T21	Parts 71 75	マウント
+T22	Parts 76 78	ゴム
+T23	Parts 114 126	エンジンフロントマウント
+T1	Parts 0 4	エンジン
+T2	Parts 11 21	エンジンリヤマウント
+T3	Parts 26 30	防振ゴム
+T4	Parts 137 147	変速機操作力伝達機構
+T5	Parts 148 151	原動機
+R1	Coreference Arg1:T1 Arg2:T18	
+R2	Coreference Arg1:T2 Arg2:T21	
+R3	Coreference Arg1:T3 Arg2:T22	
+R4	Contact Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T3 Arg2:T2	
+R6	Contact Arg1:T23 Arg2:T1	
+R8	Coreference Arg1:T5 Arg2:T1	

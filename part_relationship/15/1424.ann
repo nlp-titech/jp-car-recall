@@ -1,0 +1,18 @@
+T16	Parts 14 19	リンク機構
+T17	Parts 20 24	ブッシュ
+T18	Parts 52 56	ブッシュ
+T19	Parts 76 81	リンク機構
+T20	Parts 112 117	リンク機構
+T21	Parts 122 128	スタビライザ
+T1	Parts 0 6	スタビライザ
+T2	Parts 7 9	車台
+R1	Coreference Arg1:T1 Arg2:T21	
+R2	Coreference Arg1:T16 Arg2:T19	
+R3	Coreference Arg1:T17 Arg2:T18	
+T3	Parts 34 45	フロントサスペンション
+R4	Coreference Arg1:T19 Arg2:T20	
+R5	Connect Arg1:T1 Arg2:T2	
+R7	Contact Arg1:T2 Arg2:T16	
+R8	Part-Whole Arg1:T17 Arg2:T16	
+R6	Contact Arg1:T1 Arg2:T16	
+R9	Connect Arg1:T1 Arg2:T3	

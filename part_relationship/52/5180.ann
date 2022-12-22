@@ -1,0 +1,5 @@
+T2	Parts 41 47	マニホールド
+T4	Parts 30 32	車両
+T1	Parts 0 14	右側エキゾーストマニホールド
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Part-Whole Arg1:T1 Arg2:T4	

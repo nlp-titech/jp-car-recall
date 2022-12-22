@@ -1,0 +1,22 @@
+T18	Parts 43 51	ペダルブラケット
+T19	Parts 26 30	スイッチ
+T21	Parts 86 90	スイッチ
+T22	Parts 150 154	シャフト
+T24	Parts 159 163	スイッチ
+T2	Parts 8 19	ストップランプスイッチ
+T3	Parts 57 61	グリース
+T4	Parts 63 72	リターンスプリング
+T5	Parts 79 82	防錆油
+R1	Coreference Arg1:T19 Arg2:T2	
+R2	Coreference Arg1:T21 Arg2:T19	
+T6	Parts 193 196	制動灯
+R3	Coreference Arg1:T24 Arg2:T21	
+T1	Parts 0 7	自動変速機付車
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Contact Arg1:T3 Arg2:T18	
+R6	Contact Arg1:T4 Arg2:T5	
+R7	Part-Whole Arg1:T18 Arg2:T1	
+R8	Contact Arg1:T22 Arg2:T24	
+R9	Part-Whole Arg1:T6 Arg2:T1	
+T7	Parts 172 175	シフト
+R10	Part-Whole Arg1:T7 Arg2:T1	

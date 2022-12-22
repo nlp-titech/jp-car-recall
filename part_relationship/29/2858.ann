@@ -1,0 +1,7 @@
+T1	Parts 0 5	放送中継車
+T2	Parts 6 20	サイレンサ用ヒートプロテクタ
+T3	Parts 42 44	車両
+T5	Parts 105 113	ヒートプロテクタ
+R1	Coreference Arg1:T5 Arg2:T2	
+R2	Coreference Arg1:T3 Arg2:T1	
+R3	Part-Whole Arg1:T2 Arg2:T1	

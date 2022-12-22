@@ -1,0 +1,13 @@
+T1	Parts 0 2	バス
+T2	Parts 3 5	中扉
+T3	Parts 15 23	反転式スロープ板
+T4	Parts 28 31	取っ手
+T5	Parts 44 47	取っ手
+T6	Parts 54 57	取っ手
+T7	Parts 78 81	取っ手
+R1	Coreference Arg1:T4 Arg2:T5	
+R2	Coreference Arg1:T5 Arg2:T6	
+R3	Coreference Arg1:T6 Arg2:T7	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T4 Arg2:T3	
+R6	Contact Arg1:T2 Arg2:T3	

@@ -1,0 +1,5 @@
+T1	Parts 11 23	ステアリングギアボックス
+T2	Parts 0 6	かじ取り装置
+T3	Parts 88 92	ハンドル
+R1	Connect Arg1:T3 Arg2:T2	
+R2	Part-Whole Arg1:T1 Arg2:T2	

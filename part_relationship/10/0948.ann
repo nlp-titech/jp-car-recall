@@ -1,0 +1,17 @@
+T19	Parts 38 44	ダストブーツ
+T21	Parts 74 81	樹脂ベアリング
+T22	Parts 60 65	ジョイント
+T23	Parts 132 140	ボールジョイント
+T24	Parts 141 146	タイロッド
+T1	Parts 16 24	タイロッドエンド
+T2	Parts 25 33	ボールジョイント
+R1	Coreference Arg1:T22 Arg2:T2	
+R2	Coreference Arg1:T23 Arg2:T22	
+T3	Parts 9 15	小型トラック
+R5	Contact Arg1:T19 Arg2:T2	
+R7	Part-Whole Arg1:T21 Arg2:T1	
+R9	Part-Whole Arg1:T24 Arg2:T3	
+R3	Part-Whole Arg1:T1 Arg2:T24	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R6	Part-Whole Arg1:T19 Arg2:T1	
+R10	Contact Arg1:T22 Arg2:T21	

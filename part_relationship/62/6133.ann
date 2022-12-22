@@ -1,0 +1,10 @@
+T2	Parts 63 78	ピストンアクチエーションアーム
+T3	Parts 0 28	エレクトロニックパーキングブレーキコントロールモジュール
+T4	Parts 42 59	エレクトロニックパーキングブレーキ
+T5	Parts 97 103	リアブレーキ
+T6	Parts 119 125	リアブレーキ
+R2	Part-Whole Arg1:T3 Arg2:T4	
+R3	Connect Arg1:T3 Arg2:T2	
+R4	Contact Arg1:T2 Arg2:T5	
+R5	Coreference Arg1:T5 Arg2:T6	
+R1	Connect Arg1:T3 Arg2:T5	

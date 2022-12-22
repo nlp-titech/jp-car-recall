@@ -1,0 +1,10 @@
+T1	Parts 1 10	バッテリーケーブル
+T2	Parts 80 89	バッテリーケーブル
+T3	Parts 11 21	エアコンディショナー
+T4	Parts 28 31	パイプ
+T5	Parts 22 27	冷媒用配管
+T6	Parts 100 102	配線
+R1	Part-Whole Arg1:T4 Arg2:T5	
+R2	Coreference Arg1:T2 Arg2:T1	
+R3	Connect Arg1:T5 Arg2:T3	
+R4	Coreference Arg1:T6 Arg2:T2	

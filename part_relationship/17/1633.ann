@@ -1,0 +1,13 @@
+T14	Parts 42 46	アクスル
+T15	Parts 19 27	アクスルストッパ
+T16	Parts 47 52	ストッパー
+T1	Parts 6 11	化学消防車
+T2	Parts 16 18	車枠
+R1	Coreference Arg1:T15 Arg2:T16	
+T3	Parts 60 62	車枠
+R2	Coreference Arg1:T2 Arg2:T3	
+T4	Parts 106 108	車枠
+R3	Coreference Arg1:T3 Arg2:T4	
+R4	Part-Whole Arg1:T15 Arg2:T2	
+R5	Contact Arg1:T16 Arg2:T14	
+R6	Part-Whole Arg1:T2 Arg2:T1	

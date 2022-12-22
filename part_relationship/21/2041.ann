@@ -1,0 +1,12 @@
+T1	Parts 22 27	ロアアーム
+T2	Parts 31 44	ロアアームボールジョイント
+T3	Parts 52 55	ボルト
+T4	Parts 70 73	ボルト
+T5	Parts 113 116	ボルト
+T6	Parts 128 131	ボルト
+R1	Coreference Arg1:T6 Arg2:T5	
+R2	Coreference Arg1:T5 Arg2:T4	
+R3	Coreference Arg1:T4 Arg2:T3	
+R4	Contact Arg1:T2 Arg2:T1	
+R5	Contact Arg1:T3 Arg2:T2	
+R6	Contact Arg1:T3 Arg2:T1	

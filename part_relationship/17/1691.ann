@@ -1,0 +1,11 @@
+T18	Parts 132 138	トランスファ
+T19	Parts 123 127	取付金具
+T20	Parts 21 39	動力分配装置（トランスファ）取付金具
+T21	Parts 71 75	取付金具
+T1	Parts 0 9	コンクリート作業車
+T2	Parts 14 16	車両
+R1	Coreference Arg1:T20 Arg2:T21	
+R2	Coreference Arg1:T21 Arg2:T19	
+R3	Coreference Arg1:T2 Arg2:T1	
+R4	Contact Arg1:T18 Arg2:T19	
+R6	Part-Whole Arg1:T18 Arg2:T2	

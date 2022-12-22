@@ -1,0 +1,9 @@
+T1	Parts 0 13	ドアスピーカーホールカバー
+T2	Parts 37 40	カバー
+T3	Parts 68 70	ドア
+T4	Parts 73 82	エアバッグセンサー
+T5	Parts 97 105	サイドエアバッグ
+R1	Coreference Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T4 Arg2:T3	
+R3	Connect Arg1:T5 Arg2:T4	
+R4	Contact Arg1:T1 Arg2:T3	

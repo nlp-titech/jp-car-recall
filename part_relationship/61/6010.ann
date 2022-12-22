@@ -1,0 +1,16 @@
+T1	Parts 0 11	スロットルペダルレバー
+T4	Parts 77 85	スロットルペダル
+T7	Parts 104 110	左ハンドル車
+T8	Parts 126 136	足元スカッフプレート
+T10	Parts 33 44	スロットルペダルレバー
+T11	Parts 60 71	スロットルペダルレバー
+T14	Parts 161 172	スロットルペダルレバー
+T18	Parts 137 148	スロットルペダルレバー
+R1	Coreference Arg1:T1 Arg2:T10	
+R6	Part-Whole Arg1:T8 Arg2:T7	
+R2	Coreference Arg1:T10 Arg2:T11	
+R4	Coreference Arg1:T11 Arg2:T18	
+R5	Coreference Arg1:T18 Arg2:T14	
+R7	Part-Whole Arg1:T4 Arg2:T7	
+R3	Contact Arg1:T11 Arg2:T4	
+R8	Part-Whole Arg1:T11 Arg2:T7	

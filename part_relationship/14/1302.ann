@@ -1,0 +1,8 @@
+T18	Parts 95 99	クラッチ
+T19	Parts 61 65	クラッチ
+T20	Parts 0 8	クラッチシャフト
+T23	Parts 9 14	操作レバー
+R2	Coreference Arg1:T19 Arg2:T18	
+R1	Contact Arg1:T23 Arg2:T20	
+R3	Part-Whole Arg1:T20 Arg2:T19	
+R4	Connect Arg1:T23 Arg2:T19	

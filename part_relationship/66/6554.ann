@@ -1,0 +1,13 @@
+T1	Parts 12 23	スイングアームピボット
+T2	Parts 38 49	スイングアームピボット
+T3	Parts 135 142	スイングアーム
+T4	Parts 0 7	メインフレーム
+T5	Parts 84 94	ピボット用固定ボルト
+T6	Parts 151 155	ホイール
+T7	Parts 128 131	ボルト
+R1	Part-Whole Arg1:T1 Arg2:T4	
+R2	Coreference Arg1:T1 Arg2:T2	
+R3	Coreference Arg1:T7 Arg2:T5	
+R4	Contact Arg1:T3 Arg2:T2	
+R5	Contact Arg1:T6 Arg2:T3	
+R6	Contact Arg1:T5 Arg2:T2	

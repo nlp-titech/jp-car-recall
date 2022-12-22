@@ -1,0 +1,15 @@
+T1	Parts 0 4	大型バス
+T2	Parts 5 13	クラッチスイッチ
+T3	Parts 18 20	車両
+T4	Parts 34 43	可動接点用シャフト
+T5	Parts 44 53	リターンスプリング
+T6	Parts 86 90	クラッチ
+T7	Parts 105 111	補助制動装置
+R1	Oneway-Coreference Arg1:T1 Arg2:T3	
+R2	Part-Whole Arg1:T2 Arg2:T3	
+R3	Connect Arg1:T4 Arg2:T5	
+R4	Part-Whole Arg1:T4 Arg2:T2	
+R5	Part-Whole Arg1:T5 Arg2:T2	
+R6	Connect Arg1:T2 Arg2:T6	
+R7	Connect Arg1:T6 Arg2:T7	
+R8	Part-Whole Arg1:T7 Arg2:T3	

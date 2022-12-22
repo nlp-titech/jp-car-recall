@@ -1,0 +1,10 @@
+T10	Parts 44 47	ファン
+T11	Parts 84 87	ファン
+T12	Parts 97 101	エンジン
+T13	Parts 29 33	ブレード
+T1	Parts 0 7	ロータリ除雪車
+T2	Parts 8 12	エンジン
+T3	Parts 18 28	ラジエタ―冷却ファン
+R1	Coreference Arg1:T3 Arg2:T10	
+R2	Coreference Arg1:T10 Arg2:T11	
+R3	Coreference Arg1:T2 Arg2:T12	

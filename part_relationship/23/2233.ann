@@ -1,0 +1,11 @@
+T14	Parts 1 4	原動機
+T16	Parts 32 39	固定用クランプ
+T17	Parts 76 79	原動機
+T1	Parts 5 14	オルタネータ用配線
+T2	Parts 29 31	配線
+R1	Coreference Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T17 Arg2:T14	
+T3	Parts 87 89	配線
+R3	Coreference Arg1:T3 Arg2:T2	
+R4	Part-Whole Arg1:T1 Arg2:T14	
+R5	Contact Arg1:T16 Arg2:T2	

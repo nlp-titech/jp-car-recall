@@ -1,0 +1,13 @@
+T2	Parts 41 48	フロントパネル
+T3	Parts 60 67	フロントパネル
+T4	Parts 0 6	小型トラック
+T5	Parts 89 94	エアバッグ
+T8	Parts 70 77	ＥＣＵ取付金具
+T9	Parts 11 26	運転席用エアバッグＥＣＵ用配線
+T10	Parts 57 59	配線
+R1	Coreference Arg1:T9 Arg2:T10	
+R4	Coreference Arg1:T2 Arg2:T3	
+R3	Part-Whole Arg1:T5 Arg2:T4	
+R2	Part-Whole Arg1:T9 Arg2:T4	
+R5	Contact Arg1:T10 Arg2:T8	
+R6	Contact Arg1:T10 Arg2:T5	

@@ -1,0 +1,18 @@
+T1	Parts 0 6	動力伝達装置
+T2	Parts 52 61	ダンパースプリング
+T3	Parts 11 15	クラッチ
+T8	Parts 18 26	ダンパープレート
+T9	Parts 69 77	ダンパープレート
+T10	Parts 110 118	ダンパープレート
+T12	Parts 132 135	減速機
+T13	Parts 136 138	ギア
+T14	Parts 144 146	後輪
+R1	Part-Whole Arg1:T8 Arg2:T3	
+R2	Part-Whole Arg1:T3 Arg2:T1	
+R3	Coreference Arg1:T8 Arg2:T9	
+R4	Part-Whole Arg1:T13 Arg2:T12	
+R5	Contact Arg1:T2 Arg2:T9	
+R6	Coreference Arg1:T9 Arg2:T10	
+R7	Part-Whole Arg1:T12 Arg2:T1	
+R9	Part-Whole Arg1:T2 Arg2:T3	
+R8	Connect Arg1:T12 Arg2:T14	

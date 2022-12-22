@@ -1,0 +1,13 @@
+T1	Parts 0 6	静油圧変速機
+T2	Parts 7 19	前進および後進ソレノイド
+T3	Parts 24 26	配線
+T4	Parts 39 41	配線
+R1	Coreference Arg1:T3 Arg2:T4	
+T5	Parts 86 88	配線
+R2	Coreference Arg1:T4 Arg2:T5	
+#1	AnnotatorNotes T2	前進ソレノイドと後進ソレノイドは独立して存在する。
+R3	Contact Arg1:T3 Arg2:T2	
+T7	Parts 78 80	車体
+R7	Part-Whole Arg1:T1 Arg2:T7	
+R8	Part-Whole Arg1:T5 Arg2:T7	
+R4	Contact Arg1:T2 Arg2:T1	

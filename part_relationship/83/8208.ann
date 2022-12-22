@@ -1,0 +1,7 @@
+T1	Parts 6 9	速度計
+T2	Parts 11 16	走行距離計
+T3	Parts 21 24	計器盤
+T4	Parts 32 39	コンピューター
+R1	Part-Whole Arg1:T3 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T2	
+R3	Part-Whole Arg1:T4 Arg2:T3	

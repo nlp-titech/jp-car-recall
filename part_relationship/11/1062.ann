@@ -1,0 +1,9 @@
+T1	Parts 0 11	ブレーキ液漏れ警報装置
+T2	Parts 12 16	電気配線
+T3	Parts 29 34	ブレーキ液
+T4	Parts 42 45	警告灯
+T5	Parts 47 52	警報ブザー
+R1	Contact Arg1:T2 Arg2:T1	
+R2	Connect Arg1:T3 Arg2:T1	
+R3	Part-Whole Arg1:T1 Arg2:T4	
+R4	Part-Whole Arg1:T1 Arg2:T5	

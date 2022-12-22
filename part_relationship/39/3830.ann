@@ -1,0 +1,25 @@
+T1	Parts 102 111	後輪ドラムブレーキ
+T2	Parts 118 125	ブレーキシュー
+T3	Parts 21 27	オイルシール
+T4	Parts 46 52	オイルシール
+T5	Parts 161 167	駐車ブレーキ
+T6	Parts 0 6	後輪アクスル
+T7	Parts 38 45	アクスルケース
+T8	Parts 70 74	アクスル
+T10	Parts 126 131	デフオイル
+T11	Parts 11 16	デフオイル
+T14	Parts 81 86	デフオイル
+T17	Parts 138 140	後輪
+R1	Coreference Arg1:T14 Arg2:T11	
+R2	Coreference Arg1:T8 Arg2:T6	
+R3	Part-Whole Arg1:T7 Arg2:T6	
+R4	Coreference Arg1:T4 Arg2:T3	
+R5	Contact Arg1:T3 Arg2:T11	
+R6	Contact Arg1:T4 Arg2:T7	
+R7	Part-Whole Arg1:T2 Arg2:T1	
+R8	Coreference Arg1:T10 Arg2:T14	
+R9	Connect Arg1:T17 Arg2:T6	
+R10	Contact Arg1:T17 Arg2:T1	
+R11	Connect Arg1:T5 Arg2:T1	
+R12	Connect Arg1:T1 Arg2:T6	
+R13	Connect Arg1:T5 Arg2:T17	

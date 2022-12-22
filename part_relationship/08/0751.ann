@@ -1,0 +1,27 @@
+T14	Parts 80 84	ピストン
+T15	Parts 108 112	ピストン
+T16	Parts 69 74	スプリング
+T17	Parts 49 58	抜け止めスプリング
+T18	Parts 46 48	ピン
+T19	Parts 127 131	ブレーキ
+T20	Parts 143 147	ブレーキ
+T1	Parts 0 4	制動装置
+T2	Parts 5 13	ブレーキブースタ
+T3	Parts 14 25	ハイドロリックピストン
+T4	Parts 29 33	ピストン
+T5	Parts 34 41	プッシュロッド
+R1	Coreference Arg1:T4 Arg2:T3	
+R2	Coreference Arg1:T16 Arg2:T17	
+R3	Coreference Arg1:T14 Arg2:T4	
+T6	Parts 85 89	シリンダ
+R4	Coreference Arg1:T15 Arg2:T14	
+R5	Coreference Arg1:T20 Arg2:T19	
+R6	Part-Whole Arg1:T2 Arg2:T1	
+R7	Part-Whole Arg1:T3 Arg2:T2	
+R8	Connect Arg1:T5 Arg2:T4	
+R9	Contact Arg1:T4 Arg2:T18	
+R10	Contact Arg1:T5 Arg2:T18	
+R11	Contact Arg1:T17 Arg2:T18	
+R13	Part-Whole Arg1:T19 Arg2:T1	
+R12	Part-Whole Arg1:T6 Arg2:T2	
+R14	Part-Whole Arg1:T5 Arg2:T2	

@@ -1,0 +1,16 @@
+T14	Parts 111 117	駐車ブレーキ
+T15	Parts 80 89	駐車ブレーキペダル
+T16	Parts 104 107	ナット
+T17	Parts 23 26	ナット
+T18	Parts 49 54	調整ナット
+T19	Parts 43 48	固定ナット
+T1	Parts 0 9	駐車ブレーキペダル
+T2	Parts 10 18	踏み代調整ナット
+R1	Coreference Arg1:T1 Arg2:T15	
+R2	Coreference Arg1:T2 Arg2:T18	
+R3	Coreference Arg1:T17 Arg2:T19	
+R4	Oneway-Coreference Arg1:T16 Arg2:T19	
+R5	Oneway-Coreference Arg1:T16 Arg2:T18	
+R8	Contact Arg1:T2 Arg2:T17	
+R9	Connect Arg1:T15 Arg2:T14	
+R6	Contact Arg1:T1 Arg2:T2	

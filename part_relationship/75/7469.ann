@@ -1,0 +1,11 @@
+T1	Parts 0 19	ＡＢＳ（アンチロックブレーキシステム）
+T2	Parts 20 31	ハイドロリックユニット
+T3	Parts 81 84	ＡＢＳ
+T4	Parts 95 98	逆止弁
+T5	Parts 104 106	前輪
+T6	Parts 110 112	後輪
+R1	Coreference Arg1:T1 Arg2:T3	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R4	Connect Arg1:T3 Arg2:T5	
+R5	Connect Arg1:T3 Arg2:T6	
+R3	Part-Whole Arg1:T4 Arg2:T2	

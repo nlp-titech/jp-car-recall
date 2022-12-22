@@ -1,0 +1,14 @@
+T1	Parts 0 7	ショベルローダ
+T2	Parts 8 13	燃料ポンプ
+T3	Parts 18 21	ポンプ
+T4	Parts 50 53	モータ
+T5	Parts 64 71	モーターブラシ
+T6	Parts 97 102	燃料ポンプ
+T7	Parts 121 125	エンジン
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T2 Arg2:T3	
+R3	Part-Whole Arg1:T5 Arg2:T4	
+R4	Coreference Arg1:T3 Arg2:T6	
+R5	Part-Whole Arg1:T7 Arg2:T1	
+R6	Connect Arg1:T6 Arg2:T7	
+R7	Part-Whole Arg1:T4 Arg2:T3	

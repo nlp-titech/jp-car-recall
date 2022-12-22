@@ -1,0 +1,9 @@
+T1	Parts 11 20	ステアリングコラム
+T2	Parts 0 6	かじ取り装置
+T4	Parts 48 52	シャフト
+T5	Parts 60 68	センターシャフト
+T3	Parts 21 29	センターシャフト
+R1	Coreference Arg1:T3 Arg2:T4	
+R2	Coreference Arg1:T4 Arg2:T5	
+R3	Part-Whole Arg1:T1 Arg2:T2	
+R4	Part-Whole Arg1:T3 Arg2:T1	

@@ -1,0 +1,27 @@
+T18	Parts 23 42	ドライブピニオン部コンパニオンフランジ
+T19	Parts 73 83	コンパニオンフランジ
+T20	Parts 103 116	コンパニオンフランジナット
+T21	Parts 150 153	ナット
+T22	Parts 163 173	コンパニオンフランジ
+T23	Parts 84 93	アウターベアリング
+T1	Parts 0 9	低床式後２軸駆動車
+T2	Parts 10 18	後後軸用終減速機
+T3	Parts 179 182	後前軸
+T4	Parts 183 186	後後軸
+T5	Parts 188 191	推進軸
+R1	Coreference Arg1:T18 Arg2:T19	
+R2	Coreference Arg1:T20 Arg2:T21	
+R3	Coreference Arg1:T19 Arg2:T22	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T18 Arg2:T2	
+R6	Contact Arg1:T19 Arg2:T23	
+R8	Part-Whole Arg1:T23 Arg2:T2	
+R9	Connect Arg1:T3 Arg2:T4	
+R10	Connect Arg1:T3 Arg2:T5	
+R11	Connect Arg1:T4 Arg2:T5	
+R12	Contact Arg1:T22 Arg2:T5	
+R13	Part-Whole Arg1:T5 Arg2:T1	
+R14	Part-Whole Arg1:T3 Arg2:T1	
+R15	Part-Whole Arg1:T4 Arg2:T1	
+R16	Connect Arg1:T2 Arg2:T4	
+R7	Contact Arg1:T19 Arg2:T20	

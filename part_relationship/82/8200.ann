@@ -1,0 +1,13 @@
+T1	Parts 0 2	前席
+T2	Parts 3 13	シートベルトバックル
+T3	Parts 34 40	シートベルト
+T4	Parts 62 68	シートベルト
+T5	Parts 80 83	警告灯
+T6	Parts 101 115	点火式シートベルトテンショナ
+R1	Contact Arg1:T1 Arg2:T2	
+R2	Contact Arg1:T3 Arg2:T2	
+R3	Contact Arg1:T3 Arg2:T1	
+R4	Coreference Arg1:T4 Arg2:T3	
+R5	Connect Arg1:T5 Arg2:T2	
+R6	Connect Arg1:T6 Arg2:T2	
+R7	Connect Arg1:T4 Arg2:T6	

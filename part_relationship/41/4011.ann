@@ -1,0 +1,12 @@
+T1	Parts 7 16	旋回用静油圧変速機
+T2	Parts 83 92	旋回用静油圧変速機
+T3	Parts 0 6	農耕トラクタ
+T5	Parts 69 76	緊急操作レバー
+T6	Parts 40 43	レバー
+T4	Parts 21 28	緊急操作レバー
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Coreference Arg1:T4 Arg2:T6	
+R3	Coreference Arg1:T6 Arg2:T5	
+R4	Part-Whole Arg1:T1 Arg2:T3	
+R5	Part-Whole Arg1:T4 Arg2:T3	
+R6	Part-Whole Arg1:T1 Arg2:T4	

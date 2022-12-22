@@ -1,0 +1,19 @@
+T13	Parts 29 38	サブリターンホース
+T14	Parts 45 48	ホース
+T15	Parts 76 79	ホース
+T16	Parts 80 86	ヒータホース
+T17	Parts 87 91	クリッブ
+T18	Parts 128 131	ホース
+T1	Parts 0 6	かじ取り装置
+T2	Parts 8 12	制動装置
+T3	Parts 24 28	油圧系統
+R1	Coreference Arg1:T14 Arg2:T13	
+R2	Coreference Arg1:T15 Arg2:T14	
+T4	Parts 135 138	作動油
+R3	Coreference Arg1:T18 Arg2:T15	
+R4	Part-Whole Arg1:T3 Arg2:T1	
+R5	Part-Whole Arg1:T3 Arg2:T2	
+R6	Part-Whole Arg1:T13 Arg2:T3	
+R7	Part-Whole Arg1:T16 Arg2:T3	
+R8	Part-Whole Arg1:T17 Arg2:T16	
+R9	Contact Arg1:T18 Arg2:T4	

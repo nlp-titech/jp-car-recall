@@ -1,0 +1,12 @@
+T11	Parts 0 13	燃料フィルタ取付ブラケット
+T12	Parts 26 31	ブラケット
+T13	Parts 70 75	ブラケット
+T14	Parts 76 81	取付ボルト
+T15	Parts 92 98	燃料フィルタ
+R1	Coreference Arg1:T11 Arg2:T12	
+T1	Parts 32 36	エンジン
+R2	Coreference Arg1:T12 Arg2:T13	
+T2	Parts 102 104	燃料
+R3	Contact Arg1:T14 Arg2:T13	
+R4	Contact Arg1:T2 Arg2:T15	
+R5	Contact Arg1:T13 Arg2:T15	

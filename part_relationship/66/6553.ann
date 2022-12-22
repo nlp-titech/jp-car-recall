@@ -1,0 +1,24 @@
+T1	Parts 61 73	エキゾーストマニホールド
+T2	Parts 19 31	ＡＢＳモジュレータバルブ
+T3	Parts 9 17	マスターシリンダ
+T4	Parts 33 40	ブレーキパイプ
+T5	Parts 53 60	ブレーキパイプ
+T6	Parts 121 128	ブレーキパイプ
+T7	Parts 133 138	ブレーキ液
+T8	Parts 172 177	ブレーキ液
+T9	Parts 0 4	制動装置
+T11	Parts 142 145	警告灯
+T12	Parts 74 77	遮熱板
+T13	Parts 181 184	排気管
+R1	Contact Arg1:T2 Arg2:T4	
+R2	Contact Arg1:T3 Arg2:T4	
+R3	Coreference Arg1:T4 Arg2:T5	
+R4	Contact Arg1:T12 Arg2:T1	
+R5	Contact Arg1:T7 Arg2:T6	
+R6	Part-Whole Arg1:T3 Arg2:T9	
+R7	Part-Whole Arg1:T2 Arg2:T9	
+R8	Coreference Arg1:T7 Arg2:T8	
+R9	Coreference Arg1:T5 Arg2:T6	
+R10	Connect Arg1:T9 Arg2:T11	
+R11	Connect Arg1:T13 Arg2:T1	
+R12	Part-Whole Arg1:T4 Arg2:T9	

@@ -1,0 +1,19 @@
+T1	Parts 43 48	コネクター
+T2	Parts 25 32	接続コネクター
+T4	Parts 59 64	コネクター
+T5	Parts 9 14	燃料ポンプ
+T6	Parts 0 4	燃料装置
+T8	Parts 103 105	車両
+T10	Parts 56 58	燃料
+T11	Parts 82 84	燃料
+T12	Parts 22 24	配線
+T13	Parts 85 87	配線
+R1	Part-Whole Arg1:T5 Arg2:T6	
+R2	Contact Arg1:T5 Arg2:T12	
+R3	Part-Whole Arg1:T2 Arg2:T12	
+R4	Coreference Arg1:T2 Arg2:T1	
+R5	Coreference Arg1:T1 Arg2:T4	
+R6	Contact Arg1:T10 Arg2:T5	
+R7	Coreference Arg1:T10 Arg2:T11	
+R8	Coreference Arg1:T12 Arg2:T13	
+R9	Part-Whole Arg1:T6 Arg2:T8	

@@ -1,0 +1,9 @@
+T1	Parts 9 17	フューエルパイプ
+T2	Parts 0 4	燃料装置
+T3	Parts 86 88	車両
+T4	Parts 60 62	燃料
+T5	Parts 74 76	燃料
+R1	Part-Whole Arg1:T1 Arg2:T2	
+R2	Coreference Arg1:T4 Arg2:T5	
+R3	Contact Arg1:T1 Arg2:T4	
+R4	Part-Whole Arg1:T2 Arg2:T3	

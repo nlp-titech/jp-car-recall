@@ -1,0 +1,11 @@
+T1	Parts 0 11	電動パワーステアリング
+T2	Parts 80 89	パワーステアリング
+T3	Parts 16 22	制御ユニット
+T6	Parts 24 26	基板
+T7	Parts 105 107	基板
+T8	Parts 122 124	車両
+R2	Part-Whole Arg1:T6 Arg2:T3	
+R3	Coreference Arg1:T1 Arg2:T2	
+R4	Coreference Arg1:T6 Arg2:T7	
+R5	Part-Whole Arg1:T1 Arg2:T8	
+R1	Part-Whole Arg1:T3 Arg2:T1	

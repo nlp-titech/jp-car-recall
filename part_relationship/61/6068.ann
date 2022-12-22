@@ -1,0 +1,6 @@
+T1	Parts 0 11	インストルメントパネル
+T2	Parts 51 62	インストルメントパネル
+T3	Parts 29 35	シートベルト
+T4	Parts 22 25	助手席
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Contact Arg1:T4 Arg2:T3	

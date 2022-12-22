@@ -1,0 +1,11 @@
+T1	Parts 0 8	プロペラシャフト
+T2	Parts 13 24	コンクリートポンプ装置
+T3	Parts 52 57	締付ボルト
+T4	Parts 88 91	ボルト
+T5	Parts 98 100	車体
+T6	Parts 126 134	プロペラシャフト
+R1	Part-Whole Arg1:T1 Arg2:T2	
+R2	Contact Arg1:T3 Arg2:T1	
+R3	Part-Whole Arg1:T3 Arg2:T2	
+R4	Coreference Arg1:T4 Arg2:T3	
+R5	Coreference Arg1:T6 Arg2:T1	

@@ -1,0 +1,20 @@
+T13	Parts 53 60	抜け止めボルト
+T15	Parts 80 95	油圧ステアリングポンプシャフト
+T17	Parts 42 52	ステアリングシャフト
+T1	Parts 0 6	かじ取り装置
+T2	Parts 7 17	ステアリングシャフト
+T3	Parts 18 33	油圧ステアリングポンプシャフト
+T4	Parts 72 79	抜け止めボルト
+R1	Coreference Arg1:T15 Arg2:T3	
+T5	Parts 124 128	ハンドル
+R3	Coreference Arg1:T17 Arg2:T2	
+R2	Coreference Arg1:T4 Arg2:T13	
+T6	Parts 150 156	ステアリング
+R5	Part-Whole Arg1:T2 Arg2:T1	
+R6	Part-Whole Arg1:T3 Arg2:T1	
+R7	Contact Arg1:T2 Arg2:T3	
+R9	Contact Arg1:T3 Arg2:T13	
+R12	Connect Arg1:T1 Arg2:T5	
+R10	Coreference Arg1:T5 Arg2:T6	
+R8	Contact Arg1:T17 Arg2:T13	
+R4	Contact Arg1:T17 Arg2:T5	

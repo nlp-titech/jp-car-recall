@@ -1,0 +1,13 @@
+T17	Parts 24 30	ポンプボディ
+T18	Parts 55 58	ロータ
+T19	Parts 90 93	ロータ
+T20	Parts 108 111	ポンプ
+T1	Parts 0 5	無段変速機
+T3	Parts 13 19	オイルポンプ
+T7	Parts 46 49	ポンプ
+R1	Coreference Arg1:T18 Arg2:T19	
+R5	Part-Whole Arg1:T3 Arg2:T1	
+R7	Part-Whole Arg1:T17 Arg2:T3	
+R9	Coreference Arg1:T7 Arg2:T3	
+R10	Part-Whole Arg1:T18 Arg2:T7	
+R2	Coreference Arg1:T20 Arg2:T7	

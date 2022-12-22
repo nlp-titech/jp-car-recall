@@ -1,0 +1,10 @@
+T14	Parts 12 19	シフトケーブル
+T15	Parts 20 27	取付ブラケット
+T16	Parts 61 66	ブラケット
+T17	Parts 99 104	ブラケット
+T1	Parts 0 7	手動変速機付車
+R1	Coreference Arg1:T16 Arg2:T15	
+R2	Coreference Arg1:T17 Arg2:T16	
+R3	Part-Whole Arg1:T14 Arg2:T1	
+R4	Part-Whole Arg1:T15 Arg2:T1	
+R5	Contact Arg1:T15 Arg2:T14	

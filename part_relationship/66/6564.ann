@@ -1,0 +1,19 @@
+T1	Parts 11 21	駐車ブレーキケーブル
+T2	Parts 22 31	駐車ブレーキレバー
+T3	Parts 36 42	ロックナット
+T4	Parts 0 6	駐車ブレーキ
+T5	Parts 143 149	駐車ブレーキ
+T6	Parts 50 54	ケーブル
+T7	Parts 72 75	ナット
+T8	Parts 118 121	ナット
+T9	Parts 125 128	レバー
+R1	Contact Arg1:T2 Arg2:T3	
+R2	Contact Arg1:T1 Arg2:T3	
+R3	Part-Whole Arg1:T1 Arg2:T4	
+R4	Part-Whole Arg1:T2 Arg2:T4	
+R5	Coreference Arg1:T1 Arg2:T6	
+R6	Coreference Arg1:T3 Arg2:T7	
+R7	Coreference Arg1:T7 Arg2:T8	
+R8	Coreference Arg1:T2 Arg2:T9	
+R9	Coreference Arg1:T4 Arg2:T5	
+R10	Contact Arg1:T2 Arg2:T1	

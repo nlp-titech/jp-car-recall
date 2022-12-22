@@ -1,0 +1,17 @@
+T12	Parts 99 101	車両
+T13	Parts 111 116	燃料タンク
+T14	Parts 53 58	燃料タンク
+T15	Parts 37 45	燃料タンクバンド
+T16	Parts 15 20	燃料タンク
+T17	Parts 21 26	緩衝ラバー
+T1	Parts 0 4	路線バス
+T2	Parts 5 10	燃料タンク
+R1	Coreference Arg1:T2 Arg2:T16	
+R2	Coreference Arg1:T16 Arg2:T14	
+R3	Coreference Arg1:T14 Arg2:T13	
+T3	Parts 129 131	燃料
+R4	Part-Whole Arg1:T3 Arg2:T13	
+R5	Coreference Arg1:T12 Arg2:T1	
+R6	Contact Arg1:T14 Arg2:T15	
+R7	Contact Arg1:T17 Arg2:T16	
+R8	Part-Whole Arg1:T2 Arg2:T1	

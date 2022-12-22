@@ -1,0 +1,18 @@
+T1	Parts 0 8	フロントワイパー
+T2	Parts 80 88	フロントワイパー
+T3	Parts 118 126	フロントワイパー
+T4	Parts 13 21	ワイパーモーター
+T5	Parts 105 113	ワイパーモーター
+T6	Parts 41 49	リンケージロッド
+T7	Parts 92 100	リンケージロッド
+T10	Parts 29 36	ワイパーアーム
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Coreference Arg1:T6 Arg2:T7	
+R3	Contact Arg1:T4 Arg2:T6	
+R4	Contact Arg1:T6 Arg2:T10	
+R5	Coreference Arg1:T4 Arg2:T5	
+R6	Coreference Arg1:T2 Arg2:T3	
+R7	Part-Whole Arg1:T4 Arg2:T1	
+R8	Part-Whole Arg1:T10 Arg2:T1	
+R9	Part-Whole Arg1:T6 Arg2:T1	
+R10	Connect Arg1:T10 Arg2:T4	

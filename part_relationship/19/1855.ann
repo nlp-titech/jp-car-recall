@@ -1,0 +1,7 @@
+T1	Parts 0 10	掘削作業装置用ホース
+T2	Parts 21 31	ブレーキ用エアホース
+T3	Parts 63 65	車体
+T4	Parts 72 77	エアホース
+R1	Coreference Arg1:T4 Arg2:T2	
+R2	Contact Arg1:T3 Arg2:T4	
+R3	Contact Arg1:T1 Arg2:T3	

@@ -1,0 +1,5 @@
+T9	Parts 31 33	車枠
+T10	Parts 47 49	車枠
+R1	Coreference Arg1:T10 Arg2:T9	
+T1	Parts 0 2	車枠
+R2	Coreference Arg1:T1 Arg2:T9	

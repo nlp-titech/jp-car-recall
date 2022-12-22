@@ -1,0 +1,8 @@
+T1	Parts 39 47	インレットパイプ
+T2	Parts 0 8	樹脂製燃料タンク
+T3	Parts 30 35	燃料タンク
+T4	Parts 110 112	燃料
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Contact Arg1:T3 Arg2:T1	
+R3	Part-Whole Arg1:T4 Arg2:T3	
+R4	Contact Arg1:T4 Arg2:T1	

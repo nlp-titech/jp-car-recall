@@ -1,0 +1,19 @@
+T23	Parts 95 99	スイッチ
+T25	Parts 158 166	スイッチユニット
+T28	Parts 60 64	スイッチ
+T29	Parts 120 128	スイッチユニット
+T31	Parts 17 25	スイッチユニット
+T32	Parts 0 16	運転席側パワーウインドウスイッチ
+T3	Parts 76 80	スイッチ
+R3	Coreference Arg1:T23 Arg2:T3	
+R4	Coreference Arg1:T3 Arg2:T28	
+R6	Part-Whole Arg1:T31 Arg2:T32	
+R12	Coreference Arg1:T29 Arg2:T25	
+R2	Coreference Arg1:T28 Arg2:T31	
+R1	Coreference Arg1:T23 Arg2:T29	
+T1	Parts 173 178	外側カバー
+T2	Parts 167 169	半田
+T4	Parts 192 195	カバー
+R5	Coreference Arg1:T1 Arg2:T4	
+R7	Part-Whole Arg1:T2 Arg2:T25	
+R8	Part-Whole Arg1:T1 Arg2:T25	

@@ -1,0 +1,17 @@
+T1	Parts 0 17	ＤＰＦ（ディーゼル微粒子除去装置）
+T2	Parts 22 25	ＤＰＦ
+T3	Parts 53 59	コンピュータ
+T4	Parts 60 65	プログラム
+T5	Parts 73 76	ＤＰＦ
+T6	Parts 126 129	ＤＰＦ
+T7	Parts 140 148	排気温度センサー
+T8	Parts 153 160	エンジン警告灯
+R1	Coreference Arg1:T6 Arg2:T5	
+R2	Coreference Arg1:T5 Arg2:T2	
+R3	Coreference Arg1:T2 Arg2:T1	
+T9	Parts 171 174	ＤＰＦ
+R4	Coreference Arg1:T9 Arg2:T6	
+R5	Part-Whole Arg1:T3 Arg2:T2	
+R6	Part-Whole Arg1:T4 Arg2:T3	
+R7	Connect Arg1:T7 Arg2:T8	
+R8	Contact Arg1:T6 Arg2:T7	

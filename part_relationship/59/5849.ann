@@ -1,0 +1,9 @@
+T1	Parts 79 87	ブレーキフルード
+T2	Parts 11 28	ステンレスメッシュ製ブレーキホース
+T4	Parts 126 130	ブレーキ
+T5	Parts 33 36	ホース
+R1	Coreference Arg1:T2 Arg2:T5	
+T3	Parts 46 50	チューブ
+R2	Part-Whole Arg1:T3 Arg2:T5	
+R3	Part-Whole Arg1:T5 Arg2:T4	
+R4	Contact Arg1:T5 Arg2:T1	

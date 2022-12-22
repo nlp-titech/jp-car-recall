@@ -1,0 +1,10 @@
+T14	Parts 0 13	リレーエマージェンシバルブ
+T15	Parts 15 22	チェックバルブ
+T16	Parts 32 35	バルブ
+R1	Coreference Arg1:T16 Arg2:T15	
+T2	Parts 96 100	ブレーキ
+T3	Parts 79 85	駐車ブレーキ
+R2	Coreference Arg1:T2 Arg2:T3	
+R3	Part-Whole Arg1:T15 Arg2:T14	
+T4	Parts 58 62	トラクタ
+R4	Connect Arg1:T3 Arg2:T14	

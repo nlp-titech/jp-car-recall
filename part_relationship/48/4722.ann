@@ -1,0 +1,15 @@
+T1	Parts 5 14	マスターシリンダー
+T2	Parts 19 27	リザーバータンク
+T3	Parts 88 93	ブレーキ液
+T4	Parts 37 41	コネクタ
+T5	Parts 70 74	コネクタ
+T6	Parts 0 4	制動装置
+T7	Parts 29 32	ホース
+R1	Part-Whole Arg1:T1 Arg2:T6	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Contact Arg1:T2 Arg2:T7	
+R4	Contact Arg1:T2 Arg2:T4	
+R5	Contact Arg1:T7 Arg2:T4	
+R6	Coreference Arg1:T4 Arg2:T5	
+R7	Contact Arg1:T7 Arg2:T3	
+R8	Part-Whole Arg1:T3 Arg2:T2	

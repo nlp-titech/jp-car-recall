@@ -1,0 +1,18 @@
+T1	Parts 13 21	アクセルケーブル
+T2	Parts 44 52	アクセルケーブル
+T3	Parts 92 100	アクセルケーブル
+T4	Parts 22 29	アクセルペダル
+T5	Parts 101 108	アクセルペダル
+T6	Parts 4 8	加速装置
+T7	Parts 0 3	原動機
+T8	Parts 113 116	原動機
+T9	Parts 53 59	樹脂製留め具
+R1	Connect Arg1:T6 Arg2:T7	
+R2	Part-Whole Arg1:T1 Arg2:T6	
+R3	Contact Arg1:T1 Arg2:T4	
+R4	Coreference Arg1:T1 Arg2:T2	
+R5	Contact Arg1:T9 Arg2:T2	
+R6	Coreference Arg1:T1 Arg2:T3	
+R7	Contact Arg1:T1 Arg2:T5	
+R8	Coreference Arg1:T7 Arg2:T8	
+R9	Part-Whole Arg1:T4 Arg2:T6	

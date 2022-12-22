@@ -1,0 +1,16 @@
+T14	Parts 53 56	ポンプ
+T15	Parts 107 110	ポンプ
+T16	Parts 57 59	軸受
+T1	Parts 0 6	かじ取り装置
+T3	Parts 27 33	駆動用ベルト
+T4	Parts 64 67	作動油
+T5	Parts 86 90	ハンドル
+R2	Coreference Arg1:T15 Arg2:T14	
+T2	Parts 11 26	パワーステアリング用油圧ポンプ
+R1	Coreference Arg1:T14 Arg2:T2	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T3 Arg2:T1	
+R5	Part-Whole Arg1:T16 Arg2:T14	
+R6	Contact Arg1:T4 Arg2:T14	
+R7	Connect Arg1:T1 Arg2:T5	
+R8	Contact Arg1:T2 Arg2:T3	

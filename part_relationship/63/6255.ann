@@ -1,0 +1,12 @@
+T1	Parts 37 44	スナップリング
+T2	Parts 64 71	スナップリング
+T7	Parts 114 117	タイヤ
+T4	Parts 0 9	ドライブ・シャフト
+R1	Coreference Arg1:T1 Arg2:T2	
+T3	Parts 90 99	ドライブ・シャフト
+R2	Coreference Arg1:T4 Arg2:T3	
+T8	Parts 10 20	ホイール側ジョイント
+R7	Contact Arg1:T4 Arg2:T1	
+R8	Contact Arg1:T3 Arg2:T7	
+R5	Contact Arg1:T4 Arg2:T8	
+R3	Contact Arg1:T1 Arg2:T8	

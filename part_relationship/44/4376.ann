@@ -1,0 +1,13 @@
+T1	Parts 51 63	燃料蒸発ガス排出抑止装置
+T8	Parts 134 144	電動式補助冷却ファン
+T9	Parts 26 29	原動機
+T10	Parts 39 42	原動機
+T11	Parts 64 89	チャコールキャニスタ（燃料蒸発ガスを貯蔵する装置）
+T12	Parts 154 157	抵抗器
+T13	Parts 184 187	抵抗器
+R1	Coreference Arg1:T9 Arg2:T10	
+R2	Part-Whole Arg1:T1 Arg2:T10	
+R3	Part-Whole Arg1:T11 Arg2:T1	
+R5	Contact Arg1:T8 Arg2:T11	
+R6	Connect Arg1:T12 Arg2:T8	
+R8	Coreference Arg1:T12 Arg2:T13	

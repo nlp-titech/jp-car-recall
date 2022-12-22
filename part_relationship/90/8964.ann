@@ -1,0 +1,10 @@
+T1	Parts 39 53	フレキシブルカップリングハブ
+T2	Parts 58 64	シールリング
+T3	Parts 85 93	カップリングハブ
+T4	Parts 108 111	タイヤ
+T5	Parts 95 98	オイル
+T6	Parts 0 11	ファイナルドライブギア
+R1	Coreference Arg1:T1 Arg2:T3	
+R2	Part-Whole Arg1:T1 Arg2:T6	
+R3	Part-Whole Arg1:T2 Arg2:T6	
+R4	Contact Arg1:T3 Arg2:T5	

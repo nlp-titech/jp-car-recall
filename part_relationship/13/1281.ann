@@ -1,0 +1,11 @@
+T1	Parts 0 12	パワーステアリング装着車
+T2	Parts 17 24	ナックルアーム
+T3	Parts 62 65	アーム
+T4	Parts 106 113	ナックルアーム
+T5	Parts 197 200	対象車
+T6	Parts 179 182	対象車
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Coreference Arg1:T3 Arg2:T4	
+R3	Coreference Arg1:T6 Arg2:T5	
+R4	Coreference Arg1:T1 Arg2:T6	
+R5	Part-Whole Arg1:T2 Arg2:T1	

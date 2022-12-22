@@ -1,0 +1,20 @@
+T1	Parts 1 8	サイドスタンド
+T2	Parts 68 75	サイドスタンド
+T5	Parts 157 161	エンジン
+T6	Parts 122 133	サイドスタンドスイッチ
+T7	Parts 13 17	スクリュ
+T8	Parts 46 50	スクリュ
+T9	Parts 108 112	スクリュ
+T10	Parts 91 93	車両
+T11	Parts 134 136	配線
+R1	Contact Arg1:T1 Arg2:T7	
+R2	Coreference Arg1:T7 Arg2:T8	
+R3	Coreference Arg1:T1 Arg2:T2	
+R4	Part-Whole Arg1:T2 Arg2:T10	
+R5	Coreference Arg1:T8 Arg2:T9	
+R6	Part-Whole Arg1:T5 Arg2:T10	
+R7	Connect Arg1:T6 Arg2:T11	
+R8	Connect Arg1:T6 Arg2:T5	
+R9	Part-Whole Arg1:T6 Arg2:T10	
+R10	Contact Arg1:T2 Arg2:T6	
+R11	Part-Whole Arg1:T11 Arg2:T10	

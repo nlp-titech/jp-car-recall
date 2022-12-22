@@ -1,0 +1,11 @@
+T3	Parts 71 72	扉
+T4	Parts 43 47	ハンドル
+T10	Parts 5 13	車外操作ハンドル
+T13	Parts 0 4	非常口扉
+T14	Parts 28 32	ハンドル
+T1	Parts 67 68	車
+R1	Coreference Arg1:T14 Arg2:T10	
+R2	Coreference Arg1:T4 Arg2:T14	
+R3	Coreference Arg1:T3 Arg2:T13	
+R4	Part-Whole Arg1:T10 Arg2:T13	
+R5	Part-Whole Arg1:T3 Arg2:T1	

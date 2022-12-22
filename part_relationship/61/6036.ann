@@ -1,0 +1,6 @@
+T2	Parts 45 49	エンジン
+T3	Parts 0 18	ホリゾンタル側ラムダセンサーケーブル
+T4	Parts 33 44	ラムダセンサーケーブル
+T5	Parts 50 57	アンダーガード
+R1	Coreference Arg1:T3 Arg2:T4	
+R2	Contact Arg1:T2 Arg2:T5	

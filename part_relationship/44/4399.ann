@@ -1,0 +1,13 @@
+T1	Parts 0 5	バッテリー
+T2	Parts 18 22	電気配線
+T3	Parts 45 49	電気配線
+T4	Parts 77 81	電気配線
+T5	Parts 23 25	配線
+T7	Parts 7 10	分電器
+R1	Contact Arg1:T2 Arg2:T7	
+R2	Contact Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T5 Arg2:T2	
+R4	Coreference Arg1:T2 Arg2:T3	
+R5	Coreference Arg1:T3 Arg2:T4	
+T6	Parts 82 84	被覆
+R6	Part-Whole Arg1:T6 Arg2:T4	

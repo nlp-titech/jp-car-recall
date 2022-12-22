@@ -1,0 +1,10 @@
+T2	Parts 34 51	エア・コンディショナ用コンプレッサ
+T5	Parts 99 107	エンジン・オイル
+T6	Parts 52 56	クラッチ
+T8	Parts 0 12	エンジン・オイル・クーラ
+T9	Parts 13 23	アウトレット・ホース
+T10	Parts 85 88	ホース
+R1	Contact Arg1:T8 Arg2:T9	
+R2	Coreference Arg1:T9 Arg2:T10	
+R3	Contact Arg1:T10 Arg2:T5	
+R4	Part-Whole Arg1:T6 Arg2:T2	

@@ -1,0 +1,14 @@
+T12	Parts 84 96	ブレーキマスターシリンダ
+T14	Parts 0 12	ブレーキマスターシリンダ
+T1	Parts 13 24	ブレーキアクチュエータ
+T2	Parts 26 32	ブレーキ配管
+T3	Parts 43 45	配管
+R1	Coreference Arg1:T12 Arg2:T14	
+T4	Parts 112 119	ブレーキペダル
+R2	Coreference Arg1:T2 Arg2:T3	
+R3	Contact Arg1:T14 Arg2:T2	
+R4	Contact Arg1:T1 Arg2:T2	
+R5	Connect Arg1:T14 Arg2:T1	
+R6	Connect Arg1:T12 Arg2:T4	
+T5	Parts 102 105	シール
+R7	Part-Whole Arg1:T5 Arg2:T12	

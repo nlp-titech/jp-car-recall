@@ -1,0 +1,7 @@
+T1	Parts 0 13	運転席エアバッグコネクター
+T2	Parts 14 23	セカンドロックタブ
+T3	Parts 70 80	エアバッグコネクター
+T4	Parts 102 107	エアバック
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T3 Arg2:T1	
+R3	Contact Arg1:T3 Arg2:T4	

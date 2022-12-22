@@ -1,0 +1,13 @@
+T14	Parts 94 105	デファレンシャルカバー
+T1	Parts 0 3	前車軸
+T2	Parts 4 18	デファレンシャル（差動装置）
+T3	Parts 23 39	オイルシール（潤滑油用密封ゴム）
+T4	Parts 60 63	潤滑油
+T5	Parts 126 129	潤滑油
+T6	Parts 130 136	駐車制動装置
+R2	Contact Arg1:T1 Arg2:T2	
+R3	Part-Whole Arg1:T3 Arg2:T2	
+R4	Part-Whole Arg1:T4 Arg2:T2	
+R5	Part-Whole Arg1:T14 Arg2:T2	
+R7	Connect Arg1:T6 Arg2:T1	
+R1	Coreference Arg1:T4 Arg2:T5	

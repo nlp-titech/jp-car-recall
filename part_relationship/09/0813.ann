@@ -1,0 +1,25 @@
+T27	Parts 117 123	キースイッチ
+T28	Parts 1 7	キースイッチ
+T29	Parts 19 25	キースイッチ
+T30	Parts 144 150	キースイッチ
+T31	Parts 171 177	キースイッチ
+T32	Parts 178 184	主電源端子部
+R1	Coreference Arg1:T29 Arg2:T28	
+T3	Parts 74 81	スタータモータ
+T4	Parts 94 101	スタータモータ
+R2	Coreference Arg1:T4 Arg2:T3	
+R3	Coreference Arg1:T27 Arg2:T29	
+T5	Parts 124 130	取り付けねじ
+R4	Coreference Arg1:T30 Arg2:T27	
+R5	Coreference Arg1:T31 Arg2:T30	
+T6	Parts 189 197	ワイヤーハーネス
+T7	Parts 212 216	エンジン
+T1	Parts 28 31	主電源
+T2	Parts 34 44	始動（スタータ）電源
+R6	Contact Arg1:T29 Arg2:T1	
+R7	Contact Arg1:T29 Arg2:T2	
+R8	Contact Arg1:T2 Arg2:T3	
+R9	Connect Arg1:T29 Arg2:T3	
+R10	Part-Whole Arg1:T5 Arg2:T27	
+R11	Part-Whole Arg1:T32 Arg2:T31	
+R12	Connect Arg1:T31 Arg2:T7	

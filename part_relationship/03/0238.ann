@@ -1,0 +1,6 @@
+T6	Parts 0 10	後輪ブレーキ・ドラム
+T7	Parts 21 28	スタッドボルト
+T8	Parts 67 75	ホイール・ナット
+R1	Contact Arg1:T6 Arg2:T7	
+R2	Contact Arg1:T6 Arg2:T8	
+R3	Contact Arg1:T7 Arg2:T8	

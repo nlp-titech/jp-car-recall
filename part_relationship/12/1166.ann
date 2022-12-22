@@ -1,0 +1,16 @@
+T18	Parts 139 144	金属ベルト
+T19	Parts 121 126	金属ベルト
+T20	Parts 27 35	駒（エレメント）
+T21	Parts 55 60	エレメント
+T1	Parts 0 14	ベルト式無段変速機（ＣＶＴ）
+T2	Parts 15 20	金属ベルト
+T4	Parts 89 94	エレメント
+T6	Parts 127 131	プーリー
+R1	Coreference Arg1:T20 Arg2:T21	
+R2	Coreference Arg1:T19 Arg2:T18	
+R3	Coreference Arg1:T2 Arg2:T19	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T20 Arg2:T2	
+R8	Contact Arg1:T6 Arg2:T19	
+R9	Part-Whole Arg1:T6 Arg2:T1	
+R6	Coreference Arg1:T4 Arg2:T21	

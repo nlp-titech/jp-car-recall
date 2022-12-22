@@ -1,0 +1,29 @@
+T1	Parts 0 7	ショベルローダ
+T2	Parts 47 54	プッシュロッド
+T3	Parts 154 161	プッシュロッド
+T4	Parts 8 14	駐車ブレーキ
+T5	Parts 31 37	駐車ブレーキ
+T6	Parts 168 174	駐車ブレーキ
+T7	Parts 58 62	ワッシャ
+T8	Parts 43 46	レバー
+T9	Parts 150 153	レバー
+T11	Parts 93 95	ピン
+T12	Parts 115 117	ピン
+T13	Parts 125 132	スプリットピン
+T14	Parts 143 145	ピン
+R1	Coreference Arg1:T14 Arg2:T12	
+R2	Coreference Arg1:T12 Arg2:T11	
+R3	Part-Whole Arg1:T4 Arg2:T1	
+R4	Coreference Arg1:T5 Arg2:T4	
+R5	Coreference Arg1:T6 Arg2:T5	
+R6	Contact Arg1:T13 Arg2:T12	
+R7	Contact Arg1:T11 Arg2:T7	
+R8	Contact Arg1:T7 Arg2:T2	
+R10	Contact Arg1:T2 Arg2:T8	
+R11	Coreference Arg1:T9 Arg2:T8	
+R12	Coreference Arg1:T3 Arg2:T2	
+R9	Part-Whole Arg1:T8 Arg2:T5	
+R13	Contact Arg1:T8 Arg2:T7	
+R14	Contact Arg1:T2 Arg2:T11	
+R15	Contact Arg1:T8 Arg2:T11	
+R16	Part-Whole Arg1:T2 Arg2:T5	

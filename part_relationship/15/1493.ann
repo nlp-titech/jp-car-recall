@@ -1,0 +1,11 @@
+T1	Parts 0 11	ステアリングシリンダー
+T2	Parts 12 18	潤滑用グリス
+T3	Parts 34 42	プロペラシャフト
+T5	Parts 92 94	車体
+T6	Parts 108 116	プロペラシャフト
+R2	Coreference Arg1:T6 Arg2:T3	
+T7	Parts 132 140	プロペラシャフト
+R3	Coreference Arg1:T7 Arg2:T6	
+R1	Contact Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T6 Arg2:T5	
+R5	Part-Whole Arg1:T1 Arg2:T5	

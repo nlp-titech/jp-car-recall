@@ -1,0 +1,23 @@
+T1	Parts 142 151	パワーステアリング
+T2	Parts 33 54	アイドラプーリー（ベルトの張力調整用滑車）
+T3	Parts 160 164	ハンドル
+T4	Parts 85 89	プーリー
+T7	Parts 102 107	駆動ベルト
+T11	Parts 0 3	原動機
+T12	Parts 12 15	補機類
+T14	Parts 94 100	冷却水ポンプ
+T15	Parts 111 117	冷却水ポンプ
+T8	Parts 4 10	冷却水ポンプ
+T5	Parts 20 23	ベルト
+R1	Coreference Arg1:T8 Arg2:T14	
+R2	Coreference Arg1:T2 Arg2:T4	
+R3	Coreference Arg1:T14 Arg2:T15	
+R4	Coreference Arg1:T5 Arg2:T7	
+R5	Connect Arg1:T1 Arg2:T3	
+R6	Connect Arg1:T11 Arg2:T8	
+R7	Oneway-Coreference Arg1:T12 Arg2:T8	
+R8	Connect Arg1:T11 Arg2:T12	
+R9	Contact Arg1:T8 Arg2:T5	
+R10	Contact Arg1:T12 Arg2:T5	
+R11	Contact Arg1:T5 Arg2:T2	
+R12	Contact Arg1:T7 Arg2:T1	

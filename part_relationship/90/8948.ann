@@ -1,0 +1,16 @@
+T1	Parts 0 9	エンジン補機ベルト
+T2	Parts 22 25	ベルト
+T3	Parts 47 50	ベルト
+T4	Parts 58 61	ベルト
+T5	Parts 66 72	オルタネータ
+T6	Parts 73 80	ウォータポンプ
+T7	Parts 85 88	警告灯
+T8	Parts 103 107	エンジン
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Coreference Arg1:T2 Arg2:T3	
+R3	Coreference Arg1:T3 Arg2:T4	
+R4	Contact Arg1:T4 Arg2:T5	
+R5	Contact Arg1:T4 Arg2:T6	
+R6	Contact Arg1:T4 Arg2:T8	
+R7	Connect Arg1:T5 Arg2:T7	
+R8	Connect Arg1:T6 Arg2:T7	

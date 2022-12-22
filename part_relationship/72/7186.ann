@@ -1,0 +1,8 @@
+T1	Parts 75 86	イグニッションスイッチ
+T2	Parts 0 16	エアバッグ コントロールユニット
+T4	Parts 93 98	エアバッグ
+T5	Parts 45 49	ユニット
+T7	Parts 19 35	演算素子(マイクロプロセッサー)
+R1	Coreference Arg1:T2 Arg2:T5	
+R2	Part-Whole Arg1:T7 Arg2:T2	
+R3	Connect Arg1:T5 Arg2:T4	

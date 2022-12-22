@@ -1,0 +1,18 @@
+T1	Parts 62 74	エンジン制御コンピュータ
+T2	Parts 14 25	エンジン制御プログラム
+T3	Parts 0 9	ディーゼルエンジン
+T4	Parts 33 37	エンジン
+T5	Parts 48 52	エンジン
+T6	Parts 158 162	エンジン
+T8	Parts 94 108	スタート・ストップ・ユニット
+T9	Parts 109 115	スタータ回路
+R1	Connect Arg1:T2 Arg2:T3	
+R2	Coreference Arg1:T3 Arg2:T4	
+R4	Connect Arg1:T1 Arg2:T2	
+T7	Parts 123 134	プッシュボタンスタート
+R5	Connect Arg1:T7 Arg2:T8	
+R6	Contact Arg1:T8 Arg2:T9	
+R7	Coreference Arg1:T4 Arg2:T6	
+R9	Connect Arg1:T7 Arg2:T6	
+R3	Coreference Arg1:T4 Arg2:T5	
+R8	Connect Arg1:T1 Arg2:T8	

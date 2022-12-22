@@ -1,0 +1,15 @@
+T1	Parts 0 4	エンジン
+T2	Parts 5 16	吸気側バルブスプリング
+T3	Parts 21 26	スプリング
+T4	Parts 39 44	吸気バルブ
+T5	Parts 52 57	吸気バルブ
+T6	Parts 58 64	バルブシート
+T7	Parts 100 104	エンジン
+T8	Parts 120 124	エンジン
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T3 Arg2:T2	
+R3	Contact Arg1:T4 Arg2:T3	
+R4	Coreference Arg1:T4 Arg2:T5	
+R5	Connect Arg1:T6 Arg2:T4	
+R6	Coreference Arg1:T7 Arg2:T1	
+R7	Coreference Arg1:T8 Arg2:T7	

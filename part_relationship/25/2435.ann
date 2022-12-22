@@ -1,0 +1,11 @@
+T15	Parts 89 95	リアアクスル
+T14	Parts 29 44	リアアクスル操舵ストッパボルト
+T16	Parts 58 65	ストッパボルト
+T1	Parts 13 19	かじ取り車輪
+T2	Parts 83 88	リヤタイヤ
+T3	Parts 130 133	タイヤ
+R2	Coreference Arg1:T14 Arg2:T16	
+R3	Coreference Arg1:T2 Arg2:T3	
+R4	Contact Arg1:T14 Arg2:T15	
+R5	Contact Arg1:T1 Arg2:T2	
+R1	Contact Arg1:T16 Arg2:T15	

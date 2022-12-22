@@ -1,0 +1,18 @@
+T10	Parts 10 13	前車軸
+T12	Parts 97 102	ブラケット
+T14	Parts 40 51	取付金具（ブラケット）
+T13	Parts 113 116	ロッド
+T1	Parts 1 5	走行装置
+R1	Coreference Arg1:T12 Arg2:T14	
+T2	Parts 22 30	上側トルクロッド
+T3	Parts 32 39	ラジアスロッド
+R4	Part-Whole Arg1:T10 Arg2:T1	
+R5	Contact Arg1:T2 Arg2:T10	
+R9	Part-Whole Arg1:T2 Arg2:T1	
+R7	Part-Whole Arg1:T3 Arg2:T1	
+R8	Contact Arg1:T2 Arg2:T3	
+R10	Contact Arg1:T2 Arg2:T14	
+R11	Contact Arg1:T3 Arg2:T14	
+R6	Contact Arg1:T10 Arg2:T3	
+R3	Oneway-Coreference Arg1:T13 Arg2:T3	
+R2	Oneway-Coreference Arg1:T13 Arg2:T2	

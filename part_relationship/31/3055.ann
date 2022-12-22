@@ -1,0 +1,11 @@
+T7	Parts 94 100	テールゲート
+T8	Parts 80 93	ハイマウントストップランプ
+T9	Parts 40 53	ハイマウントストップランプ
+T11	Parts 11 24	ハイマウントストップランプ
+T1	Parts 0 6	テールゲート
+T2	Parts 29 33	すべり剤
+R1	Coreference Arg1:T11 Arg2:T9	
+R2	Coreference Arg1:T9 Arg2:T8	
+R3	Coreference Arg1:T1 Arg2:T7	
+R4	Contact Arg1:T2 Arg2:T11	
+R5	Contact Arg1:T11 Arg2:T1	

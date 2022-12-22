@@ -1,0 +1,15 @@
+T6	Parts 49 52	タイヤ
+T7	Parts 53 57	ホイール
+T8	Parts 95 98	タイヤ
+T9	Parts 38 41	タイヤ
+T10	Parts 33 37	ホイール
+T1	Parts 0 8	スチールホイール
+T2	Parts 9 12	タイヤ
+R1	Coreference Arg1:T1 Arg2:T10	
+R2	Coreference Arg1:T2 Arg2:T9	
+R3	Coreference Arg1:T9 Arg2:T6	
+R4	Coreference Arg1:T10 Arg2:T7	
+R5	Coreference Arg1:T6 Arg2:T8	
+T5	Parts 100 102	空気
+R6	Contact Arg1:T2 Arg2:T1	
+R7	Part-Whole Arg1:T5 Arg2:T8	

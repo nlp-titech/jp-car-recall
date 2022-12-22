@@ -1,0 +1,11 @@
+T1	Parts 0 10	排出ガス発散防止装置
+T2	Parts 15 27	エンジン制御コンピュータ
+T3	Parts 41 49	ターボチャージャ
+T4	Parts 58 70	エンジン制御コンピュータ
+T5	Parts 91 99	ターボチャージャ
+T6	Parts 105 112	エンジン警告灯
+R1	Connect Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T4 Arg2:T2	
+R3	Connect Arg1:T3 Arg2:T2	
+R4	Coreference Arg1:T3 Arg2:T5	
+R5	Connect Arg1:T4 Arg2:T6	

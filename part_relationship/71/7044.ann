@@ -1,0 +1,17 @@
+T1	Parts 8 20	シリンダヘッドガスケット
+T2	Parts 93 100	エンジンオイル
+T3	Parts 36 43	シリンダヘッド
+T4	Parts 76 83	シリンダヘッド
+T5	Parts 139 147	吸気・排気バルブ
+T9	Parts 31 35	シリンダ
+T10	Parts 71 75	シリンダ
+T11	Parts 109 112	オイル
+T14	Parts 0 3	原動機
+R1	Part-Whole Arg1:T1 Arg2:T14	
+R2	Contact Arg1:T9 Arg2:T1	
+R3	Contact Arg1:T3 Arg2:T1	
+R4	Coreference Arg1:T9 Arg2:T10	
+R5	Coreference Arg1:T3 Arg2:T4	
+R7	Coreference Arg1:T2 Arg2:T11	
+R6	Contact Arg1:T2 Arg2:T10	
+R8	Contact Arg1:T5 Arg2:T4	

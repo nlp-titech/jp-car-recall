@@ -1,0 +1,9 @@
+T1	Parts 8 14	番号灯ケース
+T2	Parts 42 45	ケース
+T4	Parts 0 3	番号灯
+T7	Parts 101 104	番号灯
+R1	Part-Whole Arg1:T4 Arg2:T1	
+R2	Coreference Arg1:T1 Arg2:T2	
+T3	Parts 80 86	番号灯ケース
+R3	Coreference Arg1:T2 Arg2:T3	
+R4	Coreference Arg1:T4 Arg2:T7	

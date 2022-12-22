@@ -1,0 +1,7 @@
+T2	Parts 56 64	チャイルドシート
+T3	Parts 36 41	ブラケット
+T4	Parts 0 9	車両左側リアシート
+T1	Parts 14 28	ＩＳＯＦＩＸチャイルドシート
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Part-Whole Arg1:T1 Arg2:T4	
+R3	Contact Arg1:T1 Arg2:T3	

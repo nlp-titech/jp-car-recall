@@ -1,0 +1,11 @@
+T14	Parts 0 10	尾灯（テールランプ）
+T15	Parts 37 46	テールランプリレー
+T19	Parts 125 127	尾灯
+T21	Parts 58 61	リレー
+T1	Parts 12 24	前部霧灯（フォグランプ）
+T2	Parts 25 29	電気回路
+R1	Coreference Arg1:T19 Arg2:T14	
+R6	Coreference Arg1:T21 Arg2:T15	
+R2	Contact Arg1:T14 Arg2:T2	
+R3	Contact Arg1:T1 Arg2:T2	
+R4	Part-Whole Arg1:T15 Arg2:T2	

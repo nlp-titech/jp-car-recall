@@ -1,0 +1,7 @@
+T1	Parts 86 94	サイドエアバッグ
+T2	Parts 56 62	圧力センサー
+T5	Parts 6 14	サイドエアバック
+T3	Parts 44 51	加速度センサー
+R4	Connect Arg1:T3 Arg2:T2	
+R1	Coreference Arg1:T5 Arg2:T1	
+R2	Connect Arg1:T5 Arg2:T3	

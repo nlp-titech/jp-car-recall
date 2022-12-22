@@ -1,0 +1,12 @@
+T4	Parts 108 113	燃料ホース
+T5	Parts 0 24	燃料分配器（燃料噴射ノズルに燃料を分配する装置）
+T6	Parts 97 100	原動機
+T13	Parts 122 124	燃料
+T1	Parts 25 43	ゴム製燃料ホース（供給側及び戻り側）
+R1	Contact Arg1:T5 Arg2:T1	
+T2	Parts 50 67	留金具（燃料ホースを固定する金具）
+R2	Contact Arg1:T2 Arg2:T1	
+R3	Contact Arg1:T2 Arg2:T5	
+R5	Coreference Arg1:T1 Arg2:T4	
+R6	Contact Arg1:T13 Arg2:T4	
+R4	Contact Arg1:T6 Arg2:T4	

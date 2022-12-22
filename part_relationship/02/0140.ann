@@ -1,0 +1,16 @@
+T6	Parts 0 4	制動装置
+T7	Parts 5 11	駐車ブレーキ
+T8	Parts 17 20	変速機
+T9	Parts 29 38	金具（ブラケット）
+T10	Parts 44 49	ブラケット
+T11	Parts 82 87	ブラケット
+T12	Parts 92 98	駐車ブレーキ
+T13	Parts 12 16	ケーブル
+R1	Coreference Arg1:T10 Arg2:T9	
+R2	Coreference Arg1:T11 Arg2:T10	
+R3	Coreference Arg1:T12 Arg2:T7	
+R4	Part-Whole Arg1:T7 Arg2:T6	
+R5	Contact Arg1:T13 Arg2:T7	
+R6	Connect Arg1:T9 Arg2:T8	
+R7	Contact Arg1:T13 Arg2:T8	
+R8	Contact Arg1:T13 Arg2:T9	

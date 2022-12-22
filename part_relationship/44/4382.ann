@@ -1,0 +1,13 @@
+T1	Parts 5 10	点火コイル
+T2	Parts 66 71	点火コイル
+T3	Parts 0 4	点火装置
+T4	Parts 79 84	一次コイル
+T5	Parts 85 90	二次コイル
+T6	Parts 127 130	原動機
+T8	Parts 17 22	一次側配線
+R1	Part-Whole Arg1:T1 Arg2:T3	
+R2	Contact Arg1:T8 Arg2:T1	
+R3	Coreference Arg1:T1 Arg2:T2	
+R4	Connect Arg1:T3 Arg2:T6	
+R5	Part-Whole Arg1:T4 Arg2:T1	
+R6	Part-Whole Arg1:T5 Arg2:T1	

@@ -1,0 +1,17 @@
+T1	Parts 28 40	ＡＢＳキャンセルスイッチ
+T2	Parts 138 142	ブレーキ
+T3	Parts 148 152	ホイール
+T4	Parts 0 3	ＡＢＳ
+T7	Parts 89 92	ＡＢＳ
+T8	Parts 97 100	ＡＢＳ
+T9	Parts 107 110	ＡＢＳ
+T10	Parts 17 25	ＡＢＳ警告ランプ
+T11	Parts 67 72	警告ランプ
+R3	Connect Arg1:T10 Arg2:T1	
+R6	Coreference Arg1:T10 Arg2:T11	
+R8	Coreference Arg1:T7 Arg2:T8	
+R9	Coreference Arg1:T8 Arg2:T9	
+R10	Connect Arg1:T2 Arg2:T9	
+R11	Connect Arg1:T3 Arg2:T9	
+R1	Connect Arg1:T10 Arg2:T4	
+R2	Connect Arg1:T1 Arg2:T4	

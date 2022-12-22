@@ -1,0 +1,17 @@
+T18	Parts 44 46	車両
+T19	Parts 168 172	ホイール
+T20	Parts 136 140	ホイール
+T21	Parts 121 125	ホイール
+T22	Parts 31 35	ホイール
+T2	Parts 83 85	荷台
+T1	Parts 89 91	後軸
+R1	Coreference Arg1:T19 Arg2:T20	
+R2	Coreference Arg1:T20 Arg2:T21	
+R3	Coreference Arg1:T21 Arg2:T22	
+T3	Parts 8 20	バラ積み緩和２軸トレーラ
+R6	Part-Whole Arg1:T2 Arg2:T18	
+R7	Part-Whole Arg1:T1 Arg2:T18	
+R4	Coreference Arg1:T3 Arg2:T18	
+T4	Parts 176 178	車輪
+R5	Part-Whole Arg1:T19 Arg2:T4	
+R8	Part-Whole Arg1:T4 Arg2:T18	

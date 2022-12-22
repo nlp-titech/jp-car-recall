@@ -1,0 +1,12 @@
+T1	Parts 12 19	ベルト巻取装置
+T2	Parts 0 11	後席三点式シートベルト
+T3	Parts 62 68	シートベルト
+T4	Parts 50 57	緊急ロック装置
+T5	Parts 20 26	減速度検知器
+T7	Parts 39 41	車両
+R2	Part-Whole Arg1:T5 Arg2:T1	
+R3	Part-Whole Arg1:T2 Arg2:T7	
+R6	Coreference Arg1:T2 Arg2:T3	
+R1	Contact Arg1:T2 Arg2:T1	
+R7	Part-Whole Arg1:T1 Arg2:T7	
+R4	Part-Whole Arg1:T4 Arg2:T1	

@@ -1,0 +1,11 @@
+T1	Parts 25 31	シートバック
+T2	Parts 44 50	シートバック
+T3	Parts 67 73	シートバック
+T4	Parts 80 86	シートバック
+T6	Parts 34 40	検出センサー
+T8	Parts 0 11	シート位置記憶ユニット
+R3	Coreference Arg1:T4 Arg2:T3	
+R6	Connect Arg1:T6 Arg2:T8	
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Coreference Arg1:T2 Arg2:T3	
+R4	Connect Arg1:T1 Arg2:T6	

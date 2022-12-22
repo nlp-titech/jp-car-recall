@@ -1,0 +1,7 @@
+T1	Parts 0 17	フロントアクスルインプットシャフト
+T3	Parts 126 134	フロントアクスル
+T8	Parts 23 36	パーキングブレーキディスク
+T10	Parts 156 165	パーキングブレーキ
+R1	Contact Arg1:T8 Arg2:T1	
+R6	Connect Arg1:T1 Arg2:T3	
+R7	Part-Whole Arg1:T8 Arg2:T10	

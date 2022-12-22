@@ -1,0 +1,16 @@
+T18	Parts 0 6	インジェクタ
+T19	Parts 40 44	ピストン
+T1	Parts 12 14	燃料
+T2	Parts 30 32	燃料
+T3	Parts 66 70	燃焼ガス
+T4	Parts 71 78	クランクケース
+T5	Parts 96 103	ロッカーカバー
+T6	Parts 105 112	エンジンオイル
+T7	Parts 123 125	車両
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Contact Arg1:T18 Arg2:T1	
+R3	Part-Whole Arg1:T19 Arg2:T18	
+R4	Part-Whole Arg1:T18 Arg2:T4	
+R5	Part-Whole Arg1:T4 Arg2:T7	
+R6	Part-Whole Arg1:T5 Arg2:T7	
+R7	Part-Whole Arg1:T6 Arg2:T7	

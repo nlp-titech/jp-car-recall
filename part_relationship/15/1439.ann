@@ -1,0 +1,23 @@
+T16	Parts 114 116	座席
+T17	Parts 148 150	座席
+T20	Parts 26 28	ピン
+T21	Parts 38 44	転倒防止金具
+T22	Parts 70 76	転倒防止金具
+T23	Parts 123 126	ヒンジ
+T24	Parts 135 137	金具
+T1	Parts 0 2	バス
+T3	Parts 8 14	前転倒式座席
+T4	Parts 19 21	座席
+T7	Parts 232 235	対象車
+T8	Parts 247 251	対象車両
+R1	Coreference Arg1:T21 Arg2:T22	
+R4	Coreference Arg1:T22 Arg2:T24	
+R5	Coreference Arg1:T7 Arg2:T8	
+R8	Coreference Arg1:T3 Arg2:T4	
+R9	Contact Arg1:T20 Arg2:T4	
+R10	Contact Arg1:T21 Arg2:T4	
+R7	Part-Whole Arg1:T3 Arg2:T1	
+R11	Contact Arg1:T23 Arg2:T20	
+R14	Coreference Arg1:T7 Arg2:T1	
+R3	Coreference Arg1:T16 Arg2:T17	
+R2	Coreference Arg1:T4 Arg2:T16	

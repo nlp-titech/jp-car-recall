@@ -1,0 +1,16 @@
+T24	Parts 12 22	フレキシブルチューブ
+T23	Parts 2 11	エキゾーストパイプ
+T25	Parts 146 148	配管
+T26	Parts 120 126	配管クランプ
+T1	Parts 34 37	原動機
+T4	Parts 82 86	電気配線
+T5	Parts 100 106	動力伝達装置
+T6	Parts 107 115	前車輪用油圧配管
+R2	Coreference Arg1:T25 Arg2:T6	
+T7	Parts 172 175	作動油
+R3	Part-Whole Arg1:T24 Arg2:T23	
+R7	Contact Arg1:T7 Arg2:T25	
+R1	Connect Arg1:T23 Arg2:T1	
+R6	Contact Arg1:T6 Arg2:T26	
+R8	Connect Arg1:T1 Arg2:T5	
+R4	Part-Whole Arg1:T6 Arg2:T5	

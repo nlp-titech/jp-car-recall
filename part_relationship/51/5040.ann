@@ -1,0 +1,14 @@
+T1	Parts 10 19	前照灯操作スイッチ
+T2	Parts 90 96	接続カプラー
+T3	Parts 1 5	灯火装置
+T4	Parts 39 42	前照灯
+T5	Parts 108 111	前照灯
+T6	Parts 21 26	配線用端子
+T7	Parts 55 57	端子
+R2	Coreference Arg1:T5 Arg2:T4	
+R3	Part-Whole Arg1:T4 Arg2:T3	
+R4	Part-Whole Arg1:T6 Arg2:T1	
+R5	Connect Arg1:T1 Arg2:T4	
+R6	Part-Whole Arg1:T2 Arg2:T7	
+R7	Part-Whole Arg1:T1 Arg2:T3	
+R1	Coreference Arg1:T7 Arg2:T6	

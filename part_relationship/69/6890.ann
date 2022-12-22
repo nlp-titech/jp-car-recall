@@ -1,0 +1,9 @@
+T1	Parts 0 6	大型トラック
+T3	Parts 7 9	車体
+T5	Parts 18 24	手つき用部品
+T2	Parts 31 42	樹脂製ドアサイドパッド
+T4	Parts 57 60	パッド
+R2	Part-Whole Arg1:T5 Arg2:T3	
+R3	Coreference Arg1:T5 Arg2:T2	
+R4	Coreference Arg1:T2 Arg2:T4	
+R1	Part-Whole Arg1:T3 Arg2:T1	

@@ -1,0 +1,10 @@
+T14	Parts 47 49	車体
+T15	Parts 20 34	パイプ（エアチャージパイプ）
+T16	Parts 58 61	パイプ
+T17	Parts 98 101	パイプ
+T1	Parts 0 10	制動装置用エアタンク
+R1	Coreference Arg1:T15 Arg2:T16	
+R3	Contact Arg1:T15 Arg2:T1	
+R4	Coreference Arg1:T17 Arg2:T16	
+R6	Part-Whole Arg1:T15 Arg2:T14	
+R7	Part-Whole Arg1:T1 Arg2:T14	

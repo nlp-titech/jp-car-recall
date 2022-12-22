@@ -1,0 +1,24 @@
+T18	Parts 72 75	ベルト
+T19	Parts 95 105	プーリ取付ブラケット
+T20	Parts 125 128	プーリ
+T21	Parts 130 133	ベルト
+T22	Parts 163 166	プーリ
+T23	Parts 167 174	取付ブラケット
+T16	Parts 145 148	発電機
+T17	Parts 136 143	ウォータポンプ
+T1	Parts 0 8	補機駆動用ベルト
+T2	Parts 19 27	ベルトテンショナ
+T3	Parts 32 42	プーリ取付ブラケット
+R2	Coreference Arg1:T1 Arg2:T18	
+R3	Coreference Arg1:T3 Arg2:T19	
+R5	Coreference Arg1:T18 Arg2:T21	
+R6	Coreference Arg1:T20 Arg2:T22	
+R7	Coreference Arg1:T19 Arg2:T23	
+R8	Contact Arg1:T2 Arg2:T1	
+T4	Parts 47 50	プーリ
+R4	Coreference Arg1:T4 Arg2:T20	
+R9	Contact Arg1:T3 Arg2:T4	
+R10	Contact Arg1:T21 Arg2:T17	
+R11	Contact Arg1:T21 Arg2:T16	
+R1	Part-Whole Arg1:T3 Arg2:T2	
+R13	Part-Whole Arg1:T4 Arg2:T2	

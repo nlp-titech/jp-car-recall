@@ -1,0 +1,17 @@
+T1	Parts 0 6	後輪ブレーキ
+T2	Parts 8 13	エアホース
+T3	Parts 14 25	固定具（ゴムクリップ）
+T4	Parts 38 44	駐車ブレーキ
+T5	Parts 45 50	エアホース
+T6	Parts 92 95	ホース
+T7	Parts 112 115	ホース
+T8	Parts 121 123	エア
+T9	Parts 138 144	駐車ブレーキ
+R1	Coreference Arg1:T7 Arg2:T6	
+R2	Coreference Arg1:T6 Arg2:T5	
+R3	Coreference Arg1:T5 Arg2:T2	
+R4	Coreference Arg1:T9 Arg2:T4	
+R5	Connect Arg1:T2 Arg2:T1	
+R6	Contact Arg1:T3 Arg2:T2	
+R7	Part-Whole Arg1:T1 Arg2:T4	
+R8	Contact Arg1:T8 Arg2:T7	

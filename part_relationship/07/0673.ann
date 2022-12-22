@@ -1,0 +1,15 @@
+T1	Parts 2 7	自動変速機
+T2	Parts 20 23	発電機
+T3	Parts 32 37	ブラケット
+T4	Parts 50 54	エンジン
+T5	Parts 84 87	発電機
+T6	Parts 88 95	エンジンルーム
+T7	Parts 111 115	エンジン
+R1	Coreference Arg1:T7 Arg2:T4	
+R2	Coreference Arg1:T5 Arg2:T2	
+T8	Parts 9 19	ディーゼルエンジン車
+R3	Part-Whole Arg1:T1 Arg2:T8	
+R4	Part-Whole Arg1:T2 Arg2:T8	
+R5	Contact Arg1:T3 Arg2:T2	
+R6	Part-Whole Arg1:T4 Arg2:T6	
+R7	Part-Whole Arg1:T4 Arg2:T8	

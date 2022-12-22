@@ -1,0 +1,9 @@
+T2	Parts 0 5	燃料タンク
+T3	Parts 85 89	エンジン
+T4	Parts 9 19	燃料フィルターケース
+T5	Parts 39 42	ケース
+T6	Parts 49 51	燃料
+R1	Coreference Arg1:T5 Arg2:T4	
+R2	Part-Whole Arg1:T6 Arg2:T2	
+R3	Part-Whole Arg1:T4 Arg2:T2	
+R4	Connect Arg1:T3 Arg2:T2	

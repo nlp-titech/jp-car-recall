@@ -1,0 +1,9 @@
+T1	Parts 0 9	リアサスペンション
+T2	Parts 23 28	固定ボルト
+T3	Parts 68 71	ボルト
+T4	Parts 88 91	ボルト
+T5	Parts 96 98	車両
+R1	Contact Arg1:T1 Arg2:T2	
+R2	Coreference Arg1:T2 Arg2:T3	
+R3	Coreference Arg1:T3 Arg2:T4	
+R4	Part-Whole Arg1:T1 Arg2:T5	

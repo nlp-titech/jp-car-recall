@@ -1,0 +1,7 @@
+T1	Parts 13 21	コイルスプリング
+T2	Parts 57 62	スプリング
+T3	Parts 0 4	緩衝装置
+R1	Part-Whole Arg1:T1 Arg2:T3	
+R2	Coreference Arg1:T1 Arg2:T2	
+T4	Parts 66 69	パッド
+R3	Contact Arg1:T1 Arg2:T4	

@@ -1,0 +1,24 @@
+T14	Parts 65 76	クラッチアクチュエータ
+T18	Parts 78 81	モータ
+T19	Parts 94 100	ブラシホルダ
+T20	Parts 89 92	モータ
+T21	Parts 27 41	クラッチ作動用アクチュエータ
+T22	Parts 105 108	ブラシ
+T1	Parts 0 21	自動６速マニュアルモードトランスミッション
+T3	Parts 57 61	クラッチ
+R1	Coreference Arg1:T20 Arg2:T18	
+T4	Parts 116 120	クラッチ
+R2	Coreference Arg1:T4 Arg2:T3	
+T6	Parts 126 129	警告灯
+T7	Parts 145 147	ギヤ
+T2	Parts 42 49	制御プログラム
+R7	Coreference Arg1:T14 Arg2:T21	
+R8	Part-Whole Arg1:T18 Arg2:T14	
+R9	Part-Whole Arg1:T19 Arg2:T20	
+R10	Contact Arg1:T22 Arg2:T19	
+R12	Part-Whole Arg1:T7 Arg2:T1	
+R3	Part-Whole Arg1:T21 Arg2:T1	
+R5	Connect Arg1:T3 Arg2:T21	
+R11	Part-Whole Arg1:T22 Arg2:T20	
+R6	Connect Arg1:T21 Arg2:T2	
+R4	Connect Arg1:T4 Arg2:T6	

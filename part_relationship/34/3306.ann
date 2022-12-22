@@ -1,0 +1,15 @@
+T3	Parts 91 95	エンジン
+T4	Parts 85 88	モータ
+T10	Parts 102 105	モータ
+T1	Parts 0 17	エンジン制御コンピュータ（ＥＣＵ）
+T2	Parts 18 23	プログラム
+T5	Parts 31 34	ＥＣＵ
+R1	Coreference Arg1:T1 Arg2:T5	
+R2	Coreference Arg1:T4 Arg2:T10	
+T7	Parts 44 48	クラッチ
+T8	Parts 56 60	クラッチ
+R3	Coreference Arg1:T7 Arg2:T8	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Connect Arg1:T4 Arg2:T3	
+R6	Connect Arg1:T5 Arg2:T3	
+R7	Connect Arg1:T8 Arg2:T3	

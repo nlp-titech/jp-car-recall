@@ -1,0 +1,11 @@
+T3	Parts 83 88	補機ベルト
+T8	Parts 47 50	ラバー
+T9	Parts 107 110	原動機
+T1	Parts 1 9	クランクプーリー
+T4	Parts 10 17	ダンパーラバー
+T2	Parts 68 76	クランクプーリー
+R1	Coreference Arg1:T4 Arg2:T8	
+R2	Contact Arg1:T2 Arg2:T3	
+R3	Coreference Arg1:T1 Arg2:T2	
+R4	Contact Arg1:T1 Arg2:T4	
+R5	Part-Whole Arg1:T2 Arg2:T9	

@@ -1,0 +1,11 @@
+T1	Parts 8 17	後々軸（非駆動軸）
+T3	Parts 58 62	リヤばね
+T4	Parts 21 29	リヤばねズレ止め
+T5	Parts 65 69	ズレ止め
+R2	Coreference Arg1:T5 Arg2:T4	
+T6	Parts 0 7	後２軸トラック
+T2	Parts 74 76	車両
+R1	Coreference Arg1:T6 Arg2:T2	
+R3	Part-Whole Arg1:T4 Arg2:T1	
+R4	Part-Whole Arg1:T3 Arg2:T1	
+R5	Contact Arg1:T3 Arg2:T5	

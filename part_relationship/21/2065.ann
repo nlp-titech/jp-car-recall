@@ -1,0 +1,17 @@
+T14	Parts 18 25	中間ジョイント
+T15	Parts 26 30	フランジ
+T16	Parts 69 73	フランジ
+T17	Parts 74 79	締結ボルト
+T18	Parts 114 121	中間ジョイント
+T19	Parts 122 126	フランジ
+T1	Parts 0 8	プロペラシャフト
+T2	Parts 52 56	クラッチ
+R1	Coreference Arg1:T16 Arg2:T15	
+R2	Coreference Arg1:T18 Arg2:T14	
+R3	Coreference Arg1:T19 Arg2:T16	
+R4	Part-Whole Arg1:T14 Arg2:T1	
+R5	Contact Arg1:T15 Arg2:T1	
+R6	Contact Arg1:T15 Arg2:T14	
+R7	Contact Arg1:T17 Arg2:T16	
+R8	Contact Arg1:T17 Arg2:T14	
+T3	Parts 34 37	防錆油

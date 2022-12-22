@@ -1,0 +1,25 @@
+T1	Parts 11 20	ディファレンシャル
+T2	Parts 122 129	ピストンシール
+T3	Parts 0 6	動力伝達装置
+T4	Parts 106 115	ブレーキハウジング
+T5	Parts 134 139	ブレーキ液
+T6	Parts 169 174	ブレーキ液
+T7	Parts 97 105	ブレーキピストン
+T10	Parts 179 183	ブレーキ
+T11	Parts 143 146	警告灯
+T12	Parts 22 29	スパイダーピン
+T13	Parts 47 54	スパイダーピン
+T14	Parts 74 81	スパイダーピン
+R1	Coreference Arg1:T6 Arg2:T5	
+R2	Coreference Arg1:T14 Arg2:T13	
+R3	Coreference Arg1:T13 Arg2:T12	
+R4	Part-Whole Arg1:T12 Arg2:T1	
+R5	Contact Arg1:T2 Arg2:T4	
+R6	Contact Arg1:T4 Arg2:T7	
+R7	Contact Arg1:T2 Arg2:T7	
+R11	Part-Whole Arg1:T1 Arg2:T3	
+R8	Part-Whole Arg1:T7 Arg2:T10	
+R9	Part-Whole Arg1:T2 Arg2:T10	
+R10	Part-Whole Arg1:T4 Arg2:T10	
+R12	Part-Whole Arg1:T6 Arg2:T10	
+R13	Connect Arg1:T10 Arg2:T11	

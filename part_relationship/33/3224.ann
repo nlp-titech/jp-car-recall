@@ -1,0 +1,15 @@
+T10	Parts 112 114	中扉
+T11	Parts 100 107	インナーピラー
+T12	Parts 96 99	ボルト
+T13	Parts 53 56	ボルト
+T14	Parts 35 38	ボルト
+T1	Parts 0 7	大中型路線バス
+T2	Parts 8 15	中扉（引き戸）
+T3	Parts 20 30	ドアエンジン連結金具
+R1	Coreference Arg1:T14 Arg2:T13	
+R2	Coreference Arg1:T13 Arg2:T12	
+R3	Coreference Arg1:T2 Arg2:T10	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T3 Arg2:T2	
+R7	Contact Arg1:T3 Arg2:T14	
+R8	Part-Whole Arg1:T11 Arg2:T10	

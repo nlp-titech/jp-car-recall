@@ -1,0 +1,13 @@
+T1	Parts 10 18	後輪ブレーキ配管
+T3	Parts 118 124	後輪ブレーキ
+T4	Parts 48 63	ロア・ユニバーサル・ジョイント
+T5	Parts 0 4	エンジン
+T6	Parts 36 47	ステアリング・シャフト
+T9	Parts 33 35	配管
+T10	Parts 92 94	配管
+R1	Coreference Arg1:T9 Arg2:T1	
+R2	Coreference Arg1:T10 Arg2:T9	
+T2	Parts 99 108	ブレーキ・フルード
+R3	Connect Arg1:T3 Arg2:T10	
+R4	Contact Arg1:T2 Arg2:T10	
+R5	Part-Whole Arg1:T4 Arg2:T6	

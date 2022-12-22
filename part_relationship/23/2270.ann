@@ -1,0 +1,22 @@
+T16	Parts 5 10	外気導入口
+T17	Parts 24 33	ブロアファンモータ
+T18	Parts 41 44	モータ
+T19	Parts 67 76	ブロアファンモータ
+T21	Parts 45 48	軸受け
+T22	Parts 133 137	ヒューズ
+T23	Parts 115 121	ブロアファン
+T24	Parts 0 4	エアコン
+T25	Parts 81 86	デフロスタ
+R1	Coreference Arg1:T18 Arg2:T17	
+R2	Coreference Arg1:T19 Arg2:T18	
+T1	Parts 98 107	マニュアルエアコン
+R3	Part-Whole Arg1:T16 Arg2:T24	
+R5	Part-Whole Arg1:T21 Arg2:T18	
+R6	Connect Arg1:T25 Arg2:T19	
+R7	Oneway-Coreference Arg1:T1 Arg2:T24	
+R8	Connect Arg1:T22 Arg2:T23	
+R9	Part-Whole Arg1:T23 Arg2:T1	
+R10	Contact Arg1:T19 Arg2:T23	
+R11	Part-Whole Arg1:T23 Arg2:T24	
+T2	Parts 130 132	抵抗
+R4	Connect Arg1:T2 Arg2:T23	

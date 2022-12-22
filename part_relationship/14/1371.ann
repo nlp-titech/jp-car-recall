@@ -1,0 +1,16 @@
+T10	Parts 131 133	車両
+T13	Parts 23 26	レバー
+T14	Parts 27 34	ディテントピン
+T15	Parts 37 42	ロックピン
+T17	Parts 0 10	自動変速機操作レバー
+T18	Parts 79 84	操作レバー
+R1	Coreference Arg1:T17 Arg2:T13	
+T4	Parts 102 107	自動変速機
+R2	Coreference Arg1:T13 Arg2:T1	
+R3	Contact Arg1:T14 Arg2:T13	
+R4	Contact Arg1:T15 Arg2:T13	
+R5	Connect Arg1:T4 Arg2:T18	
+R10	Part-Whole Arg1:T4 Arg2:T10	
+R11	Part-Whole Arg1:T18 Arg2:T10	
+T1	Parts 68 71	シフト
+R6	Coreference Arg1:T1 Arg2:T18	

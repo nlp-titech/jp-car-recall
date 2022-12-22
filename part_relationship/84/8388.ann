@@ -1,0 +1,9 @@
+T1	Parts 0 3	キャブ
+T2	Parts 18 28	アウトサイドグリップ
+T3	Parts 48 52	グリップ
+T4	Parts 86 90	グリップ
+T6	Parts 98 102	グリップ
+R1	Contact Arg1:T1 Arg2:T2	
+R2	Coreference Arg1:T2 Arg2:T3	
+R3	Coreference Arg1:T3 Arg2:T4	
+R4	Coreference Arg1:T4 Arg2:T6	

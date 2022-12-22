@@ -1,0 +1,17 @@
+T10	Parts 136 144	左側スライドドア
+T11	Parts 109 114	ドアラッチ
+T12	Parts 98 104	スライドドア
+T13	Parts 74 79	リンク機構
+T14	Parts 62 68	スライドドア
+T15	Parts 43 48	リンク機構
+T16	Parts 24 29	リンク機構
+T1	Parts 0 8	左側スライドドア
+T2	Parts 9 16	車室内ハンドル
+R1	Coreference Arg1:T16 Arg2:T15	
+R2	Coreference Arg1:T14 Arg2:T1	
+R3	Coreference Arg1:T15 Arg2:T13	
+R4	Coreference Arg1:T14 Arg2:T12	
+R5	Coreference Arg1:T12 Arg2:T10	
+R6	Connect Arg1:T2 Arg2:T16	
+R7	Connect Arg1:T16 Arg2:T1	
+R8	Contact Arg1:T11 Arg2:T12	

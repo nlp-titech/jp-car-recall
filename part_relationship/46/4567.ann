@@ -1,0 +1,9 @@
+T1	Parts 16 22	取付けボルト
+T2	Parts 9 14	ストライカ
+T3	Parts 51 54	ボルト
+T4	Parts 6 8	ドア
+T5	Parts 59 61	ドア
+R2	Contact Arg1:T2 Arg2:T1	
+R1	Coreference Arg1:T1 Arg2:T3	
+R3	Coreference Arg1:T4 Arg2:T5	
+R4	Contact Arg1:T4 Arg2:T2	

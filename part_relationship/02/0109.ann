@@ -1,0 +1,8 @@
+T10	Parts 5 12	スタータモータ
+T11	Parts 27 33	電磁スイッチ
+T12	Parts 0 4	始動装置
+T1	Parts 14 16	電源
+R3	Part-Whole Arg1:T10 Arg2:T12	
+R4	Contact Arg1:T10 Arg2:T1	
+R5	Contact Arg1:T1 Arg2:T11	
+R8	Contact Arg1:T11 Arg2:T10	

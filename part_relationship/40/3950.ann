@@ -1,0 +1,13 @@
+T1	Parts 12 21	ディーゼルエンジン
+T3	Parts 64 71	フィルタケース
+T4	Parts 0 6	小型トラック
+T5	Parts 22 31	燃料フィルタケース
+T6	Parts 54 58	エンジン
+T7	Parts 44 46	燃料
+T8	Parts 83 85	燃料
+R1	Coreference Arg1:T3 Arg2:T5	
+R2	Coreference Arg1:T8 Arg2:T7	
+R3	Coreference Arg1:T6 Arg2:T1	
+R4	Part-Whole Arg1:T1 Arg2:T4	
+R5	Part-Whole Arg1:T5 Arg2:T1	
+R6	Contact Arg1:T7 Arg2:T5	

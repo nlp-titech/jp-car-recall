@@ -1,0 +1,10 @@
+T12	Parts 115 128	離席時走行・荷役ロック機構
+T13	Parts 66 70	ハーネス
+T14	Parts 43 47	ハーネス
+T1	Parts 0 4	運転者席
+T2	Parts 29 42	離席時走行・荷役ロック機構
+R1	Coreference Arg1:T13 Arg2:T14	
+R2	Coreference Arg1:T12 Arg2:T2	
+R4	Part-Whole Arg1:T14 Arg2:T2	
+T3	Parts 71 75	コネクタ
+R3	Part-Whole Arg1:T3 Arg2:T13	

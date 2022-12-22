@@ -1,0 +1,7 @@
+T1	Parts 0 8	モータ・スイーパ
+T2	Parts 95 104	前輪操舵用チェーン
+T3	Parts 110 114	ハンドル
+T4	Parts 9 13	フレーム
+R1	Part-Whole Arg1:T4 Arg2:T1	
+R2	Contact Arg1:T2 Arg2:T4	
+R3	Connect Arg1:T3 Arg2:T2	

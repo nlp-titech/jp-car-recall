@@ -1,0 +1,11 @@
+T1	Parts 0 10	スペアタイヤキャリア
+T2	Parts 28 38	スペアタイヤキャリア
+T3	Parts 64 74	スペアタイヤキャリア
+T4	Parts 113 123	スペアタイヤキャリア
+T5	Parts 134 140	スペアタイヤ
+T6	Parts 11 17	後側取付金具
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Coreference Arg1:T2 Arg2:T3	
+R3	Coreference Arg1:T3 Arg2:T4	
+R4	Contact Arg1:T4 Arg2:T5	
+R5	Contact Arg1:T1 Arg2:T6	

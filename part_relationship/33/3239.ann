@@ -1,0 +1,20 @@
+T1	Parts 0 13	減速エネルギー回生システム
+T2	Parts 18 23	キャパシタ
+T3	Parts 24 33	故障判定プログラム
+T4	Parts 41 46	キャパシタ
+R1	Coreference Arg1:T2 Arg2:T4	
+T5	Parts 67 73	オルタネータ
+T6	Parts 82 87	充電警告灯
+T7	Parts 96 102	ディスプレイ
+T8	Parts 137 141	バッテリ
+T9	Parts 154 161	エンジン警告灯
+T10	Parts 179 183	エンジン
+R2	Part-Whole Arg1:T3 Arg2:T1	
+R3	Connect Arg1:T2 Arg2:T3	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T5 Arg2:T1	
+T11	Parts 104 110	充電システム
+R7	Part-Whole Arg1:T11 Arg2:T1	
+R6	Connect Arg1:T5 Arg2:T8	
+R9	Connect Arg1:T8 Arg2:T10	
+R10	Connect Arg1:T5 Arg2:T10	

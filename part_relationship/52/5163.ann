@@ -1,0 +1,19 @@
+T5	Parts 54 59	補機ベルト
+T6	Parts 97 102	補機ベルト
+T8	Parts 103 107	プーリー
+T9	Parts 127 130	原動機
+T10	Parts 38 41	発電機
+T1	Parts 1 17	コンプレッサー取り付けブラケット
+T2	Parts 30 37	コンプレッサー
+T3	Parts 42 50	クランクプーリー
+R1	Coreference Arg1:T5 Arg2:T6	
+R2	Coreference Arg1:T3 Arg2:T8	
+R3	Contact Arg1:T1 Arg2:T2	
+R6	Contact Arg1:T3 Arg2:T5	
+R4	Part-Whole Arg1:T2 Arg2:T9	
+R5	Part-Whole Arg1:T10 Arg2:T9	
+R7	Contact Arg1:T10 Arg2:T3	
+R8	Contact Arg1:T2 Arg2:T3	
+R9	Part-Whole Arg1:T8 Arg2:T9	
+R10	Contact Arg1:T2 Arg2:T5	
+R11	Contact Arg1:T10 Arg2:T5	

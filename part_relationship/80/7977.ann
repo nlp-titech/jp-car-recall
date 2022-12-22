@@ -1,0 +1,5 @@
+T1	Parts 0 8	車線逸脱警報装置
+T3	Parts 22 29	制御プログラム
+T5	Parts 108 114	かじ取り装置
+R3	Part-Whole Arg1:T3 Arg2:T1	
+R1	Connect Arg1:T1 Arg2:T5	

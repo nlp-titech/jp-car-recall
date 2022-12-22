@@ -1,0 +1,14 @@
+T11	Parts 35 38	冷却板
+T12	Parts 69 72	冷却板
+T1	Parts 0 8	原動機ラジエータ
+T2	Parts 9 14	ロアタンク
+R1	Coreference Arg1:T12 Arg2:T11	
+T7	Parts 90 95	ラジエータ
+T8	Parts 101 106	自動変速機
+R2	Coreference Arg1:T7 Arg2:T1	
+R5	Part-Whole Arg1:T2 Arg2:T1	
+T3	Parts 22 34	自動変速機用オイルクーラ
+R3	Part-Whole Arg1:T3 Arg2:T2	
+R4	Part-Whole Arg1:T11 Arg2:T3	
+T4	Parts 80 89	自動変速機用オイル
+R6	Contact Arg1:T4 Arg2:T3	

@@ -1,0 +1,9 @@
+T1	Parts 0 4	後部霧灯
+T2	Parts 5 15	点灯操作状態表示装置
+T4	Parts 46 49	前照灯
+T5	Parts 51 55	前部霧灯
+T6	Parts 66 70	後部霧灯
+R1	Connect Arg1:T2 Arg2:T1	
+R5	Coreference Arg1:T1 Arg2:T6	
+T3	Parts 17 21	電気回路
+R6	Connect Arg1:T1 Arg2:T3	

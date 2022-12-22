@@ -1,0 +1,11 @@
+T2	Parts 27 34	制御プログラム
+T3	Parts 42 47	クラッチ板
+T4	Parts 53 58	ソレノイド
+T5	Parts 87 90	警告灯
+T6	Parts 95 97	ギヤ
+T1	Parts 2 22	トランスミッションコントロールモジュール
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Contact Arg1:T3 Arg2:T4	
+R3	Connect Arg1:T1 Arg2:T5	
+R4	Connect Arg1:T1 Arg2:T6	
+R5	Connect Arg1:T2 Arg2:T4	

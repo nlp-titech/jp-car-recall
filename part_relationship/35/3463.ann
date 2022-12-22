@@ -1,0 +1,26 @@
+T1	Parts 46 55	スプラインシャフト
+T2	Parts 81 90	スプラインシャフト
+T3	Parts 174 182	プロペラシャフト
+T4	Parts 23 31	後前軸側終減速機
+T5	Parts 32 38	前側フランジ
+T6	Parts 91 97	締結用ボルト
+T7	Parts 12 18	動力伝達装置
+T9	Parts 7 11	トラック
+T10	Parts 76 80	フランジ
+T11	Parts 163 167	フランジ
+T12	Parts 125 128	ボルト
+T13	Parts 156 159	ボルト
+R1	Part-Whole Arg1:T7 Arg2:T9	
+R2	Coreference Arg1:T10 Arg2:T5	
+R5	Coreference Arg1:T2 Arg2:T1	
+R6	Contact Arg1:T6 Arg2:T2	
+R7	Contact Arg1:T6 Arg2:T10	
+R8	Coreference Arg1:T12 Arg2:T6	
+R9	Coreference Arg1:T13 Arg2:T12	
+R10	Coreference Arg1:T11 Arg2:T10	
+R11	Contact Arg1:T3 Arg2:T11	
+R12	Part-Whole Arg1:T4 Arg2:T7	
+R13	Part-Whole Arg1:T5 Arg2:T4	
+R15	Part-Whole Arg1:T3 Arg2:T7	
+R4	Part-Whole Arg1:T1 Arg2:T4	
+R3	Contact Arg1:T10 Arg2:T2	

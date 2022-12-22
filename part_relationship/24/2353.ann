@@ -1,0 +1,9 @@
+T13	Parts 87 90	制動灯
+T14	Parts 11 18	スイッチケース
+T16	Parts 91 97	電球ソケット
+T17	Parts 52 55	制動灯
+T1	Parts 0 10	後輪用制動灯スイッチ
+R1	Coreference Arg1:T13 Arg2:T17	
+R2	Part-Whole Arg1:T14 Arg2:T1	
+R3	Part-Whole Arg1:T16 Arg2:T13	
+R4	Connect Arg1:T17 Arg2:T1	

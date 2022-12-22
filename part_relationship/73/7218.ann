@@ -1,0 +1,11 @@
+T2	Parts 85 94	カーテンエアバッグ
+T3	Parts 97 108	シートベルトテンショナ
+T5	Parts 0 16	エアバッグ・コントロールユニット
+T7	Parts 30 32	車両
+T8	Parts 68 70	車両
+R2	Part-Whole Arg1:T5 Arg2:T7	
+R3	Coreference Arg1:T7 Arg2:T8	
+R4	Part-Whole Arg1:T2 Arg2:T8	
+R5	Connect Arg1:T5 Arg2:T2	
+R6	Connect Arg1:T5 Arg2:T3	
+R7	Part-Whole Arg1:T3 Arg2:T8	

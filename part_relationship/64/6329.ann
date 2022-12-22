@@ -1,0 +1,16 @@
+T3	Parts 117 126	パワーステアリング
+T4	Parts 138 144	ステアリング
+T12	Parts 109 112	警告灯
+T1	Parts 0 16	電動パワーステアリング（ＥＰＳ）
+T6	Parts 30 38	センサーユニット
+T5	Parts 49 55	ローターコア
+T7	Parts 56 64	ローターシャフト
+T2	Parts 84 97	ＥＰＳコントロールユニット
+R1	Connect Arg1:T1 Arg2:T6	
+R2	Part-Whole Arg1:T5 Arg2:T6	
+R3	Part-Whole Arg1:T7 Arg2:T6	
+R4	Contact Arg1:T5 Arg2:T7	
+R5	Connect Arg1:T1 Arg2:T2	
+R6	Coreference Arg1:T1 Arg2:T3	
+R7	Connect Arg1:T2 Arg2:T12	
+R8	Connect Arg1:T3 Arg2:T4	

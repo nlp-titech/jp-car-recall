@@ -1,0 +1,10 @@
+T1	Parts 0 9	前席用シートベルト
+T2	Parts 22 33	シートベルト巻取り機構
+T3	Parts 93 99	シートベルト
+T4	Parts 10 17	プリテンショナ
+T5	Parts 81 88	プリテンショナ
+R1	Coreference Arg1:T5 Arg2:T4	
+R2	Coreference Arg1:T3 Arg2:T1	
+R3	Connect Arg1:T2 Arg2:T4	
+R4	Contact Arg1:T2 Arg2:T1	
+R5	Contact Arg1:T4 Arg2:T1	

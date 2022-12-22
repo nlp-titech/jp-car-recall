@@ -1,0 +1,3 @@
+T1	Parts 0 9	左側ナックルアーム
+T2	Parts 64 68	ナックル
+R1	Part-Whole Arg1:T2 Arg2:T1	

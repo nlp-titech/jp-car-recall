@@ -1,0 +1,12 @@
+T10	Parts 0 5	方向指示器
+T13	Parts 18 25	前照灯スイッチ
+T14	Parts 54 61	前照灯スイッチ
+T15	Parts 62 65	電極盤
+R1	Coreference Arg1:T13 Arg2:T14	
+R5	Part-Whole Arg1:T15 Arg2:T14	
+T1	Parts 6 12	灯火スイッチ
+R3	Connect Arg1:T1 Arg2:T10	
+R4	Part-Whole Arg1:T13 Arg2:T1	
+T2	Parts 82 86	スイッチ
+R2	Coreference Arg1:T2 Arg2:T14	
+#1	AnnotatorNotes R4	ウィンカースイッチが本体でその先の一部に前照灯スイッチがあると考える

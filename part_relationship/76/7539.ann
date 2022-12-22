@@ -1,0 +1,13 @@
+T1	Parts 0 3	原動機
+T2	Parts 8 18	カムシャフトチェーン
+T3	Parts 26 31	テンショナ
+T4	Parts 63 68	テンショナ
+T5	Parts 87 91	エンジン
+T6	Parts 106 116	カムシャフトチェーン
+T7	Parts 129 133	エンジン
+R1	Coreference Arg1:T3 Arg2:T4	
+R2	Coreference Arg1:T1 Arg2:T5	
+R3	Coreference Arg1:T5 Arg2:T7	
+R4	Contact Arg1:T2 Arg2:T3	
+R5	Coreference Arg1:T2 Arg2:T6	
+R6	Part-Whole Arg1:T2 Arg2:T1	

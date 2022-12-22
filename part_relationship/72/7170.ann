@@ -1,0 +1,20 @@
+T2	Parts 11 24	副変速機制御コンピューター
+T3	Parts 107 113	シフトレバー
+T4	Parts 0 6	動力伝達装置
+T7	Parts 38 42	副変速機
+T8	Parts 65 68	原動機
+T9	Parts 45 47	ギヤ
+T10	Parts 78 80	ギヤ
+T11	Parts 131 133	車両
+R2	Part-Whole Arg1:T2 Arg2:T4	
+R3	Part-Whole Arg1:T9 Arg2:T7	
+R4	Connect Arg1:T2 Arg2:T7	
+R5	Part-Whole Arg1:T7 Arg2:T4	
+R6	Coreference Arg1:T9 Arg2:T10	
+R7	Connect Arg1:T4 Arg2:T8	
+R8	Part-Whole Arg1:T8 Arg2:T11	
+R9	Connect Arg1:T3 Arg2:T7	
+T1	Parts 89 93	駐車機構
+R1	Part-Whole Arg1:T4 Arg2:T11	
+R10	Part-Whole Arg1:T3 Arg2:T11	
+R11	Part-Whole Arg1:T1 Arg2:T7	

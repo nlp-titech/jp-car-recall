@@ -1,0 +1,9 @@
+T1	Parts 9 18	マスターシリンダー
+T2	Parts 60 64	ブレーキ
+T3	Parts 0 4	制動装置
+T4	Parts 20 23	シール
+T5	Parts 73 76	シール
+R1	Coreference Arg1:T4 Arg2:T5	
+R3	Part-Whole Arg1:T1 Arg2:T3	
+R4	Part-Whole Arg1:T4 Arg2:T1	
+R2	Part-Whole Arg1:T2 Arg2:T3	

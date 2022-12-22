@@ -1,0 +1,21 @@
+T17	Parts 19 25	電気ボックス
+T18	Parts 45 50	エッジゴム
+T19	Parts 66 72	電気ボックス
+T2	Parts 0 10	エンジン制御用リレー
+T3	Parts 26 28	配線
+T4	Parts 63 65	配線
+R1	Coreference Arg1:T4 Arg2:T3	
+R2	Coreference Arg1:T19 Arg2:T17	
+T5	Parts 108 110	配線
+T6	Parts 111 113	被覆
+R3	Coreference Arg1:T5 Arg2:T4	
+T7	Parts 119 127	電気ボックス配線
+T8	Parts 132 136	エンジン
+T9	Parts 139 142	ライト
+R4	Connect Arg1:T2 Arg2:T8	
+R5	Contact Arg1:T17 Arg2:T3	
+R6	Part-Whole Arg1:T2 Arg2:T17	
+R7	Contact Arg1:T17 Arg2:T18	
+R8	Part-Whole Arg1:T6 Arg2:T5	
+R9	Coreference Arg1:T5 Arg2:T7	
+R10	Connect Arg1:T7 Arg2:T9	

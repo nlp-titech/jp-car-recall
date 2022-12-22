@@ -1,0 +1,11 @@
+T1	Parts 0 9	ホイール・クレーン
+T2	Parts 10 13	前照灯
+T3	Parts 108 111	前照灯
+T4	Parts 30 33	灯火器
+T5	Parts 57 60	灯火器
+T6	Parts 66 69	灯火器
+R2	Coreference Arg1:T6 Arg2:T5	
+R3	Coreference Arg1:T5 Arg2:T4	
+R5	Part-Whole Arg1:T2 Arg2:T1	
+R1	Part-Whole Arg1:T4 Arg2:T2	
+R4	Coreference Arg1:T2 Arg2:T3	

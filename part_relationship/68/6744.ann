@@ -1,0 +1,10 @@
+T2	Parts 72 75	オイル
+T3	Parts 96 99	オイル
+T4	Parts 25 34	シーリングキャップ
+T6	Parts 13 20	オイルリサーバ
+T7	Parts 100 103	排気管
+T8	Parts 0 12	油圧スタビライザ制御装置
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Part-Whole Arg1:T6 Arg2:T8	
+R3	Part-Whole Arg1:T4 Arg2:T6	
+R4	Contact Arg1:T6 Arg2:T2	

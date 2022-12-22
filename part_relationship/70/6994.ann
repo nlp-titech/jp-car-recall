@@ -1,0 +1,3 @@
+T1	Parts 25 29	エンジン
+T2	Parts 14 20	中型トラック
+R1	Part-Whole Arg1:T1 Arg2:T2	

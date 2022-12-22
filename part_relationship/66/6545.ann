@@ -1,0 +1,14 @@
+T2	Parts 52 63	コネクティングスリーブ
+T3	Parts 160 170	コネクティグスリーブ
+T4	Parts 12 20	インナーチューブ
+T5	Parts 43 51	インナーチューブ
+T6	Parts 151 159	インナーチューブ
+T7	Parts 127 134	フォークオイル
+T11	Parts 0 7	かじ取りホーク
+R1	Part-Whole Arg1:T4 Arg2:T11	
+R2	Coreference Arg1:T4 Arg2:T5	
+R3	Connect Arg1:T5 Arg2:T2	
+R4	Coreference Arg1:T5 Arg2:T6	
+R5	Coreference Arg1:T2 Arg2:T3	
+R6	Contact Arg1:T7 Arg2:T6	
+R7	Part-Whole Arg1:T2 Arg2:T11	

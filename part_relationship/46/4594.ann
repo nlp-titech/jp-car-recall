@@ -1,0 +1,9 @@
+T1	Parts 9 19	後輪用ブレーキパイプ
+T2	Parts 60 65	ブレーキ液
+T5	Parts 0 4	制動装置
+R1	Part-Whole Arg1:T1 Arg2:T5	
+R4	Contact Arg1:T1 Arg2:T2	
+T3	Parts 20 23	継ぎ手
+T4	Parts 54 57	継ぎ手
+R2	Coreference Arg1:T3 Arg2:T4	
+R3	Contact Arg1:T1 Arg2:T3	

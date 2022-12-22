@@ -1,0 +1,5 @@
+T1	Parts 23 30	ニーブロッカー
+T2	Parts 60 67	ニーブロッカー
+T3	Parts 0 4	運転者席
+T4	Parts 9 14	計器パネル
+R3	Coreference Arg1:T1 Arg2:T2	

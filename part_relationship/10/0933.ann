@@ -1,0 +1,24 @@
+T2	Parts 9 16	ブレーキリンク
+T3	Parts 17 21	連結ピン
+T4	Parts 22 33	抜け防止用スナップピン
+T5	Parts 34 45	ブレーキペダルサポート
+T6	Parts 59 63	ブレーキ
+T7	Parts 69 71	ピン
+T8	Parts 74 78	サポート
+T9	Parts 89 95	スナップピン
+T10	Parts 123 127	連結ピン
+T11	Parts 132 136	ブレーキ
+T12	Parts 140 145	右ブレーキ
+R2	Coreference Arg1:T11 Arg2:T6	
+R3	Coreference Arg1:T7 Arg2:T4	
+R4	Coreference Arg1:T8 Arg2:T5	
+R5	Coreference Arg1:T9 Arg2:T7	
+R6	Coreference Arg1:T10 Arg2:T3	
+T1	Parts 0 8	右ブレーキペダル
+R1	Connect Arg1:T1 Arg2:T2	
+R7	Contact Arg1:T1 Arg2:T3	
+R8	Contact Arg1:T2 Arg2:T3	
+R9	Contact Arg1:T3 Arg2:T4	
+R10	Contact Arg1:T1 Arg2:T5	
+R11	Connect Arg1:T1 Arg2:T6	
+R12	Part-Whole Arg1:T12 Arg2:T11	

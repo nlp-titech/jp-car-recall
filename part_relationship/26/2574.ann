@@ -1,0 +1,10 @@
+T1	Parts 20 32	ハイブリッドコントローラ
+T4	Parts 58 68	エンジンコントローラ
+T5	Parts 69 81	ハイブリッドコントローラ
+T6	Parts 93 105	ブレーキポジションセンサ
+R2	Coreference Arg1:T5 Arg2:T1	
+T10	Parts 172 176	ブレーキ
+R1	Connect Arg1:T4 Arg2:T5	
+R3	Connect Arg1:T6 Arg2:T10	
+T2	Parts 41 48	制御プログラム
+R4	Part-Whole Arg1:T2 Arg2:T1	

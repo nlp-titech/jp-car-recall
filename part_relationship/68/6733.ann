@@ -1,0 +1,15 @@
+T1	Parts 0 9	エンジンスターター
+T2	Parts 131 135	エンジン
+T3	Parts 74 79	スターター
+T4	Parts 91 96	スターター
+T5	Parts 16 19	リレー
+T6	Parts 32 35	リレー
+T7	Parts 58 61	リレー
+T8	Parts 117 120	リレー
+R1	Coreference Arg1:T1 Arg2:T3	
+R2	Coreference Arg1:T3 Arg2:T4	
+R3	Coreference Arg1:T5 Arg2:T6	
+R4	Coreference Arg1:T6 Arg2:T7	
+R5	Coreference Arg1:T7 Arg2:T8	
+R6	Connect Arg1:T1 Arg2:T5	
+R7	Part-Whole Arg1:T4 Arg2:T2	

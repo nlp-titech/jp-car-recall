@@ -1,0 +1,9 @@
+T1	Parts 57 61	電子基板
+T2	Parts 91 95	電子基板
+T3	Parts 29 40	ＨＩＤ（放電式）前照灯
+T4	Parts 100 106	ＨＩＤ前照灯
+T5	Parts 41 56	バラストモジュール（点灯装置）
+R1	Coreference Arg1:T3 Arg2:T4	
+R2	Coreference Arg1:T1 Arg2:T2	
+R4	Part-Whole Arg1:T1 Arg2:T5	
+R3	Part-Whole Arg1:T5 Arg2:T3	

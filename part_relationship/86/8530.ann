@@ -1,0 +1,5 @@
+T1	Parts 0 2	車体
+T2	Parts 28 30	車体
+T3	Parts 70 72	燃料
+R1	Coreference Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T2	

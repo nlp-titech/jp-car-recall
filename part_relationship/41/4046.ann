@@ -1,0 +1,14 @@
+T1	Parts 9 17	ワイヤーハーネス
+T2	Parts 39 47	ワイヤーハーネス
+T3	Parts 104 108	エンジン
+T5	Parts 0 8	ホイールローダー
+T6	Parts 48 51	カバー
+T10	Parts 77 79	配線
+R1	Part-Whole Arg1:T1 Arg2:T5	
+R2	Coreference Arg1:T1 Arg2:T2	
+R5	Part-Whole Arg1:T3 Arg2:T5	
+T4	Parts 83 87	コネクタ
+R6	Contact Arg1:T10 Arg2:T4	
+R7	Connect Arg1:T10 Arg2:T3	
+R3	Part-Whole Arg1:T6 Arg2:T2	
+R4	Part-Whole Arg1:T10 Arg2:T2	

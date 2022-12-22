@@ -1,0 +1,18 @@
+T13	Parts 97 100	ホース
+T14	Parts 56 59	ホース
+T15	Parts 36 46	ラジエータロアホース
+T17	Parts 118 121	原動機
+T1	Parts 0 8	農業用薬剤散布車
+T2	Parts 9 12	原動機
+R1	Coreference Arg1:T15 Arg2:T14	
+T3	Parts 67 70	ベルト
+R2	Coreference Arg1:T14 Arg2:T13	
+R3	Coreference Arg1:T2 Arg2:T17	
+T4	Parts 60 63	作業機
+R4	Coreference Arg1:T1 Arg2:T4	
+R5	Part-Whole Arg1:T2 Arg2:T1	
+T5	Parts 104 107	冷却水
+R6	Contact Arg1:T13 Arg2:T5	
+R7	Contact Arg1:T2 Arg2:T15	
+R8	Part-Whole Arg1:T15 Arg2:T1	
+R9	Part-Whole Arg1:T3 Arg2:T4	

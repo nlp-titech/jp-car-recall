@@ -1,0 +1,17 @@
+T1	Parts 17 23	大型トラック
+T2	Parts 0 11	圧縮天然ガス（ＣＮＧ）
+T3	Parts 12 14	燃料
+T4	Parts 28 31	主止弁
+T5	Parts 39 44	ブラケット
+T6	Parts 79 84	燃料パイプ
+T7	Parts 117 119	燃料
+T8	Parts 60 64	ガス容器
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Coreference Arg1:T3 Arg2:T7	
+R3	Part-Whole Arg1:T8 Arg2:T1	
+R4	Part-Whole Arg1:T2 Arg2:T8	
+R5	Contact Arg1:T6 Arg2:T8	
+R6	Contact Arg1:T6 Arg2:T7	
+R7	Contact Arg1:T4 Arg2:T5	
+R8	Contact Arg1:T5 Arg2:T8	
+R9	Contact Arg1:T4 Arg2:T8	

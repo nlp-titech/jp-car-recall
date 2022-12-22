@@ -1,0 +1,17 @@
+T2	Parts 91 95	ハンドル
+T3	Parts 8 17	クランク･プーリー
+T4	Parts 78 82	プーリー
+T5	Parts 115 119	プーリー
+T7	Parts 84 87	ベルト
+T8	Parts 109 112	ベルト
+T9	Parts 18 27	防振用ラバーリング
+T10	Parts 0 3	原動機
+T11	Parts 134 137	原動機
+R1	Contact Arg1:T9 Arg2:T3	
+R2	Part-Whole Arg1:T3 Arg2:T10	
+R3	Coreference Arg1:T3 Arg2:T4	
+R4	Contact Arg1:T7 Arg2:T4	
+R5	Connect Arg1:T3 Arg2:T2	
+R6	Coreference Arg1:T7 Arg2:T8	
+R7	Coreference Arg1:T3 Arg2:T5	
+R8	Coreference Arg1:T10 Arg2:T11	

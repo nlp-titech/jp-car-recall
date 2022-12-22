@@ -1,0 +1,11 @@
+T1	Parts 23 32	集中ロックシステム
+T3	Parts 33 40	サーボモーター
+T4	Parts 0 9	集中ロック用ＥＣＵ
+T6	Parts 62 64	ドア
+T7	Parts 94 96	ドア
+T5	Parts 67 75	フューエルリッド
+R1	Coreference Arg1:T7 Arg2:T6	
+R3	Part-Whole Arg1:T4 Arg2:T1	
+R4	Part-Whole Arg1:T3 Arg2:T1	
+R5	Connect Arg1:T6 Arg2:T1	
+R6	Connect Arg1:T5 Arg2:T1	

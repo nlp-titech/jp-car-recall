@@ -1,0 +1,5 @@
+T1	Parts 0 6	２名用キャブ
+T2	Parts 7 10	助手席
+T3	Parts 15 17	座席
+R1	Part-Whole Arg1:T3 Arg2:T2	
+R2	Part-Whole Arg1:T2 Arg2:T1	

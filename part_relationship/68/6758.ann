@@ -1,0 +1,7 @@
+T3	Parts 33 36	タイヤ
+T7	Parts 0 11	バス・トラック用タイヤ
+R1	Coreference Arg1:T7 Arg2:T3	
+T2	Parts 64 66	エア
+R3	Part-Whole Arg1:T2 Arg2:T3	
+T4	Parts 122 124	エア
+R4	Coreference Arg1:T2 Arg2:T4	

@@ -1,0 +1,7 @@
+T1	Parts 0 11	大型トラック用エンジン
+T2	Parts 115 119	エンジン
+R3	Coreference Arg1:T1 Arg2:T2	
+T3	Parts 16 20	ピストン
+T4	Parts 87 91	ピストン
+R1	Part-Whole Arg1:T3 Arg2:T1	
+R2	Coreference Arg1:T3 Arg2:T4	

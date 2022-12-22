@@ -1,0 +1,21 @@
+T2	Parts 0 4	エンジン
+T4	Parts 47 51	シール剤
+T5	Parts 111 115	シール剤
+T12	Parts 67 71	ヒューズ
+T13	Parts 163 167	ヒューズ
+T14	Parts 5 9	始動装置
+T3	Parts 14 28	スタータマグネチックスイッチ
+T6	Parts 29 36	防水用シール剤
+T7	Parts 52 66	スタータマグネチックスイッチ
+R1	Part-Whole Arg1:T14 Arg2:T2	
+R2	Part-Whole Arg1:T3 Arg2:T14	
+R3	Contact Arg1:T6 Arg2:T3	
+R4	Coreference Arg1:T6 Arg2:T4	
+R5	Coreference Arg1:T3 Arg2:T7	
+R6	Part-Whole Arg1:T12 Arg2:T7	
+R7	Coreference Arg1:T4 Arg2:T5	
+T1	Parts 120 124	ヒューズ
+R8	Coreference Arg1:T12 Arg2:T1	
+R9	Coreference Arg1:T1 Arg2:T13	
+T8	Parts 201 214	スタータマグチックスイッチ
+R11	Coreference Arg1:T7 Arg2:T8	

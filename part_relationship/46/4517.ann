@@ -1,0 +1,7 @@
+T1	Parts 0 12	前席シートベルト巻取装置
+T2	Parts 41 47	シートベルト
+T3	Parts 58 64	シートベルト
+T4	Parts 48 53	ロック装置
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Part-Whole Arg1:T1 Arg2:T2	
+R3	Part-Whole Arg1:T4 Arg2:T2	

@@ -1,0 +1,23 @@
+T1	Parts 32 39	バルブ固定金具
+T3	Parts 97 100	バルブ
+T4	Parts 3 6	制動灯
+T5	Parts 114 117	制動灯
+T6	Parts 67 69	金具
+T7	Parts 91 93	金具
+T8	Parts 7 11	兼用灯火
+T9	Parts 0 2	尾灯
+T10	Parts 111 113	尾灯
+R1	Coreference Arg1:T1 Arg2:T6	
+R2	Coreference Arg1:T6 Arg2:T7	
+R3	Coreference Arg1:T9 Arg2:T10	
+R4	Coreference Arg1:T4 Arg2:T5	
+R5	Contact Arg1:T7 Arg2:T3	
+R8	Oneway-Coreference Arg1:T8 Arg2:T9	
+R9	Oneway-Coreference Arg1:T8 Arg2:T4	
+R10	Part-Whole Arg1:T3 Arg2:T8	
+R6	Part-Whole Arg1:T3 Arg2:T10	
+R7	Part-Whole Arg1:T3 Arg2:T5	
+T2	Parts 16 20	ソケット
+R11	Part-Whole Arg1:T2 Arg2:T8	
+R12	Contact Arg1:T2 Arg2:T3	
+R13	Contact Arg1:T2 Arg2:T1	

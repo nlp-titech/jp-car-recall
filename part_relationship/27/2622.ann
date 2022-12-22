@@ -1,0 +1,24 @@
+T1	Parts 3 13	６速自動変速機搭載車
+T2	Parts 16 26	５速手動変速機搭載車
+T3	Parts 31 33	車両
+T4	Parts 39 49	セカンドクロスメンバ
+T5	Parts 51 55	電気配線
+T6	Parts 73 77	電気配線
+R1	Coreference Arg1:T6 Arg2:T5	
+T7	Parts 78 81	変速機
+T9	Parts 122 124	配線
+R2	Coreference Arg1:T9 Arg2:T6	
+T10	Parts 158 161	制動灯
+R3	Oneway-Coreference Arg1:T3 Arg2:T1	
+R4	Oneway-Coreference Arg1:T3 Arg2:T2	
+R5	Part-Whole Arg1:T4 Arg2:T3	
+R6	Part-Whole Arg1:T5 Arg2:T4	
+R8	Part-Whole Arg1:T7 Arg2:T1	
+R9	Part-Whole Arg1:T7 Arg2:T2	
+R7	Part-Whole Arg1:T7 Arg2:T3	
+R10	Connect Arg1:T10 Arg2:T9	
+R11	Part-Whole Arg1:T4 Arg2:T2	
+R12	Part-Whole Arg1:T4 Arg2:T1	
+R13	Part-Whole Arg1:T10 Arg2:T3	
+R14	Part-Whole Arg1:T10 Arg2:T2	
+R15	Part-Whole Arg1:T10 Arg2:T1	

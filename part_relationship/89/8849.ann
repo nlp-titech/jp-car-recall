@@ -1,0 +1,7 @@
+T1	Parts 0 11	助手席側後席ドアガラス
+T2	Parts 42 45	ガラス
+T3	Parts 71 74	ガラス
+T4	Parts 101 105	窓ガラス
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Coreference Arg1:T2 Arg2:T3	
+R3	Coreference Arg1:T3 Arg2:T4	

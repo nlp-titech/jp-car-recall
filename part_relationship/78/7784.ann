@@ -1,0 +1,9 @@
+T1	Parts 0 13	テールゲートラバーストップ
+T2	Parts 36 42	テールランプ
+T3	Parts 61 65	電気回路
+T4	Parts 73 78	方向指示器
+T5	Parts 80 83	後退灯
+R1	Connect Arg1:T3 Arg2:T4	
+R2	Connect Arg1:T3 Arg2:T5	
+R3	Contact Arg1:T1 Arg2:T2	
+R4	Part-Whole Arg1:T5 Arg2:T2	

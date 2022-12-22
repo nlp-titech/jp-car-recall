@@ -1,0 +1,21 @@
+T1	Parts 0 7	後退警報ブザー
+T2	Parts 8 12	電気配線
+T3	Parts 17 24	後退警報ブザー
+T4	Parts 25 40	パーキングブレーキ圧力スイッチ
+T5	Parts 41 45	動作電源
+T6	Parts 48 52	ハーネス
+T7	Parts 64 71	後退警報ブザー
+T9	Parts 91 106	パーキングブレーキ圧力スイッチ
+T10	Parts 112 127	パーキングブレーキ圧力スイッチ
+R1	Coreference Arg1:T10 Arg2:T9	
+T11	Parts 137 146	後退灯点灯用リレー
+R2	Coreference Arg1:T3 Arg2:T1	
+R3	Coreference Arg1:T9 Arg2:T4	
+R4	Coreference Arg1:T7 Arg2:T3	
+T12	Parts 152 155	後退灯
+R5	Part-Whole Arg1:T2 Arg2:T1	
+R6	Connect Arg1:T5 Arg2:T4	
+R7	Contact Arg1:T6 Arg2:T2	
+R8	Contact Arg1:T5 Arg2:T6	
+R9	Connect Arg1:T11 Arg2:T12	
+R10	Connect Arg1:T5 Arg2:T3	

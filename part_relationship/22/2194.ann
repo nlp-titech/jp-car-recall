@@ -1,0 +1,11 @@
+T11	Parts 48 57	ギヤシフトユニット
+T12	Parts 92 96	モーター
+T13	Parts 19 24	呼吸ホース
+T1	Parts 0 8	機械式自動変速機
+T2	Parts 9 18	ギヤシフトユニット
+T3	Parts 37 40	ホース
+R1	Coreference Arg1:T3 Arg2:T13	
+R2	Coreference Arg1:T11 Arg2:T2	
+R3	Contact Arg1:T13 Arg2:T2	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T12 Arg2:T2	

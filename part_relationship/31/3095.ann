@@ -1,0 +1,17 @@
+T1	Parts 0 13	アスファルト・フィニッシャ
+T2	Parts 14 18	エンジン
+T3	Parts 26 32	燃料フィルタ
+T4	Parts 56 62	燃料フィルタ
+R1	Coreference Arg1:T3 Arg2:T4	
+T5	Parts 68 74	燃料配管継手
+T7	Parts 114 118	配管継手
+T8	Parts 122 124	燃料
+R2	Coreference Arg1:T5 Arg2:T7	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T3 Arg2:T1	
+R5	Part-Whole Arg1:T5 Arg2:T1	
+R6	Contact Arg1:T8 Arg2:T2	
+R7	Contact Arg1:T2 Arg2:T3	
+R8	Contact Arg1:T4 Arg2:T8	
+R9	Contact Arg1:T7 Arg2:T8	
+R10	Part-Whole Arg1:T8 Arg2:T1	

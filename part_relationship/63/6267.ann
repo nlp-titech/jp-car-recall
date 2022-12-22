@@ -1,0 +1,9 @@
+T5	Parts 30 32	車両
+T1	Parts 0 12	エアバッグ制御モジュール
+T2	Parts 48 62	サイド・カーテン・エアバッグ
+T3	Parts 64 73	サイド・エアバッグ
+R2	Part-Whole Arg1:T1 Arg2:T5	
+R3	Connect Arg1:T1 Arg2:T2	
+R4	Connect Arg1:T1 Arg2:T3	
+R1	Part-Whole Arg1:T2 Arg2:T5	
+R5	Part-Whole Arg1:T3 Arg2:T5	

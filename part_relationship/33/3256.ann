@@ -1,0 +1,14 @@
+T15	Parts 20 30	アウトプットシャフト
+T16	Parts 45 49	シャフト
+T17	Parts 86 90	シャフト
+T18	Parts 104 114	アウトプットシャフト
+T19	Parts 11 19	機械式自動変速機
+T20	Parts 119 127	プロペラシャフト
+T1	Parts 0 6	大型トラック
+R1	Coreference Arg1:T15 Arg2:T16	
+R2	Coreference Arg1:T16 Arg2:T17	
+R3	Coreference Arg1:T17 Arg2:T18	
+R4	Part-Whole Arg1:T19 Arg2:T1	
+R5	Contact Arg1:T18 Arg2:T20	
+R7	Part-Whole Arg1:T15 Arg2:T19	
+R6	Part-Whole Arg1:T20 Arg2:T1	

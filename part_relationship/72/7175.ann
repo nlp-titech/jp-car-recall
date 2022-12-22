@@ -1,0 +1,17 @@
+T1	Parts 8 16	クランクシャフト
+T3	Parts 134 142	補機駆動用ベルト
+T4	Parts 17 32	タイミングベルトガイドプレート
+T5	Parts 109 117	クランクプーリー
+T6	Parts 124 132	クランクプーリー
+T7	Parts 83 92	プーリー取付ボルト
+T8	Parts 146 151	充電警告灯
+T9	Parts 160 164	ハンドル
+T13	Parts 0 3	原動機
+R1	Part-Whole Arg1:T1 Arg2:T13	
+R3	Contact Arg1:T4 Arg2:T7	
+R4	Part-Whole Arg1:T4 Arg2:T1	
+R6	Coreference Arg1:T5 Arg2:T6	
+R7	Connect Arg1:T3 Arg2:T8	
+R8	Contact Arg1:T6 Arg2:T3	
+R10	Connect Arg1:T3 Arg2:T9	
+R2	Contact Arg1:T7 Arg2:T5	

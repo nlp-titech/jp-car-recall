@@ -1,0 +1,11 @@
+T1	Parts 25 35	コントロールユニット
+T2	Parts 40 47	加速度センサー
+T4	Parts 73 78	エアバック
+T6	Parts 0 3	運転席
+T7	Parts 4 7	助手席
+T8	Parts 8 18	サイドエアバック装置
+R1	Part-Whole Arg1:T8 Arg2:T7	
+R2	Part-Whole Arg1:T8 Arg2:T6	
+R3	Connect Arg1:T1 Arg2:T8	
+R4	Coreference Arg1:T8 Arg2:T4	
+R5	Part-Whole Arg1:T2 Arg2:T1	

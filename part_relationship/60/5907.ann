@@ -1,0 +1,7 @@
+T3	Parts 68 76	ブレーキ倍力装置
+T4	Parts 0 12	ブレーキバキュームパイプ
+T5	Parts 38 50	ブレーキバキュームパイプ
+T6	Parts 84 88	ブレーキ
+R1	Coreference Arg1:T4 Arg2:T5	
+R2	Part-Whole Arg1:T5 Arg2:T3	
+R3	Connect Arg1:T3 Arg2:T6	

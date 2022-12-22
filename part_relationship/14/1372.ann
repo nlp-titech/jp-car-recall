@@ -1,0 +1,13 @@
+T6	Parts 137 141	エンジン
+T7	Parts 119 130	イグニッションスイッチ
+T10	Parts 29 43	スタートコントロールユニット
+T1	Parts 0 11	イグニッションスイッチ
+T2	Parts 12 24	キーレススタートシステム
+T4	Parts 57 66	イグニッションキー
+T5	Parts 72 75	携帯機
+R1	Coreference Arg1:T1 Arg2:T7	
+R4	Part-Whole Arg1:T10 Arg2:T2	
+R5	Coreference Arg1:T5 Arg2:T4	
+R8	Connect Arg1:T4 Arg2:T10	
+R9	Connect Arg1:T6 Arg2:T7	
+R2	Connect Arg1:T1 Arg2:T2	

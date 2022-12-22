@@ -1,0 +1,3 @@
+T1	Parts 1 15	エンジンコントロールユニット
+T2	Parts 39 44	スロットル
+R1	Connect Arg1:T1 Arg2:T2	

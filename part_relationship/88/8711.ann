@@ -1,0 +1,20 @@
+T1	Parts 0 8	ショベル・ローダ
+T2	Parts 9 22	トランスミッションブリーザ
+T3	Parts 51 54	タイヤ
+T4	Parts 55 62	エンジンフード
+T5	Parts 75 88	トランスミッションブリーザ
+T6	Parts 92 100	ミッションオイル
+T7	Parts 119 128	トランスミッション
+T8	Parts 137 142	セルモータ
+T9	Parts 162 166	エンジン
+R1	Coreference Arg1:T2 Arg2:T5	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T3 Arg2:T1	
+R4	Part-Whole Arg1:T4 Arg2:T1	
+R5	Part-Whole Arg1:T6 Arg2:T1	
+R6	Part-Whole Arg1:T7 Arg2:T1	
+R7	Part-Whole Arg1:T8 Arg2:T1	
+R8	Part-Whole Arg1:T9 Arg2:T1	
+R9	Contact Arg1:T6 Arg2:T7	
+R10	Connect Arg1:T8 Arg2:T9	
+R11	Contact Arg1:T5 Arg2:T7	

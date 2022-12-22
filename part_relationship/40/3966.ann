@@ -1,0 +1,17 @@
+T1	Parts 1 10	ディーゼルエンジン
+T2	Parts 111 119	オイルストレーナ
+T3	Parts 73 81	シリンダーヘッド
+T4	Parts 87 94	エンジンオイル
+T5	Parts 103 110	エンジンオイル
+T8	Parts 38 49	インジェクタガスケット
+T9	Parts 15 26	インジェクタ取付ナット
+T10	Parts 152 156	エンジン
+T14	Parts 132 135	警告灯
+R1	Coreference Arg1:T10 Arg2:T1	
+R2	Coreference Arg1:T5 Arg2:T4	
+R3	Part-Whole Arg1:T8 Arg2:T1	
+R4	Part-Whole Arg1:T3 Arg2:T1	
+R6	Contact Arg1:T4 Arg2:T1	
+R7	Part-Whole Arg1:T2 Arg2:T1	
+R8	Connect Arg1:T10 Arg2:T14	
+R5	Part-Whole Arg1:T9 Arg2:T1	

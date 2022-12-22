@@ -1,0 +1,7 @@
+T1	Parts 50 56	取付けボルト
+T2	Parts 103 108	エアバッグ
+T4	Parts 81 85	センサー
+T5	Parts 23 36	フロントインパクトセンサー
+R1	Contact Arg1:T1 Arg2:T5	
+R2	Coreference Arg1:T5 Arg2:T4	
+R3	Connect Arg1:T5 Arg2:T2	

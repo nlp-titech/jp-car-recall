@@ -1,0 +1,12 @@
+T1	Parts 0 4	マフラー
+T2	Parts 19 29	電動フラップ制御配線
+T3	Parts 42 46	マフラー
+T4	Parts 53 55	配線
+T5	Parts 71 73	配線
+T6	Parts 80 84	ヒューズ
+T7	Parts 94 98	エンジン
+R1	Coreference Arg1:T1 Arg2:T3	
+R2	Coreference Arg1:T2 Arg2:T4	
+R3	Coreference Arg1:T4 Arg2:T5	
+R4	Connect Arg1:T5 Arg2:T6	
+R5	Connect Arg1:T1 Arg2:T2	

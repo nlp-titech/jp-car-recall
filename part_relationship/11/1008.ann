@@ -1,0 +1,15 @@
+T17	Parts 73 83	リヤブレーキキャリパ
+T18	Parts 84 91	ユニオンボルト
+T19	Parts 109 112	ボルト
+T1	Parts 1 9	リヤスタビライザ
+T2	Parts 22 28	スタビライザ
+T3	Parts 38 40	車両
+T4	Parts 59 65	スタビライザ
+T5	Parts 115 120	ブレーキ液
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Coreference Arg1:T2 Arg2:T4	
+R3	Coreference Arg1:T18 Arg2:T19	
+R4	Part-Whole Arg1:T2 Arg2:T3	
+R5	Part-Whole Arg1:T18 Arg2:T17	
+R6	Contact Arg1:T5 Arg2:T17	
+R7	Part-Whole Arg1:T17 Arg2:T3	

@@ -1,0 +1,12 @@
+T16	Parts 133 136	前照灯
+T18	Parts 35 37	電球
+T21	Parts 98 101	前照灯
+T1	Parts 0 3	前照灯
+T2	Parts 8 15	電球用電気配線
+T4	Parts 49 53	電気配線
+R1	Coreference Arg1:T2 Arg2:T4	
+R2	Coreference Arg1:T1 Arg2:T21	
+R4	Coreference Arg1:T21 Arg2:T16	
+T5	Parts 87 91	エンジン
+R5	Part-Whole Arg1:T18 Arg2:T1	
+R3	Part-Whole Arg1:T2 Arg2:T1	

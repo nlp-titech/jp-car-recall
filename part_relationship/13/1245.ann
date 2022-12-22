@@ -1,0 +1,33 @@
+T17	Parts 52 56	エンジン
+T18	Parts 35 39	クランプ
+T19	Parts 65 69	クランプ
+T20	Parts 91 95	クランプ
+T22	Parts 116 136	排気ガス再循環装置（ＥＧＲ）制御用ホース
+T23	Parts 164 173	ＥＧＲ制御用ホース
+T24	Parts 96 101	燃料ホース
+T25	Parts 102 107	燃料ホース
+T26	Parts 110 115	燃料ホース
+T27	Parts 157 162	燃料ホース
+T1	Parts 1 7	大型トラック
+T2	Parts 12 16	エンジン
+T3	Parts 17 23	燃料フィルタ
+T4	Parts 25 30	燃料ホース
+T5	Parts 185 187	燃料
+R1	Coreference Arg1:T2 Arg2:T17	
+R2	Coreference Arg1:T18 Arg2:T19	
+R3	Coreference Arg1:T4 Arg2:T24	
+R4	Coreference Arg1:T19 Arg2:T20	
+R5	Coreference Arg1:T25 Arg2:T26	
+R6	Coreference Arg1:T26 Arg2:T27	
+R7	Coreference Arg1:T22 Arg2:T23	
+R8	Coreference Arg1:T24 Arg2:T25	
+R9	Part-Whole Arg1:T2 Arg2:T1	
+R10	Part-Whole Arg1:T3 Arg2:T1	
+R11	Part-Whole Arg1:T4 Arg2:T1	
+R13	Contact Arg1:T2 Arg2:T4	
+R14	Contact Arg1:T3 Arg2:T4	
+R15	Contact Arg1:T4 Arg2:T18	
+R17	Part-Whole Arg1:T22 Arg2:T1	
+R18	Contact Arg1:T27 Arg2:T5	
+R20	Part-Whole Arg1:T5 Arg2:T1	
+R12	Connect Arg1:T2 Arg2:T3	

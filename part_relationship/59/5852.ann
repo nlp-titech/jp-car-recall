@@ -1,0 +1,5 @@
+T2	Parts 0 2	車体
+T3	Parts 10 20	前部潜り込み防止装置
+T4	Parts 34 44	前部潜り込み防止装置
+R1	Coreference Arg1:T3 Arg2:T4	
+R2	Contact Arg1:T2 Arg2:T3	

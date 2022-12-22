@@ -1,0 +1,9 @@
+T1	Parts 0 8	ハイブリッド車両
+T2	Parts 9 13	電気配線
+T3	Parts 38 44	車両フレーム
+T4	Parts 45 49	電気配線
+T5	Parts 81 87	車両フレーム
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T1	
+R3	Coreference Arg1:T2 Arg2:T4	
+R4	Coreference Arg1:T3 Arg2:T5	

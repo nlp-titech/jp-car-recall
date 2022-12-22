@@ -1,0 +1,8 @@
+T1	Parts 0 3	自動車
+T2	Parts 15 20	方向指示器
+T3	Parts 29 33	運転者席
+T6	Parts 34 42	作動状態表示装置
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T3 Arg2:T1	
+R1	Part-Whole Arg1:T6 Arg2:T1	
+R4	Connect Arg1:T2 Arg2:T6	

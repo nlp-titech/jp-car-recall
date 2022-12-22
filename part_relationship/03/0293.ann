@@ -1,0 +1,16 @@
+T12	Parts 39 49	シーリングワッシャー
+T14	Parts 85 90	ワッシャー
+T15	Parts 104 109	燃料パイプ
+T16	Parts 4 10	燃料供給装置
+T17	Parts 50 55	燃料パイプ
+T13	Parts 0 3	原動機
+T3	Parts 76 78	燃料
+R1	Coreference Arg1:T14 Arg2:T12	
+R3	Coreference Arg1:T15 Arg2:T17	
+T4	Parts 112 114	燃料
+R4	Part-Whole Arg1:T16 Arg2:T13	
+R5	Part-Whole Arg1:T12 Arg2:T16	
+R6	Part-Whole Arg1:T17 Arg2:T16	
+R8	Contact Arg1:T3 Arg2:T17	
+R9	Coreference Arg1:T3 Arg2:T4	
+R2	Contact Arg1:T12 Arg2:T17	

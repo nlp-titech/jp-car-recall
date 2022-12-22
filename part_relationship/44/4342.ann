@@ -1,0 +1,9 @@
+T1	Parts 0 6	前輪懸架装置
+T2	Parts 84 88	懸架装置
+T4	Parts 28 36	偏芯カム・ボルト
+T5	Parts 76 79	ボルト
+T3	Parts 7 18	ロア・アーム（下側腕）
+R1	Part-Whole Arg1:T3 Arg2:T1	
+R2	Contact Arg1:T4 Arg2:T3	
+R3	Coreference Arg1:T4 Arg2:T5	
+R4	Coreference Arg1:T1 Arg2:T2	

@@ -1,0 +1,5 @@
+T1	Parts 1 11	燃料ポンプ用電気配線
+T2	Parts 76 79	原動機
+T3	Parts 24 27	排気管
+R1	Contact Arg1:T1 Arg2:T3	
+R2	Part-Whole Arg1:T1 Arg2:T2	

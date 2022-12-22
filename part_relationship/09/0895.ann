@@ -1,0 +1,32 @@
+T29	Parts 50 53	ナット
+T30	Parts 103 106	ナット
+T32	Parts 125 133	ボールジョイント
+T33	Parts 209 213	Ｖロッド
+T34	Parts 179 186	樹脂ベアリング
+T1	Parts 1 16	バック式空気ばね緩衝装置付車両
+T2	Parts 17 20	後車軸
+T3	Parts 21 23	車枠
+T4	Parts 28 32	Ｖロッド
+T5	Parts 36 44	ボールジョイント
+R1	Coreference Arg1:T30 Arg2:T29	
+R2	Coreference Arg1:T32 Arg2:T5	
+T6	Parts 222 225	後車軸
+R3	Coreference Arg1:T6 Arg2:T7	
+R4	Coreference Arg1:T33 Arg2:T4	
+T7	Parts 215 217	車軸
+T8	Parts 246 253	タイヤホイール
+T9	Parts 254 256	車体
+R6	Part-Whole Arg1:T3 Arg2:T1	
+R7	Part-Whole Arg1:T4 Arg2:T1	
+R8	Part-Whole Arg1:T9 Arg2:T1	
+R11	Contact Arg1:T2 Arg2:T3	
+R12	Contact Arg1:T2 Arg2:T4	
+R13	Contact Arg1:T3 Arg2:T4	
+R14	Part-Whole Arg1:T5 Arg2:T4	
+R15	Contact Arg1:T29 Arg2:T4	
+R16	Contact Arg1:T5 Arg2:T29	
+R17	Part-Whole Arg1:T34 Arg2:T4	
+R18	Contact Arg1:T32 Arg2:T34	
+R5	Coreference Arg1:T2 Arg2:T7	
+R9	Part-Whole Arg1:T8 Arg2:T1	
+R10	Part-Whole Arg1:T2 Arg2:T1	

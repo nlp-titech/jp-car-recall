@@ -1,0 +1,12 @@
+T1	Parts 71 79	エアバッグ警告灯
+T2	Parts 17 23	加速度センサ
+T4	Parts 84 89	エアバッグ
+T8	Parts 51 53	ＩＣ
+T3	Parts 0 11	エアバッグ制御システム
+T5	Parts 27 38	圧力センサ内ＩＣチップ
+R3	Part-Whole Arg1:T2 Arg2:T3	
+R4	Part-Whole Arg1:T5 Arg2:T3	
+R5	Connect Arg1:T3 Arg2:T1	
+R7	Connect Arg1:T3 Arg2:T4	
+R2	Coreference Arg1:T5 Arg2:T8	
+R1	Part-Whole Arg1:T8 Arg2:T2	

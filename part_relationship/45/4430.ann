@@ -1,0 +1,19 @@
+T1	Parts 8 21	ブレーキマスターシリンダー
+T2	Parts 23 30	プッシュロッド
+T3	Parts 93 100	プッシュロッド
+T4	Parts 0 7	ブレーキペダル
+T5	Parts 42 57	ロックピン（ヘアピンクリップ）
+T6	Parts 80 85	ロックピン
+T8	Parts 36 41	リテーナー
+T9	Parts 101 104	ペダル
+T11	Parts 72 74	車両
+R1	Coreference Arg1:T4 Arg2:T9	
+R2	Coreference Arg1:T2 Arg2:T3	
+R3	Coreference Arg1:T5 Arg2:T6	
+R4	Connect Arg1:T4 Arg2:T1	
+R5	Contact Arg1:T2 Arg2:T8	
+R6	Contact Arg1:T4 Arg2:T2	
+R7	Contact Arg1:T1 Arg2:T2	
+R8	Contact Arg1:T8 Arg2:T5	
+R9	Part-Whole Arg1:T9 Arg2:T11	
+R10	Part-Whole Arg1:T1 Arg2:T11	

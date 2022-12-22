@@ -1,0 +1,16 @@
+T1	Parts 35 47	発光ダイオード（ＬＥＤ）
+T2	Parts 48 52	電気基板
+T3	Parts 0 6	テールレンズ
+T5	Parts 80 82	尾灯
+T6	Parts 85 88	駐車灯
+T4	Parts 7 13	シーリング材
+T7	Parts 21 27	シーリング材
+R1	Contact Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T1 Arg2:T5	
+R3	Part-Whole Arg1:T1 Arg2:T6	
+R5	Coreference Arg1:T7 Arg2:T4	
+R7	Part-Whole Arg1:T5 Arg2:T3	
+R8	Part-Whole Arg1:T6 Arg2:T3	
+R4	Part-Whole Arg1:T4 Arg2:T3	
+R6	Part-Whole Arg1:T2 Arg2:T5	
+R9	Part-Whole Arg1:T2 Arg2:T6	

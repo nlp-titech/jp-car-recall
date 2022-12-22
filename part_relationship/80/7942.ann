@@ -1,0 +1,12 @@
+T1	Parts 0 5	冷蔵冷凍車
+T2	Parts 19 29	スペアタイヤ取付装置
+T3	Parts 48 52	取付装置
+T4	Parts 85 89	取付装置
+T5	Parts 106 116	スペアタイヤ取付装置
+T6	Parts 118 124	スペアタイヤ
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Coreference Arg1:T3 Arg2:T4	
+R3	Coreference Arg1:T4 Arg2:T5	
+R4	Contact Arg1:T5 Arg2:T6	
+R5	Part-Whole Arg1:T2 Arg2:T1	
+R6	Part-Whole Arg1:T6 Arg2:T1	

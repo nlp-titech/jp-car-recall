@@ -1,0 +1,9 @@
+T1	Parts 13 23	オルタネータ電源配線
+T2	Parts 28 34	オルタネータ
+T3	Parts 60 62	配線
+T4	Parts 63 70	固定ブラケット
+T5	Parts 117 119	配線
+R2	Coreference Arg1:T3 Arg2:T1	
+R3	Contact Arg1:T4 Arg2:T2	
+R4	Coreference Arg1:T5 Arg2:T3	
+R1	Contact Arg1:T3 Arg2:T4	

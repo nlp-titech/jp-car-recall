@@ -1,0 +1,10 @@
+T12	Parts 20 26	フロントハブ
+T13	Parts 56 58	ハブ
+T14	Parts 78 85	フロントタイヤ
+R1	Coreference Arg1:T13 Arg2:T12	
+R2	Connect Arg1:T13 Arg2:T14	
+T1	Parts 126 128	車両
+T2	Parts 148 150	車両
+R3	Coreference Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T14 Arg2:T1	
+R5	Part-Whole Arg1:T12 Arg2:T1	

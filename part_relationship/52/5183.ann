@@ -1,0 +1,11 @@
+T2	Parts 126 134	スロットルバルブ
+T7	Parts 55 60	ハウジング
+T9	Parts 140 144	エンジン
+T1	Parts 80 89	スロットルプーリー
+T3	Parts 113 121	アクセルグリップ
+T4	Parts 0 42	スロットルプーリー（スロットルワイヤの動きをスロットルバルブへ伝えるもの）ハウジング
+R1	Coreference Arg1:T4 Arg2:T7	
+R3	Connect Arg1:T3 Arg2:T1	
+R4	Connect Arg1:T1 Arg2:T2	
+R5	Connect Arg1:T2 Arg2:T9	
+R2	Part-Whole Arg1:T1 Arg2:T7	

@@ -1,0 +1,8 @@
+T1	Parts 0 12	運転者席側エアバッグ装置
+T2	Parts 31 36	エアバッグ
+T3	Parts 43 56	エアバッグモジュールカバー
+T4	Parts 90 95	エアバッグ
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T1	
+R3	Coreference Arg1:T4 Arg2:T2	
+R4	Connect Arg1:T2 Arg2:T3	

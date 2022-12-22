@@ -1,0 +1,15 @@
+T16	Parts 23 27	スイッチ
+T18	Parts 65 69	シャフト
+T19	Parts 74 78	スイッチ
+T20	Parts 108 111	制動灯
+T2	Parts 8 16	制動灯用スイッチ
+R1	Coreference Arg1:T2 Arg2:T16	
+R2	Coreference Arg1:T19 Arg2:T16	
+T1	Parts 0 7	自動変速機付車
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T18 Arg2:T19	
+R6	Connect Arg1:T19 Arg2:T20	
+R4	Part-Whole Arg1:T20 Arg2:T1	
+T3	Parts 87 90	シフト
+R7	Part-Whole Arg1:T3 Arg2:T1	
+#1	AnnotatorNotes R5	シャフトにスイッチが埋め込まれているものを想定

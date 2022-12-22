@@ -1,0 +1,9 @@
+T1	Parts 10 18	アクスル（ハブ）
+T2	Parts 23 31	インターナルギヤ
+T3	Parts 44 46	ギヤ
+R1	Coreference Arg1:T2 Arg2:T3	
+T4	Parts 80 82	ギヤ
+R2	Coreference Arg1:T3 Arg2:T4	
+T5	Parts 0 9	ホイール・クレーン
+R3	Part-Whole Arg1:T1 Arg2:T5	
+R4	Part-Whole Arg1:T2 Arg2:T1	

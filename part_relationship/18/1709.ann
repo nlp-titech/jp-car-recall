@@ -1,0 +1,18 @@
+T15	Parts 39 43	油圧回路
+T16	Parts 44 52	ロータリブッシュ
+T17	Parts 17 20	駆動軸
+T18	Parts 117 120	減速機
+T1	Parts 0 2	後輪
+T2	Parts 4 12	走行モータ減速機
+T3	Parts 31 38	クラッチ作動油
+T5	Parts 109 116	クラッチ作動油
+R1	Coreference Arg1:T3 Arg2:T5	
+T7	Parts 159 161	後輪
+T8	Parts 142 146	クラッチ
+R3	Coreference Arg1:T1 Arg2:T7	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R6	Contact Arg1:T15 Arg2:T3	
+R7	Part-Whole Arg1:T16 Arg2:T15	
+R10	Contact Arg1:T2 Arg2:T17	
+R2	Coreference Arg1:T2 Arg2:T18	
+R5	Contact Arg1:T5 Arg2:T8	

@@ -1,0 +1,13 @@
+T2	Parts 13 38	前照灯を自動的に点灯作動させる装置（オートライト）
+T3	Parts 39 51	放電灯式前照灯（ＨＩＤ）
+T4	Parts 54 56	車両
+T6	Parts 80 100	自動照射方向調整装置（オートレベライザ）
+R2	Part-Whole Arg1:T3 Arg2:T4	
+R8	Part-Whole Arg1:T6 Arg2:T4	
+R3	Part-Whole Arg1:T2 Arg2:T4	
+T5	Parts 68 72	電気回路
+R4	Part-Whole Arg1:T5 Arg2:T4	
+R7	Contact Arg1:T5 Arg2:T3	
+R9	Contact Arg1:T5 Arg2:T2	
+R1	Connect Arg1:T2 Arg2:T3	
+R5	Connect Arg1:T3 Arg2:T6	

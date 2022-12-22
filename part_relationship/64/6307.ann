@@ -1,0 +1,14 @@
+T2	Parts 0 8	プロペラシャフト
+T3	Parts 105 113	プロペラシャフト
+T5	Parts 37 41	フランジ
+T1	Parts 9 20	ディファレンシャルギア
+T4	Parts 24 30	接続フランジ
+T7	Parts 45 50	潤滑グリス
+T6	Parts 88 94	接続フランジ
+R1	Coreference Arg1:T4 Arg2:T5	
+R2	Coreference Arg1:T5 Arg2:T6	
+R3	Coreference Arg1:T2 Arg2:T3	
+R4	Connect Arg1:T2 Arg2:T1	
+R5	Contact Arg1:T1 Arg2:T4	
+R6	Contact Arg1:T2 Arg2:T4	
+R7	Contact Arg1:T5 Arg2:T7	

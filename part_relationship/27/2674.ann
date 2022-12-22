@@ -1,0 +1,12 @@
+T14	Parts 11 19	ブレーキケーブル
+T15	Parts 47 51	ケーブル
+T16	Parts 87 91	ケーブル
+T17	Parts 94 100	ダストブーツ
+T1	Parts 0 6	前輪制動装置
+R1	Coreference Arg1:T15 Arg2:T14	
+R2	Coreference Arg1:T16 Arg2:T15	
+T2	Parts 118 122	ブレーキ
+R3	Part-Whole Arg1:T14 Arg2:T1	
+R4	Contact Arg1:T17 Arg2:T16	
+R5	Contact Arg1:T16 Arg2:T2	
+R6	Coreference Arg1:T2 Arg2:T1	

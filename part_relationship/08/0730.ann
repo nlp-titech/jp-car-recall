@@ -1,0 +1,22 @@
+T10	Parts 1 6	無段変速機
+T11	Parts 61 66	無段変速機
+T12	Parts 67 75	ドライブプーリー
+T13	Parts 76 81	金属ベルト
+T14	Parts 91 96	金属ベルト
+T15	Parts 97 105	駒（エレメント）
+T16	Parts 126 127	駒
+T17	Parts 131 136	金属ベルト
+T1	Parts 7 13	電子制御装置
+T2	Parts 14 19	プログラム
+T3	Parts 27 32	変速レバー
+T4	Parts 50 54	アクセル
+R1	Coreference Arg1:T11 Arg2:T10	
+R2	Coreference Arg1:T14 Arg2:T13	
+R3	Coreference Arg1:T16 Arg2:T15	
+R4	Coreference Arg1:T17 Arg2:T14	
+R5	Part-Whole Arg1:T1 Arg2:T10	
+R6	Part-Whole Arg1:T2 Arg2:T1	
+R7	Part-Whole Arg1:T3 Arg2:T10	
+R8	Part-Whole Arg1:T12 Arg2:T11	
+R9	Part-Whole Arg1:T13 Arg2:T11	
+R10	Part-Whole Arg1:T15 Arg2:T14	

@@ -1,0 +1,24 @@
+T12	Parts 48 62	油圧パイプ支持金具（ステイ）
+T13	Parts 85 88	ステイ
+T14	Parts 123 126	ステイ
+T16	Parts 127 133	オイルタンク
+T17	Parts 149 152	タンク
+T1	Parts 0 12	ディーゼルエンジン搭載車
+T2	Parts 13 33	動力式かじ取り装置（パワーステアリング）
+T3	Parts 35 41	オイルタンク
+T4	Parts 75 78	原動機
+T5	Parts 158 161	オイル
+T6	Parts 165 169	ハンドル
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T1	
+R3	Contact Arg1:T12 Arg2:T3	
+R4	Contact Arg1:T12 Arg2:T1	
+R5	Part-Whole Arg1:T4 Arg2:T1	
+R6	Coreference Arg1:T13 Arg2:T12	
+R7	Coreference Arg1:T14 Arg2:T13	
+R8	Coreference Arg1:T16 Arg2:T3	
+R9	Coreference Arg1:T17 Arg2:T16	
+R10	Part-Whole Arg1:T5 Arg2:T17	
+R11	Part-Whole Arg1:T6 Arg2:T1	
+R12	Connect Arg1:T6 Arg2:T2	
+R13	Connect Arg1:T3 Arg2:T2	

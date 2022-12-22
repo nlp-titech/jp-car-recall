@@ -1,0 +1,6 @@
+T1	Parts 16 35	ホイールキャリア（ホイール取付用部品）
+T3	Parts 7 11	緩衝装置
+T4	Parts 2 4	後輪
+R1	Connect Arg1:T4 Arg2:T3	
+R2	Part-Whole Arg1:T1 Arg2:T3	
+R3	Contact Arg1:T4 Arg2:T1	

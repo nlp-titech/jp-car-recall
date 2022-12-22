@@ -1,0 +1,11 @@
+T2	Parts 31 39	ディスクローター
+T3	Parts 0 26	前後輪ブレーキ用セラミック製ディスクローター装着車両
+T4	Parts 40 47	ベルハウジング
+T7	Parts 55 58	ボルト
+T8	Parts 91 94	ボルト
+R3	Contact Arg1:T7 Arg2:T2	
+R4	Contact Arg1:T7 Arg2:T4	
+R5	Contact Arg1:T4 Arg2:T2	
+R6	Coreference Arg1:T7 Arg2:T8	
+R1	Part-Whole Arg1:T2 Arg2:T3	
+R2	Part-Whole Arg1:T4 Arg2:T3	

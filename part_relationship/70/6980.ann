@@ -1,0 +1,7 @@
+T1	Parts 0 10	前輪用ブレーキホース
+T2	Parts 11 15	固定金具
+T4	Parts 84 87	ガイド
+T5	Parts 20 23	ガイド
+R1	Contact Arg1:T2 Arg2:T1	
+R2	Contact Arg1:T5 Arg2:T2	
+R3	Coreference Arg1:T5 Arg2:T4	

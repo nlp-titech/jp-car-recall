@@ -1,0 +1,29 @@
+T17	Parts 11 16	自動変速機
+T19	Parts 34 42	パーキングロッド
+T20	Parts 59 62	ロッド
+T21	Parts 86 94	パーキングロッド
+T22	Parts 95 104	マニュアルプレート
+T23	Parts 170 177	パーキング機構
+T24	Parts 190 198	パーキングロッド
+T25	Parts 207 209	ギヤ
+T1	Parts 0 6	動力伝達装置
+T2	Parts 17 24	パーキング機構
+T3	Parts 25 27	ギヤ
+R1	Coreference Arg1:T19 Arg2:T20	
+R2	Coreference Arg1:T20 Arg2:T21	
+T5	Parts 128 135	パーキング機構
+R3	Coreference Arg1:T2 Arg2:T5	
+R4	Coreference Arg1:T5 Arg2:T23	
+T6	Parts 178 180	ギヤ
+R5	Coreference Arg1:T3 Arg2:T6	
+R6	Coreference Arg1:T21 Arg2:T24	
+R7	Coreference Arg1:T6 Arg2:T25	
+R8	Part-Whole Arg1:T17 Arg2:T1	
+R9	Part-Whole Arg1:T2 Arg2:T17	
+R10	Part-Whole Arg1:T3 Arg2:T2	
+R11	Part-Whole Arg1:T19 Arg2:T2	
+R12	Contact Arg1:T22 Arg2:T21	
+R13	Contact Arg1:T19 Arg2:T3	
+R14	Part-Whole Arg1:T22 Arg2:T17	
+T7	Parts 153 155	車両
+R16	Part-Whole Arg1:T1 Arg2:T7	

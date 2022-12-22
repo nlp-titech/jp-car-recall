@@ -1,0 +1,7 @@
+T1	Parts 0 7	アクセルワイヤ
+T3	Parts 51 54	ワイヤ
+T4	Parts 65 68	原動機
+R1	Coreference Arg1:T1 Arg2:T3	
+R2	Connect Arg1:T3 Arg2:T4	
+T2	Parts 11 16	樹脂製部品
+R3	Contact Arg1:T1 Arg2:T2	

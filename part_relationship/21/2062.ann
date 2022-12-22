@@ -1,0 +1,21 @@
+T10	Parts 173 179	駐車ブレーキ
+T12	Parts 156 160	ケーブル
+T13	Parts 149 155	エアチューブ
+T14	Parts 88 101	駐車ブレーキ用エアチューブ
+T1	Parts 12 18	コンプレッサ
+T2	Parts 23 25	車両
+T3	Parts 30 38	再生制御式ＤＰＦ
+T4	Parts 39 48	再生制御プログラム
+T5	Parts 60 63	排気管
+T7	Parts 103 116	センターブレーキ用ケーブル
+R2	Coreference Arg1:T12 Arg2:T7	
+R3	Part-Whole Arg1:T1 Arg2:T2	
+T6	Parts 71 86	サービスブレーキ用エアチューブ
+R1	Oneway-Coreference Arg1:T13 Arg2:T14	
+R4	Oneway-Coreference Arg1:T13 Arg2:T6	
+R5	Part-Whole Arg1:T4 Arg2:T3	
+R6	Part-Whole Arg1:T3 Arg2:T2	
+R7	Part-Whole Arg1:T5 Arg2:T2	
+R8	Part-Whole Arg1:T13 Arg2:T2	
+R9	Part-Whole Arg1:T7 Arg2:T2	
+R10	Part-Whole Arg1:T10 Arg2:T2	

@@ -1,0 +1,18 @@
+T1	Parts 10 17	制御プログラム
+T2	Parts 165 169	エンジン
+T6	Parts 88 92	充電回路
+T8	Parts 120 123	表示灯
+T9	Parts 0 9	補助電源モジュール
+T3	Parts 56 66	スタータ機能付発電機
+T4	Parts 81 86	鉛バッテリ
+T5	Parts 144 149	鉛バッテリ
+R1	Part-Whole Arg1:T1 Arg2:T9	
+R2	Coreference Arg1:T4 Arg2:T5	
+R3	Connect Arg1:T3 Arg2:T4	
+R4	Contact Arg1:T4 Arg2:T6	
+R5	Contact Arg1:T3 Arg2:T6	
+R6	Connect Arg1:T3 Arg2:T2	
+R7	Connect Arg1:T1 Arg2:T6	
+R8	Connect Arg1:T4 Arg2:T8	
+R9	Contact Arg1:T1 Arg2:T3	
+R10	Connect Arg1:T5 Arg2:T2	

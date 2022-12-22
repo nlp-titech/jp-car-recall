@@ -1,0 +1,12 @@
+T16	Parts 50 53	タンク
+T18	Parts 0 5	燃料タンク
+T1	Parts 6 8	車体
+T2	Parts 22 24	車体
+R1	Coreference Arg1:T2 Arg2:T1	
+T3	Parts 120 122	燃料
+R2	Coreference Arg1:T16 Arg2:T18	
+T4	Parts 54 63	左後部取付けボルト
+R3	Part-Whole Arg1:T3 Arg2:T16	
+R4	Contact Arg1:T18 Arg2:T1	
+R5	Contact Arg1:T16 Arg2:T4	
+R6	Contact Arg1:T2 Arg2:T4	

@@ -1,0 +1,7 @@
+T16	Parts 0 15	トランスミッションシフトレバー
+T17	Parts 21 26	ダイオード
+T18	Parts 42 48	シフトレバー
+R1	Coreference Arg1:T18 Arg2:T16	
+T2	Parts 57 79	トランスミッション電子コントロールモジュール
+R4	Connect Arg1:T2 Arg2:T18	
+R2	Part-Whole Arg1:T17 Arg2:T16	

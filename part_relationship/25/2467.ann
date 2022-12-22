@@ -1,0 +1,11 @@
+T10	Parts 74 76	車両
+T11	Parts 66 69	ペダル
+T12	Parts 52 59	アクセルペダル
+T13	Parts 20 27	アクセルペダル
+T1	Parts 0 7	アクセルペダル
+R1	Coreference Arg1:T13 Arg2:T1	
+R2	Coreference Arg1:T12 Arg2:T13	
+R3	Coreference Arg1:T11 Arg2:T12	
+R5	Part-Whole Arg1:T11 Arg2:T10	
+T2	Parts 12 16	可動部軸
+R4	Part-Whole Arg1:T2 Arg2:T1	

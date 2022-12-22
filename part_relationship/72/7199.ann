@@ -1,0 +1,7 @@
+T2	Parts 28 34	シートベルト
+T3	Parts 44 50	シートベルト
+T4	Parts 0 7	後部座席中央席
+T5	Parts 8 17	シートベルトガイド
+R1	Part-Whole Arg1:T2 Arg2:T4	
+R2	Part-Whole Arg1:T5 Arg2:T2	
+R3	Coreference Arg1:T2 Arg2:T3	

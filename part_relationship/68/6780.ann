@@ -1,0 +1,14 @@
+T1	Parts 48 53	エアバッグ
+T2	Parts 66 71	エアバッグ
+T3	Parts 90 95	エアバッグ
+T4	Parts 54 58	センサー
+T5	Parts 16 21	牽引フック
+T6	Parts 0 2	車両
+T7	Parts 38 40	車両
+R1	Coreference Arg1:T6 Arg2:T7	
+R2	Coreference Arg1:T1 Arg2:T2	
+R3	Coreference Arg1:T2 Arg2:T3	
+R4	Part-Whole Arg1:T5 Arg2:T6	
+R5	Part-Whole Arg1:T1 Arg2:T7	
+R6	Part-Whole Arg1:T4 Arg2:T7	
+R7	Connect Arg1:T1 Arg2:T4	

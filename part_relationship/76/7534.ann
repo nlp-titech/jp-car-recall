@@ -1,0 +1,11 @@
+T1	Parts 0 16	パワーステアリングオイルクーラー
+T2	Parts 33 40	ユニオンパイプ
+T3	Parts 43 46	パイプ
+T4	Parts 80 83	ホース
+T5	Parts 87 103	パワーステアリングシステムオイル
+T6	Parts 108 114	ステアリング
+R1	Coreference Arg1:T2 Arg2:T3	
+R3	Contact Arg1:T3 Arg2:T4	
+R2	Contact Arg1:T1 Arg2:T2	
+R4	Part-Whole Arg1:T1 Arg2:T6	
+R5	Part-Whole Arg1:T5 Arg2:T6	

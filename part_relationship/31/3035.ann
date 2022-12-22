@@ -1,0 +1,12 @@
+T13	Parts 15 20	固定ボルト
+T14	Parts 50 55	固定ボルト
+T15	Parts 60 70	ステアリングホイール
+T16	Parts 149 153	ハンドル
+T1	Parts 0 10	ステアリングホイール
+R1	Coreference Arg1:T13 Arg2:T14	
+R2	Coreference Arg1:T1 Arg2:T15	
+T2	Parts 71 80	ステアリングコラム
+R4	Contact Arg1:T13 Arg2:T1	
+R6	Contact Arg1:T2 Arg2:T15	
+R7	Contact Arg1:T2 Arg2:T14	
+R8	Coreference Arg1:T16 Arg2:T1	

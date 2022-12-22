@@ -1,0 +1,9 @@
+T1	Parts 17 24	メーターパネル
+T2	Parts 0 8	ブレーキディスク
+T3	Parts 74 82	ブレーキディスク
+T4	Parts 100 108	ブレーキディスク
+T8	Parts 85 88	警告灯
+R1	Coreference Arg1:T3 Arg2:T2	
+R2	Coreference Arg1:T4 Arg2:T3	
+R3	Connect Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T8 Arg2:T1	

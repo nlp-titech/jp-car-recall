@@ -1,0 +1,20 @@
+T1	Parts 21 27	オイルポンプ
+T2	Parts 43 49	ギヤシャフト
+T3	Parts 0 6	大型トラック
+T4	Parts 11 15	エンジン
+T5	Parts 96 100	エンジン
+T6	Parts 117 121	エンジン
+T7	Parts 39 42	ポンプ
+T8	Parts 63 65	ギヤ
+T9	Parts 89 91	ギヤ
+T10	Parts 8 10	バス
+R1	Coreference Arg1:T7 Arg2:T1	
+R2	Coreference Arg1:T9 Arg2:T8	
+R3	Coreference Arg1:T6 Arg2:T5	
+R4	Coreference Arg1:T5 Arg2:T4	
+R5	Part-Whole Arg1:T4 Arg2:T10	
+R6	Part-Whole Arg1:T4 Arg2:T3	
+R7	Part-Whole Arg1:T1 Arg2:T4	
+R8	Part-Whole Arg1:T2 Arg2:T7	
+R9	Contact Arg1:T8 Arg2:T2	
+R10	Part-Whole Arg1:T8 Arg2:T7	

@@ -1,0 +1,12 @@
+T1	Parts 15 24	作業用前後進レバー
+T2	Parts 42 47	油圧ホース
+T3	Parts 31 34	レバー
+T4	Parts 61 64	レバー
+T5	Parts 114 117	レバー
+T6	Parts 35 41	路面切削装置
+R1	Coreference Arg1:T1 Arg2:T3	
+R2	Coreference Arg1:T1 Arg2:T4	
+T8	Parts 73 79	路面切削装置
+R3	Coreference Arg1:T1 Arg2:T5	
+R4	Coreference Arg1:T6 Arg2:T8	
+R5	Part-Whole Arg1:T2 Arg2:T6	

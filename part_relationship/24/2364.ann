@@ -1,0 +1,7 @@
+T11	Parts 20 28	クランクシャフト
+T12	Parts 68 72	エンジン
+T13	Parts 45 53	エアコンプレッサ
+T1	Parts 0 8	エアコンプレッサ
+R1	Coreference Arg1:T13 Arg2:T1	
+R3	Connect Arg1:T12 Arg2:T13	
+R2	Part-Whole Arg1:T11 Arg2:T1	

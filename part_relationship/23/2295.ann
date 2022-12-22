@@ -1,0 +1,7 @@
+T9	Parts 12 18	固定用ナット
+T10	Parts 50 55	固定ナット
+T1	Parts 21 25	ロック剤
+R1	Coreference Arg1:T10 Arg2:T9	
+T2	Parts 3 9	後写鏡ステー
+R2	Part-Whole Arg1:T9 Arg2:T2	
+R3	Contact Arg1:T1 Arg2:T9	

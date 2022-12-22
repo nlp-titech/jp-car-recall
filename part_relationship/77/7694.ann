@@ -1,0 +1,7 @@
+T1	Parts 0 10	コンクリートミキサ車
+T2	Parts 18 28	巻取式ホッパーカバー
+T3	Parts 100 103	シート
+T4	Parts 104 109	巻取り機構
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Contact Arg1:T3 Arg2:T2	
+R3	Contact Arg1:T4 Arg2:T2	

@@ -1,0 +1,12 @@
+T1	Parts 0 14	エンジンオイル冷却用熱交換器
+T2	Parts 41 44	ボルト
+T3	Parts 79 84	オイル配管
+T4	Parts 91 94	オイル
+T5	Parts 104 107	排気管
+T6	Parts 15 17	配管
+T7	Parts 35 37	配管
+R1	Coreference Arg1:T6 Arg2:T7	
+R2	Coreference Arg1:T7 Arg2:T3	
+R3	Contact Arg1:T1 Arg2:T6	
+R4	Contact Arg1:T7 Arg2:T2	
+R5	Contact Arg1:T3 Arg2:T4	

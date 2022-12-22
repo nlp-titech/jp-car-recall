@@ -1,0 +1,13 @@
+T2	Parts 49 55	ロックナット
+T3	Parts 98 104	ロックナット
+T5	Parts 0 6	中型トラック
+T6	Parts 7 11	エンジン
+T7	Parts 111 115	エンジン
+T8	Parts 127 131	エンジン
+R1	Part-Whole Arg1:T6 Arg2:T5	
+T1	Parts 16 33	吸排気バルブ隙間調整用ロックナット
+R2	Coreference Arg1:T1 Arg2:T2	
+R3	Coreference Arg1:T1 Arg2:T3	
+R4	Coreference Arg1:T7 Arg2:T8	
+R6	Part-Whole Arg1:T6 Arg2:T1	
+R5	Coreference Arg1:T6 Arg2:T7	

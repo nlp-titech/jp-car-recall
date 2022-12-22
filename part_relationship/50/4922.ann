@@ -1,0 +1,15 @@
+T1	Parts 18 27	座席ベルト巻取装置
+T2	Parts 83 92	座席ベルト巻取装置
+T3	Parts 6 11	座席ベルト
+T4	Parts 111 116	座席ベルト
+T5	Parts 40 45	接着テープ
+T6	Parts 73 76	テープ
+T7	Parts 0 5	第３列座席
+T8	Parts 33 38	防音パッド
+R1	Coreference Arg1:T6 Arg2:T5	
+R2	Coreference Arg1:T2 Arg2:T1	
+R3	Coreference Arg1:T4 Arg2:T3	
+R4	Contact Arg1:T5 Arg2:T8	
+R5	Contact Arg1:T1 Arg2:T3	
+R7	Contact Arg1:T3 Arg2:T7	
+R8	Part-Whole Arg1:T8 Arg2:T1	

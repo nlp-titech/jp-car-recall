@@ -1,0 +1,22 @@
+T1	Parts 0 7	ロード・ローラ
+T2	Parts 17 22	電源リレー
+T3	Parts 113 117	エンジン
+T4	Parts 152 156	エンジン
+T5	Parts 8 12	電気回路
+T6	Parts 33 36	リレー
+T7	Parts 37 43	リレーホルダ
+T8	Parts 70 73	リレー
+T9	Parts 74 80	リレーホルダ
+T10	Parts 131 134	リレー
+R1	Coreference Arg1:T6 Arg2:T2	
+R2	Contact Arg1:T7 Arg2:T6	
+R3	Coreference Arg1:T8 Arg2:T6	
+R4	Coreference Arg1:T9 Arg2:T7	
+R5	Coreference Arg1:T10 Arg2:T8	
+R6	Part-Whole Arg1:T2 Arg2:T5	
+R7	Coreference Arg1:T4 Arg2:T3	
+R8	Connect Arg1:T4 Arg2:T10	
+R9	Part-Whole Arg1:T5 Arg2:T1	
+R10	Part-Whole Arg1:T3 Arg2:T1	
+T11	Parts 135 138	ホルダ
+R11	Coreference Arg1:T9 Arg2:T11	

@@ -1,0 +1,23 @@
+T22	Parts 222 226	エンジン
+T23	Parts 203 206	バルブ
+T24	Parts 183 188	吸気バルブ
+T25	Parts 173 177	エンジン
+T26	Parts 118 123	吸気バルブ
+T27	Parts 91 97	ＥＧＲクーラ
+T1	Parts 0 6	大型トラック
+T2	Parts 11 22	エンジン制御プログラム
+T3	Parts 23 38	排気ガス再循環（ＥＧＲ）バルブ
+T4	Parts 49 62	ＤＰＲ（排出ガス浄化装置）
+R1	Coreference Arg1:T26 Arg2:T24	
+R3	Coreference Arg1:T25 Arg2:T22	
+R2	Coreference Arg1:T23 Arg2:T24	
+T7	Parts 88 90	燃料
+R5	Part-Whole Arg1:T2 Arg2:T1	
+R6	Part-Whole Arg1:T25 Arg2:T1	
+R7	Connect Arg1:T2 Arg2:T25	
+R8	Part-Whole Arg1:T3 Arg2:T1	
+R9	Connect Arg1:T2 Arg2:T3	
+R10	Part-Whole Arg1:T4 Arg2:T1	
+R11	Part-Whole Arg1:T27 Arg2:T1	
+R12	Connect Arg1:T3 Arg2:T27	
+R13	Part-Whole Arg1:T26 Arg2:T25	

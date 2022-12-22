@@ -1,0 +1,7 @@
+T1	Parts 0 12	燃料蒸発ガス排出抑止装置
+T2	Parts 13 20	チェックバルブ
+T3	Parts 83 84	車
+R1	Part-Whole Arg1:T2 Arg2:T1	
+T4	Parts 76 82	燃料蒸発ガス
+R2	Contact Arg1:T4 Arg2:T1	
+R3	Part-Whole Arg1:T1 Arg2:T3	

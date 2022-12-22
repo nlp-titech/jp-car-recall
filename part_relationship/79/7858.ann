@@ -1,0 +1,5 @@
+T1	Parts 0 14	エンジンコントロールシステム
+T2	Parts 19 21	燃料
+T3	Parts 69 71	燃料
+R1	Connect Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T2 Arg2:T3	

@@ -1,0 +1,11 @@
+T2	Parts 19 26	チルトハンドル
+T3	Parts 28 33	締結ボルト
+T4	Parts 62 65	ボルト
+T5	Parts 81 84	ボルト
+T6	Parts 85 90	ブラケット
+R1	Coreference Arg1:T5 Arg2:T4	
+R2	Coreference Arg1:T4 Arg2:T3	
+R4	Contact Arg1:T3 Arg2:T2	
+T1	Parts 0 8	かじ取りハンドル
+R3	Connect Arg1:T2 Arg2:T1	
+R5	Contact Arg1:T5 Arg2:T6	

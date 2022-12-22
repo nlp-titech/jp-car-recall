@@ -1,0 +1,11 @@
+T1	Parts 25 31	圧力スイッチ
+T3	Parts 11 24	ブレーキ液圧低下警報ブザー
+T6	Parts 85 90	警報ブザー
+T7	Parts 38 42	スイッチ
+T8	Parts 1 10	油圧式制動倍力装置
+R1	Coreference Arg1:T3 Arg2:T6	
+R2	Coreference Arg1:T1 Arg2:T7	
+R3	Part-Whole Arg1:T1 Arg2:T8	
+R4	Connect Arg1:T3 Arg2:T1	
+R5	Connect Arg1:T8 Arg2:T3	
+T2	Parts 62 67	ブレーキ液

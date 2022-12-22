@@ -1,0 +1,22 @@
+T1	Parts 17 21	ソケット
+T2	Parts 90 94	ソケット
+T3	Parts 8 16	バルブ取付け基盤
+T4	Parts 51 54	バルブ
+T5	Parts 86 89	バルブ
+T6	Parts 0 3	制動灯
+T7	Parts 43 46	制動灯
+T8	Parts 104 107	制動灯
+T10	Parts 5 7	尾灯
+T11	Parts 48 50	尾灯
+T12	Parts 110 112	尾灯
+R1	Coreference Arg1:T6 Arg2:T7	
+R2	Coreference Arg1:T10 Arg2:T11	
+R3	Coreference Arg1:T3 Arg2:T4	
+R6	Part-Whole Arg1:T3 Arg2:T6	
+R7	Part-Whole Arg1:T3 Arg2:T10	
+R8	Coreference Arg1:T4 Arg2:T5	
+R9	Coreference Arg1:T1 Arg2:T2	
+R10	Contact Arg1:T5 Arg2:T2	
+R11	Coreference Arg1:T7 Arg2:T8	
+R12	Coreference Arg1:T11 Arg2:T12	
+R4	Contact Arg1:T3 Arg2:T1	

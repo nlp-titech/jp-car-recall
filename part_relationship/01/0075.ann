@@ -1,0 +1,10 @@
+T8	Parts 2 5	発電機
+T11	Parts 75 79	バッテリ
+T12	Parts 89 92	原動機
+T1	Parts 6 16	ダイオード（半導体）
+T2	Parts 18 33	ＩＣレギュレータ（電圧調整器）
+R3	Part-Whole Arg1:T1 Arg2:T8	
+R4	Part-Whole Arg1:T2 Arg2:T8	
+R5	Connect Arg1:T11 Arg2:T8	
+R6	Connect Arg1:T12 Arg2:T8	
+R1	Connect Arg1:T12 Arg2:T11	

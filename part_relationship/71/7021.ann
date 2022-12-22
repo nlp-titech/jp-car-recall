@@ -1,0 +1,14 @@
+T4	Parts 63 66	ボルト
+T5	Parts 20 22	車体
+T6	Parts 0 10	乗降用スロープ装着車
+R1	Coreference Arg1:T6 Arg2:T5	
+T7	Parts 15 19	スロープ
+T2	Parts 27 41	ヒンジブラケット締付けボルト
+R3	Contact Arg1:T7 Arg2:T2	
+T3	Parts 80 84	スロープ
+T8	Parts 97 101	スロープ
+R5	Coreference Arg1:T7 Arg2:T3	
+R6	Coreference Arg1:T3 Arg2:T8	
+R7	Part-Whole Arg1:T7 Arg2:T5	
+R8	Contact Arg1:T5 Arg2:T2	
+R2	Coreference Arg1:T2 Arg2:T4	

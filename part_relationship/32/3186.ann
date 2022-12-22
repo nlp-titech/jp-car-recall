@@ -1,0 +1,12 @@
+T12	Parts 107 113	ファンベルト
+T13	Parts 9 17	アイドラプーリー
+T14	Parts 40 44	プーリー
+T15	Parts 84 89	ベアリング
+T1	Parts 0 4	大型バス
+T2	Parts 20 25	ベアリング
+R1	Coreference Arg1:T13 Arg2:T14	
+R2	Coreference Arg1:T2 Arg2:T15	
+R3	Part-Whole Arg1:T2 Arg2:T13	
+R4	Part-Whole Arg1:T13 Arg2:T1	
+R5	Contact Arg1:T12 Arg2:T14	
+R6	Part-Whole Arg1:T12 Arg2:T1	

@@ -1,0 +1,22 @@
+T20	Parts 75 79	ピストン
+T21	Parts 87 92	排気バルブ
+T22	Parts 112 123	駐車ブレーキチャンバー
+T24	Parts 16 22	駐車ブレーキ
+T25	Parts 186 188	車両
+T27	Parts 165 171	駐車ブレーキ
+T30	Parts 134 140	駐車ブレーキ
+T1	Parts 0 8	大・中型トラック
+T2	Parts 9 11	バス
+R2	Coreference Arg1:T24 Arg2:T30	
+R3	Coreference Arg1:T30 Arg2:T27	
+R6	Part-Whole Arg1:T21 Arg2:T24	
+R7	Part-Whole Arg1:T22 Arg2:T30	
+R8	Connect Arg1:T22 Arg2:T21	
+R9	Oneway-Coreference Arg1:T25 Arg2:T2	
+R10	Oneway-Coreference Arg1:T25 Arg2:T1	
+R11	Part-Whole Arg1:T27 Arg2:T25	
+R12	Part-Whole Arg1:T24 Arg2:T2	
+R13	Part-Whole Arg1:T24 Arg2:T1	
+T3	Parts 23 40	ハンドコントロールバルブ内ピストン
+R4	Coreference Arg1:T20 Arg2:T3	
+R1	Part-Whole Arg1:T20 Arg2:T21	

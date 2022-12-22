@@ -1,0 +1,5 @@
+T1	Parts 16 27	左右ベルトライントリム
+T2	Parts 76 85	ベルトライントリム
+T5	Parts 0 2	車両
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Part-Whole Arg1:T1 Arg2:T5	

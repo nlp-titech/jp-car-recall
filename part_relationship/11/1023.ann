@@ -1,0 +1,20 @@
+T16	Parts 97 99	ドア
+T19	Parts 119 121	ドア
+T22	Parts 104 107	ラッチ
+T24	Parts 108 114	ストライカー
+T25	Parts 61 64	ラッチ
+T27	Parts 67 72	スプリング
+T28	Parts 49 52	ラッチ
+T29	Parts 32 35	ラッチ
+T32	Parts 9 18	前側ラッチシャフト
+T1	Parts 1 8	右スライドドア
+R1	Coreference Arg1:T29 Arg2:T28	
+R2	Coreference Arg1:T28 Arg2:T25	
+R3	Coreference Arg1:T1 Arg2:T16	
+R4	Coreference Arg1:T25 Arg2:T22	
+R5	Coreference Arg1:T16 Arg2:T19	
+R7	Contact Arg1:T32 Arg2:T29	
+R6	Part-Whole Arg1:T32 Arg2:T1	
+R8	Contact Arg1:T27 Arg2:T25	
+R9	Part-Whole Arg1:T24 Arg2:T16	
+R10	Part-Whole Arg1:T29 Arg2:T1	

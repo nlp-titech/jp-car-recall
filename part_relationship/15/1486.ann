@@ -1,0 +1,18 @@
+T12	Parts 144 150	ステアリング
+T13	Parts 37 42	検出センサ
+T1	Parts 0 6	ステアリング
+T2	Parts 7 9	ノブ
+T3	Parts 12 14	車輪
+T4	Parts 26 32	ステアリング
+T5	Parts 54 58	フレーム
+T7	Parts 89 91	ノブ
+R1	Coreference Arg1:T7 Arg2:T2	
+T8	Parts 94 96	車輪
+R2	Coreference Arg1:T8 Arg2:T3	
+T9	Parts 122 125	操舵輪
+R3	Coreference Arg1:T12 Arg2:T4	
+R4	Coreference Arg1:T4 Arg2:T1	
+R5	Part-Whole Arg1:T2 Arg2:T1	
+R6	Part-Whole Arg1:T3 Arg2:T1	
+R7	Part-Whole Arg1:T13 Arg2:T4	
+R9	Oneway-Coreference Arg1:T8 Arg2:T9	

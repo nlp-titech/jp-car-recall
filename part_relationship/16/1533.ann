@@ -1,0 +1,12 @@
+T2	Parts 19 25	後退警報装置
+T3	Parts 30 32	車両
+T4	Parts 37 39	車両
+R1	Coreference Arg1:T4 Arg2:T3	
+T5	Parts 41 45	電気配線
+T8	Parts 91 94	制動灯
+R3	Connect Arg1:T8 Arg2:T5	
+R4	Part-Whole Arg1:T5 Arg2:T4	
+R5	Part-Whole Arg1:T2 Arg2:T3	
+R6	Part-Whole Arg1:T8 Arg2:T4	
+T1	Parts 59 61	配線
+R7	Coreference Arg1:T5 Arg2:T1	

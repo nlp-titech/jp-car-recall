@@ -1,0 +1,17 @@
+T12	Parts 22 26	キャブ室
+T13	Parts 34 38	クリップ
+T1	Parts 0 9	機械式自動変速装置
+T3	Parts 53 55	配線
+T4	Parts 56 68	ホイールパークブラケット
+T5	Parts 102 104	配線
+R2	Coreference Arg1:T5 Arg2:T3	
+T6	Parts 11 17	大型トラック
+R3	Part-Whole Arg1:T1 Arg2:T6	
+T2	Parts 28 33	フロア配線
+R1	Coreference Arg1:T2 Arg2:T3	
+R4	Part-Whole Arg1:T12 Arg2:T6	
+R6	Contact Arg1:T13 Arg2:T2	
+R7	Part-Whole Arg1:T4 Arg2:T6	
+R5	Part-Whole Arg1:T13 Arg2:T12	
+R9	Connect Arg1:T1 Arg2:T2	
+R8	Part-Whole Arg1:T2 Arg2:T12	

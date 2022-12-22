@@ -1,0 +1,60 @@
+T1	Parts 3 9	動力伝達装置
+T2	Parts 14 20	主変速レバー
+T3	Parts 25 31	主変速ロッド
+T4	Parts 32 49	走行用ＨＳＴ（静油圧式無段変速機）
+T5	Parts 54 56	ピン
+T6	Parts 64 70	スナップピン
+T7	Parts 91 97	スナップピン
+T8	Parts 124 130	主変速ロッド
+T9	Parts 131 134	ＨＳＴ
+T10	Parts 145 151	主変速レバー
+T11	Parts 161 170	イグニッションキー
+T12	Parts 183 185	車両
+T13	Parts 201 205	制動装置
+T14	Parts 210 219	駐車ブレーキペダル
+T15	Parts 220 229	駐車ブレーキアーム
+T16	Parts 234 243	駐車ブレーキロッド
+T17	Parts 244 246	ピン
+T18	Parts 253 259	スナップピン
+T19	Parts 280 286	スナップピン
+T20	Parts 313 322	駐車ブレーキロッド
+T21	Parts 323 332	駐車ブレーキアーム
+T22	Parts 337 346	駐車ブレーキペダル
+T23	Parts 347 353	駐車ブレーキ
+T24	Parts 361 363	車両
+R1	Connect Arg1:T2 Arg2:T1	
+R3	Connect Arg1:T2 Arg2:T3	
+R4	Contact Arg1:T3 Arg2:T4	
+R6	Contact Arg1:T5 Arg2:T4	
+R7	Contact Arg1:T5 Arg2:T3	
+R8	Oneway-Coreference Arg1:T6 Arg2:T5	
+R9	Coreference Arg1:T7 Arg2:T6	
+R10	Coreference Arg1:T8 Arg2:T3	
+R11	Coreference Arg1:T9 Arg2:T4	
+R12	Coreference Arg1:T10 Arg2:T2	
+R13	Connect Arg1:T11 Arg2:T1	
+R14	Part-Whole Arg1:T11 Arg2:T12	
+R16	Part-Whole Arg1:T1 Arg2:T12	
+R17	Part-Whole Arg1:T13 Arg2:T12	
+R18	Connect Arg1:T14 Arg2:T13	
+R20	Connect Arg1:T14 Arg2:T15	
+R21	Contact Arg1:T14 Arg2:T16	
+R22	Contact Arg1:T15 Arg2:T16	
+R23	Contact Arg1:T17 Arg2:T15	
+R24	Contact Arg1:T17 Arg2:T16	
+R25	Coreference Arg1:T19 Arg2:T18	
+R26	Coreference Arg1:T17 Arg2:T5	
+R27	Coreference Arg1:T18 Arg2:T7	
+R28	Coreference Arg1:T20 Arg2:T16	
+R29	Coreference Arg1:T21 Arg2:T15	
+R30	Coreference Arg1:T22 Arg2:T14	
+R32	Coreference Arg1:T24 Arg2:T12	
+R2	Part-Whole Arg1:T10 Arg2:T12	
+R5	Part-Whole Arg1:T9 Arg2:T12	
+R15	Part-Whole Arg1:T8 Arg2:T12	
+R33	Part-Whole Arg1:T7 Arg2:T12	
+R19	Oneway-Coreference Arg1:T23 Arg2:T13	
+R31	Part-Whole Arg1:T22 Arg2:T24	
+R34	Part-Whole Arg1:T21 Arg2:T24	
+R35	Part-Whole Arg1:T20 Arg2:T24	
+R36	Part-Whole Arg1:T19 Arg2:T24	

@@ -1,0 +1,15 @@
+T14	Parts 13 15	計器
+T15	Parts 25 27	計器
+T16	Parts 29 31	基板
+T1	Parts 0 5	燃料計回路
+T2	Parts 17 19	照明
+R1	Coreference Arg1:T14 Arg2:T15	
+T3	Parts 41 43	回路
+R2	Coreference Arg1:T1 Arg2:T3	
+T4	Parts 59 62	燃料計
+T5	Parts 72 74	燃料
+R4	Part-Whole Arg1:T2 Arg2:T14	
+R3	Coreference Arg1:T15 Arg2:T4	
+R6	Part-Whole Arg1:T16 Arg2:T15	
+R5	Part-Whole Arg1:T1 Arg2:T16	
+R7	Connect Arg1:T4 Arg2:T5	

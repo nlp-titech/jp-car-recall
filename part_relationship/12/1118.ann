@@ -1,0 +1,17 @@
+T16	Parts 48 52	ブレーキ
+T18	Parts 57 60	シール
+T19	Parts 16 22	ゴム製シール
+T22	Parts 105 112	ブレーキ警告灯
+T1	Parts 1 13	ブレーキマスターシリンダ
+T3	Parts 41 44	制動液
+T4	Parts 81 84	シール
+T5	Parts 87 90	制動液
+T6	Parts 123 125	空気
+R1	Coreference Arg1:T19 Arg2:T18	
+R2	Coreference Arg1:T18 Arg2:T4	
+R3	Coreference Arg1:T3 Arg2:T5	
+R5	Part-Whole Arg1:T19 Arg2:T1	
+R6	Part-Whole Arg1:T1 Arg2:T16	
+R7	Contact Arg1:T3 Arg2:T1	
+R8	Contact Arg1:T5 Arg2:T4	
+R9	Connect Arg1:T22 Arg2:T16	

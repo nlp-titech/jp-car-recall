@@ -1,0 +1,13 @@
+T1	Parts 0 5	燃料ポンプ
+T2	Parts 6 13	燃料フィルター
+T3	Parts 30 32	車両
+T4	Parts 39 49	バイオディーゼル燃料
+T5	Parts 50 52	車両
+T6	Parts 77 82	燃料ポンプ
+R1	Part-Whole Arg1:T2 Arg2:T3	
+R2	Part-Whole Arg1:T1 Arg2:T3	
+R3	Part-Whole Arg1:T4 Arg2:T3	
+R4	Connect Arg1:T4 Arg2:T2	
+R5	Connect Arg1:T4 Arg2:T1	
+R6	Coreference Arg1:T5 Arg2:T3	
+R7	Coreference Arg1:T6 Arg2:T1	

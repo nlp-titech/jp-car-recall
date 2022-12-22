@@ -1,0 +1,22 @@
+T1	Parts 0 6	中型トラック
+T2	Parts 7 21	横吊り式スペアタイヤキャリア
+T3	Parts 26 29	吊り板
+T4	Parts 42 46	キャリア
+T5	Parts 47 58	アルミホイール付タイヤ
+T6	Parts 72 78	スペアタイヤ
+T7	Parts 96 106	スペアタイヤキャリア
+T8	Parts 107 111	チェーン
+T9	Parts 112 115	吊り板
+T10	Parts 123 127	チェーン
+T11	Parts 138 144	スペアタイヤ
+R1	Coreference Arg1:T2 Arg2:T4	
+R2	Coreference Arg1:T6 Arg2:T11	
+R3	Coreference Arg1:T8 Arg2:T10	
+R4	Coreference Arg1:T3 Arg2:T9	
+R5	Coreference Arg1:T4 Arg2:T7	
+R6	Contact Arg1:T5 Arg2:T4	
+R7	Part-Whole Arg1:T2 Arg2:T1	
+R8	Part-Whole Arg1:T3 Arg2:T2	
+R9	Coreference Arg1:T5 Arg2:T6	
+R10	Part-Whole Arg1:T5 Arg2:T1	
+R11	Part-Whole Arg1:T8 Arg2:T7	

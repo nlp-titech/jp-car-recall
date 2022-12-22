@@ -1,0 +1,26 @@
+T20	Parts 117 122	燃料タンク
+T21	Parts 21 30	レギュレータバルブ
+T22	Parts 61 65	キャップ
+T23	Parts 70 74	キャップ
+T24	Parts 130 134	キャップ
+T25	Parts 138 147	レギュレータバルブ
+T17	Parts 31 35	キャップ
+T1	Parts 1 6	燃料タンク
+T2	Parts 15 20	燃料ポンプ
+T3	Parts 49 53	ガソリン
+R2	Coreference Arg1:T22 Arg2:T17	
+R3	Coreference Arg1:T23 Arg2:T22	
+T4	Parts 75 78	ケース
+R4	Coreference Arg1:T24 Arg2:T23	
+T5	Parts 152 154	燃料
+R5	Coreference Arg1:T5 Arg2:T3	
+R1	Coreference Arg1:T20 Arg2:T1	
+R6	Coreference Arg1:T25 Arg2:T21	
+R7	Part-Whole Arg1:T2 Arg2:T1	
+R8	Part-Whole Arg1:T21 Arg2:T2	
+R9	Contact Arg1:T17 Arg2:T21	
+R10	Contact Arg1:T4 Arg2:T23	
+R11	Contact Arg1:T3 Arg2:T2	
+T6	Parts 164 168	エンジン
+R12	Contact Arg1:T5 Arg2:T6	
+R13	Connect Arg1:T20 Arg2:T6	

@@ -1,0 +1,15 @@
+T9	Parts 18 25	ピストンロッド
+T11	Parts 52 59	ピストンロッド
+T13	Parts 92 96	ブレーキ
+T14	Parts 102 106	ブレーキ
+T15	Parts 42 49	エアーピストン
+T16	Parts 9 17	ブレーキブースタ
+T1	Parts 0 4	制動装置
+R1	Coreference Arg1:T9 Arg2:T11	
+R2	Coreference Arg1:T14 Arg2:T13	
+R3	Part-Whole Arg1:T16 Arg2:T1	
+R4	Part-Whole Arg1:T9 Arg2:T16	
+R6	Contact Arg1:T15 Arg2:T11	
+R7	Part-Whole Arg1:T15 Arg2:T16	
+R9	Part-Whole Arg1:T13 Arg2:T1	
+R10	Connect Arg1:T16 Arg2:T13	

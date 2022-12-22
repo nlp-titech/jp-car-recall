@@ -1,0 +1,12 @@
+T2	Parts 32 37	ブラケット
+T4	Parts 0 4	制動装置
+T5	Parts 45 48	ボルト
+T6	Parts 17 31	ブレーキキャリパ固定用ロッド
+T7	Parts 92 95	ロッド
+T8	Parts 5 12	後輪用ブレーキ
+R1	Coreference Arg1:T6 Arg2:T7	
+R2	Part-Whole Arg1:T8 Arg2:T4	
+R3	Part-Whole Arg1:T6 Arg2:T8	
+R4	Contact Arg1:T6 Arg2:T5	
+R5	Contact Arg1:T2 Arg2:T5	
+R6	Contact Arg1:T6 Arg2:T2	

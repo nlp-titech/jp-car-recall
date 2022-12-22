@@ -1,0 +1,6 @@
+T1	Parts 0 26	オートマチックトランスミッションコントロールユニット
+T2	Parts 31 38	制御プログラム
+T3	Parts 97 101	エンジン
+T4	Parts 71 73	ギア
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Connect Arg1:T1 Arg2:T4	

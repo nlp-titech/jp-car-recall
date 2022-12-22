@@ -1,0 +1,11 @@
+T1	Parts 7 19	パワーウィンドウスイッチ
+T2	Parts 24 35	スイッチ潤滑用グリース
+T3	Parts 0 5	運転席ドア
+T4	Parts 48 52	グリース
+T6	Parts 112 116	スイッチ
+T7	Parts 122 126	樹脂部品
+R1	Coreference Arg1:T4 Arg2:T2	
+R2	Coreference Arg1:T6 Arg2:T1	
+R3	Contact Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T7 Arg2:T3	
+R5	Part-Whole Arg1:T1 Arg2:T3	

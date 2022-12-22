@@ -1,0 +1,10 @@
+T1	Parts 0 10	シートベルトバックル
+T2	Parts 15 21	シートベルト
+T3	Parts 31 37	内部スイッチ
+T4	Parts 50 56	シートベルト
+T5	Parts 83 94	シートベルトテンショナ
+R1	Contact Arg1:T1 Arg2:T2	
+R2	Part-Whole Arg1:T3 Arg2:T1	
+R3	Coreference Arg1:T4 Arg2:T2	
+R4	Connect Arg1:T5 Arg2:T3	
+R5	Connect Arg1:T4 Arg2:T5	

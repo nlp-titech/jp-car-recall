@@ -1,0 +1,21 @@
+T1	Parts 0 4	窓ふき器
+T2	Parts 9 13	ワイパー
+T3	Parts 21 33	車両マスター制御ユニット
+T4	Parts 47 51	ワイパー
+T5	Parts 78 82	ワイパー
+T6	Parts 99 106	ワイパーリレー
+T7	Parts 135 139	ワイパー
+T8	Parts 140 144	電源回路
+T9	Parts 152 156	ヒューズ
+T10	Parts 161 165	ワイパー
+R2	Part-Whole Arg1:T3 Arg2:T2	
+R3	Coreference Arg1:T4 Arg2:T2	
+R4	Coreference Arg1:T5 Arg2:T4	
+R5	Part-Whole Arg1:T6 Arg2:T5	
+R6	Coreference Arg1:T7 Arg2:T5	
+R7	Part-Whole Arg1:T8 Arg2:T7	
+R8	Connect Arg1:T9 Arg2:T8	
+R9	Part-Whole Arg1:T9 Arg2:T7	
+R10	Coreference Arg1:T10 Arg2:T7	
+R11	Connect Arg1:T6 Arg2:T8	
+R1	Coreference Arg1:T2 Arg2:T1	

@@ -1,0 +1,13 @@
+T2	Parts 0 29	電子制御ステアリング（ダイレクトアダプティブステアリング）
+T4	Parts 62 66	エンジン
+T5	Parts 86 90	ハンドル
+T6	Parts 118 122	ハンドル
+T7	Parts 74 77	タイヤ
+T8	Parts 94 97	タイヤ
+T9	Parts 131 134	タイヤ
+R1	Coreference Arg1:T9 Arg2:T8	
+R2	Coreference Arg1:T8 Arg2:T7	
+R3	Coreference Arg1:T6 Arg2:T5	
+R4	Connect Arg1:T5 Arg2:T2	
+R6	Connect Arg1:T7 Arg2:T2	
+R7	Connect Arg1:T4 Arg2:T2	

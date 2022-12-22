@@ -1,0 +1,18 @@
+T1	Parts 85 96	イグニッションスイッチ
+T4	Parts 62 73	電動パーキングブレーキ
+T5	Parts 110 121	電動パーキングブレーキ
+T6	Parts 153 164	電動パーキングブレーキ
+T7	Parts 0 25	ＶＤＣ（ビークルダイナミクスコントロール）ユニット
+T8	Parts 122 125	モータ
+T9	Parts 145 148	モータ
+T10	Parts 56 58	車両
+R2	Part-Whole Arg1:T7 Arg2:T10	
+R3	Part-Whole Arg1:T4 Arg2:T10	
+R4	Part-Whole Arg1:T1 Arg2:T10	
+R6	Coreference Arg1:T6 Arg2:T5	
+R7	Coreference Arg1:T5 Arg2:T4	
+R8	Coreference Arg1:T9 Arg2:T8	
+R9	Part-Whole Arg1:T8 Arg2:T5	
+T2	Parts 30 48	電動パーキングブレーキ制御プログラム
+R1	Connect Arg1:T2 Arg2:T4	
+R10	Part-Whole Arg1:T2 Arg2:T7	

@@ -1,0 +1,16 @@
+T18	Parts 0 6	フルトレーラ
+T19	Parts 7 21	リレーエマージェンシーバルブ
+T1	Parts 28 30	後軸
+T2	Parts 31 35	制動装置
+T3	Parts 43 50	信号圧力用配管
+T4	Parts 55 57	配管
+R1	Coreference Arg1:T4 Arg2:T3	
+T6	Parts 120 122	後軸
+R2	Coreference Arg1:T6 Arg2:T1	
+T7	Parts 137 143	後輪ブレーキ
+R3	Part-Whole Arg1:T19 Arg2:T18	
+R4	Part-Whole Arg1:T1 Arg2:T18	
+R5	Part-Whole Arg1:T2 Arg2:T18	
+R6	Connect Arg1:T3 Arg2:T2	
+R8	Part-Whole Arg1:T7 Arg2:T2	
+R9	Contact Arg1:T3 Arg2:T19	

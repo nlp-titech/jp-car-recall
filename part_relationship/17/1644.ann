@@ -1,0 +1,18 @@
+T12	Parts 112 117	ガスケット
+T13	Parts 118 124	取付けボルト
+T14	Parts 30 33	ボルト
+T19	Parts 48 53	ガスケット
+T1	Parts 0 5	燃料タンク
+T2	Parts 15 20	燃料ゲージ
+T3	Parts 21 24	タンク
+T5	Parts 85 89	ガソリン
+R1	Coreference Arg1:T19 Arg2:T12	
+T6	Parts 142 146	ガソリン
+R2	Coreference Arg1:T5 Arg2:T6	
+R3	Coreference Arg1:T14 Arg2:T13	
+R4	Contact Arg1:T3 Arg2:T2	
+R5	Coreference Arg1:T3 Arg2:T1	
+R6	Contact Arg1:T14 Arg2:T3	
+R7	Contact Arg1:T14 Arg2:T2	
+R8	Contact Arg1:T19 Arg2:T14	
+R9	Part-Whole Arg1:T5 Arg2:T1	

@@ -1,0 +1,14 @@
+T1	Parts 0 10	安全運転支援システム
+T2	Parts 15 28	フロントワイドビューカメラ
+T3	Parts 29 38	起動処理プログラム
+T4	Parts 46 48	車両
+T5	Parts 54 57	カメラ
+T6	Parts 74 84	衝突被害軽減ブレーキ
+T7	Parts 101 104	表示灯
+R1	Coreference Arg1:T2 Arg2:T5	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T1 Arg2:T4	
+R4	Part-Whole Arg1:T3 Arg2:T2	
+R5	Connect Arg1:T6 Arg2:T7	
+R6	Part-Whole Arg1:T7 Arg2:T4	
+R7	Part-Whole Arg1:T6 Arg2:T1	

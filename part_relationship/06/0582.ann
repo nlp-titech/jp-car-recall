@@ -1,0 +1,11 @@
+T1	Parts 1 10	制動液漏れ警報装置
+T2	Parts 15 20	ブレーキ液
+T3	Parts 21 28	リザーバタンク
+T4	Parts 35 46	液面低下検出用フロート
+T5	Parts 63 68	ブレーキ液
+T6	Parts 76 79	警告灯
+R1	Coreference Arg1:T5 Arg2:T2	
+R5	Connect Arg1:T1 Arg2:T6	
+R2	Contact Arg1:T2 Arg2:T3	
+R3	Connect Arg1:T1 Arg2:T4	
+R4	Part-Whole Arg1:T4 Arg2:T3	

@@ -1,0 +1,13 @@
+T10	Parts 100 104	プーリー
+T11	Parts 16 20	クラッチ
+T12	Parts 35 39	クラッチ
+T13	Parts 49 53	クラッチ
+T1	Parts 0 3	発電機
+T2	Parts 8 12	プーリー
+R1	Coreference Arg1:T12 Arg2:T11	
+R2	Coreference Arg1:T13 Arg2:T12	
+R3	Coreference Arg1:T10 Arg2:T2	
+T3	Parts 42 45	潤滑油
+R5	Part-Whole Arg1:T2 Arg2:T1	
+R6	Part-Whole Arg1:T11 Arg2:T2	
+R4	Contact Arg1:T12 Arg2:T3	

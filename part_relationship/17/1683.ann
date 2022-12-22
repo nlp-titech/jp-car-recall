@@ -1,0 +1,9 @@
+T12	Parts 28 33	無段変速機
+T13	Parts 34 47	オイルポンプベーン（羽根）
+T14	Parts 95 98	ベーン
+T15	Parts 129 135	オイルポンプ
+T1	Parts 58 63	無段変速機
+R1	Coreference Arg1:T14 Arg2:T13	
+R2	Coreference Arg1:T1 Arg2:T12	
+R3	Part-Whole Arg1:T14 Arg2:T15	
+R4	Part-Whole Arg1:T15 Arg2:T1	

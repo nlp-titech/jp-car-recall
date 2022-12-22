@@ -1,0 +1,9 @@
+T10	Parts 0 8	ターボチャージャ
+T11	Parts 9 17	可変ノズルベーン
+T1	Parts 64 71	エンジンＥＣＵ
+T2	Parts 82 89	エンジン警告灯
+T4	Parts 119 123	排気ガス
+R1	Part-Whole Arg1:T11 Arg2:T10	
+R2	Connect Arg1:T10 Arg2:T1	
+R3	Connect Arg1:T1 Arg2:T2	
+R4	Contact Arg1:T10 Arg2:T4	

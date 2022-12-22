@@ -1,0 +1,16 @@
+T16	Parts 134 138	ブレーキ
+T17	Parts 122 125	ペダル
+T20	Parts 10 17	ブレーキペダル
+T21	Parts 60 67	取り付けボルト
+T1	Parts 0 5	主制動装置
+T3	Parts 35 38	ペダル
+T5	Parts 103 106	ペダル
+T6	Parts 126 129	フロア
+R1	Coreference Arg1:T3 Arg2:T5	
+R2	Coreference Arg1:T17 Arg2:T5	
+R3	Coreference Arg1:T3 Arg2:T20	
+R4	Contact Arg1:T21 Arg2:T3	
+R5	Contact Arg1:T6 Arg2:T17	
+R8	Contact Arg1:T21 Arg2:T6	
+R6	Coreference Arg1:T1 Arg2:T16	
+R7	Part-Whole Arg1:T20 Arg2:T1	

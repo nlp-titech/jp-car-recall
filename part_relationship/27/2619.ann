@@ -1,0 +1,26 @@
+T19	Parts 90 97	スナップリング
+T20	Parts 63 70	オイルクーラー
+T21	Parts 125 132	スナップリング
+T1	Parts 0 5	自動変速機
+T2	Parts 10 15	自動変速機
+R1	Coreference Arg1:T2 Arg2:T1	
+T3	Parts 17 20	オイル
+T4	Parts 21 28	オイルクーラー
+T5	Parts 33 43	オイルクーラーホース
+T6	Parts 54 57	原動機
+R2	Coreference Arg1:T20 Arg2:T4	
+T7	Parts 73 76	ホース
+R3	Coreference Arg1:T7 Arg2:T5	
+R4	Coreference Arg1:T21 Arg2:T19	
+T8	Parts 139 142	ホース
+R5	Coreference Arg1:T8 Arg2:T7	
+T9	Parts 146 149	オイル
+R6	Coreference Arg1:T9 Arg2:T3	
+R7	Part-Whole Arg1:T3 Arg2:T2	
+R8	Contact Arg1:T4 Arg2:T3	
+R9	Contact Arg1:T5 Arg2:T4	
+R10	Contact Arg1:T5 Arg2:T3	
+R11	Part-Whole Arg1:T19 Arg2:T7	
+R12	Contact Arg1:T5 Arg2:T2	
+R13	Connect Arg1:T4 Arg2:T2	
+R14	Connect Arg1:T6 Arg2:T1	

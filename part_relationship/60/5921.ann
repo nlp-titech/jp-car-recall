@@ -1,0 +1,7 @@
+T1	Parts 0 18	速度感応式パワーステアリングシステム
+T2	Parts 56 65	パワーステアリング
+T3	Parts 90 96	ステアリング
+T4	Parts 19 31	回路短絡検知ソフトウェア
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Connect Arg1:T2 Arg2:T3	
+R3	Part-Whole Arg1:T4 Arg2:T1	

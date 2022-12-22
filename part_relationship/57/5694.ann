@@ -1,0 +1,10 @@
+T1	Parts 11 18	触媒コンバータ
+T2	Parts 38 45	触媒コンバータ
+T3	Parts 61 68	触媒コンバータ
+T4	Parts 0 10	カーボンテールガード
+T5	Parts 31 37	テールガード
+T6	Parts 76 82	テールガード
+R1	Coreference Arg1:T6 Arg2:T5	
+R2	Coreference Arg1:T5 Arg2:T4	
+R3	Coreference Arg1:T3 Arg2:T2	
+R4	Coreference Arg1:T2 Arg2:T1	

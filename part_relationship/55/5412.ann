@@ -1,0 +1,15 @@
+T3	Parts 0 5	ブレーキ液
+T4	Parts 26 31	ブレーキ液
+T5	Parts 62 67	ブレーキ液
+T6	Parts 99 104	ブレーキ液
+T7	Parts 40 44	スイッチ
+T8	Parts 75 79	スイッチ
+T9	Parts 110 113	警告灯
+T1	Parts 6 18	リザーバータンクキャップ
+R1	Coreference Arg1:T3 Arg2:T4	
+R2	Contact Arg1:T3 Arg2:T1	
+R3	Contact Arg1:T1 Arg2:T7	
+R4	Coreference Arg1:T4 Arg2:T5	
+R5	Coreference Arg1:T7 Arg2:T8	
+R6	Coreference Arg1:T5 Arg2:T6	
+R7	Connect Arg1:T7 Arg2:T9	

@@ -1,0 +1,3 @@
+T2	Parts 0 17	電動パワーステアリングギヤボックス
+T4	Parts 92 96	ハンドル
+R1	Connect Arg1:T2 Arg2:T4	

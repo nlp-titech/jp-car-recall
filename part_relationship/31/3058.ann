@@ -1,0 +1,9 @@
+T1	Parts 13 29	粉粒体運搬セミトレーラ（３軸車）
+T2	Parts 34 44	車体（サブフレーム）
+T3	Parts 68 74	サブフレーム
+R1	Coreference Arg1:T2 Arg2:T3	
+T4	Parts 121 127	サブフレーム
+R2	Coreference Arg1:T3 Arg2:T4	
+T5	Parts 142 144	車体
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Coreference Arg1:T5 Arg2:T4	

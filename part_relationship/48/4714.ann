@@ -1,0 +1,13 @@
+T1	Parts 23 67	クランクシャフトポジションセンサ（クランクシャフト位置及び回転スピードを検出するセンサ）
+T3	Parts 16 22	コンピュータ
+T6	Parts 102 105	センサ
+T7	Parts 0 3	原動機
+T8	Parts 121 124	原動機
+T9	Parts 131 134	原動機
+T10	Parts 4 6	燃料
+R1	Coreference Arg1:T7 Arg2:T8	
+R2	Coreference Arg1:T8 Arg2:T9	
+R3	Coreference Arg1:T1 Arg2:T6	
+R4	Contact Arg1:T7 Arg2:T10	
+R5	Connect Arg1:T7 Arg2:T3	
+R6	Connect Arg1:T3 Arg2:T1	

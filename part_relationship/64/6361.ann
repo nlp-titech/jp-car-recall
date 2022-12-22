@@ -1,0 +1,18 @@
+T1	Parts 118 134	オートマチックトランスミッション
+T3	Parts 55 59	エンジン
+T4	Parts 69 73	スイッチ
+T7	Parts 22 26	電気回路
+T8	Parts 162 164	車両
+T2	Parts 3 17	電子式イグニッションスイッチ
+R1	Part-Whole Arg1:T7 Arg2:T2	
+T5	Parts 37 44	メインバッテリ
+R2	Connect Arg1:T2 Arg2:T3	
+R3	Connect Arg1:T5 Arg2:T7	
+R4	Coreference Arg1:T2 Arg2:T4	
+T6	Parts 96 107	電動パーキングブレーキ
+R5	Part-Whole Arg1:T6 Arg2:T8	
+R6	Part-Whole Arg1:T1 Arg2:T8	
+R7	Part-Whole Arg1:T4 Arg2:T8	
+R8	Connect Arg1:T5 Arg2:T3	
+R9	Part-Whole Arg1:T3 Arg2:T8	
+R10	Part-Whole Arg1:T5 Arg2:T8	

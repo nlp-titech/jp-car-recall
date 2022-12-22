@@ -1,0 +1,14 @@
+T1	Parts 102 114	ＥＧＲクーラーブラケット
+T2	Parts 2 9	刈取脱穀作業車
+T3	Parts 18 24	ＥＧＲパイプ
+T4	Parts 36 45	ＥＧＲパイプステー
+T7	Parts 53 57	エンジン
+T10	Parts 65 68	ステー
+T11	Parts 10 13	原動機
+R2	Coreference Arg1:T4 Arg2:T10	
+R3	Part-Whole Arg1:T11 Arg2:T2	
+R4	Contact Arg1:T3 Arg2:T4	
+R5	Part-Whole Arg1:T3 Arg2:T11	
+#1	AnnotatorNotes T1	ステーやパイプとはcontactでもconnectでもない？
+R1	Coreference Arg1:T11 Arg2:T7	
+R6	Part-Whole Arg1:T1 Arg2:T7	

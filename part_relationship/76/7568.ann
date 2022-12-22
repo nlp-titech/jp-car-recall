@@ -1,0 +1,17 @@
+T1	Parts 0 12	エンジン式フォークリフト
+T2	Parts 13 19	動力伝達装置
+T3	Parts 24 32	トルクコンバータ
+T4	Parts 39 47	オイルフィルター
+T5	Parts 58 60	車両
+T6	Parts 67 75	オイルフィルター
+T7	Parts 76 81	エレメント
+T8	Parts 93 96	オイル
+T9	Parts 86 88	ネジ
+R1	Coreference Arg1:T1 Arg2:T5	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T3 Arg2:T2	
+R4	Part-Whole Arg1:T4 Arg2:T3	
+R5	Coreference Arg1:T4 Arg2:T6	
+R6	Part-Whole Arg1:T7 Arg2:T6	
+R7	Contact Arg1:T7 Arg2:T9	
+R8	Contact Arg1:T7 Arg2:T8	

@@ -1,0 +1,13 @@
+T14	Parts 0 17	無段変速機（ＣＶＴ）用オイルポンプ
+T15	Parts 21 25	内部ギヤ
+T16	Parts 40 42	ギヤ
+T17	Parts 49 52	ポンプ
+T18	Parts 70 73	ポンプ
+T19	Parts 79 81	ギヤ
+T20	Parts 86 92	オイルポンプ
+R1	Coreference Arg1:T16 Arg2:T15	
+R3	Coreference Arg1:T18 Arg2:T17	
+R4	Coreference Arg1:T19 Arg2:T16	
+R5	Part-Whole Arg1:T15 Arg2:T14	
+R6	Coreference Arg1:T17 Arg2:T14	
+R2	Coreference Arg1:T18 Arg2:T20	

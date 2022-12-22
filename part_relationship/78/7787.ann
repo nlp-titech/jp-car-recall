@@ -1,0 +1,11 @@
+T1	Parts 0 7	大中型トラック
+T2	Parts 8 15	ホイールベース
+T3	Parts 21 30	縦型消火器ボックス
+T4	Parts 39 44	ヒンジピン
+T5	Parts 72 74	ピン
+T6	Parts 93 100	消火器ボックス
+R1	Contact Arg1:T3 Arg2:T2	
+R2	Part-Whole Arg1:T4 Arg2:T3	
+R3	Coreference Arg1:T5 Arg2:T4	
+R4	Coreference Arg1:T6 Arg2:T3	
+R5	Part-Whole Arg1:T2 Arg2:T1	

@@ -1,0 +1,21 @@
+T11	Parts 41 44	ボルト
+T18	Parts 45 48	平座金
+T19	Parts 86 89	ボルト
+T20	Parts 99 102	ボルト
+T21	Parts 108 111	ボルト
+T22	Parts 118 121	ルーフ
+T1	Parts 0 4	運転者席
+T2	Parts 10 13	ルーフ
+T3	Parts 18 21	ルーフ
+R1	Coreference Arg1:T3 Arg2:T2	
+T4	Parts 26 33	ルーフフレーム
+R2	Coreference Arg1:T19 Arg2:T11	
+R3	Coreference Arg1:T20 Arg2:T19	
+R4	Coreference Arg1:T21 Arg2:T20	
+R5	Coreference Arg1:T22 Arg2:T3	
+T6	Parts 34 36	支柱
+R6	Contact Arg1:T11 Arg2:T18	
+R7	Contact Arg1:T3 Arg2:T4	
+R8	Contact Arg1:T4 Arg2:T6	
+R9	Contact Arg1:T4 Arg2:T11	
+R10	Contact Arg1:T6 Arg2:T11	

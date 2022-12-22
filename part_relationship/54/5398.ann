@@ -1,0 +1,9 @@
+T1	Parts 0 5	燃料タンク
+T2	Parts 65 69	エンジン
+T3	Parts 109 117	ガソリンキャップ
+T6	Parts 52 54	燃料
+T4	Parts 124 128	ガソリン
+R4	Coreference Arg1:T6 Arg2:T4	
+R5	Connect Arg1:T1 Arg2:T2	
+R1	Part-Whole Arg1:T6 Arg2:T1	
+R2	Contact Arg1:T1 Arg2:T3	

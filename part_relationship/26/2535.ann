@@ -1,0 +1,23 @@
+T21	Parts 32 36	リテーナ
+T22	Parts 37 44	ロッカーアーム
+T23	Parts 196 200	エンジン
+T26	Parts 64 68	エンジン
+T27	Parts 91 95	リテーナ
+T28	Parts 131 139	スプリングホルダ
+T31	Parts 118 123	スプリング
+T32	Parts 178 183	スプリング
+T33	Parts 184 190	カムシャフト
+T1	Parts 0 12	可変バルブタイミング機構
+T2	Parts 18 31	ロストモーションスプリング
+R1	Coreference Arg1:T27 Arg2:T21	
+R2	Coreference Arg1:T31 Arg2:T2	
+R3	Coreference Arg1:T23 Arg2:T26	
+R4	Coreference Arg1:T32 Arg2:T31	
+R5	Part-Whole Arg1:T2 Arg2:T1	
+R6	Part-Whole Arg1:T21 Arg2:T2	
+R7	Part-Whole Arg1:T22 Arg2:T1	
+R8	Contact Arg1:T21 Arg2:T22	
+R9	Contact Arg1:T31 Arg2:T28	
+R10	Part-Whole Arg1:T28 Arg2:T1	
+R11	Part-Whole Arg1:T33 Arg2:T1	
+R12	Part-Whole Arg1:T1 Arg2:T26	

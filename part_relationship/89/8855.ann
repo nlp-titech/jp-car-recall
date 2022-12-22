@@ -1,0 +1,14 @@
+T1	Parts 0 6	農耕トラクタ
+T2	Parts 11 23	パワーステアリングホース
+T3	Parts 37 49	パワーステアリングホース
+T4	Parts 50 57	前車軸フレーム
+T5	Parts 89 101	パワーステアリングホース
+T6	Parts 102 109	前車軸フレーム
+T7	Parts 118 119	油
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T2 Arg2:T3	
+R3	Part-Whole Arg1:T4 Arg2:T1	
+R4	Coreference Arg1:T3 Arg2:T5	
+R5	Coreference Arg1:T4 Arg2:T6	
+R6	Contact Arg1:T5 Arg2:T7	
+R7	Part-Whole Arg1:T7 Arg2:T1	

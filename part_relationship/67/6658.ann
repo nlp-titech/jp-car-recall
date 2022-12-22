@@ -1,0 +1,9 @@
+T1	Parts 18 25	制御プログラム
+T2	Parts 62 66	電子回路
+T3	Parts 0 13	乗員保護装置制御モジュール
+T4	Parts 48 60	アクティブ・ヘッドレスト
+T5	Parts 96 108	アクティブ・ヘッドレスト
+R1	Coreference Arg1:T5 Arg2:T4	
+R2	Part-Whole Arg1:T1 Arg2:T3	
+R3	Part-Whole Arg1:T2 Arg2:T4	
+R4	Connect Arg1:T1 Arg2:T2	

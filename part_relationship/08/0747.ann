@@ -1,0 +1,11 @@
+T12	Parts 98 103	エアバッグ
+T13	Parts 78 84	インフレータ
+T14	Parts 9 21	インフレータ（膨張装置）
+T1	Parts 0 8	助手席エアバッグ
+T2	Parts 66 71	エアバッグ
+R1	Coreference Arg1:T2 Arg2:T1	
+T3	Parts 85 89	封入ガス
+R2	Coreference Arg1:T13 Arg2:T14	
+R3	Coreference Arg1:T12 Arg2:T2	
+R4	Part-Whole Arg1:T14 Arg2:T1	
+R5	Part-Whole Arg1:T3 Arg2:T13	

@@ -1,0 +1,10 @@
+T1	Parts 0 10	ドリー付バントレーラ
+T2	Parts 11 26	リレー・エマージェンシ・バルブ
+T3	Parts 56 72	リザーバポート側マウントソケット
+T4	Parts 78 90	サービスポート側配管継手
+T5	Parts 131 142	エマージェンシブレーキ
+R1	Connect Arg1:T2 Arg2:T5	
+R2	Contact Arg1:T2 Arg2:T3	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T5 Arg2:T1	
+R5	Contact Arg1:T2 Arg2:T4	

@@ -1,0 +1,22 @@
+T8	Parts 43 45	車両
+T21	Parts 1 14	エンジン制御用コンピュータ
+T22	Parts 28 32	エンジン
+T23	Parts 107 115	樹脂製燃料タンク
+T26	Parts 156 162	駐車ブレーキ
+T27	Parts 121 131	駐車ブレーキケーブル
+T1	Parts 52 56	エンジン
+T2	Parts 116 120	電気配線
+T3	Parts 146 148	燃料
+T5	Parts 90 92	車体
+T6	Parts 132 134	被覆
+R4	Part-Whole Arg1:T3 Arg2:T23	
+R8	Part-Whole Arg1:T6 Arg2:T27	
+R10	Part-Whole Arg1:T21 Arg2:T8	
+R11	Part-Whole Arg1:T1 Arg2:T8	
+R13	Part-Whole Arg1:T5 Arg2:T8	
+R14	Part-Whole Arg1:T23 Arg2:T8	
+R16	Part-Whole Arg1:T27 Arg2:T26	
+R17	Part-Whole Arg1:T26 Arg2:T8	
+R1	Coreference Arg1:T22 Arg2:T1	
+R2	Connect Arg1:T21 Arg2:T22	
+R3	Part-Whole Arg1:T2 Arg2:T8	

@@ -1,0 +1,7 @@
+T1	Parts 0 5	前面ガラス
+T2	Parts 7 12	側面ガラス
+T3	Parts 13 22	銘板（注意銘板等）
+T4	Parts 29 35	道路運送車両
+R1	Part-Whole Arg1:T1 Arg2:T4	
+R2	Part-Whole Arg1:T2 Arg2:T4	
+R3	Part-Whole Arg1:T3 Arg2:T4	

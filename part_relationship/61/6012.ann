@@ -1,0 +1,11 @@
+T1	Parts 0 10	エンジン制御ユニット
+T2	Parts 50 57	エンジン警告灯
+T3	Parts 27 32	スロットル
+T6	Parts 82 86	アクセル
+T7	Parts 98 102	エンジン
+T8	Parts 122 126	エンジン
+R4	Connect Arg1:T6 Arg2:T7	
+R6	Coreference Arg1:T7 Arg2:T8	
+R1	Connect Arg1:T1 Arg2:T3	
+R2	Connect Arg1:T3 Arg2:T6	
+R3	Connect Arg1:T1 Arg2:T2	

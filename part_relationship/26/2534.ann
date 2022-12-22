@@ -1,0 +1,14 @@
+T14	Parts 24 41	パワーモジュール（電力用複合素子）
+T15	Parts 52 60	パワーモジュール
+T16	Parts 63 67	整流素子
+T1	Parts 0 3	整流器
+T2	Parts 13 23	冷却フィン付きケース
+R1	Coreference Arg1:T15 Arg2:T14	
+T3	Parts 106 110	バッテリ
+T4	Parts 129 133	エンジン
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T14 Arg2:T1	
+R4	Contact Arg1:T2 Arg2:T14	
+R5	Part-Whole Arg1:T16 Arg2:T15	
+R6	Connect Arg1:T3 Arg2:T4	
+R7	Connect Arg1:T1 Arg2:T3	

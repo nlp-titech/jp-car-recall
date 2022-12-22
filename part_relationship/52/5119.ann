@@ -1,0 +1,7 @@
+T4	Parts 16 20	制御装置
+T5	Parts 62 66	制御装置
+T2	Parts 0 15	原動機冷却用電動ファンモーター
+T1	Parts 36 40	エンジン
+R6	Coreference Arg1:T4 Arg2:T5	
+R8	Connect Arg1:T2 Arg2:T1	
+R1	Connect Arg1:T2 Arg2:T4	

@@ -1,0 +1,16 @@
+T12	Parts 27 48	上部センタピンを保持する部材（ブラケット）
+T13	Parts 78 83	ブラケット
+T14	Parts 97 102	ブラケット
+T15	Parts 107 114	上部センタピン
+T1	Parts 0 2	車体
+T2	Parts 21 23	車体
+R1	Coreference Arg1:T13 Arg2:T12	
+R2	Coreference Arg1:T14 Arg2:T13	
+T3	Parts 14 16	車両
+R4	Part-Whole Arg1:T1 Arg2:T3	
+R5	Coreference Arg1:T2 Arg2:T1	
+R3	Contact Arg1:T12 Arg2:T15	
+R6	Contact Arg1:T2 Arg2:T12	
+R7	Contact Arg1:T2 Arg2:T15	
+R8	Part-Whole Arg1:T12 Arg2:T3	
+R9	Part-Whole Arg1:T15 Arg2:T3	

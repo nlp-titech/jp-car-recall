@@ -1,0 +1,15 @@
+T3	Parts 21 28	パワーユニット
+T4	Parts 128 130	車両
+T5	Parts 0 20	床下スライド格納型テールゲートリフタ装置
+T6	Parts 160 171	テールゲートリフタ装置
+T7	Parts 67 69	配線
+R1	Part-Whole Arg1:T3 Arg2:T5	
+R2	Part-Whole Arg1:T7 Arg2:T3	
+R3	Coreference Arg1:T5 Arg2:T4	
+R4	Coreference Arg1:T5 Arg2:T6	
+T1	Parts 33 40	ラジコン受信機
+R5	Part-Whole Arg1:T1 Arg2:T3	
+T2	Parts 59 66	ＩＤ設定ボタン
+R6	Part-Whole Arg1:T2 Arg2:T1	
+T8	Parts 89 92	ボタン
+R7	Coreference Arg1:T2 Arg2:T8	

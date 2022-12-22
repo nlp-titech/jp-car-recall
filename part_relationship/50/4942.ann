@@ -1,0 +1,14 @@
+T1	Parts 14 21	ブレーキパイプ
+T2	Parts 0 4	制動装置
+T3	Parts 55 58	パイプ
+T4	Parts 101 104	パイプ
+T6	Parts 109 112	制動液
+T7	Parts 9 11	前輪
+R1	Coreference Arg1:T3 Arg2:T1	
+T9	Parts 59 67	アンチロールバー
+R3	Coreference Arg1:T4 Arg2:T3	
+R4	Contact Arg1:T7 Arg2:T2	
+R5	Part-Whole Arg1:T1 Arg2:T2	
+R7	Contact Arg1:T6 Arg2:T4	
+T5	Parts 68 71	リンク
+R2	Contact Arg1:T5 Arg2:T9	

@@ -1,0 +1,6 @@
+T10	Parts 8 17	ステアリングコラム
+T11	Parts 22 27	シフト機構
+T3	Parts 0 7	手動変速機付車
+R4	Part-Whole Arg1:T10 Arg2:T3	
+R3	Part-Whole Arg1:T11 Arg2:T3	
+R5	Contact Arg1:T10 Arg2:T11	

@@ -1,0 +1,11 @@
+T8	Parts 0 4	エンジン
+T9	Parts 9 17	バッテリケーブル
+T11	Parts 82 86	ケーブル
+T13	Parts 49 53	ケーブル
+T2	Parts 35 40	燃料ホース
+T3	Parts 43 46	パイプ
+R1	Coreference Arg1:T9 Arg2:T13	
+R2	Coreference Arg1:T11 Arg2:T13	
+T4	Parts 87 89	被覆
+R3	Contact Arg1:T9 Arg2:T8	
+R5	Part-Whole Arg1:T4 Arg2:T11	

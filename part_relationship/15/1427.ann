@@ -1,0 +1,15 @@
+T1	Parts 0 6	車台フレーム
+T3	Parts 33 37	操縦装置
+T4	Parts 38 44	動力伝達装置
+T5	Parts 50 58	ドライブサポート
+T6	Parts 59 61	荷台
+T7	Parts 64 72	ステッププレート
+T10	Parts 125 133	ドライブサポート
+T11	Parts 134 142	ステッププレート
+R1	Coreference Arg1:T5 Arg2:T10	
+R2	Coreference Arg1:T7 Arg2:T11	
+R3	Contact Arg1:T5 Arg2:T3	
+R4	Contact Arg1:T5 Arg2:T4	
+R7	Part-Whole Arg1:T7 Arg2:T6	
+R5	Contact Arg1:T7 Arg2:T5	
+R6	Connect Arg1:T7 Arg2:T1	

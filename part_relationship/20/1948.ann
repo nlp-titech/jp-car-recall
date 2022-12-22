@@ -1,0 +1,15 @@
+T12	Parts 0 11	インストルメントパネル
+T13	Parts 13 17	ハーネス
+T14	Parts 18 25	ワイパーリンク
+T15	Parts 51 58	ワイパーリンク
+T16	Parts 61 65	ハーネス
+T17	Parts 83 87	ハーネス
+T1	Parts 43 47	ワイパー
+R1	Coreference Arg1:T15 Arg2:T14	
+R2	Coreference Arg1:T16 Arg2:T13	
+T2	Parts 99 104	エアバッグ
+T3	Parts 109 113	エンジン
+R3	Coreference Arg1:T17 Arg2:T16	
+R4	Part-Whole Arg1:T13 Arg2:T12	
+R5	Part-Whole Arg1:T14 Arg2:T12	
+R6	Part-Whole Arg1:T15 Arg2:T1	

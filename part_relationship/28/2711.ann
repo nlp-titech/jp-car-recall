@@ -1,0 +1,11 @@
+T1	Parts 2 6	電気装置
+T2	Parts 11 18	運転席フレーム
+T3	Parts 23 33	電気配線保護チューブ
+T4	Parts 34 38	電気配線
+T6	Parts 72 78	配線コネクタ
+T7	Parts 121 127	コントローラ
+R2	Part-Whole Arg1:T3 Arg2:T1	
+R3	Part-Whole Arg1:T6 Arg2:T1	
+R4	Contact Arg1:T4 Arg2:T6	
+R5	Connect Arg1:T1 Arg2:T7	
+R1	Part-Whole Arg1:T4 Arg2:T3	

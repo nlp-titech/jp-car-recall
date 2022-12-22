@@ -1,0 +1,10 @@
+T10	Parts 87 91	固定ピン
+T11	Parts 28 39	固定ピン取り付けボルト
+T12	Parts 80 83	ボルト
+T1	Parts 0 5	かじ取装置
+T2	Parts 6 23	パワーステアリングシリンダ固定ピン
+R1	Coreference Arg1:T12 Arg2:T11	
+R2	Coreference Arg1:T10 Arg2:T2	
+R3	Contact Arg1:T11 Arg2:T2	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T11 Arg2:T1	

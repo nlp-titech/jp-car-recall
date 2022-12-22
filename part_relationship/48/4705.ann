@@ -1,0 +1,22 @@
+T1	Parts 0 9	キャブレター装着車
+T2	Parts 130 136	キャブレター
+T3	Parts 14 37	ベーパーバルブ（燃料タンクの内圧を調整する弁）
+T4	Parts 82 87	燃料タンク
+T6	Parts 68 71	バルブ
+T7	Parts 114 117	原動機
+T8	Parts 46 48	車体
+T9	Parts 138 140	燃料
+T5	Parts 38 43	タイラップ
+R1	Coreference Arg1:T3 Arg2:T6	
+R2	Part-Whole Arg1:T9 Arg2:T4	
+R3	Contact Arg1:T3 Arg2:T5	
+R4	Part-Whole Arg1:T8 Arg2:T1	
+R5	Contact Arg1:T5 Arg2:T8	
+R6	Connect Arg1:T3 Arg2:T8	
+R7	Connect Arg1:T3 Arg2:T4	
+R8	Part-Whole Arg1:T4 Arg2:T1	
+R9	Part-Whole Arg1:T7 Arg2:T1	
+R10	Part-Whole Arg1:T2 Arg2:T1	
+R11	Connect Arg1:T7 Arg2:T2	
+R12	Contact Arg1:T2 Arg2:T9	
+R13	Contact Arg1:T9 Arg2:T6	

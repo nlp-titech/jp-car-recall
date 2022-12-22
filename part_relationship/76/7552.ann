@@ -1,0 +1,7 @@
+T1	Parts 1 7	農耕トラクタ
+T2	Parts 8 16	ドライブシャフト
+T3	Parts 17 28	ユニバーサルジョイント
+T4	Parts 65 68	ヨーク
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T2	
+R3	Part-Whole Arg1:T4 Arg2:T3	

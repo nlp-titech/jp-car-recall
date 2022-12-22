@@ -1,0 +1,9 @@
+T10	Parts 11 18	セレクトレバー
+T11	Parts 40 47	セレクトボタン
+T12	Parts 62 69	セレクトボタン
+T13	Parts 80 87	セレクトボタン
+T14	Parts 0 10	無段変速機（ＣＶＴ）
+R1	Coreference Arg1:T11 Arg2:T12	
+R2	Coreference Arg1:T12 Arg2:T13	
+R3	Part-Whole Arg1:T10 Arg2:T14	
+R5	Part-Whole Arg1:T11 Arg2:T10	

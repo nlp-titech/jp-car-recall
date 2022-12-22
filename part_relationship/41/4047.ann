@@ -1,0 +1,14 @@
+T1	Parts 4 13	シリンダーブロック
+T2	Parts 75 83	クランクシャフト
+T3	Parts 38 41	オイル
+T4	Parts 65 68	オイル
+T5	Parts 84 92	ジャーナルメタル
+T6	Parts 0 3	原動機
+T7	Parts 111 114	原動機
+R1	Coreference Arg1:T6 Arg2:T7	
+R2	Coreference Arg1:T3 Arg2:T4	
+R3	Part-Whole Arg1:T1 Arg2:T6	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R6	Contact Arg1:T4 Arg2:T5	
+R7	Contact Arg1:T3 Arg2:T1	
+R5	Part-Whole Arg1:T5 Arg2:T2	

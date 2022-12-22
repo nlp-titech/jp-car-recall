@@ -1,0 +1,15 @@
+T1	Parts 10 15	燃料ホース
+T2	Parts 28 33	燃料ホース
+T3	Parts 79 84	燃料ホース
+T4	Parts 34 38	エンジン
+T5	Parts 69 73	エンジン
+T6	Parts 1 5	燃料装置
+T7	Parts 95 97	燃料
+R1	Part-Whole Arg1:T1 Arg2:T6	
+R2	Coreference Arg1:T2 Arg2:T1	
+R3	Coreference Arg1:T5 Arg2:T4	
+R4	Connect Arg1:T4 Arg2:T6	
+R6	Coreference Arg1:T3 Arg2:T2	
+R7	Contact Arg1:T7 Arg2:T6	
+R8	Contact Arg1:T7 Arg2:T3	
+R9	Contact Arg1:T7 Arg2:T5	

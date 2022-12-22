@@ -1,0 +1,10 @@
+T1	Parts 0 10	後軸リーフスプリング
+T2	Parts 11 15	取付金具
+T3	Parts 22 26	フレーム
+T4	Parts 41 45	取付金具
+T5	Parts 52 56	フレーム
+R1	Coreference Arg1:T5 Arg2:T3	
+R2	Coreference Arg1:T4 Arg2:T2	
+R3	Contact Arg1:T1 Arg2:T2	
+R4	Connect Arg1:T1 Arg2:T3	
+R5	Contact Arg1:T2 Arg2:T3	

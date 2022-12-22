@@ -1,0 +1,17 @@
+T1	Parts 81 91	ステアリングシャフト
+T2	Parts 11 19	フロントフォーク
+T3	Parts 109 117	フロントフォーク
+T4	Parts 0 6	かじ取り装置
+T5	Parts 33 41	トリプルクランプ
+T6	Parts 72 80	トリプルクランプ
+T7	Parts 20 24	フレーム
+R1	Coreference Arg1:T6 Arg2:T5	
+R2	Coreference Arg1:T3 Arg2:T2	
+R3	Contact Arg1:T5 Arg2:T7	
+R4	Contact Arg1:T5 Arg2:T2	
+R5	Contact Arg1:T7 Arg2:T2	
+R7	Part-Whole Arg1:T6 Arg2:T4	
+R8	Part-Whole Arg1:T2 Arg2:T4	
+R6	Contact Arg1:T6 Arg2:T1	
+R9	Part-Whole Arg1:T1 Arg2:T4	
+R10	Part-Whole Arg1:T5 Arg2:T4	

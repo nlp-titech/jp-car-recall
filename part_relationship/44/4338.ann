@@ -1,0 +1,11 @@
+T1	Parts 9 27	バキュームポンプ（真空倍力補正装置）
+T2	Parts 74 82	バキュームポンプ
+T3	Parts 0 8	ブレーキ倍力装置
+T4	Parts 120 124	倍力装置
+T5	Parts 35 60	羽根（羽根を回転することにより負圧を発生させる。）
+T7	Parts 71 73	羽根
+R1	Part-Whole Arg1:T1 Arg2:T3	
+R2	Part-Whole Arg1:T5 Arg2:T1	
+R3	Coreference Arg1:T5 Arg2:T7	
+R4	Coreference Arg1:T1 Arg2:T2	
+R5	Coreference Arg1:T3 Arg2:T4	

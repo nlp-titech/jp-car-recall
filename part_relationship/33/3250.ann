@@ -1,0 +1,9 @@
+T1	Parts 0 4	始動装置
+T2	Parts 5 9	スタータ
+T3	Parts 14 24	スタータ駆動用リレー
+T5	Parts 101 104	リレー
+R1	Coreference Arg1:T3 Arg2:T5	
+T6	Parts 112 116	スタータ
+R2	Coreference Arg1:T2 Arg2:T6	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Connect Arg1:T2 Arg2:T3	

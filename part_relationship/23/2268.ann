@@ -1,0 +1,18 @@
+T1	Parts 0 15	圧縮天然ガス自動車（ＣＮＧ車）
+T2	Parts 20 22	燃料
+T3	Parts 30 35	燃料遮断弁
+T4	Parts 45 49	エンジン
+T5	Parts 53 55	ガス
+T6	Parts 86 89	吸気管
+T7	Parts 91 93	車室
+T8	Parts 95 97	ガス
+T9	Parts 113 115	車室
+R1	Coreference Arg1:T9 Arg2:T7	
+R2	Coreference Arg1:T8 Arg2:T5	
+R3	Contact Arg1:T2 Arg2:T3	
+R4	Part-Whole Arg1:T3 Arg2:T1	
+R5	Part-Whole Arg1:T4 Arg2:T1	
+R6	Contact Arg1:T6 Arg2:T7	
+R7	Connect Arg1:T4 Arg2:T3	
+R8	Part-Whole Arg1:T7 Arg2:T1	
+R9	Part-Whole Arg1:T6 Arg2:T1	

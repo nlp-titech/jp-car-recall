@@ -1,0 +1,9 @@
+T1	Parts 0 11	電動パワーステアリング
+T2	Parts 12 21	トルクセンサー基盤
+T4	Parts 46 48	基盤
+T5	Parts 69 73	ハンドル
+T6	Parts 96 100	ハンドル
+R1	Coreference Arg1:T6 Arg2:T5	
+R2	Coreference Arg1:T4 Arg2:T2	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R5	Connect Arg1:T1 Arg2:T5	

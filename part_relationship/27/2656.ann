@@ -1,0 +1,18 @@
+T16	Parts 4 10	オイルポンプ
+T17	Parts 35 38	ポンプ
+T18	Parts 39 44	ハウジング
+T20	Parts 83 86	ポンプ
+T22	Parts 87 91	ローター
+T15	Parts 100 102	ピン
+T1	Parts 0 3	原動機
+R1	Coreference Arg1:T17 Arg2:T16	
+R2	Coreference Arg1:T20 Arg2:T17	
+T2	Parts 106 110	エンジン
+T3	Parts 114 117	オイル
+R4	Part-Whole Arg1:T17 Arg2:T18	
+R5	Part-Whole Arg1:T22 Arg2:T20	
+R6	Contact Arg1:T15 Arg2:T22	
+R8	Coreference Arg1:T2 Arg2:T1	
+R9	Part-Whole Arg1:T18 Arg2:T1	
+R3	Part-Whole Arg1:T15 Arg2:T20	
+R10	Contact Arg1:T3 Arg2:T17	

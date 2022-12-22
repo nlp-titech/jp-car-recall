@@ -1,0 +1,21 @@
+T1	Parts 7 13	操作スイッチ
+T2	Parts 63 69	操作スイッチ
+T3	Parts 101 106	方向指示器
+T4	Parts 75 79	エンジン
+T5	Parts 18 22	スイッチ
+T6	Parts 38 44	スイッチ基板
+T7	Parts 0 4	ハンドル
+T9	Parts 115 118	警音器
+T10	Parts 87 90	前照灯
+T12	Parts 45 47	配線
+R1	Coreference Arg1:T5 Arg2:T1	
+R2	Coreference Arg1:T2 Arg2:T5	
+R3	Part-Whole Arg1:T6 Arg2:T5	
+R5	Connect Arg1:T4 Arg2:T2	
+R6	Connect Arg1:T10 Arg2:T2	
+R7	Connect Arg1:T3 Arg2:T2	
+R8	Connect Arg1:T9 Arg2:T2	
+R9	Contact Arg1:T7 Arg2:T1	
+T8	Parts 23 26	ハンダ
+R10	Contact Arg1:T5 Arg2:T8	
+R4	Part-Whole Arg1:T12 Arg2:T6	

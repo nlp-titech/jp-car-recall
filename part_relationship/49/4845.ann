@@ -1,0 +1,18 @@
+T1	Parts 9 24	エンジンルームヒューズボックス
+T3	Parts 48 54	左側緩衝装置
+T4	Parts 0 4	電気装置
+T5	Parts 27 31	電気配線
+T6	Parts 115 118	警音器
+T7	Parts 128 131	原動機
+T8	Parts 104 107	前照灯
+T9	Parts 75 77	車体
+T10	Parts 45 47	配線
+T11	Parts 85 87	配線
+R1	Part-Whole Arg1:T1 Arg2:T4	
+R2	Connect Arg1:T5 Arg2:T1	
+R3	Coreference Arg1:T5 Arg2:T10	
+R7	Part-Whole Arg1:T8 Arg2:T4	
+R8	Part-Whole Arg1:T6 Arg2:T4	
+R9	Connect Arg1:T4 Arg2:T7	
+R6	Coreference Arg1:T10 Arg2:T11	
+R4	Part-Whole Arg1:T4 Arg2:T9	

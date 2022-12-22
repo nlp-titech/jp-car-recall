@@ -1,0 +1,14 @@
+T1	Parts 22 29	高圧燃料ポンプ
+T5	Parts 117 120	ダンパ
+T6	Parts 34 37	ポンプ
+T7	Parts 157 159	燃料
+T2	Parts 0 6	Ｖ型エンジン
+T3	Parts 7 16	左右シリンダバンク
+T4	Parts 72 91	パルセーションダンパ（燃圧変動減衰器）
+R1	Part-Whole Arg1:T3 Arg2:T2	
+R2	Part-Whole Arg1:T1 Arg2:T3	
+R3	Coreference Arg1:T1 Arg2:T6	
+R4	Coreference Arg1:T4 Arg2:T5	
+R5	Contact Arg1:T6 Arg2:T7	
+R6	Contact Arg1:T4 Arg2:T6	
+R7	Contact Arg1:T7 Arg2:T5	

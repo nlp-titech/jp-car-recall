@@ -1,0 +1,10 @@
+T1	Parts 0 14	衝突被害軽減ブレーキシステム
+T2	Parts 33 57	ＡＳＤＭ（アクティブセーフティドメインマスター）
+T3	Parts 105 118	衝突回避・被害軽減ブレーキ
+T4	Parts 19 23	レーダー
+T5	Parts 25 28	カメラ
+R1	Part-Whole Arg1:T4 Arg2:T2	
+R2	Part-Whole Arg1:T5 Arg2:T2	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T3 Arg2:T1	
+R5	Connect Arg1:T2 Arg2:T3	

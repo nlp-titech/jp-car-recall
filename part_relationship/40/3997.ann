@@ -1,0 +1,19 @@
+T1	Parts 46 54	リーフスプリング
+T2	Parts 69 74	スプリング
+T3	Parts 19 24	燃料タンク
+T5	Parts 113 118	燃料パイプ
+T6	Parts 10 14	燃料装置
+T7	Parts 37 45	燃料パイプカバー
+T8	Parts 65 68	カバー
+T11	Parts 141 143	燃料
+T12	Parts 0 9	キャンピング架装車
+R1	Coreference Arg1:T8 Arg2:T7	
+R2	Coreference Arg1:T2 Arg2:T1	
+R3	Contact Arg1:T7 Arg2:T3	
+R4	Contact Arg1:T5 Arg2:T3	
+R5	Contact Arg1:T5 Arg2:T7	
+R6	Part-Whole Arg1:T3 Arg2:T6	
+R7	Part-Whole Arg1:T11 Arg2:T5	
+R8	Part-Whole Arg1:T6 Arg2:T12	
+R9	Part-Whole Arg1:T1 Arg2:T6	
+R10	Part-Whole Arg1:T7 Arg2:T6	

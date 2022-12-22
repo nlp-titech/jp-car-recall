@@ -1,0 +1,23 @@
+T1	Parts 24 35	エンジン制御プログラム
+T3	Parts 67 82	スターターモーターピニオンギヤ
+T4	Parts 88 93	リングギヤ
+T5	Parts 3 7	エンジン
+T6	Parts 43 47	エンジン
+T7	Parts 83 87	エンジン
+T8	Parts 122 126	エンジン
+T9	Parts 143 147	エンジン
+T12	Parts 8 19	始動装置（スターター）
+T13	Parts 58 61	シフト
+T14	Parts 104 106	ギヤ
+R1	Contact Arg1:T4 Arg2:T3	
+R2	Oneway-Coreference Arg1:T14 Arg2:T4	
+R3	Coreference Arg1:T6 Arg2:T5	
+R4	Part-Whole Arg1:T12 Arg2:T5	
+R5	Part-Whole Arg1:T3 Arg2:T12	
+R6	Coreference Arg1:T7 Arg2:T6	
+R7	Part-Whole Arg1:T4 Arg2:T7	
+R8	Coreference Arg1:T9 Arg2:T8	
+R9	Coreference Arg1:T8 Arg2:T7	
+R10	Oneway-Coreference Arg1:T14 Arg2:T3	
+R11	Connect Arg1:T13 Arg2:T5	
+R12	Connect Arg1:T1 Arg2:T5	

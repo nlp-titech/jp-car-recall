@@ -1,0 +1,10 @@
+T1	Parts 0 7	刈取脱穀作業車
+T2	Parts 8 12	燃料装置
+T3	Parts 17 28	インジェクションパイプ
+T4	Parts 64 67	パイプ
+R1	Coreference Arg1:T4 Arg2:T3	
+T5	Parts 74 76	燃料
+R2	Contact Arg1:T4 Arg2:T5	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T3 Arg2:T2	
+R5	Part-Whole Arg1:T5 Arg2:T2	

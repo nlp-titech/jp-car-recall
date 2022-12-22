@@ -1,0 +1,15 @@
+T1	Parts 0 5	ボンネット
+T2	Parts 65 70	ボンネット
+T3	Parts 96 101	ボンネット
+T4	Parts 6 13	補助ロック装置
+T5	Parts 83 90	補助ロック装置
+T6	Parts 14 17	フック
+T7	Parts 44 47	フック
+T8	Parts 28 30	車両
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Coreference Arg1:T2 Arg2:T3	
+R3	Coreference Arg1:T4 Arg2:T5	
+R4	Coreference Arg1:T6 Arg2:T7	
+R5	Part-Whole Arg1:T4 Arg2:T1	
+R6	Part-Whole Arg1:T6 Arg2:T4	
+R7	Part-Whole Arg1:T1 Arg2:T8	

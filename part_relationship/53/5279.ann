@@ -1,0 +1,9 @@
+T1	Parts 20 26	トランジスタ
+T2	Parts 52 58	トランジスタ
+T3	Parts 0 4	点火装置
+T4	Parts 63 66	原動機
+T6	Parts 9 19	高電圧発生モジュール
+R1	Part-Whole Arg1:T6 Arg2:T3	
+R2	Part-Whole Arg1:T1 Arg2:T6	
+R3	Coreference Arg1:T1 Arg2:T2	
+R4	Connect Arg1:T3 Arg2:T4	

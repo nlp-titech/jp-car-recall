@@ -1,0 +1,5 @@
+T6	Parts 73 78	エアバッグ
+T7	Parts 0 15	エアバッグコントロールユニット
+T8	Parts 25 39	Ｇセンサー（感度の高いもの）
+R1	Connect Arg1:T6 Arg2:T7	
+R2	Part-Whole Arg1:T8 Arg2:T7	

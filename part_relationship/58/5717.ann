@@ -1,0 +1,16 @@
+T1	Parts 27 32	締付ボルト
+T3	Parts 18 22	フレーム
+T4	Parts 9 17	マウントプレート
+T5	Parts 0 4	連結装置
+T6	Parts 5 8	カプラ
+T7	Parts 82 85	カプラ
+T8	Parts 45 48	ボルト
+T9	Parts 74 77	ボルト
+R1	Coreference Arg1:T6 Arg2:T7	
+R3	Part-Whole Arg1:T4 Arg2:T6	
+R4	Contact Arg1:T4 Arg2:T1	
+R5	Contact Arg1:T3 Arg2:T1	
+R6	Contact Arg1:T4 Arg2:T3	
+R7	Coreference Arg1:T1 Arg2:T8	
+R8	Coreference Arg1:T8 Arg2:T9	
+R2	Part-Whole Arg1:T6 Arg2:T5	

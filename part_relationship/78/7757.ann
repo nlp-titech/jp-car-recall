@@ -1,0 +1,11 @@
+T1	Parts 0 14	ドアインナーリリースハンドル
+T2	Parts 31 35	ケーブル
+T3	Parts 36 40	接続ピン
+T4	Parts 66 70	ハンドル
+T5	Parts 75 80	ドアラッチ
+T6	Parts 86 88	ドア
+R1	Contact Arg1:T3 Arg2:T2	
+R2	Coreference Arg1:T4 Arg2:T1	
+R3	Connect Arg1:T5 Arg2:T4	
+R4	Connect Arg1:T5 Arg2:T6	
+R5	Part-Whole Arg1:T2 Arg2:T1	

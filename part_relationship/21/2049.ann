@@ -1,0 +1,13 @@
+T12	Parts 97 102	燃料ポンプ
+T13	Parts 40 44	シリンダ
+T14	Parts 24 28	シリンダ
+T15	Parts 109 113	エンジン
+T1	Parts 0 6	燃料噴射装置
+T2	Parts 7 23	燃料供給ポンプ（サプライポンプ）
+T4	Parts 104 106	燃料
+R1	Coreference Arg1:T13 Arg2:T14	
+R3	Coreference Arg1:T12 Arg2:T2	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T14 Arg2:T2	
+R6	Contact Arg1:T4 Arg2:T12	
+R7	Part-Whole Arg1:T1 Arg2:T15	

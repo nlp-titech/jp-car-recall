@@ -1,0 +1,13 @@
+T1	Parts 0 10	バッテリー用ハーネス
+T2	Parts 21 34	トランスミッションマウント
+T3	Parts 37 41	ハーネス
+T4	Parts 64 68	ハーネス
+T5	Parts 75 79	ヒューズ
+T6	Parts 87 90	警告灯
+T7	Parts 106 110	エンジン
+R1	Connect Arg1:T4 Arg2:T5	
+R2	Coreference Arg1:T3 Arg2:T4	
+R3	Coreference Arg1:T3 Arg2:T1	
+R4	Connect Arg1:T6 Arg2:T4	
+R5	Connect Arg1:T6 Arg2:T7	
+R6	Connect Arg1:T4 Arg2:T7	

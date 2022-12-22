@@ -1,0 +1,12 @@
+T1	Parts 15 23	ヒューズボックス
+T4	Parts 27 30	センサ
+T5	Parts 106 109	センサ
+T12	Parts 34 36	配線
+T3	Parts 0 10	カムポジションセンサ
+T2	Parts 61 72	エコスタート用バッテリ
+R3	Coreference Arg1:T3 Arg2:T4	
+R4	Coreference Arg1:T4 Arg2:T5	
+R1	Contact Arg1:T4 Arg2:T12	
+R2	Contact Arg1:T1 Arg2:T12	
+R5	Connect Arg1:T1 Arg2:T2	
+R6	Connect Arg1:T4 Arg2:T1	

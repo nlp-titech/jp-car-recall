@@ -1,0 +1,14 @@
+T1	Parts 7 19	一酸化炭素等発散防止装置
+T2	Parts 24 34	エンジン制御ユニット
+T4	Parts 35 50	排出ガス後処理装置制御ユニット
+T5	Parts 0 6	大型路線バス
+R1	Part-Whole Arg1:T1 Arg2:T5	
+R4	Part-Whole Arg1:T4 Arg2:T1	
+R5	Part-Whole Arg1:T2 Arg2:T5	
+T6	Parts 66 69	尿素水
+T3	Parts 51 58	制御プログラム
+R2	Part-Whole Arg1:T3 Arg2:T2	
+R3	Part-Whole Arg1:T3 Arg2:T4	
+R7	Connect Arg1:T4 Arg2:T6	
+R6	Part-Whole Arg1:T6 Arg2:T1	
+R8	Connect Arg1:T2 Arg2:T4	

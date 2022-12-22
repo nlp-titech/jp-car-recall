@@ -1,0 +1,19 @@
+T10	Parts 0 15	手動変速機コントロールケーブル
+T11	Parts 16 20	フレーム
+T12	Parts 27 31	クリップ
+T13	Parts 60 64	クリップ
+T14	Parts 70 74	クリップ
+T15	Parts 78 89	発電機（オルタネータ）
+T1	Parts 46 51	手動変速機
+R1	Coreference Arg1:T14 Arg2:T13	
+R2	Coreference Arg1:T13 Arg2:T12	
+T2	Parts 90 92	配線
+T3	Parts 104 106	配線
+T4	Parts 107 109	被覆
+R3	Coreference Arg1:T2 Arg2:T3	
+R4	Contact Arg1:T10 Arg2:T11	
+R5	Contact Arg1:T10 Arg2:T12	
+R6	Contact Arg1:T11 Arg2:T12	
+R7	Contact Arg1:T10 Arg2:T1	
+R8	Part-Whole Arg1:T2 Arg2:T15	
+R9	Part-Whole Arg1:T4 Arg2:T3	

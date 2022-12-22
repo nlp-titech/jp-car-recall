@@ -1,0 +1,21 @@
+T1	Parts 59 63	エンジン
+T2	Parts 22 30	ヒータースイッチ
+T3	Parts 48 52	スイッチ
+T4	Parts 10 17	シートヒーター
+T6	Parts 69 76	シートヒーター
+T7	Parts 94 98	ヒーター
+T10	Parts 0 4	運転者席
+T11	Parts 31 35	電気配線
+T13	Parts 104 116	ＥＣＵ（ヒーターＥＣＵ）
+T14	Parts 137 144	ヒーターＥＣＵ
+T17	Parts 6 9	助手席
+R1	Part-Whole Arg1:T4 Arg2:T17	
+R2	Part-Whole Arg1:T4 Arg2:T10	
+R3	Part-Whole Arg1:T2 Arg2:T4	
+R4	Part-Whole Arg1:T11 Arg2:T2	
+R5	Coreference Arg1:T2 Arg2:T3	
+R6	Coreference Arg1:T4 Arg2:T6	
+R8	Oneway-Coreference Arg1:T7 Arg2:T6	
+R9	Connect Arg1:T13 Arg2:T7	
+R10	Coreference Arg1:T13 Arg2:T14	
+R7	Connect Arg1:T1 Arg2:T11	

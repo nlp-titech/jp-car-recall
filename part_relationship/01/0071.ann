@@ -1,0 +1,11 @@
+T1	Parts 0 8	かじ取りハンドル
+T2	Parts 13 18	方向指示器
+T3	Parts 20 30	操作スイッチユニット
+T4	Parts 59 63	ハンドル
+T5	Parts 69 79	操作スイッチユニット
+T6	Parts 80 84	電気配線
+R1	Coreference Arg1:T3 Arg2:T5	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Connect Arg1:T3 Arg2:T2	
+R4	Coreference Arg1:T1 Arg2:T4	
+R5	Part-Whole Arg1:T6 Arg2:T5	

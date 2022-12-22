@@ -1,0 +1,11 @@
+T13	Parts 10 21	オイルフィラーキャップ
+T1	Parts 0 9	左側ロッカーカバー
+T2	Parts 38 42	キャップ
+R1	Coreference Arg1:T2 Arg2:T13	
+T3	Parts 81 85	キャップ
+R2	Coreference Arg1:T3 Arg2:T2	
+T4	Parts 90 93	潤滑油
+R3	Part-Whole Arg1:T13 Arg2:T1	
+T5	Parts 70 74	ロッカー
+R4	Part-Whole Arg1:T1 Arg2:T5	
+R5	Part-Whole Arg1:T4 Arg2:T5	

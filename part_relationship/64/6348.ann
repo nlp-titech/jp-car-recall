@@ -1,0 +1,14 @@
+T1	Parts 83 90	アクセルペダル
+T3	Parts 121 125	エンジン
+T4	Parts 1 7	左ハンドル車
+T6	Parts 8 20	運転席用フロアカーペット
+T9	Parts 27 32	カーペット
+T7	Parts 44 52	フロアカーペット
+T2	Parts 100 107	アクセルアーム
+T5	Parts 108 116	フロアカーペット
+R1	Part-Whole Arg1:T6 Arg2:T4	
+R2	Coreference Arg1:T6 Arg2:T9	
+R3	Coreference Arg1:T9 Arg2:T7	
+R4	Connect Arg1:T1 Arg2:T3	
+R5	Coreference Arg1:T7 Arg2:T5	
+R6	Part-Whole Arg1:T2 Arg2:T1	

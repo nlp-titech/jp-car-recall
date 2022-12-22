@@ -1,0 +1,12 @@
+T1	Parts 0 5	燃料タンク
+T2	Parts 6 14	フロントマウント
+T3	Parts 43 51	フロントマウント
+T4	Parts 105 109	点火装置
+T5	Parts 58 61	タンク
+T6	Parts 73 75	燃料
+T7	Parts 99 101	燃料
+R1	Coreference Arg1:T5 Arg2:T1	
+R2	Coreference Arg1:T3 Arg2:T2	
+R3	Contact Arg1:T2 Arg2:T1	
+R4	Coreference Arg1:T7 Arg2:T6	
+R5	Part-Whole Arg1:T6 Arg2:T5	

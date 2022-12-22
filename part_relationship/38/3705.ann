@@ -1,0 +1,19 @@
+T1	Parts 3 13	ディーゼルエンジン車
+T2	Parts 42 47	ベアリング
+T3	Parts 80 85	ベアリング
+T4	Parts 124 129	充電警告灯
+T5	Parts 22 27	補機ベルト
+T6	Parts 61 65	エンジン
+T7	Parts 36 40	プーリー
+T8	Parts 115 119	プーリー
+T9	Parts 14 17	発電機
+R1	Coreference Arg1:T3 Arg2:T2	
+R2	Coreference Arg1:T8 Arg2:T7	
+R3	Part-Whole Arg1:T6 Arg2:T1	
+R4	Part-Whole Arg1:T9 Arg2:T1	
+R5	Contact Arg1:T6 Arg2:T5	
+R6	Contact Arg1:T5 Arg2:T9	
+R7	Part-Whole Arg1:T2 Arg2:T7	
+R8	Connect Arg1:T4 Arg2:T9	
+R9	Part-Whole Arg1:T4 Arg2:T1	
+R10	Contact Arg1:T7 Arg2:T9	

@@ -1,0 +1,10 @@
+T1	Parts 0 12	フロントドライブシャフト
+T3	Parts 29 40	ボールベアリングケース
+T5	Parts 61 65	ハンドル
+T7	Parts 84 87	ケース
+T8	Parts 114 117	ケース
+R1	Coreference Arg1:T3 Arg2:T7	
+R2	Part-Whole Arg1:T3 Arg2:T1	
+R3	Connect Arg1:T5 Arg2:T1	
+T2	Parts 17 21	ホイール
+R4	Coreference Arg1:T3 Arg2:T8	

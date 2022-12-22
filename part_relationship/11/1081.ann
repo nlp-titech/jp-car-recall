@@ -1,0 +1,14 @@
+T16	Parts 108 113	エアタンク
+T18	Parts 25 31	圧力スイッチ
+T19	Parts 32 40	配管用ジョイント
+T1	Parts 0 4	制動装置
+T2	Parts 5 17	リヤブレーキ用エアタンク
+T3	Parts 50 55	サブビーム
+T6	Parts 114 120	圧力スイッチ
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R7	Coreference Arg1:T2 Arg2:T16	
+T7	Parts 44 48	フレーム
+R1	Contact Arg1:T3 Arg2:T7	
+R4	Coreference Arg1:T6 Arg2:T18	
+R5	Contact Arg1:T19 Arg2:T18	
+R2	Contact Arg1:T2 Arg2:T19	

@@ -1,0 +1,9 @@
+T1	Parts 0 5	燃料ホース
+T3	Parts 49 53	クランプ
+T4	Parts 68 71	ホース
+T5	Parts 75 77	燃料
+T2	Parts 14 23	クランプ（止め具）
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Coreference Arg1:T1 Arg2:T4	
+R3	Contact Arg1:T1 Arg2:T2	
+R4	Contact Arg1:T4 Arg2:T5	

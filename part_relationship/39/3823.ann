@@ -1,0 +1,19 @@
+T2	Parts 55 64	インプットシャフト
+T3	Parts 89 98	インプットシャフト
+T4	Parts 145 154	インプットシャフト
+T5	Parts 10 26	インタアクスルディファレンシャル
+T6	Parts 166 174	プロペラシャフト
+T7	Parts 0 9	大型・中型トラック
+T8	Parts 112 117	ベアリング
+T9	Parts 134 139	ベアリング
+T11	Parts 31 44	インプットシャフトフランジ
+R1	Coreference Arg1:T3 Arg2:T2	
+R2	Coreference Arg1:T9 Arg2:T8	
+R4	Contact Arg1:T8 Arg2:T3	
+R5	Coreference Arg1:T4 Arg2:T3	
+R6	Part-Whole Arg1:T2 Arg2:T5	
+R7	Part-Whole Arg1:T5 Arg2:T7	
+R8	Part-Whole Arg1:T8 Arg2:T5	
+R9	Connect Arg1:T6 Arg2:T4	
+R10	Part-Whole Arg1:T6 Arg2:T7	
+R3	Part-Whole Arg1:T11 Arg2:T2	

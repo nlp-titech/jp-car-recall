@@ -1,0 +1,14 @@
+T2	Parts 1 5	乗車装置
+T3	Parts 10 26	運転者席および助手席シートレール
+T5	Parts 27 29	座席
+T6	Parts 45 47	座席
+T7	Parts 58 60	座席
+T8	Parts 76 78	座席
+T9	Parts 97 99	座席
+R1	Coreference Arg1:T7 Arg2:T6	
+R2	Coreference Arg1:T9 Arg2:T8	
+R3	Coreference Arg1:T8 Arg2:T7	
+R4	Coreference Arg1:T6 Arg2:T5	
+R5	Part-Whole Arg1:T5 Arg2:T2	
+R6	Contact Arg1:T5 Arg2:T3	
+R9	Part-Whole Arg1:T3 Arg2:T2	

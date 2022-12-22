@@ -1,0 +1,7 @@
+T12	Parts 89 92	警音器
+T13	Parts 42 47	ブラケット
+T14	Parts 8 17	取り付けブラケット
+T15	Parts 0 3	警音器
+R1	Coreference Arg1:T13 Arg2:T14	
+R2	Coreference Arg1:T12 Arg2:T15	
+R3	Contact Arg1:T14 Arg2:T15	

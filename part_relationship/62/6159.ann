@@ -1,0 +1,13 @@
+T1	Parts 0 5	サンバイザ
+T2	Parts 64 69	サンバイザ
+T3	Parts 70 74	スクリュ
+T6	Parts 26 38	バニティミラーランプ配線
+T7	Parts 111 121	バニティミラーランプ
+T9	Parts 6 12	ルーフトリム
+T11	Parts 53 55	配線
+T12	Parts 84 86	配線
+R1	Coreference Arg1:T6 Arg2:T11	
+R2	Coreference Arg1:T1 Arg2:T2	
+R3	Contact Arg1:T3 Arg2:T2	
+R5	Contact Arg1:T6 Arg2:T7	
+R4	Coreference Arg1:T11 Arg2:T12	

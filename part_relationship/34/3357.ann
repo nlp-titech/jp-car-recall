@@ -1,0 +1,19 @@
+T20	Parts 68 77	ブロアファンモータ
+T21	Parts 41 44	モータ
+T19	Parts 0 4	エアコン
+T24	Parts 117 126	ブロアファンモータ
+T25	Parts 134 140	抵抗ユニット
+T26	Parts 142 148	温度ヒューズ
+T2	Parts 24 33	ブロアファンモータ
+R1	Coreference Arg1:T2 Arg2:T21	
+R2	Coreference Arg1:T21 Arg2:T20	
+T3	Parts 82 87	デフロスタ
+T4	Parts 99 111	マニュアルエアコン仕様車
+R3	Coreference Arg1:T20 Arg2:T24	
+T1	Parts 169 171	抵抗
+R4	Coreference Arg1:T25 Arg2:T1	
+R5	Part-Whole Arg1:T25 Arg2:T24	
+R6	Part-Whole Arg1:T26 Arg2:T25	
+R7	Part-Whole Arg1:T2 Arg2:T19	
+R8	Part-Whole Arg1:T19 Arg2:T4	
+R9	Part-Whole Arg1:T3 Arg2:T19	

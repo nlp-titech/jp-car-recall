@@ -1,0 +1,17 @@
+T1	Parts 0 4	エンジン
+T2	Parts 17 29	圧縮空気用コンプレッサー
+T3	Parts 30 39	吸入側サイレンサー
+T4	Parts 42 48	整流プレート
+T5	Parts 61 67	サイレンサー
+T6	Parts 77 81	プレート
+T7	Parts 117 121	プレート
+T8	Parts 128 135	コンプレッサー
+T9	Parts 143 150	コンプレッサー
+R1	Coreference Arg1:T3 Arg2:T5	
+R2	Coreference Arg1:T4 Arg2:T6	
+R3	Coreference Arg1:T6 Arg2:T7	
+R4	Coreference Arg1:T8 Arg2:T9	
+R5	Coreference Arg1:T2 Arg2:T8	
+R6	Part-Whole Arg1:T3 Arg2:T2	
+R7	Part-Whole Arg1:T4 Arg2:T3	
+R8	Connect Arg1:T1 Arg2:T2	

@@ -1,0 +1,7 @@
+T1	Parts 1 8	前面方向指示器
+T2	Parts 16 18	車両
+T3	Parts 19 26	前面方向指示器
+T4	Parts 39 42	バルブ
+R1	Coreference Arg1:T3 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T2	
+R3	Part-Whole Arg1:T4 Arg2:T3	

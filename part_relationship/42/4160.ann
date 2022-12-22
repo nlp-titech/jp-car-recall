@@ -1,0 +1,9 @@
+T1	Parts 0 9	ディーゼルエンジン
+T2	Parts 37 41	アクセル
+T3	Parts 14 18	エンジン
+T4	Parts 59 63	エンジン
+T5	Parts 101 105	エンジン
+R1	Coreference Arg1:T1 Arg2:T3	
+R2	Coreference Arg1:T3 Arg2:T4	
+R3	Connect Arg1:T3 Arg2:T2	
+R4	Coreference Arg1:T4 Arg2:T5	

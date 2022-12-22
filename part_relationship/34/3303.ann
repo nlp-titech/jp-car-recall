@@ -1,0 +1,18 @@
+T12	Parts 117 121	エンジン
+T14	Parts 70 75	点火プラグ
+T15	Parts 76 80	ピストン
+T1	Parts 0 9	直噴ターボエンジン
+T2	Parts 14 16	車両
+T3	Parts 21 35	エンジンコントロールユニット
+T4	Parts 36 41	プログラム
+T5	Parts 96 99	警告灯
+T6	Parts 102 104	車体
+R2	Part-Whole Arg1:T3 Arg2:T2	
+R3	Connect Arg1:T1 Arg2:T3	
+R4	Part-Whole Arg1:T4 Arg2:T3	
+R5	Part-Whole Arg1:T14 Arg2:T1	
+R6	Part-Whole Arg1:T15 Arg2:T1	
+R1	Part-Whole Arg1:T1 Arg2:T6	
+R7	Part-Whole Arg1:T6 Arg2:T2	
+R8	Coreference Arg1:T1 Arg2:T12	
+R9	Part-Whole Arg1:T5 Arg2:T6	

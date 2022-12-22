@@ -1,0 +1,22 @@
+T12	Parts 22 28	作動油タンク
+T13	Parts 30 33	ホース
+T14	Parts 54 57	ホース
+T15	Parts 104 109	油圧ホース
+T16	Parts 110 116	ホースガイド
+T17	Parts 124 129	油圧ホース
+T1	Parts 0 7	ショベルローダ
+T2	Parts 8 13	油圧ホース
+R1	Coreference Arg1:T2 Arg2:T13	
+R2	Coreference Arg1:T13 Arg2:T14	
+R3	Coreference Arg1:T14 Arg2:T15	
+R4	Coreference Arg1:T15 Arg2:T17	
+T3	Parts 137 140	作動油
+R5	Contact Arg1:T13 Arg2:T12	
+R6	Contact Arg1:T16 Arg2:T15	
+R7	Part-Whole Arg1:T3 Arg2:T12	
+R8	Contact Arg1:T3 Arg2:T17	
+R9	Part-Whole Arg1:T12 Arg2:T1	
+R10	Part-Whole Arg1:T2 Arg2:T1	
+R11	Part-Whole Arg1:T16 Arg2:T1	
+T4	Parts 94 100	ステアリング
+R12	Part-Whole Arg1:T4 Arg2:T1	

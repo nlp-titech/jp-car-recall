@@ -1,0 +1,13 @@
+T1	Parts 0 6	大・中型バス
+T2	Parts 11 15	エンジン
+T3	Parts 65 69	エンジン
+T4	Parts 16 21	吸気パイプ
+T5	Parts 22 26	栓プラグ
+T6	Parts 54 57	プラグ
+T7	Parts 80 84	栓プラグ
+R1	Part-Whole Arg1:T5 Arg2:T4	
+R2	Part-Whole Arg1:T4 Arg2:T2	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Coreference Arg1:T5 Arg2:T6	
+R5	Coreference Arg1:T2 Arg2:T3	
+R6	Coreference Arg1:T6 Arg2:T7	

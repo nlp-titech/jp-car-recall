@@ -1,0 +1,13 @@
+T1	Parts 0 10	テールゲートダンパー
+T2	Parts 110 116	テールゲート
+T4	Parts 97 101	ダンパー
+T7	Parts 21 24	ボルト
+R1	Contact Arg1:T1 Arg2:T7	
+R2	Coreference Arg1:T1 Arg2:T4	
+R4	Contact Arg1:T4 Arg2:T2	
+T3	Parts 11 14	ボディ
+T5	Parts 102 105	ボディ
+R3	Coreference Arg1:T3 Arg2:T5	
+R5	Contact Arg1:T1 Arg2:T3	
+R6	Contact Arg1:T3 Arg2:T7	
+R7	Contact Arg1:T5 Arg2:T2	

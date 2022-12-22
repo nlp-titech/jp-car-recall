@@ -1,0 +1,12 @@
+T1	Parts 9 18	スロットルケーブル
+T2	Parts 113 121	アクセルグリップ
+T3	Parts 129 133	エンジン
+T5	Parts 46 50	ケーブル
+T6	Parts 86 90	ケーブル
+T7	Parts 0 4	加速装置
+R1	Part-Whole Arg1:T1 Arg2:T7	
+R2	Coreference Arg1:T1 Arg2:T5	
+R3	Coreference Arg1:T1 Arg2:T6	
+R4	Part-Whole Arg1:T2 Arg2:T7	
+R5	Connect Arg1:T1 Arg2:T2	
+R6	Connect Arg1:T7 Arg2:T3	

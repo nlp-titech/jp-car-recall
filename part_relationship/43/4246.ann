@@ -1,0 +1,16 @@
+T1	Parts 0 10	コンテナセミトレーラ
+T2	Parts 52 56	ホイール
+T3	Parts 87 91	ホイール
+T4	Parts 11 15	走行装置
+T5	Parts 20 23	タイヤ
+T6	Parts 38 41	タイヤ
+T7	Parts 93 98	エアバルブ
+T8	Parts 111 116	エアバルブ
+R1	Part-Whole Arg1:T4 Arg2:T1	
+R2	Part-Whole Arg1:T5 Arg2:T4	
+R3	Coreference Arg1:T5 Arg2:T6	
+R4	Contact Arg1:T6 Arg2:T2	
+R5	Coreference Arg1:T2 Arg2:T3	
+R6	Contact Arg1:T7 Arg2:T3	
+R7	Coreference Arg1:T7 Arg2:T8	
+R8	Connect Arg1:T7 Arg2:T6	

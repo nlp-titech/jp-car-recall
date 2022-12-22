@@ -1,0 +1,16 @@
+T1	Parts 9 26	ＡＢＳ／ＥＳＣコントロールユニット
+T3	Parts 41 45	エンジン
+T4	Parts 0 4	制動装置
+T6	Parts 151 154	ＡＢＳ
+T7	Parts 138 141	警告灯
+T8	Parts 61 81	ＩＣチップ（パワーコントロールユニット）
+T9	Parts 122 127	ＩＣチップ
+T11	Parts 158 170	ＥＳＣ（横滑り防止装置）
+R1	Coreference Arg1:T9 Arg2:T8	
+R2	Part-Whole Arg1:T11 Arg2:T4	
+R4	Connect Arg1:T3 Arg2:T4	
+R6	Part-Whole Arg1:T8 Arg2:T1	
+R7	Connect Arg1:T7 Arg2:T9	
+R8	Connect Arg1:T6 Arg2:T1	
+R9	Connect Arg1:T11 Arg2:T1	
+R10	Part-Whole Arg1:T6 Arg2:T4	

@@ -1,0 +1,17 @@
+T2	Parts 88 94	接続コネクタ
+T3	Parts 0 6	燃料供給配管
+T4	Parts 106 110	コネクタ
+T7	Parts 36 42	ヒータパイプ
+T8	Parts 95 101	ヒータパイプ
+T10	Parts 80 82	車体
+T11	Parts 121 123	燃料
+T12	Parts 147 149	燃料
+R1	Coreference Arg1:T11 Arg2:T12	
+T1	Parts 28 34	接続コネクタ
+R2	Coreference Arg1:T1 Arg2:T2	
+R3	Coreference Arg1:T2 Arg2:T4	
+R4	Coreference Arg1:T7 Arg2:T8	
+R6	Contact Arg1:T3 Arg2:T11	
+R5	Part-Whole Arg1:T1 Arg2:T3	
+R7	Part-Whole Arg1:T3 Arg2:T10	
+R8	Part-Whole Arg1:T7 Arg2:T10	

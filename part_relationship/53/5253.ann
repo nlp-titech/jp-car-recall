@@ -1,0 +1,7 @@
+T2	Parts 0 3	前照灯
+T3	Parts 28 31	前照灯
+T1	Parts 44 52	光軸調整センサー
+R1	Coreference Arg1:T2 Arg2:T3	
+T4	Parts 64 68	調節装置
+R2	Part-Whole Arg1:T1 Arg2:T4	
+R3	Connect Arg1:T3 Arg2:T4	

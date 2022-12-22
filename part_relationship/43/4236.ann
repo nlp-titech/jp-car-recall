@@ -1,0 +1,14 @@
+T1	Parts 32 38	ホースバンド
+T2	Parts 0 6	農耕トラクタ
+T3	Parts 94 98	エンジン
+T5	Parts 116 119	作動油
+T6	Parts 7 11	油圧回路
+T7	Parts 16 31	油圧サクションフィルタ部ホース
+T8	Parts 50 53	ホース
+R1	Part-Whole Arg1:T6 Arg2:T2	
+R2	Contact Arg1:T1 Arg2:T7	
+R3	Part-Whole Arg1:T7 Arg2:T6	
+R4	Coreference Arg1:T7 Arg2:T8	
+R6	Part-Whole Arg1:T5 Arg2:T6	
+R11	Contact Arg1:T5 Arg2:T8	
+R5	Part-Whole Arg1:T3 Arg2:T2	

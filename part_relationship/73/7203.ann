@@ -1,0 +1,18 @@
+T1	Parts 0 16	オートマチックトランスミッション
+T2	Parts 32 39	ガイドプレート
+T3	Parts 89 95	シフトレバー
+T4	Parts 17 27	パーキングロック機構
+T5	Parts 152 157	ロック機構
+T6	Parts 69 73	プレート
+T7	Parts 117 121	プレート
+T8	Parts 128 131	レバー
+T9	Parts 111 114	ロッド
+R1	Part-Whole Arg1:T4 Arg2:T1	
+R2	Part-Whole Arg1:T2 Arg2:T4	
+R3	Coreference Arg1:T2 Arg2:T6	
+R4	Coreference Arg1:T6 Arg2:T7	
+R5	Coreference Arg1:T3 Arg2:T8	
+R6	Coreference Arg1:T4 Arg2:T5	
+R7	Connect Arg1:T3 Arg2:T4	
+R9	Part-Whole Arg1:T9 Arg2:T4	
+R10	Connect Arg1:T1 Arg2:T3	

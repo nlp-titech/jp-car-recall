@@ -1,0 +1,5 @@
+T1	Parts 0 17	オートマチックコントロールユニット
+T3	Parts 62 66	エンジン
+T4	Parts 78 82	エンジン
+R2	Coreference Arg1:T3 Arg2:T4	
+R3	Connect Arg1:T1 Arg2:T3	

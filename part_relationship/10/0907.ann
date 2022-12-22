@@ -1,0 +1,15 @@
+T6	Parts 105 110	前側推進軸
+T12	Parts 98 101	ボルト
+T13	Parts 57 60	ボルト
+T14	Parts 29 32	ボルト
+T1	Parts 10 15	前側推進軸
+T2	Parts 16 22	前輪差動装置
+R1	Coreference Arg1:T13 Arg2:T14	
+R2	Coreference Arg1:T12 Arg2:T13	
+R3	Coreference Arg1:T6 Arg2:T1	
+T3	Parts 0 5	四輪駆動車
+R4	Part-Whole Arg1:T1 Arg2:T3	
+R5	Part-Whole Arg1:T2 Arg2:T3	
+R6	Connect Arg1:T1 Arg2:T2	
+R7	Contact Arg1:T1 Arg2:T14	
+R8	Contact Arg1:T2 Arg2:T14	

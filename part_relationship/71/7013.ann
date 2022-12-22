@@ -1,0 +1,11 @@
+T1	Parts 26 47	電動式パワーステアリング制御用コンピュータ
+T2	Parts 94 98	パワステ
+T4	Parts 75 79	エンジン
+T5	Parts 112 116	ハンドル
+T6	Parts 0 21	アイドリングストップ（ｉ－Ｓｔｏｐ）仕様車
+R1	Part-Whole Arg1:T1 Arg2:T6	
+R3	Part-Whole Arg1:T4 Arg2:T6	
+R4	Connect Arg1:T1 Arg2:T4	
+R5	Connect Arg1:T1 Arg2:T2	
+R6	Connect Arg1:T2 Arg2:T4	
+R7	Connect Arg1:T2 Arg2:T5	

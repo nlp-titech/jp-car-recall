@@ -1,0 +1,19 @@
+T1	Parts 91 98	アンカーボルト
+T3	Parts 0 5	バン架装車
+T4	Parts 149 154	燃料タンク
+T5	Parts 121 124	ボルト
+T6	Parts 145 148	ボルト
+T11	Parts 16 18	車台
+T12	Parts 39 41	車台
+T13	Parts 129 131	車両
+T14	Parts 81 90	前輪サスペンション
+T15	Parts 166 168	燃料
+R1	Coreference Arg1:T3 Arg2:T13	
+R2	Part-Whole Arg1:T15 Arg2:T4	
+R3	Coreference Arg1:T11 Arg2:T12	
+R4	Coreference Arg1:T1 Arg2:T5	
+R5	Coreference Arg1:T5 Arg2:T6	
+R6	Part-Whole Arg1:T11 Arg2:T3	
+R7	Part-Whole Arg1:T4 Arg2:T13	
+R9	Contact Arg1:T14 Arg2:T1	
+R8	Part-Whole Arg1:T14 Arg2:T12	

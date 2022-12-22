@@ -1,0 +1,5 @@
+T6	Parts 0 3	排気管
+T7	Parts 27 30	補強板
+T8	Parts 38 41	排気管
+R2	Coreference Arg1:T8 Arg2:T6	
+R1	Part-Whole Arg1:T7 Arg2:T6	

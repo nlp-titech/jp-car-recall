@@ -1,0 +1,22 @@
+T1	Parts 10 16	オルタネータ
+T3	Parts 0 5	負圧ポンプ
+T4	Parts 124 129	負圧ポンプ
+T5	Parts 58 62	エンジン
+T6	Parts 139 143	ブレーキ
+T7	Parts 17 20	プーリ
+T9	Parts 72 75	ベルト
+T10	Parts 116 119	ベルト
+T11	Parts 173 176	ベルト
+T12	Parts 191 194	ベルト
+T2	Parts 34 47	オルタネータドライブベルト
+R1	Part-Whole Arg1:T3 Arg2:T1	
+R2	Part-Whole Arg1:T7 Arg2:T1	
+R3	Contact Arg1:T7 Arg2:T2	
+R4	Coreference Arg1:T2 Arg2:T9	
+R5	Coreference Arg1:T9 Arg2:T10	
+R6	Coreference Arg1:T3 Arg2:T4	
+R7	Coreference Arg1:T10 Arg2:T11	
+R8	Coreference Arg1:T11 Arg2:T12	
+R9	Connect Arg1:T1 Arg2:T2	
+R10	Connect Arg1:T5 Arg2:T9	
+R11	Connect Arg1:T4 Arg2:T6	

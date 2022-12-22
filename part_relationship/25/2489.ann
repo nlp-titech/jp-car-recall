@@ -1,0 +1,16 @@
+T1	Parts 0 8	バキュームポンプ
+T2	Parts 9 18	潤滑用オイルパイプ
+T3	Parts 29 37	パイプ固定ボルト
+T4	Parts 46 49	ボルト
+R1	Coreference Arg1:T4 Arg2:T3	
+T5	Parts 79 83	パッキン
+T6	Parts 85 88	オイル
+T7	Parts 98 102	エンジン
+R2	Contact Arg1:T1 Arg2:T2	
+R3	Contact Arg1:T2 Arg2:T3	
+R4	Contact Arg1:T1 Arg2:T3	
+R5	Contact Arg1:T1 Arg2:T7	
+R6	Contact Arg1:T4 Arg2:T5	
+R7	Contact Arg1:T1 Arg2:T5	
+R8	Contact Arg1:T2 Arg2:T6	
+R9	Contact Arg1:T1 Arg2:T6	

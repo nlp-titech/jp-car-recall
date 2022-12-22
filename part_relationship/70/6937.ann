@@ -1,0 +1,14 @@
+T1	Parts 0 10	テールゲートストッパ
+T3	Parts 76 82	テールゲート
+T4	Parts 138 144	テールゲート
+T5	Parts 11 23	テールゲート側ブラケット
+T6	Parts 97 102	ブラケット
+T7	Parts 121 126	ブラケット
+T8	Parts 130 134	ストッパ
+R3	Coreference Arg1:T5 Arg2:T6	
+R4	Coreference Arg1:T5 Arg2:T7	
+R5	Coreference Arg1:T1 Arg2:T8	
+R1	Coreference Arg1:T3 Arg2:T4	
+R6	Contact Arg1:T1 Arg2:T5	
+R2	Contact Arg1:T1 Arg2:T3	
+R7	Part-Whole Arg1:T5 Arg2:T3	

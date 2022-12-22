@@ -1,0 +1,11 @@
+T1	Parts 16 31	ブレーキドラム・バックプレート
+T3	Parts 32 37	固定ボルト
+T4	Parts 81 86	固定ボルト
+T5	Parts 104 109	固定ボルト
+T6	Parts 0 11	リヤ・ドラム・ブレーキ
+T7	Parts 113 117	ブレーキ
+R1	Coreference Arg1:T5 Arg2:T4	
+R2	Coreference Arg1:T4 Arg2:T3	
+R3	Contact Arg1:T3 Arg2:T1	
+R4	Part-Whole Arg1:T1 Arg2:T6	
+R5	Coreference Arg1:T7 Arg2:T6	

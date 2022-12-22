@@ -1,0 +1,10 @@
+T1	Parts 39 48	プレッシャプレート
+T2	Parts 0 7	刈取脱穀作業車
+T3	Parts 12 18	旋回クラッチ
+T4	Parts 29 35	旋回クラッチ
+R1	Coreference Arg1:T4 Arg2:T3	
+T5	Parts 69 73	穴止め輪
+R2	Contact Arg1:T5 Arg2:T1	
+R3	Part-Whole Arg1:T1 Arg2:T4	
+R4	Part-Whole Arg1:T5 Arg2:T4	
+R5	Part-Whole Arg1:T3 Arg2:T2	

@@ -1,0 +1,17 @@
+T1	Parts 0 10	後席中央シートベルト
+T2	Parts 13 17	バックル
+T3	Parts 27 34	ボディーパネル
+T4	Parts 47 51	後席左右
+T5	Parts 64 66	座席
+T6	Parts 79 81	車両
+T7	Parts 87 90	パネル
+T8	Parts 95 101	後席中央座席
+R1	Contact Arg1:T1 Arg2:T2	
+R2	Contact Arg1:T1 Arg2:T3	
+R3	Contact Arg1:T2 Arg2:T3	
+R6	Part-Whole Arg1:T5 Arg2:T6	
+R7	Coreference Arg1:T3 Arg2:T7	
+R5	Oneway-Coreference Arg1:T5 Arg2:T4	
+R4	Contact Arg1:T1 Arg2:T8	
+R9	Part-Whole Arg1:T7 Arg2:T6	
+R8	Oneway-Coreference Arg1:T8 Arg2:T5	

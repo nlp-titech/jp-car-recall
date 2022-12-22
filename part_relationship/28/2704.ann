@@ -1,0 +1,9 @@
+T2	Parts 14 25	後軸内側ハブべアリング
+T4	Parts 30 35	ベアリング
+T6	Parts 84 89	ベアリング
+R2	Coreference Arg1:T6 Arg2:T4	
+T1	Parts 0 7	大中型トラック
+T5	Parts 9 13	中型バス
+R3	Part-Whole Arg1:T2 Arg2:T5	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R1	Coreference Arg1:T2 Arg2:T4	

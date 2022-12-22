@@ -1,0 +1,19 @@
+T1	Parts 49 58	後輪駆動用チェーン
+T2	Parts 86 95	後輪駆動用チェーン
+T4	Parts 130 137	サイドスタンド
+T5	Parts 146 150	安全装置
+T6	Parts 160 164	エンジン
+T7	Parts 22 26	電気配線
+T8	Parts 44 48	電気配線
+T9	Parts 106 110	電気配線
+T10	Parts 121 125	電気配線
+T11	Parts 0 17	サイドスタンド跳ね上げ忘れ防止装置
+R1	Coreference Arg1:T8 Arg2:T7	
+R2	Coreference Arg1:T2 Arg2:T1	
+R3	Coreference Arg1:T9 Arg2:T8	
+R4	Coreference Arg1:T10 Arg2:T9	
+R5	Coreference Arg1:T5 Arg2:T11	
+R6	Connect Arg1:T5 Arg2:T4	
+R7	Connect Arg1:T6 Arg2:T5	
+R8	Part-Whole Arg1:T7 Arg2:T11	
+R9	Connect Arg1:T6 Arg2:T2	

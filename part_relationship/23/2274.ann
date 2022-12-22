@@ -1,0 +1,17 @@
+T16	Parts 40 55	ステアリングホイールブラケット
+T19	Parts 128 133	エアバッグ
+T20	Parts 11 22	エアバッグインフレータ
+T1	Parts 23 25	配線
+T2	Parts 37 39	配線
+R1	Coreference Arg1:T2 Arg2:T1	
+T3	Parts 88 90	配線
+R2	Coreference Arg1:T3 Arg2:T2	
+T4	Parts 95 98	警告灯
+T5	Parts 109 120	イグニッションスイッチ
+R3	Contact Arg1:T1 Arg2:T20	
+R4	Contact Arg1:T3 Arg2:T4	
+R5	Contact Arg1:T3 Arg2:T5	
+R6	Part-Whole Arg1:T20 Arg2:T19	
+T6	Parts 0 10	ステアリングホイール
+R8	Part-Whole Arg1:T16 Arg2:T6	
+R9	Part-Whole Arg1:T19 Arg2:T6	

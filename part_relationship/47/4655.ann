@@ -1,0 +1,14 @@
+T1	Parts 0 4	エンジン
+T2	Parts 93 97	ヒューズ
+T3	Parts 9 13	電気配線
+T4	Parts 64 68	電気配線
+T5	Parts 84 88	電気配線
+T6	Parts 38 41	ボルト
+T7	Parts 102 105	原動機
+R1	Coreference Arg1:T1 Arg2:T7	
+T9	Parts 26 32	防音・断熱材
+R2	Contact Arg1:T9 Arg2:T6	
+R3	Coreference Arg1:T3 Arg2:T4	
+R5	Coreference Arg1:T4 Arg2:T5	
+R6	Connect Arg1:T5 Arg2:T2	
+R7	Connect Arg1:T2 Arg2:T7	

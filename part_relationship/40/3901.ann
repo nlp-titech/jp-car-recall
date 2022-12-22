@@ -1,0 +1,11 @@
+T1	Parts 18 28	ハイブリッドシステム
+T2	Parts 29 36	制御プログラム
+T3	Parts 80 84	クラッチ
+T4	Parts 0 12	大型ハイブリッド路線バス
+T5	Parts 94 97	モータ
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Connect Arg1:T5 Arg2:T1	
+R5	Part-Whole Arg1:T1 Arg2:T4	
+R6	Part-Whole Arg1:T3 Arg2:T4	
+R7	Part-Whole Arg1:T5 Arg2:T4	
+R3	Connect Arg1:T2 Arg2:T3	

@@ -1,0 +1,13 @@
+T1	Parts 8 17	マスターシリンダー
+T2	Parts 78 87	マスターシリンダー
+T3	Parts 131 140	マスターシリンダー
+T4	Parts 60 68	ブレーキフルード
+T6	Parts 149 153	クラッチ
+T7	Parts 160 164	クラッチ
+T5	Parts 0 7	油圧式クラッチ
+R1	Part-Whole Arg1:T1 Arg2:T5	
+R2	Coreference Arg1:T1 Arg2:T2	
+R4	Coreference Arg1:T2 Arg2:T3	
+R6	Coreference Arg1:T6 Arg2:T7	
+R7	Coreference Arg1:T5 Arg2:T6	
+R5	Contact Arg1:T4 Arg2:T2	

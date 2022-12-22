@@ -1,0 +1,8 @@
+T1	Parts 0 4	路線バス
+T2	Parts 5 13	後輪ブレーキ配管
+T3	Parts 36 38	配管
+R1	Coreference Arg1:T3 Arg2:T2	
+T4	Parts 70 75	ブレーキ液
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Contact Arg1:T4 Arg2:T3	
+R4	Part-Whole Arg1:T4 Arg2:T1	

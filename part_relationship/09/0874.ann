@@ -1,0 +1,19 @@
+T14	Parts 80 86	ヘッドランプ
+T16	Parts 130 140	コントロールユニット
+T18	Parts 111 117	ヘッドランプ
+T19	Parts 156 159	前照灯
+T1	Parts 0 10	高輝度放電灯式前照灯
+T2	Parts 11 14	レンズ
+T3	Parts 15 20	ハウジング
+T4	Parts 26 30	メルト材
+T5	Parts 38 42	メルト材
+R1	Coreference Arg1:T18 Arg2:T14	
+T7	Parts 144 150	電圧制御回路
+R2	Coreference Arg1:T19 Arg2:T1	
+R3	Coreference Arg1:T5 Arg2:T4	
+R4	Part-Whole Arg1:T2 Arg2:T14	
+R5	Part-Whole Arg1:T3 Arg2:T14	
+R6	Part-Whole Arg1:T14 Arg2:T1	
+R7	Part-Whole Arg1:T4 Arg2:T14	
+R8	Part-Whole Arg1:T16 Arg2:T18	
+R9	Part-Whole Arg1:T7 Arg2:T16	

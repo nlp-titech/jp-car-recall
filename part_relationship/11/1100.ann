@@ -1,0 +1,8 @@
+T1	Parts 0 14	補助制動装置（電磁リターダ）
+T2	Parts 15 19	電気回路
+T3	Parts 27 33	電磁リターダ
+T4	Parts 37 40	制動灯
+R1	Coreference Arg1:T1 Arg2:T3	
+R2	Connect Arg1:T2 Arg2:T1	
+R4	Connect Arg1:T4 Arg2:T3	
+R3	Connect Arg1:T2 Arg2:T4	

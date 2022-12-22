@@ -1,0 +1,12 @@
+T1	Parts 46 52	ストライカー
+T2	Parts 112 118	ストライカー
+T3	Parts 0 7	大型ウィング車
+T4	Parts 8 18	サイドスカート装着車
+R2	Part-Whole Arg1:T1 Arg2:T4	
+R3	Coreference Arg1:T1 Arg2:T2	
+T5	Parts 134 141	サイドスカート
+T6	Parts 34 41	サイドスカート
+R4	Coreference Arg1:T6 Arg2:T5	
+R5	Part-Whole Arg1:T6 Arg2:T4	
+R6	Contact Arg1:T6 Arg2:T1	
+R1	Coreference Arg1:T3 Arg2:T4	

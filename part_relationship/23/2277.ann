@@ -1,0 +1,13 @@
+T1	Parts 0 7	農耕用トラクタ
+T2	Parts 8 12	キャビン
+T3	Parts 13 19	左ドアガラス
+T4	Parts 24 27	ガラス
+T5	Parts 43 46	ガラス
+R1	Coreference Arg1:T5 Arg2:T4	
+T6	Parts 60 63	ガラス
+R2	Coreference Arg1:T6 Arg2:T5	
+T7	Parts 95 98	ガラス
+R3	Coreference Arg1:T7 Arg2:T6	
+R4	Coreference Arg1:T4 Arg2:T3	
+R5	Part-Whole Arg1:T2 Arg2:T1	
+R6	Part-Whole Arg1:T3 Arg2:T2	

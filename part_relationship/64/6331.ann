@@ -1,0 +1,16 @@
+T1	Parts 0 11	フロントブレーキホース
+T2	Parts 141 148	ブレーキオイル
+T3	Parts 16 23	ブレーキホース
+T4	Parts 76 83	ブレーキホース
+T5	Parts 123 130	ブレーキホース
+T6	Parts 37 42	保護カバー
+T7	Parts 64 69	保護カバー
+T9	Parts 53 57	ハンドル
+T10	Parts 28 31	カバー
+R1	Coreference Arg1:T1 Arg2:T3	
+R2	Part-Whole Arg1:T10 Arg2:T3	
+R3	Coreference Arg1:T10 Arg2:T6	
+R4	Coreference Arg1:T6 Arg2:T7	
+R5	Coreference Arg1:T3 Arg2:T4	
+R6	Coreference Arg1:T4 Arg2:T5	
+R7	Contact Arg1:T5 Arg2:T2	

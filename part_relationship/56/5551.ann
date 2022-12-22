@@ -1,0 +1,7 @@
+T1	Parts 0 7	制動灯スイッチ
+T2	Parts 66 72	シフトレバー
+T3	Parts 33 37	ブレーキ
+T4	Parts 54 57	制動灯
+R3	Connect Arg1:T4 Arg2:T1	
+R4	Connect Arg1:T3 Arg2:T1	
+R1	Connect Arg1:T4 Arg2:T2	

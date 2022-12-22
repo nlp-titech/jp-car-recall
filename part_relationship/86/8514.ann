@@ -1,0 +1,5 @@
+T1	Parts 1 15	エンジンコントロールユニット
+T2	Parts 64 66	燃料
+T3	Parts 100 104	エンジン
+R1	Connect Arg1:T3 Arg2:T1	
+R2	Part-Whole Arg1:T2 Arg2:T3	

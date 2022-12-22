@@ -1,0 +1,11 @@
+T1	Parts 0 20	後輪用差動装置（リヤディファレンシャル）
+T2	Parts 25 36	リヤディファレンシャル
+T3	Parts 37 42	リヤカバー
+T4	Parts 47 50	ボルト
+T6	Parts 82 85	ボルト
+R1	Coreference Arg1:T6 Arg2:T4	
+T7	Parts 89 92	作動油
+R2	Coreference Arg1:T2 Arg2:T1	
+R3	Contact Arg1:T4 Arg2:T3	
+R4	Part-Whole Arg1:T3 Arg2:T2	
+R5	Contact Arg1:T7 Arg2:T2	

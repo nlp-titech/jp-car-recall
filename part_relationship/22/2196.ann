@@ -1,0 +1,17 @@
+T1	Parts 0 5	運転席ドア
+T2	Parts 8 20	パワーウィンドウスイッチ
+T4	Parts 50 52	端子
+T7	Parts 107 109	端子
+R2	Coreference Arg1:T7 Arg2:T4	
+T8	Parts 115 120	ドアガラス
+T3	Parts 73 77	スイッチ
+R1	Coreference Arg1:T3 Arg2:T2	
+T10	Parts 30 34	グリース
+T11	Parts 84 88	グリース
+T12	Parts 54 58	グリース
+R5	Coreference Arg1:T12 Arg2:T10	
+R6	Coreference Arg1:T11 Arg2:T12	
+R7	Part-Whole Arg1:T2 Arg2:T1	
+R3	Contact Arg1:T10 Arg2:T2	
+R4	Part-Whole Arg1:T4 Arg2:T2	
+R8	Connect Arg1:T8 Arg2:T2	

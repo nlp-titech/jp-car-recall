@@ -1,0 +1,8 @@
+T1	Parts 67 74	アクセルペダル
+T3	Parts 42 48	フロアマット
+T4	Parts 85 89	アクセル
+T5	Parts 8 25	運転席フロアマット（ラバーマット）
+T8	Parts 39 41	車両
+R5	Connect Arg1:T1 Arg2:T4	
+#1	AnnotatorNotes T8	本来組み付けるべき車両ではないので関係付けせず
+R1	Coreference Arg1:T5 Arg2:T3	

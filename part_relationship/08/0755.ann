@@ -1,0 +1,16 @@
+T14	Parts 116 121	燃料タンク
+T15	Parts 15 22	インシュレータ
+T16	Parts 55 62	インシュレータ
+T17	Parts 96 103	インシュレータ
+T1	Parts 1 9	樹脂製燃料タンク
+T2	Parts 23 26	排気管
+T3	Parts 40 45	燃料タンク
+R1	Coreference Arg1:T3 Arg2:T1	
+R2	Coreference Arg1:T16 Arg2:T15	
+T4	Parts 63 66	排気管
+R3	Coreference Arg1:T4 Arg2:T2	
+R4	Coreference Arg1:T17 Arg2:T16	
+R5	Coreference Arg1:T14 Arg2:T3	
+T5	Parts 130 132	燃料
+R6	Contact Arg1:T15 Arg2:T1	
+R8	Part-Whole Arg1:T5 Arg2:T14	

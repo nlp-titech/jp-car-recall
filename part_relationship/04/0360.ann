@@ -1,0 +1,16 @@
+T10	Parts 9 18	ブレーキブースター
+T11	Parts 19 23	シリンダ
+T13	Parts 49 53	ピストン
+T14	Parts 82 91	ブレーキライニング
+T15	Parts 92 95	ドラム
+T16	Parts 112 119	ブレーキドラム
+T1	Parts 0 4	制御装置
+T2	Parts 37 42	主ブレーキ
+R1	Coreference Arg1:T16 Arg2:T15	
+R2	Part-Whole Arg1:T10 Arg2:T1	
+R3	Part-Whole Arg1:T11 Arg2:T10	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Contact Arg1:T13 Arg2:T11	
+R6	Part-Whole Arg1:T14 Arg2:T1	
+R7	Part-Whole Arg1:T15 Arg2:T1	
+R8	Part-Whole Arg1:T13 Arg2:T10	

@@ -1,0 +1,15 @@
+T1	Parts 3 14	電動パワーステアリング
+T2	Parts 15 25	コントロールユニット
+T3	Parts 30 34	制御基板
+T5	Parts 51 55	制御基板
+R1	Coreference Arg1:T5 Arg2:T3	
+T6	Parts 85 89	制御基板
+R2	Coreference Arg1:T6 Arg2:T5	
+T7	Parts 97 100	警告灯
+T8	Parts 123 127	ハンドル
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T3 Arg2:T2	
+R8	Connect Arg1:T8 Arg2:T1	
+T4	Parts 90 92	半田
+R5	Part-Whole Arg1:T4 Arg2:T6	
+R6	Connect Arg1:T2 Arg2:T7	

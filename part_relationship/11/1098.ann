@@ -1,0 +1,18 @@
+T17	Parts 58 63	運行記録計
+T18	Parts 64 69	取付け金具
+T1	Parts 0 7	メータクラスタ
+T2	Parts 9 13	電気配線
+T3	Parts 26 36	ステアリングホイール
+T4	Parts 55 57	配線
+T5	Parts 76 78	配線
+T6	Parts 110 112	配線
+T7	Parts 131 134	前照灯
+T8	Parts 143 147	エンジン
+R1	Coreference Arg1:T2 Arg2:T4	
+R2	Coreference Arg1:T4 Arg2:T5	
+R3	Coreference Arg1:T5 Arg2:T6	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T18 Arg2:T17	
+R6	Contact Arg1:T6 Arg2:T7	
+R7	Part-Whole Arg1:T17 Arg2:T1	
+R8	Contact Arg1:T8 Arg2:T6	

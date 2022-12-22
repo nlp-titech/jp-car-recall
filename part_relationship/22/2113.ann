@@ -1,0 +1,18 @@
+T6	Parts 107 108	扉
+T7	Parts 78 82	ハンドル
+T10	Parts 39 46	ハンドルベース
+T11	Parts 47 54	ハンドルカバー
+T8	Parts 69 70	扉
+T1	Parts 23 27	乗降口扉
+T2	Parts 28 34	外側ハンドル
+R1	Coreference Arg1:T7 Arg2:T2	
+R2	Coreference Arg1:T8 Arg2:T1	
+R3	Coreference Arg1:T6 Arg2:T8	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T10 Arg2:T2	
+R6	Part-Whole Arg1:T11 Arg2:T2	
+R7	Contact Arg1:T11 Arg2:T10	
+T3	Parts 19 22	助手席
+T4	Parts 13 17	運転者席
+T5	Parts 0 10	インテリジェントキー
+R8	Connect Arg1:T5 Arg2:T1	

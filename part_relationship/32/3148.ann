@@ -1,0 +1,7 @@
+T8	Parts 88 91	警音器
+T9	Parts 0 12	警音器（ホーンスイッチ）
+T10	Parts 73 80	警音器スイッチ
+T11	Parts 43 47	スイッチ
+R1	Coreference Arg1:T9 Arg2:T11	
+R2	Coreference Arg1:T11 Arg2:T10	
+R3	Connect Arg1:T8 Arg2:T10	

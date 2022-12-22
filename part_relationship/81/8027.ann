@@ -1,0 +1,16 @@
+T1	Parts 0 8	農業用薬剤散布車
+T2	Parts 9 18	ＤＰＦ温度センサー
+T3	Parts 19 21	配線
+T4	Parts 28 30	配線
+T5	Parts 43 45	配線
+T6	Parts 51 54	排気管
+T7	Parts 83 85	配線
+T8	Parts 90 93	警告灯
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T2	
+R3	Coreference Arg1:T3 Arg2:T4	
+R4	Coreference Arg1:T5 Arg2:T4	
+R5	Part-Whole Arg1:T6 Arg2:T1	
+R6	Coreference Arg1:T7 Arg2:T5	
+R7	Part-Whole Arg1:T8 Arg2:T1	
+R8	Connect Arg1:T8 Arg2:T2	

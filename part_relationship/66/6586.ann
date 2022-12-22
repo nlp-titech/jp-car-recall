@@ -1,0 +1,13 @@
+T1	Parts 0 11	電動パワーステアリング
+T2	Parts 117 126	パワーステアリング
+T3	Parts 16 22	制御ユニット
+T4	Parts 33 37	ユニット
+T7	Parts 39 41	基板
+R1	Part-Whole Arg1:T3 Arg2:T1	
+R2	Coreference Arg1:T3 Arg2:T4	
+R3	Part-Whole Arg1:T7 Arg2:T4	
+R4	Coreference Arg1:T1 Arg2:T2	
+T5	Parts 103 106	警告等
+R5	Connect Arg1:T5 Arg2:T2	
+R6	Connect Arg1:T3 Arg2:T5	
+#1	AnnotatorNotes T5	誤字「警告等」→「警告灯」？

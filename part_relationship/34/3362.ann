@@ -1,0 +1,10 @@
+T15	Parts 0 14	助手席用エアバッグブラケット
+T16	Parts 51 61	エアバッグブラケット
+T18	Parts 97 102	エアバッグ
+R1	Coreference Arg1:T15 Arg2:T16	
+T2	Parts 62 64	車体
+T3	Parts 83 85	車体
+R2	Coreference Arg1:T2 Arg2:T3	
+R4	Contact Arg1:T16 Arg2:T2	
+R3	Part-Whole Arg1:T16 Arg2:T18	
+R5	Part-Whole Arg1:T18 Arg2:T3	

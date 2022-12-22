@@ -1,0 +1,14 @@
+T19	Parts 0 11	大型トラック用エンジン
+T20	Parts 46 50	ピストン
+T21	Parts 59 63	ピストン
+T22	Parts 99 103	ピストン
+T23	Parts 115 119	エンジン
+T1	Parts 16 19	冷却水
+T3	Parts 27 38	燃料噴射制御プログラム
+R1	Coreference Arg1:T21 Arg2:T20	
+R2	Coreference Arg1:T22 Arg2:T21	
+R3	Coreference Arg1:T23 Arg2:T19	
+R7	Part-Whole Arg1:T1 Arg2:T19	
+R4	Part-Whole Arg1:T3 Arg2:T19	
+R8	Part-Whole Arg1:T22 Arg2:T23	
+R5	Contact Arg1:T1 Arg2:T23	

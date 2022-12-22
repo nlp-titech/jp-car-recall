@@ -1,0 +1,12 @@
+T1	Parts 0 6	動力伝達装置
+T2	Parts 26 31	ベアリング
+T3	Parts 59 64	ベアリング
+T5	Parts 44 48	クラッチ
+T6	Parts 80 84	クラッチ
+T7	Parts 11 25	クラッチプレッシャープレート
+R1	Coreference Arg1:T3 Arg2:T2	
+R2	Coreference Arg1:T6 Arg2:T5	
+R3	Coreference Arg1:T5 Arg2:T1	
+R4	Part-Whole Arg1:T7 Arg2:T1	
+R5	Contact Arg1:T2 Arg2:T7	
+R6	Part-Whole Arg1:T2 Arg2:T1	

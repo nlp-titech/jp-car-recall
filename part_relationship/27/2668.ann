@@ -1,0 +1,21 @@
+T14	Parts 48 52	油圧装置
+T15	Parts 53 57	鋼製継手
+T16	Parts 91 93	継手
+T17	Parts 28 32	傾斜荷台
+T3	Parts 19 23	トラクタ
+R1	Coreference Arg1:T16 Arg2:T15	
+T4	Parts 106 109	作動油
+T5	Parts 116 119	作動油
+R2	Coreference Arg1:T5 Arg2:T4	
+T6	Parts 122 128	作動油タンク
+T7	Parts 139 147	排気ガス浄化装置
+T1	Parts 0 13	傾斜荷台付平床セミトレーラ
+R3	Part-Whole Arg1:T17 Arg2:T1	
+R4	Contact Arg1:T1 Arg2:T3	
+R5	Contact Arg1:T14 Arg2:T17	
+R6	Part-Whole Arg1:T15 Arg2:T14	
+R7	Contact Arg1:T4 Arg2:T14	
+R8	Contact Arg1:T6 Arg2:T5	
+R9	Contact Arg1:T6 Arg2:T7	
+R10	Contact Arg1:T6 Arg2:T16	
+R11	Part-Whole Arg1:T7 Arg2:T3	

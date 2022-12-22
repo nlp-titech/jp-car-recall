@@ -1,0 +1,6 @@
+T4	Parts 0 5	デフロスタ
+T5	Parts 6 24	操作スイッチ（エアコン作動スイッチ）
+T1	Parts 39 45	道路運送車両
+R1	Connect Arg1:T5 Arg2:T4	
+R2	Part-Whole Arg1:T4 Arg2:T1	
+R3	Part-Whole Arg1:T5 Arg2:T1	

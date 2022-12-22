@@ -1,0 +1,16 @@
+T18	Parts 131 135	アクセル
+T19	Parts 0 8	アクセルケーブル
+T20	Parts 35 44	ケーシングキャップ
+T21	Parts 82 86	キャップ
+T22	Parts 90 98	インナーケーブル
+T23	Parts 118 126	インナーケーブル
+T1	Parts 23 27	ケーブル
+T2	Parts 28 30	車体
+R1	Coreference Arg1:T19 Arg2:T1	
+R2	Coreference Arg1:T20 Arg2:T21	
+R3	Coreference Arg1:T22 Arg2:T23	
+R4	Contact Arg1:T20 Arg2:T1	
+R5	Contact Arg1:T20 Arg2:T2	
+R6	Contact Arg1:T2 Arg2:T1	
+R7	Part-Whole Arg1:T1 Arg2:T18	
+R8	Part-Whole Arg1:T22 Arg2:T1	

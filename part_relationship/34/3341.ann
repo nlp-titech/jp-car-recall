@@ -1,0 +1,15 @@
+T10	Parts 75 85	ブレーキアシスト機構
+T11	Parts 28 36	スイッチスリーブ
+T13	Parts 93 101	スイッチスリーブ
+T14	Parts 108 115	ブレーキペダル
+T1	Parts 0 9	ブレーキブースター
+T2	Parts 10 20	ブレーキアシスト機構
+R2	Coreference Arg1:T2 Arg2:T10	
+T4	Parts 137 147	ブレーキアシスト機構
+R4	Coreference Arg1:T10 Arg2:T4	
+T5	Parts 148 155	ブレーキペダル
+R5	Coreference Arg1:T14 Arg2:T5	
+R6	Part-Whole Arg1:T2 Arg2:T1	
+R7	Part-Whole Arg1:T11 Arg2:T2	
+R8	Connect Arg1:T10 Arg2:T14	
+R1	Coreference Arg1:T11 Arg2:T13	

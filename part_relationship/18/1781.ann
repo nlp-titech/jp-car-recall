@@ -1,0 +1,12 @@
+T11	Parts 132 134	車輪
+T2	Parts 0 26	ソリッドタイヤ（空気の変わりにゴムを充填したタイヤ）
+T3	Parts 42 44	車両
+T4	Parts 49 61	前輪外側ディスクホイール
+R2	Part-Whole Arg1:T2 Arg2:T3	
+R5	Part-Whole Arg1:T11 Arg2:T3	
+T1	Parts 31 33	前輪
+T5	Parts 36 39	タイヤ
+R1	Coreference Arg1:T2 Arg2:T5	
+R6	Part-Whole Arg1:T1 Arg2:T11	
+R3	Part-Whole Arg1:T4 Arg2:T1	
+R4	Contact Arg1:T2 Arg2:T11	

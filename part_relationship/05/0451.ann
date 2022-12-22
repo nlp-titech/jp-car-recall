@@ -1,0 +1,9 @@
+T8	Parts 64 67	速度計
+T1	Parts 0 3	速度計
+T2	Parts 8 14	車速センサー
+T3	Parts 15 19	電気配線
+T4	Parts 49 53	電気配線
+R1	Coreference Arg1:T4 Arg2:T3	
+R2	Coreference Arg1:T1 Arg2:T8	
+R3	Connect Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T3 Arg2:T2	

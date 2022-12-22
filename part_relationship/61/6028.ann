@@ -1,0 +1,6 @@
+T1	Parts 22 36	後輪駆動用インプットシャフト
+T2	Parts 37 42	ベアリング
+T3	Parts 0 3	後車軸
+R2	Part-Whole Arg1:T1 Arg2:T3	
+R4	Contact Arg1:T2 Arg2:T1	
+R1	Part-Whole Arg1:T2 Arg2:T3	

@@ -1,0 +1,7 @@
+T1	Parts 11 14	ステー
+T2	Parts 47 50	ステー
+T3	Parts 69 72	ステー
+R1	Coreference Arg1:T1 Arg2:T2	
+R3	Coreference Arg1:T2 Arg2:T3	
+T4	Parts 3 6	後写鏡
+R2	Part-Whole Arg1:T1 Arg2:T4	

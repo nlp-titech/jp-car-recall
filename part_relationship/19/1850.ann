@@ -1,0 +1,8 @@
+T5	Parts 56 60	左後車輪
+T1	Parts 0 4	左後車輪
+R1	Coreference Arg1:T5 Arg2:T1	
+T2	Parts 5 11	取付けボルト
+T3	Parts 12 15	ナット
+R2	Contact Arg1:T1 Arg2:T2	
+R3	Contact Arg1:T1 Arg2:T3	
+R4	Contact Arg1:T2 Arg2:T3	

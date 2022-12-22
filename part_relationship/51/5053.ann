@@ -1,0 +1,9 @@
+T1	Parts 18 23	オーリング
+T2	Parts 53 58	オーリング
+T3	Parts 1 11	燃料ホースコネクター
+T4	Parts 37 42	コネクター
+T6	Parts 63 65	燃料
+R1	Coreference Arg1:T4 Arg2:T3	
+R2	Coreference Arg1:T2 Arg2:T1	
+R3	Contact Arg1:T1 Arg2:T3	
+R4	Contact Arg1:T6 Arg2:T2	

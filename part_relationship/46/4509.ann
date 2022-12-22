@@ -1,0 +1,13 @@
+T1	Parts 26 45	オートテンショナ（張力を維持する部品）
+T2	Parts 71 79	オートテンショナ
+T3	Parts 0 8	自動変速機装着車
+T4	Parts 17 25	補機駆動用ベルト
+T5	Parts 13 16	原動機
+T6	Parts 91 94	原動機
+T7	Parts 54 59	渦巻きバネ
+R1	Coreference Arg1:T5 Arg2:T6	
+R2	Coreference Arg1:T1 Arg2:T2	
+R3	Contact Arg1:T4 Arg2:T1	
+R5	Part-Whole Arg1:T7 Arg2:T1	
+R6	Part-Whole Arg1:T5 Arg2:T3	
+R4	Part-Whole Arg1:T4 Arg2:T5	

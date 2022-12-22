@@ -1,0 +1,12 @@
+T10	Parts 53 55	バス
+T11	Parts 61 66	冷却ファン
+T12	Parts 92 96	トラック
+T13	Parts 102 111	エンジン制御ランプ
+T1	Parts 0 7	エンジンＥＣＵ
+R3	Part-Whole Arg1:T1 Arg2:T10	
+R4	Part-Whole Arg1:T11 Arg2:T10	
+R5	Part-Whole Arg1:T13 Arg2:T12	
+R2	Part-Whole Arg1:T1 Arg2:T12	
+R6	Connect Arg1:T1 Arg2:T13	
+R1	Part-Whole Arg1:T13 Arg2:T10	
+R7	Part-Whole Arg1:T11 Arg2:T12	

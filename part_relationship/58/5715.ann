@@ -1,0 +1,26 @@
+T1	Parts 60 67	エンジンオイル
+T2	Parts 121 128	エンジンオイル
+T3	Parts 0 7	クランクケース
+T4	Parts 8 18	エアクリーナボックス
+T5	Parts 68 78	エアクリーナボックス
+T6	Parts 106 116	エアクリーナボックス
+T7	Parts 36 40	エンジン
+T8	Parts 139 143	エンジン
+T11	Parts 20 28	ブリーザーホース
+T16	Parts 129 132	原動機
+T17	Parts 48 50	車両
+T18	Parts 95 97	車両
+R1	Coreference Arg1:T7 Arg2:T16	
+R2	Coreference Arg1:T16 Arg2:T8	
+R3	Coreference Arg1:T4 Arg2:T5	
+R4	Coreference Arg1:T5 Arg2:T6	
+R5	Coreference Arg1:T17 Arg2:T18	
+R6	Coreference Arg1:T1 Arg2:T2	
+R7	Contact Arg1:T3 Arg2:T11	
+R8	Contact Arg1:T4 Arg2:T11	
+R9	Connect Arg1:T3 Arg2:T4	
+R10	Part-Whole Arg1:T7 Arg2:T17	
+R11	Part-Whole Arg1:T4 Arg2:T17	
+R12	Part-Whole Arg1:T3 Arg2:T17	
+R13	Part-Whole Arg1:T11 Arg2:T17	
+R14	Contact Arg1:T7 Arg2:T1	

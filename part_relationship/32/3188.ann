@@ -1,0 +1,11 @@
+T15	Parts 13 16	ボルト
+T16	Parts 17 20	ナット
+T17	Parts 7 10	配電盤
+T1	Parts 0 2	バス
+T2	Parts 33 37	電気配線
+T3	Parts 69 73	配線被覆
+R1	Part-Whole Arg1:T3 Arg2:T2	
+R2	Part-Whole Arg1:T2 Arg2:T17	
+R3	Part-Whole Arg1:T15 Arg2:T1	
+R4	Part-Whole Arg1:T16 Arg2:T1	
+R6	Part-Whole Arg1:T17 Arg2:T1	

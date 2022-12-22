@@ -1,0 +1,20 @@
+T18	Parts 156 160	エンジン
+T19	Parts 139 143	エンジン
+T20	Parts 123 128	タイロッド
+T21	Parts 109 119	タイロッドスプリング
+T22	Parts 72 77	スプリング
+T23	Parts 55 59	エンジン
+T24	Parts 32 42	タイロッドスプリング
+T1	Parts 0 4	エンジン
+T2	Parts 5 7	燃料
+T3	Parts 15 20	タイロッド
+R1	Coreference Arg1:T1 Arg2:T23	
+R2	Coreference Arg1:T24 Arg2:T22	
+R3	Coreference Arg1:T22 Arg2:T21	
+R4	Coreference Arg1:T3 Arg2:T20	
+R5	Coreference Arg1:T23 Arg2:T19	
+R6	Coreference Arg1:T19 Arg2:T18	
+R7	Part-Whole Arg1:T3 Arg2:T1	
+R8	Contact Arg1:T24 Arg2:T3	
+R9	Part-Whole Arg1:T24 Arg2:T1	
+R10	Contact Arg1:T2 Arg2:T1	

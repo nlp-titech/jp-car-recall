@@ -1,0 +1,12 @@
+T1	Parts 127 135	ブレーキフルード
+T2	Parts 43 58	リア・サスペンションスプリング
+T3	Parts 102 117	リア・サスペンションスプリング
+T4	Parts 3 13	リア・ブレーキホース
+T5	Parts 94 101	ブレーキホース
+T8	Parts 145 149	ブレーキ
+T9	Parts 18 20	配管
+R3	Coreference Arg1:T2 Arg2:T3	
+R4	Contact Arg1:T5 Arg2:T1	
+R5	Part-Whole Arg1:T5 Arg2:T8	
+R2	Coreference Arg1:T4 Arg2:T9	
+R1	Coreference Arg1:T9 Arg2:T5	

@@ -1,0 +1,18 @@
+T10	Parts 20 30	リヤアクスルシャフト
+T11	Parts 50 54	シャフト
+T12	Parts 55 64	リヤブレーキドラム
+T16	Parts 148 150	車輪
+T1	Parts 6 15	後軸用動力伝達装置
+R1	Coreference Arg1:T11 Arg2:T10	
+T2	Parts 69 75	ロックナット
+T3	Parts 110 116	ロックナット
+T4	Parts 138 144	ロックナット
+R2	Coreference Arg1:T4 Arg2:T3	
+R3	Coreference Arg1:T3 Arg2:T2	
+T5	Parts 0 5	４輪駆動車
+R4	Part-Whole Arg1:T1 Arg2:T5	
+R5	Part-Whole Arg1:T10 Arg2:T1	
+R6	Connect Arg1:T12 Arg2:T11	
+R7	Contact Arg1:T11 Arg2:T2	
+R8	Contact Arg1:T12 Arg2:T2	
+R9	Contact Arg1:T16 Arg2:T4	

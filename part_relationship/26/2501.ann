@@ -1,0 +1,19 @@
+T16	Parts 64 71	切替えスイッチ
+T17	Parts 102 104	端子
+T18	Parts 79 81	端子
+T19	Parts 109 113	カプラー
+T1	Parts 0 9	前照灯操作スイッチ
+T2	Parts 14 18	電気配線
+T3	Parts 41 43	配線
+R1	Coreference Arg1:T3 Arg2:T2	
+T4	Parts 60 63	前照灯
+R2	Coreference Arg1:T17 Arg2:T18	
+T5	Parts 123 128	ロービーム
+R3	Contact Arg1:T1 Arg2:T2	
+R4	Coreference Arg1:T1 Arg2:T16	
+R5	Connect Arg1:T16 Arg2:T4	
+R7	Part-Whole Arg1:T19 Arg2:T16	
+R8	Contact Arg1:T17 Arg2:T19	
+R9	Part-Whole Arg1:T5 Arg2:T4	
+#1	AnnotatorNotes T16	改善箇所説明図では操作スイッチと同じものに見える
+R10	Part-Whole Arg1:T18 Arg2:T2	

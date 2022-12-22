@@ -1,0 +1,8 @@
+T1	Parts 0 11	横滑り防止機能警告装置
+T2	Parts 16 29	インストルメントクラスター
+T3	Parts 30 37	制御プログラム
+T4	Parts 53 56	警告灯
+R2	Part-Whole Arg1:T3 Arg2:T2	
+R3	Connect Arg1:T4 Arg2:T1	
+R1	Connect Arg1:T1 Arg2:T2	
+R4	Connect Arg1:T2 Arg2:T4	

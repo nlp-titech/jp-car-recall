@@ -1,0 +1,23 @@
+T15	Parts 160 166	オイルゲージ
+T16	Parts 123 135	オイルプレッシャーホース
+T17	Parts 44 56	オイルプレッシャーホース
+T18	Parts 58 70	パワーステアリングホース
+T19	Parts 137 149	パワーステアリングホース
+T20	Parts 193 199	ステアリング
+T1	Parts 1 13	ミキサー式ＣＮＧエンジン
+T2	Parts 18 22	大型バス
+T3	Parts 23 31	アクセルケーブル
+T5	Parts 73 77	ケーブル
+T6	Parts 178 190	パワーステアリングオイル
+R1	Coreference Arg1:T3 Arg2:T5	
+R2	Coreference Arg1:T17 Arg2:T16	
+R3	Coreference Arg1:T18 Arg2:T19	
+R4	Part-Whole Arg1:T1 Arg2:T2	
+R5	Contact Arg1:T6 Arg2:T19	
+R6	Connect Arg1:T20 Arg2:T19	
+R7	Connect Arg1:T15 Arg2:T16	
+R8	Part-Whole Arg1:T20 Arg2:T2	
+R9	Part-Whole Arg1:T3 Arg2:T2	
+R10	Part-Whole Arg1:T17 Arg2:T2	
+R11	Part-Whole Arg1:T18 Arg2:T2	
+R12	Part-Whole Arg1:T15 Arg2:T2	

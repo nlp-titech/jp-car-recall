@@ -1,0 +1,14 @@
+T1	Parts 0 11	運転席側面開閉式ガラス
+T2	Parts 15 17	車体
+T3	Parts 12 14	窓枠
+T4	Parts 23 28	樹脂製部品
+T5	Parts 41 43	窓枠
+R1	Coreference Arg1:T3 Arg2:T5	
+T6	Parts 88 93	樹脂製部品
+R2	Coreference Arg1:T4 Arg2:T6	
+T7	Parts 107 109	窓枠
+R3	Coreference Arg1:T5 Arg2:T7	
+R4	Contact Arg1:T2 Arg2:T3	
+R5	Contact Arg1:T4 Arg2:T2	
+R6	Contact Arg1:T4 Arg2:T3	
+R7	Contact Arg1:T3 Arg2:T1	

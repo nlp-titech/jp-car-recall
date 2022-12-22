@@ -1,0 +1,9 @@
+T2	Parts 82 89	ブレーキペダル
+T4	Parts 94 96	後輪
+T6	Parts 29 34	油圧調整器
+T7	Parts 70 75	油圧調整器
+R1	Coreference Arg1:T6 Arg2:T7	
+R3	Connect Arg1:T6 Arg2:T4	
+T1	Parts 0 19	ＡＢＳ（アンチロックブレーキシステム）
+R4	Connect Arg1:T6 Arg2:T1	
+R2	Connect Arg1:T1 Arg2:T2	

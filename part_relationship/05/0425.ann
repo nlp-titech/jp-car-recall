@@ -1,0 +1,17 @@
+T19	Parts 6 19	前輪駆動用プロペラシャフト
+T20	Parts 24 31	リヤ側自在継手
+T21	Parts 47 51	自在継手
+T22	Parts 96 100	自在継手
+T23	Parts 105 113	プロペラシャフト
+T24	Parts 0 5	４輪駆動車
+T25	Parts 117 120	変速機
+T1	Parts 53 56	グリス
+R1	Coreference Arg1:T20 Arg2:T21	
+R2	Coreference Arg1:T22 Arg2:T21	
+T2	Parts 125 128	オイル
+R3	Coreference Arg1:T23 Arg2:T19	
+R4	Part-Whole Arg1:T19 Arg2:T24	
+R5	Part-Whole Arg1:T20 Arg2:T19	
+R6	Contact Arg1:T1 Arg2:T21	
+R7	Contact Arg1:T2 Arg2:T25	
+R8	Part-Whole Arg1:T25 Arg2:T19	

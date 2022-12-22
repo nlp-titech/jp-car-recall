@@ -1,0 +1,17 @@
+T15	Parts 25 33	バルブスプリング
+T16	Parts 91 99	バルブスプリング
+T17	Parts 104 108	エンジン
+T18	Parts 124 128	ピストン
+T19	Parts 134 138	エンジン
+T1	Parts 0 4	エンジン
+T2	Parts 5 10	吸気バルブ
+T3	Parts 12 17	排気バルブ
+R1	Coreference Arg1:T17 Arg2:T1	
+R2	Coreference Arg1:T17 Arg2:T19	
+R3	Coreference Arg1:T16 Arg2:T15	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T3 Arg2:T1	
+R6	Contact Arg1:T15 Arg2:T2	
+R9	Part-Whole Arg1:T18 Arg2:T17	
+R7	Contact Arg1:T15 Arg2:T3	
+R8	Part-Whole Arg1:T15 Arg2:T1	

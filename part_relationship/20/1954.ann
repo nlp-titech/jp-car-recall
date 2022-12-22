@@ -1,0 +1,8 @@
+T15	Parts 21 24	パイプ
+T16	Parts 0 8	プロペラシャフト
+T17	Parts 25 34	スプラインシャフト
+T19	Parts 90 98	プロペラシャフト
+R1	Coreference Arg1:T19 Arg2:T16	
+R3	Contact Arg1:T15 Arg2:T17	
+R6	Part-Whole Arg1:T15 Arg2:T16	
+R7	Part-Whole Arg1:T17 Arg2:T16	

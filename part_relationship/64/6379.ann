@@ -1,0 +1,9 @@
+T1	Parts 22 28	取付けナット
+T2	Parts 95 101	取付けナット
+T3	Parts 12 17	タイロッド
+T5	Parts 0 2	後輪
+T6	Parts 105 107	後輪
+R1	Part-Whole Arg1:T3 Arg2:T5	
+R2	Coreference Arg1:T1 Arg2:T2	
+R3	Coreference Arg1:T5 Arg2:T6	
+R4	Contact Arg1:T3 Arg2:T1	

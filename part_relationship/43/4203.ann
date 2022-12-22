@@ -1,0 +1,26 @@
+T1	Parts 42 50	ウォーターポンプ
+T2	Parts 57 68	ウォーターポンプベルト
+T3	Parts 105 113	ウォーターポンプ
+T4	Parts 0 11	マイルドハイブリッド車
+T5	Parts 14 21	ハイブリッド車
+T6	Parts 129 134	充電警告灯
+T7	Parts 168 172	エンジン
+T10	Parts 148 153	水温警告灯
+T11	Parts 26 41	ＩＳＧ（モーター機能付発電機）
+T8	Parts 101 104	ＩＳＧ
+R1	Coreference Arg1:T11 Arg2:T8	
+R2	Coreference Arg1:T1 Arg2:T3	
+R3	Contact Arg1:T1 Arg2:T2	
+R4	Part-Whole Arg1:T11 Arg2:T4	
+R5	Part-Whole Arg1:T1 Arg2:T4	
+R6	Part-Whole Arg1:T11 Arg2:T5	
+R7	Part-Whole Arg1:T1 Arg2:T5	
+R8	Part-Whole Arg1:T6 Arg2:T4	
+R9	Part-Whole Arg1:T10 Arg2:T4	
+R10	Part-Whole Arg1:T7 Arg2:T4	
+R11	Part-Whole Arg1:T6 Arg2:T5	
+R12	Part-Whole Arg1:T10 Arg2:T5	
+R13	Part-Whole Arg1:T7 Arg2:T5	
+R14	Contact Arg1:T11 Arg2:T2	
+T9	Parts 139 142	冷却水
+R17	Connect Arg1:T9 Arg2:T10	

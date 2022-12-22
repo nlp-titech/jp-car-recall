@@ -1,0 +1,5 @@
+T4	Parts 24 26	車両
+T1	Parts 0 19	ディジタル式運行記録計（自ＴＤⅡ－６）
+T2	Parts 36 47	ディジタル式運行記録計
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Part-Whole Arg1:T1 Arg2:T4	

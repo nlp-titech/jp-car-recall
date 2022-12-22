@@ -1,0 +1,11 @@
+T14	Parts 0 7	フォークリフト
+T15	Parts 8 15	メインハーネス
+T16	Parts 36 40	ハーネス
+T17	Parts 81 85	ハーネス
+T18	Parts 86 92	ヘッドガード
+T19	Parts 93 97	燃料配管
+R1	Coreference Arg1:T16 Arg2:T15	
+R2	Coreference Arg1:T17 Arg2:T16	
+R3	Part-Whole Arg1:T15 Arg2:T14	
+R4	Part-Whole Arg1:T18 Arg2:T14	
+R5	Part-Whole Arg1:T19 Arg2:T14	

@@ -1,0 +1,17 @@
+T1	Parts 0 21	クローラーギア付き電子制御機械式自動変速機
+T2	Parts 22 45	ＴＥＣＵ（トランスミッション電子制御ユニット）
+T3	Parts 50 56	リバースギア
+T4	Parts 57 69	トルク限界設定プログラム
+T5	Parts 93 97	アクセル
+T6	Parts 107 111	ブレーキ
+T7	Parts 118 122	エンジン
+T8	Parts 148 150	ギア
+T9	Parts 161 163	ギア
+R1	Coreference Arg1:T3 Arg2:T8	
+R2	Connect Arg1:T1 Arg2:T2	
+R3	Coreference Arg1:T8 Arg2:T9	
+R4	Part-Whole Arg1:T4 Arg2:T2	
+R5	Connect Arg1:T3 Arg2:T4	
+R6	Connect Arg1:T1 Arg2:T7	
+R7	Connect Arg1:T5 Arg2:T7	
+R8	Part-Whole Arg1:T3 Arg2:T1	

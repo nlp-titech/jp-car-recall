@@ -1,0 +1,3 @@
+T1	Parts 0 7	センターピラー
+T2	Parts 8 15	リインフォース
+R1	Part-Whole Arg1:T2 Arg2:T1	

@@ -1,0 +1,5 @@
+T1	Parts 0 18	フューエルポンプコントロールユニット
+T3	Parts 79 87	フューエルポンプ
+T4	Parts 106 110	エンジン
+R1	Connect Arg1:T1 Arg2:T3	
+R6	Connect Arg1:T4 Arg2:T3	

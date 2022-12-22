@@ -1,0 +1,7 @@
+T1	Parts 16 23	バックプレート
+T2	Parts 52 59	バックプレート
+T3	Parts 73 80	バックプレート
+T4	Parts 0 15	駐車ブレーキ（ドラムブレーキ）
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Coreference Arg1:T2 Arg2:T3	
+R3	Part-Whole Arg1:T1 Arg2:T4	

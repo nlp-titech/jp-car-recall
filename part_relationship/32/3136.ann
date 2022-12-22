@@ -1,0 +1,13 @@
+T15	Parts 20 36	バルブ固定用サポータースプリング
+T16	Parts 44 49	コネクター
+T17	Parts 137 147	サポータースプリング
+T18	Parts 159 167	すれ違い用前照灯
+T1	Parts 0 8	すれ違い用前照灯
+T2	Parts 9 14	アース回路
+T3	Parts 89 94	アース回路
+R2	Coreference Arg1:T15 Arg2:T17	
+R3	Coreference Arg1:T18 Arg2:T1	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T15 Arg2:T2	
+R1	Part-Whole Arg1:T16 Arg2:T2	
+R6	Coreference Arg1:T3 Arg2:T2	

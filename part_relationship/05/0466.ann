@@ -1,0 +1,10 @@
+T12	Parts 20 22	ピン
+T13	Parts 53 55	ピン
+T1	Parts 0 4	緩衝装置
+T2	Parts 9 19	トランスバースリンク
+R1	Coreference Arg1:T13 Arg2:T12	
+T3	Parts 95 98	タイヤ
+T4	Parts 105 116	ホイールハウスインナー
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Contact Arg1:T12 Arg2:T2	
+R4	Connect Arg1:T3 Arg2:T1	

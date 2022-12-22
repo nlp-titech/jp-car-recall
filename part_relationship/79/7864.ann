@@ -1,0 +1,8 @@
+T2	Parts 8 14	樹脂製カバー
+T3	Parts 59 64	取付ボルト
+T4	Parts 80 86	樹脂製カバー
+T1	Parts 0 5	フェンダー
+R1	Contact Arg1:T2 Arg2:T1	
+R2	Contact Arg1:T3 Arg2:T2	
+R3	Coreference Arg1:T4 Arg2:T2	
+R4	Connect Arg1:T3 Arg2:T1	

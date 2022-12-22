@@ -1,0 +1,13 @@
+T3	Parts 9 14	電動シート
+T4	Parts 43 48	電動シート
+T5	Parts 0 3	運転席
+T6	Parts 120 123	シート
+T7	Parts 65 68	ボルト
+T8	Parts 104 107	ボルト
+T9	Parts 5 8	助手席
+R1	Part-Whole Arg1:T3 Arg2:T5	
+R2	Part-Whole Arg1:T3 Arg2:T9	
+R3	Coreference Arg1:T3 Arg2:T4	
+R4	Contact Arg1:T4 Arg2:T7	
+R5	Coreference Arg1:T7 Arg2:T8	
+R6	Coreference Arg1:T4 Arg2:T6	

@@ -1,0 +1,13 @@
+T12	Parts 77 81	ケーブル
+T13	Parts 128 131	ワイヤ
+T14	Parts 121 125	ケーブル
+T1	Parts 0 16	トランスミッション変速用ケーブル
+T2	Parts 29 33	ケーブル
+T3	Parts 43 47	固定金具
+T4	Parts 58 62	クランプ
+R1	Coreference Arg1:T14 Arg2:T12	
+R2	Coreference Arg1:T12 Arg2:T2	
+R3	Coreference Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T13 Arg2:T14	
+R5	Coreference Arg1:T3 Arg2:T4	
+R6	Contact Arg1:T2 Arg2:T3	

@@ -1,0 +1,11 @@
+T1	Parts 9 17	アクセルケーブル
+T2	Parts 68 76	インナーケーブル
+T3	Parts 54 58	アクセル
+T4	Parts 89 93	アクセル
+T5	Parts 37 41	ケーブル
+T6	Parts 1 4	原動機
+R2	Coreference Arg1:T1 Arg2:T5	
+R5	Coreference Arg1:T3 Arg2:T4	
+R4	Part-Whole Arg1:T2 Arg2:T5	
+R1	Connect Arg1:T6 Arg2:T3	
+R3	Contact Arg1:T5 Arg2:T3	

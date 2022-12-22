@@ -1,0 +1,31 @@
+T11	Parts 141 144	後前軸
+T12	Parts 145 148	後後軸
+T14	Parts 60 67	スルーシャフト
+T15	Parts 47 57	ピニオンギヤシャフト
+T16	Parts 90 98	キャッスルナット
+T17	Parts 106 116	ピニオンギヤシャフト
+T18	Parts 119 126	スルーシャフト
+T20	Parts 68 70	ねじ
+T22	Parts 127 129	ねじ
+T1	Parts 10 13	後前軸
+T2	Parts 14 17	後後軸
+T3	Parts 19 27	プロペラシャフト
+T4	Parts 32 42	コンパニオンフランジ
+R1	Coreference Arg1:T17 Arg2:T15	
+R2	Coreference Arg1:T18 Arg2:T14	
+R3	Coreference Arg1:T22 Arg2:T20	
+R4	Coreference Arg1:T11 Arg2:T1	
+R5	Coreference Arg1:T12 Arg2:T2	
+T5	Parts 150 158	プロペラシャフト
+R6	Coreference Arg1:T5 Arg2:T3	
+T6	Parts 0 9	低床式後２軸駆動車
+R7	Part-Whole Arg1:T1 Arg2:T6	
+R8	Part-Whole Arg1:T2 Arg2:T6	
+R9	Connect Arg1:T1 Arg2:T3	
+R10	Connect Arg1:T2 Arg2:T3	
+R11	Contact Arg1:T4 Arg2:T3	
+R12	Part-Whole Arg1:T15 Arg2:T4	
+R13	Part-Whole Arg1:T14 Arg2:T4	
+R14	Part-Whole Arg1:T20 Arg2:T15	
+R15	Part-Whole Arg1:T20 Arg2:T14	
+R18	Contact Arg1:T16 Arg2:T4	

@@ -1,0 +1,13 @@
+T4	Parts 20 25	締付ボルト
+T13	Parts 58 61	ボルト
+T15	Parts 93 96	ボルト
+T16	Parts 100 104	キャリパ
+T19	Parts 105 111	リヤホイール
+T1	Parts 0 10	後輪ディスクブレーキ
+T2	Parts 11 15	キャリパ
+R1	Coreference Arg1:T13 Arg2:T4	
+R2	Coreference Arg1:T15 Arg2:T13	
+R3	Coreference Arg1:T16 Arg2:T2	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Contact Arg1:T4 Arg2:T1	
+R6	Contact Arg1:T2 Arg2:T4	

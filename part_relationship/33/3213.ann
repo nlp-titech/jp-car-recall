@@ -1,0 +1,26 @@
+T15	Parts 94 97	カバー
+T16	Parts 45 50	ブラケット
+T18	Parts 32 44	ＡＢＳコントロールバルブ
+T20	Parts 81 93	ＡＢＳコントロールバルブ
+T14	Parts 178 184	駐車ブレーキ
+T23	Parts 61 65	前軸右輪
+T24	Parts 66 80	スプリングブレーキチャンバー
+T25	Parts 115 117	右輪
+T26	Parts 142 151	ブレーキチャンバー
+T1	Parts 0 2	前軸
+T2	Parts 3 16	スプリングブレーキチャンバ
+T3	Parts 21 27	大型トラック
+R1	Coreference Arg1:T2 Arg2:T24	
+R2	Coreference Arg1:T18 Arg2:T20	
+R4	Coreference Arg1:T24 Arg2:T26	
+T5	Parts 168 170	エア
+R5	Part-Whole Arg1:T2 Arg2:T1	
+R6	Part-Whole Arg1:T1 Arg2:T3	
+R8	Part-Whole Arg1:T18 Arg2:T3	
+R9	Part-Whole Arg1:T16 Arg2:T18	
+R10	Oneway-Coreference Arg1:T1 Arg2:T23	
+R11	Part-Whole Arg1:T15 Arg2:T20	
+R12	Coreference Arg1:T23 Arg2:T25	
+R7	Part-Whole Arg1:T26 Arg2:T14	
+R13	Part-Whole Arg1:T14 Arg2:T3	
+R14	Contact Arg1:T5 Arg2:T14	

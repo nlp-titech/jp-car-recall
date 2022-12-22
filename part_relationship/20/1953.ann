@@ -1,0 +1,15 @@
+T22	Parts 0 4	緩衝装置
+T24	Parts 21 32	スプリングロアーシート
+T25	Parts 45 50	スプリング
+T26	Parts 51 57	ロアーシート
+T27	Parts 68 73	スプリング
+T28	Parts 122 127	スプリング
+R2	Coreference Arg1:T26 Arg2:T24	
+R3	Coreference Arg1:T27 Arg2:T25	
+R4	Coreference Arg1:T28 Arg2:T27	
+T2	Parts 138 141	タイヤ
+T1	Parts 5 16	前輪用コイルスプリング
+R1	Part-Whole Arg1:T1 Arg2:T22	
+R5	Contact Arg1:T24 Arg2:T1	
+R6	Coreference Arg1:T1 Arg2:T25	
+R7	Contact Arg1:T22 Arg2:T2	

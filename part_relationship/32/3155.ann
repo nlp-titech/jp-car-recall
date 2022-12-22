@@ -1,0 +1,11 @@
+T2	Parts 8 35	コンデンスタンク（冷却水内の気泡を分離するための装置）
+T1	Parts 40 44	エンジン
+T4	Parts 69 72	冷却水
+T5	Parts 87 90	冷却水
+R1	Coreference Arg1:T4 Arg2:T5	
+T6	Parts 96 99	冷却水
+R2	Coreference Arg1:T5 Arg2:T6	
+T7	Parts 0 4	エンジン
+R3	Part-Whole Arg1:T2 Arg2:T7	
+R4	Contact Arg1:T4 Arg2:T2	
+R5	Coreference Arg1:T1 Arg2:T7	

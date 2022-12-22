@@ -1,0 +1,10 @@
+T1	Parts 18 25	エアバッグ装置
+T2	Parts 61 66	エアバッグ
+T3	Parts 6 14	金属製足元パネル
+T4	Parts 0 3	助手席
+T6	Parts 26 28	配線
+T7	Parts 42 44	配線
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Contact Arg1:T1 Arg2:T6	
+R3	Coreference Arg1:T6 Arg2:T7	
+R4	Contact Arg1:T4 Arg2:T3	

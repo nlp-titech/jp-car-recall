@@ -1,0 +1,9 @@
+T1	Parts 15 26	コントロール・ユニット
+T2	Parts 0 7	前面方向指示器
+T3	Parts 27 32	プログラム
+T4	Parts 42 47	方向指示器
+T5	Parts 71 76	方向指示器
+R1	Connect Arg1:T1 Arg2:T2	
+R2	Part-Whole Arg1:T3 Arg2:T1	
+R3	Coreference Arg1:T2 Arg2:T4	
+R4	Coreference Arg1:T4 Arg2:T5	

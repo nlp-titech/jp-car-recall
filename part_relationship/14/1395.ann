@@ -1,0 +1,32 @@
+T21	Parts 0 3	制動灯
+T22	Parts 5 7	尾灯
+T23	Parts 8 10	電球
+T25	Parts 11 15	ソケット
+T28	Parts 36 38	電球
+T30	Parts 41 45	ソケット
+T31	Parts 58 62	ソケット
+T32	Parts 81 85	ソケット
+T33	Parts 107 111	ソケット
+T34	Parts 136 139	制動灯
+T40	Parts 88 91	絶縁板
+T3	Parts 114 121	圧着スプリング
+T4	Parts 128 132	ヒューズ
+T5	Parts 140 145	補助制動灯
+T6	Parts 157 160	警音器
+R1	Coreference Arg1:T21 Arg2:T34	
+R3	Coreference Arg1:T31 Arg2:T32	
+R4	Coreference Arg1:T32 Arg2:T33	
+R5	Contact Arg1:T25 Arg2:T23	
+R6	Part-Whole Arg1:T23 Arg2:T22	
+R7	Part-Whole Arg1:T23 Arg2:T21	
+R8	Part-Whole Arg1:T25 Arg2:T22	
+R9	Part-Whole Arg1:T25 Arg2:T21	
+R14	Part-Whole Arg1:T40 Arg2:T32	
+R16	Contact Arg1:T3 Arg2:T40	
+R18	Connect Arg1:T34 Arg2:T4	
+R20	Connect Arg1:T5 Arg2:T4	
+R21	Connect Arg1:T6 Arg2:T4	
+R2	Coreference Arg1:T25 Arg2:T30	
+R10	Coreference Arg1:T30 Arg2:T31	
+R11	Coreference Arg1:T23 Arg2:T28	
+R12	Part-Whole Arg1:T3 Arg2:T33	

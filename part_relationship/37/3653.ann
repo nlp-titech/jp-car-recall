@@ -1,0 +1,11 @@
+T1	Parts 10 17	シフトケーブル
+T2	Parts 72 79	シフトケーブル
+T3	Parts 88 94	シフトレバー
+T4	Parts 0 5	自動変速機
+T5	Parts 120 122	車両
+R1	Coreference Arg1:T2 Arg2:T1	
+R2	Contact Arg1:T3 Arg2:T2	
+R3	Part-Whole Arg1:T1 Arg2:T4	
+R4	Part-Whole Arg1:T4 Arg2:T5	
+R5	Part-Whole Arg1:T3 Arg2:T5	
+R6	Connect Arg1:T4 Arg2:T3	

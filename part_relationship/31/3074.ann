@@ -1,0 +1,8 @@
+T10	Parts 45 52	エンジンカバー
+T11	Parts 5 13	バキュームホース
+T12	Parts 88 91	ホース
+T1	Parts 0 4	制動装置
+T2	Parts 37 40	ホース
+R1	Coreference Arg1:T11 Arg2:T2	
+R2	Coreference Arg1:T2 Arg2:T12	
+R3	Part-Whole Arg1:T11 Arg2:T1	

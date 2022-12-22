@@ -1,0 +1,17 @@
+T1	Parts 1 7	静油圧変速機
+T2	Parts 8 13	走行モータ
+T3	Parts 18 22	油圧回路
+T5	Parts 29 30	栓
+T7	Parts 52 55	作動油
+T8	Parts 74 75	栓
+T9	Parts 105 110	オーリング
+T10	Parts 115 118	作動油
+R1	Coreference Arg1:T7 Arg2:T10	
+R2	Coreference Arg1:T5 Arg2:T8	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T3 Arg2:T2	
+R8	Contact Arg1:T7 Arg2:T3	
+R9	Contact Arg1:T9 Arg2:T8	
+R5	Contact Arg1:T5 Arg2:T3	
+R6	Part-Whole Arg1:T5 Arg2:T2	
+R7	Part-Whole Arg1:T9 Arg2:T2	

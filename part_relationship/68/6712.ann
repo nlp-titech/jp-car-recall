@@ -1,0 +1,3 @@
+T5	Parts 0 11	リヤスタビライザリンク
+T1	Parts 16 27	ボールジョイントブーツ
+R1	Contact Arg1:T1 Arg2:T5	

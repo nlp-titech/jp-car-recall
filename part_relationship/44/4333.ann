@@ -1,0 +1,13 @@
+T1	Parts 6 11	燃料タンク
+T2	Parts 68 73	燃料タンク
+T3	Parts 108 113	燃料タンク
+T4	Parts 0 5	冷蔵冷凍車
+T5	Parts 16 20	取付金具
+T6	Parts 45 49	取付金具
+T7	Parts 99 103	取付金具
+R1	Part-Whole Arg1:T1 Arg2:T4	
+R2	Contact Arg1:T5 Arg2:T1	
+R3	Coreference Arg1:T5 Arg2:T6	
+R4	Coreference Arg1:T1 Arg2:T2	
+R5	Coreference Arg1:T6 Arg2:T7	
+R6	Coreference Arg1:T2 Arg2:T3	

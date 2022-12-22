@@ -1,0 +1,11 @@
+T1	Parts 1 7	動力伝達装置
+T3	Parts 12 24	油圧ポンプ吐出側アダプタ
+T4	Parts 43 47	アダプタ
+T5	Parts 73 77	アダプタ
+T6	Parts 79 82	作動油
+R1	Coreference Arg1:T4 Arg2:T3	
+R2	Coreference Arg1:T5 Arg2:T4	
+R3	Part-Whole Arg1:T3 Arg2:T1	
+T2	Parts 35 37	機体
+R4	Part-Whole Arg1:T1 Arg2:T2	
+R5	Contact Arg1:T6 Arg2:T5	

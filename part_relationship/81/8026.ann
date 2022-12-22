@@ -1,0 +1,7 @@
+T1	Parts 0 9	左側リヤドアガラス
+T2	Parts 14 19	強化ガラス
+T3	Parts 35 38	ガラス
+T4	Parts 88 93	強化ガラス
+R1	Oneway-Coreference Arg1:T2 Arg2:T3	
+R2	Oneway-Coreference Arg1:T1 Arg2:T3	
+R3	Coreference Arg1:T2 Arg2:T4	

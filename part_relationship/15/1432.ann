@@ -1,0 +1,11 @@
+T1	Parts 0 3	排気管
+T2	Parts 5 7	触媒
+T4	Parts 35 37	触媒
+T5	Parts 38 41	排気管
+T6	Parts 70 73	排気管
+T7	Parts 95 97	触媒
+R1	Coreference Arg1:T1 Arg2:T5	
+R2	Coreference Arg1:T2 Arg2:T4	
+R3	Coreference Arg1:T4 Arg2:T7	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R6	Coreference Arg1:T6 Arg2:T5	

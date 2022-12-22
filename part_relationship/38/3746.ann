@@ -1,0 +1,8 @@
+T1	Parts 0 7	刈取脱穀作業車
+T2	Parts 40 45	駆動プーリ
+T3	Parts 81 86	駆動ベルト
+T4	Parts 8 11	脱穀機
+R1	Contact Arg1:T3 Arg2:T2	
+R4	Part-Whole Arg1:T4 Arg2:T1	
+R2	Part-Whole Arg1:T2 Arg2:T4	
+R3	Part-Whole Arg1:T3 Arg2:T4	

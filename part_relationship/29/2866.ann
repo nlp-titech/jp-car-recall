@@ -1,0 +1,18 @@
+T14	Parts 30 37	クロスメンバー
+T15	Parts 40 46	締結用ボルト
+T16	Parts 59 65	締結用ボルト
+T1	Parts 0 10	コンテナセミトレーラ
+T2	Parts 18 22	フレーム
+R1	Coreference Arg1:T16 Arg2:T15	
+T4	Parts 110 112	車枠
+T5	Parts 134 137	板ばね
+T6	Parts 142 151	ハンガーブラケット
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Contact Arg1:T14 Arg2:T2	
+R4	Contact Arg1:T15 Arg2:T14	
+R5	Coreference Arg1:T4 Arg2:T2	
+R6	Contact Arg1:T6 Arg2:T5	
+R7	Part-Whole Arg1:T5 Arg2:T1	
+R8	Part-Whole Arg1:T14 Arg2:T1	
+R9	Contact Arg1:T2 Arg2:T15	
+R11	Part-Whole Arg1:T6 Arg2:T1	

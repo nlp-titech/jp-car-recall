@@ -1,0 +1,14 @@
+T1	Parts 0 6	大型トラクタ
+T2	Parts 7 11	電気配線
+T3	Parts 26 30	エアコン
+T4	Parts 92 96	エアコン
+T5	Parts 16 24	電動キャブチルト
+T6	Parts 31 33	配線
+T7	Parts 83 91	電動キャブチルト
+R2	Part-Whole Arg1:T5 Arg2:T1	
+R3	Part-Whole Arg1:T3 Arg2:T1	
+R1	Part-Whole Arg1:T6 Arg2:T5	
+R4	Part-Whole Arg1:T6 Arg2:T3	
+R5	Coreference Arg1:T2 Arg2:T6	
+R6	Coreference Arg1:T7 Arg2:T5	
+R7	Coreference Arg1:T4 Arg2:T3	

@@ -1,0 +1,8 @@
+T1	Parts 0 6	自動変速装置
+T2	Parts 7 14	シフト・レバー
+T5	Parts 19 29	コントロール・ロッド
+T4	Parts 67 71	駐車機構
+R1	Connect Arg1:T1 Arg2:T2	
+R2	Contact Arg1:T1 Arg2:T5	
+R3	Contact Arg1:T2 Arg2:T5	
+R4	Connect Arg1:T5 Arg2:T4	

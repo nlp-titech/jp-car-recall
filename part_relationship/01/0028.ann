@@ -1,0 +1,6 @@
+T6	Parts 93 96	原動機
+T7	Parts 20 32	点火制御器（イグナイタ）
+T8	Parts 82 85	制御器
+R1	Coreference Arg1:T8 Arg2:T7	
+T1	Parts 0 13	電子制御燃料噴射装置付車両
+R2	Contact Arg1:T7 Arg2:T1	

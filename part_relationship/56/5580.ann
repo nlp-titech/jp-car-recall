@@ -1,0 +1,14 @@
+T1	Parts 33 40	アクセルペダル
+T2	Parts 101 108	アクセルペダル
+T3	Parts 0 10	運転者席フロアマット
+T4	Parts 73 79	フロアマット
+T6	Parts 117 121	エンジン
+T10	Parts 54 57	ペダル
+R1	Coreference Arg1:T10 Arg2:T1	
+R3	Coreference Arg1:T4 Arg2:T3	
+R4	Coreference Arg1:T2 Arg2:T10	
+R5	Connect Arg1:T6 Arg2:T2	
+T5	Parts 15 23	アクセルストッパ
+T7	Parts 63 67	ストッパ
+R2	Coreference Arg1:T5 Arg2:T7	
+R6	Contact Arg1:T3 Arg2:T5	

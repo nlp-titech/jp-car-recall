@@ -1,0 +1,7 @@
+T4	Parts 39 47	ボールジョイント
+T5	Parts 26 33	ナックルアーム
+T8	Parts 112 114	車軸
+T2	Parts 1 25	フロントサスペンションロアアームボールジョイント
+R2	Coreference Arg1:T2 Arg2:T4	
+R4	Contact Arg1:T5 Arg2:T4	
+R6	Part-Whole Arg1:T2 Arg2:T8	

@@ -1,0 +1,13 @@
+T16	Parts 6 16	コネクティングロッド
+T17	Parts 53 56	ボルト
+T18	Parts 72 75	ボルト
+T19	Parts 106 109	ボルト
+T20	Parts 132 135	ボルト
+T1	Parts 0 3	原動機
+T3	Parts 42 52	コネクティングロッド
+R1	Coreference Arg1:T16 Arg2:T3	
+R3	Coreference Arg1:T17 Arg2:T18	
+R4	Coreference Arg1:T18 Arg2:T19	
+R5	Coreference Arg1:T19 Arg2:T20	
+R2	Part-Whole Arg1:T16 Arg2:T1	
+R6	Contact Arg1:T17 Arg2:T3	

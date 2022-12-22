@@ -1,0 +1,5 @@
+T1	Parts 21 28	エア・スポイラ
+T2	Parts 43 50	エア・スポイラ
+T3	Parts 67 74	エア・スポイラ
+R1	Coreference Arg1:T3 Arg2:T2	
+R2	Coreference Arg1:T2 Arg2:T1	

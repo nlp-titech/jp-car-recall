@@ -1,0 +1,17 @@
+T10	Parts 53 56	ホース
+T12	Parts 92 100	フロントボックス
+T1	Parts 0 4	制動装置
+T2	Parts 10 21	フロントブレーキホース
+T3	Parts 25 40	フロントブレーキホースNo.2
+T4	Parts 79 90	フロントブレーキホース
+T5	Parts 138 143	ブレーキ液
+T6	Parts 147 149	前輪
+R1	Coreference Arg1:T2 Arg2:T4	
+T7	Parts 70 74	ハンドル
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T3 Arg2:T1	
+R4	Part-Whole Arg1:T10 Arg2:T2	
+R5	Part-Whole Arg1:T10 Arg2:T3	
+R6	Part-Whole Arg1:T1 Arg2:T7	
+R7	Contact Arg1:T4 Arg2:T5	
+R8	Connect Arg1:T1 Arg2:T6	

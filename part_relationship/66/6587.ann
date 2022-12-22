@@ -1,0 +1,20 @@
+T1	Parts 0 15	マニュアルトランスミッション車
+T2	Parts 127 133	セルモーター
+T4	Parts 25 48	誤発進防止機構（クラッチ・スタート・システム）
+T5	Parts 49 53	スイッチ
+T6	Parts 69 73	スイッチ
+T7	Parts 94 98	スイッチ
+T8	Parts 16 20	始動装置
+T9	Parts 114 118	変速ギヤ
+T10	Parts 156 158	車両
+R1	Part-Whole Arg1:T8 Arg2:T1	
+R2	Connect Arg1:T5 Arg2:T4	
+R3	Coreference Arg1:T5 Arg2:T6	
+R4	Coreference Arg1:T6 Arg2:T7	
+R5	Part-Whole Arg1:T4 Arg2:T8	
+R6	Coreference Arg1:T1 Arg2:T10	
+R7	Part-Whole Arg1:T2 Arg2:T8	
+R8	Contact Arg1:T9 Arg2:T2	
+T3	Parts 138 145	誤発進防止機構
+R9	Coreference Arg1:T4 Arg2:T3	
+R10	Part-Whole Arg1:T5 Arg2:T1	

@@ -1,0 +1,11 @@
+T1	Parts 5 16	ブローバイガス還元装置
+T3	Parts 0 4	エンジン
+T4	Parts 21 32	ブローバイガスヒーター
+T5	Parts 99 106	電熱線ヒーター
+T6	Parts 134 138	ヒーター
+T10	Parts 114 117	警告灯
+R1	Coreference Arg1:T6 Arg2:T5	
+R2	Coreference Arg1:T5 Arg2:T4	
+R6	Part-Whole Arg1:T4 Arg2:T1	
+R7	Part-Whole Arg1:T1 Arg2:T3	
+R3	Connect Arg1:T5 Arg2:T10	

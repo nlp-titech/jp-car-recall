@@ -1,0 +1,9 @@
+T1	Parts 55 64	エアー抜き用プラグ
+T12	Parts 99 102	プラグ
+T3	Parts 0 7	動力用油圧配管
+T4	Parts 20 23	作動油
+R1	Coreference Arg1:T12 Arg2:T1	
+T6	Parts 104 107	作動油
+R2	Coreference Arg1:T6 Arg2:T4	
+R3	Contact Arg1:T4 Arg2:T3	
+R4	Part-Whole Arg1:T1 Arg2:T3	

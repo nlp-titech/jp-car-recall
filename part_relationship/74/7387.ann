@@ -1,0 +1,14 @@
+T1	Parts 3 13	ポールトラクタ仕様車
+T2	Parts 14 18	制動装置
+T3	Parts 38 44	カップリング
+T4	Parts 23 31	ポールトレーラー
+T5	Parts 63 69	ブレーキ系統
+T6	Parts 89 94	トレーラー
+T7	Parts 123 127	制動装置
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T4 Arg2:T1	
+R3	Connect Arg1:T3 Arg2:T4	
+R4	Part-Whole Arg1:T5 Arg2:T2	
+R5	Coreference Arg1:T6 Arg2:T4	
+R6	Coreference Arg1:T7 Arg2:T2	
+R7	Part-Whole Arg1:T3 Arg2:T2	

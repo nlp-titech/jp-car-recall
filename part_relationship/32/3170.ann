@@ -1,0 +1,5 @@
+T1	Parts 0 6	動力伝達装置
+T3	Parts 15 26	走行制御系コントローラ
+T4	Parts 27 32	プログラム
+R1	Part-Whole Arg1:T4 Arg2:T3	
+R3	Connect Arg1:T3 Arg2:T1	

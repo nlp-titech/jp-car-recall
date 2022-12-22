@@ -1,0 +1,20 @@
+T18	Parts 141 145	エンジン
+T19	Parts 130 132	ギヤ
+T20	Parts 122 125	ボルト
+T21	Parts 94 96	ギヤ
+T22	Parts 82 85	ボルト
+T23	Parts 49 51	ギヤ
+T24	Parts 30 33	ボルト
+T1	Parts 1 4	原動機
+T2	Parts 5 11	カムシャフト
+T3	Parts 16 25	ヘッドアイドラギヤ
+R1	Coreference Arg1:T3 Arg2:T23	
+R2	Coreference Arg1:T24 Arg2:T22	
+R3	Coreference Arg1:T22 Arg2:T20	
+R4	Coreference Arg1:T21 Arg2:T19	
+R5	Part-Whole Arg1:T2 Arg2:T1	
+R6	Connect Arg1:T3 Arg2:T2	
+R7	Contact Arg1:T24 Arg2:T3	
+R8	Coreference Arg1:T21 Arg2:T23	
+R9	Coreference Arg1:T18 Arg2:T1	
+R10	Part-Whole Arg1:T3 Arg2:T1	

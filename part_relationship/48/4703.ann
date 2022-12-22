@@ -1,0 +1,12 @@
+T1	Parts 44 53	ステアリングコラム
+T2	Parts 35 43	かじ取りハンドル
+T3	Parts 0 6	盗難防止装置
+T4	Parts 7 11	電気配線
+T5	Parts 18 22	電気配線
+T6	Parts 82 86	電気配線
+T7	Parts 104 107	原動機
+R1	Coreference Arg1:T4 Arg2:T5	
+R2	Coreference Arg1:T5 Arg2:T6	
+R4	Contact Arg1:T3 Arg2:T4	
+R5	Contact Arg1:T2 Arg2:T1	
+R3	Connect Arg1:T6 Arg2:T7	

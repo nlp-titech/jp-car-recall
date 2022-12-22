@@ -1,0 +1,13 @@
+T18	Parts 11 20	前後進切替えレバー
+T19	Parts 33 42	ベアリング保持金具
+T20	Parts 115 119	保持金具
+T21	Parts 132 136	保持金具
+T1	Parts 0 6	動力伝達装置
+T2	Parts 21 26	リンク機構
+R3	Coreference Arg1:T21 Arg2:T20	
+R4	Part-Whole Arg1:T18 Arg2:T1	
+R5	Part-Whole Arg1:T2 Arg2:T18	
+R6	Part-Whole Arg1:T19 Arg2:T2	
+T3	Parts 70 79	保持金具取付ボルト
+R1	Coreference Arg1:T19 Arg2:T20	
+R2	Contact Arg1:T3 Arg2:T19	

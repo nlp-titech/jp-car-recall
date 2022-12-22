@@ -1,0 +1,20 @@
+T12	Parts 124 129	トラニオン
+T13	Parts 29 35	リヤアクスル
+T14	Parts 36 47	トラニオン固定プレート
+T15	Parts 53 56	ボルト
+T16	Parts 57 61	ワッシャ
+T17	Parts 99 102	ボルト
+T18	Parts 110 113	ボルト
+T1	Parts 0 7	ショベルローダ
+R1	Coreference Arg1:T15 Arg2:T17	
+R2	Coreference Arg1:T17 Arg2:T18	
+T3	Parts 130 134	フレーム
+R3	Contact Arg1:T16 Arg2:T15	
+R4	Contact Arg1:T15 Arg2:T14	
+R5	Contact Arg1:T16 Arg2:T14	
+R7	Contact Arg1:T12 Arg2:T14	
+R9	Contact Arg1:T3 Arg2:T12	
+R10	Part-Whole Arg1:T13 Arg2:T1	
+R12	Part-Whole Arg1:T12 Arg2:T1	
+R13	Part-Whole Arg1:T3 Arg2:T1	
+R6	Contact Arg1:T13 Arg2:T14	

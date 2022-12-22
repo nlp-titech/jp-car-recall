@@ -1,0 +1,19 @@
+T1	Parts 7 13	動力伝達装置
+T2	Parts 18 21	推進軸
+T5	Parts 59 61	ねじ
+T6	Parts 73 75	ねじ
+T7	Parts 97 100	推進軸
+T8	Parts 101 104	駆動軸
+R1	Coreference Arg1:T7 Arg2:T2	
+T10	Parts 0 6	後２軸駆動車
+R3	Part-Whole Arg1:T1 Arg2:T10	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+T3	Parts 29 51	駆動軸側入力軸(インターデフケースアウター)
+R2	Contact Arg1:T3 Arg2:T2	
+R7	Coreference Arg1:T6 Arg2:T5	
+R5	Part-Whole Arg1:T8 Arg2:T1	
+R6	Connect Arg1:T7 Arg2:T8	
+R8	Part-Whole Arg1:T3 Arg2:T1	
+R9	Contact Arg1:T3 Arg2:T8	
+R10	Contact Arg1:T3 Arg2:T5	
+R11	Part-Whole Arg1:T5 Arg2:T1	

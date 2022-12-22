@@ -1,0 +1,15 @@
+T2	Parts 0 22	ＤＰＦ（ディーゼル粒子状物質除去装置）付き車
+T3	Parts 23 34	原動機制御コンピュータ
+T4	Parts 116 118	燃料
+T5	Parts 119 126	エンジンオイル
+T6	Parts 131 138	エンジンオイル
+R1	Coreference Arg1:T6 Arg2:T5	
+T8	Parts 163 170	エンジンオイル
+R2	Coreference Arg1:T8 Arg2:T6	
+T9	Parts 182 186	エンジン
+R3	Connect Arg1:T3 Arg2:T9	
+R5	Part-Whole Arg1:T9 Arg2:T2	
+R6	Part-Whole Arg1:T3 Arg2:T2	
+R7	Contact Arg1:T8 Arg2:T9	
+R10	Part-Whole Arg1:T4 Arg2:T2	
+R4	Contact Arg1:T4 Arg2:T9	

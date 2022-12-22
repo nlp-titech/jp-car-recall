@@ -1,0 +1,23 @@
+T1	Parts 10 29	ステアリングシリンダ位置決め用平行ピン
+T2	Parts 40 50	ステアリングシリンダ
+T4	Parts 140 147	ピストンシール
+T6	Parts 0 5	かじ取装置
+T9	Parts 76 84	シリンダチューブ
+T10	Parts 89 97	シリンダチューブ
+T11	Parts 128 138	ステアリングチューブ
+T12	Parts 113 117	ハンドル
+T13	Parts 162 166	ハンドル
+T14	Parts 51 62	フロントアクスルケース
+T16	Parts 71 75	平行ピン
+R1	Coreference Arg1:T16 Arg2:T1	
+R2	Coreference Arg1:T10 Arg2:T9	
+R3	Contact Arg1:T16 Arg2:T14	
+R4	Part-Whole Arg1:T4 Arg2:T11	
+R5	Part-Whole Arg1:T11 Arg2:T2	
+R6	Contact Arg1:T14 Arg2:T2	
+R7	Contact Arg1:T16 Arg2:T2	
+R8	Coreference Arg1:T13 Arg2:T12	
+R9	Connect Arg1:T12 Arg2:T6	
+R10	Part-Whole Arg1:T2 Arg2:T6	
+R11	Part-Whole Arg1:T14 Arg2:T6	
+R12	Part-Whole Arg1:T9 Arg2:T2	

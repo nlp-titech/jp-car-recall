@@ -1,0 +1,13 @@
+T1	Parts 1 11	排出ガス発散防止装置
+T3	Parts 44 48	センサー
+T4	Parts 76 80	センサー
+T7	Parts 16 33	排出ガス再循環装置（ＥＧＲ）バルブ
+T8	Parts 91 94	バルブ
+T9	Parts 104 110	原動機警告灯
+T11	Parts 124 127	原動機
+R2	Connect Arg1:T3 Arg2:T7	
+R3	Part-Whole Arg1:T3 Arg2:T1	
+R5	Coreference Arg1:T7 Arg2:T8	
+R6	Coreference Arg1:T3 Arg2:T4	
+R7	Connect Arg1:T1 Arg2:T9	
+R1	Connect Arg1:T9 Arg2:T11	

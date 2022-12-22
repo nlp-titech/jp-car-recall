@@ -1,0 +1,6 @@
+T1	Parts 0 4	電気装置
+T5	Parts 93 96	制動灯
+T2	Parts 9 17	制動灯用スイッチ
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R4	Connect Arg1:T5 Arg2:T2	
+R3	Part-Whole Arg1:T5 Arg2:T1	

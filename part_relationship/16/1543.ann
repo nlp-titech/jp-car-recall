@@ -1,0 +1,30 @@
+T17	Parts 35 38	保護蓋
+T18	Parts 72 75	保護蓋
+T19	Parts 80 83	保護蓋
+T20	Parts 153 156	保護蓋
+T21	Parts 127 135	絶縁ゴムキャップ
+T22	Parts 146 150	電気配線
+T23	Parts 84 88	電気配線
+T24	Parts 91 99	絶縁ゴムキャップ
+T25	Parts 12 30	電圧変換装置（ＤＣ－ＤＣコンバータ）
+T1	Parts 0 7	ハイブリッド車
+T2	Parts 51 56	後部シート
+R1	Coreference Arg1:T18 Arg2:T17	
+R2	Coreference Arg1:T19 Arg2:T18	
+R3	Coreference Arg1:T21 Arg2:T24	
+R4	Coreference Arg1:T22 Arg2:T23	
+R5	Coreference Arg1:T20 Arg2:T19	
+T3	Parts 167 174	メインヒューズ
+T4	Parts 178 182	エンジン
+R6	Part-Whole Arg1:T25 Arg2:T1	
+R7	Part-Whole Arg1:T17 Arg2:T25	
+R8	Contact Arg1:T2 Arg2:T17	
+R9	Part-Whole Arg1:T24 Arg2:T23	
+R10	Connect Arg1:T3 Arg2:T22	
+R12	Part-Whole Arg1:T2 Arg2:T1	
+R13	Part-Whole Arg1:T23 Arg2:T1	
+R15	Part-Whole Arg1:T3 Arg2:T1	
+R16	Part-Whole Arg1:T4 Arg2:T1	
+R11	Connect Arg1:T3 Arg2:T4	
+T5	Parts 57 61	背もたれ
+R17	Part-Whole Arg1:T5 Arg2:T2	

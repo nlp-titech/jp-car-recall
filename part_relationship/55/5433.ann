@@ -1,0 +1,10 @@
+T1	Parts 22 29	制御プログラム
+T4	Parts 65 69	ブレーキ
+T6	Parts 76 79	ＡＢＳ
+T8	Parts 37 39	車両
+T2	Parts 0 21	ＡＢＳ（アンチロック・ブレーキ・システム）
+R1	Part-Whole Arg1:T1 Arg2:T2	
+R2	Part-Whole Arg1:T2 Arg2:T8	
+R3	Coreference Arg1:T2 Arg2:T6	
+R4	Part-Whole Arg1:T4 Arg2:T8	
+R5	Connect Arg1:T4 Arg2:T6	

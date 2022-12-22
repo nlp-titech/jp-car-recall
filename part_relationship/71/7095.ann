@@ -1,0 +1,19 @@
+T1	Parts 166 172	駐車ブレーキ
+T2	Parts 71 75	シャフト
+T3	Parts 122 126	シャフト
+T4	Parts 13 45	パーキングロック（Ｐレンジにした際に車輪を機械的に固定するもの）
+T5	Parts 98 106	パーキングロック
+T6	Parts 137 145	パーキングロック
+T7	Parts 0 3	減速機
+T8	Parts 181 183	車両
+T12	Parts 62 70	パーキングポール
+R2	Part-Whole Arg1:T2 Arg2:T12	
+R3	Part-Whole Arg1:T4 Arg2:T7	
+R4	Part-Whole Arg1:T12 Arg2:T4	
+R5	Coreference Arg1:T4 Arg2:T5	
+R6	Coreference Arg1:T2 Arg2:T3	
+R7	Part-Whole Arg1:T7 Arg2:T8	
+R8	Coreference Arg1:T5 Arg2:T6	
+T10	Parts 113 121	パーキングポール
+R9	Coreference Arg1:T12 Arg2:T10	
+R1	Part-Whole Arg1:T1 Arg2:T8	

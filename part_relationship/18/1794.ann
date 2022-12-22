@@ -1,0 +1,15 @@
+T20	Parts 114 118	センサー
+T1	Parts 0 8	スロットルボディ
+T2	Parts 15 29	スロットルポジションセンサー
+T3	Parts 34 37	ケース
+T4	Parts 38 41	カバー
+T6	Parts 61 65	センサー
+R1	Coreference Arg1:T2 Arg2:T6	
+R3	Coreference Arg1:T6 Arg2:T20	
+T10	Parts 156 160	排気ガス
+T11	Parts 172 175	原動機
+R6	Contact Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T2	
+R4	Part-Whole Arg1:T4 Arg2:T2	
+R5	Contact Arg1:T3 Arg2:T4	
+R7	Connect Arg1:T1 Arg2:T11	

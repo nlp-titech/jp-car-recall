@@ -1,0 +1,9 @@
+T1	Parts 2 10	走行用油圧ホース
+T2	Parts 21 31	掘削作業装置用ホース
+T3	Parts 72 75	ホース
+T4	Parts 80 83	作動油
+T5	Parts 63 65	車体
+R4	Contact Arg1:T3 Arg2:T4	
+R1	Contact Arg1:T5 Arg2:T3	
+R2	Coreference Arg1:T1 Arg2:T3	
+R3	Contact Arg1:T2 Arg2:T5	

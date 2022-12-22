@@ -1,0 +1,11 @@
+T14	Parts 27 31	エンジン
+T15	Parts 90 94	クラッチ
+T16	Parts 0 8	クラッチ倍力装置
+T17	Parts 9 14	取付け金具
+T18	Parts 44 46	金具
+T19	Parts 83 85	金具
+R1	Coreference Arg1:T17 Arg2:T18	
+R2	Coreference Arg1:T18 Arg2:T19	
+R3	Contact Arg1:T17 Arg2:T16	
+R5	Connect Arg1:T15 Arg2:T14	
+R4	Connect Arg1:T16 Arg2:T15	

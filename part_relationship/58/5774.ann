@@ -1,0 +1,11 @@
+T1	Parts 11 18	ホイールボルト
+T2	Parts 57 64	ホイールボルト
+T3	Parts 0 6	フロントハブ
+T4	Parts 44 47	ボルト
+T5	Parts 101 103	ハブ
+T6	Parts 113 115	ハブ
+R1	Coreference Arg1:T3 Arg2:T5	
+R2	Coreference Arg1:T5 Arg2:T6	
+R3	Coreference Arg1:T1 Arg2:T4	
+R4	Coreference Arg1:T4 Arg2:T2	
+R5	Contact Arg1:T3 Arg2:T1	

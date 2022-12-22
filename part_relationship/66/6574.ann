@@ -1,0 +1,5 @@
+T2	Parts 44 50	シートベルト
+T3	Parts 17 30	メーターパネル制御ユニット
+T5	Parts 0 5	座席ベルト
+R2	Coreference Arg1:T5 Arg2:T2	
+R3	Connect Arg1:T3 Arg2:T5	

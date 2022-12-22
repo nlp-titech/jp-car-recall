@@ -1,0 +1,16 @@
+T16	Parts 23 25	車体
+T17	Parts 28 32	フレーム
+T18	Parts 51 55	フレーム
+T19	Parts 89 93	フレーム
+T20	Parts 139 143	フレーム
+T1	Parts 0 11	大型低床ＣＮＧ路線バス
+T2	Parts 16 18	車両
+T3	Parts 33 39	ＣＮＧボンベ
+R1	Coreference Arg1:T17 Arg2:T18	
+R2	Coreference Arg1:T18 Arg2:T19	
+R3	Coreference Arg1:T19 Arg2:T20	
+R4	Coreference Arg1:T2 Arg2:T1	
+R5	Contact Arg1:T3 Arg2:T17	
+R6	Part-Whole Arg1:T17 Arg2:T16	
+R7	Part-Whole Arg1:T16 Arg2:T2	
+R8	Part-Whole Arg1:T3 Arg2:T2	

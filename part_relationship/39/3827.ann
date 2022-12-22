@@ -1,0 +1,8 @@
+T1	Parts 0 9	大型トラック・バス
+T2	Parts 20 27	オルタネーター
+T3	Parts 44 51	オルタネーター
+T4	Parts 60 65	バッテリー
+R1	Coreference Arg1:T3 Arg2:T2	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Connect Arg1:T4 Arg2:T3	
+R4	Part-Whole Arg1:T4 Arg2:T1	

@@ -1,0 +1,11 @@
+T1	Parts 15 20	エレメント
+T2	Parts 59 64	エレメント
+T3	Parts 75 80	エレメント
+T4	Parts 7 14	シートヒーター
+T5	Parts 23 27	電気配線
+T9	Parts 0 2	前席
+R2	Part-Whole Arg1:T1 Arg2:T4	
+R3	Contact Arg1:T1 Arg2:T5	
+R4	Part-Whole Arg1:T4 Arg2:T9	
+R5	Coreference Arg1:T5 Arg2:T2	
+R6	Coreference Arg1:T2 Arg2:T3	

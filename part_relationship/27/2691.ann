@@ -1,0 +1,16 @@
+T10	Parts 18 22	福祉車両
+T11	Parts 4 12	介護用回転シート
+T12	Parts 0 3	助手席
+T13	Parts 47 50	シート
+T14	Parts 54 64	シートベルトバックル
+T15	Parts 89 93	バックル
+T17	Parts 80 86	シートベルト
+R1	Coreference Arg1:T13 Arg2:T11	
+R2	Coreference Arg1:T15 Arg2:T14	
+R3	Contact Arg1:T11 Arg2:T12	
+R4	Part-Whole Arg1:T12 Arg2:T10	
+R5	Contact Arg1:T14 Arg2:T13	
+R6	Contact Arg1:T17 Arg2:T15	
+R7	Part-Whole Arg1:T13 Arg2:T10	
+R8	Part-Whole Arg1:T14 Arg2:T10	
+R9	Part-Whole Arg1:T17 Arg2:T10	

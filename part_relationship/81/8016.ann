@@ -1,0 +1,17 @@
+T1	Parts 0 5	手動変速機
+T2	Parts 10 12	車両
+T3	Parts 17 29	エンジン制御コンピュータ
+T4	Parts 30 41	点火時期制御プログラム
+T5	Parts 49 54	スロットル
+T6	Parts 57 64	クラッチレバー
+T7	Parts 104 108	エンジン
+R1	Part-Whole Arg1:T1 Arg2:T2	
+R2	Part-Whole Arg1:T3 Arg2:T2	
+R3	Part-Whole Arg1:T4 Arg2:T3	
+R4	Part-Whole Arg1:T5 Arg2:T2	
+R5	Part-Whole Arg1:T6 Arg2:T2	
+R6	Connect Arg1:T5 Arg2:T6	
+R7	Connect Arg1:T5 Arg2:T7	
+R8	Connect Arg1:T6 Arg2:T7	
+R9	Connect Arg1:T3 Arg2:T7	
+R10	Connect Arg1:T1 Arg2:T7	

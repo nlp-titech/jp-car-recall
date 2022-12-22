@@ -1,0 +1,8 @@
+T2	Parts 74 79	方向指示器
+T3	Parts 104 109	方向指示器
+T4	Parts 65 69	エンジン
+T5	Parts 0 3	電装品
+T6	Parts 9 40	コントロールモジュール（セントラルエレクトロニックモジュール）
+R2	Connect Arg1:T5 Arg2:T6	
+R3	Coreference Arg1:T2 Arg2:T3	
+R4	Coreference Arg1:T5 Arg2:T2	

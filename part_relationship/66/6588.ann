@@ -1,0 +1,16 @@
+T1	Parts 4 17	シートベルト付二人掛け座席
+T2	Parts 96 102	シートベルト
+T3	Parts 37 46	リクライニング機構
+T4	Parts 47 51	ケーブル
+T8	Parts 24 26	座席
+T9	Parts 75 77	座席
+R1	Coreference Arg1:T1 Arg2:T8	
+R2	Part-Whole Arg1:T4 Arg2:T3	
+R3	Part-Whole Arg1:T3 Arg2:T8	
+R4	Coreference Arg1:T8 Arg2:T9	
+R5	Contact Arg1:T2 Arg2:T9	
+T5	Parts 78 82	背もたれ
+R6	Part-Whole Arg1:T5 Arg2:T9	
+T6	Parts 106 110	背もたれ
+R7	Coreference Arg1:T5 Arg2:T6	
+R8	Contact Arg1:T5 Arg2:T3	

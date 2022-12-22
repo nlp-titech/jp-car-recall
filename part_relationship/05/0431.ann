@@ -1,0 +1,9 @@
+T13	Parts 17 21	スイッチ
+T15	Parts 38 45	すれ違い用端子
+T18	Parts 90 98	すれ違い用前照灯
+T1	Parts 1 10	前照灯切替スイッチ
+R1	Coreference Arg1:T1 Arg2:T13	
+R5	Connect Arg1:T15 Arg2:T18	
+T2	Parts 22 24	端子
+R2	Part-Whole Arg1:T2 Arg2:T13	
+R3	Oneway-Coreference Arg1:T2 Arg2:T15	

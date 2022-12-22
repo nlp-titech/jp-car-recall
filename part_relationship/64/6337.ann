@@ -1,0 +1,7 @@
+T1	Parts 19 27	ヒューズボックス
+T2	Parts 32 40	ヒューズボックス
+T4	Parts 0 11	助手席グローブボックス
+R1	Coreference Arg1:T1 Arg2:T2	
+T3	Parts 42 49	電源コネクター
+R2	Contact Arg1:T2 Arg2:T3	
+R4	Contact Arg1:T4 Arg2:T1	

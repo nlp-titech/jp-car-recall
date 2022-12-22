@@ -1,0 +1,19 @@
+T2	Parts 15 22	作動用ケーブル
+T3	Parts 23 31	外れ防止用フック
+T4	Parts 40 47	アクセルペダル
+T5	Parts 56 66	オートクルーズレバー
+T6	Parts 70 77	作動用ケーブル
+T7	Parts 95 102	作動用ケーブル
+T8	Parts 105 108	フック
+T9	Parts 117 124	アクセルペダル
+T10	Parts 129 133	エンジン
+R1	Coreference Arg1:T9 Arg2:T4	
+R2	Coreference Arg1:T7 Arg2:T6	
+R3	Coreference Arg1:T6 Arg2:T2	
+R4	Coreference Arg1:T8 Arg2:T3	
+T1	Parts 0 10	オートクルーズ装着車
+R5	Part-Whole Arg1:T2 Arg2:T1	
+R6	Part-Whole Arg1:T3 Arg2:T2	
+R7	Part-Whole Arg1:T4 Arg2:T1	
+R8	Part-Whole Arg1:T5 Arg2:T1	
+R9	Connect Arg1:T9 Arg2:T10	

@@ -1,0 +1,23 @@
+T12	Parts 23 31	補強クロスメンバ
+T11	Parts 35 39	Ｖロッド
+T14	Parts 56 60	Ｖロッド
+T15	Parts 32 34	車両
+T16	Parts 63 67	フレーム
+T17	Parts 80 82	架台
+T18	Parts 85 93	補強クロスメンバ
+T19	Parts 106 114	補強クロスメンバ
+T20	Parts 116 120	Ｖロッド
+T1	Parts 0 4	トラクタ
+T2	Parts 5 13	カプラ嵩上げ架台
+T3	Parts 18 20	架台
+R1	Coreference Arg1:T14 Arg2:T11	
+R2	Coreference Arg1:T3 Arg2:T17	
+R3	Coreference Arg1:T18 Arg2:T12	
+R4	Coreference Arg1:T19 Arg2:T18	
+R5	Coreference Arg1:T20 Arg2:T14	
+R6	Part-Whole Arg1:T2 Arg2:T1	
+R11	Coreference Arg1:T2 Arg2:T3	
+R7	Coreference Arg1:T1 Arg2:T15	
+R8	Part-Whole Arg1:T12 Arg2:T3	
+R9	Part-Whole Arg1:T11 Arg2:T15	
+R10	Part-Whole Arg1:T16 Arg2:T15	

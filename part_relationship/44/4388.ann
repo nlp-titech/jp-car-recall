@@ -1,0 +1,10 @@
+T3	Parts 12 22	スロットルリンケージ
+T4	Parts 80 84	エンジン
+T7	Parts 0 11	自動定速走行装置付車両
+R1	Part-Whole Arg1:T3 Arg2:T7	
+R2	Part-Whole Arg1:T4 Arg2:T7	
+R3	Connect Arg1:T3 Arg2:T4	
+T1	Parts 31 43	継手（ボールジョイント）
+T2	Parts 58 60	継手
+R4	Coreference Arg1:T1 Arg2:T2	
+R5	Part-Whole Arg1:T1 Arg2:T3	

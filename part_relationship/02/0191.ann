@@ -1,0 +1,18 @@
+T9	Parts 62 73	チャイルドプルーフ装置
+T13	Parts 93 99	ドア・ラッチ
+T12	Parts 14 21	ドアロック装置
+T14	Parts 0 9	スライド式リヤドア
+T18	Parts 83 85	ドア
+T19	Parts 127 129	ドア
+T20	Parts 22 25	リンク
+T23	Parts 45 47	ドア
+T1	Parts 38 44	室内ハンドル
+R1	Coreference Arg1:T23 Arg2:T14	
+R2	Coreference Arg1:T18 Arg2:T23	
+R3	Coreference Arg1:T19 Arg2:T18	
+R4	Part-Whole Arg1:T20 Arg2:T12	
+R5	Part-Whole Arg1:T12 Arg2:T14	
+R6	Part-Whole Arg1:T1 Arg2:T14	
+R7	Part-Whole Arg1:T9 Arg2:T14	
+R8	Part-Whole Arg1:T13 Arg2:T18	
+R9	Connect Arg1:T1 Arg2:T23	

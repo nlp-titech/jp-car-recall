@@ -1,0 +1,15 @@
+T1	Parts 83 93	エアコンディショナー
+T2	Parts 9 15	点火スイッチ
+T3	Parts 46 50	スイッチ
+T4	Parts 60 64	スイッチ
+T5	Parts 4 8	始動装置
+T6	Parts 0 3	原動機
+T7	Parts 78 81	前照灯
+T8	Parts 73 77	窓拭き機
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Coreference Arg1:T3 Arg2:T4	
+R3	Connect Arg1:T6 Arg2:T5	
+R4	Part-Whole Arg1:T2 Arg2:T5	
+R5	Connect Arg1:T4 Arg2:T8	
+R6	Connect Arg1:T4 Arg2:T7	
+R7	Connect Arg1:T4 Arg2:T1	

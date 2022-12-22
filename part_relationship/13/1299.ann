@@ -1,0 +1,16 @@
+T16	Parts 44 48	アクスル
+T17	Parts 0 12	リヤアクスル揺動ストッパ
+T18	Parts 37 43	揺動ストッパ
+T19	Parts 68 74	揺動ストッパ
+T20	Parts 110 114	ストッパ
+T21	Parts 90 94	ハンドル
+T22	Parts 56 62	ステアリング
+T1	Parts 115 118	タイヤ
+T2	Parts 130 133	タイヤ
+R1	Coreference Arg1:T17 Arg2:T18	
+R2	Coreference Arg1:T18 Arg2:T19	
+R3	Coreference Arg1:T19 Arg2:T20	
+R4	Coreference Arg1:T1 Arg2:T2	
+R5	Coreference Arg1:T21 Arg2:T22	
+R6	Contact Arg1:T16 Arg2:T1	
+#1	AnnotatorNotes R5	ステアリングと同意と考える

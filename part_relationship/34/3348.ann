@@ -1,0 +1,9 @@
+T12	Parts 93 97	ブレーキ
+T13	Parts 73 82	アッパースプリング
+T14	Parts 37 42	スプリング
+T15	Parts 7 16	アッパースプリング
+T1	Parts 0 6	後輪ブレーキ
+R1	Coreference Arg1:T15 Arg2:T14	
+R2	Coreference Arg1:T14 Arg2:T13	
+R3	Part-Whole Arg1:T1 Arg2:T12	
+R4	Part-Whole Arg1:T15 Arg2:T1	

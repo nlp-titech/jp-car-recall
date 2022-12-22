@@ -1,0 +1,5 @@
+T2	Parts 39 46	制御プログラム
+T3	Parts 80 82	車両
+T4	Parts 0 20	トランスミッションコントロールモジュール
+R2	Part-Whole Arg1:T2 Arg2:T4	
+R1	Part-Whole Arg1:T4 Arg2:T3	

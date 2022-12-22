@@ -1,0 +1,12 @@
+T8	Parts 17 26	後軸用軌道走行装置
+T9	Parts 31 35	フレーム
+T10	Parts 49 53	フレーム
+T11	Parts 87 96	後軸用軌道走行装置
+T1	Parts 0 5	軌道兼用車
+T2	Parts 10 12	車両
+R1	Coreference Arg1:T10 Arg2:T9	
+R2	Coreference Arg1:T11 Arg2:T8	
+R3	Coreference Arg1:T1 Arg2:T2	
+R4	Part-Whole Arg1:T8 Arg2:T2	
+R5	Part-Whole Arg1:T9 Arg2:T2	
+R6	Contact Arg1:T8 Arg2:T9	

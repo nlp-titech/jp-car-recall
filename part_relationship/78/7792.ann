@@ -1,0 +1,18 @@
+T1	Parts 0 5	運転席ドア
+T2	Parts 8 13	助手席ドア
+T3	Parts 14 21	ワイヤハーネス
+T4	Parts 36 38	ドア
+T5	Parts 49 51	配線
+T6	Parts 67 75	サイドエアバッグ
+T7	Parts 76 85	カーテンエアバッグ
+T8	Parts 86 91	ドアミラー
+T9	Parts 92 99	補助方向指示器
+R1	Part-Whole Arg1:T3 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T2	
+R3	Oneway-Coreference Arg1:T4 Arg2:T2	
+R4	Oneway-Coreference Arg1:T4 Arg2:T1	
+R5	Part-Whole Arg1:T5 Arg2:T3	
+R6	Connect Arg1:T6 Arg2:T5	
+R7	Connect Arg1:T7 Arg2:T5	
+R8	Connect Arg1:T8 Arg2:T5	
+R9	Connect Arg1:T9 Arg2:T5	

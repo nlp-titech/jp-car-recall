@@ -1,0 +1,9 @@
+T12	Parts 106 109	原動機
+T13	Parts 99 102	ボルト
+T14	Parts 81 84	ボルト
+T15	Parts 38 43	締結ボルト
+T1	Parts 0 11	原動機支持用ブラケット
+R1	Coreference Arg1:T15 Arg2:T14	
+R2	Coreference Arg1:T14 Arg2:T13	
+R3	Contact Arg1:T1 Arg2:T12	
+R4	Contact Arg1:T1 Arg2:T15	

@@ -1,0 +1,15 @@
+T1	Parts 0 14	エンジンコントロールユニット
+T2	Parts 15 22	制御プログラム
+T3	Parts 27 31	エンジン
+T4	Parts 51 61	イグニッションコイル
+T5	Parts 82 92	イグニッションコイル
+T6	Parts 109 113	ヒューズ
+T7	Parts 129 133	エンジン
+T8	Parts 164 174	イグニッションコイル
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T4 Arg2:T5	
+R3	Coreference Arg1:T3 Arg2:T7	
+R4	Coreference Arg1:T5 Arg2:T8	
+R5	Connect Arg1:T1 Arg2:T3	
+R6	Part-Whole Arg1:T4 Arg2:T3	
+R7	Part-Whole Arg1:T6 Arg2:T5	

@@ -1,0 +1,16 @@
+T3	Parts 13 16	排気管
+T4	Parts 24 34	ダイナミックダンパー
+T5	Parts 49 59	ダイナミックダンパー
+T17	Parts 88 91	排気管
+T18	Parts 104 107	排気管
+T19	Parts 112 119	ブレーキパイプ
+T20	Parts 130 137	ブレーキパイプ
+R1	Coreference Arg1:T20 Arg2:T19	
+R2	Coreference Arg1:T18 Arg2:T17	
+R3	Coreference Arg1:T5 Arg2:T4	
+R4	Coreference Arg1:T17 Arg2:T3	
+T1	Parts 0 8	自動変速機装着車
+R5	Part-Whole Arg1:T3 Arg2:T1	
+R7	Part-Whole Arg1:T19 Arg2:T1	
+R6	Contact Arg1:T3 Arg2:T4	
+R8	Part-Whole Arg1:T4 Arg2:T1	

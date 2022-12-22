@@ -1,0 +1,11 @@
+T8	Parts 30 35	ブラケット
+T9	Parts 47 54	制御用電気配線
+T1	Parts 0 6	走行モーター
+T2	Parts 7 14	制御用電気配線
+T3	Parts 21 23	配線
+R1	Coreference Arg1:T3 Arg2:T2	
+T4	Parts 36 39	原動機
+R2	Coreference Arg1:T9 Arg2:T3	
+R3	Contact Arg1:T2 Arg2:T1	
+R4	Contact Arg1:T8 Arg2:T3	
+R5	Coreference Arg1:T4 Arg2:T1	

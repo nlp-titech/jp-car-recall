@@ -1,0 +1,9 @@
+T12	Parts 31 34	車掌席
+T13	Parts 9 18	車掌席背当フレーム
+T16	Parts 42 47	座席ベルト
+T17	Parts 83 88	座席ベルト
+T1	Parts 0 4	大型バス
+R2	Coreference Arg1:T17 Arg2:T16	
+R1	Part-Whole Arg1:T13 Arg2:T12	
+R3	Part-Whole Arg1:T12 Arg2:T1	
+R4	Part-Whole Arg1:T16 Arg2:T12	

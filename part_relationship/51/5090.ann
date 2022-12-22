@@ -1,0 +1,10 @@
+T2	Parts 0 7	オイルクーラー
+T3	Parts 23 32	スターターモーター
+T4	Parts 8 10	配管
+T5	Parts 38 40	配管
+T6	Parts 33 35	配線
+T7	Parts 70 72	配線
+R1	Coreference Arg1:T4 Arg2:T5	
+R2	Coreference Arg1:T5 Arg2:T7	
+R3	Contact Arg1:T6 Arg2:T3	
+R4	Contact Arg1:T4 Arg2:T2	

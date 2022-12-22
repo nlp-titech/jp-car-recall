@@ -1,0 +1,17 @@
+T1	Parts 7 15	シリンダーヘッド
+T2	Parts 21 28	エンジンオイル
+T3	Parts 121 128	エンジンオイル
+T5	Parts 138 142	エンジン
+T8	Parts 67 70	バルブ
+T9	Parts 114 117	バルブ
+T10	Parts 0 3	原動機
+T4	Parts 38 54	逆流防止弁（ノンリターンバルブ）
+R1	Part-Whole Arg1:T1 Arg2:T10	
+R2	Contact Arg1:T1 Arg2:T2	
+R4	Coreference Arg1:T4 Arg2:T8	
+R5	Coreference Arg1:T8 Arg2:T9	
+R6	Coreference Arg1:T2 Arg2:T3	
+R7	Coreference Arg1:T10 Arg2:T5	
+R3	Connect Arg1:T1 Arg2:T4	
+R8	Part-Whole Arg1:T4 Arg2:T10	
+R9	Contact Arg1:T2 Arg2:T4	

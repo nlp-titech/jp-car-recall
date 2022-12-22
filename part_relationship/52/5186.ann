@@ -1,0 +1,11 @@
+T2	Parts 115 121	圧力センサー
+T6	Parts 63 67	ピストン
+T8	Parts 176 180	ブレーキ
+T1	Parts 43 52	油圧ポンプピストン
+T3	Parts 1 42	電子制御式油圧ブレーキ（ブレーキペダル操作量を検知して油圧の量を制御する制動装置）
+T4	Parts 71 79	ガイド・ディスク
+R1	Coreference Arg1:T1 Arg2:T6	
+R2	Part-Whole Arg1:T1 Arg2:T3	
+R3	Contact Arg1:T6 Arg2:T4	
+R4	Connect Arg1:T2 Arg2:T3	
+R5	Connect Arg1:T3 Arg2:T8	

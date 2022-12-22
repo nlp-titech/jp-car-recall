@@ -1,0 +1,7 @@
+T1	Parts 0 10	排出ガス発散防止装置
+T2	Parts 15 23	制御コンピュータ
+T3	Parts 24 33	故障診断プログラム
+T4	Parts 94 119	車載式故障診断装置（ディーゼル重量車Ｊ－ＯＢＤ２）
+R1	Connect Arg1:T1 Arg2:T2	
+R2	Part-Whole Arg1:T3 Arg2:T2	
+R3	Oneway-Coreference Arg1:T4 Arg2:T2	

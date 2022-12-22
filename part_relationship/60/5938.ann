@@ -1,0 +1,7 @@
+T1	Parts 36 40	エンジン
+T2	Parts 63 67	エンジン
+T4	Parts 51 55	ユニット
+T6	Parts 0 12	電源供給保護管理ユニット
+R1	Coreference Arg1:T6 Arg2:T4	
+R2	Coreference Arg1:T1 Arg2:T2	
+R4	Connect Arg1:T6 Arg2:T1	

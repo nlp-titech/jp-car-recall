@@ -1,0 +1,15 @@
+T1	Parts 71 78	ベルト巻取装置
+T2	Parts 11 16	座席ベルト
+T3	Parts 57 62	座席ベルト
+T4	Parts 92 97	座席ベルト
+T7	Parts 21 28	肩ベルトガイド
+T8	Parts 63 70	肩ベルトガイド
+T10	Parts 1 10	コンバーチブル車両
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Coreference Arg1:T3 Arg2:T4	
+R3	Coreference Arg1:T7 Arg2:T8	
+R4	Part-Whole Arg1:T2 Arg2:T10	
+R5	Contact Arg1:T2 Arg2:T7	
+R7	Part-Whole Arg1:T1 Arg2:T10	
+R8	Part-Whole Arg1:T7 Arg2:T10	
+R6	Contact Arg1:T3 Arg2:T1	

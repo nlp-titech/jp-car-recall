@@ -1,0 +1,27 @@
+T1	Parts 186 194	ボールジョイント
+T2	Parts 235 243	ボールジョイント
+T3	Parts 143 154	フロントサスペンション
+T4	Parts 165 173	ボールジョイント
+T5	Parts 250 258	ボールジョイント
+T6	Parts 159 164	ロアアーム
+T7	Parts 3 8	燃料ポンプ
+T8	Parts 49 53	エンジン
+T9	Parts 13 19	樹脂製パイプ
+T10	Parts 34 37	パイプ
+T11	Parts 69 72	パイプ
+T12	Parts 107 110	パイプ
+T13	Parts 54 57	排気管
+T15	Parts 42 44	燃料
+T16	Parts 116 118	燃料
+R1	Coreference Arg1:T9 Arg2:T10	
+R2	Coreference Arg1:T10 Arg2:T11	
+R3	Coreference Arg1:T11 Arg2:T12	
+R4	Coreference Arg1:T15 Arg2:T16	
+R5	Coreference Arg1:T4 Arg2:T1	
+R6	Coreference Arg1:T1 Arg2:T2	
+R7	Coreference Arg1:T2 Arg2:T5	
+R8	Part-Whole Arg1:T9 Arg2:T7	
+R9	Contact Arg1:T10 Arg2:T15	
+R10	Contact Arg1:T13 Arg2:T8	
+R11	Part-Whole Arg1:T6 Arg2:T3	
+R12	Contact Arg1:T6 Arg2:T4	

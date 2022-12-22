@@ -1,0 +1,10 @@
+T4	Parts 24 29	燃料ホース
+T5	Parts 30 34	内層ゴム
+T2	Parts 52 55	ＬＰＧ
+T1	Parts 0 12	エンジン式フォークリフト
+R2	Part-Whole Arg1:T5 Arg2:T4	
+R3	Contact Arg1:T2 Arg2:T5	
+T3	Parts 13 19	ＬＰＧ仕様車
+R1	Oneway-Coreference Arg1:T1 Arg2:T3	
+R4	Part-Whole Arg1:T4 Arg2:T3	
+R5	Part-Whole Arg1:T2 Arg2:T3	

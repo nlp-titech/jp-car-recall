@@ -1,0 +1,19 @@
+T15	Parts 88 91	ボール
+T16	Parts 94 101	樹脂ベアリング
+T20	Parts 114 122	ボールジョイント
+T21	Parts 24 32	ボールジョイント
+T1	Parts 0 6	前輪緩衝装置
+T2	Parts 7 12	ロアアーム
+T3	Parts 13 17	ナックル
+T4	Parts 37 41	保持金具
+R2	Coreference Arg1:T20 Arg2:T21	
+T6	Parts 127 130	アーム
+R3	Coreference Arg1:T6 Arg2:T2	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T3 Arg2:T1	
+R6	Connect Arg1:T2 Arg2:T3	
+R7	Contact Arg1:T2 Arg2:T21	
+R8	Contact Arg1:T3 Arg2:T21	
+R9	Contact Arg1:T4 Arg2:T21	
+R10	Contact Arg1:T15 Arg2:T4	
+R11	Contact Arg1:T16 Arg2:T21	

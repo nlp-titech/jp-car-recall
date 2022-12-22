@@ -1,0 +1,23 @@
+T2	Parts 79 84	バックドア
+T3	Parts 132 137	バックドア
+T4	Parts 57 61	クリップ
+T5	Parts 5 10	ガスステー
+T6	Parts 36 41	ガスステー
+T7	Parts 95 100	ガスステー
+T8	Parts 119 124	ガスステー
+T9	Parts 42 52	車体側スタッドボール
+T10	Parts 101 108	スタッドボール
+T17	Parts 125 127	車体
+R1	Coreference Arg1:T5 Arg2:T6	
+R2	Contact Arg1:T4 Arg2:T6	
+R3	Contact Arg1:T4 Arg2:T9	
+R4	Coreference Arg1:T2 Arg2:T3	
+R6	Coreference Arg1:T9 Arg2:T10	
+R9	Contact Arg1:T9 Arg2:T6	
+R10	Contact Arg1:T7 Arg2:T2	
+T1	Parts 19 21	車体
+R12	Coreference Arg1:T1 Arg2:T17	
+R5	Coreference Arg1:T6 Arg2:T7	
+R8	Coreference Arg1:T7 Arg2:T8	
+R7	Contact Arg1:T5 Arg2:T1	
+R11	Contact Arg1:T17 Arg2:T3	

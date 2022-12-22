@@ -1,0 +1,14 @@
+T1	Parts 10 17	シフトケーブル
+T2	Parts 49 56	シフトケーブル
+T3	Parts 0 5	手動変速機
+T4	Parts 86 90	ケーブル
+T5	Parts 106 110	ケーブル
+T6	Parts 27 31	取付金具
+T7	Parts 18 21	変速機
+R1	Coreference Arg1:T3 Arg2:T7	
+R2	Coreference Arg1:T1 Arg2:T2	
+R3	Coreference Arg1:T2 Arg2:T4	
+R4	Coreference Arg1:T4 Arg2:T5	
+R5	Contact Arg1:T1 Arg2:T7	
+R6	Contact Arg1:T7 Arg2:T6	
+R7	Contact Arg1:T1 Arg2:T6	

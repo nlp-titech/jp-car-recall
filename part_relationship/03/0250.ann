@@ -1,0 +1,12 @@
+T4	Parts 6 17	座席ベルト装着警報装置
+T5	Parts 19 28	エアバック警報装置
+T6	Parts 33 42	座席ベルトバックル
+T7	Parts 44 50	警報スイッチ
+T8	Parts 64 69	座席ベルト
+T1	Parts 0 4	運転者席
+R3	Part-Whole Arg1:T6 Arg2:T1	
+R1	Contact Arg1:T6 Arg2:T8	
+R2	Part-Whole Arg1:T8 Arg2:T1	
+R4	Part-Whole Arg1:T7 Arg2:T6	
+R5	Connect Arg1:T4 Arg2:T7	
+R6	Connect Arg1:T5 Arg2:T7	

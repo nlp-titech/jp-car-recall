@@ -1,0 +1,15 @@
+T1	Parts 44 50	右後輪タイヤ
+T2	Parts 0 5	高所作業車
+T3	Parts 6 10	走行装置
+T4	Parts 15 18	タイヤ
+T5	Parts 92 95	タイヤ
+T7	Parts 60 63	補強板
+T8	Parts 35 37	車体
+R1	Part-Whole Arg1:T3 Arg2:T2	
+R2	Part-Whole Arg1:T4 Arg2:T3	
+R3	Coreference Arg1:T2 Arg2:T8	
+R4	Oneway-Coreference Arg1:T4 Arg2:T1	
+R5	Part-Whole Arg1:T7 Arg2:T3	
+R6	Coreference Arg1:T4 Arg2:T5	
+T6	Parts 51 56	ブーム受け
+R7	Contact Arg1:T6 Arg2:T7	

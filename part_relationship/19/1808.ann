@@ -1,0 +1,13 @@
+T1	Parts 0 12	大型ノンステップ路線バス
+T2	Parts 17 35	フロント右側エアスプリングブラケット
+T3	Parts 36 39	補強板
+T4	Parts 50 53	補強板
+T5	Parts 72 78	トルクロッド
+R1	Coreference Arg1:T3 Arg2:T4	
+T6	Parts 79 82	補強板
+R2	Coreference Arg1:T4 Arg2:T6	
+T7	Parts 99 105	トルクロッド
+R3	Coreference Arg1:T5 Arg2:T7	
+R4	Part-Whole Arg1:T3 Arg2:T2	
+R5	Part-Whole Arg1:T2 Arg2:T1	
+R6	Part-Whole Arg1:T5 Arg2:T1	

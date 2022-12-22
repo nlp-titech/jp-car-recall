@@ -1,0 +1,16 @@
+T1	Parts 2 24	クラッシュセーフティモジュール（ＡＣＳＭ６）
+T2	Parts 58 70	高電圧バッテリーユニット
+T3	Parts 38 49	レストレイントシステム
+T4	Parts 111 119	エアバッグ警告灯
+T5	Parts 164 183	統合ブレーキシステム（ＤＣＳ／ＶＩＰ）
+T6	Parts 237 241	パワステ
+T7	Parts 250 255	エアバッグ
+T8	Parts 260 263	警告灯
+T9	Parts 93 108	チェックコントロールメッセージ
+R1	Connect Arg1:T1 Arg2:T9	
+R2	Connect Arg1:T1 Arg2:T4	
+R3	Connect Arg1:T1 Arg2:T3	
+R4	Connect Arg1:T1 Arg2:T2	
+R5	Oneway-Coreference Arg1:T8 Arg2:T4	
+R6	Connect Arg1:T3 Arg2:T7	
+R7	Connect Arg1:T5 Arg2:T8	

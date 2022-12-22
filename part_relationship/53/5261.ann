@@ -1,0 +1,7 @@
+T3	Parts 50 52	車両
+T4	Parts 43 45	前輪
+T1	Parts 0 42	ミシュラン社製タイヤ２５５／３５ＺＲ２０９７ＹＥｘｔｒａＬｏａｄＰｉｌｏｔＳｐｏｒｔ
+R1	Part-Whole Arg1:T1 Arg2:T4	
+R2	Part-Whole Arg1:T4 Arg2:T3	
+T2	Parts 153 155	空気
+R3	Part-Whole Arg1:T2 Arg2:T1	

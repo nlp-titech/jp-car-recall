@@ -1,0 +1,30 @@
+T18	Parts 78 85	プラットホーム
+T19	Parts 55 64	テールゲートリフタ
+T20	Parts 102 109	プラットホーム
+T21	Parts 124 131	プラットホーム
+T22	Parts 180 187	プラットホーム
+T23	Parts 211 218	プラットホーム
+T24	Parts 148 151	ボデー
+T25	Parts 219 222	ボデー
+T26	Parts 253 256	灯火器
+T1	Parts 0 14	床下格納型テールゲートリフタ
+T2	Parts 19 32	パワーユニットコントローラ
+T3	Parts 33 40	制御プログラム
+T4	Parts 65 72	メインスイッチ
+R1	Coreference Arg1:T18 Arg2:T20	
+R2	Coreference Arg1:T20 Arg2:T21	
+R3	Coreference Arg1:T21 Arg2:T22	
+R4	Coreference Arg1:T22 Arg2:T23	
+T5	Parts 248 250	車両
+R5	Part-Whole Arg1:T3 Arg2:T2	
+R6	Coreference Arg1:T19 Arg2:T1	
+R7	Part-Whole Arg1:T2 Arg2:T1	
+R8	Connect Arg1:T4 Arg2:T19	
+R9	Part-Whole Arg1:T18 Arg2:T1	
+R10	Contact Arg1:T24 Arg2:T19	
+R11	Coreference Arg1:T25 Arg2:T24	
+R12	Part-Whole Arg1:T25 Arg2:T5	
+R14	Part-Whole Arg1:T1 Arg2:T5	
+R13	Part-Whole Arg1:T26 Arg2:T5	
+R15	Part-Whole Arg1:T4 Arg2:T5	
+R16	Connect Arg1:T3 Arg2:T18	

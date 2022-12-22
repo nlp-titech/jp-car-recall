@@ -1,0 +1,9 @@
+T1	Parts 0 12	フロントプロペラシャフト
+T2	Parts 17 28	ユニバーサルジョイント
+T3	Parts 116 127	ユニバーサルジョイント
+T4	Parts 39 44	ベアリング
+T5	Parts 75 80	ベアリング
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T4 Arg2:T2	
+R3	Coreference Arg1:T4 Arg2:T5	
+R4	Coreference Arg1:T2 Arg2:T3	

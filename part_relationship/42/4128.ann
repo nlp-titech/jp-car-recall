@@ -1,0 +1,13 @@
+T1	Parts 0 12	プラグインハイブリッド車
+T3	Parts 111 121	ハイブリッドシステム
+T4	Parts 13 21	駆動用バッテリー
+T7	Parts 75 79	ヒューズ
+T8	Parts 97 100	警告灯
+T2	Parts 26 51	ハイブリッドシステム保護用ヒューズ（ＥＶヒューズ）
+R1	Coreference Arg1:T2 Arg2:T7	
+R2	Part-Whole Arg1:T4 Arg2:T1	
+R3	Part-Whole Arg1:T2 Arg2:T4	
+R4	Part-Whole Arg1:T8 Arg2:T1	
+R5	Part-Whole Arg1:T3 Arg2:T1	
+R6	Connect Arg1:T8 Arg2:T3	
+R7	Connect Arg1:T7 Arg2:T8	

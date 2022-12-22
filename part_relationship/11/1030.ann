@@ -1,0 +1,21 @@
+T12	Parts 147 153	駐車ブレーキ
+T13	Parts 117 127	駐車ブレーキケーブル
+T14	Parts 65 75	駐車ブレーキケーブル
+T1	Parts 0 10	駐車ブレーキケーブル
+T2	Parts 11 31	トランスミッション変速コントロールロッド
+T3	Parts 42 44	金具
+T4	Parts 55 59	キャビン
+T5	Parts 79 81	金具
+T6	Parts 106 110	キャビン
+T7	Parts 128 131	キャブ
+T8	Parts 138 142	固定金具
+R1	Coreference Arg1:T3 Arg2:T5	
+R2	Coreference Arg1:T1 Arg2:T14	
+R3	Coreference Arg1:T4 Arg2:T6	
+R4	Coreference Arg1:T14 Arg2:T13	
+R5	Contact Arg1:T3 Arg2:T1	
+R6	Contact Arg1:T3 Arg2:T2	
+R7	Contact Arg1:T13 Arg2:T8	
+R8	Contact Arg1:T8 Arg2:T7	
+R9	Coreference Arg1:T6 Arg2:T7	
+R10	Part-Whole Arg1:T13 Arg2:T12	

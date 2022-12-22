@@ -1,0 +1,28 @@
+T18	Parts 49 60	シフト位置検知用センサ
+T20	Parts 84 91	レバーシャフト
+T21	Parts 92 96	シャフト
+T22	Parts 114 121	レバーシャフト
+T23	Parts 130 137	レバーシャフト
+T24	Parts 138 141	レバー
+T25	Parts 143 147	シャフト
+T26	Parts 175 178	センサ
+T27	Parts 17 33	変速を行う装置（シフトユニット）
+T28	Parts 34 38	シリンダ
+T32	Parts 65 72	レバーシャフト
+T1	Parts 0 12	１２段式自動変速機搭載車
+R1	Coreference Arg1:T20 Arg2:T32	
+R2	Coreference Arg1:T22 Arg2:T20	
+R3	Coreference Arg1:T23 Arg2:T22	
+R4	Coreference Arg1:T26 Arg2:T18	
+T2	Parts 182 185	シフト
+R5	Part-Whole Arg1:T27 Arg2:T1	
+R6	Part-Whole Arg1:T28 Arg2:T27	
+R7	Part-Whole Arg1:T18 Arg2:T27	
+R8	Part-Whole Arg1:T32 Arg2:T27	
+R9	Part-Whole Arg1:T21 Arg2:T20	
+R10	Part-Whole Arg1:T24 Arg2:T23	
+R11	Coreference Arg1:T21 Arg2:T25	
+R12	Connect Arg1:T27 Arg2:T2	
+R13	Part-Whole Arg1:T2 Arg2:T1	
+R14	Contact Arg1:T24 Arg2:T25	
+R15	Contact Arg1:T32 Arg2:T18	

@@ -1,0 +1,5 @@
+T1	Parts 5 11	金属フレーム
+T2	Parts 12 18	樹脂製パネル
+T3	Parts 71 74	パネル
+R1	Coreference Arg1:T3 Arg2:T2	
+R2	Contact Arg1:T2 Arg2:T1	

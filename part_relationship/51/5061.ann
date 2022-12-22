@@ -1,0 +1,19 @@
+T1	Parts 113 119	ＡＢＳ警告灯
+T2	Parts 73 77	コネクタ
+T3	Parts 96 100	コネクタ
+T7	Parts 0 21	ＡＢＳ（アンチロック・ブレーキ・システム）
+T8	Parts 64 72	ＡＢＳモジュール
+T9	Parts 128 131	ＡＢＳ
+T13	Parts 22 27	アース配線
+T17	Parts 53 58	アース配線
+R1	Coreference Arg1:T9 Arg2:T7	
+R4	Connect Arg1:T2 Arg2:T17	
+R5	Connect Arg1:T2 Arg2:T8	
+R6	Coreference Arg1:T3 Arg2:T2	
+R8	Connect Arg1:T9 Arg2:T1	
+R10	Part-Whole Arg1:T17 Arg2:T7	
+R11	Part-Whole Arg1:T8 Arg2:T7	
+R12	Part-Whole Arg1:T2 Arg2:T7	
+R13	Part-Whole Arg1:T1 Arg2:T7	
+R2	Part-Whole Arg1:T13 Arg2:T7	
+R3	Coreference Arg1:T13 Arg2:T17	

@@ -1,0 +1,11 @@
+T1	Parts 0 11	インストルメントパネル
+T3	Parts 65 73	後席シートベルト
+T5	Parts 42 49	イグニッション
+T2	Parts 26 41	後席シートベルト非装着警告表示
+R1	Connect Arg1:T2 Arg2:T1	
+R2	Connect Arg1:T5 Arg2:T1	
+T4	Parts 80 93	シートベルト非装着警告表示
+T6	Parts 94 97	警告音
+R3	Connect Arg1:T3 Arg2:T2	
+R4	Coreference Arg1:T4 Arg2:T2	
+R5	Connect Arg1:T6 Arg2:T1	

@@ -1,0 +1,4 @@
+T1	Parts 9 21	原動機制御用コンピュータ
+T4	Parts 1 4	原動機
+T7	Parts 79 83	触媒装置
+R2	Connect Arg1:T1 Arg2:T4	

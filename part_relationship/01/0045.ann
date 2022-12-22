@@ -1,0 +1,10 @@
+T13	Parts 14 21	スタータモータ
+T16	Parts 92 99	スタータモータ
+T17	Parts 119 123	スタータ
+T1	Parts 0 13	エンジンスタータ（始動機）
+T2	Parts 36 39	開閉器
+R3	Coreference Arg1:T16 Arg2:T13	
+R1	Part-Whole Arg1:T13 Arg2:T1	
+R6	Coreference Arg1:T1 Arg2:T17	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R4	Connect Arg1:T13 Arg2:T2	

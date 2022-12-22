@@ -1,0 +1,3 @@
+T5	Parts 0 4	窓ふき器
+T6	Parts 5 20	操作スイッチ（スイッチＢＯＸ）
+R1	Connect Arg1:T6 Arg2:T5	

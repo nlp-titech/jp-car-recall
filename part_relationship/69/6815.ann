@@ -1,0 +1,19 @@
+T1	Parts 122 130	かじ取りハンドル
+T2	Parts 0 6	かじ取り装置
+T7	Parts 47 51	油圧配管
+T8	Parts 90 94	油圧配管
+T9	Parts 52 55	過給機
+T10	Parts 26 28	車両
+T3	Parts 11 25	パワー・ステアリング油圧配管
+T6	Parts 57 63	冷却用水配管
+T4	Parts 105 118	パワー・ステアリングオイル
+R1	Part-Whole Arg1:T3 Arg2:T2	
+R2	Part-Whole Arg1:T2 Arg2:T10	
+R3	Coreference Arg1:T3 Arg2:T7	
+R4	Part-Whole Arg1:T9 Arg2:T10	
+R5	Coreference Arg1:T7 Arg2:T8	
+R6	Contact Arg1:T8 Arg2:T4	
+R7	Connect Arg1:T2 Arg2:T1	
+R8	Part-Whole Arg1:T6 Arg2:T10	
+R9	Contact Arg1:T9 Arg2:T6	
+R10	Part-Whole Arg1:T1 Arg2:T10	

@@ -1,0 +1,17 @@
+T8	Parts 0 9	前輪ブレーキホース
+T11	Parts 31 37	アッパアーム
+T12	Parts 38 43	ブラケット
+T13	Parts 26 30	懸架装置
+T14	Parts 55 58	ホース
+T15	Parts 88 91	ホース
+T1	Parts 13 15	前輪
+T2	Parts 16 24	ブレーキキャリパ
+R1	Coreference Arg1:T15 Arg2:T14	
+T3	Parts 105 110	ブレーキ液
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T11 Arg2:T13	
+R9	Contact Arg1:T3 Arg2:T15	
+R8	Coreference Arg1:T14 Arg2:T8	
+R5	Part-Whole Arg1:T12 Arg2:T11	
+R2	Contact Arg1:T2 Arg2:T8	
+R10	Contact Arg1:T12 Arg2:T8	

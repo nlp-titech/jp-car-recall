@@ -1,0 +1,12 @@
+T10	Parts 19 28	ポンプカップリング
+T11	Parts 44 50	カップリング
+T12	Parts 51 53	ギヤ
+T14	Parts 88 90	ギヤ
+T1	Parts 0 3	原動機
+T2	Parts 9 14	油圧ポンプ
+R1	Coreference Arg1:T11 Arg2:T10	
+R2	Coreference Arg1:T14 Arg2:T12	
+R3	Contact Arg1:T1 Arg2:T10	
+R4	Contact Arg1:T10 Arg2:T2	
+R5	Part-Whole Arg1:T12 Arg2:T11	
+R6	Connect Arg1:T2 Arg2:T1	

@@ -1,0 +1,24 @@
+T13	Parts 170 174	クラッチ
+T14	Parts 89 101	クラッチレリーズシリンダ
+T15	Parts 102 107	取付ステー
+T16	Parts 136 140	シリンダ
+T17	Parts 141 146	取付ステー
+T18	Parts 161 165	シリンダ
+T19	Parts 17 29	フライホイールハウジング
+T20	Parts 30 42	クラッチレリーズシリンダ
+T1	Parts 0 12	フライホイールＰＴＯ付車
+T2	Parts 56 68	クラッチレリーズシリンダ
+T3	Parts 78 83	ハウジング
+R1	Coreference Arg1:T20 Arg2:T2	
+R2	Coreference Arg1:T19 Arg2:T3	
+R3	Coreference Arg1:T2 Arg2:T14	
+R4	Coreference Arg1:T14 Arg2:T16	
+R5	Coreference Arg1:T15 Arg2:T17	
+R6	Coreference Arg1:T16 Arg2:T18	
+R8	Part-Whole Arg1:T19 Arg2:T1	
+R7	Contact Arg1:T20 Arg2:T19	
+R10	Connect Arg1:T13 Arg2:T18	
+R11	Part-Whole Arg1:T13 Arg2:T1	
+R9	Contact Arg1:T14 Arg2:T15	
+R12	Part-Whole Arg1:T20 Arg2:T1	
+R13	Contact Arg1:T3 Arg2:T15	

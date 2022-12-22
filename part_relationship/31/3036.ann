@@ -1,0 +1,19 @@
+T16	Parts 36 42	スタビリンカ
+T17	Parts 69 75	スタビリンカ
+T18	Parts 76 79	アーム
+T19	Parts 124 127	アーム
+T1	Parts 0 9	空気バネ式緩衝装置
+T2	Parts 14 18	トラック
+T3	Parts 23 26	後車軸
+T4	Parts 27 29	車枠
+R1	Coreference Arg1:T16 Arg2:T17	
+R2	Coreference Arg1:T18 Arg2:T19	
+R3	Contact Arg1:T16 Arg2:T4	
+R4	Contact Arg1:T16 Arg2:T3	
+R5	Part-Whole Arg1:T18 Arg2:T17	
+R6	Part-Whole Arg1:T1 Arg2:T2	
+R7	Part-Whole Arg1:T3 Arg2:T2	
+R9	Part-Whole Arg1:T4 Arg2:T2	
+R10	Part-Whole Arg1:T16 Arg2:T2	
+R11	Connect Arg1:T3 Arg2:T4	
+R8	Connect Arg1:T1 Arg2:T4	

@@ -1,0 +1,14 @@
+T16	Parts 118 126	フロントアクスル
+T17	Parts 59 67	フロントアクスル
+T18	Parts 52 58	センターピン
+T2	Parts 13 21	フロントアクスル
+T3	Parts 22 32	右側リーフスプリング
+T4	Parts 39 41	シム
+R1	Coreference Arg1:T2 Arg2:T17	
+R2	Coreference Arg1:T17 Arg2:T16	
+T5	Parts 130 133	タイヤ
+R3	Contact Arg1:T17 Arg2:T18	
+R4	Connect Arg1:T5 Arg2:T16	
+R5	Contact Arg1:T4 Arg2:T3	
+R6	Contact Arg1:T4 Arg2:T2	
+T1	Parts 0 3	キャブ

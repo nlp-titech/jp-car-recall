@@ -1,0 +1,21 @@
+T1	Parts 0 5	駆動用電池
+T2	Parts 15 36	バッテリーマネージメントユニット（ＢＭＵ）
+T3	Parts 41 48	制御プログラム
+T6	Parts 113 118	残量メータ
+T7	Parts 136 141	残量メータ
+R1	Coreference Arg1:T6 Arg2:T7	
+T8	Parts 183 192	ＥＶシステム警告灯
+T11	Parts 6 8	電池
+T12	Parts 105 107	電池
+R3	Coreference Arg1:T11 Arg2:T12	
+T13	Parts 143 145	電池
+R4	Coreference Arg1:T12 Arg2:T13	
+T14	Parts 171 173	電池
+R5	Coreference Arg1:T13 Arg2:T14	
+T15	Parts 225 227	電池
+R6	Coreference Arg1:T14 Arg2:T15	
+R7	Coreference Arg1:T1 Arg2:T11	
+R10	Part-Whole Arg1:T3 Arg2:T2	
+R11	Connect Arg1:T2 Arg2:T6	
+R2	Connect Arg1:T11 Arg2:T2	
+R8	Connect Arg1:T7 Arg2:T8	

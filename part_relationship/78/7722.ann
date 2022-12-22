@@ -1,0 +1,10 @@
+T1	Parts 0 9	車載式故障診断装置
+T2	Parts 14 28	エンジンコントロールユニット
+T3	Parts 29 36	制御プログラム
+T4	Parts 44 53	トランスミッション
+T5	Parts 80 87	メーターパネル
+T6	Parts 89 96	エンジン警告灯
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T2	
+R3	Part-Whole Arg1:T6 Arg2:T5	
+R4	Part-Whole Arg1:T1 Arg2:T4	

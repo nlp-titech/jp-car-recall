@@ -1,0 +1,35 @@
+T27	Parts 129 133	シャフト
+T29	Parts 260 263	推進軸
+T30	Parts 23 37	接手（コンパニオンフランジ）
+T1	Parts 10 13	後前軸
+T2	Parts 14 17	後後軸
+T3	Parts 19 22	推進軸
+T7	Parts 83 91	キャッスルナット
+T8	Parts 107 115	キャッスルナット
+T10	Parts 149 152	軸受け
+T11	Parts 156 164	キャッスルナット
+T12	Parts 198 206	キャッスルナット
+T13	Parts 212 215	割ピン
+T14	Parts 220 230	コンパニオンフランジ
+T15	Parts 239 247	ピニオンシャフト
+R2	Coreference Arg1:T29 Arg2:T3	
+R4	Coreference Arg1:T8 Arg2:T7	
+R6	Coreference Arg1:T11 Arg2:T8	
+R7	Coreference Arg1:T12 Arg2:T11	
+R8	Coreference Arg1:T14 Arg2:T30	
+T17	Parts 0 9	低床式後２軸駆動車
+T9	Parts 134 141	軸受け間カラー
+R5	Part-Whole Arg1:T1 Arg2:T17	
+R9	Part-Whole Arg1:T2 Arg2:T17	
+R10	Connect Arg1:T1 Arg2:T3	
+R11	Connect Arg1:T2 Arg2:T3	
+R12	Contact Arg1:T3 Arg2:T30	
+T4	Parts 59 72	後後軸ピニオンギヤシャフト
+R1	Coreference Arg1:T4 Arg2:T27	
+R3	Contact Arg1:T30 Arg2:T4	
+R15	Contact Arg1:T4 Arg2:T7	
+R16	Part-Whole Arg1:T9 Arg2:T27	
+R17	Contact Arg1:T9 Arg2:T10	
+R18	Contact Arg1:T12 Arg2:T13	
+R19	Contact Arg1:T12 Arg2:T14	
+R20	Coreference Arg1:T15 Arg2:T4	

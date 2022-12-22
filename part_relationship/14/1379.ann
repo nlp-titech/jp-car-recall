@@ -1,0 +1,11 @@
+T14	Parts 108 110	ドア
+T15	Parts 84 89	ドアロック
+T1	Parts 0 5	バン型車両
+T2	Parts 10 16	物品積載設備
+T4	Parts 23 25	ドア
+T5	Parts 35 50	非常脱出機能付きドアロック装置
+R1	Coreference Arg1:T5 Arg2:T15	
+R2	Coreference Arg1:T4 Arg2:T14	
+R6	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T4 Arg2:T2	
+R5	Part-Whole Arg1:T5 Arg2:T4	

@@ -1,0 +1,13 @@
+T1	Parts 0 6	大型トラック
+T2	Parts 23 34	乾燥剤再生用エアタンク
+T3	Parts 51 56	エアタンク
+T4	Parts 111 115	ブレーキ
+T5	Parts 7 18	ブレーキ作動用エア回路
+T6	Parts 89 94	警報ブザー
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Part-Whole Arg1:T4 Arg2:T1	
+R3	Connect Arg1:T5 Arg2:T2	
+R4	Part-Whole Arg1:T6 Arg2:T1	
+R5	Connect Arg1:T5 Arg2:T4	
+R6	Part-Whole Arg1:T2 Arg2:T1	
+R7	Connect Arg1:T5 Arg2:T6	

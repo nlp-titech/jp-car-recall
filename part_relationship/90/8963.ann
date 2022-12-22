@@ -1,0 +1,10 @@
+T1	Parts 0 12	助手席側シートクッション
+T2	Parts 13 23	乗員重量区分システム
+T3	Parts 74 82	チャイルドシート
+T4	Parts 114 119	エアバッグ
+T5	Parts 139 147	チャイルドシート
+T6	Parts 166 171	エアバッグ
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R3	Coreference Arg1:T3 Arg2:T5	
+R4	Coreference Arg1:T4 Arg2:T6	
+R2	Connect Arg1:T2 Arg2:T4	

@@ -1,0 +1,10 @@
+T12	Parts 80 83	ポンプ
+T14	Parts 17 23	ポンプ駆動軸
+T15	Parts 36 41	駆動用歯車
+T1	Parts 0 6	走行モーター
+T2	Parts 7 12	油圧ポンプ
+R1	Coreference Arg1:T12 Arg2:T2	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T14 Arg2:T2	
+R4	Part-Whole Arg1:T15 Arg2:T2	
+R7	Contact Arg1:T15 Arg2:T14	

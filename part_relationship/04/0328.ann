@@ -1,0 +1,14 @@
+T10	Parts 60 63	カプラ
+T7	Parts 18 25	電気配線カプラ
+T1	Parts 0 4	電気装置
+T2	Parts 9 12	前照灯
+T3	Parts 14 17	警音器
+T5	Parts 96 99	前照灯
+T6	Parts 104 107	警音器
+R2	Coreference Arg1:T5 Arg2:T2	
+R3	Coreference Arg1:T6 Arg2:T3	
+R5	Coreference Arg1:T10 Arg2:T7	
+R6	Part-Whole Arg1:T2 Arg2:T1	
+R7	Part-Whole Arg1:T3 Arg2:T1	
+R8	Part-Whole Arg1:T7 Arg2:T3	
+R9	Part-Whole Arg1:T7 Arg2:T2	

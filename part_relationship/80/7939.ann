@@ -1,0 +1,12 @@
+T1	Parts 0 7	シフトケーブル
+T2	Parts 25 27	車体
+T3	Parts 29 34	固定ボルト
+T4	Parts 63 70	シフトケーブル
+T5	Parts 71 79	ブローバイホース
+T6	Parts 100 108	ブローバイホース
+R1	Coreference Arg1:T1 Arg2:T4	
+R2	Coreference Arg1:T5 Arg2:T6	
+R3	Contact Arg1:T1 Arg2:T3	
+R4	Contact Arg1:T2 Arg2:T3	
+R5	Contact Arg1:T1 Arg2:T2	
+R6	Contact Arg1:T2 Arg2:T5	

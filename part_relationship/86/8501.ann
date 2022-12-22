@@ -1,0 +1,11 @@
+T1	Parts 0 9	センターコンソール
+T2	Parts 17 25	スイッチユニット
+T3	Parts 43 54	イグニッションスイッチ
+T4	Parts 92 96	スイッチ
+T5	Parts 103 108	デフロスタ
+T6	Parts 109 116	ハザードランプ
+R1	Connect Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T2	
+R3	Coreference Arg1:T4 Arg2:T3	
+R4	Connect Arg1:T5 Arg2:T2	
+R5	Connect Arg1:T6 Arg2:T2	

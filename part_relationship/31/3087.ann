@@ -1,0 +1,13 @@
+T6	Parts 50 52	ドア
+T7	Parts 39 42	ボルト
+T8	Parts 19 22	ボルト
+T1	Parts 0 4	中型バス
+T2	Parts 9 11	前扉
+T3	Parts 12 14	車体
+R1	Coreference Arg1:T8 Arg2:T7	
+R2	Coreference Arg1:T2 Arg2:T6	
+R3	Contact Arg1:T3 Arg2:T2	
+R4	Contact Arg1:T8 Arg2:T3	
+R5	Contact Arg1:T8 Arg2:T2	
+R6	Part-Whole Arg1:T2 Arg2:T1	
+R7	Part-Whole Arg1:T3 Arg2:T1	

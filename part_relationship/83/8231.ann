@@ -1,0 +1,7 @@
+T1	Parts 0 7	制動灯スイッチ
+T2	Parts 85 88	制動灯
+T3	Parts 97 104	横滑り防止装置
+T4	Parts 105 108	警告灯
+T5	Parts 111 115	エンジン
+R1	Connect Arg1:T1 Arg2:T2	
+R2	Connect Arg1:T3 Arg2:T4	

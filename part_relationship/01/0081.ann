@@ -1,0 +1,10 @@
+T6	Parts 0 2	前席
+T7	Parts 3 11	背もたれ調整機構
+T8	Parts 28 30	ギヤ
+T9	Parts 42 46	背もたれ
+T10	Parts 12 19	ギヤ（ロアー）
+R1	Part-Whole Arg1:T7 Arg2:T6	
+R2	Part-Whole Arg1:T10 Arg2:T7	
+R3	Coreference Arg1:T8 Arg2:T10	
+R4	Part-Whole Arg1:T9 Arg2:T6	
+R5	Contact Arg1:T9 Arg2:T7	

@@ -1,0 +1,9 @@
+T1	Parts 0 3	後車軸
+T2	Parts 11 19	かじ取りシリンダ
+T3	Parts 28 35	ピストンシール
+T4	Parts 83 90	ピストンシール
+R1	Coreference Arg1:T3 Arg2:T4	
+T5	Parts 93 94	油
+R2	Part-Whole Arg1:T3 Arg2:T2	
+R3	Contact Arg1:T2 Arg2:T1	
+R4	Contact Arg1:T5 Arg2:T2	

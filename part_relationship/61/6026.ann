@@ -1,0 +1,14 @@
+T1	Parts 80 87	エンジンオイル
+T2	Parts 98 105	エンジンオイル
+T3	Parts 28 32	エンジン
+T4	Parts 49 53	エンジン
+T5	Parts 148 152	エンジン
+T9	Parts 0 27	車両後部左側オイル・クーラー・ライン・フィード・ホース
+T11	Parts 136 139	警告灯
+R4	Coreference Arg1:T3 Arg2:T4	
+R7	Coreference Arg1:T1 Arg2:T2	
+R1	Coreference Arg1:T4 Arg2:T5	
+R2	Contact Arg1:T4 Arg2:T1	
+R3	Connect Arg1:T11 Arg2:T5	
+R5	Contact Arg1:T9 Arg2:T1	
+R6	Connect Arg1:T9 Arg2:T3	

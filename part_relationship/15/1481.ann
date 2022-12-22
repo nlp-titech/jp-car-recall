@@ -1,0 +1,20 @@
+T6	Parts 124 128	施錠装置
+T7	Parts 37 40	ロッド
+T8	Parts 54 57	ロッド
+T2	Parts 0 12	インテリジェントキー付車
+T3	Parts 13 19	かじ取り装置
+T4	Parts 20 24	施錠装置
+T5	Parts 29 36	キーシリンダー
+R1	Coreference Arg1:T8 Arg2:T7	
+T9	Parts 73 82	イグニッションノブ
+T10	Parts 89 95	シフトレバー
+T11	Parts 111 115	ハンドル
+R2	Coreference Arg1:T6 Arg2:T4	
+R4	Part-Whole Arg1:T3 Arg2:T2	
+R5	Connect Arg1:T4 Arg2:T3	
+R6	Part-Whole Arg1:T5 Arg2:T4	
+R7	Part-Whole Arg1:T7 Arg2:T5	
+R8	Connect Arg1:T11 Arg2:T3	
+R3	Part-Whole Arg1:T4 Arg2:T2	
+R9	Part-Whole Arg1:T9 Arg2:T5	
+R10	Part-Whole Arg1:T10 Arg2:T2	

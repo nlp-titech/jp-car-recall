@@ -1,0 +1,12 @@
+T1	Parts 25 43	連結軸（インタミディエイトシャフト）
+T2	Parts 15 21	ギヤボックス
+T3	Parts 0 5	かじ取装置
+T4	Parts 10 14	ハンドル
+T6	Parts 61 64	連結軸
+R1	Connect Arg1:T2 Arg2:T4	
+R2	Contact Arg1:T1 Arg2:T2	
+R3	Contact Arg1:T1 Arg2:T4	
+R4	Connect Arg1:T4 Arg2:T3	
+R5	Part-Whole Arg1:T2 Arg2:T3	
+R6	Part-Whole Arg1:T1 Arg2:T3	
+R7	Coreference Arg1:T6 Arg2:T1	

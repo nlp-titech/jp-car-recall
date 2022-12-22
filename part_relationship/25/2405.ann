@@ -1,0 +1,10 @@
+T8	Parts 66 70	非常口扉
+T9	Parts 46 51	ブラケット
+T10	Parts 5 16	車外ハンドルブラケット
+T1	Parts 0 4	非常口扉
+T2	Parts 36 40	ハンドル
+R1	Coreference Arg1:T9 Arg2:T10	
+R2	Coreference Arg1:T8 Arg2:T1	
+R4	Contact Arg1:T10 Arg2:T2	
+R3	Contact Arg1:T1 Arg2:T10	
+R5	Part-Whole Arg1:T2 Arg2:T1	

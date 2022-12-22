@@ -1,0 +1,11 @@
+T1	Parts 2 6	エアコン
+T2	Parts 7 14	ブロアモーター
+T3	Parts 19 21	配線
+T5	Parts 61 68	レギュレーター
+T6	Parts 69 71	配線
+T8	Parts 45 52	レギュレーター
+R1	Coreference Arg1:T8 Arg2:T5	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T3 Arg2:T2	
+R4	Coreference Arg1:T3 Arg2:T6	
+R5	Connect Arg1:T5 Arg2:T6	

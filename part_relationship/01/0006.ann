@@ -1,0 +1,10 @@
+T4	Parts 101 106	Ｇセンサー
+T7	Parts 63 69	コンデンサー
+T1	Parts 0 5	四輪駆動車
+T2	Parts 6 34	制動力制御装置（ＡＢＳ:ｱﾝﾁﾛｯｸﾌﾞﾚｰｷｼｽﾃﾑ）
+T3	Parts 41 55	減速度検知装置（Ｇセンサー）
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T1	
+R3	Part-Whole Arg1:T7 Arg2:T3	
+R4	Coreference Arg1:T4 Arg2:T3	
+R5	Connect Arg1:T3 Arg2:T2	

@@ -1,0 +1,12 @@
+T10	Parts 90 97	アクセルペダル
+T12	Parts 76 79	センサ
+T13	Parts 31 37	取付けボルト
+T1	Parts 2 9	アクセルペダル
+T2	Parts 17 26	アクセル開度センサ
+R1	Coreference Arg1:T12 Arg2:T2	
+R2	Coreference Arg1:T10 Arg2:T1	
+T3	Parts 102 106	エンジン
+R6	Connect Arg1:T10 Arg2:T3	
+R3	Contact Arg1:T1 Arg2:T2	
+R4	Contact Arg1:T2 Arg2:T13	
+R5	Contact Arg1:T1 Arg2:T13	

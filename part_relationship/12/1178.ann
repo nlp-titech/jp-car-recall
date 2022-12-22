@@ -1,0 +1,14 @@
+T10	Parts 0 5	燃料タンク
+T11	Parts 6 28	ブリーザホース継ぎ手部（クイックジョイント）
+T12	Parts 60 68	ジョイントパイプ
+T13	Parts 39 48	クイックジョイント
+T14	Parts 49 59	シール（オーリング）
+T2	Parts 123 125	燃料
+R1	Coreference Arg1:T11 Arg2:T13	
+T4	Parts 106 108	燃料
+R4	Coreference Arg1:T4 Arg2:T2	
+R5	Part-Whole Arg1:T11 Arg2:T10	
+R6	Contact Arg1:T14 Arg2:T13	
+R7	Contact Arg1:T12 Arg2:T14	
+R9	Part-Whole Arg1:T4 Arg2:T10	
+R11	Contact Arg1:T12 Arg2:T13	

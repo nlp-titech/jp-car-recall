@@ -1,0 +1,7 @@
+T1	Parts 0 12	エンジン制御コンピュータ
+T3	Parts 52 68	速度抑制装置（スピードリミッタ）
+T4	Parts 111 117	速度抑制装置
+R1	Coreference Arg1:T4 Arg2:T3	
+R3	Part-Whole Arg1:T1 Arg2:T3	
+T5	Parts 128 130	車両
+R2	Part-Whole Arg1:T1 Arg2:T5	

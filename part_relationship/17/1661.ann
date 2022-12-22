@@ -1,0 +1,14 @@
+T10	Parts 99 105	駐車ブレーキ
+T11	Parts 46 54	ブレーキケーブル
+T12	Parts 74 82	ブレーキケーブル
+T13	Parts 109 117	ブレーキケーブル
+T14	Parts 118 123	イコライザ
+T1	Parts 0 6	駐車制動装置
+T2	Parts 7 41	イコライザ（駐車ブレーキの操作力を左右の車輪に均等に振り分ける装置）
+R2	Coreference Arg1:T12 Arg2:T13	
+R3	Coreference Arg1:T2 Arg2:T14	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R1	Coreference Arg1:T12 Arg2:T11	
+R8	Part-Whole Arg1:T11 Arg2:T1	
+R7	Coreference Arg1:T1 Arg2:T10	
+R5	Contact Arg1:T2 Arg2:T11	

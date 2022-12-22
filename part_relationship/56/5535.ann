@@ -1,0 +1,10 @@
+T1	Parts 25 30	防水シール
+T3	Parts 64 69	冷却ファン
+T4	Parts 90 95	冷却ファン
+T5	Parts 113 117	エンジン
+T6	Parts 131 135	エンジン
+T7	Parts 0 13	冷却ファン用サーモスイッチ
+R1	Coreference Arg1:T6 Arg2:T5	
+R2	Coreference Arg1:T4 Arg2:T3	
+R3	Part-Whole Arg1:T1 Arg2:T7	
+R4	Connect Arg1:T7 Arg2:T3	

@@ -1,0 +1,19 @@
+T1	Parts 0 9	小型トラック・バス
+T2	Parts 14 22	戻り側燃料ホース
+T3	Parts 23 27	エンジン
+T4	Parts 34 39	緩衝用ゴム
+T5	Parts 50 67	ゴムから溶出した物質（フタレート）
+T7	Parts 73 78	燃料ホース
+R2	Coreference Arg1:T7 Arg2:T2	
+T8	Parts 83 88	燃料ホース
+R3	Coreference Arg1:T8 Arg2:T7	
+T10	Parts 104 106	燃料
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Connect Arg1:T3 Arg2:T2	
+R6	Contact Arg1:T2 Arg2:T4	
+R7	Contact Arg1:T3 Arg2:T4	
+R10	Contact Arg1:T10 Arg2:T8	
+R1	Part-Whole Arg1:T5 Arg2:T4	
+R8	Part-Whole Arg1:T3 Arg2:T1	
+R9	Part-Whole Arg1:T4 Arg2:T1	
+R11	Part-Whole Arg1:T10 Arg2:T1	

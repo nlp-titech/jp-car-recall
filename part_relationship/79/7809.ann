@@ -1,0 +1,9 @@
+T1	Parts 0 14	衝突被害軽減ブレーキシステム
+T2	Parts 19 29	コントロールユニット
+T3	Parts 30 37	制御プログラム
+R1	Part-Whole Arg1:T3 Arg2:T2	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+T4	Parts 70 76	警報ブレーキ
+T5	Parts 95 99	ブレーキ
+R3	Connect Arg1:T4 Arg2:T1	
+R4	Coreference Arg1:T5 Arg2:T4	

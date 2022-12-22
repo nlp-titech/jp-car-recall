@@ -1,0 +1,5 @@
+T1	Parts 12 15	速度計
+T2	Parts 40 43	速度計
+T3	Parts 54 57	速度計
+R1	Coreference Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T2 Arg2:T3	

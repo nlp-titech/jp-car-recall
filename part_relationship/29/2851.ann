@@ -1,0 +1,9 @@
+T1	Parts 0 12	電動式パワーステアリング
+T2	Parts 17 25	制御コントローラ
+T4	Parts 39 45	ステアリング
+T5	Parts 49 61	パワーステアリングモータ
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T5 Arg2:T1	
+T3	Parts 97 106	パワ－ステアリング
+R2	Coreference Arg1:T1 Arg2:T3	
+R3	Connect Arg1:T1 Arg2:T4	

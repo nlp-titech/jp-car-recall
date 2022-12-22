@@ -1,0 +1,7 @@
+T1	Parts 1 15	パワステアリングオイルポンプ
+T2	Parts 16 31	カム（可動オイル圧縮シリンダ）
+T3	Parts 66 68	カム
+T4	Parts 120 122	カム
+R1	Coreference Arg1:T4 Arg2:T3	
+R2	Coreference Arg1:T3 Arg2:T2	
+R3	Part-Whole Arg1:T2 Arg2:T1	

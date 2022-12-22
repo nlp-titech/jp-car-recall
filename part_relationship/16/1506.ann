@@ -1,0 +1,11 @@
+T4	Parts 59 62	後退灯
+T8	Parts 39 54	車両（アーム式ゲートリフト車）
+R4	Part-Whole Arg1:T4 Arg2:T8	
+T5	Parts 77 80	後退灯
+T1	Parts 2 6	トラック
+T2	Parts 7 9	荷台
+T3	Parts 20 24	昇降装置
+R1	Part-Whole Arg1:T2 Arg2:T8	
+R2	Part-Whole Arg1:T3 Arg2:T8	
+R3	Coreference Arg1:T4 Arg2:T5	
+R5	Contact Arg1:T2 Arg2:T3	

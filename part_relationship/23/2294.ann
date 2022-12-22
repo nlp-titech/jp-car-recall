@@ -1,0 +1,19 @@
+T12	Parts 21 29	ドライブチェーン
+T13	Parts 30 37	ガイドプレート
+T14	Parts 59 67	ドライブチェーン
+T15	Parts 95 103	ドライブチェーン
+T1	Parts 0 6	原動機出力軸
+T2	Parts 7 13	スプロケット
+R1	Coreference Arg1:T14 Arg2:T12	
+R2	Coreference Arg1:T15 Arg2:T14	
+T3	Parts 104 112	ミッションカバー
+T4	Parts 119 122	カバー
+R3	Coreference Arg1:T4 Arg2:T3	
+T5	Parts 133 140	エンジンオイル
+T6	Parts 146 151	後輪タイヤ
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Contact Arg1:T12 Arg2:T2	
+R8	Contact Arg1:T5 Arg2:T4	
+R6	Contact Arg1:T13 Arg2:T2	
+R10	Part-Whole Arg1:T13 Arg2:T1	
+R7	Connect Arg1:T6 Arg2:T1	

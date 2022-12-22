@@ -1,0 +1,11 @@
+T1	Parts 10 16	シートベルト
+T2	Parts 28 38	シートベルトスリーブ
+T3	Parts 85 91	シートベルト
+T4	Parts 55 59	ケーブル
+T6	Parts 0 4	運転者席
+T7	Parts 6 9	助手席
+R1	Contact Arg1:T1 Arg2:T6	
+R2	Contact Arg1:T1 Arg2:T7	
+R4	Part-Whole Arg1:T4 Arg2:T2	
+R5	Coreference Arg1:T1 Arg2:T3	
+R3	Contact Arg1:T1 Arg2:T2	

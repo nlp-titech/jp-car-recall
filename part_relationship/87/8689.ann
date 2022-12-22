@@ -1,0 +1,16 @@
+T1	Parts 0 9	３列目左右両シート
+T2	Parts 10 22	シートベルト上部アンカー
+T3	Parts 49 52	ボルト
+T4	Parts 53 59	ボディパネル
+T5	Parts 27 32	取付ボルト
+T6	Parts 80 82	車両
+T7	Parts 88 91	ボルト
+T8	Parts 92 98	ボディパネル
+R1	Coreference Arg1:T5 Arg2:T3	
+R2	Coreference Arg1:T3 Arg2:T7	
+R3	Coreference Arg1:T4 Arg2:T8	
+R4	Part-Whole Arg1:T1 Arg2:T6	
+R5	Part-Whole Arg1:T2 Arg2:T1	
+R6	Contact Arg1:T2 Arg2:T5	
+R7	Contact Arg1:T3 Arg2:T4	
+R8	Contact Arg1:T2 Arg2:T4	

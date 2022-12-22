@@ -1,0 +1,16 @@
+T1	Parts 0 13	テールゲートオープンステー
+T2	Parts 18 25	ボールスタッド
+T3	Parts 30 39	テールゲートヒンジ
+T4	Parts 49 56	ボールスタッド
+T5	Parts 73 79	テールゲート
+T6	Parts 126 133	ボールスタッド
+T7	Parts 143 150	ボールスタッド
+T8	Parts 154 160	テールゲート
+R1	Coreference Arg1:T2 Arg2:T4	
+R2	Coreference Arg1:T4 Arg2:T6	
+R3	Coreference Arg1:T6 Arg2:T7	
+R4	Contact Arg1:T1 Arg2:T5	
+R5	Part-Whole Arg1:T2 Arg2:T1	
+R6	Contact Arg1:T2 Arg2:T3	
+R7	Coreference Arg1:T5 Arg2:T8	
+R8	Part-Whole Arg1:T3 Arg2:T1	

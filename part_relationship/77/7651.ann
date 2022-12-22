@@ -1,0 +1,13 @@
+T1	Parts 0 5	前面ガラス
+T2	Parts 6 11	後面ガラス
+T3	Parts 23 26	ガラス
+T4	Parts 63 66	ガラス
+T5	Parts 98 101	ガラス
+R1	Oneway-Coreference Arg1:T3 Arg2:T1	
+R2	Oneway-Coreference Arg1:T3 Arg2:T2	
+R3	Coreference Arg1:T3 Arg2:T4	
+R4	Coreference Arg1:T4 Arg2:T5	
+T6	Parts 102 105	接着剤
+T7	Parts 39 50	下塗り剤（プライマー）
+R5	Coreference Arg1:T7 Arg2:T6	
+R6	Contact Arg1:T7 Arg2:T3	

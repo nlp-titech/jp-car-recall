@@ -1,0 +1,13 @@
+T2	Parts 72 77	ストッパー
+T4	Parts 0 4	ハンドル
+T5	Parts 85 89	ハンドル
+T6	Parts 13 22	ストッパープレート
+T7	Parts 115 124	ストッパープレート
+T8	Parts 23 27	フレーム
+T9	Parts 28 34	ヘッドパイプ
+R1	Contact Arg1:T6 Arg2:T4	
+R2	Coreference Arg1:T6 Arg2:T7	
+R3	Coreference Arg1:T4 Arg2:T5	
+R4	Part-Whole Arg1:T9 Arg2:T8	
+R5	Contact Arg1:T9 Arg2:T6	
+R6	Contact Arg1:T6 Arg2:T2	

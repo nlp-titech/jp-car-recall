@@ -1,0 +1,14 @@
+T1	Parts 22 39	ターボチャージャ潤滑用オイルパイプ
+T3	Parts 116 123	エンジンオイル
+T4	Parts 0 6	農耕トラクタ
+T8	Parts 48 51	ナット
+T9	Parts 109 112	ナット
+T10	Parts 7 10	原動機
+R1	Coreference Arg1:T9 Arg2:T8	
+R4	Contact Arg1:T3 Arg2:T1	
+R5	Part-Whole Arg1:T1 Arg2:T10	
+R6	Part-Whole Arg1:T10 Arg2:T4	
+R7	Contact Arg1:T3 Arg2:T10	
+R2	Contact Arg1:T1 Arg2:T2	
+T2	Parts 40 46	フレアナット
+R3	Coreference Arg1:T2 Arg2:T8	

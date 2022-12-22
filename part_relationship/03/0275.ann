@@ -1,0 +1,14 @@
+T6	Parts 0 6	後軸差動装置
+T7	Parts 75 78	原動機
+T8	Parts 90 97	駆動力移動機構
+T9	Parts 98 102	クラッチ
+T10	Parts 144 150	後軸差動装置
+#1	AnnotatorNotes T8	不明
+R2	Coreference Arg1:T10 Arg2:T6	
+T1	Parts 11 42	後輪左右の駆動力制御機構（アクティブヨーコントロールシステム）
+R5	Part-Whole Arg1:T9 Arg2:T8	
+T2	Parts 47 59	コンピュータープログラム
+R1	Part-Whole Arg1:T1 Arg2:T6	
+R4	Coreference Arg1:T1 Arg2:T8	
+R6	Connect Arg1:T6 Arg2:T7	
+R3	Part-Whole Arg1:T2 Arg2:T1	

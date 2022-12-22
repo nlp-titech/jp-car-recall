@@ -1,0 +1,10 @@
+T1	Parts 0 3	助手席
+T2	Parts 4 12	アシストグリップ
+T3	Parts 21 24	パネル
+T4	Parts 49 52	パネル
+T5	Parts 83 86	助手席
+T6	Parts 93 101	アシストグリップ
+R1	Coreference Arg1:T1 Arg2:T5	
+R2	Coreference Arg1:T2 Arg2:T6	
+R3	Coreference Arg1:T3 Arg2:T4	
+R4	Contact Arg1:T2 Arg2:T3	

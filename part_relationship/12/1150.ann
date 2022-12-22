@@ -1,0 +1,13 @@
+T17	Parts 116 120	エンジン
+T18	Parts 21 27	冷却水ホース
+T19	Parts 61 64	ホース
+T1	Parts 0 3	変速機
+T2	Parts 11 20	流体式補助制動装置
+T3	Parts 95 102	エンジン冷却水
+R2	Contact Arg1:T2 Arg2:T1	
+R3	Contact Arg1:T18 Arg2:T2	
+R4	Contact Arg1:T3 Arg2:T19	
+R5	Contact Arg1:T17 Arg2:T3	
+R6	Connect Arg1:T1 Arg2:T17	
+R1	Coreference Arg1:T18 Arg2:T19	
+R7	Contact Arg1:T19 Arg2:T17	

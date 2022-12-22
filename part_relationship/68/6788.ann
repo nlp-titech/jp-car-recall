@@ -1,0 +1,6 @@
+T2	Parts 114 118	制動装置
+T3	Parts 42 50	機能制御用センサ
+T5	Parts 0 37	車両安定性制御機能（ビークル・スタビリティ・コントロールシステム：ＶＳＣ）
+T1	Parts 92 95	ＶＳＣ
+R1	Coreference Arg1:T5 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T5	

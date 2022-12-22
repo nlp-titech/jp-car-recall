@@ -1,0 +1,17 @@
+T4	Parts 12 17	燃料タンク
+T5	Parts 25 27	配管
+T6	Parts 28 34	ゴム製ホース
+T8	Parts 39 47	フィルタユニット
+T9	Parts 65 71	ゴム製ホース
+T11	Parts 93 95	燃料
+T14	Parts 116 118	燃料
+T15	Parts 124 128	エンジン
+R2	Coreference Arg1:T9 Arg2:T6	
+R6	Coreference Arg1:T14 Arg2:T11	
+R9	Part-Whole Arg1:T6 Arg2:T5	
+R14	Contact Arg1:T8 Arg2:T6	
+R11	Part-Whole Arg1:T11 Arg2:T4	
+R16	Contact Arg1:T15 Arg2:T14	
+R1	Contact Arg1:T4 Arg2:T5	
+R3	Contact Arg1:T5 Arg2:T11	
+R4	Connect Arg1:T4 Arg2:T15	

@@ -1,0 +1,14 @@
+T1	Parts 51 57	保護ヒューズ
+T2	Parts 23 35	後写鏡位置調整用スイッチ
+T3	Parts 0 6	電動式後写鏡
+T5	Parts 11 15	保護回路
+T6	Parts 37 39	配線
+T7	Parts 69 71	配線
+R1	Coreference Arg1:T7 Arg2:T6	
+R2	Contact Arg1:T1 Arg2:T6	
+R3	Part-Whole Arg1:T6 Arg2:T2	
+R4	Connect Arg1:T2 Arg2:T5	
+R5	Part-Whole Arg1:T5 Arg2:T3	
+R6	Part-Whole Arg1:T2 Arg2:T3	
+R7	Part-Whole Arg1:T6 Arg2:T3	
+R8	Part-Whole Arg1:T1 Arg2:T5	

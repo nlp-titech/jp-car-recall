@@ -1,0 +1,10 @@
+T18	Parts 103 106	制動灯
+T19	Parts 59 66	スイッチカバー
+T20	Parts 0 10	後輪用制動灯スイッチ
+T21	Parts 38 42	スイッチ
+T1	Parts 23 30	触媒コンバータ
+R1	Coreference Arg1:T20 Arg2:T21	
+T3	Parts 97 99	後輪
+R2	Contact Arg1:T19 Arg2:T21	
+R3	Connect Arg1:T18 Arg2:T21	
+R4	Connect Arg1:T3 Arg2:T21	

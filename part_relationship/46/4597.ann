@@ -1,0 +1,12 @@
+T1	Parts 5 12	アルミホイール
+T2	Parts 19 26	アルミホイール
+T3	Parts 38 42	ホイール
+T4	Parts 94 98	ホイール
+T5	Parts 0 4	走行装置
+T6	Parts 27 30	タイヤ
+R1	Part-Whole Arg1:T1 Arg2:T5	
+R2	Coreference Arg1:T1 Arg2:T2	
+R3	Part-Whole Arg1:T6 Arg2:T5	
+R4	Contact Arg1:T2 Arg2:T6	
+R5	Coreference Arg1:T2 Arg2:T3	
+R6	Coreference Arg1:T3 Arg2:T4	

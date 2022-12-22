@@ -1,0 +1,28 @@
+T4	Parts 92 96	クリップ
+T11	Parts 84 87	ホース
+T12	Parts 97 100	ホース
+T13	Parts 136 139	ホース
+T14	Parts 150 153	ホース
+T15	Parts 171 174	ホース
+T16	Parts 157 160	冷却水
+T19	Parts 167 170	燃料系
+T20	Parts 178 180	燃料
+T1	Parts 16 31	ラジエタリザーバータンクホース
+T2	Parts 34 62	燃料装置（燃料タンクからエンジンに燃料を供給するホース）
+R1	Coreference Arg1:T11 Arg2:T12	
+R2	Coreference Arg1:T12 Arg2:T13	
+R6	Oneway-Coreference Arg1:T11 Arg2:T1	
+R7	Oneway-Coreference Arg1:T11 Arg2:T2	
+R8	Contact Arg1:T11 Arg2:T4	
+R9	Oneway-Coreference Arg1:T13 Arg2:T14	
+R10	Oneway-Coreference Arg1:T13 Arg2:T15	
+T3	Parts 5 15	ラジエタドレンホース
+R11	Oneway-Coreference Arg1:T11 Arg2:T3	
+R12	Oneway-Coreference Arg1:T14 Arg2:T1	
+R13	Oneway-Coreference Arg1:T14 Arg2:T3	
+R14	Coreference Arg1:T15 Arg2:T2	
+R3	Contact Arg1:T20 Arg2:T15	
+T5	Parts 146 149	冷却系
+R4	Part-Whole Arg1:T14 Arg2:T5	
+R5	Part-Whole Arg1:T15 Arg2:T19	
+R15	Contact Arg1:T16 Arg2:T14	

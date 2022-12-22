@@ -1,0 +1,13 @@
+T10	Parts 49 57	クラッチピストン
+T1	Parts 0 6	動力伝達装置
+T2	Parts 11 15	副変速機
+T3	Parts 16 25	クラッチハウジング
+T4	Parts 70 78	クラッチピストン
+T5	Parts 88 91	駆動軸
+T6	Parts 99 105	駐車制動装置
+R1	Coreference Arg1:T4 Arg2:T10	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T3 Arg2:T2	
+R4	Connect Arg1:T10 Arg2:T3	
+R5	Connect Arg1:T4 Arg2:T5	
+R6	Part-Whole Arg1:T5 Arg2:T6	

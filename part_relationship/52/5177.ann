@@ -1,0 +1,8 @@
+T1	Parts 1 6	燃料ポンプ
+T3	Parts 21 32	燃料ポンプ締付キャップ
+T4	Parts 70 74	キャップ
+T6	Parts 78 80	燃料
+R3	Coreference Arg1:T3 Arg2:T4	
+R5	Contact Arg1:T4 Arg2:T6	
+R1	Contact Arg1:T1 Arg2:T3	
+R2	Contact Arg1:T6 Arg2:T1	

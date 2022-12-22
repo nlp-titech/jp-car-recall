@@ -1,0 +1,5 @@
+T1	Parts 30 41	イグニッションスイッチ
+T3	Parts 0 10	ブレーキ液漏れ警告灯
+T4	Parts 11 18	球切れ確認回路
+R1	Connect Arg1:T1 Arg2:T3	
+R2	Part-Whole Arg1:T4 Arg2:T3	

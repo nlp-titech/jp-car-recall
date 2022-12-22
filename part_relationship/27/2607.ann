@@ -1,0 +1,14 @@
+T17	Parts 23 35	トランスミッションケース
+T18	Parts 112 121	トランスミッション
+T1	Parts 0 18	４速オートマチックトランスミッション
+T3	Parts 67 75	プロペラシャフト
+T4	Parts 157 165	プロペラシャフト
+R1	Coreference Arg1:T4 Arg2:T3	
+T6	Parts 169 174	燃料タンク
+T7	Parts 180 182	燃料
+R2	Coreference Arg1:T18 Arg2:T1	
+R3	Part-Whole Arg1:T17 Arg2:T1	
+R5	Contact Arg1:T3 Arg2:T1	
+R7	Part-Whole Arg1:T7 Arg2:T6	
+T2	Parts 38 41	潤滑油
+R4	Contact Arg1:T2 Arg2:T17	

@@ -1,0 +1,7 @@
+T14	Parts 80 84	エンジン
+T15	Parts 99 110	ドライブプーリシャフト
+T16	Parts 142 146	シャフト
+T1	Parts 0 17	エンジン制御コンピュータ（ＥＣＵ）
+R1	Coreference Arg1:T15 Arg2:T16	
+R3	Connect Arg1:T1 Arg2:T14	
+T3	Parts 31 33	車輪

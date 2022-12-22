@@ -1,0 +1,19 @@
+T1	Parts 0 13	ＤＰＲ（排出ガス浄化装置）
+T3	Parts 18 26	電気式燃料遮断弁
+T4	Parts 40 47	防水用キャップ
+T5	Parts 83 87	コイル線
+T6	Parts 111 115	コイル線
+T8	Parts 121 125	樹脂部品
+T9	Parts 98 101	警告灯
+T10	Parts 48 51	遮断弁
+T11	Parts 77 80	遮断弁
+T13	Parts 137 139	燃料
+R1	Contact Arg1:T10 Arg2:T4	
+R2	Coreference Arg1:T11 Arg2:T10	
+R3	Part-Whole Arg1:T5 Arg2:T11	
+R4	Coreference Arg1:T6 Arg2:T5	
+R5	Part-Whole Arg1:T8 Arg2:T11	
+R6	Coreference Arg1:T10 Arg2:T3	
+R7	Part-Whole Arg1:T3 Arg2:T1	
+R8	Connect Arg1:T9 Arg2:T11	
+R9	Contact Arg1:T13 Arg2:T10	

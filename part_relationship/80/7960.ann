@@ -1,0 +1,9 @@
+T1	Parts 0 6	農耕トラクタ
+T2	Parts 7 15	リバーサーレバー
+T3	Parts 16 21	ブラケット
+T4	Parts 38 44	レバーガイド
+T5	Parts 75 80	ブラケット
+R1	Coreference Arg1:T3 Arg2:T5	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Contact Arg1:T2 Arg2:T3	
+R4	Part-Whole Arg1:T4 Arg2:T1	

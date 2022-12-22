@@ -1,0 +1,18 @@
+T12	Parts 53 61	バキュームポンプ
+T13	Parts 97 105	バキュームポンプ
+T14	Parts 108 111	ベーン
+T15	Parts 116 119	ポンプ
+T1	Parts 0 8	ブレーキ倍力装置
+T2	Parts 16 24	バキュームポンプ
+T3	Parts 29 34	オイル油路
+T4	Parts 35 42	ユニオンボルト
+R1	Coreference Arg1:T12 Arg2:T2	
+T5	Parts 63 66	潤滑油
+R2	Coreference Arg1:T13 Arg2:T12	
+R3	Coreference Arg1:T15 Arg2:T13	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T4 Arg2:T3	
+R6	Connect Arg1:T3 Arg2:T2	
+R7	Contact Arg1:T5 Arg2:T12	
+R8	Part-Whole Arg1:T14 Arg2:T13	
+#1	AnnotatorNotes T2	ブレーキ倍力装置の一部と考えた

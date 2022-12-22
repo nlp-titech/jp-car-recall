@@ -1,0 +1,9 @@
+T16	Parts 10 13	変向機
+T17	Parts 89 92	変向機
+T19	Parts 26 32	変向機ケース
+T4	Parts 95 98	オイル
+R2	Coreference Arg1:T16 Arg2:T17	
+R3	Part-Whole Arg1:T16 Arg2:T19	
+R4	Contact Arg1:T4 Arg2:T17	
+T1	Parts 105 114	アウターベアリング
+R1	Part-Whole Arg1:T1 Arg2:T17	

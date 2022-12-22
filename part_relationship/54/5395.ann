@@ -1,0 +1,9 @@
+T1	Parts 44 51	ブレーキオイル
+T2	Parts 84 91	ブレーキオイル
+T3	Parts 0 2	後輪
+T4	Parts 12 21	キャリパーピストン
+T5	Parts 3 7	制動装置
+R1	Connect Arg1:T5 Arg2:T3	
+R2	Part-Whole Arg1:T4 Arg2:T5	
+R3	Coreference Arg1:T1 Arg2:T2	
+R4	Contact Arg1:T1 Arg2:T4	

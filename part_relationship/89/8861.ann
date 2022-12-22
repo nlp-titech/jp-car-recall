@@ -1,0 +1,7 @@
+T1	Parts 0 12	燃料蒸発ガス排出抑制装置
+T2	Parts 43 45	燃料
+T3	Parts 87 89	燃料
+T4	Parts 94 96	燃料
+R1	Contact Arg1:T1 Arg2:T2	
+R2	Coreference Arg1:T2 Arg2:T3	
+R3	Coreference Arg1:T3 Arg2:T4	

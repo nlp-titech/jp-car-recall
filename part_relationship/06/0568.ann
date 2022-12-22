@@ -1,0 +1,27 @@
+T9	Parts 19 24	手動変速機
+T10	Parts 36 39	変速機
+T11	Parts 58 65	後退灯スイッチ
+R1	Coreference Arg1:T10 Arg2:T9	
+T3	Parts 93 96	後退灯
+T4	Parts 121 125	電気回路
+T5	Parts 130 133	後退灯
+T6	Parts 134 136	計器
+T7	Parts 138 141	警告灯
+R2	Coreference Arg1:T5 Arg2:T3	
+T1	Parts 0 13	ディーゼルエンジン搭載車両
+R3	Part-Whole Arg1:T9 Arg2:T1	
+T8	Parts 51 54	変速機
+R4	Coreference Arg1:T10 Arg2:T8	
+R5	Part-Whole Arg1:T11 Arg2:T8	
+R7	Connect Arg1:T11 Arg2:T3	
+R8	Contact Arg1:T4 Arg2:T5	
+R9	Contact Arg1:T4 Arg2:T6	
+R10	Contact Arg1:T4 Arg2:T7	
+R11	Connect Arg1:T8 Arg2:T6	
+R12	Connect Arg1:T8 Arg2:T7	
+T2	Parts 41 44	オイル
+R6	Contact Arg1:T2 Arg2:T10	
+R13	Part-Whole Arg1:T4 Arg2:T1	
+R14	Part-Whole Arg1:T5 Arg2:T1	
+R15	Part-Whole Arg1:T6 Arg2:T1	
+R16	Part-Whole Arg1:T7 Arg2:T1	

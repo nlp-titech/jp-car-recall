@@ -1,0 +1,20 @@
+T1	Parts 55 67	エキゾーストマニホールド
+T3	Parts 82 91	パワーステアリング
+T4	Parts 99 107	かじ取りハンドル
+T5	Parts 0 6	かじ取り装置
+T6	Parts 11 25	パワーステアリング高圧ホース
+T7	Parts 38 42	エンジン
+T8	Parts 92 95	作動油
+T9	Parts 125 128	作動油
+T10	Parts 51 54	ホース
+T11	Parts 74 77	ホース
+R1	Coreference Arg1:T10 Arg2:T6	
+R2	Coreference Arg1:T11 Arg2:T10	
+R3	Part-Whole Arg1:T11 Arg2:T3	
+R4	Connect Arg1:T4 Arg2:T5	
+R5	Part-Whole Arg1:T6 Arg2:T5	
+R6	Part-Whole Arg1:T1 Arg2:T7	
+R7	Contact Arg1:T8 Arg2:T3	
+R8	Part-Whole Arg1:T3 Arg2:T5	
+R9	Connect Arg1:T7 Arg2:T5	
+R10	Coreference Arg1:T9 Arg2:T8	

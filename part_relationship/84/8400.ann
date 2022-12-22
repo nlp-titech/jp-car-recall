@@ -1,0 +1,7 @@
+T1	Parts 0 4	電源配線
+T2	Parts 20 27	端子固定ナット
+T3	Parts 101 104	警告灯
+T4	Parts 109 113	エンジン
+R1	Contact Arg1:T1 Arg2:T2	
+R2	Connect Arg1:T1 Arg2:T3	
+R3	Connect Arg1:T1 Arg2:T4	

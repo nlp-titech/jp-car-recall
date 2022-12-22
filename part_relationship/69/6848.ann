@@ -1,0 +1,21 @@
+T1	Parts 100 115	パワーステアリング用油圧ポンプ
+T4	Parts 5 13	補機駆動用ベルト
+T5	Parts 83 91	補機駆動用ベルト
+T10	Parts 134 139	充電警告灯
+T11	Parts 0 4	エンジン
+T12	Parts 149 153	ハンドル
+T14	Parts 95 98	発電機
+T2	Parts 21 33	ベルトオートテンショナー
+T6	Parts 34 43	スラストワッシャー
+T8	Parts 54 63	スラストワッシャー
+R1	Coreference Arg1:T6 Arg2:T8	
+T3	Parts 69 78	オートテンショナー
+R2	Coreference Arg1:T2 Arg2:T3	
+R3	Coreference Arg1:T4 Arg2:T5	
+R4	Contact Arg1:T5 Arg2:T14	
+R5	Contact Arg1:T5 Arg2:T1	
+R6	Part-Whole Arg1:T4 Arg2:T11	
+R7	Part-Whole Arg1:T2 Arg2:T4	
+R8	Contact Arg1:T2 Arg2:T6	
+R9	Connect Arg1:T14 Arg2:T11	
+R10	Connect Arg1:T1 Arg2:T11	

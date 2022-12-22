@@ -1,0 +1,11 @@
+T12	Parts 19 28	ギヤシフトユニット
+T13	Parts 31 39	ボールベアリング
+T14	Parts 54 59	ベアリング
+T15	Parts 101 103	ギヤ
+T1	Parts 0 10	ハイブリッド仕様バス
+T2	Parts 11 14	変速機
+R1	Coreference Arg1:T13 Arg2:T14	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T15 Arg2:T2	
+R4	Part-Whole Arg1:T12 Arg2:T2	
+R5	Part-Whole Arg1:T13 Arg2:T12	

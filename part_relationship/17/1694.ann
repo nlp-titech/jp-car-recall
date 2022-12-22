@@ -1,0 +1,22 @@
+T14	Parts 112 116	ブレーキ
+T15	Parts 123 131	ホイールシリンダ
+T16	Parts 136 140	ブレーキ
+T17	Parts 47 51	ブレーキ
+T1	Parts 0 9	前輪ドラムブレーキ
+T2	Parts 10 17	バックプレート
+T3	Parts 18 20	車軸
+T4	Parts 26 29	ボルト
+R1	Coreference Arg1:T1 Arg2:T17	
+T6	Parts 55 58	ボルト
+R2	Coreference Arg1:T4 Arg2:T6	
+T7	Parts 88 91	ボルト
+R3	Coreference Arg1:T6 Arg2:T7	
+T8	Parts 106 109	ボルト
+R4	Coreference Arg1:T7 Arg2:T8	
+R5	Coreference Arg1:T17 Arg2:T14	
+R6	Coreference Arg1:T14 Arg2:T16	
+R7	Part-Whole Arg1:T2 Arg2:T1	
+R8	Contact Arg1:T3 Arg2:T2	
+R9	Contact Arg1:T4 Arg2:T3	
+R10	Contact Arg1:T4 Arg2:T2	
+R11	Part-Whole Arg1:T15 Arg2:T14	

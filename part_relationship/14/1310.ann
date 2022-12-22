@@ -1,0 +1,13 @@
+T15	Parts 17 21	電子基板
+T17	Parts 46 52	トランジスタ
+T18	Parts 68 75	燃料噴射用電源
+T19	Parts 76 80	ヒューズ
+T20	Parts 94 98	エンジン
+T1	Parts 0 14	エンジンコントロールユニット
+T4	Parts 85 87	燃料
+R2	Part-Whole Arg1:T15 Arg2:T1	
+R4	Connect Arg1:T19 Arg2:T18	
+R5	Connect Arg1:T18 Arg2:T15	
+R6	Contact Arg1:T20 Arg2:T4	
+R7	Connect Arg1:T20 Arg2:T1	
+R1	Part-Whole Arg1:T17 Arg2:T15	

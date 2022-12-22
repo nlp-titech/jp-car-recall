@@ -1,0 +1,17 @@
+T1	Parts 0 6	農耕トラクタ
+T2	Parts 90 94	ブッシュ
+T3	Parts 11 13	車軸
+T4	Parts 24 26	車軸
+T5	Parts 81 83	車軸
+T6	Parts 100 102	車軸
+T7	Parts 121 123	車軸
+T8	Parts 33 37	Ｃリング
+R1	Coreference Arg1:T4 Arg2:T3	
+R2	Contact Arg1:T8 Arg2:T4	
+R3	Coreference Arg1:T5 Arg2:T4	
+R4	Contact Arg1:T2 Arg2:T5	
+R5	Coreference Arg1:T6 Arg2:T5	
+R6	Coreference Arg1:T7 Arg2:T6	
+R7	Part-Whole Arg1:T3 Arg2:T1	
+R8	Part-Whole Arg1:T8 Arg2:T1	
+R9	Part-Whole Arg1:T2 Arg2:T1	

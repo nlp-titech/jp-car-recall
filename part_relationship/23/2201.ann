@@ -1,0 +1,14 @@
+T12	Parts 0 9	変速機用油圧ポンプ
+T13	Parts 10 16	作動油タンク
+T15	Parts 17 21	接続配管
+T17	Parts 59 61	配管
+T19	Parts 26 28	配管
+T1	Parts 32 35	ホース
+T2	Parts 92 95	作動油
+R1	Coreference Arg1:T17 Arg2:T19	
+R2	Coreference Arg1:T19 Arg2:T15	
+R3	Contact Arg1:T15 Arg2:T12	
+R4	Contact Arg1:T15 Arg2:T13	
+R5	Part-Whole Arg1:T1 Arg2:T19	
+R6	Contact Arg1:T2 Arg2:T17	
+R7	Connect Arg1:T13 Arg2:T12	

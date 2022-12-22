@@ -1,0 +1,7 @@
+T9	Parts 22 27	押さえ座金
+T1	Parts 0 4	乗車装置
+T3	Parts 17 21	防振ゴム
+T4	Parts 66 70	キャビン
+R1	Contact Arg1:T3 Arg2:T9	
+R2	Part-Whole Arg1:T3 Arg2:T1	
+R3	Contact Arg1:T1 Arg2:T4	

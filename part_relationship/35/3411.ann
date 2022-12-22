@@ -1,0 +1,18 @@
+T19	Parts 84 88	フィルタ
+T20	Parts 34 39	燃料タンク
+T21	Parts 18 22	フィルタ
+T18	Parts 116 120	エンジン
+T1	Parts 0 5	全輪駆動車
+T2	Parts 6 13	高圧燃料ポンプ
+R1	Coreference Arg1:T19 Arg2:T21	
+T3	Parts 106 108	燃料
+T4	Parts 69 73	燃料配管
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T18 Arg2:T1	
+R4	Contact Arg1:T4 Arg2:T3	
+R5	Part-Whole Arg1:T21 Arg2:T2	
+R6	Part-Whole Arg1:T3 Arg2:T20	
+R7	Part-Whole Arg1:T20 Arg2:T1	
+R9	Contact Arg1:T20 Arg2:T4	
+R8	Contact Arg1:T2 Arg2:T4	
+R11	Contact Arg1:T2 Arg2:T3	

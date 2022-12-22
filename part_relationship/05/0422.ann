@@ -1,0 +1,25 @@
+T19	Parts 18 23	燃料タンク
+T21	Parts 31 35	ハンガー
+T22	Parts 36 42	緩衝用ラバー
+T23	Parts 69 72	ラバー
+T24	Parts 77 80	タンク
+T25	Parts 81 85	ハンガー
+T26	Parts 96 99	タンク
+T27	Parts 137 142	燃料タンク
+T31	Parts 190 193	タンク
+T1	Parts 0 12	アルミ製燃料タンク搭載車
+R2	Coreference Arg1:T23 Arg2:T22	
+R3	Coreference Arg1:T25 Arg2:T21	
+R4	Coreference Arg1:T26 Arg2:T24	
+R5	Coreference Arg1:T24 Arg2:T19	
+T2	Parts 123 125	燃料
+R6	Coreference Arg1:T27 Arg2:T26	
+T3	Parts 213 215	燃料
+R8	Coreference Arg1:T31 Arg2:T27	
+R9	Coreference Arg1:T3 Arg2:T2	
+R10	Contact Arg1:T21 Arg2:T19	
+R11	Part-Whole Arg1:T22 Arg2:T21	
+R12	Part-Whole Arg1:T2 Arg2:T26	
+T4	Parts 181 183	車両
+R1	Coreference Arg1:T1 Arg2:T4	
+R7	Part-Whole Arg1:T19 Arg2:T1	

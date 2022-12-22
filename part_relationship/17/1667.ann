@@ -1,0 +1,13 @@
+T16	Parts 10 13	給油口
+T17	Parts 0 9	燃料タンクキャップ
+T18	Parts 29 32	給油口
+T19	Parts 40 49	燃料タンクキャップ
+T20	Parts 95 98	給油口
+T1	Parts 24 26	燃料
+R1	Coreference Arg1:T17 Arg2:T19	
+T2	Parts 100 102	燃料
+R2	Coreference Arg1:T18 Arg2:T20	
+R3	Coreference Arg1:T1 Arg2:T2	
+R4	Contact Arg1:T16 Arg2:T17	
+R5	Contact Arg1:T18 Arg2:T1	
+R6	Coreference Arg1:T18 Arg2:T16	

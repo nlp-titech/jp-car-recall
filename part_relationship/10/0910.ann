@@ -1,0 +1,20 @@
+T3	Parts 31 50	フードロックリリースハンドルブラケット
+T4	Parts 63 68	ブラケット
+T5	Parts 69 73	固定ネジ
+T6	Parts 74 76	被覆
+T7	Parts 101 103	配線
+T8	Parts 104 108	固定ネジ
+T9	Parts 119 121	配線
+T10	Parts 128 132	ヒューズ
+T11	Parts 136 141	方向指示器
+T12	Parts 144 147	速度計
+R1	Coreference Arg1:T9 Arg2:T7	
+R3	Coreference Arg1:T8 Arg2:T5	
+R4	Coreference Arg1:T4 Arg2:T3	
+R7	Contact Arg1:T4 Arg2:T5	
+R9	Contact Arg1:T9 Arg2:T10	
+R10	Contact Arg1:T9 Arg2:T11	
+R11	Contact Arg1:T9 Arg2:T12	
+T1	Parts 0 7	車室内電気配線
+R2	Coreference Arg1:T7 Arg2:T1	
+R5	Part-Whole Arg1:T6 Arg2:T1	

@@ -1,0 +1,14 @@
+T10	Parts 40 47	シャシフレーム
+T11	Parts 29 39	バッテリーブラケット
+T12	Parts 76 83	シャシフレーム
+T13	Parts 97 104	シャシフレーム
+T1	Parts 15 20	バッテリー
+R1	Coreference Arg1:T12 Arg2:T10	
+R2	Coreference Arg1:T13 Arg2:T12	
+T2	Parts 8 10	車両
+R3	Part-Whole Arg1:T1 Arg2:T2	
+R5	Contact Arg1:T11 Arg2:T10	
+T3	Parts 0 3	塵芥車
+R6	Coreference Arg1:T3 Arg2:T2	
+R4	Contact Arg1:T1 Arg2:T11	
+R7	Part-Whole Arg1:T10 Arg2:T2	

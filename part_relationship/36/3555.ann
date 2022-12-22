@@ -1,0 +1,12 @@
+T1	Parts 91 98	エンジンオイル
+T2	Parts 22 29	オイルフィルタ
+T3	Parts 70 77	オイルフィルタ
+T4	Parts 0 6	農耕トラクタ
+T5	Parts 40 44	Ｏリング
+T8	Parts 7 10	原動機
+R1	Coreference Arg1:T3 Arg2:T2	
+R2	Part-Whole Arg1:T2 Arg2:T8	
+R3	Contact Arg1:T5 Arg2:T2	
+R4	Part-Whole Arg1:T8 Arg2:T4	
+R5	Contact Arg1:T1 Arg2:T3	
+R6	Contact Arg1:T1 Arg2:T8	

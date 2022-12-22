@@ -1,0 +1,4 @@
+T1	Parts 0 10	リアドライブシャフト
+T2	Parts 65 73	ドライブシャフト
+T3	Parts 99 107	パーキングロック
+R1	Coreference Arg1:T1 Arg2:T2	

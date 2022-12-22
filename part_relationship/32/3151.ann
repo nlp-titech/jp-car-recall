@@ -1,0 +1,7 @@
+T10	Parts 7 15	ターボチャージャ
+T11	Parts 24 38	マフラ・サポート・ブラケット
+T12	Parts 55 60	ブラケット
+R1	Coreference Arg1:T11 Arg2:T12	
+T1	Parts 78 81	オイル
+R2	Contact Arg1:T11 Arg2:T10	
+R3	Contact Arg1:T1 Arg2:T10	

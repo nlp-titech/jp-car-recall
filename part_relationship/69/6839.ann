@@ -1,0 +1,17 @@
+T3	Parts 119 125	駐車ブレーキ
+T4	Parts 0 6	動力伝達装置
+T5	Parts 38 43	スプリング
+T6	Parts 11 16	自動変速機
+T7	Parts 70 73	シフト
+T9	Parts 34 37	ロッド
+T10	Parts 25 27	ギヤ
+T11	Parts 102 104	車両
+T12	Parts 134 136	車両
+R1	Part-Whole Arg1:T6 Arg2:T4	
+R2	Part-Whole Arg1:T10 Arg2:T6	
+R3	Contact Arg1:T10 Arg2:T9	
+R4	Contact Arg1:T9 Arg2:T5	
+R5	Part-Whole Arg1:T4 Arg2:T11	
+R6	Connect Arg1:T6 Arg2:T7	
+R7	Coreference Arg1:T11 Arg2:T12	
+R8	Part-Whole Arg1:T3 Arg2:T12	

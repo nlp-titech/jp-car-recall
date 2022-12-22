@@ -1,0 +1,24 @@
+T1	Parts 44 56	トランスミッションケース
+T2	Parts 37 43	車体フレーム
+T3	Parts 4 8	スタータ
+T4	Parts 11 15	バッテリ
+T5	Parts 109 113	バッテリ
+T6	Parts 94 97	カバー
+T7	Parts 0 3	原動機
+T11	Parts 17 21	電源配線
+T12	Parts 120 134	アイソレータ（電源遮断装置）
+T15	Parts 34 36	配線
+T16	Parts 91 93	配線
+T17	Parts 138 140	配線
+T8	Parts 141 147	アイソレータ
+R1	Coreference Arg1:T11 Arg2:T15	
+R2	Coreference Arg1:T15 Arg2:T16	
+R3	Coreference Arg1:T16 Arg2:T17	
+R4	Part-Whole Arg1:T3 Arg2:T7	
+R5	Contact Arg1:T3 Arg2:T11	
+R6	Contact Arg1:T4 Arg2:T11	
+R7	Connect Arg1:T3 Arg2:T4	
+R8	Part-Whole Arg1:T6 Arg2:T16	
+R9	Coreference Arg1:T4 Arg2:T5	
+R10	Coreference Arg1:T12 Arg2:T8	
+R11	Connect Arg1:T5 Arg2:T12	

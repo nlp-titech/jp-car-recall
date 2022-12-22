@@ -1,0 +1,15 @@
+T1	Parts 0 16	サスペンション（フロント、リア）
+T2	Parts 17 34	ブレーキキャリパ（フロント、リア）
+T3	Parts 35 45	フロントサブフレーム
+T4	Parts 46 55	リアクロスメンバー
+T5	Parts 56 70	アンダーボディーデフレクター
+T6	Parts 71 77	取付けボルト
+T8	Parts 182 185	ボルト
+R1	Contact Arg1:T6 Arg2:T5	
+R2	Contact Arg1:T6 Arg2:T4	
+R3	Contact Arg1:T6 Arg2:T3	
+R4	Contact Arg1:T6 Arg2:T2	
+R5	Contact Arg1:T6 Arg2:T1	
+R6	Contact Arg1:T1 Arg2:T3	
+R7	Contact Arg1:T2 Arg2:T3	
+R8	Coreference Arg1:T6 Arg2:T8	

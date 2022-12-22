@@ -1,0 +1,15 @@
+T14	Parts 94 98	ヒューズ
+T15	Parts 102 105	原動機
+T10	Parts 40 44	後部座席
+T11	Parts 45 47	金枠
+T1	Parts 0 4	後部座席
+T4	Parts 23 27	電気配線
+T5	Parts 76 80	電気配線
+T6	Parts 81 83	被覆
+R1	Coreference Arg1:T5 Arg2:T4	
+R3	Coreference Arg1:T1 Arg2:T10	
+T2	Parts 6 16	燃料ポンプ用電気配線
+R2	Coreference Arg1:T2 Arg2:T4	
+R5	Part-Whole Arg1:T11 Arg2:T10	
+R6	Part-Whole Arg1:T6 Arg2:T5	
+R7	Connect Arg1:T14 Arg2:T5	

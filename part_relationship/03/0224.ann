@@ -1,0 +1,15 @@
+T12	Parts 17 24	センターアーム
+T13	Parts 25 31	ラックエンド
+T14	Parts 32 37	締結ボルト
+T15	Parts 78 81	ボルト
+T16	Parts 99 102	ボルト
+T17	Parts 7 12	リンク機構
+T18	Parts 0 6	かじ取り装置
+R1	Coreference Arg1:T15 Arg2:T14	
+R2	Coreference Arg1:T16 Arg2:T15	
+R3	Part-Whole Arg1:T17 Arg2:T18	
+R4	Part-Whole Arg1:T12 Arg2:T17	
+R5	Part-Whole Arg1:T13 Arg2:T17	
+R6	Contact Arg1:T12 Arg2:T13	
+R7	Contact Arg1:T12 Arg2:T14	
+R8	Contact Arg1:T13 Arg2:T14	

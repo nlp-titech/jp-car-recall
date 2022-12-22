@@ -1,0 +1,13 @@
+T1	Parts 2 8	中型トラック
+T2	Parts 13 29	ＤＰＲフィルタ詰まり検知用パイプ
+T3	Parts 42 45	ＤＰＲ
+T4	Parts 58 61	パイプ
+T5	Parts 96 103	ＤＰＲフィルタ
+T6	Parts 111 117	ＤＰＲ警告灯
+T7	Parts 132 139	ＤＰＲフィルタ
+R1	Coreference Arg1:T2 Arg2:T4	
+R2	Coreference Arg1:T5 Arg2:T7	
+R3	Part-Whole Arg1:T3 Arg2:T1	
+R4	Contact Arg1:T2 Arg2:T3	
+R5	Part-Whole Arg1:T5 Arg2:T3	
+R6	Connect Arg1:T3 Arg2:T6	

@@ -1,0 +1,12 @@
+T15	Parts 10 28	後々軸（非駆動軸）アクスルハウジング
+T16	Parts 87 96	アクスルハウジング
+T17	Parts 101 105	ブレーキ
+T18	Parts 109 112	タイヤ
+T19	Parts 113 117	フレーム
+T21	Parts 0 9	後２軸大型トラック
+R1	Coreference Arg1:T16 Arg2:T15	
+R2	Part-Whole Arg1:T15 Arg2:T21	
+R3	Part-Whole Arg1:T17 Arg2:T21	
+R4	Part-Whole Arg1:T18 Arg2:T21	
+R5	Part-Whole Arg1:T19 Arg2:T21	
+R6	Connect Arg1:T18 Arg2:T16	

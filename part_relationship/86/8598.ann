@@ -1,0 +1,14 @@
+T1	Parts 0 10	前輪用ブレーキホース
+T2	Parts 15 19	ホルダー
+T3	Parts 26 30	ホルダー
+T4	Parts 79 83	ホルダー
+T5	Parts 103 110	ブレーキホース
+T6	Parts 111 119	フロントフォーク
+T7	Parts 126 129	ホース
+T8	Parts 140 145	ブレーキ液
+R1	Contact Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T3 Arg2:T2	
+R3	Coreference Arg1:T4 Arg2:T3	
+R4	Coreference Arg1:T5 Arg2:T1	
+R5	Coreference Arg1:T7 Arg2:T5	
+R6	Connect Arg1:T8 Arg2:T7	

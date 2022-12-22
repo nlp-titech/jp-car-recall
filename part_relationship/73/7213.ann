@@ -1,0 +1,9 @@
+T1	Parts 126 138	パワーステアリングポンプ
+T2	Parts 0 10	原動機クランクプーリ
+T3	Parts 144 148	ハンドル
+T4	Parts 34 40	防振用ラバー
+T5	Parts 67 73	防振用ラバー
+R2	Contact Arg1:T2 Arg2:T4	
+R3	Coreference Arg1:T4 Arg2:T5	
+R4	Connect Arg1:T1 Arg2:T3	
+R5	Connect Arg1:T2 Arg2:T1	

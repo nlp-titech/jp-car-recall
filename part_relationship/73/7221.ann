@@ -1,0 +1,11 @@
+T1	Parts 8 15	シートヒーター
+T2	Parts 16 25	電気配線（より線）
+T3	Parts 47 51	電気配線
+T4	Parts 70 74	電気配線
+T5	Parts 0 5	前席シート
+T7	Parts 82 85	シート
+R1	Part-Whole Arg1:T1 Arg2:T5	
+R3	Coreference Arg1:T2 Arg2:T3	
+R4	Coreference Arg1:T3 Arg2:T4	
+R5	Coreference Arg1:T5 Arg2:T7	
+R2	Contact Arg1:T1 Arg2:T2	

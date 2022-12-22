@@ -1,0 +1,17 @@
+T4	Parts 29 34	インバータ
+T5	Parts 58 63	インバータ
+R1	Coreference Arg1:T4 Arg2:T5	
+T6	Parts 68 76	車両駆動用モータ
+T7	Parts 77 83	補機用モータ
+T8	Parts 89 102	ハイブリッドシステム警告灯
+T9	Parts 126 135	パワーステアリング
+T1	Parts 0 6	大型路線バス
+T2	Parts 7 14	ハイブリッド車
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T4 Arg2:T2	
+R4	Part-Whole Arg1:T6 Arg2:T2	
+R5	Part-Whole Arg1:T7 Arg2:T2	
+R6	Part-Whole Arg1:T8 Arg2:T2	
+R7	Part-Whole Arg1:T9 Arg2:T2	
+R8	Connect Arg1:T5 Arg2:T6	
+R9	Connect Arg1:T5 Arg2:T7	

@@ -1,0 +1,13 @@
+T1	Parts 0 10	エンジンコントローラ
+T2	Parts 15 22	制御プログラム
+T4	Parts 42 57	ＩＳＧ（モーター機能付発電機）
+T5	Parts 73 80	スタータモータ
+T6	Parts 82 86	エンジン
+T7	Parts 106 110	エンジン
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T6 Arg2:T7	
+R3	Connect Arg1:T5 Arg2:T6	
+R4	Connect Arg1:T4 Arg2:T6	
+R5	Connect Arg1:T1 Arg2:T6	
+R6	Connect Arg1:T1 Arg2:T4	
+R7	Connect Arg1:T1 Arg2:T5	

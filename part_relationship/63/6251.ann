@@ -1,0 +1,13 @@
+T1	Parts 101 109	ブレーキフルード
+T2	Parts 49 56	ブレーキホース
+T3	Parts 90 97	ブレーキホース
+T4	Parts 5 10	フェンダー
+T5	Parts 0 4	左右前輪
+T7	Parts 17 28	インナーアーチライナー
+T8	Parts 37 48	インナーアーチライナー
+R1	Coreference Arg1:T7 Arg2:T8	
+R2	Part-Whole Arg1:T4 Arg2:T5	
+R3	Part-Whole Arg1:T7 Arg2:T4	
+R4	Coreference Arg1:T2 Arg2:T3	
+R5	Contact Arg1:T3 Arg2:T1	
+R6	Contact Arg1:T2 Arg2:T5	

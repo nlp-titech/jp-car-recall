@@ -1,0 +1,5 @@
+T12	Parts 13 22	リヤアンダーミラー
+T13	Parts 35 41	取付けボルト
+T14	Parts 84 93	リヤアンダーミラー
+R1	Coreference Arg1:T14 Arg2:T12	
+R2	Contact Arg1:T13 Arg2:T12	

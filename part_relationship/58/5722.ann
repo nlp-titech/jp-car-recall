@@ -1,0 +1,11 @@
+T2	Parts 0 4	エンジン
+T3	Parts 43 55	プライマリ・ブレーキ配管
+T4	Parts 124 129	ブレーキ液
+T5	Parts 12 20	マスタ・シリンダ
+T9	Parts 61 67	ＨＣＵ側配管
+T10	Parts 21 38	油圧コントロールユニット（ＨＣＵ）
+R2	Contact Arg1:T5 Arg2:T3	
+R3	Contact Arg1:T10 Arg2:T3	
+R4	Connect Arg1:T5 Arg2:T10	
+R5	Contact Arg1:T9 Arg2:T4	
+R1	Part-Whole Arg1:T9 Arg2:T3	

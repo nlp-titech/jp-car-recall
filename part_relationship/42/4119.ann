@@ -1,0 +1,33 @@
+T1	Parts 10 19	燃料タンクキャップ
+T2	Parts 0 5	燃料タンク
+T3	Parts 191 195	エンジン
+T4	Parts 30 34	キャップ
+T5	Parts 73 77	キャップ
+T8	Parts 59 63	パッキン
+T9	Parts 83 87	パッキン
+T10	Parts 130 134	パッキン
+T15	Parts 180 183	タンク
+T16	Parts 198 201	タンク
+T17	Parts 64 66	燃料
+T18	Parts 111 113	燃料
+T19	Parts 127 129	燃料
+T20	Parts 234 236	燃料
+T7	Parts 41 48	パッキンホルダ
+T6	Parts 144 151	ドレンチューブ
+R1	Part-Whole Arg1:T1 Arg2:T2	
+R2	Coreference Arg1:T1 Arg2:T4	
+R3	Coreference Arg1:T4 Arg2:T5	
+R4	Coreference Arg1:T8 Arg2:T9	
+R5	Coreference Arg1:T17 Arg2:T18	
+R6	Coreference Arg1:T18 Arg2:T19	
+R7	Coreference Arg1:T9 Arg2:T10	
+R8	Coreference Arg1:T15 Arg2:T16	
+R9	Coreference Arg1:T19 Arg2:T20	
+R10	Coreference Arg1:T2 Arg2:T15	
+R11	Part-Whole Arg1:T7 Arg2:T1	
+R12	Part-Whole Arg1:T8 Arg2:T1	
+R13	Part-Whole Arg1:T6 Arg2:T2	
+R14	Part-Whole Arg1:T17 Arg2:T2	
+R16	Contact Arg1:T7 Arg2:T4	
+R17	Contact Arg1:T7 Arg2:T8	
+R18	Contact Arg1:T17 Arg2:T8	

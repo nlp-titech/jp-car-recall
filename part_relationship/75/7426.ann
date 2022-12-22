@@ -1,0 +1,19 @@
+T1	Parts 0 16	オートマチックトランスミッション
+T2	Parts 21 29	トルクコンバータ
+T3	Parts 30 40	ロックアップクラッチ
+T4	Parts 45 49	リベット
+T5	Parts 66 70	リベット
+T6	Parts 86 90	リベット
+T7	Parts 112 120	トルクコンバータ
+T8	Parts 134 137	警告灯
+T9	Parts 154 163	オイルストレーナー
+T10	Parts 168 174	オイルポンプ
+R1	Coreference Arg1:T2 Arg2:T7	
+R2	Coreference Arg1:T4 Arg2:T5	
+R3	Coreference Arg1:T5 Arg2:T6	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T3 Arg2:T2	
+R6	Contact Arg1:T3 Arg2:T4	
+R7	Part-Whole Arg1:T4 Arg2:T2	
+R8	Connect Arg1:T7 Arg2:T8	
+R9	Contact Arg1:T9 Arg2:T10	

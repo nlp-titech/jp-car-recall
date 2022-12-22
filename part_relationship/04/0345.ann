@@ -1,0 +1,19 @@
+T15	Parts 63 71	バタフライバルブ
+T16	Parts 72 78	バルブケース
+T17	Parts 83 91	バタフライバルブ
+T18	Parts 102 105	原動機
+T19	Parts 122 125	バルブ
+T20	Parts 139 142	原動機
+T8	Parts 42 47	吸気絞り弁
+T1	Parts 0 3	原動機
+T2	Parts 4 13	排気ガス再循環装置
+R1	Coreference Arg1:T17 Arg2:T15	
+R2	Coreference Arg1:T18 Arg2:T1	
+R3	Coreference Arg1:T19 Arg2:T17	
+R4	Coreference Arg1:T20 Arg2:T18	
+R5	Part-Whole Arg1:T2 Arg2:T1	
+T3	Parts 18 22	排気ガス
+R7	Contact Arg1:T3 Arg2:T2	
+R9	Part-Whole Arg1:T8 Arg2:T2	
+R10	Contact Arg1:T15 Arg2:T16	
+R11	Part-Whole Arg1:T15 Arg2:T2	

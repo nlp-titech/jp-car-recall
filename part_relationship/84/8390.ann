@@ -1,0 +1,16 @@
+T1	Parts 0 10	統合ブレーキシステム
+T2	Parts 11 21	油圧回路制御ユニット
+T3	Parts 41 50	油圧生成用モーター
+T4	Parts 51 55	ローター
+T5	Parts 56 60	シャフト
+T6	Parts 83 87	ローター
+T7	Parts 88 92	シャフト
+T8	Parts 97 101	モーター
+R1	Coreference Arg1:T4 Arg2:T6	
+R2	Coreference Arg1:T5 Arg2:T7	
+R3	Coreference Arg1:T3 Arg2:T8	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T3 Arg2:T2	
+R6	Part-Whole Arg1:T4 Arg2:T3	
+R7	Part-Whole Arg1:T5 Arg2:T3	
+R8	Contact Arg1:T4 Arg2:T5	

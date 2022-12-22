@@ -1,0 +1,11 @@
+T1	Parts 18 25	サッシュテープ
+T2	Parts 46 49	テープ
+T3	Parts 0 6	フロントドア
+T4	Parts 11 17	ドアサッシュ
+T5	Parts 34 36	ドア
+T6	Parts 87 89	ドア
+R1	Part-Whole Arg1:T4 Arg2:T3	
+R2	Coreference Arg1:T1 Arg2:T2	
+R3	Coreference Arg1:T3 Arg2:T5	
+R4	Coreference Arg1:T5 Arg2:T6	
+R5	Contact Arg1:T4 Arg2:T1	

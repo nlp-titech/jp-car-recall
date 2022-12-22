@@ -1,0 +1,17 @@
+T1	Parts 0 3	運転席
+T2	Parts 5 8	助手席
+T3	Parts 9 17	電動パワーシート
+T4	Parts 18 27	制御コンピューター
+T5	Parts 47 50	シート
+T6	Parts 69 71	前席
+T8	Parts 79 81	後席
+T9	Parts 105 107	後席
+T10	Parts 142 144	後席
+R1	Part-Whole Arg1:T3 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T2	
+R3	Part-Whole Arg1:T4 Arg2:T3	
+R4	Coreference Arg1:T3 Arg2:T5	
+R5	Oneway-Coreference Arg1:T6 Arg2:T1	
+R6	Oneway-Coreference Arg1:T6 Arg2:T2	
+R7	Coreference Arg1:T8 Arg2:T9	
+R8	Coreference Arg1:T9 Arg2:T10	

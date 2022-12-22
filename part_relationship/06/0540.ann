@@ -1,0 +1,16 @@
+T15	Parts 94 97	リレー
+T16	Parts 78 81	ポンプ
+T17	Parts 122 125	ポンプ
+T1	Parts 0 4	電気装置
+T3	Parts 22 29	リレーボックス
+T5	Parts 61 65	エンジン
+R3	Coreference Arg1:T17 Arg2:T16	
+T2	Parts 9 21	Ｖ型８気筒エンジン搭載車
+T4	Parts 33 48	低圧燃料ポンプ駆動回路用リレー
+R1	Coreference Arg1:T4 Arg2:T15	
+R2	Part-Whole Arg1:T4 Arg2:T3	
+R8	Part-Whole Arg1:T5 Arg2:T2	
+R5	Part-Whole Arg1:T3 Arg2:T1	
+R4	Part-Whole Arg1:T1 Arg2:T2	
+R6	Part-Whole Arg1:T16 Arg2:T2	
+R7	Connect Arg1:T4 Arg2:T16	

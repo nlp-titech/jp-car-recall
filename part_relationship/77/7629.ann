@@ -1,0 +1,11 @@
+T1	Parts 1 15	ハイブリッドトランスアクスル
+T2	Parts 16 24	インプットダンパ
+T3	Parts 29 32	防錆油
+T4	Parts 43 46	ダンパ
+T5	Parts 76 79	ダンパ
+T6	Parts 89 92	警告灯
+T7	Parts 103 113	ハイブリッドシステム
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T2 Arg2:T4	
+R3	Contact Arg1:T3 Arg2:T2	
+R4	Coreference Arg1:T4 Arg2:T5	

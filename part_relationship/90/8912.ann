@@ -1,0 +1,22 @@
+T1	Parts 0 9	ホイール・クレーン
+T2	Parts 10 15	燃料タンク
+T3	Parts 35 40	燃料ポンプ
+T4	Parts 57 60	ボルト
+T5	Parts 64 69	燃料タンク
+T6	Parts 84 87	ボルト
+T7	Parts 93 95	車両
+T8	Parts 102 105	ボルト
+T9	Parts 108 113	燃料タンク
+T10	Parts 41 46	取付ボルト
+T11	Parts 124 126	燃料
+R1	Coreference Arg1:T10 Arg2:T4	
+R2	Coreference Arg1:T2 Arg2:T5	
+R3	Coreference Arg1:T4 Arg2:T6	
+R4	Coreference Arg1:T1 Arg2:T7	
+R5	Coreference Arg1:T4 Arg2:T8	
+R6	Coreference Arg1:T5 Arg2:T9	
+R7	Part-Whole Arg1:T11 Arg2:T9	
+R8	Part-Whole Arg1:T2 Arg2:T1	
+R9	Contact Arg1:T2 Arg2:T3	
+R10	Contact Arg1:T3 Arg2:T10	
+R11	Contact Arg1:T2 Arg2:T10	

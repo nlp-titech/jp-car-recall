@@ -1,0 +1,9 @@
+T1	Parts 0 3	ランプ
+T2	Parts 12 19	リレーユニット
+T3	Parts 21 30	リレー駆動電源回路
+T4	Parts 33 39	トランジスタ
+T6	Parts 75 78	ランプ
+R2	Coreference Arg1:T6 Arg2:T1	
+R1	Connect Arg1:T1 Arg2:T2	
+R3	Part-Whole Arg1:T3 Arg2:T2	
+R4	Part-Whole Arg1:T4 Arg2:T3	

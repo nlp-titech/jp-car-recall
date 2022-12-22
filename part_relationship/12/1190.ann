@@ -1,0 +1,15 @@
+T21	Parts 81 85	エンジン
+T23	Parts 25 29	エンジン
+T25	Parts 0 5	点火コイル
+T26	Parts 8 12	二次巻線
+T27	Parts 38 40	巻線
+T28	Parts 68 73	点火コイル
+T29	Parts 113 118	点火コイル
+T30	Parts 131 138	触媒コンバータ
+R1	Coreference Arg1:T25 Arg2:T28	
+R2	Coreference Arg1:T26 Arg2:T27	
+R3	Coreference Arg1:T23 Arg2:T21	
+R4	Coreference Arg1:T28 Arg2:T29	
+R5	Part-Whole Arg1:T26 Arg2:T25	
+R7	Connect Arg1:T30 Arg2:T21	
+R8	Connect Arg1:T23 Arg2:T25	

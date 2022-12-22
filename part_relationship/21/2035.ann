@@ -1,0 +1,10 @@
+T1	Parts 0 7	手動変速機付車
+T2	Parts 12 28	後輪デファレンシャル（差動装置）
+T3	Parts 29 37	ピニオンシャフト
+T4	Parts 70 78	ピニオンシャフト
+T5	Parts 117 119	車輪
+R1	Coreference Arg1:T3 Arg2:T4	
+R2	Part-Whole Arg1:T3 Arg2:T2	
+R3	Connect Arg1:T5 Arg2:T2	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T5 Arg2:T1	

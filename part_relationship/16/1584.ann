@@ -1,0 +1,12 @@
+T1	Parts 0 6	予備電源回路
+T2	Parts 17 23	予備電源回路
+R1	Coreference Arg1:T1 Arg2:T2	
+T3	Parts 36 43	回路用ヒューズ
+T5	Parts 61 68	出力用ヒューズ
+T6	Parts 83 87	エンジン
+T7	Parts 92 102	コントロールユニット
+T8	Parts 116 119	原動機
+R3	Connect Arg1:T3 Arg2:T2	
+R2	Coreference Arg1:T8 Arg2:T6	
+R6	Connect Arg1:T7 Arg2:T6	
+R4	Connect Arg1:T5 Arg2:T7	

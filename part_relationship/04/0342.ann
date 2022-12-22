@@ -1,0 +1,21 @@
+T11	Parts 5 31	制動制御装置（ＡＢＳ：アンチロックブレーキシステム）
+T12	Parts 32 54	油圧制御装置（ＨＵ：ハイドロリックユニット）
+T13	Parts 55 61	後輪制動装置
+T14	Parts 62 70	マスターシリンダ
+T15	Parts 84 87	ＡＢＳ
+T17	Parts 104 112	マスターシリンダ
+T18	Parts 142 146	ピストン
+T19	Parts 114 118	ピストン
+T1	Parts 0 4	制動装置
+T2	Parts 97 103	後輪制動装置
+R1	Coreference Arg1:T15 Arg2:T11	
+R2	Coreference Arg1:T2 Arg2:T13	
+R3	Coreference Arg1:T17 Arg2:T14	
+R4	Coreference Arg1:T18 Arg2:T19	
+T3	Parts 159 165	ブレーキ配管
+R5	Part-Whole Arg1:T11 Arg2:T1	
+R6	Part-Whole Arg1:T12 Arg2:T11	
+R7	Part-Whole Arg1:T13 Arg2:T11	
+R8	Part-Whole Arg1:T14 Arg2:T13	
+R9	Part-Whole Arg1:T19 Arg2:T17	
+R10	Contact Arg1:T18 Arg2:T3	

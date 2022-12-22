@@ -1,0 +1,13 @@
+T1	Parts 0 4	左右ドア
+T2	Parts 5 12	ドアロック装置
+T3	Parts 17 19	ドア
+T4	Parts 30 34	ケーブル
+T5	Parts 45 49	ケーブル
+T6	Parts 73 77	ケーブル
+T7	Parts 85 87	ドア
+R2	Coreference Arg1:T1 Arg2:T3	
+R1	Coreference Arg1:T4 Arg2:T5	
+R3	Coreference Arg1:T5 Arg2:T6	
+R4	Coreference Arg1:T3 Arg2:T7	
+R5	Part-Whole Arg1:T2 Arg2:T1	
+R6	Contact Arg1:T2 Arg2:T4	

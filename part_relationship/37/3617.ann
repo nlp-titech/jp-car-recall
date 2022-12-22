@@ -1,0 +1,8 @@
+T1	Parts 13 19	突入防止装置
+T2	Parts 7 12	穴掘建柱車
+T3	Parts 0 5	高所作業車
+T4	Parts 24 26	車両
+R2	Part-Whole Arg1:T1 Arg2:T2	
+R3	Part-Whole Arg1:T1 Arg2:T3	
+R4	Oneway-Coreference Arg1:T4 Arg2:T2	
+R5	Oneway-Coreference Arg1:T4 Arg2:T3	

@@ -1,0 +1,10 @@
+T1	Parts 42 49	ブレーキパッド
+T2	Parts 61 64	警告灯
+T3	Parts 76 83	ブレーキパッド
+T4	Parts 96 104	ブレーキディスク
+T5	Parts 16 28	インストルメントクラスタ
+T6	Parts 0 7	ブレーキパッド
+R1	Coreference Arg1:T1 Arg2:T3	
+R2	Coreference Arg1:T6 Arg2:T1	
+R3	Part-Whole Arg1:T2 Arg2:T5	
+R4	Connect Arg1:T6 Arg2:T5	

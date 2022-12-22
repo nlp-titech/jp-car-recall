@@ -1,0 +1,20 @@
+T16	Parts 110 115	ブラケット
+T14	Parts 35 48	テンションプーリブラケット
+T15	Parts 63 68	ブラケット
+T18	Parts 126 129	プーリ
+T1	Parts 0 5	冷蔵冷凍車
+T3	Parts 18 21	原動機
+T4	Parts 26 34	冷凍機駆動ベルト
+T6	Parts 98 101	プーリ
+R1	Coreference Arg1:T14 Arg2:T15	
+R2	Coreference Arg1:T6 Arg2:T18	
+T7	Parts 10 12	車両
+R3	Coreference Arg1:T7 Arg2:T1	
+R4	Part-Whole Arg1:T3 Arg2:T7	
+R5	Part-Whole Arg1:T4 Arg2:T3	
+R8	Contact Arg1:T16 Arg2:T6	
+R6	Part-Whole Arg1:T14 Arg2:T3	
+R7	Contact Arg1:T6 Arg2:T15	
+R9	Contact Arg1:T6 Arg2:T4	
+R10	Part-Whole Arg1:T6 Arg2:T3	
+R11	Part-Whole Arg1:T16 Arg2:T3	

@@ -1,0 +1,19 @@
+T2	Parts 34 42	ボールジョイント
+T4	Parts 109 117	ボールジョイント
+T5	Parts 139 147	ボールジョイント
+T6	Parts 180 188	ボールジョイント
+T8	Parts 0 7	前輪ロアアーム
+T9	Parts 189 200	ステアリング・ナックル
+T10	Parts 125 128	グリス
+T11	Parts 8 20	ボールジョイント・ブーツ
+T12	Parts 60 72	ボールジョイント・ブーツ
+T13	Parts 86 89	ブーツ
+R1	Coreference Arg1:T13 Arg2:T12	
+R2	Coreference Arg1:T12 Arg2:T11	
+R3	Coreference Arg1:T4 Arg2:T2	
+R4	Coreference Arg1:T5 Arg2:T4	
+R5	Coreference Arg1:T6 Arg2:T5	
+R8	Contact Arg1:T10 Arg2:T4	
+R9	Contact Arg1:T9 Arg2:T6	
+R7	Part-Whole Arg1:T11 Arg2:T2	
+R6	Part-Whole Arg1:T2 Arg2:T8	

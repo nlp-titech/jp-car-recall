@@ -1,0 +1,16 @@
+T1	Parts 124 131	エンジン警告灯
+T2	Parts 0 5	点火コイル
+T3	Parts 101 106	点火コイル
+T5	Parts 114 118	エンジン
+T6	Parts 142 146	エンジン
+T7	Parts 18 22	雑防抵抗
+T8	Parts 53 55	抵抗
+T9	Parts 86 92	プラグシール
+R1	Coreference Arg1:T6 Arg2:T5	
+R2	Coreference Arg1:T3 Arg2:T2	
+R3	Part-Whole Arg1:T7 Arg2:T2	
+R4	Connect Arg1:T8 Arg2:T7	
+R5	Connect Arg1:T5 Arg2:T3	
+R6	Connect Arg1:T1 Arg2:T5	
+R7	Part-Whole Arg1:T9 Arg2:T2	
+R8	Part-Whole Arg1:T8 Arg2:T2	

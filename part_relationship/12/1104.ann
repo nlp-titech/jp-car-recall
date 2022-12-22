@@ -1,0 +1,20 @@
+T18	Parts 63 67	エンジン
+T19	Parts 141 145	エンジン
+T20	Parts 117 122	燃料パイプ
+T21	Parts 85 89	クランプ
+T22	Parts 72 79	クランプボルト
+T23	Parts 48 52	クランプ
+T1	Parts 6 26	三菱ふそうトラック・バス株式会社製原動機
+T2	Parts 31 37	燃料噴射装置
+T3	Parts 38 43	燃料パイプ
+T4	Parts 129 131	燃料
+R1	Coreference Arg1:T23 Arg2:T21	
+R2	Coreference Arg1:T3 Arg2:T20	
+R3	Coreference Arg1:T18 Arg2:T19	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T3 Arg2:T2	
+R6	Contact Arg1:T23 Arg2:T3	
+R7	Contact Arg1:T22 Arg2:T23	
+R8	Coreference Arg1:T18 Arg2:T1	
+R9	Contact Arg1:T4 Arg2:T20	
+R10	Contact Arg1:T22 Arg2:T3	

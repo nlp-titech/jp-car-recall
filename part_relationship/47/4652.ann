@@ -1,0 +1,11 @@
+T1	Parts 48 57	リヤスイングアーム
+T2	Parts 9 18	リヤブレーキホース
+T3	Parts 64 73	リヤブレーキホース
+T6	Parts 84 89	ブレーキ液
+T7	Parts 0 4	制動装置
+T8	Parts 93 95	後輪
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Contact Arg1:T3 Arg2:T6	
+R3	Part-Whole Arg1:T2 Arg2:T7	
+R4	Part-Whole Arg1:T1 Arg2:T7	
+R5	Connect Arg1:T7 Arg2:T8	

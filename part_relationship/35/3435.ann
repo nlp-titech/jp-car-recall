@@ -1,0 +1,13 @@
+T1	Parts 1 7	動力伝達装置
+T3	Parts 52 56	クランプ
+T4	Parts 110 113	作動油
+T5	Parts 57 65	カウンターケース
+T6	Parts 12 29	ＨＳＴ（静油圧式無段変速機）ホース
+T7	Parts 47 50	ホース
+T8	Parts 100 103	ホース
+R1	Coreference Arg1:T7 Arg2:T6	
+R2	Coreference Arg1:T8 Arg2:T7	
+R3	Part-Whole Arg1:T6 Arg2:T1	
+R4	Contact Arg1:T4 Arg2:T8	
+R5	Contact Arg1:T7 Arg2:T3	
+R6	Part-Whole Arg1:T5 Arg2:T1	

@@ -1,0 +1,19 @@
+T16	Parts 53 56	減速機
+T17	Parts 22 29	ロータリシール
+T18	Parts 150 154	クラッチ
+T19	Parts 128 131	減速機
+T21	Parts 119 122	減速機
+T1	Parts 0 3	後車輪
+T2	Parts 5 13	走行モータ減速機
+T3	Parts 18 21	駆動軸
+R1	Coreference Arg1:T2 Arg2:T16	
+R2	Coreference Arg1:T16 Arg2:T21	
+R3	Coreference Arg1:T21 Arg2:T19	
+T6	Parts 111 118	クラッチ作動油
+T7	Parts 167 170	後車輪
+R4	Coreference Arg1:T1 Arg2:T7	
+R5	Part-Whole Arg1:T2 Arg2:T1	
+R6	Part-Whole Arg1:T17 Arg2:T3	
+R7	Contact Arg1:T2 Arg2:T3	
+R8	Contact Arg1:T6 Arg2:T18	
+R9	Connect Arg1:T19 Arg2:T18	

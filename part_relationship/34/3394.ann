@@ -1,0 +1,17 @@
+T1	Parts 0 4	運転者席
+T2	Parts 22 27	ブラケット
+T3	Parts 40 42	座席
+T4	Parts 57 62	ブラケット
+R1	Coreference Arg1:T2 Arg2:T4	
+T5	Parts 109 114	ブラケット
+R2	Coreference Arg1:T4 Arg2:T5	
+T6	Parts 119 121	座席
+R3	Coreference Arg1:T3 Arg2:T6	
+T7	Parts 9 11	座席
+T8	Parts 12 14	車体
+R4	Coreference Arg1:T7 Arg2:T3	
+R5	Part-Whole Arg1:T7 Arg2:T1	
+R6	Contact Arg1:T7 Arg2:T8	
+R7	Contact Arg1:T7 Arg2:T2	
+R8	Contact Arg1:T8 Arg2:T2	
+R9	Part-Whole Arg1:T1 Arg2:T8	

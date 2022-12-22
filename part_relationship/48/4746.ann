@@ -1,0 +1,14 @@
+T1	Parts 21 28	アッパーアーム
+T2	Parts 95 102	アッパーアーム
+T3	Parts 29 36	取り付けボルト
+T4	Parts 10 20	ステアリングナックル
+T5	Parts 0 5	かじ取装置
+T7	Parts 72 75	ボルト
+T8	Parts 88 91	ボルト
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Coreference Arg1:T3 Arg2:T7	
+R3	Coreference Arg1:T7 Arg2:T8	
+R4	Part-Whole Arg1:T4 Arg2:T5	
+R5	Contact Arg1:T4 Arg2:T3	
+R6	Contact Arg1:T1 Arg2:T3	
+R7	Contact Arg1:T4 Arg2:T1	

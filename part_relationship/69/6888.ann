@@ -1,0 +1,11 @@
+T7	Parts 96 99	ボルト
+T9	Parts 19 21	車両
+T1	Parts 0 8	運転者用ステップ
+T2	Parts 45 60	ボルト（バンクセンサーボルト）
+T4	Parts 69 72	ボルト
+R1	Part-Whole Arg1:T1 Arg2:T9	
+R2	Contact Arg1:T1 Arg2:T2	
+R3	Coreference Arg1:T2 Arg2:T4	
+R4	Coreference Arg1:T4 Arg2:T7	
+T3	Parts 114 120	マフラボディ
+R5	Part-Whole Arg1:T3 Arg2:T9	

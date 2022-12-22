@@ -1,0 +1,8 @@
+T1	Parts 42 53	イグニッションスイッチ
+T2	Parts 0 5	エアバッグ
+T3	Parts 64 69	エアバッグ
+T4	Parts 6 24	コントロール・モジュール（制御装置）
+T5	Parts 25 29	内部回路
+R1	Connect Arg1:T4 Arg2:T2	
+R2	Part-Whole Arg1:T5 Arg2:T4	
+R3	Coreference Arg1:T2 Arg2:T3	

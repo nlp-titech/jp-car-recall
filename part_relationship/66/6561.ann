@@ -1,0 +1,5 @@
+T1	Parts 0 14	エンジンコントロールユニット
+T2	Parts 42 54	ＮＯｘ貯蔵触媒コンバータ
+T4	Parts 28 34	ＮＯｘセンサ
+R1	Connect Arg1:T4 Arg2:T1	
+R2	Connect Arg1:T2 Arg2:T1	

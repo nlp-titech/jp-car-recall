@@ -1,0 +1,23 @@
+T1	Parts 0 5	交流発電機
+T2	Parts 9 12	整流器
+T3	Parts 36 40	原動機室
+T4	Parts 48 51	整流器
+T5	Parts 52 56	樹脂部品
+T6	Parts 78 81	整流器
+T7	Parts 82 86	樹脂部品
+T8	Parts 91 94	整流器
+T9	Parts 95 99	電気回路
+T10	Parts 139 143	電気回路
+T11	Parts 155 158	整流器
+T12	Parts 159 163	樹脂部品
+R1	Coreference Arg1:T4 Arg2:T2	
+R2	Coreference Arg1:T6 Arg2:T4	
+R3	Coreference Arg1:T5 Arg2:T7	
+R4	Coreference Arg1:T8 Arg2:T6	
+R5	Coreference Arg1:T10 Arg2:T9	
+R6	Coreference Arg1:T11 Arg2:T8	
+R7	Coreference Arg1:T12 Arg2:T7	
+R8	Part-Whole Arg1:T2 Arg2:T1	
+R10	Part-Whole Arg1:T5 Arg2:T4	
+R11	Part-Whole Arg1:T9 Arg2:T8	
+R9	Part-Whole Arg1:T1 Arg2:T3	

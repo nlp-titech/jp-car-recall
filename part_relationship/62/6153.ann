@@ -1,0 +1,12 @@
+T1	Parts 12 18	操作スイッチ
+T2	Parts 7 11	エンジン
+T3	Parts 79 83	エンジン
+T4	Parts 23 27	スイッチ
+T5	Parts 43 47	スイッチ
+T6	Parts 70 74	スイッチ
+T7	Parts 0 4	ハンドル
+R1	Connect Arg1:T1 Arg2:T2	
+R2	Coreference Arg1:T1 Arg2:T4	
+R5	Coreference Arg1:T2 Arg2:T3	
+R3	Coreference Arg1:T4 Arg2:T5	
+R4	Coreference Arg1:T5 Arg2:T6	

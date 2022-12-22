@@ -1,0 +1,25 @@
+T20	Parts 66 71	燃料タンク
+T21	Parts 54 57	バルブ
+T22	Parts 60 61	弁
+T23	Parts 94 99	燃料タンク
+T24	Parts 107 112	燃料タンク
+T1	Parts 0 5	燃料タンク
+T2	Parts 6 14	内圧調整用バルブ
+T3	Parts 19 24	ゴムホース
+T4	Parts 35 40	ゴムホース
+T5	Parts 46 49	可塑剤
+R1	Coreference Arg1:T23 Arg2:T20	
+R2	Coreference Arg1:T24 Arg2:T23	
+R3	Coreference Arg1:T21 Arg2:T2	
+R4	Coreference Arg1:T4 Arg2:T3	
+R5	Coreference Arg1:T20 Arg2:T1	
+T6	Parts 117 122	燃料ポンプ
+T7	Parts 131 133	燃料
+R6	Part-Whole Arg1:T7 Arg2:T24	
+R8	Contact Arg1:T2 Arg2:T3	
+R9	Part-Whole Arg1:T5 Arg2:T4	
+R10	Part-Whole Arg1:T22 Arg2:T21	
+R7	Connect Arg1:T1 Arg2:T2	
+R11	Contact Arg1:T1 Arg2:T3	
+R12	Part-Whole Arg1:T6 Arg2:T24	
+R13	Contact Arg1:T6 Arg2:T7	

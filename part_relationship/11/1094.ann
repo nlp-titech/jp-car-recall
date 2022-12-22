@@ -1,0 +1,12 @@
+T14	Parts 100 106	駐車ブレーキ
+T15	Parts 80 83	ホース
+T16	Parts 38 41	ホース
+T17	Parts 14 23	エアブレーキホース
+T1	Parts 1 13	スプリング式駐車制動装置
+T2	Parts 42 46	空気ばね
+T3	Parts 94 96	エア
+R1	Coreference Arg1:T17 Arg2:T16	
+R2	Coreference Arg1:T16 Arg2:T15	
+R3	Part-Whole Arg1:T17 Arg2:T1	
+R5	Contact Arg1:T3 Arg2:T15	
+R6	Coreference Arg1:T1 Arg2:T14	

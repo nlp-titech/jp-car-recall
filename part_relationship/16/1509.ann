@@ -1,0 +1,13 @@
+T1	Parts 0 13	リヤコンビネーションランプ
+T2	Parts 14 16	尾灯
+T3	Parts 17 20	制動灯
+T4	Parts 23 28	赤色レンズ
+T5	Parts 65 68	レンズ
+R1	Coreference Arg1:T5 Arg2:T4	
+T6	Parts 78 80	灯火
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T3 Arg2:T1	
+R10	Contact Arg1:T6 Arg2:T5	
+R6	Part-Whole Arg1:T4 Arg2:T1	
+R2	Oneway-Coreference Arg1:T6 Arg2:T2	
+R3	Oneway-Coreference Arg1:T6 Arg2:T3	

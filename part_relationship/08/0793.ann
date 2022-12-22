@@ -1,0 +1,13 @@
+T11	Parts 7 18	ドラッグアームシャフト
+T12	Parts 27 30	ボルト
+T13	Parts 64 67	ボルト
+T14	Parts 97 100	ボルト
+T1	Parts 1 6	かじ取装置
+T2	Parts 40 46	ネジロック液
+R1	Coreference Arg1:T13 Arg2:T12	
+R2	Coreference Arg1:T14 Arg2:T13	
+T3	Parts 104 108	ハンドル
+R3	Part-Whole Arg1:T11 Arg2:T1	
+R4	Contact Arg1:T12 Arg2:T11	
+R5	Contact Arg1:T2 Arg2:T12	
+R6	Connect Arg1:T3 Arg2:T1	

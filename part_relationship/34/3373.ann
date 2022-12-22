@@ -1,0 +1,14 @@
+T14	Parts 18 40	灯火器（尾灯、制動灯、後退灯及び方向指示器）
+T15	Parts 41 45	ハーネス
+T16	Parts 55 59	ハーネス
+T17	Parts 103 107	ハーネス
+T18	Parts 121 125	ハーネス
+T19	Parts 131 136	後部灯火器
+T1	Parts 3 13	ダンプ架装用トラック
+R1	Coreference Arg1:T15 Arg2:T16	
+R2	Coreference Arg1:T16 Arg2:T17	
+R3	Coreference Arg1:T17 Arg2:T18	
+R4	Oneway-Coreference Arg1:T14 Arg2:T19	
+R5	Part-Whole Arg1:T14 Arg2:T1	
+R6	Contact Arg1:T14 Arg2:T15	
+R7	Part-Whole Arg1:T15 Arg2:T1	

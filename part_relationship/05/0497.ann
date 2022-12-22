@@ -1,0 +1,12 @@
+T9	Parts 9 16	ブレーキシュー
+T1	Parts 0 4	制動装置
+T2	Parts 38 48	ブレーキ取付プレート
+T3	Parts 82 91	ホィールシリンダー
+T4	Parts 94 100	ブレーキ配管
+T5	Parts 110 117	ブレーキパイプ
+T6	Parts 125 130	ブレーキ液
+R1	Part-Whole Arg1:T9 Arg2:T1	
+R2	Contact Arg1:T2 Arg2:T9	
+R3	Contact Arg1:T4 Arg2:T3	
+R4	Part-Whole Arg1:T5 Arg2:T4	
+R5	Contact Arg1:T5 Arg2:T6	

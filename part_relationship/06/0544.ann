@@ -1,0 +1,36 @@
+T17	Parts 152 162	コンパニオンフランジ
+T18	Parts 91 99	キャッスルナット
+T19	Parts 145 148	ナット
+T1	Parts 10 16	動力伝達装置
+T2	Parts 21 24	後前軸
+T3	Parts 25 28	後後軸
+T4	Parts 30 33	推進軸
+T5	Parts 34 36	接手
+T6	Parts 48 51	後後軸
+T8	Parts 62 72	コンパニオンフランジ
+T9	Parts 80 84	フランジ
+T10	Parts 121 129	キャッスルナット
+T11	Parts 135 138	割ピン
+R1	Coreference Arg1:T19 Arg2:T10	
+T12	Parts 176 179	推進軸
+R2	Coreference Arg1:T12 Arg2:T4	
+R3	Coreference Arg1:T17 Arg2:T9	
+R4	Coreference Arg1:T9 Arg2:T8	
+R5	Coreference Arg1:T10 Arg2:T18	
+R6	Coreference Arg1:T6 Arg2:T3	
+T13	Parts 0 9	低床式後２軸駆動車
+R7	Part-Whole Arg1:T1 Arg2:T13	
+R8	Part-Whole Arg1:T2 Arg2:T1	
+R9	Part-Whole Arg1:T3 Arg2:T1	
+R10	Connect Arg1:T3 Arg2:T2	
+R11	Contact Arg1:T4 Arg2:T2	
+R12	Contact Arg1:T4 Arg2:T3	
+R13	Part-Whole Arg1:T5 Arg2:T4	
+R16	Contact Arg1:T18 Arg2:T9	
+R17	Contact Arg1:T11 Arg2:T10	
+R15	Part-Whole Arg1:T4 Arg2:T1	
+R18	Contact Arg1:T18 Arg2:T6	
+R19	Contact Arg1:T11 Arg2:T6	
+T7	Parts 52 56	終減速機
+R21	Contact Arg1:T7 Arg2:T8	
+R14	Part-Whole Arg1:T8 Arg2:T6	

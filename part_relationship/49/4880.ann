@@ -1,0 +1,13 @@
+T1	Parts 9 16	デリバリパイプ
+T2	Parts 55 62	デリバリパイプ
+T3	Parts 29 35	インジェクタ
+T4	Parts 63 69	インジェクタ
+T5	Parts 0 4	燃料装置
+T7	Parts 76 78	燃料
+R1	Part-Whole Arg1:T1 Arg2:T5	
+R2	Contact Arg1:T3 Arg2:T1	
+R3	Coreference Arg1:T1 Arg2:T2	
+R4	Coreference Arg1:T3 Arg2:T4	
+R6	Part-Whole Arg1:T3 Arg2:T5	
+R5	Contact Arg1:T2 Arg2:T7	
+R7	Contact Arg1:T4 Arg2:T7	

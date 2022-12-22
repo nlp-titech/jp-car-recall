@@ -1,0 +1,9 @@
+T1	Parts 23 30	格納用ストッパ
+T2	Parts 57 64	格納用ストッパ
+T3	Parts 14 18	後部座席
+T4	Parts 41 45	後部座席
+T6	Parts 0 13	車椅子乗降用スロープ装着車
+R1	Part-Whole Arg1:T3 Arg2:T6	
+R2	Coreference Arg1:T3 Arg2:T4	
+R3	Coreference Arg1:T1 Arg2:T2	
+R4	Part-Whole Arg1:T1 Arg2:T3	

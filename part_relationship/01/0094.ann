@@ -1,0 +1,12 @@
+T6	Parts 0 6	動力伝達装置
+T7	Parts 7 11	変速機構
+T8	Parts 12 19	クロスシャフト
+T9	Parts 20 27	取付ブラケット
+T10	Parts 45 52	クロスシャフト
+T11	Parts 53 60	取付ブラケット
+#1	AnnotatorNotes T9	「クロスシャフトの取付ブラケット」なので意味的に下位としたが並列？
+R1	Coreference Arg1:T11 Arg2:T9	
+R2	Coreference Arg1:T8 Arg2:T10	
+R3	Part-Whole Arg1:T7 Arg2:T6	
+R4	Part-Whole Arg1:T8 Arg2:T7	
+R6	Contact Arg1:T9 Arg2:T8	

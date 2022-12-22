@@ -1,0 +1,25 @@
+T9	Parts 158 160	車両
+T10	Parts 144 151	アクセルペダル
+T12	Parts 102 106	モーター
+T1	Parts 0 8	フロントモーター
+T2	Parts 13 34	フロントパワードライブユニット（ＦＰＤＵ）
+T3	Parts 36 42	リヤモーター
+T4	Parts 47 69	リヤモーターコントロールユニット（ＲＭＣＵ）
+T5	Parts 70 77	制御プログラム
+T6	Parts 91 95	ＦＰＤＵ
+R1	Coreference Arg1:T2 Arg2:T6	
+T7	Parts 97 101	ＲＭＣＵ
+R2	Coreference Arg1:T4 Arg2:T7	
+R3	Oneway-Coreference Arg1:T12 Arg2:T1	
+R4	Oneway-Coreference Arg1:T12 Arg2:T3	
+R5	Connect Arg1:T2 Arg2:T1	
+R6	Connect Arg1:T4 Arg2:T3	
+R7	Part-Whole Arg1:T5 Arg2:T2	
+R8	Part-Whole Arg1:T5 Arg2:T4	
+R9	Connect Arg1:T10 Arg2:T12	
+R10	Part-Whole Arg1:T10 Arg2:T9	
+T8	Parts 85 87	車両
+R14	Coreference Arg1:T8 Arg2:T9	
+R11	Part-Whole Arg1:T6 Arg2:T8	
+R12	Part-Whole Arg1:T7 Arg2:T8	
+R13	Part-Whole Arg1:T12 Arg2:T8	

@@ -1,0 +1,10 @@
+T1	Parts 0 6	燃料噴射装置
+T2	Parts 11 18	燃料噴射ノズル
+T3	Parts 63 67	エンジン
+T4	Parts 83 85	燃料
+T5	Parts 95 99	エンジン
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Connect Arg1:T1 Arg2:T3	
+R3	Part-Whole Arg1:T4 Arg2:T3	
+R4	Connect Arg1:T4 Arg2:T1	
+R5	Coreference Arg1:T5 Arg2:T3	

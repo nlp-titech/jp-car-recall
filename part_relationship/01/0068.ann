@@ -1,0 +1,9 @@
+T10	Parts 0 11	左前輪用ブレーキパイプ
+T11	Parts 25 32	ブレーキパイプ
+T13	Parts 60 67	ブレーキパイプ
+R1	Coreference Arg1:T11 Arg2:T10	
+R2	Coreference Arg1:T13 Arg2:T11	
+T1	Parts 33 37	緩衝装置
+T2	Parts 78 83	ブレーキ液
+R3	Contact Arg1:T13 Arg2:T2	
+R4	Connect Arg1:T1 Arg2:T11	

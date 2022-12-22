@@ -1,0 +1,14 @@
+T1	Parts 0 15	圧縮天然ガス（ＣＮＧ）エンジン
+T2	Parts 18 21	塵芥車
+T3	Parts 26 30	フレーム
+T4	Parts 31 38	フレーム補強材
+T5	Parts 45 49	リベット
+T6	Parts 92 96	リベット
+R1	Coreference Arg1:T6 Arg2:T5	
+T7	Parts 130 134	フレーム
+R2	Coreference Arg1:T7 Arg2:T3	
+R4	Part-Whole Arg1:T3 Arg2:T2	
+R6	Contact Arg1:T3 Arg2:T4	
+R7	Contact Arg1:T3 Arg2:T5	
+R8	Contact Arg1:T4 Arg2:T5	
+R3	Part-Whole Arg1:T1 Arg2:T2	

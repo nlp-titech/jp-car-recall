@@ -1,0 +1,12 @@
+T14	Parts 0 5	燃料タンク
+T15	Parts 6 10	燃料配管
+T16	Parts 29 32	タンク
+T17	Parts 40 45	燃料タンク
+T18	Parts 56 64	プロペラシャフト
+T19	Parts 71 74	タンク
+R1	Coreference Arg1:T14 Arg2:T16	
+R2	Coreference Arg1:T17 Arg2:T16	
+R3	Coreference Arg1:T19 Arg2:T17	
+T1	Parts 78 80	燃料
+R4	Contact Arg1:T15 Arg2:T14	
+R5	Part-Whole Arg1:T1 Arg2:T19	

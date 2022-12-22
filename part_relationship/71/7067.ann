@@ -1,0 +1,11 @@
+T1	Parts 0 12	自動無段変速機（ＣＶＴ）
+T2	Parts 17 27	コントロールユニット
+T3	Parts 87 94	ブレーキペダル
+T4	Parts 44 48	クラッチ
+T5	Parts 38 41	ＣＶＴ
+T7	Parts 104 106	車両
+R1	Connect Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T1 Arg2:T5	
+R3	Part-Whole Arg1:T4 Arg2:T5	
+R4	Part-Whole Arg1:T1 Arg2:T7	
+R5	Part-Whole Arg1:T3 Arg2:T7	

@@ -1,0 +1,3 @@
+T1	Parts 8 20	ブローバイ・ガス還元装置
+T3	Parts 0 3	原動機
+R1	Part-Whole Arg1:T1 Arg2:T3	

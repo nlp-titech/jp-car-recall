@@ -1,0 +1,26 @@
+T14	Parts 158 164	駐車ブレーキ
+T15	Parts 137 143	駐車ブレーキ
+T16	Parts 123 127	キャリパ
+T17	Parts 115 118	ボルト
+T18	Parts 78 81	ボルト
+T20	Parts 27 37	駐車ブレーキキャリパ
+T1	Parts 0 12	アスファルトフィニッシャ
+T2	Parts 16 22	駐車ブレーキ
+T3	Parts 44 47	ナット
+R3	Coreference Arg1:T18 Arg2:T17	
+T4	Parts 40 43	ボルト
+T5	Parts 51 62	キャリパ取付ブラケット
+T6	Parts 63 66	ボルト
+R1	Coreference Arg1:T2 Arg2:T15	
+R2	Coreference Arg1:T15 Arg2:T14	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Coreference Arg1:T20 Arg2:T16	
+R8	Part-Whole Arg1:T20 Arg2:T2	
+R9	Contact Arg1:T4 Arg2:T20	
+R10	Contact Arg1:T3 Arg2:T20	
+R11	Part-Whole Arg1:T5 Arg2:T2	
+R12	Part-Whole Arg1:T6 Arg2:T5	
+R6	Contact Arg1:T20 Arg2:T5	
+R7	Oneway-Coreference Arg1:T18 Arg2:T4	
+R13	Oneway-Coreference Arg1:T18 Arg2:T6	
+R14	Contact Arg1:T3 Arg2:T4	

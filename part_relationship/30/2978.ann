@@ -1,0 +1,12 @@
+T2	Parts 22 35	座席シート固定用ブラケット
+T4	Parts 59 64	ブラケット
+R1	Coreference Arg1:T4 Arg2:T2	
+T5	Parts 74 79	座席シート
+T7	Parts 88 93	ブラケット
+R3	Coreference Arg1:T7 Arg2:T4	
+T8	Parts 106 111	ブラケット
+R4	Coreference Arg1:T8 Arg2:T7	
+T9	Parts 116 121	燃料タンク
+T10	Parts 160 162	燃料
+R9	Part-Whole Arg1:T10 Arg2:T9	
+R2	Contact Arg1:T5 Arg2:T4	

@@ -1,0 +1,12 @@
+T1	Parts 16 22	動力伝達装置
+T2	Parts 27 35	リバーサシャフト
+T3	Parts 55 63	リバーサシャフト
+R1	Coreference Arg1:T2 Arg2:T3	
+T4	Parts 110 118	リバーサシャフト
+R2	Coreference Arg1:T3 Arg2:T4	
+T5	Parts 9 15	農耕トラクタ
+R4	Part-Whole Arg1:T1 Arg2:T5	
+R5	Part-Whole Arg1:T2 Arg2:T1	
+T6	Parts 0 6	後輪クローラ
+R6	Part-Whole Arg1:T6 Arg2:T5	
+R8	Connect Arg1:T6 Arg2:T1	

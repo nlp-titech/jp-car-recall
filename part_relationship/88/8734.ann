@@ -1,0 +1,8 @@
+T1	Parts 0 7	ダッシュボード
+T3	Parts 63 68	エアバッグ
+T4	Parts 78 85	ダッシュボード
+T5	Parts 91 96	エアバッグ
+T8	Parts 58 61	助手席
+R1	Coreference Arg1:T1 Arg2:T4	
+R2	Coreference Arg1:T3 Arg2:T5	
+R3	Contact Arg1:T3 Arg2:T4	

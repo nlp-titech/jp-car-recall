@@ -1,0 +1,14 @@
+T12	Parts 16 23	ブレーキバルブ
+T13	Parts 77 84	ブレーキバルブ
+T14	Parts 35 43	イコライザバルブ
+T15	Parts 94 102	イコライザバルブ
+T1	Parts 0 6	農耕トラクタ
+T2	Parts 7 11	制動装置
+T3	Parts 121 128	ブレーキペダル
+R1	Coreference Arg1:T12 Arg2:T13	
+R2	Coreference Arg1:T14 Arg2:T15	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T12 Arg2:T2	
+R6	Connect Arg1:T3 Arg2:T2	
+R5	Part-Whole Arg1:T14 Arg2:T12	
+R7	Connect Arg1:T12 Arg2:T3	

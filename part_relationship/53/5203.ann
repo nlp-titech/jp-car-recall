@@ -1,0 +1,7 @@
+T2	Parts 22 30	すれ違い用前照灯
+T3	Parts 34 37	バルブ
+T5	Parts 43 46	反射板
+T1	Parts 0 11	すれ違い用前照灯反射板
+R1	Coreference Arg1:T1 Arg2:T5	
+R2	Part-Whole Arg1:T1 Arg2:T2	
+R3	Part-Whole Arg1:T3 Arg2:T2	

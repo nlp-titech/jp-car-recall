@@ -1,0 +1,10 @@
+T12	Parts 91 98	非常点滅表示灯
+T13	Parts 15 26	非常点滅表示灯スイッチ
+T14	Parts 49 53	スイッチ
+T1	Parts 1 8	側面方向指示器
+T2	Parts 12 14	車両
+R1	Coreference Arg1:T14 Arg2:T13	
+R3	Part-Whole Arg1:T1 Arg2:T2	
+R4	Part-Whole Arg1:T13 Arg2:T2	
+R6	Connect Arg1:T13 Arg2:T12	
+R2	Part-Whole Arg1:T12 Arg2:T2	

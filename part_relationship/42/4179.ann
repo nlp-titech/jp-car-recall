@@ -1,0 +1,24 @@
+T1	Parts 0 12	ブレーキマスターシリンダ
+T2	Parts 84 91	ブレーキペダル
+T3	Parts 24 29	スプリング
+T4	Parts 135 140	ブレーキ液
+T5	Parts 55 59	ピストン
+T6	Parts 17 21	倍力装置
+T7	Parts 128 132	倍力装置
+T12	Parts 122 125	シール
+T13	Parts 159 162	警告灯
+T8	Parts 66 72	カップシール
+T9	Parts 101 107	カップシール
+R1	Coreference Arg1:T8 Arg2:T9	
+R2	Coreference Arg1:T6 Arg2:T7	
+R5	Part-Whole Arg1:T3 Arg2:T6	
+R8	Coreference Arg1:T9 Arg2:T12	
+R9	Contact Arg1:T5 Arg2:T8	
+R7	Part-Whole Arg1:T5 Arg2:T1	
+R12	Contact Arg1:T3 Arg2:T5	
+R13	Part-Whole Arg1:T8 Arg2:T1	
+R3	Connect Arg1:T1 Arg2:T2	
+R6	Connect Arg1:T7 Arg2:T13	
+R10	Contact Arg1:T2 Arg2:T7	
+R4	Contact Arg1:T1 Arg2:T6	
+R11	Contact Arg1:T12 Arg2:T4	

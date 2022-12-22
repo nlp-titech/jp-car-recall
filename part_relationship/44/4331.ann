@@ -1,0 +1,15 @@
+T1	Parts 30 39	エキゾーストパイプ
+T2	Parts 0 6	小型トラック
+T3	Parts 8 16	抜取検査エンジン
+T5	Parts 21 29	排出ガス検査設備
+T6	Parts 55 58	パイプ
+T7	Parts 81 84	パイプ
+T8	Parts 115 132	ＤＰＲ（ディーゼル微粒子除去装置）
+T9	Parts 136 138	燃料
+R3	Part-Whole Arg1:T1 Arg2:T2	
+R4	Contact Arg1:T5 Arg2:T1	
+R5	Coreference Arg1:T1 Arg2:T6	
+R7	Part-Whole Arg1:T8 Arg2:T2	
+R6	Coreference Arg1:T6 Arg2:T7	
+R1	Contact Arg1:T3 Arg2:T1	
+R2	Contact Arg1:T7 Arg2:T9	

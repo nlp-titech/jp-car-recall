@@ -1,0 +1,15 @@
+T14	Parts 20 31	ユニバーサルジョイント
+T15	Parts 32 42	ジャーナルベアリング
+T16	Parts 89 94	ベアリング
+T1	Parts 0 6	小型トラック
+T2	Parts 7 15	プロペラシャフト
+T3	Parts 49 57	ベアリングシール
+T4	Parts 96 100	グリース
+T5	Parts 119 124	ベアリング
+R1	Coreference Arg1:T5 Arg2:T16	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T14 Arg2:T2	
+R4	Part-Whole Arg1:T15 Arg2:T14	
+R6	Coreference Arg1:T16 Arg2:T15	
+R7	Contact Arg1:T4 Arg2:T16	
+R5	Part-Whole Arg1:T3 Arg2:T15	

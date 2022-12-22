@@ -1,0 +1,9 @@
+T1	Parts 1 7	かじ取り装置
+T2	Parts 12 19	ナックルアーム
+T3	Parts 59 66	ナックルアーム
+R1	Coreference Arg1:T3 Arg2:T2	
+T4	Parts 107 114	ナックルアーム
+R2	Coreference Arg1:T4 Arg2:T3	
+T5	Parts 221 223	車両
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T1 Arg2:T5	

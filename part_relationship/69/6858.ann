@@ -1,0 +1,15 @@
+T8	Parts 49 52	レバー
+T9	Parts 80 83	レバー
+T12	Parts 69 71	ドア
+T3	Parts 0 6	後部座席ドア
+T4	Parts 53 59	ボデーパネル
+T1	Parts 15 48	チャイルドプロテクタ（子供が誤ってドアを開けることを防止する装置）
+R1	Part-Whole Arg1:T1 Arg2:T3	
+R2	Part-Whole Arg1:T8 Arg2:T1	
+T5	Parts 87 93	ボデーパネル
+T2	Parts 111 121	チャイルドプロテクタ
+R3	Coreference Arg1:T1 Arg2:T2	
+R4	Coreference Arg1:T4 Arg2:T5	
+R5	Coreference Arg1:T3 Arg2:T12	
+R6	Coreference Arg1:T8 Arg2:T9	
+R7	Part-Whole Arg1:T4 Arg2:T1	

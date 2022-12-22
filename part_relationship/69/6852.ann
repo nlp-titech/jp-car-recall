@@ -1,0 +1,15 @@
+T3	Parts 0 6	動力伝達装置
+T4	Parts 11 16	自動変速機
+T5	Parts 85 89	リテーナ
+T6	Parts 106 109	シフト
+T9	Parts 177 180	対象車
+T11	Parts 58 60	ピン
+T12	Parts 78 80	ピン
+T1	Parts 25 43	パーキングローラーロッド抜け止めピン
+R1	Part-Whole Arg1:T4 Arg2:T3	
+R3	Coreference Arg1:T1 Arg2:T11	
+R4	Coreference Arg1:T11 Arg2:T12	
+R5	Contact Arg1:T12 Arg2:T5	
+R6	Connect Arg1:T4 Arg2:T6	
+R7	Part-Whole Arg1:T3 Arg2:T9	
+R2	Part-Whole Arg1:T1 Arg2:T4	

@@ -1,0 +1,9 @@
+T18	Parts 0 6	フロントハブ
+T1	Parts 40 42	ハブ
+R1	Coreference Arg1:T1 Arg2:T18	
+T3	Parts 151 153	車輪
+T2	Parts 228 230	車両
+R2	Part-Whole Arg1:T1 Arg2:T3	
+R3	Part-Whole Arg1:T3 Arg2:T2	
+T4	Parts 43 47	フランジ
+R4	Part-Whole Arg1:T4 Arg2:T1	

@@ -1,0 +1,11 @@
+T19	Parts 29 36	サスペンション
+T20	Parts 43 48	タイロッド
+T22	Parts 115 123	タイロッドエンド
+T23	Parts 131 136	タイロッド
+T2	Parts 49 51	ネジ
+T3	Parts 66 68	ネジ
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Coreference Arg1:T20 Arg2:T23	
+R4	Part-Whole Arg1:T2 Arg2:T20	
+R5	Connect Arg1:T19 Arg2:T20	
+R3	Part-Whole Arg1:T22 Arg2:T20	

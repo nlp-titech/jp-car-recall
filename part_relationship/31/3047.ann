@@ -1,0 +1,14 @@
+T1	Parts 1 30	電動パワーステアリングコントロールユニット（ＥＰＳＥＣＵ）
+T3	Parts 49 51	素子
+T4	Parts 64 66	素子
+R1	Coreference Arg1:T3 Arg2:T4	
+T5	Parts 86 94	電源電圧監視回路
+T6	Parts 100 111	インフォメーション画面
+T7	Parts 139 142	ＥＰＳ
+T8	Parts 154 158	ハンドル
+R2	Connect Arg1:T7 Arg2:T1	
+R8	Connect Arg1:T6 Arg2:T1	
+T10	Parts 113 126	パワーステアリングシステム
+R9	Connect Arg1:T8 Arg2:T7	
+R10	Coreference Arg1:T7 Arg2:T10	
+R4	Part-Whole Arg1:T4 Arg2:T5	

@@ -1,0 +1,12 @@
+T1	Parts 0 5	後輪タイヤ
+T3	Parts 19 29	タイヤ空気圧ステッカ
+T4	Parts 31 33	車両
+T5	Parts 43 47	ステッカ
+R1	Coreference Arg1:T5 Arg2:T3	
+T6	Parts 65 70	後輪タイヤ
+R2	Coreference Arg1:T6 Arg2:T1	
+T7	Parts 79 82	タイヤ
+R3	Coreference Arg1:T7 Arg2:T6	
+R6	Part-Whole Arg1:T3 Arg2:T4	
+T2	Parts 13 16	タイヤ
+R4	Part-Whole Arg1:T1 Arg2:T4	

@@ -1,0 +1,9 @@
+T1	Parts 11 14	前車軸
+T2	Parts 33 37	ハンドル
+T3	Parts 55 57	車軸
+T4	Parts 94 96	車軸
+R1	Coreference Arg1:T4 Arg2:T3	
+R2	Coreference Arg1:T3 Arg2:T1	
+T5	Parts 0 10	大型ノンステップバス
+R3	Part-Whole Arg1:T1 Arg2:T5	
+R4	Part-Whole Arg1:T2 Arg2:T5	

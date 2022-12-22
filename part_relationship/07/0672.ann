@@ -1,0 +1,9 @@
+T1	Parts 2 6	走行装置
+T2	Parts 7 19	前輪ハブベアリングシール
+T3	Parts 40 45	ベアリング
+T4	Parts 68 73	ベアリング
+T5	Parts 113 118	ベアリング
+R1	Coreference Arg1:T5 Arg2:T4	
+R2	Coreference Arg1:T4 Arg2:T3	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Contact Arg1:T3 Arg2:T2	

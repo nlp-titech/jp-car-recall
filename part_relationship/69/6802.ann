@@ -1,0 +1,15 @@
+T2	Parts 78 84	外側ハンドル
+T3	Parts 101 105	ハンドル
+T5	Parts 8 11	後部扉
+T6	Parts 74 77	後部扉
+T8	Parts 50 52	車両
+T11	Parts 116 117	扉
+T1	Parts 26 32	開扉用ロッド
+T4	Parts 18 24	外側ハンドル
+R1	Part-Whole Arg1:T5 Arg2:T8	
+R2	Part-Whole Arg1:T4 Arg2:T5	
+R3	Part-Whole Arg1:T1 Arg2:T5	
+R4	Coreference Arg1:T5 Arg2:T6	
+R5	Coreference Arg1:T4 Arg2:T2	
+R6	Coreference Arg1:T2 Arg2:T3	
+R7	Coreference Arg1:T6 Arg2:T11	

@@ -1,0 +1,14 @@
+T1	Parts 0 6	小型トラック
+T2	Parts 78 82	エンジン
+T3	Parts 7 19	手動式パーキングブレーキ
+T4	Parts 24 31	レバー保持機構
+T5	Parts 45 48	レバー
+T6	Parts 95 98	レバー
+T8	Parts 120 122	車両
+R2	Coreference Arg1:T5 Arg2:T6	
+R3	Coreference Arg1:T1 Arg2:T8	
+R4	Part-Whole Arg1:T3 Arg2:T1	
+R5	Part-Whole Arg1:T4 Arg2:T3	
+R6	Part-Whole Arg1:T2 Arg2:T1	
+R1	Contact Arg1:T4 Arg2:T5	
+R8	Part-Whole Arg1:T5 Arg2:T3	

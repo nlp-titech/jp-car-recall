@@ -1,0 +1,17 @@
+T3	Parts 119 125	オイルポンプ
+T4	Parts 19 22	ボルト
+T5	Parts 57 60	ボルト
+T6	Parts 88 91	ボルト
+T7	Parts 111 114	ボルト
+T8	Parts 36 39	原動機
+T9	Parts 47 50	原動機
+T10	Parts 148 151	原動機
+T1	Parts 0 14	オイルポンプ駆動スプロケット
+R1	Contact Arg1:T4 Arg2:T1	
+R3	Coreference Arg1:T8 Arg2:T9	
+R4	Coreference Arg1:T4 Arg2:T5	
+R5	Coreference Arg1:T5 Arg2:T6	
+R6	Coreference Arg1:T6 Arg2:T7	
+R2	Coreference Arg1:T9 Arg2:T10	
+R8	Connect Arg1:T3 Arg2:T10	
+R7	Connect Arg1:T1 Arg2:T3	

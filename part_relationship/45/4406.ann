@@ -1,0 +1,12 @@
+T1	Parts 101 106	前面ガラス
+T2	Parts 28 44	空調用熱交換器（ヒーター・コア）
+T4	Parts 45 48	パイプ
+T5	Parts 13 21	冷却水循環ホース
+T6	Parts 4 7	助手席
+T8	Parts 52 55	冷却水
+T9	Parts 90 93	冷却水
+R1	Coreference Arg1:T8 Arg2:T9	
+R2	Contact Arg1:T5 Arg2:T8	
+R3	Part-Whole Arg1:T4 Arg2:T2	
+R4	Contact Arg1:T5 Arg2:T4	
+R5	Contact Arg1:T4 Arg2:T8	

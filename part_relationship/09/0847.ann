@@ -1,0 +1,9 @@
+T15	Parts 83 92	後部扉ドアハンドル
+T16	Parts 107 110	後部扉
+T17	Parts 0 22	後部扉用アクティブパワーロック装置用ケーブル
+T2	Parts 36 40	ケーブル
+T3	Parts 67 71	ケーブル
+R1	Coreference Arg1:T3 Arg2:T2	
+R2	Coreference Arg1:T17 Arg2:T2	
+R3	Contact Arg1:T3 Arg2:T15	
+R4	Part-Whole Arg1:T15 Arg2:T16	

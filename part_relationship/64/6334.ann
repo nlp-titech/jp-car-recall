@@ -1,0 +1,19 @@
+T1	Parts 0 9	バッテリーケーブル
+T2	Parts 68 77	バッテリーケーブル
+T3	Parts 91 100	バッテリーケーブル
+T7	Parts 16 20	ケーブル
+T9	Parts 31 35	ワイパー
+T12	Parts 134 138	ワイパー
+T13	Parts 126 128	配線
+R1	Coreference Arg1:T1 Arg2:T7	
+T5	Parts 43 52	ワイパーリンケージ
+R2	Part-Whole Arg1:T5 Arg2:T9	
+R3	Coreference Arg1:T7 Arg2:T2	
+R5	Coreference Arg1:T2 Arg2:T3	
+T6	Parts 101 110	ワイパーリンケージ
+R6	Coreference Arg1:T5 Arg2:T6	
+T4	Parts 117 125	ワイパーモーター
+R7	Coreference Arg1:T9 Arg2:T12	
+R8	Contact Arg1:T4 Arg2:T13	
+R9	Contact Arg1:T4 Arg2:T12	
+R4	Connect Arg1:T6 Arg2:T4	

@@ -1,0 +1,17 @@
+T19	Parts 6 11	前輪用配管
+T20	Parts 30 32	配管
+T21	Parts 78 80	配管
+T22	Parts 103 105	配管
+T23	Parts 117 121	ブレーキ
+T24	Parts 122 125	警告灯
+T25	Parts 140 142	前輪
+T1	Parts 0 5	主制動装置
+R1	Coreference Arg1:T20 Arg2:T19	
+R2	Coreference Arg1:T21 Arg2:T20	
+R3	Coreference Arg1:T22 Arg2:T21	
+T2	Parts 110 113	制動液
+R4	Part-Whole Arg1:T19 Arg2:T1	
+R5	Contact Arg1:T2 Arg2:T22	
+R6	Part-Whole Arg1:T23 Arg2:T1	
+R7	Connect Arg1:T24 Arg2:T23	
+R8	Connect Arg1:T23 Arg2:T25	

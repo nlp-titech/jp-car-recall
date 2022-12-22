@@ -1,0 +1,19 @@
+T12	Parts 127 133	ＥＧＲバルブ
+T13	Parts 20 27	バルブシャフト
+T14	Parts 31 35	ブッシュ
+T15	Parts 49 56	バルブシャフト
+T17	Parts 93 96	モータ
+T18	Parts 74 77	モータ
+T19	Parts 101 104	ブラシ
+T1	Parts 0 15	排気ガス再循環（ＥＧＲ）バルブ
+R1	Coreference Arg1:T13 Arg2:T15	
+R2	Coreference Arg1:T18 Arg2:T17	
+R3	Coreference Arg1:T1 Arg2:T12	
+T4	Parts 141 148	エンジン警告灯
+R4	Part-Whole Arg1:T19 Arg2:T17	
+R5	Part-Whole Arg1:T13 Arg2:T1	
+R6	Contact Arg1:T14 Arg2:T13	
+R7	Part-Whole Arg1:T14 Arg2:T1	
+R8	Contact Arg1:T18 Arg2:T15	
+R9	Part-Whole Arg1:T18 Arg2:T1	
+R10	Connect Arg1:T4 Arg2:T12	

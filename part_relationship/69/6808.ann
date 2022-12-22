@@ -1,0 +1,5 @@
+T2	Parts 51 55	ステップ
+T3	Parts 63 67	ステップ
+T1	Parts 0 15	運転者用ステップ（足掛け）金具
+R1	Contact Arg1:T1 Arg2:T2	
+R2	Coreference Arg1:T2 Arg2:T3	

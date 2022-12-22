@@ -1,0 +1,17 @@
+T3	Parts 9 18	前輪ブレーキレバー
+T4	Parts 93 102	前輪ブレーキレバー
+T5	Parts 25 29	グリース
+T6	Parts 59 63	グリース
+T7	Parts 143 147	ブレーキ
+T8	Parts 0 4	制動装置
+T9	Parts 80 88	ピボット部ボルト
+T10	Parts 135 138	レバー
+T11	Parts 174 176	前輪
+R1	Coreference Arg1:T5 Arg2:T6	
+R2	Coreference Arg1:T3 Arg2:T4	
+R3	Coreference Arg1:T4 Arg2:T10	
+R4	Coreference Arg1:T8 Arg2:T7	
+R6	Part-Whole Arg1:T3 Arg2:T8	
+R8	Contact Arg1:T9 Arg2:T4	
+R7	Contact Arg1:T6 Arg2:T9	
+R9	Connect Arg1:T10 Arg2:T11	

@@ -1,0 +1,10 @@
+T12	Parts 9 22	カレントリミッタ（整流器）
+T13	Parts 65 69	リード線
+T14	Parts 85 89	リード線
+T1	Parts 0 4	充電装置
+R2	Coreference Arg1:T14 Arg2:T13	
+T5	Parts 90 92	素子
+R3	Part-Whole Arg1:T12 Arg2:T1	
+R6	Part-Whole Arg1:T13 Arg2:T12	
+R7	Part-Whole Arg1:T5 Arg2:T12	
+R8	Contact Arg1:T5 Arg2:T14	

@@ -1,0 +1,11 @@
+T10	Parts 117 121	ブレーキ
+T11	Parts 53 61	ブレーキプレート
+T1	Parts 0 4	制動装置
+T2	Parts 12 20	ブレーキプレート
+T3	Parts 25 32	ブレーキシュー
+T4	Parts 33 41	ブレーキプレート
+R1	Coreference Arg1:T4 Arg2:T11	
+R2	Coreference Arg1:T2 Arg2:T4	
+R3	Coreference Arg1:T1 Arg2:T10	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T3 Arg2:T1	

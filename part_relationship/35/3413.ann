@@ -1,0 +1,11 @@
+T16	Parts 5 11	ファンベルト
+T17	Parts 12 25	アイドラプーリーベアリング
+T18	Parts 43 48	ベアリング
+T19	Parts 87 92	ベアリング
+T20	Parts 110 116	ファンベルト
+T1	Parts 0 4	大型バス
+R1	Coreference Arg1:T18 Arg2:T17	
+R2	Coreference Arg1:T19 Arg2:T18	
+R3	Coreference Arg1:T20 Arg2:T16	
+R4	Part-Whole Arg1:T16 Arg2:T1	
+R5	Part-Whole Arg1:T17 Arg2:T16	

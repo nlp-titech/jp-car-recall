@@ -1,0 +1,12 @@
+T2	Parts 124 136	ステアリングギアボックス
+T5	Parts 72 77	ブラケット
+T6	Parts 58 62	ハンドル
+T7	Parts 140 144	ハンドル
+T4	Parts 0 10	フロントサブフレーム
+T1	Parts 18 39	ステアリングギアボックス取り付けブラケット
+R1	Contact Arg1:T4 Arg2:T1	
+R2	Coreference Arg1:T1 Arg2:T5	
+R3	Coreference Arg1:T6 Arg2:T7	
+R4	Contact Arg1:T5 Arg2:T2	
+R5	Connect Arg1:T2 Arg2:T7	
+R6	Contact Arg1:T4 Arg2:T2	

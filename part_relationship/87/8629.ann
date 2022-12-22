@@ -1,0 +1,15 @@
+T1	Parts 2 11	ホイール・クレーン
+T2	Parts 12 15	原動機
+T3	Parts 16 20	燃料配管
+T4	Parts 25 29	フレーム
+T5	Parts 52 56	燃料配管
+T6	Parts 57 61	フレーム
+T7	Parts 93 97	燃料配管
+T8	Parts 108 110	燃料
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T2	
+R3	Part-Whole Arg1:T4 Arg2:T1	
+R4	Coreference Arg1:T3 Arg2:T5	
+R5	Coreference Arg1:T4 Arg2:T6	
+R6	Coreference Arg1:T5 Arg2:T7	
+R7	Contact Arg1:T7 Arg2:T8	

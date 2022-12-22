@@ -1,0 +1,9 @@
+T1	Parts 10 16	コンピュータ
+T2	Parts 0 5	エアバッグ
+T3	Parts 53 58	エアバッグ
+T4	Parts 17 22	プログラム
+T5	Parts 30 32	車体
+R1	Connect Arg1:T1 Arg2:T2	
+R2	Part-Whole Arg1:T4 Arg2:T1	
+R3	Part-Whole Arg1:T2 Arg2:T5	
+R4	Coreference Arg1:T2 Arg2:T3	

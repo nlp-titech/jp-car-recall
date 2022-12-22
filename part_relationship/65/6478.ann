@@ -1,0 +1,9 @@
+T1	Parts 11 17	シートレール
+T3	Parts 28 30	座席
+T4	Parts 54 56	座席
+T5	Parts 76 78	座席
+T6	Parts 0 6	前席右側座席
+R2	Coreference Arg1:T6 Arg2:T3	
+R3	Coreference Arg1:T3 Arg2:T4	
+R4	Coreference Arg1:T4 Arg2:T5	
+R1	Contact Arg1:T6 Arg2:T1	

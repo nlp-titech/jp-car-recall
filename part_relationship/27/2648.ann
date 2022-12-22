@@ -1,0 +1,21 @@
+T1	Parts 35 47	アイドリングストップ装置
+T2	Parts 48 55	リレーボックス
+T14	Parts 111 118	リレーボックス
+T15	Parts 71 75	路線バス
+T3	Parts 0 4	エンジン
+T4	Parts 8 26	音声合成放送装置（行き先案内放送等）
+T5	Parts 56 61	リレー配線
+T6	Parts 96 107	すれ違い用前照灯リレー
+T7	Parts 108 110	配線
+R1	Coreference Arg1:T14 Arg2:T2	
+T8	Parts 150 152	配線
+T9	Parts 165 173	すれ違い用前照灯
+R2	Coreference Arg1:T8 Arg2:T7	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T5 Arg2:T2	
+R5	Part-Whole Arg1:T3 Arg2:T15	
+R6	Part-Whole Arg1:T4 Arg2:T15	
+R7	Part-Whole Arg1:T1 Arg2:T15	
+R8	Part-Whole Arg1:T7 Arg2:T6	
+R9	Part-Whole Arg1:T6 Arg2:T15	
+R10	Connect Arg1:T9 Arg2:T8	

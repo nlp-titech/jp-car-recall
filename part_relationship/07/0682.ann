@@ -1,0 +1,10 @@
+T1	Parts 1 7	手動式変速機
+T2	Parts 12 18	シフトレバー
+T3	Parts 36 46	ダイナミックダンパー
+T4	Parts 47 50	遮熱板
+T5	Parts 61 65	エンジン
+T6	Parts 120 123	遮熱板
+R1	Coreference Arg1:T6 Arg2:T4	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Contact Arg1:T3 Arg2:T2	
+R4	Part-Whole Arg1:T4 Arg2:T3	

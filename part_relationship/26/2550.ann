@@ -1,0 +1,5 @@
+T10	Parts 0 6	後側フレーム
+T12	Parts 12 14	側板
+T3	Parts 84 88	フレーム
+R2	Coreference Arg1:T3 Arg2:T10	
+R1	Contact Arg1:T12 Arg2:T10	

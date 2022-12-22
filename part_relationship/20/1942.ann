@@ -1,0 +1,21 @@
+T19	Parts 116 121	ドアガラス
+T20	Parts 105 110	ドアガラス
+T21	Parts 72 77	ドアガラス
+T22	Parts 21 26	ドアガラス
+T24	Parts 27 33	ガイドレール
+T25	Parts 40 42	ゴム
+T26	Parts 91 93	ゴム
+T27	Parts 122 128	ガイドレール
+T28	Parts 132 140	ドア開閉用ロッド
+T29	Parts 145 147	ドア
+R2	Coreference Arg1:T21 Arg2:T22	
+R3	Coreference Arg1:T26 Arg2:T25	
+R4	Coreference Arg1:T20 Arg2:T21	
+R5	Coreference Arg1:T19 Arg2:T20	
+R6	Coreference Arg1:T27 Arg2:T24	
+T1	Parts 0 7	前席ドアガラス
+R1	Coreference Arg1:T22 Arg2:T1	
+R7	Contact Arg1:T24 Arg2:T22	
+R8	Part-Whole Arg1:T25 Arg2:T24	
+R9	Part-Whole Arg1:T28 Arg2:T29	
+R10	Part-Whole Arg1:T19 Arg2:T29	

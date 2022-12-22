@@ -1,0 +1,27 @@
+T13	Parts 203 207	エンジン
+T14	Parts 144 151	アクセルペダル
+T15	Parts 165 176	アクセルインターロック
+T16	Parts 131 134	ペダル
+T17	Parts 102 105	ペダル
+T18	Parts 87 94	アクセルペダル
+T20	Parts 57 60	ロッド
+T21	Parts 190 193	ペダル
+T22	Parts 194 197	ロッド
+T1	Parts 0 4	乗降口扉
+T2	Parts 5 26	開扉発車防止装置（アクセルインターロック）
+T3	Parts 31 35	乗降口扉
+T4	Parts 40 47	アクセルペダル
+T6	Parts 157 160	ロッド
+R1	Coreference Arg1:T1 Arg2:T3	
+R3	Coreference Arg1:T4 Arg2:T18	
+R4	Coreference Arg1:T18 Arg2:T17	
+R5	Coreference Arg1:T17 Arg2:T16	
+R6	Coreference Arg1:T16 Arg2:T14	
+R8	Coreference Arg1:T20 Arg2:T6	
+R10	Coreference Arg1:T14 Arg2:T21	
+R11	Coreference Arg1:T6 Arg2:T22	
+R12	Connect Arg1:T2 Arg2:T1	
+R13	Part-Whole Arg1:T20 Arg2:T2	
+R14	Contact Arg1:T20 Arg2:T4	
+R2	Coreference Arg1:T15 Arg2:T2	
+R7	Connect Arg1:T21 Arg2:T13	

@@ -1,0 +1,7 @@
+T1	Parts 18 25	かじ取ハンドル
+T4	Parts 120 123	ロッド
+T2	Parts 47 54	ガススプリング
+T3	Parts 112 119	ガススプリング
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Connect Arg1:T1 Arg2:T2	
+R3	Contact Arg1:T3 Arg2:T4	

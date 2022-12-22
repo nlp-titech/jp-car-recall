@@ -1,0 +1,13 @@
+T1	Parts 0 3	警察車
+T2	Parts 8 16	サイレン用アンプ
+T3	Parts 17 24	制御プログラム
+T4	Parts 59 62	アンプ
+T5	Parts 81 85	ヒューズ
+R1	Coreference Arg1:T2 Arg2:T4	
+T6	Parts 42 45	マイク
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T3 Arg2:T2	
+R4	Part-Whole Arg1:T6 Arg2:T1	
+R5	Contact Arg1:T2 Arg2:T6	
+R6	Part-Whole Arg1:T5 Arg2:T1	
+R7	Connect Arg1:T4 Arg2:T5	

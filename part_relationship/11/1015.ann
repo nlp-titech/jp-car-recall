@@ -1,0 +1,7 @@
+T10	Parts 1 8	メインマフラー
+T12	Parts 28 36	インレットパイプ
+T1	Parts 45 53	インレットパイプ
+T2	Parts 21 25	マフラー
+R1	Coreference Arg1:T2 Arg2:T10	
+R2	Part-Whole Arg1:T12 Arg2:T2	
+R3	Coreference Arg1:T1 Arg2:T12	

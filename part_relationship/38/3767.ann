@@ -1,0 +1,8 @@
+T1	Parts 13 22	コントロールバルブ
+T2	Parts 29 35	バルブケース
+T3	Parts 57 65	前後切替スプール
+T4	Parts 103 105	車両
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T1	
+R3	Contact Arg1:T3 Arg2:T2	
+R4	Part-Whole Arg1:T1 Arg2:T4	

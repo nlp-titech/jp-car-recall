@@ -1,0 +1,7 @@
+T1	Parts 0 3	前照灯
+T2	Parts 16 22	走行用前照灯
+T3	Parts 23 31	すれ違い用前照灯
+T4	Parts 52 55	前照灯
+R1	Coreference Arg1:T4 Arg2:T1	
+R3	Oneway-Coreference Arg1:T1 Arg2:T2	
+R2	Oneway-Coreference Arg1:T1 Arg2:T3	

@@ -1,0 +1,15 @@
+T11	Parts 31 36	ハウジング
+T15	Parts 56 61	ハウジング
+T17	Parts 110 115	方向指示器
+T18	Parts 123 130	前面方向指示器
+T19	Parts 65 72	バルブソケット
+T1	Parts 1 18	フロント・コンビネーション・ランプ
+T2	Parts 19 26	前面方向指示器
+R1	Coreference Arg1:T15 Arg2:T11	
+T4	Parts 143 150	方向指示表示灯
+R7	Part-Whole Arg1:T2 Arg2:T1	
+R8	Part-Whole Arg1:T11 Arg2:T2	
+R12	Coreference Arg1:T2 Arg2:T17	
+R2	Part-Whole Arg1:T19 Arg2:T2	
+R3	Coreference Arg1:T2 Arg2:T18	
+R4	Connect Arg1:T17 Arg2:T4	

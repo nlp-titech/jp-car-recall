@@ -1,0 +1,9 @@
+T1	Parts 7 15	かじ取りハンドル
+T2	Parts 22 30	かじ取りハンドル
+T3	Parts 60 68	かじ取りハンドル
+T4	Parts 0 6	かじ取り装置
+T5	Parts 69 71	ハブ
+R1	Part-Whole Arg1:T1 Arg2:T4	
+R2	Coreference Arg1:T1 Arg2:T2	
+R3	Coreference Arg1:T2 Arg2:T3	
+R4	Contact Arg1:T3 Arg2:T5	

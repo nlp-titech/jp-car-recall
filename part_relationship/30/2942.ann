@@ -1,0 +1,13 @@
+T1	Parts 0 15	圧縮天然ガス（ＣＮＧ）エンジン
+T2	Parts 18 23	自動変速機
+T3	Parts 26 30	路線バス
+T4	Parts 35 45	エンジン制御ユニット
+T6	Parts 116 121	自動変速機
+R1	Coreference Arg1:T6 Arg2:T2	
+R2	Part-Whole Arg1:T1 Arg2:T3	
+R3	Part-Whole Arg1:T2 Arg2:T3	
+R4	Part-Whole Arg1:T4 Arg2:T3	
+T5	Parts 46 61	アイドリング回転制御プログラム
+R5	Part-Whole Arg1:T5 Arg2:T4	
+R6	Connect Arg1:T4 Arg2:T1	
+R7	Connect Arg1:T1 Arg2:T2	

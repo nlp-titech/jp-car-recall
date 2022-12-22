@@ -1,0 +1,15 @@
+T1	Parts 0 6	動力伝達装置
+T2	Parts 32 36	クランプ
+T3	Parts 58 62	クランプ
+T4	Parts 113 116	作動油
+T5	Parts 7 11	油圧配管
+T9	Parts 18 25	油圧配管ホース
+T10	Parts 63 70	油圧配管ホース
+T11	Parts 101 108	油圧配管ホース
+R1	Contact Arg1:T2 Arg2:T9	
+R2	Coreference Arg1:T10 Arg2:T9	
+R3	Coreference Arg1:T3 Arg2:T2	
+R4	Contact Arg1:T4 Arg2:T11	
+R5	Coreference Arg1:T11 Arg2:T10	
+R6	Part-Whole Arg1:T9 Arg2:T5	
+R7	Part-Whole Arg1:T5 Arg2:T1	

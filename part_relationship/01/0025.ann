@@ -1,0 +1,25 @@
+T15	Parts 25 36	ドアハンドル（樹脂製）
+T16	Parts 50 56	ドアハンドル
+T18	Parts 95 102	レリーズロッド
+T19	Parts 132 139	ドアロック装置
+T20	Parts 147 152	ドアガラス
+T21	Parts 182 187	ドアガラス
+T22	Parts 191 198	レリーズロッド
+T23	Parts 210 212	ドア
+T24	Parts 110 112	ドア
+T17	Parts 57 79	レリーズロッド（ドア開閉装置のラッチ解除棒）
+T31	Parts 160 167	レリーズロッド
+R1	Coreference Arg1:T15 Arg2:T16	
+R2	Coreference Arg1:T18 Arg2:T17	
+R3	Coreference Arg1:T31 Arg2:T18	
+R4	Coreference Arg1:T22 Arg2:T31	
+R5	Coreference Arg1:T21 Arg2:T20	
+R6	Coreference Arg1:T23 Arg2:T24	
+T1	Parts 14 18	運転者席
+T2	Parts 20 23	助手席
+R9	Part-Whole Arg1:T17 Arg2:T16	
+R10	Part-Whole Arg1:T16 Arg2:T24	
+R11	Part-Whole Arg1:T19 Arg2:T24	
+R12	Contact Arg1:T24 Arg2:T20	
+R7	Contact Arg1:T15 Arg2:T2	
+R8	Contact Arg1:T15 Arg2:T1	

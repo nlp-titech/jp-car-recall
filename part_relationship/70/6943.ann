@@ -1,0 +1,15 @@
+T1	Parts 8 17	リターンスプリング
+T2	Parts 103 112	リターンスプリング
+T3	Parts 0 7	サイドスタンド
+T4	Parts 36 43	サイドスタンド
+T5	Parts 116 123	サイドスタンド
+T8	Parts 93 98	フックピン
+T9	Parts 18 23	フックピン
+T10	Parts 54 59	フックピン
+R1	Part-Whole Arg1:T1 Arg2:T3	
+R2	Part-Whole Arg1:T9 Arg2:T1	
+R3	Coreference Arg1:T3 Arg2:T4	
+R4	Coreference Arg1:T9 Arg2:T10	
+R5	Coreference Arg1:T9 Arg2:T8	
+R6	Coreference Arg1:T1 Arg2:T2	
+R7	Coreference Arg1:T3 Arg2:T5	

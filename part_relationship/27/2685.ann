@@ -1,0 +1,20 @@
+T16	Parts 46 50	フレーム
+T17	Parts 51 57	クロスメンバ
+T18	Parts 19 33	ハイブリッドモータブラケット
+T19	Parts 153 156	モータ
+T20	Parts 60 65	ブラケット
+T21	Parts 97 110	モータブラケット固定ボルト
+T22	Parts 139 142	ボルト
+T24	Parts 85 87	車両
+T1	Parts 0 6	小型トラック
+T2	Parts 7 14	ハイブリッド車
+R1	Coreference Arg1:T20 Arg2:T18	
+R2	Coreference Arg1:T22 Arg2:T21	
+R3	Coreference Arg1:T24 Arg2:T2	
+R5	Part-Whole Arg1:T18 Arg2:T2	
+R7	Part-Whole Arg1:T17 Arg2:T16	
+R6	Part-Whole Arg1:T16 Arg2:T2	
+R8	Contact Arg1:T21 Arg2:T18	
+R9	Contact Arg1:T19 Arg2:T18	
+R10	Contact Arg1:T20 Arg2:T17	
+R12	Part-Whole Arg1:T19 Arg2:T2	

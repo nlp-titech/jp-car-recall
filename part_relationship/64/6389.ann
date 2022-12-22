@@ -1,0 +1,11 @@
+T1	Parts 0 8	プロペラシャフト
+T2	Parts 71 79	プロペラシャフト
+T3	Parts 80 85	ジョイント
+T7	Parts 13 15	鋼管
+T8	Parts 28 30	鋼管
+R1	Coreference Arg1:T7 Arg2:T8	
+R2	Part-Whole Arg1:T7 Arg2:T1	
+R3	Coreference Arg1:T1 Arg2:T2	
+T4	Parts 86 88	鋼管
+R4	Part-Whole Arg1:T3 Arg2:T2	
+R5	Contact Arg1:T3 Arg2:T4	

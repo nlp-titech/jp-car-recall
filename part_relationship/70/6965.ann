@@ -1,0 +1,15 @@
+T2	Parts 0 15	油圧式パワーステアリングポンプ
+T3	Parts 16 23	ベーン（羽根）
+T4	Parts 60 66	オイルタンク
+T5	Parts 112 116	ハンドル
+T6	Parts 100 103	オイル
+T7	Parts 41 44	ベーン
+T8	Parts 55 58	ポンプ
+T9	Parts 94 97	ポンプ
+R1	Part-Whole Arg1:T3 Arg2:T2	
+R2	Coreference Arg1:T3 Arg2:T7	
+R3	Coreference Arg1:T2 Arg2:T8	
+R4	Coreference Arg1:T2 Arg2:T9	
+R5	Part-Whole Arg1:T6 Arg2:T4	
+R6	Connect Arg1:T5 Arg2:T9	
+R7	Connect Arg1:T4 Arg2:T2	

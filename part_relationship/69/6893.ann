@@ -1,0 +1,8 @@
+T2	Parts 117 123	テールゲート
+T1	Parts 0 12	テールゲート昇降用リンク
+T3	Parts 103 111	チルトブラケット
+T4	Parts 19 27	チルトブラケット
+R1	Contact Arg1:T1 Arg2:T4	
+R2	Coreference Arg1:T4 Arg2:T3	
+R3	Contact Arg1:T3 Arg2:T2	
+R4	Connect Arg1:T1 Arg2:T2	

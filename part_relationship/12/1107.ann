@@ -1,0 +1,23 @@
+T16	Parts 159 162	ＡＢＳ
+T17	Parts 142 147	Ｇセンサー
+T18	Parts 50 56	コンデンサー
+T19	Parts 65 71	コンデンサー
+T1	Parts 0 5	四輪駆動車
+T2	Parts 6 10	制動装置
+T3	Parts 15 18	ＡＢＳ
+T4	Parts 28 42	減速度検知装置（Ｇセンサー）
+T6	Parts 73 76	電解液
+T7	Parts 107 110	電解液
+T8	Parts 113 115	基板
+R1	Coreference Arg1:T18 Arg2:T19	
+R2	Coreference Arg1:T6 Arg2:T7	
+R4	Coreference Arg1:T3 Arg2:T16	
+R5	Coreference Arg1:T4 Arg2:T17	
+R6	Part-Whole Arg1:T2 Arg2:T1	
+R7	Part-Whole Arg1:T6 Arg2:T19	
+R8	Part-Whole Arg1:T3 Arg2:T2	
+R9	Connect Arg1:T4 Arg2:T3	
+R12	Part-Whole Arg1:T8 Arg2:T4	
+T5	Parts 124 126	ＩＣ
+R14	Part-Whole Arg1:T5 Arg2:T8	
+R3	Part-Whole Arg1:T19 Arg2:T8	

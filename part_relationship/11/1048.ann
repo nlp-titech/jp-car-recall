@@ -1,0 +1,32 @@
+T23	Parts 43 47	エンジン
+T24	Parts 87 92	燃料パイプ
+T25	Parts 54 59	ブラケット
+T27	Parts 21 25	クランプ
+T29	Parts 73 80	高圧燃料パイプ
+T30	Parts 93 99	締付クランプ
+T31	Parts 110 114	エンジン
+T33	Parts 119 126	クランプボルト
+T34	Parts 136 140	クランプ
+T35	Parts 168 177	噴射ノズル用パイプ
+T36	Parts 179 186	高圧燃料パイプ
+T37	Parts 205 209	エンジン
+T1	Parts 0 6	燃料噴射装置
+T2	Parts 7 16	噴射ノズル用パイプ
+T3	Parts 26 31	ブラケット
+R1	Coreference Arg1:T3 Arg2:T25	
+R2	Coreference Arg1:T29 Arg2:T24	
+R3	Coreference Arg1:T23 Arg2:T31	
+R4	Coreference Arg1:T30 Arg2:T34	
+R5	Coreference Arg1:T2 Arg2:T35	
+R7	Coreference Arg1:T31 Arg2:T37	
+T4	Parts 193 195	燃料
+R8	Part-Whole Arg1:T2 Arg2:T1	
+R9	Contact Arg1:T2 Arg2:T27	
+R10	Contact Arg1:T3 Arg2:T27	
+R11	Part-Whole Arg1:T1 Arg2:T23	
+R12	Contact Arg1:T30 Arg2:T24	
+R14	Contact Arg1:T33 Arg2:T30	
+R17	Contact Arg1:T4 Arg2:T36	
+R18	Contact Arg1:T4 Arg2:T35	
+R13	Part-Whole Arg1:T24 Arg2:T31	
+R6	Coreference Arg1:T24 Arg2:T36	

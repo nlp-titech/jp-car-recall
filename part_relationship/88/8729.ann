@@ -1,0 +1,11 @@
+T1	Parts 0 6	中型トラック
+T2	Parts 7 26	Ａ０５Ｃ（ＨＣ－ＳＣＲ）エンジン搭載車
+T3	Parts 31 39	ＨＣ－ＳＣＲ触媒
+T4	Parts 40 50	再生用制御プログラム
+T5	Parts 58 60	触媒
+T6	Parts 96 98	触媒
+R1	Coreference Arg1:T3 Arg2:T5	
+R2	Coreference Arg1:T5 Arg2:T6	
+R3	Part-Whole Arg1:T3 Arg2:T2	
+R4	Connect Arg1:T3 Arg2:T4	
+R5	Part-Whole Arg1:T4 Arg2:T2	

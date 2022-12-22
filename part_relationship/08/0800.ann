@@ -1,0 +1,30 @@
+T17	Parts 6 12	灯火スイッチ
+T18	Parts 76 81	方向指示器
+T1	Parts 1 5	灯火装置
+T3	Parts 27 30	グリス
+T4	Parts 45 48	グリス
+T5	Parts 49 51	電線
+T6	Parts 58 60	被覆
+T7	Parts 82 86	スイッチ
+T8	Parts 95 97	電線
+T9	Parts 98 100	被覆
+T10	Parts 113 115	芯線
+T11	Parts 121 124	前照灯
+T12	Parts 125 128	車幅灯
+T13	Parts 129 131	尾灯
+T14	Parts 134 140	計器盤照明灯
+R1	Coreference Arg1:T8 Arg2:T5	
+R2	Coreference Arg1:T9 Arg2:T6	
+R3	Coreference Arg1:T4 Arg2:T3	
+R4	Part-Whole Arg1:T11 Arg2:T1	
+R5	Part-Whole Arg1:T12 Arg2:T1	
+R6	Part-Whole Arg1:T13 Arg2:T1	
+R7	Part-Whole Arg1:T14 Arg2:T1	
+R8	Connect Arg1:T17 Arg2:T1	
+R10	Contact Arg1:T3 Arg2:T17	
+R12	Part-Whole Arg1:T6 Arg2:T5	
+R13	Connect Arg1:T7 Arg2:T18	
+R15	Part-Whole Arg1:T18 Arg2:T1	
+R16	Part-Whole Arg1:T10 Arg2:T8	
+R9	Contact Arg1:T9 Arg2:T10	
+R11	Contact Arg1:T1 Arg2:T5	

@@ -1,0 +1,19 @@
+T12	Parts 137 142	ボンネット
+T13	Parts 123 128	ボンネット
+T14	Parts 116 122	ストライカー
+T15	Parts 78 84	ストライカー
+T16	Parts 38 44	ストライカー
+T1	Parts 0 5	ボンネット
+T2	Parts 6 8	車体
+T3	Parts 13 18	ロック装置
+T4	Parts 23 28	ボンネット
+R1	Coreference Arg1:T1 Arg2:T4	
+R2	Coreference Arg1:T16 Arg2:T15	
+R4	Coreference Arg1:T15 Arg2:T14	
+R6	Coreference Arg1:T13 Arg2:T12	
+R7	Contact Arg1:T1 Arg2:T3	
+R9	Contact Arg1:T16 Arg2:T4	
+R3	Contact Arg1:T2 Arg2:T1	
+R10	Part-Whole Arg1:T16 Arg2:T3	
+R11	Coreference Arg1:T13 Arg2:T4	
+R5	Contact Arg1:T2 Arg2:T3	

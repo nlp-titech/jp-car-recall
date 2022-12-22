@@ -1,0 +1,7 @@
+T16	Parts 0 6	前軸緩衝装置
+T17	Parts 7 21	トルクロッド取付けブラケット
+T18	Parts 108 113	ブラケット
+T1	Parts 36 41	ブラケット
+R1	Coreference Arg1:T17 Arg2:T1	
+R2	Coreference Arg1:T1 Arg2:T18	
+R3	Part-Whole Arg1:T17 Arg2:T16	

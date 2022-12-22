@@ -1,0 +1,7 @@
+T1	Parts 0 10	フロントサブフレーム
+T2	Parts 54 60	サブフレーム
+T3	Parts 72 78	サブフレーム
+T4	Parts 90 95	ロアアーム
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Coreference Arg1:T2 Arg2:T3	
+R3	Contact Arg1:T4 Arg2:T3	

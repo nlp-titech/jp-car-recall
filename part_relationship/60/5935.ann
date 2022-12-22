@@ -1,0 +1,13 @@
+T2	Parts 98 103	側面ガラス
+T3	Parts 87 91	運転者席
+T4	Parts 94 97	助手席
+T5	Parts 73 75	車両
+T6	Parts 17 51	地上デジタルＴＶチューナーキット（該当する部品番号ＳＩ７０Ｂ２０１）
+T7	Parts 52 64	地上デジタルＴＶアンテナ
+T8	Parts 82 86	アンテナ
+R1	Part-Whole Arg1:T7 Arg2:T6	
+R2	Coreference Arg1:T7 Arg2:T8	
+R3	Part-Whole Arg1:T3 Arg2:T5	
+R4	Part-Whole Arg1:T4 Arg2:T5	
+R5	Part-Whole Arg1:T2 Arg2:T5	
+R6	Contact Arg1:T7 Arg2:T5	

@@ -1,0 +1,14 @@
+T1	Parts 6 16	ＬＰＧ車用燃料ポンプ
+T2	Parts 83 88	燃料ポンプ
+T5	Parts 111 114	シール
+T6	Parts 27 30	ナット
+T7	Parts 21 23	電源
+T10	Parts 119 121	燃料
+T11	Parts 47 49	配線
+R6	Coreference Arg1:T1 Arg2:T2	
+R9	Contact Arg1:T10 Arg2:T1	
+R7	Contact Arg1:T11 Arg2:T5	
+R8	Contact Arg1:T10 Arg2:T2	
+R1	Contact Arg1:T1 Arg2:T6	
+R3	Connect Arg1:T7 Arg2:T11	
+R2	Contact Arg1:T1 Arg2:T11	

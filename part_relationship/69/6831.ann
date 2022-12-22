@@ -1,0 +1,12 @@
+T1	Parts 9 36	制動力制御装置（ＡＢＳ：アンチロックブレーキシステム）
+T2	Parts 37 44	制御プログラム
+T3	Parts 66 70	ハンドル
+T4	Parts 76 80	ブレーキ
+T5	Parts 0 4	制動装置
+T6	Parts 52 55	ＡＢＳ
+T7	Parts 86 89	ＡＢＳ
+R1	Coreference Arg1:T1 Arg2:T6	
+R2	Coreference Arg1:T5 Arg2:T4	
+R3	Coreference Arg1:T6 Arg2:T7	
+R4	Part-Whole Arg1:T1 Arg2:T5	
+R5	Part-Whole Arg1:T2 Arg2:T1	

@@ -1,0 +1,19 @@
+T13	Parts 18 32	油圧モータ取付側減速機ケース
+T14	Parts 51 54	駆動軸
+T15	Parts 57 60	減速機
+T16	Parts 61 63	ギア
+T18	Parts 45 50	油圧モータ
+T19	Parts 98 103	油圧モータ
+T20	Parts 104 107	駆動軸
+T21	Parts 127 130	駆動軸
+T1	Parts 0 7	ショベルローダ
+T2	Parts 8 13	走行減速機
+R1	Coreference Arg1:T15 Arg2:T2	
+R2	Coreference Arg1:T19 Arg2:T18	
+R3	Coreference Arg1:T21 Arg2:T20	
+R4	Coreference Arg1:T14 Arg2:T20	
+R5	Part-Whole Arg1:T13 Arg2:T2	
+R7	Part-Whole Arg1:T18 Arg2:T2	
+R8	Part-Whole Arg1:T14 Arg2:T18	
+R9	Part-Whole Arg1:T16 Arg2:T15	
+R6	Part-Whole Arg1:T2 Arg2:T1	

@@ -1,0 +1,18 @@
+T10	Parts 74 77	ロッド
+T11	Parts 36 41	取付ボルト
+T1	Parts 0 4	フレーム
+T2	Parts 5 8	後車軸
+T3	Parts 15 23	Ｖ形トルクロッド
+T4	Parts 30 34	フレーム
+R1	Coreference Arg1:T4 Arg2:T1	
+R2	Coreference Arg1:T10 Arg2:T3	
+T5	Parts 93 96	後車軸
+T6	Parts 106 109	タイヤ
+T7	Parts 110 114	フレーム
+R3	Coreference Arg1:T7 Arg2:T4	
+R4	Coreference Arg1:T5 Arg2:T2	
+R5	Contact Arg1:T1 Arg2:T2	
+R6	Contact Arg1:T1 Arg2:T3	
+R7	Contact Arg1:T2 Arg2:T3	
+R8	Contact Arg1:T11 Arg2:T4	
+R9	Contact Arg1:T6 Arg2:T7	

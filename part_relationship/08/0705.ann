@@ -1,0 +1,17 @@
+T11	Parts 13 15	金具
+T12	Parts 20 23	カバー
+T13	Parts 36 39	カバー
+T20	Parts 110 113	原動機
+T21	Parts 98 105	アクセルペダル
+T22	Parts 0 8	アクセルケーブル
+R1	Coreference Arg1:T13 Arg2:T12	
+T1	Parts 47 55	インナーケーブル
+T2	Parts 71 79	インナーケーブル
+R2	Coreference Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T11 Arg2:T22	
+R6	Part-Whole Arg1:T12 Arg2:T22	
+R8	Connect Arg1:T21 Arg2:T20	
+R3	Part-Whole Arg1:T1 Arg2:T22	
+R4	Connect Arg1:T21 Arg2:T22	
+T3	Parts 83 85	金具
+R7	Coreference Arg1:T3 Arg2:T11	

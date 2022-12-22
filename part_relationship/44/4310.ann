@@ -1,0 +1,12 @@
+T1	Parts 103 112	タイミングチェーン
+T2	Parts 139 148	タイミングチェーン
+T3	Parts 1 10	小型トラック・バス
+T4	Parts 15 22	エンジンオイル
+T5	Parts 55 62	エンジンオイル
+T6	Parts 84 91	エンジンオイル
+R1	Part-Whole Arg1:T4 Arg2:T3	
+R2	Coreference Arg1:T4 Arg2:T5	
+R4	Contact Arg1:T6 Arg2:T1	
+R5	Coreference Arg1:T1 Arg2:T2	
+R6	Part-Whole Arg1:T1 Arg2:T3	
+R3	Coreference Arg1:T5 Arg2:T6	

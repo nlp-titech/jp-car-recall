@@ -1,0 +1,13 @@
+T1	Parts 0 10	排出ガス発散防止装置
+T5	Parts 50 56	空燃比センサ
+T6	Parts 71 72	車
+T7	Parts 73 83	排出ガス発散防止装置
+R2	Coreference Arg1:T7 Arg2:T1	
+R4	Part-Whole Arg1:T7 Arg2:T6	
+R1	Part-Whole Arg1:T5 Arg2:T6	
+T2	Parts 28 39	空燃比センサ用電気配線
+T3	Parts 15 19	エンジン
+R6	Connect Arg1:T2 Arg2:T5	
+R3	Part-Whole Arg1:T3 Arg2:T6	
+R7	Part-Whole Arg1:T2 Arg2:T6	
+R5	Connect Arg1:T5 Arg2:T7	

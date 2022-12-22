@@ -1,0 +1,15 @@
+T12	Parts 111 114	速度計
+T13	Parts 10 19	回転検知用センサー
+T1	Parts 0 3	速度計
+T2	Parts 7 9	前輪
+T3	Parts 27 29	電線
+T4	Parts 30 33	被覆材
+T5	Parts 75 77	電線
+T6	Parts 91 94	被覆材
+R1	Coreference Arg1:T12 Arg2:T1	
+R2	Coreference Arg1:T3 Arg2:T5	
+R3	Coreference Arg1:T6 Arg2:T4	
+R4	Contact Arg1:T2 Arg2:T13	
+R5	Part-Whole Arg1:T13 Arg2:T1	
+R6	Contact Arg1:T13 Arg2:T3	
+R7	Part-Whole Arg1:T4 Arg2:T3	

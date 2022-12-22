@@ -1,0 +1,23 @@
+T1	Parts 31 48	ナンバープレートホルダーブラケット
+T2	Parts 90 95	ブラケット
+T3	Parts 109 114	ブラケット
+T4	Parts 7 12	後部反射器
+T5	Parts 119 124	後部反射器
+T8	Parts 13 16	番号灯
+T9	Parts 125 128	番号灯
+T10	Parts 0 2	車体
+T11	Parts 81 83	車両
+T12	Parts 19 23	番号標板
+T13	Parts 131 135	番号標板
+R1	Coreference Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T3 Arg2:T2	
+R3	Coreference Arg1:T13 Arg2:T12	
+R4	Coreference Arg1:T9 Arg2:T8	
+R5	Coreference Arg1:T5 Arg2:T4	
+R7	Contact Arg1:T1 Arg2:T12	
+R8	Contact Arg1:T1 Arg2:T8	
+R9	Contact Arg1:T1 Arg2:T4	
+R10	Part-Whole Arg1:T4 Arg2:T10	
+R11	Part-Whole Arg1:T8 Arg2:T10	
+R12	Part-Whole Arg1:T12 Arg2:T10	
+R6	Part-Whole Arg1:T10 Arg2:T11	

@@ -1,0 +1,9 @@
+T3	Parts 5 9	小型バス
+T4	Parts 14 24	燃料フィルターケース
+T5	Parts 44 54	燃料フィルターケース
+T6	Parts 59 62	ケース
+T8	Parts 102 104	燃料
+R1	Coreference Arg1:T5 Arg2:T4	
+R2	Coreference Arg1:T6 Arg2:T5	
+R3	Part-Whole Arg1:T4 Arg2:T3	
+R4	Contact Arg1:T8 Arg2:T6	

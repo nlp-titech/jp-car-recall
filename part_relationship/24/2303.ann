@@ -1,0 +1,29 @@
+T20	Parts 145 149	エンジン
+T21	Parts 223 228	スロットル
+T23	Parts 187 199	ブレーキ優先制御システム
+T25	Parts 131 138	アクセルペダル
+T26	Parts 110 116	開度センサー
+T28	Parts 34 38	ディスク
+T30	Parts 66 70	プレート
+T1	Parts 0 4	加速装置
+T2	Parts 9 16	アクセルペダル
+R1	Coreference Arg1:T25 Arg2:T2	
+T3	Parts 176 184	リコール対象車両
+T4	Parts 245 247	車両
+R2	Coreference Arg1:T4 Arg2:T3	
+R7	Contact Arg1:T30 Arg2:T28	
+R8	Connect Arg1:T26 Arg2:T25	
+R9	Part-Whole Arg1:T26 Arg2:T1	
+R10	Part-Whole Arg1:T23 Arg2:T3	
+R11	Part-Whole Arg1:T1 Arg2:T3	
+R12	Connect Arg1:T20 Arg2:T1	
+R13	Part-Whole Arg1:T20 Arg2:T3	
+R16	Connect Arg1:T21 Arg2:T20	
+R17	Part-Whole Arg1:T21 Arg2:T3	
+R4	Part-Whole Arg1:T28 Arg2:T1	
+R5	Connect Arg1:T25 Arg2:T20	
+R6	Connect Arg1:T21 Arg2:T23	
+T5	Parts 208 212	ブレーキ
+R14	Connect Arg1:T5 Arg2:T23	
+R15	Part-Whole Arg1:T5 Arg2:T3	
+R3	Part-Whole Arg1:T2 Arg2:T1	

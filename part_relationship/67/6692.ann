@@ -1,0 +1,18 @@
+T1	Parts 0 8	エンジン冷却装置
+T2	Parts 13 21	リザーバータンク
+T3	Parts 22 26	エンジン
+T4	Parts 43 47	コネクタ
+T5	Parts 69 73	コネクタ
+T7	Parts 29 42	ホース（ブリーダーホース）
+T8	Parts 98 101	警告灯
+T9	Parts 92 95	冷却水
+R1	Coreference Arg1:T5 Arg2:T4	
+R2	Contact Arg1:T4 Arg2:T7	
+R3	Contact Arg1:T7 Arg2:T3	
+R4	Contact Arg1:T7 Arg2:T2	
+R5	Part-Whole Arg1:T2 Arg2:T1	
+R6	Contact Arg1:T9 Arg2:T7	
+R7	Connect Arg1:T8 Arg2:T1	
+R8	Connect Arg1:T2 Arg2:T3	
+R9	Part-Whole Arg1:T9 Arg2:T2	
+R10	Part-Whole Arg1:T7 Arg2:T1	

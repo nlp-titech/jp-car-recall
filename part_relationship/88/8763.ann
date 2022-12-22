@@ -1,0 +1,11 @@
+T1	Parts 0 12	自動無段変速機（ＣＶＴ）
+T2	Parts 13 21	トルクコンバータ
+T3	Parts 26 41	ロックアップクラッチスプリング
+T4	Parts 92 97	スプリング
+T5	Parts 98 106	トルクコンバータ
+T6	Parts 127 135	トルクコンバータ
+R1	Coreference Arg1:T2 Arg2:T5	
+R2	Coreference Arg1:T5 Arg2:T6	
+R3	Coreference Arg1:T3 Arg2:T4	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T3 Arg2:T2	

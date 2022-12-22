@@ -1,0 +1,19 @@
+T12	Parts 28 33	取付カバー
+T13	Parts 50 53	カバー
+T14	Parts 69 74	ベアリング
+T15	Parts 44 49	ベアリング
+T16	Parts 22 27	ベアリング
+T1	Parts 0 6	動力伝達装置
+T2	Parts 7 10	減速機
+T3	Parts 15 21	減速機入力軸
+R1	Coreference Arg1:T16 Arg2:T15	
+R2	Coreference Arg1:T12 Arg2:T13	
+R3	Coreference Arg1:T15 Arg2:T14	
+T4	Parts 97 103	減速機入力軸
+R4	Coreference Arg1:T3 Arg2:T4	
+T5	Parts 107 110	原動機
+R5	Connect Arg1:T5 Arg2:T1	
+R6	Part-Whole Arg1:T2 Arg2:T1	
+R7	Part-Whole Arg1:T3 Arg2:T2	
+R8	Part-Whole Arg1:T16 Arg2:T3	
+R9	Part-Whole Arg1:T12 Arg2:T2	

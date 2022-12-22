@@ -1,0 +1,13 @@
+T1	Parts 0 30	協定規則第１６号（後席シートベルト非装着時警報装置）認可車両
+T2	Parts 35 42	制御プログラム
+T3	Parts 59 65	シートベルト
+T4	Parts 74 85	後席シートベルト警告灯
+T5	Parts 107 110	警告灯
+T6	Parts 112 118	シートベルト
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T1	
+R3	Part-Whole Arg1:T4 Arg2:T1	
+R4	Coreference Arg1:T5 Arg2:T4	
+R5	Coreference Arg1:T6 Arg2:T3	
+R6	Connect Arg1:T2 Arg2:T3	
+R7	Connect Arg1:T3 Arg2:T4	

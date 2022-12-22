@@ -1,0 +1,5 @@
+T1	Parts 28 35	前面方向指示器
+T3	Parts 0 14	ボディコントロールモジュール
+T4	Parts 63 73	インジケーターランプ
+R2	Connect Arg1:T3 Arg2:T1	
+R3	Connect Arg1:T3 Arg2:T4	

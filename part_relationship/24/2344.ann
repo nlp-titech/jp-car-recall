@@ -1,0 +1,9 @@
+T1	Parts 0 10	無段変速機（ＣＶＴ）
+T2	Parts 11 21	オイルクーラーホース
+T3	Parts 37 40	ホース
+R1	Coreference Arg1:T3 Arg2:T2	
+T4	Parts 78 81	ホース
+R2	Coreference Arg1:T4 Arg2:T3	
+T5	Parts 108 111	オイル
+R3	Contact Arg1:T5 Arg2:T4	
+R4	Contact Arg1:T2 Arg2:T1	

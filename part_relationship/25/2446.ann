@@ -1,0 +1,24 @@
+T1	Parts 0 8	農業用薬剤散布車
+T2	Parts 9 13	燃料装置
+T3	Parts 18 21	原動機
+T4	Parts 24 35	インジェクションポンプ
+T5	Parts 36 51	燃料エア抜き用ホロースクリュー
+T6	Parts 53 64	インジェクションノズル
+T7	Parts 72 78	燃料チューブ
+T8	Parts 80 94	アクセルワイヤーリンクベース
+T9	Parts 117 123	燃料チューブ
+R1	Coreference Arg1:T9 Arg2:T7	
+T10	Parts 128 130	燃料
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T5 Arg2:T4	
+R9	Contact Arg1:T10 Arg2:T9	
+R3	Part-Whole Arg1:T3 Arg2:T1	
+R4	Part-Whole Arg1:T4 Arg2:T2	
+R6	Contact Arg1:T3 Arg2:T4	
+R7	Part-Whole Arg1:T6 Arg2:T4	
+R8	Part-Whole Arg1:T7 Arg2:T2	
+R10	Contact Arg1:T5 Arg2:T7	
+R11	Contact Arg1:T6 Arg2:T7	
+R12	Connect Arg1:T5 Arg2:T6	
+R14	Part-Whole Arg1:T10 Arg2:T2	
+R13	Part-Whole Arg1:T8 Arg2:T1	

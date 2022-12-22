@@ -1,0 +1,24 @@
+T18	Parts 19 28	高圧燃料噴射パイプ
+T19	Parts 43 46	パイプ
+T21	Parts 75 78	パイプ
+T23	Parts 138 142	エンジン
+T24	Parts 147 154	ロッカーカバー
+T1	Parts 0 5	大中型バス
+T2	Parts 11 14	原動機
+R1	Coreference Arg1:T19 Arg2:T18	
+T3	Parts 63 65	燃料
+R2	Coreference Arg1:T21 Arg2:T19	
+T4	Parts 91 93	燃料
+R4	Coreference Arg1:T4 Arg2:T3	
+T5	Parts 135 137	燃料
+R5	Coreference Arg1:T5 Arg2:T4	
+T6	Parts 161 163	車両
+T7	Parts 173 175	燃料
+R6	Coreference Arg1:T7 Arg2:T5	
+R7	Coreference Arg1:T6 Arg2:T1	
+R8	Part-Whole Arg1:T2 Arg2:T1	
+R9	Part-Whole Arg1:T18 Arg2:T2	
+R12	Coreference Arg1:T23 Arg2:T2	
+R13	Part-Whole Arg1:T24 Arg2:T23	
+R3	Contact Arg1:T5 Arg2:T23	
+R10	Contact Arg1:T19 Arg2:T3	

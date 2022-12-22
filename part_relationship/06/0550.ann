@@ -1,0 +1,11 @@
+T10	Parts 44 47	ボルト
+T11	Parts 84 87	ボルト
+T2	Parts 10 16	動力伝達装置
+T3	Parts 21 30	ギヤシフトシャフト
+R1	Coreference Arg1:T11 Arg2:T10	
+T1	Parts 2 9	手動変速機付車
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T3 Arg2:T2	
+R4	Contact Arg1:T10 Arg2:T3	
+T4	Parts 95 98	シフト
+R5	Connect Arg1:T3 Arg2:T4	

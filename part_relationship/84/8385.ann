@@ -1,0 +1,11 @@
+T1	Parts 0 13	エンジン制御用コンピュータ
+T2	Parts 18 25	制御プログラム
+T3	Parts 38 42	エンジン
+T4	Parts 55 59	エンジン
+T5	Parts 72 80	バキュームポンプ
+T6	Parts 82 85	潤滑油
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T3 Arg2:T4	
+R3	Connect Arg1:T1 Arg2:T3	
+R4	Contact Arg1:T5 Arg2:T6	
+R5	Contact Arg1:T4 Arg2:T5	

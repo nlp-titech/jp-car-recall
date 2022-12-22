@@ -1,0 +1,17 @@
+T1	Parts 0 5	自動変速機
+T2	Parts 80 83	オイル
+T3	Parts 38 42	継手金具
+T4	Parts 6 9	オイル
+T5	Parts 14 21	オイル・ク－ラ
+T6	Parts 22 37	アッパ・ホ－ス（オイル送り側）
+T8	Parts 71 74	ホ－ス
+R1	Coreference Arg1:T4 Arg2:T2	
+R2	Contact Arg1:T4 Arg2:T6	
+R3	Coreference Arg1:T6 Arg2:T8	
+R5	Connect Arg1:T1 Arg2:T5	
+R6	Contact Arg1:T5 Arg2:T6	
+R7	Contact Arg1:T6 Arg2:T3	
+R8	Contact Arg1:T5 Arg2:T3	
+R9	Contact Arg1:T1 Arg2:T6	
+T7	Parts 75 77	継手
+R4	Coreference Arg1:T3 Arg2:T7	

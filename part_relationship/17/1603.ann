@@ -1,0 +1,13 @@
+T9	Parts 18 24	作動油タンク
+T10	Parts 58 61	タンク
+T1	Parts 0 6	動力伝達装置
+T2	Parts 11 17	静油圧変速機
+T3	Parts 49 52	作動油
+T4	Parts 107 110	作動油
+R1	Coreference Arg1:T3 Arg2:T4	
+R3	Part-Whole Arg1:T3 Arg2:T10	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+T5	Parts 42 44	車体
+R5	Part-Whole Arg1:T9 Arg2:T2	
+R2	Coreference Arg1:T9 Arg2:T10	
+R6	Contact Arg1:T1 Arg2:T5	

@@ -1,0 +1,13 @@
+T1	Parts 91 96	ロック機構
+T2	Parts 125 130	ロック機構
+T5	Parts 11 79	イージーエントリーシステム（後部座席の乗員が乗り降りしやすくするため、前部座席の背もたれが前方に倒れると同時に座席が前方に移動する装置）
+T7	Parts 152 156	前部座席
+T10	Parts 135 137	座席
+T11	Parts 1 10	コンバーチブル車両
+R2	Coreference Arg1:T1 Arg2:T2	
+R3	Coreference Arg1:T10 Arg2:T7	
+R5	Part-Whole Arg1:T1 Arg2:T5	
+R6	Part-Whole Arg1:T10 Arg2:T11	
+#1	AnnotatorNotes T10	文脈的に「座席」＝「前部座席」と判断
+R1	Part-Whole Arg1:T5 Arg2:T11	
+R4	Contact Arg1:T10 Arg2:T5	

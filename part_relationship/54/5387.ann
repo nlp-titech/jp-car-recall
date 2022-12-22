@@ -1,0 +1,9 @@
+T1	Parts 11 22	ステアリングジョイント
+T2	Parts 0 10	ステアリングシャフト
+T3	Parts 42 47	ジョイント
+T4	Parts 37 41	シャフト
+T5	Parts 108 112	シャフト
+R1	Contact Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T2 Arg2:T4	
+R3	Coreference Arg1:T1 Arg2:T3	
+R4	Coreference Arg1:T4 Arg2:T5	

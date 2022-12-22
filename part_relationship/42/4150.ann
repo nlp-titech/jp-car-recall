@@ -1,0 +1,10 @@
+T1	Parts 0 12	脱着装置付コンテナ専用車
+T2	Parts 33 38	リヤカバー
+T3	Parts 112 117	リヤカバー
+T4	Parts 13 22	塵芥収集用コンテナ
+T5	Parts 27 32	後端メンバ
+R1	Part-Whole Arg1:T4 Arg2:T1	
+R2	Coreference Arg1:T2 Arg2:T3	
+R3	Contact Arg1:T5 Arg2:T2	
+R4	Part-Whole Arg1:T5 Arg2:T4	
+R5	Part-Whole Arg1:T2 Arg2:T4	

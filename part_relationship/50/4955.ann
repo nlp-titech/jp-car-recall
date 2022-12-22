@@ -1,0 +1,17 @@
+T1	Parts 19 24	ブラケット
+T2	Parts 56 61	ブラケット
+T3	Parts 104 109	ブラケット
+T4	Parts 25 29	シャフト
+T5	Parts 32 41	左右固定用ワッシャ
+T6	Parts 82 86	ワッシャ
+T7	Parts 0 2	車体
+T8	Parts 72 74	車両
+T9	Parts 7 11	番号標板
+R1	Coreference Arg1:T3 Arg2:T2	
+R2	Coreference Arg1:T2 Arg2:T1	
+R3	Coreference Arg1:T6 Arg2:T5	
+R4	Part-Whole Arg1:T7 Arg2:T8	
+R5	Contact Arg1:T1 Arg2:T9	
+R6	Part-Whole Arg1:T4 Arg2:T1	
+R7	Contact Arg1:T5 Arg2:T4	
+R8	Part-Whole Arg1:T9 Arg2:T7	

@@ -1,0 +1,8 @@
+T1	Parts 0 14	ニュートラルスイッチケーブル
+T2	Parts 35 39	ケーブル
+T4	Parts 44 53	ニュートラルランプ
+T5	Parts 73 76	原動機
+T6	Parts 25 28	排気管
+R1	Coreference Arg1:T2 Arg2:T1	
+R2	Contact Arg1:T5 Arg2:T6	
+R3	Connect Arg1:T4 Arg2:T2	

@@ -1,0 +1,7 @@
+T1	Parts 9 16	灯火（作業灯）
+T2	Parts 21 25	電気回路
+T3	Parts 44 47	作業灯
+R1	Coreference Arg1:T3 Arg2:T1	
+T4	Parts 37 40	前照灯
+R2	Connect Arg1:T2 Arg2:T1	
+R3	Connect Arg1:T4 Arg2:T2	

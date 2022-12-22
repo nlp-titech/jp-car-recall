@@ -1,0 +1,10 @@
+T6	Parts 40 42	後輪
+T7	Parts 43 55	回転速度検出センサー配線
+T1	Parts 0 19	アンチロックブレーキシステム（ＡＢＳ）
+T2	Parts 24 35	制御器（モジュレータ）
+T3	Parts 79 82	ＡＢＳ
+R1	Coreference Arg1:T3 Arg2:T1	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Connect Arg1:T7 Arg2:T6	
+R4	Contact Arg1:T7 Arg2:T2	
+R5	Part-Whole Arg1:T7 Arg2:T1	

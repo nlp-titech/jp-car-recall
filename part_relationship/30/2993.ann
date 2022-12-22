@@ -1,0 +1,8 @@
+T16	Parts 27 31	エアコン
+T17	Parts 32 38	コンプレッサ
+T2	Parts 0 12	エンジン制御コンピュータ
+T3	Parts 17 21	エンジン
+R1	Connect Arg1:T3 Arg2:T2	
+T4	Parts 49 53	エンジン
+R2	Coreference Arg1:T4 Arg2:T3	
+R5	Part-Whole Arg1:T17 Arg2:T16	

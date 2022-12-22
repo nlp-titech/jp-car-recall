@@ -1,0 +1,13 @@
+T1	Parts 38 42	モーター
+T2	Parts 19 32	パワーステアリングモーター
+T3	Parts 0 14	パワーステアリングメカニズム
+T4	Parts 85 91	ステアリング
+T5	Parts 102 105	警告灯
+T6	Parts 110 119	パワーステアリング
+T7	Parts 132 138	ステアリング
+R2	Coreference Arg1:T1 Arg2:T2	
+R1	Part-Whole Arg1:T2 Arg2:T3	
+R3	Coreference Arg1:T6 Arg2:T3	
+R4	Coreference Arg1:T7 Arg2:T4	
+R5	Connect Arg1:T4 Arg2:T6	
+R7	Connect Arg1:T5 Arg2:T6	

@@ -1,0 +1,24 @@
+T12	Parts 0 10	ウォータポンププーリ
+T13	Parts 15 19	フランジ
+T14	Parts 23 26	プーリ
+T15	Parts 41 44	プーリ
+T16	Parts 48 52	フランジ
+T17	Parts 53 56	プーリ
+T18	Parts 98 101	プーリ
+T19	Parts 111 116	締結ボルト
+T20	Parts 120 123	ボルト
+T21	Parts 128 133	補機ベルト
+T22	Parts 83 88	補機ベルト
+T23	Parts 166 170	エンジン
+R2	Coreference Arg1:T13 Arg2:T16	
+R1	Coreference Arg1:T14 Arg2:T15	
+R3	Coreference Arg1:T17 Arg2:T18	
+R4	Coreference Arg1:T19 Arg2:T20	
+R5	Coreference Arg1:T22 Arg2:T21	
+T1	Parts 154 157	警告灯
+R6	Coreference Arg1:T15 Arg2:T17	
+R7	Coreference Arg1:T12 Arg2:T14	
+R8	Contact Arg1:T13 Arg2:T12	
+R10	Contact Arg1:T19 Arg2:T13	
+R11	Contact Arg1:T18 Arg2:T22	
+R9	Contact Arg1:T21 Arg2:T23	

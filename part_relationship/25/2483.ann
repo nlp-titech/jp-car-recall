@@ -1,0 +1,19 @@
+T1	Parts 0 8	ガソリン燃料装置
+T2	Parts 9 20	液化石油ガス（ＬＰＧ）
+T3	Parts 27 29	車両
+T4	Parts 37 43	減圧気化装置
+T5	Parts 44 53	スロットルボディー
+T6	Parts 56 66	燃料ガス供給用ホース
+T7	Parts 87 90	ホース
+R1	Coreference Arg1:T7 Arg2:T6	
+T8	Parts 130 132	ガス
+R2	Contact Arg1:T8 Arg2:T7	
+R3	Coreference Arg1:T2 Arg2:T8	
+R4	Part-Whole Arg1:T1 Arg2:T3	
+R5	Contact Arg1:T2 Arg2:T1	
+R6	Part-Whole Arg1:T4 Arg2:T1	
+R7	Part-Whole Arg1:T5 Arg2:T1	
+R8	Part-Whole Arg1:T6 Arg2:T1	
+R9	Connect Arg1:T4 Arg2:T5	
+R10	Contact Arg1:T4 Arg2:T6	
+R11	Contact Arg1:T5 Arg2:T6	

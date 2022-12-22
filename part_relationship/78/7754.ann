@@ -1,0 +1,5 @@
+T1	Parts 0 14	助手席側フロントサイドメンバ
+T2	Parts 63 69	サイドメンバ
+T3	Parts 105 107	車体
+R1	Coreference Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T2 Arg2:T3	

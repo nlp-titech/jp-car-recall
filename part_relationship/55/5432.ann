@@ -1,0 +1,15 @@
+T5	Parts 23 26	固定具
+T6	Parts 55 58	固定具
+T8	Parts 42 44	ドア
+T9	Parts 91 93	ドア
+T10	Parts 99 101	ドア
+T7	Parts 0 6	フロントドア
+T1	Parts 11 22	ドアラッチ作動用ワイヤ
+T2	Parts 60 71	ドアラッチ作動用ワイヤ
+R1	Coreference Arg1:T8 Arg2:T9	
+R2	Coreference Arg1:T9 Arg2:T10	
+R3	Coreference Arg1:T5 Arg2:T6	
+R4	Coreference Arg1:T1 Arg2:T2	
+R5	Part-Whole Arg1:T1 Arg2:T7	
+R6	Contact Arg1:T1 Arg2:T5	
+R7	Coreference Arg1:T7 Arg2:T8	

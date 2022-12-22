@@ -1,0 +1,25 @@
+T17	Parts 62 72	金属棒（リードバー）
+T18	Parts 83 88	リードバー
+T19	Parts 99 102	ナット
+T20	Parts 132 137	リードバー
+T21	Parts 151 158	締め付けナット
+T1	Parts 0 12	バッテリーフォークリフト
+T2	Parts 13 20	走行用モーター
+T3	Parts 21 24	作業機
+T4	Parts 26 32	油圧モーター
+T5	Parts 37 40	制御器
+T6	Parts 47 50	制御器
+R1	Coreference Arg1:T6 Arg2:T5	
+R2	Coreference Arg1:T18 Arg2:T17	
+R3	Coreference Arg1:T20 Arg2:T18	
+R4	Coreference Arg1:T21 Arg2:T19	
+R5	Part-Whole Arg1:T2 Arg2:T1	
+R7	Part-Whole Arg1:T4 Arg2:T1	
+R8	Connect Arg1:T3 Arg2:T4	
+R9	Part-Whole Arg1:T5 Arg2:T1	
+R10	Connect Arg1:T2 Arg2:T5	
+R11	Connect Arg1:T4 Arg2:T5	
+R6	Contact Arg1:T1 Arg2:T3	
+R12	Part-Whole Arg1:T17 Arg2:T6	
+R13	Part-Whole Arg1:T19 Arg2:T6	
+R14	Contact Arg1:T18 Arg2:T19	

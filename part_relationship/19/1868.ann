@@ -1,0 +1,7 @@
+T4	Parts 53 56	前照灯
+T5	Parts 27 33	制御ユニット
+T1	Parts 0 14	高輝度放電式（ＨＩＤ）前照灯
+T2	Parts 15 26	自動式照射方向調節装置
+R1	Coreference Arg1:T4 Arg2:T1	
+R2	Connect Arg1:T1 Arg2:T2	
+R3	Part-Whole Arg1:T5 Arg2:T2	

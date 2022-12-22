@@ -1,0 +1,13 @@
+T10	Parts 0 4	運転者席
+T11	Parts 5 7	座席
+T12	Parts 11 15	バッテリ
+T13	Parts 33 35	座席
+T16	Parts 64 70	バッテリ端子
+T17	Parts 77 81	エンジン
+R4	Coreference Arg1:T10 Arg2:T13	
+R5	Part-Whole Arg1:T11 Arg2:T10	
+R6	Part-Whole Arg1:T12 Arg2:T10	
+T1	Parts 50 52	端子
+R2	Coreference Arg1:T16 Arg2:T1	
+R3	Coreference Arg1:T1 Arg2:T12	
+R7	Connect Arg1:T17 Arg2:T16	

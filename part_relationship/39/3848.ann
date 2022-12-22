@@ -1,0 +1,19 @@
+T1	Parts 85 93	排気管ブラケット
+T2	Parts 13 19	排気管ステー
+T3	Parts 4 8	エンジン
+T4	Parts 30 34	エンジン
+T5	Parts 59 63	エンジン
+T7	Parts 75 78	ステー
+T10	Parts 0 3	排気管
+T11	Parts 67 70	排気管
+T12	Parts 116 119	排気管
+R1	Coreference Arg1:T5 Arg2:T4	
+R2	Coreference Arg1:T12 Arg2:T11	
+R3	Coreference Arg1:T11 Arg2:T10	
+R4	Contact Arg1:T2 Arg2:T3	
+R5	Contact Arg1:T2 Arg2:T10	
+R6	Connect Arg1:T3 Arg2:T10	
+R7	Coreference Arg1:T7 Arg2:T2	
+R8	Coreference Arg1:T4 Arg2:T3	
+R9	Contact Arg1:T1 Arg2:T10	
+R10	Contact Arg1:T7 Arg2:T1	

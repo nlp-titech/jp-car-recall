@@ -1,0 +1,9 @@
+T1	Parts 4 12	スロットルバルブ
+T2	Parts 13 22	氷結防止用ヒーター
+T3	Parts 42 46	ヒーター
+T4	Parts 0 3	原動機
+T5	Parts 53 55	配線
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Connect Arg1:T3 Arg2:T5	
+R3	Part-Whole Arg1:T1 Arg2:T4	
+R4	Part-Whole Arg1:T2 Arg2:T1	
