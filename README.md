@@ -7,7 +7,6 @@ Japanese Car Recall Corpus is car recall report text data annotated with types o
 
 
 ## Data and two types of annoation 
----
 
 ### Data
 We collect recall text data from [MILT site](https://www.mlit.go.jp/jidosha/carinf/rcl/index.html).
@@ -24,7 +23,6 @@ For car part annoation, we annoate vehicle parts as entities and the relations b
 For car part annoation, we annoate malfunctions and their causes.
 
 ## Data Format
----
 
 We annotated data with [brat](https://brat.nlplab.org/). Every annotation document is composed of a foo.txt file and a foo.ann file. Here are the examples of a `foo.txt` and `foo.ann`.
 
@@ -51,7 +49,6 @@ R6	RESULT Arg1:T7 Arg2:T3
 
 
 ## Corpus description and citation
----
 
 For more detailed description of the corpus, please refer `paper.pdf` in this repo.
 If you use this corpus in your project, please cite as
@@ -71,8 +68,7 @@ Or
 }
 ```
 
-
-## License [![CC BY 4.0](http://mirrors.creativecommons.org/presskit/buttons/80x15/svg/by.svg)](http://creativecommons.org/licenses/by/4.0/)
 ---
+## License [![CC BY 4.0](http://mirrors.creativecommons.org/presskit/buttons/80x15/svg/by.svg)](http://creativecommons.org/licenses/by/4.0/)
 
 All content in this repository is licensed under the [Creative Commons - Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/) license.
