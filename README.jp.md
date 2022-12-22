@@ -3,22 +3,22 @@
 [![en](https://img.shields.io/badge/lang-en-red)](https://github.com/nlp-titech/jp-car-recall#readme)
 [![jp](https://img.shields.io/badge/lang-jp-blue)](https://github.com/nlp-titech/jp-car-recall/blob/main/README.jp.md)
 
-自動車リコールコーパスは、自動車リコール報告書のテキストデータにアノテーションを付与したものである。1)車の部品、2)因果関係。このコーパスは、車のリコール報告テキストにこの2つの情報を両方アノテーションした初めてのコーパスである。車の故障は部品と関連しているため、部品に関する知識が因果関係の抽出にどのように役立つかを調べるために、両方の情報をアノテーションしています。
+自動車リコールコーパスは、自動車リコール報告書のテキストデータにアノテーションを付与したものである。1)車の部品、2)因果関係。このコーパスは、車のリコール報告テキストにこの2つの情報を両方アノテーションした初めてのコーパスである。車の故障は部品と関連しているため、部品に関する知識が因果関係の抽出にどのように役立つかを調べるために、両方の情報をアノテーションしている。
 
 ## データと2種類のアノテーション
 
-[国土交通省のサイト](https://www.mlit.go.jp/jidosha/carinf/rcl/index.html)からリコールテキストデータを収集します。
+[国土交通省のサイト](https://www.mlit.go.jp/jidosha/carinf/rcl/index.html)からリコールテキストデータを収集した。
 
 ### 自動車部品アノテーション
 
 ![alt text](images/part_ann_example.jpg)
-自動車部品のアノテーションでは、自動車部品を実体として、部品間の関係を関係としてアノテーションしています。
+自動車部品のアノテーションでは、自動車部品を実体として、部品間の関係を関係としてアノテーションしている。
 
 ### 因果関係アノテーション
 
 ![alt text](images/causal_ann_example.jpg)
 
-因果関係アノテーションでは、不具合とその原因をアノテーションします。
+因果関係アノテーションでは、不具合とその原因をアノテーションしている。
 
 ## データフォーマット
 
@@ -69,4 +69,4 @@ Or
 ---
 ## ライセンス [![CC BY 4.0](http://mirrors.creativecommons.org/presskit/buttons/80x15/svg/by.svg)](http://creativecommons.org/licenses/by/4.0/)
 
-このレポジトリのすべてのコンテンツが [Creative Commons - Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/) でライセンスしています.
+このレポジトリのすべてのコンテンツが [Creative Commons - Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/) でライセンスしている.
