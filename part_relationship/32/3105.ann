@@ -1,0 +1,11 @@
+T6	Parts 72 76	クラッチ
+T11	Parts 29 42	クラッチマスターシリンダー
+T12	Parts 0 13	クラッチマスターシリンダー
+T1	Parts 47 51	フルード
+T2	Parts 61 65	フルード
+R1	Coreference Arg1:T1 Arg2:T2	
+T3	Parts 88 92	変速ギヤ
+R2	Coreference Arg1:T11 Arg2:T12	
+R3	Contact Arg1:T1 Arg2:T11	
+R5	Connect Arg1:T3 Arg2:T6	
+R4	Connect Arg1:T11 Arg2:T6	

@@ -1,0 +1,8 @@
+T2	Parts 89 94	エアバック
+T4	Parts 14 18	ユニット
+T5	Parts 64 73	エアバッグユニット
+T6	Parts 20 23	アース
+T7	Parts 0 3	助手席
+R2	Part-Whole Arg1:T6 Arg2:T4	
+R4	Coreference Arg1:T5 Arg2:T4	
+R3	Connect Arg1:T5 Arg2:T2	

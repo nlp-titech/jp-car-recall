@@ -1,0 +1,10 @@
+T1	Parts 0 40	ブレーキ・アシスト（急制動時におけるブレーキ・ペダルの踏力を軽減する装置）装備車
+T3	Parts 45 53	ブレーキ・ペダル
+T4	Parts 94 98	ブレーキ
+T6	Parts 67 70	センサ
+R4	Connect Arg1:T6 Arg2:T3	
+T5	Parts 102 111	ブレーキ・アシスト
+R6	Connect Arg1:T3 Arg2:T4	
+R7	Connect Arg1:T5 Arg2:T4	
+R1	Part-Whole Arg1:T5 Arg2:T1	
+R2	Connect Arg1:T6 Arg2:T5	

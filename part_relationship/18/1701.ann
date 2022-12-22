@@ -1,0 +1,18 @@
+T14	Parts 0 4	ガス容器
+T15	Parts 70 75	過流防止弁
+T1	Parts 7 9	配管
+T2	Parts 18 22	エンジン
+T3	Parts 33 38	燃料遮断弁
+T5	Parts 53 57	エンジン
+R1	Coreference Arg1:T2 Arg2:T5	
+T6	Parts 62 64	燃料
+T7	Parts 80 84	エンジン
+R2	Coreference Arg1:T5 Arg2:T7	
+R3	Part-Whole Arg1:T1 Arg2:T14	
+T4	Parts 40 42	燃料
+R4	Coreference Arg1:T6 Arg2:T4	
+R6	Connect Arg1:T14 Arg2:T15	
+R5	Part-Whole Arg1:T4 Arg2:T14	
+R7	Contact Arg1:T3 Arg2:T4	
+R8	Connect Arg1:T14 Arg2:T3	
+R9	Contact Arg1:T6 Arg2:T15	

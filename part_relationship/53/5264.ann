@@ -1,0 +1,7 @@
+T1	Parts 0 6	シフトレバー
+T2	Parts 19 25	シフトレバー
+T3	Parts 40 43	レバー
+T4	Parts 78 81	レバー
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Coreference Arg1:T2 Arg2:T3	
+R3	Coreference Arg1:T3 Arg2:T4	

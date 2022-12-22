@@ -1,0 +1,11 @@
+T1	Parts 14 18	福祉車両
+T2	Parts 23 36	テールゲ－トヒンジ取付け部
+T3	Parts 49 55	テールゲート
+T4	Parts 103 109	テールゲート
+T5	Parts 116 122	テールゲート
+R1	Coreference Arg1:T5 Arg2:T4	
+T6	Parts 64 71	ヒンジ取付け部
+R2	Coreference Arg1:T6 Arg2:T2	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Contact Arg1:T3 Arg2:T2	
+R5	Coreference Arg1:T4 Arg2:T3	

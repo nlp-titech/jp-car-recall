@@ -1,0 +1,5 @@
+T1	Parts 0 20	年少者用補助乗車装置（チャイルドシート）
+T2	Parts 31 34	ベルト
+T3	Parts 21 30	ノンスリップパッド
+R1	Part-Whole Arg1:T3 Arg2:T1	
+R2	Part-Whole Arg1:T2 Arg2:T3	

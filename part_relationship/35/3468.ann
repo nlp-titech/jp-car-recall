@@ -1,0 +1,9 @@
+T1	Parts 0 14	直噴ターボディーゼルエンジン
+T2	Parts 19 26	燃料噴射ポンプ
+T3	Parts 27 30	シール
+T4	Parts 46 49	シール
+T7	Parts 99 101	燃料
+R1	Part-Whole Arg1:T3 Arg2:T2	
+R2	Coreference Arg1:T4 Arg2:T3	
+R3	Contact Arg1:T7 Arg2:T2	
+R4	Part-Whole Arg1:T2 Arg2:T1	

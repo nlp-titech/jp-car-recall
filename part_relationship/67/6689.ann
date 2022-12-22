@@ -1,0 +1,9 @@
+T2	Parts 10 16	非常信号用具
+T3	Parts 56 62	非常信号用具
+T4	Parts 0 8	グローブボックス
+T5	Parts 29 37	コーションラベル
+T6	Parts 22 24	車両
+R1	Coreference Arg1:T3 Arg2:T2	
+R2	Part-Whole Arg1:T2 Arg2:T4	
+R3	Part-Whole Arg1:T4 Arg2:T6	
+R4	Part-Whole Arg1:T5 Arg2:T6	

@@ -1,0 +1,13 @@
+T1	Parts 11 20	シフトコントロール
+T2	Parts 70 76	シフトレバー
+T3	Parts 0 6	動力伝達装置
+T4	Parts 25 33	シフトガイドピン
+T8	Parts 57 59	ピン
+R1	Part-Whole Arg1:T4 Arg2:T1	
+R2	Part-Whole Arg1:T1 Arg2:T3	
+R3	Coreference Arg1:T4 Arg2:T8	
+R4	Connect Arg1:T2 Arg2:T1	
+T5	Parts 46 49	シフト
+T6	Parts 90 93	シフト
+R5	Connect Arg1:T2 Arg2:T6	
+R6	Coreference Arg1:T5 Arg2:T6	

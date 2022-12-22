@@ -1,0 +1,11 @@
+T1	Parts 5 14	タイミングチェーン
+T2	Parts 66 75	タイミングチェーン
+T3	Parts 21 27	テンショナー
+T4	Parts 41 47	テンショナー
+T5	Parts 0 4	エンジン
+T6	Parts 122 126	エンジン
+R1	Part-Whole Arg1:T1 Arg2:T5	
+R2	Contact Arg1:T3 Arg2:T1	
+R3	Coreference Arg1:T3 Arg2:T4	
+R4	Coreference Arg1:T1 Arg2:T2	
+R5	Coreference Arg1:T5 Arg2:T6	

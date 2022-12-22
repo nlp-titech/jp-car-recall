@@ -1,0 +1,11 @@
+T2	Parts 57 63	シートベルト
+T3	Parts 12 20	バックル（受側）
+T4	Parts 43 47	バックル
+T5	Parts 0 11	後部座席用シートベルト
+T6	Parts 21 24	カバー
+T7	Parts 36 39	カバー
+R1	Coreference Arg1:T5 Arg2:T2	
+R2	Part-Whole Arg1:T3 Arg2:T5	
+R5	Coreference Arg1:T6 Arg2:T7	
+R6	Coreference Arg1:T3 Arg2:T4	
+R3	Part-Whole Arg1:T6 Arg2:T3	

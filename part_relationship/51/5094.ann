@@ -1,0 +1,19 @@
+T1	Parts 82 94	パワーステアリングオイル
+T2	Parts 17 29	パワーステアリングホース
+T3	Parts 0 12	パワーステアリングポンプ
+T4	Parts 45 49	エンジン
+T6	Parts 118 121	オイル
+T7	Parts 30 34	コネクタ
+T8	Parts 63 67	コネクタ
+T9	Parts 98 102	ハンドル
+T10	Parts 122 125	排気管
+R1	Contact Arg1:T7 Arg2:T3	
+R3	Coreference Arg1:T8 Arg2:T7	
+R4	Contact Arg1:T1 Arg2:T2	
+R5	Contact Arg1:T1 Arg2:T3	
+R6	Coreference Arg1:T6 Arg2:T1	
+R7	Connect Arg1:T9 Arg2:T3	
+R8	Connect Arg1:T10 Arg2:T4	
+R9	Connect Arg1:T4 Arg2:T3	
+R2	Contact Arg1:T3 Arg2:T2	
+R10	Contact Arg1:T2 Arg2:T7	

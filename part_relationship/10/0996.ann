@@ -1,0 +1,12 @@
+T1	Parts 0 6	無段式変速機
+T2	Parts 11 18	出力側プーリ軸
+T3	Parts 35 42	スチールベルト
+T5	Parts 65 72	スチールベルト
+T6	Parts 100 107	スチールベルト
+R1	Coreference Arg1:T6 Arg2:T5	
+R2	Coreference Arg1:T5 Arg2:T3	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T3 Arg2:T1	
+T4	Parts 46 50	プーリー
+R5	Coreference Arg1:T2 Arg2:T4	
+R6	Contact Arg1:T3 Arg2:T4	

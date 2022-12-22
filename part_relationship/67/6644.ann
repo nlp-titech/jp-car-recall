@@ -1,0 +1,15 @@
+T1	Parts 9 15	オルタネータ
+T2	Parts 116 120	エンジン
+T3	Parts 84 88	バッテリ
+T4	Parts 0 4	電気装置
+T5	Parts 98 101	警告灯
+T6	Parts 26 29	整流器
+T7	Parts 52 55	整流器
+T8	Parts 76 79	整流器
+R1	Coreference Arg1:T7 Arg2:T6	
+R2	Coreference Arg1:T8 Arg2:T7	
+R3	Part-Whole Arg1:T1 Arg2:T4	
+R4	Part-Whole Arg1:T6 Arg2:T1	
+R5	Connect Arg1:T3 Arg2:T8	
+R6	Contact Arg1:T5 Arg2:T3	
+R7	Part-Whole Arg1:T1 Arg2:T2	

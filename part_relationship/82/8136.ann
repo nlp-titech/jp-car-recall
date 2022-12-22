@@ -1,0 +1,20 @@
+T1	Parts 0 15	ディーゼルエンジン燃料供給装置
+T2	Parts 20 27	燃料高圧ポンプ
+T3	Parts 29 36	燃料供給ホース
+T4	Parts 46 53	ホースクランプ
+T5	Parts 66 73	ホースクランプ
+T6	Parts 91 98	ホースクランプ
+T7	Parts 111 115	クランプ
+T8	Parts 125 128	ホース
+T9	Parts 130 132	燃料
+R1	Connect Arg1:T2 Arg2:T1	
+R2	Contact Arg1:T3 Arg2:T2	
+R3	Contact Arg1:T3 Arg2:T1	
+R4	Contact Arg1:T4 Arg2:T3	
+R5	Coreference Arg1:T5 Arg2:T4	
+R6	Coreference Arg1:T6 Arg2:T5	
+R7	Coreference Arg1:T7 Arg2:T6	
+R8	Coreference Arg1:T8 Arg2:T3	
+R9	Connect Arg1:T9 Arg2:T8	
+R10	Connect Arg1:T9 Arg2:T2	
+R11	Connect Arg1:T9 Arg2:T1	

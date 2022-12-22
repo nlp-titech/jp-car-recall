@@ -1,0 +1,8 @@
+T7	Parts 35 39	副変速機
+T8	Parts 42 47	ベアリング
+T1	Parts 18 21	オイル
+T2	Parts 0 13	３速自動変速機付四輪駆動車
+R2	Contact Arg1:T1 Arg2:T7	
+R3	Contact Arg1:T1 Arg2:T8	
+R4	Part-Whole Arg1:T7 Arg2:T2	
+R5	Part-Whole Arg1:T8 Arg2:T7	

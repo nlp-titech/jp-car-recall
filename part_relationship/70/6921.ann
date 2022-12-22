@@ -1,0 +1,21 @@
+T1	Parts 123 132	ＡＴセレクトレバー
+T2	Parts 166 172	駐車ブレーキ
+T4	Parts 38 47	キーシリンダボディ
+T5	Parts 62 74	キーシリンダボディカバー
+T9	Parts 83 92	インタロックレバー
+T10	Parts 101 104	レバー
+T14	Parts 0 33	キーインタロック機構（ＡＴのＰポジション以外でキーが抜けない機構）
+T18	Parts 149 151	キー
+T19	Parts 160 162	キー
+T20	Parts 185 187	車両
+R1	Part-Whole Arg1:T4 Arg2:T14	
+R3	Coreference Arg1:T9 Arg2:T10	
+R4	Connect Arg1:T14 Arg2:T1	
+R5	Coreference Arg1:T18 Arg2:T19	
+R6	Part-Whole Arg1:T9 Arg2:T14	
+R8	Part-Whole Arg1:T2 Arg2:T20	
+R9	Part-Whole Arg1:T14 Arg2:T20	
+R11	Contact Arg1:T18 Arg2:T4	
+R12	Part-Whole Arg1:T5 Arg2:T4	
+R13	Part-Whole Arg1:T1 Arg2:T20	
+R2	Connect Arg1:T1 Arg2:T2	

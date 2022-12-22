@@ -1,0 +1,9 @@
+T1	Parts 49 56	エンジンオイル
+T2	Parts 93 100	エンジンオイル
+T4	Parts 111 116	シリンダー
+T10	Parts 14 26	オイルセパレータバッフル
+T11	Parts 57 69	オイルセパレータバッフル
+T13	Parts 0 11	原動機樹脂製カムカバー
+R1	Coreference Arg1:T10 Arg2:T11	
+R2	Coreference Arg1:T1 Arg2:T2	
+R3	Part-Whole Arg1:T10 Arg2:T13	

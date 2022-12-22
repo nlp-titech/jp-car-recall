@@ -1,0 +1,38 @@
+T2	Parts 8 12	制動装置
+T4	Parts 26 38	連動機構（イコライザー）
+T5	Parts 39 49	右側ブレーキケーブル
+T8	Parts 61 70	ケーブルブラケット
+T10	Parts 83 92	左側ブレーキレバー
+T11	Parts 100 104	ハンドル
+T12	Parts 116 120	ケーブル
+T13	Parts 127 136	ケーブルブラケット
+T14	Parts 146 155	右側ブレーキレバー
+T15	Parts 164 168	ケーブル
+T16	Parts 172 177	樹脂カバー
+T17	Parts 188 192	ケーブル
+T18	Parts 196 205	ケーブルブラケット
+T19	Parts 210 215	右側レバー
+T20	Parts 221 227	前輪ブレーキ
+R1	Coreference Arg1:T17 Arg2:T15	
+R2	Coreference Arg1:T19 Arg2:T14	
+R3	Coreference Arg1:T15 Arg2:T12	
+R4	Coreference Arg1:T18 Arg2:T13	
+R5	Coreference Arg1:T13 Arg2:T8	
+T1	Parts 0 7	原動機付自転車
+R7	Part-Whole Arg1:T2 Arg2:T1	
+R9	Part-Whole Arg1:T4 Arg2:T2	
+R10	Part-Whole Arg1:T5 Arg2:T2	
+R14	Part-Whole Arg1:T10 Arg2:T2	
+R16	Part-Whole Arg1:T14 Arg2:T2	
+R17	Part-Whole Arg1:T16 Arg2:T15	
+R18	Connect Arg1:T20 Arg2:T19	
+T6	Parts 50 56	イコライザー
+R6	Coreference Arg1:T6 Arg2:T4	
+R11	Part-Whole Arg1:T8 Arg2:T6	
+R12	Contact Arg1:T8 Arg2:T5	
+R13	Coreference Arg1:T12 Arg2:T5	
+R8	Part-Whole Arg1:T11 Arg2:T1	
+R15	Part-Whole Arg1:T20 Arg2:T2	
+T3	Parts 17 21	前・後輪
+R19	Part-Whole Arg1:T3 Arg2:T1	
+R20	Connect Arg1:T3 Arg2:T2	

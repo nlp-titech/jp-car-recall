@@ -1,0 +1,11 @@
+T1	Parts 0 14	駆動用電動機固定サブフレーム
+T2	Parts 19 26	メインフレーム
+T3	Parts 31 34	ボルト
+T4	Parts 82 85	ボルト
+T5	Parts 115 118	電動機
+R1	Contact Arg1:T2 Arg2:T1	
+R2	Contact Arg1:T3 Arg2:T2	
+R3	Contact Arg1:T3 Arg2:T1	
+R4	Coreference Arg1:T4 Arg2:T3	
+R5	Contact Arg1:T5 Arg2:T1	
+R6	Contact Arg1:T5 Arg2:T2	

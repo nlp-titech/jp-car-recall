@@ -1,0 +1,11 @@
+T14	Parts 0 6	トランスファ
+T15	Parts 7 13	オイルシール
+T16	Parts 26 32	オイルシール
+T17	Parts 73 79	トランスファ
+R1	Coreference Arg1:T15 Arg2:T16	
+T1	Parts 47 72	オートマチックトランスミッションフルード（ＡＴＦ）
+T2	Parts 84 87	ＡＴＦ
+R2	Coreference Arg1:T1 Arg2:T2	
+R3	Part-Whole Arg1:T15 Arg2:T14	
+R4	Coreference Arg1:T14 Arg2:T17	
+T3	Parts 102 109	エンジン警告灯

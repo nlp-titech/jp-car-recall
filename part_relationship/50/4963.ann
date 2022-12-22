@@ -1,0 +1,11 @@
+T1	Parts 52 57	側面ガラス
+T2	Parts 43 47	運転者席
+T3	Parts 0 4	窓ガラス
+T4	Parts 38 41	ラベル
+T5	Parts 9 17	電動格納式後写鏡
+T6	Parts 48 51	助手席
+T7	Parts 25 27	ドア
+R1	Contact Arg1:T1 Arg2:T4	
+R2	Oneway-Coreference Arg1:T3 Arg2:T1	
+R3	Contact Arg1:T7 Arg2:T5	
+R4	Part-Whole Arg1:T1 Arg2:T7	

@@ -1,0 +1,17 @@
+T1	Parts 39 43	Ｏリング
+T2	Parts 56 60	Ｏリング
+T3	Parts 101 105	Ｏリング
+T4	Parts 0 4	エンジン
+T5	Parts 14 18	シリンダ
+T10	Parts 119 122	冷却水
+T12	Parts 19 24	冷却水配管
+T13	Parts 109 114	冷却水配管
+R1	Coreference Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T3 Arg2:T2	
+R3	Contact Arg1:T12 Arg2:T5	
+R4	Coreference Arg1:T13 Arg2:T12	
+R5	Contact Arg1:T10 Arg2:T13	
+R6	Part-Whole Arg1:T5 Arg2:T4	
+R7	Part-Whole Arg1:T12 Arg2:T4	
+R8	Contact Arg1:T1 Arg2:T12	
+R9	Contact Arg1:T1 Arg2:T5	

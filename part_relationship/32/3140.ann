@@ -1,0 +1,9 @@
+T8	Parts 9 17	ドライブピニオン
+T9	Parts 18 23	ベアリング
+T10	Parts 58 63	ベアリング
+T1	Parts 0 4	差動装置
+R1	Coreference Arg1:T9 Arg2:T10	
+R2	Part-Whole Arg1:T9 Arg2:T8	
+R3	Part-Whole Arg1:T8 Arg2:T1	
+T2	Parts 68 69	油
+R4	Contact Arg1:T2 Arg2:T10	

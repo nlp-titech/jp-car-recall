@@ -1,0 +1,7 @@
+T1	Parts 0 3	後写鏡
+T2	Parts 46 49	後写鏡
+T3	Parts 8 12	取付支柱
+T4	Parts 37 41	取付支柱
+R1	Coreference Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T4 Arg2:T3	
+R3	Contact Arg1:T3 Arg2:T1	

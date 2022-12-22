@@ -1,0 +1,22 @@
+T1	Parts 0 4	トレーラ
+T4	Parts 24 26	金具
+T5	Parts 27 32	ゴムホース
+T8	Parts 62 65	ホース
+T10	Parts 102 116	サービスライン（主制動系統）
+T12	Parts 127 131	ブレーキ
+T13	Parts 148 154	駐車制動系統
+T15	Parts 165 171	駐車ブレーキ
+T16	Parts 189 193	ブレーキ
+R10	Contact Arg1:T4 Arg2:T5	
+R14	Part-Whole Arg1:T15 Arg2:T13	
+R3	Part-Whole Arg1:T13 Arg2:T1	
+T2	Parts 5 19	エアブレーキ用ブレーキホース
+T3	Parts 50 59	ホース内部挿入金具
+R1	Coreference Arg1:T3 Arg2:T4	
+R2	Coreference Arg1:T8 Arg2:T5	
+R4	Coreference Arg1:T2 Arg2:T5	
+R5	Part-Whole Arg1:T10 Arg2:T1	
+R6	Part-Whole Arg1:T12 Arg2:T10	
+R7	Part-Whole Arg1:T8 Arg2:T10	
+R8	Part-Whole Arg1:T8 Arg2:T13	
+R9	Coreference Arg1:T15 Arg2:T16	

@@ -1,0 +1,16 @@
+T18	Parts 86 89	リンク
+T19	Parts 78 81	ナット
+T20	Parts 33 38	取付ナット
+T1	Parts 0 10	スタビライザーリンク
+T2	Parts 49 51	車両
+T3	Parts 92 99	ブレーキホース
+T4	Parts 110 117	ブレーキホース
+T6	Parts 123 128	ブレーキ液
+R1	Coreference Arg1:T20 Arg2:T19	
+R2	Coreference Arg1:T1 Arg2:T18	
+R3	Coreference Arg1:T3 Arg2:T4	
+R4	Contact Arg1:T6 Arg2:T4	
+R5	Contact Arg1:T20 Arg2:T1	
+R6	Part-Whole Arg1:T18 Arg2:T2	
+R7	Part-Whole Arg1:T3 Arg2:T2	
+R8	Part-Whole Arg1:T6 Arg2:T2	

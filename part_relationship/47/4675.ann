@@ -1,0 +1,9 @@
+T1	Parts 0 12	運転者席用エアバッグ装置
+T3	Parts 90 95	エアバッグ
+T4	Parts 17 21	点火装置
+T5	Parts 57 61	点火装置
+T6	Parts 64 68	電気回路
+R1	Coreference Arg1:T1 Arg2:T3	
+R2	Coreference Arg1:T4 Arg2:T5	
+R3	Part-Whole Arg1:T6 Arg2:T5	
+R4	Part-Whole Arg1:T4 Arg2:T1	

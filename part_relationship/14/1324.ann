@@ -1,0 +1,18 @@
+T16	Parts 107 112	かじ取装置
+T17	Parts 91 98	かじ取用ポンプ
+T1	Parts 0 9	全油圧式かじ取装置
+T2	Parts 10 14	油圧回路
+T3	Parts 22 25	作動油
+T4	Parts 32 44	エアコン駆動用油圧モータ
+T5	Parts 56 59	作動油
+T6	Parts 114 117	作動油
+R1	Coreference Arg1:T1 Arg2:T16	
+R2	Coreference Arg1:T3 Arg2:T5	
+R3	Coreference Arg1:T6 Arg2:T5	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R6	Contact Arg1:T3 Arg2:T2	
+R7	Contact Arg1:T4 Arg2:T3	
+R8	Connect Arg1:T4 Arg2:T2	
+R5	Part-Whole Arg1:T17 Arg2:T16	
+R9	Connect Arg1:T2 Arg2:T17	
+R10	Contact Arg1:T17 Arg2:T6	

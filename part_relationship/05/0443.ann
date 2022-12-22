@@ -1,0 +1,17 @@
+T20	Parts 9 18	キャブレータヒータ
+T21	Parts 41 45	エンジン
+T22	Parts 62 71	キャブレータヒータ
+T1	Parts 0 4	電気装置
+T2	Parts 19 21	配線
+T3	Parts 51 53	配線
+R1	Coreference Arg1:T3 Arg2:T2	
+T4	Parts 108 112	点火系統
+T5	Parts 113 117	ヒューズ
+T6	Parts 121 125	エンジン
+R3	Coreference Arg1:T6 Arg2:T21	
+R4	Part-Whole Arg1:T20 Arg2:T1	
+R5	Contact Arg1:T2 Arg2:T20	
+R7	Coreference Arg1:T22 Arg2:T20	
+R8	Part-Whole Arg1:T5 Arg2:T4	
+R9	Part-Whole Arg1:T1 Arg2:T4	
+R2	Connect Arg1:T5 Arg2:T6	

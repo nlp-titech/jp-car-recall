@@ -1,0 +1,14 @@
+T16	Parts 12 19	ラテラルロッド
+T17	Parts 20 29	アクスルハウジング
+T18	Parts 46 51	締結ボルト
+T19	Parts 94 97	ボルト
+T1	Parts 0 2	前輪
+T2	Parts 3 7	緩衝装置
+T4	Parts 58 62	ハンドル
+R1	Coreference Arg1:T18 Arg2:T19	
+R3	Part-Whole Arg1:T16 Arg2:T2	
+R4	Part-Whole Arg1:T17 Arg2:T2	
+R5	Contact Arg1:T16 Arg2:T17	
+R6	Contact Arg1:T16 Arg2:T18	
+R7	Contact Arg1:T17 Arg2:T18	
+R2	Connect Arg1:T1 Arg2:T2	

@@ -1,0 +1,18 @@
+T14	Parts 99 105	スライドドア
+T15	Parts 112 115	レバー
+T16	Parts 129 131	ドア
+T17	Parts 79 82	レバー
+T18	Parts 16 28	前側ラッチクランクレバー
+T1	Parts 1 7	スライドドア
+T2	Parts 8 11	ラッチ
+T3	Parts 39 42	レバー
+T4	Parts 47 50	グリス
+R1	Coreference Arg1:T3 Arg2:T17	
+R2	Coreference Arg1:T1 Arg2:T14	
+R3	Coreference Arg1:T17 Arg2:T15	
+R4	Coreference Arg1:T14 Arg2:T16	
+R5	Part-Whole Arg1:T2 Arg2:T1	
+R6	Connect Arg1:T18 Arg2:T2	
+R7	Coreference Arg1:T3 Arg2:T18	
+R8	Contact Arg1:T4 Arg2:T3	
+R9	Part-Whole Arg1:T18 Arg2:T1	

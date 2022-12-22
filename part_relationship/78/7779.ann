@@ -1,0 +1,10 @@
+T1	Parts 0 4	燃料装置
+T2	Parts 9 20	燃料供給パイプコネクタ
+T3	Parts 33 44	燃料供給パイプコネクタ
+T4	Parts 74 85	燃料供給パイプコネクタ
+T5	Parts 92 94	燃料
+R1	Coreference Arg1:T3 Arg2:T2	
+R2	Coreference Arg1:T4 Arg2:T3	
+R3	Contact Arg1:T5 Arg2:T4	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Contact Arg1:T5 Arg2:T1	

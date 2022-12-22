@@ -1,0 +1,18 @@
+T1	Parts 29 34	ブラケット
+T2	Parts 67 72	ブラケット
+T4	Parts 87 96	ラジエータ・ホース
+T7	Parts 97 104	ファン・ベルト
+T8	Parts 13 22	ラジエータ・ホース
+T10	Parts 139 142	原動機
+T12	Parts 131 134	冷却水
+T13	Parts 8 12	冷却装置
+R1	Contact Arg1:T1 Arg2:T8	
+R2	Part-Whole Arg1:T8 Arg2:T13	
+R4	Coreference Arg1:T1 Arg2:T2	
+R5	Coreference Arg1:T8 Arg2:T4	
+R7	Connect Arg1:T13 Arg2:T3	
+T3	Parts 0 3	原動機
+R8	Coreference Arg1:T3 Arg2:T10	
+R3	Contact Arg1:T13 Arg2:T7	
+R9	Contact Arg1:T3 Arg2:T7	
+R6	Contact Arg1:T4 Arg2:T12	

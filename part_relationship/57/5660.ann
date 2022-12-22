@@ -1,0 +1,7 @@
+T1	Parts 1 12	後輪ショックアブソーバ
+T2	Parts 17 26	車軸側取付けボルト
+T4	Parts 58 61	ボルト
+T6	Parts 91 93	車両
+R1	Coreference Arg1:T4 Arg2:T2	
+R2	Contact Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T1 Arg2:T6	

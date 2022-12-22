@@ -1,0 +1,26 @@
+T16	Parts 157 167	アウトプットシャフト
+T17	Parts 169 176	スリーブヨーク
+T18	Parts 150 156	トランスファ
+T19	Parts 108 115	スリーブヨーク
+T1	Parts 0 10	リヤプロペラシャフト
+T2	Parts 14 20	トランスファ
+T3	Parts 23 30	スリーブヨーク
+T4	Parts 45 51	オイルシール
+T5	Parts 68 71	シール
+T6	Parts 74 77	オイル
+R1	Coreference Arg1:T5 Arg2:T4	
+R2	Coreference Arg1:T19 Arg2:T3	
+T7	Parts 140 144	シャフト
+R3	Coreference Arg1:T7 Arg2:T1	
+R4	Coreference Arg1:T18 Arg2:T2	
+R5	Coreference Arg1:T17 Arg2:T19	
+T8	Parts 199 209	リヤプロペラシャフト
+R6	Coreference Arg1:T8 Arg2:T7	
+T9	Parts 213 218	燃料タンク
+T10	Parts 223 225	燃料
+R7	Part-Whole Arg1:T2 Arg2:T1	
+R8	Contact Arg1:T3 Arg2:T2	
+R9	Part-Whole Arg1:T4 Arg2:T3	
+R10	Contact Arg1:T6 Arg2:T5	
+R11	Part-Whole Arg1:T16 Arg2:T18	
+R12	Part-Whole Arg1:T10 Arg2:T9	

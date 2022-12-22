@@ -1,0 +1,5 @@
+T13	Parts 19 25	ダイヤフラム
+T1	Parts 0 6	制動倍力装置
+T2	Parts 69 76	ブレーキペダル
+R3	Connect Arg1:T1 Arg2:T2	
+R1	Part-Whole Arg1:T13 Arg2:T1	

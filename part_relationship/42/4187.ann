@@ -1,0 +1,12 @@
+T1	Parts 17 24	大中型トラック
+T3	Parts 60 64	スイッチ
+T4	Parts 106 110	スイッチ
+T2	Parts 29 42	ウイングルーフ開閉スイッチ
+T5	Parts 0 9	ウィングルーフバン
+R1	Part-Whole Arg1:T5 Arg2:T1	
+R2	Coreference Arg1:T2 Arg2:T3	
+R3	Coreference Arg1:T3 Arg2:T4	
+T6	Parts 125 129	ウイング
+R4	Connect Arg1:T4 Arg2:T6	
+R5	Part-Whole Arg1:T2 Arg2:T5	
+R6	Part-Whole Arg1:T6 Arg2:T5	

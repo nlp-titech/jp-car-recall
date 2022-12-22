@@ -1,0 +1,9 @@
+T1	Parts 0 15	クイックシフターキット装着車両
+T2	Parts 20 29	リンケージクランプ
+T4	Parts 51 55	センサー
+T5	Parts 58 62	クランプ
+T7	Parts 98 100	ギア
+R1	Coreference Arg1:T2 Arg2:T5	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T4 Arg2:T1	
+R4	Contact Arg1:T7 Arg2:T5	

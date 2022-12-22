@@ -1,0 +1,10 @@
+T1	Parts 0 13	アスファルトフィニッシャー
+T4	Parts 34 39	リヤカバー
+T5	Parts 47 62	エンジンコントローラ電源リレー
+T6	Parts 90 105	エンジンコントローラ電源リレー
+T7	Parts 123 127	エンジン
+R2	Coreference Arg1:T6 Arg2:T5	
+R4	Part-Whole Arg1:T4 Arg2:T1	
+R5	Part-Whole Arg1:T5 Arg2:T1	
+R6	Part-Whole Arg1:T7 Arg2:T1	
+R7	Connect Arg1:T7 Arg2:T6	

@@ -1,0 +1,15 @@
+T1	Parts 0 12	リチウムイオンバッテリー
+T2	Parts 13 19	アースボルト
+T3	Parts 24 26	車体
+T4	Parts 75 85	アイドリングストップ
+T5	Parts 94 98	エンジン
+T6	Parts 112 114	車両
+R1	Contact Arg1:T2 Arg2:T1	
+R5	Connect Arg1:T5 Arg2:T4	
+R7	Part-Whole Arg1:T3 Arg2:T6	
+R2	Contact Arg1:T2 Arg2:T3	
+R3	Contact Arg1:T1 Arg2:T3	
+R4	Part-Whole Arg1:T4 Arg2:T6	
+R6	Part-Whole Arg1:T5 Arg2:T6	
+R8	Part-Whole Arg1:T2 Arg2:T6	
+R9	Part-Whole Arg1:T1 Arg2:T6	

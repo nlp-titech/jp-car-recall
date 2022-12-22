@@ -1,0 +1,7 @@
+T9	Parts 81 85	エンジン
+T10	Parts 17 20	リレー
+T11	Parts 28 33	ダイオード
+T1	Parts 0 12	エンジン制御用電源リレー
+R1	Coreference Arg1:T1 Arg2:T10	
+R2	Part-Whole Arg1:T11 Arg2:T10	
+R3	Connect Arg1:T1 Arg2:T9	

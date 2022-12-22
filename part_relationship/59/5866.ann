@@ -1,0 +1,7 @@
+T1	Parts 27 41	サンルーフガラス（フロント）
+T2	Parts 0 9	サンルーフ付き車両
+T3	Parts 72 75	ガラス
+T4	Parts 97 100	ガラス
+R1	Part-Whole Arg1:T1 Arg2:T2	
+R2	Coreference Arg1:T1 Arg2:T3	
+R3	Coreference Arg1:T3 Arg2:T4	

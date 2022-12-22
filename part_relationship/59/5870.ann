@@ -1,0 +1,15 @@
+T1	Parts 4 10	動力伝達装置
+T2	Parts 52 57	取付ボルト
+T3	Parts 99 104	取付ボルト
+T4	Parts 41 45	エンジン
+T5	Parts 15 24	トーションダンパー
+T6	Parts 31 40	トーションダンパー
+T7	Parts 0 3	原動機
+R1	Coreference Arg1:T7 Arg2:T4	
+R2	Coreference Arg1:T5 Arg2:T6	
+R3	Coreference Arg1:T2 Arg2:T3	
+R4	Contact Arg1:T1 Arg2:T5	
+R5	Connect Arg1:T7 Arg2:T1	
+R6	Contact Arg1:T6 Arg2:T2	
+R7	Contact Arg1:T4 Arg2:T2	
+R9	Contact Arg1:T7 Arg2:T5	

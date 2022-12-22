@@ -1,0 +1,17 @@
+T14	Parts 83 88	リンケージ
+T15	Parts 123 125	ピン
+T16	Parts 136 138	ピン
+T17	Parts 140 143	ロッド
+T18	Parts 148 154	駐車ブレーキ
+T19	Parts 89 91	ピン
+T21	Parts 23 37	駐車ブレーキ作動用リンケージ
+T1	Parts 0 3	前車軸
+T2	Parts 12 18	駐車ブレーキ
+R2	Coreference Arg1:T21 Arg2:T14	
+R3	Coreference Arg1:T19 Arg2:T15	
+R4	Coreference Arg1:T15 Arg2:T16	
+R6	Connect Arg1:T2 Arg2:T1	
+R8	Part-Whole Arg1:T19 Arg2:T14	
+R9	Part-Whole Arg1:T17 Arg2:T14	
+R1	Coreference Arg1:T2 Arg2:T18	
+R5	Part-Whole Arg1:T21 Arg2:T2	

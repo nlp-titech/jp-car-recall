@@ -1,0 +1,14 @@
+T1	Parts 1 4	ＤＰＦ
+T2	Parts 9 12	ＤＰＦ
+T4	Parts 33 39	コンピュータ
+T5	Parts 40 45	プログラム
+T6	Parts 53 57	アクセル
+T7	Parts 99 102	ＤＰＦ
+T9	Parts 134 140	ＤＰＦ表示灯
+R3	Coreference Arg1:T7 Arg2:T2	
+R4	Coreference Arg1:T2 Arg2:T1	
+R6	Part-Whole Arg1:T4 Arg2:T2	
+R7	Part-Whole Arg1:T5 Arg2:T4	
+R8	Part-Whole Arg1:T9 Arg2:T7	
+T11	Parts 176 188	ディーゼルエンジン搭載車
+R9	Part-Whole Arg1:T7 Arg2:T11	

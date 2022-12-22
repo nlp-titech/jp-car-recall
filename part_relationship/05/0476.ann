@@ -1,0 +1,25 @@
+T10	Parts 61 68	デリバリパイプ
+T11	Parts 85 90	燃料パイプ
+T12	Parts 100 107	チェックバルブ
+T13	Parts 108 113	燃料パイプ
+T14	Parts 145 148	バルブ
+T1	Parts 0 4	燃料装置
+T2	Parts 9 12	原動機
+T3	Parts 22 27	燃料ポンプ
+T4	Parts 28 40	チェックバルブ（逆止弁）
+T5	Parts 48 53	燃料パイプ
+T7	Parts 128 133	燃料ポンプ
+T8	Parts 163 165	燃料
+R1	Coreference Arg1:T14 Arg2:T12	
+R2	Coreference Arg1:T13 Arg2:T11	
+R3	Coreference Arg1:T11 Arg2:T5	
+R4	Coreference Arg1:T3 Arg2:T7	
+R7	Part-Whole Arg1:T4 Arg2:T3	
+R8	Contact Arg1:T4 Arg2:T5	
+R9	Contact Arg1:T10 Arg2:T5	
+R11	Coreference Arg1:T4 Arg2:T12	
+R12	Contact Arg1:T7 Arg2:T8	
+R5	Part-Whole Arg1:T3 Arg2:T1	
+R6	Contact Arg1:T2 Arg2:T3	
+R10	Connect Arg1:T1 Arg2:T2	
+R13	Contact Arg1:T8 Arg2:T14	

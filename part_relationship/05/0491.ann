@@ -1,0 +1,23 @@
+T20	Parts 9 12	整流器
+T1	Parts 0 4	電気装置
+T2	Parts 24 27	排気管
+T4	Parts 67 72	バッテリー
+T5	Parts 81 84	電解液
+T6	Parts 99 103	電気回路
+T7	Parts 112 115	前照灯
+T8	Parts 117 121	灯火器類
+T9	Parts 134 137	速度計
+T10	Parts 140 145	走行距離計
+T11	Parts 157 160	原動機
+R1	Part-Whole Arg1:T20 Arg2:T1	
+R5	Part-Whole Arg1:T5 Arg2:T4	
+R9	Connect Arg1:T8 Arg2:T1	
+R3	Part-Whole Arg1:T6 Arg2:T1	
+R4	Connect Arg1:T20 Arg2:T4	
+R6	Connect Arg1:T4 Arg2:T6	
+R7	Connect Arg1:T6 Arg2:T8	
+R10	Connect Arg1:T6 Arg2:T9	
+R11	Connect Arg1:T6 Arg2:T10	
+R2	Connect Arg1:T1 Arg2:T11	
+R8	Oneway-Coreference Arg1:T8 Arg2:T7	
+R12	Connect Arg1:T6 Arg2:T20	

@@ -1,0 +1,12 @@
+T1	Parts 0 5	バッテリー
+T2	Parts 18 23	バッテリー
+T4	Parts 70 75	バッテリー
+T5	Parts 82 86	エンジン
+T6	Parts 40 42	配線
+R1	Coreference Arg1:T1 Arg2:T2	
+T3	Parts 28 38	バッテリーターミナル
+R2	Part-Whole Arg1:T3 Arg2:T2	
+R3	Contact Arg1:T3 Arg2:T6	
+R4	Coreference Arg1:T2 Arg2:T4	
+R5	Connect Arg1:T4 Arg2:T5	
+#1	AnnotatorNotes T3	「バッテリーターミナル」という部品があり、交換もできるらしい

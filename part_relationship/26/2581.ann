@@ -1,0 +1,14 @@
+T12	Parts 72 82	スイッチ照明用アース
+T13	Parts 140 149	ＨＳＡオフスイッチ
+T14	Parts 85 100	ＨＳＡコントロールユニット電源
+T15	Parts 65 69	スイッチ
+T17	Parts 53 57	スイッチ
+T19	Parts 33 42	ＨＳＡオフスイッチ
+T1	Parts 0 25	坂道発進補助装置（ＨＳＡ：ヒル・スタート・エイド）
+R1	Coreference Arg1:T17 Arg2:T19	
+R2	Coreference Arg1:T15 Arg2:T17	
+R3	Coreference Arg1:T15 Arg2:T13	
+R4	Connect Arg1:T1 Arg2:T19	
+R5	Part-Whole Arg1:T12 Arg2:T15	
+R6	Part-Whole Arg1:T14 Arg2:T15	
+R7	Connect Arg1:T14 Arg2:T1	

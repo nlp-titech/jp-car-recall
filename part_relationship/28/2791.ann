@@ -1,0 +1,25 @@
+T14	Parts 38 46	ベアリングケース
+T15	Parts 47 52	ベアリング
+T16	Parts 73 78	ベアリング
+T18	Parts 54 58	シャフト
+T19	Parts 85 89	シャフト
+T20	Parts 123 127	シャフト
+T21	Parts 128 135	サプライポンプ
+T22	Parts 136 142	カップリング
+T23	Parts 145 147	ギヤ
+T2	Parts 0 11	大型トラック用エンジン
+T3	Parts 16 32	燃料供給ポンプ（サプライポンプ）
+R1	Coreference Arg1:T16 Arg2:T15	
+R2	Coreference Arg1:T19 Arg2:T18	
+R3	Coreference Arg1:T20 Arg2:T19	
+R4	Coreference Arg1:T21 Arg2:T3	
+R6	Part-Whole Arg1:T3 Arg2:T2	
+R7	Part-Whole Arg1:T14 Arg2:T2	
+R8	Connect Arg1:T3 Arg2:T14	
+R9	Part-Whole Arg1:T15 Arg2:T14	
+R10	Part-Whole Arg1:T18 Arg2:T2	
+R11	Contact Arg1:T15 Arg2:T18	
+R12	Contact Arg1:T3 Arg2:T18	
+R13	Contact Arg1:T20 Arg2:T22	
+R14	Contact Arg1:T21 Arg2:T22	
+R15	Part-Whole Arg1:T23 Arg2:T14	

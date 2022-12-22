@@ -1,0 +1,7 @@
+T10	Parts 71 75	ホイール
+T11	Parts 64 67	ボルト
+T12	Parts 97 99	車輪
+T1	Parts 0 9	ホイールハブボルト
+R1	Coreference Arg1:T11 Arg2:T1	
+R2	Part-Whole Arg1:T10 Arg2:T12	
+R3	Contact Arg1:T10 Arg2:T11	

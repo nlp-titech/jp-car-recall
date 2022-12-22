@@ -1,0 +1,10 @@
+T1	Parts 9 12	制動液
+T2	Parts 25 36	ブレーキリザーバタンク
+T3	Parts 37 49	ブレーキマスターシリンダ
+T5	Parts 68 74	ゴム製シール
+T7	Parts 109 116	ブレーキ警告灯
+T8	Parts 127 129	空気
+R4	Contact Arg1:T5 Arg2:T3	
+R6	Contact Arg1:T3 Arg2:T2	
+R7	Contact Arg1:T2 Arg2:T1	
+R8	Contact Arg1:T3 Arg2:T1	

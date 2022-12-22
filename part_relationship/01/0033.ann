@@ -1,0 +1,9 @@
+T1	Parts 0 5	四輪駆動車
+T2	Parts 12 18	動力伝達装置
+T4	Parts 55 63	プロペラシャフト
+T5	Parts 19 27	プロペラシャフト
+T6	Parts 106 114	プロペラシャフト
+R1	Coreference Arg1:T4 Arg2:T5	
+R2	Coreference Arg1:T4 Arg2:T6	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T5 Arg2:T2	

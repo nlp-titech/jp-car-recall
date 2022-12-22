@@ -1,0 +1,11 @@
+T13	Parts 103 106	ランプ
+T14	Parts 118 123	方向指示器
+T15	Parts 30 36	バルブホルダ
+T16	Parts 46 52	接続コネクタ
+T1	Parts 3 29	コンビネーションランプ（尾灯、制動灯及び方向指示器）
+T2	Parts 41 45	電気配線
+R2	Coreference Arg1:T13 Arg2:T1	
+R3	Part-Whole Arg1:T15 Arg2:T1	
+R4	Part-Whole Arg1:T2 Arg2:T15	
+R5	Part-Whole Arg1:T16 Arg2:T2	
+R1	Part-Whole Arg1:T14 Arg2:T13	

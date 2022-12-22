@@ -1,0 +1,5 @@
+T1	Parts 19 27	プロペラシャフト
+T2	Parts 46 54	プロペラシャフト
+T3	Parts 16 18	車両
+R1	Coreference Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T1 Arg2:T3	

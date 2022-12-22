@@ -1,0 +1,17 @@
+T8	Parts 7 27	ショックアブソーバ取付部材（ブラケット）
+T9	Parts 63 67	取付部材
+T10	Parts 68 77	アクスルハウジング
+T11	Parts 82 91	アクスルハウジング
+T12	Parts 92 100	リーフスプリング
+T13	Parts 0 6	後輪緩衝装置
+R1	Coreference Arg1:T9 Arg2:T8	
+R2	Coreference Arg1:T11 Arg2:T10	
+T1	Parts 107 111	Ｕボルト
+R3	Part-Whole Arg1:T8 Arg2:T13	
+R4	Contact Arg1:T11 Arg2:T12	
+R5	Contact Arg1:T11 Arg2:T1	
+R6	Contact Arg1:T12 Arg2:T1	
+R7	Part-Whole Arg1:T10 Arg2:T13	
+R8	Part-Whole Arg1:T12 Arg2:T13	
+T2	Parts 54 56	車両
+R9	Part-Whole Arg1:T13 Arg2:T2	

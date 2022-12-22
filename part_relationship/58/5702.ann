@@ -1,0 +1,7 @@
+T1	Parts 22 30	アクスルシャフト
+T2	Parts 0 13	大型トラクタ（後２軸駆動）
+T3	Parts 82 86	シャフト
+T5	Parts 14 17	後前軸
+R1	Coreference Arg1:T1 Arg2:T3	
+R2	Part-Whole Arg1:T5 Arg2:T2	
+R3	Part-Whole Arg1:T1 Arg2:T5	

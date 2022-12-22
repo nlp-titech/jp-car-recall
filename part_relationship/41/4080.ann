@@ -1,0 +1,16 @@
+T1	Parts 68 79	電動パワーステアリング
+T2	Parts 26 38	ＣＮＧ燃料制御プログラム
+T3	Parts 59 63	エアコン
+T4	Parts 5 9	ガソリン
+T5	Parts 0 4	天然ガス
+T7	Parts 98 103	ＣＮＧ燃料
+T8	Parts 131 136	ＣＮＧ燃料
+T9	Parts 18 20	車両
+R1	Coreference Arg1:T5 Arg2:T7	
+R2	Coreference Arg1:T7 Arg2:T8	
+R3	Part-Whole Arg1:T3 Arg2:T9	
+R4	Part-Whole Arg1:T1 Arg2:T9	
+R5	Connect Arg1:T2 Arg2:T7	
+R6	Part-Whole Arg1:T5 Arg2:T9	
+R7	Part-Whole Arg1:T4 Arg2:T9	
+R8	Part-Whole Arg1:T2 Arg2:T9	

@@ -1,0 +1,10 @@
+T1	Parts 0 9	回転ダンプ式塵芥車
+T2	Parts 14 16	荷箱
+T3	Parts 71 75	走行装置
+T4	Parts 130 133	後輪軸
+T5	Parts 144 147	タイヤ
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T1	
+R3	Part-Whole Arg1:T4 Arg2:T3	
+R4	Part-Whole Arg1:T5 Arg2:T3	
+R5	Connect Arg1:T4 Arg2:T5	

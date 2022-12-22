@@ -1,0 +1,14 @@
+T1	Parts 24 30	大型観光バス
+T2	Parts 41 46	取付け金具
+T3	Parts 68 70	金具
+T4	Parts 115 117	金具
+T5	Parts 6 19	車両後側用ＬＥＤ行先表示器
+T6	Parts 59 61	車両
+R1	Part-Whole Arg1:T5 Arg2:T1	
+R3	Coreference Arg1:T1 Arg2:T6	
+R4	Coreference Arg1:T2 Arg2:T3	
+R5	Coreference Arg1:T3 Arg2:T4	
+T7	Parts 122 127	行先表示器
+R6	Coreference Arg1:T5 Arg2:T7	
+T8	Parts 35 40	行先表示器
+R2	Contact Arg1:T8 Arg2:T2	

@@ -1,0 +1,9 @@
+T10	Parts 0 3	原動機
+T11	Parts 13 22	ラジエータキャップ
+T12	Parts 38 41	原動機
+T13	Parts 51 59	ジエータキャップ
+R1	Coreference Arg1:T11 Arg2:T13	
+R2	Coreference Arg1:T12 Arg2:T10	
+T1	Parts 64 67	冷却水
+R3	Part-Whole Arg1:T11 Arg2:T10	
+R4	Part-Whole Arg1:T1 Arg2:T13	

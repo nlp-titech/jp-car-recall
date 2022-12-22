@@ -1,0 +1,8 @@
+T1	Parts 78 84	ディスプレイ
+T2	Parts 57 61	運転者席
+T3	Parts 0 14	カメラコントロールモジュール
+T5	Parts 26 33	直前確認カメラ
+R2	Connect Arg1:T3 Arg2:T5	
+T4	Parts 66 71	直前カメラ
+R1	Coreference Arg1:T5 Arg2:T4	
+R3	Connect Arg1:T4 Arg2:T1	

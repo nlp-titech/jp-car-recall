@@ -1,0 +1,8 @@
+T1	Parts 0 4	大型バス
+T2	Parts 9 14	右側後写鏡
+T3	Parts 16 18	車体
+T4	Parts 27 30	導風板
+R1	Contact Arg1:T4 Arg2:T3	
+R2	Part-Whole Arg1:T3 Arg2:T1	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T4 Arg2:T1	

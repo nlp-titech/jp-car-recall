@@ -1,0 +1,25 @@
+T1	Parts 0 9	小型・中型トラック
+T2	Parts 10 21	イグニッションスイッチ
+T3	Parts 22 26	電気回路
+T4	Parts 34 49	トランスミッション制御ユニット
+T5	Parts 51 57	後付け電装品
+T6	Parts 67 71	スイッチ
+T9	Parts 119 123	エンジン
+T10	Parts 136 141	自動変速機
+T11	Parts 143 157	機械式自動変速機（スムーサ）
+T12	Parts 162 164	車両
+T14	Parts 175 178	灯火器
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T4 Arg2:T1	
+R5	Part-Whole Arg1:T5 Arg2:T1	
+R6	Coreference Arg1:T2 Arg2:T6	
+R8	Connect Arg1:T2 Arg2:T9	
+R9	Part-Whole Arg1:T10 Arg2:T12	
+R10	Part-Whole Arg1:T11 Arg2:T12	
+R15	Part-Whole Arg1:T14 Arg2:T12	
+R1	Oneway-Coreference Arg1:T12 Arg2:T1	
+#1	AnnotatorNotes R1	「小型・中型トラックのうち、自動変速機及びスムーサを搭載した車両」と解釈
+R11	Part-Whole Arg1:T9 Arg2:T1	
+R3	Connect Arg1:T3 Arg2:T2	
+R7	Connect Arg1:T3 Arg2:T4	
+R12	Connect Arg1:T3 Arg2:T5	

@@ -1,0 +1,15 @@
+T14	Parts 11 21	エンジンリヤマウント
+T18	Parts 22 26	防振ゴム
+T20	Parts 45 49	エンジン
+T21	Parts 66 70	マウント
+T22	Parts 71 73	ゴム
+T23	Parts 113 125	エンジンフロントマウント
+T1	Parts 0 4	エンジン
+T2	Parts 136 143	エンジンオイル
+R1	Coreference Arg1:T14 Arg2:T21	
+R2	Coreference Arg1:T20 Arg2:T1	
+R3	Coreference Arg1:T18 Arg2:T22	
+R4	Contact Arg1:T14 Arg2:T1	
+R5	Part-Whole Arg1:T18 Arg2:T14	
+R7	Contact Arg1:T20 Arg2:T2	
+R6	Contact Arg1:T20 Arg2:T23	

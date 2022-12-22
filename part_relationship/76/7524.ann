@@ -1,0 +1,7 @@
+T1	Parts 0 9	ギヤチェンジペダル
+T2	Parts 14 24	チェンジペダルアーム
+T3	Parts 35 42	チェンジペダル
+T4	Parts 109 119	チェンジペダルアーム
+R1	Coreference Arg1:T2 Arg2:T4	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Coreference Arg1:T1 Arg2:T3	

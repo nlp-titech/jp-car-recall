@@ -1,0 +1,19 @@
+T8	Parts 5 40	車両挙動制御機能（アクティブスタビリティコントロールシステム：ASC）
+T9	Parts 45 54	ASC油圧ユニット
+T10	Parts 64 76	ガス封入式アキュムレータ
+T11	Parts 79 85	ダイヤフラム
+T12	Parts 120 127	アキュムレータ
+T1	Parts 0 4	制動装置
+T2	Parts 151 158	ブレーキペダル
+T3	Parts 134 139	ブレーキ液
+R1	Coreference Arg1:T12 Arg2:T10	
+R2	Part-Whole Arg1:T8 Arg2:T1	
+R3	Part-Whole Arg1:T9 Arg2:T8	
+R4	Contact Arg1:T10 Arg2:T9	
+R5	Part-Whole Arg1:T11 Arg2:T10	
+R7	Contact Arg1:T8 Arg2:T3	
+R8	Connect Arg1:T1 Arg2:T2	
+R6	Part-Whole Arg1:T10 Arg2:T8	
+R9	Part-Whole Arg1:T3 Arg2:T1	
+T4	Parts 129 133	封入ガス
+R10	Part-Whole Arg1:T4 Arg2:T12	

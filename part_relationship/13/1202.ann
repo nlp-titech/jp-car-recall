@@ -1,0 +1,23 @@
+T12	Parts 117 119	ドア
+T13	Parts 11 18	ドア開閉レバー
+T14	Parts 47 50	レバー
+T15	Parts 57 60	ラッチ
+T16	Parts 93 96	ラッチ
+T17	Parts 97 102	ストライカ
+T1	Parts 0 10	リヤドア外側ハンドル
+T3	Parts 37 39	ドア
+T4	Parts 169 172	対象車
+T5	Parts 188 195	リコール対象車
+T6	Parts 212 219	リコール対象車
+R1	Coreference Arg1:T13 Arg2:T14	
+R2	Coreference Arg1:T15 Arg2:T16	
+R3	Coreference Arg1:T4 Arg2:T5	
+R4	Coreference Arg1:T5 Arg2:T6	
+R5	Part-Whole Arg1:T13 Arg2:T1	
+R8	Coreference Arg1:T3 Arg2:T12	
+R9	Part-Whole Arg1:T12 Arg2:T4	
+R10	Part-Whole Arg1:T15 Arg2:T3	
+R11	Part-Whole Arg1:T17 Arg2:T3	
+R12	Part-Whole Arg1:T1 Arg2:T3	
+R6	Connect Arg1:T14 Arg2:T15	
+R7	Contact Arg1:T16 Arg2:T17	

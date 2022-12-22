@@ -1,0 +1,13 @@
+T1	Parts 0 7	ブレーキランプ
+T2	Parts 67 71	ブレーキ
+T3	Parts 86 93	ブレーキランプ
+T4	Parts 140 147	ブレーキランプ
+T5	Parts 18 33	ボディーコントロールモジュール
+T9	Parts 153 155	車両
+R1	Coreference Arg1:T1 Arg2:T3	
+R2	Coreference Arg1:T3 Arg2:T4	
+R3	Connect Arg1:T1 Arg2:T5	
+R4	Connect Arg1:T2 Arg2:T3	
+R5	Part-Whole Arg1:T4 Arg2:T9	
+R6	Part-Whole Arg1:T2 Arg2:T9	
+R7	Part-Whole Arg1:T5 Arg2:T9	

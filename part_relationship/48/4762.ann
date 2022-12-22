@@ -1,0 +1,7 @@
+T3	Parts 33 47	ハンドル固定用ロッキングタブ
+T4	Parts 94 98	ハンドル
+T5	Parts 99 107	フォークチューブ
+T6	Parts 18 28	ハイマウントハンドル
+R1	Coreference Arg1:T6 Arg2:T4	
+R2	Contact Arg1:T6 Arg2:T3	
+R3	Contact Arg1:T4 Arg2:T5	

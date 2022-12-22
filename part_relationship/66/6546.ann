@@ -1,0 +1,11 @@
+T1	Parts 10 18	右側シートベルト
+T3	Parts 23 37	シートベルトプリテンショナー
+T4	Parts 83 91	プリテンショナー
+T5	Parts 0 9	後部座席（３列目）
+T7	Parts 98 104	ガス発生装置
+T9	Parts 48 54	ガス発生装置
+R1	Contact Arg1:T1 Arg2:T5	
+R2	Contact Arg1:T3 Arg2:T1	
+R3	Part-Whole Arg1:T9 Arg2:T3	
+R4	Coreference Arg1:T3 Arg2:T4	
+R5	Coreference Arg1:T9 Arg2:T7	

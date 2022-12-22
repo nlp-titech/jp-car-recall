@@ -1,0 +1,12 @@
+T1	Parts 0 11	後輪用制動装置油圧配管
+T2	Parts 12 28	トルクコンバータ（流体クラッチ）
+T3	Parts 46 100	サスペンションロック（クレーン作業時等に車両の安定性を向上させるため、サスペンションを強制的に収縮させ固定）
+T4	Parts 103 107	油圧配管
+T5	Parts 108 116	トルクコンバータ
+R1	Coreference Arg1:T4 Arg2:T1	
+R2	Coreference Arg1:T5 Arg2:T2	
+T6	Parts 147 149	配管
+T7	Parts 166 168	後輪
+R3	Coreference Arg1:T6 Arg2:T4	
+R4	Contact Arg1:T1 Arg2:T7	
+R5	Contact Arg1:T5 Arg2:T4	

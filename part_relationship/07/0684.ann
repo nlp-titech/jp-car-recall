@@ -1,0 +1,23 @@
+T18	Parts 129 131	車体
+T19	Parts 20 22	車体
+T20	Parts 17 19	後軸
+T21	Parts 30 37	取付用プレート
+T22	Parts 69 73	プレート
+T23	Parts 78 83	取付ボルト
+T24	Parts 103 108	取付ボルト
+T25	Parts 113 122	抜出し防止プレート
+T26	Parts 126 128	後軸
+T1	Parts 0 4	揺動機構
+T2	Parts 7 9	後軸
+R1	Coreference Arg1:T22 Arg2:T21	
+R2	Coreference Arg1:T24 Arg2:T23	
+R3	Coreference Arg1:T26 Arg2:T20	
+R4	Coreference Arg1:T18 Arg2:T19	
+R5	Contact Arg1:T1 Arg2:T2	
+R6	Coreference Arg1:T2 Arg2:T20	
+R7	Contact Arg1:T20 Arg2:T21	
+R8	Contact Arg1:T19 Arg2:T21	
+R9	Contact Arg1:T23 Arg2:T22	
+R10	Contact Arg1:T25 Arg2:T24	
+R11	Part-Whole Arg1:T1 Arg2:T19	
+R12	Contact Arg1:T19 Arg2:T20	

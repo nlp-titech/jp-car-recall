@@ -1,0 +1,12 @@
+T1	Parts 25 30	金属ベルト
+T2	Parts 62 67	金属ベルト
+T3	Parts 0 5	無段変速機
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Part-Whole Arg1:T1 Arg2:T3	
+T4	Parts 31 35	チェーン
+T5	Parts 68 71	バンド
+T6	Parts 101 104	バンド
+R3	Part-Whole Arg1:T4 Arg2:T1	
+R4	Part-Whole Arg1:T5 Arg2:T2	
+R5	Coreference Arg1:T5 Arg2:T6	
+R6	Contact Arg1:T4 Arg2:T5	

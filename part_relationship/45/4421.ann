@@ -1,0 +1,19 @@
+T1	Parts 25 30	アダプタ－
+T2	Parts 95 99	ブレーキ
+T5	Parts 42 45	ナット
+T6	Parts 63 66	ナット
+T7	Parts 38 41	ボルト
+T8	Parts 59 62	ボルト
+T10	Parts 0 15	駐車ブレ－キ（ドラムブレ－キ）
+T4	Parts 16 23	バックプレ－ト
+R1	Coreference Arg1:T10 Arg2:T2	
+R2	Connect Arg1:T4 Arg2:T1	
+R3	Contact Arg1:T4 Arg2:T7	
+R4	Contact Arg1:T4 Arg2:T5	
+R5	Contact Arg1:T7 Arg2:T5	
+R6	Contact Arg1:T1 Arg2:T7	
+R7	Contact Arg1:T1 Arg2:T5	
+R8	Coreference Arg1:T7 Arg2:T8	
+R9	Coreference Arg1:T5 Arg2:T6	
+R10	Part-Whole Arg1:T4 Arg2:T10	
+R11	Part-Whole Arg1:T1 Arg2:T10	

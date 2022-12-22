@@ -1,0 +1,10 @@
+T14	Parts 54 58	エンジン
+T15	Parts 33 42	タイミングチェーン
+T16	Parts 0 15	タイミングチェーンテンショナー
+T17	Parts 96 105	タイミングチェーン
+T1	Parts 16 22	張力調整機構
+R1	Coreference Arg1:T15 Arg2:T17	
+R2	Part-Whole Arg1:T1 Arg2:T16	
+R3	Contact Arg1:T16 Arg2:T15	
+R4	Part-Whole Arg1:T15 Arg2:T14	
+R5	Part-Whole Arg1:T16 Arg2:T14	

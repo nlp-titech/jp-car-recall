@@ -1,0 +1,18 @@
+T15	Parts 4 15	燃料噴射ポンプ駆動ギヤ
+T16	Parts 38 42	駆動ギヤ
+T17	Parts 49 51	ギヤ
+T18	Parts 104 111	燃料噴射ポンプ
+T1	Parts 0 3	原動機
+R1	Coreference Arg1:T15 Arg2:T16	
+R2	Coreference Arg1:T16 Arg2:T17	
+T2	Parts 61 64	カム軸
+T3	Parts 96 99	カム軸
+R3	Coreference Arg1:T2 Arg2:T3	
+T4	Parts 113 115	燃料
+T5	Parts 125 129	エンジン
+R4	Part-Whole Arg1:T15 Arg2:T1	
+R5	Contact Arg1:T2 Arg2:T17	
+R7	Contact Arg1:T4 Arg2:T18	
+R8	Coreference Arg1:T5 Arg2:T1	
+R9	Contact Arg1:T4 Arg2:T5	
+R6	Connect Arg1:T18 Arg2:T17	

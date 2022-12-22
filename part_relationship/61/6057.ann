@@ -1,0 +1,16 @@
+T1	Parts 112 118	ディスプレイ
+T2	Parts 20 25	防水シール
+T3	Parts 38 43	防水シール
+T4	Parts 92 96	運転者席
+T5	Parts 74 78	基板回路
+T6	Parts 0 11	直前直左確認装置カメラ
+T7	Parts 16 19	カメラ
+R1	Coreference Arg1:T6 Arg2:T7	
+R2	Part-Whole Arg1:T2 Arg2:T7	
+R3	Coreference Arg1:T2 Arg2:T3	
+T8	Parts 62 65	カメラ
+R5	Part-Whole Arg1:T5 Arg2:T8	
+T9	Parts 101 108	直前直左カメラ
+R7	Connect Arg1:T9 Arg2:T1	
+R4	Coreference Arg1:T7 Arg2:T8	
+R6	Coreference Arg1:T8 Arg2:T9	

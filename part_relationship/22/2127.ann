@@ -1,0 +1,9 @@
+T12	Parts 28 30	車両
+T13	Parts 54 56	車軸
+T14	Parts 104 106	車軸
+T1	Parts 0 16	大型貨物車（後前１軸駆動３軸車）
+T2	Parts 17 20	後後軸
+R1	Coreference Arg1:T13 Arg2:T2	
+R2	Coreference Arg1:T14 Arg2:T13	
+R3	Coreference Arg1:T12 Arg2:T1	
+R4	Part-Whole Arg1:T2 Arg2:T1	

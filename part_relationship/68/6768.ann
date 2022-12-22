@@ -1,0 +1,11 @@
+T1	Parts 0 20	年少者用補助乗車装置（チャイルドシート）
+T5	Parts 21 30	ベルトアジャスター
+T6	Parts 55 64	ベルトアジャスター
+T7	Parts 131 140	ベルトアジャスター
+T9	Parts 125 127	ネジ
+T10	Parts 83 90	タッピングネジ
+R1	Coreference Arg1:T5 Arg2:T6	
+R2	Coreference Arg1:T6 Arg2:T7	
+R3	Coreference Arg1:T10 Arg2:T9	
+R4	Part-Whole Arg1:T5 Arg2:T1	
+R5	Contact Arg1:T6 Arg2:T10	

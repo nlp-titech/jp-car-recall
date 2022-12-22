@@ -1,0 +1,11 @@
+T1	Parts 0 7	燃料フィルター
+T2	Parts 63 68	ガスケット
+T3	Parts 12 18	ドレンプラグ
+T4	Parts 47 53	ドレンプラグ
+T5	Parts 113 119	ドレンプラグ
+T7	Parts 135 137	燃料
+R1	Coreference Arg1:T4 Arg2:T3	
+R2	Coreference Arg1:T5 Arg2:T4	
+R3	Contact Arg1:T3 Arg2:T1	
+R4	Contact Arg1:T2 Arg2:T4	
+R5	Contact Arg1:T7 Arg2:T1	

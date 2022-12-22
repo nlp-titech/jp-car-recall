@@ -1,0 +1,8 @@
+T3	Parts 21 27	電気ハーネス
+T4	Parts 52 58	電気ハーネス
+T5	Parts 92 98	電気ハーネス
+T6	Parts 40 51	ステアリング・シャフト
+T7	Parts 0 14	ステアリング・コラム・カバー
+R1	Part-Whole Arg1:T3 Arg2:T7	
+R2	Coreference Arg1:T3 Arg2:T4	
+R3	Coreference Arg1:T4 Arg2:T5	

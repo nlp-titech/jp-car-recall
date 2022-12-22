@@ -1,0 +1,12 @@
+T1	Parts 14 33	ＤＰＦ（ディーゼル粒子状物質除去装置）
+T2	Parts 3 13	ディーゼルエンジン車
+T4	Parts 134 137	ＤＰＦ
+T5	Parts 108 111	排気管
+T6	Parts 148 151	排気管
+T7	Parts 162 164	車体
+R1	Coreference Arg1:T4 Arg2:T1	
+R2	Coreference Arg1:T6 Arg2:T5	
+R3	Part-Whole Arg1:T1 Arg2:T2	
+R4	Contact Arg1:T5 Arg2:T1	
+R5	Part-Whole Arg1:T5 Arg2:T2	
+R6	Part-Whole Arg1:T7 Arg2:T2	

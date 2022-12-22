@@ -1,0 +1,15 @@
+T1	Parts 0 4	室内配線
+T2	Parts 17 24	クラッチペダル
+T3	Parts 30 33	ペダル
+T4	Parts 38 40	配線
+T5	Parts 68 70	配線
+T6	Parts 77 81	ヒューズ
+T7	Parts 85 88	前照灯
+T8	Parts 91 95	灯火器類
+R1	Coreference Arg1:T5 Arg2:T4	
+R2	Coreference Arg1:T4 Arg2:T1	
+R3	Coreference Arg1:T3 Arg2:T2	
+R4	Contact Arg1:T5 Arg2:T6	
+R5	Oneway-Coreference Arg1:T8 Arg2:T7	
+R8	Contact Arg1:T5 Arg2:T8	
+R9	Contact Arg1:T5 Arg2:T7	

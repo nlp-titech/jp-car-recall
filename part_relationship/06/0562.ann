@@ -1,0 +1,11 @@
+T1	Parts 0 4	運転者席
+T2	Parts 6 9	助手席
+T3	Parts 10 15	座席ベルト
+T4	Parts 20 27	ベルトバックル
+T5	Parts 29 35	噛み合い金具
+T6	Parts 72 75	ベルト
+R1	Coreference Arg1:T6 Arg2:T3	
+R2	Part-Whole Arg1:T3 Arg2:T1	
+R3	Part-Whole Arg1:T3 Arg2:T2	
+R4	Part-Whole Arg1:T4 Arg2:T3	
+R5	Part-Whole Arg1:T5 Arg2:T4	

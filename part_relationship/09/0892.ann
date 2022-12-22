@@ -1,0 +1,7 @@
+T1	Parts 1 16	駐車ブレーキ用ソレノイドバルブ
+T3	Parts 38 46	ソレノイドコイル
+T4	Parts 52 55	コイル
+R1	Coreference Arg1:T4 Arg2:T3	
+T5	Parts 87 93	駐車ブレーキ
+R2	Part-Whole Arg1:T3 Arg2:T1	
+R3	Part-Whole Arg1:T1 Arg2:T5	

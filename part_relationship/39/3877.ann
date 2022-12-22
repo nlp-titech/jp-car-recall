@@ -1,0 +1,17 @@
+T1	Parts 21 27	エキスパンダ
+T3	Parts 28 32	ウェッジ
+T4	Parts 74 78	ウェッジ
+T5	Parts 96 100	ウェッジ
+T6	Parts 12 16	ブレーキ
+T7	Parts 0 8	大型中型トラック
+T8	Parts 105 107	車輪
+R1	Coreference Arg1:T4 Arg2:T3	
+R2	Coreference Arg1:T5 Arg2:T4	
+R3	Part-Whole Arg1:T1 Arg2:T6	
+R4	Connect Arg1:T8 Arg2:T6	
+R5	Part-Whole Arg1:T3 Arg2:T1	
+R6	Part-Whole Arg1:T6 Arg2:T7	
+R7	Part-Whole Arg1:T8 Arg2:T7	
+T2	Parts 9 11	バス
+R8	Part-Whole Arg1:T6 Arg2:T2	
+R9	Part-Whole Arg1:T8 Arg2:T2	

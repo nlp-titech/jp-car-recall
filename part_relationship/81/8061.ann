@@ -1,0 +1,14 @@
+T1	Parts 0 13	カーボン製プロペラシャフト
+T2	Parts 14 21	金属製フランジ
+T3	Parts 55 59	エンジン
+T4	Parts 63 71	プロペラシャフト
+T5	Parts 72 76	フランジ
+T6	Parts 84 88	エンジン
+T7	Parts 90 99	トランスミッション
+R2	Coreference Arg1:T4 Arg2:T1	
+R3	Coreference Arg1:T5 Arg2:T2	
+R4	Coreference Arg1:T3 Arg2:T6	
+R5	Connect Arg1:T7 Arg2:T6	
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R6	Connect Arg1:T4 Arg2:T3	
+R7	Connect Arg1:T4 Arg2:T7	

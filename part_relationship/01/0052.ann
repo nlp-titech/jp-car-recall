@@ -1,0 +1,31 @@
+T10	Parts 143 150	ブレーキホース
+T8	Parts 110 113	ホース
+T1	Parts 0 9	前輪ブレーキホース
+T2	Parts 13 21	スプリングコイル
+T3	Parts 31 33	車体
+T4	Parts 41 45	懸架装置
+T5	Parts 71 79	ブレーキキャリパ
+T6	Parts 94 99	ブラケット
+T7	Parts 164 169	ブレーキ液
+R4	Part-Whole Arg1:T5 Arg2:T12	
+R5	Contact Arg1:T6 Arg2:T1	
+R7	Coreference Arg1:T8 Arg2:T1	
+R1	Coreference Arg1:T8 Arg2:T10	
+R8	Contact Arg1:T7 Arg2:T10	
+T9	Parts 24 29	ブラケット
+T11	Parts 35 40	ブラケット
+T12	Parts 68 70	前輪
+T13	Parts 81 85	懸架装置
+T14	Parts 86 93	アッパーアーム
+R2	Contact Arg1:T11 Arg2:T3	
+R9	Part-Whole Arg1:T9 Arg2:T2	
+R3	Contact Arg1:T9 Arg2:T1	
+R11	Contact Arg1:T11 Arg2:T1	
+R12	Contact Arg1:T4 Arg2:T3	
+R6	Contact Arg1:T12 Arg2:T4	
+R13	Part-Whole Arg1:T14 Arg2:T13	
+R14	Part-Whole Arg1:T6 Arg2:T14	
+R10	Contact Arg1:T5 Arg2:T1	
+T15	Parts 46 57	ダブルウィッシュボーン
+R15	Oneway-Coreference Arg1:T4 Arg2:T15	
+#1	AnnotatorNotes T4	この文脈での車体は車全体ではなく、モノコックボディ部分のみと考え、懸架装置とはConnectと考えた。

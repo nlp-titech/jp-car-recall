@@ -1,0 +1,11 @@
+T1	Parts 0 13	ターボチャージャ（過給機）
+T2	Parts 72 78	オイルシール
+T4	Parts 50 58	タービンシャフト
+T7	Parts 83 86	潤滑油
+T8	Parts 87 90	排気管
+T9	Parts 14 21	冷却水配管継手
+R1	Contact Arg1:T1 Arg2:T9	
+R2	Part-Whole Arg1:T4 Arg2:T1	
+R3	Contact Arg1:T2 Arg2:T7	
+R4	Contact Arg1:T4 Arg2:T2	
+R5	Contact Arg1:T4 Arg2:T7	

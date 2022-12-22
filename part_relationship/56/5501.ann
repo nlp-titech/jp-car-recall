@@ -1,0 +1,10 @@
+T1	Parts 0 8	樹脂製燃料タンク
+T2	Parts 9 26	内圧調整用チェックバルブ（調整弁）
+T3	Parts 56 61	燃料タンク
+T4	Parts 101 106	燃料タンク
+T5	Parts 66 69	タイヤ
+T7	Parts 116 118	燃料
+R1	Coreference Arg1:T4 Arg2:T3	
+R2	Coreference Arg1:T3 Arg2:T1	
+R3	Part-Whole Arg1:T7 Arg2:T4	
+R4	Part-Whole Arg1:T2 Arg2:T1	

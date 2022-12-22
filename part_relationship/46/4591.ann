@@ -1,0 +1,14 @@
+T1	Parts 22 33	取付金具（ブラケット）
+T2	Parts 41 47	保護チューブ
+T3	Parts 0 3	原動機
+T4	Parts 6 10	電気配線
+T5	Parts 17 21	電気配線
+T6	Parts 82 86	電気配線
+R1	Coreference Arg1:T4 Arg2:T5	
+R2	Coreference Arg1:T5 Arg2:T6	
+R4	Contact Arg1:T5 Arg2:T1	
+R5	Contact Arg1:T5 Arg2:T2	
+R6	Contact Arg1:T1 Arg2:T2	
+R7	Part-Whole Arg1:T4 Arg2:T3	
+T7	Parts 87 89	被覆
+R3	Part-Whole Arg1:T7 Arg2:T6	

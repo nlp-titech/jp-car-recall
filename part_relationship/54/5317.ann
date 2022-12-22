@@ -1,0 +1,18 @@
+T1	Parts 14 20	車速センサー
+T2	Parts 21 25	Ｏリング
+T3	Parts 69 74	ギアオイル
+T4	Parts 92 95	オイル
+T5	Parts 30 34	スペーサ
+T6	Parts 52 56	センサー
+T7	Parts 99 107	ブレーキディスク
+T11	Parts 96 98	後輪
+T12	Parts 0 6	最終減速装置
+R1	Contact Arg1:T1 Arg2:T12	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T5 Arg2:T1	
+R4	Coreference Arg1:T3 Arg2:T4	
+R6	Coreference Arg1:T1 Arg2:T6	
+R8	Connect Arg1:T12 Arg2:T11	
+R7	Contact Arg1:T12 Arg2:T3	
+R9	Contact Arg1:T2 Arg2:T5	
+R5	Contact Arg1:T11 Arg2:T7	

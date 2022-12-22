@@ -1,0 +1,9 @@
+T1	Parts 15 21	スプロケット
+T2	Parts 39 45	スプロケット
+T3	Parts 77 83	スプロケット
+T4	Parts 0 6	動力伝達装置
+T6	Parts 11 13	後輪
+R1	Coreference Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T3 Arg2:T2	
+R3	Contact Arg1:T1 Arg2:T6	
+R4	Part-Whole Arg1:T1 Arg2:T4	

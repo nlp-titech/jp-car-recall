@@ -1,0 +1,12 @@
+T1	Parts 0 7	ハイブリッド車
+T2	Parts 23 31	制御コンピュータ
+T3	Parts 49 53	エンジン
+T4	Parts 18 22	エンジン
+T5	Parts 83 90	エンジン警告灯
+T6	Parts 125 129	バッテリ
+R1	Part-Whole Arg1:T4 Arg2:T1	
+R2	Coreference Arg1:T4 Arg2:T3	
+R3	Part-Whole Arg1:T2 Arg2:T4	
+R4	Connect Arg1:T4 Arg2:T5	
+R5	Part-Whole Arg1:T6 Arg2:T1	
+R6	Connect Arg1:T4 Arg2:T6	

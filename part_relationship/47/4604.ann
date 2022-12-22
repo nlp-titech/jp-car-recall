@@ -1,0 +1,7 @@
+T1	Parts 0 12	一酸化炭素等発散防止装置
+T2	Parts 17 26	排気ガス再循環装置
+T4	Parts 27 30	作動弁
+T5	Parts 62 65	作動弁
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T4 Arg2:T2	
+R3	Coreference Arg1:T4 Arg2:T5	

@@ -1,0 +1,17 @@
+T1	Parts 0 2	バス
+T2	Parts 3 13	統合制御コントローラ
+T3	Parts 28 35	制御プログラム
+T4	Parts 43 44	扉
+T5	Parts 49 56	アクセルペダル
+T6	Parts 83 84	扉
+T7	Parts 18 27	扉挟み込み防止機能
+T8	Parts 63 72	扉挟み込み防止機能
+R1	Coreference Arg1:T7 Arg2:T8	
+R2	Coreference Arg1:T4 Arg2:T6	
+R3	Part-Whole Arg1:T3 Arg2:T2	
+R4	Connect Arg1:T7 Arg2:T3	
+R5	Part-Whole Arg1:T2 Arg2:T1	
+R6	Part-Whole Arg1:T7 Arg2:T1	
+R7	Part-Whole Arg1:T4 Arg2:T1	
+R8	Part-Whole Arg1:T5 Arg2:T1	
+R9	Connect Arg1:T8 Arg2:T6	

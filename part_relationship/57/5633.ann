@@ -1,0 +1,7 @@
+T1	Parts 0 14	ＡＢＳコントロール・ユニット
+T2	Parts 28 32	ユニット
+T3	Parts 54 58	ユニット
+T5	Parts 67 70	ＡＢＳ
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Coreference Arg1:T2 Arg2:T3	
+R3	Connect Arg1:T3 Arg2:T5	

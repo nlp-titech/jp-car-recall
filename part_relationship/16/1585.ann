@@ -1,0 +1,11 @@
+T1	Parts 0 5	小型貨物車
+T2	Parts 27 29	車両
+T3	Parts 30 36	第２列外側席
+T4	Parts 37 42	座席ベルト
+T5	Parts 47 60	第２種座席ベルト（３点式）
+T6	Parts 72 85	第一種座席ベルト（２点式）
+R1	Oneway-Coreference Arg1:T4 Arg2:T5	
+R2	Oneway-Coreference Arg1:T4 Arg2:T6	
+R3	Part-Whole Arg1:T4 Arg2:T3	
+R4	Part-Whole Arg1:T3 Arg2:T2	
+R5	Coreference Arg1:T2 Arg2:T1	

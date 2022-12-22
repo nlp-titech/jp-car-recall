@@ -1,0 +1,10 @@
+T1	Parts 92 100	助手席エアバッグ
+T2	Parts 0 7	エアバッグ装置
+T4	Parts 8 19	助手席乗員検知システム
+T7	Parts 70 73	助手席
+T6	Parts 24 27	助手席
+R1	Coreference Arg1:T7 Arg2:T6	
+R3	Oneway-Coreference Arg1:T2 Arg2:T1	
+R4	Connect Arg1:T4 Arg2:T1	
+R2	Connect Arg1:T4 Arg2:T6	
+R5	Part-Whole Arg1:T4 Arg2:T2	

@@ -1,0 +1,21 @@
+T19	Parts 18 24	樹脂製ボデー
+T22	Parts 58 63	オーリング
+T23	Parts 86 91	オーリング
+T24	Parts 93 96	センサ
+T26	Parts 133 136	センサ
+T1	Parts 0 4	エンジン
+T2	Parts 5 13	クランク角センサ
+T5	Parts 98 105	エンジンオイル
+T6	Parts 129 132	オイル
+R1	Coreference Arg1:T22 Arg2:T23	
+R2	Coreference Arg1:T24 Arg2:T26	
+R3	Coreference Arg1:T5 Arg2:T6	
+T8	Parts 185 189	エンジン
+R5	Coreference Arg1:T1 Arg2:T8	
+R6	Coreference Arg1:T2 Arg2:T24	
+R7	Part-Whole Arg1:T2 Arg2:T1	
+R13	Contact Arg1:T5 Arg2:T1	
+R8	Part-Whole Arg1:T19 Arg2:T2	
+R4	Contact Arg1:T19 Arg2:T22	
+T3	Parts 35 37	配線
+R9	Contact Arg1:T2 Arg2:T3	

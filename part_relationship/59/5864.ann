@@ -1,0 +1,8 @@
+T1	Parts 15 21	操作スイッチ
+T2	Parts 9 14	方向指示器
+T3	Parts 23 27	ハンドル
+T4	Parts 0 3	計器盤
+T5	Parts 4 7	前照灯
+R1	Part-Whole Arg1:T1 Arg2:T4	
+R2	Connect Arg1:T5 Arg2:T1	
+R3	Connect Arg1:T2 Arg2:T1	

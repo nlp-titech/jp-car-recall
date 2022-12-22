@@ -1,0 +1,16 @@
+T18	Parts 18 23	バッテリー
+T19	Parts 45 50	バッテリー
+T20	Parts 56 62	バッテリー液
+T21	Parts 71 77	バッテリー液
+T23	Parts 101 104	パイプ
+T1	Parts 0 5	バッテリー
+R1	Coreference Arg1:T18 Arg2:T1	
+R2	Coreference Arg1:T19 Arg2:T18	
+R3	Coreference Arg1:T21 Arg2:T20	
+T3	Parts 109 114	ブレーキ液
+R7	Part-Whole Arg1:T20 Arg2:T19	
+T4	Parts 87 94	ブレーキパイプ
+R4	Coreference Arg1:T23 Arg2:T4	
+T2	Parts 82 85	左前輪
+R5	Contact Arg1:T3 Arg2:T23	
+R6	Connect Arg1:T4 Arg2:T2	

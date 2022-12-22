@@ -1,0 +1,31 @@
+T1	Parts 47 59	ラジアスロッドブラケット
+T2	Parts 0 14	後２軸式リーフサスペンション
+T3	Parts 74 81	ラジアスロッド
+T4	Parts 183 194	ラジアスロッド締結部品
+T5	Parts 28 39	トラニオンクロスメンバ
+T6	Parts 86 92	クロスメンバ
+T7	Parts 97 103	クロスメンバ
+T8	Parts 159 165	クロスメンバ
+T9	Parts 195 201	クロスメンバ
+T10	Parts 17 23	大型トラック
+T12	Parts 113 116	ボルト
+T13	Parts 146 149	ボルト
+T15	Parts 104 107	補強板
+T16	Parts 166 169	補強板
+R1	Contact Arg1:T1 Arg2:T5	
+R2	Coreference Arg1:T6 Arg2:T5	
+R3	Contact Arg1:T3 Arg2:T1	
+R5	Contact Arg1:T15 Arg2:T7	
+R6	Contact Arg1:T15 Arg2:T1	
+R8	Contact Arg1:T12 Arg2:T15	
+R9	Contact Arg1:T12 Arg2:T7	
+R10	Coreference Arg1:T13 Arg2:T12	
+R11	Coreference Arg1:T7 Arg2:T6	
+R12	Coreference Arg1:T16 Arg2:T15	
+R13	Coreference Arg1:T8 Arg2:T7	
+R15	Coreference Arg1:T9 Arg2:T8	
+R17	Part-Whole Arg1:T2 Arg2:T10	
+R18	Part-Whole Arg1:T5 Arg2:T10	
+R19	Part-Whole Arg1:T1 Arg2:T10	
+R20	Part-Whole Arg1:T3 Arg2:T10	
+R21	Part-Whole Arg1:T15 Arg2:T10	

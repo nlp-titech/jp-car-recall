@@ -1,0 +1,17 @@
+T16	Parts 19 33	ベアリングリテーナープレート
+T20	Parts 107 115	リダクションギヤ
+T22	Parts 123 131	ミッションケース
+T23	Parts 0 6	動力伝達装置
+T1	Parts 11 16	自動変速機
+T2	Parts 38 41	ボルト
+T3	Parts 78 81	ボルト
+T4	Parts 99 102	ボルト
+T5	Parts 137 140	オイル
+R1	Coreference Arg1:T3 Arg2:T4	
+R2	Coreference Arg1:T3 Arg2:T2	
+R3	Part-Whole Arg1:T1 Arg2:T23	
+R4	Part-Whole Arg1:T16 Arg2:T1	
+R5	Contact Arg1:T2 Arg2:T16	
+R7	Contact Arg1:T22 Arg2:T5	
+R6	Part-Whole Arg1:T20 Arg2:T1	
+R8	Part-Whole Arg1:T22 Arg2:T1	

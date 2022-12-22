@@ -1,0 +1,9 @@
+T1	Parts 8 17	吸排気マニホールド
+T2	Parts 37 43	マニホールド
+T3	Parts 84 90	マニホールド
+T4	Parts 28 34	第３シリンダ
+T5	Parts 0 3	原動機
+R1	Coreference Arg1:T3 Arg2:T2	
+R2	Coreference Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T1 Arg2:T5	
+R4	Part-Whole Arg1:T4 Arg2:T5	

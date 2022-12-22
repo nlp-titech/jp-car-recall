@@ -1,0 +1,11 @@
+T1	Parts 9 13	ブレード
+T2	Parts 0 4	窓拭き器
+T3	Parts 82 86	窓拭き器
+T4	Parts 27 31	電気基板
+T7	Parts 19 22	モータ
+R1	Coreference Arg1:T3 Arg2:T2	
+R2	Part-Whole Arg1:T1 Arg2:T2	
+R3	Part-Whole Arg1:T7 Arg2:T2	
+R4	Part-Whole Arg1:T4 Arg2:T2	
+R5	Connect Arg1:T4 Arg2:T7	
+R6	Connect Arg1:T7 Arg2:T1	

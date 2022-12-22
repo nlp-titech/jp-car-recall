@@ -1,0 +1,16 @@
+T2	Parts 151 160	ＡＴセレクトレバー
+T3	Parts 198 204	駐車ブレーキ
+T4	Parts 118 131	キーインタロックソレノイド
+T5	Parts 0 33	キーインタロック機構（ＡＴのＰポジション以外でキーが抜けない機構）
+T6	Parts 98 103	燃料ポンプ
+T7	Parts 38 69	統合ユニット（ＩＣＵ：インテグレーテッドコントロールユニット）
+T15	Parts 177 179	キー
+T16	Parts 188 190	キー
+T19	Parts 219 221	車両
+R2	Part-Whole Arg1:T7 Arg2:T5	
+R4	Contact Arg1:T15 Arg2:T5	
+R5	Connect Arg1:T5 Arg2:T4	
+R6	Connect Arg1:T2 Arg2:T5	
+R7	Coreference Arg1:T15 Arg2:T16	
+R8	Part-Whole Arg1:T3 Arg2:T19	
+R9	Part-Whole Arg1:T5 Arg2:T19	

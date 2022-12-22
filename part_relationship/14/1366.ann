@@ -1,0 +1,12 @@
+T12	Parts 74 78	ブースタ
+T13	Parts 12 32	エアオーバハイドロリックブースタ取付金具
+T14	Parts 45 47	車体
+T1	Parts 0 7	前軸用ブレーキ
+T4	Parts 93 97	エア配管
+T5	Parts 100 105	オイル配管
+R1	Contact Arg1:T4 Arg2:T12	
+R2	Contact Arg1:T5 Arg2:T12	
+R3	Contact Arg1:T14 Arg2:T13	
+R4	Contact Arg1:T12 Arg2:T13	
+R5	Contact Arg1:T12 Arg2:T14	
+R7	Part-Whole Arg1:T13 Arg2:T1	

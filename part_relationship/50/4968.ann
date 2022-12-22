@@ -1,0 +1,12 @@
+T1	Parts 15 20	燃料コック
+T2	Parts 9 14	燃料タンク
+T3	Parts 0 4	燃料装置
+T4	Parts 26 31	締付バンド
+T7	Parts 57 59	燃料
+R1	Contact Arg1:T4 Arg2:T1	
+R2	Contact Arg1:T4 Arg2:T2	
+R3	Contact Arg1:T1 Arg2:T2	
+R4	Part-Whole Arg1:T2 Arg2:T3	
+R5	Part-Whole Arg1:T1 Arg2:T3	
+R6	Part-Whole Arg1:T7 Arg2:T2	
+R7	Contact Arg1:T7 Arg2:T1	

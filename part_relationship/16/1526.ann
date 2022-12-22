@@ -1,0 +1,14 @@
+T16	Parts 4 9	冷却ファン
+T17	Parts 47 50	ファン
+T1	Parts 0 3	原動機
+R1	Coreference Arg1:T17 Arg2:T16	
+T2	Parts 67 72	ラジエータ
+T3	Parts 88 93	ラジエータ
+R3	Coreference Arg1:T3 Arg2:T2	
+T4	Parts 97 100	冷却水
+R6	Connect Arg1:T2 Arg2:T1	
+R7	Contact Arg1:T4 Arg2:T3	
+T5	Parts 104 107	冷却水
+R8	Coreference Arg1:T4 Arg2:T5	
+R2	Connect Arg1:T17 Arg2:T2	
+R4	Connect Arg1:T1 Arg2:T16	

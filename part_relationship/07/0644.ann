@@ -1,0 +1,20 @@
+T19	Parts 103 112	センターベアリング
+T20	Parts 17 26	センターベアリング
+T21	Parts 113 117	ホルダー
+T23	Parts 134 147	センターベアリングホルダー
+T16	Parts 27 30	ラバー
+T17	Parts 81 84	ラバー
+T1	Parts 0 13	推進軸（プロペラシャフト）
+T2	Parts 52 56	エンジン
+T3	Parts 58 67	トランスミッション
+R1	Coreference Arg1:T19 Arg2:T20	
+R2	Coreference Arg1:T17 Arg2:T16	
+R3	Coreference Arg1:T23 Arg2:T21	
+T4	Parts 151 159	プロペラシャフト
+R4	Coreference Arg1:T4 Arg2:T1	
+R5	Contact Arg1:T20 Arg2:T1	
+R6	Part-Whole Arg1:T16 Arg2:T20	
+T5	Parts 41 43	車両
+R7	Part-Whole Arg1:T2 Arg2:T5	
+R8	Part-Whole Arg1:T3 Arg2:T5	
+R9	Part-Whole Arg1:T21 Arg2:T19	

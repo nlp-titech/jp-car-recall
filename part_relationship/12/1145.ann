@@ -1,0 +1,17 @@
+T14	Parts 37 39	ドア
+T17	Parts 11 18	ドア開閉レバー
+T18	Parts 47 50	レバー
+T19	Parts 57 60	ラッチ
+T20	Parts 93 96	ラッチ
+T21	Parts 97 102	ストライカ
+T22	Parts 117 119	ドア
+T1	Parts 0 10	リヤドア外側ハンドル
+R1	Coreference Arg1:T17 Arg2:T18	
+R2	Coreference Arg1:T19 Arg2:T20	
+R3	Coreference Arg1:T14 Arg2:T22	
+R4	Part-Whole Arg1:T17 Arg2:T1	
+R6	Part-Whole Arg1:T1 Arg2:T14	
+R7	Part-Whole Arg1:T19 Arg2:T14	
+R8	Part-Whole Arg1:T21 Arg2:T14	
+R5	Contact Arg1:T20 Arg2:T21	
+R9	Connect Arg1:T18 Arg2:T19	

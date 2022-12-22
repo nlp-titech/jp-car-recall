@@ -1,0 +1,10 @@
+T18	Parts 120 128	プロペラシャフト
+T20	Parts 15 18	パイプ
+T21	Parts 19 27	スプライシャフト
+T22	Parts 51 59	プロペラシャフト
+T1	Parts 0 10	リヤプロペラシャフト
+R3	Contact Arg1:T20 Arg2:T21	
+R6	Part-Whole Arg1:T20 Arg2:T1	
+R7	Coreference Arg1:T1 Arg2:T22	
+R1	Coreference Arg1:T22 Arg2:T18	
+R2	Part-Whole Arg1:T21 Arg2:T1	

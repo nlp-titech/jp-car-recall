@@ -1,0 +1,5 @@
+T1	Parts 0 5	変速ペダル
+T2	Parts 15 20	変速ペダル
+T3	Parts 58 63	変速ペダル
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Coreference Arg1:T2 Arg2:T3	

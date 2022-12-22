@@ -1,0 +1,17 @@
+T1	Parts 33 43	コネクティングロッド
+T2	Parts 12 19	ブレーキペダル
+T3	Parts 119 126	ブレーキペダル
+T7	Parts 44 48	固定ピン
+T8	Parts 110 114	固定ピン
+T9	Parts 1 7	右ハンドル車
+T10	Parts 20 27	マスターバック
+R2	Coreference Arg1:T8 Arg2:T7	
+R3	Coreference Arg1:T3 Arg2:T2	
+R4	Contact Arg1:T1 Arg2:T10	
+R5	Contact Arg1:T1 Arg2:T2	
+R6	Contact Arg1:T10 Arg2:T2	
+R7	Contact Arg1:T7 Arg2:T1	
+R1	Part-Whole Arg1:T2 Arg2:T9	
+R8	Part-Whole Arg1:T10 Arg2:T9	
+R9	Part-Whole Arg1:T1 Arg2:T9	
+R10	Part-Whole Arg1:T7 Arg2:T9	

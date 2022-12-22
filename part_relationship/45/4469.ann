@@ -1,0 +1,14 @@
+T1	Parts 0 12	ステアリングギアボックス
+T2	Parts 73 79	ギアボックス
+T4	Parts 91 95	ハンドル
+T5	Parts 23 26	ボルト
+T6	Parts 60 63	ボルト
+T7	Parts 16 18	車体
+T8	Parts 83 85	車体
+R1	Coreference Arg1:T5 Arg2:T6	
+R2	Coreference Arg1:T1 Arg2:T2	
+R3	Coreference Arg1:T7 Arg2:T8	
+R4	Contact Arg1:T1 Arg2:T5	
+R5	Contact Arg1:T7 Arg2:T5	
+R6	Contact Arg1:T1 Arg2:T7	
+R7	Connect Arg1:T2 Arg2:T4	

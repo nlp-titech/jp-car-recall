@@ -1,0 +1,17 @@
+T1	Parts 92 99	前面方向指示器
+T4	Parts 100 104	窓ふき器
+T5	Parts 88 91	前照灯
+T2	Parts 18 29	車両前部ＳＡＭユニット
+T3	Parts 33 37	集積回路
+R1	Part-Whole Arg1:T3 Arg2:T2	
+R4	Connect Arg1:T2 Arg2:T5	
+R5	Connect Arg1:T2 Arg2:T1	
+R6	Connect Arg1:T2 Arg2:T4	
+T6	Parts 2 5	電装品
+R3	Oneway-Coreference Arg1:T6 Arg2:T5	
+R7	Oneway-Coreference Arg1:T6 Arg2:T1	
+R8	Oneway-Coreference Arg1:T6 Arg2:T4	
+T7	Parts 42 44	半田
+T8	Parts 66 68	半田
+R2	Coreference Arg1:T7 Arg2:T8	
+R9	Part-Whole Arg1:T7 Arg2:T3	

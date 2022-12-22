@@ -1,0 +1,15 @@
+T3	Parts 165 171	ステアリング
+T6	Parts 184 189	バッテリー
+T10	Parts 57 62	ベアリング
+T11	Parts 0 4	エンジン
+T13	Parts 150 153	ベルト
+T14	Parts 157 160	警告灯
+T1	Parts 5 22	補機駆動ベルト用オートテンショナー
+T2	Parts 47 56	オートテンショナー
+R1	Part-Whole Arg1:T1 Arg2:T11	
+R3	Coreference Arg1:T1 Arg2:T2	
+R5	Part-Whole Arg1:T10 Arg2:T2	
+R7	Connect Arg1:T11 Arg2:T14	
+R6	Contact Arg1:T2 Arg2:T13	
+R2	Connect Arg1:T13 Arg2:T3	
+R4	Connect Arg1:T13 Arg2:T6	

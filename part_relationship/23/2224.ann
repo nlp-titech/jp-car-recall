@@ -1,0 +1,14 @@
+T8	Parts 19 36	前輪操舵角測定用ポテンションメータ
+T9	Parts 37 41	ハーネス
+T10	Parts 63 67	ハーネス
+T1	Parts 0 8	農業用薬剤散布車
+T2	Parts 9 14	かじ取装置
+R1	Coreference Arg1:T10 Arg2:T9	
+T4	Parts 89 91	後輪
+T5	Parts 106 108	車両
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T8 Arg2:T2	
+R4	Connect Arg1:T9 Arg2:T8	
+R7	Coreference Arg1:T5 Arg2:T1	
+R5	Part-Whole Arg1:T4 Arg2:T5	
+R6	Connect Arg1:T4 Arg2:T2	

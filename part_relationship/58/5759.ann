@@ -1,0 +1,12 @@
+T1	Parts 29 41	ヘッドライト洗浄用ポンプ
+T3	Parts 60 63	センサ
+T6	Parts 0 5	洗浄液容器
+T7	Parts 15 24	洗浄液レベルセンサ
+T8	Parts 83 86	洗浄液
+T10	Parts 109 112	洗浄液
+R1	Coreference Arg1:T7 Arg2:T3	
+R2	Coreference Arg1:T8 Arg2:T10	
+R3	Part-Whole Arg1:T8 Arg2:T6	
+R4	Contact Arg1:T6 Arg2:T7	
+R5	Contact Arg1:T1 Arg2:T8	
+R6	Contact Arg1:T6 Arg2:T1	

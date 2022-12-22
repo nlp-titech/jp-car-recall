@@ -1,0 +1,11 @@
+T1	Parts 45 51	ステアリング
+T3	Parts 28 32	エンジン
+T4	Parts 64 68	エンジン
+T5	Parts 88 92	エンジン
+T6	Parts 79 83	ユニット
+T7	Parts 0 13	ボディー電装品制御ユニット
+R2	Coreference Arg1:T7 Arg2:T6	
+R3	Coreference Arg1:T3 Arg2:T4	
+R4	Coreference Arg1:T4 Arg2:T5	
+R5	Connect Arg1:T7 Arg2:T1	
+R6	Connect Arg1:T7 Arg2:T3	

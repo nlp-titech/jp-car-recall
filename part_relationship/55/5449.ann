@@ -1,0 +1,8 @@
+T4	Parts 74 79	方向指示器
+T1	Parts 0 7	側面方向指示器
+T2	Parts 29 37	点滅制御ユニット
+T3	Parts 61 69	点滅制御ユニット
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Connect Arg1:T1 Arg2:T2	
+R3	Coreference Arg1:T1 Arg2:T4	
+#1	AnnotatorNotes T1	この場合の「電源」は電源装置ではなく電力と判断

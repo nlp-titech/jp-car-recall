@@ -1,0 +1,9 @@
+T2	Parts 24 53	スプリングシート（車軸の上に取付けられたスプリング用台座）
+T3	Parts 66 68	車軸
+T4	Parts 81 83	車軸
+T5	Parts 114 116	車軸
+R1	Coreference Arg1:T5 Arg2:T4	
+R2	Coreference Arg1:T4 Arg2:T3	
+T1	Parts 0 19	エアーサスペンション装着セミ・トレーラ
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Contact Arg1:T3 Arg2:T2	

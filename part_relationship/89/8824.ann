@@ -1,0 +1,15 @@
+T1	Parts 0 6	中型トラック
+T2	Parts 8 10	バス
+T3	Parts 11 17	燃料噴射装置
+T4	Parts 22 33	インジェクタ取付ボルト
+T5	Parts 49 60	インジェクタガスケット
+T6	Parts 91 102	インジェクタ取付ボルト
+T7	Parts 117 120	ボルト
+T8	Parts 125 129	エンジン
+R1	Part-Whole Arg1:T8 Arg2:T1	
+R2	Part-Whole Arg1:T8 Arg2:T2	
+R3	Part-Whole Arg1:T3 Arg2:T8	
+R4	Coreference Arg1:T4 Arg2:T6	
+R5	Part-Whole Arg1:T5 Arg2:T3	
+R6	Contact Arg1:T4 Arg2:T5	
+R7	Coreference Arg1:T6 Arg2:T7	

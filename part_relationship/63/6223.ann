@@ -1,0 +1,9 @@
+T2	Parts 29 36	制御プログラム
+T3	Parts 44 48	エンジン
+T4	Parts 98 102	エンジン
+T1	Parts 0 24	アンチロックブレーキシステム（ＡＢＳ）モジュール
+R1	Part-Whole Arg1:T2 Arg2:T1	
+T5	Parts 52 74	ダイナミックスタビリティコントロールシステム
+R2	Coreference Arg1:T3 Arg2:T4	
+R3	Connect Arg1:T1 Arg2:T3	
+R4	Connect Arg1:T1 Arg2:T5	

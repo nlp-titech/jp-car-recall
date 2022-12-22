@@ -1,0 +1,12 @@
+T2	Parts 65 69	電気基板
+T4	Parts 0 3	車幅灯
+T5	Parts 52 64	車幅灯（発光ダイオード）
+T6	Parts 85 88	車幅灯
+T7	Parts 7 10	前照灯
+T8	Parts 15 23	灯火器裏側カバー
+R1	Coreference Arg1:T4 Arg2:T5	
+R2	Coreference Arg1:T5 Arg2:T6	
+R3	Contact Arg1:T4 Arg2:T7	
+R4	Contact Arg1:T7 Arg2:T8	
+R5	Contact Arg1:T4 Arg2:T8	
+R6	Part-Whole Arg1:T2 Arg2:T5	

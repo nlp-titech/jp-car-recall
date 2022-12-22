@@ -1,0 +1,17 @@
+T1	Parts 129 137	ドライブチェーン
+T3	Parts 140 145	後輪タイヤ
+T7	Parts 119 123	スタンド
+T9	Parts 85 88	ボルト
+T10	Parts 8 10	車枠
+T4	Parts 0 7	センタスタンド
+T2	Parts 17 31	ピボットボルト用ロックナット
+T5	Parts 61 68	センタスタンド
+R1	Coreference Arg1:T4 Arg2:T5	
+T6	Parts 103 110	センタスタンド
+R2	Coreference Arg1:T5 Arg2:T6	
+R3	Coreference Arg1:T6 Arg2:T7	
+R4	Contact Arg1:T4 Arg2:T10	
+R5	Contact Arg1:T10 Arg2:T2	
+R6	Contact Arg1:T4 Arg2:T2	
+R7	Contact Arg1:T5 Arg2:T9	
+R8	Contact Arg1:T2 Arg2:T9	

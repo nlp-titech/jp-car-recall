@@ -1,0 +1,8 @@
+T1	Parts 27 38	ナビゲーションユニット
+T2	Parts 0 11	メーターパネルユニット
+T3	Parts 58 65	メーターパネル
+T4	Parts 12 19	制御プログラム
+T7	Parts 74 77	速度計
+R1	Part-Whole Arg1:T3 Arg2:T2	
+R2	Connect Arg1:T2 Arg2:T4	
+R3	Part-Whole Arg1:T7 Arg2:T3	

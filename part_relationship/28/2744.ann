@@ -1,0 +1,13 @@
+T12	Parts 104 107	変速機
+T13	Parts 26 33	シールキャップ
+T14	Parts 44 51	シールキャップ
+T1	Parts 2 5	変速機
+T2	Parts 6 14	プロペラシャフト
+T3	Parts 15 21	カップリング
+R1	Coreference Arg1:T14 Arg2:T13	
+T4	Parts 82 94	トランスミッションオイル
+R2	Coreference Arg1:T12 Arg2:T1	
+R3	Contact Arg1:T1 Arg2:T2	
+R4	Contact Arg1:T2 Arg2:T3	
+R5	Part-Whole Arg1:T13 Arg2:T3	
+R6	Part-Whole Arg1:T4 Arg2:T12	

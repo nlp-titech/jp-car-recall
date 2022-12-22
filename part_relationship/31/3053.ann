@@ -1,0 +1,31 @@
+T1	Parts 3 8	電気自動車
+T2	Parts 9 14	駆動用電池
+T3	Parts 58 62	電池セル
+T4	Parts 68 72	電池セル
+T5	Parts 77 82	エレメント
+T6	Parts 86 91	エレメント
+T7	Parts 92 97	セパレータ
+R1	Coreference Arg1:T5 Arg2:T6	
+T8	Parts 110 115	エレメント
+R2	Coreference Arg1:T6 Arg2:T8	
+T9	Parts 116 119	集電体
+T10	Parts 148 152	電池セル
+T11	Parts 179 188	ＥＶシステム警告灯
+T12	Parts 206 210	電池セル
+R4	Coreference Arg1:T10 Arg2:T12	
+T14	Parts 262 277	電池セル内部部品（エレメント）
+R5	Coreference Arg1:T14 Arg2:T8	
+T15	Parts 345 354	ＥＶシステム警告灯
+R6	Coreference Arg1:T11 Arg2:T15	
+R7	Part-Whole Arg1:T2 Arg2:T1	
+R8	Part-Whole Arg1:T3 Arg2:T2	
+R3	Coreference Arg1:T3 Arg2:T4	
+R9	Coreference Arg1:T4 Arg2:T10	
+R10	Part-Whole Arg1:T5 Arg2:T4	
+R11	Part-Whole Arg1:T7 Arg2:T4	
+R12	Part-Whole Arg1:T7 Arg2:T6	
+R13	Part-Whole Arg1:T9 Arg2:T4	
+R14	Connect Arg1:T11 Arg2:T2	
+R15	Part-Whole Arg1:T11 Arg2:T1	
+T13	Parts 299 301	正極
+R16	Part-Whole Arg1:T13 Arg2:T12	

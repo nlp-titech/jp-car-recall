@@ -1,0 +1,29 @@
+T19	Parts 127 135	ナイロンチューブ
+T20	Parts 146 154	ナイロンチューブ
+T1	Parts 0 4	電気装置
+T2	Parts 9 17	右サイドフレーム
+T7	Parts 75 79	クリップ
+T9	Parts 108 110	配線
+T5	Parts 50 52	配線
+R3	Coreference Arg1:T9 Arg2:T5	
+R4	Coreference Arg1:T20 Arg2:T19	
+T11	Parts 156 159	エアー
+T13	Parts 186 199	スプリングブレーキ安全装置
+T3	Parts 19 26	バッテリー配線
+R6	Part-Whole Arg1:T3 Arg2:T2	
+R7	Coreference Arg1:T5 Arg2:T3	
+T4	Parts 53 68	ブレーキ制御用ナイロンチューブ
+R1	Contact Arg1:T4 Arg2:T7	
+R8	Coreference Arg1:T4 Arg2:T19	
+R10	Contact Arg1:T11 Arg2:T20	
+T6	Parts 163 166	エアー
+T8	Parts 257 260	対象車
+R5	Coreference Arg1:T11 Arg2:T6	
+R12	Part-Whole Arg1:T1 Arg2:T8	
+R2	Part-Whole Arg1:T2 Arg2:T8	
+R13	Part-Whole Arg1:T3 Arg2:T1	
+R14	Part-Whole Arg1:T4 Arg2:T8	
+R15	Part-Whole Arg1:T7 Arg2:T8	
+T12	Parts 123 125	配線
+R16	Coreference Arg1:T9 Arg2:T12	
+R18	Part-Whole Arg1:T13 Arg2:T8	

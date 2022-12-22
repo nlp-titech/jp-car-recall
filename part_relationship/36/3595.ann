@@ -1,0 +1,5 @@
+T1	Parts 0 8	ワイパースイッチ
+T2	Parts 100 104	ワイパー
+T3	Parts 27 30	グリス
+R1	Contact Arg1:T3 Arg2:T1	
+R2	Connect Arg1:T2 Arg2:T1	

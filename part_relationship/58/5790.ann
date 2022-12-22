@@ -1,0 +1,19 @@
+T1	Parts 54 58	スペーサ
+T3	Parts 8 15	トップボックス
+T4	Parts 120 127	トップボックス
+T5	Parts 35 37	歯車
+T6	Parts 44 46	歯車
+T7	Parts 82 84	歯車
+T8	Parts 23 25	車体
+T9	Parts 128 130	車体
+T2	Parts 29 33	ハンドル
+R1	Coreference Arg1:T3 Arg2:T4	
+R2	Coreference Arg1:T8 Arg2:T9	
+R3	Contact Arg1:T3 Arg2:T2	
+R4	Part-Whole Arg1:T5 Arg2:T2	
+R5	Contact Arg1:T8 Arg2:T2	
+R6	Connect Arg1:T3 Arg2:T8	
+R7	Coreference Arg1:T5 Arg2:T6	
+R8	Coreference Arg1:T6 Arg2:T7	
+R9	Contact Arg1:T6 Arg2:T1	
+R10	Part-Whole Arg1:T1 Arg2:T2	

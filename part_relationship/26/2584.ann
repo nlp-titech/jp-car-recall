@@ -1,0 +1,34 @@
+T22	Parts 16 33	燃料揺動抑止板（バッフルプレート）
+T23	Parts 159 167	バッフルプレート
+T33	Parts 168 173	燃料ポンプ
+T35	Parts 183 187	ヒューズ
+T36	Parts 191 196	燃料ポンプ
+T37	Parts 239 247	バッフルプレート
+T39	Parts 260 267	燃料残量測定器
+T41	Parts 252 257	燃料タンク
+T43	Parts 10 15	燃料タンク
+T1	Parts 0 5	燃料タンク
+T3	Parts 51 53	燃料
+T4	Parts 118 120	燃料
+R1	Coreference Arg1:T4 Arg2:T3	
+T5	Parts 149 154	前輪駆動車
+R2	Coreference Arg1:T43 Arg2:T1	
+R3	Coreference Arg1:T36 Arg2:T33	
+T6	Parts 229 234	全輪駆動車
+T7	Parts 272 275	燃料計
+T8	Parts 284 286	燃料
+R4	Coreference Arg1:T8 Arg2:T4	
+R5	Coreference Arg1:T37 Arg2:T23	
+R6	Coreference Arg1:T23 Arg2:T22	
+R7	Coreference Arg1:T41 Arg2:T43	
+R8	Contact Arg1:T43 Arg2:T22	
+R9	Part-Whole Arg1:T3 Arg2:T43	
+R10	Part-Whole Arg1:T43 Arg2:T5	
+R11	Part-Whole Arg1:T41 Arg2:T6	
+R13	Part-Whole Arg1:T39 Arg2:T41	
+R14	Connect Arg1:T39 Arg2:T7	
+R15	Part-Whole Arg1:T23 Arg2:T5	
+R16	Part-Whole Arg1:T37 Arg2:T6	
+R17	Connect Arg1:T35 Arg2:T36	
+R12	Part-Whole Arg1:T35 Arg2:T5	
+R18	Part-Whole Arg1:T35 Arg2:T6	

@@ -1,0 +1,11 @@
+T1	Parts 0 6	大型観光バス
+T2	Parts 7 17	排出ガス発散防止装置
+T3	Parts 22 31	ＮＯｘセンサ用配線
+T4	Parts 44 46	触媒
+T5	Parts 49 51	配線
+T6	Parts 66 76	排出ガス発散防止装置
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T2	
+R3	Coreference Arg1:T3 Arg2:T5	
+R4	Coreference Arg1:T2 Arg2:T6	
+R5	Part-Whole Arg1:T4 Arg2:T2	

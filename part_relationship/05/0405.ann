@@ -1,0 +1,11 @@
+T7	Parts 19 29	スペアタイヤキャリア
+T13	Parts 44 59	スペアタイヤ固定用ロックボルト
+T14	Parts 101 107	ロックボルト
+T15	Parts 120 130	スペアタイヤキャリア
+T18	Parts 135 141	スペアタイヤ
+T1	Parts 0 6	スペアタイヤ
+R1	Coreference Arg1:T14 Arg2:T13	
+R2	Coreference Arg1:T15 Arg2:T7	
+R3	Coreference Arg1:T18 Arg2:T1	
+R4	Contact Arg1:T7 Arg2:T1	
+R5	Contact Arg1:T1 Arg2:T13	

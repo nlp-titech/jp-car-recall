@@ -1,0 +1,11 @@
+T10	Parts 103 107	エアコン
+T11	Parts 15 18	プーリ
+T1	Parts 0 10	エアコンコンプレッサ
+T2	Parts 20 49	アーマチュア（エアコンコンプレッサとプーリを断続する円盤）
+T3	Parts 92 98	アーマチュア
+R1	Coreference Arg1:T2 Arg2:T3	
+T4	Parts 123 129	アーマチュア
+R2	Coreference Arg1:T3 Arg2:T4	
+R3	Part-Whole Arg1:T2 Arg2:T11	
+R4	Part-Whole Arg1:T1 Arg2:T10	
+R5	Part-Whole Arg1:T11 Arg2:T1	

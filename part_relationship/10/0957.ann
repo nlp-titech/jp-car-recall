@@ -1,0 +1,20 @@
+T1	Parts 16 22	前輪ナックル
+T6	Parts 63 69	オイルシール
+T7	Parts 81 86	ベアリング
+T8	Parts 105 110	ベアリング
+T9	Parts 113 116	グリス
+T10	Parts 152 157	ベアリング
+R1	Coreference Arg1:T10 Arg2:T8	
+R2	Coreference Arg1:T8 Arg2:T7	
+T11	Parts 1 6	四輪駆動車
+T12	Parts 7 11	走行装置
+R4	Part-Whole Arg1:T12 Arg2:T11	
+R5	Part-Whole Arg1:T1 Arg2:T12	
+R8	Contact Arg1:T6 Arg2:T7	
+R10	Part-Whole Arg1:T9 Arg2:T8	
+R3	Part-Whole Arg1:T6 Arg2:T1	
+T2	Parts 23 28	ベアリング
+T3	Parts 44 49	ベアリング
+R6	Coreference Arg1:T3 Arg2:T2	
+R7	Coreference Arg1:T7 Arg2:T3	
+R9	Part-Whole Arg1:T2 Arg2:T1	

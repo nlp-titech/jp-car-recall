@@ -1,0 +1,20 @@
+T1	Parts 158 166	プロペラシャフト
+T4	Parts 0 6	動力伝達装置
+T7	Parts 23 27	フランジ
+T8	Parts 115 119	フランジ
+T9	Parts 32 35	ボルト
+T10	Parts 92 95	ボルト
+T11	Parts 127 130	ボルト
+T12	Parts 144 147	ボルト
+T2	Parts 11 22	トランスファーシャフト
+R1	Part-Whole Arg1:T2 Arg2:T4	
+R2	Part-Whole Arg1:T7 Arg2:T4	
+R3	Contact Arg1:T2 Arg2:T9	
+R4	Contact Arg1:T2 Arg2:T7	
+R5	Contact Arg1:T7 Arg2:T9	
+R6	Coreference Arg1:T9 Arg2:T10	
+R8	Coreference Arg1:T7 Arg2:T8	
+R9	Coreference Arg1:T9 Arg2:T11	
+R10	Coreference Arg1:T11 Arg2:T12	
+R11	Contact Arg1:T2 Arg2:T1	
+R7	Contact Arg1:T12 Arg2:T1	

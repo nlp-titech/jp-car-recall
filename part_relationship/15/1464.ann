@@ -1,0 +1,17 @@
+T28	Parts 4 12	駆動用バッテリー
+T29	Parts 64 67	負極板
+T31	Parts 75 80	セパレータ
+T33	Parts 85 87	極板
+T1	Parts 0 3	電動機
+T2	Parts 31 36	バッテリー
+T6	Parts 117 120	電解液
+T7	Parts 145 148	電解液
+R1	Coreference Arg1:T28 Arg2:T2	
+R3	Coreference Arg1:T6 Arg2:T7	
+R4	Part-Whole Arg1:T28 Arg2:T1	
+R6	Part-Whole Arg1:T29 Arg2:T2	
+R8	Contact Arg1:T31 Arg2:T29	
+R9	Part-Whole Arg1:T6 Arg2:T2	
+R2	Oneway-Coreference Arg1:T33 Arg2:T29	
+R5	Part-Whole Arg1:T33 Arg2:T2	
+R7	Part-Whole Arg1:T31 Arg2:T2	

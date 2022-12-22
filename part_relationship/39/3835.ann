@@ -1,0 +1,10 @@
+T1	Parts 0 8	ショベル・ローダ
+T3	Parts 67 70	原動機
+T4	Parts 9 12	排気管
+T5	Parts 17 20	排気管
+T6	Parts 78 81	排気管
+R1	Coreference Arg1:T5 Arg2:T4	
+R2	Coreference Arg1:T6 Arg2:T5	
+R3	Part-Whole Arg1:T3 Arg2:T1	
+R4	Part-Whole Arg1:T4 Arg2:T1	
+R5	Connect Arg1:T6 Arg2:T3	

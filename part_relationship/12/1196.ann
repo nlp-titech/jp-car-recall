@@ -1,0 +1,18 @@
+T10	Parts 71 73	ドア
+T11	Parts 10 16	ドアハーネス
+T12	Parts 51 55	ハーネス
+T1	Parts 0 8	パワーウインドウ
+T2	Parts 29 34	方向指示器
+T4	Parts 85 87	配線
+T5	Parts 99 106	非常点滅表示灯
+T6	Parts 92 97	方向指示器
+R1	Coreference Arg1:T11 Arg2:T12	
+R3	Coreference Arg1:T2 Arg2:T6	
+R4	Connect Arg1:T11 Arg2:T1	
+T7	Parts 44 48	電気配線
+R5	Coreference Arg1:T4 Arg2:T7	
+R8	Contact Arg1:T10 Arg2:T11	
+T3	Parts 36 43	非常点滅表示灯
+R2	Connect Arg1:T2 Arg2:T7	
+R9	Connect Arg1:T3 Arg2:T7	
+R6	Coreference Arg1:T3 Arg2:T5	

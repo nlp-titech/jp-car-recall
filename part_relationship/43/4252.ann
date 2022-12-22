@@ -1,0 +1,7 @@
+T1	Parts 11 26	フロントブレーキ用エアチューブ
+T2	Parts 0 6	大型トラック
+T3	Parts 84 88	チューブ
+T4	Parts 38 43	排気遮熱板
+R1	Part-Whole Arg1:T1 Arg2:T2	
+R2	Contact Arg1:T1 Arg2:T4	
+R3	Coreference Arg1:T1 Arg2:T3	

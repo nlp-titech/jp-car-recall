@@ -1,0 +1,9 @@
+T1	Parts 7 13	スタビライザ
+T2	Parts 30 36	スタビライザ
+T3	Parts 70 76	スタビライザ
+T4	Parts 115 121	スタビライザ
+T5	Parts 0 6	リヤアクスル
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Part-Whole Arg1:T1 Arg2:T5	
+R3	Coreference Arg1:T2 Arg2:T3	
+R4	Coreference Arg1:T3 Arg2:T4	

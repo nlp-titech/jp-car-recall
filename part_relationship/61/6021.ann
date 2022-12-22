@@ -1,0 +1,23 @@
+T1	Parts 38 51	自動変速機制御コンピュータ
+T2	Parts 0 11	７速ＤＳＧ型自動変速機
+T3	Parts 227 231	エンジン
+T4	Parts 23 28	ギアオイル
+T5	Parts 99 103	クラッチ
+T10	Parts 16 18	車両
+T11	Parts 119 121	車両
+T12	Parts 151 153	車両
+T13	Parts 179 181	車両
+T14	Parts 65 72	電源用ヒューズ
+R1	Part-Whole Arg1:T2 Arg2:T10	
+R2	Part-Whole Arg1:T4 Arg2:T2	
+R7	Coreference Arg1:T10 Arg2:T11	
+R10	Part-Whole Arg1:T3 Arg2:T13	
+R8	Coreference Arg1:T11 Arg2:T12	
+R9	Coreference Arg1:T12 Arg2:T13	
+R6	Connect Arg1:T2 Arg2:T5	
+R12	Part-Whole Arg1:T14 Arg2:T10	
+R13	Part-Whole Arg1:T5 Arg2:T11	
+R4	Connect Arg1:T1 Arg2:T14	
+R14	Connect Arg1:T5 Arg2:T3	
+R15	Connect Arg1:T2 Arg2:T3	
+R5	Part-Whole Arg1:T1 Arg2:T2	

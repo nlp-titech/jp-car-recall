@@ -1,0 +1,27 @@
+T20	Parts 110 119	ショックアブソーバ
+T21	Parts 139 148	ショックアブソーバ
+T22	Parts 151 161	ピストン取付けナット
+T23	Parts 184 193	ショックアブソーバ
+T26	Parts 194 197	ロッド
+T27	Parts 218 220	車両
+T31	Parts 98 102	トラクタ
+T33	Parts 209 212	タイヤ
+T34	Parts 55 64	ショックアブソーバ
+T37	Parts 93 97	トレーラ
+T38	Parts 20 24	トレーラ
+T40	Parts 65 71	ストッパ構造
+T1	Parts 0 15	空気ばね緩衝装置付大型トラクタ
+T2	Parts 79 82	カプラ
+R1	Coreference Arg1:T37 Arg2:T38	
+R2	Coreference Arg1:T31 Arg2:T1	
+R3	Coreference Arg1:T20 Arg2:T34	
+R4	Coreference Arg1:T21 Arg2:T20	
+R5	Coreference Arg1:T23 Arg2:T21	
+R6	Part-Whole Arg1:T40 Arg2:T34	
+R7	Part-Whole Arg1:T26 Arg2:T23	
+R8	Part-Whole Arg1:T22 Arg2:T21	
+R9	Part-Whole Arg1:T34 Arg2:T1	
+R10	Contact Arg1:T2 Arg2:T38	
+R11	Contact Arg1:T2 Arg2:T1	
+R12	Part-Whole Arg1:T33 Arg2:T1	
+R13	Coreference Arg1:T27 Arg2:T1	

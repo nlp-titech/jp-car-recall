@@ -1,0 +1,5 @@
+T1	Parts 18 28	オートランプシステム
+T3	Parts 5 8	前照灯
+T4	Parts 29 33	電子回路
+R1	Connect Arg1:T3 Arg2:T1	
+R2	Part-Whole Arg1:T4 Arg2:T1	

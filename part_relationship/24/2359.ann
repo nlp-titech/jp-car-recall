@@ -1,0 +1,6 @@
+T10	Parts 66 69	警音器
+T11	Parts 1 10	警音器スイッチ配線
+T2	Parts 42 44	配線
+R1	Coreference Arg1:T2 Arg2:T11	
+R2	Connect Arg1:T10 Arg2:T2	
+T1	Parts 25 29	ハンドル

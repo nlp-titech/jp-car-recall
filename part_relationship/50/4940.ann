@@ -1,0 +1,18 @@
+T1	Parts 9 16	ブレーキホース
+T2	Parts 47 54	ブレーキホース
+T3	Parts 17 24	前輪ストラット
+T4	Parts 117 122	ブレーキ液
+T5	Parts 98 102	ホイール
+T6	Parts 0 4	制動装置
+T7	Parts 55 59	保持金具
+T8	Parts 92 95	タイヤ
+T9	Parts 88 91	ホース
+R1	Contact Arg1:T3 Arg2:T1	
+R2	Coreference Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T1 Arg2:T6	
+R4	Contact Arg1:T7 Arg2:T2	
+R5	Contact Arg1:T7 Arg2:T3	
+R6	Coreference Arg1:T9 Arg2:T2	
+R7	Contact Arg1:T5 Arg2:T8	
+R8	Contact Arg1:T5 Arg2:T6	
+R9	Contact Arg1:T4 Arg2:T9	

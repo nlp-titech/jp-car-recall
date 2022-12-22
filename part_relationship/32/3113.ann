@@ -1,0 +1,23 @@
+T12	Parts 50 54	エンジン
+T13	Parts 0 12	エンジン制御コンピュータ
+T14	Parts 26 30	エンジン
+T15	Parts 74 78	エンジン
+T16	Parts 182 186	エンジン
+T1	Parts 13 18	プログラム
+R1	Coreference Arg1:T14 Arg2:T12	
+T2	Parts 71 73	燃料
+R2	Coreference Arg1:T12 Arg2:T15	
+T3	Parts 92 100	排出ガス浄化触媒
+T4	Parts 108 110	触媒
+T5	Parts 119 121	触媒
+R3	Coreference Arg1:T3 Arg2:T4	
+T6	Parts 141 143	触媒
+R4	Coreference Arg1:T5 Arg2:T6	
+T7	Parts 159 163	後側触媒
+R5	Coreference Arg1:T16 Arg2:T15	
+R6	Part-Whole Arg1:T1 Arg2:T13	
+R7	Coreference Arg1:T4 Arg2:T5	
+R8	Contact Arg1:T15 Arg2:T2	
+R9	Connect Arg1:T3 Arg2:T15	
+R10	Connect Arg1:T7 Arg2:T15	
+R11	Connect Arg1:T13 Arg2:T14	

@@ -1,0 +1,9 @@
+T1	Parts 3 13	サスペンションアーム
+T2	Parts 106 116	サスペンションアーム
+T7	Parts 122 126	ハンドル
+T8	Parts 18 20	車体
+T9	Parts 102 104	車体
+R4	Coreference Arg1:T9 Arg2:T8	
+R5	Coreference Arg1:T2 Arg2:T1	
+R7	Contact Arg1:T2 Arg2:T9	
+R1	Part-Whole Arg1:T1 Arg2:T8	

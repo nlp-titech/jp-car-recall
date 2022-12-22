@@ -1,0 +1,11 @@
+T6	Parts 16 21	燃料タンク
+T7	Parts 26 31	ストラップ
+T9	Parts 46 51	燃料タンク
+T1	Parts 0 6	大型トラクタ
+T2	Parts 11 14	アルミ
+R1	Coreference Arg1:T9 Arg2:T6	
+T3	Parts 61 63	燃料
+R2	Part-Whole Arg1:T2 Arg2:T6	
+R3	Part-Whole Arg1:T6 Arg2:T1	
+R4	Contact Arg1:T7 Arg2:T6	
+R5	Part-Whole Arg1:T3 Arg2:T9	

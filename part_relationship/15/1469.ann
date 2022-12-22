@@ -1,0 +1,11 @@
+T3	Parts 28 33	噴射パイプ
+T4	Parts 41 44	パイプ
+R1	Coreference Arg1:T4 Arg2:T3	
+T5	Parts 75 77	燃料
+T6	Parts 81 88	エンジンオイル
+T7	Parts 94 98	シリンダ
+T1	Parts 0 11	燃料噴射制御プログラム
+R2	Contact Arg1:T5 Arg2:T4	
+R3	Connect Arg1:T7 Arg2:T4	
+R4	Connect Arg1:T3 Arg2:T1	
+R5	Contact Arg1:T7 Arg2:T6	

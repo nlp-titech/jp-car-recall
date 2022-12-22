@@ -1,0 +1,16 @@
+T1	Parts 9 14	ガスバルブ
+T2	Parts 17 22	点火プラグ
+T3	Parts 30 35	直流変圧器
+T4	Parts 39 42	ケース
+T8	Parts 94 97	ケース
+T9	Parts 114 117	原動機
+R3	Coreference Arg1:T8 Arg2:T4	
+T10	Parts 0 4	ＣＮＧ車
+R4	Part-Whole Arg1:T1 Arg2:T10	
+R5	Part-Whole Arg1:T2 Arg2:T10	
+R6	Connect Arg1:T3 Arg2:T2	
+R7	Connect Arg1:T3 Arg2:T1	
+R8	Part-Whole Arg1:T3 Arg2:T4	
+R11	Connect Arg1:T3 Arg2:T9	
+R1	Part-Whole Arg1:T4 Arg2:T10	
+R2	Part-Whole Arg1:T9 Arg2:T10	

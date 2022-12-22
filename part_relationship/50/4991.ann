@@ -1,0 +1,19 @@
+T1	Parts 28 37	ケーブルブラケット
+T2	Parts 82 91	ケーブルブラケット
+T3	Parts 55 64	左側ブレーキレバー
+T4	Parts 126 135	左側ブレーキレバー
+T5	Parts 96 104	ブレーキケーブル
+T6	Parts 14 26	連動機構（イコライザー）
+T7	Parts 105 110	ブラケット
+T8	Parts 5 9	ブレーキ
+T9	Parts 141 145	ブレーキ
+T10	Parts 0 4	前、後輪
+R1	Part-Whole Arg1:T1 Arg2:T6	
+R2	Coreference Arg1:T2 Arg2:T1	
+R3	Coreference Arg1:T4 Arg2:T3	
+R4	Coreference Arg1:T9 Arg2:T8	
+R5	Coreference Arg1:T7 Arg2:T2	
+R6	Contact Arg1:T4 Arg2:T5	
+R7	Contact Arg1:T7 Arg2:T5	
+R8	Part-Whole Arg1:T6 Arg2:T8	
+R9	Connect Arg1:T6 Arg2:T10	

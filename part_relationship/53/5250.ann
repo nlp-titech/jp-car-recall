@@ -1,0 +1,8 @@
+T1	Parts 75 79	エンジン
+T4	Parts 0 3	変速機
+T7	Parts 109 111	車両
+T2	Parts 8 21	変速装置（シフタードラム）
+R1	Part-Whole Arg1:T2 Arg2:T4	
+R2	Part-Whole Arg1:T1 Arg2:T7	
+R3	Part-Whole Arg1:T4 Arg2:T7	
+R4	Connect Arg1:T1 Arg2:T4	

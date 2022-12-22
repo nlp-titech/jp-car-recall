@@ -1,0 +1,12 @@
+T1	Parts 0 6	大型トラック
+T2	Parts 14 18	ワイパー
+T3	Parts 26 38	車両マスター制御ユニット
+T4	Parts 52 56	ワイパー
+T5	Parts 70 74	ワイパー
+T6	Parts 99 103	ワイパー
+R1	Connect Arg1:T2 Arg2:T3	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T3 Arg2:T1	
+R4	Coreference Arg1:T4 Arg2:T2	
+R5	Coreference Arg1:T5 Arg2:T4	
+R6	Coreference Arg1:T6 Arg2:T5	

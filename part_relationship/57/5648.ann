@@ -1,0 +1,16 @@
+T2	Parts 75 81	シートベルト
+T3	Parts 96 102	シートベルト
+T4	Parts 0 13	前席シートベルト・バックル
+T5	Parts 44 52	座面下部フレーム
+T6	Parts 29 31	座席
+T9	Parts 14 16	配線
+T10	Parts 41 43	配線
+T11	Parts 57 59	配線
+R1	Coreference Arg1:T10 Arg2:T9	
+R2	Coreference Arg1:T11 Arg2:T10	
+R3	Coreference Arg1:T3 Arg2:T2	
+R4	Contact Arg1:T2 Arg2:T4	
+R5	Contact Arg1:T9 Arg2:T4	
+R8	Contact Arg1:T2 Arg2:T6	
+R7	Part-Whole Arg1:T4 Arg2:T6	
+R6	Part-Whole Arg1:T5 Arg2:T6	

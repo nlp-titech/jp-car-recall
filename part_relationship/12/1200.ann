@@ -1,0 +1,16 @@
+T1	Parts 0 11	ハイドロリックユニット
+T2	Parts 16 20	電気配線
+T3	Parts 21 25	コネクタ
+T5	Parts 41 45	コネクタ
+T6	Parts 48 59	ハイドロリックユニット
+T7	Parts 60 61	水
+T8	Parts 91 95	ユニット
+T9	Parts 118 122	ユニット
+T10	Parts 128 135	ブレーキペダル
+R1	Coreference Arg1:T1 Arg2:T6	
+R2	Coreference Arg1:T3 Arg2:T5	
+R3	Coreference Arg1:T6 Arg2:T8	
+R4	Coreference Arg1:T8 Arg2:T9	
+R5	Connect Arg1:T2 Arg2:T1	
+R6	Part-Whole Arg1:T3 Arg2:T2	
+R7	Connect Arg1:T10 Arg2:T9	

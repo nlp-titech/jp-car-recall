@@ -1,0 +1,16 @@
+T1	Parts 0 7	前輪用制動装置
+T3	Parts 36 40	クリップ
+T4	Parts 71 75	クリップ
+T7	Parts 8 21	ブレーキ・ディスク（円板）
+T8	Parts 85 116	ブレーキ・キャリパ（制動のためブレーキ･ディスクをはさむ部分）
+T10	Parts 22 27	固定用ピン
+T11	Parts 79 81	ピン
+T12	Parts 121 123	前輪
+R1	Coreference Arg1:T10 Arg2:T11	
+R2	Coreference Arg1:T3 Arg2:T4	
+R3	Part-Whole Arg1:T7 Arg2:T1	
+R4	Contact Arg1:T7 Arg2:T10	
+R5	Contact Arg1:T10 Arg2:T3	
+R6	Part-Whole Arg1:T8 Arg2:T1	
+R7	Connect Arg1:T1 Arg2:T12	
+R8	Contact Arg1:T7 Arg2:T8	

@@ -1,0 +1,7 @@
+T1	Parts 0 30	コンビネーションランプ（後退灯、尾灯、制動灯及び方向指示器）
+T2	Parts 31 37	バルブホルダ
+T6	Parts 104 107	ランプ
+R2	Coreference Arg1:T6 Arg2:T1	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+T3	Parts 42 46	電気配線
+R4	Part-Whole Arg1:T3 Arg2:T2	

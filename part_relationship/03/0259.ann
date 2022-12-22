@@ -1,0 +1,15 @@
+T8	Parts 8 12	プーリー
+T9	Parts 13 21	クランクシャフト
+T10	Parts 26 29	ボルト
+T11	Parts 63 66	ボルト
+T12	Parts 76 79	ボルト
+T13	Parts 89 93	プーリー
+T1	Parts 0 3	原動機
+R1	Coreference Arg1:T11 Arg2:T10	
+R2	Coreference Arg1:T12 Arg2:T11	
+R3	Part-Whole Arg1:T8 Arg2:T1	
+R4	Contact Arg1:T8 Arg2:T10	
+R5	Contact Arg1:T9 Arg2:T10	
+R6	Contact Arg1:T8 Arg2:T9	
+R7	Coreference Arg1:T8 Arg2:T13	
+R8	Part-Whole Arg1:T9 Arg2:T1	

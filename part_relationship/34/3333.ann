@@ -1,0 +1,8 @@
+T15	Parts 16 27	ブレーキ負圧電動ポンプ
+T16	Parts 66 72	ポンプボデー
+T17	Parts 125 136	ブレーキ負圧電動ポンプ
+T1	Parts 0 8	ブレーキ倍力装置
+T7	Parts 102 109	ブレーキ警告灯
+R3	Coreference Arg1:T15 Arg2:T17	
+R1	Connect Arg1:T1 Arg2:T15	
+R2	Part-Whole Arg1:T16 Arg2:T15	

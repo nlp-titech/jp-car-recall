@@ -1,0 +1,17 @@
+T1	Parts 0 4	燃料配管
+T3	Parts 37 40	接着剤
+T4	Parts 85 87	燃料
+T5	Parts 123 125	燃料
+T6	Parts 23 25	配管
+T7	Parts 94 96	配管
+T8	Parts 101 103	配管
+R1	Coreference Arg1:T1 Arg2:T6	
+T2	Parts 43 46	ロウ材
+R2	Coreference Arg1:T3 Arg2:T2	
+T9	Parts 106 109	ロウ材
+R3	Coreference Arg1:T2 Arg2:T9	
+R4	Contact Arg1:T6 Arg2:T3	
+R5	Coreference Arg1:T6 Arg2:T7	
+R6	Coreference Arg1:T7 Arg2:T8	
+R7	Coreference Arg1:T4 Arg2:T5	
+R8	Contact Arg1:T4 Arg2:T7	

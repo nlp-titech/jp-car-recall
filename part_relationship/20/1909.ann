@@ -1,0 +1,15 @@
+T8	Parts 0 3	排気管
+T9	Parts 4 11	触媒コンバータ
+T10	Parts 50 57	触媒コンバータ
+T1	Parts 19 36	エンジン制御コンピュータプログラム
+R1	Coreference Arg1:T10 Arg2:T9	
+T2	Parts 58 60	酸素
+T3	Parts 79 83	排出ガス
+T4	Parts 85 90	窒素酸化物
+T5	Parts 95 99	排出ガス
+R2	Coreference Arg1:T5 Arg2:T3	
+R3	Part-Whole Arg1:T9 Arg2:T8	
+R4	Part-Whole Arg1:T1 Arg2:T9	
+R5	Part-Whole Arg1:T2 Arg2:T10	
+R6	Contact Arg1:T8 Arg2:T3	
+R7	Part-Whole Arg1:T4 Arg2:T3	

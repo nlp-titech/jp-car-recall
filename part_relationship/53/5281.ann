@@ -1,0 +1,10 @@
+T1	Parts 37 49	エキゾーストマニホールド
+T3	Parts 18 23	燃料パイプ
+T4	Parts 61 64	パイプ
+T6	Parts 107 109	燃料
+T2	Parts 0 13	ターボ付きエンジン搭載車両
+R1	Coreference Arg1:T3 Arg2:T4	
+R2	Part-Whole Arg1:T1 Arg2:T2	
+R3	Contact Arg1:T4 Arg2:T6	
+R4	Part-Whole Arg1:T3 Arg2:T2	
+R5	Connect Arg1:T1 Arg2:T3	

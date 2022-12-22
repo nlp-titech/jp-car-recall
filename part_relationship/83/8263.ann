@@ -1,0 +1,9 @@
+T1	Parts 0 13	後部座席中央用シートベルト
+T2	Parts 33 39	シートベルト
+T3	Parts 46 51	スプリング
+T4	Parts 75 80	スプリング
+T5	Parts 90 96	シートベルト
+R1	Coreference Arg1:T2 Arg2:T1	
+R2	Connect Arg1:T3 Arg2:T2	
+R3	Coreference Arg1:T4 Arg2:T3	
+R4	Coreference Arg1:T5 Arg2:T2	

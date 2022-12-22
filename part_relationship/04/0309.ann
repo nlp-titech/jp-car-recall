@@ -1,0 +1,21 @@
+T4	Parts 43 50	燃料噴射ポンプ
+T5	Parts 51 55	取付金具
+T7	Parts 100 105	燃料パイプ
+T8	Parts 25 30	燃料パイプ
+T12	Parts 31 37	固定クランプ
+T1	Parts 0 4	燃料装置
+T2	Parts 9 16	燃料供給ポンプ
+T3	Parts 17 23	燃料フィルタ
+T6	Parts 90 93	原動機
+T9	Parts 113 115	燃料
+R1	Coreference Arg1:T7 Arg2:T8	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T3 Arg2:T1	
+R4	Contact Arg1:T2 Arg2:T8	
+R5	Contact Arg1:T3 Arg2:T8	
+R6	Contact Arg1:T2 Arg2:T3	
+R7	Contact Arg1:T12 Arg2:T8	
+R8	Contact Arg1:T5 Arg2:T4	
+R9	Part-Whole Arg1:T4 Arg2:T1	
+R10	Connect Arg1:T6 Arg2:T1	
+R11	Contact Arg1:T9 Arg2:T1	

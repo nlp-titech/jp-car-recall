@@ -1,0 +1,17 @@
+T12	Parts 45 53	リーフスプリング
+T13	Parts 90 98	リーフスプリング
+T14	Parts 99 106	センターボルト
+T1	Parts 0 4	後輪車軸
+T2	Parts 11 13	車軸
+R1	Coreference Arg1:T2 Arg2:T1	
+T3	Parts 21 29	スプリングシート
+T4	Parts 40 44	後輪車軸
+R2	Coreference Arg1:T4 Arg2:T2	
+T5	Parts 60 64	Ｕボルト
+R3	Coreference Arg1:T13 Arg2:T12	
+R4	Contact Arg1:T3 Arg2:T2	
+R5	Contact Arg1:T12 Arg2:T4	
+R6	Contact Arg1:T4 Arg2:T5	
+R7	Contact Arg1:T12 Arg2:T5	
+R9	Contact Arg1:T5 Arg2:T3	
+R8	Contact Arg1:T13 Arg2:T14	

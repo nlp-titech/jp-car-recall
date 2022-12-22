@@ -1,0 +1,9 @@
+T1	Parts 19 27	整流器取付ボルト
+T2	Parts 0 3	原動機
+T4	Parts 66 69	整流器
+T5	Parts 13 16	発電機
+T6	Parts 86 89	発電機
+R1	Coreference Arg1:T5 Arg2:T6	
+R2	Contact Arg1:T2 Arg2:T5	
+R3	Part-Whole Arg1:T4 Arg2:T5	
+R4	Contact Arg1:T1 Arg2:T4	

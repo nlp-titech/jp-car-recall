@@ -1,0 +1,9 @@
+T1	Parts 35 42	固定用クリップ
+T2	Parts 6 11	燃料パイプ
+T3	Parts 23 27	エンジン
+T4	Parts 0 3	原動機
+T5	Parts 53 55	燃料
+R1	Contact Arg1:T2 Arg2:T4	
+R2	Coreference Arg1:T4 Arg2:T3	
+R3	Contact Arg1:T2 Arg2:T5	
+R4	Contact Arg1:T2 Arg2:T1	

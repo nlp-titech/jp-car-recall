@@ -1,0 +1,15 @@
+T16	Parts 0 10	エンジンリヤマウント
+T17	Parts 25 29	マウント
+T18	Parts 30 35	固定ボルト
+T19	Parts 67 71	マウント
+T20	Parts 72 77	締付ボルト
+T21	Parts 114 119	締付ボルト
+R1	Coreference Arg1:T16 Arg2:T17	
+R2	Coreference Arg1:T17 Arg2:T19	
+R3	Coreference Arg1:T20 Arg2:T21	
+T1	Parts 125 129	エンジン
+R4	Contact Arg1:T18 Arg2:T17	
+R5	Contact Arg1:T20 Arg2:T19	
+R6	Contact Arg1:T1 Arg2:T19	
+T2	Parts 146 149	シフト
+R7	Connect Arg1:T1 Arg2:T2	

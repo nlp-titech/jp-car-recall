@@ -1,0 +1,22 @@
+T1	Parts 0 5	自動変速機
+T2	Parts 58 63	自動変速機
+T3	Parts 79 84	自動変速機
+T4	Parts 107 112	自動変速機
+T5	Parts 148 153	変速レバー
+T6	Parts 115 119	クラッチ
+T7	Parts 6 17	副変速機（４輪駆動用）
+T8	Parts 130 133	原動機
+T9	Parts 24 46	ブレース（振動及び騒音を軽減させるための棒）
+T10	Parts 64 68	ブレース
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Coreference Arg1:T2 Arg2:T3	
+R3	Coreference Arg1:T3 Arg2:T4	
+R4	Connect Arg1:T1 Arg2:T7	
+R5	Contact Arg1:T1 Arg2:T9	
+R6	Contact Arg1:T7 Arg2:T9	
+R7	Coreference Arg1:T9 Arg2:T10	
+R8	Part-Whole Arg1:T6 Arg2:T4	
+R9	Connect Arg1:T4 Arg2:T5	
+R10	Connect Arg1:T4 Arg2:T8	
+T11	Parts 169 173	駐車機構
+R11	Connect Arg1:T5 Arg2:T11	

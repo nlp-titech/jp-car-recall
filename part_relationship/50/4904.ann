@@ -1,0 +1,10 @@
+T2	Parts 1 6	左側タイヤ
+T3	Parts 18 21	タイヤ
+T4	Parts 34 37	タイヤ
+T6	Parts 11 13	車両
+R1	Coreference Arg1:T3 Arg2:T2	
+R2	Coreference Arg1:T4 Arg2:T3	
+R4	Part-Whole Arg1:T3 Arg2:T6	
+T1	Parts 85 87	空気
+R3	Part-Whole Arg1:T1 Arg2:T4	
+#1	AnnotatorNotes T1	この場合の「空気」はParts　（QID91参照）

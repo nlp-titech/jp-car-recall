@@ -1,0 +1,15 @@
+T1	Parts 5 11	コンプレッサ
+T3	Parts 46 52	コンプレッサ
+T4	Parts 84 90	コンプレッサ
+T5	Parts 98 104	コンプレッサ
+T6	Parts 0 4	エアコン
+T7	Parts 38 42	エアコン
+T8	Parts 116 120	エンジン
+T9	Parts 16 25	コンプレッサオイル
+R1	Contact Arg1:T9 Arg2:T1	
+R2	Coreference Arg1:T7 Arg2:T6	
+R3	Part-Whole Arg1:T1 Arg2:T6	
+R4	Coreference Arg1:T3 Arg2:T1	
+R5	Coreference Arg1:T4 Arg2:T3	
+R6	Coreference Arg1:T5 Arg2:T4	
+R7	Connect Arg1:T8 Arg2:T5	

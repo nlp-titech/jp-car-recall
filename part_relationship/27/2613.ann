@@ -1,0 +1,14 @@
+T1	Parts 0 3	前２軸
+T2	Parts 4 10	大型トラック
+T3	Parts 15 27	パワーステアリングパイプ
+T4	Parts 28 34	泥除けカバー
+T5	Parts 78 89	ワーステアリングパイプ
+T6	Parts 90 96	泥除けカバー
+R1	Coreference Arg1:T5 Arg2:T3	
+R2	Coreference Arg1:T6 Arg2:T4	
+T7	Parts 105 117	パワーステアリングオイル
+R3	Part-Whole Arg1:T1 Arg2:T2	
+R4	Part-Whole Arg1:T3 Arg2:T2	
+R5	Part-Whole Arg1:T4 Arg2:T2	
+R6	Contact Arg1:T5 Arg2:T7	
+R7	Part-Whole Arg1:T7 Arg2:T2	

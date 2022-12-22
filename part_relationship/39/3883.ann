@@ -1,0 +1,7 @@
+T2	Parts 0 7	フォークリフト
+T3	Parts 8 14	駐車ブレーキ
+T4	Parts 46 52	駐車ブレーキ
+T5	Parts 19 35	ブレーキケーブル調整用スクリュー
+R1	Coreference Arg1:T4 Arg2:T3	
+R2	Part-Whole Arg1:T5 Arg2:T3	
+R3	Part-Whole Arg1:T3 Arg2:T2	

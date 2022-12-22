@@ -1,0 +1,19 @@
+T1	Parts 0 12	燃料デリバリーモジュール
+T2	Parts 17 26	燃料ゲージセンサー
+T3	Parts 27 35	ブリーザーパイプ
+T4	Parts 47 56	燃料ゲージセンサー
+T5	Parts 59 62	パイプ
+T6	Parts 82 84	燃料
+T7	Parts 86 89	燃料計
+T8	Parts 99 101	燃料
+T9	Parts 125 127	燃料
+R1	Connect Arg1:T2 Arg2:T1	
+R2	Connect Arg1:T3 Arg2:T1	
+R3	Coreference Arg1:T4 Arg2:T2	
+R4	Coreference Arg1:T5 Arg2:T3	
+R5	Connect Arg1:T6 Arg2:T4	
+R6	Connect Arg1:T6 Arg2:T1	
+R7	Connect Arg1:T7 Arg2:T6	
+R8	Connect Arg1:T7 Arg2:T4	
+R9	Coreference Arg1:T8 Arg2:T6	
+R10	Coreference Arg1:T9 Arg2:T8	

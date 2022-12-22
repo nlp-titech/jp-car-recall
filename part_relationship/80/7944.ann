@@ -1,0 +1,5 @@
+T1	Parts 3 11	ガソリンエンジン
+T2	Parts 12 24	エキゾーストマニホールド
+T3	Parts 29 32	パイプ
+R2	Part-Whole Arg1:T3 Arg2:T2	
+R1	Contact Arg1:T1 Arg2:T2	

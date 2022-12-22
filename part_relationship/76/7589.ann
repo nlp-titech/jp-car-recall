@@ -1,0 +1,20 @@
+T1	Parts 0 11	オンボードチャージャー
+T2	Parts 13 45	ＥＶＣＵ（エレクトリックドライブトレーンスーパーバイザーＥＣＵ）
+T3	Parts 50 61	オンボードチャージャー
+T4	Parts 62 64	基板
+T5	Parts 69 73	ＥＶＣＵ
+T6	Parts 88 99	オンボードチャージャー
+T7	Parts 113 119	ＥＶシステム
+T8	Parts 131 134	警告灯
+T9	Parts 150 154	モーター
+T10	Parts 176 178	車両
+R1	Coreference Arg1:T1 Arg2:T3	
+R2	Part-Whole Arg1:T4 Arg2:T3	
+R3	Coreference Arg1:T2 Arg2:T5	
+R4	Coreference Arg1:T3 Arg2:T6	
+R5	Part-Whole Arg1:T7 Arg2:T10	
+R6	Part-Whole Arg1:T6 Arg2:T7	
+R7	Part-Whole Arg1:T5 Arg2:T7	
+R8	Part-Whole Arg1:T8 Arg2:T10	
+R9	Connect Arg1:T7 Arg2:T8	
+R10	Part-Whole Arg1:T9 Arg2:T7	

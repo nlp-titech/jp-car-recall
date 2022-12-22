@@ -1,0 +1,17 @@
+T14	Parts 53 57	燃料配管
+T15	Parts 58 62	保持金具
+T18	Parts 111 115	燃料配管
+T1	Parts 0 3	原動機
+T2	Parts 13 18	燃料ろ過器
+T3	Parts 20 23	原動機
+T4	Parts 68 73	燃料ろ過器
+T5	Parts 103 108	燃料ろ過器
+T6	Parts 128 130	燃料
+R1	Coreference Arg1:T3 Arg2:T1	
+R2	Coreference Arg1:T4 Arg2:T2	
+R3	Coreference Arg1:T5 Arg2:T4	
+R4	Coreference Arg1:T18 Arg2:T14	
+R5	Contact Arg1:T2 Arg2:T1	
+R6	Contact Arg1:T14 Arg2:T2	
+R7	Contact Arg1:T15 Arg2:T14	
+R8	Contact Arg1:T6 Arg2:T18	

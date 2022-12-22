@@ -1,0 +1,11 @@
+T18	Parts 0 2	後輪
+T19	Parts 3 19	ショックアブソーバ取付ブラケット
+T20	Parts 42 47	ブラケット
+T21	Parts 71 78	エアスプリング
+T22	Parts 79 84	ブラケット
+T24	Parts 99 101	車体
+R1	Coreference Arg1:T20 Arg2:T19	
+R2	Coreference Arg1:T22 Arg2:T20	
+R7	Connect Arg1:T21 Arg2:T18	
+R3	Contact Arg1:T18 Arg2:T19	
+R4	Part-Whole Arg1:T21 Arg2:T24	

@@ -1,0 +1,14 @@
+T1	Parts 61 70	スプラインシャフト
+T2	Parts 17 25	プロペラシャフト
+T3	Parts 137 145	プロペラシャフト
+T4	Parts 6 12	大型トラック
+T5	Parts 38 50	ユニバーサル・ジョイント
+T6	Parts 108 113	ジョイント
+T7	Parts 57 60	パイプ
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Coreference Arg1:T5 Arg2:T6	
+R3	Part-Whole Arg1:T2 Arg2:T4	
+R4	Contact Arg1:T7 Arg2:T1	
+R5	Part-Whole Arg1:T7 Arg2:T2	
+R6	Part-Whole Arg1:T1 Arg2:T2	
+R7	Part-Whole Arg1:T5 Arg2:T2	

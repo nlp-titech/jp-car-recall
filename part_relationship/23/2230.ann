@@ -1,0 +1,13 @@
+T16	Parts 0 7	スピードメータ
+T17	Parts 22 24	計器
+T19	Parts 37 39	基板
+T20	Parts 26 30	夜間照明
+T1	Parts 49 54	燃料計回路
+T2	Parts 70 73	燃料計
+T3	Parts 83 85	燃料
+R4	Part-Whole Arg1:T20 Arg2:T17	
+R3	Part-Whole Arg1:T16 Arg2:T17	
+R1	Part-Whole Arg1:T19 Arg2:T16	
+R2	Connect Arg1:T2 Arg2:T3	
+R5	Part-Whole Arg1:T1 Arg2:T19	
+R7	Connect Arg1:T1 Arg2:T2	

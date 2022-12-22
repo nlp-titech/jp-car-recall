@@ -1,0 +1,9 @@
+T1	Parts 1 15	エンジンコントロールユニット
+T2	Parts 29 38	スロットルボディー
+T3	Parts 46 50	モーター
+T4	Parts 66 73	エンジン警告灯
+T5	Parts 95 104	スロットルボディー
+R1	Coreference Arg1:T2 Arg2:T5	
+R2	Connect Arg1:T2 Arg2:T3	
+R3	Connect Arg1:T1 Arg2:T3	
+R4	Connect Arg1:T3 Arg2:T4	

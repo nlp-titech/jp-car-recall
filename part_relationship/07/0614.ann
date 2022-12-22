@@ -1,0 +1,10 @@
+T11	Parts 0 9	変速機制御用バルブ
+T12	Parts 10 17	油路切り換え弁
+T1	Parts 27 32	油圧ホース
+T2	Parts 46 50	エンジン
+T3	Parts 54 59	油圧ホース
+T4	Parts 87 91	クラッチ
+R1	Coreference Arg1:T3 Arg2:T1	
+R2	Part-Whole Arg1:T12 Arg2:T11	
+R3	Part-Whole Arg1:T1 Arg2:T12	
+R5	Connect Arg1:T11 Arg2:T4	

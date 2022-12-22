@@ -1,0 +1,13 @@
+T1	Parts 16 24	アクスルチューブ
+T2	Parts 13 15	後軸
+T4	Parts 48 52	チューブ
+T5	Parts 97 101	チューブ
+T6	Parts 115 119	チューブ
+R1	Coreference Arg1:T6 Arg2:T5	
+R2	Coreference Arg1:T5 Arg2:T4	
+R3	Coreference Arg1:T4 Arg2:T1	
+T7	Parts 0 12	低床式後２軸大型トラック
+T3	Parts 68 70	車両
+R4	Coreference Arg1:T7 Arg2:T3	
+R5	Part-Whole Arg1:T2 Arg2:T7	
+R6	Part-Whole Arg1:T1 Arg2:T2	

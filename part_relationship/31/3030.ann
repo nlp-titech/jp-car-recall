@@ -1,0 +1,4 @@
+T1	Parts 0 6	駆動用モータ
+T3	Parts 64 70	駆動用モータ
+R1	Coreference Arg1:T1 Arg2:T3	
+T2	Parts 51 54	冷却水

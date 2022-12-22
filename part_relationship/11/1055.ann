@@ -1,0 +1,14 @@
+T10	Parts 109 113	エンジン
+T14	Parts 91 104	アクセルコントロールレバー
+T15	Parts 54 66	リターンスプリングフック
+T17	Parts 0 18	エンジンアイドリングアップ用ケーブル
+T1	Parts 19 24	継ぎ手金具
+T2	Parts 35 42	アクセルペダル
+T3	Parts 69 74	継ぎ手金具
+R1	Coreference Arg1:T1 Arg2:T3	
+R5	Connect Arg1:T14 Arg2:T10	
+R6	Connect Arg1:T17 Arg2:T10	
+R2	Contact Arg1:T17 Arg2:T1	
+R7	Connect Arg1:T2 Arg2:T10	
+R3	Contact Arg1:T2 Arg2:T15	
+R4	Connect Arg1:T15 Arg2:T14	

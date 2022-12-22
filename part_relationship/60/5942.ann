@@ -1,0 +1,18 @@
+T1	Parts 0 16	スロットルグリップ上部ハウジング
+T2	Parts 95 104	スロットルグリップ
+T3	Parts 44 57	スロットルケーブルワイヤー
+T5	Parts 29 34	ハウジング
+T6	Parts 68 73	ハウジング
+T7	Parts 109 113	エンジン
+T8	Parts 131 135	エンジン
+T10	Parts 58 62	ローラー
+T11	Parts 74 78	ローラー
+R1	Coreference Arg1:T1 Arg2:T5	
+R2	Coreference Arg1:T5 Arg2:T6	
+R3	Coreference Arg1:T10 Arg2:T11	
+R4	Coreference Arg1:T7 Arg2:T8	
+R5	Connect Arg1:T2 Arg2:T7	
+R7	Contact Arg1:T3 Arg2:T10	
+R8	Contact Arg1:T3 Arg2:T2	
+R9	Part-Whole Arg1:T3 Arg2:T5	
+R10	Part-Whole Arg1:T10 Arg2:T5	

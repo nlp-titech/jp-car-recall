@@ -1,0 +1,11 @@
+T1	Parts 9 14	ブラケット
+T2	Parts 21 26	ブラケット
+T3	Parts 56 61	固定ボルト
+T4	Parts 0 8	エンジンマウント
+T5	Parts 96 100	エンジン
+T7	Parts 108 111	ボルト
+R1	Coreference Arg1:T2 Arg2:T1	
+R2	Contact Arg1:T3 Arg2:T2	
+R3	Coreference Arg1:T7 Arg2:T3	
+R4	Contact Arg1:T1 Arg2:T4	
+R5	Contact Arg1:T5 Arg2:T4	

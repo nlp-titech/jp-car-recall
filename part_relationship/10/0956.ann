@@ -1,0 +1,23 @@
+T15	Parts 18 24	エキスパンダ
+T16	Parts 25 29	ウェッジ
+T18	Parts 102 105	ローラ
+T19	Parts 96 100	ウェッジ
+T17	Parts 132 136	ウェッジ
+T21	Parts 43 46	シュー
+T22	Parts 47 56	ブレーキライニング
+T23	Parts 146 153	ブレーキシュー
+T1	Parts 0 5	主制動装置
+T2	Parts 6 13	ブレーキシュー
+R1	Coreference Arg1:T21 Arg2:T2	
+R2	Coreference Arg1:T17 Arg2:T19	
+T3	Parts 73 76	シュー
+R3	Coreference Arg1:T3 Arg2:T21	
+R4	Coreference Arg1:T19 Arg2:T16	
+R5	Coreference Arg1:T23 Arg2:T3	
+T4	Parts 106 110	タペット
+R6	Part-Whole Arg1:T2 Arg2:T1	
+R7	Contact Arg1:T2 Arg2:T15	
+R8	Part-Whole Arg1:T16 Arg2:T15	
+R9	Part-Whole Arg1:T22 Arg2:T21	
+R10	Part-Whole Arg1:T18 Arg2:T19	
+R11	Contact Arg1:T18 Arg2:T4	

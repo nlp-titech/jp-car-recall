@@ -1,0 +1,13 @@
+T18	Parts 26 30	充填装置
+T19	Parts 31 35	エア配管
+T1	Parts 0 2	車両
+T2	Parts 8 15	ブレーキオイル
+T3	Parts 49 53	制動装置
+T4	Parts 54 58	油圧回路
+T5	Parts 84 88	ブレーキ
+T6	Parts 93 97	制動装置
+T7	Parts 114 116	回路
+T8	Parts 137 141	ブレーキ
+R1	Coreference Arg1:T8 Arg2:T5	
+R2	Coreference Arg1:T6 Arg2:T3	
+R3	Coreference Arg1:T7 Arg2:T4	

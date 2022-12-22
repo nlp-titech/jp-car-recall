@@ -1,0 +1,16 @@
+T12	Parts 30 41	ステアリング切替バルブ
+T13	Parts 42 46	油圧配管
+T14	Parts 53 56	バルブ
+T15	Parts 62 65	バルブ
+T16	Parts 68 72	スプール
+T17	Parts 103 108	切替バルブ
+T1	Parts 11 13	車両
+R1	Coreference Arg1:T12 Arg2:T14	
+R2	Coreference Arg1:T14 Arg2:T15	
+T2	Parts 159 162	タイヤ
+R3	Part-Whole Arg1:T16 Arg2:T15	
+R4	Coreference Arg1:T17 Arg2:T15	
+R5	Part-Whole Arg1:T12 Arg2:T1	
+R6	Contact Arg1:T13 Arg2:T12	
+R7	Part-Whole Arg1:T13 Arg2:T1	
+R8	Part-Whole Arg1:T2 Arg2:T1	

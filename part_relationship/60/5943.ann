@@ -1,0 +1,11 @@
+T1	Parts 0 14	エンジンコントロールユニット
+T2	Parts 29 40	チャコールキャニスター
+T3	Parts 89 100	チャコールキャニスター
+T5	Parts 45 50	燃料タンク
+T6	Parts 56 60	ガソリン
+T7	Parts 66 78	インテークマニフォールド
+R2	Coreference Arg1:T2 Arg2:T3	
+R3	Part-Whole Arg1:T6 Arg2:T5	
+R4	Connect Arg1:T2 Arg2:T5	
+R5	Connect Arg1:T2 Arg2:T7	
+R1	Connect Arg1:T1 Arg2:T2	

@@ -1,0 +1,9 @@
+T1	Parts 18 24	接続カプラー
+T2	Parts 52 58	接続カプラー
+T3	Parts 0 7	燃料供給パイプ
+T4	Parts 28 31	パイプ
+T8	Parts 68 70	燃料
+R1	Contact Arg1:T3 Arg2:T1	
+R2	Coreference Arg1:T3 Arg2:T4	
+R3	Coreference Arg1:T1 Arg2:T2	
+R4	Contact Arg1:T8 Arg2:T4	

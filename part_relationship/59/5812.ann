@@ -1,0 +1,9 @@
+T1	Parts 111 123	パワーステアリングオイル
+T2	Parts 158 170	パワーステアリングオイル
+T3	Parts 0 9	パワーステアリング
+T4	Parts 10 15	高圧ホース
+T5	Parts 171 175	エンジン
+T11	Parts 176 179	排気管
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Part-Whole Arg1:T4 Arg2:T3	
+R3	Contact Arg1:T4 Arg2:T1	

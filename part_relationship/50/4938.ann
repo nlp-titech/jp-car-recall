@@ -1,0 +1,18 @@
+T1	Parts 17 36	コントロールユニット（ABS・ECU）
+T2	Parts 43 50	接合部コネクタ
+T3	Parts 9 16	ABSシステム
+T4	Parts 0 4	制動装置
+T5	Parts 84 88	電気回路
+T6	Parts 93 99	ABS警告灯
+T8	Parts 37 42	車両側配線
+T7	Parts 108 111	ABS
+R1	Coreference Arg1:T7 Arg2:T3	
+R2	Part-Whole Arg1:T3 Arg2:T4	
+R3	Part-Whole Arg1:T1 Arg2:T3	
+R4	Contact Arg1:T2 Arg2:T8	
+R5	Contact Arg1:T2 Arg2:T1	
+R6	Connect Arg1:T6 Arg2:T7	
+R7	Part-Whole Arg1:T8 Arg2:T5	
+R8	Part-Whole Arg1:T1 Arg2:T5	
+R9	Contact Arg1:T8 Arg2:T1	
+R10	Connect Arg1:T5 Arg2:T6	

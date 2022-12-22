@@ -1,0 +1,22 @@
+T11	Parts 19 24	後輪タイヤ
+T12	Parts 68 73	後輪タイヤ
+T13	Parts 118 123	後輪タイヤ
+T14	Parts 12 18	かじ取り車輪
+T15	Parts 26 28	リム
+T16	Parts 75 77	リム
+T17	Parts 125 127	リム
+T1	Parts 0 7	フォークリフト
+T2	Parts 31 37	リヤアクスル
+T3	Parts 50 54	ハンドル
+R1	Coreference Arg1:T12 Arg2:T11	
+R2	Coreference Arg1:T16 Arg2:T15	
+T4	Parts 80 86	リヤアクスル
+R3	Coreference Arg1:T4 Arg2:T2	
+R4	Coreference Arg1:T13 Arg2:T12	
+R5	Coreference Arg1:T17 Arg2:T16	
+R6	Part-Whole Arg1:T14 Arg2:T1	
+R7	Part-Whole Arg1:T11 Arg2:T14	
+R8	Part-Whole Arg1:T15 Arg2:T14	
+R9	Connect Arg1:T3 Arg2:T14	
+R10	Part-Whole Arg1:T3 Arg2:T1	
+R11	Contact Arg1:T15 Arg2:T11	

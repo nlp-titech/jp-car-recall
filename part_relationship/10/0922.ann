@@ -1,0 +1,16 @@
+T18	Parts 26 36	ピニオンギヤシャフト
+T20	Parts 79 82	変向機
+T21	Parts 86 94	ドライブシャフト
+T22	Parts 158 161	変向機
+T1	Parts 22 25	変向機
+T2	Parts 75 78	変速機
+R1	Coreference Arg1:T20 Arg2:T1	
+T3	Parts 110 122	フライホイールハウジング
+R5	Part-Whole Arg1:T18 Arg2:T1	
+R7	Connect Arg1:T2 Arg2:T20	
+R8	Contact Arg1:T2 Arg2:T21	
+R9	Contact Arg1:T20 Arg2:T21	
+T5	Parts 123 126	変向機
+R2	Coreference Arg1:T20 Arg2:T5	
+R3	Coreference Arg1:T5 Arg2:T22	
+R4	Contact Arg1:T3 Arg2:T5	

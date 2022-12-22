@@ -1,0 +1,8 @@
+T10	Parts 37 49	補助制動装置（リターダ）
+T11	Parts 85 93	ナイロンチューブ
+T13	Parts 0 6	動力伝達装置
+T1	Parts 7 24	クラッチブースタ用ナイロンチューブ
+R1	Coreference Arg1:T1 Arg2:T11	
+R2	Part-Whole Arg1:T1 Arg2:T13	
+T2	Parts 104 108	クラッチ
+R4	Part-Whole Arg1:T2 Arg2:T13	

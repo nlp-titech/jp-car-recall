@@ -1,0 +1,9 @@
+T1	Parts 0 7	ブレーキホース
+T2	Parts 20 22	車体
+T3	Parts 26 35	前輪ブレーキホース
+T4	Parts 36 51	ステアリングストッパブラケット
+T5	Parts 88 91	ホース
+R1	Coreference Arg1:T1 Arg2:T3	
+R2	Coreference Arg1:T3 Arg2:T5	
+R4	Part-Whole Arg1:T4 Arg2:T2	
+R3	Contact Arg1:T1 Arg2:T2	

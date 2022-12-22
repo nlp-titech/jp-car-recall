@@ -1,0 +1,12 @@
+T1	Parts 29 36	アクセルペダル
+T2	Parts 42 49	ブレーキペダル
+T3	Parts 85 92	ブレーキペダル
+T4	Parts 4 11	制御プログラム
+T5	Parts 61 68	油圧制御バルブ
+T6	Parts 0 3	ＡＢＳ
+T7	Parts 56 59	ＡＢＳ
+R1	Part-Whole Arg1:T4 Arg2:T6	
+R2	Coreference Arg1:T6 Arg2:T7	
+R3	Part-Whole Arg1:T5 Arg2:T7	
+R4	Coreference Arg1:T2 Arg2:T3	
+R5	Connect Arg1:T4 Arg2:T5	

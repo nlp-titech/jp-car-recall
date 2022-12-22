@@ -1,0 +1,25 @@
+T20	Parts 0 3	原動機
+T21	Parts 26 30	ピストン
+T22	Parts 31 41	コネクティングロッド
+T23	Parts 45 51	ピストンピン
+T24	Parts 60 68	ピストンクリップ
+T25	Parts 99 103	クリップ
+T26	Parts 107 113	ピストンピン
+T27	Parts 122 126	ピストン
+T28	Parts 127 137	コネクティングロッド
+T31	Parts 148 152	エンジン
+R1	Coreference Arg1:T25 Arg2:T24	
+R2	Coreference Arg1:T26 Arg2:T23	
+R3	Coreference Arg1:T27 Arg2:T21	
+R4	Coreference Arg1:T28 Arg2:T22	
+T2	Parts 157 160	オイル
+R5	Part-Whole Arg1:T21 Arg2:T20	
+R6	Part-Whole Arg1:T22 Arg2:T20	
+R7	Part-Whole Arg1:T23 Arg2:T20	
+R8	Coreference Arg1:T20 Arg2:T31	
+R10	Contact Arg1:T21 Arg2:T23	
+R11	Contact Arg1:T22 Arg2:T23	
+R12	Connect Arg1:T21 Arg2:T22	
+R9	Part-Whole Arg1:T24 Arg2:T20	
+R13	Contact Arg1:T23 Arg2:T24	
+R14	Contact Arg1:T2 Arg2:T31	

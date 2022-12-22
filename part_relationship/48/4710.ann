@@ -1,0 +1,18 @@
+T1	Parts 9 14	燃料ポンプ
+T2	Parts 15 20	燃料ろ過器
+T3	Parts 0 4	燃料装置
+T4	Parts 22 26	燃料配管
+T6	Parts 65 67	燃料
+T7	Parts 56 58	配管
+T8	Parts 45 48	ろ過器
+R1	Coreference Arg1:T2 Arg2:T8	
+R2	Part-Whole Arg1:T1 Arg2:T3	
+R3	Part-Whole Arg1:T2 Arg2:T3	
+R4	Part-Whole Arg1:T4 Arg2:T3	
+R5	Contact Arg1:T1 Arg2:T4	
+R6	Contact Arg1:T2 Arg2:T4	
+R7	Connect Arg1:T1 Arg2:T2	
+R8	Coreference Arg1:T4 Arg2:T7	
+R9	Contact Arg1:T8 Arg2:T6	
+R10	Contact Arg1:T7 Arg2:T6	
+R11	Contact Arg1:T1 Arg2:T6	

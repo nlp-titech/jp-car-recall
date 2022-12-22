@@ -1,0 +1,9 @@
+T8	Parts 137 141	システム
+T9	Parts 100 104	システム
+T10	Parts 105 124	操作スイッチ（逆ステアリングスイッチ）
+T11	Parts 68 72	システム
+T1	Parts 18 61	補助ステアリングシステム（運転席を後方に向けて作業する際の操作性を確保するための装置）
+R1	Coreference Arg1:T1 Arg2:T11	
+R2	Coreference Arg1:T11 Arg2:T9	
+R3	Coreference Arg1:T9 Arg2:T8	
+R5	Connect Arg1:T10 Arg2:T9	

@@ -1,0 +1,12 @@
+T1	Parts 61 66	樹脂ケース
+T3	Parts 37 41	ヒューズ
+T8	Parts 72 75	モータ
+T2	Parts 0 5	リヤヒータ
+T4	Parts 6 14	電気回路ヒューズ
+R2	Coreference Arg1:T4 Arg2:T3	
+T5	Parts 47 56	リヤヒータ用モータ
+R3	Coreference Arg1:T5 Arg2:T8	
+R1	Connect Arg1:T2 Arg2:T4	
+R4	Part-Whole Arg1:T5 Arg2:T2	
+R5	Contact Arg1:T5 Arg2:T1	
+R6	Part-Whole Arg1:T1 Arg2:T2	

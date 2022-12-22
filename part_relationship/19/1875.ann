@@ -1,0 +1,15 @@
+T19	Parts 21 26	締結ボルト
+T18	Parts 42 47	ベアリング
+T20	Parts 83 88	ベアリング
+T21	Parts 114 119	ベアリング
+T1	Parts 0 2	前輪
+T2	Parts 3 10	ハブベアリング
+T3	Parts 15 19	ナックル
+R1	Coreference Arg1:T18 Arg2:T2	
+R2	Coreference Arg1:T20 Arg2:T18	
+T4	Parts 124 126	車輪
+R3	Coreference Arg1:T21 Arg2:T20	
+R4	Coreference Arg1:T4 Arg2:T1	
+R5	Part-Whole Arg1:T2 Arg2:T1	
+R6	Contact Arg1:T1 Arg2:T3	
+R7	Part-Whole Arg1:T19 Arg2:T2	

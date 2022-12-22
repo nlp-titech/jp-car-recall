@@ -1,0 +1,18 @@
+T1	Parts 0 5	自動変速機
+T2	Parts 10 19	変速制御プログラム
+T3	Parts 49 56	前進用クラッチ
+T5	Parts 80 84	クラッチ
+T6	Parts 91 94	オイル
+T7	Parts 116 121	自動変速機
+T8	Parts 130 133	警告灯
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Connect Arg1:T3 Arg2:T1	
+R3	Coreference Arg1:T5 Arg2:T3	
+R4	Connect Arg1:T6 Arg2:T5	
+R5	Coreference Arg1:T7 Arg2:T1	
+R6	Connect Arg1:T8 Arg2:T7	
+T4	Parts 98 104	ストレーナー
+R7	Connect Arg1:T6 Arg2:T4	
+T9	Parts 36 45	アイドルアップ制御
+R9	Connect Arg1:T9 Arg2:T2	
+R8	Part-Whole Arg1:T4 Arg2:T5	

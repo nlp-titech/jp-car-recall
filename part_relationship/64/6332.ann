@@ -1,0 +1,16 @@
+T1	Parts 23 32	リヤブレーキパイプ
+T2	Parts 0 8	後輪ブレーキ配管
+T5	Parts 120 126	リヤブレーキ
+T6	Parts 105 110	ブレーキ液
+T7	Parts 37 40	ボルト
+T8	Parts 56 59	ボルト
+T3	Parts 13 22	リヤブレーキホース
+R1	Part-Whole Arg1:T3 Arg2:T2	
+R2	Part-Whole Arg1:T1 Arg2:T2	
+R3	Coreference Arg1:T7 Arg2:T8	
+R4	Contact Arg1:T3 Arg2:T1	
+R5	Contact Arg1:T1 Arg2:T7	
+R6	Contact Arg1:T3 Arg2:T7	
+R7	Contact Arg1:T8 Arg2:T6	
+R8	Contact Arg1:T1 Arg2:T6	
+R9	Contact Arg1:T3 Arg2:T6	

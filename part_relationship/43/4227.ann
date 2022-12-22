@@ -1,0 +1,9 @@
+T1	Parts 20 33	リヤコンビネーションランプ
+T2	Parts 0 11	コンクリートミキサー車
+T3	Parts 92 95	ランプ
+T5	Parts 12 15	灯火器
+T6	Parts 112 114	尾灯
+R1	Part-Whole Arg1:T1 Arg2:T5	
+R2	Coreference Arg1:T1 Arg2:T3	
+R4	Part-Whole Arg1:T5 Arg2:T2	
+R3	Part-Whole Arg1:T6 Arg2:T1	

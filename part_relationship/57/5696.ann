@@ -1,0 +1,5 @@
+T1	Parts 37 58	フロント・シート・サイド・エアバッグ用配線
+T2	Parts 17 32	乗員保護システム用接続コネクタ
+T3	Parts 88 106	フロント・シート・サイド・エアバッグ
+R1	Connect Arg1:T3 Arg2:T1	
+R2	Contact Arg1:T1 Arg2:T2	

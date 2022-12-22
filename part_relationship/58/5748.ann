@@ -1,0 +1,16 @@
+T1	Parts 0 13	左右電動スライドドア用配線
+T2	Parts 33 41	電動スライドドア
+T3	Parts 96 104	電動スライドドア
+T5	Parts 42 47	ロアヒンジ
+T6	Parts 111 114	モータ
+T7	Parts 105 110	ラッチ装置
+T11	Parts 20 22	配線
+T12	Parts 50 58	可動型配線ケース
+T13	Parts 61 63	配線
+R1	Coreference Arg1:T1 Arg2:T11	
+R2	Coreference Arg1:T11 Arg2:T13	
+R3	Coreference Arg1:T2 Arg2:T3	
+R4	Contact Arg1:T12 Arg2:T13	
+R5	Contact Arg1:T2 Arg2:T5	
+R6	Part-Whole Arg1:T7 Arg2:T3	
+R7	Part-Whole Arg1:T6 Arg2:T7	

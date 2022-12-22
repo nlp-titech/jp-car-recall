@@ -1,0 +1,10 @@
+T6	Parts 54 57	後写鏡
+T7	Parts 25 28	ナット
+T8	Parts 29 34	ブラケット
+T1	Parts 0 6	大型観光バス
+T2	Parts 12 17	右側後写鏡
+R1	Coreference Arg1:T2 Arg2:T6	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Contact Arg1:T7 Arg2:T8	
+R4	Part-Whole Arg1:T8 Arg2:T2	
+R5	Contact Arg1:T7 Arg2:T2	

@@ -1,0 +1,8 @@
+T8	Parts 80 85	方向指示器
+T9	Parts 7 19	フラッシャリレーユニット
+T1	Parts 0 5	方向指示器
+R1	Coreference Arg1:T8 Arg2:T1	
+T2	Parts 94 98	運転者席
+T3	Parts 99 107	作動状態表示装置
+R2	Connect Arg1:T1 Arg2:T9	
+R3	Connect Arg1:T8 Arg2:T3	

@@ -1,0 +1,10 @@
+T1	Parts 0 7	ショベルローダ
+T3	Parts 12 23	燃料ホース接続用パイプ
+T4	Parts 24 34	燃料フィルタ・ベース
+T7	Parts 90 93	パイプ
+R1	Coreference Arg1:T7 Arg2:T3	
+T9	Parts 108 110	燃料
+R5	Contact Arg1:T4 Arg2:T3	
+R6	Contact Arg1:T9 Arg2:T7	
+R2	Part-Whole Arg1:T3 Arg2:T1	
+R3	Part-Whole Arg1:T4 Arg2:T1	

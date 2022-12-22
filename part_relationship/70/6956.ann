@@ -1,0 +1,13 @@
+T1	Parts 32 36	取付金具
+T2	Parts 23 31	異音防止用バンド
+T3	Parts 0 3	救急車
+T4	Parts 83 85	金具
+T5	Parts 60 62	車両
+T6	Parts 4 11	ストレッチャー
+R1	Part-Whole Arg1:T6 Arg2:T3	
+R2	Part-Whole Arg1:T2 Arg2:T3	
+R3	Contact Arg1:T1 Arg2:T2	
+T7	Parts 52 59	ストレッチャー
+R4	Coreference Arg1:T6 Arg2:T7	
+R5	Coreference Arg1:T3 Arg2:T5	
+R6	Coreference Arg1:T1 Arg2:T4	

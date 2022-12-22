@@ -1,0 +1,7 @@
+T1	Parts 47 51	電気回路
+T2	Parts 3 6	警音器
+T3	Parts 19 22	警音器
+T4	Parts 66 69	警音器
+R1	Coreference Arg1:T2 Arg2:T3	
+R3	Coreference Arg1:T3 Arg2:T4	
+R2	Connect Arg1:T1 Arg2:T4	

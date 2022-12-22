@@ -1,0 +1,18 @@
+T10	Parts 60 68	クラッチディスク
+T11	Parts 69 79	トーションスプリング
+T12	Parts 91 99	クラッチディスク
+T1	Parts 0 8	農業用薬剤散布車
+T2	Parts 9 15	動力伝達装置
+T3	Parts 20 23	原動機
+T4	Parts 31 40	プレッシャプレート
+T5	Parts 53 56	原動機
+R1	Coreference Arg1:T5 Arg2:T3	
+R2	Coreference Arg1:T12 Arg2:T10	
+T6	Parts 115 118	原動機
+R3	Coreference Arg1:T6 Arg2:T5	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Connect Arg1:T3 Arg2:T4	
+R6	Part-Whole Arg1:T4 Arg2:T2	
+R7	Part-Whole Arg1:T11 Arg2:T10	
+R8	Part-Whole Arg1:T10 Arg2:T2	
+R9	Contact Arg1:T10 Arg2:T4	

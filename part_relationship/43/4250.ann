@@ -1,0 +1,29 @@
+T1	Parts 1 13	アスファルトフィニッシャ
+T2	Parts 151 163	アスファルトフィニッシャ
+T3	Parts 25 31	コントローラ
+T4	Parts 101 107	コントローラ
+T5	Parts 175 181	コントローラ
+T6	Parts 251 257	コントローラ
+T7	Parts 131 137	駐車ブレーキ
+T9	Parts 209 218	尿素ＳＣＲシステム
+T12	Parts 48 50	基板
+T13	Parts 18 20	車両
+T14	Parts 168 170	車両
+R1	Coreference Arg1:T1 Arg2:T13	
+R2	Part-Whole Arg1:T3 Arg2:T13	
+R3	Part-Whole Arg1:T12 Arg2:T3	
+R5	Coreference Arg1:T3 Arg2:T4	
+R7	Part-Whole Arg1:T7 Arg2:T13	
+R8	Coreference Arg1:T2 Arg2:T14	
+T10	Parts 183 190	メインモニター
+R14	Part-Whole Arg1:T10 Arg2:T14	
+T17	Parts 231 238	メインモニター
+R15	Coreference Arg1:T10 Arg2:T17	
+R16	Part-Whole Arg1:T9 Arg2:T14	
+R17	Coreference Arg1:T5 Arg2:T6	
+T18	Parts 63 68	ＩＣチップ
+R4	Part-Whole Arg1:T18 Arg2:T12	
+R25	Coreference Arg1:T13 Arg2:T2	
+R26	Coreference Arg1:T4 Arg2:T5	
+R6	Connect Arg1:T5 Arg2:T9	
+R9	Connect Arg1:T5 Arg2:T10	

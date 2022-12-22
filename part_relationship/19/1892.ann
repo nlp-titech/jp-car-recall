@@ -1,0 +1,26 @@
+T1	Parts 6 17	副変速機用電子制御装置
+T2	Parts 22 39	速度抑制装置（スピードリミッター）
+T3	Parts 47 52	信号変換器
+T4	Parts 53 59	電源供給回路
+T5	Parts 85 96	副変速機用電子制御装置
+T7	Parts 117 121	内部回路
+T8	Parts 126 130	副変速機
+T9	Parts 131 137	速度抑制装置
+T10	Parts 139 142	速度計
+R1	Coreference Arg1:T9 Arg2:T2	
+R2	Coreference Arg1:T5 Arg2:T1	
+T11	Parts 0 5	４輪駆動車
+R5	Part-Whole Arg1:T1 Arg2:T11	
+R6	Part-Whole Arg1:T2 Arg2:T11	
+R7	Part-Whole Arg1:T3 Arg2:T11	
+R8	Part-Whole Arg1:T4 Arg2:T3	
+T6	Parts 75 81	キースイッチ
+R10	Part-Whole Arg1:T6 Arg2:T11	
+R11	Part-Whole Arg1:T10 Arg2:T11	
+R12	Connect Arg1:T1 Arg2:T2	
+R13	Connect Arg1:T1 Arg2:T3	
+R4	Connect Arg1:T5 Arg2:T8	
+R14	Part-Whole Arg1:T8 Arg2:T11	
+R3	Part-Whole Arg1:T7 Arg2:T5	
+R15	Connect Arg1:T2 Arg2:T3	
+R16	Connect Arg1:T5 Arg2:T10	

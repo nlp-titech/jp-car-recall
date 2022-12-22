@@ -1,0 +1,13 @@
+T1	Parts 3 9	後輪ブレーキ
+T2	Parts 10 20	リヤアクスルシャフト
+T3	Parts 58 68	リヤアクスルシャフト
+T4	Parts 84 88	ブレーキ
+T5	Parts 95 101	後輪ブレーキ
+T6	Parts 103 105	前輪
+T7	Parts 106 112	回生ブレーキ
+R1	Coreference Arg1:T3 Arg2:T2	
+R2	Connect Arg1:T1 Arg2:T2	
+R3	Coreference Arg1:T4 Arg2:T1	
+R4	Coreference Arg1:T5 Arg2:T4	
+R5	Connect Arg1:T7 Arg2:T6	
+R6	Connect Arg1:T4 Arg2:T6	

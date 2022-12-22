@@ -1,0 +1,5 @@
+T1	Parts 1 15	エンジンコントロールユニット
+T2	Parts 47 54	エンジン警告灯
+T3	Parts 80 89	車載式故障診断装置
+R1	Connect Arg1:T1 Arg2:T2	
+R2	Connect Arg1:T1 Arg2:T3	

@@ -1,0 +1,9 @@
+T1	Parts 0 8	フロントワイパー
+T2	Parts 13 17	モーター
+T3	Parts 37 41	モーター
+T4	Parts 48 52	モーター
+T5	Parts 97 101	ワイパー
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Coreference Arg1:T3 Arg2:T4	
+R3	Coreference Arg1:T1 Arg2:T5	
+R4	Part-Whole Arg1:T2 Arg2:T1	

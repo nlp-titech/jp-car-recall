@@ -1,0 +1,10 @@
+T1	Parts 7 14	ブロアモーター
+T2	Parts 19 31	ブロアモーターレジスター
+T3	Parts 83 95	ブロアモーターハウジング
+T5	Parts 63 67	ヒューズ
+T11	Parts 2 6	空調装置
+R1	Part-Whole Arg1:T1 Arg2:T11	
+R2	Connect Arg1:T2 Arg2:T1	
+R6	Part-Whole Arg1:T2 Arg2:T11	
+R5	Connect Arg1:T2 Arg2:T5	
+R4	Part-Whole Arg1:T3 Arg2:T1	

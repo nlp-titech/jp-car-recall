@@ -1,0 +1,10 @@
+T1	Parts 51 58	ブレーキオイル
+T2	Parts 12 19	ブレーキホース
+T3	Parts 39 46	ブレーキホース
+T4	Parts 0 2	後輪
+T5	Parts 29 33	エンジン
+T7	Parts 3 7	制動装置
+R1	Connect Arg1:T7 Arg2:T4	
+R2	Part-Whole Arg1:T2 Arg2:T7	
+R3	Coreference Arg1:T2 Arg2:T3	
+R4	Contact Arg1:T1 Arg2:T3	

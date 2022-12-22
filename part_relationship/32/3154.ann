@@ -1,0 +1,23 @@
+T1	Parts 0 13	無段変速機（ＣＶＴ）仕様車
+T2	Parts 15 27	自動変速機（ＡＴ）仕様車
+T3	Parts 32 40	ドライブプレート
+T4	Parts 41 49	トルクコンバータ
+T5	Parts 54 57	ボルト
+T6	Parts 73 76	ボルト
+R1	Coreference Arg1:T5 Arg2:T6	
+T7	Parts 112 115	ボルト
+R2	Coreference Arg1:T6 Arg2:T7	
+T9	Parts 116 124	ドライブプレート
+R3	Coreference Arg1:T3 Arg2:T9	
+T8	Parts 125 133	シリンダブロック
+R4	Contact Arg1:T4 Arg2:T3	
+R5	Contact Arg1:T5 Arg2:T4	
+R6	Contact Arg1:T5 Arg2:T3	
+R7	Part-Whole Arg1:T8 Arg2:T2	
+R8	Part-Whole Arg1:T3 Arg2:T2	
+R9	Part-Whole Arg1:T4 Arg2:T2	
+R10	Part-Whole Arg1:T3 Arg2:T1	
+R11	Part-Whole Arg1:T4 Arg2:T1	
+R12	Part-Whole Arg1:T8 Arg2:T1	
+R13	Part-Whole Arg1:T5 Arg2:T2	
+R14	Part-Whole Arg1:T5 Arg2:T1	

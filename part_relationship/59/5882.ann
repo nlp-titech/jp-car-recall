@@ -1,0 +1,15 @@
+T1	Parts 0 6	動力伝達装置
+T2	Parts 27 32	ゴムホース
+T3	Parts 7 15	クラッチ油圧配管
+T4	Parts 63 70	クラッチオイル
+T5	Parts 115 119	クラッチ
+T8	Parts 78 87	オイルレベル警告灯
+T9	Parts 20 26	金属製パイプ
+R1	Part-Whole Arg1:T5 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T1	
+R3	Part-Whole Arg1:T9 Arg2:T3	
+R4	Part-Whole Arg1:T2 Arg2:T3	
+R5	Connect Arg1:T3 Arg2:T5	
+R6	Contact Arg1:T9 Arg2:T2	
+R7	Contact Arg1:T9 Arg2:T4	
+R8	Contact Arg1:T2 Arg2:T4	

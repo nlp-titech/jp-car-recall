@@ -1,0 +1,8 @@
+T1	Parts 23 26	遮熱板
+T2	Parts 0 3	排気管
+T3	Parts 62 65	排気管
+T4	Parts 80 83	排気管
+T5	Parts 7 19	運転者用左側フットレスト
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Coreference Arg1:T3 Arg2:T4	
+R3	Contact Arg1:T2 Arg2:T1	

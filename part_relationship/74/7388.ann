@@ -1,0 +1,7 @@
+T1	Parts 0 5	バン型車両
+T2	Parts 33 38	格納ステー
+T3	Parts 70 75	格納ステー
+T4	Parts 90 95	格納ステー
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Coreference Arg1:T3 Arg2:T2	
+R5	Coreference Arg1:T4 Arg2:T3	

@@ -1,0 +1,5 @@
+T10	Parts 0 18	リアコイルスプリング固定用ブラケット
+T11	Parts 66 71	スプリング
+T1	Parts 19 25	サイドメンバ
+R1	Contact Arg1:T1 Arg2:T10	
+R2	Contact Arg1:T11 Arg2:T10	

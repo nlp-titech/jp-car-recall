@@ -1,0 +1,9 @@
+T10	Parts 89 98	シフト切替用電磁弁
+T11	Parts 20 24	押しピン
+T1	Parts 0 9	トランスミッション
+T2	Parts 10 19	シフト切替用電磁弁
+T5	Parts 71 77	シフトレバー
+R1	Coreference Arg1:T2 Arg2:T10	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Connect Arg1:T1 Arg2:T5	
+R4	Part-Whole Arg1:T11 Arg2:T2	

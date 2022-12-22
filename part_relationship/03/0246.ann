@@ -1,0 +1,8 @@
+T8	Parts 0 11	前車軸用グリスチューブ
+T9	Parts 26 33	グリスチューブ
+T10	Parts 34 44	前輪用ブレーキパイプ
+T11	Parts 73 80	ブレーキパイプ
+T12	Parts 97 104	ブレーキパイプ
+R1	Coreference Arg1:T9 Arg2:T8	
+R2	Coreference Arg1:T12 Arg2:T11	
+R3	Coreference Arg1:T10 Arg2:T11	

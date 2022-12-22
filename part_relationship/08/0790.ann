@@ -1,0 +1,15 @@
+T24	Parts 8 12	バッテリ
+T25	Parts 42 46	バッテリ
+T26	Parts 59 62	正極板
+T27	Parts 69 72	正極板
+T28	Parts 150 154	バッテリ
+R1	Coreference Arg1:T25 Arg2:T24	
+R2	Coreference Arg1:T27 Arg2:T26	
+R3	Coreference Arg1:T28 Arg2:T25	
+T2	Parts 118 123	バッテリ液
+T3	Parts 160 163	原動機
+T4	Parts 0 4	警察車両
+R4	Part-Whole Arg1:T24 Arg2:T4	
+R5	Connect Arg1:T25 Arg2:T26	
+R7	Contact Arg1:T2 Arg2:T25	
+R8	Part-Whole Arg1:T3 Arg2:T4	

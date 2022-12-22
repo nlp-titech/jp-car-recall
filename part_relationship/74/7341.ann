@@ -1,0 +1,20 @@
+T1	Parts 0 4	燃料装置
+T2	Parts 9 16	燃料供給パイプ
+T3	Parts 23 33	燃料圧力温度センサー
+T4	Parts 34 41	取付ハウジング
+T5	Parts 54 59	ハウジング
+T6	Parts 91 96	ハウジング
+T7	Parts 103 105	燃料
+T8	Parts 113 116	警告灯
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Contact Arg1:T2 Arg2:T4	
+R3	Contact Arg1:T3 Arg2:T4	
+R4	Connect Arg1:T2 Arg2:T3	
+R5	Coreference Arg1:T4 Arg2:T5	
+R6	Coreference Arg1:T6 Arg2:T5	
+R7	Connect Arg1:T7 Arg2:T5	
+R8	Connect Arg1:T7 Arg2:T3	
+R9	Connect Arg1:T7 Arg2:T2	
+R10	Part-Whole Arg1:T3 Arg2:T1	
+R11	Part-Whole Arg1:T4 Arg2:T1	
+R12	Connect Arg1:T1 Arg2:T8	

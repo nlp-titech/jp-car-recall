@@ -1,0 +1,20 @@
+T17	Parts 143 154	ステアリングシリンダー
+T18	Parts 108 119	ステアリングシリンダー
+T19	Parts 102 104	車体
+T20	Parts 19 29	サスペンションリンク
+T21	Parts 80 92	サスペンションシリンダー
+T23	Parts 56 59	リンク
+T26	Parts 120 124	アクスル
+T27	Parts 125 129	シャーシ
+T1	Parts 0 8	フロントアクスル
+T2	Parts 9 13	シャーシ
+R1	Coreference Arg1:T20 Arg2:T23	
+R2	Coreference Arg1:T1 Arg2:T26	
+R3	Coreference Arg1:T2 Arg2:T27	
+R4	Coreference Arg1:T18 Arg2:T17	
+R5	Connect Arg1:T1 Arg2:T2	
+R6	Contact Arg1:T2 Arg2:T20	
+R7	Contact Arg1:T1 Arg2:T20	
+T3	Parts 159 165	ステアリング
+R8	Connect Arg1:T17 Arg2:T3	
+R9	Contact Arg1:T19 Arg2:T27	

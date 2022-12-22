@@ -1,0 +1,13 @@
+T1	Parts 0 4	窓ガラス
+T2	Parts 9 17	盗難防止警報装置
+T3	Parts 23 26	ラベル
+T4	Parts 28 32	運転者席
+T5	Parts 33 36	助手席
+T6	Parts 37 42	側面ガラス
+T7	Parts 43 47	運転者席
+R1	Coreference Arg1:T7 Arg2:T4	
+R2	Part-Whole Arg1:T6 Arg2:T1	
+R3	Part-Whole Arg1:T6 Arg2:T4	
+R4	Part-Whole Arg1:T6 Arg2:T5	
+R6	Contact Arg1:T3 Arg2:T1	
+R5	Contact Arg1:T3 Arg2:T6	

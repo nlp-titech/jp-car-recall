@@ -1,0 +1,13 @@
+T1	Parts 0 7	ヒューズライン
+T2	Parts 8 10	配線
+T3	Parts 20 23	前照灯
+T4	Parts 28 33	方向指示器
+T5	Parts 40 45	方向指示器
+R1	Coreference Arg1:T5 Arg2:T4	
+T6	Parts 54 56	尾灯
+T7	Parts 71 73	尾灯
+R2	Coreference Arg1:T7 Arg2:T6	
+R3	Contact Arg1:T1 Arg2:T2	
+R4	Contact Arg1:T2 Arg2:T3	
+R5	Contact Arg1:T2 Arg2:T4	
+R6	Contact Arg1:T2 Arg2:T6	

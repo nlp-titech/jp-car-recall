@@ -1,0 +1,15 @@
+T12	Parts 10 15	燃料ポンプ
+T13	Parts 19 22	シール
+T14	Parts 43 46	シール
+T1	Parts 0 5	燃料タンク
+R1	Coreference Arg1:T13 Arg2:T14	
+T2	Parts 96 99	ポンプ
+R2	Coreference Arg1:T12 Arg2:T2	
+T3	Parts 104 106	燃料
+R4	Contact Arg1:T13 Arg2:T12	
+T4	Parts 89 91	燃料
+R6	Coreference Arg1:T4 Arg2:T3	
+R5	Part-Whole Arg1:T4 Arg2:T1	
+R3	Contact Arg1:T1 Arg2:T12	
+R7	Contact Arg1:T1 Arg2:T13	
+R8	Contact Arg1:T4 Arg2:T2	

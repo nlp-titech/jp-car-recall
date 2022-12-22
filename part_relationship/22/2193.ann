@@ -1,0 +1,11 @@
+T13	Parts 11 19	リダクションギヤ
+T14	Parts 34 36	ギヤ
+T1	Parts 0 10	無段変速機（ＣＶＴ）
+R1	Coreference Arg1:T14 Arg2:T13	
+T2	Parts 82 89	変速制御バルブ
+T3	Parts 102 105	警告灯
+R2	Part-Whole Arg1:T13 Arg2:T1	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Connect Arg1:T3 Arg2:T1	
+T4	Parts 37 40	オイル
+R3	Contact Arg1:T4 Arg2:T14	

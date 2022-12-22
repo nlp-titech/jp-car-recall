@@ -1,0 +1,22 @@
+T2	Parts 48 55	エンジンオイル
+T3	Parts 106 113	エンジンオイル
+T4	Parts 145 149	エンジン
+T6	Parts 8 21	クランクポジションセンサー
+T7	Parts 56 60	センサー
+T8	Parts 94 98	センサー
+T10	Parts 0 3	原動機
+T11	Parts 34 37	保護材
+T12	Parts 67 69	銅線
+T13	Parts 116 118	銅線
+T14	Parts 129 131	銅線
+R1	Coreference Arg1:T6 Arg2:T7	
+R2	Coreference Arg1:T7 Arg2:T8	
+R3	Coreference Arg1:T2 Arg2:T3	
+R4	Coreference Arg1:T12 Arg2:T13	
+R5	Coreference Arg1:T13 Arg2:T14	
+R7	Part-Whole Arg1:T6 Arg2:T10	
+R8	Part-Whole Arg1:T11 Arg2:T6	
+R9	Part-Whole Arg1:T2 Arg2:T10	
+R10	Part-Whole Arg1:T12 Arg2:T7	
+R6	Part-Whole Arg1:T4 Arg2:T10	
+R11	Contact Arg1:T3 Arg2:T4	

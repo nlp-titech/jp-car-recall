@@ -1,0 +1,9 @@
+T8	Parts 0 3	原動機
+T9	Parts 22 25	原動機
+T10	Parts 48 51	原動機
+T11	Parts 4 8	アース線
+T12	Parts 39 43	アース線
+R1	Coreference Arg1:T9 Arg2:T8	
+R2	Coreference Arg1:T11 Arg2:T12	
+R3	Coreference Arg1:T10 Arg2:T9	
+R4	Part-Whole Arg1:T11 Arg2:T8	

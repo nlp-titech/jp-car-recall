@@ -1,0 +1,10 @@
+T3	Parts 32 36	フィルタ
+T6	Parts 0 6	エアフィルタ
+T7	Parts 53 59	エアフィルタ
+R1	Coreference Arg1:T6 Arg2:T7	
+R2	Part-Whole Arg1:T3 Arg2:T6	
+T1	Parts 7 11	シール剤
+R3	Part-Whole Arg1:T1 Arg2:T6	
+T2	Parts 21 24	シール
+R4	Coreference Arg1:T1 Arg2:T2	
+R5	Contact Arg1:T2 Arg2:T3	

@@ -1,0 +1,26 @@
+T1	Parts 121 133	パワーステアリングオイル
+T2	Parts 36 47	エンジン制御用電気配線
+T3	Parts 67 76	パワーステアリング
+T4	Parts 0 4	エンジン
+T5	Parts 23 34	スタータモータ電気配線
+T6	Parts 12 22	オルタネータ電気配線
+T8	Parts 137 141	ハンドル
+T11	Parts 62 66	電気配線
+T12	Parts 156 160	電気配線
+T13	Parts 168 173	電気配線芯
+T14	Parts 77 84	リターンパイプ
+T15	Parts 109 116	リターンパイプ
+T16	Parts 174 181	リターンパイプ
+T17	Parts 161 163	被覆
+R1	Oneway-Coreference Arg1:T11 Arg2:T6	
+R2	Oneway-Coreference Arg1:T11 Arg2:T5	
+R3	Oneway-Coreference Arg1:T11 Arg2:T2	
+R4	Coreference Arg1:T11 Arg2:T12	
+R5	Coreference Arg1:T14 Arg2:T15	
+R6	Coreference Arg1:T15 Arg2:T16	
+R7	Contact Arg1:T4 Arg2:T2	
+R8	Part-Whole Arg1:T14 Arg2:T3	
+R9	Contact Arg1:T3 Arg2:T1	
+R10	Connect Arg1:T3 Arg2:T8	
+R11	Part-Whole Arg1:T17 Arg2:T12	
+R12	Part-Whole Arg1:T13 Arg2:T12	

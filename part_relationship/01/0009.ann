@@ -1,0 +1,9 @@
+T10	Parts 0 5	燃料タンク
+T11	Parts 6 8	底板
+T12	Parts 18 21	タンク
+T13	Parts 66 68	底板
+T1	Parts 81 83	燃料
+R1	Part-Whole Arg1:T11 Arg2:T10	
+R2	Coreference Arg1:T12 Arg2:T10	
+R3	Part-Whole Arg1:T1 Arg2:T12	
+R4	Coreference Arg1:T13 Arg2:T11	

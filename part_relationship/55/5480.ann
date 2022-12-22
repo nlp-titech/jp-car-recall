@@ -1,0 +1,5 @@
+T1	Parts 0 13	エアバッグ制御コンピュータ
+T2	Parts 44 53	カーテンエアバッグ
+T3	Parts 33 41	サイドエアバッグ
+R2	Connect Arg1:T1 Arg2:T3	
+R3	Connect Arg1:T1 Arg2:T2	

@@ -1,0 +1,19 @@
+T16	Parts 41 43	ばね
+T19	Parts 55 64	ウェザーストリップ
+T22	Parts 89 92	ロック
+T23	Parts 75 76	扉
+T24	Parts 159 162	非常扉
+T25	Parts 93 97	キャッチ
+T26	Parts 34 37	ロック
+T1	Parts 9 12	非常扉
+T2	Parts 25 29	キャッチ
+R1	Coreference Arg1:T22 Arg2:T26	
+R2	Coreference Arg1:T25 Arg2:T2	
+R3	Coreference Arg1:T23 Arg2:T1	
+R4	Coreference Arg1:T24 Arg2:T23	
+T3	Parts 13 20	ロックシステム
+R5	Part-Whole Arg1:T3 Arg2:T1	
+R6	Part-Whole Arg1:T2 Arg2:T3	
+R7	Part-Whole Arg1:T26 Arg2:T3	
+R8	Part-Whole Arg1:T16 Arg2:T3	
+R9	Part-Whole Arg1:T19 Arg2:T1	

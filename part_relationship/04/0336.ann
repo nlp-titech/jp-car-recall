@@ -1,0 +1,9 @@
+T6	Parts 20 23	過給機
+T7	Parts 24 29	タービン翼
+T8	Parts 56 61	タービン翼
+T1	Parts 0 3	原動機
+T2	Parts 4 13	可変ノズル付過給機
+R1	Coreference Arg1:T6 Arg2:T2	
+R2	Coreference Arg1:T8 Arg2:T7	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T7 Arg2:T6	

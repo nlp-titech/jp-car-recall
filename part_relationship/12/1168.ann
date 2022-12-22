@@ -1,0 +1,12 @@
+T1	Parts 0 3	変速機
+T2	Parts 4 18	ギヤシフトユニット（ＧＳＵ）
+T4	Parts 29 33	コネクタ
+T5	Parts 62 66	コネクタ
+T7	Parts 91 93	エア
+T9	Parts 117 121	クラッチ
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R4	Coreference Arg1:T5 Arg2:T4	
+R6	Connect Arg1:T9 Arg2:T1	
+R8	Part-Whole Arg1:T4 Arg2:T2	
+R9	Part-Whole Arg1:T5 Arg2:T2	
+R1	Contact Arg1:T7 Arg2:T5	

@@ -1,0 +1,14 @@
+T1	Parts 0 12	横滑り防止装置（ＥＳＰ）
+T2	Parts 17 30	ＥＳＰコントロールユニット
+T3	Parts 31 38	制御プログラム
+T4	Parts 46 50	エンジン
+T5	Parts 54 57	ＥＳＰ
+T6	Parts 74 77	ＥＳＰ
+T7	Parts 86 97	電動パーキングブレーキ
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T1	
+R3	Connect Arg1:T2 Arg2:T3	
+R4	Coreference Arg1:T1 Arg2:T5	
+R5	Connect Arg1:T4 Arg2:T5	
+R6	Coreference Arg1:T5 Arg2:T6	
+R7	Connect Arg1:T6 Arg2:T7	

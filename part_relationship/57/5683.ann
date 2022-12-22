@@ -1,0 +1,14 @@
+T1	Parts 50 63	ＡＢＳコントロールユニット
+T2	Parts 65 83	インジェクションコントロールユニット
+T3	Parts 0 23	電動コントロール式自動駐車ブレーキ制御ユニット
+T5	Parts 113 119	駐車ブレーキ
+T7	Parts 37 41	電気配線
+T9	Parts 96 98	車両
+R2	Connect Arg1:T5 Arg2:T3	
+R3	Connect Arg1:T1 Arg2:T7	
+R4	Connect Arg1:T2 Arg2:T7	
+R5	Connect Arg1:T7 Arg2:T3	
+R6	Part-Whole Arg1:T5 Arg2:T9	
+R7	Part-Whole Arg1:T2 Arg2:T9	
+R8	Part-Whole Arg1:T1 Arg2:T9	
+R9	Part-Whole Arg1:T3 Arg2:T9	

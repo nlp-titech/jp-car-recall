@@ -1,0 +1,6 @@
+T1	Parts 0 12	サイドスタンドスプリング
+T2	Parts 51 56	スプリング
+T3	Parts 61 68	サイドスタンド
+T4	Parts 98 102	エンジン
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Contact Arg1:T2 Arg2:T3	

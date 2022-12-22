@@ -1,0 +1,7 @@
+T1	Parts 1 3	前輪
+T2	Parts 4 11	ハブベアリング
+T4	Parts 31 36	ベアリング
+R1	Coreference Arg1:T4 Arg2:T2	
+T5	Parts 92 97	ベアリング
+R2	Coreference Arg1:T5 Arg2:T4	
+R3	Part-Whole Arg1:T2 Arg2:T1	

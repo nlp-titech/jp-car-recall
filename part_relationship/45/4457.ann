@@ -1,0 +1,7 @@
+T2	Parts 35 38	レンズ
+T3	Parts 0 5	番号灯電球
+T4	Parts 31 34	番号灯
+R1	Part-Whole Arg1:T3 Arg2:T4	
+R2	Part-Whole Arg1:T2 Arg2:T4	
+T1	Parts 40 46	電球ソケット
+R3	Part-Whole Arg1:T1 Arg2:T4	

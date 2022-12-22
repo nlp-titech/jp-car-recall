@@ -1,0 +1,7 @@
+T1	Parts 11 23	ステアリングギヤボックス
+T2	Parts 70 78	かじ取りハンドル
+T3	Parts 0 6	かじ取り装置
+T5	Parts 32 37	固定ナット
+R1	Part-Whole Arg1:T1 Arg2:T3	
+R3	Part-Whole Arg1:T2 Arg2:T3	
+R2	Part-Whole Arg1:T5 Arg2:T1	

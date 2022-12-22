@@ -1,0 +1,21 @@
+T2	Parts 177 185	リーフスプリング
+T3	Parts 0 5	冷蔵冷凍車
+T10	Parts 10 18	シャーシフレーム
+T4	Parts 25 50	Ｕボルト（以下、「縦根太固定用Ｕボルト」という。）
+T1	Parts 77 87	左側リーフスプリング
+T5	Parts 94 119	Ｕボルト（以下、「リーフ固定用Ｕボルト」という。）
+T6	Parts 6 9	縦根太
+T7	Parts 151 161	縦根太固定用Ｕボルト
+T8	Parts 162 172	リーフ固定用Ｕボルト
+R2	Part-Whole Arg1:T6 Arg2:T3	
+R3	Part-Whole Arg1:T10 Arg2:T3	
+R4	Contact Arg1:T6 Arg2:T10	
+R5	Contact Arg1:T10 Arg2:T4	
+R6	Contact Arg1:T6 Arg2:T4	
+R8	Contact Arg1:T1 Arg2:T5	
+R1	Coreference Arg1:T4 Arg2:T7	
+R9	Coreference Arg1:T5 Arg2:T8	
+R7	Coreference Arg1:T1 Arg2:T2	
+R10	Part-Whole Arg1:T1 Arg2:T3	
+R11	Part-Whole Arg1:T4 Arg2:T3	
+R12	Part-Whole Arg1:T5 Arg2:T3	

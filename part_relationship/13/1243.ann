@@ -1,0 +1,11 @@
+T18	Parts 113 116	発電機
+T21	Parts 24 30	プリント基板
+T22	Parts 57 63	プリント基板
+T1	Parts 0 11	コンビネーションメータ
+T2	Parts 16 23	発電機起動回路
+T3	Parts 46 49	メータ
+R1	Coreference Arg1:T1 Arg2:T3	
+R2	Coreference Arg1:T21 Arg2:T22	
+R4	Part-Whole Arg1:T21 Arg2:T2	
+R3	Contact Arg1:T1 Arg2:T2	
+R6	Contact Arg1:T2 Arg2:T18	

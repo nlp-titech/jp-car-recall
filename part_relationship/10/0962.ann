@@ -1,0 +1,21 @@
+T14	Parts 116 124	ボールジョイント
+T1	Parts 0 6	リヤアクスル
+T2	Parts 7 14	センターアーム
+T3	Parts 15 19	ナックル
+T4	Parts 24 29	タイロッド
+T7	Parts 66 70	ハンドル
+T8	Parts 83 91	キャッスルナット
+T9	Parts 133 141	ボールジョイント
+R3	Coreference Arg1:T9 Arg2:T14	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T3 Arg2:T1	
+T5	Parts 30 38	ボールジョイント
+T10	Parts 42 50	キャッスルナット
+R1	Coreference Arg1:T5 Arg2:T14	
+R5	Coreference Arg1:T10 Arg2:T8	
+R6	Connect Arg1:T2 Arg2:T3	
+R7	Contact Arg1:T2 Arg2:T4	
+R8	Contact Arg1:T3 Arg2:T4	
+R9	Connect Arg1:T4 Arg2:T5	
+R10	Contact Arg1:T5 Arg2:T10	
+R12	Connect Arg1:T1 Arg2:T7	

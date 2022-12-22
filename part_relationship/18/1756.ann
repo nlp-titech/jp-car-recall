@@ -1,0 +1,21 @@
+T14	Parts 37 40	原動機
+T15	Parts 41 51	シリンダヘッドカバー
+T16	Parts 73 79	ヘッドカバー
+T17	Parts 15 19	チューブ
+T18	Parts 92 96	チューブ
+T19	Parts 129 133	チューブ
+T20	Parts 52 59	エアクリーナー
+T23	Parts 157 160	原動機
+T1	Parts 0 10	原動機制御用電気配線
+T2	Parts 32 36	電気配線
+R1	Coreference Arg1:T1 Arg2:T2	
+R3	Coreference Arg1:T17 Arg2:T18	
+R4	Coreference Arg1:T18 Arg2:T19	
+T3	Parts 144 148	電気配線
+R5	Coreference Arg1:T2 Arg2:T3	
+R6	Coreference Arg1:T14 Arg2:T23	
+R7	Part-Whole Arg1:T17 Arg2:T1	
+R8	Part-Whole Arg1:T15 Arg2:T14	
+R9	Part-Whole Arg1:T20 Arg2:T14	
+R10	Connect Arg1:T14 Arg2:T2	
+R2	Coreference Arg1:T15 Arg2:T16	

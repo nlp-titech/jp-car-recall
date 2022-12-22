@@ -1,0 +1,11 @@
+T1	Parts 16 25	前照灯操作スイッチ
+T2	Parts 0 6	大型トラック
+T3	Parts 7 11	灯火装置
+T4	Parts 84 87	前照灯
+T9	Parts 26 28	配線
+R1	Part-Whole Arg1:T3 Arg2:T2	
+R2	Part-Whole Arg1:T9 Arg2:T1	
+R5	Connect Arg1:T1 Arg2:T4	
+R6	Part-Whole Arg1:T1 Arg2:T3	
+R3	Contact Arg1:T9 Arg2:T4	
+R4	Part-Whole Arg1:T4 Arg2:T3	

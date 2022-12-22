@@ -1,0 +1,9 @@
+T1	Parts 0 8	ハイブリッドバス
+T2	Parts 13 18	ボデー骨格
+T3	Parts 29 33	燃料配管
+T4	Parts 65 69	燃料配管
+T5	Parts 74 76	燃料
+R1	Coreference Arg1:T4 Arg2:T3	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T3 Arg2:T1	
+R4	Contact Arg1:T5 Arg2:T4	

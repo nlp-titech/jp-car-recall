@@ -1,0 +1,10 @@
+T1	Parts 0 8	クランク角センサ
+T2	Parts 9 11	配線
+T3	Parts 37 39	配線
+T4	Parts 40 52	パワーステアリングベルト
+T5	Parts 57 59	被覆
+T6	Parts 97 99	配線
+R1	Coreference Arg1:T6 Arg2:T3	
+R2	Coreference Arg1:T3 Arg2:T2	
+R3	Contact Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T5 Arg2:T3	

@@ -1,0 +1,15 @@
+T14	Parts 11 18	ブレーキバルブ
+T15	Parts 45 51	プランジャー
+T16	Parts 92 99	ブレーキバルブ
+T1	Parts 0 6	大型トラクタ
+T2	Parts 31 38	ブレーキペダル
+R1	Coreference Arg1:T16 Arg2:T14	
+T3	Parts 105 109	ブレーキ
+R3	Contact Arg1:T2 Arg2:T15	
+R4	Connect Arg1:T2 Arg2:T14	
+R6	Part-Whole Arg1:T15 Arg2:T14	
+R7	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T14 Arg2:T3	
+R5	Part-Whole Arg1:T3 Arg2:T1	
+R8	Part-Whole Arg1:T16 Arg2:T3	
+R9	Connect Arg1:T2 Arg2:T3	

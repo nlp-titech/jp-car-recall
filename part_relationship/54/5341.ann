@@ -1,0 +1,5 @@
+T2	Parts 0 16	自動変速機用オイルクーラーホース
+T3	Parts 17 22	ラジエータ
+T4	Parts 44 47	冷却水
+R1	Contact Arg1:T2 Arg2:T3	
+R2	Contact Arg1:T3 Arg2:T4	

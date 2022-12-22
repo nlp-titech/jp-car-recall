@@ -1,0 +1,15 @@
+T1	Parts 0 8	農業用薬剤散布車
+T2	Parts 9 16	後退灯スイッチ
+T3	Parts 45 53	前後進操作レバー
+T4	Parts 23 27	スイッチ
+T5	Parts 28 32	ハーネス
+T6	Parts 63 67	ハーネス
+T7	Parts 105 108	後退灯
+R1	Coreference Arg1:T4 Arg2:T2	
+R2	Coreference Arg1:T6 Arg2:T5	
+R3	Contact Arg1:T5 Arg2:T4	
+R6	Part-Whole Arg1:T2 Arg2:T1	
+R7	Part-Whole Arg1:T5 Arg2:T1	
+R8	Part-Whole Arg1:T3 Arg2:T1	
+R9	Part-Whole Arg1:T7 Arg2:T1	
+R5	Connect Arg1:T4 Arg2:T7	

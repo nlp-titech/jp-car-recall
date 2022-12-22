@@ -1,0 +1,14 @@
+T16	Parts 39 41	車両
+T17	Parts 103 112	運賃表示用モニター
+T18	Parts 21 26	取付け金具
+T19	Parts 48 50	金具
+T20	Parts 96 98	金具
+T1	Parts 0 6	高速路線バス
+T2	Parts 11 20	運賃表示用モニター
+R1	Coreference Arg1:T19 Arg2:T18	
+R2	Coreference Arg1:T20 Arg2:T19	
+R3	Coreference Arg1:T17 Arg2:T2	
+R4	Contact Arg1:T18 Arg2:T2	
+R5	Coreference Arg1:T16 Arg2:T1	
+R6	Part-Whole Arg1:T2 Arg2:T1	
+R7	Contact Arg1:T18 Arg2:T1	

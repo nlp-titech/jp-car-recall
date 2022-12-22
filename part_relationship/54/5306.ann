@@ -1,0 +1,14 @@
+T1	Parts 15 26	コントロール・ユニット
+T2	Parts 132 145	コントロール・ユニット基板
+T3	Parts 1 10	トランスミッション
+T4	Parts 81 88	シリンダヘッド
+T5	Parts 27 32	プログラム
+T7	Parts 76 80	ピストン
+T9	Parts 40 53	ギヤ変速用シフト・シリンダ
+R1	Connect Arg1:T1 Arg2:T3	
+R2	Part-Whole Arg1:T5 Arg2:T1	
+R3	Contact Arg1:T7 Arg2:T4	
+R4	Coreference Arg1:T1 Arg2:T2	
+R8	Connect Arg1:T9 Arg2:T5	
+R5	Part-Whole Arg1:T4 Arg2:T9	
+R9	Part-Whole Arg1:T7 Arg2:T9	

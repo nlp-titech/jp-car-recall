@@ -1,0 +1,8 @@
+T8	Parts 100 107	アクセルペダル
+T9	Parts 86 99	アクセル開度センサハーネス
+T10	Parts 78 82	クランプ
+T11	Parts 31 39	ハーネスクランプ
+T1	Parts 2 9	アクセルペダル
+T2	Parts 17 26	アクセル開度センサ
+R1	Coreference Arg1:T10 Arg2:T11	
+R2	Coreference Arg1:T8 Arg2:T1	

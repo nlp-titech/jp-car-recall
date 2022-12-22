@@ -1,0 +1,7 @@
+T2	Parts 0 5	かじ取装置
+T3	Parts 6 25	第１軸操舵用ステアリングレバー支点ピン
+T5	Parts 46 48	ピン
+T6	Parts 83 85	ピン
+R1	Coreference Arg1:T6 Arg2:T5	
+R2	Coreference Arg1:T5 Arg2:T3	
+R3	Part-Whole Arg1:T3 Arg2:T2	

@@ -1,0 +1,17 @@
+T8	Parts 41 52	ブレーキリンクプレート
+T9	Parts 53 57	シャフト
+T1	Parts 0 7	ブレーキペダル
+T3	Parts 86 93	ブレーキアーム
+T6	Parts 165 169	ブレーキ
+T2	Parts 18 28	運転補助装置装着車両
+R2	Part-Whole Arg1:T1 Arg2:T2	
+R3	Part-Whole Arg1:T8 Arg2:T2	
+R4	Part-Whole Arg1:T9 Arg2:T2	
+R5	Contact Arg1:T8 Arg2:T9	
+R8	Part-Whole Arg1:T3 Arg2:T4	
+T4	Parts 75 77	車両
+R1	Coreference Arg1:T2 Arg2:T4	
+R7	Part-Whole Arg1:T6 Arg2:T4	
+R9	Connect Arg1:T1 Arg2:T6	
+R10	Contact Arg1:T1 Arg2:T8	
+R11	Connect Arg1:T1 Arg2:T3	

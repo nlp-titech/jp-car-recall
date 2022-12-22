@@ -1,0 +1,22 @@
+T16	Parts 118 122	エンジン
+T18	Parts 53 57	エンジン
+T20	Parts 64 69	取付ステー
+T21	Parts 37 42	取付ステー
+T22	Parts 96 107	インタークーラーパイプ
+T25	Parts 108 111	過給機
+T26	Parts 135 138	過給機
+T1	Parts 0 3	原動機
+T2	Parts 4 7	過給機
+T3	Parts 8 16	インタークーラー
+T4	Parts 21 32	インタークーラーパイプ
+R1	Coreference Arg1:T18 Arg2:T1	
+R2	Coreference Arg1:T26 Arg2:T25	
+R3	Coreference Arg1:T16 Arg2:T18	
+R4	Coreference Arg1:T25 Arg2:T2	
+R5	Coreference Arg1:T22 Arg2:T4	
+R6	Coreference Arg1:T20 Arg2:T21	
+R9	Connect Arg1:T2 Arg2:T3	
+R10	Contact Arg1:T2 Arg2:T4	
+R11	Contact Arg1:T3 Arg2:T4	
+R14	Contact Arg1:T4 Arg2:T21	
+R7	Part-Whole Arg1:T2 Arg2:T1	

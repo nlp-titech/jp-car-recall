@@ -1,0 +1,13 @@
+T1	Parts 0 4	燃料装置
+T2	Parts 9 11	燃料
+T3	Parts 16 18	配管
+T4	Parts 19 27	クイックコネクタ
+T5	Parts 38 42	エンジン
+T6	Parts 66 70	コネクタ
+T7	Parts 99 101	燃料
+R1	Coreference Arg1:T2 Arg2:T7	
+R2	Coreference Arg1:T4 Arg2:T6	
+R3	Contact Arg1:T2 Arg2:T3	
+R4	Part-Whole Arg1:T1 Arg2:T5	
+R5	Part-Whole Arg1:T3 Arg2:T1	
+R6	Contact Arg1:T3 Arg2:T4	

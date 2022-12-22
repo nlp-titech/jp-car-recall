@@ -1,0 +1,23 @@
+T1	Parts 0 5	駆動用電池
+T2	Parts 7 22	セルモニターユニット（ＣＭＵ）
+T3	Parts 27 34	制御プログラム
+T4	Parts 42 49	パワースイッチ
+T5	Parts 62 64	車両
+T8	Parts 131 140	ＥＶシステム警告灯
+T9	Parts 145 149	エンジン
+T10	Parts 159 164	駆動用電池
+R1	Coreference Arg1:T1 Arg2:T10	
+T11	Parts 213 215	電池
+R2	Coreference Arg1:T10 Arg2:T11	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T3 Arg2:T2	
+R5	Part-Whole Arg1:T1 Arg2:T5	
+R6	Part-Whole Arg1:T4 Arg2:T5	
+R9	Part-Whole Arg1:T9 Arg2:T5	
+R10	Part-Whole Arg1:T8 Arg2:T5	
+T6	Parts 81 85	電池セル
+T7	Parts 235 239	電池セル
+R8	Coreference Arg1:T6 Arg2:T7	
+R11	Part-Whole Arg1:T6 Arg2:T1	
+R7	Connect Arg1:T2 Arg2:T4	
+R12	Connect Arg1:T8 Arg2:T10	

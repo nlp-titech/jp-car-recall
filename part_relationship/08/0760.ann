@@ -1,0 +1,11 @@
+T1	Parts 0 7	シリンダヘッド
+T2	Parts 8 14	カムシャフト
+T4	Parts 48 54	カムシャフト
+T5	Parts 55 58	オイル
+T6	Parts 65 71	カムシャフト
+R1	Coreference Arg1:T6 Arg2:T4	
+R2	Coreference Arg1:T4 Arg2:T2	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R5	Contact Arg1:T5 Arg2:T4	
+T3	Parts 16 19	オイル
+R4	Coreference Arg1:T5 Arg2:T3	

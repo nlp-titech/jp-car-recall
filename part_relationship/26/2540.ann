@@ -1,0 +1,14 @@
+T12	Parts 0 4	トラクタ
+T13	Parts 36 54	トラクタ側トレーラコントロールバルブ
+T14	Parts 55 59	トレーラ
+T15	Parts 75 84	トレーラ側ブレーキ
+T16	Parts 27 31	トレーラ
+R1	Coreference Arg1:T14 Arg2:T16	
+T1	Parts 85 87	エア
+T2	Parts 97 103	駐車ブレーキ
+R2	Part-Whole Arg1:T13 Arg2:T12	
+R4	Contact Arg1:T15 Arg2:T1	
+R5	Connect Arg1:T15 Arg2:T2	
+R3	Part-Whole Arg1:T2 Arg2:T12	
+R6	Contact Arg1:T16 Arg2:T12	
+R7	Part-Whole Arg1:T15 Arg2:T14	

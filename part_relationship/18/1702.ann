@@ -1,0 +1,14 @@
+T14	Parts 12 19	ベーパライザー
+T15	Parts 21 24	減圧弁
+T1	Parts 4 6	燃料
+T4	Parts 43 47	エンジン
+T5	Parts 51 53	燃料
+R1	Coreference Arg1:T1 Arg2:T5	
+T6	Parts 59 64	過流防止弁
+T7	Parts 69 73	エンジン
+R2	Coreference Arg1:T4 Arg2:T7	
+R3	Part-Whole Arg1:T15 Arg2:T14	
+R4	Contact Arg1:T1 Arg2:T14	
+R5	Connect Arg1:T14 Arg2:T4	
+R6	Contact Arg1:T5 Arg2:T6	
+R7	Contact Arg1:T4 Arg2:T5	

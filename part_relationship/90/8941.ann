@@ -1,0 +1,10 @@
+T1	Parts 0 7	ショベルローダ
+T2	Parts 18 22	キャップ
+T3	Parts 77 79	車両
+T4	Parts 8 13	電源リレー
+T5	Parts 67 72	メイン電源
+R1	Coreference Arg1:T1 Arg2:T3	
+R2	Part-Whole Arg1:T5 Arg2:T1	
+R3	Part-Whole Arg1:T4 Arg2:T1	
+R4	Part-Whole Arg1:T2 Arg2:T4	
+R5	Connect Arg1:T4 Arg2:T5	

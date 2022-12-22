@@ -1,0 +1,11 @@
+T14	Parts 81 90	駐車ブレーキレバー
+T15	Parts 48 55	プッシュロッド
+T16	Parts 14 19	ラチェット
+T1	Parts 0 9	駐車ブレーキレバー
+R1	Coreference Arg1:T14 Arg2:T1	
+T4	Parts 103 109	駐車ブレーキ
+T5	Parts 119 125	駐車ブレーキ
+R2	Coreference Arg1:T5 Arg2:T4	
+R3	Contact Arg1:T16 Arg2:T1	
+R6	Part-Whole Arg1:T15 Arg2:T16	
+R7	Part-Whole Arg1:T1 Arg2:T4	

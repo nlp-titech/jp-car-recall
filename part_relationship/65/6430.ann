@@ -1,0 +1,9 @@
+T1	Parts 11 22	左リヤドライブシャフト
+T2	Parts 41 49	ドライブシャフト
+T3	Parts 93 101	ドライブシャフト
+T4	Parts 0 6	動力伝達装置
+T6	Parts 106 108	後輪
+R1	Coreference Arg1:T2 Arg2:T3	
+R3	Coreference Arg1:T1 Arg2:T2	
+R4	Part-Whole Arg1:T1 Arg2:T4	
+R2	Contact Arg1:T3 Arg2:T6	

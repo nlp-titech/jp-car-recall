@@ -1,0 +1,8 @@
+T1	Parts 10 15	電源用配線
+T2	Parts 28 35	キャブマウント
+T3	Parts 1 5	電気装置
+T5	Parts 83 86	原動機
+T7	Parts 64 66	配線
+R1	Coreference Arg1:T7 Arg2:T1	
+R2	Part-Whole Arg1:T1 Arg2:T3	
+R3	Connect Arg1:T5 Arg2:T7	

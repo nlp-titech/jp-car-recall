@@ -1,0 +1,15 @@
+T1	Parts 0 4	制動装置
+T2	Parts 9 27	ブレーキマスタシリンダ（油圧発生部）
+T3	Parts 29 44	アクチュエータ（油圧制御装置）
+T4	Parts 49 56	ブレーキパイプ
+T5	Parts 92 95	原動機
+T6	Parts 104 111	ブレーキパイプ
+T7	Parts 112 127	パワーステアリング用油圧パイプ
+T8	Parts 142 147	ブレーキ液
+R1	Coreference Arg1:T6 Arg2:T4	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T3 Arg2:T1	
+R4	Contact Arg1:T2 Arg2:T4	
+R5	Contact Arg1:T3 Arg2:T4	
+R6	Contact Arg1:T6 Arg2:T8	
+R8	Part-Whole Arg1:T4 Arg2:T1	

@@ -1,0 +1,10 @@
+T1	Parts 0 19	燃料蒸発ガス発散抑止装置（キャニスタ）
+T2	Parts 36 41	燃料タンク
+T3	Parts 45 52	ブリーザホース
+T4	Parts 72 74	燃料
+T5	Parts 95 107	有害なガスの発散防止装置
+R1	Connect Arg1:T1 Arg2:T2	
+R2	Contact Arg1:T3 Arg2:T2	
+R3	Contact Arg1:T3 Arg2:T1	
+R4	Part-Whole Arg1:T4 Arg2:T2	
+R5	Oneway-Coreference Arg1:T1 Arg2:T5	

@@ -1,0 +1,13 @@
+T2	Parts 35 41	駐車ブレーキ
+T3	Parts 113 119	駐車ブレーキ
+T5	Parts 49 53	ケーブル
+T6	Parts 93 97	ケーブル
+T1	Parts 0 11	駐車ブレーキ・ケーブル
+T4	Parts 16 22	ガイドローラ
+T7	Parts 54 60	ガイドローラ
+R1	Coreference Arg1:T1 Arg2:T5	
+R2	Coreference Arg1:T4 Arg2:T7	
+R3	Coreference Arg1:T5 Arg2:T6	
+R4	Coreference Arg1:T2 Arg2:T3	
+R5	Contact Arg1:T1 Arg2:T4	
+R6	Part-Whole Arg1:T6 Arg2:T3	

@@ -1,0 +1,13 @@
+T1	Parts 0 8	バッテリーリレー
+T2	Parts 9 16	スタータモータ
+T3	Parts 18 28	原動機始動用ケーブル
+T4	Parts 41 53	副変速機固定用ブラケット
+T5	Parts 74 77	原動機
+T6	Parts 87 91	ケーブル
+T7	Parts 92 94	被覆
+R1	Coreference Arg1:T6 Arg2:T3	
+R2	Contact Arg1:T1 Arg2:T3	
+R3	Contact Arg1:T2 Arg2:T3	
+R4	Connect Arg1:T1 Arg2:T2	
+R5	Part-Whole Arg1:T7 Arg2:T6	
+R8	Connect Arg1:T2 Arg2:T5	

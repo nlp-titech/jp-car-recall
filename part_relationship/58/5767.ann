@@ -1,0 +1,5 @@
+T1	Parts 11 20	制動装置用内圧容器
+T3	Parts 28 31	圧力計
+T5	Parts 36 43	第１軸用圧力計
+R1	Connect Arg1:T1 Arg2:T3	
+R2	Part-Whole Arg1:T5 Arg2:T3	

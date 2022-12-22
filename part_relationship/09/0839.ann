@@ -1,0 +1,7 @@
+T16	Parts 13 21	ハーネスコネクタ
+T17	Parts 39 47	ハーネスコネクタ
+T18	Parts 91 95	コネクタ
+T1	Parts 0 8	車室暖房用ヒータ
+R1	Coreference Arg1:T17 Arg2:T16	
+R2	Coreference Arg1:T18 Arg2:T17	
+R3	Part-Whole Arg1:T16 Arg2:T1	

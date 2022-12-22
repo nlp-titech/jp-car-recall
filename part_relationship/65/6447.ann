@@ -1,0 +1,45 @@
+T1	Parts 36 48	前席シートベルトバックル
+T2	Parts 68 77	ステアリングコラム
+T3	Parts 18 26	サイドエアバッグ
+T4	Parts 27 35	助手席エアバッグ
+T5	Parts 99 106	アクセルペダル
+T6	Parts 59 67	後席シートベルト
+T7	Parts 241 246	エアバッグ
+T9	Parts 108 113	取付ボルト
+T10	Parts 151 156	取付ボルト
+T12	Parts 205 209	アクセル
+T13	Parts 200 204	ハンドル
+T16	Parts 195 199	ワイパー
+T17	Parts 49 58	前席シート背もたれ
+T19	Parts 181 184	ボルト
+T20	Parts 0 2	車両
+R1	Part-Whole Arg1:T3 Arg2:T20	
+R2	Contact Arg1:T5 Arg2:T9	
+T8	Parts 78 97	ウィンカー・ワイパー操作レバーユニット
+R3	Contact Arg1:T8 Arg2:T9	
+R4	Part-Whole Arg1:T4 Arg2:T20	
+R5	Part-Whole Arg1:T1 Arg2:T20	
+R6	Part-Whole Arg1:T17 Arg2:T20	
+R7	Part-Whole Arg1:T6 Arg2:T20	
+R8	Part-Whole Arg1:T2 Arg2:T20	
+R9	Part-Whole Arg1:T8 Arg2:T20	
+R10	Part-Whole Arg1:T5 Arg2:T20	
+R11	Contact Arg1:T2 Arg2:T9	
+R12	Contact Arg1:T6 Arg2:T9	
+R13	Contact Arg1:T17 Arg2:T9	
+R14	Contact Arg1:T1 Arg2:T9	
+R15	Contact Arg1:T4 Arg2:T9	
+R16	Contact Arg1:T3 Arg2:T9	
+R17	Coreference Arg1:T9 Arg2:T10	
+R18	Coreference Arg1:T10 Arg2:T19	
+T11	Parts 189 194	ウィンカー
+R19	Connect Arg1:T8 Arg2:T11	
+R20	Connect Arg1:T8 Arg2:T16	
+R21	Connect Arg1:T2 Arg2:T13	
+R22	Connect Arg1:T5 Arg2:T12	
+R23	Oneway-Coreference Arg1:T7 Arg2:T3	
+R24	Oneway-Coreference Arg1:T7 Arg2:T4	
+R25	Part-Whole Arg1:T12 Arg2:T20	
+R26	Part-Whole Arg1:T13 Arg2:T20	
+R27	Part-Whole Arg1:T16 Arg2:T20	
+R28	Part-Whole Arg1:T11 Arg2:T20	

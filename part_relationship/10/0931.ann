@@ -1,0 +1,10 @@
+T9	Parts 17 20	制動灯
+T11	Parts 23 28	赤色レンズ
+T13	Parts 61 64	レンズ
+T14	Parts 14 16	尾灯
+T15	Parts 0 13	リヤコンビネーションランプ
+R1	Coreference Arg1:T13 Arg2:T11	
+T1	Parts 74 76	灯火
+R2	Oneway-Coreference Arg1:T1 Arg2:T14	
+R3	Oneway-Coreference Arg1:T1 Arg2:T9	
+R4	Part-Whole Arg1:T11 Arg2:T15	

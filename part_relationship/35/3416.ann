@@ -1,0 +1,15 @@
+T1	Parts 0 7	過給器付原動機
+T2	Parts 8 26	吸入空気冷却装置（インタークーラー）
+T3	Parts 27 29	配管
+T4	Parts 34 45	インタークーラーホース
+T5	Parts 46 54	インテークパイプ
+T6	Parts 89 100	インタークーラーホース
+T7	Parts 101 109	インテークパイプ
+R1	Coreference Arg1:T7 Arg2:T5	
+R2	Coreference Arg1:T6 Arg2:T4	
+R3	Contact Arg1:T5 Arg2:T4	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T3 Arg2:T2	
+R6	Part-Whole Arg1:T4 Arg2:T3	
+#1	AnnotatorNotes T5	厳密にはインタークーラーとエンジン部分への接続なので部分ではないかもしれない
+R7	Contact Arg1:T1 Arg2:T5	

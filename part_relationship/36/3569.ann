@@ -1,0 +1,12 @@
+T1	Parts 0 4	後部座席
+T2	Parts 78 82	後部座席
+T3	Parts 30 33	ラッチ
+T4	Parts 55 63	ロック解除レバー
+T6	Parts 17 19	座席
+T7	Parts 20 22	車体
+R1	Coreference Arg1:T6 Arg2:T1	
+R3	Contact Arg1:T3 Arg2:T7	
+R4	Contact Arg1:T3 Arg2:T6	
+R5	Coreference Arg1:T2 Arg2:T6	
+R6	Contact Arg1:T4 Arg2:T6	
+R2	Part-Whole Arg1:T6 Arg2:T7	

@@ -1,0 +1,11 @@
+T14	Parts 118 122	エンジン
+T15	Parts 27 36	コントロ－ルラック
+T1	Parts 0 4	エンジン
+T2	Parts 5 12	燃料噴射ポンプ
+T7	Parts 106 108	燃料
+R1	Coreference Arg1:T1 Arg2:T14	
+T3	Parts 17 19	燃料
+R4	Coreference Arg1:T3 Arg2:T7	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Contact Arg1:T2 Arg2:T3	
+R5	Part-Whole Arg1:T15 Arg2:T2	

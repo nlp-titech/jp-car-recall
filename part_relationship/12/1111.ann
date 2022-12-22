@@ -1,0 +1,26 @@
+T20	Parts 193 195	後輪
+T21	Parts 80 82	車両
+T23	Parts 67 73	駐車ブレーキ
+T24	Parts 176 179	ドラム
+T25	Parts 168 175	ブレーキシュー
+T26	Parts 153 160	リンクプレート
+T27	Parts 111 118	リンクプレート
+T28	Parts 47 54	リンクプレート
+T1	Parts 1 5	制動装置
+T2	Parts 6 15	後輪ドラムブレーキ
+T3	Parts 20 24	ブレーキ
+T4	Parts 31 38	ブレーキシュー
+R1	Coreference Arg1:T28 Arg2:T27	
+R2	Coreference Arg1:T27 Arg2:T26	
+R3	Coreference Arg1:T4 Arg2:T25	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Coreference Arg1:T3 Arg2:T2	
+R6	Part-Whole Arg1:T4 Arg2:T3	
+R7	Contact Arg1:T28 Arg2:T4	
+R8	Contact Arg1:T2 Arg2:T20	
+R9	Part-Whole Arg1:T28 Arg2:T3	
+R10	Connect Arg1:T23 Arg2:T2	
+R11	Part-Whole Arg1:T23 Arg2:T1	
+R12	Part-Whole Arg1:T24 Arg2:T3	
+R13	Part-Whole Arg1:T20 Arg2:T21	
+R14	Part-Whole Arg1:T1 Arg2:T21	

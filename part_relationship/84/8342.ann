@@ -1,0 +1,4 @@
+T1	Parts 0 4	緩衝装置
+T2	Parts 9 29	左右リヤアクスルキャリアサイドセクション
+T3	Parts 79 83	ハンドル
+R1	Part-Whole Arg1:T2 Arg2:T1	

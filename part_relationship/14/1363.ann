@@ -1,0 +1,14 @@
+T10	Parts 104 107	ＡＢＳ
+T11	Parts 42 51	異物侵入防止カバー
+T12	Parts 64 67	センサ
+T13	Parts 36 39	センサ
+T1	Parts 0 19	アンチロックブレーキシステム（ＡＢＳ）
+T2	Parts 24 26	前輪
+T4	Parts 92 94	車輪
+R1	Coreference Arg1:T1 Arg2:T10	
+R2	Coreference Arg1:T13 Arg2:T12	
+R4	Connect Arg1:T13 Arg2:T2	
+R5	Contact Arg1:T13 Arg2:T11	
+R6	Connect Arg1:T1 Arg2:T2	
+R7	Part-Whole Arg1:T13 Arg2:T1	
+R3	Coreference Arg1:T2 Arg2:T4	

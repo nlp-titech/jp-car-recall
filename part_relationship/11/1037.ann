@@ -1,0 +1,20 @@
+T19	Parts 58 65	ブレーキホース
+T20	Parts 31 34	ホース
+T21	Parts 12 16	取付金具
+T22	Parts 105 108	ホース
+T1	Parts 0 3	右前輪
+T2	Parts 4 11	ブレーキホース
+T3	Parts 47 49	車体
+T4	Parts 66 73	ドラックリンク
+T5	Parts 119 124	ブレーキ液
+R1	Coreference Arg1:T2 Arg2:T19	
+R2	Coreference Arg1:T20 Arg2:T22	
+R3	Connect Arg1:T2 Arg2:T1	
+R4	Contact Arg1:T21 Arg2:T2	
+R5	Part-Whole Arg1:T1 Arg2:T3	
+R6	Part-Whole Arg1:T4 Arg2:T3	
+R7	Contact Arg1:T5 Arg2:T22	
+R8	Coreference Arg1:T2 Arg2:T20	
+R9	Part-Whole Arg1:T20 Arg2:T3	
+R10	Part-Whole Arg1:T21 Arg2:T3	
+R11	Part-Whole Arg1:T1 Arg2:T3	

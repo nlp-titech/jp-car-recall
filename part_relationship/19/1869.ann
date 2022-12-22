@@ -1,0 +1,26 @@
+T16	Parts 230 234	エンジン
+T17	Parts 240 244	エンジン
+T18	Parts 200 205	シリンダー
+T21	Parts 50 54	エンジン
+T22	Parts 114 118	エンジン
+T1	Parts 0 22	再生制御式ＤＰＦ（ディーゼル微粒子除去装置）
+T2	Parts 71 74	ＤＰＦ
+R1	Coreference Arg1:T2 Arg2:T1	
+T3	Parts 124 126	軽油
+T4	Parts 132 139	エンジンオイル
+T5	Parts 166 168	軽油
+T6	Parts 173 176	オイル
+T8	Parts 192 195	吸気管
+R2	Coreference Arg1:T17 Arg2:T16	
+R3	Coreference Arg1:T6 Arg2:T4	
+R4	Coreference Arg1:T5 Arg2:T3	
+R5	Coreference Arg1:T16 Arg2:T22	
+R6	Coreference Arg1:T22 Arg2:T21	
+T9	Parts 27 29	車両
+R7	Part-Whole Arg1:T1 Arg2:T9	
+R8	Part-Whole Arg1:T21 Arg2:T9	
+R9	Contact Arg1:T4 Arg2:T22	
+R10	Part-Whole Arg1:T3 Arg2:T22	
+R12	Part-Whole Arg1:T18 Arg2:T16	
+R13	Contact Arg1:T8 Arg2:T18	
+R16	Part-Whole Arg1:T8 Arg2:T9	

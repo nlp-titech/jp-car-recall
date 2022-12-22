@@ -1,0 +1,14 @@
+T1	Parts 18 33	排気ガス再循環（ＥＧＲ）バルブ
+T2	Parts 0 13	エンジン制御用コンピュータ
+T3	Parts 49 56	アクセルペダル
+T5	Parts 73 79	ＥＧＲバルブ
+T6	Parts 114 118	エンジン
+T7	Parts 134 138	エンジン
+R1	Coreference Arg1:T5 Arg2:T1	
+R5	Coreference Arg1:T7 Arg2:T6	
+R6	Connect Arg1:T6 Arg2:T2	
+T4	Parts 34 41	制御プログラム
+R3	Part-Whole Arg1:T4 Arg2:T2	
+R4	Connect Arg1:T1 Arg2:T4	
+R7	Connect Arg1:T3 Arg2:T6	
+R2	Connect Arg1:T5 Arg2:T6	

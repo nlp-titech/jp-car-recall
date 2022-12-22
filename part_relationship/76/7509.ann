@@ -1,0 +1,15 @@
+T1	Parts 0 7	農耕用トラクタ
+T2	Parts 8 13	タイロッド
+T3	Parts 18 26	タイロッドエンド
+T4	Parts 37 45	タイロッドエンド
+T5	Parts 69 75	ステアリング
+T6	Parts 79 87	タイロッドエンド
+T7	Parts 114 122	タイロッドエンド
+T8	Parts 133 138	タイロッド
+R1	Coreference Arg1:T3 Arg2:T4	
+R2	Coreference Arg1:T4 Arg2:T6	
+R3	Coreference Arg1:T6 Arg2:T7	
+R4	Coreference Arg1:T2 Arg2:T8	
+R5	Part-Whole Arg1:T3 Arg2:T2	
+R6	Part-Whole Arg1:T2 Arg2:T5	
+R7	Part-Whole Arg1:T5 Arg2:T1	

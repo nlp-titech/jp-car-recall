@@ -1,0 +1,22 @@
+T8	Parts 0 7	燃料噴射ポンプ
+T9	Parts 8 21	回転数コントロールレバー軸
+T10	Parts 32 33	軸
+T11	Parts 62 63	軸
+T12	Parts 64 67	軸受け
+T13	Parts 73 80	アクセルペダル
+T14	Parts 85 88	レバー
+T15	Parts 109 112	原動機
+T18	Parts 22 25	軸受け
+T19	Parts 34 37	軸受け
+R1	Coreference Arg1:T19 Arg2:T18	
+R2	Coreference Arg1:T11 Arg2:T10	
+R3	Coreference Arg1:T12 Arg2:T19	
+T1	Parts 48 52	アクセル
+R4	Part-Whole Arg1:T9 Arg2:T8	
+R5	Contact Arg1:T18 Arg2:T9	
+R6	Coreference Arg1:T13 Arg2:T1	
+R8	Part-Whole Arg1:T8 Arg2:T15	
+R7	Coreference Arg1:T10 Arg2:T9	
+R10	Connect Arg1:T13 Arg2:T15	
+R11	Part-Whole Arg1:T18 Arg2:T8	
+R9	Coreference Arg1:T14 Arg2:T9	

@@ -1,0 +1,11 @@
+T8	Parts 0 4	エンジン
+T9	Parts 35 39	点火装置
+T10	Parts 82 89	触媒コンバータ
+T11	Parts 67 79	エキゾーストマニホールド
+#1	AnnotatorNotes T11	上位は文外「排気系」
+#2	AnnotatorNotes T10	上位は文外「排気系」
+T1	Parts 9 15	コンピュータ
+R1	Contact Arg1:T1 Arg2:T8	
+R2	Part-Whole Arg1:T9 Arg2:T8	
+R3	Connect Arg1:T10 Arg2:T11	
+R4	Part-Whole Arg1:T11 Arg2:T8	

@@ -1,0 +1,13 @@
+T1	Parts 0 5	燃料タンク
+T2	Parts 86 90	キャップ
+T3	Parts 19 22	タンク
+T4	Parts 69 72	タンク
+T7	Parts 29 31	燃料
+T8	Parts 102 104	燃料
+R1	Coreference Arg1:T1 Arg2:T3	
+T5	Parts 39 47	バルブ（逆止弁）
+R2	Part-Whole Arg1:T7 Arg2:T3	
+R3	Contact Arg1:T3 Arg2:T5	
+R4	Coreference Arg1:T3 Arg2:T4	
+R5	Contact Arg1:T4 Arg2:T2	
+R6	Coreference Arg1:T7 Arg2:T8	

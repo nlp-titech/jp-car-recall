@@ -1,0 +1,15 @@
+T1	Parts 0 13	リーフサスペンション仕様車
+T2	Parts 18 30	車両マスター制御ユニット
+T3	Parts 31 53	自動式前照灯照射方向調整（オートレベライザ）
+T4	Parts 67 77	ライティングスイッチ
+T5	Parts 78 81	車幅灯
+T6	Parts 91 102	前照灯照射方向調整装置
+T7	Parts 123 126	前照灯
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T2	
+R3	Connect Arg1:T4 Arg2:T5	
+R4	Coreference Arg1:T3 Arg2:T6	
+R6	Part-Whole Arg1:T7 Arg2:T1	
+R7	Connect Arg1:T4 Arg2:T6	
+R5	Connect Arg1:T4 Arg2:T7	
+R8	Part-Whole Arg1:T4 Arg2:T1	

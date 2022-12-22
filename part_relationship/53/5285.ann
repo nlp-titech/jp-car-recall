@@ -1,0 +1,15 @@
+T1	Parts 15 25	コントロールユニット
+T2	Parts 50 56	ゴム製シール
+T3	Parts 45 49	ユニット
+T4	Parts 26 30	基板回路
+T5	Parts 70 74	基板回路
+T6	Parts 3 6	左右輪
+T7	Parts 129 132	左右輪
+T10	Parts 0 2	後軸
+R1	Contact Arg1:T6 Arg2:T10	
+R2	Connect Arg1:T1 Arg2:T6	
+R3	Part-Whole Arg1:T4 Arg2:T1	
+R4	Coreference Arg1:T1 Arg2:T3	
+R5	Contact Arg1:T3 Arg2:T2	
+R6	Coreference Arg1:T4 Arg2:T5	
+R8	Coreference Arg1:T6 Arg2:T7	

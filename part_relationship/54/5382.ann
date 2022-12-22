@@ -1,0 +1,11 @@
+T1	Parts 0 8	フューエルホース
+T2	Parts 79 87	フューエルホース
+T5	Parts 98 102	エンジン
+T6	Parts 12 19	ホースクリップ
+T7	Parts 38 42	クリップ
+T9	Parts 92 94	燃料
+R1	Contact Arg1:T1 Arg2:T6	
+R2	Coreference Arg1:T6 Arg2:T7	
+R3	Contact Arg1:T9 Arg2:T2	
+R4	Coreference Arg1:T1 Arg2:T2	
+R5	Contact Arg1:T5 Arg2:T2	

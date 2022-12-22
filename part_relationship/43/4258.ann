@@ -1,0 +1,12 @@
+T1	Parts 22 27	ヒンジピン
+T2	Parts 101 106	ヒンジピン
+T3	Parts 51 56	固定ボルト
+T4	Parts 8 10	荷台
+T7	Parts 15 17	荷台
+R1	Coreference Arg1:T4 Arg2:T7	
+R2	Contact Arg1:T7 Arg2:T1	
+R3	Contact Arg1:T1 Arg2:T3	
+R4	Coreference Arg1:T1 Arg2:T2	
+R5	Contact Arg1:T7 Arg2:T3	
+T5	Parts 0 5	低床ダンプ
+R6	Part-Whole Arg1:T4 Arg2:T5	

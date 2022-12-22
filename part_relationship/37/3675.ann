@@ -1,0 +1,22 @@
+T1	Parts 118 129	スロットルボディホルダ
+T2	Parts 100 104	エンジン
+T3	Parts 143 147	エンジン
+T4	Parts 212 216	エンジン
+T5	Parts 232 236	エンジン
+T6	Parts 24 28	フレーム
+T7	Parts 81 85	フレーム
+T8	Parts 2 6	電気配線
+T9	Parts 19 23	電気配線
+T10	Parts 66 70	電気配線
+T12	Parts 78 80	芯線
+T13	Parts 71 73	被覆
+R1	Coreference Arg1:T9 Arg2:T8	
+R2	Part-Whole Arg1:T13 Arg2:T10	
+R3	Part-Whole Arg1:T12 Arg2:T10	
+R4	Coreference Arg1:T10 Arg2:T9	
+R5	Coreference Arg1:T7 Arg2:T6	
+R6	Coreference Arg1:T3 Arg2:T2	
+R7	Connect Arg1:T2 Arg2:T10	
+R8	Coreference Arg1:T4 Arg2:T3	
+R9	Coreference Arg1:T5 Arg2:T4	
+R10	Part-Whole Arg1:T1 Arg2:T3	

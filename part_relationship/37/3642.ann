@@ -1,0 +1,16 @@
+T1	Parts 0 6	セミトレーラ
+T2	Parts 42 46	ストッパ
+T3	Parts 100 104	ストッパ
+T4	Parts 16 25	床引き出し式フック
+T5	Parts 38 41	フック
+T6	Parts 96 99	フック
+T7	Parts 111 114	フック
+T8	Parts 7 11	固縛装置
+R1	Coreference Arg1:T7 Arg2:T6	
+R2	Coreference Arg1:T6 Arg2:T5	
+R3	Coreference Arg1:T5 Arg2:T4	
+R4	Coreference Arg1:T3 Arg2:T2	
+R5	Contact Arg1:T2 Arg2:T5	
+R6	Part-Whole Arg1:T4 Arg2:T8	
+R7	Part-Whole Arg1:T2 Arg2:T8	
+R8	Part-Whole Arg1:T8 Arg2:T1	

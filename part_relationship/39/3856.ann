@@ -1,0 +1,7 @@
+T2	Parts 31 35	電気回路
+T3	Parts 14 26	スターター機能付き発電機
+T4	Parts 141 144	発電機
+T8	Parts 0 13	アイドリングストップ付き車
+R3	Coreference Arg1:T4 Arg2:T3	
+R4	Part-Whole Arg1:T2 Arg2:T3	
+R5	Part-Whole Arg1:T3 Arg2:T8	

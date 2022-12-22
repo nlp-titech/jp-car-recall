@@ -1,0 +1,11 @@
+T2	Parts 15 21	燃料供給配管
+T6	Parts 103 105	燃料
+T7	Parts 35 37	配管
+T8	Parts 87 89	配管
+T1	Parts 1 12	タイミングベルトカバー
+R1	Coreference Arg1:T2 Arg2:T7	
+T3	Parts 38 45	ベイパーパイプ
+T4	Parts 90 97	ベイパーパイプ
+R2	Coreference Arg1:T7 Arg2:T8	
+R3	Coreference Arg1:T3 Arg2:T4	
+R4	Contact Arg1:T6 Arg2:T8	

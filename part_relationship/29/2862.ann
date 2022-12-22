@@ -1,0 +1,8 @@
+T1	Parts 0 8	大・中型トラック
+T2	Parts 13 15	前軸
+T3	Parts 20 29	ホイールベアリング
+T4	Parts 71 75	ブレーキ
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Contact Arg1:T3 Arg2:T2	
+R3	Part-Whole Arg1:T4 Arg2:T1	
+R4	Part-Whole Arg1:T3 Arg2:T1	

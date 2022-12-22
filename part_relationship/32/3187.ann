@@ -1,0 +1,15 @@
+T12	Parts 155 161	ブレーキ装置
+T13	Parts 172 178	駐車ブレーキ
+T1	Parts 0 3	原動機
+T2	Parts 6 24	ＰＴＯ（パワー・テイク・オフ）パーツ
+T3	Parts 32 68	油圧ポンプ（ブレーキ装置、パワーステアリング装置、除雪装置へ油圧を供給）
+T4	Parts 73 81	油圧ポンプ入力軸
+T5	Parts 94 100	ＰＴＯパーツ
+R1	Coreference Arg1:T2 Arg2:T5	
+T6	Parts 110 115	油圧ポンプ
+R2	Coreference Arg1:T3 Arg2:T6	
+R3	Part-Whole Arg1:T4 Arg2:T3	
+R4	Connect Arg1:T3 Arg2:T2	
+R5	Connect Arg1:T2 Arg2:T1	
+R6	Connect Arg1:T12 Arg2:T3	
+R7	Part-Whole Arg1:T13 Arg2:T12	

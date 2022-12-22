@@ -1,0 +1,6 @@
+T1	Parts 0 7	アルミホイール
+T2	Parts 24 26	車両
+T3	Parts 43 47	ホイール
+T4	Parts 74 78	走行装置
+R1	Part-Whole Arg1:T1 Arg2:T4	
+R2	Part-Whole Arg1:T4 Arg2:T2	

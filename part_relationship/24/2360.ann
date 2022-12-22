@@ -1,0 +1,9 @@
+T6	Parts 53 55	車両
+T7	Parts 73 76	タイヤ
+T9	Parts 13 30	ブレーキホースブラケット固定ボルト
+T10	Parts 69 72	ボルト
+T1	Parts 1 8	後輪左側タイヤ
+R1	Coreference Arg1:T10 Arg2:T9	
+R2	Coreference Arg1:T7 Arg2:T1	
+R3	Part-Whole Arg1:T9 Arg2:T6	
+R4	Part-Whole Arg1:T1 Arg2:T6	

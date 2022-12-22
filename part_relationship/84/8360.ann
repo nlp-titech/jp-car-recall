@@ -1,0 +1,19 @@
+T1	Parts 0 7	農耕用トラクタ
+T2	Parts 8 14	冷却水ホース
+T3	Parts 19 26	コンプレッサー
+T4	Parts 27 30	ベルト
+T5	Parts 42 45	ベルト
+T6	Parts 50 56	冷却水ホース
+T7	Parts 57 60	ベルト
+T8	Parts 92 98	冷却水ホース
+T9	Parts 103 106	冷却水
+R1	Coreference Arg1:T2 Arg2:T6	
+R2	Coreference Arg1:T6 Arg2:T8	
+R3	Coreference Arg1:T4 Arg2:T5	
+R4	Coreference Arg1:T5 Arg2:T7	
+R5	Part-Whole Arg1:T2 Arg2:T1	
+R6	Part-Whole Arg1:T3 Arg2:T1	
+R7	Contact Arg1:T2 Arg2:T3	
+R8	Part-Whole Arg1:T4 Arg2:T3	
+R9	Contact Arg1:T8 Arg2:T9	
+R10	Part-Whole Arg1:T9 Arg2:T1	

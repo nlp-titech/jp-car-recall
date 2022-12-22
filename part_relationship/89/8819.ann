@@ -1,0 +1,13 @@
+T1	Parts 1 7	農耕トラクタ
+T2	Parts 8 12	変速ギヤ
+T3	Parts 17 26	プラネタリキャリア
+T4	Parts 27 32	ベアリング
+T5	Parts 45 50	ベアリング
+T6	Parts 78 83	ベアリング
+T7	Parts 94 96	ギヤ
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T2	
+R3	Part-Whole Arg1:T4 Arg2:T3	
+R4	Coreference Arg1:T4 Arg2:T5	
+R5	Coreference Arg1:T5 Arg2:T6	
+R6	Coreference Arg1:T2 Arg2:T7	

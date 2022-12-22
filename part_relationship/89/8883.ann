@@ -1,0 +1,7 @@
+T1	Parts 0 38	エンジン冷却系のラジエーターチャンバー（冷却水内の気泡を分離するための装置）
+T2	Parts 75 79	エンジン
+T3	Parts 106 109	冷却水
+T5	Parts 154 158	エンジン
+R1	Coreference Arg1:T2 Arg2:T5	
+R2	Connect Arg1:T1 Arg2:T2	
+R3	Part-Whole Arg1:T3 Arg2:T1	

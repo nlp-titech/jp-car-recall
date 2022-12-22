@@ -1,0 +1,22 @@
+T10	Parts 9 37	タイミングベルトの張力を維持する部品（オートテンショナ）
+T11	Parts 74 82	オートテンショナ
+T12	Parts 83 87	外部ばね
+T14	Parts 92 100	タイミングベルト
+T15	Parts 121 125	外部ばね
+T16	Parts 129 137	タイミングベルト
+T18	Parts 143 146	原動機
+T1	Parts 1 4	原動機
+R3	Coreference Arg1:T15 Arg2:T12	
+R4	Coreference Arg1:T16 Arg2:T14	
+T3	Parts 203 211	オートテンショナ
+R5	Coreference Arg1:T3 Arg2:T11	
+R6	Coreference Arg1:T18 Arg2:T1	
+R9	Part-Whole Arg1:T12 Arg2:T11	
+R1	Part-Whole Arg1:T14 Arg2:T1	
+R2	Part-Whole Arg1:T10 Arg2:T1	
+R7	Coreference Arg1:T10 Arg2:T11	
+T2	Parts 217 219	車両
+T4	Parts 227 229	車両
+R8	Coreference Arg1:T2 Arg2:T4	
+R10	Part-Whole Arg1:T18 Arg2:T2	
+R11	Contact Arg1:T11 Arg2:T14	

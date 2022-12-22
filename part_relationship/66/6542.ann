@@ -1,0 +1,13 @@
+T2	Parts 22 30	バキュームパイプ
+T3	Parts 37 53	バキュームパイプ（接続部を含む）
+T4	Parts 76 84	バキュームパイプ
+T5	Parts 119 126	ブレーキペダル
+T6	Parts 0 17	制動倍力装置（ブレーキブースター）
+T7	Parts 69 73	エンジン
+T8	Parts 103 107	倍力装置
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Part-Whole Arg1:T2 Arg2:T6	
+R3	Coreference Arg1:T3 Arg2:T4	
+R4	Coreference Arg1:T6 Arg2:T8	
+R5	Connect Arg1:T5 Arg2:T8	
+R6	Connect Arg1:T7 Arg2:T8	

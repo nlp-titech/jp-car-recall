@@ -1,0 +1,12 @@
+T16	Parts 84 91	ブレーキホース
+T17	Parts 24 29	ブラケット
+T1	Parts 0 4	制動装置
+T2	Parts 9 16	ブレーキホース
+T3	Parts 17 19	車体
+T7	Parts 111 114	制動液
+R1	Coreference Arg1:T2 Arg2:T16	
+R2	Contact Arg1:T17 Arg2:T3	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Contact Arg1:T17 Arg2:T2	
+R5	Contact Arg1:T7 Arg2:T16	
+R7	Contact Arg1:T2 Arg2:T3	

@@ -1,0 +1,7 @@
+T1	Parts 67 75	スロットルバルブ
+T2	Parts 38 44	コンピュータ
+T3	Parts 12 32	電子制御式スロットルコントロールシステム
+T6	Parts 0 3	原動機
+R1	Connect Arg1:T3 Arg2:T2	
+R2	Connect Arg1:T6 Arg2:T1	
+R4	Connect Arg1:T3 Arg2:T1	

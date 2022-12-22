@@ -1,0 +1,5 @@
+T1	Parts 0 11	第二席用右側座席ベルト
+T2	Parts 34 41	左側座席ベルト
+T3	Parts 66 71	座席ベルト
+R1	Oneway-Coreference Arg1:T1 Arg2:T3	
+R2	Oneway-Coreference Arg1:T2 Arg2:T3	

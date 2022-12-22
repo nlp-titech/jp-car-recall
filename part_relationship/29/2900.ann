@@ -1,0 +1,19 @@
+T18	Parts 34 36	車体
+T19	Parts 3 8	燃料クーラ
+T1	Parts 49 53	燃料配管
+T2	Parts 68 72	エンジン
+T3	Parts 74 76	燃料
+T4	Parts 86 90	エンジン
+R2	Coreference Arg1:T4 Arg2:T2	
+T5	Parts 100 104	エンジン
+R3	Coreference Arg1:T5 Arg2:T4	
+T6	Parts 119 134	車速制御コンピュータ（ＥＣＵ）
+T7	Parts 135 140	プログラム
+R5	Contact Arg1:T3 Arg2:T1	
+R6	Part-Whole Arg1:T7 Arg2:T6	
+R1	Contact Arg1:T19 Arg2:T1	
+R7	Part-Whole Arg1:T19 Arg2:T18	
+R8	Part-Whole Arg1:T1 Arg2:T18	
+R9	Part-Whole Arg1:T2 Arg2:T18	
+R4	Contact Arg1:T1 Arg2:T2	
+R10	Part-Whole Arg1:T6 Arg2:T18	

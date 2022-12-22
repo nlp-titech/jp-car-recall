@@ -1,0 +1,11 @@
+T1	Parts 21 27	ホースバンド
+T2	Parts 29 35	燃料フィルタ
+T3	Parts 0 5	燃料ホース
+T4	Parts 38 43	燃料ホース
+T5	Parts 82 85	ホース
+T6	Parts 98 100	燃料
+R1	Coreference Arg1:T3 Arg2:T4	
+R2	Coreference Arg1:T4 Arg2:T5	
+R3	Contact Arg1:T5 Arg2:T6	
+R4	Contact Arg1:T3 Arg2:T1	
+R5	Contact Arg1:T2 Arg2:T6	

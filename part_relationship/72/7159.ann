@@ -1,0 +1,9 @@
+T1	Parts 9 14	後部シート
+T2	Parts 68 79	背もたれ（後部シート）
+T3	Parts 0 4	運転者席
+R1	Part-Whole Arg1:T1 Arg2:T3	
+T4	Parts 18 22	背もたれ
+T5	Parts 32 36	背もたれ
+R2	Coreference Arg1:T4 Arg2:T5	
+R3	Coreference Arg1:T1 Arg2:T4	
+R4	Coreference Arg1:T5 Arg2:T2	

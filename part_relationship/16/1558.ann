@@ -1,0 +1,12 @@
+T1	Parts 2 13	軌陸車（軌道兼用車等）
+T2	Parts 18 20	車両
+T5	Parts 28 37	ブレーキ用エア配管
+T6	Parts 50 52	配管
+R1	Coreference Arg1:T6 Arg2:T5	
+T7	Parts 83 85	配管
+R2	Coreference Arg1:T7 Arg2:T6	
+T8	Parts 99 101	エア
+R3	Coreference Arg1:T2 Arg2:T1	
+R4	Contact Arg1:T8 Arg2:T7	
+R5	Part-Whole Arg1:T5 Arg2:T2	
+R6	Part-Whole Arg1:T8 Arg2:T2	

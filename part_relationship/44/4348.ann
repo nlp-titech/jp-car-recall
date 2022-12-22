@@ -1,0 +1,14 @@
+T1	Parts 0 10	前席三点式座席ベルト
+T2	Parts 88 93	座席ベルト
+T3	Parts 17 20	ベルト
+T4	Parts 37 40	保持具
+T5	Parts 69 72	保持具
+T6	Parts 21 26	緩み留金具
+T7	Parts 78 83	緩み留金具
+R1	Coreference Arg1:T1 Arg2:T3	
+R3	Contact Arg1:T4 Arg2:T6	
+R4	Coreference Arg1:T4 Arg2:T5	
+R5	Coreference Arg1:T6 Arg2:T7	
+R6	Coreference Arg1:T3 Arg2:T2	
+R2	Part-Whole Arg1:T6 Arg2:T3	
+R7	Part-Whole Arg1:T4 Arg2:T3	

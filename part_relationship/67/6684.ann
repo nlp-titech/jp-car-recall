@@ -1,0 +1,11 @@
+T2	Parts 10 28	給油口キャップブラケット用ガスケット
+T3	Parts 30 46	燃料残量センサー取付部ガスケット
+T5	Parts 0 5	燃料タンク
+T6	Parts 81 86	燃料タンク
+T11	Parts 78 80	燃料
+T12	Parts 112 114	燃料
+R1	Coreference Arg1:T12 Arg2:T11	
+R2	Coreference Arg1:T6 Arg2:T5	
+R3	Part-Whole Arg1:T3 Arg2:T5	
+R4	Part-Whole Arg1:T2 Arg2:T5	
+R5	Part-Whole Arg1:T11 Arg2:T6	

@@ -1,0 +1,7 @@
+T2	Parts 0 2	車体
+T3	Parts 14 20	ガーニッシュ
+T1	Parts 44 50	ガーニッシュ
+T4	Parts 70 76	ガーニッシュ
+R1	Coreference Arg1:T3 Arg2:T1	
+R2	Coreference Arg1:T1 Arg2:T4	
+R3	Part-Whole Arg1:T3 Arg2:T2	

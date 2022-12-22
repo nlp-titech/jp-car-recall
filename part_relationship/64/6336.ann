@@ -1,0 +1,17 @@
+T1	Parts 69 79	冷却フィン付きケース
+T3	Parts 80 88	パワーモジュール
+T4	Parts 96 104	パワーモジュール
+T5	Parts 53 57	エンジン
+T6	Parts 187 191	エンジン
+T7	Parts 164 168	バッテリ
+T8	Parts 107 111	整流素子
+T9	Parts 0 3	整流器
+T2	Parts 8 25	パワーモジュール（電子用複合素子）
+R2	Coreference Arg1:T5 Arg2:T6	
+R1	Coreference Arg1:T2 Arg2:T3	
+R3	Coreference Arg1:T3 Arg2:T4	
+R4	Part-Whole Arg1:T8 Arg2:T4	
+R5	Contact Arg1:T1 Arg2:T3	
+R6	Part-Whole Arg1:T2 Arg2:T9	
+R7	Connect Arg1:T7 Arg2:T6	
+R8	Connect Arg1:T9 Arg2:T7	

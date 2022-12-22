@@ -1,0 +1,14 @@
+T12	Parts 27 32	素子カバー
+T13	Parts 68 74	Ｏ２センサー
+T14	Parts 75 77	素子
+T15	Parts 98 100	素子
+T1	Parts 0 10	排出ガス発散防止装置
+R2	Coreference Arg1:T15 Arg2:T14	
+T5	Parts 89 92	ヒータ
+T2	Parts 15 26	ヒータ付きＯ２センサー
+R1	Coreference Arg1:T13 Arg2:T2	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T12 Arg2:T2	
+R6	Part-Whole Arg1:T14 Arg2:T13	
+R7	Contact Arg1:T12 Arg2:T14	
+R8	Part-Whole Arg1:T5 Arg2:T2	

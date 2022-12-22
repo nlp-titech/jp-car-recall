@@ -1,0 +1,18 @@
+T12	Parts 87 92	エアバッグ
+T13	Parts 120 125	エアバッグ
+T14	Parts 35 47	インフレータ（膨張装置）
+T1	Parts 0 8	サイドエアバッグ
+T2	Parts 9 22	カーテンシールドエアバッグ
+T3	Parts 23 30	ニーエアバッグ
+T4	Parts 60 65	ガス加熱剤
+T5	Parts 108 110	ガス
+R1	Oneway-Coreference Arg1:T12 Arg2:T1	
+R2	Oneway-Coreference Arg1:T12 Arg2:T2	
+R3	Oneway-Coreference Arg1:T12 Arg2:T3	
+R4	Coreference Arg1:T12 Arg2:T13	
+R5	Part-Whole Arg1:T14 Arg2:T3	
+R6	Part-Whole Arg1:T14 Arg2:T2	
+R7	Part-Whole Arg1:T14 Arg2:T1	
+R8	Contact Arg1:T4 Arg2:T5	
+R10	Part-Whole Arg1:T5 Arg2:T12	
+R9	Part-Whole Arg1:T4 Arg2:T14	

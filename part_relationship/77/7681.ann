@@ -1,0 +1,17 @@
+T1	Parts 0 5	クレーン車
+T2	Parts 10 13	シート
+T3	Parts 18 23	ブラケット
+T4	Parts 34 37	シート
+T5	Parts 50 58	シートクッション
+T6	Parts 68 79	シートベルト巻取り装置
+T7	Parts 97 105	シートクッション
+T8	Parts 121 129	シートクッション
+T9	Parts 156 164	シートクッション
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Contact Arg1:T3 Arg2:T2	
+R3	Coreference Arg1:T2 Arg2:T4	
+R4	Coreference Arg1:T5 Arg2:T7	
+R5	Coreference Arg1:T7 Arg2:T8	
+R6	Coreference Arg1:T8 Arg2:T9	
+R7	Part-Whole Arg1:T5 Arg2:T4	
+R8	Contact Arg1:T6 Arg2:T5	

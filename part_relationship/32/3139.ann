@@ -1,0 +1,7 @@
+T1	Parts 6 13	チェンジレバー
+T2	Parts 18 24	大・中型バス
+T3	Parts 29 36	チェンジレバー
+T4	Parts 63 70	チェンジレバー
+R1	Coreference Arg1:T3 Arg2:T4	
+R2	Coreference Arg1:T3 Arg2:T1	
+R3	Part-Whole Arg1:T3 Arg2:T2	

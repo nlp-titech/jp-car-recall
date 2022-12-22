@@ -1,0 +1,5 @@
+T8	Parts 0 6	動力伝達装置
+T9	Parts 7 18	リヤ・プロペラシャフト
+T10	Parts 77 88	リヤ・プロペラシャフト
+R1	Coreference Arg1:T9 Arg2:T10	
+R2	Part-Whole Arg1:T9 Arg2:T8	

@@ -1,0 +1,7 @@
+T1	Parts 11 24	リヤコンビネーションランプ
+T2	Parts 0 6	大型トラック
+T3	Parts 56 59	ランプ
+T5	Parts 76 78	尾灯
+R1	Coreference Arg1:T1 Arg2:T3	
+R3	Part-Whole Arg1:T1 Arg2:T2	
+R2	Part-Whole Arg1:T5 Arg2:T1	

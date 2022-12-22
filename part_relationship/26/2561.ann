@@ -1,0 +1,12 @@
+T10	Parts 30 39	雨水浸入防止バルブ
+T11	Parts 60 67	バルブ固定金具
+T1	Parts 0 3	排気管
+T2	Parts 11 13	車両
+T3	Parts 18 21	排気管
+R1	Coreference Arg1:T3 Arg2:T1	
+T5	Parts 52 54	排気
+R2	Part-Whole Arg1:T1 Arg2:T2	
+R3	Contact Arg1:T3 Arg2:T10	
+R4	Part-Whole Arg1:T10 Arg2:T2	
+R5	Part-Whole Arg1:T11 Arg2:T10	
+R7	Contact Arg1:T3 Arg2:T5	

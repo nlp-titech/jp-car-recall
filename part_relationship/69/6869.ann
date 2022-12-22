@@ -1,0 +1,15 @@
+T1	Parts 57 61	シャフト
+T2	Parts 84 88	シャフト
+T3	Parts 117 121	シャフト
+T5	Parts 14 18	福祉車両
+T7	Parts 47 50	リフト
+T8	Parts 126 129	リフト
+T6	Parts 19 27	電動式昇降リフト
+R1	Part-Whole Arg1:T6 Arg2:T5	
+T4	Parts 33 42	昇降用電動モーター
+R2	Coreference Arg1:T6 Arg2:T7	
+R3	Coreference Arg1:T7 Arg2:T2	
+R4	Coreference Arg1:T2 Arg2:T3	
+R5	Coreference Arg1:T7 Arg2:T8	
+R6	Part-Whole Arg1:T4 Arg2:T6	
+R7	Contact Arg1:T4 Arg2:T1	

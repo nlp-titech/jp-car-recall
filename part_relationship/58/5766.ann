@@ -1,0 +1,14 @@
+T1	Parts 95 107	パワーステアリングオイル
+T2	Parts 0 12	油圧式パワーステアリング
+T3	Parts 13 19	ギヤボックス
+T4	Parts 24 32	シリンダーパイプ
+T5	Parts 69 73	Ｏリング
+T7	Parts 111 115	ハンドル
+T9	Parts 56 59	パイプ
+R1	Connect Arg1:T2 Arg2:T7	
+R2	Part-Whole Arg1:T3 Arg2:T2	
+R3	Coreference Arg1:T4 Arg2:T9	
+R4	Contact Arg1:T9 Arg2:T5	
+R5	Contact Arg1:T9 Arg2:T1	
+R6	Contact Arg1:T3 Arg2:T4	
+R7	Part-Whole Arg1:T4 Arg2:T2	

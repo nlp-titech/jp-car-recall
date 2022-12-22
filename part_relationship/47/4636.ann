@@ -1,0 +1,27 @@
+T1	Parts 15 20	燃料分配器
+T2	Parts 91 96	燃料分配器
+T3	Parts 35 39	シール材
+T4	Parts 71 75	シール材
+T5	Parts 30 33	継ぎ手
+T6	Parts 115 118	継ぎ手
+T7	Parts 97 100	パイプ
+T8	Parts 121 124	パイプ
+T9	Parts 0 3	原動機
+T10	Parts 80 83	原動機
+T11	Parts 5 7	気筒
+T12	Parts 8 10	燃料
+T13	Parts 126 128	燃料
+R1	Coreference Arg1:T9 Arg2:T10	
+R2	Coreference Arg1:T12 Arg2:T13	
+R3	Coreference Arg1:T1 Arg2:T2	
+R4	Coreference Arg1:T5 Arg2:T6	
+R5	Coreference Arg1:T3 Arg2:T4	
+R6	Coreference Arg1:T7 Arg2:T8	
+R7	Part-Whole Arg1:T11 Arg2:T9	
+R8	Contact Arg1:T12 Arg2:T1	
+R9	Contact Arg1:T11 Arg2:T1	
+R10	Part-Whole Arg1:T1 Arg2:T9	
+R11	Contact Arg1:T1 Arg2:T5	
+R12	Contact Arg1:T5 Arg2:T3	
+R13	Contact Arg1:T2 Arg2:T7	
+R14	Contact Arg1:T8 Arg2:T13	

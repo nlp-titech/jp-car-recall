@@ -1,0 +1,5 @@
+T3	Parts 16 20	ルーフ板
+T4	Parts 55 59	ルーフ板
+T5	Parts 0 15	パノラミックガラスルーフ装着車
+R1	Coreference Arg1:T4 Arg2:T3	
+R2	Part-Whole Arg1:T3 Arg2:T5	

@@ -1,0 +1,9 @@
+T1	Parts 0 8	プロペラシャフト
+T2	Parts 15 24	第３クロスメンバー
+T3	Parts 39 46	クロスメンバー
+R1	Coreference Arg1:T2 Arg2:T3	
+T4	Parts 85 92	クロスメンバー
+R2	Coreference Arg1:T3 Arg2:T4	
+T5	Parts 97 105	プロペラシャフト
+R3	Coreference Arg1:T1 Arg2:T5	
+R4	Contact Arg1:T2 Arg2:T1	

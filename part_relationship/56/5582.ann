@@ -1,0 +1,7 @@
+T3	Parts 28 36	盗難発生警報装置
+T4	Parts 67 71	窓ふき器
+T5	Parts 37 43	サイレン基盤
+T7	Parts 0 10	メイン制御モジュール
+R2	Part-Whole Arg1:T5 Arg2:T3	
+R4	Connect Arg1:T3 Arg2:T7	
+R1	Connect Arg1:T4 Arg2:T7	

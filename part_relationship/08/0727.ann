@@ -1,0 +1,26 @@
+T16	Parts 23 27	取付金具
+T21	Parts 80 84	取付金具
+T24	Parts 159 163	取付金具
+T25	Parts 179 183	取付金具
+T19	Parts 28 31	ボルト
+T20	Parts 45 48	ボルト
+T22	Parts 75 78	ボルト
+T27	Parts 94 97	ボルト
+T28	Parts 128 133	燃料タンク
+T29	Parts 187 192	燃料タンク
+T30	Parts 85 89	フレーム
+T31	Parts 17 22	燃料タンク
+T2	Parts 0 9	燃料タンク取付金具
+R2	Coreference Arg1:T16 Arg2:T2	
+R3	Coreference Arg1:T20 Arg2:T19	
+R4	Coreference Arg1:T22 Arg2:T20	
+R5	Coreference Arg1:T21 Arg2:T16	
+R6	Coreference Arg1:T27 Arg2:T22	
+R7	Coreference Arg1:T28 Arg2:T31	
+T3	Parts 141 143	燃料
+R8	Coreference Arg1:T24 Arg2:T21	
+R9	Coreference Arg1:T25 Arg2:T24	
+R10	Coreference Arg1:T29 Arg2:T28	
+R12	Contact Arg1:T19 Arg2:T16	
+R13	Contact Arg1:T30 Arg2:T21	
+R1	Contact Arg1:T31 Arg2:T2	

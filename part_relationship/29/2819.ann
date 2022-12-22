@@ -1,0 +1,13 @@
+T20	Parts 134 138	ラジエタ
+T21	Parts 22 30	ファンシュラウド
+T23	Parts 114 122	ファンシュラウド
+T24	Parts 90 97	ラジエタファン
+T1	Parts 0 4	ラジエタ
+T2	Parts 8 15	ラジエタファン
+R2	Coreference Arg1:T24 Arg2:T2	
+R3	Coreference Arg1:T23 Arg2:T21	
+R5	Coreference Arg1:T20 Arg2:T1	
+T6	Parts 145 148	冷却水
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T21 Arg2:T1	
+R6	Contact Arg1:T6 Arg2:T20	

@@ -1,0 +1,14 @@
+T1	Parts 0 9	スロットルグリップ
+T2	Parts 43 52	スロットルグリップ
+T3	Parts 79 88	スロットルグリップ
+T4	Parts 101 110	スロットルグリップ
+T5	Parts 118 122	エンジン
+T7	Parts 28 36	グリップヒーター
+T8	Parts 10 15	バーエンド
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Coreference Arg1:T2 Arg2:T3	
+R3	Coreference Arg1:T3 Arg2:T4	
+R4	Connect Arg1:T4 Arg2:T5	
+R5	Contact Arg1:T7 Arg2:T1	
+T6	Parts 58 63	バーエンド
+R7	Coreference Arg1:T8 Arg2:T6	

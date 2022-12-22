@@ -1,0 +1,5 @@
+T2	Parts 25 28	ヒータ
+T3	Parts 57 60	電熱線
+T1	Parts 0 9	ウォッシャーノズル
+R1	Contact Arg1:T1 Arg2:T2	
+R2	Part-Whole Arg1:T3 Arg2:T2	

@@ -1,0 +1,12 @@
+T10	Parts 0 7	過給機用遮熱板
+T11	Parts 29 32	遮熱板
+T16	Parts 33 39	取付けボルト
+T17	Parts 81 88	過給機用遮熱板
+R1	Coreference Arg1:T11 Arg2:T10	
+R2	Coreference Arg1:T17 Arg2:T11	
+T2	Parts 93 99	オルタネータ
+T3	Parts 100 104	電気配線
+T4	Parts 116 119	原動機
+R3	Contact Arg1:T16 Arg2:T11	
+R4	Part-Whole Arg1:T3 Arg2:T2	
+R6	Connect Arg1:T2 Arg2:T4	

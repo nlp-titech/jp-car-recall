@@ -1,0 +1,4 @@
+T1	Parts 28 34	走行用前照灯
+T3	Parts 0 9	前部霧灯用ハーネス
+T4	Parts 38 42	前部霧灯
+R1	Connect Arg1:T3 Arg2:T4	

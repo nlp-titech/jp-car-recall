@@ -1,0 +1,11 @@
+T1	Parts 9 43	イコライザ（駐車ブレーキの操作力を左右の車輪に均等に振り分ける装置）
+T2	Parts 53 59	固定クリップ
+T3	Parts 0 8	電動駐車ブレーキ
+T4	Parts 79 85	駐車ブレーキ
+T5	Parts 48 52	ケーブル
+R1	Coreference Arg1:T4 Arg2:T3	
+R2	Part-Whole Arg1:T1 Arg2:T3	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R5	Contact Arg1:T2 Arg2:T5	
+R4	Contact Arg1:T5 Arg2:T3	
+R6	Contact Arg1:T5 Arg2:T1	

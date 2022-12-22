@@ -1,0 +1,14 @@
+T1	Parts 5 11	小型トラック
+T2	Parts 16 30	スタータ（エンジン）スイッチ
+T3	Parts 31 35	電気回路
+T4	Parts 43 47	エンジン
+T5	Parts 51 55	スイッチ
+T7	Parts 69 73	スイッチ
+R1	Coreference Arg1:T7 Arg2:T5	
+T10	Parts 141 145	エンジン
+R4	Coreference Arg1:T10 Arg2:T4	
+R5	Part-Whole Arg1:T2 Arg2:T1	
+R8	Coreference Arg1:T5 Arg2:T2	
+R3	Part-Whole Arg1:T4 Arg2:T1	
+R6	Connect Arg1:T2 Arg2:T4	
+R2	Part-Whole Arg1:T3 Arg2:T2	

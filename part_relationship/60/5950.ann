@@ -1,0 +1,7 @@
+T1	Parts 0 11	フロントブレーキホース
+T4	Parts 65 73	フロントブレーキ
+T5	Parts 52 59	ＡＢＳシステム
+T6	Parts 25 28	ホース
+R1	Coreference Arg1:T1 Arg2:T6	
+R3	Part-Whole Arg1:T6 Arg2:T4	
+R4	Connect Arg1:T5 Arg2:T4	

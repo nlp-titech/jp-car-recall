@@ -1,0 +1,15 @@
+T1	Parts 15 20	ロック機構
+T2	Parts 33 38	ロック機構
+T3	Parts 0 4	運転者席
+T4	Parts 10 14	背もたれ
+T5	Parts 63 67	背もたれ
+T6	Parts 81 85	背もたれ
+T7	Parts 6 9	助手席
+R1	Coreference Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T5 Arg2:T4	
+R3	Part-Whole Arg1:T4 Arg2:T7	
+R4	Part-Whole Arg1:T4 Arg2:T3	
+R5	Contact Arg1:T1 Arg2:T4	
+R6	Coreference Arg1:T6 Arg2:T5	
+R7	Part-Whole Arg1:T1 Arg2:T7	
+R8	Part-Whole Arg1:T1 Arg2:T3	

@@ -1,0 +1,8 @@
+T1	Parts 0 6	中型トラック
+T2	Parts 7 9	前軸
+T3	Parts 17 24	ブレーキパイプ
+T4	Parts 60 65	ブレーキ液
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T1	
+R3	Contact Arg1:T4 Arg2:T3	
+R5	Contact Arg1:T2 Arg2:T3	

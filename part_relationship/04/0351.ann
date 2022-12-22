@@ -1,0 +1,7 @@
+T8	Parts 0 18	燃料蒸発ガス抑止装置（キャニスター）
+T1	Parts 61 66	燃料タンク
+T2	Parts 78 83	燃料タンク
+T3	Parts 99 101	燃料
+R1	Coreference Arg1:T1 Arg2:T2	
+R3	Part-Whole Arg1:T3 Arg2:T2	
+R4	Part-Whole Arg1:T1 Arg2:T8	

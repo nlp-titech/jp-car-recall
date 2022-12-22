@@ -1,0 +1,14 @@
+T2	Parts 44 51	エンジンオイル
+T3	Parts 112 119	エンジンオイル
+T5	Parts 0 4	エンジン
+T6	Parts 91 95	エンジン
+T8	Parts 83 86	警告灯
+T1	Parts 5 19	タイミングチェーンテンショナ
+T4	Parts 24 33	シーリング・リング
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Coreference Arg1:T5 Arg2:T6	
+R3	Connect Arg1:T8 Arg2:T6	
+R4	Part-Whole Arg1:T1 Arg2:T5	
+R5	Part-Whole Arg1:T4 Arg2:T1	
+R6	Contact Arg1:T6 Arg2:T3	
+R7	Connect Arg1:T2 Arg2:T8	

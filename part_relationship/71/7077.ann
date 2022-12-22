@@ -1,0 +1,17 @@
+T1	Parts 137 148	イグニッションスイッチ
+T2	Parts 224 235	イグニッションスイッチ
+T3	Parts 1 7	動力伝達装置
+T4	Parts 22 27	固定ナット
+T5	Parts 254 258	エンジン
+T6	Parts 73 76	ナット
+T8	Parts 18 21	プーリ
+T9	Parts 12 15	ベルト
+T12	Parts 153 156	接点板
+R1	Contact Arg1:T8 Arg2:T4	
+R2	Contact Arg1:T9 Arg2:T8	
+R3	Part-Whole Arg1:T9 Arg2:T3	
+R4	Part-Whole Arg1:T8 Arg2:T3	
+R5	Coreference Arg1:T4 Arg2:T6	
+R6	Contact Arg1:T1 Arg2:T12	
+R7	Coreference Arg1:T1 Arg2:T2	
+R8	Connect Arg1:T2 Arg2:T5	

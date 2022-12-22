@@ -1,0 +1,12 @@
+T1	Parts 0 6	大型トラック
+T2	Parts 11 17	かじ取り装置
+T3	Parts 18 33	パワーステアリング高圧側ホース
+T4	Parts 72 75	ホース
+R1	Coreference Arg1:T4 Arg2:T3	
+T5	Parts 80 92	パワーステアリングオイル
+T6	Parts 96 100	ハンドル
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Contact Arg1:T4 Arg2:T5	
+R4	Part-Whole Arg1:T6 Arg2:T1	
+R7	Connect Arg1:T2 Arg2:T6	
+R5	Part-Whole Arg1:T3 Arg2:T2	

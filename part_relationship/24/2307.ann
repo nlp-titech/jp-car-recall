@@ -1,0 +1,12 @@
+T1	Parts 0 3	原動機
+T2	Parts 5 10	燃料タンク
+T3	Parts 12 21	燃料リターンホース
+T4	Parts 44 47	ホース
+T5	Parts 52 54	燃料
+R1	Coreference Arg1:T4 Arg2:T3	
+R2	Contact Arg1:T3 Arg2:T2	
+R3	Contact Arg1:T3 Arg2:T1	
+R4	Contact Arg1:T5 Arg2:T4	
+R5	Part-Whole Arg1:T5 Arg2:T2	
+R6	Contact Arg1:T5 Arg2:T1	
+R7	Connect Arg1:T1 Arg2:T2	

@@ -1,0 +1,15 @@
+T1	Parts 0 11	電動パワーステアリング
+T2	Parts 12 20	ワイヤーハーネス
+T3	Parts 25 32	アンダーパネル
+T4	Parts 45 51	クロスメンバ
+T5	Parts 54 61	アンダーパネル
+T6	Parts 83 91	ワイヤーハーネス
+T7	Parts 112 123	電動パワーステアリング
+T8	Parts 138 145	始動用バッテリ
+T9	Parts 150 154	エンジン
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T3 Arg2:T5	
+R3	Coreference Arg1:T2 Arg2:T6	
+R4	Coreference Arg1:T1 Arg2:T7	
+R5	Connect Arg1:T8 Arg2:T9	
+R6	Connect Arg1:T7 Arg2:T8	

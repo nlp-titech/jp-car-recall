@@ -1,0 +1,15 @@
+T14	Parts 39 46	燃料噴射ポンプ
+T15	Parts 18 21	ラック
+T16	Parts 79 82	ラック
+T1	Parts 0 7	燃料噴射ポンプ
+T2	Parts 8 10	燃料
+R1	Coreference Arg1:T14 Arg2:T1	
+T3	Parts 47 50	原動機
+R2	Coreference Arg1:T16 Arg2:T15	
+T4	Parts 87 91	エンジン
+R3	Contact Arg1:T1 Arg2:T2	
+#1	AnnotatorNotes R3	燃料タンクのように常に燃料を保持しているわけではないのでContact？
+R4	Part-Whole Arg1:T15 Arg2:T1	
+R8	Coreference Arg1:T3 Arg2:T4	
+R6	Contact Arg1:T2 Arg2:T3	
+R9	Part-Whole Arg1:T14 Arg2:T3	

@@ -1,0 +1,13 @@
+T1	Parts 68 80	エンジン制御コンピュータ
+T3	Parts 5 9	ガソリン
+T4	Parts 0 4	天然ガス
+T7	Parts 91 94	警告灯
+T8	Parts 18 20	車両
+T9	Parts 45 47	燃料
+R1	Oneway-Coreference Arg1:T9 Arg2:T3	
+R2	Oneway-Coreference Arg1:T9 Arg2:T4	
+R3	Connect Arg1:T7 Arg2:T1	
+R4	Part-Whole Arg1:T1 Arg2:T8	
+R6	Part-Whole Arg1:T7 Arg2:T8	
+T2	Parts 25 30	ＣＮＧ燃料
+R5	Coreference Arg1:T2 Arg2:T4	

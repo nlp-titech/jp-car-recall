@@ -1,0 +1,13 @@
+T1	Parts 1 10	ＡＢＳモジュレータ
+T2	Parts 51 60	ＡＢＳモジュレータ
+T3	Parts 90 95	ブレーキ液
+T4	Parts 99 103	ブレーキ
+T5	Parts 31 35	プレート
+T6	Parts 70 74	プレート
+T7	Parts 11 25	プレッシャリダクションバルブ
+R1	Coreference Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T6 Arg2:T5	
+R3	Part-Whole Arg1:T7 Arg2:T1	
+R7	Contact Arg1:T5 Arg2:T7	
+R8	Contact Arg1:T3 Arg2:T7	
+R4	Connect Arg1:T2 Arg2:T4	

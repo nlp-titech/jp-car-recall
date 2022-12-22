@@ -1,0 +1,11 @@
+T1	Parts 0 8	電動式スロープ板
+T2	Parts 13 21	ノンステップバス
+T3	Parts 30 33	マット
+T4	Parts 46 49	マット
+T5	Parts 98 101	マット
+R1	Coreference Arg1:T3 Arg2:T4	
+R2	Coreference Arg1:T4 Arg2:T5	
+T6	Parts 26 29	乗降口
+R4	Part-Whole Arg1:T6 Arg2:T2	
+R3	Part-Whole Arg1:T1 Arg2:T6	
+R5	Part-Whole Arg1:T3 Arg2:T6	

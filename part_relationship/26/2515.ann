@@ -1,0 +1,23 @@
+T1	Parts 0 4	対象車両
+T5	Parts 47 49	車両
+T6	Parts 50 63	共通駆動系制御コンピュータ
+T7	Parts 64 67	データ
+T8	Parts 74 81	オートクルーズ
+T9	Parts 82 92	エンジン補助ブレーキ
+T10	Parts 97 105	坂道発進補助装置
+T11	Parts 131 135	低速ギヤ
+T13	Parts 180 189	トランスミッション
+T14	Parts 190 200	デファレンシャルギヤ
+R2	Coreference Arg1:T1 Arg2:T5	
+R5	Part-Whole Arg1:T6 Arg2:T5	
+R6	Part-Whole Arg1:T7 Arg2:T6	
+R7	Part-Whole Arg1:T8 Arg2:T5	
+R8	Part-Whole Arg1:T9 Arg2:T5	
+R9	Part-Whole Arg1:T10 Arg2:T5	
+R10	Connect Arg1:T6 Arg2:T8	
+R11	Connect Arg1:T6 Arg2:T9	
+R12	Connect Arg1:T6 Arg2:T10	
+R16	Part-Whole Arg1:T13 Arg2:T5	
+R17	Part-Whole Arg1:T14 Arg2:T5	
+R13	Part-Whole Arg1:T11 Arg2:T13	
+R1	Connect Arg1:T14 Arg2:T13	

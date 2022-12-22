@@ -1,0 +1,13 @@
+T2	Parts 21 25	油圧配管
+T4	Parts 62 64	配管
+R1	Coreference Arg1:T2 Arg2:T4	
+T5	Parts 78 81	作動油
+T6	Parts 128 132	油圧配管
+R2	Coreference Arg1:T4 Arg2:T6	
+T7	Parts 137 140	作動油
+R3	Coreference Arg1:T5 Arg2:T7	
+T1	Parts 0 6	動力伝達装置
+T8	Parts 7 16	油圧配管（走行用）
+R4	Coreference Arg1:T8 Arg2:T2	
+R5	Part-Whole Arg1:T8 Arg2:T1	
+R6	Contact Arg1:T4 Arg2:T5	

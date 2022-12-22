@@ -1,0 +1,15 @@
+T1	Parts 34 43	ブレーキチャンバー
+T2	Parts 63 74	スプリングブレーキ装置
+T3	Parts 0 6	大型トラック
+T8	Parts 11 20	スプリングブレーキ
+T9	Parts 83 92	スプリングブレーキ
+T10	Parts 106 115	スプリングブレーキ
+T11	Parts 24 31	リリースボルト
+R1	Coreference Arg1:T2 Arg2:T8	
+R2	Coreference Arg1:T9 Arg2:T2	
+R3	Coreference Arg1:T10 Arg2:T9	
+R4	Part-Whole Arg1:T1 Arg2:T8	
+R5	Contact Arg1:T1 Arg2:T11	
+R6	Part-Whole Arg1:T8 Arg2:T3	
+T4	Parts 75 79	エア系統
+R7	Part-Whole Arg1:T4 Arg2:T2	

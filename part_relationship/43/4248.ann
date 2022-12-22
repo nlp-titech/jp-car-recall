@@ -1,0 +1,9 @@
+T1	Parts 5 12	プラットホーム
+T2	Parts 26 32	ロープフック
+T4	Parts 0 4	トラクタ
+T6	Parts 50 52	車両
+R1	Part-Whole Arg1:T1 Arg2:T4	
+T5	Parts 19 22	大型棚
+R2	Part-Whole Arg1:T5 Arg2:T1	
+R3	Part-Whole Arg1:T2 Arg2:T5	
+R4	Coreference Arg1:T4 Arg2:T6	

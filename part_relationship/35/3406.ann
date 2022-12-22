@@ -1,0 +1,12 @@
+T16	Parts 102 108	リヤブレーキ
+T17	Parts 45 52	ブレーキドラム
+T1	Parts 0 5	四輪駆動車
+T2	Parts 6 12	リヤブレーキ
+R1	Coreference Arg1:T16 Arg2:T2	
+T4	Parts 114 117	タイヤ
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T4 Arg2:T1	
+R6	Connect Arg1:T16 Arg2:T4	
+T6	Parts 17 20	ドラム
+R4	Coreference Arg1:T6 Arg2:T17	
+R2	Part-Whole Arg1:T6 Arg2:T2	

@@ -1,0 +1,13 @@
+T1	Parts 23 31	走行用油圧ホース
+T2	Parts 44 52	走行用油圧ホース
+T3	Parts 102 110	走行用油圧ホース
+T4	Parts 0 7	ロード・ローラ
+T5	Parts 8 22	静油圧式無段変速機（ＨＳＴ）
+T6	Parts 53 57	フレーム
+T7	Parts 115 118	作動油
+R1	Part-Whole Arg1:T1 Arg2:T5	
+R2	Part-Whole Arg1:T5 Arg2:T4	
+R3	Coreference Arg1:T1 Arg2:T2	
+R4	Coreference Arg1:T1 Arg2:T3	
+R5	Part-Whole Arg1:T6 Arg2:T4	
+R6	Contact Arg1:T7 Arg2:T3	

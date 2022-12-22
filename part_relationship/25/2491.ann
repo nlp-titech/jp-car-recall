@@ -1,0 +1,18 @@
+T10	Parts 68 71	ヒータ
+T11	Parts 26 36	冷却水出入口部パイプ
+T12	Parts 42 45	パイプ
+T13	Parts 51 57	ホースバンド
+T1	Parts 0 6	大型観光バス
+T4	Parts 15 21	燃焼式ヒータ
+R1	Coreference Arg1:T12 Arg2:T11	
+R2	Coreference Arg1:T10 Arg2:T4	
+T5	Parts 90 93	ホース
+T6	Parts 108 111	冷却水
+R9	Contact Arg1:T6 Arg2:T5	
+R3	Part-Whole Arg1:T4 Arg2:T1	
+R5	Contact Arg1:T12 Arg2:T13	
+R4	Part-Whole Arg1:T11 Arg2:T4	
+R6	Part-Whole Arg1:T13 Arg2:T4	
+R7	Coreference Arg1:T12 Arg2:T5	
+T2	Parts 8 9	車
+R8	Coreference Arg1:T2 Arg2:T1	

@@ -1,0 +1,10 @@
+T16	Parts 11 22	バッテリーイコライザー
+T1	Parts 0 6	小型トラック
+T8	Parts 157 159	配線
+T9	Parts 69 80	バッテリーイコライザー
+R2	Coreference Arg1:T16 Arg2:T9	
+T10	Parts 81 84	ケース
+R1	Part-Whole Arg1:T16 Arg2:T1	
+R3	Part-Whole Arg1:T8 Arg2:T1	
+R4	Part-Whole Arg1:T10 Arg2:T9	
+R5	Contact Arg1:T9 Arg2:T8	

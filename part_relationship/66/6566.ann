@@ -1,0 +1,7 @@
+T3	Parts 0 5	かじ取装置
+T4	Parts 16 26	ステアリングナックル
+T5	Parts 51 61	ステアリングナックル
+T6	Parts 113 117	ナックル
+R1	Part-Whole Arg1:T4 Arg2:T3	
+R2	Coreference Arg1:T4 Arg2:T5	
+R3	Coreference Arg1:T5 Arg2:T6	

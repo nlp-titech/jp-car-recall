@@ -1,0 +1,18 @@
+T9	Parts 51 55	後部座席
+T10	Parts 57 62	後部反射器
+T13	Parts 97 101	後部座席
+T14	Parts 103 108	後部反射器
+T8	Parts 70 73	ボルト
+T15	Parts 90 93	ボルト
+T1	Parts 30 34	後部座席
+R1	Coreference Arg1:T15 Arg2:T8	
+R2	Coreference Arg1:T13 Arg2:T9	
+R3	Coreference Arg1:T14 Arg2:T10	
+R4	Coreference Arg1:T9 Arg2:T1	
+T2	Parts 14 16	車両
+R8	Part-Whole Arg1:T1 Arg2:T2	
+R9	Part-Whole Arg1:T10 Arg2:T2	
+R5	Contact Arg1:T8 Arg2:T2	
+R6	Contact Arg1:T9 Arg2:T8	
+R7	Contact Arg1:T10 Arg2:T8	
+#1	AnnotatorNotes T9	後部座席と後部反射器は直接繋がっているわけでも、ボルトを介して接続しているわけでもない

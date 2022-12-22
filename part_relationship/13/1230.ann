@@ -1,0 +1,4 @@
+T20	Parts 77 80	前照灯
+T21	Parts 1 8	前照灯スイッチ
+T4	Parts 42 48	摺動グリース
+R1	Connect Arg1:T21 Arg2:T20	

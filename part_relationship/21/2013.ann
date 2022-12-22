@@ -1,0 +1,13 @@
+T22	Parts 114 120	エアーヒータ
+T18	Parts 0 9	エンジン水温センサ
+T20	Parts 81 90	エアーヒータリレー
+T1	Parts 10 14	ハーネス
+T2	Parts 31 35	エンジン
+T3	Parts 42 44	素線
+T5	Parts 136 142	エアーホース
+T6	Parts 46 48	被覆
+R1	Contact Arg1:T6 Arg2:T3	
+R2	Part-Whole Arg1:T18 Arg2:T2	
+R3	Part-Whole Arg1:T1 Arg2:T18	
+R4	Part-Whole Arg1:T3 Arg2:T1	
+R5	Connect Arg1:T22 Arg2:T20	

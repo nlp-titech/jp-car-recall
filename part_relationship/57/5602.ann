@@ -1,0 +1,5 @@
+T2	Parts 45 50	後面ガラス
+T3	Parts 42 44	車両
+T4	Parts 14 30	地上デジタル・チューナ用アンテナ
+R1	Part-Whole Arg1:T2 Arg2:T3	
+R2	Contact Arg1:T4 Arg2:T3	

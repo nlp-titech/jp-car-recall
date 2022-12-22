@@ -1,0 +1,16 @@
+T1	Parts 0 5	バックドア
+T2	Parts 108 113	バックドア
+T3	Parts 22 29	エンドキャップ
+T4	Parts 97 104	エンドキャップ
+T5	Parts 6 14	ガス封入式ステー
+T7	Parts 19 21	外筒
+T8	Parts 90 92	外筒
+T9	Parts 118 120	外筒
+R1	Contact Arg1:T3 Arg2:T7	
+R2	Coreference Arg1:T8 Arg2:T7	
+R3	Coreference Arg1:T4 Arg2:T3	
+R4	Part-Whole Arg1:T7 Arg2:T5	
+R6	Coreference Arg1:T2 Arg2:T1	
+R7	Coreference Arg1:T9 Arg2:T8	
+R8	Part-Whole Arg1:T3 Arg2:T5	
+R5	Part-Whole Arg1:T5 Arg2:T1	

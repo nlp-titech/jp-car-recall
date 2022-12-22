@@ -1,0 +1,13 @@
+T1	Parts 0 12	エンジン式フォークリフト
+T2	Parts 13 17	フレーム
+T3	Parts 25 30	燃料タンク
+T4	Parts 32 38	作動油タンク
+T5	Parts 116 118	燃料
+T6	Parts 120 123	作動油
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T5 Arg2:T3	
+R5	Part-Whole Arg1:T6 Arg2:T4	
+R2	Contact Arg1:T3 Arg2:T2	
+R3	Contact Arg1:T4 Arg2:T2	
+R6	Part-Whole Arg1:T3 Arg2:T1	
+R7	Part-Whole Arg1:T4 Arg2:T1	

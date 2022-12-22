@@ -1,0 +1,15 @@
+T1	Parts 0 4	操舵装置
+T2	Parts 13 22	ステアリングコラム
+T3	Parts 23 35	ステアリングギアボックス
+T4	Parts 43 46	ボルト
+T6	Parts 64 67	ボルト
+T7	Parts 95 98	ボルト
+T8	Parts 116 119	ボルト
+R1	Coreference Arg1:T4 Arg2:T6	
+R2	Coreference Arg1:T6 Arg2:T7	
+R3	Coreference Arg1:T7 Arg2:T8	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T3 Arg2:T1	
+R6	Contact Arg1:T2 Arg2:T3	
+R7	Contact Arg1:T3 Arg2:T4	
+R8	Contact Arg1:T2 Arg2:T4	

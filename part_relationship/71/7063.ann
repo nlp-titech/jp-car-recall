@@ -1,0 +1,16 @@
+T1	Parts 44 51	スタータモータ
+T2	Parts 112 116	エンジン
+T4	Parts 0 4	電気配線
+T5	Parts 33 37	電気配線
+T6	Parts 76 80	電気配線
+T7	Parts 38 43	接続カプラ
+T8	Parts 81 86	接続カプラ
+T9	Parts 90 93	カプラ
+T10	Parts 52 59	シートボックス
+T11	Parts 20 22	後輪
+R1	Coreference Arg1:T4 Arg2:T5	
+R2	Part-Whole Arg1:T7 Arg2:T5	
+R3	Coreference Arg1:T5 Arg2:T6	
+R4	Coreference Arg1:T7 Arg2:T8	
+R5	Coreference Arg1:T8 Arg2:T9	
+R6	Contact Arg1:T6 Arg2:T2	

@@ -1,0 +1,10 @@
+T1	Parts 24 32	ハンドルホルダー
+T3	Parts 102 106	ハンドル
+T4	Parts 0 8	ハンドル周辺部品
+T5	Parts 47 50	ボルト
+T6	Parts 89 92	ボルト
+R1	Contact Arg1:T5 Arg2:T1	
+R2	Contact Arg1:T3 Arg2:T6	
+R3	Coreference Arg1:T6 Arg2:T5	
+R4	Contact Arg1:T1 Arg2:T3	
+R5	Part-Whole Arg1:T1 Arg2:T4	

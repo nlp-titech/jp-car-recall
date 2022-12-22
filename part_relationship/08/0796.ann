@@ -1,0 +1,15 @@
+T20	Parts 1 6	自動変速機
+T21	Parts 19 23	２速ギヤ
+T22	Parts 66 70	２速ギヤ
+T23	Parts 80 82	ギヤ
+T24	Parts 127 129	ギヤ
+T25	Parts 144 146	ギヤ
+R1	Coreference Arg1:T22 Arg2:T21	
+R2	Coreference Arg1:T23 Arg2:T22	
+T2	Parts 92 94	ギヤ
+R3	Coreference Arg1:T2 Arg2:T23	
+R4	Coreference Arg1:T24 Arg2:T2	
+R5	Coreference Arg1:T25 Arg2:T24	
+T3	Parts 149 151	ギヤ
+R7	Part-Whole Arg1:T21 Arg2:T20	
+R6	Part-Whole Arg1:T3 Arg2:T20	

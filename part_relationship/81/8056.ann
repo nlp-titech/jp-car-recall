@@ -1,0 +1,18 @@
+T1	Parts 0 9	ホイール・クレーン
+T2	Parts 10 17	アクセルペダル
+T3	Parts 22 29	ストッパボルト
+T4	Parts 30 37	衝撃緩衝用ゴム
+T5	Parts 76 83	アクセルペダル
+T6	Parts 96 103	アクセルペダル
+T7	Parts 104 111	ストッパボルト
+T8	Parts 117 124	アクセルペダル
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T1	
+R3	Part-Whole Arg1:T4 Arg2:T1	
+R4	Contact Arg1:T4 Arg2:T2	
+R5	Connect Arg1:T3 Arg2:T2	
+R6	Contact Arg1:T4 Arg2:T3	
+R7	Coreference Arg1:T5 Arg2:T2	
+R8	Coreference Arg1:T6 Arg2:T5	
+R9	Coreference Arg1:T7 Arg2:T3	
+R10	Coreference Arg1:T8 Arg2:T6	

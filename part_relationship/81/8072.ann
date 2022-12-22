@@ -1,0 +1,5 @@
+T2	Parts 5 15	エアバッグモジュール
+T3	Parts 67 72	エアバッグ
+T4	Parts 79 89	エアバッグモジュール
+R1	Part-Whole Arg1:T3 Arg2:T2	
+R2	Coreference Arg1:T2 Arg2:T4	

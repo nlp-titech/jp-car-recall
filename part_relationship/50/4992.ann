@@ -1,0 +1,19 @@
+T1	Parts 25 32	シートヒーター
+T2	Parts 0 4	運転者席
+T3	Parts 36 40	電気配線
+T4	Parts 106 110	電気配線
+T6	Parts 53 56	シート
+T7	Parts 71 79	シートクッション
+T8	Parts 111 114	シート
+T10	Parts 6 9	助手席
+T12	Parts 139 141	配線
+R1	Coreference Arg1:T12 Arg2:T4	
+R2	Coreference Arg1:T4 Arg2:T3	
+R3	Connect Arg1:T3 Arg2:T1	
+R4	Part-Whole Arg1:T7 Arg2:T10	
+R5	Part-Whole Arg1:T7 Arg2:T2	
+R7	Oneway-Coreference Arg1:T6 Arg2:T10	
+R8	Oneway-Coreference Arg1:T6 Arg2:T2	
+R9	Contact Arg1:T1 Arg2:T10	
+R10	Contact Arg1:T1 Arg2:T2	
+R11	Coreference Arg1:T8 Arg2:T6	

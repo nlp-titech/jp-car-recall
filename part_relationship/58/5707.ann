@@ -1,0 +1,23 @@
+T2	Parts 120 126	スプロケット
+T3	Parts 133 141	リアスプロケット
+T4	Parts 52 57	ブラケット
+T5	Parts 77 82	ブラケット
+T6	Parts 106 111	ブラケット
+T7	Parts 0 6	駆動チェーン
+T8	Parts 115 119	チェーン
+T9	Parts 149 155	リアホイール
+T10	Parts 9 23	ガイドローラー固定ブラケット
+T12	Parts 85 91	上部ローラー
+T14	Parts 36 38	車体
+R1	Coreference Arg1:T10 Arg2:T4	
+R2	Coreference Arg1:T4 Arg2:T5	
+R3	Coreference Arg1:T5 Arg2:T6	
+R4	Coreference Arg1:T7 Arg2:T8	
+R5	Contact Arg1:T5 Arg2:T12	
+R6	Contact Arg1:T12 Arg2:T8	
+R7	Contact Arg1:T14 Arg2:T4	
+R8	Oneway-Coreference Arg1:T2 Arg2:T3	
+R9	Contact Arg1:T8 Arg2:T3	
+R10	Contact Arg1:T8 Arg2:T2	
+R11	Contact Arg1:T3 Arg2:T9	
+R12	Connect Arg1:T8 Arg2:T9	

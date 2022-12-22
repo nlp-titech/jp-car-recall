@@ -1,0 +1,28 @@
+T12	Parts 97 104	ブレーキペダル
+T13	Parts 71 75	ピストン
+T14	Parts 132 136	ピストン
+T15	Parts 124 131	ピストンカップ
+T16	Parts 63 70	ピストンカップ
+T17	Parts 44 51	ピストンカップ
+T1	Parts 0 7	ブレーキペダル
+T2	Parts 15 26	ハイドロリックブースタ
+T3	Parts 27 33	増圧シリンダ
+T4	Parts 35 39	ピストン
+T6	Parts 148 153	ブレーキ液
+T7	Parts 222 225	対象車
+T8	Parts 240 244	対象車両
+R1	Coreference Arg1:T12 Arg2:T1	
+R2	Coreference Arg1:T4 Arg2:T13	
+R3	Coreference Arg1:T17 Arg2:T16	
+R4	Coreference Arg1:T16 Arg2:T15	
+R5	Coreference Arg1:T13 Arg2:T14	
+R6	Coreference Arg1:T7 Arg2:T8	
+R7	Part-Whole Arg1:T3 Arg2:T2	
+R8	Part-Whole Arg1:T4 Arg2:T3	
+R10	Connect Arg1:T2 Arg2:T1	
+R15	Part-Whole Arg1:T6 Arg2:T7	
+R14	Part-Whole Arg1:T2 Arg2:T7	
+R13	Part-Whole Arg1:T12 Arg2:T7	
+R9	Part-Whole Arg1:T17 Arg2:T3	
+R12	Contact Arg1:T4 Arg2:T17	
+R11	Contact Arg1:T2 Arg2:T6	

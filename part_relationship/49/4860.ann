@@ -1,0 +1,24 @@
+T1	Parts 49 57	ボールジョイント
+T2	Parts 19 26	アッパーアーム
+T3	Parts 111 118	アッパーアーム
+T5	Parts 70 75	ジョイント
+T6	Parts 101 106	ジョイント
+T7	Parts 28 33	ロアアーム
+T8	Parts 120 125	ロアアーム
+T9	Parts 0 4	緩衝装置
+T10	Parts 34 43	トレーリングアーム
+T11	Parts 151 154	アーム
+T12	Parts 9 18	後輪サスペンション
+R1	Part-Whole Arg1:T2 Arg2:T12	
+R2	Contact Arg1:T1 Arg2:T2	
+R3	Contact Arg1:T1 Arg2:T7	
+R4	Contact Arg1:T1 Arg2:T10	
+R5	Part-Whole Arg1:T7 Arg2:T12	
+R6	Part-Whole Arg1:T10 Arg2:T12	
+R7	Part-Whole Arg1:T12 Arg2:T9	
+R8	Coreference Arg1:T1 Arg2:T5	
+R9	Coreference Arg1:T1 Arg2:T6	
+R10	Coreference Arg1:T2 Arg2:T3	
+R11	Coreference Arg1:T7 Arg2:T8	
+R12	Oneway-Coreference Arg1:T2 Arg2:T11	
+R13	Oneway-Coreference Arg1:T7 Arg2:T11	

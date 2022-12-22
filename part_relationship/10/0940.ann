@@ -1,0 +1,17 @@
+T18	Parts 6 10	ターボ翼
+T19	Parts 111 115	エンジン
+T20	Parts 92 93	翼
+T21	Parts 121 125	エンジン
+T22	Parts 53 54	翼
+T23	Parts 29 30	翼
+T1	Parts 1 5	エンジン
+R1	Coreference Arg1:T23 Arg2:T18	
+R2	Coreference Arg1:T22 Arg2:T23	
+R3	Coreference Arg1:T20 Arg2:T22	
+T2	Parts 98 105	エンジンオイル
+T3	Parts 106 109	吸気管
+R4	Coreference Arg1:T19 Arg2:T1	
+R5	Coreference Arg1:T21 Arg2:T19	
+R6	Part-Whole Arg1:T18 Arg2:T1	
+R7	Contact Arg1:T2 Arg2:T19	
+R9	Contact Arg1:T3 Arg2:T19	

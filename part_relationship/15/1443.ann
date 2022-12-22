@@ -1,0 +1,11 @@
+T1	Parts 0 2	前輪
+T2	Parts 6 14	ドライブシャフト
+T3	Parts 19 21	車輪
+T4	Parts 35 41	潤滑用グリス
+T6	Parts 68 72	ハンドル
+T7	Parts 92 95	潤滑油
+R3	Contact Arg1:T2 Arg2:T1	
+R7	Coreference Arg1:T4 Arg2:T7	
+R1	Contact Arg1:T4 Arg2:T2	
+R4	Coreference Arg1:T3 Arg2:T1	
+R2	Connect Arg1:T6 Arg2:T2	

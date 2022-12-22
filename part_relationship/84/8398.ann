@@ -1,0 +1,20 @@
+T3	Parts 40 45	スプリング
+T4	Parts 50 59	スプリングスペーサ
+T6	Parts 93 98	スプリング
+T7	Parts 99 108	スプリングスペーサ
+T8	Parts 124 130	シートバック
+T9	Parts 146 156	リクライニングレバー
+T10	Parts 178 184	シートバック
+T1	Parts 0 4	運転者席
+T11	Parts 7 10	助手席
+R3	Coreference Arg1:T3 Arg2:T6	
+R4	Coreference Arg1:T4 Arg2:T7	
+R1	Coreference Arg1:T8 Arg2:T10	
+R2	Part-Whole Arg1:T8 Arg2:T1	
+R5	Part-Whole Arg1:T8 Arg2:T11	
+R6	Contact Arg1:T3 Arg2:T4	
+R9	Connect Arg1:T8 Arg2:T9	
+R10	Part-Whole Arg1:T9 Arg2:T1	
+R11	Part-Whole Arg1:T9 Arg2:T11	
+R7	Part-Whole Arg1:T6 Arg2:T9	
+R8	Part-Whole Arg1:T7 Arg2:T9	

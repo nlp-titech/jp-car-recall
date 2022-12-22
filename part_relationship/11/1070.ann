@@ -1,0 +1,16 @@
+T18	Parts 6 15	インプットシャフト
+T19	Parts 69 71	ギヤ
+T20	Parts 72 77	ベアリング
+T21	Parts 119 124	ベアリング
+T1	Parts 0 5	手動変速機
+T3	Parts 53 62	インプットシャフト
+T4	Parts 78 81	オイル
+R1	Coreference Arg1:T18 Arg2:T3	
+R2	Coreference Arg1:T20 Arg2:T21	
+R3	Part-Whole Arg1:T18 Arg2:T1	
+R5	Contact Arg1:T3 Arg2:T19	
+R6	Part-Whole Arg1:T20 Arg2:T19	
+R7	Contact Arg1:T4 Arg2:T20	
+R4	Part-Whole Arg1:T19 Arg2:T1	
+T2	Parts 26 29	オイル
+R8	Coreference Arg1:T2 Arg2:T4	

@@ -1,0 +1,8 @@
+T1	Parts 0 12	電動式パワーステアリング
+T2	Parts 17 23	ギヤボックス
+T5	Parts 96 99	センサ
+T6	Parts 127 130	警告灯
+T3	Parts 31 53	パワーアシスト量制御用センサ（トルクセンサ）
+R1	Coreference Arg1:T3 Arg2:T5	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Connect Arg1:T3 Arg2:T2	

@@ -1,0 +1,16 @@
+T12	Parts 131 142	ステアリングジョイント
+T13	Parts 55 61	取付けボルト
+T14	Parts 97 100	ボルト
+T15	Parts 111 122	ステアリングジョイント
+T1	Parts 0 4	ハンドル
+T2	Parts 5 16	パワーステアリング装置
+T3	Parts 21 32	ステアリングジョイント
+T4	Parts 37 49	サポートジョイントカバー
+R1	Coreference Arg1:T14 Arg2:T13	
+R2	Coreference Arg1:T15 Arg2:T3	
+R4	Coreference Arg1:T12 Arg2:T15	
+R5	Contact Arg1:T13 Arg2:T4	
+R6	Contact Arg1:T3 Arg2:T2	
+R7	Contact Arg1:T3 Arg2:T1	
+R8	Connect Arg1:T2 Arg2:T1	
+R3	Contact Arg1:T3 Arg2:T4	

@@ -1,0 +1,7 @@
+T4	Parts 0 14	連結装置（トレーラーヒッチ）
+T5	Parts 57 61	連結装置
+T6	Parts 88 92	連結装置
+T7	Parts 15 24	連結金具取付ボルト
+R1	Coreference Arg1:T4 Arg2:T5	
+R2	Coreference Arg1:T5 Arg2:T6	
+R3	Contact Arg1:T4 Arg2:T7	

@@ -1,0 +1,11 @@
+T1	Parts 0 2	後軸
+T2	Parts 3 11	右側ブレーキ配管
+T3	Parts 29 38	ショックアブソーバ
+T4	Parts 41 47	ブレーキ配管
+T5	Parts 81 87	ブレーキ配管
+T6	Parts 98 103	ブレーキ液
+R1	Coreference Arg1:T2 Arg2:T4	
+R2	Coreference Arg1:T4 Arg2:T5	
+R3	Contact Arg1:T2 Arg2:T1	
+R5	Contact Arg1:T6 Arg2:T5	
+R4	Part-Whole Arg1:T3 Arg2:T1	

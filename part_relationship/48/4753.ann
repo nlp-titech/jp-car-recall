@@ -1,0 +1,12 @@
+T1	Parts 8 17	バランサーシャフト
+T2	Parts 83 90	エンジンオイル
+T3	Parts 18 24	オイルシール
+T5	Parts 54 57	シール
+T6	Parts 74 77	シール
+T7	Parts 0 3	原動機
+R1	Contact Arg1:T7 Arg2:T2	
+R2	Part-Whole Arg1:T1 Arg2:T7	
+R3	Coreference Arg1:T3 Arg2:T5	
+R4	Coreference Arg1:T5 Arg2:T6	
+R6	Contact Arg1:T6 Arg2:T2	
+R5	Part-Whole Arg1:T3 Arg2:T1	

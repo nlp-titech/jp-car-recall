@@ -1,0 +1,9 @@
+T2	Parts 56 61	固定ナット
+T3	Parts 9 19	プレフューズボックス
+T4	Parts 46 55	通電用金属プレート
+T7	Parts 0 2	車両
+T1	Parts 24 27	ナット
+R1	Part-Whole Arg1:T3 Arg2:T7	
+R2	Coreference Arg1:T1 Arg2:T2	
+R3	Part-Whole Arg1:T4 Arg2:T3	
+R4	Contact Arg1:T4 Arg2:T2	

@@ -1,0 +1,9 @@
+T17	Parts 110 114	トレーラ
+T18	Parts 115 119	ブレーキ
+T1	Parts 0 11	トレーラ用電源ケーブル
+T2	Parts 18 29	トレーラ用ブレーキ配管
+T3	Parts 54 60	ブレーキ配管
+R1	Coreference Arg1:T2 Arg2:T3	
+R4	Part-Whole Arg1:T18 Arg2:T17	
+R5	Part-Whole Arg1:T3 Arg2:T18	
+R6	Part-Whole Arg1:T1 Arg2:T17	

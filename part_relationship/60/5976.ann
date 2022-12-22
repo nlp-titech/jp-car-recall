@@ -1,0 +1,5 @@
+T1	Parts 35 42	メインアクスル
+T2	Parts 0 4	クラッチ
+T3	Parts 19 25	クラッチボス
+R1	Connect Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T2	

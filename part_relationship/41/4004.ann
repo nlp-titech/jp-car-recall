@@ -1,0 +1,18 @@
+T1	Parts 11 17	主変速レバー
+T2	Parts 51 57	主変速レバー
+T3	Parts 0 6	動力伝達装置
+T4	Parts 18 26	トラニオンレバー
+T5	Parts 116 121	変速レバー
+T6	Parts 30 36	主変速ロッド
+T7	Parts 75 83	キャビンフレーム
+T10	Parts 71 74	ロッド
+T11	Parts 130 132	車両
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Coreference Arg1:T6 Arg2:T10	
+R3	Coreference Arg1:T2 Arg2:T5	
+R4	Contact Arg1:T1 Arg2:T6	
+R5	Connect Arg1:T1 Arg2:T4	
+R6	Contact Arg1:T4 Arg2:T6	
+R7	Part-Whole Arg1:T7 Arg2:T11	
+R8	Part-Whole Arg1:T5 Arg2:T11	
+R9	Part-Whole Arg1:T3 Arg2:T11	

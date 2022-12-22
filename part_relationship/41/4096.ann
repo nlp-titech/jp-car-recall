@@ -1,0 +1,18 @@
+T1	Parts 74 84	ショックアブソーバー
+T2	Parts 157 167	ショックアブソーバー
+T4	Parts 181 188	エアスプリング
+T5	Parts 168 175	ピストンロッド
+T6	Parts 26 32	車高調整装置
+T7	Parts 0 6	大型トラック
+T8	Parts 205 208	タイヤ
+T10	Parts 70 73	後後軸
+R1	Coreference Arg1:T1 Arg2:T2	
+T3	Parts 7 19	後２軸エアサスペンション
+R2	Part-Whole Arg1:T3 Arg2:T7	
+R3	Part-Whole Arg1:T6 Arg2:T3	
+R4	Part-Whole Arg1:T10 Arg2:T7	
+R5	Part-Whole Arg1:T1 Arg2:T3	
+R6	Connect Arg1:T10 Arg2:T1	
+R7	Part-Whole Arg1:T5 Arg2:T2	
+R8	Part-Whole Arg1:T4 Arg2:T3	
+R9	Part-Whole Arg1:T8 Arg2:T7	

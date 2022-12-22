@@ -1,0 +1,9 @@
+T8	Parts 122 125	警告灯
+T3	Parts 0 11	電動パーキングブレーキ
+T1	Parts 16 28	ブレーキ制御コンピュータ
+T5	Parts 131 142	電動パーキングブレーキ
+T6	Parts 66 79	パーキングブレーキ用モータ
+R1	Coreference Arg1:T3 Arg2:T5	
+R2	Part-Whole Arg1:T6 Arg2:T5	
+R3	Connect Arg1:T3 Arg2:T1	
+R4	Connect Arg1:T1 Arg2:T8	

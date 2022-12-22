@@ -1,0 +1,10 @@
+T1	Parts 0 12	ディーゼルエンジン搭載車
+T2	Parts 13 32	ＤＰＦ（ディーゼル粒子状物質除去装置）
+T3	Parts 33 45	エンジン制御コンピュータ
+T10	Parts 222 225	ＤＰＦ
+R5	Coreference Arg1:T10 Arg2:T2	
+T11	Parts 238 241	ＤＰＦ
+R6	Coreference Arg1:T11 Arg2:T10	
+R7	Part-Whole Arg1:T2 Arg2:T1	
+R8	Part-Whole Arg1:T3 Arg2:T1	
+R9	Connect Arg1:T2 Arg2:T3	

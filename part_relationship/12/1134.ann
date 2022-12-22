@@ -1,0 +1,13 @@
+T20	Parts 65 67	車両
+T21	Parts 130 133	原動機
+T22	Parts 86 95	エンジン制御ランプ
+T24	Parts 25 33	クーリングファン
+T1	Parts 1 12	エンジン制御用電気配線
+T2	Parts 77 81	電気配線
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Contact Arg1:T22 Arg2:T2	
+R3	Connect Arg1:T21 Arg2:T2	
+R4	Part-Whole Arg1:T24 Arg2:T20	
+R5	Part-Whole Arg1:T2 Arg2:T20	
+R6	Part-Whole Arg1:T22 Arg2:T20	
+R7	Part-Whole Arg1:T21 Arg2:T20	

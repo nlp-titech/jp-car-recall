@@ -1,0 +1,7 @@
+T1	Parts 0 6	運転支援装置
+T2	Parts 11 21	衝突被害軽減ブレーキ
+T3	Parts 22 29	制御プログラム
+T4	Parts 128 138	衝突被害軽減ブレーキ
+R1	Part-Whole Arg1:T3 Arg2:T2	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Coreference Arg1:T4 Arg2:T2	

@@ -1,0 +1,12 @@
+T16	Parts 65 69	ハンドル
+T18	Parts 0 10	ステアリングシャフト
+T19	Parts 11 18	ギヤ・ボックス
+T20	Parts 40 47	ギヤ・ボックス
+T1	Parts 19 21	継手
+T2	Parts 37 39	継手
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Coreference Arg1:T19 Arg2:T20	
+R4	Connect Arg1:T19 Arg2:T18	
+R5	Contact Arg1:T1 Arg2:T19	
+R6	Contact Arg1:T1 Arg2:T18	
+R3	Connect Arg1:T16 Arg2:T18	

@@ -1,0 +1,12 @@
+T14	Parts 128 130	車両
+T16	Parts 112 122	前後進切り替えレバー
+T17	Parts 97 104	ハンドルポスト
+T18	Parts 75 82	ハンドルポスト
+T19	Parts 10 17	ハンドルポスト
+T1	Parts 0 5	かじ取装置
+R1	Coreference Arg1:T18 Arg2:T19	
+R2	Coreference Arg1:T17 Arg2:T18	
+R3	Part-Whole Arg1:T19 Arg2:T1	
+R4	Contact Arg1:T16 Arg2:T17	
+R5	Part-Whole Arg1:T1 Arg2:T14	
+R6	Part-Whole Arg1:T16 Arg2:T14	

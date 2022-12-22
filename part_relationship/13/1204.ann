@@ -1,0 +1,10 @@
+T14	Parts 98 106	シリンダブロック
+T15	Parts 93 97	ピストン
+T16	Parts 55 59	ピストン
+T17	Parts 10 14	ピストン
+T1	Parts 0 9	静油圧変速機モータ
+R1	Coreference Arg1:T17 Arg2:T16	
+R2	Coreference Arg1:T16 Arg2:T15	
+R3	Part-Whole Arg1:T17 Arg2:T1	
+R4	Contact Arg1:T15 Arg2:T14	
+R5	Part-Whole Arg1:T14 Arg2:T1	

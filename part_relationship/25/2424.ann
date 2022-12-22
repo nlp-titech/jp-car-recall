@@ -1,0 +1,5 @@
+T14	Parts 30 32	車体
+T15	Parts 95 101	ステアリング
+T16	Parts 0 12	ステアリングギヤボックス
+R3	Connect Arg1:T15 Arg2:T16	
+R1	Contact Arg1:T16 Arg2:T14	

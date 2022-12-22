@@ -1,0 +1,7 @@
+T1	Parts 0 8	エンジン冷却装置
+T2	Parts 33 36	冷却水
+T3	Parts 63 67	冷却装置
+T4	Parts 103 107	エンジン
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T1 Arg2:T3	
+R3	Connect Arg1:T3 Arg2:T4	

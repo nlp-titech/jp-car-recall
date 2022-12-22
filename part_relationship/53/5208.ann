@@ -1,0 +1,13 @@
+T2	Parts 112 118	コンピュータ
+T6	Parts 44 46	灯火
+T1	Parts 1 19	灯火装置制御用コンピュータ（ＬＣＭ）
+T3	Parts 24 27	ＬＣＭ
+R1	Coreference Arg1:T1 Arg2:T3	
+T4	Parts 71 74	ＬＣＭ
+R2	Coreference Arg1:T3 Arg2:T4	
+T5	Parts 100 103	ＬＣＭ
+T7	Parts 28 32	ブレーカ
+R3	Coreference Arg1:T4 Arg2:T5	
+R4	Part-Whole Arg1:T2 Arg2:T5	
+R5	Connect Arg1:T3 Arg2:T7	
+R6	Connect Arg1:T6 Arg2:T4	

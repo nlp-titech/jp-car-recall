@@ -1,0 +1,17 @@
+T8	Parts 94 102	インフレータ容器
+T9	Parts 150 156	インフレータ
+T10	Parts 78 84	インフレータ
+T12	Parts 27 29	車両
+T13	Parts 35 43	インフレータ容器
+T11	Parts 85 90	エアバッグ
+T14	Parts 136 138	車両
+T1	Parts 0 9	助手席用エアバッグ
+T2	Parts 10 22	インフレータ（膨張装置）
+R1	Coreference Arg1:T10 Arg2:T2	
+R3	Coreference Arg1:T11 Arg2:T1	
+R4	Part-Whole Arg1:T1 Arg2:T12	
+R5	Part-Whole Arg1:T2 Arg2:T13	
+R2	Part-Whole Arg1:T13 Arg2:T1	
+R6	Coreference Arg1:T8 Arg2:T13	
+R7	Coreference Arg1:T9 Arg2:T10	
+R8	Coreference Arg1:T14 Arg2:T12	

@@ -1,0 +1,7 @@
+T1	Parts 0 4	トラック
+T2	Parts 5 9	差動装置
+T3	Parts 14 19	サイドギヤ
+T4	Parts 74 76	ギヤ
+R1	Coreference Arg1:T3 Arg2:T4	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T3 Arg2:T2	

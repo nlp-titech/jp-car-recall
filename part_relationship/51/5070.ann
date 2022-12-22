@@ -1,0 +1,16 @@
+T1	Parts 0 7	トランクリッド
+T3	Parts 51 58	トランクリッド
+T4	Parts 127 134	トランクリッド
+T5	Parts 12 33	トランクリッド・テレスコピック・スプリング
+T6	Parts 118 123	スプリング
+T7	Parts 70 78	ボール・ソケット
+T8	Parts 99 107	ボール・ソケット
+T11	Parts 112 114	車体
+R1	Coreference Arg1:T8 Arg2:T7	
+R2	Coreference Arg1:T6 Arg2:T5	
+R3	Coreference Arg1:T3 Arg2:T1	
+R4	Coreference Arg1:T4 Arg2:T3	
+R5	Contact Arg1:T7 Arg2:T5	
+R6	Contact Arg1:T5 Arg2:T1	
+R7	Contact Arg1:T6 Arg2:T11	
+R8	Part-Whole Arg1:T4 Arg2:T11	

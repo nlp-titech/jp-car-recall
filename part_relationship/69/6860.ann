@@ -1,0 +1,17 @@
+T3	Parts 24 27	アーム
+T12	Parts 73 74	扉
+T13	Parts 93 94	扉
+T10	Parts 0 9	荷台スライド式側扉
+T1	Parts 10 23	センターローラーブラケット
+T4	Parts 34 39	アームピン
+T5	Parts 52 57	アームピン
+T2	Parts 80 89	ローラーブラケット
+R1	Contact Arg1:T1 Arg2:T10	
+R2	Contact Arg1:T3 Arg2:T10	
+R3	Contact Arg1:T1 Arg2:T3	
+R4	Contact Arg1:T3 Arg2:T4	
+R5	Contact Arg1:T1 Arg2:T4	
+R6	Coreference Arg1:T4 Arg2:T5	
+R7	Coreference Arg1:T10 Arg2:T12	
+R8	Coreference Arg1:T1 Arg2:T2	
+R9	Coreference Arg1:T12 Arg2:T13	

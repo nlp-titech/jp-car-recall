@@ -1,0 +1,16 @@
+T1	Parts 0 8	ホイールクレーン
+T2	Parts 9 22	エンジン制御装置（ＥＣＭ）
+T5	Parts 105 109	エンジン
+T6	Parts 131 135	エンジン
+T8	Parts 57 69	エンジン圧縮開放ブレーキ
+T11	Parts 42 46	信号回路
+T3	Parts 24 36	エンジン圧縮開放ブレーキ
+R1	Coreference Arg1:T5 Arg2:T6	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T5 Arg2:T1	
+R4	Coreference Arg1:T3 Arg2:T8	
+R5	Part-Whole Arg1:T3 Arg2:T1	
+R6	Connect Arg1:T3 Arg2:T11	
+R7	Connect Arg1:T2 Arg2:T11	
+R8	Connect Arg1:T8 Arg2:T5	
+R9	Connect Arg1:T2 Arg2:T5	

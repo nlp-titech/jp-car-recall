@@ -1,0 +1,11 @@
+T2	Parts 34 38	内部回路
+T3	Parts 20 23	リレー
+T4	Parts 30 33	リレー
+T5	Parts 74 77	リレー
+T6	Parts 0 12	原動機制御用コンピュータ
+T7	Parts 87 90	原動機
+R1	Connect Arg1:T6 Arg2:T7	
+R2	Connect Arg1:T6 Arg2:T3	
+R3	Coreference Arg1:T3 Arg2:T4	
+R4	Part-Whole Arg1:T2 Arg2:T4	
+R5	Coreference Arg1:T4 Arg2:T5	

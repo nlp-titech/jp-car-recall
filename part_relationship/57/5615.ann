@@ -1,0 +1,3 @@
+T2	Parts 0 3	排気管
+T3	Parts 8 17	エキゾーストトリム
+R1	Contact Arg1:T3 Arg2:T2	

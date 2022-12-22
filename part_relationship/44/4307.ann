@@ -1,0 +1,11 @@
+T1	Parts 21 29	機械式自動変速機
+T2	Parts 30 37	制御プログラム
+T3	Parts 0 6	小型トラック
+T4	Parts 63 67	エンジン
+T5	Parts 49 51	後輪
+T6	Parts 7 16	フルタイム４ＷＤ車
+R2	Part-Whole Arg1:T1 Arg2:T6	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T5 Arg2:T6	
+R1	Connect Arg1:T1 Arg2:T4	
+R5	Part-Whole Arg1:T4 Arg2:T6	

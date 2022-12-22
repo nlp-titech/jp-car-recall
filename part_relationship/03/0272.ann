@@ -1,0 +1,21 @@
+T6	Parts 11 18	タイヤハンガー
+T7	Parts 25 29	ハンガー
+T8	Parts 41 45	ホルダー
+T9	Parts 71 75	ホルダー
+T11	Parts 56 62	スペアタイヤ
+T12	Parts 0 6	スペアタイヤ
+R1	Coreference Arg1:T7 Arg2:T6	
+T1	Parts 30 32	車体
+R2	Coreference Arg1:T11 Arg2:T12	
+T2	Parts 66 70	電気配線
+R3	Coreference Arg1:T9 Arg2:T8	
+T3	Parts 93 96	灯火類
+T4	Parts 88 90	車体
+R4	Coreference Arg1:T1 Arg2:T4	
+R9	Part-Whole Arg1:T3 Arg2:T4	
+R5	Contact Arg1:T12 Arg2:T6	
+R6	Contact Arg1:T7 Arg2:T8	
+R7	Contact Arg1:T1 Arg2:T8	
+R8	Connect Arg1:T7 Arg2:T1	
+R10	Contact Arg1:T2 Arg2:T3	
+R11	Part-Whole Arg1:T2 Arg2:T4	

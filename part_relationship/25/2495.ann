@@ -1,0 +1,15 @@
+T12	Parts 56 59	タイヤ
+T13	Parts 77 80	タイヤ
+T14	Parts 90 100	フルホイールキャップ
+T15	Parts 115 125	フルホイールキャップ
+T16	Parts 28 38	フルホイールキャップ
+T1	Parts 0 16	１４インチスチールホイール仕様車
+T2	Parts 21 23	車輪
+R1	Coreference Arg1:T13 Arg2:T12	
+R2	Coreference Arg1:T15 Arg2:T14	
+R3	Coreference Arg1:T16 Arg2:T14	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Contact Arg1:T2 Arg2:T16	
+R6	Contact Arg1:T2 Arg2:T12	
+R7	Part-Whole Arg1:T12 Arg2:T1	
+R8	Part-Whole Arg1:T16 Arg2:T1	

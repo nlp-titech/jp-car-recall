@@ -1,0 +1,20 @@
+T21	Parts 161 164	後前輪
+T23	Parts 146 150	チェーン
+T24	Parts 137 141	チェーン
+T25	Parts 151 157	スプロケット
+T26	Parts 96 100	チェーン
+T27	Parts 29 33	チェーン
+T28	Parts 48 53	主制動装置
+T29	Parts 64 73	ブレーキライニング
+T30	Parts 184 188	ブレーキ
+T1	Parts 0 6	動力伝達装置
+T2	Parts 11 28	第二減速機（タンデムドライブ装置）
+R1	Coreference Arg1:T27 Arg2:T26	
+R2	Coreference Arg1:T26 Arg2:T24	
+R3	Coreference Arg1:T24 Arg2:T23	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T27 Arg2:T2	
+R6	Part-Whole Arg1:T29 Arg2:T28	
+R7	Contact Arg1:T25 Arg2:T23	
+R8	Connect Arg1:T25 Arg2:T28	
+R9	Coreference Arg1:T28 Arg2:T30	

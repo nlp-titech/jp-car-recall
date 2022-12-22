@@ -1,0 +1,7 @@
+T15	Parts 129 133	エンジン
+T16	Parts 0 11	イグニッションスイッチ
+T6	Parts 53 56	接点板
+T9	Parts 113 116	灯火類
+R5	Part-Whole Arg1:T6 Arg2:T16	
+R2	Connect Arg1:T9 Arg2:T16	
+R6	Connect Arg1:T15 Arg2:T16	

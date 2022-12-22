@@ -1,0 +1,11 @@
+T18	Parts 9 12	変速機
+T19	Parts 14 25	ユニバーサルジョイント
+T21	Parts 86 91	ジョイント
+T22	Parts 122 127	ジョイント
+T1	Parts 0 8	プロペラシャフト
+T2	Parts 58 62	グリース
+R3	Coreference Arg1:T21 Arg2:T22	
+R4	Part-Whole Arg1:T19 Arg2:T1	
+R5	Contact Arg1:T2 Arg2:T19	
+R6	Connect Arg1:T18 Arg2:T1	
+R1	Coreference Arg1:T19 Arg2:T21	

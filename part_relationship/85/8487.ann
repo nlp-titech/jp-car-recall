@@ -1,0 +1,9 @@
+T1	Parts 0 12	エンジン制御コンピュータ
+T2	Parts 17 24	制御プログラム
+T3	Parts 58 63	排気バルブ
+T4	Parts 66 71	吸気バルブ
+T5	Parts 109 113	エンジン
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T5	
+R3	Part-Whole Arg1:T4 Arg2:T5	
+R4	Connect Arg1:T5 Arg2:T1	

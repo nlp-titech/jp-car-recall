@@ -1,0 +1,7 @@
+T1	Parts 0 6	後輪差動装置
+T2	Parts 7 12	左側ケース
+T5	Parts 49 52	ケース
+T7	Parts 102 105	オイル
+R2	Coreference Arg1:T2 Arg2:T5	
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T7 Arg2:T5	

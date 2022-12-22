@@ -1,0 +1,16 @@
+T1	Parts 26 33	エンドキャップ
+T2	Parts 101 108	エンドキャップ
+T4	Parts 0 5	リヤゲート
+T5	Parts 112 117	リヤゲート
+T6	Parts 6 18	ガス封入式ダンパーステー
+T8	Parts 23 25	外筒
+T9	Parts 94 96	外筒
+T10	Parts 122 124	外筒
+R1	Coreference Arg1:T9 Arg2:T8	
+R2	Coreference Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T8 Arg2:T6	
+R5	Contact Arg1:T1 Arg2:T8	
+R6	Contact Arg1:T6 Arg2:T4	
+R7	Coreference Arg1:T5 Arg2:T4	
+R3	Coreference Arg1:T9 Arg2:T10	
+R8	Part-Whole Arg1:T1 Arg2:T6	

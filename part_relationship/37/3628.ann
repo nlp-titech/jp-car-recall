@@ -1,0 +1,11 @@
+T1	Parts 20 23	後写鏡
+T2	Parts 8 11	助手席
+T4	Parts 28 30	鏡面
+T5	Parts 54 56	鏡面
+T6	Parts 109 111	鏡面
+T9	Parts 2 7	ルートバン
+R4	Part-Whole Arg1:T4 Arg2:T1	
+R8	Part-Whole Arg1:T2 Arg2:T9	
+R2	Coreference Arg1:T5 Arg2:T6	
+R3	Coreference Arg1:T4 Arg2:T5	
+R1	Part-Whole Arg1:T1 Arg2:T9	

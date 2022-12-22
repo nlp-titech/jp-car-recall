@@ -1,0 +1,13 @@
+T1	Parts 1 10	ディーゼルエンジン
+T2	Parts 21 30	燃料リターンホース
+T4	Parts 44 47	ホース
+T5	Parts 66 69	ホース
+T6	Parts 80 83	ホース
+T7	Parts 114 117	ホース
+T10	Parts 126 128	燃料
+R1	Coreference Arg1:T4 Arg2:T2	
+R2	Coreference Arg1:T5 Arg2:T4	
+R3	Coreference Arg1:T6 Arg2:T5	
+R4	Coreference Arg1:T7 Arg2:T6	
+R5	Contact Arg1:T10 Arg2:T7	
+R6	Part-Whole Arg1:T2 Arg2:T1	

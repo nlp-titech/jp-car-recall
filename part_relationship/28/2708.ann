@@ -1,0 +1,8 @@
+T2	Parts 0 22	ＤＰＦ（ディーゼル粒子状物質除去装置）付き車
+T3	Parts 23 34	原動機制御コンピュータ
+T8	Parts 95 99	エンジン
+R1	Connect Arg1:T3 Arg2:T8	
+T4	Parts 39 41	暖房
+R3	Part-Whole Arg1:T3 Arg2:T2	
+R4	Part-Whole Arg1:T8 Arg2:T2	
+R5	Part-Whole Arg1:T4 Arg2:T2	

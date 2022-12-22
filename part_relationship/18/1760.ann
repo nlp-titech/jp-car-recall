@@ -1,0 +1,9 @@
+T1	Parts 0 4	燃料装置
+T2	Parts 9 14	燃料パイプ
+T3	Parts 25 29	エンジン
+T4	Parts 74 76	燃料
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R4	Connect Arg1:T3 Arg2:T1	
+R3	Contact Arg1:T2 Arg2:T4	
+R2	Part-Whole Arg1:T4 Arg2:T1	
+#1	AnnotatorNotes T1	タンクを含めて燃料装置と考える。

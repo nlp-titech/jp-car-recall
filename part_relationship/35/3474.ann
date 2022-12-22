@@ -1,0 +1,3 @@
+T1	Parts 8 14	シフトレバー
+T2	Parts 0 3	変速機
+R1	Connect Arg1:T1 Arg2:T2	

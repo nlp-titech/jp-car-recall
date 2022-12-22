@@ -1,0 +1,9 @@
+T12	Parts 83 90	アクセルペダル
+T13	Parts 15 24	リターンスプリング
+T15	Parts 74 79	スプリング
+T1	Parts 0 7	アクセルペダル
+T2	Parts 105 109	エンジン
+R1	Coreference Arg1:T1 Arg2:T12	
+R2	Coreference Arg1:T13 Arg2:T15	
+R4	Part-Whole Arg1:T13 Arg2:T1	
+R3	Connect Arg1:T12 Arg2:T2	

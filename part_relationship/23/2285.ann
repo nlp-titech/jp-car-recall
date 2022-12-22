@@ -1,0 +1,11 @@
+T10	Parts 74 84	電源制御コントローラ
+T12	Parts 28 34	コントローラ
+T1	Parts 0 10	電気式フォークリフト
+T2	Parts 11 21	電源制御コントローラ
+T3	Parts 37 41	電気回路
+T4	Parts 49 51	回路
+R1	Coreference Arg1:T12 Arg2:T2	
+R2	Coreference Arg1:T10 Arg2:T12	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T3 Arg2:T12	
+R5	Coreference Arg1:T3 Arg2:T4	

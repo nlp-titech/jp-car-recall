@@ -1,0 +1,21 @@
+T1	Parts 0 6	中型トラック
+T2	Parts 11 14	運転席
+T3	Parts 15 25	シートベルトバックル
+T4	Parts 35 41	シートベルト
+T5	Parts 53 62	センサー用ハーネス
+T6	Parts 78 88	シートベルトバックル
+T7	Parts 91 95	ハーネス
+T8	Parts 117 121	ハーネス
+T9	Parts 126 138	シートベルト非装着警告灯
+T10	Parts 139 144	警報ブザー
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R3	Coreference Arg1:T3 Arg2:T6	
+R4	Coreference Arg1:T5 Arg2:T7	
+R5	Coreference Arg1:T7 Arg2:T8	
+R6	Connect Arg1:T8 Arg2:T9	
+R7	Connect Arg1:T8 Arg2:T10	
+R2	Connect Arg1:T3 Arg2:T5	
+R8	Part-Whole Arg1:T4 Arg2:T2	
+R9	Contact Arg1:T3 Arg2:T4	
+R10	Part-Whole Arg1:T9 Arg2:T1	
+R11	Part-Whole Arg1:T10 Arg2:T1	

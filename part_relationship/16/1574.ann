@@ -1,0 +1,21 @@
+T2	Parts 0 11	ターボチャージャ付車両
+T3	Parts 16 24	ターボチャージャ
+T4	Parts 25 28	オイル
+T5	Parts 33 43	オイルフィードパイプ
+T7	Parts 77 80	パイプ
+R1	Coreference Arg1:T7 Arg2:T5	
+T8	Parts 111 114	パイプ
+R3	Coreference Arg1:T8 Arg2:T7	
+T9	Parts 120 123	オイル
+R4	Coreference Arg1:T9 Arg2:T4	
+T10	Parts 133 140	触媒コンバータ
+R2	Connect Arg1:T5 Arg2:T3	
+R5	Contact Arg1:T4 Arg2:T3	
+R6	Contact Arg1:T5 Arg2:T4	
+R8	Part-Whole Arg1:T10 Arg2:T2	
+R9	Part-Whole Arg1:T3 Arg2:T2	
+R10	Part-Whole Arg1:T4 Arg2:T2	
+R11	Part-Whole Arg1:T5 Arg2:T2	
+T1	Parts 149 153	エンジン
+R7	Part-Whole Arg1:T1 Arg2:T2	
+R12	Connect Arg1:T10 Arg2:T1	

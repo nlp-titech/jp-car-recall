@@ -1,0 +1,9 @@
+T1	Parts 4 9	ラジエータ
+T2	Parts 13 21	電動ファンモータ
+T3	Parts 28 39	ファンモータ用ヒューズ
+T4	Parts 71 75	ヒューズ
+T8	Parts 0 3	原動機
+R1	Coreference Arg1:T3 Arg2:T4	
+R2	Connect Arg1:T8 Arg2:T1	
+R3	Connect Arg1:T1 Arg2:T2	
+R4	Connect Arg1:T2 Arg2:T3	

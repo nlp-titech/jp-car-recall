@@ -1,0 +1,14 @@
+T7	Parts 9 15	ブレーキ配管
+T9	Parts 53 72	ＡＢＳ（アンチロックブレーキシステム）
+T1	Parts 0 4	制動装置
+T2	Parts 16 19	左前輪
+T3	Parts 21 31	後輪用ブレーキパイプ
+R1	Part-Whole Arg1:T7 Arg2:T1	
+T5	Parts 98 100	車両
+R2	Part-Whole Arg1:T1 Arg2:T5	
+#1	AnnotatorNotes T2	「左前輪用ブレーキパイプ」と考える
+R3	Part-Whole Arg1:T2 Arg2:T7	
+R4	Part-Whole Arg1:T3 Arg2:T7	
+R5	Contact Arg1:T2 Arg2:T3	
+R6	Part-Whole Arg1:T9 Arg2:T5	
+R7	Connect Arg1:T1 Arg2:T9	

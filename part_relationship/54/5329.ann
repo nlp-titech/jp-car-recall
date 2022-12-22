@@ -1,0 +1,6 @@
+T2	Parts 0 10	運転席エアバッグ装置
+T3	Parts 28 33	エアバッグ
+T4	Parts 56 61	エアバッグ
+T5	Parts 34 40	ホーンパッド
+R2	Coreference Arg1:T3 Arg2:T4	
+R1	Coreference Arg1:T2 Arg2:T3	

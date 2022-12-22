@@ -1,0 +1,5 @@
+T10	Parts 69 72	制動灯
+T11	Parts 0 7	制動灯用リレー
+T12	Parts 24 27	リレー
+R2	Coreference Arg1:T12 Arg2:T11	
+R4	Connect Arg1:T10 Arg2:T11	

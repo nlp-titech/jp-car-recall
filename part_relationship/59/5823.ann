@@ -1,0 +1,11 @@
+T1	Parts 13 20	取り付けボルト
+T2	Parts 7 12	座席ベルト
+T3	Parts 79 84	座席ベルト
+T4	Parts 57 60	ボルト
+T5	Parts 0 2	前席
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Coreference Arg1:T1 Arg2:T4	
+R3	Part-Whole Arg1:T2 Arg2:T5	
+R4	Contact Arg1:T2 Arg2:T1	
+T6	Parts 29 34	緩み防止剤
+R5	Contact Arg1:T1 Arg2:T6	

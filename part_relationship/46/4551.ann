@@ -1,0 +1,17 @@
+T1	Parts 15 22	バルブ固定金具
+T2	Parts 51 55	固定金具
+T3	Parts 10 14	前部霧灯
+T4	Parts 0 4	灯火装置
+T5	Parts 70 73	バルブ
+T6	Parts 5 8	前照灯
+T7	Parts 80 83	反射鏡
+R1	Oneway-Coreference Arg1:T4 Arg2:T6	
+R2	Oneway-Coreference Arg1:T4 Arg2:T3	
+R5	Coreference Arg1:T1 Arg2:T2	
+R6	Part-Whole Arg1:T5 Arg2:T6	
+R7	Part-Whole Arg1:T5 Arg2:T3	
+R8	Contact Arg1:T2 Arg2:T5	
+R9	Part-Whole Arg1:T7 Arg2:T6	
+R10	Part-Whole Arg1:T7 Arg2:T3	
+R3	Part-Whole Arg1:T1 Arg2:T6	
+R4	Part-Whole Arg1:T1 Arg2:T3	

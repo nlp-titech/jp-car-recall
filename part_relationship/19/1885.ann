@@ -1,0 +1,15 @@
+T8	Parts 87 95	電源コントローラ
+T9	Parts 97 101	制御基板
+T10	Parts 15 23	電源コントローラ
+T1	Parts 0 10	電気式フォークリフト
+T2	Parts 25 27	配線
+T3	Parts 45 47	配線
+R1	Coreference Arg1:T3 Arg2:T2	
+R2	Coreference Arg1:T8 Arg2:T10	
+T6	Parts 117 119	車両
+R3	Coreference Arg1:T1 Arg2:T6	
+R4	Part-Whole Arg1:T2 Arg2:T10	
+R5	Part-Whole Arg1:T10 Arg2:T1	
+R8	Part-Whole Arg1:T9 Arg2:T8	
+T4	Parts 54 56	配線
+R6	Coreference Arg1:T3 Arg2:T4	

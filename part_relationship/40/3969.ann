@@ -1,0 +1,7 @@
+T1	Parts 1 10	ディーゼルエンジン
+T3	Parts 87 91	ヒューズ
+T4	Parts 15 25	インジェクタ制御回路
+T8	Parts 95 97	燃料
+R3	Connect Arg1:T4 Arg2:T1	
+R5	Contact Arg1:T8 Arg2:T1	
+R1	Connect Arg1:T4 Arg2:T3	

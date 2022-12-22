@@ -1,0 +1,11 @@
+T1	Parts 0 4	トラック
+T2	Parts 5 14	助手席用座席ベルト
+T3	Parts 36 41	巻取り装置
+T4	Parts 48 53	スプリング
+T5	Parts 78 83	スプリング
+T6	Parts 93 98	座席ベルト
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Connect Arg1:T3 Arg2:T2	
+R3	Part-Whole Arg1:T4 Arg2:T3	
+R4	Coreference Arg1:T5 Arg2:T4	
+R5	Coreference Arg1:T6 Arg2:T2	

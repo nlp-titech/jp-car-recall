@@ -1,0 +1,17 @@
+T12	Parts 32 40	トイレ用水タンク
+T13	Parts 54 67	トイレ水凍結防止用ハーネス
+T14	Parts 68 71	タンク
+T15	Parts 92 96	ハーネス
+T1	Parts 0 2	車両
+T2	Parts 13 16	トイレ
+T3	Parts 21 27	大型観光バス
+R1	Coreference Arg1:T14 Arg2:T12	
+R2	Coreference Arg1:T15 Arg2:T13	
+T4	Parts 110 115	室内天井板
+R3	Coreference Arg1:T1 Arg2:T3	
+R4	Part-Whole Arg1:T2 Arg2:T3	
+R5	Part-Whole Arg1:T12 Arg2:T3	
+R6	Connect Arg1:T2 Arg2:T12	
+R7	Part-Whole Arg1:T13 Arg2:T3	
+R8	Part-Whole Arg1:T4 Arg2:T3	
+R9	Contact Arg1:T4 Arg2:T12	

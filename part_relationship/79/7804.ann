@@ -1,0 +1,18 @@
+T1	Parts 0 6	リヤブレーキ
+T2	Parts 11 14	ＡＢＳ
+T3	Parts 15 22	パルサーリング
+T4	Parts 29 32	ボルト
+T5	Parts 43 46	ボルト
+T6	Parts 60 67	ＡＢＳシステム
+T7	Parts 73 76	ＡＢＳ
+T8	Parts 77 80	警告灯
+T9	Parts 98 101	ＡＢＳ
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T2	
+R3	Contact Arg1:T4 Arg2:T3	
+R4	Coreference Arg1:T5 Arg2:T4	
+R5	Coreference Arg1:T6 Arg2:T2	
+R6	Coreference Arg1:T7 Arg2:T6	
+R7	Part-Whole Arg1:T8 Arg2:T7	
+R8	Coreference Arg1:T9 Arg2:T7	
+R9	Part-Whole Arg1:T4 Arg2:T2	

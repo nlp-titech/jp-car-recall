@@ -1,0 +1,11 @@
+T1	Parts 0 4	エンジン
+T2	Parts 22 28	カップリング
+T3	Parts 52 58	カップリング
+T4	Parts 81 87	カップリング
+T5	Parts 112 118	カップリング
+T6	Parts 122 126	エンジン
+R1	Connect Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T3 Arg2:T2	
+R3	Coreference Arg1:T4 Arg2:T3	
+R4	Coreference Arg1:T5 Arg2:T4	
+R5	Coreference Arg1:T6 Arg2:T1	

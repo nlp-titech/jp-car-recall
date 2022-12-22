@@ -1,0 +1,16 @@
+T1	Parts 66 73	シリンダヘッド
+T2	Parts 93 98	スロットル
+T3	Parts 103 108	点火プラグ
+T4	Parts 113 117	エンジン
+T5	Parts 134 138	エンジン
+T9	Parts 0 7	プラグキャップ
+T10	Parts 25 32	プラグキャップ
+T11	Parts 47 54	プラグキャップ
+R1	Coreference Arg1:T9 Arg2:T10	
+R2	Coreference Arg1:T10 Arg2:T11	
+R3	Coreference Arg1:T4 Arg2:T5	
+R5	Connect Arg1:T2 Arg2:T3	
+R7	Contact Arg1:T11 Arg2:T1	
+R8	Part-Whole Arg1:T1 Arg2:T4	
+R4	Part-Whole Arg1:T2 Arg2:T4	
+R6	Part-Whole Arg1:T3 Arg2:T4	

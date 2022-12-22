@@ -1,0 +1,11 @@
+T1	Parts 0 3	原動機
+T2	Parts 43 47	固定金具
+T3	Parts 6 10	電気配線
+T4	Parts 17 21	電気配線
+T5	Parts 70 74	電気配線
+T6	Parts 37 42	原動機配線
+R1	Coreference Arg1:T3 Arg2:T4	
+R2	Contact Arg1:T6 Arg2:T2	
+R5	Coreference Arg1:T6 Arg2:T5	
+R6	Contact Arg1:T1 Arg2:T6	
+R4	Oneway-Coreference Arg1:T4 Arg2:T6	

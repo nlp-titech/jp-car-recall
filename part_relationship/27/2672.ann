@@ -1,0 +1,12 @@
+T14	Parts 0 10	エアインテークダクト
+T15	Parts 23 26	ダクト
+T16	Parts 27 33	金属コネクタ
+R1	Coreference Arg1:T15 Arg2:T14	
+T1	Parts 35 40	燃料パイプ
+T2	Parts 56 61	燃料パイプ
+R2	Coreference Arg1:T2 Arg2:T1	
+T3	Parts 74 77	パイプ
+R3	Coreference Arg1:T3 Arg2:T2	
+T4	Parts 83 85	燃料
+R4	Part-Whole Arg1:T16 Arg2:T15	
+R5	Contact Arg1:T4 Arg2:T3	

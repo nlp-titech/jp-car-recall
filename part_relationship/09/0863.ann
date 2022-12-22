@@ -1,0 +1,12 @@
+T10	Parts 109 115	操作用レバー
+T11	Parts 55 59	ケーブル
+T12	Parts 95 99	ケーブル
+T1	Parts 5 11	操作用レバー
+T2	Parts 12 22	コントロールケーブル
+T3	Parts 25 30	油圧ホース
+R1	Coreference Arg1:T11 Arg2:T2	
+T4	Parts 60 65	油圧ホース
+R2	Coreference Arg1:T4 Arg2:T3	
+R3	Coreference Arg1:T12 Arg2:T11	
+R4	Coreference Arg1:T10 Arg2:T1	
+R5	Contact Arg1:T1 Arg2:T2	

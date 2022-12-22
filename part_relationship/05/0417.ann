@@ -1,0 +1,15 @@
+T12	Parts 11 26	パワーステアリング用油圧ホース
+T13	Parts 51 54	ホース
+T14	Parts 55 61	運転席カバー
+T15	Parts 63 65	車枠
+T16	Parts 94 97	ホース
+T17	Parts 109 113	ハンドル
+T1	Parts 0 6	かじ取り装置
+R1	Coreference Arg1:T13 Arg2:T12	
+R2	Coreference Arg1:T13 Arg2:T16	
+T2	Parts 102 105	作動油
+R3	Contact Arg1:T12 Arg2:T1	
+R4	Contact Arg1:T16 Arg2:T2	
+R5	Contact Arg1:T12 Arg2:T17	
+R6	Contact Arg1:T13 Arg2:T14	
+R7	Contact Arg1:T13 Arg2:T15	

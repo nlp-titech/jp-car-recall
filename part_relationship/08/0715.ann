@@ -1,0 +1,18 @@
+T10	Parts 23 31	ステアリングギア
+T11	Parts 32 37	ブラケット
+T14	Parts 64 68	ハンドル
+T16	Parts 116 120	ハンドル
+T17	Parts 38 40	車体
+T13	Parts 47 51	リベット
+T15	Parts 84 88	リベット
+R1	Coreference Arg1:T15 Arg2:T13	
+R2	Coreference Arg1:T16 Arg2:T14	
+T2	Parts 6 11	四輪駆動車
+T3	Parts 16 18	車両
+R4	Coreference Arg1:T2 Arg2:T3	
+R5	Part-Whole Arg1:T10 Arg2:T3	
+R6	Part-Whole Arg1:T11 Arg2:T10	
+R7	Contact Arg1:T11 Arg2:T17	
+R8	Contact Arg1:T13 Arg2:T11	
+R9	Part-Whole Arg1:T14 Arg2:T3	
+T1	Parts 0 5	二輪駆動車

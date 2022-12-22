@@ -1,0 +1,30 @@
+T1	Parts 34 44	コントロールユニット
+T3	Parts 0 12	制御プログラム管理サーバ
+T4	Parts 56 63	制御プログラム
+T5	Parts 218 224	シートベルト
+T6	Parts 487 493	駐車ブレーキ
+T10	Parts 511 514	後部扉
+T11	Parts 85 88	前後輪
+T12	Parts 566 571	非常点滅灯
+T14	Parts 165 167	車両
+T15	Parts 456 458	車両
+T20	Parts 527 528	扉
+T2	Parts 339 347	リヤビューカメラ
+R1	Coreference Arg1:T20 Arg2:T10	
+R2	Part-Whole Arg1:T4 Arg2:T1	
+R3	Connect Arg1:T11 Arg2:T4	
+R4	Part-Whole Arg1:T1 Arg2:T14	
+R5	Part-Whole Arg1:T11 Arg2:T14	
+R6	Part-Whole Arg1:T5 Arg2:T14	
+R7	Connect Arg1:T2 Arg2:T1	
+R8	Part-Whole Arg1:T2 Arg2:T14	
+T7	Parts 276 279	ワイパ
+R9	Part-Whole Arg1:T7 Arg2:T14	
+R10	Connect Arg1:T7 Arg2:T1	
+R11	Coreference Arg1:T15 Arg2:T14	
+R12	Part-Whole Arg1:T6 Arg2:T15	
+R13	Part-Whole Arg1:T10 Arg2:T15	
+R14	Part-Whole Arg1:T12 Arg2:T15	
+R15	Connect Arg1:T6 Arg2:T1	
+R16	Connect Arg1:T10 Arg2:T1	
+R17	Connect Arg1:T12 Arg2:T1	

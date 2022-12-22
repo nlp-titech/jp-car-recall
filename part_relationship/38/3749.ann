@@ -1,0 +1,17 @@
+T2	Parts 30 43	スタータ作動制御プログラム
+T3	Parts 148 152	エンジン
+T4	Parts 11 25	エンジン始動装置（スタータ）
+T6	Parts 89 93	スタータ
+T7	Parts 111 115	スタータ
+T8	Parts 70 73	シフト
+T9	Parts 0 10	プッシュスタート付車
+R3	Coreference Arg1:T7 Arg2:T6	
+R5	Part-Whole Arg1:T4 Arg2:T9	
+R6	Part-Whole Arg1:T8 Arg2:T9	
+R8	Part-Whole Arg1:T3 Arg2:T9	
+R1	Coreference Arg1:T4 Arg2:T6	
+T1	Parts 51 62	プッシュスタートボタン
+R2	Part-Whole Arg1:T7 Arg2:T3	
+R4	Part-Whole Arg1:T2 Arg2:T4	
+R7	Part-Whole Arg1:T1 Arg2:T9	
+R9	Connect Arg1:T4 Arg2:T1	

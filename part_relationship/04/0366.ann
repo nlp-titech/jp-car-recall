@@ -1,0 +1,11 @@
+T1	Parts 0 12	一酸化炭素等発散防止装置
+T2	Parts 20 27	排気マニホルド
+T3	Parts 49 65	空燃比（空気と燃料の比率）センサ
+T4	Parts 66 70	内部配線
+T5	Parts 100 103	センサ
+T6	Parts 131 138	触媒コンバータ
+R1	Coreference Arg1:T5 Arg2:T3	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+T7	Parts 33 37	排出ガス
+R4	Part-Whole Arg1:T3 Arg2:T4	
+R5	Contact Arg1:T2 Arg2:T6	

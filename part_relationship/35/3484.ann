@@ -1,0 +1,17 @@
+T1	Parts 73 81	作動状態表示装置
+T2	Parts 5 10	方向指示器
+T3	Parts 15 20	方向指示器
+T4	Parts 31 36	方向指示器
+T5	Parts 0 4	トレーラ
+T6	Parts 68 72	運転者席
+T7	Parts 45 53	フラッシャリレー
+T8	Parts 56 62	異常検出回路
+R1	Coreference Arg1:T3 Arg2:T2	
+R2	Coreference Arg1:T4 Arg2:T3	
+R3	Part-Whole Arg1:T8 Arg2:T7	
+R4	Connect Arg1:T7 Arg2:T4	
+R5	Connect Arg1:T1 Arg2:T8	
+R6	Part-Whole Arg1:T6 Arg2:T5	
+R7	Part-Whole Arg1:T2 Arg2:T5	
+R8	Part-Whole Arg1:T7 Arg2:T5	
+R9	Part-Whole Arg1:T1 Arg2:T5	

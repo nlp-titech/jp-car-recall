@@ -1,0 +1,12 @@
+T1	Parts 0 11	スペアタイヤ・サポート
+T2	Parts 16 21	取付ナット
+T3	Parts 73 78	取付ナット
+T4	Parts 83 94	スペアタイヤ・サポート
+T5	Parts 105 111	スペアタイヤ
+T6	Parts 65 67	車両
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Coreference Arg1:T1 Arg2:T4	
+R3	Contact Arg1:T1 Arg2:T2	
+R4	Part-Whole Arg1:T1 Arg2:T6	
+R5	Part-Whole Arg1:T5 Arg2:T6	
+R6	Contact Arg1:T4 Arg2:T5	

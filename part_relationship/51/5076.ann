@@ -1,0 +1,7 @@
+T1	Parts 0 14	メイン・サーキットブレーカー
+T2	Parts 28 32	エンジン
+T3	Parts 73 77	エンジン
+T6	Parts 43 48	ブレーカー
+R2	Coreference Arg1:T6 Arg2:T1	
+R3	Coreference Arg1:T3 Arg2:T2	
+R4	Connect Arg1:T2 Arg2:T1	

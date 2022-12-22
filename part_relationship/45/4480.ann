@@ -1,0 +1,6 @@
+T1	Parts 10 17	電気配線カバ－
+T3	Parts 0 7	左前フェンダ－
+T2	Parts 49 56	電気配線カバ－
+T4	Parts 57 66	バンパ－取付ステ－
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Part-Whole Arg1:T1 Arg2:T3	

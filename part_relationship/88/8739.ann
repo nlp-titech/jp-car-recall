@@ -1,0 +1,15 @@
+T1	Parts 0 7	ショベルローダ
+T3	Parts 20 26	ＨＳＴポンプ
+T4	Parts 27 30	モータ
+T5	Parts 33 42	油圧ホース接続継手
+T6	Parts 53 55	継手
+T7	Parts 98 101	作動油
+R1	Coreference Arg1:T5 Arg2:T6	
+R2	Part-Whole Arg1:T3 Arg2:T1	
+R3	Part-Whole Arg1:T4 Arg2:T1	
+R4	Connect Arg1:T3 Arg2:T4	
+R5	Contact Arg1:T3 Arg2:T5	
+R6	Contact Arg1:T4 Arg2:T5	
+R7	Contact Arg1:T3 Arg2:T7	
+R8	Contact Arg1:T4 Arg2:T7	
+R9	Part-Whole Arg1:T7 Arg2:T1	

@@ -1,0 +1,24 @@
+T1	Parts 0 16	作業用動力取出装置（ＰＴＯ）付車
+T2	Parts 17 20	変速機
+T3	Parts 25 33	カウンタシャフト
+T4	Parts 34 40	ＰＴＯ用ギヤ
+T5	Parts 44 46	軸受
+T6	Parts 58 61	ＰＴＯ
+T7	Parts 67 69	軸受
+T8	Parts 97 103	車軸駆動用軸
+T10	Parts 118 121	ＰＴＯ
+R1	Coreference Arg1:T6 Arg2:T10	
+T11	Parts 125 127	車両
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Contact Arg1:T5 Arg2:T4	
+R4	Contact Arg1:T5 Arg2:T3	
+R5	Coreference Arg1:T7 Arg2:T5	
+R6	Coreference Arg1:T11 Arg2:T1	
+R7	Contact Arg1:T6 Arg2:T4	
+R8	Part-Whole Arg1:T3 Arg2:T2	
+R9	Connect Arg1:T4 Arg2:T3	
+R10	Connect Arg1:T8 Arg2:T2	
+R11	Part-Whole Arg1:T4 Arg2:T2	
+R12	Part-Whole Arg1:T5 Arg2:T2	
+R13	Connect Arg1:T2 Arg2:T6	
+R14	Part-Whole Arg1:T8 Arg2:T1	

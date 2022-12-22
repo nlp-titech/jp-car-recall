@@ -1,0 +1,11 @@
+T1	Parts 14 21	取り付けボルト
+T3	Parts 65 68	ボルト
+T4	Parts 99 102	ボルト
+T5	Parts 0 9	テールゲートラッチ
+T6	Parts 69 72	ラッチ
+T7	Parts 22 24	車両
+R2	Contact Arg1:T1 Arg2:T5	
+R5	Coreference Arg1:T3 Arg2:T4	
+R6	Coreference Arg1:T1 Arg2:T3	
+R3	Coreference Arg1:T5 Arg2:T6	
+R1	Part-Whole Arg1:T5 Arg2:T7	

@@ -1,0 +1,12 @@
+T14	Parts 96 98	前輪
+T15	Parts 79 85	前輪ホイール
+T16	Parts 40 44	ホイール
+T17	Parts 19 25	前輪ホイール
+T1	Parts 0 7	ソリッドタイヤ
+T2	Parts 12 14	車両
+R1	Coreference Arg1:T16 Arg2:T17	
+R2	Coreference Arg1:T15 Arg2:T16	
+R3	Part-Whole Arg1:T1 Arg2:T2	
+R4	Coreference Arg1:T15 Arg2:T14	
+R5	Part-Whole Arg1:T17 Arg2:T2	
+R6	Contact Arg1:T1 Arg2:T17	

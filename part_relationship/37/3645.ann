@@ -1,0 +1,13 @@
+T1	Parts 59 64	ドアラッチ
+T3	Parts 35 42	ドアロック機構
+T5	Parts 66 70	樹脂部品
+T6	Parts 17 30	乗降口（エントランスドア）
+T8	Parts 53 55	ドア
+T9	Parts 118 120	ドア
+T10	Parts 0 8	キャンピングカー
+R1	Part-Whole Arg1:T1 Arg2:T3	
+R3	Part-Whole Arg1:T5 Arg2:T1	
+R5	Coreference Arg1:T9 Arg2:T8	
+R6	Coreference Arg1:T8 Arg2:T6	
+R7	Part-Whole Arg1:T6 Arg2:T10	
+R8	Part-Whole Arg1:T3 Arg2:T6	

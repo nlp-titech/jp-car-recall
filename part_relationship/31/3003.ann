@@ -1,0 +1,13 @@
+T12	Parts 0 8	エンジンハーネス
+T13	Parts 34 38	ハーネス
+T14	Parts 42 50	吸気マニホールド
+T15	Parts 51 57	取付けボルト
+T16	Parts 76 80	ハーネス
+T18	Parts 123 127	エンジン
+T2	Parts 106 109	警告灯
+R1	Coreference Arg1:T12 Arg2:T13	
+R2	Coreference Arg1:T13 Arg2:T16	
+R3	Contact Arg1:T15 Arg2:T14	
+R4	Connect Arg1:T2 Arg2:T16	
+R5	Connect Arg1:T18 Arg2:T16	
+R6	Contact Arg1:T14 Arg2:T18	

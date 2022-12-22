@@ -1,0 +1,10 @@
+T6	Parts 36 44	マイクロスイッチ
+T7	Parts 63 72	ステアリングレバー
+T1	Parts 0 7	刈取脱穀作業車
+T2	Parts 8 14	かじ取り装置
+T3	Parts 19 28	ステアリングレバー
+R1	Coreference Arg1:T3 Arg2:T7	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T3 Arg2:T2	
+R4	Connect Arg1:T3 Arg2:T6	
+R5	Part-Whole Arg1:T6 Arg2:T2	

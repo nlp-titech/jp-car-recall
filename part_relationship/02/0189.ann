@@ -1,0 +1,20 @@
+T14	Parts 65 127	ガイドピン（作業用アクセルを操作した時に発生するスロットルケーブルの弛みを防止するため、スロットルレバーに後付けされたもの）
+T17	Parts 39 47	スロトルケーブル
+T19	Parts 13 17	加速装置
+T21	Parts 10 12	車両
+T1	Parts 0 5	作業用装置
+T2	Parts 22 29	走行用アクセル
+T3	Parts 137 141	燃料装置
+T5	Parts 142 144	配管
+T6	Parts 172 174	配管
+T7	Parts 185 187	燃料
+R1	Coreference Arg1:T6 Arg2:T5	
+R2	Part-Whole Arg1:T1 Arg2:T21	
+R3	Part-Whole Arg1:T19 Arg2:T21	
+R4	Part-Whole Arg1:T2 Arg2:T19	
+R5	Part-Whole Arg1:T17 Arg2:T19	
+R6	Part-Whole Arg1:T7 Arg2:T6	
+T4	Parts 48 58	作業用アクセル装着車
+R7	Part-Whole Arg1:T14 Arg2:T17	
+R9	Coreference Arg1:T21 Arg2:T4	
+R8	Contact Arg1:T17 Arg2:T2	

@@ -1,0 +1,19 @@
+T18	Parts 8 14	コントローラ
+T20	Parts 39 46	アクセルペダル
+T21	Parts 62 71	走行用油圧モーター
+T23	Parts 157 161	モーター
+T24	Parts 162 169	ピストンリング
+T1	Parts 0 3	原動機
+T3	Parts 81 84	作動油
+T4	Parts 92 95	作動油
+T5	Parts 127 133	油圧モーター
+R1	Coreference Arg1:T23 Arg2:T5	
+R2	Coreference Arg1:T4 Arg2:T3	
+R3	Coreference Arg1:T5 Arg2:T21	
+R4	Connect Arg1:T18 Arg2:T1	
+R5	Connect Arg1:T20 Arg2:T1	
+R6	Part-Whole Arg1:T21 Arg2:T18	
+R7	Contact Arg1:T1 Arg2:T3	
+R8	Part-Whole Arg1:T24 Arg2:T23	
+T2	Parts 17 21	エンジン
+R9	Coreference Arg1:T2 Arg2:T1	

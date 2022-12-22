@@ -1,0 +1,15 @@
+T1	Parts 0 8	ホイールクレーン
+T2	Parts 9 13	緩衝装置
+T3	Parts 18 29	油圧サスペンション回路
+T4	Parts 40 44	クレーン
+T5	Parts 71 85	前前軸サスペンションシリンダ
+T6	Parts 123 137	前前軸サスペンションシリンダ
+T7	Parts 142 146	シリンダ
+T8	Parts 148 151	作動油
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T2	
+R3	Coreference Arg1:T4 Arg2:T1	
+R4	Part-Whole Arg1:T5 Arg2:T2	
+R5	Coreference Arg1:T6 Arg2:T5	
+R6	Coreference Arg1:T7 Arg2:T6	
+R7	Part-Whole Arg1:T8 Arg2:T7	

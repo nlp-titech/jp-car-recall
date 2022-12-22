@@ -1,0 +1,11 @@
+T1	Parts 0 5	かじ取装置
+T2	Parts 6 17	ユニバーサルジョイント
+T3	Parts 18 24	ギヤボックス
+T5	Parts 29 32	ボルト
+T8	Parts 76 87	ユニバーサルジョイント
+R1	Coreference Arg1:T8 Arg2:T2	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T3 Arg2:T1	
+R6	Contact Arg1:T2 Arg2:T3	
+R2	Contact Arg1:T5 Arg2:T2	
+R3	Contact Arg1:T5 Arg2:T3	

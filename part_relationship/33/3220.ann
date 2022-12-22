@@ -1,0 +1,16 @@
+T12	Parts 96 105	トランスミッション
+T13	Parts 41 45	コネクタ
+T1	Parts 0 6	大型観光バス
+T2	Parts 7 16	トランスミッション
+T3	Parts 17 22	オイル配管
+T4	Parts 27 34	オイルフィルタ
+T5	Parts 56 59	オイル
+R1	Coreference Arg1:T2 Arg2:T12	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T4 Arg2:T2	
+R7	Contact Arg1:T4 Arg2:T13	
+R8	Contact Arg1:T3 Arg2:T5	
+R3	Part-Whole Arg1:T3 Arg2:T2	
+R4	Contact Arg1:T3 Arg2:T4	
+R10	Contact Arg1:T4 Arg2:T5	
+R6	Contact Arg1:T3 Arg2:T13	

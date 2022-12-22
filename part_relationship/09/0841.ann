@@ -1,0 +1,16 @@
+T14	Parts 28 42	変速及び駐車ブレーキ用レバー
+T15	Parts 43 47	固定ネジ
+T16	Parts 61 65	固定ネジ
+T17	Parts 99 103	固定ネジ
+T18	Parts 110 113	レバー
+T19	Parts 119 125	駐車ブレーキ
+T1	Parts 0 16	オートマチックトランスミッション
+R1	Coreference Arg1:T16 Arg2:T15	
+R2	Coreference Arg1:T17 Arg2:T16	
+R3	Coreference Arg1:T18 Arg2:T14	
+T2	Parts 21 23	車両
+R4	Part-Whole Arg1:T1 Arg2:T2	
+R5	Part-Whole Arg1:T19 Arg2:T2	
+R7	Contact Arg1:T15 Arg2:T14	
+R6	Connect Arg1:T14 Arg2:T19	
+R8	Part-Whole Arg1:T14 Arg2:T2	

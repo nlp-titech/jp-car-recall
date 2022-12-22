@@ -1,0 +1,16 @@
+T1	Parts 0 6	大型トラクタ
+T2	Parts 40 45	ブラケット
+T3	Parts 60 65	ブラケット
+T4	Parts 7 12	燃料タンク
+T5	Parts 30 35	燃料タンク
+T6	Parts 106 111	燃料タンク
+T7	Parts 13 16	キャブ
+T8	Parts 23 25	車両
+R1	Coreference Arg1:T2 Arg2:T3	
+R4	Coreference Arg1:T4 Arg2:T5	
+R5	Coreference Arg1:T5 Arg2:T6	
+R6	Contact Arg1:T5 Arg2:T2	
+R7	Contact Arg1:T4 Arg2:T7	
+R8	Part-Whole Arg1:T7 Arg2:T8	
+R3	Coreference Arg1:T8 Arg2:T1	
+R9	Part-Whole Arg1:T4 Arg2:T1	

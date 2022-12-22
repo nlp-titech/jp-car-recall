@@ -1,0 +1,5 @@
+T7	Parts 0 3	原動機
+T1	Parts 4 8	電気配線
+R1	Connect Arg1:T1 Arg2:T7	
+T2	Parts 18 20	燃料
+R2	Contact Arg1:T7 Arg2:T2	

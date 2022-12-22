@@ -1,0 +1,11 @@
+T1	Parts 13 25	パワーウインド用電気配線
+T2	Parts 32 36	電気配線
+T3	Parts 73 77	電気配線
+T4	Parts 5 8	パネル
+T5	Parts 37 40	パネル
+T6	Parts 0 4	後部ドア
+R1	Coreference Arg1:T4 Arg2:T5	
+R2	Coreference Arg1:T1 Arg2:T2	
+R3	Coreference Arg1:T2 Arg2:T3	
+R4	Part-Whole Arg1:T4 Arg2:T6	
+R5	Part-Whole Arg1:T1 Arg2:T4	

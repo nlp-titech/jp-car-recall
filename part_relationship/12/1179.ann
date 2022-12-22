@@ -1,0 +1,12 @@
+T12	Parts 52 58	ステアリング
+T13	Parts 31 34	ボルト
+T14	Parts 75 78	ボルト
+T15	Parts 106 109	ボルト
+T1	Parts 0 18	油圧式パワーステアリングギヤボックス
+T2	Parts 19 25	サブフレーム
+R1	Coreference Arg1:T13 Arg2:T14	
+R2	Coreference Arg1:T14 Arg2:T15	
+R3	Contact Arg1:T2 Arg2:T1	
+R4	Contact Arg1:T13 Arg2:T2	
+R5	Contact Arg1:T13 Arg2:T1	
+R6	Connect Arg1:T12 Arg2:T1	

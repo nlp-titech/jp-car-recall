@@ -1,0 +1,11 @@
+T1	Parts 0 11	前席三点式シートベルト
+T2	Parts 77 83	シートベルト
+T3	Parts 27 32	固定ボルト
+T5	Parts 12 17	下部取付具
+R1	Contact Arg1:T5 Arg2:T3	
+R3	Coreference Arg1:T1 Arg2:T2	
+T4	Parts 18 20	座席
+R2	Contact Arg1:T1 Arg2:T5	
+R4	Contact Arg1:T5 Arg2:T4	
+R5	Contact Arg1:T4 Arg2:T3	
+R6	Contact Arg1:T1 Arg2:T4	

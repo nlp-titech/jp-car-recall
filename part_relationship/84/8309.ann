@@ -1,0 +1,14 @@
+T1	Parts 0 13	ドライバーアシストシステム
+T2	Parts 18 29	フロントカメラユニット
+T3	Parts 40 43	カメラ
+T4	Parts 44 48	ヒーター
+T5	Parts 60 64	ヒーター
+T6	Parts 76 79	カメラ
+T7	Parts 100 113	ドライバーアシストシステム
+R1	Connect Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T2	
+R3	Coreference Arg1:T4 Arg2:T5	
+R4	Coreference Arg1:T6 Arg2:T3	
+R5	Coreference Arg1:T1 Arg2:T7	
+R6	Contact Arg1:T3 Arg2:T4	
+R7	Part-Whole Arg1:T4 Arg2:T2	

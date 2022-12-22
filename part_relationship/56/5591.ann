@@ -1,0 +1,7 @@
+T1	Parts 56 60	ブレーキ
+T2	Parts 0 13	自動変速機仕様車（ＡＴ車）
+T3	Parts 40 44	ブレーキ
+T4	Parts 14 18	制動装置
+R1	Part-Whole Arg1:T3 Arg2:T4	
+R2	Coreference Arg1:T1 Arg2:T3	
+R3	Part-Whole Arg1:T4 Arg2:T2	

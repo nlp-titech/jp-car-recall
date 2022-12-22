@@ -1,0 +1,3 @@
+T1	Parts 0 5	前輪タイヤ
+T2	Parts 20 23	タイヤ
+R1	Coreference Arg1:T1 Arg2:T2	

@@ -1,0 +1,15 @@
+T1	Parts 30 34	ソケット
+T2	Parts 5 8	制動灯
+T3	Parts 78 81	制動灯
+T5	Parts 9 11	電球
+T6	Parts 27 29	電球
+T7	Parts 66 68	電球
+T8	Parts 0 2	尾灯
+T9	Parts 73 75	尾灯
+R1	Coreference Arg1:T6 Arg2:T5	
+R2	Coreference Arg1:T7 Arg2:T6	
+R3	Part-Whole Arg1:T5 Arg2:T2	
+R4	Part-Whole Arg1:T5 Arg2:T8	
+R7	Coreference Arg1:T9 Arg2:T8	
+R8	Coreference Arg1:T3 Arg2:T2	
+R5	Contact Arg1:T1 Arg2:T6	

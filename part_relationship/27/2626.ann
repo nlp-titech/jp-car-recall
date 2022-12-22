@@ -1,0 +1,29 @@
+T23	Parts 150 154	電気部品
+T24	Parts 144 148	ボックス
+T25	Parts 126 133	リレーボックス
+T26	Parts 87 94	リレーボックス
+T27	Parts 68 75	リレーボックス
+T1	Parts 0 14	粒子状物質除去装置（ＤＰＤ）
+T2	Parts 19 23	トラクタ
+T3	Parts 28 31	遮熱板
+T4	Parts 42 45	ＤＰＤ
+R1	Coreference Arg1:T4 Arg2:T1	
+T5	Parts 49 51	車両
+R2	Coreference Arg1:T5 Arg2:T2	
+T6	Parts 63 67	排気ガス
+R3	Coreference Arg1:T26 Arg2:T27	
+T7	Parts 80 84	排気ガス
+R4	Coreference Arg1:T7 Arg2:T6	
+R5	Coreference Arg1:T25 Arg2:T26	
+R6	Coreference Arg1:T24 Arg2:T25	
+T8	Parts 174 178	エンジン
+T9	Parts 185 188	灯火器
+R7	Part-Whole Arg1:T1 Arg2:T2	
+R8	Part-Whole Arg1:T3 Arg2:T2	
+R9	Contact Arg1:T6 Arg2:T1	
+R10	Part-Whole Arg1:T27 Arg2:T5	
+R11	Part-Whole Arg1:T23 Arg2:T24	
+R12	Connect Arg1:T23 Arg2:T8	
+R13	Connect Arg1:T23 Arg2:T9	
+R14	Part-Whole Arg1:T8 Arg2:T5	
+R15	Part-Whole Arg1:T9 Arg2:T5	

@@ -1,0 +1,9 @@
+T16	Parts 1 13	エキゾーストマニホールド
+T17	Parts 14 17	遮熱板
+T1	Parts 28 32	前側触媒
+T2	Parts 33 38	酸素センサ
+T5	Parts 106 111	酸素センサ
+R3	Contact Arg1:T17 Arg2:T16	
+R4	Contact Arg1:T2 Arg2:T1	
+R5	Contact Arg1:T5 Arg2:T2	
+R6	Contact Arg1:T1 Arg2:T17	

@@ -1,0 +1,9 @@
+T1	Parts 0 13	メーターパネルディスプレイ
+T5	Parts 89 94	走行距離計
+T6	Parts 33 37	エンジン
+T7	Parts 85 88	速度計
+T8	Parts 96 99	燃料計
+R2	Connect Arg1:T1 Arg2:T6	
+R1	Part-Whole Arg1:T7 Arg2:T1	
+R3	Part-Whole Arg1:T5 Arg2:T1	
+R4	Part-Whole Arg1:T8 Arg2:T1	

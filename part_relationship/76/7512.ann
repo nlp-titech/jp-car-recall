@@ -1,0 +1,9 @@
+T1	Parts 0 10	エアコンディショナー
+T2	Parts 11 25	ブロワーファンレギュレーター
+T3	Parts 33 41	ワイヤーハーネス
+T4	Parts 67 69	車両
+T5	Parts 112 120	ワイヤーハーネス
+R1	Part-Whole Arg1:T1 Arg2:T4	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Contact Arg1:T2 Arg2:T3	
+R4	Coreference Arg1:T3 Arg2:T5	

@@ -1,0 +1,11 @@
+T2	Parts 36 45	ショックアブソーバ
+T3	Parts 101 110	ショックアブソーバ
+T4	Parts 21 28	制御プログラム
+T1	Parts 0 16	電子制御式リヤショックアブソーバ
+R1	Part-Whole Arg1:T4 Arg2:T1	
+R2	Coreference Arg1:T1 Arg2:T2	
+T6	Parts 49 55	ラバーシール
+R3	Part-Whole Arg1:T6 Arg2:T2	
+T5	Parts 67 70	オイル
+R4	Contact Arg1:T6 Arg2:T5	
+R5	Coreference Arg1:T2 Arg2:T3	

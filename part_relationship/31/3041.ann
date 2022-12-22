@@ -1,0 +1,15 @@
+T14	Parts 101 103	容器
+T15	Parts 90 92	容器
+T16	Parts 56 60	蓄圧容器
+T17	Parts 17 29	アキュムレータ（蓄圧器）
+T18	Parts 105 113	ブレーキフルード
+T1	Parts 0 12	電子制御ブレーキシステム
+R1	Coreference Arg1:T16 Arg2:T15	
+R2	Coreference Arg1:T15 Arg2:T14	
+T2	Parts 114 118	窒素ガス
+T3	Parts 126 133	ブレーキペダル
+R3	Part-Whole Arg1:T16 Arg2:T17	
+R4	Part-Whole Arg1:T17 Arg2:T1	
+R6	Part-Whole Arg1:T18 Arg2:T14	
+R10	Part-Whole Arg1:T2 Arg2:T17	
+R5	Part-Whole Arg1:T3 Arg2:T1	

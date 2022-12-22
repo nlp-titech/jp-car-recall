@@ -1,0 +1,13 @@
+T2	Parts 0 31	ゲート昇降用又はボデースライド用リモコンスイッチ（ケーブル付）
+T3	Parts 111 115	スイッチ
+T4	Parts 54 61	リモコンケース
+T6	Parts 133 136	ゲート
+T8	Parts 137 140	ボデー
+T10	Parts 75 77	配線
+T11	Parts 78 82	防水ゴム
+R1	Part-Whole Arg1:T11 Arg2:T10	
+R2	Coreference Arg1:T2 Arg2:T3	
+R3	Contact Arg1:T10 Arg2:T2	
+R5	Connect Arg1:T6 Arg2:T3	
+R6	Connect Arg1:T8 Arg2:T3	
+R4	Part-Whole Arg1:T2 Arg2:T4	

@@ -1,0 +1,16 @@
+T1	Parts 0 8	ウイングトラック
+T2	Parts 13 22	油圧パワーユニット
+T3	Parts 77 81	スイッチ
+T4	Parts 33 37	ピストン
+T5	Parts 93 97	ピストン
+T6	Parts 120 123	作動油
+T7	Parts 23 28	チェック弁
+T8	Parts 112 117	チェック弁
+R1	Part-Whole Arg1:T7 Arg2:T2	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T4 Arg2:T7	
+R4	Coreference Arg1:T4 Arg2:T5	
+R6	Coreference Arg1:T7 Arg2:T8	
+R7	Contact Arg1:T6 Arg2:T8	
+R5	Part-Whole Arg1:T3 Arg2:T1	
+R8	Connect Arg1:T2 Arg2:T3	

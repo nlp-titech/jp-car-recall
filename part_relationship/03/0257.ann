@@ -1,0 +1,10 @@
+T10	Parts 0 10	原動機用電子制御装置
+T11	Parts 28 37	燃料蒸発ガス制御弁
+T12	Parts 95 98	原動機
+T1	Parts 11 15	電気配線
+T3	Parts 73 77	電気配線
+T4	Parts 78 80	被覆
+R1	Coreference Arg1:T3 Arg2:T1	
+R5	Part-Whole Arg1:T4 Arg2:T3	
+R2	Contact Arg1:T10 Arg2:T1	
+R3	Connect Arg1:T10 Arg2:T12	

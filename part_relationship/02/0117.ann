@@ -1,0 +1,13 @@
+T11	Parts 15 21	制動倍力装置
+T12	Parts 39 45	制動倍力装置
+T13	Parts 46 51	大気バルブ
+T14	Parts 82 88	制動倍力装置
+T15	Parts 101 108	ブレーキペダル
+T16	Parts 7 14	教官用ブレーキ
+R1	Coreference Arg1:T12 Arg2:T11	
+R2	Coreference Arg1:T14 Arg2:T12	
+T1	Parts 0 6	自動車教習車
+R3	Part-Whole Arg1:T16 Arg2:T1	
+R4	Part-Whole Arg1:T11 Arg2:T16	
+R5	Part-Whole Arg1:T13 Arg2:T12	
+R6	Contact Arg1:T15 Arg2:T14	

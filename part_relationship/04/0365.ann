@@ -1,0 +1,11 @@
+T9	Parts 9 16	アクセルペダル
+T11	Parts 38 49	EGR装置制御用リンク
+T12	Parts 61 64	リンク
+T13	Parts 90 97	アクセルペダル
+T1	Parts 0 4	加速装置
+R2	Coreference Arg1:T12 Arg2:T11	
+R3	Coreference Arg1:T13 Arg2:T9	
+T2	Parts 105 108	原動機
+R4	Part-Whole Arg1:T9 Arg2:T1	
+R6	Connect Arg1:T2 Arg2:T1	
+R1	Contact Arg1:T1 Arg2:T11	

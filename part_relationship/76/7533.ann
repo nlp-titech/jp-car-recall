@@ -1,0 +1,8 @@
+T1	Parts 0 17	電動パワーステアリングコントローラ
+T2	Parts 39 43	エンジン
+T3	Parts 66 71	バッテリー
+T5	Parts 106 109	警告灯
+T6	Parts 118 124	ステアリング
+R1	Connect Arg1:T1 Arg2:T6	
+R2	Connect Arg1:T1 Arg2:T5	
+R3	Connect Arg1:T1 Arg2:T3	

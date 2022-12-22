@@ -1,0 +1,5 @@
+T6	Parts 0 4	音響機器
+T7	Parts 5 18	後部スピーカー用出力増幅器
+T8	Parts 37 42	出力増幅器
+R1	Coreference Arg1:T7 Arg2:T8	
+R2	Part-Whole Arg1:T7 Arg2:T6	

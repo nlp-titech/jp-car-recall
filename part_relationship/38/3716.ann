@@ -1,0 +1,25 @@
+T1	Parts 38 49	トルクコンバータカバー
+T2	Parts 65 76	トルクコンバータカバー
+T3	Parts 147 158	トルクコンバータカバー
+T5	Parts 177 185	トルクコンバータ
+T6	Parts 51 57	取付けボルト
+T7	Parts 0 5	自動変速機
+T8	Parts 159 163	タービン
+T10	Parts 10 14	路線バス
+T12	Parts 92 95	ボルト
+T13	Parts 131 134	ボルト
+T14	Parts 143 146	ボルト
+R1	Part-Whole Arg1:T7 Arg2:T10	
+T4	Parts 19 37	トルクコンバータ部バッキングプレート
+R2	Coreference Arg1:T2 Arg2:T1	
+R3	Coreference Arg1:T3 Arg2:T2	
+R4	Coreference Arg1:T14 Arg2:T13	
+R5	Coreference Arg1:T13 Arg2:T12	
+R6	Coreference Arg1:T12 Arg2:T6	
+R7	Contact Arg1:T6 Arg2:T1	
+R9	Contact Arg1:T6 Arg2:T4	
+R10	Contact Arg1:T1 Arg2:T4	
+R8	Part-Whole Arg1:T8 Arg2:T5	
+R11	Part-Whole Arg1:T5 Arg2:T7	
+R13	Part-Whole Arg1:T4 Arg2:T7	
+R12	Part-Whole Arg1:T3 Arg2:T5	

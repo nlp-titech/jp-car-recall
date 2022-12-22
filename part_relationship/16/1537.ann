@@ -1,0 +1,11 @@
+T1	Parts 0 5	主制動装置
+T2	Parts 10 18	ブレーキ油圧配管
+T3	Parts 33 42	ブレーキライニング
+T4	Parts 81 85	油圧配管
+R1	Coreference Arg1:T4 Arg2:T2	
+T5	Parts 93 100	ブレーキオイル
+T6	Parts 110 114	ブレーキ
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Contact Arg1:T5 Arg2:T4	
+R5	Part-Whole Arg1:T3 Arg2:T1	
+R4	Coreference Arg1:T1 Arg2:T6	

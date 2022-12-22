@@ -1,0 +1,11 @@
+T1	Parts 6 14	油圧クラッチ機構
+T2	Parts 0 5	無段変速機
+T3	Parts 89 93	クラッチ
+T4	Parts 29 34	環状シール
+T5	Parts 48 51	シール
+T6	Parts 81 84	シール
+R1	Coreference Arg1:T5 Arg2:T4	
+R2	Coreference Arg1:T6 Arg2:T5	
+R3	Part-Whole Arg1:T4 Arg2:T1	
+R4	Part-Whole Arg1:T1 Arg2:T2	
+R5	Coreference Arg1:T3 Arg2:T1	

@@ -1,0 +1,12 @@
+T12	Parts 62 64	車軸
+T15	Parts 79 81	車軸
+T16	Parts 17 26	シャフトトラニオン
+T17	Parts 27 32	スピンドル
+T1	Parts 10 12	車軸
+R1	Coreference Arg1:T12 Arg2:T1	
+R2	Coreference Arg1:T15 Arg2:T12	
+T3	Parts 0 9	２軸１６輪トレーラ
+R3	Contact Arg1:T17 Arg2:T16	
+R4	Part-Whole Arg1:T1 Arg2:T3	
+R5	Part-Whole Arg1:T16 Arg2:T1	
+R6	Part-Whole Arg1:T17 Arg2:T1	

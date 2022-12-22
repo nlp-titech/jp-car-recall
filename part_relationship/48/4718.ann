@@ -1,0 +1,9 @@
+T1	Parts 40 46	ドア・ラッチ
+T2	Parts 12 17	ロック装置
+T3	Parts 0 11	電動スライド式後部ドア
+T4	Parts 32 34	ドア
+T5	Parts 74 76	ドア
+R1	Coreference Arg1:T3 Arg2:T4	
+R2	Coreference Arg1:T4 Arg2:T5	
+R3	Part-Whole Arg1:T2 Arg2:T3	
+R4	Part-Whole Arg1:T1 Arg2:T2	

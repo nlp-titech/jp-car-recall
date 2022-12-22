@@ -1,0 +1,9 @@
+T12	Parts 74 77	ホース
+T13	Parts 30 34	クランプ
+T1	Parts 9 15	手動式変速機
+T2	Parts 16 26	オイルクーラーホース
+T4	Parts 81 84	オイル
+R2	Contact Arg1:T2 Arg2:T1	
+R3	Contact Arg1:T13 Arg2:T2	
+R5	Contact Arg1:T12 Arg2:T4	
+R1	Coreference Arg1:T12 Arg2:T2	

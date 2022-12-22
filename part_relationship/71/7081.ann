@@ -1,0 +1,9 @@
+T1	Parts 19 25	排気管カバー
+T2	Parts 42 46	ステップ
+T3	Parts 11 14	排気管
+T4	Parts 53 56	排気管
+T5	Parts 0 2	車体
+R1	Part-Whole Arg1:T3 Arg2:T5	
+R2	Part-Whole Arg1:T1 Arg2:T3	
+R3	Coreference Arg1:T3 Arg2:T4	
+R4	Part-Whole Arg1:T2 Arg2:T5	

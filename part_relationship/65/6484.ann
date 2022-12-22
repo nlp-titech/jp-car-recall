@@ -1,0 +1,17 @@
+T1	Parts 26 31	固定ボルト
+T2	Parts 65 70	固定ボルト
+T3	Parts 86 91	固定ボルト
+T4	Parts 0 4	緩衝装置
+T5	Parts 33 36	ナット
+T6	Parts 73 76	ナット
+T7	Parts 93 96	ナット
+T9	Parts 5 11	リレーレバー
+R1	Part-Whole Arg1:T9 Arg2:T4	
+R2	Contact Arg1:T9 Arg2:T1	
+R3	Contact Arg1:T9 Arg2:T5	
+R4	Coreference Arg1:T1 Arg2:T2	
+R5	Coreference Arg1:T5 Arg2:T6	
+R6	Coreference Arg1:T2 Arg2:T3	
+R7	Coreference Arg1:T6 Arg2:T7	
+#1	AnnotatorNotes T1	改善箇所説明図ではボルトとナットは別々に配置されているので関係付けせず
+#2	AnnotatorNotes T5	改善箇所説明図ではボルトとナットは別々に配置されているので関係付けせず

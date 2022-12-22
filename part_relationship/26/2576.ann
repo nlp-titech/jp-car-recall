@@ -1,0 +1,17 @@
+T1	Parts 2 5	前照灯
+T3	Parts 19 26	メインハーネス
+T4	Parts 37 39	電球
+T6	Parts 43 47	ソケット
+T11	Parts 120 124	電気配線
+T13	Parts 129 137	すれ違い用前照灯
+T14	Parts 140 146	走行用前照灯
+T2	Parts 10 17	電球用電気配線
+R6	Coreference Arg1:T2 Arg2:T11	
+R7	Contact Arg1:T1 Arg2:T2	
+R8	Contact Arg1:T2 Arg2:T3	
+R9	Part-Whole Arg1:T4 Arg2:T1	
+R10	Part-Whole Arg1:T6 Arg2:T1	
+R13	Oneway-Coreference Arg1:T1 Arg2:T13	
+R14	Oneway-Coreference Arg1:T1 Arg2:T14	
+R2	Contact Arg1:T6 Arg2:T2	
+R1	Contact Arg1:T6 Arg2:T4	

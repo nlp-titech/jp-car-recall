@@ -1,0 +1,24 @@
+T2	Parts 17 30	冷却用電動クーリングファン
+T3	Parts 56 64	クーリングファン
+T4	Parts 79 87	クーリングファン
+T5	Parts 7 16	エアコンコンデンサ
+T7	Parts 188 192	エアコン
+T8	Parts 144 148	エンジン
+T9	Parts 35 39	モーター
+T10	Parts 0 5	ラジエター
+T12	Parts 120 139	警告灯（水温、エンジンチェックランプ）
+T13	Parts 103 106	冷却水
+T16	Parts 170 172	冷媒
+R1	Part-Whole Arg1:T2 Arg2:T5	
+R2	Part-Whole Arg1:T2 Arg2:T10	
+R3	Coreference Arg1:T2 Arg2:T3	
+R4	Coreference Arg1:T3 Arg2:T4	
+R5	Part-Whole Arg1:T9 Arg2:T2	
+R10	Part-Whole Arg1:T5 Arg2:T7	
+R11	Part-Whole Arg1:T16 Arg2:T7	
+R7	Connect Arg1:T10 Arg2:T8	
+R6	Contact Arg1:T10 Arg2:T13	
+R8	Connect Arg1:T13 Arg2:T12	
+R9	Contact Arg1:T13 Arg2:T8	
+R12	Connect Arg1:T4 Arg2:T13	
+R13	Connect Arg1:T4 Arg2:T16	

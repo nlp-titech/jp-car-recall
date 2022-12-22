@@ -1,0 +1,13 @@
+T4	Parts 86 99	走行用前照灯（ハイビーム）
+T5	Parts 114 120	走行用前照灯
+T8	Parts 132 135	表示灯
+T9	Parts 67 73	オートライト
+T2	Parts 20 55	オートライト（車外の明るさに応じて前照灯を自動的に点灯、消灯する装置）
+T3	Parts 60 62	車両
+T10	Parts 74 78	電気回路
+R1	Coreference Arg1:T2 Arg2:T9	
+R2	Coreference Arg1:T4 Arg2:T5	
+R3	Part-Whole Arg1:T2 Arg2:T3	
+R4	Part-Whole Arg1:T10 Arg2:T9	
+R5	Connect Arg1:T4 Arg2:T10	
+R6	Connect Arg1:T8 Arg2:T10	

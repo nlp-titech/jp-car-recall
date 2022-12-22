@@ -1,0 +1,13 @@
+T10	Parts 11 30	油圧作動式パワーステアリング用シリンダ
+T11	Parts 31 36	取付ボルト
+T12	Parts 63 66	ボルト
+T13	Parts 79 84	シリンダー
+T1	Parts 0 6	かじ取り装置
+R1	Coreference Arg1:T12 Arg2:T11	
+R2	Coreference Arg1:T10 Arg2:T13	
+T3	Parts 90 94	チューブ
+T5	Parts 101 104	作動油
+R3	Part-Whole Arg1:T10 Arg2:T1	
+R4	Part-Whole Arg1:T11 Arg2:T10	
+R6	Part-Whole Arg1:T3 Arg2:T13	
+R5	Contact Arg1:T5 Arg2:T13	

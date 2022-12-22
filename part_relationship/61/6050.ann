@@ -1,0 +1,5 @@
+T2	Parts 33 36	左尾灯
+T3	Parts 47 50	左尾灯
+T4	Parts 0 18	セントラルエレクトロニックモジュール
+R2	Coreference Arg1:T2 Arg2:T3	
+R3	Connect Arg1:T4 Arg2:T2	

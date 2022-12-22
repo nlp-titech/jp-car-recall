@@ -1,0 +1,17 @@
+T14	Parts 26 35	スロットルグリップ
+T15	Parts 36 43	ハンドルパイプ
+T16	Parts 70 77	ハンドルパイプ
+T17	Parts 84 93	スロットルグリップ
+T18	Parts 112 121	スロットルグリップ
+T1	Parts 6 21	加速装置（スロットルグリップ）
+R1	Coreference Arg1:T14 Arg2:T1	
+R3	Coreference Arg1:T16 Arg2:T15	
+R4	Coreference Arg1:T17 Arg2:T14	
+R5	Coreference Arg1:T18 Arg2:T17	
+T4	Parts 129 132	原動機
+T5	Parts 0 5	二輪自動車
+R6	Part-Whole Arg1:T1 Arg2:T5	
+R7	Part-Whole Arg1:T15 Arg2:T5	
+R9	Connect Arg1:T4 Arg2:T1	
+R2	Part-Whole Arg1:T4 Arg2:T5	
+R8	Contact Arg1:T14 Arg2:T15	

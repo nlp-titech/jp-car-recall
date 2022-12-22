@@ -1,0 +1,13 @@
+T1	Parts 1 6	室内ヒータ
+T2	Parts 11 18	ヒータユニット
+T3	Parts 19 22	パイプ
+T4	Parts 23 29	ヒータホース
+T7	Parts 75 83	クイックコネクタ
+T8	Parts 87 94	エンジン冷却水
+R3	Part-Whole Arg1:T3 Arg2:T2	
+R4	Part-Whole Arg1:T4 Arg2:T2	
+R5	Contact Arg1:T3 Arg2:T4	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R10	Contact Arg1:T4 Arg2:T8	
+R1	Contact Arg1:T7 Arg2:T3	
+R6	Contact Arg1:T7 Arg2:T4	

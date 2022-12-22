@@ -1,0 +1,11 @@
+T1	Parts 9 22	後輪用ショックアブソーバー
+T3	Parts 119 129	ショックアブソーバー
+T4	Parts 23 34	前側マウントブラケット
+T5	Parts 74 79	ブラケット
+T6	Parts 109 114	ブラケット
+T8	Parts 0 4	緩衝装置
+R1	Part-Whole Arg1:T1 Arg2:T8	
+R3	Coreference Arg1:T4 Arg2:T5	
+R5	Coreference Arg1:T1 Arg2:T3	
+R4	Coreference Arg1:T5 Arg2:T6	
+R2	Contact Arg1:T1 Arg2:T4	

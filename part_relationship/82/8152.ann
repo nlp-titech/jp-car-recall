@@ -1,0 +1,10 @@
+T1	Parts 0 9	ウイングルーフバン
+T3	Parts 64 66	車両
+T4	Parts 17 27	大型及び中型トラック
+R1	Part-Whole Arg1:T1 Arg2:T4	
+T2	Parts 32 34	車両
+T5	Parts 48 50	灯火
+R2	Coreference Arg1:T3 Arg2:T2	
+R3	Coreference Arg1:T2 Arg2:T4	
+R4	Part-Whole Arg1:T5 Arg2:T3	
+R5	Connect Arg1:T5 Arg2:T1	

@@ -1,0 +1,15 @@
+T10	Parts 126 130	エンジン
+T11	Parts 111 115	エンジン
+T12	Parts 97 102	内部コイル
+T13	Parts 18 23	内部コイル
+T1	Parts 5 13	クランク角センサ
+T2	Parts 51 58	エンジンルーム
+T3	Parts 76 80	エンジン
+R1	Coreference Arg1:T13 Arg2:T12	
+R2	Coreference Arg1:T3 Arg2:T11	
+R3	Coreference Arg1:T11 Arg2:T10	
+T4	Parts 0 4	エンジン
+R4	Coreference Arg1:T3 Arg2:T4	
+R5	Part-Whole Arg1:T3 Arg2:T2	
+R6	Part-Whole Arg1:T1 Arg2:T4	
+R7	Part-Whole Arg1:T13 Arg2:T1	

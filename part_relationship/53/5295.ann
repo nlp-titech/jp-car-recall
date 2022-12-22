@@ -1,0 +1,19 @@
+T1	Parts 0 7	サイドスタンド
+T2	Parts 52 56	スタンド
+T3	Parts 61 65	取付金具
+T5	Parts 66 69	ボルト
+T6	Parts 83 86	ボルト
+T7	Parts 57 59	車体
+T8	Parts 91 93	車両
+T4	Parts 11 18	ピボットボルト
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Contact Arg1:T1 Arg2:T4	
+R3	Contact Arg1:T2 Arg2:T7	
+R4	Contact Arg1:T5 Arg2:T3	
+R6	Coreference Arg1:T5 Arg2:T6	
+R7	Part-Whole Arg1:T7 Arg2:T8	
+R5	Contact Arg1:T7 Arg2:T3	
+R8	Contact Arg1:T7 Arg2:T5	
+R9	Contact Arg1:T4 Arg2:T3	
+R10	Contact Arg1:T2 Arg2:T3	
+R11	Part-Whole Arg1:T2 Arg2:T8	

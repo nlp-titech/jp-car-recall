@@ -1,0 +1,8 @@
+T2	Parts 1 20	駐車ブレーキソレノイドバルブ用電気配線
+T3	Parts 49 53	電気配線
+T4	Parts 55 67	フィルタ取付用ブラケット
+T5	Parts 72 76	電気配線
+T6	Parts 105 111	駐車ブレーキ
+R1	Coreference Arg1:T5 Arg2:T3	
+R2	Coreference Arg1:T2 Arg2:T3	
+R3	Contact Arg1:T5 Arg2:T6	

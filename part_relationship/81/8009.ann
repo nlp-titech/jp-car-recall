@@ -1,0 +1,10 @@
+T1	Parts 0 9	助手席シートベルト
+T2	Parts 74 76	車両
+T3	Parts 80 88	チャイルドシート
+T4	Parts 109 117	チャイルドシート
+T5	Parts 40 54	チャイルドシート用ロック機能
+R1	Part-Whole Arg1:T5 Arg2:T1	
+R2	Connect Arg1:T3 Arg2:T5	
+R3	Coreference Arg1:T4 Arg2:T3	
+R4	Part-Whole Arg1:T3 Arg2:T2	
+R5	Part-Whole Arg1:T1 Arg2:T2	

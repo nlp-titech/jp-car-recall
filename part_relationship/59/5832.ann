@@ -1,0 +1,8 @@
+T2	Parts 0 4	エンジン
+T3	Parts 9 21	エンジンヒューズボックス
+T4	Parts 26 28	車両
+T7	Parts 33 39	電源供給配線
+R1	Contact Arg1:T3 Arg2:T7	
+R2	Part-Whole Arg1:T2 Arg2:T4	
+R4	Part-Whole Arg1:T3 Arg2:T4	
+R3	Part-Whole Arg1:T7 Arg2:T4	

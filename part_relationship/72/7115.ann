@@ -1,0 +1,5 @@
+T1	Parts 54 71	二重アクセル・リターン・スプリング
+T4	Parts 95 99	エンジン
+T5	Parts 18 30	アクセル・ペダル・ロッド
+R1	Connect Arg1:T1 Arg2:T4	
+R2	Connect Arg1:T5 Arg2:T4	

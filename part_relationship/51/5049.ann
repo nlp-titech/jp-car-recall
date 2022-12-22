@@ -1,0 +1,6 @@
+T3	Parts 38 43	金属パイプ
+T4	Parts 1 13	フューエルデリバリホース
+T5	Parts 51 53	燃料
+R2	Contact Arg1:T3 Arg2:T4	
+R4	Contact Arg1:T5 Arg2:T3	
+R1	Contact Arg1:T5 Arg2:T4	

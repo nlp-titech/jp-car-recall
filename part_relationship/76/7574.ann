@@ -1,0 +1,14 @@
+T1	Parts 0 7	刈取脱穀作業車
+T2	Parts 8 12	走行装置
+T3	Parts 29 31	車体
+T4	Parts 36 38	車体
+T5	Parts 50 63	アーム（ローリング／リヤ）
+T6	Parts 86 89	アーム
+T7	Parts 104 106	車体
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T1	
+R3	Coreference Arg1:T3 Arg2:T4	
+R4	Contact Arg1:T4 Arg2:T5	
+R5	Coreference Arg1:T5 Arg2:T6	
+R6	Coreference Arg1:T4 Arg2:T7	
+R7	Part-Whole Arg1:T5 Arg2:T2	

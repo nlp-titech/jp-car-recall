@@ -1,0 +1,24 @@
+T1	Parts 44 47	灯火器
+T2	Parts 109 117	主軸オイルシール
+T3	Parts 134 137	変速機
+T4	Parts 140 143	潤滑油
+T5	Parts 179 185	オイルシール
+T6	Parts 187 190	潤滑油
+T7	Parts 211 218	アクセルペダル
+T8	Parts 224 237	アクセルリターンスプリング
+T9	Parts 267 272	スプリング
+T10	Parts 283 290	アクセルペダル
+T11	Parts 306 315	パーキングブレーキ
+T12	Parts 105 108	変速機
+T13	Parts 11 15	保安部品
+T14	Parts 16 21	内外装部品
+R1	Oneway-Coreference Arg1:T13 Arg2:T1	
+R2	Coreference Arg1:T12 Arg2:T3	
+R3	Coreference Arg1:T2 Arg2:T5	
+R4	Coreference Arg1:T4 Arg2:T6	
+R5	Coreference Arg1:T7 Arg2:T10	
+R6	Coreference Arg1:T8 Arg2:T9	
+R7	Part-Whole Arg1:T2 Arg2:T12	
+R8	Contact Arg1:T3 Arg2:T4	
+R9	Contact Arg1:T2 Arg2:T4	
+R10	Contact Arg1:T7 Arg2:T8	

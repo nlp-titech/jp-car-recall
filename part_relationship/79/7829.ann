@@ -1,0 +1,9 @@
+T1	Parts 0 9	４Ｖ２０型エンジン
+T2	Parts 14 20	中型トラック
+T3	Parts 25 40	ターボチャージャー取付けナット
+T4	Parts 56 59	ナット
+T5	Parts 86 95	ターボチャージャー
+R1	Part-Whole Arg1:T1 Arg2:T2	
+R3	Part-Whole Arg1:T5 Arg2:T2	
+R4	Contact Arg1:T4 Arg2:T5	
+R2	Coreference Arg1:T3 Arg2:T4	

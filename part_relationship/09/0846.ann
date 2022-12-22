@@ -1,0 +1,8 @@
+T8	Parts 0 2	車枠
+T9	Parts 16 23	クロスメンバー
+T10	Parts 32 35	ステー
+T11	Parts 67 74	クロスメンバー
+R1	Coreference Arg1:T11 Arg2:T9	
+R2	Part-Whole Arg1:T9 Arg2:T8	
+R3	Contact Arg1:T9 Arg2:T10	
+R4	Part-Whole Arg1:T10 Arg2:T8	

@@ -1,0 +1,8 @@
+T1	Parts 0 4	制動装置
+T2	Parts 9 20	ブレーキ弁押付けボルト
+T3	Parts 49 52	ボルト
+T4	Parts 57 61	ブレーキ
+R1	Coreference Arg1:T3 Arg2:T2	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R4	Contact Arg1:T3 Arg2:T4	
+R3	Part-Whole Arg1:T4 Arg2:T1	

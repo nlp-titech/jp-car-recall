@@ -1,0 +1,19 @@
+T12	Parts 1 5	エンジン
+T14	Parts 6 11	燃料パイプ
+T15	Parts 13 20	燃料噴射ノズル
+T16	Parts 21 26	オーリング
+T18	Parts 55 60	オーリング
+T20	Parts 93 98	オーリング
+T1	Parts 36 43	デリバリパイプ
+T2	Parts 106 108	燃料
+R1	Coreference Arg1:T16 Arg2:T18	
+R2	Coreference Arg1:T18 Arg2:T20	
+R3	Part-Whole Arg1:T14 Arg2:T12	
+R4	Part-Whole Arg1:T15 Arg2:T12	
+R5	Part-Whole Arg1:T16 Arg2:T15	
+R6	Part-Whole Arg1:T16 Arg2:T14	
+R8	Contact Arg1:T1 Arg2:T15	
+R9	Contact Arg1:T1 Arg2:T14	
+R11	Contact Arg1:T2 Arg2:T15	
+R12	Contact Arg1:T2 Arg2:T14	
+R13	Contact Arg1:T2 Arg2:T1	

@@ -1,0 +1,7 @@
+T1	Parts 0 16	エアバッグ等（乗員補助拘束装置）
+T2	Parts 21 34	ＳＲＳコントロールユニット
+T3	Parts 84 92	乗員補助拘束装置
+T4	Parts 112 120	乗員補助拘束装置
+R1	Connect Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T3 Arg2:T1	
+R3	Coreference Arg1:T4 Arg2:T3	

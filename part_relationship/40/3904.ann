@@ -1,0 +1,7 @@
+T1	Parts 10 16	シフトレバー
+T2	Parts 0 5	自動変速機
+T3	Parts 53 56	シフト
+T5	Parts 23 30	油路切替レバー
+R1	Connect Arg1:T5 Arg2:T1	
+R2	Part-Whole Arg1:T1 Arg2:T2	
+R3	Connect Arg1:T1 Arg2:T3	

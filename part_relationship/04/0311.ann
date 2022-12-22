@@ -1,0 +1,14 @@
+T1	Parts 0 3	消音器
+T7	Parts 103 109	ブレーキ系統
+T8	Parts 110 112	エア
+T9	Parts 118 124	非常ブレーキ
+T2	Parts 4 7	遮熱板
+T3	Parts 73 92	駐車ブレーキ解放エア用ナイロンチューブ
+T4	Parts 59 63	排気ガス
+R4	Part-Whole Arg1:T3 Arg2:T7	
+R5	Contact Arg1:T3 Arg2:T8	
+R6	Part-Whole Arg1:T9 Arg2:T7	
+R1	Contact Arg1:T2 Arg2:T1	
+T5	Parts 37 41	排気ガス
+R2	Coreference Arg1:T5 Arg2:T4	
+R3	Contact Arg1:T1 Arg2:T5	

@@ -1,0 +1,21 @@
+T4	Parts 14 21	制御プログラム
+T5	Parts 106 113	非常点滅表示灯
+T6	Parts 150 157	非常点滅表示灯
+T7	Parts 100 105	方向指示器
+T8	Parts 144 149	方向指示器
+T13	Parts 36 38	ドア
+T14	Parts 43 45	ドア
+T1	Parts 0 13	電装品コントロールユニット
+R1	Part-Whole Arg1:T4 Arg2:T1	
+T10	Parts 29 33	リモコン
+R2	Coreference Arg1:T13 Arg2:T14	
+T2	Parts 51 64	電装品コントロールユニット
+R3	Coreference Arg1:T1 Arg2:T2	
+T3	Parts 123 136	電装品コントロールユニット
+R4	Coreference Arg1:T2 Arg2:T3	
+R5	Coreference Arg1:T7 Arg2:T8	
+R6	Coreference Arg1:T5 Arg2:T6	
+R7	Connect Arg1:T7 Arg2:T3	
+R8	Connect Arg1:T5 Arg2:T3	
+R10	Connect Arg1:T1 Arg2:T10	
+R11	Connect Arg1:T1 Arg2:T13	

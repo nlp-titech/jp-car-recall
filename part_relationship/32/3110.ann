@@ -1,0 +1,19 @@
+T14	Parts 88 97	タイミングホイール
+T15	Parts 200 204	エンジン
+T16	Parts 189 193	エンジン
+T17	Parts 113 117	エンジン
+T18	Parts 82 85	ボルト
+T19	Parts 44 58	タイミングホイール取付ボルト
+T20	Parts 36 40	エンジン
+T1	Parts 0 4	エンジン
+T2	Parts 13 31	クランクシャフト・タイミングホイール
+R1	Coreference Arg1:T1 Arg2:T20	
+R2	Coreference Arg1:T19 Arg2:T18	
+R3	Coreference Arg1:T2 Arg2:T14	
+R4	Coreference Arg1:T20 Arg2:T17	
+T4	Parts 151 158	コンピューター
+R5	Coreference Arg1:T15 Arg2:T16	
+R6	Coreference Arg1:T17 Arg2:T16	
+R7	Part-Whole Arg1:T2 Arg2:T1	
+R8	Contact Arg1:T19 Arg2:T2	
+R10	Connect Arg1:T4 Arg2:T17	

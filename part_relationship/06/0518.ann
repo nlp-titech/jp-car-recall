@@ -1,0 +1,14 @@
+T9	Parts 26 34	ワイヤーケーブル
+T10	Parts 47 55	ワイヤーケーブル
+T1	Parts 10 15	手動変速機
+R1	Coreference Arg1:T10 Arg2:T9	
+T3	Parts 68 74	速度取締装置
+T4	Parts 87 90	速度計
+T5	Parts 0 5	警察自動車
+R2	Part-Whole Arg1:T1 Arg2:T5	
+R4	Contact Arg1:T9 Arg2:T1	
+R3	Part-Whole Arg1:T9 Arg2:T5	
+R5	Connect Arg1:T10 Arg2:T3	
+R6	Part-Whole Arg1:T3 Arg2:T5	
+R7	Connect Arg1:T10 Arg2:T4	
+R8	Part-Whole Arg1:T4 Arg2:T5	

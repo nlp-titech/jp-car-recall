@@ -1,0 +1,22 @@
+T10	Parts 68 72	エンジン
+T11	Parts 23 38	エンジン制御ユニット（ＥＣＵ）
+T12	Parts 56 60	アクセル
+T13	Parts 76 79	モータ
+T16	Parts 98 102	エンジン
+T19	Parts 121 125	エンジン
+T1	Parts 0 11	７速ＤＣＴ型自動変速機
+T2	Parts 16 18	車両
+T3	Parts 86 90	エンジン
+R1	Coreference Arg1:T10 Arg2:T3	
+R2	Coreference Arg1:T3 Arg2:T16	
+R3	Coreference Arg1:T16 Arg2:T19	
+T4	Parts 39 44	プログラム
+R4	Part-Whole Arg1:T4 Arg2:T11	
+R5	Connect Arg1:T11 Arg2:T10	
+R6	Connect Arg1:T13 Arg2:T10	
+R7	Part-Whole Arg1:T1 Arg2:T2	
+R8	Connect Arg1:T10 Arg2:T1	
+R9	Part-Whole Arg1:T10 Arg2:T2	
+R10	Part-Whole Arg1:T12 Arg2:T2	
+R11	Part-Whole Arg1:T11 Arg2:T2	
+R12	Part-Whole Arg1:T13 Arg2:T2	

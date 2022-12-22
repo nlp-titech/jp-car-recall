@@ -1,0 +1,15 @@
+T6	Parts 24 29	ブラケット
+T7	Parts 30 34	モールド
+T8	Parts 44 48	モールド
+T1	Parts 1 5	乗車装置
+T2	Parts 10 12	座席
+R1	Coreference Arg1:T8 Arg2:T7	
+T3	Parts 63 65	座席
+R2	Coreference Arg1:T3 Arg2:T2	
+T4	Parts 13 17	キャビン
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T4 Arg2:T1	
+R7	Part-Whole Arg1:T7 Arg2:T6	
+R5	Contact Arg1:T2 Arg2:T4	
+R6	Contact Arg1:T2 Arg2:T6	
+R8	Contact Arg1:T4 Arg2:T6	

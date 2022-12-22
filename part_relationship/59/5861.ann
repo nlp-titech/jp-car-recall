@@ -1,0 +1,4 @@
+T1	Parts 97 101	エンジン
+T3	Parts 70 73	警告灯
+T5	Parts 35 40	接続ライン
+R1	Connect Arg1:T3 Arg2:T1	

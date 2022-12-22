@@ -1,0 +1,33 @@
+T1	Parts 148 153	方向指示器
+T5	Parts 134 138	後部霧灯
+T6	Parts 14 21	バルブキャリア
+T7	Parts 0 13	リアコンビネーションライト
+T8	Parts 161 164	警告灯
+T9	Parts 143 146	後退灯
+T10	Parts 139 142	制動灯
+T11	Parts 127 130	側方灯
+T12	Parts 63 66	灯火器
+T13	Parts 42 44	車両
+T14	Parts 131 133	尾灯
+R1	Part-Whole Arg1:T6 Arg2:T7	
+R3	Part-Whole Arg1:T7 Arg2:T13	
+R13	Connect Arg1:T11 Arg2:T8	
+R14	Connect Arg1:T14 Arg2:T8	
+R15	Connect Arg1:T5 Arg2:T8	
+R16	Connect Arg1:T10 Arg2:T8	
+R17	Connect Arg1:T9 Arg2:T8	
+R18	Connect Arg1:T1 Arg2:T8	
+R7	Part-Whole Arg1:T11 Arg2:T7	
+R8	Part-Whole Arg1:T14 Arg2:T7	
+R9	Part-Whole Arg1:T5 Arg2:T7	
+R10	Part-Whole Arg1:T10 Arg2:T7	
+R11	Part-Whole Arg1:T9 Arg2:T7	
+R12	Part-Whole Arg1:T1 Arg2:T7	
+T2	Parts 26 30	コネクタ
+T3	Parts 73 77	コネクタ
+T4	Parts 109 113	コネクタ
+R2	Coreference Arg1:T2 Arg2:T3	
+R5	Coreference Arg1:T3 Arg2:T4	
+R6	Part-Whole Arg1:T2 Arg2:T6	
+R4	Part-Whole Arg1:T12 Arg2:T7	
+R19	Part-Whole Arg1:T8 Arg2:T13	

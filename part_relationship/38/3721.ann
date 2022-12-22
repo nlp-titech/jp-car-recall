@@ -1,0 +1,36 @@
+T1	Parts 0 8	農業用薬剤散布車
+T2	Parts 98 105	バイパスバルブ
+T3	Parts 9 15	動力伝達装置
+T4	Parts 172 178	始動安全装置
+T5	Parts 80 85	走行モータ
+T6	Parts 129 134	走行モータ
+T7	Parts 162 166	エンジン
+T8	Parts 184 188	エンジン
+T9	Parts 135 138	オイル
+T10	Parts 26 35	セーフティスイッチ
+T11	Parts 48 52	スイッチ
+T12	Parts 60 64	スイッチ
+T13	Parts 116 120	ブレーキ
+T14	Parts 17 21	始動装置
+T15	Parts 87 90	オイル
+T16	Parts 144 146	車両
+R1	Coreference Arg1:T11 Arg2:T10	
+R2	Coreference Arg1:T12 Arg2:T11	
+R3	Part-Whole Arg1:T3 Arg2:T1	
+R4	Part-Whole Arg1:T14 Arg2:T1	
+R7	Connect Arg1:T2 Arg2:T5	
+R8	Contact Arg1:T2 Arg2:T15	
+R9	Coreference Arg1:T6 Arg2:T5	
+R10	Coreference Arg1:T9 Arg2:T15	
+R11	Coreference Arg1:T8 Arg2:T7	
+R12	Connect Arg1:T4 Arg2:T7	
+R13	Coreference Arg1:T16 Arg2:T1	
+R15	Part-Whole Arg1:T13 Arg2:T16	
+R16	Part-Whole Arg1:T5 Arg2:T1	
+R17	Part-Whole Arg1:T7 Arg2:T16	
+R19	Part-Whole Arg1:T4 Arg2:T14	
+R14	Part-Whole Arg1:T10 Arg2:T3	
+R5	Connect Arg1:T12 Arg2:T2	
+R6	Connect Arg1:T12 Arg2:T4	
+R20	Part-Whole Arg1:T2 Arg2:T3	
+R21	Part-Whole Arg1:T10 Arg2:T14	

@@ -1,0 +1,19 @@
+T10	Parts 23 25	灯火
+T11	Parts 47 52	方向指示器
+T12	Parts 39 42	車幅灯
+T13	Parts 54 61	非常点滅表示灯
+T16	Parts 69 72	車幅灯
+T17	Parts 86 89	車幅灯
+T1	Parts 0 3	車幅灯
+T2	Parts 4 9	方向指示器
+T3	Parts 11 18	非常点滅表示灯
+T4	Parts 26 31	制御用回路
+R1	Coreference Arg1:T1 Arg2:T12	
+R2	Coreference Arg1:T2 Arg2:T11	
+R3	Coreference Arg1:T3 Arg2:T13	
+R4	Coreference Arg1:T12 Arg2:T16	
+R5	Coreference Arg1:T16 Arg2:T17	
+R9	Contact Arg1:T10 Arg2:T4	
+R6	Oneway-Coreference Arg1:T10 Arg2:T1	
+R7	Oneway-Coreference Arg1:T10 Arg2:T2	
+R8	Oneway-Coreference Arg1:T10 Arg2:T3	

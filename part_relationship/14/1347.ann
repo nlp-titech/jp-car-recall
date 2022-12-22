@@ -1,0 +1,18 @@
+T18	Parts 136 138	車両
+T19	Parts 97 101	ハンドル
+T20	Parts 81 90	前後進切換えレバー
+T22	Parts 45 49	ハンドル
+T24	Parts 118 122	モーター
+T1	Parts 0 10	電動式フォークリフト
+T3	Parts 22 28	アクセレータ
+T4	Parts 33 37	電気回路
+T2	Parts 11 13	車両
+R2	Coreference Arg1:T2 Arg2:T18	
+R3	Coreference Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T4 Arg2:T3	
+R1	Coreference Arg1:T19 Arg2:T22	
+R7	Part-Whole Arg1:T3 Arg2:T2	
+R8	Part-Whole Arg1:T22 Arg2:T2	
+R9	Part-Whole Arg1:T20 Arg2:T2	
+R10	Part-Whole Arg1:T24 Arg2:T2	
+R5	Connect Arg1:T3 Arg2:T24	

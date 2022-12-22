@@ -1,0 +1,13 @@
+T12	Parts 34 37	原動機
+T13	Parts 16 19	オイル
+T1	Parts 0 3	原動機
+T2	Parts 4 11	クランクケース
+T3	Parts 41 48	エンジンオイル
+T4	Parts 66 69	オイル
+T5	Parts 70 75	後輪タイヤ
+R1	Coreference Arg1:T4 Arg2:T3	
+R2	Coreference Arg1:T12 Arg2:T1	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R5	Coreference Arg1:T3 Arg2:T13	
+R6	Connect Arg1:T5 Arg2:T12	
+R4	Contact Arg1:T13 Arg2:T2	

@@ -1,0 +1,7 @@
+T2	Parts 11 13	車枠
+T3	Parts 20 22	車枠
+T4	Parts 58 60	車枠
+T1	Parts 0 10	三輪型原動機付自転車
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T2 Arg2:T3	
+R3	Coreference Arg1:T3 Arg2:T4	

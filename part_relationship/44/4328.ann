@@ -1,0 +1,19 @@
+T1	Parts 12 22	コントロールユニット
+T2	Parts 0 11	電動パーキングブレーキ
+T3	Parts 153 164	電動パーキングブレーキ
+T4	Parts 194 203	パーキングブレーキ
+T5	Parts 71 74	センサ
+T6	Parts 135 138	センサ
+T7	Parts 145 148	警告灯
+T8	Parts 33 35	基板
+T10	Parts 124 126	車両
+T11	Parts 46 51	基板上素子
+R1	Part-Whole Arg1:T1 Arg2:T2	
+R2	Part-Whole Arg1:T8 Arg2:T1	
+R3	Part-Whole Arg1:T11 Arg2:T8	
+R4	Part-Whole Arg1:T5 Arg2:T1	
+R5	Part-Whole Arg1:T2 Arg2:T10	
+R7	Coreference Arg1:T5 Arg2:T6	
+R9	Connect Arg1:T6 Arg2:T7	
+R10	Coreference Arg1:T2 Arg2:T3	
+R6	Coreference Arg1:T3 Arg2:T4	

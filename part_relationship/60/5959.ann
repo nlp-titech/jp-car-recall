@@ -1,0 +1,14 @@
+T1	Parts 5 13	バルブスプリング
+T2	Parts 85 90	シリンダー
+T3	Parts 14 24	スプリングリテーナー
+T4	Parts 48 58	スプリングリテーナー
+T5	Parts 94 98	エンジン
+T6	Parts 108 112	エンジン
+T9	Parts 81 84	バルブ
+R1	Coreference Arg1:T3 Arg2:T4	
+R2	Coreference Arg1:T5 Arg2:T6	
+R4	Contact Arg1:T1 Arg2:T9	
+R5	Part-Whole Arg1:T2 Arg2:T5	
+R6	Part-Whole Arg1:T9 Arg2:T5	
+R7	Part-Whole Arg1:T1 Arg2:T5	
+R3	Part-Whole Arg1:T3 Arg2:T1	

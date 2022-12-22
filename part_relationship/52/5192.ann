@@ -1,0 +1,11 @@
+T1	Parts 11 24	シフトコントロールケーブル
+T2	Parts 107 120	シフトコントロールケーブル
+T7	Parts 102 105	レバー
+T3	Parts 0 10	ギアセレクターレバー
+R1	Contact Arg1:T3 Arg2:T1	
+R2	Coreference Arg1:T3 Arg2:T7	
+R3	Coreference Arg1:T1 Arg2:T2	
+T4	Parts 41 44	シフト
+R4	Connect Arg1:T1 Arg2:T4	
+T5	Parts 124 127	シフト
+R5	Connect Arg1:T4 Arg2:T5	

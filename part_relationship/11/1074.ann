@@ -1,0 +1,27 @@
+T16	Parts 71 75	ブッシュ
+T17	Parts 106 110	ブッシュ
+T18	Parts 137 140	ロッド
+T19	Parts 148 152	窓ガラス
+T20	Parts 160 163	ロッド
+T21	Parts 164 167	ガラス
+T22	Parts 0 6	後部左右ドア
+T26	Parts 172 174	ドア
+T1	Parts 39 41	ドア
+T2	Parts 55 63	ドア外側ハンドル
+T3	Parts 115 123	ドア外側ハンドル
+T4	Parts 124 129	ドアロック
+R1	Coreference Arg1:T22 Arg2:T1	
+R2	Coreference Arg1:T16 Arg2:T17	
+R3	Coreference Arg1:T18 Arg2:T20	
+R4	Coreference Arg1:T19 Arg2:T21	
+R5	Coreference Arg1:T2 Arg2:T3	
+R6	Part-Whole Arg1:T2 Arg2:T1	
+R7	Contact Arg1:T16 Arg2:T2	
+R8	Connect Arg1:T4 Arg2:T3	
+R9	Contact Arg1:T3 Arg2:T18	
+R10	Part-Whole Arg1:T4 Arg2:T18	
+R11	Contact Arg1:T19 Arg2:T26	
+R12	Coreference Arg1:T1 Arg2:T26	
+R13	Part-Whole Arg1:T16 Arg2:T1	
+R14	Part-Whole Arg1:T4 Arg2:T1	
+R15	Part-Whole Arg1:T21 Arg2:T26	

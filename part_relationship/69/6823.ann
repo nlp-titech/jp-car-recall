@@ -1,0 +1,11 @@
+T2	Parts 28 36	バタフライバルブ
+T3	Parts 39 45	バルブケース
+T4	Parts 22 27	吸気絞り弁
+T5	Parts 58 61	バルブ
+T6	Parts 0 17	アイドリングストップ装置付き原動機
+T7	Parts 75 78	原動機
+R1	Coreference Arg1:T6 Arg2:T7	
+R3	Coreference Arg1:T2 Arg2:T5	
+R4	Part-Whole Arg1:T4 Arg2:T6	
+R5	Part-Whole Arg1:T2 Arg2:T4	
+R6	Part-Whole Arg1:T3 Arg2:T6	

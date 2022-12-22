@@ -1,0 +1,17 @@
+T1	Parts 0 4	エンジン
+T2	Parts 5 10	燃料ポンプ
+T3	Parts 17 29	チェックバルブ（逆止弁）
+T5	Parts 34 39	燃料パイプ
+T6	Parts 64 69	燃料ポンプ
+T7	Parts 99 106	チェックバルブ
+T8	Parts 112 114	燃料
+R1	Coreference Arg1:T7 Arg2:T3	
+R4	Part-Whole Arg1:T3 Arg2:T2	
+R7	Contact Arg1:T6 Arg2:T8	
+#1	AnnotatorNotes T2	燃料噴射ポンプのこと
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R5	Coreference Arg1:T2 Arg2:T6	
+R2	Contact Arg1:T3 Arg2:T5	
+R8	Contact Arg1:T5 Arg2:T8	
+R6	Contact Arg1:T8 Arg2:T7	
+R9	Contact Arg1:T5 Arg2:T2	

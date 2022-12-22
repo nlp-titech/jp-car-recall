@@ -1,0 +1,14 @@
+T1	Parts 6 16	下側ハンドルホルダー
+T2	Parts 21 28	スタッドボルト
+T3	Parts 140 147	スタッドボルト
+T4	Parts 155 162	スタッドボルト
+T5	Parts 0 5	かじ取装置
+T6	Parts 166 170	ハンドル
+T7	Parts 56 60	ホルダー
+R1	Coreference Arg1:T3 Arg2:T2	
+R2	Coreference Arg1:T4 Arg2:T3	
+R3	Part-Whole Arg1:T6 Arg2:T5	
+R4	Coreference Arg1:T7 Arg2:T1	
+R5	Contact Arg1:T2 Arg2:T1	
+R6	Part-Whole Arg1:T1 Arg2:T5	
+R7	Contact Arg1:T1 Arg2:T6	

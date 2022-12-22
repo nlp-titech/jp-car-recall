@@ -1,0 +1,9 @@
+T1	Parts 16 21	ゴムホース
+T2	Parts 53 58	ゴムホース
+T3	Parts 0 3	原動機
+T4	Parts 65 68	冷却水
+T5	Parts 4 8	冷却装置
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Contact Arg1:T2 Arg2:T4	
+R3	Contact Arg1:T5 Arg2:T1	
+R4	Connect Arg1:T3 Arg2:T5	

@@ -1,0 +1,17 @@
+T1	Parts 34 50	オートマチックトランスミッション
+T2	Parts 14 21	バッテリー配線
+T3	Parts 0 4	電気装置
+T4	Parts 66 68	車体
+T5	Parts 63 65	配線
+T6	Parts 84 86	配線
+T7	Parts 100 102	配線
+T8	Parts 107 109	配線
+R1	Part-Whole Arg1:T2 Arg2:T3	
+R2	Part-Whole Arg1:T1 Arg2:T4	
+R3	Coreference Arg1:T2 Arg2:T5	
+R5	Part-Whole Arg1:T3 Arg2:T4	
+T9	Parts 87 89	被覆
+R8	Part-Whole Arg1:T9 Arg2:T6	
+R4	Coreference Arg1:T5 Arg2:T6	
+R6	Coreference Arg1:T6 Arg2:T7	
+R7	Part-Whole Arg1:T8 Arg2:T3	

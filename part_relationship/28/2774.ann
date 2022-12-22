@@ -1,0 +1,14 @@
+T12	Parts 101 105	クラッチ
+T13	Parts 18 30	ダイヤフラム固定リベット
+T14	Parts 60 64	リベット
+T15	Parts 79 83	リベット
+T1	Parts 0 4	クラッチ
+T2	Parts 5 17	プレッシャプレートアッシ
+R1	Coreference Arg1:T14 Arg2:T13	
+R2	Coreference Arg1:T15 Arg2:T14	
+T3	Parts 84 90	ダイヤフラム
+R3	Coreference Arg1:T12 Arg2:T1	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T13 Arg2:T2	
+R6	Contact Arg1:T15 Arg2:T3	
+R7	Part-Whole Arg1:T3 Arg2:T1	

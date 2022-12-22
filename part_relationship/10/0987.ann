@@ -1,0 +1,15 @@
+T18	Parts 68 72	クランプ
+T19	Parts 27 31	クランプ
+T20	Parts 73 76	ボルト
+T1	Parts 10 13	排気管
+R1	Coreference Arg1:T18 Arg2:T19	
+T4	Parts 81 84	排気管
+R3	Coreference Arg1:T4 Arg2:T1	
+T6	Parts 0 5	高所作業車
+R4	Part-Whole Arg1:T1 Arg2:T6	
+R6	Contact Arg1:T19 Arg2:T1	
+R7	Part-Whole Arg1:T20 Arg2:T18	
+T2	Parts 98 107	木製ジャッキベース
+T3	Parts 119 126	ジャッキベース
+R2	Coreference Arg1:T2 Arg2:T3	
+R5	Part-Whole Arg1:T2 Arg2:T6	

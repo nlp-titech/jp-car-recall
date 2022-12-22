@@ -1,0 +1,15 @@
+T1	Parts 36 45	ショックアブソーバ
+T2	Parts 50 55	取付ナット
+T3	Parts 31 34	リンク
+T4	Parts 87 93	ロア・リンク
+T5	Parts 0 3	後車軸
+T6	Parts 20 23	後車軸
+T7	Parts 46 48	車軸
+R1	Coreference Arg1:T5 Arg2:T6	
+R2	Coreference Arg1:T6 Arg2:T7	
+R3	Contact Arg1:T6 Arg2:T3	
+R4	Contact Arg1:T1 Arg2:T2	
+R5	Contact Arg1:T7 Arg2:T2	
+R6	Connect Arg1:T1 Arg2:T7	
+R7	Coreference Arg1:T3 Arg2:T4	
+R8	Contact Arg1:T3 Arg2:T2	

@@ -1,0 +1,16 @@
+T14	Parts 29 38	ブレーキリンク機構
+T15	Parts 39 42	軸受け
+T16	Parts 54 57	軸受け
+T17	Parts 91 94	軸受け
+T18	Parts 96 101	締結ボルト
+T19	Parts 114 117	ボルト
+T1	Parts 0 24	手動運転補助装置（ホンダテックマチック）装着車両
+R1	Coreference Arg1:T16 Arg2:T15	
+R2	Coreference Arg1:T17 Arg2:T16	
+R3	Coreference Arg1:T19 Arg2:T18	
+T3	Parts 122 126	ブレーキ
+R6	Part-Whole Arg1:T15 Arg2:T14	
+R7	Part-Whole Arg1:T18 Arg2:T17	
+R8	Connect Arg1:T14 Arg2:T3	
+R4	Part-Whole Arg1:T14 Arg2:T1	
+R5	Part-Whole Arg1:T3 Arg2:T1	

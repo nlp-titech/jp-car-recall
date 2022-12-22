@@ -1,0 +1,13 @@
+T1	Parts 90 94	スピーカ
+T2	Parts 75 80	コンデンサ
+T3	Parts 39 44	コンデンサ
+T4	Parts 24 26	基盤
+T5	Parts 5 10	オーディオ
+T6	Parts 0 4	音響機器
+T7	Parts 13 17	配線基盤
+R1	Coreference Arg1:T4 Arg2:T7	
+R2	Coreference Arg1:T3 Arg2:T2	
+R3	Part-Whole Arg1:T5 Arg2:T6	
+R4	Part-Whole Arg1:T7 Arg2:T5	
+R7	Part-Whole Arg1:T1 Arg2:T6	
+R5	Part-Whole Arg1:T3 Arg2:T5	

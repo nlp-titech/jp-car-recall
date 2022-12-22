@@ -1,0 +1,11 @@
+T1	Parts 24 42	金属製燃料パイプ（供給側及び戻り側）
+T2	Parts 15 23	ゴム製燃料ホース
+T3	Parts 9 12	原動機
+T4	Parts 0 4	燃料装置
+T7	Parts 83 85	燃料
+R2	Connect Arg1:T4 Arg2:T3	
+R1	Contact Arg1:T2 Arg2:T7	
+R3	Contact Arg1:T1 Arg2:T7	
+R4	Part-Whole Arg1:T2 Arg2:T4	
+R5	Part-Whole Arg1:T1 Arg2:T4	
+R8	Contact Arg1:T2 Arg2:T1	

@@ -1,0 +1,22 @@
+T1	Parts 6 14	スタータスイッチ
+T2	Parts 56 64	スタータスイッチ
+T3	Parts 76 83	サイドスタンド
+T4	Parts 96 103	サイドスタンド
+T5	Parts 145 152	サイドスタンド
+T6	Parts 173 180	サイドスタンド
+T7	Parts 46 50	エンジン
+T8	Parts 119 123	エンジン
+T9	Parts 21 25	電気回路
+T10	Parts 33 43	運転操作確認用ランプ
+T11	Parts 0 5	教習用車両
+R1	Part-Whole Arg1:T1 Arg2:T11	
+R2	Connect Arg1:T9 Arg2:T1	
+R3	Coreference Arg1:T1 Arg2:T2	
+R4	Coreference Arg1:T3 Arg2:T4	
+R5	Coreference Arg1:T7 Arg2:T8	
+R6	Coreference Arg1:T3 Arg2:T5	
+R7	Coreference Arg1:T3 Arg2:T6	
+R8	Connect Arg1:T9 Arg2:T10	
+R9	Connect Arg1:T3 Arg2:T7	
+R10	Part-Whole Arg1:T7 Arg2:T11	
+R11	Part-Whole Arg1:T3 Arg2:T11	

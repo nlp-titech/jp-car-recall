@@ -1,0 +1,9 @@
+T1	Parts 6 24	パワーステアリング・ポンプ用プーリー
+T2	Parts 88 97	パワーステアリング
+T3	Parts 58 63	取付ボルト
+T5	Parts 53 57	プーリー
+T7	Parts 0 5	舵取り装置
+R1	Coreference Arg1:T1 Arg2:T5	
+R2	Contact Arg1:T5 Arg2:T3	
+R3	Part-Whole Arg1:T1 Arg2:T2	
+R4	Part-Whole Arg1:T2 Arg2:T7	

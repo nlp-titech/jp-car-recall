@@ -1,0 +1,13 @@
+T14	Parts 0 5	無段変速機
+T15	Parts 6 11	金属ベルト
+T16	Parts 18 26	駒（エレメント）
+T17	Parts 49 50	駒
+T18	Parts 91 96	金属ベルト
+T19	Parts 109 114	金属ベルト
+R1	Coreference Arg1:T17 Arg2:T16	
+T3	Parts 97 101	プーリー
+R3	Coreference Arg1:T19 Arg2:T18	
+R4	Coreference Arg1:T18 Arg2:T15	
+R5	Part-Whole Arg1:T15 Arg2:T14	
+R6	Part-Whole Arg1:T16 Arg2:T15	
+R8	Part-Whole Arg1:T3 Arg2:T14	

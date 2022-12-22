@@ -1,0 +1,11 @@
+T12	Parts 28 33	ロアアーム
+T13	Parts 46 51	ロアアーム
+T14	Parts 52 60	ボールジョイント
+T15	Parts 130 138	ボールジョイント
+T16	Parts 145 152	ボールスタッド
+T1	Parts 1 7	前輪緩衝装置
+R1	Coreference Arg1:T12 Arg2:T13	
+R2	Coreference Arg1:T14 Arg2:T15	
+R3	Part-Whole Arg1:T12 Arg2:T1	
+R4	Part-Whole Arg1:T14 Arg2:T13	
+R5	Contact Arg1:T16 Arg2:T15	

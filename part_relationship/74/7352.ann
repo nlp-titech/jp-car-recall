@@ -1,0 +1,12 @@
+T1	Parts 0 8	ステアリングギヤ
+T2	Parts 13 16	ブーツ
+T3	Parts 30 40	エアコンドレンホース
+T4	Parts 49 53	エアコン
+T5	Parts 67 69	ギヤ
+T6	Parts 103 105	ギヤ
+T7	Parts 126 131	ベアリング
+R1	Part-Whole Arg1:T1 Arg2:T2	
+R2	Contact Arg1:T3 Arg2:T4	
+R3	Coreference Arg1:T1 Arg2:T5	
+R4	Coreference Arg1:T5 Arg2:T6	
+R5	Part-Whole Arg1:T7 Arg2:T6	

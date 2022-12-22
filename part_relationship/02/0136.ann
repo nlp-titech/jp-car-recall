@@ -1,0 +1,15 @@
+T9	Parts 7 17	前後軸駆動力分配装置
+T10	Parts 24 28	分配装置
+T11	Parts 29 35	カップリング
+T13	Parts 76 79	ナット
+T14	Parts 89 97	プロペラシャフト
+T15	Parts 0 6	動力伝達装置
+R1	Coreference Arg1:T9 Arg2:T10	
+R2	Part-Whole Arg1:T9 Arg2:T15	
+R3	Part-Whole Arg1:T11 Arg2:T10	
+R6	Contact Arg1:T13 Arg2:T14	
+T1	Parts 36 39	ナット
+R4	Coreference Arg1:T1 Arg2:T13	
+R5	Connect Arg1:T11 Arg2:T1	
+R7	Contact Arg1:T14 Arg2:T10	
+R8	Part-Whole Arg1:T14 Arg2:T15	

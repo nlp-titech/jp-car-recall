@@ -1,0 +1,5 @@
+T1	Parts 0 8	エアコンユニット
+T3	Parts 13 19	補助ヒーター
+T9	Parts 36 41	コネクター
+R1	Connect Arg1:T3 Arg2:T1	
+R2	Part-Whole Arg1:T9 Arg2:T3	

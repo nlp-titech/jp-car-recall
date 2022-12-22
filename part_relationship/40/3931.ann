@@ -1,0 +1,5 @@
+T1	Parts 0 9	フロントストラット
+T2	Parts 52 58	取付けナット
+T3	Parts 14 19	ストラット
+R1	Contact Arg1:T2 Arg2:T3	
+R2	Coreference Arg1:T3 Arg2:T1	

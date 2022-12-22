@@ -1,0 +1,21 @@
+T12	Parts 73 82	駐車ブレーキワイヤ
+T14	Parts 122 131	駐車ブレーキワイヤ
+T15	Parts 139 148	駐車ブレーキワイヤ
+T16	Parts 159 168	駐車ブレーキワイヤ
+T17	Parts 177 183	駐車ブレーキ
+T1	Parts 0 14	センタブレーキ式駐車ブレーキ
+T2	Parts 17 29	脱着装置付コンテナ専用車
+R1	Coreference Arg1:T12 Arg2:T14	
+R3	Coreference Arg1:T14 Arg2:T15	
+R4	Coreference Arg1:T15 Arg2:T16	
+R5	Coreference Arg1:T1 Arg2:T17	
+T4	Parts 57 72	固縛部品（フレーム潰れ防止材）
+R7	Part-Whole Arg1:T12 Arg2:T1	
+R8	Part-Whole Arg1:T1 Arg2:T2	
+R2	Part-Whole Arg1:T4 Arg2:T2	
+T3	Parts 39 45	車体フレーム
+T5	Parts 34 38	脱着装置
+R6	Contact Arg1:T3 Arg2:T5	
+R9	Part-Whole Arg1:T3 Arg2:T2	
+T6	Parts 117 121	固縛部品
+R10	Coreference Arg1:T6 Arg2:T4	

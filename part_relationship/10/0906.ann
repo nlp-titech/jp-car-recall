@@ -1,0 +1,8 @@
+T2	Parts 23 26	潤滑剤
+T3	Parts 50 53	潤滑剤
+T5	Parts 84 87	制動灯
+R2	Coreference Arg1:T3 Arg2:T2	
+T7	Parts 9 11	車両
+T1	Parts 0 7	制動灯スイッチ
+R1	Part-Whole Arg1:T1 Arg2:T7	
+R4	Connect Arg1:T5 Arg2:T1	

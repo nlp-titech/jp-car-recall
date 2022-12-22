@@ -1,0 +1,14 @@
+T2	Parts 11 15	制動装置
+T3	Parts 20 25	空気圧縮機
+T4	Parts 33 39	圧縮圧制御弁
+T5	Parts 57 60	制御弁
+T7	Parts 85 89	圧縮空気
+T8	Parts 96 99	警告灯
+R3	Coreference Arg1:T5 Arg2:T4	
+R5	Part-Whole Arg1:T3 Arg2:T2	
+R6	Part-Whole Arg1:T4 Arg2:T3	
+R8	Part-Whole Arg1:T8 Arg2:T2	
+T1	Parts 0 4	圧縮空気
+R1	Contact Arg1:T1 Arg2:T2	
+R2	Contact Arg1:T1 Arg2:T3	
+R4	Coreference Arg1:T1 Arg2:T7	

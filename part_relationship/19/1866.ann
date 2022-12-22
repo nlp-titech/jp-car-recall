@@ -1,0 +1,13 @@
+T1	Parts 7 21	スイング扉開閉用エアシリンダ
+T4	Parts 32 40	ナイロンチューブ
+T5	Parts 52 56	チューブ
+T7	Parts 77 78	扉
+T8	Parts 95 96	扉
+R1	Coreference Arg1:T8 Arg2:T7	
+R4	Coreference Arg1:T5 Arg2:T4	
+T9	Parts 0 6	大型観光バス
+R2	Part-Whole Arg1:T1 Arg2:T9	
+R5	Part-Whole Arg1:T4 Arg2:T9	
+R6	Part-Whole Arg1:T7 Arg2:T9	
+R8	Contact Arg1:T1 Arg2:T4	
+R9	Contact Arg1:T1 Arg2:T7	

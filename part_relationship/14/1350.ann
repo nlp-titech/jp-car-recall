@@ -1,0 +1,20 @@
+T12	Parts 47 51	ケーブル
+T13	Parts 32 34	金具
+T15	Parts 111 115	ケーブル
+T17	Parts 118 121	ワイヤ
+T2	Parts 5 7	車両
+T3	Parts 11 27	トランスミッション変速用ケーブル
+T4	Parts 52 67	パワーステアリングギヤボックス
+T5	Parts 191 196	車軸懸架車
+T6	Parts 186 188	車両
+T7	Parts 221 225	対象車両
+R1	Coreference Arg1:T2 Arg2:T5	
+R2	Coreference Arg1:T3 Arg2:T12	
+R3	Coreference Arg1:T12 Arg2:T15	
+R4	Coreference Arg1:T6 Arg2:T7	
+R5	Contact Arg1:T13 Arg2:T3	
+R6	Part-Whole Arg1:T17 Arg2:T15	
+R7	Part-Whole Arg1:T5 Arg2:T6	
+R8	Part-Whole Arg1:T3 Arg2:T2	
+R9	Part-Whole Arg1:T13 Arg2:T2	
+R10	Part-Whole Arg1:T4 Arg2:T2	

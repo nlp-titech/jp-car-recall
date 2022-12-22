@@ -1,0 +1,14 @@
+T12	Parts 73 78	ライニング
+T13	Parts 29 36	ブレーキシュー
+T14	Parts 9 16	ブレーキシュー
+T15	Parts 37 42	ライニング
+T1	Parts 0 4	制動装置
+T2	Parts 139 142	対象車
+R1	Coreference Arg1:T14 Arg2:T13	
+R2	Part-Whole Arg1:T14 Arg2:T1	
+R3	Contact Arg1:T15 Arg2:T13	
+R4	Coreference Arg1:T15 Arg2:T12	
+R6	Part-Whole Arg1:T15 Arg2:T1	
+T3	Parts 61 65	ブレーキ
+R7	Coreference Arg1:T1 Arg2:T3	
+R5	Part-Whole Arg1:T3 Arg2:T2	

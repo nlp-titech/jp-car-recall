@@ -1,0 +1,7 @@
+T2	Parts 95 99	エンジン
+T3	Parts 79 87	アクセルグリップ
+T4	Parts 65 69	ケーブル
+T5	Parts 6 11	防水ブーツ
+R1	Contact Arg1:T5 Arg2:T4	
+R2	Contact Arg1:T4 Arg2:T3	
+R3	Connect Arg1:T3 Arg2:T2	

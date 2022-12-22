@@ -1,0 +1,16 @@
+T1	Parts 0 17	重ね板ばね式緩衝装置付大型トラック
+T2	Parts 18 22	Ｖロッド
+T3	Parts 57 61	フランジ
+T4	Parts 39 56	センタージョイント部ボールスリーブ
+T5	Parts 106 110	フランジ
+T6	Parts 115 118	ボルト
+T7	Parts 127 136	センタージョイント
+T8	Parts 137 142	ハウジング
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R4	Contact Arg1:T4 Arg2:T3	
+R5	Coreference Arg1:T3 Arg2:T5	
+R6	Contact Arg1:T5 Arg2:T6	
+R2	Part-Whole Arg1:T7 Arg2:T2	
+R3	Part-Whole Arg1:T4 Arg2:T7	
+R7	Part-Whole Arg1:T3 Arg2:T7	
+R8	Part-Whole Arg1:T8 Arg2:T7	

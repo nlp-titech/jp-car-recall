@@ -1,0 +1,17 @@
+T1	Parts 5 23	カムシャフト駆動用タイミングチェーン
+T2	Parts 51 60	タイミングチェーン
+T3	Parts 81 90	タイミングチェーン
+T6	Parts 104 119	カムシャフト駆動用スプロケット
+T7	Parts 31 37	テンショナー
+T8	Parts 0 4	エンジン
+T9	Parts 127 131	エンジン
+T10	Parts 99 103	チェーン
+R1	Coreference Arg1:T9 Arg2:T8	
+R2	Coreference Arg1:T10 Arg2:T3	
+R3	Coreference Arg1:T3 Arg2:T2	
+R4	Coreference Arg1:T2 Arg2:T1	
+R5	Contact Arg1:T7 Arg2:T1	
+R6	Contact Arg1:T6 Arg2:T10	
+R7	Part-Whole Arg1:T1 Arg2:T8	
+R8	Part-Whole Arg1:T7 Arg2:T8	
+R9	Part-Whole Arg1:T6 Arg2:T8	

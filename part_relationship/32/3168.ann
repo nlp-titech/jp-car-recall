@@ -1,0 +1,9 @@
+T8	Parts 126 130	エンジン
+T9	Parts 0 8	エンジン始動装置
+T10	Parts 9 12	リレー
+T11	Parts 67 70	リレー
+R1	Coreference Arg1:T10 Arg2:T11	
+T1	Parts 19 23	エンジン
+R2	Part-Whole Arg1:T10 Arg2:T9	
+R4	Coreference Arg1:T1 Arg2:T8	
+R3	Connect Arg1:T9 Arg2:T1	

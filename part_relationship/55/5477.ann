@@ -1,0 +1,10 @@
+T1	Parts 72 76	トレーラ
+T6	Parts 60 62	ピン
+T3	Parts 0 9	カプラ（連結装置）
+T2	Parts 10 18	リリースハンドル
+R1	Part-Whole Arg1:T2 Arg2:T3	
+T4	Parts 20 22	ピン
+R3	Coreference Arg1:T4 Arg2:T6	
+R4	Contact Arg1:T3 Arg2:T1	
+R2	Contact Arg1:T2 Arg2:T4	
+R5	Part-Whole Arg1:T4 Arg2:T3	

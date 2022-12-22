@@ -1,0 +1,9 @@
+T1	Parts 7 19	ステアリングギヤボックス
+T2	Parts 0 6	小型トラック
+T3	Parts 61 65	ハンドル
+T4	Parts 87 90	タイヤ
+R1	Part-Whole Arg1:T1 Arg2:T2	
+R2	Connect Arg1:T3 Arg2:T1	
+R4	Part-Whole Arg1:T3 Arg2:T2	
+R5	Part-Whole Arg1:T4 Arg2:T2	
+R3	Connect Arg1:T1 Arg2:T4	

@@ -1,0 +1,18 @@
+T1	Parts 40 45	側方照射灯
+T2	Parts 63 68	側方照射灯
+T3	Parts 89 94	側方照射灯
+T4	Parts 12 16	ハンドル
+T5	Parts 0 3	運転席
+T7	Parts 46 50	電気配線
+T8	Parts 5 8	助手席
+T10	Parts 30 35	道路作業車
+R3	Connect Arg1:T7 Arg2:T1	
+R4	Coreference Arg1:T2 Arg2:T1	
+R6	Coreference Arg1:T3 Arg2:T2	
+R7	Part-Whole Arg1:T1 Arg2:T10	
+R8	Part-Whole Arg1:T4 Arg2:T10	
+R9	Part-Whole Arg1:T8 Arg2:T10	
+R10	Part-Whole Arg1:T5 Arg2:T10	
+T6	Parts 69 73	電気回路
+R5	Part-Whole Arg1:T6 Arg2:T2	
+R11	Part-Whole Arg1:T7 Arg2:T6	

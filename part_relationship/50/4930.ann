@@ -1,0 +1,20 @@
+T1	Parts 11 20	ステアリングアーム
+T2	Parts 0 6	かじ取り装置
+T3	Parts 21 27	取付けボルト
+T4	Parts 85 91	取付けボルト
+T5	Parts 44 48	ハンドル
+T6	Parts 29 33	ワッシャ
+T7	Parts 65 69	ワッシャ
+T8	Parts 102 105	アーム
+T9	Parts 60 63	ボルト
+T10	Parts 125 128	ボルト
+R1	Coreference Arg1:T9 Arg2:T3	
+R2	Coreference Arg1:T4 Arg2:T9	
+R3	Coreference Arg1:T7 Arg2:T6	
+R4	Coreference Arg1:T8 Arg2:T1	
+R5	Coreference Arg1:T10 Arg2:T4	
+R6	Contact Arg1:T6 Arg2:T3	
+R7	Contact Arg1:T6 Arg2:T1	
+R8	Contact Arg1:T3 Arg2:T1	
+R9	Part-Whole Arg1:T1 Arg2:T2	
+R10	Connect Arg1:T5 Arg2:T2	

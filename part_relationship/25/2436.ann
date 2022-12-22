@@ -1,0 +1,17 @@
+T8	Parts 18 24	エキスパンダ
+T9	Parts 90 97	ブレーキシュー
+T10	Parts 25 34	ウェッジ部タペット
+T11	Parts 46 50	タペット
+T12	Parts 51 54	ローラ
+T13	Parts 76 79	ローラ
+T1	Parts 0 5	主制動装置
+T2	Parts 6 13	ブレーキシュー
+R1	Coreference Arg1:T13 Arg2:T12	
+R2	Coreference Arg1:T11 Arg2:T10	
+R3	Coreference Arg1:T9 Arg2:T2	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T8 Arg2:T1	
+R6	Part-Whole Arg1:T10 Arg2:T8	
+R8	Contact Arg1:T2 Arg2:T8	
+R7	Part-Whole Arg1:T12 Arg2:T8	
+R9	Contact Arg1:T11 Arg2:T12	

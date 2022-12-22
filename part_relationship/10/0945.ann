@@ -1,0 +1,29 @@
+T21	Parts 84 86	弁座
+T1	Parts 0 8	ガソリン燃料装置
+T2	Parts 9 20	圧縮天然ガス（ＣＮＧ）
+T3	Parts 43 46	ＣＮＧ
+T4	Parts 58 66	低圧レギュレータ
+R3	Coreference Arg1:T3 Arg2:T2	
+T6	Parts 176 179	ＣＮＧ
+T7	Parts 150 154	エンジン
+T8	Parts 126 129	ＣＮＧ
+T9	Parts 188 192	エンジン
+T10	Parts 228 236	ブローバイホース
+T11	Parts 240 247	ブローバイガス
+T12	Parts 141 143	燃料
+R4	Coreference Arg1:T8 Arg2:T3	
+R5	Coreference Arg1:T6 Arg2:T8	
+R6	Coreference Arg1:T9 Arg2:T7	
+T13	Parts 180 183	吸気管
+T14	Parts 36 38	車両
+R7	Coreference Arg1:T8 Arg2:T12	
+R9	Part-Whole Arg1:T1 Arg2:T14	
+R10	Contact Arg1:T3 Arg2:T4	
+R14	Part-Whole Arg1:T21 Arg2:T4	
+R15	Part-Whole Arg1:T7 Arg2:T14	
+R17	Connect Arg1:T1 Arg2:T7	
+R18	Part-Whole Arg1:T13 Arg2:T9	
+R20	Contact Arg1:T10 Arg2:T11	
+R1	Part-Whole Arg1:T4 Arg2:T14	
+R2	Part-Whole Arg1:T10 Arg2:T14	
+R8	Contact Arg1:T9 Arg2:T10	

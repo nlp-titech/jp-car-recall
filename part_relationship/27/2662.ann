@@ -1,0 +1,11 @@
+T1	Parts 0 11	フロント・ホイールハブ
+T3	Parts 21 26	ハブボルト
+T4	Parts 38 44	ホイールハブ
+T5	Parts 45 50	ハブボルト
+R1	Coreference Arg1:T5 Arg2:T3	
+T6	Parts 51 59	ディスクプレート
+T7	Parts 87 94	ホイールナット
+T8	Parts 98 103	ハブボルト
+R2	Coreference Arg1:T8 Arg2:T5	
+R3	Coreference Arg1:T4 Arg2:T1	
+R7	Contact Arg1:T4 Arg2:T7	

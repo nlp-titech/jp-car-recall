@@ -1,0 +1,12 @@
+T1	Parts 0 6	大型トラック
+T2	Parts 11 21	電熱線付き尿素水配管
+T3	Parts 22 27	冷却水配管
+T4	Parts 48 50	配管
+T7	Parts 73 85	エンジン警告灯（ＭＩＬ）
+T8	Parts 103 106	尿素水
+R2	Oneway-Coreference Arg1:T2 Arg2:T4	
+R3	Oneway-Coreference Arg1:T3 Arg2:T4	
+R5	Part-Whole Arg1:T4 Arg2:T1	
+R6	Part-Whole Arg1:T7 Arg2:T1	
+R7	Connect Arg1:T8 Arg2:T2	
+R8	Part-Whole Arg1:T8 Arg2:T1	

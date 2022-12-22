@@ -1,0 +1,13 @@
+T1	Parts 0 6	静油圧変速機
+T2	Parts 7 12	走行モータ
+T3	Parts 33 40	アクセルペダル
+T4	Parts 56 63	アクセルペダル
+R1	Coreference Arg1:T4 Arg2:T3	
+T5	Parts 75 80	走行モータ
+R2	Coreference Arg1:T5 Arg2:T2	
+T8	Parts 106 109	モータ
+R4	Coreference Arg1:T8 Arg2:T5	
+T9	Parts 148 153	走行モータ
+R5	Coreference Arg1:T9 Arg2:T8	
+R6	Part-Whole Arg1:T2 Arg2:T1	
+R3	Contact Arg1:T3 Arg2:T1	

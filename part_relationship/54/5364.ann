@@ -1,0 +1,12 @@
+T2	Parts 0 7	手動変速機付車
+T3	Parts 12 22	クラッチオイルホース
+T5	Parts 109 112	オイル
+T7	Parts 122 126	クラッチ
+T1	Parts 23 35	クラッチペダルシリンダー
+R5	Contact Arg1:T5 Arg2:T3	
+R6	Connect Arg1:T1 Arg2:T7	
+R7	Part-Whole Arg1:T7 Arg2:T2	
+R1	Contact Arg1:T1 Arg2:T3	
+R3	Part-Whole Arg1:T3 Arg2:T2	
+R4	Part-Whole Arg1:T1 Arg2:T2	
+R2	Contact Arg1:T1 Arg2:T5	

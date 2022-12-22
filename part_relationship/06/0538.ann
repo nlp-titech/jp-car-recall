@@ -1,0 +1,14 @@
+T6	Parts 32 35	ヨーク
+T7	Parts 80 83	ヨーク
+T1	Parts 0 6	かじ取り装置
+T2	Parts 11 20	ステアリングコラム
+T3	Parts 21 27	ギヤボックス
+R1	Coreference Arg1:T7 Arg2:T6	
+T4	Parts 88 92	ハンドル
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T3 Arg2:T1	
+R4	Connect Arg1:T2 Arg2:T3	
+R5	Contact Arg1:T2 Arg2:T6	
+R6	Contact Arg1:T3 Arg2:T6	
+R7	Connect Arg1:T1 Arg2:T4	
+R8	Part-Whole Arg1:T6 Arg2:T1	

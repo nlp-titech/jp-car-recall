@@ -1,0 +1,8 @@
+T1	Parts 20 35	エアバックコントロールユニット
+T2	Parts 0 15	サイドカーテンエアバッグ装着車
+T3	Parts 98 110	サイドカーテンエアバッグ
+T4	Parts 71 76	エアバッグ
+R4	Oneway-Coreference Arg1:T4 Arg2:T3	
+R3	Connect Arg1:T1 Arg2:T4	
+R5	Part-Whole Arg1:T4 Arg2:T2	
+R2	Part-Whole Arg1:T1 Arg2:T2	

@@ -1,0 +1,8 @@
+T2	Parts 15 33	空燃比（空気と燃料の比率）センサ回路
+T3	Parts 37 47	エンジンコンピュータ
+T4	Parts 57 60	センサ
+T5	Parts 61 65	内部配線
+T7	Parts 115 122	触媒コンバータ
+R1	Connect Arg1:T2 Arg2:T3	
+R3	Part-Whole Arg1:T5 Arg2:T2	
+R2	Part-Whole Arg1:T2 Arg2:T4	

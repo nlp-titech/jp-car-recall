@@ -1,0 +1,3 @@
+T3	Parts 77 80	警告灯
+T2	Parts 15 25	バックアップバッテリ
+R1	Connect Arg1:T2 Arg2:T3	

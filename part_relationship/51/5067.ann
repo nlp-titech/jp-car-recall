@@ -1,0 +1,9 @@
+T2	Parts 1 18	副変速機（トランスファ）ハウジング
+T3	Parts 33 38	ハウジング
+T4	Parts 63 68	油圧ポンプ
+T6	Parts 89 93	副変速機
+T7	Parts 108 112	副変速機
+R1	Coreference Arg1:T3 Arg2:T2	
+R2	Part-Whole Arg1:T4 Arg2:T3	
+R3	Coreference Arg1:T7 Arg2:T6	
+R4	Part-Whole Arg1:T6 Arg2:T3	

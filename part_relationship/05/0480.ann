@@ -1,0 +1,18 @@
+T10	Parts 14 26	インフレータ（膨張装置）
+T11	Parts 28 41	ディフューザー（放散装置）
+T12	Parts 42 61	ガスジェネレータボディー（ガス発生器）
+T13	Parts 103 110	ディフューザー
+T14	Parts 119 122	バッグ
+T15	Parts 131 136	エアバッグ
+T1	Parts 0 9	助手席用エアバッグ
+R2	Coreference Arg1:T11 Arg2:T13	
+T4	Parts 114 118	膨張ガス
+R3	Coreference Arg1:T14 Arg2:T5	
+R4	Coreference Arg1:T15 Arg2:T14	
+T5	Parts 81 86	エアバッグ
+R5	Coreference Arg1:T5 Arg2:T1	
+R6	Part-Whole Arg1:T10 Arg2:T1	
+R7	Part-Whole Arg1:T11 Arg2:T10	
+R8	Part-Whole Arg1:T12 Arg2:T10	
+R9	Contact Arg1:T11 Arg2:T12	
+R12	Contact Arg1:T4 Arg2:T12	

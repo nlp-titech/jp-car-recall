@@ -1,0 +1,12 @@
+T1	Parts 128 134	駐車ブレーキ
+T2	Parts 0 5	自動変速機
+T3	Parts 102 106	エンジン
+T4	Parts 6 16	コントロールシャフト
+T5	Parts 70 74	シャフト
+T6	Parts 143 145	車両
+R1	Part-Whole Arg1:T4 Arg2:T2	
+R2	Coreference Arg1:T4 Arg2:T5	
+R3	Connect Arg1:T2 Arg2:T3	
+R4	Part-Whole Arg1:T1 Arg2:T6	
+R5	Part-Whole Arg1:T2 Arg2:T6	
+R6	Part-Whole Arg1:T3 Arg2:T6	

@@ -1,0 +1,10 @@
+T1	Parts 0 7	空気ばね仕様車
+T2	Parts 12 24	後軸スタビライザ取付金具
+T3	Parts 41 45	取付金具
+T4	Parts 52 56	フレーム
+T5	Parts 112 114	金具
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Coreference Arg1:T3 Arg2:T5	
+R3	Contact Arg1:T3 Arg2:T4	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T4 Arg2:T1	

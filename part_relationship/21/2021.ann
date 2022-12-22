@@ -1,0 +1,10 @@
+T10	Parts 99 102	ＡＢＳ
+T11	Parts 32 35	センサ
+T1	Parts 0 19	アンチロックブレーキシステム（ＡＢＳ）
+T2	Parts 20 22	前輪
+T3	Parts 87 89	車輪
+R1	Coreference Arg1:T10 Arg2:T1	
+R2	Coreference Arg1:T3 Arg2:T2	
+R3	Connect Arg1:T11 Arg2:T2	
+R4	Part-Whole Arg1:T11 Arg2:T1	
+R5	Connect Arg1:T10 Arg2:T3	

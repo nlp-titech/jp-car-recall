@@ -1,0 +1,21 @@
+T19	Parts 69 75	スプリング室
+T20	Parts 82 87	スプリング
+T21	Parts 102 107	スプリング
+T22	Parts 27 34	ブリーザホース
+T23	Parts 62 65	ホース
+T25	Parts 138 144	駐車ブレーキ
+T26	Parts 112 118	ダイヤフラム
+T2	Parts 6 9	３軸車
+T4	Parts 10 22	スプリング式駐車制動装置
+R1	Coreference Arg1:T23 Arg2:T22	
+R3	Coreference Arg1:T21 Arg2:T20	
+T5	Parts 123 125	エア
+R6	Part-Whole Arg1:T4 Arg2:T2	
+R7	Part-Whole Arg1:T22 Arg2:T4	
+R8	Contact Arg1:T19 Arg2:T23	
+R9	Part-Whole Arg1:T20 Arg2:T19	
+R10	Contact Arg1:T26 Arg2:T19	
+R11	Contact Arg1:T5 Arg2:T26	
+R12	Coreference Arg1:T25 Arg2:T4	
+R2	Part-Whole Arg1:T19 Arg2:T4	
+R4	Part-Whole Arg1:T26 Arg2:T4	

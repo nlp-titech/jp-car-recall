@@ -1,0 +1,16 @@
+T1	Parts 9 20	ブレーキマスタシリンダ
+T2	Parts 21 34	ブレーキ液リザーバータンク
+T4	Parts 39 44	ゴムホース
+T6	Parts 88 93	ブレーキ液
+T7	Parts 0 4	制動装置
+R1	Contact Arg1:T4 Arg2:T6	
+R2	Part-Whole Arg1:T6 Arg2:T2	
+R3	Part-Whole Arg1:T1 Arg2:T7	
+R4	Part-Whole Arg1:T2 Arg2:T7	
+R7	Connect Arg1:T1 Arg2:T2	
+R5	Connect Arg1:T1 Arg2:T4	
+R6	Connect Arg1:T2 Arg2:T4	
+T3	Parts 71 77	接続コネクタ
+R8	Contact Arg1:T4 Arg2:T3	
+R9	Contact Arg1:T1 Arg2:T3	
+R10	Contact Arg1:T2 Arg2:T3	

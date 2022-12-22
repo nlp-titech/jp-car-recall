@@ -1,0 +1,23 @@
+T1	Parts 147 162	ピストン・リターン・スプリング
+T3	Parts 172 176	エンジン
+T4	Parts 6 26	ブレーキ・マスタ・シリンダ（油圧発生部）
+T8	Parts 132 145	ブレーキ・マスタ・シリンダ
+T10	Parts 1 5	制動装置
+T13	Parts 94 97	シール
+T14	Parts 104 112	リザーバ・タンク
+T15	Parts 217 225	ブレーキ・ペダル
+T16	Parts 243 251	ストップ・ランプ
+T17	Parts 35 41	樹脂製シール
+R1	Part-Whole Arg1:T4 Arg2:T10	
+R2	Part-Whole Arg1:T17 Arg2:T4	
+T2	Parts 51 55	エンジン
+R4	Coreference Arg1:T17 Arg2:T13	
+R5	Contact Arg1:T10 Arg2:T14	
+R6	Coreference Arg1:T4 Arg2:T8	
+R7	Coreference Arg1:T2 Arg2:T3	
+R8	Part-Whole Arg1:T1 Arg2:T8	
+R9	Connect Arg1:T15 Arg2:T16	
+T5	Parts 258 266	自動定速走行装置
+R10	Connect Arg1:T16 Arg2:T5	
+R11	Connect Arg1:T8 Arg2:T15	
+R12	Connect Arg1:T15 Arg2:T10	

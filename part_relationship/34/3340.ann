@@ -1,0 +1,16 @@
+T16	Parts 0 4	エンジン
+T17	Parts 24 30	樹脂製プーリ
+T18	Parts 63 66	ベルト
+T19	Parts 5 13	補機駆動用ベルト
+R1	Coreference Arg1:T19 Arg2:T18	
+T1	Parts 74 77	警告灯
+T2	Parts 87 91	バッテリ
+T3	Parts 117 129	油圧パワーステアリング車
+R2	Part-Whole Arg1:T16 Arg2:T3	
+R3	Contact Arg1:T19 Arg2:T17	
+R4	Part-Whole Arg1:T2 Arg2:T3	
+R5	Part-Whole Arg1:T19 Arg2:T16	
+R7	Part-Whole Arg1:T1 Arg2:T3	
+R8	Connect Arg1:T18 Arg2:T1	
+R9	Connect Arg1:T18 Arg2:T2	
+R6	Part-Whole Arg1:T17 Arg2:T16	

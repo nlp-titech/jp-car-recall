@@ -1,0 +1,11 @@
+T1	Parts 11 21	ステアリングシャフト
+T2	Parts 52 62	ステアリングシャフト
+T3	Parts 135 145	ステアリングシャフト
+T4	Parts 22 37	ステアリングアッパージョイント
+T5	Parts 63 78	ステアリングアッパージョイント
+T8	Parts 0 6	かじ取り機構
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Coreference Arg1:T2 Arg2:T3	
+R3	Coreference Arg1:T4 Arg2:T5	
+R4	Part-Whole Arg1:T1 Arg2:T8	
+R5	Contact Arg1:T1 Arg2:T4	

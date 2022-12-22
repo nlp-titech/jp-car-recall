@@ -1,0 +1,13 @@
+T16	Parts 124 133	トランスミッション
+T17	Parts 16 26	チェンジシフトアーム
+T18	Parts 57 67	チェンジシフトアーム
+T1	Parts 1 10	トランスミッション
+T2	Parts 44 50	シフトレバー
+R1	Coreference Arg1:T18 Arg2:T17	
+T3	Parts 82 88	シフトレバー
+R2	Coreference Arg1:T3 Arg2:T2	
+T4	Parts 116 118	ギヤ
+R3	Coreference Arg1:T16 Arg2:T1	
+R4	Part-Whole Arg1:T17 Arg2:T1	
+R5	Part-Whole Arg1:T4 Arg2:T16	
+R6	Connect Arg1:T2 Arg2:T1	

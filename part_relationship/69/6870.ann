@@ -1,0 +1,18 @@
+T1	Parts 70 74	スイッチ
+T3	Parts 14 18	福祉車両
+T5	Parts 33 36	リフト
+T6	Parts 149 152	リフト
+T9	Parts 91 93	金具
+T4	Parts 19 27	電動式昇降リフト
+R1	Part-Whole Arg1:T4 Arg2:T3	
+R2	Coreference Arg1:T4 Arg2:T5	
+T2	Parts 59 65	電動モーター
+R3	Connect Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T2 Arg2:T5	
+T7	Parts 83 87	移動金具
+T8	Parts 127 131	移動金具
+R5	Coreference Arg1:T7 Arg2:T8	
+R6	Coreference Arg1:T5 Arg2:T6	
+R7	Part-Whole Arg1:T7 Arg2:T5	
+R8	Part-Whole Arg1:T9 Arg2:T5	
+R9	Part-Whole Arg1:T1 Arg2:T5	

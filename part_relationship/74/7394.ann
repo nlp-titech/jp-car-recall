@@ -1,0 +1,9 @@
+T1	Parts 0 10	コントロールユニット
+T2	Parts 24 41	パワートレインコントロールユニット
+T3	Parts 46 53	制御プログラム
+T4	Parts 86 96	コントロールユニット
+T5	Parts 115 119	エンジン
+R1	Connect Arg1:T1 Arg2:T2	
+R2	Part-Whole Arg1:T3 Arg2:T2	
+R3	Coreference Arg1:T4 Arg2:T1	
+R5	Connect Arg1:T2 Arg2:T5	

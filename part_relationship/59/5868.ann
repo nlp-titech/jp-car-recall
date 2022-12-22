@@ -1,0 +1,8 @@
+T1	Parts 0 4	エンジン
+T3	Parts 9 22	ＡＢＳ／ＥＳＰ油圧ブロック
+T4	Parts 68 71	ＡＢＳ
+T7	Parts 39 47	油圧制御ピストン
+T2	Parts 73 76	ＥＳＰ
+R1	Part-Whole Arg1:T7 Arg2:T3	
+R2	Connect Arg1:T3 Arg2:T4	
+R3	Connect Arg1:T3 Arg2:T2	

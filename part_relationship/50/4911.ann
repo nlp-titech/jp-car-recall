@@ -1,0 +1,11 @@
+T1	Parts 13 25	インフレータ（膨張装置）
+T2	Parts 27 36	チェックバルブピン
+T3	Parts 0 8	助手席エアバッグ
+T4	Parts 54 59	エアバッグ
+T5	Parts 98 103	エアバッグ
+T7	Parts 71 74	バッグ
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T7 Arg2:T4	
+R3	Coreference Arg1:T4 Arg2:T3	
+R4	Coreference Arg1:T5 Arg2:T7	
+R6	Part-Whole Arg1:T1 Arg2:T3	

@@ -1,0 +1,8 @@
+T1	Parts 0 12	トルクコンバータ用ホース
+T2	Parts 24 28	作業装置
+T3	Parts 30 32	配管
+T4	Parts 62 65	ホース
+T5	Parts 77 88	トルクコンバータオイル
+R2	Connect Arg1:T3 Arg2:T2	
+R1	Coreference Arg1:T1 Arg2:T4	
+R3	Contact Arg1:T4 Arg2:T5	

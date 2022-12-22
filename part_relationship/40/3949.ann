@@ -1,0 +1,14 @@
+T1	Parts 12 23	インストルメントパネル
+T2	Parts 53 60	ワイヤハーネス
+T3	Parts 92 99	ワイヤハーネス
+T4	Parts 0 6	小型トラック
+T5	Parts 116 120	ワイパー
+T6	Parts 30 32	金具
+T7	Parts 100 102	金具
+R1	Contact Arg1:T6 Arg2:T1	
+R2	Coreference Arg1:T3 Arg2:T2	
+R3	Coreference Arg1:T7 Arg2:T6	
+R5	Part-Whole Arg1:T1 Arg2:T4	
+R6	Connect Arg1:T5 Arg2:T3	
+R7	Part-Whole Arg1:T5 Arg2:T4	
+R8	Part-Whole Arg1:T2 Arg2:T4	

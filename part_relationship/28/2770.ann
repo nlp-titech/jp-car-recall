@@ -1,0 +1,18 @@
+T8	Parts 52 62	中柱固定用ロック装置
+T9	Parts 78 83	ロック装置
+T10	Parts 84 87	ラッチ
+T11	Parts 91 93	車両
+T12	Parts 32 34	荷台
+T13	Parts 97 103	道路運送車両
+T1	Parts 0 8	ウイングトラック
+T2	Parts 9 14	荷台あおり
+T3	Parts 22 27	回転式中柱
+R1	Coreference Arg1:T9 Arg2:T8	
+R2	Part-Whole Arg1:T11 Arg2:T13	
+R3	Coreference Arg1:T1 Arg2:T11	
+R4	Part-Whole Arg1:T2 Arg2:T12	
+R5	Part-Whole Arg1:T12 Arg2:T1	
+R6	Contact Arg1:T2 Arg2:T3	
+R8	Part-Whole Arg1:T10 Arg2:T9	
+R9	Part-Whole Arg1:T3 Arg2:T1	
+R7	Part-Whole Arg1:T8 Arg2:T3	

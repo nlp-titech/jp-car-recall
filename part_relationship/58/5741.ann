@@ -1,0 +1,13 @@
+T1	Parts 0 9	駐車ブレーキレバー
+T2	Parts 95 104	駐車ブレーキレバー
+T3	Parts 10 24	ワイヤー自動巻き取り調整機構
+T4	Parts 58 72	ワイヤー自動巻き取り調整機構
+T5	Parts 109 113	ワイヤー
+T6	Parts 124 126	車両
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Coreference Arg1:T3 Arg2:T4	
+R3	Connect Arg1:T4 Arg2:T5	
+R4	Part-Whole Arg1:T3 Arg2:T1	
+R5	Connect Arg1:T2 Arg2:T5	
+R6	Part-Whole Arg1:T2 Arg2:T6	
+R7	Part-Whole Arg1:T5 Arg2:T6	

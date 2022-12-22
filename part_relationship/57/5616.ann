@@ -1,0 +1,7 @@
+T2	Parts 0 11	リヤフェンダーフラップ
+T3	Parts 40 49	フェンダーフラップ
+T4	Parts 34 37	タイヤ
+T5	Parts 22 24	車両
+R1	Part-Whole Arg1:T2 Arg2:T5	
+R2	Coreference Arg1:T3 Arg2:T2	
+R3	Part-Whole Arg1:T4 Arg2:T5	

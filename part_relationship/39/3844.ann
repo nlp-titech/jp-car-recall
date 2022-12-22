@@ -1,0 +1,15 @@
+T1	Parts 17 28	インタークーラーホース
+T2	Parts 4 12	インタークーラー
+T3	Parts 84 91	エンジンオイル
+T5	Parts 31 36	中間パイプ
+T6	Parts 55 58	ホース
+T7	Parts 73 76	ホース
+T8	Parts 0 3	過給器
+R1	Coreference Arg1:T6 Arg2:T1	
+R2	Coreference Arg1:T7 Arg2:T6	
+R3	Contact Arg1:T5 Arg2:T1	
+R4	Contact Arg1:T3 Arg2:T7	
+R5	Contact Arg1:T1 Arg2:T2	
+R6	Part-Whole Arg1:T2 Arg2:T8	
+R7	Part-Whole Arg1:T1 Arg2:T8	
+R8	Part-Whole Arg1:T5 Arg2:T8	

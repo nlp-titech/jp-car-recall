@@ -1,0 +1,12 @@
+T1	Parts 0 6	動力伝達装置
+T2	Parts 7 17	前後進用油圧クラッチ
+T3	Parts 22 33	走行制御系コントローラ
+T4	Parts 34 39	プログラム
+T5	Parts 47 51	エンジン
+T6	Parts 65 73	後進油圧クラッチ
+R1	Oneway-Coreference Arg1:T2 Arg2:T6	
+T7	Parts 82 86	ブレーキ
+R2	Part-Whole Arg1:T4 Arg2:T3	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R3	Connect Arg1:T5 Arg2:T1	
+R6	Connect Arg1:T3 Arg2:T1	

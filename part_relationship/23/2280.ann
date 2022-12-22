@@ -1,0 +1,25 @@
+T8	Parts 71 76	座席ベルト
+T9	Parts 100 105	座席ベルト
+T10	Parts 87 91	巻取装置
+T11	Parts 93 96	ベルト
+T12	Parts 45 50	ロックピン
+T1	Parts 0 4	路線バス
+T2	Parts 5 8	運転席
+T3	Parts 9 21	３点式座席ベルト巻取装置
+T4	Parts 26 32	ベルト巻取軸
+T5	Parts 33 36	ベルト
+R1	Coreference Arg1:T9 Arg2:T8	
+R2	Coreference Arg1:T10 Arg2:T3	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Contact Arg1:T3 Arg2:T2	
+R5	Part-Whole Arg1:T4 Arg2:T3	
+R7	Contact Arg1:T4 Arg2:T12	
+R8	Contact Arg1:T5 Arg2:T12	
+R10	Coreference Arg1:T5 Arg2:T8	
+R6	Contact Arg1:T5 Arg2:T4	
+R9	Contact Arg1:T5 Arg2:T3	
+R11	Part-Whole Arg1:T12 Arg2:T3	
+R12	Coreference Arg1:T11 Arg2:T8	
+R13	Contact Arg1:T11 Arg2:T2	
+R14	Part-Whole Arg1:T11 Arg2:T1	
+R15	Part-Whole Arg1:T3 Arg2:T1	

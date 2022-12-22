@@ -1,0 +1,7 @@
+T2	Parts 67 73	シートベルト
+T3	Parts 6 19	シートベルトプリテンショナ
+T4	Parts 0 5	座席ベルト
+T5	Parts 36 39	点火剤
+R1	Part-Whole Arg1:T5 Arg2:T3	
+R2	Contact Arg1:T3 Arg2:T4	
+R3	Coreference Arg1:T2 Arg2:T4	

@@ -1,0 +1,9 @@
+T1	Parts 0 9	小型トラック・バス
+T2	Parts 10 13	原動機
+T3	Parts 18 25	ロッカーアーム
+T4	Parts 41 48	ロッカーアーム
+T5	Parts 73 80	ロッカーアーム
+R1	Coreference Arg1:T3 Arg2:T4	
+R2	Coreference Arg1:T4 Arg2:T5	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T3 Arg2:T2	

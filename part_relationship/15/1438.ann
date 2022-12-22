@@ -1,0 +1,10 @@
+T1	Parts 0 6	動力伝達装置
+T2	Parts 11 16	走行モータ
+T3	Parts 17 24	油圧供給パイプ
+T5	Parts 50 53	オイル
+T6	Parts 80 83	オイル
+R1	Coreference Arg1:T5 Arg2:T6	
+R3	Contact Arg1:T3 Arg2:T2	
+R4	Contact Arg1:T5 Arg2:T3	
+R2	Part-Whole Arg1:T3 Arg2:T1	
+R5	Part-Whole Arg1:T2 Arg2:T1	

@@ -1,0 +1,9 @@
+T1	Parts 0 14	後輪ブレーキリザーバータンク
+T3	Parts 82 88	後輪ブレーキ
+T4	Parts 103 109	後輪ブレーキ
+T5	Parts 43 51	ブレーキシステム
+T8	Parts 33 35	車両
+R1	Coreference Arg1:T4 Arg2:T3	
+R2	Part-Whole Arg1:T1 Arg2:T3	
+R3	Part-Whole Arg1:T3 Arg2:T5	
+R4	Part-Whole Arg1:T5 Arg2:T8	

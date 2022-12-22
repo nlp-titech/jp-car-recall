@@ -1,0 +1,7 @@
+T3	Parts 113 117	スイッチ
+T1	Parts 0 12	バッテリーメインスイッチ
+T2	Parts 17 24	打ち込み雌ねじ
+T4	Parts 41 48	打ち込み雌ねじ
+R2	Coreference Arg1:T2 Arg2:T4	
+R3	Coreference Arg1:T1 Arg2:T3	
+R1	Contact Arg1:T1 Arg2:T2	

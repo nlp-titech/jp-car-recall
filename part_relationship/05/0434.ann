@@ -1,0 +1,13 @@
+T12	Parts 19 27	ラテラルメンバー
+T13	Parts 42 46	メンバー
+T15	Parts 75 79	空気ばね
+T16	Parts 80 89	ステアリングアーム
+T1	Parts 0 2	前輪
+T2	Parts 3 7	空気ばね
+R1	Coreference Arg1:T12 Arg2:T13	
+R2	Coreference Arg1:T15 Arg2:T2	
+R3	Contact Arg1:T1 Arg2:T2	
+T3	Parts 12 14	車両
+R4	Part-Whole Arg1:T3 Arg2:T2	
+R5	Contact Arg1:T12 Arg2:T2	
+R6	Contact Arg1:T16 Arg2:T15	

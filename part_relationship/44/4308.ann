@@ -1,0 +1,13 @@
+T1	Parts 0 9	小型トラック・バス
+T2	Parts 42 46	エンジン
+T3	Parts 14 22	発電機用プーリー
+T4	Parts 77 81	プーリー
+T5	Parts 105 109	プーリー
+T6	Parts 25 28	グリス
+T7	Parts 64 67	グリス
+R1	Contact Arg1:T6 Arg2:T3	
+R2	Part-Whole Arg1:T3 Arg2:T1	
+R3	Coreference Arg1:T6 Arg2:T7	
+R4	Coreference Arg1:T3 Arg2:T4	
+R5	Coreference Arg1:T4 Arg2:T5	
+R8	Part-Whole Arg1:T2 Arg2:T1	

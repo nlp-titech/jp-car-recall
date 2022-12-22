@@ -1,0 +1,14 @@
+T16	Parts 37 40	ホース
+T17	Parts 17 24	ホースクランプ
+T18	Parts 78 86	ラジエータホース
+T19	Parts 103 106	ホース
+R2	Coreference Arg1:T19 Arg2:T18	
+T3	Parts 41 46	挿入パイプ
+T4	Parts 69 73	エンジン
+T5	Parts 110 113	冷却水
+T1	Parts 0 12	ラジエータアッパーホース
+R1	Coreference Arg1:T1 Arg2:T16	
+R3	Contact Arg1:T1 Arg2:T17	
+R4	Contact Arg1:T16 Arg2:T3	
+R5	Coreference Arg1:T18 Arg2:T1	
+R6	Contact Arg1:T19 Arg2:T5	

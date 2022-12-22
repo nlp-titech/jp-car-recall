@@ -1,0 +1,12 @@
+T16	Parts 79 85	ステアリング
+T17	Parts 106 116	ステアリングストッパ
+T1	Parts 0 7	ブレーキホース
+T2	Parts 28 35	ブレーキホース
+T3	Parts 47 54	ブレーキホース
+T4	Parts 98 105	ブレーキホース
+T5	Parts 131 136	ブレーキ液
+R1	Coreference Arg1:T4 Arg2:T3	
+R2	Coreference Arg1:T3 Arg2:T2	
+R3	Coreference Arg1:T2 Arg2:T1	
+R5	Contact Arg1:T5 Arg2:T4	
+R4	Connect Arg1:T17 Arg2:T16	

@@ -1,0 +1,11 @@
+T16	Parts 11 19	アウタベアリング
+T17	Parts 43 49	ホイールハブ
+T18	Parts 81 87	ホイールハブ
+T19	Parts 88 96	アウタベアリング
+T20	Parts 112 120	アウタベアリング
+T1	Parts 0 6	ホイールハブ
+R1	Coreference Arg1:T17 Arg2:T1	
+R2	Coreference Arg1:T18 Arg2:T17	
+R3	Coreference Arg1:T19 Arg2:T16	
+R4	Coreference Arg1:T20 Arg2:T19	
+R5	Part-Whole Arg1:T16 Arg2:T1	

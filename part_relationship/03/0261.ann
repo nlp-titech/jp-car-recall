@@ -1,0 +1,12 @@
+T6	Parts 5 10	燃料タンク
+T8	Parts 39 46	樹脂製キャップ
+T9	Parts 84 88	キャップ
+T1	Parts 0 4	燃料装置
+R1	Coreference Arg1:T9 Arg2:T8	
+T2	Parts 101 103	燃料
+T4	Parts 15 28	燃料ポンプ・ゲージユニット
+R2	Part-Whole Arg1:T6 Arg2:T1	
+R3	Part-Whole Arg1:T2 Arg2:T6	
+R6	Contact Arg1:T8 Arg2:T6	
+R5	Part-Whole Arg1:T4 Arg2:T6	
+R7	Contact Arg1:T4 Arg2:T8	

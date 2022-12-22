@@ -1,0 +1,8 @@
+T1	Parts 26 38	インフレータ（膨張装置）
+T3	Parts 91 96	エアバッグ
+T4	Parts 53 58	ガス発生剤
+T5	Parts 0 4	運転者席
+T6	Parts 6 16	２段式エアバッグ装置
+R3	Part-Whole Arg1:T1 Arg2:T6	
+R5	Part-Whole Arg1:T3 Arg2:T6	
+R6	Part-Whole Arg1:T4 Arg2:T3	

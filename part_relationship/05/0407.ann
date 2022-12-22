@@ -1,0 +1,11 @@
+T10	Parts 24 31	クロスメンバー
+T11	Parts 37 47	エンドクロスメンバー
+T9	Parts 0 2	車枠
+T12	Parts 78 80	車枠
+R1	Coreference Arg1:T9 Arg2:T12	
+T1	Parts 19 23	右側車枠
+T2	Parts 48 52	左側車枠
+R2	Part-Whole Arg1:T1 Arg2:T9	
+R3	Contact Arg1:T10 Arg2:T1	
+R4	Part-Whole Arg1:T11 Arg2:T10	
+R5	Contact Arg1:T11 Arg2:T2	

@@ -1,0 +1,20 @@
+T15	Parts 60 62	素子
+T1	Parts 0 5	自動変速機
+T2	Parts 10 14	路線バス
+T3	Parts 19 24	自動変速機
+T4	Parts 29 33	ユニット
+R1	Coreference Arg1:T1 Arg2:T3	
+T5	Parts 53 57	ユニット
+R2	Coreference Arg1:T4 Arg2:T5	
+T6	Parts 69 72	ハンダ
+T7	Parts 142 145	タイヤ
+T8	Parts 153 157	エンジン
+R3	Part-Whole Arg1:T1 Arg2:T2	
+R4	Part-Whole Arg1:T7 Arg2:T2	
+R5	Part-Whole Arg1:T8 Arg2:T2	
+R7	Part-Whole Arg1:T15 Arg2:T5	
+R8	Part-Whole Arg1:T6 Arg2:T5	
+R9	Contact Arg1:T15 Arg2:T6	
+R6	Connect Arg1:T3 Arg2:T4	
+R10	Part-Whole Arg1:T4 Arg2:T2	
+R11	Connect Arg1:T3 Arg2:T8	

@@ -1,0 +1,11 @@
+T1	Parts 5 13	農業用薬剤散布車
+T2	Parts 14 19	かじ取装置
+T3	Parts 24 29	かじ取装置
+T4	Parts 30 36	取付けボルト
+T5	Parts 70 76	取付けボルト
+T6	Parts 95 101	取付けボルト
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T3 Arg2:T2	
+R3	Contact Arg1:T4 Arg2:T3	
+R4	Coreference Arg1:T5 Arg2:T4	
+R5	Coreference Arg1:T6 Arg2:T5	

@@ -1,0 +1,7 @@
+T1	Parts 3 7	ホイール
+T2	Parts 26 33	ホイールナット
+T3	Parts 59 62	ナット
+T4	Parts 72 76	ホイール
+R1	Contact Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T3 Arg2:T2	
+R3	Coreference Arg1:T4 Arg2:T1	

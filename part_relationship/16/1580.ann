@@ -1,0 +1,28 @@
+T12	Parts 55 61	プレフィルタ
+T13	Parts 62 68	出入口パイプ
+T1	Parts 0 4	燃料装置
+T2	Parts 9 18	樹脂製プレフィルタ
+T3	Parts 19 26	メインフィルタ
+T4	Parts 28 31	ホース
+T5	Parts 44 48	エンジン
+R1	Coreference Arg1:T2 Arg2:T12	
+T6	Parts 104 106	燃料
+T7	Parts 116 118	燃料
+R2	Coreference Arg1:T6 Arg2:T7	
+T8	Parts 129 133	エンジン
+R3	Coreference Arg1:T5 Arg2:T8	
+R4	Connect Arg1:T3 Arg2:T2	
+R5	Contact Arg1:T2 Arg2:T4	
+R6	Contact Arg1:T3 Arg2:T4	
+R7	Part-Whole Arg1:T13 Arg2:T12	
+R8	Part-Whole Arg1:T2 Arg2:T1	
+R9	Part-Whole Arg1:T3 Arg2:T1	
+R10	Part-Whole Arg1:T4 Arg2:T1	
+R11	Part-Whole Arg1:T6 Arg2:T1	
+R12	Connect Arg1:T5 Arg2:T1	
+R13	Contact Arg1:T6 Arg2:T2	
+R14	Contact Arg1:T6 Arg2:T3	
+R15	Contact Arg1:T6 Arg2:T4	
+R16	Contact Arg1:T6 Arg2:T12	
+R17	Contact Arg1:T6 Arg2:T13	
+R18	Contact Arg1:T7 Arg2:T8	

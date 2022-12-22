@@ -1,0 +1,11 @@
+T1	Parts 72 83	ステアリングストッパー
+T3	Parts 11 18	ブレーキホース
+T4	Parts 0 6	前輪制動装置
+T6	Parts 54 71	フロントフォークアンダーブラケット
+T7	Parts 32 36	ハンドル
+T8	Parts 50 53	ホース
+T9	Parts 107 110	制動液
+R1	Coreference Arg1:T8 Arg2:T3	
+R2	Part-Whole Arg1:T3 Arg2:T4	
+R4	Contact Arg1:T9 Arg2:T8	
+R6	Connect Arg1:T1 Arg2:T7	

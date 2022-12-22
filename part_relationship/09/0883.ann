@@ -1,0 +1,26 @@
+T4	Parts 31 36	自動変速機
+T6	Parts 45 50	電動ファン
+T7	Parts 60 74	電動ファン作動用油温センサー
+T9	Parts 75 80	コネクター
+T10	Parts 101 107	変速機作動油
+T11	Parts 127 130	警告灯
+T12	Parts 154 157	作動油
+T15	Parts 172 175	変速機
+T16	Parts 178 182	回転部品
+T1	Parts 1 14	自動変速機電子制御ユニット
+T2	Parts 37 44	作動油冷却装置
+T5	Parts 52 54	車両
+R2	Part-Whole Arg1:T4 Arg2:T5	
+R3	Part-Whole Arg1:T2 Arg2:T4	
+R4	Part-Whole Arg1:T6 Arg2:T2	
+R5	Part-Whole Arg1:T1 Arg2:T5	
+R6	Connect Arg1:T1 Arg2:T4	
+R7	Part-Whole Arg1:T7 Arg2:T2	
+R9	Part-Whole Arg1:T9 Arg2:T7	
+R10	Connect Arg1:T6 Arg2:T7	
+R11	Coreference Arg1:T10 Arg2:T12	
+R12	Coreference Arg1:T4 Arg2:T15	
+R13	Part-Whole Arg1:T16 Arg2:T15	
+R14	Part-Whole Arg1:T11 Arg2:T5	
+R1	Contact Arg1:T2 Arg2:T10	
+R8	Connect Arg1:T4 Arg2:T11	

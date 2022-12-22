@@ -1,0 +1,8 @@
+T12	Parts 83 98	原動機（駆動用フロントモータ）
+T13	Parts 100 105	ベアリング
+T1	Parts 0 11	発電機（ジェネレータ）
+T2	Parts 13 28	原動機（駆動用フロントモータ）
+R1	Coreference Arg1:T2 Arg2:T12	
+R2	Part-Whole Arg1:T13 Arg2:T12	
+T3	Parts 73 76	オイル
+R3	Contact Arg1:T13 Arg2:T3	

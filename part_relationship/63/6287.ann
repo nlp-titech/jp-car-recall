@@ -1,0 +1,14 @@
+T1	Parts 0 9	バッテリーケーブル
+T2	Parts 90 99	バッテリーケーブル
+T5	Parts 150 154	エンジン
+T6	Parts 16 20	ケーブル
+R1	Coreference Arg1:T1 Arg2:T6	
+T3	Parts 36 45	スターターモーター
+T7	Parts 50 55	絶縁カバー
+R3	Coreference Arg1:T6 Arg2:T2	
+T4	Parts 119 128	スターターモーター
+R4	Coreference Arg1:T3 Arg2:T4	
+R6	Connect Arg1:T4 Arg2:T5	
+T8	Parts 111 117	耐熱シールド
+R7	Contact Arg1:T2 Arg2:T8	
+R2	Contact Arg1:T3 Arg2:T7	

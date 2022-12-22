@@ -1,0 +1,38 @@
+T14	Parts 55 58	蓄電池
+T15	Parts 81 84	蓄電池
+T16	Parts 9 12	整流器
+T17	Parts 98 102	灯火装置
+T18	Parts 104 108	点火装置
+T25	Parts 177 180	原動機
+T1	Parts 0 4	電気装置
+R1	Coreference Arg1:T14 Arg2:T15	
+T2	Parts 73 76	電解液
+T3	Parts 109 113	電気回路
+T4	Parts 122 125	前照灯
+T5	Parts 126 129	制動灯
+T6	Parts 130 132	尾灯
+T7	Parts 133 136	番号灯
+T8	Parts 137 142	速度計照明
+T9	Parts 144 149	方向指示器
+T10	Parts 150 156	フィラメント
+R2	Part-Whole Arg1:T16 Arg2:T1	
+R5	Connect Arg1:T14 Arg2:T16	
+R7	Contact Arg1:T3 Arg2:T17	
+R8	Contact Arg1:T3 Arg2:T18	
+R15	Part-Whole Arg1:T10 Arg2:T9	
+R16	Part-Whole Arg1:T10 Arg2:T8	
+R17	Part-Whole Arg1:T10 Arg2:T7	
+R18	Part-Whole Arg1:T10 Arg2:T6	
+R19	Part-Whole Arg1:T10 Arg2:T5	
+R20	Part-Whole Arg1:T10 Arg2:T4	
+R4	Part-Whole Arg1:T2 Arg2:T15	
+R6	Part-Whole Arg1:T4 Arg2:T17	
+R9	Part-Whole Arg1:T5 Arg2:T17	
+R10	Connect Arg1:T18 Arg2:T25	
+R11	Part-Whole Arg1:T6 Arg2:T17	
+R12	Part-Whole Arg1:T7 Arg2:T17	
+R13	Part-Whole Arg1:T8 Arg2:T17	
+R14	Part-Whole Arg1:T9 Arg2:T17	
+R21	Connect Arg1:T17 Arg2:T1	
+R22	Connect Arg1:T18 Arg2:T1	
+R3	Connect Arg1:T16 Arg2:T3	

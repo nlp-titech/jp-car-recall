@@ -1,0 +1,22 @@
+T1	Parts 0 4	灯火装置
+T2	Parts 5 11	灯火スイッチ
+T3	Parts 17 21	電気配線
+T4	Parts 38 48	方向指示器操作レバー
+T5	Parts 61 65	電気配線
+T7	Parts 79 89	方向指示器操作レバー
+T9	Parts 103 106	前照灯
+T10	Parts 107 110	車幅灯
+T11	Parts 112 118	フォグランプ
+T13	Parts 155 165	方向指示器操作レバー
+T16	Parts 210 215	方向指示器
+R2	Coreference Arg1:T13 Arg2:T7	
+R3	Coreference Arg1:T7 Arg2:T4	
+R4	Connect Arg1:T2 Arg2:T1	
+R6	Coreference Arg1:T3 Arg2:T5	
+R8	Connect Arg1:T4 Arg2:T1	
+R10	Part-Whole Arg1:T9 Arg2:T1	
+R11	Part-Whole Arg1:T10 Arg2:T1	
+R12	Part-Whole Arg1:T11 Arg2:T1	
+R16	Connect Arg1:T13 Arg2:T16	
+R1	Connect Arg1:T2 Arg2:T3	
+R14	Part-Whole Arg1:T16 Arg2:T1	

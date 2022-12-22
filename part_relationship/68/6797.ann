@@ -1,0 +1,5 @@
+T1	Parts 84 91	ブレーキペダル
+T8	Parts 108 111	ＡＢＳ
+T10	Parts 0 33	制動力制御装置（アンチロックブレーキシステム：ＡＢＳ）付き制動装置
+R2	Part-Whole Arg1:T8 Arg2:T10	
+R3	Connect Arg1:T1 Arg2:T8	

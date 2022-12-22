@@ -1,0 +1,16 @@
+T16	Parts 0 3	前照灯
+T17	Parts 4 6	電球
+T18	Parts 20 23	前照灯
+T19	Parts 31 33	電球
+T24	Parts 43 46	導入線
+T25	Parts 81 83	電球
+T27	Parts 90 96	フィラメント
+T28	Parts 107 110	前照灯
+R1	Coreference Arg1:T16 Arg2:T18	
+R2	Coreference Arg1:T17 Arg2:T19	
+R3	Coreference Arg1:T19 Arg2:T25	
+R5	Part-Whole Arg1:T17 Arg2:T16	
+R6	Part-Whole Arg1:T24 Arg2:T19	
+R8	Part-Whole Arg1:T27 Arg2:T25	
+R7	Contact Arg1:T27 Arg2:T24	
+R4	Coreference Arg1:T18 Arg2:T28	

@@ -1,0 +1,15 @@
+T12	Parts 0 6	動力伝達装置
+T13	Parts 7 10	変向機
+T16	Parts 76 79	変向機
+T17	Parts 72 75	変速機
+T18	Parts 82 90	ドライブシャフト
+T19	Parts 107 119	フライホイールハウジング
+T20	Parts 120 123	変向機
+R2	Coreference Arg1:T16 Arg2:T13	
+R4	Part-Whole Arg1:T13 Arg2:T12	
+R6	Contact Arg1:T17 Arg2:T18	
+R7	Contact Arg1:T16 Arg2:T18	
+T1	Parts 15 25	入力軸側ロックナット
+R1	Part-Whole Arg1:T1 Arg2:T13	
+R3	Coreference Arg1:T16 Arg2:T20	
+R5	Contact Arg1:T19 Arg2:T20	

@@ -1,0 +1,13 @@
+T1	Parts 8 16	緊急ブレーキ装置
+T2	Parts 23 25	車両
+T3	Parts 26 32	ディスプレイ
+T4	Parts 37 42	液晶パネル
+T5	Parts 114 120	ディスプレイ
+T6	Parts 123 128	制御用基板
+T7	Parts 149 153	エンジン
+R1	Coreference Arg1:T3 Arg2:T5	
+R2	Part-Whole Arg1:T1 Arg2:T2	
+R3	Part-Whole Arg1:T3 Arg2:T2	
+R4	Part-Whole Arg1:T4 Arg2:T3	
+R5	Part-Whole Arg1:T6 Arg2:T5	
+R6	Part-Whole Arg1:T7 Arg2:T2	

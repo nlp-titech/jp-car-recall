@@ -1,0 +1,8 @@
+T10	Parts 71 77	スペアタイヤ
+T11	Parts 0 10	スペアタイヤキャリア
+T12	Parts 11 14	つり具
+T13	Parts 24 34	スペアタイヤキャリア
+R1	Coreference Arg1:T13 Arg2:T11	
+R2	Part-Whole Arg1:T12 Arg2:T11	
+R3	Contact Arg1:T13 Arg2:T10	
+R4	Contact Arg1:T10 Arg2:T12	

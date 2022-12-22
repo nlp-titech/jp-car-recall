@@ -1,0 +1,13 @@
+T14	Parts 39 44	手動変速機
+T16	Parts 45 51	オイルシール
+T17	Parts 74 79	手動変速機
+T18	Parts 0 18	四輪駆動車用トランスファ（副変速機）
+T19	Parts 19 22	入力軸
+T20	Parts 100 102	歯車
+R1	Coreference Arg1:T17 Arg2:T14	
+T1	Parts 81 84	潤滑油
+R2	Part-Whole Arg1:T19 Arg2:T18	
+R3	Part-Whole Arg1:T16 Arg2:T14	
+R4	Contact Arg1:T18 Arg2:T14	
+R5	Contact Arg1:T1 Arg2:T17	
+R6	Part-Whole Arg1:T20 Arg2:T17	

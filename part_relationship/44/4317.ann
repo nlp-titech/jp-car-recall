@@ -1,0 +1,16 @@
+T1	Parts 136 145	トランスミッション
+T2	Parts 0 6	農耕トラクタ
+T3	Parts 32 37	油圧パイプ
+T4	Parts 109 114	油圧パイプ
+T5	Parts 16 21	油圧ポンプ
+T6	Parts 7 11	油圧配管
+T7	Parts 23 30	作業機用バルブ
+R1	Part-Whole Arg1:T6 Arg2:T2	
+R2	Part-Whole Arg1:T5 Arg2:T1	
+R3	Connect Arg1:T5 Arg2:T7	
+R4	Part-Whole Arg1:T7 Arg2:T1	
+R5	Contact Arg1:T3 Arg2:T5	
+R6	Contact Arg1:T3 Arg2:T7	
+R7	Part-Whole Arg1:T3 Arg2:T6	
+R8	Coreference Arg1:T3 Arg2:T4	
+R10	Part-Whole Arg1:T1 Arg2:T2	

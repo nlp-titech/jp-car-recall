@@ -1,0 +1,10 @@
+T9	Parts 3 7	緩衝装置
+T10	Parts 13 20	ストラットバー
+T11	Parts 21 25	保持金具
+T12	Parts 75 79	保持金具
+R2	Coreference Arg1:T12 Arg2:T11	
+T2	Parts 0 2	車体
+R3	Part-Whole Arg1:T10 Arg2:T9	
+R4	Contact Arg1:T11 Arg2:T2	
+R5	Contact Arg1:T11 Arg2:T10	
+R6	Contact Arg1:T10 Arg2:T2	

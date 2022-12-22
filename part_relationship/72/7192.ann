@@ -1,0 +1,19 @@
+T2	Parts 140 146	ドアハンドル
+T3	Parts 10 15	ドアラッチ
+T4	Parts 28 33	ドアラッチ
+T5	Parts 34 88	チャイルドプルーフロック機構（子供が誤って後部座席ドアを、車内の後部ドアハンドルで開けることを防止する装置）
+T7	Parts 112 117	左後部座席
+T10	Parts 89 92	レバー
+T11	Parts 118 130	チャイルドプルーフロック
+T12	Parts 0 5	左後部ドア
+T14	Parts 152 154	ドア
+R1	Part-Whole Arg1:T3 Arg2:T12	
+R2	Coreference Arg1:T3 Arg2:T4	
+R5	Part-Whole Arg1:T10 Arg2:T5	
+R6	Part-Whole Arg1:T12 Arg2:T7	
+R7	Part-Whole Arg1:T11 Arg2:T7	
+R9	Part-Whole Arg1:T2 Arg2:T14	
+R8	Coreference Arg1:T12 Arg2:T14	
+R12	Connect Arg1:T11 Arg2:T2	
+R13	Coreference Arg1:T5 Arg2:T11	
+R14	Part-Whole Arg1:T5 Arg2:T4	

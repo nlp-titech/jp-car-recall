@@ -1,0 +1,15 @@
+T2	Parts 65 70	燃料タンク
+T3	Parts 131 136	燃料タンク
+T4	Parts 87 92	燃料ポンプ
+T5	Parts 100 104	エンジン
+T7	Parts 169 171	燃料
+T8	Parts 30 38	フューエルリッド
+T12	Parts 0 13	燃料タンクフューエルトレイ
+R3	Contact Arg1:T2 Arg2:T4	
+R4	Connect Arg1:T4 Arg2:T5	
+T6	Parts 52 60	フューエルトレイ
+R6	Coreference Arg1:T12 Arg2:T6	
+R7	Coreference Arg1:T2 Arg2:T3	
+R8	Part-Whole Arg1:T7 Arg2:T3	
+R9	Contact Arg1:T7 Arg2:T4	
+R1	Part-Whole Arg1:T6 Arg2:T2	

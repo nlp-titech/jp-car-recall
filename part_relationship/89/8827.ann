@@ -1,0 +1,8 @@
+T1	Parts 0 8	農業用薬剤散布車
+T2	Parts 21 29	スタータスイッチ
+T3	Parts 48 56	スタータスイッチ
+T4	Parts 83 87	エンジン
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T2 Arg2:T3	
+R3	Part-Whole Arg1:T4 Arg2:T1	
+R4	Connect Arg1:T3 Arg2:T4	

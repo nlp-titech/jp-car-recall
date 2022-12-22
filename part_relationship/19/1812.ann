@@ -1,0 +1,14 @@
+T1	Parts 0 5	走行モータ
+T2	Parts 6 10	油圧配管
+T3	Parts 15 18	パイプ
+T4	Parts 32 35	パイプ
+R1	Coreference Arg1:T3 Arg2:T4	
+T6	Parts 80 83	作動油
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T3 Arg2:T2	
+R5	Contact Arg1:T6 Arg2:T4	
+T5	Parts 40 44	配管継手
+R4	Contact Arg1:T5 Arg2:T4	
+R6	Part-Whole Arg1:T5 Arg2:T2	
+R7	Contact Arg1:T6 Arg2:T5	
+R8	Contact Arg1:T6 Arg2:T2	

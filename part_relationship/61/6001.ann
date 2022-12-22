@@ -1,0 +1,7 @@
+T1	Parts 90 95	ドアロック
+T2	Parts 53 58	バッテリー
+T3	Parts 66 70	エンジン
+T6	Parts 0 18	セントラルエレクトロニックモジュール
+R2	Connect Arg1:T6 Arg2:T2	
+R3	Connect Arg1:T2 Arg2:T3	
+R4	Connect Arg1:T2 Arg2:T1	

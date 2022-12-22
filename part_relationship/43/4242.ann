@@ -1,0 +1,3 @@
+T2	Parts 9 30	ＶＳＣ（車両安定制御システム）オフスイッチ
+T3	Parts 0 4	大型バス
+R3	Part-Whole Arg1:T2 Arg2:T3	

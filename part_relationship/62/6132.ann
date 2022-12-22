@@ -1,0 +1,4 @@
+T2	Parts 17 24	商標ステッカー
+T3	Parts 0 4	窓ガラス
+T4	Parts 9 13	窓ガラス
+R1	Coreference Arg1:T3 Arg2:T4	

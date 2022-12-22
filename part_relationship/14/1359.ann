@@ -1,0 +1,9 @@
+T18	Parts 118 122	エンジン
+T19	Parts 95 100	タービン翼
+T20	Parts 19 24	タービン翼
+T1	Parts 0 3	原動機
+T2	Parts 4 13	可変ノズル付過給機
+R1	Coreference Arg1:T20 Arg2:T19	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T20 Arg2:T2	
+R4	Coreference Arg1:T18 Arg2:T1	

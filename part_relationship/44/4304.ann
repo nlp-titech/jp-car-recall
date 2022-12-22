@@ -1,0 +1,9 @@
+T1	Parts 38 43	方向指示器
+T3	Parts 0 7	大型ウィング車
+T4	Parts 8 18	サイドスカート装着車
+R1	Coreference Arg1:T3 Arg2:T4	
+T5	Parts 23 32	前部サイドスカート
+R2	Part-Whole Arg1:T5 Arg2:T4	
+R3	Part-Whole Arg1:T1 Arg2:T5	
+T2	Parts 72 77	方向指示器
+R5	Coreference Arg1:T1 Arg2:T2	

@@ -1,0 +1,16 @@
+T16	Parts 121 125	ブレーキ
+T17	Parts 98 101	ホース
+T18	Parts 40 43	ホース
+T19	Parts 13 20	ブレーキホース
+T20	Parts 89 91	車両
+T1	Parts 0 8	制動倍力装置付車
+R1	Coreference Arg1:T19 Arg2:T18	
+T2	Parts 44 56	トランスミッションケース
+R2	Coreference Arg1:T18 Arg2:T17	
+T3	Parts 112 117	ブレーキ液
+R3	Coreference Arg1:T20 Arg2:T1	
+R4	Part-Whole Arg1:T19 Arg2:T1	
+R5	Part-Whole Arg1:T2 Arg2:T1	
+R7	Part-Whole Arg1:T16 Arg2:T20	
+R8	Part-Whole Arg1:T3 Arg2:T16	
+R6	Contact Arg1:T17 Arg2:T3	

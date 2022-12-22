@@ -1,0 +1,11 @@
+T1	Parts 0 8	ブレーキ倍力装置
+T2	Parts 71 79	ブレーキ倍力装置
+T3	Parts 94 101	ブレーキペダル
+T4	Parts 9 16	負圧逆流防止弁
+T5	Parts 23 28	逆流防止弁
+T6	Parts 46 51	逆流防止弁
+R1	Part-Whole Arg1:T4 Arg2:T1	
+R2	Coreference Arg1:T4 Arg2:T5	
+R3	Coreference Arg1:T5 Arg2:T6	
+R4	Coreference Arg1:T1 Arg2:T2	
+R5	Connect Arg1:T2 Arg2:T3	

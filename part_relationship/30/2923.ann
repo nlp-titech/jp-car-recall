@@ -1,0 +1,29 @@
+T1	Parts 0 6	大型トラック
+T2	Parts 11 15	エンジン
+T3	Parts 16 25	ＥＧＲ差圧センサー
+T4	Parts 26 28	配線
+T5	Parts 42 44	車両
+T6	Parts 53 59	保護チューブ
+T7	Parts 61 63	配線
+T8	Parts 70 72	被覆
+T9	Parts 104 106	被覆
+R2	Coreference Arg1:T9 Arg2:T8	
+T10	Parts 117 121	センサー
+R3	Coreference Arg1:T10 Arg2:T3	
+T11	Parts 122 124	配線
+R4	Coreference Arg1:T11 Arg2:T7	
+T12	Parts 138 145	エンジン警告灯
+T13	Parts 154 157	ＥＧＲ
+T15	Parts 188 202	ＥＧＲ（排気ガス再循環装置）
+R5	Coreference Arg1:T15 Arg2:T13	
+R8	Part-Whole Arg1:T2 Arg2:T1	
+R9	Connect Arg1:T3 Arg2:T2	
+R11	Part-Whole Arg1:T5 Arg2:T1	
+R1	Contact Arg1:T7 Arg2:T6	
+R12	Part-Whole Arg1:T6 Arg2:T3	
+R10	Coreference Arg1:T4 Arg2:T7	
+R13	Part-Whole Arg1:T8 Arg2:T7	
+R14	Connect Arg1:T12 Arg2:T2	
+R15	Connect Arg1:T3 Arg2:T13	
+R19	Part-Whole Arg1:T4 Arg2:T3	
+R17	Part-Whole Arg1:T13 Arg2:T1	

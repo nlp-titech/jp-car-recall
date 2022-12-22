@@ -1,0 +1,14 @@
+T1	Parts 0 7	後面方向指示器
+T2	Parts 95 102	後面方向指示器
+T3	Parts 15 18	ステー
+T4	Parts 28 31	ステー
+T5	Parts 81 84	ステー
+T6	Parts 33 36	ラバー
+T7	Parts 86 89	ラバー
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Coreference Arg1:T3 Arg2:T4	
+R3	Coreference Arg1:T4 Arg2:T5	
+R4	Coreference Arg1:T6 Arg2:T7	
+R5	Contact Arg1:T1 Arg2:T3	
+R6	Contact Arg1:T4 Arg2:T6	
+R7	Contact Arg1:T1 Arg2:T6	

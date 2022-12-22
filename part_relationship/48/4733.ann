@@ -1,0 +1,9 @@
+T1	Parts 4 15	ブローバイガス還元装置
+T2	Parts 86 97	ブローバイガス還元装置
+T3	Parts 20 45	ＰＣＶバルブ（ブローバイガス流量を調整するバルブ）
+T7	Parts 74 77	バルブ
+T8	Parts 0 3	原動機
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Coreference Arg1:T3 Arg2:T7	
+R3	Part-Whole Arg1:T1 Arg2:T8	
+R4	Part-Whole Arg1:T3 Arg2:T1	

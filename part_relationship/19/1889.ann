@@ -1,0 +1,14 @@
+T12	Parts 68 71	変速機
+T1	Parts 0 6	駐車ブレーキ
+T2	Parts 7 10	変速機
+T3	Parts 17 20	ナット
+T4	Parts 35 38	ナット
+T5	Parts 61 64	ナット
+R1	Coreference Arg1:T5 Arg2:T4	
+R2	Coreference Arg1:T12 Arg2:T2	
+R3	Coreference Arg1:T4 Arg2:T3	
+T6	Parts 72 75	出力軸
+R4	Contact Arg1:T1 Arg2:T2	
+R5	Part-Whole Arg1:T6 Arg2:T12	
+R6	Contact Arg1:T3 Arg2:T2	
+R7	Contact Arg1:T3 Arg2:T1	

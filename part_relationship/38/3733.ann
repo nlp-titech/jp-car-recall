@@ -1,0 +1,9 @@
+T1	Parts 43 49	シートベルト
+T2	Parts 65 71	シートベルト
+T3	Parts 9 16	金属製フレーム
+T4	Parts 38 42	フレーム
+T5	Parts 0 4	後部座席
+R1	Coreference Arg1:T4 Arg2:T3	
+R2	Coreference Arg1:T2 Arg2:T1	
+R5	Contact Arg1:T1 Arg2:T5	
+R3	Part-Whole Arg1:T3 Arg2:T5	

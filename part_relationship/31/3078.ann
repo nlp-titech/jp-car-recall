@@ -1,0 +1,14 @@
+T12	Parts 20 23	バルブ
+T13	Parts 24 28	ソケット
+T14	Parts 112 117	方向指示器
+T15	Parts 42 47	方向指示器
+T1	Parts 0 2	ドア
+T2	Parts 10 15	方向指示器
+R1	Coreference Arg1:T2 Arg2:T15	
+T4	Parts 55 57	ドア
+R2	Coreference Arg1:T1 Arg2:T4	
+R4	Coreference Arg1:T15 Arg2:T14	
+R6	Part-Whole Arg1:T12 Arg2:T2	
+R7	Part-Whole Arg1:T13 Arg2:T2	
+R10	Contact Arg1:T13 Arg2:T12	
+R3	Contact Arg1:T1 Arg2:T2	

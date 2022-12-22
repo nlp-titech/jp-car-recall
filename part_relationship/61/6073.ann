@@ -1,0 +1,12 @@
+T1	Parts 0 11	右側リアサスペンション
+T2	Parts 25 29	ナックル
+T3	Parts 16 24	前後リンクアーム
+T4	Parts 79 82	タイヤ
+T5	Parts 34 37	ボルト
+T6	Parts 65 68	ボルト
+R1	Part-Whole Arg1:T3 Arg2:T1	
+R2	Contact Arg1:T2 Arg2:T3	
+R3	Contact Arg1:T5 Arg2:T2	
+R4	Contact Arg1:T5 Arg2:T3	
+R5	Coreference Arg1:T5 Arg2:T6	
+R6	Part-Whole Arg1:T2 Arg2:T1	

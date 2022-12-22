@@ -1,0 +1,19 @@
+T1	Parts 0 6	大型トラック
+T2	Parts 11 18	フロントパネル
+T3	Parts 30 37	ヒーターホース
+T4	Parts 54 80	衝突被害軽減ブレーキの効き具合を調整する弁（前軸用）
+T7	Parts 89 92	調整弁
+T9	Parts 106 108	前軸
+T10	Parts 157 159	前輪
+T11	Parts 160 164	ブレーキ
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T3 Arg2:T1	
+R5	Part-Whole Arg1:T4 Arg2:T1	
+R1	Coreference Arg1:T4 Arg2:T7	
+R2	Contact Arg1:T9 Arg2:T10	
+R6	Connect Arg1:T9 Arg2:T11	
+R7	Connect Arg1:T10 Arg2:T11	
+R8	Connect Arg1:T7 Arg2:T11	
+R9	Part-Whole Arg1:T9 Arg2:T1	
+R10	Part-Whole Arg1:T10 Arg2:T1	
+R11	Part-Whole Arg1:T11 Arg2:T1	

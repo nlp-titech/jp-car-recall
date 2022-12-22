@@ -1,0 +1,14 @@
+T2	Parts 80 87	エンジンオイル
+T3	Parts 102 109	エンジンオイル
+T6	Parts 114 119	リヤタイヤ
+T13	Parts 130 132	車両
+T1	Parts 44 51	クーラーホース
+T5	Parts 0 26	オイルクーラーホース（デリバリー及びリターンホース）
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Part-Whole Arg1:T6 Arg2:T13	
+R3	Coreference Arg1:T5 Arg2:T1	
+T4	Parts 31 43	クランクケース側ニップル
+R6	Contact Arg1:T1 Arg2:T4	
+R8	Contact Arg1:T2 Arg2:T1	
+R10	Part-Whole Arg1:T4 Arg2:T13	
+R4	Part-Whole Arg1:T1 Arg2:T13	

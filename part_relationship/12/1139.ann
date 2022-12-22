@@ -1,0 +1,17 @@
+T19	Parts 86 91	エアタンク
+T21	Parts 109 113	エア配管
+T22	Parts 22 28	取付けボルト
+T23	Parts 53 56	ボルト
+T1	Parts 0 5	エアタンク
+T2	Parts 6 14	バッテリボックス
+T3	Parts 19 21	金具
+T4	Parts 96 101	エアタンク
+T5	Parts 117 119	エア
+R1	Coreference Arg1:T1 Arg2:T19	
+R2	Coreference Arg1:T22 Arg2:T23	
+R3	Coreference Arg1:T19 Arg2:T4	
+R4	Contact Arg1:T3 Arg2:T2	
+R5	Contact Arg1:T3 Arg2:T1	
+R6	Contact Arg1:T22 Arg2:T3	
+R7	Contact Arg1:T21 Arg2:T4	
+R8	Part-Whole Arg1:T5 Arg2:T4	

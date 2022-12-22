@@ -1,0 +1,23 @@
+T1	Parts 31 34	原動機
+T2	Parts 17 21	熱交換器
+T3	Parts 0 3	原動機
+T4	Parts 88 91	原動機
+T7	Parts 11 15	暖房装置
+T8	Parts 39 45	車内暖房装置
+T9	Parts 108 111	抵抗器
+T10	Parts 124 127	抵抗器
+T11	Parts 60 62	配線
+R1	Part-Whole Arg1:T2 Arg2:T7	
+R2	Coreference Arg1:T3 Arg2:T1	
+T5	Parts 76 79	送風機
+T6	Parts 95 98	送風機
+R5	Coreference Arg1:T5 Arg2:T6	
+R6	Coreference Arg1:T9 Arg2:T10	
+R7	Connect Arg1:T9 Arg2:T6	
+R8	Connect Arg1:T11 Arg2:T5	
+R4	Coreference Arg1:T1 Arg2:T4	
+T12	Parts 46 49	送風機
+R10	Coreference Arg1:T12 Arg2:T5	
+R11	Part-Whole Arg1:T12 Arg2:T8	
+R3	Coreference Arg1:T7 Arg2:T8	
+R9	Connect Arg1:T3 Arg2:T7	

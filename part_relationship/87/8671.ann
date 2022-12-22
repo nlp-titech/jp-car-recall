@@ -1,0 +1,11 @@
+T1	Parts 0 6	中型トラック
+T2	Parts 11 20	リヤサスペンション
+T3	Parts 38 40	後輪
+T4	Parts 41 50	ブレーキチャンバー
+T5	Parts 51 55	フレーム
+T6	Parts 68 77	ブレーキチャンバー
+R1	Coreference Arg1:T4 Arg2:T6	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T3 Arg2:T1	
+R4	Contact Arg1:T2 Arg2:T4	
+R5	Part-Whole Arg1:T5 Arg2:T1	

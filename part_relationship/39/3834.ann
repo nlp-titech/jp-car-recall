@@ -1,0 +1,21 @@
+T1	Parts 27 37	ステアリングストッパ
+T2	Parts 0 9	ホイール・クレーン
+T4	Parts 105 113	上側トルクロッド
+T6	Parts 10 22	第３車軸ステアリング機構
+T7	Parts 50 56	ステアリング
+T8	Parts 69 83	上側トルクロッド取付けボルト
+T9	Parts 144 155	サスペンションシリンダ
+T12	Parts 62 64	車軸
+T13	Parts 114 116	車軸
+R1	Coreference Arg1:T13 Arg2:T12	
+R2	Contact Arg1:T4 Arg2:T8	
+R3	Contact Arg1:T13 Arg2:T4	
+R4	Contact Arg1:T7 Arg2:T1	
+R5	Part-Whole Arg1:T7 Arg2:T6	
+R6	Part-Whole Arg1:T1 Arg2:T6	
+R7	Contact Arg1:T12 Arg2:T6	
+R9	Part-Whole Arg1:T6 Arg2:T2	
+R10	Part-Whole Arg1:T12 Arg2:T2	
+R11	Part-Whole Arg1:T9 Arg2:T2	
+R12	Part-Whole Arg1:T4 Arg2:T2	
+R8	Contact Arg1:T9 Arg2:T13	

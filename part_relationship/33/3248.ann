@@ -1,0 +1,10 @@
+T1	Parts 0 13	窓ふき器（ワイパー）モータ
+T4	Parts 88 91	モータ
+T5	Parts 94 97	制動灯
+T6	Parts 99 103	電気配線
+T7	Parts 114 118	ワイパー
+T8	Parts 119 122	制動灯
+R2	Coreference Arg1:T5 Arg2:T8	
+R1	Coreference Arg1:T1 Arg2:T4	
+R3	Connect Arg1:T4 Arg2:T7	
+R4	Contact Arg1:T5 Arg2:T6	

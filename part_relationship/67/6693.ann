@@ -1,0 +1,21 @@
+T3	Parts 17 24	制御プログラム
+T4	Parts 96 104	エンジン回転数計
+T5	Parts 0 12	メータークラスターパネル
+T6	Parts 56 68	メータークラスターパネル
+T7	Parts 128 131	警告灯
+T8	Parts 89 92	速度計
+T9	Parts 121 124	表示灯
+T10	Parts 32 34	燃料
+T1	Parts 105 107	指針
+R1	Coreference Arg1:T6 Arg2:T5	
+R2	Part-Whole Arg1:T3 Arg2:T5	
+R3	Part-Whole Arg1:T8 Arg2:T6	
+R4	Part-Whole Arg1:T4 Arg2:T6	
+R5	Part-Whole Arg1:T9 Arg2:T6	
+R6	Part-Whole Arg1:T7 Arg2:T6	
+R7	Connect Arg1:T8 Arg2:T3	
+R8	Part-Whole Arg1:T1 Arg2:T4	
+R9	Part-Whole Arg1:T1 Arg2:T8	
+R10	Connect Arg1:T4 Arg2:T3	
+R11	Connect Arg1:T9 Arg2:T3	
+R12	Connect Arg1:T7 Arg2:T3	

@@ -1,0 +1,17 @@
+T12	Parts 11 21	駐車ブレーキケーブル
+T13	Parts 22 29	アウターコート
+T14	Parts 55 62	アウターコート
+T15	Parts 92 101	アウターケーシング
+T16	Parts 108 116	インナーワイヤー
+T17	Parts 133 141	インナーワイヤー
+T1	Parts 0 6	駐車制動装置
+R1	Coreference Arg1:T14 Arg2:T13	
+R2	Coreference Arg1:T17 Arg2:T16	
+T2	Parts 146 152	駐車ブレーキ
+R3	Part-Whole Arg1:T12 Arg2:T1	
+R4	Part-Whole Arg1:T13 Arg2:T12	
+R5	Contact Arg1:T14 Arg2:T15	
+R6	Part-Whole Arg1:T16 Arg2:T12	
+R8	Part-Whole Arg1:T15 Arg2:T12	
+R7	Coreference Arg1:T1 Arg2:T2	
+#1	AnnotatorNotes R7	意味的に同じものを指していると判断

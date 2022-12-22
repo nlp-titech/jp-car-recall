@@ -1,0 +1,14 @@
+T1	Parts 7 15	スターターモータ
+T2	Parts 47 57	フロントクロスメンバ
+T3	Parts 0 5	バッテリー
+T5	Parts 17 21	電気配線
+T6	Parts 86 90	電気配線
+T4	Parts 30 36	右ハンドル車
+R1	Coreference Arg1:T5 Arg2:T6	
+R3	Contact Arg1:T3 Arg2:T5	
+R4	Contact Arg1:T1 Arg2:T5	
+R5	Connect Arg1:T3 Arg2:T1	
+R6	Part-Whole Arg1:T2 Arg2:T4	
+R7	Part-Whole Arg1:T3 Arg2:T4	
+R8	Part-Whole Arg1:T1 Arg2:T4	
+R9	Part-Whole Arg1:T5 Arg2:T4	

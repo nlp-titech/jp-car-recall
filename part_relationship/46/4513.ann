@@ -1,0 +1,9 @@
+T1	Parts 0 10	前輪用ブレーキホース
+T2	Parts 43 50	タイヤホイール
+T3	Parts 35 42	ブレーキホース
+T4	Parts 68 75	ブレーキホース
+T5	Parts 86 91	ブレーキ液
+T6	Parts 22 26	ハンドル
+R1	Coreference Arg1:T1 Arg2:T3	
+R2	Coreference Arg1:T3 Arg2:T4	
+R3	Contact Arg1:T4 Arg2:T5	

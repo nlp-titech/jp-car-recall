@@ -1,0 +1,11 @@
+T3	Parts 44 47	タイヤ
+T4	Parts 80 83	タイヤ
+T5	Parts 87 90	警告灯
+T9	Parts 0 10	タイヤ空気圧監視装置
+T2	Parts 11 18	制御モジュール
+T6	Parts 25 30	モジュール
+R1	Coreference Arg1:T2 Arg2:T6	
+R2	Part-Whole Arg1:T2 Arg2:T9	
+R5	Coreference Arg1:T3 Arg2:T4	
+R6	Connect Arg1:T9 Arg2:T5	
+R3	Connect Arg1:T3 Arg2:T6	

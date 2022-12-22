@@ -1,0 +1,17 @@
+T1	Parts 4 9	昇降シート
+T2	Parts 21 26	昇降シート
+T3	Parts 64 67	シート
+T4	Parts 37 40	ヒンジ
+T5	Parts 80 83	ヒンジ
+T6	Parts 0 3	助手席
+T7	Parts 14 16	車両
+R1	Part-Whole Arg1:T1 Arg2:T6	
+R2	Part-Whole Arg1:T6 Arg2:T7	
+R3	Coreference Arg1:T1 Arg2:T2	
+T8	Parts 27 36	折畳式フットレスト
+R4	Part-Whole Arg1:T8 Arg2:T2	
+R5	Contact Arg1:T4 Arg2:T8	
+R6	Coreference Arg1:T1 Arg2:T3	
+R7	Coreference Arg1:T4 Arg2:T5	
+T9	Parts 52 58	フットレスト
+R8	Coreference Arg1:T8 Arg2:T9	

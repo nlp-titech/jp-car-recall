@@ -1,0 +1,16 @@
+T10	Parts 0 9	トランスミッション
+T11	Parts 10 19	前後進切り替え機構
+T12	Parts 72 79	クラッチケース
+T1	Parts 24 34	クラッチケース軸受け
+T2	Parts 55 58	軸受け
+R1	Coreference Arg1:T2 Arg2:T1	
+T3	Parts 64 71	メインシャフト
+T4	Parts 95 101	前後進レバー
+T5	Parts 110 112	車両
+R2	Part-Whole Arg1:T11 Arg2:T10	
+R3	Part-Whole Arg1:T1 Arg2:T12	
+R4	Part-Whole Arg1:T12 Arg2:T11	
+R5	Part-Whole Arg1:T3 Arg2:T11	
+R6	Connect Arg1:T4 Arg2:T11	
+R7	Part-Whole Arg1:T10 Arg2:T5	
+R8	Contact Arg1:T3 Arg2:T2	

@@ -1,0 +1,15 @@
+T13	Parts 22 37	制動倍力装置（マスターバック）
+T14	Parts 55 59	エンジン
+T15	Parts 119 129	冷凍機コンプレッサー
+T16	Parts 159 163	エンジン
+T17	Parts 189 196	ブレーキペダル
+T21	Parts 204 206	車両
+T2	Parts 80 88	トルクコンバータ
+R1	Coreference Arg1:T16 Arg2:T14	
+T1	Parts 0 17	自動変速機付ガソリンエンジン搭載車
+R2	Part-Whole Arg1:T13 Arg2:T1	
+R3	Part-Whole Arg1:T13 Arg2:T14	
+R4	Part-Whole Arg1:T2 Arg2:T13	
+R5	Part-Whole Arg1:T15 Arg2:T1	
+R6	Coreference Arg1:T1 Arg2:T21	
+R7	Part-Whole Arg1:T17 Arg2:T21	

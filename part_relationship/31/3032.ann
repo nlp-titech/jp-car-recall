@@ -1,0 +1,18 @@
+T14	Parts 29 39	フランジカップリング
+T16	Parts 69 79	フランジカップリング
+T17	Parts 86 102	フランジカップリング締付けボルト
+T18	Parts 132 142	フランジカップリング
+T1	Parts 0 7	１２段式変速機
+T2	Parts 12 18	大型トラクタ
+T3	Parts 23 26	変速機
+R1	Coreference Arg1:T1 Arg2:T3	
+T4	Parts 56 61	ベアリング
+R2	Coreference Arg1:T14 Arg2:T16	
+R3	Coreference Arg1:T16 Arg2:T18	
+T5	Parts 154 162	プロペラシャフト
+R4	Part-Whole Arg1:T14 Arg2:T3	
+R5	Contact Arg1:T17 Arg2:T16	
+R6	Contact Arg1:T5 Arg2:T3	
+R7	Part-Whole Arg1:T4 Arg2:T3	
+R9	Part-Whole Arg1:T5 Arg2:T2	
+R8	Part-Whole Arg1:T1 Arg2:T2	

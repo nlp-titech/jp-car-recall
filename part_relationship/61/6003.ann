@@ -1,0 +1,9 @@
+T1	Parts 0 7	制動灯スイッチ
+T2	Parts 68 72	スイッチ
+T3	Parts 85 91	ＥＳＣ警告灯
+T4	Parts 105 108	制動灯
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Connect Arg1:T2 Arg2:T3	
+R3	Connect Arg1:T2 Arg2:T4	
+T5	Parts 95 98	ＥＳＣ
+R4	Connect Arg1:T3 Arg2:T5	

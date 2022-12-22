@@ -1,0 +1,7 @@
+T15	Parts 99 102	リレー
+T16	Parts 17 25	間欠作動用リレー
+T14	Parts 80 84	ワイパー
+T1	Parts 0 8	ワイパースイッチ
+R2	Coreference Arg1:T15 Arg2:T16	
+R5	Connect Arg1:T1 Arg2:T14	
+R1	Part-Whole Arg1:T16 Arg2:T1	

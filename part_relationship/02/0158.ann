@@ -1,0 +1,10 @@
+T11	Parts 0 3	変速機
+T12	Parts 4 10	シフトレバー
+T13	Parts 15 22	シフトケーブル
+T14	Parts 65 72	シフトケーブル
+T15	Parts 75 77	芯線
+R1	Coreference Arg1:T14 Arg2:T13	
+R2	Connect Arg1:T11 Arg2:T12	
+R3	Contact Arg1:T11 Arg2:T13	
+R4	Contact Arg1:T13 Arg2:T12	
+R5	Part-Whole Arg1:T15 Arg2:T14	

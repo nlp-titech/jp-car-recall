@@ -1,0 +1,16 @@
+T8	Parts 41 43	ギヤ
+T1	Parts 0 9	トランスミッション
+T2	Parts 16 27	スピードセンサ駆動ギヤ
+T4	Parts 83 90	スピードセンサ
+T5	Parts 97 100	速度計
+T6	Parts 118 120	車両
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R4	Connect Arg1:T4 Arg2:T2	
+R5	Connect Arg1:T5 Arg2:T4	
+R6	Part-Whole Arg1:T5 Arg2:T6	
+R7	Part-Whole Arg1:T4 Arg2:T6	
+R8	Part-Whole Arg1:T1 Arg2:T6	
+T3	Parts 135 138	シフト
+R3	Part-Whole Arg1:T3 Arg2:T6	
+R1	Coreference Arg1:T2 Arg2:T8	
+R9	Connect Arg1:T1 Arg2:T3	

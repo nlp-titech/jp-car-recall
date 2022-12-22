@@ -1,0 +1,13 @@
+T14	Parts 1 12	ステアリングリンケージ
+T15	Parts 13 15	ピン
+T16	Parts 22 25	ボルト
+T17	Parts 44 47	ボルト
+T18	Parts 73 76	ボルト
+T19	Parts 89 91	ピン
+R1	Coreference Arg1:T17 Arg2:T16	
+R2	Coreference Arg1:T18 Arg2:T17	
+R3	Coreference Arg1:T19 Arg2:T15	
+T1	Parts 96 100	ハンドル
+R4	Part-Whole Arg1:T15 Arg2:T14	
+R5	Contact Arg1:T15 Arg2:T16	
+R6	Part-Whole Arg1:T16 Arg2:T14	

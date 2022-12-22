@@ -1,0 +1,9 @@
+T1	Parts 0 11	後部座席用シートベルト
+T2	Parts 55 61	シートベルト
+T3	Parts 12 17	中間ガイド
+T4	Parts 46 51	中間ガイド
+T5	Parts 18 22	リベット
+R1	Part-Whole Arg1:T3 Arg2:T1	
+R2	Contact Arg1:T3 Arg2:T5	
+R3	Coreference Arg1:T3 Arg2:T4	
+R4	Coreference Arg1:T1 Arg2:T2	

@@ -1,0 +1,13 @@
+T12	Parts 115 121	後輪ブレーキ
+T13	Parts 92 99	アウターワイヤ
+T14	Parts 84 91	インナーワイヤ
+T17	Parts 28 38	足踏み式後輪ブレーキ
+T19	Parts 10 17	取付ブラケット
+T15	Parts 51 56	ブラケット
+T1	Parts 0 9	後輪ブレーキワイヤ
+R1	Coreference Arg1:T15 Arg2:T19	
+R2	Coreference Arg1:T12 Arg2:T17	
+R3	Contact Arg1:T19 Arg2:T1	
+R4	Part-Whole Arg1:T1 Arg2:T17	
+R5	Part-Whole Arg1:T14 Arg2:T1	
+R6	Part-Whole Arg1:T13 Arg2:T1	

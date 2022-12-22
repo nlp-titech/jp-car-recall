@@ -1,0 +1,9 @@
+T1	Parts 0 13	エンジン制御用コンピュータ
+T2	Parts 18 25	制御プログラム
+T3	Parts 33 43	アイドリングストップ
+T4	Parts 51 55	エンジン
+T5	Parts 82 86	エンジン
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Connect Arg1:T3 Arg2:T1	
+R3	Connect Arg1:T4 Arg2:T1	
+R4	Coreference Arg1:T5 Arg2:T4	

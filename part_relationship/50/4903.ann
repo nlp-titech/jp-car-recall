@@ -1,0 +1,10 @@
+T1	Parts 16 23	シフトケーブル
+T2	Parts 35 43	軽合金製ホルダー
+T4	Parts 1 11	手動５速変速機装着車
+T3	Parts 28 34	振動緩衝部品
+R1	Contact Arg1:T2 Arg2:T3	
+R2	Contact Arg1:T3 Arg2:T1	
+R3	Contact Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T1 Arg2:T4	
+R5	Part-Whole Arg1:T3 Arg2:T4	
+R6	Part-Whole Arg1:T2 Arg2:T4	

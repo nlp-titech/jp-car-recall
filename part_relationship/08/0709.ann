@@ -1,0 +1,24 @@
+T21	Parts 41 55	スイベル回り止め用ブラケット
+T22	Parts 57 63	配管クランプ
+T25	Parts 118 121	変速機
+T30	Parts 141 145	灯火装置
+T34	Parts 195 197	車体
+T35	Parts 171 174	原動機
+T36	Parts 101 104	原動機
+T1	Parts 0 13	電気配線（信号用、電源用）
+T2	Parts 38 40	配線
+R1	Coreference Arg1:T2 Arg2:T1	
+T3	Parts 70 72	配線
+R2	Coreference Arg1:T3 Arg2:T2	
+T4	Parts 88 93	信号用配線
+T5	Parts 192 194	配線
+R3	Coreference Arg1:T35 Arg2:T36	
+R4	Coreference Arg1:T5 Arg2:T6	
+T6	Parts 158 163	電源用配線
+R5	Oneway-Coreference Arg1:T1 Arg2:T4	
+R6	Oneway-Coreference Arg1:T1 Arg2:T6	
+R7	Connect Arg1:T4 Arg2:T36	
+R8	Connect Arg1:T4 Arg2:T25	
+R9	Connect Arg1:T4 Arg2:T30	
+R10	Connect Arg1:T36 Arg2:T25	
+R11	Contact Arg1:T5 Arg2:T34	

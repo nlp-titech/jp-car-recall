@@ -1,0 +1,10 @@
+T2	Parts 6 19	エアバッグ用配線コネクタ－
+T3	Parts 70 75	エアバッグ
+T4	Parts 50 55	コネクタ－
+T5	Parts 0 4	ハンドル
+T6	Parts 20 26	ガイドステ－
+R3	Part-Whole Arg1:T6 Arg2:T2	
+T7	Parts 40 46	ガイドステ－
+R5	Coreference Arg1:T6 Arg2:T7	
+R6	Coreference Arg1:T2 Arg2:T4	
+R1	Part-Whole Arg1:T2 Arg2:T5	

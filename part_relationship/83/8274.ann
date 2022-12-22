@@ -1,0 +1,19 @@
+T1	Parts 0 9	エアサスペンション
+T2	Parts 14 23	大型トラック・バス
+T3	Parts 28 37	リヤブレーキシュー
+T4	Parts 44 49	スプリング
+T5	Parts 74 77	シュー
+T6	Parts 82 117	クリップ（シュークリアランスを調整するアジャスターを保持している部品）
+T7	Parts 121 125	クリップ
+T8	Parts 161 164	シュー
+T9	Parts 181 187	リヤブレーキ
+R1	Part-Whole Arg1:T1 Arg2:T2	
+R2	Contact Arg1:T4 Arg2:T3	
+R3	Coreference Arg1:T5 Arg2:T4	
+R4	Contact Arg1:T6 Arg2:T5	
+R5	Coreference Arg1:T7 Arg2:T6	
+R6	Coreference Arg1:T8 Arg2:T5	
+R7	Part-Whole Arg1:T3 Arg2:T9	
+R8	Part-Whole Arg1:T4 Arg2:T9	
+R9	Part-Whole Arg1:T7 Arg2:T9	
+R10	Part-Whole Arg1:T9 Arg2:T2	

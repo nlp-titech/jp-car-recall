@@ -1,0 +1,10 @@
+T1	Parts 10 20	ステアリングシャフト
+T4	Parts 40 58	連結軸（インタミディエイトシャフト）
+T7	Parts 96 98	車両
+R2	Part-Whole Arg1:T4 Arg2:T1	
+R1	Part-Whole Arg1:T1 Arg2:T7	
+T2	Parts 25 29	ハンドル
+T3	Parts 30 36	ギアボックス
+R3	Contact Arg1:T3 Arg2:T4	
+R4	Contact Arg1:T2 Arg2:T4	
+R5	Connect Arg1:T2 Arg2:T3	

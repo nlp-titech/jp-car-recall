@@ -1,0 +1,17 @@
+T10	Parts 12 44	エアサスペンションの伸び高さを制限する装置（キャッチストラップ）
+T11	Parts 45 49	ワイヤー
+T12	Parts 61 65	ワイヤー
+T13	Parts 103 107	ワイヤー
+T1	Parts 0 4	トレーラ
+T2	Parts 5 7	車軸
+R1	Coreference Arg1:T12 Arg2:T11	
+T3	Parts 66 68	車軸
+R2	Coreference Arg1:T3 Arg2:T2	
+T4	Parts 100 102	車軸
+R3	Coreference Arg1:T4 Arg2:T3	
+R4	Coreference Arg1:T13 Arg2:T12	
+T5	Parts 119 121	車軸
+R5	Coreference Arg1:T5 Arg2:T4	
+R6	Part-Whole Arg1:T2 Arg2:T1	
+R8	Part-Whole Arg1:T11 Arg2:T10	
+R7	Part-Whole Arg1:T10 Arg2:T1	

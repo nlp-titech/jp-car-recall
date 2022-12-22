@@ -1,0 +1,17 @@
+T3	Parts 17 22	走行モータ
+T11	Parts 23 29	エンドカバー
+T14	Parts 38 43	走行モータ
+T15	Parts 44 47	出力軸
+T16	Parts 76 79	出力軸
+T17	Parts 97 100	出力軸
+T1	Parts 0 12	バッテリーフォークリフト
+R1	Coreference Arg1:T14 Arg2:T3	
+T2	Parts 54 57	減速機
+R2	Coreference Arg1:T16 Arg2:T15	
+R3	Coreference Arg1:T17 Arg2:T16	
+R4	Part-Whole Arg1:T3 Arg2:T1	
+R5	Contact Arg1:T11 Arg2:T3	
+R6	Part-Whole Arg1:T15 Arg2:T14	
+R7	Contact Arg1:T2 Arg2:T14	
+R8	Part-Whole Arg1:T11 Arg2:T1	
+R9	Part-Whole Arg1:T2 Arg2:T1	

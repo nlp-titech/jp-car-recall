@@ -1,0 +1,23 @@
+T1	Parts 0 12	ターボ付エンジン搭載車両
+T2	Parts 17 20	変速機
+T3	Parts 21 25	マウント
+T4	Parts 26 31	ブラケット
+T5	Parts 36 39	ボルト
+T7	Parts 78 81	ボルト
+R1	Coreference Arg1:T5 Arg2:T7	
+T8	Parts 109 112	ボルト
+R2	Coreference Arg1:T7 Arg2:T8	
+T9	Parts 122 126	エンジン
+T10	Parts 128 131	変速機
+R3	Coreference Arg1:T2 Arg2:T10	
+T11	Parts 141 149	ドライブシャフト
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Contact Arg1:T3 Arg2:T4	
+R6	Contact Arg1:T4 Arg2:T5	
+R7	Contact Arg1:T3 Arg2:T5	
+R8	Contact Arg1:T2 Arg2:T3	
+R9	Part-Whole Arg1:T9 Arg2:T1	
+R10	Part-Whole Arg1:T11 Arg2:T1	
+R11	Connect Arg1:T9 Arg2:T10	
+R12	Part-Whole Arg1:T3 Arg2:T1	
+R13	Part-Whole Arg1:T4 Arg2:T2	

@@ -1,0 +1,14 @@
+T14	Parts 49 71	バッフル板（燃料液面の揺動を抑止する仕切板）
+T15	Parts 15 23	燃料タンクバンド
+T16	Parts 43 46	タンク
+T1	Parts 0 4	トラック
+T2	Parts 5 10	燃料タンク
+R1	Coreference Arg1:T2 Arg2:T16	
+T5	Parts 102 104	車両
+T7	Parts 148 150	燃料
+R2	Coreference Arg1:T5 Arg2:T1	
+R3	Part-Whole Arg1:T14 Arg2:T16	
+R4	Contact Arg1:T15 Arg2:T2	
+R5	Contact Arg1:T15 Arg2:T1	
+R6	Part-Whole Arg1:T2 Arg2:T1	
+R7	Part-Whole Arg1:T7 Arg2:T16	

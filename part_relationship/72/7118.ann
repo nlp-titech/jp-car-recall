@@ -1,0 +1,11 @@
+T1	Parts 55 62	エンジンオイル
+T2	Parts 70 77	エンジンオイル
+T3	Parts 5 12	吸・排気バルブ
+T4	Parts 0 4	エンジン
+T6	Parts 13 16	シール
+T7	Parts 47 50	シール
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Contact Arg1:T1 Arg2:T7	
+R3	Coreference Arg1:T6 Arg2:T7	
+R4	Part-Whole Arg1:T3 Arg2:T4	
+R5	Contact Arg1:T3 Arg2:T6	

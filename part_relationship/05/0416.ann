@@ -1,0 +1,29 @@
+T17	Parts 15 22	フライホイール
+T18	Parts 23 31	トルクコンバータ
+T19	Parts 32 41	インプットプレート
+T22	Parts 11 14	原動機
+T23	Parts 80 83	原動機
+T27	Parts 148 160	フライホイールハウジング
+T28	Parts 167 170	原動機
+T1	Parts 0 6	動力伝達装置
+T2	Parts 48 51	ボルト
+T3	Parts 65 67	針金
+T4	Parts 104 106	針金
+T5	Parts 142 144	針金
+T6	Parts 172 175	吸音材
+R1	Coreference Arg1:T4 Arg2:T3	
+R3	Coreference Arg1:T22 Arg2:T23	
+R4	Coreference Arg1:T5 Arg2:T4	
+R5	Coreference Arg1:T28 Arg2:T23	
+R6	Part-Whole Arg1:T22 Arg2:T1	
+R7	Part-Whole Arg1:T17 Arg2:T22	
+R8	Part-Whole Arg1:T18 Arg2:T22	
+R9	Part-Whole Arg1:T19 Arg2:T18	
+R10	Contact Arg1:T19 Arg2:T2	
+R12	Contact Arg1:T3 Arg2:T2	
+T7	Parts 110 122	フライホイールハウジング
+R2	Coreference Arg1:T7 Arg2:T27	
+R13	Contact Arg1:T17 Arg2:T27	
+R14	Part-Whole Arg1:T6 Arg2:T28	
+R15	Contact Arg1:T17 Arg2:T2	
+R16	Contact Arg1:T19 Arg2:T17	

@@ -1,0 +1,22 @@
+T28	Parts 32 35	ファン
+T29	Parts 16 20	ヒューズ
+T30	Parts 67 70	ファン
+T33	Parts 71 74	モータ
+T34	Parts 113 116	モータ
+T35	Parts 133 136	モータ
+T36	Parts 146 149	モータ
+T1	Parts 0 4	エアコン
+T2	Parts 5 15	熱交換機冷却用ファン
+R1	Coreference Arg1:T30 Arg2:T28	
+R2	Coreference Arg1:T28 Arg2:T2	
+R3	Coreference Arg1:T34 Arg2:T33	
+R4	Coreference Arg1:T35 Arg2:T34	
+R5	Coreference Arg1:T36 Arg2:T35	
+T3	Parts 154 158	エアコン
+T4	Parts 159 163	熱交換機
+R6	Coreference Arg1:T3 Arg2:T1	
+R7	Connect Arg1:T29 Arg2:T2	
+R8	Part-Whole Arg1:T2 Arg2:T1	
+R9	Part-Whole Arg1:T33 Arg2:T30	
+R10	Part-Whole Arg1:T4 Arg2:T3	
+R11	Connect Arg1:T4 Arg2:T2	

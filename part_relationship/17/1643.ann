@@ -1,0 +1,16 @@
+T1	Parts 0 9	消防車（はしご車）
+T2	Parts 10 14	電気装置
+T3	Parts 19 23	電源回路
+T5	Parts 34 38	エアコン
+T6	Parts 45 53	ハーネスコネクタ
+T7	Parts 94 98	コネクタ
+R1	Coreference Arg1:T6 Arg2:T7	
+T8	Parts 103 107	電源回路
+R2	Coreference Arg1:T3 Arg2:T8	
+T9	Parts 122 130	スピードメーター
+T10	Parts 143 146	ＡＢＳ
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T3 Arg2:T2	
+R5	Connect Arg1:T5 Arg2:T3	
+R6	Connect Arg1:T9 Arg2:T3	
+R7	Connect Arg1:T10 Arg2:T3	

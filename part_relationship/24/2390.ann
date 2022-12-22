@@ -1,0 +1,13 @@
+T12	Parts 96 101	方向指示器
+T13	Parts 31 41	フラッシャーユニット
+T1	Parts 3 10	側面方向指示器
+T2	Parts 14 16	車両
+T3	Parts 17 26	方向指示器スイッチ
+T4	Parts 54 58	スイッチ
+R1	Coreference Arg1:T4 Arg2:T3	
+R2	Coreference Arg1:T12 Arg2:T1	
+R4	Connect Arg1:T12 Arg2:T4	
+R6	Part-Whole Arg1:T3 Arg2:T2	
+R7	Part-Whole Arg1:T13 Arg2:T2	
+R8	Part-Whole Arg1:T12 Arg2:T2	
+R9	Connect Arg1:T13 Arg2:T3	

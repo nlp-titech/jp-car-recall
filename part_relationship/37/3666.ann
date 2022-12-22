@@ -1,0 +1,22 @@
+T1	Parts 18 25	ナックルアーム
+T2	Parts 50 57	ナックルアーム
+T3	Parts 109 116	ナックルアーム
+T4	Parts 7 13	かじ取り装置
+T5	Parts 38 44	ステアリング
+T6	Parts 0 6	農耕トラクタ
+T7	Parts 132 141	フロントギヤケース
+T9	Parts 160 164	ハンドル
+T11	Parts 117 119	ハブ
+T12	Parts 129 131	ハブ
+R1	Part-Whole Arg1:T4 Arg2:T6	
+R2	Coreference Arg1:T2 Arg2:T1	
+R3	Coreference Arg1:T3 Arg2:T2	
+R4	Coreference Arg1:T12 Arg2:T11	
+R6	Contact Arg1:T11 Arg2:T3	
+R7	Contact Arg1:T7 Arg2:T12	
+R9	Part-Whole Arg1:T1 Arg2:T4	
+T8	Parts 147 150	オイル
+R11	Contact Arg1:T7 Arg2:T8	
+R12	Part-Whole Arg1:T7 Arg2:T4	
+R5	Connect Arg1:T4 Arg2:T5	
+R8	Coreference Arg1:T5 Arg2:T9	

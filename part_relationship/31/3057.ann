@@ -1,0 +1,13 @@
+T12	Parts 0 12	一次減速機構付無段変速機
+T13	Parts 64 69	無段変速機
+T14	Parts 70 81	ドライブプーリシャフト
+T15	Parts 111 115	シャフト
+T1	Parts 13 22	油圧制御プログラム
+T2	Parts 30 35	変速レバー
+R1	Coreference Arg1:T12 Arg2:T13	
+T3	Parts 53 57	アクセル
+R2	Coreference Arg1:T14 Arg2:T15	
+R3	Connect Arg1:T1 Arg2:T12	
+R4	Part-Whole Arg1:T14 Arg2:T13	
+R5	Connect Arg1:T2 Arg2:T12	
+R6	Connect Arg1:T3 Arg2:T12	

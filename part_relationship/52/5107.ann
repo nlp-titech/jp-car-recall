@@ -1,0 +1,7 @@
+T2	Parts 84 93	ショックアブソーバ
+T3	Parts 15 21	取付けボルト
+T4	Parts 67 73	取付けボルト
+T1	Parts 0 14	リヤショックアブソーバ用台座
+R1	Contact Arg1:T1 Arg2:T3	
+R2	Coreference Arg1:T3 Arg2:T4	
+R3	Part-Whole Arg1:T2 Arg2:T1	

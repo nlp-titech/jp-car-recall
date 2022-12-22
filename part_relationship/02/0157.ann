@@ -1,0 +1,11 @@
+T10	Parts 0 10	前輪用ブレーキホース
+T11	Parts 22 29	ブレーキホース
+T12	Parts 17 20	保持具
+T13	Parts 65 72	ブレーキホース
+T14	Parts 73 79	前輪のタイヤ
+R1	Coreference Arg1:T11 Arg2:T10	
+R2	Coreference Arg1:T13 Arg2:T11	
+T1	Parts 94 99	ブレーキ液
+R5	Contact Arg1:T1 Arg2:T13	
+R6	Contact Arg1:T14 Arg2:T13	
+R3	Contact Arg1:T12 Arg2:T10	

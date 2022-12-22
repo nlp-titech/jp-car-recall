@@ -1,0 +1,13 @@
+T1	Parts 0 15	パワーステアリング用油圧ポンプ
+T2	Parts 28 36	補機駆動用ベルト
+T3	Parts 112 120	補機駆動用ベルト
+T5	Parts 85 91	締付けボルト
+T7	Parts 124 128	ハンドル
+T8	Parts 102 110	油圧ポンププーリ
+T9	Parts 43 52	ポンプ締付けボルト
+R3	Coreference Arg1:T9 Arg2:T5	
+R4	Coreference Arg1:T2 Arg2:T3	
+R5	Contact Arg1:T1 Arg2:T8	
+R6	Connect Arg1:T3 Arg2:T7	
+R1	Contact Arg1:T1 Arg2:T9	
+R2	Contact Arg1:T3 Arg2:T8	

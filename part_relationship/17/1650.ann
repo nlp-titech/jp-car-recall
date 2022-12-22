@@ -1,0 +1,15 @@
+T14	Parts 136 140	ブレーキ
+T16	Parts 147 151	ブレーキ
+T18	Parts 163 167	ブレーキ
+T20	Parts 118 125	リレーピストン
+T21	Parts 126 131	シリンダー
+T1	Parts 0 4	トレーラ
+T2	Parts 5 13	エアブレーキ装置
+T3	Parts 33 51	バルブ（リレーエマージェンシバルブ）
+R1	Coreference Arg1:T14 Arg2:T16	
+R2	Coreference Arg1:T16 Arg2:T18	
+R3	Coreference Arg1:T2 Arg2:T14	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Connect Arg1:T3 Arg2:T2	
+R6	Part-Whole Arg1:T20 Arg2:T3	
+R8	Part-Whole Arg1:T21 Arg2:T3	

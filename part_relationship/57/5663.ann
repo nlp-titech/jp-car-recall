@@ -1,0 +1,14 @@
+T1	Parts 23 44	電熱フィルム（シート・ヒータ・エレメント）
+T2	Parts 0 4	運転者席
+T5	Parts 11 18	シート・ヒータ
+T7	Parts 7 10	助手席
+T8	Parts 142 144	車両
+T3	Parts 70 76	電熱フィルム
+T4	Parts 113 119	電熱フィルム
+R1	Coreference Arg1:T3 Arg2:T1	
+R2	Coreference Arg1:T4 Arg2:T3	
+R3	Part-Whole Arg1:T1 Arg2:T5	
+R4	Part-Whole Arg1:T5 Arg2:T7	
+R5	Part-Whole Arg1:T5 Arg2:T2	
+R6	Part-Whole Arg1:T7 Arg2:T8	
+R7	Part-Whole Arg1:T2 Arg2:T8	

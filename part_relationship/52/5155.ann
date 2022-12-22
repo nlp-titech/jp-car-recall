@@ -1,0 +1,29 @@
+T2	Parts 4 11	サイドスタンド
+T3	Parts 52 59	サイドスタンド
+T4	Parts 89 96	サイドスタンド
+T5	Parts 168 175	サイドスタンド
+T6	Parts 185 200	サイドスタンド戻し忘れ防止機構
+T7	Parts 63 68	スプリング
+T8	Parts 34 39	ワッシャー
+T9	Parts 73 78	ワッシャー
+T10	Parts 204 208	エンジン
+T13	Parts 0 3	二輪車
+T1	Parts 12 26	リターンスプリングフックピン
+T11	Parts 109 114	フックピン
+T12	Parts 154 159	フックピン
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Coreference Arg1:T8 Arg2:T9	
+R3	Coreference Arg1:T3 Arg2:T4	
+R4	Coreference Arg1:T1 Arg2:T11	
+R5	Coreference Arg1:T11 Arg2:T12	
+R6	Coreference Arg1:T4 Arg2:T5	
+R8	Part-Whole Arg1:T10 Arg2:T13	
+R9	Part-Whole Arg1:T2 Arg2:T13	
+R10	Contact Arg1:T1 Arg2:T2	
+R11	Contact Arg1:T1 Arg2:T8	
+R12	Contact Arg1:T8 Arg2:T7	
+R13	Contact Arg1:T1 Arg2:T7	
+R7	Connect Arg1:T6 Arg2:T5	
+R14	Contact Arg1:T7 Arg2:T3	
+R15	Connect Arg1:T6 Arg2:T10	
+R16	Part-Whole Arg1:T6 Arg2:T13	

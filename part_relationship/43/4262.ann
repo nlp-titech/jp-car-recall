@@ -1,0 +1,11 @@
+T1	Parts 86 97	エアコンコンプレッサー
+T2	Parts 0 6	中型トラック
+T3	Parts 16 30	ボディコントロールモジュール
+T4	Parts 78 81	制動灯
+T5	Parts 50 52	車両
+R1	Part-Whole Arg1:T3 Arg2:T2	
+R2	Coreference Arg1:T2 Arg2:T5	
+R3	Part-Whole Arg1:T4 Arg2:T2	
+R4	Connect Arg1:T3 Arg2:T4	
+R5	Part-Whole Arg1:T1 Arg2:T2	
+R6	Connect Arg1:T3 Arg2:T1	

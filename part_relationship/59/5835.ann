@@ -1,0 +1,16 @@
+T1	Parts 127 132	エアバック
+T2	Parts 56 64	オーディオアンプ
+T3	Parts 88 92	メーター
+T5	Parts 0 7	フロントシート
+T6	Parts 30 33	シート
+T9	Parts 94 108	乗員保護装置（ＳＲＳ）警告灯
+T10	Parts 13 15	配線
+T11	Parts 69 71	配線
+T4	Parts 8 10	座席
+R1	Coreference Arg1:T5 Arg2:T4	
+#1	AnnotatorNotes R1	この場合はCoreference？
+R2	Coreference Arg1:T4 Arg2:T6	
+R3	Coreference Arg1:T10 Arg2:T11	
+R4	Part-Whole Arg1:T9 Arg2:T3	
+R5	Connect Arg1:T11 Arg2:T3	
+R6	Connect Arg1:T11 Arg2:T1	

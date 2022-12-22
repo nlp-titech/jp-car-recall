@@ -1,0 +1,15 @@
+T10	Parts 88 94	駐車ブレーキ
+T11	Parts 108 114	駐車ブレーキ
+T12	Parts 66 69	昇圧機
+T13	Parts 32 37	電源昇圧機
+T1	Parts 0 2	車両
+T2	Parts 7 13	駐車ブレーキ
+T3	Parts 21 24	電磁弁
+R1	Coreference Arg1:T12 Arg2:T13	
+R2	Coreference Arg1:T10 Arg2:T2	
+R3	Coreference Arg1:T11 Arg2:T10	
+R5	Part-Whole Arg1:T2 Arg2:T1	
+R6	Connect Arg1:T13 Arg2:T3	
+R4	Part-Whole Arg1:T3 Arg2:T1	
+R7	Connect Arg1:T2 Arg2:T3	
+R8	Part-Whole Arg1:T13 Arg2:T1	

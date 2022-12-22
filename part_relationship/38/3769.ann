@@ -1,0 +1,13 @@
+T1	Parts 11 18	ブレーキワイヤ
+T2	Parts 0 6	駐車ブレーキ
+T3	Parts 42 48	駐車ブレーキ
+T4	Parts 114 120	駐車ブレーキ
+T5	Parts 24 29	固定ナット
+T6	Parts 64 69	固定ナット
+T7	Parts 99 104	固定ナット
+R1	Coreference Arg1:T6 Arg2:T5	
+R2	Coreference Arg1:T7 Arg2:T6	
+R3	Coreference Arg1:T3 Arg2:T2	
+R4	Coreference Arg1:T4 Arg2:T3	
+R5	Part-Whole Arg1:T1 Arg2:T2	
+R6	Contact Arg1:T5 Arg2:T1	

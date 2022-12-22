@@ -1,0 +1,18 @@
+T1	Parts 0 2	車室
+T2	Parts 4 8	電気配線
+T5	Parts 27 31	電気配線
+T6	Parts 32 38	保護ヒューズ
+T7	Parts 46 50	電気配線
+T8	Parts 60 64	電気配線
+T9	Parts 81 85	電気配線
+T10	Parts 93 97	灯火器類
+R1	Coreference Arg1:T8 Arg2:T7	
+R2	Coreference Arg1:T7 Arg2:T5	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+T3	Parts 13 26	荷箱リヤゲート固定用電磁便
+R4	Part-Whole Arg1:T3 Arg2:T2	
+R5	Coreference Arg1:T2 Arg2:T5	
+R6	Connect Arg1:T6 Arg2:T5	
+R7	Part-Whole Arg1:T5 Arg2:T3	
+R8	Coreference Arg1:T8 Arg2:T9	
+R9	Connect Arg1:T9 Arg2:T10	

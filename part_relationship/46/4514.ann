@@ -1,0 +1,13 @@
+T1	Parts 10 18	ピットマンアーム
+T2	Parts 86 94	ピットマンアーム
+T5	Parts 0 6	かじ取り装置
+T6	Parts 29 38	潤滑剤（グリース）
+T7	Parts 99 103	ハンドル
+R2	Coreference Arg1:T1 Arg2:T2	
+R3	Connect Arg1:T7 Arg2:T5	
+R4	Part-Whole Arg1:T1 Arg2:T5	
+T3	Parts 19 27	ボールジョイント
+T4	Parts 72 80	ボールジョイント
+R5	Coreference Arg1:T3 Arg2:T4	
+R6	Part-Whole Arg1:T3 Arg2:T1	
+R1	Contact Arg1:T3 Arg2:T6	

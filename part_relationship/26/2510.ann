@@ -1,0 +1,5 @@
+T1	Parts 5 14	ダブルキャブ消防車
+T2	Parts 19 21	車枠
+T3	Parts 73 75	車枠
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Part-Whole Arg1:T2 Arg2:T1	

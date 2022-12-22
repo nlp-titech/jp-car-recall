@@ -1,0 +1,5 @@
+T3	Parts 0 3	前照灯
+T4	Parts 8 11	灯火器
+T5	Parts 37 40	灯火器
+R1	Coreference Arg1:T5 Arg2:T4	
+R2	Part-Whole Arg1:T4 Arg2:T3	

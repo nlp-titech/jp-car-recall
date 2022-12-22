@@ -1,0 +1,30 @@
+T10	Parts 47 48	扉
+T11	Parts 57 61	スイッチ
+T12	Parts 81 82	扉
+T13	Parts 90 91	扉
+T14	Parts 132 153	開扉発車防止装置（アクセルインターロック）
+T19	Parts 30 31	扉
+T1	Parts 0 6	中型路線バス
+T2	Parts 7 17	ダブル電磁弁開閉機構
+T3	Parts 18 25	後扉（引き扉）
+R1	Coreference Arg1:T19 Arg2:T3	
+T4	Parts 35 39	電気回路
+R2	Coreference Arg1:T10 Arg2:T19	
+T5	Parts 70 74	運転者席
+T6	Parts 76 77	扉
+R3	Coreference Arg1:T6 Arg2:T10	
+R4	Coreference Arg1:T12 Arg2:T6	
+R5	Coreference Arg1:T13 Arg2:T12	
+T7	Parts 119 122	ランプ
+R6	Part-Whole Arg1:T2 Arg2:T1	
+R7	Connect Arg1:T3 Arg2:T2	
+R8	Part-Whole Arg1:T4 Arg2:T2	
+R9	Connect Arg1:T11 Arg2:T4	
+R10	Part-Whole Arg1:T5 Arg2:T1	
+R14	Part-Whole Arg1:T3 Arg2:T1	
+R15	Part-Whole Arg1:T7 Arg2:T1	
+R16	Part-Whole Arg1:T14 Arg2:T1	
+R17	Connect Arg1:T10 Arg2:T11	
+R13	Part-Whole Arg1:T11 Arg2:T1	
+R12	Connect Arg1:T13 Arg2:T14	
+R11	Connect Arg1:T13 Arg2:T7	

@@ -1,0 +1,12 @@
+T1	Parts 0 5	バン型車両
+T2	Parts 32 38	固定用ボルト
+T3	Parts 21 31	スライド式ドアレール
+T4	Parts 58 60	ドア
+T5	Parts 81 86	ドアレール
+T6	Parts 102 104	ドア
+R2	Contact Arg1:T2 Arg2:T3	
+R1	Part-Whole Arg1:T3 Arg2:T1	
+R3	Coreference Arg1:T3 Arg2:T5	
+R4	Coreference Arg1:T4 Arg2:T6	
+R5	Contact Arg1:T3 Arg2:T4	
+R6	Part-Whole Arg1:T4 Arg2:T1	

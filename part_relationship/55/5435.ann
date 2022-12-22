@@ -1,0 +1,13 @@
+T1	Parts 107 114	後面方向指示器
+T3	Parts 48 53	ブラケット
+T4	Parts 90 95	ブラケット
+T5	Parts 115 120	後部反射器
+T8	Parts 121 124	番号灯
+T2	Parts 0 26	ナンバープレートホルダブラケット（番号標板取付金具）
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Coreference Arg1:T3 Arg2:T4	
+T6	Parts 127 131	番号標板
+R3	Contact Arg1:T4 Arg2:T1	
+R4	Contact Arg1:T4 Arg2:T5	
+R5	Contact Arg1:T4 Arg2:T8	
+R6	Contact Arg1:T4 Arg2:T6	

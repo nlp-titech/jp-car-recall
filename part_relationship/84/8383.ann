@@ -1,0 +1,16 @@
+T1	Parts 0 13	脱着装置付きコンテナ自動車
+T2	Parts 18 26	フレームサポート
+T3	Parts 37 42	燃料ホース
+T4	Parts 43 51	フレームサポート
+T5	Parts 79 84	燃料ホース
+T6	Parts 85 93	フレームサポート
+T7	Parts 101 106	燃料ホース
+T8	Parts 117 119	燃料
+R1	Coreference Arg1:T2 Arg2:T4	
+R2	Coreference Arg1:T4 Arg2:T6	
+R3	Coreference Arg1:T3 Arg2:T5	
+R4	Coreference Arg1:T5 Arg2:T7	
+R5	Contact Arg1:T7 Arg2:T8	
+R6	Part-Whole Arg1:T2 Arg2:T1	
+R7	Part-Whole Arg1:T3 Arg2:T1	
+R8	Part-Whole Arg1:T8 Arg2:T1	

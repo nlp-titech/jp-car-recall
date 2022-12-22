@@ -1,0 +1,19 @@
+T4	Parts 95 99	センサー
+T7	Parts 148 152	ブレーキ
+T11	Parts 140 142	四輪
+T13	Parts 0 10	横滑り防止装置装備車
+T1	Parts 23 30	加速度センサー
+T3	Parts 35 42	ラバーダンパー
+T5	Parts 68 75	ラバーダンパー
+T2	Parts 104 121	横滑り防止・ＡＢＳ統合制御ユニット
+R1	Part-Whole Arg1:T1 Arg2:T13	
+R2	Part-Whole Arg1:T3 Arg2:T1	
+R3	Coreference Arg1:T3 Arg2:T5	
+R4	Coreference Arg1:T1 Arg2:T4	
+R5	Connect Arg1:T4 Arg2:T2	
+R6	Part-Whole Arg1:T11 Arg2:T13	
+R7	Connect Arg1:T2 Arg2:T7	
+R8	Contact Arg1:T11 Arg2:T7	
+T6	Parts 145 147	一輪
+R9	Oneway-Coreference Arg1:T11 Arg2:T6	
+R10	Contact Arg1:T7 Arg2:T6	

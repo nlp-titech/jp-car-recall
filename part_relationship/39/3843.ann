@@ -1,0 +1,14 @@
+T1	Parts 7 13	かじ取り装置
+T2	Parts 0 6	農耕トラクタ
+T4	Parts 96 99	オイル
+T5	Parts 18 28	油圧シリンダキャップ
+T6	Parts 41 45	キャップ
+R1	Coreference Arg1:T6 Arg2:T5	
+T3	Parts 46 49	止め輪
+T7	Parts 88 91	止め輪
+R2	Coreference Arg1:T7 Arg2:T3	
+R3	Contact Arg1:T3 Arg2:T6	
+R4	Contact Arg1:T4 Arg2:T6	
+R5	Part-Whole Arg1:T5 Arg2:T1	
+R6	Part-Whole Arg1:T3 Arg2:T1	
+R7	Part-Whole Arg1:T1 Arg2:T2	

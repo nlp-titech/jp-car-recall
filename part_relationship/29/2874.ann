@@ -1,0 +1,11 @@
+T1	Parts 0 5	左リヤドア
+T2	Parts 10 17	リヤドアラッチ
+T3	Parts 27 32	ドアラッチ
+R1	Coreference Arg1:T3 Arg2:T2	
+T5	Parts 52 57	ロック機構
+T6	Parts 66 68	ドア
+R2	Coreference Arg1:T6 Arg2:T1	
+T7	Parts 98 100	ドア
+R3	Coreference Arg1:T7 Arg2:T6	
+R4	Part-Whole Arg1:T5 Arg2:T3	
+R5	Part-Whole Arg1:T2 Arg2:T1	

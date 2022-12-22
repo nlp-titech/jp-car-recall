@@ -1,0 +1,13 @@
+T14	Parts 28 32	点火装置
+T15	Parts 33 43	イグニッションコイル
+T1	Parts 0 4	燃料装置
+T2	Parts 5 7	軽油
+T3	Parts 9 12	ＣＮＧ
+T4	Parts 17 23	大型トラック
+T5	Parts 136 144	スロットルバルブ
+R1	Part-Whole Arg1:T5 Arg2:T14	
+R2	Part-Whole Arg1:T15 Arg2:T14	
+R3	Part-Whole Arg1:T1 Arg2:T4	
+R4	Contact Arg1:T2 Arg2:T1	
+R5	Contact Arg1:T3 Arg2:T1	
+R6	Part-Whole Arg1:T14 Arg2:T4	

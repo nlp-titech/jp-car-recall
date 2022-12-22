@@ -1,0 +1,10 @@
+T10	Parts 13 18	左右ピラー
+T12	Parts 20 34	バックミラーヒーターハーネス
+T1	Parts 0 8	大型高速路線バス
+T2	Parts 40 44	シール剤
+R2	Part-Whole Arg1:T10 Arg2:T1	
+R3	Part-Whole Arg1:T12 Arg2:T1	
+R4	Contact Arg1:T2 Arg2:T12	
+R1	Contact Arg1:T10 Arg2:T12	
+T3	Parts 104 107	電装品
+R5	Part-Whole Arg1:T3 Arg2:T1	

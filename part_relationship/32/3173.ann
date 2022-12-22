@@ -1,0 +1,23 @@
+T10	Parts 23 45	トランスミッションドライバユニット（ＴＤＵ）
+T11	Parts 93 95	ＩＣ
+T14	Parts 59 61	車両
+T15	Parts 65 79	ギヤチェンジ用アクチュエータ
+T16	Parts 147 156	メータディスプレイ
+T17	Parts 157 169	トランスミッション警告灯
+T1	Parts 0 11	７速ＤＣＴ型自動変速機
+T2	Parts 16 18	車両
+T3	Parts 46 51	プログラム
+R1	Coreference Arg1:T2 Arg2:T14	
+T4	Parts 175 184	トランスミッション
+R2	Part-Whole Arg1:T1 Arg2:T2	
+R3	Part-Whole Arg1:T3 Arg2:T10	
+R4	Connect Arg1:T11 Arg2:T15	
+R5	Connect Arg1:T4 Arg2:T17	
+R6	Connect Arg1:T4 Arg2:T10	
+R7	Part-Whole Arg1:T10 Arg2:T2	
+R8	Part-Whole Arg1:T11 Arg2:T10	
+R9	Connect Arg1:T15 Arg2:T1	
+R10	Part-Whole Arg1:T15 Arg2:T14	
+R11	Part-Whole Arg1:T17 Arg2:T16	
+R12	Part-Whole Arg1:T16 Arg2:T14	
+R13	Part-Whole Arg1:T4 Arg2:T14	

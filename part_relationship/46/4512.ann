@@ -1,0 +1,8 @@
+T1	Parts 14 32	差動装置（デファレンシャルユニット）
+T2	Parts 50 58	ドライブシャフト
+T3	Parts 0 6	動力伝達装置
+T5	Parts 64 68	差動装置
+R1	Coreference Arg1:T1 Arg2:T5	
+R2	Part-Whole Arg1:T1 Arg2:T3	
+R3	Contact Arg1:T2 Arg2:T5	
+R4	Part-Whole Arg1:T2 Arg2:T3	

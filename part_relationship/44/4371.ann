@@ -1,0 +1,5 @@
+T1	Parts 11 23	エアコン（空気調整装置）
+T5	Parts 104 110	エアーダクト
+T9	Parts 24 36	エアーダクト（空気通路）
+R2	Part-Whole Arg1:T9 Arg2:T1	
+R3	Coreference Arg1:T9 Arg2:T5	

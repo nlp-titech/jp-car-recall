@@ -1,0 +1,10 @@
+T7	Parts 19 25	燃料フィルタ
+T8	Parts 60 66	燃料フィルタ
+R1	Coreference Arg1:T7 Arg2:T8	
+T1	Parts 72 74	燃料
+T2	Parts 11 14	原動機
+R2	Part-Whole Arg1:T7 Arg2:T2	
+R3	Contact Arg1:T1 Arg2:T8	
+R4	Contact Arg1:T1 Arg2:T2	
+T3	Parts 0 9	過給機付給気冷却器
+R5	Part-Whole Arg1:T3 Arg2:T2	

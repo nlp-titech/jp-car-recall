@@ -1,0 +1,13 @@
+T17	Parts 0 14	排気ガス再循環装置（ＥＧＲ）
+T18	Parts 15 18	パイプ
+T19	Parts 40 43	パイプ
+T20	Parts 52 55	パイプ
+T1	Parts 31 35	排気ガス
+T2	Parts 68 72	排気ガス
+T3	Parts 118 122	排出ガス
+R1	Coreference Arg1:T18 Arg2:T19	
+R2	Coreference Arg1:T20 Arg2:T19	
+R3	Coreference Arg1:T1 Arg2:T2	
+R4	Coreference Arg1:T3 Arg2:T2	
+R5	Part-Whole Arg1:T18 Arg2:T17	
+R6	Contact Arg1:T19 Arg2:T1	

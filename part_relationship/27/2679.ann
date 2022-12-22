@@ -1,0 +1,11 @@
+T14	Parts 105 108	変速機
+T16	Parts 20 24	クラッチ
+T17	Parts 40 44	クラッチ
+T1	Parts 0 7	フォークリフト
+T2	Parts 8 15	クラッチペダル
+R1	Coreference Arg1:T17 Arg2:T16	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Connect Arg1:T16 Arg2:T2	
+R7	Part-Whole Arg1:T14 Arg2:T1	
+R2	Connect Arg1:T14 Arg2:T17	
+R5	Part-Whole Arg1:T16 Arg2:T1	

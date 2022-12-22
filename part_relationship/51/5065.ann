@@ -1,0 +1,15 @@
+T1	Parts 1 14	電気配線（メインハーネス）
+T2	Parts 46 55	リターンスプリング
+T3	Parts 32 45	足踏み式駐車ブレーキペダル
+T4	Parts 90 93	速度計
+T5	Parts 103 106	電装品
+T6	Parts 29 31	配線
+T7	Parts 72 74	配線
+T8	Parts 123 125	配線
+R1	Coreference Arg1:T6 Arg2:T1	
+R2	Coreference Arg1:T7 Arg2:T6	
+R3	Coreference Arg1:T8 Arg2:T7	
+R4	Contact Arg1:T2 Arg2:T3	
+R5	Connect Arg1:T4 Arg2:T7	
+R6	Oneway-Coreference Arg1:T5 Arg2:T4	
+R7	Connect Arg1:T5 Arg2:T8	

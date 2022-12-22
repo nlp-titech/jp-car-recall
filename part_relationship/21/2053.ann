@@ -1,0 +1,7 @@
+T12	Parts 17 20	原動機
+T13	Parts 1 4	排気管
+T14	Parts 26 29	排気管
+T15	Parts 63 66	排気管
+R1	Coreference Arg1:T14 Arg2:T13	
+R2	Coreference Arg1:T15 Arg2:T14	
+R3	Contact Arg1:T12 Arg2:T13	

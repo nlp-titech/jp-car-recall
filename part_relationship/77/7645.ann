@@ -1,0 +1,12 @@
+T1	Parts 0 11	コンビネーションメータ
+T2	Parts 16 26	コントロールユニット
+T3	Parts 27 34	演算プログラム
+T4	Parts 42 49	燃料残量警告灯
+T5	Parts 61 71	メータ内ディスプレイ
+T6	Parts 119 121	燃料
+T7	Parts 127 129	車両
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T2	
+R3	Part-Whole Arg1:T5 Arg2:T1	
+R4	Connect Arg1:T2 Arg2:T4	
+R5	Part-Whole Arg1:T1 Arg2:T7	

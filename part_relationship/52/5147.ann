@@ -1,0 +1,9 @@
+T1	Parts 6 14	ナイロンチューブ
+T2	Parts 0 5	燃料パイプ
+T3	Parts 34 38	チューブ
+T4	Parts 59 62	パイプ
+T5	Parts 66 68	燃料
+R1	Coreference Arg1:T2 Arg2:T4	
+R2	Coreference Arg1:T1 Arg2:T3	
+R3	Contact Arg1:T4 Arg2:T5	
+R4	Part-Whole Arg1:T1 Arg2:T2	

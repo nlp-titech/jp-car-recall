@@ -1,0 +1,13 @@
+T1	Parts 0 10	電動ブレーキ倍力装置
+T2	Parts 15 24	油圧ポンプモーター
+T3	Parts 40 44	ブレーキ
+T4	Parts 55 62	ポンプモーター
+T6	Parts 81 88	ブレーキ警告灯
+T7	Parts 110 113	警告灯
+T8	Parts 144 148	ブレーキ
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Connect Arg1:T3 Arg2:T1	
+R3	Coreference Arg1:T4 Arg2:T2	
+R5	Connect Arg1:T6 Arg2:T3	
+R6	Coreference Arg1:T7 Arg2:T6	
+R7	Coreference Arg1:T8 Arg2:T3	

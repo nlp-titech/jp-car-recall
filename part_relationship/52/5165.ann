@@ -1,0 +1,27 @@
+T17	Parts 109 112	ガラス
+T22	Parts 139 142	ヒンジ
+T15	Parts 0 4	後部ドア
+T20	Parts 9 15	ガラスハッチ
+T23	Parts 16 19	ヒンジ
+T1	Parts 24 41	ストラットボールスタッドブラケット
+T4	Parts 57 63	ガラスハッチ
+T2	Parts 96 108	ストラットボールスタッド
+T5	Parts 132 138	ガラスハッチ
+T3	Parts 156 173	ストラットボールスタッドブラケット
+T6	Parts 178 187	ストラットダンパー
+T7	Parts 191 197	ガラスハッチ
+R1	Coreference Arg1:T20 Arg2:T4	
+R2	Coreference Arg1:T4 Arg2:T5	
+R3	Coreference Arg1:T5 Arg2:T7	
+R4	Contact Arg1:T20 Arg2:T23	
+R5	Part-Whole Arg1:T20 Arg2:T15	
+T8	Parts 77 80	ヒンジ
+R7	Coreference Arg1:T23 Arg2:T8	
+R8	Coreference Arg1:T8 Arg2:T22	
+R10	Contact Arg1:T1 Arg2:T2	
+R11	Coreference Arg1:T1 Arg2:T3	
+R12	Contact Arg1:T6 Arg2:T7	
+T9	Parts 80 82	車体
+R17	Part-Whole Arg1:T15 Arg2:T9	
+R13	Part-Whole Arg1:T17 Arg2:T15	
+R9	Contact Arg1:T2 Arg2:T17	

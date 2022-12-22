@@ -1,0 +1,25 @@
+T1	Parts 12 18	ギヤボックス
+T2	Parts 57 66	ギヤボックス出力軸
+T3	Parts 20 26	スプロケット
+T4	Parts 50 56	スプロケット
+T5	Parts 119 125	スプロケット
+T6	Parts 160 166	スプロケット
+T7	Parts 181 187	スプロケット
+T8	Parts 219 225	スプロケット
+T9	Parts 1 7	動力伝達装置
+T10	Parts 145 151	動力伝達装置
+T11	Parts 33 36	ナット
+T16	Parts 156 158	後輪
+R1	Part-Whole Arg1:T3 Arg2:T9	
+R2	Contact Arg1:T11 Arg2:T3	
+R3	Coreference Arg1:T3 Arg2:T4	
+R4	Part-Whole Arg1:T1 Arg2:T9	
+R5	Connect Arg1:T1 Arg2:T2	
+R7	Coreference Arg1:T9 Arg2:T10	
+R8	Coreference Arg1:T7 Arg2:T6	
+R10	Coreference Arg1:T8 Arg2:T7	
+R11	Connect Arg1:T6 Arg2:T16	
+R12	Part-Whole Arg1:T6 Arg2:T10	
+R13	Contact Arg1:T2 Arg2:T4	
+R6	Coreference Arg1:T4 Arg2:T5	
+R9	Connect Arg1:T10 Arg2:T16	

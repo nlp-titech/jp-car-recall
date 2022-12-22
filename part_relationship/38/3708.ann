@@ -1,0 +1,23 @@
+T1	Parts 0 11	ターン／ライトスイッチ
+T2	Parts 35 40	コネクター
+T3	Parts 168 173	方向指示器
+T4	Parts 26 30	スイッチ
+T5	Parts 141 145	スイッチ
+T6	Parts 125 129	後部霧灯
+T7	Parts 120 124	前部霧灯
+T8	Parts 116 119	車幅灯
+T11	Parts 112 115	前照灯
+T12	Parts 133 136	番号灯
+T14	Parts 148 153	車室内照明
+T17	Parts 130 132	尾灯
+R1	Coreference Arg1:T4 Arg2:T1	
+R4	Coreference Arg1:T5 Arg2:T4	
+R6	Connect Arg1:T14 Arg2:T5	
+R7	Connect Arg1:T3 Arg2:T5	
+R8	Connect Arg1:T5 Arg2:T12	
+R9	Connect Arg1:T5 Arg2:T17	
+R10	Connect Arg1:T5 Arg2:T6	
+R11	Connect Arg1:T5 Arg2:T7	
+R12	Connect Arg1:T5 Arg2:T8	
+R13	Connect Arg1:T5 Arg2:T11	
+R2	Part-Whole Arg1:T2 Arg2:T4	

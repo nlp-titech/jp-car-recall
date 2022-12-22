@@ -1,0 +1,7 @@
+T1	Parts 13 25	インフレータ（膨張装置）
+T2	Parts 0 12	助手席フロントエアバッグ
+T3	Parts 73 85	助手席フロントエアバッグ
+T6	Parts 42 45	点火剤
+R1	Part-Whole Arg1:T1 Arg2:T2	
+R2	Coreference Arg1:T2 Arg2:T3	
+R3	Part-Whole Arg1:T6 Arg2:T1	

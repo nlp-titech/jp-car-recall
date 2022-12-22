@@ -1,0 +1,18 @@
+T2	Parts 120 129	パーキングスタンド
+T3	Parts 50 58	ブレーキケーブル
+T4	Parts 138 146	ブレーキケーブル
+T5	Parts 75 82	ブレーキレバー
+T6	Parts 105 112	ブレーキレバー
+T7	Parts 39 45	後輪ブレーキ
+T8	Parts 172 178	後輪ブレーキ
+T9	Parts 164 168	ケーブル
+T10	Parts 0 38	パーキングスタンド（後輪を接地させたまま車体を保持するためのスタンド）装着車
+R1	Coreference Arg1:T4 Arg2:T3	
+R2	Coreference Arg1:T9 Arg2:T4	
+R3	Coreference Arg1:T8 Arg2:T7	
+R4	Coreference Arg1:T6 Arg2:T5	
+R5	Part-Whole Arg1:T2 Arg2:T10	
+R7	Contact Arg1:T5 Arg2:T3	
+R8	Part-Whole Arg1:T5 Arg2:T7	
+R9	Part-Whole Arg1:T7 Arg2:T10	
+R6	Part-Whole Arg1:T3 Arg2:T7	

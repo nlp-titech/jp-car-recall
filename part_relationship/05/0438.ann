@@ -1,0 +1,9 @@
+T12	Parts 17 21	制動装置
+T13	Parts 26 36	左後輪ブレーキパイプ
+T14	Parts 74 81	ブレーキパイプ
+R1	Coreference Arg1:T13 Arg2:T14	
+T1	Parts 89 94	ブレーキ液
+T2	Parts 0 16	２輪駆動車（過給機付車を除く。）
+R2	Part-Whole Arg1:T12 Arg2:T2	
+R3	Part-Whole Arg1:T13 Arg2:T12	
+R4	Contact Arg1:T14 Arg2:T1	

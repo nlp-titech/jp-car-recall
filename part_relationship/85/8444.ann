@@ -1,0 +1,7 @@
+T1	Parts 0 12	パノラミックガラスルーフ
+T2	Parts 61 64	ルーフ
+T3	Parts 23 26	接着剤
+T4	Parts 99 102	ルーフ
+R1	Contact Arg1:T3 Arg2:T1	
+R2	Coreference Arg1:T2 Arg2:T1	
+R3	Coreference Arg1:T4 Arg2:T2	

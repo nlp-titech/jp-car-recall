@@ -1,0 +1,9 @@
+T1	Parts 0 6	農耕トラクタ
+T2	Parts 7 14	主変速クラッチ
+T3	Parts 23 31	クラッチプレート
+T4	Parts 46 50	プレート
+T5	Parts 83 91	クラッチプレート
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T2	
+R3	Coreference Arg1:T3 Arg2:T4	
+R4	Coreference Arg1:T4 Arg2:T5	

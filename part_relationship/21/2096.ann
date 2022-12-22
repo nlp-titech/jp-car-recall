@@ -1,0 +1,14 @@
+T1	Parts 0 7	ＣＮＧエンジン
+T2	Parts 12 18	大型路線バス
+T3	Parts 23 34	ガスミキサー（混合器）
+T4	Parts 35 45	燃料流量調整スクリュ
+T5	Parts 63 65	燃料
+T6	Parts 56 58	空気
+T7	Parts 101 106	窒素酸化物
+R1	Part-Whole Arg1:T1 Arg2:T2	
+R2	Part-Whole Arg1:T4 Arg2:T3	
+R3	Contact Arg1:T5 Arg2:T4	
+R4	Contact Arg1:T6 Arg2:T4	
+R5	Part-Whole Arg1:T3 Arg2:T2	
+R6	Contact Arg1:T7 Arg2:T1	
+R7	Connect Arg1:T3 Arg2:T1	

@@ -1,0 +1,18 @@
+T1	Parts 9 12	タンク
+T2	Parts 13 17	フレーム
+T3	Parts 22 29	セットプレート
+T4	Parts 30 36	取付けボルト
+T5	Parts 37 42	後輪タイヤ
+T6	Parts 67 70	ボルト
+T7	Parts 71 76	後輪タイヤ
+T9	Parts 89 92	タイヤ
+R1	Coreference Arg1:T9 Arg2:T7	
+R2	Coreference Arg1:T7 Arg2:T5	
+R3	Coreference Arg1:T6 Arg2:T4	
+T10	Parts 0 4	タンク車
+R4	Part-Whole Arg1:T1 Arg2:T10	
+R5	Contact Arg1:T1 Arg2:T2	
+R6	Contact Arg1:T1 Arg2:T3	
+R7	Contact Arg1:T2 Arg2:T3	
+R8	Part-Whole Arg1:T4 Arg2:T3	
+R9	Part-Whole Arg1:T5 Arg2:T10	

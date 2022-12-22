@@ -1,0 +1,25 @@
+T1	Parts 19 28	燃料タンク取付金具
+T2	Parts 86 91	締結ボルト
+T3	Parts 112 117	燃料タンク
+T5	Parts 35 39	リベット
+T6	Parts 118 122	燃料配管
+T7	Parts 0 9	大型ダンプトラック
+T8	Parts 83 85	金具
+T9	Parts 97 99	金具
+T10	Parts 14 16	車両
+T11	Parts 30 32	車枠
+T12	Parts 127 129	燃料
+R1	Coreference Arg1:T7 Arg2:T10	
+R2	Part-Whole Arg1:T12 Arg2:T3	
+R3	Contact Arg1:T6 Arg2:T12	
+R4	Coreference Arg1:T1 Arg2:T8	
+R5	Coreference Arg1:T8 Arg2:T9	
+R7	Contact Arg1:T2 Arg2:T3	
+R8	Contact Arg1:T9 Arg2:T3	
+R9	Part-Whole Arg1:T11 Arg2:T10	
+R10	Contact Arg1:T11 Arg2:T5	
+R11	Part-Whole Arg1:T3 Arg2:T10	
+R12	Part-Whole Arg1:T6 Arg2:T10	
+R13	Contact Arg1:T3 Arg2:T6	
+R14	Contact Arg1:T11 Arg2:T1	
+R6	Contact Arg1:T2 Arg2:T8	

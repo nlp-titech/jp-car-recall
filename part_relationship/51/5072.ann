@@ -1,0 +1,14 @@
+T1	Parts 17 23	油圧制御装置
+T2	Parts 28 33	高圧ホース
+T3	Parts 68 71	オイル
+T4	Parts 1 8	油圧式緩衝装置
+T6	Parts 98 103	計器パネル
+T7	Parts 9 16	オイル・ポンプ
+R1	Contact Arg1:T2 Arg2:T1	
+R2	Contact Arg1:T2 Arg2:T7	
+R3	Part-Whole Arg1:T7 Arg2:T4	
+R4	Contact Arg1:T3 Arg2:T2	
+R5	Connect Arg1:T6 Arg2:T4	
+R6	Connect Arg1:T7 Arg2:T1	
+R7	Contact Arg1:T3 Arg2:T7	
+R8	Contact Arg1:T3 Arg2:T1	

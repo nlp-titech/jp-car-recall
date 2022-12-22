@@ -1,0 +1,9 @@
+T14	Parts 107 113	リヤアクスル
+T15	Parts 0 13	リヤアクスル固定ブラケット
+T16	Parts 42 47	ブラケット
+T17	Parts 51 62	リヤアクスル取付ボルト
+T18	Parts 28 33	ブラケット
+R1	Coreference Arg1:T18 Arg2:T15	
+R2	Coreference Arg1:T16 Arg2:T18	
+R3	Contact Arg1:T14 Arg2:T18	
+R4	Contact Arg1:T14 Arg2:T17	

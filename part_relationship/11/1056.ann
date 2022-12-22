@@ -1,0 +1,11 @@
+T20	Parts 8 15	ラジアスロッド
+T21	Parts 16 38	車体側取付金具（リヤサスペンションサポート）
+T22	Parts 108 110	金具
+T23	Parts 132 134	金具
+T24	Parts 139 146	ラジアスロッド
+T1	Parts 0 3	後車軸
+R1	Coreference Arg1:T21 Arg2:T22	
+R2	Coreference Arg1:T22 Arg2:T23	
+R3	Coreference Arg1:T20 Arg2:T24	
+R4	Contact Arg1:T20 Arg2:T1	
+R5	Contact Arg1:T21 Arg2:T20	

@@ -1,0 +1,10 @@
+T1	Parts 0 10	前輪用ブレーキレバー
+T2	Parts 48 50	車両
+T3	Parts 68 75	ブレーキレバー
+T4	Parts 81 84	レバー
+T5	Parts 89 93	ブレーキ
+R1	Part-Whole Arg1:T1 Arg2:T2	
+R2	Coreference Arg1:T1 Arg2:T3	
+R3	Coreference Arg1:T3 Arg2:T4	
+R4	Part-Whole Arg1:T5 Arg2:T2	
+R5	Connect Arg1:T4 Arg2:T5	

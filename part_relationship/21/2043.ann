@@ -1,0 +1,9 @@
+T14	Parts 28 30	車体
+T15	Parts 37 41	配管継手
+T16	Parts 11 15	配管継手
+T1	Parts 0 6	走行油圧配管
+T2	Parts 76 79	作動油
+R1	Coreference Arg1:T15 Arg2:T16	
+R2	Contact Arg1:T16 Arg2:T1	
+R3	Contact Arg1:T2 Arg2:T1	
+R4	Contact Arg1:T1 Arg2:T14	

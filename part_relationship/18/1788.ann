@@ -1,0 +1,11 @@
+T12	Parts 23 25	車軸
+T13	Parts 47 76	スプリングシート（車軸の上に取付けられたスプリング用台座）
+T14	Parts 93 95	車軸
+T15	Parts 78 80	車軸
+T16	Parts 126 128	車軸
+T1	Parts 0 18	エアサスペンション装着セミ・トレーラ
+R1	Coreference Arg1:T15 Arg2:T14	
+R2	Coreference Arg1:T14 Arg2:T16	
+R3	Coreference Arg1:T12 Arg2:T15	
+R4	Part-Whole Arg1:T12 Arg2:T1	
+R5	Part-Whole Arg1:T13 Arg2:T1	

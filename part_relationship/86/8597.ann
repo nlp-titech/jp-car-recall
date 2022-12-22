@@ -1,0 +1,18 @@
+T1	Parts 0 2	車両
+T2	Parts 7 13	フットレスト
+T3	Parts 31 37	保持シャフト
+T4	Parts 38 45	抜け止めリング
+T5	Parts 63 65	車両
+T6	Parts 73 76	リング
+T7	Parts 81 85	シャフト
+T8	Parts 98 104	フットレスト
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Contact Arg1:T3 Arg2:T2	
+R3	Contact Arg1:T4 Arg2:T3	
+R4	Contact Arg1:T4 Arg2:T2	
+R5	Part-Whole Arg1:T3 Arg2:T1	
+R6	Part-Whole Arg1:T4 Arg2:T1	
+R7	Coreference Arg1:T5 Arg2:T1	
+R8	Coreference Arg1:T6 Arg2:T4	
+R9	Coreference Arg1:T7 Arg2:T3	
+R10	Coreference Arg1:T8 Arg2:T2	

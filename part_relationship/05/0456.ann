@@ -1,0 +1,24 @@
+T18	Parts 10 21	トルクコンバータケース
+T19	Parts 52 62	荷役装置用油圧ホース
+T21	Parts 87 92	油圧ホース
+T22	Parts 102 107	油圧ホース
+T23	Parts 124 129	油圧ホース
+T3	Parts 49 51	配線
+T4	Parts 83 85	配線
+R2	Coreference Arg1:T19 Arg2:T21	
+R3	Coreference Arg1:T4 Arg2:T3	
+R4	Coreference Arg1:T22 Arg2:T21	
+T5	Parts 99 101	配線
+R5	Coreference Arg1:T5 Arg2:T4	
+T6	Parts 110 113	金属線
+R6	Coreference Arg1:T23 Arg2:T22	
+T7	Parts 134 137	作動油
+T8	Parts 0 4	電気装置
+R7	Part-Whole Arg1:T18 Arg2:T8	
+T1	Parts 24 34	始動モータ用電気配線
+R1	Coreference Arg1:T1 Arg2:T3	
+R8	Contact Arg1:T1 Arg2:T18	
+T2	Parts 73 75	車両
+R9	Part-Whole Arg1:T8 Arg2:T2	
+R10	Part-Whole Arg1:T6 Arg2:T22	
+R11	Contact Arg1:T23 Arg2:T7	

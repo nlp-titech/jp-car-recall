@@ -1,0 +1,8 @@
+T1	Parts 0 13	ステアリングコラム・カバー
+T2	Parts 43 54	ステアリング・ホイール
+T3	Parts 16 26	方向指示器用電気配線
+T4	Parts 85 90	方向指示器
+T7	Parts 72 76	電気配線
+R1	Coreference Arg1:T3 Arg2:T7	
+R2	Contact Arg1:T7 Arg2:T4	
+R3	Part-Whole Arg1:T3 Arg2:T1	

@@ -1,0 +1,21 @@
+T18	Parts 24 28	空気ばね
+T19	Parts 39 43	空気ばね
+T20	Parts 44 50	ダイヤフラム
+T21	Parts 51 62	スタビライザブラケット
+T22	Parts 101 107	ダイヤフラム
+T23	Parts 117 126	エアサスペンション
+T26	Parts 127 130	警告灯
+T1	Parts 1 19	後軸４バッグ式空気ばね緩衝装置付車両
+T2	Parts 111 113	エア
+T3	Parts 135 137	車両
+R1	Coreference Arg1:T18 Arg2:T19	
+R2	Coreference Arg1:T20 Arg2:T22	
+R3	Coreference Arg1:T1 Arg2:T3	
+R4	Part-Whole Arg1:T18 Arg2:T1	
+R5	Part-Whole Arg1:T20 Arg2:T19	
+R7	Contact Arg1:T2 Arg2:T22	
+R8	Connect Arg1:T26 Arg2:T23	
+R9	Contact Arg1:T2 Arg2:T23	
+R10	Part-Whole Arg1:T21 Arg2:T1	
+R11	Part-Whole Arg1:T26 Arg2:T1	
+R6	Part-Whole Arg1:T19 Arg2:T23	

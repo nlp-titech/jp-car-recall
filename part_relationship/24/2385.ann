@@ -1,0 +1,8 @@
+T9	Parts 83 88	燃料タンク
+T10	Parts 14 25	アルミ合金製燃料タンク
+T11	Parts 49 63	アルミ合金製燃料タンクステー
+T1	Parts 0 7	タンクローリー
+R1	Coreference Arg1:T9 Arg2:T10	
+R2	Contact Arg1:T11 Arg2:T10	
+R3	Part-Whole Arg1:T10 Arg2:T1	
+R4	Part-Whole Arg1:T11 Arg2:T1	

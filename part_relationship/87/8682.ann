@@ -1,0 +1,8 @@
+T1	Parts 0 12	電動式パワーステアリング
+T2	Parts 66 80	ステアリングロッドブラケット
+T3	Parts 85 94	ステアリングリンク
+T4	Parts 104 108	ハンドル
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T1	
+R3	Contact Arg1:T2 Arg2:T3	
+R4	Part-Whole Arg1:T4 Arg2:T1	

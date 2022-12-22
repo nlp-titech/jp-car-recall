@@ -1,0 +1,9 @@
+T10	Parts 99 104	装飾用筒管
+T11	Parts 60 65	ブラケット
+T12	Parts 27 34	固定ブラケット
+T1	Parts 0 3	排気管
+T2	Parts 11 26	装飾用筒管（マフラーカッター）
+R1	Coreference Arg1:T12 Arg2:T11	
+R2	Coreference Arg1:T2 Arg2:T10	
+R3	Contact Arg1:T2 Arg2:T1	
+R4	Contact Arg1:T2 Arg2:T12	

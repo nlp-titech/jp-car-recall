@@ -1,0 +1,33 @@
+T17	Parts 78 83	吸気絞り弁
+T18	Parts 134 139	吸気絞り弁
+T19	Parts 205 210	吸気絞り弁
+T20	Parts 189 194	吸気絞り弁
+T21	Parts 219 233	エンジンコントロールユニット
+T22	Parts 243 247	エンジン
+T23	Parts 251 254	ＤＰＦ
+T24	Parts 268 282	エンジンコントロールユニット
+T27	Parts 43 52	バタフライシャフト
+T28	Parts 156 159	ＥＧＲ
+T1	Parts 0 6	大型トラック
+T2	Parts 7 10	原動機
+T3	Parts 15 29	ＥＧＲ（排気ガス再循環装置）
+T4	Parts 37 42	吸気絞り弁
+R1	Coreference Arg1:T4 Arg2:T17	
+T5	Parts 117 124	エンジン警告灯
+R2	Coreference Arg1:T17 Arg2:T18	
+R3	Coreference Arg1:T3 Arg2:T28	
+R4	Coreference Arg1:T18 Arg2:T20	
+R5	Coreference Arg1:T20 Arg2:T19	
+R6	Coreference Arg1:T21 Arg2:T24	
+R7	Part-Whole Arg1:T2 Arg2:T1	
+R8	Part-Whole Arg1:T3 Arg2:T2	
+R9	Part-Whole Arg1:T27 Arg2:T4	
+R10	Connect Arg1:T4 Arg2:T3	
+R11	Connect Arg1:T5 Arg2:T2	
+R12	Connect Arg1:T21 Arg2:T22	
+R13	Coreference Arg1:T22 Arg2:T2	
+R14	Connect Arg1:T23 Arg2:T22	
+R15	Part-Whole Arg1:T4 Arg2:T2	
+R16	Part-Whole Arg1:T5 Arg2:T1	
+R18	Part-Whole Arg1:T21 Arg2:T1	
+R20	Part-Whole Arg1:T23 Arg2:T1	

@@ -1,0 +1,12 @@
+T1	Parts 86 94	補機駆動用ベルト
+T3	Parts 76 84	クランクプーリー
+T4	Parts 5 20	クランクプーリー取り付けボルト
+T5	Parts 98 103	充電警告灯
+T6	Parts 0 4	エンジン
+T7	Parts 112 116	ハンドル
+T10	Parts 46 49	ボルト
+R2	Coreference Arg1:T4 Arg2:T10	
+R4	Contact Arg1:T3 Arg2:T1	
+R5	Connect Arg1:T1 Arg2:T5	
+R7	Connect Arg1:T1 Arg2:T7	
+R1	Contact Arg1:T4 Arg2:T6	

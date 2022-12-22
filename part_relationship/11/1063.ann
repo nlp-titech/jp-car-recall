@@ -1,0 +1,24 @@
+T1	Parts 0 7	大型総輪駆動車
+T2	Parts 12 20	車両左側フレーム
+T3	Parts 22 26	電気配線
+T4	Parts 41 43	配線
+T5	Parts 44 56	ブレーキホース取付け金具
+T6	Parts 58 83	パワーステアリング用オイルパイプ（パワステパイプ）
+T7	Parts 113 115	車両
+T8	Parts 122 126	電気配線
+T9	Parts 128 135	パワステパイプ
+T10	Parts 146 149	前照灯
+T11	Parts 153 156	原動機
+R1	Coreference Arg1:T3 Arg2:T4	
+R2	Coreference Arg1:T4 Arg2:T8	
+R3	Coreference Arg1:T6 Arg2:T9	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R6	Contact Arg1:T5 Arg2:T2	
+R9	Connect Arg1:T8 Arg2:T10	
+R5	Part-Whole Arg1:T3 Arg2:T1	
+R11	Part-Whole Arg1:T11 Arg2:T7	
+R8	Coreference Arg1:T1 Arg2:T7	
+R12	Part-Whole Arg1:T10 Arg2:T7	
+R15	Connect Arg1:T8 Arg2:T11	
+R7	Part-Whole Arg1:T6 Arg2:T1	
+R10	Contact Arg1:T2 Arg2:T3	

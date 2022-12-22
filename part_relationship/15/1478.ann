@@ -1,0 +1,18 @@
+T16	Parts 110 116	駐車ブレーキ
+T17	Parts 17 26	水浸入防止キャップ
+T19	Parts 41 47	スプリング室
+T20	Parts 54 59	スプリング
+T21	Parts 74 79	スプリング
+T23	Parts 84 90	ダイヤフラム
+T2	Parts 0 12	スプリング式駐車制動装置
+R2	Coreference Arg1:T21 Arg2:T20	
+T3	Parts 95 97	エア
+T5	Parts 192 196	対象車両
+R4	Part-Whole Arg1:T17 Arg2:T2	
+R5	Part-Whole Arg1:T19 Arg2:T2	
+R6	Part-Whole Arg1:T20 Arg2:T19	
+R8	Contact Arg1:T3 Arg2:T23	
+R9	Coreference Arg1:T16 Arg2:T2	
+R1	Contact Arg1:T23 Arg2:T19	
+R3	Part-Whole Arg1:T23 Arg2:T2	
+R7	Part-Whole Arg1:T2 Arg2:T5	

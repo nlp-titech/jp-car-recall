@@ -1,0 +1,20 @@
+T16	Parts 48 53	スプリング
+T17	Parts 61 66	スプリング
+T18	Parts 81 86	スプリング
+T19	Parts 117 123	駐車ブレーキ
+T1	Parts 0 12	スプリング式駐車制動装置
+T2	Parts 17 26	水浸入防止キャップ
+T3	Parts 31 33	ネジ
+T5	Parts 91 97	ダイヤフラム
+R1	Coreference Arg1:T17 Arg2:T18	
+T7	Parts 182 186	対象車両
+T8	Parts 199 214	対象車両（２００１年式トラクタ
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Contact Arg1:T3 Arg2:T2	
+R5	Part-Whole Arg1:T16 Arg2:T1	
+R9	Coreference Arg1:T19 Arg2:T1	
+R10	Part-Whole Arg1:T1 Arg2:T7	
+R14	Part-Whole Arg1:T5 Arg2:T1	
+R2	Coreference Arg1:T7 Arg2:T8	
+R6	Coreference Arg1:T16 Arg2:T17	
+R7	Contact Arg1:T18 Arg2:T5	

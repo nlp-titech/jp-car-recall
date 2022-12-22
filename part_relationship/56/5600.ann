@@ -1,0 +1,13 @@
+T1	Parts 92 100	エアバッグ警告灯
+T3	Parts 105 113	サイドエアバッグ
+T4	Parts 31 36	コネクター
+T8	Parts 116 130	シートベルトプリテンショナー
+T10	Parts 0 26	サイドエアバッグ／シートベルトプリテンショナー用配線
+T11	Parts 39 41	配線
+T12	Parts 57 59	配線
+R1	Contact Arg1:T11 Arg2:T4	
+R2	Coreference Arg1:T11 Arg2:T10	
+R3	Coreference Arg1:T12 Arg2:T11	
+R5	Contact Arg1:T1 Arg2:T12	
+R6	Contact Arg1:T8 Arg2:T12	
+R7	Contact Arg1:T3 Arg2:T12	

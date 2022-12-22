@@ -1,0 +1,14 @@
+T10	Parts 98 102	エンジン
+T11	Parts 83 87	センサー
+T12	Parts 32 42	エンジン回転センサー
+T1	Parts 0 16	オートマチックトランスミッション
+T2	Parts 21 27	小型トラック
+T3	Parts 43 45	配線
+T4	Parts 88 90	配線
+R1	Coreference Arg1:T4 Arg2:T3	
+R2	Coreference Arg1:T11 Arg2:T12	
+R3	Part-Whole Arg1:T1 Arg2:T2	
+R5	Contact Arg1:T3 Arg2:T12	
+R6	Part-Whole Arg1:T11 Arg2:T10	
+R4	Connect Arg1:T10 Arg2:T1	
+R7	Part-Whole Arg1:T10 Arg2:T2	

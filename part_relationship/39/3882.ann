@@ -1,0 +1,8 @@
+T4	Parts 0 9	リヤフロアーパネル
+T5	Parts 44 53	リヤフロアーパネル
+T6	Parts 62 71	リヤフロアーパネル
+T7	Parts 97 99	車体
+T9	Parts 126 128	燃料
+R1	Coreference Arg1:T5 Arg2:T4	
+R2	Coreference Arg1:T6 Arg2:T5	
+R3	Part-Whole Arg1:T6 Arg2:T7	

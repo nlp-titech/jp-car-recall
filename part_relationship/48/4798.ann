@@ -1,0 +1,17 @@
+T1	Parts 34 42	ボールジョイント
+T2	Parts 43 50	取り付けナット
+T3	Parts 11 21	ステアリングナックル
+T4	Parts 98 108	ステアリングナックル
+T5	Parts 0 6	前輪緩衝装置
+T6	Parts 22 27	ロアアーム
+T7	Parts 109 114	ロアアーム
+T10	Parts 84 87	ナット
+R1	Coreference Arg1:T3 Arg2:T4	
+R2	Coreference Arg1:T6 Arg2:T7	
+R3	Coreference Arg1:T2 Arg2:T10	
+R4	Part-Whole Arg1:T3 Arg2:T5	
+R5	Part-Whole Arg1:T6 Arg2:T5	
+R6	Contact Arg1:T3 Arg2:T1	
+R7	Contact Arg1:T6 Arg2:T1	
+R8	Connect Arg1:T3 Arg2:T6	
+R9	Contact Arg1:T1 Arg2:T2	

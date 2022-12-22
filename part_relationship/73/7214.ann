@@ -1,0 +1,7 @@
+T1	Parts 0 12	電動式パワーステアリング
+T2	Parts 13 19	制御ユニット
+T4	Parts 33 37	ハンドル
+T5	Parts 58 62	ハンドル
+R2	Connect Arg1:T2 Arg2:T1	
+R3	Connect Arg1:T1 Arg2:T4	
+R4	Coreference Arg1:T4 Arg2:T5	

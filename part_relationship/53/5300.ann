@@ -1,0 +1,30 @@
+T1	Parts 34 41	ブレーキホース
+T2	Parts 104 111	ブレーキホース
+T3	Parts 43 48	ＡＢＳ配線
+T4	Parts 113 118	ＡＢＳ配線
+T5	Parts 153 158	ＡＢＳ配線
+T6	Parts 169 174	ブレーキ液
+T8	Parts 58 62	ハンドル
+T10	Parts 24 28	ホイール
+T11	Parts 74 78	ホイール
+T12	Parts 189 192	ＡＢＳ
+T13	Parts 148 151	ホース
+T14	Parts 16 19	左前輪
+T9	Parts 0 15	９Ｊ－１９インチホイール装着車
+T7	Parts 79 92	クリップ式バランスウェイト
+R1	Part-Whole Arg1:T14 Arg2:T9	
+R2	Part-Whole Arg1:T10 Arg2:T14	
+R4	Part-Whole Arg1:T8 Arg2:T9	
+R6	Coreference Arg1:T10 Arg2:T11	
+R7	Part-Whole Arg1:T1 Arg2:T9	
+R8	Part-Whole Arg1:T3 Arg2:T9	
+R9	Coreference Arg1:T1 Arg2:T2	
+R10	Coreference Arg1:T3 Arg2:T4	
+R11	Coreference Arg1:T2 Arg2:T13	
+R12	Coreference Arg1:T4 Arg2:T5	
+R13	Contact Arg1:T13 Arg2:T6	
+R14	Part-Whole Arg1:T5 Arg2:T12	
+R15	Connect Arg1:T1 Arg2:T14	
+R16	Connect Arg1:T3 Arg2:T14	
+R3	Part-Whole Arg1:T7 Arg2:T11	
+R5	Part-Whole Arg1:T12 Arg2:T9	

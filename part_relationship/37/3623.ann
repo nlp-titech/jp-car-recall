@@ -1,0 +1,24 @@
+T1	Parts 92 99	ブレーキホース
+T2	Parts 70 81	セカンドマスタシリンダ
+T3	Parts 172 178	後輪ブレーキ
+T4	Parts 196 202	後輪ブレーキ
+T5	Parts 112 117	ブレーキ液
+T6	Parts 20 38	デュアルコンバインドブレーキシステム
+T7	Parts 4 8	ブレーキ
+T9	Parts 139 143	ブレーキ
+T10	Parts 43 47	制動装置
+T11	Parts 0 3	前後輪
+T13	Parts 60 62	後輪
+T14	Parts 56 58	前輪
+R1	Coreference Arg1:T10 Arg2:T7	
+R2	Oneway-Coreference Arg1:T7 Arg2:T3	
+R4	Oneway-Coreference Arg1:T11 Arg2:T14	
+R5	Oneway-Coreference Arg1:T11 Arg2:T13	
+R6	Coreference Arg1:T9 Arg2:T7	
+R7	Connect Arg1:T6 Arg2:T7	
+R8	Connect Arg1:T2 Arg2:T13	
+R9	Connect Arg1:T2 Arg2:T14	
+R3	Coreference Arg1:T4 Arg2:T3	
+R10	Connect Arg1:T1 Arg2:T7	
+R11	Contact Arg1:T5 Arg2:T1	
+#1	AnnotatorNotes T6	「機能」は固有表現として取れないため、挿入文の中身である「デュアルコンバインドブレーキシステム」のみをPartsとした

@@ -1,0 +1,12 @@
+T1	Parts 21 27	フォグランプ
+T2	Parts 0 10	ヘッドランプスイッチ
+T3	Parts 35 41	ヘッドランプ
+T4	Parts 51 61	ヘッドランプスイッチ
+T5	Parts 99 105	ヘッドランプ
+T8	Parts 80 84	スイッチ
+T9	Parts 89 94	バイメタル
+R1	Coreference Arg1:T2 Arg2:T4	
+R2	Coreference Arg1:T4 Arg2:T8	
+R3	Coreference Arg1:T3 Arg2:T5	
+R4	Connect Arg1:T2 Arg2:T3	
+R5	Part-Whole Arg1:T9 Arg2:T8	

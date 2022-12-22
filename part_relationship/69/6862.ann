@@ -1,0 +1,20 @@
+T2	Parts 15 22	手動変速機付車
+T3	Parts 70 74	アクセル
+T4	Parts 77 81	クラッチ
+T5	Parts 118 122	クラッチ
+T6	Parts 161 165	クラッチ
+T7	Parts 138 142	ハンドル
+T8	Parts 27 31	燃料装置
+T12	Parts 48 50	燃料
+T13	Parts 91 93	燃料
+T1	Parts 0 14	液化石油ガス（ＬＰＧ）自動車
+T9	Parts 32 47	ベーパライザ（ＬＰＧ気化装置）
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Part-Whole Arg1:T8 Arg2:T2	
+R3	Part-Whole Arg1:T9 Arg2:T8	
+R4	Contact Arg1:T9 Arg2:T12	
+R5	Coreference Arg1:T12 Arg2:T13	
+R6	Coreference Arg1:T4 Arg2:T5	
+R7	Coreference Arg1:T5 Arg2:T6	
+R8	Connect Arg1:T3 Arg2:T4	
+R9	Connect Arg1:T3 Arg2:T7	

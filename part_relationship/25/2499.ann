@@ -1,0 +1,16 @@
+T2	Parts 14 16	車両
+T3	Parts 21 30	駐車ブレーキレバー
+T4	Parts 31 37	スイッチ配線
+T5	Parts 38 48	リヤデフロスタホース
+T6	Parts 61 67	スイッチ配線
+R1	Coreference Arg1:T6 Arg2:T4	
+T7	Parts 68 78	リヤデフロスタホース
+R2	Coreference Arg1:T7 Arg2:T5	
+T8	Parts 119 125	スイッチ配線
+R3	Coreference Arg1:T8 Arg2:T6	
+T1	Parts 0 6	２名用キャブ
+R4	Part-Whole Arg1:T1 Arg2:T2	
+R5	Part-Whole Arg1:T3 Arg2:T2	
+R6	Connect Arg1:T3 Arg2:T4	
+R7	Part-Whole Arg1:T4 Arg2:T2	
+R8	Part-Whole Arg1:T5 Arg2:T2	

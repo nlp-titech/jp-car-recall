@@ -1,0 +1,15 @@
+T1	Parts 8 19	インテークマニホールド
+T4	Parts 0 7	シリンダヘッド
+T5	Parts 94 101	シリンダヘッド
+T7	Parts 84 88	エンジン
+T10	Parts 71 74	ホース
+T11	Parts 136 139	ホース
+T2	Parts 24 49	クランクケースブリーザーホース（ブローバイホース）
+R1	Coreference Arg1:T2 Arg2:T10	
+R2	Coreference Arg1:T4 Arg2:T5	
+R3	Coreference Arg1:T10 Arg2:T11	
+R5	Part-Whole Arg1:T1 Arg2:T7	
+R4	Part-Whole Arg1:T5 Arg2:T7	
+R6	Connect Arg1:T4 Arg2:T1	
+R7	Contact Arg1:T4 Arg2:T2	
+R8	Contact Arg1:T1 Arg2:T2	

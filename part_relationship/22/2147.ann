@@ -1,0 +1,7 @@
+T1	Parts 0 8	変速機油圧ホース
+T2	Parts 13 16	ホース
+T3	Parts 34 37	ホース
+T4	Parts 71 79	変速機油圧ホース
+R1	Coreference Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T3 Arg2:T4	
+R3	Coreference Arg1:T3 Arg2:T2	

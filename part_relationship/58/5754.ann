@@ -1,0 +1,10 @@
+T2	Parts 0 8	サイドエアバッグ
+T3	Parts 79 87	サイドエアバッグ
+T4	Parts 13 30	エアバッグ・コントロール・ユニット
+T5	Parts 51 56	エアバッグ
+T6	Parts 31 36	プログラム
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Oneway-Coreference Arg1:T5 Arg2:T3	
+R3	Connect Arg1:T2 Arg2:T4	
+R4	Connect Arg1:T4 Arg2:T5	
+R5	Part-Whole Arg1:T6 Arg2:T4	

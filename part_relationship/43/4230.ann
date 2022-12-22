@@ -1,0 +1,12 @@
+T1	Parts 0 10	ディーゼルエンジン車
+T2	Parts 11 19	バキュームポンプ
+T4	Parts 91 98	ブレーキペダル
+T5	Parts 36 40	エンジン
+T6	Parts 82 86	エンジン
+T7	Parts 51 55	ポンプ軸
+R2	Part-Whole Arg1:T5 Arg2:T1	
+R3	Coreference Arg1:T5 Arg2:T6	
+R4	Connect Arg1:T4 Arg2:T6	
+R5	Part-Whole Arg1:T4 Arg2:T1	
+R7	Part-Whole Arg1:T7 Arg2:T2	
+R6	Part-Whole Arg1:T2 Arg2:T5	

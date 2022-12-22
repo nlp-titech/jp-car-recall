@@ -1,0 +1,20 @@
+T21	Parts 9 12	後々軸
+T22	Parts 13 41	スプリング式駐車ブレーキチャンバー取付金具（ブラケット）
+T23	Parts 66 71	ブラケット
+T24	Parts 108 113	ブラケット
+R1	Coreference Arg1:T23 Arg2:T22	
+R2	Coreference Arg1:T24 Arg2:T23	
+T1	Parts 117 123	駐車ブレーキ
+T2	Parts 137 142	チャンバー
+T3	Parts 149 152	後々輪
+T4	Parts 153 159	駐車ブレーキ
+T5	Parts 171 176	エアホース
+R3	Coreference Arg1:T4 Arg2:T1	
+T7	Parts 0 4	後２軸車
+R4	Part-Whole Arg1:T21 Arg2:T7	
+R5	Coreference Arg1:T21 Arg2:T3	
+R6	Part-Whole Arg1:T2 Arg2:T1	
+R9	Part-Whole Arg1:T1 Arg2:T7	
+R11	Part-Whole Arg1:T5 Arg2:T4	
+R7	Contact Arg1:T24 Arg2:T2	
+R10	Connect Arg1:T3 Arg2:T4	

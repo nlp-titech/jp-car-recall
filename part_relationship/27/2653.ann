@@ -1,0 +1,10 @@
+T6	Parts 10 13	排気管
+T10	Parts 36 39	排気管
+T11	Parts 40 45	保持ステー
+T1	Parts 1 4	原動機
+T2	Parts 5 7	触媒
+R1	Coreference Arg1:T10 Arg2:T6	
+R2	Contact Arg1:T6 Arg2:T1	
+R3	Contact Arg1:T6 Arg2:T2	
+R5	Contact Arg1:T11 Arg2:T10	
+R4	Connect Arg1:T1 Arg2:T2	

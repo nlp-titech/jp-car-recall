@@ -1,0 +1,9 @@
+T1	Parts 0 2	尾灯
+T2	Parts 4 7	制動灯
+T6	Parts 94 96	尾灯
+T7	Parts 98 101	制動灯
+R3	Coreference Arg1:T1 Arg2:T6	
+R4	Coreference Arg1:T2 Arg2:T7	
+T3	Parts 22 25	カラー
+R1	Part-Whole Arg1:T3 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T2	

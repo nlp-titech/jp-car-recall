@@ -1,0 +1,7 @@
+T1	Parts 0 15	スペアタイヤキャリアブラケット
+T2	Parts 46 51	ブラケット
+R1	Coreference Arg1:T2 Arg2:T1	
+T3	Parts 93 98	ブラケット
+T4	Parts 103 109	スペアタイヤ
+R2	Coreference Arg1:T3 Arg2:T2	
+R3	Contact Arg1:T3 Arg2:T4	

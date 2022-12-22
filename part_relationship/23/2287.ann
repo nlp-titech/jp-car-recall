@@ -1,0 +1,12 @@
+T10	Parts 0 9	駐車ブレーキレバー
+T11	Parts 10 15	ラチェット
+T13	Parts 20 22	ピン
+T14	Parts 34 40	駐車ブレーキ
+T15	Parts 50 55	ラチェット
+T16	Parts 73 82	駐車ブレーキレバー
+R1	Coreference Arg1:T15 Arg2:T11	
+R2	Coreference Arg1:T16 Arg2:T10	
+R3	Connect Arg1:T10 Arg2:T11	
+R4	Contact Arg1:T10 Arg2:T13	
+R5	Contact Arg1:T11 Arg2:T13	
+R6	Connect Arg1:T10 Arg2:T14	

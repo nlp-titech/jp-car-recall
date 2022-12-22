@@ -1,0 +1,18 @@
+T1	Parts 32 40	フューエルポンプ
+T2	Parts 69 72	ポンプ
+T3	Parts 13 16	原動機
+T4	Parts 123 126	原動機
+T5	Parts 42 44	燃料
+T6	Parts 74 76	燃料
+T7	Parts 85 87	燃料
+T8	Parts 107 109	燃料
+R1	Coreference Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T8 Arg2:T7	
+R3	Coreference Arg1:T7 Arg2:T6	
+R4	Coreference Arg1:T6 Arg2:T5	
+R5	Contact Arg1:T5 Arg2:T1	
+R6	Connect Arg1:T1 Arg2:T3	
+R7	Coreference Arg1:T4 Arg2:T3	
+T9	Parts 49 52	フィン
+R8	Part-Whole Arg1:T9 Arg2:T1	
+R9	Contact Arg1:T9 Arg2:T5	

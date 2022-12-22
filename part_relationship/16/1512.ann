@@ -1,0 +1,12 @@
+T2	Parts 20 32	オイルフィルタエレメント
+T3	Parts 37 40	ケース
+T4	Parts 53 63	原動機型式６ＨＫ１型
+T5	Parts 106 113	エンジンオイル
+T7	Parts 123 126	原動機
+R1	Coreference Arg1:T7 Arg2:T4	
+T8	Parts 144 147	オイル
+R2	Coreference Arg1:T8 Arg2:T5	
+R3	Contact Arg1:T5 Arg2:T7	
+R4	Part-Whole Arg1:T2 Arg2:T3	
+R5	Connect Arg1:T2 Arg2:T4	
+R6	Contact Arg1:T2 Arg2:T5	

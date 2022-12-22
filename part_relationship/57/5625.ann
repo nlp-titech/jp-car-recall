@@ -1,0 +1,16 @@
+T2	Parts 42 53	コネクティングケーブル
+T3	Parts 0 4	運転者席
+T4	Parts 20 24	運転者席
+T8	Parts 54 61	張力調整用ばね
+T10	Parts 145 147	座席
+T11	Parts 25 31	スライド装置
+T12	Parts 127 135	座席スライド装置
+R1	Coreference Arg1:T4 Arg2:T3	
+R4	Coreference Arg1:T12 Arg2:T11	
+R5	Coreference Arg1:T10 Arg2:T4	
+R8	Part-Whole Arg1:T8 Arg2:T11	
+R2	Contact Arg1:T2 Arg2:T8	
+T1	Parts 5 11	シートバック
+R6	Part-Whole Arg1:T1 Arg2:T3	
+R3	Part-Whole Arg1:T11 Arg2:T4	
+R9	Part-Whole Arg1:T2 Arg2:T11	

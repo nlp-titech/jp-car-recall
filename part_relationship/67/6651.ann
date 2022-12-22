@@ -1,0 +1,7 @@
+T1	Parts 8 12	電気回路
+T2	Parts 23 28	リヤゲート
+T3	Parts 0 3	制動灯
+T4	Parts 37 40	制動灯
+R1	Contact Arg1:T4 Arg2:T2	
+R2	Coreference Arg1:T4 Arg2:T3	
+R3	Connect Arg1:T1 Arg2:T3	

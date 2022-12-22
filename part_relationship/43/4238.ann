@@ -1,0 +1,19 @@
+T1	Parts 0 11	ブローバイガス還元装置
+T3	Parts 100 108	ターボチャージャ
+T5	Parts 69 80	シリンダーヘッドカバー
+T6	Parts 42 53	ジョイント（ブリーザ）
+T7	Parts 141 145	エンジン
+T8	Parts 154 157	オイル
+T12	Parts 109 112	潤滑油
+R2	Part-Whole Arg1:T6 Arg2:T1	
+R5	Contact Arg1:T12 Arg2:T3	
+R6	Contact Arg1:T3 Arg2:T7	
+R7	Connect Arg1:T5 Arg2:T3	
+T2	Parts 149 152	排気管
+R8	Contact Arg1:T2 Arg2:T7	
+R1	Connect Arg1:T6 Arg2:T5	
+R3	Part-Whole Arg1:T5 Arg2:T1	
+R4	Part-Whole Arg1:T3 Arg2:T1	
+R10	Contact Arg1:T8 Arg2:T2	
+R9	Coreference Arg1:T12 Arg2:T8	
+R11	Contact Arg1:T1 Arg2:T7	

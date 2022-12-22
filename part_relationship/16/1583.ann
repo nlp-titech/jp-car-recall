@@ -1,0 +1,13 @@
+T10	Parts 93 99	シフトレバー
+T11	Parts 43 46	レバー
+T1	Parts 0 4	変速装置
+T2	Parts 9 15	シフトレバー
+R1	Coreference Arg1:T2 Arg2:T11	
+R2	Coreference Arg1:T11 Arg2:T10	
+T3	Parts 111 114	変速機
+R3	Coreference Arg1:T1 Arg2:T3	
+T4	Parts 142 149	ブレーキペダル
+R7	Connect Arg1:T2 Arg2:T1	
+T5	Parts 18 29	後進用マイクロスイッチ
+R4	Part-Whole Arg1:T5 Arg2:T2	
+R5	Connect Arg1:T4 Arg2:T3	

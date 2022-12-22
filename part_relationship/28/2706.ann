@@ -1,0 +1,16 @@
+T10	Parts 41 51	ステアリングシャフト
+T11	Parts 10 28	ステアリングシャフト固定用ブラケット
+T13	Parts 108 129	ステアリングシャフトユニバーサルジョイント
+T1	Parts 0 5	かじ取装置
+T2	Parts 75 84	ハンドルチルト機構
+T3	Parts 86 90	ハンドル
+T4	Parts 135 139	ハンドル
+R1	Coreference Arg1:T4 Arg2:T3	
+R2	Part-Whole Arg1:T11 Arg2:T1	
+R3	Part-Whole Arg1:T10 Arg2:T1	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R7	Contact Arg1:T11 Arg2:T10	
+R8	Connect Arg1:T10 Arg2:T3	
+R9	Contact Arg1:T2 Arg2:T3	
+R6	Part-Whole Arg1:T13 Arg2:T10	
+R5	Connect Arg1:T1 Arg2:T3	

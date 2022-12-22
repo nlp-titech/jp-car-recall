@@ -1,0 +1,12 @@
+T11	Parts 7 19	パワーステアリングパイプ
+T12	Parts 36 39	パイプ
+T13	Parts 75 78	パイプ
+T14	Parts 105 113	かじ取りハンドル
+T15	Parts 0 6	かじ取り装置
+R1	Coreference Arg1:T12 Arg2:T11	
+R2	Coreference Arg1:T12 Arg2:T13	
+T1	Parts 89 101	パワーステアリングオイル
+R3	Part-Whole Arg1:T11 Arg2:T15	
+R4	Contact Arg1:T1 Arg2:T13	
+R5	Contact Arg1:T14 Arg2:T11	
+R6	Part-Whole Arg1:T14 Arg2:T15	

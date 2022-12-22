@@ -1,0 +1,11 @@
+T1	Parts 0 3	ルーフ
+T2	Parts 4 11	アンテナカバー
+T3	Parts 31 33	車両
+T4	Parts 38 41	ルーフ
+T5	Parts 55 62	アンテナカバー
+T6	Parts 89 96	メーターパネル
+R1	Coreference Arg1:T2 Arg2:T5	
+R2	Coreference Arg1:T4 Arg2:T1	
+R3	Part-Whole Arg1:T6 Arg2:T3	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Contact Arg1:T4 Arg2:T3	

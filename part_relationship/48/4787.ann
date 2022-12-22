@@ -1,0 +1,15 @@
+T1	Parts 13 22	燃料ポンプユニット
+T2	Parts 23 33	燃料供給側ゴムホース
+T3	Parts 73 78	ゴムホース
+T4	Parts 0 5	燃料タンク
+T5	Parts 34 38	クランプ
+T6	Parts 94 97	原動機
+T8	Parts 88 90	燃料
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Part-Whole Arg1:T8 Arg2:T4	
+R3	Contact Arg1:T4 Arg2:T1	
+R4	Connect Arg1:T1 Arg2:T2	
+R5	Contact Arg1:T1 Arg2:T5	
+R6	Contact Arg1:T2 Arg2:T5	
+R7	Contact Arg1:T3 Arg2:T8	
+R8	Contact Arg1:T8 Arg2:T6	

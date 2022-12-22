@@ -1,0 +1,5 @@
+T2	Parts 5 11	突入防止装置
+T4	Parts 37 40	ステー
+T3	Parts 28 36	外側突入防止装置
+R2	Part-Whole Arg1:T4 Arg2:T3	
+R3	Oneway-Coreference Arg1:T2 Arg2:T3	

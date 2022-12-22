@@ -1,0 +1,5 @@
+T7	Parts 11 24	内部部品（イナーシャマス）
+T1	Parts 57 62	座席ベルト
+T2	Parts 1 10	座席ベルト巻取装置
+R2	Part-Whole Arg1:T7 Arg2:T2	
+R3	Contact Arg1:T2 Arg2:T1	

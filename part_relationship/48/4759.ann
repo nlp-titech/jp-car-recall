@@ -1,0 +1,10 @@
+T1	Parts 16 23	フライホイール
+T2	Parts 0 6	動力伝達装置
+T3	Parts 7 11	クラッチ
+T4	Parts 32 37	リングギア
+T5	Parts 66 71	リングギア
+R1	Coreference Arg1:T4 Arg2:T5	
+R2	Part-Whole Arg1:T3 Arg2:T2	
+R3	Part-Whole Arg1:T1 Arg2:T3	
+R4	Part-Whole Arg1:T4 Arg2:T3	
+R5	Contact Arg1:T1 Arg2:T4	

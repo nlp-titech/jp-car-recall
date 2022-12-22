@@ -1,0 +1,8 @@
+T1	Parts 1 7	空調用原動機
+T2	Parts 9 17	ボディ用電気配線
+T3	Parts 32 36	電気配線
+T4	Parts 37 42	空調ダクト
+R1	Coreference Arg1:T3 Arg2:T2	
+T5	Parts 88 90	配線
+R2	Coreference Arg1:T5 Arg2:T3	
+R3	Connect Arg1:T1 Arg2:T2	

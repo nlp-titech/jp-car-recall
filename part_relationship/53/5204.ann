@@ -1,0 +1,10 @@
+T1	Parts 23 32	後輪ブレーキパイプ
+T5	Parts 53 56	ＡＢＳ
+T7	Parts 72 75	後車輪
+T8	Parts 87 89	車両
+T2	Parts 1 22	アンチロック・ブレーキ・システム（ＡＢＳ）
+R1	Coreference Arg1:T2 Arg2:T5	
+R2	Part-Whole Arg1:T7 Arg2:T8	
+R3	Part-Whole Arg1:T2 Arg2:T8	
+R4	Part-Whole Arg1:T1 Arg2:T2	
+R5	Connect Arg1:T7 Arg2:T1	

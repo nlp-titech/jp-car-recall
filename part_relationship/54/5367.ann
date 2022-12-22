@@ -1,0 +1,10 @@
+T1	Parts 9 13	エンジン
+T2	Parts 48 52	エンジン
+T3	Parts 136 140	エンジン
+T5	Parts 27 34	傾斜角センサー
+T7	Parts 0 2	車両
+R1	Part-Whole Arg1:T1 Arg2:T7	
+R2	Connect Arg1:T5 Arg2:T1	
+R3	Coreference Arg1:T1 Arg2:T2	
+R5	Coreference Arg1:T2 Arg2:T3	
+#1	AnnotatorNotes T5	挿入文前が固有表現として取れない

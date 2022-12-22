@@ -1,0 +1,14 @@
+T1	Parts 11 15	２階荷台
+T2	Parts 22 27	リンク機構
+T3	Parts 32 36	接合ピン
+T4	Parts 56 58	荷台
+T5	Parts 67 71	接合ピン
+T6	Parts 118 122	２階荷台
+R1	Coreference Arg1:T6 Arg2:T4	
+R2	Coreference Arg1:T5 Arg2:T3	
+R3	Coreference Arg1:T4 Arg2:T1	
+T7	Parts 0 10	車両運搬セミトレーラ
+R4	Part-Whole Arg1:T1 Arg2:T7	
+R5	Part-Whole Arg1:T2 Arg2:T7	
+R6	Part-Whole Arg1:T3 Arg2:T2	
+R7	Contact Arg1:T1 Arg2:T2	

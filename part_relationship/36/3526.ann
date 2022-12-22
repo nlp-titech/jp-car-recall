@@ -1,0 +1,28 @@
+T1	Parts 22 28	前輪ホイール
+T2	Parts 15 21	農耕トラクタ
+T3	Parts 38 43	取付ボルト
+T4	Parts 33 37	ホイール
+T5	Parts 153 157	ホイール
+T6	Parts 183 187	ホイール
+T7	Parts 58 61	ボルト
+T8	Parts 118 121	ボルト
+T9	Parts 130 133	ボルト
+T10	Parts 54 57	平座金
+T11	Parts 75 78	平座金
+T12	Parts 92 95	平座金
+T14	Parts 87 91	ばね座金
+T15	Parts 0 7	フロントローダ
+R1	Coreference Arg1:T4 Arg2:T1	
+R2	Contact Arg1:T3 Arg2:T4	
+R3	Coreference Arg1:T7 Arg2:T3	
+R4	Contact Arg1:T7 Arg2:T10	
+R5	Coreference Arg1:T11 Arg2:T10	
+R6	Contact Arg1:T12 Arg2:T14	
+R8	Coreference Arg1:T12 Arg2:T11	
+R9	Coreference Arg1:T8 Arg2:T7	
+R10	Coreference Arg1:T9 Arg2:T8	
+R11	Coreference Arg1:T5 Arg2:T4	
+R12	Coreference Arg1:T6 Arg2:T5	
+R13	Part-Whole Arg1:T1 Arg2:T2	
+R14	Part-Whole Arg1:T15 Arg2:T2	
+R7	Contact Arg1:T7 Arg2:T14	

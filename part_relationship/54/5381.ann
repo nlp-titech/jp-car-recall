@@ -1,0 +1,9 @@
+T2	Parts 6 19	オイルクーラー用ゴムホース
+T3	Parts 0 5	自動変速機
+T4	Parts 57 60	オイル
+T5	Parts 20 25	金属パイプ
+T6	Parts 78 81	ホース
+R1	Part-Whole Arg1:T2 Arg2:T3	
+R2	Contact Arg1:T2 Arg2:T5	
+R4	Coreference Arg1:T2 Arg2:T6	
+R3	Contact Arg1:T4 Arg2:T6	

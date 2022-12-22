@@ -1,0 +1,13 @@
+T18	Parts 0 3	窓拭器
+T19	Parts 4 8	作動装置
+T22	Parts 131 134	窓拭器
+T23	Parts 150 153	窓拭器
+T24	Parts 154 158	作動装置
+T1	Parts 16 26	間欠作動用リレー回路
+T3	Parts 63 66	リレー
+R2	Coreference Arg1:T24 Arg2:T19	
+R6	Coreference Arg1:T22 Arg2:T18	
+R1	Coreference Arg1:T23 Arg2:T22	
+R7	Connect Arg1:T19 Arg2:T18	
+R3	Part-Whole Arg1:T3 Arg2:T19	
+R4	Part-Whole Arg1:T1 Arg2:T3	

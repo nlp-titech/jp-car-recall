@@ -1,0 +1,18 @@
+T1	Parts 0 6	動力伝達装置
+T2	Parts 11 18	３速自動変速機
+T3	Parts 21 30	トルクコンバーター
+T4	Parts 31 36	リングギヤ
+T6	Parts 80 85	リングギヤ
+T7	Parts 86 94	ミッションケース
+T8	Parts 121 127	リングギヤ-
+T9	Parts 132 141	オイルクーラー配管
+T10	Parts 146 149	オイル
+R1	Coreference Arg1:T6 Arg2:T4	
+R2	Coreference Arg1:T8 Arg2:T6	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T3 Arg2:T2	
+R5	Part-Whole Arg1:T4 Arg2:T2	
+R6	Part-Whole Arg1:T7 Arg2:T2	
+R7	Part-Whole Arg1:T9 Arg2:T2	
+R8	Contact Arg1:T10 Arg2:T9	
+R9	Contact Arg1:T4 Arg2:T3	

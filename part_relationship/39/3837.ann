@@ -1,0 +1,26 @@
+T1	Parts 0 6	大型トラクタ
+T3	Parts 57 66	プーリーベアリング
+T4	Parts 105 110	ベアリング
+T5	Parts 118 123	ベアリング
+T6	Parts 139 144	ラジエータ
+T7	Parts 92 96	グリース
+T9	Parts 49 53	シャフト
+T12	Parts 86 90	プーリー
+T13	Parts 16 32	ファンシャフトプーリーベアリング
+T14	Parts 135 138	ファン
+T15	Parts 149 152	冷却水
+T16	Parts 7 11	冷却装置
+R1	Coreference Arg1:T3 Arg2:T13	
+R2	Contact Arg1:T12 Arg2:T3	
+R3	Contact Arg1:T7 Arg2:T12	
+R4	Coreference Arg1:T5 Arg2:T4	
+R5	Coreference Arg1:T4 Arg2:T3	
+R6	Contact Arg1:T9 Arg2:T13	
+R8	Contact Arg1:T15 Arg2:T6	
+R9	Part-Whole Arg1:T6 Arg2:T16	
+R10	Part-Whole Arg1:T14 Arg2:T16	
+R11	Part-Whole Arg1:T3 Arg2:T16	
+R12	Part-Whole Arg1:T9 Arg2:T16	
+R13	Part-Whole Arg1:T12 Arg2:T16	
+R14	Part-Whole Arg1:T16 Arg2:T1	
+R15	Part-Whole Arg1:T13 Arg2:T16	

@@ -1,0 +1,10 @@
+T1	Parts 9 17	ラジエータホース
+T2	Parts 0 8	農業用薬剤散布車
+T3	Parts 81 85	エンジン
+T4	Parts 59 62	冷却水
+T5	Parts 72 75	冷却水
+R1	Part-Whole Arg1:T1 Arg2:T2	
+R2	Contact Arg1:T4 Arg2:T1	
+R3	Coreference Arg1:T4 Arg2:T5	
+R4	Part-Whole Arg1:T3 Arg2:T2	
+R5	Contact Arg1:T1 Arg2:T3	

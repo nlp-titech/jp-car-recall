@@ -1,0 +1,7 @@
+T14	Parts 118 121	シート
+T15	Parts 110 113	ボルト
+T16	Parts 5 12	取り付けボルト
+T1	Parts 0 4	後部座席
+R1	Coreference Arg1:T16 Arg2:T15	
+R2	Contact Arg1:T16 Arg2:T1	
+R3	Coreference Arg1:T14 Arg2:T1	

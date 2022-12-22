@@ -1,0 +1,7 @@
+T1	Parts 4 15	ウォーターポンププーリ
+T2	Parts 25 28	プーリ
+T3	Parts 0 3	原動機
+T4	Parts 72 75	原動機
+R1	Coreference Arg1:T3 Arg2:T4	
+R2	Part-Whole Arg1:T1 Arg2:T3	
+R3	Coreference Arg1:T1 Arg2:T2	

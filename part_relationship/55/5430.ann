@@ -1,0 +1,13 @@
+T1	Parts 0 5	燃料タンク
+T4	Parts 56 59	調整弁
+T5	Parts 99 102	調整弁
+T8	Parts 46 48	燃料
+T9	Parts 60 62	燃料
+T10	Parts 116 118	燃料
+T2	Parts 8 30	樹脂製空気調整弁（ベンチレーション・バルブ）
+R1	Coreference Arg1:T8 Arg2:T9	
+R2	Coreference Arg1:T2 Arg2:T4	
+R6	Coreference Arg1:T4 Arg2:T5	
+R7	Coreference Arg1:T9 Arg2:T10	
+R4	Part-Whole Arg1:T8 Arg2:T1	
+R3	Contact Arg1:T1 Arg2:T2	

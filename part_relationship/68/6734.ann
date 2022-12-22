@@ -1,0 +1,8 @@
+T1	Parts 45 54	エキゾーストパイプ
+T2	Parts 12 21	燃料タンクキャップ
+T3	Parts 0 11	エアクリーナーボックス
+T6	Parts 72 75	ホース
+T7	Parts 22 32	樹脂製ドレインホース
+R1	Coreference Arg1:T7 Arg2:T6	
+R2	Contact Arg1:T3 Arg2:T7	
+R3	Contact Arg1:T2 Arg2:T7	

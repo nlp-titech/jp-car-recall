@@ -1,0 +1,13 @@
+T2	Parts 20 24	バックル
+T4	Parts 67 70	ベルト
+T7	Parts 25 27	座席
+T5	Parts 10 15	座席ベルト
+R1	Coreference Arg1:T5 Arg2:T4	
+T1	Parts 6 9	助手席
+T3	Parts 0 4	運転者席
+R2	Oneway-Coreference Arg1:T7 Arg2:T1	
+R5	Oneway-Coreference Arg1:T7 Arg2:T3	
+R3	Contact Arg1:T3 Arg2:T5	
+R6	Contact Arg1:T1 Arg2:T5	
+R4	Part-Whole Arg1:T2 Arg2:T5	
+R7	Contact Arg1:T2 Arg2:T7	

@@ -1,0 +1,26 @@
+T28	Parts 28 38	樹脂製ベースプレート
+T29	Parts 39 46	ガイドプレート
+T30	Parts 160 167	ガイドプレート
+T31	Parts 206 215	イグニッションキー
+T32	Parts 183 194	キーインターロック装置
+T33	Parts 220 226	かじ取り装置
+T34	Parts 227 231	施錠装置
+T1	Parts 0 12	コラム式自動変速機付き車
+T2	Parts 17 23	シフトレバー
+T4	Parts 153 155	ねじ
+T6	Parts 103 107	締付ねじ
+R3	Coreference Arg1:T6 Arg2:T4	
+R5	Part-Whole Arg1:T28 Arg2:T2	
+R6	Part-Whole Arg1:T29 Arg2:T2	
+R9	Coreference Arg1:T30 Arg2:T29	
+T5	Parts 171 176	シフト機構
+R11	Connect Arg1:T5 Arg2:T32	
+R12	Connect Arg1:T31 Arg2:T32	
+R14	Part-Whole Arg1:T34 Arg2:T33	
+R2	Contact Arg1:T29 Arg2:T28	
+R8	Contact Arg1:T29 Arg2:T6	
+R15	Contact Arg1:T6 Arg2:T28	
+R18	Part-Whole Arg1:T32 Arg2:T1	
+R20	Part-Whole Arg1:T33 Arg2:T1	
+R7	Part-Whole Arg1:T5 Arg2:T1	
+R1	Part-Whole Arg1:T2 Arg2:T5	

@@ -1,0 +1,21 @@
+T1	Parts 0 7	ロード・ローラ
+T2	Parts 15 22	ワイヤハーネス
+T4	Parts 133 139	駐車ブレーキ
+T5	Parts 109 113	エンジン
+T6	Parts 35 39	ハーネス
+T7	Parts 84 88	ハーネス
+T8	Parts 121 124	前照灯
+T10	Parts 41 43	電線
+T11	Parts 90 92	電線
+R1	Coreference Arg1:T7 Arg2:T6	
+R2	Coreference Arg1:T11 Arg2:T10	
+R3	Part-Whole Arg1:T10 Arg2:T6	
+R4	Coreference Arg1:T6 Arg2:T2	
+R5	Connect Arg1:T5 Arg2:T6	
+R6	Connect Arg1:T8 Arg2:T6	
+R7	Connect Arg1:T4 Arg2:T6	
+R8	Part-Whole Arg1:T2 Arg2:T1	
+R9	Part-Whole Arg1:T5 Arg2:T1	
+R10	Part-Whole Arg1:T8 Arg2:T1	
+R11	Part-Whole Arg1:T4 Arg2:T1	
+T3	Parts 63 69	ステアリング

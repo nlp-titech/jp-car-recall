@@ -1,0 +1,13 @@
+T1	Parts 22 30	ターボチャージャ
+T2	Parts 85 92	ブレーキペダル
+T3	Parts 14 20	ダイヤフラム
+T4	Parts 55 61	ダイヤフラム
+T5	Parts 5 11	制動倍力装置
+T6	Parts 66 72	制動倍力装置
+T7	Parts 0 4	制動装置
+R1	Coreference Arg1:T5 Arg2:T6	
+R2	Coreference Arg1:T3 Arg2:T4	
+R3	Part-Whole Arg1:T2 Arg2:T7	
+R4	Part-Whole Arg1:T5 Arg2:T7	
+R5	Part-Whole Arg1:T3 Arg2:T5	
+R6	Connect Arg1:T6 Arg2:T2	

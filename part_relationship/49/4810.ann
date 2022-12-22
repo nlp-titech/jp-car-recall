@@ -1,0 +1,13 @@
+T1	Parts 13 22	スロットルボディー
+T2	Parts 33 42	スロットルボディー
+T3	Parts 80 84	アクセル
+T4	Parts 4 8	加速装置
+T5	Parts 103 106	ペダル
+T6	Parts 0 3	原動機
+R2	Part-Whole Arg1:T1 Arg2:T4	
+R4	Coreference Arg1:T1 Arg2:T2	
+R1	Connect Arg1:T6 Arg2:T4	
+R3	Coreference Arg1:T4 Arg2:T3	
+R5	Part-Whole Arg1:T5 Arg2:T3	
+R6	Connect Arg1:T2 Arg2:T5	
+R7	Contact Arg1:T6 Arg2:T1	

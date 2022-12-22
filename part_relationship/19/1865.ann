@@ -1,0 +1,10 @@
+T4	Parts 29 37	受信機用リモコン
+T5	Parts 38 42	受光装置
+T1	Parts 0 12	地上デジタルテレビ受信機
+T2	Parts 43 48	前面ガラス
+T3	Parts 17 22	特別仕様車
+T6	Parts 60 66	道路運送車両
+R2	Part-Whole Arg1:T1 Arg2:T3	
+R3	Connect Arg1:T1 Arg2:T4	
+R4	Part-Whole Arg1:T5 Arg2:T4	
+R5	Part-Whole Arg1:T2 Arg2:T3	

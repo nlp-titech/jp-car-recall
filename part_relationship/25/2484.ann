@@ -1,0 +1,6 @@
+T4	Parts 39 42	速度計
+T5	Parts 12 17	コンデンサ
+T1	Parts 0 3	計器盤
+R1	Part-Whole Arg1:T5 Arg2:T1	
+R2	Part-Whole Arg1:T4 Arg2:T1	
+R3	Connect Arg1:T5 Arg2:T4	

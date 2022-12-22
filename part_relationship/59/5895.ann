@@ -1,0 +1,9 @@
+T1	Parts 0 16	オートマチックトランスミッション
+T2	Parts 19 54	トランスミッションレンジセンサー（シフトレバー位置を検知するセンサー）
+T4	Parts 65 71	シフトレバー
+T7	Parts 104 115	リヤビューカメラ装着車
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Connect Arg1:T2 Arg2:T4	
+R3	Contact Arg1:T1 Arg2:T4	
+R4	Part-Whole Arg1:T1 Arg2:T7	
+R5	Part-Whole Arg1:T4 Arg2:T7	

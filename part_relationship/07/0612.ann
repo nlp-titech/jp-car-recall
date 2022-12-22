@@ -1,0 +1,18 @@
+T1	Parts 1 6	かじ取装置
+T2	Parts 7 19	アイドラアームブラケット
+T3	Parts 20 24	フレーム
+T4	Parts 30 33	ボルト
+T5	Parts 51 54	ボルト
+T6	Parts 63 66	ボルト
+T7	Parts 78 90	アイドラアームブラケット
+T8	Parts 102 114	アイドラアームブラケット
+T9	Parts 147 159	アイドラアームブラケット
+R1	Coreference Arg1:T9 Arg2:T8	
+R2	Coreference Arg1:T8 Arg2:T7	
+R3	Coreference Arg1:T6 Arg2:T5	
+R4	Coreference Arg1:T5 Arg2:T4	
+R5	Coreference Arg1:T7 Arg2:T2	
+R6	Part-Whole Arg1:T2 Arg2:T1	
+R7	Contact Arg1:T4 Arg2:T2	
+R8	Contact Arg1:T3 Arg2:T2	
+R9	Contact Arg1:T3 Arg2:T4	

@@ -1,0 +1,21 @@
+T1	Parts 0 8	燃料電池システム
+T2	Parts 13 22	電動ウォータポンプ
+T3	Parts 27 33	駆動用モータ
+T6	Parts 49 52	冷却水
+T7	Parts 91 100	電動ウォータポンプ
+T8	Parts 119 122	警告灯
+T9	Parts 132 140	燃料電池システム
+T10	Parts 155 158	警告灯
+T11	Parts 168 176	燃料電池システム
+T4	Parts 123 127	警告表示
+T5	Parts 159 163	警告表示
+R1	Coreference Arg1:T1 Arg2:T9	
+R2	Coreference Arg1:T9 Arg2:T11	
+R3	Coreference Arg1:T2 Arg2:T7	
+R4	Connect Arg1:T1 Arg2:T2	
+R5	Part-Whole Arg1:T3 Arg2:T2	
+R6	Connect Arg1:T2 Arg2:T6	
+R7	Connect Arg1:T7 Arg2:T8	
+R8	Connect Arg1:T7 Arg2:T4	
+R9	Coreference Arg1:T8 Arg2:T10	
+R10	Coreference Arg1:T4 Arg2:T5	

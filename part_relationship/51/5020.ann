@@ -1,0 +1,11 @@
+T1	Parts 1 10	トランスミッション
+T2	Parts 31 39	緩衝用スプリング
+T3	Parts 71 76	スプリング
+T4	Parts 20 28	二重可動式ホース
+T5	Parts 65 68	ホース
+T7	Parts 111 113	後輪
+R1	Coreference Arg1:T3 Arg2:T2	
+R2	Part-Whole Arg1:T4 Arg2:T1	
+R3	Coreference Arg1:T5 Arg2:T4	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Connect Arg1:T7 Arg2:T1	

@@ -1,0 +1,27 @@
+T16	Parts 121 130	プラネタリキャリア
+T17	Parts 137 144	プラネタリギア
+T18	Parts 113 120	プラネタリピン
+T19	Parts 78 85	スプリングピン
+T20	Parts 53 60	スプリングピン
+T1	Parts 0 7	ロード・ローラ
+T2	Parts 8 11	減速機
+T3	Parts 12 21	プラネタリキャリア
+T4	Parts 26 33	プラネタリギア
+T5	Parts 38 45	プラネタリピン
+R1	Coreference Arg1:T19 Arg2:T20	
+R2	Coreference Arg1:T5 Arg2:T18	
+R3	Coreference Arg1:T3 Arg2:T16	
+R4	Coreference Arg1:T4 Arg2:T17	
+T6	Parts 153 155	歯車
+T7	Parts 176 178	車輪
+R5	Part-Whole Arg1:T2 Arg2:T1	
+R6	Part-Whole Arg1:T4 Arg2:T3	
+R9	Contact Arg1:T5 Arg2:T4	
+R10	Contact Arg1:T20 Arg2:T5	
+R11	Contact Arg1:T6 Arg2:T17	
+R13	Part-Whole Arg1:T3 Arg2:T2	
+R14	Part-Whole Arg1:T7 Arg2:T1	
+R7	Connect Arg1:T2 Arg2:T7	
+R8	Contact Arg1:T3 Arg2:T5	
+R12	Contact Arg1:T4 Arg2:T20	
+R15	Part-Whole Arg1:T6 Arg2:T2	

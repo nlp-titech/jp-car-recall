@@ -1,0 +1,5 @@
+T18	Parts 93 99	後輪フェンダ
+T19	Parts 36 40	サポート
+T20	Parts 0 10	後輪フェンダサポート
+R1	Coreference Arg1:T20 Arg2:T19	
+R2	Contact Arg1:T18 Arg2:T19	

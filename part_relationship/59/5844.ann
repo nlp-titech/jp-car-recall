@@ -1,0 +1,12 @@
+T1	Parts 0 9	ターボチャージャー
+T2	Parts 34 39	ハウジング
+T3	Parts 55 60	ハウジング
+T4	Parts 17 29	電動補助クーラントポンプ
+T5	Parts 82 87	クーラント
+T10	Parts 127 129	車両
+R1	Connect Arg1:T1 Arg2:T4	
+R2	Coreference Arg1:T2 Arg2:T3	
+R3	Contact Arg1:T4 Arg2:T5	
+R5	Part-Whole Arg1:T2 Arg2:T4	
+R6	Part-Whole Arg1:T1 Arg2:T10	
+R7	Part-Whole Arg1:T4 Arg2:T10	

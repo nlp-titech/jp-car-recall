@@ -1,0 +1,15 @@
+T1	Parts 0 12	コンビネーションメーター
+T2	Parts 13 20	制御プログラム
+T3	Parts 28 31	運転席
+T4	Parts 32 38	シートベルト
+T5	Parts 47 53	シートベルト
+T6	Parts 42 46	後部座席
+T7	Parts 65 69	後部座席
+T8	Parts 70 76	シートベルト
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Coreference Arg1:T6 Arg2:T7	
+R4	Coreference Arg1:T5 Arg2:T8	
+R5	Contact Arg1:T3 Arg2:T4	
+R6	Contact Arg1:T6 Arg2:T5	
+R7	Connect Arg1:T1 Arg2:T4	
+R8	Connect Arg1:T1 Arg2:T5	

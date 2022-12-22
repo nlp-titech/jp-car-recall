@@ -1,0 +1,5 @@
+T4	Parts 58 61	後退灯
+T6	Parts 0 53	トラックの荷箱を昇降させる装置をオプションとして追加架装した車両（多目的ダンプ、ライトダンプ、ミニダンプ）
+R2	Part-Whole Arg1:T4 Arg2:T6	
+T2	Parts 76 79	後退灯
+R1	Coreference Arg1:T2 Arg2:T4	

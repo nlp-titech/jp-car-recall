@@ -1,0 +1,19 @@
+T14	Parts 87 91	エンジン
+T15	Parts 47 50	原動機
+T16	Parts 39 46	燃料噴射ポンプ
+T17	Parts 79 82	ラック
+T18	Parts 18 21	ラック
+T1	Parts 0 7	燃料噴射ポンプ
+T2	Parts 8 10	燃料
+T4	Parts 160 163	対象車
+T5	Parts 178 182	対象車両
+R1	Coreference Arg1:T1 Arg2:T16	
+R2	Coreference Arg1:T18 Arg2:T17	
+R3	Coreference Arg1:T4 Arg2:T5	
+R4	Contact Arg1:T15 Arg2:T16	
+R5	Coreference Arg1:T15 Arg2:T14	
+R6	Contact Arg1:T1 Arg2:T2	
+R7	Part-Whole Arg1:T18 Arg2:T1	
+R8	Part-Whole Arg1:T14 Arg2:T4	
+R9	Part-Whole Arg1:T16 Arg2:T4	
+R10	Part-Whole Arg1:T2 Arg2:T4	

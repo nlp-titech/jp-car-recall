@@ -1,0 +1,20 @@
+T1	Parts 148 164	パワーステアリングポンプシャフト
+T2	Parts 55 69	パワーステアリングポンプギヤ
+T3	Parts 13 25	パワーステアリングポンプ
+T4	Parts 31 43	フライホイールハウジング
+T5	Parts 79 89	エアコンプレッサギヤ
+T6	Parts 8 12	エンジン
+T7	Parts 0 3	消防車
+T8	Parts 72 74	ギヤ
+T9	Parts 112 114	ギヤ
+R1	Part-Whole Arg1:T6 Arg2:T7	
+R4	Part-Whole Arg1:T2 Arg2:T3	
+R5	Coreference Arg1:T2 Arg2:T8	
+R11	Part-Whole Arg1:T5 Arg2:T7	
+R7	Oneway-Coreference Arg1:T9 Arg2:T8	
+R8	Oneway-Coreference Arg1:T9 Arg2:T5	
+R3	Contact Arg1:T3 Arg2:T4	
+R2	Part-Whole Arg1:T4 Arg2:T6	
+R12	Part-Whole Arg1:T3 Arg2:T7	
+R6	Contact Arg1:T8 Arg2:T5	
+R9	Part-Whole Arg1:T1 Arg2:T3	

@@ -1,0 +1,25 @@
+T10	Parts 66 72	シートベルト
+T11	Parts 33 37	巻取装置
+T12	Parts 40 45	ロック機構
+T13	Parts 126 132	シートベルト
+T1	Parts 0 6	小型トラック
+T2	Parts 7 11	大型バス
+T4	Parts 22 28	シートベルト
+R1	Coreference Arg1:T4 Arg2:T10	
+R2	Coreference Arg1:T13 Arg2:T10	
+R5	Part-Whole Arg1:T12 Arg2:T11	
+R6	Part-Whole Arg1:T4 Arg2:T2	
+R7	Part-Whole Arg1:T4 Arg2:T1	
+T3	Parts 12 15	運転席
+T5	Parts 18 21	助手席
+R8	Part-Whole Arg1:T3 Arg2:T2	
+R9	Part-Whole Arg1:T3 Arg2:T1	
+R10	Part-Whole Arg1:T5 Arg2:T2	
+R11	Part-Whole Arg1:T5 Arg2:T1	
+#1	AnnotatorNotes T3	「運転席」は運転席全体を指すのではなく、「シート」のみを指すものとした。
+#2	AnnotatorNotes T5	「助手席」は助手席全体を指すのではなく、「シート」のみを指すものとした。
+R3	Contact Arg1:T3 Arg2:T4	
+R12	Contact Arg1:T5 Arg2:T4	
+R4	Contact Arg1:T4 Arg2:T11	
+R13	Part-Whole Arg1:T11 Arg2:T1	
+R14	Part-Whole Arg1:T11 Arg2:T2	

@@ -1,0 +1,13 @@
+T1	Parts 40 49	リターンスプリング
+T2	Parts 7 15	スロットルバルブ
+T3	Parts 91 99	スロットルバルブ
+T4	Parts 0 6	キャブレター
+T7	Parts 104 108	エンジン
+T5	Parts 20 29	キャブレターボディ
+T6	Parts 50 59	キャブレターボディ
+R1	Coreference Arg1:T5 Arg2:T6	
+R2	Coreference Arg1:T2 Arg2:T3	
+R3	Part-Whole Arg1:T2 Arg2:T4	
+R4	Part-Whole Arg1:T5 Arg2:T2	
+R5	Contact Arg1:T1 Arg2:T6	
+R6	Part-Whole Arg1:T4 Arg2:T7	

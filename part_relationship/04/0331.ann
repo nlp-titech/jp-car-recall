@@ -1,0 +1,16 @@
+T10	Parts 0 6	駐車ブレーキ
+T11	Parts 7 11	ケーブル
+T12	Parts 12 21	駐車ブレーキペダル
+T13	Parts 52 56	ケーブル
+T14	Parts 71 75	ケーブル
+T15	Parts 105 109	ケーブル
+T18	Parts 114 120	駐車ブレーキ
+T22	Parts 36 42	駐車ブレーキ
+R1	Coreference Arg1:T22 Arg2:T10	
+R2	Coreference Arg1:T13 Arg2:T11	
+R3	Coreference Arg1:T14 Arg2:T13	
+R4	Coreference Arg1:T15 Arg2:T14	
+R5	Coreference Arg1:T18 Arg2:T22	
+R6	Contact Arg1:T11 Arg2:T10	
+R7	Connect Arg1:T12 Arg2:T10	
+R8	Contact Arg1:T11 Arg2:T12	

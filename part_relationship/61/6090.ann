@@ -1,0 +1,9 @@
+T1	Parts 0 11	フロントブレーキホース
+T2	Parts 12 17	燃料タンク
+T3	Parts 67 75	フロントブレーキ
+T4	Parts 18 22	フレーム
+T5	Parts 91 99	フロントホイール
+R1	Part-Whole Arg1:T1 Arg2:T3	
+R2	Connect Arg1:T3 Arg2:T5	
+R3	Contact Arg1:T1 Arg2:T4	
+R4	Contact Arg1:T2 Arg2:T4	

@@ -1,0 +1,22 @@
+T3	Parts 47 51	エンジン
+T4	Parts 103 107	エンジン
+T6	Parts 52 55	遮熱板
+T7	Parts 108 111	遮熱板
+T8	Parts 129 131	車両
+T9	Parts 19 21	配線
+T10	Parts 44 46	配線
+T11	Parts 60 62	配線
+T12	Parts 92 94	配線
+T1	Parts 0 4	エンジン
+T2	Parts 9 18	左ラジエータファン
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Contact Arg1:T9 Arg2:T2	
+R3	Coreference Arg1:T9 Arg2:T10	
+R4	Coreference Arg1:T1 Arg2:T3	
+R5	Part-Whole Arg1:T6 Arg2:T3	
+R6	Coreference Arg1:T10 Arg2:T11	
+R8	Coreference Arg1:T11 Arg2:T12	
+R9	Coreference Arg1:T3 Arg2:T4	
+R10	Coreference Arg1:T6 Arg2:T7	
+R11	Part-Whole Arg1:T4 Arg2:T8	
+R7	Part-Whole Arg1:T9 Arg2:T1	

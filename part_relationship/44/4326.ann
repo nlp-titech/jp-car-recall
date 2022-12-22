@@ -1,0 +1,17 @@
+T3	Parts 95 99	サイレン
+T4	Parts 14 20	電源スイッチ
+T5	Parts 31 37	電源スイッチ
+T6	Parts 44 48	スイッチ
+T7	Parts 6 13	サイレンアンプ
+T8	Parts 74 81	サイレンアンプ
+T9	Parts 87 90	警光灯
+T10	Parts 0 5	緊急自動車
+R1	Part-Whole Arg1:T7 Arg2:T10	
+R2	Part-Whole Arg1:T4 Arg2:T7	
+R3	Coreference Arg1:T4 Arg2:T5	
+R5	Coreference Arg1:T7 Arg2:T8	
+R7	Part-Whole Arg1:T9 Arg2:T10	
+R8	Connect Arg1:T8 Arg2:T3	
+R9	Part-Whole Arg1:T3 Arg2:T10	
+R4	Coreference Arg1:T5 Arg2:T6	
+R10	Connect Arg1:T8 Arg2:T9	

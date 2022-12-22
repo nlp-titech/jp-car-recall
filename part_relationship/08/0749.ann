@@ -1,0 +1,21 @@
+T17	Parts 11 26	パワーステアリング用油圧ポンプ
+T18	Parts 27 31	プーリー
+T19	Parts 42 46	プーリー
+T20	Parts 89 93	プーリー
+T21	Parts 102 117	パワーステアリング用油圧ポンプ
+T22	Parts 119 123	プーリー
+T23	Parts 48 51	ナット
+T1	Parts 0 6	かじ取り装置
+R1	Coreference Arg1:T19 Arg2:T18	
+R2	Coreference Arg1:T20 Arg2:T19	
+T2	Parts 95 98	ナット
+R3	Coreference Arg1:T2 Arg2:T23	
+R4	Coreference Arg1:T21 Arg2:T17	
+R5	Coreference Arg1:T22 Arg2:T20	
+T3	Parts 127 132	充電警告灯
+T4	Parts 137 141	ハンドル
+T5	Parts 154 162	ウオーターポンプ
+R6	Part-Whole Arg1:T17 Arg2:T1	
+R7	Contact Arg1:T18 Arg2:T17	
+R8	Contact Arg1:T23 Arg2:T19	
+R9	Connect Arg1:T22 Arg2:T3	

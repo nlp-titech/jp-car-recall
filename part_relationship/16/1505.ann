@@ -1,0 +1,11 @@
+T15	Parts 33 37	ブッシュ
+T14	Parts 74 78	ブッシュ
+T16	Parts 101 106	コンロッド
+T17	Parts 111 115	エンジン
+T1	Parts 0 3	原動機
+R2	Coreference Arg1:T14 Arg2:T15	
+R6	Coreference Arg1:T17 Arg2:T1	
+T3	Parts 4 9	コンロッド
+R1	Part-Whole Arg1:T3 Arg2:T1	
+R3	Coreference Arg1:T3 Arg2:T16	
+R4	Part-Whole Arg1:T15 Arg2:T3	

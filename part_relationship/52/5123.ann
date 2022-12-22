@@ -1,0 +1,16 @@
+T1	Parts 1 15	エンジンコントロールユニット
+T2	Parts 29 37	スロットルバルブ
+T3	Parts 112 120	ブレーキ倍力装置
+T4	Parts 133 140	ブレーキペダル
+T5	Parts 69 74	ストッパー
+T8	Parts 90 94	エンジン
+T9	Parts 47 50	バルブ
+T6	Parts 58 68	電子スロットルモータ
+R2	Connect Arg1:T1 Arg2:T8	
+R3	Coreference Arg1:T2 Arg2:T9	
+R4	Contact Arg1:T6 Arg2:T5	
+R5	Connect Arg1:T3 Arg2:T4	
+R6	Connect Arg1:T1 Arg2:T3	
+R1	Contact Arg1:T6 Arg2:T9	
+R7	Connect Arg1:T1 Arg2:T6	
+R8	Connect Arg1:T1 Arg2:T2	

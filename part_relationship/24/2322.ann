@@ -1,0 +1,15 @@
+T14	Parts 91 101	フランジカップリング
+T15	Parts 44 59	フランジカップリング締付ボルト
+T1	Parts 0 3	変速機
+T2	Parts 6 15	車速センサ用ロータ
+T3	Parts 28 31	ロータ
+T4	Parts 38 41	変速機
+R1	Coreference Arg1:T4 Arg2:T1	
+T5	Parts 107 115	プロペラシャフト
+R2	Coreference Arg1:T3 Arg2:T2	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T15 Arg2:T4	
+R5	Part-Whole Arg1:T14 Arg2:T4	
+R6	Connect Arg1:T5 Arg2:T4	
+R7	Contact Arg1:T14 Arg2:T15	
+R8	Contact Arg1:T14 Arg2:T5	

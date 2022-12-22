@@ -1,0 +1,21 @@
+T17	Parts 153 161	すれ違い用前照灯
+T18	Parts 96 100	トランス
+T19	Parts 121 124	コイル
+T20	Parts 129 132	ＥＣＵ
+T1	Parts 0 11	放電式すれ違い用前照灯
+T3	Parts 55 60	前照灯回路
+T5	Parts 88 95	インバータ回路
+T6	Parts 184 187	前照灯
+T8	Parts 198 200	車両
+T4	Parts 12 25	電子制御ユニット（ＥＣＵ）
+T9	Parts 82 85	ＥＣＵ
+R1	Coreference Arg1:T4 Arg2:T9	
+R2	Coreference Arg1:T9 Arg2:T20	
+R3	Coreference Arg1:T1 Arg2:T17	
+R4	Coreference Arg1:T17 Arg2:T6	
+R8	Part-Whole Arg1:T5 Arg2:T9	
+R9	Part-Whole Arg1:T18 Arg2:T5	
+R10	Part-Whole Arg1:T19 Arg2:T18	
+R11	Part-Whole Arg1:T6 Arg2:T8	
+R5	Connect Arg1:T1 Arg2:T4	
+R6	Part-Whole Arg1:T3 Arg2:T1	

@@ -1,0 +1,7 @@
+T2	Parts 19 37	ラジオ雑音防止用コンデンサ（蓄電器）
+T3	Parts 69 74	コンデンサ
+R1	Coreference Arg1:T2 Arg2:T3	
+T4	Parts 4 9	点火系配線
+T1	Parts 0 3	原動機
+R2	Part-Whole Arg1:T4 Arg2:T1	
+R3	Part-Whole Arg1:T2 Arg2:T4	

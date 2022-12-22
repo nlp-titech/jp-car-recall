@@ -1,0 +1,13 @@
+T1	Parts 0 11	フロントワイパーモータ
+T2	Parts 175 183	フロントワイパー
+T4	Parts 166 170	内部回路
+T5	Parts 57 60	モータ
+T6	Parts 97 100	モータ
+T7	Parts 120 123	モータ
+T8	Parts 162 165	モータ
+R1	Coreference Arg1:T1 Arg2:T5	
+R2	Coreference Arg1:T5 Arg2:T6	
+R3	Coreference Arg1:T6 Arg2:T7	
+R4	Coreference Arg1:T7 Arg2:T8	
+R5	Part-Whole Arg1:T4 Arg2:T8	
+R6	Part-Whole Arg1:T8 Arg2:T2	

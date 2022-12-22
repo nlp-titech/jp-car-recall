@@ -1,0 +1,19 @@
+T1	Parts 0 8	アクセルケーブル
+T2	Parts 107 115	アクセルケーブル
+T4	Parts 116 128	スロットルバルブ・レバー
+T5	Parts 133 140	アクセルペダル
+T6	Parts 32 41	ゴム製ガイドピース
+T8	Parts 13 25	スロットルバルブ・レバー
+T10	Parts 9 12	原動機
+T11	Parts 79 82	原動機
+T13	Parts 69 78	ゴム製ガイドピース
+R1	Part-Whole Arg1:T8 Arg2:T10	
+R2	Contact Arg1:T6 Arg2:T8	
+R3	Contact Arg1:T6 Arg2:T1	
+R4	Coreference Arg1:T6 Arg2:T13	
+R5	Coreference Arg1:T10 Arg2:T11	
+R6	Coreference Arg1:T1 Arg2:T2	
+R7	Coreference Arg1:T8 Arg2:T4	
+R8	Contact Arg1:T2 Arg2:T5	
+R9	Contact Arg1:T1 Arg2:T8	
+R10	Connect Arg1:T4 Arg2:T5	

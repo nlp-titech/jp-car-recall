@@ -1,0 +1,16 @@
+T17	Parts 79 97	サスペンションロックシリンダ固定ピン
+T18	Parts 41 44	ボルト
+T20	Parts 107 121	サスペンションロックシリンダ
+T21	Parts 128 133	油圧ホース
+T1	Parts 0 14	サスペンションロックシリンダ
+T2	Parts 15 25	固定ピン取付用ボルト
+R1	Coreference Arg1:T2 Arg2:T18	
+R2	Coreference Arg1:T1 Arg2:T20	
+T3	Parts 144 145	油
+T4	Parts 149 155	ステアリング
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T17 Arg2:T1	
+R5	Contact Arg1:T18 Arg2:T17	
+R6	Contact Arg1:T20 Arg2:T21	
+R7	Contact Arg1:T21 Arg2:T3	
+R8	Contact Arg1:T21 Arg2:T4	

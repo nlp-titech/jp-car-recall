@@ -1,0 +1,20 @@
+T12	Parts 105 113	フロントアクスル
+T13	Parts 39 44	固定ボルト
+T14	Parts 83 86	ボルト
+T1	Parts 0 8	フロントアクスル
+T2	Parts 13 15	デフ
+T3	Parts 16 25	アクスルハウジング
+T4	Parts 27 35	ドライブシャフト
+T5	Parts 36 38	ハブ
+R1	Coreference Arg1:T14 Arg2:T13	
+R2	Coreference Arg1:T12 Arg2:T1	
+R4	Part-Whole Arg1:T3 Arg2:T1	
+R8	Contact Arg1:T13 Arg2:T4	
+R9	Contact Arg1:T13 Arg2:T5	
+R10	Contact Arg1:T4 Arg2:T5	
+R11	Contact Arg1:T13 Arg2:T2	
+R12	Contact Arg1:T13 Arg2:T3	
+R13	Contact Arg1:T2 Arg2:T3	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T4 Arg2:T1	
+R6	Part-Whole Arg1:T5 Arg2:T1	

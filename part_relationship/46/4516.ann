@@ -1,0 +1,9 @@
+T1	Parts 14 18	クラッチ
+T2	Parts 40 44	クラッチ
+T3	Parts 5 9	スタータ
+T4	Parts 0 4	始動装置
+T5	Parts 49 52	原動機
+R1	Coreference Arg1:T4 Arg2:T3	
+R2	Part-Whole Arg1:T1 Arg2:T3	
+R3	Coreference Arg1:T1 Arg2:T2	
+R4	Connect Arg1:T3 Arg2:T5	

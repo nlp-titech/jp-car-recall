@@ -1,0 +1,17 @@
+T1	Parts 0 9	大型・中型路線バス
+T2	Parts 25 31	側面スイッチ
+T3	Parts 45 51	側面スイッチ
+T5	Parts 59 66	放送装置操作器
+T7	Parts 56 58	配線
+T8	Parts 94 96	配線
+T10	Parts 114 115	扉
+T11	Parts 15 24	運転者席下側配電箱
+R4	Coreference Arg1:T2 Arg2:T3	
+R5	Coreference Arg1:T7 Arg2:T8	
+R3	Part-Whole Arg1:T2 Arg2:T11	
+R7	Contact Arg1:T3 Arg2:T7	
+R8	Part-Whole Arg1:T5 Arg2:T1	
+R9	Part-Whole Arg1:T10 Arg2:T1	
+R10	Connect Arg1:T3 Arg2:T10	
+R6	Part-Whole Arg1:T7 Arg2:T11	
+R1	Part-Whole Arg1:T11 Arg2:T1	

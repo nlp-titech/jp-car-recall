@@ -1,0 +1,9 @@
+T1	Parts 0 10	フロントシートベルト
+T2	Parts 15 29	シートベルトプリテンショナー
+T3	Parts 40 46	ガス発生装置
+T4	Parts 75 83	プリテンショナー
+T5	Parts 90 96	ガス発生装置
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T2 Arg2:T4	
+R3	Coreference Arg1:T3 Arg2:T5	
+R4	Contact Arg1:T3 Arg2:T2	

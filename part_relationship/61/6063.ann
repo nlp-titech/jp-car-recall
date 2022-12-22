@@ -1,0 +1,7 @@
+T1	Parts 0 11	サイドスタンドスイッチ
+T2	Parts 93 97	エンジン
+T4	Parts 35 39	スイッチ
+T5	Parts 61 65	スイッチ
+R1	Coreference Arg1:T1 Arg2:T4	
+R2	Coreference Arg1:T4 Arg2:T5	
+R3	Connect Arg1:T5 Arg2:T2	

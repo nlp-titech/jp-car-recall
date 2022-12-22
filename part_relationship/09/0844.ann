@@ -1,0 +1,7 @@
+T18	Parts 74 83	ディストリビュータ
+T19	Parts 10 14	パッキン
+T20	Parts 37 41	パッキン
+T1	Parts 0 9	ディストリビュータ
+R1	Coreference Arg1:T20 Arg2:T19	
+R2	Coreference Arg1:T18 Arg2:T1	
+R3	Part-Whole Arg1:T19 Arg2:T1	

@@ -1,0 +1,16 @@
+T20	Parts 47 59	コンビネーションスイッチ
+T21	Parts 80 85	側方照射灯
+T22	Parts 15 24	側方照射灯スイッチ
+T24	Parts 145 147	基板
+T27	Parts 126 128	基板
+T1	Parts 0 12	コンビネーションスイッチ
+T9	Parts 214 217	対象車
+T10	Parts 230 233	対象車
+R1	Coreference Arg1:T1 Arg2:T20	
+R3	Coreference Arg1:T27 Arg2:T24	
+R5	Coreference Arg1:T9 Arg2:T10	
+R2	Part-Whole Arg1:T22 Arg2:T1	
+R4	Connect Arg1:T21 Arg2:T22	
+R7	Part-Whole Arg1:T27 Arg2:T1	
+R6	Part-Whole Arg1:T20 Arg2:T9	
+R8	Part-Whole Arg1:T21 Arg2:T9	

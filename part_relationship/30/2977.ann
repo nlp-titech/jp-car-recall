@@ -1,0 +1,14 @@
+T1	Parts 0 7	ウイングボデー
+T3	Parts 8 32	スチール製アンダーロック式リヤドアハンドル仕様車
+T5	Parts 37 45	リヤドアハンドル
+T8	Parts 80 88	リヤドアハンドル
+R2	Coreference Arg1:T8 Arg2:T5	
+T9	Parts 117 119	荷台
+T11	Parts 156 164	リヤドアハンドル
+R4	Coreference Arg1:T11 Arg2:T8	
+T12	Parts 172 176	リヤドア
+R6	Part-Whole Arg1:T1 Arg2:T3	
+R1	Part-Whole Arg1:T5 Arg2:T3	
+R11	Contact Arg1:T12 Arg2:T11	
+R3	Part-Whole Arg1:T9 Arg2:T1	
+R5	Part-Whole Arg1:T12 Arg2:T1	

@@ -1,0 +1,16 @@
+T1	Parts 15 25	原動機制御用電気配線
+T2	Parts 52 59	ヒーターホース
+T3	Parts 60 74	金属クリップタブ（つまみ部）
+T4	Parts 96 100	ヒューズ
+T6	Parts 0 4	電気装置
+T7	Parts 43 46	原動機
+T8	Parts 105 108	原動機
+T10	Parts 75 77	配線
+R1	Part-Whole Arg1:T1 Arg2:T6	
+R6	Coreference Arg1:T1 Arg2:T10	
+R7	Contact Arg1:T7 Arg2:T2	
+R10	Connect Arg1:T4 Arg2:T8	
+R11	Coreference Arg1:T7 Arg2:T8	
+R5	Connect Arg1:T4 Arg2:T10	
+R2	Connect Arg1:T7 Arg2:T1	
+R3	Contact Arg1:T2 Arg2:T3	

@@ -1,0 +1,39 @@
+T1	Parts 13 23	コントロールユニット
+T2	Parts 210 220	コントロールユニット
+T3	Parts 153 159	メータパネル
+T4	Parts 341 347	メータパネル
+T5	Parts 71 76	ブレーキ液
+T6	Parts 97 102	ブレーキ液
+T7	Parts 259 264	ブレーキ液
+T8	Parts 285 290	ブレーキ液
+T11	Parts 106 110	センサー
+T12	Parts 294 298	センサー
+T13	Parts 1 12	電子制御式油圧ブレーキ
+T14	Parts 37 41	ブレーキ
+T15	Parts 178 182	ブレーキ
+T16	Parts 198 209	電子制御式油圧ブレーキ
+T17	Parts 366 370	ブレーキ
+T20	Parts 51 58	ポンプ・モータ
+T21	Parts 234 241	ポンプ・モータ
+T22	Parts 135 138	警告灯
+T23	Parts 323 326	警告灯
+R1	Coreference Arg1:T14 Arg2:T13	
+R2	Coreference Arg1:T15 Arg2:T14	
+R3	Coreference Arg1:T6 Arg2:T5	
+R4	Coreference Arg1:T16 Arg2:T15	
+R5	Coreference Arg1:T2 Arg2:T1	
+R7	Coreference Arg1:T21 Arg2:T20	
+R8	Coreference Arg1:T7 Arg2:T6	
+R9	Coreference Arg1:T8 Arg2:T7	
+R10	Coreference Arg1:T12 Arg2:T11	
+R11	Coreference Arg1:T23 Arg2:T22	
+R12	Coreference Arg1:T4 Arg2:T3	
+R13	Coreference Arg1:T17 Arg2:T16	
+R14	Connect Arg1:T1 Arg2:T13	
+R16	Part-Whole Arg1:T20 Arg2:T13	
+R17	Connect Arg1:T20 Arg2:T1	
+R18	Connect Arg1:T22 Arg2:T11	
+R19	Connect Arg1:T3 Arg2:T11	
+R21	Contact Arg1:T5 Arg2:T20	
+R6	Connect Arg1:T11 Arg2:T6	
+R15	Connect Arg1:T1 Arg2:T11	

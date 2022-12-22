@@ -1,0 +1,10 @@
+T1	Parts 6 12	動力伝達装置
+T2	Parts 17 27	リヤアスクルシャフト
+T3	Parts 28 40	ドライブシャフトフランジ
+T4	Parts 87 97	リヤアスクルシャフト
+R1	Coreference Arg1:T4 Arg2:T2	
+T5	Parts 0 5	電気自動車
+R3	Part-Whole Arg1:T1 Arg2:T5	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T3 Arg2:T1	
+R6	Contact Arg1:T2 Arg2:T3	

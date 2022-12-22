@@ -1,0 +1,13 @@
+T19	Parts 39 52	エアチューブ固定用クランプ
+T20	Parts 99 105	エアチューブ
+T1	Parts 1 5	原動機室
+T2	Parts 8 19	オルタネータ用電気配線
+T3	Parts 34 38	電気配線
+R1	Coreference Arg1:T3 Arg2:T2	
+T4	Parts 82 85	原動機
+R2	Part-Whole Arg1:T4 Arg2:T1	
+T5	Parts 93 97	電気配線
+R3	Coreference Arg1:T5 Arg2:T3	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T19 Arg2:T1	
+R6	Contact Arg1:T20 Arg2:T19	

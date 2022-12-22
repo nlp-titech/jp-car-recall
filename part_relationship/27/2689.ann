@@ -1,0 +1,7 @@
+T14	Parts 0 10	樹脂製アクセルペダル
+T15	Parts 45 51	ペダルアーム
+T16	Parts 78 84	ペダルアーム
+T17	Parts 29 32	ペダル
+R1	Coreference Arg1:T16 Arg2:T15	
+R2	Coreference Arg1:T17 Arg2:T14	
+R3	Part-Whole Arg1:T15 Arg2:T17	

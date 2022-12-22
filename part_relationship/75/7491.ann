@@ -1,0 +1,10 @@
+T1	Parts 0 8	左右テールライト
+T2	Parts 9 12	ボディ
+T3	Parts 14 19	取付ナット
+T4	Parts 60 66	テールライト
+T5	Parts 82 88	テールライト
+R1	Coreference Arg1:T1 Arg2:T4	
+R2	Coreference Arg1:T4 Arg2:T5	
+R3	Contact Arg1:T1 Arg2:T2	
+R4	Contact Arg1:T1 Arg2:T3	
+R5	Contact Arg1:T2 Arg2:T3	

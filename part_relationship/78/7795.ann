@@ -1,0 +1,8 @@
+T1	Parts 0 7	高圧燃料ポンプ
+T2	Parts 35 38	ポンプ
+T3	Parts 44 51	燃圧調整バルブ
+T4	Parts 70 72	燃料
+T5	Parts 81 84	警告灯
+T6	Parts 90 94	エンジン
+R1	Coreference Arg1:T2 Arg2:T1	
+R2	Contact Arg1:T4 Arg2:T2	

@@ -1,0 +1,9 @@
+T7	Parts 0 7	非常点滅表示灯
+T8	Parts 8 12	スイッチ
+T10	Parts 59 66	非常点滅表示灯
+T11	Parts 75 80	方向指示器
+T1	Parts 26 30	スイッチ
+R1	Coreference Arg1:T1 Arg2:T8	
+R2	Coreference Arg1:T10 Arg2:T7	
+R3	Part-Whole Arg1:T8 Arg2:T7	
+R4	Connect Arg1:T7 Arg2:T11	

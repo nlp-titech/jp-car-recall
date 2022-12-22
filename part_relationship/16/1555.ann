@@ -1,0 +1,7 @@
+T8	Parts 0 10	ステアリングシャフト
+T1	Parts 23 27	シャフト
+R1	Coreference Arg1:T1 Arg2:T8	
+T2	Parts 36 51	油圧ステアリングポンプシャフト
+R2	Contact Arg1:T2 Arg2:T1	
+T3	Parts 99 105	ステアリング
+R3	Contact Arg1:T3 Arg2:T1	

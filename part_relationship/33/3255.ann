@@ -1,0 +1,5 @@
+T1	Parts 0 23	１軸２０ｋＬ石油運搬用アルミタンクセミトレーラ
+T2	Parts 28 35	ボギーフレーム
+T3	Parts 59 66	ボギーフレーム
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Part-Whole Arg1:T2 Arg2:T1	

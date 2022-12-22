@@ -1,0 +1,20 @@
+T2	Parts 103 109	キャニスター
+T3	Parts 158 164	キャニスター
+T4	Parts 0 5	燃料タンク
+T6	Parts 114 118	エンジン
+T7	Parts 129 133	エンジン
+T10	Parts 69 71	燃料
+T11	Parts 100 102	燃料
+T12	Parts 121 123	燃料
+T13	Parts 177 179	燃料
+T1	Parts 7 43	ブリーザーパイプ（給油時に燃料タンク内の空気を外部に排出するためのもの）
+R2	Part-Whole Arg1:T10 Arg2:T4	
+R3	Coreference Arg1:T10 Arg2:T11	
+R4	Connect Arg1:T1 Arg2:T2	
+R5	Coreference Arg1:T6 Arg2:T7	
+R6	Coreference Arg1:T2 Arg2:T3	
+R7	Coreference Arg1:T11 Arg2:T12	
+R8	Coreference Arg1:T12 Arg2:T13	
+R9	Contact Arg1:T12 Arg2:T7	
+R1	Part-Whole Arg1:T1 Arg2:T4	
+R10	Connect Arg1:T6 Arg2:T4	

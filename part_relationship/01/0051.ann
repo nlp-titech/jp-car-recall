@@ -1,0 +1,20 @@
+T12	Parts 20 26	樹脂製ロッド
+T13	Parts 38 41	ロッド
+T14	Parts 46 50	ブレーキ
+T16	Parts 94 104	キーインタロック装置
+T15	Parts 116 125	イグニッションキー
+T18	Parts 133 139	かじ取り装置
+T19	Parts 140 144	施錠装置
+T1	Parts 0 8	自動変速機付き車
+T2	Parts 9 15	シフトレバー
+R1	Coreference Arg1:T13 Arg2:T12	
+T3	Parts 82 87	シフト機構
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T12 Arg2:T2	
+R4	Part-Whole Arg1:T14 Arg2:T1	
+R6	Connect Arg1:T3 Arg2:T16	
+R7	Connect Arg1:T15 Arg2:T16	
+R8	Connect Arg1:T19 Arg2:T18	
+R9	Part-Whole Arg1:T16 Arg2:T1	
+R10	Part-Whole Arg1:T18 Arg2:T1	
+R5	Part-Whole Arg1:T2 Arg2:T3	

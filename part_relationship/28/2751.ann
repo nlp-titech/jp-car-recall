@@ -1,0 +1,9 @@
+T1	Parts 0 12	ＨＩＤヘッドランプ装備車
+T4	Parts 23 43	ハロゲンヘッドランプ用フォグランプキット
+T5	Parts 58 67	フォグランプキット
+T6	Parts 75 88	走行用前照灯（ハイビーム）
+T7	Parts 99 114	すれ違い用前照灯（ロービーム）
+R1	Coreference Arg1:T4 Arg2:T5	
+R2	Part-Whole Arg1:T6 Arg2:T1	
+R3	Part-Whole Arg1:T7 Arg2:T1	
+R4	Part-Whole Arg1:T4 Arg2:T1	

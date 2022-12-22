@@ -1,0 +1,13 @@
+T1	Parts 16 24	エンジンハーネス
+T3	Parts 136 140	エンジン
+T10	Parts 123 126	冷却水
+T2	Parts 0 8	バッテリートレイ
+T4	Parts 32 40	ハーネスサポート
+T5	Parts 70 78	ラジエターホース
+T6	Parts 110 118	ラジエターホース
+R1	Coreference Arg1:T5 Arg2:T6	
+R2	Contact Arg1:T6 Arg2:T10	
+R3	Contact Arg1:T2 Arg2:T1	
+R4	Contact Arg1:T1 Arg2:T4	
+R5	Contact Arg1:T2 Arg2:T4	
+R6	Contact Arg1:T10 Arg2:T3	

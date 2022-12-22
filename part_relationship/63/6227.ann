@@ -1,0 +1,15 @@
+T2	Parts 69 73	電気回路
+T4	Parts 84 87	警告灯
+T5	Parts 41 44	配電盤
+T6	Parts 64 67	配電盤
+T7	Parts 0 4	連節バス
+T8	Parts 5 9	後側車両
+R1	Part-Whole Arg1:T8 Arg2:T7	
+T1	Parts 14 24	天井エアコンユニット
+R2	Part-Whole Arg1:T1 Arg2:T8	
+T3	Parts 26 31	天井パネル
+R3	Part-Whole Arg1:T3 Arg2:T1	
+R4	Coreference Arg1:T5 Arg2:T6	
+R5	Part-Whole Arg1:T2 Arg2:T6	
+R6	Connect Arg1:T2 Arg2:T4	
+R7	Part-Whole Arg1:T5 Arg2:T8	

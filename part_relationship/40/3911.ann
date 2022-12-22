@@ -1,0 +1,7 @@
+T1	Parts 1 14	エンジン制御用コンピュータ
+T2	Parts 97 104	エンジン警告灯
+T3	Parts 47 54	燃料噴射ノズル
+T8	Parts 87 89	触媒
+T9	Parts 125 127	触媒
+R1	Coreference Arg1:T9 Arg2:T8	
+R3	Connect Arg1:T2 Arg2:T1	

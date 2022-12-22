@@ -1,0 +1,19 @@
+T1	Parts 0 4	路線バス
+T2	Parts 5 14	車外扉開閉スイッチ
+T3	Parts 21 27	スイッチ配線
+T5	Parts 44 46	配線
+R1	Coreference Arg1:T5 Arg2:T3	
+T6	Parts 84 86	配線
+R2	Coreference Arg1:T6 Arg2:T5	
+T7	Parts 100 109	車外扉開閉スイッチ
+R3	Coreference Arg1:T7 Arg2:T2	
+T8	Parts 111 115	運転者席
+T9	Parts 116 123	扉開閉スイッチ
+T10	Parts 125 126	扉
+R4	Part-Whole Arg1:T8 Arg2:T1	
+R5	Part-Whole Arg1:T10 Arg2:T1	
+R6	Part-Whole Arg1:T9 Arg2:T1	
+R7	Part-Whole Arg1:T2 Arg2:T1	
+R8	Part-Whole Arg1:T3 Arg2:T2	
+R9	Connect Arg1:T7 Arg2:T10	
+R10	Connect Arg1:T9 Arg2:T10	

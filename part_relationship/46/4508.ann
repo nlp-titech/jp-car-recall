@@ -1,0 +1,6 @@
+T2	Parts 10 14	副消音器
+T3	Parts 17 20	排気管
+T4	Parts 0 2	車体
+R1	Contact Arg1:T2 Arg2:T3	
+R2	Contact Arg1:T4 Arg2:T2	
+R3	Contact Arg1:T4 Arg2:T3	

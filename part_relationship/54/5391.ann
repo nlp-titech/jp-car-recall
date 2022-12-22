@@ -1,0 +1,9 @@
+T1	Parts 0 8	タイロッドエンド
+T5	Parts 105 120	タイロッドエンド取り付けナット
+T6	Parts 67 71	ワッシャ
+R6	Contact Arg1:T5 Arg2:T6	
+R1	Contact Arg1:T1 Arg2:T6	
+R2	Contact Arg1:T1 Arg2:T5	
+T2	Parts 9 17	ボールジョイント
+T3	Parts 130 138	ボールジョイント
+R3	Coreference Arg1:T2 Arg2:T3	

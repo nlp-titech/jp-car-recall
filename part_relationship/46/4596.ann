@@ -1,0 +1,12 @@
+T1	Parts 5 17	前輪ロアボールジョイント
+T2	Parts 24 34	ロアボールジョイント
+T3	Parts 90 98	ボールジョイント
+T4	Parts 0 4	緩衝装置
+T5	Parts 45 48	ボルト
+T6	Parts 35 37	ハブ
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Coreference Arg1:T1 Arg2:T2	
+R3	Contact Arg1:T4 Arg2:T1	
+R4	Contact Arg1:T2 Arg2:T5	
+R5	Contact Arg1:T6 Arg2:T5	
+R6	Connect Arg1:T2 Arg2:T6	

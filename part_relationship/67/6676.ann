@@ -1,0 +1,16 @@
+T4	Parts 9 17	ルーフスポイラー
+T5	Parts 44 52	ルーフスポイラー
+T6	Parts 94 102	ルーフスポイラー
+T7	Parts 103 106	ルーフ
+T8	Parts 26 29	接着剤
+T9	Parts 0 8	テールゲートドア
+T10	Parts 76 84	テールゲートドア
+T11	Parts 111 119	テールゲートドア
+R1	Coreference Arg1:T10 Arg2:T9	
+R2	Coreference Arg1:T11 Arg2:T10	
+R3	Coreference Arg1:T6 Arg2:T5	
+R4	Coreference Arg1:T5 Arg2:T4	
+R5	Contact Arg1:T4 Arg2:T9	
+R6	Contact Arg1:T7 Arg2:T10	
+R7	Contact Arg1:T8 Arg2:T4	
+R8	Contact Arg1:T8 Arg2:T9	

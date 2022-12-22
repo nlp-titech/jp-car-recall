@@ -1,0 +1,7 @@
+T1	Parts 0 6	ハンドルバー
+T2	Parts 19 25	ハンドルバー
+T3	Parts 81 87	ハンドルバー
+T4	Parts 32 36	電気配線
+R1	Coreference Arg1:T1 Arg2:T2	
+R3	Coreference Arg1:T2 Arg2:T3	
+R2	Contact Arg1:T2 Arg2:T4	

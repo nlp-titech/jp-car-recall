@@ -1,0 +1,7 @@
+T1	Parts 0 11	駐車ブレーキ（電気式）
+T2	Parts 52 58	駐車ブレーキ
+T3	Parts 12 16	電気配線
+T7	Parts 23 25	配線
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Coreference Arg1:T3 Arg2:T7	
+R3	Contact Arg1:T1 Arg2:T3	

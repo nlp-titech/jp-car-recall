@@ -1,0 +1,22 @@
+T10	Parts 11 23	フライホイールリングギヤ
+T11	Parts 75 77	ギヤ
+T18	Parts 116 128	フライホイールハウジング
+T19	Parts 142 154	フライホイールハウジング
+T20	Parts 129 134	リングギヤ
+T21	Parts 110 112	ギヤ
+T1	Parts 0 6	大型路線バス
+T2	Parts 36 55	アイドリングストップ＆スタートシステム
+T3	Parts 58 62	エンジン
+R1	Coreference Arg1:T11 Arg2:T10	
+T4	Parts 84 88	エンジン
+R2	Coreference Arg1:T4 Arg2:T3	
+R3	Coreference Arg1:T21 Arg2:T11	
+T5	Parts 160 167	エンジンオイル
+R5	Coreference Arg1:T18 Arg2:T19	
+R6	Connect Arg1:T2 Arg2:T3	
+R7	Part-Whole Arg1:T3 Arg2:T1	
+R8	Part-Whole Arg1:T2 Arg2:T1	
+R9	Contact Arg1:T5 Arg2:T4	
+R10	Part-Whole Arg1:T10 Arg2:T18	
+R11	Part-Whole Arg1:T18 Arg2:T1	
+R12	Part-Whole Arg1:T18 Arg2:T4	

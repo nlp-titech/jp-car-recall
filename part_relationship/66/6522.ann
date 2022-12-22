@@ -1,0 +1,16 @@
+T1	Parts 13 27	エンジンコントロールユニット
+T2	Parts 0 8	エンジン冷却装置
+T4	Parts 75 79	モーター
+T6	Parts 47 57	補助クーラントポンプ
+T7	Parts 70 73	ポンプ
+T8	Parts 101 104	ポンプ
+T9	Parts 107 110	ポンプ
+T11	Parts 111 113	配線
+R1	Connect Arg1:T1 Arg2:T2	
+R3	Coreference Arg1:T6 Arg2:T7	
+R4	Part-Whole Arg1:T4 Arg2:T7	
+R5	Coreference Arg1:T7 Arg2:T8	
+R6	Coreference Arg1:T8 Arg2:T9	
+R2	Connect Arg1:T6 Arg2:T1	
+R8	Part-Whole Arg1:T6 Arg2:T2	
+R7	Contact Arg1:T9 Arg2:T11	

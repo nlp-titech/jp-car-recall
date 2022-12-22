@@ -1,0 +1,12 @@
+T12	Parts 103 109	前輪ブレーキ
+T13	Parts 0 11	前輪用ブレーキケーブル
+T15	Parts 41 49	ケーブル留め金具
+T16	Parts 53 57	ケーブル
+T18	Parts 92 98	インナワイヤ
+T20	Parts 86 90	ケーブル
+T1	Parts 26 34	フロントフォーク
+R1	Coreference Arg1:T20 Arg2:T16	
+R2	Coreference Arg1:T16 Arg2:T13	
+R4	Part-Whole Arg1:T18 Arg2:T20	
+R5	Contact Arg1:T12 Arg2:T20	
+R3	Contact Arg1:T15 Arg2:T16	

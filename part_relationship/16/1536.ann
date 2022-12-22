@@ -1,0 +1,9 @@
+T10	Parts 59 61	ハブ
+T12	Parts 128 130	ハブ
+T1	Parts 0 6	フロントハブ
+T2	Parts 11 18	ホイールナット
+R1	Coreference Arg1:T10 Arg2:T1	
+R3	Coreference Arg1:T12 Arg2:T10	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+T3	Parts 62 66	フランジ
+R2	Part-Whole Arg1:T3 Arg2:T10	

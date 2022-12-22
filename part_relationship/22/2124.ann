@@ -1,0 +1,19 @@
+T1	Parts 20 28	運行情報システム
+T2	Parts 35 37	車両
+T3	Parts 44 48	システム
+R1	Coreference Arg1:T3 Arg2:T1	
+T4	Parts 53 58	プログラム
+T5	Parts 82 87	プログラム
+R2	Coreference Arg1:T5 Arg2:T4	
+T6	Parts 103 108	運行記録計
+T7	Parts 49 52	車載機
+R3	Part-Whole Arg1:T3 Arg2:T2	
+T8	Parts 0 18	デジタル式運行記録計（自ＴＤⅡ－６）
+R4	Coreference Arg1:T6 Arg2:T8	
+T9	Parts 110 112	信号
+R5	Contact Arg1:T9 Arg2:T6	
+R6	Contact Arg1:T9 Arg2:T5	
+R7	Part-Whole Arg1:T4 Arg2:T7	
+R8	Connect Arg1:T6 Arg2:T7	
+R9	Part-Whole Arg1:T7 Arg2:T2	
+R10	Part-Whole Arg1:T8 Arg2:T1	

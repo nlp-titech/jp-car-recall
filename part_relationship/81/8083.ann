@@ -1,0 +1,16 @@
+T1	Parts 0 8	ショベルローダー
+T2	Parts 9 17	インタークーラー
+T3	Parts 57 60	ホース
+T5	Parts 69 72	ホース
+T6	Parts 97 101	エンジン
+T4	Parts 22 26	エンジン
+T7	Parts 34 37	ホース
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Connect Arg1:T2 Arg2:T4	
+R3	Part-Whole Arg1:T4 Arg2:T1	
+R4	Contact Arg1:T7 Arg2:T2	
+R5	Contact Arg1:T7 Arg2:T4	
+R6	Part-Whole Arg1:T7 Arg2:T1	
+R7	Coreference Arg1:T3 Arg2:T7	
+R8	Coreference Arg1:T5 Arg2:T3	
+R9	Coreference Arg1:T6 Arg2:T4	

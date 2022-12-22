@@ -1,0 +1,28 @@
+T23	Parts 142 146	エンジン
+T24	Parts 128 133	シリンダー
+T27	Parts 120 123	吸気管
+T28	Parts 11 18	燃料供給ポンプ
+T29	Parts 35 38	ポンプ
+T31	Parts 153 157	エンジン
+T1	Parts 0 6	燃料噴射装置
+R1	Coreference Arg1:T29 Arg2:T28	
+T2	Parts 49 51	燃料
+T3	Parts 55 62	エンジンオイル
+T4	Parts 94 96	燃料
+T5	Parts 101 104	オイル
+R2	Coreference Arg1:T4 Arg2:T2	
+R3	Coreference Arg1:T5 Arg2:T3	
+R4	Coreference Arg1:T31 Arg2:T23	
+T6	Parts 176 178	燃料
+T7	Parts 183 190	エンジンオイル
+R5	Coreference Arg1:T6 Arg2:T4	
+R6	Coreference Arg1:T7 Arg2:T5	
+R7	Contact Arg1:T2 Arg2:T29	
+T8	Parts 105 112	ブローバイガス
+R8	Connect Arg1:T24 Arg2:T27	
+R9	Part-Whole Arg1:T24 Arg2:T23	
+R10	Part-Whole Arg1:T27 Arg2:T23	
+R11	Part-Whole Arg1:T28 Arg2:T1	
+R12	Contact Arg1:T23 Arg2:T5	
+R13	Part-Whole Arg1:T1 Arg2:T23	
+R14	Contact Arg1:T8 Arg2:T24	

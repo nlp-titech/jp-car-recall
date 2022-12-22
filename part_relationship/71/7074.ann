@@ -1,0 +1,11 @@
+T1	Parts 7 19	電子制御ブレーキシステム
+T2	Parts 86 98	電子制御ブレーキシステム
+T3	Parts 0 6	大型トラクタ
+T4	Parts 60 64	ブレーキ
+T5	Parts 99 102	警告灯
+R1	Part-Whole Arg1:T1 Arg2:T3	
+T7	Parts 24 41	プレッシャーコントロールモジュール
+R2	Part-Whole Arg1:T7 Arg2:T1	
+R3	Connect Arg1:T1 Arg2:T4	
+R4	Connect Arg1:T2 Arg2:T5	
+R5	Coreference Arg1:T1 Arg2:T2	

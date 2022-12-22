@@ -1,0 +1,24 @@
+T15	Parts 109 113	エンジン
+T16	Parts 141 148	排気サイレンサ
+T20	Parts 22 26	エンジン
+T21	Parts 50 53	排気管
+T1	Parts 0 12	圧縮天然ガス（ＣＮＧ車）
+T2	Parts 13 17	路線バス
+T3	Parts 31 35	電気配線
+T5	Parts 96 98	配線
+T6	Parts 137 139	触媒
+T4	Parts 60 64	配線被覆
+R1	Part-Whole Arg1:T4 Arg2:T3	
+R2	Coreference Arg1:T3 Arg2:T5	
+R5	Part-Whole Arg1:T20 Arg2:T2	
+R7	Part-Whole Arg1:T21 Arg2:T2	
+T7	Parts 149 153	マウント
+R4	Part-Whole Arg1:T1 Arg2:T2	
+R3	Coreference Arg1:T20 Arg2:T15	
+R6	Contact Arg1:T20 Arg2:T21	
+R8	Contact Arg1:T16 Arg2:T7	
+R9	Contact Arg1:T6 Arg2:T7	
+R10	Contact Arg1:T21 Arg2:T6	
+R11	Contact Arg1:T21 Arg2:T16	
+R12	Part-Whole Arg1:T6 Arg2:T2	
+R13	Part-Whole Arg1:T16 Arg2:T2	

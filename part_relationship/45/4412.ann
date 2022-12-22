@@ -1,0 +1,19 @@
+T1	Parts 54 65	オルタネータ（発電機）
+T2	Parts 0 8	自動変速機付車両
+T3	Parts 136 143	アクセルペダル
+T4	Parts 9 29	エアコン（空気調整装置）用コンプレッサー
+T5	Parts 75 82	アクセルリンク
+T7	Parts 39 43	エアコン
+T8	Parts 148 152	エンジン
+T9	Parts 71 74	カバー
+T10	Parts 94 97	カバー
+R1	Coreference Arg1:T9 Arg2:T10	
+R2	Part-Whole Arg1:T4 Arg2:T7	
+R3	Part-Whole Arg1:T7 Arg2:T2	
+R4	Part-Whole Arg1:T1 Arg2:T2	
+R5	Part-Whole Arg1:T8 Arg2:T2	
+R6	Part-Whole Arg1:T3 Arg2:T2	
+R7	Connect Arg1:T3 Arg2:T8	
+R8	Contact Arg1:T5 Arg2:T3	
+R9	Part-Whole Arg1:T9 Arg2:T4	
+R10	Part-Whole Arg1:T5 Arg2:T2	

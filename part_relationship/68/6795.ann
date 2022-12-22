@@ -1,0 +1,9 @@
+T1	Parts 74 81	アクセルペダル
+T2	Parts 13 19	コンピュータ
+T5	Parts 33 37	バッテリ
+T7	Parts 88 100	モータ制御システム警告灯
+T9	Parts 0 8	原動機（モータ）
+R1	Connect Arg1:T9 Arg2:T2	
+R3	Connect Arg1:T9 Arg2:T1	
+R5	Connect Arg1:T9 Arg2:T5	
+R2	Connect Arg1:T2 Arg2:T7	

@@ -1,0 +1,5 @@
+T1	Parts 0 10	後輪用制動灯スイッチ
+T2	Parts 74 78	スイッチ
+T3	Parts 87 90	制動灯
+R1	Coreference Arg1:T2 Arg2:T1	
+R2	Connect Arg1:T3 Arg2:T2	

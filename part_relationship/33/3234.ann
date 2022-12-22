@@ -1,0 +1,21 @@
+T1	Parts 0 3	原動機
+T2	Parts 4 10	ヘッドカバー
+T3	Parts 15 27	ブレザーシールド取付ビス
+T5	Parts 45 47	ビス
+R1	Coreference Arg1:T3 Arg2:T5	
+T6	Parts 86 88	ビス
+R2	Coreference Arg1:T5 Arg2:T6	
+T7	Parts 89 96	バルブブリッジ
+T9	Parts 130 138	ブレザーシールド
+T8	Parts 139 146	ブローバイガス
+T10	Parts 147 151	エンジン
+T13	Parts 170 176	オイルミスト
+T14	Parts 184 190	ヘッドカバー
+R3	Coreference Arg1:T2 Arg2:T14	
+T15	Parts 195 201	ラビリンス室
+R5	Part-Whole Arg1:T2 Arg2:T1	
+R7	Part-Whole Arg1:T7 Arg2:T1	
+R10	Coreference Arg1:T1 Arg2:T10	
+R6	Part-Whole Arg1:T6 Arg2:T9	
+R8	Part-Whole Arg1:T9 Arg2:T15	
+R9	Part-Whole Arg1:T15 Arg2:T14	

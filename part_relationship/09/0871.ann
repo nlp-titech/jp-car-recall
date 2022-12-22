@@ -1,0 +1,15 @@
+T12	Parts 14 17	摺動板
+T13	Parts 66 69	ボルト
+T14	Parts 56 59	摺動板
+T15	Parts 99 102	摺動板
+T1	Parts 0 7	サスペンション
+T3	Parts 38 46	リーフスプリング
+R1	Coreference Arg1:T14 Arg2:T12	
+R2	Coreference Arg1:T15 Arg2:T14	
+T2	Parts 128 135	試作車両２軸車
+R3	Part-Whole Arg1:T1 Arg2:T2	
+R4	Part-Whole Arg1:T15 Arg2:T2	
+R5	Connect Arg1:T1 Arg2:T12	
+R6	Part-Whole Arg1:T3 Arg2:T1	
+R7	Contact Arg1:T14 Arg2:T13	
+R8	Contact Arg1:T1 Arg2:T13	

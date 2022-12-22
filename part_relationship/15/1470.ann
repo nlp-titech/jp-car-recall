@@ -1,0 +1,8 @@
+T1	Parts 0 4	制動装置
+T2	Parts 5 14	エアチャージパイプ
+T3	Parts 27 31	エンジン
+T4	Parts 39 42	パイプ
+R1	Coreference Arg1:T4 Arg2:T2	
+T5	Parts 74 77	パイプ
+R2	Coreference Arg1:T5 Arg2:T4	
+R5	Part-Whole Arg1:T2 Arg2:T1	

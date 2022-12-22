@@ -1,0 +1,7 @@
+T2	Parts 46 52	シートベルト
+T3	Parts 9 15	巻き取り装置
+T1	Parts 0 8	前席シートベルト
+T4	Parts 25 34	ベルト巻き取りバネ
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Contact Arg1:T1 Arg2:T3	
+R3	Part-Whole Arg1:T4 Arg2:T3	

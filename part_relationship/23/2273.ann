@@ -1,0 +1,9 @@
+T1	Parts 0 4	エンジン
+T4	Parts 37 41	エンジン
+R1	Coreference Arg1:T4 Arg2:T1	
+T5	Parts 43 47	電気配線
+T6	Parts 48 50	端子
+T7	Parts 86 88	配線
+R2	Coreference Arg1:T7 Arg2:T5	
+R6	Part-Whole Arg1:T6 Arg2:T5	
+R3	Connect Arg1:T4 Arg2:T5	

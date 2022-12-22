@@ -1,0 +1,11 @@
+T1	Parts 0 11	原動機制御コンピュータ
+T2	Parts 41 46	Ｏ２センサ
+T7	Parts 85 88	センサ
+T8	Parts 115 118	センサ
+T4	Parts 64 71	センサヒーター
+R3	Coreference Arg1:T2 Arg2:T7	
+R5	Coreference Arg1:T7 Arg2:T8	
+R6	Connect Arg1:T2 Arg2:T1	
+R7	Connect Arg1:T2 Arg2:T4	
+T5	Parts 141 148	イグニッション
+R2	Connect Arg1:T1 Arg2:T5	

@@ -1,0 +1,7 @@
+T1	Parts 7 13	リンクロッド
+T2	Parts 0 6	後部緩衝装置
+T3	Parts 23 26	ロッド
+T4	Parts 97 100	ロッド
+R1	Part-Whole Arg1:T1 Arg2:T2	
+R3	Coreference Arg1:T1 Arg2:T3	
+R2	Coreference Arg1:T3 Arg2:T4	

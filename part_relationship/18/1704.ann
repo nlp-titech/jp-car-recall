@@ -1,0 +1,7 @@
+T12	Parts 53 59	制動倍力装置
+T13	Parts 61 64	ゴム膜
+T14	Parts 98 101	ゴム膜
+T1	Parts 0 6	制動倍力装置
+R1	Coreference Arg1:T13 Arg2:T14	
+R2	Coreference Arg1:T1 Arg2:T12	
+R3	Part-Whole Arg1:T13 Arg2:T12	

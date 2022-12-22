@@ -1,0 +1,5 @@
+T2	Parts 51 55	エンジン
+T3	Parts 0 11	バンクアングルセンサー
+T4	Parts 21 29	ＥＣＵプログラム
+R1	Connect Arg1:T4 Arg2:T2	
+R2	Connect Arg1:T3 Arg2:T4	

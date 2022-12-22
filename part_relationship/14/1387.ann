@@ -1,0 +1,11 @@
+T31	Parts 167 171	エンジン
+T32	Parts 34 45	イグニッションスイッチ
+T1	Parts 0 11	イグニッションスイッチ
+T3	Parts 20 23	グリス
+T7	Parts 88 91	グリス
+T14	Parts 211 213	半田
+R2	Coreference Arg1:T1 Arg2:T32	
+R3	Coreference Arg1:T3 Arg2:T7	
+R1	Contact Arg1:T3 Arg2:T1	
+R6	Connect Arg1:T32 Arg2:T31	
+R7	Contact Arg1:T14 Arg2:T32	

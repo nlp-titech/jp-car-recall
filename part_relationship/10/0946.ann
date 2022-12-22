@@ -1,0 +1,16 @@
+T19	Parts 18 24	ハーネス配線
+T20	Parts 51 59	ハーネスコネクタ
+T21	Parts 106 110	コネクタ
+T1	Parts 4 7	警光灯
+T2	Parts 9 13	サイレン
+R1	Coreference Arg1:T21 Arg2:T20	
+T4	Parts 121 124	警光灯
+T5	Parts 129 133	サイレン
+R2	Coreference Arg1:T4 Arg2:T1	
+R3	Coreference Arg1:T5 Arg2:T2	
+T6	Parts 0 3	警察車
+R4	Part-Whole Arg1:T1 Arg2:T6	
+R5	Part-Whole Arg1:T2 Arg2:T6	
+R6	Contact Arg1:T1 Arg2:T19	
+R7	Contact Arg1:T2 Arg2:T19	
+R8	Part-Whole Arg1:T20 Arg2:T19	

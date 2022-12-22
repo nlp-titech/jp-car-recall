@@ -1,0 +1,14 @@
+T1	Parts 13 27	エンジンオイルクーラーホース
+T2	Parts 0 8	エンジン冷却装置
+T3	Parts 93 100	エンジンオイル
+T4	Parts 107 114	エンジンオイル
+T6	Parts 81 88	クーラーホース
+T11	Parts 115 127	フロントブレーキディスク
+T12	Parts 138 146	フロントブレーキ
+T13	Parts 43 50	クーラーホース
+R1	Part-Whole Arg1:T1 Arg2:T2	
+R2	Coreference Arg1:T1 Arg2:T13	
+R3	Coreference Arg1:T13 Arg2:T6	
+R4	Contact Arg1:T3 Arg2:T6	
+R5	Coreference Arg1:T3 Arg2:T4	
+R6	Part-Whole Arg1:T11 Arg2:T12	

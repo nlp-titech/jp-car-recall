@@ -1,0 +1,18 @@
+T1	Parts 0 14	直列３気筒ディーゼルエンジン
+T3	Parts 34 40	カムシャフト
+T4	Parts 41 51	カムシャフトキャリア
+T5	Parts 56 71	カムシャフトベアリングキャップ
+T6	Parts 92 96	エンジン
+T7	Parts 106 110	キャップ
+T8	Parts 114 120	カムシャフト
+T9	Parts 130 134	エンジン
+R1	Coreference Arg1:T1 Arg2:T6	
+R2	Coreference Arg1:T6 Arg2:T9	
+R3	Coreference Arg1:T3 Arg2:T8	
+R4	Coreference Arg1:T5 Arg2:T7	
+R5	Part-Whole Arg1:T3 Arg2:T1	
+R6	Part-Whole Arg1:T4 Arg2:T1	
+R7	Part-Whole Arg1:T5 Arg2:T1	
+R8	Contact Arg1:T3 Arg2:T5	
+R9	Contact Arg1:T4 Arg2:T5	
+R10	Contact Arg1:T3 Arg2:T4	

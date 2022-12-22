@@ -1,0 +1,7 @@
+T10	Parts 55 61	後輪ブレーキ
+T11	Parts 0 9	後輪ブレーキホース
+T12	Parts 29 36	ブレーキホース
+R1	Coreference Arg1:T12 Arg2:T11	
+T1	Parts 37 40	タイヤ
+R2	Connect Arg1:T10 Arg2:T12	
+R3	Connect Arg1:T10 Arg2:T1	

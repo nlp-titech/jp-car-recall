@@ -1,0 +1,13 @@
+T1	Parts 69 89	後面方向指示器用ＬＥＤ（発光ダイオード）
+T2	Parts 129 136	後面方向指示器
+T4	Parts 90 94	電気基板
+T5	Parts 0 13	リアコンビネーションライト
+T6	Parts 20 33	リアコンビネーションライト
+T3	Parts 36 42	クッション材
+T7	Parts 53 59	クッション材
+R1	Coreference Arg1:T5 Arg2:T6	
+R2	Coreference Arg1:T3 Arg2:T7	
+R3	Part-Whole Arg1:T3 Arg2:T6	
+R4	Part-Whole Arg1:T4 Arg2:T1	
+R5	Part-Whole Arg1:T1 Arg2:T2	
+R6	Part-Whole Arg1:T2 Arg2:T6	

@@ -1,0 +1,9 @@
+T1	Parts 90 99	トランスミッション
+T2	Parts 0 13	カーボン製プロペラシャフト
+T3	Parts 63 71	プロペラシャフト
+T5	Parts 84 88	エンジン
+R3	Coreference Arg1:T2 Arg2:T3	
+R4	Connect Arg1:T5 Arg2:T1	
+R5	Connect Arg1:T5 Arg2:T3	
+T4	Parts 55 59	エンジン
+R6	Coreference Arg1:T4 Arg2:T5	

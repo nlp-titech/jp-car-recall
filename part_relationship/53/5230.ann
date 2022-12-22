@@ -1,0 +1,13 @@
+T2	Parts 0 5	燃料タンク
+T3	Parts 34 39	燃料タンク
+T4	Parts 83 86	タンク
+T7	Parts 88 90	燃料
+T8	Parts 96 98	燃料
+T5	Parts 13 19	ベントパイプ
+R1	Contact Arg1:T2 Arg2:T5	
+R2	Coreference Arg1:T2 Arg2:T3	
+T1	Parts 54 60	ベントパイプ
+R3	Coreference Arg1:T5 Arg2:T1	
+R4	Coreference Arg1:T3 Arg2:T4	
+R5	Part-Whole Arg1:T7 Arg2:T4	
+R6	Coreference Arg1:T7 Arg2:T8	

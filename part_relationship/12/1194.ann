@@ -1,0 +1,18 @@
+T15	Parts 114 121	燃料圧送ポンプ
+T16	Parts 12 19	燃料圧送ポンプ
+T17	Parts 53 56	ポンプ
+T18	Parts 57 67	オーバーフローバルブ
+T19	Parts 135 139	エンジン
+T20	Parts 96 104	燃料リターン配管
+T1	Parts 0 11	蓄圧式燃料噴射システム
+T3	Parts 106 108	空気
+T4	Parts 123 125	燃料
+R1	Coreference Arg1:T16 Arg2:T17	
+R2	Coreference Arg1:T17 Arg2:T15	
+R3	Part-Whole Arg1:T16 Arg2:T1	
+R4	Part-Whole Arg1:T18 Arg2:T17	
+R5	Connect Arg1:T20 Arg2:T15	
+R6	Part-Whole Arg1:T1 Arg2:T19	
+R7	Contact Arg1:T4 Arg2:T20	
+R8	Contact Arg1:T19 Arg2:T4	
+R9	Contact Arg1:T4 Arg2:T15	

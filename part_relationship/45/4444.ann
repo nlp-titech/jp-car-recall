@@ -1,0 +1,21 @@
+T1	Parts 178 183	取付ナット
+T2	Parts 11 19	電動ファンモータ
+T3	Parts 63 71	電動ファンモータ
+T4	Parts 116 121	電動ファン
+T5	Parts 20 24	シャフト
+T6	Parts 39 43	シャフト
+T14	Parts 165 174	ファンブレードハブ
+T15	Parts 209 212	ファン
+T18	Parts 3 6	原動機
+T19	Parts 108 111	原動機
+T7	Parts 122 154	ファンブレードハブ（ファンブレードのモーターシャフトとの接続部）
+R1	Coreference Arg1:T18 Arg2:T19	
+R2	Coreference Arg1:T2 Arg2:T3	
+R3	Coreference Arg1:T5 Arg2:T6	
+R4	Coreference Arg1:T4 Arg2:T15	
+R5	Coreference Arg1:T7 Arg2:T14	
+R6	Contact Arg1:T14 Arg2:T1	
+R7	Part-Whole Arg1:T5 Arg2:T2	
+R9	Part-Whole Arg1:T7 Arg2:T4	
+R10	Contact Arg1:T6 Arg2:T4	
+R11	Connect Arg1:T3 Arg2:T4	

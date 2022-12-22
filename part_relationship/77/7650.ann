@@ -1,0 +1,11 @@
+T1	Parts 0 8	農業用薬剤散布車
+T2	Parts 9 11	車軸
+T3	Parts 12 14	ギヤ
+T4	Parts 16 19	止め輪
+T5	Parts 35 37	ギヤ
+T6	Parts 88 90	ギヤ
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T2	
+R3	Contact Arg1:T4 Arg2:T3	
+R4	Coreference Arg1:T3 Arg2:T5	
+R5	Coreference Arg1:T5 Arg2:T6	

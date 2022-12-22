@@ -1,0 +1,18 @@
+T1	Parts 0 8	独立懸架緩衝装置
+T2	Parts 13 25	前輪サスペンションアーム
+T4	Parts 34 47	後々輪サスペンションアーム
+T6	Parts 82 85	アーム
+R1	Oneway-Coreference Arg1:T6 Arg2:T2	
+R2	Oneway-Coreference Arg1:T6 Arg2:T4	
+T3	Parts 86 90	補強部材
+T5	Parts 102 110	ナックルシャフト
+T7	Parts 143 146	アーム
+T8	Parts 159 167	ナックルシャフト
+R3	Coreference Arg1:T8 Arg2:T5	
+R4	Coreference Arg1:T7 Arg2:T6	
+T10	Parts 27 31	後２軸車
+R5	Contact Arg1:T6 Arg2:T3	
+R6	Part-Whole Arg1:T2 Arg2:T1	
+R8	Part-Whole Arg1:T1 Arg2:T10	
+R7	Part-Whole Arg1:T4 Arg2:T1	
+R9	Part-Whole Arg1:T5 Arg2:T1	

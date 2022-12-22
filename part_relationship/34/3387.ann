@@ -1,0 +1,14 @@
+T15	Parts 87 91	エンジン
+T16	Parts 147 151	エンジン
+T17	Parts 74 79	点火コイル
+T18	Parts 18 22	雑防抵抗
+T1	Parts 0 5	点火コイル
+T3	Parts 53 55	抵抗
+T4	Parts 97 104	エンジン警告灯
+T5	Parts 133 135	燃料
+R1	Coreference Arg1:T1 Arg2:T17	
+R2	Coreference Arg1:T15 Arg2:T16	
+R3	Coreference Arg1:T18 Arg2:T3	
+R4	Part-Whole Arg1:T18 Arg2:T1	
+R5	Part-Whole Arg1:T17 Arg2:T15	
+R6	Connect Arg1:T15 Arg2:T4	

@@ -1,0 +1,7 @@
+T1	Parts 0 8	側車付二輪自動車
+T2	Parts 16 18	車軸
+T3	Parts 49 51	車軸
+T5	Parts 13 15	側車
+R1	Part-Whole Arg1:T5 Arg2:T1	
+R2	Part-Whole Arg1:T2 Arg2:T5	
+R3	Coreference Arg1:T2 Arg2:T3	

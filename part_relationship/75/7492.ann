@@ -1,0 +1,12 @@
+T1	Parts 0 9	助手席シートベルト
+T2	Parts 26 29	助手席
+T3	Parts 40 49	乗員検知モジュール
+T4	Parts 69 78	助手席シートベルト
+T5	Parts 83 90	メーターパネル
+T6	Parts 91 100	シートベルト警告灯
+R1	Coreference Arg1:T1 Arg2:T4	
+R2	Contact Arg1:T1 Arg2:T2	
+R3	Contact Arg1:T1 Arg2:T3	
+R4	Contact Arg1:T2 Arg2:T3	
+R5	Connect Arg1:T3 Arg2:T5	
+R6	Part-Whole Arg1:T6 Arg2:T5	

@@ -1,0 +1,11 @@
+T1	Parts 105 113	サイドエアバッグ
+T2	Parts 123 131	サイドエアバッグ
+T3	Parts 7 16	サイド・エアバッグ
+T4	Parts 21 39	エアバッグ・コントロール・モジュール
+T5	Parts 71 80	サイド・エアバッグ
+T9	Parts 0 6	右ハンドル車
+R1	Part-Whole Arg1:T3 Arg2:T9	
+R2	Part-Whole Arg1:T4 Arg2:T3	
+R3	Coreference Arg1:T3 Arg2:T5	
+R5	Oneway-Coreference Arg1:T5 Arg2:T1	
+R6	Oneway-Coreference Arg1:T5 Arg2:T2	

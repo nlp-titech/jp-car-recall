@@ -1,0 +1,9 @@
+T1	Parts 0 28	左側コンビネーションランプ（尾灯、制動灯及び方向指示器）
+T2	Parts 29 35	バルブホルダ
+T4	Parts 116 121	方向指示器
+T5	Parts 40 44	電気配線
+T6	Parts 102 105	ランプ
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Contact Arg1:T5 Arg2:T2	
+R7	Part-Whole Arg1:T4 Arg2:T6	
+R5	Coreference Arg1:T1 Arg2:T6	

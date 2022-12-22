@@ -1,0 +1,9 @@
+T1	Parts 0 16	制動倍力装置（ブレーキブースタ）
+T2	Parts 21 28	樹脂製ピストン
+T3	Parts 41 45	ピストン
+T4	Parts 64 71	ブレーキペダル
+T5	Parts 81 85	ピストン
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T2 Arg2:T3	
+R3	Coreference Arg1:T3 Arg2:T5	
+R4	Connect Arg1:T1 Arg2:T4	

@@ -1,0 +1,7 @@
+T2	Parts 0 6	農耕トラクタ
+T4	Parts 11 21	リヤホイールシャフト
+T5	Parts 64 68	シャフト
+T6	Parts 36 42	最重量作業機
+R1	Coreference Arg1:T5 Arg2:T4	
+R3	Part-Whole Arg1:T4 Arg2:T2	
+R5	Part-Whole Arg1:T6 Arg2:T2	

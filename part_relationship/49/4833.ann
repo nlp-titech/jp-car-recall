@@ -1,0 +1,11 @@
+T1	Parts 9 18	駐車ブレーキシュー
+T3	Parts 103 109	駐車ブレーキ
+T4	Parts 0 4	制動装置
+T5	Parts 19 23	保持金具
+T6	Parts 28 31	ボルト
+T7	Parts 80 83	ボルト
+R1	Contact Arg1:T6 Arg2:T5	
+R2	Part-Whole Arg1:T5 Arg2:T1	
+R4	Coreference Arg1:T6 Arg2:T7	
+R5	Part-Whole Arg1:T1 Arg2:T3	
+R3	Part-Whole Arg1:T3 Arg2:T4	

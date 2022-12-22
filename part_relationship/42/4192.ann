@@ -1,0 +1,13 @@
+T1	Parts 19 25	リレーバルブ
+T2	Parts 0 6	中型トラック
+T3	Parts 44 50	締付けボルト
+T4	Parts 105 109	エア配管
+T6	Parts 26 30	固定金具
+T7	Parts 97 101	固定金具
+T5	Parts 7 14	空気式ブレーキ
+R1	Contact Arg1:T1 Arg2:T6	
+R2	Part-Whole Arg1:T5 Arg2:T2	
+R3	Coreference Arg1:T6 Arg2:T7	
+R4	Part-Whole Arg1:T1 Arg2:T5	
+R7	Contact Arg1:T6 Arg2:T3	
+R8	Part-Whole Arg1:T4 Arg2:T5	

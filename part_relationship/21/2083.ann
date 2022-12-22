@@ -1,0 +1,12 @@
+T16	Parts 0 3	原動機
+T17	Parts 4 11	吸気エアダクト
+T22	Parts 24 27	ダクト
+T24	Parts 41 56	レゾネータ（吸気騒音防止装置）
+T25	Parts 97 102	エアダクト
+R1	Coreference Arg1:T22 Arg2:T17	
+T1	Parts 28 32	エンジン
+R2	Coreference Arg1:T25 Arg2:T22	
+R3	Coreference Arg1:T1 Arg2:T16	
+R4	Part-Whole Arg1:T17 Arg2:T16	
+R5	Contact Arg1:T24 Arg2:T22	
+R6	Part-Whole Arg1:T24 Arg2:T1	

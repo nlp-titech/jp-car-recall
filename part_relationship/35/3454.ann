@@ -1,0 +1,16 @@
+T1	Parts 0 7	ロータリ除雪車
+T2	Parts 22 28	ハブフランジ
+T3	Parts 41 50	フランジ取付ナット
+T4	Parts 101 110	フランジ取付ナット
+T5	Parts 29 36	ドラムシャフト
+T8	Parts 123 126	タイヤ
+T10	Parts 13 21	タンデム式前車軸
+R1	Coreference Arg1:T4 Arg2:T3	
+R2	Connect Arg1:T8 Arg2:T10	
+R3	Part-Whole Arg1:T2 Arg2:T10	
+R4	Part-Whole Arg1:T5 Arg2:T10	
+R5	Contact Arg1:T3 Arg2:T5	
+R6	Contact Arg1:T5 Arg2:T2	
+R7	Contact Arg1:T3 Arg2:T2	
+R8	Part-Whole Arg1:T10 Arg2:T1	
+R9	Part-Whole Arg1:T8 Arg2:T1	

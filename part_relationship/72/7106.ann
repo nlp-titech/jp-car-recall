@@ -1,0 +1,13 @@
+T1	Parts 33 40	オイルクーラー
+T2	Parts 13 16	原動機
+T3	Parts 41 46	上部パイプ
+T4	Parts 21 24	原動機
+T6	Parts 25 28	潤滑油
+T7	Parts 54 57	潤滑油
+T8	Parts 0 2	車両
+R1	Part-Whole Arg1:T2 Arg2:T8	
+R2	Part-Whole Arg1:T6 Arg2:T4	
+R3	Coreference Arg1:T2 Arg2:T4	
+R4	Contact Arg1:T7 Arg2:T3	
+R5	Coreference Arg1:T6 Arg2:T7	
+R6	Part-Whole Arg1:T3 Arg2:T1	

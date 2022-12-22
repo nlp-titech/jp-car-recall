@@ -1,0 +1,9 @@
+T10	Parts 0 9	パワーステアリング
+T11	Parts 10 15	油圧ホース
+T12	Parts 36 39	ホース
+R1	Coreference Arg1:T12 Arg2:T11	
+T1	Parts 40 42	車両
+T2	Parts 52 53	油
+R2	Part-Whole Arg1:T11 Arg2:T10	
+R3	Contact Arg1:T2 Arg2:T12	
+R4	Part-Whole Arg1:T10 Arg2:T1	

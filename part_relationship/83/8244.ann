@@ -1,0 +1,8 @@
+T1	Parts 0 19	ボディドメインコントローラー（ＢＤＣ）
+T2	Parts 34 37	車幅灯
+T3	Parts 44 47	車幅灯
+T4	Parts 68 70	車両
+R1	Connect Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T3 Arg2:T2	
+R3	Part-Whole Arg1:T3 Arg2:T4	
+R4	Part-Whole Arg1:T1 Arg2:T4	

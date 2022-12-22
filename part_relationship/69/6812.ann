@@ -1,0 +1,10 @@
+T1	Parts 39 47	ウエイト支持ゴム
+T2	Parts 0 6	後軸差動装置
+T3	Parts 91 95	ウエイト
+T5	Parts 24 34	ダイナミックダンバー
+T4	Parts 82 86	支持ゴム
+R1	Coreference Arg1:T1 Arg2:T4	
+R2	Part-Whole Arg1:T5 Arg2:T2	
+R4	Contact Arg1:T4 Arg2:T3	
+R3	Part-Whole Arg1:T1 Arg2:T5	
+R5	Part-Whole Arg1:T3 Arg2:T5	

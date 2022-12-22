@@ -1,0 +1,7 @@
+T1	Parts 1 13	エンジン制御コンピュータ
+T2	Parts 30 40	再始動制御プログラム
+T3	Parts 66 70	エンジン
+T4	Parts 95 99	エンジン
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Connect Arg1:T1 Arg2:T3	
+R3	Coreference Arg1:T4 Arg2:T3	

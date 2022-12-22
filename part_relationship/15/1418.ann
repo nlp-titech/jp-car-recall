@@ -1,0 +1,25 @@
+T20	Parts 75 80	スプリング
+T21	Parts 88 93	スプリング
+T22	Parts 108 113	スプリング
+T23	Parts 144 150	駐車ブレーキ
+T1	Parts 0 12	スプリング式駐車制動装置
+T2	Parts 17 22	スプリング
+T3	Parts 24 32	サービスブレーキ
+T4	Parts 39 41	配管
+T6	Parts 118 124	ダイヤフラム
+T8	Parts 206 210	対象車両
+T9	Parts 223 239	対象車両（２００１年式トラクタ）
+R1	Coreference Arg1:T2 Arg2:T20	
+R2	Coreference Arg1:T21 Arg2:T22	
+R3	Coreference Arg1:T8 Arg2:T9	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T3 Arg2:T1	
+R8	Contact Arg1:T3 Arg2:T4	
+R12	Coreference Arg1:T23 Arg2:T1	
+R13	Part-Whole Arg1:T1 Arg2:T8	
+R15	Part-Whole Arg1:T6 Arg2:T1	
+T11	Parts 45 48	エルボ
+R6	Part-Whole Arg1:T11 Arg2:T4	
+R7	Part-Whole Arg1:T4 Arg2:T1	
+R9	Coreference Arg1:T20 Arg2:T21	
+R10	Contact Arg1:T22 Arg2:T6	

@@ -1,0 +1,6 @@
+T1	Parts 15 30	前軸トルクロッド取付ブラケット
+T2	Parts 31 37	クロスメンバ
+T5	Parts 0 10	大型ノンステップバス
+R2	Part-Whole Arg1:T1 Arg2:T5	
+R3	Part-Whole Arg1:T2 Arg2:T5	
+R4	Contact Arg1:T1 Arg2:T2	

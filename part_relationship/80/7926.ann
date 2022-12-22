@@ -1,0 +1,5 @@
+T1	Parts 0 5	後面ガラス
+T3	Parts 56 59	ガラス
+T4	Parts 105 108	ガラス
+R1	Coreference Arg1:T1 Arg2:T3	
+R2	Coreference Arg1:T3 Arg2:T4	

@@ -1,0 +1,9 @@
+T2	Parts 0 22	電動式パワーステアリングコントロールユニット
+T3	Parts 90 100	コントロールユニット
+T4	Parts 117 121	ハンドル
+T5	Parts 35 41	防水フィルタ
+T6	Parts 109 112	警告灯
+R3	Coreference Arg1:T2 Arg2:T3	
+R5	Connect Arg1:T3 Arg2:T6	
+R1	Contact Arg1:T2 Arg2:T5	
+R2	Connect Arg1:T3 Arg2:T4	

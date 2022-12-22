@@ -1,0 +1,9 @@
+T1	Parts 7 17	駐車ブレーキスイッチ
+T2	Parts 117 127	駐車ブレーキスイッチ
+T3	Parts 133 139	駐車ブレーキ
+T5	Parts 38 42	スイッチ
+T6	Parts 78 82	スイッチ
+R1	Coreference Arg1:T5 Arg2:T1	
+R3	Coreference Arg1:T6 Arg2:T5	
+R4	Coreference Arg1:T2 Arg2:T6	
+R5	Connect Arg1:T3 Arg2:T2	

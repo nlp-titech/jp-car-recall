@@ -1,0 +1,16 @@
+T14	Parts 43 48	タイロッド
+T15	Parts 49 55	ロックナット
+T16	Parts 83 89	ロックナット
+T17	Parts 103 109	ロックナット
+T1	Parts 0 6	かじ取り装置
+T2	Parts 7 20	パワーステアリングシリンダ
+T3	Parts 25 32	シリンダロッド
+R1	Coreference Arg1:T16 Arg2:T15	
+R2	Coreference Arg1:T17 Arg2:T16	
+T4	Parts 113 121	タイロッドエンド
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T14 Arg2:T1	
+R5	Part-Whole Arg1:T3 Arg2:T2	
+R6	Contact Arg1:T14 Arg2:T15	
+R7	Part-Whole Arg1:T4 Arg2:T14	
+R8	Contact Arg1:T17 Arg2:T4	

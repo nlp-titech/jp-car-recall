@@ -1,0 +1,10 @@
+T2	Parts 0 25	運転者席側ＳＲＳエアバッグインフレータ（膨張装置）
+T4	Parts 78 83	エアバッグ
+T5	Parts 30 35	ガス発生剤
+T6	Parts 56 61	ガス発生剤
+T1	Parts 41 44	伝火薬
+R1	Part-Whole Arg1:T5 Arg2:T2	
+R2	Coreference Arg1:T6 Arg2:T5	
+R3	Contact Arg1:T1 Arg2:T5	
+R4	Part-Whole Arg1:T1 Arg2:T2	
+R5	Part-Whole Arg1:T2 Arg2:T4	

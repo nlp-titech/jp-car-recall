@@ -1,0 +1,9 @@
+T1	Parts 0 9	タンクセミトレーラ
+T2	Parts 14 22	鋼製補助フレーム
+T3	Parts 27 30	補強材
+T4	Parts 54 58	フレーム
+T6	Parts 95 99	フレーム
+R1	Coreference Arg1:T6 Arg2:T4	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T3 Arg2:T2	
+R4	Coreference Arg1:T2 Arg2:T4	

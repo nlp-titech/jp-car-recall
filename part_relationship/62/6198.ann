@@ -1,0 +1,11 @@
+T1	Parts 0 9	トランスミッション
+T2	Parts 27 35	アクチュエーター
+T4	Parts 46 57	ギヤセレクタースイッチ
+T7	Parts 14 21	パーキングギヤ
+T9	Parts 82 89	パーキングギヤ
+T10	Parts 101 108	パーキングギヤ
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Contact Arg1:T2 Arg2:T7	
+R3	Connect Arg1:T4 Arg2:T2	
+R4	Coreference Arg1:T7 Arg2:T9	
+R5	Coreference Arg1:T9 Arg2:T10	

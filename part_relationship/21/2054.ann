@@ -1,0 +1,9 @@
+T14	Parts 96 98	車軸
+T15	Parts 12 25	車軸伸縮用シリンダ取付ボス
+T16	Parts 78 80	ボス
+T1	Parts 0 4	トレーラ
+T2	Parts 5 7	車軸
+R1	Coreference Arg1:T14 Arg2:T2	
+R2	Coreference Arg1:T16 Arg2:T15	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T15 Arg2:T2	

@@ -1,0 +1,13 @@
+T2	Parts 80 88	ベルトテンショナ
+T6	Parts 135 139	キャップ
+T3	Parts 3 8	座席ベルト
+T1	Parts 9 48	ベルトテンショナ（衝突時にベルトを瞬時に引き込んで乗員をシートに拘束する装置）
+T4	Parts 53 58	金属性容器
+T5	Parts 102 108	容器キャップ
+R1	Part-Whole Arg1:T1 Arg2:T3	
+R2	Coreference Arg1:T1 Arg2:T2	
+R4	Contact Arg1:T4 Arg2:T5	
+R5	Coreference Arg1:T5 Arg2:T6	
+R6	Part-Whole Arg1:T4 Arg2:T1	
+T7	Parts 0 2	前席
+R3	Contact Arg1:T7 Arg2:T3	

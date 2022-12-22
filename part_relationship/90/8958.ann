@@ -1,0 +1,9 @@
+T1	Parts 0 7	駆動用モーター
+T2	Parts 8 14	制御ユニット
+T3	Parts 20 24	配線基板
+T4	Parts 87 93	制御ユニット
+T5	Parts 75 82	警告メッセージ
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T2	
+R3	Coreference Arg1:T2 Arg2:T4	
+R4	Connect Arg1:T5 Arg2:T4	

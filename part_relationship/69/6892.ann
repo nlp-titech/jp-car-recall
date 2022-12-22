@@ -1,0 +1,9 @@
+T2	Parts 0 12	油圧式パワーステアリング
+T3	Parts 96 103	かじ取ハンドル
+T6	Parts 37 40	ホース
+T5	Parts 13 24	配管（フィードホース）
+R1	Part-Whole Arg1:T5 Arg2:T2	
+R2	Coreference Arg1:T5 Arg2:T6	
+T1	Parts 79 91	パワーステアリングオイル
+R4	Contact Arg1:T6 Arg2:T1	
+R3	Connect Arg1:T2 Arg2:T3	

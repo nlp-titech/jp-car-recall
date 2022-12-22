@@ -1,0 +1,21 @@
+T1	Parts 0 3	前後輪
+T2	Parts 4 13	ブレーキキャリパー
+T3	Parts 18 23	キャリパー
+T4	Parts 25 34	自動調整用駆動ピン
+T5	Parts 47 51	ブレーキ
+T6	Parts 61 65	駆動ピン
+T7	Parts 81 88	ブレーキパッド
+T8	Parts 98 105	ブレーキパッド
+T9	Parts 106 114	ブレーキディスク
+T10	Parts 127 133	走行ブレーキ
+T11	Parts 135 141	駐車ブレーキ
+R2	Coreference Arg1:T2 Arg2:T3	
+R3	Part-Whole Arg1:T4 Arg2:T3	
+R4	Coreference Arg1:T4 Arg2:T6	
+R1	Part-Whole Arg1:T5 Arg2:T1	
+R5	Part-Whole Arg1:T2 Arg2:T5	
+R6	Part-Whole Arg1:T7 Arg2:T2	
+R7	Coreference Arg1:T7 Arg2:T8	
+R8	Part-Whole Arg1:T9 Arg2:T5	
+R9	Oneway-Coreference Arg1:T5 Arg2:T10	
+R10	Oneway-Coreference Arg1:T5 Arg2:T11	

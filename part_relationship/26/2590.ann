@@ -1,0 +1,23 @@
+T14	Parts 39 46	後退灯スイッチ
+T15	Parts 47 51	ハーネス
+T16	Parts 62 66	ハーネス
+T17	Parts 80 84	ハーネス
+T18	Parts 126 130	ハーネス
+T1	Parts 0 6	小型トラック
+T2	Parts 7 12	手動変速機
+T3	Parts 17 20	変速機
+R1	Coreference Arg1:T3 Arg2:T2	
+R2	Coreference Arg1:T16 Arg2:T15	
+T5	Parts 67 74	固定ブラケット
+R3	Coreference Arg1:T17 Arg2:T16	
+T6	Parts 91 93	被覆
+R4	Coreference Arg1:T18 Arg2:T17	
+T8	Parts 155 158	後退灯
+R6	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T14 Arg2:T3	
+R7	Part-Whole Arg1:T8 Arg2:T1	
+R8	Connect Arg1:T14 Arg2:T8	
+R9	Contact Arg1:T15 Arg2:T14	
+R11	Part-Whole Arg1:T6 Arg2:T17	
+R10	Contact Arg1:T16 Arg2:T5	
+R12	Part-Whole Arg1:T15 Arg2:T1	

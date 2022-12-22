@@ -1,0 +1,5 @@
+T2	Parts 0 5	計器パネル
+T3	Parts 41 44	前照灯
+T4	Parts 72 75	前照灯
+R4	Coreference Arg1:T4 Arg2:T3	
+R5	Connect Arg1:T3 Arg2:T2	

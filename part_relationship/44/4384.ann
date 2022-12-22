@@ -1,0 +1,14 @@
+T1	Parts 6 15	前輪ブレーキパイプ
+T2	Parts 46 53	ブレーキパイプ
+T3	Parts 114 121	ブレーキパイプ
+T5	Parts 61 87	リンクロッド（ストラットとスタビライザーとの連結棒）
+T7	Parts 54 60	前輪懸架装置
+T9	Parts 126 131	ブレーキ液
+T10	Parts 0 5	主制動装置
+T11	Parts 31 35	ハンドル
+R1	Part-Whole Arg1:T1 Arg2:T10	
+R2	Connect Arg1:T11 Arg2:T10	
+R3	Coreference Arg1:T1 Arg2:T2	
+R4	Part-Whole Arg1:T5 Arg2:T7	
+R5	Coreference Arg1:T2 Arg2:T3	
+R6	Contact Arg1:T9 Arg2:T3	

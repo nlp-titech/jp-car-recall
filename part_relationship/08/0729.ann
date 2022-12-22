@@ -1,0 +1,22 @@
+T14	Parts 68 76	ロックピンロッド
+T15	Parts 14 22	変速レバーパイプ
+T16	Parts 79 82	パイプ
+T20	Parts 1 13	自動（又は、無段）変速機
+T21	Parts 42 47	変速レバー
+T22	Parts 117 122	変速レバー
+T23	Parts 133 144	キーインターロック装置
+T24	Parts 170 176	かじ取り装置
+T25	Parts 177 181	施錠装置
+T26	Parts 153 162	イグニッションキー
+T27	Parts 91 100	パーキングスイッチ
+R2	Coreference Arg1:T16 Arg2:T15	
+R3	Coreference Arg1:T22 Arg2:T21	
+R6	Part-Whole Arg1:T14 Arg2:T21	
+R7	Contact Arg1:T27 Arg2:T14	
+R8	Connect Arg1:T23 Arg2:T22	
+R9	Contact Arg1:T26 Arg2:T23	
+R10	Connect Arg1:T25 Arg2:T24	
+R1	Part-Whole Arg1:T15 Arg2:T21	
+R4	Connect Arg1:T20 Arg2:T21	
+T1	Parts 56 63	プッシュボタン
+R5	Part-Whole Arg1:T1 Arg2:T21	

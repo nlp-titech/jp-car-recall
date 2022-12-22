@@ -1,0 +1,31 @@
+T8	Parts 52 58	燃料噴射装置
+T9	Parts 59 64	内部バルブ
+T10	Parts 80 84	エンジン
+T11	Parts 140 144	エンジン
+T1	Parts 0 6	大型トラック
+T2	Parts 14 19	燃料ホース
+T4	Parts 29 31	軽油
+T5	Parts 94 104	エンジン制御システム
+T6	Parts 113 117	マフラー
+T7	Parts 107 110	警告灯
+T12	Parts 123 125	燃料
+R1	Coreference Arg1:T11 Arg2:T10	
+T13	Parts 7 9	バス
+R2	Contact Arg1:T4 Arg2:T2	
+R3	Part-Whole Arg1:T9 Arg2:T8	
+R4	Part-Whole Arg1:T8 Arg2:T10	
+R5	Connect Arg1:T8 Arg2:T2	
+R6	Connect Arg1:T5 Arg2:T10	
+R7	Connect Arg1:T7 Arg2:T5	
+R8	Connect Arg1:T6 Arg2:T10	
+R9	Contact Arg1:T12 Arg2:T10	
+R10	Part-Whole Arg1:T10 Arg2:T13	
+R11	Part-Whole Arg1:T2 Arg2:T13	
+R12	Part-Whole Arg1:T10 Arg2:T1	
+R13	Part-Whole Arg1:T2 Arg2:T1	
+R14	Part-Whole Arg1:T5 Arg2:T13	
+R15	Part-Whole Arg1:T5 Arg2:T1	
+R16	Part-Whole Arg1:T7 Arg2:T13	
+R17	Part-Whole Arg1:T7 Arg2:T1	
+R18	Part-Whole Arg1:T6 Arg2:T13	
+R19	Part-Whole Arg1:T6 Arg2:T1	

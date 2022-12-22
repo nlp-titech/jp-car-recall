@@ -1,0 +1,11 @@
+T12	Parts 78 80	座席
+T13	Parts 97 99	座席
+T14	Parts 57 62	スプリング
+T15	Parts 22 30	固定用スプリング
+T1	Parts 0 4	運転者席
+T2	Parts 11 17	スライド機構
+R1	Coreference Arg1:T15 Arg2:T14	
+R3	Coreference Arg1:T12 Arg2:T13	
+R4	Contact Arg1:T1 Arg2:T2	
+R5	Part-Whole Arg1:T15 Arg2:T2	
+R2	Coreference Arg1:T1 Arg2:T12	

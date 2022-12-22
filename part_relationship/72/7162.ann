@@ -1,0 +1,21 @@
+T1	Parts 7 22	倍力機構（パワーステアリング）
+T2	Parts 116 123	かじ取ハンドル
+T3	Parts 0 6	かじ取り装置
+T4	Parts 44 50	ゴム製ホース
+T5	Parts 103 106	オイル
+T6	Parts 23 27	油圧配管
+T7	Parts 37 43	金属製パイプ
+T8	Parts 88 91	ホース
+R1	Part-Whole Arg1:T1 Arg2:T3	
+R2	Part-Whole Arg1:T6 Arg2:T1	
+R3	Coreference Arg1:T4 Arg2:T8	
+R5	Contact Arg1:T5 Arg2:T8	
+R6	Contact Arg1:T5 Arg2:T7	
+T9	Parts 59 62	円滑剤
+T10	Parts 92 95	円滑剤
+R7	Coreference Arg1:T9 Arg2:T10	
+R8	Part-Whole Arg1:T7 Arg2:T6	
+R9	Part-Whole Arg1:T4 Arg2:T6	
+R10	Contact Arg1:T7 Arg2:T4	
+R4	Connect Arg1:T3 Arg2:T2	
+R11	Connect Arg1:T1 Arg2:T2	

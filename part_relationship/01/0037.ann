@@ -1,0 +1,19 @@
+T17	Parts 38 43	バッテリー
+T18	Parts 13 19	電子制御装置
+T19	Parts 70 74	エンジン
+T21	Parts 124 129	自動変速機
+T22	Parts 147 152	自動変速機
+#1	AnnotatorNotes T18	自動変速機に付随するものとして下位に置いたが、独立系統か？
+T1	Parts 0 5	自動変速機
+R1	Coreference Arg1:T22 Arg2:T21	
+R3	Coreference Arg1:T21 Arg2:T1	
+T2	Parts 52 57	医療用機器
+T3	Parts 130 135	内部摩擦材
+R4	Connect Arg1:T18 Arg2:T1	
+R5	Connect Arg1:T17 Arg2:T18	
+R7	Connect Arg1:T19 Arg2:T1	
+R8	Part-Whole Arg1:T3 Arg2:T21	
+T4	Parts 20 25	プログラム
+R9	Part-Whole Arg1:T4 Arg2:T18	
+R2	Connect Arg1:T2 Arg2:T17	
+R6	Connect Arg1:T19 Arg2:T17	

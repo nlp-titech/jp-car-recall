@@ -1,0 +1,11 @@
+T1	Parts 0 11	灯火器制御コンピュータ
+T2	Parts 90 97	前面方向指示器
+T3	Parts 32 37	ドアロック
+T5	Parts 58 63	方向指示器
+T6	Parts 50 57	アンサーバック
+T8	Parts 25 29	リモコン
+R2	Connect Arg1:T8 Arg2:T3	
+R4	Oneway-Coreference Arg1:T5 Arg2:T2	
+R6	Connect Arg1:T1 Arg2:T5	
+R1	Connect Arg1:T6 Arg2:T5	
+R3	Connect Arg1:T8 Arg2:T6	

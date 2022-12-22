@@ -1,0 +1,10 @@
+T1	Parts 45 56	ダイヤフラム（仕切膜）
+T2	Parts 92 97	ブレーキ液
+T3	Parts 39 43	スイッチ
+T4	Parts 85 89	スイッチ
+T5	Parts 0 38	トラクションコントロール装置（滑りやすい路面でのタイヤの空転を防止する装置）
+R1	Coreference Arg1:T3 Arg2:T4	
+R2	Part-Whole Arg1:T3 Arg2:T5	
+R3	Contact Arg1:T3 Arg2:T1	
+R4	Part-Whole Arg1:T1 Arg2:T5	
+R5	Contact Arg1:T2 Arg2:T1	

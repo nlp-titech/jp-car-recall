@@ -1,0 +1,8 @@
+T1	Parts 14 22	運転席エアバッグ
+T2	Parts 27 37	ステアリングホイール
+T3	Parts 39 47	取付用ブラケット
+T4	Parts 100 105	エアバッグ
+R1	Coreference Arg1:T1 Arg2:T4	
+R2	Contact Arg1:T2 Arg2:T3	
+R3	Contact Arg1:T1 Arg2:T2	
+R4	Contact Arg1:T1 Arg2:T3	

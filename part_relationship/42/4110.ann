@@ -1,0 +1,9 @@
+T1	Parts 9 21	エンジン制御コンピュータ
+T3	Parts 118 125	エンジン警告灯
+T6	Parts 0 4	大型バス
+T5	Parts 87 104	ＤＰＲ（ディーゼル微粒子除去装置）
+T7	Parts 130 133	ＤＰＲ
+R1	Coreference Arg1:T5 Arg2:T7	
+R2	Part-Whole Arg1:T3 Arg2:T6	
+R3	Part-Whole Arg1:T5 Arg2:T6	
+R4	Part-Whole Arg1:T1 Arg2:T6	

@@ -1,0 +1,7 @@
+T1	Parts 0 9	パワーステアリング
+T2	Parts 18 25	電源コネクター
+T3	Parts 38 43	コネクター
+T4	Parts 10 17	電動油圧ポンプ
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Part-Whole Arg1:T2 Arg2:T4	
+R3	Part-Whole Arg1:T4 Arg2:T1	

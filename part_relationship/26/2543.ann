@@ -1,0 +1,18 @@
+T14	Parts 46 54	ポンプハウジング
+T15	Parts 67 72	油圧ポンプ
+T16	Parts 82 88	カップリング
+T17	Parts 89 91	ギヤ
+T18	Parts 126 128	ギヤ
+T1	Parts 0 3	原動機
+T2	Parts 9 14	油圧ポンプ
+T3	Parts 19 28	ポンプカップリング
+T4	Parts 33 38	油圧ポンプ
+R1	Coreference Arg1:T16 Arg2:T3	
+R2	Coreference Arg1:T15 Arg2:T4	
+R3	Coreference Arg1:T4 Arg2:T2	
+R4	Coreference Arg1:T18 Arg2:T17	
+R5	Connect Arg1:T1 Arg2:T2	
+R6	Contact Arg1:T1 Arg2:T3	
+R7	Contact Arg1:T2 Arg2:T3	
+R8	Part-Whole Arg1:T14 Arg2:T3	
+R9	Part-Whole Arg1:T17 Arg2:T16	

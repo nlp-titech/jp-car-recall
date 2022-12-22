@@ -1,0 +1,7 @@
+T1	Parts 31 35	ステップ
+T2	Parts 11 14	排気管
+T3	Parts 42 45	排気管
+T4	Parts 0 2	車体
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Contact Arg1:T2 Arg2:T4	
+R3	Part-Whole Arg1:T1 Arg2:T4	

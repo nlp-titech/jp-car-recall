@@ -1,0 +1,21 @@
+T1	Parts 0 13	エアクリーナ（空気清浄器）
+T2	Parts 82 88	エアクリーナ
+T3	Parts 37 41	ブレーキ
+T4	Parts 145 149	ブレーキ
+T5	Parts 42 48	真空倍力装置
+T6	Parts 150 154	倍力装置
+T8	Parts 78 81	ホース
+T9	Parts 133 136	ホース
+T10	Parts 29 32	原動機
+T14	Parts 33 36	吸入管
+T7	Parts 55 67	バキューム（負圧）ホース
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Part-Whole Arg1:T14 Arg2:T10	
+R3	Part-Whole Arg1:T7 Arg2:T10	
+R4	Part-Whole Arg1:T5 Arg2:T3	
+R6	Contact Arg1:T7 Arg2:T14	
+R7	Contact Arg1:T7 Arg2:T5	
+R5	Coreference Arg1:T7 Arg2:T8	
+R8	Coreference Arg1:T7 Arg2:T9	
+R9	Coreference Arg1:T3 Arg2:T4	
+R10	Coreference Arg1:T5 Arg2:T6	

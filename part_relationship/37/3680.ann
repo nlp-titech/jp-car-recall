@@ -1,0 +1,14 @@
+T1	Parts 18 25	シリンダヘッド
+T2	Parts 51 57	カムシャフト
+T3	Parts 113 117	エンジン
+T4	Parts 8 12	タペット
+T5	Parts 46 50	タペット
+T6	Parts 69 73	タペット
+T7	Parts 0 3	原動機
+R1	Coreference Arg1:T6 Arg2:T5	
+R2	Coreference Arg1:T5 Arg2:T4	
+R3	Contact Arg1:T2 Arg2:T5	
+R4	Part-Whole Arg1:T4 Arg2:T7	
+R5	Part-Whole Arg1:T2 Arg2:T7	
+R6	Part-Whole Arg1:T1 Arg2:T7	
+R7	Coreference Arg1:T3 Arg2:T7	

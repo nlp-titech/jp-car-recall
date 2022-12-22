@@ -1,0 +1,16 @@
+T1	Parts 0 5	かじ取装置
+T2	Parts 16 23	作動油フィルタ
+T3	Parts 117 120	作動油
+T4	Parts 7 11	油圧回路
+T5	Parts 59 64	低圧ホース
+T6	Parts 71 76	低圧ホース
+T7	Parts 105 110	低圧ホース
+T8	Parts 34 37	警告灯
+R1	Part-Whole Arg1:T4 Arg2:T1	
+R2	Part-Whole Arg1:T2 Arg2:T4	
+R3	Connect Arg1:T2 Arg2:T8	
+R4	Coreference Arg1:T5 Arg2:T6	
+R6	Part-Whole Arg1:T3 Arg2:T5	
+R7	Part-Whole Arg1:T5 Arg2:T4	
+R5	Coreference Arg1:T6 Arg2:T7	
+R8	Contact Arg1:T3 Arg2:T2	

@@ -1,0 +1,12 @@
+T1	Parts 0 8	ショベル・ローダ
+T2	Parts 9 17	フロントアクスル
+T3	Parts 22 30	アクスルシャフト
+T4	Parts 54 62	アクスルシャフト
+T5	Parts 77 85	アクスルシャフト
+T6	Parts 90 95	前輪タイヤ
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T2	
+R3	Coreference Arg1:T4 Arg2:T3	
+R4	Coreference Arg1:T5 Arg2:T4	
+R5	Connect Arg1:T6 Arg2:T5	
+R6	Part-Whole Arg1:T6 Arg2:T1	

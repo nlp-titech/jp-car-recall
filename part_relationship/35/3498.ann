@@ -1,0 +1,27 @@
+T3	Parts 153 159	スプライン軸
+T4	Parts 4 14	作業装置用油圧ポンプ
+T5	Parts 19 24	油圧ポンプ
+T7	Parts 44 50	接続フランジ
+T8	Parts 73 80	接続用フランジ
+T9	Parts 121 128	接続用フランジ
+T10	Parts 161 168	接続用フランジ
+T12	Parts 133 136	ボルト
+T13	Parts 146 149	ボルト
+T14	Parts 32 35	駆動軸
+T16	Parts 0 3	塵芥車
+T17	Parts 172 183	油圧ポンプ駆動用推進軸
+R1	Coreference Arg1:T5 Arg2:T4	
+R2	Part-Whole Arg1:T4 Arg2:T16	
+R4	Coreference Arg1:T8 Arg2:T7	
+R7	Coreference Arg1:T9 Arg2:T8	
+R8	Coreference Arg1:T13 Arg2:T12	
+R9	Coreference Arg1:T10 Arg2:T9	
+R12	Contact Arg1:T14 Arg2:T5	
+R13	Part-Whole Arg1:T14 Arg2:T16	
+R14	Contact Arg1:T12 Arg2:T9	
+T1	Parts 64 67	駆動軸
+R3	Coreference Arg1:T14 Arg2:T1	
+R5	Coreference Arg1:T1 Arg2:T3	
+R6	Contact Arg1:T3 Arg2:T17	
+R10	Contact Arg1:T14 Arg2:T7	
+R11	Part-Whole Arg1:T17 Arg2:T16	

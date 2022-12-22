@@ -1,0 +1,4 @@
+T1	Parts 4 12	凍結防止用ヒータ
+T2	Parts 17 21	電子回路
+T4	Parts 0 3	洗浄液
+R1	Connect Arg1:T2 Arg2:T1	

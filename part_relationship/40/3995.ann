@@ -1,0 +1,10 @@
+T1	Parts 48 59	ブレーキ制御プログラム
+T2	Parts 0 43	車両安定制御機能（ビークル・スタビリティ・コントロールシステム：ＶＳＣ）付き四輪駆動車
+T5	Parts 123 127	ブレーキ
+T6	Parts 67 70	タイヤ
+T7	Parts 116 119	タイヤ
+R1	Coreference Arg1:T7 Arg2:T6	
+R2	Connect Arg1:T5 Arg2:T1	
+R5	Part-Whole Arg1:T5 Arg2:T2	
+R6	Connect Arg1:T5 Arg2:T7	
+R4	Part-Whole Arg1:T1 Arg2:T2	

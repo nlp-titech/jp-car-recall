@@ -1,0 +1,10 @@
+T1	Parts 9 17	プロペラシャフト
+T2	Parts 22 28	オイルシール
+T3	Parts 41 47	オイルシール
+T4	Parts 52 55	オイル
+T6	Parts 0 8	デファレンシャル
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Contact Arg1:T3 Arg2:T4	
+R3	Contact Arg1:T6 Arg2:T2	
+R4	Contact Arg1:T1 Arg2:T2	
+R5	Contact Arg1:T6 Arg2:T1	

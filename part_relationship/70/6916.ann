@@ -1,0 +1,13 @@
+T1	Parts 0 5	燃料タンク
+T2	Parts 32 37	燃料タンク
+T3	Parts 82 87	燃料タンク
+T4	Parts 115 120	燃料タンク
+T5	Parts 68 71	タンク
+T6	Parts 110 113	タンク
+T7	Parts 92 94	燃料
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Coreference Arg1:T1 Arg2:T5	
+R3	Coreference Arg1:T1 Arg2:T3	
+R4	Part-Whole Arg1:T7 Arg2:T1	
+R5	Coreference Arg1:T1 Arg2:T6	
+R6	Coreference Arg1:T1 Arg2:T4	

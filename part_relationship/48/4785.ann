@@ -1,0 +1,10 @@
+T2	Parts 0 3	原動機
+T3	Parts 25 30	金属製継手
+T4	Parts 6 24	ゴム製燃料ホース（供給側及び戻り側）
+T5	Parts 68 70	燃料
+R1	Contact Arg1:T4 Arg2:T5	
+R2	Contact Arg1:T4 Arg2:T3	
+R3	Connect Arg1:T2 Arg2:T4	
+T1	Parts 80 83	排気官
+#1	AnnotatorNotes T1	「排気管」の誤字
+R4	Contact Arg1:T1 Arg2:T2	

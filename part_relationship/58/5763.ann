@@ -1,0 +1,13 @@
+T1	Parts 0 9	リヤサスペンション
+T2	Parts 20 27	締め付けナット
+T3	Parts 62 65	ナット
+T4	Parts 97 100	ナット
+T5	Parts 10 15	トーリンク
+T6	Parts 113 118	トーリンク
+T7	Parts 122 124	車両
+R1	Part-Whole Arg1:T5 Arg2:T1	
+R2	Coreference Arg1:T2 Arg2:T3	
+R3	Coreference Arg1:T3 Arg2:T4	
+R4	Coreference Arg1:T5 Arg2:T6	
+R5	Contact Arg1:T5 Arg2:T2	
+R6	Part-Whole Arg1:T1 Arg2:T7	

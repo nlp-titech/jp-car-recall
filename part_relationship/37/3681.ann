@@ -1,0 +1,14 @@
+T2	Parts 25 33	ワイヤーハーネス
+T3	Parts 130 134	エンジン
+T4	Parts 9 24	イグニッションスイッチリード線
+T5	Parts 0 4	始動装置
+T6	Parts 38 41	カプラ
+T7	Parts 63 66	カプラ
+R2	Connect Arg1:T2 Arg2:T4	
+R3	Contact Arg1:T6 Arg2:T2	
+R4	Contact Arg1:T6 Arg2:T4	
+R5	Coreference Arg1:T7 Arg2:T6	
+R6	Part-Whole Arg1:T4 Arg2:T5	
+R7	Part-Whole Arg1:T2 Arg2:T5	
+R8	Part-Whole Arg1:T6 Arg2:T5	
+R9	Connect Arg1:T3 Arg2:T5	

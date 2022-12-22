@@ -1,0 +1,14 @@
+T1	Parts 49 53	Ｏリング
+T2	Parts 80 84	Ｏリング
+T3	Parts 113 117	Ｏリング
+T4	Parts 9 45	燃料レール・クロス・オーバ・チューブ（左右の燃料レールを接続するパイプ）
+T5	Parts 0 4	燃料装置
+T7	Parts 68 71	原動機
+T11	Parts 120 122	燃料
+R1	Coreference Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T4 Arg2:T5	
+R3	Coreference Arg1:T3 Arg2:T2	
+R4	Contact Arg1:T11 Arg2:T4	
+R5	Contact Arg1:T1 Arg2:T4	
+R6	Connect Arg1:T7 Arg2:T5	
+R7	Contact Arg1:T11 Arg2:T7	

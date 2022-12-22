@@ -1,0 +1,17 @@
+T12	Parts 67 74	制動灯スイッチ
+T14	Parts 130 133	制動灯
+T1	Parts 0 6	かじ取り装置
+T2	Parts 7 42	テレスコピック機構（ハンドルの位置を前後にスライドして調整できる機構）
+T3	Parts 47 50	潤滑剤
+T4	Parts 60 63	潤滑剤
+R1	Coreference Arg1:T3 Arg2:T4	
+T6	Parts 135 140	補助制動灯
+T7	Parts 149 155	シフトレバー
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Contact Arg1:T3 Arg2:T2	
+T5	Parts 90 94	スイッチ
+R2	Coreference Arg1:T5 Arg2:T12	
+R5	Connect Arg1:T5 Arg2:T14	
+R6	Connect Arg1:T5 Arg2:T6	
+R7	Connect Arg1:T14 Arg2:T7	
+R8	Connect Arg1:T6 Arg2:T7	

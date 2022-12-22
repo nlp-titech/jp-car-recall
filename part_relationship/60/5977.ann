@@ -1,0 +1,7 @@
+T2	Parts 95 108	ダブルコネクティングロッド
+T3	Parts 19 49	サスペンションリンク部品（名称：ダブルコネクティングロッド）
+T4	Parts 0 9	リヤサスペンション
+T5	Parts 10 14	フレーム
+R1	Coreference Arg1:T3 Arg2:T2	
+R3	Contact Arg1:T5 Arg2:T3	
+R2	Part-Whole Arg1:T3 Arg2:T4	

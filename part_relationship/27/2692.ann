@@ -1,0 +1,14 @@
+T17	Parts 112 115	ターボ
+T18	Parts 116 121	タービン翼
+T1	Parts 0 6	大型路線バス
+T2	Parts 11 14	原動機
+T3	Parts 15 22	制御プログラム
+T5	Parts 68 84	排気ガス再循環（ＥＧＲ）クーラー
+T6	Parts 126 137	エンジンチェックランプ
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Connect Arg1:T3 Arg2:T2	
+R3	Part-Whole Arg1:T5 Arg2:T1	
+R5	Part-Whole Arg1:T18 Arg2:T17	
+R6	Connect Arg1:T17 Arg2:T6	
+R7	Contact Arg1:T17 Arg2:T2	
+R4	Part-Whole Arg1:T6 Arg2:T1	

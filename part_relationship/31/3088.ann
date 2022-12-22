@@ -1,0 +1,27 @@
+T12	Parts 154 158	エンジン
+T13	Parts 49 58	ターボチャージャー
+T14	Parts 117 123	エアクリーナ
+T15	Parts 106 111	吸気ホース
+T16	Parts 129 138	エアフローセンサー
+T17	Parts 66 71	吸気ホース
+T18	Parts 16 21	吸気ホース
+T19	Parts 22 31	ターボチャージャー
+T1	Parts 0 6	大型路線バス
+T2	Parts 7 11	ＨＥＶ車
+R1	Coreference Arg1:T19 Arg2:T13	
+R2	Coreference Arg1:T18 Arg2:T17	
+T3	Parts 72 74	ゴム
+R3	Coreference Arg1:T17 Arg2:T15	
+T4	Parts 164 168	排出ガス
+R4	Part-Whole Arg1:T3 Arg2:T17	
+R5	Contact Arg1:T16 Arg2:T14	
+R6	Contact Arg1:T14 Arg2:T15	
+R7	Contact Arg1:T12 Arg2:T15	
+R9	Connect Arg1:T12 Arg2:T14	
+R10	Part-Whole Arg1:T13 Arg2:T12	
+R11	Part-Whole Arg1:T12 Arg2:T2	
+R12	Part-Whole Arg1:T18 Arg2:T2	
+R13	Part-Whole Arg1:T14 Arg2:T2	
+R14	Contact Arg1:T4 Arg2:T12	
+R8	Part-Whole Arg1:T19 Arg2:T2	
+R16	Part-Whole Arg1:T16 Arg2:T2	

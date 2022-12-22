@@ -1,0 +1,14 @@
+T1	Parts 0 12	エンジン式フォークリフト
+T2	Parts 14 21	ショベルローダ
+T3	Parts 22 26	燃料装置
+T4	Parts 31 37	インジェクタ
+T5	Parts 91 97	インジェクタ
+T6	Parts 112 114	燃料
+T7	Parts 75 81	コモンレール
+R1	Part-Whole Arg1:T3 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T2	
+R3	Part-Whole Arg1:T4 Arg2:T3	
+R4	Coreference Arg1:T4 Arg2:T5	
+R5	Part-Whole Arg1:T7 Arg2:T3	
+R6	Contact Arg1:T4 Arg2:T7	
+R7	Contact Arg1:T5 Arg2:T6	

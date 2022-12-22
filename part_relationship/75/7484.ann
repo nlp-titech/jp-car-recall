@@ -1,0 +1,7 @@
+T1	Parts 0 6	緊急通報装置
+T2	Parts 11 20	車載通信モジュール
+T3	Parts 21 28	制御プログラム
+T4	Parts 75 85	事故自動緊急通報装置
+R1	Part-Whole Arg1:T3 Arg2:T2	
+R2	Coreference Arg1:T1 Arg2:T4	
+R3	Part-Whole Arg1:T2 Arg2:T1	

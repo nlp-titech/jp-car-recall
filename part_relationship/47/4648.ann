@@ -1,0 +1,9 @@
+T1	Parts 23 40	オートスピードコントロールケーブル
+T2	Parts 92 96	ケーブル
+T3	Parts 99 108	車速制御用ユニット
+T5	Parts 71 86	オートスピードコントロール装置
+T7	Parts 0 18	オートスピードコントロール装置装着車
+R1	Coreference Arg1:T1 Arg2:T2	
+R3	Part-Whole Arg1:T5 Arg2:T7	
+R2	Part-Whole Arg1:T1 Arg2:T5	
+R4	Part-Whole Arg1:T3 Arg2:T5	

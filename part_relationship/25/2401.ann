@@ -1,0 +1,18 @@
+T14	Parts 37 44	フロントケース
+T15	Parts 55 61	オイルシール
+T16	Parts 85 91	オイルシール
+T17	Parts 115 121	オイルシール
+T1	Parts 0 11	エンジンフロントケース
+T2	Parts 18 32	クランクシャフトオイルシール
+T3	Parts 126 133	エンジンオイル
+T4	Parts 140 145	油圧警告灯
+R1	Coreference Arg1:T16 Arg2:T15	
+R2	Coreference Arg1:T15 Arg2:T2	
+R3	Coreference Arg1:T14 Arg2:T1	
+R4	Coreference Arg1:T17 Arg2:T16	
+R5	Contact Arg1:T2 Arg2:T1	
+R7	Contact Arg1:T3 Arg2:T17	
+T5	Parts 166 170	エンジン
+R6	Part-Whole Arg1:T14 Arg2:T5	
+R8	Part-Whole Arg1:T17 Arg2:T5	
+R9	Contact Arg1:T3 Arg2:T5	

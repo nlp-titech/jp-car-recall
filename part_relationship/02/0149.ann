@@ -1,0 +1,13 @@
+T6	Parts 26 43	プロポーショニングバルブ（ＰＣＶ）
+T7	Parts 73 76	ＰＣＶ
+T1	Parts 0 4	制動装置
+T2	Parts 9 12	前後輪
+T3	Parts 13 18	ブレーキ液
+T4	Parts 78 83	ブレーキ液
+R1	Coreference Arg1:T4 Arg2:T3	
+R2	Coreference Arg1:T6 Arg2:T7	
+R5	Connect Arg1:T6 Arg2:T2	
+R4	Contact Arg1:T6 Arg2:T3	
+R3	Contact Arg1:T1 Arg2:T2	
+R6	Part-Whole Arg1:T6 Arg2:T1	
+R7	Part-Whole Arg1:T3 Arg2:T1	

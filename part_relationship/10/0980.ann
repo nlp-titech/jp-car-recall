@@ -1,0 +1,10 @@
+T1	Parts 0 11	左前輪用ブレーキパイプ
+T4	Parts 76 83	ブレーキパイプ
+T5	Parts 86 92	樹脂クリップ
+T6	Parts 130 137	ブレーキパイプ
+T7	Parts 142 147	ブレーキ液
+R1	Coreference Arg1:T6 Arg2:T4	
+R2	Coreference Arg1:T4 Arg2:T1	
+T2	Parts 12 33	パワーステアリングホース固定用樹脂クリップ
+R3	Coreference Arg1:T2 Arg2:T5	
+R4	Contact Arg1:T6 Arg2:T7	

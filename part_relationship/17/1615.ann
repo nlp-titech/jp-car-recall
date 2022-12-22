@@ -1,0 +1,16 @@
+T19	Parts 21 24	原動機
+T20	Parts 49 55	テンショナー
+T21	Parts 62 68	テンショナー
+T22	Parts 103 109	カムチェーン
+T23	Parts 128 132	チェーン
+T24	Parts 136 140	エンジン
+T1	Parts 0 3	原動機
+T2	Parts 4 16	カムチェーンテンショナー
+R1	Coreference Arg1:T1 Arg2:T19	
+R2	Coreference Arg1:T2 Arg2:T20	
+R3	Coreference Arg1:T20 Arg2:T21	
+R4	Coreference Arg1:T22 Arg2:T23	
+R6	Part-Whole Arg1:T2 Arg2:T1	
+R7	Contact Arg1:T22 Arg2:T21	
+R8	Part-Whole Arg1:T23 Arg2:T24	
+R5	Coreference Arg1:T19 Arg2:T24	

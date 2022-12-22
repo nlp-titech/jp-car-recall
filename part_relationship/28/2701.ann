@@ -1,0 +1,11 @@
+T14	Parts 64 71	インナケーブル
+T13	Parts 23 29	樹脂チューブ
+T15	Parts 0 8	アクセルケーブル
+T16	Parts 82 89	アクセルペダル
+T1	Parts 59 63	ケーブル
+R1	Coreference Arg1:T1 Arg2:T15	
+T2	Parts 95 99	エンジン
+R2	Part-Whole Arg1:T13 Arg2:T15	
+R3	Part-Whole Arg1:T14 Arg2:T1	
+R5	Connect Arg1:T16 Arg2:T2	
+R4	Contact Arg1:T1 Arg2:T16	

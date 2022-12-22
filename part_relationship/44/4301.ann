@@ -1,0 +1,11 @@
+T1	Parts 0 7	ショベルローダ
+T2	Parts 8 14	かじ取り装置
+T4	Parts 19 31	ステアリング用油圧ホース
+T5	Parts 74 77	作動油
+T6	Parts 50 53	ホース
+T7	Parts 67 70	ホース
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R4	Coreference Arg1:T4 Arg2:T6	
+R7	Contact Arg1:T5 Arg2:T7	
+R2	Part-Whole Arg1:T4 Arg2:T2	
+R3	Coreference Arg1:T6 Arg2:T7	

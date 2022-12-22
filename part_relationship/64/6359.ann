@@ -1,0 +1,14 @@
+T1	Parts 41 47	取付けナット
+T2	Parts 33 39	取付けボルト
+T3	Parts 99 105	取付けボルト
+T4	Parts 132 138	取付けボルト
+T5	Parts 9 13	後部座席
+T6	Parts 0 4	乗車装置
+T7	Parts 143 145	座席
+R1	Part-Whole Arg1:T5 Arg2:T6	
+R2	Contact Arg1:T5 Arg2:T2	
+R3	Contact Arg1:T2 Arg2:T1	
+R4	Contact Arg1:T5 Arg2:T1	
+R5	Coreference Arg1:T2 Arg2:T3	
+R6	Coreference Arg1:T3 Arg2:T4	
+R7	Coreference Arg1:T5 Arg2:T7	

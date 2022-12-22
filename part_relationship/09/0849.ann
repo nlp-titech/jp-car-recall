@@ -1,0 +1,12 @@
+T14	Parts 103 110	ラテラルロッド
+T15	Parts 38 51	ラテラルロッド用ブラケット
+T16	Parts 18 20	車枠
+T1	Parts 35 37	車枠
+R1	Coreference Arg1:T1 Arg2:T16	
+T3	Parts 11 13	車両
+R2	Part-Whole Arg1:T16 Arg2:T3	
+R3	Contact Arg1:T15 Arg2:T14	
+R4	Part-Whole Arg1:T15 Arg2:T1	
+R5	Part-Whole Arg1:T14 Arg2:T1	
+T2	Parts 0 6	レントゲン車
+R6	Coreference Arg1:T3 Arg2:T2	

@@ -1,0 +1,5 @@
+T6	Parts 51 54	ホース
+T7	Parts 39 42	原動機
+T1	Parts 0 25	ブローバイホース（クランクケースブリーザーホース）
+R1	Coreference Arg1:T1 Arg2:T6	
+R2	Contact Arg1:T7 Arg2:T6	

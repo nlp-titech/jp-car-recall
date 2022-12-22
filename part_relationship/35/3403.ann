@@ -1,0 +1,9 @@
+T1	Parts 0 13	エアバッグ制御コンピュータ
+T2	Parts 18 24	加速度センサ
+T5	Parts 101 106	エアバッグ
+T7	Parts 80 85	エアバッグ
+R3	Coreference Arg1:T7 Arg2:T5	
+T6	Parts 37 40	センサ
+R2	Coreference Arg1:T2 Arg2:T6	
+R5	Connect Arg1:T1 Arg2:T7	
+R7	Connect Arg1:T2 Arg2:T1	

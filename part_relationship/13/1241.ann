@@ -1,0 +1,15 @@
+T1	Parts 0 8	樹脂製燃料タンク
+T2	Parts 13 43	燃料ポンプリテーナ（燃料タンクに燃料ポンプを固定する保持具）
+T3	Parts 96 101	燃料タンク
+T4	Parts 108 113	燃料タンク
+T5	Parts 114 123	燃料ポンプリテーナ
+T6	Parts 129 134	燃料タンク
+T7	Parts 135 144	燃料ポンプリテーナ
+T8	Parts 153 155	燃料
+R1	Coreference Arg1:T1 Arg2:T3	
+R2	Coreference Arg1:T3 Arg2:T4	
+R3	Coreference Arg1:T2 Arg2:T5	
+R4	Coreference Arg1:T4 Arg2:T6	
+R5	Coreference Arg1:T5 Arg2:T7	
+R6	Contact Arg1:T1 Arg2:T2	
+R7	Part-Whole Arg1:T8 Arg2:T6	

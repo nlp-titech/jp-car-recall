@@ -1,0 +1,11 @@
+T12	Parts 18 24	ロックナット
+T13	Parts 70 73	軸受け
+T1	Parts 0 2	車軸
+T2	Parts 36 40	前輪ハブ
+T4	Parts 7 16	前輪ハブ外側軸受け
+T5	Parts 43 47	グリース
+R2	Coreference Arg1:T13 Arg2:T4	
+R3	Contact Arg1:T5 Arg2:T2	
+R4	Contact Arg1:T4 Arg2:T12	
+R5	Contact Arg1:T4 Arg2:T2	
+R1	Contact Arg1:T1 Arg2:T2	

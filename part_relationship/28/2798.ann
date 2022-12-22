@@ -1,0 +1,20 @@
+T1	Parts 0 7	ロータリ除雪車
+T2	Parts 8 18	作業・操縦用油圧回路
+T3	Parts 25 29	フィルタ
+T5	Parts 30 38	カバー取付ボルト
+T6	Parts 69 72	ボルト
+R1	Coreference Arg1:T6 Arg2:T5	
+T7	Parts 77 80	作動油
+T8	Parts 90 92	車両
+R2	Coreference Arg1:T8 Arg2:T1	
+T9	Parts 119 122	作動油
+R3	Coreference Arg1:T9 Arg2:T7	
+T10	Parts 123 127	排気装置
+R4	Part-Whole Arg1:T10 Arg2:T8	
+R6	Part-Whole Arg1:T3 Arg2:T2	
+R7	Contact Arg1:T3 Arg2:T5	
+R8	Part-Whole Arg1:T2 Arg2:T1	
+T4	Parts 93 99	ステアリング
+R12	Part-Whole Arg1:T4 Arg2:T8	
+R5	Contact Arg1:T2 Arg2:T7	
+R9	Connect Arg1:T2 Arg2:T4	

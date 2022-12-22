@@ -1,0 +1,12 @@
+T1	Parts 0 6	燃料蒸発ガス
+T2	Parts 7 10	ホース
+T3	Parts 27 35	パージレゾネータ
+T4	Parts 48 56	パージレゾネータ
+T5	Parts 88 96	パージレゾネータ
+T6	Parts 98 104	燃料蒸発ガス
+R1	Coreference Arg1:T6 Arg2:T1	
+R2	Coreference Arg1:T5 Arg2:T4	
+R3	Coreference Arg1:T4 Arg2:T3	
+T8	Parts 109 113	炭化水素
+R4	Coreference Arg1:T6 Arg2:T8	
+R5	Contact Arg1:T1 Arg2:T2	

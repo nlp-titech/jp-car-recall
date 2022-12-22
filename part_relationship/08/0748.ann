@@ -1,0 +1,13 @@
+T8	Parts 19 23	ブレーキ
+T9	Parts 111 120	駐車ブレーキペダル
+T10	Parts 127 133	駐車ブレーキ
+T1	Parts 0 4	制動装置
+T2	Parts 5 11	駐車ブレーキ
+R1	Coreference Arg1:T8 Arg2:T2	
+T3	Parts 36 46	ケーブルアウターウケ
+T4	Parts 80 90	ケーブルアウターウケ
+R2	Coreference Arg1:T4 Arg2:T3	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Connect Arg1:T3 Arg2:T8	
+R6	Connect Arg1:T9 Arg2:T10	
+R7	Coreference Arg1:T2 Arg2:T10	

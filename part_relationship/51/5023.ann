@@ -1,0 +1,5 @@
+T2	Parts 69 72	制動灯
+T3	Parts 87 90	制動灯
+T4	Parts 0 7	制動灯用リレー
+R3	Coreference Arg1:T3 Arg2:T2	
+R4	Contact Arg1:T4 Arg2:T2	

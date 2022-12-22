@@ -1,0 +1,12 @@
+T1	Parts 7 17	排出ガス発散防止装置
+T2	Parts 39 55	尿素水インジェクタ固定用フランジ
+T4	Parts 0 6	ディーゼル車
+T8	Parts 22 29	フロントパイプ
+T10	Parts 94 103	尿素水インジェクタ
+R1	Contact Arg1:T2 Arg2:T10	
+R2	Part-Whole Arg1:T1 Arg2:T4	
+R3	Part-Whole Arg1:T8 Arg2:T1	
+R4	Contact Arg1:T8 Arg2:T2	
+R5	Part-Whole Arg1:T2 Arg2:T1	
+T3	Parts 70 74	フランジ
+R6	Coreference Arg1:T2 Arg2:T3	

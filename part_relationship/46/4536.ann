@@ -1,0 +1,9 @@
+T1	Parts 34 41	エアバッグ装置
+T2	Parts 0 6	かじ取り装置
+T3	Parts 7 24	ステアリング･ホイール（ハンドル）
+T4	Parts 89 94	エアバッグ
+R1	Coreference Arg1:T1 Arg2:T4	
+R2	Part-Whole Arg1:T3 Arg2:T2	
+R3	Part-Whole Arg1:T1 Arg2:T3	
+T5	Parts 42 45	アース
+R4	Part-Whole Arg1:T5 Arg2:T1	

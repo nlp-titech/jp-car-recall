@@ -1,0 +1,14 @@
+T1	Parts 40 46	車速センサー
+T2	Parts 52 56	センサー
+T3	Parts 80 84	センサー
+T5	Parts 11 22	ホイールカバーホルダー
+T6	Parts 35 39	ホルダー
+T8	Parts 0 3	速度計
+T9	Parts 100 103	速度計
+T10	Parts 8 10	後輪
+R1	Part-Whole Arg1:T5 Arg2:T10	
+R2	Coreference Arg1:T5 Arg2:T6	
+R3	Connect Arg1:T1 Arg2:T8	
+R4	Coreference Arg1:T1 Arg2:T2	
+R5	Coreference Arg1:T1 Arg2:T3	
+R6	Coreference Arg1:T8 Arg2:T9	

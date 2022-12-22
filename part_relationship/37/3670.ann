@@ -1,0 +1,27 @@
+T1	Parts 120 132	フライホイールハウジング
+T2	Parts 163 175	フライホイールハウジング
+T3	Parts 0 8	ショベル・ローダ
+T7	Parts 37 42	油圧ポンプ
+T8	Parts 116 119	オイル
+T9	Parts 159 162	オイル
+T10	Parts 177 180	オイル
+T11	Parts 76 79	シール
+T12	Parts 95 98	シール
+T14	Parts 195 205	フライホイールダンパ
+T15	Parts 64 67	ポンプ
+T16	Parts 9 32	静油圧式無段変速機（以下、「ＨＳＴ」という。）
+T5	Parts 43 49	オイルシール
+R1	Coreference Arg1:T11 Arg2:T5	
+R2	Coreference Arg1:T15 Arg2:T7	
+R3	Coreference Arg1:T12 Arg2:T11	
+R4	Coreference Arg1:T9 Arg2:T8	
+R5	Coreference Arg1:T10 Arg2:T9	
+R6	Contact Arg1:T8 Arg2:T7	
+R7	Part-Whole Arg1:T5 Arg2:T7	
+R8	Part-Whole Arg1:T7 Arg2:T16	
+R9	Coreference Arg1:T2 Arg2:T1	
+R10	Part-Whole Arg1:T16 Arg2:T3	
+R11	Connect Arg1:T2 Arg2:T16	
+R13	Part-Whole Arg1:T2 Arg2:T3	
+R14	Part-Whole Arg1:T14 Arg2:T3	
+R12	Contact Arg1:T2 Arg2:T14	

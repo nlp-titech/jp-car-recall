@@ -1,0 +1,17 @@
+T14	Parts 113 123	エアインテークダクト
+T15	Parts 81 85	クリップ
+T16	Parts 59 63	クリップ
+T17	Parts 27 31	クリップ
+T18	Parts 104 108	クリップ
+T1	Parts 0 3	原動機
+T2	Parts 4 14	エアインテークダクト
+T3	Parts 15 22	固定用クリップ
+R1	Coreference Arg1:T3 Arg2:T17	
+R2	Coreference Arg1:T17 Arg2:T16	
+R3	Coreference Arg1:T16 Arg2:T15	
+R4	Coreference Arg1:T15 Arg2:T18	
+R5	Coreference Arg1:T2 Arg2:T14	
+T4	Parts 133 145	エキゾーストマニホールド
+R6	Contact Arg1:T3 Arg2:T2	
+R7	Connect Arg1:T1 Arg2:T2	
+R8	Contact Arg1:T1 Arg2:T4	

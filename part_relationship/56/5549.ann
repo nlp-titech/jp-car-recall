@@ -1,0 +1,11 @@
+T2	Parts 51 58	サイドスタンド
+T3	Parts 95 102	サイドスタンド
+T4	Parts 10 22	サイドスタンドスプリング
+T6	Parts 23 31	アンカープレート
+T7	Parts 0 2	車両
+T8	Parts 116 118	車両
+R1	Coreference Arg1:T8 Arg2:T7	
+R2	Contact Arg1:T6 Arg2:T4	
+R3	Contact Arg1:T2 Arg2:T4	
+R4	Contact Arg1:T6 Arg2:T7	
+R5	Coreference Arg1:T3 Arg2:T2	

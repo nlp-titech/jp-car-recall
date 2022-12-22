@@ -1,0 +1,18 @@
+T8	Parts 0 3	前車軸
+T9	Parts 4 7	タイヤ
+T10	Parts 12 20	ベアリングナット
+T11	Parts 63 68	ベアリング
+T13	Parts 114 116	車輪
+T14	Parts 58 62	外側車軸
+T15	Parts 104 109	ベアリング
+T1	Parts 36 39	前車軸
+R1	Coreference Arg1:T1 Arg2:T8	
+T2	Parts 50 52	車輪
+R2	Coreference Arg1:T15 Arg2:T11	
+R3	Coreference Arg1:T13 Arg2:T2	
+R4	Contact Arg1:T9 Arg2:T8	
+R5	Contact Arg1:T8 Arg2:T10	
+R6	Contact Arg1:T9 Arg2:T10	
+R7	Contact Arg1:T2 Arg2:T1	
+R9	Part-Whole Arg1:T11 Arg2:T14	
+R8	Contact Arg1:T2 Arg2:T14	

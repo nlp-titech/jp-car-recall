@@ -1,0 +1,15 @@
+T1	Parts 0 8	農業用薬剤散布車
+T2	Parts 9 16	ブレーキパイプ
+T3	Parts 34 37	パイプ
+R1	Coreference Arg1:T3 Arg2:T2	
+T4	Parts 43 54	パワーステアリング配管
+T5	Parts 88 90	配管
+R2	Coreference Arg1:T5 Arg2:T4	
+T6	Parts 96 103	ブレーキパイプ
+R3	Coreference Arg1:T6 Arg2:T3	
+T10	Parts 136 144	ブレーキフルード
+T11	Parts 148 152	ブレーキ
+R5	Part-Whole Arg1:T4 Arg2:T1	
+R6	Contact Arg1:T10 Arg2:T6	
+R7	Part-Whole Arg1:T6 Arg2:T11	
+R4	Part-Whole Arg1:T11 Arg2:T1	

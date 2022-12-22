@@ -1,0 +1,14 @@
+T14	Parts 92 95	ホース
+T15	Parts 75 79	クラッチ
+T16	Parts 41 52	クラッチマスタシリンダ
+T17	Parts 37 40	ホース
+T18	Parts 10 14	固定金具
+T19	Parts 20 23	ホース
+T1	Parts 1 9	空気圧計用ホース
+T2	Parts 53 58	作動レバー
+R2	Coreference Arg1:T17 Arg2:T14	
+R3	Contact Arg1:T18 Arg2:T1	
+R4	Coreference Arg1:T19 Arg2:T1	
+R5	Connect Arg1:T16 Arg2:T2	
+R6	Connect Arg1:T16 Arg2:T15	
+R1	Coreference Arg1:T19 Arg2:T17	

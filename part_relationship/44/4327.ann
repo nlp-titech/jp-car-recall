@@ -1,0 +1,14 @@
+T1	Parts 0 13	センタースタンドスプリング
+T2	Parts 56 69	センタースタンドスプリング
+T3	Parts 21 36	左側センタースタンドブラケット
+T8	Parts 113 117	スタンド
+T9	Parts 18 20	ピン
+T10	Parts 49 51	ピン
+R1	Contact Arg1:T9 Arg2:T1	
+R2	Contact Arg1:T9 Arg2:T3	
+R3	Contact Arg1:T3 Arg2:T1	
+R4	Coreference Arg1:T9 Arg2:T10	
+R5	Coreference Arg1:T1 Arg2:T2	
+T4	Parts 85 93	センタースタンド
+R7	Part-Whole Arg1:T2 Arg2:T4	
+R6	Coreference Arg1:T4 Arg2:T8	

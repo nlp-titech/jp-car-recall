@@ -1,0 +1,7 @@
+T2	Parts 0 9	フロントロアアーム
+T3	Parts 101 106	ロアアーム
+T4	Parts 120 124	ハンドル
+T5	Parts 107 115	ホイールキャリア
+R5	Coreference Arg1:T2 Arg2:T3	
+R6	Contact Arg1:T5 Arg2:T3	
+R7	Connect Arg1:T4 Arg2:T2	

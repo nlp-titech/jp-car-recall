@@ -1,0 +1,20 @@
+T1	Parts 27 46	オンボードサプライコントロールユニット
+T2	Parts 77 84	非常点滅表示灯
+T4	Parts 69 74	方向指示器
+T5	Parts 18 21	車幅灯
+T6	Parts 60 63	車幅灯
+T7	Parts 92 95	車幅灯
+T8	Parts 5 13	前面灯火器装着車
+R1	Connect Arg1:T1 Arg2:T5	
+R2	Part-Whole Arg1:T5 Arg2:T8	
+R4	Coreference Arg1:T5 Arg2:T6	
+R5	Coreference Arg1:T6 Arg2:T7	
+R6	Connect Arg1:T1 Arg2:T4	
+R7	Connect Arg1:T1 Arg2:T2	
+T9	Parts 0 3	ＬＥＤ
+R8	Part-Whole Arg1:T9 Arg2:T5	
+R9	Part-Whole Arg1:T9 Arg2:T4	
+R10	Part-Whole Arg1:T9 Arg2:T2	
+R3	Part-Whole Arg1:T4 Arg2:T8	
+R11	Part-Whole Arg1:T2 Arg2:T8	
+R12	Part-Whole Arg1:T1 Arg2:T8	

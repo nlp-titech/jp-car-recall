@@ -1,0 +1,10 @@
+T12	Parts 17 25	ティルトシリンダ
+T13	Parts 30 36	取付けボルト
+T14	Parts 76 79	ボルト
+T1	Parts 0 9	作業装置（マスト）
+T2	Parts 10 12	車体
+R1	Coreference Arg1:T14 Arg2:T13	
+R2	Contact Arg1:T1 Arg2:T2	
+R3	Contact Arg1:T1 Arg2:T12	
+R4	Contact Arg1:T2 Arg2:T12	
+R5	Contact Arg1:T13 Arg2:T12	

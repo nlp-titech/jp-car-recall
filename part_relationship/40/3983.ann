@@ -1,0 +1,13 @@
+T1	Parts 0 12	自動無段変速機（ＣＶＴ）
+T2	Parts 13 21	トルクコンバータ
+T3	Parts 102 110	トルクコンバータ
+T4	Parts 149 157	トルクコンバータ
+T5	Parts 26 33	内部ベアリング
+T6	Parts 66 71	ベアリング
+T7	Parts 93 98	ベアリング
+R1	Coreference Arg1:T6 Arg2:T5	
+R2	Coreference Arg1:T4 Arg2:T3	
+R3	Coreference Arg1:T3 Arg2:T2	
+R4	Coreference Arg1:T7 Arg2:T6	
+R5	Part-Whole Arg1:T5 Arg2:T2	
+R6	Part-Whole Arg1:T2 Arg2:T1	

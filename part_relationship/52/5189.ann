@@ -1,0 +1,13 @@
+T3	Parts 42 46	マウント
+T4	Parts 90 94	マウント
+T6	Parts 0 3	原動機
+T7	Parts 99 102	原動機
+T1	Parts 7 19	後部側エンジン・マウント
+T2	Parts 108 111	原動機
+R1	Contact Arg1:T6 Arg2:T1	
+R2	Coreference Arg1:T1 Arg2:T3	
+R3	Coreference Arg1:T3 Arg2:T4	
+R4	Coreference Arg1:T7 Arg2:T2	
+R5	Coreference Arg1:T6 Arg2:T7	
+T5	Parts 114 117	補器類
+R6	Connect Arg1:T2 Arg2:T5	

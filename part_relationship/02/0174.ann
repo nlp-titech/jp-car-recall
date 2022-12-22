@@ -1,0 +1,11 @@
+T8	Parts 0 4	緩衝装置
+T9	Parts 5 13	前輪ロア・アーム
+T10	Parts 14 22	ボールジョイント
+T11	Parts 29 37	ボールジョイント
+T12	Parts 73 81	ボールジョイント
+T13	Parts 96 104	ボールジョイント
+R1	Coreference Arg1:T11 Arg2:T10	
+R2	Coreference Arg1:T11 Arg2:T12	
+R3	Coreference Arg1:T13 Arg2:T12	
+R4	Part-Whole Arg1:T9 Arg2:T8	
+R5	Part-Whole Arg1:T10 Arg2:T9	

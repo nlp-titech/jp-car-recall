@@ -1,0 +1,44 @@
+T1	Parts 3 5	バス
+T2	Parts 6 10	制動装置
+T3	Parts 15 28	駐車ブレーキ用リレーバルブ
+T4	Parts 31 37	樹脂ピストン
+T5	Parts 48 52	エア回路
+T6	Parts 66 70	ブレーキ
+T7	Parts 78 82	ピストン
+T8	Parts 98 105	ブレーキバルブ
+T9	Parts 114 120	駐車ブレーキ
+T10	Parts 126 130	ブレーキ
+T11	Parts 149 151	バス
+T12	Parts 152 162	排出ガス発散防止装置
+T13	Parts 167 181	ＤＰＤ（粒子状物質除去装置）
+T14	Parts 185 196	エンジン制御プログラム
+T15	Parts 204 212	ＤＰＤ再生用燃料
+T16	Parts 216 219	ＤＰＤ
+T17	Parts 227 241	尿素ＳＣＲ（選択還元型触媒）
+T18	Parts 275 281	尿素水ホース
+T19	Parts 287 290	尿素水
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T4 Arg2:T3	
+R3	Part-Whole Arg1:T3 Arg2:T2	
+R4	Part-Whole Arg1:T5 Arg2:T3	
+R5	Coreference Arg1:T7 Arg2:T4	
+R6	Coreference Arg1:T6 Arg2:T2	
+R7	Coreference Arg1:T8 Arg2:T3	
+R8	Part-Whole Arg1:T9 Arg2:T6	
+R9	Coreference Arg1:T10 Arg2:T6	
+R10	Coreference Arg1:T11 Arg2:T1	
+R11	Connect Arg1:T14 Arg2:T13	
+R12	Connect Arg1:T14 Arg2:T12	
+R13	Coreference Arg1:T16 Arg2:T13	
+R14	Connect Arg1:T15 Arg2:T13	
+R15	Connect Arg1:T18 Arg2:T17	
+R16	Connect Arg1:T19 Arg2:T18	
+R17	Connect Arg1:T19 Arg2:T17	
+R18	Part-Whole Arg1:T17 Arg2:T11	
+R19	Part-Whole Arg1:T12 Arg2:T11	
+R20	Part-Whole Arg1:T13 Arg2:T11	
+R21	Part-Whole Arg1:T14 Arg2:T11	
+R22	Part-Whole Arg1:T15 Arg2:T11	
+R23	Part-Whole Arg1:T17 Arg2:T11	
+R24	Part-Whole Arg1:T18 Arg2:T11	
+R25	Part-Whole Arg1:T19 Arg2:T11	

@@ -1,0 +1,7 @@
+T1	Parts 42 50	ブレーキフルード
+T2	Parts 0 9	リアブレーキホース
+T3	Parts 28 37	リアブレーキホース
+T4	Parts 54 60	リアブレーキ
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Contact Arg1:T3 Arg2:T1	
+R3	Part-Whole Arg1:T3 Arg2:T4	

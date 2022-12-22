@@ -1,0 +1,5 @@
+T2	Parts 20 23	消音器
+T3	Parts 0 5	右側排気管
+T4	Parts 16 19	排気管
+R1	Coreference Arg1:T3 Arg2:T4	
+R2	Contact Arg1:T2 Arg2:T4	

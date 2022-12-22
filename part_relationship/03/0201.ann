@@ -1,0 +1,24 @@
+T13	Parts 0 7	アクセルペダル
+T14	Parts 28 39	クーラーカットスイッチ
+T15	Parts 56 63	アクセルペダル
+T16	Parts 75 82	アクセルペダル
+T17	Parts 86 97	クーラーカットスイッチ
+T18	Parts 104 111	アクセルペダル
+T19	Parts 120 126	フロアマット
+T20	Parts 133 140	アクセルペダル
+T1	Parts 8 10	裏板
+T2	Parts 17 19	ビス
+T3	Parts 83 85	裏板
+T4	Parts 112 114	裏板
+R1	Coreference Arg1:T20 Arg2:T18	
+R2	Coreference Arg1:T4 Arg2:T3	
+R3	Coreference Arg1:T18 Arg2:T16	
+R4	Coreference Arg1:T16 Arg2:T15	
+R5	Coreference Arg1:T15 Arg2:T13	
+R6	Coreference Arg1:T3 Arg2:T1	
+T5	Parts 154 158	エンジン
+R11	Coreference Arg1:T14 Arg2:T17	
+R7	Contact Arg1:T13 Arg2:T1	
+R8	Contact Arg1:T1 Arg2:T2	
+R12	Contact Arg1:T13 Arg2:T2	
+R9	Connect Arg1:T20 Arg2:T5	

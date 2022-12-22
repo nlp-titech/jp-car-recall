@@ -1,0 +1,10 @@
+T1	Parts 0 2	バス
+T2	Parts 3 11	バッテリケーブル
+T3	Parts 36 40	ケーブル
+T4	Parts 70 74	ケーブル
+T5	Parts 79 83	エンジン
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Coreference Arg1:T3 Arg2:T4	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T5 Arg2:T1	
+R5	Connect Arg1:T4 Arg2:T5	

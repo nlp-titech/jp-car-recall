@@ -1,0 +1,12 @@
+T1	Parts 10 41	シートバックフレーム（座席の背もたれの内部にある鉄製の骨組み）
+T3	Parts 0 4	運転者席
+T7	Parts 93 97	背もたれ
+T9	Parts 6 9	助手席
+T11	Parts 90 92	座席
+T2	Parts 42 51	リクライニング装置
+R1	Oneway-Coreference Arg1:T11 Arg2:T3	
+R2	Oneway-Coreference Arg1:T11 Arg2:T9	
+R3	Contact Arg1:T1 Arg2:T2	
+R4	Part-Whole Arg1:T1 Arg2:T7	
+R5	Part-Whole Arg1:T7 Arg2:T11	
+R6	Part-Whole Arg1:T2 Arg2:T11	

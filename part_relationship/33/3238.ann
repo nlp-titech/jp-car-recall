@@ -1,0 +1,10 @@
+T1	Parts 0 3	清掃車
+T2	Parts 4 6	車両
+T3	Parts 18 24	補助側ブラシ
+T4	Parts 65 71	補助側ブラシ
+R1	Coreference Arg1:T3 Arg2:T4	
+T5	Parts 72 74	車体
+R3	Part-Whole Arg1:T5 Arg2:T2	
+R4	Contact Arg1:T4 Arg2:T5	
+R5	Part-Whole Arg1:T4 Arg2:T2	
+R2	Coreference Arg1:T1 Arg2:T2	

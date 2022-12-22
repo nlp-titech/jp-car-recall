@@ -1,0 +1,14 @@
+T1	Parts 0 6	かじ取り装置
+T2	Parts 7 13	ギヤボックス
+T3	Parts 54 59	ハンドル軸
+T4	Parts 39 43	ハンドル
+T5	Parts 94 98	ハンドル
+T7	Parts 25 28	補強板
+R1	Part-Whole Arg1:T2 Arg2:T1	
+T6	Parts 14 16	車体
+R3	Contact Arg1:T7 Arg2:T6	
+R5	Coreference Arg1:T4 Arg2:T5	
+R6	Contact Arg1:T4 Arg2:T3	
+R8	Contact Arg1:T7 Arg2:T2	
+R2	Connect Arg1:T2 Arg2:T6	
+R4	Connect Arg1:T2 Arg2:T4	

@@ -1,0 +1,11 @@
+T2	Parts 106 112	ステアリング
+T3	Parts 0 12	１８インチホイール装着車
+T4	Parts 126 137	ホイールスタッドボルト
+T5	Parts 17 22	ラグナット
+T6	Parts 38 43	ラグナット
+T7	Parts 69 74	ラグナット
+R1	Coreference Arg1:T5 Arg2:T6	
+R2	Coreference Arg1:T6 Arg2:T7	
+R3	Part-Whole Arg1:T2 Arg2:T3	
+R4	Contact Arg1:T7 Arg2:T4	
+R5	Contact Arg1:T7 Arg2:T2	

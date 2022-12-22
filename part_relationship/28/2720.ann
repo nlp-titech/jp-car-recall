@@ -1,0 +1,10 @@
+T16	Parts 0 7	制動灯スイッチ
+T22	Parts 39 44	スプリング
+T23	Parts 58 63	スプリング
+T24	Parts 94 99	スプリング
+T25	Parts 128 131	制動灯
+R1	Coreference Arg1:T23 Arg2:T22	
+R2	Coreference Arg1:T24 Arg2:T23	
+T3	Parts 146 149	原動機
+R3	Connect Arg1:T16 Arg2:T25	
+R4	Part-Whole Arg1:T22 Arg2:T16	

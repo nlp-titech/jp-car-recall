@@ -1,0 +1,7 @@
+T2	Parts 4 8	アクスル
+T3	Parts 115 119	アクスル
+T4	Parts 111 114	タイヤ
+R2	Connect Arg1:T4 Arg2:T3	
+R3	Coreference Arg1:T2 Arg2:T3	
+T5	Parts 0 3	後々軸
+R4	Part-Whole Arg1:T2 Arg2:T5	

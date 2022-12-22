@@ -1,0 +1,14 @@
+T15	Parts 41 49	ボールジョイント
+T16	Parts 108 111	ナット
+T17	Parts 114 117	ボルト
+T18	Parts 153 161	ボールジョイント
+T1	Parts 0 6	かじ取り装置
+T2	Parts 11 18	ナックルアーム
+T3	Parts 19 29	ステアリングシリンダ
+T4	Parts 31 36	タイロッド
+T6	Parts 96 103	ボールジョント
+R2	Coreference Arg1:T6 Arg2:T18	
+R1	Contact Arg1:T16 Arg2:T6	
+R3	Contact Arg1:T17 Arg2:T6	
+R4	Contact Arg1:T17 Arg2:T16	
+R5	Coreference Arg1:T6 Arg2:T15	

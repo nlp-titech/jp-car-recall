@@ -1,0 +1,11 @@
+T1	Parts 3 17	エンジンコントロールユニット
+T2	Parts 92 106	エンジンコントロールユニット
+T3	Parts 18 25	制御プログラム
+T4	Parts 107 114	制御プログラム
+T5	Parts 134 141	制御プログラム
+T9	Parts 119 133	車載式故障診断装置（ＯＢＤ）
+R1	Part-Whole Arg1:T3 Arg2:T1	
+R2	Coreference Arg1:T4 Arg2:T3	
+R3	Coreference Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T5 Arg2:T9	
+R5	Connect Arg1:T9 Arg2:T2	

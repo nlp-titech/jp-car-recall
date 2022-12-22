@@ -1,0 +1,5 @@
+T4	Parts 71 74	シフト
+T8	Parts 5 7	車両
+T1	Parts 12 32	変速用ソレノイドバルブ制御用コンピュータ
+R1	Part-Whole Arg1:T1 Arg2:T8	
+R2	Part-Whole Arg1:T4 Arg2:T8	

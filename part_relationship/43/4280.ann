@@ -1,0 +1,10 @@
+T1	Parts 18 24	ファンベルト
+T2	Parts 39 45	ファンベルト
+T3	Parts 89 95	ファンベルト
+T4	Parts 0 12	大型ハイブリッド路線バス
+T5	Parts 25 28	プーリ
+R1	Part-Whole Arg1:T1 Arg2:T4	
+R2	Part-Whole Arg1:T5 Arg2:T4	
+R3	Coreference Arg1:T1 Arg2:T2	
+R5	Contact Arg1:T5 Arg2:T1	
+R4	Coreference Arg1:T2 Arg2:T3	

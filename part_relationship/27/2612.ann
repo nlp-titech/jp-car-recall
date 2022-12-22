@@ -1,0 +1,8 @@
+T1	Parts 0 4	大型バス
+T2	Parts 9 17	エンジンハンガー
+T3	Parts 28 32	エンジン
+T4	Parts 79 87	エンジンハンガー
+R1	Coreference Arg1:T4 Arg2:T2	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Contact Arg1:T2 Arg2:T3	
+R4	Part-Whole Arg1:T3 Arg2:T1	

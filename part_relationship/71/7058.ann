@@ -1,0 +1,15 @@
+T1	Parts 49 56	シートフレーム
+T2	Parts 72 79	シートフレーム
+T3	Parts 99 106	シートフレーム
+T4	Parts 0 6	後部座席前側
+T5	Parts 7 10	シート
+T7	Parts 39 42	シート
+T9	Parts 25 35	シートスライドレバー
+T10	Parts 85 95	シートスライドレバー
+R1	Coreference Arg1:T9 Arg2:T10	
+R2	Coreference Arg1:T5 Arg2:T7	
+R3	Coreference Arg1:T1 Arg2:T2	
+R4	Coreference Arg1:T2 Arg2:T3	
+R5	Part-Whole Arg1:T5 Arg2:T4	
+R6	Connect Arg1:T9 Arg2:T4	
+R7	Contact Arg1:T7 Arg2:T1	

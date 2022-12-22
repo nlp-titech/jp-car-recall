@@ -1,0 +1,9 @@
+T10	Parts 25 40	グリップ（滑り止め付の握り手）
+T11	Parts 61 65	グリップ
+T12	Parts 66 72	ハンドルバー
+T1	Parts 0 6	かじ取り装置
+T2	Parts 11 17	ハンドルバー
+R1	Coreference Arg1:T11 Arg2:T10	
+R2	Coreference Arg1:T12 Arg2:T2	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Contact Arg1:T2 Arg2:T10	

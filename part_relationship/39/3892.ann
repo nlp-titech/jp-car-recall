@@ -1,0 +1,9 @@
+T1	Parts 18 27	ブレーキチャンバー
+T2	Parts 91 100	ブレーキチャンバー
+T3	Parts 7 13	後輪制動装置
+T4	Parts 0 6	大型トラック
+T5	Parts 148 153	チャンバー
+R1	Coreference Arg1:T5 Arg2:T2	
+R2	Coreference Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T1 Arg2:T3	
+R4	Part-Whole Arg1:T3 Arg2:T4	

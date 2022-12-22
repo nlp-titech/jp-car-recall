@@ -1,0 +1,29 @@
+T1	Parts 70 77	ドアラッチ機構
+T2	Parts 106 113	ドアラッチ機構
+T3	Parts 127 132	ドアラッチ
+T4	Parts 157 162	ドアラッチ
+T5	Parts 35 40	プログラム
+T6	Parts 138 141	モータ
+T8	Parts 3 6	乗降扉
+T9	Parts 57 59	ドア
+T10	Parts 176 178	ドア
+T11	Parts 0 2	後席
+T14	Parts 203 204	扉
+T15	Parts 48 52	リモコン
+T16	Parts 23 34	コントロールモジュール
+R2	Part-Whole Arg1:T5 Arg2:T16	
+R3	Connect Arg1:T16 Arg2:T8	
+R4	Coreference Arg1:T8 Arg2:T9	
+R6	Part-Whole Arg1:T1 Arg2:T9	
+T12	Parts 93 104	コントロールモジュール
+R7	Coreference Arg1:T16 Arg2:T12	
+R8	Coreference Arg1:T1 Arg2:T2	
+R9	Connect Arg1:T12 Arg2:T2	
+R10	Coreference Arg1:T2 Arg2:T3	
+R11	Connect Arg1:T3 Arg2:T6	
+R12	Coreference Arg1:T3 Arg2:T4	
+R13	Coreference Arg1:T9 Arg2:T10	
+#1	AnnotatorNotes T8	後席とPart-Whole関係にしてしまうと、後席が車内空間の一部位という意味になってしまう
+R1	Coreference Arg1:T10 Arg2:T14	
+R5	Part-Whole Arg1:T6 Arg2:T9	
+R14	Connect Arg1:T15 Arg2:T9	

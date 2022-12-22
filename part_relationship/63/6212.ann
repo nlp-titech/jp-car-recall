@@ -1,0 +1,15 @@
+T1	Parts 77 85	すれ違い用前照灯
+T2	Parts 101 109	すれ違い用前照灯
+T10	Parts 86 90	電気回路
+T11	Parts 21 24	排気管
+T3	Parts 8 16	フューズボックス
+T4	Parts 31 39	フューズボックス
+R1	Coreference Arg1:T3 Arg2:T4	
+T5	Parts 67 75	フューズボックス
+R2	Coreference Arg1:T4 Arg2:T5	
+R3	Part-Whole Arg1:T10 Arg2:T1	
+R4	Coreference Arg1:T1 Arg2:T2	
+R5	Part-Whole Arg1:T1 Arg2:T5	
+#1	AnnotatorNotes T4	ヒューズボックス？
+T6	Parts 0 4	エンジン
+R6	Contact Arg1:T6 Arg2:T11	

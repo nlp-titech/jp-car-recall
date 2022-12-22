@@ -1,0 +1,11 @@
+T10	Parts 0 13	転倒時エンジン停止センサー
+T11	Parts 51 59	傾き検知用振り子
+T12	Parts 44 48	センサー
+T13	Parts 84 88	センサー
+T1	Parts 32 36	エンジン
+R1	Coreference Arg1:T12 Arg2:T10	
+R2	Coreference Arg1:T13 Arg2:T12	
+T2	Parts 104 108	エンジン
+R3	Coreference Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T11 Arg2:T12	
+R5	Connect Arg1:T10 Arg2:T1	

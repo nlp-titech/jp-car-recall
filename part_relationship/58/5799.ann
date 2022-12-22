@@ -1,0 +1,10 @@
+T1	Parts 68 80	アクティブエンジンフード
+T2	Parts 0 11	歩行者頭部保護システム
+T3	Parts 56 67	歩行者頭部保護システム
+T5	Parts 38 41	自動車
+T6	Parts 12 24	光ファイバー回路センサー
+R1	Part-Whole Arg1:T6 Arg2:T2	
+R2	Part-Whole Arg1:T2 Arg2:T5	
+R3	Coreference Arg1:T2 Arg2:T3	
+R4	Part-Whole Arg1:T1 Arg2:T3	
+R5	Connect Arg1:T6 Arg2:T1	

@@ -1,0 +1,12 @@
+T1	Parts 7 15	樹脂製ブラケット
+T2	Parts 59 64	ブラケット
+T3	Parts 132 137	ブラケット
+T4	Parts 0 5	燃料ポンプ
+T5	Parts 150 155	燃料ポンプ
+T6	Parts 69 73	インペラ
+T7	Parts 138 142	インペラ
+R1	Part-Whole Arg1:T1 Arg2:T4	
+R2	Coreference Arg1:T1 Arg2:T2	
+R4	Coreference Arg1:T6 Arg2:T7	
+R3	Coreference Arg1:T4 Arg2:T5	
+R5	Coreference Arg1:T2 Arg2:T3	

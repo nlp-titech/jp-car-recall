@@ -1,0 +1,23 @@
+T12	Parts 117 123	マニホールド
+T13	Parts 124 130	取付けボルト
+T15	Parts 149 155	マニホールド
+T16	Parts 75 87	エキゾーストマニホールド
+T1	Parts 0 6	大型路線バス
+T2	Parts 7 20	水平置きＣＮＧ原動機搭載車
+T3	Parts 25 36	原動機固定用ブラケット
+T4	Parts 47 56	原動機固定用ラバー
+T5	Parts 63 74	原動機固定用ブラケット
+R1	Coreference Arg1:T3 Arg2:T5	
+R2	Coreference Arg1:T16 Arg2:T12	
+T7	Parts 142 148	原動機オイル
+R3	Coreference Arg1:T12 Arg2:T15	
+R6	Contact Arg1:T13 Arg2:T12	
+R8	Contact Arg1:T4 Arg2:T3	
+R9	Part-Whole Arg1:T3 Arg2:T2	
+R10	Part-Whole Arg1:T4 Arg2:T2	
+R11	Part-Whole Arg1:T16 Arg2:T2	
+R12	Part-Whole Arg1:T12 Arg2:T2	
+R13	Part-Whole Arg1:T13 Arg2:T2	
+R15	Contact Arg1:T7 Arg2:T2	
+T6	Parts 136 139	ボルト
+R5	Coreference Arg1:T6 Arg2:T13	

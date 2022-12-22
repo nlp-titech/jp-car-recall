@@ -1,0 +1,23 @@
+T1	Parts 11 19	スチールホイール
+T2	Parts 0 8	ホイールキャップ
+T3	Parts 71 79	ホイールキャップ
+T4	Parts 140 148	ホイールキャップ
+T5	Parts 152 160	ホイールキャップ
+T6	Parts 118 122	ハンドル
+T19	Parts 108 110	前輪
+T8	Parts 45 64	タイヤ（リムプロテクション付きタイヤ）
+T11	Parts 161 169	タイヤエアバルブ
+T12	Parts 179 184	エアバルブ
+R2	Coreference Arg1:T2 Arg2:T3	
+R5	Coreference Arg1:T3 Arg2:T4	
+R6	Coreference Arg1:T4 Arg2:T5	
+R7	Connect Arg1:T19 Arg2:T6	
+R8	Contact Arg1:T2 Arg2:T1	
+R9	Contact Arg1:T1 Arg2:T8	
+R10	Contact Arg1:T2 Arg2:T8	
+R14	Coreference Arg1:T11 Arg2:T12	
+T13	Parts 199 201	エア
+R16	Part-Whole Arg1:T13 Arg2:T8	
+R1	Oneway-Coreference Arg1:T1 Arg2:T19	
+R3	Part-Whole Arg1:T11 Arg2:T1	
+R4	Contact Arg1:T8 Arg2:T11	

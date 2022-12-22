@@ -1,0 +1,16 @@
+T8	Parts 5 31	前輪用制動力制御装置（アンチロックブレーキシステム）
+T1	Parts 0 4	制動装置
+T2	Parts 32 36	電気配線
+T3	Parts 42 46	電気配線
+T4	Parts 61 65	電気配線
+T5	Parts 66 73	ブレーキホース
+T6	Parts 110 117	ブレーキホース
+R1	Oneway-Coreference Arg1:T4 Arg2:T3	
+R2	Oneway-Coreference Arg1:T4 Arg2:T2	
+R3	Coreference Arg1:T6 Arg2:T5	
+R4	Part-Whole Arg1:T8 Arg2:T1	
+R5	Part-Whole Arg1:T2 Arg2:T8	
+T7	Parts 37 41	摩耗警報
+R6	Part-Whole Arg1:T3 Arg2:T7	
+R8	Part-Whole Arg1:T5 Arg2:T1	
+R7	Part-Whole Arg1:T7 Arg2:T1	

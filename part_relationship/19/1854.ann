@@ -1,0 +1,11 @@
+T16	Parts 19 23	旋回継手
+T17	Parts 24 28	配管継手
+T1	Parts 0 8	走行用油圧ホース
+T2	Parts 60 62	車体
+T3	Parts 69 72	ホース
+T4	Parts 77 80	作動油
+R1	Contact Arg1:T3 Arg2:T4	
+R2	Part-Whole Arg1:T17 Arg2:T16	
+R3	Coreference Arg1:T1 Arg2:T3	
+R4	Contact Arg1:T16 Arg2:T2	
+R5	Contact Arg1:T2 Arg2:T3	

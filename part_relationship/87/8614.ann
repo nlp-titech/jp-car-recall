@@ -1,0 +1,15 @@
+T1	Parts 0 2	前席
+T2	Parts 3 7	ドア配線
+T3	Parts 43 45	ドア
+T4	Parts 56 58	配線
+T5	Parts 78 88	ドアミラーウインカー
+T6	Parts 69 73	警告表示
+T7	Parts 100 107	ＳＲＳ警告表示
+T8	Parts 118 124	乗員保護装置
+R1	Coreference Arg1:T2 Arg2:T4	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Contact Arg1:T1 Arg2:T3	
+R4	Connect Arg1:T4 Arg2:T6	
+R5	Connect Arg1:T4 Arg2:T5	
+R6	Connect Arg1:T4 Arg2:T7	
+R7	Connect Arg1:T4 Arg2:T8	

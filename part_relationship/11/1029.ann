@@ -1,0 +1,14 @@
+T17	Parts 91 100	アクスルハウジング
+T18	Parts 46 50	アクスル
+T19	Parts 10 28	後々軸（非駆動軸）アクスルハウジング
+T16	Parts 56 58	車両
+T20	Parts 123 125	車両
+T1	Parts 0 9	後２軸大型トラック
+T3	Parts 112 119	ブレーキドラム
+R1	Coreference Arg1:T19 Arg2:T17	
+R2	Coreference Arg1:T16 Arg2:T20	
+R4	Part-Whole Arg1:T19 Arg2:T18	
+R3	Part-Whole Arg1:T18 Arg2:T1	
+R5	Coreference Arg1:T1 Arg2:T16	
+R7	Connect Arg1:T17 Arg2:T3	
+R6	Part-Whole Arg1:T3 Arg2:T1	

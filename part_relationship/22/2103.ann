@@ -1,0 +1,10 @@
+T14	Parts 39 47	トルクコンバータ
+T15	Parts 56 61	油圧ホース
+T1	Parts 0 7	バッテリー配線
+T2	Parts 28 30	配線
+R1	Coreference Arg1:T2 Arg2:T1	
+T3	Parts 48 54	オイル点検棒
+T4	Parts 95 97	配線
+R2	Coreference Arg1:T4 Arg2:T2	
+R3	Part-Whole Arg1:T3 Arg2:T14	
+R4	Part-Whole Arg1:T15 Arg2:T14	

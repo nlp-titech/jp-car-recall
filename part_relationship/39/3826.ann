@@ -1,0 +1,6 @@
+T5	Parts 0 34	前方障害物衝突軽減制御装置（トラフィックアイブレーキシステム）装着車
+T6	Parts 134 139	表示モニタ
+T2	Parts 39 45	ミリ波レーダ
+R3	Part-Whole Arg1:T2 Arg2:T5	
+R5	Part-Whole Arg1:T6 Arg2:T5	
+R1	Connect Arg1:T6 Arg2:T2	

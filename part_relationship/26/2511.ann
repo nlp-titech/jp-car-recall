@@ -1,0 +1,15 @@
+T16	Parts 53 62	コントロールバルブ
+T17	Parts 9 16	ブレーキパイプ
+T18	Parts 63 70	ブレーキパイプ
+T19	Parts 113 116	パイプ
+T1	Parts 0 4	制動装置
+T2	Parts 37 44	アタッチメント
+R1	Coreference Arg1:T19 Arg2:T18	
+T3	Parts 121 126	ブレーキ液
+T4	Parts 136 140	ブレーキ
+R2	Coreference Arg1:T18 Arg2:T17	
+R3	Coreference Arg1:T1 Arg2:T4	
+R4	Part-Whole Arg1:T17 Arg2:T1	
+R7	Connect Arg1:T2 Arg2:T16	
+R8	Contact Arg1:T19 Arg2:T3	
+R9	Part-Whole Arg1:T3 Arg2:T4	

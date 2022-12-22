@@ -1,0 +1,7 @@
+T5	Parts 30 33	原動機
+T7	Parts 51 54	原動機
+T8	Parts 12 15	原動機
+T1	Parts 20 23	点火系
+R1	Coreference Arg1:T8 Arg2:T5	
+R2	Coreference Arg1:T7 Arg2:T5	
+R3	Part-Whole Arg1:T1 Arg2:T8	

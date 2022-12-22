@@ -1,0 +1,12 @@
+T1	Parts 0 9	かじ取りハンドル軸
+T2	Parts 36 43	ロア・シャフト
+T3	Parts 44 52	アッパ・シャフト
+T4	Parts 132 136	ハンドル
+T5	Parts 66 75	プラスチック製ピン
+T6	Parts 119 121	ピン
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T1	
+R3	Contact Arg1:T5 Arg2:T2	
+R4	Contact Arg1:T5 Arg2:T3	
+R5	Coreference Arg1:T5 Arg2:T6	
+R6	Connect Arg1:T1 Arg2:T4	

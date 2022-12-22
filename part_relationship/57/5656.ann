@@ -1,0 +1,13 @@
+T1	Parts 13 20	前照灯スイッチ
+T2	Parts 41 48	前照灯スイッチ
+T3	Parts 74 81	前照灯スイッチ
+T4	Parts 99 106	前照灯スイッチ
+T5	Parts 0 12	ボディ電装品制御ユニット
+T8	Parts 88 91	前照灯
+T9	Parts 112 115	前照灯
+R2	Coreference Arg1:T2 Arg2:T1	
+R3	Coreference Arg1:T3 Arg2:T2	
+R5	Coreference Arg1:T4 Arg2:T3	
+R6	Coreference Arg1:T9 Arg2:T8	
+R1	Connect Arg1:T5 Arg2:T1	
+R4	Connect Arg1:T5 Arg2:T8	

@@ -1,0 +1,17 @@
+T3	Parts 0 7	チェーンガード
+T4	Parts 55 62	チェーンガード
+T5	Parts 97 104	チェーンガード
+T6	Parts 63 76	ナンバープレートブラケット
+T7	Parts 105 118	ナンバープレートブラケット
+T8	Parts 84 87	ボルト
+T11	Parts 119 122	番号灯
+T12	Parts 124 128	番号標板
+R1	Coreference Arg1:T3 Arg2:T4	
+R2	Coreference Arg1:T4 Arg2:T5	
+R3	Coreference Arg1:T6 Arg2:T7	
+R4	Contact Arg1:T4 Arg2:T8	
+R5	Contact Arg1:T6 Arg2:T8	
+R6	Contact Arg1:T4 Arg2:T6	
+R7	Contact Arg1:T7 Arg2:T11	
+R8	Contact Arg1:T7 Arg2:T12	
+R9	Contact Arg1:T11 Arg2:T12	

@@ -1,0 +1,11 @@
+T1	Parts 40 44	ハーネス
+T2	Parts 52 55	原動機
+T3	Parts 12 14	配線
+T4	Parts 45 47	被覆
+T5	Parts 0 11	ボルテージレギュレータ
+T6	Parts 29 35	レギュレータ
+R1	Part-Whole Arg1:T4 Arg2:T1	
+R2	Coreference Arg1:T6 Arg2:T5	
+R3	Contact Arg1:T3 Arg2:T5	
+R4	Connect Arg1:T2 Arg2:T1	
+R5	Coreference Arg1:T3 Arg2:T1	

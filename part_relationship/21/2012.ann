@@ -1,0 +1,12 @@
+T1	Parts 0 9	トランスミッション
+T2	Parts 17 23	車速センサー
+T3	Parts 28 39	アース用配線取付け端子
+T4	Parts 59 61	配線
+T5	Parts 67 78	車速センサー用コネクタ
+T6	Parts 95 99	コネクタ
+R2	Contact Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T3 Arg2:T2	
+R1	Coreference Arg1:T6 Arg2:T5	
+R4	Part-Whole Arg1:T5 Arg2:T2	
+R5	Connect Arg1:T4 Arg2:T3	
+R6	Connect Arg1:T5 Arg2:T4	

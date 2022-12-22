@@ -1,0 +1,15 @@
+T11	Parts 9 13	緩衝装置
+T12	Parts 14 20	エア・パイプ
+T13	Parts 42 53	右後輪ブレーキ・パイプ
+T14	Parts 59 65	エア・パイプ
+T15	Parts 100 108	ブレーキ・パイプ
+T1	Parts 0 4	制動装置
+R1	Coreference Arg1:T12 Arg2:T14	
+T2	Parts 21 25	床下配管
+R2	Coreference Arg1:T15 Arg2:T13	
+T3	Parts 112 119	ブレーキオイル
+R3	Part-Whole Arg1:T11 Arg2:T1	
+R4	Part-Whole Arg1:T12 Arg2:T11	
+R5	Part-Whole Arg1:T2 Arg2:T12	
+R6	Contact Arg1:T3 Arg2:T15	
+R7	Contact Arg1:T1 Arg2:T13	

@@ -1,0 +1,24 @@
+T1	Parts 39 47	助手席エアバッグ
+T2	Parts 70 75	エアバッグ
+T4	Parts 13 18	サンバイザ
+T5	Parts 30 35	サンバイザ
+T6	Parts 54 59	サンバイザ
+T7	Parts 82 87	サンバイザ
+T9	Parts 114 119	サンバイザ
+T12	Parts 147 150	助手席
+T13	Parts 131 133	車両
+T3	Parts 0 8	助手席サンバイザ
+R1	Coreference Arg1:T3 Arg2:T4	
+R2	Coreference Arg1:T4 Arg2:T5	
+R3	Coreference Arg1:T5 Arg2:T6	
+R4	Coreference Arg1:T1 Arg2:T2	
+R5	Coreference Arg1:T6 Arg2:T7	
+T8	Parts 90 98	サンバイザホルダ
+R6	Contact Arg1:T7 Arg2:T8	
+T10	Parts 122 130	サンバイザホルダ
+R7	Coreference Arg1:T7 Arg2:T9	
+R8	Coreference Arg1:T8 Arg2:T10	
+R9	Part-Whole Arg1:T12 Arg2:T13	
+R10	Part-Whole Arg1:T2 Arg2:T13	
+R11	Part-Whole Arg1:T9 Arg2:T13	
+R12	Part-Whole Arg1:T10 Arg2:T13	

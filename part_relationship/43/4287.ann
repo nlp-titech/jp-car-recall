@@ -1,0 +1,27 @@
+T1	Parts 0 22	減速エネルギー回生システム（ｉ－ＥＬＯＯＰ）
+T2	Parts 34 44	ＤＣ－ＤＣコンバータ
+T3	Parts 186 196	ＤＣ－ＤＣコンバータ
+T4	Parts 45 52	制御プログラム
+T5	Parts 226 230	エンジン
+T6	Parts 217 221	バッテリ
+T7	Parts 60 64	電気回路
+T8	Parts 199 203	電気回路
+T10	Parts 72 82	ｉ－ＥＬＯＯＰ警告灯
+T11	Parts 87 96	ｉ－ｓｔｏｐ警告灯
+T12	Parts 27 29	車両
+R1	Part-Whole Arg1:T1 Arg2:T12	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T4 Arg2:T2	
+R4	Part-Whole Arg1:T7 Arg2:T1	
+R5	Connect Arg1:T4 Arg2:T10	
+R6	Connect Arg1:T4 Arg2:T11	
+R9	Part-Whole Arg1:T10 Arg2:T12	
+R10	Part-Whole Arg1:T11 Arg2:T12	
+R11	Coreference Arg1:T2 Arg2:T3	
+R13	Part-Whole Arg1:T8 Arg2:T3	
+R15	Connect Arg1:T6 Arg2:T5	
+R16	Part-Whole Arg1:T6 Arg2:T12	
+R17	Part-Whole Arg1:T5 Arg2:T12	
+R7	Connect Arg1:T2 Arg2:T7	
+#1	AnnotatorNotes T7	DC-DCコンバータ内部の電気回路ではなく、車両全体の電気回路？
+R8	Connect Arg1:T3 Arg2:T6	

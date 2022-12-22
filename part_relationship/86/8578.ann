@@ -1,0 +1,11 @@
+T1	Parts 0 12	盗難発生警報装置ハーネス
+T2	Parts 31 35	ハーネス
+T3	Parts 41 47	ダミープラグ
+T4	Parts 71 75	ハーネス
+T5	Parts 79 101	ビルトインシステムインターフェイス（ＢＳＩ）
+T6	Parts 111 114	ＢＳＩ
+R1	Coreference Arg1:T2 Arg2:T1	
+R2	Contact Arg1:T3 Arg2:T2	
+R3	Coreference Arg1:T4 Arg2:T2	
+R4	Connect Arg1:T4 Arg2:T5	
+R5	Coreference Arg1:T6 Arg2:T5	

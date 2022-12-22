@@ -1,0 +1,11 @@
+T1	Parts 0 3	塵芥車
+T2	Parts 13 22	後退灯（ＬＥＤ式）
+T3	Parts 43 46	後退灯
+T4	Parts 49 51	配線
+T5	Parts 67 70	後退灯
+T6	Parts 80 82	車両
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Coreference Arg1:T3 Arg2:T5	
+R3	Coreference Arg1:T1 Arg2:T6	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T4 Arg2:T3	

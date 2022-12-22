@@ -1,0 +1,24 @@
+T1	Parts 2 26	燃料噴射用電子制御コントロールユニット（ＥＣＵ）
+T2	Parts 28 33	転倒センサ
+T3	Parts 38 41	ＥＣＵ
+R1	Coreference Arg1:T3 Arg2:T1	
+T4	Parts 42 47	転倒センサ
+R2	Coreference Arg1:T4 Arg2:T2	
+T5	Parts 49 53	電気配線
+T7	Parts 87 91	電気配線
+R3	Coreference Arg1:T7 Arg2:T5	
+T8	Parts 97 100	ＥＣＵ
+T9	Parts 102 107	転倒センサ
+T10	Parts 108 112	電気配線
+R4	Coreference Arg1:T8 Arg2:T3	
+R5	Coreference Arg1:T9 Arg2:T4	
+T13	Parts 154 156	端子
+T14	Parts 175 179	エンジン
+R6	Coreference Arg1:T10 Arg2:T7	
+R7	Contact Arg1:T3 Arg2:T5	
+R8	Contact Arg1:T4 Arg2:T5	
+R9	Part-Whole Arg1:T13 Arg2:T10	
+R10	Connect Arg1:T8 Arg2:T14	
+R11	Connect Arg1:T9 Arg2:T14	
+R12	Connect Arg1:T10 Arg2:T14	
+R13	Connect Arg1:T4 Arg2:T3	

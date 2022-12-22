@@ -1,0 +1,15 @@
+T1	Parts 63 78	エアバッグコントロールユニット
+T2	Parts 103 111	サイドエアバッグ
+T3	Parts 26 33	制御プログラム
+T4	Parts 120 134	シートベルトプリテンショナー
+T6	Parts 7 14	加速度センサー
+T7	Parts 80 85	エアバッグ
+T8	Parts 114 119	エアバッグ
+T10	Parts 19 23	センサー
+R1	Part-Whole Arg1:T3 Arg2:T10	
+R2	Coreference Arg1:T6 Arg2:T10	
+R3	Connect Arg1:T1 Arg2:T7	
+R7	Connect Arg1:T1 Arg2:T4	
+R5	Oneway-Coreference Arg1:T7 Arg2:T2	
+R6	Oneway-Coreference Arg1:T7 Arg2:T8	
+R4	Connect Arg1:T10 Arg2:T1	

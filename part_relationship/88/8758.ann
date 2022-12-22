@@ -1,0 +1,5 @@
+T1	Parts 6 21	チャイルドシート（以下ＣＲＳ）
+T3	Parts 86 89	ＣＲＳ
+T2	Parts 45 48	ＣＲＳ
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Coreference Arg1:T2 Arg2:T3	

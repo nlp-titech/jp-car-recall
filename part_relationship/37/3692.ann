@@ -1,0 +1,36 @@
+T1	Parts 40 48	ターボチャージャ
+T2	Parts 143 151	ターボチャージャ
+T3	Parts 181 189	ターボチャージャ
+T4	Parts 0 8	ホイールクレーン
+T5	Parts 17 24	エンジンオイル
+T6	Parts 201 208	エンジンオイル
+T7	Parts 190 196	シールリング
+T8	Parts 49 58	スラストベアリング
+T9	Parts 106 115	スラストベアリング
+T10	Parts 82 86	エンジン
+T11	Parts 220 224	エンジン
+T12	Parts 242 246	エンジン
+T13	Parts 268 272	エンジン
+T15	Parts 216 219	オイル
+T16	Parts 152 156	シャフト
+T17	Parts 9 12	原動機
+T19	Parts 118 125	スラストリング
+R1	Part-Whole Arg1:T17 Arg2:T4	
+R3	Part-Whole Arg1:T1 Arg2:T17	
+R4	Part-Whole Arg1:T8 Arg2:T1	
+R5	Coreference Arg1:T9 Arg2:T8	
+R6	Coreference Arg1:T2 Arg2:T1	
+R7	Coreference Arg1:T3 Arg2:T2	
+R8	Part-Whole Arg1:T7 Arg2:T3	
+R9	Contact Arg1:T6 Arg2:T3	
+R10	Coreference Arg1:T13 Arg2:T12	
+R11	Coreference Arg1:T12 Arg2:T11	
+R12	Coreference Arg1:T11 Arg2:T10	
+R14	Contact Arg1:T5 Arg2:T17	
+R2	Contact Arg1:T19 Arg2:T9	
+R13	Part-Whole Arg1:T19 Arg2:T1	
+R15	Part-Whole Arg1:T16 Arg2:T2	
+R16	Contact Arg1:T19 Arg2:T16	
+R17	Coreference Arg1:T15 Arg2:T6	
+R18	Coreference Arg1:T6 Arg2:T5	
+R19	Coreference Arg1:T17 Arg2:T10	

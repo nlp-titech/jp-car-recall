@@ -1,0 +1,14 @@
+T10	Parts 29 31	車軸
+T11	Parts 51 53	車軸
+T12	Parts 116 129	ハブベアリング（回転軸受）
+T1	Parts 0 4	トレ－ラ
+T2	Parts 5 13	車軸（中空形状）
+T3	Parts 85 91	ハブグリ－ス
+T4	Parts 101 105	グリ－ス
+R1	Coreference Arg1:T10 Arg2:T2	
+R2	Part-Whole Arg1:T11 Arg2:T10	
+R3	Coreference Arg1:T4 Arg2:T3	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Contact Arg1:T11 Arg2:T3	
+R6	Part-Whole Arg1:T12 Arg2:T11	
+R7	Contact Arg1:T12 Arg2:T3	

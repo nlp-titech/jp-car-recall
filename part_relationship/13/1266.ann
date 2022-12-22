@@ -1,0 +1,17 @@
+T18	Parts 33 41	ボールジョイント
+T19	Parts 57 62	ゴムブーツ
+T21	Parts 136 140	ナックル
+T22	Parts 130 135	ロアアーム
+T2	Parts 9 11	車両
+T3	Parts 16 21	ロアアーム
+T4	Parts 22 26	ナックル
+R2	Coreference Arg1:T3 Arg2:T22	
+R3	Coreference Arg1:T4 Arg2:T21	
+R1	Part-Whole Arg1:T3 Arg2:T2	
+R4	Part-Whole Arg1:T4 Arg2:T2	
+R5	Part-Whole Arg1:T18 Arg2:T2	
+R6	Connect Arg1:T3 Arg2:T4	
+R7	Contact Arg1:T3 Arg2:T18	
+R8	Contact Arg1:T4 Arg2:T18	
+R9	Contact Arg1:T18 Arg2:T19	
+R10	Part-Whole Arg1:T19 Arg2:T3	

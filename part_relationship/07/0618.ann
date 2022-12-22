@@ -1,0 +1,7 @@
+T1	Parts 0 5	かじ取装置
+T2	Parts 6 11	タイロッド
+T3	Parts 54 59	タイロッド
+T4	Parts 84 89	タイロッド
+R1	Coreference Arg1:T4 Arg2:T3	
+R2	Coreference Arg1:T3 Arg2:T2	
+R3	Part-Whole Arg1:T2 Arg2:T1	

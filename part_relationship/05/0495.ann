@@ -1,0 +1,23 @@
+T12	Parts 30 33	ボルト
+T13	Parts 47 50	ボルト
+T14	Parts 51 54	ナット
+T16	Parts 75 78	ボルト
+T1	Parts 0 4	冷凍装置
+T2	Parts 15 19	冷媒配管
+T3	Parts 20 25	燃料パイプ
+T4	Parts 58 63	燃料パイプ
+T5	Parts 99 102	原動機
+T6	Parts 108 113	燃料パイプ
+T7	Parts 118 120	燃料
+R1	Coreference Arg1:T16 Arg2:T13	
+R2	Coreference Arg1:T6 Arg2:T4	
+R3	Coreference Arg1:T4 Arg2:T3	
+R4	Coreference Arg1:T13 Arg2:T12	
+T8	Parts 8 10	車両
+R5	Part-Whole Arg1:T1 Arg2:T8	
+R6	Part-Whole Arg1:T2 Arg2:T1	
+R7	Contact Arg1:T3 Arg2:T12	
+R8	Contact Arg1:T14 Arg2:T13	
+R9	Contact Arg1:T7 Arg2:T6	
+R10	Part-Whole Arg1:T6 Arg2:T5	
+R11	Contact Arg1:T2 Arg2:T12	

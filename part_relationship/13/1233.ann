@@ -1,0 +1,13 @@
+T1	Parts 1 5	前２軸車
+T2	Parts 10 13	タイヤ
+T4	Parts 24 33	スタッドレスタイヤ
+T5	Parts 38 42	ハンドル
+T6	Parts 65 68	タイヤ
+T7	Parts 69 75	リンクロッド
+T8	Parts 126 129	ロッド
+R1	Oneway-Coreference Arg1:T2 Arg2:T4	
+R2	Coreference Arg1:T4 Arg2:T6	
+R3	Coreference Arg1:T7 Arg2:T8	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T5 Arg2:T1	
+R6	Part-Whole Arg1:T7 Arg2:T1	

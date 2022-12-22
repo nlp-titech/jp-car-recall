@@ -1,0 +1,17 @@
+T14	Parts 91 94	原動機
+T1	Parts 0 4	電気配線
+T2	Parts 18 22	フレーム
+T4	Parts 33 35	配線
+R1	Coreference Arg1:T4 Arg2:T1	
+T5	Parts 40 42	被覆
+T6	Parts 76 78	配線
+T7	Parts 109 113	電気系統
+T8	Parts 98 101	前照灯
+R2	Coreference Arg1:T6 Arg2:T4	
+R4	Part-Whole Arg1:T5 Arg2:T4	
+R5	Contact Arg1:T6 Arg2:T14	
+R6	Part-Whole Arg1:T8 Arg2:T7	
+R7	Part-Whole Arg1:T6 Arg2:T7	
+T3	Parts 82 86	ヒューズ
+R3	Contact Arg1:T3 Arg2:T6	
+R8	Part-Whole Arg1:T3 Arg2:T7	

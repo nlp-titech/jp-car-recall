@@ -1,0 +1,10 @@
+T11	Parts 45 50	変速レバー
+T12	Parts 70 74	変速ギヤ
+T8	Parts 7 12	手動変速機
+T1	Parts 0 6	動力伝達装置
+R1	Part-Whole Arg1:T8 Arg2:T1	
+R4	Part-Whole Arg1:T12 Arg2:T8	
+T2	Parts 17 27	二重かみ合い防止機構
+R2	Part-Whole Arg1:T2 Arg2:T8	
+R3	Part-Whole Arg1:T11 Arg2:T8	
+R5	Contact Arg1:T12 Arg2:T11	

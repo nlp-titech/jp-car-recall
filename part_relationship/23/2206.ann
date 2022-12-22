@@ -1,0 +1,9 @@
+T1	Parts 0 3	後車軸
+T2	Parts 4 8	緩衝装置
+T3	Parts 17 21	固定ピン
+T5	Parts 71 81	緩衝装置取付けボルト
+R3	Contact Arg1:T3 Arg2:T2	
+R1	Contact Arg1:T5 Arg2:T2	
+R2	Contact Arg1:T1 Arg2:T2	
+R5	Contact Arg1:T1 Arg2:T3	
+R6	Contact Arg1:T3 Arg2:T5	

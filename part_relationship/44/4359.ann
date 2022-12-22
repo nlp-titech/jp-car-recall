@@ -1,0 +1,18 @@
+T2	Parts 68 76	ゴム製燃料ホース
+T4	Parts 141 146	燃料ホース
+T5	Parts 0 24	燃料分配器（燃料噴射ノズルに燃料を分配する装置）
+T8	Parts 130 133	原動機
+T15	Parts 58 60	燃料
+T16	Parts 155 157	燃料
+T1	Parts 26 57	コールドスタートバルブ（低温時の始動性を良くするためのバルブ）
+R1	Contact Arg1:T15 Arg2:T5	
+R2	Contact Arg1:T2 Arg2:T5	
+R3	Contact Arg1:T2 Arg2:T1	
+T3	Parts 83 100	留金具（燃料ホースを固定する金具）
+R4	Part-Whole Arg1:T3 Arg2:T2	
+R5	Part-Whole Arg1:T5 Arg2:T8	
+R6	Part-Whole Arg1:T1 Arg2:T8	
+R7	Coreference Arg1:T2 Arg2:T4	
+R8	Coreference Arg1:T15 Arg2:T16	
+R9	Contact Arg1:T15 Arg2:T2	
+R10	Connect Arg1:T5 Arg2:T1	

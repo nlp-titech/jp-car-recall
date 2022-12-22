@@ -1,0 +1,9 @@
+T1	Parts 42 51	駐車ブレーキレバー
+T2	Parts 0 9	駐車ブレーキレバー
+T3	Parts 73 79	駐車ブレーキ
+T4	Parts 23 32	ブレーキ解除ボタン
+T5	Parts 59 68	ブレーキ解除ボタン
+R1	Coreference Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T4 Arg2:T5	
+R3	Contact Arg1:T2 Arg2:T4	
+R4	Connect Arg1:T5 Arg2:T3	

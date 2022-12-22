@@ -1,0 +1,7 @@
+T14	Parts 0 4	エンジン
+T15	Parts 27 38	オイルフィラーキャップ
+T16	Parts 82 86	キャップ
+T1	Parts 89 92	オイル
+R1	Coreference Arg1:T15 Arg2:T16	
+R2	Part-Whole Arg1:T15 Arg2:T14	
+R3	Contact Arg1:T1 Arg2:T16	

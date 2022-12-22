@@ -1,0 +1,10 @@
+T1	Parts 0 11	シートヒーターシステム
+T2	Parts 16 20	ハーネス
+T4	Parts 92 99	シートヒーター
+T3	Parts 30 39	電子制御モジュール
+T5	Parts 61 70	電子制御モジュール
+R1	Coreference Arg1:T3 Arg2:T5	
+R2	Contact Arg1:T2 Arg2:T1	
+R3	Connect Arg1:T3 Arg2:T1	
+R4	Coreference Arg1:T1 Arg2:T4	
+R6	Contact Arg1:T2 Arg2:T3	

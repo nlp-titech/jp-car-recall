@@ -1,0 +1,7 @@
+T1	Parts 0 9	大型・中型路線バス
+T2	Parts 14 24	室内燃料タンクカバー
+T4	Parts 27 30	保護材
+T5	Parts 65 68	保護材
+R1	Part-Whole Arg1:T4 Arg2:T2	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Coreference Arg1:T4 Arg2:T5	

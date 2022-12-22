@@ -1,0 +1,9 @@
+T1	Parts 0 5	自動変速機
+T2	Parts 10 23	エンジン制御用コンピュータ
+T3	Parts 25 36	変速油圧制御プログラム
+T4	Parts 82 85	変速機
+T5	Parts 87 91	クラッチ
+R1	Coreference Arg1:T4 Arg2:T1	
+R2	Part-Whole Arg1:T5 Arg2:T4	
+R4	Part-Whole Arg1:T3 Arg2:T2	
+R3	Connect Arg1:T3 Arg2:T1	

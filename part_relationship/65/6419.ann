@@ -1,0 +1,10 @@
+T2	Parts 0 5	バックドア
+T5	Parts 43 48	リヤゲート
+T7	Parts 102 104	車両
+T9	Parts 6 26	パワーリフトゲートコントロールモジュール
+R1	Connect Arg1:T9 Arg2:T2	
+T1	Parts 59 64	モジュール
+R3	Coreference Arg1:T9 Arg2:T1	
+R2	Coreference Arg1:T2 Arg2:T5	
+R5	Part-Whole Arg1:T5 Arg2:T7	
+R4	Part-Whole Arg1:T1 Arg2:T7	

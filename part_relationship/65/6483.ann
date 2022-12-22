@@ -1,0 +1,11 @@
+T2	Parts 34 46	ブロアモーターハウジング
+T3	Parts 66 74	ブロアモーター軸
+T4	Parts 109 121	ブロアモーターハウジング
+T8	Parts 17 22	防水カバー
+T10	Parts 81 85	モーター
+T14	Parts 2 6	空調装置
+R3	Part-Whole Arg1:T2 Arg2:T10	
+R4	Part-Whole Arg1:T3 Arg2:T10	
+R6	Coreference Arg1:T2 Arg2:T4	
+R7	Part-Whole Arg1:T10 Arg2:T14	
+R1	Contact Arg1:T14 Arg2:T8	

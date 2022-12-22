@@ -1,0 +1,11 @@
+T1	Parts 0 4	燃料装置
+T2	Parts 26 28	燃料
+T3	Parts 55 59	燃料装置
+T4	Parts 80 84	燃料装置
+T5	Parts 97 101	エンジン
+T6	Parts 109 111	燃料
+R1	Coreference Arg1:T3 Arg2:T1	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Coreference Arg1:T4 Arg2:T3	
+R4	Connect Arg1:T4 Arg2:T5	
+R5	Coreference Arg1:T6 Arg2:T2	

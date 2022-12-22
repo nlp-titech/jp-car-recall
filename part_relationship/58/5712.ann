@@ -1,0 +1,9 @@
+T2	Parts 41 48	非常点滅表示灯
+T3	Parts 65 72	非常点滅表示灯
+T4	Parts 20 25	プログラム
+T5	Parts 0 19	トレーラ・ヒッチ・コントロールユニット
+T6	Parts 33 37	トレーラ
+T7	Parts 60 64	トレーラ
+R1	Coreference Arg1:T6 Arg2:T7	
+R2	Coreference Arg1:T2 Arg2:T3	
+R3	Part-Whole Arg1:T4 Arg2:T5	

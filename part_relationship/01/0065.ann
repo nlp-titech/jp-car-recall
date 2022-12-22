@@ -1,0 +1,13 @@
+T10	Parts 0 10	後輪用ブレーキパイプ
+T13	Parts 80 87	ブレーキパイプ
+T2	Parts 28 32	アクセル
+T3	Parts 34 38	ケーブル
+R1	Coreference Arg1:T10 Arg2:T13	
+T4	Parts 98 103	ブレーキ液
+R3	Contact Arg1:T3 Arg2:T2	
+R4	Contact Arg1:T13 Arg2:T4	
+T1	Parts 14 21	左前方フレーム
+R2	Part-Whole Arg1:T10 Arg2:T1	
+T5	Parts 11 13	車両
+R5	Part-Whole Arg1:T1 Arg2:T5	
+R6	Part-Whole Arg1:T2 Arg2:T5	

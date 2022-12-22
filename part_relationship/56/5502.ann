@@ -1,0 +1,12 @@
+T2	Parts 0 22	後輪ブレーキペダル一体型フットレスト（右側）
+T3	Parts 126 130	ブレーキ
+T6	Parts 25 54	変速機一体型フットレスト（左側）（後付けオプションパーツ）
+T7	Parts 123 125	後輪
+T8	Parts 59 61	車体
+T1	Parts 112 118	フットレスト
+R1	Contact Arg1:T8 Arg2:T6	
+R2	Contact Arg1:T8 Arg2:T2	
+R3	Oneway-Coreference Arg1:T1 Arg2:T6	
+R4	Oneway-Coreference Arg1:T1 Arg2:T2	
+R5	Connect Arg1:T3 Arg2:T2	
+R6	Connect Arg1:T3 Arg2:T7	

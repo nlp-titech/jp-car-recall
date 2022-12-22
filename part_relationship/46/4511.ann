@@ -1,0 +1,10 @@
+T1	Parts 35 43	プロペラシャフト
+T2	Parts 0 5	燃料タンク
+T3	Parts 44 49	燃料タンク
+T4	Parts 6 9	保護板
+T5	Parts 62 64	燃料
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Part-Whole Arg1:T5 Arg2:T3	
+R3	Part-Whole Arg1:T4 Arg2:T2	
+R5	Contact Arg1:T1 Arg2:T4	
+R4	Contact Arg1:T1 Arg2:T3	

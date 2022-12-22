@@ -1,0 +1,18 @@
+T1	Parts 7 15	バキュームポンプ
+T2	Parts 0 6	制動倍力装置
+T3	Parts 163 167	エンジン
+T4	Parts 173 177	エンジン
+T5	Parts 111 115	ブレーキ
+T6	Parts 128 132	ブレーキ
+T7	Parts 22 25	ポンプ
+T8	Parts 36 39	ポンプ
+T9	Parts 86 89	ポンプ
+T10	Parts 150 153	ポンプ
+R1	Coreference Arg1:T8 Arg2:T7	
+R2	Coreference Arg1:T9 Arg2:T8	
+R3	Coreference Arg1:T7 Arg2:T1	
+R4	Coreference Arg1:T10 Arg2:T9	
+R5	Coreference Arg1:T4 Arg2:T3	
+R6	Coreference Arg1:T6 Arg2:T5	
+R7	Part-Whole Arg1:T1 Arg2:T2	
+R8	Part-Whole Arg1:T2 Arg2:T5	

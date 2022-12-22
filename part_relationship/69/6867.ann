@@ -1,0 +1,14 @@
+T7	Parts 7 9	荷台
+T8	Parts 73 82	スキン板（表面板）
+T9	Parts 20 22	リブ
+R1	Part-Whole Arg1:T8 Arg2:T3	
+R2	Part-Whole Arg1:T9 Arg2:T1	
+R3	Contact Arg1:T9 Arg2:T8	
+T1	Parts 14 17	フロア
+R4	Part-Whole Arg1:T1 Arg2:T7	
+T2	Parts 35 38	フロア
+R5	Coreference Arg1:T1 Arg2:T2	
+T3	Parts 66 69	フロア
+R6	Coreference Arg1:T2 Arg2:T3	
+T4	Parts 101 104	フロア
+R7	Coreference Arg1:T3 Arg2:T4	

@@ -1,0 +1,7 @@
+T12	Parts 72 80	ベルトテンショナ
+T1	Parts 0 7	センターピラー
+T2	Parts 55 60	遮音補助材
+T4	Parts 100 103	補助材
+T5	Parts 10 52	ベルトテンショナ（衝突時に座席ベルトの弛みを瞬時に巻き取る装置）付前席ベルト巻取装置
+R2	Coreference Arg1:T2 Arg2:T4	
+R3	Part-Whole Arg1:T5 Arg2:T1	

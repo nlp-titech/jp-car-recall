@@ -1,0 +1,12 @@
+T1	Parts 0 14	アイドリングストップシステム
+T2	Parts 19 25	大型路線バス
+T3	Parts 30 37	フライホイール
+T4	Parts 38 43	リングギヤ
+T5	Parts 66 68	ギヤ
+R1	Coreference Arg1:T4 Arg2:T5	
+T7	Parts 76 79	原動機
+R2	Part-Whole Arg1:T1 Arg2:T2	
+R4	Part-Whole Arg1:T7 Arg2:T2	
+R5	Part-Whole Arg1:T4 Arg2:T3	
+R3	Part-Whole Arg1:T3 Arg2:T7	
+R6	Connect Arg1:T1 Arg2:T7	

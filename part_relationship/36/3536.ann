@@ -1,0 +1,19 @@
+T1	Parts 29 37	パーキングレバー
+T4	Parts 58 65	スプリングピン
+T5	Parts 88 95	スプリングピン
+T6	Parts 1 12	アクチュエータシャフト
+T7	Parts 17 28	アクチュエータシャフト
+T9	Parts 50 53	変速機
+T10	Parts 133 135	ギヤ
+T11	Parts 115 117	ピン
+T12	Parts 136 138	ピン
+T13	Parts 144 146	車輪
+R1	Coreference Arg1:T5 Arg2:T4	
+R2	Coreference Arg1:T11 Arg2:T5	
+R3	Coreference Arg1:T12 Arg2:T11	
+R4	Coreference Arg1:T7 Arg2:T6	
+R5	Contact Arg1:T1 Arg2:T7	
+R6	Connect Arg1:T10 Arg2:T9	
+R7	Connect Arg1:T13 Arg2:T10	
+R8	Connect Arg1:T9 Arg2:T6	
+R9	Contact Arg1:T4 Arg2:T7	

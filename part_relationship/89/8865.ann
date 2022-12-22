@@ -1,0 +1,9 @@
+T1	Parts 0 17	ブレーキサーボコネクティングロッド
+T2	Parts 64 67	ボルト
+T3	Parts 80 97	ブレーキサーボコネクティングロッド
+T4	Parts 100 103	ボルト
+T5	Parts 114 118	ブレーキ
+R1	Coreference Arg1:T1 Arg2:T3	
+R2	Contact Arg1:T1 Arg2:T2	
+R3	Coreference Arg1:T2 Arg2:T4	
+R4	Part-Whole Arg1:T3 Arg2:T5	

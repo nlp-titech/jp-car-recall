@@ -1,0 +1,11 @@
+T1	Parts 11 29	エアバッグ・コントロール・モジュール
+T2	Parts 62 71	サイド・エアバッグ
+T3	Parts 96 105	サイド・エアバッグ
+T4	Parts 115 124	サイド・エアバッグ
+T6	Parts 0 6	乗員保護装置
+T7	Parts 31 33	配線
+R1	Contact Arg1:T1 Arg2:T7	
+R2	Part-Whole Arg1:T7 Arg2:T6	
+R3	Part-Whole Arg1:T2 Arg2:T6	
+R4	Oneway-Coreference Arg1:T2 Arg2:T3	
+R5	Oneway-Coreference Arg1:T2 Arg2:T4	

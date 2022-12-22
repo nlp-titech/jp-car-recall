@@ -1,0 +1,12 @@
+T1	Parts 0 10	高輝度放電灯式前照灯
+T2	Parts 65 73	すれ違い用前照灯
+T3	Parts 29 37	制御コンピュータ
+T4	Parts 52 58	走行用前照灯
+T6	Parts 25 28	前照灯
+T5	Parts 11 24	インバータ（電圧変換装置）
+R2	Coreference Arg1:T1 Arg2:T6	
+R4	Connect Arg1:T5 Arg2:T3	
+R5	Oneway-Coreference Arg1:T6 Arg2:T4	
+R6	Oneway-Coreference Arg1:T6 Arg2:T2	
+R1	Connect Arg1:T1 Arg2:T5	
+R3	Connect Arg1:T6 Arg2:T3	

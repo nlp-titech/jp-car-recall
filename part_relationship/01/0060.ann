@@ -1,0 +1,13 @@
+T13	Parts 21 28	ブレーキホース
+T14	Parts 57 60	ホース
+T15	Parts 61 73	燃料タンク取付ブラケット
+T16	Parts 96 99	ホース
+T17	Parts 46 48	後輪
+R1	Coreference Arg1:T14 Arg2:T13	
+T1	Parts 0 11	左後輪ディスクブレーキ
+R2	Coreference Arg1:T16 Arg2:T14	
+T2	Parts 110 115	ブレーキ液
+R3	Contact Arg1:T13 Arg2:T1	
+R4	Contact Arg1:T17 Arg2:T1	
+R5	Contact Arg1:T2 Arg2:T16	
+R6	Contact Arg1:T15 Arg2:T14	

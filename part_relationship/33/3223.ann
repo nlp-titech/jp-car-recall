@@ -1,0 +1,23 @@
+T14	Parts 135 141	エアーポンプ
+T15	Parts 145 151	エアーポンプ
+T16	Parts 42 50	インレットパイプ
+T17	Parts 73 81	インレットパイプ
+T18	Parts 117 125	インレットパイプ
+T19	Parts 154 158	ローター
+T20	Parts 168 171	ポンプ
+T1	Parts 0 10	ＤＰＦ再燃焼システム
+T2	Parts 11 22	バーナー用エアーポンプ
+T3	Parts 29 37	インレットパイプ
+R1	Coreference Arg1:T3 Arg2:T16	
+R2	Coreference Arg1:T16 Arg2:T17	
+R3	Coreference Arg1:T17 Arg2:T18	
+R4	Coreference Arg1:T14 Arg2:T15	
+R5	Coreference Arg1:T15 Arg2:T20	
+T4	Parts 179 189	ＤＰＦ再燃焼システム
+R6	Coreference Arg1:T1 Arg2:T4	
+R7	Part-Whole Arg1:T2 Arg2:T1	
+R8	Part-Whole Arg1:T3 Arg2:T1	
+R9	Contact Arg1:T2 Arg2:T3	
+R10	Part-Whole Arg1:T14 Arg2:T1	
+R11	Part-Whole Arg1:T19 Arg2:T15	
+R12	Contact Arg1:T18 Arg2:T14	

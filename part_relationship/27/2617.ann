@@ -1,0 +1,14 @@
+T10	Parts 14 20	キャニスター
+T11	Parts 21 28	大気導入ホース
+T12	Parts 43 46	ホース
+T13	Parts 96 102	キャニスター
+T1	Parts 0 6	燃料蒸発ガス
+R1	Coreference Arg1:T12 Arg2:T11	
+T2	Parts 47 49	車体
+T3	Parts 50 55	燃料タンク
+R2	Coreference Arg1:T13 Arg2:T10	
+T4	Parts 122 128	燃料蒸発ガス
+R3	Coreference Arg1:T4 Arg2:T1	
+R4	Contact Arg1:T1 Arg2:T10	
+R5	Part-Whole Arg1:T11 Arg2:T10	
+R6	Connect Arg1:T3 Arg2:T10	

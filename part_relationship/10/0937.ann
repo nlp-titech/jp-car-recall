@@ -1,0 +1,15 @@
+T19	Parts 16 20	エンジン
+T20	Parts 0 3	排気管
+T21	Parts 26 29	排気管
+T22	Parts 123 127	エンジン
+T1	Parts 93 97	電気配線
+T2	Parts 98 100	被覆
+T3	Parts 105 109	電気配線
+R1	Coreference Arg1:T3 Arg2:T1	
+R2	Coreference Arg1:T22 Arg2:T19	
+R3	Coreference Arg1:T21 Arg2:T20	
+T4	Parts 81 85	排気ガス
+R4	Contact Arg1:T20 Arg2:T19	
+R5	Contact Arg1:T20 Arg2:T4	
+R6	Part-Whole Arg1:T2 Arg2:T1	
+R7	Connect Arg1:T3 Arg2:T22	

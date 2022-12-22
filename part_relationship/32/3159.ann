@@ -1,0 +1,17 @@
+T16	Parts 104 107	ＣＶＴ
+T17	Parts 117 126	セカンダリシャフト
+T18	Parts 163 167	シャフト
+T19	Parts 61 65	エンジン
+T21	Parts 39 43	アクセル
+T22	Parts 81 92	イグニッションスイッチ
+T1	Parts 0 10	ＣＶＴ（無段変速機）
+T2	Parts 11 20	油圧制御プログラム
+R1	Coreference Arg1:T1 Arg2:T16	
+R2	Coreference Arg1:T17 Arg2:T18	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R6	Connect Arg1:T19 Arg2:T1	
+R7	Connect Arg1:T22 Arg2:T19	
+R8	Part-Whole Arg1:T17 Arg2:T16	
+T3	Parts 28 31	シフト
+R4	Connect Arg1:T1 Arg2:T3	
+R5	Connect Arg1:T21 Arg2:T19	

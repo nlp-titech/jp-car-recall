@@ -1,0 +1,11 @@
+T1	Parts 18 26	スプリングフック
+T2	Parts 0 7	左右ドアラッチ
+T3	Parts 73 78	ドアラッチ
+T5	Parts 12 15	ラッチ
+T8	Parts 42 44	ドア
+T9	Parts 99 101	ドア
+R1	Coreference Arg1:T2 Arg2:T5	
+R2	Coreference Arg1:T5 Arg2:T3	
+R3	Part-Whole Arg1:T1 Arg2:T5	
+R4	Part-Whole Arg1:T3 Arg2:T8	
+R5	Coreference Arg1:T8 Arg2:T9	

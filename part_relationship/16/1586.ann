@@ -1,0 +1,9 @@
+T16	Parts 0 5	燃料タンク
+T18	Parts 39 42	タンク
+T1	Parts 6 8	車体
+R1	Coreference Arg1:T16 Arg2:T18	
+T2	Parts 124 126	燃料
+R3	Part-Whole Arg1:T16 Arg2:T1	
+T3	Parts 117 119	燃料
+R2	Coreference Arg1:T3 Arg2:T2	
+R4	Part-Whole Arg1:T3 Arg2:T18	

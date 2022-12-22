@@ -1,0 +1,7 @@
+T10	Parts 0 18	制動装置用アキュームレータ（蓄圧器）
+T11	Parts 40 48	アキュームレータ
+T12	Parts 55 61	ブレーキ配管
+R1	Coreference Arg1:T11 Arg2:T10	
+T1	Parts 80 87	ブレーキオイル
+R2	Contact Arg1:T12 Arg2:T11	
+R3	Contact Arg1:T1 Arg2:T12	

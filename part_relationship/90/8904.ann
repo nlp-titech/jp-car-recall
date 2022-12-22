@@ -1,0 +1,5 @@
+T1	Parts 0 3	消音器
+T2	Parts 26 29	消音器
+T3	Parts 46 49	消音器
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Coreference Arg1:T2 Arg2:T3	

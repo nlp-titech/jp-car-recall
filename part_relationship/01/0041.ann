@@ -1,0 +1,18 @@
+T12	Parts 113 119	カムシャフト
+T13	Parts 0 10	ディーゼル・エンジン
+T17	Parts 41 47	カムシャフト
+T19	Parts 70 73	ベルト
+T20	Parts 138 144	カムシャフト
+T4	Parts 49 52	プーリ
+T6	Parts 78 81	ベルト
+R1	Coreference Arg1:T20 Arg2:T12	
+R2	Coreference Arg1:T12 Arg2:T17	
+R3	Coreference Arg1:T6 Arg2:T19	
+T1	Parts 11 39	タイミングベルト（カムシャフトを回転させるためのベルト）
+R4	Coreference Arg1:T1 Arg2:T19	
+R5	Part-Whole Arg1:T1 Arg2:T13	
+R6	Contact Arg1:T17 Arg2:T4	
+R8	Contact Arg1:T4 Arg2:T1	
+R7	Part-Whole Arg1:T17 Arg2:T13	
+R9	Part-Whole Arg1:T4 Arg2:T13	
+R10	Contact Arg1:T17 Arg2:T1	

@@ -1,0 +1,13 @@
+T13	Parts 12 22	電子制御式可変ノズル
+T16	Parts 60 65	タービン翼
+T17	Parts 99 104	タービン翼
+T18	Parts 56 59	過給機
+T19	Parts 8 11	過給機
+T20	Parts 0 3	原動機
+R1	Coreference Arg1:T18 Arg2:T19	
+R2	Coreference Arg1:T17 Arg2:T16	
+R3	Part-Whole Arg1:T19 Arg2:T20	
+R4	Part-Whole Arg1:T13 Arg2:T19	
+R5	Part-Whole Arg1:T16 Arg2:T18	
+T1	Parts 35 49	圧縮圧開放式エンジンブレーキ
+R6	Connect Arg1:T1 Arg2:T20	

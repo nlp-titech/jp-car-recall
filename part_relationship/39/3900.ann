@@ -1,0 +1,10 @@
+T1	Parts 18 24	ファンベルト
+T2	Parts 0 12	大型ハイブリッド路線バス
+T3	Parts 73 76	プーリ
+T4	Parts 63 66	ベルト
+T5	Parts 43 51	テンションロッド
+R1	Contact Arg1:T3 Arg2:T4	
+R2	Coreference Arg1:T4 Arg2:T1	
+R3	Part-Whole Arg1:T1 Arg2:T2	
+R4	Part-Whole Arg1:T5 Arg2:T2	
+R5	Part-Whole Arg1:T3 Arg2:T2	

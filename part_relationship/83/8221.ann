@@ -1,0 +1,13 @@
+T1	Parts 0 3	運転席
+T2	Parts 6 12	トリムカバー
+T3	Parts 20 27	ヒューズボード
+T4	Parts 29 33	ハーネス
+T5	Parts 50 56	トリムカバー
+T6	Parts 85 91	トリムカバー
+T7	Parts 92 99	アクセルペダル
+T8	Parts 110 117	アクセルペダル
+R1	Coreference Arg1:T2 Arg2:T5	
+R2	Coreference Arg1:T5 Arg2:T6	
+R3	Coreference Arg1:T7 Arg2:T8	
+R4	Part-Whole Arg1:T3 Arg2:T2	
+R5	Part-Whole Arg1:T4 Arg2:T2	

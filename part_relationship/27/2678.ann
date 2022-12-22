@@ -1,0 +1,16 @@
+T1	Parts 0 4	燃料装置
+T2	Parts 9 15	燃料噴射装置
+T3	Parts 19 24	燃料ホース
+T4	Parts 37 40	ホース
+R1	Coreference Arg1:T4 Arg2:T3	
+T5	Parts 41 44	接続部
+T6	Parts 87 89	燃料
+T7	Parts 98 101	接続部
+R2	Coreference Arg1:T7 Arg2:T5	
+T8	Parts 110 112	燃料
+R3	Coreference Arg1:T8 Arg2:T6	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T1 Arg2:T3	
+R6	Contact Arg1:T2 Arg2:T3	
+R7	Part-Whole Arg1:T5 Arg2:T4	
+R8	Contact Arg1:T6 Arg2:T3	

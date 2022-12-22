@@ -1,0 +1,19 @@
+T1	Parts 0 10	排出ガス発散防止装置
+T2	Parts 117 123	２次エア配管
+T5	Parts 11 18	２次エアポンプ
+T6	Parts 25 28	ポンプ
+T7	Parts 97 100	ポンプ
+T8	Parts 101 108	ポンプモーター
+T9	Parts 149 152	ポンプ
+T10	Parts 33 36	リレー
+T11	Parts 130 133	警告灯
+R1	Coreference Arg1:T6 Arg2:T5	
+R5	Part-Whole Arg1:T8 Arg2:T7	
+R6	Coreference Arg1:T9 Arg2:T7	
+R7	Coreference Arg1:T7 Arg2:T6	
+R8	Connect Arg1:T10 Arg2:T6	
+R9	Connect Arg1:T2 Arg2:T5	
+R10	Part-Whole Arg1:T5 Arg2:T1	
+R11	Part-Whole Arg1:T2 Arg2:T1	
+R12	Connect Arg1:T11 Arg2:T2	
+R13	Connect Arg1:T8 Arg2:T10	

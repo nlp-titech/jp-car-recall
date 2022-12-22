@@ -1,0 +1,13 @@
+T1	Parts 57 66	パワーステアリング
+T2	Parts 80 89	パワーステアリング
+T3	Parts 0 6	かじ取り装置
+T4	Parts 7 13	ギヤボックス
+T5	Parts 48 53	調整ナット
+T6	Parts 17 21	シャフト
+T7	Parts 67 70	作動油
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Connect Arg1:T3 Arg2:T1	
+R3	Part-Whole Arg1:T4 Arg2:T3	
+R4	Part-Whole Arg1:T6 Arg2:T4	
+R5	Contact Arg1:T6 Arg2:T5	
+R6	Contact Arg1:T1 Arg2:T7	

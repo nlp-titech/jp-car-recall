@@ -1,0 +1,19 @@
+T1	Parts 57 63	シートベルト
+T4	Parts 66 69	カバー
+T5	Parts 48 50	座席
+T6	Parts 70 72	座席
+T7	Parts 8 19	乗用車（オープンカー）
+T3	Parts 33 37	幌カバー
+R1	Part-Whole Arg1:T3 Arg2:T2	
+R2	Coreference Arg1:T3 Arg2:T4	
+R3	Coreference Arg1:T5 Arg2:T6	
+R4	Contact Arg1:T5 Arg2:T1	
+R5	Part-Whole Arg1:T5 Arg2:T7	
+T2	Parts 1 5	電動式幌
+R6	Part-Whole Arg1:T2 Arg2:T7	
+T8	Parts 24 25	幌
+R7	Coreference Arg1:T2 Arg2:T8	
+T9	Parts 73 77	背もたれ
+R8	Part-Whole Arg1:T9 Arg2:T6	
+R9	Part-Whole Arg1:T1 Arg2:T7	
+R10	Contact Arg1:T8 Arg2:T3	

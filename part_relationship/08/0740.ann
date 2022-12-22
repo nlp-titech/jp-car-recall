@@ -1,0 +1,13 @@
+T10	Parts 104 106	車輪
+T11	Parts 20 30	リヤアクスルシャフト
+T12	Parts 66 72	ロックナット
+T13	Parts 94 100	ロックナット
+T1	Parts 6 15	後軸用動力伝達装置
+R1	Coreference Arg1:T13 Arg2:T12	
+T2	Parts 0 5	４輪駆動車
+R2	Part-Whole Arg1:T1 Arg2:T2	
+R3	Part-Whole Arg1:T11 Arg2:T1	
+R4	Contact Arg1:T12 Arg2:T11	
+R5	Part-Whole Arg1:T10 Arg2:T1	
+T3	Parts 183 185	車両
+R6	Coreference Arg1:T3 Arg2:T2	

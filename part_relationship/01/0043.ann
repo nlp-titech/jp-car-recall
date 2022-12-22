@@ -1,0 +1,13 @@
+T13	Parts 22 28	動力伝達装置
+T14	Parts 48 56	プロペラシャフト
+T15	Parts 74 82	プロペラシャフト
+T16	Parts 133 141	プロペラシャフト
+T17	Parts 149 156	燃料噴射ポンプ
+R1	Coreference Arg1:T14 Arg2:T15	
+T2	Parts 15 17	車両
+T3	Parts 107 110	対象車
+R3	Part-Whole Arg1:T13 Arg2:T2	
+R4	Part-Whole Arg1:T14 Arg2:T13	
+R5	Coreference Arg1:T2 Arg2:T3	
+R6	Coreference Arg1:T15 Arg2:T16	
+R7	Part-Whole Arg1:T17 Arg2:T3	

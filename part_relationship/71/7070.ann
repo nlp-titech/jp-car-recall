@@ -1,0 +1,17 @@
+T1	Parts 64 71	エンジンオイル
+T2	Parts 107 123	バルブアジャスティングスクリュー
+T5	Parts 55 62	タペットカバー
+T6	Parts 17 24	タペットカバー
+T8	Parts 124 127	ナット
+T11	Parts 170 173	バルブ
+T12	Parts 25 32	締め付けボルト
+T13	Parts 0 3	原動機
+T14	Parts 81 84	原動機
+R1	Contact Arg1:T6 Arg2:T12	
+R2	Part-Whole Arg1:T6 Arg2:T13	
+R3	Coreference Arg1:T6 Arg2:T5	
+R4	Coreference Arg1:T13 Arg2:T14	
+R5	Contact Arg1:T1 Arg2:T5	
+R6	Contact Arg1:T2 Arg2:T8	
+R7	Part-Whole Arg1:T2 Arg2:T13	
+R8	Part-Whole Arg1:T2 Arg2:T11	

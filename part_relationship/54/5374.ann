@@ -1,0 +1,11 @@
+T1	Parts 11 21	コントロールユニット
+T2	Parts 0 10	高輝度放電灯式前照灯
+T3	Parts 22 25	カバー
+T4	Parts 38 41	カバー
+T5	Parts 81 84	レンズ
+T6	Parts 70 73	前照灯
+R1	Part-Whole Arg1:T1 Arg2:T2	
+R2	Part-Whole Arg1:T3 Arg2:T1	
+R3	Coreference Arg1:T3 Arg2:T4	
+R4	Coreference Arg1:T2 Arg2:T6	
+R5	Part-Whole Arg1:T5 Arg2:T6	

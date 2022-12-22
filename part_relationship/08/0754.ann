@@ -1,0 +1,8 @@
+T8	Parts 31 36	オーリング
+T1	Parts 0 4	燃料配管
+T2	Parts 24 27	遮断弁
+T4	Parts 93 95	燃料
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R1	Contact Arg1:T8 Arg2:T2	
+R3	Contact Arg1:T4 Arg2:T1	
+R4	Part-Whole Arg1:T8 Arg2:T1	

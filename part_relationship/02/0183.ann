@@ -1,0 +1,11 @@
+T8	Parts 11 19	プロペラシャフト
+T9	Parts 24 38	センターベアリングブラケット
+T10	Parts 53 61	プロペラシャフト
+T11	Parts 97 105	プロペラシャフト
+T1	Parts 0 6	動力伝達装置
+R1	Coreference Arg1:T10 Arg2:T8	
+R2	Coreference Arg1:T11 Arg2:T10	
+R3	Part-Whole Arg1:T8 Arg2:T1	
+R4	Contact Arg1:T8 Arg2:T9	
+T2	Parts 106 111	スプライン
+R5	Part-Whole Arg1:T2 Arg2:T11	

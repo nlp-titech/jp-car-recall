@@ -1,0 +1,16 @@
+T1	Parts 21 27	フロアパネル
+T2	Parts 63 69	フロアパネル
+T3	Parts 117 123	フロアパネル
+T5	Parts 127 132	燃料タンク
+T6	Parts 32 43	燃料タンク（ガス容器）
+T7	Parts 0 4	天然ガス
+T10	Parts 18 20	車両
+T4	Parts 5 9	ガソリン
+R1	Coreference Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T3 Arg2:T2	
+R3	Coreference Arg1:T5 Arg2:T6	
+R4	Part-Whole Arg1:T4 Arg2:T10	
+R5	Part-Whole Arg1:T7 Arg2:T6	
+R6	Part-Whole Arg1:T1 Arg2:T10	
+R7	Contact Arg1:T6 Arg2:T1	
+R8	Part-Whole Arg1:T6 Arg2:T10	

@@ -1,0 +1,9 @@
+T12	Parts 69 74	ロック機構
+T13	Parts 75 79	ヒューズ
+T1	Parts 0 13	離席時走行・荷役ロック機構
+T2	Parts 18 24	作業機操作弁
+T3	Parts 25 30	電磁バルブ
+R1	Coreference Arg1:T12 Arg2:T1	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T3 Arg2:T2	
+R4	Part-Whole Arg1:T13 Arg2:T12	

@@ -1,0 +1,13 @@
+T1	Parts 0 2	ＥＶ
+T2	Parts 3 13	バッテリ管理システム
+T3	Parts 33 40	制御プログラム
+T4	Parts 95 102	バッテリ警告灯
+T5	Parts 110 113	モータ
+T6	Parts 121 123	車両
+R1	Part-Whole Arg1:T3 Arg2:T2	
+R2	Part-Whole Arg1:T1 Arg2:T6	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T4 Arg2:T6	
+R5	Part-Whole Arg1:T5 Arg2:T6	
+R6	Connect Arg1:T1 Arg2:T4	
+R7	Connect Arg1:T1 Arg2:T5	

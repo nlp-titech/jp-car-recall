@@ -1,0 +1,9 @@
+T12	Parts 14 17	排気管
+T13	Parts 43 47	フランジ
+T14	Parts 81 84	排気管
+T1	Parts 0 9	圧縮天然ガス自動車
+T2	Parts 39 42	排気管
+R1	Coreference Arg1:T2 Arg2:T12	
+R2	Coreference Arg1:T14 Arg2:T2	
+R3	Contact Arg1:T13 Arg2:T2	
+R4	Part-Whole Arg1:T12 Arg2:T1	

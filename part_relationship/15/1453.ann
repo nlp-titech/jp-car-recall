@@ -1,0 +1,14 @@
+T14	Parts 121 122	扉
+T15	Parts 102 107	ブラケット
+T16	Parts 48 55	固定ブラケット
+T17	Parts 45 47	支柱
+T1	Parts 0 12	大型路線ノンステップバス
+T2	Parts 13 24	グライドスライド式前扉
+T3	Parts 29 40	ガイドローラブラケット
+R2	Coreference Arg1:T16 Arg2:T15	
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T3 Arg2:T2	
+R4	Part-Whole Arg1:T17 Arg2:T3	
+R5	Contact Arg1:T16 Arg2:T17	
+R6	Coreference Arg1:T2 Arg2:T14	
+R7	Part-Whole Arg1:T16 Arg2:T3	

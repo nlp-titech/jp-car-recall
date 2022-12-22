@@ -1,0 +1,18 @@
+T1	Parts 38 50	パワーステアリングホース
+T2	Parts 108 120	パワーステアリングホース
+T3	Parts 13 20	メインハーネス
+T4	Parts 0 8	農耕用トラクタ－
+T5	Parts 33 37	ハーネス
+T6	Parts 101 105	ハーネス
+T7	Parts 51 55	フレーム
+T8	Parts 130 133	オイル
+T10	Parts 57 63	原動機遮熱板
+R1	Coreference Arg1:T5 Arg2:T3	
+R2	Coreference Arg1:T6 Arg2:T5	
+R3	Coreference Arg1:T2 Arg2:T1	
+R4	Contact Arg1:T7 Arg2:T1	
+R5	Contact Arg1:T8 Arg2:T2	
+R6	Part-Whole Arg1:T3 Arg2:T4	
+R7	Part-Whole Arg1:T1 Arg2:T4	
+R8	Part-Whole Arg1:T7 Arg2:T4	
+R9	Part-Whole Arg1:T10 Arg2:T4	

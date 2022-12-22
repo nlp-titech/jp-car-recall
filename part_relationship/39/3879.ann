@@ -1,0 +1,26 @@
+T1	Parts 8 15	メインハーネス
+T2	Parts 0 7	制動灯スイッチ
+T3	Parts 59 66	制動灯スイッチ
+T4	Parts 103 110	制動灯スイッチ
+T5	Parts 126 130	ヒューズ
+T6	Parts 20 23	カプラ
+T7	Parts 36 39	カプラ
+T8	Parts 140 143	制動灯
+T9	Parts 136 139	前照灯
+T11	Parts 52 54	芯線
+T12	Parts 48 50	電線
+T13	Parts 144 146	尾灯
+R1	Coreference Arg1:T7 Arg2:T6	
+R2	Contact Arg1:T6 Arg2:T2	
+R3	Contact Arg1:T6 Arg2:T1	
+R4	Coreference Arg1:T4 Arg2:T3	
+R5	Coreference Arg1:T3 Arg2:T2	
+R6	Connect Arg1:T1 Arg2:T2	
+R7	Part-Whole Arg1:T11 Arg2:T12	
+R8	Contact Arg1:T12 Arg2:T7	
+R9	Contact Arg1:T3 Arg2:T12	
+R12	Connect Arg1:T9 Arg2:T5	
+R13	Connect Arg1:T8 Arg2:T5	
+R14	Connect Arg1:T13 Arg2:T5	
+R15	Connect Arg1:T8 Arg2:T4	
+R10	Connect Arg1:T4 Arg2:T5	

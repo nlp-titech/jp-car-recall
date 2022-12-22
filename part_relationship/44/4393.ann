@@ -1,0 +1,12 @@
+T1	Parts 1 6	バッテリー
+T2	Parts 42 50	バッテリー取付台
+T3	Parts 8 19	始動装置（スターター）
+T5	Parts 27 31	電気配線
+T6	Parts 82 86	電気配線
+R1	Contact Arg1:T5 Arg2:T1	
+R2	Contact Arg1:T5 Arg2:T3	
+R3	Connect Arg1:T3 Arg2:T1	
+R4	Contact Arg1:T1 Arg2:T2	
+R5	Coreference Arg1:T5 Arg2:T6	
+T4	Parts 87 89	被覆
+R6	Part-Whole Arg1:T4 Arg2:T6	

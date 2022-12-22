@@ -1,0 +1,9 @@
+T1	Parts 0 7	ショベルローダ
+T2	Parts 12 19	アクセルペダル
+T3	Parts 37 44	アクセルペダル
+T4	Parts 62 66	アクセル
+T5	Parts 84 88	アクセル
+R1	Part-Whole Arg1:T3 Arg2:T4	
+R2	Coreference Arg1:T5 Arg2:T4	
+R3	Coreference Arg1:T3 Arg2:T2	
+R4	Part-Whole Arg1:T4 Arg2:T1	

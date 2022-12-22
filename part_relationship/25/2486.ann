@@ -1,0 +1,16 @@
+T12	Parts 43 46	レンズ
+T13	Parts 47 49	ねじ
+T14	Parts 25 32	樹脂製ワッシャ
+T15	Parts 97 100	レンズ
+T16	Parts 13 16	レンズ
+T17	Parts 22 24	ねじ
+T1	Parts 3 8	方向指示器
+R1	Coreference Arg1:T12 Arg2:T16	
+R2	Coreference Arg1:T13 Arg2:T17	
+R3	Coreference Arg1:T15 Arg2:T12	
+R4	Part-Whole Arg1:T16 Arg2:T1	
+R5	Contact Arg1:T17 Arg2:T16	
+R6	Contact Arg1:T14 Arg2:T17	
+R7	Part-Whole Arg1:T17 Arg2:T1	
+R8	Part-Whole Arg1:T14 Arg2:T1	
+R9	Contact Arg1:T16 Arg2:T14	

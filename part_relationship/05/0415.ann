@@ -1,0 +1,18 @@
+T15	Parts 16 32	灯火装置等回路ヒュージブルリンク
+T1	Parts 7 11	電気装置
+T3	Parts 113 116	前照灯
+T4	Parts 117 120	車幅灯
+T5	Parts 121 124	制動灯
+T6	Parts 125 132	非常点滅表示灯
+T7	Parts 133 136	警音器
+T8	Parts 137 142	デフロスタ
+T9	Parts 0 6	高規格救急車
+R1	Part-Whole Arg1:T1 Arg2:T9	
+R3	Part-Whole Arg1:T15 Arg2:T9	
+R12	Connect Arg1:T1 Arg2:T15	
+R6	Part-Whole Arg1:T3 Arg2:T1	
+R7	Part-Whole Arg1:T4 Arg2:T1	
+R8	Part-Whole Arg1:T5 Arg2:T1	
+R9	Part-Whole Arg1:T6 Arg2:T1	
+R10	Part-Whole Arg1:T7 Arg2:T1	
+R11	Part-Whole Arg1:T8 Arg2:T1	

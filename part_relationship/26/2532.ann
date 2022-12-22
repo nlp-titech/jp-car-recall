@@ -1,0 +1,11 @@
+T8	Parts 79 83	エンジン
+T9	Parts 61 68	アクセルセンサ
+T1	Parts 0 4	アクセル
+T2	Parts 12 16	制御配線
+R1	Connect Arg1:T1 Arg2:T8	
+R3	Part-Whole Arg1:T9 Arg2:T1	
+#1	AnnotatorNotes T1	アクセルペダルの事ではなく加速構造自体を指す
+T3	Parts 35 40	ジョイント
+R2	Connect Arg1:T1 Arg2:T2	
+R5	Contact Arg1:T2 Arg2:T3	
+R6	Connect Arg1:T9 Arg2:T8	

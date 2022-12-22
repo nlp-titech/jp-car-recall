@@ -1,0 +1,8 @@
+T1	Parts 8 15	プッシュロッド
+T2	Parts 0 7	ブレーキペダル
+T4	Parts 46 50	ブレーキ
+T3	Parts 19 25	固定クリップ
+R2	Contact Arg1:T2 Arg2:T1	
+R3	Contact Arg1:T1 Arg2:T3	
+R4	Contact Arg1:T2 Arg2:T3	
+R1	Connect Arg1:T4 Arg2:T2	

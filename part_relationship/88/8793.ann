@@ -1,0 +1,16 @@
+T1	Parts 0 21	マイルドハイブリッド電気自動車（ＭＨＥＶ）
+T2	Parts 22 33	ＤＣ－ＤＣコンバーター
+T3	Parts 38 45	制御プログラム
+T4	Parts 53 64	ＤＣ－ＤＣコンバーター
+T5	Parts 74 80	トランジスタ
+T6	Parts 102 108	トランジスタ
+T7	Parts 113 117	メーター
+T8	Parts 118 125	バッテリー警告
+R1	Coreference Arg1:T2 Arg2:T4	
+R2	Coreference Arg1:T5 Arg2:T6	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T3 Arg2:T2	
+R5	Part-Whole Arg1:T5 Arg2:T4	
+R6	Part-Whole Arg1:T7 Arg2:T1	
+R7	Part-Whole Arg1:T8 Arg2:T7	
+R8	Connect Arg1:T4 Arg2:T7	

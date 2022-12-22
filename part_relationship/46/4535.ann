@@ -1,0 +1,12 @@
+T1	Parts 81 88	ブレーキオイル
+T2	Parts 27 34	ブレーキパイプ
+T3	Parts 69 76	ブレーキパイプ
+T4	Parts 0 6	かじ取り装置
+T5	Parts 7 18	ステアリング・シャフト
+T8	Parts 23 26	ボルト
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Contact Arg1:T3 Arg2:T1	
+R3	Part-Whole Arg1:T5 Arg2:T4	
+T6	Parts 19 21	継手
+R4	Part-Whole Arg1:T6 Arg2:T5	
+R5	Contact Arg1:T6 Arg2:T8	

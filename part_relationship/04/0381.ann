@@ -1,0 +1,10 @@
+T1	Parts 0 6	かじ取り装置
+T4	Parts 31 39	ボールジョイント
+R1	Part-Whole Arg1:T4 Arg2:T1	
+T2	Parts 11 16	タイロッド
+T3	Parts 17 21	ナックル
+R2	Contact Arg1:T3 Arg2:T4	
+R3	Contact Arg1:T2 Arg2:T4	
+R4	Contact Arg1:T2 Arg2:T3	
+T5	Parts 71 73	継手
+R5	Coreference Arg1:T4 Arg2:T5	

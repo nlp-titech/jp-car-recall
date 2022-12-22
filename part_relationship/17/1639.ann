@@ -1,0 +1,11 @@
+T16	Parts 87 91	クラッチ
+T17	Parts 79 82	レバー
+T18	Parts 44 47	レバー
+T19	Parts 35 39	クラッチ
+T20	Parts 11 22	クラッチレリーズレバー
+T1	Parts 0 6	動力伝達装置
+R1	Coreference Arg1:T20 Arg2:T18	
+R2	Coreference Arg1:T18 Arg2:T17	
+R3	Coreference Arg1:T19 Arg2:T16	
+R4	Connect Arg1:T19 Arg2:T20	
+R5	Part-Whole Arg1:T19 Arg2:T1	

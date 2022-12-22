@@ -1,0 +1,12 @@
+T13	Parts 56 61	方向指示器
+T15	Parts 97 102	方向指示器
+T1	Parts 0 5	方向指示器
+T2	Parts 10 17	制御用電気回路
+T3	Parts 29 42	非常点滅表示灯操作スイッチ
+T7	Parts 84 88	制御回路
+R1	Coreference Arg1:T2 Arg2:T7	
+R2	Coreference Arg1:T15 Arg2:T13	
+R3	Coreference Arg1:T13 Arg2:T1	
+R6	Connect Arg1:T2 Arg2:T3	
+R5	Connect Arg1:T3 Arg2:T1	
+R4	Connect Arg1:T2 Arg2:T1	

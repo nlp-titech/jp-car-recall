@@ -1,0 +1,27 @@
+T14	Parts 6 20	減圧弁付燃料フィラーキャップ
+T15	Parts 25 28	減圧弁
+T16	Parts 62 65	減圧弁
+T17	Parts 83 86	減圧弁
+T18	Parts 147 155	フィラーキャップ
+T19	Parts 104 118	燃料注入口（フィラーネック）
+T20	Parts 162 169	フィラーネック
+R1	Coreference Arg1:T16 Arg2:T15	
+R2	Coreference Arg1:T17 Arg2:T16	
+T1	Parts 88 90	燃料
+R4	Coreference Arg1:T18 Arg2:T14	
+R5	Coreference Arg1:T20 Arg2:T19	
+T3	Parts 188 190	燃料
+T4	Parts 250 257	フィラーネック
+R6	Coreference Arg1:T4 Arg2:T20	
+T6	Parts 286 294	フィラーキャップ
+R8	Coreference Arg1:T6 Arg2:T18	
+R10	Part-Whole Arg1:T15 Arg2:T14	
+R13	Coreference Arg1:T1 Arg2:T3	
+T7	Parts 0 5	燃料注入口
+T8	Parts 245 246	車
+R3	Coreference Arg1:T7 Arg2:T19	
+R7	Part-Whole Arg1:T4 Arg2:T8	
+R9	Part-Whole Arg1:T18 Arg2:T8	
+R12	Part-Whole Arg1:T3 Arg2:T8	
+R11	Contact Arg1:T7 Arg2:T1	
+R14	Contact Arg1:T7 Arg2:T14	

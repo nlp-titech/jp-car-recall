@@ -1,0 +1,17 @@
+T2	Parts 108 116	ドライブチェーン
+T3	Parts 13 20	スイングアーム
+T4	Parts 24 27	カラー
+T5	Parts 53 56	ボルト
+T6	Parts 88 91	ボルト
+T1	Parts 0 11	ドライブチェーンガード
+R1	Contact Arg1:T4 Arg2:T3	
+R3	Contact Arg1:T5 Arg2:T4	
+R4	Coreference Arg1:T5 Arg2:T6	
+R5	Contact Arg1:T2 Arg2:T1	
+R2	Contact Arg1:T4 Arg2:T1	
+R6	Contact Arg1:T1 Arg2:T5	
+R7	Contact Arg1:T3 Arg2:T5	
+T7	Parts 129 132	ガード
+R8	Coreference Arg1:T1 Arg2:T8	
+T8	Parts 98 101	ガード
+R9	Coreference Arg1:T8 Arg2:T7	

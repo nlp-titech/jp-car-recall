@@ -1,0 +1,5 @@
+T1	Parts 0 10	バス用アルミホイール
+T2	Parts 32 36	ホイール
+T4	Parts 76 80	ホイール
+R1	Coreference Arg1:T4 Arg2:T2	
+R2	Coreference Arg1:T2 Arg2:T1	

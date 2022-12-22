@@ -1,0 +1,15 @@
+T1	Parts 44 54	４連ソレノイドバルブ
+T2	Parts 7 14	クレーン用台車
+T3	Parts 15 23	ステアリング装置
+T5	Parts 136 142	ステアリング
+T6	Parts 114 117	バルブ
+T8	Parts 28 36	後軸ステアリング
+T9	Parts 130 132	後軸
+T10	Parts 0 2	車軸
+R1	Oneway-Coreference Arg1:T10 Arg2:T9	
+R2	Part-Whole Arg1:T10 Arg2:T2	
+R3	Part-Whole Arg1:T3 Arg2:T2	
+R4	Part-Whole Arg1:T8 Arg2:T3	
+R5	Connect Arg1:T8 Arg2:T1	
+R6	Coreference Arg1:T1 Arg2:T6	
+R7	Oneway-Coreference Arg1:T8 Arg2:T5	

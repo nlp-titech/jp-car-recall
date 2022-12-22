@@ -1,0 +1,6 @@
+T1	Parts 0 10	作業機ケーブルガイド
+T2	Parts 26 34	変速機油圧ホース
+T3	Parts 37 44	ケーブルガイド
+R1	Coreference Arg1:T3 Arg2:T1	
+T4	Parts 76 84	変速機油圧ホース
+R2	Coreference Arg1:T4 Arg2:T2	

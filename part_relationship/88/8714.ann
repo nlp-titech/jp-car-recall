@@ -1,0 +1,7 @@
+T2	Parts 13 18	第２ラッチ
+T3	Parts 67 72	第１ラッチ
+T4	Parts 80 85	第２ラッチ
+T5	Parts 102 109	トランクフード
+R1	Coreference Arg1:T2 Arg2:T4	
+R2	Contact Arg1:T4 Arg2:T5	
+R3	Contact Arg1:T3 Arg2:T5	

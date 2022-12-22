@@ -1,0 +1,9 @@
+T5	Parts 31 35	モーター
+T6	Parts 89 93	モーター
+T1	Parts 0 10	エアコンディショナー
+T2	Parts 11 18	送風用モーター
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T2 Arg2:T5	
+T3	Parts 63 73	エアコンディショナー
+R3	Coreference Arg1:T1 Arg2:T3	
+R4	Coreference Arg1:T5 Arg2:T6	

@@ -1,0 +1,9 @@
+T1	Parts 0 3	採血車
+T2	Parts 4 15	オルタネータ用ハーネス
+T3	Parts 38 42	ハーネス
+R1	Coreference Arg1:T2 Arg2:T3	
+T4	Parts 43 58	排気ガス再循環（ＥＧＲ）クーラ
+T5	Parts 92 96	ハーネス
+R2	Coreference Arg1:T3 Arg2:T5	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T4 Arg2:T1	

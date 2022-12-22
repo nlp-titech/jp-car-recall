@@ -1,0 +1,21 @@
+T13	Parts 26 34	タイミングベルト
+T16	Parts 35 49	張力調整装置（テンショナー）
+T17	Parts 21 25	エンジン
+T14	Parts 87 90	ベルト
+T18	Parts 64 67	ベルト
+T19	Parts 114 117	ベルト
+T20	Parts 91 101	クランクスプロケット
+T23	Parts 133 137	エンジン
+R1	Coreference Arg1:T18 Arg2:T13	
+R2	Coreference Arg1:T14 Arg2:T18	
+R3	Coreference Arg1:T19 Arg2:T14	
+R4	Coreference Arg1:T23 Arg2:T17	
+T2	Parts 6 16	手動５速ミッション車
+R5	Part-Whole Arg1:T17 Arg2:T2	
+R6	Part-Whole Arg1:T13 Arg2:T17	
+R7	Part-Whole Arg1:T16 Arg2:T17	
+R8	Contact Arg1:T20 Arg2:T14	
+T1	Parts 0 3	ターボ
+R9	Part-Whole Arg1:T1 Arg2:T2	
+R10	Contact Arg1:T16 Arg2:T13	
+R11	Connect Arg1:T17 Arg2:T1	

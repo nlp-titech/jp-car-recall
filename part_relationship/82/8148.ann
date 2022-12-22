@@ -1,0 +1,7 @@
+T1	Parts 0 12	ダッシュパネルインサート
+T2	Parts 17 27	コントロールユニット
+T3	Parts 41 47	シートベルト
+T4	Parts 52 61	シートベルト警告灯
+R1	Connect Arg1:T2 Arg2:T1	
+R2	Connect Arg1:T3 Arg2:T2	
+R3	Connect Arg1:T4 Arg2:T2	

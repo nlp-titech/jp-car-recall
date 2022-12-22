@@ -1,0 +1,16 @@
+T1	Parts 0 15	変速モード切り替えスイッチ配線
+T2	Parts 30 32	配線
+T4	Parts 38 40	裸線
+T5	Parts 42 47	操作レバー
+T6	Parts 72 74	配線
+R1	Coreference Arg1:T6 Arg2:T2	
+T7	Parts 81 85	ヒューズ
+T8	Parts 99 106	変速位置表示灯
+T9	Parts 107 110	後退灯
+R4	Part-Whole Arg1:T4 Arg2:T2	
+T10	Parts 16 18	配線
+R2	Coreference Arg1:T1 Arg2:T10	
+R6	Coreference Arg1:T10 Arg2:T2	
+R3	Connect Arg1:T7 Arg2:T8	
+R7	Connect Arg1:T7 Arg2:T9	
+R5	Contact Arg1:T6 Arg2:T7	

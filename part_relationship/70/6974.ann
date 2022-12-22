@@ -1,0 +1,13 @@
+T1	Parts 0 12	大型観光及び高速路線バス
+T3	Parts 36 41	灯具ケース
+T4	Parts 53 56	ケース
+T5	Parts 24 26	車両
+T6	Parts 13 19	間接室内照明
+T7	Parts 31 35	室内照明
+T8	Parts 93 97	室内照明
+R2	Coreference Arg1:T6 Arg2:T7	
+R3	Coreference Arg1:T3 Arg2:T4	
+R4	Coreference Arg1:T6 Arg2:T8	
+R1	Part-Whole Arg1:T6 Arg2:T1	
+R6	Coreference Arg1:T1 Arg2:T5	
+R5	Part-Whole Arg1:T3 Arg2:T7	

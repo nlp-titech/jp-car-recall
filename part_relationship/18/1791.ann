@@ -1,0 +1,13 @@
+T11	Parts 17 22	ガスケット
+T12	Parts 45 50	ガスケット
+T13	Parts 33 39	取付けボルト
+R1	Coreference Arg1:T11 Arg2:T12	
+T2	Parts 102 104	燃料
+R4	Contact Arg1:T11 Arg2:T13	
+T1	Parts 0 15	エンジン燃料低圧配管用コネクタ
+R2	Contact Arg1:T1 Arg2:T11	
+T3	Parts 95 99	コネクタ
+R7	Contact Arg1:T3 Arg2:T2	
+R8	Coreference Arg1:T3 Arg2:T1	
+R3	Contact Arg1:T1 Arg2:T13	
+R5	Contact Arg1:T12 Arg2:T2	

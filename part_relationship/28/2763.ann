@@ -1,0 +1,18 @@
+T16	Parts 38 48	ロックアップクラッチ
+T18	Parts 100 103	ボルト
+T1	Parts 0 4	路線バス
+T2	Parts 5 10	自動変速機
+T3	Parts 15 26	トルクコンバータカバー
+T4	Parts 49 64	バッキングプレート取付けボルト
+R1	Coreference Arg1:T18 Arg2:T4	
+T5	Parts 104 115	トルクコンバータカバー
+R2	Coreference Arg1:T5 Arg2:T3	
+T6	Parts 116 120	タービン
+T7	Parts 134 142	トルクコンバータ
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R7	Contact Arg1:T16 Arg2:T4	
+R4	Part-Whole Arg1:T7 Arg2:T2	
+R5	Part-Whole Arg1:T16 Arg2:T7	
+R8	Part-Whole Arg1:T6 Arg2:T7	
+R9	Contact Arg1:T5 Arg2:T7	
+R6	Part-Whole Arg1:T3 Arg2:T2	

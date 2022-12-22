@@ -1,0 +1,15 @@
+T1	Parts 92 99	触媒コンバータ
+T2	Parts 4 8	点火系統
+T3	Parts 0 3	原動機
+T4	Parts 74 77	原動機
+T5	Parts 109 112	原動機
+T6	Parts 50 52	配管
+T7	Parts 13 20	点火用高圧配線
+T8	Parts 38 45	点火用高圧配線
+T9	Parts 59 66	点火用高圧配線
+R1	Coreference Arg1:T3 Arg2:T4	
+R2	Coreference Arg1:T4 Arg2:T5	
+R3	Coreference Arg1:T7 Arg2:T8	
+R4	Coreference Arg1:T8 Arg2:T9	
+R5	Connect Arg1:T3 Arg2:T2	
+R6	Contact Arg1:T2 Arg2:T7	

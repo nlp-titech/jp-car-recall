@@ -1,0 +1,13 @@
+T10	Parts 97 105	インフレータ容器
+T11	Parts 82 88	インフレータ
+T1	Parts 0 13	運転者席側ＳＲＳエアバッグ
+T2	Parts 14 26	インフレータ（膨張装置）
+T3	Parts 31 40	エアバッグ膨張ガス
+T4	Parts 49 53	仕切り板
+T5	Parts 73 78	エアバッグ
+R1	Coreference Arg1:T2 Arg2:T11	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T3 Arg2:T1	
+R4	Part-Whole Arg1:T4 Arg2:T2	
+R5	Coreference Arg1:T1 Arg2:T5	
+R6	Part-Whole Arg1:T10 Arg2:T11	

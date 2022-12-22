@@ -1,0 +1,5 @@
+T1	Parts 6 17	コントロール・ユニット
+T2	Parts 0 5	エアバッグ
+T3	Parts 58 63	エアバッグ
+R1	Connect Arg1:T1 Arg2:T2	
+R2	Coreference Arg1:T2 Arg2:T3	

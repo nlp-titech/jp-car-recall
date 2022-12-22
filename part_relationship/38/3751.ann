@@ -1,0 +1,7 @@
+T1	Parts 102 110	排気マニホールド
+T2	Parts 9 16	エンジンＥＣＵ
+T6	Parts 3 8	過給機付車
+T7	Parts 29 31	燃料
+R2	Part-Whole Arg1:T2 Arg2:T6	
+R3	Part-Whole Arg1:T1 Arg2:T6	
+R4	Part-Whole Arg1:T7 Arg2:T6	

@@ -1,0 +1,13 @@
+T2	Parts 0 9	スクリードステップ
+T3	Parts 43 47	ステップ
+T4	Parts 82 90	イグナイタカバー
+T5	Parts 91 101	スクリードカバー支柱
+T7	Parts 59 65	右スクリード
+T11	Parts 14 25	足乗り越え防止用蹴込板
+R1	Part-Whole Arg1:T11 Arg2:T2	
+R2	Coreference Arg1:T2 Arg2:T3	
+R3	Part-Whole Arg1:T2 Arg2:T7	
+T6	Parts 75 81	右スクリード
+R4	Coreference Arg1:T7 Arg2:T6	
+R5	Part-Whole Arg1:T4 Arg2:T6	
+R6	Contact Arg1:T4 Arg2:T5	

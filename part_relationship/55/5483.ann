@@ -1,0 +1,9 @@
+T1	Parts 30 37	メーターパネル
+T2	Parts 4 10	制御ユニット
+T4	Parts 24 27	速度計
+T5	Parts 0 3	電装品
+R3	Part-Whole Arg1:T1 Arg2:T4	
+R1	Connect Arg1:T5 Arg2:T2	
+R2	Oneway-Coreference Arg1:T5 Arg2:T1	
+T3	Parts 38 40	照明
+R4	Part-Whole Arg1:T3 Arg2:T1	

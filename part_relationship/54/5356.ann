@@ -1,0 +1,9 @@
+T2	Parts 0 29	ＡＢＳ（アンチロックブレーキシステム）コントロールユニット
+T3	Parts 42 47	バッテリー
+T4	Parts 65 69	ユニット
+T5	Parts 30 34	電気回路
+T6	Parts 102 105	ＡＢＳ
+R2	Part-Whole Arg1:T5 Arg2:T2	
+R3	Coreference Arg1:T2 Arg2:T4	
+R5	Connect Arg1:T3 Arg2:T5	
+R1	Connect Arg1:T4 Arg2:T6	

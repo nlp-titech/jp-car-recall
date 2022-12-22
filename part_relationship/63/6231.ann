@@ -1,0 +1,4 @@
+T1	Parts 0 11	リヤショックアブソーバ
+T2	Parts 91 100	ショックアブソーバ
+T3	Parts 101 107	ブレーキ配管
+R1	Coreference Arg1:T1 Arg2:T2	

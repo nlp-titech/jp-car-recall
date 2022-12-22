@@ -1,0 +1,12 @@
+T12	Parts 73 77	ブレーキ
+T14	Parts 139 146	ブレーキペダル
+T15	Parts 0 19	ＡＢＳ（アンチロックブレーキシステム）
+T16	Parts 35 38	ＡＢＳ
+T17	Parts 99 102	ＡＢＳ
+R1	Coreference Arg1:T17 Arg2:T16	
+R2	Coreference Arg1:T16 Arg2:T15	
+T1	Parts 20 27	制御プログラム
+R3	Part-Whole Arg1:T1 Arg2:T15	
+R4	Part-Whole Arg1:T15 Arg2:T12	
+R5	Connect Arg1:T12 Arg2:T14	
+R6	Connect Arg1:T16 Arg2:T12	

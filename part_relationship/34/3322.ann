@@ -1,0 +1,9 @@
+T14	Parts 0 10	スペアタイヤキャリア
+T15	Parts 58 68	スペアタイヤキャリア
+T16	Parts 15 18	フック
+T17	Parts 39 42	フック
+R1	Coreference Arg1:T16 Arg2:T17	
+R2	Coreference Arg1:T14 Arg2:T15	
+T1	Parts 82 88	スペアタイヤ
+R3	Contact Arg1:T15 Arg2:T1	
+R4	Contact Arg1:T14 Arg2:T16	

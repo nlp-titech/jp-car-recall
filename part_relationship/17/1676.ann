@@ -1,0 +1,15 @@
+T7	Parts 75 80	座席ベルト
+T8	Parts 96 101	座席ベルト
+T9	Parts 36 39	ベルト
+T10	Parts 40 44	バックル
+T11	Parts 20 25	座席ベルト
+T1	Parts 7 9	座席
+R1	Coreference Arg1:T11 Arg2:T9	
+T2	Parts 65 69	福祉車両
+R2	Coreference Arg1:T9 Arg2:T7	
+R3	Coreference Arg1:T7 Arg2:T8	
+R5	Contact Arg1:T10 Arg2:T9	
+R4	Contact Arg1:T1 Arg2:T11	
+R7	Part-Whole Arg1:T1 Arg2:T2	
+R6	Part-Whole Arg1:T7 Arg2:T2	
+R8	Part-Whole Arg1:T10 Arg2:T1	

@@ -1,0 +1,21 @@
+T1	Parts 0 5	自動変速機
+T2	Parts 6 18	シフトコントロールレバー
+T3	Parts 19 38	トランスミッションコントロールケーブル
+T4	Parts 43 46	ボルト
+T5	Parts 59 62	ボルト
+R1	Coreference Arg1:T4 Arg2:T5	
+T6	Parts 90 93	ボルト
+R2	Coreference Arg1:T5 Arg2:T6	
+T7	Parts 113 117	ケーブル
+R3	Coreference Arg1:T3 Arg2:T7	
+T8	Parts 126 129	シフト
+T9	Parts 135 141	シフトレバー
+T10	Parts 155 158	ボルト
+R4	Coreference Arg1:T6 Arg2:T10	
+T11	Parts 163 167	ケーブル
+R5	Coreference Arg1:T7 Arg2:T11	
+R6	Coreference Arg1:T2 Arg2:T9	
+R7	Part-Whole Arg1:T2 Arg2:T1	
+R8	Connect Arg1:T3 Arg2:T2	
+R9	Contact Arg1:T4 Arg2:T3	
+R10	Contact Arg1:T4 Arg2:T2	

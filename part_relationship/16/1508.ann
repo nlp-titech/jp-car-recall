@@ -1,0 +1,5 @@
+T11	Parts 24 29	エアバッグ
+T12	Parts 0 8	助手席エアバッグ
+T13	Parts 54 59	エアバッグ
+R1	Coreference Arg1:T11 Arg2:T12	
+R2	Coreference Arg1:T13 Arg2:T11	

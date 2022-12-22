@@ -1,0 +1,20 @@
+T10	Parts 0 6	キャブレター
+T11	Parts 40 46	キャブレター
+T12	Parts 54 60	キャブレター
+T13	Parts 67 73	キャブレター
+T14	Parts 62 66	フロート
+T15	Parts 114 120	キャブレター
+T1	Parts 7 9	燃料
+T2	Parts 24 31	サイドスタンド
+R1	Coreference Arg1:T12 Arg2:T11	
+R2	Coreference Arg1:T13 Arg2:T12	
+R3	Coreference Arg1:T15 Arg2:T13	
+T3	Parts 91 96	燃料タンク
+T4	Parts 99 101	燃料
+T5	Parts 122 124	燃料
+R4	Coreference Arg1:T5 Arg2:T4	
+R5	Coreference Arg1:T4 Arg2:T1	
+R6	Coreference Arg1:T11 Arg2:T10	
+R7	Contact Arg1:T10 Arg2:T1	
+R8	Part-Whole Arg1:T14 Arg2:T12	
+R9	Part-Whole Arg1:T4 Arg2:T3	

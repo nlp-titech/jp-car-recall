@@ -1,0 +1,9 @@
+T2	Parts 4 18	燃料ポンプフィルターフランジ
+T6	Parts 27 29	燃料
+T7	Parts 59 61	燃料
+T8	Parts 84 86	燃料
+R1	Coreference Arg1:T6 Arg2:T7	
+R2	Coreference Arg1:T7 Arg2:T8	
+R3	Contact Arg1:T2 Arg2:T6	
+T1	Parts 47 51	フランジ
+R4	Coreference Arg1:T2 Arg2:T1	

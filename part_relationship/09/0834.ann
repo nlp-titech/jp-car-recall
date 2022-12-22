@@ -1,0 +1,16 @@
+T1	Parts 0 12	エンジン用ワイヤハーネス
+T2	Parts 27 34	ワイヤハーネス
+T3	Parts 35 52	オルタネータ油圧ポンプ用ゴムホース
+T4	Parts 77 84	ワイヤハーネス
+R1	Coreference Arg1:T4 Arg2:T2	
+T5	Parts 85 87	被覆
+T6	Parts 100 106	金属クランプ
+T7	Parts 119 124	ゴムホース
+R2	Coreference Arg1:T7 Arg2:T3	
+R3	Coreference Arg1:T2 Arg2:T1	
+T8	Parts 53 59	金属クランプ
+R4	Coreference Arg1:T8 Arg2:T6	
+R5	Part-Whole Arg1:T5 Arg2:T4	
+T9	Parts 91 93	素線
+R6	Part-Whole Arg1:T9 Arg2:T4	
+R7	Part-Whole Arg1:T8 Arg2:T3	

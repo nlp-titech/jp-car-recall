@@ -1,0 +1,8 @@
+T11	Parts 13 16	駆動輪
+T12	Parts 17 26	ベアリンググリース
+T13	Parts 65 70	ベアリング
+T1	Parts 0 8	大型高速路線バス
+R1	Part-Whole Arg1:T11 Arg2:T1	
+R3	Contact Arg1:T12 Arg2:T13	
+R2	Contact Arg1:T11 Arg2:T12	
+R4	Part-Whole Arg1:T13 Arg2:T11	

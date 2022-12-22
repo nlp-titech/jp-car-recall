@@ -1,0 +1,23 @@
+T15	Parts 188 194	駐車ブレーキ
+T19	Parts 123 129	駐車ブレーキ
+T20	Parts 34 43	サポートブラケット
+T21	Parts 54 64	スイングロックポール
+T22	Parts 65 76	スイングロックプレート
+T23	Parts 100 111	スイングロックプレート
+T24	Parts 144 155	スイングロックプレート
+T1	Parts 0 6	駐車ブレーキ
+T2	Parts 10 12	車体
+T3	Parts 20 29	スイングロック機構
+R1	Coreference Arg1:T22 Arg2:T23	
+R2	Coreference Arg1:T1 Arg2:T19	
+R3	Coreference Arg1:T23 Arg2:T24	
+R5	Coreference Arg1:T19 Arg2:T15	
+T6	Parts 201 203	車体
+R4	Coreference Arg1:T2 Arg2:T6	
+R6	Part-Whole Arg1:T1 Arg2:T2	
+R7	Part-Whole Arg1:T3 Arg2:T2	
+R8	Part-Whole Arg1:T20 Arg2:T3	
+R9	Part-Whole Arg1:T21 Arg2:T3	
+R10	Part-Whole Arg1:T22 Arg2:T3	
+R11	Contact Arg1:T21 Arg2:T22	
+R12	Connect Arg1:T1 Arg2:T3	

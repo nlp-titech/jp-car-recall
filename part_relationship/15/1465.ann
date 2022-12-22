@@ -1,0 +1,24 @@
+T20	Parts 52 56	背もたれ
+T21	Parts 109 113	背もたれ
+T22	Parts 142 146	背もたれ
+T23	Parts 170 174	背もたれ
+T24	Parts 187 191	背もたれ
+T25	Parts 34 39	ロックピン
+T26	Parts 88 93	ロックピン
+T27	Parts 123 128	ロックピン
+T1	Parts 0 4	乗合バス
+T3	Parts 16 24	折りたたみ式座席
+T4	Parts 25 33	背もたれ固定機構
+R1	Coreference Arg1:T25 Arg2:T26	
+R2	Coreference Arg1:T20 Arg2:T5	
+R3	Coreference Arg1:T26 Arg2:T27	
+R4	Coreference Arg1:T21 Arg2:T22	
+R5	Coreference Arg1:T22 Arg2:T23	
+R6	Coreference Arg1:T23 Arg2:T24	
+R8	Part-Whole Arg1:T3 Arg2:T1	
+R9	Part-Whole Arg1:T4 Arg2:T3	
+R11	Contact Arg1:T20 Arg2:T4	
+R12	Part-Whole Arg1:T25 Arg2:T4	
+R13	Part-Whole Arg1:T20 Arg2:T3	
+T5	Parts 68 72	背もたれ
+R15	Coreference Arg1:T5 Arg2:T21	

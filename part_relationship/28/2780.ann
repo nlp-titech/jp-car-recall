@@ -1,0 +1,13 @@
+T12	Parts 92 97	ブラケット
+T13	Parts 38 46	マスターシリンダ
+T1	Parts 1 11	ディーゼルエンジン車
+T2	Parts 12 20	手動変速機搭載車
+T3	Parts 25 37	クラッチペダルブラケット
+T4	Parts 64 68	クラッチ
+R1	Coreference Arg1:T12 Arg2:T3	
+T5	Parts 108 112	クラッチ
+R2	Coreference Arg1:T5 Arg2:T4	
+R4	Part-Whole Arg1:T4 Arg2:T2	
+R6	Contact Arg1:T3 Arg2:T13	
+R3	Part-Whole Arg1:T13 Arg2:T2	
+R5	Connect Arg1:T13 Arg2:T4	

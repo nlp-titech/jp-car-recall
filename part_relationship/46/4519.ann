@@ -1,0 +1,12 @@
+T1	Parts 0 9	電動調整式運転者席
+T2	Parts 15 19	電気配線
+T3	Parts 43 51	シートメモリ装置
+T4	Parts 40 42	バネ
+T5	Parts 37 39	座席
+T7	Parts 34 36	配線
+T8	Parts 78 80	配線
+R1	Coreference Arg1:T2 Arg2:T7	
+R2	Coreference Arg1:T1 Arg2:T5	
+R3	Coreference Arg1:T7 Arg2:T8	
+R5	Part-Whole Arg1:T4 Arg2:T5	
+R6	Contact Arg1:T5 Arg2:T3	

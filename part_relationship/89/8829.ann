@@ -1,0 +1,11 @@
+T1	Parts 0 8	樹脂製燃料タンク
+T2	Parts 25 32	ブリーザパイプ
+T3	Parts 33 38	燃料タンク
+T4	Parts 69 71	車両
+T5	Parts 85 87	燃料
+T6	Parts 104 106	燃料
+R1	Coreference Arg1:T1 Arg2:T3	
+R2	Coreference Arg1:T5 Arg2:T6	
+R3	Part-Whole Arg1:T3 Arg2:T4	
+R4	Part-Whole Arg1:T5 Arg2:T3	
+R5	Contact Arg1:T2 Arg2:T3	

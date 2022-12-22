@@ -1,0 +1,11 @@
+T7	Parts 53 56	ボルト
+T9	Parts 101 109	チャイルドシート
+T1	Parts 0 20	年少者用補助乗車装置（チャイルドシート）
+T3	Parts 85 93	チャイルドシート
+R1	Coreference Arg1:T9 Arg2:T3	
+R2	Coreference Arg1:T1 Arg2:T3	
+T2	Parts 30 42	チャイルドシート取付装置
+R3	Contact Arg1:T2 Arg2:T1	
+R4	Contact Arg1:T7 Arg2:T2	
+T4	Parts 25 27	後席
+R6	Part-Whole Arg1:T2 Arg2:T4	

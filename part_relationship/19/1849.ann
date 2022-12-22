@@ -1,0 +1,5 @@
+T9	Parts 8 14	照明用反射板
+T10	Parts 0 7	スピードメータ
+T11	Parts 29 32	文字板
+R1	Part-Whole Arg1:T11 Arg2:T10	
+R2	Part-Whole Arg1:T9 Arg2:T10	

@@ -1,0 +1,16 @@
+T17	Parts 90 93	バルブ
+T18	Parts 94 101	エアフィルター
+T19	Parts 117 120	バルブ
+T20	Parts 162 169	エアスプリング
+T21	Parts 62 66	アクスル
+T1	Parts 0 42	リフトアクスル機構（空車時又は軽積載時に車軸が自動的に上昇する機構）付きセミトレーラ
+T3	Parts 43 52	エアサスペンション
+T4	Parts 75 82	サスペンション
+R1	Coreference Arg1:T3 Arg2:T4	
+R2	Coreference Arg1:T17 Arg2:T19	
+R3	Contact Arg1:T18 Arg2:T17	
+R10	Part-Whole Arg1:T3 Arg2:T1	
+R11	Part-Whole Arg1:T21 Arg2:T1	
+R12	Part-Whole Arg1:T17 Arg2:T4	
+R13	Part-Whole Arg1:T18 Arg2:T4	
+R4	Part-Whole Arg1:T20 Arg2:T4	

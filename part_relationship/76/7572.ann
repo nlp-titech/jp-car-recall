@@ -1,0 +1,13 @@
+T1	Parts 1 7	農耕トラクタ
+T2	Parts 8 13	前後進ギヤ
+T3	Parts 32 38	変速フォーク
+T4	Parts 39 42	カラー
+T5	Parts 74 80	変速フォーク
+T6	Parts 93 97	フォーク
+T7	Parts 102 107	前後進ギヤ
+R1	Coreference Arg1:T3 Arg2:T5	
+R2	Coreference Arg1:T5 Arg2:T6	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Coreference Arg1:T2 Arg2:T7	
+R5	Part-Whole Arg1:T3 Arg2:T2	
+R6	Part-Whole Arg1:T4 Arg2:T2	

@@ -1,0 +1,15 @@
+T10	Parts 94 100	トランスファ
+T11	Parts 38 46	インターナルギヤ
+T12	Parts 56 63	シールキャップ
+T1	Parts 0 16	オートマチックトランスミッション
+T2	Parts 21 26	四輪駆動車
+T3	Parts 73 93	オートマチックトランスミッションフルード
+R1	Part-Whole Arg1:T1 Arg2:T2	
+R3	Contact Arg1:T12 Arg2:T11	
+R4	Part-Whole Arg1:T3 Arg2:T1	
+R2	Connect Arg1:T10 Arg2:T3	
+T4	Parts 31 37	トランスファ
+R6	Part-Whole Arg1:T11 Arg2:T4	
+R5	Coreference Arg1:T10 Arg2:T4	
+R7	Part-Whole Arg1:T12 Arg2:T4	
+R8	Part-Whole Arg1:T4 Arg2:T1	

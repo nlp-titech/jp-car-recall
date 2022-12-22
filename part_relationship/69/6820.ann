@@ -1,0 +1,19 @@
+T1	Parts 33 45	ブレーキマスターシリンダ
+T2	Parts 46 54	リザーバータンク
+T3	Parts 132 139	ブレーキペダル
+T4	Parts 184 191	ブレーキペダル
+T5	Parts 172 179	ブレーキ警告灯
+T6	Parts 9 16	リザーバタンク
+T7	Parts 92 98	ゴム製シール
+T8	Parts 86 90	シリンダ
+T9	Parts 73 77	ブレーキ
+T10	Parts 0 4	制動装置
+R1	Coreference Arg1:T6 Arg2:T2	
+R2	Coreference Arg1:T10 Arg2:T9	
+R3	Part-Whole Arg1:T1 Arg2:T10	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Coreference Arg1:T1 Arg2:T8	
+R6	Part-Whole Arg1:T7 Arg2:T8	
+R8	Coreference Arg1:T3 Arg2:T4	
+R7	Part-Whole Arg1:T3 Arg2:T9	
+R9	Connect Arg1:T9 Arg2:T5	

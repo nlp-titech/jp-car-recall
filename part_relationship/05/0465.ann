@@ -1,0 +1,12 @@
+T12	Parts 31 39	変速段選択用ピン
+T13	Parts 60 62	ピン
+T14	Parts 94 97	変速機
+T1	Parts 0 6	動力伝達装置
+T2	Parts 11 16	変速レバー
+T3	Parts 20 23	変速機
+R1	Coreference Arg1:T12 Arg2:T13	
+R2	Coreference Arg1:T14 Arg2:T3	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Connect Arg1:T2 Arg2:T3	
+R5	Contact Arg1:T12 Arg2:T3	
+R6	Contact Arg1:T2 Arg2:T12	

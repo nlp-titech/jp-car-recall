@@ -1,0 +1,7 @@
+T1	Parts 3 11	ブレーキキャリパ
+T2	Parts 46 50	ブレーキ
+T4	Parts 18 21	ボルト
+T5	Parts 0 2	前輪
+R1	Contact Arg1:T4 Arg2:T1	
+R2	Part-Whole Arg1:T1 Arg2:T5	
+R3	Connect Arg1:T2 Arg2:T1	

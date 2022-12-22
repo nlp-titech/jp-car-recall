@@ -1,0 +1,13 @@
+T11	Parts 32 36	ウェッジ
+T12	Parts 40 43	ローラ
+T13	Parts 58 62	ウェッジ
+T14	Parts 79 83	ウエッジ
+T3	Parts 20 27	ブレーキシュー
+R1	Coreference Arg1:T13 Arg2:T11	
+T4	Parts 95 101	駐車ブレーキ
+R3	Coreference Arg1:T14 Arg2:T13	
+T1	Parts 0 15	スプリング式駐車ブレーキ装着車
+R2	Part-Whole Arg1:T4 Arg2:T1	
+R4	Part-Whole Arg1:T3 Arg2:T4	
+R5	Contact Arg1:T3 Arg2:T11	
+R6	Part-Whole Arg1:T12 Arg2:T11	

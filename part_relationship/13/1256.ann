@@ -1,0 +1,11 @@
+T18	Parts 0 12	無段変速機用電子制御装置
+T19	Parts 39 45	オイルポンプ
+T21	Parts 113 116	ベーン
+T22	Parts 144 150	オイルポンプ
+T2	Parts 26 31	無段変速機
+T5	Parts 66 79	オイルポンプベーン（羽根）
+R3	Coreference Arg1:T19 Arg2:T22	
+R1	Coreference Arg1:T5 Arg2:T21	
+R4	Connect Arg1:T18 Arg2:T2	
+R6	Part-Whole Arg1:T5 Arg2:T19	
+R2	Part-Whole Arg1:T19 Arg2:T2	

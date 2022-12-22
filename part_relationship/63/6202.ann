@@ -1,0 +1,9 @@
+T2	Parts 46 51	座席ベルト
+T3	Parts 81 86	座席ベルト
+T4	Parts 12 16	バックル
+T5	Parts 61 65	バックル
+T1	Parts 0 7	前席座席ベルト
+R1	Part-Whole Arg1:T4 Arg2:T1	
+R2	Coreference Arg1:T2 Arg2:T3	
+R3	Coreference Arg1:T4 Arg2:T5	
+R4	Coreference Arg1:T1 Arg2:T2	

@@ -1,0 +1,11 @@
+T1	Parts 1 13	電子制御エアコン装備車両
+T2	Parts 18 27	ヒーター・ユニット
+T3	Parts 52 61	ヒーター・ユニット
+T4	Parts 66 75	ボディ架装用配電盤
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T2 Arg2:T3	
+R4	Part-Whole Arg1:T4 Arg2:T1	
+T5	Parts 42 45	冷却水
+T6	Parts 76 79	冷却水
+R3	Coreference Arg1:T5 Arg2:T6	
+R5	Contact Arg1:T2 Arg2:T5	

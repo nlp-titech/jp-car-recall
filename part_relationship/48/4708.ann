@@ -1,0 +1,10 @@
+T1	Parts 4 16	スタビライザ・シャックル
+T2	Parts 45 51	取付けナット
+T3	Parts 25 28	ナット
+T4	Parts 0 3	後車軸
+T5	Parts 17 19	車体
+R1	Coreference Arg1:T3 Arg2:T2	
+R2	Contact Arg1:T4 Arg2:T1	
+R3	Contact Arg1:T1 Arg2:T3	
+R4	Contact Arg1:T5 Arg2:T3	
+R5	Connect Arg1:T1 Arg2:T5	

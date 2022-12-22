@@ -1,0 +1,11 @@
+T10	Parts 14 19	方向指示器
+T11	Parts 20 25	橙色レンズ
+T12	Parts 58 61	レンズ
+T13	Parts 84 89	白色バルブ
+T16	Parts 100 102	灯火
+T1	Parts 0 13	リヤコンビネーションランプ
+R1	Coreference Arg1:T12 Arg2:T11	
+R3	Part-Whole Arg1:T10 Arg2:T1	
+R4	Part-Whole Arg1:T11 Arg2:T10	
+R2	Coreference Arg1:T10 Arg2:T16	
+R5	Part-Whole Arg1:T13 Arg2:T10	

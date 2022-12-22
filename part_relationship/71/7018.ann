@@ -1,0 +1,11 @@
+T1	Parts 7 14	シートフレーム
+T3	Parts 0 6	シートベルト
+T4	Parts 91 97	シートベルト
+T5	Parts 30 35	取付ボルト
+T6	Parts 70 75	取付ボルト
+T7	Parts 84 89	取付ボルト
+R1	Contact Arg1:T1 Arg2:T5	
+R2	Contact Arg1:T3 Arg2:T5	
+R3	Coreference Arg1:T5 Arg2:T6	
+R4	Coreference Arg1:T6 Arg2:T7	
+R5	Coreference Arg1:T3 Arg2:T4	

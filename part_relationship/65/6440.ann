@@ -1,0 +1,18 @@
+T1	Parts 25 50	アンチロックブレーキシステム（ＡＢＳ）モジュレータ
+T2	Parts 132 142	コントロールユニット
+T3	Parts 105 114	ＡＢＳモジュレータ
+T4	Parts 17 24	メインハーネス
+T5	Parts 84 91	メインハーネス
+T6	Parts 151 157	ＡＢＳ警告灯
+T7	Parts 0 4	電気配線
+T8	Parts 163 166	ＡＢＳ
+R1	Part-Whole Arg1:T4 Arg2:T7	
+R4	Coreference Arg1:T4 Arg2:T5	
+R5	Coreference Arg1:T1 Arg2:T3	
+T9	Parts 123 129	モジュレータ
+R9	Coreference Arg1:T3 Arg2:T9	
+R6	Part-Whole Arg1:T2 Arg2:T9	
+R7	Connect Arg1:T2 Arg2:T6	
+R3	Connect Arg1:T2 Arg2:T8	
+T10	Parts 92 94	被覆
+R2	Part-Whole Arg1:T10 Arg2:T5	

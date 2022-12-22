@@ -1,0 +1,9 @@
+T1	Parts 55 64	スロットル・バルブ
+T4	Parts 0 3	原動機
+T5	Parts 72 75	原動機
+T2	Parts 4 11	吸入空気質量計
+T6	Parts 12 17	整流ネット
+R1	Coreference Arg1:T4 Arg2:T5	
+R2	Part-Whole Arg1:T2 Arg2:T4	
+R3	Part-Whole Arg1:T6 Arg2:T2	
+R4	Part-Whole Arg1:T1 Arg2:T4	

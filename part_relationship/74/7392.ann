@@ -1,0 +1,11 @@
+T1	Parts 0 13	機械式自動変速機（ＡＧＳ）
+T2	Parts 14 16	ギヤ
+T3	Parts 29 41	アンチローテーションピン
+T4	Parts 53 65	アンチローテーションピン
+T5	Parts 100 112	アンチローテーションピン
+T6	Parts 118 121	警告灯
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Connect Arg1:T3 Arg2:T1	
+R3	Coreference Arg1:T4 Arg2:T3	
+R4	Coreference Arg1:T5 Arg2:T4	
+R5	Connect Arg1:T6 Arg2:T1	

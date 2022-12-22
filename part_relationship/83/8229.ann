@@ -1,0 +1,19 @@
+T1	Parts 0 7	四輪駆動仕様車
+T2	Parts 8 21	機械式自動変速機（ＡＧＳ）
+T3	Parts 26 32	コントローラ
+T4	Parts 37 44	ワイヤハーネス
+T5	Parts 57 64	ワイヤハーネス
+T6	Parts 65 74	トランスファケース
+T7	Parts 102 109	ワイヤハーネス
+T8	Parts 138 142	エンジン
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T1	
+R3	Contact Arg1:T2 Arg2:T3	
+R4	Connect Arg1:T3 Arg2:T4	
+R5	Part-Whole Arg1:T4 Arg2:T1	
+R6	Coreference Arg1:T4 Arg2:T5	
+R7	Part-Whole Arg1:T6 Arg2:T1	
+R8	Contact Arg1:T2 Arg2:T6	
+R9	Coreference Arg1:T5 Arg2:T7	
+R10	Part-Whole Arg1:T8 Arg2:T1	
+R11	Connect Arg1:T2 Arg2:T8	

@@ -1,0 +1,26 @@
+T20	Parts 39 41	ゴム
+T24	Parts 36 38	金具
+T25	Parts 47 53	取付けボルト
+T26	Parts 54 57	ナット
+T29	Parts 63 65	金具
+T30	Parts 67 70	ボルト
+T31	Parts 71 74	ナット
+T34	Parts 119 122	噴射管
+T1	Parts 0 7	燃料噴射ポンプ
+T2	Parts 8 11	噴射管
+R3	Coreference Arg1:T30 Arg2:T25	
+R4	Coreference Arg1:T31 Arg2:T26	
+R5	Coreference Arg1:T29 Arg2:T24	
+T4	Parts 108 112	エンジン
+T5	Parts 130 132	燃料
+R6	Coreference Arg1:T34 Arg2:T2	
+T3	Parts 16 21	ゴム付金具
+R1	Coreference Arg1:T3 Arg2:T24	
+R7	Contact Arg1:T2 Arg2:T3	
+R8	Part-Whole Arg1:T20 Arg2:T24	
+R9	Contact Arg1:T25 Arg2:T24	
+R10	Contact Arg1:T26 Arg2:T24	
+R11	Contact Arg1:T34 Arg2:T5	
+R12	Part-Whole Arg1:T1 Arg2:T4	
+R13	Contact Arg1:T25 Arg2:T26	
+R2	Part-Whole Arg1:T2 Arg2:T1	

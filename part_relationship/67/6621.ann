@@ -1,0 +1,19 @@
+T1	Parts 0 15	エアバッグコントロールユニット
+T3	Parts 138 152	シートベルトプリテンショナー
+T4	Parts 40 45	エアバッグ
+T5	Parts 126 131	エアバッグ
+T6	Parts 22 26	ユニット
+T7	Parts 47 51	点火装置
+T8	Parts 56 61	ＩＣチップ
+T9	Parts 100 105	ＩＣチップ
+T10	Parts 107 111	電子回路
+T11	Parts 27 29	基板
+R1	Coreference Arg1:T6 Arg2:T1	
+R2	Part-Whole Arg1:T7 Arg2:T4	
+R3	Part-Whole Arg1:T8 Arg2:T11	
+R4	Connect Arg1:T8 Arg2:T7	
+R5	Part-Whole Arg1:T11 Arg2:T6	
+R6	Coreference Arg1:T9 Arg2:T8	
+R7	Part-Whole Arg1:T10 Arg2:T9	
+R8	Coreference Arg1:T5 Arg2:T4	
+R9	Connect Arg1:T3 Arg2:T9	

@@ -1,0 +1,19 @@
+T1	Parts 0 7	メインハーネス
+T2	Parts 136 141	方向指示器
+T3	Parts 20 28	カーボン製カウル
+T4	Parts 38 42	ハーネス
+T5	Parts 72 76	ハーネス
+T6	Parts 100 104	ハーネス
+T7	Parts 56 60	ハンドル
+T8	Parts 77 83	ボトムヨーク
+T9	Parts 152 155	原動機
+T10	Parts 132 135	前照灯
+T11	Parts 120 123	速度計
+R1	Coreference Arg1:T4 Arg2:T1	
+R2	Coreference Arg1:T5 Arg2:T4	
+T12	Parts 84 93	プラスチックガード
+R3	Coreference Arg1:T6 Arg2:T5	
+R4	Connect Arg1:T11 Arg2:T6	
+R5	Connect Arg1:T10 Arg2:T6	
+R6	Connect Arg1:T2 Arg2:T6	
+R7	Connect Arg1:T9 Arg2:T6	

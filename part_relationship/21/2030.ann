@@ -1,0 +1,8 @@
+T1	Parts 0 21	駐車ブレーキ（ホイールパーク）用エアタンク
+T2	Parts 22 25	逆止弁
+T3	Parts 37 43	ブレーキ系統
+T4	Parts 46 50	エア配管
+T5	Parts 58 64	駐車ブレーキ
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Connect Arg1:T5 Arg2:T1	
+R3	Part-Whole Arg1:T5 Arg2:T3	

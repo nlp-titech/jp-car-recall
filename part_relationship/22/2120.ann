@@ -1,0 +1,8 @@
+T10	Parts 71 78	アクセルペダル
+T12	Parts 17 27	アクセルペダルロッド
+T13	Parts 28 33	ブラケット
+T1	Parts 0 7	アクセルペダル
+R1	Coreference Arg1:T10 Arg2:T1	
+R2	Contact Arg1:T13 Arg2:T12	
+R3	Part-Whole Arg1:T12 Arg2:T1	
+R4	Part-Whole Arg1:T13 Arg2:T1	

@@ -1,0 +1,10 @@
+T1	Parts 3 10	ドアロック装置
+T4	Parts 38 41	ラッチ
+T5	Parts 76 79	ラッチ
+T7	Parts 97 99	ドア
+T8	Parts 0 2	右席
+T2	Parts 15 23	ドアロックラッチ
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Coreference Arg1:T2 Arg2:T4	
+R4	Coreference Arg1:T4 Arg2:T5	
+R5	Part-Whole Arg1:T1 Arg2:T7	

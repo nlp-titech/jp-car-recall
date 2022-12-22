@@ -1,0 +1,57 @@
+T1	Parts 0 4	電気装置
+T2	Parts 22 29	メインハーネス
+T3	Parts 30 34	クランプ
+T4	Parts 39 42	バンド
+T5	Parts 50 57	メインハーネス
+T6	Parts 58 62	クランプ
+T7	Parts 67 71	クランプ
+R1	Coreference Arg1:T7 Arg2:T6	
+R2	Coreference Arg1:T6 Arg2:T3	
+R3	Coreference Arg1:T5 Arg2:T2	
+T8	Parts 86 107	メインハーネス固定用バンド（6本中の1本）
+T9	Parts 108 113	ブラケット
+T10	Parts 124 129	ブラケット
+T11	Parts 136 143	メインハーネス
+T13	Parts 152 159	メインハーネス
+T15	Parts 198 205	メインハーネス
+T16	Parts 216 220	内部配線
+T17	Parts 225 229	ヒューズ
+T18	Parts 234 237	前照灯
+T19	Parts 238 241	制動灯
+T20	Parts 242 244	尾灯
+T21	Parts 245 248	番号灯
+T22	Parts 249 254	速度計照明
+T23	Parts 256 261	方向指示器
+T24	Parts 275 278	原動機
+R4	Coreference Arg1:T10 Arg2:T9	
+R5	Coreference Arg1:T11 Arg2:T5	
+R7	Coreference Arg1:T13 Arg2:T11	
+R8	Coreference Arg1:T15 Arg2:T13	
+R10	Contact Arg1:T3 Arg2:T2	
+R11	Contact Arg1:T4 Arg2:T2	
+R12	Contact Arg1:T4 Arg2:T3	
+R13	Coreference Arg1:T8 Arg2:T4	
+R14	Contact Arg1:T9 Arg2:T8	
+R16	Part-Whole Arg1:T16 Arg2:T15	
+R18	Part-Whole Arg1:T18 Arg2:T1	
+R19	Part-Whole Arg1:T19 Arg2:T1	
+R20	Part-Whole Arg1:T20 Arg2:T1	
+R21	Part-Whole Arg1:T21 Arg2:T1	
+R22	Part-Whole Arg1:T22 Arg2:T1	
+R23	Part-Whole Arg1:T23 Arg2:T1	
+R24	Connect Arg1:T24 Arg2:T1	
+T12	Parts 189 191	車両
+R6	Part-Whole Arg1:T1 Arg2:T12	
+R15	Part-Whole Arg1:T24 Arg2:T12	
+R17	Connect Arg1:T15 Arg2:T17	
+R25	Connect Arg1:T17 Arg2:T18	
+R26	Connect Arg1:T17 Arg2:T19	
+R27	Connect Arg1:T17 Arg2:T20	
+R28	Connect Arg1:T17 Arg2:T21	
+R29	Connect Arg1:T17 Arg2:T22	
+R30	Connect Arg1:T17 Arg2:T23	
+R9	Connect Arg1:T1 Arg2:T2	
+R31	Part-Whole Arg1:T15 Arg2:T12	
+R32	Part-Whole Arg1:T10 Arg2:T12	
+R34	Part-Whole Arg1:T7 Arg2:T12	
+R35	Connect Arg1:T17 Arg2:T16	

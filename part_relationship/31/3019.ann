@@ -1,0 +1,17 @@
+T1	Parts 5 9	大型バス
+T2	Parts 14 25	エアコンユニット用配線
+T3	Parts 26 30	コネクタ
+T4	Parts 46 48	後輪
+T6	Parts 67 71	コネクタ
+R1	Coreference Arg1:T3 Arg2:T6	
+T7	Parts 110 114	コネクタ
+R2	Coreference Arg1:T6 Arg2:T7	
+T8	Parts 122 126	コネクタ
+R3	Coreference Arg1:T7 Arg2:T8	
+T9	Parts 144 148	コネクタ
+R4	Coreference Arg1:T8 Arg2:T9	
+T10	Parts 149 151	配線
+R5	Coreference Arg1:T2 Arg2:T10	
+R6	Part-Whole Arg1:T3 Arg2:T2	
+R7	Part-Whole Arg1:T2 Arg2:T1	
+R8	Part-Whole Arg1:T4 Arg2:T1	

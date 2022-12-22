@@ -1,0 +1,9 @@
+T5	Parts 92 95	警告灯
+T1	Parts 0 19	ＥＣＵ（エンジン制御コンピュータ）電極
+T2	Parts 34 36	電極
+T3	Parts 41 43	電極
+T4	Parts 80 82	電極
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Coreference Arg1:T2 Arg2:T3	
+R3	Coreference Arg1:T3 Arg2:T4	
+R4	Contact Arg1:T5 Arg2:T1	

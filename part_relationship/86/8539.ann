@@ -1,0 +1,11 @@
+T1	Parts 0 14	排気ガス再循環装置（ＥＧＲ）
+T2	Parts 19 37	バルブフラップ操作用アクチュエーター
+T3	Parts 50 54	ローター
+T4	Parts 66 73	バルブフラップ
+T5	Parts 94 101	バルブフラップ
+T6	Parts 117 124	エンジン警告灯
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T2	
+R3	Connect Arg1:T4 Arg2:T2	
+R4	Coreference Arg1:T5 Arg2:T4	
+R5	Part-Whole Arg1:T4 Arg2:T1	

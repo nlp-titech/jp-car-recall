@@ -1,0 +1,10 @@
+T1	Parts 0 13	運転者席側エアバッグカバー
+T2	Parts 30 39	ブランドエンブレム
+T3	Parts 44 48	リテーナ
+T4	Parts 73 78	エアバッグ
+T5	Parts 82 91	ブランドエンブレム
+T6	Parts 96 100	リテーナ
+R1	Coreference Arg1:T2 Arg2:T5	
+R2	Coreference Arg1:T3 Arg2:T6	
+R3	Contact Arg1:T2 Arg2:T3	
+R4	Part-Whole Arg1:T4 Arg2:T1	

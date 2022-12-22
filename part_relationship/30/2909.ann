@@ -1,0 +1,18 @@
+T1	Parts 0 6	大型観光バス
+T2	Parts 11 21	油圧式ファンドライブ
+T3	Parts 22 33	オイルリザーバータンク
+T4	Parts 40 45	ブラケット
+T5	Parts 49 56	下側ブラケット
+T7	Parts 82 89	上側ブラケット
+R1	Oneway-Coreference Arg1:T4 Arg2:T7	
+T8	Parts 123 130	下側ブラケット
+R2	Coreference Arg1:T8 Arg2:T5	
+T9	Parts 131 142	オイルリザーバータンク
+R3	Coreference Arg1:T3 Arg2:T9	
+T10	Parts 155 166	オイルリザーバータンク
+R4	Coreference Arg1:T10 Arg2:T9	
+R5	Oneway-Coreference Arg1:T4 Arg2:T5	
+R6	Part-Whole Arg1:T2 Arg2:T1	
+R7	Contact Arg1:T3 Arg2:T2	
+R8	Contact Arg1:T4 Arg2:T3	
+R10	Part-Whole Arg1:T3 Arg2:T1	

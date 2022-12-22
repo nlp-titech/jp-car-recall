@@ -1,0 +1,44 @@
+T18	Parts 26 33	コイルモールド
+T26	Parts 50 57	コイルモールド
+T27	Parts 96 103	コイルモールド
+T28	Parts 136 139	電磁弁
+T29	Parts 126 132	電源ヒューズ
+T30	Parts 202 211	高低速切換え電磁弁
+T31	Parts 237 242	中立電磁弁
+T32	Parts 278 289	駐車ブレーキ解除電磁弁
+T33	Parts 341 347	電源ヒューズ
+T1	Parts 0 8	ロード・ローラー
+T2	Parts 15 18	電磁弁
+T3	Parts 35 37	配線
+R1	Coreference Arg1:T18 Arg2:T26	
+R2	Coreference Arg1:T26 Arg2:T27	
+T4	Parts 113 115	配線
+R3	Coreference Arg1:T3 Arg2:T4	
+R4	Coreference Arg1:T2 Arg2:T28	
+T5	Parts 157 160	電磁弁
+R5	Coreference Arg1:T28 Arg2:T5	
+T6	Parts 178 181	電磁弁
+R6	Coreference Arg1:T5 Arg2:T6	
+R7	Oneway-Coreference Arg1:T6 Arg2:T30	
+R8	Oneway-Coreference Arg1:T6 Arg2:T31	
+T7	Parts 252 255	変速機
+R9	Oneway-Coreference Arg1:T6 Arg2:T32	
+T8	Parts 310 316	駐車ブレーキ
+T9	Parts 331 334	電磁弁
+R10	Coreference Arg1:T33 Arg2:T29	
+T10	Parts 368 374	駐車ブレーキ
+R11	Coreference Arg1:T10 Arg2:T8	
+R12	Coreference Arg1:T9 Arg2:T6	
+R13	Part-Whole Arg1:T2 Arg2:T1	
+R14	Part-Whole Arg1:T18 Arg2:T2	
+R15	Part-Whole Arg1:T3 Arg2:T1	
+R16	Connect Arg1:T29 Arg2:T4	
+R17	Part-Whole Arg1:T7 Arg2:T11	
+R18	Part-Whole Arg1:T8 Arg2:T11	
+T11	Parts 148 156	リコール対象車両
+R19	Contact Arg1:T18 Arg2:T3	
+R20	Coreference Arg1:T1 Arg2:T11	
+R21	Part-Whole Arg1:T29 Arg2:T1	
+R22	Connect Arg1:T31 Arg2:T7	
+R23	Connect Arg1:T32 Arg2:T8	
+R24	Connect Arg1:T29 Arg2:T28	

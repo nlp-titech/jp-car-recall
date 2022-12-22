@@ -1,0 +1,13 @@
+T1	Parts 0 17	エアコン制御用コントロールユニット
+T2	Parts 35 41	ブロアモータ
+T3	Parts 92 97	デフロスタ
+T5	Parts 30 34	エアコン
+T6	Parts 61 65	ユニット
+T7	Parts 18 22	制御回路
+T8	Parts 81 86	室内ファン
+R2	Part-Whole Arg1:T7 Arg2:T1	
+R4	Part-Whole Arg1:T2 Arg2:T5	
+R5	Coreference Arg1:T1 Arg2:T6	
+R6	Connect Arg1:T6 Arg2:T8	
+R7	Connect Arg1:T8 Arg2:T3	
+R8	Connect Arg1:T1 Arg2:T5	

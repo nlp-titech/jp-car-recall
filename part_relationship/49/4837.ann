@@ -1,0 +1,12 @@
+T2	Parts 95 102	アクセルペダル
+T3	Parts 27 34	ワイヤハーネス
+T4	Parts 4 12	電子式スロットル
+T5	Parts 67 71	エンジン
+T6	Parts 0 3	原動機
+T7	Parts 17 24	アクセルペダル
+R1	Part-Whole Arg1:T4 Arg2:T6	
+R3	Contact Arg1:T3 Arg2:T4	
+R6	Coreference Arg1:T6 Arg2:T5	
+R2	Coreference Arg1:T2 Arg2:T7	
+R4	Connect Arg1:T3 Arg2:T7	
+R5	Connect Arg1:T4 Arg2:T7	

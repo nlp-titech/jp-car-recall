@@ -1,0 +1,12 @@
+T1	Parts 28 35	ブレーキペダル
+T2	Parts 113 117	ブレーキ
+T3	Parts 0 4	制動装置
+T4	Parts 46 49	センサ
+T5	Parts 82 85	センサ
+T7	Parts 9 13	前・後輪
+R1	Coreference Arg1:T4 Arg2:T5	
+R2	Connect Arg1:T1 Arg2:T3	
+R3	Coreference Arg1:T3 Arg2:T2	
+R4	Connect Arg1:T3 Arg2:T7	
+R5	Connect Arg1:T1 Arg2:T4	
+R6	Connect Arg1:T4 Arg2:T3	

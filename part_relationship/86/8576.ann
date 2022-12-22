@@ -1,0 +1,9 @@
+T1	Parts 0 10	無段変速機（ＣＶＴ）
+T2	Parts 15 24	ＣＶＴコントローラ
+T3	Parts 25 32	制御プログラム
+T4	Parts 61 68	スチールベルト
+T5	Parts 107 112	油圧調整弁
+R1	Part-Whole Arg1:T3 Arg2:T2	
+R2	Connect Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T4 Arg2:T1	
+R4	Part-Whole Arg1:T5 Arg2:T1	

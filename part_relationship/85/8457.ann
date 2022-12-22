@@ -1,0 +1,21 @@
+T1	Parts 0 6	大型トラック
+T2	Parts 7 11	エンジン
+T3	Parts 20 27	エンジン補器類
+T4	Parts 28 35	取り付けボルト
+T5	Parts 38 41	ナット
+T6	Parts 58 61	ボルト
+T7	Parts 64 67	ナット
+T8	Parts 110 113	冷却水
+T9	Parts 119 121	燃料
+T10	Parts 127 131	エンジン
+T11	Parts 153 155	車両
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T2	
+R3	Contact Arg1:T4 Arg2:T3	
+R4	Contact Arg1:T5 Arg2:T3	
+R5	Contact Arg1:T5 Arg2:T4	
+R6	Coreference Arg1:T6 Arg2:T4	
+R7	Coreference Arg1:T7 Arg2:T5	
+R8	Coreference Arg1:T10 Arg2:T2	
+R9	Part-Whole Arg1:T9 Arg2:T10	
+R10	Part-Whole Arg1:T8 Arg2:T10	

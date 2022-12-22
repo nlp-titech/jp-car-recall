@@ -1,0 +1,21 @@
+T17	Parts 106 110	エンジン
+T18	Parts 117 121	ワイパー
+T21	Parts 10 26	グローブボックス取付けブラケット
+T1	Parts 45 47	配線
+T2	Parts 1 3	車室
+T3	Parts 5 9	電気配線
+R1	Coreference Arg1:T1 Arg2:T3	
+T4	Parts 62 64	配線
+T5	Parts 65 67	被覆
+T6	Parts 89 91	配線
+T7	Parts 98 102	ヒューズ
+R3	Coreference Arg1:T6 Arg2:T4	
+R4	Coreference Arg1:T4 Arg2:T1	
+R5	Part-Whole Arg1:T3 Arg2:T2	
+R8	Part-Whole Arg1:T5 Arg2:T4	
+R9	Contact Arg1:T6 Arg2:T7	
+R10	Connect Arg1:T7 Arg2:T17	
+R11	Connect Arg1:T7 Arg2:T18	
+R6	Part-Whole Arg1:T21 Arg2:T2	
+T8	Parts 50 55	ブラケット
+R2	Coreference Arg1:T8 Arg2:T21	

@@ -1,0 +1,15 @@
+T6	Parts 14 19	燃料タンク
+T7	Parts 49 52	安全弁
+T8	Parts 102 105	安全弁
+T9	Parts 40 43	タンク
+T1	Parts 0 9	圧縮天然ガス自動車
+T2	Parts 33 35	燃料
+R1	Coreference Arg1:T9 Arg2:T6	
+T3	Parts 70 72	燃料
+T4	Parts 113 115	燃料
+R3	Coreference Arg1:T3 Arg2:T2	
+R4	Coreference Arg1:T4 Arg2:T3	
+R5	Coreference Arg1:T7 Arg2:T8	
+R6	Part-Whole Arg1:T6 Arg2:T1	
+R7	Part-Whole Arg1:T2 Arg2:T6	
+R8	Part-Whole Arg1:T7 Arg2:T6	

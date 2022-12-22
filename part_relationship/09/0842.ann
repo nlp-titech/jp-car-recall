@@ -1,0 +1,10 @@
+T4	Parts 52 57	座席ベルト
+T1	Parts 13 17	第２列席
+T2	Parts 18 32	中央席用シートベルトバックル
+T3	Parts 50 51	席
+R1	Coreference Arg1:T3 Arg2:T1	
+T5	Parts 6 8	車両
+R2	Part-Whole Arg1:T4 Arg2:T3	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T1 Arg2:T5	
+R6	Contact Arg1:T2 Arg2:T4	

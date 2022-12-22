@@ -1,0 +1,7 @@
+T2	Parts 57 62	ブラケット
+T3	Parts 76 81	ブラケット
+T5	Parts 0 23	スペア・タイヤ・キャリヤ取付金具（ブラケット）
+T6	Parts 86 93	スペア・タイヤ
+R1	Coreference Arg1:T5 Arg2:T2	
+R2	Coreference Arg1:T2 Arg2:T3	
+R3	Contact Arg1:T3 Arg2:T6	

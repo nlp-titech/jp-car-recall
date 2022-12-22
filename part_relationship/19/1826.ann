@@ -1,0 +1,9 @@
+T13	Parts 0 9	燃料タンクキャップ
+T16	Parts 47 51	キャップ
+T17	Parts 86 90	キャップ
+T18	Parts 110 119	燃料タンクキャップ
+R2	Coreference Arg1:T16 Arg2:T13	
+R3	Coreference Arg1:T17 Arg2:T16	
+T1	Parts 100 102	燃料
+R4	Coreference Arg1:T18 Arg2:T17	
+R5	Contact Arg1:T1 Arg2:T18	

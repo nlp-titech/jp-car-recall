@@ -1,0 +1,11 @@
+T1	Parts 0 8	ショベル・ローダ
+T2	Parts 9 15	動力伝達装置
+T3	Parts 20 25	油圧ホース
+T4	Parts 106 109	作動油
+T5	Parts 77 80	ホース
+T6	Parts 98 101	ホース
+R1	Coreference Arg1:T6 Arg2:T5	
+R2	Contact Arg1:T4 Arg2:T6	
+R3	Coreference Arg1:T5 Arg2:T3	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T3 Arg2:T2	

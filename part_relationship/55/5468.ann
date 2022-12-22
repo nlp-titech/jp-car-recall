@@ -1,0 +1,9 @@
+T1	Parts 14 23	ショックアブソーバ
+T2	Parts 40 49	ショックアブソーバ
+T3	Parts 0 9	リヤサスペンション
+T4	Parts 50 53	オイル
+T5	Parts 26 29	シール
+R1	Part-Whole Arg1:T1 Arg2:T3	
+R2	Part-Whole Arg1:T5 Arg2:T1	
+R3	Coreference Arg1:T1 Arg2:T2	
+R4	Contact Arg1:T2 Arg2:T4	

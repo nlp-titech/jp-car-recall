@@ -1,0 +1,18 @@
+T18	Parts 78 80	車両
+T19	Parts 150 154	クラッチ
+T20	Parts 137 145	ストロークセンサ
+T21	Parts 109 112	センサ
+T22	Parts 41 44	カバー
+T24	Parts 89 91	金具
+T1	Parts 1 14	機械式自動変速装置付き車両
+T2	Parts 19 31	クラッチストロークセンサ
+T4	Parts 45 51	取り付け金具
+R1	Coreference Arg1:T4 Arg2:T24	
+R2	Coreference Arg1:T2 Arg2:T21	
+R3	Coreference Arg1:T21 Arg2:T20	
+R4	Coreference Arg1:T1 Arg2:T18	
+R6	Part-Whole Arg1:T4 Arg2:T22	
+R7	Connect Arg1:T20 Arg2:T19	
+R8	Part-Whole Arg1:T19 Arg2:T18	
+R9	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T22 Arg2:T2	

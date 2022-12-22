@@ -1,0 +1,5 @@
+T1	Parts 11 32	ｉ－Ｓｉｚｅ（アイサイズ）チャイルドシート
+T2	Parts 100 108	チャイルドシート
+T3	Parts 33 35	座席
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Contact Arg1:T1 Arg2:T3	

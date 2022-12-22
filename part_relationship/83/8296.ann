@@ -1,0 +1,16 @@
+T1	Parts 0 6	大型トラック
+T2	Parts 7 14	エアドライヤー
+T3	Parts 19 34	圧縮空気の圧力テスト用コネクタ
+T4	Parts 45 53	エアコンプレッサ
+T5	Parts 83 87	コネクタ
+T6	Parts 150 155	警告ランプ
+T7	Parts 171 177	駐車ブレーキ
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T2	
+R3	Connect Arg1:T4 Arg2:T2	
+R4	Coreference Arg1:T5 Arg2:T3	
+R5	Connect Arg1:T6 Arg2:T2	
+R6	Connect Arg1:T7 Arg2:T2	
+R7	Part-Whole Arg1:T4 Arg2:T1	
+R8	Part-Whole Arg1:T6 Arg2:T1	
+R9	Part-Whole Arg1:T7 Arg2:T1	

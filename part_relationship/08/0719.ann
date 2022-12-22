@@ -1,0 +1,16 @@
+T13	Parts 95 99	ワッシャ
+T14	Parts 67 81	緩み止め用ベアリングワッシャ
+T15	Parts 82 86	スペーサ
+T10	Parts 12 20	ベアリングナット
+T16	Parts 58 66	ベアリングナット
+T17	Parts 107 115	ベアリングナット
+T19	Parts 141 149	ベアリングナット
+T20	Parts 160 166	前後フレーム
+T1	Parts 5 11	センターピン
+R1	Coreference Arg1:T13 Arg2:T14	
+R2	Coreference Arg1:T16 Arg2:T10	
+R3	Coreference Arg1:T17 Arg2:T16	
+R4	Coreference Arg1:T19 Arg2:T17	
+R5	Contact Arg1:T10 Arg2:T1	
+R7	Contact Arg1:T14 Arg2:T16	
+R10	Contact Arg1:T15 Arg2:T14	

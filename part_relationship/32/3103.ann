@@ -1,0 +1,15 @@
+T1	Parts 11 30	機械式オートマチックトランスミッション
+T2	Parts 35 44	小型トラック・バス
+T3	Parts 49 59	オイルクーラーホース
+T4	Parts 60 69	トランスミッション
+T5	Parts 113 116	ホース
+R1	Coreference Arg1:T3 Arg2:T5	
+T6	Parts 120 132	トランスミッションオイル
+R2	Contact Arg1:T6 Arg2:T5	
+R3	Coreference Arg1:T4 Arg2:T1	
+R4	Connect Arg1:T4 Arg2:T3	
+R5	Part-Whole Arg1:T1 Arg2:T2	
+R6	Part-Whole Arg1:T3 Arg2:T2	
+T7	Parts 4 8	クラッチ
+R7	Connect Arg1:T7 Arg2:T1	
+R8	Part-Whole Arg1:T7 Arg2:T2	

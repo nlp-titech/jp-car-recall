@@ -1,0 +1,21 @@
+T2	Parts 15 17	車両
+T3	Parts 22 42	車体制御ユニット（ボディーコントローラ）
+T4	Parts 43 48	プログラム
+T5	Parts 56 60	エンジン
+T7	Parts 83 91	車体制御ユニット
+T8	Parts 113 117	ユニット
+T9	Parts 124 131	ハザードランプ
+T10	Parts 132 139	エアコンファン
+R2	Coreference Arg1:T7 Arg2:T3	
+R3	Coreference Arg1:T8 Arg2:T7	
+T6	Parts 68 76	運行情報システム
+T1	Parts 0 8	運行情報システム
+R1	Coreference Arg1:T1 Arg2:T6	
+R4	Part-Whole Arg1:T1 Arg2:T2	
+R5	Part-Whole Arg1:T3 Arg2:T2	
+R6	Part-Whole Arg1:T4 Arg2:T3	
+R7	Part-Whole Arg1:T5 Arg2:T2	
+R8	Connect Arg1:T8 Arg2:T9	
+R9	Connect Arg1:T8 Arg2:T10	
+R10	Part-Whole Arg1:T9 Arg2:T2	
+R11	Part-Whole Arg1:T10 Arg2:T2	

@@ -1,0 +1,14 @@
+T12	Parts 7 13	スタビライザ
+T13	Parts 24 30	スタビライザ
+T14	Parts 31 38	サポートビーム
+T17	Parts 75 82	締め付けナット
+T18	Parts 92 95	ナット
+T20	Parts 0 6	後輪緩衝装置
+R1	Coreference Arg1:T13 Arg2:T12	
+R3	Coreference Arg1:T18 Arg2:T17	
+R5	Part-Whole Arg1:T12 Arg2:T20	
+R8	Contact Arg1:T13 Arg2:T14	
+R2	Contact Arg1:T13 Arg2:T17	
+R4	Contact Arg1:T14 Arg2:T17	
+R6	Part-Whole Arg1:T14 Arg2:T20	
+R7	Part-Whole Arg1:T17 Arg2:T20	

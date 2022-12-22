@@ -1,0 +1,22 @@
+T1	Parts 0 6	大型トラック
+T2	Parts 7 13	かじ取り装置
+T3	Parts 18 25	アクスルビーム
+T4	Parts 26 31	キングピン
+T5	Parts 58 63	キングピン
+T6	Parts 71 76	キングピン
+T7	Parts 92 97	キングピン
+T8	Parts 98 108	ステアリングナックル
+T10	Parts 130 133	タイヤ
+T11	Parts 139 143	ハンドル
+R1	Coreference Arg1:T4 Arg2:T5	
+R2	Coreference Arg1:T5 Arg2:T6	
+R3	Coreference Arg1:T6 Arg2:T7	
+R4	Contact Arg1:T3 Arg2:T4	
+R5	Part-Whole Arg1:T2 Arg2:T1	
+R6	Part-Whole Arg1:T8 Arg2:T2	
+R7	Connect Arg1:T2 Arg2:T11	
+R8	Part-Whole Arg1:T11 Arg2:T1	
+R9	Part-Whole Arg1:T10 Arg2:T1	
+R10	Connect Arg1:T2 Arg2:T10	
+R11	Contact Arg1:T7 Arg2:T8	
+R12	Part-Whole Arg1:T3 Arg2:T1	

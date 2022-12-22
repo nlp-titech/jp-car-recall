@@ -1,0 +1,9 @@
+T1	Parts 18 30	インフレータ（膨張装置）
+T2	Parts 54 62	インフレータ容器
+T3	Parts 9 17	サイドエアバッグ
+T4	Parts 45 50	エアバッグ
+T5	Parts 0 3	運転席
+T7	Parts 5 8	助手席
+R4	Coreference Arg1:T3 Arg2:T4	
+R1	Part-Whole Arg1:T1 Arg2:T2	
+R2	Part-Whole Arg1:T2 Arg2:T4	

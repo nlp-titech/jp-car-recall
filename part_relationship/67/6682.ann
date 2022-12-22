@@ -1,0 +1,13 @@
+T1	Parts 0 16	ヘッドライトコントロールユニット
+T2	Parts 69 79	コントロールユニット
+T4	Parts 54 60	ヘッドライト
+T5	Parts 88 94	ヘッドライト
+T6	Parts 33 37	エンジン
+T7	Parts 17 21	回路基板
+T8	Parts 80 84	回路基板
+R1	Coreference Arg1:T5 Arg2:T4	
+R2	Part-Whole Arg1:T7 Arg2:T1	
+R3	Coreference Arg1:T2 Arg2:T1	
+R4	Coreference Arg1:T8 Arg2:T7	
+R5	Connect Arg1:T4 Arg2:T1	
+R6	Connect Arg1:T6 Arg2:T1	

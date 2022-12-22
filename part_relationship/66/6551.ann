@@ -1,0 +1,15 @@
+T1	Parts 0 15	エアバッグコントロールユニット
+T3	Parts 172 185	シートベルトプリテンショナ
+T4	Parts 126 131	エアバッグ
+T5	Parts 146 162	シートベルトプリテンショナ装着車
+T9	Parts 22 26	ユニット
+T10	Parts 108 112	ユニット
+T11	Parts 27 31	内部基板
+R1	Coreference Arg1:T1 Arg2:T9	
+R2	Part-Whole Arg1:T11 Arg2:T9	
+R3	Coreference Arg1:T9 Arg2:T10	
+R4	Connect Arg1:T10 Arg2:T4	
+R5	Part-Whole Arg1:T3 Arg2:T5	
+R6	Connect Arg1:T10 Arg2:T3	
+R7	Part-Whole Arg1:T1 Arg2:T5	
+R8	Part-Whole Arg1:T4 Arg2:T5	

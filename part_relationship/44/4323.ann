@@ -1,0 +1,55 @@
+T1	Parts 0 15	ブレーキハイドロリックユニット
+T2	Parts 39 50	ハイドロリックユニット
+T3	Parts 327 334	ブレーキペダル
+T4	Parts 24 31	制御プログラム
+T12	Parts 51 58	ポンプモーター
+T19	Parts 16 19	ＥＣＵ
+T20	Parts 78 81	ＥＣＵ
+T30	Parts 373 375	車両
+T33	Parts 147 183	ＡＣＣ※３、ＦＣＭ※４、ＢＡＨ※５、ＨＳＡ※６、Ｓ－ＡＷＣ※７機能付き車
+R2	Part-Whole Arg1:T4 Arg2:T19	
+R3	Coreference Arg1:T1 Arg2:T2	
+R4	Coreference Arg1:T19 Arg2:T20	
+T5	Parts 296 300	ブレーキ
+R7	Part-Whole Arg1:T5 Arg2:T16	
+R8	Part-Whole Arg1:T3 Arg2:T16	
+T6	Parts 339 343	ブレーキ
+R10	Coreference Arg1:T5 Arg2:T6	
+R5	Part-Whole Arg1:T12 Arg2:T2	
+T7	Parts 101 104	ＡＳＣ
+T8	Parts 107 110	ＡＢＳ
+R11	Connect Arg1:T20 Arg2:T7	
+R12	Connect Arg1:T20 Arg2:T8	
+T9	Parts 205 208	ＡＳＣ
+R13	Coreference Arg1:T7 Arg2:T9	
+T10	Parts 220 223	ＡＢＳ
+R14	Coreference Arg1:T8 Arg2:T10	
+T11	Parts 289 292	ＦＣＭ
+T13	Parts 362 365	ＨＳＡ
+T14	Parts 245 248	ＡＣＣ
+T15	Parts 320 323	ＢＡＨ
+T16	Parts 349 351	車両
+T17	Parts 390 395	Ｓ－ＡＷＣ
+R16	Part-Whole Arg1:T14 Arg2:T16	
+R17	Part-Whole Arg1:T11 Arg2:T16	
+R18	Part-Whole Arg1:T15 Arg2:T16	
+R19	Part-Whole Arg1:T13 Arg2:T30	
+T18	Parts 396 408	車両運動統合制御システム
+R22	Connect Arg1:T11 Arg2:T5	
+R23	Connect Arg1:T15 Arg2:T6	
+R20	Coreference Arg1:T17 Arg2:T18	
+T21	Parts 209 218	横滑り防止システム
+R21	Coreference Arg1:T9 Arg2:T21	
+T22	Parts 126 128	車両
+R1	Connect Arg1:T1 Arg2:T19	
+R6	Part-Whole Arg1:T20 Arg2:T22	
+R24	Part-Whole Arg1:T7 Arg2:T22	
+R25	Part-Whole Arg1:T8 Arg2:T22	
+R26	Part-Whole Arg1:T2 Arg2:T22	
+R9	Coreference Arg1:T33 Arg2:T16	
+R15	Coreference Arg1:T16 Arg2:T30	
+R29	Part-Whole Arg1:T17 Arg2:T30	
+R27	Part-Whole Arg1:T9 Arg2:T33	
+R28	Part-Whole Arg1:T10 Arg2:T33	
+R30	Part-Whole Arg1:T20 Arg2:T33	
+R31	Part-Whole Arg1:T2 Arg2:T33	

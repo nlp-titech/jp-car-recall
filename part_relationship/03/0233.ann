@@ -1,0 +1,12 @@
+T10	Parts 7 16	外開き式ドアガラス
+T11	Parts 17 22	ロック装置
+T12	Parts 23 27	止め金具
+T13	Parts 70 74	止め金具
+T14	Parts 79 84	ドアガラス
+T1	Parts 0 2	荷室
+R1	Coreference Arg1:T13 Arg2:T12	
+R2	Coreference Arg1:T14 Arg2:T10	
+R5	Part-Whole Arg1:T12 Arg2:T11	
+R4	Contact Arg1:T10 Arg2:T11	
+R3	Contact Arg1:T1 Arg2:T10	
+R6	Contact Arg1:T1 Arg2:T11	

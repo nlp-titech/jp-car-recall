@@ -1,0 +1,18 @@
+T1	Parts 1 10	燃料リターンパイプ
+T2	Parts 23 26	パイプ
+R1	Coreference Arg1:T2 Arg2:T1	
+T3	Parts 27 33	ヘッドカバー
+T4	Parts 51 55	エンジン
+T5	Parts 62 65	パイプ
+R2	Coreference Arg1:T5 Arg2:T2	
+T6	Parts 71 78	エンジンオイル
+T7	Parts 79 81	燃料
+T8	Parts 92 96	エンジン
+T9	Parts 107 111	エンジン
+T10	Parts 117 121	エンジン
+R3	Coreference Arg1:T10 Arg2:T9	
+R4	Coreference Arg1:T9 Arg2:T8	
+R5	Coreference Arg1:T8 Arg2:T4	
+R6	Contact Arg1:T1 Arg2:T4	
+R7	Contact Arg1:T6 Arg2:T4	
+R8	Contact Arg1:T7 Arg2:T5	

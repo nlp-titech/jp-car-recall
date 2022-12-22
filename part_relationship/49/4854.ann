@@ -1,0 +1,23 @@
+T1	Parts 15 21	キャニスター
+T2	Parts 56 62	キャニスター
+T3	Parts 84 90	キャニスター
+T4	Parts 9 14	燃料タンク
+T5	Parts 95 102	ベントフィルタ
+T6	Parts 0 4	燃料装置
+T7	Parts 64 66	燃料
+T8	Parts 81 83	燃料
+T9	Parts 104 106	燃料
+T10	Parts 24 26	配管
+R1	Part-Whole Arg1:T4 Arg2:T6	
+R2	Contact Arg1:T10 Arg2:T4	
+R3	Part-Whole Arg1:T1 Arg2:T6	
+R4	Contact Arg1:T10 Arg2:T1	
+R5	Contact Arg1:T1 Arg2:T4	
+R6	Coreference Arg1:T1 Arg2:T2	
+R7	Part-Whole Arg1:T7 Arg2:T4	
+R8	Coreference Arg1:T7 Arg2:T8	
+R9	Coreference Arg1:T1 Arg2:T3	
+R10	Coreference Arg1:T7 Arg2:T9	
+R11	Contact Arg1:T3 Arg2:T5	
+R12	Part-Whole Arg1:T5 Arg2:T6	
+R13	Contact Arg1:T7 Arg2:T6	

@@ -1,0 +1,17 @@
+T1	Parts 67 75	フロントフォーク
+T2	Parts 15 20	固定ナット
+T3	Parts 97 102	固定ナット
+T4	Parts 61 66	固定ボルト
+T6	Parts 0 5	燃料タンク
+T7	Parts 50 54	ハンドル
+T8	Parts 80 84	ハンドル
+T9	Parts 33 36	ナット
+T10	Parts 106 109	ボルト
+R1	Coreference Arg1:T2 Arg2:T9	
+R2	Coreference Arg1:T9 Arg2:T3	
+R3	Coreference Arg1:T7 Arg2:T8	
+R4	Coreference Arg1:T4 Arg2:T10	
+R5	Contact Arg1:T6 Arg2:T2	
+R6	Connect Arg1:T7 Arg2:T1	
+R7	Contact Arg1:T9 Arg2:T4	
+R8	Contact Arg1:T6 Arg2:T4	

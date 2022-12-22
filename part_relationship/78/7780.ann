@@ -1,0 +1,32 @@
+T1	Parts 3 16	４８Ｖスタータオルタネータ
+T2	Parts 21 34	４８Ｖバッテリ管理システム
+T3	Parts 39 46	制御プログラム
+T4	Parts 82 86	エンジン
+T5	Parts 93 100	エンジン警告灯
+T6	Parts 110 114	エンジン
+T7	Parts 123 127	エンジン
+T8	Parts 133 140	エンジン警告灯
+T9	Parts 160 173	４８Ｖスタータオルタネータ
+T10	Parts 178 191	４８Ｖバッテリ管理システム
+T11	Parts 196 203	制御プログラム
+T12	Parts 211 218	４８Ｖバッテリ
+T13	Parts 219 225	内部スイッチ
+T14	Parts 252 259	４８Ｖシステム
+T15	Parts 265 272	エンジン警告灯
+T16	Parts 277 281	エンジン
+R1	Part-Whole Arg1:T1 Arg2:T2	
+R2	Connect Arg1:T2 Arg2:T3	
+R3	Coreference Arg1:T6 Arg2:T4	
+R4	Coreference Arg1:T7 Arg2:T6	
+R5	Coreference Arg1:T8 Arg2:T5	
+R6	Connect Arg1:T4 Arg2:T3	
+R7	Connect Arg1:T6 Arg2:T3	
+R8	Connect Arg1:T7 Arg2:T3	
+R9	Connect Arg1:T5 Arg2:T3	
+R10	Connect Arg1:T8 Arg2:T3	
+R11	Part-Whole Arg1:T9 Arg2:T10	
+R12	Connect Arg1:T10 Arg2:T11	
+R13	Connect Arg1:T10 Arg2:T12	
+R14	Part-Whole Arg1:T13 Arg2:T12	
+R15	Coreference Arg1:T10 Arg2:T14	
+R16	Part-Whole Arg1:T15 Arg2:T10	

@@ -1,0 +1,9 @@
+T1	Parts 31 42	イグニッションスイッチ
+T2	Parts 61 72	イグニッションスイッチ
+T3	Parts 107 115	エアバッグ警告灯
+T6	Parts 0 11	エアバッグコントローラ
+T8	Parts 124 129	エアバッグ
+R2	Connect Arg1:T8 Arg2:T6	
+R3	Coreference Arg1:T2 Arg2:T1	
+R5	Connect Arg1:T3 Arg2:T6	
+R6	Connect Arg1:T1 Arg2:T6	

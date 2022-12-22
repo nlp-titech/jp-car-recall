@@ -1,0 +1,10 @@
+T1	Parts 0 12	音声合成式扉開閉予告装置
+T2	Parts 17 23	大型路線バス
+T4	Parts 28 44	運転席右横サイドスイッチボックス
+T5	Parts 46 50	電気配線
+T7	Parts 66 68	中扉
+R1	Part-Whole Arg1:T5 Arg2:T4	
+R2	Part-Whole Arg1:T1 Arg2:T2	
+R5	Connect Arg1:T5 Arg2:T1	
+R3	Part-Whole Arg1:T7 Arg2:T2	
+R6	Part-Whole Arg1:T4 Arg2:T2	

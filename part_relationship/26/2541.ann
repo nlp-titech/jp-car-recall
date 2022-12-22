@@ -1,0 +1,16 @@
+T12	Parts 21 24	タンク
+T13	Parts 25 27	敷板
+T14	Parts 38 41	タンク
+T15	Parts 44 46	敷板
+T16	Parts 88 91	タンク
+T1	Parts 0 5	燃料タンク
+T2	Parts 10 14	観光バス
+R1	Coreference Arg1:T12 Arg2:T1	
+R2	Coreference Arg1:T14 Arg2:T12	
+R3	Coreference Arg1:T15 Arg2:T13	
+R4	Coreference Arg1:T16 Arg2:T14	
+T3	Parts 97 99	燃料
+R5	Part-Whole Arg1:T3 Arg2:T16	
+R6	Part-Whole Arg1:T1 Arg2:T2	
+R7	Part-Whole Arg1:T13 Arg2:T2	
+R8	Contact Arg1:T12 Arg2:T13	

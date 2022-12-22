@@ -1,0 +1,14 @@
+T1	Parts 0 5	前面ガラス
+T3	Parts 21 29	ワイパー･アーム
+T4	Parts 70 79	運転者席側ワイパー
+T5	Parts 80 88	助手席側ワイパー
+T6	Parts 93 107	運転者席側ワイパー･ブレード
+T7	Parts 15 19	運転者席
+T10	Parts 6 10	窓拭き器
+T11	Parts 54 58	窓拭き器
+R1	Contact Arg1:T10 Arg2:T1	
+R3	Coreference Arg1:T10 Arg2:T11	
+R2	Part-Whole Arg1:T3 Arg2:T4	
+R6	Oneway-Coreference Arg1:T10 Arg2:T5	
+R7	Oneway-Coreference Arg1:T10 Arg2:T4	
+R5	Part-Whole Arg1:T6 Arg2:T4	

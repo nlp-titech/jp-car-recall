@@ -1,0 +1,13 @@
+T3	Parts 0 4	窓ふき器
+T4	Parts 95 99	窓ふき器
+T5	Parts 15 18	ケース
+T6	Parts 30 33	ケース
+T8	Parts 80 82	基板
+T1	Parts 5 14	ワイパーモジュール
+T2	Parts 68 77	ワイパーモジュール
+R1	Part-Whole Arg1:T1 Arg2:T3	
+R3	Coreference Arg1:T5 Arg2:T6	
+R4	Coreference Arg1:T1 Arg2:T2	
+R5	Part-Whole Arg1:T8 Arg2:T2	
+R6	Coreference Arg1:T3 Arg2:T4	
+R2	Part-Whole Arg1:T5 Arg2:T1	

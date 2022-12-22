@@ -1,0 +1,14 @@
+T1	Parts 1 7	大型路線バス
+T3	Parts 12 21	運転者席側壁パネル
+T6	Parts 24 26	配線
+T7	Parts 37 39	配線
+T8	Parts 81 83	配線
+T10	Parts 101 102	扉
+T2	Parts 40 50	側壁パネルブラケット
+R1	Part-Whole Arg1:T3 Arg2:T1	
+R2	Part-Whole Arg1:T6 Arg2:T3	
+R3	Coreference Arg1:T6 Arg2:T7	
+R4	Coreference Arg1:T7 Arg2:T8	
+R5	Part-Whole Arg1:T10 Arg2:T1	
+R6	Contact Arg1:T3 Arg2:T2	
+R7	Part-Whole Arg1:T2 Arg2:T1	

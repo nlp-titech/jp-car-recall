@@ -1,0 +1,10 @@
+T19	Parts 44 51	絶縁用キャップ
+T21	Parts 40 42	端子
+T22	Parts 85 89	キャップ
+T23	Parts 128 130	端子
+T24	Parts 12 35	エンジンブロックヒータ（冷寒時始動性向上装置）
+T25	Parts 153 155	端子
+R1	Coreference Arg1:T22 Arg2:T19	
+R3	Coreference Arg1:T25 Arg2:T23	
+T1	Parts 0 4	消防車両
+R4	Part-Whole Arg1:T24 Arg2:T1	

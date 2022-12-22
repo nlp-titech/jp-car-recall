@@ -1,0 +1,21 @@
+T15	Parts 53 59	ウォームギヤ
+T16	Parts 90 96	ウォームギヤ
+T17	Parts 104 114	ウォームホイールギヤ
+T18	Parts 79 86	アクチュエータ
+T22	Parts 182 188	スライドドア
+T23	Parts 125 135	ドアラッチ開放レバー
+T25	Parts 159 165	スライドドア
+T1	Parts 0 8	電動スライドドア
+T2	Parts 9 51	リリースアクチュエータ（スライドドアの前側と後側のドアラッチを電動で開放させる装置）
+T3	Parts 71 73	ドア
+R1	Coreference Arg1:T3 Arg2:T1	
+R2	Coreference Arg1:T18 Arg2:T2	
+R3	Coreference Arg1:T16 Arg2:T15	
+R4	Coreference Arg1:T25 Arg2:T3	
+R5	Coreference Arg1:T22 Arg2:T25	
+R6	Part-Whole Arg1:T2 Arg2:T1	
+R7	Part-Whole Arg1:T15 Arg2:T2	
+R8	Contact Arg1:T17 Arg2:T16	
+R9	Part-Whole Arg1:T17 Arg2:T18	
+R10	Part-Whole Arg1:T23 Arg2:T18	
+R11	Connect Arg1:T17 Arg2:T23	

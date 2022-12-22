@@ -1,0 +1,9 @@
+T1	Parts 8 13	ブラケット
+T2	Parts 27 32	ブラケット
+R1	Coreference Arg1:T1 Arg2:T2	
+T3	Parts 78 88	フートピンブラケット
+T4	Parts 1 7	ブームフート
+R2	Part-Whole Arg1:T1 Arg2:T4	
+R3	Coreference Arg1:T2 Arg2:T3	
+T5	Parts 94 97	ブーム
+R4	Contact Arg1:T3 Arg2:T5	

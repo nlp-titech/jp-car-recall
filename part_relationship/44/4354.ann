@@ -1,0 +1,17 @@
+T1	Parts 19 39	動力式かじ取り装置（パワーステアリング）
+T2	Parts 40 48	ゴム製油圧ホース
+T3	Parts 93 98	油圧ホース
+T4	Parts 114 119	油圧ホース
+T5	Parts 121 124	オイル
+T6	Parts 0 6	右ハンドル車
+T7	Parts 11 14	原動機
+T8	Parts 80 83	原動機
+T9	Parts 128 131	排気管
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R1	Part-Whole Arg1:T7 Arg2:T6	
+R2	Part-Whole Arg1:T1 Arg2:T7	
+R4	Coreference Arg1:T7 Arg2:T8	
+R5	Coreference Arg1:T2 Arg2:T3	
+R7	Contact Arg1:T5 Arg2:T2	
+R8	Part-Whole Arg1:T9 Arg2:T6	
+R6	Coreference Arg1:T3 Arg2:T4	

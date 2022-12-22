@@ -1,0 +1,23 @@
+T18	Parts 168 173	方向指示器
+T19	Parts 174 181	ハザードランプ
+T20	Parts 101 108	ハザードランプ
+T21	Parts 74 79	リレー端子
+T23	Parts 119 121	端子
+T1	Parts 0 5	バン型車両
+T2	Parts 10 12	車両
+T3	Parts 17 24	補助方向指示器
+T4	Parts 45 50	方向指示器
+T5	Parts 51 58	ハザードランプ
+T6	Parts 61 71	フラッシャーユニット
+R1	Coreference Arg1:T5 Arg2:T20	
+R2	Coreference Arg1:T21 Arg2:T23	
+R4	Coreference Arg1:T4 Arg2:T18	
+R5	Coreference Arg1:T20 Arg2:T19	
+R6	Coreference Arg1:T2 Arg2:T1	
+R7	Part-Whole Arg1:T21 Arg2:T6	
+R3	Connect Arg1:T6 Arg2:T5	
+R8	Connect Arg1:T6 Arg2:T4	
+R9	Part-Whole Arg1:T4 Arg2:T2	
+R10	Part-Whole Arg1:T5 Arg2:T2	
+R11	Part-Whole Arg1:T6 Arg2:T2	
+R12	Part-Whole Arg1:T3 Arg2:T2	

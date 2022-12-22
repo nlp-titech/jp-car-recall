@@ -1,0 +1,6 @@
+T12	Parts 88 90	車輪
+T13	Parts 9 13	前輪ハブ
+T1	Parts 0 4	走行装置
+R1	Part-Whole Arg1:T12 Arg2:T1	
+R2	Part-Whole Arg1:T13 Arg2:T1	
+R3	Contact Arg1:T13 Arg2:T12	

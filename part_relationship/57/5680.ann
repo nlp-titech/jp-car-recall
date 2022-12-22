@@ -1,0 +1,9 @@
+T1	Parts 0 11	エンジンフードルーバー
+T2	Parts 12 18	固定クリップ
+T3	Parts 42 46	クリップ
+T4	Parts 62 69	フードルーバー
+T5	Parts 105 112	フードルーバー
+R1	Coreference Arg1:T3 Arg2:T2	
+R2	Coreference Arg1:T5 Arg2:T4	
+R3	Coreference Arg1:T4 Arg2:T1	
+R4	Contact Arg1:T2 Arg2:T1	

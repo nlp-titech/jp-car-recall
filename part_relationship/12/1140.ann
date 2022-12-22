@@ -1,0 +1,11 @@
+T16	Parts 95 97	車体
+T17	Parts 17 26	前輪ハブ内側軸受け
+T18	Parts 45 48	軸受け
+T19	Parts 115 118	軸受け
+T1	Parts 0 7	前輪独立懸架車
+T2	Parts 8 12	走行装置
+R1	Coreference Arg1:T17 Arg2:T18	
+R2	Coreference Arg1:T18 Arg2:T19	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T17 Arg2:T2	
+R6	Part-Whole Arg1:T16 Arg2:T1	

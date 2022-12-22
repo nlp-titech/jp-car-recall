@@ -1,0 +1,14 @@
+T1	Parts 0 6	セミトレーラ
+T2	Parts 7 11	走行装置
+T3	Parts 16 25	アクスルブラケット
+T4	Parts 26 28	車軸
+T5	Parts 97 99	車軸
+T6	Parts 106 110	Ｕボルト
+T7	Parts 120 122	車軸
+R1	Coreference Arg1:T4 Arg2:T5	
+R2	Coreference Arg1:T5 Arg2:T7	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T4 Arg2:T2	
+R5	Part-Whole Arg1:T3 Arg2:T2	
+R6	Contact Arg1:T3 Arg2:T4	
+R7	Contact Arg1:T5 Arg2:T6	

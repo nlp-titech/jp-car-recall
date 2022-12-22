@@ -1,0 +1,28 @@
+T18	Parts 62 66	ケーブル
+T19	Parts 67 73	ガイドパイプ
+T20	Parts 120 126	ガイドパイプ
+T21	Parts 141 145	ケーブル
+T22	Parts 191 193	車両
+T23	Parts 43 47	エンジン
+T25	Parts 30 32	金具
+T1	Parts 0 5	自動変速機
+T2	Parts 6 19	シフトコントロールケーブル
+T3	Parts 22 25	変速機
+T4	Parts 55 57	金具
+T5	Parts 79 81	外筒
+T7	Parts 127 129	外筒
+R1	Coreference Arg1:T2 Arg2:T18	
+R2	Coreference Arg1:T25 Arg2:T4	
+R3	Coreference Arg1:T1 Arg2:T3	
+R4	Coreference Arg1:T19 Arg2:T20	
+R5	Coreference Arg1:T5 Arg2:T7	
+R6	Coreference Arg1:T18 Arg2:T21	
+R7	Contact Arg1:T1 Arg2:T2	
+R8	Contact Arg1:T2 Arg2:T25	
+R9	Part-Whole Arg1:T19 Arg2:T18	
+R10	Part-Whole Arg1:T5 Arg2:T18	
+R11	Part-Whole Arg1:T3 Arg2:T22	
+R12	Part-Whole Arg1:T23 Arg2:T22	
+R13	Part-Whole Arg1:T21 Arg2:T22	
+R14	Contact Arg1:T3 Arg2:T25	
+R15	Connect Arg1:T3 Arg2:T23	

@@ -1,0 +1,17 @@
+T13	Parts 108 111	速度計
+T1	Parts 0 4	電気装置
+T3	Parts 48 52	ハンドル
+T4	Parts 62 66	電気配線
+T5	Parts 67 74	固定用クランプ
+T6	Parts 98 101	前照灯
+T7	Parts 102 107	方向指示器
+T2	Parts 9 18	メーター用電気配線
+R1	Coreference Arg1:T4 Arg2:T2	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T6 Arg2:T1	
+R5	Part-Whole Arg1:T7 Arg2:T1	
+R6	Part-Whole Arg1:T13 Arg2:T1	
+R7	Contact Arg1:T4 Arg2:T5	
+R3	Connect Arg1:T4 Arg2:T6	
+R8	Connect Arg1:T4 Arg2:T7	
+R9	Connect Arg1:T4 Arg2:T13	

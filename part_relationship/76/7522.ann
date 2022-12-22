@@ -1,0 +1,6 @@
+T1	Parts 3 9	ピラーカバー
+T2	Parts 31 34	ピラー
+T3	Parts 63 71	サイドエアバッグ
+T4	Parts 78 84	ピラーカバー
+R1	Coreference Arg1:T1 Arg2:T4	
+R2	Contact Arg1:T1 Arg2:T2	

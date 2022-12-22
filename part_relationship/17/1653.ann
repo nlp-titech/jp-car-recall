@@ -1,0 +1,14 @@
+T16	Parts 0 7	制動灯スイッチ
+T17	Parts 53 57	スイッチ
+T18	Parts 76 80	スイッチ
+T19	Parts 98 102	スイッチ
+T20	Parts 144 147	制動灯
+T1	Parts 33 40	絶縁性グリース
+R1	Coreference Arg1:T16 Arg2:T17	
+T3	Parts 69 73	グリース
+R2	Coreference Arg1:T1 Arg2:T3	
+R3	Coreference Arg1:T18 Arg2:T19	
+T6	Parts 156 162	シフトレバー
+R4	Coreference Arg1:T17 Arg2:T18	
+R5	Connect Arg1:T19 Arg2:T20	
+R6	Connect Arg1:T20 Arg2:T6	

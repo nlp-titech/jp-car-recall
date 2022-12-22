@@ -1,0 +1,17 @@
+T1	Parts 9 16	高圧燃料ポンプ
+T2	Parts 95 99	エンジン
+T3	Parts 111 115	エンジン
+T4	Parts 41 45	ピストン
+T5	Parts 0 4	燃料装置
+T6	Parts 29 32	ポンプ
+T7	Parts 87 90	警告灯
+T8	Parts 33 35	燃料
+T9	Parts 61 63	燃料
+R1	Part-Whole Arg1:T1 Arg2:T5	
+R2	Coreference Arg1:T1 Arg2:T6	
+R3	Contact Arg1:T8 Arg2:T6	
+R4	Coreference Arg1:T8 Arg2:T9	
+R5	Coreference Arg1:T2 Arg2:T3	
+R6	Part-Whole Arg1:T4 Arg2:T6	
+R7	Connect Arg1:T5 Arg2:T7	
+R8	Connect Arg1:T2 Arg2:T5	

@@ -1,0 +1,11 @@
+T1	Parts 4 9	座席ベルト
+T2	Parts 14 19	座席ベルト
+T3	Parts 71 74	ベルト
+T4	Parts 82 85	ベルト
+T7	Parts 0 3	助手席
+T8	Parts 20 22	車体
+R1	Contact Arg1:T1 Arg2:T7	
+R2	Coreference Arg1:T1 Arg2:T2	
+R3	Contact Arg1:T2 Arg2:T8	
+R4	Coreference Arg1:T1 Arg2:T3	
+R5	Coreference Arg1:T1 Arg2:T4	

@@ -1,0 +1,3 @@
+T2	Parts 28 36	上部アームヒンジ
+T4	Parts 6 27	ルーフラック（平積みスキーアタッチメント）
+R2	Part-Whole Arg1:T2 Arg2:T4	

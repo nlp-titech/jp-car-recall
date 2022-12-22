@@ -1,0 +1,10 @@
+T12	Parts 60 78	パワーステアリング・ポンプ取付ボルト
+T13	Parts 90 95	取付ボルト
+T14	Parts 99 108	パワーステアリング
+T15	Parts 11 28	パワーステアリング・ポンプ取付金具
+T1	Parts 0 6	かじ取り装置
+R1	Coreference Arg1:T13 Arg2:T12	
+R5	Part-Whole Arg1:T14 Arg2:T1	
+R2	Part-Whole Arg1:T15 Arg2:T14	
+R3	Part-Whole Arg1:T12 Arg2:T14	
+R4	Contact Arg1:T15 Arg2:T12	

@@ -1,0 +1,14 @@
+T2	Parts 0 30	自動６速マニュアルモードトランスミッション（６ＡＭＴ）搭載車
+T1	Parts 44 53	トランスミッション
+T3	Parts 71 78	クラッチレバー
+T4	Parts 115 122	クラッチレバー
+T5	Parts 167 174	クラッチレバー
+T6	Parts 184 187	警告灯
+T7	Parts 212 214	ギヤ
+R1	Part-Whole Arg1:T1 Arg2:T2	
+R4	Coreference Arg1:T3 Arg2:T4	
+R5	Coreference Arg1:T4 Arg2:T5	
+R6	Part-Whole Arg1:T6 Arg2:T2	
+R2	Part-Whole Arg1:T3 Arg2:T1	
+R3	Part-Whole Arg1:T7 Arg2:T1	
+R7	Connect Arg1:T5 Arg2:T6	

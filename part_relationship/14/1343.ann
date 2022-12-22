@@ -1,0 +1,5 @@
+T1	Parts 0 4	小型バス
+T2	Parts 23 35	前照灯初期傾斜表示ラベル
+T3	Parts 41 43	車両
+R1	Coreference Arg1:T3 Arg2:T1	
+R2	Part-Whole Arg1:T2 Arg2:T1	

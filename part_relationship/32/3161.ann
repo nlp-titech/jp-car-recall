@@ -1,0 +1,13 @@
+T12	Parts 11 19	スターターモータ
+T13	Parts 21 30	バッテリーケーブル
+T14	Parts 44 48	ケーブル
+T15	Parts 84 88	ケーブル
+T1	Parts 0 6	高規格救急車
+R1	Coreference Arg1:T13 Arg2:T14	
+T2	Parts 49 53	エンジン
+R2	Coreference Arg1:T14 Arg2:T15	
+R3	Contact Arg1:T13 Arg2:T12	
+R4	Connect Arg1:T2 Arg2:T12	
+R5	Part-Whole Arg1:T12 Arg2:T1	
+R6	Part-Whole Arg1:T13 Arg2:T1	
+R7	Part-Whole Arg1:T2 Arg2:T1	

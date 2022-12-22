@@ -1,0 +1,10 @@
+T1	Parts 0 3	原動機
+T2	Parts 14 22	クランクシャフト
+T3	Parts 23 30	スラスト軸受け
+T4	Parts 50 53	軸受け
+T5	Parts 105 108	軸受け
+R1	Coreference Arg1:T3 Arg2:T4	
+R2	Coreference Arg1:T4 Arg2:T5	
+R3	Contact Arg1:T3 Arg2:T2	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T3 Arg2:T1	

@@ -1,0 +1,5 @@
+T2	Parts 8 17	Ｏ２センサケーブル
+T3	Parts 49 53	ケーブル
+T4	Parts 0 6	リヤシリンダ
+T6	Parts 28 31	排気管
+R1	Coreference Arg1:T3 Arg2:T2	

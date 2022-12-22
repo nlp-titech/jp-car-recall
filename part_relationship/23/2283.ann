@@ -1,0 +1,17 @@
+T1	Parts 0 8	簡易保冷庫搭載車
+T2	Parts 13 28	ハイマウントストップランプ配線
+T3	Parts 38 41	保冷庫
+T4	Parts 48 50	配線
+R1	Coreference Arg1:T4 Arg2:T2	
+T5	Parts 69 71	車両
+T6	Parts 79 81	配線
+R2	Coreference Arg1:T6 Arg2:T4	
+T7	Parts 85 89	ヒューズ
+T8	Parts 94 107	ハイマウントストップランプ
+R4	Part-Whole Arg1:T3 Arg2:T1	
+R5	Coreference Arg1:T5 Arg2:T1	
+R6	Contact Arg1:T6 Arg2:T7	
+R7	Contact Arg1:T2 Arg2:T8	
+R3	Part-Whole Arg1:T8 Arg2:T1	
+R8	Part-Whole Arg1:T7 Arg2:T5	
+R9	Part-Whole Arg1:T2 Arg2:T1	

@@ -1,0 +1,9 @@
+T1	Parts 0 4	制動装置
+T2	Parts 9 17	ＩＥＢモジュール
+T3	Parts 31 46	モーターモーション検知センサー
+T4	Parts 55 58	警告灯
+T5	Parts 79 87	ブレーキ制動補助
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Connect Arg1:T1 Arg2:T3	
+R3	Connect Arg1:T3 Arg2:T4	
+R4	Connect Arg1:T1 Arg2:T5	

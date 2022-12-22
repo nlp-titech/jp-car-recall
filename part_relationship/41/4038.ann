@@ -1,0 +1,25 @@
+T1	Parts 54 61	ブレーキバルブ
+T2	Parts 65 72	ブレーキホース
+T3	Parts 116 123	ブレーキホース
+T4	Parts 0 6	静油圧変速機
+T5	Parts 100 106	静油圧変速機
+T6	Parts 16 19	ホース
+T7	Parts 26 29	ホース
+T8	Parts 109 112	ホース
+T9	Parts 7 10	ポンプ
+T10	Parts 11 14	モータ
+T11	Parts 127 130	作動油
+T12	Parts 51 53	後輪
+R1	Coreference Arg1:T6 Arg2:T7	
+R2	Coreference Arg1:T4 Arg2:T5	
+R3	Coreference Arg1:T2 Arg2:T3	
+R4	Coreference Arg1:T7 Arg2:T8	
+R5	Contact Arg1:T8 Arg2:T11	
+R6	Contact Arg1:T3 Arg2:T11	
+R7	Part-Whole Arg1:T9 Arg2:T4	
+R8	Contact Arg1:T9 Arg2:T6	
+R9	Contact Arg1:T10 Arg2:T6	
+R10	Connect Arg1:T9 Arg2:T10	
+R11	Contact Arg1:T1 Arg2:T2	
+R12	Connect Arg1:T1 Arg2:T12	
+R13	Contact Arg1:T5 Arg2:T8	

@@ -1,0 +1,9 @@
+T1	Parts 10 15	点火コイル
+T2	Parts 85 90	点火コイル
+T3	Parts 0 9	過給器付きエンジン
+T4	Parts 97 101	エンジン
+T5	Parts 49 53	内部素子
+R1	Part-Whole Arg1:T5 Arg2:T1	
+R2	Part-Whole Arg1:T1 Arg2:T3	
+R3	Coreference Arg1:T2 Arg2:T1	
+R4	Coreference Arg1:T4 Arg2:T3	

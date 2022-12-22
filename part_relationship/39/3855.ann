@@ -1,0 +1,5 @@
+T1	Parts 0 21	助手席用エアバッグインフレータ（膨張装置）
+T4	Parts 85 90	エアバッグ
+T7	Parts 26 33	高圧ガス封止弁
+R1	Part-Whole Arg1:T7 Arg2:T1	
+R5	Part-Whole Arg1:T1 Arg2:T4	

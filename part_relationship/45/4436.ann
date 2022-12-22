@@ -1,0 +1,15 @@
+T1	Parts 69 75	シフトレバー
+T2	Parts 92 98	シフトレバー
+T3	Parts 9 13	モーター
+T4	Parts 15 19	電気配線
+T5	Parts 0 2	ギヤ
+T6	Parts 81 83	ギヤ
+T7	Parts 105 107	ギヤ
+T8	Parts 47 49	配線
+R1	Coreference Arg1:T5 Arg2:T6	
+R2	Coreference Arg1:T4 Arg2:T8	
+R3	Coreference Arg1:T6 Arg2:T7	
+R4	Coreference Arg1:T1 Arg2:T2	
+R6	Contact Arg1:T3 Arg2:T4	
+R7	Connect Arg1:T5 Arg2:T3	
+R8	Connect Arg1:T1 Arg2:T6	

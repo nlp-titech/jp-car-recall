@@ -1,0 +1,17 @@
+T11	Parts 20 28	走行ギヤボックス
+T13	Parts 50 56	ギヤボックス
+T16	Parts 57 59	ギヤ
+T17	Parts 82 88	ギヤボックス
+T20	Parts 100 107	給油口キャップ
+T1	Parts 1 8	刈取脱穀作業車
+T2	Parts 9 15	動力伝達装置
+T3	Parts 31 34	オイル
+T4	Parts 66 69	オイル
+R1	Coreference Arg1:T4 Arg2:T3	
+R2	Coreference Arg1:T17 Arg2:T13	
+T5	Parts 90 93	オイル
+R3	Coreference Arg1:T5 Arg2:T4	
+T6	Parts 109 112	エアー
+T7	Parts 119 120	油
+R4	Coreference Arg1:T13 Arg2:T11	
+R5	Coreference Arg1:T5 Arg2:T7	

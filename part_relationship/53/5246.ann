@@ -1,0 +1,9 @@
+T1	Parts 0 3	変速機
+T2	Parts 25 27	ピン
+T3	Parts 42 44	ピン
+T4	Parts 18 20	歯車
+T5	Parts 89 91	歯車
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Part-Whole Arg1:T4 Arg2:T1	
+R3	Contact Arg1:T4 Arg2:T2	
+R4	Coreference Arg1:T4 Arg2:T5	

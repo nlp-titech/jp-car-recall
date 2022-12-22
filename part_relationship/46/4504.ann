@@ -1,0 +1,11 @@
+T1	Parts 14 20	シートベルト
+T2	Parts 30 36	シートベルト
+T3	Parts 0 4	運転者席
+T4	Parts 21 24	警告灯
+T5	Parts 66 69	警告灯
+T6	Parts 47 50	原動機
+R1	Coreference Arg1:T4 Arg2:T5	
+R2	Coreference Arg1:T1 Arg2:T2	
+R3	Contact Arg1:T3 Arg2:T1	
+R4	Connect Arg1:T1 Arg2:T4	
+#1	AnnotatorNotes R3	QID92参照

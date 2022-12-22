@@ -1,0 +1,9 @@
+T10	Parts 93 102	駐車ブレーキペダル
+T11	Parts 29 37	ラチェットポール
+T1	Parts 0 9	駐車ブレーキペダル
+T2	Parts 66 74	ラチェットポール
+R1	Coreference Arg1:T10 Arg2:T1	
+T3	Parts 107 113	駐車ブレーキ
+R2	Coreference Arg1:T2 Arg2:T11	
+R3	Connect Arg1:T10 Arg2:T3	
+R4	Part-Whole Arg1:T1 Arg2:T11	

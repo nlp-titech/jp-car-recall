@@ -1,0 +1,12 @@
+T1	Parts 19 23	取付金具
+T2	Parts 51 55	取付金具
+T3	Parts 0 4	小型バス
+T4	Parts 9 18	最後列座席下カバー
+T6	Parts 34 36	座席
+T7	Parts 37 39	車体
+R1	Contact Arg1:T4 Arg2:T1	
+R2	Coreference Arg1:T3 Arg2:T7	
+R3	Coreference Arg1:T1 Arg2:T2	
+R4	Contact Arg1:T6 Arg2:T1	
+R5	Part-Whole Arg1:T6 Arg2:T7	
+R6	Part-Whole Arg1:T4 Arg2:T3	

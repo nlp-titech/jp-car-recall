@@ -1,0 +1,11 @@
+T1	Parts 0 4	連節バス
+T2	Parts 9 11	車軸
+T3	Parts 19 26	エアスプリング
+T4	Parts 27 36	ピストン取付ボルト
+T5	Parts 70 75	取付ボルト
+T6	Parts 79 83	ピストン
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T5 Arg2:T4	
+R3	Part-Whole Arg1:T3 Arg2:T2	
+R4	Contact Arg1:T4 Arg2:T3	
+R5	Part-Whole Arg1:T6 Arg2:T3	

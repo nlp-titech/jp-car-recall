@@ -1,0 +1,16 @@
+T1	Parts 0 11	前部座席用シートベルト
+T2	Parts 72 78	シートベルト
+T3	Parts 33 42	ウェーブワッシャー
+T5	Parts 52 56	アンカー
+T7	Parts 82 85	ベルト
+T8	Parts 12 14	車体
+R4	Coreference Arg1:T2 Arg2:T7	
+T4	Parts 22 28	下側アンカー
+R3	Contact Arg1:T1 Arg2:T4	
+R5	Part-Whole Arg1:T3 Arg2:T6	
+R6	Coreference Arg1:T4 Arg2:T5	
+R7	Coreference Arg1:T1 Arg2:T2	
+R1	Contact Arg1:T1 Arg2:T8	
+R2	Contact Arg1:T8 Arg2:T4	
+T6	Parts 58 63	首振り機構
+R8	Part-Whole Arg1:T6 Arg2:T5	

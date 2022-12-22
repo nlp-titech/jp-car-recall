@@ -1,0 +1,9 @@
+T1	Parts 0 3	変速機
+T3	Parts 4 16	シフト及びセレクトロッド
+T4	Parts 17 26	取付金具固定ボルト
+T5	Parts 40 43	ボルト
+T6	Parts 75 78	ボルト
+R1	Coreference Arg1:T4 Arg2:T5	
+R2	Coreference Arg1:T5 Arg2:T6	
+R3	Contact Arg1:T4 Arg2:T3	
+R4	Part-Whole Arg1:T3 Arg2:T1	

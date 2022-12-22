@@ -1,0 +1,9 @@
+T1	Parts 7 16	排気ガス再循環装置
+T2	Parts 17 33	ＥＧＲクーラ（再循環ガス冷却部）
+T3	Parts 0 6	ディーゼル車
+T5	Parts 38 45	バイパスパイプ
+T6	Parts 67 70	パイプ
+R1	Part-Whole Arg1:T1 Arg2:T3	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T5 Arg2:T2	
+R4	Coreference Arg1:T5 Arg2:T6	

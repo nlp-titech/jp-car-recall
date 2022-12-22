@@ -1,0 +1,25 @@
+T27	Parts 101 106	電源リレー
+T28	Parts 30 34	コネクタ
+T29	Parts 49 53	コネクタ
+T30	Parts 133 138	電源リレー
+T31	Parts 193 198	電源リレー
+T1	Parts 0 4	バッテリ
+T2	Parts 6 11	電源リレー
+T3	Parts 13 18	方向指示器
+T4	Parts 21 23	配線
+T7	Parts 117 122	方向指示器
+T8	Parts 146 150	エンジン
+T10	Parts 207 211	エンジン
+R1	Coreference Arg1:T10 Arg2:T8	
+R2	Coreference Arg1:T31 Arg2:T30	
+R3	Coreference Arg1:T30 Arg2:T27	
+R6	Coreference Arg1:T29 Arg2:T28	
+R7	Coreference Arg1:T7 Arg2:T3	
+R8	Coreference Arg1:T27 Arg2:T2	
+R9	Connect Arg1:T2 Arg2:T1	
+R10	Connect Arg1:T3 Arg2:T1	
+R11	Contact Arg1:T4 Arg2:T3	
+R12	Contact Arg1:T4 Arg2:T2	
+R13	Contact Arg1:T4 Arg2:T1	
+R14	Part-Whole Arg1:T28 Arg2:T4	
+R16	Connect Arg1:T30 Arg2:T8	

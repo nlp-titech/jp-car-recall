@@ -1,0 +1,7 @@
+T1	Parts 0 4	小型バス
+T2	Parts 9 17	ブレーキフルード
+T3	Parts 23 26	ラベル
+T4	Parts 42 45	ラベル
+R1	Coreference Arg1:T3 Arg2:T4	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T3 Arg2:T1	

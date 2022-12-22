@@ -1,0 +1,5 @@
+T1	Parts 9 17	バキュームホース
+T2	Parts 0 8	ブレーキ倍力装置
+T3	Parts 47 50	ホース
+R1	Coreference Arg1:T1 Arg2:T3	
+R2	Part-Whole Arg1:T1 Arg2:T2	

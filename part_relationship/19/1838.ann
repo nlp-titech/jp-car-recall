@@ -1,0 +1,8 @@
+T1	Parts 0 12	油圧式パワーステアリング
+T2	Parts 13 21	低圧側油圧ホース
+T3	Parts 34 37	ホース
+T5	Parts 78 81	作動油
+T6	Parts 91 94	排気管
+R1	Coreference Arg1:T3 Arg2:T2	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Contact Arg1:T5 Arg2:T2	

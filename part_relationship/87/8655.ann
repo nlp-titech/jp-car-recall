@@ -1,0 +1,11 @@
+T1	Parts 0 13	エンジン制御装置（ＥＣＵ）
+T2	Parts 18 21	発電機
+T3	Parts 36 41	バッテリー
+T5	Parts 75 79	エンジン
+T6	Parts 97 105	ブレーキ倍力装置
+T7	Parts 123 130	ブレーキペダル
+R1	Connect Arg1:T6 Arg2:T7	
+R2	Connect Arg1:T1 Arg2:T5	
+R3	Connect Arg1:T1 Arg2:T2	
+R4	Connect Arg1:T2 Arg2:T3	
+R5	Connect Arg1:T5 Arg2:T6	

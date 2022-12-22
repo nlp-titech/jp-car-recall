@@ -1,0 +1,28 @@
+T7	Parts 34 36	ハブ
+T9	Parts 38 42	スリーブ
+T10	Parts 24 27	変速機
+T12	Parts 62 66	１速ギヤ
+T13	Parts 137 139	１速
+T14	Parts 29 33	１速ギヤ
+T1	Parts 0 7	ハイブリッド車
+T2	Parts 8 19	７速ＤＣＴ型自動変速機
+R1	Coreference Arg1:T2 Arg2:T10	
+R2	Coreference Arg1:T14 Arg2:T12	
+R3	Coreference Arg1:T12 Arg2:T13	
+T3	Parts 169 178	メータディスプレイ
+T5	Parts 196 208	トランスミッション警告灯
+T6	Parts 213 222	メータディスプレイ
+R4	Coreference Arg1:T3 Arg2:T6	
+T8	Parts 117 121	エンジン
+T11	Parts 224 233	トランスミッション
+R5	Coreference Arg1:T10 Arg2:T11	
+R6	Part-Whole Arg1:T2 Arg2:T1	
+R7	Part-Whole Arg1:T14 Arg2:T10	
+R8	Part-Whole Arg1:T7 Arg2:T14	
+R9	Part-Whole Arg1:T9 Arg2:T14	
+R10	Contact Arg1:T7 Arg2:T9	
+R11	Part-Whole Arg1:T8 Arg2:T1	
+R12	Connect Arg1:T10 Arg2:T8	
+R14	Part-Whole Arg1:T3 Arg2:T1	
+R15	Part-Whole Arg1:T5 Arg2:T1	
+R16	Connect Arg1:T5 Arg2:T11	

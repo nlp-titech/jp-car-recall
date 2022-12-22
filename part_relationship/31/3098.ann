@@ -1,0 +1,25 @@
+T1	Parts 0 47	動力伝達カット装置（乗降口の扉を閉じた後でなければ走行装置に動力を伝達することができない構造）
+T2	Parts 51 55	路線バス
+T3	Parts 60 62	後扉
+T4	Parts 75 79	電気回路
+T5	Parts 112 114	後扉
+R1	Coreference Arg1:T3 Arg2:T5	
+T6	Parts 80 89	動力伝達カット装置
+T7	Parts 91 100	扉挟み込み防止装置
+T8	Parts 129 138	扉挟み込み防止装置
+T9	Parts 147 154	扉開き知らせ灯
+T10	Parts 162 171	動力伝達カット装置
+T11	Parts 205 213	検知器（光電管）
+T12	Parts 219 220	扉
+R4	Coreference Arg1:T10 Arg2:T6	
+R5	Coreference Arg1:T12 Arg2:T5	
+R6	Part-Whole Arg1:T1 Arg2:T2	
+R10	Part-Whole Arg1:T3 Arg2:T2	
+R11	Part-Whole Arg1:T8 Arg2:T2	
+R12	Part-Whole Arg1:T4 Arg2:T2	
+R13	Part-Whole Arg1:T9 Arg2:T2	
+R14	Part-Whole Arg1:T11 Arg2:T8	
+R2	Coreference Arg1:T1 Arg2:T6	
+R3	Coreference Arg1:T7 Arg2:T8	
+R8	Connect Arg1:T4 Arg2:T6	
+R9	Connect Arg1:T4 Arg2:T7	

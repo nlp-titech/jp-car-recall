@@ -1,0 +1,20 @@
+T1	Parts 24 39	給気冷却器（インタークーラー）
+T3	Parts 73 78	ボンネット
+T4	Parts 40 44	エンジン
+T5	Parts 159 163	エンジン
+T7	Parts 10 23	過給機（ターボチャージャ）
+T8	Parts 90 96	樹脂製留め具
+T9	Parts 67 70	給気管
+T10	Parts 56 59	絞り弁
+T11	Parts 132 135	絞り弁
+T12	Parts 148 151	絞り弁
+R1	Part-Whole Arg1:T1 Arg2:T7	
+R4	Contact Arg1:T9 Arg2:T1	
+R2	Part-Whole Arg1:T10 Arg2:T4	
+R3	Contact Arg1:T9 Arg2:T10	
+T2	Parts 128 131	留め具
+R5	Coreference Arg1:T8 Arg2:T2	
+R6	Coreference Arg1:T10 Arg2:T11	
+R7	Coreference Arg1:T4 Arg2:T5	
+R9	Contact Arg1:T8 Arg2:T3	
+R8	Coreference Arg1:T11 Arg2:T12	

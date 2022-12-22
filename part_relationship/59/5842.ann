@@ -1,0 +1,15 @@
+T3	Parts 14 24	通気用ラバーチューブ
+T4	Parts 0 9	リヤランプユニット
+T5	Parts 88 91	制動灯
+T6	Parts 105 108	制動灯
+T12	Parts 93 95	尾灯
+T13	Parts 110 112	尾灯
+T1	Parts 78 81	ＬＥＤ
+R1	Coreference Arg1:T5 Arg2:T6	
+R2	Coreference Arg1:T12 Arg2:T13	
+R3	Part-Whole Arg1:T3 Arg2:T4	
+R7	Part-Whole Arg1:T5 Arg2:T4	
+R8	Part-Whole Arg1:T12 Arg2:T4	
+R6	Part-Whole Arg1:T1 Arg2:T5	
+R10	Part-Whole Arg1:T1 Arg2:T12	
+#1	AnnotatorNotes T1	「LED電気基盤」「電気基盤」は誤字

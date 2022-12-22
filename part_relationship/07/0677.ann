@@ -1,0 +1,5 @@
+T1	Parts 0 2	座席
+T2	Parts 10 12	車枠
+T5	Parts 71 73	座席
+R1	Coreference Arg1:T5 Arg2:T1	
+R3	Contact Arg1:T2 Arg2:T1	

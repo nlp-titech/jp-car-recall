@@ -1,0 +1,28 @@
+T1	Parts 110 122	パワーステアリングオイル
+T2	Parts 7 16	パワーステアリング
+T3	Parts 79 88	パワーステアリング
+T4	Parts 17 22	油圧ホース
+T5	Parts 89 94	油圧ホース
+T9	Parts 127 131	ハンドル
+T10	Parts 45 48	ホース
+T11	Parts 28 31	遮熱板
+T12	Parts 51 54	遮熱板
+T13	Parts 153 156	排気管
+T8	Parts 0 6	右ハンドル車
+T14	Parts 23 27	触媒装置
+T15	Parts 67 71	触媒装置
+T6	Parts 149 152	オイル
+R1	Part-Whole Arg1:T2 Arg2:T8	
+R2	Coreference Arg1:T4 Arg2:T10	
+R3	Coreference Arg1:T11 Arg2:T12	
+R4	Coreference Arg1:T14 Arg2:T15	
+R5	Coreference Arg1:T2 Arg2:T3	
+R6	Coreference Arg1:T10 Arg2:T5	
+R8	Coreference Arg1:T1 Arg2:T6	
+R9	Part-Whole Arg1:T11 Arg2:T14	
+R10	Part-Whole Arg1:T4 Arg2:T2	
+R11	Contact Arg1:T1 Arg2:T5	
+R7	Part-Whole Arg1:T9 Arg2:T8	
+R12	Contact Arg1:T15 Arg2:T13	
+R13	Connect Arg1:T3 Arg2:T9	
+R14	Part-Whole Arg1:T13 Arg2:T8	

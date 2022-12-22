@@ -1,0 +1,10 @@
+T10	Parts 77 80	前照灯
+T11	Parts 91 96	側方照射灯
+T12	Parts 25 64	オートライトシステム（車外の明るさに応じて前照灯を自動的に点灯、消灯する装置）
+T1	Parts 0 7	側方照射灯付車
+T3	Parts 65 69	電気回路
+R4	Part-Whole Arg1:T11 Arg2:T1	
+R5	Part-Whole Arg1:T10 Arg2:T1	
+R6	Part-Whole Arg1:T3 Arg2:T12	
+R7	Part-Whole Arg1:T12 Arg2:T1	
+R1	Connect Arg1:T12 Arg2:T10	

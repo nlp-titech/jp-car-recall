@@ -1,0 +1,11 @@
+T10	Parts 101 104	ペダル
+T11	Parts 31 38	取付けシャフト
+T12	Parts 53 57	シャフト
+T1	Parts 0 7	ブレーキペダル
+T2	Parts 18 26	ポテンショメータ
+R1	Coreference Arg1:T12 Arg2:T11	
+T3	Parts 93 97	ブレーキ
+R2	Coreference Arg1:T10 Arg2:T1	
+R3	Part-Whole Arg1:T10 Arg2:T3	
+R4	Contact Arg1:T11 Arg2:T2	
+R5	Connect Arg1:T2 Arg2:T1	

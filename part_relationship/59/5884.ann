@@ -1,0 +1,23 @@
+T1	Parts 187 196	燃料フィラーパイプ
+T2	Parts 201 210	燃料フィラーホース
+T3	Parts 2 7	燃料タンク
+T4	Parts 181 186	燃料タンク
+T5	Parts 100 104	エンジン
+T8	Parts 8 17	ポンプモーター配線
+T16	Parts 92 94	燃料
+T17	Parts 138 140	燃料
+T18	Parts 156 158	燃料
+T19	Parts 221 223	燃料
+T20	Parts 237 239	燃料
+R1	Coreference Arg1:T3 Arg2:T4	
+R2	Coreference Arg1:T16 Arg2:T17	
+R3	Coreference Arg1:T17 Arg2:T18	
+R4	Coreference Arg1:T18 Arg2:T19	
+R5	Coreference Arg1:T19 Arg2:T20	
+R6	Part-Whole Arg1:T16 Arg2:T3	
+R7	Contact Arg1:T3 Arg2:T8	
+R8	Contact Arg1:T4 Arg2:T2	
+R9	Contact Arg1:T1 Arg2:T2	
+R10	Connect Arg1:T4 Arg2:T1	
+R11	Contact Arg1:T2 Arg2:T19	
+R12	Contact Arg1:T1 Arg2:T19	

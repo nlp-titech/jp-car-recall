@@ -1,0 +1,7 @@
+T1	Parts 0 13	フロントディファレンシャル
+T2	Parts 122 135	フロントディファレンシャル
+T3	Parts 27 34	スナップリング
+T4	Parts 62 69	スナップリング
+R3	Coreference Arg1:T3 Arg2:T4	
+R5	Coreference Arg1:T1 Arg2:T2	
+R1	Part-Whole Arg1:T3 Arg2:T1	

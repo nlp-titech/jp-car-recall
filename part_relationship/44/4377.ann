@@ -1,0 +1,19 @@
+T2	Parts 12 17	燃料タンク
+T5	Parts 29 35	ゴム製ホース
+T6	Parts 81 84	ホース
+T8	Parts 91 94	留金具
+T9	Parts 109 111	燃料
+T10	Parts 8 11	給油管
+T1	Parts 37 42	燃料タンク
+T3	Parts 43 49	換気用ホース
+R3	Part-Whole Arg1:T3 Arg2:T1	
+R4	Coreference Arg1:T2 Arg2:T1	
+R2	Contact Arg1:T5 Arg2:T10	
+R5	Contact Arg1:T5 Arg2:T2	
+R1	Contact Arg1:T3 Arg2:T10	
+R6	Contact Arg1:T3 Arg2:T2	
+R9	Contact Arg1:T8 Arg2:T6	
+R10	Part-Whole Arg1:T9 Arg2:T2	
+R7	Oneway-Coreference Arg1:T6 Arg2:T3	
+R8	Oneway-Coreference Arg1:T6 Arg2:T5	
+R11	Contact Arg1:T9 Arg2:T5	

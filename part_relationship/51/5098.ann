@@ -1,0 +1,10 @@
+T1	Parts 8 14	コンピュータ
+T3	Parts 28 32	エンジン
+T4	Parts 49 53	ブレーキ
+T5	Parts 0 3	ＡＢＳ
+T6	Parts 79 82	ＡＢＳ
+T8	Parts 61 63	車輪
+R1	Coreference Arg1:T6 Arg2:T5	
+R3	Connect Arg1:T1 Arg2:T5	
+R4	Connect Arg1:T4 Arg2:T5	
+R2	Connect Arg1:T4 Arg2:T8	

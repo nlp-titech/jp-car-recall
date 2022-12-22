@@ -1,0 +1,19 @@
+T18	Parts 133 137	エンジン
+T19	Parts 1 7	燃料噴射装置
+T20	Parts 8 15	高圧燃料パイプ
+T21	Parts 22 27	燃料パイプ
+T22	Parts 28 34	締付クランプ
+T23	Parts 45 49	エンジン
+T24	Parts 54 61	クランプボルト
+T25	Parts 71 75	クランプ
+T26	Parts 107 114	高圧燃料パイプ
+R1	Coreference Arg1:T20 Arg2:T21	
+R2	Coreference Arg1:T22 Arg2:T25	
+R3	Coreference Arg1:T21 Arg2:T26	
+R4	Coreference Arg1:T23 Arg2:T18	
+R5	Part-Whole Arg1:T20 Arg2:T19	
+R6	Contact Arg1:T22 Arg2:T21	
+R7	Part-Whole Arg1:T19 Arg2:T23	
+R8	Contact Arg1:T24 Arg2:T22	
+T1	Parts 121 123	燃料
+R9	Contact Arg1:T26 Arg2:T1	

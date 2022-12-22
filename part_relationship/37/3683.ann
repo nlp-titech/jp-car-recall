@@ -1,0 +1,3 @@
+T1	Parts 78 86	スターターモータ
+T2	Parts 0 5	バッテリー
+R3	Connect Arg1:T1 Arg2:T2	

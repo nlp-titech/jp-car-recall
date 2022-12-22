@@ -1,0 +1,3 @@
+T1	Parts 40 46	ステアリング
+T2	Parts 27 31	ハンドル
+R1	Connect Arg1:T1 Arg2:T2	

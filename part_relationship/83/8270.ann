@@ -1,0 +1,16 @@
+T1	Parts 0 2	後輪
+T2	Parts 3 7	アクスル
+T3	Parts 12 14	ハブ
+T4	Parts 19 26	アクスルボルト
+T5	Parts 47 50	ボルト
+T6	Parts 99 102	ボルト
+T7	Parts 106 108	ハブ
+T8	Parts 112 116	ホイール
+R1	Connect Arg1:T1 Arg2:T2	
+R2	Contact Arg1:T3 Arg2:T2	
+R3	Contact Arg1:T4 Arg2:T3	
+R4	Coreference Arg1:T5 Arg2:T4	
+R5	Coreference Arg1:T6 Arg2:T5	
+R6	Coreference Arg1:T7 Arg2:T3	
+R7	Contact Arg1:T8 Arg2:T7	
+R8	Part-Whole Arg1:T8 Arg2:T1	

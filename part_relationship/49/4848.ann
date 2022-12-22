@@ -1,0 +1,20 @@
+T1	Parts 5 9	運転者席
+T3	Parts 69 73	背もたれ
+T4	Parts 92 96	背もたれ
+T5	Parts 29 32	カバー
+T6	Parts 51 54	カバー
+T7	Parts 19 28	背もたれ倒しレバー
+T8	Parts 47 50	レバー
+T10	Parts 11 14	助手席
+T12	Parts 0 4	３ドア車
+R1	Part-Whole Arg1:T1 Arg2:T12	
+R2	Part-Whole Arg1:T10 Arg2:T1	
+R3	Part-Whole Arg1:T7 Arg2:T1	
+R4	Part-Whole Arg1:T7 Arg2:T10	
+R5	Part-Whole Arg1:T5 Arg2:T7	
+R6	Coreference Arg1:T7 Arg2:T8	
+R7	Coreference Arg1:T5 Arg2:T6	
+R8	Connect Arg1:T7 Arg2:T3	
+R9	Coreference Arg1:T3 Arg2:T4	
+R10	Part-Whole Arg1:T3 Arg2:T10	
+R11	Part-Whole Arg1:T3 Arg2:T1	

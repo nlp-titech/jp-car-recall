@@ -1,0 +1,9 @@
+T12	Parts 0 3	制動灯
+T13	Parts 8 17	制動灯点灯用リレー
+T14	Parts 45 48	リレー
+T15	Parts 90 93	制動灯
+T1	Parts 33 37	ブレーキ
+R1	Coreference Arg1:T14 Arg2:T13	
+R2	Coreference Arg1:T15 Arg2:T12	
+R4	Connect Arg1:T13 Arg2:T12	
+R6	Connect Arg1:T1 Arg2:T13	

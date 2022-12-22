@@ -1,0 +1,13 @@
+T1	Parts 0 5	座席ベルト
+T2	Parts 6 14	非装着時警報装置
+T3	Parts 19 26	メーターパネル
+T4	Parts 56 58	前席
+T5	Parts 59 65	シートベルト
+T7	Parts 41 48	制御プログラム
+T8	Parts 95 100	座席ベルト
+R1	Part-Whole Arg1:T5 Arg2:T4	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Coreference Arg1:T1 Arg2:T5	
+R4	Part-Whole Arg1:T7 Arg2:T3	
+R6	Coreference Arg1:T5 Arg2:T8	
+R5	Connect Arg1:T2 Arg2:T3	

@@ -1,0 +1,15 @@
+T1	Parts 0 4	制動装置
+T2	Parts 9 32	後輪用ブレーキシステム（ＡＢＳモジュレーター）
+T3	Parts 33 41	ブレーキフルード
+T4	Parts 56 64	ブレーキシステム
+T5	Parts 94 102	ブレーキシステム
+T6	Parts 107 116	ブレーキキャリパー
+T7	Parts 121 128	後輪用ブレーキ
+T8	Parts 65 69	フルード
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T2	
+R3	Coreference Arg1:T4 Arg2:T2	
+R4	Coreference Arg1:T8 Arg2:T3	
+R5	Coreference Arg1:T5 Arg2:T4	
+R6	Part-Whole Arg1:T6 Arg2:T1	
+R7	Coreference Arg1:T7 Arg2:T2	

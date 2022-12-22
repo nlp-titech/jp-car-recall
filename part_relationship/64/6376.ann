@@ -1,0 +1,12 @@
+T1	Parts 0 7	クラッチペダル
+T2	Parts 62 69	クラッチペダル
+T3	Parts 22 29	プッシュロッド
+T4	Parts 54 61	プッシュロッド
+T5	Parts 12 16	クラッチ
+T6	Parts 83 87	クラッチ
+R1	Coreference Arg1:T3 Arg2:T4	
+R2	Coreference Arg1:T1 Arg2:T2	
+R3	Coreference Arg1:T5 Arg2:T6	
+R4	Contact Arg1:T4 Arg2:T2	
+R5	Connect Arg1:T1 Arg2:T5	
+R6	Connect Arg1:T3 Arg2:T5	

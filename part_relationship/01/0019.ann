@@ -1,0 +1,15 @@
+T10	Parts 17 21	止め金具
+T11	Parts 22 31	フック（掛け金具）
+T12	Parts 32 41	カラー（筒状金具）
+T15	Parts 70 73	フック
+T16	Parts 112 117	ボンネット
+T1	Parts 0 5	ボンネット
+T2	Parts 6 12	副ロック装置
+T3	Parts 55 58	フック
+R1	Coreference Arg1:T16 Arg2:T1	
+R2	Coreference Arg1:T3 Arg2:T11	
+R3	Coreference Arg1:T3 Arg2:T15	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T10 Arg2:T2	
+R6	Part-Whole Arg1:T11 Arg2:T10	
+R7	Part-Whole Arg1:T12 Arg2:T10	

@@ -1,0 +1,16 @@
+T20	Parts 61 65	エンジン
+T21	Parts 43 50	フライホイール
+T1	Parts 0 5	自動変速機
+T2	Parts 10 16	大型トラック
+T3	Parts 21 25	エンジン
+T4	Parts 30 38	トルクコンバータ
+T5	Parts 79 86	フライホイール
+T6	Parts 148 155	フライホイール
+R1	Coreference Arg1:T3 Arg2:T20	
+R2	Coreference Arg1:T5 Arg2:T6	
+R3	Part-Whole Arg1:T1 Arg2:T2	
+R4	Contact Arg1:T21 Arg2:T4	
+R5	Contact Arg1:T21 Arg2:T3	
+R6	Coreference Arg1:T5 Arg2:T21	
+R7	Part-Whole Arg1:T21 Arg2:T1	
+R8	Part-Whole Arg1:T3 Arg2:T2	

@@ -1,0 +1,9 @@
+T9	Parts 26 35	運転者席側スイッチ
+T10	Parts 65 69	スイッチ
+T11	Parts 76 81	ドアガラス
+T2	Parts 15 20	ドアガラス
+R1	Coreference Arg1:T9 Arg2:T10	
+R2	Coreference Arg1:T11 Arg2:T2	
+T1	Parts 0 10	パワーウィンド装着車
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Contact Arg1:T9 Arg2:T2	

@@ -1,0 +1,8 @@
+T1	Parts 0 4	大型バス
+T2	Parts 5 10	燃料ホース
+T3	Parts 98 100	燃料
+T4	Parts 15 20	成型ホース
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T1	
+R3	Coreference Arg1:T2 Arg2:T4	
+R4	Contact Arg1:T4 Arg2:T3	

@@ -1,0 +1,14 @@
+T10	Parts 26 30	電気配線
+T11	Parts 69 72	灯火器
+T1	Parts 0 2	車室
+T2	Parts 4 7	通路灯
+T3	Parts 9 14	ステップ灯
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T3 Arg2:T1	
+T4	Parts 15 25	灯火器背面ハウジング
+R1	Part-Whole Arg1:T4 Arg2:T2	
+R4	Part-Whole Arg1:T4 Arg2:T3	
+R5	Oneway-Coreference Arg1:T11 Arg2:T2	
+R6	Oneway-Coreference Arg1:T11 Arg2:T3	
+R7	Contact Arg1:T10 Arg2:T11	
+R8	Part-Whole Arg1:T10 Arg2:T1	

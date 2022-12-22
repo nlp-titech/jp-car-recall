@@ -1,0 +1,13 @@
+T10	Parts 0 4	制動装置
+T11	Parts 11 18	ブレーキパイプ
+T12	Parts 36 43	ブレーキパイプ
+T13	Parts 44 53	駐車ブレーキレバー
+T15	Parts 76 83	ブレーキパイプ
+R1	Coreference Arg1:T12 Arg2:T11	
+R2	Coreference Arg1:T15 Arg2:T12	
+T2	Parts 89 94	ブレーキ液
+R5	Contact Arg1:T2 Arg2:T15	
+R6	Contact Arg1:T13 Arg2:T12	
+R3	Part-Whole Arg1:T11 Arg2:T10	
+R4	Contact Arg1:T13 Arg2:T10	
+R7	Part-Whole Arg1:T2 Arg2:T10	

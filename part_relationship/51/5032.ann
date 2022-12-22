@@ -1,0 +1,14 @@
+T2	Parts 106 113	セレクトレバー
+T3	Parts 0 17	ギヤ･セレクトレバー（I-シフト）
+T5	Parts 37 40	レバー
+T6	Parts 56 70	ロック解除ボタン（Ｆボタン）
+T8	Parts 121 123	ギヤ
+T9	Parts 18 27	シフト位置認識回路
+T10	Parts 130 132	車両
+R1	Coreference Arg1:T5 Arg2:T3	
+R4	Coreference Arg1:T2 Arg2:T5	
+R6	Part-Whole Arg1:T8 Arg2:T10	
+R7	Part-Whole Arg1:T2 Arg2:T10	
+R5	Connect Arg1:T2 Arg2:T8	
+R2	Part-Whole Arg1:T6 Arg2:T5	
+R3	Part-Whole Arg1:T9 Arg2:T3	

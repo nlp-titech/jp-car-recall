@@ -1,0 +1,14 @@
+T11	Parts 17 24	右旋回用アーム
+T12	Parts 38 41	アーム
+T13	Parts 51 54	ローラ
+T14	Parts 90 93	ローラ
+T1	Parts 0 6	かじ取り装置
+T2	Parts 7 12	リンク機構
+R1	Coreference Arg1:T12 Arg2:T11	
+R2	Coreference Arg1:T14 Arg2:T13	
+T3	Parts 98 100	車両
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T11 Arg2:T2	
+R5	Contact Arg1:T13 Arg2:T12	
+R7	Part-Whole Arg1:T1 Arg2:T3	
+R6	Part-Whole Arg1:T13 Arg2:T2	

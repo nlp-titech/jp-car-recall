@@ -1,0 +1,11 @@
+T1	Parts 34 39	取付ボルト
+T9	Parts 108 112	ホイール
+T6	Parts 0 6	リアホイール
+T2	Parts 7 15	ブレーキディスク
+T3	Parts 25 33	ホイールフランジ
+T4	Parts 58 66	ホイールフランジ
+R1	Coreference Arg1:T3 Arg2:T4	
+R2	Contact Arg1:T3 Arg2:T1	
+R4	Coreference Arg1:T6 Arg2:T9	
+R3	Contact Arg1:T6 Arg2:T3	
+R5	Contact Arg1:T2 Arg2:T6	

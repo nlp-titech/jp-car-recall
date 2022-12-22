@@ -1,0 +1,15 @@
+T12	Parts 100 111	トラックローラー仕組み
+T13	Parts 44 52	トラックローラ軸
+T14	Parts 113 122	イコライザー仕組み
+T1	Parts 0 4	走行装置
+T2	Parts 9 11	車台
+T3	Parts 15 26	トラックローラー仕組み
+T4	Parts 28 37	イコライザー仕組み
+R1	Coreference Arg1:T12 Arg2:T3	
+R2	Coreference Arg1:T14 Arg2:T4	
+R5	Part-Whole Arg1:T3 Arg2:T1	
+R6	Part-Whole Arg1:T4 Arg2:T1	
+R7	Part-Whole Arg1:T13 Arg2:T4	
+R8	Part-Whole Arg1:T13 Arg2:T3	
+R4	Contact Arg1:T2 Arg2:T3	
+R3	Contact Arg1:T2 Arg2:T4	

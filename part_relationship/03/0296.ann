@@ -1,0 +1,14 @@
+T10	Parts 0 9	空気バネ付運転者席
+T11	Parts 39 43	運転者席
+T12	Parts 75 81	運転席取付枠
+T13	Parts 110 113	ワイパ
+T14	Parts 115 121	補助ブレーキ
+T2	Parts 15 19	電気配線
+R1	Coreference Arg1:T11 Arg2:T10	
+T3	Parts 70 74	電気配線
+T4	Parts 98 102	電気配線
+R2	Coreference Arg1:T4 Arg2:T3	
+R3	Coreference Arg1:T3 Arg2:T2	
+R6	Contact Arg1:T10 Arg2:T12	
+R4	Connect Arg1:T4 Arg2:T13	
+R5	Connect Arg1:T4 Arg2:T14	

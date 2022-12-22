@@ -1,0 +1,3 @@
+T1	Parts 13 20	ホイール・ハブ
+T5	Parts 0 12	リヤ・アクスル・シャフト
+R3	Contact Arg1:T1 Arg2:T5	

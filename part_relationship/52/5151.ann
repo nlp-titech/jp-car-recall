@@ -1,0 +1,12 @@
+T1	Parts 0 7	アクセルペダル
+T2	Parts 82 89	アクセルペダル
+T3	Parts 106 113	アクセルペダル
+T4	Parts 8 15	クロスシャフト
+T7	Parts 40 45	ロックピン
+T5	Parts 16 26	スロットルハウジング
+R1	Part-Whole Arg1:T4 Arg2:T1	
+R2	Coreference Arg1:T1 Arg2:T2	
+R3	Coreference Arg1:T2 Arg2:T3	
+R4	Contact Arg1:T4 Arg2:T5	
+R5	Contact Arg1:T5 Arg2:T7	
+R6	Contact Arg1:T4 Arg2:T7	

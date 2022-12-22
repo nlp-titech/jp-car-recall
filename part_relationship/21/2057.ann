@@ -1,0 +1,14 @@
+T16	Parts 13 21	フロントアクスル
+T17	Parts 42 46	アクスル
+T18	Parts 52 56	減速ギヤ
+T19	Parts 57 62	ベアリング
+T20	Parts 67 71	減速ギヤ
+T21	Parts 118 120	ギヤ
+T1	Parts 0 8	低床型全輪駆動車
+R1	Coreference Arg1:T20 Arg2:T18	
+R2	Coreference Arg1:T21 Arg2:T20	
+R3	Coreference Arg1:T17 Arg2:T16	
+R4	Part-Whole Arg1:T16 Arg2:T1	
+R5	Part-Whole Arg1:T19 Arg2:T18	
+R6	Part-Whole Arg1:T18 Arg2:T1	
+R7	Contact Arg1:T17 Arg2:T18	

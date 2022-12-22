@@ -1,0 +1,9 @@
+T12	Parts 87 90	ベルト
+T13	Parts 91 106	パワーステアリングポンププーリ
+T14	Parts 26 34	テンショナプーリ
+T1	Parts 0 18	パワーステアリングポンプ駆動用ベルト
+R2	Coreference Arg1:T12 Arg2:T1	
+T2	Parts 111 115	ハンドル
+R1	Contact Arg1:T14 Arg2:T1	
+R3	Contact Arg1:T13 Arg2:T12	
+R4	Connect Arg1:T2 Arg2:T13	

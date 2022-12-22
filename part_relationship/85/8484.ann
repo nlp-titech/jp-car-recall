@@ -1,0 +1,41 @@
+T1	Parts 3 8	ウイング車
+T2	Parts 13 25	ウイング開閉用油圧ホース
+T3	Parts 36 40	フレーム
+T4	Parts 64 68	ウイング
+T5	Parts 77 80	ホース
+T6	Parts 99 102	作動油
+T7	Parts 106 110	ウイング
+T8	Parts 130 134	ウイング
+T9	Parts 137 142	開用ホース
+T10	Parts 149 153	ウイング
+T11	Parts 168 175	中型ウイング車
+T12	Parts 180 194	ウイング開閉用油圧シリンダー
+T13	Parts 195 201	閉用配管継手
+T14	Parts 212 214	継手
+T15	Parts 228 232	ウイング
+T16	Parts 241 246	閉用ホース
+T17	Parts 247 251	フレーム
+T18	Parts 260 263	作動油
+T19	Parts 267 271	ウイング
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T1	
+R3	Contact Arg1:T4 Arg2:T2	
+R4	Part-Whole Arg1:T4 Arg2:T1	
+R5	Coreference Arg1:T5 Arg2:T2	
+R6	Connect Arg1:T6 Arg2:T5	
+R7	Coreference Arg1:T7 Arg2:T4	
+R8	Coreference Arg1:T8 Arg2:T7	
+R9	Oneway-Coreference Arg1:T9 Arg2:T5	
+R10	Coreference Arg1:T10 Arg2:T8	
+R11	Part-Whole Arg1:T12 Arg2:T11	
+R12	Contact Arg1:T13 Arg2:T12	
+R13	Coreference Arg1:T14 Arg2:T13	
+R14	Contact Arg1:T16 Arg2:T14	
+R15	Coreference Arg1:T15 Arg2:T10	
+R16	Coreference Arg1:T19 Arg2:T15	
+R17	Coreference Arg1:T17 Arg2:T3	
+R18	Coreference Arg1:T18 Arg2:T6	
+R19	Connect Arg1:T18 Arg2:T12	
+R20	Connect Arg1:T18 Arg2:T13	
+R21	Connect Arg1:T18 Arg2:T16	
+R22	Oneway-Coreference Arg1:T11 Arg2:T1	

@@ -1,0 +1,17 @@
+T14	Parts 27 33	ﾌﾞﾗｹｯﾄ
+T15	Parts 55 61	ﾌﾞﾗｹｯﾄ
+T16	Parts 72 86	ﾌﾞﾗｹｯﾄ取り付けﾎﾞﾙﾄ
+T1	Parts 0 3	原動機
+T2	Parts 8 18	走行ﾓｰﾀ（電動機）
+T3	Parts 19 21	車体
+R1	Coreference Arg1:T15 Arg2:T14	
+T4	Parts 107 112	走行ﾓｰﾀ
+R2	Coreference Arg1:T4 Arg2:T2	
+T5	Parts 139 142	ﾘﾚｰ
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Contact Arg1:T3 Arg2:T2	
+R5	Contact Arg1:T14 Arg2:T2	
+R6	Contact Arg1:T14 Arg2:T3	
+R7	Contact Arg1:T16 Arg2:T15	
+R8	Connect Arg1:T4 Arg2:T5	
+R9	Contact Arg1:T16 Arg2:T3	

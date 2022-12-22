@@ -1,0 +1,18 @@
+T1	Parts 11 26	パワーステアリング用油圧ホース
+T2	Parts 0 6	かじ取り装置
+T3	Parts 97 101	ハンドル
+T4	Parts 84 87	作動油
+T5	Parts 116 119	作動油
+T6	Parts 41 44	ホース
+T7	Parts 72 75	ホース
+T8	Parts 45 48	排気管
+T9	Parts 62 65	排気管
+T10	Parts 120 123	排気管
+R1	Part-Whole Arg1:T1 Arg2:T2	
+R2	Coreference Arg1:T1 Arg2:T6	
+R4	Coreference Arg1:T8 Arg2:T9	
+R5	Coreference Arg1:T1 Arg2:T7	
+R6	Contact Arg1:T4 Arg2:T1	
+R7	Connect Arg1:T3 Arg2:T2	
+R8	Coreference Arg1:T4 Arg2:T5	
+R9	Coreference Arg1:T8 Arg2:T10	

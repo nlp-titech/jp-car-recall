@@ -1,0 +1,9 @@
+T1	Parts 0 3	変速機
+T2	Parts 4 18	ギアシフトユニット（ＧＳＵ）
+T3	Parts 28 34	アウタレバー
+T4	Parts 49 52	レバー
+R1	Coreference Arg1:T3 Arg2:T4	
+T5	Parts 89 92	レバー
+R2	Coreference Arg1:T4 Arg2:T5	
+R3	Part-Whole Arg1:T3 Arg2:T2	
+R4	Part-Whole Arg1:T2 Arg2:T1	

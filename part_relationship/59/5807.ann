@@ -1,0 +1,10 @@
+T1	Parts 27 44	マスターワイパーモーター・ユニット
+T2	Parts 94 100	伝達シャフト
+T5	Parts 87 91	ユニット
+T6	Parts 0 17	前面ウィンドスクリーンワイパー装置
+T7	Parts 105 109	ワイパー
+T8	Parts 22 25	運転席
+R1	Coreference Arg1:T6 Arg2:T7	
+R2	Part-Whole Arg1:T1 Arg2:T6	
+R3	Coreference Arg1:T1 Arg2:T5	
+R4	Part-Whole Arg1:T2 Arg2:T5	

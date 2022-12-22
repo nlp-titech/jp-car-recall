@@ -1,0 +1,11 @@
+T10	Parts 10 15	燃料タンク
+T11	Parts 18 22	敷きゴム
+T12	Parts 43 48	燃料タンク
+T13	Parts 85 90	燃料タンク
+T1	Parts 0 5	燃料タンク
+R1	Coreference Arg1:T10 Arg2:T1	
+R2	Coreference Arg1:T12 Arg2:T10	
+R3	Coreference Arg1:T13 Arg2:T12	
+T2	Parts 94 96	燃料
+R4	Contact Arg1:T11 Arg2:T10	
+R5	Part-Whole Arg1:T2 Arg2:T13	

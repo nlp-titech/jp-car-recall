@@ -1,0 +1,11 @@
+T4	Parts 99 104	ロアアーム
+T5	Parts 56 59	ナット
+T6	Parts 85 88	ナット
+T3	Parts 0 9	フロントロアアーム
+T2	Parts 24 33	セルフロックナット
+R1	Coreference Arg1:T2 Arg2:T5	
+R2	Coreference Arg1:T5 Arg2:T6	
+R3	Coreference Arg1:T3 Arg2:T4	
+T1	Parts 14 22	ボールジョイント
+R4	Part-Whole Arg1:T1 Arg2:T3	
+R5	Contact Arg1:T1 Arg2:T2	

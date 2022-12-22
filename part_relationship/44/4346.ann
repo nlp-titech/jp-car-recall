@@ -1,0 +1,15 @@
+T1	Parts 57 62	燃料タンク
+T2	Parts 0 3	原動機
+T3	Parts 22 46	制御弁（燃料室内の燃料を常に一定量に制御する弁）
+T5	Parts 16 18	燃料
+T8	Parts 65 67	燃料
+T9	Parts 98 100	燃料
+R1	Contact Arg1:T5 Arg2:T4	
+R2	Part-Whole Arg1:T3 Arg2:T4	
+R4	Coreference Arg1:T5 Arg2:T8	
+T4	Parts 4 7	気化器
+R6	Part-Whole Arg1:T4 Arg2:T2	
+T6	Parts 91 94	気化器
+R8	Coreference Arg1:T4 Arg2:T6	
+R5	Coreference Arg1:T8 Arg2:T9	
+R9	Part-Whole Arg1:T8 Arg2:T1	

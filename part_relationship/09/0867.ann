@@ -1,0 +1,30 @@
+T1	Parts 5 7	車枠
+T2	Parts 0 2	車両
+T3	Parts 8 10	車体
+T4	Parts 12 16	電気配線
+T5	Parts 25 27	車体
+T7	Parts 70 72	配線
+T8	Parts 73 75	被覆
+T9	Parts 108 110	被覆
+T10	Parts 115 117	芯線
+T11	Parts 130 133	灯火類
+T12	Parts 145 149	エンジン
+R1	Coreference Arg1:T9 Arg2:T8	
+R3	Coreference Arg1:T5 Arg2:T3	
+T13	Parts 36 41	配線被覆材
+R2	Coreference Arg1:T13 Arg2:T8	
+T14	Parts 59 61	車両
+R6	Coreference Arg1:T2 Arg2:T14	
+T15	Parts 179 182	対象車
+R7	Coreference Arg1:T14 Arg2:T15	
+R8	Part-Whole Arg1:T1 Arg2:T2	
+R9	Part-Whole Arg1:T3 Arg2:T2	
+R10	Part-Whole Arg1:T4 Arg2:T2	
+R4	Part-Whole Arg1:T13 Arg2:T4	
+R5	Coreference Arg1:T4 Arg2:T7	
+R11	Part-Whole Arg1:T10 Arg2:T7	
+R12	Contact Arg1:T9 Arg2:T10	
+R13	Contact Arg1:T7 Arg2:T11	
+R14	Contact Arg1:T7 Arg2:T12	
+R15	Part-Whole Arg1:T11 Arg2:T14	
+R16	Part-Whole Arg1:T12 Arg2:T14	

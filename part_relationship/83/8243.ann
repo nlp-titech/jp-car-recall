@@ -1,0 +1,15 @@
+T1	Parts 0 8	ヒューズボックス
+T2	Parts 18 26	後退灯制御リレー
+T3	Parts 27 32	電磁力回路
+T4	Parts 33 36	リレー
+T5	Parts 47 50	リレー
+T6	Parts 64 67	リレー
+T7	Parts 87 90	リレー
+T8	Parts 99 102	後退灯
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T2	
+R3	Coreference Arg1:T4 Arg2:T2	
+R4	Coreference Arg1:T5 Arg2:T4	
+R5	Coreference Arg1:T6 Arg2:T5	
+R6	Coreference Arg1:T7 Arg2:T6	
+R7	Connect Arg1:T8 Arg2:T7	

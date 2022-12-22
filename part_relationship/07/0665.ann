@@ -1,0 +1,18 @@
+T17	Parts 82 89	リリーフバルブ
+T18	Parts 31 38	リリーフバルブ
+T19	Parts 0 7	リリーフバルブ
+T20	Parts 103 110	リリーフバルブ
+T21	Parts 144 149	オーリング
+T22	Parts 132 139	オイルフィルタ
+T2	Parts 39 46	クランクケース
+R1	Coreference Arg1:T18 Arg2:T19	
+T3	Parts 72 76	エンジン
+T4	Parts 91 94	オイル
+R2	Coreference Arg1:T20 Arg2:T17	
+R3	Coreference Arg1:T17 Arg2:T18	
+T5	Parts 152 155	オイル
+R4	Coreference Arg1:T5 Arg2:T4	
+R6	Part-Whole Arg1:T4 Arg2:T17	
+R7	Part-Whole Arg1:T2 Arg2:T3	
+R8	Contact Arg1:T22 Arg2:T4	
+R9	Part-Whole Arg1:T21 Arg2:T22	

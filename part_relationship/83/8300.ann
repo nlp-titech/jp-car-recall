@@ -1,0 +1,19 @@
+T1	Parts 0 7	農耕用トラクタ
+T2	Parts 8 16	エンジンハーネス
+T3	Parts 35 39	ハーネス
+T4	Parts 40 53	エンジンマウントブラケット
+T5	Parts 93 97	ハーネス
+T7	Parts 106 115	コルゲートチューブ
+T9	Parts 130 143	エンジンマウントブラケット
+T10	Parts 154 156	配線
+T11	Parts 160 164	エンジン
+T12	Parts 168 171	前照灯
+R2	Coreference Arg1:T3 Arg2:T2	
+R3	Part-Whole Arg1:T4 Arg2:T1	
+R4	Coreference Arg1:T5 Arg2:T3	
+R6	Part-Whole Arg1:T7 Arg2:T5	
+R9	Coreference Arg1:T9 Arg2:T4	
+R1	Part-Whole Arg1:T5 Arg2:T10	
+R10	Part-Whole Arg1:T10 Arg2:T11	
+R11	Connect Arg1:T12 Arg2:T11	
+R12	Contact Arg1:T4 Arg2:T11	

@@ -1,0 +1,11 @@
+T1	Parts 41 48	デリベリガイド
+T2	Parts 31 38	デリベリホルダ
+T3	Parts 23 30	燃料噴射ポンプ
+T4	Parts 12 18	専用エンジン
+T6	Parts 0 3	冷凍機
+T7	Parts 113 115	燃料
+R1	Connect Arg1:T4 Arg2:T6	
+R2	Part-Whole Arg1:T2 Arg2:T3	
+R3	Part-Whole Arg1:T1 Arg2:T2	
+R4	Part-Whole Arg1:T3 Arg2:T4	
+R5	Contact Arg1:T7 Arg2:T3	

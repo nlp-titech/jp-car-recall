@@ -1,0 +1,9 @@
+T6	Parts 0 4	制動装置
+T1	Parts 5 40	車両挙動制御機能（アクティブスタビリティコントロールシステム：ＡＳＣ）
+T2	Parts 63 66	ＡＳＣ
+T3	Parts 84 88	ブレーキ
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Part-Whole Arg1:T1 Arg2:T6	
+R3	Part-Whole Arg1:T3 Arg2:T6	
+T4	Parts 50 55	プログラム
+R4	Part-Whole Arg1:T4 Arg2:T1	

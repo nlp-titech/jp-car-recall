@@ -1,0 +1,19 @@
+T4	Parts 116 119	シフト
+T7	Parts 132 134	ギヤ
+T9	Parts 77 79	ピン
+T10	Parts 103 105	ピン
+T11	Parts 140 142	車両
+T1	Parts 0 17	オートマチック・トランスミッション
+T6	Parts 22 30	パーキング・ギヤ
+T3	Parts 39 48	ピボット・シャフト
+T2	Parts 55 62	アンカー・ピン
+R1	Coreference Arg1:T2 Arg2:T9	
+R2	Coreference Arg1:T9 Arg2:T10	
+R3	Contact Arg1:T3 Arg2:T2	
+R4	Part-Whole Arg1:T6 Arg2:T1	
+R5	Connect Arg1:T6 Arg2:T3	
+R6	Coreference Arg1:T6 Arg2:T7	
+R7	Connect Arg1:T1 Arg2:T4	
+R8	Part-Whole Arg1:T1 Arg2:T11	
+R9	Part-Whole Arg1:T3 Arg2:T1	
+R10	Part-Whole Arg1:T4 Arg2:T11	

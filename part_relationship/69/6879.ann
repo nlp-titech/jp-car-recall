@@ -1,0 +1,12 @@
+T4	Parts 33 35	ドア
+T5	Parts 68 70	ドア
+T6	Parts 74 76	ドア
+T7	Parts 0 2	車両
+T2	Parts 11 19	上部はね上げドア
+T1	Parts 38 44	樹脂製ヒンジ
+R1	Part-Whole Arg1:T2 Arg2:T7	
+R2	Coreference Arg1:T2 Arg2:T4	
+R3	Contact Arg1:T4 Arg2:T1	
+R4	Coreference Arg1:T4 Arg2:T5	
+R5	Coreference Arg1:T5 Arg2:T6	
+#1	AnnotatorNotes T7	6886だと「車輌」になっている
