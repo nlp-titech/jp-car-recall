@@ -48,7 +48,7 @@ R6	RESULT Arg1:T7 Arg2:T3
 ```
 
 
-## Corpus discription and citation
+## Corpus description and citation
 
 For more detailed description of the corpus, please refer `paper.pdf` in this repo.
 If you use this corpus in your project, please cite as
