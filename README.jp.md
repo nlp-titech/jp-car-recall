@@ -3,7 +3,7 @@
 [![en](https://img.shields.io/badge/lang-en-red)](https://github.com/nlp-titech/jp-car-recall#readme)
 [![jp](https://img.shields.io/badge/lang-jp-blue)](https://github.com/nlp-titech/jp-car-recall/blob/main/README.jp.md)
 
-自動車リコールコーパスは、自動車リコール報告書のテキストデータにアノテーションを付与したものである。1)車の部品、2)因果関係。このコーパスは、車のリコール報告テキストにこの2つの情報を両方アノテーションした初めてのコーパスである。車の故障は部品と関連しているため、部品に関する知識が因果関係の抽出にどのように役立つかを調べるために、両方の情報をアノテーションしている。
+自動車リコールコーパスは、自動車リコール報告書のテキストデータに、1)自動車の部品、2)因果関係のアノテーションを付与したものである。このコーパスは、自動車のリコール報告テキストにこの2つの情報をアノテーションした初めてのコーパスである。自動車の故障は部品と関連しているため、部品に関する知識が因果関係の抽出にどのように役立つかを調べるために、両方の情報をアノテーションしている。
 
 ## データと2種類のアノテーション
 
@@ -12,17 +12,17 @@
 ### 自動車部品アノテーション
 
 ![alt text](images/part_ann_example.jpg)
-自動車部品のアノテーションでは、自動車部品を実体として、部品間の関係を関係としてアノテーションしている。
+自動車部品のアノテーションでは、自動車部品をentity、部品間の関係をrelationとしてアノテーションしている。
 
 ### 因果関係アノテーション
 
 ![alt text](images/causal_ann_example.jpg)
 
-因果関係アノテーションでは、不具合とその原因をアノテーションしている。
+因果関係のアノテーションでは、不具合とその原因をアノテーションしている。
 
 ## データフォーマット
 
-データには[brat](https://brat.nlplab.org/)でアノテーションをつける。アノテーション文書はfoo.txtファイルとfoo.annファイルから構成される。以下は `foo.txt` と `foo.ann` の例である。
+データには[brat](https://brat.nlplab.org/)でアノテーションをつける。アノテーション文書は以下の例で示す`foo.txt`と`foo.ann`と同様のフォーマットのファイルで構成される。
 
 `foo.txt`
 ```
@@ -48,8 +48,8 @@ R6	RESULT Arg1:T7 Arg2:T3
 
 ## コーパスの説明と引用
 
-コーパスの詳細については、このレポにある `paper.pdf` を参照してください。
-このコーパスをあなたのプロジェクトで使用する場合は、以下のように引用してください。
+コーパスの詳細については、このレポジトリにある `paper.pdf` を参照してください。
+このコーパスを研究・プロジェクトで使用する場合は、以下のように引用してください。
 > Hsuan-Yu Kuo, Youmi Ma, and Naoaki Okazaki. Annotating Entity and Causal Relationships on Japanese Vehicle Recall Information. In Proceedings of the 36th Pacific Asia Conference on Language, Information and Computation (PACLIC), pages (to appear), October 2022.
 
 Or
@@ -69,4 +69,4 @@ Or
 ---
 ## ライセンス [![CC BY 4.0](http://mirrors.creativecommons.org/presskit/buttons/80x15/svg/by.svg)](http://creativecommons.org/licenses/by/4.0/)
 
-このレポジトリのすべてのコンテンツが [Creative Commons - Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/) でライセンスしている.
+このレポジトリのすべてのコンテンツが [Creative Commons - Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/) のライセンスに準拠します。
