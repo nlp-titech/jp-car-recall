@@ -24,7 +24,7 @@ For causality annoation, we annoate malfunctions and their causes.
 
 ## Data Format
 
-We annotated data with [brat](https://brat.nlplab.org/). Every annotation document is composed of a foo.txt file and a foo.ann file. Here are the examples of a `foo.txt` and `foo.ann`.
+We annotated data with [brat](https://brat.nlplab.org/). Every annotation document is composed of a `foo.txt` file and a `foo.ann` file. Here are the examples of a `foo.txt` and `foo.ann`.
 
 `foo.txt`
 ```
