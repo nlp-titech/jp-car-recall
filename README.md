@@ -3,28 +3,56 @@
 [![en](https://img.shields.io/badge/lang-en-red)](https://github.com/nlp-titech/jp-car-recall#readme)
 [![jp](https://img.shields.io/badge/lang-jp-blue)](https://github.com/nlp-titech/jp-car-recall/blob/main/README.jp.md)
 
-Japanese Car Recall Corpus is car recall report text data annotated with types of annotation: 1) car parts and 2) causality. This is the first corpus annotating both these two information on the car recall text. As a malfunction of a vehicle is related to corresponding parts, we annotate both information to explore how the domain knowledge of vehicle parts can help causality extraction.
+Japanese Car Recall Corpus is a car recall text corpus annotated with types of annotation: 1) car parts and 2) causality. This corpus is the first corpus annotating these two types of information on the car recall text. As a vehicle malfunction is related to corresponding parts, we annotate both kinds of information to explore how the domain knowledge of vehicle parts can help causality extraction.
 
-
-## Data and two types of annoation 
+## Data and two types of annoation
 
 ### Data
-We collect recall text data from [MILT site](https://www.mlit.go.jp/jidosha/carinf/rcl/index.html).
+
+We collect recall text data from [the site](https://www.mlit.go.jp/jidosha/carinf/rcl/index.html) provided by Ministry of Land, Infrastructure, Transport and Tourism (MILT).
 
 ### Car part annotation
 
 ![alt text](images/part_ann_example.jpg)
-For car part annoation, we annoate vehicle parts as entities and the relations between parts as relations.
+For car part annoation, we annoate vehicle parts as entities and the relations between parts as relations. The statistics of car part annotated documents are as follows:
+
+- Number of Documents: 8136
+- Average Document Length: 135.10
+
+| entity   |     # |
+|----------|-------|
+| Parts    | 53696 |
+
+| relation           |     # |
+|--------------------|-------|
+| Part-Whole         | 17219 |
+| Coreference        | 17299 |
+| Contact            |  9474 |
+| Connect            |  5941 |
+| Oneway-Coreference |   459 |
 
 ### Causality annotation
 
 ![alt text](images/causal_ann_example.jpg)
+For causality annoation, we annoate malfunctions and their causes. The statistics of causality annotated documents are as follows:
 
-For causality annoation, we annoate malfunctions and their causes.
+- Number of documents: 6435
+- Average document length: 135.27
 
-## Data Format
+| entity     |     # |
+|------------|-------|
+| Argument   | 42915 |
+| Connective | 34843 |
 
-We annotated data with [brat](https://brat.nlplab.org/). Every annotation document is composed of a `foo.txt` file and a `foo.ann` file. Here are the examples of a `foo.txt` and `foo.ann`.
+| relation   |     # |
+|------------|-------|
+| REASON     | 25408 |
+| RESULT     | 36544 |
+| CONDITION  |  9675 |
+
+## Data format
+
+We annotated data with [brat](https://brat.nlplab.org/). Every annotation document is composed of a `foo.txt` file and a `foo.ann` file. Here are examples of a `foo.txt` and `foo.ann`.
 
 `foo.txt`
 ```
@@ -32,7 +60,8 @@ We annotated data with [brat](https://brat.nlplab.org/). Every annotation docume
 ```
 
 `foo.ann`
-```T1	Argument 0 20	後部反射器において、車体への取付が不適切
+```
+T1	Argument 0 20	後部反射器において、車体への取付が不適切
 T2	Argument 40 49	走行時の車体の振動
 T3	Argument 52 60	当該反射器が脱落
 T4	Connective 21 23	ため
@@ -46,7 +75,6 @@ T7	Connective 38 39	と
 R5	CONDITION Arg1:T7 Arg2:T6	
 R6	RESULT Arg1:T7 Arg2:T3	
 ```
-
 
 ## Corpus description and citation
 
