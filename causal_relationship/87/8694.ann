@@ -1,0 +1,23 @@
+T1	Argument 13 38	ＤＰＲフィルタ詰まり検知用パイプの固定方法が不適切
+T2	Connective 39 41	ため
+T3	Argument 42 55	ＤＰＲ本体の熱膨張・収縮等
+T4	Connective 55 58	により
+R1	REASON Arg1:T4 Arg2:T3	
+T5	Argument 58 70	パイプ固定部に亀裂が発生
+R2	RESULT Arg1:T4 Arg2:T5	
+R3	REASON Arg1:T2 Arg2:T1	
+R4	RESULT Arg1:T2 Arg2:T5	
+T6	Connective 78 82	そのため
+R5	REASON Arg1:T6 Arg2:T5	
+T7	Argument 83 95	亀裂部から排気ガスが漏れ
+R6	RESULT Arg1:T6 Arg2:T7	
+T9	Connective 95 96	、
+R7	REASON Arg1:T9 Arg2:T7	
+T10	Argument 126 128	最悪
+T11	Connective 129 131	場合
+T12	Argument 132 142	ＤＰＲフィルタが損傷
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T12	
+R11	RESULT Arg1:T9 Arg2:T12	
+T8	Argument 96 125	ＤＰＲフィルタに煤が堆積してもＤＰＲ警告灯が点灯しなくなり
+R8	RESULT Arg1:T9 Arg2:T8	

@@ -1,0 +1,17 @@
+T1	Argument 20 35	イグニッションスイッチが不適切
+T2	Connective 36 38	ため
+T3	Argument 39 54	イグニッションＯＦＦ信号が発信
+T4	Connective 63 67	そのため
+T5	Argument 68 77	突然エンジンが停止
+T6	Connective 78 79	、
+T7	Argument 79 95	ライトスイッチをオート位置で使用
+T10	Connective 99 101	場合
+T11	Argument 102 119	前照灯が消灯する等の不具合が生じる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T11	
+R11	RESULT Arg1:T10 Arg2:T11	
+R7	CONDITION Arg1:T10 Arg2:T7	

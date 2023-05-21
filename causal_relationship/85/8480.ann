@@ -1,0 +1,9 @@
+T1	Argument 7 27	助手席側ミラーにおいて、設計指示が不適切
+T2	Connective 28 30	ため
+T3	Argument 31 46	正規より短いミラーステーを装着
+T4	Connective 56 60	そのため
+T5	Argument 61 82	保安基準第４４条の後方視界要件を満たさない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

@@ -1,0 +1,9 @@
+T1	Argument 0 32	突入防止装置において、車体後面構造部の下縁高さの設計検討が不十分
+T2	Connective 33 35	ため
+T3	Argument 36 43	基準高を超える
+T4	Connective 49 53	そのため
+T5	Argument 54 70	保安基準第１８条の２を満足しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

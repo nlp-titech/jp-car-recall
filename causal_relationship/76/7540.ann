@@ -1,0 +1,27 @@
+T1	Argument 0 44	エンジンコントロールユニットの制御プログラムにおいて、エンジンが停止する際の制御が不適切
+T4	Connective 48 50	ため
+T5	Argument 51 69	イグニッションコイルへ必要以上に通電
+T6	Connective 77 81	そのため
+T7	Argument 82 100	イグニッションコイルの内部温度が上昇
+T8	Argument 101 119	回路がショート、ヒューズ切れを起こし
+T9	Connective 119 120	、
+T10	Argument 120 122	最悪
+T11	Connective 123 125	場合
+T12	Argument 126 136	走行中エンジンが停止
+T18	Argument 154 201	既に長通電を経験したイグニッションコイルでは、対策プログラムに書き換えても、内部ダメージの蓄積
+T19	Connective 201 204	により
+T20	Argument 204 210	不具合に至る
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R10	RESULT Arg1:T9 Arg2:T12	
+R11	CONDITION Arg1:T11 Arg2:T10	
+R12	RESULT Arg1:T11 Arg2:T12	
+R17	REASON Arg1:T19 Arg2:T18	
+R18	RESULT Arg1:T19 Arg2:T20	
+T16	Connective 100 101	し
+R7	REASON Arg1:T16 Arg2:T7	
+R8	RESULT Arg1:T16 Arg2:T8	
+R9	REASON Arg1:T9 Arg2:T8	
+R1	REASON Arg1:T4 Arg2:T1	
+R13	RESULT Arg1:T16 Arg2:T18	

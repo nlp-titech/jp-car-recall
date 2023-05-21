@@ -1,0 +1,13 @@
+T1	Argument 0 27	エンジン始動用のスタータにおいて、製造工程管理が不適切
+T2	Connective 28 30	ため
+T3	Argument 31 44	エンドカバーのねじがゆるむ
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 50 54	そのため
+T5	Argument 55 67	スタータが作動しなくなり
+T6	Argument 68 81	エンジンが始動できなくなる
+T7	Connective 67 68	、
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	

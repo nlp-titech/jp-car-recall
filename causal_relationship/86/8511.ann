@@ -1,0 +1,33 @@
+T1	Argument 0 35	バッテリ式フォークリフトの充電用トランスにおいて、取付部材の強度が不足
+T2	Connective 39 41	ため
+T3	Argument 41 48	路面からの振動
+T4	Connective 48 51	により
+T5	Argument 51 58	取付部材が変形
+T6	Argument 60 62	折損
+T7	Connective 70 74	そのため
+T8	Argument 75 85	そのまま使用を続ける
+T9	Connective 85 86	と
+T10	Argument 87 94	トランスが脱落
+T11	Connective 95 96	、
+T12	Argument 96 98	最悪
+T13	Connective 99 101	場合
+T14	Argument 102 124	トランスとバッテリケーブルの間で短絡が起こり
+T15	Connective 124 125	、
+T16	Argument 125 132	車両火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	RESULT Arg1:T2 Arg2:T6	
+R4	REASON Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T4 Arg2:T5	
+R6	RESULT Arg1:T4 Arg2:T6	
+R7	REASON Arg1:T7 Arg2:T6	
+R8	REASON Arg1:T7 Arg2:T5	
+R9	RESULT Arg1:T7 Arg2:T10	
+R10	CONDITION Arg1:T9 Arg2:T8	
+R11	RESULT Arg1:T9 Arg2:T10	
+R12	REASON Arg1:T11 Arg2:T10	
+R13	RESULT Arg1:T11 Arg2:T14	
+R14	CONDITION Arg1:T13 Arg2:T12	
+R15	RESULT Arg1:T13 Arg2:T14	
+R16	REASON Arg1:T15 Arg2:T14	
+R17	RESULT Arg1:T15 Arg2:T16	

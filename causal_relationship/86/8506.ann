@@ -1,0 +1,17 @@
+T1	Argument 0 40	後席シート中央席のシートベルトバックルにおいて、未使用時の固定状態の設計が不適切
+T2	Connective 41 43	ため
+T3	Argument 44 56	シート座面の下に入り込み
+T4	Connective 56 57	、
+T5	Argument 57 59	最悪
+T6	Connective 60 62	場合
+T7	Argument 63 75	当該バックルが取り出せず
+T9	Argument 76 92	シートベルトの装着ができなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Connective 75 76	に
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	

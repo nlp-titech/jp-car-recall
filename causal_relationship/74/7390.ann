@@ -1,0 +1,9 @@
+T1	Argument 2 50	フォークリフトにおいて、受注時の作業装置（フォーク等）の仕様組み合わせに伴う法規適合確認が不十分
+T2	Connective 51 53	ため
+T3	Argument 54 70	全長が小型特殊自動車の範囲を超え
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 71 81	保安基準に適合しない
+T5	Connective 70 71	、
+R3	REASON Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T4	

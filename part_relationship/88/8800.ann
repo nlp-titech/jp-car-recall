@@ -20,3 +20,4 @@ R8	Part-Whole Arg1:T3 Arg2:T2
 R9	Part-Whole Arg1:T5 Arg2:T1	
 R10	Contact Arg1:T4 Arg2:T5	
 R11	Part-Whole Arg1:T8 Arg2:T7	
+R12	Contact Arg1:T9 Arg2:T8	

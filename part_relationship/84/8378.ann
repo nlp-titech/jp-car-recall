@@ -4,7 +4,7 @@ T4	Parts 108 111	カメラ
 T5	Parts 147 151	液晶画面
 T6	Parts 160 163	カメラ
 T7	Parts 181 184	後写鏡
-R1	Oneway-Coreference Arg1:T4 Arg2:T6	
+R1	Coreference Arg1:T4 Arg2:T6	
 R2	Part-Whole Arg1:T2 Arg2:T1	
 R3	Connect Arg1:T1 Arg2:T4	
 R4	Connect Arg1:T1 Arg2:T5	

@@ -1,0 +1,21 @@
+T1	Argument 0 29	バン型車両の輪止め格納部において、製造時の溶接管理が不適切
+T2	Connective 30 32	ため
+T3	Argument 33 47	格納ステー溶接部の強度が不足
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 57 61	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 62 67	走行振動等
+T6	Connective 67 70	により
+R4	REASON Arg1:T6 Arg2:T5	
+T7	Argument 70 82	格納ステーの溶接部が破断
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	RESULT Arg1:T4 Arg2:T7	
+T8	Argument 84 86	最悪
+T9	Connective 87 89	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+T10	Argument 90 109	格納ステーの部品の一部及び輪止めが脱落
+R8	RESULT Arg1:T9 Arg2:T10	
+T11	Connective 83 84	、
+R9	REASON Arg1:T11 Arg2:T7	
+R10	RESULT Arg1:T11 Arg2:T10	

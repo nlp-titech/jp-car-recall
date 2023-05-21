@@ -5,6 +5,5 @@ T4	Parts 56 60	クレーン
 T5	Parts 83 87	ナックル
 R1	Part-Whole Arg1:T2 Arg2:T1	
 R2	Part-Whole Arg1:T3 Arg2:T2	
-R3	Connect Arg1:T4 Arg2:T3	
 R4	Coreference Arg1:T5 Arg2:T3	
 R5	Part-Whole Arg1:T4 Arg2:T1	

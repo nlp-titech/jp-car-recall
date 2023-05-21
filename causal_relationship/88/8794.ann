@@ -1,0 +1,33 @@
+T1	Connective 54 56	ため
+T2	Argument 57 72	正規トルクで締付けられていない
+R1	RESULT Arg1:T1 Arg2:T2	
+T3	Connective 78 82	そのため
+R2	REASON Arg1:T3 Arg2:T2	
+T4	Argument 83 97	そのままの状態で使用を続ける
+T5	Connective 97 98	と
+R3	CONDITION Arg1:T5 Arg2:T4	
+T6	Argument 99 114	当該ボルト・ナットに緩みが生じ
+R4	RESULT Arg1:T5 Arg2:T6	
+R5	RESULT Arg1:T3 Arg2:T6	
+T7	Connective 114 115	、
+T8	Argument 115 117	最悪
+T9	Connective 118 120	場合
+R6	CONDITION Arg1:T9 Arg2:T8	
+T10	Argument 121 133	当該ボルト・ナットが脱落
+R7	RESULT Arg1:T9 Arg2:T10	
+R8	RESULT Arg1:T7 Arg2:T10	
+T11	Argument 146 174	ショックアブソーバーとＡＢＳセンサーハーネスの干渉が生じ
+T12	Connective 134 135	、
+T13	Argument 175 185	ＡＢＳが不作動になる
+T14	Connective 174 175	て
+R9	REASON Arg1:T14 Arg2:T11	
+R10	RESULT Arg1:T14 Arg2:T13	
+R11	REASON Arg1:T12 Arg2:T10	
+R12	RESULT Arg1:T12 Arg2:T11	
+T15	Argument 19 53	後軸のショックアブソーバー取付けボルト・ナットを締付けた工具が不適切
+R13	REASON Arg1:T1 Arg2:T15	
+R14	REASON Arg1:T7 Arg2:T6	
+T16	Argument 135 141	中型トラック
+T17	Connective 141 146	においては
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T11	

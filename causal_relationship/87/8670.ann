@@ -1,0 +1,9 @@
+T1	Argument 4 24	クランクケースにおいて、鋳造作業が不適切
+T2	Connective 25 27	ため
+T3	Argument 28 48	エンジンオイルの通路と繋がる鋳巣穴が生じ
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 57 61	そのため
+T5	Argument 62 84	運転時に当該鋳巣穴からエンジンオイルが漏れる
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

@@ -1,0 +1,17 @@
+T1	Argument 0 40	３列目左右両シートのシートベルト上部アンカーにおいて、取付ボルト軸部の寸法が不足
+T2	Connective 44 46	ため
+T3	Argument 47 74	当該ボルトをボディパネルに対して十分に締結できていない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 75 79	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 80 85	車両衝突時
+T6	Connective 85 86	に
+R4	CONDITION Arg1:T6 Arg2:T5	
+T7	Argument 86 102	当該ボルトがボディパネルから外れ
+T8	Connective 102 103	、
+T9	Argument 103 120	乗員を適切に拘束することができない
+R5	RESULT Arg1:T8 Arg2:T9	
+R6	REASON Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T7	
+R8	RESULT Arg1:T4 Arg2:T7	

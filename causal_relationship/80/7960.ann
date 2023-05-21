@@ -1,0 +1,17 @@
+T1	Argument 0 31	農耕トラクタのリバーサーレバーのブラケットにおいて、強度が不足
+T2	Connective 35 37	ため
+T3	Argument 38 51	レバーガイドに外力が加わる
+T4	Connective 51 52	と
+T5	Argument 52 60	溶接に亀裂が発生
+T6	Connective 68 72	そのため
+T7	Argument 73 83	当該ブラケットが破損
+T8	Argument 85 99	正常に変速操作ができなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T9	Connective 84 85	、
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	

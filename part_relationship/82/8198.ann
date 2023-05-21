@@ -4,7 +4,7 @@ T3	Parts 32 39	絶縁用ブッシュ
 T4	Parts 66 72	オルタネータ
 T5	Parts 100 109	バッテリ充電警告灯
 T6	Parts 136 140	エンジン
-R1	Part-Whole Arg1:T3 Arg2:T2	
+R1	Contact Arg1:T3 Arg2:T2	
 R2	Coreference Arg1:T4 Arg2:T2	
 R3	Part-Whole Arg1:T5 Arg2:T1	
 R4	Connect Arg1:T5 Arg2:T4	

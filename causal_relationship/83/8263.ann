@@ -1,0 +1,13 @@
+T1	Argument 0 29	後部座席中央用シートベルトにおいて、組付設備の調整が不適切
+T2	Connective 30 32	ため
+T3	Argument 33 59	シートベルトロック機構部のスプリングが屈曲して組付け
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 68 72	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 73 88	当該スプリングが構成部品と干渉
+R4	RESULT Arg1:T4 Arg2:T5	
+T8	Argument 90 114	シートベルトが素早く引き出された際にロックしない
+T9	Connective 89 90	、
+R7	REASON Arg1:T9 Arg2:T5	
+R8	RESULT Arg1:T9 Arg2:T8	

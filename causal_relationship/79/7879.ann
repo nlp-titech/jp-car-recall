@@ -1,0 +1,17 @@
+T1	Argument 0 15	原動機の制御プログラムが不適切
+T2	Connective 16 18	ため
+T3	Argument 19 25	高温負荷使用
+T4	Argument 29 35	走行距離積算
+T5	Connective 35 38	により
+T7	Argument 38 51	Ｏ２センサーの機能が損なわ
+T8	Connective 59 63	そのため
+T9	Argument 64 78	エンジンチェックランプが点灯
+T11	Argument 80 91	排出ガス基準値を超える
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T7	
+R3	REASON Arg1:T5 Arg2:T3	
+R4	REASON Arg1:T5 Arg2:T4	
+R5	RESULT Arg1:T5 Arg2:T7	
+R6	REASON Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	RESULT Arg1:T8 Arg2:T11	

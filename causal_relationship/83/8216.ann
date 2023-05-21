@@ -1,0 +1,21 @@
+T1	Argument 0 18	燃料ポンプ取付部のシール構造が不適切
+T2	Connective 19 21	ため
+T3	Argument 22 40	燃料ポンプ組付時にＯリングがねじれる
+R1	REASON Arg1:T2 Arg2:T1	
+T4	Connective 46 50	そのため
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T3	
+T5	Argument 51 62	燃料タンクの内圧変動等
+T6	Connective 62 65	により
+T7	Argument 65 73	シール性が損なわ
+R4	REASON Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 75 77	最悪
+T9	Connective 78 80	場合
+R6	CONDITION Arg1:T9 Arg2:T8	
+T10	Argument 81 87	燃料が漏れる
+R7	RESULT Arg1:T9 Arg2:T10	
+T11	Connective 74 75	、
+R8	REASON Arg1:T11 Arg2:T7	
+R9	RESULT Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T4 Arg2:T7	

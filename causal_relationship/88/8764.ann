@@ -1,0 +1,27 @@
+T1	Argument 25 48	アクセルリターンスプリングにおいて、強度が不足
+T2	Connective 58 62	そのため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 79 89	当該スプリングが折損
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 63 77	そのままの状態で使用を続ける
+T5	Connective 77 78	と
+R3	CONDITION Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T3	
+T6	Argument 97 114	アクセルペダルが全開のまま戻らない
+T7	Argument 91 93	最悪
+T8	Connective 94 96	場合
+T9	Connective 90 91	、
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T6	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T6	
+T10	Connective 123 125	場合
+T11	Argument 142 157	キーＯＦＦ後の走行は不能となる
+T12	Argument 133 138	停車は可能
+R9	CONDITION Arg1:T10 Arg2:T6	
+R10	RESULT Arg1:T10 Arg2:T12	
+R11	RESULT Arg1:T10 Arg2:T11	
+T13	Argument 126 130	ブレーキ
+T14	Connective 130 133	により
+R12	REASON Arg1:T14 Arg2:T13	
+R13	RESULT Arg1:T14 Arg2:T12	

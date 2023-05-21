@@ -1,0 +1,13 @@
+T1	Connective 25 27	ため
+T2	Argument 28 46	寸法の異なるブレーキディスクが組付け
+R1	RESULT Arg1:T1 Arg2:T2	
+T3	Connective 57 58	。
+R2	REASON Arg1:T3 Arg2:T2	
+T4	Argument 63 94	協定規則第７８号の技術的な要件（制動装置試験の基準）に適合せず
+R3	RESULT Arg1:T3 Arg2:T4	
+T5	Argument 95 104	安全に減速できない
+T7	Argument 0 24	前輪の制動装置において、組立時の部品管理が不十分
+R6	REASON Arg1:T1 Arg2:T7	
+T6	Connective 94 95	、
+R4	REASON Arg1:T6 Arg2:T4	
+R5	RESULT Arg1:T6 Arg2:T5	

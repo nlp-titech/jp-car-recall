@@ -1,0 +1,9 @@
+T1	Argument 0 32	バスの乗降中電光表示器において、ＳＯＳ（非常灯）表示回路が不適切
+T2	Argument 36 48	後扉開放時にＳＯＳを表示
+T3	Connective 50 51	と
+R1	CONDITION Arg1:T3 Arg2:T2	
+T4	Argument 52 62	後扉が閉まらなくなる
+R2	RESULT Arg1:T3 Arg2:T4	
+T5	Connective 33 35	ため
+R3	REASON Arg1:T5 Arg2:T1	
+R4	RESULT Arg1:T5 Arg2:T4	

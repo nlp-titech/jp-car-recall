@@ -1,0 +1,29 @@
+T1	Argument 0 26	回転ダンプ式塵芥車において、荷箱容積重心位置の間違い
+T2	Connective 26 29	により
+T3	Argument 29 41	最大積載量の表記が不適切
+T4	Connective 42 44	ため
+T5	Argument 45 57	最大積載量を積載した状態
+T6	Connective 59 60	、
+T7	Argument 60 109	保安基準第９条第２項（走行装置等）および第５３条第１項（乗車定員及び最大積載量）の基準に適合しない
+T8	Argument 116 118	最悪
+T9	Connective 119 121	場合
+T10	Argument 122 129	重量に耐えかね
+T11	Connective 129 130	て
+T12	Argument 130 139	後輪軸が損傷・破損
+T14	Argument 156 165	重大事故につながる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T12	
+R9	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T12	
+R13	RESULT Arg1:T4 Arg2:T10	
+T15	Argument 144 150	タイヤが破裂
+R14	RESULT Arg1:T11 Arg2:T15	
+T16	Connective 154 155	し
+R15	REASON Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T14	

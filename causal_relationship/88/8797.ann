@@ -1,0 +1,29 @@
+T1	Connective 56 58	ため
+T2	Argument 59 71	防水加工が施されていない
+R1	RESULT Arg1:T1 Arg2:T2	
+T3	Connective 77 81	そのため
+R2	REASON Arg1:T3 Arg2:T2	
+T4	Argument 82 96	雨水等が当該取付け部より侵入
+R3	RESULT Arg1:T3 Arg2:T4	
+T5	Connective 97 98	、
+T6	Argument 98 112	そのままの状態で使用を続ける
+T7	Connective 112 113	と
+T8	Argument 114 133	ディスプレイ内部の制御用基板が腐食損傷
+R4	REASON Arg1:T5 Arg2:T4	
+R5	RESULT Arg1:T5 Arg2:T8	
+R6	CONDITION Arg1:T7 Arg2:T6	
+R7	RESULT Arg1:T7 Arg2:T8	
+T9	Connective 137 138	で
+R8	REASON Arg1:T9 Arg2:T8	
+T10	Argument 139 146	フェールセーフ
+R9	RESULT Arg1:T9 Arg2:T10	
+T11	Connective 160 161	、
+T12	Argument 161 168	走行不能になる
+R10	REASON Arg1:T11 Arg2:T15	
+R11	RESULT Arg1:T11 Arg2:T12	
+T13	Argument 26 55	ディスプレイにおいて、液晶パネル取付け部の製造指示が不適切
+R12	REASON Arg1:T1 Arg2:T13	
+T14	Connective 146 149	により
+T15	Argument 149 158	エンジン回転が制限
+R13	REASON Arg1:T14 Arg2:T10	
+R14	RESULT Arg1:T14 Arg2:T15	

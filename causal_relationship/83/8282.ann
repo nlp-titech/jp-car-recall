@@ -1,0 +1,25 @@
+T1	Argument 15 32	エンジンのスタッドボルト先端が突出
+T2	Connective 36 38	ため
+T3	Argument 39 46	電気配線と干渉
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 54 58	そのため
+T5	Argument 59 64	走行振動等
+T6	Connective 64 67	により
+R3	REASON Arg1:T6 Arg2:T5	
+R4	REASON Arg1:T4 Arg2:T3	
+T7	Argument 68 80	当該電気配線の被覆が摩耗
+R5	RESULT Arg1:T4 Arg2:T7	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 81 83	短絡
+T9	Connective 80 81	し
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+T10	Argument 86 88	最悪
+T11	Connective 89 91	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+T12	Argument 92 97	火災に至る
+R10	RESULT Arg1:T11 Arg2:T12	
+T13	Connective 84 85	て
+R11	REASON Arg1:T13 Arg2:T8	
+R12	RESULT Arg1:T13 Arg2:T12	

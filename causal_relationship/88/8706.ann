@@ -1,0 +1,5 @@
+T1	Connective 64 66	ため
+T2	Argument 67 80	故障診断が正しく行われない
+R1	RESULT Arg1:T1 Arg2:T2	
+T3	Argument 34 63	排出ガス発散防止装置制御端末（ＡＣＭ）のプログラムが不適切
+R2	REASON Arg1:T1 Arg2:T3	

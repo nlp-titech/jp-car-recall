@@ -1,0 +1,9 @@
+T1	Argument 0 39	方向指示器において、オンボードサプライコントロールユニットのプログラムが不適切
+T2	Connective 40 42	ため
+T3	Argument 43 58	運転者が不点灯状態を判別できず
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 59 83	保安基準第４１条（方向指示器の基準）に適合しない
+T5	Connective 58 59	、
+R3	REASON Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T4	

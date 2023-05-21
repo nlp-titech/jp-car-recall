@@ -1,0 +1,13 @@
+T1	Argument 0 30	チャイルドロック表示シールについて、作業員の取付作業が不適切
+T2	Connective 31 33	ため
+T3	Argument 34 48	ロック方向を示す表示が逆向き
+T4	Connective 55 59	そのため
+T5	Argument 72 83	ロック機構が作動しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T7	Connective 71 72	、
+T6	Argument 60 68	ロック方向に操作
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T5	

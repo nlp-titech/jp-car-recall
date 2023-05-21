@@ -1,0 +1,17 @@
+T1	Argument 17 45	エンジン制御コンピュータの点火時期制御プログラムが不適切
+T2	Connective 46 48	ため
+T3	Argument 49 81	スロットル全閉でクラッチレバーを握る際の握り幅が小さい状態を保持
+T4	Connective 83 84	と
+T5	Argument 85 93	点火時期が遅れる
+T6	Connective 99 103	そのため
+T7	Argument 104 114	エンジン回転数が低下
+T8	Connective 115 116	、
+T9	Argument 116 120	エンスト
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	

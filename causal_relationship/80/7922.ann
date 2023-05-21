@@ -1,0 +1,21 @@
+T1	Connective 43 45	ため
+T2	Argument 46 54	溶接長さが不十分
+T3	Connective 61 65	そのため
+T4	Argument 66 83	走行中にサブフレームの溶接が剥がれ
+T5	Argument 84 94	スラストアームが脱落
+T6	Argument 98 100	最悪
+T7	Connective 101 103	場合
+R1	RESULT Arg1:T1 Arg2:T2	
+R2	REASON Arg1:T3 Arg2:T2	
+R3	RESULT Arg1:T3 Arg2:T4	
+T9	Argument 0 42	リアアクスルキャリアにあるスラストアーム用サブフレームにおいて、製造時の作業が不適切
+R4	REASON Arg1:T1 Arg2:T9	
+T10	Connective 83 84	て
+R5	REASON Arg1:T10 Arg2:T4	
+R6	RESULT Arg1:T10 Arg2:T5	
+T11	Connective 96 97	と
+R7	REASON Arg1:T11 Arg2:T5	
+R8	CONDITION Arg1:T7 Arg2:T6	
+T8	Argument 104 114	車両の制御性が損なわ
+R9	RESULT Arg1:T7 Arg2:T8	
+R10	RESULT Arg1:T11 Arg2:T8	

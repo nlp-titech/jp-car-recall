@@ -5,8 +5,7 @@ T4	Parts 47 57	排気ガス処理システム
 T5	Parts 68 80	エキゾーストマニホールド
 T6	Parts 98 101	パイプ
 R1	Connect Arg1:T2 Arg2:T1	
-R2	Part-Whole Arg1:T3 Arg2:T2	
+R2	Contact Arg1:T3 Arg2:T2	
 R3	Coreference Arg1:T5 Arg2:T1	
 R4	Coreference Arg1:T3 Arg2:T6	
-R5	Connect Arg1:T4 Arg2:T1	
-R6	Connect Arg1:T4 Arg2:T2	
+R5	Connect Arg1:T2 Arg2:T4	

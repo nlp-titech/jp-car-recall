@@ -1,0 +1,9 @@
+T1	Argument 0 30	フォーク・リフトの銘板および荷重表において、設計時の確認不足
+T2	Connective 30 33	により
+T4	Connective 47 49	ため
+T5	Argument 50 60	記載内容に誤記がある
+R1	REASON Arg1:T2 Arg2:T1	
+R4	RESULT Arg1:T4 Arg2:T5	
+T3	Argument 34 46	作成データに間違いがあっ
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	

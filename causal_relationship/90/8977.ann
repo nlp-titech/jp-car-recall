@@ -1,0 +1,21 @@
+T1	Argument 0 42	オートマチックトランスミッションコントロールユニットにおいて、制御プログラムが不適切
+T2	Connective 43 45	ため
+T3	Argument 46 52	急減速を行う
+T4	Connective 52 53	と
+T5	Argument 53 58	変速が遅延
+T6	Connective 66 70	そのため
+T7	Argument 71 82	ギアがニュートラルに入
+T8	Connective 82 83	り
+T9	Argument 83 96	そのまま変速ができなくなり
+T10	Connective 96 97	、
+T11	Argument 97 116	エンジンを再始動するまで走行不能になる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	

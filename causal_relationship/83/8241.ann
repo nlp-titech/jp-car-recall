@@ -1,0 +1,17 @@
+T1	Argument 0 34	左右の後輪ブレーキをリヤアクスルシャフトに固定する部材の溶接が不適切
+T2	Connective 35 37	ため
+T3	Argument 38 48	そのまま使用を続ける
+T4	Connective 48 49	と
+R1	CONDITION Arg1:T4 Arg2:T3	
+T5	Argument 49 73	左右何れかの部材がリヤアクスルシャフトから外れる
+R2	RESULT Arg1:T4 Arg2:T5	
+R3	REASON Arg1:T2 Arg2:T1	
+R4	RESULT Arg1:T2 Arg2:T5	
+T6	Connective 79 83	そのため
+T7	Argument 84 119	ブレーキ操作時に片側の後輪ブレーキ及び前輪の回生ブレーキでの制動となり
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 120 131	制動停止距離が長くなる
+T9	Connective 119 120	、
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	

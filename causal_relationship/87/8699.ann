@@ -1,0 +1,15 @@
+T1	Argument 0 43	バスの乗降開閉機構の検知器（光電装置）において、光電管への外的要因に対する検討が不十分
+T2	Connective 44 46	ため
+T3	Argument 52 56	外乱光等
+T4	Connective 56 59	により
+R1	REASON Arg1:T4 Arg2:T3	
+R2	REASON Arg1:T2 Arg2:T1	
+T5	Argument 60 74	当該光電装置が誤検知を起こし
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+T6	Argument 75 85	扉が開閉できなくなる
+T7	Connective 74 75	、
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	
+T8	Argument 47 51	水の付着
+R7	REASON Arg1:T4 Arg2:T8	

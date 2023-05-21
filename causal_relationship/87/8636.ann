@@ -1,0 +1,33 @@
+T1	Argument 0 33	低圧燃料ポンプのインペラ（樹脂製羽根車）において、成形条件が不適切
+T2	Connective 34 36	ため
+T3	Argument 37 46	樹脂密度が低くなっ
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 48 50	燃料
+T5	Connective 50 53	により
+R3	REASON Arg1:T5 Arg2:T4	
+T6	Argument 53 55	膨潤
+R4	RESULT Arg1:T5 Arg2:T6	
+T7	Connective 56 57	て
+R5	REASON Arg1:T7 Arg2:T6	
+T8	Argument 57 59	変形
+R6	RESULT Arg1:T7 Arg2:T8	
+T9	Connective 67 71	そのため
+R7	REASON Arg1:T9 Arg2:T8	
+T10	Connective 46 47	て
+R8	REASON Arg1:T10 Arg2:T3	
+T11	Argument 72 86	インペラがポンプカバーと接触
+T12	Connective 87 88	て
+T13	Argument 88 101	燃料ポンプが作動不良となり
+R9	RESULT Arg1:T9 Arg2:T11	
+R10	REASON Arg1:T12 Arg2:T11	
+R11	RESULT Arg1:T12 Arg2:T13	
+R12	RESULT Arg1:T10 Arg2:T6	
+T14	Argument 102 104	最悪
+T15	Connective 105 107	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+T16	Argument 108 118	走行中エンストに至る
+R14	RESULT Arg1:T15 Arg2:T16	
+T17	Connective 101 102	、
+R15	REASON Arg1:T17 Arg2:T13	
+R16	RESULT Arg1:T17 Arg2:T16	

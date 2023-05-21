@@ -5,7 +5,8 @@ T4	Parts 43 46	ポンプ
 T5	Parts 53 60	ポンプ近接配管
 T6	Parts 75 77	配管
 R1	Part-Whole Arg1:T2 Arg2:T1	
-R2	Part-Whole Arg1:T3 Arg2:T2	
-R3	Coreference Arg1:T2 Arg2:T6	
 R4	Contact Arg1:T3 Arg2:T4	
 R5	Coreference Arg1:T5 Arg2:T6	
+R6	Part-Whole Arg1:T4 Arg2:T1	
+R7	Part-Whole Arg1:T5 Arg2:T2	
+R2	Contact Arg1:T4 Arg2:T5	

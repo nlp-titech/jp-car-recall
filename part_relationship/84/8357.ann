@@ -6,3 +6,7 @@ T5	Parts 93 96	前照灯
 R1	Coreference Arg1:T1 Arg2:T5	
 R2	Coreference Arg1:T2 Arg2:T4	
 R3	Part-Whole Arg1:T2 Arg2:T1	
+T6	Parts 44 50	フィラメント
+T7	Parts 83 89	フィラメント
+R4	Part-Whole Arg1:T6 Arg2:T4	
+R5	Coreference Arg1:T6 Arg2:T7	

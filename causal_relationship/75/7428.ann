@@ -1,0 +1,37 @@
+T3	Connective 91 95	そのため
+T4	Argument 96 109	フロントケース内に水が浸入
+T5	Connective 111 112	と
+T6	Argument 113 129	当該ベアリング内部のグリスが被水
+T7	Connective 130 131	て
+T8	Argument 131 137	潤滑性が低下
+T10	Argument 139 152	クラッチ操作が繰り返し行わ
+T11	Connective 154 155	と
+T12	Argument 156 158	最悪
+T13	Connective 159 161	場合
+T14	Argument 162 172	当該ベアリングが破損
+T15	Argument 174 186	クラッチ操作が不能となり
+T16	Connective 186 187	、
+T17	Argument 187 191	変速不能
+T18	Argument 193 200	走行不能となる
+R3	RESULT Arg1:T3 Arg2:T6	
+R4	CONDITION Arg1:T5 Arg2:T4	
+R5	RESULT Arg1:T5 Arg2:T6	
+R6	REASON Arg1:T7 Arg2:T6	
+R7	RESULT Arg1:T7 Arg2:T8	
+R8	CONDITION Arg1:T11 Arg2:T10	
+R9	RESULT Arg1:T11 Arg2:T14	
+R10	CONDITION Arg1:T13 Arg2:T12	
+R11	RESULT Arg1:T13 Arg2:T14	
+T9	Connective 173 174	て
+R12	REASON Arg1:T9 Arg2:T14	
+R13	RESULT Arg1:T9 Arg2:T15	
+R14	REASON Arg1:T16 Arg2:T15	
+R15	RESULT Arg1:T16 Arg2:T17	
+R16	RESULT Arg1:T16 Arg2:T18	
+T19	Connective 138 139	、
+R17	REASON Arg1:T19 Arg2:T8	
+R18	RESULT Arg1:T19 Arg2:T14	
+T1	Argument 54 81	クラッチレリーズベアリングの被水条件下での耐久性が不足
+R1	REASON Arg1:T3 Arg2:T1	
+T2	Argument 14 49	トランスミッションフロントケース（以下、フロントケース）の形状が不適切
+R2	REASON Arg1:T3 Arg2:T2	

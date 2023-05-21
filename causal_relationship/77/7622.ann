@@ -1,0 +1,5 @@
+T1	Argument 34 57	車両後方よりマーカーランプの橙色部が視認できる
+T2	Connective 57 59	ため
+T3	Argument 60 102	道路運送車両の保安基準の細目を定める告示第６２条（その他の灯火等の制限）に適合しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

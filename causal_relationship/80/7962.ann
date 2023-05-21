@@ -1,0 +1,37 @@
+T1	Connective 44 46	ため
+T2	Argument 47 64	固定用のナットの締付けトルクが不足
+R1	RESULT Arg1:T1 Arg2:T2	
+T3	Connective 74 78	そのため
+R2	REASON Arg1:T3 Arg2:T2	
+T4	Argument 79 86	走行時の振動等
+T5	Connective 86 89	により
+T6	Argument 89 97	当該ナットが緩み
+R3	RESULT Arg1:T3 Arg2:T6	
+R4	REASON Arg1:T5 Arg2:T4	
+R5	RESULT Arg1:T5 Arg2:T6	
+T7	Connective 97 98	、
+T8	Argument 98 121	コントロールユニットボックスの振動が大きくなり
+R6	REASON Arg1:T7 Arg2:T6	
+R7	RESULT Arg1:T7 Arg2:T8	
+T9	Connective 121 122	、
+T10	Argument 122 136	内蔵されているフューズが損傷
+T11	Argument 0 43	エンジンルーム内のコントロールユニットボックスにおいて、車両製造時の工具の管理が不適切
+R8	REASON Arg1:T1 Arg2:T11	
+R9	REASON Arg1:T9 Arg2:T8	
+R10	RESULT Arg1:T9 Arg2:T10	
+T12	Argument 138 143	電源が断た
+T13	Connective 137 138	て
+R11	REASON Arg1:T13 Arg2:T10	
+R12	RESULT Arg1:T13 Arg2:T12	
+T14	Argument 151 158	エンジンが停止
+T15	Argument 160 167	走行不能になる
+T16	Connective 159 160	て
+T17	Connective 144 145	、
+R13	REASON Arg1:T17 Arg2:T12	
+T18	Argument 145 147	最悪
+T19	Connective 148 150	場合
+R14	CONDITION Arg1:T19 Arg2:T18	
+R15	RESULT Arg1:T17 Arg2:T14	
+R16	RESULT Arg1:T19 Arg2:T14	
+R17	REASON Arg1:T16 Arg2:T14	
+R18	RESULT Arg1:T16 Arg2:T15	

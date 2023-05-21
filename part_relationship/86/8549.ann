@@ -6,8 +6,8 @@ T5	Parts 118 122	エンジン
 T6	Parts 44 50	樹脂製ボビン
 T7	Parts 59 62	コイル
 T8	Parts 109 113	コイル線
-R1	Oneway-Coreference Arg1:T2 Arg2:T4	
-R2	Oneway-Coreference Arg1:T3 Arg2:T4	
+R1	Oneway-Coreference Arg1:T4 Arg2:T2	
+R2	Oneway-Coreference Arg1:T4 Arg2:T3	
 R3	Part-Whole Arg1:T6 Arg2:T4	
 R4	Part-Whole Arg1:T7 Arg2:T4	
 R5	Coreference Arg1:T8 Arg2:T7	

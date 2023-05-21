@@ -1,0 +1,21 @@
+T1	Argument 1 56	方向指示器とハザードランプ兼用のフラッシャーユニットにおいて、当該ユニット内部のリレー端子半田部の半田量が不足
+T2	Connective 66 70	そのため
+T3	Argument 71 107	長時間のハザードランプ点灯で当該端子が高温になるという使用方法を繰り返し
+T4	Connective 108 110	場合
+T5	Argument 111 127	当該端子が熱膨張と収縮の繰り返し
+T6	Connective 127 131	によって
+T7	Argument 131 139	半田に亀裂が発生
+T8	Connective 140 141	、
+T9	Argument 141 148	接触不良となっ
+T10	Connective 148 149	て
+T11	Argument 150 171	方向指示器とハザードランプが点灯しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T7	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	

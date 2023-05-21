@@ -4,10 +4,9 @@ T3	Parts 36 40	エンジン
 T4	Parts 60 63	バルブ
 T5	Parts 90 95	油圧警告灯
 T6	Parts 114 118	エンジン
-R1	Connect Arg1:T1 Arg2:T2	
+R1	Contact Arg1:T1 Arg2:T2	
 R2	Coreference Arg1:T2 Arg2:T4	
 R3	Coreference Arg1:T3 Arg2:T6	
-R4	Connect Arg1:T2 Arg2:T3	
+R6	Contact Arg1:T1 Arg2:T3	
+R4	Part-Whole Arg1:T2 Arg2:T3	
 R5	Connect Arg1:T3 Arg2:T5	
-R6	Connect Arg1:T1 Arg2:T3	
-R7	Connect Arg1:T1 Arg2:T5	

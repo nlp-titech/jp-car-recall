@@ -1,0 +1,25 @@
+T1	Argument 0 17	農業用薬剤散布車の回路設計が不適切
+T2	Connective 18 20	ため
+T3	Argument 21 37	スタータスイッチに過電流が流れる
+T4	Connective 43 47	そのため
+T5	Argument 48 64	スタータスイッチ内部の樹脂が溶け
+T6	Connective 64 65	て
+T7	Argument 66 76	接点の接触不良が生じ
+T8	Argument 77 79	最悪
+T9	Connective 80 82	場合
+T10	Argument 83 90	エンジンが停止
+T11	Connective 90 91	、
+T12	Argument 91 100	再始動できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T13	Connective 76 77	、
+R7	REASON Arg1:T13 Arg2:T7	
+R8	RESULT Arg1:T13 Arg2:T10	
+R9	CONDITION Arg1:T9 Arg2:T8	
+R10	RESULT Arg1:T9 Arg2:T10	
+R11	REASON Arg1:T11 Arg2:T10	
+R12	RESULT Arg1:T11 Arg2:T12	

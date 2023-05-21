@@ -1,0 +1,21 @@
+T1	Argument 0 27	ＡＢＳコントロールモジュールにおいて、回路設計が不適切
+T2	Argument 31 47	エンジンＯＦＦ時に常時電源が供給
+T3	Connective 28 30	ため
+R1	REASON Arg1:T3 Arg2:T1	
+R2	RESULT Arg1:T3 Arg2:T2	
+T4	Connective 53 57	そのため
+R5	REASON Arg1:T4 Arg2:T2	
+T7	Argument 58 70	コネクター部が過熱、溶損
+T8	Argument 72 79	ハーネスが焼損
+R6	RESULT Arg1:T4 Arg2:T7	
+T9	Argument 82 84	最悪
+T10	Connective 85 87	場合
+R8	CONDITION Arg1:T10 Arg2:T9	
+T11	Argument 88 95	車両火災に至る
+T12	Connective 71 72	、
+R7	REASON Arg1:T12 Arg2:T7	
+R9	RESULT Arg1:T12 Arg2:T8	
+T13	Connective 80 81	て
+R10	REASON Arg1:T13 Arg2:T8	
+R11	RESULT Arg1:T13 Arg2:T11	
+R12	RESULT Arg1:T10 Arg2:T11	

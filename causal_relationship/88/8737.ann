@@ -1,0 +1,31 @@
+T1	Connective 50 52	ため
+T2	Argument 53 58	厚みが不足
+R1	RESULT Arg1:T1 Arg2:T2	
+T3	Connective 68 72	そのため
+R2	REASON Arg1:T3 Arg2:T2	
+T4	Argument 0 49	７速ＤＳＧ型自動変速機のメカトロニクスにおいて、アキュムレータ取付け部のハウジング加工精度が不適切
+R3	REASON Arg1:T1 Arg2:T4	
+T5	Argument 99 113	ハウジングに微細な亀裂が発生
+R4	RESULT Arg1:T3 Arg2:T5	
+T6	Argument 73 96	始動時や渋滞走行などの大きな油圧変動が繰り返さ
+T7	Connective 98 99	と
+R5	RESULT Arg1:T7 Arg2:T5	
+R6	CONDITION Arg1:T7 Arg2:T6	
+T8	Argument 115 120	油圧が低下
+T9	Connective 114 115	、
+R7	REASON Arg1:T9 Arg2:T5	
+R8	RESULT Arg1:T9 Arg2:T8	
+T10	Argument 126 132	警告灯が点灯
+R9	RESULT Arg1:T9 Arg2:T10	
+T11	Argument 135 149	そのままの状態で使用を続ける
+T12	Connective 149 150	と
+R10	CONDITION Arg1:T12 Arg2:T11	
+T13	Argument 157 165	走行できなくなる
+R11	RESULT Arg1:T12 Arg2:T13	
+T14	Argument 151 153	最悪
+T15	Connective 154 156	場合
+R12	CONDITION Arg1:T15 Arg2:T14	
+R13	RESULT Arg1:T15 Arg2:T13	
+T16	Connective 133 134	て
+R14	REASON Arg1:T16 Arg2:T8	
+R15	RESULT Arg1:T16 Arg2:T13	

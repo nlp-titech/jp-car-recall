@@ -1,0 +1,21 @@
+T1	Connective 32 34	ため
+T2	Argument 35 48	仕様に合った篏合がされない
+R1	RESULT Arg1:T1 Arg2:T2	
+T3	Connective 54 58	そのため
+R2	REASON Arg1:T3 Arg2:T2	
+T4	Argument 80 91	第２ラッチが機能しない
+T5	Argument 97 112	フロントのトランクフードが開放
+R3	RESULT Arg1:T3 Arg2:T4	
+T6	Argument 59 75	運転者が意図せず第１ラッチを開放
+T7	Connective 77 79	場合
+T8	Argument 114 126	ドライバーの視界を妨げる
+T9	Connective 113 114	、
+R4	REASON Arg1:T9 Arg2:T5	
+R5	RESULT Arg1:T9 Arg2:T8	
+R6	CONDITION Arg1:T7 Arg2:T6	
+R7	RESULT Arg1:T7 Arg2:T5	
+T10	Connective 93 96	により
+R8	REASON Arg1:T10 Arg2:T4	
+R9	RESULT Arg1:T10 Arg2:T5	
+T11	Argument 0 31	フロントトランクにおいて、第２ラッチの取り付け部の設計が不適切
+R10	REASON Arg1:T1 Arg2:T11	

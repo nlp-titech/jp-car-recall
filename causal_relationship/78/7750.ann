@@ -1,0 +1,9 @@
+T1	Argument 0 46	セントラルボディコントロールユニットの制御プログラムにおいて、車両へ搭載する仕様指示が不適切
+T2	Connective 47 49	ため
+T3	Argument 50 66	誤った仕様の制御プログラムが搭載
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 72 76	そのため
+T5	Argument 77 89	排出ガス及び燃費値が悪化
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

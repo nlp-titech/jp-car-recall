@@ -1,0 +1,45 @@
+T1	Argument 19 44	オルタネータにおいて、アイドル時の発電制御が不適切
+T2	Connective 45 47	ため
+T3	Argument 48 62	整流器のダイオードが熱を受け
+T4	Connective 62 63	て
+T5	Argument 63 65	破損
+T6	Connective 66 67	、
+T7	Argument 74 82	充電不良を起こし
+T8	Connective 82 83	、
+T9	Argument 83 92	エンジンがストール
+T10	Argument 103 122	特定の組み合わせのダイオードが複数破損
+T11	Connective 123 124	て
+T12	Argument 124 126	短絡
+T13	Connective 128 129	と
+T14	Argument 130 143	オルタネータに大電流が流れ
+T15	Connective 143 144	て
+T16	Argument 144 146	発熱
+T18	Connective 158 159	、
+T19	Argument 159 161	最悪
+T20	Connective 162 164	場合
+T21	Argument 165 170	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T12	
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T14	
+R13	REASON Arg1:T15 Arg2:T14	
+T22	Argument 147 152	周囲を溶損
+R16	REASON Arg1:T18 Arg2:T22	
+R17	RESULT Arg1:T18 Arg2:T21	
+R18	CONDITION Arg1:T20 Arg2:T19	
+R19	RESULT Arg1:T20 Arg2:T21	
+T17	Connective 146 147	し
+R14	RESULT Arg1:T15 Arg2:T16	
+R15	REASON Arg1:T17 Arg2:T16	
+R20	RESULT Arg1:T17 Arg2:T22	
+R21	RESULT Arg1:T4 Arg2:T10	
+T23	Argument 67 73	警告灯の点灯
+R22	RESULT Arg1:T6 Arg2:T23	

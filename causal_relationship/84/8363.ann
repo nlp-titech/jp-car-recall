@@ -1,0 +1,32 @@
+T1	Argument 25 47	走行制御コントローラのトランジスタの容量不足
+T3	Argument 49 62	放熱グリスの塗布のバラツキ
+T2	Connective 62 65	により
+T4	Argument 66 70	高負荷時
+T5	Connective 70 74	において
+T6	Argument 74 86	トランジスタに電流が集中
+T7	Connective 87 88	、
+T8	Argument 88 103	トランジスタの温度が高温になる
+T9	Connective 109 113	そのため
+T10	Argument 122 131	トランジスタが破損
+T11	Connective 132 133	、
+T12	Argument 133 146	走行モーターへの電流が絶た
+T13	Argument 148 156	走行できなくなる
+T14	Connective 147 148	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	REASON Arg1:T2 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T6	
+R4	CONDITION Arg1:T5 Arg2:T4	
+R5	RESULT Arg1:T5 Arg2:T6	
+R6	REASON Arg1:T7 Arg2:T6	
+R7	RESULT Arg1:T7 Arg2:T8	
+R8	REASON Arg1:T9 Arg2:T8	
+R9	RESULT Arg1:T9 Arg2:T10	
+R10	REASON Arg1:T11 Arg2:T10	
+R11	RESULT Arg1:T11 Arg2:T12	
+R12	REASON Arg1:T14 Arg2:T12	
+R13	RESULT Arg1:T14 Arg2:T13	
+T15	Argument 114 118	温度上昇
+T16	Connective 118 122	によって
+R14	RESULT Arg1:T7 Arg2:T15	
+R15	REASON Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T10	

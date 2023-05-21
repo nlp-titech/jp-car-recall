@@ -1,0 +1,29 @@
+T1	Argument 1 38	エアバッグコントロールユニットの取付けナットにおいて、締め付け作業が不適切
+T2	Connective 39 41	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 42 52	締め付けトルクが不足
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 63 67	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 68 73	走行振動等
+R4	RESULT Arg1:T4 Arg2:T15	
+T6	Argument 91 97	ナットが外れ
+T7	Argument 98 116	エアバッグコントロールユニットが脱落
+T8	Argument 118 133	エアバッグの作動ができなくなる
+T9	Connective 116 117	し
+T10	Connective 97 98	て
+R5	RESULT Arg1:T9 Arg2:T8	
+R6	REASON Arg1:T9 Arg2:T7	
+T11	Connective 88 90	場合
+T12	Argument 85 87	最悪
+R7	CONDITION Arg1:T11 Arg2:T12	
+R9	RESULT Arg1:T11 Arg2:T6	
+R10	REASON Arg1:T10 Arg2:T6	
+R11	RESULT Arg1:T10 Arg2:T7	
+T13	Connective 84 85	、
+R8	REASON Arg1:T13 Arg2:T15	
+R12	RESULT Arg1:T13 Arg2:T6	
+T14	Connective 73 76	により
+T15	Argument 76 84	当該ナットが緩み
+R13	REASON Arg1:T14 Arg2:T5	
+R14	RESULT Arg1:T14 Arg2:T15	

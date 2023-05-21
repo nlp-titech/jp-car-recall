@@ -1,0 +1,33 @@
+T1	Argument 16 37	排気管を接続するクランプの固定方法が不適切
+T2	Connective 38 40	ため
+T3	Argument 41 53	クランプの締め付けが緩む
+T4	Connective 59 63	そのため
+T5	Argument 64 76	排気管の接続部に隙間が生
+T6	Connective 76 77	じ
+T7	Argument 77 88	未処理の排出ガスが漏れ
+T8	Connective 88 89	、
+T9	Argument 89 106	排出ガスが保安基準に適合しなくなる
+T10	Connective 112 113	。
+T11	Argument 113 115	最悪
+T12	Connective 116 118	場合
+T13	Argument 119 125	排気管が外れ
+T14	Connective 125 126	、
+T15	Argument 126 142	排気管周囲のワイヤハーネスを焼損
+T16	Connective 143 144	、
+T17	Argument 144 149	火災が発生
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T5	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R15	REASON Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T17	

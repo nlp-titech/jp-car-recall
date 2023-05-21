@@ -1,0 +1,25 @@
+T1	Argument 0 33	電動ブレーキ倍力装置において、油圧ポンプモーターの部品仕様が不適切
+T2	Connective 34 36	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 37 51	頻繁なブレーキ操作を繰り返し
+T4	Connective 52 54	場合
+R2	CONDITION Arg1:T4 Arg2:T3	
+T5	Argument 55 70	ポンプモーター内部の電線が破損
+R3	RESULT Arg1:T2 Arg2:T5	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 72 79	必要油圧が不足
+T7	Connective 71 72	、
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	
+T9	Connective 80 81	、
+R7	REASON Arg1:T9 Arg2:T6	
+T10	Argument 110 139	警告灯点灯及び警告音作動した後もそのままの状態で使用を継続
+T11	Connective 141 143	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+T12	Argument 144 156	ブレーキの効きが悪くなる
+R10	RESULT Arg1:T11 Arg2:T12	
+R11	RESULT Arg1:T9 Arg2:T12	
+T8	Argument 81 91	ブレーキ警告灯が点灯
+T13	Argument 95 101	警告音が作動
+R8	RESULT Arg1:T9 Arg2:T8	
+R12	RESULT Arg1:T9 Arg2:T13	

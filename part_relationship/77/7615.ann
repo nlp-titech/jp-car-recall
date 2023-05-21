@@ -6,4 +6,6 @@ T7	Parts 98 100	ギア
 R1	Coreference Arg1:T2 Arg2:T5	
 R2	Part-Whole Arg1:T2 Arg2:T1	
 R3	Part-Whole Arg1:T4 Arg2:T1	
-R4	Contact Arg1:T7 Arg2:T5	
+R4	Part-Whole Arg1:T7 Arg2:T1	
+R5	Connect Arg1:T4 Arg2:T7	
+R6	Contact Arg1:T4 Arg2:T5	

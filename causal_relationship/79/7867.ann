@@ -1,0 +1,33 @@
+T1	Argument 11 30	ウィンカスイッチ接点の製造管理が不適切
+T2	Connective 31 33	ため
+T4	Connective 62 66	そのため
+T5	Argument 67 78	固定接点の金属粉の堆積
+T6	Connective 78 81	により
+T7	Argument 82 88	接点間が導通
+T8	Connective 89 90	、
+T10	Connective 115 116	て
+T11	Argument 117 119	最悪
+T12	Connective 120 122	場合
+T13	Argument 123 130	導通不良となり
+T14	Connective 130 131	、
+T15	Argument 131 144	方向指示器が作動しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+T17	Argument 34 54	ウィンカスイッチ操作時にアーク放電が発生
+R2	REASON Arg1:T4 Arg2:T17	
+T9	Argument 90 92	発熱
+T18	Connective 96 97	で
+T19	Argument 97 114	固定接点を保持する接点ベースが溶損
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T18 Arg2:T9	
+R16	RESULT Arg1:T18 Arg2:T19	
+R17	REASON Arg1:T10 Arg2:T19	
+R3	RESULT Arg1:T2 Arg2:T17	

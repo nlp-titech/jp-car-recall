@@ -1,0 +1,17 @@
+T1	Argument 0 29	ＳＲＳコントロールユニットにおいて、製造機器の設定が不適切
+T2	Connective 30 32	ため
+T3	Argument 33 56	固定ボルトが適正なトルクで締め付けられていない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 62 66	そのため
+T5	Argument 67 79	当該ユニットの固定が緩み
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 80 96	衝突の際に適切に衝撃を検知できず
+T7	Connective 79 80	、
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	
+T8	Argument 97 114	乗員補助拘束装置が適切に作動しない
+T9	Connective 96 97	、
+R7	REASON Arg1:T9 Arg2:T6	
+R8	RESULT Arg1:T9 Arg2:T8	

@@ -1,5 +1,5 @@
 T1	Parts 0 12	ブレーキマスターシリンダ
 T2	Parts 29 35	ゴム製シール
 T3	Parts 95 102	ブレーキペダル
-R1	Contact Arg1:T2 Arg2:T1	
 R2	Connect Arg1:T1 Arg2:T3	
+R1	Contact Arg1:T2 Arg2:T1	

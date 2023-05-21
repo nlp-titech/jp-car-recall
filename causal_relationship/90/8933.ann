@@ -1,0 +1,19 @@
+T1	Argument 0 45	農業用クローラトラクタの駐車・副変速機バルブにおいて、当該バルブのコイルの熱耐久性が不適切
+T2	Connective 46 48	ため
+T3	Argument 49 60	連続作業運転を繰り返す
+T4	Connective 60 61	と
+T5	Argument 61 70	機械熱の影響を受け
+T6	Connective 70 71	、
+T7	Argument 71 83	当該コイルの吸引力が低下
+T8	Connective 91 95	そのため
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T7	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+T11	Argument 96 120	エンジン再始動時に駐車ブレーキが解除できなくなる
+T12	Argument 123 141	副変速機による切り替えができなくなる
+R11	RESULT Arg1:T8 Arg2:T11	
+R12	RESULT Arg1:T8 Arg2:T12	

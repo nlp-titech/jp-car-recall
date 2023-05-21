@@ -1,0 +1,35 @@
+T1	Argument 12 55	車軸に装着されているエアスプリングのピストン取付ボルトが規定トルクで締付けられていない
+T2	Connective 61 65	そのため
+T3	Argument 71 81	当該取付ボルトが緩ん
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 81 82	で
+T5	Argument 82 89	ピストンが脱落
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 101 149	センターアクスルに装着されているホイールハブキャリアの取付ボルトが規定トルクで締付けられていない
+T7	Connective 155 159	そのため
+T8	Argument 165 175	当該取付ボルトが緩み
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T8	
+T9	Argument 182 200	ホイールハブキャリアごとタイヤが脱落
+T10	Connective 175 176	、
+R7	REASON Arg1:T10 Arg2:T8	
+R8	RESULT Arg1:T10 Arg2:T9	
+T11	Argument 176 178	最悪
+T12	Connective 179 181	場合
+R9	CONDITION Arg1:T12 Arg2:T11	
+R10	RESULT Arg1:T12 Arg2:T9	
+T13	Argument 212 239	後処理装置コントロールユニットの制御プログラムが不適切
+T14	Connective 240 242	ため
+R11	REASON Arg1:T14 Arg2:T13	
+T17	Argument 260 269	警告灯が点灯しない
+R14	RESULT Arg1:T14 Arg2:T17	
+T18	Connective 270 274	そのため
+T19	Argument 275 297	ドライバーが当該センサーの故障を検知できない
+R15	REASON Arg1:T18 Arg2:T17	
+R16	RESULT Arg1:T18 Arg2:T19	
+T15	Argument 243 256	尿素水の温度センサーが故障
+T16	Connective 258 259	際
+R12	CONDITION Arg1:T16 Arg2:T15	
+R13	RESULT Arg1:T16 Arg2:T17	

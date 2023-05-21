@@ -1,0 +1,25 @@
+T1	Argument 0 44	エンジンのオイルクーラーにおいて、オイルホースとオイルパイプの接続クランプの形状が不適切
+T2	Connective 45 47	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 48 65	接続クランプ内でホースに亀裂が発生
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 73 77	そのため
+T5	Argument 78 80	油圧
+T6	Connective 80 83	により
+R3	REASON Arg1:T6 Arg2:T5	
+T7	Argument 83 99	当該部位よりエンジンオイルが漏れ
+R4	RESULT Arg1:T6 Arg2:T7	
+R5	RESULT Arg1:T4 Arg2:T7	
+R6	REASON Arg1:T4 Arg2:T3	
+T8	Argument 100 102	最悪
+T9	Connective 103 105	場合
+R7	REASON Arg1:T9 Arg2:T8	
+T10	Argument 106 121	漏れたオイルがリアタイヤに付着
+T11	Argument 123 132	走行安定性を損なう
+T12	Connective 122 123	、
+R8	REASON Arg1:T12 Arg2:T10	
+R9	RESULT Arg1:T12 Arg2:T11	
+T13	Connective 99 100	、
+R10	REASON Arg1:T13 Arg2:T7	
+R11	RESULT Arg1:T13 Arg2:T10	
+R12	RESULT Arg1:T9 Arg2:T10	

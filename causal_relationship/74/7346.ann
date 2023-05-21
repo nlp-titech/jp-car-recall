@@ -1,0 +1,17 @@
+T1	Argument 0 18	後部反射器において、製造公差が不適切
+T2	Argument 22 40	取り付け部の径が設定よりも小さくなっ
+T3	Connective 49 53	そのため
+T4	Connective 19 21	ため
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T3 Arg2:T2	
+T5	Argument 62 79	後部反射器を固定するクリップが外れ
+R4	RESULT Arg1:T3 Arg2:T5	
+T6	Connective 79 80	、
+T7	Argument 80 88	後部反射器が脱落
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 54 59	走行振動等
+T9	Connective 59 62	により
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	

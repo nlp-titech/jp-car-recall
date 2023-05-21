@@ -14,19 +14,28 @@ T13	Parts 197 205	ブレーキフルード
 T14	Parts 206 218	ブレーキリザーバータンク
 T15	Parts 234 238	ブレーキ
 R1	Contact Arg1:T2 Arg2:T3	
-R2	Connect Arg1:T4 Arg2:T2	
+R2	Contact Arg1:T4 Arg2:T2	
 R3	Coreference Arg1:T5 Arg2:T3	
 R4	Coreference Arg1:T6 Arg2:T1	
 R5	Coreference Arg1:T7 Arg2:T4	
 R6	Part-Whole Arg1:T2 Arg2:T1	
 R7	Part-Whole Arg1:T3 Arg2:T1	
-R8	Part-Whole Arg1:T4 Arg2:T1	
 R9	Part-Whole Arg1:T8 Arg2:T6	
-R10	Contact Arg1:T9 Arg2:T8	
-R11	Part-Whole Arg1:T9 Arg2:T6	
+R10	Part-Whole Arg1:T9 Arg2:T8	
 R12	Coreference Arg1:T10 Arg2:T8	
 R13	Coreference Arg1:T11 Arg2:T10	
 R14	Coreference Arg1:T15 Arg2:T12	
 R15	Coreference Arg1:T12 Arg2:T6	
 R16	Coreference Arg1:T13 Arg2:T7	
-R17	Coreference Arg1:T14 Arg2:T10	
+T16	Parts 37 42	油圧シール
+T17	Parts 73 77	一次回路
+T18	Parts 99 103	二次回路
+T19	Parts 192 196	二次回路
+R18	Coreference Arg1:T18 Arg2:T19	
+R19	Part-Whole Arg1:T16 Arg2:T2	
+R20	Contact Arg1:T17 Arg2:T7	
+R21	Contact Arg1:T7 Arg2:T18	
+R22	Part-Whole Arg1:T17 Arg2:T6	
+R23	Part-Whole Arg1:T18 Arg2:T6	
+R17	Coreference Arg1:T11 Arg2:T14	
+R11	Part-Whole Arg1:T13 Arg2:T10	

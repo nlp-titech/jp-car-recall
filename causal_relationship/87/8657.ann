@@ -1,0 +1,25 @@
+T1	Argument 0 35	重ね板ばね式緩衝装置付大型トラックのＶロッドにおいて、製造工程が不適切
+T2	Connective 36 38	ため
+T3	Argument 39 69	センタージョイント部ボールスリーブとフランジとの嵌合が不十分
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 76 80	そのため
+T5	Argument 81 104	段差乗り越えなどの大きな変動等を繰り返し受ける
+T6	Connective 104 105	と
+R3	CONDITION Arg1:T6 Arg2:T5	
+R4	REASON Arg1:T4 Arg2:T3	
+T7	Argument 106 125	フランジを固定するボルトの締結力が低下
+R5	RESULT Arg1:T4 Arg2:T7	
+T8	Argument 127 145	センタージョイントのハウジングが破損
+T9	Connective 126 127	、
+R6	REASON Arg1:T9 Arg2:T7	
+R7	RESULT Arg1:T9 Arg2:T8	
+T10	Argument 148 150	最悪
+T11	Connective 151 153	場合
+T12	Argument 154 163	走行安定性が損なわ
+R8	CONDITION Arg1:T11 Arg2:T10	
+R9	RESULT Arg1:T11 Arg2:T12	
+T13	Connective 146 147	て
+R10	REASON Arg1:T13 Arg2:T8	
+R11	RESULT Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T6 Arg2:T7	

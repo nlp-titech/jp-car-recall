@@ -1,0 +1,45 @@
+T1	Argument 0 21	キャブ補助ヒーターの配線の取付位置が不適切
+T2	Connective 22 24	ため
+T3	Argument 25 42	キャブ補助ヒーターブラケットと干渉
+T4	Connective 42 43	し
+T5	Argument 43 46	擦れる
+R1	REASON Arg1:T4 Arg2:T3	
+R2	RESULT Arg1:T4 Arg2:T5	
+R3	REASON Arg1:T2 Arg2:T1	
+R4	RESULT Arg1:T2 Arg2:T3	
+T6	Connective 52 56	このため
+R5	REASON Arg1:T6 Arg2:T5	
+T7	Argument 57 59	最悪
+T8	Connective 60 62	場合
+T9	Argument 63 68	配線の損傷
+T10	Connective 68 71	により
+T11	Argument 71 88	キャブ補助ヒーターが作動しなくなっ
+T12	Argument 91 98	ショートが発生
+R6	RESULT Arg1:T6 Arg2:T9	
+R8	CONDITION Arg1:T8 Arg2:T7	
+R9	RESULT Arg1:T8 Arg2:T9	
+R10	REASON Arg1:T10 Arg2:T9	
+R11	RESULT Arg1:T10 Arg2:T11	
+R12	RESULT Arg1:T10 Arg2:T12	
+T13	Argument 106 126	キャブ補助ヒーターの信号に悪影響を及ぼす
+T14	Connective 128 129	で
+T15	Argument 130 149	燃料供給ポンプの制御信号に悪影響を与え
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+T16	Connective 149 150	、
+T17	Argument 150 177	イグニッションキーをオフにしても燃料供給ポンプが停止せ
+R15	REASON Arg1:T16 Arg2:T15	
+T18	Connective 197 198	で
+T19	Argument 198 205	エンストに至る
+R16	RESULT Arg1:T16 Arg2:T17	
+R18	RESULT Arg1:T18 Arg2:T19	
+T20	Connective 177 178	ず
+T21	Argument 178 188	エンジンがまわりつづ
+T22	Connective 188 189	け
+T23	Argument 189 195	燃料が切れる
+R7	RESULT Arg1:T10 Arg2:T13	
+R17	REASON Arg1:T20 Arg2:T17	
+R19	RESULT Arg1:T20 Arg2:T21	
+R20	REASON Arg1:T22 Arg2:T21	
+R21	RESULT Arg1:T22 Arg2:T23	
+R22	REASON Arg1:T18 Arg2:T23	

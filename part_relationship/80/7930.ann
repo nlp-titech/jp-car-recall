@@ -15,4 +15,4 @@ R2	Part-Whole Arg1:T2 Arg2:T8
 R6	Part-Whole Arg1:T8 Arg2:T7	
 R7	Connect Arg1:T2 Arg2:T10	
 R8	Connect Arg1:T10 Arg2:T11	
-R9	Oneway-Coreference Arg1:T5 Arg2:T10	
+R9	Oneway-Coreference Arg1:T5 Arg2:T2	

@@ -5,7 +5,7 @@ T4	Parts 45 53	ベアリングケージ
 T5	Parts 95 103	ベアリングケージ
 T6	Parts 122 125	ケージ
 R1	Part-Whole Arg1:T2 Arg2:T1	
-R2	Contact Arg1:T4 Arg2:T3	
 R3	Coreference Arg1:T4 Arg2:T5	
 R4	Coreference Arg1:T5 Arg2:T6	
-R5	Contact Arg1:T3 Arg2:T2	
+R2	Contact Arg1:T2 Arg2:T3	
+R5	Part-Whole Arg1:T4 Arg2:T2	

@@ -5,4 +5,3 @@ T4	Parts 18 22	キャップ
 R1	Part-Whole Arg1:T2 Arg2:T1	
 R2	Contact Arg1:T4 Arg2:T2	
 R3	Coreference Arg1:T1 Arg2:T3	
-R4	Part-Whole Arg1:T4 Arg2:T1	

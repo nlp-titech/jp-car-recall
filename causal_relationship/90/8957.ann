@@ -1,0 +1,5 @@
+T1	Argument 0 34	車両製作工場の完成検査において、完成検査工程における合否判定が不明確
+T2	Connective 41 43	ため
+T3	Argument 44 73	道路運送車両の保安基準に関する検査が適切に行われていなかっ
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

@@ -1,0 +1,21 @@
+T1	Argument 0 30	左右テールライトのボディへの取付ナットにおいて、洗浄が不十分
+T2	Connective 31 33	ため
+T3	Argument 34 40	残留物が残っ
+T4	Connective 49 53	そのため
+T5	Argument 54 57	残留物
+T6	Connective 57 60	により
+T7	Argument 60 72	テールライト取付部が破損
+T8	Connective 73 74	、
+T9	Argument 74 76	最悪
+T10	Connective 77 79	場合
+T11	Argument 80 95	当該テールライトが走行中に脱落
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T11	
+R9	CONDITION Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	

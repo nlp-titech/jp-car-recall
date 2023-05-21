@@ -1,9 +1,7 @@
 T1	Parts 0 14	パワートランスファーユニット
 T2	Parts 19 26	制御プログラム
-T3	Parts 56 60	ユニット
 T4	Parts 79 82	警告灯
 T5	Parts 87 89	前輪
 R1	Part-Whole Arg1:T2 Arg2:T1	
-R2	Coreference Arg1:T3 Arg2:T1	
-R3	Connect Arg1:T4 Arg2:T3	
-R4	Connect Arg1:T5 Arg2:T3	
+R2	Connect Arg1:T1 Arg2:T4	
+R3	Connect Arg1:T1 Arg2:T5	

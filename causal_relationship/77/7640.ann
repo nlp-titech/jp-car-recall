@@ -1,0 +1,21 @@
+T1	Argument 8 49	動力伝達装置において、主変速１速ギヤとシャフトの隙間が小さく潤滑油が流れにくい構造
+T2	Connective 49 51	ため
+T3	Argument 52 59	潤滑油量が不足
+T4	Connective 60 61	、
+T5	Argument 61 68	潤滑不良となる
+T6	Connective 74 78	そのため
+T7	Argument 79 97	当該ギヤとシャフトの摺動部が焼き付き
+T8	Argument 98 100	最悪
+T9	Connective 97 98	、
+T10	Connective 101 103	場合
+T11	Argument 104 111	走行不能となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T11	
+R9	CONDITION Arg1:T10 Arg2:T8	
+R10	RESULT Arg1:T10 Arg2:T11	

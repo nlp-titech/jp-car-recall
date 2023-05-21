@@ -1,0 +1,9 @@
+T1	Argument 0 28	エンジンコントロールユニットにおいて、プログラムが不適切
+T2	Connective 29 31	ため
+T3	Argument 32 38	特定の条件下
+T4	Connective 38 39	で
+T5	Argument 39 56	窒素酸化物（ＮＯｘ）の排出量が増加
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

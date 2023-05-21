@@ -1,0 +1,43 @@
+T1	Argument 17 59	ラジエータ冷却ファンと締結するファンハブに取付けたスタッドボルトの締付け方法が不適切
+T2	Connective 60 62	ため
+T3	Argument 63 84	当該ハブのスタッドボルト挿入部に亀裂が発生
+T4	Connective 84 85	し
+T5	Argument 85 87	緩む
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 93 97	そのため
+T7	Argument 98 108	冷却ファンが回転振れ
+T8	Connective 108 109	し
+T9	Argument 109 136	当該ハブ固定部のウォーターポンプハウジングに負荷が掛か
+T11	Argument 137 153	ウォーターポンプハウジングが破断
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Connective 136 137	り
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Connective 155 156	と
+T13	Argument 157 175	冷却ファンと一体でラジエータ側へ脱落
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+T14	Argument 178 180	最悪
+T15	Connective 181 183	場合
+T16	Argument 184 194	ラジエータコアが損傷
+T17	Connective 194 195	し
+T18	Argument 195 200	冷却水漏れ
+T19	Connective 200 203	により
+T20	Argument 203 207	走行不能
+T21	Argument 212 236	ウォーターポンプハウジングの一部破片が路上に落下
+T22	Connective 176 177	て
+R13	REASON Arg1:T22 Arg2:T13	
+R14	RESULT Arg1:T22 Arg2:T16	
+R15	CONDITION Arg1:T15 Arg2:T14	
+R16	RESULT Arg1:T15 Arg2:T16	
+R17	REASON Arg1:T17 Arg2:T16	
+R18	RESULT Arg1:T17 Arg2:T18	
+R19	REASON Arg1:T19 Arg2:T18	
+R20	RESULT Arg1:T19 Arg2:T20	
+R21	RESULT Arg1:T12 Arg2:T21	

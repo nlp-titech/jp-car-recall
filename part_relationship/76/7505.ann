@@ -4,6 +4,6 @@ T3	Parts 53 59	酸素センサー
 T4	Parts 70 74	エンジン
 T5	Parts 75 78	警告灯
 R1	Coreference Arg1:T2 Arg2:T3	
-R2	Connect Arg1:T4 Arg2:T5	
 R3	Connect Arg1:T1 Arg2:T4	
 R4	Connect Arg1:T1 Arg2:T2	
+R2	Connect Arg1:T1 Arg2:T5	

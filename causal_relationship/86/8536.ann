@@ -1,0 +1,5 @@
+T1	Argument 0 50	昼間走行灯、車幅灯及び駐車灯の副灯において、前方灯火装置を制御するコンピューターのプログラムが不適切
+T2	Connective 51 53	ため
+T3	Argument 54 81	方向指示器を使用した時に消灯する当該灯火が再点灯しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

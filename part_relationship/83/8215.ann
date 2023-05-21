@@ -4,7 +4,8 @@ T3	Parts 37 43	ネジロック剤
 T4	Parts 65 67	ギヤ
 T5	Parts 79 81	ネジ
 T6	Parts 100 102	ギヤ
-R1	Coreference Arg1:T1 Arg2:T4	
 R2	Coreference Arg1:T4 Arg2:T6	
-R3	Contact Arg1:T2 Arg2:T3	
 R4	Coreference Arg1:T2 Arg2:T5	
+R1	Coreference Arg1:T4 Arg2:T1	
+R5	Contact Arg1:T2 Arg2:T1	
+R3	Contact Arg1:T3 Arg2:T2	

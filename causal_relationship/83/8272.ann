@@ -1,0 +1,25 @@
+T1	Argument 7 35	排出ガス発散防止装置において、尿素水ホースの耐熱性が不足
+T2	Connective 39 41	ため
+T3	Argument 42 58	ＤＰＤ（粒子状物質除去装置）の熱
+T4	Connective 58 61	により
+T5	Argument 61 70	当該ホースが熱変形
+T6	Argument 71 73	破損
+T7	Connective 70 71	し
+R1	REASON Arg1:T7 Arg2:T5	
+R2	RESULT Arg1:T7 Arg2:T6	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T2 Arg2:T1	
+R6	RESULT Arg1:T2 Arg2:T5	
+T8	Connective 81 85	そのため
+R7	REASON Arg1:T8 Arg2:T6	
+T9	Argument 86 100	そのままの状態で使用を続ける
+T10	Argument 102 108	尿素水が漏れ
+T11	Connective 100 101	と
+R8	CONDITION Arg1:T11 Arg2:T9	
+T12	Connective 108 109	、
+R9	RESULT Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T8 Arg2:T10	
+T13	Argument 109 137	排出ガス中の窒素酸化物（ＮＯｘ）の排出値が基準値を超える
+R11	REASON Arg1:T12 Arg2:T10	
+R12	RESULT Arg1:T12 Arg2:T13	

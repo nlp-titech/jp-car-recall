@@ -1,0 +1,21 @@
+T1	Argument 11 27	リヤサスペンションの設計が不適切
+T2	Connective 28 30	ため
+T3	Argument 31 37	段差通過時等
+T4	Connective 37 38	に
+R1	CONDITION Arg1:T4 Arg2:T3	
+T5	Argument 38 58	後輪のブレーキチャンバーとフレームが干渉
+R2	RESULT Arg1:T4 Arg2:T5	
+R3	REASON Arg1:T2 Arg2:T1	
+R4	RESULT Arg1:T2 Arg2:T5	
+T6	Connective 63 65	場合
+T7	Argument 60 62	最悪
+R5	CONDITION Arg1:T6 Arg2:T7	
+T8	Argument 66 80	当該ブレーキチャンバーが破損
+T9	Connective 59 60	、
+R6	REASON Arg1:T9 Arg2:T5	
+R7	RESULT Arg1:T9 Arg2:T8	
+T10	Connective 81 82	て
+T11	Argument 82 88	制動力が低下
+R8	REASON Arg1:T10 Arg2:T8	
+R9	RESULT Arg1:T10 Arg2:T11	
+R10	RESULT Arg1:T6 Arg2:T8	

@@ -1,0 +1,11 @@
+T1	Argument 13 28	速度計の制御プログラムが不適切
+T2	Connective 29 31	ため
+T3	Argument 32 56	プログラム起動時に特定条件でのキー操作をおこなう
+T4	Connective 56 57	と
+T5	Argument 58 64	警告灯が点灯
+T7	Argument 66 81	速度計等が正しく作動しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T7	

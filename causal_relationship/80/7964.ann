@@ -1,0 +1,13 @@
+T1	Connective 45 47	ため
+T4	Argument 48 75	後輪操舵ロック時にドロップアームに想定以上の力が掛かる
+T5	Connective 81 85	そのため
+T6	Argument 86 96	ドロップアームが変形
+T7	Connective 97 98	、
+T8	Argument 98 106	直進安定性が低下
+R3	REASON Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T6	
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T8	
+T9	Argument 20 44	後輪操舵ロック用システムの制御プログラムが不適切
+R7	REASON Arg1:T1 Arg2:T9	
+R8	RESULT Arg1:T1 Arg2:T4	

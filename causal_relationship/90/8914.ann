@@ -1,0 +1,9 @@
+T1	Argument 0 18	燃料タンクにおいて、製造工程が不適切
+T2	Connective 19 21	ため
+T3	Argument 22 40	製造工程で素材に塗布する接着剤が不足
+T4	Connective 50 54	そのため
+T5	Argument 55 72	接着が不十分な箇所から燃料が漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

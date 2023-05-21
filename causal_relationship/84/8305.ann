@@ -1,0 +1,15 @@
+T1	Argument 0 48	画像表示装置（カーナビのモニタ）において、ＭＢＵＸマルチメディアシステムの制御プログラムが不適切
+T2	Connective 49 51	ため
+T3	Argument 52 63	起動時に何も表示しない
+T5	Argument 69 76	起動後に再起動
+T6	Connective 76 77	し
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 95 99	そのため
+T8	Argument 100 123	画像表示装置による直前直左視界の確認ができない
+R7	RESULT Arg1:T4 Arg2:T8	
+T7	Argument 77 89	数秒間画像表示が途絶える
+R4	RESULT Arg1:T2 Arg2:T5	
+R6	REASON Arg1:T4 Arg2:T7	
+R3	REASON Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T6 Arg2:T7	

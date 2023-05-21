@@ -1,0 +1,31 @@
+T1	Argument 0 41	電動パワーステアリングのワイヤーハーネスにおいて、アンダーパネルの取付方法が不適切
+T2	Connective 42 44	ため
+T3	Argument 45 66	クロスメンバと当該アンダーパネルの間に挟ま
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 76 80	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 81 97	当該ワイヤーハーネスの被覆が損傷
+T6	Argument 99 104	短絡が発生
+R4	RESULT Arg1:T4 Arg2:T5	
+T7	Connective 98 99	、
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	
+T8	Argument 112 131	電動パワーステアリングが機能しなくなり
+T9	Connective 108 111	により
+R7	REASON Arg1:T9 Arg2:T6	
+R8	RESULT Arg1:T9 Arg2:T8	
+T10	Argument 132 134	最悪
+T11	Connective 135 137	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+T12	Argument 138 148	始動用バッテリが消耗
+T13	Argument 150 162	エンジンが始動しなくなる
+T14	Connective 149 150	て
+R10	REASON Arg1:T14 Arg2:T12	
+R11	RESULT Arg1:T14 Arg2:T13	
+T15	Argument 166 171	火災に至る
+R12	RESULT Arg1:T14 Arg2:T15	
+T16	Connective 131 132	、
+R13	REASON Arg1:T16 Arg2:T8	
+R14	RESULT Arg1:T16 Arg2:T12	
+R15	RESULT Arg1:T11 Arg2:T12	

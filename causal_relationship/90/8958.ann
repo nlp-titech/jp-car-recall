@@ -1,0 +1,23 @@
+T1	Argument 0 41	駆動用モーターの制御ユニットに使用される配線基板において、メッキの工程管理が不適切
+T2	Connective 42 44	ため
+T3	Argument 45 59	メッキが正しく行われていない
+T4	Connective 65 69	そのため
+T5	Argument 70 85	駆動系統の警告メッセージが表示
+T7	Argument 87 103	制御ユニットの機能が一時的に停止
+T8	Connective 104 105	て
+T9	Argument 106 115	動力の伝達ができず
+T10	Argument 116 118	最悪
+T11	Connective 115 116	、
+T12	Connective 119 121	場合
+T13	Argument 122 130	走行できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T11 Arg2:T9	
+R10	RESULT Arg1:T11 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T10	
+R12	RESULT Arg1:T12 Arg2:T13	
+R5	RESULT Arg1:T4 Arg2:T7	

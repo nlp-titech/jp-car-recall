@@ -6,6 +6,6 @@ T5	Parts 75 79	フィルタ
 T6	Parts 84 88	エンジン
 R1	Coreference Arg1:T1 Arg2:T2	
 R2	Coreference Arg1:T4 Arg2:T5	
-R3	Contact Arg1:T2 Arg2:T3	
 R4	Part-Whole Arg1:T4 Arg2:T3	
 R5	Connect Arg1:T3 Arg2:T6	
+R3	Part-Whole Arg1:T3 Arg2:T2	

@@ -1,0 +1,21 @@
+T1	Argument 8 40	エンジン冷却ファン駆動装置において、生産工程での作業管理が不適切
+T2	Connective 41 43	ため
+T3	Argument 44 69	当該装置内部品が、正規のものと異なる部品が組み込ま
+T4	Connective 77 81	そのため
+T5	Argument 82 100	冷却ファンを保持するベアリングが破損
+T6	Connective 101 102	、
+T7	Argument 102 104	最悪
+T8	Connective 105 107	場合
+T9	Argument 108 118	冷却ファンが回動せず
+T10	Connective 118 119	、
+T11	Argument 119 134	エンジンのオーバーヒートに至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	

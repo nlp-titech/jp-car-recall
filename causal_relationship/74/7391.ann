@@ -1,0 +1,21 @@
+T1	Argument 9 30	燃料ポンプリレーにおいて、材料選定が不適切
+T5	Connective 31 33	ため
+R3	REASON Arg1:T5 Arg2:T1	
+T6	Connective 58 62	そのため
+T8	Argument 34 50	熱により発生した物質が端子に付着
+R6	REASON Arg1:T6 Arg2:T8	
+T9	Argument 63 76	リレー内部で接触不良が発生
+R7	RESULT Arg1:T6 Arg2:T9	
+T10	Argument 78 86	燃料ポンプが停止
+T11	Connective 77 78	、
+R8	REASON Arg1:T11 Arg2:T9	
+R9	RESULT Arg1:T11 Arg2:T10	
+T12	Argument 89 91	最悪
+T13	Connective 92 94	場合
+R10	CONDITION Arg1:T13 Arg2:T12	
+T14	Argument 95 106	走行中にエンジンが停止
+R11	RESULT Arg1:T13 Arg2:T14	
+T15	Connective 87 88	て
+R12	REASON Arg1:T15 Arg2:T10	
+R13	RESULT Arg1:T15 Arg2:T14	
+R1	RESULT Arg1:T5 Arg2:T8	

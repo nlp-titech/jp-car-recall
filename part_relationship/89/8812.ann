@@ -2,6 +2,7 @@ T1	Parts 0 6	ワンマンバス
 T2	Parts 7 13	中扉開閉機構
 T3	Parts 32 33	扉
 T4	Parts 76 77	扉
-R1	Part-Whole Arg1:T2 Arg2:T1	
-R2	Part-Whole Arg1:T3 Arg2:T2	
+R2	Part-Whole Arg1:T3 Arg2:T1	
 R3	Coreference Arg1:T3 Arg2:T4	
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R4	Connect Arg1:T2 Arg2:T3	

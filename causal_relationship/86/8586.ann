@@ -1,0 +1,29 @@
+T1	Argument 8 32	樹脂製アシストグリップにおいて、長期間使用し続け
+T2	Connective 33 35	場合
+T3	Argument 36 55	日光照射や繰り返しの使用による経年劣化
+T4	Connective 55 59	によって
+T5	Argument 59 64	亀裂が生じ
+T6	Connective 64 65	て
+T7	Argument 65 70	強度が低下
+T8	Connective 71 72	、
+T9	Argument 72 88	清掃時等にアシストグリップを掴ん
+T10	Connective 89 90	際
+T11	Argument 91 93	破損
+T12	Connective 94 95	、
+T13	Argument 95 97	最悪
+T14	Connective 98 100	場合
+T15	Argument 101 103	転倒
+R1	CONDITION Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T11	
+R9	CONDITION Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T15	
+R13	CONDITION Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	

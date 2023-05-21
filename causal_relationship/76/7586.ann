@@ -1,0 +1,21 @@
+T1	Argument 0 25	補助電源モジュールの構成部品（素子）の溶着が不適切
+T2	Connective 26 28	ため
+T3	Argument 29 41	当該素子内部に亀裂が生じ
+T4	Connective 50 54	そのため
+T5	Argument 55 61	通電の繰返し
+T6	Connective 61 64	により
+T7	Argument 64 71	当該素子が損傷
+T8	Connective 72 73	、
+T9	Argument 73 96	アイドリングストップシステムＯＦＦ表示灯が点滅
+T11	Argument 98 113	アイドリングストップ機能が停止
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T12	Argument 118 122	エンスト
+R9	RESULT Arg1:T8 Arg2:T11	
+R10	RESULT Arg1:T8 Arg2:T12	

@@ -1,0 +1,37 @@
+T1	Argument 0 34	ハイブリット車両の高電圧配線において、シールド線の接点の設計が不適切
+T2	Connective 35 37	ため
+T5	Argument 38 64	高負荷運転等で電気モータのアシスト量が多い走行を行う
+T6	Connective 65 66	、
+T7	Argument 66 74	接点の抵抗が増え
+T8	Connective 74 75	て
+T9	Argument 75 82	許容電流を超え
+T10	Connective 82 83	、
+T11	Argument 83 98	シールド効果が十分に得られない
+T12	Connective 104 108	そのため
+T13	Argument 109 133	発生した電気的ノイズを電気モータ制御装置が受ける
+T14	Connective 135 136	で
+T15	Argument 136 146	通信障害を引き起こし
+T16	Argument 147 149	最悪
+T18	Connective 150 152	場合
+T21	Argument 153 164	走行中にエンジンが停止
+T22	Connective 165 166	、
+T23	Argument 166 173	走行不能になる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T11	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R17	CONDITION Arg1:T18 Arg2:T16	
+R18	RESULT Arg1:T18 Arg2:T21	
+R21	REASON Arg1:T22 Arg2:T21	
+R22	RESULT Arg1:T22 Arg2:T23	
+T3	Connective 146 147	、
+R3	REASON Arg1:T3 Arg2:T15	
+R4	RESULT Arg1:T3 Arg2:T21	

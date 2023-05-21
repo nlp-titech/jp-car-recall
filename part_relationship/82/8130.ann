@@ -3,9 +3,9 @@ T3	Parts 42 49	ブレーキパッド
 T4	Parts 61 64	警告灯
 T5	Parts 81 88	ブレーキパッド
 T6	Parts 107 115	ブレーキディスク
-T1	Parts 0 11	ブレーキパッド摩耗警報
-R1	Connect Arg1:T2 Arg2:T1	
-R2	Connect Arg1:T3 Arg2:T1	
+T1	Parts 0 7	ブレーキパッド
 R3	Connect Arg1:T4 Arg2:T2	
 R4	Coreference Arg1:T5 Arg2:T3	
 R5	Contact Arg1:T6 Arg2:T5	
+R1	Coreference Arg1:T1 Arg2:T3	
+R2	Connect Arg1:T1 Arg2:T2	

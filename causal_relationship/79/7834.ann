@@ -1,0 +1,25 @@
+T1	Argument 0 40	フロントブレーキホースにおいて、ブレーキホースとパイプとのかしめ部の形状が不適切
+T2	Connective 41 43	ため
+T3	Argument 44 57	ブレーキホースが過大に屈折
+T4	Connective 65 69	そのため
+T5	Argument 70 77	繰り返しの負荷
+T6	Connective 77 80	により
+T7	Argument 80 90	ブレーキホースが損傷
+T8	Argument 92 94	最悪
+T9	Connective 95 97	場合
+T10	Connective 91 92	、
+T11	Argument 98 108	ブレーキオイルが漏れ
+T12	Connective 108 109	、
+T13	Argument 109 115	制動力が低下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T10 Arg2:T7	
+R9	CONDITION Arg1:T9 Arg2:T8	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	RESULT Arg1:T10 Arg2:T11	
+R8	RESULT Arg1:T9 Arg2:T11	

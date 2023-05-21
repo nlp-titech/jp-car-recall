@@ -1,0 +1,21 @@
+T1	Argument 7 30	ラジオアンテナ線において、設計時の検討が不十分
+T2	Connective 31 33	ため
+T3	Argument 34 53	アンテナ線端子に絶縁処理がされていない
+T4	Connective 54 58	そのため
+T5	Argument 59 76	アンテナ線をラジオに接続していない
+T6	Connective 76 78	場合
+T7	Argument 81 111	アンテナ線端子と近傍にある電子基板（ＣＥＵ）の電源端子が接触
+T10	Connective 111 112	、
+T11	Argument 112 116	ショート
+T12	Connective 117 118	、
+T13	Argument 118 123	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R4	RESULT Arg1:T6 Arg2:T7	
+R6	RESULT Arg1:T4 Arg2:T7	
+R7	REASON Arg1:T10 Arg2:T7	

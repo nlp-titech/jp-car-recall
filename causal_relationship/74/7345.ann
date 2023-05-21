@@ -1,0 +1,17 @@
+T1	Argument 0 37	大・中型トラックにおいて、前軸のハブベアリング用ロックナットの製造が不適切
+T2	Connective 38 40	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 41 59	ネジ有効径の大きいものを装着して生産
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 68 72	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 78 93	当該ロックナットのネジ部が破損
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 95 97	最悪
+T7	Connective 98 100	場合
+R5	CONDITION Arg1:T7 Arg2:T6	
+T8	Argument 101 115	ハブドラムごとタイヤが外れる
+R6	RESULT Arg1:T7 Arg2:T8	
+T9	Connective 94 95	、
+R7	REASON Arg1:T9 Arg2:T5	
+R8	RESULT Arg1:T9 Arg2:T8	

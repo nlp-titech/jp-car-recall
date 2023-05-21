@@ -1,0 +1,28 @@
+T1	Argument 15 43	燃料ゲージ付き燃料ポンプにおいて、使用環境の検討が不十分
+T2	Connective 44 46	ため
+T3	Argument 47 55	外気温などの影響
+T4	Connective 55 58	により
+T5	Argument 58 66	燃料タンクが膨張
+T6	Connective 68 69	際
+T7	Argument 70 78	当該ポンプが傾く
+T8	Connective 84 88	そのため
+T9	Argument 89 106	燃料の残量を正しく検出できなくなる
+T10	Argument 110 121	燃料を供給できなくなり
+T11	Argument 122 124	最悪
+T12	Connective 125 127	場合
+T13	Argument 128 136	走行中にエンスト
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T7	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	RESULT Arg1:T8 Arg2:T10	
+T14	Connective 121 122	、
+R10	REASON Arg1:T14 Arg2:T10	
+R11	REASON Arg1:T14 Arg2:T9	
+R12	RESULT Arg1:T14 Arg2:T13	
+R13	CONDITION Arg1:T12 Arg2:T11	
+R14	RESULT Arg1:T12 Arg2:T13	

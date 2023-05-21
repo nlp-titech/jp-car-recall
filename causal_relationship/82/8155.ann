@@ -1,0 +1,27 @@
+T1	Argument 0 40	エア圧力制御システム（ＡＰＳ）において、エアドライヤ再生制御バルブの設計が不適切
+T2	Connective 41 43	ため
+T3	Argument 44 57	エア圧力の気密が保持できい
+T4	Connective 63 67	そのため
+T5	Argument 68 75	エア漏れが発生
+T6	Connective 76 77	、
+T7	Argument 77 83	警告灯が点灯
+T8	Argument 88 96	エンジン始動時後
+T9	Connective 96 97	に
+T10	Argument 97 107	エア圧力が上がらない
+T11	Connective 109 110	で
+T12	Argument 110 125	パーキングブレーキが解除できず
+T13	Connective 125 126	、
+T14	Argument 126 134	走行できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T10	
+R8	CONDITION Arg1:T9 Arg2:T8	
+R9	RESULT Arg1:T9 Arg2:T10	
+R10	REASON Arg1:T11 Arg2:T10	
+R11	RESULT Arg1:T11 Arg2:T12	
+R12	REASON Arg1:T13 Arg2:T12	
+R13	RESULT Arg1:T13 Arg2:T14	

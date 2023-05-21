@@ -1,0 +1,24 @@
+T1	Argument 8 29	燃料タンクカバーにおいて、組付向きが不適切
+T2	Connective 30 32	ため
+T3	Argument 33 41	燃料ホースと接触
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 51 55	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 56 70	そのままの状態で使用を続ける
+T6	Connective 70 71	と
+R4	CONDITION Arg1:T6 Arg2:T5	
+T8	Connective 87 88	、
+T9	Argument 88 90	最悪
+T10	Connective 91 93	場合
+R7	CONDITION Arg1:T10 Arg2:T9	
+T11	Argument 94 100	燃料が漏れる
+R8	RESULT Arg1:T10 Arg2:T11	
+R10	RESULT Arg1:T8 Arg2:T11	
+T7	Argument 72 75	振動等
+T12	Connective 75 76	で
+T13	Argument 76 87	燃料ホースに亀裂が入り
+R5	REASON Arg1:T12 Arg2:T7	
+R6	RESULT Arg1:T12 Arg2:T13	
+R9	RESULT Arg1:T6 Arg2:T13	
+R11	REASON Arg1:T8 Arg2:T13	

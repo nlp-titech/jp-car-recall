@@ -1,0 +1,13 @@
+T1	Argument 11 37	ヘッドライトコントロールユニットのプログラムが不適切
+T2	Connective 38 40	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T4	Connective 63 67	そのため
+T5	Argument 68 90	保安基準第３４条（車幅灯の基準）に適合しない
+R4	RESULT Arg1:T4 Arg2:T5	
+T3	Argument 41 50	ヘッドライトを点灯
+T6	Argument 54 60	車幅灯が消灯
+T7	Connective 53 54	と
+R2	CONDITION Arg1:T7 Arg2:T3	
+R3	RESULT Arg1:T7 Arg2:T6	
+R5	RESULT Arg1:T2 Arg2:T6	
+R6	REASON Arg1:T4 Arg2:T6	

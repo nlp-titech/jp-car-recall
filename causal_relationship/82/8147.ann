@@ -1,0 +1,21 @@
+T1	Argument 0 43	エアバッグコントロールユニットにおいて、電源用コンデンサのコーティング硬化工程が不適切
+T2	Connective 44 46	ため
+T3	Argument 47 62	電源用コンデンサの耐久性が低い
+T4	Connective 68 72	そのため
+T5	Argument 73 83	当該コンデンサが劣化
+T6	Connective 85 86	と
+T7	Argument 86 100	コントロールユニットが誤作動
+T8	Connective 101 102	、
+T9	Argument 102 104	最悪
+T10	Connective 105 107	場合
+T11	Argument 108 146	エアバッグ及びシートベルトテンショナが突然作動する、又は、衝突時に作動しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T11	
+R9	CONDITION Arg1:T10 Arg2:T9	
+R13	RESULT Arg1:T10 Arg2:T11	

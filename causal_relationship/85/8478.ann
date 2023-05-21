@@ -1,0 +1,17 @@
+T1	Argument 9 22	けん引フックの溶接が不適切
+T2	Connective 23 25	ため
+T3	Argument 26 36	フックの溶接部が破断
+T6	Argument 47 68	けん引フックを搭載する際に製造管理が不適切
+T7	Connective 69 71	ため
+T8	Argument 72 88	形状の異なるけん引フックが誤搭載
+T9	Connective 99 103	そのため
+T10	Argument 104 114	車両をけん引できない
+T11	Argument 119 135	車両にけん引フックを装着できない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T8	
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T10	
+R9	RESULT Arg1:T9 Arg2:T11	
+R3	REASON Arg1:T9 Arg2:T3	

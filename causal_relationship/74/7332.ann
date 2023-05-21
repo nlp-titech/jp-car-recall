@@ -1,0 +1,13 @@
+T1	Argument 0 24	配光可変型前照灯において、制御プログラムが不適切
+T2	Argument 28 34	特定の条件下
+T3	Connective 34 38	において
+R1	CONDITION Arg1:T3 Arg2:T2	
+T4	Argument 38 75	運転者が切り替えレバーにより走行用前照灯からすれ違い用前照灯に変更できない
+T5	Connective 25 27	ため
+R2	REASON Arg1:T5 Arg2:T1	
+R3	RESULT Arg1:T5 Arg2:T4	
+T6	Connective 81 85	そのため
+T7	Argument 86 108	保安基準第３２条（前照灯の基準）に適合しない
+R4	REASON Arg1:T6 Arg2:T4	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	RESULT Arg1:T3 Arg2:T4	

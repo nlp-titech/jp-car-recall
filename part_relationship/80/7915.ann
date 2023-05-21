@@ -5,3 +5,5 @@ T4	Parts 93 98	バックドア
 R1	Coreference Arg1:T1 Arg2:T2	
 R2	Coreference Arg1:T2 Arg2:T3	
 R3	Contact Arg1:T3 Arg2:T4	
+T5	Parts 78 80	ガス
+R4	Part-Whole Arg1:T5 Arg2:T3	

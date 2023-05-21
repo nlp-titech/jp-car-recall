@@ -1,0 +1,14 @@
+T1	Argument 15 34	触媒コンバーターの製造工程管理が不適切
+T2	Connective 35 37	ため
+T3	Argument 38 57	正規と異なる触媒コンバーターが組み付け
+T4	Connective 68 72	そのため
+T5	Argument 73 78	早期に劣化
+T6	Connective 79 80	て
+T7	Argument 80 90	エンジン警告灯が点灯
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+#1	AnnotatorNotes T1	触媒コンバーターについては文頭から取るか悩みましたが、普通排出ガス発生防止装置くらいにしか用いないものなので問題なしと考えました。

@@ -4,11 +4,8 @@ T3	Parts 41 45	ハーネス
 T4	Parts 46 50	フレーム
 T5	Parts 72 76	ハーネス
 T6	Parts 83 87	ハーネス
-T7	Parts 89 91	配線
 T8	Parts 107 111	エンジン
-R1	Connect Arg1:T2 Arg2:T1	
 R2	Coreference Arg1:T1 Arg2:T3	
 R3	Coreference Arg1:T3 Arg2:T5	
 R4	Coreference Arg1:T5 Arg2:T6	
-R5	Part-Whole Arg1:T7 Arg2:T6	
 R6	Connect Arg1:T6 Arg2:T8	

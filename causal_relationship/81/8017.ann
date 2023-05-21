@@ -1,0 +1,21 @@
+T1	Argument 0 18	燃料ラインにおいて、耐熱評価が不十分
+T2	Connective 19 21	ため
+T3	Argument 22 28	耐熱性が不足
+T4	Connective 33 37	そのため
+T5	Argument 38 52	エンジンルーム内の高温に晒さ
+T6	Connective 54 55	と
+T7	Argument 55 66	当該ラインに亀裂が生じ
+T8	Argument 67 69	最悪
+T9	Connective 70 72	場合
+T10	Argument 73 79	燃料が漏れる
+T11	Connective 66 67	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T11 Arg2:T7	
+R8	RESULT Arg1:T11 Arg2:T10	
+R9	CONDITION Arg1:T9 Arg2:T8	
+R10	RESULT Arg1:T9 Arg2:T10	

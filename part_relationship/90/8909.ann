@@ -4,8 +4,9 @@ T3	Parts 28 38	コーナーサイドガード
 T4	Parts 39 47	サイドガードバー
 T5	Parts 95 105	コーナーサイドガード
 T6	Parts 106 114	サイドガードバー
-R1	Coreference Arg1:T2 Arg2:T3	
 R2	Part-Whole Arg1:T2 Arg2:T1	
 R3	Contact Arg1:T3 Arg2:T4	
 R4	Coreference Arg1:T3 Arg2:T5	
 R5	Coreference Arg1:T4 Arg2:T6	
+R1	Part-Whole Arg1:T3 Arg2:T2	
+R6	Part-Whole Arg1:T4 Arg2:T2	

@@ -1,0 +1,21 @@
+T1	Argument 0 30	原動機の排気ガス微粒子フィルタにおいて、製造工程管理が不適切
+T2	Connective 31 33	ため
+T3	Argument 34 51	フィルタ内部のコーティングが不適切
+T4	Connective 58 62	そのため
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 63 77	そのままの状態で仕様を続ける
+T6	Connective 77 78	と
+T7	Argument 79 99	フィルタ内部のコーティングが機能しなくな
+T8	Connective 99 100	り
+T9	Argument 100 111	排気ガス浄化性能が低下
+T10	Connective 115 116	で
+T11	Argument 117 128	排出ガス基準値を超える
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	

@@ -1,0 +1,13 @@
+T1	Argument 0 48	ＬＥＤ昼間走行灯を備えた車両において、ボディコントロールモジュールの制御プログラムの設定が不適切
+T2	Connective 49 51	ため
+T3	Argument 52 60	方向指示器を操作
+T4	Connective 62 63	際
+R1	CONDITION Arg1:T4 Arg2:T3	
+T5	Argument 65 87	方向指示器が作動している側の昼間走行灯が消灯
+R2	RESULT Arg1:T4 Arg2:T5	
+R3	REASON Arg1:T2 Arg2:T1	
+R4	RESULT Arg1:T2 Arg2:T5	
+T6	Connective 90 94	そのため
+R5	REASON Arg1:T6 Arg2:T5	
+T7	Argument 95 122	道路運送車両法の保安基準第３４条の３の基準に適合しない
+R6	RESULT Arg1:T6 Arg2:T7	

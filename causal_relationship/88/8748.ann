@@ -1,0 +1,9 @@
+T1	Argument 0 39	液化石油ガス（ＬＰＧ）タンク架装を行った車両において、取付け位置の設計が不適切
+T2	Connective 40 42	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 43 74	車両後部コンビネーションランプの外側視認角がバンパー本体に遮ら
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 84 88	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 89 129	後部方向指示器の外側視認角が保安基準第４１条（方向指示器の基準）を満たしていない
+R4	RESULT Arg1:T4 Arg2:T5	

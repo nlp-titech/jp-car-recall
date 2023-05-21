@@ -1,0 +1,21 @@
+T3	Argument 0 34	ブレーキサーボコネクティングロッドにおいて、製造時の組付指示が不適切
+T4	Connective 35 37	ため
+T5	Argument 38 52	接続部の締付けトルクが不十分
+T6	Connective 59 63	そのため
+T7	Argument 64 73	ボルトが完全に緩み
+T8	Argument 74 76	最悪
+T9	Connective 77 79	場合
+T10	Argument 80 109	ブレーキサーボコネクティングロッド先端のボルト接続部が脱落
+T11	Connective 113 114	で
+T12	Argument 114 125	ブレーキが効かなくなる
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T13	Connective 73 74	、
+R7	REASON Arg1:T13 Arg2:T7	
+R8	RESULT Arg1:T13 Arg2:T10	
+R9	CONDITION Arg1:T9 Arg2:T8	
+R11	REASON Arg1:T11 Arg2:T10	
+R12	RESULT Arg1:T11 Arg2:T12	
+R1	RESULT Arg1:T9 Arg2:T10	

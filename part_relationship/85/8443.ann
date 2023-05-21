@@ -2,6 +2,6 @@ T1	Parts 0 21	横滑り防止装置（以下、ＥＳＣ）コントローラ
 T2	Parts 26 50	アダプティブクルーズコントロール（以下、ＡＣＣ）
 T3	Parts 54 63	制動制御プログラム
 T4	Parts 93 96	ＥＳＣ
-R1	Part-Whole Arg1:T3 Arg2:T1	
-R2	Connect Arg1:T2 Arg2:T3	
 R3	Connect Arg1:T1 Arg2:T4	
+R1	Connect Arg1:T3 Arg2:T2	
+R2	Part-Whole Arg1:T3 Arg2:T1	

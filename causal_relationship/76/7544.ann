@@ -1,0 +1,13 @@
+T1	Argument 0 30	ボディコントロールモジュールにおいて、制御プログラムが不適切
+T2	Connective 31 33	ため
+T5	Argument 34 74	配光可変型走行用前照灯ＯＮかつ霧灯ＯＮの状態でライトスイッチをスモール位置に操作
+T6	Connective 76 78	場合
+T7	Argument 80 111	配光可変型走行用前照灯と同時に点灯すべきすれ違い用前照灯が消灯
+T8	Connective 112 113	、
+T9	Argument 113 135	保安基準第３２条（前照灯の基準）を満足しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	

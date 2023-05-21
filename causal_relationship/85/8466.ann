@@ -1,0 +1,13 @@
+T1	Argument 0 41	運転席用エアバッグのインフレータ（膨張装置）において、ガス発生剤の吸湿防止が不適切
+T2	Connective 45 47	場合
+T5	Argument 48 66	高い湿度の環境下で温度変化を繰り返す
+T6	Connective 66 67	と
+T7	Argument 68 76	ガス発生剤が劣化
+T8	Connective 84 88	そのため
+T11	Argument 89 109	エアバッグ展開時にインフレータ容器が破損
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T11	

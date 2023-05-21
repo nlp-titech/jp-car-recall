@@ -1,10 +1,10 @@
 T1	Parts 0 5	後席右座席
-T2	Parts 9 17	チャイルドシート
+T2	Parts 9 34	チャイルドシート固定用ＩＳＯＦＩＸロアアンカレッジ
 T3	Parts 35 40	ブラケット
 T4	Parts 56 61	ブラケット
 T5	Parts 86 94	チャイルドシート
-R1	Contact Arg1:T2 Arg2:T1	
 R2	Contact Arg1:T3 Arg2:T2	
 R3	Coreference Arg1:T4 Arg2:T3	
-R4	Coreference Arg1:T5 Arg2:T2	
+R4	Contact Arg1:T5 Arg2:T2	
 R5	Contact Arg1:T3 Arg2:T1	
+R6	Contact Arg1:T2 Arg2:T1	

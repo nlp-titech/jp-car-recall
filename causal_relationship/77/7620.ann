@@ -1,0 +1,25 @@
+T1	Argument 11 25	原動機の生産作業工程が不適切
+T2	Connective 26 28	ため
+T3	Argument 29 66	燃料リターンホースがオイルフィルターとオイルレベルゲージガイド間に挟み込ま
+T4	Connective 67 68	て
+T5	Argument 68 71	つぶれ
+T6	Connective 80 84	そのため
+T7	Argument 85 97	燃料リターンホースが外れ
+T8	Connective 97 98	て
+T9	Argument 98 103	燃料が漏れ
+T10	Connective 103 104	、
+T11	Argument 104 106	最悪
+T12	Connective 107 109	場合
+T13	Argument 110 115	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	

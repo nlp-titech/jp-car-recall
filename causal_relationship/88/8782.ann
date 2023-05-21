@@ -1,0 +1,17 @@
+T1	Argument 12 45	フロントハブベアリングにおいて、ナックルシャフトとの圧入代が大きい
+T2	Connective 76 80	そのため
+T3	Argument 86 94	ベアリングが損傷
+R1	RESULT Arg1:T2 Arg2:T3	
+T5	Argument 96 104	火災や脱輪に至る
+T6	Connective 95 96	て
+R3	REASON Arg1:T6 Arg2:T3	
+T7	Argument 46 59	フロントハブの組付け作業時
+T8	Connective 59 60	に
+T9	Argument 60 70	ベアリングを傷つける
+R2	CONDITION Arg1:T8 Arg2:T7	
+R6	RESULT Arg1:T8 Arg2:T9	
+T10	Connective 45 46	と
+R7	REASON Arg1:T10 Arg2:T1	
+R8	RESULT Arg1:T10 Arg2:T9	
+R9	REASON Arg1:T2 Arg2:T9	
+R4	RESULT Arg1:T6 Arg2:T5	

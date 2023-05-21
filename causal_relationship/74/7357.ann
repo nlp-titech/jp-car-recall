@@ -1,0 +1,51 @@
+T1	Argument 0 56	大型トラックの電制エアドライヤーにおいて、セントラルシャシ入出力モジュールのエアドライヤー再生プログラムが不適切
+T2	Connective 57 59	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 85 96	乾燥剤の吸湿能力の低下
+T4	Argument 100 128	高湿度圧縮空気がエアタンク及び各エアシステム回路内で結露
+T5	Connective 96 99	により
+R3	REASON Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T4	
+T6	Connective 139 143	そのため
+T7	Argument 144 158	そのままの状態で使用を続ける
+T8	Connective 158 159	と
+R5	CONDITION Arg1:T8 Arg2:T7	
+T9	Argument 160 166	凝縮水の影響
+T10	Connective 166 169	により
+R7	REASON Arg1:T10 Arg2:T9	
+T11	Argument 169 179	車高調整不良等が発生
+R8	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 187 189	最悪
+T13	Connective 190 192	場合
+R9	CONDITION Arg1:T13 Arg2:T12	
+T14	Argument 193 203	外気温が氷点下の環境
+T15	Connective 203 207	において
+R10	CONDITION Arg1:T15 Arg2:T14	
+T16	Argument 211 231	トレーラー側ブレーキ回路内で凝縮水が凍結
+T17	Argument 233 250	トレーラー側の主ブレーキが効かない
+T18	Connective 231 232	し
+R11	REASON Arg1:T18 Arg2:T16	
+R12	RESULT Arg1:T18 Arg2:T17	
+T19	Argument 254 264	駐車ブレーキ引きずり
+T20	Connective 264 267	により
+T21	Argument 267 272	火災に至る
+R13	REASON Arg1:T20 Arg2:T19	
+R14	RESULT Arg1:T20 Arg2:T21	
+R15	RESULT Arg1:T6 Arg2:T11	
+T22	Connective 186 187	。
+R16	REASON Arg1:T22 Arg2:T11	
+R17	RESULT Arg1:T15 Arg2:T16	
+R19	RESULT Arg1:T13 Arg2:T16	
+R21	RESULT Arg1:T8 Arg2:T11	
+R22	RESULT Arg1:T22 Arg2:T17	
+T23	Argument 60 84	当該ドライヤー乾燥再生動作が適切な頻度で実行され
+T24	Connective 84 85	ず
+R2	RESULT Arg1:T2 Arg2:T23	
+R23	REASON Arg1:T24 Arg2:T23	
+R24	RESULT Arg1:T24 Arg2:T3	
+T25	Connective 128 129	し
+T26	Argument 129 135	凝縮水が生成
+R6	REASON Arg1:T25 Arg2:T4	
+R25	RESULT Arg1:T25 Arg2:T26	
+R26	REASON Arg1:T6 Arg2:T26	
+R18	RESULT Arg1:T18 Arg2:T19	

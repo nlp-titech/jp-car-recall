@@ -6,5 +6,3 @@ R1	Part-Whole Arg1:T2 Arg2:T1
 R2	Part-Whole Arg1:T4 Arg2:T3	
 R3	Part-Whole Arg1:T3 Arg2:T1	
 R4	Connect Arg1:T3 Arg2:T2	
-T5	Parts 118 125	警告メッセージ
-R5	Connect Arg1:T5 Arg2:T1	

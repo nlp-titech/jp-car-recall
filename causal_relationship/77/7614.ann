@@ -1,0 +1,29 @@
+T1	Argument 1 39	排気管（エキゾーストマニホールド）のカバーにおいて、当該カバーの形状が不適切
+T2	Connective 40 42	ため
+T3	Argument 43 63	走行中に飛来した植物等が排気管周辺に堆積
+T4	Connective 71 75	そのため
+T5	Argument 76 90	そのままの状態で使用を続ける
+T7	Connective 90 91	と
+T9	Argument 97 108	排気管周辺が高温となる
+T10	Connective 110 111	で
+T11	Argument 112 125	堆積した植物等の火種となり
+T12	Argument 126 128	最悪
+T13	Connective 129 131	場合
+T14	Argument 132 139	車両火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+T6	Argument 92 94	走行
+T8	Connective 94 97	により
+R4	CONDITION Arg1:T7 Arg2:T5	
+R5	REASON Arg1:T8 Arg2:T6	
+R6	RESULT Arg1:T8 Arg2:T9	
+R7	CONDITION Arg1:T10 Arg2:T9	
+R8	RESULT Arg1:T10 Arg2:T11	
+R9	RESULT Arg1:T7 Arg2:T14	
+R10	RESULT Arg1:T4 Arg2:T14	
+R11	CONDITION Arg1:T13 Arg2:T12	
+T15	Connective 125 126	、
+R12	RESULT Arg1:T13 Arg2:T14	
+R13	REASON Arg1:T15 Arg2:T11	
+R14	RESULT Arg1:T15 Arg2:T14	

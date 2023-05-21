@@ -1,0 +1,25 @@
+T1	Argument 14 44	バッテリにおいて、正極柱を支えるポールパッキンの材質が不適切
+T2	Connective 45 47	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 48 56	正極柱が異常腐食
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 64 68	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 69 79	そのまま使用を続ける
+T6	Connective 79 80	と
+R4	CONDITION Arg1:T6 Arg2:T5	
+T7	Argument 81 87	正極柱が破断
+T8	Argument 89 96	導通不良となり
+R5	RESULT Arg1:T6 Arg2:T7	
+T9	Connective 88 89	、
+R6	REASON Arg1:T9 Arg2:T7	
+R7	RESULT Arg1:T9 Arg2:T8	
+T10	Argument 97 99	最悪
+T11	Connective 100 102	場合
+R8	CONDITION Arg1:T11 Arg2:T10	
+T12	Argument 103 110	走行不能になる
+R9	RESULT Arg1:T11 Arg2:T12	
+T13	Connective 96 97	、
+R10	REASON Arg1:T13 Arg2:T8	
+R11	RESULT Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T4 Arg2:T7	

@@ -1,0 +1,9 @@
+T1	Argument 11 31	リヤバンパとスペーサの組付け指示が不適切
+T2	Connective 32 34	ため
+T3	Argument 35 54	リヤバンパ取り付け用ボルトの本数が不足
+T4	Connective 64 68	そのため
+T5	Argument 69 85	保安基準第１８条の２を満足しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

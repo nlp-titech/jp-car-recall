@@ -18,7 +18,6 @@ T17	Parts 260 263	警告灯
 T18	Parts 283 287	センサー
 R1	Contact Arg1:T3 Arg2:T2	
 R3	Coreference Arg1:T5 Arg2:T4	
-R4	Part-Whole Arg1:T6 Arg2:T3	
 R2	Contact Arg1:T5 Arg2:T6	
 R5	Contact Arg1:T8 Arg2:T7	
 R6	Contact Arg1:T9 Arg2:T8	
@@ -27,6 +26,15 @@ R8	Coreference Arg1:T11 Arg2:T8
 R9	Contact Arg1:T12 Arg2:T11	
 R10	Part-Whole Arg1:T14 Arg2:T13	
 R11	Connect Arg1:T16 Arg2:T13	
-R12	Connect Arg1:T15 Arg2:T16	
 R13	Connect Arg1:T17 Arg2:T13	
 R14	Coreference Arg1:T18 Arg2:T16	
+R15	Part-Whole Arg1:T2 Arg2:T1	
+R4	Contact Arg1:T3 Arg2:T4	
+R12	Part-Whole Arg1:T7 Arg2:T1	
+R16	Part-Whole Arg1:T13 Arg2:T1	
+R17	Part-Whole Arg1:T16 Arg2:T1	
+R18	Part-Whole Arg1:T17 Arg2:T1	
+R19	Part-Whole Arg1:T6 Arg2:T3	
+R20	Connect Arg1:T15 Arg2:T16	
+R21	Part-Whole Arg1:T15 Arg2:T1	
+R22	Part-Whole Arg1:T8 Arg2:T1	

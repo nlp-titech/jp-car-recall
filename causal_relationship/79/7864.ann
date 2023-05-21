@@ -1,0 +1,21 @@
+T1	Argument 0 28	フェンダー内側の樹脂製カバーにおいて、取付の設定が不適切
+T2	Connective 29 31	ため
+T3	Argument 32 40	取付部ががたつく
+T4	Connective 46 50	そのため
+T5	Argument 51 56	走行振動等
+T6	Connective 56 59	により
+T7	Argument 59 67	取付ボルトが緩み
+T8	Connective 67 68	、
+T9	Argument 68 70	最悪
+T10	Connective 71 73	場合
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R9	CONDITION Arg1:T10 Arg2:T9	
+T13	Argument 74 89	走行中に当該樹脂製カバーが脱落
+R8	RESULT Arg1:T10 Arg2:T13	
+R12	RESULT Arg1:T8 Arg2:T13	

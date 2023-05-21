@@ -1,0 +1,21 @@
+T1	Argument 0 39	エンジンルームと車室との隔壁において、右ハンドル車の製造工程プログラムが不適切
+T2	Connective 40 42	ため
+T3	Argument 43 61	スティフナプレートが装着されていない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 62 66	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 72 80	隔壁パネルが変形
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 82 111	ブレーキペダルの踏力がブレーキマスターシリンダーに伝わらず
+T7	Connective 81 82	、
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	
+T8	Argument 112 114	最悪
+T9	Connective 115 117	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+T10	Argument 118 127	ブレーキ性能が低下
+R8	RESULT Arg1:T9 Arg2:T10	
+T11	Connective 111 112	、
+R9	REASON Arg1:T11 Arg2:T6	
+R10	RESULT Arg1:T11 Arg2:T10	

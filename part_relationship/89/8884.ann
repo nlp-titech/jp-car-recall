@@ -5,5 +5,5 @@ T4	Parts 74 79	ブラケット
 T5	Parts 109 112	シート
 R1	Coreference Arg1:T2 Arg2:T4	
 R2	Coreference Arg1:T3 Arg2:T5	
-R3	Contact Arg1:T1 Arg2:T2	
 R4	Contact Arg1:T1 Arg2:T3	
+R3	Contact Arg1:T2 Arg2:T1	

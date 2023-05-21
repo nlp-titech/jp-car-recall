@@ -1,0 +1,5 @@
+T6	Connective 76 78	ため
+T7	Argument 79 91	歩行者や他の交通が誤認識
+R6	RESULT Arg1:T6 Arg2:T7	
+T1	Argument 0 76	オーバーヘッドガードの後方右側の支柱に、オプション仕様で警報器付きグリップが搭載されており、当該警報音は、車検仕様で搭載されている警報器の警報音と異なる
+R1	REASON Arg1:T6 Arg2:T1	

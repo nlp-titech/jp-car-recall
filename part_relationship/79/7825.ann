@@ -4,3 +4,4 @@ T3	Parts 94 97	タイヤ
 T4	Parts 118 121	タイヤ
 R1	Contact Arg1:T2 Arg2:T1	
 R2	Coreference Arg1:T3 Arg2:T4	
+R3	Connect Arg1:T1 Arg2:T3	

@@ -7,3 +7,4 @@ T6	Parts 181 184	後写鏡
 R1	Part-Whole Arg1:T2 Arg2:T1	
 R2	Coreference Arg1:T3 Arg2:T5	
 R3	Connect Arg1:T1 Arg2:T3	
+R4	Connect Arg1:T4 Arg2:T1	

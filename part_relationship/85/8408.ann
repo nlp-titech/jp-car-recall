@@ -6,4 +6,4 @@ T5	Parts 114 116	配線
 R2	Coreference Arg1:T3 Arg2:T1	
 R3	Coreference Arg1:T5 Arg2:T3	
 R4	Contact Arg1:T4 Arg2:T3	
-R1	Connect Arg1:T2 Arg2:T1	
+R1	Contact Arg1:T2 Arg2:T1	

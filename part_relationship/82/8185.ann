@@ -2,6 +2,5 @@ T1	Parts 0 19	エンジンコントロールユニット（ＤＭＥ）
 T2	Parts 37 50	バルブトロニック（ＶＶＴ）
 T3	Parts 67 69	触媒
 T4	Parts 85 87	触媒
-R1	Part-Whole Arg1:T2 Arg2:T1	
+R1	Connect Arg1:T2 Arg2:T1	
 R2	Coreference Arg1:T4 Arg2:T3	
-R3	Connect Arg1:T1 Arg2:T3	

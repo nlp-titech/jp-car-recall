@@ -1,0 +1,21 @@
+T1	Argument 15 83	パワーディストリビューションボックスとバッテリーを接続するバッテリープラスケーブルにおいて、接続部分のコネクターのメッキ及び構造が不適切
+T2	Connective 84 86	ため
+T3	Argument 87 101	車両振動によって発生する腐食
+T4	Connective 101 104	により
+T5	Argument 104 111	接触抵抗が増大
+T6	Connective 119 123	そのため
+T7	Argument 124 148	当該ボックスから電装部品へ十分な電力を供給できず
+T8	Connective 148 149	、
+T9	Argument 149 151	最悪
+T10	Connective 152 154	場合
+T11	Argument 155 166	走行中にエンジンが停止
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T11	
+R9	CONDITION Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	

@@ -1,0 +1,21 @@
+T1	Argument 0 38	運転席エアバッグにおいて、モジュールカバーのブランドエンブレムの材質が不適切
+T2	Connective 39 41	ため
+T3	Argument 42 46	加水分解
+T4	Connective 46 49	により
+T5	Argument 49 51	劣化
+T6	Connective 59 63	そのため
+T7	Argument 64 75	エアバッグ展開時に破損
+T8	Argument 77 79	飛散
+T9	Connective 76 77	て
+T10	Connective 80 81	、
+T11	Argument 81 86	乗員が負傷
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+R9	REASON Arg1:T10 Arg2:T8	
+R10	RESULT Arg1:T10 Arg2:T11	

@@ -1,0 +1,33 @@
+T1	Argument 7 49	スペアタイヤキャリアにおいて、ブラケットに溶接されたリテーナー固定ボルトの強度が不足
+T2	Connective 53 55	ため
+T3	Argument 56 78	リテーナー固定ナットを規定トルクで締め付ける
+T4	Connective 78 79	と
+R1	CONDITION Arg1:T4 Arg2:T3	
+R2	REASON Arg1:T2 Arg2:T1	
+T5	Argument 80 94	当該ボルトが引張荷重で伸びる
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+T6	Connective 100 104	そのため
+R5	REASON Arg1:T6 Arg2:T5	
+T7	Argument 105 112	走行時の振動等
+T8	Connective 112 115	により
+T9	Argument 115 121	ボルトが破断
+R6	RESULT Arg1:T6 Arg2:T9	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 123 125	最悪
+T11	Connective 126 128	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+T12	Argument 129 144	ウインチの固定スクリューが折損
+R10	RESULT Arg1:T11 Arg2:T12	
+T13	Connective 122 123	、
+R11	REASON Arg1:T13 Arg2:T9	
+R12	RESULT Arg1:T13 Arg2:T12	
+T14	Argument 146 155	ブラケットから外れ
+T15	Connective 145 146	て
+R13	REASON Arg1:T15 Arg2:T12	
+R14	RESULT Arg1:T15 Arg2:T14	
+T16	Argument 156 168	スペアタイヤとともに脱落
+T17	Connective 155 156	、
+R15	REASON Arg1:T17 Arg2:T14	
+R16	RESULT Arg1:T17 Arg2:T16	

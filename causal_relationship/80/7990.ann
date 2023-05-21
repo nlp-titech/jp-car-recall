@@ -1,0 +1,49 @@
+T1	Connective 30 32	ため
+T2	Argument 34 45	セルモーターが作動せず
+R1	RESULT Arg1:T1 Arg2:T2	
+T3	Argument 2 30	セルモーターでエンジンを始動する条件を正しく検知できない
+R2	REASON Arg1:T1 Arg2:T3	
+T4	Argument 46 63	常に原動機の再始動用モーターが使用
+T5	Connective 45 46	、
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T4	
+T6	Connective 66 70	その結果
+R5	REASON Arg1:T6 Arg2:T4	
+T7	Argument 70 104	再始動用モーターを駆動するベルト（アクセサリーベルト）に負荷がかかり
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 105 113	当該ベルトが折損
+T9	Connective 104 105	、
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+T10	Connective 121 125	そのため
+T11	Argument 126 136	そのまま使用を続ける
+T12	Connective 136 137	と
+R9	REASON Arg1:T10 Arg2:T8	
+T13	Argument 151 157	警告灯が点灯
+T14	Argument 159 168	バッテリーが上がり
+T15	Argument 169 190	燃料装置、点火装置等の電装品の使用が出来ず
+T16	Argument 191 197	原動機が停止
+T17	Argument 198 202	走行不能
+T18	Argument 138 140	最悪
+T19	Connective 141 143	場合
+T20	Argument 144 148	発電不足
+T21	Connective 148 151	により
+R10	CONDITION Arg1:T19 Arg2:T18	
+R11	RESULT Arg1:T19 Arg2:T20	
+R12	CONDITION Arg1:T12 Arg2:T11	
+R13	RESULT Arg1:T12 Arg2:T20	
+R14	RESULT Arg1:T10 Arg2:T20	
+R15	REASON Arg1:T21 Arg2:T20	
+R16	RESULT Arg1:T21 Arg2:T13	
+R17	RESULT Arg1:T21 Arg2:T14	
+T22	Connective 168 169	、
+R18	REASON Arg1:T22 Arg2:T14	
+R19	RESULT Arg1:T22 Arg2:T15	
+T23	Connective 190 191	、
+R20	REASON Arg1:T23 Arg2:T15	
+R21	RESULT Arg1:T23 Arg2:T16	
+T24	Connective 197 198	し
+R22	REASON Arg1:T24 Arg2:T16	
+R23	RESULT Arg1:T24 Arg2:T17	
+T25	Argument 205 215	オーバーヒートに至る
+R24	RESULT Arg1:T24 Arg2:T25	

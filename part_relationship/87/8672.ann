@@ -28,3 +28,4 @@ R15	Connect Arg1:T2 Arg2:T11
 R16	Part-Whole Arg1:T12 Arg2:T8	
 R17	Connect Arg1:T12 Arg2:T13	
 R18	Connect Arg1:T2 Arg2:T13	
+#1	AnnotatorNotes T13	QID129

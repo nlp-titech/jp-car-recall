@@ -1,0 +1,27 @@
+T1	Argument 0 52	ショベル・ローダおよびグレーダのブレーキ油圧回路で使用するオイルフィルタケースにおいて、製造方法が不適切
+T2	Connective 53 55	ため
+T3	Argument 56 72	基準上必要な耐久性を有しておらず
+T4	Connective 72 73	、
+T5	Argument 73 85	高い圧力が連続的にかかる
+T6	Connective 85 86	と
+T7	Argument 86 105	オイルフィルタケースから作動油が漏れる
+T8	Argument 124 170	ステアリング油圧回路およびディファレンシャルロック油圧回路でも同じオイルフィルタケースを使用
+T9	Connective 174 176	ため
+T10	Argument 177 189	高い圧力が連続的にかかる
+T11	Connective 189 190	と
+T12	Argument 190 197	作動油が漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	RESULT Arg1:T4 Arg2:T12	
+R8	REASON Arg1:T9 Arg2:T8	
+R9	RESULT Arg1:T9 Arg2:T12	
+R10	CONDITION Arg1:T11 Arg2:T10	
+R11	RESULT Arg1:T11 Arg2:T12	
+T13	Argument 114 118	グレーダ
+T14	Connective 118 123	においては
+R12	CONDITION Arg1:T14 Arg2:T13	
+R13	RESULT Arg1:T14 Arg2:T8	

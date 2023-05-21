@@ -1,0 +1,17 @@
+T1	Argument 11 67	インタミディエイトシャフトとステアリングギヤボックスを連結しているステアリングジョイントの組付け作業指示が不適切
+T2	Connective 68 70	ため
+T3	Argument 71 86	正規の位置に取付けられていない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 92 96	そのため
+T5	Argument 97 111	そのままの状態で使用を続ける
+T6	Connective 111 112	と
+R3	CONDITION Arg1:T6 Arg2:T5	
+R4	REASON Arg1:T4 Arg2:T3	
+T7	Argument 112 140	ステアリングギヤボックスからステアリングジョイントが抜け
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	RESULT Arg1:T4 Arg2:T7	
+T8	Argument 142 155	かじ取り操作ができなくなる
+T9	Connective 140 141	て
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	

@@ -1,0 +1,5 @@
+T1	Argument 0 47	ショベル・ローダのキャブ仕様において、側面ガラスにレンタル会社の車両管理番号のシールが貼り付け
+T2	Connective 58 62	そのため
+T3	Argument 63 86	保安基準第２９条（窓ガラスの基準）に適合しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

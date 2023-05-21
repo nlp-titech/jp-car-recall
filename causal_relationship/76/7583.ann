@@ -1,0 +1,33 @@
+T1	Argument 0 17	塵芥車の架装レイアウト設計が不適切
+T2	Connective 18 20	ため
+T3	Argument 21 50	荷箱ダンプシリンダとデファレンシャルギヤケースの間隙が不足
+T4	Connective 60 64	そのため
+T5	Argument 65 79	リヤアクスルの最大跳ね上がり
+T6	Connective 79 80	時
+T7	Argument 81 97	ギヤケースがダンプシリンダに接触
+T8	Connective 98 99	、
+T9	Argument 99 107	ギヤケースが損傷
+T10	Connective 108 109	て
+T11	Argument 109 115	潤滑油が漏れ
+T12	Connective 115 116	、
+T13	Argument 116 118	最悪
+T14	Connective 119 121	場合
+T15	Argument 122 129	ギヤが焼き付い
+T16	Connective 129 130	て
+T17	Argument 130 137	走行不能になる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T15	
+R13	CONDITION Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R15	REASON Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T17	

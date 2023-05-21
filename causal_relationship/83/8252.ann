@@ -1,0 +1,9 @@
+T1	Argument 0 26	穴掘建柱車において、大型後部反射器の取付位置が不適切
+T2	Connective 27 29	ため
+T3	Argument 30 51	幾何学的視認性の領域にウインチフックが配置
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 62 66	そのため
+T5	Argument 67 92	保安基準第３８条の２（大型後部反射器）に適合しない
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

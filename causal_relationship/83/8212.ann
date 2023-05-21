@@ -1,0 +1,21 @@
+T1	Argument 0 43	エンジンコントローラにおいて、アイドリング時における吸入空気量の制御プログラムが不適切
+T2	Connective 44 46	ため
+T3	Argument 47 55	Ｄレンジで停車中
+T4	Connective 55 56	に
+R1	CONDITION Arg1:T4 Arg2:T3	
+T5	Argument 56 64	吸入空気量が不足
+R2	RESULT Arg1:T4 Arg2:T5	
+R3	REASON Arg1:T2 Arg2:T1	
+R4	RESULT Arg1:T2 Arg2:T5	
+T6	Connective 72 76	そのため
+R5	REASON Arg1:T6 Arg2:T5	
+T7	Argument 77 89	アイドリング回転数が低下
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 91 93	最悪
+T9	Connective 94 96	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+T10	Argument 97 104	エンストに至る
+R8	RESULT Arg1:T9 Arg2:T10	
+T11	Connective 90 91	、
+R9	REASON Arg1:T11 Arg2:T7	
+R10	RESULT Arg1:T11 Arg2:T10	

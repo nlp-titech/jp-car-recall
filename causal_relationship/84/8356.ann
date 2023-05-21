@@ -1,0 +1,29 @@
+T1	Argument 0 39	ドリー付バントレーラのリレー・エマージェンシ・バルブ取付部において、強度が不足
+T2	Connective 43 45	ため
+T3	Argument 46 52	走行時の振動
+T4	Connective 52 55	により
+T6	Connective 103 107	そのため
+T7	Argument 108 115	当該部位が破損
+T8	Connective 115 116	し
+T10	Argument 125 127	最悪
+T11	Connective 128 130	場合
+T12	Connective 124 125	。
+T13	Argument 131 145	エマージェンシブレーキが作動
+T14	Connective 145 146	し
+T15	Argument 146 153	走行不能になる
+R1	REASON Arg1:T2 Arg2:T1	
+R3	REASON Arg1:T4 Arg2:T3	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R10	RESULT Arg1:T12 Arg2:T13	
+R11	CONDITION Arg1:T11 Arg2:T10	
+R12	RESULT Arg1:T11 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+T5	Argument 56 97	リザーバポート側マウントソケット取付部およびサービスポート側配管継手に亀裂が生じる
+R2	RESULT Arg1:T2 Arg2:T5	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+T9	Argument 116 124	エア漏れが生じる
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T12 Arg2:T9	

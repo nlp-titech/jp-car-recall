@@ -1,0 +1,9 @@
+T1	Argument 0 26	走行装置（ホイール）において、設計図面の指示が不適切
+T2	Connective 27 29	ため
+T3	Argument 30 101	「軽合金製ディスクホイールの技術基準」に規定されている当該技術基準に適合することを保証された製品に対して行う表示（フランジ形状）がされておらず
+T4	Connective 101 102	、
+T5	Argument 102 127	保安基準第９条（走行装置等）の基準に適合していない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

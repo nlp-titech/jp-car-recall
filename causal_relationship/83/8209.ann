@@ -1,0 +1,17 @@
+T1	Argument 11 25	ヒーターホースの耐久性が不足
+T2	Connective 29 31	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 32 45	早期にヒーターホースが破損
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 53 57	そのため
+T5	Argument 58 64	冷却水が漏れ
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 65 75	そのまま走行を続ける
+T7	Connective 75 76	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+T8	Argument 76 86	オーバーヒートに至る
+R6	RESULT Arg1:T7 Arg2:T8	
+T9	Connective 64 65	、
+R7	REASON Arg1:T9 Arg2:T5	
+R8	RESULT Arg1:T9 Arg2:T8	

@@ -1,0 +1,26 @@
+T1	Argument 0 40	農耕トラクタの主変速クラッチにおいて、主変速のクラッチプレートの強度検討が不適切
+T2	Connective 41 43	ため
+T3	Argument 44 56	当該プレートの強度が不足
+T4	Connective 61 65	そのため
+T5	Argument 66 80	主変速１速と２速の繰返し操作
+T6	Connective 80 83	により
+T7	Argument 83 94	クラッチプレートが損傷
+T8	Argument 103 114	そのままで使用を続ける
+T9	Connective 114 115	と
+T10	Argument 116 118	最悪
+T11	Connective 119 121	場合
+T12	Argument 122 138	主変速１速及び２速で走行出来なく
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T12	
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T12	
+#1	AnnotatorNotes R5	REASONよりはCONDITONだと考えます。つまりこの動作（トリガー）を行わなければ原因は発生しないので。
+T13	Connective 102 103	。
+R11	REASON Arg1:T13 Arg2:T7	
+R12	RESULT Arg1:T13 Arg2:T12	

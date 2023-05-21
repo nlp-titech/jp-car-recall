@@ -6,4 +6,4 @@ T5	Parts 95 98	冷却水
 T6	Parts 108 112	エンジン
 R1	Coreference Arg1:T2 Arg2:T1	
 R2	Coreference Arg1:T4 Arg2:T2	
-R3	Connect Arg1:T5 Arg2:T4	
+R3	Contact Arg1:T5 Arg2:T4	

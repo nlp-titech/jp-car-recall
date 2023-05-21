@@ -1,0 +1,11 @@
+T1	Argument 0 33	エンジンコントロールユニット（ＤＭＥ）において、プログラムが不適切
+T2	Connective 34 36	ため
+T3	Argument 37 58	Ｏ２センサーからの情報を適切に評価できない
+T4	Connective 59 63	そのため
+T7	Argument 64 89	燃焼状態に異常が発生してもエンジン警告灯が点灯せず
+T8	Argument 90 104	排気ガスが基準値を満たさない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	RESULT Arg1:T4 Arg2:T8	

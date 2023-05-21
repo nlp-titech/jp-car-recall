@@ -1,0 +1,9 @@
+T1	Argument 0 45	前照灯において、インストルメントパネルクラスターコントロールモジュールのプログラムが不適切
+T2	Connective 46 48	ため
+T3	Argument 49 82	走行用とすれ違い用の自動制御が作動中である状態を計器内に表示しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 83 87	そのため
+T5	Argument 88 110	自動制御状態であることを運転者が判別できない
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

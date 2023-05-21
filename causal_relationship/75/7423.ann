@@ -1,0 +1,33 @@
+T1	Argument 29 48	ダンパーディスク内のバネの設定が不適切
+T2	Connective 49 51	ため
+T3	Argument 52 59	当該バネが共振
+T4	Connective 60 61	、
+T5	Argument 61 77	ダンパーディスク内の歯面がたたか
+T6	Argument 79 84	歯面が摩耗
+T7	Connective 78 79	、
+T8	Connective 92 96	そのため
+T9	Argument 97 111	そのままの状態で使用を続ける
+T10	Argument 113 118	歯面が摩滅
+T11	Connective 111 112	と
+T12	Connective 119 120	、
+T13	Argument 120 122	最悪
+T14	Connective 123 125	場合
+T15	Argument 126 134	走行できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	
+R7	REASON Arg1:T8 Arg2:T6	
+R8	RESULT Arg1:T8 Arg2:T10	
+R9	CONDITION Arg1:T11 Arg2:T9	
+R10	RESULT Arg1:T11 Arg2:T10	
+R11	REASON Arg1:T12 Arg2:T10	
+R12	RESULT Arg1:T12 Arg2:T15	
+R13	CONDITION Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+T16	Argument 20 28	エンジン低回転域
+T17	Connective 28 29	で
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T1	

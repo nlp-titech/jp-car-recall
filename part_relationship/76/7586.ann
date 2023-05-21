@@ -3,9 +3,7 @@ T2	Parts 15 17	素子
 T3	Parts 31 33	素子
 T4	Parts 66 68	素子
 T5	Parts 73 93	アイドリングストップシステムＯＦＦ表示灯
-T6	Parts 98 108	アイドリングストップ
 R1	Part-Whole Arg1:T2 Arg2:T1	
 R2	Coreference Arg1:T2 Arg2:T3	
 R3	Coreference Arg1:T3 Arg2:T4	
 R4	Connect Arg1:T1 Arg2:T5	
-R5	Connect Arg1:T1 Arg2:T6	

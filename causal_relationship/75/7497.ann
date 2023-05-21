@@ -1,0 +1,5 @@
+T1	Argument 9 37	ブレーキフルードの種類を示すラベルを貼り付ける指示がない
+T2	Connective 37 39	ため
+T3	Argument 40 56	当該ラベルが貼り付けられていない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

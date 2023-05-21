@@ -1,0 +1,21 @@
+T1	Argument 0 62	衝突被害軽減制動制御装置（トラフィックアイブレーキシステム）装着車において、ミリ波レーダによる障害物検知プログラムの機能限界
+T2	Connective 62 65	により
+R1	REASON Arg1:T2 Arg2:T1	
+T5	Argument 66 99	先行車がいない状況下で道路等の下を潜る構造のアンダーパス道路を通過
+T6	Connective 101 102	時
+T7	Argument 103 119	高速道路の出入口ゲート付近を走行
+T8	Connective 121 122	際
+R3	CONDITION Arg1:T6 Arg2:T5	
+R4	CONDITION Arg1:T8 Arg2:T7	
+T9	Argument 124 141	ミリ波情報を稀に前方障害物と誤認識
+R5	RESULT Arg1:T8 Arg2:T9	
+R6	RESULT Arg1:T6 Arg2:T9	
+R7	RESULT Arg1:T2 Arg2:T9	
+T10	Connective 149 153	そのため
+R9	REASON Arg1:T10 Arg2:T9	
+T11	Argument 154 168	表示モニタに警告表示がされる
+T12	Argument 172 178	警告音を発し
+T13	Argument 179 194	使用者の予期せぬ急制動がかかる
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	RESULT Arg1:T10 Arg2:T12	
+R13	RESULT Arg1:T10 Arg2:T13	

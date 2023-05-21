@@ -1,0 +1,21 @@
+T1	Argument 14 50	ダブルタイヤ仕様のスペアタイヤクランプにおいて、製造時の部品管理が不適切
+T2	Connective 51 53	ため
+T3	Argument 54 68	正規の仕様と異なる部品を出荷
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 76 80	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 81 89	当該部品を組付け
+T6	Connective 90 92	場合
+R4	CONDITION Arg1:T6 Arg2:T5	
+T7	Argument 93 103	締め付けボルトが緩み
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	RESULT Arg1:T4 Arg2:T7	
+T8	Argument 104 113	スペアタイヤが脱落
+T9	Connective 103 104	、
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+T10	Argument 115 125	他の交通の妨げになる
+T11	Connective 114 115	、
+R9	REASON Arg1:T11 Arg2:T8	
+R10	RESULT Arg1:T11 Arg2:T10	

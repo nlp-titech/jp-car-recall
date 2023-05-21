@@ -2,9 +2,7 @@ T1	Parts 0 4	電気装置
 T2	Parts 9 16	原動機制御装置
 T3	Parts 58 65	エンジン警告灯
 T4	Parts 83 85	車両
-T5	Parts 19 30	パワーエレクトロニクス
-R1	Oneway-Coreference Arg1:T2 Arg2:T1	
-R2	Oneway-Coreference Arg1:T5 Arg2:T1	
-R3	Connect Arg1:T3 Arg2:T1	
 R4	Part-Whole Arg1:T1 Arg2:T4	
 R5	Part-Whole Arg1:T3 Arg2:T4	
+R1	Oneway-Coreference Arg1:T1 Arg2:T2	
+R2	Connect Arg1:T2 Arg2:T3	

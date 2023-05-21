@@ -1,0 +1,9 @@
+T1	Argument 0 43	エンジンコントロールユニットの制御プログラムにおいて、車両へ搭載する仕様の管理が不適切
+T2	Connective 44 46	ため
+T3	Argument 47 64	正規と異なる仕様のプログラムを搭載
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 69 73	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 74 92	二酸化炭素の排出量と燃料消費量が増加
+R4	RESULT Arg1:T4 Arg2:T5	

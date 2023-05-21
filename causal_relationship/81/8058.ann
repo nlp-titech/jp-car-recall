@@ -1,0 +1,21 @@
+T1	Argument 0 48	ホイール・クレーンの運転者席スライドドアにおいて、センターローラブラケットのローラの材質が不適切
+T2	Connective 49 51	ため
+T3	Argument 52 61	ドア開閉を繰り返す
+T4	Connective 61 62	と
+T5	Argument 62 81	ローラ及びローラ取付けピンが早期に摩耗
+T6	Connective 89 93	そのため
+T7	Argument 94 102	ドアにガタが発生
+T8	Argument 105 107	最悪
+T9	Connective 103 104	て
+T10	Connective 108 110	場合
+T13	Argument 111 120	開閉時にドアが脱落
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T13	
+R9	CONDITION Arg1:T10 Arg2:T8	
+R10	RESULT Arg1:T10 Arg2:T13	

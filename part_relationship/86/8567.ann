@@ -4,8 +4,9 @@ T3	Parts 46 48	燃料
 T4	Parts 70 74	インペラ
 T5	Parts 75 81	ポンプケース
 T6	Parts 86 91	燃料ポンプ
-R1	Part-Whole Arg1:T4 Arg2:T5	
 R2	Part-Whole Arg1:T5 Arg2:T6	
-R3	Connect Arg1:T3 Arg2:T6	
 R4	Coreference Arg1:T2 Arg2:T4	
 R5	Coreference Arg1:T1 Arg2:T6	
+R3	Contact Arg1:T1 Arg2:T3	
+R6	Contact Arg1:T2 Arg2:T3	
+R1	Part-Whole Arg1:T2 Arg2:T1	

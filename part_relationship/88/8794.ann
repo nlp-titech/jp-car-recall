@@ -27,3 +27,4 @@ R13	Contact Arg1:T8 Arg2:T11
 R14	Contact Arg1:T9 Arg2:T11	
 R15	Contact Arg1:T3 Arg2:T11	
 R16	Connect Arg1:T12 Arg2:T13	
+R17	Part-Whole Arg1:T2 Arg2:T1	

@@ -1,0 +1,25 @@
+T1	Argument 5 27	高圧燃料配管において、組付け時の管理が不適切
+T2	Connective 28 30	ため
+T3	Argument 31 58	微細な粒子が燃料レールとインジェクタ間のシールに挟まっ
+T4	Connective 67 71	そのため
+T7	Argument 77 83	シールが損傷
+T8	Connective 84 85	て
+T9	Argument 85 92	燃料漏れが発生
+T10	Connective 93 94	、
+T11	Argument 94 96	最悪
+T12	Connective 97 99	場合
+T13	Argument 100 115	漏れ出した燃料が高温部位に滴下
+T14	Connective 119 120	で
+T15	Argument 120 125	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	

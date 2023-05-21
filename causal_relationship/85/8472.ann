@@ -1,0 +1,33 @@
+T1	Argument 9 28	駐車ブレーキにおいて、組立工程が不適切
+T2	Connective 29 31	ため
+T3	Argument 32 59	油圧シリンダ先端ヨークと駐車ブレーキレバーを組み付ける
+T4	Connective 59 60	際
+T5	Argument 61 71	ヨークがレバーと干渉
+T6	Connective 72 73	、
+T7	Argument 73 89	駐車ブレーキ内部のプレートを損傷
+T8	Connective 101 105	そのため
+T11	Argument 106 131	そのままの状態で駐車ブレーキの作動と解除を繰り返す
+T12	Connective 131 132	と
+T13	Argument 133 148	プレートの損傷部から亀裂が進展
+T14	Argument 150 152	最悪
+T15	Connective 149 150	、
+T16	Connective 153 155	場合
+T17	Argument 156 163	プレートが折損
+T18	Connective 164 165	て
+T19	Argument 165 181	車両を停止状態に保持できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T15 Arg2:T13	
+R14	RESULT Arg1:T15 Arg2:T17	
+R15	CONDITION Arg1:T16 Arg2:T14	
+R16	RESULT Arg1:T16 Arg2:T17	
+R17	REASON Arg1:T18 Arg2:T17	
+R18	RESULT Arg1:T18 Arg2:T19	

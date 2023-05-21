@@ -1,0 +1,29 @@
+T1	Argument 0 99	サスペンション（フロント、リア）、ブレーキキャリパ（フロント、リア）、フロントサブフレーム、リアクロスメンバー、アンダーボディーデフレクターの取付けボルト等において、締め付け工具のトルク設定が不適切
+T2	Connective 100 102	ため
+T3	Argument 103 113	締め付けトルクが不足
+T4	Connective 123 127	そのため
+T5	Argument 136 143	当該部位が緩み
+T6	Connective 143 144	、
+T7	Argument 144 149	異音が発生
+T9	Argument 151 153	最悪
+T10	Connective 154 156	場合
+T11	Argument 157 170	走行安定性、制動能力が失わ
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T11	
+R8	CONDITION Arg1:T10 Arg2:T9	
+R9	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 182 189	ボルト等が脱落
+T13	Connective 191 193	場合
+T14	Argument 194 205	他の交通に影響を及ぼす
+R10	RESULT Arg1:T6 Arg2:T12	
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T14	
+T8	Argument 128 133	走行振動等
+T15	Connective 133 136	により
+R13	REASON Arg1:T15 Arg2:T8	
+R14	RESULT Arg1:T15 Arg2:T5	

@@ -1,0 +1,68 @@
+T1	Argument 2 29	フューエルタンク内のフューエルポンプの取り付けが不適切
+T2	Connective 30 32	ため
+T3	Argument 33 51	レベルセンサーがフィードラインに干渉
+T4	Connective 59 63	そのため
+T5	Argument 64 78	燃料の残量が正しく測定できず
+T6	Connective 78 79	、
+T7	Argument 79 105	メーターパネルの燃料残量が実際の燃料残量より多く表示
+T8	Connective 108 110	場合
+T9	Argument 111 114	ガス欠
+T12	Argument 142 171	エンジンコントロールユニット（ＤＭＥ）のプログラムが不適切
+T13	Connective 172 174	ため
+T14	Argument 175 183	燃料の圧力が低下
+T15	Connective 191 195	そのため
+T16	Argument 196 204	燃料の供給が不足
+T17	Connective 205 206	、
+T18	Argument 206 212	警告灯が点灯
+T20	Argument 215 217	最悪
+T21	Connective 218 220	場合
+T24	Argument 221 229	走行中にエンスト
+T25	Argument 240 271	燃料高圧ポンプとフランジを固定するボルトの締め付けトルクが不足
+T26	Connective 275 277	ため
+T27	Argument 278 297	当該ポンプが確実に取り付けられていない
+T28	Connective 303 307	そのため
+T29	Argument 308 312	走行振動
+T30	Connective 312 315	により
+T31	Argument 315 321	ボルトが緩み
+T32	Argument 322 328	燃料が漏れる
+T33	Connective 341 342	、
+T34	Argument 342 344	最悪
+T35	Connective 345 347	場合
+T38	Argument 348 356	走行中にエンスト
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T14	
+R13	REASON Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T16	
+R15	REASON Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T18	
+R19	CONDITION Arg1:T21 Arg2:T20	
+R20	RESULT Arg1:T21 Arg2:T24	
+R23	REASON Arg1:T26 Arg2:T25	
+R24	RESULT Arg1:T26 Arg2:T27	
+R25	REASON Arg1:T28 Arg2:T27	
+R26	RESULT Arg1:T28 Arg2:T31	
+R27	REASON Arg1:T30 Arg2:T29	
+R28	RESULT Arg1:T30 Arg2:T31	
+T39	Connective 321 322	、
+R29	REASON Arg1:T39 Arg2:T31	
+R30	RESULT Arg1:T39 Arg2:T32	
+R32	RESULT Arg1:T33 Arg2:T38	
+R33	CONDITION Arg1:T35 Arg2:T34	
+R34	RESULT Arg1:T35 Arg2:T38	
+R17	RESULT Arg1:T17 Arg2:T24	
+T19	Argument 332 340	燃料の圧力が低下
+R18	RESULT Arg1:T39 Arg2:T19	
+R31	REASON Arg1:T33 Arg2:T19	
+R37	REASON Arg1:T33 Arg2:T32	
+T10	Connective 114 115	し
+T11	Argument 115 119	エンスト
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	

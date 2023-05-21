@@ -1,0 +1,60 @@
+T1	Argument 3 32	ウイング車において、ウイング開閉用油圧ホースの配索が不適切
+T2	Connective 33 35	ため
+T3	Argument 36 49	フレーム上部コーナーに接触
+T6	Argument 59 75	この状態でウイング開閉を繰り返す
+T7	Connective 75 76	と
+T8	Argument 77 92	ホースがコーナーに強く押し当て
+T9	Connective 94 95	て
+T10	Argument 95 97	損傷
+T11	Connective 98 99	、
+T12	Argument 99 105	作動油が漏れ
+T13	Connective 105 106	、
+T14	Argument 106 118	ウイングが作動しなくなる
+T15	Argument 124 126	最悪
+T16	Connective 127 129	場合
+T19	Argument 130 145	ウイング開時に開用ホースが損傷
+T20	Connective 147 148	と
+T21	Argument 149 156	ウイングが降下
+T22	Argument 168 208	中型ウイング車において、ウイング開閉用油圧シリンダーの閉用配管継手の締付が不適切
+T23	Connective 209 211	ため
+T24	Argument 212 217	継手が緩む
+T27	Argument 223 239	この状態でウイング開閉を繰り返す
+T28	Connective 239 240	と
+T29	Argument 241 254	閉用ホースがフレームに接触
+T30	Connective 255 256	て
+T31	Argument 256 258	損傷
+T32	Connective 259 260	、
+T33	Argument 260 266	作動油が漏れ
+T34	Connective 266 267	、
+T35	Argument 267 279	ウイングが作動しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T8	
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T10	
+R9	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T12	
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T14	
+R13	CONDITION Arg1:T16 Arg2:T15	
+R14	RESULT Arg1:T16 Arg2:T21	
+R17	REASON Arg1:T20 Arg2:T19	
+R18	RESULT Arg1:T20 Arg2:T21	
+R19	REASON Arg1:T23 Arg2:T22	
+R20	RESULT Arg1:T23 Arg2:T24	
+R23	CONDITION Arg1:T28 Arg2:T27	
+R24	RESULT Arg1:T28 Arg2:T29	
+R25	REASON Arg1:T30 Arg2:T29	
+R26	RESULT Arg1:T30 Arg2:T31	
+R27	REASON Arg1:T32 Arg2:T31	
+R28	RESULT Arg1:T32 Arg2:T33	
+R29	REASON Arg1:T34 Arg2:T33	
+R30	RESULT Arg1:T34 Arg2:T35	
+T4	Connective 58 59	。
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T8	
+R31	RESULT Arg1:T9 Arg2:T19	
+T5	Connective 222 223	。
+R21	REASON Arg1:T5 Arg2:T24	
+R22	RESULT Arg1:T5 Arg2:T29	

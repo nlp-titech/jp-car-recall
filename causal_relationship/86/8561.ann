@@ -1,0 +1,29 @@
+T1	Argument 8 40	制動装置において、エアコンプレッサ用プーリーの取付部形状が不適切
+T2	Connective 41 43	ため
+T3	Argument 44 51	走行時の振動等
+T4	Connective 51 54	により
+T5	Argument 54 67	プーリー固定用ナットが緩み
+T6	Connective 67 68	、
+T7	Argument 68 75	プーリーが脱落
+T8	Connective 83 87	そのため
+T9	Argument 88 98	そのまま使用を続ける
+T10	Connective 98 99	と
+T11	Argument 100 107	エアが溜まらず
+T12	Connective 107 108	、
+T13	Argument 108 110	最悪
+T14	Connective 111 113	場合
+T15	Argument 114 125	ブレーキが効かなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T11	
+R9	CONDITION Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T15	
+R13	CONDITION Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	

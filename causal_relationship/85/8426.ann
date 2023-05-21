@@ -1,0 +1,47 @@
+T1	Argument 0 29	エンジンの排気圧センサにおいて、異常判定プログラムが不適切
+T2	Connective 30 32	ため
+T3	Argument 33 45	センサ内部への水分の浸入
+T4	Connective 45 48	により
+T5	Argument 49 59	センサの出力値がずれ
+T6	Connective 59 60	、
+T7	Argument 60 76	排出ガスが基準値を満足しなくなる
+T8	Connective 76 78	場合
+T9	Argument 80 87	異常判定しない
+T10	Connective 88 92	そのため
+T11	Argument 93 107	そのままの状態で使用を続ける
+T12	Connective 107 108	と
+T13	Argument 109 115	浸入した水分
+T14	Connective 115 118	により
+T15	Argument 118 133	排気圧センサ内の電子回路が腐食
+T18	Connective 141 142	で
+T19	Argument 142 152	エンジン警告灯が点灯
+T21	Argument 154 163	フェールセーフ制御
+T22	Connective 163 166	により
+T23	Argument 166 184	アイドリングストップが作動しなくなり
+T24	Connective 184 185	、
+T25	Argument 185 197	変速ショックが大きくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T9	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T15	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T15	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R18	RESULT Arg1:T18 Arg2:T19	
+R21	REASON Arg1:T22 Arg2:T21	
+R22	RESULT Arg1:T22 Arg2:T23	
+R23	REASON Arg1:T24 Arg2:T23	
+R24	RESULT Arg1:T24 Arg2:T25	
+T16	Argument 135 137	断線
+T17	Connective 134 135	、
+R15	REASON Arg1:T17 Arg2:T15	
+R17	RESULT Arg1:T17 Arg2:T16	
+R19	REASON Arg1:T18 Arg2:T16	
+R16	RESULT Arg1:T18 Arg2:T21	

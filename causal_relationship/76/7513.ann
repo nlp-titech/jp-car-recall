@@ -1,0 +1,29 @@
+T1	Argument 0 28	シフトカバーフレームにおいて、製造時の組付けにかかる圧力
+T2	Connective 28 31	により
+T3	Argument 32 58	表面に施されたクロームコーティングに微細な亀裂を生じ
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 65 69	そのため
+T5	Argument 78 86	気温・湿度の変化
+T6	Connective 86 89	により
+T7	Argument 89 94	亀裂が拡大
+T8	Connective 95 96	、
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T9	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T9	Argument 96 112	当該コーティングの一部が剥がれる
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 118 120	最悪
+T11	Connective 121 123	場合
+T12	Argument 131 133	負傷
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T12	
+T13	Connective 117 118	。
+R11	REASON Arg1:T13 Arg2:T9	
+R12	RESULT Arg1:T13 Arg2:T14	
+T14	Argument 124 131	当該部位に触れ
+T15	Connective 141 142	。
+R13	RESULT Arg1:T15 Arg2:T12	
+R14	REASON Arg1:T15 Arg2:T14	

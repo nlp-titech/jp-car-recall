@@ -1,0 +1,29 @@
+T1	Connective 46 48	ため
+T2	Argument 72 87	ホースがチェーンに強く押し当て
+R1	RESULT Arg1:T1 Arg2:T2	
+T3	Connective 89 90	、
+T4	Argument 90 96	ホースが損傷
+R2	REASON Arg1:T3 Arg2:T2	
+R3	RESULT Arg1:T3 Arg2:T4	
+T5	Connective 104 108	そのため
+R4	REASON Arg1:T5 Arg2:T4	
+T6	Argument 109 118	ホースに亀裂が生じ
+R5	RESULT Arg1:T5 Arg2:T6	
+T7	Connective 118 119	、
+T8	Argument 125 130	作動油飛散
+T9	Argument 133 145	オペレータに危害が加わる
+R6	REASON Arg1:T7 Arg2:T6	
+R7	RESULT Arg1:T7 Arg2:T8	
+T10	Argument 119 121	最悪
+T11	Connective 122 124	場合
+R8	CONDITION Arg1:T11 Arg2:T10	
+R9	RESULT Arg1:T11 Arg2:T8	
+T12	Connective 130 133	により
+R10	REASON Arg1:T12 Arg2:T8	
+R11	RESULT Arg1:T12 Arg2:T9	
+T13	Argument 0 45	バッテリ式フォークリフトの荷役作業において、アタッチメント用マスト油圧ホースの長さが不適切
+R12	REASON Arg1:T1 Arg2:T13	
+T14	Argument 49 70	ホースの張りが強い状態で荷役作業を繰り返す
+T15	Connective 70 71	と
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T2	

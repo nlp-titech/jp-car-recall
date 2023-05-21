@@ -1,0 +1,13 @@
+T1	Argument 0 46	協定規則第１６号（後席シートベルト非装着時警報装置）認可車両において、制御プログラムが不適切
+T2	Connective 47 49	ため
+T3	Argument 50 68	後席乗員が短時間にシートベルトを脱着
+T4	Connective 70 71	と
+T5	Argument 72 88	他の後席シートベルト警告灯が消灯
+T6	Connective 96 100	そのため
+T7	Argument 101 132	運転者が当該警告灯にてシートベルト装着状態を正しく確認できない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

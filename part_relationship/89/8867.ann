@@ -1,6 +1,5 @@
 T1	Parts 0 7	コラムスイッチ
 T2	Parts 12 16	内部配線
-T3	Parts 19 24	コネクター
 T4	Parts 41 43	配線
 T5	Parts 74 77	前照灯
 T6	Parts 78 81	車幅灯
@@ -11,7 +10,6 @@ T10	Parts 98 102	スイッチ
 T11	Parts 105 110	車室内照明
 T12	Parts 125 130	方向指示器
 R1	Part-Whole Arg1:T2 Arg2:T1	
-R2	Contact Arg1:T2 Arg2:T3	
 R3	Coreference Arg1:T2 Arg2:T4	
 R4	Coreference Arg1:T1 Arg2:T10	
 R5	Connect Arg1:T5 Arg2:T10	

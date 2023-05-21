@@ -12,3 +12,4 @@ R4	Part-Whole Arg1:T5 Arg2:T2
 R5	Part-Whole Arg1:T3 Arg2:T1	
 R6	Part-Whole Arg1:T2 Arg2:T1	
 R7	Connect Arg1:T3 Arg2:T7	
+R8	Part-Whole Arg1:T3 Arg2:T2	

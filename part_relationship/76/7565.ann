@@ -3,7 +3,9 @@ T2	Parts 5 13	クーラントホース
 T3	Parts 67 70	冷却水
 T4	Parts 74 77	警告灯
 T5	Parts 110 114	エンジン
-R2	Contact Arg1:T2 Arg2:T3	
 R1	Contact Arg1:T1 Arg2:T2	
 R3	Coreference Arg1:T1 Arg2:T5	
 R4	Connect Arg1:T1 Arg2:T4	
+T6	Parts 38 42	冷却回路
+R5	Part-Whole Arg1:T2 Arg2:T6	
+R6	Contact Arg1:T6 Arg2:T3	

@@ -4,3 +4,4 @@ T3	Parts 34 38	フィルタ
 T4	Parts 79 83	フィルタ
 R1	Coreference Arg1:T2 Arg2:T3	
 R2	Coreference Arg1:T3 Arg2:T4	
+R3	Part-Whole Arg1:T2 Arg2:T1	

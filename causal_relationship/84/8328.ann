@@ -1,0 +1,35 @@
+T1	Argument 16 68	電動パーキングブレーキアクチュエータ内部ギヤ潤滑用のグリス塗布量及び当該グリス溜まり部容積の設定が不適切
+T2	Connective 69 71	ため
+T3	Argument 72 87	登坂路での走行や停車を繰り返す
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+T4	Connective 87 88	と
+T5	Argument 89 116	溜まり部に溜まったグリスのオイル成分がモータ内部に侵入
+T6	Connective 117 118	、
+T7	Argument 118 130	モータ内の摩耗粉と混ざり
+T8	Connective 130 131	、
+T9	Argument 131 140	導電性の異物が生成
+T10	Connective 149 153	そのため
+T11	Argument 154 164	そのままの状態で使用
+T12	Connective 166 167	と
+T13	Argument 168 182	異物がモータターミナルに付着
+T14	Connective 183 184	、
+T15	Argument 184 192	モータ回路が短絡
+T16	Connective 193 194	て
+T17	Argument 195 201	警告灯が点灯
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R15	REASON Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T17	
+T18	Argument 207 234	駐車ブレーキが作動しなくなる、または、解除できなくなる
+R17	RESULT Arg1:T16 Arg2:T18	

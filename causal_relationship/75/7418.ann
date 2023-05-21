@@ -1,0 +1,25 @@
+T1	Argument 11 29	ＤＰＦマフラー取付金具の設定が不適切
+T2	Argument 33 45	当該金具が燃料配管と干渉
+T3	Connective 30 32	ため
+T4	Connective 55 59	そのため
+T5	Connective 67 70	により
+T6	Argument 60 67	走行時の振動等
+T9	Argument 71 78	燃料配管が損傷
+T10	Argument 80 85	燃料が漏れ
+T11	Connective 79 80	て
+T12	Argument 86 88	最悪
+T13	Connective 85 86	、
+T14	Connective 89 91	場合
+T15	Argument 92 97	火災に至る
+R1	REASON Arg1:T3 Arg2:T1	
+R2	RESULT Arg1:T3 Arg2:T2	
+R3	REASON Arg1:T4 Arg2:T2	
+R4	RESULT Arg1:T4 Arg2:T9	
+R7	REASON Arg1:T5 Arg2:T6	
+R8	RESULT Arg1:T5 Arg2:T9	
+R9	REASON Arg1:T11 Arg2:T9	
+R10	RESULT Arg1:T11 Arg2:T10	
+R11	REASON Arg1:T13 Arg2:T10	
+R12	RESULT Arg1:T13 Arg2:T15	
+R13	CONDITION Arg1:T14 Arg2:T12	
+R14	RESULT Arg1:T14 Arg2:T15	

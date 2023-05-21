@@ -1,0 +1,23 @@
+T1	Argument 7 45	ブレーキ作動用エア回路において、乾燥剤再生用エアタンクの耐久性の評価が不十分
+T2	Connective 46 48	ため
+T3	Argument 49 62	当該エアタンクに亀裂が発生
+T4	Argument 63 69	エアが漏れる
+T6	Connective 75 79	そのため
+T7	Argument 80 87	エア漏れ音がし
+T8	Argument 89 97	警報ブザーが作動
+T9	Connective 98 99	、
+T10	Argument 99 109	そのまま使用を続ける
+T11	Connective 109 110	と
+T12	Argument 111 123	ブレーキの効きが悪くなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R5	REASON Arg1:T6 Arg2:T4	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T8	
+R8	REASON Arg1:T9 Arg2:T7	
+R9	RESULT Arg1:T9 Arg2:T12	
+R10	CONDITION Arg1:T11 Arg2:T10	
+R11	RESULT Arg1:T11 Arg2:T12	
+T5	Connective 62 63	し
+R3	REASON Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T4	

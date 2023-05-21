@@ -1,0 +1,27 @@
+T1	Argument 0 35	エンジンコントロールユニットの制御プログラムにおいて、生産指示が不適切
+T2	Connective 36 38	ため
+T3	Argument 38 51	誤った制御プログラムが搭載
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 57 61	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 62 79	カムシャフトの制御が正しく行われず
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 80 100	カムシャフトの故障診断が正しく行われない
+T7	Connective 79 80	、
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	
+T8	Argument 104 111	高負荷高回転時
+T9	Connective 111 112	に
+R7	CONDITION Arg1:T9 Arg2:T8	
+T10	Argument 112 117	失火が発生
+R8	RESULT Arg1:T9 Arg2:T10	
+T11	Connective 103 104	、
+R9	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T10	
+T12	Argument 130 136	ＭＩＬの点灯
+T13	Argument 139 151	排出ガスが基準値を超える
+T14	Connective 128 130	場合
+R11	CONDITION Arg1:T14 Arg2:T10	
+R12	RESULT Arg1:T14 Arg2:T12	
+R13	RESULT Arg1:T14 Arg2:T13	

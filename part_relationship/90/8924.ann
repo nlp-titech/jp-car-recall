@@ -2,9 +2,9 @@ T1	Parts 0 6	大型トラック
 T2	Parts 11 16	車速センサ
 T3	Parts 111 114	警告灯
 T4	Parts 130 133	速度計
-T5	Parts 57 59	素子
-T6	Parts 83 85	素子
-T7	Parts 96 98	素子
+T5	Parts 57 62	素子ハンダ
+T6	Parts 83 88	素子ハンダ
+T7	Parts 96 101	素子ハンダ
 R1	Part-Whole Arg1:T2 Arg2:T1	
 R2	Part-Whole Arg1:T5 Arg2:T2	
 R3	Coreference Arg1:T5 Arg2:T6	

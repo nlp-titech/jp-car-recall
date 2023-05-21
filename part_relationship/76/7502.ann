@@ -5,13 +5,11 @@ T4	Parts 25 28	タイヤ
 T5	Parts 34 37	タイヤ
 T6	Parts 43 47	ホイール
 T7	Parts 85 88	タイヤ
-T8	Parts 89 91	空気
 R1	Coreference Arg1:T4 Arg2:T5	
 R2	Coreference Arg1:T5 Arg2:T7	
 R3	Coreference Arg1:T3 Arg2:T6	
 R4	Part-Whole Arg1:T3 Arg2:T1	
 R5	Part-Whole Arg1:T3 Arg2:T2	
-R6	Part-Whole Arg1:T8 Arg2:T7	
 R7	Part-Whole Arg1:T4 Arg2:T1	
 R8	Part-Whole Arg1:T4 Arg2:T2	
 R9	Contact Arg1:T5 Arg2:T6	

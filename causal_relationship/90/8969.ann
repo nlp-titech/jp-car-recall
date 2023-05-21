@@ -1,0 +1,41 @@
+T2	Connective 57 59	ため
+T1	Argument 0 56	大型トラクタの電制エアドライヤーにおいて、セントラルシャシ入出力モジュールのエアドライヤー再生プログラムが不適切
+T4	Argument 85 120	高湿度の圧縮空気が供給先のエアタンク及びトレーラーブレーキ回路内で結露
+T5	Connective 120 121	し
+T6	Argument 121 127	凝縮水が生成
+T7	Connective 131 135	そのため
+T8	Argument 136 150	そのままの状態で使用を続ける
+T9	Connective 150 151	と
+T10	Argument 152 167	高湿度の圧縮空気が各回路に供給
+T11	Connective 168 169	れ
+T12	Argument 169 192	結露によるシステム異常等の警告メッセージが表示
+T14	Argument 195 197	最悪
+T15	Connective 198 200	場合
+T16	Argument 201 221	トレーラー側ブレーキ回路内で凝縮水が凍結
+T17	Connective 222 223	、
+T18	Argument 223 240	トレーラー側の主ブレーキが効かない
+T19	Argument 244 254	駐車ブレーキ引きずり
+T20	Connective 254 257	により
+T21	Argument 257 262	火災に至る
+R4	REASON Arg1:T5 Arg2:T4	
+R5	RESULT Arg1:T5 Arg2:T6	
+R6	REASON Arg1:T7 Arg2:T6	
+R7	RESULT Arg1:T7 Arg2:T10	
+R8	CONDITION Arg1:T9 Arg2:T8	
+R9	RESULT Arg1:T9 Arg2:T10	
+R10	REASON Arg1:T11 Arg2:T10	
+R11	RESULT Arg1:T11 Arg2:T12	
+R14	CONDITION Arg1:T15 Arg2:T14	
+R15	RESULT Arg1:T15 Arg2:T16	
+R16	REASON Arg1:T17 Arg2:T16	
+R17	RESULT Arg1:T17 Arg2:T18	
+R19	REASON Arg1:T20 Arg2:T19	
+R20	RESULT Arg1:T20 Arg2:T21	
+T3	Argument 60 84	当該ドライヤー乾燥再生動作が適切な頻度にて行われ
+T22	Connective 84 85	ず
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T22 Arg2:T3	
+R21	RESULT Arg1:T22 Arg2:T4	
+R12	RESULT Arg1:T11 Arg2:T16	
+R13	RESULT Arg1:T17 Arg2:T19	

@@ -1,0 +1,29 @@
+T1	Argument 0 38	ターボチャージャーのオイル供給ホースにおいて、エラストマーの製造管理が不適切
+T2	Connective 39 41	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 42 48	耐熱性が不足
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 58 62	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 69 74	亀裂が生じ
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 63 66	熱負荷
+T7	Connective 66 69	により
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T5	
+T8	Connective 74 75	、
+T9	Argument 75 83	オイル漏れが発生
+R7	REASON Arg1:T8 Arg2:T5	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Connective 84 85	て
+T11	Argument 86 88	最悪
+T12	Connective 89 91	場合
+T13	Argument 92 105	漏れたオイルが排気管に付着
+T14	Connective 109 110	で
+T15	Argument 110 115	火災に至る
+R9	REASON Arg1:T14 Arg2:T13	
+R10	RESULT Arg1:T14 Arg2:T15	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T10 Arg2:T9	
+R14	RESULT Arg1:T10 Arg2:T13	

@@ -7,4 +7,3 @@ R1	Part-Whole Arg1:T2 Arg2:T1
 R2	Part-Whole Arg1:T3 Arg2:T1	
 R3	Contact Arg1:T4 Arg2:T2	
 R4	Coreference Arg1:T5 Arg2:T2	
-R5	Part-Whole Arg1:T4 Arg2:T1	

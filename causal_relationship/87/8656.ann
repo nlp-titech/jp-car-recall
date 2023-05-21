@@ -1,0 +1,17 @@
+T1	Argument 0 76	バッテリ式フォークリフトの荷役装置において、オプション設定の「ティルト自動水平停止」が指定された車両で右ティルトシリンダへの油圧ホースが逆向きに取り付け
+T2	Connective 85 89	そのため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 89 101	油圧パイプへの負荷が集中
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 103 105	最悪
+T5	Connective 106 108	場合
+T6	Argument 109 117	油圧パイプが破損
+R3	CONDITION Arg1:T5 Arg2:T4	
+T7	Connective 102 103	、
+R4	REASON Arg1:T7 Arg2:T3	
+R5	RESULT Arg1:T7 Arg2:T6	
+T8	Argument 118 125	作動油が漏れる
+T9	Connective 117 118	し
+R6	REASON Arg1:T9 Arg2:T6	
+R7	RESULT Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T5 Arg2:T6	

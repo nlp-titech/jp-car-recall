@@ -1,0 +1,21 @@
+T1	Argument 18 53	燃料ポンプとコモンレール間を接続する燃料パイプの締付トルク指示が不適切
+T2	Connective 54 56	ため
+T3	Argument 57 69	当該パイプの組付ばらつき
+T4	Connective 69 72	により
+T5	Argument 73 81	エンジンの振動等
+T6	Connective 81 82	で
+T7	Argument 82 90	当該締結部が緩む
+T8	Connective 96 100	そのため
+T9	Argument 101 108	燃料漏れが生じ
+T10	Connective 108 109	て
+T11	Argument 109 113	エンスト
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T7	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	

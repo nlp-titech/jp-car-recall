@@ -1,0 +1,9 @@
+T1	Argument 11 29	電装品制御ＥＣＵのプログラムが不適切
+T2	Connective 30 32	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T4	Argument 75 128	制動灯、車両側面のターンシグナルランプ、番号灯、ＥＺＧＯ（坂道発進補助装置）、ヒルホルダ等が機能しなくなる
+T3	Argument 34 67	駐車ブレーキを解除しても、駐車ブレーキの作動状態を正しく表示しない
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T4	
+T5	Argument 136 185	シートベルトを外した状態であっても、『シートベルト着用警告』のポップアップメッセージが表示されない
+R4	RESULT Arg1:T2 Arg2:T5	

@@ -1,0 +1,37 @@
+T1	Argument 8 32	エンジンコントロールユニットのプログラムが不適切
+T2	Connective 33 35	ため
+T3	Argument 36 47	吸入空気温度が高い状態
+T4	Connective 71 72	、
+T5	Argument 72 80	異常燃焼を起こす
+T6	Connective 86 90	そのため
+T7	Argument 91 106	シリンダー内の圧力が異常に上昇
+T8	Connective 106 107	し
+T9	Argument 107 115	コンロッドが折損
+T10	Connective 115 116	、
+T11	Argument 116 118	最悪
+T12	Connective 119 121	場合
+T13	Argument 122 134	シリンダーブロックが損傷
+T14	Connective 135 136	て
+T15	Argument 136 146	エンジンオイルが漏れ
+T16	Connective 146 147	、
+T17	Argument 147 152	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R15	REASON Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T17	
+T18	Connective 47 48	で
+T19	Argument 48 71	点火時期や燃料噴射、過給圧が適正に制御ができず
+R2	RESULT Arg1:T2 Arg2:T19	
+R17	CONDITION Arg1:T18 Arg2:T3	
+R18	RESULT Arg1:T18 Arg2:T19	
+R3	REASON Arg1:T4 Arg2:T19	

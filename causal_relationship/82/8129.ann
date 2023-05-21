@@ -1,0 +1,33 @@
+T1	Argument 0 70	後部中央座席のシートベルトにおいて、チャイルドシートを確実の固定するためＡＬＲ機能（ベルト巻取り装置自動ロック機能）の内部部品の成型が不適切
+T2	Connective 71 73	ため
+T3	Argument 74 82	正しく作動しない
+T4	Connective 88 92	そのため
+T5	Argument 93 104	チャイルドシートを装着
+T6	Connective 106 107	際
+T7	Argument 108 118	ベルトがロックされず
+T8	Connective 118 119	、
+T9	Argument 119 125	固定できない
+T10	Connective 127 130	により
+T11	Argument 131 133	最悪
+T12	Connective 134 136	場合
+T13	Argument 137 141	急制動等
+T14	Connective 142 143	際
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R13	CONDITION Arg1:T14 Arg2:T13	
+T15	Argument 144 151	乗員が投げ出さ
+T16	Connective 151 152	れ
+R10	REASON Arg1:T16 Arg2:T15	
+R14	RESULT Arg1:T14 Arg2:T15	
+R15	RESULT Arg1:T12 Arg2:T15	
+R16	RESULT Arg1:T10 Arg2:T15	
+T17	Argument 152 154	怪我
+R12	RESULT Arg1:T16 Arg2:T17	

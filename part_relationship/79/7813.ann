@@ -3,16 +3,21 @@ T2	Parts 9 21	大型ハイブリッド路線バス
 T3	Parts 22 30	機械式自動変速機
 T4	Parts 40 52	自動クラッチ作動用モータ
 T5	Parts 53 60	制御プログラム
-T6	Parts 68 73	片側モータ
+T6	Parts 70 73	モータ
 T7	Parts 80 83	モータ
 T8	Parts 84 88	クラッチ
 T9	Parts 106 109	警告灯
 R1	Part-Whole Arg1:T3 Arg2:T1	
 R2	Part-Whole Arg1:T4 Arg2:T3	
-R3	Part-Whole Arg1:T5 Arg2:T4	
-R4	Oneway-Coreference Arg1:T6 Arg2:T4	
-R5	Coreference Arg1:T7 Arg2:T4	
-R7	Connect Arg1:T9 Arg2:T3	
+R3	Part-Whole Arg1:T5 Arg2:T2	
 R8	Part-Whole Arg1:T9 Arg2:T1	
-R6	Connect Arg1:T7 Arg2:T8	
-R9	Part-Whole Arg1:T8 Arg2:T3	
+R9	Part-Whole Arg1:T8 Arg2:T2	
+R10	Part-Whole Arg1:T3 Arg2:T2	
+R11	Part-Whole Arg1:T5 Arg2:T1	
+R12	Connect Arg1:T4 Arg2:T5	
+R13	Part-Whole Arg1:T8 Arg2:T1	
+R14	Part-Whole Arg1:T9 Arg2:T2	
+R4	Connect Arg1:T4 Arg2:T8	
+R5	Connect Arg1:T8 Arg2:T9	
+R6	Part-Whole Arg1:T6 Arg2:T4	
+R7	Part-Whole Arg1:T7 Arg2:T4	

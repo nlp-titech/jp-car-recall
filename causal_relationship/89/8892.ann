@@ -1,0 +1,31 @@
+T1	Argument 0 42	車軸自動昇降装置を装着したセミトレーラにおいて、設計部門から製造部門への指示が不適切
+T2	Connective 43 45	ため
+T3	Argument 46 78	車軸昇降用ベローズへ供給するエア圧の減圧弁が取り付けられていない
+T4	Connective 79 83	そのため
+T5	Argument 84 107	設計値を超えるエア圧が車軸昇降用ベローズへ供給
+T6	Connective 109 110	、
+T7	Argument 110 135	車軸昇降用ベローズブラケット溶接部に過負荷がかかり
+T8	Connective 135 136	、
+T9	Argument 136 144	当該溶接部が破断
+T10	Connective 145 146	、
+T11	Argument 146 162	車軸自動昇降装置が作動しなくなる
+T12	Argument 172 174	最悪
+T13	Connective 175 177	場合
+T14	Argument 178 208	破断した車軸昇降用ベローズブラケットが制動用エアタンクに干渉
+T15	Connective 210 211	と
+T16	Argument 212 218	損傷を与える
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T14	
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T16	
+R15	RESULT Arg1:T10 Arg2:T14	

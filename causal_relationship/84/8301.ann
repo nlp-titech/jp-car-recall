@@ -1,0 +1,13 @@
+T1	Argument 0 26	エンジンコントローラにおいて、制御プログラムが不適切
+T2	Connective 27 29	ため
+T4	Connective 70 72	場合
+T5	Argument 73 102	スタータモータでのエンジン再始動に切替える保護機能が働かず
+T6	Connective 102 103	、
+T7	Argument 103 118	自動でエンジンを再始動できない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T3	Argument 30 69	アイドリングストップ後のＩＳＧ（モーター機能付発電機）による再始動ができなかっ
+R3	CONDITION Arg1:T4 Arg2:T3	

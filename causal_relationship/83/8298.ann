@@ -1,0 +1,25 @@
+T1	Argument 10 40	エンジン制御用コンピュータ内の変速油圧制御プログラムが不適切
+T2	Connective 41 43	ため
+R3	REASON Arg1:T2 Arg2:T1	
+T6	Connective 65 69	そのため
+T7	Argument 70 81	急加速等の使用を繰返す
+T8	Connective 81 82	と
+R5	CONDITION Arg1:T8 Arg2:T7	
+T9	Argument 82 94	変速機内のクラッチが損傷
+R7	RESULT Arg1:T6 Arg2:T9	
+T10	Argument 96 103	加速不良が生じ
+T11	Connective 95 96	て
+R8	REASON Arg1:T11 Arg2:T9	
+R9	RESULT Arg1:T11 Arg2:T10	
+T12	Argument 110 117	走行不能になる
+T13	Connective 103 104	、
+R10	REASON Arg1:T13 Arg2:T10	
+R11	RESULT Arg1:T13 Arg2:T12	
+T14	Argument 104 106	最悪
+T15	Connective 107 109	場合
+R12	CONDITION Arg1:T15 Arg2:T14	
+R13	RESULT Arg1:T15 Arg2:T12	
+R14	RESULT Arg1:T8 Arg2:T9	
+T5	Argument 44 59	変速の際、油圧が過度に高くなる
+R2	RESULT Arg1:T2 Arg2:T5	
+R6	REASON Arg1:T6 Arg2:T5	

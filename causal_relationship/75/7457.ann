@@ -1,0 +1,33 @@
+T1	Argument 16 37	アクスルブラケットと車軸の溶接施工が不適切
+T2	Connective 38 40	ため
+T4	Connective 48 51	により
+T6	Argument 41 48	走行時の振動等
+T7	Argument 52 61	溶接部に亀裂が発生
+T8	Connective 69 73	そのため
+T9	Argument 74 80	溶接が剥がれ
+T10	Connective 80 81	、
+T11	Argument 81 95	そのままの状態で使用を続ける
+T12	Connective 95 96	と
+T13	Argument 97 113	車軸を固定しているＵボルトが緩み
+T14	Argument 114 116	最悪
+T15	Connective 117 119	場合
+T16	Argument 120 125	車軸がずれ
+T17	Connective 125 126	、
+T18	Argument 126 135	走行安定性を損なう
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T7	
+R5	REASON Arg1:T4 Arg2:T6	
+R6	RESULT Arg1:T4 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+T19	Connective 113 114	、
+R13	REASON Arg1:T19 Arg2:T13	
+R14	RESULT Arg1:T19 Arg2:T16	
+R15	CONDITION Arg1:T15 Arg2:T14	
+R16	RESULT Arg1:T15 Arg2:T16	
+R17	REASON Arg1:T17 Arg2:T16	
+R18	RESULT Arg1:T17 Arg2:T18	

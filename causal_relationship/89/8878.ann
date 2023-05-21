@@ -1,0 +1,29 @@
+T1	Argument 0 37	燃料タンク下側に配設された防音振用フォームパッドにおいて、吸湿検証が不十分
+T2	Connective 38 40	ため
+T3	Argument 41 45	水が浸入
+T4	Connective 47 48	と
+T5	Argument 48 62	長期間湿気を帯びたままになる
+T6	Connective 68 72	そのため
+T7	Argument 73 82	湿気が腐食性を帯び
+T8	Connective 85 87	場合
+T9	Argument 88 99	燃料タンクに腐食が発生
+T10	Argument 100 105	燃料が漏れ
+T11	Connective 105 106	て
+T12	Argument 107 109	最悪
+T13	Connective 110 112	場合
+T14	Argument 113 118	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R10	RESULT Arg1:T8 Arg2:T9	
+R11	REASON Arg1:T11 Arg2:T10	
+R12	RESULT Arg1:T11 Arg2:T14	
+R13	CONDITION Arg1:T13 Arg2:T12	
+R14	RESULT Arg1:T13 Arg2:T14	
+T15	Connective 99 100	し
+R8	REASON Arg1:T15 Arg2:T9	
+R9	RESULT Arg1:T15 Arg2:T10	

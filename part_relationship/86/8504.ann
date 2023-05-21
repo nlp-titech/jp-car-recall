@@ -4,5 +4,5 @@ T3	Parts 31 42	クラッチ制御プログラム
 T4	Parts 93 97	クラッチ
 R1	Part-Whole Arg1:T2 Arg2:T1	
 R2	Part-Whole Arg1:T3 Arg2:T2	
-R3	Connect Arg1:T4 Arg2:T3	
 R4	Part-Whole Arg1:T4 Arg2:T1	
+R3	Connect Arg1:T2 Arg2:T4	

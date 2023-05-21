@@ -1,0 +1,21 @@
+T1	Argument 19 39	ブレーキ用バキュームホースの形状が不適切
+T2	Connective 40 42	ため
+T3	Argument 43 49	配索ばらつき
+T4	Connective 49 52	により
+R1	REASON Arg1:T4 Arg2:T3	
+T5	Argument 52 68	当該ホースが折れ曲がって組み付け
+R2	REASON Arg1:T2 Arg2:T1	
+R3	RESULT Arg1:T2 Arg2:T5	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 79 83	そのため
+T7	Argument 84 92	負圧の供給が遅れ
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 94 107	早期にブレーキ警告灯が点灯
+T9	Connective 93 94	、
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+T10	Argument 113 121	警告ブザーが鳴り
+R9	RESULT Arg1:T9 Arg2:T10	
+T11	Argument 122 134	ブレーキの効きが悪くなる
+R10	RESULT Arg1:T9 Arg2:T11	

@@ -7,8 +7,9 @@ T6	Parts 104 106	配線
 T7	Parts 110 113	警音器
 R1	Part-Whole Arg1:T2 Arg2:T1	
 R2	Coreference Arg1:T2 Arg2:T3	
-T8	Parts 69 71	配線
 R3	Coreference Arg1:T3 Arg2:T5	
-R4	Coreference Arg1:T5 Arg2:T8	
-R5	Coreference Arg1:T8 Arg2:T6	
 R6	Coreference Arg1:T1 Arg2:T7	
+R4	Coreference Arg1:T5 Arg2:T6	
+T8	Parts 45 47	車台
+R5	Part-Whole Arg1:T4 Arg2:T8	
+R7	Part-Whole Arg1:T1 Arg2:T8	

@@ -1,0 +1,21 @@
+T1	Argument 5 30	クラッチスイッチにおいて、車両への取付角度が不適切
+T2	Connective 31 33	ため
+T3	Argument 34 56	可動接点用シャフトとリターンスプリングが擦れ
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 81 85	そのため
+R3	REASON Arg1:T4 Arg2:T11	
+T5	Argument 105 117	補助制動装置が作動しない
+T6	Argument 86 94	クラッチをつない
+T7	Connective 95 96	際
+T8	Argument 97 104	導通不良となり
+R4	RESULT Arg1:T4 Arg2:T8	
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T8	
+T9	Connective 104 105	、
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T5	
+T10	Connective 56 57	て
+T11	Argument 57 73	発生する摩耗粉が接点の表面に付着
+R9	REASON Arg1:T10 Arg2:T3	
+R10	RESULT Arg1:T10 Arg2:T11	

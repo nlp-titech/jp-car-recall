@@ -1,0 +1,5 @@
+T1	Argument 0 43	型式認定二輪車の出荷検査において、ブレーキ検査及び速度計指示誤差検査の合否判定が不明確
+T2	Connective 47 49	ため
+T3	Argument 50 84	道路運送車両法の保安基準にかかる適合性の確認が適切に行われていなかっ
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

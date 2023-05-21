@@ -4,7 +4,8 @@ T3	Parts 52 59	スタートボタン
 T4	Parts 106 110	メーター
 T5	Parts 136 138	車両
 R1	Part-Whole Arg1:T2 Arg2:T1	
-R2	Part-Whole Arg1:T3 Arg2:T1	
-R3	Connect Arg1:T4 Arg2:T1	
+R2	Connect Arg1:T3 Arg2:T1	
 R4	Part-Whole Arg1:T4 Arg2:T5	
 R5	Part-Whole Arg1:T1 Arg2:T5	
+R6	Part-Whole Arg1:T3 Arg2:T5	
+R3	Connect Arg1:T1 Arg2:T4	

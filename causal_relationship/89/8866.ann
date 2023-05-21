@@ -1,0 +1,40 @@
+T3	Argument 0 38	デュアルクラッチ式トランスミッションにおいて、製造時の注油装置の設定が不適切
+T4	Connective 39 41	ため
+T5	Argument 42 68	適切な量のトランスミッションオイルが注入されておらず
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 68 69	、
+T7	Argument 69 76	オイル量が多く
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T9	Argument 105 118	ブリーダーからオイルが漏れ
+T11	Argument 134 136	最悪
+T12	Connective 137 139	場合
+T13	Argument 140 150	オイルが排気管に滴下
+T14	Argument 151 156	火災に至る
+T15	Argument 161 174	トランスミッションが焼付く
+T16	Connective 176 177	で
+T17	Argument 177 184	走行不能になる
+R12	CONDITION Arg1:T12 Arg2:T11	
+R13	RESULT Arg1:T12 Arg2:T13	
+R14	RESULT Arg1:T12 Arg2:T15	
+T2	Argument 81 86	少なくなっ
+R15	RESULT Arg1:T6 Arg2:T2	
+T8	Connective 95 99	そのため
+T18	Argument 125 132	潤滑不良が発生
+T10	Connective 150 151	し
+R7	REASON Arg1:T10 Arg2:T13	
+R8	RESULT Arg1:T10 Arg2:T14	
+R9	REASON Arg1:T16 Arg2:T15	
+R10	RESULT Arg1:T16 Arg2:T17	
+T19	Connective 118 119	、
+R11	RESULT Arg1:T19 Arg2:T13	
+R16	REASON Arg1:T19 Arg2:T9	
+T20	Connective 133 134	、
+R17	REASON Arg1:T20 Arg2:T18	
+R18	RESULT Arg1:T20 Arg2:T15	
+T1	Connective 76 77	、
+R1	REASON Arg1:T1 Arg2:T7	
+R19	RESULT Arg1:T1 Arg2:T9	
+R20	REASON Arg1:T8 Arg2:T2	
+R2	RESULT Arg1:T8 Arg2:T18	

@@ -3,3 +3,5 @@ T3	Parts 56 59	ガラス
 T4	Parts 105 108	ガラス
 R1	Coreference Arg1:T1 Arg2:T3	
 R2	Coreference Arg1:T3 Arg2:T4	
+T2	Parts 25 36	下塗り剤（プライマー）
+R3	Contact Arg1:T1 Arg2:T2	
