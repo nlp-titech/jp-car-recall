@@ -1,0 +1,13 @@
+T1	Argument 0 59	大型のポールトラクタ仕様車の制動装置において、ポールトレーラー用エア供給口（カップリング）の増設に伴う改造方法が不適切
+T2	Connective 60 62	ため
+T3	Argument 63 79	ブレーキ系統の圧縮空気容量が不足
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T6	Argument 81 108	急制動時におけるトレーラーへの圧縮空気供給が一瞬遅れる
+T7	Connective 80 81	、
+R4	REASON Arg1:T7 Arg2:T3	
+R5	RESULT Arg1:T7 Arg2:T6	
+T8	Connective 109 113	そのため
+T9	Argument 114 139	保安基準第１２条（制動装置の基準）に適合しなくなる
+R6	RESULT Arg1:T8 Arg2:T9	
+R7	REASON Arg1:T8 Arg2:T6	

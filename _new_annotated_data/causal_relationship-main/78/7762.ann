@@ -1,0 +1,25 @@
+T1	Argument 0 22	クーラントリザーバーホースの組み付けが不適切
+T2	Connective 23 25	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 26 33	マフラーと接触
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 43 47	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 48 65	当該ホースがマフラーの熱により損傷
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 67 73	冷却水が漏れ
+T7	Argument 74 76	最悪
+T8	Connective 77 79	場合
+R5	CONDITION Arg1:T8 Arg2:T7	
+T9	Argument 80 88	後輪タイヤに付着
+T10	Argument 90 92	転倒
+T11	Connective 89 90	、
+R6	REASON Arg1:T11 Arg2:T9	
+R7	RESULT Arg1:T11 Arg2:T10	
+T12	Connective 66 67	、
+R8	REASON Arg1:T12 Arg2:T5	
+R9	RESULT Arg1:T12 Arg2:T6	
+R10	RESULT Arg1:T8 Arg2:T9	
+T13	Connective 73 74	、
+R11	REASON Arg1:T13 Arg2:T6	
+R12	RESULT Arg1:T13 Arg2:T9	

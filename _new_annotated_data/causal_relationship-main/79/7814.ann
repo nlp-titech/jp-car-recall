@@ -1,0 +1,13 @@
+T1	Argument 0 22	ルーフキャリアにおいて、取付部の設計が不適切
+T2	Connective 23 25	ため
+T3	Argument 26 37	風圧等への耐久性が不足
+T4	Connective 47 51	そのため
+T6	Connective 77 78	と
+T7	Argument 79 89	ルーフキャリアが脱落
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R9	RESULT Arg1:T6 Arg2:T7	
+T5	Argument 52 75	自転車等の荷物を積載し時速１００ｋｍ以上で走行
+R5	CONDITION Arg1:T6 Arg2:T5	

@@ -1,0 +1,13 @@
+T1	Argument 0 20	メインフレームにおいて、鋳造作業が不適切
+T2	Connective 21 23	ため
+T3	Argument 24 42	鋳物内部に強度を低下させる空洞が発生
+T4	Connective 52 56	そのため
+T5	Argument 57 67	過酷な走行を繰り返す
+T6	Connective 67 68	と
+T7	Argument 68 78	メインフレームが破損
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

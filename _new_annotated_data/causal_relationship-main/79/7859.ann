@@ -1,0 +1,25 @@
+T1	Argument 0 21	燃料タンクにおいて、製造公差の設定が不適切
+T2	Connective 22 24	ため
+T3	Argument 25 55	燃料タンクと車体に取り付けられているブラケットとの隙間が狭い
+T4	Connective 61 65	そのため
+T6	Connective 91 92	、
+T7	Argument 92 100	燃料タンクが破損
+T8	Connective 101 102	て
+T9	Argument 103 105	最悪
+T10	Connective 106 108	場合
+T11	Argument 109 115	燃料が漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T11	
+R9	CONDITION Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T5	Argument 66 73	前方への衝突時
+T12	Connective 73 74	に
+T13	Argument 74 90	燃料タンクが当該ブラケットと接触
+R4	CONDITION Arg1:T12 Arg2:T5	
+R5	RESULT Arg1:T12 Arg2:T13	
+R11	RESULT Arg1:T4 Arg2:T13	
+R12	REASON Arg1:T6 Arg2:T13	

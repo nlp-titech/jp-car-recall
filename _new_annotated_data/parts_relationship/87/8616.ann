@@ -1,0 +1,9 @@
+T1	Parts 28 42	ハザードフラッシャースイッチ
+T2	Parts 0 16	オーディオ／エアコン操作ユニット
+T3	Parts 47 57	ハザードフラッシャー
+T4	Parts 65 67	車両
+T5	Parts 81 91	ハザードフラッシャー
+R1	Coreference Arg1:T3 Arg2:T5	
+R2	Part-Whole Arg1:T2 Arg2:T4	
+R3	Part-Whole Arg1:T1 Arg2:T2	
+R4	Connect Arg1:T1 Arg2:T3	

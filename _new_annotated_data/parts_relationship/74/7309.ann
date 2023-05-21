@@ -1,0 +1,10 @@
+T1	Parts 0 13	バン型冷蔵冷凍セミトレーラ
+T2	Parts 18 24	ボデーレール
+T3	Parts 25 31	サイドパネル
+T4	Parts 93 99	ボデーレール
+T5	Parts 114 117	タイヤ
+R1	Contact Arg1:T2 Arg2:T3	
+R2	Coreference Arg1:T2 Arg2:T4	
+R3	Part-Whole Arg1:T5 Arg2:T1	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T3 Arg2:T1	

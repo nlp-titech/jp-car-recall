@@ -1,0 +1,21 @@
+T1	Argument 0 46	車両制御コンピュータにおいて、スマート・ブレーキ・サポート（ＳＢＳ）の制御プログラムが不適切
+T2	Connective 47 49	ため
+T3	Argument 50 83	Ｓ字路の路肩に停車した車両や大きな道路標識などを正しく認識できない
+T4	Connective 89 93	そのため
+T6	Argument 144 146	最悪
+T7	Connective 147 149	場合
+T8	Argument 150 163	衝突被害軽減ブレーキが作動
+T9	Connective 164 165	、
+T10	Argument 165 172	急制動がかかる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 94 128	衝突の可能性がないにもかかわらず障害物との接近を知らせる警報音が鳴り
+R4	RESULT Arg1:T4 Arg2:T5	
+R7	CONDITION Arg1:T7 Arg2:T6	
+R8	RESULT Arg1:T7 Arg2:T8	
+R9	REASON Arg1:T9 Arg2:T8	
+R10	RESULT Arg1:T9 Arg2:T10	
+T11	Argument 129 142	ディスプレイに警告表示が出
+R5	RESULT Arg1:T4 Arg2:T11	
+R6	RESULT Arg1:T4 Arg2:T8	

@@ -1,0 +1,21 @@
+T1	Argument 14 56	運転席エアバッグにおいて、ステアリングホイールへの取付用ブラケットの溶接作業が不適切
+T2	Connective 60 62	ため
+T5	Argument 79 82	外れる
+T6	Connective 89 93	そのため
+T7	Argument 94 96	最悪
+T8	Connective 97 99	場合
+T11	Argument 100 118	エアバッグ作動時に正常位置で展開せず
+T12	Connective 118 119	、
+T13	Argument 119 128	乗員保護性能が低下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R5	REASON Arg1:T6 Arg2:T5	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R6	RESULT Arg1:T6 Arg2:T11	
+T3	Argument 71 78	溶接点が剥がれ
+T4	Connective 78 79	て
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

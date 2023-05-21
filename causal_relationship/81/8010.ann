@@ -1,0 +1,21 @@
+T1	Argument 0 51	マイルドハイブリッド車の中電圧バッテリーコントロールモジュール（ＭＶＢＭ）において、プログラムが不適切
+T2	Connective 52 54	ため
+T3	Argument 55 76	診断トラブルコード（ＤＴＣ）データをクリア
+T4	Connective 78 79	時
+T5	Argument 80 86	エラーが発生
+T6	Argument 88 96	再起動が繰り返さ
+T7	Connective 87 88	、
+T8	Connective 104 108	そのため
+T9	Argument 109 125	スターターモーター機能が作動せず
+T10	Connective 125 126	、
+T11	Argument 126 138	エンジンの始動ができない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	
+R7	REASON Arg1:T8 Arg2:T6	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	

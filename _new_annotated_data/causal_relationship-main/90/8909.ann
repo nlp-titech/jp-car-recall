@@ -1,0 +1,13 @@
+T1	Argument 0 24	小型トラックにおいて、サイドガードの製造が不適切
+T2	Connective 25 27	ため
+T3	Argument 28 64	コーナーサイドガードとサイドガードバーを結合しているスポット溶接数が不足
+T4	Connective 74 78	そのため
+T5	Argument 79 93	そのままの状態で使用を続ける
+T6	Connective 93 94	と
+T7	Argument 95 118	コーナーサイドガードがサイドガードバーから脱落
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R4	RESULT Arg1:T4 Arg2:T7	

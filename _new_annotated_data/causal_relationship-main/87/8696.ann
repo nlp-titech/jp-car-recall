@@ -1,0 +1,13 @@
+T1	Argument 0 30	エンジンコントロールユニットにおいて、制御プログラムが不適切
+T2	Connective 31 33	ため
+T3	Argument 34 50	長時間市中走行した後に急激な加速
+T4	Connective 53 54	際
+R1	CONDITION Arg1:T4 Arg2:T3	
+T5	Argument 55 79	尿素ＳＣＲシステムが正常に作動していないと誤診断
+R2	RESULT Arg1:T4 Arg2:T5	
+R3	REASON Arg1:T2 Arg2:T1	
+R4	RESULT Arg1:T2 Arg2:T5	
+T6	Argument 81 87	警告灯が点灯
+T7	Connective 80 81	、
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	

@@ -1,0 +1,15 @@
+T1	Argument 0 25	エンジンコントロールモジュールのプログラムが不適切
+T2	Connective 26 28	ため
+T3	Argument 29 40	酸素センサーに煤が堆積
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 48 52	そのため
+T5	Argument 53 69	酸素センサーの応答時間が長くなり
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 70 81	エンジンの警告灯が点灯
+T8	Argument 84 99	排出ガスが基準を満足しなくなる
+T9	Connective 69 70	、
+R5	REASON Arg1:T9 Arg2:T5	
+R6	RESULT Arg1:T9 Arg2:T6	
+R7	RESULT Arg1:T9 Arg2:T8	

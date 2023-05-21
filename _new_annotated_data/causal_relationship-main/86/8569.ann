@@ -1,0 +1,25 @@
+T1	Argument 0 41	エアバッグコントロールユニットにおいて、コンデンサー内のマイナス端子の接着が不適切
+T2	Connective 42 44	ため
+T3	Argument 45 53	電圧が安定しない
+T4	Connective 59 63	そのため
+T5	Argument 64 75	エアバッグ警告灯が点灯
+T7	Argument 77 103	エアバッグ、シートベルトプリテンショナーが作動しない
+T8	Argument 114 140	エアバッグ、シートベルトプリテンショナーが誤って作動
+T9	Connective 141 142	、
+T10	Argument 142 144	最悪
+T11	Connective 145 147	場合
+T12	Argument 148 155	事故につながる
+T13	Argument 160 165	乗員が負傷
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T7	
+R6	RESULT Arg1:T4 Arg2:T8	
+R7	REASON Arg1:T9 Arg2:T7	
+R8	REASON Arg1:T9 Arg2:T8	
+R9	RESULT Arg1:T9 Arg2:T12	
+R10	RESULT Arg1:T9 Arg2:T13	
+R11	CONDITION Arg1:T11 Arg2:T10	
+R12	RESULT Arg1:T11 Arg2:T12	
+R13	RESULT Arg1:T11 Arg2:T13	

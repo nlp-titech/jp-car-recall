@@ -1,0 +1,17 @@
+T1	Argument 33 38	強度が不足
+T2	Connective 30 32	ため
+T3	Connective 48 52	そのため
+T4	Argument 9 29	右側フロントロアアームの鍛造加工が不適切
+R1	REASON Arg1:T2 Arg2:T4	
+R2	RESULT Arg1:T2 Arg2:T1	
+R3	REASON Arg1:T3 Arg2:T1	
+T5	Argument 53 67	当該ロアアームが走行中に破損
+R4	RESULT Arg1:T3 Arg2:T5	
+T6	Argument 69 71	最悪
+T7	Connective 72 74	場合
+T8	Argument 75 91	ハンドル操作が正常に行えなくなる
+T9	Connective 68 69	、
+R5	REASON Arg1:T9 Arg2:T5	
+R6	RESULT Arg1:T9 Arg2:T8	
+R7	CONDITION Arg1:T7 Arg2:T6	
+R8	RESULT Arg1:T7 Arg2:T8	

@@ -1,0 +1,13 @@
+T1	Argument 3 35	緊急通報装置において、車載通信モジュールの制御プログラムが不適切
+T2	Connective 36 38	ため
+T3	Argument 39 61	音声データと通信データ間の相互変換ができない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 67 71	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 72 84	緊急時に音声通話ができず
+T6	Argument 85 116	保安基準第４３条の８（事故自動緊急通報装置の基準）に適合しない
+T7	Connective 84 85	、
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	

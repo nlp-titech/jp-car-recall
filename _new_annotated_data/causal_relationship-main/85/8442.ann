@@ -1,0 +1,19 @@
+T1	Argument 0 26	高所作業車のアウトリガ装置において、配策構造が不適切
+T2	Connective 27 29	ため
+T3	Argument 30 53	配線、油圧ホースのカバーが装置内部で引っ掛かる
+T4	Connective 59 63	そのため
+T5	Argument 64 82	カバー内を通る配線、油圧ホースが屈曲
+T6	Connective 83 84	て
+T7	Argument 84 89	損傷に至り
+T8	Connective 89 90	、
+T9	Argument 90 101	高所作業装置の作動不良
+T10	Argument 102 108	油漏れが発生
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	RESULT Arg1:T8 Arg2:T10	

@@ -1,0 +1,29 @@
+T1	Argument 0 32	助手席側のエアバッグモジュールにおいて、エアバッグの縫製が不適切
+T2	Connective 33 35	ため
+T3	Argument 36 46	縫い目の剛性が不十分
+T4	Connective 53 57	そのため
+T8	Connective 74 75	際
+T9	Argument 77 83	縫い目が裂け
+T10	Connective 83 84	て
+T11	Argument 84 91	正常に展開せず
+T12	Connective 91 92	、
+T13	Argument 92 94	最悪
+T14	Connective 95 97	場合
+T15	Argument 98 109	乗員が過度の傷害を負う
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T9	
+T5	Argument 64 72	エアバッグが作動
+R5	CONDITION Arg1:T8 Arg2:T5	
+R6	RESULT Arg1:T8 Arg2:T9	
+R7	REASON Arg1:T10 Arg2:T9	
+R8	RESULT Arg1:T10 Arg2:T11	
+R9	REASON Arg1:T12 Arg2:T11	
+R10	RESULT Arg1:T12 Arg2:T15	
+R11	CONDITION Arg1:T14 Arg2:T13	
+R12	RESULT Arg1:T14 Arg2:T15	
+T6	Argument 58 61	衝突等
+T7	Connective 61 64	により
+R13	REASON Arg1:T7 Arg2:T6	
+R14	RESULT Arg1:T7 Arg2:T5	

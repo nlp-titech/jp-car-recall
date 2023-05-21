@@ -1,0 +1,43 @@
+T1	Argument 0 38	原動機において、オイルクーラアウトレットパイプ樹脂ホース部の遮熱対策が不適切
+T2	Connective 39 41	ため
+T3	Argument 42 75	１速ギヤの高回転域で先行の大型車等との車間距離が短い追従走行を行う
+T4	Connective 75 76	と
+R1	CONDITION Arg1:T4 Arg2:T3	
+T5	Argument 85 97	当該ホースの表面部が溶融
+R2	REASON Arg1:T2 Arg2:T1	
+R3	RESULT Arg1:T2 Arg2:T5	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 105 109	そのため
+T7	Argument 110 120	そのまま使用を続ける
+T8	Connective 120 121	と
+R5	CONDITION Arg1:T8 Arg2:T7	
+R6	REASON Arg1:T6 Arg2:T5	
+T9	Argument 122 131	ホースに亀裂が発生
+R7	RESULT Arg1:T6 Arg2:T9	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 133 143	エンジンオイルが漏れ
+T11	Connective 131 132	し
+R9	REASON Arg1:T11 Arg2:T9	
+R10	RESULT Arg1:T11 Arg2:T10	
+T12	Argument 159 161	発煙
+T13	Connective 143 144	、
+R11	REASON Arg1:T13 Arg2:T10	
+T15	Argument 163 165	最悪
+T16	Connective 166 168	場合
+T17	Argument 169 181	オイルが後輪タイヤに付着
+R13	CONDITION Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T17	
+T18	Argument 144 157	漏れたオイルが排気管に付着
+T19	Connective 158 159	て
+R12	RESULT Arg1:T13 Arg2:T18	
+R17	REASON Arg1:T19 Arg2:T18	
+T20	Connective 182 183	て
+T21	Argument 183 185	転倒
+R18	REASON Arg1:T20 Arg2:T17	
+R19	RESULT Arg1:T20 Arg2:T21	
+T22	Argument 77 84	排気管の輻射熱
+T23	Connective 84 85	で
+R20	REASON Arg1:T23 Arg2:T22	
+R21	RESULT Arg1:T23 Arg2:T5	
+R14	RESULT Arg1:T19 Arg2:T12	
+R15	RESULT Arg1:T13 Arg2:T17	

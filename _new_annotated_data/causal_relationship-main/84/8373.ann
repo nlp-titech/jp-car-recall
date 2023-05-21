@@ -1,0 +1,21 @@
+T1	Argument 0 36	連節バスにおいて、中央車軸用アクスルモジュレータの制御プログラムが不適切
+T2	Connective 37 39	ため
+T3	Argument 40 73	当該モジュレータ内部のエア開閉弁のバルブシート周辺温度が過大になり
+T4	Connective 73 74	、
+T5	Argument 79 90	当該バルブシートが破損
+T6	Connective 91 92	て
+T8	Connective 107 111	そのため
+T9	Argument 112 128	エアがブレーキチャンバー側に漏れ
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R8	RESULT Arg1:T8 Arg2:T9	
+T11	Connective 128 129	て
+R9	REASON Arg1:T11 Arg2:T9	
+T7	Argument 92 99	気密性が損なわ
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+T10	Argument 130 156	ブレーキ操作をしていないにもかかわらず制動力が生じる
+R10	RESULT Arg1:T11 Arg2:T10	

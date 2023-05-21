@@ -1,0 +1,5 @@
+T1	Argument 0 35	オーバーフェンダーを架装した車両において、設計時の法規適合確認が不十分
+T2	Connective 36 38	ため
+T3	Argument 39 68	車幅灯の取付位置が保安基準第３４条に定める要件を満足しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

@@ -1,0 +1,13 @@
+T1	Argument 18 56	フロントカメラユニットのプログラムにおいて、カメラのヒーター温度設定が不適切
+T2	Connective 57 59	ため
+T3	Argument 60 73	ヒーター温度が設定上限付近
+T4	Connective 73 74	時
+T5	Argument 76 89	カメラの作動が不安定になる
+T6	Connective 95 99	そのため
+T7	Argument 100 121	ドライバーアシストシステムが機能しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

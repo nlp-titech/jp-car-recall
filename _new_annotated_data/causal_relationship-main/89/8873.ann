@@ -1,0 +1,27 @@
+T1	Argument 0 43	サイドスタンドにおいて、可動部（サイドスタンドアーム）のアーム支点と脚部の溶接が不適切
+T2	Connective 44 46	ため
+T3	Argument 47 59	駐車中の車重に耐えられず
+T4	Connective 59 60	、
+T5	Argument 60 66	溶接部が破損
+T6	Connective 74 78	そのため
+T7	Argument 79 92	駐車中にサイドスタンドが外
+T8	Connective 92 93	れ
+T9	Argument 93 98	車両が転倒
+T10	Argument 103 105	最悪
+T11	Connective 106 108	場合
+T12	Argument 109 123	走行中にサイドスタンドが脱落
+T13	Connective 124 125	、
+T14	Argument 125 135	他の交通の妨げとなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R11	CONDITION Arg1:T11 Arg2:T10	
+R12	RESULT Arg1:T11 Arg2:T12	
+R13	REASON Arg1:T13 Arg2:T12	
+R14	RESULT Arg1:T13 Arg2:T14	
+R9	RESULT Arg1:T6 Arg2:T12	

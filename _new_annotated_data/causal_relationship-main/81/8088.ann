@@ -1,0 +1,13 @@
+T1	Argument 0 39	年少者用補助乗車装置（ＩＳＯＦＩＸ取付装置）において、接着剤の塗布方法が不適切
+T2	Connective 40 42	ため
+T3	Argument 43 59	取付アンカーに不要な接着剤が付着
+T4	Connective 69 73	そのため
+T5	Argument 74 104	年少者用補助乗車装置の取付けラッチと取付アンカーの嵌合が阻害
+T6	Connective 106 107	、
+T7	Argument 107 125	年少者用補助乗車装置の取付が出来ない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

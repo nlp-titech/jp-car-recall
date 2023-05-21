@@ -1,0 +1,9 @@
+T1	Argument 0 38	パーキングサポートブレーキシステムにおいて、後方カメラ制御プログラムが不適切
+T2	Connective 39 41	ため
+T3	Argument 42 56	後退時に歩行者を検知できない
+T4	Connective 62 66	そのため
+T5	Argument 67 86	衝突被害軽減ブレーキが正常に作動しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

@@ -1,0 +1,29 @@
+T1	Argument 7 43	リヤアクスル固定用Ｕボルトナット締付工程において、締付装置の設定が不適切
+T2	Connective 44 46	ため
+T3	Argument 47 55	締付トルクが不足
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 65 69	そのため
+T5	Argument 70 80	そのまま使用を続ける
+T6	Connective 80 81	と
+R3	CONDITION Arg1:T6 Arg2:T5	
+R4	REASON Arg1:T4 Arg2:T3	
+T7	Argument 88 97	リヤアクスルがずれ
+R5	RESULT Arg1:T6 Arg2:T14	
+R6	RESULT Arg1:T4 Arg2:T14	
+T8	Argument 98 100	最悪
+T9	Connective 101 103	場合
+T10	Argument 104 115	プロペラシャフトが外れ
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T10	
+T11	Connective 97 98	、
+R9	REASON Arg1:T11 Arg2:T7	
+R10	RESULT Arg1:T11 Arg2:T10	
+T12	Argument 116 124	走行できなくなる
+T13	Connective 115 116	、
+R11	REASON Arg1:T13 Arg2:T10	
+R12	RESULT Arg1:T13 Arg2:T12	
+T14	Argument 82 87	ナットが緩
+T15	Connective 87 88	み
+R13	REASON Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T7	

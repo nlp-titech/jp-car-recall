@@ -1,0 +1,19 @@
+T1	Argument 0 28	エンジン制御コンピュータにおいて、制御プログラムが不適切
+T2	Connective 29 31	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 50 67	エンジンの点火制御が適切に行われず
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 34 45	スロットルを開けて始動
+T5	Connective 47 49	場合
+R3	CONDITION Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T3	
+T8	Argument 83 91	エンストを起こす
+T9	Connective 67 68	、
+R5	REASON Arg1:T9 Arg2:T3	
+R6	RESULT Arg1:T9 Arg2:T8	
+T6	Argument 68 71	発進時
+T7	Argument 74 82	減速後の再加速時
+T10	Connective 82 83	に
+R7	CONDITION Arg1:T10 Arg2:T6	
+R8	RESULT Arg1:T10 Arg2:T8	
+R9	CONDITION Arg1:T10 Arg2:T7	

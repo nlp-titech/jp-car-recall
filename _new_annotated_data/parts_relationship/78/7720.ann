@@ -1,0 +1,9 @@
+T1	Parts 14 20	大型トラック
+T2	Parts 25 40	エンジン制御システム（ＥＭＳ）
+T3	Parts 74 89	後処理制御モジュール（ＡＣＭ）
+T4	Parts 90 97	ＳＣＲ監視機能
+T5	Parts 98 101	ＯＢＤ
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T4 Arg2:T3	
+R3	Part-Whole Arg1:T3 Arg2:T2	
+R4	Part-Whole Arg1:T5 Arg2:T3	

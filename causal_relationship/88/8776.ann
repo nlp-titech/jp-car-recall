@@ -1,0 +1,29 @@
+T1	Argument 0 30	アンダーカバーにおいて、ブラケットとの接合治具の管理が不適切
+T2	Connective 31 33	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 34 41	接合強度が不足
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 51 55	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 75 82	接合部が剥がれ
+T6	Argument 83 88	異音が発生
+T7	Connective 82 83	て
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	
+T9	Argument 90 92	最悪
+T10	Connective 93 95	場合
+T14	Argument 66 74	融雪剤による腐食
+T15	Connective 74 75	で
+R12	REASON Arg1:T15 Arg2:T14	
+R13	RESULT Arg1:T15 Arg2:T5	
+T17	Argument 96 104	ブラケットが脱落
+R14	RESULT Arg1:T7 Arg2:T17	
+T18	Argument 106 116	他の交通の妨げとなる
+T19	Connective 105 106	て
+R15	REASON Arg1:T19 Arg2:T17	
+R16	RESULT Arg1:T19 Arg2:T18	
+R7	CONDITION Arg1:T10 Arg2:T9	
+R17	RESULT Arg1:T10 Arg2:T17	
+T8	Argument 56 65	走行中の大きな振動
+R8	REASON Arg1:T15 Arg2:T8	

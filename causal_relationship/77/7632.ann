@@ -1,0 +1,26 @@
+T1	Argument 0 26	リアドライブシャフトにおいて、熱硬化処理工程が不適切
+T2	Connective 27 29	ため
+T3	Argument 30 36	耐久性が不足
+T4	Connective 46 50	そのため
+T5	Argument 58 60	応力
+T6	Connective 60 63	により
+T7	Argument 63 80	当該ドライブシャフトの接合部が破断
+T8	Connective 81 82	、
+T9	Argument 82 84	最悪
+T10	Connective 85 87	場合
+T11	Argument 88 95	走行不能になる
+T12	Argument 99 115	パーキングロックが機能しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T11	
+R9	RESULT Arg1:T8 Arg2:T12	
+R10	CONDITION Arg1:T10 Arg2:T9	
+R11	RESULT Arg1:T10 Arg2:T11	
+R12	RESULT Arg1:T10 Arg2:T12	
+T13	Argument 51 57	走行中の振動
+R13	REASON Arg1:T6 Arg2:T13	

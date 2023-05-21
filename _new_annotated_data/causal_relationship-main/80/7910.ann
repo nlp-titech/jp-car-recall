@@ -1,0 +1,25 @@
+T1	Argument 0 25	ブレーキコントロールモジュールのプログラムが不適切
+T2	Connective 26 28	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 33 56	ハイドロリックブレーキブースト機能が作動しない
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 57 61	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 62 80	低速状態で繰り返しブレーキ操作を行っ
+T6	Connective 81 84	場合等
+T7	Argument 85 106	バキュームポンプからの負圧が十分に得られず
+T8	Connective 106 107	、
+T9	Argument 107 114	倍力作用が不足
+T10	Connective 115 116	て
+T11	Argument 116 124	制動距離が延びる
+R4	CONDITION Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	RESULT Arg1:T4 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 29 31	低速
+T13	Connective 31 32	時
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T3	

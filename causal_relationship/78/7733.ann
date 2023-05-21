@@ -1,0 +1,25 @@
+T1	Argument 18 34	変速機の変速レバーの形状が不適切
+T2	Connective 35 37	ため
+T3	Argument 38 45	変速を繰り返す
+T4	Connective 45 46	と
+R1	CONDITION Arg1:T4 Arg2:T3	
+T5	Argument 46 57	変速機側のレバーが破断
+R2	RESULT Arg1:T4 Arg2:T5	
+R3	REASON Arg1:T2 Arg2:T1	
+R4	RESULT Arg1:T2 Arg2:T5	
+T6	Connective 65 69	そのため
+T7	Argument 70 84	そのままの状態で使用を続ける
+T8	Connective 84 85	と
+R5	CONDITION Arg1:T8 Arg2:T7	
+T9	Argument 85 91	変速ができず
+R6	REASON Arg1:T6 Arg2:T5	
+R7	RESULT Arg1:T6 Arg2:T9	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 92 94	最悪
+T11	Connective 95 97	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+T12	Argument 98 107	発進が出来なくなる
+R10	RESULT Arg1:T11 Arg2:T12	
+T13	Connective 91 92	、
+R11	REASON Arg1:T13 Arg2:T9	
+R12	RESULT Arg1:T13 Arg2:T12	

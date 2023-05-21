@@ -1,0 +1,19 @@
+T1	Argument 0 52	ＶＤＣ（ビークルダイナミクスコントロール）ユニットにおいて、電動パーキングブレーキ制御プログラムが不適切
+T2	Connective 53 55	ため
+T3	Argument 56 79	電動パーキングブレーキが作動中に車両振動が入る
+T4	Connective 79 80	と
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+T5	Argument 81 90	センサが過敏に反応
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+T6	Argument 92 99	走行中と誤認識
+T7	Connective 91 92	、
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	
+T8	Connective 107 111	そのため
+T9	Argument 112 118	警告灯が点灯
+T10	Argument 120 140	電動パーキングブレーキが解除できなくなる
+R7	REASON Arg1:T8 Arg2:T6	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	RESULT Arg1:T8 Arg2:T10	

@@ -1,0 +1,21 @@
+T1	Argument 0 36	可倒式後部座席において、バックレストのリリースレバーベゼルの形状が不適切
+T2	Argument 40 57	シートベルトプリテンショナーが作動
+T3	Connective 59 60	際
+T4	Argument 62 79	当該ベゼルに加わる負荷が過大となり
+R1	CONDITION Arg1:T3 Arg2:T2	
+T5	Connective 37 39	ため
+R2	REASON Arg1:T5 Arg2:T1	
+R3	RESULT Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T3 Arg2:T4	
+T6	Argument 80 90	リリースレバーが破損
+T7	Connective 79 80	、
+R5	REASON Arg1:T7 Arg2:T4	
+R6	RESULT Arg1:T7 Arg2:T6	
+T8	Argument 92 107	バックレストの固定機能が損なわ
+T9	Connective 91 92	、
+R7	REASON Arg1:T9 Arg2:T6	
+R8	RESULT Arg1:T9 Arg2:T8	
+T10	Connective 115 119	そのため
+R9	REASON Arg1:T10 Arg2:T8	
+T11	Argument 120 135	バックレストが意図せずに倒れる
+R10	RESULT Arg1:T10 Arg2:T11	

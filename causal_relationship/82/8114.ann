@@ -1,0 +1,27 @@
+T1	Argument 3 23	補助燃料タンクにおいて、車両設計が不適切
+T2	Connective 24 26	ため
+T3	Argument 26 30	走行振動
+T4	Argument 31 40	走行による燃料移動
+T7	Connective 43 44	で
+T8	Argument 44 62	水抜きドレインプラグ周辺に応力が集中
+T9	Connective 70 74	そのため
+T10	Argument 75 92	当該ドレインプラグ周辺にヒビが入り
+T11	Connective 92 93	、
+T12	Argument 93 100	燃料漏れが発生
+T5	Connective 101 102	、
+T6	Argument 102 104	最悪
+T13	Connective 105 107	場合
+T14	Argument 108 112	火災至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T8	
+R5	REASON Arg1:T7 Arg2:T4	
+R4	RESULT Arg1:T7 Arg2:T8	
+R6	REASON Arg1:T9 Arg2:T8	
+R7	RESULT Arg1:T9 Arg2:T10	
+R8	REASON Arg1:T11 Arg2:T10	
+R9	RESULT Arg1:T11 Arg2:T12	
+R10	REASON Arg1:T5 Arg2:T12	
+R11	RESULT Arg1:T5 Arg2:T14	
+R12	CONDITION Arg1:T13 Arg2:T6	
+R13	RESULT Arg1:T13 Arg2:T14	
+R3	REASON Arg1:T7 Arg2:T3	

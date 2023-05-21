@@ -1,0 +1,29 @@
+T1	Argument 0 39	センタースタンドのアームとクロスチューブの左側溶接部において、溶接指示が不適切
+T2	Connective 40 42	ため
+T3	Argument 43 54	当該溶接部の強度が不足
+T4	Connective 64 68	そのため
+T5	Argument 69 88	センタースタンドを立てる操作を繰り返す
+T6	Connective 88 89	と
+T7	Argument 90 101	当該溶接部に亀裂が生じ
+T8	Argument 102 104	最悪
+T9	Connective 101 102	、
+T10	Connective 105 107	場合
+T11	Argument 108 116	当該溶接部が破断
+T12	Connective 117 118	て
+T13	Argument 118 129	センタースタンドを操作
+T14	Connective 131 132	際
+T15	Argument 133 138	車両が転倒
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T11	
+R9	CONDITION Arg1:T10 Arg2:T8	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T15	
+R13	CONDITION Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	

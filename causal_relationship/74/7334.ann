@@ -1,0 +1,13 @@
+T1	Argument 0 43	ブレーキキャリパーにおいて、ブレーキオイルを通すバンジョーボルトの製造工程管理が不適切
+T2	Connective 44 46	ため
+T3	Argument 47 68	ブレーキオイルを通す穴がないボルトが取付け
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 79 83	そのため
+T5	Argument 84 109	ブレーキキャリパーにブレーキオイルの供給ができない
+T6	Connective 109 111	ため
+T7	Argument 112 122	ブレーキが動作しない
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

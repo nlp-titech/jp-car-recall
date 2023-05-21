@@ -1,0 +1,36 @@
+T1	Argument 21 42	トルクコンバータ組立作業者への教育が不適切
+T2	Connective 43 45	ため
+T3	Argument 46 71	出力フランジ固定ボルトへのネジロック剤塗布量が不足
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 81 85	そのため
+T6	Argument 109 123	そのままの状態で使用を続ける
+T7	Connective 123 124	と
+R3	CONDITION Arg1:T7 Arg2:T6	
+R4	REASON Arg1:T4 Arg2:T3	
+T8	Connective 108 109	、
+T9	Argument 124 132	当該ボルトが脱落
+T10	Argument 135 137	最悪
+T11	Connective 138 140	場合
+R7	CONDITION Arg1:T11 Arg2:T10	
+T12	Argument 141 148	フランジが外れ
+R8	RESULT Arg1:T11 Arg2:T12	
+T13	Argument 149 164	動力伝達することができなくなり
+T14	Argument 164 171	走行不能となる
+T15	Connective 133 134	て
+R9	REASON Arg1:T15 Arg2:T9	
+R10	RESULT Arg1:T15 Arg2:T12	
+T16	Connective 177 178	。
+R11	REASON Arg1:T16 Arg2:T13	
+R12	RESULT Arg1:T16 Arg2:T14	
+T17	Connective 148 149	、
+R13	REASON Arg1:T17 Arg2:T12	
+R14	RESULT Arg1:T17 Arg2:T13	
+R15	RESULT Arg1:T7 Arg2:T9	
+R16	RESULT Arg1:T8 Arg2:T9	
+T5	Argument 86 92	走行時の振動
+T18	Connective 92 95	により
+T19	Argument 95 103	当該ボルトが緩む
+R5	REASON Arg1:T18 Arg2:T5	
+R6	RESULT Arg1:T18 Arg2:T19	
+R17	REASON Arg1:T8 Arg2:T19	

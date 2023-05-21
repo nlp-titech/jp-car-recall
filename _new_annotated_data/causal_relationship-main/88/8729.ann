@@ -1,0 +1,17 @@
+T1	Connective 55 57	ため
+T2	Argument 58 81	触媒に付着した排出ガス中の硫黄成分が除去されず
+R1	RESULT Arg1:T1 Arg2:T2	
+T3	Argument 31 54	ＨＣ－ＳＣＲ触媒の再生用制御プログラムが不適切
+R2	REASON Arg1:T1 Arg2:T3	
+T4	Connective 91 95	そのため
+T5	Argument 96 104	触媒の性能が低下
+T6	Argument 106 129	排出ガス中の窒素酸化物の排出値が基準値を超える
+R4	RESULT Arg1:T4 Arg2:T5	
+T7	Connective 105 106	、
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	
+T8	Connective 90 91	。
+T9	Argument 81 83	堆積
+R3	REASON Arg1:T8 Arg2:T2	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	REASON Arg1:T4 Arg2:T9	

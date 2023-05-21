@@ -1,0 +1,11 @@
+T1	Argument 0 32	水素配管において、配管連結ソケット部のバックアップリング剛性不足
+T2	Connective 54 57	により
+T5	Argument 58 76	水素燃料の充填末期時の高圧・低温状態
+T6	Connective 76 77	で
+T7	Argument 77 86	一時的に漏気が発生
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 34 54	車両側充填ソケット内部Ｏリングの成型不良
+R7	REASON Arg1:T2 Arg2:T8	

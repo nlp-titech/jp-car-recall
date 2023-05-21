@@ -1,0 +1,25 @@
+T1	Argument 0 20	リアシートにおいて、設計での検証が不十分
+T2	Connective 21 23	ため
+T3	Argument 24 43	リアシート取付ボルトの締付トルクが不足
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 48 52	そのため
+T5	Argument 53 60	走行中の振動等
+T6	Connective 60 63	により
+R3	REASON Arg1:T6 Arg2:T5	
+R4	REASON Arg1:T4 Arg2:T3	
+T7	Argument 63 71	当該ボルトが緩み
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	RESULT Arg1:T4 Arg2:T7	
+T8	Argument 72 88	リアシートフレームの溶接部が破断
+T9	Connective 71 72	、
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+T10	Connective 89 90	て
+R9	REASON Arg1:T10 Arg2:T8	
+T11	Argument 91 93	最悪
+T12	Connective 94 96	場合
+R10	CONDITION Arg1:T12 Arg2:T11	
+T13	Argument 97 109	乗員が安全に着座できない
+R11	RESULT Arg1:T12 Arg2:T13	
+R12	RESULT Arg1:T10 Arg2:T13	

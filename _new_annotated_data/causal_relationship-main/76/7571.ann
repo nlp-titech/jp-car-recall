@@ -1,0 +1,17 @@
+T1	Argument 0 60	ハイブリッド車のハイブリッドパワートレインコントロールモジュール（ＨＰＣＭ）において、モータ駆動力制御プログラムが不適切
+T2	Connective 61 63	ため
+T3	Argument 64 92	エンジンコントロールユニット（ＥＣＵ）との通信異常が発生
+T4	Connective 93 94	、
+T5	Argument 94 106	フェールセーフ状態に移行
+T6	Connective 108 109	際
+T7	Argument 110 121	動力が伝達されなくなり
+T8	Connective 121 122	、
+T9	Argument 122 133	一時的に走行不能に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	RESULT Arg1:T4 Arg2:T7	

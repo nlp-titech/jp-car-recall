@@ -1,0 +1,9 @@
+T1	Argument 0 24	騒音ラベルにおいて、当該ラベルの在庫管理が不適切
+T2	Connective 25 27	ため
+T3	Argument 35 63	騒音ラベルの騒音試験条件、加速騒音値欄に誤った数値が記載
+T4	Connective 74 78	そのため
+T5	Argument 79 100	協定規則第４１号の技術的な要件に適合しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

@@ -1,0 +1,21 @@
+T1	Argument 0 39	油圧クラッチのクラッチアクチュエータにおいて、ピストン部のシールの材質が不適切
+T2	Connective 40 42	ため
+T3	Argument 43 55	クラッチフルードが漏れる
+T4	Connective 61 65	そのため
+T5	Argument 66 87	クラッチマスターシリンダー内の液面が下がり
+T6	Connective 87 88	、
+T7	Argument 88 103	クラッチフルード内に空気が混入
+T8	Argument 105 107	最悪
+T9	Connective 108 110	場合
+T10	Connective 104 105	、
+T11	Argument 111 124	クラッチ操作が行えなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T10 Arg2:T7	
+R8	RESULT Arg1:T10 Arg2:T11	
+R9	CONDITION Arg1:T9 Arg2:T8	
+R10	RESULT Arg1:T9 Arg2:T11	

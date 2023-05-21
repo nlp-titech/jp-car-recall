@@ -1,0 +1,12 @@
+T1	Argument 0 27	シートベルトリマインダ警報において、プログラムが不適切
+T2	Connective 28 30	ため
+T3	Argument 31 58	特定の条件下において運転者がベルトを着用せず車両を始動
+T4	Connective 60 61	際
+T5	Argument 62 71	視覚信号のみが表示
+T6	Argument 73 83	聴覚信号が機能しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	RESULT Arg1:T2 Arg2:T6	
+R4	CONDITION Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T4 Arg2:T5	
+R6	RESULT Arg1:T4 Arg2:T6	

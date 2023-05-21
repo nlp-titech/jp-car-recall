@@ -1,0 +1,11 @@
+T1	Argument 11 42	運転支援ＥＣＵの前方障害物衝突被害軽減用制御プログラムが不適切
+T2	Connective 43 45	ため
+T3	Argument 46 67	高速道路トンネル内の照明を前方移動物と認識
+T4	Connective 75 79	そのため
+T5	Argument 79 97	障害物との接近を知らせる警告音が鳴り
+T7	Argument 98 107	一瞬ブレーキが作動
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T7	

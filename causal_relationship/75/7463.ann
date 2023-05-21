@@ -1,0 +1,29 @@
+T1	Argument 32 54	電動パーキングブレーキケーブルの配索が不適切
+T2	Connective 55 57	ため
+T3	Argument 58 80	助手席のシートブラケットと当該ケーブルが干渉
+T4	Connective 90 94	そのため
+T5	Argument 95 99	車両振動
+T6	Connective 99 103	によって
+T7	Argument 103 116	当該ケーブルの被覆部が摩耗
+T8	Argument 118 120	最悪
+T9	Connective 121 123	場合
+T10	Connective 117 118	、
+T13	Argument 124 137	駐車中に当該ケーブルが切断
+T14	Connective 138 139	て
+T15	Argument 139 149	車両が勝手に動きだし
+T16	Argument 149 158	衝突事故等を起こす
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T10 Arg2:T7	
+R8	RESULT Arg1:T10 Arg2:T13	
+R9	CONDITION Arg1:T9 Arg2:T8	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R10	RESULT Arg1:T9 Arg2:T13	
+T11	Connective 164 165	。
+R11	REASON Arg1:T11 Arg2:T15	
+R12	RESULT Arg1:T11 Arg2:T16	

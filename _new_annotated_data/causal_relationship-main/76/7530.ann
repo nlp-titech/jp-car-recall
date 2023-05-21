@@ -1,0 +1,9 @@
+T1	Argument 0 33	燃料タンクに接続されている給油ホースにおいて、製造時の作業が不適切
+T2	Connective 34 36	ため
+T4	Connective 53 57	そのため
+T5	Argument 58 76	給油時や満タン走行時に燃料が滲み出る
+R1	REASON Arg1:T2 Arg2:T1	
+R4	RESULT Arg1:T4 Arg2:T5	
+T3	Argument 37 44	微細な穴が開い
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	

@@ -1,0 +1,9 @@
+T1	Argument 11 38	制動装置において、制御コントローラのプログラムが不適切
+T2	Connective 39 41	ため
+T3	Argument 42 72	バッテリ低電圧エラー状態のときに機能する制動装置が作動しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 78 93	安全に減速及び停止できなくなる
+T5	Connective 77 78	、
+R3	REASON Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T4	

@@ -1,0 +1,9 @@
+T1	Argument 0 20	アルミホイールにおいて、製造管理が不適切
+T2	Argument 24 53	車両を代表する記号表示がない海外仕様のホイールを誤って装着
+T3	Connective 21 23	ため
+R1	REASON Arg1:T3 Arg2:T1	
+R2	RESULT Arg1:T3 Arg2:T2	
+T4	Connective 61 65	そのため
+T5	Argument 66 89	保安基準第９条（走行装置等の基準）に適合しない
+R3	REASON Arg1:T4 Arg2:T2	
+R4	RESULT Arg1:T4 Arg2:T5	

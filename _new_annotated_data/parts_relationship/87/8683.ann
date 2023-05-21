@@ -1,0 +1,9 @@
+T1	Parts 0 14	排気ガス再循環装置（ＥＧＲ）
+T2	Parts 19 27	ＥＧＲ圧力センサ
+T3	Parts 75 78	警告灯
+T4	Parts 100 104	エンジン
+T5	Parts 63 66	センサ
+R1	Coreference Arg1:T2 Arg2:T5	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Connect Arg1:T1 Arg2:T3	
+R4	Connect Arg1:T1 Arg2:T4	

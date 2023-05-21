@@ -1,0 +1,21 @@
+T1	Argument 0 26	ルーフベッドのマットレスにおいて、材質の選定が不適切
+T2	Connective 27 29	ため
+T5	Argument 30 44	ベッドフレームが錆により腐食
+T6	Connective 52 56	そのため
+T7	Argument 57 69	当該ベッドフレームが破損
+T8	Argument 71 73	最悪
+T9	Connective 70 71	、
+T10	Connective 74 76	場合
+T11	Argument 77 90	走行中にルーフベッドが脱落
+T12	Argument 93 101	乗員が怪我を負う
+T13	Connective 91 92	て
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T11	
+R9	CONDITION Arg1:T10 Arg2:T8	
+R10	RESULT Arg1:T10 Arg2:T11	
+R12	REASON Arg1:T13 Arg2:T11	
+R13	RESULT Arg1:T13 Arg2:T12	

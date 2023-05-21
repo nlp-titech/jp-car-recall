@@ -1,0 +1,80 @@
+T1	Argument 3 34	エンジンの吸気シャッタ・バルブにおいて、制御プログラムが不適切
+T2	Connective 35 37	ため
+T3	Argument 38 51	バルブ周辺に付着する煤など
+T4	Connective 51 54	により
+R1	REASON Arg1:T4 Arg2:T3	
+R2	REASON Arg1:T2 Arg2:T1	
+T5	Argument 55 72	バルブ開度が正しく制御されなくなり
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+T6	Argument 73 83	エンジン警告灯が点灯
+T7	Connective 85 86	際
+R5	CONDITION Arg1:T7 Arg2:T6	
+T8	Argument 87 102	フェールセーフが十分に機能せず
+T9	Connective 72 73	、
+R6	REASON Arg1:T9 Arg2:T5	
+R7	RESULT Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T7 Arg2:T8	
+T10	Connective 102 103	、
+T11	Argument 103 112	バルブが全開しない
+R9	REASON Arg1:T10 Arg2:T8	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Connective 118 122	そのため
+R11	REASON Arg1:T12 Arg2:T11	
+T13	Argument 123 129	煤などの付着
+T14	Connective 129 132	により
+R12	REASON Arg1:T14 Arg2:T13	
+T15	Argument 133 144	バルブが全閉のまま固着
+T16	Connective 146 148	場合
+T17	Argument 149 156	エンジンが停止
+R13	CONDITION Arg1:T16 Arg2:T15	
+R14	RESULT Arg1:T16 Arg2:T17	
+R15	RESULT Arg1:T14 Arg2:T15	
+R16	RESULT Arg1:T12 Arg2:T17	
+T18	Argument 168 197	エンジンの排気圧センサにおいて、異常判定プログラムが不適切
+T19	Connective 198 200	ため
+T20	Argument 201 213	センサ内部への水分の浸入
+T21	Connective 213 216	により
+R17	REASON Arg1:T21 Arg2:T20	
+R18	REASON Arg1:T19 Arg2:T18	
+T22	Argument 217 227	センサの出力値がずれ
+R19	RESULT Arg1:T19 Arg2:T22	
+R20	RESULT Arg1:T21 Arg2:T22	
+T23	Argument 228 244	排出ガスが基準値を満足しなくなる
+T24	Connective 244 246	場合
+R21	CONDITION Arg1:T24 Arg2:T23	
+T25	Argument 248 255	異常判定しない
+R22	RESULT Arg1:T24 Arg2:T25	
+T26	Connective 227 228	、
+R23	REASON Arg1:T26 Arg2:T22	
+R24	RESULT Arg1:T26 Arg2:T25	
+T27	Connective 256 260	そのため
+T28	Argument 261 275	そのままの状態で使用を続ける
+T29	Connective 275 276	と
+R25	CONDITION Arg1:T29 Arg2:T28	
+T30	Argument 277 283	浸入した水分
+T31	Connective 283 286	により
+R26	REASON Arg1:T31 Arg2:T30	
+T32	Argument 286 301	排気圧センサ内の電子回路が腐食
+T33	Argument 303 305	断線
+R27	RESULT Arg1:T31 Arg2:T32	
+R28	RESULT Arg1:T29 Arg2:T32	
+T34	Connective 302 303	、
+R29	REASON Arg1:T34 Arg2:T32	
+R30	RESULT Arg1:T34 Arg2:T33	
+R31	RESULT Arg1:T27 Arg2:T32	
+R32	REASON Arg1:T27 Arg2:T25	
+T35	Connective 309 310	で
+T36	Argument 310 320	エンジン警告灯が点灯
+R33	REASON Arg1:T35 Arg2:T33	
+R34	RESULT Arg1:T35 Arg2:T36	
+T37	Argument 322 331	フェールセーフ制御
+R35	RESULT Arg1:T35 Arg2:T37	
+T38	Connective 331 334	により
+R36	REASON Arg1:T38 Arg2:T37	
+T39	Argument 334 352	アイドリングストップが作動しなくなり
+T40	Argument 353 365	変速ショックが大きくなる
+T41	Connective 352 353	、
+R37	REASON Arg1:T41 Arg2:T39	
+R38	RESULT Arg1:T41 Arg2:T40	
+R39	RESULT Arg1:T38 Arg2:T39	

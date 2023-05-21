@@ -1,0 +1,13 @@
+T1	Argument 0 35	後席の右および中央座席ベルトにおいて、車両組立工程への部品供給が不適切
+T2	Connective 36 38	ため
+T3	Argument 39 57	ベルト長さが異なるバックルが組み付け
+T4	Connective 66 70	そのため
+T5	Argument 86 99	乗員の保護性能を満足しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 71 82	衝突等による衝撃を受け
+T7	Connective 83 85	場合
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T5	

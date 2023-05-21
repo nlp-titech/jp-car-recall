@@ -1,0 +1,9 @@
+T1	Argument 15 37	エンジン制御コンピュータのプログラムが不適切
+T2	Connective 38 40	ため
+T3	Argument 41 77	ターボチャージャから故障診断結果がエンジン制御コンピュータに送信されない
+T4	Connective 86 90	そのため
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+T7	Argument 91 118	ターボチャージャが故障してもエンジン警告灯が点灯しない
+R4	RESULT Arg1:T4 Arg2:T7	

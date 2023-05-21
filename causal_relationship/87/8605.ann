@@ -1,0 +1,21 @@
+T1	Argument 0 36	左右テールライトのボディへの取付ナットにおいて、製造時の洗浄処理が不十分
+T2	Connective 37 39	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 40 57	切削オイルが完全に除去されていない
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 63 67	そのため
+T5	Argument 68 77	残留した当該オイル
+T6	Connective 77 80	により
+T7	Argument 80 92	テールライト取付部が劣化
+R3	REASON Arg1:T6 Arg2:T5	
+R4	REASON Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	RESULT Arg1:T4 Arg2:T7	
+T8	Argument 93 95	破損
+T9	Connective 92 93	し
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+T10	Connective 96 97	て
+T11	Argument 98 111	当該テールライトががたつく
+R9	REASON Arg1:T10 Arg2:T8	
+R10	RESULT Arg1:T10 Arg2:T11	

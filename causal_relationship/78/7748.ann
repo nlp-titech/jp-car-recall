@@ -1,0 +1,25 @@
+T1	Argument 0 21	オーディオアンプにおいて、回路構成が不適切
+T2	Argument 25 49	異物混入の影響を配慮できていない回路で短絡が発生
+T3	Connective 51 53	場合
+R1	CONDITION Arg1:T3 Arg2:T2	
+T4	Argument 54 66	既存の保護回路が機能せず
+R2	RESULT Arg1:T3 Arg2:T4	
+T5	Connective 22 24	ため
+R3	REASON Arg1:T5 Arg2:T1	
+R4	RESULT Arg1:T5 Arg2:T4	
+T6	Argument 67 72	基板が焼損
+T7	Connective 66 67	、
+R5	REASON Arg1:T7 Arg2:T4	
+R6	RESULT Arg1:T7 Arg2:T6	
+T8	Connective 80 84	そのため
+T9	Argument 85 93	可燃性ガスが発生
+R7	REASON Arg1:T8 Arg2:T6	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 95 97	最悪
+T11	Connective 98 100	場合
+T12	Argument 101 106	火災に至る
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T12	
+T13	Connective 94 95	、
+R11	REASON Arg1:T13 Arg2:T9	
+R12	RESULT Arg1:T13 Arg2:T12	

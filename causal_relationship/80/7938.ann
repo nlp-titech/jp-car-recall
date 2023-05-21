@@ -1,0 +1,44 @@
+T1	Argument 10 25	エンジン制御プログラムが不適切
+T2	Connective 26 28	ため
+T3	Argument 56 63	異常燃焼が発生
+T4	Argument 29 47	高負荷連続走行中に速度抑制装置が作動
+T5	Connective 55 56	で
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	CONDITION Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T3	
+T6	Argument 73 110	ヘッドカバー内油切性能（ヘッドカバー内のオイルをオイルパンに戻す）が不十分
+T7	Connective 111 113	ため
+T8	Argument 114 122	坂路を高負荷走行
+T9	Connective 124 125	と
+T10	Argument 125 167	ヘッドカバー内に滞留したオイルがブローバイガスとともにミスト状の形で燃焼室に廻り込ん
+T11	Connective 167 168	で
+T12	Argument 168 175	異常燃焼が発生
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T10	
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T10	
+R9	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T12	
+T13	Connective 183 187	そのため
+T14	Argument 188 202	走行中にコンロッドが疲労破損
+T15	Connective 203 204	て
+T16	Argument 204 211	エンジンが停止
+T17	Argument 224 230	オイルが飛散
+T18	Connective 232 234	場合
+T19	Argument 235 242	周辺部品が焼損
+T20	Connective 243 244	、
+T21	Argument 244 251	走行不能となる
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T14	
+R13	REASON Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T16	
+R16	REASON Arg1:T18 Arg2:T17	
+R17	RESULT Arg1:T18 Arg2:T19	
+R18	REASON Arg1:T20 Arg2:T19	
+R19	RESULT Arg1:T20 Arg2:T21	
+T22	Argument 213 221	コンロッドの破損
+T23	Connective 221 224	により
+R20	REASON Arg1:T23 Arg2:T22	
+R21	RESULT Arg1:T23 Arg2:T17	
+R15	RESULT Arg1:T13 Arg2:T22	

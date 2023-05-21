@@ -1,0 +1,13 @@
+T1	Argument 0 40	コンビネーションメータにおいて、メータ基板を構成する素子の生産設備の管理が不適切
+T2	Connective 41 43	ため
+T3	Argument 44 56	当該素子内部に亀裂が生じ
+T4	Connective 65 69	そのため
+T5	Argument 75 85	素子内部の回路が短絡
+T6	Connective 86 87	、
+T7	Argument 87 106	速度計や走行距離計等が表示されなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

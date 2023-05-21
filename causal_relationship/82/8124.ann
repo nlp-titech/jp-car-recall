@@ -1,0 +1,51 @@
+T1	Argument 14 59	エアサスペンション仕様の車高調整装置装備車におけるショックアブソーバのピストン構造が不適切
+T2	Connective 60 62	ため
+T3	Argument 63 65	横力
+T4	Connective 65 69	によって
+T5	Argument 69 89	ピストンとシリンダの接触面圧が過大となり
+T6	Connective 89 90	、
+T7	Argument 90 118	荷役作業時等で最大車高まで上昇させ下降する動作を繰り返す
+T8	Connective 118 119	と
+T9	Argument 120 137	ピストンリング溝部で内壁を傷つける
+T10	Connective 143 147	そのため
+T11	Argument 148 162	そのままの状態で使用を続ける
+T12	Connective 162 163	と
+T13	Argument 164 191	当該ショックアブソーバのピストンリング部に金属片が溜ま
+T14	Connective 191 192	り
+T15	Argument 192 194	固着
+T16	Connective 195 196	て
+T17	Argument 197 205	曲りや折損が発生
+T18	Argument 207 209	最悪
+T19	Connective 206 207	、
+T20	Connective 210 212	場合
+T21	Argument 213 219	タイヤと干渉
+T22	Connective 220 221	て
+T23	Argument 221 225	バースト
+T24	Argument 228 230	発熱
+T25	Connective 230 233	により
+T26	Argument 233 235	発火
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R15	REASON Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T17	
+R17	REASON Arg1:T19 Arg2:T17	
+R18	RESULT Arg1:T19 Arg2:T21	
+R19	CONDITION Arg1:T20 Arg2:T18	
+R20	RESULT Arg1:T20 Arg2:T21	
+R21	REASON Arg1:T22 Arg2:T21	
+R22	RESULT Arg1:T22 Arg2:T23	
+R23	RESULT Arg1:T22 Arg2:T24	
+R24	REASON Arg1:T25 Arg2:T24	
+R25	RESULT Arg1:T25 Arg2:T26	

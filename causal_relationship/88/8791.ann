@@ -1,0 +1,9 @@
+T1	Argument 0 67	車線逸脱防止支援装置（アクティブレーンキーピングアシスト）のマルチパーパスカメラにおいて、車速算出のためのタイヤの動的半径設定が不適切
+T2	Connective 68 70	ため
+T3	Argument 71 85	車速の算出が適切に行われない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 86 90	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 91 126	高速走行時に車線を逸脱しても警告の表示やブレーキ制御の介入が行われない
+R4	RESULT Arg1:T4 Arg2:T5	

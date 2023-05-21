@@ -1,0 +1,9 @@
+T1	Argument 0 39	大型高速路線バスにおいて、曲率半径６２０ｍｍおよび９００ｍｍの左側後写鏡を装着
+T2	Connective 47 51	そのため
+T3	Argument 52 61	路線バスとして使用
+T4	Connective 63 65	場合
+R1	CONDITION Arg1:T4 Arg2:T3	
+T5	Argument 67 80	ワンマンバス構造要件に抵触
+R2	RESULT Arg1:T4 Arg2:T5	
+R3	REASON Arg1:T2 Arg2:T1	
+R4	RESULT Arg1:T2 Arg2:T5	

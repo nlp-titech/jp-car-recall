@@ -1,0 +1,16 @@
+T1	Parts 0 6	寒冷地仕様車
+T2	Parts 7 15	ヒューズブロック
+T3	Parts 19 32	ボデー統合制御コンピュータ
+T4	Parts 37 40	制動灯
+T5	Parts 58 62	ワイパー
+T6	Parts 73 81	ヒューズブロック
+T7	Parts 89 93	内部素子
+T8	Parts 131 134	制動灯
+R1	Coreference Arg1:T2 Arg2:T6	
+R2	Coreference Arg1:T4 Arg2:T8	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T3 Arg2:T2	
+R5	Part-Whole Arg1:T4 Arg2:T1	
+R6	Connect Arg1:T3 Arg2:T4	
+R7	Part-Whole Arg1:T5 Arg2:T1	
+R8	Part-Whole Arg1:T7 Arg2:T6	

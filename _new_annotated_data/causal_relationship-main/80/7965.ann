@@ -1,0 +1,27 @@
+T1	Argument 11 28	ＡＢＳＥＣＵのソフトウェアが不適切
+T2	Connective 29 31	ため
+T3	Argument 32 48	エンジン始動時にキーを素早く回す
+T4	Connective 48 49	と
+T5	Argument 50 67	ブレーキペダル電源短絡エラーを検知
+T6	Argument 69 85	ブレ－キペダルへの電源供給を停止
+T7	Connective 68 69	て
+T8	Connective 93 97	そのため
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	
+R7	REASON Arg1:T8 Arg2:T6	
+T9	Argument 98 107	制動灯が不灯になり
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 107 161	ＡＢＳ、ＥＳＰ（横滑り防止装置）、衝突被害軽減ブレーキシステム、ＥＺＧＯ（坂道発進補助装置）が機能しなくなっ
+T11	Argument 162 179	ブレーキシステム異常の警告灯が点灯
+T12	Argument 181 199	制動装置の保安基準に不適合状態となる
+T13	Argument 202 230	ブレーキペダルを踏んでもオートクルーズが解除できなくなる
+R9	RESULT Arg1:T8 Arg2:T10	
+T14	Connective 161 162	て
+R10	REASON Arg1:T14 Arg2:T10	
+R11	RESULT Arg1:T14 Arg2:T11	
+R12	RESULT Arg1:T14 Arg2:T12	
+R13	RESULT Arg1:T14 Arg2:T13	

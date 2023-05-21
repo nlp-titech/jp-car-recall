@@ -1,0 +1,25 @@
+T1	Argument 6 30	リヤアクスルにおいて、オイルシールの材質が不適切
+T2	Connective 31 33	ため
+T3	Argument 34 43	低温環境下での使用
+T4	Connective 43 46	により
+R1	REASON Arg1:T4 Arg2:T3	
+T5	Argument 47 61	当該シールリップ部が異常摩耗
+R2	RESULT Arg1:T4 Arg2:T5	
+R3	REASON Arg1:T2 Arg2:T1	
+R4	RESULT Arg1:T2 Arg2:T5	
+T6	Connective 69 73	そのため
+T7	Argument 74 88	デファレンシャルオイルが漏れ
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 89 91	最悪
+T9	Connective 92 94	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+T10	Argument 95 112	漏れたオイルがブレーキシューに付着
+R8	RESULT Arg1:T9 Arg2:T10	
+T11	Connective 88 89	、
+R9	REASON Arg1:T11 Arg2:T7	
+R10	RESULT Arg1:T11 Arg2:T10	
+T12	Connective 113 114	て
+R11	REASON Arg1:T12 Arg2:T10	
+T13	Argument 114 120	制動力が低下
+R12	RESULT Arg1:T12 Arg2:T13	

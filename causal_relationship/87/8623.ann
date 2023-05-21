@@ -1,0 +1,25 @@
+T1	Argument 0 30	リアサスペンションボルトにおいて、製造工程での熱処理が不適切
+T2	Connective 31 33	ため
+T3	Argument 34 39	強度が不足
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 49 53	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 54 59	走行振動等
+T6	Connective 59 62	により
+R4	REASON Arg1:T6 Arg2:T5	
+T7	Argument 62 70	当該ボルトが破断
+R5	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 72 74	最悪
+T9	Connective 75 77	場合
+R6	CONDITION Arg1:T9 Arg2:T8	
+T10	Argument 78 97	リアアクスルのアライメントが保持できず
+T11	Argument 98 110	車両の走行安定性が損なわ
+T12	Connective 97 98	、
+R7	REASON Arg1:T12 Arg2:T10	
+R8	RESULT Arg1:T12 Arg2:T11	
+R9	RESULT Arg1:T9 Arg2:T10	
+T13	Connective 71 72	、
+R10	REASON Arg1:T13 Arg2:T7	
+R11	RESULT Arg1:T13 Arg2:T10	
+R12	RESULT Arg1:T4 Arg2:T7	

@@ -1,0 +1,9 @@
+T1	Parts 3 10	農耕用トラクタ
+T2	Parts 15 19	電気配線
+T3	Parts 32 36	電気配線
+T4	Parts 37 47	油圧配管固定用ステー
+T5	Parts 81 85	電気配線
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Coreference Arg1:T3 Arg2:T5	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T4 Arg2:T1	

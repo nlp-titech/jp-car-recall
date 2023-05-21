@@ -1,0 +1,9 @@
+T1	Parts 0 8	フロント緩衝装置
+T2	Parts 13 22	スイベルベアリング
+T3	Parts 69 78	スイベルベアリング
+T4	Parts 79 90	緩衝装置（ストラット）
+T5	Parts 95 99	クランプ
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T2 Arg2:T3	
+R3	Part-Whole Arg1:T4 Arg2:T3	
+R4	Contact Arg1:T4 Arg2:T5	

@@ -1,0 +1,29 @@
+T1	Argument 16 39	インジェクタ取付ボルトの締付トルク指示が不適切
+T2	Connective 40 42	ため
+T3	Argument 43 62	インジェクタガスケットのシール性が不足
+T4	Connective 72 76	そのため
+T5	Argument 77 84	燃焼ガスが漏れ
+T6	Connective 84 85	て
+T7	Argument 85 99	インジェクタ取付ボルトが緩み
+T8	Connective 99 100	、
+T9	Argument 100 108	振動が大きくなっ
+T10	Connective 108 109	て
+T11	Argument 109 117	当該ボルトが折損
+T12	Argument 119 126	エンジンが停止
+T13	Connective 127 128	て
+T14	Argument 128 136	走行できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T15	Connective 118 119	、
+R11	REASON Arg1:T15 Arg2:T11	
+R12	RESULT Arg1:T15 Arg2:T12	
+R13	REASON Arg1:T13 Arg2:T12	
+R14	RESULT Arg1:T13 Arg2:T14	

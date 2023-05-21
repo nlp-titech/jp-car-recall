@@ -1,0 +1,58 @@
+T1	Argument 20 43	ダンプ用センサハーネス固縛ステーの設計が不適切
+T2	Connective 44 46	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 47 79	ハーネスを固縛するボルトの先端と後輪用ブレーキホースの隙間が不足
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 89 93	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 94 106	走行時の後輪の跳ね上がり
+T6	Connective 106 109	により
+R4	REASON Arg1:T6 Arg2:T5	
+T7	Argument 109 127	固縛ボルト先端とブレーキホースが干渉
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	RESULT Arg1:T4 Arg2:T7	
+T8	Argument 136 146	そのまま使用を続ける
+T9	Connective 146 147	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+T10	Argument 147 157	ブレーキホースが損傷
+T11	Connective 135 136	、
+R8	REASON Arg1:T11 Arg2:T7	
+R9	RESULT Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T9 Arg2:T10	
+T12	Argument 159 161	最悪
+T13	Connective 162 164	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+T14	Argument 165 173	ブレーキ液が漏れ
+T15	Connective 173 174	て
+T16	Argument 174 180	制動力が低下
+R12	RESULT Arg1:T15 Arg2:T16	
+R13	REASON Arg1:T15 Arg2:T14	
+T17	Connective 158 159	、
+R15	REASON Arg1:T17 Arg2:T10	
+R16	RESULT Arg1:T17 Arg2:T14	
+T18	Argument 192 211	ダンプ用作動油タンクの取付位置が不適切
+T19	Connective 212 214	ため
+T20	Argument 215 253	作動油タンクをシャシフレームに取付けているボルトとブレーキ配管との隙が少ない
+R17	REASON Arg1:T19 Arg2:T18	
+R18	RESULT Arg1:T19 Arg2:T20	
+T21	Connective 259 263	そのため
+R19	REASON Arg1:T21 Arg2:T20	
+T22	Argument 264 278	そのままの状態で使用を続ける
+T23	Connective 278 279	と
+R20	CONDITION Arg1:T23 Arg2:T22	
+T24	Argument 280 292	後輪用ブレーキ配管が損傷
+T25	Argument 294 296	最悪
+T26	Connective 297 299	場合
+R21	CONDITION Arg1:T26 Arg2:T25	
+T27	Argument 300 308	ブレーキ液が漏れ
+T28	Connective 308 309	て
+T29	Argument 309 315	制動力が低下
+R23	RESULT Arg1:T28 Arg2:T29	
+R24	REASON Arg1:T28 Arg2:T27	
+R26	RESULT Arg1:T23 Arg2:T24	
+R27	RESULT Arg1:T21 Arg2:T24	
+T30	Connective 293 294	、
+R28	REASON Arg1:T30 Arg2:T24	
+R29	RESULT Arg1:T30 Arg2:T27	
+R22	RESULT Arg1:T26 Arg2:T27	
+R25	RESULT Arg1:T13 Arg2:T14	

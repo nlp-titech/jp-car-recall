@@ -1,0 +1,21 @@
+T1	Argument 0 36	ドライブシャフトのダストブーツにおいて、製造工程における温度管理が不適切
+T2	Connective 37 39	ため
+T3	Argument 40 49	接合部の強度が不足
+T4	Connective 59 63	そのため
+T5	Argument 64 69	亀裂が発生
+T6	Argument 71 85	ダストブーツ内のグリスが漏れ
+T7	Connective 70 71	、
+T8	Argument 86 88	最悪
+T9	Connective 89 91	場合
+T10	Argument 92 100	走行できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	
+T11	Connective 85 86	、
+R7	REASON Arg1:T11 Arg2:T6	
+R8	RESULT Arg1:T11 Arg2:T10	
+R9	CONDITION Arg1:T9 Arg2:T8	
+R10	RESULT Arg1:T9 Arg2:T10	

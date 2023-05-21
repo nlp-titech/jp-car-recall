@@ -1,0 +1,8 @@
+T1	Parts 0 9	マニュアルエアコン
+T2	Parts 10 17	ヒータユニット
+T4	Parts 48 59	吹出し口切替えダイヤル
+T5	Parts 95 100	デフロスタ
+T6	Parts 107 112	前面ガラス
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R3	Connect Arg1:T1 Arg2:T4	
+R4	Connect Arg1:T1 Arg2:T5	

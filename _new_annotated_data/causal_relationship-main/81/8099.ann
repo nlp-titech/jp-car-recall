@@ -1,0 +1,5 @@
+T1	Argument 0 33	前照灯又は前部霧灯において、車両製作工場での光軸検査の管理に不適切
+T2	Connective 39 40	、
+T3	Argument 40 65	前照灯又は前部霧灯の光軸が保安基準を満足していない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

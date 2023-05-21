@@ -1,0 +1,21 @@
+T1	Argument 0 32	トランスミッションオイルクーラーホースにおいて、製造工程が不適切
+T2	Connective 33 35	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 36 41	強度が不足
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 51 55	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 65 71	ホースが破れ
+T6	Argument 72 78	オイルが飛散
+R4	RESULT Arg1:T4 Arg2:T5	
+T7	Argument 86 92	火災にいたる
+T8	Connective 79 80	、
+R6	REASON Arg1:T8 Arg2:T6	
+R7	RESULT Arg1:T8 Arg2:T7	
+T9	Argument 80 82	最悪
+T10	Connective 83 85	場合
+R8	CONDITION Arg1:T10 Arg2:T9	
+R9	RESULT Arg1:T10 Arg2:T7	
+T11	Connective 71 72	、
+R5	REASON Arg1:T11 Arg2:T5	
+R10	RESULT Arg1:T11 Arg2:T6	

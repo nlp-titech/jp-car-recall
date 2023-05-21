@@ -1,0 +1,21 @@
+T1	Argument 0 23	インジェクターにおいて、製造時の溶接工程に不備
+T2	Connective 27 29	ため
+T3	Argument 30 47	インジェクターの弁が完全に閉じない
+T4	Connective 53 57	そのため
+T5	Argument 58 62	燃料過多
+T6	Connective 65 66	、
+T7	Argument 66 68	最悪
+T8	Connective 69 71	場合
+T9	Argument 72 83	エンジンの振動が大きく
+T10	Connective 85 86	、
+T11	Argument 86 98	排気ガスが基準値を超える
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	

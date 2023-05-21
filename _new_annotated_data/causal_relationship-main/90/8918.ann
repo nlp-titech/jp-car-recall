@@ -1,0 +1,9 @@
+T1	Argument 8 30	ショベル・ローダにおいて、部品の管理が不適切
+T2	Connective 31 33	ため
+T3	Argument 34 71	協定規則４３号に基づく記号（ＥＣＥマーク）が刻印されていない窓ガラスを装着
+T4	Connective 79 83	そのため
+T5	Argument 84 107	保安基準第２９条（窓ガラスの基準）に適合しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

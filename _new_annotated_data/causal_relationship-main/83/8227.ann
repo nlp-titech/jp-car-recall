@@ -1,0 +1,13 @@
+T1	Argument 18 63	車両マスター制御ユニットの自動式前照灯照射方向調整（オートレベライザ）のプログラムが不適切
+T2	Connective 64 66	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 91 108	前照灯照射方向調整装置が作動しない
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 67 90	ライティングスイッチの車幅灯点灯＋自動点灯位置
+T5	Connective 90 91	で
+R3	CONDITION Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T3	
+T6	Connective 109 113	そのため
+T7	Argument 114 140	保安基準第３２条（前照灯等）で定める要件に満足しない
+R5	REASON Arg1:T6 Arg2:T3	
+R6	RESULT Arg1:T6 Arg2:T7	

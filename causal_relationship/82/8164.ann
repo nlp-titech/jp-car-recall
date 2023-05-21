@@ -1,0 +1,15 @@
+T1	Argument 0 40	タイヤを取付けるハブボルトにおいて、急旋回や急制動の繰返し等で、当該ボルトが緩む
+T2	Connective 47 51	そのため
+T3	Argument 52 66	そのままの状態で走行を続ける
+T4	Connective 66 67	と
+T5	Argument 68 73	異音が発生
+T7	Argument 75 77	最悪
+T8	Connective 78 80	場合
+T9	Argument 81 87	タイヤが脱落
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	RESULT Arg1:T2 Arg2:T9	
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T9	

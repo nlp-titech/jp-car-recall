@@ -1,0 +1,9 @@
+T1	Parts 0 10	エアインテークホース
+T2	Parts 15 18	ホース
+T3	Parts 29 32	ＥＧＲ
+T4	Parts 48 51	ホース
+T5	Parts 76 86	エアインテークホース
+T6	Parts 101 108	エンジン警告灯
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Coreference Arg1:T2 Arg2:T4	
+R3	Coreference Arg1:T4 Arg2:T5	

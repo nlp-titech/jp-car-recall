@@ -1,0 +1,21 @@
+T1	Argument 0 35	動機に装着されている燃料パイプの取付けボルトにおいて、取付作業が不適切
+T2	Connective 36 38	ため
+T3	Argument 39 49	締め付けトルクが不足
+T4	Connective 68 71	により
+T5	Connective 59 63	そのため
+T6	Argument 63 68	走行振動等
+T7	Argument 71 79	当該ボルトが緩み
+T8	Argument 80 82	最悪
+T9	Connective 83 85	場合
+T10	Argument 86 92	燃料が漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T7	
+R5	REASON Arg1:T4 Arg2:T6	
+R6	RESULT Arg1:T4 Arg2:T7	
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T10	
+T11	Connective 79 80	、
+R9	REASON Arg1:T11 Arg2:T7	
+R10	RESULT Arg1:T11 Arg2:T10	

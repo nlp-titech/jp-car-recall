@@ -1,0 +1,13 @@
+T1	Argument 0 33	スピードメーターにおいて、ゲートウェイモジュールのプログラム不適切
+T2	Argument 37 61	走行中にキロメートル表示がマイル表示に切り替わる
+T3	Connective 34 36	ため
+T4	Connective 67 71	そのため
+T5	Argument 72 96	運転者が表示されている速度と実際の速度とを誤認識
+T6	Connective 97 98	、
+T7	Argument 98 105	速度が出過ぎる
+R1	REASON Arg1:T3 Arg2:T1	
+R2	RESULT Arg1:T3 Arg2:T2	
+R3	REASON Arg1:T4 Arg2:T2	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

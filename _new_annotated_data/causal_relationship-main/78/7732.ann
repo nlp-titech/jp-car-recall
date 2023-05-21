@@ -1,0 +1,25 @@
+T1	Argument 8 34	燃料ホースにおいて、ホースバンドの締付トルクが不適切
+T2	Connective 35 37	ため
+T3	Argument 38 47	締付時にキズがつい
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 56 60	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 61 75	そのままの状態で使用を続ける
+T6	Connective 75 76	と
+R4	CONDITION Arg1:T6 Arg2:T5	
+T7	Argument 81 92	燃料ホースに亀裂が入り
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	RESULT Arg1:T4 Arg2:T7	
+T8	Argument 77 80	振動等
+T9	Connective 80 81	で
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T7	
+T10	Argument 93 95	最悪
+T11	Connective 96 98	場合
+T12	Argument 99 105	燃料が漏れる
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T12	
+T13	Connective 92 93	、
+R11	REASON Arg1:T13 Arg2:T7	
+R12	RESULT Arg1:T13 Arg2:T12	

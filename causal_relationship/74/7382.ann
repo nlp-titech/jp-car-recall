@@ -1,0 +1,13 @@
+T1	Argument 0 26	エアインテークの空気吸入口に保護ネット等の装備がない
+T2	Connective 26 28	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 29 49	走行中に運転者席等からタバコ等を投げ捨て
+T4	Connective 50 52	場合
+R2	CONDITION Arg1:T4 Arg2:T3	
+T5	Argument 53 76	リヤホイール前部にあるエアインテークに吸い込ま
+R3	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 78 102	エアインテーク内部に蓄積された枯葉等の異物が発煙
+R4	RESULT Arg1:T2 Arg2:T5	
+T7	Connective 77 78	、
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	

@@ -1,0 +1,31 @@
+T2	Connective 28 30	ため
+T4	Connective 70 74	そのため
+T6	Argument 84 86	最悪
+T7	Connective 87 89	場合
+R5	CONDITION Arg1:T7 Arg2:T6	
+T8	Argument 90 107	エアバッグの機能が十分に発揮できず
+T9	Argument 111 125	破れた箇所から熱風が漏れ出し
+T1	Argument 0 27	運転者席側エアバッグ装置において、展開時の検証が不十分
+R1	REASON Arg1:T2 Arg2:T1	
+T12	Argument 40 62	袋体がエアバッグモジュールカバーと過大に接触
+T3	Argument 31 39	エアバッグ展開時
+T11	Connective 39 40	に
+R2	CONDITION Arg1:T11 Arg2:T3	
+R3	RESULT Arg1:T11 Arg2:T12	
+R9	RESULT Arg1:T2 Arg2:T12	
+T5	Argument 75 82	当該袋体が破損
+R4	RESULT Arg1:T4 Arg2:T5	
+R10	REASON Arg1:T4 Arg2:T12	
+T10	Argument 127 132	乗員が負傷
+R6	RESULT Arg1:T7 Arg2:T8	
+R7	RESULT Arg1:T7 Arg2:T9	
+T13	Connective 125 126	て
+R11	REASON Arg1:T13 Arg2:T9	
+R12	RESULT Arg1:T13 Arg2:T10	
+T14	Connective 107 108	、
+R13	REASON Arg1:T14 Arg2:T8	
+T15	Connective 83 84	、
+R8	REASON Arg1:T15 Arg2:T5	
+R14	RESULT Arg1:T15 Arg2:T8	
+R15	RESULT Arg1:T15 Arg2:T9	
+R17	RESULT Arg1:T14 Arg2:T10	

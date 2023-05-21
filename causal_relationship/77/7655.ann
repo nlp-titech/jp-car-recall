@@ -1,0 +1,25 @@
+T1	Argument 11 68	主変速レバーと走行用ＨＳＴ（静油圧式無段変速機）をつなぐ連結部品（主変速ロッド）の固定ボルトの締め付け作業が不適切
+T2	Connective 69 71	ため
+T3	Argument 72 80	締付トルクが不足
+T4	Connective 90 94	そのため
+T5	Argument 95 105	そのまま使用を続ける
+T6	Connective 105 106	と
+T7	Argument 106 119	主変速ロッド連結部品が外れ
+T8	Connective 119 120	、
+T9	Argument 120 122	最悪
+T10	Connective 123 125	場合
+T14	Connective 162 163	ば
+T15	Argument 164 172	車両が停止しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T15	
+R9	CONDITION Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T15	
+R14	RESULT Arg1:T14 Arg2:T15	
+T11	Argument 126 162	主変速レバーを中立位置にしても、イグニッションキーを“ＯＦＦ”にしなけれ
+R11	CONDITION Arg1:T14 Arg2:T11	

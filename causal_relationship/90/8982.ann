@@ -1,0 +1,25 @@
+T1	Argument 0 28	センターピラートリム裏側のインシュレーターの寸法が不適切
+T2	Connective 29 31	ため
+T3	Argument 32 60	当該インシュレーターが前席シートベルトテンショナーに接触
+T4	Connective 70 74	そのため
+T8	Connective 96 97	際
+T9	Argument 98 115	ガス発生装置から排出される高温ガス
+T10	Connective 115 118	により
+T11	Argument 118 129	インシュレーターに着火
+T12	Connective 130 131	、
+T13	Argument 131 133	最悪
+T14	Connective 134 136	場合
+T15	Argument 137 144	車両火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T11	
+T5	Argument 75 94	衝突時にシートベルトテンショナーが作動
+R5	CONDITION Arg1:T8 Arg2:T5	
+R6	RESULT Arg1:T8 Arg2:T11	
+R7	REASON Arg1:T10 Arg2:T9	
+R8	RESULT Arg1:T10 Arg2:T11	
+R9	REASON Arg1:T12 Arg2:T11	
+R10	RESULT Arg1:T12 Arg2:T15	
+R11	CONDITION Arg1:T14 Arg2:T13	
+R12	RESULT Arg1:T14 Arg2:T15	

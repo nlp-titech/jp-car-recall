@@ -1,0 +1,25 @@
+T1	Argument 0 50	左側ハンドルグリップをハンドルパイプに組付ける工程及びハンドルバーインナウエイトのねじ部加工が不適切
+T2	Argument 54 93	ハンドルバーインナウエイトとハンドルエンドスペーサ間に付着した接着剤が押し潰さ
+T3	Connective 51 53	ため
+T4	Connective 94 95	て
+T5	Argument 95 124	ハンドルウエイトを締結しているスクリュの締付けトルクが低下
+T6	Connective 125 126	、
+T7	Argument 126 130	走行振動
+T8	Connective 130 133	により
+T9	Argument 133 135	緩む
+T10	Connective 141 145	そのため
+T11	Argument 146 160	そのままの状態で使用を続ける
+T12	Connective 160 161	と
+T13	Argument 162 177	走行中にハンドルウエイトが脱落
+R1	REASON Arg1:T3 Arg2:T1	
+R2	RESULT Arg1:T3 Arg2:T2	
+R3	REASON Arg1:T4 Arg2:T2	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	

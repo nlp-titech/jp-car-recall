@@ -1,0 +1,38 @@
+T1	Argument 24 42	ギヤボックス内のオイル充填量が不十分
+T2	Connective 49 53	そのため
+T3	Argument 54 61	クラッチが滑り
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 62 64	最悪
+T5	Connective 65 67	場合
+R3	CONDITION Arg1:T5 Arg2:T4	
+T6	Argument 68 78	警告メッセージを表示
+T7	Argument 80 87	動力伝達が遮断
+R5	RESULT Arg1:T5 Arg2:T6	
+R6	RESULT Arg1:T5 Arg2:T7	
+T8	Argument 100 117	レース場での走行等過酷な走行を行う
+T9	Connective 117 118	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+T10	Argument 119 128	オイルが泡状になり
+R8	RESULT Arg1:T9 Arg2:T10	
+T11	Connective 61 62	、
+R4	REASON Arg1:T11 Arg2:T3	
+R9	RESULT Arg1:T11 Arg2:T6	
+R10	RESULT Arg1:T11 Arg2:T7	
+R11	RESULT Arg1:T2 Arg2:T10	
+T12	Argument 129 141	ブリーザーバルブから漏れ
+T13	Connective 128 129	、
+R12	REASON Arg1:T13 Arg2:T10	
+R13	RESULT Arg1:T13 Arg2:T12	
+T14	Argument 142 144	最悪
+T15	Connective 145 147	場合
+R14	CONDITION Arg1:T15 Arg2:T14	
+T16	Argument 148 153	火災に至る
+R15	RESULT Arg1:T15 Arg2:T16	
+T17	Connective 141 142	、
+R16	REASON Arg1:T17 Arg2:T12	
+R17	RESULT Arg1:T17 Arg2:T16	
+T18	Argument 0 21	動力伝達装置において、生産工場での装置故障
+T19	Connective 21 24	により
+R18	REASON Arg1:T19 Arg2:T18	
+R19	RESULT Arg1:T19 Arg2:T1	

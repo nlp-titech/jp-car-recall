@@ -1,0 +1,15 @@
+T1	Parts 0 4	ダンプ車
+T2	Parts 10 13	後退灯
+T3	Parts 16 29	リヤコンビネーションランプ
+T4	Parts 40 43	後退灯
+T5	Parts 44 47	制動灯
+T6	Parts 48 50	尾灯
+T7	Parts 51 56	後部反射器
+T8	Parts 59 64	方向指示器
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T1	
+R3	Coreference Arg1:T2 Arg2:T4	
+R4	Part-Whole Arg1:T5 Arg2:T3	
+R5	Part-Whole Arg1:T6 Arg2:T3	
+R6	Part-Whole Arg1:T7 Arg2:T3	
+R7	Part-Whole Arg1:T8 Arg2:T3	

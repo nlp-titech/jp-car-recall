@@ -1,0 +1,13 @@
+T1	Argument 0 63	ショベル・ローダーにおいて、点検及び車両運搬時に車台が屈折しないよう固定するフレームロックバーのリヤ側固定プレートの強度が不足
+T2	Connective 67 69	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 70 80	ロック時に操舵を行う
+T4	Connective 80 81	と
+R2	CONDITION Arg1:T4 Arg2:T3	
+T5	Argument 81 90	固定プレートが破損
+R3	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 98 102	そのため
+T7	Argument 103 128	点検及び車両運搬時の作業者の安全が確保できなくなる
+R4	RESULT Arg1:T6 Arg2:T7	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T2 Arg2:T5	

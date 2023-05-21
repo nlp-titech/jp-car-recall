@@ -1,0 +1,13 @@
+T1	Parts 0 7	ロータリ除雪車
+T2	Parts 12 19	ブレーキバルブ
+T3	Parts 30 34	ブレーキ
+T4	Parts 59 62	ペダル
+T5	Parts 70 74	ブレーキ
+T6	Parts 86 90	アクセル
+R1	Coreference Arg1:T3 Arg2:T5	
+R2	Part-Whole Arg1:T6 Arg2:T1	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T3 Arg2:T1	
+R5	Part-Whole Arg1:T4 Arg2:T1	
+R6	Contact Arg1:T2 Arg2:T4	
+R7	Connect Arg1:T2 Arg2:T3	

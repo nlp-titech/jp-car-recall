@@ -1,0 +1,17 @@
+T1	Argument 9 49	燃料ポンプサービスホールカバーと燃料ポンプフィルターフランジ間の公差設計が不適切
+T2	Connective 50 52	ため
+T3	Argument 53 65	リヤシートに荷重がかかっ
+T4	Connective 66 67	際
+T5	Argument 68 88	当該カバーが燃料ポンプの吐出パイプに干渉
+T6	Connective 96 100	そのため
+T7	Argument 101 112	当該パイプに亀裂が生じ
+T8	Connective 124 125	。
+T9	Argument 112 118	燃料が漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	

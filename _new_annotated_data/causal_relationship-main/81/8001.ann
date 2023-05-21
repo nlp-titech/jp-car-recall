@@ -1,0 +1,23 @@
+T1	Argument 0 34	エンジンの油圧を調整するリリーフバルブにおいて、組み立て作業が不適切
+T2	Connective 35 37	ため
+T3	Argument 38 53	リリーフバルブの構成部品が脱落
+T4	Argument 55 65	エンジンの油圧が低下
+T5	Connective 54 55	、
+T6	Connective 73 77	そのため
+T7	Argument 92 104	エンジンが潤滑不良となり
+T8	Argument 105 107	最悪
+T9	Connective 108 110	場合
+T10	Argument 111 118	エンジンが停止
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T4	
+R5	REASON Arg1:T6 Arg2:T4	
+R6	RESULT Arg1:T6 Arg2:T7	
+T11	Connective 104 105	、
+R7	RESULT Arg1:T11 Arg2:T10	
+R8	REASON Arg1:T11 Arg2:T7	
+R9	CONDITION Arg1:T9 Arg2:T8	
+R10	RESULT Arg1:T9 Arg2:T10	
+T12	Argument 78 86	油圧警告灯が点灯
+R11	RESULT Arg1:T6 Arg2:T12	

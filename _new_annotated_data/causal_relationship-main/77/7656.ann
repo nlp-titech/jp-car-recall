@@ -1,0 +1,35 @@
+T1	Argument 9 27	点火プラグにおいて、製造指示が不適切
+T2	Connective 28 30	ため
+T3	Argument 31 45	誤った仕様の点火プラグが装着
+T4	Connective 51 55	そのため
+T5	Argument 56 67	正常な燃焼が維持できず
+T6	Connective 82 83	。
+T7	Argument 67 74	排気ガスが悪化
+T8	Argument 94 97	熱負荷
+T9	Connective 97 100	により
+T10	Argument 100 108	当該プラグが破損
+T11	Argument 110 117	燃焼室内に脱落
+T12	Connective 121 122	で
+T13	Argument 122 129	エンジンを損傷
+T14	Connective 131 132	、
+T15	Argument 132 134	最悪
+T16	Connective 135 137	場合
+T17	Argument 138 149	エンジンストールが発生
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T18	Connective 109 110	て
+R10	REASON Arg1:T18 Arg2:T10	
+R11	RESULT Arg1:T18 Arg2:T11	
+R12	REASON Arg1:T12 Arg2:T11	
+R13	RESULT Arg1:T12 Arg2:T13	
+R14	REASON Arg1:T14 Arg2:T13	
+R15	RESULT Arg1:T14 Arg2:T17	
+R16	CONDITION Arg1:T16 Arg2:T15	
+R17	RESULT Arg1:T16 Arg2:T17	
+R5	REASON Arg1:T6 Arg2:T5	
+R7	RESULT Arg1:T6 Arg2:T8	
+R8	REASON Arg1:T9 Arg2:T8	
+R9	RESULT Arg1:T9 Arg2:T10	

@@ -1,0 +1,25 @@
+T1	Argument 0 29	エンジン制御用コンピュータにおいて、制御プログラムが不適切
+T2	Connective 30 32	ため
+T3	Argument 33 51	始動直後にエンジンを停止する等の操作
+T4	Connective 51 54	により
+T5	Argument 55 71	エンジンに逆回転方向の力が加わり
+T6	Argument 72 88	バキュームポンプ内の潤滑油が逆流
+T7	Argument 90 97	構成部品が損傷
+T8	Connective 89 90	て
+R1	REASON Arg1:T8 Arg2:T6	
+R2	RESULT Arg1:T8 Arg2:T7	
+T9	Connective 71 72	、
+R3	REASON Arg1:T9 Arg2:T5	
+R4	RESULT Arg1:T9 Arg2:T6	
+R5	REASON Arg1:T4 Arg2:T3	
+R6	RESULT Arg1:T4 Arg2:T5	
+R7	REASON Arg1:T2 Arg2:T1	
+R8	RESULT Arg1:T2 Arg2:T5	
+T10	Connective 105 109	そのため
+R9	REASON Arg1:T10 Arg2:T7	
+T11	Argument 110 118	倍力作用が損なわ
+T12	Connective 119 120	て
+T13	Argument 120 130	制動停止距離が伸びる
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	

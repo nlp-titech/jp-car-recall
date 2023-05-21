@@ -1,0 +1,29 @@
+T1	Argument 0 25	エンジンルームのラバーシールにおいて、耐熱性が不足
+T2	Connective 29 31	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 53 66	ラバーシールが熱により硬化
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 32 51	ターボチャージャーが繰り返し高温になる
+T5	Connective 51 52	と
+R3	CONDITION Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T3	
+T6	Connective 74 78	そのため
+R5	REASON Arg1:T6 Arg2:T3	
+T7	Argument 79 88	ラバーシールが割れ
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 89 94	破片が脱落
+T9	Connective 88 89	、
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+T10	Connective 95 96	、
+T11	Argument 96 108	エンジンの高温部位に接触
+R9	REASON Arg1:T10 Arg2:T8	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Connective 109 110	て
+T13	Argument 117 122	火災に至る
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+T14	Argument 111 113	最悪
+T15	Connective 114 116	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T13	

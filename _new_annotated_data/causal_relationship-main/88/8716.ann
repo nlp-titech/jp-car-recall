@@ -1,0 +1,9 @@
+T1	Connective 57 61	そのため
+T2	Argument 62 84	原動機が作動中に著しい異音または振動を生じる
+R1	RESULT Arg1:T1 Arg2:T2	
+T3	Argument 8 43	原動機のマウントボルトにおいて、当該ボルトが設定トルクより低い値で締結
+T4	Connective 48 49	、
+T5	Argument 49 51	緩む
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	REASON Arg1:T1 Arg2:T5	

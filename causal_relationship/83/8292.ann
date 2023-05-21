@@ -1,0 +1,25 @@
+T1	Argument 0 43	燃料デリバリーモジュールにおいて、燃料ゲージセンサーとブリーザーパイプとの間隔が不適切
+T2	Connective 44 46	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 47 68	燃料ゲージセンサーが当該パイプに引っかかる
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 74 78	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 79 98	実際の燃料量と燃料計の指示値が一致せず
+T6	Connective 98 99	、
+T7	Argument 99 106	燃料が多く表示
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 109 123	そのままの状態で走行を続ける
+T9	Connective 123 124	と
+R7	CONDITION Arg1:T9 Arg2:T8	
+T10	Argument 125 129	燃料切れ
+R8	RESULT Arg1:T9 Arg2:T10	
+T11	Connective 108 109	、
+R9	REASON Arg1:T11 Arg2:T7	
+T12	Argument 132 139	走行不能となる
+T13	Connective 129 132	により
+R10	RESULT Arg1:T11 Arg2:T10	
+R11	REASON Arg1:T13 Arg2:T10	
+R12	RESULT Arg1:T13 Arg2:T12	

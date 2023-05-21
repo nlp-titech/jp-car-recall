@@ -1,0 +1,9 @@
+T2	Connective 34 37	により
+T3	Argument 38 60	光軸の設定値が不適切な状態で検査、調整を行っ
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 61 63	ため
+T5	Argument 64 79	光軸が保安基準を満足していない
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T1	Argument 0 30	前照灯において、車両生産工場の光軸検査設備内で通信不良が発生
+R1	REASON Arg1:T2 Arg2:T1	

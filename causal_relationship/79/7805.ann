@@ -1,0 +1,17 @@
+T1	Argument 13 37	燃料ポンプにおいて、車両搭載時の組み付けが不適切
+T3	Argument 41 56	リターンノズルに引張力がかかっ
+T6	Connective 96 97	、
+T7	Argument 97 103	燃料が漏れる
+R6	RESULT Arg1:T6 Arg2:T7	
+T2	Connective 38 40	ため
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 65 69	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 70 78	使用過程での負荷
+T8	Connective 78 81	により
+T9	Argument 81 96	当該リターンノズルに亀裂が生じ
+R4	RESULT Arg1:T4 Arg2:T9	
+R5	REASON Arg1:T8 Arg2:T5	
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	REASON Arg1:T6 Arg2:T9	

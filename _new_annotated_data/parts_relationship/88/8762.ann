@@ -1,0 +1,17 @@
+T1	Parts 0 9	ホイール・クレーン
+T2	Parts 10 14	リターダ
+T3	Parts 19 27	プロペラシャフト
+T4	Parts 32 36	フランジ
+T5	Parts 41 44	ナット
+T6	Parts 85 88	ナット
+T7	Parts 90 94	フランジ
+T8	Parts 117 121	リターダ
+R1	Coreference Arg1:T2 Arg2:T8	
+R2	Coreference Arg1:T4 Arg2:T7	
+R3	Coreference Arg1:T5 Arg2:T6	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Part-Whole Arg1:T3 Arg2:T1	
+R6	Contact Arg1:T2 Arg2:T3	
+R7	Contact Arg1:T2 Arg2:T4	
+R8	Contact Arg1:T3 Arg2:T4	
+R9	Contact Arg1:T4 Arg2:T5	

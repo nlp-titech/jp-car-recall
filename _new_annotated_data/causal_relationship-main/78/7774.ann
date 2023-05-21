@@ -1,0 +1,21 @@
+T1	Argument 11 43	前輪用ブレーキキャリパーのスライドピンにグリスが塗布されていない
+T2	Connective 49 53	そのため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 54 68	そのままの状態で使用を続ける
+T4	Connective 68 69	と
+R2	CONDITION Arg1:T4 Arg2:T3	
+T5	Argument 70 94	ブレーキ操作後にアウターパッドが戻りきらなくなっ
+T6	Connective 94 95	て
+T7	Argument 95 100	著しく摩耗
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 102 104	最悪
+T9	Connective 105 107	場合
+T10	Argument 108 118	アウターパッドが脱落
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T10	
+T11	Connective 101 102	、
+R9	REASON Arg1:T11 Arg2:T7	
+R10	RESULT Arg1:T11 Arg2:T10	

@@ -1,0 +1,17 @@
+T1	Argument 0 41	前列シートフレームにおいて、最前部及び最後部の停止位置にあるブラケットの強度が不足
+T2	Connective 45 47	ため
+T3	Argument 48 69	手動でシートを最前部又最後部に強い力で移動
+T4	Connective 71 73	場合
+T5	Argument 74 82	ブラケットが変形
+T6	Connective 90 94	そのため
+T7	Argument 95 104	ロック位置がずれる
+T8	Connective 105 108	により
+T9	Argument 109 125	シートを正しい位置で固定出来ない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	

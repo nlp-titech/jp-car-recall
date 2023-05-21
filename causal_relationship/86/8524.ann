@@ -1,0 +1,43 @@
+T1	Argument 9 43	原動機下部に配索された電気配線において、配線を保護する保護材が不適切
+T2	Connective 44 46	ため
+T3	Argument 47 74	走行時に巻き上げられた砂塵が保護材の隙間から内部に侵入
+T4	Connective 82 86	そのため
+T5	Argument 86 96	そのまま使用を続ける
+T6	Connective 96 97	と
+T7	Argument 98 117	配線がエンジンの振動等により砂塵と擦れ
+T8	Connective 117 118	て
+T9	Argument 118 120	摩耗
+T10	Connective 124 125	、
+T11	Argument 125 130	断線に至る
+T12	Connective 130 131	と
+T13	Argument 132 145	充電電圧低下のエラーを発報
+T14	Argument 152 170	エンジン停止後の再始動ができなくなり
+T15	Connective 170 171	、
+T16	Argument 171 173	最悪
+T17	Connective 174 176	場合
+T18	Argument 177 188	配線と他の金属部が接触
+T19	Connective 189 190	て
+T20	Argument 190 192	発熱
+T21	Connective 193 194	、
+T22	Argument 194 199	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R5	REASON Arg1:T4 Arg2:T3	
+R6	RESULT Arg1:T4 Arg2:T7	
+R7	CONDITION Arg1:T6 Arg2:T5	
+R8	RESULT Arg1:T6 Arg2:T7	
+R9	REASON Arg1:T8 Arg2:T7	
+R10	RESULT Arg1:T8 Arg2:T9	
+R11	REASON Arg1:T10 Arg2:T9	
+R12	RESULT Arg1:T10 Arg2:T11	
+R13	REASON Arg1:T12 Arg2:T11	
+R14	RESULT Arg1:T12 Arg2:T13	
+R15	RESULT Arg1:T12 Arg2:T14	
+R16	REASON Arg1:T15 Arg2:T14	
+R17	RESULT Arg1:T15 Arg2:T18	
+R18	CONDITION Arg1:T17 Arg2:T16	
+R19	RESULT Arg1:T17 Arg2:T18	
+R20	REASON Arg1:T19 Arg2:T18	
+R21	RESULT Arg1:T19 Arg2:T20	
+R22	REASON Arg1:T21 Arg2:T20	
+R23	RESULT Arg1:T21 Arg2:T22	

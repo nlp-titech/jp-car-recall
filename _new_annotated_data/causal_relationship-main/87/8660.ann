@@ -1,0 +1,13 @@
+T1	Argument 0 27	後部反射器において、反射鏡を成型する金型の管理が不適切
+T2	Connective 28 30	ため
+T3	Argument 31 41	反射鏡面に凹凸ができ
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 50 54	そのため
+T5	Argument 55 61	反射光が散乱
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 62 63	て
+T7	Argument 63 87	保安基準第３８条（後部反射器の基準）に適合しない
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

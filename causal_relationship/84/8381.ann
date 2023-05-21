@@ -1,0 +1,25 @@
+T1	Argument 0 21	ラジエターホースの材料及び加工条件が不適切
+T2	Connective 22 24	ため
+T3	Argument 25 37	当該ホースの耐久性が不足
+T4	Connective 47 51	そのため
+T5	Argument 52 58	冷却水の圧力
+T6	Connective 58 61	により
+T7	Argument 61 69	当該ホースが損傷
+T8	Connective 70 71	て
+T9	Argument 71 77	冷却水が漏れ
+T10	Connective 77 78	、
+T11	Argument 78 80	最悪
+T12	Connective 81 83	場合
+T13	Argument 84 94	オーバーヒートに至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	

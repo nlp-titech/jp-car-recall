@@ -1,0 +1,9 @@
+T1	Parts 0 9	ブレーキキャリパー
+T2	Parts 10 15	固定ボルト
+T3	Parts 64 67	ボルト
+T4	Parts 82 85	ボルト
+T5	Parts 95 99	キャリパ
+R1	Coreference Arg1:T2 Arg2:T3	
+R2	Coreference Arg1:T3 Arg2:T4	
+R3	Coreference Arg1:T1 Arg2:T5	
+R4	Contact Arg1:T1 Arg2:T2	

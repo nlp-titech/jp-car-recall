@@ -1,0 +1,20 @@
+T1	Argument 19 49	パワーステアリングモーター製造ラインでモーターの設定が不適切
+T2	Connective 50 52	ため
+T3	Argument 53 67	正規の設定と異なる状態で製造
+T4	Connective 76 80	そのため
+T5	Argument 81 97	低速域でステアリングを大きく回し
+T6	Connective 98 100	場合
+T7	Argument 102 108	警告灯が点灯
+T8	Argument 110 130	パワーステアリングのアシストが機能が停止
+T9	Connective 131 132	、
+T10	Argument 132 145	ステアリングの操舵力が増大
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	RESULT Arg1:T4 Arg2:T8	
+R6	CONDITION Arg1:T6 Arg2:T5	
+R7	RESULT Arg1:T6 Arg2:T7	
+R8	RESULT Arg1:T6 Arg2:T8	
+R9	REASON Arg1:T9 Arg2:T8	
+R10	RESULT Arg1:T9 Arg2:T10	

@@ -1,0 +1,17 @@
+T1	Argument 0 46	運転席足元のトリムカバーに格納されているヒューズボード及びハーネスにおいて、取り付けが不適切
+T2	Connective 47 49	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 50 65	トリムカバーを内側から押し出し
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 74 78	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 79 102	浮き上がったトリムカバーがアクセルペダルに接触
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 104 106	最悪
+T7	Connective 107 109	場合
+R5	CONDITION Arg1:T7 Arg2:T6	
+T8	Argument 110 124	アクセルペダルが戻らなくなる
+R6	RESULT Arg1:T7 Arg2:T8	
+T9	Connective 103 104	、
+R7	REASON Arg1:T9 Arg2:T5	
+R8	RESULT Arg1:T9 Arg2:T8	

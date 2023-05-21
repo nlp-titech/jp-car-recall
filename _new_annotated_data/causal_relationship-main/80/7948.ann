@@ -1,0 +1,25 @@
+T1	Argument 6 31	ヒューズボックスにおいて、ヒューズ挿入位置が間違っ
+T2	Connective 40 44	そのため
+T3	Argument 45 73	ヒューズの規定容量と作業装置機器の定格容量があっていない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T6	Argument 79 103	機器での電流値が定格容量を超えてもヒューズが切れ
+T7	Connective 78 79	、
+R3	REASON Arg1:T7 Arg2:T3	
+T10	Connective 110 111	、
+T11	Argument 111 113	最悪
+T12	Connective 114 116	場合
+T13	Argument 117 122	機器が発火
+T14	Connective 123 124	、
+T15	Argument 124 129	火災に至る
+R9	CONDITION Arg1:T12 Arg2:T11	
+R10	REASON Arg1:T10 Arg2:T4	
+R11	RESULT Arg1:T10 Arg2:T13	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R4	RESULT Arg1:T7 Arg2:T6	
+T4	Argument 104 109	機器が破損
+T5	Connective 103 104	ず
+R5	REASON Arg1:T5 Arg2:T6	
+R6	RESULT Arg1:T5 Arg2:T4	

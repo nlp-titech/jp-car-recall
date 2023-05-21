@@ -1,0 +1,5 @@
+T1	Argument 0 31	パワートレーンコントロールユニットにおいて、プログラムが不適切
+T2	Connective 32 34	ため
+T3	Argument 35 72	窒素酸化物（ＮＯｘ）排出値がメーカーが設定した排ガス基準値を満足しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

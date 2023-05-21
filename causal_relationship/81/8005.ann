@@ -1,0 +1,9 @@
+T1	Argument 35 62	エンジン制御システム（ＥＭＳ）のプログラム設定が不適切
+T2	Connective 63 65	ため
+T3	Argument 66 114	燃料システムの燃料圧力制御の監視および吸気過給のブースト圧力センサ故障監視機能で診断が行われない
+T4	Connective 120 124	そのため
+T5	Argument 125 141	故障を知らせる警告灯が点灯しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

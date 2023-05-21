@@ -1,0 +1,27 @@
+T1	Argument 0 49	マイルドハイブリッド電気自動車（ＭＨＥＶ）のＤＣ－ＤＣコンバーターにおいて、制御プログラムが不適切
+T2	Connective 50 52	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 74 91	トランジスタが適切に切り替わらない
+R2	RESULT Arg1:T2 Arg2:T3	
+T6	Connective 97 101	そのため
+R5	REASON Arg1:T6 Arg2:T3	
+T7	Argument 102 111	トランジスタが短絡
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 113 128	メーターにバッテリー警告が点灯
+T9	Connective 112 113	、
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+T10	Argument 131 141	そのまま使用を続ける
+T11	Connective 141 142	と
+T12	Argument 143 145	最悪
+T13	Connective 146 148	場合
+T14	Argument 149 154	火災に至る
+R9	CONDITION Arg1:T13 Arg2:T12	
+R10	RESULT Arg1:T13 Arg2:T14	
+R11	CONDITION Arg1:T11 Arg2:T10	
+R12	RESULT Arg1:T11 Arg2:T14	
+R13	RESULT Arg1:T9 Arg2:T14	
+T4	Argument 53 73	ＤＣ－ＤＣコンバーター内の電気負荷発生時
+T5	Connective 73 74	に
+R3	CONDITION Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T3	

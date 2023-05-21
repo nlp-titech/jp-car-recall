@@ -1,0 +1,23 @@
+T1	Argument 0 25	フロントシート組立て工場において、工程管理が不適切
+T2	Connective 26 28	ため
+T3	Argument 29 61	シートベルトキャッチを固定するボルトが正しく取り付けられていない
+T4	Connective 67 71	そのため
+T5	Argument 72 83	当該部分から異音が発生
+T6	Argument 85 87	最悪
+T9	Connective 88 90	場合
+T11	Argument 98 120	シートベルトキャッチがシートフレームから外れ
+T12	Connective 120 121	、
+T13	Argument 121 126	乗員が怪我
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R7	CONDITION Arg1:T9 Arg2:T6	
+R8	RESULT Arg1:T9 Arg2:T11	
+R12	REASON Arg1:T12 Arg2:T11	
+R13	RESULT Arg1:T12 Arg2:T13	
+R5	RESULT Arg1:T4 Arg2:T11	
+T7	Argument 91 95	衝突事故
+T8	Connective 96 97	際
+R6	CONDITION Arg1:T8 Arg2:T7	
+R9	RESULT Arg1:T8 Arg2:T11	

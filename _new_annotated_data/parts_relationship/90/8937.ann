@@ -1,0 +1,24 @@
+T1	Parts 0 8	大・中型トラック
+T2	Parts 13 22	ステアリングコラム
+T3	Parts 29 32	ボルト
+T4	Parts 33 36	ナット
+T5	Parts 50 53	ボルト
+T6	Parts 54 57	ナット
+T7	Parts 100 103	ボルト
+T8	Parts 104 107	ナット
+T9	Parts 111 120	ステアリングコラム
+T10	Parts 135 138	ボルト
+T11	Parts 139 142	ナット
+R2	Contact Arg1:T2 Arg2:T3	
+R3	Contact Arg1:T3 Arg2:T4	
+R4	Contact Arg1:T2 Arg2:T4	
+R5	Coreference Arg1:T3 Arg2:T5	
+R6	Coreference Arg1:T4 Arg2:T6	
+R7	Coreference Arg1:T5 Arg2:T7	
+R8	Coreference Arg1:T6 Arg2:T8	
+R9	Coreference Arg1:T2 Arg2:T9	
+R10	Coreference Arg1:T7 Arg2:T10	
+R11	Coreference Arg1:T8 Arg2:T11	
+T12	Parts 151 157	ステアリング
+R1	Part-Whole Arg1:T12 Arg2:T1	
+R12	Part-Whole Arg1:T9 Arg2:T12	

@@ -1,0 +1,13 @@
+T2	Connective 25 27	ため
+T3	Argument 28 43	当該ネジの先端が燃料配管に干渉
+T1	Argument 9 24	床板固定ネジの締結位置が不適切
+T4	Connective 51 55	そのため
+T5	Argument 56 63	燃料配管が損傷
+T6	Connective 64 65	、
+T7	Argument 65 71	燃料が漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

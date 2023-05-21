@@ -1,0 +1,9 @@
+T1	Parts 0 13	アイドリングストップ搭載車
+T2	Parts 18 25	制御プログラム
+T3	Parts 31 35	バッテリ
+T4	Parts 58 62	バッテリ
+T5	Parts 92 96	バッテリ
+R1	Coreference Arg1:T3 Arg2:T4	
+R2	Coreference Arg1:T4 Arg2:T5	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T3 Arg2:T1	

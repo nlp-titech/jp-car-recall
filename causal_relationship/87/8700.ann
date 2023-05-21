@@ -1,0 +1,58 @@
+T1	Argument 10 31	電気配線において、配線の取回し指示が不適切
+T2	Connective 32 34	ため
+T3	Argument 35 44	配線がカバーと接触
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 46 50	走行振動
+T5	Connective 50 53	により
+T6	Argument 53 58	被覆が損傷
+R3	REASON Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T6	
+T7	Connective 45 46	、
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T6	
+T8	Connective 67 71	そのため
+R7	REASON Arg1:T8 Arg2:T6	
+T9	Argument 72 83	損傷部でショートが発生
+T10	Argument 84 86	焼損
+R8	RESULT Arg1:T8 Arg2:T9	
+T11	Connective 87 88	、
+R10	REASON Arg1:T11 Arg2:T10	
+T12	Argument 93 98	火災に至る
+R11	RESULT Arg1:T11 Arg2:T12	
+T13	Argument 88 90	最悪
+T14	Connective 91 93	場合
+R12	CONDITION Arg1:T14 Arg2:T13	
+R13	RESULT Arg1:T14 Arg2:T12	
+T15	Connective 83 84	、
+R9	REASON Arg1:T15 Arg2:T9	
+R14	RESULT Arg1:T15 Arg2:T10	
+T16	Argument 115 136	電気配線において、配線の取回し指示が不適切
+T17	Connective 137 139	ため
+T18	Argument 140 158	スタータモータ配線とアース配線が接触
+R15	REASON Arg1:T17 Arg2:T16	
+T19	Argument 160 164	走行振動
+T20	Connective 164 167	により
+R16	RESULT Arg1:T17 Arg2:T18	
+T21	Argument 167 172	被覆が損傷
+R17	REASON Arg1:T20 Arg2:T19	
+R18	RESULT Arg1:T20 Arg2:T21	
+T22	Connective 159 160	、
+R19	REASON Arg1:T22 Arg2:T18	
+R20	RESULT Arg1:T22 Arg2:T21	
+T23	Connective 181 185	そのため
+R21	REASON Arg1:T23 Arg2:T21	
+T24	Argument 186 197	損傷部でショートが発生
+T25	Argument 198 200	焼損
+T26	Connective 197 198	、
+R22	RESULT Arg1:T23 Arg2:T24	
+T27	Argument 202 204	最悪
+T28	Connective 205 207	場合
+T29	Argument 207 212	火災に至る
+R23	CONDITION Arg1:T28 Arg2:T27	
+R24	RESULT Arg1:T28 Arg2:T29	
+R25	REASON Arg1:T26 Arg2:T24	
+R26	RESULT Arg1:T26 Arg2:T25	
+T30	Connective 201 202	、
+R27	REASON Arg1:T30 Arg2:T25	
+R28	RESULT Arg1:T30 Arg2:T29	

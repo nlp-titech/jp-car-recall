@@ -1,0 +1,13 @@
+T2	Connective 53 55	ため
+T5	Argument 56 83	アクセルレバーの操作時にアクセラレータの動作不良が生じ
+R4	RESULT Arg1:T2 Arg2:T5	
+T6	Argument 84 100	アクセルレバーを放しても減速せず
+T7	Argument 100 106	走行し続ける
+T8	Connective 112 113	。
+R5	REASON Arg1:T8 Arg2:T6	
+R6	RESULT Arg1:T8 Arg2:T7	
+T9	Connective 83 84	、
+R7	REASON Arg1:T9 Arg2:T5	
+R8	RESULT Arg1:T9 Arg2:T6	
+T1	Argument 38 52	アクセラレータの組立が不適切
+R3	REASON Arg1:T2 Arg2:T1	

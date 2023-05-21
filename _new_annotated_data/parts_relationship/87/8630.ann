@@ -1,0 +1,6 @@
+T2	Parts 23 33	スペアタイヤクランプ
+T3	Parts 93 100	締め付けボルト
+T4	Parts 104 110	スペアタイヤ
+R1	Contact Arg1:T2 Arg2:T3	
+R2	Contact Arg1:T3 Arg2:T4	
+R3	Contact Arg1:T2 Arg2:T4	

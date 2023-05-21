@@ -1,0 +1,24 @@
+T1	Argument 0 27	ルーフのアンテナカバーにおいて、製造工程の管理が不適切
+T2	Connective 28 30	ため
+T3	Argument 31 44	車両組付け時にルーフが歪む
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 50 54	そのため
+T5	Argument 55 68	アンテナカバーの密着が不足
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 70 81	隙間より水が車内へ侵入
+T7	Connective 69 70	、
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	
+T8	Argument 83 85	最悪
+T9	Connective 86 88	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+T10	Connective 82 83	、
+R8	REASON Arg1:T10 Arg2:T6	
+T11	Argument 89 107	メーターパネルへ緊急通報の警告が表示
+T13	Argument 110 119	緊急通報が行えない
+R9	RESULT Arg1:T9 Arg2:T11	
+R12	RESULT Arg1:T10 Arg2:T11	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	RESULT Arg1:T9 Arg2:T13	

@@ -1,0 +1,29 @@
+T1	Argument 21 46	フロントドアガラスヒーターの配線の固定方法が不適切
+T2	Connective 47 49	ため
+T3	Argument 56 82	アーム部（上側水平バー）の配線に局部的な曲げが生じる
+T4	Connective 88 92	そのため
+T5	Argument 93 107	そのままの状態で使用を続ける
+T6	Connective 107 108	と
+T7	Argument 117 128	当該配線が繰り返し曲げ
+T10	Connective 133 134	で
+T8	Argument 134 139	配線が断線
+T9	Argument 109 113	ドア開閉
+T11	Connective 116 117	て
+T12	Connective 140 141	、
+T13	Argument 141 147	発煙が生じる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T8	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	CONDITION Arg1:T11 Arg2:T9	
+R8	RESULT Arg1:T11 Arg2:T7	
+R9	REASON Arg1:T10 Arg2:T7	
+R10	RESULT Arg1:T10 Arg2:T8	
+R11	REASON Arg1:T12 Arg2:T8	
+R12	RESULT Arg1:T12 Arg2:T13	
+T14	Argument 50 54	ドア開閉
+T15	Connective 54 55	時
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T3	

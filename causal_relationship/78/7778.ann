@@ -1,0 +1,17 @@
+T1	Argument 0 53	ディーゼルエンジンの粒子状物質浄化装置（ＤＰＦ）において、エンジンコントロールユニットのプログラムが不適切
+T2	Connective 54 56	ため
+T3	Argument 57 75	ＤＰＦ内部の温度が想定より高温になる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 81 85	そのため
+T7	Argument 86 108	当該内部のフィルターが熱影響により亀裂が発生
+R5	REASON Arg1:T4 Arg2:T3	
+T8	Argument 114 127	粒子状物質の浄化性能が低下
+T9	Connective 112 113	で
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+T10	Argument 129 144	排気ガス規制値を満足しなくなる
+T11	Connective 128 129	、
+R9	REASON Arg1:T11 Arg2:T8	
+R10	RESULT Arg1:T11 Arg2:T10	
+R3	RESULT Arg1:T4 Arg2:T7	

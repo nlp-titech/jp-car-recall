@@ -1,0 +1,3 @@
+T1	Parts 0 4	緩衝装置
+T2	Parts 5 19	リヤサスペンショントーリンク
+R1	Part-Whole Arg1:T2 Arg2:T1	

@@ -1,0 +1,29 @@
+T1	Argument 0 30	低圧側パワーステアリングホースにおいて、製造工程管理が不適切
+T2	Connective 31 33	ため
+T3	Argument 34 47	当該ホースの長さが短くなっ
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 56 60	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 61 73	取り回し角度が大きくなる
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 75 76	で
+T7	Argument 76 81	車両振動等
+T8	Connective 81 84	により
+R5	REASON Arg1:T6 Arg2:T5	
+R6	REASON Arg1:T8 Arg2:T7	
+T9	Argument 84 92	当該ホースが損傷
+R7	RESULT Arg1:T8 Arg2:T9	
+R8	RESULT Arg1:T6 Arg2:T9	
+T10	Argument 94 96	最悪
+T11	Connective 97 99	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+T12	Argument 100 115	パワーステアリングオイルが漏れ
+R10	RESULT Arg1:T11 Arg2:T12	
+T13	Connective 93 94	、
+R11	REASON Arg1:T13 Arg2:T9	
+R12	RESULT Arg1:T13 Arg2:T12	
+T14	Argument 116 127	ハンドルの操舵力が増大
+T15	Connective 115 116	、
+R13	REASON Arg1:T15 Arg2:T12	
+R14	RESULT Arg1:T15 Arg2:T14	

@@ -1,0 +1,36 @@
+T1	Argument 1 29	横滑り防止装置（ＶＳＣ）において、制御プログラムが不適切
+T2	Connective 30 32	ため
+T4	Connective 69 70	と
+T5	Argument 71 83	機能オン状態に復帰しない
+T6	Connective 84 88	そのため
+T7	Argument 89 97	オフ表示灯が点灯
+T9	Argument 99 108	ＶＳＣが作動しない
+T10	Argument 116 159	エンジンルーム内のショックアブソーバ取付部付近のボデーにおいて、溶接設備の設定が不適切
+T11	Connective 160 162	ため
+T12	Argument 163 178	当該部位に溶接が行われていない
+T13	Connective 184 188	そのため
+T17	Connective 203 204	と
+T18	Argument 204 209	亀裂が生じ
+T19	Argument 210 212	最悪
+T20	Connective 213 215	場合
+T21	Connective 209 210	、
+T22	Argument 216 225	走行安定性を損なう
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+T3	Argument 33 67	ＶＳＣ機能オフ状態でブレーキペダルを踏んだままシステム停止後に再始動
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R9	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T12	
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T18	
+R17	REASON Arg1:T21 Arg2:T18	
+R18	RESULT Arg1:T21 Arg2:T22	
+R19	CONDITION Arg1:T20 Arg2:T19	
+R20	RESULT Arg1:T20 Arg2:T22	
+T14	Argument 189 203	そのままの状態で使用を続ける
+R13	CONDITION Arg1:T17 Arg2:T14	
+R14	RESULT Arg1:T17 Arg2:T18	
+R7	RESULT Arg1:T6 Arg2:T9	

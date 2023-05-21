@@ -1,0 +1,25 @@
+T1	Argument 15 53	ホイールドライブペグの取付けボルトにおいて、ボルトの緩み止め防止処理が不適切
+T2	Connective 54 56	ため
+T3	Argument 57 70	過酷な運転による走行振動等
+T4	Connective 70 73	により
+T5	Argument 73 81	当該ボルトが緩む
+T6	Connective 87 91	そのため
+T7	Argument 92 116	ホイールセンターロックシステムに過大な負荷がかか
+T8	Connective 116 117	り
+T9	Argument 117 119	破損
+T10	Connective 120 121	、
+T11	Argument 121 123	最悪
+T12	Connective 124 126	場合
+T13	Argument 127 135	ホイールが外れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	RESULT Arg1:T12 Arg2:T13	
+R12	CONDITION Arg1:T12 Arg2:T11	

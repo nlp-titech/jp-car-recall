@@ -1,0 +1,19 @@
+T1	Argument 14 32	駐車ブレーキ警告灯用スイッチが不適切
+T2	Connective 33 35	ため
+T3	Argument 36 49	エア配管内に発生する凝縮水
+T4	Connective 49 53	によって
+R1	REASON Arg1:T4 Arg2:T3	
+R2	REASON Arg1:T2 Arg2:T1	
+T5	Argument 53 69	当該スイッチが正常作動しなくなる
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+T6	Connective 75 79	そのため
+R5	REASON Arg1:T6 Arg2:T5	
+T10	Argument 119 152	Ｄレンジでの自動変速が不能（マニュアルモードでの変速は可能）になる
+T11	Argument 156 185	ＥＺＧＯ（坂道発進補助装置）とヒルホルダ等が機能しなくなる
+T12	Connective 118 119	、
+R10	RESULT Arg1:T12 Arg2:T10	
+R11	RESULT Arg1:T12 Arg2:T11	
+T7	Argument 80 113	駐車ブレーキを解除しても、駐車ブレーキの作動状態を正しく表示しない
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T12 Arg2:T7	

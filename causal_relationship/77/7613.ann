@@ -1,0 +1,21 @@
+T1	Argument 11 43	エレクトロニックドライビングユニット（ＥＤＵ）の電気回路が不適切
+T2	Connective 44 46	ため
+T3	Argument 68 75	ＥＤＵが誤作動
+T4	Argument 50 65	電装部品から発生する電気ノイズ
+T5	Connective 65 68	により
+T6	Connective 83 87	そのため
+T7	Argument 88 98	エンジン警告灯が点灯
+T8	Argument 100 102	最悪
+T9	Connective 103 105	場合
+T10	Argument 106 117	エンジンストールに至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T3	
+R5	REASON Arg1:T6 Arg2:T3	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T10	
+T11	Connective 99 100	、
+R9	REASON Arg1:T11 Arg2:T7	
+R10	RESULT Arg1:T11 Arg2:T10	

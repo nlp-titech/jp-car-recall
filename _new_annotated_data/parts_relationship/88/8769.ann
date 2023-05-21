@@ -1,0 +1,17 @@
+T1	Parts 0 9	ホイール・クレーン
+T2	Parts 14 18	ウインチ
+T3	Parts 25 30	油圧ポンプ
+T4	Parts 35 38	作動油
+T5	Parts 44 49	ベアリング
+T6	Parts 63 67	クレーン
+T7	Parts 93 98	ベアリング
+T8	Parts 114 117	作動油
+R1	Coreference Arg1:T4 Arg2:T8	
+R2	Coreference Arg1:T5 Arg2:T7	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T3 Arg2:T1	
+R5	Connect Arg1:T2 Arg2:T3	
+R6	Part-Whole Arg1:T4 Arg2:T1	
+R7	Contact Arg1:T3 Arg2:T4	
+R8	Part-Whole Arg1:T5 Arg2:T3	
+R9	Part-Whole Arg1:T6 Arg2:T1	

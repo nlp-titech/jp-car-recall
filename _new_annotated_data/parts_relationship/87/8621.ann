@@ -1,0 +1,20 @@
+T1	Parts 0 4	エンジン
+T2	Parts 5 12	オイルクーラー
+T3	Parts 17 23	オイルホース
+T4	Parts 24 30	オイルパイプ
+T5	Parts 56 59	ホース
+T6	Parts 31 37	接続クランプ
+T7	Parts 48 54	接続クランプ
+T8	Parts 89 96	エンジンオイル
+T9	Parts 109 112	オイル
+T10	Parts 113 118	リアタイヤ
+R1	Coreference Arg1:T6 Arg2:T7	
+R2	Coreference Arg1:T3 Arg2:T5	
+R3	Coreference Arg1:T8 Arg2:T9	
+R4	Contact Arg1:T3 Arg2:T4	
+R5	Contact Arg1:T4 Arg2:T6	
+R6	Contact Arg1:T3 Arg2:T6	
+R7	Contact Arg1:T5 Arg2:T8	
+R8	Contact Arg1:T4 Arg2:T8	
+R9	Part-Whole Arg1:T2 Arg2:T1	
+R10	Contact Arg1:T2 Arg2:T3	

@@ -1,0 +1,33 @@
+T2	Argument 45 53	圧力調整弁が固着
+T5	Argument 66 76	そのまま使用を続ける
+T6	Connective 77 78	、
+T7	Argument 78 88	燃料タンクが負圧にな
+T9	Argument 97 108	燃料レベルゲージが傾き
+T10	Connective 108 109	、
+T11	Argument 109 126	燃料計が実際の燃料残量より多く指示
+T12	Connective 128 130	ため
+T13	Argument 131 158	燃料残量警告灯が点灯することなく予期せぬ燃料切れとなり
+T14	Connective 158 159	、
+R5	CONDITION Arg1:T6 Arg2:T5	
+T4	Connective 95 96	で
+R8	RESULT Arg1:T4 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+T8	Argument 159 163	エンスト
+R14	RESULT Arg1:T14 Arg2:T8	
+T3	Connective 42 44	ため
+R2	RESULT Arg1:T3 Arg2:T2	
+T1	Argument 0 41	樹脂製燃料タンクにおいて、燃料蒸発ガスホースの材料及び圧力調整弁の表面粗さが不適切
+R1	REASON Arg1:T3 Arg2:T1	
+T15	Connective 61 65	そのため
+R3	REASON Arg1:T15 Arg2:T2	
+R15	RESULT Arg1:T15 Arg2:T7	
+R4	RESULT Arg1:T6 Arg2:T7	
+T16	Connective 88 89	り
+T17	Argument 89 91	変形
+R6	REASON Arg1:T16 Arg2:T7	
+R7	RESULT Arg1:T16 Arg2:T17	
+R16	REASON Arg1:T4 Arg2:T17	

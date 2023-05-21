@@ -1,0 +1,9 @@
+T1	Connective 53 57	このため
+T3	Connective 76 77	、
+T4	Argument 0 44	燃料ポンプと燃料噴射装置をつなぐ燃料ホースにおいて、燃料ホースの内径が不適切な状態で製造
+R2	REASON Arg1:T1 Arg2:T4	
+T5	Argument 77 104	燃料ポンプによって圧送される燃料が気密不良部から漏れる
+R4	RESULT Arg1:T3 Arg2:T5	
+T2	Argument 58 76	当該ホース接続部の気密が不十分となり
+R1	RESULT Arg1:T1 Arg2:T2	
+R3	REASON Arg1:T3 Arg2:T2	

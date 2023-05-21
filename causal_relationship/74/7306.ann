@@ -1,0 +1,5 @@
+T2	Connective 46 48	ため
+T3	Argument 49 78	衝突被害軽減ブレーキ関連の警告表示および警報等が作動しない
+R2	RESULT Arg1:T2 Arg2:T3	
+T1	Argument 7 45	インストルメントクラスターメータにおいて、市場向けソフトウエアの設定が不適切
+R1	REASON Arg1:T2 Arg2:T1	

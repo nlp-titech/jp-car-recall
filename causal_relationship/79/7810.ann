@@ -1,0 +1,29 @@
+T1	Argument 0 38	ハンドルを固定している２本のステイ（支柱）を保持している防振ゴムの硬度が不足
+T2	Connective 42 44	ため
+T3	Argument 45 108	ハンドルの片方（グリップ部）を持って前輪を横方向に引きずる等、ハンドルのステイ間に過大な捩じり力が発生するような操作を繰り返す
+T4	Connective 109 110	、
+T6	Argument 147 161	このままの状態で使用を続ける
+T7	Connective 162 163	、
+T8	Argument 163 165	最悪
+T9	Connective 166 168	場合
+T10	Argument 169 176	ハンドルが変形
+T11	Connective 177 178	、
+T12	Argument 178 191	かじ取り操作が不安定になる
+R1	REASON Arg1:T2 Arg2:T1	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T10	
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T10	
+R9	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T12	
+T13	Connective 146 147	、
+R12	RESULT Arg1:T13 Arg2:T10	
+T5	Argument 110 139	ハンドル中央下部にある電気配線配索用開口部に応力集中が生じ
+T14	Connective 139 140	て
+T15	Argument 140 145	亀裂が発生
+R2	RESULT Arg1:T4 Arg2:T5	
+R4	REASON Arg1:T14 Arg2:T5	
+R11	RESULT Arg1:T14 Arg2:T15	
+R13	REASON Arg1:T13 Arg2:T15	
+R14	RESULT Arg1:T2 Arg2:T15	

@@ -1,0 +1,21 @@
+T1	Argument 0 50	助手席エアバッグのインフレーター（膨張装置）について、長期間にわたり、著しく高温多湿な環境下にさらさ
+T2	Connective 52 53	と
+T3	Argument 54 69	当該インフレーターに水分が侵入
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 82 83	て
+T6	Argument 84 107	エアバッグ展開時にインフレーター内圧が異常上昇
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T6	
+T8	Connective 107 108	し
+T9	Argument 109 121	インフレーター容器が破損
+R7	REASON Arg1:T8 Arg2:T6	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Connective 127 128	、
+T11	Argument 128 133	乗員が負傷
+T12	Connective 122 123	て
+T13	Argument 123 127	飛び散り
+R9	REASON Arg1:T12 Arg2:T9	
+R10	RESULT Arg1:T12 Arg2:T13	
+R11	REASON Arg1:T10 Arg2:T13	
+R12	RESULT Arg1:T10 Arg2:T11	

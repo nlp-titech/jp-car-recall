@@ -1,0 +1,29 @@
+T1	Argument 0 23	クランクシャフトにおいて、製造時の作業が不適切
+T2	Connective 24 26	ため
+T3	Argument 27 39	十分な強度を有していない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 45 49	そのため
+T5	Argument 50 62	エンジンの負荷が高い状況
+R3	REASON Arg1:T4 Arg2:T3	
+T7	Argument 67 83	クランクシャフトの耐久性が損なわ
+R6	RESULT Arg1:T4 Arg2:T7	
+T8	Argument 92 103	クランクシャフトが破損
+T9	Connective 107 108	で
+T10	Argument 108 119	エンジンストールが発生
+R7	RESULT Arg1:T9 Arg2:T10	
+R8	REASON Arg1:T9 Arg2:T8	
+T11	Connective 91 92	、
+R9	REASON Arg1:T11 Arg2:T7	
+R10	RESULT Arg1:T11 Arg2:T8	
+T12	Argument 121 123	最悪
+T13	Connective 124 126	場合
+T14	Argument 127 134	走行不能に至る
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T14	
+T15	Connective 120 121	、
+R13	REASON Arg1:T15 Arg2:T10	
+R14	RESULT Arg1:T15 Arg2:T14	
+T6	Connective 62 66	において
+R4	CONDITION Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T6 Arg2:T7	

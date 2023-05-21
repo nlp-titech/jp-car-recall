@@ -1,0 +1,29 @@
+T1	Argument 5 32	リヤサスペンショントーリンクにおいて、強度検討が不適切
+T2	Connective 33 35	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 36 46	ロッド部の強度が不足
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 56 112	リヤナックルのボールジョイントが、アフターマーケット部品に交換されている一部車両では、冬季凍結防止剤等による腐食
+T5	Connective 113 115	ため
+T6	Argument 115 124	円滑に動かなくなる
+R3	RESULT Arg1:T5 Arg2:T6	
+R4	REASON Arg1:T5 Arg2:T4	
+T7	Connective 128 129	、
+T8	Argument 129 144	トーリンクに加わる曲げ応力増加
+T9	Connective 144 147	により
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T8	
+T10	Argument 147 154	ロッド部が破損
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T10	
+T11	Argument 156 158	最悪
+T12	Connective 159 161	場合
+T13	Argument 162 169	走行不能となる
+R9	RESULT Arg1:T12 Arg2:T13	
+R10	CONDITION Arg1:T12 Arg2:T11	
+T14	Connective 155 156	、
+R11	REASON Arg1:T14 Arg2:T10	
+R12	RESULT Arg1:T14 Arg2:T13	
+T15	Connective 55 56	。
+R13	REASON Arg1:T15 Arg2:T3	
+R14	RESULT Arg1:T15 Arg2:T10	

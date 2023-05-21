@@ -1,0 +1,13 @@
+T1	Argument 6 32	燃料タンクのブリーザパイプにおいて、製造指示が不適切
+T2	Connective 33 35	ため
+T3	Argument 36 51	当該パイプの内部寸法が長くなっ
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 60 64	そのため
+T5	Argument 65 81	燃料を給油口の縁いっぱいまで供給
+T6	Connective 83 84	と
+R3	CONDITION Arg1:T6 Arg2:T5	
+T7	Argument 89 104	ブリーザホースから燃料が漏れる
+R4	RESULT Arg1:T6 Arg2:T7	
+R5	REASON Arg1:T4 Arg2:T3	
+R6	RESULT Arg1:T4 Arg2:T7	

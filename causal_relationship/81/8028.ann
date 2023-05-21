@@ -1,0 +1,29 @@
+T1	Argument 7 30	動力伝達装置において、製造時の確認工程が不適切
+T2	Connective 31 33	ため
+T3	Argument 34 63	ＨＳＴ（静油圧式無段変速機）にベアリングが組込まれていない
+T4	Connective 69 73	そのため
+T7	Argument 74 83	走行時に異音が発生
+T8	Argument 89 100	スムーズに増減速しない
+T9	Argument 101 117	変速を停止位置にしても停止しない
+T10	Argument 118 142	前後進の変速操作をしても切替わるまで時間がかかる
+T11	Argument 149 163	そのままの状態で使用を続ける
+T12	Connective 163 164	と
+T13	Argument 165 175	フェールセーフが働き
+T14	Connective 175 176	、
+T15	Argument 176 183	エンジンが停止
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	RESULT Arg1:T4 Arg2:T8	
+R6	RESULT Arg1:T4 Arg2:T9	
+R14	CONDITION Arg1:T12 Arg2:T11	
+R15	RESULT Arg1:T12 Arg2:T13	
+R16	REASON Arg1:T14 Arg2:T13	
+R17	RESULT Arg1:T14 Arg2:T15	
+R7	RESULT Arg1:T4 Arg2:T10	
+T5	Connective 148 149	。
+R8	REASON Arg1:T5 Arg2:T8	
+R9	RESULT Arg1:T5 Arg2:T13	
+R10	REASON Arg1:T5 Arg2:T9	
+R11	REASON Arg1:T5 Arg2:T10	

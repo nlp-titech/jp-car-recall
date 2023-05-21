@@ -1,0 +1,21 @@
+T1	Argument 0 45	運転席エアバッグのインフレータ（膨張装置）の製造過程において、ガス発生剤の湿度管理が不適切
+T2	Connective 46 48	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T5	Argument 107 127	エアバッグ展開時に想定以上の膨張力が発生
+T6	Argument 49 66	ガス膨張剤に湿気を含んだ状態で封入
+R3	RESULT Arg1:T2 Arg2:T6	
+T7	Connective 75 79	そのため
+R4	REASON Arg1:T7 Arg2:T6	
+T8	Argument 80 92	大きな温度変化を繰り返す
+T9	Connective 92 93	と
+R5	CONDITION Arg1:T9 Arg2:T8	
+T10	Argument 94 105	ガス発生剤の劣化を助長
+R6	RESULT Arg1:T9 Arg2:T10	
+T11	Argument 128 139	インフレータ容器が破損
+T13	Connective 106 107	、
+R9	REASON Arg1:T13 Arg2:T10	
+R10	RESULT Arg1:T7 Arg2:T10	
+R11	RESULT Arg1:T13 Arg2:T5	
+T12	Connective 147 148	。
+R7	REASON Arg1:T12 Arg2:T5	
+R8	RESULT Arg1:T12 Arg2:T11	

@@ -1,0 +1,17 @@
+T1	Argument 0 36	前輪用ブレーキレバーの製造工程において、廃棄品（強度不足）の処置が不適切
+T2	Connective 37 39	ため
+T3	Argument 40 46	正規品に混入
+T4	Connective 47 48	、
+T5	Argument 48 54	車両に組付け
+T6	Connective 63 67	そのため
+T9	Argument 68 87	ブレーキレバー操作時に当該レバーが破損
+T10	Argument 89 102	ブレーキ操作ができなくなる
+T11	Connective 88 89	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+R9	REASON Arg1:T11 Arg2:T9	
+R10	RESULT Arg1:T11 Arg2:T10	
+R3	REASON Arg1:T4 Arg2:T3	

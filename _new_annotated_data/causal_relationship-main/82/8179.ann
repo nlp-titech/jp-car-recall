@@ -1,0 +1,21 @@
+T1	Argument 0 34	後部フェンダー内側の樹脂製カバーにおいて、取付クリップの形状が不適切
+T2	Connective 35 37	ため
+T3	Argument 38 43	走行振動等
+T4	Connective 43 46	により
+T5	Argument 46 55	取付クリップが緩む
+T6	Connective 61 65	そのため
+T7	Argument 66 75	当該クリップが外れ
+T8	Connective 75 76	、
+T9	Argument 76 78	最悪
+T10	Connective 79 81	場合
+T11	Argument 82 97	走行中に当該樹脂製カバーが脱落
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T11	
+R9	CONDITION Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	

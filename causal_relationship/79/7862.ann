@@ -1,0 +1,13 @@
+T1	Argument 0 24	燃料装置において、インジェクタの内部構造が不適切
+T2	Connective 25 27	ため
+T3	Argument 28 40	燃料噴射量が増加側に変化
+T4	Connective 48 52	そのため
+T5	Argument 53 74	排出ガス中のＣＯ（一酸化炭素）排出量が増加
+T6	Connective 75 76	、
+T7	Argument 76 97	保安基準（排出ガスの基準）に適合しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

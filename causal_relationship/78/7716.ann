@@ -1,0 +1,21 @@
+T1	Argument 0 34	中型トラックの個別仕様スペアタイヤキャリアにおいて、溶接作業が不適切
+T2	Connective 35 37	ため
+T3	Argument 38 47	接合部に亀裂が発生
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 55 59	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 79 81	破断
+T6	Argument 83 85	脱落
+T7	Connective 86 87	て
+R4	REASON Arg1:T7 Arg2:T6	
+T8	Argument 87 95	他の交通を妨げる
+R5	RESULT Arg1:T7 Arg2:T8	
+T9	Connective 82 83	、
+R6	REASON Arg1:T9 Arg2:T5	
+R7	RESULT Arg1:T9 Arg2:T6	
+T10	Argument 73 76	振動等
+T11	Connective 76 79	により
+R8	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T4 Arg2:T5	
+R9	RESULT Arg1:T11 Arg2:T5	

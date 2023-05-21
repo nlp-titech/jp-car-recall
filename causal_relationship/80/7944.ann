@@ -1,0 +1,19 @@
+T1	Argument 12 49	エキゾーストマニホールドにおいて、パイプの溶接条件変更時の強度検討が不十分
+T2	Connective 50 52	ため
+T3	Argument 60 63	振動等
+T4	Connective 63 66	により
+T5	Argument 66 78	当該溶接部に亀裂が生じる
+T6	Connective 84 88	そのため
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+T7	Argument 89 100	登坂路走行等の高回転時
+T8	Argument 101 119	排出ガスが漏れ基準値を満足しなくなる
+T9	Connective 100 101	に
+R6	RESULT Arg1:T6 Arg2:T8	
+R7	RESULT Arg1:T9 Arg2:T8	
+R8	CONDITION Arg1:T9 Arg2:T7	
+T10	Argument 53 59	冷熱の繰返し
+R9	REASON Arg1:T4 Arg2:T10	

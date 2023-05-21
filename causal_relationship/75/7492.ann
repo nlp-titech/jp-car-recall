@@ -1,0 +1,9 @@
+T1	Argument 0 22	助手席シートベルトにおいて、工程管理が不適切
+T2	Connective 23 25	ため
+T3	Argument 26 58	助手席の乗員の有無を検知する乗員検知モジュールが装着されていない
+T4	Connective 64 68	そのため
+T7	Argument 69 106	助手席シートベルト非装着時にメーターパネルにシートベルト警告灯が作動しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	

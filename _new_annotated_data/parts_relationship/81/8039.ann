@@ -1,0 +1,13 @@
+T1	Parts 0 32	フロント・ボディ・コントロールモジュール（車両制御コンピュータ）
+T2	Parts 42 49	ワイパーリレー
+T3	Parts 56 63	ワイパーモータ
+T4	Parts 78 81	リレー
+T5	Parts 101 104	リレー
+T6	Parts 122 125	リレー
+T7	Parts 134 142	フロントワイパー
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Connect Arg1:T2 Arg2:T3	
+R3	Coreference Arg1:T4 Arg2:T2	
+R4	Coreference Arg1:T5 Arg2:T4	
+R5	Coreference Arg1:T6 Arg2:T5	
+R6	Connect Arg1:T3 Arg2:T7	

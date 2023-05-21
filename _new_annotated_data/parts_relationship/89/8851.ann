@@ -1,0 +1,14 @@
+T1	Parts 0 12	エンジン式フォークリフト
+T2	Parts 13 16	排気管
+T3	Parts 17 20	遮熱板
+T4	Parts 44 50	取付けボルト
+T5	Parts 72 74	車両
+T6	Parts 97 103	取付けボルト
+T7	Parts 107 110	遮熱板
+R1	Coreference Arg1:T1 Arg2:T5	
+R2	Coreference Arg1:T3 Arg2:T7	
+R3	Coreference Arg1:T4 Arg2:T6	
+R4	Part-Whole Arg1:T2 Arg2:T1	
+R5	Contact Arg1:T2 Arg2:T3	
+R6	Contact Arg1:T3 Arg2:T4	
+R7	Contact Arg1:T2 Arg2:T4	

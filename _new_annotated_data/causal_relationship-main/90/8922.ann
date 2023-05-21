@@ -1,0 +1,9 @@
+T1	Argument 0 28	運転者席用ニーエアバッグにおいて、溶接設備の管理が不適切
+T2	Connective 29 31	ため
+T3	Argument 32 44	取付ブラケットに溶接不良
+T4	Connective 51 55	そのため
+T5	Argument 56 73	エアバッグ作動時に正常に展開しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

@@ -1,0 +1,9 @@
+T1	Argument 0 33	左前アッパーコントロールアームにおいて、製造工程の部品管理が不適切
+T2	Connective 34 36	ため
+T3	Argument 37 50	仕様の異なる部品が取り付け
+T4	Connective 56 60	そのため
+T5	Argument 61 73	車両の直進安定性が損なわ
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

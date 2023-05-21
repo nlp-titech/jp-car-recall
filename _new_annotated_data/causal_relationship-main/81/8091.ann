@@ -1,0 +1,33 @@
+T2	Connective 58 60	ため
+T3	Argument 61 74	サイレンサー内の空気の流れ
+T4	Connective 74 77	により
+T5	Argument 77 84	プレートが振動
+T6	Argument 85 90	異音が発生
+T7	Connective 84 85	し
+T8	Argument 98 107	このまま使用を続け
+T9	Connective 108 110	場合
+T10	Argument 117 124	プレートが破損
+T11	Argument 125 140	破片がコンプレッサー内部に吸入
+T12	Connective 142 143	、
+T13	Argument 143 153	コンプレッサーが損傷
+T14	Connective 154 155	、
+T15	Argument 155 162	走行不能になる
+T17	Argument 17 54	圧縮空気用コンプレッサーの吸入側サイレンサー内部の整流プレートの強度が不足
+R3	REASON Arg1:T2 Arg2:T17	
+R5	REASON Arg1:T4 Arg2:T3	
+R6	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+R7	REASON Arg1:T7 Arg2:T5	
+R8	RESULT Arg1:T7 Arg2:T6	
+R9	CONDITION Arg1:T9 Arg2:T8	
+R10	RESULT Arg1:T9 Arg2:T10	
+T18	Connective 124 125	し
+R11	REASON Arg1:T18 Arg2:T10	
+R12	RESULT Arg1:T18 Arg2:T11	
+R13	REASON Arg1:T12 Arg2:T11	
+R14	RESULT Arg1:T12 Arg2:T13	
+R15	RESULT Arg1:T14 Arg2:T15	
+T1	Connective 97 98	。
+R1	REASON Arg1:T1 Arg2:T5	
+R2	RESULT Arg1:T1 Arg2:T10	
+R16	REASON Arg1:T14 Arg2:T13	

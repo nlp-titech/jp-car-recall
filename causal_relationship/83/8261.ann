@@ -1,0 +1,13 @@
+T1	Argument 10 34	ドレンプラグの燃料タンクへの組み付け作業が不適切
+T2	Connective 35 37	ため
+T3	Argument 38 58	ドレンプラグが適切に締め付けられていない
+T4	Connective 64 68	そのため
+T5	Argument 69 83	そのままの状態で使用を続ける
+T6	Connective 83 84	と
+R1	CONDITION Arg1:T6 Arg2:T5	
+T7	Argument 85 100	ドレンプラグ部より燃料が漏れる
+R2	RESULT Arg1:T6 Arg2:T7	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	REASON Arg1:T2 Arg2:T1	
+R6	RESULT Arg1:T2 Arg2:T3	

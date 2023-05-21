@@ -1,0 +1,11 @@
+T1	Parts 0 4	エンジン
+T2	Parts 8 12	スタータ
+T3	Parts 31 37	エンドカバー
+T4	Parts 38 40	ねじ
+T5	Parts 55 59	スタータ
+T6	Parts 68 72	エンジン
+R1	Coreference Arg1:T1 Arg2:T6	
+R2	Coreference Arg1:T2 Arg2:T5	
+R3	Connect Arg1:T1 Arg2:T2	
+R4	Contact Arg1:T3 Arg2:T4	
+R5	Part-Whole Arg1:T3 Arg2:T2	

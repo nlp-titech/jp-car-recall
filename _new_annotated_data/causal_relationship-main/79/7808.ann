@@ -1,0 +1,17 @@
+T1	Argument 1 25	エンジンコントロールユニットのプログラムが不適切
+T2	Connective 26 28	ため
+T3	Argument 29 52	アイドリング状態からスロットルをわずかに開ける
+T4	Connective 52 53	と
+T5	Argument 54 72	燃焼室内に吸入される混合気が薄くなる
+T6	Connective 78 82	そのため
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T7	Argument 83 85	最悪
+T8	Connective 86 88	場合
+T9	Argument 89 93	エンスト
+R7	RESULT Arg1:T6 Arg2:T9	
+R8	CONDITION Arg1:T8 Arg2:T7	
+R9	RESULT Arg1:T8 Arg2:T9	
+R5	REASON Arg1:T6 Arg2:T5	

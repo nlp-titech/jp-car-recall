@@ -1,0 +1,13 @@
+T1	Argument 0 49	横滑り防止装置（ＥＳＣ）の機能において、ハイドロリックコントロールユニットの制御プログラムが不適切
+T2	Connective 50 52	ため
+T3	Argument 53 78	ハンドリングモードが選択されたまま再度エンジン始動
+T4	Connective 80 81	際
+T5	Argument 83 103	ＥＳＣシステムが初期設定モードに戻らない
+T6	Connective 104 108	そのため
+T7	Argument 109 140	協定規則第１３－Ｈ号（乗用車の制動装置）の規定に適合していない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

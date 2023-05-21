@@ -1,0 +1,29 @@
+T1	Argument 7 34	ディスクホイールにおいて、リム成型時の金型調整が不適切
+T2	Connective 35 37	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 38 45	リム形状が変化
+T4	Argument 47 66	リムとディスクの溶接部に応力集中が発生
+T5	Connective 46 47	て
+R2	REASON Arg1:T5 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T4	
+T6	Argument 68 77	溶接部の強度が不足
+T7	Connective 67 68	、
+R5	REASON Arg1:T7 Arg2:T4	
+R6	RESULT Arg1:T7 Arg2:T6	
+T8	Connective 87 91	そのため
+T9	Argument 92 97	長期間使用
+T10	Connective 99 100	と
+R7	CONDITION Arg1:T10 Arg2:T9	
+T11	Argument 100 109	溶接部に亀裂が入り
+R8	REASON Arg1:T8 Arg2:T6	
+T12	Argument 110 112	最悪
+T13	Connective 113 115	場合
+R9	CONDITION Arg1:T13 Arg2:T12	
+T14	Argument 116 127	ディスクホイールが破損
+R10	RESULT Arg1:T13 Arg2:T14	
+R11	RESULT Arg1:T10 Arg2:T11	
+T15	Connective 109 110	、
+R12	REASON Arg1:T15 Arg2:T11	
+R13	RESULT Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T8 Arg2:T11	

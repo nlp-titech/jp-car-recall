@@ -1,0 +1,5 @@
+T1	Argument 7 51	リアバンパーブラケットにおいて、当該ブラケットの構造体同士を締結するリベット止めが不適切
+T2	Connective 52 54	ため
+T3	Argument 55 92	保安基準第１８条の２（突入防止装置の基準）に定める強度要件を満たしていない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

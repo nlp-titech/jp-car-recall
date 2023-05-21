@@ -1,0 +1,9 @@
+T1	Parts 0 25	ＡＢＳ（アンチロックブレーキシステム）モジュレータ
+T2	Parts 75 78	ＡＢＳ
+T3	Parts 89 92	逆止弁
+T4	Parts 98 100	前輪
+T5	Parts 104 106	後輪
+R1	Connect Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T2	
+R3	Connect Arg1:T4 Arg2:T2	
+R4	Connect Arg1:T5 Arg2:T2	

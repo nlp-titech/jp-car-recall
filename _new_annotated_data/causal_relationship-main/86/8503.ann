@@ -1,0 +1,21 @@
+T1	Argument 0 39	ホイール・クレーンの制動装置において、主ブレーキのパワークラスタの選定が不適切
+T2	Connective 40 42	ため
+T3	Argument 43 70	ブレーキペダルを離してもブレーキ液圧回路に残圧が生じる
+T4	Connective 76 80	そのため
+T5	Argument 81 91	主ブレーキが引きずり
+T6	Connective 91 92	、
+T7	Argument 92 94	最悪
+T8	Connective 95 97	場合
+T9	Argument 98 108	ブレーキパッドが過熱
+T10	Connective 109 110	、
+T11	Argument 110 116	制動力が低下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	

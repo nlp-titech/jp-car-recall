@@ -1,0 +1,33 @@
+T1	Argument 0 29	トランスミッションコントロールユニットのプログラムが不適切
+T2	Connective 30 32	ため
+T3	Argument 33 67	アクティブクルーズコントロール（以下、「ＡＣＣ」という。）作動走行時
+T4	Connective 67 71	において
+T5	Argument 100 108	エンジンが止まっ
+T6	Connective 109 110	際
+T7	Argument 111 119	ＡＣＣ機能が解除
+T8	Connective 128 132	そのため
+T9	Argument 133 176	ドライバーはＡＣＣ機能が解除されていることに気付かないまま一旦停止したエンジンが再始動
+T10	Connective 180 183	により
+T11	Argument 183 185	前進
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T7	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T14	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T11	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+T13	Connective 78 79	し
+T14	Argument 79 84	減速・停止
+T15	Connective 84 87	により
+T16	Argument 87 99	アイドリングストップ機能
+T17	Connective 99 100	で
+T12	Argument 72 78	障害物に接近
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T14	
+R13	REASON Arg1:T15 Arg2:T14	
+R14	REASON Arg1:T17 Arg2:T16	
+R15	RESULT Arg1:T17 Arg2:T5	
+R16	RESULT Arg1:T15 Arg2:T5	

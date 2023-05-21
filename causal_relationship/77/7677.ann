@@ -1,0 +1,13 @@
+T1	Argument 0 26	エアバッグコントロールモジュールのプログラムが不適切
+T2	Connective 27 29	ため
+T3	Argument 30 58	イベントデータレコーダー等のエアバッグ情報の読出しを行う
+T4	Connective 58 59	と
+T5	Argument 60 93	エアバッグコントロールモジュールの制御プログラムが意図せず書き換え
+T6	Connective 105 109	そのため
+T7	Argument 110 132	エアバッグ等の乗員保護装置が適正に作動しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

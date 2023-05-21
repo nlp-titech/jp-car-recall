@@ -1,0 +1,13 @@
+T1	Argument 0 59	バン型トラックの後部に取付られている貨物を積卸しする垂直ゲート（昇降装置）の安全装置スイッチにおいて、配索作業が不適切
+T2	Connective 60 62	ため
+T4	Argument 63 84	庫内スイッチ等の操作による垂直ゲート上昇中
+T5	Connective 84 85	に
+R1	CONDITION Arg1:T5 Arg2:T4	
+R3	REASON Arg1:T2 Arg2:T1	
+T3	Argument 85 94	安全装置が作動せず
+T6	Argument 94 111	車体と垂直ゲートの間に貨物等が挟ま
+T7	Connective 119 120	。
+R2	REASON Arg1:T7 Arg2:T3	
+R4	RESULT Arg1:T7 Arg2:T6	
+R5	RESULT Arg1:T2 Arg2:T3	
+R6	RESULT Arg1:T5 Arg2:T3	

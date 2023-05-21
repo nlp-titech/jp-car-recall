@@ -1,0 +1,10 @@
+T1	Parts 0 7	カウルルーバー
+T2	Parts 8 15	ダッシュパネル
+T3	Parts 37 45	ブレーキブースタ
+T4	Parts 61 69	ブレーキブースタ
+T5	Parts 108 116	ブレーキブースタ
+T6	Parts 122 129	ブレーキペダル
+R1	Contact Arg1:T1 Arg2:T2	
+R2	Coreference Arg1:T3 Arg2:T4	
+R3	Coreference Arg1:T4 Arg2:T5	
+R4	Connect Arg1:T5 Arg2:T6	

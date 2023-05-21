@@ -1,0 +1,25 @@
+T1	Argument 0 25	駐車ブレーキ装置において、組み付け作業指示が不適切
+T2	Connective 26 28	ため
+T3	Argument 29 66	ブレーキレバーとブレーキケーブルの接続部に緩み留め防止ナットが付いていない
+T4	Connective 67 71	そのため
+T5	Argument 72 77	走行振動等
+T6	Connective 77 80	により
+T7	Argument 80 88	当該接続部が緩み
+T8	Argument 89 105	駐車ブレーキの引き代が大きくなり
+T9	Connective 88 89	、
+T10	Connective 105 106	、
+T11	Argument 106 108	最悪
+T12	Connective 109 111	場合
+T13	Argument 112 125	駐車ブレーキが効かなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+R9	REASON Arg1:T10 Arg2:T8	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	

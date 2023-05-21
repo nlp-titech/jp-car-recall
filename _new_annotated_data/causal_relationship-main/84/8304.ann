@@ -1,0 +1,41 @@
+T1	Argument 0 56	フロント及びインターアクスルプロペラシャフトにおいて、ユニバーサルジョイント組付け時の軸方向ガタ調整工程が不適切
+T2	Connective 57 59	ため
+T3	Argument 60 82	当該ジョイント部の軸方向のガタが許容値を超え
+T4	Connective 91 95	そのため
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T6	Argument 112 120	グリースが漏れ出
+T7	Connective 120 121	し
+T8	Argument 121 137	泥水等がベアリングカップ内に浸入
+T9	Connective 138 139	て
+T12	Argument 140 154	グリースの劣化による潤滑不足
+T13	Connective 154 155	で
+T14	Argument 155 165	ベアリングが焼き付き
+T15	Connective 165 166	、
+T16	Argument 166 181	ユニバーサルジョイント部が破損
+T17	Connective 182 183	、
+T18	Argument 183 185	最悪
+T19	Connective 186 188	場合
+T21	Connective 201 202	て
+T22	Argument 202 209	走行不能となる
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T6	
+T23	Connective 110 111	と
+R6	RESULT Arg1:T23 Arg2:T6	
+R7	REASON Arg1:T7 Arg2:T6	
+R8	RESULT Arg1:T7 Arg2:T8	
+R9	REASON Arg1:T9 Arg2:T8	
+R13	REASON Arg1:T13 Arg2:T12	
+R14	RESULT Arg1:T13 Arg2:T14	
+R15	REASON Arg1:T15 Arg2:T14	
+R16	RESULT Arg1:T15 Arg2:T16	
+R17	REASON Arg1:T17 Arg2:T16	
+T20	Argument 189 200	プロペラシャフトが脱落
+R18	RESULT Arg1:T17 Arg2:T20	
+R19	CONDITION Arg1:T19 Arg2:T18	
+R20	RESULT Arg1:T19 Arg2:T20	
+R21	REASON Arg1:T21 Arg2:T20	
+R22	RESULT Arg1:T21 Arg2:T22	
+T5	Argument 96 110	そのままの状態で使用を続ける
+R5	CONDITION Arg1:T23 Arg2:T5	
+R10	RESULT Arg1:T9 Arg2:T12	

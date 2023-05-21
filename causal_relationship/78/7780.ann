@@ -1,0 +1,34 @@
+T1	Argument 3 50	４８Ｖスタータオルタネータを搭載した４８Ｖバッテリ管理システムにおいて、制御プログラムが不適切
+T2	Connective 51 53	ため
+T3	Argument 54 69	他のシステムとの同期不良が発生
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 77 81	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 82 91	エンジンの始動遅れ
+T6	Argument 93 106	エンジン警告灯が表示されず
+T7	Argument 123 150	エンジンが始動してもエンジン警告灯が点灯したままになる
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T6	
+R6	RESULT Arg1:T4 Arg2:T7	
+T8	Argument 160 207	４８Ｖスタータオルタネータを搭載した４８Ｖバッテリ管理システムにおいて、制御プログラムが不適切
+T9	Connective 208 210	ため
+T10	Argument 211 229	４８Ｖバッテリの内部スイッチが入らず
+T11	Connective 229 230	に
+T12	Argument 230 241	電源供給が開始されない
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T10	
+R9	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T12	
+T13	Connective 247 251	そのため
+R11	REASON Arg1:T13 Arg2:T12	
+T14	Argument 252 264	４８Ｖシステムが起動せず
+R12	RESULT Arg1:T13 Arg2:T14	
+T15	Argument 265 275	エンジン警告灯が点灯
+T16	Argument 277 289	エンジンが始動しなくなる
+T17	Argument 106 120	一時的にエンジンが始動しない
+R15	RESULT Arg1:T4 Arg2:T17	
+T18	Connective 264 265	、
+R13	REASON Arg1:T18 Arg2:T14	
+R14	RESULT Arg1:T18 Arg2:T15	
+R16	RESULT Arg1:T18 Arg2:T16	

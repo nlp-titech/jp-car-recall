@@ -1,0 +1,39 @@
+T1	Argument 23 30	油圧漏れが発生
+T3	Argument 41 48	油圧漏れが発生
+T4	Connective 50 51	際
+T5	Argument 53 73	ＡＴ制御コンピュータのプログラムが不適切
+T6	Connective 74 76	ため
+T7	Argument 77 89	故障検知を正しく行わない
+T8	Connective 95 99	そのため
+T9	Argument 100 113	油圧漏れを正しく検出できず
+R7	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 114 128	そのままの状態で使用を続ける
+T11	Connective 128 129	と
+R8	CONDITION Arg1:T11 Arg2:T10	
+T12	Argument 130 140	油圧漏れが大きくなり
+R9	RESULT Arg1:T11 Arg2:T12	
+T13	Connective 113 114	、
+R10	REASON Arg1:T13 Arg2:T9	
+R11	RESULT Arg1:T13 Arg2:T12	
+T14	Argument 141 143	最悪
+T15	Connective 144 146	場合
+T16	Argument 147 158	意図せぬクラッチが係合
+R12	CONDITION Arg1:T15 Arg2:T14	
+R13	RESULT Arg1:T15 Arg2:T16	
+T17	Connective 140 141	、
+R14	REASON Arg1:T17 Arg2:T12	
+R15	RESULT Arg1:T17 Arg2:T16	
+T18	Connective 159 160	、
+T19	Argument 160 167	一時的に急減速
+R16	RESULT Arg1:T18 Arg2:T19	
+R17	REASON Arg1:T18 Arg2:T16	
+R2	REASON Arg1:T8 Arg2:T7	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T2	Argument 0 22	動力伝達装置において、バルブボデーが異常摩耗
+T20	Connective 22 23	し
+R18	REASON Arg1:T20 Arg2:T2	
+R19	RESULT Arg1:T20 Arg2:T1	
+R20	RESULT Arg1:T20 Arg2:T3	

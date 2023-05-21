@@ -1,0 +1,17 @@
+T1	Argument 0 28	ワンマンバスの中扉開閉機構において、開閉制御仕様が不適切
+T2	Connective 29 31	ため
+T5	Argument 32 49	扉が開いた状態から特定の操作を行う
+T6	Connective 49 50	と
+T7	Argument 51 65	開閉状態を正しく認識できない
+T8	Connective 71 75	そのため
+T9	Argument 76 101	扉が開いたまま走行することを防止する機能が作動せず
+T10	Argument 102 107	発車できる
+T11	Connective 101 102	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T11 Arg2:T9	
+R10	RESULT Arg1:T11 Arg2:T10	

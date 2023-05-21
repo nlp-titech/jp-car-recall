@@ -1,0 +1,16 @@
+T1	Parts 0 4	エンジン
+T2	Parts 5 17	ブローバイ・ガス還元装置
+T3	Parts 22 33	インテークマニホールド
+T4	Parts 82 93	インテークマニホールド
+T5	Parts 99 106	クランクケース
+T6	Parts 113 117	エンジン
+T7	Parts 120 129	オイルレベル警告灯
+T8	Parts 141 145	エンジン
+R1	Coreference Arg1:T1 Arg2:T6	
+R2	Coreference Arg1:T6 Arg2:T8	
+R3	Coreference Arg1:T3 Arg2:T4	
+R4	Part-Whole Arg1:T5 Arg2:T6	
+R5	Part-Whole Arg1:T2 Arg2:T1	
+R6	Part-Whole Arg1:T3 Arg2:T1	
+R7	Connect Arg1:T2 Arg2:T3	
+R8	Connect Arg1:T5 Arg2:T7	

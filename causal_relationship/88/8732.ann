@@ -1,0 +1,9 @@
+T1	Connective 41 43	ため
+T2	Argument 9 40	後二軸間に設置されている中間フェンダーステーの取付位置が不適切
+R1	REASON Arg1:T1 Arg2:T2	
+T3	Argument 44 77	当該フェンダーステーと後部緩衝装置のＵボルトが、悪路走行時等に接触
+R2	RESULT Arg1:T1 Arg2:T3	
+T4	Argument 79 88	当該Ｕボルトが損傷
+T5	Connective 78 79	、
+R3	REASON Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T4	

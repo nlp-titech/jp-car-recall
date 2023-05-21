@@ -1,0 +1,9 @@
+T1	Parts 0 9	助手席用エアバッグ
+T2	Parts 34 39	エアバッグ
+T3	Parts 43 46	バッグ
+T4	Parts 68 71	バッグ
+T5	Parts 77 85	バッグ固定用金具
+R1	Coreference Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T3 Arg2:T2	
+R3	Coreference Arg1:T4 Arg2:T3	
+R4	Contact Arg1:T5 Arg2:T4	

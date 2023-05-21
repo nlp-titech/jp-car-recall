@@ -1,0 +1,29 @@
+T1	Argument 13 44	ステアリングコラムを固定しているボルト・ナットの締付けが不適切
+T2	Connective 45 47	ため
+T3	Argument 48 67	当該ボルト・ナットの締付けトルクが不足
+T4	Connective 77 81	そのため
+T5	Argument 82 96	そのままの状態で使用を続ける
+T6	Connective 96 97	と
+T7	Argument 98 110	当該ボルト・ナットが緩ん
+T8	Connective 110 111	で
+T9	Argument 111 126	ステアリングコラムにガタが生じ
+T10	Connective 126 127	、
+T11	Argument 127 129	最悪
+T12	Connective 130 132	場合
+T13	Argument 133 145	当該ボルト・ナットが脱落
+T14	Connective 147 148	と
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+T15	Argument 148 166	正常なステアリング操作が出来なくなる
+R14	RESULT Arg1:T14 Arg2:T15	

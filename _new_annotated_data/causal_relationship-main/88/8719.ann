@@ -1,0 +1,33 @@
+T1	Connective 44 46	ため
+T2	Argument 47 59	当該取付部品の強度が不足
+R1	RESULT Arg1:T1 Arg2:T2	
+T3	Connective 69 73	そのため
+R2	REASON Arg1:T3 Arg2:T2	
+T4	Argument 74 84	そのまま使用を続ける
+T5	Connective 84 85	と
+T6	Argument 98 109	当該溶接部に亀裂が生じ
+R3	RESULT Arg1:T3 Arg2:T6	
+T7	Argument 86 95	開閉時の振動や応力
+T8	Connective 95 98	により
+R4	REASON Arg1:T8 Arg2:T7	
+R5	RESULT Arg1:T8 Arg2:T6	
+R6	CONDITION Arg1:T5 Arg2:T4	
+R7	RESULT Arg1:T5 Arg2:T6	
+T9	Connective 109 110	、
+T10	Argument 110 112	最悪
+T11	Connective 113 115	場合
+T12	Argument 116 122	溶接部が破断
+R8	REASON Arg1:T9 Arg2:T6	
+R9	RESULT Arg1:T9 Arg2:T12	
+R10	CONDITION Arg1:T11 Arg2:T10	
+R11	RESULT Arg1:T11 Arg2:T12	
+T13	Argument 123 138	当該丁番部品及び上枠部品が脱落
+T14	Connective 122 123	し
+R12	REASON Arg1:T14 Arg2:T12	
+T15	Argument 139 141	負傷
+T16	Connective 138 139	し
+R13	RESULT Arg1:T14 Arg2:T13	
+R14	REASON Arg1:T16 Arg2:T13	
+R15	RESULT Arg1:T16 Arg2:T15	
+T17	Argument 0 43	大型ダンプの後支柱上部に取り付けたステンレス製丁番において、丁番部品の溶接範囲が不適切
+R16	REASON Arg1:T1 Arg2:T17	

@@ -1,0 +1,29 @@
+T1	Connective 43 45	ため
+T2	Argument 89 96	カバーが外れる
+R1	RESULT Arg1:T1 Arg2:T2	
+T3	Argument 46 84	車両の経過年数や使用状況（非常にスポーティな走行や路面の悪いオフロード走行）
+T4	Connective 84 88	によって
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T2	
+T5	Argument 0 42	原動機において、上部に取り付けられたカバー（エンジンカバー）取付け箇所の強度が不十分
+R4	REASON Arg1:T1 Arg2:T5	
+T6	Connective 102 106	そのため
+R5	REASON Arg1:T6 Arg2:T2	
+T7	Argument 144 146	溶損
+R6	RESULT Arg1:T6 Arg2:T15	
+T8	Argument 124 143	ターボチャージャー等の高温箇所に触れる
+T9	Connective 143 144	と
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T7	
+T10	Connective 147 148	、
+T11	Argument 154 159	火災に至る
+R9	REASON Arg1:T10 Arg2:T7	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 148 150	最悪
+T13	Connective 151 153	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T11	
+T15	Argument 107 122	エンジンルーム内でカバーが移動
+T16	Connective 123 124	て
+R14	REASON Arg1:T16 Arg2:T15	
+R15	RESULT Arg1:T16 Arg2:T8	

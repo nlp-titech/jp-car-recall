@@ -1,0 +1,31 @@
+T1	Argument 0 29	４８Ｖスタータオルタネータの配線において、作業指示が不適切
+T2	Connective 30 32	ため
+T3	Argument 33 48	配線に誤った取付金具が取り付け
+T4	Connective 50 51	、
+T5	Argument 51 56	誤った結線
+T6	Connective 68 72	そのため
+T7	Argument 73 79	高負荷運転時
+T8	Connective 79 80	に
+T9	Argument 80 96	フューズの容量を超える電流が流れ
+T10	Argument 97 99	最悪
+T11	Connective 100 102	場合
+T12	Argument 103 110	フューズが溶断
+T13	Connective 112 113	て
+T14	Argument 113 119	警告灯が点灯
+R2	REASON Arg1:T2 Arg2:T1	
+R3	RESULT Arg1:T2 Arg2:T3	
+R4	REASON Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T4 Arg2:T5	
+R1	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T15	Connective 96 97	、
+R9	REASON Arg1:T15 Arg2:T9	
+R10	RESULT Arg1:T15 Arg2:T12	
+R11	CONDITION Arg1:T11 Arg2:T10	
+R12	RESULT Arg1:T11 Arg2:T12	
+R13	REASON Arg1:T13 Arg2:T12	
+R14	RESULT Arg1:T13 Arg2:T14	
+T16	Argument 125 139	エンジンの始動ができなくなる
+R15	RESULT Arg1:T13 Arg2:T16	

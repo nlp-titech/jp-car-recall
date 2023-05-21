@@ -1,0 +1,25 @@
+T1	Argument 8 30	クランクシャフトセンサーのプログラムが不適切
+T2	Connective 31 33	ため
+T3	Argument 34 54	クランクシャフトの位置が適切に検出されず
+T4	Connective 54 55	、
+T5	Argument 55 78	エンジンコントロールユニットに誤った信号が入力
+T6	Connective 82 86	そのため
+T7	Argument 87 116	燃料の噴射タイミングと点火時期を正確に制御することができず
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T8	Argument 117 132	エンジンの回転が安定しなくなり
+T9	Connective 116 117	、
+T10	Argument 133 135	最悪
+T11	Connective 132 133	、
+T12	Connective 136 138	場合
+T13	Argument 139 150	走行中にエンジンが停止
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+R9	REASON Arg1:T11 Arg2:T8	
+R10	RESULT Arg1:T11 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T10	
+R12	RESULT Arg1:T12 Arg2:T13	

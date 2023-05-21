@@ -1,0 +1,9 @@
+T1	Argument 0 35	エンジンコントロールユニットの制御プログラムにおいて、生産指示が不適切
+T2	Connective 36 38	ため
+T3	Argument 39 52	誤った制御プログラムが搭載
+T4	Connective 58 62	そのため
+T5	Argument 63 75	排出ガスが基準値を超える
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

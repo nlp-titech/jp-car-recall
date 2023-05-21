@@ -1,0 +1,15 @@
+T1	Argument 21 39	側方照射灯において、取付位置が不適切
+T2	Argument 46 84	自動点灯（オートライト）機能を装備した車両の自動点灯／消灯プログラムが不適切
+T3	Connective 85 87	ため
+T6	Argument 88 106	操作条件によりすれ違い用前照灯が消灯
+T7	Connective 108 109	際
+T8	Argument 110 121	側方照射灯が消灯しない
+T9	Connective 127 131	そのため
+T10	Argument 132 169	道路運送車両法の保安基準第３３条の２（側方照射灯）で定める要件に満足しない
+R1	REASON Arg1:T3 Arg2:T2	
+R2	REASON Arg1:T3 Arg2:T1	
+R3	RESULT Arg1:T3 Arg2:T8	
+R6	CONDITION Arg1:T7 Arg2:T6	
+R7	RESULT Arg1:T7 Arg2:T8	
+R8	REASON Arg1:T9 Arg2:T8	
+R9	RESULT Arg1:T9 Arg2:T10	

@@ -1,0 +1,25 @@
+T1	Argument 9 23	燃料タンクの溶接方法が不適切
+T2	Connective 24 26	ため
+T3	Argument 27 61	当該タンク上部に取り付けられたカバープレートが正しく溶接されていない
+T4	Connective 67 71	そのため
+T5	Argument 72 77	走行振動等
+T6	Connective 77 80	により
+T7	Argument 80 89	溶接部に亀裂が生じ
+T8	Connective 89 90	、
+T9	Argument 90 104	そのままの状態で使用を続ける
+T10	Argument 106 111	亀裂が進展
+T11	Connective 112 113	、
+T12	Argument 113 125	亀裂部位から燃料が漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T10	
+T13	Connective 104 105	と
+R9	CONDITION Arg1:T13 Arg2:T9	
+R10	RESULT Arg1:T13 Arg2:T10	
+R11	REASON Arg1:T11 Arg2:T10	
+R12	RESULT Arg1:T11 Arg2:T12	

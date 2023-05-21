@@ -1,0 +1,25 @@
+T1	Argument 0 71	運転者席および助手席のシートリクライニング機構において、リクライニングロック用のスプリングを取付けるスプリングスペーサ成形時の端部形状が不適切
+T2	Connective 72 74	ため
+T3	Argument 75 88	リクライニング操作の繰返し
+T4	Connective 88 91	により
+T6	Connective 119 123	そのため
+T7	Argument 124 139	シートバックを保持できなくなり
+T8	Connective 139 140	、
+T9	Argument 140 142	最悪
+T10	Connective 143 145	場合
+T12	Connective 172 173	と
+T5	Argument 91 113	当該スプリングがスプリングスペーサから外れる
+T11	Argument 146 170	リクライニングレバーが戻らないことに気づかず走行
+T13	Argument 174 188	意図せずシートバックが倒れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R9	CONDITION Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R8	RESULT Arg1:T8 Arg2:T13	

@@ -1,0 +1,25 @@
+T1	Connective 40 42	ため
+T2	Argument 43 54	当該シールの強度が不足
+R1	RESULT Arg1:T1 Arg2:T2	
+T3	Connective 59 63	そのため
+R2	REASON Arg1:T3 Arg2:T2	
+T4	Argument 74 80	シールが破損
+R3	RESULT Arg1:T3 Arg2:T4	
+T5	Argument 64 71	走行時等の負荷
+T6	Connective 71 74	により
+R4	REASON Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T6 Arg2:T4	
+T7	Argument 82 84	最悪
+T8	Connective 85 87	場合
+T9	Argument 88 96	油圧が保持できず
+T10	Connective 81 82	、
+R6	REASON Arg1:T10 Arg2:T4	
+R7	RESULT Arg1:T10 Arg2:T9	
+R8	CONDITION Arg1:T8 Arg2:T7	
+R9	RESULT Arg1:T8 Arg2:T9	
+T11	Argument 97 107	高速走行できなくなる
+T12	Connective 96 97	、
+R10	REASON Arg1:T12 Arg2:T9	
+R11	RESULT Arg1:T12 Arg2:T11	
+T13	Argument 8 39	変速ギヤにおいて、高速側ギヤのクラッチ部のシールの選定が不適切
+R12	REASON Arg1:T1 Arg2:T13	

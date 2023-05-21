@@ -1,0 +1,25 @@
+T1	Argument 0 47	ＡＢＳアクチュエータにおいて、指定されている種類以外など性質が不安定なブレーキ液への耐性が不足
+T2	Connective 51 53	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 54 74	バルブ表面の亜鉛メッキにゲル状物質が生成
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 77 87	バルブの摺動性が悪化
+T5	Connective 75 76	れ
+R3	REASON Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T4	
+T6	Connective 95 99	そのため
+T7	Argument 100 111	バルブが正常に閉じない
+T8	Connective 111 113	場合
+R5	CONDITION Arg1:T8 Arg2:T7	
+T9	Argument 114 119	液圧が低下
+R6	REASON Arg1:T6 Arg2:T4	
+R7	RESULT Arg1:T6 Arg2:T9	
+R8	RESULT Arg1:T8 Arg2:T9	
+T12	Connective 119 120	し
+R10	REASON Arg1:T12 Arg2:T9	
+T13	Argument 120 144	ブレーキペダル操作時にペダルストロークが深くなり
+R11	RESULT Arg1:T12 Arg2:T13	
+T14	Argument 145 154	制動距離が長くなる
+T15	Connective 144 145	、
+R13	REASON Arg1:T15 Arg2:T13	
+R14	RESULT Arg1:T15 Arg2:T14	

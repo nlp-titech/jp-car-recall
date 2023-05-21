@@ -1,0 +1,9 @@
+T1	Argument 9 29	ＤＰＦマフラーの取付作業時の確認が不適切
+T2	Connective 30 32	ため
+T3	Argument 33 50	異なる仕様のＤＰＦマフラーを誤装着
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 58 62	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 63 86	保安基準第３１条（排出ガスの基準）に適合しない
+R4	RESULT Arg1:T4 Arg2:T5	

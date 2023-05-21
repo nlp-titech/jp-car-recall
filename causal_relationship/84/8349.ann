@@ -1,0 +1,19 @@
+T1	Argument 0 42	エンジンコントロールユニットの制御プログラムにおいて、車両へ搭載する仕様指示が不適切
+T2	Connective 43 45	ため
+T3	Argument 46 62	失火検知の診断が正しく作動しない
+T4	Connective 68 72	そのため
+T5	Argument 73 113	不具合が生じていないにも係わらずメーターパネル内のエンジン警告灯（ＭＩＬ）が点灯
+T7	Argument 115 130	誤検知したシリンダの燃焼を休止
+T8	Connective 132 133	て
+T9	Argument 134 136	最悪
+T10	Connective 137 139	場合
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T7	
+R6	REASON Arg1:T8 Arg2:T7	
+R8	CONDITION Arg1:T10 Arg2:T9	
+T6	Argument 140 152	排出ガスが基準値を超える
+R7	RESULT Arg1:T8 Arg2:T6	
+R9	RESULT Arg1:T10 Arg2:T6	

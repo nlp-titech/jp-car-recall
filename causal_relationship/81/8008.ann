@@ -1,0 +1,25 @@
+T1	Argument 4 50	電気配線において、バッテリからヒューズボックスの間に設置したパネル貫通型端子台の選定が不適切
+T2	Connective 51 53	ため
+T3	Argument 54 59	走行振動等
+T4	Connective 59 62	により
+T5	Argument 62 70	接触不良を起こす
+T6	Connective 76 80	そのため
+T7	Argument 81 86	接点が摩耗
+T8	Argument 88 95	通電不能となり
+T9	Connective 87 88	、
+T10	Connective 95 96	、
+T11	Argument 96 98	最悪
+T12	Connective 99 101	場合
+T13	Argument 102 110	走行できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+R9	REASON Arg1:T10 Arg2:T8	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	

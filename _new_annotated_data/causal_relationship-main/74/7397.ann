@@ -1,0 +1,21 @@
+T1	Argument 11 25	不適切なマフラの取り付け手順
+T2	Connective 25 28	により
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 29 45	エキゾーストパイプの固定が不完全
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 52 56	そのため
+T7	Argument 57 85	走行中、エキゾーストパイプホルダ固定用ナットに緩みが発生
+R4	RESULT Arg1:T4 Arg2:T7	
+R6	REASON Arg1:T4 Arg2:T3	
+T8	Argument 87 89	最悪
+T9	Connective 90 92	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+T10	Connective 86 87	、
+R8	REASON Arg1:T10 Arg2:T7	
+T11	Argument 93 118	当該ナット及びエキゾーストパイプ固定用カラーが脱落
+R9	RESULT Arg1:T9 Arg2:T11	
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 119 129	他の交通の妨げとなる
+T13	Connective 118 119	し
+R11	REASON Arg1:T13 Arg2:T11	
+R12	RESULT Arg1:T13 Arg2:T12	

@@ -1,0 +1,21 @@
+T1	Argument 0 45	燃料装置のキャップレスフューエルフィラーインサート（燃料給油口）において、防水設計が不適切
+T2	Connective 46 48	ため
+T4	Connective 75 79	そのため
+T5	Argument 80 87	燃料装置が腐食
+T6	Connective 88 89	、
+T8	Argument 97 105	エンジン始動不良
+T9	Argument 109 116	燃料漏れに至る
+R1	REASON Arg1:T2 Arg2:T1	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R7	RESULT Arg1:T6 Arg2:T8	
+R8	RESULT Arg1:T6 Arg2:T9	
+T3	Argument 49 52	大雨等
+T10	Connective 52 55	により
+T11	Argument 55 67	燃料装置内部へ雨水が浸入
+R2	REASON Arg1:T10 Arg2:T3	
+R3	RESULT Arg1:T10 Arg2:T11	
+R9	RESULT Arg1:T2 Arg2:T11	
+T7	Argument 89 96	走行中エンスト
+R6	RESULT Arg1:T6 Arg2:T7	
+R10	REASON Arg1:T4 Arg2:T11	

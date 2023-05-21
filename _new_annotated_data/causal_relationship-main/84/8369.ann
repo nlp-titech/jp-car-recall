@@ -1,0 +1,9 @@
+T2	Connective 74 76	ため
+T3	Argument 77 104	スキャンツール又は保守ツールから故障コードの消去を要求
+T4	Connective 107 108	際
+T5	Argument 110 124	当該故障コードを消去できない
+T1	Argument 21 73	排出ガスシステムＯＢＤ（車載式故障診断装置）において、ＥＭＳ（エンジン管理システム）のプログラムが不適切
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

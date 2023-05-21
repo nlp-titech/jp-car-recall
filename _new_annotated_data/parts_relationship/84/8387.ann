@@ -1,0 +1,14 @@
+T1	Parts 0 3	原動機
+T2	Parts 4 9	オイルパン
+T3	Parts 28 31	原動機
+T4	Parts 40 45	取付ボルト
+T5	Parts 71 76	オイルパン
+T6	Parts 78 85	エンジンオイル
+T7	Parts 98 101	オイル
+T8	Parts 102 107	後輪タイヤ
+R1	Coreference Arg1:T1 Arg2:T3	
+R2	Coreference Arg1:T2 Arg2:T5	
+R3	Part-Whole Arg1:T6 Arg2:T5	
+R4	Coreference Arg1:T6 Arg2:T7	
+R5	Part-Whole Arg1:T2 Arg2:T1	
+R6	Contact Arg1:T2 Arg2:T4	

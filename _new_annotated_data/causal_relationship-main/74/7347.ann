@@ -1,0 +1,21 @@
+T1	Argument 0 41	オートマチックトランスミッションのセレクタケーブルにおいて、ブッシュの材質が不適切
+T2	Connective 42 44	ため
+T3	Argument 45 50	強度が不足
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 60 64	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 65 74	当該ブッシュが破損
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 76 99	シフト位置が正しくトランスミッションに伝わらず
+T7	Connective 75 76	、
+R5	REASON Arg1:T7 Arg2:T5	
+T8	Argument 100 118	パーキングブレーキを作動させていない
+T9	Connective 118 120	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+T10	Argument 121 132	意図せず車両が動き出す
+R8	RESULT Arg1:T9 Arg2:T10	
+T11	Connective 99 100	、
+R10	RESULT Arg1:T11 Arg2:T10	
+R6	RESULT Arg1:T7 Arg2:T6	
+R9	REASON Arg1:T11 Arg2:T6	

@@ -1,0 +1,50 @@
+T1	Argument 15 44	駐車ブレーキ用リレーバルブ内部の樹脂ピストンの材質が不適切
+T2	Connective 45 47	ため
+T3	Argument 59 63	加水分解
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 48 56	エア回路中の水分
+T5	Connective 56 59	により
+R3	REASON Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T3	
+T6	Connective 64 65	て
+T7	Argument 76 85	当該ピストンが破損
+R5	REASON Arg1:T6 Arg2:T3	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 66 73	ブレーキエア圧
+T9	Connective 73 76	により
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T7	
+T10	Connective 93 97	そのため
+R9	REASON Arg1:T10 Arg2:T7	
+T11	Argument 98 112	ブレーキバルブからのエア漏れ
+R10	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 114 125	駐車ブレーキの解除不能
+R11	RESULT Arg1:T10 Arg2:T12	
+T13	Argument 126 137	ブレーキ引きずりが発生
+R12	RESULT Arg1:T10 Arg2:T13	
+T14	Argument 167 200	ＤＰＤ（粒子状物質除去装置）再生時のエンジン制御プログラムが不適切
+T15	Connective 201 203	ため
+R13	REASON Arg1:T15 Arg2:T14	
+T16	Argument 204 225	ＤＰＤ再生用燃料の一部がＤＰＤの下流で燃焼
+R14	RESULT Arg1:T15 Arg2:T16	
+T17	Argument 227 256	尿素ＳＣＲ（選択還元型触媒）付近の排出ガス温度が高温となる
+T18	Connective 226 227	、
+R15	REASON Arg1:T18 Arg2:T16	
+R16	RESULT Arg1:T18 Arg2:T17	
+T19	Connective 262 266	そのため
+R17	REASON Arg1:T19 Arg2:T17	
+T20	Argument 275 285	尿素水ホース等が溶損
+R18	RESULT Arg1:T19 Arg2:T21	
+T21	Argument 267 272	その放射熱
+T22	Connective 272 275	により
+R19	REASON Arg1:T22 Arg2:T21	
+R20	RESULT Arg1:T22 Arg2:T20	
+T23	Argument 287 293	尿素水が漏れ
+T24	Connective 286 287	て
+R21	REASON Arg1:T24 Arg2:T20	
+R22	RESULT Arg1:T24 Arg2:T23	
+T25	Argument 294 322	排出ガス中の窒素酸化物（ＮＯｘ）の排出値が基準値を超える
+T26	Connective 293 294	、
+R23	REASON Arg1:T26 Arg2:T23	
+R24	RESULT Arg1:T26 Arg2:T25	

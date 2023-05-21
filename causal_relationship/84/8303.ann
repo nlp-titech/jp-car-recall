@@ -1,0 +1,5 @@
+T1	Argument 20 70	リヤブレーキ用の１５Ｌエアタンクにリヤブレーキ系統であることを示す識別ラベルを貼り付ける指示が不適切
+T2	Connective 71 73	ため
+T3	Argument 74 90	当該ラベルが貼り付けられていない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

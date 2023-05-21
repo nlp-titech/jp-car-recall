@@ -1,0 +1,19 @@
+T1	Argument 0 30	大型トラクタにおいて、トレーラ側ブレーキランプの回路が不適切
+T2	Connective 31 33	ため
+T5	Argument 34 58	ブレーキランプ点灯時に当該回路のダイオードが焼損
+T6	Connective 66 70	そのため
+T7	Argument 71 89	トレーラ側ブレーキランプが不灯になっ
+T8	Connective 89 90	て
+T9	Argument 90 105	ブレーキランプ異常の警告が表示
+T11	Argument 108 110	最悪
+T12	Connective 111 113	場合
+T13	Argument 114 119	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R9	RESULT Arg1:T6 Arg2:T13	

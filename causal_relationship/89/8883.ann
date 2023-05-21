@@ -1,0 +1,33 @@
+T1	Argument 8 44	ラジエーターチャンバー（冷却水内の気泡を分離するための装置）の強度が不足
+T2	Connective 48 50	ため
+T5	Argument 51 95	積載状態で高速度・高回転運転や登坂運転の直後に、エンジン停止を繰返す走行を継続して行なっ
+T6	Connective 96 98	場合
+T7	Argument 99 104	亀裂が発生
+T8	Connective 105 106	、
+T9	Argument 106 113	冷却水が漏れる
+T10	Connective 119 123	そのため
+T11	Argument 124 134	そのまま走行を続ける
+T12	Connective 134 135	と
+T13	Argument 136 146	オーバーヒートが発生
+T14	Connective 147 148	、
+T15	Argument 148 150	最悪
+T16	Connective 151 153	場合
+T17	Argument 154 161	エンジンが停止
+T18	Argument 162 170	再始動不可となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T17	
+R15	CONDITION Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T17	
+T19	Connective 161 162	し
+R17	REASON Arg1:T19 Arg2:T17	
+R18	RESULT Arg1:T19 Arg2:T18	

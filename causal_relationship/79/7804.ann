@@ -1,0 +1,23 @@
+T2	Connective 40 42	ため
+T3	Argument 43 49	ボルトが緩む
+T5	Argument 60 71	ＡＢＳシステムが誤作動
+T6	Connective 72 73	、
+T7	Argument 73 83	ＡＢＳの警告灯が点灯
+T8	Argument 92 94	最悪
+T9	Connective 95 97	場合
+T10	Argument 98 109	ＡＢＳが機能しなくなり
+T11	Connective 109 110	、
+T12	Argument 110 118	制動距離が伸びる
+R2	RESULT Arg1:T2 Arg2:T3	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T10	
+R9	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T12	
+T1	Argument 0 39	リヤブレーキにおいて、ＡＢＳのパルサーリングを固定しているボルトの固定が不十分
+R1	REASON Arg1:T2 Arg2:T1	
+T4	Connective 55 59	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R11	RESULT Arg1:T6 Arg2:T10	

@@ -1,0 +1,25 @@
+T1	Argument 1 43	燃料タンクにおいて、タンク上面にある樹脂製ポンプリングの締め付けトルクの設定が不適切
+T2	Connective 44 46	ため
+T3	Argument 47 59	ポンプリングの強度が低下
+T4	Connective 67 71	そのため
+T5	Argument 72 82	そのまま使用を続ける
+T6	Connective 82 83	と
+T7	Argument 83 94	ポンプリングに亀裂が入
+T8	Connective 94 95	り
+T9	Argument 95 100	燃料が漏れ
+T10	Connective 100 101	、
+T11	Argument 101 103	最悪
+T12	Connective 104 106	場合
+T13	Argument 107 112	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	

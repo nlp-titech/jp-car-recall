@@ -1,0 +1,17 @@
+T1	Argument 25 51	燃料タンク及び作動油タンクにおいて、溶接方法が不適切
+T2	Connective 52 54	ため
+T3	Argument 55 64	溶け込み不足が発生
+T4	Connective 74 78	そのため
+T5	Argument 79 100	当該部位への負荷が大きい作業を繰り返し行う
+T6	Connective 100 101	と
+T7	Argument 102 114	当該溶接部位に亀裂が発生
+T8	Connective 115 116	、
+T9	Argument 116 128	燃料及び作動油漏れに至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	

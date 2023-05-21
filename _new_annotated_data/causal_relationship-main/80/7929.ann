@@ -1,0 +1,13 @@
+T1	Argument 0 39	バスの統合制御コントローラにおいて、扉挟み込み防止機能の制御プログラムが不適切
+T2	Connective 40 42	ため
+T3	Argument 43 61	扉閉作動中にアクセルペダルを踏み込む
+T4	Connective 61 62	と
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+T5	Argument 63 78	扉挟み込み防止機能が作動を停止
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 79 80	、
+R5	REASON Arg1:T6 Arg2:T5	
+T7	Argument 80 89	乗客が扉に挟み込ま
+R6	RESULT Arg1:T6 Arg2:T7	

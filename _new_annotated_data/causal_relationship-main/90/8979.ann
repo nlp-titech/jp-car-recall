@@ -1,0 +1,70 @@
+T1	Argument 11 35	キャビン前面の制振材において、組付け作業が不適切
+T2	Connective 36 38	ため
+T3	Argument 61 78	保護フィルムの上に吸音材を貼り付け
+T4	Connective 85 89	そのため
+T5	Argument 90 104	そのままの状態で使用を続ける
+T6	Connective 104 105	と
+T7	Argument 106 123	吸音材が保護フィルムとともに剥がれ
+T8	Connective 123 124	て
+T9	Argument 124 131	マフラーに接近
+T10	Connective 132 133	、
+T11	Argument 133 135	最悪
+T12	Connective 136 138	場合
+T13	Argument 139 145	マフラーの熱
+T14	Connective 145 148	により
+T15	Argument 148 154	吸音材が焼損
+T16	Connective 155 156	て
+T17	Argument 156 161	火災となる
+T18	Argument 179 208	エンジンルーム内のワイヤハーネスにおいて、取り回しが不適切
+T19	Connective 209 211	ため
+T20	Argument 212 226	ワイヤハーネスとステーが接触
+T21	Connective 236 240	そのため
+T22	Argument 241 248	走行中の振動等
+T23	Connective 248 251	により
+T24	Argument 252 267	当該ワイヤハーネスの被覆が摩耗
+T25	Connective 267 270	により
+T26	Argument 270 272	損傷
+T27	Connective 273 274	て
+T28	Argument 274 281	内部電線が短絡
+T29	Connective 282 283	、
+T30	Argument 283 285	最悪
+T31	Connective 286 288	場合
+T32	Argument 289 299	ワイヤハーネスが焼損
+T33	Connective 300 301	て
+T34	Argument 301 306	火災となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T35	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T15	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T15	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R15	REASON Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T17	
+R17	REASON Arg1:T19 Arg2:T18	
+R18	RESULT Arg1:T19 Arg2:T20	
+R19	REASON Arg1:T21 Arg2:T20	
+R20	RESULT Arg1:T21 Arg2:T24	
+R21	REASON Arg1:T25 Arg2:T24	
+R22	RESULT Arg1:T25 Arg2:T26	
+R24	REASON Arg1:T27 Arg2:T26	
+R25	RESULT Arg1:T27 Arg2:T28	
+R26	REASON Arg1:T29 Arg2:T28	
+R27	RESULT Arg1:T29 Arg2:T32	
+R28	CONDITION Arg1:T31 Arg2:T30	
+R29	RESULT Arg1:T31 Arg2:T32	
+R30	REASON Arg1:T33 Arg2:T32	
+R31	RESULT Arg1:T33 Arg2:T34	
+R32	REASON Arg1:T23 Arg2:T22	
+R33	RESULT Arg1:T23 Arg2:T24	
+T35	Argument 39 59	制振材表面の不要な保護フィルムを剥がさず
+T36	Connective 60 61	、
+R23	REASON Arg1:T36 Arg2:T35	
+R34	RESULT Arg1:T36 Arg2:T3	

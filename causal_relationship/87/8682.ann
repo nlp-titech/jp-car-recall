@@ -1,0 +1,29 @@
+T1	Argument 0 29	電動式パワーステアリング機構において、設計時の評価が不十分
+T2	Connective 33 35	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 36 50	そのままの状態で使用を続ける
+T4	Connective 50 51	と
+R2	CONDITION Arg1:T4 Arg2:T3	
+T5	Argument 51 63	想定の以上の出力がかかる
+T6	Connective 65 66	で
+R3	REASON Arg1:T6 Arg2:T5	
+T7	Argument 66 83	ステアリングロッドブラケットが破損
+R4	RESULT Arg1:T6 Arg2:T7	
+R5	RESULT Arg1:T4 Arg2:T7	
+T8	Argument 85 97	ステアリングリンクが外れ
+T9	Connective 84 85	、
+R6	REASON Arg1:T9 Arg2:T7	
+R7	RESULT Arg1:T9 Arg2:T8	
+T10	Argument 98 100	最悪
+T11	Connective 101 103	場合
+R8	CONDITION Arg1:T11 Arg2:T10	
+T12	Argument 104 115	ハンドルが切れなくなり
+R9	RESULT Arg1:T11 Arg2:T12	
+T13	Connective 97 98	、
+R10	REASON Arg1:T13 Arg2:T8	
+R11	RESULT Arg1:T13 Arg2:T12	
+T14	Argument 116 124	他の交通を妨げる
+T15	Connective 115 116	、
+R12	REASON Arg1:T15 Arg2:T12	
+R13	RESULT Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T2 Arg2:T5	

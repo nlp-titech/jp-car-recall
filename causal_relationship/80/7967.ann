@@ -1,0 +1,29 @@
+T1	Connective 64 68	そのため
+T2	Argument 69 94	アキュムレーターの継続的な油圧変化による疲労の蓄積
+T5	Connective 94 97	により
+T6	Argument 98 113	アッパーハウジングに亀裂が発生
+T7	Argument 115 120	油圧が低下
+T8	Argument 123 125	最悪
+T9	Connective 126 128	場合
+T10	Argument 129 138	駆動力が伝達されず
+T11	Argument 138 146	走行できなくなる
+T12	Argument 48 54	耐久性が不足
+R1	REASON Arg1:T1 Arg2:T12	
+R2	RESULT Arg1:T1 Arg2:T6	
+T13	Connective 114 115	、
+R3	REASON Arg1:T5 Arg2:T2	
+R4	RESULT Arg1:T5 Arg2:T6	
+R5	REASON Arg1:T13 Arg2:T6	
+R6	RESULT Arg1:T13 Arg2:T7	
+T3	Connective 121 122	て
+R7	REASON Arg1:T3 Arg2:T7	
+R8	RESULT Arg1:T3 Arg2:T10	
+R9	CONDITION Arg1:T9 Arg2:T8	
+R10	RESULT Arg1:T9 Arg2:T10	
+T4	Connective 152 153	。
+R11	REASON Arg1:T4 Arg2:T10	
+R12	RESULT Arg1:T4 Arg2:T11	
+T14	Argument 0 44	７速ＤＳＧ型自動変速機のメカトロニクスにおいて、アッパーハウジングのねじ切り加工が不適切
+T15	Connective 45 47	ため
+R13	REASON Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T12	

@@ -1,0 +1,40 @@
+T1	Argument 3 15	排気管の強度検討が不十分
+T2	Connective 16 18	ため
+T3	Argument 19 25	高負荷運転時
+T4	Connective 25 26	に
+T5	Argument 26 41	排気ガスの圧力変動に耐えられず
+T6	Connective 41 42	、
+T7	Argument 42 48	排気管が破損
+T8	Connective 49 50	、
+T9	Argument 50 58	排気ガスが漏れる
+T10	Argument 68 88	排気バルブを作動させるワイヤの強度が不足
+T11	Connective 92 94	ため
+T12	Argument 95 109	ワイヤを固定する位置がずれる
+T13	Connective 115 119	そのため
+T14	Argument 120 133	排気バルブが適切に作動せず
+T15	Connective 133 134	、
+T16	Argument 134 140	警告灯が点灯
+T18	Argument 142 152	排気騒音が大きくなり
+T20	Argument 153 155	最悪
+T21	Connective 156 158	場合
+T22	Argument 159 171	保安基準を満足しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R2	RESULT Arg1:T2 Arg2:T5	
+R9	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T12	
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T14	
+R13	REASON Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T16	
+R19	CONDITION Arg1:T21 Arg2:T20	
+R20	RESULT Arg1:T21 Arg2:T22	
+R15	RESULT Arg1:T15 Arg2:T18	
+T17	Connective 152 153	、
+R16	REASON Arg1:T17 Arg2:T18	
+R17	RESULT Arg1:T17 Arg2:T22	

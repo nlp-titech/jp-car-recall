@@ -1,0 +1,33 @@
+T1	Connective 34 36	ため
+T2	Argument 0 33	コンビネーションスイッチ内部の側方照射灯スイッチの接点形状が不適切
+R1	REASON Arg1:T1 Arg2:T2	
+T3	Argument 99 113	当該接点間にアーク放電が発生
+R2	RESULT Arg1:T1 Arg2:T3	
+T4	Argument 115 120	接点が摩耗
+T5	Connective 114 115	て
+R3	REASON Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T4	
+T6	Argument 122 132	摩耗粉が基板上に堆積
+T7	Connective 121 122	、
+R5	REASON Arg1:T7 Arg2:T4	
+R6	RESULT Arg1:T7 Arg2:T6	
+T8	Connective 140 144	そのため
+R7	REASON Arg1:T8 Arg2:T6	
+T9	Argument 145 155	基板上の接点間が短絡
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 157 159	発熱
+T11	Connective 156 157	て
+R9	REASON Arg1:T11 Arg2:T9	
+R10	RESULT Arg1:T11 Arg2:T10	
+T12	Connective 160 161	、
+T13	Argument 161 166	火災に至る
+R11	REASON Arg1:T12 Arg2:T10	
+R12	RESULT Arg1:T12 Arg2:T13	
+T14	Argument 47 97	コンビネーションスイッチをそのストロークの中間位置に保持した状態で側方照射灯を点灯させる操作を行なう
+T15	Connective 97 98	と
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T3	
+T16	Argument 37 42	車線を変更
+T17	Connective 44 46	際等
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T3	

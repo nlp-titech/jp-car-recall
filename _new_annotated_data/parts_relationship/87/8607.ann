@@ -1,0 +1,18 @@
+T1	Parts 0 9	電動式駐車ブレーキ
+T2	Parts 14 20	駆動モーター
+T3	Parts 25 29	ケーブル
+T4	Parts 49 55	駐車ブレーキ
+T5	Parts 62 66	ケーブル
+T6	Parts 85 91	駆動モーター
+T7	Parts 104 107	警告灯
+T8	Parts 116 122	駐車ブレーキ
+T9	Parts 135 137	車両
+R1	Coreference Arg1:T1 Arg2:T4	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Coreference Arg1:T3 Arg2:T5	
+R4	Coreference Arg1:T2 Arg2:T6	
+R5	Contact Arg1:T2 Arg2:T3	
+R6	Coreference Arg1:T4 Arg2:T8	
+R7	Part-Whole Arg1:T8 Arg2:T9	
+R8	Connect Arg1:T7 Arg2:T8	
+R9	Part-Whole Arg1:T7 Arg2:T9	

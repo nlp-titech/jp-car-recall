@@ -1,0 +1,25 @@
+T1	Connective 33 35	ため
+T2	Argument 36 42	走行時の振動
+T3	Connective 42 45	により
+T4	Argument 45 60	当該コイルの内部に亀裂が生じる
+R1	REASON Arg1:T3 Arg2:T2	
+R2	RESULT Arg1:T3 Arg2:T4	
+T5	Connective 66 70	そのため
+R3	REASON Arg1:T5 Arg2:T4	
+T6	Argument 71 85	そのままの状態で使用を続ける
+T7	Connective 85 86	と
+T8	Argument 87 98	コイル内部の導線が断線
+R4	CONDITION Arg1:T7 Arg2:T6	
+R5	RESULT Arg1:T7 Arg2:T8	
+R6	RESULT Arg1:T5 Arg2:T8	
+T9	Connective 99 100	、
+T10	Argument 100 106	電動機が停止
+T11	Argument 107 115	走行できなくなる
+T12	Connective 106 107	し
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T10	
+R9	REASON Arg1:T12 Arg2:T10	
+R10	RESULT Arg1:T12 Arg2:T11	
+T13	Argument 0 32	運転者席ディスプレイ制御基板内のコイルにおいて、固定指示が不適切
+R11	REASON Arg1:T1 Arg2:T13	
+R12	RESULT Arg1:T1 Arg2:T4	

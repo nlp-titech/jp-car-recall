@@ -1,0 +1,34 @@
+T1	Argument 0 28	ナビゲーションシステムにおいて、制御プログラムの設定不備
+T2	Connective 28 31	により
+T3	Argument 35 54	起動時にシステム内の情報処理が完了せず
+T5	Argument 55 63	再起動を繰り返す
+T6	Argument 72 77	電源変動等
+T7	Connective 77 80	により
+T8	Argument 80 92	システム内の通信が途絶え
+T9	Connective 93 95	場合
+T10	Argument 96 106	復旧処理が行われない
+T11	Connective 120 121	、
+T12	Argument 121 127	黒画面となる
+T13	Argument 133 171	（１）（２）の状態において、液晶画面に直前直左確認用のカメラ映像が表示されず
+T14	Argument 172 197	保安基準第４４条（後写鏡等の基準）に適合しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R4	REASON Arg1:T7 Arg2:T6	
+R5	RESULT Arg1:T7 Arg2:T8	
+R6	CONDITION Arg1:T9 Arg2:T8	
+R7	RESULT Arg1:T9 Arg2:T10	
+R9	RESULT Arg1:T11 Arg2:T12	
+T15	Connective 171 172	、
+R13	REASON Arg1:T15 Arg2:T13	
+R14	RESULT Arg1:T15 Arg2:T14	
+T16	Connective 106 108	ため
+R8	REASON Arg1:T16 Arg2:T10	
+T17	Argument 108 120	カメラ映像に切り替わらず
+R15	RESULT Arg1:T16 Arg2:T17	
+R16	REASON Arg1:T11 Arg2:T17	
+T18	Connective 54 55	、
+R3	REASON Arg1:T18 Arg2:T3	
+R17	RESULT Arg1:T18 Arg2:T5	
+R18	RESULT Arg1:T2 Arg2:T10	
+R10	RESULT Arg1:T18 Arg2:T13	
+R11	RESULT Arg1:T16 Arg2:T13	

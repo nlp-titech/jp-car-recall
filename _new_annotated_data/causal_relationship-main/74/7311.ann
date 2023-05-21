@@ -1,0 +1,37 @@
+T1	Argument 18 65	ラジエータとエンジン間にある仕切板と仕切板を通るアフタークーラホースの最小隙間量の評価が不十分
+T2	Connective 66 68	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 69 102	仕切板とアフタークーラホース間の最小隙間量が十分に確保できていない
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 108 112	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 113 120	原動機等の振動
+T6	Connective 120 123	により
+T7	Argument 124 141	アフタークーラホースと仕切板が干渉
+R4	RESULT Arg1:T6 Arg2:T7	
+R5	REASON Arg1:T6 Arg2:T5	
+T8	Argument 143 153	そのまま使用を続ける
+T9	Connective 153 154	と
+R6	CONDITION Arg1:T9 Arg2:T8	
+T10	Connective 141 142	し
+R7	REASON Arg1:T10 Arg2:T7	
+T11	Argument 155 171	アフタークーラホースに亀裂が発生
+R8	RESULT Arg1:T10 Arg2:T11	
+R9	RESULT Arg1:T9 Arg2:T11	
+T12	Argument 174 176	最悪
+T13	Connective 177 179	場合
+T14	Argument 180 185	吸気が漏れ
+T15	Argument 186 190	燃焼不良
+T16	Connective 190 193	により
+T17	Argument 193 198	黒煙が発生
+R10	RESULT Arg1:T16 Arg2:T17	
+T18	Connective 185 186	、
+R11	RESULT Arg1:T18 Arg2:T15	
+R12	REASON Arg1:T16 Arg2:T15	
+R13	RESULT Arg1:T13 Arg2:T14	
+R14	CONDITION Arg1:T13 Arg2:T12	
+R15	RESULT Arg1:T4 Arg2:T7	
+T19	Connective 172 173	て
+R16	REASON Arg1:T19 Arg2:T11	
+R17	RESULT Arg1:T19 Arg2:T14	
+R18	REASON Arg1:T18 Arg2:T14	

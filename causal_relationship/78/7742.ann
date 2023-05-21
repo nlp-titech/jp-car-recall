@@ -1,0 +1,37 @@
+T1	Argument 0 23	アドブルータンクにおいて、通気口の設定が不適切
+T2	Connective 24 26	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T4	Connective 49 53	そのため
+T5	Argument 54 74	アドブルータンクの内圧が適切に調節できず
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 74 75	に
+T7	Argument 75 79	負圧とな
+R6	REASON Arg1:T6 Arg2:T5	
+R7	RESULT Arg1:T6 Arg2:T7	
+T9	Argument 80 88	当該タンクが変形
+T10	Argument 90 111	アドブループライミングポンプの負荷が高まり
+T11	Connective 89 90	、
+R9	REASON Arg1:T11 Arg2:T9	
+R10	RESULT Arg1:T11 Arg2:T10	
+T12	Argument 121 123	最悪
+T13	Connective 124 126	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+T14	Argument 127 139	排出ガスが基準値を超える
+R12	RESULT Arg1:T13 Arg2:T14	
+T15	Argument 112 118	警告灯が点灯
+T3	Argument 27 33	尿素の結晶化
+T16	Connective 33 36	により
+T17	Argument 36 43	通気口が詰まる
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T16 Arg2:T3	
+R15	RESULT Arg1:T16 Arg2:T17	
+R16	REASON Arg1:T4 Arg2:T17	
+T8	Connective 79 80	り
+R5	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T18	Connective 119 120	て
+R14	REASON Arg1:T18 Arg2:T10	
+R17	RESULT Arg1:T18 Arg2:T14	
+T19	Connective 111 112	、
+R13	REASON Arg1:T19 Arg2:T10	
+R18	RESULT Arg1:T19 Arg2:T15	

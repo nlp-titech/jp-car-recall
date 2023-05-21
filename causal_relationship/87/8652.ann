@@ -1,0 +1,13 @@
+T1	Argument 9 57	原動機と油圧ポンプの接続部に備えられているダンパカップリングにおいて、取付ボルトの締付けが不適切
+T2	Connective 58 60	ため
+T3	Argument 61 75	ダンパカップリングが抜け出す
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 81 85	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 86 100	油圧ポンプが駆動できなくなり
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 100 101	、
+T7	Argument 101 108	走行不能になる
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

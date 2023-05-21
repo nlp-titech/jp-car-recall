@@ -1,0 +1,25 @@
+T1	Argument 0 23	農業用薬剤散布車の原動機上部の防水構造が不適切
+T2	Connective 24 26	ため
+T3	Argument 27 43	洗車時の水等がプラグホールに浸入
+T4	Connective 51 55	そのため
+T8	Connective 77 78	、
+T9	Argument 78 80	最悪
+T10	Connective 81 83	場合
+T11	Argument 84 96	当該プラグの絶縁体が割れ
+T12	Connective 96 97	て
+T14	Connective 106 107	、
+T15	Argument 107 120	エンジン回転が不安定となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R8	RESULT Arg1:T8 Arg2:T11	
+R9	CONDITION Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R14	RESULT Arg1:T14 Arg2:T15	
+T7	Argument 56 75	スパークプラグが洗車時の水等により急冷
+R4	RESULT Arg1:T4 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+T13	Argument 97 106	スパークミスが生じ
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	

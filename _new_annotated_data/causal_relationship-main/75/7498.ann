@@ -1,0 +1,9 @@
+T1	Argument 11 31	コンビネーションランプの取付指示が不適切
+T2	Connective 32 34	ため
+T3	Argument 35 62	後退灯の照明部の上縁の高さが地上１２００ｍｍ以上に取付
+T4	Connective 70 71	、
+T5	Argument 71 85	後退灯の取付基準に満足しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

@@ -1,0 +1,33 @@
+T1	Argument 18 44	製造工程におけるブレーキ回路内のエア抜き作業が不適切
+T2	Connective 51 55	そのため
+T3	Argument 56 83	ブレーキ操作が極端に少ない状態で高速・長距離走行を行う
+T4	Connective 83 84	と
+R1	CONDITION Arg1:T4 Arg2:T3	
+T5	Argument 96 113	ブレーキ回路内に残留したエアが膨張
+R2	REASON Arg1:T2 Arg2:T1	
+R3	RESULT Arg1:T2 Arg2:T5	
+T6	Argument 127 136	ブレーキを引きずり
+T7	Connective 126 127	、
+R4	REASON Arg1:T7 Arg2:T15	
+R6	RESULT Arg1:T7 Arg2:T6	
+T8	Argument 137 139	最悪
+T9	Connective 140 142	場合
+T10	Argument 143 154	ブレーキディスクが過熱
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T10	
+T11	Connective 136 137	、
+T12	Argument 156 162	制動力が低下
+T13	Connective 155 156	、
+R9	REASON Arg1:T13 Arg2:T10	
+R10	RESULT Arg1:T13 Arg2:T12	
+R11	REASON Arg1:T11 Arg2:T6	
+R12	RESULT Arg1:T11 Arg2:T10	
+T14	Connective 114 115	て
+T15	Argument 115 126	ブレーキディスクを押し
+R13	REASON Arg1:T14 Arg2:T5	
+R14	RESULT Arg1:T14 Arg2:T15	
+T16	Argument 85 92	アクスルの昇温
+R5	RESULT Arg1:T4 Arg2:T16	
+T17	Connective 95 96	に
+R16	REASON Arg1:T17 Arg2:T16	
+R17	RESULT Arg1:T17 Arg2:T5	

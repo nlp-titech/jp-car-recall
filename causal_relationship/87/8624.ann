@@ -1,0 +1,17 @@
+T1	Argument 29 46	後輪に装着するタイヤの設定が不適切
+T2	Connective 47 49	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 50 71	タイヤにかかる荷重がタイヤの負荷能力を超過
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 81 85	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 86 100	そのままの状態で使用を続ける
+T6	Connective 100 101	と
+R4	CONDITION Arg1:T6 Arg2:T5	
+T7	Argument 102 109	タイヤがパンク
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	RESULT Arg1:T4 Arg2:T7	
+T8	Argument 111 118	走行不能に至る
+T9	Connective 110 111	、
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	

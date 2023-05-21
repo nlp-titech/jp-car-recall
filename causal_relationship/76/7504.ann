@@ -1,0 +1,5 @@
+T1	Argument 0 43	前照灯において、車両生産工場の光軸検査設備が正常に作動していない状態で検査、調整を行っ
+T2	Connective 44 46	ため
+T3	Argument 47 62	光軸が保安基準を満足していない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

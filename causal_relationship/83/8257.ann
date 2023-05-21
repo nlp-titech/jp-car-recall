@@ -1,0 +1,25 @@
+T1	Argument 0 23	高電圧バッテリーにおいて、製造時の工程が不適切
+T2	Connective 24 26	ため
+T3	Argument 27 41	セルモジュール内に異物が混入
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 51 55	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 56 66	バッテリー回路が短絡
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 76 78	放電
+T7	Connective 67 68	、
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T12	
+T8	Argument 81 83	最悪
+T9	Connective 84 86	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+T10	Argument 87 92	火災に至る
+R8	RESULT Arg1:T9 Arg2:T10	
+T11	Connective 79 80	て
+R9	REASON Arg1:T11 Arg2:T6	
+R10	RESULT Arg1:T11 Arg2:T10	
+T12	Argument 68 75	異常な電流が流
+T13	Connective 75 76	れ
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T6	

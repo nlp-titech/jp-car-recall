@@ -1,0 +1,13 @@
+T1	Argument 0 42	助手席の着座検知装置において、エアバッグコントロールユニットの制御プログラムが不適切
+T2	Argument 46 51	作動が停止
+T3	Connective 43 45	ため
+T4	Connective 59 63	そのため
+T5	Argument 64 87	人が着座しているにもかかわらず着座を検知しない
+T6	Connective 87 89	ため
+T7	Argument 90 105	衝突時にエアバッグが展開しない
+R1	REASON Arg1:T3 Arg2:T1	
+R2	RESULT Arg1:T3 Arg2:T2	
+R3	REASON Arg1:T4 Arg2:T2	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

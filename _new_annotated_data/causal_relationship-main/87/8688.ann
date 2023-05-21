@@ -1,0 +1,31 @@
+T1	Argument 0 62	トレーラの第一軸の制動装置において、ブレーキチャンバに接続されているエアホースの接続部金具とエアタンクのクリアランスが不適切
+T2	Connective 63 65	ため
+T4	Connective 77 78	際
+T5	Argument 79 81	接触
+R2	RESULT Arg1:T4 Arg2:T5	
+R3	REASON Arg1:T2 Arg2:T1	
+R4	RESULT Arg1:T2 Arg2:T5	
+T6	Connective 89 93	そのため
+T7	Argument 94 104	そのまま使用を続ける
+T8	Connective 104 105	と
+R5	CONDITION Arg1:T8 Arg2:T7	
+T9	Argument 106 130	当該金具またはブレーキチャンバのねじ込み部が破損
+R6	REASON Arg1:T6 Arg2:T5	
+R7	RESULT Arg1:T6 Arg2:T9	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 131 136	エアが漏れ
+T11	Connective 130 131	し
+R9	REASON Arg1:T11 Arg2:T9	
+R10	RESULT Arg1:T11 Arg2:T10	
+T12	Argument 137 143	制動力が低下
+T13	Connective 136 137	、
+R11	REASON Arg1:T13 Arg2:T10	
+T14	Argument 149 158	駐車制動装置が作動
+T15	Argument 160 169	走行に支障をきたす
+R12	RESULT Arg1:T13 Arg2:T12	
+R13	RESULT Arg1:T13 Arg2:T14	
+T16	Connective 159 160	、
+R14	REASON Arg1:T16 Arg2:T14	
+R15	RESULT Arg1:T16 Arg2:T15	
+T3	Argument 66 76	車輪が段差に乗り上げ
+R1	CONDITION Arg1:T4 Arg2:T3	

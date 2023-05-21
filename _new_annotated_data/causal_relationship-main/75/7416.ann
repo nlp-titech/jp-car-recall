@@ -1,0 +1,33 @@
+T1	Argument 11 44	スペアタイヤキャリアを車体に固定するボルト／ナットの締付けが不適切
+T2	Connective 45 47	ため
+T3	Argument 48 57	締付けトルクが不足
+T4	Connective 67 71	そのため
+T5	Argument 72 86	そのままの状態で使用を続ける
+T6	Connective 86 87	と
+T7	Argument 88 95	走行時の振動等
+T8	Connective 95 98	により
+T9	Argument 98 108	ボルト／ナットが緩み
+T10	Connective 108 109	、
+T11	Argument 109 111	最悪
+T12	Connective 112 114	場合
+T13	Argument 115 125	ボルト／ナットが外れ
+T14	Connective 125 126	、
+T15	Argument 126 145	当該キャリアとともにスペアタイヤが脱落
+T16	Connective 146 147	、
+T17	Argument 147 157	他の交通の妨げとなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T9	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R15	REASON Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T17	
+R10	RESULT Arg1:T10 Arg2:T13	

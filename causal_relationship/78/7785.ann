@@ -1,0 +1,9 @@
+T1	Argument 0 50	排出ガス発散防止装置において、ＳＣＲ触媒の前後に設置されているＮＯｘセンサ用配線の組付け作業が不適切
+T2	Connective 51 53	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 54 65	触媒前後の配線が逆接続
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 76 80	そのため
+T5	Argument 81 100	排出ガス発散防止装置が正しく作動しない
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

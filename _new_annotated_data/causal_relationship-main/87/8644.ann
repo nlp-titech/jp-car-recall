@@ -1,0 +1,13 @@
+T1	Argument 7 44	制動灯において、テールランプクラスタ内のＬＥＤとプリント基板の選定が不適切
+T2	Connective 45 47	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 48 85	制動灯と方向指示器または非常点滅表示灯が同時に点灯した後に、制動灯だけ消灯
+T6	Connective 88 89	と
+T7	Argument 89 100	急激な電圧変化が起こる
+R4	RESULT Arg1:T6 Arg2:T7	
+R6	RESULT Arg1:T2 Arg2:T7	
+T8	Connective 106 110	そのため
+T9	Argument 111 121	制動灯が一時的に点滅
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R2	CONDITION Arg1:T6 Arg2:T3	

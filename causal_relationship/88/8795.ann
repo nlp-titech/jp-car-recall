@@ -1,0 +1,17 @@
+T1	Connective 37 39	ため
+T2	Argument 40 66	油圧が上げ側から下げ側（＝ピストンロッド側）へ抜ける
+R1	RESULT Arg1:T1 Arg2:T2	
+T3	Connective 72 76	そのため
+R2	REASON Arg1:T3 Arg2:T2	
+T4	Argument 77 93	ウイング開放時にウイングが下がり
+R5	RESULT Arg1:T3 Arg2:T4	
+T7	Connective 93 94	、
+T8	Argument 100 112	荷物の積み降ろし時に負傷
+R6	REASON Arg1:T7 Arg2:T4	
+R7	RESULT Arg1:T7 Arg2:T8	
+T9	Argument 94 96	最悪
+T10	Connective 97 99	場合
+R8	CONDITION Arg1:T10 Arg2:T9	
+R9	RESULT Arg1:T10 Arg2:T8	
+T11	Argument 0 36	ウイング車の荷台において、油圧シリンダーのピストン部のシール構造が不適切
+R10	REASON Arg1:T1 Arg2:T11	

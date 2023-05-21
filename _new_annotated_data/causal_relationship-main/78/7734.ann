@@ -1,0 +1,24 @@
+T1	Argument 0 36	バッテリマイナスケーブルのボディ側アース取付部において、作業管理が不適切
+T2	Connective 37 39	ため
+T3	Argument 40 55	取付ボルトの締結トルクが大きい
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 64 68	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 69 81	当該ボルトのネジ山が破損
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 83 100	原動機及び電装品に電源が供給されず
+T7	Connective 82 83	、
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	
+T8	Argument 101 103	最悪
+T9	Connective 104 106	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+T10	Argument 107 116	原動機が始動しない
+R8	RESULT Arg1:T9 Arg2:T10	
+T11	Argument 118 126	走行中にエンスト
+R9	RESULT Arg1:T9 Arg2:T11	
+T12	Connective 100 101	、
+R10	REASON Arg1:T12 Arg2:T6	
+R11	RESULT Arg1:T12 Arg2:T10	
+R12	RESULT Arg1:T12 Arg2:T11	

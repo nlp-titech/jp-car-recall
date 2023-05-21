@@ -1,0 +1,21 @@
+T1	Argument 11 31	リヤスポイラー固定金具の溶接条件が不適切
+T2	Connective 32 34	ため
+T3	Argument 35 42	溶接強度が不足
+T4	Connective 52 56	そのため
+T5	Argument 57 62	長期の使用
+T6	Connective 62 65	により
+T7	Argument 66 72	溶接部が破断
+T8	Argument 74 76	最悪
+T9	Connective 77 79	場合
+T10	Connective 73 74	、
+T11	Argument 80 90	リヤスポイラーが脱落
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T10 Arg2:T7	
+R8	RESULT Arg1:T10 Arg2:T11	
+R9	CONDITION Arg1:T9 Arg2:T8	
+R10	RESULT Arg1:T9 Arg2:T11	

@@ -1,0 +1,13 @@
+T1	Argument 7 40	排出ガス発散防止装置において、ＮＯｘセンサ用配線の接続指示が不適切
+T2	Connective 41 43	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 44 55	触媒前後の配線が逆接続
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 61 65	そのため
+T5	Argument 66 84	排出ガス発散防止装置が正しく作動せず
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 85 100	排出ガスが保安基準を満足しない
+T7	Connective 84 85	、
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	

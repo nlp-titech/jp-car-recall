@@ -1,0 +1,21 @@
+T1	Argument 7 27	スタータモータにおいて、取付構造が不適切
+T2	Connective 28 30	ため
+T3	Argument 31 43	エンジンの始動を繰り返す
+T4	Connective 45 48	により
+T5	Argument 48 75	エンジンリヤプレートとクラッチハウジングに隙間ができる
+T6	Connective 81 85	そのため
+T7	Argument 86 120	スタータモータのピニオンギヤとエンジンフライホイルが噛み合わなくなり
+T8	Connective 120 121	、
+T9	Argument 127 141	エンジンの始動ができなくなる
+T10	Argument 121 123	最悪
+T11	Connective 124 126	場合
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T9	

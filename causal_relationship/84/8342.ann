@@ -1,0 +1,17 @@
+T1	Argument 9 36	左右リヤアクスルキャリアサイドセクションの鋳造が不適切
+T2	Connective 37 39	ため
+T3	Argument 40 45	強度が不足
+T4	Connective 55 59	そのため
+T5	Argument 60 71	当該部品が走行中に破損
+T6	Connective 72 73	、
+T7	Argument 73 75	最悪
+T8	Connective 76 78	場合
+T9	Argument 79 95	ハンドル操作が正常に行えなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	

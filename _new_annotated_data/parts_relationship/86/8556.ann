@@ -1,0 +1,7 @@
+T1	Parts 0 12	バッテリ式フォークリフト
+T2	Parts 13 17	バッテリ
+T3	Parts 117 119	車両
+T4	Parts 30 37	ポールパッキン
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T4 Arg2:T2	
+R3	Coreference Arg1:T3 Arg2:T1	

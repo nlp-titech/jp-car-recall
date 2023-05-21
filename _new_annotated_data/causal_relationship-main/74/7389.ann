@@ -1,0 +1,25 @@
+T1	Argument 0 24	フューエルポンプにおいて、製造機器の管理が不適切
+T2	Connective 25 27	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 28 36	内径に突起が生じ
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 36 53	フューエルタンク間の燃料移動が妨げ
+T5	Connective 61 62	。
+R3	REASON Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T4	
+T6	Connective 62 66	そのため
+R5	REASON Arg1:T6 Arg2:T4	
+T7	Argument 67 79	主タンクの燃料残量が減っ
+T8	Connective 80 81	際
+R6	CONDITION Arg1:T8 Arg2:T7	
+T9	Argument 83 95	副タンクから燃料が送られ
+R7	RESULT Arg1:T6 Arg2:T9	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 96 113	エンジンへの燃料供給が出来なくなり
+T11	Argument 114 125	エンジンストールが発生
+T12	Connective 113 114	、
+R9	RESULT Arg1:T12 Arg2:T11	
+R10	REASON Arg1:T12 Arg2:T10	
+T13	Connective 95 96	ず
+R11	RESULT Arg1:T13 Arg2:T10	
+R12	REASON Arg1:T13 Arg2:T9	

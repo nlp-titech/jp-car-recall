@@ -1,0 +1,5 @@
+T1	Connective 50 52	ため
+T2	Argument 53 68	光軸が保安基準を満足していない
+R1	RESULT Arg1:T1 Arg2:T2	
+T3	Argument 7 49	右側前照灯において、車両生産工場の光軸検査設備の設定が不適切な状態で検査、調整を行っ
+R2	REASON Arg1:T1 Arg2:T3	

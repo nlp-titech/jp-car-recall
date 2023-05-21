@@ -1,0 +1,40 @@
+T1	Argument 0 51	カウンタバランス式バッテリフォークリフトにおいて、バッテリディスコネクト機構部のブラケット形状が不適切
+T2	Connective 52 54	ため
+T3	Argument 55 77	バッテリディスコネクトレバーとの隙間が不十分
+T4	Connective 94 97	により
+T5	Argument 98 109	隙間がさらに小さくなり
+T6	Connective 109 110	、
+T7	Argument 110 136	バッテリディスコネクトレバーとバッテリコネクタが干渉
+T8	Connective 144 148	そのため
+T9	Argument 149 159	そのまま使用を続ける
+T10	Connective 159 160	と
+T11	Argument 161 182	バッテリコネクタの接触不良に伴う端子の発熱
+T12	Connective 182 186	によって
+T13	Argument 186 193	コネクタの溶損
+T14	Connective 205 206	、
+T15	Argument 206 211	車両が停止
+T16	Connective 212 213	、
+T17	Argument 213 222	再始動できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T11	
+R9	CONDITION Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+T18	Argument 197 205	電源の遮断が起き
+R13	RESULT Arg1:T12 Arg2:T18	
+R14	REASON Arg1:T14 Arg2:T18	
+R15	RESULT Arg1:T14 Arg2:T15	
+R16	REASON Arg1:T16 Arg2:T15	
+R17	RESULT Arg1:T16 Arg2:T17	
+T19	Argument 81 92	バッテリフードがたわむ
+R18	REASON Arg1:T4 Arg2:T19	
+R19	REASON Arg1:T14 Arg2:T13	
+T20	Connective 77 78	で
+R3	REASON Arg1:T20 Arg2:T3	
+R20	RESULT Arg1:T20 Arg2:T7	

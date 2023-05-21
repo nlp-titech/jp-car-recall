@@ -1,0 +1,31 @@
+T1	Argument 10 43	作動油ラインフィルタにおいて、誤った材質のフィルタヘッドが組み付け
+T2	Connective 66 70	そのため
+T3	Argument 71 81	ラインフィルタが損傷
+R1	REASON Arg1:T2 Arg2:T16	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 83 89	作動油が漏れ
+T5	Connective 82 83	、
+R3	REASON Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T4	
+T6	Argument 90 92	最悪
+T7	Connective 93 95	場合
+T8	Argument 96 106	ラインフィルタが脱落
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T8	
+T9	Connective 89 90	、
+R7	REASON Arg1:T9 Arg2:T4	
+R8	RESULT Arg1:T9 Arg2:T8	
+T10	Connective 106 107	し
+R9	REASON Arg1:T10 Arg2:T8	
+T12	Argument 127 132	一部の車種
+T13	Connective 132 137	においては
+T14	Argument 138 144	操舵力が増大
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T14	
+T15	Connective 48 50	ため
+T16	Argument 51 56	強度が不足
+R13	RESULT Arg1:T15 Arg2:T16	
+R14	REASON Arg1:T15 Arg2:T1	
+R15	RESULT Arg1:T9 Arg2:T14	
+T11	Argument 107 117	他の交通の妨げとなる
+R10	RESULT Arg1:T10 Arg2:T11	

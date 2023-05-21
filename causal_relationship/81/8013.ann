@@ -1,0 +1,9 @@
+T1	Argument 0 31	左右前席サイドエアバッグにおいて、車両製造時の作業管理が不適切
+T2	Connective 32 34	ため
+T3	Argument 35 63	エアバッグ固定用ナットが規定トルクで締め付けられていない
+T4	Connective 69 73	そのため
+T7	Argument 74 91	エアバッグ展開時に正常に作動しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	

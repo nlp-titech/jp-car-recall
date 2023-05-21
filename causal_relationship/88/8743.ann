@@ -1,0 +1,21 @@
+T1	Argument 7 31	クランクシャフトにおいて、組立工具の管理が不適切
+T2	Connective 32 34	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 35 53	フロントハブ固定ボルトのトルクが不足
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 63 67	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 68 92	クランクシャフトのハブがクランクシャフト内で空転
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 93 94	、
+T7	Argument 94 127	ファン、ウォーターポンプ、オルタネーター、フロントＰＴＯが駆動せず
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 134 146	エンジンがオーバーヒート
+T9	Connective 127 128	、
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+T10	Argument 128 130	最悪
+T11	Connective 131 133	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T8	

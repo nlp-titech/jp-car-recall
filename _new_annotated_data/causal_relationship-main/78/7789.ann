@@ -1,0 +1,17 @@
+T1	Argument 13 47	ブローバイ・ガス還元装置において、エアインレットホースの材質が不適切
+T2	Connective 48 50	ため
+T3	Argument 51 63	当該ホースの劣化が早まり
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 64 76	当該ホースに亀裂が生じる
+T5	Connective 63 64	、
+R3	REASON Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T4	
+T6	Connective 82 86	そのため
+T7	Argument 87 94	エア漏れが発生
+R5	REASON Arg1:T6 Arg2:T4	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 96 111	排出ガス規制値を満足しなくなる
+T9	Connective 95 96	て
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	

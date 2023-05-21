@@ -1,0 +1,33 @@
+T1	Argument 9 23	ブレーキパイプの形状が不適切
+T2	Connective 24 26	ため
+T4	Connective 50 52	場合
+T5	Argument 53 65	当該パイプがタイヤと接触
+T6	Connective 73 77	そのため
+T7	Argument 78 92	そのままの状態で使用を続ける
+T8	Connective 92 93	と
+T9	Argument 94 102	当該パイプが損傷
+T10	Connective 103 104	、
+T11	Argument 104 106	最悪
+T12	Connective 107 109	場合
+T13	Argument 110 116	パイプが破損
+T14	Connective 117 118	、
+T15	Argument 118 123	エアが漏れ
+T16	Connective 123 124	て
+T17	Argument 124 130	制動力が低下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R15	REASON Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T17	
+T19	Argument 27 48	ハンドルを最大限まで切った状態で段差を通過
+R18	CONDITION Arg1:T4 Arg2:T19	
+R4	RESULT Arg1:T4 Arg2:T5	

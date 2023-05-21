@@ -1,0 +1,21 @@
+T1	Argument 18 34	直前直右鏡取り付け部の強度が不足
+T2	Connective 38 40	ため
+T3	Argument 41 57	直前直右鏡取り付け部に亀裂が発生
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 65 69	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 70 79	走行振動の繰り返し
+T6	Connective 79 82	により
+R4	REASON Arg1:T6 Arg2:T5	
+T7	Argument 83 99	直前直右鏡取り付け部の亀裂が進行
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	RESULT Arg1:T4 Arg2:T7	
+T8	Argument 101 103	最悪
+T9	Connective 104 106	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+T10	Argument 107 115	直前直右鏡が脱落
+R8	RESULT Arg1:T9 Arg2:T10	
+T11	Connective 100 101	、
+R9	REASON Arg1:T11 Arg2:T7	
+R10	RESULT Arg1:T11 Arg2:T10	

@@ -1,0 +1,9 @@
+T1	Argument 0 52	座席ベルトの非装着時警報装置において、メーターパネルを修理で交換する際に配信される制御プログラムが不適切
+T2	Connective 53 55	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T5	Argument 56 83	前席のシートベルト非装着時に必要な警告が適切に作動せず
+R4	RESULT Arg1:T2 Arg2:T5	
+T6	Connective 83 84	、
+T7	Argument 84 111	保安基準第２２条の３（座席ベルト等の基準）に適合しない
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

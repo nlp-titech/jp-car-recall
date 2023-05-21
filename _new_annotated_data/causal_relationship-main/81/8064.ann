@@ -1,0 +1,13 @@
+T1	Argument 0 37	統合ブレーキシステムの油圧回路制御ユニットにおいて、製造機器の設定が不適切
+T2	Connective 38 40	ため
+T3	Argument 41 60	油圧ソレノイドバルブの先端がずれて製造
+T4	Connective 71 75	そのため
+T5	Argument 76 89	正しい油圧回路を確立できず
+T6	Connective 89 90	、
+T7	Argument 90 100	ブレーキ警告灯が点灯
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

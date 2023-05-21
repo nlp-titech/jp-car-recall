@@ -1,0 +1,21 @@
+T1	Argument 9 40	走行用前照灯とすれ違い用前照灯切換えスイッチの接点構造が不適切
+T2	Connective 41 43	ため
+T3	Argument 44 60	はんだフラックスが接点表面に付着
+T4	Connective 68 72	そのため
+T5	Argument 73 83	そのまま使用を続ける
+T6	Connective 83 84	と
+T7	Argument 85 100	切換えスイッチが接触不良となり
+T8	Connective 100 101	、
+T9	Argument 101 103	最悪
+T10	Connective 104 106	場合
+T11	Argument 107 119	走行用前照灯が不灯となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T11	
+R9	CONDITION Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	

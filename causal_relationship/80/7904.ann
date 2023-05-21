@@ -1,0 +1,19 @@
+T1	Argument 0 32	ハイブリッドシステムにおいて、異常判定時の制御プログラムが不適切
+T2	Connective 33 35	ため
+T3	Argument 36 67	極低速から急加速するような高負荷走行時等に昇圧回路の素子が損傷
+T4	Connective 69 71	場合
+T5	Argument 72 89	フェールセーフモードに移行できない
+T6	Connective 95 99	そのため
+T7	Argument 100 106	警告灯が点灯
+T9	Argument 108 121	ハイブリッドシステムが停止
+T10	Connective 122 123	て
+T11	Argument 124 131	走行不能となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T5	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T9	
+R8	REASON Arg1:T10 Arg2:T9	
+R9	RESULT Arg1:T10 Arg2:T11	

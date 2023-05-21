@@ -1,0 +1,29 @@
+T1	Argument 12 32	原動機の燃料配管において、組付けが不適切
+T2	Connective 33 35	ため
+T3	Argument 36 43	配管のばらつき
+T4	Connective 43 46	により
+T5	Argument 46 63	燃料配管とフレームの隙間余裕が不足
+T6	Connective 73 77	そのため
+T7	Argument 78 96	燃料配管とフレームが接触している車両
+T10	Connective 96 101	においては
+T11	Argument 102 116	そのままの状態で使用を続ける
+T12	Connective 116 117	と
+T13	Argument 118 125	燃料配管が損傷
+T14	Connective 126 127	、
+T15	Argument 127 129	最悪
+T16	Connective 130 132	場合
+T17	Argument 133 140	燃料漏れが発生
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T13	
+R9	CONDITION Arg1:T12 Arg2:T11	
+R10	RESULT Arg1:T12 Arg2:T13	
+R11	REASON Arg1:T14 Arg2:T13	
+R12	RESULT Arg1:T14 Arg2:T17	
+R13	CONDITION Arg1:T16 Arg2:T15	
+R14	RESULT Arg1:T16 Arg2:T17	
+R7	CONDITION Arg1:T10 Arg2:T7	
+R8	RESULT Arg1:T10 Arg2:T13	

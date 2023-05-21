@@ -1,0 +1,9 @@
+T1	Parts 8 20	アルミニウム製燃料タンク
+T2	Parts 25 31	大型トラクタ
+T3	Parts 38 43	燃料タンク
+T4	Parts 65 68	タンク
+T5	Parts 113 115	燃料
+R1	Coreference Arg1:T1 Arg2:T3	
+R2	Coreference Arg1:T3 Arg2:T4	
+R3	Part-Whole Arg1:T1 Arg2:T2	
+R4	Part-Whole Arg1:T5 Arg2:T4	

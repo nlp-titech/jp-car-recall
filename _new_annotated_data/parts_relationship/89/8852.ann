@@ -1,0 +1,9 @@
+T1	Parts 0 4	エンジン
+T2	Parts 5 10	点火コイル
+T3	Parts 97 101	エンジン
+T4	Parts 77 81	シリンダ
+T5	Parts 113 125	エンジン警告灯（ＭＩＬ）
+R1	Coreference Arg1:T1 Arg2:T3	
+R2	Connect Arg1:T3 Arg2:T5	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Part-Whole Arg1:T4 Arg2:T1	

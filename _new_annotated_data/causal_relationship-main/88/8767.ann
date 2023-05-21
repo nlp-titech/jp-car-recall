@@ -1,0 +1,9 @@
+T1	Argument 0 31	パワートレーンコントロールユニットにおいて、プログラムが不適切
+T2	Connective 32 34	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 35 60	停車時のエンジン回転リミッターの仕様が高回転になっ
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 64 68	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 69 83	近接排気騒音が基準値を超える
+R4	RESULT Arg1:T4 Arg2:T5	

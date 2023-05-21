@@ -1,0 +1,21 @@
+T1	Argument 31 41	ナックルの厚さが不足
+T2	Connective 28 30	ため
+R1	RESULT Arg1:T2 Arg2:T1	
+T3	Connective 51 55	そのため
+R2	REASON Arg1:T3 Arg2:T1	
+T4	Argument 67 79	ナックル上部に亀裂が発生
+R3	RESULT Arg1:T3 Arg2:T4	
+T5	Argument 56 65	長期間使用を続ける
+T6	Connective 65 66	と
+R4	CONDITION Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T6 Arg2:T4	
+T7	Connective 80 81	、
+T8	Argument 81 83	最悪
+T9	Connective 84 86	場合
+T10	Argument 87 99	正常な操舵ができなくなる
+R6	REASON Arg1:T7 Arg2:T4	
+R7	RESULT Arg1:T7 Arg2:T10	
+R8	CONDITION Arg1:T9 Arg2:T8	
+R9	RESULT Arg1:T9 Arg2:T10	
+T11	Argument 8 27	アクスルにおいて、設計図面指示が不適切
+R10	REASON Arg1:T2 Arg2:T11	

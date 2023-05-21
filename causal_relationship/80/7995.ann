@@ -1,0 +1,27 @@
+T1	Connective 43 45	ため
+T2	Argument 78 90	劣化抑制の再生充電が不足
+T3	Connective 91 92	て
+T4	Argument 92 101	バッテリが異常劣化
+R2	REASON Arg1:T3 Arg2:T2	
+R3	RESULT Arg1:T3 Arg2:T4	
+T5	Connective 109 113	そのため
+R4	REASON Arg1:T5 Arg2:T4	
+T6	Argument 126 135	再始動できなくなる
+R5	RESULT Arg1:T5 Arg2:T6	
+T7	Argument 114 125	アイドリングストップ後
+T8	Connective 125 126	、
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T6	
+T9	Argument 0 29	アイドリングストップ搭載車において、制御プログラムが不適切
+R8	REASON Arg1:T1 Arg2:T9	
+T10	Argument 58 76	バッテリ温度が高い状態で使用を繰返す
+T11	Argument 46 55	長時間アイドリング
+T12	Connective 55 58	により
+T13	Connective 76 77	と
+R9	REASON Arg1:T12 Arg2:T11	
+R10	RESULT Arg1:T12 Arg2:T10	
+R11	CONDITION Arg1:T13 Arg2:T10	
+R12	RESULT Arg1:T13 Arg2:T2	
+T14	Argument 31 42	バッテリの断熱が不十分
+R13	REASON Arg1:T1 Arg2:T14	
+R1	RESULT Arg1:T1 Arg2:T2	

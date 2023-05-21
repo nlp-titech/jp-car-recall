@@ -1,0 +1,13 @@
+T1	Argument 9 52	後輪用ブレーキシステム（ＡＢＳモジュレーター）にブレーキフルードを注入する工程が不適切
+T2	Connective 53 55	ため
+T3	Argument 56 79	ブレーキシステムのフルード内に微量の気泡が含ま
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 89 93	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 94 119	ブレーキシステム内の気泡がブレーキキャリパーに移動
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 121 135	後輪用ブレーキが効かなくなる
+T7	Connective 120 121	、
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	

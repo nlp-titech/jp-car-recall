@@ -1,0 +1,21 @@
+T1	Argument 0 39	テールゲートに装着されているリヤスポイラーにおいて、接着工程の作業指示が不適切
+T2	Argument 43 64	当該リヤスポイラー上部と下部の密着性が低下
+T3	Connective 40 42	ため
+R1	REASON Arg1:T3 Arg2:T1	
+R2	RESULT Arg1:T3 Arg2:T2	
+T4	Connective 74 78	そのため
+R3	REASON Arg1:T4 Arg2:T2	
+T5	Argument 79 94	当該リヤスポイラー上部が剥がれ
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 95 97	最悪
+T7	Connective 98 100	場合
+R5	CONDITION Arg1:T7 Arg2:T6	
+T8	Argument 101 107	走行中に外れ
+R6	RESULT Arg1:T7 Arg2:T8	
+T9	Connective 94 95	、
+R7	REASON Arg1:T9 Arg2:T5	
+T10	Connective 107 108	て
+T11	Argument 108 110	落下
+R8	REASON Arg1:T10 Arg2:T8	
+R9	RESULT Arg1:T10 Arg2:T11	
+R10	RESULT Arg1:T9 Arg2:T8	

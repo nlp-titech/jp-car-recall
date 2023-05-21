@@ -1,0 +1,11 @@
+T1	Parts 0 6	テールゲート
+T2	Parts 7 17	ガス封入式スプリング
+T3	Parts 22 25	ロッド
+T4	Parts 112 119	ガススプリング
+T5	Parts 133 139	テールゲート
+T6	Parts 94 96	ガス
+R1	Contact Arg1:T1 Arg2:T2	
+R2	Part-Whole Arg1:T3 Arg2:T2	
+R3	Part-Whole Arg1:T6 Arg2:T2	
+R4	Coreference Arg1:T2 Arg2:T4	
+R5	Coreference Arg1:T1 Arg2:T5	

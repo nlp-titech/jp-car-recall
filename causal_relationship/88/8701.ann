@@ -1,0 +1,13 @@
+T1	Connective 42 44	ため
+T2	Argument 45 56	当該オイルシールが変形
+R1	RESULT Arg1:T1 Arg2:T2	
+T3	Connective 66 70	そのため
+R2	REASON Arg1:T3 Arg2:T2	
+T4	Argument 87 103	オイルシール部よりオイルが漏れる
+R3	RESULT Arg1:T3 Arg2:T4	
+T5	Argument 71 85	そのままの状態で使用を続ける
+T6	Connective 85 86	と
+R4	CONDITION Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T6 Arg2:T4	
+T7	Argument 9 41	フロントアクスルにおいて、オイルシールの組み付け作業指示が不適切
+R6	REASON Arg1:T1 Arg2:T7	

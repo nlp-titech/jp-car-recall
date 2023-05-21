@@ -1,0 +1,17 @@
+T1	Connective 60 62	ため
+T2	Argument 91 101	当該ベアリングが破損
+R1	RESULT Arg1:T1 Arg2:T2	
+T3	Connective 109 113	そのため
+R2	REASON Arg1:T3 Arg2:T2	
+T4	Argument 114 129	作動油の経路が変更できなくなり
+R3	RESULT Arg1:T3 Arg2:T4	
+T5	Connective 129 130	、
+T6	Argument 130 148	前進及び後進の切り替えができなくなる
+R4	REASON Arg1:T5 Arg2:T4	
+R5	RESULT Arg1:T5 Arg2:T6	
+T7	Argument 63 87	クレーン作業モードでのアイドリング時に生じる負荷
+T8	Connective 87 90	により
+R6	REASON Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T2	
+T9	Argument 0 56	ホイール・クレーンの走行及びウインチ巻上に使用する油圧ポンプにおいて、作動油経路切替部のベアリングの耐久性が不足
+R8	REASON Arg1:T1 Arg2:T9	

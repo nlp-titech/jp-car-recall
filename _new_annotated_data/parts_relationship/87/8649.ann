@@ -1,0 +1,9 @@
+T1	Parts 0 11	電動パワーステアリング
+T2	Parts 16 25	ステアリングラック
+T3	Parts 26 32	ロックナット
+T4	Parts 70 76	ロックナット
+T5	Parts 87 96	ステアリングラック
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Contact Arg1:T2 Arg2:T3	
+R3	Coreference Arg1:T3 Arg2:T4	
+R4	Coreference Arg1:T2 Arg2:T5	

@@ -1,0 +1,13 @@
+T1	Argument 10 53	ステンレス製リヤフェンダー取付ステーにおいて、当該ステーの製作にかかる機械管理が不適切
+T2	Connective 54 56	ため
+T3	Argument 57 68	当該ステーにバリが生じ
+R1	RESULT Arg1:T2 Arg2:T3	
+R2	REASON Arg1:T2 Arg2:T1	
+T4	Connective 77 81	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 82 96	車両整備時にそのバリに触れる
+T7	Argument 97 99	負傷
+R5	RESULT Arg1:T4 Arg2:T7	
+T6	Connective 96 97	と
+R4	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

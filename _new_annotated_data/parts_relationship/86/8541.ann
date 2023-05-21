@@ -1,0 +1,16 @@
+T1	Parts 0 3	原動機
+T2	Parts 8 24	電動スーパーチャージャー回路基板
+T3	Parts 40 42	配線
+T4	Parts 73 75	配線
+T5	Parts 80 91	インストルメントパネル
+T6	Parts 93 101	警告灯（ＭＩＬ）
+T7	Parts 35 39	電子部品
+T8	Parts 68 72	電子部品
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T7 Arg2:T2	
+R3	Part-Whole Arg1:T3 Arg2:T2	
+R4	Connect Arg1:T7 Arg2:T3	
+R5	Coreference Arg1:T8 Arg2:T7	
+R6	Coreference Arg1:T4 Arg2:T3	
+R7	Connect Arg1:T5 Arg2:T1	
+R8	Part-Whole Arg1:T6 Arg2:T5	

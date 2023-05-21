@@ -1,0 +1,5 @@
+T1	Argument 0 21	フォークリフト等において、法規確認が不適切
+T2	Connective 22 24	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 25 83	小型特殊自動車の寸法（高さ、幅）、窓ふき器、及び灯火器の取付要件等、３つの装置類（計１１項目）で保安基準に適合しない
+R2	RESULT Arg1:T2 Arg2:T3	

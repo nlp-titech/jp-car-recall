@@ -1,0 +1,43 @@
+T1	Connective 41 43	ため
+T2	Argument 44 53	はんだ割れ、はがれ
+T3	Argument 56 63	接触不良となる
+T5	Connective 53 56	により
+R4	RESULT Arg1:T5 Arg2:T3	
+T6	Connective 69 73	そのため
+T7	Argument 74 83	はんだ接続部が発熱
+T8	Argument 84 86	断線
+R5	RESULT Arg1:T6 Arg2:T7	
+T9	Connective 83 84	し
+R6	REASON Arg1:T9 Arg2:T7	
+R7	RESULT Arg1:T9 Arg2:T8	
+T10	Connective 87 88	て
+T11	Argument 89 97	燃料供給が止まり
+R8	REASON Arg1:T10 Arg2:T8	
+R9	RESULT Arg1:T10 Arg2:T11	
+T12	Argument 111 118	端子周囲が熔損
+T13	Argument 119 123	穴が開き
+T14	Connective 118 119	し
+R10	REASON Arg1:T14 Arg2:T12	
+R11	RESULT Arg1:T14 Arg2:T13	
+T15	Argument 124 129	燃料が漏れ
+T16	Connective 123 124	、
+T17	Connective 129 130	、
+R12	REASON Arg1:T16 Arg2:T13	
+R13	RESULT Arg1:T16 Arg2:T15	
+T18	Argument 136 141	火災に至る
+R14	REASON Arg1:T17 Arg2:T15	
+T19	Argument 130 132	最悪
+T20	Connective 133 135	場合
+R15	CONDITION Arg1:T20 Arg2:T19	
+R16	RESULT Arg1:T20 Arg2:T18	
+R17	RESULT Arg1:T17 Arg2:T18	
+R18	RESULT Arg1:T9 Arg2:T12	
+R20	REASON Arg1:T6 Arg2:T3	
+T22	Argument 0 40	燃料タンクのポンプモーター配線端子において、当該端子接続部のはんだ下処理が不十分
+R21	REASON Arg1:T1 Arg2:T22	
+R1	RESULT Arg1:T1 Arg2:T2	
+R2	REASON Arg1:T5 Arg2:T2	
+T4	Argument 97 104	エンジンが停止
+T21	Connective 106 107	、
+R3	REASON Arg1:T21 Arg2:T11	
+R19	RESULT Arg1:T21 Arg2:T4	

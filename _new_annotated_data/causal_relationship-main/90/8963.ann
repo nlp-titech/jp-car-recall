@@ -1,0 +1,27 @@
+T1	Argument 0 40	助手席側シートクッションの乗員重量区分システムにおいて、製造時の重量校正が不適切
+T2	Connective 41 43	ため
+T3	Argument 44 61	本来の重量より軽く、又は重たく判断
+T4	Connective 69 73	そのため
+T5	Argument 74 85	チャイルドシートを装着
+T6	Connective 89 91	場合
+T7	Argument 92 104	人が着座していると誤認識
+T8	Connective 105 106	、
+T11	Argument 106 122	衝突時に意図せずエアバッグが展開
+T12	Argument 139 160	チャイルドシートの装着若しくは荷物と誤認識
+T13	Connective 161 162	、
+T14	Argument 162 177	衝突時にエアバッグが展開しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T11	
+R12	RESULT Arg1:T13 Arg2:T14	
+T15	Argument 128 132	人が着座
+T16	Connective 136 138	場合
+R11	CONDITION Arg1:T16 Arg2:T15	
+R13	RESULT Arg1:T16 Arg2:T12	
+R14	RESULT Arg1:T4 Arg2:T12	
+R15	REASON Arg1:T13 Arg2:T12	

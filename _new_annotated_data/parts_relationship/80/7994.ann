@@ -1,0 +1,11 @@
+T1	Parts 0 12	コンビネーションスイッチ
+T2	Parts 15 24	側方照射灯スイッチ
+T3	Parts 47 59	コンビネーションスイッチ
+T4	Parts 80 85	側方照射灯
+T5	Parts 126 128	基板
+T6	Parts 145 147	基板
+R1	Coreference Arg1:T1 Arg2:T3	
+R2	Coreference Arg1:T5 Arg2:T6	
+R3	Part-Whole Arg1:T2 Arg2:T1	
+R4	Connect Arg1:T2 Arg2:T4	
+R5	Part-Whole Arg1:T5 Arg2:T2	

@@ -1,0 +1,23 @@
+T1	Argument 15 39	車速センサにおいて、②外部磁力に対する検討が不足
+T2	Connective 43 45	ため
+T3	Argument 62 75	動力伝達装置が一時的に磁化
+T4	Connective 77 78	と
+T5	Argument 78 90	センサ内部の磁界が乱れる
+T6	Connective 96 100	そのため
+T7	Argument 101 115	車速センサが出力できなくなり
+T8	Connective 115 116	、
+T9	Argument 116 122	警告灯が点灯
+T11	Argument 124 135	速度計が指示不良となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	RESULT Arg1:T8 Arg2:T11	
+T10	Argument 46 61	鉄くずを積載するための電磁石等
+T12	Connective 61 62	で
+R10	REASON Arg1:T12 Arg2:T10	
+R11	RESULT Arg1:T12 Arg2:T3	

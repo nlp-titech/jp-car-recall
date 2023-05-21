@@ -1,0 +1,11 @@
+T1	Argument 11 33	衝突被害軽減ブレーキの制御プログラムが不適切
+T2	Connective 34 36	ため
+T3	Argument 37 72	カーブ路での対向車や路外障害物に対しシステムが衝突対象として過敏に反応
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 80 84	そのため
+T5	Argument 85 112	意図しないところで障害物との接近を知らせる警報音が鳴り
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 113 126	衝突被害軽減ブレーキが作動
+R5	RESULT Arg1:T4 Arg2:T6	

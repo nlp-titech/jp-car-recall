@@ -1,0 +1,13 @@
+T1	Parts 0 11	電動パーキングブレーキ
+T2	Parts 13 17	ハーネス
+T4	Parts 69 71	車両
+T5	Parts 77 81	ハーネス
+T6	Parts 89 92	警告灯
+T7	Parts 97 108	電動パーキングブレーキ
+R1	Coreference Arg1:T1 Arg2:T7	
+R2	Coreference Arg1:T2 Arg2:T5	
+R3	Contact Arg1:T1 Arg2:T2	
+R4	Connect Arg1:T6 Arg2:T7	
+R5	Part-Whole Arg1:T7 Arg2:T4	
+R6	Part-Whole Arg1:T5 Arg2:T4	
+R7	Part-Whole Arg1:T6 Arg2:T4	

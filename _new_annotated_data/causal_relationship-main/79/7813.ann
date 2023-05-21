@@ -1,0 +1,15 @@
+T1	Argument 22 64	機械式自動変速機において、２個仕様の自動クラッチ作動用モータの制御プログラムが不適切
+T2	Connective 65 67	ため
+T4	Connective 101 105	そのため
+T5	Argument 106 112	警告灯が点灯
+T6	Argument 118 125	走行不能となる
+R1	REASON Arg1:T2 Arg2:T1	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T6	
+T3	Argument 68 76	片側モータ失陥時
+T7	Connective 76 77	に
+T8	Argument 77 95	残りのモータでクラッチが作動できない
+R2	CONDITION Arg1:T7 Arg2:T3	
+R3	RESULT Arg1:T7 Arg2:T8	
+R6	RESULT Arg1:T2 Arg2:T8	
+R7	REASON Arg1:T4 Arg2:T8	

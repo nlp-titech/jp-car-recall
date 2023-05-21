@@ -1,0 +1,17 @@
+T1	Argument 0 30	助手席乗員重量区分システムにおいて、製造時の重量校正が不適切
+T2	Connective 31 33	ため
+T3	Argument 34 46	本来の重量より重たく判断
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 54 58	そのため
+T5	Argument 59 74	手荷物など、わずかな重量を検出
+T6	Connective 76 78	場合
+R3	CONDITION Arg1:T6 Arg2:T5	
+T7	Argument 80 91	人が着座していると認識
+R4	REASON Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	RESULT Arg1:T4 Arg2:T7	
+T10	Argument 93 109	衝突時に意図せずエアバッグが展開
+T11	Connective 92 93	、
+R9	REASON Arg1:T11 Arg2:T7	
+R10	RESULT Arg1:T11 Arg2:T10	

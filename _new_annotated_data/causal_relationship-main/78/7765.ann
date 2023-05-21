@@ -1,0 +1,9 @@
+T1	Argument 6 31	車両制御用コントローラにおいて、プログラムが不適切
+T2	Connective 32 34	ため
+T3	Argument 35 61	パーキングブレーキ解除状態でＰＴＯ駆動スイッチを操作
+T4	Connective 63 64	と
+R1	CONDITION Arg1:T4 Arg2:T3	
+T5	Argument 64 69	車両が発進
+R2	RESULT Arg1:T4 Arg2:T5	
+R3	REASON Arg1:T2 Arg2:T1	
+R4	RESULT Arg1:T2 Arg2:T5	

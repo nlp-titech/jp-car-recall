@@ -1,0 +1,14 @@
+T1	Parts 0 11	フロントサスペンション
+T2	Parts 16 24	コイルスプリング
+T3	Parts 35 43	スプリングシート
+T4	Parts 60 62	車両
+T5	Parts 74 79	スプリング
+T7	Parts 135 143	コイルスプリング
+R1	Part-Whole Arg1:T2 Arg2:T1	
+T6	Parts 84 92	スプリングシート
+R2	Coreference Arg1:T3 Arg2:T6	
+R4	Part-Whole Arg1:T3 Arg2:T1	
+R5	Coreference Arg1:T5 Arg2:T2	
+R6	Part-Whole Arg1:T1 Arg2:T4	
+R7	Contact Arg1:T2 Arg2:T3	
+R3	Coreference Arg1:T5 Arg2:T7	

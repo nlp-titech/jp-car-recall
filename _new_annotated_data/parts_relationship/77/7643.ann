@@ -1,0 +1,7 @@
+T1	Parts 0 5	騒音ラベル
+T2	Parts 12 15	ラベル
+T3	Parts 28 30	車体
+T4	Parts 35 40	騒音ラベル
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Coreference Arg1:T2 Arg2:T4	
+R3	Contact Arg1:T4 Arg2:T3	

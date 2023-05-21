@@ -1,0 +1,42 @@
+T1	Argument 0 44	電源配線を接続している床下の中継接続部の端子固定ナットにおいて、製造時の組み付けが不適切
+T2	Connective 45 47	ため
+T3	Argument 48 55	走行時の振動等
+T4	Connective 55 58	により
+T5	Argument 58 60	緩む
+T6	Connective 66 70	そのため
+T7	Argument 71 85	そのままの状態で使用を続ける
+T8	Connective 85 86	と
+T9	Argument 87 96	電気的な接続が断た
+T10	Connective 100 101	で
+T11	Argument 101 107	警告灯が点灯
+T13	Argument 109 118	エンジンが始動せず
+T14	Connective 118 119	、
+T15	Argument 119 126	走行不能になる
+T16	Argument 136 147	電気的な接触抵抗が増加
+T17	Connective 147 148	し
+T18	Argument 148 150	発熱
+T19	Connective 151 152	て
+T20	Argument 153 155	最悪
+T21	Connective 156 158	場合
+T22	Argument 159 164	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R15	RESULT Arg1:T8 Arg2:T16	
+R16	REASON Arg1:T17 Arg2:T16	
+R17	RESULT Arg1:T17 Arg2:T18	
+R18	REASON Arg1:T19 Arg2:T18	
+R19	RESULT Arg1:T19 Arg2:T22	
+R20	CONDITION Arg1:T21 Arg2:T20	
+R21	RESULT Arg1:T21 Arg2:T22	
+R11	RESULT Arg1:T10 Arg2:T13	
+R12	RESULT Arg1:T6 Arg2:T16	

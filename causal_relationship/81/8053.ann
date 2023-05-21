@@ -1,0 +1,27 @@
+T1	Argument 0 42	脱着装置付きコンテナ自動車において、電動格納式リアバンパの電源回路の図面指示が不適切
+T2	Connective 43 45	ため
+T3	Argument 46 61	ヒューズが取り付けられていない
+T4	Connective 67 71	そのため
+T5	Argument 72 79	配線がショート
+T6	Connective 81 82	際
+T7	Argument 83 89	過電流が流れ
+T8	Argument 90 92	最悪
+T9	Connective 93 95	場合
+T10	Argument 96 103	配線被覆が溶融
+T11	Connective 104 105	、
+T12	Argument 105 107	発煙
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T10	
+R9	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T12	
+T13	Connective 89 90	、
+R11	REASON Arg1:T13 Arg2:T7	
+R12	RESULT Arg1:T13 Arg2:T10	
+T14	Argument 110 115	発火に至る
+R13	RESULT Arg1:T11 Arg2:T14	

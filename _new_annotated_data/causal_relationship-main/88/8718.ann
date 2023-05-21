@@ -1,0 +1,25 @@
+T1	Argument 0 31	テールゲートストラットの取付部において、部品特性の検証が不十分
+T2	Connective 32 34	ため
+T3	Argument 45 66	テールゲートストラットとテールゲートが干渉
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T6	Connective 74 78	そのため
+R5	REASON Arg1:T6 Arg2:T3	
+T7	Argument 79 89	取付部に負荷がかかり
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Connective 89 90	、
+T9	Argument 90 109	テールゲートストラットが取付部から外れ
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 116 125	テールゲートが落下
+T11	Connective 109 110	、
+R9	REASON Arg1:T11 Arg2:T9	
+R10	RESULT Arg1:T11 Arg2:T10	
+T12	Argument 110 112	最悪
+T13	Connective 113 115	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T10	
+T4	Argument 35 44	テールゲート開閉時
+T5	Connective 44 45	に
+R3	CONDITION Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T3	

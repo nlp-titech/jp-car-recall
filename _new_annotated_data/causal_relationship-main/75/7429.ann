@@ -1,0 +1,25 @@
+T1	Argument 0 32	エンジンオイルの油圧を調整するソレノイドバルブの配置位置が不適切
+T2	Connective 33 35	ため
+T3	Argument 36 59	エンジン内で発生した微細金属がノズル内部に入り
+T4	Connective 59 60	、
+T5	Argument 60 66	バルブを固着
+T6	Connective 75 79	そのため
+T7	Argument 80 89	油圧調整不良となり
+T8	Argument 90 98	油圧警告灯が点灯
+T9	Connective 89 90	、
+T10	Argument 101 106	異音が発生
+T12	Argument 108 110	最悪
+T13	Connective 111 113	場合
+T14	Argument 114 121	エンジンが破損
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+R9	RESULT Arg1:T9 Arg2:T10	
+R13	CONDITION Arg1:T13 Arg2:T12	
+R14	RESULT Arg1:T13 Arg2:T14	
+R10	RESULT Arg1:T9 Arg2:T14	

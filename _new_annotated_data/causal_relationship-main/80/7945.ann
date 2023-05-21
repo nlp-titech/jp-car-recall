@@ -1,0 +1,17 @@
+T1	Argument 51 66	当該締結部の締付けトルクが不足
+T2	Connective 48 50	ため
+R1	RESULT Arg1:T2 Arg2:T1	
+T3	Connective 76 80	そのため
+R2	REASON Arg1:T3 Arg2:T1	
+T4	Argument 81 98	エンジンオイル循環経路の圧力変動等
+T5	Connective 98 101	により
+T6	Argument 101 114	当該締結部の気密性が損なわ
+T7	Argument 116 134	当該締結部からエンジンオイルが漏れる
+R3	RESULT Arg1:T3 Arg2:T6	
+R4	REASON Arg1:T5 Arg2:T4	
+R5	RESULT Arg1:T5 Arg2:T6	
+T8	Connective 115 116	、
+R6	REASON Arg1:T8 Arg2:T6	
+R7	RESULT Arg1:T8 Arg2:T7	
+T9	Argument 0 47	エンジンオイル循環経路のオイルホースとオイルタンクとのナット締結部の締付けトルクの設定が不適切
+R8	REASON Arg1:T2 Arg2:T9	

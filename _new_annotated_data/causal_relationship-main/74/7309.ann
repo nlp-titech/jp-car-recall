@@ -1,0 +1,33 @@
+T1	Argument 18 44	ボデーレールとサイドパネルの接合部の施工管理が不適切
+T2	Connective 45 47	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 48 59	当該接合部の強度が不足
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 69 73	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T6	Argument 93 103	ボデーレールが剥がれ
+T5	Argument 83 92	接合部に亀裂が生じ
+T7	Connective 92 93	、
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	
+T8	Argument 104 106	最悪
+T9	Connective 107 109	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+T10	Argument 114 120	タイヤに接触
+T11	Connective 120 121	し
+T12	Argument 122 130	走行できなくなる
+R8	RESULT Arg1:T11 Arg2:T12	
+R9	REASON Arg1:T11 Arg2:T10	
+R12	RESULT Arg1:T9 Arg2:T16	
+T13	Connective 80 83	により
+T14	Argument 74 80	走行時の負荷
+R13	REASON Arg1:T13 Arg2:T14	
+R14	RESULT Arg1:T13 Arg2:T5	
+T15	Connective 103 104	、
+R10	REASON Arg1:T15 Arg2:T6	
+T16	Argument 110 112	破断
+R11	RESULT Arg1:T15 Arg2:T16	
+T17	Connective 113 114	て
+R15	REASON Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T10	

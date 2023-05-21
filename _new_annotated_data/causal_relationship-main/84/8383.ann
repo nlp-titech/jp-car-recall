@@ -1,0 +1,25 @@
+T1	Argument 18 33	フレームサポートの設計が不適切
+T2	Connective 34 36	ため
+T3	Argument 37 58	燃料ホースとフレームサポートの隙間が小さい
+T4	Connective 64 68	そのため
+T5	Argument 69 75	走行時振動等
+T6	Connective 75 78	により
+T7	Argument 79 96	燃料ホースとフレームサポートが接触
+T8	Connective 100 101	で
+T9	Argument 101 109	燃料ホースが損傷
+T10	Connective 110 111	、
+T11	Argument 111 113	最悪
+T12	Connective 114 116	場合
+T13	Argument 117 123	燃料が漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	

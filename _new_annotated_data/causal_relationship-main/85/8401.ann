@@ -1,0 +1,5 @@
+T1	Argument 0 26	エンジンコントロールユニットの制御プログラムが不適切
+T2	Connective 27 29	ため
+T3	Argument 39 97	非メタン系炭化水素（ＮＭＨＣ）及び、窒素酸化物（ＮＯｘ）排出量が、平成１７年基準排出ガス７５％低減レベルを満たさない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

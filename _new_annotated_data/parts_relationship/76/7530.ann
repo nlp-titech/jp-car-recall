@@ -1,0 +1,6 @@
+T1	Parts 0 5	燃料タンク
+T2	Parts 13 18	給油ホース
+T3	Parts 69 71	燃料
+R1	Contact Arg1:T1 Arg2:T2	
+R2	Part-Whole Arg1:T3 Arg2:T1	
+R3	Contact Arg1:T2 Arg2:T3	

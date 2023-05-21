@@ -1,0 +1,29 @@
+T1	Argument 0 21	燃料タンクにおいて、金型の冷却時間が不適切
+T2	Connective 22 24	ため
+T3	Argument 25 48	樹脂製燃料タンク底面の厚さが均一になっていない
+T4	Connective 54 58	そのため
+T6	Argument 77 91	そのままの状態で使用を続ける
+T7	Connective 76 77	、
+T8	Argument 93 122	燃料ポンプ及び燃料残量センサー取り付け部のシール機能が低下
+T9	Connective 123 124	て
+T10	Argument 125 127	最悪
+T11	Connective 128 130	場合
+T12	Argument 131 137	燃料が漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T8	
+T13	Connective 92 93	、
+R7	CONDITION Arg1:T13 Arg2:T6	
+R8	RESULT Arg1:T13 Arg2:T8	
+R9	REASON Arg1:T9 Arg2:T8	
+R10	RESULT Arg1:T9 Arg2:T12	
+R11	CONDITION Arg1:T11 Arg2:T10	
+R12	RESULT Arg1:T11 Arg2:T12	
+T5	Argument 59 60	熱
+T14	Connective 60 63	により
+T15	Argument 63 76	燃料タンク底面に歪みが生じ
+R4	REASON Arg1:T14 Arg2:T5	
+R5	RESULT Arg1:T14 Arg2:T15	
+R14	RESULT Arg1:T4 Arg2:T15	
+R3	REASON Arg1:T4 Arg2:T3	
+R13	REASON Arg1:T7 Arg2:T15	

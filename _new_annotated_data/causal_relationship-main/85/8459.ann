@@ -1,0 +1,29 @@
+T1	Argument 0 29	電動パワーステアリングの配線において、切断機の設定が不適切
+T2	Connective 30 32	ため
+T3	Argument 33 40	配線被覆が損傷
+T4	Connective 50 54	そのため
+T6	Connective 69 70	で
+T7	Argument 70 78	電気的故障が発生
+T8	Connective 79 80	、
+T11	Argument 80 108	走行中にパワーステアリングの電動アシストが機能しなくなり
+T12	Connective 108 109	、
+T13	Argument 109 111	最悪
+T14	Connective 112 114	場合
+T15	Argument 115 121	短絡が起きる
+T16	Connective 121 122	と
+T17	Argument 122 127	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+T19	Argument 60 65	水分が侵入
+R4	RESULT Arg1:T4 Arg2:T19	
+R7	REASON Arg1:T6 Arg2:T19	
+R8	RESULT Arg1:T6 Arg2:T7	
+R9	REASON Arg1:T8 Arg2:T7	
+R10	RESULT Arg1:T8 Arg2:T11	
+R6	RESULT Arg1:T12 Arg2:T15	
+R11	CONDITION Arg1:T14 Arg2:T13	
+R12	RESULT Arg1:T14 Arg2:T15	
+R13	REASON Arg1:T16 Arg2:T15	
+R14	RESULT Arg1:T16 Arg2:T17	
+R5	REASON Arg1:T12 Arg2:T19	

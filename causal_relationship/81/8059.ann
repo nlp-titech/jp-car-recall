@@ -1,0 +1,13 @@
+T1	Argument 0 45	前面衝突警報システム（ＦＣＷ）において、仕様上、前方の障害物等に対してセンサーが過敏に反応
+T2	Connective 53 57	そのため
+T4	Argument 58 92	衝突の可能性がないにもかかわらず障害物との接近を知らせる警報音が鳴り
+T5	Connective 92 93	、
+T6	Argument 93 106	衝突被害軽減ブレーキが作動
+T7	Connective 107 108	て
+T8	Argument 108 115	急制動がかかる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T4	
+R5	REASON Arg1:T5 Arg2:T4	
+R6	RESULT Arg1:T5 Arg2:T6	
+R7	REASON Arg1:T7 Arg2:T6	
+R8	RESULT Arg1:T7 Arg2:T8	

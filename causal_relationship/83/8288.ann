@@ -1,0 +1,21 @@
+T1	Argument 9 39	サスペンションアーム類を固定するナットのねじ部の加工が不適切
+T2	Connective 40 42	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 43 62	ねじ接続部が完全に締め付けられていない
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 68 72	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 73 86	アーム類固定部のネジが緩む
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 88 89	で
+T7	Argument 89 93	がたつき
+T8	Argument 94 99	異音が発生
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T8	
+T9	Argument 107 123	ハンドル操作が正常に行えなくなる
+R8	RESULT Arg1:T6 Arg2:T9	
+T10	Argument 101 103	最悪
+T11	Connective 104 106	場合
+R9	RESULT Arg1:T11 Arg2:T9	
+R10	CONDITION Arg1:T11 Arg2:T10	

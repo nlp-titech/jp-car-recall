@@ -1,0 +1,5 @@
+T3	Connective 57 61	そのため
+T4	Argument 62 77	光軸が保安基準を満足していない
+R4	RESULT Arg1:T3 Arg2:T4	
+T1	Argument 0 50	前照灯において、車両製造工場の光軸検査設備で、受光器の設定位置が不適切な状態で光軸の調整、検査を行っ
+R1	REASON Arg1:T3 Arg2:T1	

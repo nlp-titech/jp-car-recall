@@ -1,0 +1,9 @@
+T3	Parts 10 16	取付けボルト
+T4	Parts 48 51	ボルト
+T5	Parts 65 70	エアバッグ
+T6	Parts 85 90	エアバッグ
+T1	Parts 0 9	助手席側エアバッグ
+R1	Coreference Arg1:T1 Arg2:T5	
+R2	Coreference Arg1:T5 Arg2:T6	
+R3	Coreference Arg1:T3 Arg2:T4	
+R4	Contact Arg1:T1 Arg2:T3	

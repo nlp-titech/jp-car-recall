@@ -1,0 +1,5 @@
+T1	Argument 19 37	大型後部反射器の取り付け位置が不適切
+T2	Connective 38 40	ため
+T3	Argument 41 51	保安基準に適合しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

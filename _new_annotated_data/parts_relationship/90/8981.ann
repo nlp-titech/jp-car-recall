@@ -1,0 +1,12 @@
+T1	Parts 0 8	リヤスタビライザ
+T2	Parts 9 14	ブラケット
+T3	Parts 15 17	車体
+T4	Parts 31 34	ボルト
+T5	Parts 76 79	ボルト
+T6	Parts 96 101	ブラケット
+R1	Coreference Arg1:T4 Arg2:T5	
+R2	Coreference Arg1:T2 Arg2:T6	
+R3	Contact Arg1:T1 Arg2:T2	
+R4	Contact Arg1:T2 Arg2:T3	
+R5	Contact Arg1:T3 Arg2:T4	
+R6	Contact Arg1:T2 Arg2:T4	

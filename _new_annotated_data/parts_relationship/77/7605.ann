@@ -1,0 +1,10 @@
+T1	Parts 0 12	ＬＮＧタンクセミトレーラ
+T2	Parts 13 18	加圧蒸発器
+T3	Parts 23 25	車体
+T4	Parts 49 54	加圧蒸発器
+T5	Parts 91 96	加圧蒸発器
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T2 Arg2:T4	
+R3	Coreference Arg1:T4 Arg2:T5	
+R4	Contact Arg1:T2 Arg2:T3	
+R5	Part-Whole Arg1:T3 Arg2:T1	

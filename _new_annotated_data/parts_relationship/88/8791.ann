@@ -1,0 +1,6 @@
+T1	Parts 0 29	車線逸脱防止支援装置（アクティブレーンキーピングアシスト）
+T2	Parts 30 40	マルチパーパスカメラ
+T3	Parts 53 56	タイヤ
+T4	Parts 111 115	ブレーキ
+R1	Connect Arg1:T1 Arg2:T4	
+R2	Part-Whole Arg1:T2 Arg2:T1	

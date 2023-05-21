@@ -1,0 +1,21 @@
+T1	Argument 0 18	燃料ホースにおいて、材料配分が不適切
+T2	Argument 22 28	耐久性が不足
+T3	Connective 38 42	そのため
+T4	Connective 19 21	ため
+R1	REASON Arg1:T4 Arg2:T1	
+R2	RESULT Arg1:T4 Arg2:T2	
+R3	REASON Arg1:T3 Arg2:T2	
+T5	Argument 43 53	燃料ホースが早期劣化
+R4	RESULT Arg1:T3 Arg2:T5	
+T6	Argument 54 59	亀裂が生じ
+T7	Connective 53 54	し
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	
+T8	Connective 59 60	て
+R7	REASON Arg1:T8 Arg2:T6	
+T9	Argument 61 63	最悪
+T10	Connective 64 66	場合
+R8	CONDITION Arg1:T10 Arg2:T9	
+T11	Argument 67 73	燃料が漏れる
+R9	RESULT Arg1:T10 Arg2:T11	
+R10	RESULT Arg1:T8 Arg2:T11	

@@ -1,0 +1,64 @@
+T1	Argument 11 43	保安部品や内外装部品等において、当該部品や取付け部の評価が足りず
+T2	Connective 43 44	、
+T3	Argument 44 51	灯火器類の不灯
+T4	Argument 52 57	部品の脱落
+T5	Argument 61 64	破損等
+T6	Connective 64 67	により
+T7	Argument 68 78	それぞれの機能が損失
+T8	Connective 79 80	て
+T9	Argument 81 83	最悪
+T10	Connective 84 86	場合
+T11	Argument 87 97	保安基準に適合しない
+T12	Argument 105 130	変速機の主軸オイルシールにおいて、気密性能が不十分
+T13	Connective 131 133	ため
+T14	Argument 134 150	変速機内部の潤滑油を密封できない
+T15	Connective 156 160	そのため
+T16	Argument 161 175	そのままの状態で使用を続ける
+T17	Connective 175 176	と
+T18	Argument 177 195	当該オイルシールから潤滑油が滲みだし
+T19	Connective 195 196	、
+T20	Argument 196 201	路面に滴下
+T21	Argument 224 243	アクセルリターンスプリングの強度が不足
+T22	Connective 248 252	そのため
+T23	Argument 253 263	そのまま使用を続ける
+T24	Connective 263 264	と
+T25	Argument 265 275	当該スプリングが折損
+T26	Connective 276 277	、
+T27	Argument 277 279	最悪
+T28	Connective 280 282	場合
+T29	Argument 283 297	アクセルペダルが戻りきらない
+T30	Argument 299 304	手動運転時
+T31	Connective 305 306	、
+T32	Argument 306 323	パーキングブレーキが作動しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	RESULT Arg1:T2 Arg2:T4	
+R4	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T3	
+R6	REASON Arg1:T6 Arg2:T4	
+R7	REASON Arg1:T6 Arg2:T5	
+R8	RESULT Arg1:T6 Arg2:T7	
+R9	REASON Arg1:T8 Arg2:T7	
+R10	RESULT Arg1:T8 Arg2:T11	
+R11	CONDITION Arg1:T10 Arg2:T9	
+R12	RESULT Arg1:T10 Arg2:T11	
+R13	REASON Arg1:T13 Arg2:T12	
+R14	RESULT Arg1:T13 Arg2:T14	
+R15	REASON Arg1:T15 Arg2:T14	
+R16	RESULT Arg1:T15 Arg2:T18	
+R17	CONDITION Arg1:T17 Arg2:T16	
+R18	RESULT Arg1:T17 Arg2:T18	
+R19	REASON Arg1:T19 Arg2:T18	
+R20	RESULT Arg1:T19 Arg2:T20	
+R21	REASON Arg1:T22 Arg2:T21	
+R22	RESULT Arg1:T22 Arg2:T25	
+R23	CONDITION Arg1:T24 Arg2:T23	
+R24	RESULT Arg1:T24 Arg2:T25	
+R25	REASON Arg1:T26 Arg2:T25	
+R26	RESULT Arg1:T26 Arg2:T29	
+R27	RESULT Arg1:T26 Arg2:T32	
+R28	CONDITION Arg1:T28 Arg2:T27	
+R29	RESULT Arg1:T28 Arg2:T29	
+R30	RESULT Arg1:T28 Arg2:T32	
+R31	CONDITION Arg1:T31 Arg2:T30	
+R32	RESULT Arg1:T31 Arg2:T32	

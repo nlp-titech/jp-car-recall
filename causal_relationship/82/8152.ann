@@ -1,0 +1,5 @@
+T1	Argument 32 60	車両側方最後部に取付けられている灯火の取付け指示が不適切
+T2	Connective 61 63	ため
+T3	Argument 64 89	車両の全幅が保安基準第２条（幅の基準）に適合しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

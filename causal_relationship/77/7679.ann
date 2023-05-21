@@ -1,0 +1,15 @@
+T1	Argument 0 39	電動パワーステアリングにおいて、コントロールユニットの端子部の製造条件が不適切
+T2	Connective 40 42	ため
+T3	Argument 43 54	回路が絶縁されずに導通
+T4	Connective 62 66	そのため
+T5	Argument 67 73	警告灯が点灯
+T6	Argument 79 98	パワーステアリングのアシスト機能が停止
+T7	Connective 99 100	、
+T8	Argument 100 113	ステアリングの操作力が増大
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T6	
+R6	REASON Arg1:T7 Arg2:T6	
+R7	RESULT Arg1:T7 Arg2:T8	

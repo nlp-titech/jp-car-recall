@@ -1,0 +1,13 @@
+T1	Parts 7 18	大型トラック（４軸車）
+T2	Parts 0 4	エアサス
+T3	Parts 23 48	タンデムペラ（後前軸と後後軸間のプロペラシャフト）
+T4	Parts 61 67	タンデムペラ
+T5	Parts 75 84	スプラインシャフト
+T6	Parts 85 88	プラグ
+T7	Parts 96 99	プラグ
+R1	Part-Whole Arg1:T5 Arg2:T4	
+R2	Part-Whole Arg1:T6 Arg2:T4	
+R3	Coreference Arg1:T7 Arg2:T6	
+R4	Coreference Arg1:T3 Arg2:T4	
+R5	Part-Whole Arg1:T2 Arg2:T1	
+R6	Part-Whole Arg1:T3 Arg2:T1	

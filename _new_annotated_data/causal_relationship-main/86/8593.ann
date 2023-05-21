@@ -1,0 +1,13 @@
+T1	Argument 0 43	エンジン制御コンピュータにおいて、アイドリングストップ後の再始動制御プログラムが不適切
+T2	Connective 44 46	ため
+T3	Argument 65 78	エンジン停止判定処理が遅れ
+T4	Connective 79 81	場合
+T5	Argument 82 93	アイドリングストップ後
+T6	Connective 93 94	に
+T7	Argument 94 107	エンジンが再始動しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T7	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

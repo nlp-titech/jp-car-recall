@@ -1,0 +1,25 @@
+T1	Argument 13 40	アクスルの動力伝達装置の材料評価が不十分なまま生産実施
+T2	Connective 42 44	ため
+T3	Argument 44 59	設計意図の性能を満たしていない
+T4	Connective 65 69	そのため
+T5	Argument 70 84	そのままの状態で使用を続ける
+T6	Connective 84 85	と
+T7	Connective 89 92	により
+T8	Argument 85 89	強度不足
+T9	Argument 92 94	破損
+T10	Argument 95 102	走行不能となり
+T11	Connective 102 103	、
+T12	Argument 103 136	道路運送車両の保安基準第８条（原動機及び動力伝達装置）に適合しない
+T13	Connective 94 95	し
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T8	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+R7	REASON Arg1:T7 Arg2:T8	
+R8	RESULT Arg1:T7 Arg2:T9	
+R9	REASON Arg1:T13 Arg2:T9	
+R10	RESULT Arg1:T13 Arg2:T10	
+R11	REASON Arg1:T11 Arg2:T10	
+R12	RESULT Arg1:T11 Arg2:T12	

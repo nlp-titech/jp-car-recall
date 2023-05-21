@@ -1,0 +1,31 @@
+T1	Argument 0 36	大型トラックにおいて、（３）駆動力取出し装置（ＰＴＯ）の組付作業が不適切
+T2	Connective 37 39	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Connective 92 96	そのため
+T4	Argument 97 121	ベルト駆動用プーリーの取付ナットの締付け力が不足
+R2	RESULT Arg1:T3 Arg2:T4	
+T5	Argument 123 137	そのままの状態で使用を続ける
+T6	Connective 137 138	と
+R3	CONDITION Arg1:T6 Arg2:T5	
+T7	Argument 139 146	取付ナットが緩
+T8	Argument 147 152	異音が発生
+T9	Connective 146 147	み
+T10	Connective 122 123	、
+R4	REASON Arg1:T10 Arg2:T4	
+R5	RESULT Arg1:T10 Arg2:T7	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+T11	Argument 160 170	駆動用プーリーが脱落
+R9	RESULT Arg1:T9 Arg2:T11	
+T12	Argument 154 156	最悪
+T13	Connective 157 159	場合
+R10	CONDITION Arg1:T13 Arg2:T12	
+R11	RESULT Arg1:T13 Arg2:T11	
+T14	Connective 171 172	て
+T15	Argument 173 183	他の交通の妨げになる
+R12	REASON Arg1:T14 Arg2:T11	
+R13	RESULT Arg1:T14 Arg2:T15	
+T16	Argument 40 83	シャフト部の表面に防錆対策用テープの接着成分が残ったまま、ベルト駆動用プーリーが組付け
+R14	RESULT Arg1:T2 Arg2:T16	
+R15	REASON Arg1:T3 Arg2:T16	

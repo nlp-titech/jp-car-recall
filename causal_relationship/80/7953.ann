@@ -1,0 +1,21 @@
+T1	Argument 3 26	燃料フィラーホースにおいて、組み付け方向が誤っ
+T2	Connective 29 31	ため
+T3	Argument 32 40	当該ホースが変形
+T4	Connective 50 54	そのため
+T5	Argument 55 65	そのまま使用を続ける
+T6	Connective 65 66	と
+T7	Argument 67 78	当該ホースに亀裂が発生
+T8	Argument 80 82	最悪
+T10	Argument 86 92	燃料が漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T11	Connective 79 80	、
+R7	REASON Arg1:T11 Arg2:T7	
+R8	RESULT Arg1:T11 Arg2:T10	
+T9	Connective 83 85	場合
+R9	CONDITION Arg1:T9 Arg2:T8	
+R10	RESULT Arg1:T9 Arg2:T10	

@@ -1,0 +1,8 @@
+T1	Parts 0 9	油圧クラッチホース
+T2	Parts 28 32	エンジン
+T3	Parts 42 45	ホース
+T4	Parts 63 67	クラッチ
+T5	Parts 83 87	クラッチ
+R1	Coreference Arg1:T1 Arg2:T3	
+R2	Coreference Arg1:T4 Arg2:T5	
+R3	Connect Arg1:T3 Arg2:T4	

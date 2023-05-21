@@ -1,0 +1,13 @@
+T1	Argument 0 42	エアバッグコントロールユニットにおいて、電源供給回路のコンデンサーの通電性能が不適切
+T2	Connective 43 45	ため
+T3	Argument 46 56	電圧制御が安定しない
+T4	Connective 62 66	そのため
+T5	Argument 67 78	エアバッグ警告灯が点灯
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 80 106	エアバッグ、シートベルトプリテンショナーが作動しない
+R5	RESULT Arg1:T4 Arg2:T6	
+T7	Argument 118 125	走行中に誤作動
+R6	RESULT Arg1:T4 Arg2:T7	

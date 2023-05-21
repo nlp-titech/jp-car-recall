@@ -1,0 +1,29 @@
+T1	Argument 0 38	ターボチャージャのオイル配管取付けボルトにおいて、製造時の組付け管理が不適切
+T2	Connective 39 41	ため
+T3	Argument 42 64	当該ボルトが規定トルクで締め付けられていない
+T4	Connective 70 74	そのため
+T5	Argument 75 91	規定トルクで締め付けられていない
+T6	Connective 91 93	場合
+T7	Argument 94 102	当該ボルトが緩み
+T8	Connective 102 103	、
+T9	Argument 103 111	オイル漏れが発生
+T10	Connective 112 113	て
+T11	Argument 114 116	最悪
+T12	Connective 117 119	場合
+T13	Argument 120 133	漏れたオイルが排気管に付着
+T14	Connective 137 138	で
+T15	Argument 138 143	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	

@@ -1,0 +1,25 @@
+T1	Argument 0 18	後輪駆動用ベルトの芯線の構造が不適切
+T2	Connective 19 21	ため
+T3	Argument 22 33	当該ベルトの強度が不足
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 43 47	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 82 90	当該ベルトが切れ
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 76 78	最悪
+T7	Connective 79 81	場合
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T5	
+T8	Argument 91 99	走行できなくなる
+T9	Connective 90 91	て
+R7	REASON Arg1:T9 Arg2:T5	
+R8	RESULT Arg1:T9 Arg2:T8	
+T10	Argument 55 74	当該ベルトに大きな負荷が繰り返し加わる
+T11	Connective 74 75	と
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T5	
+T12	Argument 48 52	急加速等
+T13	Connective 52 55	により
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T10	

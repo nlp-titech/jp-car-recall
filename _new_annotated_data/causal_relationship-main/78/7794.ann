@@ -1,0 +1,35 @@
+T1	Argument 11 50	エレクトロニックコントロールユニット（ＥＣＵ）のエンジン制御プログラムが不適切
+T2	Connective 51 53	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 54 65	変速ギヤが噛み合わない
+T4	Connective 65 67	場合
+R2	CONDITION Arg1:T4 Arg2:T3	
+T5	Argument 68 81	エンジン回転数が急激に上昇
+R3	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 83 88	再度繋がる
+T7	Connective 88 89	際
+R4	CONDITION Arg1:T7 Arg2:T6	
+T8	Argument 90 102	ギヤに高い衝撃力が加わる
+R5	RESULT Arg1:T7 Arg2:T8	
+T9	Connective 82 83	、
+R6	REASON Arg1:T9 Arg2:T5	
+R7	RESULT Arg1:T2 Arg2:T5	
+T10	Connective 108 112	そのため
+R8	REASON Arg1:T10 Arg2:T8	
+T11	Argument 113 124	アウトプットギヤが破損
+T12	Connective 125 126	、
+R9	RESULT Arg1:T10 Arg2:T11	
+R10	REASON Arg1:T12 Arg2:T11	
+T13	Argument 126 134	変速できなくなり
+R11	RESULT Arg1:T12 Arg2:T13	
+T14	Argument 135 137	最悪
+T15	Connective 138 140	場合
+R12	CONDITION Arg1:T15 Arg2:T14	
+T16	Argument 141 151	ギヤの破片が噛み込み
+R13	RESULT Arg1:T15 Arg2:T16	
+T18	Connective 167 168	。
+R16	REASON Arg1:T18 Arg2:T16	
+T19	Argument 151 159	エンジンがロック
+R17	RESULT Arg1:T18 Arg2:T19	
+R18	RESULT Arg1:T9 Arg2:T8	
+R14	RESULT Arg1:T12 Arg2:T16	

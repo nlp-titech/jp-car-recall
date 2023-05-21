@@ -1,0 +1,9 @@
+T1	Argument 0 27	走行用前照灯において、ヘッドライトテスタの設定が不適切
+T2	Connective 28 30	ため
+T3	Argument 31 53	走行用前照灯の光軸調整が適切に行われていない
+T4	Connective 59 63	そのため
+T5	Argument 64 78	光軸の向きが基準に適合しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

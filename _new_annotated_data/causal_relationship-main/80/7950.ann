@@ -1,0 +1,17 @@
+T1	Argument 0 40	電動パワーステアリングシステムにおいて、コネクタの加工装置のメンテナンスが不十分
+T2	Connective 41 43	ため
+T3	Argument 44 61	基板の端子が正しく挿入されていない
+T4	Connective 67 71	そのため
+T5	Argument 72 77	走行振動等
+T6	Connective 77 80	により
+T7	Argument 80 85	回路が断線
+T8	Connective 86 87	、
+T9	Argument 87 100	ステアリングアシストが失わ
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	

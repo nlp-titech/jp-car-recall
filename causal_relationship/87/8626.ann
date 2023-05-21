@@ -1,0 +1,5 @@
+T2	Connective 29 31	ため
+T3	Argument 32 79	当該反射器の幾何学的視認性が道路運送車両法の保安基準第３８条の２（大型後部反射器）に適合しない
+R2	RESULT Arg1:T2 Arg2:T3	
+T1	Argument 0 28	中型教習車において、大型後部反射器の取り付け位置が不適切
+R1	REASON Arg1:T2 Arg2:T1	

@@ -1,0 +1,17 @@
+T1	Argument 0 43	車載式故障診断装置において、エンジンコントロールユニット（ＥＣＵ）のプログラムが不適切
+T2	Connective 44 46	ため
+T3	Argument 47 64	外部診断器（スキャンツール）接続後
+T4	Connective 64 65	に
+T5	Argument 65 93	ＥＣＵが保安基準第３１条の基準に適合しない通信処理を行う
+T6	Connective 94 98	そのため
+T7	Argument 99 124	スキャンツールによってはＥＣＵとの通信が不能となり
+T8	Argument 125 134	故障診断ができない
+T9	Connective 124 125	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	

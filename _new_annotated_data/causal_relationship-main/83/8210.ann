@@ -1,0 +1,21 @@
+T1	Argument 11 39	巻き込み防止装置（サイドガードステー）の取付位置が不適切
+T2	Connective 40 42	ため
+T3	Argument 43 74	サイドガードステーの下側の取付ボルトとブレーキ配管の隙間が不足
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 84 88	そのため
+T5	Argument 89 107	当該取付けボルトとブレーキ配管が接触
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 109 123	そのままの状態で使用を続ける
+T7	Connective 123 124	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+T8	Argument 124 133	ブレーキ配管が損傷
+T9	Connective 108 109	、
+R6	REASON Arg1:T9 Arg2:T5	
+R7	RESULT Arg1:T9 Arg2:T8	
+T10	Argument 136 144	ブレーキ液が漏洩
+T11	Connective 134 135	て
+R8	REASON Arg1:T11 Arg2:T8	
+R9	RESULT Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T7 Arg2:T8	

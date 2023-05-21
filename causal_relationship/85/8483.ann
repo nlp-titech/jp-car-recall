@@ -1,0 +1,45 @@
+T1	Argument 7 56	電制エアドライヤーにおいて、セントラルシャシ入出力モジュールのエアドライヤー再生プログラムが不適切
+T2	Connective 57 59	ため
+T5	Argument 85 96	乾燥剤の吸湿能力の低下
+T6	Connective 96 99	により
+T7	Argument 100 128	高湿度圧縮空気がエアタンク及び各エアシステム回路内で結露
+T8	Argument 129 135	凝縮水が生成
+T9	Connective 84 85	ず
+R1	REASON Arg1:T9 Arg2:T24	
+R2	RESULT Arg1:T9 Arg2:T5	
+T10	Connective 139 143	そのため
+T11	Argument 144 158	そのままの状態で使用を続ける
+T12	Connective 158 159	と
+T13	Argument 160 166	凝縮水の影響
+T14	Connective 166 169	により
+T15	Argument 169 179	車高調整不良等が発生
+T16	Argument 187 189	最悪
+T17	Connective 190 192	場合
+T18	Argument 193 203	外気温が氷点下の環境
+T19	Connective 203 207	において
+T20	Argument 211 233	ブレーキ系のエアバルブ内に残留した水分が凍結
+T21	Connective 234 235	、
+T22	Argument 235 252	ブレーキ異常の警告メッセージが表示
+T23	Argument 260 285	電子制御ブレーキシステム（ＥＢＳ）が作動不良に至る
+R3	REASON Arg1:T2 Arg2:T1	
+T24	Argument 60 84	当該ドライヤー乾燥再生動作が適切な頻度で実行され
+R9	REASON Arg1:T6 Arg2:T5	
+R10	RESULT Arg1:T6 Arg2:T7	
+R11	REASON Arg1:T10 Arg2:T8	
+R12	RESULT Arg1:T10 Arg2:T15	
+R13	CONDITION Arg1:T12 Arg2:T11	
+R14	RESULT Arg1:T12 Arg2:T15	
+R15	REASON Arg1:T14 Arg2:T13	
+R16	RESULT Arg1:T14 Arg2:T15	
+R17	CONDITION Arg1:T17 Arg2:T16	
+R18	RESULT Arg1:T17 Arg2:T20	
+R20	CONDITION Arg1:T19 Arg2:T18	
+R21	RESULT Arg1:T19 Arg2:T20	
+R22	REASON Arg1:T21 Arg2:T20	
+R23	RESULT Arg1:T21 Arg2:T22	
+R24	RESULT Arg1:T21 Arg2:T23	
+T3	Connective 128 129	し
+R4	REASON Arg1:T3 Arg2:T7	
+R5	RESULT Arg1:T3 Arg2:T8	
+R6	RESULT Arg1:T2 Arg2:T24	
+R7	RESULT Arg1:T10 Arg2:T20	

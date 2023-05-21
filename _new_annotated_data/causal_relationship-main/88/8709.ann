@@ -1,0 +1,37 @@
+T1	Connective 48 50	ため
+T2	Argument 51 64	ボルト締付け後に軸力が低下
+R1	RESULT Arg1:T1 Arg2:T2	
+T3	Argument 74 82	取付ボルトが緩み
+T4	Argument 66 73	路面からの振動
+T5	Connective 73 74	で
+T6	Connective 65 66	、
+R2	REASON Arg1:T6 Arg2:T2	
+R3	RESULT Arg1:T6 Arg2:T3	
+R4	REASON Arg1:T5 Arg2:T4	
+R5	RESULT Arg1:T5 Arg2:T3	
+T7	Connective 92 96	そのため
+T8	Argument 97 107	そのまま使用を続ける
+T9	Connective 107 108	と
+T10	Argument 0 44	バッテリ式フォークリフトの充電用トランスにおいて、取付ボルトに使用する平座金の枚数が不足
+R7	REASON Arg1:T1 Arg2:T10	
+R8	CONDITION Arg1:T9 Arg2:T8	
+T11	Argument 109 116	トランスが脱落
+R9	RESULT Arg1:T7 Arg2:T11	
+R10	RESULT Arg1:T9 Arg2:T11	
+T12	Connective 117 118	、
+T13	Argument 124 146	トランスとバッテリケーブルの間で短絡が起こり
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+T14	Argument 118 120	最悪
+T15	Connective 121 123	場合
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T13	
+T16	Connective 146 147	、
+T17	Argument 147 154	車両火災に至る
+R15	REASON Arg1:T16 Arg2:T13	
+R16	RESULT Arg1:T16 Arg2:T17	
+T18	Argument 82 84	脱落
+T19	Connective 91 92	。
+R6	REASON Arg1:T19 Arg2:T3	
+R17	RESULT Arg1:T19 Arg2:T18	
+R18	REASON Arg1:T7 Arg2:T18	

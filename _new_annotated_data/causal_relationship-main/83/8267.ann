@@ -1,0 +1,15 @@
+T1	Argument 0 29	ＧＭ（グランドモジュール）において、電気負荷の設計が不適切
+T2	Connective 30 32	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 33 50	ホーンを鳴らしながらブレーキを操作
+T4	Connective 52 53	と
+R2	CONDITION Arg1:T4 Arg2:T3	
+T5	Argument 53 64	制動灯の故障警告が表示
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+T6	Argument 96 107	制動灯が点灯しなくなる
+T8	Argument 67 93	イグニッションスイッチを一度オフにして再度オンにする
+T9	Connective 93 95	まで
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T6	
+R5	RESULT Arg1:T2 Arg2:T6	

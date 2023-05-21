@@ -1,0 +1,13 @@
+T1	Argument 0 52	後席右座席中央側のチャイルドシート固定用ＩＳＯＦＩＸロアアンカレッジのブラケットにおいて、成形型が不適切
+T2	Connective 53 55	ため
+T3	Argument 56 75	ブラケット嵌合部寸法が規定より狭くなる
+T4	Connective 80 81	、
+T5	Argument 81 83	最悪
+T6	Connective 84 86	場合
+T7	Argument 86 103	チャイルドシートを取り付けられない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

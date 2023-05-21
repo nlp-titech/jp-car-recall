@@ -1,0 +1,17 @@
+T1	Argument 0 33	エアバッグ電気回路において、ハーネスを製造する際の製造指示が不適切
+T2	Connective 34 36	ため
+T3	Argument 37 70	エアバッグコンピューターの配線がコネクターに正しく接続されていない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 71 75	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 76 100	助手席エアバックスイッチがオフの状態で車両が衝突
+T6	Connective 102 104	場合
+R4	CONDITION Arg1:T6 Arg2:T5	
+T7	Argument 105 129	運転席及び助手席のニーエアバッグが正しく作動せず
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	RESULT Arg1:T4 Arg2:T7	
+T8	Argument 130 138	乗員が傷害を負う
+T9	Connective 129 130	、
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	

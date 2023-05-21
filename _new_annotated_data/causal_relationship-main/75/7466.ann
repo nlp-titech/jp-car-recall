@@ -1,0 +1,25 @@
+T1	Argument 0 32	エアコンの電動コンプレッサーにおいて、カバーの耐腐食性能が不十分
+T2	Connective 33 35	ため
+T3	Argument 36 51	コンプレッサー内部に水分が浸入
+T4	Connective 59 63	そのため
+T5	Argument 64 79	コンプレッサー内部で漏電が発生
+T6	Connective 81 82	と
+T7	Argument 83 91	ＥＶ警告灯が点灯
+T9	Connective 137 138	と
+T10	Argument 138 143	電源が遮断
+R2	RESULT Arg1:T9 Arg2:T10	
+T11	Connective 145 146	、
+T12	Argument 146 153	走行不能となる
+R3	REASON Arg1:T11 Arg2:T10	
+R4	RESULT Arg1:T11 Arg2:T12	
+R1	REASON Arg1:T2 Arg2:T1	
+R5	RESULT Arg1:T2 Arg2:T3	
+R6	REASON Arg1:T4 Arg2:T3	
+R7	RESULT Arg1:T4 Arg2:T5	
+R8	REASON Arg1:T6 Arg2:T5	
+R9	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 123 135	停車後にＰレンジにシフト
+R10	CONDITION Arg1:T9 Arg2:T8	
+R11	RESULT Arg1:T6 Arg2:T10	
+T13	Argument 96 105	モーター出力が制限
+R12	RESULT Arg1:T6 Arg2:T13	

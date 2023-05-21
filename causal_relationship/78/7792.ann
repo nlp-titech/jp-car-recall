@@ -1,0 +1,13 @@
+T1	Argument 0 32	運転席ドアおよび助手席ドアのワイヤハーネスにおいて、設計が不適切
+T2	Connective 33 35	ため
+T3	Argument 36 45	ドア開閉の繰り返し
+T4	Connective 45 48	により
+R1	REASON Arg1:T4 Arg2:T3	
+R2	REASON Arg1:T2 Arg2:T1	
+T5	Argument 49 54	配線が断線
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+T6	Connective 62 66	そのため
+T7	Argument 67 108	サイドエアバッグやカーテンエアバッグ、ドアミラーの補助方向指示器等が作動しなくなる
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

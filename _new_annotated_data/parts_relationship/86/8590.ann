@@ -1,0 +1,11 @@
+T1	Parts 0 6	農耕トラクタ
+T2	Parts 7 13	駐車ブレーキ
+T3	Parts 18 28	オーバーフローバルブ
+T4	Parts 44 50	駐車ブレーキ
+T5	Parts 80 86	駐車ブレーキ
+T6	Parts 93 99	駐車ブレーキ
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Part-Whole Arg1:T3 Arg2:T2	
+R3	Coreference Arg1:T4 Arg2:T2	
+R4	Coreference Arg1:T5 Arg2:T4	
+R5	Coreference Arg1:T6 Arg2:T5	

@@ -1,0 +1,33 @@
+T1	Argument 13 36	作業用エンジンのオルタネータ配線の配索が不適切
+T2	Connective 37 39	ため
+T3	Argument 40 60	エンジンエキゾーストマニホールドの輻射熱
+T4	Connective 60 63	により
+T5	Argument 63 70	配線被覆が溶損
+T6	Connective 78 82	そのため
+T7	Argument 83 97	そのままの状態で使用を続ける
+T8	Connective 97 98	と
+T9	Argument 99 104	配線が露出
+T10	Argument 110 112	最悪
+T11	Connective 113 115	場合
+T12	Connective 109 110	、
+T13	Argument 116 123	配線被覆に引火
+T14	Connective 124 125	て
+T15	Argument 125 132	車両火災となる
+R1	REASON Arg1:T2 Arg2:T1	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R10	RESULT Arg1:T12 Arg2:T13	
+R11	CONDITION Arg1:T11 Arg2:T10	
+R12	RESULT Arg1:T11 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R2	RESULT Arg1:T2 Arg2:T5	
+T16	Connective 105 106	て
+T17	Argument 106 108	短絡
+R9	REASON Arg1:T16 Arg2:T9	
+R15	RESULT Arg1:T16 Arg2:T17	
+R16	REASON Arg1:T12 Arg2:T17	

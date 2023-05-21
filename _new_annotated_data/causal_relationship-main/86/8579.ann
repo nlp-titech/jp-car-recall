@@ -1,0 +1,21 @@
+T1	Argument 12 35	車輪速センサ用電源回路の抵抗器の耐食性が不十分
+T2	Connective 36 38	ため
+T3	Argument 39 47	当該抵抗器が腐食
+T4	Connective 47 48	し
+T5	Argument 48 55	導通不良となり
+T6	Argument 55 73	車輪速センサに電源が供給されなくなる
+T7	Connective 78 79	。
+T8	Connective 79 83	そのため
+T9	Argument 84 95	車輪速センサが機能せず
+T10	Connective 95 96	、
+T11	Argument 96 121	スピードメータの速度計と走行距離計が作動しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	
+R7	REASON Arg1:T8 Arg2:T6	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	

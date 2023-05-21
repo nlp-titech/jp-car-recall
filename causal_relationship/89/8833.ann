@@ -1,0 +1,29 @@
+T1	Argument 0 49	高開度バックドア架装車両において、右側バックドアステーを取り付ける上側取付ブラケットの加工が不適切
+T2	Connective 50 52	ため
+T3	Argument 53 65	バックドア開閉の繰り返し
+T4	Connective 65 68	により
+T5	Argument 68 75	ブッシュが破損
+T6	Connective 76 77	て
+T7	Argument 77 83	ナットが緩む
+T8	Connective 89 93	そのため
+T9	Argument 94 108	そのままの状態で使用を続ける
+T10	Connective 108 109	と
+T11	Argument 110 112	最悪
+T12	Connective 113 115	場合
+T13	Argument 116 124	ガスステーが外れ
+T14	Connective 124 125	て
+T15	Argument 125 139	バックドアが保持できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T13	
+R9	CONDITION Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	

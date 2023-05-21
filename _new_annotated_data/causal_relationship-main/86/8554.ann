@@ -1,0 +1,13 @@
+T1	Argument 0 26	原動機のピストンにおいて、鋳造工程の設備条件が不適切
+T2	Connective 27 29	ため
+T3	Argument 30 45	ピストンリング溝部の強度が不足
+T4	Connective 55 59	そのため
+T5	Argument 60 70	当該溝部に亀裂が生じ
+T6	Connective 70 71	、
+T7	Argument 71 82	走行中にエンジンが損傷
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

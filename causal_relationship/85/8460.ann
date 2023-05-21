@@ -1,0 +1,31 @@
+T1	Argument 0 22	ブローバイヒーターのプラスチック製造が不適切
+T2	Connective 23 25	ため
+T3	Argument 25 57	正温度特性（ＰＴＣ）ヒーターエレメントへの絶縁体に不規則性が生じ
+T4	Connective 57 58	、
+T6	Argument 58 91	時間の経過とともに正温度特性（ＰＴＣ）ヒーターエレメントがショート
+T8	Argument 101 118	ヒューズによって確実に保護されない
+T9	Connective 119 123	そのため
+T10	Argument 124 148	正温度特性（ＰＴＣ）ヒーターエレメントが異常発熱
+T11	Connective 149 150	て
+T12	Argument 150 155	外装が溶け
+T13	Connective 155 156	、
+T14	Argument 156 166	エンジン警告灯が点灯
+T15	Argument 167 169	最悪
+T16	Connective 170 172	場合
+T17	Argument 173 178	火災に至る
+R3	CONDITION Arg1:T16 Arg2:T15	
+R4	RESULT Arg1:T16 Arg2:T17	
+R5	REASON Arg1:T2 Arg2:T1	
+R6	RESULT Arg1:T2 Arg2:T3	
+R7	REASON Arg1:T4 Arg2:T3	
+R8	RESULT Arg1:T4 Arg2:T6	
+R11	REASON Arg1:T9 Arg2:T8	
+R12	RESULT Arg1:T9 Arg2:T10	
+R13	REASON Arg1:T11 Arg2:T10	
+R14	RESULT Arg1:T11 Arg2:T12	
+R15	REASON Arg1:T13 Arg2:T12	
+R16	RESULT Arg1:T13 Arg2:T14	
+R1	RESULT Arg1:T13 Arg2:T17	
+T5	Connective 100 101	、
+R2	CONDITION Arg1:T5 Arg2:T3	
+R9	RESULT Arg1:T5 Arg2:T8	

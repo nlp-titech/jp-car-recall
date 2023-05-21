@@ -1,0 +1,15 @@
+T1	Argument 0 36	パワートレーンコントロールユニットにおいて、プログラムの仕様指示が不適切
+T2	Connective 37 39	ため
+T3	Argument 40 51	誤ったプログラムが搭載
+T4	Connective 57 61	そのため
+T5	Argument 62 76	ＳＣＲ監視機能が正しく働かず
+T6	Argument 77 91	アイドルストップが機能しない
+T7	Argument 95 110	排出ガスが基準を満足しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T8	Connective 76 77	、
+R5	RESULT Arg1:T8 Arg2:T6	
+R6	REASON Arg1:T8 Arg2:T5	
+R7	RESULT Arg1:T8 Arg2:T7	

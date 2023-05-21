@@ -1,0 +1,5 @@
+T1	Parts 0 9	ホイール・クレーン
+T2	Parts 15 18	手すり
+T3	Parts 23 26	手すり
+R1	Part-Whole Arg1:T2 Arg2:T1	
+R2	Coreference Arg1:T3 Arg2:T2	

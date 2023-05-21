@@ -1,0 +1,27 @@
+T1	Argument 15 36	触媒コンバーター組立工程の生産管理が不適切
+T2	Connective 37 39	ため
+T3	Argument 40 59	正規と異なる触媒コンバーターが組み付け
+T4	Connective 70 74	そのため
+T5	Argument 75 90	エンジン制御との整合性が合わず
+T6	Connective 90 91	、
+T7	Argument 91 104	触媒内部に粒子状物質が堆積
+T8	Connective 105 106	、
+T9	Argument 106 112	警告灯が点灯
+T11	Argument 115 117	最悪
+T12	Connective 118 120	場合
+T13	Argument 121 132	触媒コンバーターが損傷
+T14	Connective 133 134	、
+T15	Argument 134 146	排出ガスが基準値を超える
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R9	RESULT Arg1:T8 Arg2:T13	

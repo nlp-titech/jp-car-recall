@@ -1,0 +1,29 @@
+T1	Argument 7 28	変速機において、変速制御プログラムが不適切
+T2	Connective 29 31	ため
+T3	Argument 32 52	回転数を大きく減少させるような変速を行う
+T4	Connective 52 53	と
+T5	Argument 54 63	変速機が早期に摩耗
+T6	Connective 71 75	そのため
+T7	Argument 76 86	そのまま使用を続ける
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+T8	Argument 88 93	摩耗が進行
+T9	Connective 86 87	と
+T10	Connective 94 95	、
+T11	Argument 95 103	変速できなくなり
+T12	Connective 103 104	、
+T13	Argument 104 106	最悪
+T14	Connective 107 109	場合
+T15	Argument 110 117	走行不能になる
+R6	RESULT Arg1:T6 Arg2:T8	
+R7	CONDITION Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+R9	REASON Arg1:T10 Arg2:T8	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T15	
+R13	CONDITION Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	

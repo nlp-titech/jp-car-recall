@@ -1,0 +1,21 @@
+T1	Argument 9 29	後輪ハブにおいて、製造工程の指示が不適切
+T2	Connective 30 32	ため
+T3	Argument 33 38	強度が不足
+T4	Connective 48 52	そのため
+T5	Argument 53 60	走行を繰り返す
+T6	Connective 60 61	と
+T7	Argument 62 69	当該ハブが破損
+T8	Argument 71 73	最悪
+T9	Connective 70 71	、
+T10	Connective 74 76	場合
+T11	Argument 77 85	後輪タイヤが脱落
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T11	
+R9	CONDITION Arg1:T10 Arg2:T8	
+R10	RESULT Arg1:T10 Arg2:T11	

@@ -1,0 +1,21 @@
+T1	Argument 17 32	前後進変速レバーの強度が不適切
+T2	Connective 33 35	ため
+T3	Argument 36 46	そのまま使用を続ける
+T4	Connective 46 47	と
+T5	Argument 48 54	接触部が摩耗
+T6	Connective 55 56	、
+T7	Argument 56 58	最悪
+T8	Connective 59 61	場合
+T9	Argument 62 73	前後進変速レバーが折損
+T10	Connective 74 75	、
+T11	Argument 75 87	前後進操作が出来なくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	

@@ -1,0 +1,15 @@
+T1	Argument 0 34	コラムスイッチにおいて、内部配線を繋ぐコネクター端子のかしめが不充分
+T2	Connective 35 37	ため
+T3	Argument 38 53	端子と配線の隙間に絶縁物が生成
+T4	Connective 55 56	、
+T5	Argument 56 63	導通不良となる
+T6	Connective 69 73	そのため
+T7	Argument 74 120	前照灯、車幅灯、前部霧灯、尾灯、番号灯および当該スイッチ連動の車室内照明が不灯、あるいは点滅
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 125 136	方向指示器が不灯となる
+R7	RESULT Arg1:T6 Arg2:T8	

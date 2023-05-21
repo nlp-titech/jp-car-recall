@@ -1,0 +1,13 @@
+T1	Argument 0 32	過給機において、ハウジング接合部のシールリングの設定に不備があり
+T2	Connective 32 33	、
+T3	Argument 57 65	シール不良に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 33 44	構成部品の精度ばらつき
+T5	Connective 44 48	によって
+R3	CONDITION Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T3	
+T6	Connective 71 75	そのため
+R5	REASON Arg1:T6 Arg2:T3	
+T7	Argument 76 93	シール不良部位から排気ガスが漏れる
+R6	RESULT Arg1:T6 Arg2:T7	

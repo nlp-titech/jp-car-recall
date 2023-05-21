@@ -1,0 +1,13 @@
+T1	Parts 0 17	小型凍結防止剤散布車後輪フェンダー
+T2	Parts 23 28	フェンダー
+T3	Parts 30 37	対向ブラケット
+T4	Parts 38 41	タイヤ
+T5	Parts 68 73	フェンダー
+T6	Parts 75 82	対向ブラケット
+T7	Parts 83 86	タイヤ
+T8	Parts 97 100	タイヤ
+R1	Coreference Arg1:T4 Arg2:T7	
+R2	Coreference Arg1:T3 Arg2:T6	
+R3	Coreference Arg1:T2 Arg2:T5	
+R4	Coreference Arg1:T7 Arg2:T8	
+R5	Coreference Arg1:T2 Arg2:T1	

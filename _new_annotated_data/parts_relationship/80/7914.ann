@@ -1,0 +1,5 @@
+T1	Parts 0 19	エンジンコントロールユニット（ＤＭＥ）
+T2	Parts 33 39	Ｏ２センサー
+T3	Parts 59 66	エンジン警告灯
+R1	Connect Arg1:T1 Arg2:T2	
+R2	Connect Arg1:T1 Arg2:T3	

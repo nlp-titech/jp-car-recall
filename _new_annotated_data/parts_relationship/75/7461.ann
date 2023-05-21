@@ -1,0 +1,7 @@
+T1	Parts 0 19	アンチロックブレーキシステム（ＡＢＳ）
+T2	Parts 20 26	油圧調整装置
+T3	Parts 49 55	調圧用電磁弁
+T4	Parts 84 87	ＡＢＳ
+R1	Coreference Arg1:T1 Arg2:T4	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T3 Arg2:T2	

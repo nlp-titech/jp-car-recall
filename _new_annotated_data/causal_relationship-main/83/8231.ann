@@ -1,0 +1,17 @@
+T1	Argument 0 20	制動灯スイッチにおいて、接点方式が不適切
+T2	Connective 21 23	ため
+T3	Argument 24 65	車内清掃用品や化粧品類などから揮発するシリコーンガスの影響で接点部に絶縁被膜が生成
+T4	Connective 80 84	そのため
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T5	Argument 85 96	制動灯が点灯しなくなり
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 97 110	横滑り防止装置の警告灯点灯
+T7	Argument 111 122	エンジン始動不良になる
+R5	RESULT Arg1:T4 Arg2:T6	
+R6	RESULT Arg1:T4 Arg2:T7	
+T8	Argument 67 74	導通不良となる
+T9	Connective 66 67	れ
+R3	REASON Arg1:T9 Arg2:T3	
+R7	RESULT Arg1:T9 Arg2:T8	
+R8	REASON Arg1:T4 Arg2:T8	

@@ -1,0 +1,15 @@
+T1	Argument 0 46	衝突被害軽減ブレーキシステム搭載車において、ミリ波レーダーによる障害物検知プログラムが不適切
+T2	Argument 50 92	車両前方の歩道橋等の下を低車速で通過している先行車を、歩道橋等と一体の障害物と誤認識
+T3	Connective 47 49	ため
+R1	REASON Arg1:T3 Arg2:T1	
+R2	RESULT Arg1:T3 Arg2:T2	
+T4	Argument 98 132	先行車が歩道橋等を通過した後も歩道橋等と一体の障害物と誤認識し続ける
+T6	Connective 138 142	そのため
+T7	Argument 155 170	多重表示モニターに警告表示がさ
+R5	REASON Arg1:T6 Arg2:T4	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 176 182	警告音を発し
+R7	RESULT Arg1:T6 Arg2:T8	
+T9	Argument 183 197	緩い制動を経て急制動がかかる
+R8	RESULT Arg1:T6 Arg2:T9	
+R3	RESULT Arg1:T3 Arg2:T4	

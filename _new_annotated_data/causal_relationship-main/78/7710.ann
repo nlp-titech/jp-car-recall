@@ -1,0 +1,19 @@
+T1	Argument 0 39	大型トラックのＥ１３Ｃ型エンジンにおいて、吸気バルブ用ロッカー部の寸法が不適切
+T2	Connective 40 42	ため
+T3	Argument 43 55	バルブが傾いた状態となり
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 73 74	。
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 55 66	バルブガイド部が偏摩耗
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 74 78	そのため
+R5	REASON Arg1:T6 Arg2:T5	
+T7	Argument 79 90	異常な打音や振動が発生
+T8	Argument 92 102	そのまま使用を続ける
+T9	Connective 102 103	と
+R6	CONDITION Arg1:T9 Arg2:T8	
+T10	Argument 104 111	エンジンが停止
+R7	RESULT Arg1:T6 Arg2:T7	
+R10	RESULT Arg1:T9 Arg2:T10	
+R8	RESULT Arg1:T6 Arg2:T10	

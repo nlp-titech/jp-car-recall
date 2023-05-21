@@ -1,0 +1,13 @@
+T1	Argument 20 41	アイドリングストップ制御プログラムが不適切
+T2	Connective 42 44	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 45 74	バッテリーが劣化している状態でもアイドリングストップが作動
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 82 86	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T7	Argument 87 109	信号などの停車時にアイドリングストップが作動
+T8	Argument 114 125	エンジンが再始動しない
+T9	Connective 111 113	後に
+R5	CONDITION Arg1:T9 Arg2:T7	
+R6	RESULT Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T4 Arg2:T8	

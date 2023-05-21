@@ -1,0 +1,17 @@
+T1	Connective 38 40	ため
+T2	Argument 49 61	排気ブレーキが作動しない
+R1	RESULT Arg1:T1 Arg2:T2	
+T3	Connective 67 71	そのため
+R2	REASON Arg1:T3 Arg2:T2	
+T4	Argument 72 83	必要な減速度が得られず
+R3	RESULT Arg1:T3 Arg2:T4	
+T5	Argument 0 37	排気ブレーキにおいて、エンジン制御用コンピュータ内の制御プログラムが不適切
+R4	REASON Arg1:T1 Arg2:T5	
+T6	Connective 83 84	、
+T7	Argument 84 104	保安基準第１２条（制動装置の基準）に抵触
+R5	REASON Arg1:T6 Arg2:T4	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 41 48	下り坂を走行中
+T9	Connective 48 49	に
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T2	

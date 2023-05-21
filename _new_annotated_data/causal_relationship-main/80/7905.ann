@@ -1,0 +1,13 @@
+T1	Argument 13 30	後退灯（ＬＥＤ式）の耐久性が不適切
+T2	Connective 31 33	ため
+T3	Argument 43 54	後退灯内部の配線が断線
+T4	Connective 62 66	そのため
+T5	Argument 67 79	後退灯が早期に不灯になり
+T6	Connective 79 80	、
+T7	Argument 80 95	車両後退時の安全が確保できない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	REASON Arg1:T4 Arg2:T3	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

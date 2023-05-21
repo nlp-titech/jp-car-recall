@@ -1,0 +1,17 @@
+T1	Argument 0 33	ブレーキレバーブラケットのストップスイッチ位置決め溝の寸法が不適切
+T2	Connective 34 36	ため
+T5	Argument 37 65	ストップスイッチが雨水等の被水による膨潤と収縮を繰り返し
+T6	Connective 65 66	て
+T7	Argument 66 68	変形
+T8	Connective 70 71	と
+T9	Argument 72 93	当該ブラケットの位置決め溝端部まで押し込ま
+T10	Connective 101 105	そのため
+T13	Argument 106 135	ブレーキレバーを放した状態でも、制動灯が点灯したままになる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T9	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	

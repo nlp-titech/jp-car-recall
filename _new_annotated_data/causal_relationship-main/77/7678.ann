@@ -1,0 +1,17 @@
+T1	Argument 9 40	ビークルコントロールモジュールにおいて、制御プログラムが不適切
+T2	Connective 41 43	ため
+T3	Argument 44 70	特定の道路、かつ走行条件において発電用エンジンを始動
+T4	Connective 72 73	際
+T5	Argument 74 90	燃料が残っていても燃料切れと判定
+T6	Connective 98 102	そのため
+T7	Argument 103 121	出力をとめるフェールセーフ制御が作動
+T8	Connective 121 122	し
+T9	Argument 122 129	走行不能となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	

@@ -1,0 +1,25 @@
+T4	Connective 61 62	、
+T5	Argument 62 71	不十分な締結となっ
+T1	Argument 16 37	ステアリングシャフトの組み付け指示が不適切
+T2	Connective 38 40	ため
+T3	Argument 41 60	ステアリングギヤと結合用のボルトが干渉
+T6	Connective 80 84	そのため
+T7	Argument 85 99	そのままの状態で使用を続ける
+T8	Connective 99 100	と
+T9	Argument 101 110	嵌合部にガタが生じ
+T10	Connective 110 111	、
+T11	Argument 111 132	ステアリングシャフト側の嵌合部が早期に摩耗
+T12	Connective 137 138	、
+T13	Argument 138 146	操舵できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T9	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	

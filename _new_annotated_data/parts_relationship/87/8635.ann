@@ -1,0 +1,9 @@
+T1	Parts 0 18	エンジンマウントブラケット取付ボルト
+T2	Parts 35 38	ボルト
+T3	Parts 64 67	ボルト
+T4	Parts 77 80	原動機
+T5	Parts 84 99	フロントサスペンションメンバー
+T6	Parts 117 125	ドライブシャフト
+R1	Coreference Arg1:T1 Arg2:T2	
+R2	Coreference Arg1:T2 Arg2:T3	
+R3	Contact Arg1:T3 Arg2:T4	

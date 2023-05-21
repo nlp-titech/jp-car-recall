@@ -1,0 +1,13 @@
+T1	Argument 20 52	リヤオーバーハングに取付した補助方向指示器の電気配線接続が不適切
+T2	Connective 53 55	ため
+T3	Argument 56 87	自動車の前面又は後面に備える方向指示器のいずれかに球切れが生じ
+T4	Connective 88 90	場合
+T5	Argument 91 118	メータークラスタ上の作動状態表示の点滅周期が変化しない
+T6	Connective 119 123	そのため
+T7	Argument 124 146	運転者席で方向指示器の作動状態を確認できない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

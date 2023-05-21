@@ -1,0 +1,29 @@
+T1	Argument 48 54	耐久性が不足
+T2	Connective 45 47	ため
+R1	RESULT Arg1:T2 Arg2:T1	
+T3	Connective 64 68	そのため
+R2	REASON Arg1:T3 Arg2:T1	
+T4	Argument 98 113	アッパーハウジングに亀裂が発生
+R3	RESULT Arg1:T3 Arg2:T4	
+T5	Argument 115 120	油圧が低下
+T6	Connective 114 115	、
+R4	REASON Arg1:T6 Arg2:T4	
+R5	RESULT Arg1:T6 Arg2:T5	
+T7	Argument 129 138	駆動力が伝達されず
+T8	Argument 138 146	走行できなくなる
+T9	Connective 121 122	て
+R6	REASON Arg1:T9 Arg2:T5	
+T10	Argument 123 125	最悪
+T11	Connective 126 128	場合
+R7	RESULT Arg1:T9 Arg2:T7	
+R8	CONDITION Arg1:T11 Arg2:T10	
+R9	RESULT Arg1:T11 Arg2:T7	
+T12	Connective 152 153	。
+R10	REASON Arg1:T12 Arg2:T7	
+R11	RESULT Arg1:T12 Arg2:T8	
+T14	Connective 94 97	により
+R15	RESULT Arg1:T14 Arg2:T4	
+T17	Argument 0 44	７速ＤＳＧ型自動変速機のメカトロニクスにおいて、アッパーハウジングのねじ切り加工が不適切
+R16	REASON Arg1:T2 Arg2:T17	
+T13	Argument 69 94	アキュムレーターの継続的な油圧変化による疲労の蓄積
+R12	REASON Arg1:T14 Arg2:T13	
