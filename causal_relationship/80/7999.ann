@@ -1,0 +1,13 @@
+T1	Connective 45 47	ため
+T2	Argument 56 67	当該テンショナーが緩む
+R1	RESULT Arg1:T1 Arg2:T2	
+T3	Argument 48 53	走行振動等
+T4	Connective 53 56	により
+R2	REASON Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T2	
+T5	Connective 73 77	そのため
+R4	REASON Arg1:T5 Arg2:T2	
+T6	Argument 19 45	カムチェーンテンショナーの締め付けトルクの設定が低い
+R5	REASON Arg1:T1 Arg2:T6	
+T7	Argument 78 100	シリンダーブロック内のエンジンオイルが漏れる
+R6	RESULT Arg1:T5 Arg2:T7	

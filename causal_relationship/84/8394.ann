@@ -1,0 +1,9 @@
+T1	Argument 11 37	ブレーキフルードの種類を示すラベルの貼付指示が不適切
+T2	Connective 38 40	ため
+T3	Argument 41 57	当該ラベルが貼り付けられていない
+T4	Connective 63 67	そのため
+T5	Argument 68 88	保安基準第１２条（制動装置の基準）に抵触
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

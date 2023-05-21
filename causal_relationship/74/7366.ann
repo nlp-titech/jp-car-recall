@@ -1,0 +1,21 @@
+T1	Argument 1 27	後部中央座席において、金属製ブラケットの加工が不適切
+T2	Connective 28 30	ため
+T3	Argument 40 55	鋭利な端部でシートベルトが損傷
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 68 70	最悪
+T5	Connective 71 73	場合
+R3	CONDITION Arg1:T5 Arg2:T4	
+T6	Argument 74 83	シートベルトが破断
+T7	Connective 84 85	、
+R4	REASON Arg1:T7 Arg2:T6	
+T8	Argument 85 96	乗員を拘束できなくなる
+R5	RESULT Arg1:T7 Arg2:T8	
+T9	Connective 63 67	そのため
+R6	REASON Arg1:T9 Arg2:T3	
+R7	RESULT Arg1:T9 Arg2:T6	
+R8	RESULT Arg1:T5 Arg2:T6	
+T10	Argument 31 37	衝突時の衝撃
+T11	Connective 37 40	により
+R9	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T3	

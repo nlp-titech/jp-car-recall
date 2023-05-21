@@ -4,4 +4,4 @@ T3	Parts 38 44	Ｏ２センサー
 T4	Parts 64 75	エンジンチェックランプ
 R1	Connect Arg1:T2 Arg2:T1	
 R3	Connect Arg1:T4 Arg2:T3	
-R2	Connect Arg1:T3 Arg2:T1	
+R2	Connect Arg1:T2 Arg2:T3	

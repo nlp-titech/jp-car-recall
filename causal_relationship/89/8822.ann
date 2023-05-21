@@ -1,0 +1,51 @@
+T3	Argument 0 66	自動６速マニュアルモードトランスミッション（６ＡＭＴ）搭載車において、冠水路等を走行し、トランスミッション下部の水抜き穴から水が浸入
+T4	Connective 68 70	場合
+T5	Argument 71 91	クラッチレバーの支点部の表面処理が不適切
+T6	Connective 94 96	ため
+T7	Argument 97 104	支点部が錆びる
+T8	Connective 110 114	そのため
+T9	Argument 115 127	クラッチレバーの摺動不良
+T10	Connective 127 130	により
+T11	Argument 130 137	変速遅れが発生
+T13	Argument 139 153	そのままの状態で使用を続ける
+T14	Connective 153 154	と
+T15	Argument 154 159	錆びが進行
+T16	Connective 160 161	、
+T17	Argument 161 163	最悪
+T18	Connective 164 166	場合
+T19	Argument 167 181	クラッチレバーが動かなくなる
+T20	Connective 181 183	ため
+T21	Argument 184 190	警告灯が点灯
+T24	Connective 209 212	により
+T25	Argument 212 217	ギヤが固定
+T26	Connective 219 220	て
+T27	Argument 220 228	変速できなくなり
+T28	Connective 228 229	、
+T31	Argument 229 241	停車後に発進できなくなる
+R3	CONDITION Arg1:T4 Arg2:T3	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R13	CONDITION Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R15	REASON Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T19	
+R17	CONDITION Arg1:T18 Arg2:T17	
+R18	RESULT Arg1:T18 Arg2:T19	
+R19	REASON Arg1:T20 Arg2:T19	
+R20	RESULT Arg1:T20 Arg2:T22	
+R22	RESULT Arg1:T24 Arg2:T25	
+R23	REASON Arg1:T26 Arg2:T25	
+R24	RESULT Arg1:T26 Arg2:T27	
+R25	REASON Arg1:T28 Arg2:T27	
+R26	RESULT Arg1:T28 Arg2:T31	
+R4	RESULT Arg1:T4 Arg2:T7	
+T22	Argument 205 209	保護制御
+R21	REASON Arg1:T24 Arg2:T22	
+R29	RESULT Arg1:T20 Arg2:T21	
+T1	Argument 192 198	警告音が鳴動
+R11	RESULT Arg1:T20 Arg2:T1	
+R1	RESULT Arg1:T8 Arg2:T15	

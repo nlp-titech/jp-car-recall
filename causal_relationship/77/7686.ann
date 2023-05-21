@@ -1,0 +1,9 @@
+T2	Connective 31 33	ため
+T5	Argument 34 61	車幅灯が故障した際の車幅灯の残存要件に適合できなくなり
+T6	Connective 61 62	、
+T7	Argument 62 83	運転者が車両の故障状態を正しく認識できない
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T6 Arg2:T5	
+R4	RESULT Arg1:T6 Arg2:T7	
+T1	Argument 0 30	ボディドメインコントローラー（ＢＤＣ）のソフトウェアが不適切
+R1	REASON Arg1:T2 Arg2:T1	

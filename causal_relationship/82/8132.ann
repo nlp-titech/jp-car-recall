@@ -1,0 +1,28 @@
+T1	Argument 0 25	エンジンのクロージャープラグにおいて、耐久性が不足
+T2	Connective 29 31	ため
+T3	Argument 32 42	エンジンオイルの油圧
+T4	Connective 42 45	により
+T5	Argument 45 47	破損
+T6	Connective 55 59	そのため
+T7	Argument 60 70	エンジンオイルが漏れ
+T8	Connective 70 71	、
+T9	Argument 71 73	最悪
+T10	Connective 74 76	場合
+T11	Argument 77 84	エンジンが損傷
+T12	Argument 90 103	エンジンオイルが路上に流出
+T14	Argument 104 114	後続車両の妨げになる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T11	
+R9	CONDITION Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	RESULT Arg1:T8 Arg2:T12	
+R12	RESULT Arg1:T10 Arg2:T12	
+T13	Connective 103 104	し
+R13	REASON Arg1:T13 Arg2:T12	
+R14	RESULT Arg1:T13 Arg2:T14	

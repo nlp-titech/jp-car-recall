@@ -1,0 +1,25 @@
+T1	Argument 31 36	亀裂が発生
+T2	Argument 0 28	主制動ブレーキ内部のプレートに適切な加工が施されていない
+T3	Connective 28 30	ため
+T4	Connective 44 48	そのため
+T5	Argument 49 58	そのまま使い続ける
+T6	Connective 58 59	と
+T7	Argument 59 68	当該プレートが損傷
+T8	Connective 69 70	て
+T9	Argument 71 73	最悪
+T10	Connective 74 76	場合
+T12	Argument 77 100	ブレーキを踏んでも十分な制動力が発生しなくなり
+T13	Connective 100 101	、
+T14	Argument 101 112	車体が停止できなくなる
+R1	REASON Arg1:T3 Arg2:T2	
+R2	RESULT Arg1:T3 Arg2:T1	
+R3	REASON Arg1:T4 Arg2:T1	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T12	
+R9	CONDITION Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T12	
+R13	REASON Arg1:T13 Arg2:T12	
+R14	RESULT Arg1:T13 Arg2:T14	

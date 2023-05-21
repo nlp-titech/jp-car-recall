@@ -1,0 +1,17 @@
+T1	Argument 0 26	助手席用シートベルトにおいて、組付設備の調整が不適切
+T2	Argument 30 50	ロック機構部のスプリングが屈曲して組付け
+T3	Connective 27 29	ため
+T4	Connective 59 63	そのため
+T5	Argument 64 66	最悪
+T6	Connective 67 69	場合
+T7	Argument 70 85	当該スプリングが構成部品と干渉
+T8	Connective 85 86	し
+T11	Argument 87 111	シートベルトが素早く引き出された際にロックしない
+R3	RESULT Arg1:T8 Arg2:T11	
+R4	REASON Arg1:T8 Arg2:T7	
+R5	REASON Arg1:T3 Arg2:T1	
+R6	RESULT Arg1:T3 Arg2:T2	
+R7	REASON Arg1:T4 Arg2:T2	
+R8	RESULT Arg1:T4 Arg2:T7	
+R9	CONDITION Arg1:T6 Arg2:T5	
+R10	RESULT Arg1:T6 Arg2:T7	

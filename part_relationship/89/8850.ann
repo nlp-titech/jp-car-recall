@@ -3,15 +3,13 @@ T2	Parts 16 54	サービスセット（読書灯、エアコン吹き出し口�
 T6	Parts 55 57	基板
 T7	Parts 69 76	エアコンダクト
 T8	Parts 99 101	基板
-T9	Parts 102 106	コネクタ
-T10	Parts 141 145	コネクタ
 T11	Parts 161 164	読書灯
 T12	Parts 169 174	停車ボタン
 R1	Part-Whole Arg1:T2 Arg2:T1	
 R2	Part-Whole Arg1:T6 Arg2:T2	
-R3	Contact Arg1:T2 Arg2:T7	
 R4	Coreference Arg1:T6 Arg2:T8	
-R6	Coreference Arg1:T9 Arg2:T10	
-R5	Part-Whole Arg1:T9 Arg2:T8	
 R7	Part-Whole Arg1:T11 Arg2:T2	
 R8	Part-Whole Arg1:T12 Arg2:T2	
+T3	Parts 11 13	客席
+R9	Part-Whole Arg1:T3 Arg2:T1	
+R3	Part-Whole Arg1:T7 Arg2:T2	

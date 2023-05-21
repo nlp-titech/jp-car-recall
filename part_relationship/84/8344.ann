@@ -4,8 +4,8 @@ T3	Parts 52 59	インフレーター
 T4	Parts 78 83	エアバッグ
 T5	Parts 87 94	インフレーター
 T6	Parts 103 112	インフレーター容器
-R1	Part-Whole Arg1:T2 Arg2:T1	
 R2	Coreference Arg1:T2 Arg2:T3	
 R3	Coreference Arg1:T4 Arg2:T1	
 R4	Coreference Arg1:T3 Arg2:T5	
-R5	Part-Whole Arg1:T6 Arg2:T5	
+R5	Part-Whole Arg1:T5 Arg2:T6	
+R1	Part-Whole Arg1:T6 Arg2:T4	

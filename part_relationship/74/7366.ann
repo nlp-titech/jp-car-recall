@@ -3,6 +3,5 @@ T2	Parts 12 20	金属製ブラケット
 T3	Parts 46 52	シートベルト
 T4	Parts 74 80	シートベルト
 R1	Part-Whole Arg1:T2 Arg2:T1	
-R2	Part-Whole Arg1:T3 Arg2:T1	
+R2	Contact Arg1:T3 Arg2:T1	
 R3	Coreference Arg1:T4 Arg2:T3	
-R4	Connect Arg1:T3 Arg2:T2	

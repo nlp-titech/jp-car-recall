@@ -1,0 +1,21 @@
+T1	Argument 9 60	リヤクッションアームとスイングアームを連結するクッションコネクティングプレートの組付け作業指示が不適切
+T2	Connective 61 63	ため
+T3	Argument 64 81	当該プレートの表裏を逆向きに組付け
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 88 92	そのため
+T5	Argument 93 105	凹凸路面等を繰り返し走行
+T6	Connective 107 108	と
+R3	CONDITION Arg1:T6 Arg2:T5	
+T7	Argument 108 115	プレートが折損
+R4	RESULT Arg1:T6 Arg2:T7	
+R5	RESULT Arg1:T4 Arg2:T7	
+R6	REASON Arg1:T4 Arg2:T3	
+T8	Argument 117 119	最悪
+T9	Connective 120 122	場合
+T10	Argument 123 132	走行安定性が損なわ
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T10	
+T11	Connective 116 117	、
+R9	REASON Arg1:T11 Arg2:T7	
+R10	RESULT Arg1:T11 Arg2:T10	

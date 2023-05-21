@@ -3,7 +3,7 @@ T2	Parts 10 24	インフレータ（ガス発生装置）
 T3	Parts 29 34	ガス発生剤
 T4	Parts 73 78	エアバッグ
 T5	Parts 82 90	インフレータ容器
-R1	Part-Whole Arg1:T2 Arg2:T1	
 R2	Coreference Arg1:T1 Arg2:T4	
-R3	Contact Arg1:T3 Arg2:T2	
-R4	Part-Whole Arg1:T5 Arg2:T2	
+R1	Part-Whole Arg1:T3 Arg2:T2	
+R3	Part-Whole Arg1:T2 Arg2:T5	
+R4	Part-Whole Arg1:T5 Arg2:T4	

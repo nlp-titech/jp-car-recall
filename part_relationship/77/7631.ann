@@ -3,3 +3,4 @@ T2	Parts 14 26	ステアリングギアボックス
 T3	Parts 31 34	ボルト
 R1	Contact Arg1:T3 Arg2:T2	
 R2	Contact Arg1:T3 Arg2:T1	
+R3	Contact Arg1:T1 Arg2:T2	

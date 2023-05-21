@@ -1,0 +1,13 @@
+T1	Argument 0 31	左側リヤドアガラスにおいて、強化ガラス生産時の冷却工程が不適切
+T2	Connective 32 34	ため
+T3	Argument 35 46	ガラス成形後の冷却不足
+T4	Connective 46 49	により
+T5	Argument 49 62	適切に強化処理がされなかっ
+T6	Connective 69 73	そのため
+T7	Argument 74 104	保安基準第２９条で規定された強化ガラスの破砕試験に適合しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

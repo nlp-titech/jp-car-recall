@@ -1,0 +1,39 @@
+T1	Argument 0 45	燃料電池システムを冷却する電動ウォータポンプにおいて、駆動用モータの磁石の表面処理が不適切
+T2	Connective 46 48	ため
+T4	Connective 68 72	そのため
+T3	Argument 49 52	冷却水
+T5	Connective 52 55	により
+T6	Argument 55 60	磁石が腐食
+T7	Argument 73 83	そのまま使用を続ける
+T8	Connective 83 84	と
+T9	Argument 84 89	腐食が進行
+T10	Connective 90 91	、
+T11	Argument 91 108	電動ウォータポンプが作動しなくなり
+T12	Connective 108 109	、
+T15	Argument 109 130	パワーモードオン時に警告灯、警告表示が点灯
+T16	Argument 132 146	燃料電池システムが起動しない
+T18	Argument 151 166	走行中に警告灯、警告表示が点灯
+T22	Argument 168 179	燃料電池システムが停止
+T23	Argument 182 184	最悪
+T24	Connective 185 187	場合
+T25	Argument 188 195	走行不能となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T6	
+R3	REASON Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T6	
+R5	REASON Arg1:T4 Arg2:T6	
+R6	RESULT Arg1:T4 Arg2:T9	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T16	
+T26	Connective 180 181	て
+R21	REASON Arg1:T26 Arg2:T22	
+R22	RESULT Arg1:T26 Arg2:T25	
+R23	CONDITION Arg1:T24 Arg2:T23	
+R24	RESULT Arg1:T24 Arg2:T25	
+R15	RESULT Arg1:T12 Arg2:T15	
+R17	RESULT Arg1:T12 Arg2:T18	
+R18	RESULT Arg1:T12 Arg2:T22	

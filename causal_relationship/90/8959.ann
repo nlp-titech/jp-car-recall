@@ -1,0 +1,21 @@
+T1	Argument 0 40	運転席、助手席シートのエアバッグ（ＳＲＳ）の配線において、配線被覆の加工が不適切
+T2	Connective 41 43	ため
+T3	Argument 44 74	配線被覆の繊維がシート調整時にシート調整用シャフトに巻き込ま
+T4	Connective 83 87	そのため
+T5	Argument 88 98	シートの調整ができず
+T7	Argument 99 104	配線が損傷
+T8	Connective 105 106	、
+T9	Argument 106 118	エアバッグの警告灯が点灯
+T11	Argument 126 128	最悪
+T12	Connective 129 131	場合
+T13	Argument 132 148	エアバッグ（ＳＲＳ）が作動しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	RESULT Arg1:T8 Arg2:T13	
+R10	CONDITION Arg1:T12 Arg2:T11	
+R11	RESULT Arg1:T12 Arg2:T13	
+R5	RESULT Arg1:T4 Arg2:T7	

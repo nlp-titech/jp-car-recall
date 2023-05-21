@@ -3,7 +3,7 @@ T2	Parts 5 8	第一軸
 T3	Parts 9 13	制動装置
 T4	Parts 18 26	ブレーキチャンバ
 T5	Parts 34 39	エアホース
-T6	Parts 43 45	金具
+T6	Parts 40 45	接続部金具
 T7	Parts 46 51	エアタンク
 T8	Parts 66 68	車輪
 T9	Parts 108 110	金具
@@ -19,4 +19,6 @@ R7	Part-Whole Arg1:T7 Arg2:T3
 R8	Part-Whole Arg1:T8 Arg2:T1	
 R9	Coreference Arg1:T6 Arg2:T9	
 R10	Coreference Arg1:T4 Arg2:T10	
-R11	Coreference Arg1:T3 Arg2:T11	
+R12	Part-Whole Arg1:T5 Arg2:T3	
+R13	Part-Whole Arg1:T11 Arg2:T1	
+R11	Connect Arg1:T11 Arg2:T3	

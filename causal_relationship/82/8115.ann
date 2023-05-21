@@ -1,0 +1,5 @@
+T1	Argument 0 32	軽合金製ディスクホイールにおいて、ホイール裏面のサイズ表示が誤っ
+T2	Connective 36 40	そのため
+T3	Argument 41 64	保安基準第９条（走行装置等の基準）に適合しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

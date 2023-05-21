@@ -1,6 +1,5 @@
 T1	Parts 0 8	後部突入防止装置
-T2	Parts 13 23	クロスメンバーエンド
+T2	Parts 13 20	クロスメンバー
 T3	Parts 92 102	ステーサイドバンパー
-R1	Contact Arg1:T1 Arg2:T2	
-R2	Contact Arg1:T3 Arg2:T1	
 R3	Contact Arg1:T3 Arg2:T2	
+R2	Part-Whole Arg1:T3 Arg2:T1	

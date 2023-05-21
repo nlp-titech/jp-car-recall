@@ -7,10 +7,12 @@ T6	Parts 113 116	バルブ
 T7	Parts 117 123	バルブガイド
 T8	Parts 131 135	エンジン
 R1	Part-Whole Arg1:T2 Arg2:T1	
-R2	Coreference Arg1:T2 Arg2:T3	
 R3	Coreference Arg1:T3 Arg2:T6	
 R4	Coreference Arg1:T1 Arg2:T8	
 R5	Coreference Arg1:T4 Arg2:T5	
 R6	Coreference Arg1:T5 Arg2:T7	
 R7	Contact Arg1:T3 Arg2:T4	
-R8	Part-Whole Arg1:T4 Arg2:T1	
+T9	Parts 5 10	インテーク
+R2	Part-Whole Arg1:T9 Arg2:T1	
+R8	Oneway-Coreference Arg1:T3 Arg2:T9	
+R9	Oneway-Coreference Arg1:T3 Arg2:T2	

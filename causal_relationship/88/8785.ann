@@ -1,0 +1,31 @@
+T1	Connective 59 63	そのため
+T2	Argument 64 78	そのままの状態で使用を続ける
+T3	Connective 78 79	と
+R1	CONDITION Arg1:T3 Arg2:T2	
+T4	Argument 0 30	ヘッドライトウォッシャーゴムホースにおいて、製造管理が不適切
+T5	Connective 31 33	ため
+R2	REASON Arg1:T5 Arg2:T4	
+T6	Argument 34 49	ゴムホースの接続部の強度が不足
+R3	RESULT Arg1:T5 Arg2:T6	
+R4	REASON Arg1:T1 Arg2:T6	
+T7	Argument 99 109	保持力が保てなくなり
+T8	Argument 110 133	当該接続部からヘッドライトウォッシャー液が漏れ
+T9	Connective 109 110	、
+R5	RESULT Arg1:T9 Arg2:T8	
+T10	Argument 140 152	接続部からホースが抜ける
+T11	Connective 154 155	で
+T12	Argument 156 178	ヘッドライトウォッシャー液が噴射できなくなる
+R6	REASON Arg1:T11 Arg2:T10	
+R7	RESULT Arg1:T11 Arg2:T12	
+T13	Argument 134 136	最悪
+T14	Connective 137 139	場合
+R8	CONDITION Arg1:T14 Arg2:T13	
+R9	RESULT Arg1:T14 Arg2:T10	
+T15	Argument 80 91	ゴムホースの強度が低下
+R10	RESULT Arg1:T3 Arg2:T15	
+R11	RESULT Arg1:T1 Arg2:T15	
+T16	Connective 95 98	により
+R12	REASON Arg1:T16 Arg2:T15	
+R13	RESULT Arg1:T16 Arg2:T7	
+R14	REASON Arg1:T9 Arg2:T7	
+R15	RESULT Arg1:T9 Arg2:T10	

@@ -4,6 +4,7 @@ T3	Parts 34 55	アダプティブクルーズコントロール（ＡＣＣ）
 T4	Parts 69 76	ブレーキペダル
 T5	Parts 82 98	アダプティブクルーズコントロール
 R1	Coreference Arg1:T3 Arg2:T5	
-R2	Part-Whole Arg1:T2 Arg2:T1	
 R3	Connect Arg1:T3 Arg2:T4	
-R4	Connect Arg1:T2 Arg2:T3	
+R2	Part-Whole Arg1:T2 Arg2:T1	
+R4	Connect Arg1:T3 Arg2:T1	
+R5	Connect Arg1:T4 Arg2:T1	

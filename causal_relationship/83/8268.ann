@@ -1,0 +1,13 @@
+T1	Argument 11 39	ルーフレールエアバッグを取付ける際に誤ってねじれて取付け
+T2	Connective 50 54	そのため
+T5	Argument 55 71	エアバッグ展開時に正しく展開せず
+R3	REASON Arg1:T2 Arg2:T1	
+R4	RESULT Arg1:T2 Arg2:T5	
+T6	Argument 72 74	最悪
+T7	Connective 75 77	場合
+R5	CONDITION Arg1:T7 Arg2:T6	
+T8	Argument 78 89	乗員が過度の負傷を負う
+R6	RESULT Arg1:T7 Arg2:T8	
+T9	Connective 71 72	、
+R7	REASON Arg1:T9 Arg2:T5	
+R8	RESULT Arg1:T9 Arg2:T8	

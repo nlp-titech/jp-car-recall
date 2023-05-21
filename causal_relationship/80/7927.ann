@@ -1,0 +1,78 @@
+T1	Argument 3 34	エンジンの吸気シャッタ・バルブにおいて、制御プログラムが不適切
+T2	Connective 35 37	ため
+T3	Argument 87 102	フェールセーフが十分に機能せず
+T4	Argument 103 112	バルブが全開しない
+T5	Argument 73 83	エンジン警告灯が点灯
+T6	Connective 102 103	、
+T7	Argument 38 51	バルブ周辺に付着する煤など
+T8	Connective 51 54	により
+R1	REASON Arg1:T2 Arg2:T1	
+R3	REASON Arg1:T8 Arg2:T7	
+T10	Connective 72 73	、
+R6	RESULT Arg1:T10 Arg2:T5	
+R7	RESULT Arg1:T10 Arg2:T3	
+R8	REASON Arg1:T6 Arg2:T3	
+R9	RESULT Arg1:T6 Arg2:T4	
+T11	Connective 118 122	そのため
+T12	Argument 123 129	煤などの付着
+T13	Connective 129 132	により
+R10	REASON Arg1:T13 Arg2:T12	
+T14	Argument 133 144	バルブが全閉のまま固着
+T15	Connective 146 148	場合
+R11	CONDITION Arg1:T15 Arg2:T14	
+T16	Argument 149 156	エンジンが停止
+R12	RESULT Arg1:T15 Arg2:T16	
+R13	REASON Arg1:T11 Arg2:T4	
+R14	RESULT Arg1:T13 Arg2:T14	
+R15	RESULT Arg1:T11 Arg2:T16	
+T17	Argument 168 197	エンジンの排気圧センサにおいて、異常判定プログラムが不適切
+T18	Connective 198 200	ため
+T19	Argument 201 213	センサ内部への水分の浸入
+T20	Connective 213 216	により
+R16	REASON Arg1:T20 Arg2:T19	
+T21	Argument 217 227	センサの出力値がずれ
+R17	REASON Arg1:T18 Arg2:T17	
+R18	RESULT Arg1:T18 Arg2:T24	
+R19	RESULT Arg1:T20 Arg2:T21	
+T22	Argument 228 244	排出ガスが基準値を満足しなくなる
+T23	Connective 244 246	場合
+T24	Argument 248 255	異常判定しない
+R20	CONDITION Arg1:T23 Arg2:T22	
+R21	RESULT Arg1:T23 Arg2:T24	
+T25	Connective 227 228	、
+R22	REASON Arg1:T25 Arg2:T21	
+R23	RESULT Arg1:T25 Arg2:T22	
+T26	Connective 256 260	そのため
+T27	Argument 261 275	そのままの状態で使用を続ける
+T28	Connective 275 276	と
+T29	Argument 286 301	排気圧センサ内の電子回路が腐食
+R24	REASON Arg1:T26 Arg2:T24	
+R25	CONDITION Arg1:T28 Arg2:T27	
+R26	RESULT Arg1:T28 Arg2:T29	
+R27	RESULT Arg1:T26 Arg2:T29	
+T30	Argument 303 305	断線
+T31	Connective 309 310	で
+T32	Connective 302 303	、
+R28	REASON Arg1:T32 Arg2:T29	
+R29	RESULT Arg1:T32 Arg2:T30	
+R30	REASON Arg1:T31 Arg2:T30	
+T33	Argument 310 320	エンジン警告灯が点灯
+R31	RESULT Arg1:T31 Arg2:T33	
+T34	Argument 334 352	アイドリングストップが作動しなくなり
+T36	Argument 353 365	変速ショックが大きくなる
+T37	Connective 352 353	、
+R34	REASON Arg1:T37 Arg2:T34	
+R35	RESULT Arg1:T37 Arg2:T36	
+R36	RESULT Arg1:T31 Arg2:T39	
+T35	Argument 277 283	浸入した水分
+T38	Connective 283 286	により
+R32	REASON Arg1:T38 Arg2:T35	
+R33	RESULT Arg1:T38 Arg2:T29	
+T9	Argument 55 72	バルブ開度が正しく制御されなくなり
+R2	RESULT Arg1:T2 Arg2:T9	
+R4	RESULT Arg1:T8 Arg2:T9	
+R5	REASON Arg1:T10 Arg2:T9	
+T39	Argument 322 331	フェールセーフ制御
+T40	Connective 331 334	により
+R37	REASON Arg1:T40 Arg2:T39	
+R38	RESULT Arg1:T40 Arg2:T34	

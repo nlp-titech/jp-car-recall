@@ -1,0 +1,13 @@
+T1	Argument 18 43	後退灯制御リレーの電磁力回路とリレーの選定が不適切
+T2	Connective 44 46	ため
+T3	Argument 47 74	リレー作動時に生成された金属異物がリレー駆動部に挟まる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 80 84	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 85 98	当該リレーが導通不良となり
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 99 109	後退灯が不点灯となる
+T7	Connective 98 99	、
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	

@@ -1,0 +1,21 @@
+T1	Argument 0 27	速度計において、正規の仕様と異なる指針保持ピンを組付け
+T2	Connective 34 38	そのため
+T3	Argument 39 50	計器盤内の温度が上がる
+T4	Connective 50 51	と
+R1	CONDITION Arg1:T4 Arg2:T3	
+T5	Argument 52 69	当該保持ピン表面の塗料が粘性を帯び
+R2	RESULT Arg1:T4 Arg2:T5	
+R3	REASON Arg1:T2 Arg2:T1	
+R4	RESULT Arg1:T2 Arg2:T5	
+T6	Argument 70 72	最悪
+T7	Connective 73 75	場合
+R5	CONDITION Arg1:T7 Arg2:T6	
+T8	Argument 76 88	指針が当該保持ピンに固着
+R6	RESULT Arg1:T7 Arg2:T8	
+T9	Connective 69 70	、
+R7	REASON Arg1:T9 Arg2:T5	
+R8	RESULT Arg1:T9 Arg2:T8	
+T10	Connective 89 90	、
+R9	REASON Arg1:T10 Arg2:T8	
+T11	Argument 90 101	速度計が作動しなくなる
+R10	RESULT Arg1:T10 Arg2:T11	

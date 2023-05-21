@@ -1,13 +1,11 @@
 T1	Parts 0 25	ＭＶＢＭ（中電圧バッテリーコントロールモジュール）
 T3	Parts 65 69	エンジン
-T4	Parts 105 116	スターターモーター機能
+T4	Parts 105 114	スターターモーター
 T5	Parts 122 126	エンジン
-T6	Parts 74 76	車両
 T7	Parts 39 41	車両
-R1	Coreference Arg1:T7 Arg2:T6	
 R2	Coreference Arg1:T3 Arg2:T5	
 R3	Part-Whole Arg1:T3 Arg2:T7	
-R4	Part-Whole Arg1:T4 Arg2:T6	
 R5	Part-Whole Arg1:T1 Arg2:T7	
 R6	Connect Arg1:T4 Arg2:T5	
 R7	Connect Arg1:T1 Arg2:T4	
+R1	Part-Whole Arg1:T4 Arg2:T7	

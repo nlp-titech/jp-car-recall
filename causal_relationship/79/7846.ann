@@ -1,0 +1,24 @@
+T1	Argument 0 36	運転者席用エアバッグのインフレータ（膨張装置）において、吸湿防止が不適切
+T2	Connective 37 39	ため
+T3	Argument 40 48	ガス発生剤が吸湿
+T4	Connective 57 61	そのため
+T5	Argument 67 82	ガス発生剤が吸湿や乾燥を繰返し
+T6	Connective 83 87	場合など
+T11	Argument 117 130	インフレータ内の圧力が上昇
+T12	Connective 131 132	て
+T13	Argument 132 137	容器が破損
+T14	Connective 141 144	により
+T15	Argument 145 150	乗員が負傷
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+T7	Argument 88 110	衝突時等のエアバッグ作動時に正常に展開しない
+R4	RESULT Arg1:T4 Arg2:T7	
+R6	RESULT Arg1:T6 Arg2:T7	
+R9	REASON Arg1:T12 Arg2:T11	
+R10	RESULT Arg1:T12 Arg2:T13	
+R11	REASON Arg1:T14 Arg2:T13	
+R12	RESULT Arg1:T14 Arg2:T15	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R7	RESULT Arg1:T4 Arg2:T11	
+R8	RESULT Arg1:T6 Arg2:T11	

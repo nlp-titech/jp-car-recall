@@ -14,3 +14,4 @@ R5	Coreference Arg1:T2 Arg2:T5
 R7	Connect Arg1:T9 Arg2:T10	
 R6	Contact Arg1:T5 Arg2:T7	
 R8	Connect Arg1:T7 Arg2:T9	
+R9	Connect Arg1:T9 Arg2:T1	

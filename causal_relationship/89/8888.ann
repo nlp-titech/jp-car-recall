@@ -1,0 +1,17 @@
+T3	Argument 0 56	運転者席側ＳＲＳエアバッグのインフレータ（膨張装置）において、インフレータ製造時に乾燥剤が吸湿した状態で組み付け
+T4	Connective 59 61	ため
+T5	Argument 62 73	環境温度変化の繰り返し
+T6	Connective 73 76	により
+T7	Argument 77 85	ガス発生剤が劣化
+T8	Connective 93 97	そのため
+T11	Argument 98 120	エアバッグ展開時にインフレータ内圧が異常上昇
+T12	Connective 121 122	て
+T13	Argument 123 134	インフレータ容器が破損
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	

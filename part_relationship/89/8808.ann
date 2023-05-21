@@ -1,10 +1,8 @@
 T1	Parts 0 16	リアブレーキキャリパーブラケット
-T2	Parts 39 47	スインングアーム
 T3	Parts 74 79	ブラケット
 T4	Parts 97 106	ブレーキキャリパー
 T5	Parts 107 109	車体
 R1	Coreference Arg1:T1 Arg2:T3	
-R2	Contact Arg1:T1 Arg2:T2	
 R3	Contact Arg1:T3 Arg2:T4	
 R4	Contact Arg1:T4 Arg2:T5	
 R5	Contact Arg1:T3 Arg2:T5	

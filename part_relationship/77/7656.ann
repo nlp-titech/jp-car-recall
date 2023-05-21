@@ -4,7 +4,7 @@ T3	Parts 37 42	点火プラグ
 T4	Parts 102 105	プラグ
 T5	Parts 122 126	エンジン
 T6	Parts 138 142	エンジン
-R1	Contact Arg1:T2 Arg2:T1	
+R1	Part-Whole Arg1:T2 Arg2:T1	
 R2	Coreference Arg1:T2 Arg2:T3	
 R3	Coreference Arg1:T3 Arg2:T4	
 R4	Coreference Arg1:T1 Arg2:T5	

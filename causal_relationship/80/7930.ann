@@ -1,0 +1,35 @@
+T1	Argument 72 77	回路が断線
+T2	Connective 85 89	そのため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 90 102	燃料計の指示値が高くなり
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 102 103	、
+T5	Argument 103 118	燃料が無くなったことに気づかず
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 119 121	最悪
+T7	Connective 122 124	場合
+T8	Argument 125 133	走行中にエンスト
+T9	Connective 118 119	、
+R5	REASON Arg1:T9 Arg2:T5	
+R6	RESULT Arg1:T9 Arg2:T8	
+R7	CONDITION Arg1:T7 Arg2:T6	
+R8	RESULT Arg1:T7 Arg2:T8	
+T10	Argument 0 25	コンビネーションメータにおいて、燃料計回路が不適切
+T11	Connective 26 28	ため
+R9	REASON Arg1:T11 Arg2:T10	
+T12	Argument 55 71	メータ内の基板が熱膨張を繰り返し
+R10	RESULT Arg1:T11 Arg2:T12	
+T13	Connective 71 72	、
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T1	
+T14	Argument 41 51	計器内の照明などの熱
+T15	Connective 51 54	により
+R13	REASON Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T12	
+T16	Connective 134 135	て
+T17	Argument 135 144	再始動できなくなる
+R15	REASON Arg1:T16 Arg2:T8	
+R16	RESULT Arg1:T16 Arg2:T17	
+T18	Argument 29 40	回路内の抵抗素子の発熱
+R17	REASON Arg1:T15 Arg2:T18	

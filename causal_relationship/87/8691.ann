@@ -1,0 +1,17 @@
+T1	Argument 12 26	ブレーキバルブの調整が不適切
+T2	Connective 27 29	ため
+T3	Argument 30 40	ブレーキの遊びがない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 46 50	そのため
+T5	Argument 59 69	ペダルにずれが生じる
+T6	Connective 69 70	と
+R3	CONDITION Arg1:T6 Arg2:T5	
+T7	Argument 70 85	ブレーキがかかりっぱなしになり
+R4	RESULT Arg1:T6 Arg2:T7	
+R5	REASON Arg1:T4 Arg2:T3	
+T8	Argument 86 102	アクセルを踏んでも前進しなくなる
+T9	Connective 85 86	、
+R6	REASON Arg1:T9 Arg2:T7	
+R7	RESULT Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T4 Arg2:T7	

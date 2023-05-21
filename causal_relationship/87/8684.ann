@@ -1,0 +1,21 @@
+T1	Argument 0 34	前輪緩衝装置の右側ロアアームにおいて、溶接工程での部品の固定が不十分
+T2	Connective 35 37	ため
+T3	Argument 38 45	溶接位置がずれ
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 46 54	溶接強度が不十分
+T5	Connective 45 46	、
+R3	REASON Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T4	
+T6	Connective 61 65	そのため
+T7	Argument 66 72	制動時の負荷
+T8	Connective 72 75	により
+R5	REASON Arg1:T8 Arg2:T7	
+T9	Argument 75 83	溶接部位がはがれ
+R6	RESULT Arg1:T8 Arg2:T9	
+R7	REASON Arg1:T6 Arg2:T4	
+R8	RESULT Arg1:T6 Arg2:T9	
+T10	Connective 83 84	、
+R9	REASON Arg1:T10 Arg2:T9	
+T11	Argument 84 93	走行が不安定になる
+R10	RESULT Arg1:T10 Arg2:T11	

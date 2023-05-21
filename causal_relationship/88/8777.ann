@@ -1,0 +1,17 @@
+T1	Connective 38 40	ため
+T2	Argument 41 77	スペーサー（左右）をメタルストラップで車体のブラケットに固定されていない
+R1	RESULT Arg1:T1 Arg2:T2	
+T3	Connective 78 82	そのため
+R2	REASON Arg1:T3 Arg2:T2	
+T4	Argument 83 108	カーテンエアバッグ展開時にスペーサーが車体から外れ
+R3	RESULT Arg1:T3 Arg2:T4	
+T7	Connective 108 109	、
+T8	Argument 109 132	スペーサーの鋭利な箇所が車室内にむき出しとなり
+R6	REASON Arg1:T7 Arg2:T4	
+R7	RESULT Arg1:T7 Arg2:T8	
+T9	Connective 132 133	、
+T10	Argument 133 141	乗員がケガをする
+R8	REASON Arg1:T9 Arg2:T8	
+R9	RESULT Arg1:T9 Arg2:T10	
+T11	Argument 0 37	後席グリップハンドルのスペーサーにおいて、エアバック展開試験の評価が不適切
+R10	REASON Arg1:T1 Arg2:T11	

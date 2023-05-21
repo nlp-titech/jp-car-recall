@@ -1,0 +1,9 @@
+T1	Argument 0 29	電動パワーステアリング制御装置において、プログラムが不適切
+T2	Connective 30 32	ため
+T3	Argument 33 45	運転中に操舵補助力が失わ
+T4	Connective 53 57	そのため
+T5	Argument 58 64	操舵力が増大
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

@@ -1,0 +1,9 @@
+T1	Argument 0 27	ディスプレイオーディオにおいて、制御プログラムが不適切
+T2	Connective 28 30	ため
+T3	Argument 31 64	シフト操作もしくは車速入力時に画面表示の切替え指示が正しくされない
+T6	Connective 70 74	そのため
+T7	Argument 75 106	走行開始後も意図せず動画（テレビ映像等）が表示されたままとなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R5	REASON Arg1:T6 Arg2:T3	
+R6	RESULT Arg1:T6 Arg2:T7	

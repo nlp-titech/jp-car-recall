@@ -1,0 +1,27 @@
+T1	Argument 15 44	ブレーキマスターシリンダのオイルシールのシール性能が不十分
+T2	Connective 45 47	ため
+T3	Argument 48 71	ブレーキ倍力用のオイルがブレーキオイル側へ流入
+T4	Argument 83 94	ブレーキ操作頻度が高い
+T5	Connective 94 96	場合
+T6	Argument 97 112	ブレーキオイルが熱膨張を起こし
+T7	Connective 112 113	、
+T8	Argument 113 118	体積が増大
+T9	Connective 121 125	そのため
+T10	Argument 126 136	そのまま使用を続ける
+T11	Connective 136 137	と
+T12	Argument 138 154	ブレーキオイルの逃げ場が無くなり
+T13	Connective 154 155	、
+T14	Argument 155 175	リザーブタンクからブレーキオイルが漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R4	CONDITION Arg1:T5 Arg2:T4	
+R5	RESULT Arg1:T5 Arg2:T6	
+R6	REASON Arg1:T7 Arg2:T6	
+R7	RESULT Arg1:T7 Arg2:T8	
+R8	REASON Arg1:T9 Arg2:T8	
+R10	RESULT Arg1:T9 Arg2:T12	
+R11	CONDITION Arg1:T11 Arg2:T10	
+R12	RESULT Arg1:T11 Arg2:T12	
+R13	REASON Arg1:T13 Arg2:T12	
+R14	RESULT Arg1:T13 Arg2:T14	
+R3	REASON Arg1:T9 Arg2:T3	

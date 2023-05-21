@@ -1,0 +1,9 @@
+T1	Argument 15 44	後部中央座席用シートベルトバックルの配線の取り回しが不適切
+T2	Connective 45 47	ため
+T3	Argument 48 69	ＩＳＯＦＩＸ取り付け金具フックと配線が干渉
+T4	Connective 77 81	そのため
+T5	Argument 82 102	年少者用補助乗車装置が正しく固定できない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

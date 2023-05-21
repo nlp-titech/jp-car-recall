@@ -5,7 +5,7 @@ T4	Parts 98 106	ドライブシャフト
 T5	Parts 115 120	燃料タンク
 T6	Parts 125 130	燃料タンク
 T7	Parts 135 137	燃料
-R1	Connect Arg1:T2 Arg2:T1	
+R1	Contact Arg1:T2 Arg2:T1	
 R2	Coreference Arg1:T3 Arg2:T2	
 R3	Part-Whole Arg1:T4 Arg2:T1	
 R4	Coreference Arg1:T6 Arg2:T5	

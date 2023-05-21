@@ -1,0 +1,29 @@
+T1	Argument 0 40	パノラマスライディングルーフの室内照明において、電気回路のヒューズの設計が不適切
+T2	Connective 41 43	ため
+T3	Argument 44 72	スライディングルーフの水抜き用ドレン部が外的要因で詰まっ
+T4	Connective 73 75	場合
+T5	Argument 76 93	室内照明のモジュール回路に水が浸入
+T6	Argument 95 102	電気回路が短絡
+T7	Connective 110 114	そのため
+T8	Argument 115 129	そのままの状態で使用を続ける
+T9	Connective 129 130	と
+R2	CONDITION Arg1:T9 Arg2:T8	
+T10	Argument 131 136	配線が溶損
+T11	Connective 138 139	、
+T12	Argument 139 141	最悪
+T13	Connective 142 144	場合
+T14	Argument 145 150	火災に至る
+R4	REASON Arg1:T2 Arg2:T1	
+R5	RESULT Arg1:T2 Arg2:T6	
+R1	CONDITION Arg1:T4 Arg2:T3	
+R6	RESULT Arg1:T4 Arg2:T5	
+T15	Connective 94 95	、
+R7	REASON Arg1:T15 Arg2:T5	
+R8	RESULT Arg1:T15 Arg2:T6	
+R9	REASON Arg1:T7 Arg2:T6	
+R10	RESULT Arg1:T7 Arg2:T10	
+R11	RESULT Arg1:T9 Arg2:T10	
+R12	REASON Arg1:T11 Arg2:T10	
+R13	RESULT Arg1:T11 Arg2:T14	
+R15	RESULT Arg1:T13 Arg2:T14	
+R3	CONDITION Arg1:T13 Arg2:T12	

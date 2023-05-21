@@ -1,0 +1,37 @@
+T1	Argument 0 24	電源分配器の基板において、製造設備の管理が不適切
+T2	Connective 25 27	ため
+T3	Argument 28 51	不要な半田が付着した状態で防湿材がコーティング
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 68 80	コーティングに亀裂が発生
+T5	Connective 59 60	、
+R3	REASON Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T4	
+T6	Connective 88 92	そのため
+R5	REASON Arg1:T6 Arg2:T4	
+T7	Argument 93 98	高湿環境下
+T8	Connective 98 102	において
+T9	Argument 102 114	電極間の微細な導通が発生
+R6	CONDITION Arg1:T8 Arg2:T7	
+R7	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 116 123	電極成分が移動
+T11	Connective 115 116	て
+R8	REASON Arg1:T11 Arg2:T9	
+R9	RESULT Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T6 Arg2:T9	
+T12	Argument 125 132	短絡回路が形成
+T13	Connective 135 136	と
+R11	REASON Arg1:T13 Arg2:T12	
+T14	Connective 124 125	、
+R12	REASON Arg1:T14 Arg2:T10	
+R13	RESULT Arg1:T14 Arg2:T12	
+T15	Argument 137 144	短絡電流の発熱
+T16	Connective 145 148	よって
+R14	REASON Arg1:T16 Arg2:T15	
+T17	Argument 149 151	最悪
+T18	Connective 152 154	場合
+R15	CONDITION Arg1:T18 Arg2:T17	
+T19	Argument 155 162	車両火災に至る
+R16	RESULT Arg1:T18 Arg2:T19	
+R17	RESULT Arg1:T16 Arg2:T19	
+R18	RESULT Arg1:T13 Arg2:T15	

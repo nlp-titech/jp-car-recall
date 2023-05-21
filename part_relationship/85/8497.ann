@@ -4,6 +4,7 @@ T3	Parts 31 35	Ｏリング
 T4	Parts 51 56	燃料タンク
 T5	Parts 81 83	燃料
 R1	Coreference Arg1:T2 Arg2:T1	
-R2	Part-Whole Arg1:T3 Arg2:T2	
+R2	Contact Arg1:T3 Arg2:T2	
 R4	Part-Whole Arg1:T5 Arg2:T4	
-R3	Connect Arg1:T4 Arg2:T2	
+R3	Part-Whole Arg1:T2 Arg2:T4	
+R5	Contact Arg1:T5 Arg2:T2	

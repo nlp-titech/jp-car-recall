@@ -1,0 +1,13 @@
+T1	Argument 7 44	クラッチペダル戻しスプリングにおいて、当該スプリングのフック部の強度が不足
+T2	Connective 48 50	ため
+T3	Argument 51 58	フック部が折損
+T4	Connective 66 70	そのため
+T5	Argument 71 86	クラッチが常時切れた状態となり
+T6	Connective 86 87	、
+T7	Argument 87 95	走行できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

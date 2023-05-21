@@ -3,5 +3,5 @@ T2	Parts 19 24	側面ガラス
 T3	Parts 32 34	車両
 T4	Parts 72 76	窓ガラス
 R2	Coreference Arg1:T3 Arg2:T1	
-R3	Oneway-Coreference Arg1:T2 Arg2:T4	
-R1	Part-Whole Arg1:T4 Arg2:T1	
+R3	Coreference Arg1:T2 Arg2:T4	
+R1	Part-Whole Arg1:T2 Arg2:T1	

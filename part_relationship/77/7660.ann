@@ -5,3 +5,4 @@ T4	Parts 68 79	一酸化炭素発散防止装置
 R3	Part-Whole Arg1:T4 Arg2:T1	
 R2	Part-Whole Arg1:T3 Arg2:T4	
 R4	Part-Whole Arg1:T2 Arg2:T4	
+R1	Connect Arg1:T2 Arg2:T3	

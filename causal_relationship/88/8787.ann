@@ -1,0 +1,22 @@
+T1	Argument 16 65	リアシャーシ入出力モジュール（ＲＣＩＯＭ）に接続するハーネスのボディアース端子部の防水処理が不適切
+T2	Connective 66 68	ため
+T3	Argument 69 87	雨水または雪解け水等がアース線に浸透
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 87 88	し
+T5	Argument 88 103	ＲＣＩＯＭ接続コネクタ内を腐食
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 112 116	そのため
+R5	REASON Arg1:T6 Arg2:T5	
+T7	Argument 129 157	運転席のマルチディスプレイモニターに警告メッセージが表示
+T8	Argument 160 174	テールランプ類が不点灯となる
+T9	Argument 117 121	導通不良
+T10	Connective 126 129	により
+R8	REASON Arg1:T10 Arg2:T9	
+R9	RESULT Arg1:T10 Arg2:T7	
+R10	RESULT Arg1:T10 Arg2:T8	
+T11	Argument 124 126	短絡
+R11	REASON Arg1:T10 Arg2:T11	
+R6	RESULT Arg1:T6 Arg2:T9	
+R7	RESULT Arg1:T6 Arg2:T11	

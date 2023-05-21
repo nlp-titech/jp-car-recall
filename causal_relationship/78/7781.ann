@@ -1,0 +1,51 @@
+T1	Argument 0 18	冬季の寒冷環境下でホイルローダを使用
+T2	Connective 20 21	際
+R1	CONDITION Arg1:T2 Arg2:T1	
+T3	Argument 23 43	エンジンオイルセパレータの管路が氷で閉塞
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 51 53	閉塞
+T5	Argument 56 65	エンジン内圧が上昇
+T6	Connective 55 56	と
+R3	REASON Arg1:T6 Arg2:T4	
+R4	RESULT Arg1:T6 Arg2:T5	
+T7	Argument 67 77	エンジンオイルが逆流
+T8	Connective 66 67	て
+R5	REASON Arg1:T8 Arg2:T5	
+R6	RESULT Arg1:T8 Arg2:T7	
+T9	Argument 79 90	エンジンの燃焼室に入る
+T10	Connective 78 79	、
+R7	REASON Arg1:T10 Arg2:T7	
+R8	RESULT Arg1:T10 Arg2:T9	
+T11	Connective 91 95	その結果
+T12	Argument 96 114	エンジンが最高回転数以上の回転になり
+T13	Argument 126 139	作動油が充分温まっていない
+T14	Connective 139 141	場合
+R9	CONDITION Arg1:T14 Arg2:T13	
+T15	Connective 114 115	、
+R10	REASON Arg1:T11 Arg2:T9	
+R11	REASON Arg1:T15 Arg2:T12	
+R12	RESULT Arg1:T11 Arg2:T12	
+T16	Argument 142 154	完全に車体が停止できない
+R13	RESULT Arg1:T14 Arg2:T16	
+T17	Argument 181 190	エンジン内部が損傷
+R14	RESULT Arg1:T15 Arg2:T18	
+T20	Connective 191 192	、
+T21	Argument 192 204	走行中にエンジンが止まり
+T22	Connective 233 234	。
+T23	Argument 204 209	車両が停止
+T24	Argument 212 227	エンジンの再始動ができなくなる
+R16	REASON Arg1:T20 Arg2:T17	
+R17	RESULT Arg1:T20 Arg2:T21	
+R18	REASON Arg1:T22 Arg2:T21	
+R19	RESULT Arg1:T22 Arg2:T23	
+R21	RESULT Arg1:T2 Arg2:T4	
+T18	Argument 115 124	異常な推進力が発生
+T19	Connective 125 126	て
+R22	REASON Arg1:T19 Arg2:T18	
+R23	RESULT Arg1:T19 Arg2:T16	
+T25	Argument 160 178	エンジンが最高回転数以上の回転になる
+T26	Connective 180 181	で
+R15	RESULT Arg1:T11 Arg2:T25	
+R24	REASON Arg1:T26 Arg2:T25	
+R25	RESULT Arg1:T26 Arg2:T17	
+R20	RESULT Arg1:T20 Arg2:T24	

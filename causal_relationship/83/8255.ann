@@ -1,0 +1,13 @@
+T1	Argument 19 51	データコミュニケーションモジュールにおいて、回線停止作業が不適切
+T2	Connective 55 57	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 58 65	通信機能を停止
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 73 77	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 78 90	緊急時に音声通話ができず
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 91 122	保安基準第４３条の８（事故自動緊急通報装置の基準）に適合しない
+T7	Connective 90 91	、
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	

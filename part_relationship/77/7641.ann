@@ -4,4 +4,4 @@ T3	Parts 69 72	キャブ
 T4	Parts 89 92	キャブ
 R1	Contact Arg1:T2 Arg2:T1	
 R2	Coreference Arg1:T3 Arg2:T4	
-R3	Part-Whole Arg1:T3 Arg2:T1	
+R3	Contact Arg1:T1 Arg2:T3	

@@ -7,7 +7,6 @@ T6	Parts 71 78	制動灯スイッチ
 T7	Parts 90 99	スターターモーター
 T8	Parts 103 107	エンジン
 R1	Connect Arg1:T3 Arg2:T1	
-R2	Connect Arg1:T3 Arg2:T2	
 R3	Coreference Arg1:T4 Arg2:T1	
 R4	Coreference Arg1:T5 Arg2:T2	
 R5	Coreference Arg1:T6 Arg2:T3	

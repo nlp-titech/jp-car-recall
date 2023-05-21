@@ -1,0 +1,5 @@
+T1	Argument 25 39	補助制動灯の取付位置が不適切
+T2	Connective 40 42	ため
+T3	Argument 43 71	保安基準第３９条の２（補助制動灯の基準）に適合していない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

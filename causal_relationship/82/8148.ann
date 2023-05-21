@@ -1,0 +1,7 @@
+T1	Argument 0 37	ダッシュパネルインサートにおいて、コントロールユニットのプログラムが不適切
+T2	Connective 38 40	ため
+T5	Argument 41 79	シートベルト非着用時、シートベルト警告灯が１回あるいは短時間のみしか点灯せず
+T6	Argument 80 92	警告音も１回しか鳴らない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	RESULT Arg1:T2 Arg2:T6	

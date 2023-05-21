@@ -1,0 +1,21 @@
+T1	Argument 21 47	縦型消火器ボックスにおいて、不適切なヒンジピンを使用
+T2	Connective 57 61	そのため
+T3	Argument 62 69	走行時の振動等
+T4	Connective 69 72	により
+R1	REASON Arg1:T4 Arg2:T3	
+T5	Argument 72 80	ピンが抜け落ちる
+R2	REASON Arg1:T2 Arg2:T1	
+R3	RESULT Arg1:T2 Arg2:T5	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 87 89	最悪
+T7	Connective 90 92	場合
+R5	CONDITION Arg1:T7 Arg2:T6	
+T8	Argument 93 105	消火器ボックスの蓋が脱落
+R6	RESULT Arg1:T7 Arg2:T8	
+T9	Connective 86 87	、
+R7	REASON Arg1:T9 Arg2:T5	
+R8	RESULT Arg1:T9 Arg2:T8	
+T10	Argument 107 117	他の交通の妨げとなる
+T11	Connective 106 107	、
+R9	REASON Arg1:T11 Arg2:T8	
+R10	RESULT Arg1:T11 Arg2:T10	

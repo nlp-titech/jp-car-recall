@@ -4,10 +4,8 @@ T3	Parts 54 57	バルブ
 T4	Parts 77 80	バルブ
 T5	Parts 100 103	バルブ
 T6	Parts 120 127	ブレーキペダル
-T7	Parts 131 134	ペダル
 R1	Coreference Arg1:T3 Arg2:T4	
 R2	Coreference Arg1:T4 Arg2:T5	
-R3	Coreference Arg1:T6 Arg2:T7	
 R4	Contact Arg1:T2 Arg2:T1	
 R5	Part-Whole Arg1:T3 Arg2:T1	
 R6	Connect Arg1:T1 Arg2:T6	

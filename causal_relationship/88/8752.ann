@@ -1,0 +1,17 @@
+T1	Argument 22 42	インジェクタ本体成型時の条件管理が不適切
+T2	Connective 43 45	ため
+T3	Argument 46 51	強度が不足
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 61 65	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 88 107	インジェクタのインレット部に亀裂が発生
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 66 85	コモンレール圧力（燃料圧力）の繰り返し
+T7	Connective 85 88	により
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T5	
+T8	Connective 108 109	、
+T9	Argument 109 116	燃料漏れに至る
+R7	REASON Arg1:T8 Arg2:T5	
+R8	RESULT Arg1:T8 Arg2:T9	

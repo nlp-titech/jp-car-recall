@@ -1,0 +1,9 @@
+T1	Argument 0 20	ルーフアンテナの車両への組付指示が不適切
+T2	Connective 21 23	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 24 42	異なる形状のルーフアンテナが組み付け
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 45 60	車両の全高値が認証届出と異なる
+T5	Connective 44 45	、
+R3	REASON Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T4	

@@ -1,0 +1,9 @@
+T1	Argument 0 16	消音器において、製造管理が不適切
+T2	Connective 17 19	ため
+T3	Argument 20 32	異なる仕様の消音器が装着
+T4	Connective 38 42	そのため
+T5	Argument 43 59	正規の消音器と異なる騒音値となる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

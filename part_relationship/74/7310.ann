@@ -4,7 +4,7 @@ T3	Parts 78 81	ナット
 T4	Parts 91 94	ナット
 T5	Parts 98 113	エアバッグコントロールユニット
 T6	Parts 118 123	エアバッグ
-R1	Part-Whole Arg1:T2 Arg2:T1	
+R1	Contact Arg1:T2 Arg2:T1	
 R2	Coreference Arg1:T3 Arg2:T2	
 R3	Coreference Arg1:T3 Arg2:T4	
 R4	Coreference Arg1:T1 Arg2:T5	

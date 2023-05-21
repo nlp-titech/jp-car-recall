@@ -1,0 +1,9 @@
+T1	Argument 0 41	横滑り防止機能警告装置において、インストルメントクラスターの制御プログラムが不適切
+T2	Connective 42 44	ため
+T5	Argument 45 62	点灯機能点検時に警告灯が点灯しない
+T6	Connective 63 67	そのため
+T7	Argument 68 75	作動不良と誤認
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

@@ -9,9 +9,10 @@ T8	Parts 125 130	バックドア
 R1	Part-Whole Arg1:T4 Arg2:T1	
 R2	Part-Whole Arg1:T2 Arg2:T1	
 R3	Contact Arg1:T2 Arg2:T3	
-R4	Contact Arg1:T3 Arg2:T4	
 R5	Contact Arg1:T2 Arg2:T4	
-R6	Part-Whole Arg1:T5 Arg2:T3	
-R7	Part-Whole Arg1:T6 Arg2:T3	
+R6	Contact Arg1:T5 Arg2:T3	
+R7	Contact Arg1:T6 Arg2:T3	
 R8	Coreference Arg1:T2 Arg2:T7	
 R9	Coreference Arg1:T4 Arg2:T8	
+R10	Contact Arg1:T5 Arg2:T6	
+R4	Contact Arg1:T3 Arg2:T4	

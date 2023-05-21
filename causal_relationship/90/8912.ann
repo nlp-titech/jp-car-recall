@@ -1,0 +1,23 @@
+T1	Argument 10 53	燃料タンクにおいて、オプション品として設定している燃料ポンプの取付ボルトの寸法が不適切
+T2	Connective 54 56	ため
+T3	Argument 57 74	ボルトの先端が燃料タンク上面に接触
+T4	Connective 79 83	そのため
+T5	Argument 84 91	ボルトの取付時
+T6	Argument 93 99	車両の使用中
+T7	Argument 108 116	燃料タンクが損傷
+T8	Connective 117 118	、
+T9	Argument 118 132	当該箇所から燃料がにじみ出る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+T10	Connective 99 100	に
+R5	CONDITION Arg1:T10 Arg2:T5	
+R6	CONDITION Arg1:T10 Arg2:T6	
+R7	RESULT Arg1:T10 Arg2:T7	
+R8	REASON Arg1:T8 Arg2:T7	
+R9	RESULT Arg1:T8 Arg2:T9	
+T11	Argument 100 105	当該ボルト
+T12	Connective 105 108	により
+R10	REASON Arg1:T12 Arg2:T11	
+R11	RESULT Arg1:T12 Arg2:T7	

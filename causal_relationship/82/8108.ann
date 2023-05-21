@@ -1,0 +1,27 @@
+T1	Argument 27 57	シリアルデーターゲートウェイモジュールのソフトウェアが不適切
+T2	Connective 58 60	ため
+T3	Argument 61 74	各通信を正しく処理できない
+T4	Connective 80 84	そのため
+T5	Argument 85 115	エアバックシステムに不具合が発生しても警告灯が点灯しなくなる
+T6	Argument 119 139	エアバックシステムの不具合に乗員が気付か
+T8	Argument 140 153	必要な点検整備を行われない
+T9	Connective 155 158	により
+T10	Argument 159 161	最悪
+T11	Connective 162 164	場合
+T14	Argument 165 179	衝突時にエアバッグが作動せず
+T15	Argument 180 188	乗員が傷害を負う
+T16	Connective 179 180	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T6	
+R8	REASON Arg1:T9 Arg2:T8	
+R9	RESULT Arg1:T9 Arg2:T14	
+R10	CONDITION Arg1:T11 Arg2:T10	
+R11	RESULT Arg1:T11 Arg2:T14	
+R14	REASON Arg1:T16 Arg2:T14	
+R15	RESULT Arg1:T16 Arg2:T15	
+T18	Connective 139 140	ず
+R16	REASON Arg1:T18 Arg2:T6	
+R17	RESULT Arg1:T18 Arg2:T8	

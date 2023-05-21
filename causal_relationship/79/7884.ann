@@ -1,0 +1,19 @@
+T1	Argument 0 18	制動灯において、製造工程管理が不適切
+T2	Connective 19 21	ため
+T3	Argument 22 42	前後輪の制動灯スイッチに接点不良が生じる
+T4	Connective 48 52	そのため
+T5	Argument 53 64	制動灯が点灯しなくなる
+T6	Argument 67 86	前後輪の制動灯スイッチが作動不良になっ
+T7	Connective 87 89	場合
+T8	Argument 90 103	スターターモーターが動かず
+T9	Connective 122 123	。
+T10	Argument 103 116	エンジンが始動できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	RESULT Arg1:T4 Arg2:T6	
+R6	CONDITION Arg1:T7 Arg2:T6	
+R7	RESULT Arg1:T7 Arg2:T8	
+R8	REASON Arg1:T9 Arg2:T8	
+R9	RESULT Arg1:T9 Arg2:T10	

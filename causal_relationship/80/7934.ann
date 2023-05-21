@@ -1,0 +1,21 @@
+T1	Argument 9 46	トランスミッション制御コンピュータにおいて、クラッチ制御プログラムが不適切
+T2	Connective 47 49	ため
+T3	Argument 50 82	Ｄレンジ（マニュアルモード含む）で走行中にレンジ信号ノイズを検出
+T4	Connective 84 86	場合
+T5	Argument 88 102	意図しないクラッチ制御が作動
+T6	Connective 110 114	そのため
+T7	Argument 115 128	減速感を伴うショックが発生
+T8	Argument 130 132	最悪
+T9	Connective 133 135	場合
+T10	Argument 136 145	走行安定性を損なう
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T11	Connective 129 130	、
+R7	REASON Arg1:T11 Arg2:T7	
+R8	RESULT Arg1:T11 Arg2:T10	
+R9	CONDITION Arg1:T9 Arg2:T8	
+R10	RESULT Arg1:T9 Arg2:T10	

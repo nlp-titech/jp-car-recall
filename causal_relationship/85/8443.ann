@@ -1,0 +1,21 @@
+T3	Argument 0 69	横滑り防止装置（以下、ＥＳＣ）コントローラにおいて、アダプティブクルーズコントロール（以下、ＡＣＣ）使用時の制動制御プログラムに誤りがある
+T4	Connective 69 71	ため
+T7	Argument 72 90	先行車へ接近する等の理由で減速が必要
+T8	Connective 91 92	際
+T9	Argument 93 107	ＥＳＣによる制動制御が働かず
+T13	Connective 122 126	そのため
+T14	Argument 126 128	最悪
+T15	Connective 129 131	場合
+T16	Argument 132 138	先行車に衝突
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T9	
+R7	CONDITION Arg1:T8 Arg2:T7	
+T17	Connective 121 122	。
+R9	REASON Arg1:T17 Arg2:T9	
+T10	Argument 107 121	減速による車速調整ができない
+R8	RESULT Arg1:T8 Arg2:T9	
+R10	RESULT Arg1:T17 Arg2:T10	
+R11	REASON Arg1:T13 Arg2:T10	
+R12	RESULT Arg1:T13 Arg2:T16	
+R13	CONDITION Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T16	

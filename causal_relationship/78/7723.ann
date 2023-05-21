@@ -1,0 +1,21 @@
+T1	Argument 0 32	右側ルーフレールのセンターフットにおいて、製造機器の管理が不適切
+T2	Connective 33 35	ため
+T3	Argument 36 62	ルーフレールと締結しているボルトの締付けトルクが不足
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 72 76	そのため
+T5	Argument 82 93	当該ボルトが緩み外れる
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 97 99	最悪
+T7	Connective 100 102	場合
+R5	CONDITION Arg1:T7 Arg2:T6	
+T8	Argument 103 120	ルーフレールに固定した積載物が落下
+R6	RESULT Arg1:T7 Arg2:T8	
+T9	Connective 96 97	、
+R7	REASON Arg1:T9 Arg2:T5	
+R8	RESULT Arg1:T9 Arg2:T8	
+T10	Connective 121 122	、
+T11	Argument 122 132	他の交通の妨げになる
+R9	REASON Arg1:T10 Arg2:T8	
+R10	RESULT Arg1:T10 Arg2:T11	

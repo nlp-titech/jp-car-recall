@@ -1,0 +1,5 @@
+T2	Connective 28 30	ため
+T1	Argument 0 27	車両製作工場の出荷検査において、出荷検査の管理が不適切
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 31 60	道路運送車両の保安基準に関する検査が適切に行われていなかっ
+R2	RESULT Arg1:T2 Arg2:T3	

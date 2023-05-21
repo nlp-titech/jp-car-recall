@@ -1,0 +1,41 @@
+T2	Connective 37 39	ため
+T3	Argument 40 63	当該ホースとエンジンアンダーカバーの隙間が狭い
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 69 73	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 74 82	当該ホースが膨張
+T6	Connective 84 86	場合
+R4	CONDITION Arg1:T6 Arg2:T5	
+T7	Argument 87 116	エンジンアイドリング時においてエンジンアンダーカバーが振動
+T8	Connective 120 123	により
+R5	REASON Arg1:T8 Arg2:T7	
+T9	Argument 123 128	双方が干渉
+R6	RESULT Arg1:T8 Arg2:T9	
+R7	RESULT Arg1:T6 Arg2:T9	
+R8	RESULT Arg1:T4 Arg2:T9	
+T10	Argument 131 139	当該ホースが損傷
+T11	Connective 129 130	て
+R9	REASON Arg1:T11 Arg2:T9	
+R10	RESULT Arg1:T11 Arg2:T10	
+T12	Argument 147 161	そのままの状態で使用を続ける
+T13	Connective 161 162	と
+R11	CONDITION Arg1:T13 Arg2:T12	
+T14	Argument 163 173	当該ホースに亀裂が生
+T15	Argument 174 180	冷却水が漏れ
+T16	Connective 181 185	そのため
+T17	Argument 186 188	最悪
+T18	Connective 189 191	場合
+T19	Argument 192 202	オーバーヒートに至る
+T20	Connective 146 147	。
+R12	REASON Arg1:T20 Arg2:T10	
+R13	RESULT Arg1:T20 Arg2:T14	
+R14	RESULT Arg1:T13 Arg2:T14	
+T21	Connective 173 174	じ
+R15	REASON Arg1:T21 Arg2:T14	
+R16	RESULT Arg1:T21 Arg2:T15	
+R17	REASON Arg1:T16 Arg2:T15	
+R18	RESULT Arg1:T16 Arg2:T19	
+R19	CONDITION Arg1:T18 Arg2:T17	
+R20	RESULT Arg1:T18 Arg2:T19	
+T1	Argument 16 36	ラジエータロアホースの組付け方法が不適切
+R1	REASON Arg1:T2 Arg2:T1	

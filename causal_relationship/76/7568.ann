@@ -1,0 +1,13 @@
+T1	Argument 24 54	トルクコンバータに搭載しているオイルフィルターの選定が不適切
+T2	Connective 55 57	ため
+T3	Argument 58 63	車両の振動
+T4	Connective 63 66	により
+T5	Argument 67 91	オイルフィルターのエレメント取付け部のネジが破損
+T6	Connective 92 93	、
+T7	Argument 93 101	オイル漏れに至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

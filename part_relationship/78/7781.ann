@@ -1,7 +1,6 @@
 T1	Parts 9 15	ホイルローダ
 T2	Parts 23 35	エンジンオイルセパレータ
 T3	Parts 56 60	エンジン
-T4	Parts 36 38	管路
 T5	Parts 67 74	エンジンオイル
 T6	Parts 79 83	エンジン
 T7	Parts 96 100	エンジン
@@ -18,11 +17,12 @@ R3	Coreference Arg1:T10 Arg2:T7
 R4	Coreference Arg1:T11 Arg2:T10	
 R5	Coreference Arg1:T12 Arg2:T11	
 R6	Coreference Arg1:T14 Arg2:T12	
-R7	Contact Arg1:T5 Arg2:T4	
-R8	Part-Whole Arg1:T4 Arg2:T2	
 R9	Part-Whole Arg1:T3 Arg2:T1	
-R10	Part-Whole Arg1:T2 Arg2:T1	
 R11	Coreference Arg1:T13 Arg2:T1	
-R12	Part-Whole Arg1:T14 Arg2:T13	
 R13	Contact Arg1:T8 Arg2:T7	
-R14	Part-Whole Arg1:T9 Arg2:T1	
+R7	Part-Whole Arg1:T2 Arg2:T1	
+R8	Contact Arg1:T2 Arg2:T5	
+R10	Part-Whole Arg1:T9 Arg2:T13	
+R12	Connect Arg1:T2 Arg2:T3	
+R14	Contact Arg1:T5 Arg2:T3	
+R15	Part-Whole Arg1:T8 Arg2:T13	

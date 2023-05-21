@@ -1,0 +1,5 @@
+T2	Argument 0 46	任命されていない検査員（検査補助者）が合否判定を行う等、完成検査工程における合否判定が不明確
+T3	Connective 50 52	ため
+T4	Argument 53 82	道路運送車両の保安基準に関する検査が適切に行われていなかっ
+R2	REASON Arg1:T3 Arg2:T2	
+R3	RESULT Arg1:T3 Arg2:T4	

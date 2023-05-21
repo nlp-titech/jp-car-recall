@@ -3,3 +3,5 @@ T2	Parts 62 64	燃料
 T3	Parts 87 89	燃料
 R1	Coreference Arg1:T2 Arg2:T3	
 R2	Contact Arg1:T1 Arg2:T2	
+T4	Parts 14 17	接着剤
+R3	Contact Arg1:T1 Arg2:T4	

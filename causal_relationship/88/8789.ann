@@ -1,0 +1,19 @@
+T1	Argument 8 38	排出ガス浄化装置において、添加弁の燃料配管の固定方法が不適切
+T2	Connective 39 41	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 48 63	配管周辺部に堆積した氷塊の重み
+T4	Connective 63 64	で
+T5	Argument 65 76	配管が変形したり、折損
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T7	Connective 84 88	そのため
+R5	REASON Arg1:T7 Arg2:T5	
+T6	Argument 89 95	燃料が漏れる
+R6	RESULT Arg1:T7 Arg2:T6	
+T8	Argument 99 115	排出ガス浄化装置が作動しなくなる
+R7	RESULT Arg1:T7 Arg2:T8	
+T9	Argument 42 47	雪道走行等
+T10	Connective 47 48	で
+R8	CONDITION Arg1:T10 Arg2:T9	
+R9	RESULT Arg1:T10 Arg2:T3	

@@ -1,0 +1,25 @@
+T1	Argument 10 42	ダンプ作動用油圧ホース固縛ステーと後輪用ブレーキ配管の隙が小さい
+T2	Connective 42 44	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T5	Argument 45 79	走行振動でダンプ作動用油圧ホース固縛ステーと後輪用ブレーキ配管が干渉
+R4	RESULT Arg1:T2 Arg2:T5	
+T6	Connective 88 92	そのため
+R5	REASON Arg1:T6 Arg2:T5	
+T7	Argument 93 107	そのままの状態で使用を続ける
+T8	Connective 107 108	と
+R6	CONDITION Arg1:T8 Arg2:T7	
+T9	Argument 109 121	後輪用ブレーキ配管が損傷
+T10	Connective 122 123	、
+R7	RESULT Arg1:T8 Arg2:T9	
+T11	Argument 123 125	最悪
+T12	Connective 126 128	場合
+R8	CONDITION Arg1:T12 Arg2:T11	
+T13	Argument 129 137	ブレーキ液が漏れ
+T14	Connective 137 138	て
+T15	Argument 138 144	制動力が低下
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	RESULT Arg1:T12 Arg2:T13	
+R12	REASON Arg1:T14 Arg2:T13	
+R13	RESULT Arg1:T14 Arg2:T15	
+R14	RESULT Arg1:T6 Arg2:T9	

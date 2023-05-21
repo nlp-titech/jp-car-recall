@@ -1,0 +1,29 @@
+T1	Argument 0 30	運転席のアシストグリップにおいて、取付部のパネルの強度が不足
+T2	Connective 34 36	ため
+T3	Argument 37 43	繰り返し使用
+T4	Connective 47 48	で
+R1	CONDITION Arg1:T4 Arg2:T3	
+R2	REASON Arg1:T2 Arg2:T1	
+T5	Argument 49 58	パネルに亀裂が入る
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	RESULT Arg1:T2 Arg2:T5	
+T6	Connective 64 68	そのため
+T7	Argument 69 79	そのままの状態で使用
+T8	Connective 81 82	と
+R5	CONDITION Arg1:T8 Arg2:T7	
+R6	REASON Arg1:T6 Arg2:T5	
+T10	Argument 105 107	最悪
+T11	Connective 108 110	場合
+T12	Argument 111 113	転倒
+R9	CONDITION Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T12	
+T13	Connective 104 105	、
+R12	RESULT Arg1:T13 Arg2:T12	
+T9	Argument 83 91	運転者が乗り込む
+T14	Connective 91 92	際
+T15	Argument 93 104	アシストグリップが外れ
+R7	CONDITION Arg1:T14 Arg2:T9	
+R8	RESULT Arg1:T6 Arg2:T15	
+R11	RESULT Arg1:T8 Arg2:T15	
+R13	RESULT Arg1:T14 Arg2:T15	
+R14	REASON Arg1:T13 Arg2:T15	

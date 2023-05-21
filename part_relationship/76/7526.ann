@@ -16,9 +16,11 @@ R3	Coreference Arg1:T4 Arg2:T6
 R4	Coreference Arg1:T5 Arg2:T7	
 R5	Coreference Arg1:T7 Arg2:T8	
 R6	Coreference Arg1:T9 Arg2:T10	
-R7	Contact Arg1:T8 Arg2:T9	
 R8	Part-Whole Arg1:T8 Arg2:T12	
 R9	Contact Arg1:T8 Arg2:T11	
 R10	Contact Arg1:T1 Arg2:T2	
-R11	Part-Whole Arg1:T4 Arg2:T5	
+R11	Connect Arg1:T4 Arg2:T5	
 R12	Part-Whole Arg1:T1 Arg2:T5	
+R13	Part-Whole Arg1:T11 Arg2:T12	
+R14	Contact Arg1:T1 Arg2:T5	
+R7	Part-Whole Arg1:T9 Arg2:T8	

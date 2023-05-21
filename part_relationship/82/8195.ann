@@ -8,3 +8,4 @@ R2	Coreference Arg1:T3 Arg2:T2
 R3	Part-Whole Arg1:T4 Arg2:T1	
 R4	Contact Arg1:T4 Arg2:T3	
 R5	Coreference Arg1:T5 Arg2:T3	
+T6	Parts 55 60	プライマー

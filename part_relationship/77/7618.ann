@@ -3,5 +3,5 @@ T2	Parts 10 13	反射器
 T3	Parts 30 33	反射器
 T4	Parts 78 83	後部反射器
 R1	Coreference Arg1:T2 Arg2:T3	
-R2	Oneway-Coreference Arg1:T1 Arg2:T2	
-R3	Coreference Arg1:T1 Arg2:T4	
+R2	Coreference Arg1:T1 Arg2:T2	
+R3	Coreference Arg1:T3 Arg2:T4	

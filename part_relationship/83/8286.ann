@@ -5,7 +5,7 @@ T4	Parts 119 126	エンジン警告灯
 T5	Parts 141 145	エンジン
 R1	Part-Whole Arg1:T2 Arg2:T1	
 R2	Contact Arg1:T3 Arg2:T2	
-R3	Part-Whole Arg1:T3 Arg2:T1	
-R4	Connect Arg1:T4 Arg2:T1	
 R5	Connect Arg1:T4 Arg2:T5	
 R6	Connect Arg1:T5 Arg2:T1	
+T6	Parts 98 102	ユニット
+R7	Coreference Arg1:T1 Arg2:T6	

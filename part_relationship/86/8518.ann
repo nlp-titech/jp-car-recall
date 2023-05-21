@@ -8,7 +8,7 @@ T7	Parts 135 139	ワイパー
 T8	Parts 140 144	電源回路
 T9	Parts 152 156	ヒューズ
 T10	Parts 161 165	ワイパー
-R2	Part-Whole Arg1:T3 Arg2:T2	
+R2	Connect Arg1:T3 Arg2:T2	
 R3	Coreference Arg1:T4 Arg2:T2	
 R4	Coreference Arg1:T5 Arg2:T4	
 R5	Part-Whole Arg1:T6 Arg2:T5	

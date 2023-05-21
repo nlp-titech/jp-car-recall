@@ -1,0 +1,9 @@
+T1	Argument 0 39	すれ違い用前照灯において、車両組立ラインのヘッドライトテスタの保守管理が不適切
+T2	Connective 40 42	ため
+T3	Argument 43 62	前照灯の光軸調整が適切に行われていない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 68 72	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 73 87	光軸の向きが基準に適合しない
+R4	RESULT Arg1:T4 Arg2:T5	

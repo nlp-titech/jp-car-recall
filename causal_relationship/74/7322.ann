@@ -1,0 +1,9 @@
+T1	Argument 0 38	農耕トラクタのドローバーサポート（連結装置）において、固定ボルトの強度が不足
+T2	Connective 42 44	ため
+T3	Argument 45 53	固定ボルトが破損
+R1	RESULT Arg1:T2 Arg2:T3	
+R2	REASON Arg1:T2 Arg2:T1	
+T4	Connective 61 65	そのため
+T5	Argument 66 95	けん引走行中にトラクタに装着した農耕作業用トレーラが外れる
+R3	RESULT Arg1:T4 Arg2:T5	
+R4	REASON Arg1:T4 Arg2:T3	

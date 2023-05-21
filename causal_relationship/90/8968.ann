@@ -1,0 +1,13 @@
+T1	Argument 15 47	リアアクスルのレベルセンサにおいて、製造時の組み付け指示が不適切
+T2	Connective 48 50	ため
+T3	Argument 51 65	リンケージの向きが反対に接続
+T4	Connective 76 80	そのため
+T7	Argument 81 101	積載時に前照灯の光軸調整が適切に行われず
+T8	Connective 101 102	、
+T9	Argument 102 112	対向車の運転手が眩惑
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	

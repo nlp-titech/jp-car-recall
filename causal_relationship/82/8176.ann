@@ -1,0 +1,31 @@
+T1	Argument 22 41	前輪ブレーキチャンバの組付作業が不適切
+T2	Connective 42 44	ため
+T3	Argument 45 102	プラグ（閉止栓）またはテストニップルおよびブレーキホース接続部（ニップルおよびホース接続ナット）の締付トルクが不足
+T4	Connective 112 116	そのため
+T5	Argument 117 131	そのままの状態で使用を続ける
+T6	Connective 131 132	と
+T7	Argument 133 141	当該プラグ等が緩
+T8	Connective 141 142	み
+T9	Argument 142 149	エア漏れが生じ
+T11	Argument 150 152	最悪
+T12	Connective 153 155	場合
+T13	Argument 156 158	脱落
+T14	Connective 159 160	て
+T15	Argument 160 168	エアが供給されず
+T16	Connective 182 183	。
+T17	Argument 168 174	制動力が低下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	RESULT Arg1:T8 Arg2:T13	
+R10	CONDITION Arg1:T12 Arg2:T11	
+R11	RESULT Arg1:T12 Arg2:T13	
+R12	REASON Arg1:T14 Arg2:T13	
+R13	RESULT Arg1:T14 Arg2:T15	
+R14	REASON Arg1:T16 Arg2:T15	
+R15	RESULT Arg1:T16 Arg2:T17	

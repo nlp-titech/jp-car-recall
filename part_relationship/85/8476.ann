@@ -14,3 +14,4 @@ R5	Part-Whole Arg1:T4 Arg2:T5
 R6	Part-Whole Arg1:T6 Arg2:T5	
 R7	Part-Whole Arg1:T7 Arg2:T5	
 R8	Part-Whole Arg1:T8 Arg2:T5	
+R9	Connect Arg1:T6 Arg2:T7	

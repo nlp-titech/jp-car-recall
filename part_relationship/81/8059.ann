@@ -1,5 +1,5 @@
 T1	Parts 0 15	前面衝突警報システム（ＦＣＷ）
 T2	Parts 35 39	センサー
 T3	Parts 93 103	衝突被害軽減ブレーキ
-R1	Part-Whole Arg1:T2 Arg2:T1	
+R1	Connect Arg1:T2 Arg2:T1	
 R2	Connect Arg1:T3 Arg2:T1	

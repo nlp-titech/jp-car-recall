@@ -1,0 +1,21 @@
+T1	Argument 0 37	バックドア用ガス封入式ダンパステーにおいて、メッキ工程での温度管理が不適切
+T2	Connective 38 40	ため
+T3	Argument 41 52	メッキ生成時の内部応力
+T4	Connective 52 55	により
+T5	Argument 55 71	ダンパステー表面に微小亀裂が発生
+T6	Connective 79 83	そのため
+T7	Argument 84 94	封入されたガスが漏れ
+T8	Connective 94 95	、
+T9	Argument 95 97	最悪
+T10	Connective 98 100	場合
+T11	Argument 101 115	バックドアを保持できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T11	
+R9	CONDITION Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R2	RESULT Arg1:T2 Arg2:T5	

@@ -3,5 +3,5 @@ T2	Parts 30 37	インジェクター
 T3	Parts 58 60	燃料
 T4	Parts 72 76	エンジン
 R1	Coreference Arg1:T1 Arg2:T2	
-R2	Part-Whole Arg1:T1 Arg2:T4	
 R3	Contact Arg1:T2 Arg2:T3	
+R2	Part-Whole Arg1:T2 Arg2:T4	

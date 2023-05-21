@@ -5,6 +5,5 @@ T4	Parts 88 90	車両
 R1	Connect Arg1:T1 Arg2:T2	
 R2	Part-Whole Arg1:T2 Arg2:T4	
 R3	Contact Arg1:T3 Arg2:T1	
-R4	Contact Arg1:T3 Arg2:T2	
 R5	Part-Whole Arg1:T3 Arg2:T4	
 R6	Part-Whole Arg1:T1 Arg2:T4	

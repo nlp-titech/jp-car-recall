@@ -8,7 +8,7 @@ T7	Parts 68 71	バルブ
 T8	Parts 73 77	パッキン
 T9	Parts 95 98	バルブ
 T10	Parts 108 110	燃料
-R1	Oneway-Coreference Arg1:T1 Arg2:T2	
+R1	Coreference Arg1:T1 Arg2:T2	
 R2	Coreference Arg1:T2 Arg2:T10	
 R4	Part-Whole Arg1:T4 Arg2:T3	
 R5	Part-Whole Arg1:T5 Arg2:T4	

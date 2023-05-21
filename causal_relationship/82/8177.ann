@@ -1,0 +1,34 @@
+T1	Argument 0 80	ＥＢＳ（電子制御ブレーキシステム）コントロールユニットからトレーラー接続用ソケットまでの配線において、ＥＢＳ通信及びＡＢＳ不具合検知用の配線が取付けられていない
+T2	Connective 86 90	そのため
+T3	Argument 91 107	ＥＢＳ機能付きのトレーラーを連結
+T4	Connective 109 111	場合
+T5	Argument 112 121	ＥＢＳ警告灯が点灯
+T7	Argument 122 132	ＥＢＳ機能が働かない
+T8	Argument 136 151	ＡＢＳ機能付きトレーラーを連結
+T9	Connective 153 155	場合
+T10	Argument 156 182	トレーラー側のＡＢＳ機能に不具合が発生しても検知出来
+T11	Connective 182 183	ず
+T12	Argument 183 192	警告灯が点灯しない
+T13	Connective 192 194	ため
+T14	Argument 195 214	運転者は故障を認知しないまま運転を継続
+T15	Connective 215 216	、
+T16	Argument 216 218	最悪
+T17	Connective 219 221	場合
+T20	Argument 222 239	急制動時に車両の挙動が不安定になる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	RESULT Arg1:T2 Arg2:T7	
+R4	CONDITION Arg1:T4 Arg2:T3	
+R5	RESULT Arg1:T4 Arg2:T5	
+R6	RESULT Arg1:T4 Arg2:T7	
+R7	RESULT Arg1:T2 Arg2:T10	
+R8	CONDITION Arg1:T9 Arg2:T8	
+R9	RESULT Arg1:T9 Arg2:T10	
+R10	REASON Arg1:T11 Arg2:T10	
+R11	RESULT Arg1:T11 Arg2:T12	
+R12	REASON Arg1:T13 Arg2:T12	
+R13	RESULT Arg1:T13 Arg2:T14	
+R14	REASON Arg1:T15 Arg2:T14	
+R15	RESULT Arg1:T15 Arg2:T20	
+R16	CONDITION Arg1:T17 Arg2:T16	
+R17	RESULT Arg1:T17 Arg2:T20	

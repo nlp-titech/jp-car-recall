@@ -1,15 +1,12 @@
 T1	Parts 0 14	ブレーキプレッシャーユニット
-T2	Parts 69 77	ブレーキアシスト
 T3	Parts 88 92	ブレーキ
 T4	Parts 94 113	アンチロックブレーキシステム（ＡＢＳ）
 T5	Parts 116 144	エレクトロニックスタビリゼーションコントロール（ＥＳＣ）
 T6	Parts 156 158	車両
 R1	Connect Arg1:T1 Arg2:T3	
-R2	Connect Arg1:T2 Arg2:T3	
-R3	Connect Arg1:T3 Arg2:T4	
-R4	Connect Arg1:T3 Arg2:T5	
 R5	Part-Whole Arg1:T5 Arg2:T6	
 R6	Part-Whole Arg1:T4 Arg2:T6	
 R7	Part-Whole Arg1:T3 Arg2:T6	
-R8	Part-Whole Arg1:T2 Arg2:T6	
 R9	Part-Whole Arg1:T1 Arg2:T6	
+R2	Connect Arg1:T3 Arg2:T4	
+R3	Connect Arg1:T3 Arg2:T5	

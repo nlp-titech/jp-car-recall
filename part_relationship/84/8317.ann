@@ -4,8 +4,8 @@ T3	Parts 48 53	ガス発生剤
 T4	Parts 69 74	エアバッグ
 T5	Parts 78 84	インフレ－タ
 T6	Parts 94 102	インフレータ容器
-R1	Part-Whole Arg1:T2 Arg2:T1	
 R2	Part-Whole Arg1:T3 Arg2:T2	
-R3	Oneway-Coreference Arg1:T1 Arg2:T4	
+R3	Coreference Arg1:T1 Arg2:T4	
 R4	Coreference Arg1:T2 Arg2:T5	
-R5	Part-Whole Arg1:T6 Arg2:T2	
+R6	Part-Whole Arg1:T6 Arg2:T4	
+R1	Part-Whole Arg1:T5 Arg2:T6	

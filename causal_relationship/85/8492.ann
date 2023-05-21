@@ -1,0 +1,5 @@
+T4	Connective 35 39	そのため
+T5	Argument 40 54	光軸の向きが基準に適合しない
+T7	Argument 8 27	製造時に誤った条件で前照灯の光軸を調整
+R4	REASON Arg1:T4 Arg2:T7	
+R5	RESULT Arg1:T4 Arg2:T5	

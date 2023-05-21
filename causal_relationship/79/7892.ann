@@ -1,0 +1,13 @@
+T1	Argument 0 54	バスの扉挟み込み防止用検知器（光電装置）において、光電管への水滴付着や外乱光等の外的要因に対する検討が不十分
+T2	Connective 55 57	ため
+T3	Argument 58 75	障害物がないのに障害物があると検知
+T4	Connective 83 87	そのため
+T5	Argument 88 99	挟み込み防止機能が作動
+T6	Connective 99 100	し
+T7	Argument 100 115	乗降用自動扉が開閉できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

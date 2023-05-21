@@ -5,4 +5,3 @@ T4	Parts 85 88	原動機
 R1	Coreference Arg1:T2 Arg2:T1	
 R2	Connect Arg1:T3 Arg2:T2	
 R3	Connect Arg1:T2 Arg2:T4	
-R4	Connect Arg1:T3 Arg2:T4	

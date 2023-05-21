@@ -1,0 +1,19 @@
+T1	Argument 9 44	インタークーラーにおいて、エンジンへ吸気を供給するホースの選定が不適切
+T2	Connective 45 47	ため
+T5	Argument 48 68	走行等において当該ホースに加圧を繰り返す
+T6	Connective 68 69	と
+T7	Argument 69 75	ホースが破損
+T8	Connective 83 87	そのため
+T9	Argument 88 94	過給圧力不足
+T11	Argument 107 123	排出ガスが基準値を満足しなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+T10	Connective 94 97	による
+T12	Argument 97 106	エンジン出力の低下
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T12	
+R8	RESULT Arg1:T8 Arg2:T9	
+R11	RESULT Arg1:T8 Arg2:T11	

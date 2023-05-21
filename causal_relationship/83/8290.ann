@@ -1,0 +1,35 @@
+T1	Argument 11 31	ＬＥＤ前部霧灯のサブハーネス配策が不適切
+T2	Connective 32 34	ため
+T3	Argument 35 72	前部潜り込み防止装置（ＦＵＰＤ）の取付位置が当該灯火器と近接している仕様車
+T4	Connective 72 74	では
+R1	CONDITION Arg1:T4 Arg2:T3	
+T5	Argument 75 97	接続コネクタがＦＵＰＤに干渉もしくは挟み込ま
+R2	RESULT Arg1:T4 Arg2:T5	
+R3	REASON Arg1:T2 Arg2:T1	
+R4	RESULT Arg1:T2 Arg2:T5	
+T7	Connective 105 109	そのため
+R8	REASON Arg1:T7 Arg2:T5	
+T8	Argument 110 124	そのままの状態で使用を続ける
+T9	Connective 124 125	と
+R9	CONDITION Arg1:T9 Arg2:T8	
+T10	Argument 132 139	コネクタが破損
+R10	RESULT Arg1:T9 Arg2:T10	
+R11	RESULT Arg1:T7 Arg2:T10	
+T11	Argument 140 144	接触不良
+T12	Argument 145 147	断線
+T13	Argument 150 152	短絡
+T14	Connective 153 154	て
+T15	Argument 154 160	不点灯となる
+T16	Connective 139 140	し
+R12	REASON Arg1:T16 Arg2:T10	
+R13	RESULT Arg1:T16 Arg2:T11	
+R14	RESULT Arg1:T16 Arg2:T12	
+R15	RESULT Arg1:T16 Arg2:T13	
+R16	REASON Arg1:T14 Arg2:T13	
+R17	REASON Arg1:T14 Arg2:T12	
+R18	REASON Arg1:T14 Arg2:T11	
+R19	RESULT Arg1:T14 Arg2:T15	
+T17	Argument 126 131	車両振動等
+T18	Connective 131 132	で
+R20	REASON Arg1:T18 Arg2:T17	
+R21	RESULT Arg1:T18 Arg2:T10	

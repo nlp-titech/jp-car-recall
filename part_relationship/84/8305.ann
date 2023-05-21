@@ -4,4 +4,4 @@ T3	Parts 37 44	制御プログラム
 T4	Parts 100 106	画像表示装置
 R1	Coreference Arg1:T1 Arg2:T4	
 R2	Part-Whole Arg1:T3 Arg2:T2	
-R3	Connect Arg1:T2 Arg2:T1	
+R3	Part-Whole Arg1:T2 Arg2:T1	

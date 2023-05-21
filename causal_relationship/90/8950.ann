@@ -1,0 +1,9 @@
+T1	Argument 0 67	衝突被害軽減ブレーキシステムにおいて、レーダー及びカメラを搭載したＡＳＤＭ（アクティブセーフティドメインマスター）のプログラムが不適切
+T2	Connective 68 70	ため
+T3	Argument 71 94	前方の静止車両や歩行者をシステムが検知できない
+T4	Connective 100 104	そのため
+T5	Argument 105 124	衝突回避・被害軽減ブレーキが作動しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

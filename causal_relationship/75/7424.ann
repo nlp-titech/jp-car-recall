@@ -1,0 +1,27 @@
+T1	Argument 13 46	クォータウィンドウガラスのモールディングにおいて、成形条件が不適切
+T2	Connective 47 49	ため
+T3	Argument 50 62	ガラスとの密着性が不十分
+T4	Connective 69 73	そのため
+T7	Argument 74 81	走行時の風圧等
+T8	Connective 81 84	により
+T9	Argument 84 90	接着が剥がれ
+T10	Connective 90 91	て
+T11	Argument 91 96	異音が発生
+T12	Argument 98 108	そのまま使用を続ける
+T13	Connective 108 109	と
+R1	CONDITION Arg1:T13 Arg2:T12	
+T14	Argument 110 112	最悪
+T15	Connective 113 115	場合
+T16	Argument 116 126	モールディングが脱落
+R2	RESULT Arg1:T13 Arg2:T16	
+R3	CONDITION Arg1:T15 Arg2:T14	
+R4	RESULT Arg1:T15 Arg2:T16	
+R5	REASON Arg1:T2 Arg2:T1	
+R6	RESULT Arg1:T2 Arg2:T3	
+R7	REASON Arg1:T4 Arg2:T3	
+R8	RESULT Arg1:T4 Arg2:T9	
+R11	REASON Arg1:T8 Arg2:T7	
+R12	RESULT Arg1:T8 Arg2:T9	
+R13	REASON Arg1:T10 Arg2:T9	
+R14	RESULT Arg1:T10 Arg2:T11	
+R9	RESULT Arg1:T10 Arg2:T16	

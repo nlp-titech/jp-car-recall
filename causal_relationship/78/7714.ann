@@ -1,0 +1,21 @@
+T1	Argument 0 39	運転席及び助手席のシートベルトにおいて、固定ボルトの締め付け工具の設定が不適切
+T2	Connective 40 42	ため
+T3	Argument 43 53	締め付けトルクが不足
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 63 67	そのため
+T5	Argument 68 74	衝突時の衝撃
+T6	Connective 74 77	により
+T7	Argument 77 90	シートベルトが車体から外れ
+R3	REASON Arg1:T6 Arg2:T5	
+R4	RESULT Arg1:T6 Arg2:T7	
+R5	REASON Arg1:T4 Arg2:T3	
+R6	RESULT Arg1:T4 Arg2:T7	
+T8	Argument 91 93	最悪
+T9	Connective 94 96	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+T10	Argument 97 111	乗員を適切に拘束できずに負傷
+R8	RESULT Arg1:T9 Arg2:T10	
+T11	Connective 90 91	、
+R9	REASON Arg1:T11 Arg2:T7	
+R10	RESULT Arg1:T11 Arg2:T10	

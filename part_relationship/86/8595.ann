@@ -4,6 +4,6 @@ T3	Parts 51 58	エンジンオイル
 T4	Parts 62 65	オイル
 T5	Parts 73 76	警告灯
 R1	Part-Whole Arg1:T2 Arg2:T1	
-R2	Part-Whole Arg1:T3 Arg2:T2	
 R3	Coreference Arg1:T4 Arg2:T3	
 R4	Connect Arg1:T5 Arg2:T1	
+R2	Contact Arg1:T2 Arg2:T3	

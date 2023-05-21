@@ -1,0 +1,5 @@
+T1	Argument 10 36	後退灯およびリヤコンビネーションランプの取付が不適切
+T2	Connective 37 39	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 40 90	後退灯、制動灯、尾灯、後部反射器および方向指示器の取付角度が保安基準に定める要件にそれぞれ適合しない
+R2	RESULT Arg1:T2 Arg2:T3	

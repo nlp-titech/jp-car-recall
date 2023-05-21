@@ -1,0 +1,31 @@
+T1	Argument 0 46	ディファレンシャルロックシステムにおいて、コントロールユニット内の構成部品の材料選定が不適切
+T2	Connective 47 49	ため
+T3	Argument 50 65	アクスルオイルから発生するガス
+T4	Connective 65 68	により
+T5	Argument 68 77	電気的な障害が発生
+T6	Connective 85 89	そのため
+T7	Argument 90 96	警告灯の点灯
+T8	Argument 99 121	ＡＢＳや横滑り防止装置（ＥＳＰ）の作動が停止
+T9	Connective 122 123	て
+T10	Argument 124 126	最悪
+T11	Connective 127 129	場合
+T12	Argument 130 138	滑りやすい路面等
+T13	Connective 138 139	で
+T14	Argument 139 151	車両の挙動が不安定になり
+T15	Connective 163 164	。
+T16	Argument 151 157	事故を起こす
+R1	REASON Arg1:T2 Arg2:T1	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T8	
+R8	REASON Arg1:T9 Arg2:T8	
+R9	RESULT Arg1:T9 Arg2:T14	
+R10	CONDITION Arg1:T11 Arg2:T10	
+R11	RESULT Arg1:T11 Arg2:T14	
+R12	CONDITION Arg1:T13 Arg2:T12	
+R13	RESULT Arg1:T13 Arg2:T14	
+R14	REASON Arg1:T15 Arg2:T14	
+R15	RESULT Arg1:T15 Arg2:T16	
+R2	RESULT Arg1:T2 Arg2:T3	

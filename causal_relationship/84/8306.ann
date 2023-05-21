@@ -1,0 +1,9 @@
+T1	Argument 12 45	センサーカメラにおいて、車両製造時にカメラカバーの組付け不良があっ
+T2	Connective 46 48	ため
+T4	Connective 81 85	そのため
+T5	Argument 86 115	保安基準で規定されたセンサー検出領域の上方角度を満足しない
+R1	REASON Arg1:T2 Arg2:T1	
+R4	RESULT Arg1:T4 Arg2:T5	
+T3	Argument 49 71	センサーカメラ視野の一部をカメラカバーが遮っ
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	

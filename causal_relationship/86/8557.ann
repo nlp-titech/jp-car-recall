@@ -1,0 +1,33 @@
+T1	Argument 0 43	プロペラシャフトにおいて、コンクリートポンプ装置架装時の再組付け工程の作業管理が不適切
+T2	Connective 44 46	ため
+T3	Argument 47 61	取り外した締付ボルトを再使用
+T4	Connective 69 73	そのため
+T5	Argument 74 82	締付トルクが不足
+T6	Argument 84 94	走行中にボルトが緩み
+T7	Connective 83 84	、
+T8	Connective 94 95	、
+T9	Argument 95 105	異音や車体振動が発生
+T10	Connective 106 107	て
+T11	Argument 108 118	そのまま使用を続ける
+T12	Connective 118 119	と
+T13	Argument 120 122	最悪
+T14	Connective 123 125	場合
+T15	Argument 126 137	プロペラシャフトが脱落
+T16	Connective 138 139	て
+T17	Argument 139 149	他の交通の妨げとなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	
+R7	REASON Arg1:T8 Arg2:T6	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T15	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T15	
+R13	CONDITION Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R15	REASON Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T17	

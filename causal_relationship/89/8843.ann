@@ -1,0 +1,9 @@
+T1	Argument 6 26	燃料タンクにおいて、設計上の管理が不適切
+T2	Connective 30 32	ため
+T3	Argument 33 80	協定規則第３４号に基づく認証を受けておらず、かつ認証ラベルが貼付けされていない燃料タンクを装着
+T4	Connective 88 92	そのため
+T5	Argument 93 113	保安基準第１５条（燃料装置）に適合しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

@@ -3,5 +3,6 @@ T2	Parts 6 8	基板
 T3	Parts 155 157	車両
 R1	Part-Whole Arg1:T2 Arg2:T1	
 T4	Parts 31 33	半田
-R2	Part-Whole Arg1:T4 Arg2:T2	
-R3	Coreference Arg1:T1 Arg2:T3	
+R3	Part-Whole Arg1:T1 Arg2:T3	
+T5	Parts 41 44	防湿材
+R4	Contact Arg1:T2 Arg2:T5	

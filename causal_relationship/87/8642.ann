@@ -1,0 +1,25 @@
+T1	Argument 0 23	エンジン冷却装置において、エア抜き設計が不適切
+T2	Connective 24 26	ため
+T3	Argument 27 40	修理等により冷却水を再充填
+T4	Connective 42 43	際
+R1	CONDITION Arg1:T4 Arg2:T3	
+T5	Argument 45 60	専用特殊工具を正しく使用しない
+T6	Connective 60 62	場合
+R2	CONDITION Arg1:T6 Arg2:T5	
+T7	Argument 63 76	冷却装置からエアが抜けない
+R3	RESULT Arg1:T6 Arg2:T7	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	REASON Arg1:T2 Arg2:T1	
+R6	RESULT Arg1:T2 Arg2:T7	
+T8	Connective 82 86	そのため
+T9	Argument 87 96	冷却が不十分となり
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 97 99	最悪
+T11	Connective 100 102	場合
+R9	CONDITION Arg1:T11 Arg2:T10	
+T12	Argument 103 116	エンジンルームが火災に至る
+R10	RESULT Arg1:T11 Arg2:T12	
+T13	Connective 96 97	、
+R11	REASON Arg1:T13 Arg2:T9	
+R12	RESULT Arg1:T13 Arg2:T12	

@@ -1,0 +1,15 @@
+T1	Argument 0 59	衝突回避支援システム（プリクラッシュセーフティシステム）において、プリクラッシュブレーキアシスト制御プログラムが不適切
+T2	Connective 60 62	ため
+T3	Argument 63 80	前方に衝突の可能性がある車両を検知
+T4	Connective 82 83	際
+T6	Connective 116 117	と
+T7	Argument 118 132	ブレーキアシスト作動が遅れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T7	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 103 116	運転者のブレーキ踏力が弱い
+R5	CONDITION Arg1:T6 Arg2:T8	
+R4	RESULT Arg1:T4 Arg2:T7	
+T5	Argument 84 99	警報および警告表示は正常に作動
+R7	RESULT Arg1:T4 Arg2:T5	

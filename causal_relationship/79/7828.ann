@@ -1,0 +1,33 @@
+T1	Argument 0 43	エレクトロニックコントロールユニット（ＥＣＵ）において、燃料噴射制御プログラムが不適切
+T2	Connective 44 46	ため
+T7	Connective 77 79	場合
+T11	Connective 102 106	そのため
+T12	Argument 107 135	二次エアバルブ（エアサクションバルブ）に高い圧力がかかり
+T13	Connective 135 136	、
+T14	Argument 136 147	当該バルブが変形・損傷
+T15	Connective 148 149	、
+T16	Argument 149 167	当該バルブから逆流した高温の排気ガス
+T17	Connective 167 170	により
+T18	Argument 170 177	周辺部品が溶損
+T19	Connective 178 179	、
+T20	Argument 179 181	最悪
+T21	Connective 182 184	場合
+T22	Argument 185 190	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+T4	Argument 80 94	排気通路内で大きな燃焼が発生
+R2	RESULT Arg1:T7 Arg2:T4	
+R4	RESULT Arg1:T2 Arg2:T4	
+R5	REASON Arg1:T11 Arg2:T4	
+R6	RESULT Arg1:T11 Arg2:T12	
+R7	REASON Arg1:T13 Arg2:T12	
+R8	RESULT Arg1:T13 Arg2:T14	
+R9	REASON Arg1:T15 Arg2:T14	
+R10	RESULT Arg1:T15 Arg2:T16	
+R11	REASON Arg1:T17 Arg2:T16	
+R12	RESULT Arg1:T17 Arg2:T18	
+R13	REASON Arg1:T19 Arg2:T18	
+R14	RESULT Arg1:T19 Arg2:T22	
+R15	CONDITION Arg1:T21 Arg2:T20	
+R16	RESULT Arg1:T21 Arg2:T22	
+T6	Argument 47 75	エンジン高負荷領域でクイックシフターを使用しシフトアップ
+R18	CONDITION Arg1:T7 Arg2:T6	

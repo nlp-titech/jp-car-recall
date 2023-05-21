@@ -11,12 +11,11 @@ T10	Parts 167 171	エンジン
 R1	Coreference Arg1:T2 Arg2:T1	
 R2	Contact Arg1:T2 Arg2:T3	
 R3	Coreference Arg1:T4 Arg2:T2	
-R4	Part-Whole Arg1:T4 Arg2:T5	
 R5	Part-Whole Arg1:T3 Arg2:T5	
 R6	Coreference Arg1:T6 Arg2:T4	
 R7	Coreference Arg1:T7 Arg2:T3	
 R8	Connect Arg1:T8 Arg2:T7	
-R9	Connect Arg1:T9 Arg2:T8	
+R9	Contact Arg1:T9 Arg2:T8	
 R10	Connect Arg1:T9 Arg2:T10	
 R11	Connect Arg1:T8 Arg2:T10	
 R12	Part-Whole Arg1:T8 Arg2:T5	

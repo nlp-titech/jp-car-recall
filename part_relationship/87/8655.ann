@@ -9,3 +9,4 @@ R2	Connect Arg1:T1 Arg2:T5
 R3	Connect Arg1:T1 Arg2:T2	
 R4	Connect Arg1:T2 Arg2:T3	
 R5	Connect Arg1:T5 Arg2:T6	
+R6	Connect Arg1:T3 Arg2:T5	

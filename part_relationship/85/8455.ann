@@ -1,8 +1,7 @@
 T1	Parts 0 10	フロントサイドメンバ
-T2	Parts 32 37	車体パネル
 T3	Parts 75 81	サイドメンバ
 T4	Parts 111 113	車体
-R1	Contact Arg1:T2 Arg2:T1	
 R2	Coreference Arg1:T3 Arg2:T1	
-R3	Part-Whole Arg1:T2 Arg2:T4	
-R4	Part-Whole Arg1:T3 Arg2:T4	
+T2	Parts 32 34	車体
+R1	Contact Arg1:T1 Arg2:T2	
+R3	Coreference Arg1:T2 Arg2:T4	

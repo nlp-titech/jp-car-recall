@@ -1,14 +1,8 @@
 T1	Parts 0 13	カーテンエアバッグユニット
 T2	Parts 33 45	インフレータ（膨張装置）
 T3	Parts 47 57	エアバッグクッション
-T4	Parts 63 66	ノズル
-T5	Parts 85 88	ノズル
 T6	Parts 93 98	エアバッグ
 R1	Part-Whole Arg1:T2 Arg2:T1	
 R2	Part-Whole Arg1:T3 Arg2:T1	
-R3	Part-Whole Arg1:T4 Arg2:T1	
-R4	Contact Arg1:T2 Arg2:T4	
-R5	Contact Arg1:T4 Arg2:T3	
 R6	Connect Arg1:T2 Arg2:T3	
-R7	Coreference Arg1:T4 Arg2:T5	
 R8	Coreference Arg1:T6 Arg2:T1	

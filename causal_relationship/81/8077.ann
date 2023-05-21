@@ -1,0 +1,33 @@
+T1	Argument 7 34	ＰＴＣヒータのハーネスにおいて、ハーネス電線径が不適切
+T2	Connective 35 37	ため
+T3	Argument 38 54	ＰＴＣヒータが最大出力で連続作動
+T4	Connective 56 57	と
+T5	Argument 58 60	発熱
+T6	Connective 80 84	そのため
+T7	Argument 85 99	そのままの状態で使用を続ける
+T8	Connective 99 100	と
+T9	Argument 101 109	端子部が高温にな
+T10	Connective 109 110	り
+T11	Argument 110 117	コネクタが焼損
+T12	Connective 118 119	、
+T13	Argument 119 121	最悪
+T14	Connective 122 124	場合
+T15	Argument 125 132	車両火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T17	
+R6	RESULT Arg1:T6 Arg2:T9	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T15	
+R13	CONDITION Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+T16	Connective 60 63	により
+T17	Argument 63 72	コネクタ端子が変形
+R15	REASON Arg1:T16 Arg2:T5	
+R16	RESULT Arg1:T16 Arg2:T17	

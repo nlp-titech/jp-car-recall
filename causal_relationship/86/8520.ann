@@ -1,0 +1,30 @@
+T1	Argument 12 31	パワーステアリングホースの配索が不適切
+T2	Connective 32 33	為
+T3	Argument 34 55	パワーステアリングホースとタイロッドが干渉
+T4	Argument 65 96	ステアリングシリンダとボールエンドの取り付け角度の指示が不適切
+T5	Connective 97 99	ため
+T6	Argument 100 121	パワーステアリングホースとタイロッドが干渉
+T7	Connective 129 133	そのため
+T8	Argument 134 148	そのままの状態で使用を続ける
+T9	Connective 148 149	と
+T10	Argument 150 165	パワーステアリングホースが摩耗
+T11	Connective 166 167	、
+T12	Argument 167 169	最悪
+T13	Connective 170 172	場合
+T14	Argument 173 190	パワーステアリングホースに穴が開き
+T15	Connective 190 191	、
+T16	Argument 191 197	操舵力が増大
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T6	
+R5	REASON Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T10	
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T10	
+R9	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T14	
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T14	
+R13	REASON Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T16	

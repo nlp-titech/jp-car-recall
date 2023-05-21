@@ -1,0 +1,5 @@
+T1	Argument 0 46	ホイールローダのキャブ仕様機両側面ガラスにレンタル会社の管理番号のステッカーを販売会社で貼付
+T2	Connective 55 58	その為
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 59 87	道路運送車両法の保安基準第２９条（窓ガラス）に適合しない
+R2	RESULT Arg1:T2 Arg2:T3	

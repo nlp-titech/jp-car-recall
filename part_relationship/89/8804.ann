@@ -9,4 +9,9 @@ R1	Coreference Arg1:T1 Arg2:T6
 R2	Part-Whole Arg1:T5 Arg2:T1	
 R4	Part-Whole Arg1:T7 Arg2:T4	
 R3	Connect Arg1:T2 Arg2:T4	
-R5	Connect Arg1:T5 Arg2:T4	
+R6	Connect Arg1:T5 Arg2:T2	
+R7	Connect Arg1:T3 Arg2:T4	
+R8	Part-Whole Arg1:T3 Arg2:T6	
+R9	Connect Arg1:T2 Arg2:T3	
+R10	Part-Whole Arg1:T4 Arg2:T6	
+R11	Part-Whole Arg1:T2 Arg2:T6	

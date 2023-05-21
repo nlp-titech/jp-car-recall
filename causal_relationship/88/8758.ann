@@ -1,0 +1,5 @@
+T1	Argument 0 65	取扱説明書のチャイルドシート（以下ＣＲＳ）適合表において、本来記載すべきＩＳＯ／Ｒ３仕様のＣＲＳ搭載時に関する注記を記載していない
+T2	Connective 65 67	ため
+T3	Argument 68 82	保安基準第２２条に適合しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

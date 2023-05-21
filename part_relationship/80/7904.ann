@@ -7,6 +7,5 @@ T6	Parts 108 118	ハイブリッドシステム
 R1	Part-Whole Arg1:T2 Arg2:T1	
 R2	Part-Whole Arg1:T3 Arg2:T1	
 R3	Part-Whole Arg1:T4 Arg2:T3	
-R4	Connect Arg1:T2 Arg2:T3	
 R5	Coreference Arg1:T1 Arg2:T6	
 R6	Connect Arg1:T5 Arg2:T6	

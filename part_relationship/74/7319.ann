@@ -6,8 +6,7 @@ T5	Parts 93 96	リンク
 T6	Parts 97 103	サブフレーム
 T7	Parts 139 143	ハンドル
 R1	Part-Whole Arg1:T2 Arg2:T1	
-R2	Part-Whole Arg1:T3 Arg2:T1	
-R3	Contact Arg1:T2 Arg2:T3	
+R3	Connect Arg1:T2 Arg2:T3	
 R4	Contact Arg1:T2 Arg2:T4	
 R5	Contact Arg1:T3 Arg2:T4	
 R6	Part-Whole Arg1:T4 Arg2:T1	

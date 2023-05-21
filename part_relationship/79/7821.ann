@@ -1,7 +1,7 @@
 T1	Parts 0 4	電気配線
 T2	Parts 9 11	配線
 T3	Parts 25 37	フレームワイヤーハーネス
-T4	Parts 38 42	フレーム
+T4	Parts 38 46	フレーム周辺部品
 T5	Parts 64 66	車両
 T6	Parts 74 78	ハーネス
 T7	Parts 93 97	エンジン
@@ -11,4 +11,4 @@ R3	Coreference Arg1:T6 Arg2:T3
 R4	Part-Whole Arg1:T2 Arg2:T5	
 R5	Part-Whole Arg1:T4 Arg2:T5	
 R6	Part-Whole Arg1:T7 Arg2:T5	
-R7	Connect Arg1:T2 Arg2:T7	
+R7	Connect Arg1:T6 Arg2:T7	

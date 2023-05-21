@@ -1,0 +1,31 @@
+T1	Argument 12 23	電気配線の保護が不適切
+T2	Connective 24 26	ため
+T3	Argument 27 41	テールパイプから出る排気の熱
+T4	Connective 41 44	により
+R1	REASON Arg1:T4 Arg2:T3	
+T5	Argument 44 54	電気配線の一部が溶損
+R2	RESULT Arg1:T4 Arg2:T5	
+R3	REASON Arg1:T2 Arg2:T1	
+R4	RESULT Arg1:T2 Arg2:T5	
+T6	Connective 62 66	そのため
+R5	REASON Arg1:T6 Arg2:T5	
+T7	Argument 67 74	電気配線が短絡
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 76 78	最悪
+T9	Connective 79 81	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+T10	Argument 82 91	エンジン停止となり
+R8	RESULT Arg1:T9 Arg2:T10	
+T11	Connective 75 76	て
+R9	REASON Arg1:T11 Arg2:T7	
+R10	RESULT Arg1:T11 Arg2:T10	
+T12	Connective 106 107	。
+T13	Argument 91 100	再始動できなくなる
+R11	REASON Arg1:T12 Arg2:T10	
+R12	RESULT Arg1:T12 Arg2:T13	
+T15	Argument 110 120	短絡による火花が発生
+R15	RESULT Arg1:T6 Arg2:T15	
+T17	Connective 121 122	、
+T18	Argument 122 127	火災に至る
+R17	RESULT Arg1:T17 Arg2:T18	
+R13	REASON Arg1:T17 Arg2:T15	

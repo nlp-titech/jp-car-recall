@@ -4,6 +4,6 @@ T4	Parts 82 89	エンジンオイル
 T5	Parts 106 113	エンジンオイル
 T6	Parts 114 117	排気管
 R1	Coreference Arg1:T4 Arg2:T5	
-R2	Part-Whole Arg1:T1 Arg2:T3	
 R3	Contact Arg1:T1 Arg2:T4	
 R4	Connect Arg1:T1 Arg2:T6	
+R2	Part-Whole Arg1:T3 Arg2:T1	

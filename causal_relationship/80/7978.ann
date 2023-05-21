@@ -1,0 +1,43 @@
+T1	Argument 181 198	ブレーキペダルでの制動が不能に至る
+T2	Argument 175 177	最悪
+T3	Connective 178 180	場合
+R1	CONDITION Arg1:T3 Arg2:T2	
+R2	RESULT Arg1:T3 Arg2:T1	
+T4	Argument 158 169	ブレーキ倍力装置が破損
+T5	Connective 173 174	で
+R3	REASON Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T1	
+T6	Argument 150 157	更に腐食が進む
+T7	Connective 157 158	と
+R5	CONDITION Arg1:T7 Arg2:T6	
+R6	RESULT Arg1:T7 Arg2:T4	
+T8	Argument 0 34	ブレーキ倍力装置に装着されているラバースリーブにおいて、設計が不適切
+T9	Connective 35 37	ため
+R7	REASON Arg1:T9 Arg2:T8	
+T10	Argument 37 71	ブレーキ倍力装置のハウジングとの隙間に浸入した水分が長期間排出されず
+R8	RESULT Arg1:T9 Arg2:T10	
+T11	Argument 72 80	ハウジングが腐食
+T12	Connective 71 72	、
+R9	REASON Arg1:T12 Arg2:T10	
+R10	RESULT Arg1:T12 Arg2:T11	
+T13	Connective 88 92	そのため
+R11	REASON Arg1:T13 Arg2:T11	
+T14	Argument 99 109	ハウジングに穴が開く
+T15	Argument 93 98	腐食が進む
+T16	Connective 98 99	と
+R12	CONDITION Arg1:T16 Arg2:T15	
+R13	RESULT Arg1:T16 Arg2:T14	
+T17	Connective 111 112	で
+T18	Argument 112 120	装置の機能が低下
+R15	REASON Arg1:T17 Arg2:T14	
+R16	RESULT Arg1:T17 Arg2:T18	
+T19	Argument 122 134	必要なブレーキ踏力が増加
+T20	Argument 138 145	制動距離が延び
+T21	Connective 121 122	、
+R17	REASON Arg1:T21 Arg2:T18	
+R18	RESULT Arg1:T21 Arg2:T19	
+R19	RESULT Arg1:T21 Arg2:T20	
+R14	RESULT Arg1:T13 Arg2:T15	
+T22	Connective 149 150	。
+R20	REASON Arg1:T22 Arg2:T11	
+R21	RESULT Arg1:T22 Arg2:T6	

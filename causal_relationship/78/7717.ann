@@ -1,0 +1,9 @@
+T1	Argument 0 21	非常用信号用具において、備付け場所が不適切
+T2	Connective 22 24	ため
+T3	Argument 24 35	運転手が直接確認出来ず
+T4	Argument 36 46	保安基準を満たさない
+T5	Connective 35 36	、
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T5 Arg2:T3	
+R4	RESULT Arg1:T5 Arg2:T4	

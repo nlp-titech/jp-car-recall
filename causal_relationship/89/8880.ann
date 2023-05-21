@@ -1,0 +1,25 @@
+T1	Argument 0 23	フロントブレーキにおいて、製造工程管理が不適切
+T2	Connective 24 26	ため
+T3	Argument 27 47	ブレーキパッドのプレートへの接合が不十分
+T4	Connective 54 58	そのため
+T5	Argument 59 61	雨等
+T6	Connective 61 64	により
+T7	Argument 64 66	腐食
+T8	Connective 67 68	、
+T9	Argument 68 84	ブレーキパッドがプレートから剥離
+T10	Connective 85 86	て
+T11	Argument 87 89	最悪
+T12	Connective 90 92	場合
+T13	Argument 93 108	フロントブレーキが効かなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	

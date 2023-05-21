@@ -1,0 +1,25 @@
+T1	Argument 0 36	スライディングルーフのガラスパネルにおいて、製造工程での下地処理が不適切
+T2	Argument 40 48	接着強度が不十分
+T3	Connective 37 39	ため
+R1	REASON Arg1:T3 Arg2:T1	
+R2	RESULT Arg1:T3 Arg2:T2	
+T4	Connective 55 59	そのため
+R3	REASON Arg1:T4 Arg2:T2	
+T5	Argument 60 72	ガラスパネルに浮きが発生
+T6	Connective 73 74	、
+T7	Argument 74 76	最悪
+T8	Connective 77 79	場合
+T9	Argument 80 83	走行風
+T10	Connective 83 86	により
+T11	Argument 86 88	脱落
+R4	REASON Arg1:T10 Arg2:T9	
+R5	RESULT Arg1:T10 Arg2:T11	
+R6	CONDITION Arg1:T8 Arg2:T7	
+T12	Argument 91 101	後続車両の妨げになる
+T13	Connective 89 90	て
+R7	REASON Arg1:T13 Arg2:T11	
+R8	RESULT Arg1:T13 Arg2:T12	
+R9	RESULT Arg1:T4 Arg2:T5	
+R10	REASON Arg1:T6 Arg2:T5	
+R11	RESULT Arg1:T6 Arg2:T11	
+R12	RESULT Arg1:T8 Arg2:T11	

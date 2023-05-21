@@ -1,0 +1,9 @@
+T2	Connective 47 49	ため
+T3	Argument 50 67	Ｏリングが正しく組付けられていない
+T4	Connective 73 77	そのため
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+T1	Argument 7 46	トランスミッションにおいて、サクションフィルターカバーのＯリングの寸法が不適切
+R1	REASON Arg1:T2 Arg2:T1	
+T7	Argument 78 109	走行時等において当該カバーとＯリングのすき間からオイルが漏れる
+R4	RESULT Arg1:T4 Arg2:T7	

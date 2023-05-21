@@ -1,0 +1,23 @@
+T1	Argument 0 29	ブレーキプレッシャーユニットにおいて、製造工程管理が不適切
+T2	Connective 30 32	ため
+T3	Argument 33 47	ユニット内の溶接加工が不十分
+T4	Argument 49 56	溶接部分が破損
+T5	Connective 64 68	そのため
+T6	Argument 69 80	ブレーキアシストが失わ
+T10	Argument 87 149	急ブレーキ時にアンチロックブレーキシステム（ＡＢＳ）およびエレクトロニックスタビリゼーションコントロール（ＥＳＣ）が機能せず
+T11	Connective 149 150	、
+T12	Argument 150 152	最悪
+T13	Connective 153 155	場合
+T14	Argument 156 168	車両の制動距離が長くなる
+R2	RESULT Arg1:T13 Arg2:T14	
+R3	RESULT Arg1:T11 Arg2:T14	
+R4	REASON Arg1:T2 Arg2:T1	
+T15	Connective 47 48	で
+R5	REASON Arg1:T15 Arg2:T3	
+R6	RESULT Arg1:T15 Arg2:T4	
+R7	RESULT Arg1:T2 Arg2:T3	
+R8	REASON Arg1:T5 Arg2:T4	
+R9	RESULT Arg1:T5 Arg2:T6	
+R10	RESULT Arg1:T5 Arg2:T10	
+R11	REASON Arg1:T11 Arg2:T10	
+R12	CONDITION Arg1:T13 Arg2:T12	

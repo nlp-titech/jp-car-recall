@@ -1,0 +1,9 @@
+T1	Argument 0 27	方向指示器（側面）において、レンズ成形型の管理が不適切
+T2	Connective 28 30	ため
+T3	Argument 31 57	正規の協定規則認可番号とは異なる番号がレンズ面に記載
+T4	Connective 66 70	そのため
+T5	Argument 71 95	保安基準第４１条（方向指示器の基準）に適合しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

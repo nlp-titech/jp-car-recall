@@ -1,0 +1,25 @@
+T1	Argument 0 55	電動ブレーキブースタにおいて、内部構成部品である回転角センサのマグネットのモータシャフトへの組付け位置が不適切
+T2	Connective 56 58	ため
+T3	Argument 59 68	イグニッションオン
+T4	Connective 71 72	際
+T5	Argument 76 108	ブレーキペダルのストローク値をソフトウエアが誤認識する状態になる
+T6	Connective 114 118	そのため
+T7	Argument 119 127	バッテリが上がっ
+T9	Argument 130 147	クルーズコントロールがセットできず
+T11	Argument 147 160	ブレーキランプが点灯し続け
+T8	Argument 165 171	警告灯が点灯
+T12	Argument 173 187	ブレーキペダル踏力が重くなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T9	
+R11	RESULT Arg1:T6 Arg2:T12	
+T13	Connective 172 173	て
+R10	REASON Arg1:T13 Arg2:T8	
+R12	RESULT Arg1:T13 Arg2:T12	
+T10	Connective 162 163	、
+R8	REASON Arg1:T10 Arg2:T9	
+R9	RESULT Arg1:T10 Arg2:T11	

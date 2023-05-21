@@ -1,0 +1,21 @@
+T1	Argument 9 29	燃料供給パイプコネクタの製造管理が不適切
+T2	Connective 30 32	ため
+T3	Argument 33 50	燃料供給パイプコネクタの強度が不足
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 60 64	そのため
+T5	Argument 74 91	燃料供給パイプコネクタに亀裂が生じ
+T6	Connective 91 92	て
+T7	Argument 92 97	燃料が漏れ
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 98 100	最悪
+T9	Connective 101 103	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+T10	Argument 104 109	火災に至る
+R8	RESULT Arg1:T9 Arg2:T10	
+T11	Connective 97 98	、
+R9	REASON Arg1:T11 Arg2:T7	
+R10	RESULT Arg1:T11 Arg2:T10	

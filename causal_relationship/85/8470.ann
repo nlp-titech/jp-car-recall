@@ -1,0 +1,29 @@
+T1	Argument 7 38	冷凍機架装車において、冷凍機アイドルプーリ締結部の形状が不適切
+T2	Connective 39 41	ため
+T3	Argument 42 47	ベルト張力
+T4	Connective 47 50	により
+T5	Argument 50 70	アイドルプーリボルトに過大な応力がかかり
+T6	Argument 70 72	折損
+T7	Connective 79 80	。
+T8	Connective 80 84	そのため
+T9	Argument 92 103	冷凍機が作動しなくなり
+T10	Argument 104 106	最悪
+T11	Connective 103 104	、
+T12	Connective 107 109	場合
+T15	Argument 110 122	走行中プーリが路面に落下
+R1	REASON Arg1:T2 Arg2:T1	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	
+R7	REASON Arg1:T8 Arg2:T6	
+R8	RESULT Arg1:T8 Arg2:T13	
+R9	REASON Arg1:T11 Arg2:T9	
+R10	RESULT Arg1:T11 Arg2:T15	
+R11	CONDITION Arg1:T12 Arg2:T10	
+R12	RESULT Arg1:T12 Arg2:T15	
+R2	RESULT Arg1:T2 Arg2:T5	
+T13	Argument 85 91	ベルトが外れ
+T14	Connective 91 92	て
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T9	

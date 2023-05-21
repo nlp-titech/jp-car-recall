@@ -1,0 +1,37 @@
+T1	Argument 0 29	後輪のブレーキキャリパにおいて、製造設備の保守管理が不適切
+T2	Connective 30 32	ため
+T3	Argument 33 57	フローティングキャリパ固定ボルトの締付けが不十分
+T4	Connective 64 68	そのため
+T7	Argument 69 80	走行中に当該ボルトが緩
+T8	Argument 81 83	脱落
+T9	Connective 80 81	み
+T10	Connective 87 88	で
+T11	Argument 88 93	異音が発生
+T12	Argument 99 119	フローティングキャリパが固定されなくなる
+T13	Connective 121 122	で
+T14	Argument 122 131	ブレーキ配管が損傷
+T15	Connective 132 133	て
+T16	Argument 133 144	ブレーキ液の漏れが発生
+T17	Connective 146 147	と
+T18	Argument 148 154	警告灯が点灯
+T20	Argument 156 158	最悪
+T21	Connective 159 161	場合
+T22	Argument 162 169	制動性能が低下
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+R9	REASON Arg1:T10 Arg2:T8	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T14	
+R13	REASON Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T16	
+R15	CONDITION Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T18	
+R19	CONDITION Arg1:T21 Arg2:T20	
+R20	RESULT Arg1:T21 Arg2:T22	
+R17	RESULT Arg1:T17 Arg2:T22	
+R5	RESULT Arg1:T10 Arg2:T12	

@@ -15,3 +15,7 @@ R10	Connect Arg1:T4 Arg2:T8
 R4	Connect Arg1:T1 Arg2:T2	
 R11	Connect Arg1:T1 Arg2:T3	
 R12	Connect Arg1:T1 Arg2:T4	
+T9	Parts 0 2	灯火
+R1	Oneway-Coreference Arg1:T9 Arg2:T6	
+R2	Oneway-Coreference Arg1:T9 Arg2:T7	
+R3	Oneway-Coreference Arg1:T9 Arg2:T8	

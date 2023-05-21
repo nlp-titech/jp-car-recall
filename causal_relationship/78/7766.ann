@@ -1,0 +1,29 @@
+T1	Argument 0 25	リアのブレーキパイプにおいて、組み付け方法が不適切
+T2	Argument 29 55	ブレーキパイプがサポートに適切に組み付けられていない
+T3	Connective 26 28	ため
+R1	REASON Arg1:T3 Arg2:T1	
+R2	RESULT Arg1:T3 Arg2:T2	
+T4	Connective 61 65	そのため
+R3	REASON Arg1:T4 Arg2:T2	
+T6	Argument 94 104	ブレーキパイプが破損
+T7	Argument 105 116	ブレーキフルードが漏れ
+T8	Connective 104 105	し
+T9	Connective 93 94	、
+R6	RESULT Arg1:T9 Arg2:T6	
+R7	REASON Arg1:T8 Arg2:T6	
+R8	RESULT Arg1:T8 Arg2:T7	
+T10	Argument 118 120	最悪
+T11	Connective 121 123	場合
+T12	Argument 124 130	制動力が低下
+R9	CONDITION Arg1:T11 Arg2:T10	
+T13	Connective 116 117	て
+R10	REASON Arg1:T13 Arg2:T7	
+R11	RESULT Arg1:T13 Arg2:T12	
+T5	Argument 66 73	走行時の振動等
+T14	Connective 73 76	により
+T15	Argument 76 93	ブレーキパイプに過大な負荷がかかり
+R4	RESULT Arg1:T4 Arg2:T15	
+R5	REASON Arg1:T14 Arg2:T5	
+R12	RESULT Arg1:T14 Arg2:T15	
+R13	REASON Arg1:T9 Arg2:T15	
+R14	RESULT Arg1:T11 Arg2:T12	

@@ -1,0 +1,20 @@
+T1	Argument 0 41	ヘッドエアバッグ装置のインフレーター（膨張装置）において、製造時の湿度管理が不適切
+T2	Connective 42 44	ため
+T3	Argument 45 53	ガス発生剤が吸湿
+T4	Connective 64 68	そのため
+T7	Argument 69 98	ヘッドエアバッグ作動時にインフレーターの圧力が高くなりすぎ
+T8	Connective 98 99	て
+T11	Argument 119 137	ヘッドエアバッグが正常に作動しなかっ
+T12	Connective 140 141	て
+T13	Argument 142 147	乗員が負傷
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T11	
+R9	REASON Arg1:T12 Arg2:T11	
+R10	RESULT Arg1:T12 Arg2:T13	
+T5	Argument 100 116	インフレーターから点火装置が外れ
+R5	RESULT Arg1:T8 Arg2:T5	
+R6	REASON Arg1:T12 Arg2:T5	

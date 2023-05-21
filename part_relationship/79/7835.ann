@@ -6,5 +6,6 @@ T6	Parts 85 89	エンジン
 R1	Part-Whole Arg1:T2 Arg2:T1	
 R4	Connect Arg1:T5 Arg2:T6	
 R3	Connect Arg1:T4 Arg2:T5	
-R6	Connect Arg1:T4 Arg2:T6	
 R2	Connect Arg1:T2 Arg2:T4	
+R5	Connect Arg1:T4 Arg2:T6	
+R6	Connect Arg1:T1 Arg2:T6	

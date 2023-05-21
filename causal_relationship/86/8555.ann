@@ -1,0 +1,25 @@
+T1	Argument 19 53	原動機と油圧ポンプを接続するポンプカップリングの勘合部の構造が不適切
+T2	Connective 54 56	ため
+T3	Argument 57 63	勘合が不十分
+T4	Connective 70 74	そのため
+T5	Argument 75 80	走行振動等
+T6	Connective 80 83	により
+T7	Argument 84 92	スプラインが損傷
+T8	Connective 93 94	、
+T9	Argument 94 115	原動機の動力が油圧ポンプに伝達されなくなり
+T10	Connective 115 116	、
+T11	Argument 116 118	最悪
+T12	Connective 119 121	場合
+T13	Argument 122 130	走行できなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	

@@ -4,4 +4,4 @@ T3	Parts 85 93	バキュームポンプ
 T4	Parts 33 48	ハイドロリックブレーキブースト
 R1	Connect Arg1:T1 Arg2:T4	
 R2	Part-Whole Arg1:T3 Arg2:T4	
-R3	Connect Arg1:T4 Arg2:T2	
+R3	Connect Arg1:T2 Arg2:T1	

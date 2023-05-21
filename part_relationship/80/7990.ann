@@ -18,7 +18,7 @@ R4	Coreference Arg1:T5 Arg2:T6
 R5	Coreference Arg1:T7 Arg2:T8	
 R6	Connect Arg1:T1 Arg2:T2	
 R7	Connect Arg1:T4 Arg2:T5	
-R8	Connect Arg1:T6 Arg2:T7	
+R8	Contact Arg1:T6 Arg2:T7	
 R9	Part-Whole Arg1:T7 Arg2:T4	
 R10	Connect Arg1:T3 Arg2:T10	
 R11	Connect Arg1:T6 Arg2:T10	
@@ -26,7 +26,9 @@ R12	Connect Arg1:T9 Arg2:T10
 T14	Parts 180 183	電装品
 R13	Oneway-Coreference Arg1:T14 Arg2:T12	
 R14	Oneway-Coreference Arg1:T14 Arg2:T11	
-R15	Oneway-Coreference Arg1:T14 Arg2:T10	
+R15	Connect Arg1:T14 Arg2:T10	
 R16	Connect Arg1:T9 Arg2:T14	
 R17	Connect Arg1:T12 Arg2:T13	
 R18	Connect Arg1:T11 Arg2:T13	
+R19	Connect Arg1:T10 Arg2:T11	
+R20	Connect Arg1:T10 Arg2:T12	

@@ -1,0 +1,21 @@
+T1	Argument 0 33	後面方向指示器において、ＬＥＤソケット内の回路基板の耐水性が不十分
+T2	Connective 34 36	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 37 60	雨水等がソケットに滴下して当該基板に結露が発生
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 68 72	そのため
+T5	Argument 73 90	結露した状態での通電と乾燥を繰返す
+T6	Connective 90 91	と
+R3	CONDITION Arg1:T6 Arg2:T5	
+R4	REASON Arg1:T4 Arg2:T3	
+T7	Argument 92 103	基板上に短絡回路が形成
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	RESULT Arg1:T4 Arg2:T7	
+T8	Argument 106 108	最悪
+T9	Connective 109 111	場合
+T10	Argument 112 127	後面方向指示器が作動しなくなる
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T10	
+T11	Connective 105 106	、
+R9	REASON Arg1:T11 Arg2:T7	
+R10	RESULT Arg1:T11 Arg2:T10	

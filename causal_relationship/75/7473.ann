@@ -1,0 +1,21 @@
+T1	Argument 0 37	フォークリフトの荷役装置において、ミドルマストアッパービームの溶接が不適切
+T2	Connective 38 40	ため
+T3	Argument 41 46	強度が不足
+T4	Connective 56 60	そのため
+T5	Argument 61 84	当該部位への負荷の大きい荷役作業を繰り返し行う
+T6	Connective 84 85	と
+T7	Argument 86 94	当該溶接部が破損
+T8	Argument 96 114	インナーマストがミドルマストから外れ
+T9	Connective 95 96	、
+T10	Connective 114 115	、
+T11	Argument 115 126	荷役作業ができなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+R9	REASON Arg1:T10 Arg2:T8	
+R10	RESULT Arg1:T10 Arg2:T11	

@@ -1,0 +1,13 @@
+T1	Argument 7 84	エンジン制御コンピュータにおいて、令和３年９月１５日届出（届出番号５０１６）の改善措置のため変更したプログラムの排気温度センサ用故障判定プログラムが不適切
+T2	Connective 85 87	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T5	Argument 95 101	異常と誤判定
+R4	RESULT Arg1:T2 Arg2:T5	
+T6	Argument 102 117	エンジン警告灯（ＭＩＬ）が点灯
+T7	Connective 101 102	し
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	
+T3	Argument 88 94	センサ正常時
+T4	Connective 94 95	に
+R2	CONDITION Arg1:T4 Arg2:T3	
+R3	RESULT Arg1:T4 Arg2:T5	

@@ -3,3 +3,4 @@ T2	Parts 37 48	コントロールモジュール
 T3	Parts 70 73	警告灯
 T4	Parts 129 133	エンジン
 R1	Connect Arg1:T1 Arg2:T3	
+R2	Connect Arg1:T1 Arg2:T2	

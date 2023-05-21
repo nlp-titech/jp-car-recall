@@ -1,0 +1,13 @@
+T1	Argument 5 25	クランクケースにおいて、製造指示が不適切
+T2	Connective 26 28	ため
+T3	Argument 29 37	微細な巣穴が生じ
+T4	Connective 46 50	そのため
+T5	Argument 51 61	エンジンオイルが漏れ
+T6	Connective 61 62	、
+T7	Argument 62 79	オイルレベル低下を示す警告灯が点灯
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

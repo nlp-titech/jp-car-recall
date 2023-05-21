@@ -2,6 +2,6 @@ T1	Parts 0 7	後部座席ベルト
 T2	Parts 86 92	シートベルト
 T3	Parts 42 47	スプリング
 T4	Parts 71 76	スプリング
-R1	Part-Whole Arg1:T3 Arg2:T1	
 R2	Coreference Arg1:T3 Arg2:T4	
 R3	Coreference Arg1:T1 Arg2:T2	
+R1	Part-Whole Arg1:T3 Arg2:T1	

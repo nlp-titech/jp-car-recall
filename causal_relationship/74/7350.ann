@@ -1,0 +1,40 @@
+T1	Argument 9 30	減速時のクランクケース内の内圧設計が不適切
+T2	Connective 31 33	ため
+T3	Argument 34 62	減速時のシリンダー内圧がクランクケース内圧よりも低くなり
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 62 63	、
+T5	Argument 63 88	エンジンオイルを含んだブローバイガスが燃焼室に逆流
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 96 100	そのため
+T7	Argument 101 116	ピストンに多量のカーボンが堆積
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 124 141	排気バルブとバルブシート間に挟まり
+T9	Connective 122 123	と
+R7	REASON Arg1:T9 Arg2:T20	
+R8	RESULT Arg1:T9 Arg2:T8	
+T10	Argument 142 152	高温の燃焼ガスが漏れ
+T11	Connective 141 142	、
+R9	REASON Arg1:T11 Arg2:T8	
+R10	RESULT Arg1:T11 Arg2:T10	
+T12	Argument 153 161	排気バルブが溶損
+T13	Connective 152 153	、
+R11	REASON Arg1:T13 Arg2:T10	
+R12	RESULT Arg1:T13 Arg2:T12	
+T14	Connective 162 163	て
+T15	Argument 170 180	走行中に警告灯が点灯
+T16	Argument 182 192	エンジンの出力が低下
+T17	Argument 164 166	最悪
+T18	Connective 167 169	場合
+R13	CONDITION Arg1:T18 Arg2:T17	
+R14	RESULT Arg1:T18 Arg2:T15	
+R15	RESULT Arg1:T18 Arg2:T16	
+R16	REASON Arg1:T14 Arg2:T12	
+R17	RESULT Arg1:T14 Arg2:T15	
+R18	RESULT Arg1:T14 Arg2:T16	
+T19	Connective 117 118	て
+T20	Argument 118 120	剥離
+R19	REASON Arg1:T19 Arg2:T7	
+R20	RESULT Arg1:T19 Arg2:T20	

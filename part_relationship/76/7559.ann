@@ -3,3 +3,5 @@ T2	Parts 7 11	スタータ
 T3	Parts 68 72	スタータ
 R1	Part-Whole Arg1:T2 Arg2:T1	
 R2	Coreference Arg1:T2 Arg2:T3	
+T4	Parts 36 42	ブラシホルダ
+R3	Part-Whole Arg1:T4 Arg2:T2	

@@ -1,0 +1,29 @@
+T1	Argument 16 33	シリンダヘッドカバーの形状が不適切
+T2	Connective 34 36	ため
+T3	Argument 37 56	インジェクタオイルシール部に雨水が滞留
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 64 68	そのため
+T5	Argument 69 78	オイルシールが膨張
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Connective 88 89	、
+T7	Argument 89 103	そのままの状態で使用を続ける
+T8	Connective 103 104	と
+T9	Argument 105 115	エンジンオイルが漏れ
+T10	Argument 122 129	エンジンが損傷
+T11	Argument 116 118	最悪
+T12	Connective 119 121	場合
+T13	Connective 115 116	、
+R5	CONDITION Arg1:T12 Arg2:T11	
+R6	RESULT Arg1:T12 Arg2:T10	
+R7	REASON Arg1:T13 Arg2:T9	
+R8	RESULT Arg1:T13 Arg2:T10	
+R11	CONDITION Arg1:T8 Arg2:T7	
+R12	RESULT Arg1:T8 Arg2:T9	
+T14	Connective 79 80	て
+T15	Argument 80 87	シール性が低下
+R9	REASON Arg1:T14 Arg2:T5	
+R13	RESULT Arg1:T14 Arg2:T15	
+R10	REASON Arg1:T6 Arg2:T15	
+R14	RESULT Arg1:T6 Arg2:T9	

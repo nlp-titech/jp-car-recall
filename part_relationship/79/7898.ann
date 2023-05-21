@@ -3,3 +3,5 @@ T2	Parts 13 21	モジュールカバー
 T3	Parts 64 69	エアバッグ
 R1	Contact Arg1:T2 Arg2:T1	
 R2	Coreference Arg1:T3 Arg2:T1	
+T4	Parts 22 31	ブランドエンブレム
+R3	Part-Whole Arg1:T4 Arg2:T2	

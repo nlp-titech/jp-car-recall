@@ -3,7 +3,8 @@ T2	Parts 9 14	燃料ホース
 T3	Parts 15 18	継ぎ手
 T4	Parts 51 55	エンジン
 T5	Parts 81 83	燃料
-R1	Part-Whole Arg1:T2 Arg2:T1	
+R1	Contact Arg1:T2 Arg2:T1	
 R2	Contact Arg1:T3 Arg2:T2	
 R3	Coreference Arg1:T4 Arg2:T1	
-R4	Part-Whole Arg1:T5 Arg2:T4	
+R4	Contact Arg1:T5 Arg2:T4	
+R5	Contact Arg1:T2 Arg2:T5	

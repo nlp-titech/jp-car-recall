@@ -1,0 +1,23 @@
+T1	Argument 0 29	左右サイドエアバッグセンサ取付ナットの締付作業指示が不適切
+T2	Connective 30 32	ため
+T3	Argument 33 52	当該ナットが適切に締め付けられていない
+T4	Connective 58 62	そのため
+T5	Argument 72 80	当該ナットが緩み
+T6	Connective 80 81	、
+T8	Argument 63 68	走行振動等
+T9	Connective 68 71	により
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T9 Arg2:T8	
+R6	RESULT Arg1:T9 Arg2:T5	
+T7	Argument 81 92	エアバッグ警告灯の点灯
+R7	REASON Arg1:T6 Arg2:T5	
+T10	Connective 114 115	、
+T11	Argument 115 124	乗員が保護できない
+R10	RESULT Arg1:T10 Arg2:T11	
+R8	RESULT Arg1:T6 Arg2:T7	
+T14	Argument 94 114	衝突時にサイドエアバッグが適切に作動せず
+R12	RESULT Arg1:T6 Arg2:T14	
+R13	REASON Arg1:T10 Arg2:T14	

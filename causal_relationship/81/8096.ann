@@ -1,0 +1,31 @@
+T1	Argument 9 67	マスターシリンダーのブレーキブースター側に装着されている油圧シール部からブレーキフルードがブレーキブースター内に漏れ
+T2	Connective 67 68	、
+T3	Argument 68 91	ブレーキの一次回路のブレーキフルードがなくなっ
+T4	Connective 92 94	場合
+T5	Argument 95 108	制動力は二次回路のみで作動
+T8	Argument 121 150	その状態でブレーキリザーバータンクのキャップを強く締めすぎ
+T9	Connective 153 154	と
+T10	Argument 155 173	ブレーキリザーバータンクの換気が減少
+T11	Argument 175 185	タンク内に負圧が発生
+T12	Connective 186 187	、
+T13	Argument 187 221	ブレーキの二次回路のブレーキフルードがブレーキリザーバータンクに戻る
+T14	Connective 227 228	、
+T15	Argument 228 230	最悪
+T16	Connective 231 233	場合
+T17	Argument 234 245	ブレーキが効かなくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T10	
+T18	Connective 174 175	て
+R9	REASON Arg1:T18 Arg2:T10	
+R10	RESULT Arg1:T18 Arg2:T11	
+R11	REASON Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T17	
+R15	CONDITION Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T17	
+R5	RESULT Arg1:T4 Arg2:T10	

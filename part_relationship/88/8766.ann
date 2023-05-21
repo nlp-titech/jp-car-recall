@@ -7,5 +7,5 @@ T6	Parts 88 93	燃料ポンプ
 R1	Coreference Arg1:T1 Arg2:T6	
 R2	Coreference Arg1:T2 Arg2:T4	
 R3	Part-Whole Arg1:T2 Arg2:T1	
-R4	Part-Whole Arg1:T5 Arg2:T6	
 R5	Contact Arg1:T2 Arg2:T3	
+R4	Part-Whole Arg1:T5 Arg2:T1	

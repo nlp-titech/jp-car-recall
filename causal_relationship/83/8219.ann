@@ -1,0 +1,33 @@
+T1	Argument 8 35	燃料ポンプにおいて、ポンプ内部の永久磁石の選定が不適切
+T4	Argument 39 48	低温時に減磁が発生
+T5	Connective 36 38	ため
+R3	REASON Arg1:T5 Arg2:T1	
+R4	RESULT Arg1:T5 Arg2:T4	
+T6	Argument 50 64	モータが高回転・高電流となり
+T7	Argument 64 76	モーターブラシが異常摩耗
+T8	Connective 83 84	。
+T9	Argument 89 96	接点不良が生じ
+R5	REASON Arg1:T8 Arg2:T6	
+R6	RESULT Arg1:T8 Arg2:T7	
+T10	Argument 97 110	燃料ポンプが作動不良となり
+T11	Connective 96 97	、
+R7	REASON Arg1:T11 Arg2:T9	
+T12	Connective 84 88	そのため
+R8	REASON Arg1:T12 Arg2:T7	
+R9	RESULT Arg1:T12 Arg2:T9	
+T13	Argument 111 113	最悪
+T14	Connective 114 116	場合
+R10	CONDITION Arg1:T14 Arg2:T13	
+T15	Argument 117 128	走行中にエンジンが停止
+R11	RESULT Arg1:T14 Arg2:T15	
+T16	Argument 130 139	再始動できなくなる
+T17	Connective 129 130	、
+R12	REASON Arg1:T17 Arg2:T15	
+R13	RESULT Arg1:T17 Arg2:T16	
+T18	Connective 110 111	、
+R14	REASON Arg1:T18 Arg2:T10	
+R15	RESULT Arg1:T18 Arg2:T15	
+T19	Connective 49 50	、
+R16	REASON Arg1:T19 Arg2:T4	
+R17	RESULT Arg1:T19 Arg2:T6	
+R18	RESULT Arg1:T11 Arg2:T10	

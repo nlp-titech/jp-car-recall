@@ -1,0 +1,13 @@
+T1	Argument 0 37	運転者席用エアバッグのインフレーター（膨張装置）において、吸湿防止が不適切
+T2	Connective 38 40	ため
+T3	Argument 41 49	ガス発生剤が吸湿
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 57 61	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 67 82	ガス発生剤が吸湿や乾燥を繰返し
+T6	Connective 83 87	場合など
+R4	CONDITION Arg1:T6 Arg2:T5	
+T9	Argument 88 105	エアバッグ作動時に正常に展開しない
+R7	RESULT Arg1:T6 Arg2:T9	
+R8	RESULT Arg1:T4 Arg2:T9	

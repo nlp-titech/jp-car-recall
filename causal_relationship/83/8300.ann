@@ -1,0 +1,35 @@
+T1	Argument 8 29	エンジンハーネスにおいて、配策指示が不適切
+T2	Connective 30 32	ため
+T3	Argument 33 56	当該ハーネスとエンジンマウントブラケットが干渉
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 66 70	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 71 85	そのままの状態で使用を続ける
+T6	Connective 85 86	と
+R4	CONDITION Arg1:T6 Arg2:T5	
+T7	Argument 87 90	振動等
+T8	Connective 90 93	により
+R5	REASON Arg1:T8 Arg2:T7	
+T9	Argument 93 123	ハーネス内の電線を保護するコルゲートチューブのすり割りが開き
+R6	RESULT Arg1:T4 Arg2:T9	
+R7	RESULT Arg1:T6 Arg2:T9	
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 124 146	電線の被膜がエンジンマウントブラケットと接触
+T11	Connective 123 124	、
+R9	REASON Arg1:T11 Arg2:T9	
+R10	RESULT Arg1:T11 Arg2:T10	
+T12	Argument 148 150	最悪
+T13	Connective 151 153	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+T14	Argument 154 159	配線が損傷
+R12	RESULT Arg1:T13 Arg2:T14	
+T15	Connective 147 148	、
+R13	REASON Arg1:T15 Arg2:T10	
+R14	RESULT Arg1:T15 Arg2:T14	
+T16	Argument 160 167	エンジンが停止
+T17	Argument 168 179	前照灯が不点灯等に至る
+T18	Connective 159 160	し
+R15	REASON Arg1:T18 Arg2:T14	
+R16	RESULT Arg1:T18 Arg2:T16	
+R17	RESULT Arg1:T18 Arg2:T17	

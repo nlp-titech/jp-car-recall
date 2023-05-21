@@ -1,0 +1,33 @@
+T1	Argument 23 51	エンジン制御コンピュータの燃料噴射制御プログラムが不適切
+T2	Connective 52 54	ため
+T3	Argument 55 70	スロットルを素早く僅かに開ける
+T4	Connective 70 71	と
+T5	Argument 72 96	インジェクタによる燃料噴射量を正しく制御できない
+T8	Argument 105 139	自動変速機制御コンピュータの発進時クラッチ油圧制御プログラムが不適切
+T9	Connective 140 142	ため
+T10	Argument 143 156	発進時のクラッチ油圧が高い
+T11	Connective 162 166	そのため
+T12	Argument 167 181	燃焼に必要な燃料噴射量が不足
+T13	Connective 183 184	際
+T14	Argument 185 195	負荷トルクが高くなり
+T15	Connective 195 196	、
+T16	Argument 196 198	最悪
+T18	Connective 199 201	場合
+T20	Argument 202 210	発進時にエンスト
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R7	REASON Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T9 Arg2:T10	
+R9	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T14	
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T14	
+R13	REASON Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T20	
+R5	RESULT Arg1:T18 Arg2:T20	
+R15	CONDITION Arg1:T18 Arg2:T16	
+T6	Connective 101 102	。
+R16	REASON Arg1:T6 Arg2:T5	
+R17	RESULT Arg1:T6 Arg2:T12	

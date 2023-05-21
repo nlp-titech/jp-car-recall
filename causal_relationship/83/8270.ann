@@ -1,0 +1,37 @@
+T2	Connective 36 38	ため
+T3	Argument 39 44	走行振動等
+T4	Connective 44 47	により
+R2	REASON Arg1:T4 Arg2:T3	
+T5	Argument 47 53	ボルトが緩み
+R3	RESULT Arg1:T2 Arg2:T5	
+T6	Argument 54 62	構成部品がガタつ
+T7	Connective 53 54	、
+R4	REASON Arg1:T7 Arg2:T5	
+R5	RESULT Arg1:T7 Arg2:T6	
+T8	Argument 77 91	そのままの状態で使用を続ける
+T9	Connective 91 92	と
+R6	CONDITION Arg1:T9 Arg2:T8	
+T10	Argument 93 95	最悪
+T11	Connective 96 98	場合
+R7	CONDITION Arg1:T11 Arg2:T10	
+T12	Argument 99 105	ボルトが抜け
+T13	Connective 76 77	。
+T14	Argument 63 68	異音が発生
+R10	RESULT Arg1:T13 Arg2:T12	
+R11	RESULT Arg1:T9 Arg2:T12	
+R12	RESULT Arg1:T11 Arg2:T12	
+T15	Connective 105 106	て
+T16	Argument 106 111	ハブに干渉
+R13	REASON Arg1:T15 Arg2:T12	
+R14	RESULT Arg1:T15 Arg2:T16	
+T17	Connective 111 112	し
+R15	REASON Arg1:T17 Arg2:T16	
+T18	Argument 112 120	ホイールがロック
+R16	RESULT Arg1:T17 Arg2:T18	
+R17	RESULT Arg1:T4 Arg2:T5	
+T1	Argument 0 35	後輪のアクスルにおいて、ハブを固定するアクスルボルトの締結作業が不適切
+R1	REASON Arg1:T2 Arg2:T1	
+T19	Connective 62 63	き
+R8	REASON Arg1:T19 Arg2:T6	
+R9	RESULT Arg1:T19 Arg2:T14	
+R18	REASON Arg1:T13 Arg2:T5	

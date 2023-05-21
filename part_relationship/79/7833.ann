@@ -5,5 +5,7 @@ T4	Parts 62 65	アーム
 T6	Parts 95 99	ハンドル
 R1	Part-Whole Arg1:T2 Arg2:T1	
 R2	Contact Arg1:T3 Arg2:T2	
-R3	Part-Whole Arg1:T3 Arg2:T1	
 R4	Coreference Arg1:T4 Arg2:T2	
+T5	Parts 69 71	ネジ
+R3	Contact Arg1:T4 Arg2:T5	
+R5	Contact Arg1:T3 Arg2:T5	

@@ -1,0 +1,11 @@
+T1	Argument 0 22	インストルメントパネルのソフトウェアが不適切
+T2	Argument 26 58	後席シートベルト非装着警告表示がイグニッションオン時に作動しない
+T3	Connective 23 25	ため
+T5	Argument 61 76	走行中に後席シートベルトを外し
+T6	Connective 77 79	とき
+T7	Argument 80 103	シートベルト非装着警告表示と警告音が作動しない
+R1	REASON Arg1:T3 Arg2:T1	
+R3	RESULT Arg1:T3 Arg2:T7	
+R4	CONDITION Arg1:T6 Arg2:T5	
+R5	RESULT Arg1:T6 Arg2:T7	
+R2	RESULT Arg1:T3 Arg2:T2	

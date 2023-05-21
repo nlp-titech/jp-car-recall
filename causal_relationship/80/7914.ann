@@ -1,0 +1,9 @@
+T1	Argument 0 29	エンジンコントロールユニット（ＤＭＥ）のプログラムが不適切
+T2	Connective 30 32	ため
+T3	Argument 33 58	Ｏ２センサーからの情報を適切に評価することができず
+T4	Connective 58 59	、
+T5	Argument 59 91	エンジン警告灯を誤って点灯させる、又は、異常があるのに点灯しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

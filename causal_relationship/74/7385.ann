@@ -1,0 +1,9 @@
+T1	Argument 0 41	エンジンコントールユニットにおいて、アップデート用ソフトウエアのプログラムが不適切
+T2	Connective 42 44	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 45 57	空燃比が正しく制御されず
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 57 58	、
+T5	Argument 58 73	排気ガス規制値を満足しなくなる
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

@@ -1,0 +1,25 @@
+T1	Argument 1 36	アクセル及びブレーキのサポートブラケットにおいて、締め付け作業が不適切
+T2	Connective 37 39	ため
+T3	Argument 40 50	締め付けトルクが不足
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 61 65	そのため
+T5	Argument 74 82	当該ナットが緩み
+R3	REASON Arg1:T4 Arg2:T3	
+T6	Argument 83 85	最悪
+T7	Connective 86 88	場合
+R5	CONDITION Arg1:T7 Arg2:T6	
+T8	Argument 89 95	ナットが外れ
+T9	Connective 95 96	て
+T10	Connective 82 83	、
+R6	REASON Arg1:T10 Arg2:T5	
+R7	RESULT Arg1:T10 Arg2:T8	
+R8	RESULT Arg1:T7 Arg2:T8	
+R9	REASON Arg1:T9 Arg2:T8	
+T11	Argument 96 116	アクセルおよびブレーキ操作ができなくなる
+R10	RESULT Arg1:T9 Arg2:T11	
+T12	Argument 66 71	走行振動等
+T13	Connective 71 74	により
+R4	RESULT Arg1:T4 Arg2:T5	
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T5	

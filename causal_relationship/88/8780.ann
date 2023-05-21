@@ -1,0 +1,17 @@
+T1	Argument 47 55	ガス発生剤が劣化
+T2	Connective 63 67	そのため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 68 88	エアバッグ展開時にインフレータ容器が破損
+R2	RESULT Arg1:T2 Arg2:T3	
+T6	Connective 89 90	て
+T7	Argument 90 97	構成部品が飛散
+R5	REASON Arg1:T6 Arg2:T3	
+R6	RESULT Arg1:T6 Arg2:T7	
+T8	Argument 99 104	乗員が負傷
+T9	Connective 98 99	、
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+T10	Argument 0 45	助手席用エアバッグのインフレータ（膨張装置）において、高い湿度の環境下で温度変化を繰り返す
+T11	Connective 45 46	と
+R9	RESULT Arg1:T11 Arg2:T1	
+R10	CONDITION Arg1:T11 Arg2:T10	

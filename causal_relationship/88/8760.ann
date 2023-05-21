@@ -1,0 +1,29 @@
+T1	Argument 0 38	ルーフレールカバーにおいて、取付部のルーフレールカバークリップの材質が不適切
+T2	Connective 39 41	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 49 59	取付部クリップが破損
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 42 48	冷熱の繰返し
+T5	Connective 48 49	で
+R3	REASON Arg1:T5 Arg2:T4	
+R4	RESULT Arg1:T5 Arg2:T3	
+T6	Argument 60 64	剥がれる
+T7	Connective 59 60	し
+R5	REASON Arg1:T7 Arg2:T3	
+R6	RESULT Arg1:T7 Arg2:T6	
+T8	Connective 70 74	そのため
+R7	REASON Arg1:T8 Arg2:T6	
+T9	Argument 75 83	浮きや異音が発生
+R8	RESULT Arg1:T8 Arg2:T9	
+T10	Argument 91 103	ルーフレールカバーが脱落
+T11	Connective 84 85	、
+R9	REASON Arg1:T11 Arg2:T9	
+R10	RESULT Arg1:T11 Arg2:T10	
+T12	Argument 85 87	最悪
+T13	Connective 88 90	場合
+R11	CONDITION Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T10	
+T14	Argument 105 113	他の交通を妨げる
+T15	Connective 104 105	、
+R13	REASON Arg1:T15 Arg2:T10	
+R14	RESULT Arg1:T15 Arg2:T14	

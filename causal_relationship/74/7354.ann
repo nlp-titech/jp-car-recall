@@ -1,0 +1,25 @@
+T1	Argument 0 33	運転者席および助手席用ドアロックにおいて、製造工程での管理が不適切
+T2	Connective 34 36	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 37 55	異音防止用ストッパゴムがずれて組付け
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 64 68	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 69 78	ドアの開閉を繰返す
+T6	Connective 78 79	と
+R4	CONDITION Arg1:T6 Arg2:T5	
+T7	Argument 80 98	当該ゴムがドアロック機構の作動を阻害
+R5	RESULT Arg1:T6 Arg2:T7	
+R6	RESULT Arg1:T4 Arg2:T7	
+T8	Connective 99 100	て
+T9	Argument 101 119	ドアを確実に閉じることができなくなり
+T10	Argument 120 122	最悪
+T11	Connective 123 125	場合
+T12	Argument 126 135	走行中にドアが開く
+R7	CONDITION Arg1:T11 Arg2:T10	
+R8	RESULT Arg1:T11 Arg2:T12	
+R9	REASON Arg1:T8 Arg2:T7	
+R10	RESULT Arg1:T8 Arg2:T9	
+T13	Connective 119 120	、
+R11	REASON Arg1:T13 Arg2:T9	
+R12	RESULT Arg1:T13 Arg2:T12	

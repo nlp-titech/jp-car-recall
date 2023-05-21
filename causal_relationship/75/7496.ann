@@ -1,0 +1,26 @@
+T1	Argument 11 38	駐車ブレーキ用エアプレッシャーセンサの製造工程が不適切
+T2	Connective 39 41	ため
+T3	Argument 42 61	当該センサ回路基板上に導電性異物が残存
+T4	Argument 62 64	短絡
+T5	Connective 61 62	し
+R1	REASON Arg1:T5 Arg2:T3	
+R2	RESULT Arg1:T5 Arg2:T4	
+T6	Connective 81 85	そのため
+T7	Argument 86 110	駐車ブレーキ作動表示ランプが誤点灯・不点灯になる
+T8	Argument 116 118	最悪
+T9	Connective 119 121	場合
+T10	Argument 122 133	当該表示ランプの誤点灯
+T11	Connective 133 136	により
+T14	Argument 137 156	駐車ブレーキ非作動状態で車両が動き出す
+R3	REASON Arg1:T2 Arg2:T1	
+R4	RESULT Arg1:T2 Arg2:T3	
+R5	REASON Arg1:T6 Arg2:T4	
+R6	RESULT Arg1:T6 Arg2:T7	
+R9	CONDITION Arg1:T9 Arg2:T8	
+R10	RESULT Arg1:T9 Arg2:T14	
+R11	REASON Arg1:T11 Arg2:T10	
+R12	RESULT Arg1:T11 Arg2:T14	
+T16	Argument 67 75	動作不良を起こす
+R15	RESULT Arg1:T5 Arg2:T16	
+R16	REASON Arg1:T6 Arg2:T16	
+R13	RESULT Arg1:T6 Arg2:T10	

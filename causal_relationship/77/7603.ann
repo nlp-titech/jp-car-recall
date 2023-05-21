@@ -1,0 +1,27 @@
+T1	Argument 0 38	緩衝装置のエアスプリングストラットにおいて、製造時に当該ストラットの加工不良
+T2	Connective 38 41	により
+T3	Argument 42 67	保持クリップを組み付ける溝が正しく加工されていない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 73 77	そのため
+T5	Argument 78 96	保持クリップが溝に確実に嵌っておらず
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 97 99	最悪
+T7	Connective 100 102	場合
+R5	CONDITION Arg1:T7 Arg2:T6	
+T8	Argument 103 112	当該クリップが外れ
+T9	Connective 96 97	、
+R6	REASON Arg1:T9 Arg2:T5	
+R7	RESULT Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T7 Arg2:T8	
+T10	Argument 113 128	エアスプリング内の空気が漏れる
+T11	Connective 130 133	により
+T12	Argument 134 140	警告灯が点灯
+T13	Argument 146 152	車高が下がる
+T14	Connective 112 113	、
+R9	REASON Arg1:T14 Arg2:T8	
+R10	RESULT Arg1:T14 Arg2:T10	
+R11	REASON Arg1:T11 Arg2:T10	
+R12	RESULT Arg1:T11 Arg2:T12	
+R13	RESULT Arg1:T11 Arg2:T13	

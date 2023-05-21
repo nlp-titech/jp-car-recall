@@ -1,0 +1,29 @@
+T1	Argument 0 29	電動パワーステアリング装置において、電気配線の配策が不適切
+T2	Connective 30 32	ため
+T3	Argument 33 62	当該配線がサスペンションフレームとアンダーパネルの間に挟ま
+T4	Connective 72 76	そのため
+T7	Argument 77 84	走行時の振動等
+T8	Connective 84 85	で
+T9	Argument 85 90	被覆が削れ
+T10	Argument 91 105	サスペンションフレームに短絡
+T11	Connective 90 91	、
+T12	Connective 109 110	で
+T13	Argument 110 116	警告灯が点灯
+T15	Argument 118 134	ステアリングのアシスト機能が失わ
+T17	Argument 136 138	最悪
+T18	Connective 139 141	場合
+T19	Argument 142 147	火災に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T9	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T11 Arg2:T9	
+R10	RESULT Arg1:T11 Arg2:T10	
+R11	REASON Arg1:T12 Arg2:T10	
+R12	RESULT Arg1:T12 Arg2:T13	
+R17	CONDITION Arg1:T18 Arg2:T17	
+R18	RESULT Arg1:T18 Arg2:T19	
+R5	RESULT Arg1:T12 Arg2:T15	
+R6	RESULT Arg1:T12 Arg2:T19	

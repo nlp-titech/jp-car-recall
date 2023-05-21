@@ -1,0 +1,13 @@
+T1	Argument 0 27	ドアインナーリリースハンドルにおいて、組付作業が不適切
+T2	Connective 28 30	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 31 53	ケーブルの接続ピンが正しく組み込まれていない
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 59 63	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 64 85	当該ハンドルの操作力がドアラッチに伝わらず
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 86 105	ドアを内側から開けることができなくなる
+T7	Connective 85 86	、
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	

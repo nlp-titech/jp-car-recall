@@ -1,0 +1,13 @@
+T1	Argument 0 32	燃料パイプにおいて、ＰＡ（ポリアクリレート）コーティングが不十分
+T2	Connective 33 35	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 45 50	亀裂が生じ
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Argument 36 42	フランジ加工
+T5	Connective 43 44	際
+T6	Connective 59 63	そのため
+R3	REASON Arg1:T6 Arg2:T3	
+T7	Argument 64 81	燃料パイプの接続部から燃料が漏れる
+R4	RESULT Arg1:T6 Arg2:T7	
+R5	CONDITION Arg1:T5 Arg2:T4	
+R6	RESULT Arg1:T5 Arg2:T3	

@@ -1,0 +1,28 @@
+T1	Argument 0 39	ＳＲＳ（乗員補助拘束装置）コントロールユニットにおいて、製造時の取付けが不適切
+T2	Connective 40 42	ため
+T3	Argument 43 54	確実に固定されていない
+T4	Connective 60 64	そのため
+T5	Argument 65 87	事故等の衝突時にエアバッグが適切に展開しない
+T6	Argument 116 126	突然エアバッグが展開
+T7	Argument 99 111	正しくない加速度値を検出
+T8	Connective 115 116	で
+R1	REASON Arg1:T8 Arg2:T7	
+R2	RESULT Arg1:T8 Arg2:T6	
+T9	Connective 127 128	、
+T10	Argument 128 130	最悪
+T11	Connective 131 133	場合
+T12	Argument 134 139	乗員が負傷
+R3	RESULT Arg1:T9 Arg2:T12	
+R4	REASON Arg1:T9 Arg2:T6	
+R5	REASON Arg1:T9 Arg2:T5	
+R6	REASON Arg1:T2 Arg2:T1	
+R7	RESULT Arg1:T2 Arg2:T3	
+R8	REASON Arg1:T4 Arg2:T3	
+R9	RESULT Arg1:T4 Arg2:T5	
+R11	CONDITION Arg1:T11 Arg2:T10	
+R12	RESULT Arg1:T11 Arg2:T12	
+T15	Argument 92 98	走行中の振動
+T16	Connective 98 99	で
+R15	REASON Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T7	
+R10	RESULT Arg1:T4 Arg2:T6	

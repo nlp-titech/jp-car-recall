@@ -3,3 +3,4 @@ T2	Parts 27 34	セルモジュール
 T3	Parts 56 63	バッテリー回路
 R1	Part-Whole Arg1:T2 Arg2:T1	
 R2	Part-Whole Arg1:T3 Arg2:T1	
+R3	Connect Arg1:T3 Arg2:T2	

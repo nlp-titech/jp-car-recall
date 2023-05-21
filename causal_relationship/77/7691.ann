@@ -1,0 +1,69 @@
+T1	Argument 12 29	フューエルポンプの取り付けが不適切
+T2	Connective 30 32	ため
+T3	Argument 33 51	レベルセンサーがフィードラインに干渉
+T4	Connective 59 63	そのため
+T5	Argument 64 78	燃料の残量が正しく測定できず
+T6	Connective 78 79	、
+T7	Argument 79 105	メーターパネルの燃料残量が実際の燃料残量より多く表示
+T8	Connective 108 110	場合
+T9	Argument 111 114	ガス欠
+T10	Argument 115 119	エンスト
+T11	Connective 114 115	し
+T12	Argument 142 171	エンジンコントロールユニット（ＤＭＥ）のプログラムが不適切
+T13	Connective 172 174	ため
+T14	Argument 175 183	燃料の圧力が低下
+T15	Connective 191 195	そのため
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	CONDITION Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T11 Arg2:T9	
+R10	RESULT Arg1:T11 Arg2:T10	
+T16	Argument 196 204	燃料の供給が不足
+T17	Connective 205 206	、
+T18	Argument 206 212	警告灯が点灯
+T19	Argument 215 217	最悪
+T20	Connective 218 220	場合
+T21	Argument 221 229	走行中にエンスト
+T22	Argument 240 271	燃料高圧ポンプとフランジを固定するボルトの締め付けトルクが不足
+T23	Connective 275 277	ため
+T24	Argument 278 297	当該ポンプが確実に取り付けられていない
+T25	Connective 303 307	そのため
+T26	Argument 308 312	走行振動
+T27	Connective 312 315	により
+T28	Argument 315 321	ボルトが緩み
+T29	Argument 322 328	燃料が漏れる
+T30	Argument 332 340	燃料の圧力が低下
+T31	Connective 341 342	、
+T32	Argument 342 344	最悪
+T33	Connective 345 347	場合
+T34	Argument 348 356	走行中にエンスト
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T14	
+R13	REASON Arg1:T15 Arg2:T14	
+R14	RESULT Arg1:T15 Arg2:T16	
+R15	REASON Arg1:T17 Arg2:T16	
+R16	RESULT Arg1:T17 Arg2:T18	
+R17	CONDITION Arg1:T20 Arg2:T19	
+R18	RESULT Arg1:T20 Arg2:T21	
+R19	RESULT Arg1:T17 Arg2:T21	
+R20	REASON Arg1:T23 Arg2:T22	
+R21	RESULT Arg1:T23 Arg2:T24	
+R22	REASON Arg1:T25 Arg2:T24	
+R23	RESULT Arg1:T25 Arg2:T28	
+R24	REASON Arg1:T27 Arg2:T26	
+R25	RESULT Arg1:T27 Arg2:T28	
+T35	Connective 321 322	、
+R26	REASON Arg1:T35 Arg2:T28	
+R27	RESULT Arg1:T35 Arg2:T29	
+R29	REASON Arg1:T31 Arg2:T30	
+R30	RESULT Arg1:T31 Arg2:T34	
+R31	CONDITION Arg1:T33 Arg2:T32	
+R32	RESULT Arg1:T33 Arg2:T34	
+T36	Connective 331 332	に
+R28	REASON Arg1:T36 Arg2:T29	
+R33	RESULT Arg1:T36 Arg2:T30	

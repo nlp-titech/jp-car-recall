@@ -1,0 +1,31 @@
+T1	Argument 0 25	エンジンのクーラントホースにおいて、耐圧強度が不足
+T2	Connective 29 31	ため
+T5	Argument 31 48	高負荷運転時に冷却回路の内圧が上昇
+T6	Connective 50 51	と
+T7	Argument 52 54	破損
+T8	Connective 62 66	そのため
+T9	Argument 67 73	冷却水が漏れ
+T10	Connective 73 74	て
+T11	Argument 74 80	警告灯が点灯
+T13	Argument 82 92	そのまま使用を続ける
+T14	Connective 92 93	と
+T15	Argument 93 103	オーバーヒートに至り
+T16	Connective 103 104	、
+T17	Argument 104 106	最悪
+T18	Connective 107 109	場合
+T19	Argument 110 119	エンジン破損に至る
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R13	CONDITION Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R15	REASON Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T19	
+R17	CONDITION Arg1:T18 Arg2:T17	
+R18	RESULT Arg1:T18 Arg2:T19	
+R11	RESULT Arg1:T10 Arg2:T15	

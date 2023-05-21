@@ -1,0 +1,9 @@
+T1	Argument 25 59	排気バーチカルテールパイプの内部構造及びＤＯＣマフラーの構造が不適切
+T2	Connective 60 62	ため
+T3	Argument 63 95	排気圧力が一酸化炭素発散防止装置の装置型式メーカの届出の値を超え
+T4	Connective 98 99	、
+T5	Argument 99 110	排出ガス規制適合しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

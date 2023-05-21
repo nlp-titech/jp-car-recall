@@ -1,0 +1,37 @@
+T1	Argument 12 57	助手席用エアバッグ作動時の開口部のカバーをダッシュボードと結合するネットの編み込みが不適切
+T2	Connective 58 60	ため
+T3	Argument 61 66	強度が不足
+T4	Connective 76 80	そのため
+T8	Connective 108 110	場合
+T9	Argument 111 114	衝突等
+T10	Connective 114 117	により
+T11	Argument 117 129	助手席用エアバッグが作動
+T12	Connective 131 132	際
+T13	Argument 133 151	当該カバーがダッシュボードから剥がれ
+T14	Connective 151 152	、
+T15	Argument 152 170	フロントウインドーにダメージを与える
+T16	Connective 172 173	、
+T17	Argument 173 175	最悪
+T18	Connective 176 178	場合
+T19	Argument 179 194	エアバッグの膨張が不完全となり
+T20	Connective 194 195	、
+T21	Argument 195 200	乗員が負傷
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T13	
+R8	RESULT Arg1:T8 Arg2:T13	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T11	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+R13	REASON Arg1:T14 Arg2:T13	
+R14	RESULT Arg1:T14 Arg2:T15	
+R15	REASON Arg1:T16 Arg2:T15	
+R16	RESULT Arg1:T16 Arg2:T19	
+R17	CONDITION Arg1:T18 Arg2:T17	
+R18	RESULT Arg1:T18 Arg2:T19	
+R19	REASON Arg1:T20 Arg2:T19	
+R20	RESULT Arg1:T20 Arg2:T21	
+T7	Argument 81 105	低温環境下（－１５℃以下）でダッシュボードが冷え
+R7	CONDITION Arg1:T8 Arg2:T7	

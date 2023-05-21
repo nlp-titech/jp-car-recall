@@ -1,0 +1,25 @@
+T1	Argument 0 26	低圧燃料ポンプにおいて、燃料成分に対する検証が不十分
+T2	Connective 27 29	ため
+T3	Argument 30 73	日本仕様の燃料に含まれる成分が低圧燃料ポンプのジェローター（金属製圧送ギア）部分に付着
+T5	Argument 75 77	堆積
+T6	Connective 85 89	そのため
+T7	Argument 90 99	堆積物が抵抗となっ
+T8	Connective 99 100	て
+T9	Argument 100 113	燃料ポンプが作動不良となり
+T10	Connective 113 114	、
+T11	Argument 114 116	最悪
+T12	Connective 117 119	場合
+T13	Argument 120 147	アイドリングストップからのエンジン再始動が出来なくなる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T10 Arg2:T9	
+R10	RESULT Arg1:T10 Arg2:T13	
+R11	CONDITION Arg1:T12 Arg2:T11	
+R12	RESULT Arg1:T12 Arg2:T13	
+T4	Connective 74 75	、
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

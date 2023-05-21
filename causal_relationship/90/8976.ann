@@ -1,0 +1,17 @@
+T1	Argument 0 24	樹脂製燃料タンクにおいて、溶着工程の管理が不適切
+T2	Connective 25 27	ため
+T3	Argument 28 40	接合面が溶込み不足となっ
+T4	Connective 49 53	そのため
+T5	Argument 54 63	タンクの内圧変化等
+T6	Connective 63 64	で
+T7	Argument 64 71	接合面が剥がれ
+T8	Connective 71 72	、
+T9	Argument 72 78	燃料が漏れる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R4	RESULT Arg1:T4 Arg2:T7	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

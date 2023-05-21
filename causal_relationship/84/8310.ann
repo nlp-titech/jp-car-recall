@@ -1,0 +1,26 @@
+T1	Argument 3 40	電動パワーステアリングコントロールユニットにおいて、制御プログラムが不適切
+T2	Connective 41 43	ため
+T5	Argument 44 73	運転支援システムの作動中に運転者がステアリングから手を離し
+T6	Connective 74 75	際
+T7	Argument 76 82	警告が出ない
+T8	Connective 88 92	そのため
+T9	Argument 93 114	車両を完全に停止させるシステムが作動しない
+T10	Argument 124 152	ステアリングシャフトブーツにおいて、取付作業指示が不適切
+T11	Connective 153 155	ため
+T12	Argument 188 194	警告が出ない
+T13	Connective 200 204	そのため
+T14	Argument 205 226	車両を完全に停止させるシステムが作動しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T7	
+R5	CONDITION Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+R8	RESULT Arg1:T8 Arg2:T9	
+R9	REASON Arg1:T11 Arg2:T10	
+R10	RESULT Arg1:T11 Arg2:T12	
+R11	REASON Arg1:T13 Arg2:T12	
+R12	RESULT Arg1:T13 Arg2:T14	
+T3	Argument 156 185	運転支援システムの作動中に運転者がステアリングから手を離し
+T4	Connective 186 188	際に
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T12	

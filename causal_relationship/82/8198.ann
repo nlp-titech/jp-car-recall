@@ -1,0 +1,23 @@
+T1	Argument 19 45	オルタネータプラス端子部の絶縁用ブッシュ形状が不適切
+T2	Connective 46 48	ため
+T3	Argument 49 79	融雪剤等を含んだ水分が当該端子部とオルタネータ本体の間に付着
+T4	Connective 81 82	と
+T5	Argument 82 87	漏電が発生
+T6	Connective 95 99	そのため
+T7	Argument 100 112	バッテリ充電警告灯が点灯
+T8	Argument 114 123	当該端子付近が焼損
+T9	Connective 127 128	で
+T10	Argument 128 135	充電不能となり
+T11	Connective 135 136	、
+T12	Argument 136 143	エンジンが停止
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	RESULT Arg1:T6 Arg2:T8	
+R8	REASON Arg1:T9 Arg2:T8	
+R9	RESULT Arg1:T9 Arg2:T10	
+R10	REASON Arg1:T11 Arg2:T10	
+R11	RESULT Arg1:T11 Arg2:T12	

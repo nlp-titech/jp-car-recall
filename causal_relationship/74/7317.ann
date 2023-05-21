@@ -1,0 +1,21 @@
+T1	Argument 0 44	ＡＢＳ（アンチロックブレーキシステム）モジュレータにおいて、グリス塗布設備の管理が不適切
+T2	Connective 45 47	ため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 48 72	リザーバピストンのＯリングへ過剰なグリス量が塗布
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 81 85	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 86 97	ブレーキ操作の繰り返し
+T6	Argument 100 120	アウトバルブへ移動したグリスに異物が付着
+T7	Connective 97 100	により
+R4	REASON Arg1:T7 Arg2:T5	
+R5	RESULT Arg1:T7 Arg2:T6	
+T8	Argument 122 130	逆止弁へ噛み込む
+T9	Connective 130 131	と
+T10	Connective 121 122	、
+T11	Argument 132 142	制動停止距離が伸びる
+R6	RESULT Arg1:T9 Arg2:T11	
+R7	CONDITION Arg1:T9 Arg2:T8	
+R8	RESULT Arg1:T4 Arg2:T6	
+R9	REASON Arg1:T10 Arg2:T6	
+R10	RESULT Arg1:T10 Arg2:T8	

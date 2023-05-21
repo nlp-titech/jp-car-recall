@@ -1,0 +1,5 @@
+T1	Connective 52 56	そのため
+T2	Argument 57 92	点検整備方式で定めたサービスブレーキ室内部の定期交換部品を交換できない
+R1	RESULT Arg1:T1 Arg2:T2	
+T3	Argument 16 44	サービスブレーキ室を分解できないブレーキチャンバーを装着
+R2	REASON Arg1:T1 Arg2:T3	

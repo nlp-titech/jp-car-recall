@@ -1,0 +1,5 @@
+T1	Argument 7 33	リヤコンビネーションランプにおいて、取付指示が不適切
+T2	Connective 34 36	ため
+T3	Argument 37 93	保安基準第３７条（尾灯の基準）又は保安基準第３７条（尾灯の基準）及び保安基準第３９条（制動灯の基準）に適合しない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	

@@ -1,0 +1,17 @@
+T1	Argument 0 38	非常点滅表示灯（ハザードランプ）の電気回路において、ヒューズ容量選定が不適切
+T2	Connective 39 41	ため
+T3	Argument 42 55	非常点滅表示灯を頻繁に使用
+T4	Connective 57 59	場合
+T5	Argument 60 76	当該ヒューズが作動時の電流で劣化
+T6	Connective 77 78	、
+T7	Argument 78 80	断線
+T8	Connective 88 92	そのため
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T5	
+R3	CONDITION Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	
+R7	REASON Arg1:T8 Arg2:T7	
+T9	Argument 93 114	非常点滅表示灯や方向指示器が作動しなくなる
+R8	RESULT Arg1:T8 Arg2:T9	

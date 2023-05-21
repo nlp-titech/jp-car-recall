@@ -1,0 +1,13 @@
+T1	Argument 0 38	前輪の制動装置（マスターシリンダ）において、部品組立工程での作業管理が不適切
+T2	Connective 39 41	ため
+T3	Argument 42 55	内部部品を欠品のまま組立て
+T4	Connective 64 68	そのため
+T5	Argument 69 80	ブレーキ液圧が発生せず
+T6	Connective 80 81	、
+T7	Argument 81 92	前輪ブレーキが効かない
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+R5	REASON Arg1:T6 Arg2:T5	
+R6	RESULT Arg1:T6 Arg2:T7	

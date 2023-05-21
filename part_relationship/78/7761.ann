@@ -8,8 +8,10 @@ T7	Parts 125 128	警告灯
 T8	Parts 131 135	メーター
 R1	Coreference Arg1:T2 Arg2:T1	
 R2	Part-Whole Arg1:T2 Arg2:T4	
-R3	Contact Arg1:T3 Arg2:T2	
+R3	Part-Whole Arg1:T3 Arg2:T2	
 R4	Contact Arg1:T5 Arg2:T2	
 R5	Part-Whole Arg1:T7 Arg2:T4	
 R6	Part-Whole Arg1:T8 Arg2:T4	
 R7	Contact Arg1:T6 Arg2:T2	
+R8	Part-Whole Arg1:T6 Arg2:T4	
+R9	Contact Arg1:T5 Arg2:T3	

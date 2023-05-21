@@ -9,7 +9,8 @@ R1	Part-Whole Arg1:T7 Arg2:T1
 R2	Coreference Arg1:T2 Arg2:T5	
 R3	Coreference Arg1:T3 Arg2:T6	
 R4	Part-Whole Arg1:T2 Arg2:T7	
-R5	Coreference Arg1:T3 Arg2:T7	
-R6	Contact Arg1:T3 Arg2:T2	
+R5	Part-Whole Arg1:T3 Arg2:T7	
 R7	Contact Arg1:T4 Arg2:T2	
 R8	Contact Arg1:T4 Arg2:T3	
+T8	Parts 52 55	潤滑油
+R9	Coreference Arg1:T4 Arg2:T8	

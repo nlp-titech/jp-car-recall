@@ -1,0 +1,9 @@
+T1	Argument 9 52	車軸に装着されているエアスプリングのピストン取付ボルトが規定トルクで締付けられていない
+T2	Connective 58 62	そのため
+R1	REASON Arg1:T2 Arg2:T1	
+T3	Argument 68 78	当該取付ボルトが緩ん
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 78 79	で
+T5	Argument 79 86	ピストンが脱落
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	

@@ -1,0 +1,26 @@
+T1	Argument 0 24	エンジンコントロールユニットのプログラムが不適切
+T2	Connective 25 27	ため
+T3	Argument 42 57	オルタネーター出力電圧が下がる
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 68 72	そのため
+T5	Argument 73 86	バッテリーが充電不足となり
+R3	REASON Arg1:T4 Arg2:T3	
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 87 98	バッテリー警告灯が点灯
+T7	Connective 86 87	、
+R5	REASON Arg1:T7 Arg2:T5	
+T8	Argument 106 115	ＡＢＳ警告灯が点灯
+T9	Argument 117 128	ＡＢＳが作動しなくなる
+R6	RESULT Arg1:T7 Arg2:T6	
+R7	RESULT Arg1:T7 Arg2:T8	
+T10	Argument 100 102	最悪
+T11	Connective 103 105	場合
+R8	CONDITION Arg1:T11 Arg2:T10	
+R9	RESULT Arg1:T11 Arg2:T8	
+T13	Argument 28 41	走行距離が６万ｋｍを超える
+T14	Connective 41 42	と
+R12	CONDITION Arg1:T14 Arg2:T13	
+R13	RESULT Arg1:T14 Arg2:T3	
+R10	RESULT Arg1:T7 Arg2:T9	
+R11	RESULT Arg1:T11 Arg2:T9	

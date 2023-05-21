@@ -1,0 +1,28 @@
+T1	Argument 5 31	電動クーラントポンプにおいて、電源配線の配索が不適切
+T2	Connective 32 34	ため
+T3	Argument 35 50	当該配線がエンジンファンに接触
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 58 62	そのため
+R3	REASON Arg1:T4 Arg2:T3	
+T5	Argument 63 70	当該配線が断線
+R4	RESULT Arg1:T4 Arg2:T5	
+T6	Argument 72 97	電動クーラントポンプや４８Ｖ電気システムが作動停止
+T7	Connective 71 72	、
+R5	REASON Arg1:T7 Arg2:T5	
+R6	RESULT Arg1:T7 Arg2:T6	
+T8	Argument 100 102	最悪
+T9	Connective 103 105	場合
+R7	CONDITION Arg1:T9 Arg2:T8	
+T10	Connective 98 99	て
+R8	REASON Arg1:T10 Arg2:T6	
+T11	Argument 106 118	エンジンがオーバーヒート
+T12	Argument 125 132	エンジンを停止
+T13	Connective 135 136	と
+R9	CONDITION Arg1:T13 Arg2:T12	
+T14	Argument 136 145	再始動できなくなる
+R10	RESULT Arg1:T13 Arg2:T14	
+R11	RESULT Arg1:T9 Arg2:T11	
+R12	RESULT Arg1:T9 Arg2:T14	
+R13	RESULT Arg1:T10 Arg2:T11	
+R14	RESULT Arg1:T10 Arg2:T14	

@@ -1,0 +1,21 @@
+T1	Argument 0 31	エンジン冷却装置において特性マップサーモスタットの製造が不適切
+T2	Connective 32 34	ため
+T3	Argument 35 47	冷却水がコネクタ内に浸入
+R1	REASON Arg1:T2 Arg2:T1	
+R2	RESULT Arg1:T2 Arg2:T3	
+T4	Connective 55 59	そのため
+T5	Argument 60 72	冷却水がコネクタ内に浸入
+T6	Connective 77 80	よって
+R4	REASON Arg1:T6 Arg2:T5	
+T7	Argument 80 115	特性マップサーモスタット側のピンとエンジンハーネス側のピンに腐食が発生
+R6	RESULT Arg1:T6 Arg2:T7	
+R5	RESULT Arg1:T4 Arg2:T7	
+T8	Argument 117 137	エンジンコントロールユニットが異常を検知
+T9	Connective 116 117	、
+R7	REASON Arg1:T9 Arg2:T7	
+R8	RESULT Arg1:T9 Arg2:T8	
+T10	Argument 139 149	エンジン警告灯が点灯
+T11	Connective 138 139	て
+R9	REASON Arg1:T11 Arg2:T8	
+R10	RESULT Arg1:T11 Arg2:T10	
+R3	REASON Arg1:T4 Arg2:T3	
