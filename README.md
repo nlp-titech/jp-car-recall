@@ -80,19 +80,23 @@ R6	RESULT Arg1:T7 Arg2:T3
 
 For more detailed description of the corpus, please refer `paper.pdf` in this repo.
 If you use this corpus in your project, please cite as
-> Hsuan-Yu Kuo, Youmi Ma, and Naoaki Okazaki. Annotating Entity and Causal Relationships on Japanese Vehicle Recall Information. In Proceedings of the 36th Pacific Asia Conference on Language, Information and Computation (PACLIC), pages (to appear), October 2022.
+> Hsuan-Yu Kuo, Youmi Ma, and Naoaki Okazaki. 2022. Annotating Entity and Causal Relationships on Japanese Vehicle Recall Information. In Proceedings of the 36th Pacific Asia Conference on Language, Information and Computation, pages 783–791, Manila, Philippines. De La Salle University.
 
 Or
 
 ```
-@inproceedings{Kuo:PACLIC2023,
-    title = "Annotating Entity and Causal Relationships on Japanese Vehicle Recall Information",
-    author = "Kuo, Hsuan-Yu and
-              Ma, Youmi and 
-              Okazaki, Naoaki ",
-    booktitle = "Proceedings of the 36th annual Meeting of Pacific Asia Conference on Language, Information and Computation (PACLIC 36)",
-    month = october,
+@inproceedings{kuo-etal-2022-annotating,
+    title = "Annotating Entity and Causal Relationships on {J}apanese Vehicle Recall Information",
+    author = "Kuo, Hsuan-Yu  and
+      Ma, Youmi  and
+      Okazaki, Naoaki",
+    booktitle = "Proceedings of the 36th Pacific Asia Conference on Language, Information and Computation",
+    month = oct,
     year = "2022",
+    address = "Manila, Philippines",
+    publisher = "De La Salle University",
+    url = "https://aclanthology.org/2022.paclic-1.86",
+    pages = "783--791",
 }
 ```
 
